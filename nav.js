@@ -56,6 +56,32 @@ Lb.style.cssText=T.style.cssText;Lb.className=T.className||"";T.parentNode.inser
 function setLayers(c){document.documentElement.classList.toggle("arda-canon",c);Lb.textContent=c?"layers: canon":"layers: all";try{localStorage.setItem("ardaLayers",c?"canon":"all")}catch(e){}}
 try{if(localStorage.getItem("ardaLayers")==="canon")setLayers(true)}catch(e){}
 Lb.addEventListener("click",()=>setLayers(!document.documentElement.classList.contains("arda-canon")));
+
+// ---- feedback panel (store-nothing composer: site collects no data; user sends via GitHub or email) ----
+const FB=document.createElement("button");FB.id="a-fb";FB.textContent="\u{1F4AC} feedback";FB.title="leave a suggestion or bug report";
+FB.style.cssText=T.style.cssText;T.parentNode.insertBefore(FB,document.getElementById("a-layers").nextSibling);
+FB.addEventListener("click",()=>{
+ let d=document.getElementById("a-fbdlg");
+ if(d){d.style.display=d.style.display==="none"?"block":"none";return}
+ d=document.createElement("div");d.id="a-fbdlg";
+ d.innerHTML='<div class="fbh">Feedback for the Arda Archive</div>'
+ +'<label>What kind? <select id="fbt"><option>bug</option><option>suggestion</option><option>content issue (lore/citation)</option><option>general UX</option></select></label>'
+ +'<label>Where? <input id="fbp" type="text"></label>'
+ +'<label>Tell us \u2014 the more specific, the better:<br><textarea id="fbx" rows="5" placeholder="What happened / what you expected / what you would change\u2026"></textarea></label>'
+ +'<label>Nickname <i>(optional)</i>: <input id="fbn" type="text" placeholder="leave empty to stay anonymous"></label>'
+ +'<div class="fbbtns"><button id="fbgh">open as a GitHub issue</button><button id="fbmail">send by e-mail</button><button id="fbclose">close</button></div>'
+ +'<div class="fbnote"><b>Privacy, plainly:</b> this site stores nothing you type \u2014 there is no server behind it. Your text is handed to the channel you choose: a <b>GitHub issue</b> is public and governed by GitHub\u2019s terms; <b>e-mail</b> reveals your address to the site\u2019s maintainer, who uses it only to read your feedback. Both are optional; name and e-mail are never required. Please include no sensitive personal data.</div>';
+ document.body.appendChild(d);
+ document.getElementById("fbp").value=location.pathname.split("/").pop()+location.hash;
+ const gather=()=>{const t=document.getElementById("fbt").value,p=document.getElementById("fbp").value,
+  x=document.getElementById("fbx").value.trim(),n=document.getElementById("fbn").value.trim();
+  return {t,p,x,n,body:"["+t+"] on "+p+"\n\n"+x+(n?"\n\n\u2014 "+n:"")}};
+ document.getElementById("fbgh").onclick=()=>{const g=gather();if(!g.x){alert("Write a few words first \u2014 specifics help most.");return}
+  open("https://github.com/samsikallo/arda-archive/issues/new?title="+encodeURIComponent("["+g.t+"] "+g.p)+"&body="+encodeURIComponent(g.body),"_blank")};
+ document.getElementById("fbmail").onclick=()=>{const g=gather();if(!g.x){alert("Write a few words first \u2014 specifics help most.");return}
+  location.href="mailto:bobo.linux@gmail.com?subject="+encodeURIComponent("[arda-archive feedback] "+g.t)+"&body="+encodeURIComponent(g.body)};
+ document.getElementById("fbclose").onclick=()=>{d.style.display="none"};
+});
 // keyboard shim: legacy span-widgets become focusable buttons
 function shim(root){root.querySelectorAll(".chip,.tab,.card[onclick],[data-t],[data-id]").forEach(el=>{
  if(el.closest("#ardanav"))return;
