@@ -43,5 +43,20 @@ try:
 except Exception as ex:
     print("REF-CHECK ERROR:",ex); bad+=1
 
+
+# --- link-rot: internal href/src targets must exist (urldecoded; skips JS-template & absolute) ---
+from urllib.parse import unquote
+import re as _re2
+dead=0
+for f in glob.glob("*.html"):
+    txt=open(f).read()
+    for m in _re2.finditer(r'(?:href|src)="([^"#{$][^"#?]*?)(?:[#?][^"]*)?"',txt):
+        t=unquote(m.group(1))
+        if "'" in t or "+" in t or t.startswith(("http","data:","mailto","//","/","about:")): continue
+        if not os.path.exists(t):
+            print("DEAD LINK",f,"->",t); dead+=1
+if dead: bad+=dead
+print("link-rot:",dead,"dead internal links")
+
 print("checked",len(pages),"pages,",len(glob.glob('*.json')),"datasets —","FAIL" if bad else "OK")
 sys.exit(1 if bad else 0)

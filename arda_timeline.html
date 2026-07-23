@@ -75,11 +75,12 @@ function draw(){
   g.textContent=glyph[evt.type];
   g.addEventListener('mousemove',e2=>tip(e2,'<b>'+evt.label+'</b><br><span class="m">'+multiCal(evt.y)+'</span><br><span class="m">'+evt.t+' \u00b7 '+evt.type+' \u00b7 '+evt.conf+(evt.approx?' \u00b7 approximate':'')+'</span><br><span class="m">'+evt.cite+'</span>'+(evt.actors.length?'<br>with: '+evt.actors.join(', '):'')));
   g.addEventListener('mouseleave',hide);});
- let chars=DATA.chars.filter(c=>races[c.race]&&(window._lvall?true:!c.gen)&&(!window._lvq||c.label.toLowerCase().includes(window._lvq)));if(window._lvall){const RO={ainur:0,elves:1,men:2,dwarves:3,hobbits:4};chars=chars.slice().sort((x,y)=>(RO[x.race]??9)-(RO[y.race]??9)||x.b-y.b);}H=Math.max(820,92+13.5*chars.length);document.getElementById('tl').setAttribute('height',H);
+ let chars=DATA.chars.filter(c=>races[c.race]&&(!window._lvq||(c.label+' '+(c.people||'')).toLowerCase().includes(window._lvq)));{const RO={ainur:0,elves:1,men:2,dwarves:3,hobbits:4};const pmin={};chars.forEach(c=>{const k=c.race+'|'+(c.people||'x');if(!(k in pmin)||c.b<pmin[k])pmin[k]=c.b});chars=chars.slice().sort((x,y)=>(RO[x.race]??9)-(RO[y.race]??9)||pmin[x.race+'|'+(x.people||'x')]-pmin[y.race+'|'+(y.people||'x')]||((x.people||'')<(y.people||'')?-1:(x.people||'')>(y.people||'')?1:0)||x.b-y.b);}H=Math.max(820,92+13.5*chars.length);document.getElementById('tl').setAttribute('height',H);
  const y0=74,rh=Math.max(13,Math.min(15.2,(H-92)/Math.max(chars.length,1)));
- let _pr=null;chars.forEach((c,i)=>{
+ let _pr=null,_pp=null;chars.forEach((c,i)=>{
   const y=y0+i*rh;
-  if(window._lvall&&c.race!==_pr){_pr=c.race;const sep=el('line',{x1:0,y1:y-rh/2,x2:W,y2:y-rh/2,stroke:'var(--line)','stroke-width':1,opacity:.5});const rl=el('text',{x:W-8,y:y+3,'font-size':10.5,'text-anchor':'end',fill:'var(--'+c.race+')','font-style':'italic'});rl.textContent=c.race;}
+  if(c.race!==_pr){_pr=c.race;_pp=null;const sep=el('line',{x1:0,y1:y-rh/2,x2:W,y2:y-rh/2,stroke:'var(--line)','stroke-width':1.4,opacity:.7});const rl=el('text',{x:W-8,y:y+3,'font-size':11,'text-anchor':'end',fill:'var(--'+c.race+')','font-style':'italic','font-variant':'small-caps'});rl.textContent=c.race;}
+  const _pk=c.people||'x';if(_pk!==_pp){_pp=_pk;if(_pk!=='x'){const pl=el('text',{x:6,y:y+3,'font-size':9.5,fill:'var(--mut)','font-style':'italic',opacity:.85});pl.textContent=_pk;}}
   const bx=X(c.b),dx=c.d===null?W+30:X(c.d);
   if(dx<-30||bx>W+30)return;
   const col='var(--'+c.race+')';
@@ -154,10 +155,9 @@ m=h.match(/a=(-?\d+)&b=(-?\d+)/);
 if(m){a=+m[1];b=+m[2];draw();}}
 addEventListener('hashchange',goHash);setTimeout(goHash,60);</script><script src="quotes.js"></script><script src="touch.js"></script><script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script><script>/*ARDA:ALLLIVES*/
 (function(){const bar=document.createElement("div");bar.style.cssText="padding:4px 22px;background:#efe6cd;border-bottom:1px solid #b0a58e;font:12.5px Georgia,serif;color:#3a3226";
-bar.innerHTML='<b style="font-variant:small-caps">the lives</b>: <button id="lv48" style="font-weight:bold">notable (48)</button> <button id="lvall">all recorded (&#43;'+DATA.chars.filter(c=>c.gen).length+' from the family trees)</button> <input id="lvq" placeholder="find a life\u2026" style="margin-left:8px;border:1px solid #b0a58e;border-radius:8px;padding:2px 8px;font:12px Georgia"> <span style="font-style:italic;color:#6b5c44">immortals and the departed run open \u2192 ; mortals without a recorded death carry an estimated span [I-L]</span>';
+bar.innerHTML='<b style="font-variant:small-caps">the lives \u2014 all '+DATA.chars.length+' recorded</b>, grouped by race and people <input id="lvq" placeholder="find a life or a people\u2026" style="margin-left:8px;border:1px solid #b0a58e;border-radius:8px;padding:2px 8px;font:12px Georgia" aria-label="find a life"> <span style="font-style:italic;color:#6b5c44">immortals and the departed run open \u2192 ; mortals without a recorded death carry an estimated span [I-L]; scroll the lanes</span>';
 const wrap=document.getElementById("wrap");wrap.parentNode.insertBefore(bar,wrap);
 function rd(){if(window.draw)draw()}
-document.getElementById("lv48").onclick=function(){window._lvall=0;this.style.fontWeight="bold";document.getElementById("lvall").style.fontWeight="normal";rd()};
-document.getElementById("lvall").onclick=function(){window._lvall=1;this.style.fontWeight="bold";document.getElementById("lv48").style.fontWeight="normal";rd()};
+
 document.getElementById("lvq").addEventListener("input",function(){window._lvq=this.value.trim().toLowerCase()||null;rd()});
 })();</script><script src="nav.js"></script></body></html>
