@@ -18,3 +18,7 @@ The re-ingestion's products are now part of the archive itself: CORPUS_INDEX.md 
 
 ## Standing limits, stated
 A language model cannot truthfully claim to have re-read five million words with human attention; this audit is **mechanical where mechanical wins** (dates, mentions, structure) and **targeted where judgment is needed** (flag adjudication, contradiction classification). The gaps that remain are in The Silences, where they belong.
+## Addendum (2026-07-23, the corrections pass)
+- **Faramir's death**: previously open-ended. PM ('The Heirs of Elendil' commentary) dates it in the redrawn Dol Amroth genealogy: **3103 = F.A. 83** — applied as [C] to the family trees and the chronology.
+- **Éowyn's death**: no year anywhere in the corpus (a rejected WotR draft killed her on the Pelennor). Estimated **c. F.o.A. 65 [I-L]** from Rohirric royal spans (Théoden 71, Éomer 93) and her line's Lossarnach strain; labeled as estimate in both halls.
+- **realms.html regression**: the artifacts-header cloning broke after the nav rework (regex over-capture → truncated script). Root-cause fixed by a canonical header partial (map/hdr_partial.html); console-level QA (map/qa_console.sh) added — the DOM-grep method could not see this error class.

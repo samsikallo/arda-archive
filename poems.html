@@ -36,8 +36,12 @@ c.onclick=()=>{on[k]=!on[k];c.classList.toggle("on",on[k]);draw()};ch.appendChil
 const nrm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
 function draw(){const q=nrm(document.getElementById("q").value||"");
 document.getElementById("grid").innerHTML=D.filter(p=>on[p.k]&&(!q||nrm(p.t+p.v+p.src).includes(q)))
-.map(p=>`<div class="card"><h3>${p.t}</h3><div class="cite">${KL[p.k]||p.k} · ${p.src}</div>
-<div class="verse">${p.v}</div><div class="cite">${p.note}</div></div>`).join("");}
+.map(p=>{const pi=D.indexOf(p);return `<div class="card"><h3>${p.t}</h3><div class="cite">${KL[p.k]||p.k} · ${p.src}</div>
+<div class="verse" id="v${pi}">${p.v}</div>${p.vf?`<div class="cite xg" style="cursor:pointer;color:#7a4a12" role="button" tabindex="0" data-pi="${pi}">▸ read in full — ${p.vf.split("\n").length} lines</div>`:""}<div class="cite">${p.note}</div></div>`}).join("");
+document.querySelectorAll(".xg").forEach(el=>el.addEventListener("click",()=>{
+const pm=D[+el.dataset.pi],v=document.getElementById("v"+el.dataset.pi);
+if(el.dataset.open==="1"){v.textContent=pm.v;el.textContent="▸ read in full — "+pm.vf.split("\n").length+" lines";el.dataset.open="0"}
+else{v.textContent=pm.vf;el.textContent="▾ show the excerpt";el.dataset.open="1"}}));}
 document.getElementById("q").addEventListener("input",draw);draw();});
 </script>
 <script src="quotes.js"></script><script src="touch.js"></script><script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script><script src="nav.js"></script></body></html>
