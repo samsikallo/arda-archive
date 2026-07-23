@@ -219,9 +219,9 @@ sel.forEach(s=>{nodeEls[s].classList.add("sel");
 kin.forEach(k=>{if(!sel.includes(k))nodeEls[k].classList.add("kin")});
 Ps.forEach(p=>{if(!sel.includes(p.id)&&!kin.has(p.id))nodeEls[p.id].classList.add("far")});
 const pn=document.getElementById("panel");
-if(sel.length==1){const p=byId[id];const _pt=(window.ardaPortrait?ardaPortrait(p):"");
+if(sel.length==1){const p=byId[id];const _pt=(window.ardaPortraitImg&&window.ardaPortraitImg(p,'full'))||(window.ardaPortrait?ardaPortrait(p):"");
 const row=(h,ids)=>ids&&ids.length?`<h3>${h}</h3>${ids.map(link).join(" · ")}`:"";
-pn.innerHTML=_pt+`${p.em?`<svg id="embig" width="66" height="80" viewBox="0 0 40 48"><use href="#em-${p.em}"/></svg>`:""}
+pn.innerHTML=`${p.em?`<svg id="embig" width="66" height="80" viewBox="0 0 40 48"><use href="#em-${p.em}"/></svg>`:""}
 <h2>${p.cr?'<svg width="20" height="14" viewBox="0 0 15 10" style="vertical-align:baseline"><path class="crown" d="M1,9 L2.2,3 L5,6.2 L7.5,1.2 L10,6.2 L12.8,3 L14,9 Z"/></svg> ':""}${p.n}</h2>
 <div class="cite">${p.s=="F"?"♀":p.s=="M"?"♂":""} ${RN[p.r]}${p.h?" · "+p.h:""}${p.rl?" · "+p.rl:""}</div>
 <div class="orn">❦</div>
@@ -232,6 +232,7 @@ ${row("Fostered / adopted",rel.fos[id])}${row("Foster-parent",rel.fby[id])}
 ${p.em?`<h3>Heraldry</h3>${EMD[p.em]}`:""}
 ${p.note?`<h3>Notes</h3>${p.note}`:""}
 <h3>Source</h3><span class="cite">${p.cite||"—"}</span>
+${_pt?`<div class="orn" style="margin:14px 0 8px">❦ ✦ ❦</div>${_pt}`:""}
 <h3>Elsewhere on the site</h3><a href="character.html#${p.id}" target="_blank">Full record ⧉</a> · <a href="arda_timeline.html#c=${p.id}" target="_blank">Timeline ⧉</a> · <a href="arda_timemap_jpeg.html" target="_blank">the living Map ⧉</a>
 <p class="cite" style="margin-top:1em">Gold outline = kin (immediate family + full ancestor/descendant chains); the rest of the graph recedes. Shift-click another figure to compare lines.</p>`;}
 else{const sets=sel.map(s=>up(s));sel.forEach((s,i)=>sets[i].add(s));
