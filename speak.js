@@ -28,7 +28,7 @@ const seq=[[/ch/g,"kh","ch as in Scottish loch, never church"],[/dh/g,"th","dh =
 [/th/g,"th","voiceless th as in thin"],[/qu/g,"kw","qu = kw"],[/c/g,"k","c is always k — 'Keleborn'"],
 [/au/g,"ow","au as in loud"],[/ae|ai/g,"y","ai/ae as in aisle"],[/ei/g,"ay","ei as in grey"],
 [/á|â/g,"ah","long a"],[/é|ê/g,"eh","long e, pure"],[/í|î/g,"ee","long i"],[/ó|ô/g,"aw","long o"],[/ú|û/g,"oo","long u"],
-[/ë/g,"e","final e is sounded (diaeresis)"],[/ý/g,"ee","y-vowel"]];
+[/ë/g,"e","final e is sounded (diaeresis)"],[/ä/g,"a","the diaeresis marks a sounded vowel (Eärendil)"],[/ö/g,"o","sounded vowel"],[/ý/g,"ee","y-vowel"]];
 for(const[re,to,note]of seq){if(re.test(s)){applied.push(note);s=s.replace(re,to);}}
 // final e must sound: e at word end -> "eh"
 if(/e\b/.test(s)){s=s.replace(/e\b/g,"eh");if(!applied.some(a=>a.includes("sounded")))applied.push("final e is sounded, never silent");}
