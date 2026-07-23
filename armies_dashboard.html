@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Armies of Arda — battle explorer</title>
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512"><title>The Armies of Arda — battle explorer</title>
 <style>
 :root{--ink:#3a3226;--mut:#7a6a50;--line:#b0a58e;--card:#fdfaf2;--gold:#c9a227}
 body{margin:0;color:var(--ink);font:14px/1.55 Georgia,'Palatino Linotype',serif;
@@ -260,4 +260,4 @@ const c=D.campaigns.find(x=>x.id==m[1]);if(!c)return;
 select(c.id);
 document.querySelectorAll('#warlist .chip').forEach(x=>x.classList.toggle('on',x.dataset.cid==c.id));
 document.getElementById('battleT').scrollIntoView({block:'start',behavior:'smooth'});}
-addEventListener('hashchange',goHash);setTimeout(goHash,60);</script><script src="quotes.js"></script><script src="touch.js"></script></body></html>
+addEventListener('hashchange',goHash);setTimeout(goHash,60);</script><script src="quotes.js"></script><script src="touch.js"></script><script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script></body></html>

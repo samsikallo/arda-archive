@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Turning of the Ages — the Arda Archive</title>
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512"><title>The Turning of the Ages — the Arda Archive</title>
 <style>
 :root{--ink:#3a3226;--mut:#7a6a50;--line:#b0a58e;--gold:#c9a227}
 html,body{margin:0;height:100%;color:var(--ink);font:14px/1.5 Georgia,'Palatino Linotype',serif;background:#efe6cd}
@@ -132,4 +132,4 @@ if(p>=1000){p=1000;sl.value=p;update();anim=null;document.getElementById("play")
 sl.value=p;update();anim=requestAnimationFrame(step);};
 anim=requestAnimationFrame(step);};
 </script>
-<script src="quotes.js"></script><script src="touch.js"></script></body></html>
+<script src="quotes.js"></script><script src="touch.js"></script><script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script></body></html>

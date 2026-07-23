@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Arda Archive — everything of Tolkien's world, corpus-first</title>
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512"><title>The Arda Archive — everything of Tolkien's world, corpus-first</title>
 <style>
 :root{--ink:#3a3226;--mut:#7a6a50;--line:#b0a58e;--gold:#c9a227}
 body{margin:0;color:var(--ink);font:15px/1.6 Georgia,'Palatino Linotype',serif;
@@ -37,7 +37,7 @@ h2{font-variant:small-caps;font-weight:normal;letter-spacing:.1em;color:#5a4626;
 style="width:100%;box-sizing:border-box;padding:11px 18px;font:15px Georgia,serif;border:1.5px solid #8a7444;border-radius:24px;background:#fffdf6;color:#3a3226;box-shadow:0 4px 16px rgba(0,0,0,.35)">
 <div id="usr" style="display:none;position:absolute;left:0;right:0;top:52px;background:#fdfaf2;border:1px solid #b0a58e;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.4);max-height:420px;overflow-y:auto;text-align:left;z-index:20"></div>
 </div>
-<div style="margin-top:8px;font-size:11px;color:#8a7a52">1,753 things across the halls · try “Galadriel”, “Nirnaeth”, “mellon”, “√GAL”, “Erebor”</div>
+<div style="margin-top:8px;font-size:11px;color:#8a7a52">1,779 things across the halls · try “Galadriel”, “Nirnaeth”, “mellon”, “√GAL”, “Erebor”</div>
 <div class="sub">Everything of Tolkien's world in one living platform — its lands, peoples, armies, years, bloodlines, tongues and letters — built from the twenty-eight books of the corpus, every claim cited, every guess labeled, every gap named rather than filled.</div>
 </div>
 <div class="wrap">
@@ -79,6 +79,12 @@ style="width:100%;box-sizing:border-box;padding:11px 18px;font:15px Georgia,seri
 <div class="card"><span class="ic">🌗</span><h3><a href="chronicle.html">The Turning of the Ages</a></h3>
 <p>One slider through all of history, map and chronicle joined: borders shift as you scrub, Beleriand drowns before your eyes, the Tale of Years narrates what has lately passed and what is yet to come — and through the War of the Ring the journey-threads ride the map with the year.</p>
 <div class="ft">press <i>turn the ages</i> and watch twenty-one thousand years go by · plus 🔊 Spoken Arda — every record and the languages hall can now say the names aloud, by App E's rules</div></div>
+<div class="card"><span class="ic">⚖</span><h3><a href="compare.html">Side by Side</a></h3>
+<p>Any two lives against each other — spans, names, shared blood computed from the trees, the events where their stories touch — or any two battles on one scale, the Pelennor beside Bywater.</p>
+<div class="ft">assembled live; resumable links (#a=turin&amp;b=beren)</div></div>
+<div class="card"><span class="ic">🕳</span><h3><a href="silences.html">The Silences</a></h3>
+<p>What the corpus does not say, gathered in one hall: twenty-three of the deepest gaps — the Avari never counted, Maglor unended, Gil-galad's unnamed mother, the two Valian-year arithmetics — each with what the texts say around the hole, and none of them filled.</p>
+<div class="ft">"a silence recorded is worth more than a guess enshrined"</div></div>
 <div class="card"><span class="ic">📜</span><h3>The Foundations</h3>
 <p>Where it all rests: the geographic reconstruction with its evidence tables and contradiction registers, and the vector cartography that proved Himring is Himling and registered the First Age onto the Third.</p>
 <div class="ft"><a href="RECONSTRUCTION.md">RECONSTRUCTION.md</a> · <a href="VECTOR_MAP_SPEC.md">VECTOR_MAP_SPEC.md</a> · <a href="GENEALOGY.md">GENEALOGY.md</a> · <a href="DEMOGRAPHY.md">DEMOGRAPHY.md</a> · <a href="ARMIES.md">ARMIES.md</a> · <a href="ARDA_CHRONOLOGY.md">ARDA_CHRONOLOGY.md</a> · <a href="ARDA_TIMELINE.md">ARDA_TIMELINE.md</a> · <a href="LANGUAGES.md">LANGUAGES.md</a></div></div>
@@ -172,4 +178,4 @@ for(const[,e]of top){
 usr.innerHTML=html;usr.style.display="block";});
 document.addEventListener("click",e=>{if(!document.getElementById("usbox").contains(e.target))usr.style.display="none";});
 usq.addEventListener("keydown",e=>{if(e.key=="Enter"){const f=usr.querySelector("a");if(f)location.href=f.getAttribute("href");}});
-</script><script src="quotes.js"></script><script src="touch.js"></script></body></html>
+</script><script src="quotes.js"></script><script src="touch.js"></script><script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script></body></html>

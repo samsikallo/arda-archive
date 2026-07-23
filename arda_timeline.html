@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Chronology of Arda — interactive timeline</title>
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512"><title>The Chronology of Arda — interactive timeline</title>
 <style>
 :root{--pap:#f2ead2;--ink:#2b2721;--acc:#6b5d49;--ring:rgba(11,11,11,.12);--srf:#fcfcfb;
  --elves:#2a78d6;--men:#008300;--dwarves:#eb6834;--hobbits:#eda100;--ainur:#4a3aa7;--ents:#1baf7a;--other:#898781}
@@ -145,4 +145,4 @@ m=h.match(/y=(-?\d+)/);
 if(m){const y=+m[1];a=y-120;b=y+120;draw();return;}
 m=h.match(/a=(-?\d+)&b=(-?\d+)/);
 if(m){a=+m[1];b=+m[2];draw();}}
-addEventListener('hashchange',goHash);setTimeout(goHash,60);</script><script src="quotes.js"></script><script src="touch.js"></script></body></html>
+addEventListener('hashchange',goHash);setTimeout(goHash,60);</script><script src="quotes.js"></script><script src="touch.js"></script><script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script></body></html>

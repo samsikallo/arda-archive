@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Place Record — the Arda Archive</title>
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512"><title>Place Record — the Arda Archive</title>
 <style>
 :root{--ink:#3a3226;--mut:#7a6a50;--line:#b0a58e;--gold:#c9a227}
 body{margin:0;color:var(--ink);font:15px/1.6 Georgia,'Palatino Linotype',serif;
@@ -78,4 +78,4 @@ ${quotes.map(q=>`<div class="ev" style="font-style:italic">“${q.q}” <span cl
 addEventListener("hashchange",render);render();
 });
 </script>
-<script src="speak.js"></script><script src="quotes.js"></script><script src="touch.js"></script></body></html>
+<script src="speak.js"></script><script src="quotes.js"></script><script src="touch.js"></script><script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script></body></html>

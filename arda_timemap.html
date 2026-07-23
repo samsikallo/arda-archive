@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Arda through the Ages — interactive time-map</title>
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512"><title>Arda through the Ages — interactive time-map</title>
 <style>
 :root{--pap:#f2ead2;--ink:#2b2721;--acc:#6b5d49;--ring:rgba(11,11,11,.12);
  --elven:#2a78d6;--dwarven:#eb6834;--dark:#e34948;--mannish:#008300;--hobbit:#eda100;--numenor:#4a3aa7;--mixed:#1baf7a}
@@ -2365,4 +2365,4 @@ document.querySelectorAll('.tog[data-k]').forEach(el=>{el.onclick=()=>{
 document.getElementById('thm').onclick=function(){const r=document.documentElement;
  r.setAttribute('data-theme',r.getAttribute('data-theme')==='dark'?'light':'dark');};
 apply();
-</script><script src="quotes.js"></script><script src="touch.js"></script></body></html>
+</script><script src="quotes.js"></script><script src="touch.js"></script><script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script></body></html>
