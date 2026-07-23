@@ -50,13 +50,13 @@ window.ardaPortrait=function(p){
  // bust + head
  g+='<path d="M-40,86 Q-42,52 -20,42 L-8,36 Q2,42 16,34 L28,40 Q46,50 44,86 Z" fill="'+(fem?"#8a97a5":R.coat)+'" stroke="'+INK+'" stroke-width="1.8"/>';
  g+='<path d="M-11,30 q-2,10 4,14 q8,5 14,-2 q4,-6 3,-13 Z" fill="'+skin+'" stroke="'+INK+'" stroke-width="1.2"/>';
- g+='<path d="M-23,-6 Q-25,-24 -12,-30 Q2,-36 15,-29 Q26,-23 25,-6 Q24,10 14,19 Q3,26 -8,22 Q-21,15 -23,-6 Z" fill="'+skin+'" stroke="'+INK+'" stroke-width="1.6"/>';
+ g+='<circle cx="0" cy="-9" r="22" fill="none" stroke="#6a7e96" stroke-width=".7" opacity=".18"/>';g+='<path d="M-22,-7 Q-25,-19 -15,-26 Q-3,-32 10,-28 Q23,-23 23,-10 L22,1 L18,13 L9,22 L1,25 L-5,24 L-8,19 Q-17,13 -20,3 Q-22,-2 -22,-7 Z" fill="'+skin+'" stroke="'+INK+'" stroke-width="1.7" stroke-linejoin="miter"/>';g+='<path d="M10,-28 Q23,-23 23,-10 L22,1 L18,13 L9,22 L4,24 Q13,9 12,-10 Q12,-22 10,-28 Z" fill="#5a4632" opacity=".12"/>';
  // face
  const eye=fem?"#5a7a9a":"#5a6a7a";
  g+='<ellipse cx="-9" cy="-4" rx="4.4" ry="3.4" fill="#fdfaf2" stroke="'+INK+'" stroke-width=".9"/><ellipse cx="9" cy="-4.4" rx="3.9" ry="3.1" fill="#fdfaf2" stroke="'+INK+'" stroke-width=".9"/>';
  g+='<circle cx="-8.4" cy="-3.6" r="2" fill="'+eye+'"/><circle cx="9.4" cy="-4" r="1.8" fill="'+eye+'"/><circle cx="-8" cy="-4.2" r=".7" fill="#fff"/><circle cx="9.8" cy="-4.6" r=".6" fill="#fff"/>';
  g+='<path d="M-13,-9 q4,-3 8,-1 M13,-9 q-4,-3 -8,-1" stroke="'+INK+'" stroke-width="1.5" fill="none" stroke-linecap="round"/>';
- g+='<path d="M-1,-3 q4,5 2,10 q-1,3 -4,2" stroke="'+INK+'" stroke-width="1.1" fill="none"/>';
+ g+='<path d="M-3,-8 Q-7,1 -8,7 Q-8,11 -4,11 Q-1,11 0,9" fill="'+skin+'" stroke="'+INK+'" stroke-width="1.3"/><path d="M-8,9 q-2,1 -1,3" stroke="'+INK+'" stroke-width=".9" fill="none"/>';
  g+='<path d="M-6,13 q5,4 11,1" stroke="'+INK+'" stroke-width="1.3" fill="none" stroke-linecap="round"/>';
  if(R.blush)g+='<circle cx="-14" cy="4" r="3.4" fill="#d88a6a" opacity=".3"/><circle cx="14" cy="3" r="3" fill="#d88a6a" opacity=".3"/>';
  if(R.elf)g+='<path d="M-24,-2 l-5,-4 l1.6,7 Z" fill="'+skin+'" stroke="'+INK+'" stroke-width="1"/>';
