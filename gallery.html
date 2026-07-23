@@ -42,11 +42,11 @@ s.onclick=()=>{on[c]=!on[c];s.classList.toggle("on",on[c]);draw()};ch.appendChil
 function draw(){
 document.getElementById("grid").innerHTML=D.filter(p=>on[p.cat])
 .map((p,i)=>`<div class="art" data-i="${D.indexOf(p)}">
-<svg viewBox="${p.vb}" preserveAspectRatio="xMidYMid meet">${p.svg}</svg>
+${p.img?`<img src="${p.img}" loading="lazy" alt="${(p.s||p.t||'').replace(/"/g,'')}" style="width:100%;height:auto;display:block;border-radius:8px;background:#efe4c8">`:`<svg viewBox="${p.vb}" preserveAspectRatio="xMidYMid meet">${p.svg}</svg>`}
 <div class="cap"><b>${p.t}</b><span class="cite">${p.c}</span></div></div>`).join("");
 [...document.querySelectorAll(".art")].forEach(a=>a.onclick=()=>{
 const p=D[+a.dataset.i];
-document.getElementById("lsvg").innerHTML=`<svg viewBox="${p.vb}" style="max-width:min(92vw,760px);max-height:78vh;border:2px solid #8a7444;border-radius:10px;background:#141210">${p.svg}</svg>`;
+document.getElementById("lsvg").innerHTML=p.img?`<img src="${p.img}" alt="${(p.s||p.t||'').replace(/"/g,'')}" style="max-width:min(92vw,760px);max-height:78vh;border:2px solid #8a7444;border-radius:10px;background:#efe4c8">`:`<svg viewBox="${p.vb}" style="max-width:min(92vw,760px);max-height:78vh;border:2px solid #8a7444;border-radius:10px;background:#141210">${p.svg}</svg>`;
 document.getElementById("lcap").textContent=p.s+" — "+p.c;
 document.getElementById("light").style.display="flex";});}
 document.getElementById("light").onclick=()=>document.getElementById("light").style.display="none";
