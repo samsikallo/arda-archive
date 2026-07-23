@@ -1,0 +1,2368 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arda through the Ages — interactive time-map</title>
+<style>
+:root{--pap:#f2ead2;--ink:#2b2721;--acc:#6b5d49;--ring:rgba(11,11,11,.12);
+ --elven:#2a78d6;--dwarven:#eb6834;--dark:#e34948;--mannish:#008300;--hobbit:#eda100;--numenor:#4a3aa7;--mixed:#1baf7a}
+:root[data-theme="dark"]{--pap:#22201c;--ink:#e8e2d2;--acc:#b0a58e;--ring:rgba(255,255,255,.15);
+ --elven:#3987e5;--dwarven:#d95926;--dark:#e66767;--mannish:#3fa03f;--hobbit:#c98500;--numenor:#9085e9;--mixed:#199e70}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;background:var(--pap);color:var(--ink)}
+header{padding:14px 18px 4px}h1{margin:0;font-size:1.3rem;letter-spacing:.12em}
+.sub{color:var(--acc);font-size:.85rem;font-style:italic}
+.layout{display:grid;grid-template-columns:1fr 320px;gap:12px;padding:12px 18px;max-width:1500px;margin:0 auto}
+@media(max-width:1000px){.layout{grid-template-columns:1fr}}
+.mapbox{position:relative;border:2px solid var(--acc);background:#c3d2ca}
+.mapbox img{display:block;width:100%;height:auto}
+.mapbox svg{position:absolute;inset:0;width:100%;height:100%}
+.controls{padding:8px 18px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;max-width:1500px;margin:0 auto}
+input[type=range]{flex:1;min-width:280px;accent-color:var(--acc)}
+.slicelab{font-weight:bold;min-width:300px}
+.tog{display:inline-flex;align-items:center;gap:5px;font-size:.8rem;color:var(--acc);cursor:pointer;user-select:none;
+ border:1px solid var(--ring);border-radius:14px;padding:3px 9px;background:rgba(255,255,255,.25)}
+.tog .sw{width:12px;height:12px;border-radius:3px;background:var(--c);opacity:.8}
+.tog.off{opacity:.35}
+aside{border:1px solid var(--ring);padding:12px;background:rgba(255,255,255,.28);font-size:.85rem;line-height:1.5;border-radius:6px;align-self:start}
+:root[data-theme="dark"] aside{background:rgba(0,0,0,.25)}
+aside h2{margin:0 0 2px;font-size:1rem}aside .sub2{color:var(--acc);font-style:italic;margin-bottom:8px}
+aside li{margin-bottom:7px}aside cite{display:block;color:var(--acc);font-size:.75rem;font-style:italic}
+#tip{position:fixed;pointer-events:none;background:var(--pap);border:1px solid var(--acc);border-radius:6px;
+ padding:8px 10px;font-size:.78rem;max-width:300px;display:none;z-index:9;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+#tip b{font-size:.9rem}#tip .meta{color:var(--acc);font-style:italic}
+.btn{border:1px solid var(--ring);background:rgba(255,255,255,.3);color:var(--ink);border-radius:6px;padding:4px 10px;cursor:pointer;font-family:inherit}
+.legendnote{font-size:.72rem;color:var(--acc);padding:0 18px 14px;max-width:1500px;margin:0 auto;font-style:italic}
+</style></head><body><div style="background:linear-gradient(#221c15,#191512 60%,#12100d);color:#d8c78e;padding:10px 22px 8px;border-bottom:3px double #8a7444;display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+<span style="display:inline-flex;align-items:flex-end;filter:drop-shadow(0 0 6px rgba(201,162,39,.4))"><svg width="16" height="9" viewBox="0 0 16 9" style="vertical-align:top;margin:0 -14px 0 -2px"><circle cx="4" cy="6" r="1.6" fill="#d8c78e"/><circle cx="12" cy="6" r="1.6" fill="#d8c78e"/><circle cx="8" cy="2" r="1.6" fill="#d8c78e"/></svg><svg fill="#d8c78e" viewBox="0 0 32 48" height="26" style="vertical-align:middle" x="0"><g > <path d="M 18.347813,29.448747 C 17.814475,29.896748 17.206475,30.355414 16.523813,30.824747 C 15.862477,31.29408 15.222477,31.64608 14.603813,31.880747 C 14.710478,31.39008 14.795811,30.952747 14.859813,30.568747 C 14.923811,30.163414 14.966477,29.747415 14.987813,29.320747 C 15.030477,28.872749 15.051811,28.39275 15.051813,27.880747 C 15.073144,27.347417 15.083811,26.718085 15.083813,25.992747 L 15.083813,22.344747 C 15.083811,21.704756 14.966477,21.15009 14.731813,20.680747 C 14.497145,20.211424 14.081145,19.859425 13.483813,19.624747 C 13.803812,19.347425 14.155812,19.048759 14.539813,18.728747 C 14.923811,18.40876 15.329144,18.12076 15.755813,17.864747 C 16.182476,17.587427 16.609143,17.352761 17.035813,17.160747 C 17.483808,16.947428 17.921141,16.808761 18.347813,16.744747 L 18.347813,29.448747" style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#d8c78e000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Lucida Grande;-inkscape-font-specification:Lucida Grande" /> </g></svg><svg width="16" height="9" viewBox="0 0 16 9" style="vertical-align:top;margin:0 -14px 0 -2px"><circle cx="4" cy="6" r="1.6" fill="#d8c78e"/><circle cx="12" cy="6" r="1.6" fill="#d8c78e"/><circle cx="8" cy="2" r="1.6" fill="#d8c78e"/></svg><svg fill="#d8c78e" viewBox="0 0 32 48" height="30" style="vertical-align:middle" x="0"><g > <path d="M 16.225063,18.736 C 16.13972,18.800011 16.033054,18.842678 15.905063,18.864 C 15.777054,18.885344 15.670387,18.874678 15.585063,18.832 C 15.521054,18.789345 15.499721,18.725345 15.521063,18.64 C 15.542387,18.533345 15.649054,18.394678 15.841063,18.224 C 16.865053,17.434679 17.921052,16.805347 19.009063,16.336 C 20.097049,15.845347 21.046382,15.600014 21.857063,15.6 C 22.305047,15.600014 22.74238,15.706681 23.169063,15.92 C 23.595713,16.133347 23.979712,16.453347 24.321063,16.88 C 24.662378,17.306679 24.929045,17.829346 25.121063,18.448 C 25.334378,19.066678 25.441044,19.79201 25.441063,20.624 C 25.441044,21.712008 25.217044,22.789341 24.769063,23.856 C 24.342379,24.922672 23.734379,26.064004 22.945063,27.28 C 22.177047,28.474668 21.238382,29.786667 20.129063,31.216 C 19.041051,32.645331 17.825052,34.266662 16.481063,36.08 C 15.862387,36.933326 15.361054,37.829326 14.977063,38.768 C 14.593055,39.72799 14.401055,40.762656 14.401063,41.872 C 14.401055,42.618654 14.582388,43.226653 14.945063,43.696 C 15.329054,44.165319 15.745054,44.549319 16.193063,44.848 C 16.726386,45.189318 17.334386,45.445318 18.017063,45.616 C 17.611719,46.021317 17.195719,46.373317 16.769063,46.672 C 16.406386,46.949316 15.990387,47.194649 15.521063,47.408 C 15.073054,47.621316 14.635722,47.727982 14.209063,47.728 C 14.081055,47.727982 13.899722,47.653316 13.665063,47.504 C 13.451723,47.375983 13.227723,47.151983 12.993063,46.832 C 12.75839,46.511983 12.555724,46.095984 12.385063,45.584 C 12.214391,45.093318 12.129057,44.474652 12.129063,43.728 C 12.129057,42.938654 12.214391,42.213321 12.385063,41.552 C 12.555724,40.911989 12.801057,40.282656 13.121063,39.664 C 13.441056,39.066658 13.835722,38.437325 14.305063,37.776 C 14.774388,37.135993 15.307721,36.421327 15.905063,35.632 L 18.081063,32.592 L 14.657063,27.024 L 11.137063,30.8 C 10.731726,31.226665 10.497059,31.642665 10.433063,32.048 C 10.390393,32.453331 10.411726,32.805331 10.497063,33.104 C 10.582392,33.466663 10.753059,33.807996 11.009063,34.128 L 7.4570629,36.304 C 7.3290622,35.813328 7.2970623,35.301328 7.3610629,34.768 C 7.4037288,34.319996 7.5317287,33.807996 7.7450629,33.232 C 7.9797283,32.677331 8.3743945,32.122665 8.9290629,31.568 L 14.209063,26.32 C 13.057057,24.464006 12.097057,22.938674 11.329063,21.744 C 10.561059,20.549343 9.942393,19.60001 9.4730629,18.896 C 9.0250605,18.192012 8.7050609,17.712012 8.5130629,17.456 C 8.3423946,17.178679 8.2570613,17.040013 8.2570629,17.04 C 8.4063945,16.912013 8.6623942,16.784013 9.0250629,16.656 C 9.3877268,16.50668 9.7823931,16.368014 10.209063,16.24 C 10.635726,16.090681 11.062392,15.962681 11.489063,15.856 C 11.937058,15.728014 12.321057,15.632014 12.641063,15.568 C 12.769057,16.18668 12.961057,16.837346 13.217063,17.52 C 13.494389,18.202678 13.910389,19.056011 14.465063,20.08 C 15.019721,21.104009 15.745054,22.373341 16.641063,23.888 C 17.558385,25.402671 18.710384,27.301336 20.097063,29.584 C 20.971715,28.240002 21.686381,27.00267 22.241063,25.872 C 22.817047,24.741339 23.105046,23.802673 23.105063,23.056 C 23.105046,22.352008 22.955713,21.690675 22.657063,21.072 C 22.358381,20.43201 21.974381,19.88801 21.505063,19.44 C 21.035715,18.970678 20.513049,18.608011 19.937063,18.352 C 19.382384,18.074679 18.849051,17.936012 18.337063,17.936 C 17.590385,17.936012 16.886386,18.202678 16.225063,18.736" style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#d8c78e000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Lucida Grande;-inkscape-font-specification:Lucida Grande" /> </g></svg></span><h1 style="margin:0;font-size:19px;font-variant:small-caps;letter-spacing:.14em;font-weight:normal;color:#e2cf96">Arda through the Ages — the redrawn map</h1>
+<span style="flex:1"></span><span><a style="color:#c9b06a;text-decoration:none;font-size:11.5px;border-bottom:1px dotted #8a7444" href="index.html">⌂ the archive</a> · <a style="color:#c9b06a;text-decoration:none;font-size:11.5px;border-bottom:1px dotted #8a7444" href="arda_timemap_jpeg.html">the living map</a> · <a style="color:#c9b06a;text-decoration:none;font-size:11.5px;border-bottom:1px dotted #8a7444" href="arda_timeline.html">timeline</a> · <a style="color:#c9b06a;text-decoration:none;font-size:11.5px;border-bottom:1px dotted #8a7444" href="genealogy.html">family trees</a> · <a style="color:#c9b06a;text-decoration:none;font-size:11.5px;border-bottom:1px dotted #8a7444" href="artifacts.html">artifacts</a> · <a style="color:#c9b06a;text-decoration:none;font-size:11.5px;border-bottom:1px dotted #8a7444" href="poems.html">verse</a> · <a style="color:#c9b06a;text-decoration:none;font-size:11.5px;border-bottom:1px dotted #8a7444" href="quiz.html">the trial</a> · <a style="color:#c9b06a;text-decoration:none;font-size:11.5px;border-bottom:1px dotted #8a7444" href="armies_dashboard.html">armies</a> · <a style="color:#c9b06a;text-decoration:none;font-size:11.5px;border-bottom:1px dotted #8a7444" href="population_dashboard.html">peoples</a> · <a style="color:#c9b06a;text-decoration:none;font-size:11.5px;border-bottom:1px dotted #8a7444" href="languages.html">tongues & letters</a></span>
+<span style="font-size:10.5px;font-style:italic;color:#a08d5c;flex-basis:100%;margin-top:-2px">the earlier hand-redrawn base (arda_ref) with the same thirteen border-slices — kept as the alternate view; the primary experience is the Living Map on the untouched original</span></div>
+<header><h1>ARDA THROUGH THE AGES</h1>
+<div class="sub">Drag the slider: political borders and the drowning of Beleriand change with time on the locked atlas base.
+Hover a realm for its span, description, confidence and citation. Corpus-only (ARDA_TIMELINE.md).</div></header>
+<div class="controls">
+ <span class="slicelab" id="slab"></span>
+ <input type="range" id="slider" min="0" max="12" step="1" value="11">
+ <button class="btn" id="thm">Dark</button>
+</div>
+<div class="controls" id="togs">
+ <span class="tog" data-k="phys"><span class="sw" style="--c:#cfe7f2"></span>physical change</span>
+ <span class="tog" data-k="borders"><span class="sw" style="--c:#6b5d49"></span>borders</span>
+</div>
+<div class="layout">
+ <div class="mapbox"><img src="arda_ref.svg" alt="Base map of Arda">
+  <svg id="ov" viewBox="0 0 6775 4325" preserveAspectRatio="xMidYMid meet"></svg></div>
+ <aside id="panel"></aside>
+</div>
+<div class="legendnote">Border style encodes confidence: solid = High (named rivers/ranges), dashed = Medium ("between X and Y"),
+dotted = Low (schematic; bounds unrecorded). Colors: blue Elven &middot; green Men &middot; orange Dwarves &middot; violet N&uacute;menor &middot;
+gold Hobbits &middot; red the Shadow &middot; teal mixed. Before the War of Wrath the drowned lands render as living parchment;
+after, the pale water returns. N&uacute;menor lies far west of this canvas &mdash; its rise and fall appear in the event panel.
+Nothing herein is invented: every border derives from ARDA_TIMELINE.md &sect;2 with its citations.</div>
+<div id="tip"></div>
+<script>
+const DATA={
+"realms": {
+"angband_n": {
+"n": "Dominion of Angband",
+"t": "dark",
+"conf": "M",
+"span": "F.A. 1\u2013583",
+"d": "Morgoth's realm of the North; Thangorodrim above the gate; hosts bred beneath.",
+"c": "Silm 3/14/18",
+"p": [
+[
+-260,
+762
+],
+[
+120,
+762
+],
+[
+120,
+984
+],
+[
+-260,
+984
+]
+]
+},
+"angband_x": {
+"n": "Dominion of Angband (after 455)",
+"t": "dark",
+"conf": "M",
+"span": "F.A. 455\u2013583",
+"d": "'The borders of Dor-deloth ever increased southward': Dorthonion, the Pass, Hithlum's fences taken.",
+"c": "Silm 18\u201320; HoME V List of Names",
+"p": [
+[
+-260,
+700
+],
+[
+-40,
+690
+],
+[
+20,
+700
+],
+[
+60,
+740
+],
+[
+120,
+762
+],
+[
+120,
+984
+],
+[
+-260,
+984
+]
+]
+},
+"hithlum": {
+"n": "Hithlum (Fingolfin & Fingon)",
+"t": "elven",
+"conf": "H",
+"span": "F.A. 1\u2013473",
+"d": "Walled by Ered Wethrin and Ered L\u00f3min; Mithrim and Dor-l\u00f3min within; Hador's Men federate.",
+"c": "Silm 14",
+"p": [
+[
+-248,
+640
+],
+[
+-190,
+622
+],
+[
+-140,
+630
+],
+[
+-118,
+660
+],
+[
+-110,
+700
+],
+[
+-130,
+730
+],
+[
+-190,
+745
+],
+[
+-240,
+720
+],
+[
+-252,
+680
+]
+]
+},
+"gondolin": {
+"n": "Gondolin (Turgon)",
+"t": "elven",
+"conf": "H",
+"span": "F.A. 126\u2013510",
+"d": "The Hidden City in the Echoriath ring; one army of 10,000.",
+"c": "Silm 15/23",
+"p": [
+[
+-93,
+673
+],
+[
+-86,
+683
+],
+[
+-76,
+683
+],
+[
+-69,
+673
+],
+[
+-76,
+663
+],
+[
+-86,
+663
+]
+]
+},
+"dorthonion": {
+"n": "Dorthonion (Angrod & Aegnor)",
+"t": "elven",
+"conf": "H",
+"span": "F.A. 1\u2013455",
+"d": "The pine highland, sixty leagues west to east; lost in the Bragollach.",
+"c": "Silm 14/18",
+"p": [
+[
+-92,
+694
+],
+[
+-10,
+694
+],
+[
+-10,
+741
+],
+[
+-70,
+745
+],
+[
+-92,
+733
+]
+]
+},
+"doriath": {
+"n": "Doriath (Thingol & Melian)",
+"t": "elven",
+"conf": "H",
+"span": "Y.T.\u2013F.A. c.502",
+"d": "The Girdle of Melian about Neldoreth, Region and Nivrim; Menegroth its heart.",
+"c": "Silm 4/10/14",
+"p": [
+[
+-114,
+634
+],
+[
+-96,
+672
+],
+[
+-52,
+687
+],
+[
+-8,
+672
+],
+[
+10,
+634
+],
+[
+-8,
+596
+],
+[
+-52,
+581
+],
+[
+-96,
+596
+]
+]
+},
+"nargothrond": {
+"n": "Realm of Nargothrond (Finrod)",
+"t": "elven",
+"conf": "H",
+"span": "F.A. 102\u2013495",
+"d": "From Sirion west to Nenning and the sea; the Guarded Plain watched from the caves.",
+"c": "Silm 14",
+"p": [
+[
+-190,
+560
+],
+[
+-102,
+555
+],
+[
+-95,
+470
+],
+[
+-140,
+435
+],
+[
+-226,
+470
+],
+[
+-235,
+520
+]
+]
+},
+"falas": {
+"n": "The Falas (C\u00edrdan)",
+"t": "elven",
+"conf": "H",
+"span": "Y.T.\u2013F.A. 473",
+"d": "The walled havens Brithombar and Eglarest and the western shore.",
+"c": "Silm 14/20",
+"p": [
+[
+-250,
+565
+],
+[
+-222,
+555
+],
+[
+-210,
+500
+],
+[
+-225,
+452
+],
+[
+-252,
+495
+]
+]
+},
+"brethil": {
+"n": "Brethil (the Haladin)",
+"t": "mannish",
+"conf": "H",
+"span": "F.A. c.390\u2013500",
+"d": "The forest between Teiglin and Sirion, held by Haleth's folk under Doriath's leave.",
+"c": "Silm 17",
+"p": [
+[
+-119,
+606
+],
+[
+-84,
+609
+],
+[
+-78,
+633
+],
+[
+-95,
+640
+],
+[
+-116,
+628
+]
+]
+},
+"marches": {
+"n": "The March of Maedhros & the East",
+"t": "elven",
+"conf": "H",
+"span": "F.A. 7\u2013472",
+"d": "Himring, Aglon and Maglor's Gap; Himlad; Thargelion under Caranthir (to 455).",
+"c": "Silm 13/14",
+"p": [
+[
+-25,
+700
+],
+[
+60,
+706
+],
+[
+92,
+690
+],
+[
+85,
+640
+],
+[
+20,
+630
+],
+[
+-20,
+665
+]
+]
+},
+"ossiriand": {
+"n": "Ossiriand (the Green-elves)",
+"t": "elven",
+"conf": "H",
+"span": "Y.T.\u2013F.A. 587",
+"d": "The Land of Seven Rivers between Gelion and the mountains; bowmen who refuse open war.",
+"c": "Silm 10/14",
+"p": [
+[
+52,
+577
+],
+[
+100,
+577
+],
+[
+100,
+467
+],
+[
+55,
+467
+],
+[
+48,
+520
+]
+]
+},
+"lindon": {
+"n": "Lindon (Gil-galad)",
+"t": "elven",
+"conf": "M",
+"span": "S.A. 1\u2013T.A. 3021",
+"d": "Ossiriand's remnant about the Gulf of Lh\u00fbn; the last high-elven kingdom, then C\u00edrdan's havens.",
+"c": "RoP; App A/B",
+"p": [
+[
+30,
+600
+],
+[
+95,
+560
+],
+[
+130,
+600
+],
+[
+145,
+700
+],
+[
+122,
+812
+],
+[
+80,
+760
+],
+[
+35,
+690
+]
+]
+},
+"eregion": {
+"n": "Eregion (Celebrimbor)",
+"t": "elven",
+"conf": "H",
+"span": "S.A. 750\u20131697",
+"d": "The Ring-smiths' land of holly; south border the Glanduin; destroyed by Sauron.",
+"c": "RoP; UT App D",
+"p": [
+[
+430,
+620
+],
+[
+500,
+600
+],
+[
+505,
+560
+],
+[
+460,
+545
+],
+[
+420,
+570
+]
+]
+},
+"khazad": {
+"n": "Khazad-d\u00fbm (Durin's Folk)",
+"t": "dwarven",
+"conf": "M",
+"span": "Y.T.\u2013T.A. 1980",
+"d": "Greatest of the mansions of the Dwarves; gates shut through the war of 1697.",
+"c": "UT; App A III",
+"p": [
+[
+498,
+600
+],
+[
+540,
+595
+],
+[
+545,
+555
+],
+[
+503,
+550
+]
+]
+},
+"lorinand": {
+"n": "L\u00f3rinand / Lothl\u00f3rien",
+"t": "elven",
+"conf": "M",
+"span": "S.A.\u2013T.A. 3021",
+"d": "The golden wood between Celebrant and Anduin; Amd\u00edr, Amroth, then Galadriel.",
+"c": "UT G&C; LotR II.6",
+"p": [
+[
+510,
+560
+],
+[
+570,
+560
+],
+[
+600,
+540
+],
+[
+560,
+518
+],
+[
+513,
+524
+]
+]
+},
+"greenwood": {
+"n": "Greenwood the Great (Oropher)",
+"t": "elven",
+"conf": "M",
+"span": "S.A.\u2013T.A. c.1050",
+"d": "All the forest under the Silvan king before the Shadow.",
+"c": "UT App B",
+"p": [
+[
+570,
+790
+],
+[
+650,
+800
+],
+[
+720,
+782
+],
+[
+728,
+700
+],
+[
+715,
+645
+],
+[
+708,
+600
+],
+[
+640,
+560
+],
+[
+598,
+548
+],
+[
+578,
+562
+],
+[
+574,
+650
+],
+[
+568,
+720
+]
+]
+},
+"numdom": {
+"n": "N\u00famen\u00f3rean havens",
+"t": "numenor",
+"conf": "M",
+"span": "S.A. c.750\u20133319",
+"d": "Lond Daer (Aldarion), Pelargir (2350, the Faithful), Umbar (2280, the King's Men).",
+"c": "UT Aldarion/App D; App B",
+"p": [
+[
+195,
+470
+],
+[
+232,
+470
+],
+[
+232,
+438
+],
+[
+195,
+438
+]
+],
+"p2": [
+[
+706,
+218
+],
+[
+742,
+218
+],
+[
+742,
+184
+],
+[
+706,
+184
+]
+],
+"p3": [
+[
+738,
+62
+],
+[
+792,
+62
+],
+[
+792,
+8
+],
+[
+738,
+8
+]
+]
+},
+"mordor": {
+"n": "Mordor (Sauron)",
+"t": "dark",
+"conf": "H",
+"span": "S.A. c.1000\u20133441; T.A. 2951\u20133019",
+"d": "The fenced Black Land: Ephel D\u00faath, Ered Lithui, Barad-d\u00fbr; N\u00farn's slave-fields.",
+"c": "RoP; App B",
+"p": [
+[
+772,
+352
+],
+[
+800,
+357
+],
+[
+840,
+355
+],
+[
+880,
+352
+],
+[
+930,
+348
+],
+[
+910,
+180
+],
+[
+795,
+180
+],
+[
+786,
+235
+],
+[
+782,
+270
+],
+[
+780,
+300
+],
+[
+778,
+330
+]
+]
+},
+"mordor_e": {
+"n": "Mordor (desolate, under watch)",
+"t": "dark",
+"conf": "H",
+"span": "S.A. 3441\u2013T.A. 2951",
+"d": "Emptied by the Last Alliance; Gondor's fortresses watch the passes until the Great Plague.",
+"c": "App A I(iv)",
+"p": [
+[
+772,
+352
+],
+[
+800,
+357
+],
+[
+840,
+355
+],
+[
+880,
+352
+],
+[
+930,
+348
+],
+[
+910,
+180
+],
+[
+795,
+180
+],
+[
+786,
+235
+],
+[
+782,
+270
+],
+[
+780,
+300
+],
+[
+778,
+330
+]
+]
+},
+"arnor": {
+"n": "Arnor (Elendil's realm)",
+"t": "mannish",
+"conf": "H",
+"span": "S.A. 3320\u2013T.A. 861",
+"d": "'All Eriador except the regions beyond the Lune and the lands east of Greyflood and Loudwater.'",
+"c": "App A I(iii)",
+"p": [
+[
+150,
+600
+],
+[
+140,
+780
+],
+[
+200,
+900
+],
+[
+300,
+880
+],
+[
+450,
+770
+],
+[
+470,
+700
+],
+[
+450,
+640
+],
+[
+365,
+600
+],
+[
+330,
+560
+],
+[
+300,
+513
+],
+[
+250,
+470
+],
+[
+215,
+458
+],
+[
+205,
+540
+]
+]
+},
+"arthedain": {
+"n": "Arthedain",
+"t": "mannish",
+"conf": "H",
+"span": "T.A. 861\u20131974",
+"d": "'Between Brandywine and Lune, and the land north of the Great Road as far as the Weather Hills.'",
+"c": "App A I(iii)",
+"p": [
+[
+150,
+600
+],
+[
+140,
+780
+],
+[
+230,
+860
+],
+[
+310,
+840
+],
+[
+345,
+700
+],
+[
+347,
+678
+],
+[
+247,
+663
+],
+[
+247,
+612
+],
+[
+205,
+540
+],
+[
+150,
+600
+]
+]
+},
+"cardolan": {
+"n": "Cardolan",
+"t": "mannish",
+"conf": "H",
+"span": "T.A. 861\u20131636",
+"d": "'Between the Brandywine, the Greyflood, and the Great Road'; wasted by 1409 and the Plague.",
+"c": "App A I(iii)",
+"p": [
+[
+247,
+612
+],
+[
+247,
+663
+],
+[
+347,
+678
+],
+[
+365,
+600
+],
+[
+330,
+560
+],
+[
+300,
+513
+],
+[
+250,
+470
+],
+[
+215,
+460
+],
+[
+208,
+535
+]
+]
+},
+"rhudaur": {
+"n": "Rhudaur",
+"t": "mannish",
+"conf": "H",
+"span": "T.A. 861\u2013c.1409",
+"d": "'Between the Ettenmoors, the Weather Hills, and the Misty Mountains, with the Angle'; fell to Angmar.",
+"c": "App A I(iii)",
+"p": [
+[
+347,
+678
+],
+[
+352,
+700
+],
+[
+440,
+752
+],
+[
+487,
+745
+],
+[
+492,
+690
+],
+[
+470,
+640
+],
+[
+400,
+610
+],
+[
+365,
+600
+],
+[
+347,
+660
+]
+]
+},
+"angmar": {
+"n": "Angmar (the Witch-king)",
+"t": "dark",
+"conf": "M",
+"span": "T.A. c.1300\u20131975",
+"d": "'Lands on both sides of the Mountains'; seat at Carn D\u00fbm; broken at Fornost.",
+"c": "App A I(iii)/(iv)",
+"p": [
+[
+430,
+790
+],
+[
+520,
+845
+],
+[
+512,
+885
+],
+[
+428,
+852
+],
+[
+418,
+805
+]
+]
+},
+"gondor_pk": {
+"n": "Gondor at its height",
+"t": "mannish",
+"conf": "H",
+"span": "T.A. c.1050\u20131448",
+"d": "'North to Celebrant and the eaves of Mirkwood; west to Greyflood; east to Rh\u00fbn; south to Harnen and Umbar.' Mordor desolate within, under watch.",
+"c": "App A I(iv)",
+"p": [
+[
+300,
+513
+],
+[
+548,
+552
+],
+[
+600,
+548
+],
+[
+940,
+540
+],
+[
+930,
+348
+],
+[
+910,
+180
+],
+[
+795,
+180
+],
+[
+770,
+130
+],
+[
+765,
+28
+],
+[
+700,
+80
+],
+[
+650,
+140
+],
+[
+620,
+178
+],
+[
+560,
+190
+],
+[
+465,
+215
+],
+[
+413,
+222
+],
+[
+405,
+265
+],
+[
+408,
+280
+],
+[
+330,
+360
+]
+]
+},
+"gondor_lt": {
+"n": "Gondor (late Third Age)",
+"t": "mannish",
+"conf": "M",
+"span": "T.A. c.1900\u20133019",
+"d": "An\u00f3rien and the southern fiefs; Ithilien contested; Calenardhon ceded 2510.",
+"c": "App A; LotR V",
+"p": [
+[
+465,
+215
+],
+[
+560,
+190
+],
+[
+620,
+178
+],
+[
+700,
+165
+],
+[
+755,
+225
+],
+[
+770,
+300
+],
+[
+745,
+332
+],
+[
+700,
+312
+],
+[
+660,
+322
+],
+[
+604,
+330
+],
+[
+565,
+338
+],
+[
+520,
+300
+],
+[
+480,
+252
+]
+]
+},
+"rohan": {
+"n": "Rohan (the Mark)",
+"t": "mannish",
+"conf": "H",
+"span": "T.A. 2510\u2013",
+"d": "Cirion's grant: Anduin to Isen, Limlight to the mountains; Isengard a Gondorian enclave.",
+"c": "UT Cirion & Eorl",
+"p": [
+[
+455,
+352
+],
+[
+462,
+392
+],
+[
+478,
+440
+],
+[
+505,
+515
+],
+[
+530,
+525
+],
+[
+552,
+532
+],
+[
+568,
+487
+],
+[
+585,
+455
+],
+[
+597,
+435
+],
+[
+600,
+410
+],
+[
+592,
+366
+],
+[
+596,
+352
+],
+[
+604,
+328
+],
+[
+565,
+338
+],
+[
+535,
+345
+],
+[
+505,
+355
+],
+[
+475,
+368
+],
+[
+470,
+378
+]
+]
+},
+"shire": {
+"n": "The Shire",
+"t": "hobbit",
+"conf": "H",
+"span": "T.A. 1601\u2013",
+"d": "Grant of Argeleb II: Baranduin to the Far Downs; Buckland 2340; Westmarch S.R. 1452.",
+"c": "Prologue; App B",
+"p": [
+[
+167,
+710
+],
+[
+247,
+708
+],
+[
+250,
+663
+],
+[
+247,
+612
+],
+[
+170,
+615
+],
+[
+163,
+662
+]
+]
+},
+"bree": {
+"n": "Bree-land",
+"t": "mannish",
+"conf": "M",
+"span": "before T.A. 1300\u2013",
+"d": "Four villages at the road-crossing; oldest settlement of Men and hobbits together.",
+"c": "Prologue; App F",
+"p": [
+[
+266,
+678
+],
+[
+286,
+678
+],
+[
+286,
+696
+],
+[
+266,
+696
+]
+]
+},
+"rivendell": {
+"n": "Imladris (Elrond)",
+"t": "elven",
+"conf": "H",
+"span": "S.A. 1697\u2013T.A. 3021",
+"d": "The hidden refuge of the Bruinen valley.",
+"c": "RoP; App B",
+"p": [
+[
+474,
+664
+],
+[
+492,
+664
+],
+[
+492,
+682
+],
+[
+474,
+682
+]
+]
+},
+"thranduil": {
+"n": "The Woodland Realm (Thranduil)",
+"t": "elven",
+"conf": "M",
+"span": "T.A. c.1050\u2013",
+"d": "Withdrawn north of the Mountains of Mirkwood before the Shadow; halls on the Forest River.",
+"c": "UT App B; Hobbit VIII",
+"p": [
+[
+570,
+790
+],
+[
+650,
+800
+],
+[
+720,
+782
+],
+[
+728,
+700
+],
+[
+575,
+700
+],
+[
+568,
+720
+]
+]
+},
+"dolguldur": {
+"n": "Dol Guldur (the Necromancer)",
+"t": "dark",
+"conf": "M",
+"span": "T.A. c.1050\u20133019",
+"d": "The Shadow's hill-fortress in the south forest; razed by Galadriel after the War.",
+"c": "App A/B",
+"p": [
+[
+575,
+650
+],
+[
+710,
+600
+],
+[
+640,
+560
+],
+[
+598,
+548
+],
+[
+578,
+562
+]
+]
+},
+"dale": {
+"n": "Dale & Erebor",
+"t": "mixed",
+"conf": "M",
+"span": "T.A. 1999\u20132770; 2941\u2013",
+"d": "The Mountain-kingdom and the town of the bowmen; ruined by Smaug, restored after Five Armies.",
+"c": "Hobbit; App A III",
+"p": [
+[
+725,
+790
+],
+[
+772,
+790
+],
+[
+776,
+724
+],
+[
+730,
+714
+]
+]
+},
+"ironhills": {
+"n": "The Iron Hills (Gr\u00f3r's folk)",
+"t": "dwarven",
+"conf": "M",
+"span": "T.A. 2590\u2013",
+"d": "D\u00e1in's realm; the mailed veterans of the East.",
+"c": "App A III",
+"p": [
+[
+888,
+790
+],
+[
+992,
+790
+],
+[
+992,
+754
+],
+[
+888,
+748
+]
+]
+},
+"dunland": {
+"n": "Dunland",
+"t": "mannish",
+"conf": "L",
+"span": "all Third Age",
+"d": "The dispossessed hill-folk; Saruman's levies.",
+"c": "App F; LotR III",
+"p": [
+[
+413,
+450
+],
+[
+455,
+492
+],
+[
+462,
+443
+],
+[
+432,
+428
+]
+]
+},
+"isengard_s": {
+"n": "Isengard (Saruman)",
+"t": "dark",
+"conf": "H",
+"span": "T.A. 2759\u20133019",
+"d": "The Wizard's Vale and ring of stone; unmade by the Ents into the Treegarth.",
+"c": "App B; LotR III",
+"p": [
+[
+452,
+376
+],
+[
+470,
+376
+],
+[
+470,
+396
+],
+[
+452,
+396
+]
+]
+},
+"umbar": {
+"n": "Umbar (the Corsairs)",
+"t": "dark",
+"conf": "M",
+"span": "T.A. 1448\u20133019",
+"d": "The rebel haven of the King's Men's heirs; fifty great dromunds at the Pelennor.",
+"c": "App A I(iv); LotR V",
+"p": [
+[
+738,
+62
+],
+[
+792,
+62
+],
+[
+792,
+8
+],
+[
+738,
+8
+]
+]
+},
+"harad": {
+"n": "Harad (schematic)",
+"t": "dark",
+"conf": "L",
+"span": "all Ages",
+"d": "The wide South of the Haradrim; m\u00fbmakil war-hosts. Bounds unrecorded.",
+"c": "LotR IV/V",
+"p": [
+[
+700,
+118
+],
+[
+935,
+118
+],
+[
+935,
+22
+],
+[
+800,
+22
+],
+[
+700,
+60
+]
+]
+},
+"rhun": {
+"n": "Rh\u00fbn (schematic)",
+"t": "dark",
+"conf": "L",
+"span": "all Ages",
+"d": "The Easterling steppes about the inland Sea. Bounds unrecorded.",
+"c": "App A/B",
+"p": [
+[
+862,
+700
+],
+[
+1000,
+700
+],
+[
+1000,
+472
+],
+[
+942,
+462
+],
+[
+872,
+560
+]
+]
+},
+"khand": {
+"n": "Khand (schematic)",
+"t": "dark",
+"conf": "L",
+"span": "Third Age",
+"d": "Land of the Variags, south-east of Mordor. Bounds unrecorded.",
+"c": "App A; LotR V",
+"p": [
+[
+890,
+178
+],
+[
+1000,
+178
+],
+[
+1000,
+88
+],
+[
+890,
+88
+]
+]
+},
+"reunited": {
+"n": "The Reunited Kingdom (Elessar)",
+"t": "mannish",
+"conf": "H",
+"span": "Fourth Age",
+"d": "Arnor and Gondor under one crown; the Shire a protected Free Land; Ithilien under Faramir.",
+"c": "App A/B",
+"p": [
+[
+150,
+600
+],
+[
+140,
+780
+],
+[
+200,
+900
+],
+[
+300,
+880
+],
+[
+450,
+770
+],
+[
+470,
+700
+],
+[
+450,
+640
+],
+[
+365,
+600
+],
+[
+330,
+560
+],
+[
+300,
+513
+],
+[
+548,
+552
+],
+[
+600,
+548
+],
+[
+770,
+540
+],
+[
+930,
+348
+],
+[
+910,
+180
+],
+[
+795,
+180
+],
+[
+770,
+130
+],
+[
+765,
+28
+],
+[
+700,
+80
+],
+[
+620,
+178
+],
+[
+560,
+190
+],
+[
+465,
+215
+],
+[
+413,
+222
+],
+[
+405,
+265
+],
+[
+408,
+280
+],
+[
+330,
+360
+],
+[
+250,
+470
+],
+[
+215,
+458
+],
+[
+205,
+540
+]
+]
+},
+"eastlorien": {
+"n": "East L\u00f3rien",
+"t": "elven",
+"conf": "H",
+"span": "Fourth Age",
+"d": "'The forest south of the Narrows' given to Celeborn at the partition of Eryn Lasgalen.",
+"c": "App B",
+"p": [
+[
+575,
+650
+],
+[
+715,
+645
+],
+[
+708,
+600
+],
+[
+640,
+560
+],
+[
+598,
+548
+],
+[
+578,
+562
+]
+]
+}
+},
+"slices": [
+{
+"id": "yt",
+"label": "Years of the Trees",
+"sub": "before the Sun",
+"alive": 1,
+"realms": [
+"doriath",
+"falas",
+"ossiriand",
+"khazad",
+"angband_n"
+],
+"ev": [
+[
+"The Girdle of Melian fenced about Doriath",
+"Silm 10 [C]"
+],
+[
+"Nogrod and Belegost delved in Ered Luin; Khazad-d\u00fbm far east",
+"Silm 10 [C]"
+],
+[
+"Angband rebuilt upon Utumno's western outworks",
+"Silm 3/9 [C]"
+],
+[
+"World-shape: the marred symmetry after the Lamps; schematic only",
+"Silm 1; HoME IV [C/I-L]"
+]
+]
+},
+{
+"id": "fa_peace",
+"label": "F.A. 65\u2013455 \u2014 the Long Peace",
+"sub": "the Siege of Angband",
+"alive": 1,
+"realms": [
+"angband_n",
+"hithlum",
+"gondolin",
+"dorthonion",
+"doriath",
+"nargothrond",
+"falas",
+"brethil",
+"marches",
+"ossiriand",
+"khazad"
+],
+"ev": [
+[
+"The Noldor's leaguer rings Angband; realms as charted in Silm 14",
+"[C]"
+],
+[
+"Gondolin full-wrought after 52 years of secret toil",
+"Silm 15 [C]"
+],
+[
+"The Edain enter Beleriand c. 310\u2013330 and hold fiefs under the Elf-kings",
+"Silm 17 [C]"
+]
+]
+},
+{
+"id": "fa_wars",
+"label": "F.A. 455\u2013583 \u2014 the Ruin of Beleriand",
+"sub": "Bragollach to the falls",
+"alive": 1,
+"realms": [
+"angband_x",
+"hithlum",
+"gondolin",
+"doriath",
+"nargothrond",
+"falas",
+"brethil",
+"marches",
+"ossiriand",
+"khazad"
+],
+"ev": [
+[
+"Ard-galen burned: Anfauglith, the Gasping Dust",
+"Silm 18 [C]"
+],
+[
+"Dorthonion \u2192 Taur-nu-Fuin; Tol Sirion taken (457)",
+"Silm 18 [C]"
+],
+[
+"Nirnaeth 472; Falas 473; Nargothrond 495; Doriath c.502; Gondolin 510",
+"Silm 20\u201323 [C]"
+]
+]
+},
+{
+"id": "wow",
+"label": "F.A. 587 / S.A. 1 \u2014 After the War of Wrath",
+"sub": "Beleriand drowned",
+"alive": 0,
+"realms": [
+"lindon",
+"khazad"
+],
+"ev": [
+[
+"'Northward and westward many lands sank'; the Gulf of Lh\u00fbn breaks Ered Luin",
+"Silm 24/RoP [C]"
+],
+[
+"Lindon remains of Ossiriand; Himling and Tol Fuin stand above the waves",
+"App A; UT Intro [C]"
+],
+[
+"S.A. 32: N\u00famenor raised for the Edain \u2014 far west, off this canvas",
+"Akallab\u00eath [C]"
+]
+]
+},
+{
+"id": "sa_noon",
+"label": "S.A. 750\u20131690 \u2014 N\u00famenor's Noontide",
+"sub": "havens and the rising Shadow",
+"alive": 0,
+"realms": [
+"lindon",
+"eregion",
+"khazad",
+"lorinand",
+"greenwood",
+"numdom",
+"mordor"
+],
+"ev": [
+[
+"Eregion founded 750; the Rings forged c.1500\u201390",
+"RoP; App B [C]"
+],
+[
+"Vinyalond\u00eb/Lond Daer: the great deforestation of Minhiriath & Enedwaith",
+"UT Aldarion/App D [C]"
+],
+[
+"c.1000: Sauron takes Mordor; Barad-d\u00fbr rises",
+"App B [C]"
+]
+]
+},
+{
+"id": "sa_war",
+"label": "S.A. 1693\u20133319 \u2014 War and Downfall",
+"sub": "to the Change of the World",
+"alive": 0,
+"realms": [
+"lindon",
+"khazad",
+"lorinand",
+"greenwood",
+"numdom",
+"mordor"
+],
+"ev": [
+[
+"1697: Eregion destroyed; Imladris founded; Moria's gates shut",
+"RoP; UT [C]"
+],
+[
+"Umbar fortified 2280; Pelargir built 2350",
+"App B [C]"
+],
+[
+"3319 the Downfall: world made round; Bay of Belfalas filled at east and south; Pelargir left far inland; Tolfalas nearly destroyed",
+"Akallab\u00eath; HoME XII ToY [C]"
+]
+]
+},
+{
+"id": "exile",
+"label": "S.A. 3320 \u2013 T.A. 2 \u2014 Realms in Exile",
+"sub": "and the Last Alliance",
+"alive": 0,
+"realms": [
+"arnor",
+"gondor_lt",
+"lindon",
+"khazad",
+"lorinand",
+"greenwood",
+"mordor"
+],
+"ev": [
+[
+"Arnor: 'all Eriador except beyond the Lune and east of Greyflood'",
+"App A [C,H]"
+],
+[
+"Gondor about the lower Anduin: Osgiliath, Minas Ithil, Minas Anor",
+"RoP [C]"
+],
+[
+"3429\u201341: Last Alliance; Mordor emptied for two millennia",
+"App B [C]"
+]
+]
+},
+{
+"id": "ta_height",
+"label": "T.A. 861\u20131300 \u2014 Division & Gondor's Height",
+"sub": "three kingdoms in the north",
+"alive": 0,
+"realms": [
+"arthedain",
+"cardolan",
+"rhudaur",
+"gondor_pk",
+"lindon",
+"khazad",
+"lorinand",
+"greenwood",
+"mordor_e",
+"shire"
+],
+"ev": [
+[
+"861: Arnor divided \u2014 Arthedain, Cardolan, Rhudaur; Amon S\u00fbl the tri-point",
+"App A [C,H]"
+],
+[
+"c.1050: Hyarmendacil \u2014 Gondor's greatest bounds (Celebrant-field\u2192Rh\u00fbn\u2192Umbar\u2192Greyflood)",
+"App A [C,H]"
+],
+[
+"c.1050: the Shadow in Greenwood; men begin to call it Mirkwood",
+"App A/B [C]"
+],
+[
+"1601: the Shire granted by Argeleb II (late in this slice)",
+"Prologue [C]"
+]
+]
+},
+{
+"id": "ta_angmar",
+"label": "T.A. 1300\u20131975 \u2014 the Angmar Wars",
+"sub": "plague and the fall of the North",
+"alive": 0,
+"realms": [
+"arthedain",
+"cardolan",
+"rhudaur",
+"angmar",
+"gondor_pk",
+"lindon",
+"khazad",
+"lorinand",
+"thranduil",
+"dolguldur",
+"shire",
+"bree"
+],
+"ev": [
+[
+"c.1300: the Witch-realm at the Mountains' head; 1409 Amon S\u00fbl razed; Rhudaur absorbed",
+"App A [C]"
+],
+[
+"1636: the Great Plague \u2014 Cardolan dies, Osgiliath depopulated, the watch on Mordor ceases",
+"App A [C]"
+],
+[
+"1974\u201375: Arthedain falls; Angmar broken at Fornost; the North Kingdom ends",
+"App A [C]"
+]
+]
+},
+{
+"id": "ta_wander",
+"label": "T.A. 1980\u20132510 \u2014 the Wandering Days",
+"sub": "Moria lost; the north empties",
+"alive": 0,
+"realms": [
+"gondor_lt",
+"lindon",
+"lorinand",
+"thranduil",
+"dolguldur",
+"shire",
+"bree",
+"dale",
+"ironhills",
+"mordor_e",
+"dunland",
+"rivendell"
+],
+"ev": [
+[
+"1980\u201381: the Balrog; Khazad-d\u00fbm abandoned; L\u00f3rien's flight begins",
+"App A/B [C]"
+],
+[
+"2002: Minas Ithil taken \u2014 Minas Morgul; 2050 the kings end",
+"App A [C]"
+],
+[
+"1999 Erebor founded; 2510 Field of Celebrant \u2014 Calenardhon granted to Eorl",
+"App A/B; UT [C]"
+]
+]
+},
+{
+"id": "ta_rohan",
+"label": "T.A. 2510\u20132941 \u2014 Rohan and the Dragon",
+"sub": "from Eorl to Five Armies",
+"alive": 0,
+"realms": [
+"rohan",
+"gondor_lt",
+"lindon",
+"lorinand",
+"thranduil",
+"dolguldur",
+"shire",
+"bree",
+"dale",
+"ironhills",
+"mordor_e",
+"dunland",
+"isengard_s",
+"rivendell"
+],
+"ev": [
+[
+"2510: the Oath of Cirion and Eorl; Isengard kept by Gondor (Saruman from 2759)",
+"UT [C]"
+],
+[
+"2770: Smaug \u2014 the Desolation about Erebor and Dale (healed after 2941)",
+"Hobbit; App A [C]"
+],
+[
+"2912: floods ruin Tharbad; 2941: Erebor restored, the Necromancer driven out",
+"App B [C]"
+]
+]
+},
+{
+"id": "ta_war",
+"label": "T.A. 2951\u20133019 \u2014 the War of the Ring",
+"sub": "Mordor re-armed",
+"alive": 0,
+"realms": [
+"rohan",
+"gondor_lt",
+"lindon",
+"lorinand",
+"thranduil",
+"dolguldur",
+"shire",
+"bree",
+"dale",
+"ironhills",
+"mordor",
+"dunland",
+"isengard_s",
+"umbar",
+"harad",
+"rhun",
+"khand",
+"rivendell"
+],
+"ev": [
+[
+"2951: Sauron declares himself; Barad-d\u00fbr rebuilt; Mount Doom rekindled",
+"App B [C]"
+],
+[
+"3018\u201319: the fronts \u2014 Isen, Hornburg, Pelennor, Morannon, Dale, L\u00f3rien \u00d73, Mirkwood",
+"App B [C]"
+],
+[
+"3019: Barad-d\u00fbr and the Towers fall in ruin; Isengard becomes the Treegarth; N\u00farn freed",
+"LotR VI; App B [C]"
+]
+]
+},
+{
+"id": "foa",
+"label": "The Fourth Age \u2014 the Reunited Kingdom",
+"sub": "dominion of Men",
+"alive": 0,
+"realms": [
+"reunited",
+"rohan",
+"shire",
+"dale",
+"ironhills",
+"thranduil",
+"eastlorien",
+"lindon"
+],
+"ev": [
+[
+"Arnor and Gondor reunited under Elessar; Ann\u00faminas restored",
+"App A/B [C]"
+],
+[
+"Eryn Lasgalen partitioned: Thranduil north, East L\u00f3rien south, Woodmen between",
+"App B [C,H]"
+],
+[
+"Minas Morgul destroyed by decree; Ithilien the garden of the realm again",
+"LotR VI.5; App A [C]"
+],
+[
+"The Elves diminish and depart; the mallorn blooms in the Party Field",
+"LotR VI.9 [C]"
+]
+]
+}
+],
+"wash": [
+[
+300,
+1000
+],
+[
+260,
+975
+],
+[
+200,
+900
+],
+[
+140,
+800
+],
+[
+90,
+730
+],
+[
+35,
+682
+],
+[
+53,
+660
+],
+[
+30,
+640
+],
+[
+120,
+600
+],
+[
+205,
+540
+],
+[
+180,
+505
+],
+[
+210,
+455
+],
+[
+60,
+432
+],
+[
+-72,
+406.5
+],
+[
+-131,
+449
+],
+[
+-190.5,
+484.5
+],
+[
+-235.5,
+516.5
+],
+[
+-246.5,
+557
+],
+[
+-270,
+577
+],
+[
+-286.5,
+598.5
+],
+[
+-276.5,
+634
+],
+[
+-299.5,
+696.5
+],
+[
+-303,
+733
+],
+[
+-306,
+790
+],
+[
+-310,
+860
+],
+[
+-295,
+940
+],
+[
+-150,
+975
+],
+[
+30,
+990
+],
+[
+150,
+985
+]
+]
+};
+const NS='http://www.w3.org/2000/svg';
+const P=(x,y)=>[(x+350)*5,(985-y)*5];
+const svg=document.getElementById('ov');
+const cats={elven:1,mannish:1,dwarven:1,dark:1,hobbit:1,numenor:1,mixed:1};
+let phys=1,borders=1;
+let cur=parseInt(new URLSearchParams(location.search).get('s')||'11');
+function poly(pts){return pts.map((p,i)=>(i?'L':'M')+P(p[0],p[1]).map(v=>v.toFixed(0)).join(' ')).join(' ')+' Z';}
+function build(){
+ svg.innerHTML='';
+ // physical: parchment-restore over the drowned wash (pre-War-of-Wrath slices)
+ const g0=document.createElementNS(NS,'path');
+ g0.setAttribute('d',poly(DATA.wash));g0.setAttribute('fill','#eadfb2');g0.setAttribute('opacity','0');
+ g0.setAttribute('id','alive');g0.style.transition='opacity .7s';svg.appendChild(g0);
+ for(const id in DATA.realms){const r=DATA.realms[id];
+  const g=document.createElementNS(NS,'g');g.setAttribute('id','r_'+id);
+  g.style.transition='opacity .7s';g.setAttribute('opacity','0');g.style.pointerEvents='none';
+  for(const key of ['p','p2','p3']){if(!r[key])continue;
+   const path=document.createElementNS(NS,'path');
+   path.setAttribute('d',poly(r[key]));
+   path.setAttribute('fill','var(--'+r.t+')');path.setAttribute('fill-opacity','0.16');
+   path.setAttribute('stroke','var(--'+r.t+')');path.setAttribute('stroke-width','9');
+   if(r.conf==='M')path.setAttribute('stroke-dasharray','40 24');
+   if(r.conf==='L')path.setAttribute('stroke-dasharray','10 26');
+   path.addEventListener('mousemove',ev=>{const t=document.getElementById('tip');
+    t.innerHTML=`<b>${r.n}</b><br><span class="meta">${r.span} &middot; confidence ${r.conf}</span><br>${r.d}<br><span class="meta">${r.c}</span>`;
+    t.style.display='block';t.style.left=Math.min(ev.clientX+14,innerWidth-320)+'px';t.style.top=(ev.clientY+12)+'px';});
+   path.addEventListener('mouseleave',()=>document.getElementById('tip').style.display='none');
+   g.appendChild(path);}
+  svg.appendChild(g);}
+}
+function apply(){
+ const s=DATA.slices[cur];
+ document.getElementById('slab').innerHTML=s.label+' &mdash; <i style="color:var(--acc)">'+s.sub+'</i>';
+ document.getElementById('alive').setAttribute('opacity',(phys&&s.alive)?'0.62':'0');
+ for(const id in DATA.realms){
+  const g=document.getElementById('r_'+id);
+  const on=borders&&s.realms.includes(id)&&cats[DATA.realms[id].t];
+  g.setAttribute('opacity',on?'1':'0');g.style.pointerEvents=on?'auto':'none';}
+ const pn=document.getElementById('panel');
+ pn.innerHTML='<h2>'+s.label+'</h2><div class="sub2">'+s.sub+'</div><ul>'+
+  s.ev.map(e=>'<li>'+e[0]+'<cite>'+e[1]+'</cite></li>').join('')+'</ul>'+
+  '<div class="sub2">Realms on the map: '+s.realms.filter(id=>cats[DATA.realms[id].t]).map(id=>DATA.realms[id].n.split(' (')[0]).join(' &middot; ')+'</div>';
+}
+build();
+document.getElementById('slider').value=cur;
+document.getElementById('slider').addEventListener('input',e=>{cur=+e.target.value;apply();});
+for(const t in cats){const el=document.createElement('span');el.className='tog';
+ el.innerHTML=`<span class="sw" style="--c:var(--${t})"></span>${t}`;
+ el.onclick=()=>{cats[t]=!cats[t];el.classList.toggle('off');apply();};
+ document.getElementById('togs').appendChild(el);}
+document.querySelectorAll('.tog[data-k]').forEach(el=>{el.onclick=()=>{
+ if(el.dataset.k==='phys')phys=!phys;else borders=!borders;el.classList.toggle('off');apply();};});
+document.getElementById('thm').onclick=function(){const r=document.documentElement;
+ r.setAttribute('data-theme',r.getAttribute('data-theme')==='dark'?'light':'dark');};
+apply();
+</script><script src="quotes.js"></script><script src="touch.js"></script></body></html>
