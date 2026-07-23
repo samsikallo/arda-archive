@@ -132,7 +132,7 @@ sv.innerHTML=`<defs>
 <path d="M12,29 L14,20 L16,29 Z M17,29 L19,17 L21,29 Z"/></g>
 <path d="M14,20 L19,17" stroke="#eceae2" stroke-width="1"/></symbol>
 </defs>`;
-if(window.ARDA_HERALD){var _defs=sv.querySelector("defs");Object.keys(window.ARDA_HERALD).forEach(function(k){var h=window.ARDA_HERALD[k];if(!h.file)return;var sym=document.getElementById("em-"+k);if(!sym){sym=document.createElementNS(NS,"symbol");sym.id="em-"+k;sym.setAttribute("viewBox","0 0 40 48");_defs.appendChild(sym);}sym.innerHTML='<image href="'+h.file+'" x="0" y="0" width="40" height="48" preserveAspectRatio="xMidYMid meet"/>';});}
+if(window.ARDA_HERALD){var _defs=sv.querySelector("defs");Object.keys(window.ARDA_HERALD).forEach(function(k){var h=window.ARDA_HERALD[k];if(!h.file&&!h.forge)return;var sym=document.getElementById("em-"+k);if(!sym){sym=document.createElementNS(NS,"symbol");sym.id="em-"+k;_defs.appendChild(sym);}if(h.file){sym.setAttribute("viewBox","0 0 40 48");sym.innerHTML='<image href="'+h.file+'" x="0" y="0" width="40" height="48" preserveAspectRatio="xMidYMid meet"/>';}else if(h.forge&&window.ardaForgeInner){sym.setAttribute("viewBox","0 0 200 226");sym.innerHTML=window.ardaForgeInner(h.forge);}});}
 const g=document.createElementNS(NS,"g");sv.appendChild(g);
 const wg=document.createElementNS(NS,"g");g.appendChild(wg);
 const lg=document.createElementNS(NS,"g"),eg=document.createElementNS(NS,"g"),ng=document.createElementNS(NS,"g");

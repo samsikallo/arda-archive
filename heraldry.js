@@ -24,11 +24,12 @@ window.ardaHeraldCredits=function(){var seen={},rows=[];
  return '<b>Heraldry credits.</b> Canonical devices are recreations of Tolkien\'s designs from Wikimedia Commons, reused under their licenses (CC BY-SA / Public Domain) with attribution. Interpretive devices (Durin\'s Folk, Fingolfin) are the archive\'s own lore-derived reconstructions, tagged as such.<br><span class="cite" style="font-size:10px">'+rows.join(' · ')+'</span>';};
 
 window.ardaSwapAllEmblems=function(){var NS="http://www.w3.org/2000/svg";var anyDefs=document.querySelector("defs");
- function set(symKey,srcKey){var h=window.ARDA_HERALD[srcKey||symKey];if(!h||!h.file)return;
+ function set(symKey,srcKey){var h=window.ARDA_HERALD[srcKey||symKey];if(!h)return;if(!h.file&&!h.forge)return;
   var sym=document.getElementById("em-"+symKey);
-  if(!sym){if(!anyDefs)return;sym=document.createElementNS(NS,"symbol");sym.id="em-"+symKey;sym.setAttribute("viewBox","0 0 40 48");anyDefs.appendChild(sym);}
+  if(!sym){if(!anyDefs)return;sym=document.createElementNS(NS,"symbol");sym.id="em-"+symKey;anyDefs.appendChild(sym);}
   if(sym.getAttribute("data-canon"))return; sym.setAttribute("data-canon","1");
-  sym.innerHTML='<image href="'+h.file+'" x="0" y="0" width="40" height="48" preserveAspectRatio="xMidYMid meet"/>';}
+  if(h.file){sym.setAttribute("viewBox","0 0 40 48");sym.innerHTML='<image href="'+h.file+'" x="0" y="0" width="40" height="48" preserveAspectRatio="xMidYMid meet"/>';}
+  else if(h.forge&&window.ardaForgeInner){sym.setAttribute("viewBox","0 0 200 226");sym.innerHTML=window.ardaForgeInner(h.forge);}}
  Object.keys(window.ARDA_HERALD).forEach(function(k){set(k);});
  Object.keys(window.ARDA_HERALD_ALIAS).forEach(function(a){set(a,window.ARDA_HERALD_ALIAS[a]);});};
 if(document.readyState!=="loading")window.ardaSwapAllEmblems();
@@ -53,7 +54,7 @@ window.ardaChargePath=function(kind,cx,cy,r,fill){
   case"gem":return '<path d="M'+cx+','+(cy-r)+' L'+(cx+r*0.7)+','+(cy-r*0.2)+' L'+cx+','+(cy+r)+' L'+(cx-r*0.7)+','+(cy-r*0.2)+'Z" fill="'+fill+'"/><path d="M'+cx+','+(cy-r)+' L'+cx+','+(cy+r)+' M'+(cx-r*0.7)+','+(cy-r*0.2)+' L'+(cx+r*0.7)+','+(cy-r*0.2)+'" stroke="#fffdf6" stroke-width="1" opacity=".5"/>';
   case"crown":return '<path d="M'+(cx-r*0.7)+','+(cy+r*0.4)+' L'+(cx-r*0.7)+','+(cy-r*0.3)+' L'+(cx-r*0.35)+','+cy+' L'+cx+','+(cy-r*0.5)+' L'+(cx+r*0.35)+','+cy+' L'+(cx+r*0.7)+','+(cy-r*0.3)+' L'+(cx+r*0.7)+','+(cy+r*0.4)+'Z" fill="'+fill+'"/>';
   default:return"";}};
-window.ardaForgeDevice=function(p,W){
+window.ardaForgeInner=function(p){
  var col=function(c){return typeof c==="number"?window.ARDA_PAL[c][1]:c;};
  var cx=100,cy=113,R=78,field=col(p.field),cc=col(p.cc),shape;
  if(p.shape==="circle")shape='<circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="'+field+'" stroke="#8a7444" stroke-width="2"/>';
@@ -64,7 +65,7 @@ window.ardaForgeDevice=function(p,W){
  var ch="",rep=p.repeat||1;
  if(p.charge&&p.charge!=="none"){if(rep===1)ch=window.ardaChargePath(p.charge,cx,cy,R*0.5,cc);
   else for(var j=0;j<rep;j++)ch+='<g transform="rotate('+(360*j/rep)+' '+cx+' '+cy+') translate(0 -'+(R*0.34)+')">'+window.ardaChargePath(p.charge,cx,cy,R*0.26,cc)+'</g>';}
- var w=W||74,h=Math.round(w*226/200);
- return '<svg viewBox="0 0 200 226" width="'+w+'" height="'+h+'" style="vertical-align:middle">'+shape+rim+ch+'</svg>';};
+ return shape+rim+ch;};
+window.ardaForgeDevice=function(p,W){var w=W||74,h=Math.round(w*226/200);return '<svg viewBox="0 0 200 226" width="'+w+'" height="'+h+'" style="vertical-align:middle">'+window.ardaForgeInner(p)+'</svg>';};
 
 window.ARDA_REALM_DEVICE={doriath:"thingol",gondolin:"turgon",nargothrond:"finrod",khazaddum:"durin",erebor:"durin",ironhills:"durin",lindon:"gilgalad",eregion:"feanor",lorien:"galadriel",rivendell:"elrond",mordor:"redeye",dolguldur:"redeye",gondor:"gondor",reunited:"gondor",angmar:"morgul",morgul:"morgul",rohan:"rohan",isengard:"whitehand",harad:"serpent"};
