@@ -1,0 +1,47 @@
+/* arda.css — shared design tokens + accessibility layer for every hall.
+   Loaded AFTER each page's own <style>, so its fixes win the cascade. */
+:root{
+  --a-parch:#efe6cd; --a-card:#fdfaf2; --a-ink:#3a3226; --a-mut:#6b5c44; /* AA on parchment */
+  --a-line:#b0a58e; --a-gold:#c9a227; --a-gold-dk:#7a5f14; --a-char:#191512; --a-hdr-gold:#d8c78e;
+  --a-elf:#4a7c59; --a-num:#4a6a8a; --a-man:#8a6a3a; --a-dwarf:#8a5a8a; --a-hobbit:#a2762a; --a-dark:#5a3a35;
+}
+/* WCAG: citation text was 4.21:1 at 11.5px italic — raise size + darken */
+.cite{color:var(--a-mut) !important; font-size:12.5px !important;}
+/* Keyboard access: visible focus everywhere, incl. the span-widgets given tabindex by nav.js */
+:focus-visible{outline:2px solid var(--a-gold) !important; outline-offset:2px; border-radius:4px;}
+a:focus-visible{outline:2px solid var(--a-gold) !important;}
+/* Skip link */
+.a-skip{position:absolute;left:-999px;top:0;background:var(--a-char);color:var(--a-hdr-gold);
+  padding:6px 14px;z-index:999;border-radius:0 0 8px 0;font:13px Georgia,serif}
+.a-skip:focus{left:0}
+/* ---- Grouped nav (rendered by nav.js) ---- */
+#ardanav{display:flex;flex-wrap:wrap;gap:2px;align-items:center;font-size:12px}
+#ardanav .grp{position:relative}
+#ardanav .grp>button{background:none;border:none;color:#c9b06a;font:12px Georgia,serif;
+  font-variant:small-caps;letter-spacing:.06em;cursor:pointer;padding:3px 9px;border-radius:8px}
+#ardanav .grp>button:hover,#ardanav .grp>button[aria-expanded="true"]{background:rgba(201,162,39,.16);color:#e2cf96}
+#ardanav .grp>button.here{border-bottom:2px solid var(--a-gold)}
+#ardanav .menu{display:none;position:absolute;top:100%;left:0;min-width:200px;background:#221c15;
+  border:1px solid #8a7444;border-radius:0 0 10px 10px;padding:6px 0;z-index:60;box-shadow:0 8px 22px rgba(0,0,0,.5)}
+#ardanav .grp>button[aria-expanded="true"]+.menu{display:block}
+#ardanav .menu a{display:block;padding:5px 14px;color:#c9b06a;text-decoration:none;font-size:12.5px}
+#ardanav .menu a .sub2{display:block;font-size:10.5px;color:#8a7a52;font-style:italic}
+#ardanav .menu a:hover,#ardanav .menu a:focus-visible{background:rgba(201,162,39,.14);color:#e8dcb0}
+#ardanav .menu a[aria-current="page"]{color:#e8dcb0;border-left:3px solid var(--a-gold);padding-left:11px}
+#ardanav .home{color:#c9b06a;text-decoration:none;font-size:12px;font-variant:small-caps;padding:3px 9px;border-radius:8px}
+#ardanav .home:hover{background:rgba(201,162,39,.16)}
+#a-crumb{font-size:10.5px;color:#8a7a52;font-style:italic;flex-basis:100%;margin-top:-1px}
+#a-crumb a{color:#a08d5c;text-decoration:none}
+#a-theme{background:none;border:1px solid #8a7444;color:#c9b06a;border-radius:10px;cursor:pointer;
+  font-size:11px;padding:2px 9px;margin-left:6px}
+@media (max-width:760px){
+  #ardanav{gap:0}
+  #ardanav .grp>button{padding:5px 7px;font-size:11.5px}
+  #ardanav .menu{position:fixed;left:8px;right:8px;top:auto;min-width:0}
+}
+/* ---- Opt-in dark theme (moon toggle; stored in localStorage) ----
+   Pragmatic inversion: the parchment site inverts cleanly; images/canvas/video counter-invert. */
+html.arda-dark body{filter:invert(1) hue-rotate(180deg);background:#181410}
+html.arda-dark img,html.arda-dark canvas,html.arda-dark svg image,html.arda-dark video{filter:invert(1) hue-rotate(180deg)}
+html.arda-dark{background:#181410}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01s !important;transition-duration:.01s !important}}
