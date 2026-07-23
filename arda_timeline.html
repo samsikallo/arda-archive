@@ -112,11 +112,11 @@ function draw(){
   lab.textContent=yy<0?('Y.T. '+Math.round(1500+yy/9.582)):yy<590?('F.A. '+yy):yy<4031?('S.A. '+(yy-590)):yy<7052?('T.A. '+(yy-4031)):('F.o.A. '+(yy-7052));}
 }
 function multiCal(y){
- if(y>=4031&&y<7052){const ta=Math.round(y-4031);let out="T.A. "+ta;
+ if(y>=4032&&y<7053){const ta=Math.round(y-4031);let out="T.A. "+ta;
   if(ta>=1601)out+=" · S.R. "+(ta-1600);if(ta>=1300)out+=" · Bree "+(ta-1299);out+=" · S.A. "+(ta+3441);return out}
- if(y>=7052){const f=Math.round(y-7052);return "Fo.A. "+f+" · T.A.-count "+(f+3020)+" · S.R. "+(f+1420)}
- if(y>=590&&y<4031)return "S.A. "+Math.round(y-590);
- if(y>=0&&y<590)return "F.A. "+Math.round(y)+" (Years of the Sun)";
+ if(y>=7053){const f=Math.round(y-7052);return "Fo.A. "+f+" · T.A.-count "+(f+3020)+" · S.R. "+(f+1420)}
+ if(y>=591&&y<4032)return "S.A. "+Math.round(y-590);
+ if(y>=0&&y<=590)return "F.A. "+Math.round(y)+" (Years of the Sun)";
  return "Y.T. "+Math.round(1500+y/9.582)+" · ≈ "+Math.round(y).toLocaleString()+" sun-years before the Sun [scheme: ×9.582, see the Reckonings]";}
 svg.addEventListener('wheel',e=>{e.preventDefault();
  const mx=e.offsetX/W,c0=a+(b-a)*mx,f=e.deltaY>0?1.12:1/1.12;

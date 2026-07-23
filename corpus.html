@@ -91,7 +91,7 @@ Promise.all(["arda_corpusindex.json","arda_concordance.json","arda_chronology.js
 .then(([ci,cc,ch,rl,lx])=>{CI=ci;CC=cc;CH=ch;RL=rl;LX=lx;init()});
 const ERAOFF={yt:null,fa:0,sa:590,ta:4031,foa:7052};
 function absOf(era,y){if(era==="yt")return (y-1500)*9.582;return ERAOFF[era]+y}
-function eraStr(abs){if(abs<0)return "Y.T. "+Math.round(1500+abs/9.582);if(abs<590)return "F.A. "+Math.round(abs);if(abs<4031)return "S.A. "+Math.round(abs-590);if(abs<7052)return "T.A. "+Math.round(abs-4031);return "Fo.A. "+Math.round(abs-7052)}
+function eraStr(abs){if(abs<0)return "Y.T. "+Math.round(1500+abs/9.582);if(abs<=590)return "F.A. "+Math.round(abs);if(abs<4032)return "S.A. "+Math.round(abs-590);if(abs<7053)return "T.A. "+Math.round(abs-4031);return "Fo.A. "+Math.round(abs-7052)}
 function init(){
  // shelf
  const maxw=Math.max(...CI.map(v=>v.words));

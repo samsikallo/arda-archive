@@ -103,9 +103,10 @@ function addBooks(nm){const spot=document.getElementById("bookspot");if(!spot)re
 booksPanel(nm).then(html=>{if(html)spot.outerHTML=html;});}
 const render0=render;render=function(){render0();const id=(location.hash||"#aragorn").slice(1);const p=byId[id];if(p){const nm=p.n.split(",")[0].split(" (")[0];addBooks(nm);
 const spot=document.getElementById("bookspot");
+if(spot&&window.ardaPortrait&&!document.getElementById("rec-pt")){const pd=document.createElement('div');pd.id='rec-pt';pd.innerHTML=ardaPortrait(p);spot.parentNode.insertBefore(pd,spot);}
 if(spot&&!document.getElementById("xlinks")){const d=document.createElement("div");d.id="xlinks";d.className="cite";d.style.marginTop="6px";
 d.innerHTML='🔤 <a style="color:#7a4a12" href="languages.html#name='+encodeURIComponent(nm)+'">unmake this name in the Name-craft</a> · 📖 <a style="color:#7a4a12" href="corpus.html#tab=conc">find it in the Corpus concordance</a>';
 spot.parentNode.insertBefore(d,spot.nextSibling);}}};
 addEventListener("hashchange",render);render();
 });
-</script><script src="speak.js"></script><script src="quotes.js"></script><script src="touch.js"></script><script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script><script src="nav.js"></script></body></html>
+</script><script src="speak.js"></script><script src="quotes.js"></script><script src="touch.js"></script><script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script><script src="portraits.js"></script><script src="nav.js"></script></body></html>
