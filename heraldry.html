@@ -87,13 +87,14 @@ h3.sub{font-variant:small-caps;font-weight:normal;color:#7a6a50;font-size:15px;m
 (function(){
 var H=window.ARDA_HERALD;
 var order=["Eldar","The Kingdoms of Men","The Khazâd","The Enemy","The Istari"];
+var suborder={"Eldar":["The House of Finwë","Doriath & the Sindar","The Houses of Gondolin","Gil-galad & the Half-elven"]};
 var byCat={};Object.keys(H).forEach(function(k){var h=H[k];(byCat[h.cat]=byCat[h.cat]||{});(byCat[h.cat][h.sub]=byCat[h.cat][h.sub]||[]).push(k);});
-function dev(k){var h=H[k];var img=h.file?'<img src="'+h.file+'" alt="'+h.blazon.replace(/"/g,"")+'">':'<svg viewBox="0 0 40 48"><use href="#em-'+k+'"/></svg>';
+function dev(k){var h=H[k];var img=h.file?'<img src="'+h.file+'" alt="'+h.blazon.replace(/"/g,"")+'">':(h.forge&&window.ardaForgeDevice?window.ardaForgeDevice(h.forge,74):'');
  var badge=h.canon?'<span class="badge bc">✔ Tolkien\'s device</span>':'<span class="badge bi">◆ interpretive</span>';
  return '<div class="dcard">'+img+'<div class="n">'+h.label.replace(/ —.*$/,"")+'</div><div class="bz">'+h.blazon+'</div>'+badge+'</div>';}
 var html="";
 order.forEach(function(cat){if(!byCat[cat])return;html+='<h2>'+cat+'</h2>';
- var subs=Object.keys(byCat[cat]);
+ var subs=Object.keys(byCat[cat]);if(suborder[cat])subs.sort(function(a,b){var oa=suborder[cat].indexOf(a),ob=suborder[cat].indexOf(b);return (oa<0?99:oa)-(ob<0?99:ob);});
  // Gondolin group note
  subs.forEach(function(sub){html+='<h3 class="sub">'+sub+(sub==="The Houses of Gondolin"?' <a href="gondolin.html" style="color:#7a4a12;font-size:11px">— the full hall ⧉</a>':'')+'</h3><div class="grid">'+byCat[cat][sub].map(dev).join("")+'</div>';});});
 document.getElementById("catalog").innerHTML=html;

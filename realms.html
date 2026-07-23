@@ -130,6 +130,9 @@ window.openR=function(id,scroll=true){
  history.replaceState(null,"","#r="+id);
  let h='<div class="dcard">';
  h+='<h2><span class="fam" style="background:'+FAMC[P.fam]+'"></span>'+esc(P.n)+'</h2>';
+ var _dk=window.ARDA_REALM_DEVICE&&window.ARDA_REALM_DEVICE[id];
+ if(_dk&&window.ardaEmblem&&window.ARDA_HERALD[_dk]){var _hh=window.ARDA_HERALD[_dk];
+  h+='<div style="float:right;text-align:center;margin:-4px 0 4px 8px">'+window.ardaEmblem(_dk,58)+'<div class="cite" style="font-size:9px">'+(_hh.canon?"\u2714 Tolkien\'s device":"\u25c6 interpretive")+'</div></div>';}
  if(P.aka&&P.aka.length)h+='<div class="cite">also: '+P.aka.map(esc).join(" · ")+'</div>';
  h+='<div class="prec">'+esc(P.typ)+' · '+esc(P.race)+' · '+esc(P.ages)+'</div>';
  h+='<h4 class="sec">Phases</h4>'+P.phases.map(f=>'<div class="phase"><b>'+esc(f[0])+'</b> — '+esc(f[1])+' <span class="cite">'+esc(f[2])+'</span></div>').join("");
@@ -243,6 +246,7 @@ function route(){const hsh=location.hash.slice(1);if(!hsh)return;
  if(p.fam){fFam=p.fam;refresh()}}
 route();
 </script>
+<script src="heraldry.js"></script>
 <script src="quotes.js"></script>
 <script src="touch.js"></script>
 <script>if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js");</script>
