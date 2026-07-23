@@ -17,7 +17,8 @@ const GROUPS=[
    ["artifacts.html","artifacts","20 treasures, chain of custody"],
    ["gallery.html","gallery","armour & weapon plates"]]],
  ["War",[["armies_dashboard.html","armies","30 campaigns, animated maps"]]],
- ["Tools",[["quiz.html","the trial","test your lore"],
+ ["Tools",[["corpus.html","the corpus","28 volumes, concordance, queries"],
+   ["quiz.html","the trial","test your lore"],
    ["tours.html","tours","guided roads through the halls"],
    ["compare.html","side by side","two lives or two battles"],
    ["silences.html","the silences","what the corpus does not say"]]]];
@@ -48,6 +49,12 @@ const T=document.getElementById("a-theme");
 function setTheme(d){document.documentElement.classList.toggle("arda-dark",d);try{localStorage.setItem("ardaTheme",d?"dark":"light")}catch(e){}}
 try{if(localStorage.getItem("ardaTheme")==="dark")setTheme(true)}catch(e){}
 T.addEventListener("click",()=>setTheme(!document.documentElement.classList.contains("arda-dark")));
+// layer toggle: canon focus (dims inferred/external-badged entries)
+const Lb=document.createElement("button");Lb.id="a-layers";Lb.textContent="layers: all";Lb.title="toggle canon-focus — dims material badged inferred [I] or external [EXT]";
+Lb.style.cssText=T.style.cssText;Lb.className=T.className||"";T.parentNode.insertBefore(Lb,T.nextSibling);
+function setLayers(c){document.documentElement.classList.toggle("arda-canon",c);Lb.textContent=c?"layers: canon":"layers: all";try{localStorage.setItem("ardaLayers",c?"canon":"all")}catch(e){}}
+try{if(localStorage.getItem("ardaLayers")==="canon")setLayers(true)}catch(e){}
+Lb.addEventListener("click",()=>setLayers(!document.documentElement.classList.contains("arda-canon")));
 // keyboard shim: legacy span-widgets become focusable buttons
 function shim(root){root.querySelectorAll(".chip,.tab,.card[onclick],[data-t],[data-id]").forEach(el=>{
  if(el.closest("#ardanav"))return;

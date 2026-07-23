@@ -45,3 +45,9 @@ html.arda-dark body{filter:invert(1) hue-rotate(180deg);background:#181410}
 html.arda-dark img,html.arda-dark canvas,html.arda-dark svg image,html.arda-dark video{filter:invert(1) hue-rotate(180deg)}
 html.arda-dark{background:#181410}
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01s !important;transition-duration:.01s !important}}
+
+/* canon-focus layer: dim entries badged inferred/external (the badge stays visible as the reason) */
+#a-layers{background:none;border:1px solid #8a7444;color:#c9b06a;border-radius:10px;cursor:pointer;font-size:11px;padding:2px 9px;margin-left:4px}
+html.arda-canon .ent:has(.b-I),html.arda-canon .ent:has(.b-X),html.arda-canon .note:has(.b-I),
+html.arda-canon .phase:has(.b-I),html.arda-canon .res:has(.b-I),html.arda-canon tr:has(.b-I){opacity:.28;filter:grayscale(.7)}
+html.arda-canon .conf,html.arda-canon .refnote{opacity:.4}

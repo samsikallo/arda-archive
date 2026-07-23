@@ -73,7 +73,7 @@ function draw(){
   const g=el('text',{x:x,y:bandY,'text-anchor':'middle','font-size':13,fill:'var(--acc)',
    opacity:evt.approx?0.55:1,cursor:'default'});
   g.textContent=glyph[evt.type];
-  g.addEventListener('mousemove',e2=>tip(e2,'<b>'+evt.label+'</b><br><span class="m">'+evt.t+' \u00b7 '+evt.type+' \u00b7 '+evt.conf+(evt.approx?' \u00b7 approximate':'')+'</span><br><span class="m">'+evt.cite+'</span>'+(evt.actors.length?'<br>with: '+evt.actors.join(', '):'')));
+  g.addEventListener('mousemove',e2=>tip(e2,'<b>'+evt.label+'</b><br><span class="m">'+multiCal(evt.y)+'</span><br><span class="m">'+evt.t+' \u00b7 '+evt.type+' \u00b7 '+evt.conf+(evt.approx?' \u00b7 approximate':'')+'</span><br><span class="m">'+evt.cite+'</span>'+(evt.actors.length?'<br>with: '+evt.actors.join(', '):'')));
   g.addEventListener('mouseleave',hide);});
  const chars=DATA.chars.filter(c=>races[c.race]);
  const y0=74,rh=Math.max(13,Math.min(15.2,(H-92)/Math.max(chars.length,1)));
@@ -109,6 +109,13 @@ function draw(){
   const lab=el('text',{x:x,y:H-4,'text-anchor':'middle','font-size':10,fill:'var(--acc)'});
   lab.textContent=yy<0?('Y.T. '+Math.round(1500+yy/9.582)):yy<590?('F.A. '+yy):yy<4031?('S.A. '+(yy-590)):yy<7052?('T.A. '+(yy-4031)):('F.o.A. '+(yy-7052));}
 }
+function multiCal(y){
+ if(y>=4031&&y<7052){const ta=Math.round(y-4031);let out="T.A. "+ta;
+  if(ta>=1601)out+=" · S.R. "+(ta-1600);if(ta>=1300)out+=" · Bree "+(ta-1299);out+=" · S.A. "+(ta+3441);return out}
+ if(y>=7052){const f=Math.round(y-7052);return "Fo.A. "+f+" · T.A.-count "+(f+3020)+" · S.R. "+(f+1420)}
+ if(y>=590&&y<4031)return "S.A. "+Math.round(y-590);
+ if(y>=0&&y<590)return "F.A. "+Math.round(y)+" (Years of the Sun)";
+ return "Y.T. "+Math.round(1500+y/9.582)+" · ≈ "+Math.round(y).toLocaleString()+" sun-years before the Sun [scheme: ×9.582, see the Reckonings]";}
 svg.addEventListener('wheel',e=>{e.preventDefault();
  const mx=e.offsetX/W,c0=a+(b-a)*mx,f=e.deltaY>0?1.12:1/1.12;
  a=c0-(c0-a)*f;b=c0+(b-c0)*f;
