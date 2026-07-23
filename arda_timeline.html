@@ -14,8 +14,10 @@ header{padding:14px 18px 4px}h1{margin:0;font-size:1.25rem;letter-spacing:.1em}
  padding:3px 10px;cursor:pointer;font-family:inherit;font-size:.78rem;display:inline-flex;gap:5px;align-items:center;user-select:none}
 .tog .sw{width:11px;height:11px;border-radius:3px;background:var(--c)}
 .tog.off{opacity:.35}
-#wrap{margin:8px 18px;border:2px solid var(--acc);background:var(--srf);position:relative;overflow-y:scroll;overflow-x:hidden;max-height:calc(100vh - 190px);scrollbar-width:thin;scrollbar-color:#a8853c #efe6cd}
-#wrap::-webkit-scrollbar{width:11px}#wrap::-webkit-scrollbar-track{background:#efe6cd;border-left:1px solid #b0a58e}#wrap::-webkit-scrollbar-thumb{background:#c9a227;border-radius:6px;border:2px solid #efe6cd}
+#wrap{flex:1;border:2px solid var(--acc);background:var(--srf);position:relative;overflow-y:auto;overflow-x:hidden;max-height:calc(100vh - 190px);scrollbar-width:none}
+#wrap::-webkit-scrollbar{width:0;height:0}
+#wraprow{display:flex;align-items:stretch;gap:8px;margin:8px 18px}
+#vpan{writing-mode:vertical-lr;width:16px;flex:0 0 16px;accent-color:#c9a227;cursor:pointer;margin:0;padding:0;background:transparent}
 svg{display:block;width:100%;cursor:grab}
 #tip{position:fixed;pointer-events:none;background:var(--srf);border:1px solid var(--acc);border-radius:6px;
  padding:8px 10px;font-size:.76rem;max-width:320px;display:none;z-index:9;box-shadow:0 2px 10px rgba(0,0,0,.25);color:var(--ink)}
@@ -181,4 +183,21 @@ sl.addEventListener("input",()=>{busy=true;const span=b-a;
  a=c-span/2;b=c+span/2;draw();busy=false;syncFromView();});
 const draw0=window.draw;window.draw=function(){draw0();syncFromView();};
 syncFromView();
+})();</script><script>/*ARDA:VSLIDER*/
+(function(){const wrap=document.getElementById("wrap");if(!wrap||document.getElementById("vpan"))return;
+const row=document.createElement("div");row.id="wraprow";
+wrap.parentNode.insertBefore(row,wrap);row.appendChild(wrap);
+const sl=document.createElement("input");sl.type="range";sl.id="vpan";sl.min=0;sl.max=1000;sl.value=0;
+sl.setAttribute("aria-label","scroll the lives up and down");
+sl.title="scroll the lives up and down";row.appendChild(sl);
+let busy=false;
+function maxScroll(){return Math.max(1,wrap.scrollHeight-wrap.clientHeight);}
+function fitLen(){sl.style.height=wrap.clientHeight+'px';}
+function fromWrap(){if(busy)return;fitLen();sl.value=Math.round(wrap.scrollTop/maxScroll()*1000);}
+function fromSlider(){busy=true;wrap.scrollTop=sl.value/1000*maxScroll();busy=false;}
+sl.addEventListener("input",fromSlider);
+wrap.addEventListener("scroll",fromWrap,{passive:true});
+new ResizeObserver(fromWrap).observe(wrap);
+const draw0=window.draw;if(draw0)window.draw=function(){draw0();setTimeout(fromWrap,0);};
+setTimeout(fromWrap,60);
 })();</script><script src="nav.js"></script></body></html>
