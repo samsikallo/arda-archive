@@ -5,6 +5,7 @@ const GROUPS=[
  ["Atlas",[["arda_timemap_jpeg.html","the living map","interactive map, journeys, battles"],
    ["chronicle.html","the turning ages","map + chronicle on one slider"],
    ["realms.html","realms","the political atlas — 60 polities"],
+   ["cosmology.html","cosmology","the shape of the world itself"],
    ["arda_timemap.html","the redrawn base","legacy vector map"]]],
  ["Chronicle",[["arda_timeline.html","timeline","all of history, zoomable"],
    ["reckoning.html","reckonings","calendars, dates & measures"],
