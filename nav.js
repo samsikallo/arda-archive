@@ -16,6 +16,7 @@ const GROUPS=[
  ["Culture",[["languages.html","tongues & letters","lexicon, scripts, name-craft"],
    ["poems.html","verse","35 songs & lays, verbatim"],
    ["artifacts.html","artifacts","20 treasures, chain of custody"],
+   ["heraldry.html","hall of heraldry","every device + a device-forge"],
    ["gondolin.html","houses of Gondolin","the twelve kindreds & their heraldry"],
    ["gallery.html","gallery","armour & weapon plates"]]],
  ["War",[["armies_dashboard.html","armies","30 campaigns, animated maps"]]],
