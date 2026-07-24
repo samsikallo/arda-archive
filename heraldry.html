@@ -22,6 +22,15 @@ h3.sub{font-variant:small-caps;font-weight:normal;color:#7a6a50;font-size:15px;m
 .dcard img,.dcard svg{width:74px;height:88px;object-fit:contain}
 .dcard .n{font-variant:small-caps;color:#5a4626;font-size:13.5px;margin-top:3px}
 .dcard .bz{font-size:10.5px;color:var(--mut);font-style:italic;margin-top:2px;line-height:1.35}
+h2 .n,h3.sub .n{font-size:11px;font-variant:normal;letter-spacing:0;color:var(--mut);font-style:italic;margin-left:8px}
+#hchips{margin:2px 0 6px}
+#hchips .chip{display:inline-block;border:1px solid var(--line);border-radius:12px;padding:2px 11px;cursor:pointer;
+ background:#fdfaf2;font-size:12.5px;margin:2px;box-shadow:0 1px 2px rgba(60,40,10,.12);color:var(--ink)}
+#hchips .chip.on{background:#efe0bd;border-color:#a8853c;font-weight:bold}
+#hchips .chip.canon.on{background:#e2eddc;border-color:#6f8c5e}
+#hq{border:1px solid var(--line);border-radius:12px;padding:3px 11px;font:13px Georgia,serif;
+ background:#fdfaf2;color:var(--ink);min-width:200px;margin:2px 2px 2px 8px}
+#hnone{color:var(--mut);font-style:italic;margin:20px 2px}
 .badge{display:inline-block;border-radius:8px;padding:0 6px;font-size:9px;margin-top:3px}
 .bc{background:#e9f3e4;border:1px solid #7aa86a}.bi{background:#fdf3df;border:1px solid #d0a53c}
 .orn{text-align:center;color:#b0a58e;margin:.5em 0;font-size:12px;letter-spacing:.3em}
@@ -54,6 +63,7 @@ h3.sub{font-variant:small-caps;font-weight:normal;color:#7a6a50;font-size:15px;m
 <li><b>Men and Dwarves differ.</b> The Númenórean-descended realms bear pictorial charges on a field (Gondor's White Tree, Rohan's horse); the Enemy's marks are stark and singular (the Red Eye, the White Hand).</li>
 </ul><div class="orn">❦ ✦ ❦</div>
 <span class="cite">✔ = a device Tolkien designed (recreation via Wikimedia Commons, CC BY-SA / Public Domain, attributed below) · ◆ = the archive's interpretive reconstruction where Tolkien left no device.</span></div>
+<div id="hchips"></div>
 <div id="catalog"></div>
 <div id="credits" class="cite"></div>
 </div>
@@ -86,18 +96,41 @@ h3.sub{font-variant:small-caps;font-weight:normal;color:#7a6a50;font-size:15px;m
 // ===== catalog =====
 (function(){
 var H=window.ARDA_HERALD;
-var order=["Eldar","The Kingdoms of Men","The Khazâd","The Enemy","The Istari"];
-var suborder={"Eldar":["The House of Finwë","Doriath & the Sindar","The Houses of Gondolin","Gil-galad & the Half-elven"]};
-var byCat={};Object.keys(H).forEach(function(k){var h=H[k];(byCat[h.cat]=byCat[h.cat]||{});(byCat[h.cat][h.sub]=byCat[h.cat][h.sub]||[]).push(k);});
+// category/subcategory order comes from the data (map/gen_heraldry_taxonomy.py)
+var TAX=window.ARDA_HERALD_TAX||[];
+var keys=Object.keys(H);
+var byCat={};keys.forEach(function(k){var h=H[k];(byCat[h.cat]=byCat[h.cat]||{});(byCat[h.cat][h.sub]=byCat[h.cat][h.sub]||[]).push(k);});
 function dev(k){var h=H[k];var img=h.file?'<img src="'+h.file+'" alt="'+h.blazon.replace(/"/g,"")+'">':(h.forge&&window.ardaForgeDevice?window.ardaForgeDevice(h.forge,74):'');
  var badge=h.canon?'<span class="badge bc">✔ Tolkien\'s device</span>':'<span class="badge bi">◆ interpretive</span>';
  return '<div class="dcard">'+img+'<div class="n">'+h.label.replace(/ —.*$/,"")+'</div><div class="bz">'+h.blazon+'</div>'+badge+'</div>';}
-var html="";
-order.forEach(function(cat){if(!byCat[cat])return;html+='<h2>'+cat+'</h2>';
- var subs=Object.keys(byCat[cat]);if(suborder[cat])subs.sort(function(a,b){var oa=suborder[cat].indexOf(a),ob=suborder[cat].indexOf(b);return (oa<0?99:oa)-(ob<0?99:ob);});
- // Gondolin group note
- subs.forEach(function(sub){html+='<h3 class="sub">'+sub+(sub==="The Houses of Gondolin"?' <a href="gondolin.html" style="color:#7a4a12;font-size:11px">— the full hall ⧉</a>':'')+'</h3><div class="grid">'+byCat[cat][sub].map(dev).join("")+'</div>';});});
-document.getElementById("catalog").innerHTML=html;
+var nrm=function(s){return String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase()};
+var on={},canonOnly=false;TAX.forEach(function(t){on[t[0]]=true});
+var cw=document.getElementById("hchips");
+TAX.forEach(function(t){var cat=t[0],n=keys.filter(function(k){return H[k].cat===cat}).length;
+ var c=document.createElement("span");c.className="chip on";c.textContent=cat+" ("+n+")";
+ c.onclick=function(){on[cat]=!on[cat];c.classList.toggle("on",on[cat]);draw()};cw.appendChild(c);});
+var cb=document.createElement("span");cb.className="chip canon";
+cb.textContent="✔ Tolkien's devices only";cb.title="hide the interpretive devices designed for this archive";
+cb.onclick=function(){canonOnly=!canonOnly;cb.classList.toggle("on",canonOnly);draw()};cw.appendChild(cb);
+var qi=document.createElement("input");qi.id="hq";qi.type="search";
+qi.placeholder="search devices & blazons…";qi.setAttribute("aria-label","search devices and blazons");
+cw.appendChild(qi);qi.addEventListener("input",draw);
+function draw(){
+ var q=nrm(qi.value);
+ function hit(k){var h=H[k];
+  if(!on[h.cat])return false; if(canonOnly&&!h.canon)return false;
+  return !q||nrm(h.label+" "+h.blazon+" "+h.sub+" "+h.cat).indexOf(q)>=0;}
+ var html="",shown=0;
+ TAX.forEach(function(t){var cat=t[0],subs=t[1];if(!byCat[cat])return;
+  var inCat=[];subs.forEach(function(sub){(byCat[cat][sub]||[]).forEach(function(k){if(hit(k))inCat.push(k)})});
+  if(!inCat.length)return; shown+=inCat.length;
+  html+='<h2>'+cat+'<span class="n">'+inCat.length+'</span></h2>';
+  subs.forEach(function(sub){var g=(byCat[cat][sub]||[]).filter(hit);if(!g.length)return;
+   html+='<h3 class="sub">'+sub+(sub==="The Houses of Gondolin"?' <a href="gondolin.html" style="color:#7a4a12;font-size:11px">— the full hall ⧉</a>':'')
+     +'<span class="n">'+g.length+'</span></h3><div class="grid">'+g.map(dev).join("")+'</div>';});});
+ document.getElementById("catalog").innerHTML=html||'<div id="hnone">No device answers to that name. '+keys.length+' in all.</div>';
+}
+draw();
 // swap symbol-based (interpretive) devices to their drawn form: they use <use>, defs come from... none here.
 // For interpretive durin/fingolfin without a file, we need their symbol defs. Inject minimal defs:
 })();
