@@ -101,7 +101,33 @@ ${life?`<a class="chip" href="arda_timeline.html#c=${id}">⏳ lifespan on the ti
 <div class="cite" style="text-align:center">Assembled live from the archive's own datasets — genealogy · chronology · armies · living map. Every line keeps its citation.</div>`;}
 function addBooks(nm){const spot=document.getElementById("bookspot");if(!spot)return;
 booksPanel(nm).then(html=>{if(html)spot.outerHTML=html;});}
-const render0=render;render=function(){render0();const id=(location.hash||"#aragorn").slice(1);const p=byId[id];if(p){const nm=p.n.split(",")[0].split(" (")[0];addBooks(nm);
+
+// ---- by-names: Tolkien's own epithets for this figure, from arda_epithets.json ----
+let EPI=null;
+fetch("arda_epithets.json").then(r=>r.json()).then(j=>{EPI={};j.forEach(f=>EPI[f.id]=f);addEpithets();}).catch(()=>{});
+function addEpithets(){
+ if(!EPI)return;
+ const id=(location.hash||"#aragorn").slice(1);
+ const fig=EPI[id]; const spot=document.getElementById("bookspot");
+ const old=document.getElementById("rec-epi"); if(old)old.remove();
+ if(!fig||!spot||!(fig.names||[]).length)return;
+ const esc=x=>String(x==null?"":x).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+ const d=document.createElement("div"); d.id="rec-epi";
+ d.innerHTML='<h3>By what names he was called <span class="cite" style="font-weight:normal">'
+  +fig.names.length+' recorded</span></h3>'
+  +'<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px">'
+  +fig.names.map(e=>'<div style="background:#fdfaf2;border:1px solid #b0a58e;border-radius:8px;padding:7px 10px">'
+    +'<b style="font-variant:small-caps;color:#5a4626">'+esc(e.e)+'</b>'
+    +(e.tongue?' <span class="cite">'+esc(e.tongue)+'</span>':'')
+    +(e.mean?'<div class="cite">&ldquo;'+esc(e.mean)+'&rdquo;</div>':'')
+    +(e.by?'<div class="cite">so called by '+esc(e.by)+'</div>':'')
+    +(e.q?'<blockquote style="margin:.35em 0 0;padding:.3em .6em;border-left:3px solid #c9a227;background:#fffdf6;font-style:italic;font-size:12px">&ldquo;'
+       +esc(e.q)+'&rdquo;</blockquote><div class="cite" style="font-size:10.5px">'+esc(e.c||"")+'</div>':'')
+    +'</div>').join("")+'</div>';
+ spot.parentNode.insertBefore(d,spot);
+}
+
+const render0=render;render=function(){render0();try{addEpithets()}catch(e){}const id=(location.hash||"#aragorn").slice(1);const p=byId[id];if(p){const nm=p.n.split(",")[0].split(" (")[0];addBooks(nm);
 const spot=document.getElementById("bookspot");
 if(spot&&window.ardaPortrait&&!document.getElementById("rec-pt")){const pd=document.createElement('div');pd.id='rec-pt';pd.innerHTML=ardaPortrait(p);spot.parentNode.insertBefore(pd,spot);}
 if(spot&&!document.getElementById("xlinks")){const d=document.createElement("div");d.id="xlinks";d.className="cite";d.style.marginTop="6px";
