@@ -74,8 +74,92 @@ try:
 except Exception as _e:
     print("integrity (drift): could not run - %s" % str(_e)[:60])
 
+# JS-SYNTAX-HOOK
+# The forge splice once left heraldry.js unparseable and the whole hall rendered
+# blank; nothing caught it but a browser. node --check is that browser, cheaply.
+_jsfail = 0
+try:
+    import subprocess as _sp3, sys as _sys3, os as _os3
+    _js = sorted(glob.glob("*.js")) + [_os3.path.join("..", "map", "forge_engine.js")]
+    _broken = []
+    for _f in _js:
+        if not _os3.path.exists(_f): continue
+        _r3 = _sp3.run(["node", "--check", _f], capture_output=True, text=True, timeout=60)
+        if _r3.returncode:
+            _msg = [l for l in _r3.stderr.splitlines() if "Error" in l]
+            _broken.append("%s: %s" % (_os3.path.basename(_f), (_msg[0] if _msg else "syntax error")[:70]))
+    for _b in _broken: print("✗ JS SYNTAX", _b)
+    _jsfail = 1 if _broken else 0
+    print("js syntax: %s (%d files)" % ("FAIL" if _jsfail else "OK", len(_js)))
+except FileNotFoundError:
+    print("js syntax: skipped - node is not installed")
+except Exception as _e3:
+    print("js syntax: could not run - %s" % str(_e3)[:60])
+
+# MATCHER-HOOK
+# The quote matcher is the thing every claim-audit trusts. If its own tests stop
+# passing, every verification done with it is suspect.
+_mfail = 0
+try:
+    import subprocess as _sp4, sys as _sys4
+    _r4 = _sp4.run([_sys4.executable, "../map/ardatext.py", "--selftest"],
+                   capture_output=True, text=True, timeout=120)
+    _mfail = 1 if _r4.returncode else 0
+    _tail = [l for l in _r4.stdout.splitlines() if "self-test" in l]
+    print("quote matcher: %s%s" % ("FAIL" if _mfail else "OK",
+          " - " + _tail[-1].split(":")[-1].strip() if _tail else ""))
+    if _mfail:
+        for _l in _r4.stdout.splitlines():
+            if _l.strip().startswith("FAIL"): print("✗", _l.strip())
+except Exception as _e4:
+    print("quote matcher: could not run - %s" % str(_e4)[:60])
+
+# QUOTES-HOOK
+# Every quotation the archive prints, re-located in the corpus. Skipped rather
+# than failed when the corpus is not on disk: it is derived, and its absence is a
+# missing input, not a fault in the site.
+_qfail = 0
+try:
+    import subprocess as _sp5, sys as _sys5, os as _os5
+    if not glob.glob(_os5.path.join("..", "corpus", "t*.txt")):
+        print("quotations: skipped - no corpus on disk (python3 map/extract_corpus.py)")
+    else:
+        _r5 = _sp5.run([_sys5.executable, "../map/verify_quotes.py"],
+                       capture_output=True, text=True, timeout=480)
+        _qfail = 1 if _r5.returncode else 0
+        _sum = [l for l in _r5.stdout.splitlines() if l.startswith("verified ")]
+        print("quotations: %s%s" % ("FAIL" if _qfail else "OK",
+              " - " + _sum[-1][len("verified "):] if _sum else ""))
+        if _qfail:
+            for _l in _r5.stdout.splitlines():
+                if _l.strip().startswith(("ABSENT", "MISFILED")): print("✗", _l.strip())
+except Exception as _e5:
+    print("quotations: could not run - %s" % str(_e5)[:60])
+
+# AUDITS-HOOK
+# The Phase 3 and Phase 6 findings, re-put to the matcher as testable claims.
+# They drove real repairs; if the corpus or the matcher moves under them, that
+# should surface here rather than in a later re-reading.
+_afail = 0
+try:
+    import subprocess as _sp6, sys as _sys6, os as _os6
+    if not glob.glob(_os6.path.join("..", "corpus", "t*.txt")):
+        print("audit claims: skipped - no corpus on disk")
+    else:
+        _r6 = _sp6.run([_sys6.executable, "../map/recheck_audits.py"],
+                       capture_output=True, text=True, timeout=480)
+        _afail = 1 if _r6.returncode else 0
+        _s6 = [l for l in _r6.stdout.splitlines() if "claims stand" in l]
+        print("audit claims: %s%s" % ("FAIL" if _afail else "OK",
+              " - " + _s6[-1] if _s6 else ""))
+        if _afail:
+            for _l in _r6.stdout.splitlines():
+                if _l.strip().startswith("!!"): print("\u2717", _l.strip())
+except Exception as _e6:
+    print("audit claims: could not run - %s" % str(_e6)[:60])
+
 print("checked",len(pages),"pages,",len(glob.glob('*.json')),"datasets —",
-      "FAIL" if (bad or _ifail) else "OK")
+      "FAIL" if (bad or _ifail or _jsfail or _mfail or _qfail or _afail) else "OK")
 import sys as _s2
-_s2.exit(1 if (bad or _ifail) else 0)
+_s2.exit(1 if (bad or _ifail or _jsfail or _mfail or _qfail or _afail) else 0)
 sys.exit(1 if bad else 0)

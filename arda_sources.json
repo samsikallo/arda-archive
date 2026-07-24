@@ -490,6 +490,15 @@
    "held": false
   }
  ],
+ "derived": [
+  {
+   "file": "t1_c_appendix_tables_raw.txt",
+   "tier": 5,
+   "content_tier": 1,
+   "attribution": "transcribed by this archive from The Lord of the Rings, Appendices A III, C and E",
+   "note": "Those tables are printed as images and survive no text extraction. They were recovered by rendering each plate with pdftoppm and reading it. OCR was tried and rejected: tesseract read Nain I's date as 1882 where the plate says 1832. Treat every figure here as a transcription that can be checked against the plate, not as extracted text."
+  }
+ ],
  "rule": "Where two sources disagree, the lower tier number wins. A tier-5 file is corrected by any tier above it. Tolkien's own words quoted inside a tier-2 book carry tier-1 authority; the editor's framing does not.",
  "limits": [
   {
