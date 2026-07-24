@@ -33,6 +33,7 @@ h2 .n,h3.sub .n{font-size:11px;font-variant:normal;letter-spacing:0;color:var(--
 #hnone{color:var(--mut);font-style:italic;margin:20px 2px}
 .badge{display:inline-block;border-radius:8px;padding:0 6px;font-size:9px;margin-top:3px}
 .bc{background:#e9f3e4;border:1px solid #7aa86a}.bi{background:#fdf3df;border:1px solid #d0a53c}
+.bd{background:#e6eef7;border:1px solid #6f8cae}.bt{background:#f2ecf7;border:1px solid #9a7ab5}
 .orn{text-align:center;color:#b0a58e;margin:.5em 0;font-size:12px;letter-spacing:.3em}
 /* forge */
 .forge{display:grid;grid-template-columns:300px 1fr;gap:20px}
@@ -68,7 +69,7 @@ Women within a circle personal / Men within a lozenge / general (impersonal) des
 <span class="cite" style="display:block;font-style:normal;margin-top:4px">— quoted in Hammond &amp; Scull, <i>J.R.R. Tolkien: Artist &amp; Illustrator</i>, p.&nbsp;191</span></blockquote>
 <p style="font-size:12.5px;margin:.3em 0"><b>What Tolkien actually drew.</b> Twenty-eight finished devices survive from 1960–61: five of Idril, three of Eärendil, two of Finwë, and one each for Finarfin, Gil-galad, Lúthien, Fëanor, Fingolfin, Finrod, Elwë, Melian, Bëor, Hador, Beren, Haleth and the Silmarils. They are not shields but kaleidoscopic mandalas — geometric for the men, floral for the women — closer to Japanese <i>mon</i> than to European arms.</p>
 <div class="orn">❦ ✦ ❦</div>
-<span class="cite">✔ = a device Tolkien designed (recreation via Wikimedia Commons, CC BY-SA / Public Domain, attributed below) · ◆ = the archive's own drawing, built to the rules above from Tolkien's recorded description where he left no usable device.</span>
+<span class="cite"><b>✔</b> a device Tolkien designed, shown as a freely-licensed recreation (Wikimedia Commons, CC BY-SA / Public Domain, attributed below) · <b>✦</b> a device Tolkien himself drew, which cannot be reproduced here — redrawn by this site's forge from his recorded description · <b>✧</b> a device blazoned in the texts but never drawn · <b>◆</b> the archive's own interpretation, where Tolkien left no device at all.</span>
 <div class="cite" style="margin-top:6px;font-size:11px"><b>Sources for the reconstructions:</b> Tolkien's manuscript notes and the 1960 devices as described in Hammond &amp; Scull, <i>J.R.R. Tolkien: Artist &amp; Illustrator</i>; A.&nbsp;Żurek, ‘Heraldry in J.R.R. Tolkien's Legendarium’, <i>The Coat of Arms</i> 4th ser. 5 (2022), 145–182; <a href="https://tolkiengateway.net/wiki/Heraldry" target="_blank" rel="noopener" style="color:#7a4a12">Tolkien Gateway, ‘Heraldry’</a> (CC BY-SA 4.0); and the texts themselves. <b>No artwork from those sources is reproduced here</b> — Tolkien's drawings remain © the Tolkien Estate, and the journal's images are reserved by their originators. Every ◆ device below is drawn by this site's forge from arithmetic, following the recorded description.</div></div>
 <div id="hchips"></div>
 <div id="catalog"></div>
@@ -85,6 +86,8 @@ Women within a circle personal / Men within a lozenge / general (impersonal) des
 <select id="f_shape"><option value="circle">Circle — a woman's device</option><option value="lozenge" selected>Lozenge — a man's device</option><option value="square">Square — a house or realm</option></select>
 <label>Rim-points — rank <span class="cite" id="f_rankn"></span></label>
 <input type="range" id="f_points" min="0" max="16" step="1" value="8">
+<label>Symmetry — the bearer's kindred</label>
+<select id="f_sym"><option value="radial">Elvish — turning full circle</option><option value="mirror">Mannish — mirrored, thrusting upward</option></select>
 <label>Rim-point form</label>
 <select id="f_pstyle"><option value="ray">Rays</option><option value="leaf">Leaves</option><option value="pin">Points</option></select>
 <label>Central charge</label>
@@ -100,7 +103,7 @@ Women within a circle personal / Men within a lozenge / general (impersonal) des
 <label>Petal-ring — how many</label>
 <input type="range" id="f_mandala" min="0" max="16" step="1" value="8">
 <label>Petal form</label>
-<select id="f_mstyle"><option value="petal">Petals</option><option value="lens">Lens</option><option value="ray">Rays</option></select>
+<select id="f_mstyle"><option value="petal">Petals</option><option value="lens">Lens</option><option value="ray">Rays</option><option value="flame">Flame-tongues</option></select>
 <label>Jewels set about the field</label>
 <input type="range" id="f_gems" min="0" max="16" step="1" value="0">
 <label>Field tincture</label><div class="swatches" id="f_field"></div>
@@ -126,7 +129,10 @@ var TAX=window.ARDA_HERALD_TAX||[];
 var keys=Object.keys(H);
 var byCat={};keys.forEach(function(k){var h=H[k];(byCat[h.cat]=byCat[h.cat]||{});(byCat[h.cat][h.sub]=byCat[h.cat][h.sub]||[]).push(k);});
 function dev(k){var h=H[k];var img=h.file?'<img src="'+h.file+'" alt="'+h.blazon.replace(/"/g,"")+'">':(h.forge&&window.ardaForgeDevice?window.ardaForgeDevice(h.forge,74):'');
- var badge=h.canon?'<span class="badge bc">✔ Tolkien\'s device</span>':'<span class="badge bi">◆ interpretive</span>';
+ var B={artwork:['bc',"✔ Tolkien's device"],design:['bd',"✦ Tolkien's design, drawn here"],
+         text:['bt',"✧ blazoned in the texts"],inferred:['bi',"◆ interpretive"]};
+ var bb=B[h.basis||(h.canon?'artwork':'inferred')];
+ var badge='<span class="badge '+bb[0]+'">'+bb[1]+'</span>';
  return '<div class="dcard">'+img+'<div class="n">'+h.label.replace(/ —.*$/,"")+'</div><div class="bz">'+h.blazon+'</div>'+badge+'</div>';}
 var nrm=function(s){return String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase()};
 var on={},canonOnly=false;TAX.forEach(function(t){on[t[0]]=true});
@@ -135,7 +141,7 @@ TAX.forEach(function(t){var cat=t[0],n=keys.filter(function(k){return H[k].cat==
  var c=document.createElement("span");c.className="chip on";c.textContent=cat+" ("+n+")";
  c.onclick=function(){on[cat]=!on[cat];c.classList.toggle("on",on[cat]);draw()};cw.appendChild(c);});
 var cb=document.createElement("span");cb.className="chip canon";
-cb.textContent="✔ Tolkien's devices only";cb.title="hide the interpretive devices designed for this archive";
+cb.textContent="Tolkien's own only";cb.title="show only devices Tolkien drew or blazoned himself \u2014 hiding the archive's interpretive reconstructions";
 cb.onclick=function(){canonOnly=!canonOnly;cb.classList.toggle("on",canonOnly);draw()};cw.appendChild(cb);
 var qi=document.createElement("input");qi.id="hq";qi.type="search";
 qi.placeholder="search devices & blazons…";qi.setAttribute("aria-label","search devices and blazons");
@@ -143,7 +149,7 @@ cw.appendChild(qi);qi.addEventListener("input",draw);
 function draw(){
  var q=nrm(qi.value);
  function hit(k){var h=H[k];
-  if(!on[h.cat])return false; if(canonOnly&&!h.canon)return false;
+  if(!on[h.cat])return false; if(canonOnly&&(h.basis||"inferred")==="inferred")return false;
   return !q||nrm(h.label+" "+h.blazon+" "+h.sub+" "+h.cat).indexOf(q)>=0;}
  var html="",shown=0;
  TAX.forEach(function(t){var cat=t[0],subs=t[1];if(!byCat[cat])return;
@@ -163,7 +169,7 @@ draw();
 (function(){
 var NS="http://www.w3.org/2000/svg";
 var PAL=window.ARDA_PAL;
-var st={shape:"lozenge",points:8,pstyle:"ray",charge:"star",csize:0.46,charge2:"none",repeat:1,
+var st={shape:"lozenge",points:8,pstyle:"ray",sym:"radial",charge:"star",csize:0.46,charge2:"none",repeat:1,
         rings:1,mandala:8,mstyle:"petal",gems:0,field:2,cc:0,ac:1,mc:1};
 function rankWord(n){if(!n)return"(a plain device)";if(n<16&&n>=16)return"";
  if(n>=16)return"— a great ancestor of a house";if(n>=6)return"— a king's rank";
@@ -192,6 +198,7 @@ function syncControls(){
  document.getElementById("f_shape").value=st.shape;
  document.getElementById("f_points").value=st.points||0;
  document.getElementById("f_pstyle").value=st.pstyle||"ray";
+ document.getElementById("f_sym").value=st.sym||"radial";
  document.getElementById("f_charge").value=st.charge||"none";
  document.getElementById("f_csize").value=Math.round((st.csize||0.46)*100);
  document.getElementById("f_charge2").value=st.charge2||"none";
@@ -215,12 +222,13 @@ function draw(){
  if(st.mandala>1)parts.push("within "+st.mandala+" "+(st.mstyle==="ray"?"rays":st.mstyle==="lens"?"lens-petals":"petals")+" "+PAL[st.mc===undefined?1:st.mc][0]);
  if(st.gems>0)parts.push(st.gems+" jewels set about");
  var b=cap(tinct)+(parts.length?", "+parts.join(", "):"")+(st.points?", within "+st.points+" points reaching the rim":"")+".";
- b+=" <span class='cite'>Borne on a "+st.shape+" — the device of "+kindWord+" "+rankWord(st.points)+".</span>";
+ b+=" <span class='cite'>Borne on a "+st.shape+" — the device of "+kindWord+" "+rankWord(st.points)+"."
+  +(st.sym==="mirror"?" Mirrored left to right and pressing upward, after the manner of Men.":" Turning full circle, after the manner of the Eldar.")+"</span>";
  if(st.points&&[4,6,7,8,16].indexOf(st.points)<0)
   b+=" <span class='cite' style=\"color:#8a5a12\">⚠ Tolkien names four, six to eight, and sixteen; "+st.points+" is outside his scheme.</span>";
  document.getElementById("blazon").innerHTML=b;
  document.getElementById("f_rankn").textContent=rankWord(st.points);}
-[["f_shape","shape",0],["f_pstyle","pstyle",0],["f_charge","charge",0],["f_charge2","charge2",0],
+[["f_shape","shape",0],["f_pstyle","pstyle",0],["f_sym","sym",0],["f_charge","charge",0],["f_charge2","charge2",0],
  ["f_mstyle","mstyle",0],["f_points","points",1],["f_repeat","repeat",1],["f_rings","rings",1],
  ["f_mandala","mandala",1],["f_gems","gems",1]].forEach(function(r){
  var el=document.getElementById(r[0]);if(!el)return;
@@ -235,7 +243,8 @@ document.getElementById("f_rand").onclick=function(){
  st.csize=0.34+Math.random()*0.22;
  st.charge2=R(["none","none","star","gem","leaf","flower"]);
  st.repeat=st.charge2==="none"?1:R([4,6,8,12]);
- st.rings=R([0,1,1,2]);st.mandala=R([0,6,8,8,12,16]);st.mstyle=R(["petal","lens","ray"]);
+ st.rings=R([0,1,1,2]);st.mandala=R([0,6,8,8,12,16]);st.mstyle=R(["petal","lens","ray","flame"]);
+ st.sym=R(["radial","radial","radial","mirror"]);
  st.gems=R([0,0,6,8,12]);
  st.field=(Math.random()*PAL.length)|0;st.cc=(Math.random()*PAL.length)|0;
  st.ac=(Math.random()*PAL.length)|0;st.mc=(Math.random()*PAL.length)|0;
