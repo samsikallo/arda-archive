@@ -38,7 +38,10 @@ ${rows.map(([d,n])=>`<div style="display:flex;align-items:center;gap:8px;margin:
 <span class="cite">${n}</span></div>`).join("")}
 <div class="cite" style="margin-top:.3em">machine concordance over the full extracted corpus (Phase 2 of the re-ingestion; CORPUS_INDEX.md)</div></div>`;});}
 
-const ALIAS={elwe:"thingol",anarion_g:"anarion",miriel_n:"tarmiriel",pharazon:"arpharazon"};
+// genealogy id -> chronology id, where the two files name the same person differently.
+// Only elwe/thingol actually differ; the other three entries pointed at records that do
+// not exist (two were wrong before the Phase-4 merge, one was broken by it).
+const ALIAS={elwe:"thingol"};
 const RN={A:"Ainur",E:"Elves",M:"Men",H:"Half-elven",D:"Dwarves",B:"Hobbits"};
 const RC={A:"#9085e9",E:"#3987e5",M:"#d95926",H:"#4a3aa7",D:"#c98500",B:"#3fa03f"};
 const JOUR={frodo:["fellowship","frodo"],sam:["fellowship","frodo"],aragorn:["fellowship","aragorn"],gandalf:["fellowship","gandalf"],
@@ -64,7 +67,9 @@ if(t=="s"&&(a==id||b==id))rel.sib.push(a==id?b:a);
 if(t=="f"&&b==id)rel.fby.push(a);
 if(t=="f"&&a==id)rel.fos.push(b);});
 (parOf[id]||[]).forEach(pa=>{G.edges.forEach(([t,a,b])=>{if(t=="p"&&a==pa&&b!=id&&!rel.sib.includes(b))rel.sib.push(b);});});
-const cid=ALIAS[id]||id;
+const _a=ALIAS[id]||id;
+  // if an alias points at a record that is not there, fall back to the original id
+  const cid=(typeof byId!=="undefined"&&byId&&!byId[_a]&&byId[id])?id:_a;
 const life=C.chars.find(x=>x.id==cid);
 const evs=C.events.filter(e=>(e.actors||[]).includes(cid));
 const nn=nrm(p.n.split(" ")[0]);

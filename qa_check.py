@@ -52,7 +52,8 @@ for f in glob.glob("*.html"):
     txt=open(f).read()
     for m in _re2.finditer(r'(?:href|src)="([^"#{$][^"#?]*?)(?:[#?][^"]*)?"',txt):
         t=unquote(m.group(1))
-        if "'" in t or "+" in t or t.startswith(("http","data:","mailto","//","/","about:")): continue
+        if "'" in t or "+" in t or "${" in t or "{" in t: continue   # JS template, not a link
+        if t.startswith(("http","data:","mailto","//","/","about:")): continue
         if not os.path.exists(t):
             print("DEAD LINK",f,"->",t); dead+=1
 if dead: bad+=dead
