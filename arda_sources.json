@@ -268,6 +268,15 @@
    "pages": 340
   },
   {
+   "file": "The Letters of J. R. R. Tolkien (Revised and Expanded Edition).epub",
+   "tier": 1,
+   "attribution": "ed. Humphrey Carpenter with Christopher Tolkien; revised Hammond & Scull (2023)",
+   "note": "PARTIAL. The file is an excerpt, not the whole book: it carries the front matter, the introduction, and the letters from 1 to 42 — among them thirteen never printed in 1981 (8a, 8b, 8c, 11a, 11b, 11c, 15a, 15b, 18a, 36a, 36b, 38a, 40a). Its table of contents, however, is complete, and lists all 508 letters of the revised edition: the 354 of 1981 and 154 added. So the archive may now say WHICH letters exist and to whom, while it may quote only those it holds. Beyond letter 42 the 1981 text remains the only text here.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 1025143
+  },
+  {
    "file": "(H) The Fall of Númenor and Other Tales from the Second Age of Middle-earth.pdf",
    "tier": 2,
    "attribution": "ed. Brian Sibley (2022)",
@@ -378,6 +387,66 @@
    "pages": 16
   },
   {
+   "file": "FORODRIM.pdf",
+   "tier": 3,
+   "attribution": "Måns Björkman, 'Emblems and Heraldry', Forodrim / Gobennas (2000)",
+   "note": "The heraldic reconstruction this archive's forge was measured against. It states for each device whether the illustration is based on published material or reconstructed from a written description — the same distinction this archive makes — so it is usable as a cross-check on provenance, never as authority for a device Tolkien did not draw.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 335241,
+   "pages": 9
+  },
+  {
+   "file": "Parma Eldalamberon Vol. 1 No. 1.pdf",
+   "tier": 3,
+   "attribution": "ed. Paula Marmor, Mythopoeic Linguistic Fellowship (Autumn 1971)",
+   "note": "Fanzine, 12pp. Contains no Tolkien manuscript. The scan is OCR of poor quality, so nothing here may be quoted as verbatim without checking the page image.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 26495208,
+   "pages": 12
+  },
+  {
+   "file": "Parma Eldalamberon Vol. 1 No. 2.pdf",
+   "tier": 3,
+   "attribution": "ed. Paula Marmor, Mythopoeic Linguistic Fellowship (1972)",
+   "note": "Fanzine, 16pp. As No. 1: fan articles, poor OCR, no primary text.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 31358781,
+   "pages": 16
+  },
+  {
+   "file": "Parma Eldalamberon Vol. 1 No. 3.pdf",
+   "tier": 3,
+   "attribution": "ed. Paula Marmor, Mythopoeic Linguistic Fellowship (1972)",
+   "note": "Fanzine, 20pp. As No. 1.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 45563829,
+   "pages": 20
+  },
+  {
+   "file": "Parma Eldalamberon Vol. 1 No. 4.pdf",
+   "tier": 3,
+   "attribution": "ed. Paula Marmor, Mythopoeic Linguistic Fellowship (1973)",
+   "note": "Fanzine, 30pp. As No. 1.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 60895124,
+   "pages": 30
+  },
+  {
+   "file": "Parma Eldalamberon Vol. 1 No. 5.pdf",
+   "tier": 3,
+   "attribution": "ed. Paula Marmor, Mythopoeic Linguistic Fellowship (1974)",
+   "note": "Fanzine, 30pp. Contributors include a young Christopher Gilson, later editor of the manuscript series. As No. 1: fan scholarship, not Tolkien's hand.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 60143262,
+   "pages": 30
+  },
+  {
    "file": "secondary sources/LOTR ROLEPLAY.pdf",
    "tier": 4,
    "attribution": "licensed roleplaying game material",
@@ -410,11 +479,11 @@
  ],
  "not_held": [
   {
-   "title": "The Letters of J.R.R. Tolkien — Revised and Expanded Edition (2023)",
+   "title": "The Letters of J.R.R. Tolkien — Revised and Expanded Edition (2023), letters 43-354 and 40a onward",
    "tier": 1,
    "attribution": "ed. Carpenter & C. Tolkien; revised Hammond & Scull",
-   "note": "The copy held is the 1981 edition, ending at letter 354. The 2023 revision restores cut passages and adds roughly 150 further letters.",
-   "affects": "Any claim resting on Tolkien's stated intent. The archive should cite the 1981 numbering and not assert that a subject is absent from the Letters.",
+   "note": "PARTLY HELD as of 2026-07-24. The excerpt now on the shelf gives the complete contents list — 508 letters, the 354 of 1981 plus 154 added — and the full text of letters 1 to 42, including thirteen that 1981 never printed. What is still missing is the text of the remaining 141 new letters, and the passages the revision restored to letters 43-354.",
+   "affects": "The archive may now name which letters exist, to whom and when, for the whole edition. It may quote only 1-42 from the revision, and must otherwise cite the 1981 text. It still may not assert that a subject is absent from the Letters.",
    "held": false
   },
   {
@@ -453,7 +522,7 @@
    "title": "Parma Eldalamberon 11–22 (1995– )",
    "tier": 2,
    "attribution": "ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate and with Christopher Tolkien's support",
-   "note": "The single largest body of primary Tolkien not held here: his own language manuscripts printed in full — the Gnomish Lexicon (PE 11), the Qenya Lexicon (PE 12), Early Noldorin (PE 13), 'Words, Phrases and Passages' from The Lord of the Rings (PE 17), the Quenya phonology and verb structure (PE 18, 19, 22). The text is Tolkien's and carries tier-1 authority; the journals are the Estate-permitted vehicle.",
+   "note": "STILL NOT HELD. The five issues that arrived on 2026-07-24 are Volume 1, numbers 1-5 — the 1971-74 fanzine of the Mythopoeic Linguistic Fellowship, fan articles containing no Tolkien manuscript, and they are registered at tier 3. This entry is a different publication under the same name. The single largest body of primary Tolkien not held here: his own language manuscripts printed in full — the Gnomish Lexicon (PE 11), the Qenya Lexicon (PE 12), Early Noldorin (PE 13), 'Words, Phrases and Passages' from The Lord of the Rings (PE 17), the Quenya phonology and verb structure (PE 18, 19, 22). The text is Tolkien's and carries tier-1 authority; the journals are the Estate-permitted vehicle.",
    "affects": "The languages hall above all. Its lexicon is built from the Etymologies (HoME V) and the published appendices; PE 17 and PE 22 would correct and greatly enlarge it. Until these are read, no entry in that hall should be presented as the whole of what Tolkien wrote.",
    "held": false
   },
