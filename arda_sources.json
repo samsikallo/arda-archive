@@ -1,0 +1,412 @@
+{
+ "tiers": {
+  "1": "Tolkien himself, and Christopher Tolkien's editions",
+  "2": "published with the approval of the Tolkien Estate",
+  "3": "in harmony with Tolkien, but not of his hand",
+  "4": "outside the canon; used only where Tolkien would own the claim",
+  "5": "made by this archive"
+ },
+ "sources": [
+  {
+   "file": "(A) The Silmarillion.pdf",
+   "tier": 1,
+   "attribution": "J.R.R. Tolkien, ed. Christopher Tolkien (1977)",
+   "note": "The constructed Silmarillion. Authoritative, but a made book: where it differs from the late texts in Morgoth's Ring and The War of the Jewels, the later manuscript states Tolkien's final intent and the published text states his son's editorial choice.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 17144394,
+   "pages": 544
+  },
+  {
+   "file": "(B) The Hobbit, or There and Back Again.pdf",
+   "tier": 1,
+   "attribution": "J.R.R. Tolkien (1937; rev. 1951, 1966)",
+   "note": "Published in his lifetime and revised by him. Highest authority for its own matter.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 5500570,
+   "pages": 270
+  },
+  {
+   "file": "(C) The Lord of the Rings.pdf",
+   "tier": 1,
+   "attribution": "J.R.R. Tolkien (1954-55; rev. 1965, 1966)",
+   "note": "With Appendices A-F. The single densest authority for the Third Age, the calendars, the languages and the writing-systems.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 6549111,
+   "pages": 1210
+  },
+  {
+   "file": "(D) Unfinished Tales of Númenor and Middle-earth.pdf",
+   "tier": 1,
+   "attribution": "ed. Christopher Tolkien (1980)",
+   "note": "Late narratives with editorial commentary. Often supersedes The Silmarillion in detail.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 3607801,
+   "pages": 391
+  },
+  {
+   "file": "(E) Beren and Lúthien.pdf",
+   "tier": 1,
+   "attribution": "ed. Christopher Tolkien (2017)",
+   "note": "The tale in its layers, from the Lost Tales to the late prose.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 9326291,
+   "pages": 203
+  },
+  {
+   "file": "(F) The Children of Húrin.pdf",
+   "tier": 1,
+   "attribution": "ed. Christopher Tolkien (2007)",
+   "note": "The Narn assembled as a continuous narrative.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 5753989,
+   "pages": 212
+  },
+  {
+   "file": "(G) The Fall of Gondolin.pdf",
+   "tier": 1,
+   "attribution": "ed. Christopher Tolkien (2018)",
+   "note": "Every version of the tale, including the Lost Tale with the Twelve Houses.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 6594061,
+   "pages": 201
+  },
+  {
+   "file": "1 The Book of Lost Tales, Part One.pdf",
+   "tier": 1,
+   "attribution": "HoME I, ed. Christopher Tolkien (1983)",
+   "note": "The earliest mythology. Names, cosmology and even characters differ from the late work; authoritative for what Tolkien first wrote, not for what he last held.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 4466918,
+   "pages": 387
+  },
+  {
+   "file": "2 The Book of Lost Tales, Part Two.pdf",
+   "tier": 1,
+   "attribution": "HoME II, ed. Christopher Tolkien (1984)",
+   "note": "Contains the Fall of Gondolin with the fullest account of the Twelve Houses and their arms.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 4728391,
+   "pages": 520
+  },
+  {
+   "file": "3 The Lays of Beleriand.pdf",
+   "tier": 1,
+   "attribution": "HoME III, ed. Christopher Tolkien (1985)",
+   "note": "The long verse: the Lay of the Children of Húrin and the Lay of Leithian.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 13049773,
+   "pages": 400
+  },
+  {
+   "file": "4 The Shaping of Middle-Earth.pdf",
+   "tier": 1,
+   "attribution": "HoME IV, ed. Christopher Tolkien (1986)",
+   "note": "Sketch, Quenta, earliest Annals, the first maps and the Ambarkanta cosmology.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 1694924,
+   "pages": 403
+  },
+  {
+   "file": "5 The Lost Road and Other Writings.pdf",
+   "tier": 1,
+   "attribution": "HoME V, ed. Christopher Tolkien (1987)",
+   "note": "The Lhammas and the Etymologies — the deepest single source for the roots of the tongues.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 13486279,
+   "pages": 457
+  },
+  {
+   "file": "6 The Return of the Shadow.pdf",
+   "tier": 1,
+   "attribution": "HoME VI, ed. Christopher Tolkien (1988)",
+   "note": "Drafts of The Lord of the Rings, I.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 19865599,
+   "pages": 502
+  },
+  {
+   "file": "7 The Treason of Isengard.pdf",
+   "tier": 1,
+   "attribution": "HoME VII, ed. Christopher Tolkien (1989)",
+   "note": "Drafts II; the first LotR map; the runes.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 16767584,
+   "pages": 513
+  },
+  {
+   "file": "8 The War of the Ring.pdf",
+   "tier": 1,
+   "attribution": "HoME VIII, ed. Christopher Tolkien (1990)",
+   "note": "Drafts III.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 7227340,
+   "pages": 470
+  },
+  {
+   "file": "9 Sauron Defeated.pdf",
+   "tier": 1,
+   "attribution": "HoME IX, ed. Christopher Tolkien (1992)",
+   "note": "Drafts IV; the Notion Club Papers; the Adûnaic material.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 3663181,
+   "pages": 477
+  },
+  {
+   "file": "10 Morgoth’s Ring.pdf",
+   "tier": 1,
+   "attribution": "HoME X, ed. Christopher Tolkien (1993)",
+   "note": "The later Silmarillion I: Annals of Aman, the Athrabeth, and Myths Transformed — where Tolkien reconsidered the shape of the world itself.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 5510415,
+   "pages": 556
+  },
+  {
+   "file": "11 The War of the Jewels.pdf",
+   "tier": 1,
+   "attribution": "HoME XI, ed. Christopher Tolkien (1994)",
+   "note": "The later Silmarillion II: the Grey Annals, Quendi and Eldar, the late Beleriand matter.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 12237846,
+   "pages": 510
+  },
+  {
+   "file": "12 The Peoples of Middle-earth.pdf",
+   "tier": 1,
+   "attribution": "HoME XII, ed. Christopher Tolkien (1996)",
+   "note": "The Appendices' evolution, the Shibboleth of Fëanor, Of Dwarves and Men, the last writings.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 6810470,
+   "pages": 480
+  },
+  {
+   "file": "13 Index.pdf",
+   "tier": 1,
+   "attribution": "HoME XIII: Index, ed. Christopher Tolkien",
+   "note": "Master index to the History. A finding-aid, not a source of claims.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 9491854,
+   "pages": 510
+  },
+  {
+   "file": "The Adventures of Tom Bombadil and Other Verses from the Red Book.pdf",
+   "tier": 1,
+   "attribution": "J.R.R. Tolkien (1962); ed. Scull & Hammond (2014)",
+   "note": "Tolkien's verse, with his own framing preface placing the poems in the Red Book.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 3609621,
+   "pages": 200
+  },
+  {
+   "file": "The Collected Poems of J.R.R. Tolkien.pdf",
+   "tier": 1,
+   "attribution": "ed. Scull & Hammond (2024)",
+   "note": "The gathered verse. Tolkien's own words throughout; the apparatus is the editors'.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 8187754,
+   "pages": 2018
+  },
+  {
+   "file": "secondary sources/The Letters of J.R.R. Tolkien.pdf",
+   "tier": 1,
+   "attribution": "ed. Humphrey Carpenter with Christopher Tolkien (1981; expanded 2023)",
+   "note": "Tolkien in his own voice on his own work — the primary authority for intent, and for questions the fiction leaves open. Was filed under secondary sources; it is not secondary.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 3546831,
+   "pages": 515
+  },
+  {
+   "file": "secondary sources/The Tolkien Reader.pdf",
+   "tier": 1,
+   "attribution": "J.R.R. Tolkien (1966)",
+   "note": "Collects Tolkien's own shorter works, including On Fairy-Stories, The Homecoming of Beorhtnoth, Leaf by Niggle and Farmer Giles of Ham.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 10093146,
+   "pages": 258
+  },
+  {
+   "file": "secondary sources/J. R. R. Tolkien- Artist and Illustrator ",
+   "tier": 1,
+   "attribution": "Hammond & Scull (1995) — reproducing J.R.R. Tolkien's own art",
+   "note": "The pictures are Tolkien's and carry primary authority, including the 1960 heraldic devices and his written note on the rules of Elvish heraldry. The surrounding commentary is Hammond and Scull's and is weighed at tier 2. The images are (c) the Tolkien Estate and are not reproduced by this archive.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 43805140,
+   "pages": 212
+  },
+  {
+   "file": "secondary sources/The Hobbit (illustrated).pdf",
+   "tier": 1,
+   "attribution": "J.R.R. Tolkien, illustrated edition",
+   "note": "Same text as (B); held for its plates.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 21976878,
+   "pages": 340
+  },
+  {
+   "file": "(H) The Fall of Númenor and Other Tales from the Second Age of Middle-earth.pdf",
+   "tier": 2,
+   "attribution": "ed. Brian Sibley (2022)",
+   "note": "An Estate-approved gathering of Tolkien's Second-Age writing. The quoted Tolkien text carries tier-1 authority; the arrangement, headings and linking commentary are the editor's.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 36962472,
+   "pages": 373
+  },
+  {
+   "file": "(I) The Nature of Middle-earth.pdf",
+   "tier": 2,
+   "attribution": "ed. Carl F. Hostetter (2021)",
+   "note": "Estate-approved publication of Tolkien's late essays on time, ageing, body and spirit, and the lands and peoples. The essays are Tolkien's and carry tier-1 authority.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 6271614,
+   "pages": 467
+  },
+  {
+   "file": "The J. R. R. Tolkien Companion and Guide.pdf",
+   "tier": 2,
+   "attribution": "Hammond & Scull (2006; rev. 2017)",
+   "note": "The authorized Chronology and Reader's Guide. Superb for publication history and for what Tolkien wrote when; its interpretations are still interpretation.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 6224648,
+   "pages": 1177
+  },
+  {
+   "file": "The Lord of the Rings A Reader_s Companion.pdf",
+   "tier": 2,
+   "attribution": "Hammond & Scull (2005)",
+   "note": "Line-by-line commentary on The Lord of the Rings, and the fullest text of Tolkien's own Nomenclature — his instructions to translators, which is primary matter.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 52704312,
+   "pages": 982
+  },
+  {
+   "file": "secondary sources/The Art of The Fellowship of the Ring.pdf",
+   "tier": 2,
+   "attribution": "ed. Gary Russell (2002)",
+   "note": "Licensed film concept art. Authoritative for the films, never for Middle-earth.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 3413589,
+   "pages": 102
+  },
+  {
+   "file": "The Atlas of Middle-Earth.pdf",
+   "tier": 3,
+   "attribution": "Karen Wynn Fonstad (1981; rev. 1991)",
+   "note": "The standard cartographic reconstruction. Careful and honest about its own inference, but its distances and coastlines are Fonstad's reasoning, not Tolkien's measurement.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 35637083,
+   "pages": 383
+  },
+  {
+   "file": "The Complete Guide to Middle-Earth.pdf",
+   "tier": 3,
+   "attribution": "Robert Foster (1971; rev. 1978)",
+   "note": "A reliable concordance to the published works. Predates the History, so silent on much.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 13996581,
+   "pages": 579
+  },
+  {
+   "file": "secondary sources/The Complete Tolkien Companion.pdf",
+   "tier": 3,
+   "attribution": "J.E.A. Tyler (1976; rev. 2002)",
+   "note": "A fuller encyclopaedia, looser than Foster and occasionally speculative without saying so.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 9383684,
+   "pages": 811
+  },
+  {
+   "file": "secondary sources/A Gateway to Sindarin.pdf",
+   "tier": 3,
+   "attribution": "David Salo (2004)",
+   "note": "A grammar of Sindarin reconstructed from Tolkien's scattered material. Scholarly, but it regularises where Tolkien never settled; its paradigms must not be quoted as his.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 22003535,
+   "pages": 458
+  },
+  {
+   "file": "secondary sources/Tolkien_heraldry.pdf",
+   "tier": 3,
+   "attribution": "A. Żurek, 'Heraldry in J.R.R. Tolkien's Legendarium', The Coat of Arms 4th ser. 5 (2022)",
+   "note": "Peer-reviewed heraldic scholarship; the source for this archive's heraldic reconstructions. Its figures are reserved by their originators and are not reproduced here.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 7563151,
+   "pages": 44
+  },
+  {
+   "file": "secondary sources/Tolkien-Artwork.pdf",
+   "tier": 3,
+   "attribution": "artwork compilation, provenance unstated",
+   "note": "Held for reference only. Provenance unverified, so nothing is asserted from it.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 2379703,
+   "pages": 16
+  },
+  {
+   "file": "secondary sources/LOTR ROLEPLAY.pdf",
+   "tier": 4,
+   "attribution": "licensed roleplaying game material",
+   "note": "Game mechanics and invented detail. Nothing here is evidence about Middle-earth; usable only where it happens to restate something Tolkien wrote.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 66606923,
+   "pages": 242
+  },
+  {
+   "file": "secondary sources/Reader And Educator Guide To the Hobbit And the Lord Of The Rings.pdf",
+   "tier": 4,
+   "attribution": "publisher's teaching guide",
+   "note": "Pedagogical material. No independent authority.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 1473526,
+   "pages": 179
+  },
+  {
+   "file": "secondary sources/THE-LORD-OF-THE-RINGS-Urania-Finarte-14.12.2022.pdf",
+   "tier": 4,
+   "attribution": "auction catalogue (Urania/Finarte, 14 Dec 2022)",
+   "note": "Useful only as evidence that particular manuscripts and editions exist.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 17345366,
+   "pages": 57
+  }
+ ],
+ "rule": "Where two sources disagree, the lower tier number wins. A tier-5 file is corrected by any tier above it. Tolkien's own words quoted inside a tier-2 book carry tier-1 authority; the editor's framing does not."
+}
