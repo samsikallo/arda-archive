@@ -61,27 +61,52 @@ h2 .n,h3.sub .n{font-size:11px;font-variant:normal;letter-spacing:0;color:var(--
 <li><b>Points tell rank.</b> The number of points about the rim rises with dignity — about <b>four</b> for a prince, <b>six to eight</b> for a king, and as many as <b>sixteen</b> for a great ancestor of a house.</li>
 <li><b>Symmetry and jewelled colour.</b> Elvish devices are radially symmetric, wrought like enamel or gem-work, each charge repeated in rotation about a centre.</li>
 <li><b>Men and Dwarves differ.</b> The Númenórean-descended realms bear pictorial charges on a field (Gondor's White Tree, Rohan's horse); the Enemy's marks are stark and singular (the Red Eye, the White Hand).</li>
-</ul><div class="orn">❦ ✦ ❦</div>
-<span class="cite">✔ = a device Tolkien designed (recreation via Wikimedia Commons, CC BY-SA / Public Domain, attributed below) · ◆ = the archive's interpretive reconstruction where Tolkien left no device.</span></div>
+</ul>
+<p style="font-size:13px;margin:.5em 0 .2em"><b>The rule in Tolkien's own hand.</b> Set down beside the devices he drew in 1960:</p>
+<blockquote style="margin:.2em 0 .6em 1em;padding:.5em .9em;border-left:3px solid var(--gold);background:#fffdf6;font-size:12.5px;font-style:italic;color:#5a4626">
+Women within a circle personal / Men within a lozenge / general (impersonal) designs or emblems of a family square (or&nbsp;[?] once, circular). The rank was usually held to be shown by number of ‘points’ which reached the outer rim — four was prince) 6–8 kings / the great ancestors sometimes had as many [as] 16 as in House of Finwë.
+<span class="cite" style="display:block;font-style:normal;margin-top:4px">— quoted in Hammond &amp; Scull, <i>J.R.R. Tolkien: Artist &amp; Illustrator</i>, p.&nbsp;191</span></blockquote>
+<p style="font-size:12.5px;margin:.3em 0"><b>What Tolkien actually drew.</b> Twenty-eight finished devices survive from 1960–61: five of Idril, three of Eärendil, two of Finwë, and one each for Finarfin, Gil-galad, Lúthien, Fëanor, Fingolfin, Finrod, Elwë, Melian, Bëor, Hador, Beren, Haleth and the Silmarils. They are not shields but kaleidoscopic mandalas — geometric for the men, floral for the women — closer to Japanese <i>mon</i> than to European arms.</p>
+<div class="orn">❦ ✦ ❦</div>
+<span class="cite">✔ = a device Tolkien designed (recreation via Wikimedia Commons, CC BY-SA / Public Domain, attributed below) · ◆ = the archive's own drawing, built to the rules above from Tolkien's recorded description where he left no usable device.</span>
+<div class="cite" style="margin-top:6px;font-size:11px"><b>Sources for the reconstructions:</b> Tolkien's manuscript notes and the 1960 devices as described in Hammond &amp; Scull, <i>J.R.R. Tolkien: Artist &amp; Illustrator</i>; A.&nbsp;Żurek, ‘Heraldry in J.R.R. Tolkien's Legendarium’, <i>The Coat of Arms</i> 4th ser. 5 (2022), 145–182; <a href="https://tolkiengateway.net/wiki/Heraldry" target="_blank" rel="noopener" style="color:#7a4a12">Tolkien Gateway, ‘Heraldry’</a> (CC BY-SA 4.0); and the texts themselves. <b>No artwork from those sources is reproduced here</b> — Tolkien's drawings remain © the Tolkien Estate, and the journal's images are reserved by their originators. Every ◆ device below is drawn by this site's forge from arithmetic, following the recorded description.</div></div>
 <div id="hchips"></div>
 <div id="catalog"></div>
 <div id="credits" class="cite"></div>
 </div>
 
 <div class="pane" id="pane-forge">
-<div class="intro"><b>The Forge of Devices.</b> Wright a new Elvish device by the rules Tolkien set: choose the <b>shape</b> (which tells the bearer's kind), the number of <b>rim-points</b> (which tells rank), a central <b>charge</b> and its <b>tinctures</b>, and how many times the charge turns about the centre. The forge draws an original device and reads its blazon. <span class="cite">These are new, non-canonical devices, made to Tolkien's grammar — not copies of any existing art.</span></div>
+<div class="intro"><b>The Forge of Devices.</b> Wright a device by the rules above: the <b>shape</b> tells the bearer's kind, the <b>rim-points</b> tell rank, and within the field you may set a central <b>charge</b>, an attendant charge turning about it, concentric <b>rings</b>, a <b>petal-ring</b> of petals, lens-petals or rays, and <b>jewels</b> set about — the encrusted, mandala-like manner of the devices Tolkien drew. Sixteen tinctures. Begin from any of the reconstructed devices and alter it, or take a device at random. The forge reads back a blazon and warns when the points fall outside the ranks Tolkien names. <span class="cite">Everything the forge draws is new and original — computed here, copied from nothing.</span></div>
 <div class="forge">
 <div class="ctl">
+<label>Begin from a device <span class="cite">— Tolkien's own, where he left one</span></label>
+<select id="f_preset"><option value="">— a blank field —</option></select>
 <label>Shape — the bearer's kind</label>
 <select id="f_shape"><option value="circle">Circle — a woman's device</option><option value="lozenge" selected>Lozenge — a man's device</option><option value="square">Square — a house or realm</option></select>
 <label>Rim-points — rank <span class="cite" id="f_rankn"></span></label>
 <input type="range" id="f_points" min="0" max="16" step="1" value="8">
+<label>Rim-point form</label>
+<select id="f_pstyle"><option value="ray">Rays</option><option value="leaf">Leaves</option><option value="pin">Points</option></select>
 <label>Central charge</label>
-<select id="f_charge"><option value="star">Star (mullet)</option><option value="flower">Flower</option><option value="sun">Sun</option><option value="moon">Crescent moon</option><option value="flame">Flame</option><option value="wave">Wave</option><option value="tree">Tree</option><option value="wing">Wing</option><option value="harp">Harp</option><option value="anvil">Anvil</option><option value="gem">Gem</option><option value="none">None (charged rim only)</option></select>
-<label>Charge turns about the centre</label>
-<input type="range" id="f_repeat" min="1" max="8" step="1" value="1">
+<select id="f_charge"></select>
+<label>Charge size</label>
+<input type="range" id="f_csize" min="20" max="70" step="2" value="46">
+<label>Attendant charge, turning about the centre</label>
+<select id="f_charge2"></select>
+<label>How many times it turns</label>
+<input type="range" id="f_repeat" min="1" max="16" step="1" value="1">
+<label>Rings within the field</label>
+<input type="range" id="f_rings" min="0" max="3" step="1" value="1">
+<label>Petal-ring — how many</label>
+<input type="range" id="f_mandala" min="0" max="16" step="1" value="8">
+<label>Petal form</label>
+<select id="f_mstyle"><option value="petal">Petals</option><option value="lens">Lens</option><option value="ray">Rays</option></select>
+<label>Jewels set about the field</label>
+<input type="range" id="f_gems" min="0" max="16" step="1" value="0">
 <label>Field tincture</label><div class="swatches" id="f_field"></div>
 <label>Charge tincture</label><div class="swatches" id="f_charge_c"></div>
+<label>Accent — flames, hearts, eyes</label><div class="swatches" id="f_accent"></div>
+<label>Petal tincture</label><div class="swatches" id="f_mc"></div>
 </div>
 <div class="forgeout">
 <svg id="forgeSvg" viewBox="0 0 200 226"></svg>
@@ -137,72 +162,89 @@ draw();
 // ===== the forge =====
 (function(){
 var NS="http://www.w3.org/2000/svg";
-var PAL=[["argent","#e8e6df"],["or","#d8b13c"],["azure","#2b4a8c"],["vert","#2e6b34"],["sable","#191512"],["gules","#8f1c1c"],["purpure","#5a3a7a"],["silver","#b9c0c7"]];
-var st={shape:"lozenge",points:8,charge:"star",repeat:1,field:1,cc:0};
-function rankWord(n){if(n===0)return"(a plain device)";if(n<=4)return"— a prince's rank";if(n<=8)return"— a king's rank";if(n<=12)return"— a high lord";return"— a great ancestor of a house";}
-function mkSwatches(id,sel){var box=document.getElementById(id);box.innerHTML="";PAL.forEach(function(p,i){var s=document.createElement("span");s.className="sw"+(i===sel?" on":"");s.style.background=p[1];s.title=p[0];s.onclick=function(){st[id==="f_field"?"field":"cc"]=i;mkSwatches(id,i);draw();};box.appendChild(s);});}
-function charge(kind,cx,cy,r,fill){
- function star(pts,ro,ri){var d="";for(var i=0;i<pts*2;i++){var a=Math.PI*i/pts-Math.PI/2;var rr=i%2?ri:ro;d+=(i?"L":"M")+(cx+rr*Math.cos(a)).toFixed(1)+","+(cy+rr*Math.sin(a)).toFixed(1);}return '<path d="'+d+'Z" fill="'+fill+'"/>';}
- switch(kind){
-  case"star":return star(8,r,r*0.42);
-  case"flower":var p="";for(var i=0;i<6;i++){var a=Math.PI*i/3;p+='<ellipse cx="'+(cx+r*0.55*Math.cos(a)).toFixed(1)+'" cy="'+(cy+r*0.55*Math.sin(a)).toFixed(1)+'" rx="'+(r*0.28)+'" ry="'+(r*0.5)+'" fill="'+fill+'" transform="rotate('+(a*180/Math.PI+90)+' '+(cx+r*0.55*Math.cos(a)).toFixed(1)+' '+(cy+r*0.55*Math.sin(a)).toFixed(1)+')"/>';}return p+'<circle cx="'+cx+'" cy="'+cy+'" r="'+(r*0.3)+'" fill="#d8b13c"/>';
-  case"sun":var ry='';for(var i=0;i<12;i++){var a=Math.PI*i/6;ry+='<line x1="'+(cx+r*0.55*Math.cos(a))+'" y1="'+(cy+r*0.55*Math.sin(a))+'" x2="'+(cx+r*Math.cos(a))+'" y2="'+(cy+r*Math.sin(a))+'" stroke="'+fill+'" stroke-width="2.5"/>';}return ry+'<circle cx="'+cx+'" cy="'+cy+'" r="'+(r*0.5)+'" fill="'+fill+'"/>';
-  case"moon":return '<path d="M'+(cx+r*0.2)+','+(cy-r*0.8)+' a '+r*0.8+' '+r*0.8+' 0 1 0 0 '+r*1.6+' a '+r*0.6+' '+r*0.6+' 0 1 1 0 -'+r*1.6+'Z" fill="'+fill+'"/>';
-  case"flame":return '<path d="M'+cx+','+(cy-r)+' Q'+(cx+r*0.7)+','+(cy-r*0.2)+' '+cx+','+(cy+r*0.7)+' Q'+(cx-r*0.7)+','+(cy-r*0.2)+' '+cx+','+(cy-r)+'Z" fill="'+fill+'"/><path d="M'+cx+','+(cy-r*0.5)+' Q'+(cx+r*0.35)+','+cy+' '+cx+','+(cy+r*0.5)+' Q'+(cx-r*0.35)+','+cy+' '+cx+','+(cy-r*0.5)+'Z" fill="#d8b13c"/>';
-  case"wave":return '<path d="M'+(cx-r)+','+cy+' q'+(r*0.5)+',-'+(r*0.6)+' '+r+',0 q'+(r*0.5)+','+(r*0.6)+' '+r+',0" fill="none" stroke="'+fill+'" stroke-width="4"/><path d="M'+(cx-r)+','+(cy+r*0.5)+' q'+(r*0.5)+',-'+(r*0.6)+' '+r+',0 q'+(r*0.5)+','+(r*0.6)+' '+r+',0" fill="none" stroke="'+fill+'" stroke-width="3" opacity=".7"/>';
-  case"tree":return '<path d="M'+cx+','+(cy+r)+' V'+(cy-r*0.3)+' M'+cx+','+(cy-r*0.1)+' q-'+(r*0.5)+',-'+(r*0.3)+' -'+(r*0.6)+',-'+(r*0.7)+' M'+cx+','+(cy-r*0.1)+' q'+(r*0.5)+',-'+(r*0.3)+' '+(r*0.6)+',-'+(r*0.7)+' M'+cx+','+(cy-r*0.4)+' q-'+(r*0.35)+',-'+(r*0.2)+' -'+(r*0.4)+',-'+(r*0.5)+' M'+cx+','+(cy-r*0.4)+' q'+(r*0.35)+',-'+(r*0.2)+' '+(r*0.4)+',-'+(r*0.5)+'" stroke="'+fill+'" stroke-width="2.5" fill="none" stroke-linecap="round"/>';
-  case"wing":return '<path d="M'+(cx-r*0.1)+','+cy+' Q'+(cx-r)+','+(cy-r*0.6)+' '+(cx-r*0.8)+','+(cy+r*0.4)+' Q'+(cx-r*0.4)+','+(cy+r*0.1)+' '+(cx-r*0.1)+','+cy+' M'+(cx+r*0.1)+','+cy+' Q'+(cx+r)+','+(cy-r*0.6)+' '+(cx+r*0.8)+','+(cy+r*0.4)+' Q'+(cx+r*0.4)+','+(cy+r*0.1)+' '+(cx+r*0.1)+','+cy+'" fill="'+fill+'"/>';
-  case"harp":return '<path d="M'+(cx-r*0.5)+','+(cy+r*0.7)+' Q'+(cx-r*0.6)+','+(cy-r*0.7)+' '+(cx+r*0.4)+','+(cy-r*0.6)+' L'+(cx-r*0.3)+','+(cy+r*0.7)+'Z" fill="none" stroke="'+fill+'" stroke-width="3"/><g stroke="'+fill+'" stroke-width="1">'+[0,1,2,3].map(function(i){return '<line x1="'+(cx-r*0.4+i*r*0.2)+'" y1="'+(cy+r*0.6-i*r*0.15)+'" x2="'+(cx-r*0.45+i*r*0.2)+'" y2="'+(cy-r*0.5)+'"/>';}).join("")+'</g>';
-  case"anvil":return '<path d="M'+(cx-r*0.7)+','+(cy-r*0.2)+' h'+r*1.4+' l-'+(r*0.2)+','+(r*0.35)+' h-'+(r*0.3)+' v'+(r*0.3)+' h-'+(r*0.4)+' v-'+(r*0.3)+' h-'+(r*0.3)+'Z" fill="'+fill+'"/>';
-  case"gem":return '<path d="M'+cx+','+(cy-r)+' L'+(cx+r*0.7)+','+(cy-r*0.2)+' L'+cx+','+(cy+r)+' L'+(cx-r*0.7)+','+(cy-r*0.2)+'Z" fill="'+fill+'"/><path d="M'+cx+','+(cy-r)+' L'+cx+','+(cy+r)+' M'+(cx-r*0.7)+','+(cy-r*0.2)+' L'+(cx+r*0.7)+','+(cy-r*0.2)+'" stroke="#fffdf6" stroke-width="1" opacity=".5"/>';
-  default:return"";}
-}
-function draw(){
- var svg=document.getElementById("forgeSvg");
- var cx=100,cy=113,R=78;
- var field=PAL[st.field][1],cc=PAL[st.cc][1];
- var shape="";
- if(st.shape==="circle")shape='<circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="'+field+'" stroke="#8a7444" stroke-width="2"/>';
- else if(st.shape==="lozenge")shape='<path d="M'+cx+','+(cy-R)+' L'+(cx+R*0.8)+','+cy+' L'+cx+','+(cy+R)+' L'+(cx-R*0.8)+','+cy+'Z" fill="'+field+'" stroke="#8a7444" stroke-width="2"/>';
- else shape='<rect x="'+(cx-R*0.82)+'" y="'+(cy-R*0.82)+'" width="'+(R*1.64)+'" height="'+(R*1.64)+'" rx="6" fill="'+field+'" stroke="#8a7444" stroke-width="2"/>';
- // rim points (rank)
- var rim="";var rr=(st.shape==="circle")?R:R*0.86;
- for(var i=0;i<st.points;i++){var a=2*Math.PI*i/st.points-Math.PI/2;var x=cx+rr*Math.cos(a),y=cy+rr*Math.sin(a);
-   rim+='<path d="M'+x+','+y+' l'+(4*Math.cos(a-0.35))+','+(4*Math.sin(a-0.35))+' l'+(9*Math.cos(a))+','+(9*Math.sin(a))+' l'+(-4*Math.cos(a+0.35)+4*Math.cos(a-0.35))*0+',0 Z" fill="'+cc+'"/>';
-   rim+='<circle cx="'+(cx+ (rr+7)*Math.cos(a)).toFixed(1)+'" cy="'+(cy+(rr+7)*Math.sin(a)).toFixed(1)+'" r="3" fill="'+cc+'"/>';}
- // central charge, repeated in rotation
- var ch="";
- if(st.charge!=="none"){
-  if(st.repeat===1)ch=charge(st.charge,cx,cy,R*0.5,cc);
-  else{for(var j=0;j<st.repeat;j++){var ang=360*j/st.repeat;ch+='<g transform="rotate('+ang+' '+cx+' '+cy+') translate(0 -'+(R*0.34)+')">'+charge(st.charge,cx,cy,R*0.26,cc)+'</g>';}}
- }
- svg.innerHTML=shape+rim+ch;
- // blazon
- var tinct=PAL[st.field][0], ct=PAL[st.cc][0];
- var kindWord=st.shape==="circle"?"a woman":st.shape==="lozenge"?"a man":"a house";
- var chargeName={star:"a mullet",flower:"a flower",sun:"a sun in splendour",moon:"a crescent moon",flame:"a flame",wave:"a wave",tree:"a tree",wing:"a wing",harp:"a harp",anvil:"an anvil",gem:"a gem",none:"no charge"}[st.charge];
- var b=cap(tinct)+", "+(st.charge==="none"?"":( (st.repeat>1?st.repeat+" of ":"")+chargeName+" "+ct))+(st.points?", within "+st.points+" points": "")+". "+
-   "<span class='cite'>Borne on a "+st.shape+" — the device of "+kindWord+" "+(document.getElementById("f_points")?rankWord(st.points):"")+".</span>";
- document.getElementById("blazon").innerHTML=b;
- document.getElementById("f_rankn").textContent=rankWord(st.points);
-}
+var PAL=window.ARDA_PAL;
+var st={shape:"lozenge",points:8,pstyle:"ray",charge:"star",csize:0.46,charge2:"none",repeat:1,
+        rings:1,mandala:8,mstyle:"petal",gems:0,field:2,cc:0,ac:1,mc:1};
+function rankWord(n){if(!n)return"(a plain device)";if(n<16&&n>=16)return"";
+ if(n>=16)return"— a great ancestor of a house";if(n>=6)return"— a king's rank";
+ if(n>=4)return"— a prince's rank";return"— below the ranks Tolkien names";}
+var SWTARGET={f_field:"field",f_charge_c:"cc",f_accent:"ac",f_mc:"mc"};
+function mkSwatches(id,sel){var box=document.getElementById(id);if(!box)return;box.innerHTML="";
+ PAL.forEach(function(p,i){var w=document.createElement("span");w.className="sw"+(i===sel?" on":"");
+  w.style.background=p[1];w.title=p[0];
+  w.onclick=function(){st[SWTARGET[id]]=i;mkSwatches(id,i);draw();};box.appendChild(w);});}
+// fill the charge menus from the engine's own list
+function fillCharges(id,sel){var el=document.getElementById(id);el.innerHTML="";
+ window.ARDA_CHARGES.forEach(function(c){var o=document.createElement("option");o.value=c;
+  o.textContent=(c==="none"?"— none —":window.ARDA_CHARGE_LABEL[c].replace(/^an? /,""));
+  if(c===sel)o.selected=true;el.appendChild(o);});}
+fillCharges("f_charge","star");fillCharges("f_charge2","none");
+// presets: every device in the hall that the forge can draw
+(function(){var sel=document.getElementById("f_preset"),H=window.ARDA_HERALD;
+ Object.keys(H).forEach(function(k){var h=H[k];if(!h.forge)return;
+  var o=document.createElement("option");o.value=k;
+  o.textContent=h.label.replace(/ —.*$/,"")+(h.canon?"":" ◆");sel.appendChild(o);});
+ sel.onchange=function(){var h=H[this.value];if(!h||!h.forge)return;
+  Object.keys(h.forge).forEach(function(kk){st[kk]=h.forge[kk];});
+  if(st.charge2===undefined)st.charge2="none";
+  syncControls();draw();};})();
+function syncControls(){
+ document.getElementById("f_shape").value=st.shape;
+ document.getElementById("f_points").value=st.points||0;
+ document.getElementById("f_pstyle").value=st.pstyle||"ray";
+ document.getElementById("f_charge").value=st.charge||"none";
+ document.getElementById("f_csize").value=Math.round((st.csize||0.46)*100);
+ document.getElementById("f_charge2").value=st.charge2||"none";
+ document.getElementById("f_repeat").value=st.repeat||1;
+ document.getElementById("f_rings").value=st.rings||0;
+ document.getElementById("f_mandala").value=st.mandala||0;
+ document.getElementById("f_mstyle").value=st.mstyle||"petal";
+ document.getElementById("f_gems").value=st.gems||0;
+ mkSwatches("f_field",st.field);mkSwatches("f_charge_c",st.cc);
+ mkSwatches("f_accent",st.ac===undefined?1:st.ac);mkSwatches("f_mc",st.mc===undefined?1:st.mc);}
 function cap(s){return s.charAt(0).toUpperCase()+s.slice(1);}
-document.getElementById("f_shape").onchange=function(){st.shape=this.value;draw();};
-document.getElementById("f_points").oninput=function(){st.points=+this.value;draw();};
-document.getElementById("f_charge").onchange=function(){st.charge=this.value;draw();};
-document.getElementById("f_repeat").oninput=function(){st.repeat=+this.value;draw();};
-mkSwatches("f_field",1);mkSwatches("f_charge_c",0);
+function draw(){
+ document.getElementById("forgeSvg").innerHTML=window.ardaForgeInner(st);
+ var tinct=PAL[st.field][0],ct=PAL[st.cc][0];
+ var kindWord=st.shape==="circle"?"a woman":st.shape==="lozenge"?"a man":"a house or an impersonal thing";
+ var L=window.ARDA_CHARGE_LABEL;
+ var parts=[];
+ if(st.charge&&st.charge!=="none")parts.push(L[st.charge]+" "+ct);
+ if(st.charge2&&st.charge2!=="none"&&st.repeat>1)parts.push(st.repeat+" "+L[st.charge2].replace(/^an? /,"")+"s in orbit");
+ else if(st.charge&&st.charge!=="none"&&st.repeat>1)parts.push("repeated "+st.repeat+" times about the centre");
+ if(st.mandala>1)parts.push("within "+st.mandala+" "+(st.mstyle==="ray"?"rays":st.mstyle==="lens"?"lens-petals":"petals")+" "+PAL[st.mc===undefined?1:st.mc][0]);
+ if(st.gems>0)parts.push(st.gems+" jewels set about");
+ var b=cap(tinct)+(parts.length?", "+parts.join(", "):"")+(st.points?", within "+st.points+" points reaching the rim":"")+".";
+ b+=" <span class='cite'>Borne on a "+st.shape+" — the device of "+kindWord+" "+rankWord(st.points)+".</span>";
+ if(st.points&&[4,6,7,8,16].indexOf(st.points)<0)
+  b+=" <span class='cite' style=\"color:#8a5a12\">⚠ Tolkien names four, six to eight, and sixteen; "+st.points+" is outside his scheme.</span>";
+ document.getElementById("blazon").innerHTML=b;
+ document.getElementById("f_rankn").textContent=rankWord(st.points);}
+[["f_shape","shape",0],["f_pstyle","pstyle",0],["f_charge","charge",0],["f_charge2","charge2",0],
+ ["f_mstyle","mstyle",0],["f_points","points",1],["f_repeat","repeat",1],["f_rings","rings",1],
+ ["f_mandala","mandala",1],["f_gems","gems",1]].forEach(function(r){
+ var el=document.getElementById(r[0]);if(!el)return;
+ el[r[2]?"oninput":"onchange"]=function(){st[r[1]]=r[2]?+this.value:this.value;draw();};});
+document.getElementById("f_csize").oninput=function(){st.csize=(+this.value)/100;draw();};
+syncControls();
 document.getElementById("f_rand").onclick=function(){
- var shapes=["circle","lozenge","square"],charges=["star","flower","sun","moon","flame","wave","tree","wing","harp","anvil","gem"];
- st.shape=shapes[(Math.random()*3)|0];document.getElementById("f_shape").value=st.shape;
- st.points=[0,4,6,8,12,16][(Math.random()*6)|0];document.getElementById("f_points").value=st.points;
- st.charge=charges[(Math.random()*charges.length)|0];document.getElementById("f_charge").value=st.charge;
- st.repeat=[1,1,2,3,4,6][(Math.random()*6)|0];document.getElementById("f_repeat").value=st.repeat;
- st.field=(Math.random()*8)|0;st.cc=(Math.random()*8)|0;mkSwatches("f_field",st.field);mkSwatches("f_charge_c",st.cc);
- draw();};
+ var R=function(a){return a[(Math.random()*a.length)|0]};
+ st.shape=R(["circle","lozenge","square"]);
+ st.points=R([0,4,6,8,16]);st.pstyle=R(["ray","ray","leaf","pin"]);
+ st.charge=R(window.ARDA_CHARGES.filter(function(c){return c!=="none"}));
+ st.csize=0.34+Math.random()*0.22;
+ st.charge2=R(["none","none","star","gem","leaf","flower"]);
+ st.repeat=st.charge2==="none"?1:R([4,6,8,12]);
+ st.rings=R([0,1,1,2]);st.mandala=R([0,6,8,8,12,16]);st.mstyle=R(["petal","lens","ray"]);
+ st.gems=R([0,0,6,8,12]);
+ st.field=(Math.random()*PAL.length)|0;st.cc=(Math.random()*PAL.length)|0;
+ st.ac=(Math.random()*PAL.length)|0;st.mc=(Math.random()*PAL.length)|0;
+ document.getElementById("f_preset").value="";
+ syncControls();draw();};
 document.getElementById("f_dl").onclick=function(){
  var s='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 226">'+document.getElementById("forgeSvg").innerHTML+'</svg>';
- var a=document.createElement("a");a.href="data:image/svg+xml;charset=utf-8,"+encodeURIComponent(s);a.download="arda-device.svg";a.click();};
+ var a=document.createElement("a");a.href="data:image/svg+xml;charset=utf-8,"+encodeURIComponent(s);
+ a.download="arda-device.svg";a.click();};
 draw();
 })();
 // ===== tabs + credits =====
