@@ -145,6 +145,23 @@ def check():
             if len(ks)>1 and v not in DECLARED:
                 fail(errs,"DUPART   %s is used by %s — declare it or give one its own plate"%(v,", ".join(ks)))
 
+    # 7. MAPSYNC — the three map files carry the same realm descriptions by design.
+    #    Roughly two hundred claims are duplicated across them, so a correction made
+    #    to one and not the others is the Framsburg fault waiting to happen again.
+    _mf=["arda_livingmap.json","arda_timemap.json","arda_timemap_jpeg.json"]
+    _R={}
+    for _f in _mf:
+        if not os.path.exists(_f): continue
+        _r=json.load(open(_f)).get("realms")
+        if isinstance(_r,dict): _R[_f]={k:(v.get("d") or "") for k,v in _r.items()}
+        elif isinstance(_r,list): _R[_f]={x.get("id",x.get("n")):(x.get("d") or "") for x in _r}
+    if len(_R)>1:
+        _keys=set().union(*[set(v) for v in _R.values()])
+        for _k in sorted(_keys):
+            _texts={_R[_f][_k] for _f in _R if _k in _R[_f] and _R[_f][_k]}
+            if len(_texts)>1:
+                fail(errs,"MAPSYNC  realm '%s' is described differently across the map files"%_k)
+
     # 6. TIER — a lower-tier source named beside a canon tag
     for f in sorted(glob.glob("arda_*.json")):
         try: blob=json.dumps(json.load(open(f)),ensure_ascii=False)
