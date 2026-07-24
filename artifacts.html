@@ -18,6 +18,11 @@ background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 
 .card{background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid var(--line);border-radius:12px;padding:15px 18px;box-shadow:0 3px 10px rgba(60,40,10,.14)}
 .card h3{margin:.1em 0 .2em;font-variant:small-caps;font-weight:normal;font-size:19px;color:#5a4626}
 .card .ic{font-size:22px;float:right;margin-left:8px}
+.card .plate{float:right;clear:right;width:138px;margin:2px 0 8px 12px;border:1px solid var(--line);border-radius:8px;background:#fdfcf8;box-shadow:0 2px 7px rgba(60,40,10,.16);cursor:zoom-in;display:block}
+@media(max-width:560px){.card .plate{float:none;clear:none;width:100%;max-width:240px;margin:6px auto 10px}}
+#plight{display:none;position:fixed;inset:0;background:rgba(20,16,10,.86);z-index:9999;align-items:center;justify-content:center;flex-direction:column;gap:10px;padding:20px;cursor:zoom-out}
+#plight img{max-width:min(92vw,620px);max-height:80vh;border:2px solid #8a7444;border-radius:10px;background:#fdfcf8}
+#plight .pc{color:#e8dcc0;font-size:13px;font-style:italic;text-align:center;max-width:620px}
 .chain{margin-top:.6em;position:relative;padding-left:18px}
 .chain::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:linear-gradient(#c9a227,#8a6a2a)}
 .step{position:relative;margin:.45em 0;font-size:12.8px}
@@ -38,6 +43,15 @@ background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 
 </div>
 <script>
 const ICON={jewel:"💎",ring:"◯",sword:"🗡",helm:"⛑",stone:"🔮",tree:"🌳",phial:"✨",horn:"📯",mail:"🛡",ram:"🔨",token:"🏹"};
+// concept-plate for each treasure (keyed by its name in arda_artifacts.json)
+const PLATE={"The Silmarils":"it_silmarils","The One Ring":"it_onering",
+"The Three Rings — Narya, Nenya, Vilya":"it_threerings","The Seven and the Nine":"it_sevennine",
+"Narsil / Andúril":"it_narsil","The ring of Barahir":"it_barahir","The palantíri":"it_palantir",
+"The White Tree line":"it_whitetree","The Arkenstone":"it_arkenstone","Sting":"it_sting",
+"Glamdring & Orcrist":"it_glamdring","Anglachel / Gurthang":"it_anglachel",
+"The Dragon-helm of Dor-lómin":"it_dragonhelm","The Nauglamír":"it_nauglamir","The Elessar":"it_elessar",
+"The Phial of Galadriel":"it_phial","The Horn of the Mark":"it_horn","The mithril-coat":"it_mithril",
+"Grond, twice":"it_grond","The Red Arrow & the beacons":"it_redarrow"};
 fetch("arda_artifacts.json").then(r=>r.json()).then(D=>{
 const types=[...new Set(D.map(a=>a.t))];
 const on={};types.forEach(t=>on[t]=1);
@@ -50,13 +64,24 @@ function draw(){
 const q=nrm(document.getElementById("q").value||"");
 document.getElementById("grid").innerHTML=D.filter(a=>on[a.t]&&(!q||nrm(a.n+a.d+a.o+a.ch.map(s=>s[0]).join(" ")).includes(q)))
 .map(a=>`<div class="card"><span class="ic">${ICON[a.t]||""}</span><h3>${a.n}</h3>
+${PLATE[a.n]?`<img class="plate" src="art/${PLATE[a.n]}.jpg" loading="lazy" alt="concept plate of ${a.n.replace(/"/g,"")}" data-cap="${a.n.replace(/"/g,"")}">`:""}
 <div class="cite">${a.o}</div>
 <p style="font-size:13px;margin:.4em 0">${a.d}</p>
 <div class="chain">${a.ch.map(s=>`<div class="step"><b>${s[0]}</b><br><span class="w">${s[1]} · ${s[2]}</span></div>`).join("")}</div>
 <div class="fate">${a.f}</div>
 ${a.x?`<div class="conf">⚖ ${a.x}</div>`:""}
 ${a.l.length?`<div class="lnk">${a.l.map(l=>`<a href="${l[0]}">${l[1]} ⧉</a>`).join(" · ")}</div>`:""}
-</div>`).join("");}
+</div>`).join("");
+// click a plate to enlarge
+document.getElementById("grid").querySelectorAll("img.plate").forEach(im=>im.addEventListener("click",e=>{
+ e.stopPropagation();
+ let L=document.getElementById("plight");
+ if(!L){L=document.createElement("div");L.id="plight";document.body.appendChild(L);
+  L.addEventListener("click",()=>{L.style.display="none"});
+  document.addEventListener("keydown",ev=>{if(ev.key==="Escape")L.style.display="none"});}
+ L.innerHTML='<img src="'+im.getAttribute("src")+'" alt="'+im.getAttribute("alt")+'"><div class="pc">'
+  +im.dataset.cap+' — an original concept plate drawn for this archive from the corpus’ own description [I]</div>';
+ L.style.display="flex";}));}
 document.getElementById("q").addEventListener("input",draw);
 draw();});
 </script>
