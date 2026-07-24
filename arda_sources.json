@@ -408,5 +408,87 @@
    "pages": 57
   }
  ],
+ "not_held": [
+  {
+   "title": "The Letters of J.R.R. Tolkien — Revised and Expanded Edition (2023)",
+   "tier": 1,
+   "attribution": "ed. Carpenter & C. Tolkien; revised Hammond & Scull",
+   "note": "The copy held is the 1981 edition, ending at letter 354. The 2023 revision restores cut passages and adds roughly 150 further letters.",
+   "affects": "Any claim resting on Tolkien's stated intent. The archive should cite the 1981 numbering and not assert that a subject is absent from the Letters.",
+   "held": false
+  },
+  {
+   "title": "The Monsters and the Critics and Other Essays (1983)",
+   "tier": 1,
+   "attribution": "ed. Christopher Tolkien",
+   "note": "Tolkien's scholarly essays, including 'On Fairy-Stories', 'English and Welsh' and 'A Secret Vice' — his own account of why and how he invented languages.",
+   "affects": "The languages hall, and any statement about Tolkien's philosophy of invention.",
+   "held": false
+  },
+  {
+   "title": "The Bovadium Fragments (2025)",
+   "tier": 1,
+   "attribution": "ed. Christopher Tolkien; essay by Richard Ovenden",
+   "note": "A previously unpublished satire on the motor-car and the ruin of Oxford, and the last of Christopher Tolkien's presentations of his father's work. No Middle-earth matter.",
+   "affects": "Nothing in this archive. Registered for completeness of the tier-1 shelf.",
+   "held": false
+  },
+  {
+   "title": "The Fall of Arthur (2013); The Legend of Sigurd and Gudrún (2009); Beowulf: A Translation and Commentary (2014); The Story of Kullervo (2015); The Lay of Aotrou and Itroun (2016)",
+   "tier": 1,
+   "attribution": "ed. Christopher Tolkien / Verlyn Flieger",
+   "note": "Tolkien's verse and translations outside the legendarium.",
+   "affects": "Nothing directly; useful only for the sources of his imagination.",
+   "held": false
+  },
+  {
+   "title": "Roverandom; Mr Bliss; Letters from Father Christmas; Smith of Wootton Major",
+   "tier": 1,
+   "attribution": "J.R.R. Tolkien",
+   "note": "His other fiction. Smith touches Faery, but none is Middle-earth.",
+   "affects": "Nothing in this archive.",
+   "held": false
+  },
+  {
+   "title": "Parma Eldalamberon 11–22 (1995– )",
+   "tier": 2,
+   "attribution": "ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate and with Christopher Tolkien's support",
+   "note": "The single largest body of primary Tolkien not held here: his own language manuscripts printed in full — the Gnomish Lexicon (PE 11), the Qenya Lexicon (PE 12), Early Noldorin (PE 13), 'Words, Phrases and Passages' from The Lord of the Rings (PE 17), the Quenya phonology and verb structure (PE 18, 19, 22). The text is Tolkien's and carries tier-1 authority; the journals are the Estate-permitted vehicle.",
+   "affects": "The languages hall above all. Its lexicon is built from the Etymologies (HoME V) and the published appendices; PE 17 and PE 22 would correct and greatly enlarge it. Until these are read, no entry in that hall should be presented as the whole of what Tolkien wrote.",
+   "held": false
+  },
+  {
+   "title": "Vinyar Tengwar, esp. nos. 39–50",
+   "tier": 2,
+   "attribution": "ed. Elvish Linguistic Fellowship, by Estate permission",
+   "note": "Tolkien's late essays: 'Ósanwe-kenta' on thought-transfer, 'Notes on Óre' on the inner heart, 'The Rivers and Beacon-hills of Gondor', and the Quenya prayers.",
+   "affects": "The languages hall; also the cosmology and any statement about Elvish mind and spirit.",
+   "held": false
+  },
+  {
+   "title": "The Art of The Hobbit (2011); The Art of The Lord of the Rings (2015)",
+   "tier": 2,
+   "attribution": "Hammond & Scull",
+   "note": "Tolkien's own drawings, maps and designs for the two books, reproduced in full.",
+   "affects": "The gallery and the maps. His own cartography outranks any reconstruction the archive draws.",
+   "held": false
+  },
+  {
+   "title": "Tolkien: Maker of Middle-earth (2018)",
+   "tier": 2,
+   "attribution": "ed. Catherine McIlwaine (Bodleian)",
+   "note": "The exhibition catalogue: manuscripts, letters and artwork, including heraldic devices.",
+   "affects": "The heraldry hall, the gallery.",
+   "held": false
+  },
+  {
+   "title": "The History of The Hobbit (2007; rev. 2011)",
+   "tier": 2,
+   "attribution": "John D. Rateliff",
+   "note": "The drafts of The Hobbit with commentary, the counterpart to Christopher Tolkien's History for the one book he never covered.",
+   "affects": "The Hobbit-era chronology and the dwarves.",
+   "held": false
+  }
+ ],
  "rule": "Where two sources disagree, the lower tier number wins. A tier-5 file is corrected by any tier above it. Tolkien's own words quoted inside a tier-2 book carry tier-1 authority; the editor's framing does not."
 }
