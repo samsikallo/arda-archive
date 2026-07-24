@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import sys
 # Archive QA gate — run before any deploy: python3 qa_check.py
 # (Same checks as map/qa_workflow.yml.example; installing that as a GitHub Action
 #  requires re-running `gh auth login` with the `workflow` scope.)
@@ -59,5 +60,22 @@ for f in glob.glob("*.html"):
 if dead: bad+=dead
 print("link-rot:",dead,"dead internal links")
 
-print("checked",len(pages),"pages,",len(glob.glob('*.json')),"datasets —","FAIL" if bad else "OK")
+# INTEGRITY-HOOK
+_ifail = 0
+try:
+    import subprocess as _sp, sys as _sys
+    _r = _sp.run([_sys.executable, "integrity.py"], capture_output=True, text=True, timeout=180)
+    for _l in _r.stdout.splitlines():
+        t = _l.strip()
+        if t.startswith(("\u2717", "\u26a0")):
+            print(t)
+    _ifail = 1 if _r.returncode else 0
+    print("integrity (drift): %s" % ("FAIL" if _ifail else "OK"))
+except Exception as _e:
+    print("integrity (drift): could not run - %s" % str(_e)[:60])
+
+print("checked",len(pages),"pages,",len(glob.glob('*.json')),"datasets —",
+      "FAIL" if (bad or _ifail) else "OK")
+import sys as _s2
+_s2.exit(1 if (bad or _ifail) else 0)
 sys.exit(1 if bad else 0)
