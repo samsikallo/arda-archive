@@ -44,6 +44,7 @@ h2{font-variant:small-caps;font-weight:normal;color:#5a4626;border-bottom:1px so
 
 <div class="pane on" id="p-shelf">
  <div class="cite">The twenty-eight volumes, each with its weight in words, its declared nature, its table of divisions — and the people and places that live most thickly in it. Bars are proportional to word-count.</div>
+ <div id="limits" style="background:#fdf3df;border:1px solid #d0a53c;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:12.5px"><b>What this shelf cannot tell you.</b> <span id="limtext"></span></div>
  <div class="grid" id="shelf"></div>
 </div>
 
@@ -101,6 +102,7 @@ function init(){
   3:["in harmony with Tolkien, but not of his hand","#fdf3df","#a8853c"],
   4:["outside the canon","#f7e8e8","#a86a6a"]};
  const shelfOrder=CI.slice().sort((a,b)=>(a.tier||3)-(b.tier||3)||b.words-a.words);
+ fetch('arda_sources.json').then(r=>r.json()).then(sd=>{const L=(sd.limits||[])[0];if(L)document.getElementById('limtext').textContent=L.what+' — '+L.why+' '+L.effect;}).catch(()=>{});
  $("#shelf").innerHTML=shelfOrder.map(v=>{
   const top=topFor(v.id), tw=TIERW[v.tier||3];
   return '<div class="card"><h3>'+esc(v.t)+'</h3>'+

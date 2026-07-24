@@ -490,5 +490,13 @@
    "held": false
   }
  ],
- "rule": "Where two sources disagree, the lower tier number wins. A tier-5 file is corrected by any tier above it. Tolkien's own words quoted inside a tier-2 book carry tier-1 authority; the editor's framing does not."
+ "rule": "Where two sources disagree, the lower tier number wins. A tier-5 file is corrected by any tier above it. Tolkien's own words quoted inside a tier-2 book carry tier-1 authority; the editor's framing does not.",
+ "limits": [
+  {
+   "what": "The genealogical tables of Appendix A III (Durin's Folk) and Appendix C (the Hobbit family trees)",
+   "why": "In the edition held here these tables are embedded as IMAGES, not text — the page carrying Durin's line has one image and three words. No text extraction can reach them, and no OCR tool is available in this environment.",
+   "effect": "About 25 Dwarf and 40 Hobbit birth and death dates in the chronology and genealogy cannot be verified against tier 1 within this corpus. They are corroborated only by tier-3 works (Foster, Tyler) and, for Gimli, by the tier-2 Reader's Companion. They are very probably correct against the printed books, but nothing here warrants them and they must not be badged as verified.",
+   "found": "Phase 5, 2026-07-24"
+  }
+ ]
 }
