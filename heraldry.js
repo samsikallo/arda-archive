@@ -50,6 +50,7 @@ else document.addEventListener("DOMContentLoaded",window.ardaSwapAllEmblems);
 // A square device on the plates fills its panel almost edge to edge; 0.84 left a
 // margin the paintings do not have. One constant so the four places cannot drift apart.
 var ARDA_SQ=0.94;
+var ARDA_GRAD_N=0;   // unique ids for the gradients a course may ask for
 // Measured off every plate: Tolkien's lozenge is a SQUARE standing on its point --
 // the ink box of all thirteen lozenge plates is exactly 1.00 wide for 1.00 tall, where
 // the forge had been drawing 0.82.  His Gondolin shields are 0.50 -- twice as tall as
@@ -687,6 +688,307 @@ window.ardaForgeDevice=function(p,W){
 // rank implied by the number of points that reach the rim (Tolkien's own note)
 window.ardaRank=function(n){if(!n)return"no rank declared";if(n>=16)return"a great ancestor of a house";
  if(n>=6)return"a king";if(n>=4)return"a prince";return"below the ranks Tolkien names"};
+
+// ===================== the layer engine =====================
+// The plates in Forodrim are built as stacks of concentric bands -- a field, then ring
+// upon ring of wedges, lobes, discs and stars, each with its own count, radius and
+// tincture, and an edge that may be plain, beaded or chequered. The older fixed slots
+// (mandala / gems / charge) cannot express that. A device may now instead carry
+// p.layers: an ordered list drawn from the field outward, each entry {t:...}.
+//
+//   {t:"ring",   r, w, c, dash}                 a circle, stroked
+//   {t:"disc",   r, c}                          a filled disc
+//   {t:"wedges", n, r0, r1, w, c, rot, taper}   n tapering rays
+//   {t:"lobes",  n, r, len, wid, c, rot}        n petals or lobes
+//   {t:"discs",  n, r, size, c, rot, edge}      n discs set about a ring
+//   {t:"star",   n, ro, ri, c, rot}             an n-pointed star
+//   {t:"poly",   n, r, c, rot}                  a regular polygon
+//   {t:"square", s, c, rot}                     an inset panel
+//   {t:"corners",n, r, size, c, rot, shape}     accents at the corners
+//   {t:"dashes", n, r, len, w, c, rot}          a broken ring, as of beads
+//   {t:"charge", k, r, size, c, ac, rot, text}  any charge from the vocabulary
+// Radii are fractions of R; angles in turns (0.25 = a quarter turn).
+window.ardaForgeLayers=function(list,cx,cy,R,col,shape){
+ // The plates fill the lozenge, and a lozenge only reaches R at its four points: along
+ // every other bearing its edge is far nearer. Radii given with fit:true are therefore
+ // fractions of the FIELD BOUNDARY at that bearing, not of the circumscribed circle --
+ // without this a ray drawn to r=1 stops well short of the edge everywhere but the points.
+ var SHP=shape||"lozenge";
+ function bound(a){
+  if(SHP==="circle")return R;
+  var ca=Math.abs(Math.cos(a)),sa=Math.abs(Math.sin(a));
+  if(SHP==="square"){var s2=R*ARDA_SQ;return s2/Math.max(ca,sa,1e-6)}
+  if(SHP==="shield"){var sw=R*ARDA_SHW,sh2=R*0.99;
+   return 1/Math.max(ca/sw,sa/sh2,1e-9)}
+  var w=R*ARDA_LZ,h=R;                   // the lozenge: a square on its point
+  return 1/((ca/w)+(sa/h)+1e-9);
+ }
+ var F=function(n){return (+n).toFixed(2)},out="";
+ var LAYER_STROKE="";      // set per course; poly() picks it up when given no stroke
+ var RR=function(L,a,v){return (L.fit?bound(a):R)*v};
+ var TAU=Math.PI*2;
+ function at(a,r){return [cx+r*Math.cos(a),cy+r*Math.sin(a)]}
+ function poly(pts,fill,stroke,sw){
+  var d=pts.map(function(p,i){return (i?"L":"M")+F(p[0])+","+F(p[1])}).join("")+"Z";
+  return '<path d="'+d+'" fill="'+(fill||"none")+'"'+
+    (stroke?' stroke="'+stroke+'" stroke-width="'+(sw||1)+'" stroke-linejoin="round"':LAYER_STROKE)+'/>';
+ }
+ (list||[]).forEach(function(L){
+  var c=col(L.c===undefined?0:L.c), rot=(L.rot||0)*TAU, n=L.n||1;
+  // A course may NAME its bearings instead of spreading n of them evenly round the
+  // circle. The Elvish devices turn full circle and never need this; the naturalistic
+  // ones do -- Idril's cornflower is a mirrored drawing, not a mandala, and its petals
+  // sit where the flower puts them. Bearings are given in turns, 0 straight up.
+  var AT=(L.at&&L.at.length)?L.at:null;
+  if(AT) n=AT.length;
+  function BR(i,tot){
+   tot=(tot===undefined?n:tot);
+   if(!AT) return TAU*i/tot-Math.PI/2+rot;
+   var m=AT.length, k=Math.floor(i), f=i-k;
+   var b0=AT[((k%m)+m)%m]*TAU, b1=AT[((((k+1)%m))+m)%m]*TAU;
+   if(b1<b0) b1+=TAU;                      // interpolate for the fractional indices
+   return b0+(b1-b0)*f-Math.PI/2+rot;      // segments and arcs use half-steps
+  }
+  // PER-ITEM CONTROL. Any parameter of a repeating course may be given as a LIST
+  // instead of a single value, and then each repeat takes its own from it, cycling if
+  // the list is shorter than the count. Idril's cornflower needs this: her petals are
+  // broad masses of unequal width at bearings that are not quite regular, and a course
+  // in which every repeat is identical cannot hold that however it is tuned.
+  //   {"t":"petals","at":[...],"w":[0.10,0.16,0.11],"c":[65,68,54]}
+  function V(key,i,dflt){
+   var v=L[key];
+   if(v===undefined) return dflt;
+   if(Object.prototype.toString.call(v)!=="[object Array]") return v;
+   if(!v.length) return dflt;
+   return v[((i%v.length)+v.length)%v.length];
+  }
+  function CV(key,i,dflt){ var v=V(key,i,undefined); return v===undefined?dflt:col(v); }
+  // A course may shade ALONG its length instead of taking one flat fill. Idril's
+  // petals run through five blues from root to tip, and no single fill can hold that:
+  // measured against her plate the spec was drawing NONE of three of the inks that
+  // make up nearly a twentieth of it. grad:[inner,outer] paints the gradient.
+  var GRADS="";
+  function gradFill(i,x0,y0,x1,y1,dflt){
+   var g=L.grad;
+   if(!g||!g.length) return dflt;
+   var a=col(g[0]), b=col(g[g.length-1]);
+   var id="ag"+(++ARDA_GRAD_N);
+   GRADS+='<linearGradient id="'+id+'" gradientUnits="userSpaceOnUse" x1="'+F(x0)+'" y1="'+F(y0)+
+     '" x2="'+F(x1)+'" y2="'+F(y1)+'">';
+   for(var gi=0;gi<g.length;gi++)
+    GRADS+='<stop offset="'+F(gi/(g.length-1||1)*100)+'%" stop-color="'+col(g[gi])+'"/>';
+   GRADS+='</linearGradient>';
+   return 'url(#'+id+')';
+  }
+  // a course whose colour is a list needs its outline resolved per item too
+  function SAi(i){
+   var st=V("stroke",i,undefined);
+   return st===undefined?"":(' stroke="'+col(st)+'" stroke-width="'+F(R*V("sw",i,0.012))+
+                             '" stroke-linejoin="round"');
+  }
+  var MARK=out.length;
+  // an outline, if this course asks for one: LS is the ink, LSW the width
+  var LS=(L.stroke===undefined?null:col(L.stroke)), LSW=R*(L.sw||0.012);
+  var SA=LS?(' stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round"'):"";
+  LAYER_STROKE=SA;
+  if(L.t==="ring")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="none" stroke="'+c+
+     '" stroke-width="'+F((L.w||0.02)*R)+'"'+(L.dash?' stroke-dasharray="'+L.dash+'"':"")+'/>';
+  else if(L.t==="disc")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="'+c+'"'+SA+'/>';
+  else if(L.t==="wedges"){
+   // A ray is broad where it springs and comes to a point: its half-width is measured
+   // ACROSS the ray as a fraction of R, not as an angle. Taken as an angle it collapses
+   // to a needle at any small inner radius -- which is what it did.
+   for(var i=0;i<n;i++){var a=BR(i),
+     r0=RR(L,a,V("r0",i,0)),r1=RR(L,a,V("r1",i,1)),
+     w=V("w",i,0.06), tp=V("taper",i,0);
+    var ux=Math.cos(a),uy=Math.sin(a),nx=-uy,ny=ux,hw=w*R,tw=hw*tp;
+    out+=poly([[cx+ux*r1+nx*tw, cy+uy*r1+ny*tw],
+               [cx+ux*r1-nx*tw, cy+uy*r1-ny*tw],
+               [cx+ux*r0-nx*hw, cy+uy*r0-ny*hw],
+               [cx+ux*r0+nx*hw, cy+uy*r0+ny*hw]],CV("c",i,c));}
+  } else if(L.t==="lobes"){
+   for(var j=0;j<n;j++){var b=BR(j),lr=R*V("r",j,0.5),ln=R*V("len",j,0.2),wd=R*V("wid",j,0.1),
+     p=at(b,lr);
+    out+='<ellipse cx="'+F(p[0])+'" cy="'+F(p[1])+'" rx="'+F(wd)+'" ry="'+F(ln)+
+      '" fill="'+CV("c",j,c)+'"'+SAi(j)+' transform="rotate('+F(b*180/Math.PI+90)+' '+F(p[0])+' '+F(p[1])+')"/>';}
+  } else if(L.t==="discs"){
+   for(var k=0;k<n;k++){var d2=BR(k),dk=V("r",k,0.6),ds=R*V("size",k,0.12),
+     ec=CV("edge",k,null), q=at(d2,L.fit?bound(d2)*dk:R*dk);
+    out+='<circle cx="'+F(q[0])+'" cy="'+F(q[1])+'" r="'+F(ds)+'" fill="'+CV("c",k,c)+'"'+
+      (ec?' stroke="'+ec+'" stroke-width="'+F(R*0.012)+'"':SAi(k))+'/>';}
+  } else if(L.t==="star"){
+   var ro=R*(L.ro||0.6), ri=R*(L.ri||0.3), pts=[];
+   for(var m=0;m<n*2;m++)pts.push(at(Math.PI*m/n-Math.PI/2+rot, m%2?ri:ro));
+   out+=poly(pts,c);
+  } else if(L.t==="poly"){
+   var pr=R*(L.r||0.5), pp=[];
+   for(var q2=0;q2<n;q2++)pp.push(at(BR(q2),pr));
+   out+=poly(pp,c);
+  } else if(L.t==="square"){
+   var s=R*(L.s||0.3);
+   out+='<rect x="'+F(cx-s)+'" y="'+F(cy-s)+'" width="'+F(2*s)+'" height="'+F(2*s)+'" fill="'+c+
+     '" transform="rotate('+F((L.rot||0)*360)+' '+F(cx)+' '+F(cy)+')"/>';
+  } else if(L.t==="corners"){
+   var nn=n||4;
+   for(var t=0;t<nn;t++){var ca=BR(t,nn),ck=V("r",t,0.86),cs=R*V("size",t,0.1),
+     cr2=L.fit?bound(ca)*ck:R*ck, p2=at(ca,cr2), cc2=CV("c",t,c);
+    if(L.shape==="tri")out+=poly([at(ca,cr2+cs),at(ca-0.16,cr2-cs*0.5),at(ca+0.16,cr2-cs*0.5)],cc2);
+    else out+='<circle cx="'+F(p2[0])+'" cy="'+F(p2[1])+'" r="'+F(cs)+'" fill="'+cc2+'"/>';}
+  } else if(L.t==="dashes"){
+   for(var u=0;u<n;u++){var ua=BR(u), hr=R*V("r",u,0.7), hw=R*V("w",u,0.05),
+     half=(TAU/n)*V("len",u,0.5)/2;
+    out+='<path d="M'+F(at(ua-half,hr)[0])+','+F(at(ua-half,hr)[1])+
+      ' A'+F(hr)+','+F(hr)+' 0 0 1 '+F(at(ua+half,hr)[0])+','+F(at(ua+half,hr)[1])+
+      '" fill="none" stroke="'+CV("c",u,c)+'" stroke-width="'+F(hw)+'"/>';}
+  } else if(L.t==="pinwheel"){        // a disc cut into n segments, two tinctures about
+   var pr2=R*(L.r||0.4), c2b=col(L.c2===undefined?12:L.c2);
+   for(var v=0;v<n;v++){var a0=BR(v), a1=BR(v+1);
+    out+='<path d="M'+F(cx)+','+F(cy)+' L'+F(at(a0,pr2)[0])+','+F(at(a0,pr2)[1])+
+      ' A'+F(pr2)+','+F(pr2)+' 0 0 1 '+F(at(a1,pr2)[0])+','+F(at(a1,pr2)[1])+'Z" fill="'+(v%2?c2b:c)+'"/>';}
+  } else if(L.t==="segments"){        // a ring cut into n pieces, each its own tincture
+   var s0=R*(L.r0||0.2), s1=R*(L.r1||0.5), cs2=L.cs||[];
+   for(var v2=0;v2<n;v2++){var b0=BR(v2), b1=BR(v2+1);
+    out+='<path d="M'+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+' L'+F(at(b0,s1)[0])+','+F(at(b0,s1)[1])+
+      ' A'+F(s1)+','+F(s1)+' 0 0 1 '+F(at(b1,s1)[0])+','+F(at(b1,s1)[1])+
+      ' L'+F(at(b1,s0)[0])+','+F(at(b1,s0)[1])+
+      ' A'+F(s0)+','+F(s0)+' 0 0 0 '+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+'Z" fill="'+
+      col(cs2.length?cs2[v2%cs2.length]:L.c)+'"/>';}
+  } else if(L.t==="darts"){           // n darts flying outward, barbed as on the plates
+   for(var v3=0;v3<n;v3++){var g0=BR(v3),d0=RR(L,g0,V("r0",v3,0.3)),d1=RR(L,g0,V("r1",v3,0.9)),
+     dw=V("w",v3,0.09), bb=V("barb",v3,0.5);
+    var ux2=Math.cos(g0),uy2=Math.sin(g0),nx2=-uy2,ny2=ux2,W2=dw*R,rb=d0+(d1-d0)*bb;
+    var P=function(rr,off){return [cx+ux2*rr+nx2*off, cy+uy2*rr+ny2*off]};
+    out+=poly([P(d1,0),P(rb,-W2),P(rb,-W2*0.34),P(d0,-W2*0.34),
+               P(d0,W2*0.34),P(rb,W2*0.34),P(rb,W2)],c);}
+  } else if(L.t==="outline"){         // line-art: a stroked shape, no fill
+   var or1=R*(L.r||0.6), on=n||4, op=[];
+   for(var v4=0;v4<on;v4++)op.push(at(BR(v4,on),or1));
+   out+=poly(op,null,c,(L.w||0.02)*R);
+  } else if(L.t==="petals"){          // the shape most of the plates are built from:
+   // n petals springing from an inner radius to a tip, each bounded by two curves.
+   // bow moves the widest part in or out; round>0 gives a blunt tip instead of a point;
+   // stroke draws the outline the painted petals carry.
+   for(var pj=0;pj<n;pj++){
+    var pr0=V("r0",pj,0.10), pr1=V("r1",pj,1),
+        pw=V("w",pj,0.18), bow=V("bow",pj,0.5), rnd=V("round",pj,0),
+        ps=CV("stroke",pj,null), psw=R*V("sw",pj,0.014),
+        swl=V("swirl",pj,0)*TAU;                  // the tip leans this far round
+    var pa=BR(pj), pa2=pa+swl, pam=pa+swl*0.5,
+        PB=L.fit?bound(pa):R, PB2=L.fit?bound(pa2):R, PBM=L.fit?bound(pam):R,
+        pux=Math.cos(pa),puy=Math.sin(pa),
+        pu2x=Math.cos(pa2),pu2y=Math.sin(pa2),
+        pmx=Math.cos(pam),pmy=Math.sin(pam),pnx=-pmy,pny=pmx,
+        i0x=cx+pux*PB*pr0, i0y=cy+puy*PB*pr0,
+        i1x=cx+pu2x*PB2*pr1, i1y=cy+pu2y*PB2*pr1,
+        prm=PBM*(pr0+(pr1-pr0)*bow), phw=pw*R,
+        k1x=cx+pmx*prm+pnx*phw, k1y=cy+pmy*prm+pny*phw,
+        k2x=cx+pmx*prm-pnx*phw, k2y=cy+pmy*prm-pny*phw,
+        t1x=i1x+pnx*phw*rnd, t1y=i1y+pny*phw*rnd,
+        t2x=i1x-pnx*phw*rnd, t2y=i1y-pny*phw*rnd,
+        pd="M"+F(i0x)+","+F(i0y)+"Q"+F(k1x)+","+F(k1y)+" "+F(t1x)+","+F(t1y)+
+           (rnd?"A"+F(phw*rnd)+","+F(phw*rnd)+" 0 0 1 "+F(t2x)+","+F(t2y)
+               :"L"+F(t2x)+","+F(t2y))+
+           "Q"+F(k2x)+","+F(k2y)+" "+F(i0x)+","+F(i0y)+"Z";
+    out+='<path d="'+pd+'" fill="'+gradFill(pj,i0x,i0y,i1x,i1y,CV("c",pj,c))+'"'+
+      (ps?' stroke="'+ps+'" stroke-width="'+F(psw)+'" stroke-linejoin="round"':"")+'/>';}
+  } else if(L.t==="veins"){           // the midrib and side-veins the painted leaves carry
+   for(var vj=0;vj<n;vj++){
+    var vr0=V("r0",vj,0.15), vr1=V("r1",vj,0.9), vw=R*V("w",vj,0.010),
+        vs=V("side",vj,0), vsp=V("spread",vj,0.06),
+        va=BR(vj), VB=L.fit?bound(va):R,
+        vux=Math.cos(va),vuy=Math.sin(va),vnx=-vuy,vny=vux;
+    out+='<path d="M'+F(cx+vux*VB*vr0)+','+F(cy+vuy*VB*vr0)+'L'+F(cx+vux*VB*vr1)+','+F(cy+vuy*VB*vr1)+
+      '" stroke="'+c+'" stroke-width="'+F(vw)+'" fill="none" stroke-linecap="round"/>';
+    for(var vi=1;vi<=vs;vi++){
+     var vt=vr0+(vr1-vr0)*vi/(vs+1), vl=vsp*R*(1-vi/(vs+1));
+     out+='<path d="M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)+vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)+vny*vl)+
+       'M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)-vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)-vny*vl)+
+       '" stroke="'+c+'" stroke-width="'+F(vw*0.8)+'" fill="none" stroke-linecap="round"/>';}}
+  } else if(L.t==="half"){
+   // The devices of Men are not always turned about a centre: Beren's, Haleth's and
+   // the Silmarils' divide the field, dark hills below and sky above. Everything the
+   // layer engine draws is clipped to the field, so a rectangle across the whole box
+   // takes the field's own outline without any shape-by-shape geometry.
+   var hy=(L.at===undefined?0:L.at)*R, hh=R*2.4;
+   out+='<rect x="'+F(cx-R*1.6)+'" y="'+F(L.side==="top"?cy+hy-hh:cy+hy)+
+     '" width="'+F(R*3.2)+'" height="'+F(hh)+'" fill="'+c+'"/>';
+  } else if(L.t==="stripe"){        // a band across the field, between two heights
+   var s0=(L.from===undefined?-0.2:L.from)*R, s1=(L.to===undefined?0.2:L.to)*R;
+   out+='<rect x="'+F(cx-R*1.6)+'" y="'+F(cy+Math.min(s0,s1))+'" width="'+F(R*3.2)+
+     '" height="'+F(Math.abs(s1-s0))+'" fill="'+c+'"/>';
+  } else if(L.t==="hills"){         // a ridge line: n peaks across the field
+   var hb=(L.base===undefined?0.9:L.base)*R, hp=(L.peak===undefined?0.1:L.peak)*R,
+       hn=n||3, pts=[[cx-R*1.6,cy+hb+R*1.2]];
+   pts.push([cx-R*1.6,cy+hb]);
+   for(var hi=0;hi<hn;hi++){
+    var x0=cx-R*1.6+R*3.2*hi/hn, x1=cx-R*1.6+R*3.2*(hi+0.5)/hn, x2=cx-R*1.6+R*3.2*(hi+1)/hn;
+    pts.push([x1,cy+hp+(hi%2?R*0.12:0)]); pts.push([x2,cy+hb]);
+   }
+   pts.push([cx+R*1.6,cy+hb+R*1.2]);
+   out+=poly(pts,c);
+  } else if(L.t==="bands"){           // concentric bands of colour, outermost drawn first
+   var bcs=L.cs||[], bb0=(L.r0===undefined?0:L.r0), bb1=(L.r1===undefined?1:L.r1);
+   for(var bj=bcs.length-1;bj>=0;bj--)
+    out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*(bb0+(bb1-bb0)*(bj+1)/bcs.length))+
+      '" fill="'+col(bcs[bj])+'"/>';
+  } else if(L.t==="scatter"){         // small charges strewn about the field
+   for(var sj=0;sj<n;sj++){
+    var sa=BR(sj), SB=L.fit?bound(sa):R,
+        sk=V("k",sj,"star"), ssz=R*V("size",sj,0.07), srr=V("r",sj,0.78),
+        sac=CV("ac",sj,col(0));
+    window.ARDA_CHARGE_TEXT="";
+    out+=window.ardaChargePath(sk,cx+Math.cos(sa)*SB*srr,cy+Math.sin(sa)*SB*srr,ssz,
+                               CV("c",sj,c),sac);}
+  } else if(L.t==="arcs"){            // stroked arcs: n pieces of a circle, gapped
+   for(var aj=0;aj<n;aj++){
+    var ar=R*V("r",aj,0.6), aw=R*V("w",aj,0.03), gap=V("gap",aj,0.25),
+        a0=BR(aj+gap/2), a1=BR(aj+1-gap/2),
+        q0=at(a0,ar), q1=at(a1,ar);
+    out+='<path d="M'+F(q0[0])+','+F(q0[1])+'A'+F(ar)+','+F(ar)+' 0 0 1 '+F(q1[0])+','+F(q1[1])+
+      '" fill="none" stroke="'+CV("c",aj,c)+'" stroke-width="'+F(aw)+'" stroke-linecap="'+(L.cap||"butt")+'"/>';}
+  } else if(L.t==="charge"){
+   var chr=R*(L.r||0), cha=(L.a===undefined?-0.25:L.a)*TAU, ctr=chr?at(cha,chr):[cx,cy];
+   window.ARDA_CHARGE_TEXT=L.text||"";
+   // a course may name its own letter; three tengwar in a row are three DIFFERENT
+   // tengwar, which they were not while these were read once per device
+   var _ps=window.ARDA_TENGWA_SER,_pg=window.ARDA_TENGWA_GRADE,_pc=window.ARDA_TENGWA_CLOSED;
+   if(L.tser!==undefined)window.ARDA_TENGWA_SER=L.tser;
+   if(L.tgrade!==undefined)window.ARDA_TENGWA_GRADE=L.tgrade;
+   if(L.tclosed!==undefined)window.ARDA_TENGWA_CLOSED=L.tclosed;
+   var g=window.ardaChargePath(L.k||"star",ctr[0],ctr[1],R*(L.size||0.3),c,col(L.ac===undefined?1:L.ac));
+   window.ARDA_TENGWA_SER=_ps;window.ARDA_TENGWA_GRADE=_pg;window.ARDA_TENGWA_CLOSED=_pc;
+   // Durin's crown and the Steward's seal are drawn as LINE on the plates, not as
+   // colour. A charge given an outline is wrapped in a group carrying it: the charge
+   // paths set their own fill and no stroke, so they inherit this one.
+   if(L.stroke!==undefined)
+    g='<g stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round" '+
+      'stroke-linecap="round" fill-rule="evenodd">'+g+'</g>';
+   out+=L.rot?'<g transform="rotate('+F((L.rot||0)*360)+' '+F(ctr[0])+' '+F(ctr[1])+')">'+g+'</g>':g;
+  }
+  // Mirroring. A course drawn on one side of the device is reflected about the vertical
+  // line through its centre, so a device may be built as a DRAWING rather than as a
+  // turning pattern. Tolkien's naturalistic plates are made this way: Idril's cornflower
+  // is two-fold about that line and nothing evenly spaced will ever answer it.
+  if(L.mirror){
+   var piece=out.slice(MARK);
+   out+='<g transform="translate('+F(cx*2)+',0) scale(-1,1)">'+piece+'</g>';
+  }
+  // A course may be set OFF the centre. Every course turns about the middle of the
+  // field, which is right for the Elvish devices and wrong for others: Glorfindel's
+  // sun sits a quarter of the field above centre on his plate, and there was no way
+  // to say so. ox and oy are fractions of R, positive right and down.
+  // NOTE fit: is measured from the TRUE centre, before this move.
+  if(GRADS){ out=out.slice(0,MARK)+'<defs>'+GRADS+'</defs>'+out.slice(MARK); GRADS=""; }
+  if(L.ox||L.oy){
+   var moved=out.slice(MARK);
+   out=out.slice(0,MARK)+'<g transform="translate('+F((L.ox||0)*R)+','+F((L.oy||0)*R)+')">'+
+       moved+'</g>';
+  }
+ });
+ return out;
+};
 
 // ===================== the layer engine =====================
 // The plates in Forodrim are built as stacks of concentric bands -- a field, then ring
