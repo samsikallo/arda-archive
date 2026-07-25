@@ -641,6 +641,21 @@
    ]
   },
   {
+   "file": "heraldry/durin.svg",
+   "exists": true,
+   "device": "durin",
+   "label": "Emblem of Durin",
+   "tier": 2,
+   "basis": "a freely-licensed recreation of a device Tolkien designed",
+   "source": "https://commons.wikimedia.org/wiki/File:Emblema_Durin.svg",
+   "licence": "CC BY-SA 3.0",
+   "author": "Rondador, after Wappen Neuenstein (Hohenlohe).svg",
+   "publishable": true,
+   "withdrawn": null,
+   "sha1": "1b858f470abecd71",
+   "size": null
+  },
+  {
    "file": "beor.png",
    "exists": true,
    "device": "beor",
@@ -988,7 +1003,7 @@
    "source": "map/gen_forge_layers.py",
    "licence": "the archive's own",
    "publishable": true,
-   "shown": true
+   "shown": false
   },
   {
    "file": null,
