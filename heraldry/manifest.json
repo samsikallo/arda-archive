@@ -168,11 +168,19 @@
  {
   "key": "finwe",
   "label": "Lozenge of Finwë",
-  "file": "heraldry/finwe.png",
-  "src": "https://commons.wikimedia.org/wiki/File:Finw%C3%AB_Lozenge.png",
-  "license": "CC BY-SA 4.0",
-  "author": "Robin S. Taylor",
-  "ok": true
+  "file": "heraldry/illustrated/finwe.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "ok": true,
+  "superseded_commons": {
+   "file": "heraldry/finwe.png",
+   "src": "https://commons.wikimedia.org/wiki/File:Finw%C3%AB_Lozenge.png",
+   "license": "CC BY-SA 4.0",
+   "author": "Robin S. Taylor",
+   "why": "a green field Tolkien never used, and straight spikes where his own drawing has curved flames; the illustrated sheet has the flames and the finely-rayed centre"
+  },
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner."
  },
  {
   "key": "harp",
@@ -220,5 +228,155 @@
   "author": "Blason_des_Terres_australes_et_antarctiques_françaises.svg:",
   "ok": false,
   "withdrawn": "withdrawn 2026-07-24: no device for this house is recorded anywhere. The artwork was an invention."
+ },
+ {
+  "key": "beor",
+  "label": "Device of Beor",
+  "file": "heraldry/illustrated/beor.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "beren",
+  "label": "Device of Beren",
+  "file": "heraldry/illustrated/beren.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "earendil",
+  "label": "Device of Earendil",
+  "file": "heraldry/illustrated/earendil.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "thingol",
+  "label": "Device of Elu Thingol",
+  "file": "heraldry/illustrated/thingol.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "feanordev",
+  "label": "Device of Feanor",
+  "file": "heraldry/illustrated/feanordev.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "finarfin",
+  "label": "Device of Finarfin",
+  "file": "heraldry/illustrated/finarfin.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "fingolfin",
+  "label": "Device of Fingolfin",
+  "file": "heraldry/illustrated/fingolfin.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "finrod",
+  "label": "Device of Finrod Felagund",
+  "file": "heraldry/illustrated/finrod.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "gilgalad",
+  "label": "Device of Gil-galad",
+  "file": "heraldry/illustrated/gilgalad.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "hador",
+  "label": "Device of Hador",
+  "file": "heraldry/illustrated/hador.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "haleth",
+  "label": "Device of Haleth",
+  "file": "heraldry/illustrated/haleth.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "idril",
+  "label": "Device of Idril Celebrindal",
+  "file": "heraldry/illustrated/idril.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "luthien",
+  "label": "Device of Luthien",
+  "file": "heraldry/illustrated/luthien.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "luthien2",
+  "label": "Second device of Luthien",
+  "file": "heraldry/illustrated/luthien2.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
+ },
+ {
+  "key": "melian",
+  "label": "Device of Melian",
+  "file": "heraldry/illustrated/melian.png",
+  "src": "supplied to the workshop, 2026-07-25",
+  "license": "unattributed; rights confirmed by the site's owner",
+  "author": "unattributed",
+  "basis_note": "supplied to the workshop 2026-07-25 as an illustrated sheet; cropped to the device by map/gen_illustrated_devices.py. Rights confirmed by the site's owner.",
+  "ok": true
  }
 ]
