@@ -1,5 +1,5 @@
 /* heraldry.js — canonical Tolkien devices (Wikimedia Commons recreations, CC BY-SA/PD, attributed) + interpretive fallbacks */
-window.ARDA_HERALD={"finwehouse": {"label": "House of Finwë — the Winged Sun", "cat": "Eldar", "sub": "The House of Finwë", "forge": {"shape": "square", "points": 16, "pstyle": "ray", "pc": 1, "field": 2, "cc": 1, "ac": 44, "rings": 2, "mandala": 16, "mstyle": "ray", "mc": 1, "mrad": 0.4, "mlen": 0.34, "charge": "wingedsun", "csize": 0.5, "gems": 0}, "blazon": "Azure, a winged sun or within sixteen rays — the House of Finwë. Tolkien’s note reads ‘Winged Sun / House of Finwe / descending to High Kings / Fingolfin - Fingon - Turgon. Those descended from Finarphin used blue star’. Sixteen points: the great ancestor of the house, and a square, being the emblem of a family rather than a person.", "author": "Tolkien’s square device for the House of Finwë (Winged Sun, sixteen rays)", "canon": false, "basis": "design", "fdm": "The same design tipped forty-five degrees to make a square, which is the shape of a house rather than a man — the device of the High Kings of the Noldor, descending from Finwe to Fingolfin, Fingon and Turgon."}, "finwe": {"file": "heraldry/finwe.png", "label": "Lozenge of Finwë", "canon": true, "blazon": "A lozenge of sixteen rays, a winged sun upon it — Finwe, first King of the Noldor. Sixteen points reach the rim: the highest rank the rules allow, kept for the eldest of the Quendi.", "src": "https://commons.wikimedia.org/wiki/File:Finw%C3%AB_Lozenge.png", "license": "CC BY-SA 4.0", "author": "Robin S. Taylor", "cat": "Eldar", "sub": "The House of Finwë", "basis": "artwork", "fdm": "Björkman reads the winged sun as the deliberate opposite of Elwe's winged moon: both kings set out on the Great Journey, but Finwe came to Aman and dwelt in the light of the Trees, while Elwe was held in Middle-earth under the stars. Finwe's yellow and red are echoed in the devices of his three sons."}, "feanor": {"file": "heraldry/feanor.svg", "label": "Star of the House of Fëanor", "canon": true, "blazon": "An eight-rayed star (Rill of Fëanor) — the House of Fëanor", "src": "https://commons.wikimedia.org/wiki/File:Etoile_de_Feanor.svg", "license": "CC BY-SA 4.0", "author": "El Bey Effendi", "cat": "Eldar", "sub": "The House of Finwë", "basis": "artwork", "fdm": "Björkman notes that the Star of Feanor on the West-gate of Moria has eight rays and eight spikes arranged as in Feanor's own heraldic device, so that one was surely drawn from the other; and that it was properly silver."}, "feanordev": {"label": "Fëanor — his own device", "cat": "Eldar", "sub": "The House of Finwë", "forge": {"shape": "lozenge", "points": 8, "pstyle": "ray", "pc": 30, "field": 0, "cc": 43, "ac": 1, "rings": 1, "mandala": 8, "mstyle": "flame", "mc": 43, "mrad": 0.52, "mlen": 0.3, "charge": "star", "csize": 0.26, "gems": 8, "grad": 0.76, "gc": 1}, "blazon": "Gules, a flame or within eight rays — Fëanor’s own device, tagged ‘Fëanor’ on the manuscript. Kin to his father’s design, but its flames answer to his name, Spirit of Fire; the coloured pieces about it are read as the making of the Silmarils and his crystals. Distinct from the eight-rayed Star of his House upon the Doors of Durin.", "author": "Tolkien’s 1960 device tagged ‘Fëanor’", "canon": false, "basis": "design", "fdm": "The flames run from the centre outward, which answers his name, Spirit of Fire. Björkman reads the coloured fields about the Silmaril as the art of making crystal, which was Feanor's invention — noting that the same flames appear in Fingolfin's device, where no such reading is possible."}, "fingolfin": {"label": "Banners of Fingolfin", "canon": false, "blazon": "Azure, a star of crystal within eight rayed points, flames of gold about it — Fingolfin and his house. His shield bore ‘field of heaven’s blue and star of crystal shining pale afar’; Tolkien’s own device sets stars upon blue with flames like Fëanor’s. Eight points: a king.", "author": "reconstructed to Tolkien’s rules from his device for Fingolfin and his shield in the Lay of Leithian", "cat": "Eldar", "sub": "The House of Finwë", "forge": {"shape": "lozenge", "points": 8, "pstyle": "ray", "pc": 0, "field": 34, "cc": 0, "ac": 1, "rings": 2, "mandala": 8, "mstyle": "flame", "mc": 0, "mrad": 0.5, "mlen": 0.26, "charge": "star", "csize": 0.32, "gems": 8, "grad": 0.76, "gc": 1, "goff": 0.3927}, "basis": "design", "fdm": "Björkman derives the blue and silver banners named in the Silmarillion from this device's silver stars on blue. Eight points, as in the devices of all three sons of Finwe."}, "finarfin": {"label": "Finarfin", "canon": false, "blazon": "Argent, two serpents with eyes of emerald meeting beneath a crown of golden flowers, that the one upholds and the other devours — the badge of Finarfin and his house, borne on the Ring of Barahir (Lay of Leithian). Calmer than his brothers’ fiery devices. Eight points: a king.", "author": "reconstructed from the Ring of Barahir passage, which Tolkien names the badge of Finarfin and his house", "cat": "Eldar", "sub": "The House of Finwë", "forge": {"shape": "lozenge", "points": 8, "pstyle": "ray", "pc": 1, "field": 0, "cc": 1, "ac": 44, "rings": 1, "mandala": 12, "mstyle": "petal", "mc": 1, "mrad": 0.74, "mlen": 0.16, "mwid": 0.07, "charge": "serpents", "csize": 0.6, "gems": 0}, "basis": "design", "fdm": "The fire-rays are calmer than his brothers', and Björkman reads the difference as the parting itself: Finarfin turned back at the rebellion of the Noldor and stayed in Aman. The device was used by his heirs after him, and Finrod above all."}, "fingon": {"label": "Fingon the Valiant", "canon": false, "blazon": "Azure, a star argent within eight points — Fingon the Valiant, High King of the Noldor. Tolkien’s note on the House of Finwë has the device ‘descending to High Kings Fingolfin - Fingon - Turgon’; six texts give his banners blue and silver, though others make them plain argent.", "author": "reconstructed to Tolkien’s rules from the House of Finwë descent-note and the banner texts", "cat": "Eldar", "sub": "The House of Finwë", "forge": {"shape": "lozenge", "points": 8, "pstyle": "ray", "pc": 0, "field": 2, "cc": 0, "ac": 7, "rings": 1, "mandala": 8, "mstyle": "lens", "mc": 7, "mrad": 0.5, "mlen": 0.26, "mwid": 0.1, "charge": "star", "csize": 0.36, "gems": 0}, "basis": "inferred"}, "finrod": {"label": "Finrod Felagund", "canon": false, "blazon": "Vert, a harp or and a flaming torch — Finrod Felagund. Alone of the Elvish devices this one is not symmetrical, and its colours are earthen rather than jewelled.", "author": "reconstructed from Tolkien’s device for Finrod (harp and torch) and Silm. ch.17", "cat": "Eldar", "sub": "The House of Finwë", "forge": {"shape": "lozenge", "points": 4, "pstyle": "ray", "pc": 1, "field": 37, "cc": 1, "ac": 40, "rings": 1, "mandala": 0, "charge": "harp", "csize": 0.6, "charge2": "torch", "repeat": 2, "srad": 0.62, "ssize": 0.22, "c2c": 43}, "basis": "design", "fdm": "Björkman reads the asymmetry and the earth-colours as the mark of a Mannish hand: the harp and torch recall Finrod walking the woods of East Beleriand and coming upon the first Men playing, and the device may have been made for him by one of the people of Beor."}, "finrodbadge": {"label": "Finrod's badge — a crown of golden flowers", "cat": "Eldar", "sub": "The House of Finwë", "canon": false, "basis": "design", "blazon": "Azure, a crown of golden flowers — the badge borne by Finrod Felagund beside his device of harp and torch. The golden flowers are the mark of his father's house.", "author": "Björkman records the badge; its motive he relates to the device of Finarfin", "fdm": "'Finrod also used a badge that depicted a crown of golden flowers. The motive of the badge was probably directly or indirectly related to the device of Finarfin.'", "forge": {"shape": "lozenge", "field": 2, "cc": 1, "ac": 14, "charge": "crownflowers", "csize": 0.62, "points": 4, "pstyle": "ray", "pc": 1, "rings": 1}}, "galadriel": {"label": "Galadriel of Lórien", "canon": false, "blazon": "Azure, a blue star within a garland of golden flowers, in a circle — Galadriel. Tolkien left her no device; his note on the House of Finwë says ‘those descended from Finarphin used blue star’, and a woman’s design is set within a circle. The golden flowers are her father’s house; the name Alatáriel is ‘maiden crowned with a radiant garland’. Six points: a queen.", "author": "interpretive: built from Tolkien’s ‘blue star’ descent-note and his circle-for-women rule", "cat": "Eldar", "sub": "The House of Finwë", "forge": {"shape": "circle", "points": 6, "pstyle": "leaf", "pc": 1, "field": 2, "cc": 13, "ac": 1, "rings": 2, "mandala": 12, "mstyle": "petal", "mc": 1, "mrad": 0.56, "mlen": 0.28, "mwid": 0.11, "charge": "star", "csize": 0.3, "gems": 6, "grad": 0.74, "gc": 13}, "basis": "inferred", "fdm": "Björkman records no device for her; this remains the archive's own, built to the rule that a woman's device is set within a circle."}, "thingol": {"label": "Elwë Thingol of Doriath", "canon": false, "blazon": "Sable, a winged moon argent among stars — Elwe Singollo, called Elu Thingol. Eight points reach the rim: half the sixteen of Finwe.", "author": "reconstructed from Tolkien’s manuscript note ‘Winged Moon / a black with stars / Elwë’", "cat": "Eldar", "sub": "Doriath & the Sindar", "forge": {"shape": "lozenge", "points": 8, "pstyle": "ray", "pc": 26, "field": 4, "cc": 26, "ac": 27, "rings": 0, "charge": "wingedmoon", "csize": 0.6, "charge2": "star", "repeat": 8, "srad": 0.7, "ssize": 0.085, "c2c": 29, "gems": 0}, "basis": "design", "fdm": "The antipole of Finwe's winged sun. Björkman reads the black field sown with stars as Middle-earth itself before the Sun and Moon, lit only by the stars of Elbereth, where Elwe was held by Melian's enchantment while Finwe passed into the light of Aman."}, "melian": {"label": "Melian the Maia", "canon": false, "blazon": "Vert, a single flower of Telperion argent, in a circle — Melian the Maia, Queen of Doriath. Tolkien drew her one of the most intricate of all the devices, read as her Maian nature mirroring the light of the West; and the texts name her seal exactly — the lembas she sent to Beleg was ‘sealed at the knots with the seal of the Queen, a wafer of white wax shaped as a single flower of Telperion’. Eight points: a queen.", "author": "interpretive: built to Tolkien’s circle-for-women rule, following the flowered kinship noted between Lúthien’s device and her mother’s", "cat": "Eldar", "sub": "Doriath & the Sindar", "forge": {"shape": "circle", "points": 8, "pstyle": "leaf", "pc": 34, "field": 32, "cc": 34, "ac": 33, "rings": 2, "mandala": 8, "mstyle": "lens", "mc": 35, "mrad": 0.58, "mlen": 0.3, "mwid": 0.13, "charge": "flower", "csize": 0.36, "gems": 8, "grad": 0.76, "gc": 34, "ic": 34}, "basis": "design", "fdm": "Björkman calls hers the most complex of all the devices, and notes the one thing that breaks the rules: within the circle that marks a woman is set a lozenge, which is a man's escutcheon. He reads it as a Maia's power to choose the raiment and the sex she wears. Its stars answer her husband's device and its flowers her daughter's; and it may be her seal itself, which was 'a single flower of Telperion'."}, "luthien": {"label": "Lúthien Tinúviel", "canon": false, "blazon": "Sable, white petals and stars about a golden sun-flower, in a circle — Lúthien Tinúviel. She is the one character Tolkien gave two devices, for her double kindred: this follows the one with white petals and stars upon black, which stands closest to her father Thingol’s. The white flowers are the niphredil that sprang at her birth; the sun-flower may be elanor. Six points.", "author": "reconstructed from Tolkien’s second device for Lúthien (white petals and stars on black)", "cat": "Eldar", "sub": "Doriath & the Sindar", "forge": {"shape": "circle", "points": 6, "pstyle": "leaf", "pc": 12, "field": 4, "cc": 1, "ac": 12, "rings": 1, "mandala": 8, "mstyle": "petal", "mc": 12, "mrad": 0.56, "mlen": 0.32, "mwid": 0.14, "charge": "elanor", "csize": 0.34, "charge2": "star", "repeat": 8, "srad": 0.74, "ssize": 0.075, "c2c": 12, "gems": 8, "grad": 0.66, "gc": 1}, "basis": "design", "fdm": "She is the only person known to have borne two devices, both flowered. This is the starred one, closest to her father's. Björkman counts no more than four points in either, which is the rank of a princess of Doriath; in this one the four white flowers each stand for a point."}, "luthien2": {"label": "Lúthien Tinúviel — her flowered device", "cat": "Eldar", "sub": "Doriath & the Sindar", "forge": {"shape": "circle", "points": 6, "pstyle": "leaf", "pc": 12, "field": 39, "cc": 1, "ac": 12, "rings": 2, "mandala": 12, "mstyle": "lens", "mc": 12, "mrad": 0.6, "mlen": 0.28, "mwid": 0.12, "charge": "elanor", "csize": 0.38, "gems": 6, "grad": 0.78, "gc": 1}, "blazon": "Vert, a sun-flower or among white flowers — Lúthien Tinúviel, her second device. She is the only character Tolkien gave two, for her double kindred: this is the flowered one, which stands closest to her mother Melian’s. The white flowers are the niphredil that sprang at her birth; the sun-like flower may be elanor.", "author": "Tolkien’s first (flowered) device for Lúthien, kin to Melian’s", "canon": false, "basis": "design", "fdm": "The first of her two devices, and the one nearest her mother's: white niphredil, the flower that sprang at her birth, about what may be an elanor. Björkman notes its four points fall at the quarters — northeast, northwest, southeast and southwest."}, "turgon": {"label": "House of the King — Turgon", "canon": false, "blazon": "White, gold and red, and the emblems the moon and the sun and the scarlet heart — the House of the King. Tolkien: 'Mighty was the array of the house of the king and their colours were white and gold and red, and their emblems the moon and the sun and the scarlet heart.'", "author": "drawn to Tolkien's words -- the moon and the sun and the scarlet heart, all three", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "text", "tolkien": "their colours were white and gold and red, and their emblems the moon and the sun and the scarlet heart", "fdm": "Björkman groups the three emblems into a single device, allowing that the house may as well have borne three; and reads the heart as the heart of Fingolfin, Turgon's father, buried north of the city.", "forge": {"shape": "shield", "field": 28, "cc": 30, "ac": 29, "points": 0, "rings": 0, "charge": "moonsunheart", "csize": 0.62}}, "tuor": {"file": "heraldry/tuor.svg", "label": "House of the White Wing — Tuor", "canon": true, "blazon": "The emblem of the White Wing upon the shield, and wings as of swans or gulls upon the helm — the House of the Wing, the stoutest of the King's folk, which Tuor came to lead. Tolkien: 'all these wore wings as it were of swans or gulls upon their helms, and the emblem of the White Wing was upon their shields.'", "src": "https://commons.wikimedia.org/wiki/File:Bar-en-Alphram.svg", "license": "CC BY-SA 3.0", "author": "Heraldic_displayed_Swan.svg: Shadowxfox\nEscudo_Gondor.svg: *", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "artwork", "tolkien": "all these wore wings as it were of swans or gulls upon their helms, and the emblem of the White Wing was upon their shields", "fdm": "Of this kind were the shield and helm that Tuor found waiting in Vinyamar, left there at Ulmo's command, which marked him for the house before ever he came to the city. The blue field is Björkman's."}, "maeglin": {"file": "heraldry/maeglin.svg", "label": "House of the Mole — Maeglin", "canon": false, "blazon": "Sable, and no sign nor emblem at all — the House of the Mole. Tolkien: 'sable was their harness, and they bore no sign or emblem, but their round caps of steel were covered with moleskin, and they fought with axes two-headed like mattocks.' The blank field is the device.", "src": "https://commons.wikimedia.org/wiki/File:House_of_the_Mole.svg", "license": "Public domain", "author": "Escudo_Gondor.svg: *Escudo_Gondor.png: Vëon Menelion\nderivat", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "text", "tolkien": "sable was their harness, and they bore no sign or emblem", "fdm": "Björkman sets the bare sable beside Morgoth's shield, which was likewise unblazoned — and it was Maeglin who betrayed the city to him.", "forge": {"shape": "shield", "field": 4, "cc": 4, "ac": 4, "charge": "none", "points": 0, "rings": 0}}, "swallow": {"file": "heraldry/swallow.svg", "label": "House of the Swallow", "canon": true, "blazon": "An arrowhead upon the shield; the folk arrayed in white and dark blue and in purple and black, a fan of feathers upon their helms — the House of the Swallow, under Duilin, surest of archers. Tolkien: 'the folk of the Swallow bore a fan of feathers on their helms, and they were arrayed in white and dark blue and in purple and black and showed an arrowhead on their shields.'", "src": "https://commons.wikimedia.org/wiki/File:Bar-en-Duilin.svg", "license": "CC BY-SA 3.0", "author": "Héraldique_meuble_Flèche.svg: User:Orror\nEscudo_Gondor.svg:", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "artwork", "tolkien": "showed an arrowhead on their shields", "fdm": "Björkman reads the swallow as the arrow itself — swift through the air and always finding its mark."}, "egalmoth": {"file": "heraldry/egalmoth.svg", "label": "House of the Heavenly Arch — Egalmoth", "canon": true, "blazon": "Of the blue of the heavens, the boss a jewel built of seven gems — ruby, amethyst, sapphire, emerald, chrysoprase, topaz and amber — the House of the Heavenly Arch, under Egalmoth, with an opal of great size set in their helms. Tolkien: 'Every shield of that battalion was of the blue of the heavens and its boss a jewel built of seven gems.'", "src": "https://commons.wikimedia.org/wiki/File:House_of_the_Heavenly_Arch.svg", "license": "CC BY-SA 3.0", "author": "Rondador", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "artwork", "tolkien": "Every shield of that battalion was of the blue of the heavens and its boss a jewel built of seven gems, rubies and amethysts and sapphires, emeralds, chrysoprase, topaz, and amber", "fdm": "Björkman takes the Heavenly Arch for the rainbow and sets the seven stones in its order, assuming the topaz yellow to complete the gradient; he says plainly that the arrangement is his own. Tolkien gives the stones, not their placing."}, "pillar": {"label": "House of the Pillar — Penlod", "canon": false, "blazon": "No device is recorded. Of this house Tolkien says only that Penlod, tallest of Gnomes, marshalled it together with the Tower of Snow, and that many of its men fell about him in a lane with his back to the wall. Neither charge nor colour is given anywhere.", "author": "nothing is recorded; the field is left bare rather than invented", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "silent", "tolkien": "There too were the folk of the Pillar and of the Tower of Snow, and both these kindreds were marshalled by Penlod, tallest of Gnomes", "fdm": "Björkman is explicit: 'The House of the Pillar and The House of the Tower of Snow were both lead by Penlod. No hint whatsoever is given regarding their attributes.' THE HALL SHOWED A GOLD PILLAR ON RED UNTIL NOW, badged as Tolkien's device. It was nobody's.", "forge": {"shape": "shield", "field": 0, "cc": 0, "ac": 0, "charge": "none", "points": 0, "rings": 0}}, "towersnow": {"label": "House of the Tower of Snow — Penlod", "canon": false, "blazon": "No device is recorded. Penlod led this house with the Pillar, and no charge, colour or emblem is given for it in any text.", "author": "nothing is recorded; the field is left bare rather than invented", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "silent", "tolkien": "both these kindreds were marshalled by Penlod, tallest of Gnomes", "fdm": "'No hint whatsoever is given regarding their attributes' (Björkman). THE HALL SHOWED A WHITE PEAK HERE UNTIL NOW, badged as Tolkien's device.", "forge": {"shape": "shield", "field": 0, "cc": 0, "ac": 0, "charge": "none", "points": 0, "rings": 0}}, "housetree": {"label": "House of the Tree — Galdor", "canon": false, "blazon": "Vert, and no emblem recorded — the House of the Tree, under Galdor, held the most valiant of all the Gondothlim save Turgon alone. Tolkien gives the house its colour and its weapons, and no device: 'There were those of the Tree, and they were a great house, and their raiment was green. They fought with iron-studded clubs or with slings.'", "author": "the green is Tolkien's; the field is left bare because he records no charge", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "silent", "tolkien": "There were those of the Tree, and they were a great house, and their raiment was green", "fdm": "Björkman records the same: of this house he says only that it 'was lead by Galdor and its members were dressed in green'. THE HALL SHOWED A WHITE TREE HERE UNTIL NOW, which no text gives.", "forge": {"shape": "shield", "field": 37, "cc": 37, "ac": 37, "charge": "none", "points": 0, "rings": 0}}, "glorfindel": {"label": "House of the Golden Flower — Glorfindel", "canon": false, "blazon": "A rayed sun upon the shield — the House of the Golden Flower, under Glorfindel, whose mantle was broidered in gold and diapered with celandine as a field in spring. Tolkien: 'the house of the Golden Flower who bore a rayed sun upon their shield'.", "author": "drawn to Tolkien's words in the muster of the houses", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "text", "tolkien": "There stood the house of the Golden Flower who bore a rayed sun upon their shield", "fdm": "Björkman also gives the house a rayed sun, and chooses its green field from the house's name and from Glorfindel's mantle, 'diapered with celandine as a field in spring'. THE HALL SHOWED A ROSE HERE UNTIL NOW: the golden flower of the house's name is not its charge, and Tolkien says what the charge was.", "forge": {"shape": "shield", "field": 37, "cc": 29, "ac": 44, "charge": "rayedsun", "csize": 0.54, "points": 0, "rings": 0}}, "ecthelion": {"label": "House of the Fountain — Ecthelion", "canon": false, "blazon": "Argent, a fountain — the House of the Fountain, under Ecthelion who slew Gothmog. Tolkien gives the house no emblem: 'silver and diamonds were their delight; and swords very long and bright and pale did they wield, and they went into battle to the music of flutes.' The fountain is read from the name.", "author": "interpretive: no emblem is recorded, and the charge is read from the house's name", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "inferred", "tolkien": "silver and diamonds were their delight; and swords very long and bright and pale did they wield, and they went into battle to the music of flutes", "fdm": "Björkman likewise records no device, saying only that the house 'enjoyed silver and diamonds, whose glitter and colour no doubt influenced their emblem'.", "forge": {"shape": "shield", "field": 32, "cc": 7, "ac": 13, "charge": "fountain", "csize": 0.6, "points": 0, "rings": 0}}, "harp": {"file": "heraldry/harp.svg", "label": "House of the Harp", "canon": true, "blazon": "Sable, a harp argent — the House of the Harp; but Salgant their lord bore his of gold. Tolkien: 'a harp of silver shone in their blazonry upon a field of black; but Salgant bore one of gold.'", "src": "https://commons.wikimedia.org/wiki/File:House_of_the_Harp.svg", "license": "Public domain", "author": "Coat_of_arms_of_Ireland.svg: Tonyjeff, based on national sym", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "artwork", "tolkien": "a harp of silver shone in their blazonry upon a field of black; but Salgant bore one of gold", "fdm": "Björkman notes the house shares the black of the Mole, and wonders whether Maeglin's influence over Salgant — who fawned on him — reached even to the colour of his shield."}, "hammerwrath": {"file": "heraldry/hammerwrath.svg", "label": "House of the Hammer of Wrath", "canon": true, "blazon": "The Stricken Anvil, and a hammer that smiteth sparks about it — the House of the Hammer of Wrath, under Rog, smiths who fought with great maces and reverenced Aule above all. Tolkien: 'The sign of this people was the Stricken Anvil, and a hammer that smiteth sparks about it was set on their shields, and red gold and black iron was their delight.'", "src": "https://commons.wikimedia.org/wiki/File:Bar-en-Damba.svg", "license": "CC BY-SA 3.0", "author": "Emblema_Durin.svg: *Wappen_Neuenstein_(Hohenlohe).svg: unbek", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "artwork", "tolkien": "The sign of this people was the Stricken Anvil, and a hammer that smiteth sparks about it was set on their shields, and red gold and black iron was their delight", "fdm": "No colour is given for the field; Björkman takes his clue, as this hall does, from 'red gold and black iron was their delight'."}, "idril": {"label": "Idril Celebrindal", "canon": false, "blazon": "Sable, twelve cornflowers celestial, in a circle — Idril Celebrindal. Tolkien titled the drawing ‘Menelluin Irildeo Ondolindello’, ‘Cornflower of Idril from Gondolin’, and noted it the origin of the later Númenórean circular patterns. Twelve points reaching the rim declare her rank as a king’s daughter.", "author": "reconstructed from Tolkien’s Cornflower device for Idril and his own title for it", "cat": "Eldar", "sub": "The Houses of Gondolin", "forge": {"shape": "circle", "points": 12, "pstyle": "leaf", "pc": 26, "field": 34, "cc": 26, "ac": 12, "rings": 2, "mandala": 12, "mstyle": "petal", "mc": 26, "mrad": 0.58, "mlen": 0.32, "mwid": 0.13, "charge": "cornflower", "csize": 0.4, "gems": 12, "grad": 0.76, "gc": 12}, "basis": "design", "fdm": "Björkman notes the inscription found with it — Menelluin Irildeo Ondolindello, 'Cornflower of Idril from Gondolin' — and suggests Menelluin, literally 'sky-blue', may be the device's own name. Twelve points: a High King's daughter. He records that the device was carried from Gondolin to Numenor, where it shaped many later designs, and thence to Gondor by Elendil."}, "gilgalad": {"label": "Gil-galad, High King", "canon": false, "blazon": "Azure, twelve stars argent — Gil-galad, whose name is ‘Star of Radiance’. A drawing of 1960 gives him twelve stars on blue; the Fall of Gil-galad has ‘the countless stars of heaven’s field were mirrored in his silver shield’, and the Shibboleth calls his shield overlaid with silver and set with white stars. Eight points: a king.", "author": "reconstructed from Tolkien’s 1960 device (azure, twelve stars argent) and the Fall of Gil-galad", "cat": "Eldar", "sub": "Gil-galad & the Half-elven", "forge": {"shape": "lozenge", "points": 8, "pstyle": "ray", "pc": 12, "field": 34, "cc": 12, "ac": 26, "rings": 1, "mandala": 0, "charge": "star", "csize": 0.26, "charge2": "star", "repeat": 12, "srad": 0.6, "ssize": 0.13, "c2c": 12, "gems": 0}, "basis": "design", "fdm": "Björkman reads the star-sown sky as his name, Radiant Star, and the line of the Fall of Gil-galad: 'The countless stars of heaven's field / were mirrored in his silver shield.'"}, "earendil": {"label": "Eärendil the Mariner", "canon": false, "blazon": "Azure, a Silmaril within six rays, and six answering them — Earendil the Mariner, twelve points in all; the moon in her phases in the corners.", "author": "reconstructed from Tolkien’s Eärendil devices, which derive from the Finarfin blue star", "cat": "Eldar", "sub": "Gil-galad & the Half-elven", "forge": {"shape": "lozenge", "points": 6, "pstyle": "ray", "pc": 12, "field": 34, "cc": 12, "ac": 26, "rings": 2, "mandala": 6, "mstyle": "ray", "mc": 26, "mrad": 0.44, "mlen": 0.34, "charge": "silmaril", "csize": 0.32, "gems": 6, "grad": 0.72, "gc": 12}, "basis": "design", "fdm": "Björkman counts six beams of light from the Silmaril and six more running against them, twelve points in all — the same count as Idril's, his mother, and on the same blue field. The moons in the dark corners are the one thing that keeps the device from perfect symmetry, which he reads as the mark of the Half-elven."}, "elrond": {"label": "Elrond of Imladris", "canon": false, "blazon": "Argent, a star of silver — the house of Elrond. The sons of Elrond came to Minas Tirith with ‘a banner of silver’, and Vingilot, the ship of Elrond’s father Eärendil, bore silver banners; plain argent is a token of that descent rather than a blazoned charge. Six points.", "author": "interpretive: built from the silver banner of Elrond’s sons and Vingilot’s silver banners", "cat": "Eldar", "sub": "Gil-galad & the Half-elven", "forge": {"shape": "lozenge", "points": 6, "pstyle": "ray", "pc": 7, "field": 0, "cc": 7, "ac": 13, "rings": 2, "mandala": 12, "mstyle": "lens", "mc": 13, "mrad": 0.54, "mlen": 0.26, "mwid": 0.1, "charge": "star", "csize": 0.3, "gems": 6, "grad": 0.74, "gc": 7}, "basis": "inferred"}, "silmarilsdev": {"label": "Emblem of the Silmarils", "cat": "Eldar", "sub": "Jewels & Emblems of the Elder Days", "forge": {"shape": "square", "points": 0, "field": 37, "cc": 36, "ac": 1, "rings": 2, "mandala": 12, "mstyle": "ray", "mc": 1, "mrad": 0.38, "mlen": 0.36, "charge": "tree", "csize": 0.56, "charge2": "silmaril", "repeat": 3, "srad": 0.6, "ssize": 0.16, "c2c": 12, "pc": 1}, "blazon": "Sable, the Tree Laurelin or, three Silmarils argent — the emblem of the Silmarils themselves. Tolkien’s note calls it ‘Ancient Emblem representing one derivation of the Silmarils from the light of the trees upon Ezellohar’. It is the only device he made for a thing rather than a person, and so is set within a square.", "author": "Tolkien’s device for the Silmarils, with his own note upon it", "canon": false, "basis": "design", "fdm": "The only device known for a thing and not a person. Björkman suggests the Noldor may have borne it as a banner in the wars with Morgoth, to declare what they fought for, and reads the tree behind the jewels as Laurelin, from which the Silmarils took part of their light."}, "beor": {"label": "House of Bëor", "cat": "The Kingdoms of Men", "sub": "The Three Houses of the Edain", "forge": {"shape": "lozenge", "points": 4, "pstyle": "ray", "pc": 32, "field": 31, "cc": 44, "ac": 37, "sym": "mirror", "rings": 1, "mandala": 8, "mstyle": "lens", "mc": 37, "mrad": 0.54, "mlen": 0.22, "mwid": 0.16, "charge": "star", "csize": 0.36, "gems": 8, "grad": 0.74}, "blazon": "Vert, a star or — the House of Bëor. The first device made for a Man, and so the closest to Elvish work, though plainer and more earthbound. Mannish designs are symmetrical only from side to side, and press upward, where Elvish ones turn full circle.", "author": "Tolkien’s device for Bëor; colours unrecorded, drawn to the Mannish rule", "canon": false, "basis": "design", "fdm": "Björkman calls it the first device made for a Man and the most Elvish of them, being wholly symmetrical and in the male lozenge — yet plainer than Elvish work, and earthbound in its warm colours. He notes that Beor's friendship with Finrod is likely the reason his house had a device at all."}, "hador": {"label": "House of Hador", "cat": "The Kingdoms of Men", "sub": "The Three Houses of the Edain", "forge": {"shape": "lozenge", "points": 4, "pstyle": "ray", "pc": 45, "field": 32, "cc": 43, "ac": 44, "sym": "mirror", "rings": 1, "mandala": 8, "mstyle": "ray", "mc": 44, "mrad": 0.34, "mlen": 0.42, "charge": "star", "csize": 0.24, "gems": 4, "grad": 0.72}, "blazon": "Gules, a flame or — the House of Hador. Tolkien’s device for Hador burns in fiery colours, which have been read as an echo of Fingolfin’s, the house of Hador being his vassals.", "author": "Tolkien’s device tagged ‘Hador’, fiery in colour", "canon": false, "basis": "design", "fdm": "Björkman finds the reason for the design unclear, but discerns the fiery colours of Finwe and his heirs in it, Hador having been a great friend of Fingolfin; and notes the vertical symmetry, even to the two spearheads, of which the lower is the more pointed."}, "haleth": {"label": "House of Haleth", "cat": "The Kingdoms of Men", "sub": "The Three Houses of the Edain", "forge": {"shape": "lozenge", "points": 4, "pstyle": "leaf", "pc": 39, "field": 38, "cc": 39, "ac": 40, "sym": "mirror", "rings": 1, "mandala": 0, "charge": "vinetree", "csize": 0.78, "charge2": "flower", "repeat": 2, "srad": 0.58, "ssize": 0.15, "c2c": 12, "gems": 0}, "blazon": "Argent-grey, a tree entwined with a vine, two white flowers beneath — the House of Haleth. Tolkien’s drawing shows the tree, the vine wound about it, leaves or fruit among the boughs and two white flowers below, on a grey ground that may be the dark forest the Haladin loved. It is the one device that breaks his own rule: a lozenge, though it stands for a house and not a person.", "author": "Tolkien’s device noted ‘House of Haleth’", "canon": false, "basis": "design", "fdm": "Björkman describes a tree of no stated kind entwined with a trailer, a pair of white flowers, and orange dots that may be stylised nuts or leaves; and notes that this device breaks the rule Tolkien set, being a lozenge although it stands for a house and not a person."}, "beren": {"label": "Beren Erchamion", "cat": "The Kingdoms of Men", "sub": "The Three Houses of the Edain", "forge": {"shape": "lozenge", "points": 4, "pstyle": "ray", "pc": 32, "field": 41, "cc": 4, "ac": 42, "sym": "mirror", "rings": 1, "mandala": 8, "charge": "mountain", "csize": 0.6, "coff": 0.1, "charge2": "hand", "c2off": 0.62, "ssize": 0.17, "c2c": 43, "gems": 1, "grad": 0.56, "gc": 12, "mstyle": "ray", "mrad": 0.3, "mlen": 0.44}, "blazon": "Argent, the three peaks of Thangorodrim sable, a Silmaril above and a severed hand gules beneath — Beren Erchamion. The manuscript reads ‘Beren Gamlost / historical / plaque’: a personal lozenge made after his death to remember his deeds — the three-peaked mountain he came under, the jewel he cut from Morgoth’s crown, and the hand he lost holding it.", "author": "Tolkien’s device noted ‘Beren Gamlost / historical / plaque’", "canon": false, "basis": "design", "fdm": "Björkman reads the device downward: the three peaks of Thangorodrim looming above, the Silmaril that was cut from the Iron Crown, and beneath it the red hand reaching for the stone — which may as well be the hand Beren lost to Carcharoth. The star at the top he cannot account for, unless it foretells the fate of that jewel as the star of Earendil."}, "gondor": {"file": "heraldry/gondor.svg", "label": "Arms of the Kings of Gondor", "canon": true, "blazon": "Argent, a tree eradicated sable (the White Tree) beneath seven mullets and a crown — the arms of Elendil's line (LotR)", "src": "https://commons.wikimedia.org/wiki/File:Escudo_Real_de_Gondor.svg", "license": "CC BY-SA 3.0", "author": "Escudo Gondor.svg: *Escudo Gondor.png: Vëon Menelion\nderivat", "cat": "The Kingdoms of Men", "sub": "Gondor", "basis": "artwork", "fdm": "Björkman reads the seven stars as the seven palantiri Elendil brought from Numenor, and the White Tree as any of the descendants of Nimloth that grew in Minas Ithil and afterwards Minas Tirith; the Silver Crown was added by the Kings as the chief mark of royalty, and fell out of general use until Elessar."}, "elendilbadge": {"label": "The badge of Elendil — L·ND·L", "cat": "The Kingdoms of Men", "sub": "Gondor", "canon": false, "basis": "text", "blazon": "Argent, the letters L·ND·L sable — Elendil's own name written without its vowels, which he bore as a badge and set upon his seals. The same letters stood upon his tomb on Amon Anwar.", "tolkien": "The letters were (L · ND · L): Elendil's name without vowel-marks, which he used as a badge, and a device upon his seals", "author": "Tolkien's own note in Unfinished Tales, Cirion and Eorl", "fdm": "Björkman records the badge and its use upon the tomb at Amon Anwar.", "forge": {"shape": "square", "field": 0, "cc": 4, "ac": 4, "charge": "letters", "text": "L·ND·L", "csize": 0.5, "points": 0, "rings": 1}}, "steward": {"file": "heraldry/steward.svg", "label": "Banner of the Stewards of Gondor", "canon": true, "blazon": "A plain white banner without charge or device — the Stewards of Gondor (LotR V.1)", "src": "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Stewards_of_Gondor.svg", "license": "CC BY-SA 4.0", "author": "Chiswick Chap", "cat": "The Kingdoms of Men", "sub": "Gondor", "basis": "artwork", "fdm": "Björkman notes that the Stewards never took a device of their own, their banners being white and bare; but that they had a seal — see the Seal of the Stewards beside this."}, "stewardseal": {"label": "The Seal of the Stewards — R·ND·R", "cat": "The Kingdoms of Men", "sub": "Gondor", "canon": false, "basis": "text", "blazon": "Argent, the letters R·ND·R sable beneath three stars — the seal of the Stewards of Gondor, signifying arandur, the king's servant. It was under this seal that Cirion summoned the Éothéod.", "tolkien": "The letters R· ND ·R surmounted by three stars, signifying arandur (king's servant), steward", "author": "Tolkien's own note in Unfinished Tales, Cirion and Eorl", "fdm": "Björkman sets it against the plain white banner: the Stewards took no device, but they had a seal. It answers Elendil's own badge, L·ND·L, letter for letter.", "forge": {"shape": "square", "field": 0, "cc": 4, "ac": 4, "charge": "letters", "text": "R·ND·R", "csize": 0.5, "charge2": "star", "repeat": 3, "srad": 0.62, "ssize": 0.1, "c2c": 4, "points": 0, "rings": 1}}, "swan": {"file": "heraldry/swan.svg", "label": "Swan-ship of Dol Amroth", "canon": true, "blazon": "Azure, a swan-ship argent — the Princes of Dol Amroth (LotR V.1)", "src": "https://commons.wikimedia.org/wiki/File:Escudo_Dol_Amroth.svg", "license": "CC BY-SA 3.0", "author": "POL_Zelechow_COA.svg: User:Bastianow\nFlag_of_Saint-Pierre_an", "cat": "The Kingdoms of Men", "sub": "Gondor", "basis": "artwork", "fdm": "Björkman records the city's two emblems, a white ship and a swan, sometimes combined as a white swanship on blue water; and notes that a swanship of this kind is painted by Tolkien himself in his Taniquetil. Dol Amroth was the haven from which the Elves of Lorien took ship into the West."}, "rohan": {"file": "heraldry/rohan.svg", "label": "Arms of the Mark of Rohan", "canon": true, "blazon": "Vert, a horse courant argent — the Mark of Rohan (LotR)", "src": "https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_the_Kingdom_of_Rohan.svg", "license": "CC BY-SA 4.0", "author": "Pbroks13", "cat": "The Kingdoms of Men", "sub": "Rohan", "basis": "artwork", "fdm": "Björkman reads the horse as one of the Mearas, the white horses of the Kings; and notes that the Rohirrim were neither Edain nor of the Realms in Exile, but came at the end to hold land that had been Gondor's."}, "durin": {"label": "Emblems of Durin's Folk", "canon": false, "blazon": "Sable, an anvil and crown beneath seven stars — the emblems of Durin upon the Doors of Durin. The 1966 Index describes them as ‘Seven stars (above a crown and anvil)’; the eight-rayed stars are the Plough, and the crown of seven stars is the one Durin saw in Mirrormere. A family emblem is set within a square, by Tolkien’s rule.", "author": "reconstructed from the Doors of Durin inscription-drawing (hammer, anvil, crown, seven stars)", "cat": "The Khazâd", "sub": "Durin's Folk", "forge": {"shape": "square", "points": 7, "pstyle": "ray", "pc": 1, "field": 4, "cc": 12, "ac": 1, "rings": 1, "mandala": 0, "charge": "anvilcrown", "csize": 0.52, "coff": 0.06, "charge2": "star", "repeat": 7, "srad": 0.72, "ssize": 0.115, "c2c": 12, "gems": 0}, "basis": "design", "fdm": "Björkman notes that all Dwarvish heraldry known to us comes from this one carving on the Doors of Durin; that the seven stars are the Valacirca, the Plough, which Durin saw crowning his head reflected in Kheled-zaram; and that hammer and anvil are the tribute of the Dwarves to Aule, who made them."}, "morgoth": {"label": "Morgoth — sable unblazoned", "cat": "The Enemy", "sub": "Angband & Mordor", "forge": {"shape": "lozenge", "points": 0, "field": 4, "cc": 4, "ac": 4, "rings": 0, "mandala": 0, "charge": "none", "gems": 0}, "blazon": "Sable, unblazoned — Morgoth. Alone of all the powers he bore no device at all: ‘his vast shield, sable unblazoned’, ‘black without a blazon’, ‘his vast black unblazoned shield’. The blackness is not a colour here but the want of one — he meant not to rule the world but to unmake it.", "author": "blazoned in the Lays of Beleriand, Quenta Noldorinwa, Quenta Silmarillion and the Grey Annals", "canon": false, "basis": "text", "fdm": "Björkman sets the want of any charge beside Morgoth's nature: the blank sable is fitting for the personification of Darkness, and hints at his nihilism — he did not mean to rule the world but to unmake it. The House of the Mole bore the same bare black."}, "redeye": {"file": "heraldry/redeye.svg", "label": "The Red Eye of Sauron", "canon": true, "blazon": "Gules, the lidless Red Eye — the sign of Sauron and Mordor (LotR)", "src": "https://commons.wikimedia.org/wiki/File:Escudo_Mordor.svg", "license": "CC BY-SA 3.0", "author": "Flag_of_Mordor.svg: *Wappen_Erbstetten.png: Source: http://w", "cat": "The Enemy", "sub": "Angband & Mordor", "basis": "artwork", "fdm": "Björkman notes that the Red Eye stood for Sauron even when the speaker meant the person and not the sign, and that Tolkien drew the eye himself on the dustjacket designs for The Lord of the Rings."}, "morgul": {"file": "heraldry/morgul.svg", "label": "Device of Minas Morgul", "canon": true, "blazon": "Sable, the moon disfigured by a ghastly face of death — Minas Morgul. The moon is what remains of Minas Ithil, the Tower of the Moon, which the city was before Sauron took it.", "src": "https://commons.wikimedia.org/wiki/File:Escudo_Minas_Morgul.svg", "license": "CC BY-SA 3.0", "author": "Flag_of_Minas_Morgul.svg: *Pirate_Flag_of_Jack_Rackham.svg:", "cat": "The Enemy", "sub": "Angband & Mordor", "basis": "artwork", "fdm": "Björkman notes that the exact arrangement of skull and moon cannot be told, and that the moon is certainly a survival from before the taking of the city."}, "flyingcorps": {"label": "Emblem of the Flying Corps of Mordor", "cat": "The Enemy", "sub": "Angband & Mordor", "canon": false, "basis": "design", "blazon": "Sable, outspread wings set with eyes as upon a peacock's train, a body between them — the emblem Tolkien drew and titled for Sauron's air-borne troops. He wrote 'seen from below' beside it.", "author": "Tolkien's own drawing, described in Hammond & Scull, Patterns and Devices", "fdm": "Björkman calls it unique in all the known heraldry of Arda for its complexity, and reads the scribble 'seen from below' as meaning the emblem portrays one of Sauron's flying creatures from underneath — the small horns between wings and body being then the feet of a rider. The eyes upon the wings are Sauron's own, multiplied.", "forge": {"shape": "square", "field": 4, "cc": 32, "ac": 41, "charge": "peacockwings", "csize": 0.56, "points": 0, "rings": 0}}, "saruman": {"file": "heraldry/saruman.svg", "label": "Emblem of Saruman (certh S)", "canon": true, "blazon": "The certh 'S' — the mark of Saruman", "src": "https://commons.wikimedia.org/wiki/File:Emblema_Saruman.svg", "license": "Public domain", "author": "Certh 35.svg: Tasnu Arakun\n\nderivative work: Rondador (talk)", "cat": "The Enemy", "sub": "Isengard", "basis": "artwork", "fdm": "The certh S of Saruman's soldiery, set upon their helms."}, "whitehand": {"file": "heraldry/whitehand.svg", "label": "The White Hand of Saruman", "canon": true, "blazon": "Sable, a white hand — the sign of Saruman and Isengard (LotR)", "src": "https://commons.wikimedia.org/wiki/File:Escudo_Isengard.svg", "license": "CC BY-SA 3.0", "author": "Meuble_héraldique_Main.svg: Zigeuner\nderivative work: Rondad", "cat": "The Enemy", "sub": "Isengard", "basis": "artwork", "fdm": "Björkman notes that Saruman's soldiers bore an S-certh on their helms and a small white hand on their black shields, and that the hand as drawn is taken from Tolkien's own proposed dustjacket for The Two Towers."}, "serpent": {"file": "heraldry/serpent.svg", "label": "The Black Serpent of Harad", "canon": true, "blazon": "Gules, a black serpent — the Haradrim of the South (LotR)", "src": "https://commons.wikimedia.org/wiki/File:Escudo_Harad.svg", "license": "Public domain", "author": "Serp_roja.gif: Mandos\nEscudo_Gondor.svg: *Escudo_Gondor.png:", "cat": "The Enemy", "sub": "the South & East", "basis": "artwork", "fdm": "Björkman notes that the device fell with its bearer: the chieftain of the Haradrim and his men were ridden down by the Rohirrim on the Pelennor, 'and the black serpent foundered'."}, "gandalf": {"file": "heraldry/gandalf.svg", "label": "Emblem of Gandalf (certh G)", "canon": true, "blazon": "The certh 'G' — the wandering-mark of Gandalf", "src": "https://commons.wikimedia.org/wiki/File:Emblema_Gandalf.svg", "license": "Public domain", "author": "Certh 19.svg: Tasnu Arakun\nderivative work: Rondador (talk)", "cat": "The Istari", "sub": "the Wandering Wizards", "basis": "artwork", "fdm": "Björkman records that Gandalf used both a G-tengwa and a G-certh as his seals, and seems to have preferred the certh: the hobbit-children knew the tengwa on his carts at Hobbiton, but at Bree and on Weathertop he scratched the certh."}, "gandalftengwa": {"label": "The G-tengwa of Gandalf", "cat": "The Istari", "sub": "the Wandering Wizards", "canon": false, "basis": "text", "blazon": "The tengwa ungwë, which carries the sound g — the second of Gandalf's two marks. It is drawn here from its own structure, a telco and a doubled closed lúva, after App E, not copied from any type. The hobbit-children of Hobbiton knew this one on his carts and his fireworks; at Bree and on Weathertop he scratched the certh instead.", "author": "Björkman, who records that Gandalf used both a G-tengwa and a G-certh as seals", "fdm": "'Gandalf used both a G-tengwa and a G-certh as his seals, though he seems to have preferred the certh.'", "forge": {"shape": "circle", "field": 0, "cc": 4, "ac": 4, "charge": "tengwa", "tser": 4, "tgrade": 2, "csize": 0.46, "points": 0, "rings": 2}}};
+window.ARDA_HERALD={"finwehouse": {"label": "House of Finwë — the Winged Sun", "cat": "Eldar", "sub": "The House of Finwë", "forge": {"shape": "square", "field": 31, "edge": "plain", "ec": 63, "ew": 2.0, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "wedges", "fit": true, "n": 4, "r0": 0.26, "r1": 1.01, "w": 0.29, "c": 46, "rot": 0.125}, {"t": "wedges", "fit": true, "n": 4, "r0": 0.36, "r1": 1.05, "w": 0.216, "c": 60}, {"t": "wedges", "fit": true, "n": 12, "r0": 0.3, "r1": 0.94, "w": 0.175, "c": 46, "rot": 0.0625}, {"t": "wedges", "fit": true, "n": 20, "r0": 0.36, "r1": 0.72, "w": 0.045, "c": 44, "rot": 0.03125}, {"t": "disc", "r": 0.38, "c": 60}, {"t": "dashes", "n": 14, "r": 0.255, "len": 0.6, "w": 0.105, "c": 47}, {"t": "disc", "r": 0.35, "c": 44, "rot": 0.75}, {"t": "wedges", "n": 16, "r0": 0.596, "r1": 0.05, "w": 0.018, "c": 60, "rot": 0.1667}]}, "blazon": "Azure, a winged sun or within sixteen rays — the House of Finwë. Tolkien’s note reads ‘Winged Sun / House of Finwe / descending to High Kings / Fingolfin - Fingon - Turgon. Those descended from Finarphin used blue star’. Sixteen points: the great ancestor of the house, and a square, being the emblem of a family rather than a person.", "author": "Tolkien’s square device for the House of Finwë (Winged Sun, sixteen rays)", "canon": false, "basis": "design", "fdm": "The same design tipped forty-five degrees to make a square, which is the shape of a house rather than a man — the device of the High Kings of the Noldor, descending from Finwe to Fingolfin, Fingon and Turgon."}, "finwe": {"file": null, "label": "Lozenge of Finwë", "canon": true, "blazon": "A lozenge of sixteen rays, a winged sun upon it — Finwe, first King of the Noldor. Sixteen points reach the rim: the highest rank the rules allow, kept for the eldest of the Quendi.", "author": "Robin S. Taylor", "cat": "Eldar", "sub": "The House of Finwë", "basis": "design", "fdm": "Björkman reads the winged sun as the deliberate opposite of Elwe's winged moon: both kings set out on the Great Journey, but Finwe came to Aman and dwelt in the light of the Trees, while Elwe was held in Middle-earth under the stars. Finwe's yellow and red are echoed in the devices of his three sons.", "forge": {"shape": "lozenge", "field": 31, "edge": "plain", "ec": 31, "ew": 1.2, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "wedges", "fit": true, "n": 8, "r0": 0.44, "r1": 1.04, "w": 0.18, "c": 46}, {"t": "wedges", "fit": true, "n": 5, "r0": 0.42, "r1": 0.85, "w": 0.15, "c": 46, "rot": 0.0833}, {"t": "wedges", "fit": true, "n": 8, "r0": 0.58, "r1": 0.88, "w": 0.145, "c": 46, "rot": 0.0833}, {"t": "wedges", "fit": true, "n": 4, "r0": 0.44, "r1": 0.56, "w": 0.027, "c": 47, "rot": 0.5}, {"t": "disc", "r": 0.5, "c": 47, "n": 2, "rot": 0.375}, {"t": "dashes", "n": 16, "r": 0.475, "len": 0.59, "w": 0.05, "c": 63, "rot": 0.03125}, {"t": "disc", "r": 0.375, "c": 44, "rot": 0.5, "n": 1}, {"t": "wedges", "n": 14, "r0": 0.35, "r1": 0.05, "w": 0.04, "c": 46, "rot": 0.0625}]}}, "feanor": {"file": null, "label": "Star of the House of Fëanor", "canon": true, "blazon": "An eight-rayed star (Rill of Fëanor) — the House of Fëanor", "author": "El Bey Effendi", "cat": "Eldar", "sub": "The House of Finwë", "basis": "design", "fdm": "Björkman notes that the Star of Feanor on the West-gate of Moria has eight rays and eight spikes arranged as in Feanor's own heraldic device, so that one was surely drawn from the other; and that it was properly silver.", "forge": {"shape": "circle", "field": 63, "edge": "plain", "ec": 63, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "wedges", "n": 8, "r0": 0.0, "r1": 1.05, "w": 0.045, "taper": 0.24, "c": 4, "stroke": 62, "sw": 0.014, "rot": 0.75}, {"t": "wedges", "n": 7, "r0": 0.08, "r1": 0.74, "w": 0.05, "taper": 0.18, "c": 12, "stroke": 62, "sw": 0.011, "rot": 0.03125}, {"t": "wedges", "n": 4, "r0": 0.29, "r1": 0.74, "w": 0.016, "c": 56, "rot": 0.0833}, {"t": "wedges", "n": 16, "r0": 0.3, "r1": 0.8, "w": 0.026, "c": 56, "rot": 0.5}]}}, "feanordev": {"label": "Fëanor — his own device", "cat": "Eldar", "sub": "The House of Finwë", "forge": {"shape": "lozenge", "field": 63, "edge": "checked", "ec": 63, "ec2": 42, "esize": 0.026, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "wedges", "fit": true, "n": 8, "r0": 0.494, "r1": 1.05, "w": 0.13, "c": 43, "rot": 0.375}, {"t": "ring", "r": 0.68, "w": 0.095, "c": 62, "rot": 0.5, "n": 1}, {"t": "wedges", "fit": true, "n": 12, "r0": 0.36, "r1": 0.66, "w": 0.045, "c": 45}, {"t": "segments", "n": 8, "r0": 0.1, "r1": 0.24, "cs": [43, 3, 34, 50, 43, 3, 34, 50], "rot": 0.25}, {"t": "disc", "r": 0.22, "c": 42}, {"t": "charge", "k": "star", "size": 0.09, "c": 59, "rot": 0.0625}]}, "blazon": "Gules, a flame or within eight rays — Fëanor’s own device, tagged ‘Fëanor’ on the manuscript. Kin to his father’s design, but its flames answer to his name, Spirit of Fire; the coloured pieces about it are read as the making of the Silmarils and his crystals. Distinct from the eight-rayed Star of his House upon the Doors of Durin.", "author": "Tolkien’s 1960 device tagged ‘Fëanor’", "canon": false, "basis": "design", "fdm": "The flames run from the centre outward, which answers his name, Spirit of Fire. Björkman reads the coloured fields about the Silmaril as the art of making crystal, which was Feanor's invention — noting that the same flames appear in Fingolfin's device, where no such reading is possible."}, "fingolfin": {"label": "Banners of Fingolfin", "canon": false, "blazon": "Azure, a star of crystal within eight rayed points, flames of gold about it — Fingolfin and his house. His shield bore ‘field of heaven’s blue and star of crystal shining pale afar’; Tolkien’s own device sets stars upon blue with flames like Fëanor’s. Eight points: a king.", "author": "reconstructed to Tolkien’s rules from his device for Fingolfin and his shield in the Lay of Leithian", "cat": "Eldar", "sub": "The House of Finwë", "forge": {"shape": "lozenge", "field": 35, "edge": "plain", "ec": 63, "ew": 1.6, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "petals", "n": 9, "r0": 0.292, "r1": 0.64, "w": 0.19, "bow": 0.58, "swirl": 0.07, "c": 51, "stroke": 46, "sw": 0.04, "rot": 0.25}, {"t": "petals", "n": 9, "r0": 0.26, "r1": 0.6, "w": 0.255, "bow": 0.53, "swirl": 0.05, "c": 51, "stroke": 51, "sw": 0.027, "rot": 0.0833}, {"t": "disc", "r": 0.34, "c": 42, "n": 3}, {"t": "petals", "n": 8, "r0": 0.0, "r1": 0.4, "w": 0.055, "bow": 0.6, "swirl": 0.1, "c": 30, "stroke": 30, "sw": 0.012, "rot": 0.03125}, {"t": "scatter", "n": 4, "k": "star", "r": 0.78, "size": 0.097, "c": 63, "ac": 35, "rot": 0.25}]}, "basis": "design", "fdm": "Björkman derives the blue and silver banners named in the Silmarillion from this device's silver stars on blue. Eight points, as in the devices of all three sons of Finwe."}, "finarfin": {"label": "Finarfin", "canon": false, "blazon": "Argent, two serpents with eyes of emerald meeting beneath a crown of golden flowers, that the one upholds and the other devours — the badge of Finarfin and his house, borne on the Ring of Barahir (Lay of Leithian). Calmer than his brothers’ fiery devices. Eight points: a king.", "author": "reconstructed from the Ring of Barahir passage, which Tolkien names the badge of Finarfin and his house", "cat": "Eldar", "sub": "The House of Finwë", "forge": {"shape": "lozenge", "field": 63, "edge": "plain", "ec": 63, "ew": 1.0, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "darts", "fit": true, "n": 4, "r0": 0.4, "r1": 1.04, "w": 0.17, "barb": 0.6, "c": 46, "rot": 0.375}, {"t": "darts", "fit": true, "n": 4, "r0": 0.26, "r1": 1.04, "w": 0.2, "barb": 0.55, "c": 46}, {"t": "wedges", "fit": true, "n": 8, "r0": 0.264, "r1": 0.76, "w": 0.027, "c": 44, "rot": 0.0833}, {"t": "corners", "fit": true, "n": 4, "r": 0.82, "size": 0.2596, "c": 44, "shape": "tri", "rot": 0.375}, {"t": "disc", "r": 0.5, "c": 42, "n": 3, "rot": 0.0625}, {"t": "ring", "r": 0.46, "w": 0.04, "c": 44, "n": 1}, {"t": "wedges", "n": 16, "r0": 0.44, "r1": 0.07, "w": 0.027, "c": 50}, {"t": "disc", "r": 0.155, "c": 29, "rot": 0.375, "n": 3}]}, "basis": "design", "fdm": "The fire-rays are calmer than his brothers', and Björkman reads the difference as the parting itself: Finarfin turned back at the rebellion of the Noldor and stayed in Aman. The device was used by his heirs after him, and Finrod above all."}, "fingon": {"label": "Fingon the Valiant", "canon": false, "blazon": "Azure, a star argent within eight points — Fingon the Valiant, High King of the Noldor. Tolkien’s note on the House of Finwë has the device ‘descending to High Kings Fingolfin - Fingon - Turgon’; six texts give his banners blue and silver, though others make them plain argent.", "author": "reconstructed to Tolkien’s rules from the House of Finwë descent-note and the banner texts", "cat": "Eldar", "sub": "The House of Finwë", "forge": {"shape": "lozenge", "points": 8, "pstyle": "ray", "pc": 0, "field": 2, "cc": 0, "ac": 7, "rings": 1, "mandala": 8, "mstyle": "lens", "mc": 7, "mrad": 0.5, "mlen": 0.26, "mwid": 0.1, "charge": "star", "csize": 0.36, "gems": 0}, "basis": "inferred"}, "finrod": {"label": "Finrod Felagund", "canon": false, "blazon": "Vert, a harp or and a flaming torch — Finrod Felagund. Alone of the Elvish devices this one is not symmetrical, and its colours are earthen rather than jewelled.", "author": "reconstructed from Tolkien’s device for Finrod (harp and torch) and Silm. ch.17", "cat": "Eldar", "sub": "The House of Finwë", "forge": {"shape": "lozenge", "field": 52, "edge": "plain", "ec": 63, "ew": 1.8, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "corners", "fit": true, "n": 2, "r": 0.92, "size": 0.154, "c": 62, "shape": "tri", "rot": 0, "stroke": 62, "sw": 0.0262}, {"t": "charge", "k": "harp", "r": 0.18, "a": 0.5, "size": 0.334, "c": 33, "ac": 33, "n": 1, "rot": 0.03125}, {"t": "charge", "k": "torch", "r": 0.36, "a": 0.0, "size": 0.384, "c": 80, "ac": 62, "n": 2, "rot": 0.5}]}, "basis": "design", "fdm": "Björkman reads the asymmetry and the earth-colours as the mark of a Mannish hand: the harp and torch recall Finrod walking the woods of East Beleriand and coming upon the first Men playing, and the device may have been made for him by one of the people of Beor."}, "finrodbadge": {"label": "Finrod's badge — a crown of golden flowers", "cat": "Eldar", "sub": "The House of Finwë", "canon": false, "basis": "design", "blazon": "Azure, a crown of golden flowers — the badge borne by Finrod Felagund beside his device of harp and torch. The golden flowers are the mark of his father's house.", "author": "Björkman records the badge; its motive he relates to the device of Finarfin", "fdm": "'Finrod also used a badge that depicted a crown of golden flowers. The motive of the badge was probably directly or indirectly related to the device of Finarfin.'", "forge": {"shape": "lozenge", "field": 2, "cc": 1, "ac": 14, "charge": "crownflowers", "csize": 0.62, "points": 4, "pstyle": "ray", "pc": 1, "rings": 1}}, "galadriel": {"label": "Galadriel of Lórien", "canon": false, "blazon": "Azure, a blue star within a garland of golden flowers, in a circle — Galadriel. Tolkien left her no device; his note on the House of Finwë says ‘those descended from Finarphin used blue star’, and a woman’s design is set within a circle. The golden flowers are her father’s house; the name Alatáriel is ‘maiden crowned with a radiant garland’. Six points: a queen.", "author": "interpretive: built from Tolkien’s ‘blue star’ descent-note and his circle-for-women rule", "cat": "Eldar", "sub": "The House of Finwë", "forge": {"shape": "circle", "points": 6, "pstyle": "leaf", "pc": 1, "field": 2, "cc": 13, "ac": 1, "rings": 2, "mandala": 12, "mstyle": "petal", "mc": 1, "mrad": 0.56, "mlen": 0.28, "mwid": 0.11, "charge": "star", "csize": 0.3, "gems": 6, "grad": 0.74, "gc": 13}, "basis": "inferred", "fdm": "Björkman records no device for her; this remains the archive's own, built to the rule that a woman's device is set within a circle."}, "thingol": {"label": "Elwë Thingol of Doriath", "canon": false, "blazon": "Sable, a winged moon argent among stars — Elwe Singollo, called Elu Thingol. Eight points reach the rim: half the sixteen of Finwe.", "author": "reconstructed from Tolkien’s manuscript note ‘Winged Moon / a black with stars / Elwë’", "cat": "Eldar", "sub": "Doriath & the Sindar", "forge": {"shape": "lozenge", "field": 62, "edge": "checked", "ec": 62, "ec2": 62, "esize": 0.028, "points": 0, "charge": "none", "charge2": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "ring", "r": 0.46, "w": 0.17, "c": 63, "rot": 0.03125}, {"t": "pinwheel", "n": 8, "r": 0.39, "c": 26, "c2": 63}, {"t": "corners", "fit": true, "n": 8, "r": 0.74, "size": 0.128, "c": 26, "rot": 0.75, "stroke": 62, "sw": 0.006}, {"t": "discs", "fit": true, "n": 4, "r": 0.92, "size": 0.073, "c": 26, "stroke": 26, "sw": 0.0228}]}, "basis": "design", "fdm": "The antipole of Finwe's winged sun. Björkman reads the black field sown with stars as Middle-earth itself before the Sun and Moon, lit only by the stars of Elbereth, where Elwe was held by Melian's enchantment while Finwe passed into the light of Aman."}, "melian": {"label": "Melian the Maia", "canon": false, "blazon": "Vert, a single flower of Telperion argent, in a circle — Melian the Maia, Queen of Doriath. Tolkien drew her one of the most intricate of all the devices, read as her Maian nature mirroring the light of the West; and the texts name her seal exactly — the lembas she sent to Beleg was ‘sealed at the knots with the seal of the Queen, a wafer of white wax shaped as a single flower of Telperion’. Eight points: a queen.", "author": "interpretive: built to Tolkien’s circle-for-women rule, following the flowered kinship noted between Lúthien’s device and her mother’s", "cat": "Eldar", "sub": "Doriath & the Sindar", "forge": {"shape": "circle", "field": 63, "edge": "plain", "ec": 63, "ew": 1.2, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "ring", "r": 0.738, "w": 0.04, "c": 33, "rot": 0}, {"t": "ring", "r": 0.78, "w": 0.09, "c": 34, "n": 1, "rot": 0.1667}, {"t": "disc", "r": 0.68, "c": 32, "rot": 0.1667}, {"t": "petals", "n": 8, "r0": 0.18, "r1": 0.836, "w": 0.16, "bow": 0.41, "c": 33, "stroke": 33, "sw": 0.034, "rot": 0.5}, {"t": "scatter", "n": 8, "k": "gem", "r": 0.58, "size": 0.13, "c": 32, "ac": 63, "rot": 0.375}, {"t": "disc", "r": 0.28, "c": 62, "rot": 0, "n": 1}, {"t": "petals", "n": 10, "r0": 0.0, "r1": 0.18, "w": 0.065, "bow": 0.44, "c": 34, "stroke": 35, "sw": 0.006}, {"t": "charge", "k": "star", "size": 0.1, "c": 26, "ac": 26, "n": 1}]}, "basis": "design", "fdm": "Björkman calls hers the most complex of all the devices, and notes the one thing that breaks the rules: within the circle that marks a woman is set a lozenge, which is a man's escutcheon. He reads it as a Maia's power to choose the raiment and the sex she wears. Its stars answer her husband's device and its flowers her daughter's; and it may be her seal itself, which was 'a single flower of Telperion'."}, "luthien": {"label": "Lúthien Tinúviel", "canon": false, "blazon": "Sable, white petals and stars about a golden sun-flower, in a circle — Lúthien Tinúviel. She is the one character Tolkien gave two devices, for her double kindred: this follows the one with white petals and stars upon black, which stands closest to her father Thingol’s. The white flowers are the niphredil that sprang at her birth; the sun-flower may be elanor. Six points.", "author": "reconstructed from Tolkien’s second device for Lúthien (white petals and stars on black)", "cat": "Eldar", "sub": "Doriath & the Sindar", "forge": {"shape": "circle", "field": 62, "edge": "plain", "ec": 63, "ew": 1.8, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "ring", "r": 0.85, "w": 0.033, "c": 63, "n": 6, "rot": 0.0833}, {"t": "scatter", "n": 2, "k": "star", "r": 0.68, "size": 0.16, "c": 50, "ac": 63, "rot": 0.1667}, {"t": "scatter", "n": 8, "k": "gem", "r": 0.9, "size": 0.0316, "c": 44, "ac": 50, "rot": 0.125}, {"t": "petals", "n": 8, "r0": 0.46, "r1": 1.016, "w": 0.11, "bow": 0.61, "round": 0.85, "c": 63, "stroke": 62, "sw": 0.014, "rot": 0.125}, {"t": "petals", "n": 16, "r0": 0.38, "r1": 0.66, "w": 0.045, "bow": 0.47, "c": 48, "stroke": 37, "sw": 0.004, "rot": 0}, {"t": "disc", "r": 0.38, "c": 35, "rot": 0.0833, "n": 6}, {"t": "ring", "r": 0.28, "w": 0.055, "c": 46, "rot": 0.375, "n": 5}, {"t": "petals", "n": 20, "r0": 0.04, "r1": 0.3, "w": 0.105, "bow": 0.64, "c": 50, "stroke": 50, "sw": 0.013}, {"t": "disc", "r": 0.11, "c": 50}]}, "basis": "design", "fdm": "She is the only person known to have borne two devices, both flowered. This is the starred one, closest to her father's. Björkman counts no more than four points in either, which is the rank of a princess of Doriath; in this one the four white flowers each stand for a point."}, "luthien2": {"label": "Lúthien Tinúviel — her flowered device", "cat": "Eldar", "sub": "Doriath & the Sindar", "forge": {"shape": "circle", "field": 53, "edge": "plain", "ec": 50, "ew": 1.6, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "petals", "n": 4, "r0": 0.42, "r1": 1.05, "w": 0.3, "bow": 0.63, "c": 50, "stroke": 50, "sw": 0.009, "rot": 0.1667}, {"t": "petals", "n": 8, "r0": 0.0, "r1": 1.03, "w": 0.22, "bow": 0.57, "c": 39, "stroke": 62, "sw": 0.021, "rot": 0.5}, {"t": "petals", "n": 6, "r0": 0.1, "r1": 0.92, "w": 0.17, "bow": 0.59, "c": 36, "stroke": 62, "sw": 0.006, "rot": 0.25}, {"t": "petals", "n": 4, "r0": 0.1, "r1": 0.78, "w": 0.155, "bow": 0.58, "c": 55, "rot": 0.125}, {"t": "veins", "n": 16, "r0": 0.2, "r1": 0.74, "w": 0.024, "side": 1, "spread": 0.01, "c": 39, "rot": 0.125}, {"t": "scatter", "n": 4, "k": "elanor", "r": 0.88, "size": 0.272, "c": 63, "ac": 37}, {"t": "disc", "r": 0.09, "c": 37, "n": 6}]}, "blazon": "Vert, a sun-flower or among white flowers — Lúthien Tinúviel, her second device. She is the only character Tolkien gave two, for her double kindred: this is the flowered one, which stands closest to her mother Melian’s. The white flowers are the niphredil that sprang at her birth; the sun-like flower may be elanor.", "author": "Tolkien’s first (flowered) device for Lúthien, kin to Melian’s", "canon": false, "basis": "design", "fdm": "The first of her two devices, and the one nearest her mother's: white niphredil, the flower that sprang at her birth, about what may be an elanor. Björkman notes its four points fall at the quarters — northeast, northwest, southeast and southwest."}, "turgon": {"label": "House of the King — Turgon", "canon": false, "blazon": "White, gold and red, and the emblems the moon and the sun and the scarlet heart — the House of the King. Tolkien: 'Mighty was the array of the house of the king and their colours were white and gold and red, and their emblems the moon and the sun and the scarlet heart.'", "author": "drawn to Tolkien's words -- the moon and the sun and the scarlet heart, all three", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "text", "tolkien": "their colours were white and gold and red, and their emblems the moon and the sun and the scarlet heart", "fdm": "Björkman groups the three emblems into a single device, allowing that the house may as well have borne three; and reads the heart as the heart of Fingolfin, Turgon's father, buried north of the city.", "forge": {"shape": "shield", "field": 28, "edge": "plain", "ec": 63, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "moon", "r": 0.47, "a": -0.25, "size": 0.142, "c": 63, "n": 1}, {"t": "wedges", "n": 24, "r0": 0.24, "r1": 0.24, "w": 0.006, "c": 82}, {"t": "disc", "r": 0.105, "c": 29, "n": 1}, {"t": "charge", "k": "heart", "r": 0.54, "a": 0.25, "size": 0.19, "c": 30, "n": 1}]}}, "tuor": {"file": null, "label": "House of the White Wing — Tuor", "canon": true, "blazon": "The emblem of the White Wing upon the shield, and wings as of swans or gulls upon the helm — the House of the Wing, the stoutest of the King's folk, which Tuor came to lead. Tolkien: 'all these wore wings as it were of swans or gulls upon their helms, and the emblem of the White Wing was upon their shields.'", "author": "Heraldic_displayed_Swan.svg: Shadowxfox\nEscudo_Gondor.svg: *", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "design", "tolkien": "all these wore wings as it were of swans or gulls upon their helms, and the emblem of the White Wing was upon their shields", "fdm": "Of this kind were the shield and helm that Tuor found waiting in Vinyamar, left there at Ulmo's command, which marked him for the house before ever he came to the city. The blue field is Björkman's.", "forge": {"shape": "shield", "field": 34, "edge": "plain", "ec": 34, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "wing", "size": 0.356, "c": 63, "ac": 63, "rot": 0.75}]}}, "maeglin": {"file": null, "label": "House of the Mole — Maeglin", "canon": false, "blazon": "Sable, and no sign nor emblem at all — the House of the Mole. Tolkien: 'sable was their harness, and they bore no sign or emblem, but their round caps of steel were covered with moleskin, and they fought with axes two-headed like mattocks.' The blank field is the device.", "author": "Escudo_Gondor.svg: *Escudo_Gondor.png: Vëon Menelion\nderivat", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "text", "tolkien": "sable was their harness, and they bore no sign or emblem", "fdm": "Björkman sets the bare sable beside Morgoth's shield, which was likewise unblazoned — and it was Maeglin who betrayed the city to him.", "forge": {"shape": "shield", "field": 62, "edge": "plain", "ec": 62, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": []}}, "swallow": {"file": null, "label": "House of the Swallow", "canon": true, "blazon": "An arrowhead upon the shield; the folk arrayed in white and dark blue and in purple and black, a fan of feathers upon their helms — the House of the Swallow, under Duilin, surest of archers. Tolkien: 'the folk of the Swallow bore a fan of feathers on their helms, and they were arrayed in white and dark blue and in purple and black and showed an arrowhead on their shields.'", "author": "Héraldique_meuble_Flèche.svg: User:Orror\nEscudo_Gondor.svg:", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "design", "tolkien": "showed an arrowhead on their shields", "fdm": "Björkman reads the swallow as the arrow itself — swift through the air and always finding its mark.", "forge": {"shape": "shield", "field": 35, "edge": "plain", "ec": 35, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "arrowhead", "size": 0.18, "c": 63, "rot": 0.25, "n": 1}]}}, "egalmoth": {"file": null, "label": "House of the Heavenly Arch — Egalmoth", "canon": true, "blazon": "Of the blue of the heavens, the boss a jewel built of seven gems — ruby, amethyst, sapphire, emerald, chrysoprase, topaz and amber — the House of the Heavenly Arch, under Egalmoth, with an opal of great size set in their helms. Tolkien: 'Every shield of that battalion was of the blue of the heavens and its boss a jewel built of seven gems.'", "author": "Rondador", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "design", "tolkien": "Every shield of that battalion was of the blue of the heavens and its boss a jewel built of seven gems, rubies and amethysts and sapphires, emeralds, chrysoprase, topaz, and amber", "fdm": "Björkman takes the Heavenly Arch for the rainbow and sets the seven stones in its order, assuming the topaz yellow to complete the gradient; he says plainly that the arrangement is his own. Tolkien gives the stones, not their placing.", "forge": {"shape": "shield", "field": 26, "edge": "plain", "ec": 64, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "segments", "n": 8, "r0": 0.02, "r1": 0.32, "cs": [43, 44, 50, 48, 26, 64, 17, 43]}, {"t": "ring", "r": 0.32, "w": 0.03, "c": 63}]}}, "pillar": {"label": "House of the Pillar — Penlod", "canon": false, "blazon": "No device is recorded. Of this house Tolkien says only that Penlod, tallest of Gnomes, marshalled it together with the Tower of Snow, and that many of its men fell about him in a lane with his back to the wall. Neither charge nor colour is given anywhere.", "author": "nothing is recorded; the field is left bare rather than invented", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "silent", "tolkien": "There too were the folk of the Pillar and of the Tower of Snow, and both these kindreds were marshalled by Penlod, tallest of Gnomes", "fdm": "Björkman is explicit: 'The House of the Pillar and The House of the Tower of Snow were both lead by Penlod. No hint whatsoever is given regarding their attributes.' THE HALL SHOWED A GOLD PILLAR ON RED UNTIL NOW, badged as Tolkien's device. It was nobody's.", "forge": {"shape": "shield", "field": 0, "cc": 0, "ac": 0, "charge": "none", "points": 0, "rings": 0}}, "towersnow": {"label": "House of the Tower of Snow — Penlod", "canon": false, "blazon": "No device is recorded. Penlod led this house with the Pillar, and no charge, colour or emblem is given for it in any text.", "author": "nothing is recorded; the field is left bare rather than invented", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "silent", "tolkien": "both these kindreds were marshalled by Penlod, tallest of Gnomes", "fdm": "'No hint whatsoever is given regarding their attributes' (Björkman). THE HALL SHOWED A WHITE PEAK HERE UNTIL NOW, badged as Tolkien's device.", "forge": {"shape": "shield", "field": 0, "cc": 0, "ac": 0, "charge": "none", "points": 0, "rings": 0}}, "housetree": {"label": "House of the Tree — Galdor", "canon": false, "blazon": "Vert, and no emblem recorded — the House of the Tree, under Galdor, held the most valiant of all the Gondothlim save Turgon alone. Tolkien gives the house its colour and its weapons, and no device: 'There were those of the Tree, and they were a great house, and their raiment was green. They fought with iron-studded clubs or with slings.'", "author": "the green is Tolkien's; the field is left bare because he records no charge", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "silent", "tolkien": "There were those of the Tree, and they were a great house, and their raiment was green", "fdm": "Björkman records the same: of this house he says only that it 'was lead by Galdor and its members were dressed in green'. THE HALL SHOWED A WHITE TREE HERE UNTIL NOW, which no text gives.", "forge": {"shape": "shield", "field": 37, "cc": 37, "ac": 37, "charge": "none", "points": 0, "rings": 0}}, "glorfindel": {"label": "House of the Golden Flower — Glorfindel", "canon": false, "blazon": "A rayed sun upon the shield — the House of the Golden Flower, under Glorfindel, whose mantle was broidered in gold and diapered with celandine as a field in spring. Tolkien: 'the house of the Golden Flower who bore a rayed sun upon their shield'.", "author": "drawn to Tolkien's words in the muster of the houses", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "text", "tolkien": "There stood the house of the Golden Flower who bore a rayed sun upon their shield", "fdm": "Björkman also gives the house a rayed sun, and chooses its green field from the house's name and from Glorfindel's mantle, 'diapered with celandine as a field in spring'. THE HALL SHOWED A ROSE HERE UNTIL NOW: the golden flower of the house's name is not its charge, and Tolkien says what the charge was.", "forge": {"shape": "shield", "field": 49, "edge": "plain", "ec": 49, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "wedges", "n": 4, "r0": 0.14, "r1": 0.62, "w": 0.085, "taper": 0.18, "c": 29, "rot": 0.125}, {"t": "wedges", "n": 4, "r0": 0.14, "r1": 0.55, "w": 0.075, "taper": 0.18, "c": 29}, {"t": "disc", "r": 0.17, "c": 29}]}}, "ecthelion": {"label": "House of the Fountain — Ecthelion", "canon": false, "blazon": "Argent, a fountain — the House of the Fountain, under Ecthelion who slew Gothmog. Tolkien gives the house no emblem: 'silver and diamonds were their delight; and swords very long and bright and pale did they wield, and they went into battle to the music of flutes.' The fountain is read from the name.", "author": "interpretive: no emblem is recorded, and the charge is read from the house's name", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "inferred", "tolkien": "silver and diamonds were their delight; and swords very long and bright and pale did they wield, and they went into battle to the music of flutes", "fdm": "Björkman likewise records no device, saying only that the house 'enjoyed silver and diamonds, whose glitter and colour no doubt influenced their emblem'.", "forge": {"shape": "shield", "field": 32, "cc": 7, "ac": 13, "charge": "fountain", "csize": 0.6, "points": 0, "rings": 0}}, "harp": {"file": null, "label": "House of the Harp", "canon": true, "blazon": "Sable, a harp argent — the House of the Harp; but Salgant their lord bore his of gold. Tolkien: 'a harp of silver shone in their blazonry upon a field of black; but Salgant bore one of gold.'", "author": "Coat_of_arms_of_Ireland.svg: Tonyjeff, based on national sym", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "design", "tolkien": "a harp of silver shone in their blazonry upon a field of black; but Salgant bore one of gold", "fdm": "Björkman notes the house shares the black of the Mole, and wonders whether Maeglin's influence over Salgant — who fawned on him — reached even to the colour of his shield.", "forge": {"shape": "shield", "field": 62, "edge": "plain", "ec": 62, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "harp", "size": 0.276, "c": 63, "ac": 62, "rot": 0.25}]}}, "hammerwrath": {"file": null, "label": "House of the Hammer of Wrath", "canon": true, "blazon": "The Stricken Anvil, and a hammer that smiteth sparks about it — the House of the Hammer of Wrath, under Rog, smiths who fought with great maces and reverenced Aule above all. Tolkien: 'The sign of this people was the Stricken Anvil, and a hammer that smiteth sparks about it was set on their shields, and red gold and black iron was their delight.'", "author": "Emblema_Durin.svg: *Wappen_Neuenstein_(Hohenlohe).svg: unbek", "cat": "Eldar", "sub": "The Houses of Gondolin", "basis": "design", "tolkien": "The sign of this people was the Stricken Anvil, and a hammer that smiteth sparks about it was set on their shields, and red gold and black iron was their delight", "fdm": "No colour is given for the field; Björkman takes his clue, as this hall does, from 'red gold and black iron was their delight'.", "forge": {"shape": "shield", "field": 43, "edge": "plain", "ec": 43, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "wedges", "n": 16, "r0": 0.5, "r1": 0.54, "w": 0.026, "c": 29, "rot": 0.25}, {"t": "charge", "k": "hammer", "size": 0.412, "c": 62, "ac": 62, "n": 1}]}}, "idril": {"label": "Idril Celebrindal", "canon": false, "blazon": "Sable, twelve cornflowers celestial, in a circle — Idril Celebrindal. Tolkien titled the drawing ‘Menelluin Irildeo Ondolindello’, ‘Cornflower of Idril from Gondolin’, and noted it the origin of the later Númenórean circular patterns. Twelve points reaching the rim declare her rank as a king’s daughter.", "author": "reconstructed from Tolkien’s Cornflower device for Idril and his own title for it", "cat": "Eldar", "sub": "The Houses of Gondolin", "forge": {"shape": "circle", "field": 63, "edge": "beaded", "ec": 63, "esize": 0.022, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "petals", "n": 8, "r0": 0.02, "r1": 0.89, "w": 0.19, "bow": 0.79, "c": 67, "rot": 0.0625, "stroke": 62, "sw": 0.018}, {"t": "petals", "n": 6, "r0": 0.02, "r1": 0.99, "w": 0.17, "bow": 0.69, "c": 66, "stroke": 54, "sw": 0.042}, {"t": "petals", "n": 9, "r0": 0.12, "r1": 0.74, "w": 0.1, "bow": 0.62, "c": 65, "rot": 0.0625, "stroke": 70, "sw": 0.009}, {"t": "wedges", "n": 10, "r0": 0.04, "r1": 0.87, "w": 0.1, "c": 62, "stroke": 70, "sw": 0.012}, {"t": "wedges", "n": 12, "r0": 0.04, "r1": 0.82, "w": 0.11, "c": 62, "rot": 0.0625, "stroke": 62, "sw": 0.024}, {"t": "petals", "n": 12, "r0": 0.44, "r1": 0.86, "w": 0.055, "bow": 0.53, "c": 55, "stroke": 55, "sw": 0.011, "rot": 0}, {"t": "corners", "n": 9, "r": 0.5, "size": 0.06, "c": 62, "shape": "tri", "stroke": 62, "sw": 0.013, "rot": 0.03125}, {"t": "petals", "n": 8, "r0": 0.12, "r1": 0.64, "w": 0.025, "bow": 0.41, "c": 70, "stroke": 62, "sw": 0.012, "rot": 0.1667}, {"t": "disc", "r": 0.16, "c": 62, "rot": 0.5}]}, "basis": "design", "fdm": "Björkman notes the inscription found with it — Menelluin Irildeo Ondolindello, 'Cornflower of Idril from Gondolin' — and suggests Menelluin, literally 'sky-blue', may be the device's own name. Twelve points: a High King's daughter. He records that the device was carried from Gondolin to Numenor, where it shaped many later designs, and thence to Gondor by Elendil."}, "gilgalad": {"label": "Gil-galad, High King", "canon": false, "blazon": "Azure, twelve stars argent — Gil-galad, whose name is ‘Star of Radiance’. A drawing of 1960 gives him twelve stars on blue; the Fall of Gil-galad has ‘the countless stars of heaven’s field were mirrored in his silver shield’, and the Shibboleth calls his shield overlaid with silver and set with white stars. Eight points: a king.", "author": "reconstructed from Tolkien’s 1960 device (azure, twelve stars argent) and the Fall of Gil-galad", "cat": "Eldar", "sub": "Gil-galad & the Half-elven", "forge": {"shape": "lozenge", "field": 74, "edge": "plain", "ec": 75, "ew": 2.6, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "scatter", "n": 8, "k": "star", "r": 0.5, "size": 0.211, "c": 75, "ac": 75, "rot": 0.25}, {"t": "scatter", "n": 8, "k": "star", "r": 0.702, "size": 0.097, "c": 75, "ac": 62, "rot": 0.75}, {"t": "scatter", "n": 4, "k": "gem", "r": 0.26, "size": 0.028, "c": 63, "ac": 62, "rot": 0.125}, {"t": "scatter", "n": 2, "k": "gem", "r": 0.78, "size": 0.0156, "c": 77, "ac": 74}, {"t": "charge", "k": "star", "size": 0.114, "c": 77, "ac": 63, "n": 9, "rot": 0.0625}]}, "basis": "design", "fdm": "Björkman reads the star-sown sky as his name, Radiant Star, and the line of the Fall of Gil-galad: 'The countless stars of heaven's field / were mirrored in his silver shield.'"}, "earendil": {"label": "Eärendil the Mariner", "canon": false, "blazon": "Azure, a Silmaril within six rays, and six answering them — Earendil the Mariner, twelve points in all; the moon in her phases in the corners.", "author": "reconstructed from Tolkien’s Eärendil devices, which derive from the Finarfin blue star", "cat": "Eldar", "sub": "Gil-galad & the Half-elven", "forge": {"shape": "lozenge", "field": 62, "edge": "plain", "ec": 62, "ew": 1.2, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "scatter", "n": 8, "k": "gem", "r": 0.66, "size": 0.067, "c": 32, "ac": 54}, {"t": "bands", "r0": 0.48, "r1": 0.7, "cs": [53, 65, 64, 34, 68, 70], "n": 9, "rot": 0.5}, {"t": "wedges", "n": 12, "r0": 0.3, "r1": 0.8, "w": 0.04, "c": 33, "rot": 0}, {"t": "disc", "r": 0.456, "c": 63, "n": 1, "rot": 0.5}, {"t": "ring", "r": 0.46, "w": 0.06, "c": 54, "n": 2, "rot": 0.0833}, {"t": "outline", "n": 4, "r": 0.44, "w": 0.021, "c": 33}, {"t": "outline", "n": 3, "r": 0.44, "w": 0.075, "c": 32, "rot": 0.03125}, {"t": "disc", "r": 0.01, "c": 64, "n": 4}]}, "basis": "design", "fdm": "Björkman counts six beams of light from the Silmaril and six more running against them, twelve points in all — the same count as Idril's, his mother, and on the same blue field. The moons in the dark corners are the one thing that keeps the device from perfect symmetry, which he reads as the mark of the Half-elven."}, "elrond": {"label": "Elrond of Imladris", "canon": false, "blazon": "Argent, a star of silver — the house of Elrond. The sons of Elrond came to Minas Tirith with ‘a banner of silver’, and Vingilot, the ship of Elrond’s father Eärendil, bore silver banners; plain argent is a token of that descent rather than a blazoned charge. Six points.", "author": "interpretive: built from the silver banner of Elrond’s sons and Vingilot’s silver banners", "cat": "Eldar", "sub": "Gil-galad & the Half-elven", "forge": {"shape": "lozenge", "points": 6, "pstyle": "ray", "pc": 7, "field": 0, "cc": 7, "ac": 13, "rings": 2, "mandala": 12, "mstyle": "lens", "mc": 13, "mrad": 0.54, "mlen": 0.26, "mwid": 0.1, "charge": "star", "csize": 0.3, "gems": 6, "grad": 0.74, "gc": 7}, "basis": "inferred"}, "silmarilsdev": {"label": "Emblem of the Silmarils", "cat": "Eldar", "sub": "Jewels & Emblems of the Elder Days", "forge": {"shape": "lozenge", "field": 36, "edge": "plain", "ec": 63, "ew": 1.6, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "disc", "r": 1.026, "c": 37, "rot": 0.5, "n": 1}, {"t": "charge", "k": "tree", "size": 0.45, "c": 61, "ac": 37, "rot": 0.5}, {"t": "discs", "n": 2, "r": 0.168, "size": 0.1576, "c": 63, "edge": 33, "rot": 0.0833, "stroke": 56, "sw": 0.015}, {"t": "discs", "n": 1, "r": 0.4, "size": 0.142, "c": 63, "edge": 61, "rot": 0.0625, "stroke": 56, "sw": 0.004}]}, "blazon": "Sable, the Tree Laurelin or, three Silmarils argent — the emblem of the Silmarils themselves. Tolkien’s note calls it ‘Ancient Emblem representing one derivation of the Silmarils from the light of the trees upon Ezellohar’. It is the only device he made for a thing rather than a person, and so is set within a square.", "author": "Tolkien’s device for the Silmarils, with his own note upon it", "canon": false, "basis": "design", "fdm": "The only device known for a thing and not a person. Björkman suggests the Noldor may have borne it as a banner in the wars with Morgoth, to declare what they fought for, and reads the tree behind the jewels as Laurelin, from which the Silmarils took part of their light."}, "beor": {"label": "House of Bëor", "cat": "The Kingdoms of Men", "sub": "The Three Houses of the Edain", "forge": {"shape": "lozenge", "field": 37, "edge": "checked", "ec": 62, "ec2": 32, "esize": 0.026, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "sym": "radial", "layers": [{"t": "discs", "fit": true, "n": 4, "r": 0.56, "size": 0.21, "c": 31, "stroke": 31, "sw": 0.01}, {"t": "discs", "fit": true, "n": 4, "r": 0.74, "size": 0.214, "c": 32, "rot": 0.125, "stroke": 32, "sw": 0.009}, {"t": "disc", "r": 0.33, "c": 44, "rot": 0.1667, "n": 1}, {"t": "square", "s": 0.17, "c": 44, "stroke": 30, "sw": 0.018}, {"t": "square", "s": 0.07, "c": 30, "stroke": 62, "sw": 0.027, "n": 5, "rot": 0.0625}, {"t": "corners", "fit": true, "n": 4, "r": 0.92, "size": 0.1124, "c": 30, "shape": "tri", "stroke": 44, "sw": 0.021}]}, "blazon": "Vert, a star or — the House of Bëor. The first device made for a Man, and so the closest to Elvish work, though plainer and more earthbound. Mannish designs are symmetrical only from side to side, and press upward, where Elvish ones turn full circle.", "author": "Tolkien’s device for Bëor; colours unrecorded, drawn to the Mannish rule", "canon": false, "basis": "design", "fdm": "Björkman calls it the first device made for a Man and the most Elvish of them, being wholly symmetrical and in the male lozenge — yet plainer than Elvish work, and earthbound in its warm colours. He notes that Beor's friendship with Finrod is likely the reason his house had a device at all."}, "hador": {"label": "House of Hador", "cat": "The Kingdoms of Men", "sub": "The Three Houses of the Edain", "forge": {"shape": "lozenge", "field": 32, "edge": "plain", "ec": 59, "ew": 1.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "sym": "radial", "layers": [{"t": "corners", "fit": true, "n": 8, "r": 0.912, "size": 0.188, "c": 43, "shape": "tri", "rot": 0.75}, {"t": "darts", "fit": true, "n": 4, "r0": 0.108, "r1": 0.86, "w": 0.12, "barb": 0.5, "c": 45}, {"t": "darts", "fit": true, "n": 4, "r0": 0.18, "r1": 0.66, "w": 0.21, "barb": 0.35, "c": 44, "rot": 0.75}, {"t": "disc", "r": 0.28, "c": 63}, {"t": "disc", "r": 0.05, "c": 59, "n": 5}]}, "blazon": "Gules, a flame or — the House of Hador. Tolkien’s device for Hador burns in fiery colours, which have been read as an echo of Fingolfin’s, the house of Hador being his vassals.", "author": "Tolkien’s device tagged ‘Hador’, fiery in colour", "canon": false, "basis": "design", "fdm": "Björkman finds the reason for the design unclear, but discerns the fiery colours of Finwe and his heirs in it, Hador having been a great friend of Fingolfin; and notes the vertical symmetry, even to the two spearheads, of which the lower is the more pointed."}, "haleth": {"label": "House of Haleth", "cat": "The Kingdoms of Men", "sub": "The Three Houses of the Edain", "forge": {"shape": "lozenge", "field": 38, "edge": "plain", "ec": 38, "ew": 1.6, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "corners", "fit": true, "n": 2, "r": 0.8, "size": 0.392, "c": 39, "shape": "tri", "rot": 0.5, "stroke": 39, "sw": 0.05}, {"t": "corners", "fit": true, "n": 1, "r": 0.8, "size": 0.296, "c": 62, "shape": "tri", "rot": 0.25, "stroke": 38, "sw": 0.045}, {"t": "charge", "k": "tree", "size": 0.432, "c": 40, "ac": 44, "n": 5, "rot": 0.0625}, {"t": "scatter", "n": 2, "k": "flower", "r": 0.4, "size": 0.219, "c": 62, "ac": 62, "rot": 0.25}]}, "blazon": "Argent-grey, a tree entwined with a vine, two white flowers beneath — the House of Haleth. Tolkien’s drawing shows the tree, the vine wound about it, leaves or fruit among the boughs and two white flowers below, on a grey ground that may be the dark forest the Haladin loved. It is the one device that breaks his own rule: a lozenge, though it stands for a house and not a person.", "author": "Tolkien’s device noted ‘House of Haleth’", "canon": false, "basis": "design", "fdm": "Björkman describes a tree of no stated kind entwined with a trailer, a pair of white flowers, and orange dots that may be stylised nuts or leaves; and notes that this device breaks the rule Tolkien set, being a lozenge although it stands for a house and not a person."}, "beren": {"label": "Beren Erchamion", "cat": "The Kingdoms of Men", "sub": "The Three Houses of the Edain", "forge": {"shape": "lozenge", "field": 63, "edge": "plain", "ec": 42, "ew": 1.6, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "corners", "fit": true, "n": 4, "r": 0.9, "size": 0.312, "c": 42, "shape": "tri", "rot": 0.1667, "stroke": 62, "sw": 0.007}, {"t": "corners", "fit": true, "n": 1, "r": 0.88, "size": 0.364, "c": 41, "shape": "tri", "rot": 0.1667, "stroke": 41, "sw": 0.027}, {"t": "wedges", "fit": true, "n": 16, "r0": 0.04, "r1": 0.76, "w": 0.04, "c": 63, "rot": 0.03125, "stroke": 42, "sw": 0.009}, {"t": "petals", "n": 2, "r0": 0.16, "r1": 0.84, "w": 0.18, "bow": 0.57, "c": 43, "rot": 0.0625, "stroke": 59, "sw": 0.012}, {"t": "corners", "fit": true, "n": 1, "r": 0.6, "size": 0.236, "c": 62, "shape": "tri", "stroke": 62, "sw": 0.03, "rot": 0.375}, {"t": "disc", "r": 0.01, "c": 59, "rot": 0.125}, {"t": "charge", "k": "hand", "r": 0.46, "a": 0.25, "size": 0.212, "c": 43, "ac": 43, "n": 2}]}, "blazon": "Argent, the three peaks of Thangorodrim sable, a Silmaril above and a severed hand gules beneath — Beren Erchamion. The manuscript reads ‘Beren Gamlost / historical / plaque’: a personal lozenge made after his death to remember his deeds — the three-peaked mountain he came under, the jewel he cut from Morgoth’s crown, and the hand he lost holding it.", "author": "Tolkien’s device noted ‘Beren Gamlost / historical / plaque’", "canon": false, "basis": "design", "fdm": "Björkman reads the device downward: the three peaks of Thangorodrim looming above, the Silmaril that was cut from the Iron Crown, and beneath it the red hand reaching for the stone — which may as well be the hand Beren lost to Carcharoth. The star at the top he cannot account for, unless it foretells the fate of that jewel as the star of Earendil."}, "gondor": {"file": null, "label": "Arms of the Kings of Gondor", "canon": true, "blazon": "Argent, a tree eradicated sable (the White Tree) beneath seven mullets and a crown — the arms of Elendil's line (LotR)", "author": "Escudo Gondor.svg: *Escudo Gondor.png: Vëon Menelion\nderivat", "cat": "The Kingdoms of Men", "sub": "Gondor", "basis": "design", "fdm": "Björkman reads the seven stars as the seven palantiri Elendil brought from Numenor, and the White Tree as any of the descendants of Nimloth that grew in Minas Ithil and afterwards Minas Tirith; the Silver Crown was added by the Kings as the chief mark of royalty, and fell out of general use until Elessar.", "forge": {"shape": "square", "field": 62, "edge": "plain", "ec": 33, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "tree", "size": 0.3216, "c": 63, "ac": 58, "n": 3}, {"t": "scatter", "n": 7, "k": "star", "r": 0.65, "size": 0.033, "c": 63, "ac": 63, "rot": 0.0833}]}}, "elendilbadge": {"label": "The badge of Elendil — L·ND·L", "cat": "The Kingdoms of Men", "sub": "Gondor", "canon": false, "basis": "text", "blazon": "Argent, the letters L·ND·L sable — Elendil's own name written without its vowels, which he bore as a badge and set upon his seals. The same letters stood upon his tomb on Amon Anwar.", "tolkien": "The letters were (L · ND · L): Elendil's name without vowel-marks, which he used as a badge, and a device upon his seals", "author": "Tolkien's own note in Unfinished Tales, Cirion and Eorl", "fdm": "Björkman records the badge and its use upon the tomb at Amon Anwar.", "forge": {"shape": "circle", "field": 63, "edge": "plain", "ec": 63, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "tengwa", "r": 0.4, "a": 0.5, "size": 0.312, "c": 62, "ac": 63, "tser": 4, "tgrade": 2, "rot": 0.0625, "n": 3}, {"t": "charge", "k": "tengwa", "size": 0.312, "c": 32, "ac": 62, "tser": 1, "tgrade": 3, "rot": 0.25}, {"t": "charge", "k": "tengwa", "r": 0.38, "a": 0.0, "size": 0.33, "c": 62, "ac": 33, "tser": 2, "tgrade": 1, "n": 5, "rot": 0.375}]}}, "steward": {"file": "heraldry/steward.svg", "label": "Banner of the Stewards of Gondor", "canon": true, "blazon": "A plain white banner without charge or device — the Stewards of Gondor (LotR V.1)", "src": "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Stewards_of_Gondor.svg", "license": "CC BY-SA 4.0", "author": "Chiswick Chap", "cat": "The Kingdoms of Men", "sub": "Gondor", "basis": "artwork", "fdm": "Björkman notes that the Stewards never took a device of their own, their banners being white and bare; but that they had a seal — see the Seal of the Stewards beside this."}, "stewardseal": {"label": "The Seal of the Stewards — R·ND·R", "cat": "The Kingdoms of Men", "sub": "Gondor", "canon": false, "basis": "text", "blazon": "Argent, the letters R·ND·R sable beneath three stars — the seal of the Stewards of Gondor, signifying arandur, the king's servant. It was under this seal that Cirion summoned the Éothéod.", "tolkien": "The letters R· ND ·R surmounted by three stars, signifying arandur (king's servant), steward", "author": "Tolkien's own note in Unfinished Tales, Cirion and Eorl", "fdm": "Björkman sets it against the plain white banner: the Stewards took no device, but they had a seal. It answers Elendil's own badge, L·ND·L, letter for letter.", "forge": {"shape": "circle", "field": 63, "edge": "plain", "ec": 63, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "scatter", "n": 4, "k": "star", "r": 0.68, "size": 0.055, "c": 57, "ac": 62, "rot": 0.5}, {"t": "charge", "k": "tengwa", "r": 0.38, "a": 0.5, "size": 0.438, "c": 62, "ac": 57, "tser": 1, "tgrade": 2}, {"t": "charge", "k": "tengwa", "size": 0.2976, "c": 62, "ac": 62, "tser": 3, "tgrade": 1, "n": 5, "rot": 0.1667}, {"t": "charge", "k": "tengwa", "r": 0.36, "a": 0.0, "size": 0.38, "c": 62, "ac": 63, "tser": 2, "tgrade": 3, "rot": 0.25, "n": 3}]}}, "swan": {"file": null, "label": "Swan-ship of Dol Amroth", "canon": true, "blazon": "Azure, a swan-ship argent — the Princes of Dol Amroth (LotR V.1)", "author": "POL_Zelechow_COA.svg: User:Bastianow\nFlag_of_Saint-Pierre_an", "cat": "The Kingdoms of Men", "sub": "Gondor", "basis": "design", "fdm": "Björkman records the city's two emblems, a white ship and a swan, sometimes combined as a white swanship on blue water; and notes that a swanship of this kind is painted by Tolkien himself in his Taniquetil. Dol Amroth was the haven from which the Elves of Lorien took ship into the West.", "forge": {"shape": "square", "field": 34, "edge": "plain", "ec": 34, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "swanship", "size": 0.45, "c": 63, "ac": 63, "rot": 0.75}]}}, "rohan": {"file": null, "label": "Arms of the Mark of Rohan", "canon": true, "blazon": "Vert, a horse courant argent — the Mark of Rohan (LotR)", "author": "Pbroks13", "cat": "The Kingdoms of Men", "sub": "Rohan", "basis": "design", "fdm": "Björkman reads the horse as one of the Mearas, the white horses of the Kings; and notes that the Rohirrim were neither Edain nor of the Realms in Exile, but came at the end to hold land that had been Gondor's.", "forge": {"shape": "square", "field": 48, "edge": "plain", "ec": 63, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "horse", "size": 0.36, "c": 63, "ac": 63, "rot": 0.5, "n": 3}]}}, "durin": {"label": "Emblems of Durin's Folk", "canon": false, "blazon": "Sable, an anvil and crown beneath seven stars — the emblems of Durin upon the Doors of Durin. The 1966 Index describes them as ‘Seven stars (above a crown and anvil)’; the eight-rayed stars are the Plough, and the crown of seven stars is the one Durin saw in Mirrormere. A family emblem is set within a square, by Tolkien’s rule.", "author": "reconstructed from the Doors of Durin inscription-drawing (hammer, anvil, crown, seven stars)", "cat": "The Khazâd", "sub": "Durin's Folk", "forge": {"shape": "circle", "field": 63, "edge": "plain", "ec": 63, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "crown", "r": 0.3, "a": -0.25, "size": 0.424, "c": 63, "ac": 62, "stroke": 62, "sw": 0.004}, {"t": "scatter", "n": 7, "k": "star", "r": 0.6, "size": 0.05, "c": 62, "ac": 62, "rot": 0.5}, {"t": "charge", "k": "anvil", "r": 0.5, "a": 0.25, "size": 0.28, "c": 63, "ac": 63, "stroke": 62, "sw": 0.0215, "n": 5}]}, "basis": "design", "fdm": "Björkman notes that all Dwarvish heraldry known to us comes from this one carving on the Doors of Durin; that the seven stars are the Valacirca, the Plough, which Durin saw crowning his head reflected in Kheled-zaram; and that hammer and anvil are the tribute of the Dwarves to Aule, who made them."}, "morgoth": {"label": "Morgoth — sable unblazoned", "cat": "The Enemy", "sub": "Angband & Mordor", "forge": {"shape": "circle", "field": 62, "edge": "plain", "ec": 62, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": []}, "blazon": "Sable, unblazoned — Morgoth. Alone of all the powers he bore no device at all: ‘his vast shield, sable unblazoned’, ‘black without a blazon’, ‘his vast black unblazoned shield’. The blackness is not a colour here but the want of one — he meant not to rule the world but to unmake it.", "author": "blazoned in the Lays of Beleriand, Quenta Noldorinwa, Quenta Silmarillion and the Grey Annals", "canon": false, "basis": "text", "fdm": "Björkman sets the want of any charge beside Morgoth's nature: the blank sable is fitting for the personification of Darkness, and hints at his nihilism — he did not mean to rule the world but to unmake it. The House of the Mole bore the same bare black."}, "redeye": {"file": null, "label": "The Red Eye of Sauron", "canon": true, "blazon": "Gules, the lidless Red Eye — the sign of Sauron and Mordor (LotR)", "author": "Flag_of_Mordor.svg: *Wappen_Erbstetten.png: Source: http://w", "cat": "The Enemy", "sub": "Angband & Mordor", "basis": "design", "fdm": "Björkman notes that the Red Eye stood for Sauron even when the speaker meant the person and not the sign, and that Tolkien drew the eye himself on the dustjacket designs for The Lord of the Rings.", "forge": {"shape": "circle", "field": 62, "edge": "plain", "ec": 62, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "eye", "size": 0.412, "c": 60, "ac": 63, "rot": 0.5}]}}, "morgul": {"file": null, "label": "Device of Minas Morgul", "canon": true, "blazon": "Sable, the moon disfigured by a ghastly face of death — Minas Morgul. The moon is what remains of Minas Ithil, the Tower of the Moon, which the city was before Sauron took it.", "author": "Flag_of_Minas_Morgul.svg: *Pirate_Flag_of_Jack_Rackham.svg:", "cat": "The Enemy", "sub": "Angband & Mordor", "basis": "design", "fdm": "Björkman notes that the exact arrangement of skull and moon cannot be told, and that the moon is certainly a survival from before the taking of the city.", "forge": {"shape": "square", "field": 62, "edge": "plain", "ec": 58, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "skullmoon", "size": 0.448, "c": 63, "ac": 63, "rot": 0.5, "n": 7}]}}, "flyingcorps": {"label": "Emblem of the Flying Corps of Mordor", "cat": "The Enemy", "sub": "Angband & Mordor", "canon": false, "basis": "design", "blazon": "Sable, outspread wings set with eyes as upon a peacock's train, a body between them — the emblem Tolkien drew and titled for Sauron's air-borne troops. He wrote 'seen from below' beside it.", "author": "Tolkien's own drawing, described in Hammond & Scull, Patterns and Devices", "fdm": "Björkman calls it unique in all the known heraldry of Arda for its complexity, and reads the scribble 'seen from below' as meaning the emblem portrays one of Sauron's flying creatures from underneath — the small horns between wings and body being then the feet of a rider. The eyes upon the wings are Sauron's own, multiplied.", "forge": {"shape": "circle", "field": 63, "edge": "plain", "ec": 63, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "petals", "n": 2, "r0": 0.12, "r1": 0.72, "w": 0.31, "bow": 0.61, "swirl": 0.05, "c": 62, "rot": 0.25}, {"t": "petals", "n": 2, "r0": 0.08, "r1": 0.72, "w": 0.19, "bow": 0.55, "swirl": -0.05, "c": 62, "rot": 0.25}, {"t": "petals", "n": 2, "r0": 0.156, "r1": 0.68, "w": 0.045, "bow": 0.44, "c": 62, "rot": 0.25}, {"t": "scatter", "n": 5, "k": "gem", "r": 0.46, "size": 0.018, "c": 56, "ac": 63}, {"t": "wedges", "n": 2, "r0": 0.0, "r1": 0.264, "w": 0.088, "c": 43, "rot": 0.75}]}}, "saruman": {"file": "heraldry/saruman.svg", "label": "Emblem of Saruman (certh S)", "canon": true, "blazon": "The certh 'S' — the mark of Saruman", "author": "Certh 35.svg: Tasnu Arakun\n\nderivative work: Rondador (talk)", "cat": "The Enemy", "sub": "Isengard", "basis": "artwork", "fdm": "The certh S of Saruman's soldiery, set upon their helms.", "forge": {"shape": "circle", "field": 63, "edge": "plain", "ec": 62, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "rune", "size": 0.62, "c": 62, "ac": 62, "tser": 2, "tgrade": 1, "rot": 0.5, "n": 2}]}, "src": "https://commons.wikimedia.org/wiki/File:Emblema_Saruman.svg", "license": "Public domain"}, "whitehand": {"file": null, "label": "The White Hand of Saruman", "canon": true, "blazon": "Sable, a white hand — the sign of Saruman and Isengard (LotR)", "author": "Meuble_héraldique_Main.svg: Zigeuner\nderivative work: Rondad", "cat": "The Enemy", "sub": "Isengard", "basis": "design", "fdm": "Björkman notes that Saruman's soldiers bore an S-certh on their helms and a small white hand on their black shields, and that the hand as drawn is taken from Tolkien's own proposed dustjacket for The Two Towers.", "forge": {"shape": "circle", "field": 62, "edge": "plain", "ec": 62, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "hand", "size": 0.328, "c": 63, "ac": 58}]}}, "serpent": {"file": null, "label": "The Black Serpent of Harad", "canon": true, "blazon": "Gules, a black serpent — the Haradrim of the South (LotR)", "author": "Serp_roja.gif: Mandos\nEscudo_Gondor.svg: *Escudo_Gondor.png:", "cat": "The Enemy", "sub": "the South & East", "basis": "design", "fdm": "Björkman notes that the device fell with its bearer: the chieftain of the Haradrim and his men were ridden down by the Rohirrim on the Pelennor, 'and the black serpent foundered'.", "forge": {"shape": "square", "field": 43, "edge": "plain", "ec": 43, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "serpent", "size": 0.402, "c": 62, "ac": 43, "rot": 0.75}]}}, "gandalf": {"file": null, "label": "Emblem of Gandalf (certh G)", "canon": true, "blazon": "The certh 'G' — the wandering-mark of Gandalf", "author": "Certh 19.svg: Tasnu Arakun\nderivative work: Rondador (talk)", "cat": "The Istari", "sub": "the Wandering Wizards", "basis": "design", "fdm": "Björkman records that Gandalf used both a G-tengwa and a G-certh as his seals, and seems to have preferred the certh: the hobbit-children knew the tengwa on his carts at Hobbiton, but at Bree and on Weathertop he scratched the certh.", "forge": {"shape": "circle", "field": 63, "edge": "plain", "ec": 62, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "rune", "size": 0.7, "c": 62, "ac": 62, "tser": 1, "tgrade": 3, "rot": 0.0833}]}}, "gandalftengwa": {"label": "The G-tengwa of Gandalf", "cat": "The Istari", "sub": "the Wandering Wizards", "canon": false, "basis": "text", "blazon": "The tengwa ungwë, which carries the sound g — the second of Gandalf's two marks. It is drawn here from its own structure, a telco and a doubled closed lúva, after App E, not copied from any type. The hobbit-children of Hobbiton knew this one on his carts and his fireworks; at Bree and on Weathertop he scratched the certh instead.", "author": "Björkman, who records that Gandalf used both a G-tengwa and a G-certh as seals", "fdm": "'Gandalf used both a G-tengwa and a G-certh as his seals, though he seems to have preferred the certh.'", "forge": {"shape": "circle", "field": 63, "edge": "plain", "ec": 62, "ew": 0.4, "points": 0, "charge": "none", "mandala": 0, "gems": 0, "rings": 0, "layers": [{"t": "charge", "k": "tengwa", "size": 0.78, "c": 62, "ac": 62, "tser": 3, "tgrade": 4, "rot": 0.75}]}}};
 window.ARDA_HERALD_ASSIGN={"finwe": "finwe", "turgon": "turgon", "tuor": "tuor", "maeglin": "maeglin", "egalmoth": "egalmoth"};
 window.ardaEmblem=function(key,size){var h=window.ARDA_HERALD[key];if(!h)return"";
  var s=size||40;
@@ -47,6 +47,15 @@ else document.addEventListener("DOMContentLoaded",window.ardaSwapAllEmblems);
 // quoted in Hammond & Scull and in Zurek, 'Heraldry in J.R.R. Tolkien's Legendarium',
 // The Coat of Arms 4th ser. 5 (2022), 145-182. No artwork is copied; the shapes are drawn
 // from arithmetic here.
+// A square device on the plates fills its panel almost edge to edge; 0.84 left a
+// margin the paintings do not have. One constant so the four places cannot drift apart.
+var ARDA_SQ=0.94;
+// Measured off every plate: Tolkien's lozenge is a SQUARE standing on its point --
+// the ink box of all thirteen lozenge plates is exactly 1.00 wide for 1.00 tall, where
+// the forge had been drawing 0.82.  His Gondolin shields are 0.50 -- twice as tall as
+// wide -- where the forge drew 0.75.  Both are corrected here, once.
+var ARDA_LZ=1.00;      // lozenge half-width as a fraction of R
+var ARDA_SHW=0.495;    // shield half-width; height stays 0.92R above, 1.06R below
 window.ARDA_PAL=[["argent","#e8e6df"],["or","#d8b13c"],["azure","#2b4a8c"],["vert","#2e6b34"],
 ["sable","#191512"],["gules","#8f1c1c"],["purpure","#5a3a7a"],["silver","#b9c0c7"],
 ["scarlet","#c1272d"],["emerald","#1f7a5a"],["celestial","#6fa8dc"],["deep gold","#a9791c"],
@@ -62,14 +71,30 @@ window.ARDA_PAL=[["argent","#e8e6df"],["or","#d8b13c"],["azure","#2b4a8c"],["ver
 ["blood red","#cc0000"],["slate","#666699"],["pale grey","#cccccc"],["mid grey","#999999"],
 ["deep blue","#0000cc"],["night blue","#000099"],["leaf green","#33cc00"],["forest","#006600"],
 ["khaki","#999966"],["sea green","#009966"],["russet","#cc6600"],["dark red","#990000"],
-["pale violet","#ccccff"],["signal red","#ff0000"],["orange","#ff9900"],["cornflower","#3366cc"]];
+["pale violet","#ccccff"],["signal red","#ff0000"],["orange","#ff9900"],["cornflower","#3366cc"],
+// the remaining inks of the plates, added so a device can be drawn in the very colours
+// the designs are painted in rather than in an approximation of them
+["gold","#ffcc00"],["deep orange","#ff6600"],["bright green","#00cc00"],["green","#009900"],
+["yellow","#ffff00"],["pale yellow","#ffff99"],["moss","#669966"],["bright blue","#3399ff"],
+["light blue","#0099ff"],["turquoise","#00cc99"],["grey","#666666"],["dark grey","#333333"],
+["light grey","#cecece"],["blush","#ff9999"],["vermilion","#ff3300"],["old gold","#cc9900"],
+["pure black","#000000"],["pure white","#ffffff"],
+// the steps the plates shade their blues through -- a painted device is rarely one blue,
+// and the bands/petals of Idril's cornflower and Earendil's star need the whole ladder
+["blue 1","#0033ff"],["blue 2","#0066ff"],["blue 3","#0099cc"],["blue 4","#0066cc"],
+["blue 5","#0033cc"],["blue 6","#006699"],["blue 7","#3333cc"],["blue 8","#3333ff"],
+["blue 9","#6666cc"],["pale green","#66ff66"],
+// a last handful the plates use that fall off the web-safe grid
+["deep night","#00009c"],["ice blue","#00ceff"],["azure ray","#009cff"],["blue flash","#0031ff"],
+["lime","#ccff66"],["spring green","#99ff33"],["bronze","#996600"],["pine","#003333"],
+["purple","#990099"]];
 window.ARDA_CHARGES=["none","star","sun","wingedsun","moon","wingedmoon","flame","flower",
 "cornflower","elanor","harp","torch","serpents","crown","anvil","hammer","gem","silmaril",
 "tree","vinetree","mountain","anvilcrown","wing","ship","arrow","eye","hand","leaf",
 // charges the Gondolin muster and the Third-Age emblems require
 "rayedsun","heart","arrowhead","sevengem","fountain","pillar","tower","opalstone",
-"skullmoon","peacockwings","crownflowers","letters","tengwa","moonsunheart"];
-window.ARDA_CHARGE_LABEL={none:"nothing",star:"a star",sun:"a sun",wingedsun:"a winged sun",
+"skullmoon","peacockwings","crownflowers","letters","tengwa","moonsunheart","horse","swanship","serpent","rune"];
+window.ARDA_CHARGE_LABEL={none:"nothing",serpent:"a serpent",rune:"a certh",horse:"a horse at the gallop",swanship:"a swan-prowed ship",star:"a star",sun:"a sun",wingedsun:"a winged sun",
 moon:"a crescent moon",wingedmoon:"a winged moon",flame:"a flame",flower:"a flower",
 cornflower:"a cornflower",elanor:"an elanor",harp:"a harp",torch:"a torch",
 serpents:"two serpents",crown:"a crown",anvil:"an anvil",hammer:"a hammer",gem:"a gem",
@@ -188,12 +213,33 @@ window.ardaChargePath=function(kind,cx,cy,r,fill,ac){
     +' M'+F(cx-r*0.72)+','+F(cy-r*0.2)+' L'+F(cx+r*0.72)+','+F(cy-r*0.2)+'" stroke="#fffdf6" stroke-width="1" opacity=".55"/>';
   case"silmaril":return star(8,r,r*0.34)+'<circle cx="'+cx+'" cy="'+cy+'" r="'+F(r*0.30)+'" fill="'+ac+'"/>'
     +'<circle cx="'+F(cx-r*0.09)+'" cy="'+F(cy-r*0.09)+'" r="'+F(r*0.1)+'" fill="#fffdf6" opacity=".8"/>';
-  case"tree":return '<path d="M'+cx+','+F(cy+r)+' V'+F(cy-r*0.3)
-    +' M'+cx+','+F(cy-r*0.1)+' q-'+F(r*0.5)+',-'+F(r*0.3)+' -'+F(r*0.6)+',-'+F(r*0.7)
-    +' M'+cx+','+F(cy-r*0.1)+' q'+F(r*0.5)+',-'+F(r*0.3)+' '+F(r*0.6)+',-'+F(r*0.7)
-    +' M'+cx+','+F(cy-r*0.4)+' q-'+F(r*0.35)+',-'+F(r*0.2)+' -'+F(r*0.4)+',-'+F(r*0.5)
-    +' M'+cx+','+F(cy-r*0.4)+' q'+F(r*0.35)+',-'+F(r*0.2)+' '+F(r*0.4)+',-'+F(r*0.5)
-    +'" stroke="'+fill+'" stroke-width="'+F(r*0.1)+'" fill="none" stroke-linecap="round"/>';
+  case"tree":{
+   // A trunk rising from a footing, four pairs of boughs arching outward and up, each
+   // ending in a leaf; the crown closes with a single upright shoot. Built from the
+   // proportions rather than drawn freehand, so it scales without going lumpy.
+   var T=function(x,y){return F(cx+r*x)+","+F(cy+r*y)};
+   var wtrunk=r*0.085, out="";
+   out+='<path d="M'+T(-0.10,0.96)+' L'+T(-0.055,0.10)+' L'+T(0.055,0.10)+' L'+T(0.10,0.96)
+       +' Z" fill="'+fill+'"/>';                                   // the trunk
+   out+='<path d="M'+T(-0.34,0.99)+' Q'+T(0,0.86)+' '+T(0.34,0.99)
+       +' Q'+T(0,0.92)+' '+T(-0.34,0.99)+' Z" fill="'+fill+'"/>';  // the footing
+   var BOUGH=[[0.12,0.62,0.30],[-0.08,0.86,0.26],[-0.28,0.74,0.21],[-0.46,0.50,0.17]];
+   for(var bi=0;bi<BOUGH.length;bi++){
+    var y0=BOUGH[bi][0], sp=BOUGH[bi][1], lf=BOUGH[bi][2];
+    for(var sg=-1;sg<=1;sg+=2){
+     var x1=sg*sp, y1=y0-0.42;
+     out+='<path d="M'+T(sg*0.05,y0)+' Q'+T(sg*sp*0.85,y0-0.06)+' '+T(x1,y1)
+         +'" stroke="'+fill+'" stroke-width="'+F(wtrunk*0.62)+'" fill="none" stroke-linecap="round"/>';
+     // a leaf at the tip: two arcs meeting at a point, hanging outward
+     out+='<path d="M'+T(x1,y1)+' Q'+T(x1+sg*lf*0.8,y1-lf*0.5)+' '+T(x1+sg*lf*0.25,y1-lf*1.25)
+         +' Q'+T(x1-sg*lf*0.35,y1-lf*0.5)+' '+T(x1,y1)+' Z" fill="'+fill+'"/>';
+    }
+   }
+   out+='<path d="M'+T(0,0.10)+' L'+T(0,-0.72)+'" stroke="'+fill+'" stroke-width="'+F(wtrunk*0.7)
+       +'" fill="none" stroke-linecap="round"/>';
+   out+='<path d="M'+T(0,-0.70)+' Q'+T(0.20,-0.86)+' '+T(0.06,-1.02)
+       +' Q'+T(-0.20,-0.86)+' '+T(0,-0.70)+' Z" fill="'+fill+'"/>';   // the topmost leaf
+   return out;}
   case"vinetree":// a tree with a vine wound about it — the House of Haleth
    return '<path d="M'+cx+','+F(cy+r*0.95)+' V'+F(cy-r*0.25)
     +' M'+cx+','+F(cy-r*0.05)+' q-'+F(r*0.46)+',-'+F(r*0.28)+' -'+F(r*0.56)+',-'+F(r*0.66)
@@ -209,7 +255,29 @@ window.ardaChargePath=function(kind,cx,cy,r,fill,ac){
    return '<path d="M'+F(cx-r)+','+F(cy+r*0.72)+' L'+F(cx-r*0.56)+','+F(cy-r*0.34)
     +' L'+F(cx-r*0.24)+','+F(cy+r*0.16)+' L'+cx+','+F(cy-r*0.86)+' L'+F(cx+r*0.24)+','+F(cy+r*0.16)
     +' L'+F(cx+r*0.56)+','+F(cy-r*0.34)+' L'+F(cx+r)+','+F(cy+r*0.72)+'Z" fill="'+fill+'"/>';
-  case"wing":return wings(r);
+  case"wing":{
+   // one wing raised: a single closed shape whose trailing edge is scalloped into
+   // feathers, with two drawn courses across it rather than feathers floating free
+   var Wg=function(x,y){return F(cx+r*x)+","+F(cy+r*y)};
+   var d='M'+Wg(-0.80,0.58)+
+     ' Q'+Wg(-0.56,-0.34)+' '+Wg(0.26,-0.78)+
+     ' Q'+Wg(0.70,-0.96)+' '+Wg(0.92,-0.72)+' ';
+   // the trailing edge comes back in five scallops
+   var pts=[[0.60,-0.40],[0.30,-0.10],[0.02,0.16],[-0.28,0.40],[-0.58,0.60]];
+   var px=0.92,py=-0.72;
+   for(var wi=0;wi<pts.length;wi++){
+    var qx=pts[wi][0],qy=pts[wi][1];
+    d+='Q'+Wg((px+qx)/2+0.10,(py+qy)/2+0.10)+' '+Wg(qx,qy)+' ';
+    px=qx;py=qy;
+   }
+   d+='Z';
+   var out='<path d="'+d+'" fill="'+fill+'"/>';
+   // two courses drawn across the wing, in the accent, as the plates mark them
+   out+='<path d="M'+Wg(-0.60,0.30)+' Q'+Wg(-0.10,-0.16)+' '+Wg(0.62,-0.50)+
+     '" stroke="'+ac+'" stroke-width="'+F(r*0.045)+'" fill="none" stroke-linecap="round"/>';
+   out+='<path d="M'+Wg(-0.68,0.48)+' Q'+Wg(-0.14,0.04)+' '+Wg(0.72,-0.62)+
+     '" stroke="'+ac+'" stroke-width="'+F(r*0.035)+'" fill="none" stroke-linecap="round"/>';
+   return out;}
   case"ship":return '<path d="M'+F(cx-r*0.85)+','+F(cy+r*0.28)+' q'+F(r*0.85)+','+F(r*0.5)+' '+F(r*1.7)+',0 Z" fill="'+fill+'"/>'
     +'<path d="M'+cx+','+F(cy+r*0.2)+' V'+F(cy-r*0.8)+'" stroke="'+fill+'" stroke-width="'+F(r*0.08)+'"/>'
     +'<path d="M'+cx+','+F(cy-r*0.72)+' q'+F(r*0.6)+','+F(r*0.3)+' 0,'+F(r*0.72)+'Z" fill="'+ac+'"/>';
@@ -219,12 +287,23 @@ window.ardaChargePath=function(kind,cx,cy,r,fill,ac){
   case"eye":return '<path d="M'+F(cx-r)+','+cy+' q'+F(r)+',-'+F(r*0.82)+' '+F(r*2)+',0 q-'+F(r)+','+F(r*0.82)
     +' -'+F(r*2)+',0Z" fill="'+fill+'"/><circle cx="'+cx+'" cy="'+cy+'" r="'+F(r*0.3)+'" fill="'+ac+'"/>'
     +'<ellipse cx="'+cx+'" cy="'+cy+'" rx="'+F(r*0.1)+'" ry="'+F(r*0.3)+'" fill="#191512"/>';
-  case"hand":return '<path d="M'+F(cx-r*0.42)+','+F(cy+r*0.9)+' V'+F(cy-r*0.1)
-    +' q0,-'+F(r*0.24)+' '+F(r*0.2)+',0 V'+F(cy-r*0.72)+' q0,-'+F(r*0.2)+' '+F(r*0.18)+',0 V'+F(cy-r*0.1)
-    +' q'+F(r*0.02)+',-'+F(r*0.8)+' '+F(r*0.2)+',0 V'+F(cy-r*0.16)
-    +' q'+F(r*0.04)+',-'+F(r*0.6)+' '+F(r*0.2)+',0 V'+F(cy+r*0.9)+'Z" fill="'+fill+'"/>';
-  // ---- charges added from the Gondolin muster and the Third-Age emblems ----
-  // "the house of the Golden Flower who bore a rayed sun upon their shield" (FoG)
+  case"hand":{
+   // an open hand: a palm, four fingers of graded length, a thumb set out to one side
+   var Hd=function(x,y){return F(cx+r*x)+","+F(cy+r*y)};
+   var out='<path d="M'+Hd(-0.40,0.30)+' Q'+Hd(-0.44,0.96)+' '+Hd(0,0.99)
+     +' Q'+Hd(0.44,0.96)+' '+Hd(0.40,0.30)+' Z" fill="'+fill+'"/>';   // the palm
+   var FING=[[-0.28,-0.50],[-0.09,-0.76],[0.10,-0.70],[0.28,-0.44]];  // x, tip height
+   for(var fi=0;fi<FING.length;fi++){
+    var fx=FING[fi][0], ty=FING[fi][1], fw=r*0.115;
+    out+='<path d="M'+Hd(fx-0.075,0.34)+' L'+Hd(fx-0.075,ty+0.09)
+        +' Q'+Hd(fx,ty-0.06)+' '+Hd(fx+0.075,ty+0.09)
+        +' L'+Hd(fx+0.075,0.34)+' Z" fill="'+fill+'"/>';
+   }
+   // the thumb, angled away from the palm
+   out+='<path d="M'+Hd(-0.38,0.44)+' Q'+Hd(-0.80,0.20)+' '+Hd(-0.74,-0.10)
+       +' Q'+Hd(-0.62,-0.22)+' '+Hd(-0.52,-0.06)
+       +' Q'+Hd(-0.56,0.14)+' '+Hd(-0.26,0.36)+' Z" fill="'+fill+'"/>';
+   return out;}
   case"rayedsun":return rays(16,r*0.34,r,0.045)+rays(8,r*0.40,r*0.86,0.085)
     +'<circle cx="'+cx+'" cy="'+cy+'" r="'+F(r*0.34)+'" fill="'+fill+'"/>'
     +'<circle cx="'+cx+'" cy="'+cy+'" r="'+F(r*0.22)+'" fill="'+ac+'" opacity=".7"/>';
@@ -291,20 +370,27 @@ window.ardaChargePath=function(kind,cx,cy,r,fill,ac){
     +'<path d="M'+F(cx-r*0.16)+','+F(cy+r*0.2)+' h'+F(r*0.32)+' v'+F(r*0.4)+' h-'+F(r*0.32)+'Z" fill="'+ac+'" opacity=".6"/>';
   // "a moon disfigured by a ghastly face of death" (LotR VI, Minas Morgul)
   // "a moon disfigured by a ghastly face of death" (LotR VI.1, Minas Morgul)
-  case"skullmoon":var sm='<circle cx="'+cx+'" cy="'+cy+'" r="'+F(r*0.94)+'" fill="'+fill+'"/>';
-    // the skull: cranium, eye-pits, nasal hollow, teeth
-    sm+='<path d="M'+F(cx-r*0.46)+','+F(cy+r*0.10)+' a '+F(r*0.46)+' '+F(r*0.52)+' 0 1 1 '+F(r*0.92)+',0'
-      +' q0,'+F(r*0.30)+' -'+F(r*0.16)+','+F(r*0.36)+' h-'+F(r*0.60)+' q-'+F(r*0.16)+',-'+F(r*0.06)+' -'+F(r*0.16)+',-'+F(r*0.36)+'Z" fill="'+ac+'"/>';
-    sm+='<ellipse cx="'+F(cx-r*0.19)+'" cy="'+F(cy-r*0.06)+'" rx="'+F(r*0.13)+'" ry="'+F(r*0.16)+'" fill="'+fill+'"/>'
-      +'<ellipse cx="'+F(cx+r*0.19)+'" cy="'+F(cy-r*0.06)+'" rx="'+F(r*0.13)+'" ry="'+F(r*0.16)+'" fill="'+fill+'"/>';
-    sm+='<path d="M'+cx+','+F(cy+r*0.06)+' l'+F(r*0.08)+','+F(r*0.16)+' h-'+F(r*0.16)+'Z" fill="'+fill+'"/>';
-    for(var ti=-2;ti<3;ti++)sm+='<rect x="'+F(cx+ti*r*0.10-r*0.03)+'" y="'+F(cy+r*0.30)+'" width="'+F(r*0.06)+'" height="'+F(r*0.13)+'" fill="'+fill+'"/>';
-    // the horns of the waning moon, about the face
-    sm+='<path d="M'+F(cx-r*0.86)+','+F(cy-r*0.44)+' a '+F(r*0.98)+' '+F(r*0.98)+' 0 0 0 0 '+F(r*0.88)
-      +'" stroke="'+ac+'" fill="none" stroke-width="'+F(r*0.10)+'" opacity=".85"/>';
-    return sm;
-  // the emblem preserved for Sauron's flying corps: wings set with eyes, "seen from below"
-  // the emblem preserved for Sauron's flying corps: wings set with eyes, "seen from below"
+  case"skullmoon":{
+   // a skull against a crescent moon: the moon is drawn as a crescent -- two arcs
+   // meeting at their horns -- and not as a disc with something laid over it
+   var Sk=function(x,y){return F(cx+r*x)+","+F(cy+r*y)};
+   var Rm=r*0.94, out="";
+   out+='<path d="M'+Sk(0.30,-0.89)+
+     ' A'+F(Rm)+','+F(Rm)+' 0 1 0 '+Sk(0.30,0.89)+
+     ' A'+F(r*0.74)+','+F(r*0.92)+' 0 1 1 '+Sk(0.30,-0.89)+
+     ' Z" fill="'+fill+'"/>';                       // the crescent
+   var hx=-0.10;                                    // the skull sits within the horns
+   out+='<path d="M'+Sk(hx-0.46,0.10)+' a '+F(r*0.46)+' '+F(r*0.52)+' 0 1 1 '+F(r*0.92)+',0'
+     +' q0,'+F(r*0.30)+' -'+F(r*0.16)+','+F(r*0.36)+' h-'+F(r*0.60)
+     +' q-'+F(r*0.16)+',-'+F(r*0.06)+' -'+F(r*0.16)+',-'+F(r*0.36)+' Z" fill="'+fill+'"/>';
+   out+='<ellipse cx="'+F(cx+r*(hx-0.19))+'" cy="'+F(cy-r*0.06)+'" rx="'+F(r*0.13)+'" ry="'+F(r*0.16)+'" fill="'+ac+'"/>'
+     +'<ellipse cx="'+F(cx+r*(hx+0.19))+'" cy="'+F(cy-r*0.06)+'" rx="'+F(r*0.13)+'" ry="'+F(r*0.16)+'" fill="'+ac+'"/>'
+     +'<path d="M'+Sk(hx,0.14)+' l-'+F(r*0.08/r)+',0" stroke="'+ac+'" stroke-width="'+F(r*0.10)+'"/>'
+     +'<path d="M'+Sk(hx-0.05,0.16)+' L'+Sk(hx+0.05,0.16)+' L'+Sk(hx,0.02)+' Z" fill="'+ac+'"/>';
+   for(var ti=0;ti<5;ti++)
+    out+='<rect x="'+F(cx+r*(hx-0.22+ti*0.09))+'" y="'+F(cy+r*0.34)+'" width="'+F(r*0.05)+
+      '" height="'+F(r*0.13)+'" fill="'+ac+'"/>';
+   return out;}
   case"peacockwings":var pw="";
     [-1,1].forEach(function(sg){
       pw+='<path d="M'+cx+','+F(cy-r*0.10)+' C'+F(cx+sg*r*0.50)+','+F(cy-r*0.62)+' '
@@ -369,6 +455,86 @@ window.ardaChargePath=function(kind,cx,cy,r,fill,ac){
   // seal (R.ND.R), the wizards' single runes. Drawn as text, not copied artwork.
   // NOTE: keep this case LAST, immediately above default -- it was silently deleted once
   // by a later edit whose slice ran from peacockwings to the crown-flowers comment.
+  case"horse":{
+   // A horse at the gallop, facing left, after the banner of the Mark.
+   // The outline is walked once, clockwise. Two lines make the neck and they are set
+   // far enough apart to keep it: the CREST runs from the poll back to the withers,
+   // the THROAT from the jaw forward to the chest, and the horse fails at once if
+   // those two are brought together -- which is what went wrong the first two times.
+   var Ho=function(x,y){return F(cx+r*x)+","+F(cy+r*y)};
+   var d='M'+Ho(-0.96,-0.34)+                        // the muzzle
+    ' L'+Ho(-0.88,-0.52)+                            // up the face
+    ' Q'+Ho(-0.80,-0.68)+' '+Ho(-0.68,-0.66)+        // the poll
+    ' L'+Ho(-0.62,-0.80)+' L'+Ho(-0.54,-0.62)+       // the ears
+    ' Q'+Ho(-0.38,-0.54)+' '+Ho(-0.18,-0.30)+        // THE CREST, long and sweeping
+    ' Q'+Ho(0.10,-0.38)+' '+Ho(0.42,-0.24)+          // the back to the croup
+    ' Q'+Ho(0.66,-0.46)+' '+Ho(0.98,-0.52)+          // the tail, thrown up and out
+    ' Q'+Ho(0.80,-0.20)+' '+Ho(0.58,0.04)+           // and back along its underside
+    ' L'+Ho(0.66,0.42)+' L'+Ho(0.76,0.76)+           // the off hind leg
+    ' L'+Ho(0.60,0.78)+' L'+Ho(0.48,0.44)+' L'+Ho(0.42,0.16)+
+    ' L'+Ho(0.32,0.46)+' L'+Ho(0.24,0.78)+           // the near hind leg
+    ' L'+Ho(0.08,0.76)+' L'+Ho(0.18,0.42)+' L'+Ho(0.20,0.16)+
+    ' Q'+Ho(0.00,0.24)+' '+Ho(-0.18,0.16)+           // the belly
+    ' L'+Ho(-0.14,0.48)+' L'+Ho(-0.14,0.78)+         // the off fore leg
+    ' L'+Ho(-0.30,0.76)+' L'+Ho(-0.32,0.46)+' L'+Ho(-0.36,0.14)+
+    ' L'+Ho(-0.54,0.44)+' L'+Ho(-0.68,0.70)+         // the near fore leg, reaching out
+    ' L'+Ho(-0.82,0.62)+' L'+Ho(-0.66,0.34)+' L'+Ho(-0.50,0.04)+
+    ' Q'+Ho(-0.56,-0.10)+' '+Ho(-0.70,-0.24)+        // THE THROAT, well clear of the crest
+    ' Q'+Ho(-0.82,-0.32)+' '+Ho(-0.86,-0.24)+        // the jaw
+    ' L'+Ho(-0.96,-0.34)+'Z';
+   return '<path d="'+d+'" fill="'+fill+'"/>';}
+  case"swanship":{
+   // a ship whose prow rises into a swan's neck and head, her sail set
+   var Ws=function(x,y){return F(cx+r*x)+","+F(cy+r*y)};
+   var out='<path d="M'+Ws(-0.90,0.16)+           // the hull: a crescent, deep amidships
+     ' Q'+Ws(0.0,0.86)+' '+Ws(0.90,0.16)+
+     ' Q'+Ws(0.0,0.46)+' '+Ws(-0.90,0.16)+' Z" fill="'+fill+'"/>';
+   // the neck leaves the prow thick, rises, and turns FORWARD at the top so the head
+   // looks out over the water, beak down-and-left, as a swan's does
+   out+='<path d="M'+Ws(-0.84,0.18)+
+     ' Q'+Ws(-0.68,-0.34)+' '+Ws(-0.46,-0.62)+     // up the back of the neck
+     ' Q'+Ws(-0.34,-0.78)+' '+Ws(-0.52,-0.86)+     // over the crown of the head
+     ' Q'+Ws(-0.70,-0.90)+' '+Ws(-0.78,-0.76)+
+     ' L'+Ws(-0.98,-0.70)+' L'+Ws(-0.76,-0.62)+    // the beak, thrust forward
+     ' Q'+Ws(-0.72,-0.50)+' '+Ws(-0.62,-0.44)+
+     ' Q'+Ws(-0.50,-0.16)+' '+Ws(-0.60,0.20)+' Z" fill="'+fill+'"/>';
+   out+='<circle cx="'+F(cx-r*0.72)+'" cy="'+F(cy-r*0.74)+'" r="'+F(r*0.035)+'" fill="'+ac+'"/>';
+   out+='<path d="M'+Ws(0.16,0.30)+' L'+Ws(0.16,-0.78)+
+     '" stroke="'+fill+'" stroke-width="'+F(r*0.075)+'" fill="none" stroke-linecap="round"/>';
+   out+='<path d="M'+Ws(0.22,-0.72)+              // the sail, bellied out from the mast
+     ' Q'+Ws(0.86,-0.24)+' '+Ws(0.56,0.24)+
+     ' L'+Ws(0.22,0.24)+' Z" fill="'+fill+'"/>';
+   return out;}
+  case"serpent":{
+   // a single serpent doubled back on itself, head raised -- the sign borne in the East
+   var Sp=function(x,y){return F(cx+r*x)+","+F(cy+r*y)};
+   var out='<path d="M'+Sp(-0.62,-0.52)+
+     ' C'+Sp(0.30,-0.88)+' '+Sp(0.62,-0.10)+' '+Sp(-0.10,0.10)+
+     ' C'+Sp(-0.74,0.28)+' '+Sp(-0.50,0.82)+' '+Sp(0.66,0.72)+
+     '" fill="none" stroke="'+fill+'" stroke-width="'+F(r*0.20)+
+     '" stroke-linecap="round"/>';
+   out+='<path d="M'+Sp(-0.62,-0.64)+' Q'+Sp(-0.86,-0.60)+' '+Sp(-0.84,-0.44)+
+     ' Q'+Sp(-0.80,-0.32)+' '+Sp(-0.60,-0.40)+' Z" fill="'+fill+'"/>';   // the head
+   out+='<circle cx="'+F(cx-r*0.74)+'" cy="'+F(cy-r*0.52)+'" r="'+F(r*0.045)+'" fill="'+ac+'"/>';
+   return out;}
+  case"rune":{
+   // a certh: angular strokes, as cut rather than written. Which one is chosen by the
+   // same two numbers the tengwar use, so a course can name it.
+   var Rn=function(x,y){return F(cx+r*x)+","+F(cy+r*y)};
+   var se=(window.ARDA_TENGWA_SER||1)%4, gr=(window.ARDA_TENGWA_GRADE||1)%4;
+   var w2=r*0.20, seg=[];
+   seg.push([[0,-0.90],[0,0.90]]);                                   // the stem
+   if(se===0)      seg.push([[0,-0.90],[0.62,-0.34]],[[0,-0.20],[0.62,-0.64]]);
+   else if(se===1) seg.push([[0,-0.62],[0.66,-0.06]],[[0,0.06],[0.66,-0.50]]);
+   else if(se===2) seg.push([[0,-0.90],[0.66,-0.24]],[[0.66,-0.24],[0,0.20]]);
+   else            seg.push([[0,-0.30],[0.62,-0.76]],[[0,0.34],[0.62,-0.12]]);
+   if(gr>=2) seg.push([[0,0.28],[-0.58,0.76]]);
+   if(gr>=3) seg.push([[0,-0.32],[-0.58,0.14]]);
+   var out="";
+   for(var ri=0;ri<seg.length;ri++)
+    out+='<path d="M'+Rn(seg[ri][0][0],seg[ri][0][1])+' L'+Rn(seg[ri][1][0],seg[ri][1][1])+
+      '" stroke="'+fill+'" stroke-width="'+F(w2)+'" fill="none" stroke-linecap="square"/>';
+   return out;}
   case"letters":var lt=(window.ARDA_CHARGE_TEXT||""),ls=r*(lt.length>3?0.58:1.0);
     if(!lt)return"";
     return '<text x="'+cx+'" y="'+F(cy+ls*0.36)+'" text-anchor="middle" fill="'+fill
@@ -387,12 +553,12 @@ window.ardaForgeInner=function(p){
  // 1. the field
  if(shape==="circle"){out+='<circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="'+field+'"/>';
   clip='<clipPath id="fc"><circle cx="'+cx+'" cy="'+cy+'" r="'+R+'"/></clipPath>'}
- else if(shape==="square"){var s=R*0.84;
+ else if(shape==="square"){var s=R*ARDA_SQ;
   out+='<rect x="'+F(cx-s)+'" y="'+F(cy-s)+'" width="'+F(s*2)+'" height="'+F(s*2)+'" rx="4" fill="'+field+'"/>';
   clip='<clipPath id="fc"><rect x="'+F(cx-s)+'" y="'+F(cy-s)+'" width="'+F(s*2)+'" height="'+F(s*2)+'" rx="4"/></clipPath>'}
-  else if(shape==="shield"){var sh='M'+F(cx-R*0.74)+','+F(cy-R*0.92)+' H'+F(cx+R*0.74)+' V'+F(cy-R*0.10)+' C'+F(cx+R*0.74)+','+F(cy+R*0.56)+' '+F(cx+R*0.34)+','+F(cy+R*0.92)+' '+cx+','+F(cy+R*1.06)+' C'+F(cx-R*0.34)+','+F(cy+R*0.92)+' '+F(cx-R*0.74)+','+F(cy+R*0.56)+' '+F(cx-R*0.74)+','+F(cy-R*0.10)+'Z';
+  else if(shape==="shield"){var sh='M'+F(cx-R*ARDA_SHW)+','+F(cy-R*0.92)+' H'+F(cx+R*ARDA_SHW)+' V'+F(cy-R*0.10)+' C'+F(cx+R*ARDA_SHW)+','+F(cy+R*0.56)+' '+F(cx+R*(ARDA_SHW*0.46))+','+F(cy+R*0.92)+' '+cx+','+F(cy+R*1.06)+' C'+F(cx-R*(ARDA_SHW*0.46))+','+F(cy+R*0.92)+' '+F(cx-R*ARDA_SHW)+','+F(cy+R*0.56)+' '+F(cx-R*ARDA_SHW)+','+F(cy-R*0.10)+'Z';
   out+='<path d="'+sh+'" fill="'+field+'"/>';clip='<clipPath id="fc"><path d="'+sh+'"/></clipPath>'}
- else{var d='M'+cx+','+F(cy-R)+' L'+F(cx+R*0.82)+','+cy+' L'+cx+','+F(cy+R)+' L'+F(cx-R*0.82)+','+cy+'Z';
+ else{var d='M'+cx+','+F(cy-R)+' L'+F(cx+R*ARDA_LZ)+','+cy+' L'+cx+','+F(cy+R)+' L'+F(cx-R*ARDA_LZ)+','+cy+'Z';
   out+='<path d="'+d+'" fill="'+field+'"/>';clip='<clipPath id="fc"><path d="'+d+'"/></clipPath>'}
  var inner='';
  // 2. concentric rings inside the field
@@ -437,6 +603,7 @@ window.ardaForgeInner=function(p){
  if(ch2&&ch2!=="none"&&rep===1)
   inner+=window.ardaChargePath(ch2,cx,cy+R*(p.c2off===undefined?0.46:p.c2off),
          R*(p.ssize||0.20),col(p.c2c===undefined?p.cc:p.c2c),ac);
+ if(p.layers&&window.ardaForgeLayers)inner+=window.ardaForgeLayers(p.layers,cx,cy,R,col,shape);
  out+='<defs>'+clip+'</defs><g clip-path="url(#fc)">'+inner+'</g>';
  // 7. rim-points: rank, reaching the outer rim
  // Melian alone bears a lozenge set within the circle of a woman's device --
@@ -452,17 +619,1878 @@ window.ardaForgeInner=function(p){
   else out+='<path d="M'+F(cx+(prr+11)*Math.cos(a2))+','+F(cy+(prr+11)*Math.sin(a2))+' L'
     +F(cx+(prr-2)*Math.cos(a2-0.075))+','+F(cy+(prr-2)*Math.sin(a2-0.075))+' L'
     +F(cx+(prr-2)*Math.cos(a2+0.075))+','+F(cy+(prr-2)*Math.sin(a2+0.075))+'Z" fill="'+pc+'"/>'}
- // 8. the edge
- if(shape==="circle")out+='<circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="#8a7444" stroke-width="2"/>';
- else if(shape==="square"){var s3=R*0.84;out+='<rect x="'+F(cx-s3)+'" y="'+F(cy-s3)+'" width="'+F(s3*2)+'" height="'+F(s3*2)+'" rx="4" fill="none" stroke="#8a7444" stroke-width="2"/>'}
- else if(shape==="shield")out+='<path d="'+'M'+F(cx-R*0.74)+','+F(cy-R*0.92)+' H'+F(cx+R*0.74)+' V'+F(cy-R*0.10)+' C'+F(cx+R*0.74)+','+F(cy+R*0.56)+' '+F(cx+R*0.34)+','+F(cy+R*0.92)+' '+cx+','+F(cy+R*1.06)+' C'+F(cx-R*0.34)+','+F(cy+R*0.92)+' '+F(cx-R*0.74)+','+F(cy+R*0.56)+' '+F(cx-R*0.74)+','+F(cy-R*0.10)+'Z'+'" fill="none" stroke="#8a7444" stroke-width="2"/>';
- else out+='<path d="M'+cx+','+F(cy-R)+' L'+F(cx+R*0.82)+','+cy+' L'+cx+','+F(cy+R)+' L'+F(cx-R*0.82)+','+cy+'Z" fill="none" stroke="#8a7444" stroke-width="2"/>';
+ // 8. the edge. The plates edge a lozenge three ways: a plain line, a run of beads,
+ // or a chequer of two tinctures -- p.edge with p.ec / p.ec2.
+ var EC=p.ec===undefined?"#8a7444":col(p.ec), EC2=p.ec2===undefined?"#fffdf6":col(p.ec2);
+ function edgePts(){
+  if(shape==="circle"){var q=[];for(var e=0;e<96;e++){var ea=2*Math.PI*e/96;q.push([cx+R*Math.cos(ea),cy+R*Math.sin(ea)])}return q}
+  if(shape==="square"){var s4=R*ARDA_SQ,q2=[],side=24;
+   [[-1,-1],[1,-1],[1,1],[-1,1]].forEach(function(v,vi,arr){var w2=arr[(vi+1)%4];
+    for(var e2=0;e2<side;e2++)q2.push([cx+s4*(v[0]+(w2[0]-v[0])*e2/side), cy+s4*(v[1]+(w2[1]-v[1])*e2/side)])});
+   return q2}
+  var pts=[[cx,cy-R],[cx+R*ARDA_LZ,cy],[cx,cy+R],[cx-R*ARDA_LZ,cy]],q3=[],per=24;
+  pts.forEach(function(v,vi){var w3=pts[(vi+1)%4];
+   for(var e3=0;e3<per;e3++)q3.push([v[0]+(w3[0]-v[0])*e3/per, v[1]+(w3[1]-v[1])*e3/per])});
+  return q3}
+ if(p.edge==="beaded"||p.edge==="checked"){
+  var ep=edgePts(),every=p.edge==="checked"?1:2,sz=R*(p.esize||0.035);
+  ep.forEach(function(pt,ix){ if(ix%every)return;
+   var cc2=(ix/every)%2?EC2:EC;
+   if(p.edge==="checked")out+='<rect x="'+(pt[0]-sz).toFixed(1)+'" y="'+(pt[1]-sz).toFixed(1)+'" width="'+(sz*2).toFixed(1)+'" height="'+(sz*2).toFixed(1)+'" fill="'+cc2+'"/>';
+   else out+='<circle cx="'+pt[0].toFixed(1)+'" cy="'+pt[1].toFixed(1)+'" r="'+sz.toFixed(1)+'" fill="'+cc2+'"/>';});
+ }
+ if(shape==="circle")out+='<circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="'+EC+'" stroke-width="'+(p.ew||2)+'"/>';
+ else if(shape==="square"){var s3=R*ARDA_SQ;out+='<rect x="'+F(cx-s3)+'" y="'+F(cy-s3)+'" width="'+F(s3*2)+'" height="'+F(s3*2)+'" rx="4" fill="none" stroke="'+EC+'" stroke-width="'+(p.ew||2)+'"/>'}
+ else if(shape==="shield")out+='<path d="'+'M'+F(cx-R*ARDA_SHW)+','+F(cy-R*0.92)+' H'+F(cx+R*ARDA_SHW)+' V'+F(cy-R*0.10)+' C'+F(cx+R*ARDA_SHW)+','+F(cy+R*0.56)+' '+F(cx+R*(ARDA_SHW*0.46))+','+F(cy+R*0.92)+' '+cx+','+F(cy+R*1.06)+' C'+F(cx-R*(ARDA_SHW*0.46))+','+F(cy+R*0.92)+' '+F(cx-R*ARDA_SHW)+','+F(cy+R*0.56)+' '+F(cx-R*ARDA_SHW)+','+F(cy-R*0.10)+'Z'+'" fill="none" stroke="#8a7444" stroke-width="2"/>';
+ else out+='<path d="M'+cx+','+F(cy-R)+' L'+F(cx+R*ARDA_LZ)+','+cy+' L'+cx+','+F(cy+R)+' L'+F(cx-R*ARDA_LZ)+','+cy+'Z" fill="none" stroke="'+EC+'" stroke-width="'+(p.ew||2)+'"/>';
  return out};
-window.ardaForgeDevice=function(p,W){var w=W||74,h=Math.round(w*226/200);
- return '<svg viewBox="0 0 200 226" width="'+w+'" height="'+h+'" style="vertical-align:middle">'+window.ardaForgeInner(p)+'</svg>'};
+// The drawing sits at cx=100, cy=113, R=78 inside a 200x226 canvas, which left a wide
+// empty margin on every side: a lozenge filled barely two thirds of the frame while the
+// plates fill theirs edge to edge. The viewBox is therefore cut to what each shape
+// actually occupies, so a device is as large in its box as the painting is in its panel.
+window.ardaForgeBox=function(p){
+ var cx=100,cy=113,R=78,sh=(p&&p.shape)||"lozenge";
+ var x0,y0,x1,y1;
+ if(sh==="circle"){x0=cx-R;x1=cx+R;y0=cy-R;y1=cy+R}
+ else if(sh==="square"){var s=R*ARDA_SQ;x0=cx-s;x1=cx+s;y0=cy-s;y1=cy+s}
+ else if(sh==="shield"){x0=cx-R*ARDA_SHW;x1=cx+R*ARDA_SHW;y0=cy-R*0.92;y1=cy+R*1.06}
+ else{x0=cx-R*ARDA_LZ;x1=cx+R*ARDA_LZ;y0=cy-R;y1=cy+R}
+ // the margin is a fraction of each side, not a fixed number of units, so trimming the
+ // frame cannot change the proportion the shape was measured to have
+ var bw=x1-x0,bh=y1-y0,mx=bw*0.025,my=bh*0.025;
+ return [x0-mx,y0-my,bw+2*mx,bh+2*my];
+};
+window.ardaForgeDevice=function(p,W){
+ var b=window.ardaForgeBox(p),w=W||74,h=Math.round(w*b[3]/b[2]);
+ return '<svg viewBox="'+b[0].toFixed(1)+' '+b[1].toFixed(1)+' '+b[2].toFixed(1)+' '+b[3].toFixed(1)+
+   '" width="'+w+'" height="'+h+'" style="vertical-align:middle">'+window.ardaForgeInner(p)+'</svg>'};
 // rank implied by the number of points that reach the rim (Tolkien's own note)
 window.ardaRank=function(n){if(!n)return"no rank declared";if(n>=16)return"a great ancestor of a house";
  if(n>=6)return"a king";if(n>=4)return"a prince";return"below the ranks Tolkien names"};
+
+// ===================== the layer engine =====================
+// The plates in Forodrim are built as stacks of concentric bands -- a field, then ring
+// upon ring of wedges, lobes, discs and stars, each with its own count, radius and
+// tincture, and an edge that may be plain, beaded or chequered. The older fixed slots
+// (mandala / gems / charge) cannot express that. A device may now instead carry
+// p.layers: an ordered list drawn from the field outward, each entry {t:...}.
+//
+//   {t:"ring",   r, w, c, dash}                 a circle, stroked
+//   {t:"disc",   r, c}                          a filled disc
+//   {t:"wedges", n, r0, r1, w, c, rot, taper}   n tapering rays
+//   {t:"lobes",  n, r, len, wid, c, rot}        n petals or lobes
+//   {t:"discs",  n, r, size, c, rot, edge}      n discs set about a ring
+//   {t:"star",   n, ro, ri, c, rot}             an n-pointed star
+//   {t:"poly",   n, r, c, rot}                  a regular polygon
+//   {t:"square", s, c, rot}                     an inset panel
+//   {t:"corners",n, r, size, c, rot, shape}     accents at the corners
+//   {t:"dashes", n, r, len, w, c, rot}          a broken ring, as of beads
+//   {t:"charge", k, r, size, c, ac, rot, text}  any charge from the vocabulary
+// Radii are fractions of R; angles in turns (0.25 = a quarter turn).
+window.ardaForgeLayers=function(list,cx,cy,R,col,shape){
+ // The plates fill the lozenge, and a lozenge only reaches R at its four points: along
+ // every other bearing its edge is far nearer. Radii given with fit:true are therefore
+ // fractions of the FIELD BOUNDARY at that bearing, not of the circumscribed circle --
+ // without this a ray drawn to r=1 stops well short of the edge everywhere but the points.
+ var SHP=shape||"lozenge";
+ function bound(a){
+  if(SHP==="circle")return R;
+  var ca=Math.abs(Math.cos(a)),sa=Math.abs(Math.sin(a));
+  if(SHP==="square"){var s2=R*ARDA_SQ;return s2/Math.max(ca,sa,1e-6)}
+  if(SHP==="shield"){var sw=R*ARDA_SHW,sh2=R*0.99;
+   return 1/Math.max(ca/sw,sa/sh2,1e-9)}
+  var w=R*ARDA_LZ,h=R;                   // the lozenge: a square on its point
+  return 1/((ca/w)+(sa/h)+1e-9);
+ }
+ var F=function(n){return (+n).toFixed(2)},out="";
+ var LAYER_STROKE="";      // set per course; poly() picks it up when given no stroke
+ var RR=function(L,a,v){return (L.fit?bound(a):R)*v};
+ var TAU=Math.PI*2;
+ function at(a,r){return [cx+r*Math.cos(a),cy+r*Math.sin(a)]}
+ function poly(pts,fill,stroke,sw){
+  var d=pts.map(function(p,i){return (i?"L":"M")+F(p[0])+","+F(p[1])}).join("")+"Z";
+  return '<path d="'+d+'" fill="'+(fill||"none")+'"'+
+    (stroke?' stroke="'+stroke+'" stroke-width="'+(sw||1)+'" stroke-linejoin="round"':LAYER_STROKE)+'/>';
+ }
+ (list||[]).forEach(function(L){
+  var c=col(L.c===undefined?0:L.c), rot=(L.rot||0)*TAU, n=L.n||1;
+  // an outline, if this course asks for one: LS is the ink, LSW the width
+  var LS=(L.stroke===undefined?null:col(L.stroke)), LSW=R*(L.sw||0.012);
+  var SA=LS?(' stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round"'):"";
+  LAYER_STROKE=SA;
+  if(L.t==="ring")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="none" stroke="'+c+
+     '" stroke-width="'+F((L.w||0.02)*R)+'"'+(L.dash?' stroke-dasharray="'+L.dash+'"':"")+'/>';
+  else if(L.t==="disc")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="'+c+'"'+SA+'/>';
+  else if(L.t==="wedges"){
+   // A ray is broad where it springs and comes to a point: its half-width is measured
+   // ACROSS the ray as a fraction of R, not as an angle. Taken as an angle it collapses
+   // to a needle at any small inner radius -- which is what it did.
+   var w=(L.w===undefined?0.06:L.w), tp=(L.taper===undefined?0:L.taper);
+   for(var i=0;i<n;i++){var a=TAU*i/n-Math.PI/2+rot,r0=RR(L,a,L.r0||0),r1=RR(L,a,L.r1===undefined?1:L.r1);
+    var ux=Math.cos(a),uy=Math.sin(a),nx=-uy,ny=ux,hw=w*R,tw=hw*tp;
+    out+=poly([[cx+ux*r1+nx*tw, cy+uy*r1+ny*tw],
+               [cx+ux*r1-nx*tw, cy+uy*r1-ny*tw],
+               [cx+ux*r0-nx*hw, cy+uy*r0-ny*hw],
+               [cx+ux*r0+nx*hw, cy+uy*r0+ny*hw]],c);}
+  } else if(L.t==="lobes"){
+   var lr=R*(L.r||0.5), ln=R*(L.len||0.2), wd=R*(L.wid||0.1);
+   for(var j=0;j<n;j++){var b=TAU*j/n-Math.PI/2+rot,p=at(b,lr);
+    out+='<ellipse cx="'+F(p[0])+'" cy="'+F(p[1])+'" rx="'+F(wd)+'" ry="'+F(ln)+
+      '" fill="'+c+'"'+SA+' transform="rotate('+F(b*180/Math.PI+90)+' '+F(p[0])+' '+F(p[1])+')"/>';}
+  } else if(L.t==="discs"){
+   var dr=R*(L.r||0.6), ds=R*(L.size||0.12), ec=L.edge!==undefined?col(L.edge):null;
+   for(var k=0;k<n;k++){var d2=TAU*k/n-Math.PI/2+rot,q=at(d2,L.fit?bound(d2)*(L.r||0.6):dr);
+    out+='<circle cx="'+F(q[0])+'" cy="'+F(q[1])+'" r="'+F(ds)+'" fill="'+c+'"'+
+      (ec?' stroke="'+ec+'" stroke-width="'+F(R*0.012)+'"':SA)+'/>';}
+  } else if(L.t==="star"){
+   var ro=R*(L.ro||0.6), ri=R*(L.ri||0.3), pts=[];
+   for(var m=0;m<n*2;m++)pts.push(at(Math.PI*m/n-Math.PI/2+rot, m%2?ri:ro));
+   out+=poly(pts,c);
+  } else if(L.t==="poly"){
+   var pr=R*(L.r||0.5), pp=[];
+   for(var q2=0;q2<n;q2++)pp.push(at(TAU*q2/n-Math.PI/2+rot,pr));
+   out+=poly(pp,c);
+  } else if(L.t==="square"){
+   var s=R*(L.s||0.3);
+   out+='<rect x="'+F(cx-s)+'" y="'+F(cy-s)+'" width="'+F(2*s)+'" height="'+F(2*s)+'" fill="'+c+
+     '" transform="rotate('+F((L.rot||0)*360)+' '+F(cx)+' '+F(cy)+')"/>';
+  } else if(L.t==="corners"){
+   var cr=R*(L.r||0.86), cs=R*(L.size||0.1), nn=n||4;
+   for(var t=0;t<nn;t++){var ca=TAU*t/nn-Math.PI/2+rot,cr2=L.fit?bound(ca)*(L.r||0.86):cr,p2=at(ca,cr2);
+    if(L.shape==="tri")out+=poly([at(ca,cr2+cs),at(ca-0.16,cr2-cs*0.5),at(ca+0.16,cr2-cs*0.5)],c);
+    else out+='<circle cx="'+F(p2[0])+'" cy="'+F(p2[1])+'" r="'+F(cs)+'" fill="'+c+'"/>';}
+  } else if(L.t==="dashes"){
+   var hr=R*(L.r||0.7), hl=(L.len||0.5), hw=R*(L.w||0.05);
+   for(var u=0;u<n;u++){var ua=TAU*u/n-Math.PI/2+rot, half=(TAU/n)*hl/2;
+    out+='<path d="M'+F(at(ua-half,hr)[0])+','+F(at(ua-half,hr)[1])+
+      ' A'+F(hr)+','+F(hr)+' 0 0 1 '+F(at(ua+half,hr)[0])+','+F(at(ua+half,hr)[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(hw)+'"/>';}
+  } else if(L.t==="pinwheel"){        // a disc cut into n segments, two tinctures about
+   var pr2=R*(L.r||0.4), c2b=col(L.c2===undefined?12:L.c2);
+   for(var v=0;v<n;v++){var a0=TAU*v/n-Math.PI/2+rot, a1=TAU*(v+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(cx)+','+F(cy)+' L'+F(at(a0,pr2)[0])+','+F(at(a0,pr2)[1])+
+      ' A'+F(pr2)+','+F(pr2)+' 0 0 1 '+F(at(a1,pr2)[0])+','+F(at(a1,pr2)[1])+'Z" fill="'+(v%2?c2b:c)+'"/>';}
+  } else if(L.t==="segments"){        // a ring cut into n pieces, each its own tincture
+   var s0=R*(L.r0||0.2), s1=R*(L.r1||0.5), cs2=L.cs||[];
+   for(var v2=0;v2<n;v2++){var b0=TAU*v2/n-Math.PI/2+rot, b1=TAU*(v2+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+' L'+F(at(b0,s1)[0])+','+F(at(b0,s1)[1])+
+      ' A'+F(s1)+','+F(s1)+' 0 0 1 '+F(at(b1,s1)[0])+','+F(at(b1,s1)[1])+
+      ' L'+F(at(b1,s0)[0])+','+F(at(b1,s0)[1])+
+      ' A'+F(s0)+','+F(s0)+' 0 0 0 '+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+'Z" fill="'+
+      col(cs2.length?cs2[v2%cs2.length]:L.c)+'"/>';}
+  } else if(L.t==="darts"){           // n darts flying outward, barbed as on the plates
+   var dw=(L.w||0.09), bb=(L.barb===undefined?0.5:L.barb);
+   for(var v3=0;v3<n;v3++){var g0=TAU*v3/n-Math.PI/2+rot,d0=RR(L,g0,L.r0||0.3),d1=RR(L,g0,L.r1||0.9);
+    var ux2=Math.cos(g0),uy2=Math.sin(g0),nx2=-uy2,ny2=ux2,W2=dw*R,rb=d0+(d1-d0)*bb;
+    var P=function(rr,off){return [cx+ux2*rr+nx2*off, cy+uy2*rr+ny2*off]};
+    out+=poly([P(d1,0),P(rb,-W2),P(rb,-W2*0.34),P(d0,-W2*0.34),
+               P(d0,W2*0.34),P(rb,W2*0.34),P(rb,W2)],c);}
+  } else if(L.t==="outline"){         // line-art: a stroked shape, no fill
+   var or1=R*(L.r||0.6), on=n||4, op=[];
+   for(var v4=0;v4<on;v4++)op.push(at(TAU*v4/on-Math.PI/2+rot,or1));
+   out+=poly(op,null,c,(L.w||0.02)*R);
+  } else if(L.t==="petals"){          // the shape most of the plates are built from:
+   // n petals springing from an inner radius to a tip, each bounded by two curves.
+   // bow moves the widest part in or out; round>0 gives a blunt tip instead of a point;
+   // stroke draws the outline the painted petals carry.
+   var pr0=(L.r0===undefined?0.10:L.r0), pr1=(L.r1===undefined?1:L.r1),
+       pw=(L.w===undefined?0.18:L.w), bow=(L.bow===undefined?0.5:L.bow),
+       rnd=(L.round===undefined?0:L.round),
+       ps=(L.stroke===undefined?null:col(L.stroke)), psw=R*(L.sw||0.014);
+   var swl=(L.swirl===undefined?0:L.swirl)*TAU;   // the tip leans this far round
+   for(var pj=0;pj<n;pj++){
+    var pa=TAU*pj/n-Math.PI/2+rot, pa2=pa+swl, pam=pa+swl*0.5,
+        PB=L.fit?bound(pa):R, PB2=L.fit?bound(pa2):R, PBM=L.fit?bound(pam):R,
+        pux=Math.cos(pa),puy=Math.sin(pa),
+        pu2x=Math.cos(pa2),pu2y=Math.sin(pa2),
+        pmx=Math.cos(pam),pmy=Math.sin(pam),pnx=-pmy,pny=pmx,
+        i0x=cx+pux*PB*pr0, i0y=cy+puy*PB*pr0,
+        i1x=cx+pu2x*PB2*pr1, i1y=cy+pu2y*PB2*pr1,
+        prm=PBM*(pr0+(pr1-pr0)*bow), phw=pw*R,
+        k1x=cx+pmx*prm+pnx*phw, k1y=cy+pmy*prm+pny*phw,
+        k2x=cx+pmx*prm-pnx*phw, k2y=cy+pmy*prm-pny*phw,
+        t1x=i1x+pnx*phw*rnd, t1y=i1y+pny*phw*rnd,
+        t2x=i1x-pnx*phw*rnd, t2y=i1y-pny*phw*rnd,
+        pd="M"+F(i0x)+","+F(i0y)+"Q"+F(k1x)+","+F(k1y)+" "+F(t1x)+","+F(t1y)+
+           (rnd?"A"+F(phw*rnd)+","+F(phw*rnd)+" 0 0 1 "+F(t2x)+","+F(t2y)
+               :"L"+F(t2x)+","+F(t2y))+
+           "Q"+F(k2x)+","+F(k2y)+" "+F(i0x)+","+F(i0y)+"Z";
+    out+='<path d="'+pd+'" fill="'+c+'"'+(ps?' stroke="'+ps+'" stroke-width="'+F(psw)+'" stroke-linejoin="round"':"")+'/>';}
+  } else if(L.t==="veins"){           // the midrib and side-veins the painted leaves carry
+   var vr0=(L.r0===undefined?0.15:L.r0), vr1=(L.r1===undefined?0.9:L.r1),
+       vw=R*(L.w||0.010), vs=L.side||0, vsp=(L.spread===undefined?0.06:L.spread);
+   for(var vj=0;vj<n;vj++){
+    var va=TAU*vj/n-Math.PI/2+rot, VB=L.fit?bound(va):R,
+        vux=Math.cos(va),vuy=Math.sin(va),vnx=-vuy,vny=vux;
+    out+='<path d="M'+F(cx+vux*VB*vr0)+','+F(cy+vuy*VB*vr0)+'L'+F(cx+vux*VB*vr1)+','+F(cy+vuy*VB*vr1)+
+      '" stroke="'+c+'" stroke-width="'+F(vw)+'" fill="none" stroke-linecap="round"/>';
+    for(var vi=1;vi<=vs;vi++){
+     var vt=vr0+(vr1-vr0)*vi/(vs+1), vl=vsp*R*(1-vi/(vs+1));
+     out+='<path d="M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)+vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)+vny*vl)+
+       'M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)-vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)-vny*vl)+
+       '" stroke="'+c+'" stroke-width="'+F(vw*0.8)+'" fill="none" stroke-linecap="round"/>';}}
+  } else if(L.t==="bands"){           // concentric bands of colour, outermost drawn first
+   var bcs=L.cs||[], bb0=(L.r0===undefined?0:L.r0), bb1=(L.r1===undefined?1:L.r1);
+   for(var bj=bcs.length-1;bj>=0;bj--)
+    out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*(bb0+(bb1-bb0)*(bj+1)/bcs.length))+
+      '" fill="'+col(bcs[bj])+'"/>';
+  } else if(L.t==="scatter"){         // small charges strewn about the field
+   var sk=L.k||"star", ssz=R*(L.size||0.07), srr=(L.r===undefined?0.78:L.r),
+       sac=col(L.ac===undefined?0:L.ac);
+   for(var sj=0;sj<n;sj++){
+    var sa=TAU*sj/n-Math.PI/2+rot, SB=L.fit?bound(sa):R;
+    window.ARDA_CHARGE_TEXT="";
+    out+=window.ardaChargePath(sk,cx+Math.cos(sa)*SB*srr,cy+Math.sin(sa)*SB*srr,ssz,c,sac);}
+  } else if(L.t==="arcs"){            // stroked arcs: n pieces of a circle, gapped
+   var ar=R*(L.r||0.6), aw=R*(L.w||0.03), gap=(L.gap===undefined?0.25:L.gap);
+   for(var aj=0;aj<n;aj++){
+    var a0=TAU*(aj+gap/2)/n-Math.PI/2+rot, a1=TAU*(aj+1-gap/2)/n-Math.PI/2+rot,
+        q0=at(a0,ar), q1=at(a1,ar);
+    out+='<path d="M'+F(q0[0])+','+F(q0[1])+'A'+F(ar)+','+F(ar)+' 0 0 1 '+F(q1[0])+','+F(q1[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(aw)+'" stroke-linecap="'+(L.cap||"butt")+'"/>';}
+  } else if(L.t==="charge"){
+   var chr=R*(L.r||0), cha=(L.a===undefined?-0.25:L.a)*TAU, ctr=chr?at(cha,chr):[cx,cy];
+   window.ARDA_CHARGE_TEXT=L.text||"";
+   // a course may name its own letter; three tengwar in a row are three DIFFERENT
+   // tengwar, which they were not while these were read once per device
+   var _ps=window.ARDA_TENGWA_SER,_pg=window.ARDA_TENGWA_GRADE;
+   if(L.tser!==undefined)window.ARDA_TENGWA_SER=L.tser;
+   if(L.tgrade!==undefined)window.ARDA_TENGWA_GRADE=L.tgrade;
+   var g=window.ardaChargePath(L.k||"star",ctr[0],ctr[1],R*(L.size||0.3),c,col(L.ac===undefined?1:L.ac));
+   window.ARDA_TENGWA_SER=_ps;window.ARDA_TENGWA_GRADE=_pg;
+   // Durin's crown and the Steward's seal are drawn as LINE on the plates, not as
+   // colour. A charge given an outline is wrapped in a group carrying it: the charge
+   // paths set their own fill and no stroke, so they inherit this one.
+   if(L.stroke!==undefined)
+    g='<g stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round" '+
+      'stroke-linecap="round" fill-rule="evenodd">'+g+'</g>';
+   out+=L.rot?'<g transform="rotate('+F((L.rot||0)*360)+' '+F(ctr[0])+' '+F(ctr[1])+')">'+g+'</g>':g;
+  }
+ });
+ return out;
+};
+
+// ===================== the layer engine =====================
+// The plates in Forodrim are built as stacks of concentric bands -- a field, then ring
+// upon ring of wedges, lobes, discs and stars, each with its own count, radius and
+// tincture, and an edge that may be plain, beaded or chequered. The older fixed slots
+// (mandala / gems / charge) cannot express that. A device may now instead carry
+// p.layers: an ordered list drawn from the field outward, each entry {t:...}.
+//
+//   {t:"ring",   r, w, c, dash}                 a circle, stroked
+//   {t:"disc",   r, c}                          a filled disc
+//   {t:"wedges", n, r0, r1, w, c, rot, taper}   n tapering rays
+//   {t:"lobes",  n, r, len, wid, c, rot}        n petals or lobes
+//   {t:"discs",  n, r, size, c, rot, edge}      n discs set about a ring
+//   {t:"star",   n, ro, ri, c, rot}             an n-pointed star
+//   {t:"poly",   n, r, c, rot}                  a regular polygon
+//   {t:"square", s, c, rot}                     an inset panel
+//   {t:"corners",n, r, size, c, rot, shape}     accents at the corners
+//   {t:"dashes", n, r, len, w, c, rot}          a broken ring, as of beads
+//   {t:"charge", k, r, size, c, ac, rot, text}  any charge from the vocabulary
+// Radii are fractions of R; angles in turns (0.25 = a quarter turn).
+window.ardaForgeLayers=function(list,cx,cy,R,col,shape){
+ // The plates fill the lozenge, and a lozenge only reaches R at its four points: along
+ // every other bearing its edge is far nearer. Radii given with fit:true are therefore
+ // fractions of the FIELD BOUNDARY at that bearing, not of the circumscribed circle --
+ // without this a ray drawn to r=1 stops well short of the edge everywhere but the points.
+ var SHP=shape||"lozenge";
+ function bound(a){
+  if(SHP==="circle")return R;
+  var ca=Math.abs(Math.cos(a)),sa=Math.abs(Math.sin(a));
+  if(SHP==="square"){var s2=R*ARDA_SQ;return s2/Math.max(ca,sa,1e-6)}
+  if(SHP==="shield"){var sw=R*ARDA_SHW,sh2=R*0.99;
+   return 1/Math.max(ca/sw,sa/sh2,1e-9)}
+  var w=R*ARDA_LZ,h=R;                   // the lozenge: a square on its point
+  return 1/((ca/w)+(sa/h)+1e-9);
+ }
+ var F=function(n){return (+n).toFixed(2)},out="";
+ var LAYER_STROKE="";      // set per course; poly() picks it up when given no stroke
+ var RR=function(L,a,v){return (L.fit?bound(a):R)*v};
+ var TAU=Math.PI*2;
+ function at(a,r){return [cx+r*Math.cos(a),cy+r*Math.sin(a)]}
+ function poly(pts,fill,stroke,sw){
+  var d=pts.map(function(p,i){return (i?"L":"M")+F(p[0])+","+F(p[1])}).join("")+"Z";
+  return '<path d="'+d+'" fill="'+(fill||"none")+'"'+
+    (stroke?' stroke="'+stroke+'" stroke-width="'+(sw||1)+'" stroke-linejoin="round"':LAYER_STROKE)+'/>';
+ }
+ (list||[]).forEach(function(L){
+  var c=col(L.c===undefined?0:L.c), rot=(L.rot||0)*TAU, n=L.n||1;
+  // an outline, if this course asks for one: LS is the ink, LSW the width
+  var LS=(L.stroke===undefined?null:col(L.stroke)), LSW=R*(L.sw||0.012);
+  var SA=LS?(' stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round"'):"";
+  LAYER_STROKE=SA;
+  if(L.t==="ring")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="none" stroke="'+c+
+     '" stroke-width="'+F((L.w||0.02)*R)+'"'+(L.dash?' stroke-dasharray="'+L.dash+'"':"")+'/>';
+  else if(L.t==="disc")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="'+c+'"'+SA+'/>';
+  else if(L.t==="wedges"){
+   // A ray is broad where it springs and comes to a point: its half-width is measured
+   // ACROSS the ray as a fraction of R, not as an angle. Taken as an angle it collapses
+   // to a needle at any small inner radius -- which is what it did.
+   var w=(L.w===undefined?0.06:L.w), tp=(L.taper===undefined?0:L.taper);
+   for(var i=0;i<n;i++){var a=TAU*i/n-Math.PI/2+rot,r0=RR(L,a,L.r0||0),r1=RR(L,a,L.r1===undefined?1:L.r1);
+    var ux=Math.cos(a),uy=Math.sin(a),nx=-uy,ny=ux,hw=w*R,tw=hw*tp;
+    out+=poly([[cx+ux*r1+nx*tw, cy+uy*r1+ny*tw],
+               [cx+ux*r1-nx*tw, cy+uy*r1-ny*tw],
+               [cx+ux*r0-nx*hw, cy+uy*r0-ny*hw],
+               [cx+ux*r0+nx*hw, cy+uy*r0+ny*hw]],c);}
+  } else if(L.t==="lobes"){
+   var lr=R*(L.r||0.5), ln=R*(L.len||0.2), wd=R*(L.wid||0.1);
+   for(var j=0;j<n;j++){var b=TAU*j/n-Math.PI/2+rot,p=at(b,lr);
+    out+='<ellipse cx="'+F(p[0])+'" cy="'+F(p[1])+'" rx="'+F(wd)+'" ry="'+F(ln)+
+      '" fill="'+c+'"'+SA+' transform="rotate('+F(b*180/Math.PI+90)+' '+F(p[0])+' '+F(p[1])+')"/>';}
+  } else if(L.t==="discs"){
+   var dr=R*(L.r||0.6), ds=R*(L.size||0.12), ec=L.edge!==undefined?col(L.edge):null;
+   for(var k=0;k<n;k++){var d2=TAU*k/n-Math.PI/2+rot,q=at(d2,L.fit?bound(d2)*(L.r||0.6):dr);
+    out+='<circle cx="'+F(q[0])+'" cy="'+F(q[1])+'" r="'+F(ds)+'" fill="'+c+'"'+
+      (ec?' stroke="'+ec+'" stroke-width="'+F(R*0.012)+'"':SA)+'/>';}
+  } else if(L.t==="star"){
+   var ro=R*(L.ro||0.6), ri=R*(L.ri||0.3), pts=[];
+   for(var m=0;m<n*2;m++)pts.push(at(Math.PI*m/n-Math.PI/2+rot, m%2?ri:ro));
+   out+=poly(pts,c);
+  } else if(L.t==="poly"){
+   var pr=R*(L.r||0.5), pp=[];
+   for(var q2=0;q2<n;q2++)pp.push(at(TAU*q2/n-Math.PI/2+rot,pr));
+   out+=poly(pp,c);
+  } else if(L.t==="square"){
+   var s=R*(L.s||0.3);
+   out+='<rect x="'+F(cx-s)+'" y="'+F(cy-s)+'" width="'+F(2*s)+'" height="'+F(2*s)+'" fill="'+c+
+     '" transform="rotate('+F((L.rot||0)*360)+' '+F(cx)+' '+F(cy)+')"/>';
+  } else if(L.t==="corners"){
+   var cr=R*(L.r||0.86), cs=R*(L.size||0.1), nn=n||4;
+   for(var t=0;t<nn;t++){var ca=TAU*t/nn-Math.PI/2+rot,cr2=L.fit?bound(ca)*(L.r||0.86):cr,p2=at(ca,cr2);
+    if(L.shape==="tri")out+=poly([at(ca,cr2+cs),at(ca-0.16,cr2-cs*0.5),at(ca+0.16,cr2-cs*0.5)],c);
+    else out+='<circle cx="'+F(p2[0])+'" cy="'+F(p2[1])+'" r="'+F(cs)+'" fill="'+c+'"/>';}
+  } else if(L.t==="dashes"){
+   var hr=R*(L.r||0.7), hl=(L.len||0.5), hw=R*(L.w||0.05);
+   for(var u=0;u<n;u++){var ua=TAU*u/n-Math.PI/2+rot, half=(TAU/n)*hl/2;
+    out+='<path d="M'+F(at(ua-half,hr)[0])+','+F(at(ua-half,hr)[1])+
+      ' A'+F(hr)+','+F(hr)+' 0 0 1 '+F(at(ua+half,hr)[0])+','+F(at(ua+half,hr)[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(hw)+'"/>';}
+  } else if(L.t==="pinwheel"){        // a disc cut into n segments, two tinctures about
+   var pr2=R*(L.r||0.4), c2b=col(L.c2===undefined?12:L.c2);
+   for(var v=0;v<n;v++){var a0=TAU*v/n-Math.PI/2+rot, a1=TAU*(v+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(cx)+','+F(cy)+' L'+F(at(a0,pr2)[0])+','+F(at(a0,pr2)[1])+
+      ' A'+F(pr2)+','+F(pr2)+' 0 0 1 '+F(at(a1,pr2)[0])+','+F(at(a1,pr2)[1])+'Z" fill="'+(v%2?c2b:c)+'"/>';}
+  } else if(L.t==="segments"){        // a ring cut into n pieces, each its own tincture
+   var s0=R*(L.r0||0.2), s1=R*(L.r1||0.5), cs2=L.cs||[];
+   for(var v2=0;v2<n;v2++){var b0=TAU*v2/n-Math.PI/2+rot, b1=TAU*(v2+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+' L'+F(at(b0,s1)[0])+','+F(at(b0,s1)[1])+
+      ' A'+F(s1)+','+F(s1)+' 0 0 1 '+F(at(b1,s1)[0])+','+F(at(b1,s1)[1])+
+      ' L'+F(at(b1,s0)[0])+','+F(at(b1,s0)[1])+
+      ' A'+F(s0)+','+F(s0)+' 0 0 0 '+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+'Z" fill="'+
+      col(cs2.length?cs2[v2%cs2.length]:L.c)+'"/>';}
+  } else if(L.t==="darts"){           // n darts flying outward, barbed as on the plates
+   var dw=(L.w||0.09), bb=(L.barb===undefined?0.5:L.barb);
+   for(var v3=0;v3<n;v3++){var g0=TAU*v3/n-Math.PI/2+rot,d0=RR(L,g0,L.r0||0.3),d1=RR(L,g0,L.r1||0.9);
+    var ux2=Math.cos(g0),uy2=Math.sin(g0),nx2=-uy2,ny2=ux2,W2=dw*R,rb=d0+(d1-d0)*bb;
+    var P=function(rr,off){return [cx+ux2*rr+nx2*off, cy+uy2*rr+ny2*off]};
+    out+=poly([P(d1,0),P(rb,-W2),P(rb,-W2*0.34),P(d0,-W2*0.34),
+               P(d0,W2*0.34),P(rb,W2*0.34),P(rb,W2)],c);}
+  } else if(L.t==="outline"){         // line-art: a stroked shape, no fill
+   var or1=R*(L.r||0.6), on=n||4, op=[];
+   for(var v4=0;v4<on;v4++)op.push(at(TAU*v4/on-Math.PI/2+rot,or1));
+   out+=poly(op,null,c,(L.w||0.02)*R);
+  } else if(L.t==="petals"){          // the shape most of the plates are built from:
+   // n petals springing from an inner radius to a tip, each bounded by two curves.
+   // bow moves the widest part in or out; round>0 gives a blunt tip instead of a point;
+   // stroke draws the outline the painted petals carry.
+   var pr0=(L.r0===undefined?0.10:L.r0), pr1=(L.r1===undefined?1:L.r1),
+       pw=(L.w===undefined?0.18:L.w), bow=(L.bow===undefined?0.5:L.bow),
+       rnd=(L.round===undefined?0:L.round),
+       ps=(L.stroke===undefined?null:col(L.stroke)), psw=R*(L.sw||0.014);
+   var swl=(L.swirl===undefined?0:L.swirl)*TAU;   // the tip leans this far round
+   for(var pj=0;pj<n;pj++){
+    var pa=TAU*pj/n-Math.PI/2+rot, pa2=pa+swl, pam=pa+swl*0.5,
+        PB=L.fit?bound(pa):R, PB2=L.fit?bound(pa2):R, PBM=L.fit?bound(pam):R,
+        pux=Math.cos(pa),puy=Math.sin(pa),
+        pu2x=Math.cos(pa2),pu2y=Math.sin(pa2),
+        pmx=Math.cos(pam),pmy=Math.sin(pam),pnx=-pmy,pny=pmx,
+        i0x=cx+pux*PB*pr0, i0y=cy+puy*PB*pr0,
+        i1x=cx+pu2x*PB2*pr1, i1y=cy+pu2y*PB2*pr1,
+        prm=PBM*(pr0+(pr1-pr0)*bow), phw=pw*R,
+        k1x=cx+pmx*prm+pnx*phw, k1y=cy+pmy*prm+pny*phw,
+        k2x=cx+pmx*prm-pnx*phw, k2y=cy+pmy*prm-pny*phw,
+        t1x=i1x+pnx*phw*rnd, t1y=i1y+pny*phw*rnd,
+        t2x=i1x-pnx*phw*rnd, t2y=i1y-pny*phw*rnd,
+        pd="M"+F(i0x)+","+F(i0y)+"Q"+F(k1x)+","+F(k1y)+" "+F(t1x)+","+F(t1y)+
+           (rnd?"A"+F(phw*rnd)+","+F(phw*rnd)+" 0 0 1 "+F(t2x)+","+F(t2y)
+               :"L"+F(t2x)+","+F(t2y))+
+           "Q"+F(k2x)+","+F(k2y)+" "+F(i0x)+","+F(i0y)+"Z";
+    out+='<path d="'+pd+'" fill="'+c+'"'+(ps?' stroke="'+ps+'" stroke-width="'+F(psw)+'" stroke-linejoin="round"':"")+'/>';}
+  } else if(L.t==="veins"){           // the midrib and side-veins the painted leaves carry
+   var vr0=(L.r0===undefined?0.15:L.r0), vr1=(L.r1===undefined?0.9:L.r1),
+       vw=R*(L.w||0.010), vs=L.side||0, vsp=(L.spread===undefined?0.06:L.spread);
+   for(var vj=0;vj<n;vj++){
+    var va=TAU*vj/n-Math.PI/2+rot, VB=L.fit?bound(va):R,
+        vux=Math.cos(va),vuy=Math.sin(va),vnx=-vuy,vny=vux;
+    out+='<path d="M'+F(cx+vux*VB*vr0)+','+F(cy+vuy*VB*vr0)+'L'+F(cx+vux*VB*vr1)+','+F(cy+vuy*VB*vr1)+
+      '" stroke="'+c+'" stroke-width="'+F(vw)+'" fill="none" stroke-linecap="round"/>';
+    for(var vi=1;vi<=vs;vi++){
+     var vt=vr0+(vr1-vr0)*vi/(vs+1), vl=vsp*R*(1-vi/(vs+1));
+     out+='<path d="M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)+vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)+vny*vl)+
+       'M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)-vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)-vny*vl)+
+       '" stroke="'+c+'" stroke-width="'+F(vw*0.8)+'" fill="none" stroke-linecap="round"/>';}}
+  } else if(L.t==="bands"){           // concentric bands of colour, outermost drawn first
+   var bcs=L.cs||[], bb0=(L.r0===undefined?0:L.r0), bb1=(L.r1===undefined?1:L.r1);
+   for(var bj=bcs.length-1;bj>=0;bj--)
+    out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*(bb0+(bb1-bb0)*(bj+1)/bcs.length))+
+      '" fill="'+col(bcs[bj])+'"/>';
+  } else if(L.t==="scatter"){         // small charges strewn about the field
+   var sk=L.k||"star", ssz=R*(L.size||0.07), srr=(L.r===undefined?0.78:L.r),
+       sac=col(L.ac===undefined?0:L.ac);
+   for(var sj=0;sj<n;sj++){
+    var sa=TAU*sj/n-Math.PI/2+rot, SB=L.fit?bound(sa):R;
+    window.ARDA_CHARGE_TEXT="";
+    out+=window.ardaChargePath(sk,cx+Math.cos(sa)*SB*srr,cy+Math.sin(sa)*SB*srr,ssz,c,sac);}
+  } else if(L.t==="arcs"){            // stroked arcs: n pieces of a circle, gapped
+   var ar=R*(L.r||0.6), aw=R*(L.w||0.03), gap=(L.gap===undefined?0.25:L.gap);
+   for(var aj=0;aj<n;aj++){
+    var a0=TAU*(aj+gap/2)/n-Math.PI/2+rot, a1=TAU*(aj+1-gap/2)/n-Math.PI/2+rot,
+        q0=at(a0,ar), q1=at(a1,ar);
+    out+='<path d="M'+F(q0[0])+','+F(q0[1])+'A'+F(ar)+','+F(ar)+' 0 0 1 '+F(q1[0])+','+F(q1[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(aw)+'" stroke-linecap="'+(L.cap||"butt")+'"/>';}
+  } else if(L.t==="charge"){
+   var chr=R*(L.r||0), cha=(L.a===undefined?-0.25:L.a)*TAU, ctr=chr?at(cha,chr):[cx,cy];
+   window.ARDA_CHARGE_TEXT=L.text||"";
+   // a course may name its own letter; three tengwar in a row are three DIFFERENT
+   // tengwar, which they were not while these were read once per device
+   var _ps=window.ARDA_TENGWA_SER,_pg=window.ARDA_TENGWA_GRADE;
+   if(L.tser!==undefined)window.ARDA_TENGWA_SER=L.tser;
+   if(L.tgrade!==undefined)window.ARDA_TENGWA_GRADE=L.tgrade;
+   var g=window.ardaChargePath(L.k||"star",ctr[0],ctr[1],R*(L.size||0.3),c,col(L.ac===undefined?1:L.ac));
+   window.ARDA_TENGWA_SER=_ps;window.ARDA_TENGWA_GRADE=_pg;
+   // Durin's crown and the Steward's seal are drawn as LINE on the plates, not as
+   // colour. A charge given an outline is wrapped in a group carrying it: the charge
+   // paths set their own fill and no stroke, so they inherit this one.
+   if(L.stroke!==undefined)
+    g='<g stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round" '+
+      'stroke-linecap="round" fill-rule="evenodd">'+g+'</g>';
+   out+=L.rot?'<g transform="rotate('+F((L.rot||0)*360)+' '+F(ctr[0])+' '+F(ctr[1])+')">'+g+'</g>':g;
+  }
+ });
+ return out;
+};
+
+// ===================== the layer engine =====================
+// The plates in Forodrim are built as stacks of concentric bands -- a field, then ring
+// upon ring of wedges, lobes, discs and stars, each with its own count, radius and
+// tincture, and an edge that may be plain, beaded or chequered. The older fixed slots
+// (mandala / gems / charge) cannot express that. A device may now instead carry
+// p.layers: an ordered list drawn from the field outward, each entry {t:...}.
+//
+//   {t:"ring",   r, w, c, dash}                 a circle, stroked
+//   {t:"disc",   r, c}                          a filled disc
+//   {t:"wedges", n, r0, r1, w, c, rot, taper}   n tapering rays
+//   {t:"lobes",  n, r, len, wid, c, rot}        n petals or lobes
+//   {t:"discs",  n, r, size, c, rot, edge}      n discs set about a ring
+//   {t:"star",   n, ro, ri, c, rot}             an n-pointed star
+//   {t:"poly",   n, r, c, rot}                  a regular polygon
+//   {t:"square", s, c, rot}                     an inset panel
+//   {t:"corners",n, r, size, c, rot, shape}     accents at the corners
+//   {t:"dashes", n, r, len, w, c, rot}          a broken ring, as of beads
+//   {t:"charge", k, r, size, c, ac, rot, text}  any charge from the vocabulary
+// Radii are fractions of R; angles in turns (0.25 = a quarter turn).
+window.ardaForgeLayers=function(list,cx,cy,R,col,shape){
+ // The plates fill the lozenge, and a lozenge only reaches R at its four points: along
+ // every other bearing its edge is far nearer. Radii given with fit:true are therefore
+ // fractions of the FIELD BOUNDARY at that bearing, not of the circumscribed circle --
+ // without this a ray drawn to r=1 stops well short of the edge everywhere but the points.
+ var SHP=shape||"lozenge";
+ function bound(a){
+  if(SHP==="circle")return R;
+  var ca=Math.abs(Math.cos(a)),sa=Math.abs(Math.sin(a));
+  if(SHP==="square"){var s2=R*ARDA_SQ;return s2/Math.max(ca,sa,1e-6)}
+  if(SHP==="shield"){var sw=R*ARDA_SHW,sh2=R*0.99;
+   return 1/Math.max(ca/sw,sa/sh2,1e-9)}
+  var w=R*ARDA_LZ,h=R;                   // the lozenge: a square on its point
+  return 1/((ca/w)+(sa/h)+1e-9);
+ }
+ var F=function(n){return (+n).toFixed(2)},out="";
+ var LAYER_STROKE="";      // set per course; poly() picks it up when given no stroke
+ var RR=function(L,a,v){return (L.fit?bound(a):R)*v};
+ var TAU=Math.PI*2;
+ function at(a,r){return [cx+r*Math.cos(a),cy+r*Math.sin(a)]}
+ function poly(pts,fill,stroke,sw){
+  var d=pts.map(function(p,i){return (i?"L":"M")+F(p[0])+","+F(p[1])}).join("")+"Z";
+  return '<path d="'+d+'" fill="'+(fill||"none")+'"'+
+    (stroke?' stroke="'+stroke+'" stroke-width="'+(sw||1)+'" stroke-linejoin="round"':LAYER_STROKE)+'/>';
+ }
+ (list||[]).forEach(function(L){
+  var c=col(L.c===undefined?0:L.c), rot=(L.rot||0)*TAU, n=L.n||1;
+  // an outline, if this course asks for one: LS is the ink, LSW the width
+  var LS=(L.stroke===undefined?null:col(L.stroke)), LSW=R*(L.sw||0.012);
+  var SA=LS?(' stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round"'):"";
+  LAYER_STROKE=SA;
+  if(L.t==="ring")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="none" stroke="'+c+
+     '" stroke-width="'+F((L.w||0.02)*R)+'"'+(L.dash?' stroke-dasharray="'+L.dash+'"':"")+'/>';
+  else if(L.t==="disc")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="'+c+'"'+SA+'/>';
+  else if(L.t==="wedges"){
+   // A ray is broad where it springs and comes to a point: its half-width is measured
+   // ACROSS the ray as a fraction of R, not as an angle. Taken as an angle it collapses
+   // to a needle at any small inner radius -- which is what it did.
+   var w=(L.w===undefined?0.06:L.w), tp=(L.taper===undefined?0:L.taper);
+   for(var i=0;i<n;i++){var a=TAU*i/n-Math.PI/2+rot,r0=RR(L,a,L.r0||0),r1=RR(L,a,L.r1===undefined?1:L.r1);
+    var ux=Math.cos(a),uy=Math.sin(a),nx=-uy,ny=ux,hw=w*R,tw=hw*tp;
+    out+=poly([[cx+ux*r1+nx*tw, cy+uy*r1+ny*tw],
+               [cx+ux*r1-nx*tw, cy+uy*r1-ny*tw],
+               [cx+ux*r0-nx*hw, cy+uy*r0-ny*hw],
+               [cx+ux*r0+nx*hw, cy+uy*r0+ny*hw]],c);}
+  } else if(L.t==="lobes"){
+   var lr=R*(L.r||0.5), ln=R*(L.len||0.2), wd=R*(L.wid||0.1);
+   for(var j=0;j<n;j++){var b=TAU*j/n-Math.PI/2+rot,p=at(b,lr);
+    out+='<ellipse cx="'+F(p[0])+'" cy="'+F(p[1])+'" rx="'+F(wd)+'" ry="'+F(ln)+
+      '" fill="'+c+'"'+SA+' transform="rotate('+F(b*180/Math.PI+90)+' '+F(p[0])+' '+F(p[1])+')"/>';}
+  } else if(L.t==="discs"){
+   var dr=R*(L.r||0.6), ds=R*(L.size||0.12), ec=L.edge!==undefined?col(L.edge):null;
+   for(var k=0;k<n;k++){var d2=TAU*k/n-Math.PI/2+rot,q=at(d2,L.fit?bound(d2)*(L.r||0.6):dr);
+    out+='<circle cx="'+F(q[0])+'" cy="'+F(q[1])+'" r="'+F(ds)+'" fill="'+c+'"'+
+      (ec?' stroke="'+ec+'" stroke-width="'+F(R*0.012)+'"':SA)+'/>';}
+  } else if(L.t==="star"){
+   var ro=R*(L.ro||0.6), ri=R*(L.ri||0.3), pts=[];
+   for(var m=0;m<n*2;m++)pts.push(at(Math.PI*m/n-Math.PI/2+rot, m%2?ri:ro));
+   out+=poly(pts,c);
+  } else if(L.t==="poly"){
+   var pr=R*(L.r||0.5), pp=[];
+   for(var q2=0;q2<n;q2++)pp.push(at(TAU*q2/n-Math.PI/2+rot,pr));
+   out+=poly(pp,c);
+  } else if(L.t==="square"){
+   var s=R*(L.s||0.3);
+   out+='<rect x="'+F(cx-s)+'" y="'+F(cy-s)+'" width="'+F(2*s)+'" height="'+F(2*s)+'" fill="'+c+
+     '" transform="rotate('+F((L.rot||0)*360)+' '+F(cx)+' '+F(cy)+')"/>';
+  } else if(L.t==="corners"){
+   var cr=R*(L.r||0.86), cs=R*(L.size||0.1), nn=n||4;
+   for(var t=0;t<nn;t++){var ca=TAU*t/nn-Math.PI/2+rot,cr2=L.fit?bound(ca)*(L.r||0.86):cr,p2=at(ca,cr2);
+    if(L.shape==="tri")out+=poly([at(ca,cr2+cs),at(ca-0.16,cr2-cs*0.5),at(ca+0.16,cr2-cs*0.5)],c);
+    else out+='<circle cx="'+F(p2[0])+'" cy="'+F(p2[1])+'" r="'+F(cs)+'" fill="'+c+'"/>';}
+  } else if(L.t==="dashes"){
+   var hr=R*(L.r||0.7), hl=(L.len||0.5), hw=R*(L.w||0.05);
+   for(var u=0;u<n;u++){var ua=TAU*u/n-Math.PI/2+rot, half=(TAU/n)*hl/2;
+    out+='<path d="M'+F(at(ua-half,hr)[0])+','+F(at(ua-half,hr)[1])+
+      ' A'+F(hr)+','+F(hr)+' 0 0 1 '+F(at(ua+half,hr)[0])+','+F(at(ua+half,hr)[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(hw)+'"/>';}
+  } else if(L.t==="pinwheel"){        // a disc cut into n segments, two tinctures about
+   var pr2=R*(L.r||0.4), c2b=col(L.c2===undefined?12:L.c2);
+   for(var v=0;v<n;v++){var a0=TAU*v/n-Math.PI/2+rot, a1=TAU*(v+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(cx)+','+F(cy)+' L'+F(at(a0,pr2)[0])+','+F(at(a0,pr2)[1])+
+      ' A'+F(pr2)+','+F(pr2)+' 0 0 1 '+F(at(a1,pr2)[0])+','+F(at(a1,pr2)[1])+'Z" fill="'+(v%2?c2b:c)+'"/>';}
+  } else if(L.t==="segments"){        // a ring cut into n pieces, each its own tincture
+   var s0=R*(L.r0||0.2), s1=R*(L.r1||0.5), cs2=L.cs||[];
+   for(var v2=0;v2<n;v2++){var b0=TAU*v2/n-Math.PI/2+rot, b1=TAU*(v2+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+' L'+F(at(b0,s1)[0])+','+F(at(b0,s1)[1])+
+      ' A'+F(s1)+','+F(s1)+' 0 0 1 '+F(at(b1,s1)[0])+','+F(at(b1,s1)[1])+
+      ' L'+F(at(b1,s0)[0])+','+F(at(b1,s0)[1])+
+      ' A'+F(s0)+','+F(s0)+' 0 0 0 '+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+'Z" fill="'+
+      col(cs2.length?cs2[v2%cs2.length]:L.c)+'"/>';}
+  } else if(L.t==="darts"){           // n darts flying outward, barbed as on the plates
+   var dw=(L.w||0.09), bb=(L.barb===undefined?0.5:L.barb);
+   for(var v3=0;v3<n;v3++){var g0=TAU*v3/n-Math.PI/2+rot,d0=RR(L,g0,L.r0||0.3),d1=RR(L,g0,L.r1||0.9);
+    var ux2=Math.cos(g0),uy2=Math.sin(g0),nx2=-uy2,ny2=ux2,W2=dw*R,rb=d0+(d1-d0)*bb;
+    var P=function(rr,off){return [cx+ux2*rr+nx2*off, cy+uy2*rr+ny2*off]};
+    out+=poly([P(d1,0),P(rb,-W2),P(rb,-W2*0.34),P(d0,-W2*0.34),
+               P(d0,W2*0.34),P(rb,W2*0.34),P(rb,W2)],c);}
+  } else if(L.t==="outline"){         // line-art: a stroked shape, no fill
+   var or1=R*(L.r||0.6), on=n||4, op=[];
+   for(var v4=0;v4<on;v4++)op.push(at(TAU*v4/on-Math.PI/2+rot,or1));
+   out+=poly(op,null,c,(L.w||0.02)*R);
+  } else if(L.t==="petals"){          // the shape most of the plates are built from:
+   // n petals springing from an inner radius to a tip, each bounded by two curves.
+   // bow moves the widest part in or out; round>0 gives a blunt tip instead of a point;
+   // stroke draws the outline the painted petals carry.
+   var pr0=(L.r0===undefined?0.10:L.r0), pr1=(L.r1===undefined?1:L.r1),
+       pw=(L.w===undefined?0.18:L.w), bow=(L.bow===undefined?0.5:L.bow),
+       rnd=(L.round===undefined?0:L.round),
+       ps=(L.stroke===undefined?null:col(L.stroke)), psw=R*(L.sw||0.014);
+   var swl=(L.swirl===undefined?0:L.swirl)*TAU;   // the tip leans this far round
+   for(var pj=0;pj<n;pj++){
+    var pa=TAU*pj/n-Math.PI/2+rot, pa2=pa+swl, pam=pa+swl*0.5,
+        PB=L.fit?bound(pa):R, PB2=L.fit?bound(pa2):R, PBM=L.fit?bound(pam):R,
+        pux=Math.cos(pa),puy=Math.sin(pa),
+        pu2x=Math.cos(pa2),pu2y=Math.sin(pa2),
+        pmx=Math.cos(pam),pmy=Math.sin(pam),pnx=-pmy,pny=pmx,
+        i0x=cx+pux*PB*pr0, i0y=cy+puy*PB*pr0,
+        i1x=cx+pu2x*PB2*pr1, i1y=cy+pu2y*PB2*pr1,
+        prm=PBM*(pr0+(pr1-pr0)*bow), phw=pw*R,
+        k1x=cx+pmx*prm+pnx*phw, k1y=cy+pmy*prm+pny*phw,
+        k2x=cx+pmx*prm-pnx*phw, k2y=cy+pmy*prm-pny*phw,
+        t1x=i1x+pnx*phw*rnd, t1y=i1y+pny*phw*rnd,
+        t2x=i1x-pnx*phw*rnd, t2y=i1y-pny*phw*rnd,
+        pd="M"+F(i0x)+","+F(i0y)+"Q"+F(k1x)+","+F(k1y)+" "+F(t1x)+","+F(t1y)+
+           (rnd?"A"+F(phw*rnd)+","+F(phw*rnd)+" 0 0 1 "+F(t2x)+","+F(t2y)
+               :"L"+F(t2x)+","+F(t2y))+
+           "Q"+F(k2x)+","+F(k2y)+" "+F(i0x)+","+F(i0y)+"Z";
+    out+='<path d="'+pd+'" fill="'+c+'"'+(ps?' stroke="'+ps+'" stroke-width="'+F(psw)+'" stroke-linejoin="round"':"")+'/>';}
+  } else if(L.t==="veins"){           // the midrib and side-veins the painted leaves carry
+   var vr0=(L.r0===undefined?0.15:L.r0), vr1=(L.r1===undefined?0.9:L.r1),
+       vw=R*(L.w||0.010), vs=L.side||0, vsp=(L.spread===undefined?0.06:L.spread);
+   for(var vj=0;vj<n;vj++){
+    var va=TAU*vj/n-Math.PI/2+rot, VB=L.fit?bound(va):R,
+        vux=Math.cos(va),vuy=Math.sin(va),vnx=-vuy,vny=vux;
+    out+='<path d="M'+F(cx+vux*VB*vr0)+','+F(cy+vuy*VB*vr0)+'L'+F(cx+vux*VB*vr1)+','+F(cy+vuy*VB*vr1)+
+      '" stroke="'+c+'" stroke-width="'+F(vw)+'" fill="none" stroke-linecap="round"/>';
+    for(var vi=1;vi<=vs;vi++){
+     var vt=vr0+(vr1-vr0)*vi/(vs+1), vl=vsp*R*(1-vi/(vs+1));
+     out+='<path d="M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)+vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)+vny*vl)+
+       'M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)-vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)-vny*vl)+
+       '" stroke="'+c+'" stroke-width="'+F(vw*0.8)+'" fill="none" stroke-linecap="round"/>';}}
+  } else if(L.t==="bands"){           // concentric bands of colour, outermost drawn first
+   var bcs=L.cs||[], bb0=(L.r0===undefined?0:L.r0), bb1=(L.r1===undefined?1:L.r1);
+   for(var bj=bcs.length-1;bj>=0;bj--)
+    out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*(bb0+(bb1-bb0)*(bj+1)/bcs.length))+
+      '" fill="'+col(bcs[bj])+'"/>';
+  } else if(L.t==="scatter"){         // small charges strewn about the field
+   var sk=L.k||"star", ssz=R*(L.size||0.07), srr=(L.r===undefined?0.78:L.r),
+       sac=col(L.ac===undefined?0:L.ac);
+   for(var sj=0;sj<n;sj++){
+    var sa=TAU*sj/n-Math.PI/2+rot, SB=L.fit?bound(sa):R;
+    window.ARDA_CHARGE_TEXT="";
+    out+=window.ardaChargePath(sk,cx+Math.cos(sa)*SB*srr,cy+Math.sin(sa)*SB*srr,ssz,c,sac);}
+  } else if(L.t==="arcs"){            // stroked arcs: n pieces of a circle, gapped
+   var ar=R*(L.r||0.6), aw=R*(L.w||0.03), gap=(L.gap===undefined?0.25:L.gap);
+   for(var aj=0;aj<n;aj++){
+    var a0=TAU*(aj+gap/2)/n-Math.PI/2+rot, a1=TAU*(aj+1-gap/2)/n-Math.PI/2+rot,
+        q0=at(a0,ar), q1=at(a1,ar);
+    out+='<path d="M'+F(q0[0])+','+F(q0[1])+'A'+F(ar)+','+F(ar)+' 0 0 1 '+F(q1[0])+','+F(q1[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(aw)+'" stroke-linecap="'+(L.cap||"butt")+'"/>';}
+  } else if(L.t==="charge"){
+   var chr=R*(L.r||0), cha=(L.a===undefined?-0.25:L.a)*TAU, ctr=chr?at(cha,chr):[cx,cy];
+   window.ARDA_CHARGE_TEXT=L.text||"";
+   // a course may name its own letter; three tengwar in a row are three DIFFERENT
+   // tengwar, which they were not while these were read once per device
+   var _ps=window.ARDA_TENGWA_SER,_pg=window.ARDA_TENGWA_GRADE;
+   if(L.tser!==undefined)window.ARDA_TENGWA_SER=L.tser;
+   if(L.tgrade!==undefined)window.ARDA_TENGWA_GRADE=L.tgrade;
+   var g=window.ardaChargePath(L.k||"star",ctr[0],ctr[1],R*(L.size||0.3),c,col(L.ac===undefined?1:L.ac));
+   window.ARDA_TENGWA_SER=_ps;window.ARDA_TENGWA_GRADE=_pg;
+   // Durin's crown and the Steward's seal are drawn as LINE on the plates, not as
+   // colour. A charge given an outline is wrapped in a group carrying it: the charge
+   // paths set their own fill and no stroke, so they inherit this one.
+   if(L.stroke!==undefined)
+    g='<g stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round" '+
+      'stroke-linecap="round" fill-rule="evenodd">'+g+'</g>';
+   out+=L.rot?'<g transform="rotate('+F((L.rot||0)*360)+' '+F(ctr[0])+' '+F(ctr[1])+')">'+g+'</g>':g;
+  }
+ });
+ return out;
+};
+
+// ===================== the layer engine =====================
+// The plates in Forodrim are built as stacks of concentric bands -- a field, then ring
+// upon ring of wedges, lobes, discs and stars, each with its own count, radius and
+// tincture, and an edge that may be plain, beaded or chequered. The older fixed slots
+// (mandala / gems / charge) cannot express that. A device may now instead carry
+// p.layers: an ordered list drawn from the field outward, each entry {t:...}.
+//
+//   {t:"ring",   r, w, c, dash}                 a circle, stroked
+//   {t:"disc",   r, c}                          a filled disc
+//   {t:"wedges", n, r0, r1, w, c, rot, taper}   n tapering rays
+//   {t:"lobes",  n, r, len, wid, c, rot}        n petals or lobes
+//   {t:"discs",  n, r, size, c, rot, edge}      n discs set about a ring
+//   {t:"star",   n, ro, ri, c, rot}             an n-pointed star
+//   {t:"poly",   n, r, c, rot}                  a regular polygon
+//   {t:"square", s, c, rot}                     an inset panel
+//   {t:"corners",n, r, size, c, rot, shape}     accents at the corners
+//   {t:"dashes", n, r, len, w, c, rot}          a broken ring, as of beads
+//   {t:"charge", k, r, size, c, ac, rot, text}  any charge from the vocabulary
+// Radii are fractions of R; angles in turns (0.25 = a quarter turn).
+window.ardaForgeLayers=function(list,cx,cy,R,col,shape){
+ // The plates fill the lozenge, and a lozenge only reaches R at its four points: along
+ // every other bearing its edge is far nearer. Radii given with fit:true are therefore
+ // fractions of the FIELD BOUNDARY at that bearing, not of the circumscribed circle --
+ // without this a ray drawn to r=1 stops well short of the edge everywhere but the points.
+ var SHP=shape||"lozenge";
+ function bound(a){
+  if(SHP==="circle")return R;
+  var ca=Math.abs(Math.cos(a)),sa=Math.abs(Math.sin(a));
+  if(SHP==="square"){var s2=R*ARDA_SQ;return s2/Math.max(ca,sa,1e-6)}
+  if(SHP==="shield"){var sw=R*ARDA_SHW,sh2=R*0.99;
+   return 1/Math.max(ca/sw,sa/sh2,1e-9)}
+  var w=R*ARDA_LZ,h=R;                   // the lozenge: a square on its point
+  return 1/((ca/w)+(sa/h)+1e-9);
+ }
+ var F=function(n){return (+n).toFixed(2)},out="";
+ var LAYER_STROKE="";      // set per course; poly() picks it up when given no stroke
+ var RR=function(L,a,v){return (L.fit?bound(a):R)*v};
+ var TAU=Math.PI*2;
+ function at(a,r){return [cx+r*Math.cos(a),cy+r*Math.sin(a)]}
+ function poly(pts,fill,stroke,sw){
+  var d=pts.map(function(p,i){return (i?"L":"M")+F(p[0])+","+F(p[1])}).join("")+"Z";
+  return '<path d="'+d+'" fill="'+(fill||"none")+'"'+
+    (stroke?' stroke="'+stroke+'" stroke-width="'+(sw||1)+'" stroke-linejoin="round"':LAYER_STROKE)+'/>';
+ }
+ (list||[]).forEach(function(L){
+  var c=col(L.c===undefined?0:L.c), rot=(L.rot||0)*TAU, n=L.n||1;
+  // an outline, if this course asks for one: LS is the ink, LSW the width
+  var LS=(L.stroke===undefined?null:col(L.stroke)), LSW=R*(L.sw||0.012);
+  var SA=LS?(' stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round"'):"";
+  LAYER_STROKE=SA;
+  if(L.t==="ring")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="none" stroke="'+c+
+     '" stroke-width="'+F((L.w||0.02)*R)+'"'+(L.dash?' stroke-dasharray="'+L.dash+'"':"")+'/>';
+  else if(L.t==="disc")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="'+c+'"'+SA+'/>';
+  else if(L.t==="wedges"){
+   // A ray is broad where it springs and comes to a point: its half-width is measured
+   // ACROSS the ray as a fraction of R, not as an angle. Taken as an angle it collapses
+   // to a needle at any small inner radius -- which is what it did.
+   var w=(L.w===undefined?0.06:L.w), tp=(L.taper===undefined?0:L.taper);
+   for(var i=0;i<n;i++){var a=TAU*i/n-Math.PI/2+rot,r0=RR(L,a,L.r0||0),r1=RR(L,a,L.r1===undefined?1:L.r1);
+    var ux=Math.cos(a),uy=Math.sin(a),nx=-uy,ny=ux,hw=w*R,tw=hw*tp;
+    out+=poly([[cx+ux*r1+nx*tw, cy+uy*r1+ny*tw],
+               [cx+ux*r1-nx*tw, cy+uy*r1-ny*tw],
+               [cx+ux*r0-nx*hw, cy+uy*r0-ny*hw],
+               [cx+ux*r0+nx*hw, cy+uy*r0+ny*hw]],c);}
+  } else if(L.t==="lobes"){
+   var lr=R*(L.r||0.5), ln=R*(L.len||0.2), wd=R*(L.wid||0.1);
+   for(var j=0;j<n;j++){var b=TAU*j/n-Math.PI/2+rot,p=at(b,lr);
+    out+='<ellipse cx="'+F(p[0])+'" cy="'+F(p[1])+'" rx="'+F(wd)+'" ry="'+F(ln)+
+      '" fill="'+c+'"'+SA+' transform="rotate('+F(b*180/Math.PI+90)+' '+F(p[0])+' '+F(p[1])+')"/>';}
+  } else if(L.t==="discs"){
+   var dr=R*(L.r||0.6), ds=R*(L.size||0.12), ec=L.edge!==undefined?col(L.edge):null;
+   for(var k=0;k<n;k++){var d2=TAU*k/n-Math.PI/2+rot,q=at(d2,L.fit?bound(d2)*(L.r||0.6):dr);
+    out+='<circle cx="'+F(q[0])+'" cy="'+F(q[1])+'" r="'+F(ds)+'" fill="'+c+'"'+
+      (ec?' stroke="'+ec+'" stroke-width="'+F(R*0.012)+'"':SA)+'/>';}
+  } else if(L.t==="star"){
+   var ro=R*(L.ro||0.6), ri=R*(L.ri||0.3), pts=[];
+   for(var m=0;m<n*2;m++)pts.push(at(Math.PI*m/n-Math.PI/2+rot, m%2?ri:ro));
+   out+=poly(pts,c);
+  } else if(L.t==="poly"){
+   var pr=R*(L.r||0.5), pp=[];
+   for(var q2=0;q2<n;q2++)pp.push(at(TAU*q2/n-Math.PI/2+rot,pr));
+   out+=poly(pp,c);
+  } else if(L.t==="square"){
+   var s=R*(L.s||0.3);
+   out+='<rect x="'+F(cx-s)+'" y="'+F(cy-s)+'" width="'+F(2*s)+'" height="'+F(2*s)+'" fill="'+c+
+     '" transform="rotate('+F((L.rot||0)*360)+' '+F(cx)+' '+F(cy)+')"/>';
+  } else if(L.t==="corners"){
+   var cr=R*(L.r||0.86), cs=R*(L.size||0.1), nn=n||4;
+   for(var t=0;t<nn;t++){var ca=TAU*t/nn-Math.PI/2+rot,cr2=L.fit?bound(ca)*(L.r||0.86):cr,p2=at(ca,cr2);
+    if(L.shape==="tri")out+=poly([at(ca,cr2+cs),at(ca-0.16,cr2-cs*0.5),at(ca+0.16,cr2-cs*0.5)],c);
+    else out+='<circle cx="'+F(p2[0])+'" cy="'+F(p2[1])+'" r="'+F(cs)+'" fill="'+c+'"/>';}
+  } else if(L.t==="dashes"){
+   var hr=R*(L.r||0.7), hl=(L.len||0.5), hw=R*(L.w||0.05);
+   for(var u=0;u<n;u++){var ua=TAU*u/n-Math.PI/2+rot, half=(TAU/n)*hl/2;
+    out+='<path d="M'+F(at(ua-half,hr)[0])+','+F(at(ua-half,hr)[1])+
+      ' A'+F(hr)+','+F(hr)+' 0 0 1 '+F(at(ua+half,hr)[0])+','+F(at(ua+half,hr)[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(hw)+'"/>';}
+  } else if(L.t==="pinwheel"){        // a disc cut into n segments, two tinctures about
+   var pr2=R*(L.r||0.4), c2b=col(L.c2===undefined?12:L.c2);
+   for(var v=0;v<n;v++){var a0=TAU*v/n-Math.PI/2+rot, a1=TAU*(v+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(cx)+','+F(cy)+' L'+F(at(a0,pr2)[0])+','+F(at(a0,pr2)[1])+
+      ' A'+F(pr2)+','+F(pr2)+' 0 0 1 '+F(at(a1,pr2)[0])+','+F(at(a1,pr2)[1])+'Z" fill="'+(v%2?c2b:c)+'"/>';}
+  } else if(L.t==="segments"){        // a ring cut into n pieces, each its own tincture
+   var s0=R*(L.r0||0.2), s1=R*(L.r1||0.5), cs2=L.cs||[];
+   for(var v2=0;v2<n;v2++){var b0=TAU*v2/n-Math.PI/2+rot, b1=TAU*(v2+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+' L'+F(at(b0,s1)[0])+','+F(at(b0,s1)[1])+
+      ' A'+F(s1)+','+F(s1)+' 0 0 1 '+F(at(b1,s1)[0])+','+F(at(b1,s1)[1])+
+      ' L'+F(at(b1,s0)[0])+','+F(at(b1,s0)[1])+
+      ' A'+F(s0)+','+F(s0)+' 0 0 0 '+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+'Z" fill="'+
+      col(cs2.length?cs2[v2%cs2.length]:L.c)+'"/>';}
+  } else if(L.t==="darts"){           // n darts flying outward, barbed as on the plates
+   var dw=(L.w||0.09), bb=(L.barb===undefined?0.5:L.barb);
+   for(var v3=0;v3<n;v3++){var g0=TAU*v3/n-Math.PI/2+rot,d0=RR(L,g0,L.r0||0.3),d1=RR(L,g0,L.r1||0.9);
+    var ux2=Math.cos(g0),uy2=Math.sin(g0),nx2=-uy2,ny2=ux2,W2=dw*R,rb=d0+(d1-d0)*bb;
+    var P=function(rr,off){return [cx+ux2*rr+nx2*off, cy+uy2*rr+ny2*off]};
+    out+=poly([P(d1,0),P(rb,-W2),P(rb,-W2*0.34),P(d0,-W2*0.34),
+               P(d0,W2*0.34),P(rb,W2*0.34),P(rb,W2)],c);}
+  } else if(L.t==="outline"){         // line-art: a stroked shape, no fill
+   var or1=R*(L.r||0.6), on=n||4, op=[];
+   for(var v4=0;v4<on;v4++)op.push(at(TAU*v4/on-Math.PI/2+rot,or1));
+   out+=poly(op,null,c,(L.w||0.02)*R);
+  } else if(L.t==="petals"){          // the shape most of the plates are built from:
+   // n petals springing from an inner radius to a tip, each bounded by two curves.
+   // bow moves the widest part in or out; round>0 gives a blunt tip instead of a point;
+   // stroke draws the outline the painted petals carry.
+   var pr0=(L.r0===undefined?0.10:L.r0), pr1=(L.r1===undefined?1:L.r1),
+       pw=(L.w===undefined?0.18:L.w), bow=(L.bow===undefined?0.5:L.bow),
+       rnd=(L.round===undefined?0:L.round),
+       ps=(L.stroke===undefined?null:col(L.stroke)), psw=R*(L.sw||0.014);
+   var swl=(L.swirl===undefined?0:L.swirl)*TAU;   // the tip leans this far round
+   for(var pj=0;pj<n;pj++){
+    var pa=TAU*pj/n-Math.PI/2+rot, pa2=pa+swl, pam=pa+swl*0.5,
+        PB=L.fit?bound(pa):R, PB2=L.fit?bound(pa2):R, PBM=L.fit?bound(pam):R,
+        pux=Math.cos(pa),puy=Math.sin(pa),
+        pu2x=Math.cos(pa2),pu2y=Math.sin(pa2),
+        pmx=Math.cos(pam),pmy=Math.sin(pam),pnx=-pmy,pny=pmx,
+        i0x=cx+pux*PB*pr0, i0y=cy+puy*PB*pr0,
+        i1x=cx+pu2x*PB2*pr1, i1y=cy+pu2y*PB2*pr1,
+        prm=PBM*(pr0+(pr1-pr0)*bow), phw=pw*R,
+        k1x=cx+pmx*prm+pnx*phw, k1y=cy+pmy*prm+pny*phw,
+        k2x=cx+pmx*prm-pnx*phw, k2y=cy+pmy*prm-pny*phw,
+        t1x=i1x+pnx*phw*rnd, t1y=i1y+pny*phw*rnd,
+        t2x=i1x-pnx*phw*rnd, t2y=i1y-pny*phw*rnd,
+        pd="M"+F(i0x)+","+F(i0y)+"Q"+F(k1x)+","+F(k1y)+" "+F(t1x)+","+F(t1y)+
+           (rnd?"A"+F(phw*rnd)+","+F(phw*rnd)+" 0 0 1 "+F(t2x)+","+F(t2y)
+               :"L"+F(t2x)+","+F(t2y))+
+           "Q"+F(k2x)+","+F(k2y)+" "+F(i0x)+","+F(i0y)+"Z";
+    out+='<path d="'+pd+'" fill="'+c+'"'+(ps?' stroke="'+ps+'" stroke-width="'+F(psw)+'" stroke-linejoin="round"':"")+'/>';}
+  } else if(L.t==="veins"){           // the midrib and side-veins the painted leaves carry
+   var vr0=(L.r0===undefined?0.15:L.r0), vr1=(L.r1===undefined?0.9:L.r1),
+       vw=R*(L.w||0.010), vs=L.side||0, vsp=(L.spread===undefined?0.06:L.spread);
+   for(var vj=0;vj<n;vj++){
+    var va=TAU*vj/n-Math.PI/2+rot, VB=L.fit?bound(va):R,
+        vux=Math.cos(va),vuy=Math.sin(va),vnx=-vuy,vny=vux;
+    out+='<path d="M'+F(cx+vux*VB*vr0)+','+F(cy+vuy*VB*vr0)+'L'+F(cx+vux*VB*vr1)+','+F(cy+vuy*VB*vr1)+
+      '" stroke="'+c+'" stroke-width="'+F(vw)+'" fill="none" stroke-linecap="round"/>';
+    for(var vi=1;vi<=vs;vi++){
+     var vt=vr0+(vr1-vr0)*vi/(vs+1), vl=vsp*R*(1-vi/(vs+1));
+     out+='<path d="M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)+vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)+vny*vl)+
+       'M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)-vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)-vny*vl)+
+       '" stroke="'+c+'" stroke-width="'+F(vw*0.8)+'" fill="none" stroke-linecap="round"/>';}}
+  } else if(L.t==="bands"){           // concentric bands of colour, outermost drawn first
+   var bcs=L.cs||[], bb0=(L.r0===undefined?0:L.r0), bb1=(L.r1===undefined?1:L.r1);
+   for(var bj=bcs.length-1;bj>=0;bj--)
+    out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*(bb0+(bb1-bb0)*(bj+1)/bcs.length))+
+      '" fill="'+col(bcs[bj])+'"/>';
+  } else if(L.t==="scatter"){         // small charges strewn about the field
+   var sk=L.k||"star", ssz=R*(L.size||0.07), srr=(L.r===undefined?0.78:L.r),
+       sac=col(L.ac===undefined?0:L.ac);
+   for(var sj=0;sj<n;sj++){
+    var sa=TAU*sj/n-Math.PI/2+rot, SB=L.fit?bound(sa):R;
+    window.ARDA_CHARGE_TEXT="";
+    out+=window.ardaChargePath(sk,cx+Math.cos(sa)*SB*srr,cy+Math.sin(sa)*SB*srr,ssz,c,sac);}
+  } else if(L.t==="arcs"){            // stroked arcs: n pieces of a circle, gapped
+   var ar=R*(L.r||0.6), aw=R*(L.w||0.03), gap=(L.gap===undefined?0.25:L.gap);
+   for(var aj=0;aj<n;aj++){
+    var a0=TAU*(aj+gap/2)/n-Math.PI/2+rot, a1=TAU*(aj+1-gap/2)/n-Math.PI/2+rot,
+        q0=at(a0,ar), q1=at(a1,ar);
+    out+='<path d="M'+F(q0[0])+','+F(q0[1])+'A'+F(ar)+','+F(ar)+' 0 0 1 '+F(q1[0])+','+F(q1[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(aw)+'" stroke-linecap="'+(L.cap||"butt")+'"/>';}
+  } else if(L.t==="charge"){
+   var chr=R*(L.r||0), cha=(L.a===undefined?-0.25:L.a)*TAU, ctr=chr?at(cha,chr):[cx,cy];
+   window.ARDA_CHARGE_TEXT=L.text||"";
+   // a course may name its own letter; three tengwar in a row are three DIFFERENT
+   // tengwar, which they were not while these were read once per device
+   var _ps=window.ARDA_TENGWA_SER,_pg=window.ARDA_TENGWA_GRADE;
+   if(L.tser!==undefined)window.ARDA_TENGWA_SER=L.tser;
+   if(L.tgrade!==undefined)window.ARDA_TENGWA_GRADE=L.tgrade;
+   var g=window.ardaChargePath(L.k||"star",ctr[0],ctr[1],R*(L.size||0.3),c,col(L.ac===undefined?1:L.ac));
+   window.ARDA_TENGWA_SER=_ps;window.ARDA_TENGWA_GRADE=_pg;
+   // Durin's crown and the Steward's seal are drawn as LINE on the plates, not as
+   // colour. A charge given an outline is wrapped in a group carrying it: the charge
+   // paths set their own fill and no stroke, so they inherit this one.
+   if(L.stroke!==undefined)
+    g='<g stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round" '+
+      'stroke-linecap="round" fill-rule="evenodd">'+g+'</g>';
+   out+=L.rot?'<g transform="rotate('+F((L.rot||0)*360)+' '+F(ctr[0])+' '+F(ctr[1])+')">'+g+'</g>':g;
+  }
+ });
+ return out;
+};
+
+// ===================== the layer engine =====================
+// The plates in Forodrim are built as stacks of concentric bands -- a field, then ring
+// upon ring of wedges, lobes, discs and stars, each with its own count, radius and
+// tincture, and an edge that may be plain, beaded or chequered. The older fixed slots
+// (mandala / gems / charge) cannot express that. A device may now instead carry
+// p.layers: an ordered list drawn from the field outward, each entry {t:...}.
+//
+//   {t:"ring",   r, w, c, dash}                 a circle, stroked
+//   {t:"disc",   r, c}                          a filled disc
+//   {t:"wedges", n, r0, r1, w, c, rot, taper}   n tapering rays
+//   {t:"lobes",  n, r, len, wid, c, rot}        n petals or lobes
+//   {t:"discs",  n, r, size, c, rot, edge}      n discs set about a ring
+//   {t:"star",   n, ro, ri, c, rot}             an n-pointed star
+//   {t:"poly",   n, r, c, rot}                  a regular polygon
+//   {t:"square", s, c, rot}                     an inset panel
+//   {t:"corners",n, r, size, c, rot, shape}     accents at the corners
+//   {t:"dashes", n, r, len, w, c, rot}          a broken ring, as of beads
+//   {t:"charge", k, r, size, c, ac, rot, text}  any charge from the vocabulary
+// Radii are fractions of R; angles in turns (0.25 = a quarter turn).
+window.ardaForgeLayers=function(list,cx,cy,R,col,shape){
+ // The plates fill the lozenge, and a lozenge only reaches R at its four points: along
+ // every other bearing its edge is far nearer. Radii given with fit:true are therefore
+ // fractions of the FIELD BOUNDARY at that bearing, not of the circumscribed circle --
+ // without this a ray drawn to r=1 stops well short of the edge everywhere but the points.
+ var SHP=shape||"lozenge";
+ function bound(a){
+  if(SHP==="circle")return R;
+  var ca=Math.abs(Math.cos(a)),sa=Math.abs(Math.sin(a));
+  if(SHP==="square"){var s2=R*ARDA_SQ;return s2/Math.max(ca,sa,1e-6)}
+  if(SHP==="shield"){var sw=R*ARDA_SHW,sh2=R*0.99;
+   return 1/Math.max(ca/sw,sa/sh2,1e-9)}
+  var w=R*ARDA_LZ,h=R;                   // the lozenge: a square on its point
+  return 1/((ca/w)+(sa/h)+1e-9);
+ }
+ var F=function(n){return (+n).toFixed(2)},out="";
+ var LAYER_STROKE="";      // set per course; poly() picks it up when given no stroke
+ var RR=function(L,a,v){return (L.fit?bound(a):R)*v};
+ var TAU=Math.PI*2;
+ function at(a,r){return [cx+r*Math.cos(a),cy+r*Math.sin(a)]}
+ function poly(pts,fill,stroke,sw){
+  var d=pts.map(function(p,i){return (i?"L":"M")+F(p[0])+","+F(p[1])}).join("")+"Z";
+  return '<path d="'+d+'" fill="'+(fill||"none")+'"'+
+    (stroke?' stroke="'+stroke+'" stroke-width="'+(sw||1)+'" stroke-linejoin="round"':LAYER_STROKE)+'/>';
+ }
+ (list||[]).forEach(function(L){
+  var c=col(L.c===undefined?0:L.c), rot=(L.rot||0)*TAU, n=L.n||1;
+  // an outline, if this course asks for one: LS is the ink, LSW the width
+  var LS=(L.stroke===undefined?null:col(L.stroke)), LSW=R*(L.sw||0.012);
+  var SA=LS?(' stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round"'):"";
+  LAYER_STROKE=SA;
+  if(L.t==="ring")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="none" stroke="'+c+
+     '" stroke-width="'+F((L.w||0.02)*R)+'"'+(L.dash?' stroke-dasharray="'+L.dash+'"':"")+'/>';
+  else if(L.t==="disc")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="'+c+'"'+SA+'/>';
+  else if(L.t==="wedges"){
+   // A ray is broad where it springs and comes to a point: its half-width is measured
+   // ACROSS the ray as a fraction of R, not as an angle. Taken as an angle it collapses
+   // to a needle at any small inner radius -- which is what it did.
+   var w=(L.w===undefined?0.06:L.w), tp=(L.taper===undefined?0:L.taper);
+   for(var i=0;i<n;i++){var a=TAU*i/n-Math.PI/2+rot,r0=RR(L,a,L.r0||0),r1=RR(L,a,L.r1===undefined?1:L.r1);
+    var ux=Math.cos(a),uy=Math.sin(a),nx=-uy,ny=ux,hw=w*R,tw=hw*tp;
+    out+=poly([[cx+ux*r1+nx*tw, cy+uy*r1+ny*tw],
+               [cx+ux*r1-nx*tw, cy+uy*r1-ny*tw],
+               [cx+ux*r0-nx*hw, cy+uy*r0-ny*hw],
+               [cx+ux*r0+nx*hw, cy+uy*r0+ny*hw]],c);}
+  } else if(L.t==="lobes"){
+   var lr=R*(L.r||0.5), ln=R*(L.len||0.2), wd=R*(L.wid||0.1);
+   for(var j=0;j<n;j++){var b=TAU*j/n-Math.PI/2+rot,p=at(b,lr);
+    out+='<ellipse cx="'+F(p[0])+'" cy="'+F(p[1])+'" rx="'+F(wd)+'" ry="'+F(ln)+
+      '" fill="'+c+'"'+SA+' transform="rotate('+F(b*180/Math.PI+90)+' '+F(p[0])+' '+F(p[1])+')"/>';}
+  } else if(L.t==="discs"){
+   var dr=R*(L.r||0.6), ds=R*(L.size||0.12), ec=L.edge!==undefined?col(L.edge):null;
+   for(var k=0;k<n;k++){var d2=TAU*k/n-Math.PI/2+rot,q=at(d2,L.fit?bound(d2)*(L.r||0.6):dr);
+    out+='<circle cx="'+F(q[0])+'" cy="'+F(q[1])+'" r="'+F(ds)+'" fill="'+c+'"'+
+      (ec?' stroke="'+ec+'" stroke-width="'+F(R*0.012)+'"':SA)+'/>';}
+  } else if(L.t==="star"){
+   var ro=R*(L.ro||0.6), ri=R*(L.ri||0.3), pts=[];
+   for(var m=0;m<n*2;m++)pts.push(at(Math.PI*m/n-Math.PI/2+rot, m%2?ri:ro));
+   out+=poly(pts,c);
+  } else if(L.t==="poly"){
+   var pr=R*(L.r||0.5), pp=[];
+   for(var q2=0;q2<n;q2++)pp.push(at(TAU*q2/n-Math.PI/2+rot,pr));
+   out+=poly(pp,c);
+  } else if(L.t==="square"){
+   var s=R*(L.s||0.3);
+   out+='<rect x="'+F(cx-s)+'" y="'+F(cy-s)+'" width="'+F(2*s)+'" height="'+F(2*s)+'" fill="'+c+
+     '" transform="rotate('+F((L.rot||0)*360)+' '+F(cx)+' '+F(cy)+')"/>';
+  } else if(L.t==="corners"){
+   var cr=R*(L.r||0.86), cs=R*(L.size||0.1), nn=n||4;
+   for(var t=0;t<nn;t++){var ca=TAU*t/nn-Math.PI/2+rot,cr2=L.fit?bound(ca)*(L.r||0.86):cr,p2=at(ca,cr2);
+    if(L.shape==="tri")out+=poly([at(ca,cr2+cs),at(ca-0.16,cr2-cs*0.5),at(ca+0.16,cr2-cs*0.5)],c);
+    else out+='<circle cx="'+F(p2[0])+'" cy="'+F(p2[1])+'" r="'+F(cs)+'" fill="'+c+'"/>';}
+  } else if(L.t==="dashes"){
+   var hr=R*(L.r||0.7), hl=(L.len||0.5), hw=R*(L.w||0.05);
+   for(var u=0;u<n;u++){var ua=TAU*u/n-Math.PI/2+rot, half=(TAU/n)*hl/2;
+    out+='<path d="M'+F(at(ua-half,hr)[0])+','+F(at(ua-half,hr)[1])+
+      ' A'+F(hr)+','+F(hr)+' 0 0 1 '+F(at(ua+half,hr)[0])+','+F(at(ua+half,hr)[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(hw)+'"/>';}
+  } else if(L.t==="pinwheel"){        // a disc cut into n segments, two tinctures about
+   var pr2=R*(L.r||0.4), c2b=col(L.c2===undefined?12:L.c2);
+   for(var v=0;v<n;v++){var a0=TAU*v/n-Math.PI/2+rot, a1=TAU*(v+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(cx)+','+F(cy)+' L'+F(at(a0,pr2)[0])+','+F(at(a0,pr2)[1])+
+      ' A'+F(pr2)+','+F(pr2)+' 0 0 1 '+F(at(a1,pr2)[0])+','+F(at(a1,pr2)[1])+'Z" fill="'+(v%2?c2b:c)+'"/>';}
+  } else if(L.t==="segments"){        // a ring cut into n pieces, each its own tincture
+   var s0=R*(L.r0||0.2), s1=R*(L.r1||0.5), cs2=L.cs||[];
+   for(var v2=0;v2<n;v2++){var b0=TAU*v2/n-Math.PI/2+rot, b1=TAU*(v2+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+' L'+F(at(b0,s1)[0])+','+F(at(b0,s1)[1])+
+      ' A'+F(s1)+','+F(s1)+' 0 0 1 '+F(at(b1,s1)[0])+','+F(at(b1,s1)[1])+
+      ' L'+F(at(b1,s0)[0])+','+F(at(b1,s0)[1])+
+      ' A'+F(s0)+','+F(s0)+' 0 0 0 '+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+'Z" fill="'+
+      col(cs2.length?cs2[v2%cs2.length]:L.c)+'"/>';}
+  } else if(L.t==="darts"){           // n darts flying outward, barbed as on the plates
+   var dw=(L.w||0.09), bb=(L.barb===undefined?0.5:L.barb);
+   for(var v3=0;v3<n;v3++){var g0=TAU*v3/n-Math.PI/2+rot,d0=RR(L,g0,L.r0||0.3),d1=RR(L,g0,L.r1||0.9);
+    var ux2=Math.cos(g0),uy2=Math.sin(g0),nx2=-uy2,ny2=ux2,W2=dw*R,rb=d0+(d1-d0)*bb;
+    var P=function(rr,off){return [cx+ux2*rr+nx2*off, cy+uy2*rr+ny2*off]};
+    out+=poly([P(d1,0),P(rb,-W2),P(rb,-W2*0.34),P(d0,-W2*0.34),
+               P(d0,W2*0.34),P(rb,W2*0.34),P(rb,W2)],c);}
+  } else if(L.t==="outline"){         // line-art: a stroked shape, no fill
+   var or1=R*(L.r||0.6), on=n||4, op=[];
+   for(var v4=0;v4<on;v4++)op.push(at(TAU*v4/on-Math.PI/2+rot,or1));
+   out+=poly(op,null,c,(L.w||0.02)*R);
+  } else if(L.t==="petals"){          // the shape most of the plates are built from:
+   // n petals springing from an inner radius to a tip, each bounded by two curves.
+   // bow moves the widest part in or out; round>0 gives a blunt tip instead of a point;
+   // stroke draws the outline the painted petals carry.
+   var pr0=(L.r0===undefined?0.10:L.r0), pr1=(L.r1===undefined?1:L.r1),
+       pw=(L.w===undefined?0.18:L.w), bow=(L.bow===undefined?0.5:L.bow),
+       rnd=(L.round===undefined?0:L.round),
+       ps=(L.stroke===undefined?null:col(L.stroke)), psw=R*(L.sw||0.014);
+   var swl=(L.swirl===undefined?0:L.swirl)*TAU;   // the tip leans this far round
+   for(var pj=0;pj<n;pj++){
+    var pa=TAU*pj/n-Math.PI/2+rot, pa2=pa+swl, pam=pa+swl*0.5,
+        PB=L.fit?bound(pa):R, PB2=L.fit?bound(pa2):R, PBM=L.fit?bound(pam):R,
+        pux=Math.cos(pa),puy=Math.sin(pa),
+        pu2x=Math.cos(pa2),pu2y=Math.sin(pa2),
+        pmx=Math.cos(pam),pmy=Math.sin(pam),pnx=-pmy,pny=pmx,
+        i0x=cx+pux*PB*pr0, i0y=cy+puy*PB*pr0,
+        i1x=cx+pu2x*PB2*pr1, i1y=cy+pu2y*PB2*pr1,
+        prm=PBM*(pr0+(pr1-pr0)*bow), phw=pw*R,
+        k1x=cx+pmx*prm+pnx*phw, k1y=cy+pmy*prm+pny*phw,
+        k2x=cx+pmx*prm-pnx*phw, k2y=cy+pmy*prm-pny*phw,
+        t1x=i1x+pnx*phw*rnd, t1y=i1y+pny*phw*rnd,
+        t2x=i1x-pnx*phw*rnd, t2y=i1y-pny*phw*rnd,
+        pd="M"+F(i0x)+","+F(i0y)+"Q"+F(k1x)+","+F(k1y)+" "+F(t1x)+","+F(t1y)+
+           (rnd?"A"+F(phw*rnd)+","+F(phw*rnd)+" 0 0 1 "+F(t2x)+","+F(t2y)
+               :"L"+F(t2x)+","+F(t2y))+
+           "Q"+F(k2x)+","+F(k2y)+" "+F(i0x)+","+F(i0y)+"Z";
+    out+='<path d="'+pd+'" fill="'+c+'"'+(ps?' stroke="'+ps+'" stroke-width="'+F(psw)+'" stroke-linejoin="round"':"")+'/>';}
+  } else if(L.t==="veins"){           // the midrib and side-veins the painted leaves carry
+   var vr0=(L.r0===undefined?0.15:L.r0), vr1=(L.r1===undefined?0.9:L.r1),
+       vw=R*(L.w||0.010), vs=L.side||0, vsp=(L.spread===undefined?0.06:L.spread);
+   for(var vj=0;vj<n;vj++){
+    var va=TAU*vj/n-Math.PI/2+rot, VB=L.fit?bound(va):R,
+        vux=Math.cos(va),vuy=Math.sin(va),vnx=-vuy,vny=vux;
+    out+='<path d="M'+F(cx+vux*VB*vr0)+','+F(cy+vuy*VB*vr0)+'L'+F(cx+vux*VB*vr1)+','+F(cy+vuy*VB*vr1)+
+      '" stroke="'+c+'" stroke-width="'+F(vw)+'" fill="none" stroke-linecap="round"/>';
+    for(var vi=1;vi<=vs;vi++){
+     var vt=vr0+(vr1-vr0)*vi/(vs+1), vl=vsp*R*(1-vi/(vs+1));
+     out+='<path d="M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)+vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)+vny*vl)+
+       'M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)-vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)-vny*vl)+
+       '" stroke="'+c+'" stroke-width="'+F(vw*0.8)+'" fill="none" stroke-linecap="round"/>';}}
+  } else if(L.t==="bands"){           // concentric bands of colour, outermost drawn first
+   var bcs=L.cs||[], bb0=(L.r0===undefined?0:L.r0), bb1=(L.r1===undefined?1:L.r1);
+   for(var bj=bcs.length-1;bj>=0;bj--)
+    out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*(bb0+(bb1-bb0)*(bj+1)/bcs.length))+
+      '" fill="'+col(bcs[bj])+'"/>';
+  } else if(L.t==="scatter"){         // small charges strewn about the field
+   var sk=L.k||"star", ssz=R*(L.size||0.07), srr=(L.r===undefined?0.78:L.r),
+       sac=col(L.ac===undefined?0:L.ac);
+   for(var sj=0;sj<n;sj++){
+    var sa=TAU*sj/n-Math.PI/2+rot, SB=L.fit?bound(sa):R;
+    window.ARDA_CHARGE_TEXT="";
+    out+=window.ardaChargePath(sk,cx+Math.cos(sa)*SB*srr,cy+Math.sin(sa)*SB*srr,ssz,c,sac);}
+  } else if(L.t==="arcs"){            // stroked arcs: n pieces of a circle, gapped
+   var ar=R*(L.r||0.6), aw=R*(L.w||0.03), gap=(L.gap===undefined?0.25:L.gap);
+   for(var aj=0;aj<n;aj++){
+    var a0=TAU*(aj+gap/2)/n-Math.PI/2+rot, a1=TAU*(aj+1-gap/2)/n-Math.PI/2+rot,
+        q0=at(a0,ar), q1=at(a1,ar);
+    out+='<path d="M'+F(q0[0])+','+F(q0[1])+'A'+F(ar)+','+F(ar)+' 0 0 1 '+F(q1[0])+','+F(q1[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(aw)+'" stroke-linecap="'+(L.cap||"butt")+'"/>';}
+  } else if(L.t==="charge"){
+   var chr=R*(L.r||0), cha=(L.a===undefined?-0.25:L.a)*TAU, ctr=chr?at(cha,chr):[cx,cy];
+   window.ARDA_CHARGE_TEXT=L.text||"";
+   // a course may name its own letter; three tengwar in a row are three DIFFERENT
+   // tengwar, which they were not while these were read once per device
+   var _ps=window.ARDA_TENGWA_SER,_pg=window.ARDA_TENGWA_GRADE;
+   if(L.tser!==undefined)window.ARDA_TENGWA_SER=L.tser;
+   if(L.tgrade!==undefined)window.ARDA_TENGWA_GRADE=L.tgrade;
+   var g=window.ardaChargePath(L.k||"star",ctr[0],ctr[1],R*(L.size||0.3),c,col(L.ac===undefined?1:L.ac));
+   window.ARDA_TENGWA_SER=_ps;window.ARDA_TENGWA_GRADE=_pg;
+   // Durin's crown and the Steward's seal are drawn as LINE on the plates, not as
+   // colour. A charge given an outline is wrapped in a group carrying it: the charge
+   // paths set their own fill and no stroke, so they inherit this one.
+   if(L.stroke!==undefined)
+    g='<g stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round" '+
+      'stroke-linecap="round" fill-rule="evenodd">'+g+'</g>';
+   out+=L.rot?'<g transform="rotate('+F((L.rot||0)*360)+' '+F(ctr[0])+' '+F(ctr[1])+')">'+g+'</g>':g;
+  }
+ });
+ return out;
+};
+
+// ===================== the layer engine =====================
+// The plates in Forodrim are built as stacks of concentric bands -- a field, then ring
+// upon ring of wedges, lobes, discs and stars, each with its own count, radius and
+// tincture, and an edge that may be plain, beaded or chequered. The older fixed slots
+// (mandala / gems / charge) cannot express that. A device may now instead carry
+// p.layers: an ordered list drawn from the field outward, each entry {t:...}.
+//
+//   {t:"ring",   r, w, c, dash}                 a circle, stroked
+//   {t:"disc",   r, c}                          a filled disc
+//   {t:"wedges", n, r0, r1, w, c, rot, taper}   n tapering rays
+//   {t:"lobes",  n, r, len, wid, c, rot}        n petals or lobes
+//   {t:"discs",  n, r, size, c, rot, edge}      n discs set about a ring
+//   {t:"star",   n, ro, ri, c, rot}             an n-pointed star
+//   {t:"poly",   n, r, c, rot}                  a regular polygon
+//   {t:"square", s, c, rot}                     an inset panel
+//   {t:"corners",n, r, size, c, rot, shape}     accents at the corners
+//   {t:"dashes", n, r, len, w, c, rot}          a broken ring, as of beads
+//   {t:"charge", k, r, size, c, ac, rot, text}  any charge from the vocabulary
+// Radii are fractions of R; angles in turns (0.25 = a quarter turn).
+window.ardaForgeLayers=function(list,cx,cy,R,col,shape){
+ // The plates fill the lozenge, and a lozenge only reaches R at its four points: along
+ // every other bearing its edge is far nearer. Radii given with fit:true are therefore
+ // fractions of the FIELD BOUNDARY at that bearing, not of the circumscribed circle --
+ // without this a ray drawn to r=1 stops well short of the edge everywhere but the points.
+ var SHP=shape||"lozenge";
+ function bound(a){
+  if(SHP==="circle")return R;
+  var ca=Math.abs(Math.cos(a)),sa=Math.abs(Math.sin(a));
+  if(SHP==="square"){var s2=R*ARDA_SQ;return s2/Math.max(ca,sa,1e-6)}
+  if(SHP==="shield"){var sw=R*ARDA_SHW,sh2=R*0.99;
+   return 1/Math.max(ca/sw,sa/sh2,1e-9)}
+  var w=R*ARDA_LZ,h=R;                   // the lozenge: a square on its point
+  return 1/((ca/w)+(sa/h)+1e-9);
+ }
+ var F=function(n){return (+n).toFixed(2)},out="";
+ var LAYER_STROKE="";      // set per course; poly() picks it up when given no stroke
+ var RR=function(L,a,v){return (L.fit?bound(a):R)*v};
+ var TAU=Math.PI*2;
+ function at(a,r){return [cx+r*Math.cos(a),cy+r*Math.sin(a)]}
+ function poly(pts,fill,stroke,sw){
+  var d=pts.map(function(p,i){return (i?"L":"M")+F(p[0])+","+F(p[1])}).join("")+"Z";
+  return '<path d="'+d+'" fill="'+(fill||"none")+'"'+
+    (stroke?' stroke="'+stroke+'" stroke-width="'+(sw||1)+'" stroke-linejoin="round"':LAYER_STROKE)+'/>';
+ }
+ (list||[]).forEach(function(L){
+  var c=col(L.c===undefined?0:L.c), rot=(L.rot||0)*TAU, n=L.n||1;
+  // an outline, if this course asks for one: LS is the ink, LSW the width
+  var LS=(L.stroke===undefined?null:col(L.stroke)), LSW=R*(L.sw||0.012);
+  var SA=LS?(' stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round"'):"";
+  LAYER_STROKE=SA;
+  if(L.t==="ring")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="none" stroke="'+c+
+     '" stroke-width="'+F((L.w||0.02)*R)+'"'+(L.dash?' stroke-dasharray="'+L.dash+'"':"")+'/>';
+  else if(L.t==="disc")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="'+c+'"'+SA+'/>';
+  else if(L.t==="wedges"){
+   // A ray is broad where it springs and comes to a point: its half-width is measured
+   // ACROSS the ray as a fraction of R, not as an angle. Taken as an angle it collapses
+   // to a needle at any small inner radius -- which is what it did.
+   var w=(L.w===undefined?0.06:L.w), tp=(L.taper===undefined?0:L.taper);
+   for(var i=0;i<n;i++){var a=TAU*i/n-Math.PI/2+rot,r0=RR(L,a,L.r0||0),r1=RR(L,a,L.r1===undefined?1:L.r1);
+    var ux=Math.cos(a),uy=Math.sin(a),nx=-uy,ny=ux,hw=w*R,tw=hw*tp;
+    out+=poly([[cx+ux*r1+nx*tw, cy+uy*r1+ny*tw],
+               [cx+ux*r1-nx*tw, cy+uy*r1-ny*tw],
+               [cx+ux*r0-nx*hw, cy+uy*r0-ny*hw],
+               [cx+ux*r0+nx*hw, cy+uy*r0+ny*hw]],c);}
+  } else if(L.t==="lobes"){
+   var lr=R*(L.r||0.5), ln=R*(L.len||0.2), wd=R*(L.wid||0.1);
+   for(var j=0;j<n;j++){var b=TAU*j/n-Math.PI/2+rot,p=at(b,lr);
+    out+='<ellipse cx="'+F(p[0])+'" cy="'+F(p[1])+'" rx="'+F(wd)+'" ry="'+F(ln)+
+      '" fill="'+c+'"'+SA+' transform="rotate('+F(b*180/Math.PI+90)+' '+F(p[0])+' '+F(p[1])+')"/>';}
+  } else if(L.t==="discs"){
+   var dr=R*(L.r||0.6), ds=R*(L.size||0.12), ec=L.edge!==undefined?col(L.edge):null;
+   for(var k=0;k<n;k++){var d2=TAU*k/n-Math.PI/2+rot,q=at(d2,L.fit?bound(d2)*(L.r||0.6):dr);
+    out+='<circle cx="'+F(q[0])+'" cy="'+F(q[1])+'" r="'+F(ds)+'" fill="'+c+'"'+
+      (ec?' stroke="'+ec+'" stroke-width="'+F(R*0.012)+'"':SA)+'/>';}
+  } else if(L.t==="star"){
+   var ro=R*(L.ro||0.6), ri=R*(L.ri||0.3), pts=[];
+   for(var m=0;m<n*2;m++)pts.push(at(Math.PI*m/n-Math.PI/2+rot, m%2?ri:ro));
+   out+=poly(pts,c);
+  } else if(L.t==="poly"){
+   var pr=R*(L.r||0.5), pp=[];
+   for(var q2=0;q2<n;q2++)pp.push(at(TAU*q2/n-Math.PI/2+rot,pr));
+   out+=poly(pp,c);
+  } else if(L.t==="square"){
+   var s=R*(L.s||0.3);
+   out+='<rect x="'+F(cx-s)+'" y="'+F(cy-s)+'" width="'+F(2*s)+'" height="'+F(2*s)+'" fill="'+c+
+     '" transform="rotate('+F((L.rot||0)*360)+' '+F(cx)+' '+F(cy)+')"/>';
+  } else if(L.t==="corners"){
+   var cr=R*(L.r||0.86), cs=R*(L.size||0.1), nn=n||4;
+   for(var t=0;t<nn;t++){var ca=TAU*t/nn-Math.PI/2+rot,cr2=L.fit?bound(ca)*(L.r||0.86):cr,p2=at(ca,cr2);
+    if(L.shape==="tri")out+=poly([at(ca,cr2+cs),at(ca-0.16,cr2-cs*0.5),at(ca+0.16,cr2-cs*0.5)],c);
+    else out+='<circle cx="'+F(p2[0])+'" cy="'+F(p2[1])+'" r="'+F(cs)+'" fill="'+c+'"/>';}
+  } else if(L.t==="dashes"){
+   var hr=R*(L.r||0.7), hl=(L.len||0.5), hw=R*(L.w||0.05);
+   for(var u=0;u<n;u++){var ua=TAU*u/n-Math.PI/2+rot, half=(TAU/n)*hl/2;
+    out+='<path d="M'+F(at(ua-half,hr)[0])+','+F(at(ua-half,hr)[1])+
+      ' A'+F(hr)+','+F(hr)+' 0 0 1 '+F(at(ua+half,hr)[0])+','+F(at(ua+half,hr)[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(hw)+'"/>';}
+  } else if(L.t==="pinwheel"){        // a disc cut into n segments, two tinctures about
+   var pr2=R*(L.r||0.4), c2b=col(L.c2===undefined?12:L.c2);
+   for(var v=0;v<n;v++){var a0=TAU*v/n-Math.PI/2+rot, a1=TAU*(v+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(cx)+','+F(cy)+' L'+F(at(a0,pr2)[0])+','+F(at(a0,pr2)[1])+
+      ' A'+F(pr2)+','+F(pr2)+' 0 0 1 '+F(at(a1,pr2)[0])+','+F(at(a1,pr2)[1])+'Z" fill="'+(v%2?c2b:c)+'"/>';}
+  } else if(L.t==="segments"){        // a ring cut into n pieces, each its own tincture
+   var s0=R*(L.r0||0.2), s1=R*(L.r1||0.5), cs2=L.cs||[];
+   for(var v2=0;v2<n;v2++){var b0=TAU*v2/n-Math.PI/2+rot, b1=TAU*(v2+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+' L'+F(at(b0,s1)[0])+','+F(at(b0,s1)[1])+
+      ' A'+F(s1)+','+F(s1)+' 0 0 1 '+F(at(b1,s1)[0])+','+F(at(b1,s1)[1])+
+      ' L'+F(at(b1,s0)[0])+','+F(at(b1,s0)[1])+
+      ' A'+F(s0)+','+F(s0)+' 0 0 0 '+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+'Z" fill="'+
+      col(cs2.length?cs2[v2%cs2.length]:L.c)+'"/>';}
+  } else if(L.t==="darts"){           // n darts flying outward, barbed as on the plates
+   var dw=(L.w||0.09), bb=(L.barb===undefined?0.5:L.barb);
+   for(var v3=0;v3<n;v3++){var g0=TAU*v3/n-Math.PI/2+rot,d0=RR(L,g0,L.r0||0.3),d1=RR(L,g0,L.r1||0.9);
+    var ux2=Math.cos(g0),uy2=Math.sin(g0),nx2=-uy2,ny2=ux2,W2=dw*R,rb=d0+(d1-d0)*bb;
+    var P=function(rr,off){return [cx+ux2*rr+nx2*off, cy+uy2*rr+ny2*off]};
+    out+=poly([P(d1,0),P(rb,-W2),P(rb,-W2*0.34),P(d0,-W2*0.34),
+               P(d0,W2*0.34),P(rb,W2*0.34),P(rb,W2)],c);}
+  } else if(L.t==="outline"){         // line-art: a stroked shape, no fill
+   var or1=R*(L.r||0.6), on=n||4, op=[];
+   for(var v4=0;v4<on;v4++)op.push(at(TAU*v4/on-Math.PI/2+rot,or1));
+   out+=poly(op,null,c,(L.w||0.02)*R);
+  } else if(L.t==="petals"){          // the shape most of the plates are built from:
+   // n petals springing from an inner radius to a tip, each bounded by two curves.
+   // bow moves the widest part in or out; round>0 gives a blunt tip instead of a point;
+   // stroke draws the outline the painted petals carry.
+   var pr0=(L.r0===undefined?0.10:L.r0), pr1=(L.r1===undefined?1:L.r1),
+       pw=(L.w===undefined?0.18:L.w), bow=(L.bow===undefined?0.5:L.bow),
+       rnd=(L.round===undefined?0:L.round),
+       ps=(L.stroke===undefined?null:col(L.stroke)), psw=R*(L.sw||0.014);
+   var swl=(L.swirl===undefined?0:L.swirl)*TAU;   // the tip leans this far round
+   for(var pj=0;pj<n;pj++){
+    var pa=TAU*pj/n-Math.PI/2+rot, pa2=pa+swl, pam=pa+swl*0.5,
+        PB=L.fit?bound(pa):R, PB2=L.fit?bound(pa2):R, PBM=L.fit?bound(pam):R,
+        pux=Math.cos(pa),puy=Math.sin(pa),
+        pu2x=Math.cos(pa2),pu2y=Math.sin(pa2),
+        pmx=Math.cos(pam),pmy=Math.sin(pam),pnx=-pmy,pny=pmx,
+        i0x=cx+pux*PB*pr0, i0y=cy+puy*PB*pr0,
+        i1x=cx+pu2x*PB2*pr1, i1y=cy+pu2y*PB2*pr1,
+        prm=PBM*(pr0+(pr1-pr0)*bow), phw=pw*R,
+        k1x=cx+pmx*prm+pnx*phw, k1y=cy+pmy*prm+pny*phw,
+        k2x=cx+pmx*prm-pnx*phw, k2y=cy+pmy*prm-pny*phw,
+        t1x=i1x+pnx*phw*rnd, t1y=i1y+pny*phw*rnd,
+        t2x=i1x-pnx*phw*rnd, t2y=i1y-pny*phw*rnd,
+        pd="M"+F(i0x)+","+F(i0y)+"Q"+F(k1x)+","+F(k1y)+" "+F(t1x)+","+F(t1y)+
+           (rnd?"A"+F(phw*rnd)+","+F(phw*rnd)+" 0 0 1 "+F(t2x)+","+F(t2y)
+               :"L"+F(t2x)+","+F(t2y))+
+           "Q"+F(k2x)+","+F(k2y)+" "+F(i0x)+","+F(i0y)+"Z";
+    out+='<path d="'+pd+'" fill="'+c+'"'+(ps?' stroke="'+ps+'" stroke-width="'+F(psw)+'" stroke-linejoin="round"':"")+'/>';}
+  } else if(L.t==="veins"){           // the midrib and side-veins the painted leaves carry
+   var vr0=(L.r0===undefined?0.15:L.r0), vr1=(L.r1===undefined?0.9:L.r1),
+       vw=R*(L.w||0.010), vs=L.side||0, vsp=(L.spread===undefined?0.06:L.spread);
+   for(var vj=0;vj<n;vj++){
+    var va=TAU*vj/n-Math.PI/2+rot, VB=L.fit?bound(va):R,
+        vux=Math.cos(va),vuy=Math.sin(va),vnx=-vuy,vny=vux;
+    out+='<path d="M'+F(cx+vux*VB*vr0)+','+F(cy+vuy*VB*vr0)+'L'+F(cx+vux*VB*vr1)+','+F(cy+vuy*VB*vr1)+
+      '" stroke="'+c+'" stroke-width="'+F(vw)+'" fill="none" stroke-linecap="round"/>';
+    for(var vi=1;vi<=vs;vi++){
+     var vt=vr0+(vr1-vr0)*vi/(vs+1), vl=vsp*R*(1-vi/(vs+1));
+     out+='<path d="M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)+vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)+vny*vl)+
+       'M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)-vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)-vny*vl)+
+       '" stroke="'+c+'" stroke-width="'+F(vw*0.8)+'" fill="none" stroke-linecap="round"/>';}}
+  } else if(L.t==="bands"){           // concentric bands of colour, outermost drawn first
+   var bcs=L.cs||[], bb0=(L.r0===undefined?0:L.r0), bb1=(L.r1===undefined?1:L.r1);
+   for(var bj=bcs.length-1;bj>=0;bj--)
+    out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*(bb0+(bb1-bb0)*(bj+1)/bcs.length))+
+      '" fill="'+col(bcs[bj])+'"/>';
+  } else if(L.t==="scatter"){         // small charges strewn about the field
+   var sk=L.k||"star", ssz=R*(L.size||0.07), srr=(L.r===undefined?0.78:L.r),
+       sac=col(L.ac===undefined?0:L.ac);
+   for(var sj=0;sj<n;sj++){
+    var sa=TAU*sj/n-Math.PI/2+rot, SB=L.fit?bound(sa):R;
+    window.ARDA_CHARGE_TEXT="";
+    out+=window.ardaChargePath(sk,cx+Math.cos(sa)*SB*srr,cy+Math.sin(sa)*SB*srr,ssz,c,sac);}
+  } else if(L.t==="arcs"){            // stroked arcs: n pieces of a circle, gapped
+   var ar=R*(L.r||0.6), aw=R*(L.w||0.03), gap=(L.gap===undefined?0.25:L.gap);
+   for(var aj=0;aj<n;aj++){
+    var a0=TAU*(aj+gap/2)/n-Math.PI/2+rot, a1=TAU*(aj+1-gap/2)/n-Math.PI/2+rot,
+        q0=at(a0,ar), q1=at(a1,ar);
+    out+='<path d="M'+F(q0[0])+','+F(q0[1])+'A'+F(ar)+','+F(ar)+' 0 0 1 '+F(q1[0])+','+F(q1[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(aw)+'" stroke-linecap="'+(L.cap||"butt")+'"/>';}
+  } else if(L.t==="charge"){
+   var chr=R*(L.r||0), cha=(L.a===undefined?-0.25:L.a)*TAU, ctr=chr?at(cha,chr):[cx,cy];
+   window.ARDA_CHARGE_TEXT=L.text||"";
+   // a course may name its own letter; three tengwar in a row are three DIFFERENT
+   // tengwar, which they were not while these were read once per device
+   var _ps=window.ARDA_TENGWA_SER,_pg=window.ARDA_TENGWA_GRADE;
+   if(L.tser!==undefined)window.ARDA_TENGWA_SER=L.tser;
+   if(L.tgrade!==undefined)window.ARDA_TENGWA_GRADE=L.tgrade;
+   var g=window.ardaChargePath(L.k||"star",ctr[0],ctr[1],R*(L.size||0.3),c,col(L.ac===undefined?1:L.ac));
+   window.ARDA_TENGWA_SER=_ps;window.ARDA_TENGWA_GRADE=_pg;
+   // Durin's crown and the Steward's seal are drawn as LINE on the plates, not as
+   // colour. A charge given an outline is wrapped in a group carrying it: the charge
+   // paths set their own fill and no stroke, so they inherit this one.
+   if(L.stroke!==undefined)
+    g='<g stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round" '+
+      'stroke-linecap="round" fill-rule="evenodd">'+g+'</g>';
+   out+=L.rot?'<g transform="rotate('+F((L.rot||0)*360)+' '+F(ctr[0])+' '+F(ctr[1])+')">'+g+'</g>':g;
+  }
+ });
+ return out;
+};
+
+// ===================== the layer engine =====================
+// The plates in Forodrim are built as stacks of concentric bands -- a field, then ring
+// upon ring of wedges, lobes, discs and stars, each with its own count, radius and
+// tincture, and an edge that may be plain, beaded or chequered. The older fixed slots
+// (mandala / gems / charge) cannot express that. A device may now instead carry
+// p.layers: an ordered list drawn from the field outward, each entry {t:...}.
+//
+//   {t:"ring",   r, w, c, dash}                 a circle, stroked
+//   {t:"disc",   r, c}                          a filled disc
+//   {t:"wedges", n, r0, r1, w, c, rot, taper}   n tapering rays
+//   {t:"lobes",  n, r, len, wid, c, rot}        n petals or lobes
+//   {t:"discs",  n, r, size, c, rot, edge}      n discs set about a ring
+//   {t:"star",   n, ro, ri, c, rot}             an n-pointed star
+//   {t:"poly",   n, r, c, rot}                  a regular polygon
+//   {t:"square", s, c, rot}                     an inset panel
+//   {t:"corners",n, r, size, c, rot, shape}     accents at the corners
+//   {t:"dashes", n, r, len, w, c, rot}          a broken ring, as of beads
+//   {t:"charge", k, r, size, c, ac, rot, text}  any charge from the vocabulary
+// Radii are fractions of R; angles in turns (0.25 = a quarter turn).
+window.ardaForgeLayers=function(list,cx,cy,R,col,shape){
+ // The plates fill the lozenge, and a lozenge only reaches R at its four points: along
+ // every other bearing its edge is far nearer. Radii given with fit:true are therefore
+ // fractions of the FIELD BOUNDARY at that bearing, not of the circumscribed circle --
+ // without this a ray drawn to r=1 stops well short of the edge everywhere but the points.
+ var SHP=shape||"lozenge";
+ function bound(a){
+  if(SHP==="circle")return R;
+  var ca=Math.abs(Math.cos(a)),sa=Math.abs(Math.sin(a));
+  if(SHP==="square"){var s2=R*ARDA_SQ;return s2/Math.max(ca,sa,1e-6)}
+  if(SHP==="shield"){var sw=R*ARDA_SHW,sh2=R*0.99;
+   return 1/Math.max(ca/sw,sa/sh2,1e-9)}
+  var w=R*ARDA_LZ,h=R;                   // the lozenge: a square on its point
+  return 1/((ca/w)+(sa/h)+1e-9);
+ }
+ var F=function(n){return (+n).toFixed(2)},out="";
+ var LAYER_STROKE="";      // set per course; poly() picks it up when given no stroke
+ var RR=function(L,a,v){return (L.fit?bound(a):R)*v};
+ var TAU=Math.PI*2;
+ function at(a,r){return [cx+r*Math.cos(a),cy+r*Math.sin(a)]}
+ function poly(pts,fill,stroke,sw){
+  var d=pts.map(function(p,i){return (i?"L":"M")+F(p[0])+","+F(p[1])}).join("")+"Z";
+  return '<path d="'+d+'" fill="'+(fill||"none")+'"'+
+    (stroke?' stroke="'+stroke+'" stroke-width="'+(sw||1)+'" stroke-linejoin="round"':LAYER_STROKE)+'/>';
+ }
+ (list||[]).forEach(function(L){
+  var c=col(L.c===undefined?0:L.c), rot=(L.rot||0)*TAU, n=L.n||1;
+  // an outline, if this course asks for one: LS is the ink, LSW the width
+  var LS=(L.stroke===undefined?null:col(L.stroke)), LSW=R*(L.sw||0.012);
+  var SA=LS?(' stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round"'):"";
+  LAYER_STROKE=SA;
+  if(L.t==="ring")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="none" stroke="'+c+
+     '" stroke-width="'+F((L.w||0.02)*R)+'"'+(L.dash?' stroke-dasharray="'+L.dash+'"':"")+'/>';
+  else if(L.t==="disc")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="'+c+'"'+SA+'/>';
+  else if(L.t==="wedges"){
+   // A ray is broad where it springs and comes to a point: its half-width is measured
+   // ACROSS the ray as a fraction of R, not as an angle. Taken as an angle it collapses
+   // to a needle at any small inner radius -- which is what it did.
+   var w=(L.w===undefined?0.06:L.w), tp=(L.taper===undefined?0:L.taper);
+   for(var i=0;i<n;i++){var a=TAU*i/n-Math.PI/2+rot,r0=RR(L,a,L.r0||0),r1=RR(L,a,L.r1===undefined?1:L.r1);
+    var ux=Math.cos(a),uy=Math.sin(a),nx=-uy,ny=ux,hw=w*R,tw=hw*tp;
+    out+=poly([[cx+ux*r1+nx*tw, cy+uy*r1+ny*tw],
+               [cx+ux*r1-nx*tw, cy+uy*r1-ny*tw],
+               [cx+ux*r0-nx*hw, cy+uy*r0-ny*hw],
+               [cx+ux*r0+nx*hw, cy+uy*r0+ny*hw]],c);}
+  } else if(L.t==="lobes"){
+   var lr=R*(L.r||0.5), ln=R*(L.len||0.2), wd=R*(L.wid||0.1);
+   for(var j=0;j<n;j++){var b=TAU*j/n-Math.PI/2+rot,p=at(b,lr);
+    out+='<ellipse cx="'+F(p[0])+'" cy="'+F(p[1])+'" rx="'+F(wd)+'" ry="'+F(ln)+
+      '" fill="'+c+'"'+SA+' transform="rotate('+F(b*180/Math.PI+90)+' '+F(p[0])+' '+F(p[1])+')"/>';}
+  } else if(L.t==="discs"){
+   var dr=R*(L.r||0.6), ds=R*(L.size||0.12), ec=L.edge!==undefined?col(L.edge):null;
+   for(var k=0;k<n;k++){var d2=TAU*k/n-Math.PI/2+rot,q=at(d2,L.fit?bound(d2)*(L.r||0.6):dr);
+    out+='<circle cx="'+F(q[0])+'" cy="'+F(q[1])+'" r="'+F(ds)+'" fill="'+c+'"'+
+      (ec?' stroke="'+ec+'" stroke-width="'+F(R*0.012)+'"':SA)+'/>';}
+  } else if(L.t==="star"){
+   var ro=R*(L.ro||0.6), ri=R*(L.ri||0.3), pts=[];
+   for(var m=0;m<n*2;m++)pts.push(at(Math.PI*m/n-Math.PI/2+rot, m%2?ri:ro));
+   out+=poly(pts,c);
+  } else if(L.t==="poly"){
+   var pr=R*(L.r||0.5), pp=[];
+   for(var q2=0;q2<n;q2++)pp.push(at(TAU*q2/n-Math.PI/2+rot,pr));
+   out+=poly(pp,c);
+  } else if(L.t==="square"){
+   var s=R*(L.s||0.3);
+   out+='<rect x="'+F(cx-s)+'" y="'+F(cy-s)+'" width="'+F(2*s)+'" height="'+F(2*s)+'" fill="'+c+
+     '" transform="rotate('+F((L.rot||0)*360)+' '+F(cx)+' '+F(cy)+')"/>';
+  } else if(L.t==="corners"){
+   var cr=R*(L.r||0.86), cs=R*(L.size||0.1), nn=n||4;
+   for(var t=0;t<nn;t++){var ca=TAU*t/nn-Math.PI/2+rot,cr2=L.fit?bound(ca)*(L.r||0.86):cr,p2=at(ca,cr2);
+    if(L.shape==="tri")out+=poly([at(ca,cr2+cs),at(ca-0.16,cr2-cs*0.5),at(ca+0.16,cr2-cs*0.5)],c);
+    else out+='<circle cx="'+F(p2[0])+'" cy="'+F(p2[1])+'" r="'+F(cs)+'" fill="'+c+'"/>';}
+  } else if(L.t==="dashes"){
+   var hr=R*(L.r||0.7), hl=(L.len||0.5), hw=R*(L.w||0.05);
+   for(var u=0;u<n;u++){var ua=TAU*u/n-Math.PI/2+rot, half=(TAU/n)*hl/2;
+    out+='<path d="M'+F(at(ua-half,hr)[0])+','+F(at(ua-half,hr)[1])+
+      ' A'+F(hr)+','+F(hr)+' 0 0 1 '+F(at(ua+half,hr)[0])+','+F(at(ua+half,hr)[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(hw)+'"/>';}
+  } else if(L.t==="pinwheel"){        // a disc cut into n segments, two tinctures about
+   var pr2=R*(L.r||0.4), c2b=col(L.c2===undefined?12:L.c2);
+   for(var v=0;v<n;v++){var a0=TAU*v/n-Math.PI/2+rot, a1=TAU*(v+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(cx)+','+F(cy)+' L'+F(at(a0,pr2)[0])+','+F(at(a0,pr2)[1])+
+      ' A'+F(pr2)+','+F(pr2)+' 0 0 1 '+F(at(a1,pr2)[0])+','+F(at(a1,pr2)[1])+'Z" fill="'+(v%2?c2b:c)+'"/>';}
+  } else if(L.t==="segments"){        // a ring cut into n pieces, each its own tincture
+   var s0=R*(L.r0||0.2), s1=R*(L.r1||0.5), cs2=L.cs||[];
+   for(var v2=0;v2<n;v2++){var b0=TAU*v2/n-Math.PI/2+rot, b1=TAU*(v2+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+' L'+F(at(b0,s1)[0])+','+F(at(b0,s1)[1])+
+      ' A'+F(s1)+','+F(s1)+' 0 0 1 '+F(at(b1,s1)[0])+','+F(at(b1,s1)[1])+
+      ' L'+F(at(b1,s0)[0])+','+F(at(b1,s0)[1])+
+      ' A'+F(s0)+','+F(s0)+' 0 0 0 '+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+'Z" fill="'+
+      col(cs2.length?cs2[v2%cs2.length]:L.c)+'"/>';}
+  } else if(L.t==="darts"){           // n darts flying outward, barbed as on the plates
+   var dw=(L.w||0.09), bb=(L.barb===undefined?0.5:L.barb);
+   for(var v3=0;v3<n;v3++){var g0=TAU*v3/n-Math.PI/2+rot,d0=RR(L,g0,L.r0||0.3),d1=RR(L,g0,L.r1||0.9);
+    var ux2=Math.cos(g0),uy2=Math.sin(g0),nx2=-uy2,ny2=ux2,W2=dw*R,rb=d0+(d1-d0)*bb;
+    var P=function(rr,off){return [cx+ux2*rr+nx2*off, cy+uy2*rr+ny2*off]};
+    out+=poly([P(d1,0),P(rb,-W2),P(rb,-W2*0.34),P(d0,-W2*0.34),
+               P(d0,W2*0.34),P(rb,W2*0.34),P(rb,W2)],c);}
+  } else if(L.t==="outline"){         // line-art: a stroked shape, no fill
+   var or1=R*(L.r||0.6), on=n||4, op=[];
+   for(var v4=0;v4<on;v4++)op.push(at(TAU*v4/on-Math.PI/2+rot,or1));
+   out+=poly(op,null,c,(L.w||0.02)*R);
+  } else if(L.t==="petals"){          // the shape most of the plates are built from:
+   // n petals springing from an inner radius to a tip, each bounded by two curves.
+   // bow moves the widest part in or out; round>0 gives a blunt tip instead of a point;
+   // stroke draws the outline the painted petals carry.
+   var pr0=(L.r0===undefined?0.10:L.r0), pr1=(L.r1===undefined?1:L.r1),
+       pw=(L.w===undefined?0.18:L.w), bow=(L.bow===undefined?0.5:L.bow),
+       rnd=(L.round===undefined?0:L.round),
+       ps=(L.stroke===undefined?null:col(L.stroke)), psw=R*(L.sw||0.014);
+   var swl=(L.swirl===undefined?0:L.swirl)*TAU;   // the tip leans this far round
+   for(var pj=0;pj<n;pj++){
+    var pa=TAU*pj/n-Math.PI/2+rot, pa2=pa+swl, pam=pa+swl*0.5,
+        PB=L.fit?bound(pa):R, PB2=L.fit?bound(pa2):R, PBM=L.fit?bound(pam):R,
+        pux=Math.cos(pa),puy=Math.sin(pa),
+        pu2x=Math.cos(pa2),pu2y=Math.sin(pa2),
+        pmx=Math.cos(pam),pmy=Math.sin(pam),pnx=-pmy,pny=pmx,
+        i0x=cx+pux*PB*pr0, i0y=cy+puy*PB*pr0,
+        i1x=cx+pu2x*PB2*pr1, i1y=cy+pu2y*PB2*pr1,
+        prm=PBM*(pr0+(pr1-pr0)*bow), phw=pw*R,
+        k1x=cx+pmx*prm+pnx*phw, k1y=cy+pmy*prm+pny*phw,
+        k2x=cx+pmx*prm-pnx*phw, k2y=cy+pmy*prm-pny*phw,
+        t1x=i1x+pnx*phw*rnd, t1y=i1y+pny*phw*rnd,
+        t2x=i1x-pnx*phw*rnd, t2y=i1y-pny*phw*rnd,
+        pd="M"+F(i0x)+","+F(i0y)+"Q"+F(k1x)+","+F(k1y)+" "+F(t1x)+","+F(t1y)+
+           (rnd?"A"+F(phw*rnd)+","+F(phw*rnd)+" 0 0 1 "+F(t2x)+","+F(t2y)
+               :"L"+F(t2x)+","+F(t2y))+
+           "Q"+F(k2x)+","+F(k2y)+" "+F(i0x)+","+F(i0y)+"Z";
+    out+='<path d="'+pd+'" fill="'+c+'"'+(ps?' stroke="'+ps+'" stroke-width="'+F(psw)+'" stroke-linejoin="round"':"")+'/>';}
+  } else if(L.t==="veins"){           // the midrib and side-veins the painted leaves carry
+   var vr0=(L.r0===undefined?0.15:L.r0), vr1=(L.r1===undefined?0.9:L.r1),
+       vw=R*(L.w||0.010), vs=L.side||0, vsp=(L.spread===undefined?0.06:L.spread);
+   for(var vj=0;vj<n;vj++){
+    var va=TAU*vj/n-Math.PI/2+rot, VB=L.fit?bound(va):R,
+        vux=Math.cos(va),vuy=Math.sin(va),vnx=-vuy,vny=vux;
+    out+='<path d="M'+F(cx+vux*VB*vr0)+','+F(cy+vuy*VB*vr0)+'L'+F(cx+vux*VB*vr1)+','+F(cy+vuy*VB*vr1)+
+      '" stroke="'+c+'" stroke-width="'+F(vw)+'" fill="none" stroke-linecap="round"/>';
+    for(var vi=1;vi<=vs;vi++){
+     var vt=vr0+(vr1-vr0)*vi/(vs+1), vl=vsp*R*(1-vi/(vs+1));
+     out+='<path d="M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)+vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)+vny*vl)+
+       'M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)-vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)-vny*vl)+
+       '" stroke="'+c+'" stroke-width="'+F(vw*0.8)+'" fill="none" stroke-linecap="round"/>';}}
+  } else if(L.t==="bands"){           // concentric bands of colour, outermost drawn first
+   var bcs=L.cs||[], bb0=(L.r0===undefined?0:L.r0), bb1=(L.r1===undefined?1:L.r1);
+   for(var bj=bcs.length-1;bj>=0;bj--)
+    out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*(bb0+(bb1-bb0)*(bj+1)/bcs.length))+
+      '" fill="'+col(bcs[bj])+'"/>';
+  } else if(L.t==="scatter"){         // small charges strewn about the field
+   var sk=L.k||"star", ssz=R*(L.size||0.07), srr=(L.r===undefined?0.78:L.r),
+       sac=col(L.ac===undefined?0:L.ac);
+   for(var sj=0;sj<n;sj++){
+    var sa=TAU*sj/n-Math.PI/2+rot, SB=L.fit?bound(sa):R;
+    window.ARDA_CHARGE_TEXT="";
+    out+=window.ardaChargePath(sk,cx+Math.cos(sa)*SB*srr,cy+Math.sin(sa)*SB*srr,ssz,c,sac);}
+  } else if(L.t==="arcs"){            // stroked arcs: n pieces of a circle, gapped
+   var ar=R*(L.r||0.6), aw=R*(L.w||0.03), gap=(L.gap===undefined?0.25:L.gap);
+   for(var aj=0;aj<n;aj++){
+    var a0=TAU*(aj+gap/2)/n-Math.PI/2+rot, a1=TAU*(aj+1-gap/2)/n-Math.PI/2+rot,
+        q0=at(a0,ar), q1=at(a1,ar);
+    out+='<path d="M'+F(q0[0])+','+F(q0[1])+'A'+F(ar)+','+F(ar)+' 0 0 1 '+F(q1[0])+','+F(q1[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(aw)+'" stroke-linecap="'+(L.cap||"butt")+'"/>';}
+  } else if(L.t==="charge"){
+   var chr=R*(L.r||0), cha=(L.a===undefined?-0.25:L.a)*TAU, ctr=chr?at(cha,chr):[cx,cy];
+   window.ARDA_CHARGE_TEXT=L.text||"";
+   // a course may name its own letter; three tengwar in a row are three DIFFERENT
+   // tengwar, which they were not while these were read once per device
+   var _ps=window.ARDA_TENGWA_SER,_pg=window.ARDA_TENGWA_GRADE;
+   if(L.tser!==undefined)window.ARDA_TENGWA_SER=L.tser;
+   if(L.tgrade!==undefined)window.ARDA_TENGWA_GRADE=L.tgrade;
+   var g=window.ardaChargePath(L.k||"star",ctr[0],ctr[1],R*(L.size||0.3),c,col(L.ac===undefined?1:L.ac));
+   window.ARDA_TENGWA_SER=_ps;window.ARDA_TENGWA_GRADE=_pg;
+   // Durin's crown and the Steward's seal are drawn as LINE on the plates, not as
+   // colour. A charge given an outline is wrapped in a group carrying it: the charge
+   // paths set their own fill and no stroke, so they inherit this one.
+   if(L.stroke!==undefined)
+    g='<g stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round" '+
+      'stroke-linecap="round" fill-rule="evenodd">'+g+'</g>';
+   out+=L.rot?'<g transform="rotate('+F((L.rot||0)*360)+' '+F(ctr[0])+' '+F(ctr[1])+')">'+g+'</g>':g;
+  }
+ });
+ return out;
+};
+
+// ===================== the layer engine =====================
+// The plates in Forodrim are built as stacks of concentric bands -- a field, then ring
+// upon ring of wedges, lobes, discs and stars, each with its own count, radius and
+// tincture, and an edge that may be plain, beaded or chequered. The older fixed slots
+// (mandala / gems / charge) cannot express that. A device may now instead carry
+// p.layers: an ordered list drawn from the field outward, each entry {t:...}.
+//
+//   {t:"ring",   r, w, c, dash}                 a circle, stroked
+//   {t:"disc",   r, c}                          a filled disc
+//   {t:"wedges", n, r0, r1, w, c, rot, taper}   n tapering rays
+//   {t:"lobes",  n, r, len, wid, c, rot}        n petals or lobes
+//   {t:"discs",  n, r, size, c, rot, edge}      n discs set about a ring
+//   {t:"star",   n, ro, ri, c, rot}             an n-pointed star
+//   {t:"poly",   n, r, c, rot}                  a regular polygon
+//   {t:"square", s, c, rot}                     an inset panel
+//   {t:"corners",n, r, size, c, rot, shape}     accents at the corners
+//   {t:"dashes", n, r, len, w, c, rot}          a broken ring, as of beads
+//   {t:"charge", k, r, size, c, ac, rot, text}  any charge from the vocabulary
+// Radii are fractions of R; angles in turns (0.25 = a quarter turn).
+window.ardaForgeLayers=function(list,cx,cy,R,col,shape){
+ // The plates fill the lozenge, and a lozenge only reaches R at its four points: along
+ // every other bearing its edge is far nearer. Radii given with fit:true are therefore
+ // fractions of the FIELD BOUNDARY at that bearing, not of the circumscribed circle --
+ // without this a ray drawn to r=1 stops well short of the edge everywhere but the points.
+ var SHP=shape||"lozenge";
+ function bound(a){
+  if(SHP==="circle")return R;
+  var ca=Math.abs(Math.cos(a)),sa=Math.abs(Math.sin(a));
+  if(SHP==="square"){var s2=R*ARDA_SQ;return s2/Math.max(ca,sa,1e-6)}
+  if(SHP==="shield"){var sw=R*ARDA_SHW,sh2=R*0.99;
+   return 1/Math.max(ca/sw,sa/sh2,1e-9)}
+  var w=R*ARDA_LZ,h=R;                   // the lozenge: a square on its point
+  return 1/((ca/w)+(sa/h)+1e-9);
+ }
+ var F=function(n){return (+n).toFixed(2)},out="";
+ var LAYER_STROKE="";      // set per course; poly() picks it up when given no stroke
+ var RR=function(L,a,v){return (L.fit?bound(a):R)*v};
+ var TAU=Math.PI*2;
+ function at(a,r){return [cx+r*Math.cos(a),cy+r*Math.sin(a)]}
+ function poly(pts,fill,stroke,sw){
+  var d=pts.map(function(p,i){return (i?"L":"M")+F(p[0])+","+F(p[1])}).join("")+"Z";
+  return '<path d="'+d+'" fill="'+(fill||"none")+'"'+
+    (stroke?' stroke="'+stroke+'" stroke-width="'+(sw||1)+'" stroke-linejoin="round"':LAYER_STROKE)+'/>';
+ }
+ (list||[]).forEach(function(L){
+  var c=col(L.c===undefined?0:L.c), rot=(L.rot||0)*TAU, n=L.n||1;
+  // an outline, if this course asks for one: LS is the ink, LSW the width
+  var LS=(L.stroke===undefined?null:col(L.stroke)), LSW=R*(L.sw||0.012);
+  var SA=LS?(' stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round"'):"";
+  LAYER_STROKE=SA;
+  if(L.t==="ring")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="none" stroke="'+c+
+     '" stroke-width="'+F((L.w||0.02)*R)+'"'+(L.dash?' stroke-dasharray="'+L.dash+'"':"")+'/>';
+  else if(L.t==="disc")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="'+c+'"'+SA+'/>';
+  else if(L.t==="wedges"){
+   // A ray is broad where it springs and comes to a point: its half-width is measured
+   // ACROSS the ray as a fraction of R, not as an angle. Taken as an angle it collapses
+   // to a needle at any small inner radius -- which is what it did.
+   var w=(L.w===undefined?0.06:L.w), tp=(L.taper===undefined?0:L.taper);
+   for(var i=0;i<n;i++){var a=TAU*i/n-Math.PI/2+rot,r0=RR(L,a,L.r0||0),r1=RR(L,a,L.r1===undefined?1:L.r1);
+    var ux=Math.cos(a),uy=Math.sin(a),nx=-uy,ny=ux,hw=w*R,tw=hw*tp;
+    out+=poly([[cx+ux*r1+nx*tw, cy+uy*r1+ny*tw],
+               [cx+ux*r1-nx*tw, cy+uy*r1-ny*tw],
+               [cx+ux*r0-nx*hw, cy+uy*r0-ny*hw],
+               [cx+ux*r0+nx*hw, cy+uy*r0+ny*hw]],c);}
+  } else if(L.t==="lobes"){
+   var lr=R*(L.r||0.5), ln=R*(L.len||0.2), wd=R*(L.wid||0.1);
+   for(var j=0;j<n;j++){var b=TAU*j/n-Math.PI/2+rot,p=at(b,lr);
+    out+='<ellipse cx="'+F(p[0])+'" cy="'+F(p[1])+'" rx="'+F(wd)+'" ry="'+F(ln)+
+      '" fill="'+c+'"'+SA+' transform="rotate('+F(b*180/Math.PI+90)+' '+F(p[0])+' '+F(p[1])+')"/>';}
+  } else if(L.t==="discs"){
+   var dr=R*(L.r||0.6), ds=R*(L.size||0.12), ec=L.edge!==undefined?col(L.edge):null;
+   for(var k=0;k<n;k++){var d2=TAU*k/n-Math.PI/2+rot,q=at(d2,L.fit?bound(d2)*(L.r||0.6):dr);
+    out+='<circle cx="'+F(q[0])+'" cy="'+F(q[1])+'" r="'+F(ds)+'" fill="'+c+'"'+
+      (ec?' stroke="'+ec+'" stroke-width="'+F(R*0.012)+'"':SA)+'/>';}
+  } else if(L.t==="star"){
+   var ro=R*(L.ro||0.6), ri=R*(L.ri||0.3), pts=[];
+   for(var m=0;m<n*2;m++)pts.push(at(Math.PI*m/n-Math.PI/2+rot, m%2?ri:ro));
+   out+=poly(pts,c);
+  } else if(L.t==="poly"){
+   var pr=R*(L.r||0.5), pp=[];
+   for(var q2=0;q2<n;q2++)pp.push(at(TAU*q2/n-Math.PI/2+rot,pr));
+   out+=poly(pp,c);
+  } else if(L.t==="square"){
+   var s=R*(L.s||0.3);
+   out+='<rect x="'+F(cx-s)+'" y="'+F(cy-s)+'" width="'+F(2*s)+'" height="'+F(2*s)+'" fill="'+c+
+     '" transform="rotate('+F((L.rot||0)*360)+' '+F(cx)+' '+F(cy)+')"/>';
+  } else if(L.t==="corners"){
+   var cr=R*(L.r||0.86), cs=R*(L.size||0.1), nn=n||4;
+   for(var t=0;t<nn;t++){var ca=TAU*t/nn-Math.PI/2+rot,cr2=L.fit?bound(ca)*(L.r||0.86):cr,p2=at(ca,cr2);
+    if(L.shape==="tri")out+=poly([at(ca,cr2+cs),at(ca-0.16,cr2-cs*0.5),at(ca+0.16,cr2-cs*0.5)],c);
+    else out+='<circle cx="'+F(p2[0])+'" cy="'+F(p2[1])+'" r="'+F(cs)+'" fill="'+c+'"/>';}
+  } else if(L.t==="dashes"){
+   var hr=R*(L.r||0.7), hl=(L.len||0.5), hw=R*(L.w||0.05);
+   for(var u=0;u<n;u++){var ua=TAU*u/n-Math.PI/2+rot, half=(TAU/n)*hl/2;
+    out+='<path d="M'+F(at(ua-half,hr)[0])+','+F(at(ua-half,hr)[1])+
+      ' A'+F(hr)+','+F(hr)+' 0 0 1 '+F(at(ua+half,hr)[0])+','+F(at(ua+half,hr)[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(hw)+'"/>';}
+  } else if(L.t==="pinwheel"){        // a disc cut into n segments, two tinctures about
+   var pr2=R*(L.r||0.4), c2b=col(L.c2===undefined?12:L.c2);
+   for(var v=0;v<n;v++){var a0=TAU*v/n-Math.PI/2+rot, a1=TAU*(v+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(cx)+','+F(cy)+' L'+F(at(a0,pr2)[0])+','+F(at(a0,pr2)[1])+
+      ' A'+F(pr2)+','+F(pr2)+' 0 0 1 '+F(at(a1,pr2)[0])+','+F(at(a1,pr2)[1])+'Z" fill="'+(v%2?c2b:c)+'"/>';}
+  } else if(L.t==="segments"){        // a ring cut into n pieces, each its own tincture
+   var s0=R*(L.r0||0.2), s1=R*(L.r1||0.5), cs2=L.cs||[];
+   for(var v2=0;v2<n;v2++){var b0=TAU*v2/n-Math.PI/2+rot, b1=TAU*(v2+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+' L'+F(at(b0,s1)[0])+','+F(at(b0,s1)[1])+
+      ' A'+F(s1)+','+F(s1)+' 0 0 1 '+F(at(b1,s1)[0])+','+F(at(b1,s1)[1])+
+      ' L'+F(at(b1,s0)[0])+','+F(at(b1,s0)[1])+
+      ' A'+F(s0)+','+F(s0)+' 0 0 0 '+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+'Z" fill="'+
+      col(cs2.length?cs2[v2%cs2.length]:L.c)+'"/>';}
+  } else if(L.t==="darts"){           // n darts flying outward, barbed as on the plates
+   var dw=(L.w||0.09), bb=(L.barb===undefined?0.5:L.barb);
+   for(var v3=0;v3<n;v3++){var g0=TAU*v3/n-Math.PI/2+rot,d0=RR(L,g0,L.r0||0.3),d1=RR(L,g0,L.r1||0.9);
+    var ux2=Math.cos(g0),uy2=Math.sin(g0),nx2=-uy2,ny2=ux2,W2=dw*R,rb=d0+(d1-d0)*bb;
+    var P=function(rr,off){return [cx+ux2*rr+nx2*off, cy+uy2*rr+ny2*off]};
+    out+=poly([P(d1,0),P(rb,-W2),P(rb,-W2*0.34),P(d0,-W2*0.34),
+               P(d0,W2*0.34),P(rb,W2*0.34),P(rb,W2)],c);}
+  } else if(L.t==="outline"){         // line-art: a stroked shape, no fill
+   var or1=R*(L.r||0.6), on=n||4, op=[];
+   for(var v4=0;v4<on;v4++)op.push(at(TAU*v4/on-Math.PI/2+rot,or1));
+   out+=poly(op,null,c,(L.w||0.02)*R);
+  } else if(L.t==="petals"){          // the shape most of the plates are built from:
+   // n petals springing from an inner radius to a tip, each bounded by two curves.
+   // bow moves the widest part in or out; round>0 gives a blunt tip instead of a point;
+   // stroke draws the outline the painted petals carry.
+   var pr0=(L.r0===undefined?0.10:L.r0), pr1=(L.r1===undefined?1:L.r1),
+       pw=(L.w===undefined?0.18:L.w), bow=(L.bow===undefined?0.5:L.bow),
+       rnd=(L.round===undefined?0:L.round),
+       ps=(L.stroke===undefined?null:col(L.stroke)), psw=R*(L.sw||0.014);
+   var swl=(L.swirl===undefined?0:L.swirl)*TAU;   // the tip leans this far round
+   for(var pj=0;pj<n;pj++){
+    var pa=TAU*pj/n-Math.PI/2+rot, pa2=pa+swl, pam=pa+swl*0.5,
+        PB=L.fit?bound(pa):R, PB2=L.fit?bound(pa2):R, PBM=L.fit?bound(pam):R,
+        pux=Math.cos(pa),puy=Math.sin(pa),
+        pu2x=Math.cos(pa2),pu2y=Math.sin(pa2),
+        pmx=Math.cos(pam),pmy=Math.sin(pam),pnx=-pmy,pny=pmx,
+        i0x=cx+pux*PB*pr0, i0y=cy+puy*PB*pr0,
+        i1x=cx+pu2x*PB2*pr1, i1y=cy+pu2y*PB2*pr1,
+        prm=PBM*(pr0+(pr1-pr0)*bow), phw=pw*R,
+        k1x=cx+pmx*prm+pnx*phw, k1y=cy+pmy*prm+pny*phw,
+        k2x=cx+pmx*prm-pnx*phw, k2y=cy+pmy*prm-pny*phw,
+        t1x=i1x+pnx*phw*rnd, t1y=i1y+pny*phw*rnd,
+        t2x=i1x-pnx*phw*rnd, t2y=i1y-pny*phw*rnd,
+        pd="M"+F(i0x)+","+F(i0y)+"Q"+F(k1x)+","+F(k1y)+" "+F(t1x)+","+F(t1y)+
+           (rnd?"A"+F(phw*rnd)+","+F(phw*rnd)+" 0 0 1 "+F(t2x)+","+F(t2y)
+               :"L"+F(t2x)+","+F(t2y))+
+           "Q"+F(k2x)+","+F(k2y)+" "+F(i0x)+","+F(i0y)+"Z";
+    out+='<path d="'+pd+'" fill="'+c+'"'+(ps?' stroke="'+ps+'" stroke-width="'+F(psw)+'" stroke-linejoin="round"':"")+'/>';}
+  } else if(L.t==="veins"){           // the midrib and side-veins the painted leaves carry
+   var vr0=(L.r0===undefined?0.15:L.r0), vr1=(L.r1===undefined?0.9:L.r1),
+       vw=R*(L.w||0.010), vs=L.side||0, vsp=(L.spread===undefined?0.06:L.spread);
+   for(var vj=0;vj<n;vj++){
+    var va=TAU*vj/n-Math.PI/2+rot, VB=L.fit?bound(va):R,
+        vux=Math.cos(va),vuy=Math.sin(va),vnx=-vuy,vny=vux;
+    out+='<path d="M'+F(cx+vux*VB*vr0)+','+F(cy+vuy*VB*vr0)+'L'+F(cx+vux*VB*vr1)+','+F(cy+vuy*VB*vr1)+
+      '" stroke="'+c+'" stroke-width="'+F(vw)+'" fill="none" stroke-linecap="round"/>';
+    for(var vi=1;vi<=vs;vi++){
+     var vt=vr0+(vr1-vr0)*vi/(vs+1), vl=vsp*R*(1-vi/(vs+1));
+     out+='<path d="M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)+vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)+vny*vl)+
+       'M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)-vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)-vny*vl)+
+       '" stroke="'+c+'" stroke-width="'+F(vw*0.8)+'" fill="none" stroke-linecap="round"/>';}}
+  } else if(L.t==="bands"){           // concentric bands of colour, outermost drawn first
+   var bcs=L.cs||[], bb0=(L.r0===undefined?0:L.r0), bb1=(L.r1===undefined?1:L.r1);
+   for(var bj=bcs.length-1;bj>=0;bj--)
+    out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*(bb0+(bb1-bb0)*(bj+1)/bcs.length))+
+      '" fill="'+col(bcs[bj])+'"/>';
+  } else if(L.t==="scatter"){         // small charges strewn about the field
+   var sk=L.k||"star", ssz=R*(L.size||0.07), srr=(L.r===undefined?0.78:L.r),
+       sac=col(L.ac===undefined?0:L.ac);
+   for(var sj=0;sj<n;sj++){
+    var sa=TAU*sj/n-Math.PI/2+rot, SB=L.fit?bound(sa):R;
+    window.ARDA_CHARGE_TEXT="";
+    out+=window.ardaChargePath(sk,cx+Math.cos(sa)*SB*srr,cy+Math.sin(sa)*SB*srr,ssz,c,sac);}
+  } else if(L.t==="arcs"){            // stroked arcs: n pieces of a circle, gapped
+   var ar=R*(L.r||0.6), aw=R*(L.w||0.03), gap=(L.gap===undefined?0.25:L.gap);
+   for(var aj=0;aj<n;aj++){
+    var a0=TAU*(aj+gap/2)/n-Math.PI/2+rot, a1=TAU*(aj+1-gap/2)/n-Math.PI/2+rot,
+        q0=at(a0,ar), q1=at(a1,ar);
+    out+='<path d="M'+F(q0[0])+','+F(q0[1])+'A'+F(ar)+','+F(ar)+' 0 0 1 '+F(q1[0])+','+F(q1[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(aw)+'" stroke-linecap="'+(L.cap||"butt")+'"/>';}
+  } else if(L.t==="charge"){
+   var chr=R*(L.r||0), cha=(L.a===undefined?-0.25:L.a)*TAU, ctr=chr?at(cha,chr):[cx,cy];
+   window.ARDA_CHARGE_TEXT=L.text||"";
+   // a course may name its own letter; three tengwar in a row are three DIFFERENT
+   // tengwar, which they were not while these were read once per device
+   var _ps=window.ARDA_TENGWA_SER,_pg=window.ARDA_TENGWA_GRADE;
+   if(L.tser!==undefined)window.ARDA_TENGWA_SER=L.tser;
+   if(L.tgrade!==undefined)window.ARDA_TENGWA_GRADE=L.tgrade;
+   var g=window.ardaChargePath(L.k||"star",ctr[0],ctr[1],R*(L.size||0.3),c,col(L.ac===undefined?1:L.ac));
+   window.ARDA_TENGWA_SER=_ps;window.ARDA_TENGWA_GRADE=_pg;
+   // Durin's crown and the Steward's seal are drawn as LINE on the plates, not as
+   // colour. A charge given an outline is wrapped in a group carrying it: the charge
+   // paths set their own fill and no stroke, so they inherit this one.
+   if(L.stroke!==undefined)
+    g='<g stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round" '+
+      'stroke-linecap="round" fill-rule="evenodd">'+g+'</g>';
+   out+=L.rot?'<g transform="rotate('+F((L.rot||0)*360)+' '+F(ctr[0])+' '+F(ctr[1])+')">'+g+'</g>':g;
+  }
+ });
+ return out;
+};
+
+// ===================== the layer engine =====================
+// The plates in Forodrim are built as stacks of concentric bands -- a field, then ring
+// upon ring of wedges, lobes, discs and stars, each with its own count, radius and
+// tincture, and an edge that may be plain, beaded or chequered. The older fixed slots
+// (mandala / gems / charge) cannot express that. A device may now instead carry
+// p.layers: an ordered list drawn from the field outward, each entry {t:...}.
+//
+//   {t:"ring",   r, w, c, dash}                 a circle, stroked
+//   {t:"disc",   r, c}                          a filled disc
+//   {t:"wedges", n, r0, r1, w, c, rot, taper}   n tapering rays
+//   {t:"lobes",  n, r, len, wid, c, rot}        n petals or lobes
+//   {t:"discs",  n, r, size, c, rot, edge}      n discs set about a ring
+//   {t:"star",   n, ro, ri, c, rot}             an n-pointed star
+//   {t:"poly",   n, r, c, rot}                  a regular polygon
+//   {t:"square", s, c, rot}                     an inset panel
+//   {t:"corners",n, r, size, c, rot, shape}     accents at the corners
+//   {t:"dashes", n, r, len, w, c, rot}          a broken ring, as of beads
+//   {t:"charge", k, r, size, c, ac, rot, text}  any charge from the vocabulary
+// Radii are fractions of R; angles in turns (0.25 = a quarter turn).
+window.ardaForgeLayers=function(list,cx,cy,R,col,shape){
+ // The plates fill the lozenge, and a lozenge only reaches R at its four points: along
+ // every other bearing its edge is far nearer. Radii given with fit:true are therefore
+ // fractions of the FIELD BOUNDARY at that bearing, not of the circumscribed circle --
+ // without this a ray drawn to r=1 stops well short of the edge everywhere but the points.
+ var SHP=shape||"lozenge";
+ function bound(a){
+  if(SHP==="circle")return R;
+  var ca=Math.abs(Math.cos(a)),sa=Math.abs(Math.sin(a));
+  if(SHP==="square"){var s2=R*ARDA_SQ;return s2/Math.max(ca,sa,1e-6)}
+  if(SHP==="shield"){var sw=R*ARDA_SHW,sh2=R*0.99;
+   return 1/Math.max(ca/sw,sa/sh2,1e-9)}
+  var w=R*ARDA_LZ,h=R;                   // the lozenge: a square on its point
+  return 1/((ca/w)+(sa/h)+1e-9);
+ }
+ var F=function(n){return (+n).toFixed(2)},out="";
+ var LAYER_STROKE="";      // set per course; poly() picks it up when given no stroke
+ var RR=function(L,a,v){return (L.fit?bound(a):R)*v};
+ var TAU=Math.PI*2;
+ function at(a,r){return [cx+r*Math.cos(a),cy+r*Math.sin(a)]}
+ function poly(pts,fill,stroke,sw){
+  var d=pts.map(function(p,i){return (i?"L":"M")+F(p[0])+","+F(p[1])}).join("")+"Z";
+  return '<path d="'+d+'" fill="'+(fill||"none")+'"'+
+    (stroke?' stroke="'+stroke+'" stroke-width="'+(sw||1)+'" stroke-linejoin="round"':LAYER_STROKE)+'/>';
+ }
+ (list||[]).forEach(function(L){
+  var c=col(L.c===undefined?0:L.c), rot=(L.rot||0)*TAU, n=L.n||1;
+  // an outline, if this course asks for one: LS is the ink, LSW the width
+  var LS=(L.stroke===undefined?null:col(L.stroke)), LSW=R*(L.sw||0.012);
+  var SA=LS?(' stroke="'+LS+'" stroke-width="'+F(LSW)+'" stroke-linejoin="round"'):"";
+  LAYER_STROKE=SA;
+  if(L.t==="ring")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="none" stroke="'+c+
+     '" stroke-width="'+F((L.w||0.02)*R)+'"'+(L.dash?' stroke-dasharray="'+L.dash+'"':"")+'/>';
+  else if(L.t==="disc")
+   out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*L.r)+'" fill="'+c+'"'+SA+'/>';
+  else if(L.t==="wedges"){
+   // A ray is broad where it springs and comes to a point: its half-width is measured
+   // ACROSS the ray as a fraction of R, not as an angle. Taken as an angle it collapses
+   // to a needle at any small inner radius -- which is what it did.
+   var w=(L.w===undefined?0.06:L.w), tp=(L.taper===undefined?0:L.taper);
+   for(var i=0;i<n;i++){var a=TAU*i/n-Math.PI/2+rot,r0=RR(L,a,L.r0||0),r1=RR(L,a,L.r1===undefined?1:L.r1);
+    var ux=Math.cos(a),uy=Math.sin(a),nx=-uy,ny=ux,hw=w*R,tw=hw*tp;
+    out+=poly([[cx+ux*r1+nx*tw, cy+uy*r1+ny*tw],
+               [cx+ux*r1-nx*tw, cy+uy*r1-ny*tw],
+               [cx+ux*r0-nx*hw, cy+uy*r0-ny*hw],
+               [cx+ux*r0+nx*hw, cy+uy*r0+ny*hw]],c);}
+  } else if(L.t==="lobes"){
+   var lr=R*(L.r||0.5), ln=R*(L.len||0.2), wd=R*(L.wid||0.1);
+   for(var j=0;j<n;j++){var b=TAU*j/n-Math.PI/2+rot,p=at(b,lr);
+    out+='<ellipse cx="'+F(p[0])+'" cy="'+F(p[1])+'" rx="'+F(wd)+'" ry="'+F(ln)+
+      '" fill="'+c+'"'+SA+' transform="rotate('+F(b*180/Math.PI+90)+' '+F(p[0])+' '+F(p[1])+')"/>';}
+  } else if(L.t==="discs"){
+   var dr=R*(L.r||0.6), ds=R*(L.size||0.12), ec=L.edge!==undefined?col(L.edge):null;
+   for(var k=0;k<n;k++){var d2=TAU*k/n-Math.PI/2+rot,q=at(d2,L.fit?bound(d2)*(L.r||0.6):dr);
+    out+='<circle cx="'+F(q[0])+'" cy="'+F(q[1])+'" r="'+F(ds)+'" fill="'+c+'"'+
+      (ec?' stroke="'+ec+'" stroke-width="'+F(R*0.012)+'"':SA)+'/>';}
+  } else if(L.t==="star"){
+   var ro=R*(L.ro||0.6), ri=R*(L.ri||0.3), pts=[];
+   for(var m=0;m<n*2;m++)pts.push(at(Math.PI*m/n-Math.PI/2+rot, m%2?ri:ro));
+   out+=poly(pts,c);
+  } else if(L.t==="poly"){
+   var pr=R*(L.r||0.5), pp=[];
+   for(var q2=0;q2<n;q2++)pp.push(at(TAU*q2/n-Math.PI/2+rot,pr));
+   out+=poly(pp,c);
+  } else if(L.t==="square"){
+   var s=R*(L.s||0.3);
+   out+='<rect x="'+F(cx-s)+'" y="'+F(cy-s)+'" width="'+F(2*s)+'" height="'+F(2*s)+'" fill="'+c+
+     '" transform="rotate('+F((L.rot||0)*360)+' '+F(cx)+' '+F(cy)+')"/>';
+  } else if(L.t==="corners"){
+   var cr=R*(L.r||0.86), cs=R*(L.size||0.1), nn=n||4;
+   for(var t=0;t<nn;t++){var ca=TAU*t/nn-Math.PI/2+rot,cr2=L.fit?bound(ca)*(L.r||0.86):cr,p2=at(ca,cr2);
+    if(L.shape==="tri")out+=poly([at(ca,cr2+cs),at(ca-0.16,cr2-cs*0.5),at(ca+0.16,cr2-cs*0.5)],c);
+    else out+='<circle cx="'+F(p2[0])+'" cy="'+F(p2[1])+'" r="'+F(cs)+'" fill="'+c+'"/>';}
+  } else if(L.t==="dashes"){
+   var hr=R*(L.r||0.7), hl=(L.len||0.5), hw=R*(L.w||0.05);
+   for(var u=0;u<n;u++){var ua=TAU*u/n-Math.PI/2+rot, half=(TAU/n)*hl/2;
+    out+='<path d="M'+F(at(ua-half,hr)[0])+','+F(at(ua-half,hr)[1])+
+      ' A'+F(hr)+','+F(hr)+' 0 0 1 '+F(at(ua+half,hr)[0])+','+F(at(ua+half,hr)[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(hw)+'"/>';}
+  } else if(L.t==="pinwheel"){        // a disc cut into n segments, two tinctures about
+   var pr2=R*(L.r||0.4), c2b=col(L.c2===undefined?12:L.c2);
+   for(var v=0;v<n;v++){var a0=TAU*v/n-Math.PI/2+rot, a1=TAU*(v+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(cx)+','+F(cy)+' L'+F(at(a0,pr2)[0])+','+F(at(a0,pr2)[1])+
+      ' A'+F(pr2)+','+F(pr2)+' 0 0 1 '+F(at(a1,pr2)[0])+','+F(at(a1,pr2)[1])+'Z" fill="'+(v%2?c2b:c)+'"/>';}
+  } else if(L.t==="segments"){        // a ring cut into n pieces, each its own tincture
+   var s0=R*(L.r0||0.2), s1=R*(L.r1||0.5), cs2=L.cs||[];
+   for(var v2=0;v2<n;v2++){var b0=TAU*v2/n-Math.PI/2+rot, b1=TAU*(v2+1)/n-Math.PI/2+rot;
+    out+='<path d="M'+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+' L'+F(at(b0,s1)[0])+','+F(at(b0,s1)[1])+
+      ' A'+F(s1)+','+F(s1)+' 0 0 1 '+F(at(b1,s1)[0])+','+F(at(b1,s1)[1])+
+      ' L'+F(at(b1,s0)[0])+','+F(at(b1,s0)[1])+
+      ' A'+F(s0)+','+F(s0)+' 0 0 0 '+F(at(b0,s0)[0])+','+F(at(b0,s0)[1])+'Z" fill="'+
+      col(cs2.length?cs2[v2%cs2.length]:L.c)+'"/>';}
+  } else if(L.t==="darts"){           // n darts flying outward, barbed as on the plates
+   var dw=(L.w||0.09), bb=(L.barb===undefined?0.5:L.barb);
+   for(var v3=0;v3<n;v3++){var g0=TAU*v3/n-Math.PI/2+rot,d0=RR(L,g0,L.r0||0.3),d1=RR(L,g0,L.r1||0.9);
+    var ux2=Math.cos(g0),uy2=Math.sin(g0),nx2=-uy2,ny2=ux2,W2=dw*R,rb=d0+(d1-d0)*bb;
+    var P=function(rr,off){return [cx+ux2*rr+nx2*off, cy+uy2*rr+ny2*off]};
+    out+=poly([P(d1,0),P(rb,-W2),P(rb,-W2*0.34),P(d0,-W2*0.34),
+               P(d0,W2*0.34),P(rb,W2*0.34),P(rb,W2)],c);}
+  } else if(L.t==="outline"){         // line-art: a stroked shape, no fill
+   var or1=R*(L.r||0.6), on=n||4, op=[];
+   for(var v4=0;v4<on;v4++)op.push(at(TAU*v4/on-Math.PI/2+rot,or1));
+   out+=poly(op,null,c,(L.w||0.02)*R);
+  } else if(L.t==="petals"){          // the shape most of the plates are built from:
+   // n petals springing from an inner radius to a tip, each bounded by two curves.
+   // bow moves the widest part in or out; round>0 gives a blunt tip instead of a point;
+   // stroke draws the outline the painted petals carry.
+   var pr0=(L.r0===undefined?0.10:L.r0), pr1=(L.r1===undefined?1:L.r1),
+       pw=(L.w===undefined?0.18:L.w), bow=(L.bow===undefined?0.5:L.bow),
+       rnd=(L.round===undefined?0:L.round),
+       ps=(L.stroke===undefined?null:col(L.stroke)), psw=R*(L.sw||0.014);
+   var swl=(L.swirl===undefined?0:L.swirl)*TAU;   // the tip leans this far round
+   for(var pj=0;pj<n;pj++){
+    var pa=TAU*pj/n-Math.PI/2+rot, pa2=pa+swl, pam=pa+swl*0.5,
+        PB=L.fit?bound(pa):R, PB2=L.fit?bound(pa2):R, PBM=L.fit?bound(pam):R,
+        pux=Math.cos(pa),puy=Math.sin(pa),
+        pu2x=Math.cos(pa2),pu2y=Math.sin(pa2),
+        pmx=Math.cos(pam),pmy=Math.sin(pam),pnx=-pmy,pny=pmx,
+        i0x=cx+pux*PB*pr0, i0y=cy+puy*PB*pr0,
+        i1x=cx+pu2x*PB2*pr1, i1y=cy+pu2y*PB2*pr1,
+        prm=PBM*(pr0+(pr1-pr0)*bow), phw=pw*R,
+        k1x=cx+pmx*prm+pnx*phw, k1y=cy+pmy*prm+pny*phw,
+        k2x=cx+pmx*prm-pnx*phw, k2y=cy+pmy*prm-pny*phw,
+        t1x=i1x+pnx*phw*rnd, t1y=i1y+pny*phw*rnd,
+        t2x=i1x-pnx*phw*rnd, t2y=i1y-pny*phw*rnd,
+        pd="M"+F(i0x)+","+F(i0y)+"Q"+F(k1x)+","+F(k1y)+" "+F(t1x)+","+F(t1y)+
+           (rnd?"A"+F(phw*rnd)+","+F(phw*rnd)+" 0 0 1 "+F(t2x)+","+F(t2y)
+               :"L"+F(t2x)+","+F(t2y))+
+           "Q"+F(k2x)+","+F(k2y)+" "+F(i0x)+","+F(i0y)+"Z";
+    out+='<path d="'+pd+'" fill="'+c+'"'+(ps?' stroke="'+ps+'" stroke-width="'+F(psw)+'" stroke-linejoin="round"':"")+'/>';}
+  } else if(L.t==="veins"){           // the midrib and side-veins the painted leaves carry
+   var vr0=(L.r0===undefined?0.15:L.r0), vr1=(L.r1===undefined?0.9:L.r1),
+       vw=R*(L.w||0.010), vs=L.side||0, vsp=(L.spread===undefined?0.06:L.spread);
+   for(var vj=0;vj<n;vj++){
+    var va=TAU*vj/n-Math.PI/2+rot, VB=L.fit?bound(va):R,
+        vux=Math.cos(va),vuy=Math.sin(va),vnx=-vuy,vny=vux;
+    out+='<path d="M'+F(cx+vux*VB*vr0)+','+F(cy+vuy*VB*vr0)+'L'+F(cx+vux*VB*vr1)+','+F(cy+vuy*VB*vr1)+
+      '" stroke="'+c+'" stroke-width="'+F(vw)+'" fill="none" stroke-linecap="round"/>';
+    for(var vi=1;vi<=vs;vi++){
+     var vt=vr0+(vr1-vr0)*vi/(vs+1), vl=vsp*R*(1-vi/(vs+1));
+     out+='<path d="M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)+vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)+vny*vl)+
+       'M'+F(cx+vux*VB*vt)+','+F(cy+vuy*VB*vt)+'L'+F(cx+vux*VB*(vt+0.10)-vnx*vl)+','+F(cy+vuy*VB*(vt+0.10)-vny*vl)+
+       '" stroke="'+c+'" stroke-width="'+F(vw*0.8)+'" fill="none" stroke-linecap="round"/>';}}
+  } else if(L.t==="bands"){           // concentric bands of colour, outermost drawn first
+   var bcs=L.cs||[], bb0=(L.r0===undefined?0:L.r0), bb1=(L.r1===undefined?1:L.r1);
+   for(var bj=bcs.length-1;bj>=0;bj--)
+    out+='<circle cx="'+F(cx)+'" cy="'+F(cy)+'" r="'+F(R*(bb0+(bb1-bb0)*(bj+1)/bcs.length))+
+      '" fill="'+col(bcs[bj])+'"/>';
+  } else if(L.t==="scatter"){         // small charges strewn about the field
+   var sk=L.k||"star", ssz=R*(L.size||0.07), srr=(L.r===undefined?0.78:L.r),
+       sac=col(L.ac===undefined?0:L.ac);
+   for(var sj=0;sj<n;sj++){
+    var sa=TAU*sj/n-Math.PI/2+rot, SB=L.fit?bound(sa):R;
+    window.ARDA_CHARGE_TEXT="";
+    out+=window.ardaChargePath(sk,cx+Math.cos(sa)*SB*srr,cy+Math.sin(sa)*SB*srr,ssz,c,sac);}
+  } else if(L.t==="arcs"){            // stroked arcs: n pieces of a circle, gapped
+   var ar=R*(L.r||0.6), aw=R*(L.w||0.03), gap=(L.gap===undefined?0.25:L.gap);
+   for(var aj=0;aj<n;aj++){
+    var a0=TAU*(aj+gap/2)/n-Math.PI/2+rot, a1=TAU*(aj+1-gap/2)/n-Math.PI/2+rot,
+        q0=at(a0,ar), q1=at(a1,ar);
+    out+='<path d="M'+F(q0[0])+','+F(q0[1])+'A'+F(ar)+','+F(ar)+' 0 0 1 '+F(q1[0])+','+F(q1[1])+
+      '" fill="none" stroke="'+c+'" stroke-width="'+F(aw)+'" stroke-linecap="'+(L.cap||"butt")+'"/>';}
+  } else if(L.t==="charge"){
+   var chr=R*(L.r||0), cha=(L.a===undefined?-0.25:L.a)*TAU, ctr=chr?at(cha,chr):[cx,cy];
+   window.ARDA_CHARGE_TEXT=L.text||"";
+   var g=window.ardaChargePath(L.k||"star",ctr[0],ctr[1],R*(L.size||0.3),c,col(L.ac===undefined?1:L.ac));
+   out+=L.rot?'<g transform="rotate('+F((L.rot||0)*360)+' '+F(ctr[0])+' '+F(ctr[1])+')">'+g+'</g>':g;
+  }
+ });
+ return out;
+};
 
 window.ARDA_REALM_DEVICE={doriath:"thingol",gondolin:"turgon",nargothrond:"finrod",khazaddum:"durin",erebor:"durin",ironhills:"durin",lindon:"gilgalad",eregion:"feanor",lorien:"galadriel",rivendell:"elrond",mordor:"redeye",dolguldur:"redeye",gondor:"gondor",reunited:"gondor",angmar:"morgul",morgul:"morgul",rohan:"rohan",isengard:"whitehand",harad:"serpent"};
 /*TAX*/window.ARDA_HERALD_TAX=[["Eldar", ["The House of Finwë", "Doriath & the Sindar", "The Houses of Gondolin", "Gil-galad & the Half-elven", "Jewels & Emblems of the Elder Days"]], ["The Kingdoms of Men", ["The Three Houses of the Edain", "Gondor", "Rohan"]], ["The Khazâd", ["Durin's Folk"]], ["The Enemy", ["Angband & Mordor", "Isengard", "the South & East"]], ["The Istari", ["the Wandering Wizards"]]];

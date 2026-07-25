@@ -96,6 +96,33 @@ except FileNotFoundError:
 except Exception as _e3:
     print("js syntax: could not run - %s" % str(_e3)[:60])
 
+# --- does the page actually RUN, not merely parse -------------------------------
+# node --check proved heraldry.html's scripts parsed while the page carried a stale
+# copy of the forge engine -- 46 tinctures where its devices asked for 83 -- so every
+# preset threw the moment anyone touched it. This drives the page against a stub DOM.
+try:
+    import subprocess as _sp4, os as _os4
+    _smoke = _os4.path.join("..", "map", "page_smoke.js")
+    if _os4.path.exists(_smoke):
+        _sfail = 0; _sn = 0
+        for _pg in sorted(glob.glob("*.html")):
+            _r4 = _sp4.run(["node", _smoke, _pg], capture_output=True, text=True, timeout=180)
+            _sn += 1
+            if _r4.returncode:
+                _sfail += 1
+                for _l in _r4.stdout.splitlines():
+                    if "threw" in _l: print("✗ PAGE RUNTIME %s: %s" % (_pg, _l.strip()[:110]))
+        print("page runtime: %s (%d pages)" % ("FAIL" if _sfail else "OK", _sn))
+    else:
+        _sfail = 0
+        print("page runtime: skipped - map/page_smoke.js not present")
+except FileNotFoundError:
+    _sfail = 0
+    print("page runtime: skipped - node is not installed")
+except Exception as _e4:
+    _sfail = 0
+    print("page runtime: could not run - %s" % str(_e4)[:60])
+
 # MATCHER-HOOK
 # The quote matcher is the thing every claim-audit trusts. If its own tests stop
 # passing, every verification done with it is suspect.
@@ -159,7 +186,7 @@ except Exception as _e6:
     print("audit claims: could not run - %s" % str(_e6)[:60])
 
 print("checked",len(pages),"pages,",len(glob.glob('*.json')),"datasets —",
-      "FAIL" if (bad or _ifail or _jsfail or _mfail or _qfail or _afail) else "OK")
+      "FAIL" if (bad or _ifail or _jsfail or _sfail or _mfail or _qfail or _afail) else "OK")
 import sys as _s2
-_s2.exit(1 if (bad or _ifail or _jsfail or _mfail or _qfail or _afail) else 0)
+_s2.exit(1 if (bad or _ifail or _jsfail or _sfail or _mfail or _qfail or _afail) else 0)
 sys.exit(1 if bad else 0)
