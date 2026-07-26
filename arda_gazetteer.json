@@ -1,0 +1,4286 @@
+{
+ "built_from": [
+  "VECTOR_MAP_SPEC.md",
+  "RECONSTRUCTION.md",
+  "site/arda_livingmap.json",
+  "site/arda_realms.json"
+ ],
+ "n": 193,
+ "places": {
+  "amon ereb": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 10/22"
+   ],
+   "coords": [],
+   "n": "Amon Ereb",
+   "name_conf": null,
+   "notes": [
+    "Where Denethor of the Green-elves fell in the First Battle; the Fëanorians' last hold."
+   ],
+   "parents": [
+    "ossiriand"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PEAK"
+   ]
+  },
+  "amon ereb fort": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 733,
+     "y": 424
+    }
+   ],
+   "n": "Amon Ereb fort",
+   "name_conf": null,
+   "notes": [
+    "spec FA: watch"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_WATCHPOST"
+   ]
+  },
+  "amon r dh": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "CoH VII-VIII",
+    "A ch21; F ch VII–VIII"
+   ],
+   "coords": [],
+   "n": "Amon Rûdh",
+   "name_conf": "H",
+   "notes": [
+    "also Bar-en-Danwedh",
+    "Mîm's bald hill; Túrin's outlaw hold; Beleg's grief.",
+    "Evidence Table B32"
+   ],
+   "parents": [
+    "nargothrond"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PEAK"
+   ]
+  },
+  "anduin": {
+   "ages": [],
+   "cites": [
+    "A RoP; C II.9; D; RC[T]"
+   ],
+   "coords": [],
+   "n": "Anduin (the Great River)",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: Water",
+    "Evidence Table R5"
+   ],
+   "parents": [],
+   "place_conf": "L",
+   "types": [
+    "NATURAL_SEA"
+   ]
+  },
+  "anfauglith": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 18/20",
+    "A ch14, ch18, ch20"
+   ],
+   "coords": [],
+   "n": "Anfauglith",
+   "name_conf": "H",
+   "notes": [
+    "also Ard-galen (before 455)",
+    "The green plain burned to gasping dust in the Bragollach; the Haudh-en-Ndengin rose here.",
+    "Evidence Table B4"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PLAIN"
+   ]
+  },
+  "angband": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 3/18; CoH intro",
+    "A ch3, ch10, ch14; HoME 5, 11; F Intro"
+   ],
+   "coords": [],
+   "n": "Angband",
+   "name_conf": "H",
+   "notes": [
+    "also Thangorodrim",
+    "Morgoth's hells beneath the towers of slag; the Gate 150 leagues from Menegroth.",
+    "Evidence Table B2"
+   ],
+   "parents": [
+    "angband"
+   ],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ]
+  },
+  "angmar label": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "ANGMAR label",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Political / Regional Polygons"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "POLITY_REALM"
+   ]
+  },
+  "ann minas": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App A; UT"
+   ],
+   "coords": [],
+   "n": "Annúminas",
+   "name_conf": null,
+   "notes": [
+    "Elendil's first capital on Lake Evendim; restored by Elessar."
+   ],
+   "parents": [
+    "arnor",
+    "reunited"
+   ],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_RUIN"
+   ]
+  },
+  "annuminas": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 222,
+     "y": 748
+    }
+   ],
+   "n": "Annuminas",
+   "name_conf": null,
+   "notes": [
+    "spec TA: ruined city"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CITY"
+   ]
+  },
+  "arnor ruined": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Arnor (ruined",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Political / Regional Polygons"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "POLITY_REALM"
+   ]
+  },
+  "arossiach": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 677,
+     "y": 637
+    }
+   ],
+   "n": "Arossiach",
+   "name_conf": null,
+   "notes": [
+    "spec FA: fords"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "UNCLASSIFIED"
+   ]
+  },
+  "ash mountains": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Ash Mountains (Ered Lithui)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Mountains"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_MOUNTAIN_RANGE"
+   ]
+  },
+  "bar en danwedh": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 436,
+     "y": 512
+    }
+   ],
+   "n": "Bar-en-Danwedh",
+   "name_conf": null,
+   "notes": [
+    "spec FA: cave-house"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_DWELLING"
+   ]
+  },
+  "barad d r": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App B; LotR VI.3",
+    "A RoP; C III.11, IV.3, VI"
+   ],
+   "coords": [],
+   "n": "Barad-dûr",
+   "name_conf": "H",
+   "notes": [
+    "also the Dark Tower",
+    "Sauron's fortress, founded c. S.A. 1000, rebuilt 2951; its fall shook the world.",
+    "Evidence Table G24"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_TOWER"
+   ]
+  },
+  "barad eithel": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 482,
+     "y": 679
+    }
+   ],
+   "n": "Barad Eithel",
+   "name_conf": null,
+   "notes": [
+    "spec FA: fortress"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ]
+  },
+  "barad nimras": {
+   "ages": [],
+   "cites": [
+    "A ch14, ch20"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 195,
+     "y": 307
+    }
+   ],
+   "n": "Barad Nimras",
+   "name_conf": "H",
+   "notes": [
+    "spec FA: watch-tower",
+    "Evidence Table B34"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_TOWER"
+   ]
+  },
+  "baranduin": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Baranduin (Brandywine)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Water"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_SEA"
+   ]
+  },
+  "barrow downs": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR I.8; App A",
+    "C I.8, App A; D Hunt; RC[T]"
+   ],
+   "coords": [],
+   "n": "Barrow-downs",
+   "name_conf": "H",
+   "notes": [
+    "also Tyrn Gorthad",
+    "Wights out of Angmar walk the old Edain graves; the swords of Westernesse came hence.",
+    "Evidence Table E8"
+   ],
+   "parents": [
+    "cardolan",
+    "bombadil"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PEAK"
+   ]
+  },
+  "belegost": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 10/20"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 924,
+     "y": 452
+    }
+   ],
+   "n": "Belegost",
+   "name_conf": null,
+   "notes": [
+    "spec FA: dwarf-city",
+    "also Gabilgathol, Mickleburg",
+    "Dwarf-mansion of the Broadbeams; Azaghâl's masked warriors withstood Glaurung."
+   ],
+   "parents": [
+    "belegost"
+   ],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CITY",
+    "MAN_MADE_HALL"
+   ]
+  },
+  "beorn s house": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 545,
+     "y": 700
+    }
+   ],
+   "n": "Beorn's house",
+   "name_conf": null,
+   "notes": [
+    "spec TA: house"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_DWELLING"
+   ]
+  },
+  "blue mtn dwarf halls": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 105,
+     "y": 755
+    }
+   ],
+   "n": "Blue Mtn dwarf-halls",
+   "name_conf": null,
+   "notes": [
+    "spec TA: mansion"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_MANSION"
+   ]
+  },
+  "brandywine bridge": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 247,
+     "y": 663
+    }
+   ],
+   "n": "Brandywine Bridge",
+   "name_conf": null,
+   "notes": [
+    "spec TA: bridge"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_BRIDGE"
+   ]
+  },
+  "bree": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR I.9"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 273,
+     "y": 685
+    }
+   ],
+   "n": "Bree",
+   "name_conf": null,
+   "notes": [
+    "spec TA: town",
+    "At the meeting of the Roads: the Prancing Pony, and a man called Strider."
+   ],
+   "parents": [
+    "bree"
+   ],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_TOWN",
+    "MAN_MADE_CITY"
+   ]
+  },
+  "bree land": {
+   "ages": [],
+   "cites": [
+    "C I.9; RC[T]"
+   ],
+   "coords": [],
+   "n": "Bree-land",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: Political / Regional Polygons",
+    "Evidence Table E9"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "POLITY_REALM"
+   ]
+  },
+  "brethil": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 17/21; CoH",
+    "A ch21; F ch XIII–XVIII; HoME 11"
+   ],
+   "coords": [],
+   "n": "Brethil",
+   "name_conf": "H",
+   "notes": [
+    "also Forest of the Haladin",
+    "The Haladin's wood between Teiglin and Sirion; Túrin's last stand-ground.",
+    "Evidence Table B31"
+   ],
+   "parents": [
+    "brethil"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "brithiach": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 504,
+     "y": 569
+    }
+   ],
+   "n": "Brithiach",
+   "name_conf": null,
+   "notes": [
+    "spec FA: ford"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CROSSING"
+   ]
+  },
+  "brithombar": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 14/20"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 205,
+     "y": 398
+    }
+   ],
+   "n": "Brithombar",
+   "name_conf": null,
+   "notes": [
+    "spec FA: walled haven",
+    "Northern haven of the Falas, Círdan's walled city; fell F.A. 473."
+   ],
+   "parents": [
+    "falas"
+   ],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_HAVEN"
+   ]
+  },
+  "buckland crickhollow": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR I.5"
+   ],
+   "coords": [],
+   "n": "Buckland & Crickhollow",
+   "name_conf": null,
+   "notes": [
+    "Brandy Hall of the Brandybucks; the conspiracy unmasked itself here."
+   ],
+   "parents": [
+    "shire"
+   ],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_CITY"
+   ]
+  },
+  "bucklebury ferry": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 247,
+     "y": 656
+    }
+   ],
+   "n": "Bucklebury + Ferry",
+   "name_conf": null,
+   "notes": [
+    "spec TA: town+ferry"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_TOWN"
+   ]
+  },
+  "bywater": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 220,
+     "y": 666
+    }
+   ],
+   "n": "Bywater",
+   "name_conf": null,
+   "notes": [
+    "spec TA: village"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_VILLAGE"
+   ]
+  },
+  "cair andros": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR V.4; App B",
+    "C App A, V.4; RC[T]"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 738,
+     "y": 295
+    }
+   ],
+   "n": "Cair Andros",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: isle-fort",
+    "The ship-shaped river-isle guarding Anórien; stormed Mar 10, 3019.",
+    "Evidence Table G18"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_ISLAND"
+   ]
+  },
+  "calembel": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 565,
+     "y": 278
+    }
+   ],
+   "n": "Calembel",
+   "name_conf": null,
+   "notes": [
+    "spec TA: town"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_TOWN"
+   ]
+  },
+  "caradhras": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR II.3"
+   ],
+   "coords": [],
+   "n": "Caradhras",
+   "name_conf": null,
+   "notes": [
+    "also the Redhorn; Barazinbar",
+    "The cruel mountain that defeated the Fellowship with snow."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PEAK"
+   ]
+  },
+  "caras galadhon": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR II.7"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 543,
+     "y": 542
+    }
+   ],
+   "n": "Caras Galadhon",
+   "name_conf": null,
+   "notes": [
+    "spec TA: tree-city",
+    "also in Lothlórien",
+    "The city of the trees; Galadriel's mirror; 'no shadow lay upon it yet'."
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CITY"
+   ]
+  },
+  "carn d m": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App A I(iv)",
+    "C App A; D (Index)"
+   ],
+   "coords": [],
+   "n": "Carn Dûm",
+   "name_conf": "H",
+   "notes": [
+    "The Witch-king's mountain-hold of Angmar.",
+    "Evidence Table E20"
+   ],
+   "parents": [
+    "angmar"
+   ],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ]
+  },
+  "carn dum": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 485,
+     "y": 818
+    }
+   ],
+   "n": "Carn Dum",
+   "name_conf": null,
+   "notes": [
+    "spec TA: ruined fortress"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ]
+  },
+  "causeway forts": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 750,
+     "y": 271
+    }
+   ],
+   "n": "Causeway Forts",
+   "name_conf": null,
+   "notes": [
+    "spec TA: forts"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "UNCLASSIFIED"
+   ]
+  },
+  "cerin amroth": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 540,
+     "y": 548
+    }
+   ],
+   "n": "Cerin Amroth",
+   "name_conf": null,
+   "notes": [
+    "spec TA: landmark"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ]
+  },
+  "chetwood": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Chetwood [",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Forests"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "cirith ungol": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR IV.9-10; VI.1"
+   ],
+   "coords": [],
+   "n": "Cirith Ungol",
+   "name_conf": null,
+   "notes": [
+    "Shelob's stair and tunnel; the Tower where Sam bore the Ring and found Frodo."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PASS"
+   ]
+  },
+  "crickhollow": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 250,
+     "y": 658
+    }
+   ],
+   "n": "Crickhollow",
+   "name_conf": null,
+   "notes": [
+    "spec TA: house"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_DWELLING"
+   ]
+  },
+  "dale": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "Hobbit i; App B",
+    "B ch1, 11–13; C App A"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 748,
+     "y": 758
+    }
+   ],
+   "n": "Dale",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: town (rebuilt)",
+    "Girion's bell-town, burned 2770; reborn under Bard; battle before it, Mar 3019.",
+    "Evidence Table R10"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_TOWN",
+    "MAN_MADE_CITY"
+   ]
+  },
+  "dimrill dale": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App A III; LotR II.3"
+   ],
+   "coords": [],
+   "n": "Dimrill Dale",
+   "name_conf": null,
+   "notes": [
+    "also Azanulbizar; Nanduhirion",
+    "Kheled-zâram's mirror-mere; the great battle of 2799; the East-gate of Moria."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PASS"
+   ]
+  },
+  "dol amroth": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR V.1; UT"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 620,
+     "y": 180
+    }
+   ],
+   "n": "Dol Amroth",
+   "name_conf": null,
+   "notes": [
+    "spec TA: castle-city",
+    "The Swan-princes' sea-castle; named for the last king of Lórien."
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CITY",
+    "MAN_MADE_HAVEN"
+   ]
+  },
+  "dol guldur": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App B"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 600,
+     "y": 556
+    }
+   ],
+   "n": "Dol Guldur",
+   "name_conf": null,
+   "notes": [
+    "spec TA: dark fortress",
+    "also the Hill of Sorcery",
+    "The Necromancer's keep — Sauron veiled, 1050–2941; thrown down by Galadriel."
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_FORTRESS",
+    "MAN_MADE_TOWER"
+   ]
+  },
+  "dr adan forest": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Drúadan Forest [",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Forests"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "dunharrow": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR V.3",
+    "C V.3; RC[T]"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 536,
+     "y": 343
+    }
+   ],
+   "n": "Dunharrow",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: refuge",
+    "also & the Dark Door",
+    "The refuge of the firienfeld; the Muster of Rohan; the Paths of the Dead open here.",
+    "Evidence Table G8"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_REFUGE",
+    "MAN_MADE_FORTRESS"
+   ]
+  },
+  "durin s stone": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 513,
+     "y": 569
+    }
+   ],
+   "n": "Durin's Stone",
+   "name_conf": null,
+   "notes": [
+    "spec TA: landmark"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ]
+  },
+  "durthang": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 776,
+     "y": 342
+    }
+   ],
+   "n": "Durthang",
+   "name_conf": null,
+   "notes": [
+    "spec TA: castle"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "UNCLASSIFIED"
+   ]
+  },
+  "eagles eyrie": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 503,
+     "y": 678
+    }
+   ],
+   "n": "Eagles' Eyrie",
+   "name_conf": null,
+   "notes": [
+    "spec TA: landmark"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ]
+  },
+  "edhellond": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 622,
+     "y": 190
+    }
+   ],
+   "n": "Edhellond",
+   "name_conf": null,
+   "notes": [
+    "spec TA: ruined haven °"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_HAVEN"
+   ]
+  },
+  "edoras": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR III.6",
+    "C III.6, V.3, VI.6; RC[T] (unpub. Index)"
+   ],
+   "coords": [],
+   "n": "Edoras",
+   "name_conf": "H",
+   "notes": [
+    "also & Meduseld",
+    "Brego's golden hall under the White Mountains; Théoden's seat.",
+    "Evidence Table G7"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_CITY"
+   ]
+  },
+  "edoras meduseld": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 533,
+     "y": 355
+    }
+   ],
+   "n": "Edoras/Meduseld",
+   "name_conf": null,
+   "notes": [
+    "spec TA: royal town"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_TOWN"
+   ]
+  },
+  "eglarest": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 14/20",
+    "A ch14, ch20"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 227,
+     "y": 317
+    }
+   ],
+   "n": "Eglarest",
+   "name_conf": "H",
+   "notes": [
+    "spec FA: walled haven",
+    "Southern haven of the Falas; fell with Brithombar.",
+    "Evidence Table B34"
+   ],
+   "parents": [
+    "falas"
+   ],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_HAVEN"
+   ]
+  },
+  "eithel ivrin": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 442,
+     "y": 580
+    }
+   ],
+   "n": "Eithel Ivrin",
+   "name_conf": null,
+   "notes": [
+    "spec FA: pools/falls"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_FALLS"
+   ]
+  },
+  "eithel sirion": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 18/20"
+   ],
+   "coords": [],
+   "n": "Eithel Sirion",
+   "name_conf": null,
+   "notes": [
+    "also Barad Eithel",
+    "Fingolfin's great fortress at Sirion's well; Fingon's muster-ground of the Nirnaeth."
+   ],
+   "parents": [
+    "hithlum"
+   ],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ]
+  },
+  "elostirion tower": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 147,
+     "y": 666
+    }
+   ],
+   "n": "Elostirion tower",
+   "name_conf": null,
+   "notes": [
+    "spec TA: tower (palantir)"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_TOWER"
+   ]
+  },
+  "elvenking s halls": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 700,
+     "y": 748
+    }
+   ],
+   "n": "Elvenking's Halls",
+   "name_conf": null,
+   "notes": [
+    "spec TA: cave-city"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CITY"
+   ]
+  },
+  "emyn muil": {
+   "ages": [],
+   "cites": [
+    "C II.9–10, III.1–2, IV.1; RC[T]"
+   ],
+   "coords": [],
+   "n": "Emyn Muil",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: Mountains",
+    "Evidence Table R18"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_MOUNTAIN_RANGE"
+   ]
+  },
+  "ephel brandir": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 504,
+     "y": 526
+    }
+   ],
+   "n": "Ephel Brandir",
+   "name_conf": null,
+   "notes": [
+    "spec FA: stockade"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ]
+  },
+  "erebor": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "Hobbit; App A III/B",
+    "B ch1, 11–13; C App A"
+   ],
+   "coords": [],
+   "n": "Erebor",
+   "name_conf": "H",
+   "notes": [
+    "also the Lonely Mountain",
+    "The Kingdom under the Mountain: Thrór's, Smaug's, Thorin's, Dáin's; besieged 3019.",
+    "Evidence Table R10"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_CITY"
+   ]
+  },
+  "erebor front gate": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 747,
+     "y": 764
+    }
+   ],
+   "n": "Erebor Front Gate",
+   "name_conf": null,
+   "notes": [
+    "spec TA: gate-city"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CITY"
+   ]
+  },
+  "ered gorgoroth": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 14/19"
+   ],
+   "coords": [],
+   "n": "Ered Gorgoroth",
+   "name_conf": null,
+   "notes": [
+    "also Mountains of Terror",
+    "Ungoliant's brood-haunted precipices above Nan Dungortheb."
+   ],
+   "parents": [
+    "dorthonion"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PEAK"
+   ]
+  },
+  "ered luin third age remnant": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Ered Luin (Blue Mountains), Third Age remnant",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Mountains"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_MOUNTAIN_RANGE"
+   ]
+  },
+  "eryn vorn": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Eryn Vorn [",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Forests"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "esgaroth": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "Hobbit x/xiv"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 752,
+     "y": 730
+    }
+   ],
+   "n": "Esgaroth (Lake-town)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: pile-town",
+    "also Lake-town",
+    "The town on stilts; Smaug fell blazing into the Long Lake, 2941."
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_TOWN",
+    "MAN_MADE_CITY"
+   ]
+  },
+  "estolad": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 17"
+   ],
+   "coords": [],
+   "n": "Estolad",
+   "name_conf": null,
+   "notes": [
+    "also the Encampment",
+    "First dwelling of Bëor's and Marach's folk east of Celon."
+   ],
+   "parents": [
+    "ladros"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PLAIN"
+   ]
+  },
+  "ettenmoors": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR I.12; App A"
+   ],
+   "coords": [],
+   "n": "Ettenmoors",
+   "name_conf": null,
+   "notes": [
+    "also the troll-fells",
+    "Troll-country north of Rivendell; Arador's death-ground."
+   ],
+   "parents": [
+    "rhudaur"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PEAK"
+   ]
+  },
+  "fangorn": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR III.4"
+   ],
+   "coords": [],
+   "n": "Fangorn",
+   "name_conf": null,
+   "notes": [
+    "also Entwood",
+    "Eldest forest-heart; Treebeard's wellinghall; 'the Ents are going to war'."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "fangorn forest": {
+   "ages": [],
+   "cites": [
+    "C III.3–4; RC[T]"
+   ],
+   "coords": [],
+   "n": "Fangorn Forest (Entwood)",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: Forests",
+    "Evidence Table G1"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "fen of serech": {
+   "ages": [],
+   "cites": [
+    "A ch18, ch19, ch20; HoME 3, 11"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 494,
+     "y": 728
+    }
+   ],
+   "n": "Fen of Serech",
+   "name_conf": "H",
+   "notes": [
+    "spec FA: fen",
+    "Evidence Table B13"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_MARSH"
+   ]
+  },
+  "field of celebrant": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App A II; UT",
+    "C App A (as corrected by D App C); D Cirion"
+   ],
+   "coords": [],
+   "n": "Field of Celebrant",
+   "name_conf": "H",
+   "notes": [
+    "also Parth Celebrant",
+    "Eorl's charge saved Gondor here, 2510; the Oath followed.",
+    "Evidence Table R16"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PLAIN"
+   ]
+  },
+  "firien wood": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Firien Wood [",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Forests"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "ford of bruinen": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR I.12"
+   ],
+   "coords": [],
+   "n": "Ford of Bruinen",
+   "name_conf": null,
+   "notes": [
+    "'By Elbereth and Lúthien the Fair, you shall have neither the Ring nor me!'"
+   ],
+   "parents": [
+    "rivendell"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PASS"
+   ]
+  },
+  "fords of isen": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "UT; App B"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 455,
+     "y": 363
+    }
+   ],
+   "n": "Fords of Isen",
+   "name_conf": null,
+   "notes": [
+    "spec TA: ford+eyot",
+    "Théodred fell here Feb 25; Grimbold's shield-wall Mar 2, 3019."
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CROSSING",
+    "NATURAL_PASS"
+   ]
+  },
+  "forlond": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 45,
+     "y": 672
+    }
+   ],
+   "n": "Forlond",
+   "name_conf": null,
+   "notes": [
+    "spec TA: haven"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "MAN_MADE_HAVEN"
+   ]
+  },
+  "fornost": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App A I(iii-iv)"
+   ],
+   "coords": [],
+   "n": "Fornost",
+   "name_conf": null,
+   "notes": [
+    "also Norbury; Deadmen's Dike",
+    "The North-kingdom's last capital; the great battle of 1975 broke Angmar west of it."
+   ],
+   "parents": [
+    "arthedain"
+   ],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_RUIN"
+   ]
+  },
+  "fornost erain": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 270,
+     "y": 752
+    }
+   ],
+   "n": "Fornost Erain",
+   "name_conf": null,
+   "notes": [
+    "spec TA: ruined city"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CITY"
+   ]
+  },
+  "forsaken inn": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 285,
+     "y": 684
+    }
+   ],
+   "n": "Forsaken Inn",
+   "name_conf": null,
+   "notes": [
+    "spec TA: inn"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "UNCLASSIFIED"
+   ]
+  },
+  "framsburg": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "RC (Baynes-map names) [I-M]; Fram and Scatha: App A II",
+    "D Cirion; C App A; RC[T]"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 540,
+     "y": 825
+    }
+   ],
+   "n": "Framsburg",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: ruined burg",
+    "A name Tolkien gave for the Baynes map, near Éothéod; the Companion guesses a stronghold named for Fram, who slew Scatha. No narrative text places it.",
+    "Evidence Table R4"
+   ],
+   "parents": [
+    "eotheod"
+   ],
+   "place_conf": "M",
+   "types": [
+    "MAN_MADE_RUIN"
+   ]
+  },
+  "frogmorton": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 232,
+     "y": 664
+    }
+   ],
+   "n": "Frogmorton",
+   "name_conf": null,
+   "notes": [
+    "spec TA: village"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_VILLAGE"
+   ]
+  },
+  "gladden fields": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "UT; App B",
+    "D Gladden; C I.2; RC[T]"
+   ],
+   "coords": [],
+   "n": "Gladden Fields",
+   "name_conf": "H",
+   "notes": [
+    "also Loeg Ningloron",
+    "Isildur fell among the reeds, T.A. 2; Déagol's find, 2463.",
+    "Evidence Table R7"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PLAIN"
+   ]
+  },
+  "goblin gate": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 494,
+     "y": 669
+    }
+   ],
+   "n": "Goblin-gate (High Pass)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: hidden gate"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "MAN_MADE_GATE"
+   ]
+  },
+  "gondolin": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 15/23; FoG",
+    "A ch15, ch16, ch23; G"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 535,
+     "y": 630
+    }
+   ],
+   "n": "Gondolin",
+   "name_conf": "H",
+   "notes": [
+    "spec FA: hidden city",
+    "also Ondolindë; the Hidden City",
+    "Turgon's white city on Amon Gwareth amid the Echoriath; 52 years in secret building.",
+    "Evidence Table B21"
+   ],
+   "parents": [
+    "gondolin"
+   ],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CITY"
+   ]
+  },
+  "gondor late third age effective realm": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Gondor (late Third Age effective realm",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Political / Regional Polygons"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "POLITY_REALM"
+   ]
+  },
+  "greenfields": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "Hobbit i; Prologue"
+   ],
+   "coords": [],
+   "n": "Greenfields",
+   "name_conf": null,
+   "notes": [
+    "Bandobras Took struck off Golfimbul's head here, 2747."
+   ],
+   "parents": [
+    "shire"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PLAIN"
+   ]
+  },
+  "grey havens": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "Silm; LotR VI.9"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 53,
+     "y": 660
+    }
+   ],
+   "n": "Grey Havens (Mithlond)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: haven-city",
+    "also Mithlond",
+    "Círdan's harbours on the Gulf of Lune; the Ring-bearers sailed hence."
+   ],
+   "parents": [
+    "lindon"
+   ],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_HAVEN"
+   ]
+  },
+  "grey mountains": {
+   "ages": [],
+   "cites": [
+    "B ch1, 18; C App A; D"
+   ],
+   "coords": [],
+   "n": "Grey Mountains (Ered Mithrin)",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: Mountains",
+    "Evidence Table R3"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_MOUNTAIN_RANGE"
+   ]
+  },
+  "gwathlo system": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Gwathlo (Greyflood) system",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Water"
+   ],
+   "parents": [],
+   "place_conf": "L",
+   "types": [
+    "NATURAL_MARSH"
+   ]
+  },
+  "halifirien hallow": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 605,
+     "y": 325
+    }
+   ],
+   "n": "Halifirien hallow",
+   "name_conf": null,
+   "notes": [
+    "spec TA: hallow/beacon"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "UNCLASSIFIED"
+   ]
+  },
+  "harlond": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 45,
+     "y": 648
+    },
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 746,
+     "y": 262
+    }
+   ],
+   "n": "Harlond (Lindon)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: haven",
+    "spec TA: haven"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "MAN_MADE_HAVEN"
+   ]
+  },
+  "haudh en ndengin": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 20; CoH"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 554,
+     "y": 786
+    }
+   ],
+   "n": "Haudh-en-Ndengin",
+   "name_conf": null,
+   "notes": [
+    "spec FA: mound",
+    "also the Hill of Slain",
+    "The mound of the Nirnaeth dead, alone green in Anfauglith; Rían died upon it."
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "UNCLASSIFIED",
+    "NATURAL_PEAK"
+   ]
+  },
+  "havens of sirion": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 23-24"
+   ],
+   "coords": [],
+   "n": "Havens of Sirion",
+   "name_conf": null,
+   "notes": [
+    "also Lisgardh, the land of reeds",
+    "Refuge of the survivors of Gondolin and Doriath; the Third Kinslaying fell here."
+   ],
+   "parents": [
+    "balar"
+   ],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_HAVEN"
+   ]
+  },
+  "helm s deep": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App A II; LotR III.7"
+   ],
+   "coords": [],
+   "n": "Helm's Deep",
+   "name_conf": null,
+   "notes": [
+    "also the Hornburg; Aglarond",
+    "Helm's winter-siege 2758-9; the great battle Mar 3-4, 3019; Gimli's Glittering Caves."
+   ],
+   "parents": [
+    "rohan"
+   ],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ]
+  },
+  "henneth ann n": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR IV.5"
+   ],
+   "coords": [],
+   "n": "Henneth Annûn",
+   "name_conf": null,
+   "notes": [
+    "also the Window on the West",
+    "Faramir's hidden refuge behind the falls of Ithilien."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_HALL"
+   ]
+  },
+  "henneth annun": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 762,
+     "y": 300
+    }
+   ],
+   "n": "Henneth Annun",
+   "name_conf": null,
+   "notes": [
+    "spec TA: hidden refuge"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_REFUGE"
+   ]
+  },
+  "himring": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 14/18"
+   ],
+   "coords": [],
+   "n": "Himring",
+   "name_conf": null,
+   "notes": [
+    "also the Ever-cold",
+    "Maedhros' hill-fortress that held the Leaguer's east — and held after the Bragollach."
+   ],
+   "parents": [
+    "himring"
+   ],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ]
+  },
+  "himring citadel": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 772,
+     "y": 691
+    }
+   ],
+   "n": "Himring citadel",
+   "name_conf": null,
+   "notes": [
+    "spec FA: fortress"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ]
+  },
+  "hobbiton bag end": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "Hobbit i; LotR I.1"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 218,
+     "y": 668
+    }
+   ],
+   "n": "Hobbiton + Bag End",
+   "name_conf": null,
+   "notes": [
+    "spec TA: town",
+    "Under the Hill: Bilbo's and Frodo's door, where two Quests began."
+   ],
+   "parents": [
+    "shire"
+   ],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_TOWN",
+    "MAN_MADE_CITY"
+   ]
+  },
+  "hornburg helm s deep": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 487,
+     "y": 330
+    }
+   ],
+   "n": "Hornburg/Helm's Deep",
+   "name_conf": null,
+   "notes": [
+    "spec TA: fortress+caves"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ]
+  },
+  "iant iaur": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 601,
+     "y": 620
+    }
+   ],
+   "n": "Iant Iaur",
+   "name_conf": null,
+   "notes": [
+    "spec FA: stone bridge"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_BRIDGE"
+   ]
+  },
+  "ice bay of forochel": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App A I(iii)"
+   ],
+   "coords": [],
+   "n": "Ice-bay of Forochel",
+   "name_conf": null,
+   "notes": [
+    "Arvedui Last-king drowned here with the palantíri of the North, 1975."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PLAIN"
+   ]
+  },
+  "icebay of forochel": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Icebay of Forochel",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Water"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_SEA"
+   ]
+  },
+  "iron hills": {
+   "ages": [],
+   "cites": [
+    "B ch15–17; C App A; Atlas"
+   ],
+   "coords": [],
+   "n": "Iron Hills",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: Mountains",
+    "Evidence Table R11"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_MOUNTAIN_RANGE"
+   ]
+  },
+  "isen adorn": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Isen + Adorn",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Water"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_SEA"
+   ]
+  },
+  "isengard": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR III.8-10",
+    "C III.8–10; D Cirion, Fords"
+   ],
+   "coords": [],
+   "n": "Isengard",
+   "name_conf": "H",
+   "notes": [
+    "also Orthanc; Nan Curunír",
+    "The unbreakable tower in Saruman's ring — drowned by Ents, Mar 3-5, 3019.",
+    "Evidence Table G3"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_TOWER"
+   ]
+  },
+  "isengard orthanc": {
+   "ages": [],
+   "cites": [
+    "C III.8–10; D Cirion, Fords"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 460,
+     "y": 385
+    }
+   ],
+   "n": "Isengard/Orthanc",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: ring-fortress",
+    "Evidence Table G3"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ]
+  },
+  "isenmouthe": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 783,
+     "y": 337
+    }
+   ],
+   "n": "Isenmouthe",
+   "name_conf": null,
+   "notes": [
+    "spec TA: rampart-gate"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_GATE"
+   ]
+  },
+  "isle of balar": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 20/24"
+   ],
+   "coords": [],
+   "n": "Isle of Balar",
+   "name_conf": null,
+   "notes": [
+    "Círdan's and Gil-galad's last refuge; Balar's pearls in Menegroth of old."
+   ],
+   "parents": [
+    "balar"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_ISLAND"
+   ]
+  },
+  "ithilien woods": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Ithilien woods (open woodland strip)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Forests"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "ivrin": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "CoH IX; Silm 21"
+   ],
+   "coords": [],
+   "n": "Ivrin",
+   "name_conf": null,
+   "notes": [
+    "also Eithel Ivrin",
+    "The laughing pools under Ered Wethrin, defiled by Glaurung."
+   ],
+   "parents": [
+    "hithlum"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PLAIN"
+   ]
+  },
+  "lake helevorn": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 14"
+   ],
+   "coords": [],
+   "n": "Lake Helevorn",
+   "name_conf": null,
+   "notes": [
+    "Caranthir's seat under Mount Rerir; Thargelion about it."
+   ],
+   "parents": [
+    "thargelion"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PLAIN"
+   ]
+  },
+  "last bridge": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 395,
+     "y": 673
+    }
+   ],
+   "n": "Last Bridge",
+   "name_conf": null,
+   "notes": [
+    "spec TA: bridge"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_BRIDGE"
+   ]
+  },
+  "lhun": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Lhun (Lune)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Water"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_SEA"
+   ]
+  },
+  "lindon": {
+   "ages": [],
+   "cites": [
+    "A RoP; C App A/B, VI.9; RC[T]"
+   ],
+   "coords": [],
+   "n": "Lindon",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: Political / Regional Polygons",
+    "Evidence Table E2"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "POLITY_REALM"
+   ]
+  },
+  "linhir": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 652,
+     "y": 208
+    }
+   ],
+   "n": "Linhir",
+   "name_conf": null,
+   "notes": [
+    "spec TA: town+fords"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_TOWN"
+   ]
+  },
+  "lond daer": {
+   "ages": [],
+   "cites": [
+    "D Aldarion, App D; RC[T]"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 210,
+     "y": 455
+    }
+   ],
+   "n": "Lond Daer",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: ruined haven °",
+    "Evidence Table E18"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_HAVEN"
+   ]
+  },
+  "losgar": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 9/13"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 106,
+     "y": 679
+    }
+   ],
+   "n": "Losgar",
+   "name_conf": null,
+   "notes": [
+    "spec FA: burning-site",
+    "also at the Firth of Drengist",
+    "Where Fëanor burned the white ships of the Teleri."
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "UNCLASSIFIED",
+    "MAN_MADE_HAVEN"
+   ]
+  },
+  "lothlorien": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Lothlorien",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Forests"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "menegroth": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 10",
+    "A ch10, ch14"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 590,
+     "y": 566
+    }
+   ],
+   "n": "Menegroth",
+   "name_conf": "H",
+   "notes": [
+    "spec FA: cave-city",
+    "also the Thousand Caves",
+    "Thingol and Melian's hall over Esgalduin, fairest king-house east of the Sea.",
+    "Evidence Table B25"
+   ],
+   "parents": [
+    "doriath"
+   ],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CITY",
+    "MAN_MADE_HALL"
+   ]
+  },
+  "michel delving": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "Prologue"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 183,
+     "y": 661
+    }
+   ],
+   "n": "Michel Delving",
+   "name_conf": null,
+   "notes": [
+    "spec TA: town (chief)",
+    "also on the White Downs",
+    "Chief town of the Shire; the Mathom-house."
+   ],
+   "parents": [
+    "shire"
+   ],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_TOWN",
+    "MAN_MADE_CITY"
+   ]
+  },
+  "minas morgul": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App A/B; LotR IV.8",
+    "C IV.6–8, V.4, VI.1; RC"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 779,
+     "y": 263
+    }
+   ],
+   "n": "Minas Morgul",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: dead city",
+    "also Minas Ithil",
+    "The Tower of the Moon taken by the Nazgûl, 2002; the dead city of the pass.",
+    "Evidence Table G20"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CITY",
+    "MAN_MADE_TOWER"
+   ]
+  },
+  "minas tirith": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR V.1",
+    "C V.1, V.4; RC"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 744,
+     "y": 268
+    }
+   ],
+   "n": "Minas Tirith",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: city (7 walls)",
+    "also Minas Anor; the White City",
+    "Seven walls under Mindolluin; the Pelennor before it; the White Tree in the Court.",
+    "Evidence Table G15"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CITY"
+   ]
+  },
+  "mirkwood": {
+   "ages": [],
+   "cites": [
+    "B ch7–9; C App B; D; RC[T]; HoME 12"
+   ],
+   "coords": [],
+   "n": "Mirkwood (Greenwood the Great / Eryn Lasgalen)",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: Forests",
+    "Evidence Table R8"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "mirrormere": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Mirrormere (Kheled-zaram)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Water"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_LAKE"
+   ]
+  },
+  "misty mountains": {
+   "ages": [],
+   "cites": [
+    "C Prologue/App; A ch3; B ch4–6; RC[T]"
+   ],
+   "coords": [],
+   "n": "Misty Mountains (Hithaeglir)",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: Mountains",
+    "Evidence Table R1"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_MOUNTAIN_RANGE"
+   ]
+  },
+  "mordor": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Mordor (realm = its mountain rectangle)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Political / Regional Polygons"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "POLITY_REALM"
+   ]
+  },
+  "morgai": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Morgai (inner ridge)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Mountains"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_MOUNTAIN_RANGE"
+   ]
+  },
+  "moria east gate dimrill": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 512,
+     "y": 572
+    }
+   ],
+   "n": "Moria East-gate/Dimrill",
+   "name_conf": null,
+   "notes": [
+    "spec TA: gate"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_GATE"
+   ]
+  },
+  "moria west door": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 490,
+     "y": 578
+    }
+   ],
+   "n": "Moria West-door",
+   "name_conf": null,
+   "notes": [
+    "spec TA: gate"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_GATE"
+   ]
+  },
+  "moria west gate": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR II.4-5"
+   ],
+   "coords": [],
+   "n": "Moria — West-gate",
+   "name_conf": null,
+   "notes": [
+    "also Khazad-dûm; the Doors of Durin",
+    "'Speak, friend, and enter'; the Watcher; the Bridge where Gandalf fell, Jan 15, 3019."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_HALL"
+   ]
+  },
+  "mount doom": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR VI.3; App B",
+    "C VI.3; RC"
+   ],
+   "coords": [],
+   "n": "Mount Doom (Orodruin)",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: Mountains",
+    "also Orodruin; Amon Amarth",
+    "The Ring was forged in its fire, and unmade there, March 25, 3019.",
+    "Evidence Table G23"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_MOUNTAIN_RANGE",
+    "NATURAL_PEAK"
+   ]
+  },
+  "mount gram": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "Hobbit i"
+   ],
+   "coords": [],
+   "n": "Mount Gram",
+   "name_conf": null,
+   "notes": [
+    "Whence Golfimbul's orcs marched to Greenfields."
+   ],
+   "parents": [
+    "angmar",
+    "mistyorcs"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PEAK"
+   ]
+  },
+  "mount gundabad": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "HoME XII; App A III",
+    "HoME 12; B ch17; C App A"
+   ],
+   "coords": [],
+   "n": "Mount Gundabad",
+   "name_conf": "H",
+   "notes": [
+    "Durin's awakening-place, revered and defiled; the orc-capital of the North.",
+    "Evidence Table R2"
+   ],
+   "parents": [
+    "mistyorcs"
+   ],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ]
+  },
+  "mountains of shadow": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Mountains of Shadow (Ephel Duath)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Mountains"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_MOUNTAIN_RANGE"
+   ]
+  },
+  "n rn sea of n rnen": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR VI.3/5"
+   ],
+   "coords": [],
+   "n": "Núrn & Sea of Núrnen",
+   "name_conf": null,
+   "notes": [
+    "Mordor's slave-fields that fed the armies; given freed to the slaves by Elessar."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PLAIN"
+   ]
+  },
+  "nan elmoth": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 4/16"
+   ],
+   "coords": [],
+   "n": "Nan Elmoth",
+   "name_conf": null,
+   "notes": [
+    "Where Melian enchanted Thingol; Eöl's dark wood; Maeglin's birthplace."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "nargothrond": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 13/21; CoH",
+    "A ch14, ch21; F ch X–XIV"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 403,
+     "y": 459
+    }
+   ],
+   "n": "Nargothrond",
+   "name_conf": "H",
+   "notes": [
+    "spec FA: cave-city",
+    "also Nulukkizdîn",
+    "Finrod's hidden halls above Narog; betrayed by its own bridge.",
+    "Evidence Table B33"
+   ],
+   "parents": [
+    "nargothrond"
+   ],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CITY",
+    "MAN_MADE_HALL"
+   ]
+  },
+  "nen hithoel": {
+   "ages": [],
+   "cites": [
+    "C II.9–III.1; RC[T]"
+   ],
+   "coords": [],
+   "n": "Nen Hithoel",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: Water",
+    "Evidence Table R19"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_LAKE"
+   ]
+  },
+  "nogrod": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 10/22; App A III"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 924,
+     "y": 395
+    }
+   ],
+   "n": "Nogrod",
+   "name_conf": null,
+   "notes": [
+    "spec FA: dwarf-city",
+    "also Tumunzahar, Hollowbold",
+    "Dwarf-mansion of the Firebeards; Telchar's forge-city; sacked Doriath and died at Sarn Athrad."
+   ],
+   "parents": [
+    "khazaddum",
+    "nogrod"
+   ],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CITY",
+    "MAN_MADE_HALL"
+   ]
+  },
+  "nw shore forest at sea of rhun": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "NW-shore forest at Sea of Rhun [",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Forests"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "old ford": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 528,
+     "y": 690
+    }
+   ],
+   "n": "Old Ford",
+   "name_conf": null,
+   "notes": [
+    "spec TA: ford"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CROSSING"
+   ]
+  },
+  "osgiliath": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App A; LotR II.2",
+    "A RoP; C App A, IV.3; RC[T]"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 752,
+     "y": 267
+    }
+   ],
+   "n": "Osgiliath",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: ruined city",
+    "also Citadel of the Stars",
+    "The old capital astride Anduin; its Dome held the master-stone; the war began here.",
+    "Evidence Table G17"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CITY",
+    "MAN_MADE_RUIN"
+   ]
+  },
+  "ost in edhil": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "UT; LotR II.3"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 476,
+     "y": 585
+    }
+   ],
+   "n": "Ost-in-Edhil",
+   "name_conf": null,
+   "notes": [
+    "spec TA: ruin",
+    "also Eregion; Hollin",
+    "Celebrimbor's city of the Ring-smiths, destroyed 1697; holly still marks it."
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_RUIN"
+   ]
+  },
+  "parth galen amon hen": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR II.10"
+   ],
+   "coords": [],
+   "n": "Parth Galen — Amon Hen",
+   "name_conf": null,
+   "notes": [
+    "The Breaking of the Fellowship; Boromir's last fight, Feb 26, 3019."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PLAIN"
+   ]
+  },
+  "pelargir": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App A/B; LotR V.9",
+    "A Akallabêth; C App B, V.2, V.9"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 723,
+     "y": 200
+    }
+   ],
+   "n": "Pelargir",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: haven-city",
+    "Great haven of the Faithful (S.A. 2350); Aragorn took the fleet here, Mar 13, 3019.",
+    "Evidence Table G27"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_HAVEN"
+   ]
+  },
+  "region labels": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Region labels (letter-spaced caps, no borders)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Political / Regional Polygons"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "POLITY_REALM"
+   ]
+  },
+  "rhosgobel": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR II.2; UT Istari"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 572,
+     "y": 700
+    }
+   ],
+   "n": "Rhosgobel",
+   "name_conf": null,
+   "notes": [
+    "spec TA: house",
+    "Radagast the Brown's dwelling at Mirkwood's edge."
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "MAN_MADE_DWELLING",
+    "MAN_MADE_HALL"
+   ]
+  },
+  "rivendell": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App B; LotR II.1-2",
+    "C II.1; D G&C; RC[T]"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 482,
+     "y": 674
+    }
+   ],
+   "n": "Rivendell (Imladris)",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: hidden refuge",
+    "also Imladris",
+    "Elrond's Last Homely House, founded S.A. 1697; Vilya kept it; the Council met here.",
+    "Evidence Table E13"
+   ],
+   "parents": [
+    "rivendell"
+   ],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_REFUGE",
+    "MAN_MADE_HALL"
+   ]
+  },
+  "rivers of the north east": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Rivers of the North-east",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Water"
+   ],
+   "parents": [],
+   "place_conf": "L",
+   "types": [
+    "NATURAL_SEA"
+   ]
+  },
+  "rohan": {
+   "ages": [],
+   "cites": [
+    "D Cirion; C App A, III.2; HoME 12"
+   ],
+   "coords": [],
+   "n": "Rohan (grant bounds of 2510, dotted line)",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: Political / Regional Polygons",
+    "Evidence Table G10"
+   ],
+   "parents": [],
+   "place_conf": "L",
+   "types": [
+    "POLITY_REALM"
+   ]
+  },
+  "sammath naur": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 815,
+     "y": 301
+    }
+   ],
+   "n": "Sammath Naur",
+   "name_conf": null,
+   "notes": [
+    "spec TA: door (E face)"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "UNCLASSIFIED"
+   ]
+  },
+  "sarn athrad": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 22"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 818,
+     "y": 435
+    }
+   ],
+   "n": "Sarn Athrad",
+   "name_conf": null,
+   "notes": [
+    "spec FA: ford",
+    "also the Stony Ford",
+    "The Ascar-crossing where Beren and the Green-elves ambushed the treasure-laden host of Nogrod."
+   ],
+   "parents": [
+    "ossiriand",
+    "nogrod"
+   ],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CROSSING",
+    "NATURAL_PASS"
+   ]
+  },
+  "sarn ford": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 235,
+     "y": 612
+    }
+   ],
+   "n": "Sarn Ford",
+   "name_conf": null,
+   "notes": [
+    "spec TA: ford"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CROSSING"
+   ]
+  },
+  "sea of nurnen": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Sea of Nurnen",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Water"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_SEA"
+   ]
+  },
+  "sea of rh n": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App A/B",
+    "C App A; I; HoME 11, 12"
+   ],
+   "coords": [],
+   "n": "Sea of Rhûn",
+   "name_conf": "H",
+   "notes": [
+    "The eastern sea of the Wainrider wars; Dorwinion northwest of it.",
+    "Evidence Table R13"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PLAIN"
+   ]
+  },
+  "sea of rhun": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Sea of Rhun",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Water"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "NATURAL_SEA"
+   ]
+  },
+  "stock": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 243,
+     "y": 655
+    }
+   ],
+   "n": "Stock",
+   "name_conf": null,
+   "notes": [
+    "spec TA: village"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_VILLAGE"
+   ]
+  },
+  "stone of erech": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 530,
+     "y": 315
+    }
+   ],
+   "n": "Stone of Erech",
+   "name_conf": null,
+   "notes": [
+    "spec TA: landmark-stone"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_MONUMENT"
+   ]
+  },
+  "taur im duinath": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 14"
+   ],
+   "coords": [],
+   "n": "Taur-im-Duinath",
+   "name_conf": null,
+   "notes": [
+    "The trackless wild south of Andram, between the two rivers."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "tharbad": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "UT; LotR II.3",
+    "D App D; RC; C II.3 (Boromir's crossing)"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 300,
+     "y": 513
+    }
+   ],
+   "n": "Tharbad",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: ruined town/ford",
+    "The ruined river-town at the great crossing of the Gwathló.",
+    "Evidence Table E17"
+   ],
+   "parents": [
+    "cardolan",
+    "dunland"
+   ],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_CROSSING",
+    "MAN_MADE_RUIN"
+   ]
+  },
+  "the argonath": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR II.9; HoME XII"
+   ],
+   "coords": [],
+   "n": "The Argonath",
+   "name_conf": null,
+   "notes": [
+    "also the Pillars of the Kings",
+    "Rómendacil's giants of stone fencing the north-way of Gondor."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PEAK"
+   ]
+  },
+  "the carrock": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "Hobbit vi-vii",
+    "B ch7; C II.1"
+   ],
+   "coords": [],
+   "n": "The Carrock",
+   "name_conf": "H",
+   "notes": [
+    "also & Beorn's house",
+    "The Eagles' ford-rock; the skin-changer's oak-hall east of it.",
+    "Evidence Table R6"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PLAIN"
+   ]
+  },
+  "the crossroads": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 765,
+     "y": 268
+    }
+   ],
+   "n": "The Crossroads",
+   "name_conf": null,
+   "notes": [
+    "spec TA: landmark"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ]
+  },
+  "the dead marshes": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR IV.2"
+   ],
+   "coords": [],
+   "n": "The Dead Marshes",
+   "name_conf": null,
+   "notes": [
+    "The mere of Dagorlad's dead faces; Gollum led them through, Mar 1-2, 3019."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PLAIN"
+   ]
+  },
+  "the elvenking s halls": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "Hobbit ix"
+   ],
+   "coords": [],
+   "n": "The Elvenking's Halls",
+   "name_conf": null,
+   "notes": [
+    "also Thranduil's caverns",
+    "Gates of stone over the Forest River; barrels rode hence to Esgaroth."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_HALL"
+   ]
+  },
+  "the high pass": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "Hobbit iv-v; App B"
+   ],
+   "coords": [],
+   "n": "The High Pass",
+   "name_conf": null,
+   "notes": [
+    "also Cirith Forn; Goblin-town beneath",
+    "Thorin's company taken here; Bilbo found the Ring in the dark below, 2941."
+   ],
+   "parents": [
+    "beornings"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PASS"
+   ]
+  },
+  "the iron hills": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App A III; Hobbit"
+   ],
+   "coords": [],
+   "n": "The Iron Hills",
+   "name_conf": null,
+   "notes": [
+    "Grór's iron-delvings; Dáin's 500 came mailed to the Mountain."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_HALL"
+   ]
+  },
+  "the morannon": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR IV.3; V.10"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 772,
+     "y": 352
+    }
+   ],
+   "n": "The Morannon (Black Gate)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: gate+2 towers",
+    "also the Black Gate",
+    "Mordor's iron door between the Towers of the Teeth; the last battle, Mar 25, 3019."
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_GATE",
+    "MAN_MADE_FORTRESS"
+   ]
+  },
+  "the old forest": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR I.6-7"
+   ],
+   "coords": [],
+   "n": "The Old Forest",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Forests",
+    "also & the Withywindle",
+    "Old Man Willow's valley; the house of Tom Bombadil eastward."
+   ],
+   "parents": [
+    "bombadil"
+   ],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "the shire": {
+   "ages": [],
+   "cites": [
+    "C Prologue, App B; HoME 12; RC"
+   ],
+   "coords": [],
+   "n": "The Shire",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: Political / Regional Polygons",
+    "Evidence Table E5"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "POLITY_REALM"
+   ]
+  },
+  "the stone of erech": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR V.2"
+   ],
+   "coords": [],
+   "n": "The Stone of Erech",
+   "name_conf": null,
+   "notes": [
+    "Isildur's black globe where the Oathbreakers gathered to the heir at midnight."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PEAK"
+   ]
+  },
+  "the undeeps": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "UT Cirion; App A"
+   ],
+   "coords": [],
+   "n": "The Undeeps",
+   "name_conf": null,
+   "notes": [
+    "The Anduin's great loops where Eorl crossed riding south."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PLAIN"
+   ]
+  },
+  "three farthing stone": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 226,
+     "y": 665
+    }
+   ],
+   "n": "Three-Farthing Stone",
+   "name_conf": null,
+   "notes": [
+    "spec TA: landmark"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ]
+  },
+  "tol galen": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 20/22"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 845,
+     "y": 214
+    }
+   ],
+   "n": "Tol Galen",
+   "name_conf": null,
+   "notes": [
+    "spec FA: isle-dwelling",
+    "also the Green Isle",
+    "Beren and Lúthien's last dwelling, in Ossiriand among the Seven Rivers."
+   ],
+   "parents": [
+    "ossiriand"
+   ],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_ISLAND"
+   ]
+  },
+  "tol sirion": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 18-19",
+    "A ch14, ch18; E"
+   ],
+   "coords": [],
+   "n": "Tol Sirion",
+   "name_conf": "H",
+   "notes": [
+    "also Minas Tirith of Orodreth; Tol-in-Gaurhoth",
+    "The isle-tower of the pass; Sauron's werewolf-keep; Finrod died in its pits.",
+    "Evidence Table B14"
+   ],
+   "parents": [
+    "angband"
+   ],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_TOWER"
+   ]
+  },
+  "tol sirion fort": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 494,
+     "y": 691
+    }
+   ],
+   "n": "Tol Sirion fort",
+   "name_conf": null,
+   "notes": [
+    "spec FA: isle-tower"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_TOWER"
+   ]
+  },
+  "tom bombadil s house": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 263,
+     "y": 651
+    }
+   ],
+   "n": "Tom Bombadil's house",
+   "name_conf": null,
+   "notes": [
+    "spec TA: house"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_DWELLING"
+   ]
+  },
+  "tower hills": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App A/B; Prologue",
+    "C Prologue, App A; A RoP; D; RC[T] (unpub. Index)"
+   ],
+   "coords": [],
+   "n": "Tower Hills",
+   "name_conf": "H",
+   "notes": [
+    "also Emyn Beraid; Elostirion",
+    "The palantír that looks only West; Elanor's Westmarch beneath.",
+    "Evidence Table E4"
+   ],
+   "parents": [
+    "arnor",
+    "arthedain"
+   ],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_TOWER"
+   ]
+  },
+  "tower of cirith ungol": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 783,
+     "y": 266
+    }
+   ],
+   "n": "Tower of Cirith Ungol",
+   "name_conf": null,
+   "notes": [
+    "spec TA: fortress"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ]
+  },
+  "trolls clearing": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 412,
+     "y": 672
+    }
+   ],
+   "n": "Trolls' clearing (Hobbit)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: landmark"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ]
+  },
+  "trollshaws": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "Hobbit ii"
+   ],
+   "coords": [],
+   "n": "Trollshaws",
+   "name_conf": null,
+   "notes": [
+    "Bert, Tom and William stood here till dawn found them."
+   ],
+   "parents": [
+    "rhudaur"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "trollshaws woods hill field 2 1 with tree overlay conf h": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Trollshaws woods = hill-field 2.1 with tree overlay. Conf H",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Forests"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
+  "tuckborough great smials": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 222,
+     "y": 655
+    }
+   ],
+   "n": "Tuckborough/Great Smials",
+   "name_conf": null,
+   "notes": [
+    "spec TA: town"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_TOWN"
+   ]
+  },
+  "turin s stone": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 491,
+     "y": 491
+    }
+   ],
+   "n": "Turin's Stone",
+   "name_conf": null,
+   "notes": [
+    "spec FA: memorial (Cabed)"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "UNCLASSIFIED"
+   ]
+  },
+  "umbar": {
+   "ages": [],
+   "cites": [
+    "C App A; A Akallabêth (Ar-Pharazôn's landing)"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 765,
+     "y": 30
+    }
+   ],
+   "n": "Umbar",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: corsair haven",
+    "Evidence Table G30"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "MAN_MADE_HAVEN"
+   ]
+  },
+  "undertowers": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 150,
+     "y": 664
+    }
+   ],
+   "n": "Undertowers",
+   "name_conf": null,
+   "notes": [
+    "spec TA: smial-town"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_TOWN"
+   ]
+  },
+  "vinyamar": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "Silm 15; UT (Tuor)",
+    "A ch14; G LV"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 121,
+     "y": 481
+    }
+   ],
+   "n": "Vinyamar",
+   "name_conf": "H",
+   "notes": [
+    "spec FA: ruined halls",
+    "also under Mount Taras",
+    "Turgon's first hall by the sea, where Tuor found shield and sword left by command of Ulmo.",
+    "Evidence Table B11"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "MAN_MADE_RUIN",
+    "MAN_MADE_TOWER"
+   ]
+  },
+  "weathertop": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "App A; LotR I.11",
+    "C I.11, App A; RC"
+   ],
+   "coords": [],
+   "n": "Weathertop",
+   "name_conf": "H",
+   "notes": [
+    "also Amon Sûl",
+    "Watchtower of the North's great palantír; razed 1409; the Witch-king's knife, Oct 6, 3018.",
+    "Evidence Table E10"
+   ],
+   "parents": [
+    "arnor",
+    "arthedain"
+   ],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PEAK"
+   ]
+  },
+  "white mountains": {
+   "ages": [],
+   "cites": [
+    "C III–V; I"
+   ],
+   "coords": [],
+   "n": "White Mountains (Ered Nimrais)",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: Mountains",
+    "Evidence Table G12"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "NATURAL_MOUNTAIN_RANGE"
+   ]
+  },
+  "withered heath": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "Hobbit i; App A III"
+   ],
+   "coords": [],
+   "n": "Withered Heath",
+   "name_conf": null,
+   "notes": [
+    "also in Ered Mithrin",
+    "Whence the dragons bred; Dáin I died at his door of a cold-drake."
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PEAK"
+   ]
+  },
+  "woodhall woody end": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 237,
+     "y": 652
+    }
+   ],
+   "n": "Woodhall/Woody End",
+   "name_conf": null,
+   "notes": [
+    "spec TA: locality"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "types": [
+    "UNCLASSIFIED"
+   ]
+  },
+  "woods about amon hen parth galen small patch": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Woods about Amon Hen/Parth Galen (small patch",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Forests"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  }
+ }
+}
