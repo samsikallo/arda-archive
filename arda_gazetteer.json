@@ -344,9 +344,12 @@
    "name_conf": null,
    "notes": [
     "also Ard-galen (before 455)",
-    "The green plain burned to gasping dust in the Bragollach; the Haudh-en-Ndengin rose here."
+    "The green plain burned to gasping dust in the Bragollach; the Haudh-en-Ndengin rose here.",
+    "within the Dominion of Angband (after 455) boundary as the living map draws it, F.A. 455–583 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "angband"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -367,9 +370,7 @@
     "also Thangorodrim",
     "Morgoth's hells beneath the towers of slag; the Gate 150 leagues from Menegroth."
    ],
-   "parents": [
-    "angband"
-   ],
+   "parents": [],
    "place_conf": "H",
    "timeline": [
     {
@@ -517,9 +518,11 @@
    "name_conf": null,
    "notes": [
     "spec TA: ruined city",
-    "Elendil's first capital on Lake Evendim; restored by Elessar."
+    "Elendil's first capital on Lake Evendim; restored by Elessar.",
+    "within the Arthedain boundary as the living map draws it, T.A. 861–1974 [I-M]"
    ],
    "parents": [
+    "arthedain",
     "arnor",
     "reunited"
    ],
@@ -834,9 +837,12 @@
    "name_conf": null,
    "notes": [
     "also the Dark Tower",
-    "Sauron's fortress, founded c. S.A. 1000, rebuilt 2951; its fall shook the world."
+    "Sauron's fortress, founded c. S.A. 1000, rebuilt 2951; its fall shook the world.",
+    "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "mordor"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -955,7 +961,8 @@
    "name_conf": null,
    "notes": [
     "also Tyrn Gorthad",
-    "Wights out of Angmar walk the old Edain graves; the swords of Westernesse came hence."
+    "Wights out of Angmar walk the old Edain graves; the swords of Westernesse came hence.",
+    "within the Cardolan boundary as the living map draws it, T.A. 861–1636 [I-M]"
    ],
    "parents": [
     "cardolan",
@@ -989,9 +996,7 @@
     "also Gabilgathol, Mickleburg",
     "Dwarf-mansion of the Broadbeams; Azaghâl's masked warriors withstood Glaurung."
    ],
-   "parents": [
-    "belegost"
-   ],
+   "parents": [],
    "place_conf": "H",
    "timeline": [
     {
@@ -1160,9 +1165,7 @@
     "spec TA: town",
     "At the meeting of the Roads: the Prancing Pony, and a man called Strider."
    ],
-   "parents": [
-    "bree"
-   ],
+   "parents": [],
    "place_conf": "H",
    "timeline": [
     {
@@ -1229,9 +1232,7 @@
     "also Forest of the Haladin",
     "The Haladin's wood between Teiglin and Sirion; Túrin's last stand-ground."
    ],
-   "parents": [
-    "brethil"
-   ],
+   "parents": [],
    "place_conf": "H",
    "timeline": [
     {
@@ -1342,7 +1343,8 @@
    "name_conf": null,
    "notes": [
     "spec FA: walled haven",
-    "Northern haven of the Falas, Círdan's walled city; fell F.A. 473."
+    "Northern haven of the Falas, Círdan's walled city; fell F.A. 473.",
+    "within the The Falas (Círdan) boundary as the living map draws it, Y.T.–F.A. 473 [I-M]"
    ],
    "parents": [
     "falas"
@@ -1426,7 +1428,8 @@
    "n": "Buckland & Crickhollow",
    "name_conf": null,
    "notes": [
-    "Brandy Hall of the Brandybucks; the conspiracy unmasked itself here."
+    "Brandy Hall of the Brandybucks; the conspiracy unmasked itself here.",
+    "within the The Shire boundary as the living map draws it, T.A. 1601– [I-M]"
    ],
    "parents": [
     "shire"
@@ -1514,9 +1517,12 @@
    "name_conf": null,
    "notes": [
     "spec TA: isle-fort",
-    "The ship-shaped river-isle guarding Anórien; stormed Mar 10, 3019."
+    "The ship-shaped river-isle guarding Anórien; stormed Mar 10, 3019.",
+    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -1616,7 +1622,8 @@
    "name_conf": null,
    "notes": [
     "spec TA: ruined fortress",
-    "The Witch-king's mountain-hold of Angmar."
+    "The Witch-king's mountain-hold of Angmar.",
+    "within the Angmar (the Witch-king) boundary as the living map draws it, T.A. c.1300–1975 [I-M]"
    ],
    "parents": [
     "angmar"
@@ -1750,9 +1757,12 @@
    "n": "Cirith Ungol",
    "name_conf": null,
    "notes": [
-    "Shelob's stair and tunnel; the Tower where Sam bore the Ring and found Frodo."
+    "Shelob's stair and tunnel; the Tower where Sam bore the Ring and found Frodo.",
+    "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "mordor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -2034,10 +2044,12 @@
     "spec TA: dark fortress",
     "also the Hill of Sorcery",
     "The Necromancer's keep — Sauron veiled, 1050–2941; thrown down by Galadriel.",
-    "within the Mirkwood (Greenwood the Great / Eryn Lasgalen) boundary polygon [I-H]"
+    "within the Mirkwood (Greenwood the Great / Eryn Lasgalen) boundary polygon [I-H]",
+    "within the Dol Guldur (the Necromancer) boundary as the living map draws it, T.A. c.1050–3019 [I-M]"
    ],
    "parents": [
-    "greenwood"
+    "greenwood",
+    "dolguldur"
    ],
    "place_conf": "H",
    "timeline": [
@@ -2233,9 +2245,12 @@
    "notes": [
     "spec TA: refuge",
     "also & the Dark Door",
-    "The refuge of the firienfeld; the Muster of Rohan; the Paths of the Dead open here."
+    "The refuge of the firienfeld; the Muster of Rohan; the Paths of the Dead open here.",
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "rohan"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -2466,9 +2481,12 @@
    "name_conf": null,
    "notes": [
     "also & Meduseld",
-    "Brego's golden hall under the White Mountains; Théoden's seat."
+    "Brego's golden hall under the White Mountains; Théoden's seat.",
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "rohan"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -2532,7 +2550,8 @@
    "name_conf": null,
    "notes": [
     "spec FA: walled haven",
-    "Southern haven of the Falas; fell with Brithombar."
+    "Southern haven of the Falas; fell with Brithombar.",
+    "within the The Falas (Círdan) boundary as the living map draws it, Y.T.–F.A. 473 [I-M]"
    ],
    "parents": [
     "falas"
@@ -2594,9 +2613,11 @@
    "name_conf": null,
    "notes": [
     "also Barad Eithel",
-    "Fingolfin's great fortress at Sirion's well; Fingon's muster-ground of the Nirnaeth."
+    "Fingolfin's great fortress at Sirion's well; Fingon's muster-ground of the Nirnaeth.",
+    "within the Dominion of Angband (after 455) boundary as the living map draws it, F.A. 455–583 [I-M]"
    ],
    "parents": [
+    "angband",
     "hithlum"
    ],
    "place_conf": "H",
@@ -2785,9 +2806,12 @@
    "name_conf": null,
    "notes": [
     "also the Lonely Mountain",
-    "The Kingdom under the Mountain: Thrór's, Smaug's, Thorin's, Dáin's; besieged 3019."
+    "The Kingdom under the Mountain: Thrór's, Smaug's, Thorin's, Dáin's; besieged 3019.",
+    "within the Dale & Erebor boundary as the living map draws it, T.A. 1999–2770; 2941– [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "dale"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -2969,9 +2993,12 @@
    "notes": [
     "spec TA: pile-town",
     "also Lake-town",
-    "The town on stilts; Smaug fell blazing into the Long Lake, 2941."
+    "The town on stilts; Smaug fell blazing into the Long Lake, 2941.",
+    "within the Dale & Erebor boundary as the living map draws it, T.A. 1999–2770; 2941– [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "dale"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -3086,9 +3113,12 @@
    "name_conf": null,
    "notes": [
     "also Entwood",
-    "Eldest forest-heart; Treebeard's wellinghall; 'the Ents are going to war'."
+    "Eldest forest-heart; Treebeard's wellinghall; 'the Ents are going to war'.",
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "rohan"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -3177,9 +3207,12 @@
    "name_conf": null,
    "notes": [
     "also Parth Celebrant",
-    "Eorl's charge saved Gondor here, 2510; the Oath followed."
+    "Eorl's charge saved Gondor here, 2510; the Oath followed.",
+    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -3213,9 +3246,11 @@
    "n": "Ford of Bruinen",
    "name_conf": null,
    "notes": [
-    "'By Elbereth and Lúthien the Fair, you shall have neither the Ring nor me!'"
+    "'By Elbereth and Lúthien the Fair, you shall have neither the Ring nor me!'",
+    "within the Rhudaur boundary as the living map draws it, T.A. 861–c.1409 [I-M]"
    ],
    "parents": [
+    "rhudaur",
     "rivendell"
    ],
    "place_conf": "H",
@@ -3247,9 +3282,12 @@
     "spec TA: ford+eyot",
     "Théodred fell here Feb 25; Grimbold's shield-wall Mar 2, 3019.",
     "“Go not to the Fords of Isen, and do not tarry in the plain!” — The Lord of the Rings, line 23416",
-    "indexed by Christopher Tolkien as: (including references to the Fords)"
+    "indexed by Christopher Tolkien as: (including references to the Fords)",
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "rohan"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -3313,7 +3351,8 @@
    "name_conf": null,
    "notes": [
     "also Norbury; Deadmen's Dike",
-    "The North-kingdom's last capital; the great battle of 1975 broke Angmar west of it."
+    "The North-kingdom's last capital; the great battle of 1975 broke Angmar west of it.",
+    "within the Arthedain boundary as the living map draws it, T.A. 861–1974 [I-M]"
    ],
    "parents": [
     "arthedain"
@@ -3517,9 +3556,7 @@
     "also Ondolindë; the Hidden City",
     "Turgon's white city on Amon Gwareth amid the Echoriath; 52 years in secret building."
    ],
-   "parents": [
-    "gondolin"
-   ],
+   "parents": [],
    "place_conf": "H",
    "timeline": [
     {
@@ -3703,7 +3740,8 @@
    "n": "Greenfields",
    "name_conf": null,
    "notes": [
-    "Bandobras Took struck off Golfimbul's head here, 2747."
+    "Bandobras Took struck off Golfimbul's head here, 2747.",
+    "within the The Shire boundary as the living map draws it, T.A. 1601– [I-M]"
    ],
    "parents": [
     "shire"
@@ -3764,7 +3802,7 @@
     "Círdan's harbours on the Gulf of Lune; the Ring-bearers sailed hence."
    ],
    "parents": [
-    "ossiriand"
+    "lindon"
    ],
    "place_conf": "H",
    "timeline": [],
@@ -3935,9 +3973,12 @@
    "notes": [
     "spec FA: mound",
     "also the Hill of Slain",
-    "The mound of the Nirnaeth dead, alone green in Anfauglith; Rían died upon it."
+    "The mound of the Nirnaeth dead, alone green in Anfauglith; Rían died upon it.",
+    "within the Dominion of Angband boundary as the living map draws it, F.A. 1–583 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "angband"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -4008,7 +4049,8 @@
    "name_conf": null,
    "notes": [
     "also the Hornburg; Aglarond",
-    "Helm's winter-siege 2758-9; the great battle Mar 3-4, 3019; Gimli's Glittering Caves."
+    "Helm's winter-siege 2758-9; the great battle Mar 3-4, 3019; Gimli's Glittering Caves.",
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
    ],
    "parents": [
     "rohan"
@@ -4039,9 +4081,12 @@
    "notes": [
     "spec TA: hidden refuge",
     "also the Window on the West",
-    "Faramir's hidden refuge behind the falls of Ithilien."
+    "Faramir's hidden refuge behind the falls of Ithilien.",
+    "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "mordor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -4116,9 +4161,7 @@
     "also the Ever-cold",
     "Maedhros' hill-fortress that held the Leaguer's east — and held after the Bragollach."
    ],
-   "parents": [
-    "himring"
-   ],
+   "parents": [],
    "place_conf": "H",
    "timeline": [
     {
@@ -4295,9 +4338,12 @@
    "n": "Ice-bay of Forochel",
    "name_conf": null,
    "notes": [
-    "Arvedui Last-king drowned here with the palantíri of the North, 1975."
+    "Arvedui Last-king drowned here with the palantíri of the North, 1975.",
+    "within the Arthedain boundary as the living map draws it, T.A. 861–1974 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "arthedain"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -4436,9 +4482,12 @@
    "name_conf": null,
    "notes": [
     "also Orthanc; Nan Curunír",
-    "The unbreakable tower in Saruman's ring — drowned by Ents, Mar 3-5, 3019."
+    "The unbreakable tower in Saruman's ring — drowned by Ents, Mar 3-5, 3019.",
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "rohan"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -5056,9 +5105,12 @@
    "notes": [
     "spec FA: burning-site",
     "also at the Firth of Drengist",
-    "Where Fëanor burned the white ships of the Teleri."
+    "Where Fëanor burned the white ships of the Teleri.",
+    "within the Hithlum (Fingolfin & Fingon) boundary as the living map draws it, F.A. 1–473 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "hithlum"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -5192,7 +5244,8 @@
    "notes": [
     "spec FA: cave-city",
     "also the Thousand Caves",
-    "Thingol and Melian's hall over Esgalduin, fairest king-house east of the Sea."
+    "Thingol and Melian's hall over Esgalduin, fairest king-house east of the Sea.",
+    "within the Doriath (Thingol & Melian) boundary as the living map draws it, Y.T.–F.A. c.502 [I-M]"
    ],
    "parents": [
     "doriath"
@@ -5338,9 +5391,12 @@
    "notes": [
     "spec TA: dead city",
     "also Minas Ithil",
-    "The Tower of the Moon taken by the Nazgûl, 2002; the dead city of the pass."
+    "The Tower of the Moon taken by the Nazgûl, 2002; the dead city of the pass.",
+    "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "mordor"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -5390,9 +5446,12 @@
    "notes": [
     "spec TA: city (7 walls)",
     "also Minas Anor; the White City",
-    "Seven walls under Mindolluin; the Pelennor before it; the White Tree in the Court."
+    "Seven walls under Mindolluin; the Pelennor before it; the White Tree in the Court.",
+    "within the Gondor (late Third Age) boundary as the living map draws it, T.A. c.1900–3019 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -5624,9 +5683,12 @@
    "name_conf": null,
    "notes": [
     "also Khazad-dûm; the Doors of Durin",
-    "'Speak, friend, and enter'; the Watcher; the Bridge where Gandalf fell, Jan 15, 3019."
+    "'Speak, friend, and enter'; the Watcher; the Bridge where Gandalf fell, Jan 15, 3019.",
+    "within the Khazad-dûm (Durin's Folk) boundary as the living map draws it, Y.T.–T.A. 1980 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "khazaddum"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -5646,9 +5708,12 @@
    "notes": [
     "spec TA: Mountains",
     "also Orodruin; Amon Amarth",
-    "The Ring was forged in its fire, and unmade there, March 25, 3019."
+    "The Ring was forged in its fire, and unmade there, March 25, 3019.",
+    "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "mordor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -5667,7 +5732,8 @@
    "n": "Mount Gram",
    "name_conf": null,
    "notes": [
-    "Whence Golfimbul's orcs marched to Greenfields."
+    "Whence Golfimbul's orcs marched to Greenfields.",
+    "within the Angmar (the Witch-king) boundary as the living map draws it, T.A. c.1300–1975 [I-M]"
    ],
    "parents": [
     "angmar",
@@ -5690,9 +5756,11 @@
    "n": "Mount Gundabad",
    "name_conf": null,
    "notes": [
-    "Durin's awakening-place, revered and defiled; the orc-capital of the North."
+    "Durin's awakening-place, revered and defiled; the orc-capital of the North.",
+    "within the Angmar (the Witch-king) boundary as the living map draws it, T.A. c.1300–1975 [I-M]"
    ],
    "parents": [
+    "angmar",
     "mistyorcs"
    ],
    "place_conf": "H",
@@ -5778,9 +5846,7 @@
     "also Nulukkizdîn",
     "Finrod's hidden halls above Narog; betrayed by its own bridge."
    ],
-   "parents": [
-    "nargothrond"
-   ],
+   "parents": [],
    "place_conf": "H",
    "timeline": [
     {
@@ -5956,11 +6022,12 @@
    "notes": [
     "spec FA: dwarf-city",
     "also Tumunzahar, Hollowbold",
-    "Dwarf-mansion of the Firebeards; Telchar's forge-city; sacked Doriath and died at Sarn Athrad."
+    "Dwarf-mansion of the Firebeards; Telchar's forge-city; sacked Doriath and died at Sarn Athrad.",
+    "within the Ossiriand (the Green-elves) boundary as the living map draws it, Y.T.–F.A. 587 [I-M]"
    ],
    "parents": [
-    "khazaddum",
-    "nogrod"
+    "ossiriand",
+    "khazaddum"
    ],
    "place_conf": "H",
    "timeline": [
@@ -6057,9 +6124,12 @@
    "n": "Núrn & Sea of Núrnen",
    "name_conf": null,
    "notes": [
-    "Mordor's slave-fields that fed the armies; given freed to the slaves by Elessar."
+    "Mordor's slave-fields that fed the armies; given freed to the slaves by Elessar.",
+    "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "mordor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -6164,9 +6234,12 @@
    "notes": [
     "spec TA: ruined city",
     "also Citadel of the Stars",
-    "The old capital astride Anduin; its Dome held the master-stone; the war began here."
+    "The old capital astride Anduin; its Dome held the master-stone; the war began here.",
+    "within the Gondor (late Third Age) boundary as the living map draws it, T.A. c.1900–3019 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -6244,9 +6317,12 @@
    "n": "Parth Galen — Amon Hen",
    "name_conf": null,
    "notes": [
-    "The Breaking of the Fellowship; Boromir's last fight, Feb 26, 3019."
+    "The Breaking of the Fellowship; Boromir's last fight, Feb 26, 3019.",
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "rohan"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -6272,9 +6348,12 @@
    "name_conf": null,
    "notes": [
     "spec TA: haven-city",
-    "Great haven of the Faithful (S.A. 2350); Aragorn took the fleet here, Mar 13, 3019."
+    "Great haven of the Faithful (S.A. 2350); Aragorn took the fleet here, Mar 13, 3019.",
+    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -6426,9 +6505,7 @@
     "also Imladris",
     "Elrond's Last Homely House, founded S.A. 1697; Vilya kept it; the Council met here."
    ],
-   "parents": [
-    "rivendell"
-   ],
+   "parents": [],
    "place_conf": "H",
    "timeline": [
     {
@@ -6620,7 +6697,8 @@
    "notes": [
     "spec FA: ford",
     "also the Stony Ford",
-    "The Ascar-crossing where Beren and the Green-elves ambushed the treasure-laden host of Nogrod."
+    "The Ascar-crossing where Beren and the Green-elves ambushed the treasure-laden host of Nogrod.",
+    "within the Ossiriand (the Green-elves) boundary as the living map draws it, Y.T.–F.A. 587 [I-M]"
    ],
    "parents": [
     "ossiriand",
@@ -7088,9 +7166,12 @@
    "name_conf": null,
    "notes": [
     "also the Pillars of the Kings",
-    "Rómendacil's giants of stone fencing the north-way of Gondor."
+    "Rómendacil's giants of stone fencing the north-way of Gondor.",
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "rohan"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -7161,9 +7242,12 @@
    "n": "The Dead Marshes",
    "name_conf": null,
    "notes": [
-    "The mere of Dagorlad's dead faces; Gollum led them through, Mar 1-2, 3019."
+    "The mere of Dagorlad's dead faces; Gollum led them through, Mar 1-2, 3019.",
+    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -7182,9 +7266,12 @@
    "name_conf": null,
    "notes": [
     "also Thranduil's caverns",
-    "Gates of stone over the Forest River; barrels rode hence to Esgaroth."
+    "Gates of stone over the Forest River; barrels rode hence to Esgaroth.",
+    "within the The Woodland Realm (Thranduil) boundary as the living map draws it, T.A. c.1050– [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "greenwood"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -7241,9 +7328,12 @@
    "n": "The Iron Hills",
    "name_conf": null,
    "notes": [
-    "Grór's iron-delvings; Dáin's 500 came mailed to the Mountain."
+    "Grór's iron-delvings; Dáin's 500 came mailed to the Mountain.",
+    "within the The Iron Hills (Grór's folk) boundary as the living map draws it, T.A. 2590– [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "ironhills"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -7293,9 +7383,12 @@
    "notes": [
     "spec TA: gate+2 towers",
     "also the Black Gate",
-    "Mordor's iron door between the Towers of the Teeth; the last battle, Mar 25, 3019."
+    "Mordor's iron door between the Towers of the Teeth; the last battle, Mar 25, 3019.",
+    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -7317,9 +7410,11 @@
    "notes": [
     "spec TA: Forests",
     "also & the Withywindle",
-    "Old Man Willow's valley; the house of Tom Bombadil eastward."
+    "Old Man Willow's valley; the house of Tom Bombadil eastward.",
+    "within the The Shire boundary as the living map draws it, T.A. 1601– [I-M]"
    ],
    "parents": [
+    "shire",
     "bombadil"
    ],
    "place_conf": "H",
@@ -7406,9 +7501,12 @@
    "n": "The Stone of Erech",
    "name_conf": null,
    "notes": [
-    "Isildur's black globe where the Oathbreakers gathered to the heir at midnight."
+    "Isildur's black globe where the Oathbreakers gathered to the heir at midnight.",
+    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -7426,9 +7524,12 @@
    "n": "The Undeeps",
    "name_conf": null,
    "notes": [
-    "The Anduin's great loops where Eorl crossed riding south."
+    "The Anduin's great loops where Eorl crossed riding south.",
+    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -7633,7 +7734,8 @@
    "name_conf": null,
    "notes": [
     "also Minas Tirith of Orodreth; Tol-in-Gaurhoth",
-    "The isle-tower of the pass; Sauron's werewolf-keep; Finrod died in its pits."
+    "The isle-tower of the pass; Sauron's werewolf-keep; Finrod died in its pits.",
+    "within the Dominion of Angband (after 455) boundary as the living map draws it, F.A. 455–583 [I-M]"
    ],
    "parents": [
     "angband"
@@ -7711,9 +7813,11 @@
    "name_conf": null,
    "notes": [
     "also Emyn Beraid; Elostirion",
-    "The palantír that looks only West; Elanor's Westmarch beneath."
+    "The palantír that looks only West; Elanor's Westmarch beneath.",
+    "within the Lindon (Gil-galad) boundary as the living map draws it, S.A. 1–T.A. 3021 [I-M]"
    ],
    "parents": [
+    "lindon",
     "arnor",
     "arthedain"
    ],
@@ -7780,7 +7884,8 @@
    "n": "Trollshaws",
    "name_conf": null,
    "notes": [
-    "Bert, Tom and William stood here till dawn found them."
+    "Bert, Tom and William stood here till dawn found them.",
+    "within the Rhudaur boundary as the living map draws it, T.A. 861–c.1409 [I-M]"
    ],
    "parents": [
     "rhudaur"
@@ -8141,9 +8246,11 @@
    "name_conf": null,
    "notes": [
     "also Amon Sûl",
-    "Watchtower of the North's great palantír; razed 1409; the Witch-king's knife, Oct 6, 3018."
+    "Watchtower of the North's great palantír; razed 1409; the Witch-king's knife, Oct 6, 3018.",
+    "within the Rhudaur boundary as the living map draws it, T.A. 861–c.1409 [I-M]"
    ],
    "parents": [
+    "rhudaur",
     "arnor",
     "arthedain"
    ],
