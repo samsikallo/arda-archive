@@ -407,7 +407,7 @@
    "publishable": true,
    "withdrawn": null,
    "modified": null,
-   "sha1": "a302b2d18db4954d",
+   "sha1": "ab0aea6f9001c879",
    "size": [
     480,
     480
@@ -502,7 +502,7 @@
    "publishable": true,
    "withdrawn": null,
    "modified": null,
-   "sha1": "88c61d118fb5a2d7",
+   "sha1": "22433648d10d9b6e",
    "size": [
     480,
     480
@@ -694,6 +694,44 @@
    "modified": "background rectangle removed 2026-07-26 (fill #f0f0f0 over the whole canvas): every other device in the hall stands on the card's own ground, and this one alone sat in a grey box. The emblem itself is untouched. CC BY-SA 3.0 permits the change; the attribution above is unaltered.",
    "sha1": "2df1f88ab8937d2a",
    "size": null
+  },
+  {
+   "file": "heraldry/illustrated/silmarilsdev.png",
+   "exists": true,
+   "device": "silmarilsdev",
+   "label": "Emblem of the Silmarils",
+   "tier": 2,
+   "basis": "a freely-licensed recreation of a device Tolkien designed",
+   "source": "supplied to the workshop, 2026-07-26",
+   "licence": "unattributed; rights confirmed by the site's owner",
+   "author": "unattributed",
+   "publishable": true,
+   "withdrawn": null,
+   "modified": null,
+   "sha1": "ae96e4de59fa0a7f",
+   "size": [
+    480,
+    480
+   ]
+  },
+  {
+   "file": "heraldry/illustrated/elendilbadge.png",
+   "exists": true,
+   "device": "elendilbadge",
+   "label": "The badge of Elendil — L·ND·L",
+   "tier": 2,
+   "basis": "a freely-licensed recreation of a device Tolkien designed",
+   "source": "supplied to the workshop, 2026-07-26",
+   "licence": "unattributed; rights confirmed by the site's owner",
+   "author": "unattributed",
+   "publishable": true,
+   "withdrawn": null,
+   "modified": null,
+   "sha1": "c09eed6a740ed49a",
+   "size": [
+    480,
+    480
+   ]
   },
   {
    "file": "beor.png",
@@ -1087,7 +1125,7 @@
    "source": "map/gen_forge_layers.py",
    "licence": "the archive's own",
    "publishable": true,
-   "shown": true
+   "shown": false
   },
   {
    "file": null,
@@ -1472,7 +1510,7 @@
    "source": "map/gen_forge_layers.py",
    "licence": "the archive's own",
    "publishable": true,
-   "shown": true
+   "shown": false
   },
   {
    "file": null,
