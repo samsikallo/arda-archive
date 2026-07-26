@@ -190,7 +190,8 @@ ${D.pron.map(r=>`<tr><td class="lem">${r[0]}</td><td>${r[1]}</td><td class="cite
 p.innerHTML=h;}
 // ---- Texts tab
 {const p=panes.texts;
-p.innerHTML=`<h2>The Attested Texts, analyzed</h2><p class="cite">Every long text in the corpus with its own canonical translation — the foundation all grammar claims rest on.</p>`+
+p.innerHTML=`<h2>The Attested Texts, analyzed</h2><p class="cite">Every long text in the corpus with its own canonical translation — the foundation all grammar claims rest on.</p><!-- ===== declared silences, from map/gen_languages_notes.py ===== --><p class="cite" style="border-left:3px solid #d0a53c;padding-left:9px;margin-top:10px"><b>Three attested Quenya texts are missing from this table on purpose.</b> Vinyar Tengwar 43 (January 2002) prints J.R.R. Tolkien’s own Quenya translations of the Pater Noster (<i>Átaremma</i>), the Ave Maria (<i>Aia María</i>) and the Gloria Patri (<i>Alcar i Ataren</i>), with their manuscript variants — edited by Carl F. Hostetter with Patrick Wynne and Arden R. Smith, published by the Elvish Linguistic Fellowship with the permission of the Tolkien Estate. Two more, the Sub Tuum Praesidium and the Litany of Loreto, are in VT 44. The archive holds no. 43 and reads and cites from it; the texts remain the Estate’s and are <b>not reproduced here</b>. They are named so that this table is not mistaken for the whole of the attested Quenya — which it is not.</p><!-- ===== end declared silences ===== -->
+`+
 `<h3 style="font-variant:small-caps;color:#5a4626">The Phrasebook — every attested saying</h3>
 <div style="overflow-x:auto"><table><tr><th>say</th><th>tongue</th><th>meaning</th><th>source</th></tr>
 ${D.phrases.map(f=>`<tr><td class="lem" style="font-style:italic">${f[0]}</td><td>${f[1]}</td><td>${f[2]}</td><td class="cite">${f[3]}</td></tr>`).join("")}</table></div>`+
