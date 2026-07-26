@@ -121,7 +121,9 @@
    ]
   },
   "amon ereb fort": {
-   "ages": [],
+   "ages": [
+    "FA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -134,7 +136,8 @@
    "n": "Amon Ereb fort",
    "name_conf": null,
    "notes": [
-    "spec FA: watch"
+    "spec FA: watch",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
    ],
    "parents": [],
    "place_conf": "H",
@@ -314,7 +317,6 @@
   },
   "anfalas": {
    "ages": [
-    "SA",
     "TA"
    ],
    "cites": [],
@@ -330,7 +332,7 @@
    "name_conf": null,
    "notes": [
     "interior label of Gondor, per the vector spec",
-    "Ages taken from its realm gondor, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "gondor"
@@ -387,6 +389,20 @@
    "place_conf": "H",
    "timeline": [
     {
+     "cite": "Silm 13; Grey Annals",
+     "realm": null,
+     "status": "event",
+     "what": "Glaurung first issues from Angband — driven back by Fingon",
+     "when": "F.A. 260"
+    },
+    {
+     "cite": "Silm 18",
+     "realm": null,
+     "status": "destroyed",
+     "what": "Dagor Bragollach; Fingolfin falls before Angband",
+     "when": "F.A. 455"
+    },
+    {
      "cite": "Silm 18 [C]",
      "realm": "hithlum",
      "status": "destroyed",
@@ -406,6 +422,13 @@
      "status": "event",
      "what": "The War of Wrath: Thangorodrim broken, Morgoth thrust through the Door of Night",
      "when": "F.A. 583–587"
+    },
+    {
+     "cite": "Silm 13",
+     "realm": null,
+     "status": "event",
+     "what": "Dagor Aglareb; the Siege of Angband begins",
+     "when": "F.A. 60"
     },
     {
      "cite": "Silm 13, 18 [C]",
@@ -454,7 +477,9 @@
    ]
   },
   "angmar": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [
     "C App A; D (Index)"
    ],
@@ -495,6 +520,20 @@
      "status": "burned",
      "what": "The long Angmar war: Amon Sûl burned (1409); the Great Plague (1636); Fornost falls (1974); Arvedui drowns in Forochel (1975)",
      "when": "T.A. 1409–1974"
+    },
+    {
+     "cite": "App A/B",
+     "realm": null,
+     "status": "event",
+     "what": "Fall of Arthedain; Battle of Fornost; Angmar broken",
+     "when": "T.A. 1974–75"
+    },
+    {
+     "cite": "App A/B",
+     "realm": null,
+     "status": "event",
+     "what": "Angmar arises; the Witch-king in the North",
+     "when": "T.A. c.1300"
     },
     {
      "cite": "App A [C]",
@@ -559,7 +598,6 @@
   },
   "anorien": {
    "ages": [
-    "SA",
     "TA"
    ],
    "cites": [
@@ -577,7 +615,7 @@
    "name_conf": "H",
    "notes": [
     "interior label of Gondor, per the vector spec",
-    "Ages taken from its realm gondor, having none of its own [I-H]",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
     "Evidence Table G14"
    ],
    "parents": [
@@ -680,7 +718,10 @@
    ]
   },
   "arnor": {
-   "ages": [],
+   "ages": [
+    "SA",
+    "TA"
+   ],
    "cites": [
     "C App A; HoME 12; the hundred miles is RC editorial, not Tolkien"
    ],
@@ -699,6 +740,13 @@
      "realm": "arnor",
      "status": "founded",
      "what": "Elendil, cast up in the North, founds the realm; Annúminas its seat",
+     "when": "S.A. 3320"
+    },
+    {
+     "cite": "App B",
+     "realm": null,
+     "status": "founded",
+     "what": "Arnor and Gondor founded",
      "when": "S.A. 3320"
     },
     {
@@ -728,6 +776,13 @@
      "status": "event",
      "what": "At Eärendur's death the sons divide it: Arthedain, Cardolan, Rhudaur",
      "when": "T.A. 861"
+    },
+    {
+     "cite": "App A/B",
+     "realm": null,
+     "status": "event",
+     "what": "Arnor divided: Arthedain, Cardolan, Rhudaur",
+     "when": "T.A. 861"
     }
    ],
    "types": [
@@ -735,7 +790,9 @@
    ]
   },
   "arossiach": {
-   "ages": [],
+   "ages": [
+    "FA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -748,7 +805,8 @@
    "n": "Arossiach",
    "name_conf": null,
    "notes": [
-    "spec FA: fords"
+    "spec FA: fords",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
    ],
    "parents": [],
    "place_conf": "H",
@@ -830,7 +888,9 @@
    ]
   },
   "bar en danwedh": {
-   "ages": [],
+   "ages": [
+    "FA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -843,7 +903,8 @@
    "n": "Bar-en-Danwedh",
    "name_conf": null,
    "notes": [
-    "spec FA: cave-house"
+    "spec FA: cave-house",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
    ],
    "parents": [],
    "place_conf": "H",
@@ -862,6 +923,7 @@
   },
   "barad dur": {
    "ages": [
+    "SA",
     "TA"
    ],
    "cites": [
@@ -897,11 +959,32 @@
      "when": "S.A. c.1000"
     },
     {
+     "cite": "App B",
+     "realm": null,
+     "status": "event",
+     "what": "Sauron chooses Mordor; Barad-dûr begun",
+     "when": "S.A. c.1000"
+    },
+    {
+     "cite": "App B",
+     "realm": null,
+     "status": "built",
+     "what": "Sauron declares himself; Barad-dûr rebuilt",
+     "when": "T.A. 2951"
+    },
+    {
      "cite": "LotR VI.3–4 [C]",
      "realm": "mordor",
      "status": "destroyed",
      "what": "The Ring destroyed; Barad-dûr falls; the realm ends",
      "when": "T.A. 3019"
+    },
+    {
+     "cite": "LotR VI; App B",
+     "realm": null,
+     "status": "destroyed",
+     "what": "THE RING DESTROYED; fall of Barad-dûr",
+     "when": "T.A. 3019 Mar 25"
     }
    ],
    "types": [
@@ -909,7 +992,9 @@
    ]
   },
   "barad eithel": {
-   "ages": [],
+   "ages": [
+    "FA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -922,7 +1007,8 @@
    "n": "Barad Eithel",
    "name_conf": null,
    "notes": [
-    "spec FA: fortress"
+    "spec FA: fortress",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
    ],
    "parents": [],
    "place_conf": "H",
@@ -940,7 +1026,9 @@
    ]
   },
   "barad nimras": {
-   "ages": [],
+   "ages": [
+    "FA"
+   ],
    "cites": [
     "A ch14, ch20"
    ],
@@ -956,6 +1044,7 @@
    "name_conf": "H",
    "notes": [
     "spec FA: watch-tower",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
     "Evidence Table B34"
    ],
    "parents": [],
@@ -1084,7 +1173,6 @@
   },
   "belfalas": {
    "ages": [
-    "SA",
     "TA"
    ],
    "cites": [],
@@ -1100,7 +1188,7 @@
    "name_conf": null,
    "notes": [
     "interior label of Gondor, per the vector spec",
-    "Ages taken from its realm gondor, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "gondor"
@@ -1112,7 +1200,9 @@
    ]
   },
   "beorn s house": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -1125,7 +1215,8 @@
    "n": "Beorn's house",
    "name_conf": null,
    "notes": [
-    "spec TA: house"
+    "spec TA: house",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1135,7 +1226,9 @@
    ]
   },
   "blue mtn dwarf halls": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -1148,7 +1241,8 @@
    "n": "Blue Mtn dwarf-halls",
    "name_conf": null,
    "notes": [
-    "spec TA: mansion"
+    "spec TA: mansion",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1175,7 +1269,7 @@
    "notes": [
     "spec TA: bridge",
     "within the The Shire boundary polygon [I-H]",
-    "Ages taken from its realm shire, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "shire"
@@ -1341,7 +1435,9 @@
    ]
   },
   "brithiach": {
-   "ages": [],
+   "ages": [
+    "FA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -1354,7 +1450,8 @@
    "n": "Brithiach",
    "name_conf": null,
    "notes": [
-    "spec FA: ford"
+    "spec FA: ford",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1505,7 +1602,7 @@
    "notes": [
     "spec TA: town+ferry",
     "within the The Shire boundary polygon [I-H]",
-    "Ages taken from its realm shire, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "shire"
@@ -1534,13 +1631,21 @@
    "notes": [
     "spec TA: village",
     "within the The Shire boundary polygon [I-H]",
-    "Ages taken from its realm shire, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "shire"
    ],
    "place_conf": "H",
-   "timeline": [],
+   "timeline": [
+    {
+     "cite": "LotR VI.8",
+     "realm": null,
+     "status": "event",
+     "what": "Battle of Bywater; the Shire scoured",
+     "when": "T.A. 3019 Nov 3"
+    }
+   ],
    "types": [
     "MAN_MADE_VILLAGE"
    ]
@@ -1580,7 +1685,9 @@
    ]
   },
   "calembel": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -1593,7 +1700,8 @@
    "n": "Calembel",
    "name_conf": null,
    "notes": [
-    "spec TA: town"
+    "spec TA: town",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1701,7 +1809,9 @@
    ]
   },
   "causeway forts": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -1714,7 +1824,8 @@
    "n": "Causeway Forts",
    "name_conf": null,
    "notes": [
-    "spec TA: forts"
+    "spec TA: forts",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1724,7 +1835,9 @@
    ]
   },
   "celebrant": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [
     "The Silmarillion, line 13390"
    ],
@@ -1758,6 +1871,13 @@
      "status": "event",
      "what": "Eorl's ride to Celebrant; Cirion's gift of Calenardhon; the Oath sworn on Halifirien",
      "when": "T.A. 2510"
+    },
+    {
+     "cite": "App A/B; UT",
+     "realm": null,
+     "status": "founded",
+     "what": "Field of Celebrant; the Oath of Eorl; Rohan founded",
+     "when": "T.A. 2510"
     }
    ],
    "types": [
@@ -1766,7 +1886,7 @@
   },
   "cerin amroth": {
    "ages": [
-    "SA",
+    "FoA",
     "TA"
    ],
    "cites": [],
@@ -1782,14 +1902,29 @@
    "name_conf": null,
    "notes": [
     "spec TA: landmark",
-    "named within Lothlorien by the vector spec's own block for it",
-    "Ages taken from its realm lorien, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "named within Lothlorien by the vector spec's own block for it"
    ],
    "parents": [
     "lorien"
    ],
    "place_conf": "H",
-   "timeline": [],
+   "timeline": [
+    {
+     "cite": "App A",
+     "realm": null,
+     "status": "event",
+     "what": "Arwen dies at Cerin Amroth",
+     "when": "F.o.A. 121"
+    },
+    {
+     "cite": "App A/B",
+     "realm": null,
+     "status": "event",
+     "what": "Aragorn and Arwen plight their troth on Cerin Amroth; Gollum reaches Mordor's borders",
+     "when": "T.A. 2980"
+    }
+   ],
    "types": [
     "MAN_MADE_LANDMARK"
    ]
@@ -1880,7 +2015,9 @@
    ]
   },
   "crickhollow": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -1893,7 +2030,8 @@
    "n": "Crickhollow",
    "name_conf": null,
    "notes": [
-    "spec TA: house"
+    "spec TA: house",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1968,6 +2106,20 @@
      "status": "event",
      "what": "Easterling armies at the Morannon and Dale; peace of Elessar after",
      "when": "3019"
+    },
+    {
+     "cite": "App A III/B",
+     "realm": null,
+     "status": "besieged",
+     "what": "Battle of Dale: Brand and Dáin Ironfoot fall; Erebor besieged and freed",
+     "when": "Mar 17-27, 3019"
+    },
+    {
+     "cite": "App A/B; Hobbit",
+     "realm": null,
+     "status": "event",
+     "what": "Smaug descends on Erebor and Dale",
+     "when": "T.A. 2770"
     },
     {
      "cite": "Hobbit 1, 12 [C]",
@@ -2171,6 +2323,20 @@
      "when": "T.A. 1050+"
     },
     {
+     "cite": "App B",
+     "realm": null,
+     "status": "event",
+     "what": "Gandalf goes to Dol Guldur; the Watchful Peace begins (to 2460)",
+     "when": "T.A. 2063"
+    },
+    {
+     "cite": "App B; Hobbit i",
+     "realm": null,
+     "status": "event",
+     "what": "Gandalf in Dol Guldur: the Necromancer is Sauron; Thráin's map and key",
+     "when": "T.A. 2850"
+    },
+    {
      "cite": "App B [C]",
      "realm": "lorien",
      "status": "event",
@@ -2259,7 +2425,6 @@
   },
   "dor en ernil": {
    "ages": [
-    "SA",
     "TA"
    ],
    "cites": [],
@@ -2275,7 +2440,7 @@
    "name_conf": null,
    "notes": [
     "interior label of Gondor, per the vector spec",
-    "Ages taken from its realm gondor, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "gondor"
@@ -2393,7 +2558,9 @@
    ]
   },
   "durin s stone": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -2406,7 +2573,8 @@
    "n": "Durin's Stone",
    "name_conf": null,
    "notes": [
-    "spec TA: landmark"
+    "spec TA: landmark",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "M",
@@ -2416,7 +2584,9 @@
    ]
   },
   "durthang": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -2429,7 +2599,8 @@
    "n": "Durthang",
    "name_conf": null,
    "notes": [
-    "spec TA: castle"
+    "spec TA: castle",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -2439,7 +2610,9 @@
    ]
   },
   "eagles eyrie": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -2452,7 +2625,8 @@
    "n": "Eagles' Eyrie",
    "name_conf": null,
    "notes": [
-    "spec TA: landmark"
+    "spec TA: landmark",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "M",
@@ -2478,7 +2652,7 @@
    "name_conf": null,
    "notes": [
     "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec",
-    "Ages taken from its realm rohan, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "rohan"
@@ -2506,7 +2680,7 @@
    "name_conf": null,
    "notes": [
     "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec",
-    "Ages taken from its realm rohan, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "rohan"
@@ -2518,7 +2692,9 @@
    ]
   },
   "edhellond": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -2531,7 +2707,8 @@
    "n": "Edhellond",
    "name_conf": null,
    "notes": [
-    "spec TA: ruined haven °"
+    "spec TA: ruined haven °",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -2601,7 +2778,7 @@
    "notes": [
     "spec TA: royal town",
     "within the Rohan (grant bounds of 2510, dotted line) boundary polygon [I-H]",
-    "Ages taken from its realm rohan, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "rohan"
@@ -2654,7 +2831,9 @@
    ]
   },
   "eithel ivrin": {
-   "ages": [],
+   "ages": [
+    "FA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -2667,7 +2846,8 @@
    "n": "Eithel Ivrin",
    "name_conf": null,
    "notes": [
-    "spec FA: pools/falls"
+    "spec FA: pools/falls",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
    ],
    "parents": [],
    "place_conf": "H",
@@ -2737,7 +2917,9 @@
    ]
   },
   "elostirion tower": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -2750,7 +2932,8 @@
    "n": "Elostirion tower",
    "name_conf": null,
    "notes": [
-    "spec TA: tower (palantir)"
+    "spec TA: tower (palantir)",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -2761,7 +2944,6 @@
   },
   "elvenking s halls": {
    "ages": [
-    "SA",
     "TA"
    ],
    "cites": [],
@@ -2778,7 +2960,7 @@
    "notes": [
     "spec TA: cave-city",
     "within the Mirkwood (Greenwood the Great / Eryn Lasgalen) boundary polygon [I-H]",
-    "Ages taken from its realm greenwood, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "greenwood"
@@ -2852,7 +3034,9 @@
    ]
   },
   "ephel brandir": {
-   "ages": [],
+   "ages": [
+    "FA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -2865,7 +3049,8 @@
    "n": "Ephel Brandir",
    "name_conf": null,
    "notes": [
-    "spec FA: stockade"
+    "spec FA: stockade",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
    ],
    "parents": [],
    "place_conf": "H",
@@ -2947,11 +3132,39 @@
      "when": "3019"
     },
     {
+     "cite": "App A III/B",
+     "realm": null,
+     "status": "besieged",
+     "what": "Battle of Dale: Brand and Dáin Ironfoot fall; Erebor besieged and freed",
+     "when": "Mar 17-27, 3019"
+    },
+    {
      "cite": "App A III [C]",
      "realm": "erebor",
      "status": "founded",
      "what": "Thráin I, out of Moria's ruin, founds the Kingdom under the Mountain; the Arkenstone found",
      "when": "T.A. 1999"
+    },
+    {
+     "cite": "App A III",
+     "realm": null,
+     "status": "founded",
+     "what": "Erebor founded: Thráin I comes to the Lonely Mountain",
+     "when": "T.A. 1999"
+    },
+    {
+     "cite": "App A/B; Hobbit",
+     "realm": null,
+     "status": "event",
+     "what": "Smaug descends on Erebor and Dale",
+     "when": "T.A. 2770"
+    },
+    {
+     "cite": "Hobbit; App A/B",
+     "realm": null,
+     "status": "founded",
+     "what": "The Quest of Erebor: Smaug slain; Battle of Five Armies; the Ring found",
+     "when": "T.A. 2941"
     },
     {
      "cite": "Hobbit 1, 12 [C]",
@@ -2967,7 +3180,9 @@
    ]
   },
   "erebor front gate": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -2980,7 +3195,8 @@
    "n": "Erebor Front Gate",
    "name_conf": null,
    "notes": [
-    "spec TA: gate-city"
+    "spec TA: gate-city",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -3266,7 +3482,9 @@
    ]
   },
   "fen of serech": {
-   "ages": [],
+   "ages": [
+    "FA"
+   ],
    "cites": [
     "A ch18, ch19, ch20; HoME 3, 11"
    ],
@@ -3282,6 +3500,7 @@
    "name_conf": "H",
    "notes": [
     "spec FA: fen",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
     "Evidence Table B13"
    ],
    "parents": [],
@@ -3320,7 +3539,15 @@
     "gondor"
    ],
    "place_conf": "H",
-   "timeline": [],
+   "timeline": [
+    {
+     "cite": "App A/B; UT",
+     "realm": null,
+     "status": "founded",
+     "what": "Field of Celebrant; the Oath of Eorl; Rohan founded",
+     "when": "T.A. 2510"
+    }
+   ],
    "types": [
     "NATURAL_PLAIN"
    ]
@@ -3403,7 +3630,9 @@
    ]
   },
   "forlond": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -3416,7 +3645,8 @@
    "n": "Forlond",
    "name_conf": null,
    "notes": [
-    "spec TA: haven"
+    "spec TA: haven",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "M",
@@ -3490,6 +3720,13 @@
      "when": "T.A. 1409–1974"
     },
     {
+     "cite": "App A/B",
+     "realm": null,
+     "status": "event",
+     "what": "Fall of Arthedain; Battle of Fornost; Angmar broken",
+     "when": "T.A. 1974–75"
+    },
+    {
      "cite": "App A [C]",
      "realm": "arthedain",
      "status": "event",
@@ -3502,7 +3739,9 @@
    ]
   },
   "fornost erain": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -3515,7 +3754,8 @@
    "n": "Fornost Erain",
    "name_conf": null,
    "notes": [
-    "spec TA: ruined city"
+    "spec TA: ruined city",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -3525,7 +3765,9 @@
    ]
   },
   "forsaken inn": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -3538,7 +3780,8 @@
    "n": "Forsaken Inn",
    "name_conf": null,
    "notes": [
-    "spec TA: inn"
+    "spec TA: inn",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "M",
@@ -3597,7 +3840,7 @@
    "notes": [
     "spec TA: village",
     "within the The Shire boundary polygon [I-H]",
-    "Ages taken from its realm shire, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "shire"
@@ -3626,13 +3869,23 @@
    ],
    "parents": [],
    "place_conf": "H",
-   "timeline": [],
+   "timeline": [
+    {
+     "cite": "App B; UT",
+     "realm": null,
+     "status": "event",
+     "what": "Disaster of the Gladden Fields; Isildur slain; the Ring lost",
+     "when": "T.A. 2"
+    }
+   ],
    "types": [
     "NATURAL_PLAIN"
    ]
   },
   "goblin gate": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -3645,7 +3898,8 @@
    "n": "Goblin-gate (High Pass)",
    "name_conf": null,
    "notes": [
-    "spec TA: hidden gate"
+    "spec TA: hidden gate",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "M",
@@ -3682,6 +3936,13 @@
    "place_conf": "H",
    "timeline": [
     {
+     "cite": "Silm 15; GA",
+     "realm": null,
+     "status": "event",
+     "what": "Gondolin full-wrought (52 years of toil)",
+     "when": "F.A. 116"
+    },
+    {
      "cite": "Silm 20 [C]",
      "realm": "gondolin",
      "status": "event",
@@ -3696,10 +3957,24 @@
      "when": "F.A. 473+"
     },
     {
+     "cite": "Silm 23; GA",
+     "realm": null,
+     "status": "event",
+     "what": "Birth of Eärendil in Gondolin",
+     "when": "F.A. 503"
+    },
+    {
      "cite": "Silm 23; BoLT2/FoG [C]",
      "realm": "gondolin",
      "status": "destroyed",
      "what": "Betrayed by Maeglin; the city falls at the Gates of Summer",
+     "when": "F.A. 510"
+    },
+    {
+     "cite": "Silm 23; FoG",
+     "realm": null,
+     "status": "event",
+     "what": "The Fall of Gondolin; Glorfindel's duel",
      "when": "F.A. 510"
     },
     {
@@ -3722,7 +3997,11 @@
    ]
   },
   "gondor": {
-   "ages": [],
+   "ages": [
+    "FoA",
+    "SA",
+    "TA"
+   ],
    "cites": [],
    "coords": [],
    "n": "Gondor",
@@ -3748,10 +4027,24 @@
      "when": "1851–1944"
     },
     {
+     "cite": "App B",
+     "realm": null,
+     "status": "event",
+     "what": "King Éomer dies; Merry and Pippin ride to Rohan and Gondor, and rest in Rath Dínen",
+     "when": "F.o.A. 63"
+    },
+    {
      "cite": "App A/B [C]",
      "realm": "gondor",
      "status": "founded",
      "what": "Isildur and Anárion found the realm: Osgiliath the capital, Minas Ithil and Minas Anor its flanking cities",
+     "when": "S.A. 3320"
+    },
+    {
+     "cite": "App B",
+     "realm": null,
+     "status": "founded",
+     "what": "Arnor and Gondor founded",
      "when": "S.A. 3320"
     },
     {
@@ -3769,6 +4062,13 @@
      "when": "T.A. 1015–1050"
     },
     {
+     "cite": "App A",
+     "realm": null,
+     "status": "event",
+     "what": "The Kin-strife of Gondor",
+     "when": "T.A. 1432–1448"
+    },
+    {
      "cite": "App A [C]",
      "realm": "gondor",
      "status": "burned",
@@ -3783,11 +4083,25 @@
      "when": "T.A. 1636"
     },
     {
+     "cite": "App A; App B",
+     "realm": null,
+     "status": "destroyed",
+     "what": "The Wainriders destroy Gondor's northern army; Narmacil II slain",
+     "when": "T.A. 1856"
+    },
+    {
      "cite": "App A [C]",
      "realm": "khand",
      "status": "event",
      "what": "Variags join the Wainriders' great combination against Gondor",
      "when": "T.A. 1944"
+    },
+    {
+     "cite": "App A II",
+     "realm": null,
+     "status": "event",
+     "what": "The Crossings of Poros: Folcwine's twin sons fall for Gondor",
+     "when": "T.A. 2885"
     },
     {
      "cite": "LotR V–VI [C]",
@@ -3811,6 +4125,13 @@
      "when": "T.A. 830–1149"
     },
     {
+     "cite": "App A I(iv)",
+     "realm": null,
+     "status": "event",
+     "what": "Gondor's zenith: the Ship-kings take Umbar; Hyarmendacil's peace",
+     "when": "T.A. 933–1050"
+    },
+    {
      "cite": "App A [C]",
      "realm": "umbar",
      "status": "event",
@@ -3824,7 +4145,6 @@
   },
   "gorgoroth": {
    "ages": [
-    "SA",
     "TA"
    ],
    "cites": [
@@ -3842,7 +4162,7 @@
    "name_conf": "H",
    "notes": [
     "interior label of Mordor (realm = its mountain rectangle), per the vector spec",
-    "Ages taken from its realm mordor, having none of its own [I-H]",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
     "Evidence Table G22"
    ],
    "parents": [
@@ -3879,6 +4199,13 @@
      "status": "destroyed",
      "what": "Greenfields; the Fell Winter and Long Winter; the Scouring and the mending",
      "when": "2747 / 2911–12 / 3019"
+    },
+    {
+     "cite": "Prologue; Hobbit i",
+     "realm": null,
+     "status": "event",
+     "what": "Battle of Greenfields: the Bullroarer slays Golfimbul",
+     "when": "T.A. 2747"
     }
    ],
    "types": [
@@ -3974,7 +4301,9 @@
    ]
   },
   "halifirien hallow": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -3987,7 +4316,8 @@
    "n": "Halifirien hallow",
    "name_conf": null,
    "notes": [
-    "spec TA: hallow/beacon"
+    "spec TA: hallow/beacon",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -4036,7 +4366,6 @@
   },
   "harlond gondor quays": {
    "ages": [
-    "SA",
     "TA"
    ],
    "cites": [],
@@ -4052,8 +4381,8 @@
    "name_conf": null,
    "notes": [
     "spec TA: haven",
-    "named Gondor quays by the spec, which is how it is told from the other place of the same name",
-    "Ages taken from its realm gondor, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "named Gondor quays by the spec, which is how it is told from the other place of the same name"
    ],
    "parents": [
     "gondor"
@@ -4066,7 +4395,6 @@
   },
   "harlond lindon": {
    "ages": [
-    "SA",
     "TA"
    ],
    "cites": [],
@@ -4082,8 +4410,8 @@
    "name_conf": null,
    "notes": [
     "spec TA: haven",
-    "named Lindon by the spec, which is how it is told from the other place of the same name",
-    "Ages taken from its realm lindon, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "named Lindon by the spec, which is how it is told from the other place of the same name"
    ],
    "parents": [
     "lindon"
@@ -4173,7 +4501,22 @@
     "balar"
    ],
    "place_conf": "H",
-   "timeline": [],
+   "timeline": [
+    {
+     "cite": "Silm 24; App A",
+     "realm": null,
+     "status": "event",
+     "what": "Elrond and Elros born at the Havens of Sirion",
+     "when": "F.A. 532"
+    },
+    {
+     "cite": "WoJ, Tale of Years (dated 532→534→538 across the revisions — final layer shown)",
+     "realm": null,
+     "status": "destroyed",
+     "what": "The Third Kinslaying: the Havens of Sirion destroyed; Elwing bears the Silmaril to the sea",
+     "when": "F.A. 538"
+    }
+   ],
    "types": [
     "MAN_MADE_HAVEN"
    ]
@@ -4217,7 +4560,15 @@
     "rohan"
    ],
    "place_conf": "H",
-   "timeline": [],
+   "timeline": [
+    {
+     "cite": "LotR III.7-9; App B",
+     "realm": null,
+     "status": "drowned",
+     "what": "The Hornburg: Helm's Deep held; the Huorns; Isengard drowned by the Ents",
+     "when": "Mar 3-4, 3019"
+    }
+   ],
    "types": [
     "MAN_MADE_FORTRESS"
    ]
@@ -4355,7 +4706,9 @@
    ]
   },
   "himring citadel": {
-   "ages": [],
+   "ages": [
+    "FA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -4368,7 +4721,8 @@
    "n": "Himring citadel",
    "name_conf": null,
    "notes": [
-    "spec FA: fortress"
+    "spec FA: fortress",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
    ],
    "parents": [],
    "place_conf": "H",
@@ -4418,7 +4772,9 @@
    ]
   },
   "hornburg helm s deep": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -4431,7 +4787,8 @@
    "n": "Hornburg/Helm's Deep",
    "name_conf": null,
    "notes": [
-    "spec TA: fortress+caves"
+    "spec TA: fortress+caves",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -4460,7 +4817,9 @@
    ]
   },
   "iant iaur": {
-   "ages": [],
+   "ages": [
+    "FA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -4473,7 +4832,8 @@
    "n": "Iant Iaur",
    "name_conf": null,
    "notes": [
-    "spec FA: stone bridge"
+    "spec FA: stone bridge",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
    ],
    "parents": [],
    "place_conf": "H",
@@ -4676,11 +5036,25 @@
      "when": "3014–19"
     },
     {
+     "cite": "LotR III.7-9; App B",
+     "realm": null,
+     "status": "drowned",
+     "what": "The Hornburg: Helm's Deep held; the Huorns; Isengard drowned by the Ents",
+     "when": "Mar 3-4, 3019"
+    },
+    {
      "cite": "App A/B [C]",
      "realm": "isengard",
      "status": "granted",
      "what": "Saruman granted the keys by Beren the Steward — tenant become tyrant",
      "when": "T.A. 2759"
+    },
+    {
+     "cite": "App B",
+     "realm": null,
+     "status": "event",
+     "what": "The last White Council; Saruman claims Isengard",
+     "when": "T.A. 2953"
     },
     {
      "cite": "LotR III.4, 8–9 [C]",
@@ -4702,7 +5076,9 @@
    ]
   },
   "isengard orthanc": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [
     "C III.8–10; D Cirion, Fords"
    ],
@@ -4718,6 +5094,7 @@
    "name_conf": "H",
    "notes": [
     "spec TA: ring-fortress",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
     "Evidence Table G3"
    ],
    "parents": [],
@@ -4728,7 +5105,9 @@
    ]
   },
   "isenmouthe": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -4741,7 +5120,8 @@
    "n": "Isenmouthe",
    "name_conf": null,
    "notes": [
-    "spec TA: rampart-gate"
+    "spec TA: rampart-gate",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -4774,7 +5154,6 @@
   },
   "ithilien": {
    "ages": [
-    "SA",
     "TA"
    ],
    "cites": [
@@ -4792,7 +5171,7 @@
    "name_conf": "H",
    "notes": [
     "interior label of Gondor, per the vector spec",
-    "Ages taken from its realm gondor, having none of its own [I-H]",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
     "Evidence Table G19"
    ],
    "parents": [
@@ -4964,7 +5343,6 @@
   },
   "lamedon": {
    "ages": [
-    "SA",
     "TA"
    ],
    "cites": [],
@@ -4980,7 +5358,7 @@
    "name_conf": null,
    "notes": [
     "interior label of Gondor, per the vector spec",
-    "Ages taken from its realm gondor, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "gondor"
@@ -5013,7 +5391,9 @@
    ]
   },
   "last bridge": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -5026,7 +5406,8 @@
    "n": "Last Bridge",
    "name_conf": null,
    "notes": [
-    "spec TA: bridge"
+    "spec TA: bridge",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -5056,7 +5437,6 @@
   },
   "lebennin": {
    "ages": [
-    "SA",
     "TA"
    ],
    "cites": [],
@@ -5072,7 +5452,7 @@
    "name_conf": null,
    "notes": [
     "interior label of Gondor, per the vector spec",
-    "Ages taken from its realm gondor, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "gondor"
@@ -5100,7 +5480,9 @@
    ]
   },
   "lindon": {
-   "ages": [],
+   "ages": [
+    "SA"
+   ],
    "cites": [
     "A RoP; C App A/B, VI.9; RC[T]"
    ],
@@ -5119,6 +5501,13 @@
      "realm": "lindon",
      "status": "built",
      "what": "Gil-galad king in the surviving shore of old Ossiriand; Mithlond built",
+     "when": "S.A. 1"
+    },
+    {
+     "cite": "App B",
+     "realm": null,
+     "status": "founded",
+     "what": "Lindon and the Grey Havens founded",
      "when": "S.A. 1"
     },
     {
@@ -5148,7 +5537,9 @@
    ]
   },
   "linhir": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -5161,7 +5552,8 @@
    "n": "Linhir",
    "name_conf": null,
    "notes": [
-    "spec TA: town+fords"
+    "spec TA: town+fords",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -5173,7 +5565,6 @@
   },
   "lithlad": {
    "ages": [
-    "SA",
     "TA"
    ],
    "cites": [
@@ -5191,7 +5582,7 @@
    "name_conf": "H",
    "notes": [
     "interior label of Mordor (realm = its mountain rectangle), per the vector spec",
-    "Ages taken from its realm mordor, having none of its own [I-H]",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
     "Evidence Table G22"
    ],
    "parents": [
@@ -5204,7 +5595,9 @@
    ]
   },
   "lond daer": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [
     "D Aldarion, App D; RC[T]"
    ],
@@ -5220,6 +5613,7 @@
    "name_conf": "H",
    "notes": [
     "spec TA: ruined haven °",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
     "Evidence Table E18"
    ],
    "parents": [],
@@ -5623,6 +6017,13 @@
      "status": "besieged",
      "what": "The Nazgûl besiege and take Minas Ithil; the palantír captured",
      "when": "T.A. 2000–02"
+    },
+    {
+     "cite": "App A/B",
+     "realm": null,
+     "status": "destroyed",
+     "what": "Minas Ithil falls: Minas Morgul",
+     "when": "T.A. 2002"
     }
    ],
    "types": [
@@ -5840,7 +6241,9 @@
    ]
   },
   "moria east gate dimrill": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -5853,7 +6256,8 @@
    "n": "Moria East-gate/Dimrill",
    "name_conf": null,
    "notes": [
-    "spec TA: gate"
+    "spec TA: gate",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -5863,7 +6267,9 @@
    ]
   },
   "moria west door": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -5876,7 +6282,8 @@
    "n": "Moria West-door",
    "name_conf": null,
    "notes": [
-    "spec TA: gate"
+    "spec TA: gate",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -6084,6 +6491,20 @@
      "status": "sacked",
      "what": "The bridge and the open battle of Tumhalad; Glaurung sacks the city",
      "when": "F.A. 495"
+    },
+    {
+     "cite": "Silm 21; CoH",
+     "realm": null,
+     "status": "sacked",
+     "what": "Tumhalad; the Sack of Nargothrond",
+     "when": "F.A. 495"
+    },
+    {
+     "cite": "Silm 13; Grey Annals",
+     "realm": null,
+     "status": "founded",
+     "what": "Nargothrond founded by Finrod",
+     "when": "F.A. 52"
     },
     {
      "cite": "Silm 13 [C]",
@@ -6313,7 +6734,6 @@
   },
   "nurn": {
    "ages": [
-    "SA",
     "TA"
    ],
    "cites": [
@@ -6331,7 +6751,7 @@
    "name_conf": "H",
    "notes": [
     "interior label of Mordor (realm = its mountain rectangle), per the vector spec",
-    "Ages taken from its realm mordor, having none of its own [I-H]",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
     "Evidence Table G22"
    ],
    "parents": [
@@ -6424,7 +6844,9 @@
    ]
   },
   "old ford": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -6437,7 +6859,8 @@
    "n": "Old Ford",
    "name_conf": null,
    "notes": [
-    "spec TA: ford"
+    "spec TA: ford",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -6476,6 +6899,13 @@
    ],
    "place_conf": "H",
    "timeline": [
+    {
+     "cite": "LotR II.2; App B",
+     "realm": null,
+     "status": "event",
+     "what": "The assault on Osgiliath: the war begins; the last bridge cast down",
+     "when": "June 3018"
+    },
     {
      "cite": "App A/B [C]",
      "realm": "gondor",
@@ -6565,6 +6995,7 @@
   },
   "pelargir": {
    "ages": [
+    "SA",
     "TA"
    ],
    "cites": [
@@ -6592,6 +7023,13 @@
    ],
    "place_conf": "H",
    "timeline": [
+    {
+     "cite": "App B",
+     "realm": null,
+     "status": "built",
+     "what": "Pelargir built, haven of the Faithful",
+     "when": "S.A. 2350"
+    },
     {
      "cite": "App A; LotR V.9 [C]",
      "realm": "umbar",
@@ -6625,7 +7063,6 @@
   },
   "poros march": {
    "ages": [
-    "SA",
     "TA"
    ],
    "cites": [],
@@ -6641,7 +7078,7 @@
    "name_conf": null,
    "notes": [
     "interior label of Gondor, per the vector spec",
-    "Ages taken from its realm gondor, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "gondor"
@@ -6884,7 +7321,9 @@
    ]
   },
   "sammath naur": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -6897,7 +7336,8 @@
    "n": "Sammath Naur",
    "name_conf": null,
    "notes": [
-    "spec TA: door (E face)"
+    "spec TA: door (E face)",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -6963,7 +7403,9 @@
    ]
   },
   "sarn ford": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -6976,7 +7418,8 @@
    "n": "Sarn Ford",
    "name_conf": null,
    "notes": [
-    "spec TA: ford"
+    "spec TA: ford",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -7168,7 +7611,7 @@
    "notes": [
     "spec TA: village",
     "within the The Shire boundary polygon [I-H]",
-    "Ages taken from its realm shire, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "shire"
@@ -7180,7 +7623,9 @@
    ]
   },
   "stone of erech": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -7193,7 +7638,8 @@
    "n": "Stone of Erech",
    "name_conf": null,
    "notes": [
-    "spec TA: landmark-stone"
+    "spec TA: landmark-stone",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -7451,7 +7897,9 @@
    ]
   },
   "the crossroads": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -7464,7 +7912,8 @@
    "n": "The Crossroads",
    "name_conf": null,
    "notes": [
-    "spec TA: landmark"
+    "spec TA: landmark",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -7681,7 +8130,9 @@
    ]
   },
   "the shire": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [
     "C Prologue, App B; HoME 12; RC"
    ],
@@ -7728,6 +8179,13 @@
      "realm": "shire",
      "status": "granted",
      "what": "Marcho and Blanco granted the land from Baranduin to the Far Downs by King Argeleb II",
+     "when": "T.A. 1601"
+    },
+    {
+     "cite": "Prologue; App B",
+     "realm": null,
+     "status": "granted",
+     "what": "The Shire granted and colonised",
      "when": "T.A. 1601"
     }
    ],
@@ -7798,7 +8256,7 @@
    "name_conf": null,
    "notes": [
     "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec",
-    "Ages taken from its realm rohan, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "rohan"
@@ -7827,7 +8285,7 @@
    "notes": [
     "spec TA: landmark",
     "within the The Shire boundary polygon [I-H]",
-    "Ages taken from its realm shire, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "shire"
@@ -7995,7 +8453,9 @@
    ]
   },
   "tol sirion fort": {
-   "ages": [],
+   "ages": [
+    "FA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -8008,7 +8468,8 @@
    "n": "Tol Sirion fort",
    "name_conf": null,
    "notes": [
-    "spec FA: isle-tower"
+    "spec FA: isle-tower",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
    ],
    "parents": [],
    "place_conf": "H",
@@ -8026,7 +8487,9 @@
    ]
   },
   "tom bombadil s house": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -8039,7 +8502,8 @@
    "n": "Tom Bombadil's house",
    "name_conf": null,
    "notes": [
-    "spec TA: house"
+    "spec TA: house",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -8077,7 +8541,9 @@
    ]
   },
   "tower of cirith ungol": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -8090,7 +8556,8 @@
    "n": "Tower of Cirith Ungol",
    "name_conf": null,
    "notes": [
-    "spec TA: fortress"
+    "spec TA: fortress",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -8100,7 +8567,9 @@
    ]
   },
   "trolls clearing": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -8113,7 +8582,8 @@
    "n": "Trolls' clearing (Hobbit)",
    "name_conf": null,
    "notes": [
-    "spec TA: landmark"
+    "spec TA: landmark",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "M",
@@ -8179,7 +8649,7 @@
    "notes": [
     "spec TA: town",
     "within the The Shire boundary polygon [I-H]",
-    "Ages taken from its realm shire, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "shire"
@@ -8191,7 +8661,9 @@
    ]
   },
   "tumhalad": {
-   "ages": [],
+   "ages": [
+    "FA"
+   ],
    "cites": [
     "The Silmarillion, line 10082"
    ],
@@ -8210,6 +8682,13 @@
      "realm": "nargothrond",
      "status": "sacked",
      "what": "The bridge and the open battle of Tumhalad; Glaurung sacks the city",
+     "when": "F.A. 495"
+    },
+    {
+     "cite": "Silm 21; CoH",
+     "realm": null,
+     "status": "sacked",
+     "what": "Tumhalad; the Sack of Nargothrond",
      "when": "F.A. 495"
     }
    ],
@@ -8268,7 +8747,9 @@
    ]
   },
   "turin s stone": {
-   "ages": [],
+   "ages": [
+    "FA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -8281,7 +8762,8 @@
    "n": "Turin's Stone",
    "name_conf": null,
    "notes": [
-    "spec FA: memorial (Cabed)"
+    "spec FA: memorial (Cabed)",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
    ],
    "parents": [],
    "place_conf": "H",
@@ -8299,7 +8781,10 @@
    ]
   },
   "umbar": {
-   "ages": [],
+   "ages": [
+    "SA",
+    "TA"
+   ],
    "cites": [
     "C App A; A Akallabêth (Ar-Pharazôn's landing)"
    ],
@@ -8315,6 +8800,7 @@
    "name_conf": "H",
    "notes": [
     "spec TA: corsair haven",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
     "Evidence Table G30"
    ],
    "parents": [],
@@ -8325,6 +8811,13 @@
      "realm": "umbar",
      "status": "event",
      "what": "Umbar made a great fortress of Númenor; seat of the King's Men's dominion",
+     "when": "S.A. 2280"
+    },
+    {
+     "cite": "App B",
+     "realm": null,
+     "status": "event",
+     "what": "Umbar made a great fortress",
      "when": "S.A. 2280"
     },
     {
@@ -8370,6 +8863,13 @@
      "when": "T.A. 830–1149"
     },
     {
+     "cite": "App A I(iv)",
+     "realm": null,
+     "status": "event",
+     "what": "Gondor's zenith: the Ship-kings take Umbar; Hyarmendacil's peace",
+     "when": "T.A. 933–1050"
+    },
+    {
      "cite": "App A [C]",
      "realm": "umbar",
      "status": "event",
@@ -8401,7 +8901,9 @@
    ]
   },
   "undertowers": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -8414,7 +8916,8 @@
    "n": "Undertowers",
    "name_conf": null,
    "notes": [
-    "spec TA: smial-town"
+    "spec TA: smial-town",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
    "place_conf": "H",
@@ -8559,7 +9062,7 @@
    "name_conf": null,
    "notes": [
     "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec",
-    "Ages taken from its realm rohan, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "rohan"
@@ -8587,7 +9090,7 @@
    "name_conf": null,
    "notes": [
     "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec",
-    "Ages taken from its realm rohan, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "rohan"
@@ -8700,7 +9203,7 @@
    "notes": [
     "spec TA: locality",
     "within the The Shire boundary polygon [I-H]",
-    "Ages taken from its realm shire, having none of its own [I-H]"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "shire"
