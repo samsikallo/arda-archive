@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 209,
+ "n": 205,
  "places": {
   "amon ereb": {
    "ages": [
@@ -75,7 +75,7 @@
     "MAN_MADE_WATCHPOST"
    ]
   },
-  "amon r dh": {
+  "amon rudh": {
    "ages": [
     "FA"
    ],
@@ -96,35 +96,6 @@
    "timeline": [],
    "types": [
     "NATURAL_PEAK"
-   ]
-  },
-  "an rien": {
-   "ages": [
-    "SA",
-    "TA"
-   ],
-   "cites": [],
-   "coords": [
-    {
-     "conf": null,
-     "frame": "TA",
-     "x": 660,
-     "y": 300
-    }
-   ],
-   "n": "Anórien",
-   "name_conf": null,
-   "notes": [
-    "interior label of Gondor, per the vector spec",
-    "Ages taken from its realm gondor, having none of its own [I-H]"
-   ],
-   "parents": [
-    "gondor"
-   ],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
-    "POLITY_SUBREGION"
    ]
   },
   "anduin": {
@@ -311,17 +282,25 @@
     "POLITY_REALM"
    ]
   },
-  "ann minas": {
+  "annuminas": {
    "ages": [
     "TA"
    ],
    "cites": [
     "App A; UT"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 222,
+     "y": 748
+    }
+   ],
    "n": "Annúminas",
    "name_conf": null,
    "notes": [
+    "spec TA: ruined city",
     "Elendil's first capital on Lake Evendim; restored by Elessar."
    ],
    "parents": [
@@ -339,31 +318,37 @@
     }
    ],
    "types": [
-    "MAN_MADE_RUIN",
-    "NATURAL_LAKE"
+    "MAN_MADE_CITY",
+    "MAN_MADE_RUIN"
    ]
   },
-  "annuminas": {
-   "ages": [],
+  "anorien": {
+   "ages": [
+    "SA",
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
-     "conf": "H",
+     "conf": null,
      "frame": "TA",
-     "x": 222,
-     "y": 748
+     "x": 660,
+     "y": 300
     }
    ],
-   "n": "Annuminas",
+   "n": "Anórien",
    "name_conf": null,
    "notes": [
-    "spec TA: ruined city"
+    "interior label of Gondor, per the vector spec",
+    "Ages taken from its realm gondor, having none of its own [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_CITY"
+    "POLITY_SUBREGION"
    ]
   },
   "arnor": {
@@ -496,7 +481,7 @@
     "MAN_MADE_DWELLING"
    ]
   },
-  "barad d r": {
+  "barad dur": {
    "ages": [
     "TA"
    ],
@@ -1191,23 +1176,31 @@
     "MAN_MADE_CITY"
    ]
   },
-  "carn d m": {
+  "carn dum": {
    "ages": [
     "TA"
    ],
    "cites": [
     "App A I(iv)"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 485,
+     "y": 818
+    }
+   ],
    "n": "Carn Dûm",
    "name_conf": null,
    "notes": [
+    "spec TA: ruined fortress",
     "The Witch-king's mountain-hold of Angmar."
    ],
    "parents": [
     "angmar"
    ],
-   "place_conf": "H",
+   "place_conf": "M",
    "timeline": [
     {
      "cite": "App A [C]",
@@ -1220,29 +1213,6 @@
    "types": [
     "MAN_MADE_FORTRESS",
     "NATURAL_PEAK"
-   ]
-  },
-  "carn dum": {
-   "ages": [],
-   "cites": [],
-   "coords": [
-    {
-     "conf": "M",
-     "frame": "TA",
-     "x": 485,
-     "y": 818
-    }
-   ],
-   "n": "Carn Dum",
-   "name_conf": null,
-   "notes": [
-    "spec TA: ruined fortress"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "timeline": [],
-   "types": [
-    "MAN_MADE_FORTRESS"
    ]
   },
   "causeway forts": {
@@ -1579,7 +1549,7 @@
     "POLITY_SUBREGION"
    ]
   },
-  "dr adan forest": {
+  "druadan forest": {
    "ages": [],
    "cites": [],
    "coords": [],
@@ -3127,30 +3097,13 @@
     "MAN_MADE_FORTRESS"
    ]
   },
-  "henneth ann n": {
+  "henneth annun": {
    "ages": [
     "TA"
    ],
    "cites": [
     "LotR IV.5"
    ],
-   "coords": [],
-   "n": "Henneth Annûn",
-   "name_conf": null,
-   "notes": [
-    "also the Window on the West",
-    "Faramir's hidden refuge behind the falls of Ithilien."
-   ],
-   "parents": [],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
-    "MAN_MADE_HALL"
-   ]
-  },
-  "henneth annun": {
-   "ages": [],
-   "cites": [],
    "coords": [
     {
      "conf": "H",
@@ -3159,16 +3112,19 @@
      "y": 300
     }
    ],
-   "n": "Henneth Annun",
+   "n": "Henneth Annûn",
    "name_conf": null,
    "notes": [
-    "spec TA: hidden refuge"
+    "spec TA: hidden refuge",
+    "also the Window on the West",
+    "Faramir's hidden refuge behind the falls of Ithilien."
    ],
    "parents": [],
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_REFUGE"
+    "MAN_MADE_REFUGE",
+    "MAN_MADE_HALL"
    ]
   },
   "himring": {
@@ -3906,7 +3862,43 @@
    ],
    "parents": [],
    "place_conf": "H",
-   "timeline": [],
+   "timeline": [
+    {
+     "cite": "App A/B [C]",
+     "realm": "lorien",
+     "status": "event",
+     "what": "Galadriel sails; Celeborn lingers, then to Imladris; the wood fades",
+     "when": "F.o.A."
+    },
+    {
+     "cite": "UT, Galadriel & Celeborn [C]",
+     "realm": "lorien",
+     "status": "event",
+     "what": "Silvan realm of the valley 'Lórinand' under Amdír; refuge of Eregion's survivors",
+     "when": "S.A."
+    },
+    {
+     "cite": "UT, History of Galadriel [C]",
+     "realm": "lorien",
+     "status": "destroyed",
+     "what": "Amdír falls at Dagorlad with the Silvan host",
+     "when": "S.A. 3434"
+    },
+    {
+     "cite": "App A/B; UT [C]",
+     "realm": "lorien",
+     "status": "event",
+     "what": "Amroth lost at Edhellond's sailing; Galadriel and Celeborn take up the guardianship; Nenya's power hides the wood",
+     "when": "T.A. 1981+"
+    },
+    {
+     "cite": "App B [C]",
+     "realm": "lorien",
+     "status": "event",
+     "what": "Thrice assailed from Dol Guldur, thrice holding; then Dol Guldur thrown down — Celeborn takes East Lórien",
+     "when": "T.A. 3019"
+    }
+   ],
    "types": [
     "NATURAL_FOREST"
    ]
@@ -4360,26 +4352,6 @@
     "NATURAL_MOUNTAIN_RANGE"
    ]
   },
-  "n rn sea of n rnen": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "LotR VI.3/5"
-   ],
-   "coords": [],
-   "n": "Núrn & Sea of Núrnen",
-   "name_conf": null,
-   "notes": [
-    "Mordor's slave-fields that fed the armies; given freed to the slaves by Elessar."
-   ],
-   "parents": [],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
-    "NATURAL_PLAIN"
-   ]
-  },
   "nan elmoth": {
    "ages": [
     "FA"
@@ -4566,6 +4538,26 @@
    "timeline": [],
    "types": [
     "POLITY_SUBREGION"
+   ]
+  },
+  "nurn sea of nurnen": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR VI.3/5"
+   ],
+   "coords": [],
+   "n": "Núrn & Sea of Núrnen",
+   "name_conf": null,
+   "notes": [
+    "Mordor's slave-fields that fed the armies; given freed to the slaves by Elessar."
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "NATURAL_PLAIN"
    ]
   },
   "nw shore forest at sea of rhun": {
@@ -5061,7 +5053,7 @@
     "NATURAL_SEA"
    ]
   },
-  "sea of rh n": {
+  "sea of rhun": {
    "ages": [
     "TA"
    ],
@@ -5072,10 +5064,11 @@
    "n": "Sea of Rhûn",
    "name_conf": null,
    "notes": [
+    "spec TA: Water",
     "The eastern sea of the Wainrider wars; Dorwinion northwest of it."
    ],
    "parents": [],
-   "place_conf": "H",
+   "place_conf": "M",
    "timeline": [
     {
      "cite": "App A [C]",
@@ -5086,23 +5079,8 @@
     }
    ],
    "types": [
+    "NATURAL_SEA",
     "NATURAL_PLAIN"
-   ]
-  },
-  "sea of rhun": {
-   "ages": [],
-   "cites": [],
-   "coords": [],
-   "n": "Sea of Rhun",
-   "name_conf": null,
-   "notes": [
-    "spec TA: Water"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "timeline": [],
-   "types": [
-    "NATURAL_SEA"
    ]
   },
   "stock": {
