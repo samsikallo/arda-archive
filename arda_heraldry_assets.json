@@ -734,6 +734,177 @@
    ]
   },
   {
+   "file": "heraldry/illustrated/flyingcorps.png",
+   "exists": true,
+   "device": "flyingcorps",
+   "label": "Emblem of the Flying Corps of Mordor",
+   "tier": 2,
+   "basis": "a freely-licensed recreation of a device Tolkien designed",
+   "source": "supplied to the workshop, 2026-07-26",
+   "licence": "unattributed; rights confirmed by the site's owner",
+   "author": "unattributed",
+   "publishable": true,
+   "withdrawn": null,
+   "modified": null,
+   "sha1": "717b6221d1a22191",
+   "size": [
+    480,
+    480
+   ]
+  },
+  {
+   "file": "Emblem of the Flying Corps of Mordor.png",
+   "exists": true,
+   "device": "flyingcorps",
+   "tier": 2,
+   "batch": "uploaded 2026-07-26",
+   "basis": "an illustrated reconstruction supplied to the archive, cropped by map/gen_illustrated_devices.py and shown in the hall",
+   "source": "supplied to the workshop, 2026-07-26",
+   "licence": "unattributed; rights confirmed by the site's owner",
+   "author": "unattributed",
+   "publishable": true,
+   "why_not": null,
+   "shown_as": "heraldry/illustrated/flyingcorps.png",
+   "sha1": "95ea2a6bfd408919",
+   "size": [
+    1600,
+    1232
+   ]
+  },
+  {
+   "file": "durin.jpg",
+   "exists": true,
+   "device": "durin",
+   "tier": 3,
+   "batch": "uploaded 2026-07-26",
+   "basis": "supplied to the archive and NOT shown -- held as reference",
+   "source": "supplied to the workshop, 2026-07-26",
+   "licence": "NOT ESTABLISHED -- the plate carries the monogram of Rondador Nocturno, so it is not unattributed and no licence is on record",
+   "author": "Rondador Nocturno (monogram on the plate)",
+   "publishable": false,
+   "why_not": "the plate carries an identifiable artist's monogram and no licence is on record for it",
+   "shown_as": null,
+   "sha1": "bb4c499c106f79de",
+   "size": [
+    1024,
+    1280
+   ]
+  },
+  {
+   "file": "q_beor.png",
+   "exists": true,
+   "device": "beor",
+   "tier": 2,
+   "batch": "uploaded 2026-07-26",
+   "basis": "an illustrated reconstruction supplied to the archive, cropped by map/gen_illustrated_devices.py and shown in the hall",
+   "source": "supplied to the workshop, 2026-07-26",
+   "licence": "unattributed; rights confirmed by the site's owner",
+   "author": "unattributed",
+   "publishable": true,
+   "why_not": null,
+   "shown_as": "heraldry/illustrated/beor.png",
+   "sha1": "5c0640a45971b38b",
+   "size": [
+    567,
+    567
+   ]
+  },
+  {
+   "file": "q_elendil.png",
+   "exists": true,
+   "device": "elendilbadge",
+   "tier": 2,
+   "batch": "uploaded 2026-07-26",
+   "basis": "an illustrated reconstruction supplied to the archive, cropped by map/gen_illustrated_devices.py and shown in the hall",
+   "source": "supplied to the workshop, 2026-07-26",
+   "licence": "unattributed; rights confirmed by the site's owner",
+   "author": "unattributed",
+   "publishable": true,
+   "why_not": null,
+   "shown_as": "heraldry/illustrated/elendilbadge.png",
+   "sha1": "faf7373a2f7e5796",
+   "size": [
+    931,
+    1024
+   ]
+  },
+  {
+   "file": "q_finarfin.png",
+   "exists": true,
+   "device": "finarfin",
+   "tier": 2,
+   "batch": "uploaded 2026-07-26",
+   "basis": "an illustrated reconstruction supplied to the archive, cropped by map/gen_illustrated_devices.py and shown in the hall",
+   "source": "supplied to the workshop, 2026-07-26",
+   "licence": "unattributed; rights confirmed by the site's owner",
+   "author": "unattributed",
+   "publishable": true,
+   "why_not": null,
+   "shown_as": "heraldry/illustrated/finarfin.png",
+   "sha1": "f626f50787721112",
+   "size": [
+    567,
+    567
+   ]
+  },
+  {
+   "file": "q_finwe.webp",
+   "exists": true,
+   "device": null,
+   "tier": 3,
+   "batch": "uploaded 2026-07-26",
+   "basis": "supplied to the archive and NOT shown -- held as reference",
+   "source": "supplied to the workshop, 2026-07-26",
+   "licence": "unattributed; rights confirmed by the site's owner",
+   "author": "unattributed",
+   "publishable": false,
+   "why_not": "held back: q_finwe is mauve with straight rays where his Finwe is pale blue with curling flames, and the version shown already has those; q_sarati is a text in sarati and not a device, and is published on languages.html instead",
+   "shown_as": null,
+   "sha1": "35831aaa206fb9c7",
+   "size": [
+    567,
+    567
+   ]
+  },
+  {
+   "file": "q_sarati_the_two_trees.png",
+   "exists": true,
+   "device": null,
+   "tier": 3,
+   "batch": "uploaded 2026-07-26",
+   "basis": "supplied to the archive and NOT shown -- held as reference",
+   "source": "supplied to the workshop, 2026-07-26",
+   "licence": "unattributed; rights confirmed by the site's owner",
+   "author": "unattributed",
+   "publishable": false,
+   "why_not": "held back: q_finwe is mauve with straight rays where his Finwe is pale blue with curling flames, and the version shown already has those; q_sarati is a text in sarati and not a device, and is published on languages.html instead",
+   "shown_as": null,
+   "sha1": "217bf0428d685181",
+   "size": [
+    493,
+    976
+   ]
+  },
+  {
+   "file": "q_silmarils.png",
+   "exists": true,
+   "device": "silmarilsdev",
+   "tier": 2,
+   "batch": "uploaded 2026-07-26",
+   "basis": "an illustrated reconstruction supplied to the archive, cropped by map/gen_illustrated_devices.py and shown in the hall",
+   "source": "supplied to the workshop, 2026-07-26",
+   "licence": "unattributed; rights confirmed by the site's owner",
+   "author": "unattributed",
+   "publishable": true,
+   "why_not": null,
+   "shown_as": "heraldry/illustrated/silmarilsdev.png",
+   "sha1": "a87dd718ba87953e",
+   "size": [
+    567,
+    567
+   ]
+  },
+  {
    "file": "beor.png",
    "exists": true,
    "device": "beor",
@@ -1246,7 +1417,7 @@
    "source": "map/gen_forge_layers.py",
    "licence": "the archive's own",
    "publishable": true,
-   "shown": true
+   "shown": false
   },
   {
    "file": null,
