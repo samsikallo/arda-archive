@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 301,
+ "n": 300,
  "places": {
   "aeluin": {
    "ages": [],
@@ -571,7 +571,10 @@
    ]
   },
   "archet": {
-   "ages": [],
+   "ages": [
+    "SA",
+    "TA"
+   ],
    "cites": [
     "The Lord of the Rings, line 7016"
    ],
@@ -580,9 +583,13 @@
    "name_conf": "High",
    "notes": [
     "“Besides Bree itself, there was Staddle on the other side of the hill, Combe in a deep valley a little further eastward, and Archet on the edge of the Chetwood.” — The Lord of the Rings, line 7016",
-    "indexed by Christopher Tolkien as: Village of the Bree-land"
+    "indexed by Christopher Tolkien as: Village of the Bree-land",
+    "named within Bree-land by the vector spec's own block for it",
+    "Ages taken from its realm bree, having none of its own [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "bree"
+   ],
    "place_conf": "High",
    "timeline": [],
    "types": [
@@ -1565,9 +1572,12 @@
    "name_conf": null,
    "notes": [
     "also the Redhorn; Barazinbar",
-    "The cruel mountain that defeated the Fellowship with snow."
+    "The cruel mountain that defeated the Fellowship with snow.",
+    "named within Misty Mountains (Hithaeglir) by the vector spec's own block for it"
    ],
-   "parents": [],
+   "parents": [
+    "misty mountains"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -1594,9 +1604,12 @@
    "notes": [
     "spec TA: tree-city",
     "also in Lothlórien",
-    "The city of the trees; Galadriel's mirror; 'no shadow lay upon it yet'."
+    "The city of the trees; Galadriel's mirror; 'no shadow lay upon it yet'.",
+    "named within Lothlorien by the vector spec's own block for it"
    ],
-   "parents": [],
+   "parents": [
+    "lorien"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -1708,7 +1721,10 @@
    ]
   },
   "cerin amroth": {
-   "ages": [],
+   "ages": [
+    "SA",
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -1721,9 +1737,13 @@
    "n": "Cerin Amroth",
    "name_conf": null,
    "notes": [
-    "spec TA: landmark"
+    "spec TA: landmark",
+    "named within Lothlorien by the vector spec's own block for it",
+    "Ages taken from its realm lorien, having none of its own [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "lorien"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -1790,7 +1810,10 @@
    ]
   },
   "combe": {
-   "ages": [],
+   "ages": [
+    "SA",
+    "TA"
+   ],
    "cites": [
     "The Lord of the Rings, line 7015"
    ],
@@ -1799,9 +1822,13 @@
    "name_conf": "High",
    "notes": [
     "“Besides Bree itself, there was Staddle on the other side of the hill, Combe in a deep valley a little further eastward, and Archet on the edge of the Chetwood.” — The Lord of the Rings, line 7015",
-    "indexed by Christopher Tolkien as: Village of the Bree-land"
+    "indexed by Christopher Tolkien as: Village of the Bree-land",
+    "named within Bree-land by the vector spec's own block for it",
+    "Ages taken from its realm bree, having none of its own [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "bree"
+   ],
    "place_conf": "High",
    "timeline": [],
    "types": [
@@ -4414,9 +4441,12 @@
    "name_conf": "High",
    "notes": [
     "“The Firienfeld men called it, a green mountain-field of grass and heath, high above the deep-delved courses of the Snowbourn, laid upon the lap of the great mountains behind: the Starkhorn southwards, and northwards the saw-toothed ´ mass of Irensaga, between which there faced the riders, the grim black wall of the Dwimorberg, the Haunted Mountain rising out of steep slopes of sombre pines.” — The Lord of the Rings, line 34917",
-    "indexed by Christopher Tolkien as: ‘Ironsaw’, mountain at the head of Harrowdale"
+    "indexed by Christopher Tolkien as: ‘Ironsaw’, mountain at the head of Harrowdale",
+    "named within White Mountains (Ered Nimrais) by the vector spec's own block for it"
    ],
-   "parents": [],
+   "parents": [
+    "white mountains"
+   ],
    "place_conf": "High",
    "timeline": [],
    "types": [
@@ -5329,9 +5359,12 @@
    "name_conf": "High",
    "notes": [
     "“ras ‘horn’ in Barad Nimras, also in Caradhras (‘Redhorn’) and Methedras (‘Last Peak’) in the Misty Mountains; plural rais in Ered Nimrais.” — The Silmarillion, line 15999",
-    "indexed by Christopher Tolkien as: Last great peak of the Misty Mountains"
+    "indexed by Christopher Tolkien as: Last great peak of the Misty Mountains",
+    "named within Misty Mountains (Hithaeglir) by the vector spec's own block for it"
    ],
-   "parents": [],
+   "parents": [
+    "misty mountains"
+   ],
    "place_conf": "High",
    "timeline": [],
    "types": [
@@ -6416,22 +6449,6 @@
     "POLITY_SUBREGION"
    ]
   },
-  "region": {
-   "ages": [],
-   "cites": [],
-   "coords": [],
-   "n": "Region",
-   "name_conf": null,
-   "notes": [
-    "spec TA: Political / Regional Polygons"
-   ],
-   "parents": [],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
-    "POLITY_REALM"
-   ]
-  },
   "rhosgobel": {
    "ages": [
     "TA"
@@ -6907,9 +6924,12 @@
    "name_conf": "High",
    "notes": [
     "“Away to the right at the head of the great dale the mighty Starkhorn loomed up above its vast buttresses swathed in cloud; but its jagged peak, clothed in everlasting snow, gleamed far above the world, blue-shadowed upon the East, red-stained by the sunset in the West.” — The Lord of the Rings, line 34765",
-    "indexed by Christopher Tolkien as: Mountain above Dunharrow"
+    "indexed by Christopher Tolkien as: Mountain above Dunharrow",
+    "named within White Mountains (Ered Nimrais) by the vector spec's own block for it"
    ],
-   "parents": [],
+   "parents": [
+    "white mountains"
+   ],
    "place_conf": "High",
    "timeline": [],
    "types": [
@@ -8271,13 +8291,17 @@
    "name_conf": "High",
    "notes": [
     "“We met Treebeard that morning after the battle; and that night we were at Wellinghall, one of his ent-houses.” — The Lord of the Rings, line 25051",
-    "indexed by Christopher Tolkien as: Treebeard’s house"
+    "indexed by Christopher Tolkien as: Treebeard’s house",
+    "named within Fangorn Forest (Entwood) by the vector spec's own block for it"
    ],
-   "parents": [],
+   "parents": [
+    "fangorn forest"
+   ],
    "place_conf": "High",
    "timeline": [],
    "types": [
-    "MAN_MADE_DWELLING"
+    "MAN_MADE_DWELLING",
+    "NATURAL_FOREST"
    ]
   },
   "west emnet": {
@@ -8481,5 +8505,67 @@
     "POLITY_REGION"
    ]
   }
- }
+ },
+ "realm_ids": [
+  "alqualonde",
+  "angband",
+  "angmar",
+  "arnor",
+  "arthedain",
+  "balar",
+  "belegost",
+  "beornings",
+  "bombadil",
+  "bree",
+  "brethil",
+  "cardolan",
+  "dale",
+  "dolguldur",
+  "doriath",
+  "dorlomin",
+  "dorthonion",
+  "dorwinion",
+  "druadan",
+  "dunland",
+  "easterlingsfa",
+  "eotheod",
+  "erebor",
+  "eregion",
+  "esgaroth",
+  "falas",
+  "fangorn",
+  "gondolin",
+  "gondor",
+  "greenwood",
+  "harad",
+  "himring",
+  "hithlum",
+  "ironhills",
+  "isengard",
+  "khand",
+  "khazaddum",
+  "ladros",
+  "lindon",
+  "lorien",
+  "lossoth",
+  "mistyorcs",
+  "mordor",
+  "morgul",
+  "nargothrond",
+  "nogrod",
+  "numenor",
+  "ossiriand",
+  "reunited",
+  "rhudaur",
+  "rhun",
+  "rivendell",
+  "rohan",
+  "shire",
+  "thargelion",
+  "tirion",
+  "umbar",
+  "utumno",
+  "valinor",
+  "woodmen"
+ ]
 }

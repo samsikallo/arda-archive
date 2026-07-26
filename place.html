@@ -105,9 +105,11 @@ addEventListener("hashchange",render);render();
 // The gazetteer: 201 places, typed, contained and dated. place.html was built on the
 // living map's 91 points; these are the rest, and the panel for all of them.
 window.ARDA_GZ=null;
+window.ARDA_GZR=null;
 window.ardaGazLoad=function(){
  if(window.ARDA_GZ)return Promise.resolve(window.ARDA_GZ);
- return fetch("arda_gazetteer.json").then(r=>r.json()).then(d=>{window.ARDA_GZ=d.places;return d.places})
+ return fetch("arda_gazetteer.json").then(r=>r.json()).then(d=>{
+   window.ARDA_GZ=d.places;window.ARDA_GZR=new Set(d.realm_ids||[]);return d.places})
         .catch(()=>{window.ARDA_GZ={};return {}});
 };
 window.ardaGazKey=function(s){
@@ -130,9 +132,14 @@ window.ardaGazPanel=function(e){
    .replace("POLITY_","polity — ").replace(/_/g," ").toLowerCase()};
  var rows="";
  rows+='<div><b>Kind</b> · '+(e.types||[]).map(pretty).join("; ")+'</div>';
+ // A PARENT IS A REALM OR A PLACE. Caradhras is in the Misty Mountains, which is no
+ // polity -- so a link to realms.html would land nowhere. The build ships the realm ids
+ // rather than have the page guess from the string.
  if((e.parents||[]).length)
    rows+='<div><b>Within</b> · '+e.parents.map(function(p){
-     return '<a class="chip" href="realms.html#'+p+'">'+p+'</a>'}).join(" ")+'</div>';
+     var isr=window.ARDA_GZR?window.ARDA_GZR.has(p):true;
+     return '<a class="chip" href="'+(isr?'realms.html#':'place.html#')+
+            (isr?p:p.replace(/ /g,"_"))+'">'+p+'</a>'}).join(" ")+'</div>';
  if((e.ages||[]).length) rows+='<div><b>Ages</b> · '+e.ages.join(", ")+'</div>';
  var cf=[];
  if(e.name_conf) cf.push("the name is Tolkien's: "+e.name_conf);
