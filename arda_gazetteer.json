@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 193,
+ "n": 201,
  "places": {
   "amon ereb": {
    "ages": [
@@ -632,9 +632,12 @@
    "n": "Brandywine Bridge",
    "name_conf": null,
    "notes": [
-    "spec TA: bridge"
+    "spec TA: bridge",
+    "within the The Shire boundary polygon [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "shire"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -874,9 +877,12 @@
    "n": "Bucklebury + Ferry",
    "name_conf": null,
    "notes": [
-    "spec TA: town+ferry"
+    "spec TA: town+ferry",
+    "within the The Shire boundary polygon [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "shire"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -897,9 +903,12 @@
    "n": "Bywater",
    "name_conf": null,
    "notes": [
-    "spec TA: village"
+    "spec TA: village",
+    "within the The Shire boundary polygon [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "shire"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -1296,9 +1305,12 @@
    "notes": [
     "spec TA: dark fortress",
     "also the Hill of Sorcery",
-    "The Necromancer's keep — Sauron veiled, 1050–2941; thrown down by Galadriel."
+    "The Necromancer's keep — Sauron veiled, 1050–2941; thrown down by Galadriel.",
+    "within the Mirkwood (Greenwood the Great / Eryn Lasgalen) boundary polygon [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "greenwood"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -1478,6 +1490,56 @@
     "MAN_MADE_LANDMARK"
    ]
   },
+  "east emnet": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 575,
+     "y": 430
+    }
+   ],
+   "n": "East-Emnet",
+   "name_conf": null,
+   "notes": [
+    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec"
+   ],
+   "parents": [
+    "rohan"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
+   ]
+  },
+  "eastfold": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 570,
+     "y": 345
+    }
+   ],
+   "n": "Eastfold",
+   "name_conf": null,
+   "notes": [
+    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec"
+   ],
+   "parents": [
+    "rohan"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
+   ]
+  },
   "edhellond": {
    "ages": [],
    "cites": [],
@@ -1553,9 +1615,12 @@
    "n": "Edoras/Meduseld",
    "name_conf": null,
    "notes": [
-    "spec TA: royal town"
+    "spec TA: royal town",
+    "within the Rohan (grant bounds of 2510, dotted line) boundary polygon [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "rohan"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -1699,9 +1764,12 @@
    "n": "Elvenking's Halls",
    "name_conf": null,
    "notes": [
-    "spec TA: cave-city"
+    "spec TA: cave-city",
+    "within the Mirkwood (Greenwood the Great / Eryn Lasgalen) boundary polygon [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "greenwood"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -2356,9 +2424,12 @@
    "n": "Frogmorton",
    "name_conf": null,
    "notes": [
-    "spec TA: village"
+    "spec TA: village",
+    "within the The Shire boundary polygon [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "shire"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -2492,6 +2563,31 @@
     "POLITY_REALM"
    ]
   },
+  "gorgoroth": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 800,
+     "y": 325
+    }
+   ],
+   "n": "Gorgoroth",
+   "name_conf": null,
+   "notes": [
+    "interior label of Mordor (realm = its mountain rectangle), per the vector spec"
+   ],
+   "parents": [
+    "mordor"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
+   ]
+  },
   "greenfields": {
    "ages": [
     "TA"
@@ -2545,7 +2641,7 @@
     "Círdan's harbours on the Gulf of Lune; the Ring-bearers sailed hence."
    ],
    "parents": [
-    "lindon"
+    "ossiriand"
    ],
    "place_conf": "H",
    "timeline": [],
@@ -2862,7 +2958,8 @@
    "name_conf": null,
    "notes": [
     "spec TA: town",
-    "Under the Hill: Bilbo's and Frodo's door, where two Quests began."
+    "Under the Hill: Bilbo's and Frodo's door, where two Quests began.",
+    "within the The Shire boundary polygon [I-H]"
    ],
    "parents": [
     "shire"
@@ -3312,6 +3409,31 @@
     "MAN_MADE_TOWN"
    ]
   },
+  "lithlad": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 880,
+     "y": 330
+    }
+   ],
+   "n": "Lithlad",
+   "name_conf": null,
+   "notes": [
+    "interior label of Mordor (realm = its mountain rectangle), per the vector spec"
+   ],
+   "parents": [
+    "mordor"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
+   ]
+  },
   "lond daer": {
    "ages": [],
    "cites": [],
@@ -3484,7 +3606,8 @@
    "notes": [
     "spec TA: town (chief)",
     "also on the White Downs",
-    "Chief town of the Shire; the Mathom-house."
+    "Chief town of the Shire; the Mathom-house.",
+    "within the The Shire boundary polygon [I-H]"
    ],
    "parents": [
     "shire"
@@ -4016,6 +4139,31 @@
     "MAN_MADE_HALL"
    ]
   },
+  "nurn": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 860,
+     "y": 205
+    }
+   ],
+   "n": "Nurn",
+   "name_conf": null,
+   "notes": [
+    "interior label of Mordor (realm = its mountain rectangle), per the vector spec"
+   ],
+   "parents": [
+    "mordor"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
+   ]
+  },
   "nw shore forest at sea of rhun": {
    "ages": [],
    "cites": [],
@@ -4235,9 +4383,12 @@
    "name_conf": null,
    "notes": [
     "spec TA: house",
-    "Radagast the Brown's dwelling at Mirkwood's edge."
+    "Radagast the Brown's dwelling at Mirkwood's edge.",
+    "within the Mirkwood (Greenwood the Great / Eryn Lasgalen) boundary polygon [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "greenwood"
+   ],
    "place_conf": "M",
    "timeline": [],
    "types": [
@@ -4535,9 +4686,12 @@
    "n": "Stock",
    "name_conf": null,
    "notes": [
-    "spec TA: village"
+    "spec TA: village",
+    "within the The Shire boundary polygon [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "shire"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -4977,6 +5131,31 @@
     "NATURAL_PLAIN"
    ]
   },
+  "the wold": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 560,
+     "y": 490
+    }
+   ],
+   "n": "The Wold",
+   "name_conf": null,
+   "notes": [
+    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec"
+   ],
+   "parents": [
+    "rohan"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
+   ]
+  },
   "three farthing stone": {
    "ages": [],
    "cites": [],
@@ -4991,9 +5170,12 @@
    "n": "Three-Farthing Stone",
    "name_conf": null,
    "notes": [
-    "spec TA: landmark"
+    "spec TA: landmark",
+    "within the The Shire boundary polygon [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "shire"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -5246,9 +5428,12 @@
    "n": "Tuckborough/Great Smials",
    "name_conf": null,
    "notes": [
-    "spec TA: town"
+    "spec TA: town",
+    "within the The Shire boundary polygon [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "shire"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -5452,6 +5637,56 @@
     "MAN_MADE_TOWER"
    ]
   },
+  "west emnet": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 540,
+     "y": 410
+    }
+   ],
+   "n": "West-Emnet",
+   "name_conf": null,
+   "notes": [
+    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec"
+   ],
+   "parents": [
+    "rohan"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
+   ]
+  },
+  "westfold": {
+   "ages": [],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 500,
+     "y": 345
+    }
+   ],
+   "n": "Westfold",
+   "name_conf": null,
+   "notes": [
+    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec"
+   ],
+   "parents": [
+    "rohan"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
+   ]
+  },
   "white mountains": {
    "ages": [],
    "cites": [],
@@ -5503,9 +5738,12 @@
    "n": "Woodhall/Woody End",
    "name_conf": null,
    "notes": [
-    "spec TA: locality"
+    "spec TA: locality",
+    "within the The Shire boundary polygon [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "shire"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
