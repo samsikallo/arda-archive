@@ -80,12 +80,12 @@ function draw(){
   g.textContent=glyph[evt.type];
   g.addEventListener('mousemove',e2=>tip(e2,'<b>'+evt.label+'</b><br><span class="m">'+multiCal(evt.y)+'</span><br><span class="m">'+evt.t+' \u00b7 '+evt.type+' \u00b7 '+evt.conf+(evt.approx?' \u00b7 approximate':'')+'</span><br><span class="m">'+evt.cite+'</span>'+(evt.actors.length?'<br>with: '+evt.actors.join(', '):'')));
   g.addEventListener('mouseleave',hide);});
- let chars=DATA.chars.filter(c=>races[c.race]&&(!window._lvq||(c.label+' '+(c.people||'')).toLowerCase().includes(window._lvq)));{const RO={ainur:0,elves:1,men:2,dwarves:3,hobbits:4};const pmin={};chars.forEach(c=>{const k=c.race+'|'+(c.people||'x');if(!(k in pmin)||c.b<pmin[k])pmin[k]=c.b});chars=chars.slice().sort((x,y)=>(RO[x.race]??9)-(RO[y.race]??9)||pmin[x.race+'|'+(x.people||'x')]-pmin[y.race+'|'+(y.people||'x')]||((x.people||'')<(y.people||'')?-1:(x.people||'')>(y.people||'')?1:0)||x.b-y.b);}H=Math.max(820,92+13.5*chars.length);document.getElementById('tl').setAttribute('height',H);var _lc=document.getElementById('lvcount');if(_lc)_lc.textContent=chars.length+' shown';
- const y0=74,rh=Math.max(13,Math.min(15.2,(H-92)/Math.max(chars.length,1)));
+ let chars=DATA.chars.filter(c=>races[c.race]&&(!window._lvq||(c.label+' '+(c.people||'')).toLowerCase().includes(window._lvq)));{const RO={ainur:0,elves:1,men:2,dwarves:3,hobbits:4};const pmin={};chars.forEach(c=>{const k=c.race+'|'+(c.people||'x');if(!(k in pmin)||c.b<pmin[k])pmin[k]=c.b});chars=chars.slice().sort((x,y)=>(RO[x.race]??9)-(RO[y.race]??9)||pmin[x.race+'|'+(x.people||'x')]-pmin[y.race+'|'+(y.people||'x')]||((x.people||'')<(y.people||'')?-1:(x.people||'')>(y.people||'')?1:0)||x.b-y.b);}H=Math.max(820,92+16*chars.length)/*13.5 gave a 10.5px name 13.5px of lane, so ascenders and descenders met the bars above and below; 16 clears them*/;document.getElementById('tl').setAttribute('height',H);var _lc=document.getElementById('lvcount');if(_lc)_lc.textContent=chars.length+' shown';
+ const y0=74,rh=Math.max(14,Math.min(16,(H-92)/Math.max(chars.length,1)));
  let _pr=null,_pp=null;chars.forEach((c,i)=>{
   const y=y0+i*rh;
   if(c.race!==_pr){_pr=c.race;_pp=null;const sep=el('line',{x1:0,y1:y-rh/2,x2:W,y2:y-rh/2,stroke:'var(--line)','stroke-width':1.4,opacity:.7});const rl=el('text',{x:W-8,y:y+3,'font-size':11,'text-anchor':'end',fill:'var(--'+c.race+')','font-style':'italic','font-variant':'small-caps'});rl.textContent=c.race;}
-  const _pk=c.people||'x';if(_pk!==_pp){_pp=_pk;if(_pk!=='x'){const pl=el('text',{x:6,y:y+3,'font-size':9.5,fill:'var(--mut)','font-style':'italic',opacity:.85});pl.textContent=_pk;}}
+  const _pk=c.people||'x';let _gut=0;if(_pk!==_pp){_pp=_pk;if(_pk!=='x'){const pl=el('text',{x:6,y:y-3,'font-size':9.5,fill:'var(--mut)','font-style':'italic',opacity:.85});/* y+3 put the group label under its own row's bar, which is 5px thick and centred on y, so the bar ran straight through the words. It sits on the name's line now, to the left of the name, which has already stepped aside for it. */pl.textContent=_pk;_gut=10+_pk.length*4.9;}}
   const bx=X(c.b),dx=c.d===null?W+30:X(c.d);
   if(dx<-30||bx>W+30)return;
   const col='var(--'+c.race+')';
@@ -98,7 +98,12 @@ function draw(){
    (c.d===null?'end: open':'end: '+c.dt+' ['+c.cd+']')+(c.note?'<br><span class="m">'+c.note+'</span>':'')+'<br><span class="m">click for the full record</span>'));
   bar.addEventListener('mouseleave',hide);bar.style.cursor='pointer';bar.addEventListener('click',()=>location.href='character.html#'+c.id);
   if(c.d===null){const ar=el('text',{x:Math.min(W-10,W-10),y:y+4,'font-size':11,fill:col});ar.textContent='\u2192';}
-  const lx=Math.max(4,Math.min(Math.max(bx,0)+5,W-120));
+  // THE PEOPLE-LABEL AND THE NAME WERE WRITTEN IN THE SAME PLACE. A people-group is
+  // labelled once, in the left margin at x=6; a life whose bar begins off the left edge
+  // has its name floored at x=4. On the first row of every group the two were drawn one
+  // over the other, six pixels apart -- which is why Cirdan, Luthien, Angrod and Aegnor
+  // read as struck through. The name steps past the group-label on that row only.
+  const lx=Math.max(4+_gut,Math.min(Math.max(bx,0)+5,W-120));
   const t=el('text',{x:lx,y:y-3,'font-size':10.5,fill:'var(--ink)',opacity:0.85});
   t.textContent=c.label.split(' (')[0];
   DATA.events.forEach(evt=>{
