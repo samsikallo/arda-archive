@@ -21,6 +21,14 @@ h3.sub{font-variant:small-caps;font-weight:normal;color:#7a6a50;font-size:15px;m
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:8px}
 .dcard{background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid var(--line);border-radius:10px;padding:10px 12px;box-shadow:0 2px 6px rgba(60,40,10,.12);text-align:center}
 .dcard img,.dcard svg{width:74px;height:88px;object-fit:contain}
+/* A DEVICE THAT IS WIDER THAN IT IS TALL gets the card's width instead of the portrait
+   box. The Flying Corps of Mordor is a pair of outspread wings two and a half times as
+   wide as tall; contained in a 74-by-88 box it came out about 29 pixels tall where every
+   other device came out 84, and it read as a small mark among big ones. Given the full
+   width of the card it comes out about 76 -- the same visual weight as the rest. The
+   class is set from the image's own natural proportions when it loads, so nothing has to
+   be recorded about it and a plate that changes shape is handled by itself. */
+.dcard img.wide{width:100%;max-width:190px;height:auto}
 .dcard .n{font-variant:small-caps;color:#5a4626;font-size:13.5px;margin-top:3px}
 .dcard .bz{font-size:10.5px;color:var(--mut);font-style:italic;margin-top:2px;line-height:1.35}
 .dcard .tk{font-size:10.5px;color:#3a3226;margin-top:5px;line-height:1.4;text-align:left;padding:5px 8px;background:#f5edd8;border-left:3px solid #c9a227;border-radius:0 6px 6px 0}
@@ -190,6 +198,17 @@ function draw(){
    html+='<h3 class="sub">'+sub+(sub==="The Houses of Gondolin"?' <a href="gondolin.html" style="color:#7a4a12;font-size:11px">— the full hall ⧉</a>':'')
      +'<span class="n">'+g.length+'</span></h3><div class="grid">'+g.map(dev).join("")+'</div>';});});
  document.getElementById("catalog").innerHTML=html||'<div id="hnone">No device answers to that name. '+keys.length+' in all.</div>';
+ // A DEVICE WIDER THAN IT IS TALL takes the card's width instead of the portrait box.
+ // The Flying Corps of Mordor is a pair of outspread wings two and a half times as wide
+ // as tall; contained in a 74-by-88 box its ink came out about 29 pixels tall where every
+ // other device came out 84, and it read as a small mark among big ones. Given the card's
+ // width it comes out about 76 -- the same weight as the rest. Read off the image's own
+ // proportions rather than recorded anywhere, so a plate that changes shape needs no
+ // change here, and set after the grid is written because naturalWidth is 0 until then.
+ Array.prototype.forEach.call(document.querySelectorAll("#catalog .dcard img"),function(im){
+  var f=function(){if(im.naturalWidth>im.naturalHeight*1.5)im.classList.add("wide")};
+  if(im.complete&&im.naturalWidth)f(); else im.addEventListener("load",f);
+ });
 }
 draw();
 // swap symbol-based (interpretive) devices to their drawn form: they use <use>, defs come from... none here.
