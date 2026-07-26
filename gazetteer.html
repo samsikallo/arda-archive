@@ -131,19 +131,40 @@ fetch("arda_gazetteer.json").then(r=>r.json()).then(d=>{
     '<div class="cite" style="padding:30px 0">The attached documents do not provide enough information to answer this.</div>';
   document.getElementById("count").textContent=rows.length+" of "+K.length+" places";
  }
+ // THE QUESTIONS ARE ADDRESSES. The brief's three questions were buttons and nothing
+ // else: a reader could not link to an answer, could not come back to one, and — this is
+ // how the fault was found — nobody could drive them from outside the browser to check
+ // that they answer anything. The state now lives in the hash, so
+ // gazetteer.html#kind=NATURAL&changed=1 IS "natural landmarks that changed".
+ const FIELDS=["q","age","kind","realm"];
+ function readHash(){
+  const h=new URLSearchParams((location.hash||"").replace(/^#/,""));
+  if(!h.toString())return false;
+  FIELDS.forEach(f=>{if(h.has(f))document.getElementById(f).value=h.get(f)});
+  document.getElementById("ch").checked=h.get("changed")==="1";
+  return true;
+ }
+ function writeHash(){
+  const h=new URLSearchParams();
+  FIELDS.forEach(f=>{const v=document.getElementById(f).value;if(v)h.set(f,v)});
+  if(document.getElementById("ch").checked)h.set("changed","1");
+  const s=h.toString();
+  history.replaceState(null,"",s?("#"+s):location.pathname);
+ }
  ["q","age","kind","realm","ch"].forEach(id=>{
    const el=document.getElementById(id);
-   el.addEventListener("input",draw);el.addEventListener("change",draw)});
+   const go=()=>{writeHash();draw()};
+   el.addEventListener("input",go);el.addEventListener("change",go)});
+ const ASK={fa:"age=FA",gondor:"realm=gondor&age=TA",
+            changed:"kind=NATURAL&changed=1",clear:""};
  document.querySelectorAll("button.q").forEach(b=>b.addEventListener("click",()=>{
-   const set=(i,v)=>{document.getElementById(i).value=v};
-   const q=b.dataset.q;
-   set("q","");set("age","");set("kind","");set("realm","");
+   FIELDS.forEach(f=>{document.getElementById(f).value=""});
    document.getElementById("ch").checked=false;
-   if(q==="fa")set("age","FA");
-   if(q==="gondor"){set("realm","gondor");set("age","TA")}
-   if(q==="changed"){set("kind","NATURAL");document.getElementById("ch").checked=true}
-   draw();
+   location.hash=ASK[b.dataset.q]||"";
+   readHash();draw();
  }));
+ window.addEventListener("hashchange",()=>{readHash();draw()});
+ readHash();
  draw();
 });
 
