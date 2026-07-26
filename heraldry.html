@@ -100,7 +100,7 @@ Women within a circle personal / Men within a lozenge / general (impersonal) des
 Begin from any of the reconstructed devices and alter it, or take a device at random. The forge reads back a blazon and warns when the points fall outside the ranks Tolkien names. <span class="cite">Everything the forge draws is new and original — computed here, copied from nothing.</span></div>
 <div class="forge">
 <div class="ctl">
-<label>Begin from a device <span class="cite">— Tolkien's own, where he left one</span></label>
+<label>Begin from a device <span class="cite">— grouped by what you actually get, since for most of the hall the card shows a licensed drawing and the forge holds only the archive's reading of it</span></label>
 <select id="f_preset"><option value="">— a blank field —</option></select>
 <label>Shape — the bearer's kind</label>
 <select id="f_shape"><option value="circle">Circle — a woman's device</option><option value="lozenge" selected>Lozenge — a man's device</option><option value="square">Square — a house or realm</option><option value="shield">Shield, long and tapering — the manner of Gondolin</option></select>
@@ -215,11 +215,39 @@ function fillCharges(id,sel){var el=document.getElementById(id);el.innerHTML="";
   o.textContent=(c==="none"?"— none —":window.ARDA_CHARGE_LABEL[c].replace(/^an? /,""));
   if(c===sel)o.selected=true;el.appendChild(o);});}
 fillCharges("f_charge","star");fillCharges("f_charge2","none");
-// presets: every device in the hall that the forge can draw
+// presets: every device in the hall that the forge can draw -- IN THREE GROUPS, because
+// they are three different things and one flat list said they were one.
+//
+// The old label read "Tolkien's own, where he left one", and thirty-seven of the fifty
+// entries beneath it are not that at all: their cards show licensed artwork, and the spec
+// the menu loads is the archive's own reading of the same device, drawn nowhere else on
+// the site. Five more load a plain field -- rightly, since Morgoth is sable unblazoned and
+// Penlod's two houses have no recorded device -- but a visitor who picks one and gets an
+// empty shield has no way to tell an honest blank from a broken entry.
+//
+//   drawn here   the card itself is this drawing; loading it gives back exactly what
+//                you see above
+//   after the drawing   the card shows a licensed rendering; this is the archive reading
+//                the same blazon in courses
+//   a plain field   the record gives no device, and the blank IS the answer
 (function(){var sel=document.getElementById("f_preset"),H=window.ARDA_HERALD;
- Object.keys(H).forEach(function(k){var h=H[k];if(!h.forge)return;
-  var o=document.createElement("option");o.value=k;
-  o.textContent=h.label.replace(/ —.*$/,"")+(h.canon?"":" ◆");sel.appendChild(o);});
+ function bare(f){if(f.layers&&f.layers.length)return false;
+  return !f.points&&!f.rings&&!f.mandala&&!f.gems&&!f.text&&!f.inner&&
+         (!f.charge||f.charge==="none")&&(!f.charge2||f.charge2==="none");}
+ var GROUP=[["Drawn here in the forge — the card is this very drawing",
+             function(h){return !h.file&&!bare(h.forge);}],
+            ["After the drawing — the card shows a licensed rendering of it",
+             function(h){return !!h.file&&!bare(h.forge);}],
+            ["A plain field — the record leaves no device, and the blank is the answer",
+             function(h){return bare(h.forge);}]];
+ GROUP.forEach(function(g){
+  var ks=Object.keys(H).filter(function(k){return H[k].forge&&g[1](H[k]);});
+  if(!ks.length)return;
+  var og=document.createElement("optgroup");og.label=g[0];
+  ks.forEach(function(k){var h=H[k];
+   var o=document.createElement("option");o.value=k;
+   o.textContent=h.label.replace(/ —.*$/,"")+(h.canon?"":" ◆");og.appendChild(o);});
+  sel.appendChild(og);});
  sel.onchange=function(){var h=H[this.value];if(!h||!h.forge)return;
   // clear first: merging alone left the last device's petals, jewels and rings behind,
   // so a preset drew things its own spec never asked for
@@ -260,6 +288,11 @@ var LTYPES=[["petals","petals"],["wedges","rays"],["darts","darts"],["discs","ro
             ["segments","a ring in pieces"],["pinwheel","a pinwheel"],["veins","veins"],
             ["star","a star"],["poly","a polygon"],["outline","an outline"],["square","a square"],
             ["charge","a charge"],
+            // lobes and glyph were in use on four devices and missing from this list, so a
+            // visitor who loaded Galadriel and touched the bench turned her garland-leaves
+            // into petals and the Steward's letters into roundels. It is the same fault the
+            // three field-dividing kinds below were added for, found again by page_smoke.
+            ["lobes","lobes"],["glyph","a letter"],
             // the courses that divide the field instead of turning about its centre --
             // the manner of the devices of Men. Without these in the list, loading
             // Beren's device showed his ground and his hills as "petals", and touching
@@ -272,13 +305,14 @@ var LFIELDS={petals:["n","r0","r1","w","bow","swirl","round","rot"],wedges:["n",
  ring:["r","w"],disc:["r"],bands:[],arcs:["n","r","w","gap","rot"],corners:["n","r","size","rot"],
  dashes:["n","r","len","w"],segments:["n","r0","r1","rot"],pinwheel:["n","r"],
  veins:["n","r0","r1","w","side","rot"],star:["n","r"],poly:["n","r"],outline:["n","r","w","rot"],
- square:["s"],charge:["r","a","size"],
+ square:["s"],charge:["r","a","size"],lobes:["n","r","len","wid","rot"],glyph:["size","ox","oy"],
  half:["at"],stripe:["from","to"],hills:["n","base","peak"]};
 var LSTEP={n:[1,1,48],r:[0.01,0,1.1],r0:[0.01,0,1.1],r1:[0.01,0,1.1],w:[0.005,0,0.6],
  size:[0.005,0.005,0.5],bow:[0.02,0.1,0.95],swirl:[0.01,-0.3,0.3],round:[0.05,0,1],
  at:[0.02,-1,1],from:[0.02,-1.2,1.2],to:[0.02,-1.2,1.2],base:[0.02,-1.2,1.2],peak:[0.02,-1.2,1.2],
  taper:[0.05,0,1.2],barb:[0.05,0.1,0.95],rot:[0.0125,0,1],len:[0.05,0,1],gap:[0.05,0,0.8],
- side:[1,0,6],a:[0.0625,-0.5,0.5],s:[0.01,0.02,0.9]};
+ side:[1,0,6],a:[0.0625,-0.5,0.5],s:[0.01,0.02,0.9],wid:[0.005,0.005,0.4],
+ ox:[0.01,-1,1],oy:[0.01,-1,1]};
 function palSelect(v,on){
  var s=document.createElement("select");s.className="lsel";
  PAL.forEach(function(p,i){var o=document.createElement("option");o.value=i;o.textContent=p[0];
@@ -364,7 +398,8 @@ function draw(){
   var names={petals:"petals",wedges:"rays",darts:"darts",discs:"roundels",scatter:"strewn charges",
              ring:"a ring",disc:"a disc",bands:"bands",arcs:"arcs",corners:"corner pieces",
              dashes:"a broken ring",segments:"a ring in pieces",pinwheel:"a pinwheel",veins:"veins",
-             star:"a star",poly:"a polygon",outline:"an outline",square:"a square",charge:"a charge"};
+             star:"a star",poly:"a polygon",outline:"an outline",square:"a square",charge:"a charge",
+             lobes:"lobes",glyph:"a letter"};
   parts.push("built in "+st.layers.length+" courses ("+Object.keys(seen).map(function(k){
    return (seen[k]>1?seen[k]+" of ":"")+(names[k]||k);}).join(", ")+")");}
  var b=cap(tinct)+(parts.length?", "+parts.join(", "):"")+(st.points?", within "+st.points+" points reaching the rim":"")+".";
