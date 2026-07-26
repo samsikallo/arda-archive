@@ -25,17 +25,32 @@ window.ardaSwapEmblems=function(sv,NS){var defs=sv.querySelector("defs");if(!def
 // ===== the hall's credit line =====
 // Written by map/gen_heraldry_credits.py. Do not edit here.
 window.ardaHeraldCredits=function(){var seen={},rows=[],changed=[];
+ // CREDIT WHAT IS SHOWN, not what is canonical. This used to list a device only if
+ // h.canon was true, and canonicity has nothing whatever to do with attribution: Durin's
+ // emblem is CC BY-SA 3.0, is on the page, and is marked canon:false because Tolkien drew
+ // the emblems and not that rendering of them -- so it appeared nowhere in the credits,
+ // which the licence does not allow. The Mole's went uncredited the same way. The test is
+ // whether a FILE is displayed and has a source.
  Object.keys(window.ARDA_HERALD).forEach(function(k){var h=window.ARDA_HERALD[k];
-  if(!h.canon||seen[h.src])return;seen[h.src]=1;
-  rows.push('<a href="'+h.src+'" target="_blank" style="color:#7a4a12">'+h.label+'</a> — '+
-            h.license+(h.author&&h.author!=='?'?' · '+h.author:''));});
+  if(!h.file||!h.src||seen[h.src])return;seen[h.src]=1;
+  var link=/^https?:/.test(h.src)
+   ? '<a href="'+h.src+'" target="_blank" style="color:#7a4a12">'+h.label+'</a>'
+   : h.label+' <span class="cite">('+h.src+')</span>';
+  // Commons author fields often carry several lines of derivation history; collapsed,
+  // or the credit list comes out broken across the page
+  var au=(h.author&&h.author!=='?')?String(h.author).replace(/\s+/g,' ').trim():'';
+  if(au.length>90) au=au.slice(0,88)+'…';
+  rows.push(link+' — '+(h.license||'licence not recorded')+(au?' · '+au:''));});
  // CC BY-SA asks that a change be indicated, not just allowed
  Object.keys(window.ARDA_HERALD).forEach(function(k){var h=window.ARDA_HERALD[k];
   if(h.modified) changed.push('<b>'+h.label+'</b> — '+h.modified);});
- var out='<b>Heraldry credits.</b> Canonical devices are recreations of Tolkien\'s designs'+
-  ' from Wikimedia Commons, reused under their licenses (CC BY-SA / Public Domain) with'+
-  ' attribution. Interpretive devices (Durin\'s Folk, Fingolfin) are the archive\'s own'+
-  ' lore-derived reconstructions, tagged as such.'+
+ // The old wording gave Durin's Folk and Fingolfin as examples of the archive's own
+ // reconstructions; both are shown from somebody else's file now, so the examples were
+ // false. It says what the list IS instead of naming cases that move.
+ var out='<b>Heraldry credits.</b> Every drawing shown in this hall that is not the'+
+  ' archive\'s own is credited below, with its licence: the freely-licensed recreations'+
+  ' from Wikimedia Commons, and the illustrated set supplied to the archive. Devices'+
+  ' marked \u25c6 are computed by the forge and are the archive\'s own work.'+
   '<br><span class="cite" style="font-size:10px">'+rows.join(' · ')+'</span>';
  if(changed.length) out+='<br><b>Changes made to a licensed file.</b> '+
   '<span class="cite" style="font-size:10px">'+changed.join(' · ')+'</span>';
