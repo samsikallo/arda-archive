@@ -51,7 +51,7 @@ function render(){
 const key=(location.hash||"").slice(1);
 const p=M.pois.find(x=>slug(x.n)==key)||M.pois.find(x=>nrm(x.n).includes(nrm(decodeURIComponent(key||"")))); 
 const main=document.getElementById("main");
-if(!p){main.innerHTML='<div class="cite" style="padding:60px 0;text-align:center">No such place in the charts. <a href="arda_timemap_jpeg.html">Open the Living Map</a>.</div>';return}
+/*gz-fallback*/if(!p){ardaGazLoad().then(function(G){var e=ardaGazFind(G,key);if(e){document.title=e.n+" \u2014 the Arda Archive";document.getElementById("main").innerHTML=ardaGazRecord(e);}});main.innerHTML='<div class="cite" style="padding:60px 0;text-align:center">No such place in the charts. <a href="arda_timemap_jpeg.html">Open the Living Map</a>.</div>';return}
 document.title=p.n+" — the Arda Archive";
 const near=(x,y,r)=>Math.hypot(x-p.x,y-p.y)<r;
 const battles=A.campaigns.filter(c=>{const b=M.battles.find(z=>z.id==c.id);return b&&near(b.x,b.y,120)});
@@ -95,8 +95,69 @@ ${quotes.map(q=>`<div class="ev" style="font-style:italic">“${q.q}” <span cl
 const render0=render;render=function(){render0();
 const key=(location.hash||"").slice(1);
 const pp=M.pois.find(x=>slug(x.n)==key);
+/*gz-panel*/ardaGazLoad().then(function(G){var ge=ardaGazFind(G,key);if(ge){var h=ardaGazPanel(ge);if(h)document.getElementById("main").insertAdjacentHTML("beforeend",h);}});
 if(pp){booksPanel(pp.n.split(" —")[0].split(",")[0]).then(html=>{const s=document.getElementById("bookspot");if(s&&html)s.outerHTML=html;});}};
 addEventListener("hashchange",render);render();
 });
 </script>
-<script src="speak.js"></script><script src="quotes.js"></script><script src="touch.js"></script><script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script><script src="nav.js"></script></body></html>
+<script src="speak.js"></script><script src="quotes.js"></script><script src="touch.js"></script><script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script><script src="nav.js"></script><!-- ===== gazetteer panel, from map/gen_place_gazetteer.py ===== -->
+<script>
+// The gazetteer: 201 places, typed, contained and dated. place.html was built on the
+// living map's 91 points; these are the rest, and the panel for all of them.
+window.ARDA_GZ=null;
+window.ardaGazLoad=function(){
+ if(window.ARDA_GZ)return Promise.resolve(window.ARDA_GZ);
+ return fetch("arda_gazetteer.json").then(r=>r.json()).then(d=>{window.ARDA_GZ=d.places;return d.places})
+        .catch(()=>{window.ARDA_GZ={};return {}});
+};
+window.ardaGazKey=function(s){
+ return (s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+   .replace(/\(.*?\)/g,"").toLowerCase().replace(/[^a-z0-9 ]/g," ")
+   .replace(/\s+/g," ").trim();
+};
+window.ardaGazFind=function(G,key){
+ if(!G)return null;
+ var k=window.ardaGazKey(decodeURIComponent(key||"").replace(/_/g," "));
+ if(G[k])return G[k];
+ var hit=Object.keys(G).find(function(x){return x.replace(/ /g,"_")===k.replace(/ /g,"_")});
+ if(hit)return G[hit];
+ hit=Object.keys(G).find(function(x){return x.indexOf(k)===0||k.indexOf(x)===0});
+ return hit?G[hit]:null;
+};
+window.ardaGazPanel=function(e){
+ if(!e)return "";
+ var pretty=function(t){return t.replace("NATURAL_","natural — ").replace("MAN_MADE_","made — ")
+   .replace("POLITY_","polity — ").replace(/_/g," ").toLowerCase()};
+ var rows="";
+ rows+='<div><b>Kind</b> · '+(e.types||[]).map(pretty).join("; ")+'</div>';
+ if((e.parents||[]).length)
+   rows+='<div><b>Within</b> · '+e.parents.map(function(p){
+     return '<a class="chip" href="realms.html#'+p+'">'+p+'</a>'}).join(" ")+'</div>';
+ if((e.ages||[]).length) rows+='<div><b>Ages</b> · '+e.ages.join(", ")+'</div>';
+ var cf=[];
+ if(e.name_conf) cf.push("the name is Tolkien's: "+e.name_conf);
+ if(e.place_conf) cf.push("a text places it: "+e.place_conf);
+ if(cf.length) rows+='<div class="cite">'+cf.join(" · ")+'</div>';
+ var tl="";
+ (e.timeline||[]).forEach(function(t){
+   tl+='<div class="ev"><b>'+(t.when||"")+'</b> — '+(t.status||"")+'. '+(t.what||"")+
+       (t.cite?' <span class="cite">'+t.cite+'</span>':'')+'</div>';
+ });
+ if(tl) tl='<div style="margin-top:8px"><b>Through the Ages</b>'+tl+'</div>';
+ return '<div class="card"><h3 style="margin:0 0 6px">In the gazetteer</h3>'+rows+tl+
+        '<div class="cite" style="margin-top:8px">Built from the vector map specification, '+
+        'the geographic reconstruction\'s evidence table, the living map and the realms.</div></div>';
+};
+// a record for a place the living map does not carry
+window.ardaGazRecord=function(e){
+ return '<div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap">'+
+   '<h2 id="nm">'+e.n+'</h2><span class="cite" style="font-size:14px">'+
+   ((e.ages||[]).join(", ")||"of Arda")+'</span></div><div class="orn">\u2766 \u2726 \u2766</div>'+
+   window.ardaGazPanel(e)+
+   ((e.notes||[]).length?'<div class="card"><h3 style="margin:0 0 6px">What is recorded</h3>'+
+     e.notes.map(function(n){return '<div>'+n+'</div>'}).join("")+'</div>':'')+
+   ((e.cites||[]).length?'<div class="cite" style="margin-top:10px">'+e.cites.join(" · ")+'</div>':'');
+};
+</script>
+<!-- ===== end gazetteer panel ===== -->
+</body></html>

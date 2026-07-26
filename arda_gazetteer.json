@@ -194,18 +194,61 @@
     "MAN_MADE_FORTRESS"
    ]
   },
-  "angmar label": {
+  "angmar": {
    "ages": [],
    "cites": [],
    "coords": [],
-   "n": "ANGMAR label",
+   "n": "Angmar",
    "name_conf": null,
    "notes": [
     "spec TA: Political / Regional Polygons"
    ],
    "parents": [],
    "place_conf": "H",
-   "timeline": [],
+   "timeline": [
+    {
+     "cite": "App A [C]",
+     "realm": "angmar",
+     "status": "event",
+     "what": "The great assault: Amon Sûl razed, Rhudaur absorbed, Cardolan broken",
+     "when": "1409"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "angmar",
+     "status": "taken",
+     "what": "Fornost taken — then the realm annihilated by Eärnil's host and Glorfindel: 'not a man nor an orc of that realm remained west of the Mountains'",
+     "when": "1974–75"
+    },
+    {
+     "cite": "App A; LotR I.12 [C]",
+     "realm": "rhudaur",
+     "status": "ruined",
+     "what": "Its force spent as Angmar's vanguard; the land after holds only trolls and ruin",
+     "when": "T.A. 1409"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "arthedain",
+     "status": "burned",
+     "what": "The long Angmar war: Amon Sûl burned (1409); the Great Plague (1636); Fornost falls (1974); Arvedui drowns in Forochel (1975)",
+     "when": "T.A. 1409–1974"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "angmar",
+     "status": "founded",
+     "what": "The Witch-king (unknown then to be the Nazgûl-lord) founds the realm at Carn Dûm",
+     "when": "c. T.A. 1300"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "rhudaur",
+     "status": "event",
+     "what": "'an evil lord of the Hill-men' seizes power in secret league with Angmar; the Dúnedain remnant flees",
+     "when": "c. T.A. 1350"
+    }
+   ],
    "types": [
     "POLITY_REALM"
    ]
@@ -265,18 +308,54 @@
     "MAN_MADE_CITY"
    ]
   },
-  "arnor ruined": {
+  "arnor": {
    "ages": [],
    "cites": [],
    "coords": [],
-   "n": "Arnor (ruined",
+   "n": "Arnor",
    "name_conf": null,
    "notes": [
     "spec TA: Political / Regional Polygons"
    ],
    "parents": [],
    "place_conf": "H",
-   "timeline": [],
+   "timeline": [
+    {
+     "cite": "App A/B [C]",
+     "realm": "arnor",
+     "status": "founded",
+     "what": "Elendil, cast up in the North, founds the realm; Annúminas its seat",
+     "when": "S.A. 3320"
+    },
+    {
+     "cite": "Silm; App A; UT [C]",
+     "realm": "arnor",
+     "status": "event",
+     "what": "The realm's flower dies with Elendil at the Last Alliance; Isildur's loss at the Gladden follows",
+     "when": "S.A. 3434–3441"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "arthedain",
+     "status": "event",
+     "what": "The line of Isildur endures only here; claims lordship of all Arnor",
+     "when": "T.A. 1349+"
+    },
+    {
+     "cite": "LotR VI.5; App A/B [C]",
+     "realm": "reunited",
+     "status": "event",
+     "what": "Elessar crowned; Arnor's kingship resumed with Gondor's",
+     "when": "T.A. 3019"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "arnor",
+     "status": "event",
+     "what": "At Eärendur's death the sons divide it: Arthedain, Cardolan, Rhudaur",
+     "when": "T.A. 861"
+    }
+   ],
    "types": [
     "POLITY_REALM"
    ]
@@ -2547,18 +2626,103 @@
     "MAN_MADE_CITY"
    ]
   },
-  "gondor late third age effective realm": {
+  "gondor": {
    "ages": [],
    "cites": [],
    "coords": [],
-   "n": "Gondor (late Third Age effective realm",
+   "n": "Gondor",
    "name_conf": null,
    "notes": [
     "spec TA: Political / Regional Polygons"
    ],
    "parents": [],
    "place_conf": "H",
-   "timeline": [],
+   "timeline": [
+    {
+     "cite": "App A; LotR III.8 [C]",
+     "realm": "isengard",
+     "status": "event",
+     "what": "Gondor's western fastness with the unbreakable tower; keys held by the Stewards",
+     "when": "(of old)"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "rhun",
+     "status": "event",
+     "what": "The Wainrider empire: Gondor's eastern provinces lost, King Ondoher slain — ended at the Camp by Eärnil II",
+     "when": "1851–1944"
+    },
+    {
+     "cite": "App A/B [C]",
+     "realm": "gondor",
+     "status": "founded",
+     "what": "Isildur and Anárion found the realm: Osgiliath the capital, Minas Ithil and Minas Anor its flanking cities",
+     "when": "S.A. 3320"
+    },
+    {
+     "cite": "App A/B [C]",
+     "realm": "mordor",
+     "status": "event",
+     "what": "The land watched, then unwatched: Gondor's guard-forts fail after the Plague (1636); the Nazgûl re-enter (1980); Sauron returns declared (2951)",
+     "when": "T.A. 1000–2942"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "harad",
+     "status": "event",
+     "what": "Wars with Gondor's Ship-kings; Umbar's loss and the Harad kings' homage to Hyarmendacil",
+     "when": "T.A. 1015–1050"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "gondor",
+     "status": "burned",
+     "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
+     "when": "T.A. 1432–48"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "gondor",
+     "status": "destroyed",
+     "what": "The Great Plague — the watch on Mordor abandoned; 2002 Minas Ithil falls; 2050 the King lost; the Stewards rule",
+     "when": "T.A. 1636"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "khand",
+     "status": "event",
+     "what": "Variags join the Wainriders' great combination against Gondor",
+     "when": "T.A. 1944"
+    },
+    {
+     "cite": "LotR V–VI [C]",
+     "realm": "gondor",
+     "status": "event",
+     "what": "The War of the Ring; Elessar crowned — the realm renewed",
+     "when": "T.A. 3019"
+    },
+    {
+     "cite": "LotR VI.5; App A/B [C]",
+     "realm": "reunited",
+     "status": "event",
+     "what": "Elessar crowned; Arnor's kingship resumed with Gondor's",
+     "when": "T.A. 3019"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "gondor",
+     "status": "taken",
+     "what": "The four Ship-kings: Umbar taken, the realm 'reached the summit of its power' under Hyarmendacil I",
+     "when": "T.A. 830–1149"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "umbar",
+     "status": "event",
+     "what": "Gondor takes Umbar (Eärnil I); the rebels of the Kin-strife flee here after 1448 — the Corsair age begins",
+     "when": "T.A. 933–1448"
+    }
+   ],
    "types": [
     "POLITY_REALM"
    ]
@@ -4348,11 +4512,11 @@
     "MAN_MADE_HAVEN"
    ]
   },
-  "region labels": {
+  "region": {
    "ages": [],
    "cites": [],
    "coords": [],
-   "n": "Region labels (letter-spaced caps, no borders)",
+   "n": "Region",
    "name_conf": null,
    "notes": [
     "spec TA: Political / Regional Polygons"
@@ -5398,11 +5562,11 @@
     "NATURAL_FOREST"
    ]
   },
-  "trollshaws woods hill field 2 1 with tree overlay conf h": {
+  "trollshaws woods hill field 2 1 with tree": {
    "ages": [],
    "cites": [],
    "coords": [],
-   "n": "Trollshaws woods = hill-field 2.1 with tree overlay. Conf H",
+   "n": "Trollshaws woods = hill-field 2.1 with tree",
    "name_conf": null,
    "notes": [
     "spec TA: Forests"
@@ -5750,11 +5914,11 @@
     "UNCLASSIFIED"
    ]
   },
-  "woods about amon hen parth galen small patch": {
+  "woods about amon hen parth galen": {
    "ages": [],
    "cites": [],
    "coords": [],
-   "n": "Woods about Amon Hen/Parth Galen (small patch",
+   "n": "Woods about Amon Hen/Parth Galen",
    "name_conf": null,
    "notes": [
     "spec TA: Forests"
