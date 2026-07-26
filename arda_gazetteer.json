@@ -724,7 +724,7 @@
     }
    ],
    "types": [
-    "UNCLASSIFIED"
+    "MAN_MADE_CROSSING"
    ]
   },
   "ash mountains": {
@@ -1520,7 +1520,8 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_ISLAND"
+    "NATURAL_ISLAND",
+    "MAN_MADE_FORTRESS"
    ]
   },
   "calembel": {
@@ -1655,7 +1656,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "UNCLASSIFIED"
+    "MAN_MADE_FORTRESS"
    ]
   },
   "celebrant": {
@@ -2340,7 +2341,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "UNCLASSIFIED"
+    "MAN_MADE_FORTRESS"
    ]
   },
   "eagles eyrie": {
@@ -3253,6 +3254,7 @@
    "timeline": [],
    "types": [
     "MAN_MADE_CROSSING",
+    "NATURAL_ISLAND",
     "NATURAL_PASS"
    ]
   },
@@ -3387,7 +3389,7 @@
    "place_conf": "M",
    "timeline": [],
    "types": [
-    "UNCLASSIFIED"
+    "MAN_MADE_DWELLING"
    ]
   },
   "framsburg": {
@@ -3822,7 +3824,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "UNCLASSIFIED"
+    "MAN_MADE_HALLOW"
    ]
   },
   "hall of fire": {
@@ -3947,7 +3949,7 @@
     }
    ],
    "types": [
-    "UNCLASSIFIED",
+    "MAN_MADE_TOMB",
     "NATURAL_PEAK"
    ]
   },
@@ -4932,6 +4934,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
+    "MAN_MADE_CROSSING",
     "MAN_MADE_TOWN"
    ]
   },
@@ -5393,7 +5396,8 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_CITY"
+    "MAN_MADE_CITY",
+    "MAN_MADE_WALL"
    ]
   },
   "minhiriath": {
@@ -6593,7 +6597,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "UNCLASSIFIED"
+    "MAN_MADE_GATE"
    ]
   },
   "sarn athrad": {
@@ -7027,6 +7031,7 @@
    "timeline": [],
    "types": [
     "MAN_MADE_CROSSING",
+    "MAN_MADE_TOWN",
     "MAN_MADE_RUIN"
    ]
   },
@@ -7294,6 +7299,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
+    "MAN_MADE_TOWER",
     "MAN_MADE_GATE",
     "MAN_MADE_FORTRESS"
    ]
@@ -7933,7 +7939,7 @@
     }
    ],
    "types": [
-    "UNCLASSIFIED"
+    "MAN_MADE_MONUMENT"
    ]
   },
   "umbar": {
@@ -8330,7 +8336,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "UNCLASSIFIED"
+    "POLITY_SUBREGION"
    ]
   },
   "woods about amon hen parth galen": {
