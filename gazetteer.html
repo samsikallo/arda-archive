@@ -1,0 +1,145 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Gazetteer of Arda — the Arda Archive</title>
+<style>
+:root{--line:#b0a58e;--mut:#7a6f5c}
+body{margin:0;background:#f4efe2;color:#3a3226;font:16px/1.55 Georgia,'Times New Roman',serif}
+#hdr{display:flex;align-items:center;gap:14px;padding:10px 18px;background:#2c2418;color:#d8c78e}
+#hdr h1{font-size:19px;font-weight:normal;font-variant:small-caps;letter-spacing:.06em;margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding:16px 18px 60px}
+.intro{background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid var(--line);border-radius:12px;
+ padding:14px 20px;box-shadow:0 2px 8px rgba(60,40,10,.12);margin-bottom:14px}
+.cite{color:var(--mut);font-style:italic;font-size:12.5px}
+.ctl{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:12px 0}
+.ctl label{font-variant:small-caps;color:#5a4626;font-size:13px}
+select,input[type=search]{padding:5px 9px;border:1px solid var(--line);border-radius:7px;
+ background:#fffdf6;font:14px Georgia,serif;color:#3a3226}
+button.q{border:1px solid var(--line);border-radius:14px;background:#fffdf6;padding:4px 12px;
+ font:13.5px Georgia,serif;color:#5a4626;cursor:pointer}
+button.q:hover{background:#f7f0de}
+.grp{margin-top:18px}
+.grp>h2{font-variant:small-caps;font-weight:normal;letter-spacing:.05em;color:#5a4626;
+ border-bottom:1px solid rgba(176,165,142,.5);padding-bottom:3px;margin:0 0 6px;font-size:17px}
+.pl{background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid var(--line);border-radius:9px;
+ padding:8px 12px;margin:6px 0}
+.pl h3{margin:0;font-size:15px;font-weight:normal}
+.pl .kind{font-size:12px;color:var(--mut);font-variant:small-caps;letter-spacing:.04em}
+.pl .tl{margin-top:5px;font-size:13px}
+.ev{margin:.25em 0;padding-left:9px;border-left:3px solid #c9a227}
+.nat{border-left:4px solid #4a7a3a}.made{border-left:4px solid #8a6a3a}.pol{border-left:4px solid #7a4a12}
+.n{font-size:11.5px;color:var(--mut);font-style:italic;margin-left:6px}
+a{color:#7a4a12}
+</style></head><body>
+<div id="hdr"><h1>The Gazetteer of Arda</h1><span style="flex:1"></span>
+<nav id="ardanav" aria-label="Archive halls"></nav></div>
+<div class="wrap" id="main">
+<div class="intro"><b>Every named place the archive holds</b>, with what kind of thing it is,
+which realms contain it, which Ages it belongs to, and what befell it — each with the
+citation it came from.
+<span class="cite">Natural and made are kept apart at the root of the taxonomy. Two
+confidences are shown, never averaged: whether the <b>name</b> is Tolkien's, and whether a
+<b>text</b> places it where the map does. Framsburg is high on the first and middling on the
+second — he supplied the name for the Pauline Baynes map, and no narrative text puts it
+anywhere.</span></div>
+<div class="ctl">
+ <label for="q">find</label><input type="search" id="q" placeholder="a name…" style="min-width:180px">
+ <label for="age">age</label><select id="age"><option value="">any</option></select>
+ <label for="kind">kind</label><select id="kind"><option value="">any</option>
+   <option value="NATURAL">natural</option><option value="MAN_MADE">made</option>
+   <option value="POLITY">polity</option></select>
+ <label for="realm">within</label><select id="realm"><option value="">anywhere</option></select>
+ <label for="ch"><input type="checkbox" id="ch"> that changed</label>
+</div>
+<div class="ctl"><span class="cite">the brief's own questions:</span>
+ <button class="q" data-q="fa">the First Age only</button>
+ <button class="q" data-q="gondor">Gondor in the Third Age</button>
+ <button class="q" data-q="changed">natural landmarks that changed</button>
+ <button class="q" data-q="clear">clear</button>
+</div>
+<div id="count" class="cite"></div>
+<div id="list"></div>
+</div>
+<script src="nav.js"></script>
+<script>
+
+fetch("arda_gazetteer.json").then(r=>r.json()).then(d=>{
+ const G=d.places, K=Object.keys(G).sort((a,b)=>G[a].n.localeCompare(G[b].n));
+ const ages={},realms={};
+ K.forEach(k=>{(G[k].ages||[]).forEach(a=>ages[a]=1);(G[k].parents||[]).forEach(p=>realms[p]=1)});
+ const AGEORD=["YT","FA","SA","TA","FoA"];
+ const asel=document.getElementById("age");
+ Object.keys(ages).sort((a,b)=>AGEORD.indexOf(a)-AGEORD.indexOf(b)).forEach(a=>{
+   const o=document.createElement("option");o.value=a;o.textContent=a;asel.appendChild(o)});
+ const rsel=document.getElementById("realm");
+ Object.keys(realms).sort().forEach(r=>{
+   const o=document.createElement("option");o.value=r;o.textContent=r;rsel.appendChild(o)});
+ const nrm=s=>(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+ const root=t=>t.startsWith("NATURAL_")?"NATURAL":t.startsWith("MAN_MADE_")?"MAN_MADE":
+   t.startsWith("POLITY_")?"POLITY":"OTHER";
+ const cls=t=>({NATURAL:"nat",MAN_MADE:"made",POLITY:"pol"})[root(t)]||"";
+ const pretty=t=>t.replace("NATURAL_","natural · ").replace("MAN_MADE_","made · ")
+   .replace("POLITY_","polity · ").replace(/_/g," ").toLowerCase();
+ // "changed" means the record carries an event that ENDED or REMADE the place -- not merely
+ // that something happened near it. The statuses are the gazetteer's own.
+ const CHANGED=["destroyed","drowned","abandoned","ruined","rebuilt","renamed","sacked","burned"];
+ function draw(){
+  const q=nrm(document.getElementById("q").value.trim());
+  const age=document.getElementById("age").value;
+  const kind=document.getElementById("kind").value;
+  const realm=document.getElementById("realm").value;
+  const changed=document.getElementById("ch").checked;
+  const rows=K.filter(k=>{
+   const e=G[k];
+   if(q && nrm(e.n).indexOf(q)<0 && k.indexOf(q)<0) return false;
+   if(age && (e.ages||[]).indexOf(age)<0) return false;
+   if(kind && !(e.types||[]).some(t=>root(t)===kind)) return false;
+   if(realm && (e.parents||[]).indexOf(realm)<0) return false;
+   if(changed && !(e.timeline||[]).some(t=>CHANGED.indexOf(t.status)>=0)) return false;
+   return true;
+  });
+  // hierarchy: grouped by the realms that contain them, unparented last
+  const by={};
+  rows.forEach(k=>{
+   const ps=(G[k].parents||[]);
+   (ps.length?ps:["— not placed within a realm"]).forEach(p=>{(by[p]=by[p]||[]).push(k)})});
+  const out=[];
+  Object.keys(by).sort().forEach(p=>{
+   out.push('<div class="grp"><h2>'+p+' <span class="n">'+by[p].length+'</span></h2>');
+   by[p].forEach(k=>{
+    const e=G[k];
+    const c=cls((e.types||["x"])[0]);
+    let tl="";
+    (e.timeline||[]).forEach(t=>{tl+='<div class="ev"><b>'+(t.when||"")+'</b> — '+
+      (t.status||"")+'. '+(t.what||"")+(t.cite?' <span class="cite">'+t.cite+'</span>':'')+'</div>'});
+    const cf=[];
+    if(e.name_conf)cf.push("name "+e.name_conf);
+    if(e.place_conf)cf.push("placed "+e.place_conf);
+    out.push('<div class="pl '+c+'"><h3><a href="place.html#'+k.replace(/ /g,"_")+'">'+e.n+'</a>'+
+      '<span class="n">'+(e.ages||[]).join(", ")+'</span></h3>'+
+      '<div class="kind">'+(e.types||[]).map(pretty).join(" · ")+
+      (cf.length?' <span class="n">'+cf.join(" · ")+'</span>':'')+'</div>'+
+      (tl?'<div class="tl">'+tl+'</div>':'')+'</div>');
+   });
+   out.push('</div>');
+  });
+  document.getElementById("list").innerHTML=out.join("")||
+    '<div class="cite" style="padding:30px 0">The attached documents do not provide enough information to answer this.</div>';
+  document.getElementById("count").textContent=rows.length+" of "+K.length+" places";
+ }
+ ["q","age","kind","realm","ch"].forEach(id=>{
+   const el=document.getElementById(id);
+   el.addEventListener("input",draw);el.addEventListener("change",draw)});
+ document.querySelectorAll("button.q").forEach(b=>b.addEventListener("click",()=>{
+   const set=(i,v)=>{document.getElementById(i).value=v};
+   const q=b.dataset.q;
+   set("q","");set("age","");set("kind","");set("realm","");
+   document.getElementById("ch").checked=false;
+   if(q==="fa")set("age","FA");
+   if(q==="gondor"){set("realm","gondor");set("age","TA")}
+   if(q==="changed"){set("kind","NATURAL");document.getElementById("ch").checked=true}
+   draw();
+ }));
+ draw();
+});
+
+</script></body></html>

@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 201,
+ "n": 209,
  "places": {
   "amon ereb": {
    "ages": [
@@ -98,6 +98,35 @@
     "NATURAL_PEAK"
    ]
   },
+  "an rien": {
+   "ages": [
+    "SA",
+    "TA"
+   ],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 660,
+     "y": 300
+    }
+   ],
+   "n": "Anórien",
+   "name_conf": null,
+   "notes": [
+    "interior label of Gondor, per the vector spec",
+    "Ages taken from its realm gondor, having none of its own [I-H]"
+   ],
+   "parents": [
+    "gondor"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
+   ]
+  },
   "anduin": {
    "ages": [],
    "cites": [],
@@ -112,6 +141,35 @@
    "timeline": [],
    "types": [
     "NATURAL_SEA"
+   ]
+  },
+  "anfalas": {
+   "ages": [
+    "SA",
+    "TA"
+   ],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 520,
+     "y": 225
+    }
+   ],
+   "n": "Anfalas",
+   "name_conf": null,
+   "notes": [
+    "interior label of Gondor, per the vector spec",
+    "Ages taken from its realm gondor, having none of its own [I-H]"
+   ],
+   "parents": [
+    "gondor"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
    ]
   },
   "anfauglith": {
@@ -651,6 +709,35 @@
     "MAN_MADE_HALL"
    ]
   },
+  "belfalas": {
+   "ages": [
+    "SA",
+    "TA"
+   ],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 615,
+     "y": 205
+    }
+   ],
+   "n": "Belfalas",
+   "name_conf": null,
+   "notes": [
+    "interior label of Gondor, per the vector spec",
+    "Ages taken from its realm gondor, having none of its own [I-H]"
+   ],
+   "parents": [
+    "gondor"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
+   ]
+  },
   "beorn s house": {
    "ages": [],
    "cites": [],
@@ -698,7 +785,9 @@
    ]
   },
   "brandywine bridge": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -712,7 +801,8 @@
    "name_conf": null,
    "notes": [
     "spec TA: bridge",
-    "within the The Shire boundary polygon [I-H]"
+    "within the The Shire boundary polygon [I-H]",
+    "Ages taken from its realm shire, having none of its own [I-H]"
    ],
    "parents": [
     "shire"
@@ -943,7 +1033,9 @@
    ]
   },
   "bucklebury ferry": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -957,7 +1049,8 @@
    "name_conf": null,
    "notes": [
     "spec TA: town+ferry",
-    "within the The Shire boundary polygon [I-H]"
+    "within the The Shire boundary polygon [I-H]",
+    "Ages taken from its realm shire, having none of its own [I-H]"
    ],
    "parents": [
     "shire"
@@ -969,7 +1062,9 @@
    ]
   },
   "bywater": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -983,7 +1078,8 @@
    "name_conf": null,
    "notes": [
     "spec TA: village",
-    "within the The Shire boundary polygon [I-H]"
+    "within the The Shire boundary polygon [I-H]",
+    "Ages taken from its realm shire, having none of its own [I-H]"
    ],
    "parents": [
     "shire"
@@ -1454,6 +1550,35 @@
     "MAN_MADE_TOWER"
    ]
   },
+  "dor en ernil": {
+   "ages": [
+    "SA",
+    "TA"
+   ],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 630,
+     "y": 210
+    }
+   ],
+   "n": "Dor-En-Ernil",
+   "name_conf": null,
+   "notes": [
+    "interior label of Gondor, per the vector spec",
+    "Ages taken from its realm gondor, having none of its own [I-H]"
+   ],
+   "parents": [
+    "gondor"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
+   ]
+  },
   "dr adan forest": {
    "ages": [],
    "cites": [],
@@ -1570,7 +1695,9 @@
    ]
   },
   "east emnet": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -1583,7 +1710,8 @@
    "n": "East-Emnet",
    "name_conf": null,
    "notes": [
-    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec"
+    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec",
+    "Ages taken from its realm rohan, having none of its own [I-H]"
    ],
    "parents": [
     "rohan"
@@ -1595,7 +1723,9 @@
    ]
   },
   "eastfold": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -1608,7 +1738,8 @@
    "n": "Eastfold",
    "name_conf": null,
    "notes": [
-    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec"
+    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec",
+    "Ages taken from its realm rohan, having none of its own [I-H]"
    ],
    "parents": [
     "rohan"
@@ -1681,7 +1812,9 @@
    ]
   },
   "edoras meduseld": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -1695,7 +1828,8 @@
    "name_conf": null,
    "notes": [
     "spec TA: royal town",
-    "within the Rohan (grant bounds of 2510, dotted line) boundary polygon [I-H]"
+    "within the Rohan (grant bounds of 2510, dotted line) boundary polygon [I-H]",
+    "Ages taken from its realm rohan, having none of its own [I-H]"
    ],
    "parents": [
     "rohan"
@@ -1830,7 +1964,10 @@
    ]
   },
   "elvenking s halls": {
-   "ages": [],
+   "ages": [
+    "SA",
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -1844,7 +1981,8 @@
    "name_conf": null,
    "notes": [
     "spec TA: cave-city",
-    "within the Mirkwood (Greenwood the Great / Eryn Lasgalen) boundary polygon [I-H]"
+    "within the Mirkwood (Greenwood the Great / Eryn Lasgalen) boundary polygon [I-H]",
+    "Ages taken from its realm greenwood, having none of its own [I-H]"
    ],
    "parents": [
     "greenwood"
@@ -2490,7 +2628,9 @@
    ]
   },
   "frogmorton": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -2504,7 +2644,8 @@
    "name_conf": null,
    "notes": [
     "spec TA: village",
-    "within the The Shire boundary polygon [I-H]"
+    "within the The Shire boundary polygon [I-H]",
+    "Ages taken from its realm shire, having none of its own [I-H]"
    ],
    "parents": [
     "shire"
@@ -2728,7 +2869,10 @@
    ]
   },
   "gorgoroth": {
-   "ages": [],
+   "ages": [
+    "SA",
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -2741,7 +2885,8 @@
    "n": "Gorgoroth",
    "name_conf": null,
    "notes": [
-    "interior label of Mordor (realm = its mountain rectangle), per the vector spec"
+    "interior label of Mordor (realm = its mountain rectangle), per the vector spec",
+    "Ages taken from its realm mordor, having none of its own [I-H]"
    ],
    "parents": [
     "mordor"
@@ -3397,6 +3542,35 @@
     "NATURAL_ISLAND"
    ]
   },
+  "ithilien": {
+   "ages": [
+    "SA",
+    "TA"
+   ],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 760,
+     "y": 285
+    }
+   ],
+   "n": "Ithilien",
+   "name_conf": null,
+   "notes": [
+    "interior label of Gondor, per the vector spec",
+    "Ages taken from its realm gondor, having none of its own [I-H]"
+   ],
+   "parents": [
+    "gondor"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
+   ]
+  },
   "ithilien woods": {
    "ages": [],
    "cites": [],
@@ -3466,6 +3640,35 @@
     "NATURAL_PLAIN"
    ]
   },
+  "lamedon": {
+   "ages": [
+    "SA",
+    "TA"
+   ],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 560,
+     "y": 285
+    }
+   ],
+   "n": "Lamedon",
+   "name_conf": null,
+   "notes": [
+    "interior label of Gondor, per the vector spec",
+    "Ages taken from its realm gondor, having none of its own [I-H]"
+   ],
+   "parents": [
+    "gondor"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
+   ]
+  },
   "last bridge": {
    "ages": [],
    "cites": [],
@@ -3487,6 +3690,35 @@
    "timeline": [],
    "types": [
     "MAN_MADE_BRIDGE"
+   ]
+  },
+  "lebennin": {
+   "ages": [
+    "SA",
+    "TA"
+   ],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 660,
+     "y": 230
+    }
+   ],
+   "n": "Lebennin",
+   "name_conf": null,
+   "notes": [
+    "interior label of Gondor, per the vector spec",
+    "Ages taken from its realm gondor, having none of its own [I-H]"
+   ],
+   "parents": [
+    "gondor"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
    ]
   },
   "lhun": {
@@ -3574,7 +3806,10 @@
    ]
   },
   "lithlad": {
-   "ages": [],
+   "ages": [
+    "SA",
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -3587,7 +3822,8 @@
    "n": "Lithlad",
    "name_conf": null,
    "notes": [
-    "interior label of Mordor (realm = its mountain rectangle), per the vector spec"
+    "interior label of Mordor (realm = its mountain rectangle), per the vector spec",
+    "Ages taken from its realm mordor, having none of its own [I-H]"
    ],
    "parents": [
     "mordor"
@@ -4304,7 +4540,10 @@
    ]
   },
   "nurn": {
-   "ages": [],
+   "ages": [
+    "SA",
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -4317,7 +4556,8 @@
    "n": "Nurn",
    "name_conf": null,
    "notes": [
-    "interior label of Mordor (realm = its mountain rectangle), per the vector spec"
+    "interior label of Mordor (realm = its mountain rectangle), per the vector spec",
+    "Ages taken from its realm mordor, having none of its own [I-H]"
    ],
    "parents": [
     "mordor"
@@ -4510,6 +4750,35 @@
    ],
    "types": [
     "MAN_MADE_HAVEN"
+   ]
+  },
+  "poros march": {
+   "ages": [
+    "SA",
+    "TA"
+   ],
+   "cites": [],
+   "coords": [
+    {
+     "conf": null,
+     "frame": "TA",
+     "x": 770,
+     "y": 220
+    }
+   ],
+   "n": "Poros-March",
+   "name_conf": null,
+   "notes": [
+    "interior label of Gondor, per the vector spec",
+    "Ages taken from its realm gondor, having none of its own [I-H]"
+   ],
+   "parents": [
+    "gondor"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "POLITY_SUBREGION"
    ]
   },
   "region": {
@@ -4837,7 +5106,9 @@
    ]
   },
   "stock": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -4851,7 +5122,8 @@
    "name_conf": null,
    "notes": [
     "spec TA: village",
-    "within the The Shire boundary polygon [I-H]"
+    "within the The Shire boundary polygon [I-H]",
+    "Ages taken from its realm shire, having none of its own [I-H]"
    ],
    "parents": [
     "shire"
@@ -5296,7 +5568,9 @@
    ]
   },
   "the wold": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -5309,7 +5583,8 @@
    "n": "The Wold",
    "name_conf": null,
    "notes": [
-    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec"
+    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec",
+    "Ages taken from its realm rohan, having none of its own [I-H]"
    ],
    "parents": [
     "rohan"
@@ -5321,7 +5596,9 @@
    ]
   },
   "three farthing stone": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -5335,7 +5612,8 @@
    "name_conf": null,
    "notes": [
     "spec TA: landmark",
-    "within the The Shire boundary polygon [I-H]"
+    "within the The Shire boundary polygon [I-H]",
+    "Ages taken from its realm shire, having none of its own [I-H]"
    ],
    "parents": [
     "shire"
@@ -5579,7 +5857,9 @@
    ]
   },
   "tuckborough great smials": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -5593,7 +5873,8 @@
    "name_conf": null,
    "notes": [
     "spec TA: town",
-    "within the The Shire boundary polygon [I-H]"
+    "within the The Shire boundary polygon [I-H]",
+    "Ages taken from its realm shire, having none of its own [I-H]"
    ],
    "parents": [
     "shire"
@@ -5802,7 +6083,9 @@
    ]
   },
   "west emnet": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -5815,7 +6098,8 @@
    "n": "West-Emnet",
    "name_conf": null,
    "notes": [
-    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec"
+    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec",
+    "Ages taken from its realm rohan, having none of its own [I-H]"
    ],
    "parents": [
     "rohan"
@@ -5827,7 +6111,9 @@
    ]
   },
   "westfold": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -5840,7 +6126,8 @@
    "n": "Westfold",
    "name_conf": null,
    "notes": [
-    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec"
+    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec",
+    "Ages taken from its realm rohan, having none of its own [I-H]"
    ],
    "parents": [
     "rohan"
@@ -5889,7 +6176,9 @@
    ]
   },
   "woodhall woody end": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [],
    "coords": [
     {
@@ -5903,7 +6192,8 @@
    "name_conf": null,
    "notes": [
     "spec TA: locality",
-    "within the The Shire boundary polygon [I-H]"
+    "within the The Shire boundary polygon [I-H]",
+    "Ages taken from its realm shire, having none of its own [I-H]"
    ],
    "parents": [
     "shire"
