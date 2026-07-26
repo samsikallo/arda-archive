@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 300,
+ "n": 301,
  "places": {
   "aeluin": {
    "ages": [],
@@ -37,14 +37,16 @@
   "almaren": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 2551"
+    "The Silmarillion, line 2551",
+    "A ch1"
    ],
    "coords": [],
    "n": "Almaren",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“And there upon the Isle of Almaren in the Great Lake was the first dwelling of the Valar when all things were young, and new-made green was yet a marvel in the eyes of the makers; and they were long content.” — The Silmarillion, line 2551",
-    "indexed by Christopher Tolkien as: The first dwelling of the Valar in Arda"
+    "indexed by Christopher Tolkien as: The first dwelling of the Valar in Arda",
+    "Evidence Table W3"
    ],
    "parents": [],
    "place_conf": "High",
@@ -212,14 +214,16 @@
     "FA"
    ],
    "cites": [
-    "CoH VII-VIII"
+    "CoH VII-VIII",
+    "A ch21; F ch VII–VIII"
    ],
    "coords": [],
    "n": "Amon Rûdh",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also Bar-en-Danwedh",
-    "Mîm's bald hill; Túrin's outlaw hold; Beleg's grief."
+    "Mîm's bald hill; Túrin's outlaw hold; Beleg's grief.",
+    "Evidence Table B32"
    ],
    "parents": [
     "nargothrond"
@@ -252,14 +256,16 @@
   "andrast": {
    "ages": [],
    "cites": [
-    "Unfinished Tales, line 6632"
+    "Unfinished Tales, line 6632",
+    "D Aldarion n.6, Drúedain; RC[T]"
    ],
    "coords": [],
    "n": "Andrast",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“Ras Morthil, a name not otherwise found, must be the great headland at the end of the northern arm of the Bay of Belfalas, which was also called Andrast (Long Cape).” — Unfinished Tales, line 6632",
-    "indexed by Christopher Tolkien as: The ‘long cape’ in the west of Gondor"
+    "indexed by Christopher Tolkien as: The ‘long cape’ in the west of Gondor",
+    "Evidence Table G29"
    ],
    "parents": [],
    "place_conf": "High",
@@ -289,12 +295,15 @@
   },
   "anduin": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "A RoP; C II.9; D; RC[T]"
+   ],
    "coords": [],
    "n": "Anduin (the Great River)",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Water"
+    "spec TA: Water",
+    "Evidence Table R5"
    ],
    "parents": [],
    "place_conf": "L",
@@ -337,15 +346,17 @@
     "FA"
    ],
    "cites": [
-    "Silm 18/20"
+    "Silm 18/20",
+    "A ch14, ch18, ch20"
    ],
    "coords": [],
    "n": "Anfauglith",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also Ard-galen (before 455)",
     "The green plain burned to gasping dust in the Bragollach; the Haudh-en-Ndengin rose here.",
-    "within the Dominion of Angband (after 455) boundary as the living map draws it, F.A. 455–583 [I-M]"
+    "within the Dominion of Angband (after 455) boundary as the living map draws it, F.A. 455–583 [I-M]",
+    "Evidence Table B4"
    ],
    "parents": [
     "angband"
@@ -361,14 +372,16 @@
     "FA"
    ],
    "cites": [
-    "Silm 3/18; CoH intro"
+    "Silm 3/18; CoH intro",
+    "A ch3, ch10, ch14; HoME 5, 11; F Intro"
    ],
    "coords": [],
    "n": "Angband",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also Thangorodrim",
-    "Morgoth's hells beneath the towers of slag; the Gate 150 leagues from Menegroth."
+    "Morgoth's hells beneath the towers of slag; the Gate 150 leagues from Menegroth.",
+    "Evidence Table B2"
    ],
    "parents": [],
    "place_conf": "H",
@@ -442,12 +455,15 @@
   },
   "angmar": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "C App A; D (Index)"
+   ],
    "coords": [],
    "n": "Angmar",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Political / Regional Polygons"
+    "spec TA: Political / Regional Polygons",
+    "Evidence Table E20"
    ],
    "parents": [],
    "place_conf": "H",
@@ -546,7 +562,9 @@
     "SA",
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "C V.5; RC[T]"
+   ],
    "coords": [
     {
      "conf": null,
@@ -556,10 +574,11 @@
     }
    ],
    "n": "Anórien",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "interior label of Gondor, per the vector spec",
-    "Ages taken from its realm gondor, having none of its own [I-H]"
+    "Ages taken from its realm gondor, having none of its own [I-H]",
+    "Evidence Table G14"
    ],
    "parents": [
     "gondor"
@@ -599,14 +618,16 @@
   "arda": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 1845"
+    "The Silmarillion, line 1845",
+    "A (Ainulindalë); HoME 4 Ambarkanta"
    ],
    "coords": [],
    "n": "Arda",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“There was Eru, the One, who in Arda is called Ilúvatar; and he made first the Ainur, the Holy Ones, that were the offspring of his thought, and they were with him before aught else was made.” — The Silmarillion, line 1845",
-    "indexed by Christopher Tolkien as: (including many references to the Kingdom, Realm, o f Arda)"
+    "indexed by Christopher Tolkien as: (including many references to the Kingdom, Realm, o f Arda)",
+    "Evidence Table W1"
    ],
    "parents": [],
    "place_conf": "High",
@@ -618,14 +639,16 @@
   "argonath": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 13087"
+    "The Silmarillion, line 13087",
+    "C II.9–III.1; RC[T]"
    ],
    "coords": [],
    "n": "Argonath",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“These were the chief dwellings of the Númenóreans in Gondor, but other works marvellous and strong they built in the land in the days of their power, at the Argonath, and at Aglarond, and at Erech; and in the circle of Angrenost, which Men called Isengard, they made the Pinnacle of Orthanc of unbreakable stone.” — The Silmarillion, line 13087",
-    "indexed by Christopher Tolkien as: Gates of, Pillars o f"
+    "indexed by Christopher Tolkien as: Gates of, Pillars o f",
+    "Evidence Table R19"
    ],
    "parents": [],
    "place_conf": "High",
@@ -637,14 +660,16 @@
   "armenelos": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 11916"
+    "The Silmarillion, line 11916",
+    "A Akallabêth; I"
    ],
    "coords": [],
    "n": "Armenelos",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“At the feet of the mountain were built the tombs of the Kings, and hard by upon a hill was Armenelos, fairest of cities, and there stood the tower and the citadel that was raised by Elros son of Eärendil, whom the Valar appointed to be the first King of the Dúnedain.” — The Silmarillion, line 11916",
-    "indexed by Christopher Tolkien as: City of the Kings in Númenor"
+    "indexed by Christopher Tolkien as: City of the Kings in Númenor",
+    "Evidence Table N5"
    ],
    "parents": [],
    "place_conf": "High",
@@ -656,12 +681,15 @@
   },
   "arnor": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "C App A; HoME 12; the hundred miles is RC editorial, not Tolkien"
+   ],
    "coords": [],
    "n": "Arnor",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Political / Regional Polygons"
+    "spec TA: Political / Regional Polygons",
+    "Evidence Table E19"
    ],
    "parents": [],
    "place_conf": "H",
@@ -837,15 +865,17 @@
     "TA"
    ],
    "cites": [
-    "App B; LotR VI.3"
+    "App B; LotR VI.3",
+    "A RoP; C III.11, IV.3, VI"
    ],
    "coords": [],
    "n": "Barad-dûr",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also the Dark Tower",
     "Sauron's fortress, founded c. S.A. 1000, rebuilt 2951; its fall shook the world.",
-    "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]"
+    "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]",
+    "Evidence Table G24"
    ],
    "parents": [
     "mordor"
@@ -911,7 +941,9 @@
   },
   "barad nimras": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "A ch14, ch20"
+   ],
    "coords": [
     {
      "conf": "H",
@@ -921,9 +953,10 @@
     }
    ],
    "n": "Barad Nimras",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec FA: watch-tower"
+    "spec FA: watch-tower",
+    "Evidence Table B34"
    ],
    "parents": [],
    "place_conf": "H",
@@ -961,15 +994,17 @@
     "TA"
    ],
    "cites": [
-    "LotR I.8; App A"
+    "LotR I.8; App A",
+    "C I.8, App A; D Hunt; RC[T]"
    ],
    "coords": [],
    "n": "Barrow-downs",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also Tyrn Gorthad",
     "Wights out of Angmar walk the old Edain graves; the swords of Westernesse came hence.",
-    "within the Cardolan boundary as the living map draws it, T.A. 861–1636 [I-M]"
+    "within the Cardolan boundary as the living map draws it, T.A. 861–1636 [I-M]",
+    "Evidence Table E8"
    ],
    "parents": [
     "cardolan",
@@ -1211,12 +1246,15 @@
   },
   "bree land": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "C I.9; RC[T]"
+   ],
    "coords": [],
    "n": "Bree-land",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Political / Regional Polygons"
+    "spec TA: Political / Regional Polygons",
+    "Evidence Table E9"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1230,14 +1268,16 @@
     "FA"
    ],
    "cites": [
-    "Silm 17/21; CoH"
+    "Silm 17/21; CoH",
+    "A ch21; F ch XIII–XVIII; HoME 11"
    ],
    "coords": [],
    "n": "Brethil",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also Forest of the Haladin",
-    "The Haladin's wood between Teiglin and Sirion; Túrin's last stand-ground."
+    "The Haladin's wood between Teiglin and Sirion; Túrin's last stand-ground.",
+    "Evidence Table B31"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1510,7 +1550,8 @@
     "TA"
    ],
    "cites": [
-    "LotR V.4; App B"
+    "LotR V.4; App B",
+    "C App A, V.4; RC[T]"
    ],
    "coords": [
     {
@@ -1521,11 +1562,12 @@
     }
    ],
    "n": "Cair Andros",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec TA: isle-fort",
     "The ship-shaped river-isle guarding Anórien; stormed Mar 10, 3019.",
-    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]"
+    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]",
+    "Evidence Table G18"
    ],
    "parents": [
     "gondor"
@@ -1621,7 +1663,8 @@
     "TA"
    ],
    "cites": [
-    "App A I(iv)"
+    "App A I(iv)",
+    "C App A; D (Index)"
    ],
    "coords": [
     {
@@ -1632,11 +1675,12 @@
     }
    ],
    "n": "Carn Dûm",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec TA: ruined fortress",
     "The Witch-king's mountain-hold of Angmar.",
-    "within the Angmar (the Witch-king) boundary as the living map draws it, T.A. c.1300–1975 [I-M]"
+    "within the Angmar (the Witch-king) boundary as the living map draws it, T.A. c.1300–1975 [I-M]",
+    "Evidence Table E20"
    ],
    "parents": [
     "angmar"
@@ -1883,7 +1927,8 @@
     "TA"
    ],
    "cites": [
-    "Hobbit i; App B"
+    "Hobbit i; App B",
+    "B ch1, 11–13; C App A"
    ],
    "coords": [
     {
@@ -1894,10 +1939,11 @@
     }
    ],
    "n": "Dale",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec TA: town (rebuilt)",
-    "Girion's bell-town, burned 2770; reborn under Bard; battle before it, Mar 3019."
+    "Girion's bell-town, burned 2770; reborn under Bard; battle before it, Mar 3019.",
+    "Evidence Table R10"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1939,14 +1985,16 @@
   "dimbar": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 6213"
+    "The Silmarillion, line 6213",
+    "A ch14"
    ],
    "coords": [],
    "n": "Dimbar",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“Upon the left hand of Sirion lay East Beleriand, at its widest a hundred leagues from Sirion to Gelion and the borders of Ossiriand; and first, between Sirion and Mindeb, lay the empty land of Dimbar under the peaks of the Crissaegrim, abode of eagles.” — The Silmarillion, line 6213",
-    "indexed by Christopher Tolkien as: Land between Sirion and Mindeb"
+    "indexed by Christopher Tolkien as: Land between Sirion and Mindeb",
+    "Evidence Table B18"
    ],
    "parents": [],
    "place_conf": "High",
@@ -2172,14 +2220,16 @@
   "dor cuarthol": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 9785"
+    "The Silmarillion, line 9785",
+    "A ch21; F ch VII–VIII"
    ],
    "coords": [],
    "n": "Dor-Cúarthol",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“Dor-Cúarthol, the Land of Bow and Helm, was in that time named all the region between Teiglin and the west march of Doriath; and Túrin named himself anew, Gorthol, the Dread Helm, and his heart was high again.” — The Silmarillion, line 9785",
-    "indexed by Christopher Tolkien as: ‘Land of Bow and Helm’, the country defended by"
+    "indexed by Christopher Tolkien as: ‘Land of Bow and Helm’, the country defended by",
+    "Evidence Table B32"
    ],
    "parents": [],
    "place_conf": "High",
@@ -2257,7 +2307,8 @@
     "TA"
    ],
    "cites": [
-    "LotR V.3"
+    "LotR V.3",
+    "C V.3; RC[T]"
    ],
    "coords": [
     {
@@ -2268,12 +2319,13 @@
     }
    ],
    "n": "Dunharrow",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec TA: refuge",
     "also & the Dark Door",
     "The refuge of the firienfeld; the Muster of Rohan; the Paths of the Dead open here.",
-    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
+    "Evidence Table G8"
    ],
    "parents": [
     "rohan"
@@ -2501,15 +2553,17 @@
     "TA"
    ],
    "cites": [
-    "LotR III.6"
+    "LotR III.6",
+    "C III.6, V.3, VI.6; RC[T] (unpub. Index)"
    ],
    "coords": [],
    "n": "Edoras",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also & Meduseld",
     "Brego's golden hall under the White Mountains; Théoden's seat.",
-    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
+    "Evidence Table G7"
    ],
    "parents": [
     "rohan"
@@ -2563,7 +2617,8 @@
     "FA"
    ],
    "cites": [
-    "Silm 14/20"
+    "Silm 14/20",
+    "A ch14, ch20"
    ],
    "coords": [
     {
@@ -2574,11 +2629,12 @@
     }
    ],
    "n": "Eglarest",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec FA: walled haven",
     "Southern haven of the Falas; fell with Brithombar.",
-    "within the The Falas (Círdan) boundary as the living map draws it, Y.T.–F.A. 473 [I-M]"
+    "within the The Falas (Círdan) boundary as the living map draws it, Y.T.–F.A. 473 [I-M]",
+    "Evidence Table B34"
    ],
    "parents": [
     "falas"
@@ -2735,12 +2791,15 @@
   },
   "emyn muil": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "C II.9–10, III.1–2, IV.1; RC[T]"
+   ],
    "coords": [],
    "n": "Emyn Muil",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Mountains"
+    "spec TA: Mountains",
+    "Evidence Table R18"
    ],
    "parents": [],
    "place_conf": "H",
@@ -2752,14 +2811,16 @@
   "eotheod": {
    "ages": [],
    "cites": [
-    "The Lord of the Rings, line 46917"
+    "The Lord of the Rings, line 46917",
+    "D Cirion; C App A; RC[T]"
    ],
    "coords": [],
    "n": "Eothéod",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“The Eothéod had moved to those regions in the days of King Eärnil II from lands in the vales of Anduin between the Carrock and the Gladden, and they were in origin close akin to the Beornings and the men of the west-eaves of the forest.” — The Lord of the Rings, line 46917",
-    "indexed by Christopher Tolkien as: ‘Horse-folk’ and ‘Horse-land’ ("
+    "indexed by Christopher Tolkien as: ‘Horse-folk’ and ‘Horse-land’ (",
+    "Evidence Table R4"
    ],
    "parents": [],
    "place_conf": "High",
@@ -2826,15 +2887,17 @@
     "TA"
    ],
    "cites": [
-    "Hobbit; App A III/B"
+    "Hobbit; App A III/B",
+    "B ch1, 11–13; C App A"
    ],
    "coords": [],
    "n": "Erebor",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also the Lonely Mountain",
     "The Kingdom under the Mountain: Thrór's, Smaug's, Thorin's, Dáin's; besieged 3019.",
-    "within the Dale & Erebor boundary as the living map draws it, T.A. 1999–2770; 2941– [I-M]"
+    "within the Dale & Erebor boundary as the living map draws it, T.A. 1999–2770; 2941– [I-M]",
+    "Evidence Table R10"
    ],
    "parents": [
     "dale"
@@ -3112,14 +3175,16 @@
   "ezellohar": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 2645"
+    "The Silmarillion, line 2645",
+    "A ch1"
    ],
    "coords": [],
    "n": "Ezellohar",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“Before its western gate there was a green mound, Ezellohar, that is named also Corollairë; and Yavanna hallowed it, and she sat there long upon the green grass and sang a song of power, in which was set all her thought of things that grow in the earth.” — The Silmarillion, line 2645",
-    "indexed by Christopher Tolkien as: The Mound of the Two Trees"
+    "indexed by Christopher Tolkien as: The Mound of the Two Trees",
+    "Evidence Table V5"
    ],
    "parents": [],
    "place_conf": "High",
@@ -3176,15 +3241,24 @@
    ]
   },
   "fangorn forest": {
-   "ages": [],
-   "cites": [],
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "C III.3–4; RC[T]"
+   ],
    "coords": [],
    "n": "Fangorn Forest (Entwood)",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Forests"
+    "spec TA: Forests",
+    "named Entwood by the spec, which is how it is told from the other place of the same name",
+    "Ages taken from its realm fangorn, having none of its own [I-H]",
+    "Evidence Table G1"
    ],
-   "parents": [],
+   "parents": [
+    "fangorn"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -3193,7 +3267,9 @@
   },
   "fen of serech": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "A ch18, ch19, ch20; HoME 3, 11"
+   ],
    "coords": [
     {
      "conf": "H",
@@ -3203,9 +3279,10 @@
     }
    ],
    "n": "Fen of Serech",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec FA: fen"
+    "spec FA: fen",
+    "Evidence Table B13"
    ],
    "parents": [],
    "place_conf": "H",
@@ -3227,15 +3304,17 @@
     "TA"
    ],
    "cites": [
-    "App A II; UT"
+    "App A II; UT",
+    "C App A (as corrected by D App C); D Cirion"
    ],
    "coords": [],
    "n": "Field of Celebrant",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also Parth Celebrant",
     "Eorl's charge saved Gondor here, 2510; the Oath followed.",
-    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]"
+    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]",
+    "Evidence Table R16"
    ],
    "parents": [
     "gondor"
@@ -3347,18 +3426,28 @@
    ]
   },
   "formenos": {
-   "ages": [],
+   "ages": [
+    "FA",
+    "SA",
+    "YT"
+   ],
    "cites": [
-    "The Silmarillion, line 4057"
+    "The Silmarillion, line 4057",
+    "A ch7"
    ],
    "coords": [],
    "n": "Formenos",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“With him into banishment went his seven sons, and northward in Valinor they made a strong place and treasury in the hills; and there at Formenos a multitude of gems were laid in hoard, and weapons also, and the Silmarils were shut in a chamber of iron.” — The Silmarillion, line 4057",
-    "indexed by Christopher Tolkien as: Stronghold of the Fëanorians in the north of Valinor"
+    "indexed by Christopher Tolkien as: Stronghold of the Fëanorians in the north of Valinor",
+    "placed within valinor by the geographic reconstruction's evidence table, which cites A ch7",
+    "Ages taken from its realm valinor, having none of its own [I-H]",
+    "Evidence Table V13"
    ],
-   "parents": [],
+   "parents": [
+    "valinor"
+   ],
    "place_conf": "High",
    "timeline": [],
    "types": [
@@ -3463,7 +3552,8 @@
     "TA"
    ],
    "cites": [
-    "RC (Baynes-map names) [I-M]; Fram and Scatha: App A II"
+    "RC (Baynes-map names) [I-M]; Fram and Scatha: App A II",
+    "D Cirion; C App A; RC[T]"
    ],
    "coords": [
     {
@@ -3474,10 +3564,11 @@
     }
    ],
    "n": "Framsburg",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec TA: ruined burg",
-    "A name Tolkien gave for the Baynes map, near Éothéod; the Companion guesses a stronghold named for Fram, who slew Scatha. No narrative text places it."
+    "A name Tolkien gave for the Baynes map, near Éothéod; the Companion guesses a stronghold named for Fram, who slew Scatha. No narrative text places it.",
+    "Evidence Table R4"
    ],
    "parents": [
     "eotheod"
@@ -3522,14 +3613,16 @@
     "TA"
    ],
    "cites": [
-    "UT; App B"
+    "UT; App B",
+    "D Gladden; C I.2; RC[T]"
    ],
    "coords": [],
    "n": "Gladden Fields",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also Loeg Ningloron",
-    "Isildur fell among the reeds, T.A. 2; Déagol's find, 2463."
+    "Isildur fell among the reeds, T.A. 2; Déagol's find, 2463.",
+    "Evidence Table R7"
    ],
    "parents": [],
    "place_conf": "H",
@@ -3566,7 +3659,8 @@
     "FA"
    ],
    "cites": [
-    "Silm 15/23; FoG"
+    "Silm 15/23; FoG",
+    "A ch15, ch16, ch23; G"
    ],
    "coords": [
     {
@@ -3577,11 +3671,12 @@
     }
    ],
    "n": "Gondolin",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec FA: hidden city",
     "also Ondolindë; the Hidden City",
-    "Turgon's white city on Amon Gwareth amid the Echoriath; 52 years in secret building."
+    "Turgon's white city on Amon Gwareth amid the Echoriath; 52 years in secret building.",
+    "Evidence Table B21"
    ],
    "parents": [],
    "place_conf": "H",
@@ -3732,7 +3827,9 @@
     "SA",
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "C IV.3, VI.2–3"
+   ],
    "coords": [
     {
      "conf": null,
@@ -3742,10 +3839,11 @@
     }
    ],
    "n": "Gorgoroth",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "interior label of Mordor (realm = its mountain rectangle), per the vector spec",
-    "Ages taken from its realm mordor, having none of its own [I-H]"
+    "Ages taken from its realm mordor, having none of its own [I-H]",
+    "Evidence Table G22"
    ],
    "parents": [
     "mordor"
@@ -3839,12 +3937,15 @@
   },
   "grey mountains": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "B ch1, 18; C App A; D"
+   ],
    "coords": [],
    "n": "Grey Mountains (Ered Mithrin)",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Mountains"
+    "spec TA: Mountains",
+    "Evidence Table R3"
    ],
    "parents": [],
    "place_conf": "H",
@@ -3855,12 +3956,15 @@
   },
   "gwathlo system": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "D App D; RC; C II.3 (Boromir's crossing)"
+   ],
    "coords": [],
    "n": "Gwathlo (Greyflood) system",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Water"
+    "spec TA: Water",
+    "Evidence Table E17"
    ],
    "parents": [],
    "place_conf": "L",
@@ -3930,16 +4034,13 @@
     "NATURAL_GULF"
    ]
   },
-  "harlond": {
-   "ages": [],
+  "harlond gondor quays": {
+   "ages": [
+    "SA",
+    "TA"
+   ],
    "cites": [],
    "coords": [
-    {
-     "conf": "M",
-     "frame": "TA",
-     "x": 45,
-     "y": 648
-    },
     {
      "conf": "H",
      "frame": "TA",
@@ -3947,13 +4048,46 @@
      "y": 262
     }
    ],
+   "n": "Harlond (Gondor quays)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: haven",
+    "named Gondor quays by the spec, which is how it is told from the other place of the same name",
+    "Ages taken from its realm gondor, having none of its own [I-H]"
+   ],
+   "parents": [
+    "gondor"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "MAN_MADE_HAVEN"
+   ]
+  },
+  "harlond lindon": {
+   "ages": [
+    "SA",
+    "TA"
+   ],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 45,
+     "y": 648
+    }
+   ],
    "n": "Harlond (Lindon)",
    "name_conf": null,
    "notes": [
     "spec TA: haven",
-    "spec TA: haven"
+    "named Lindon by the spec, which is how it is told from the other place of the same name",
+    "Ages taken from its realm lindon, having none of its own [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "lindon"
+   ],
    "place_conf": "M",
    "timeline": [],
    "types": [
@@ -4158,14 +4292,16 @@
   "hildorien": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 5478"
+    "The Silmarillion, line 5478",
+    "A ch12; HoME 4"
    ],
    "coords": [],
    "n": "Hildórien",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“At the first rising of the Sun the Younger Children of Ilúvatar awoke in the land of Hildórien in the eastward regions of Middle-earth; but the first Sun arose in the West, and the opening eyes of Men were turned towards it, and their feet as they wandered over the Earth for the most part strayed that way.” — The Silmarillion, line 5478",
-    "indexed by Christopher Tolkien as: The land where the first Men awoke"
+    "indexed by Christopher Tolkien as: The land where the first Men awoke",
+    "Evidence Table W12"
    ],
    "parents": [],
    "place_conf": "High",
@@ -4455,12 +4591,15 @@
   },
   "iron hills": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "B ch15–17; C App A; Atlas"
+   ],
    "coords": [],
    "n": "Iron Hills",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Mountains"
+    "spec TA: Mountains",
+    "Evidence Table R11"
    ],
    "parents": [],
    "place_conf": "H",
@@ -4505,15 +4644,17 @@
     "TA"
    ],
    "cites": [
-    "LotR III.8-10"
+    "LotR III.8-10",
+    "C III.8–10; D Cirion, Fords"
    ],
    "coords": [],
    "n": "Isengard",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also Orthanc; Nan Curunír",
     "The unbreakable tower in Saruman's ring — drowned by Ents, Mar 3-5, 3019.",
-    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
+    "Evidence Table G3"
    ],
    "parents": [
     "rohan"
@@ -4562,7 +4703,9 @@
   },
   "isengard orthanc": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "C III.8–10; D Cirion, Fords"
+   ],
    "coords": [
     {
      "conf": "H",
@@ -4572,9 +4715,10 @@
     }
    ],
    "n": "Isengard/Orthanc",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: ring-fortress"
+    "spec TA: ring-fortress",
+    "Evidence Table G3"
    ],
    "parents": [],
    "place_conf": "H",
@@ -4633,7 +4777,9 @@
     "SA",
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "C IV.4–7, V.4; RC"
+   ],
    "coords": [
     {
      "conf": null,
@@ -4643,10 +4789,11 @@
     }
    ],
    "n": "Ithilien",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "interior label of Gondor, per the vector spec",
-    "Ages taken from its realm gondor, having none of its own [I-H]"
+    "Ages taken from its realm gondor, having none of its own [I-H]",
+    "Evidence Table G19"
    ],
    "parents": [
     "gondor"
@@ -4718,14 +4865,16 @@
   "khand": {
    "ages": [],
    "cites": [
-    "The Lord of the Rings, line 37264"
+    "The Lord of the Rings, line 37264",
+    "C IV.3, App A; RC[T]"
    ],
    "coords": [],
    "n": "Khand",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“He now was destroyed; but Gothmog the lieutenant of Morgul had flung them into the fray; Easterlings with axes, and Variags of Khand, Southrons in scarlet, and out of Far Harad black men like half-trolls with white eyes and red tongues.” — The Lord of the Rings, line 37264",
-    "indexed by Christopher Tolkien as: Land south-east of Mordor"
+    "indexed by Christopher Tolkien as: Land south-east of Mordor",
+    "Evidence Table G31"
    ],
    "parents": [],
    "place_conf": "High",
@@ -4845,14 +4994,16 @@
   "lammoth": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 4438"
+    "The Silmarillion, line 4438",
+    "A ch13; G"
    ],
    "coords": [],
    "n": "Lammoth",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“Therefore that region was called Lammoth; for the echoes of his voice dwelt there ever after, so that any who cried aloud in that land awoke them, and all the waste between the hills and the sea was filled with a clamour as of voices in anguish.” — The Silmarillion, line 4438",
-    "indexed by Christopher Tolkien as: Region north of the Firth of Drengist"
+    "indexed by Christopher Tolkien as: Region north of the Firth of Drengist",
+    "Evidence Table B8"
    ],
    "parents": [],
    "place_conf": "High",
@@ -4950,12 +5101,15 @@
   },
   "lindon": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "A RoP; C App A/B, VI.9; RC[T]"
+   ],
    "coords": [],
    "n": "Lindon",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Political / Regional Polygons"
+    "spec TA: Political / Regional Polygons",
+    "Evidence Table E2"
    ],
    "parents": [],
    "place_conf": "H",
@@ -5022,7 +5176,9 @@
     "SA",
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "C IV.3, VI.2–3"
+   ],
    "coords": [
     {
      "conf": null,
@@ -5032,10 +5188,11 @@
     }
    ],
    "n": "Lithlad",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "interior label of Mordor (realm = its mountain rectangle), per the vector spec",
-    "Ages taken from its realm mordor, having none of its own [I-H]"
+    "Ages taken from its realm mordor, having none of its own [I-H]",
+    "Evidence Table G22"
    ],
    "parents": [
     "mordor"
@@ -5048,7 +5205,9 @@
   },
   "lond daer": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "D Aldarion, App D; RC[T]"
+   ],
    "coords": [
     {
      "conf": "H",
@@ -5058,9 +5217,10 @@
     }
    ],
    "n": "Lond Daer",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: ruined haven °"
+    "spec TA: ruined haven °",
+    "Evidence Table E18"
    ],
    "parents": [],
    "place_conf": "H",
@@ -5159,14 +5319,16 @@
   "lothlann": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 6325"
+    "The Silmarillion, line 6325",
+    "A ch14"
    ],
    "coords": [],
    "n": "Lothlann",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“In that region, upon the March of Maedhros and in the lands behind, dwelt the sons of Fëanor with many people; and their riders passed often over the vast northern plain, Lothlann the wide and empty, east of Ard-galen, lest Morgoth should attempt any sortie towards East Beleriand.” — The Silmarillion, line 6325",
-    "indexed by Christopher Tolkien as: Great plain east of Dorthonion"
+    "indexed by Christopher Tolkien as: Great plain east of Dorthonion",
+    "Evidence Table B5"
    ],
    "parents": [],
    "place_conf": "High",
@@ -5185,12 +5347,15 @@
   },
   "lothlorien": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "A RoP; C II.6–8; D; I"
+   ],
    "coords": [],
    "n": "Lothlorien",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Forests"
+    "spec TA: Forests",
+    "Evidence Table R15"
    ],
    "parents": [],
    "place_conf": "H",
@@ -5259,7 +5424,8 @@
     "FA"
    ],
    "cites": [
-    "Silm 10"
+    "Silm 10",
+    "A ch10, ch14"
    ],
    "coords": [
     {
@@ -5270,12 +5436,13 @@
     }
    ],
    "n": "Menegroth",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec FA: cave-city",
     "also the Thousand Caves",
     "Thingol and Melian's hall over Esgalduin, fairest king-house east of the Sea.",
-    "within the Doriath (Thingol & Melian) boundary as the living map draws it, Y.T.–F.A. c.502 [I-M]"
+    "within the Doriath (Thingol & Melian) boundary as the living map draws it, Y.T.–F.A. c.502 [I-M]",
+    "Evidence Table B25"
    ],
    "parents": [
     "doriath"
@@ -5352,15 +5519,17 @@
   "methedras": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 15999"
+    "The Silmarillion, line 15999",
+    "C III.4; RC[T]"
    ],
    "coords": [],
    "n": "Methedras",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“ras ‘horn’ in Barad Nimras, also in Caradhras (‘Redhorn’) and Methedras (‘Last Peak’) in the Misty Mountains; plural rais in Ered Nimrais.” — The Silmarillion, line 15999",
     "indexed by Christopher Tolkien as: Last great peak of the Misty Mountains",
-    "named within Misty Mountains (Hithaeglir) by the vector spec's own block for it"
+    "named within Misty Mountains (Hithaeglir) by the vector spec's own block for it",
+    "Evidence Table G2"
    ],
    "parents": [
     "misty mountains"
@@ -5409,7 +5578,8 @@
     "TA"
    ],
    "cites": [
-    "App A/B; LotR IV.8"
+    "App A/B; LotR IV.8",
+    "C IV.6–8, V.4, VI.1; RC"
    ],
    "coords": [
     {
@@ -5420,12 +5590,13 @@
     }
    ],
    "n": "Minas Morgul",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec TA: dead city",
     "also Minas Ithil",
     "The Tower of the Moon taken by the Nazgûl, 2002; the dead city of the pass.",
-    "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]"
+    "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]",
+    "Evidence Table G20"
    ],
    "parents": [
     "mordor"
@@ -5464,7 +5635,8 @@
     "TA"
    ],
    "cites": [
-    "LotR V.1"
+    "LotR V.1",
+    "C V.1, V.4; RC"
    ],
    "coords": [
     {
@@ -5475,12 +5647,13 @@
     }
    ],
    "n": "Minas Tirith",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec TA: city (7 walls)",
     "also Minas Anor; the White City",
     "Seven walls under Mindolluin; the Pelennor before it; the White Tree in the Court.",
-    "within the Gondor (late Third Age) boundary as the living map draws it, T.A. c.1900–3019 [I-M]"
+    "within the Gondor (late Third Age) boundary as the living map draws it, T.A. c.1900–3019 [I-M]",
+    "Evidence Table G15"
    ],
    "parents": [
     "gondor"
@@ -5495,14 +5668,16 @@
   "minhiriath": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 16045"
+    "The Silmarillion, line 16045",
+    "D App D; HoME 12"
    ],
    "coords": [],
    "n": "Minhiriath",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“With change of s to h in the middle of words it is present in Minhiriath ‘between the rivers’, the region between the Brandywine and the Greyflood; in Nanduhirion ‘vale of dim streams’, the Dimrill Dale (see nan(d) and dú); and in Ethir Anduin, the outflow or delta of Anduin (from et-sîr).” — The Silmarillion, line 16045",
-    "indexed by Christopher Tolkien as: Lands between Brandywine and Greyfiood"
+    "indexed by Christopher Tolkien as: Lands between Brandywine and Greyfiood",
+    "Evidence Table E16"
    ],
    "parents": [],
    "place_conf": "High",
@@ -5513,12 +5688,15 @@
   },
   "mirkwood": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "B ch7–9; C App B; D; RC[T]; HoME 12"
+   ],
    "coords": [],
    "n": "Mirkwood (Greenwood the Great / Eryn Lasgalen)",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Forests"
+    "spec TA: Forests",
+    "Evidence Table R8"
    ],
    "parents": [],
    "place_conf": "H",
@@ -5545,12 +5723,15 @@
   },
   "misty mountains": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "C Prologue/App; A ch3; B ch4–6; RC[T]"
+   ],
    "coords": [],
    "n": "Misty Mountains (Hithaeglir)",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Mountains"
+    "spec TA: Mountains",
+    "Evidence Table R1"
    ],
    "parents": [],
    "place_conf": "H",
@@ -5733,16 +5914,18 @@
     "TA"
    ],
    "cites": [
-    "LotR VI.3; App B"
+    "LotR VI.3; App B",
+    "C VI.3; RC"
    ],
    "coords": [],
    "n": "Mount Doom (Orodruin)",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec TA: Mountains",
     "also Orodruin; Amon Amarth",
     "The Ring was forged in its fire, and unmade there, March 25, 3019.",
-    "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]"
+    "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]",
+    "Evidence Table G23"
    ],
    "parents": [
     "mordor"
@@ -5783,14 +5966,16 @@
     "TA"
    ],
    "cites": [
-    "HoME XII; App A III"
+    "HoME XII; App A III",
+    "HoME 12; B ch17; C App A"
    ],
    "coords": [],
    "n": "Mount Gundabad",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "Durin's awakening-place, revered and defiled; the orc-capital of the North.",
-    "within the Angmar (the Witch-king) boundary as the living map draws it, T.A. c.1300–1975 [I-M]"
+    "within the Angmar (the Witch-king) boundary as the living map draws it, T.A. c.1300–1975 [I-M]",
+    "Evidence Table R2"
    ],
    "parents": [
     "angmar",
@@ -5821,14 +6006,16 @@
   "nan dungortheb": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 4455"
+    "The Silmarillion, line 4455",
+    "A ch14, ch16, ch19"
    ],
    "coords": [],
    "n": "Nan Dungortheb",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“With their whips of flame they smote asunder the webs of Ungoliant, and she quailed, and turned to flight, belching black vapours to cover her; and fleeing from the north she went down into Beleriand, and dwelt beneath Ered Gorgoroth, in that dark valley that was after called Nan Dungortheb, the Valley of Dreadful Death, because of the horror that she bred there.” — The Silmarillion, line 4455",
-    "indexed by Christopher Tolkien as: ‘The Valley of Dreadful Death’"
+    "indexed by Christopher Tolkien as: ‘The Valley of Dreadful Death’",
+    "Evidence Table B16"
    ],
    "parents": [],
    "place_conf": "High",
@@ -5862,7 +6049,8 @@
     "FA"
    ],
    "cites": [
-    "Silm 13/21; CoH"
+    "Silm 13/21; CoH",
+    "A ch14, ch21; F ch X–XIV"
    ],
    "coords": [
     {
@@ -5873,11 +6061,12 @@
     }
    ],
    "n": "Nargothrond",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec FA: cave-city",
     "also Nulukkizdîn",
-    "Finrod's hidden halls above Narog; betrayed by its own bridge."
+    "Finrod's hidden halls above Narog; betrayed by its own bridge.",
+    "Evidence Table B33"
    ],
    "parents": [],
    "place_conf": "H",
@@ -5963,12 +6152,15 @@
   },
   "nen hithoel": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "C II.9–III.1; RC[T]"
+   ],
    "coords": [],
    "n": "Nen Hithoel",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Water"
+    "spec TA: Water",
+    "Evidence Table R19"
    ],
    "parents": [],
    "place_conf": "H",
@@ -6019,14 +6211,16 @@
   "nevrast": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 5913"
+    "The Silmarillion, line 5913",
+    "A ch14"
    ],
    "coords": [],
    "n": "Nevrast",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“And when again thirty years had passed, Turgon son of Fingolfin left Nevrast where he dwelt and sought out Finrod his friend upon the island of Tol Sirion, and they journeyed southward along the river, being weary for a while of the northern mountains; and as they journeyed night came upon them beyond the Meres of Twilight beside the waters of Sirion, and they slept upon his banks beneath the summer stars.” — The Silmarillion, line 5913",
-    "indexed by Christopher Tolkien as: The region south of Drengist"
+    "indexed by Christopher Tolkien as: The region south of Drengist",
+    "Evidence Table B10"
    ],
    "parents": [],
    "place_conf": "High",
@@ -6122,7 +6316,9 @@
     "SA",
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "C IV.3, VI.2–3"
+   ],
    "coords": [
     {
      "conf": null,
@@ -6132,10 +6328,11 @@
     }
    ],
    "n": "Nurn",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "interior label of Mordor (realm = its mountain rectangle), per the vector spec",
-    "Ages taken from its realm mordor, having none of its own [I-H]"
+    "Ages taken from its realm mordor, having none of its own [I-H]",
+    "Evidence Table G22"
    ],
    "parents": [
     "mordor"
@@ -6188,14 +6385,16 @@
   "oiolosse": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 2230"
+    "The Silmarillion, line 2230",
+    "A Valaquenta, ch1"
    ],
    "coords": [],
    "n": "Oiolossë",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“Their halls are above the everlasting snow, upon Oiolossë, the uttermost tower of Taniquetil, tallest of all the mountains upon Earth.” — The Silmarillion, line 2230",
-    "indexed by Christopher Tolkien as: Mount Everwhite"
+    "indexed by Christopher Tolkien as: Mount Everwhite",
+    "Evidence Table V3"
    ],
    "parents": [],
    "place_conf": "High",
@@ -6252,7 +6451,8 @@
     "TA"
    ],
    "cites": [
-    "App A; LotR II.2"
+    "App A; LotR II.2",
+    "A RoP; C App A, IV.3; RC[T]"
    ],
    "coords": [
     {
@@ -6263,12 +6463,13 @@
     }
    ],
    "n": "Osgiliath",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec TA: ruined city",
     "also Citadel of the Stars",
     "The old capital astride Anduin; its Dome held the master-stone; the war began here.",
-    "within the Gondor (late Third Age) boundary as the living map draws it, T.A. c.1900–3019 [I-M]"
+    "within the Gondor (late Third Age) boundary as the living map draws it, T.A. c.1900–3019 [I-M]",
+    "Evidence Table G17"
    ],
    "parents": [
     "gondor"
@@ -6367,7 +6568,8 @@
     "TA"
    ],
    "cites": [
-    "App A/B; LotR V.9"
+    "App A/B; LotR V.9",
+    "A Akallabêth; C App B, V.2, V.9"
    ],
    "coords": [
     {
@@ -6378,11 +6580,12 @@
     }
    ],
    "n": "Pelargir",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec TA: haven-city",
     "Great haven of the Faithful (S.A. 2350); Aragorn took the fleet here, Mar 13, 3019.",
-    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]"
+    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]",
+    "Evidence Table G27"
    ],
    "parents": [
     "gondor"
@@ -6505,7 +6708,8 @@
     "TA"
    ],
    "cites": [
-    "App B; LotR II.1-2"
+    "App B; LotR II.1-2",
+    "C II.1; D G&C; RC[T]"
    ],
    "coords": [
     {
@@ -6516,11 +6720,12 @@
     }
    ],
    "n": "Rivendell (Imladris)",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec TA: hidden refuge",
     "also Imladris",
-    "Elrond's Last Homely House, founded S.A. 1697; Vilya kept it; the Council met here."
+    "Elrond's Last Homely House, founded S.A. 1697; Vilya kept it; the Council met here.",
+    "Evidence Table E13"
    ],
    "parents": [],
    "place_conf": "H",
@@ -6578,14 +6783,16 @@
   "rivil": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 9158"
+    "The Silmarillion, line 9158",
+    "A ch18, ch19, ch20; HoME 3, 11"
    ],
    "coords": [],
    "n": "Rivil",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“He marched on therefore until the front of his battle was drawn up before the stream of Sirion, from the walls of the fortress of Eithel Sirion to the inflowing of Rivil at the Fen of Serech; and the outposts of Fingon could see the eyes of their enemies.” — The Silmarillion, line 9158",
-    "indexed by Christopher Tolkien as: Tributary stream of Sirion"
+    "indexed by Christopher Tolkien as: Tributary stream of Sirion",
+    "Evidence Table B13"
    ],
    "parents": [],
    "place_conf": "High",
@@ -6597,12 +6804,15 @@
   },
   "rohan": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "D Cirion; C App A, III.2; HoME 12"
+   ],
    "coords": [],
    "n": "Rohan (grant bounds of 2510, dotted line)",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Political / Regional Polygons"
+    "spec TA: Political / Regional Polygons",
+    "Evidence Table G10"
    ],
    "parents": [],
    "place_conf": "L",
@@ -6636,14 +6846,16 @@
   "romenna": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 12199"
+    "The Silmarillion, line 12199",
+    "D; A Akallabêth"
    ],
    "coords": [],
    "n": "Rómenna",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“And the chief dwelling of the Faithful in the later days was thus nigh to the harbour of Rómenna; thence many set sail to Middle-earth, seeking the northern coasts where they might speak still with the Eldar in the kingdom of Gil-galad.” — The Silmarillion, line 12199",
-    "indexed by Christopher Tolkien as: Haven in the east of Nûmenor"
+    "indexed by Christopher Tolkien as: Haven in the east of Nûmenor",
+    "Evidence Table N6"
    ],
    "parents": [],
    "place_conf": "High",
@@ -6814,14 +7026,16 @@
     "TA"
    ],
    "cites": [
-    "App A/B"
+    "App A/B",
+    "C App A; I; HoME 11, 12"
    ],
    "coords": [],
    "n": "Sea of Rhûn",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec TA: Water",
-    "The eastern sea of the Wainrider wars; Dorwinion northwest of it."
+    "The eastern sea of the Wainrider wars; Dorwinion northwest of it.",
+    "Evidence Table R13"
    ],
    "parents": [],
    "place_conf": "M",
@@ -6991,14 +7205,16 @@
   "taniquetil": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 1105"
+    "The Silmarillion, line 1105",
+    "A Valaquenta, ch1"
    ],
    "coords": [],
    "n": "Taniquetil",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“Its title contains linguistic roots from Tolkien’s ‘Elvish’ language Qenya (later Quenya) meaning ‘high, lofty’ and ‘white’, similar to the name ‘Taniquetil’ which we meet later.” — The Silmarillion, line 1105",
-    "indexed by Christopher Tolkien as: ‘High-Snow-Peak’, properly the highest peak of the"
+    "indexed by Christopher Tolkien as: ‘High-Snow-Peak’, properly the highest peak of the",
+    "Evidence Table V3"
    ],
    "parents": [],
    "place_conf": "High",
@@ -7076,14 +7292,16 @@
   "taur nu fuin": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 8271"
+    "The Silmarillion, line 8271",
+    "A ch14, ch18, ch19; HoME 3"
    ],
    "coords": [],
    "n": "Taur-nu-Fuin",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“By the arts of Felagund their own forms and faces were changed into the likeness of Orcs; and thus disguised they came far upon their northward road, and ventured into the western pass, between Ered Wethrin and the highlands of Taur-nu-Fuin.” — The Silmarillion, line 8271",
-    "indexed by Christopher Tolkien as: (also earlier Taur-na-Fuin) ‘The Forest under Night­"
+    "indexed by Christopher Tolkien as: (also earlier Taur-na-Fuin) ‘The Forest under Night­",
+    "Evidence Table B15"
    ],
    "parents": [],
    "place_conf": "High",
@@ -7105,7 +7323,8 @@
     "TA"
    ],
    "cites": [
-    "UT; LotR II.3"
+    "UT; LotR II.3",
+    "D App D; RC; C II.3 (Boromir's crossing)"
    ],
    "coords": [
     {
@@ -7116,10 +7335,11 @@
     }
    ],
    "n": "Tharbad",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec TA: ruined town/ford",
-    "The ruined river-town at the great crossing of the Gwathló."
+    "The ruined river-town at the great crossing of the Gwathló.",
+    "Evidence Table E17"
    ],
    "parents": [
     "cardolan",
@@ -7203,14 +7423,16 @@
     "TA"
    ],
    "cites": [
-    "Hobbit vi-vii"
+    "Hobbit vi-vii",
+    "B ch7; C II.1"
    ],
    "coords": [],
    "n": "The Carrock",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also & Beorn's house",
-    "The Eagles' ford-rock; the skin-changer's oak-hall east of it."
+    "The Eagles' ford-rock; the skin-changer's oak-hall east of it.",
+    "Evidence Table R6"
    ],
    "parents": [],
    "place_conf": "H",
@@ -7460,12 +7682,15 @@
   },
   "the shire": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "C Prologue, App B; HoME 12; RC"
+   ],
    "coords": [],
    "n": "The Shire",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Political / Regional Polygons"
+    "spec TA: Political / Regional Polygons",
+    "Evidence Table E5"
    ],
    "parents": [],
    "place_conf": "H",
@@ -7747,15 +7972,17 @@
     "FA"
    ],
    "cites": [
-    "Silm 18-19"
+    "Silm 18-19",
+    "A ch14, ch18; E"
    ],
    "coords": [],
    "n": "Tol Sirion",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also Minas Tirith of Orodreth; Tol-in-Gaurhoth",
     "The isle-tower of the pass; Sauron's werewolf-keep; Finrod died in its pits.",
-    "within the Dominion of Angband (after 455) boundary as the living map draws it, F.A. 455–583 [I-M]"
+    "within the Dominion of Angband (after 455) boundary as the living map draws it, F.A. 455–583 [I-M]",
+    "Evidence Table B14"
    ],
    "parents": [
     "angband"
@@ -7826,15 +8053,17 @@
     "TA"
    ],
    "cites": [
-    "App A/B; Prologue"
+    "App A/B; Prologue",
+    "C Prologue, App A; A RoP; D; RC[T] (unpub. Index)"
    ],
    "coords": [],
    "n": "Tower Hills",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also Emyn Beraid; Elostirion",
     "The palantír that looks only West; Elanor's Westmarch beneath.",
-    "within the Lindon (Gil-galad) boundary as the living map draws it, S.A. 1–T.A. 3021 [I-M]"
+    "within the Lindon (Gil-galad) boundary as the living map draws it, S.A. 1–T.A. 3021 [I-M]",
+    "Evidence Table E4"
    ],
    "parents": [
     "lindon",
@@ -7991,14 +8220,16 @@
   "tuna": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 1121"
+    "The Silmarillion, line 1121",
+    "A ch5, ch9"
    ],
    "coords": [],
    "n": "Túna",
-   "name_conf": "High",
+   "name_conf": "H",
    "notes": [
     "“Kôr in Tolkien’s early writings was both the city of the Elves in Eldamar and the hill on which it was built; in later accounts, it is called Tirion upon Túna.” — The Silmarillion, line 1121",
-    "indexed by Christopher Tolkien as: The hill on which Tirion was built, but also often used of"
+    "indexed by Christopher Tolkien as: The hill on which Tirion was built, but also often used of",
+    "Evidence Table V7"
    ],
    "parents": [],
    "place_conf": "High",
@@ -8069,7 +8300,9 @@
   },
   "umbar": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "C App A; A Akallabêth (Ar-Pharazôn's landing)"
+   ],
    "coords": [
     {
      "conf": "M",
@@ -8079,9 +8312,10 @@
     }
    ],
    "n": "Umbar",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: corsair haven"
+    "spec TA: corsair haven",
+    "Evidence Table G30"
    ],
    "parents": [],
    "place_conf": "M",
@@ -8221,7 +8455,8 @@
     "FA"
    ],
    "cites": [
-    "Silm 15; UT (Tuor)"
+    "Silm 15; UT (Tuor)",
+    "A ch14; G LV"
    ],
    "coords": [
     {
@@ -8232,11 +8467,12 @@
     }
    ],
    "n": "Vinyamar",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "spec FA: ruined halls",
     "also under Mount Taras",
-    "Turgon's first hall by the sea, where Tuor found shield and sword left by command of Ulmo."
+    "Turgon's first hall by the sea, where Tuor found shield and sword left by command of Ulmo.",
+    "Evidence Table B11"
    ],
    "parents": [],
    "place_conf": "H",
@@ -8259,15 +8495,17 @@
     "TA"
    ],
    "cites": [
-    "App A; LotR I.11"
+    "App A; LotR I.11",
+    "C I.11, App A; RC"
    ],
    "coords": [],
    "n": "Weathertop",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also Amon Sûl",
     "Watchtower of the North's great palantír; razed 1409; the Witch-king's knife, Oct 6, 3018.",
-    "within the Rhudaur boundary as the living map draws it, T.A. 861–c.1409 [I-M]"
+    "within the Rhudaur boundary as the living map draws it, T.A. 861–c.1409 [I-M]",
+    "Evidence Table E10"
    ],
    "parents": [
     "rhudaur",
@@ -8362,12 +8600,15 @@
   },
   "white mountains": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "C III–V; I"
+   ],
    "coords": [],
    "n": "White Mountains (Ered Nimrais)",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
-    "spec TA: Mountains"
+    "spec TA: Mountains",
+    "Evidence Table G12"
    ],
    "parents": [],
    "place_conf": "H",
