@@ -62,3 +62,16 @@ html.arda-canon .conf,html.arda-canon .refnote{opacity:.4}
 #a-fbdlg .fbbtns{display:flex;gap:8px;flex-wrap:wrap;margin:.6em 0 .3em}
 #a-fbdlg .fbbtns button{border:1px solid #a8853c;border-radius:10px;padding:4px 12px;font:12.5px Georgia,serif;background:#efe0bd;cursor:pointer}
 #a-fbdlg .fbnote{font-size:10.5px;color:#6b5c44;font-style:italic;border-top:1px dotted #b0a58e;padding-top:6px;margin-top:4px}
+
+/* A SHORT PAGE TILED ITS OWN BACKGROUND. Every hall paints `body` with a radial gradient
+   over a flat parchment. A gradient sizes to its positioning area, and when the body is
+   shorter than the window that area is the body -- so the browser propagated it to the
+   canvas and REPEATED it, laying hard horizontal seams every few hundred pixels down the
+   empty part of the page. Registers showed three of them.
+
+   Giving `html` a background of its own stops the propagation: body's gradient stays on
+   the body, and the canvas below it is the flat colour it was always meant to be. It is
+   set here rather than in each hall because the halls set `background` with the shorthand,
+   which would reset any repeat rule written before it. */
+html{background:#efe6cd}
+html.arda-dark{background:#181410}
