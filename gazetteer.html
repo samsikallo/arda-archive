@@ -1,6 +1,11 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Gazetteer of Arda — the Arda Archive</title>
+<!-- THE SHARED SHEET FIRST, and it was missing. nav.js builds the same grouped menu for
+     every hall, but arda.css is what makes it a menu; without it the whole navigation
+     rendered as three hundred and fifty pixels of run-together link text above the page,
+     on the one hall the smoke test cannot see. The page's own rules follow, and win. -->
+<link rel="stylesheet" href="arda.css">
 <style>
 :root{--line:#b0a58e;--mut:#7a6f5c}
 body{margin:0;background:#f4efe2;color:#3a3226;font:16px/1.55 Georgia,'Times New Roman',serif}

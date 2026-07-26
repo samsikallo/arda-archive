@@ -2861,7 +2861,8 @@
     }
    ],
    "types": [
-    "NATURAL_FALLS"
+    "NATURAL_FALLS",
+    "NATURAL_LAKE"
    ]
   },
   "eithel sirion": {
@@ -3354,7 +3355,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_PLAIN"
+    "UNCLASSIFIED"
    ]
   },
   "ettenmoors": {
@@ -4209,7 +4210,7 @@
     }
    ],
    "types": [
-    "NATURAL_PLAIN"
+    "UNCLASSIFIED"
    ]
   },
   "greenholm": {
@@ -4870,7 +4871,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_PLAIN"
+    "NATURAL_BAY"
    ]
   },
   "icebay of forochel": {
@@ -5219,7 +5220,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_PLAIN"
+    "NATURAL_LAKE"
    ]
   },
   "ivy bush": {
@@ -5338,7 +5339,7 @@
     }
    ],
    "types": [
-    "NATURAL_PLAIN"
+    "NATURAL_LAKE"
    ]
   },
   "lamedon": {
@@ -6783,7 +6784,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_PLAIN"
+    "NATURAL_SEA"
    ]
   },
   "nw shore forest at sea of rhun": {
@@ -6990,7 +6991,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_PLAIN"
+    "UNCLASSIFIED"
    ]
   },
   "pelargir": {
@@ -7492,8 +7493,7 @@
     }
    ],
    "types": [
-    "NATURAL_SEA",
-    "NATURAL_PLAIN"
+    "NATURAL_SEA"
    ]
   },
   "sirannon": {
@@ -7892,8 +7892,7 @@
     }
    ],
    "types": [
-    "NATURAL_PLAIN",
-    "MAN_MADE_CROSSING"
+    "NATURAL_ROCK"
    ]
   },
   "the crossroads": {
@@ -7942,7 +7941,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_PLAIN"
+    "NATURAL_MARSH"
    ]
   },
   "the elvenking s halls": {
@@ -8236,7 +8235,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_PLAIN"
+    "UNCLASSIFIED"
    ]
   },
   "the wold": {

@@ -155,12 +155,15 @@ window.ardaGazPanel=function(e){
         '<div class="cite" style="margin-top:8px">Built from the vector map specification, '+
         'the geographic reconstruction\'s evidence table, the living map and the realms.</div></div>';
 };
-// a record for a place the living map does not carry
+// A RECORD FOR A PLACE THE LIVING MAP DOES NOT CARRY -- WITHOUT THE PANEL. It used to
+// call ardaGazPanel itself, and the general hook below appends the panel to every record,
+// so the hundred and thirteen places that fall back to this one showed "In the gazetteer"
+// TWICE, one directly under the other. Exactly one piece of code appends it now, and it
+// sets a flag so the other stands down whichever of the two fetches resolves first.
 window.ardaGazRecord=function(e){
  return '<div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap">'+
    '<h2 id="nm">'+e.n+'</h2><span class="cite" style="font-size:14px">'+
    ((e.ages||[]).join(", ")||"of Arda")+'</span></div><div class="orn">\u2766 \u2726 \u2766</div>'+
-   window.ardaGazPanel(e)+
    ((e.notes||[]).length?'<div class="card"><h3 style="margin:0 0 6px">What is recorded</h3>'+
      e.notes.map(function(n){return '<div>'+n+'</div>'}).join("")+'</div>':'')+
    ((e.cites||[]).length?'<div class="cite" style="margin-top:10px">'+e.cites.join(" · ")+'</div>':'');
