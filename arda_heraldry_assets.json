@@ -756,6 +756,25 @@
    ]
   },
   {
+   "file": "heraldry/illustrated/finwehouse.png",
+   "exists": true,
+   "device": "finwehouse",
+   "label": "House of Finwë — the Winged Sun",
+   "tier": 2,
+   "basis": "a freely-licensed recreation of a device Tolkien designed",
+   "source": "supplied to the workshop, 2026-07-26",
+   "licence": "unattributed; rights confirmed by the site's owner",
+   "author": "unattributed",
+   "publishable": true,
+   "withdrawn": null,
+   "modified": null,
+   "sha1": "f4197bb260d981b0",
+   "size": [
+    480,
+    480
+   ]
+  },
+  {
    "file": "Emblem of the Flying Corps of Mordor.png",
    "exists": true,
    "device": "flyingcorps",
@@ -1409,7 +1428,7 @@
    "source": "map/gen_forge_layers.py",
    "licence": "the archive's own",
    "publishable": true,
-   "shown": true
+   "shown": false
   },
   {
    "file": null,
