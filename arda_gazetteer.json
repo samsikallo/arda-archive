@@ -23,7 +23,23 @@
    "parents": [
     "ossiriand"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Silm 18 [C]",
+     "realm": "thargelion",
+     "status": "burned",
+     "what": "Burned in the Bragollach; Caranthir retreats to Amon Ereb",
+     "when": "F.A. 455"
+    },
+    {
+     "cite": "Silm 10 [C]",
+     "realm": "ossiriand",
+     "status": "destroyed",
+     "what": "Denethor falls on Amon Ereb; the Green-elves take to secrecy — no king again",
+     "when": "First Battle"
+    }
+   ],
    "types": [
     "NATURAL_PEAK"
    ]
@@ -46,6 +62,15 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_WATCHPOST"
    ]
@@ -55,39 +80,36 @@
     "FA"
    ],
    "cites": [
-    "CoH VII-VIII",
-    "A ch21; F ch VII–VIII"
+    "CoH VII-VIII"
    ],
    "coords": [],
    "n": "Amon Rûdh",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "also Bar-en-Danwedh",
-    "Mîm's bald hill; Túrin's outlaw hold; Beleg's grief.",
-    "Evidence Table B32"
+    "Mîm's bald hill; Túrin's outlaw hold; Beleg's grief."
    ],
    "parents": [
     "nargothrond"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PEAK"
    ]
   },
   "anduin": {
    "ages": [],
-   "cites": [
-    "A RoP; C II.9; D; RC[T]"
-   ],
+   "cites": [],
    "coords": [],
    "n": "Anduin (the Great River)",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: Water",
-    "Evidence Table R5"
+    "spec TA: Water"
    ],
    "parents": [],
    "place_conf": "L",
+   "timeline": [],
    "types": [
     "NATURAL_SEA"
    ]
@@ -97,19 +119,18 @@
     "FA"
    ],
    "cites": [
-    "Silm 18/20",
-    "A ch14, ch18, ch20"
+    "Silm 18/20"
    ],
    "coords": [],
    "n": "Anfauglith",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "also Ard-galen (before 455)",
-    "The green plain burned to gasping dust in the Bragollach; the Haudh-en-Ndengin rose here.",
-    "Evidence Table B4"
+    "The green plain burned to gasping dust in the Bragollach; the Haudh-en-Ndengin rose here."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PLAIN"
    ]
@@ -119,21 +140,56 @@
     "FA"
    ],
    "cites": [
-    "Silm 3/18; CoH intro",
-    "A ch3, ch10, ch14; HoME 5, 11; F Intro"
+    "Silm 3/18; CoH intro"
    ],
    "coords": [],
    "n": "Angband",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "also Thangorodrim",
-    "Morgoth's hells beneath the towers of slag; the Gate 150 leagues from Menegroth.",
-    "Evidence Table B2"
+    "Morgoth's hells beneath the towers of slag; the Gate 150 leagues from Menegroth."
    ],
    "parents": [
     "angband"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Silm 18 [C]",
+     "realm": "hithlum",
+     "status": "destroyed",
+     "what": "The Bragollach beaten off at Eithel Sirion; Fingolfin falls before Angband's gate",
+     "when": "F.A. 455–456"
+    },
+    {
+     "cite": "Silm 18–23 [C]",
+     "realm": "angband",
+     "status": "event",
+     "what": "Master of the North: the Bragollach, the Nirnaeth, the fall of every realm",
+     "when": "F.A. 455–583"
+    },
+    {
+     "cite": "Silm 24 [C]",
+     "realm": "angband",
+     "status": "event",
+     "what": "The War of Wrath: Thangorodrim broken, Morgoth thrust through the Door of Night",
+     "when": "F.A. 583–587"
+    },
+    {
+     "cite": "Silm 13, 18 [C]",
+     "realm": "angband",
+     "status": "besieged",
+     "what": "Besieged through the Long Peace (Dagor Aglareb to the Bragollach)",
+     "when": "F.A. 60–455"
+    },
+    {
+     "cite": "Silm 9, 13 [C]",
+     "realm": "angband",
+     "status": "built",
+     "what": "Morgoth returns with the Silmarils; Thangorodrim reared over the re-delved west-fort",
+     "when": "Y.T. 1495 – F.A. 1"
+    }
+   ],
    "types": [
     "MAN_MADE_FORTRESS"
    ]
@@ -149,6 +205,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "POLITY_REALM"
    ]
@@ -170,9 +227,19 @@
     "arnor",
     "reunited"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A/B [C]",
+     "realm": "arnor",
+     "status": "founded",
+     "what": "Elendil, cast up in the North, founds the realm; Annúminas its seat",
+     "when": "S.A. 3320"
+    }
+   ],
    "types": [
-    "MAN_MADE_RUIN"
+    "MAN_MADE_RUIN",
+    "NATURAL_LAKE"
    ]
   },
   "annuminas": {
@@ -193,6 +260,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_CITY"
    ]
@@ -208,6 +276,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "POLITY_REALM"
    ]
@@ -230,6 +299,15 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "UNCLASSIFIED"
    ]
@@ -245,6 +323,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ]
@@ -267,6 +346,15 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_DWELLING"
    ]
@@ -276,19 +364,40 @@
     "TA"
    ],
    "cites": [
-    "App B; LotR VI.3",
-    "A RoP; C III.11, IV.3, VI"
+    "App B; LotR VI.3"
    ],
    "coords": [],
    "n": "Barad-dûr",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "also the Dark Tower",
-    "Sauron's fortress, founded c. S.A. 1000, rebuilt 2951; its fall shook the world.",
-    "Evidence Table G24"
+    "Sauron's fortress, founded c. S.A. 1000, rebuilt 2951; its fall shook the world."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Silm; App B [C]",
+     "realm": "mordor",
+     "status": "event",
+     "what": "The Siege of Barad-dûr; Sauron overthrown by Elendil and Gil-galad",
+     "when": "S.A. 3434–3441"
+    },
+    {
+     "cite": "App B; Silm [C]",
+     "realm": "mordor",
+     "status": "event",
+     "what": "Sauron chooses the mountain-ringed land; Barad-dûr begun with the One Ring's power",
+     "when": "S.A. c.1000"
+    },
+    {
+     "cite": "LotR VI.3–4 [C]",
+     "realm": "mordor",
+     "status": "destroyed",
+     "what": "The Ring destroyed; Barad-dûr falls; the realm ends",
+     "when": "T.A. 3019"
+    }
+   ],
    "types": [
     "MAN_MADE_TOWER"
    ]
@@ -311,15 +420,22 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_FORTRESS"
    ]
   },
   "barad nimras": {
    "ages": [],
-   "cites": [
-    "A ch14, ch20"
-   ],
+   "cites": [],
    "coords": [
     {
      "conf": "H",
@@ -329,13 +445,21 @@
     }
    ],
    "n": "Barad Nimras",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec FA: watch-tower",
-    "Evidence Table B34"
+    "spec FA: watch-tower"
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_TOWER"
    ]
@@ -351,6 +475,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_SEA"
    ]
@@ -360,22 +485,21 @@
     "TA"
    ],
    "cites": [
-    "LotR I.8; App A",
-    "C I.8, App A; D Hunt; RC[T]"
+    "LotR I.8; App A"
    ],
    "coords": [],
    "n": "Barrow-downs",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "also Tyrn Gorthad",
-    "Wights out of Angmar walk the old Edain graves; the swords of Westernesse came hence.",
-    "Evidence Table E8"
+    "Wights out of Angmar walk the old Edain graves; the swords of Westernesse came hence."
    ],
    "parents": [
     "cardolan",
     "bombadil"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PEAK"
    ]
@@ -406,6 +530,43 @@
     "belegost"
    ],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Silm 20 [C]",
+     "realm": "belegost",
+     "status": "event",
+     "what": "Azaghâl's phalanx at the Nirnaeth turns Glaurung — the king slain",
+     "when": "F.A. 473"
+    },
+    {
+     "cite": "App A III [C]",
+     "realm": "khazaddum",
+     "status": "event",
+     "what": "Refugees of Nogrod and Belegost swell it; 'its wealth and its renown' greatest",
+     "when": "S.A. 40+"
+    },
+    {
+     "cite": "App A III [C]",
+     "realm": "belegost",
+     "status": "event",
+     "what": "Ered Luin broken in the War of Wrath's tumults; many remove to Khazad-dûm",
+     "when": "S.A. c.40"
+    },
+    {
+     "cite": "Silm 10 [C]",
+     "realm": "belegost",
+     "status": "built",
+     "what": "Delved in Ered Luin's eastern flank; Menegroth built with their craft",
+     "when": "Y.T."
+    },
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_CITY",
     "MAN_MADE_HALL"
@@ -429,6 +590,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_DWELLING"
    ]
@@ -451,6 +613,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_MANSION"
    ]
@@ -473,6 +636,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_BRIDGE"
    ]
@@ -502,6 +666,36 @@
     "bree"
    ],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "LotR III.4 [C]",
+     "realm": "fangorn",
+     "status": "event",
+     "what": "'the last remnant of the vast forests of the Elder Days' — once one wood with the Old Forest from Dunland to Bree",
+     "when": "Elder Days"
+    },
+    {
+     "cite": "App F; LotR I.9 [C]",
+     "realm": "bree",
+     "status": "event",
+     "what": "Men of the White Mountains' kin settle about Bree-hill — 'the oldest settlement of Men... in the western world' surviving",
+     "when": "S.A."
+    },
+    {
+     "cite": "App D; Prologue [C]",
+     "realm": "bree",
+     "status": "event",
+     "what": "Hobbits (Stoors and others) join; Bree Year 1 = T.A. 1300 in their count",
+     "when": "T.A. 1300s"
+    },
+    {
+     "cite": "LotR VI.7 [C]",
+     "realm": "bree",
+     "status": "event",
+     "what": "Ruffian troubles and the fight of the five; the Greenway reopens",
+     "when": "T.A. 3019"
+    }
+   ],
    "types": [
     "MAN_MADE_TOWN",
     "MAN_MADE_CITY"
@@ -509,18 +703,16 @@
   },
   "bree land": {
    "ages": [],
-   "cites": [
-    "C I.9; RC[T]"
-   ],
+   "cites": [],
    "coords": [],
    "n": "Bree-land",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: Political / Regional Polygons",
-    "Evidence Table E9"
+    "spec TA: Political / Regional Polygons"
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "POLITY_REALM"
    ]
@@ -530,21 +722,49 @@
     "FA"
    ],
    "cites": [
-    "Silm 17/21; CoH",
-    "A ch21; F ch XIII–XVIII; HoME 11"
+    "Silm 17/21; CoH"
    ],
    "coords": [],
    "n": "Brethil",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "also Forest of the Haladin",
-    "The Haladin's wood between Teiglin and Sirion; Túrin's last stand-ground.",
-    "Evidence Table B31"
+    "The Haladin's wood between Teiglin and Sirion; Túrin's last stand-ground."
    ],
    "parents": [
     "brethil"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "UT, The Drúedain [C]",
+     "realm": "druadan",
+     "status": "event",
+     "what": "With the Haladin in Brethil — the watch-stones and Ghân's forefathers' arts",
+     "when": "F.A."
+    },
+    {
+     "cite": "Silm 21; CoH [C]",
+     "realm": "brethil",
+     "status": "event",
+     "what": "Brethil holds the Crossings of Teiglin; Túrin's last deeds at Cabed-en-Aras",
+     "when": "F.A. 458–495"
+    },
+    {
+     "cite": "Silm 17 [C]",
+     "realm": "brethil",
+     "status": "event",
+     "what": "The Haladin under Haleth remove to Brethil, by leave of Thingol",
+     "when": "F.A. c.390"
+    },
+    {
+     "cite": "WotJ, Wanderings of Húrin [C — unpublished layer]",
+     "realm": "brethil",
+     "status": "event",
+     "what": "The Wanderings of Húrin wreck the chieftain's house (HoME layer)",
+     "when": "F.A. c.501"
+    }
+   ],
    "types": [
     "NATURAL_FOREST"
    ]
@@ -567,6 +787,15 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_CROSSING"
    ]
@@ -596,6 +825,15 @@
     "falas"
    ],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_HAVEN"
    ]
@@ -616,7 +854,8 @@
    "parents": [
     "shire"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_CITY"
    ]
@@ -639,6 +878,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_TOWN"
    ]
@@ -661,6 +901,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_VILLAGE"
    ]
@@ -670,8 +911,7 @@
     "TA"
    ],
    "cites": [
-    "LotR V.4; App B",
-    "C App A, V.4; RC[T]"
+    "LotR V.4; App B"
    ],
    "coords": [
     {
@@ -682,14 +922,14 @@
     }
    ],
    "n": "Cair Andros",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec TA: isle-fort",
-    "The ship-shaped river-isle guarding Anórien; stormed Mar 10, 3019.",
-    "Evidence Table G18"
+    "The ship-shaped river-isle guarding Anórien; stormed Mar 10, 3019."
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_ISLAND"
    ]
@@ -712,6 +952,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_TOWN"
    ]
@@ -731,7 +972,8 @@
     "The cruel mountain that defeated the Fellowship with snow."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PEAK"
    ]
@@ -760,6 +1002,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_CITY"
    ]
@@ -769,22 +1012,30 @@
     "TA"
    ],
    "cites": [
-    "App A I(iv)",
-    "C App A; D (Index)"
+    "App A I(iv)"
    ],
    "coords": [],
    "n": "Carn Dûm",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "The Witch-king's mountain-hold of Angmar.",
-    "Evidence Table E20"
+    "The Witch-king's mountain-hold of Angmar."
    ],
    "parents": [
     "angmar"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A [C]",
+     "realm": "angmar",
+     "status": "founded",
+     "what": "The Witch-king (unknown then to be the Nazgûl-lord) founds the realm at Carn Dûm",
+     "when": "c. T.A. 1300"
+    }
+   ],
    "types": [
-    "MAN_MADE_FORTRESS"
+    "MAN_MADE_FORTRESS",
+    "NATURAL_PEAK"
    ]
   },
   "carn dum": {
@@ -805,6 +1056,7 @@
    ],
    "parents": [],
    "place_conf": "M",
+   "timeline": [],
    "types": [
     "MAN_MADE_FORTRESS"
    ]
@@ -827,6 +1079,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "UNCLASSIFIED"
    ]
@@ -849,6 +1102,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_LANDMARK"
    ]
@@ -864,6 +1118,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_FOREST"
    ]
@@ -882,9 +1137,11 @@
     "Shelob's stair and tunnel; the Tower where Sam bore the Ring and found Frodo."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
-    "NATURAL_PASS"
+    "NATURAL_PASS",
+    "MAN_MADE_TOWER"
    ]
   },
   "crickhollow": {
@@ -905,6 +1162,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_DWELLING"
    ]
@@ -914,8 +1172,7 @@
     "TA"
    ],
    "cites": [
-    "Hobbit i; App B",
-    "B ch1, 11–13; C App A"
+    "Hobbit i; App B"
    ],
    "coords": [
     {
@@ -926,14 +1183,43 @@
     }
    ],
    "n": "Dale",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec TA: town (rebuilt)",
-    "Girion's bell-town, burned 2770; reborn under Bard; battle before it, Mar 3019.",
-    "Evidence Table R10"
+    "Girion's bell-town, burned 2770; reborn under Bard; battle before it, Mar 3019."
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Hobbit; App A/B [C]",
+     "realm": "dale",
+     "status": "event",
+     "what": "The Dragon dead; Bard rebuilds Dale as king",
+     "when": "2941–44"
+    },
+    {
+     "cite": "App A/B [C]",
+     "realm": "dale",
+     "status": "destroyed",
+     "what": "The Battle of Dale: Brand falls with Dáin; the town holds siege in Erebor; then victory",
+     "when": "3019"
+    },
+    {
+     "cite": "App B [C]",
+     "realm": "rhun",
+     "status": "event",
+     "what": "Easterling armies at the Morannon and Dale; peace of Elessar after",
+     "when": "3019"
+    },
+    {
+     "cite": "Hobbit 1, 12 [C]",
+     "realm": "dale",
+     "status": "burned",
+     "what": "The bell-town in the Mountain's vale, rich on Erebor's traffic; Girion its last old lord — burned by Smaug",
+     "when": "before 2770"
+    }
+   ],
    "types": [
     "MAN_MADE_TOWN",
     "MAN_MADE_CITY"
@@ -954,9 +1240,11 @@
     "Kheled-zâram's mirror-mere; the great battle of 2799; the East-gate of Moria."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
-    "NATURAL_PASS"
+    "NATURAL_PASS",
+    "MAN_MADE_GATE"
    ]
   },
   "dol amroth": {
@@ -982,6 +1270,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_CITY",
     "MAN_MADE_HAVEN"
@@ -1011,6 +1300,64 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App B [C]",
+     "realm": "dolguldur",
+     "status": "event",
+     "what": "The Watchful Peace: Sauron east; then return 'with increased strength'",
+     "when": "2063–2460"
+    },
+    {
+     "cite": "App A III/B [C]",
+     "realm": "dolguldur",
+     "status": "event",
+     "what": "Gandalf enters, finds Thráin II dying, learns the truth",
+     "when": "2850"
+    },
+    {
+     "cite": "App B [C]",
+     "realm": "dolguldur",
+     "status": "event",
+     "what": "The White Council drives Sauron out — into prepared Mordor",
+     "when": "2941"
+    },
+    {
+     "cite": "App B [C]",
+     "realm": "dolguldur",
+     "status": "event",
+     "what": "Khamûl's assaults on Lórien and the wood; Galadriel throws down its walls",
+     "when": "3019"
+    },
+    {
+     "cite": "UT, History of Galadriel app. [C]",
+     "realm": "greenwood",
+     "status": "built",
+     "what": "Oropher, Sindar among the Silvan, king in Greenwood; removes north before Dol Guldur's shadow is ever raised",
+     "when": "S.A."
+    },
+    {
+     "cite": "App A/B [C]",
+     "realm": "greenwood",
+     "status": "event",
+     "what": "The Shadow at Dol Guldur; the wood becomes Mirkwood; the realm withdraws to the north-east halls",
+     "when": "T.A. 1050+"
+    },
+    {
+     "cite": "App B [C]",
+     "realm": "lorien",
+     "status": "event",
+     "what": "Thrice assailed from Dol Guldur, thrice holding; then Dol Guldur thrown down — Celeborn takes East Lórien",
+     "when": "T.A. 3019"
+    },
+    {
+     "cite": "App B [C]",
+     "realm": "dolguldur",
+     "status": "event",
+     "what": "A shadow rises in southern Greenwood — 'the Necromancer' unknown",
+     "when": "c. T.A. 1050"
+    }
+   ],
    "types": [
     "MAN_MADE_FORTRESS",
     "MAN_MADE_TOWER"
@@ -1027,6 +1374,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_FOREST"
    ]
@@ -1036,8 +1384,7 @@
     "TA"
    ],
    "cites": [
-    "LotR V.3",
-    "C V.3; RC[T]"
+    "LotR V.3"
    ],
    "coords": [
     {
@@ -1048,15 +1395,15 @@
     }
    ],
    "n": "Dunharrow",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec TA: refuge",
     "also & the Dark Door",
-    "The refuge of the firienfeld; the Muster of Rohan; the Paths of the Dead open here.",
-    "Evidence Table G8"
+    "The refuge of the firienfeld; the Muster of Rohan; the Paths of the Dead open here."
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_REFUGE",
     "MAN_MADE_FORTRESS"
@@ -1080,6 +1427,7 @@
    ],
    "parents": [],
    "place_conf": "M",
+   "timeline": [],
    "types": [
     "MAN_MADE_LANDMARK"
    ]
@@ -1102,6 +1450,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "UNCLASSIFIED"
    ]
@@ -1124,6 +1473,7 @@
    ],
    "parents": [],
    "place_conf": "M",
+   "timeline": [],
    "types": [
     "MAN_MADE_LANDMARK"
    ]
@@ -1146,6 +1496,15 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A/B; UT [C]",
+     "realm": "lorien",
+     "status": "event",
+     "what": "Amroth lost at Edhellond's sailing; Galadriel and Celeborn take up the guardianship; Nenya's power hides the wood",
+     "when": "T.A. 1981+"
+    }
+   ],
    "types": [
     "MAN_MADE_HAVEN"
    ]
@@ -1155,21 +1514,29 @@
     "TA"
    ],
    "cites": [
-    "LotR III.6",
-    "C III.6, V.3, VI.6; RC[T] (unpub. Index)"
+    "LotR III.6"
    ],
    "coords": [],
    "n": "Edoras",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "also & Meduseld",
-    "Brego's golden hall under the White Mountains; Théoden's seat.",
-    "Evidence Table G7"
+    "Brego's golden hall under the White Mountains; Théoden's seat."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A [C]",
+     "realm": "dunland",
+     "status": "event",
+     "what": "Wulf's host takes Edoras in the Long Winter — the feud's high tide",
+     "when": "T.A. 2758"
+    }
+   ],
    "types": [
-    "MAN_MADE_CITY"
+    "MAN_MADE_CITY",
+    "NATURAL_PEAK"
    ]
   },
   "edoras meduseld": {
@@ -1190,6 +1557,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_TOWN"
    ]
@@ -1199,8 +1567,7 @@
     "FA"
    ],
    "cites": [
-    "Silm 14/20",
-    "A ch14, ch20"
+    "Silm 14/20"
    ],
    "coords": [
     {
@@ -1211,16 +1578,24 @@
     }
    ],
    "n": "Eglarest",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec FA: walled haven",
-    "Southern haven of the Falas; fell with Brithombar.",
-    "Evidence Table B34"
+    "Southern haven of the Falas; fell with Brithombar."
    ],
    "parents": [
     "falas"
    ],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_HAVEN"
    ]
@@ -1243,6 +1618,15 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "NATURAL_FALLS"
    ]
@@ -1264,7 +1648,16 @@
    "parents": [
     "hithlum"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Silm 18 [C]",
+     "realm": "hithlum",
+     "status": "destroyed",
+     "what": "The Bragollach beaten off at Eithel Sirion; Fingolfin falls before Angband's gate",
+     "when": "F.A. 455–456"
+    }
+   ],
    "types": [
     "MAN_MADE_FORTRESS"
    ]
@@ -1287,6 +1680,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_TOWER"
    ]
@@ -1309,24 +1703,23 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_CITY"
    ]
   },
   "emyn muil": {
    "ages": [],
-   "cites": [
-    "C II.9–10, III.1–2, IV.1; RC[T]"
-   ],
+   "cites": [],
    "coords": [],
    "n": "Emyn Muil",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: Mountains",
-    "Evidence Table R18"
+    "spec TA: Mountains"
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ]
@@ -1349,6 +1742,15 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_FORTRESS"
    ]
@@ -1358,21 +1760,78 @@
     "TA"
    ],
    "cites": [
-    "Hobbit; App A III/B",
-    "B ch1, 11–13; C App A"
+    "Hobbit; App A III/B"
    ],
    "coords": [],
    "n": "Erebor",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "also the Lonely Mountain",
-    "The Kingdom under the Mountain: Thrór's, Smaug's, Thorin's, Dáin's; besieged 3019.",
-    "Evidence Table R10"
+    "The Kingdom under the Mountain: Thrór's, Smaug's, Thorin's, Dáin's; besieged 3019."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A III [C]",
+     "realm": "erebor",
+     "status": "event",
+     "what": "The kings remove to the Grey Mountains until dragons and the Cold-drakes drive them back (Dáin I slain at his door)",
+     "when": "2210–2589"
+    },
+    {
+     "cite": "App A III [C]",
+     "realm": "erebor",
+     "status": "event",
+     "what": "Smaug descends; the Exile: Dunland wanderings, Azanulbizar's war (2793–99), the Ered Luin halls of Thorin",
+     "when": "2770"
+    },
+    {
+     "cite": "Hobbit; App A III [C]",
+     "realm": "erebor",
+     "status": "destroyed",
+     "what": "The Quest of Erebor; Thorin falls in the Five Armies; Dáin II Ironfoot King under the Mountain",
+     "when": "2941"
+    },
+    {
+     "cite": "Hobbit 15+; App A III [C]",
+     "realm": "ironhills",
+     "status": "event",
+     "what": "Dáin's five hundred come to Erebor; the lordship passes into the restored kingdom",
+     "when": "2941"
+    },
+    {
+     "cite": "App A/B [C]",
+     "realm": "dale",
+     "status": "destroyed",
+     "what": "The Battle of Dale: Brand falls with Dáin; the town holds siege in Erebor; then victory",
+     "when": "3019"
+    },
+    {
+     "cite": "App A/B [C]",
+     "realm": "erebor",
+     "status": "event",
+     "what": "The siege in the War; Thorin III Stonehelm; the realm flourishes into the Fourth Age",
+     "when": "3019"
+    },
+    {
+     "cite": "App A III [C]",
+     "realm": "erebor",
+     "status": "founded",
+     "what": "Thráin I, out of Moria's ruin, founds the Kingdom under the Mountain; the Arkenstone found",
+     "when": "T.A. 1999"
+    },
+    {
+     "cite": "Hobbit 1, 12 [C]",
+     "realm": "dale",
+     "status": "burned",
+     "what": "The bell-town in the Mountain's vale, rich on Erebor's traffic; Girion its last old lord — burned by Smaug",
+     "when": "before 2770"
+    }
+   ],
    "types": [
-    "MAN_MADE_CITY"
+    "MAN_MADE_CITY",
+    "NATURAL_PEAK"
    ]
   },
   "erebor front gate": {
@@ -1393,6 +1852,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_CITY"
    ]
@@ -1414,7 +1874,8 @@
    "parents": [
     "dorthonion"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PEAK"
    ]
@@ -1430,6 +1891,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ]
@@ -1445,6 +1907,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_FOREST"
    ]
@@ -1473,6 +1936,29 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Hobbit 10 [C]",
+     "realm": "esgaroth",
+     "status": "drowned",
+     "what": "The piled town on the Long Lake, heir of a greater older town drowned by the shore",
+     "when": "(age-old)"
+    },
+    {
+     "cite": "Hobbit 14 [C]",
+     "realm": "esgaroth",
+     "status": "destroyed",
+     "what": "Smaug destroys the town; the Master flees with the gold; Bard's arrow ends the Dragon",
+     "when": "2941"
+    },
+    {
+     "cite": "Hobbit 19 [C]",
+     "realm": "esgaroth",
+     "status": "built",
+     "what": "Rebuilt fairer; a new Master chosen",
+     "when": "after"
+    }
+   ],
    "types": [
     "MAN_MADE_TOWN",
     "MAN_MADE_CITY"
@@ -1495,7 +1981,8 @@
    "parents": [
     "ladros"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PLAIN"
    ]
@@ -1517,7 +2004,16 @@
    "parents": [
     "rhudaur"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A [C]",
+     "realm": "rhudaur",
+     "status": "ruined",
+     "what": "The angle between Ettenmoors, Weather Hills and Bruinen",
+     "when": "T.A. 861"
+    }
+   ],
    "types": [
     "NATURAL_PEAK"
    ]
@@ -1537,34 +2033,54 @@
     "Eldest forest-heart; Treebeard's wellinghall; 'the Ents are going to war'."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "LotR III.4 [C]",
+     "realm": "fangorn",
+     "status": "event",
+     "what": "The loss of the Entwives — 'we believe that we may meet again' — the domain's defining grief",
+     "when": "(long since)"
+    },
+    {
+     "cite": "LotR III.4 [C]",
+     "realm": "fangorn",
+     "status": "event",
+     "what": "'the last remnant of the vast forests of the Elder Days' — once one wood with the Old Forest from Dunland to Bree",
+     "when": "Elder Days"
+    },
+    {
+     "cite": "LotR III.4, 8–9 [C]",
+     "realm": "fangorn",
+     "status": "event",
+     "what": "The Entmoot; the march on Isengard ('the last march of the Ents'); the Huorns at the Hornburg; the Treegarth after",
+     "when": "T.A. 3019"
+    }
+   ],
    "types": [
-    "NATURAL_FOREST"
+    "NATURAL_FOREST",
+    "MAN_MADE_HALL"
    ]
   },
   "fangorn forest": {
    "ages": [],
-   "cites": [
-    "C III.3–4; RC[T]"
-   ],
+   "cites": [],
    "coords": [],
    "n": "Fangorn Forest (Entwood)",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: Forests",
-    "Evidence Table G1"
+    "spec TA: Forests"
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_FOREST"
    ]
   },
   "fen of serech": {
    "ages": [],
-   "cites": [
-    "A ch18, ch19, ch20; HoME 3, 11"
-   ],
+   "cites": [],
    "coords": [
     {
      "conf": "H",
@@ -1574,13 +2090,21 @@
     }
    ],
    "n": "Fen of Serech",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec FA: fen",
-    "Evidence Table B13"
+    "spec FA: fen"
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "NATURAL_MARSH"
    ]
@@ -1590,19 +2114,18 @@
     "TA"
    ],
    "cites": [
-    "App A II; UT",
-    "C App A (as corrected by D App C); D Cirion"
+    "App A II; UT"
    ],
    "coords": [],
    "n": "Field of Celebrant",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "also Parth Celebrant",
-    "Eorl's charge saved Gondor here, 2510; the Oath followed.",
-    "Evidence Table R16"
+    "Eorl's charge saved Gondor here, 2510; the Oath followed."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PLAIN"
    ]
@@ -1618,6 +2141,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_FOREST"
    ]
@@ -1638,9 +2162,11 @@
    "parents": [
     "rivendell"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
-    "NATURAL_PASS"
+    "NATURAL_PASS",
+    "MAN_MADE_HALL"
    ]
   },
   "fords of isen": {
@@ -1666,6 +2192,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_CROSSING",
     "NATURAL_PASS"
@@ -1689,6 +2216,7 @@
    ],
    "parents": [],
    "place_conf": "M",
+   "timeline": [],
    "types": [
     "MAN_MADE_HAVEN"
    ]
@@ -1710,7 +2238,30 @@
    "parents": [
     "arthedain"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A [C]",
+     "realm": "angmar",
+     "status": "taken",
+     "what": "Fornost taken — then the realm annihilated by Eärnil's host and Glorfindel: 'not a man nor an orc of that realm remained west of the Mountains'",
+     "when": "1974–75"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "arthedain",
+     "status": "burned",
+     "what": "The long Angmar war: Amon Sûl burned (1409); the Great Plague (1636); Fornost falls (1974); Arvedui drowns in Forochel (1975)",
+     "when": "T.A. 1409–1974"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "arthedain",
+     "status": "event",
+     "what": "Amlaith, eldest son of Eärendur, holds Fornost and the west",
+     "when": "T.A. 861"
+    }
+   ],
    "types": [
     "MAN_MADE_RUIN"
    ]
@@ -1733,6 +2284,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_CITY"
    ]
@@ -1755,6 +2307,7 @@
    ],
    "parents": [],
    "place_conf": "M",
+   "timeline": [],
    "types": [
     "UNCLASSIFIED"
    ]
@@ -1764,8 +2317,7 @@
     "TA"
    ],
    "cites": [
-    "RC (Baynes-map names) [I-M]; Fram and Scatha: App A II",
-    "D Cirion; C App A; RC[T]"
+    "RC (Baynes-map names) [I-M]; Fram and Scatha: App A II"
    ],
    "coords": [
     {
@@ -1776,16 +2328,16 @@
     }
    ],
    "n": "Framsburg",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec TA: ruined burg",
-    "A name Tolkien gave for the Baynes map, near Éothéod; the Companion guesses a stronghold named for Fram, who slew Scatha. No narrative text places it.",
-    "Evidence Table R4"
+    "A name Tolkien gave for the Baynes map, near Éothéod; the Companion guesses a stronghold named for Fram, who slew Scatha. No narrative text places it."
    ],
    "parents": [
     "eotheod"
    ],
    "place_conf": "M",
+   "timeline": [],
    "types": [
     "MAN_MADE_RUIN"
    ]
@@ -1808,6 +2360,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_VILLAGE"
    ]
@@ -1817,19 +2370,18 @@
     "TA"
    ],
    "cites": [
-    "UT; App B",
-    "D Gladden; C I.2; RC[T]"
+    "UT; App B"
    ],
    "coords": [],
    "n": "Gladden Fields",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "also Loeg Ningloron",
-    "Isildur fell among the reeds, T.A. 2; Déagol's find, 2463.",
-    "Evidence Table R7"
+    "Isildur fell among the reeds, T.A. 2; Déagol's find, 2463."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PLAIN"
    ]
@@ -1852,6 +2404,7 @@
    ],
    "parents": [],
    "place_conf": "M",
+   "timeline": [],
    "types": [
     "MAN_MADE_GATE"
    ]
@@ -1861,8 +2414,7 @@
     "FA"
    ],
    "cites": [
-    "Silm 15/23; FoG",
-    "A ch15, ch16, ch23; G"
+    "Silm 15/23; FoG"
    ],
    "coords": [
     {
@@ -1873,17 +2425,53 @@
     }
    ],
    "n": "Gondolin",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec FA: hidden city",
     "also Ondolindë; the Hidden City",
-    "Turgon's white city on Amon Gwareth amid the Echoriath; 52 years in secret building.",
-    "Evidence Table B21"
+    "Turgon's white city on Amon Gwareth amid the Echoriath; 52 years in secret building."
    ],
    "parents": [
     "gondolin"
    ],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Silm 20 [C]",
+     "realm": "gondolin",
+     "status": "event",
+     "what": "The host of Gondolin issues to the Nirnaeth — the secrecy half-broken",
+     "when": "F.A. 472"
+    },
+    {
+     "cite": "Silm 20, 23 [C]",
+     "realm": "balar",
+     "status": "event",
+     "what": "Círdan and Gil-galad hold Balar; the Havens gather Gondolin's and Doriath's survivors",
+     "when": "F.A. 473+"
+    },
+    {
+     "cite": "Silm 23; BoLT2/FoG [C]",
+     "realm": "gondolin",
+     "status": "destroyed",
+     "what": "Betrayed by Maeglin; the city falls at the Gates of Summer",
+     "when": "F.A. 510"
+    },
+    {
+     "cite": "Silm 15 [C]",
+     "realm": "gondolin",
+     "status": "event",
+     "what": "Turgon, guided by Ulmo, finds Tumladen and builds the city in secret",
+     "when": "F.A. 52–104"
+    },
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_CITY"
    ]
@@ -1899,6 +2487,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "POLITY_REALM"
    ]
@@ -1919,7 +2508,16 @@
    "parents": [
     "shire"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Prologue; App A/B; LotR VI.8 [C]",
+     "realm": "shire",
+     "status": "destroyed",
+     "what": "Greenfields; the Fell Winter and Long Winter; the Scouring and the mending",
+     "when": "2747 / 2911–12 / 3019"
+    }
+   ],
    "types": [
     "NATURAL_PLAIN"
    ]
@@ -1950,24 +2548,23 @@
     "lindon"
    ],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_HAVEN"
    ]
   },
   "grey mountains": {
    "ages": [],
-   "cites": [
-    "B ch1, 18; C App A; D"
-   ],
+   "cites": [],
    "coords": [],
    "n": "Grey Mountains (Ered Mithrin)",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: Mountains",
-    "Evidence Table R3"
+    "spec TA: Mountains"
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ]
@@ -1983,6 +2580,7 @@
    ],
    "parents": [],
    "place_conf": "L",
+   "timeline": [],
    "types": [
     "NATURAL_MARSH"
    ]
@@ -2005,6 +2603,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "UNCLASSIFIED"
    ]
@@ -2034,6 +2633,7 @@
    ],
    "parents": [],
    "place_conf": "M",
+   "timeline": [],
    "types": [
     "MAN_MADE_HAVEN"
    ]
@@ -2062,6 +2662,15 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "UNCLASSIFIED",
     "NATURAL_PEAK"
@@ -2084,7 +2693,8 @@
    "parents": [
     "balar"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_HAVEN"
    ]
@@ -2106,7 +2716,8 @@
    "parents": [
     "rohan"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_FORTRESS"
    ]
@@ -2126,7 +2737,8 @@
     "Faramir's hidden refuge behind the falls of Ithilien."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_HALL"
    ]
@@ -2149,6 +2761,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_REFUGE"
    ]
@@ -2170,9 +2783,33 @@
    "parents": [
     "himring"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Silm 18 [C]",
+     "realm": "himring",
+     "status": "event",
+     "what": "The Bragollach: Himring alone stands; the Gap and Lothlann lost",
+     "when": "F.A. 455"
+    },
+    {
+     "cite": "Silm 20 [C]",
+     "realm": "himring",
+     "status": "event",
+     "what": "After the Nirnaeth the March is broken; the brothers scatter to Ossiriand's eaves",
+     "when": "F.A. 473"
+    },
+    {
+     "cite": "Silm 13–14 [C]",
+     "realm": "himring",
+     "status": "event",
+     "what": "After Thingol's word, the sons of Fëanor remove east; Maedhros holds Himring",
+     "when": "F.A. 7"
+    }
+   ],
    "types": [
-    "MAN_MADE_FORTRESS"
+    "MAN_MADE_FORTRESS",
+    "NATURAL_HILL"
    ]
   },
   "himring citadel": {
@@ -2193,6 +2830,15 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_FORTRESS"
    ]
@@ -2222,6 +2868,7 @@
     "shire"
    ],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_TOWN",
     "MAN_MADE_CITY"
@@ -2245,6 +2892,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_FORTRESS"
    ]
@@ -2267,6 +2915,15 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_BRIDGE"
    ]
@@ -2285,7 +2942,8 @@
     "Arvedui Last-king drowned here with the palantíri of the North, 1975."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PLAIN"
    ]
@@ -2301,24 +2959,38 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_SEA"
    ]
   },
   "iron hills": {
    "ages": [],
-   "cites": [
-    "B ch15–17; C App A; Atlas"
-   ],
+   "cites": [],
    "coords": [],
    "n": "Iron Hills",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: Mountains",
-    "Evidence Table R11"
+    "spec TA: Mountains"
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A III [C]",
+     "realm": "ironhills",
+     "status": "event",
+     "what": "Náin and the Iron Hills' mattock-host decide Azanulbizar; Dáin II slays Azog on the Gate-stair",
+     "when": "2799"
+    },
+    {
+     "cite": "App A III [C]",
+     "realm": "ironhills",
+     "status": "event",
+     "what": "Grór, Dáin I's younger son, settles the Iron Hills as the Grey Mountains empty",
+     "when": "T.A. 2590"
+    }
+   ],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ]
@@ -2334,6 +3006,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_SEA"
    ]
@@ -2343,28 +3016,61 @@
     "TA"
    ],
    "cites": [
-    "LotR III.8-10",
-    "C III.8–10; D Cirion, Fords"
+    "LotR III.8-10"
    ],
    "coords": [],
    "n": "Isengard",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "also Orthanc; Nan Curunír",
-    "The unbreakable tower in Saruman's ring — drowned by Ents, Mar 3-5, 3019.",
-    "Evidence Table G3"
+    "The unbreakable tower in Saruman's ring — drowned by Ents, Mar 3-5, 3019."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A; LotR III.8 [C]",
+     "realm": "isengard",
+     "status": "event",
+     "what": "Gondor's western fastness with the unbreakable tower; keys held by the Stewards",
+     "when": "(of old)"
+    },
+    {
+     "cite": "LotR III.8–10 [C]",
+     "realm": "isengard",
+     "status": "drowned",
+     "what": "The Hill of the Ring-forges in little: bred Uruk-hai, wolf-riders, the dammed Isen; war on Rohan; drowned by the Ents in a night",
+     "when": "3014–19"
+    },
+    {
+     "cite": "App A/B [C]",
+     "realm": "isengard",
+     "status": "granted",
+     "what": "Saruman granted the keys by Beren the Steward — tenant become tyrant",
+     "when": "T.A. 2759"
+    },
+    {
+     "cite": "LotR III.4, 8–9 [C]",
+     "realm": "fangorn",
+     "status": "event",
+     "what": "The Entmoot; the march on Isengard ('the last march of the Ents'); the Huorns at the Hornburg; the Treegarth after",
+     "when": "T.A. 3019"
+    },
+    {
+     "cite": "LotR VI.6 [C]",
+     "realm": "isengard",
+     "status": "event",
+     "what": "The Treegarth of Orthanc: the tower rendered to the King, the ring un-walled by Ent-work",
+     "when": "after"
+    }
+   ],
    "types": [
     "MAN_MADE_TOWER"
    ]
   },
   "isengard orthanc": {
    "ages": [],
-   "cites": [
-    "C III.8–10; D Cirion, Fords"
-   ],
+   "cites": [],
    "coords": [
     {
      "conf": "H",
@@ -2374,13 +3080,13 @@
     }
    ],
    "n": "Isengard/Orthanc",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: ring-fortress",
-    "Evidence Table G3"
+    "spec TA: ring-fortress"
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_FORTRESS"
    ]
@@ -2403,6 +3109,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_GATE"
    ]
@@ -2423,7 +3130,8 @@
    "parents": [
     "balar"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_ISLAND"
    ]
@@ -2439,6 +3147,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_FOREST"
    ]
@@ -2460,7 +3169,8 @@
    "parents": [
     "hithlum"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PLAIN"
    ]
@@ -2481,7 +3191,16 @@
    "parents": [
     "thargelion"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Silm 13–14 [C]",
+     "realm": "thargelion",
+     "status": "event",
+     "what": "Caranthir's folk settle between Gelion and Ered Luin by Lake Helevorn",
+     "when": "F.A. 7"
+    }
+   ],
    "types": [
     "NATURAL_PLAIN"
    ]
@@ -2504,6 +3223,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_BRIDGE"
    ]
@@ -2519,24 +3239,52 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_SEA"
    ]
   },
   "lindon": {
    "ages": [],
-   "cites": [
-    "A RoP; C App A/B, VI.9; RC[T]"
-   ],
+   "cites": [],
    "coords": [],
    "n": "Lindon",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: Political / Regional Polygons",
-    "Evidence Table E2"
+    "spec TA: Political / Regional Polygons"
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Silm, Of the Rings; App B [C]",
+     "realm": "lindon",
+     "status": "built",
+     "what": "Gil-galad king in the surviving shore of old Ossiriand; Mithlond built",
+     "when": "S.A. 1"
+    },
+    {
+     "cite": "UT [C]",
+     "realm": "lindon",
+     "status": "event",
+     "what": "Lindon holds the line of the Lhûn against Sauron until Númenor's relief",
+     "when": "S.A. 1695–1701"
+    },
+    {
+     "cite": "Silm; App B [C]",
+     "realm": "lindon",
+     "status": "destroyed",
+     "what": "The Last Alliance marches; Gil-galad falls; the High Kingship ends",
+     "when": "S.A. 3434–3441"
+    },
+    {
+     "cite": "LotR VI.9; App A/B [C]",
+     "realm": "lindon",
+     "status": "event",
+     "what": "Círdan keeps the Havens; the Ringbearers sail; 'until the last ship sails'",
+     "when": "T.A.–F.o.A."
+    }
+   ],
    "types": [
     "POLITY_REALM"
    ]
@@ -2559,15 +3307,14 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_TOWN"
    ]
   },
   "lond daer": {
    "ages": [],
-   "cites": [
-    "D Aldarion, App D; RC[T]"
-   ],
+   "cites": [],
    "coords": [
     {
      "conf": "H",
@@ -2577,13 +3324,13 @@
     }
    ],
    "n": "Lond Daer",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: ruined haven °",
-    "Evidence Table E18"
+    "spec TA: ruined haven °"
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_HAVEN"
    ]
@@ -2612,6 +3359,15 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "UNCLASSIFIED",
     "MAN_MADE_HAVEN"
@@ -2628,6 +3384,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_FOREST"
    ]
@@ -2637,8 +3394,7 @@
     "FA"
    ],
    "cites": [
-    "Silm 10",
-    "A ch10, ch14"
+    "Silm 10"
    ],
    "coords": [
     {
@@ -2649,17 +3405,60 @@
     }
    ],
    "n": "Menegroth",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec FA: cave-city",
     "also the Thousand Caves",
-    "Thingol and Melian's hall over Esgalduin, fairest king-house east of the Sea.",
-    "Evidence Table B25"
+    "Thingol and Melian's hall over Esgalduin, fairest king-house east of the Sea."
    ],
    "parents": [
     "doriath"
    ],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Silm 22 [C]",
+     "realm": "nogrod",
+     "status": "sacked",
+     "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
+     "when": "F.A. 502–503"
+    },
+    {
+     "cite": "Silm 22 [C]",
+     "realm": "doriath",
+     "status": "sacked",
+     "what": "Thingol slain in Menegroth; the Girdle withdrawn; the Dwarves sack Menegroth; the Second Kinslaying ends Dior's brief restoration",
+     "when": "F.A. 502–506"
+    },
+    {
+     "cite": "Silm 13 [C]",
+     "realm": "nargothrond",
+     "status": "event",
+     "what": "Finrod, shown Menegroth, delves Nargothrond in the caves of Narog",
+     "when": "F.A. 52–102"
+    },
+    {
+     "cite": "Silm 4, 10 [C]",
+     "realm": "doriath",
+     "status": "built",
+     "what": "Elwë and Melian gather the Eldar of Beleriand; Menegroth delved with Dwarven aid",
+     "when": "Y.T."
+    },
+    {
+     "cite": "Silm 10 [C]",
+     "realm": "belegost",
+     "status": "built",
+     "what": "Delved in Ered Luin's eastern flank; Menegroth built with their craft",
+     "when": "Y.T."
+    },
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_CITY",
     "MAN_MADE_HALL"
@@ -2691,6 +3490,7 @@
     "shire"
    ],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_TOWN",
     "MAN_MADE_CITY"
@@ -2701,8 +3501,7 @@
     "TA"
    ],
    "cites": [
-    "App A/B; LotR IV.8",
-    "C IV.6–8, V.4, VI.1; RC"
+    "App A/B; LotR IV.8"
    ],
    "coords": [
     {
@@ -2713,15 +3512,37 @@
     }
    ],
    "n": "Minas Morgul",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec TA: dead city",
     "also Minas Ithil",
-    "The Tower of the Moon taken by the Nazgûl, 2002; the dead city of the pass.",
-    "Evidence Table G20"
+    "The Tower of the Moon taken by the Nazgûl, 2002; the dead city of the pass."
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A [C]",
+     "realm": "morgul",
+     "status": "event",
+     "what": "The Witch-king's challenges; King Eärnur rides through its gate and is never seen again — the kings end here",
+     "when": "2043–50"
+    },
+    {
+     "cite": "LotR IV.8, VI.5 [C]",
+     "realm": "morgul",
+     "status": "event",
+     "what": "The Morgul-host marches ('all that host was black'); after the War the vale is cleansed and the tower thrown down by Elessar's decree",
+     "when": "3019"
+    },
+    {
+     "cite": "App A/B [C]",
+     "realm": "morgul",
+     "status": "besieged",
+     "what": "The Nazgûl besiege and take Minas Ithil; the palantír captured",
+     "when": "T.A. 2000–02"
+    }
+   ],
    "types": [
     "MAN_MADE_CITY",
     "MAN_MADE_TOWER"
@@ -2732,8 +3553,7 @@
     "TA"
    ],
    "cites": [
-    "LotR V.1",
-    "C V.1, V.4; RC"
+    "LotR V.1"
    ],
    "coords": [
     {
@@ -2744,33 +3564,31 @@
     }
    ],
    "n": "Minas Tirith",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec TA: city (7 walls)",
     "also Minas Anor; the White City",
-    "Seven walls under Mindolluin; the Pelennor before it; the White Tree in the Court.",
-    "Evidence Table G15"
+    "Seven walls under Mindolluin; the Pelennor before it; the White Tree in the Court."
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_CITY"
    ]
   },
   "mirkwood": {
    "ages": [],
-   "cites": [
-    "B ch7–9; C App B; D; RC[T]; HoME 12"
-   ],
+   "cites": [],
    "coords": [],
    "n": "Mirkwood (Greenwood the Great / Eryn Lasgalen)",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: Forests",
-    "Evidence Table R8"
+    "spec TA: Forests"
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_FOREST"
    ]
@@ -2786,24 +3604,23 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_LAKE"
    ]
   },
   "misty mountains": {
    "ages": [],
-   "cites": [
-    "C Prologue/App; A ch3; B ch4–6; RC[T]"
-   ],
+   "cites": [],
    "coords": [],
    "n": "Misty Mountains (Hithaeglir)",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: Mountains",
-    "Evidence Table R1"
+    "spec TA: Mountains"
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ]
@@ -2819,6 +3636,36 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Silm; App B [C]",
+     "realm": "mordor",
+     "status": "event",
+     "what": "The Siege of Barad-dûr; Sauron overthrown by Elendil and Gil-galad",
+     "when": "S.A. 3434–3441"
+    },
+    {
+     "cite": "App B; Silm [C]",
+     "realm": "mordor",
+     "status": "event",
+     "what": "Sauron chooses the mountain-ringed land; Barad-dûr begun with the One Ring's power",
+     "when": "S.A. c.1000"
+    },
+    {
+     "cite": "App A/B [C]",
+     "realm": "mordor",
+     "status": "event",
+     "what": "The land watched, then unwatched: Gondor's guard-forts fail after the Plague (1636); the Nazgûl re-enter (1980); Sauron returns declared (2951)",
+     "when": "T.A. 1000–2942"
+    },
+    {
+     "cite": "LotR VI.3–4 [C]",
+     "realm": "mordor",
+     "status": "destroyed",
+     "what": "The Ring destroyed; Barad-dûr falls; the realm ends",
+     "when": "T.A. 3019"
+    }
+   ],
    "types": [
     "POLITY_REALM"
    ]
@@ -2834,6 +3681,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ]
@@ -2856,6 +3704,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_GATE"
    ]
@@ -2878,6 +3727,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_GATE"
    ]
@@ -2897,7 +3747,8 @@
     "'Speak, friend, and enter'; the Watcher; the Bridge where Gandalf fell, Jan 15, 3019."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_HALL"
    ]
@@ -2907,20 +3758,19 @@
     "TA"
    ],
    "cites": [
-    "LotR VI.3; App B",
-    "C VI.3; RC"
+    "LotR VI.3; App B"
    ],
    "coords": [],
    "n": "Mount Doom (Orodruin)",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec TA: Mountains",
     "also Orodruin; Amon Amarth",
-    "The Ring was forged in its fire, and unmade there, March 25, 3019.",
-    "Evidence Table G23"
+    "The Ring was forged in its fire, and unmade there, March 25, 3019."
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE",
     "NATURAL_PEAK"
@@ -2943,7 +3793,8 @@
     "angmar",
     "mistyorcs"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PEAK"
    ]
@@ -2953,20 +3804,19 @@
     "TA"
    ],
    "cites": [
-    "HoME XII; App A III",
-    "HoME 12; B ch17; C App A"
+    "HoME XII; App A III"
    ],
    "coords": [],
    "n": "Mount Gundabad",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "Durin's awakening-place, revered and defiled; the orc-capital of the North.",
-    "Evidence Table R2"
+    "Durin's awakening-place, revered and defiled; the orc-capital of the North."
    ],
    "parents": [
     "mistyorcs"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_FORTRESS"
    ]
@@ -2982,6 +3832,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ]
@@ -3000,7 +3851,8 @@
     "Mordor's slave-fields that fed the armies; given freed to the slaves by Elessar."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PLAIN"
    ]
@@ -3019,7 +3871,8 @@
     "Where Melian enchanted Thingol; Eöl's dark wood; Maeglin's birthplace."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_FOREST"
    ]
@@ -3029,8 +3882,7 @@
     "FA"
    ],
    "cites": [
-    "Silm 13/21; CoH",
-    "A ch14, ch21; F ch X–XIV"
+    "Silm 13/21; CoH"
    ],
    "coords": [
     {
@@ -3041,17 +3893,46 @@
     }
    ],
    "n": "Nargothrond",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec FA: cave-city",
     "also Nulukkizdîn",
-    "Finrod's hidden halls above Narog; betrayed by its own bridge.",
-    "Evidence Table B33"
+    "Finrod's hidden halls above Narog; betrayed by its own bridge."
    ],
    "parents": [
     "nargothrond"
    ],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Silm 19 [C]",
+     "realm": "nargothrond",
+     "status": "event",
+     "what": "Finrod goes with Beren; Celegorm and Curufin usurp the people's love; Orodreth rules after",
+     "when": "F.A. 465"
+    },
+    {
+     "cite": "Silm 21; CoH [C]",
+     "realm": "nargothrond",
+     "status": "sacked",
+     "what": "The bridge and the open battle of Tumhalad; Glaurung sacks the city",
+     "when": "F.A. 495"
+    },
+    {
+     "cite": "Silm 13 [C]",
+     "realm": "nargothrond",
+     "status": "event",
+     "what": "Finrod, shown Menegroth, delves Nargothrond in the caves of Narog",
+     "when": "F.A. 52–102"
+    },
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_CITY",
     "MAN_MADE_HALL"
@@ -3059,18 +3940,16 @@
   },
   "nen hithoel": {
    "ages": [],
-   "cites": [
-    "C II.9–III.1; RC[T]"
-   ],
+   "cites": [],
    "coords": [],
    "n": "Nen Hithoel",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: Water",
-    "Evidence Table R19"
+    "spec TA: Water"
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_LAKE"
    ]
@@ -3102,6 +3981,36 @@
     "nogrod"
    ],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Silm 22 [C]",
+     "realm": "nogrod",
+     "status": "sacked",
+     "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
+     "when": "F.A. 502–503"
+    },
+    {
+     "cite": "App A III [C]",
+     "realm": "khazaddum",
+     "status": "event",
+     "what": "Refugees of Nogrod and Belegost swell it; 'its wealth and its renown' greatest",
+     "when": "S.A. 40+"
+    },
+    {
+     "cite": "Silm 10 [C]",
+     "realm": "nogrod",
+     "status": "built",
+     "what": "Delved south of Mount Dolmed; smith-fame from the beginning",
+     "when": "Y.T."
+    },
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_CITY",
     "MAN_MADE_HALL"
@@ -3118,6 +4027,7 @@
    ],
    "parents": [],
    "place_conf": "M",
+   "timeline": [],
    "types": [
     "NATURAL_FOREST"
    ]
@@ -3140,6 +4050,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_CROSSING"
    ]
@@ -3149,8 +4060,7 @@
     "TA"
    ],
    "cites": [
-    "App A; LotR II.2",
-    "A RoP; C App A, IV.3; RC[T]"
+    "App A; LotR II.2"
    ],
    "coords": [
     {
@@ -3161,15 +4071,30 @@
     }
    ],
    "n": "Osgiliath",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec TA: ruined city",
     "also Citadel of the Stars",
-    "The old capital astride Anduin; its Dome held the master-stone; the war began here.",
-    "Evidence Table G17"
+    "The old capital astride Anduin; its Dome held the master-stone; the war began here."
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A/B [C]",
+     "realm": "gondor",
+     "status": "founded",
+     "what": "Isildur and Anárion found the realm: Osgiliath the capital, Minas Ithil and Minas Anor its flanking cities",
+     "when": "S.A. 3320"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "gondor",
+     "status": "burned",
+     "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
+     "when": "T.A. 1432–48"
+    }
+   ],
    "types": [
     "MAN_MADE_CITY",
     "MAN_MADE_RUIN"
@@ -3199,6 +4124,22 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "UT, Galadriel & Celeborn [C]",
+     "realm": "eregion",
+     "status": "event",
+     "what": "Sauron's invasion; Ost-in-Edhil razed; Celebrimbor dies bearing witness against him",
+     "when": "S.A. 1695–1697"
+    },
+    {
+     "cite": "App B; UT [C]",
+     "realm": "eregion",
+     "status": "founded",
+     "what": "Founded by Noldor drawn to Khazad-dûm's mithril; Ost-in-Edhil built",
+     "when": "S.A. 750"
+    }
+   ],
    "types": [
     "MAN_MADE_RUIN"
    ]
@@ -3217,7 +4158,8 @@
     "The Breaking of the Fellowship; Boromir's last fight, Feb 26, 3019."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PLAIN"
    ]
@@ -3227,8 +4169,7 @@
     "TA"
    ],
    "cites": [
-    "App A/B; LotR V.9",
-    "A Akallabêth; C App B, V.2, V.9"
+    "App A/B; LotR V.9"
    ],
    "coords": [
     {
@@ -3239,14 +4180,22 @@
     }
    ],
    "n": "Pelargir",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec TA: haven-city",
-    "Great haven of the Faithful (S.A. 2350); Aragorn took the fleet here, Mar 13, 3019.",
-    "Evidence Table G27"
+    "Great haven of the Faithful (S.A. 2350); Aragorn took the fleet here, Mar 13, 3019."
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A; LotR V.9 [C]",
+     "realm": "umbar",
+     "status": "burned",
+     "what": "Thorongil's raid burns the fleet; the Corsairs' last armament dies at Pelargir",
+     "when": "T.A. 2980–3019"
+    }
+   ],
    "types": [
     "MAN_MADE_HAVEN"
    ]
@@ -3262,6 +4211,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "POLITY_REALM"
    ]
@@ -3289,6 +4239,7 @@
    ],
    "parents": [],
    "place_conf": "M",
+   "timeline": [],
    "types": [
     "MAN_MADE_DWELLING",
     "MAN_MADE_HALL"
@@ -3299,8 +4250,7 @@
     "TA"
    ],
    "cites": [
-    "App B; LotR II.1-2",
-    "C II.1; D G&C; RC[T]"
+    "App B; LotR II.1-2"
    ],
    "coords": [
     {
@@ -3311,17 +4261,46 @@
     }
    ],
    "n": "Rivendell (Imladris)",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec TA: hidden refuge",
     "also Imladris",
-    "Elrond's Last Homely House, founded S.A. 1697; Vilya kept it; the Council met here.",
-    "Evidence Table E13"
+    "Elrond's Last Homely House, founded S.A. 1697; Vilya kept it; the Council met here."
    ],
    "parents": [
     "rivendell"
    ],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A/B [C]",
+     "realm": "rivendell",
+     "status": "event",
+     "what": "Elrond sails; Celeborn and the sons of Elrond abide a while",
+     "when": "F.o.A."
+    },
+    {
+     "cite": "UT; App B [C]",
+     "realm": "rivendell",
+     "status": "founded",
+     "what": "Founded by Elrond as a war-refuge of Eregion's remnant; besieged, then relieved",
+     "when": "S.A. 1697"
+    },
+    {
+     "cite": "LotR II.1–2; App A [C]",
+     "realm": "rivendell",
+     "status": "event",
+     "what": "The house of memory and counsel: Vilya's keeping; the heirs of Isildur fostered; the sword-that-was-broken kept",
+     "when": "T.A."
+    },
+    {
+     "cite": "LotR II.2–3 [C]",
+     "realm": "rivendell",
+     "status": "destroyed",
+     "what": "The Council of Elrond; the Fellowship goes out",
+     "when": "T.A. 3018"
+    }
+   ],
    "types": [
     "MAN_MADE_REFUGE",
     "MAN_MADE_HALL"
@@ -3338,24 +4317,45 @@
    ],
    "parents": [],
    "place_conf": "L",
+   "timeline": [],
    "types": [
     "NATURAL_SEA"
    ]
   },
   "rohan": {
    "ages": [],
-   "cites": [
-    "D Cirion; C App A, III.2; HoME 12"
-   ],
+   "cites": [],
    "coords": [],
    "n": "Rohan (grant bounds of 2510, dotted line)",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: Political / Regional Polygons",
-    "Evidence Table G10"
+    "spec TA: Political / Regional Polygons"
    ],
    "parents": [],
    "place_conf": "L",
+   "timeline": [
+    {
+     "cite": "App A [C]",
+     "realm": "rohan",
+     "status": "event",
+     "what": "The Long Winter: Wulf's usurpation, Helm Hammerhand's siege-winter, the realm restored under Fréaláf",
+     "when": "2758–59"
+    },
+    {
+     "cite": "App A/B; LotR III & V [C]",
+     "realm": "rohan",
+     "status": "event",
+     "what": "Saruman's grip on Théoden; the War: Isen, Hornburg, the Ride, the Pelennor",
+     "when": "3014–19"
+    },
+    {
+     "cite": "UT, Cirion & Eorl; App A [C]",
+     "realm": "rohan",
+     "status": "event",
+     "what": "Eorl's ride to Celebrant; Cirion's gift of Calenardhon; the Oath sworn on Halifirien",
+     "when": "T.A. 2510"
+    }
+   ],
    "types": [
     "POLITY_REALM"
    ]
@@ -3378,6 +4378,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "UNCLASSIFIED"
    ]
@@ -3409,6 +4410,29 @@
     "nogrod"
    ],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Silm 22 [C]",
+     "realm": "ossiriand",
+     "status": "event",
+     "what": "Beren and Lúthien dwell on Tol Galen; the Green-elves aid the ambush at Sarn Athrad",
+     "when": "F.A. 468+"
+    },
+    {
+     "cite": "Silm 22 [C]",
+     "realm": "nogrod",
+     "status": "sacked",
+     "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
+     "when": "F.A. 502–503"
+    },
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_CROSSING",
     "NATURAL_PASS"
@@ -3432,6 +4456,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_CROSSING"
    ]
@@ -3447,6 +4472,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_SEA"
    ]
@@ -3456,18 +4482,25 @@
     "TA"
    ],
    "cites": [
-    "App A/B",
-    "C App A; I; HoME 11, 12"
+    "App A/B"
    ],
    "coords": [],
    "n": "Sea of Rhûn",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "The eastern sea of the Wainrider wars; Dorwinion northwest of it.",
-    "Evidence Table R13"
+    "The eastern sea of the Wainrider wars; Dorwinion northwest of it."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A [C]",
+     "realm": "rhun",
+     "status": "event",
+     "what": "Rómendacil II breaks the Easterlings to the Sea of Rhûn",
+     "when": "T.A. 1248"
+    }
+   ],
    "types": [
     "NATURAL_PLAIN"
    ]
@@ -3483,6 +4516,7 @@
    ],
    "parents": [],
    "place_conf": "M",
+   "timeline": [],
    "types": [
     "NATURAL_SEA"
    ]
@@ -3505,6 +4539,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_VILLAGE"
    ]
@@ -3527,6 +4562,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_MONUMENT"
    ]
@@ -3545,7 +4581,8 @@
     "The trackless wild south of Andram, between the two rivers."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_FOREST"
    ]
@@ -3555,8 +4592,7 @@
     "TA"
    ],
    "cites": [
-    "UT; LotR II.3",
-    "D App D; RC; C II.3 (Boromir's crossing)"
+    "UT; LotR II.3"
    ],
    "coords": [
     {
@@ -3567,17 +4603,17 @@
     }
    ],
    "n": "Tharbad",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec TA: ruined town/ford",
-    "The ruined river-town at the great crossing of the Gwathló.",
-    "Evidence Table E17"
+    "The ruined river-town at the great crossing of the Gwathló."
    ],
    "parents": [
     "cardolan",
     "dunland"
    ],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_CROSSING",
     "MAN_MADE_RUIN"
@@ -3598,7 +4634,8 @@
     "Rómendacil's giants of stone fencing the north-way of Gondor."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PEAK"
    ]
@@ -3608,21 +4645,29 @@
     "TA"
    ],
    "cites": [
-    "Hobbit vi-vii",
-    "B ch7; C II.1"
+    "Hobbit vi-vii"
    ],
    "coords": [],
    "n": "The Carrock",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "also & Beorn's house",
-    "The Eagles' ford-rock; the skin-changer's oak-hall east of it.",
-    "Evidence Table R6"
+    "The Eagles' ford-rock; the skin-changer's oak-hall east of it."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "LotR II.1 [C]",
+     "realm": "beornings",
+     "status": "event",
+     "what": "Grimbeorn the Old holds the High Pass and the Carrock-ford tolls; 'neither orc nor wolf' dare his lands",
+     "when": "3018–19"
+    }
+   ],
    "types": [
-    "NATURAL_PLAIN"
+    "NATURAL_PLAIN",
+    "MAN_MADE_CROSSING"
    ]
   },
   "the crossroads": {
@@ -3643,6 +4688,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_LANDMARK"
    ]
@@ -3661,7 +4707,8 @@
     "The mere of Dagorlad's dead faces; Gollum led them through, Mar 1-2, 3019."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PLAIN"
    ]
@@ -3681,9 +4728,11 @@
     "Gates of stone over the Forest River; barrels rode hence to Esgaroth."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
-    "MAN_MADE_HALL"
+    "MAN_MADE_HALL",
+    "NATURAL_RIVER"
    ]
   },
   "the high pass": {
@@ -3703,7 +4752,23 @@
    "parents": [
     "beornings"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "LotR II.1 [C]",
+     "realm": "beornings",
+     "status": "event",
+     "what": "Grimbeorn the Old holds the High Pass and the Carrock-ford tolls; 'neither orc nor wolf' dare his lands",
+     "when": "3018–19"
+    },
+    {
+     "cite": "App A/B; Hobbit 4 [C]",
+     "realm": "mistyorcs",
+     "status": "event",
+     "what": "Orcs multiply; Moria colonized by Azog; the High Pass tolls in blood (Goblin-town's Great Goblin)",
+     "when": "T.A. 2480+"
+    }
+   ],
    "types": [
     "NATURAL_PASS"
    ]
@@ -3722,9 +4787,33 @@
     "Grór's iron-delvings; Dáin's 500 came mailed to the Mountain."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A III [C]",
+     "realm": "ironhills",
+     "status": "event",
+     "what": "Náin and the Iron Hills' mattock-host decide Azanulbizar; Dáin II slays Azog on the Gate-stair",
+     "when": "2799"
+    },
+    {
+     "cite": "Hobbit 15+; App A III [C]",
+     "realm": "ironhills",
+     "status": "event",
+     "what": "Dáin's five hundred come to Erebor; the lordship passes into the restored kingdom",
+     "when": "2941"
+    },
+    {
+     "cite": "App A III [C]",
+     "realm": "ironhills",
+     "status": "event",
+     "what": "Grór, Dáin I's younger son, settles the Iron Hills as the Grey Mountains empty",
+     "when": "T.A. 2590"
+    }
+   ],
    "types": [
-    "MAN_MADE_HALL"
+    "MAN_MADE_HALL",
+    "NATURAL_PEAK"
    ]
   },
   "the morannon": {
@@ -3751,6 +4840,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_GATE",
     "MAN_MADE_FORTRESS"
@@ -3775,24 +4865,74 @@
     "bombadil"
    ],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "LotR III.4 [C]",
+     "realm": "fangorn",
+     "status": "event",
+     "what": "'the last remnant of the vast forests of the Elder Days' — once one wood with the Old Forest from Dunland to Bree",
+     "when": "Elder Days"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "cardolan",
+     "status": "destroyed",
+     "what": "The last prince falls; a remnant holds Tyrn Gorthad and the Old Forest refuge",
+     "when": "T.A. 1409"
+    }
+   ],
    "types": [
     "NATURAL_FOREST"
    ]
   },
   "the shire": {
    "ages": [],
-   "cites": [
-    "C Prologue, App B; HoME 12; RC"
-   ],
+   "cites": [],
    "coords": [],
    "n": "The Shire",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: Political / Regional Polygons",
-    "Evidence Table E5"
+    "spec TA: Political / Regional Polygons"
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A/B [C]",
+     "realm": "shire",
+     "status": "event",
+     "what": "The first Thain (Bucca of the Marish) after the king's fall",
+     "when": "1979"
+    },
+    {
+     "cite": "Prologue; App A/B; LotR VI.8 [C]",
+     "realm": "shire",
+     "status": "destroyed",
+     "what": "Greenfields; the Fell Winter and Long Winter; the Scouring and the mending",
+     "when": "2747 / 2911–12 / 3019"
+    },
+    {
+     "cite": "App B [C]",
+     "realm": "shire",
+     "status": "event",
+     "what": "The Westmarch gift; Elessar's ban on Men entering — the Shire a protected free-land of the Reunited Kingdom",
+     "when": "F.o.A. 6 / 31"
+    },
+    {
+     "cite": "App A/B; LotR VI.6 [C]",
+     "realm": "reunited",
+     "status": "granted",
+     "what": "The ordering of the realm: the Shire made free and banned to Men; Drúadan granted; Núrn to the freed slaves; Ithilien to Faramir's princedom and Legolas's Elves; Rohan's oath renewed",
+     "when": "F.o.A. 6–31"
+    },
+    {
+     "cite": "LotR Prologue [C]",
+     "realm": "shire",
+     "status": "granted",
+     "what": "Marcho and Blanco granted the land from Baranduin to the Far Downs by King Argeleb II",
+     "when": "T.A. 1601"
+    }
+   ],
    "types": [
     "POLITY_REALM"
    ]
@@ -3811,7 +4951,8 @@
     "Isildur's black globe where the Oathbreakers gathered to the heir at midnight."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PEAK"
    ]
@@ -3830,7 +4971,8 @@
     "The Anduin's great loops where Eorl crossed riding south."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PLAIN"
    ]
@@ -3853,6 +4995,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_LANDMARK"
    ]
@@ -3883,6 +5026,22 @@
     "ossiriand"
    ],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "Silm 22 [C]",
+     "realm": "ossiriand",
+     "status": "event",
+     "what": "Beren and Lúthien dwell on Tol Galen; the Green-elves aid the ambush at Sarn Athrad",
+     "when": "F.A. 468+"
+    },
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "NATURAL_ISLAND"
    ]
@@ -3892,23 +5051,23 @@
     "FA"
    ],
    "cites": [
-    "Silm 18-19",
-    "A ch14, ch18; E"
+    "Silm 18-19"
    ],
    "coords": [],
    "n": "Tol Sirion",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "also Minas Tirith of Orodreth; Tol-in-Gaurhoth",
-    "The isle-tower of the pass; Sauron's werewolf-keep; Finrod died in its pits.",
-    "Evidence Table B14"
+    "The isle-tower of the pass; Sauron's werewolf-keep; Finrod died in its pits."
    ],
    "parents": [
     "angband"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
-    "MAN_MADE_TOWER"
+    "MAN_MADE_TOWER",
+    "NATURAL_PASS"
    ]
   },
   "tol sirion fort": {
@@ -3929,6 +5088,15 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_TOWER"
    ]
@@ -3951,6 +5119,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_DWELLING"
    ]
@@ -3960,22 +5129,21 @@
     "TA"
    ],
    "cites": [
-    "App A/B; Prologue",
-    "C Prologue, App A; A RoP; D; RC[T] (unpub. Index)"
+    "App A/B; Prologue"
    ],
    "coords": [],
    "n": "Tower Hills",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "also Emyn Beraid; Elostirion",
-    "The palantír that looks only West; Elanor's Westmarch beneath.",
-    "Evidence Table E4"
+    "The palantír that looks only West; Elanor's Westmarch beneath."
    ],
    "parents": [
     "arnor",
     "arthedain"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_TOWER"
    ]
@@ -3998,6 +5166,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_FORTRESS"
    ]
@@ -4020,6 +5189,7 @@
    ],
    "parents": [],
    "place_conf": "M",
+   "timeline": [],
    "types": [
     "MAN_MADE_LANDMARK"
    ]
@@ -4040,7 +5210,8 @@
    "parents": [
     "rhudaur"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_FOREST"
    ]
@@ -4056,6 +5227,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_FOREST"
    ]
@@ -4078,6 +5250,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_TOWN"
    ]
@@ -4100,15 +5273,22 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "UNCLASSIFIED"
    ]
   },
   "umbar": {
    "ages": [],
-   "cites": [
-    "C App A; A Akallabêth (Ar-Pharazôn's landing)"
-   ],
+   "cites": [],
    "coords": [
     {
      "conf": "M",
@@ -4118,13 +5298,70 @@
     }
    ],
    "n": "Umbar",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: corsair haven",
-    "Evidence Table G30"
+    "spec TA: corsair haven"
    ],
    "parents": [],
    "place_conf": "M",
+   "timeline": [
+    {
+     "cite": "App B [C]",
+     "realm": "umbar",
+     "status": "event",
+     "what": "Umbar made a great fortress of Númenor; seat of the King's Men's dominion",
+     "when": "S.A. 2280"
+    },
+    {
+     "cite": "Akallabêth; App B [C]",
+     "realm": "umbar",
+     "status": "event",
+     "what": "Ar-Pharazôn lands here to humble Sauron — the haven's proudest and worst hour",
+     "when": "S.A. 3261"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "harad",
+     "status": "event",
+     "what": "Wars with Gondor's Ship-kings; Umbar's loss and the Harad kings' homage to Hyarmendacil",
+     "when": "T.A. 1015–1050"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "gondor",
+     "status": "burned",
+     "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
+     "when": "T.A. 1432–48"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "umbar",
+     "status": "event",
+     "what": "Telumehtar Umbardacil retakes it briefly; lost again to Harad",
+     "when": "T.A. 1810"
+    },
+    {
+     "cite": "App A; LotR V.9 [C]",
+     "realm": "umbar",
+     "status": "burned",
+     "what": "Thorongil's raid burns the fleet; the Corsairs' last armament dies at Pelargir",
+     "when": "T.A. 2980–3019"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "gondor",
+     "status": "taken",
+     "what": "The four Ship-kings: Umbar taken, the realm 'reached the summit of its power' under Hyarmendacil I",
+     "when": "T.A. 830–1149"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "umbar",
+     "status": "event",
+     "what": "Gondor takes Umbar (Eärnil I); the rebels of the Kin-strife flee here after 1448 — the Corsair age begins",
+     "when": "T.A. 933–1448"
+    }
+   ],
    "types": [
     "MAN_MADE_HAVEN"
    ]
@@ -4147,6 +5384,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "MAN_MADE_TOWN"
    ]
@@ -4156,8 +5394,7 @@
     "FA"
    ],
    "cites": [
-    "Silm 15; UT (Tuor)",
-    "A ch14; G LV"
+    "Silm 15; UT (Tuor)"
    ],
    "coords": [
     {
@@ -4168,15 +5405,23 @@
     }
    ],
    "n": "Vinyamar",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "spec FA: ruined halls",
     "also under Mount Taras",
-    "Turgon's first hall by the sea, where Tuor found shield and sword left by command of Ulmo.",
-    "Evidence Table B11"
+    "Turgon's first hall by the sea, where Tuor found shield and sword left by command of Ulmo."
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
+    }
+   ],
    "types": [
     "MAN_MADE_RUIN",
     "MAN_MADE_TOWER"
@@ -4187,40 +5432,38 @@
     "TA"
    ],
    "cites": [
-    "App A; LotR I.11",
-    "C I.11, App A; RC"
+    "App A; LotR I.11"
    ],
    "coords": [],
    "n": "Weathertop",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "also Amon Sûl",
-    "Watchtower of the North's great palantír; razed 1409; the Witch-king's knife, Oct 6, 3018.",
-    "Evidence Table E10"
+    "Watchtower of the North's great palantír; razed 1409; the Witch-king's knife, Oct 6, 3018."
    ],
    "parents": [
     "arnor",
     "arthedain"
    ],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
-    "NATURAL_PEAK"
+    "NATURAL_PEAK",
+    "MAN_MADE_TOWER"
    ]
   },
   "white mountains": {
    "ages": [],
-   "cites": [
-    "C III–V; I"
-   ],
+   "cites": [],
    "coords": [],
    "n": "White Mountains (Ered Nimrais)",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
-    "spec TA: Mountains",
-    "Evidence Table G12"
+    "spec TA: Mountains"
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ]
@@ -4240,7 +5483,8 @@
     "Whence the dragons bred; Dáin I died at his door of a cold-drake."
    ],
    "parents": [],
-   "place_conf": null,
+   "place_conf": "H",
+   "timeline": [],
    "types": [
     "NATURAL_PEAK"
    ]
@@ -4263,6 +5507,7 @@
    ],
    "parents": [],
    "place_conf": "H",
+   "timeline": [],
    "types": [
     "UNCLASSIFIED"
    ]
@@ -4278,6 +5523,7 @@
    ],
    "parents": [],
    "place_conf": "M",
+   "timeline": [],
    "types": [
     "NATURAL_FOREST"
    ]
