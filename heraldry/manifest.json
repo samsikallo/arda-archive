@@ -381,13 +381,20 @@
  },
  {
   "key": "durin",
-  "label": "Emblem of Durin",
-  "file": "heraldry/durin.svg",
-  "src": "https://commons.wikimedia.org/wiki/File:Emblema_Durin.svg",
-  "license": "CC BY-SA 3.0",
-  "author": "Rondador, after Wappen Neuenstein (Hohenlohe).svg",
+  "label": "Emblems of Durin's Folk",
+  "file": "heraldry/illustrated/durin.png",
+  "src": "supplied to the workshop, 2026-07-26",
+  "license": "supplied to the archive; rights confirmed by the site's owner",
+  "author": "Rondador Nocturno (monogram ROH/NOC on the source plate)",
   "ok": true,
-  "modified": "background rectangle removed 2026-07-26 (fill #f0f0f0 over the whole canvas): every other device in the hall stands on the card's own ground, and this one alone sat in a grey box. The emblem itself is untouched. CC BY-SA 3.0 permits the change; the attribution above is unaltered."
+  "why": "canon-complete where the Commons relief was not: “an anvil and a hammer surmounted by a crown with seven stars” (LotR II.4), all four present, and drawn flat rather than as a shaded three-dimensional panel. The crop takes the shield and leaves the artist's monogram outside it, so his name is carried in words instead — here, in the published asset index, and in the credit line under the hall.",
+  "superseded_commons": {
+   "file": "heraldry/durin.svg",
+   "src": "https://commons.wikimedia.org/wiki/File:Emblema_Durin.svg",
+   "license": "CC BY-SA 3.0",
+   "author": "Rondador, after Wappen Neuenstein (Hohenlohe).svg",
+   "modified": "background rectangle removed 2026-07-26 (fill #f0f0f0 over the whole canvas): every other device in the hall stands on the card's own ground, and this one alone sat in a grey box. The emblem itself is untouched. CC BY-SA 3.0 permits the change; the attribution above is unaltered."
+  }
  },
  {
   "key": "silmarilsdev",

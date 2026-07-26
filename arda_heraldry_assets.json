@@ -680,20 +680,23 @@
    ]
   },
   {
-   "file": "heraldry/durin.svg",
+   "file": "heraldry/illustrated/durin.png",
    "exists": true,
    "device": "durin",
-   "label": "Emblem of Durin",
+   "label": "Emblems of Durin's Folk",
    "tier": 2,
    "basis": "a freely-licensed recreation of a device Tolkien designed",
-   "source": "https://commons.wikimedia.org/wiki/File:Emblema_Durin.svg",
-   "licence": "CC BY-SA 3.0",
-   "author": "Rondador, after Wappen Neuenstein (Hohenlohe).svg",
+   "source": "supplied to the workshop, 2026-07-26",
+   "licence": "supplied to the archive; rights confirmed by the site's owner",
+   "author": "Rondador Nocturno (monogram ROH/NOC on the source plate)",
    "publishable": true,
    "withdrawn": null,
-   "modified": "background rectangle removed 2026-07-26 (fill #f0f0f0 over the whole canvas): every other device in the hall stands on the card's own ground, and this one alone sat in a grey box. The emblem itself is untouched. CC BY-SA 3.0 permits the change; the attribution above is unaltered.",
-   "sha1": "2df1f88ab8937d2a",
-   "size": null
+   "modified": null,
+   "sha1": "780d7154b354f2e5",
+   "size": [
+    480,
+    480
+   ]
   },
   {
    "file": "heraldry/illustrated/silmarilsdev.png",
@@ -775,15 +778,15 @@
    "file": "durin.jpg",
    "exists": true,
    "device": "durin",
-   "tier": 3,
+   "tier": 2,
    "batch": "uploaded 2026-07-26",
-   "basis": "supplied to the archive and NOT shown -- held as reference",
+   "basis": "an illustrated reconstruction supplied to the archive, cropped by map/gen_illustrated_devices.py and shown in the hall",
    "source": "supplied to the workshop, 2026-07-26",
    "licence": "NOT ESTABLISHED -- the plate carries the monogram of Rondador Nocturno, so it is not unattributed and no licence is on record",
    "author": "Rondador Nocturno (monogram on the plate)",
-   "publishable": false,
-   "why_not": "the plate carries an identifiable artist's monogram and no licence is on record for it",
-   "shown_as": null,
+   "publishable": true,
+   "why_not": null,
+   "shown_as": "heraldry/illustrated/durin.png",
    "sha1": "bb4c499c106f79de",
    "size": [
     1024,
