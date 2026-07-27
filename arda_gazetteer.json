@@ -3125,7 +3125,7 @@
    "n": "East-Emnet",
    "name_conf": null,
    "notes": [
-    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec",
+    "interior label of Rohan, per the vector spec",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
@@ -3153,7 +3153,7 @@
    "n": "Eastfold",
    "name_conf": null,
    "notes": [
-    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec",
+    "interior label of Rohan, per the vector spec",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
@@ -3226,7 +3226,7 @@
     "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
     "Evidence Table G7",
     "spec TA: royal town",
-    "within the Rohan (grant bounds of 2510, dotted line) boundary polygon [I-H]",
+    "within the Rohan boundary polygon [I-H]",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
     "the vector spec also lists it as “Edoras/Meduseld”, at the same place; one record, not two"
    ],
@@ -8399,6 +8399,7 @@
   },
   "rohan": {
    "ages": [
+    "FoA",
     "TA"
    ],
    "aka": [
@@ -8408,7 +8409,7 @@
     "D Cirion; C App A, III.2; HoME 12"
    ],
    "coords": [],
-   "n": "Rohan (grant bounds of 2510, dotted line)",
+   "n": "Rohan",
    "name_conf": "H",
    "notes": [
     "spec TA: Political / Regional Polygons",
@@ -8425,6 +8426,13 @@
      "when": "T.A. 2510"
     },
     {
+     "cite": "App A/B; UT",
+     "realm": null,
+     "status": "founded",
+     "what": "Field of Celebrant; the Oath of Eorl; Rohan founded",
+     "when": "T.A. 2510"
+    },
+    {
      "cite": "App A [C]",
      "realm": "rohan",
      "status": "event",
@@ -8437,6 +8445,27 @@
      "status": "event",
      "what": "Saruman's grip on Théoden; the War: Isen, Hornburg, the Ride, the Pelennor",
      "when": "3014–19"
+    },
+    {
+     "cite": "LotR III.8–10 [C]",
+     "realm": "isengard",
+     "status": "drowned",
+     "what": "The Hill of the Ring-forges in little: bred Uruk-hai, wolf-riders, the dammed Isen; war on Rohan; drowned by the Ents in a night",
+     "when": "3014–19"
+    },
+    {
+     "cite": "App A/B; LotR VI.6 [C]",
+     "realm": "reunited",
+     "status": "granted",
+     "what": "The ordering of the realm: the Shire made free and banned to Men; Drúadan granted; Núrn to the freed slaves; Ithilien to Faramir's princedom and Legolas's Elves; Rohan's oath renewed",
+     "when": "F.o.A. 6–31"
+    },
+    {
+     "cite": "App B",
+     "realm": null,
+     "status": "event",
+     "what": "King Éomer dies; Merry and Pippin ride to Rohan and Gondor, and rest in Rath Dínen",
+     "when": "F.o.A. 63"
     }
    ],
    "types": [
@@ -9289,7 +9318,7 @@
    "n": "The Wold",
    "name_conf": null,
    "notes": [
-    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec",
+    "interior label of Rohan, per the vector spec",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
@@ -10243,7 +10272,7 @@
    "n": "West-Emnet",
    "name_conf": null,
    "notes": [
-    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec",
+    "interior label of Rohan, per the vector spec",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
@@ -10271,7 +10300,7 @@
    "n": "Westfold",
    "name_conf": null,
    "notes": [
-    "interior label of Rohan (grant bounds of 2510, dotted line), per the vector spec",
+    "interior label of Rohan, per the vector spec",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
