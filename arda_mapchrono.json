@@ -18,7 +18,7 @@
   "sacked",
   "unrecorded"
  ],
- "n_places": 74,
+ "n_places": 75,
  "n_steps": 73,
  "note": "The slider runs over the moments the archive actually records -- each distinct Age and year at which something in its timelines happened -- so it never moves through invented time. A place with no dated record is never hidden: the archive does not know when it stood, and hiding it would assert an absence no text makes.",
  "places": {
@@ -1628,6 +1628,16 @@
     "status": "event",
     "what": "(after the land's loss) Haladin earlier defended by Caranthir's riders — the offer refused",
     "year": 463
+   }
+  ],
+  "the old forest": [
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "destroyed",
+    "what": "The last prince falls; a remnant holds Tyrn Gorthad and the Old Forest refuge",
+    "year": 1409
    }
   ],
   "the shire": [

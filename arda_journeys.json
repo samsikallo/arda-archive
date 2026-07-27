@@ -93,12 +93,24 @@
   {
    "colour": "#c9a227",
    "id": "fellowship",
-   "n_drawn": 6,
-   "n_placed": 8,
+   "n_drawn": 8,
+   "n_placed": 9,
    "n_stages": 16,
    "name": "The Ring goes south (Sept 23 – Feb 26)",
    "segments": [
     [
+     [
+      3000.0,
+      1635.0,
+      "crickhollow",
+      "Crickhollow (Sept 25)"
+     ],
+     [
+      3060.0,
+      1690.0,
+      "the old forest",
+      "Old Forest & Bombadil (Sept 26-28)"
+     ],
      [
       3115.0,
       1665.0,
@@ -160,12 +172,12 @@
     },
     {
      "day": 5,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "the old forest",
      "label": "Old Forest & Bombadil (Sept 26-28)",
      "note": null,
-     "x": null,
-     "y": null
+     "x": 262,
+     "y": 647
     },
     {
      "day": 7,
@@ -289,12 +301,24 @@
   {
    "colour": "#eda100",
    "id": "frodo",
-   "n_drawn": 2,
-   "n_placed": 4,
+   "n_drawn": 4,
+   "n_placed": 5,
    "n_stages": 10,
    "name": "Frodo & Sam to the Fire (Feb 26 – Mar 25)",
    "segments": [
     [
+     [
+      4750.0,
+      2855.0,
+      "emyn muil",
+      "Emyn Muil (Feb 27-29)"
+     ],
+     [
+      5065.0,
+      3040.0,
+      "the dead marshes",
+      "The Dead Marshes (Mar 1-2)"
+     ],
      [
       5610.0,
       3165.0,
@@ -330,12 +354,12 @@
     },
     {
      "day": 162,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "the dead marshes",
      "label": "The Dead Marshes (Mar 1-2)",
      "note": "'They lie in all the pools... a fell light is in them.'",
-     "x": null,
-     "y": null
+     "x": 663,
+     "y": 377
     },
     {
      "day": 166,
@@ -795,8 +819,8 @@
   {
    "colour": "#eb6834",
    "id": "hobbit",
-   "n_drawn": 7,
-   "n_placed": 7,
+   "n_drawn": 8,
+   "n_placed": 8,
    "n_stages": 11,
    "name": "There and Back Again (2941, by month)",
    "segments": [
@@ -821,6 +845,12 @@
      ]
     ],
     [
+     [
+      4400.0,
+      1390.0,
+      "the carrock",
+      "The Eagles & the Carrock; Beorn (mid-July)"
+     ],
      [
       5000.0,
       1605.0,
@@ -895,12 +925,12 @@
     },
     {
      "day": 70,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "the carrock",
      "label": "The Eagles & the Carrock; Beorn (mid-July)",
      "note": null,
-     "x": null,
-     "y": null
+     "x": 530,
+     "y": 707
     },
     {
      "day": 80,
@@ -1334,7 +1364,7 @@
   }
  ],
  "n_journeys": 10,
- "n_placed": 58,
+ "n_placed": 61,
  "n_stages": 88,
  "note": "Each stage is placed by the place its own label names, never by transforming the living map's coordinates onto this sheet: an affine over the 29 places the two sheets share leaves a mean residual of 44 miles. A stage the archive cannot place is recorded and NOT DRAWN, and the course is broken where it cannot be followed, because a road drawn through half its stages is a different road."
 }
