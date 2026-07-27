@@ -115,7 +115,11 @@ fetch("arda_gazetteer.json").then(r=>r.json()).then(d=>{
   const by={};
   rows.forEach(k=>{
    const ps=(G[k].parents||[]);
-   (ps.length?ps:["— not placed within a realm"]).forEach(p=>{(by[p]=by[p]||[]).push(k)})});
+   // A HUNDRED AND SEVENTY-NINE PLACES IN ONE HEAP HEADED "not placed within a realm" read
+   // as a hundred and seventy-nine failures. Most are not: thirty-nine ARE realms, thirty-six
+   // are rivers, ranges and seas that a single parent would falsify. Each record now says
+   // which, and the hall groups by what it says.
+   (ps.length?ps:["— "+(G[k].unplaced||"not placed within a realm")]).forEach(p=>{(by[p]=by[p]||[]).push(k)})});
   const out=[];
   Object.keys(by).sort().forEach(p=>{
    out.push('<div class="grp"><h2>'+p+' <span class="n">'+by[p].length+'</span></h2>');

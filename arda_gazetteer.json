@@ -32,7 +32,8 @@
    ],
    "types": [
     "NATURAL_LAKE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "almaren": {
    "ages": [],
@@ -62,7 +63,8 @@
    "types": [
     "MAN_MADE_DWELLING",
     "NATURAL_LAKE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "alqualonde": {
    "ages": [
@@ -81,9 +83,12 @@
    "notes": [
     "On the coast of Eldamar north of the Calacirya, 'lit with many lamps'; its gate an arch of living rock sea-carved; the strand strewn with gems given by the Noldor. — Silm 5 [C]",
     "the realms model dates it Y.T. →",
-    "Evidence Table V8"
+    "Evidence Table V8",
+    "named among valinor's own settlements in its dossier [C]"
    ],
-   "parents": [],
+   "parents": [
+    "valinor"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -136,7 +141,8 @@
    "timeline": [],
    "types": [
     "NATURAL_PEAK"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "amon ereb": {
    "ages": [
@@ -204,9 +210,12 @@
    "name_conf": "High",
    "notes": [
     "“And after three days’ journeying they came to Amon Ethir, the Hill of Spies, that long ago Felagund had caused to be raised with great labour, a league before the doors of Nargothrond.” — The Silmarillion, line 10296",
-    "indexed by Christopher Tolkien as: ‘Hill of Spies’, east of Nargothrond"
+    "indexed by Christopher Tolkien as: ‘Hill of Spies’, east of Nargothrond",
+    "named among nargothrond's own settlements in its dossier [C]"
    ],
-   "parents": [],
+   "parents": [
+    "nargothrond"
+   ],
    "place_conf": "High",
    "timeline": [],
    "types": [
@@ -231,7 +240,8 @@
    "types": [
     "NATURAL_HILL",
     "MAN_MADE_CITY"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "amon obel": {
    "ages": [],
@@ -239,7 +249,7 @@
     "The Silmarillion, line 9702"
    ],
    "coords": [],
-   "n": "Amon\nObel",
+   "n": "Amon Obel",
    "name_conf": "High",
    "notes": [
     "“Northward he looked, and descried the forest of Brethil climbing green about Amon Obel in its midst, and thither his eyes were drawn ever and again, he knew not why; for his heart was set rather to the north-west, where league upon league away on the skirts of the sky it seemed to him that he could glimpse the Mountains of Shadow, the walls of his home.” — The Silmarillion, line 9702",
@@ -250,7 +260,8 @@
    "timeline": [],
    "types": [
     "NATURAL_HILL"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "amon rudh": {
    "ages": [
@@ -297,7 +308,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "andrast": {
    "ages": [],
@@ -318,7 +330,8 @@
    "timeline": [],
    "types": [
     "NATURAL_CAPE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "androth": {
    "ages": [],
@@ -337,7 +350,8 @@
    "timeline": [],
    "types": [
     "NATURAL_HILL"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "anduin": {
    "ages": [],
@@ -356,7 +370,8 @@
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "anfalas": {
    "ages": [
@@ -497,7 +512,8 @@
    ],
    "types": [
     "MAN_MADE_FORTRESS"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "angle": {
    "ages": [],
@@ -524,7 +540,8 @@
    ],
    "types": [
     "NATURAL_RIVER"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "angmar": {
    "ages": [
@@ -605,7 +622,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "annuminas": {
    "ages": [
@@ -725,7 +743,8 @@
    "timeline": [],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a land, not a place within one"
   },
   "argonath": {
    "ages": [
@@ -773,9 +792,12 @@
    "notes": [
     "“At the feet of the mountain were built the tombs of the Kings, and hard by upon a hill was Armenelos, fairest of cities, and there stood the tower and the citadel that was raised by Elros son of Eärendil, whom the Valar appointed to be the first King of the Dúnedain.” — The Silmarillion, line 11916",
     "indexed by Christopher Tolkien as: City of the Kings in Númenor",
-    "Evidence Table N5"
+    "Evidence Table N5",
+    "named among numenor's own settlements in its dossier [C]"
    ],
-   "parents": [],
+   "parents": [
+    "numenor"
+   ],
    "place_conf": "High",
    "timeline": [],
    "types": [
@@ -856,7 +878,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "arossiach": {
    "ages": [
@@ -890,7 +913,8 @@
    ],
    "types": [
     "MAN_MADE_CROSSING"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "arthedain": {
    "ages": [
@@ -973,7 +997,8 @@
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "balar": {
    "ages": [
@@ -1023,7 +1048,8 @@
    ],
    "types": [
     "NATURAL_BAY"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "bar en danwedh": {
    "ages": [
@@ -1057,7 +1083,8 @@
    ],
    "types": [
     "MAN_MADE_DWELLING"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "barad dur": {
    "ages": [
@@ -1149,9 +1176,12 @@
    "name_conf": null,
    "notes": [
     "spec FA: fortress",
-    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
+    "named among hithlum's own settlements in its dossier [C]"
    ],
-   "parents": [],
+   "parents": [
+    "hithlum"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -1201,7 +1231,8 @@
    ],
    "types": [
     "MAN_MADE_TOWER"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "baranduin": {
    "ages": [],
@@ -1217,7 +1248,8 @@
    "timeline": [],
    "types": [
     "NATURAL_SEA"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "barrow downs": {
    "ages": [
@@ -1323,7 +1355,8 @@
    ],
    "types": [
     "MAN_MADE_CITY"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "belfalas": {
    "ages": [
@@ -1377,7 +1410,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_DWELLING"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "blue mtn dwarf halls": {
    "ages": [
@@ -1405,7 +1439,8 @@
     "MAN_MADE_MANSION",
     "MAN_MADE_HALL",
     "NATURAL_PEAK"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "bombadil": {
    "ages": [
@@ -1441,7 +1476,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "brandywine bridge": {
    "ages": [
@@ -1529,7 +1565,8 @@
    "types": [
     "MAN_MADE_TOWN",
     "MAN_MADE_CITY"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "bree land": {
    "ages": [],
@@ -1548,7 +1585,8 @@
    "timeline": [],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "brethil": {
    "ages": [
@@ -1603,7 +1641,8 @@
    ],
    "types": [
     "NATURAL_FOREST"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "bridge elds": {
    "ages": [
@@ -1662,7 +1701,8 @@
    ],
    "types": [
     "MAN_MADE_CROSSING"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "brithombar": {
    "ages": [
@@ -1755,7 +1795,8 @@
    "types": [
     "NATURAL_HILL",
     "MAN_MADE_HALL"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "buckland crickhollow": {
    "ages": [
@@ -1904,7 +1945,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_TOWN"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "caradhras": {
    "ages": [
@@ -2099,7 +2141,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_FORTRESS"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "celebrant": {
    "ages": [
@@ -2149,7 +2192,8 @@
    ],
    "types": [
     "NATURAL_RIVER"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "cerin amroth": {
    "ages": [
@@ -2210,7 +2254,8 @@
    "timeline": [],
    "types": [
     "NATURAL_FOREST"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "cirith ungol": {
    "ages": [
@@ -2253,7 +2298,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "combe": {
    "ages": [
@@ -2305,7 +2351,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_DWELLING"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "cristhorn": {
    "ages": [],
@@ -2325,7 +2372,8 @@
    "types": [
     "NATURAL_MOUNTAIN_RANGE",
     "MAN_MADE_CITY"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "dale": {
    "ages": [
@@ -2400,7 +2448,8 @@
     "MAN_MADE_TOWN",
     "NATURAL_VALLEY",
     "MAN_MADE_CITY"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "dimbar": {
    "ages": [],
@@ -2421,7 +2470,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "dimrill dale": {
    "ages": [
@@ -2447,7 +2497,8 @@
    "types": [
     "NATURAL_VALLEY",
     "NATURAL_PASS"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "dimrost": {
    "ages": [
@@ -2493,9 +2544,12 @@
    "name_conf": null,
    "notes": [
     "spec TA: castle-city",
-    "The Swan-princes' sea-castle; named for the last king of Lórien."
+    "The Swan-princes' sea-castle; named for the last king of Lórien.",
+    "named among gondor's own settlements in its dossier [C]"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -2520,7 +2574,8 @@
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "dol guldur": {
    "ages": [
@@ -2658,7 +2713,8 @@
    ],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "dor cuarthol": {
    "ages": [],
@@ -2679,7 +2735,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "dor daedeloth": {
    "ages": [],
@@ -2687,7 +2744,7 @@
     "The Silmarillion, line 5631"
    ],
    "coords": [],
-   "n": "Dor\nDaedeloth",
+   "n": "Dor Daedeloth",
    "name_conf": "High",
    "notes": [
     "“There upon the confines of Dor Daedeloth, the land of Morgoth, Fëanor was surrounded, with few friends about him.” — The Silmarillion, line 5631",
@@ -2698,7 +2755,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "dor en ernil": {
    "ages": [
@@ -2792,7 +2850,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "dorlomin": {
    "ages": [
@@ -2835,7 +2894,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "dorthonion": {
    "ages": [
@@ -2890,7 +2950,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "dorwinion": {
    "ages": [
@@ -2921,7 +2982,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "druadan forest": {
    "ages": [],
@@ -2937,7 +2999,8 @@
    "timeline": [],
    "types": [
     "NATURAL_FOREST"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "dunharrow": {
    "ages": [
@@ -3029,7 +3092,8 @@
    ],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "durin s stone": {
    "ages": [
@@ -3048,9 +3112,12 @@
    "name_conf": null,
    "notes": [
     "spec TA: landmark",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "named among khazaddum's own settlements in its dossier [C]"
    ],
-   "parents": [],
+   "parents": [
+    "khazaddum"
+   ],
    "place_conf": "M",
    "timeline": [],
    "types": [
@@ -3081,7 +3148,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_FORTRESS"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "eagles eyrie": {
    "ages": [
@@ -3107,7 +3175,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_LANDMARK"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "east emnet": {
    "ages": [
@@ -3197,7 +3266,8 @@
    ],
    "types": [
     "MAN_MADE_HAVEN"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "edoras": {
    "ages": [
@@ -3323,7 +3393,8 @@
    "types": [
     "NATURAL_FALLS",
     "NATURAL_LAKE"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "eithel sirion": {
    "ages": [
@@ -3378,7 +3449,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "elostirion tower": {
    "ages": [
@@ -3404,7 +3476,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_TOWER"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "elvenking s halls": {
    "ages": [
@@ -3463,7 +3536,8 @@
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "eotheod": {
    "ages": [
@@ -3508,7 +3582,8 @@
    ],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "ephel brandir": {
    "ages": [
@@ -3542,7 +3617,8 @@
    ],
    "types": [
     "MAN_MADE_FORTRESS"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "erebor": {
    "ages": [
@@ -3713,7 +3789,8 @@
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "ered luin third age remnant": {
    "ages": [],
@@ -3729,7 +3806,8 @@
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "eregion": {
    "ages": [
@@ -3819,7 +3897,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "eryn vorn": {
    "ages": [],
@@ -3835,7 +3914,8 @@
    "timeline": [],
    "types": [
     "NATURAL_FOREST"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "esgaroth": {
    "ages": [
@@ -3972,7 +4052,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_TOMB"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "falas": {
    "ages": [
@@ -4009,7 +4090,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "fangorn": {
    "ages": [
@@ -4103,7 +4185,8 @@
    ],
    "types": [
     "NATURAL_MARSH"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "field of celebrant": {
    "ages": [
@@ -4156,7 +4239,8 @@
    "timeline": [],
    "types": [
     "NATURAL_FOREST"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "ford of bruinen": {
    "ages": [
@@ -4241,7 +4325,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_HAVEN"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "formenos": {
    "ages": [
@@ -4365,7 +4450,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_DWELLING"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "framsburg": {
    "ages": [
@@ -4460,7 +4546,8 @@
    ],
    "types": [
     "NATURAL_PLAIN"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "goblin gate": {
    "ages": [
@@ -4487,7 +4574,8 @@
    "types": [
     "MAN_MADE_GATE",
     "NATURAL_PASS"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "gondolin": {
    "ages": [
@@ -4579,7 +4667,8 @@
    ],
    "types": [
     "MAN_MADE_CITY"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "gondor": {
    "ages": [
@@ -4730,7 +4819,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "gorgoroth": {
    "ages": [
@@ -4818,7 +4908,8 @@
    "timeline": [],
    "types": [
     "NATURAL_HILL"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "grey havens": {
    "ages": [
@@ -4871,7 +4962,8 @@
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "gwathlo system": {
    "ages": [],
@@ -4890,7 +4982,8 @@
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "halifirien hallow": {
    "ages": [
@@ -4916,7 +5009,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_HALLOW"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "hall of fire": {
    "ages": [],
@@ -4935,7 +5029,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_DWELLING"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "harad": {
    "ages": [
@@ -4998,7 +5093,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "harlindon": {
    "ages": [],
@@ -5017,7 +5113,8 @@
    "timeline": [],
    "types": [
     "NATURAL_GULF"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "harlond gondor quays": {
    "ages": [
@@ -5095,7 +5192,8 @@
    "types": [
     "MAN_MADE_TOMB",
     "NATURAL_FOREST"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "haudh en ndengin": {
    "ages": [
@@ -5200,7 +5298,8 @@
    "types": [
     "NATURAL_MARSH",
     "MAN_MADE_GATE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "helm s deep": {
    "ages": [
@@ -5340,7 +5439,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "himring": {
    "ages": [
@@ -5409,7 +5509,8 @@
    "types": [
     "MAN_MADE_FORTRESS",
     "NATURAL_HILL"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "hithlum": {
    "ages": [
@@ -5461,7 +5562,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "hobbiton bag end": {
    "ages": [
@@ -5519,7 +5621,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_FORTRESS"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "hyarmentir": {
    "ages": [],
@@ -5538,7 +5641,8 @@
    "timeline": [],
    "types": [
     "NATURAL_PEAK"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "iant iaur": {
    "ages": [
@@ -5572,7 +5676,8 @@
    ],
    "types": [
     "MAN_MADE_BRIDGE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "ice bay of forochel": {
    "ages": [
@@ -5612,7 +5717,8 @@
    "timeline": [],
    "types": [
     "NATURAL_BAY"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "ingwil": {
    "ages": [],
@@ -5631,7 +5737,8 @@
    "timeline": [],
    "types": [
     "NATURAL_HILL"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "inlands": {
    "ages": [],
@@ -5650,7 +5757,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "irensaga": {
    "ages": [],
@@ -5739,7 +5847,8 @@
    "timeline": [],
    "types": [
     "NATURAL_SEA"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "isengard": {
    "ages": [
@@ -5857,7 +5966,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_GATE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "isle of balar": {
    "ages": [
@@ -5958,7 +6068,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_ROAD"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "khand": {
    "ages": [
@@ -5996,7 +6107,8 @@
    ],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "khazaddum": {
    "ages": [
@@ -6090,7 +6202,8 @@
    "types": [
     "MAN_MADE_MANSION",
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "ladros": {
    "ages": [
@@ -6126,7 +6239,8 @@
    ],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "lake helevorn": {
    "ages": [
@@ -6205,7 +6319,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "last bridge": {
    "ages": [
@@ -6231,7 +6346,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_BRIDGE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "last homely house": {
    "ages": [],
@@ -6250,7 +6366,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_DWELLING"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "lebennin": {
    "ages": [
@@ -6294,7 +6411,8 @@
    "timeline": [],
    "types": [
     "NATURAL_SEA"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "lindon": {
    "ages": [
@@ -6355,7 +6473,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "linhir": {
    "ages": [
@@ -6382,7 +6501,8 @@
    "types": [
     "MAN_MADE_CROSSING",
     "MAN_MADE_TOWN"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "lithlad": {
    "ages": [
@@ -6442,7 +6562,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_HAVEN"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "longbottom": {
    "ages": [],
@@ -6461,7 +6582,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_VILLAGE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "lorellin": {
    "ages": [
@@ -6530,7 +6652,8 @@
    ],
    "types": [
     "NATURAL_COAST"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "lothlann": {
    "ages": [],
@@ -6559,7 +6682,8 @@
    ],
    "types": [
     "NATURAL_PLAIN"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "lothlorien": {
    "ages": [],
@@ -6623,7 +6747,8 @@
    ],
    "types": [
     "NATURAL_FOREST"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "mar nu falmar": {
    "ages": [],
@@ -6642,7 +6767,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "menegroth": {
    "ages": [
@@ -6742,7 +6868,8 @@
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "methedras": {
    "ages": [],
@@ -6928,7 +7055,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "mirkwood": {
    "ages": [],
@@ -6954,7 +7082,8 @@
    "timeline": [],
    "types": [
     "NATURAL_FOREST"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "mirrormere": {
    "ages": [],
@@ -6970,7 +7099,8 @@
    "timeline": [],
    "types": [
     "NATURAL_LAKE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "misty mountains": {
    "ages": [],
@@ -6989,7 +7119,8 @@
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "mitheithel": {
    "ages": [],
@@ -7008,7 +7139,8 @@
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "mordor": {
    "ages": [
@@ -7101,7 +7233,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "morgai": {
    "ages": [],
@@ -7117,7 +7250,8 @@
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "morgulduin": {
    "ages": [],
@@ -7136,7 +7270,8 @@
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "moria east gate dimrill": {
    "ages": [
@@ -7162,7 +7297,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_GATE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "moria west door": {
    "ages": [
@@ -7188,7 +7324,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_GATE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "moria west gate": {
    "ages": [
@@ -7314,7 +7451,8 @@
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "nan dungortheb": {
    "ages": [],
@@ -7335,7 +7473,8 @@
    "timeline": [],
    "types": [
     "NATURAL_VALLEY"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "nan elmoth": {
    "ages": [
@@ -7355,7 +7494,8 @@
    "timeline": [],
    "types": [
     "NATURAL_FOREST"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "nargothrond": {
    "ages": [
@@ -7433,7 +7573,8 @@
    "types": [
     "MAN_MADE_CITY",
     "MAN_MADE_HALL"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "neldoreth": {
    "ages": [
@@ -7478,7 +7619,8 @@
    "timeline": [],
    "types": [
     "NATURAL_FALLS"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "nen hithoel": {
    "ages": [],
@@ -7497,7 +7639,8 @@
    "timeline": [],
    "types": [
     "NATURAL_LAKE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "nen lalaith": {
    "ages": [],
@@ -7516,7 +7659,8 @@
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "nenuial": {
    "ages": [],
@@ -7536,7 +7680,8 @@
    "types": [
     "NATURAL_HILL",
     "MAN_MADE_CITY"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "nevrast": {
    "ages": [],
@@ -7557,7 +7702,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "nogrod": {
    "ages": [
@@ -7647,7 +7793,8 @@
    "timeline": [],
    "types": [
     "NATURAL_FOREST"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "numenor": {
    "ages": [
@@ -7748,7 +7895,8 @@
    "types": [
     "NATURAL_ISLAND",
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "nurn": {
    "ages": [
@@ -7820,7 +7968,8 @@
     "NATURAL_FOREST",
     "NATURAL_COAST",
     "NATURAL_SEA"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "oiolosse": {
    "ages": [],
@@ -7842,7 +7991,8 @@
    "types": [
     "NATURAL_PEAK",
     "MAN_MADE_TOWER"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "oiomure": {
    "ages": [],
@@ -7861,7 +8011,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "old ford": {
    "ages": [
@@ -7887,7 +8038,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_CROSSING"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "osgiliath": {
    "ages": [
@@ -7995,7 +8147,8 @@
    ],
    "types": [
     "MAN_MADE_RUIN"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "parth galen amon hen": {
    "ages": [
@@ -8086,7 +8239,8 @@
    "timeline": [],
    "types": [
     "NATURAL_HILL"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "poros march": {
    "ages": [
@@ -8272,7 +8426,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "ring of doom": {
    "ages": [],
@@ -8291,7 +8446,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "rivendell": {
    "ages": [
@@ -8357,7 +8513,8 @@
    "types": [
     "MAN_MADE_REFUGE",
     "MAN_MADE_HALL"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "rivers of the north east": {
    "ages": [],
@@ -8373,7 +8530,8 @@
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "rivil": {
    "ages": [],
@@ -8395,7 +8553,8 @@
    "types": [
     "NATURAL_RIVER",
     "MAN_MADE_FORTRESS"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "rohan": {
    "ages": [
@@ -8470,7 +8629,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "romenna": {
    "ages": [],
@@ -8484,9 +8644,12 @@
    "notes": [
     "“And the chief dwelling of the Faithful in the later days was thus nigh to the harbour of Rómenna; thence many set sail to Middle-earth, seeking the northern coasts where they might speak still with the Eldar in the kingdom of Gil-galad.” — The Silmarillion, line 12199",
     "indexed by Christopher Tolkien as: Haven in the east of Nûmenor",
-    "Evidence Table N6"
+    "Evidence Table N6",
+    "named among numenor's own settlements in its dossier [C]"
    ],
-   "parents": [],
+   "parents": [
+    "numenor"
+   ],
    "place_conf": "High",
    "timeline": [],
    "types": [
@@ -8510,7 +8673,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_VILLAGE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "sammath naur": {
    "ages": [
@@ -8536,7 +8700,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_GATE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "sarn athrad": {
    "ages": [
@@ -8621,7 +8786,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_CROSSING"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "scary": {
    "ages": [],
@@ -8641,7 +8807,8 @@
    "types": [
     "MAN_MADE_VILLAGE",
     "NATURAL_HILL"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "sea of nurnen": {
    "ages": [],
@@ -8657,7 +8824,8 @@
    "timeline": [],
    "types": [
     "NATURAL_SEA"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "sea of rhun": {
    "ages": [
@@ -8688,7 +8856,8 @@
    ],
    "types": [
     "NATURAL_SEA"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "sirannon": {
    "ages": [
@@ -8735,7 +8904,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "stair falls": {
    "ages": [
@@ -8877,7 +9047,8 @@
    ],
    "types": [
     "NATURAL_PEAK"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "tarlang s neck": {
    "ages": [],
@@ -8896,7 +9067,8 @@
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "tasarinan": {
    "ages": [],
@@ -8915,7 +9087,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "taur im duinath": {
    "ages": [
@@ -8935,7 +9108,8 @@
    "timeline": [],
    "types": [
     "NATURAL_FOREST"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "taur nu fuin": {
    "ages": [],
@@ -8964,7 +9138,8 @@
    ],
    "types": [
     "NATURAL_FOREST"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "tharbad": {
    "ages": [
@@ -9045,7 +9220,8 @@
    ],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "the carrock": {
    "ages": [
@@ -9079,7 +9255,8 @@
    ],
    "types": [
     "NATURAL_ROCK"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "the crossroads": {
    "ages": [
@@ -9105,7 +9282,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_LANDMARK"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "the dead marshes": {
    "ages": [
@@ -9277,7 +9455,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "the undeeps": {
    "ages": [
@@ -9398,9 +9577,12 @@
    "notes": [
     "Set on the green hill Túna in the Calacirya, the only pass of light through the Pelóri; its topmost tower the Mindon Eldaliéva, whose silver lamp shone far into the mists of the sea; the white ways dusted with diamond-dust. — Silm 5 [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it Y.T. →",
-    "Evidence Table V7"
+    "Evidence Table V7",
+    "named among valinor's own settlements in its dossier [C]"
    ],
-   "parents": [],
+   "parents": [
+    "valinor"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -9440,7 +9622,8 @@
    "timeline": [],
    "types": [
     "NATURAL_SEA"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "tol galen": {
    "ages": [
@@ -9509,7 +9692,8 @@
    "types": [
     "NATURAL_ISLAND",
     "MAN_MADE_TOWER"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "tol morwen": {
    "ages": [],
@@ -9528,7 +9712,8 @@
    "timeline": [],
    "types": [
     "NATURAL_SEA"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "tol sirion": {
    "ages": [
@@ -9604,7 +9789,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_DWELLING"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "tower hills": {
    "ages": [
@@ -9664,7 +9850,8 @@
    "types": [
     "MAN_MADE_FORTRESS",
     "MAN_MADE_TOWER"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "trolls clearing": {
    "ages": [
@@ -9690,7 +9877,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_LANDMARK"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "trollshaws": {
    "ages": [
@@ -9780,7 +9968,8 @@
    ],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "tuna": {
    "ages": [],
@@ -9810,7 +9999,8 @@
    "types": [
     "NATURAL_HILL",
     "MAN_MADE_CITY"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "tur haretha": {
    "ages": [],
@@ -9830,7 +10020,8 @@
    "types": [
     "MAN_MADE_TOMB",
     "NATURAL_FOREST"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "turin s stone": {
    "ages": [
@@ -9868,7 +10059,8 @@
    ],
    "types": [
     "MAN_MADE_MONUMENT"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "umbar": {
    "ages": [
@@ -9969,7 +10161,8 @@
    ],
    "types": [
     "MAN_MADE_HAVEN"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "underharrow": {
    "ages": [],
@@ -9988,7 +10181,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_VILLAGE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "undertowers": {
    "ages": [
@@ -10014,7 +10208,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_TOWN"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "utumno": {
    "ages": [
@@ -10053,7 +10248,8 @@
    "types": [
     "MAN_MADE_FORTRESS",
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "valimar": {
    "ages": [
@@ -10159,7 +10355,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "vinyamar": {
    "ages": [
@@ -10199,7 +10396,8 @@
    "types": [
     "MAN_MADE_RUIN",
     "MAN_MADE_TOWER"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "weathertop": {
    "ages": [
@@ -10329,7 +10527,8 @@
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "whitfurrows": {
    "ages": [],
@@ -10348,7 +10547,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_VILLAGE"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "whitwell": {
    "ages": [
@@ -10394,7 +10594,8 @@
    "timeline": [],
    "types": [
     "NATURAL_MOOR"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "woodhall woody end": {
    "ages": [
@@ -10439,7 +10640,8 @@
    "timeline": [],
    "types": [
     "NATURAL_FOREST"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "yale": {
    "ages": [],
@@ -10458,7 +10660,8 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   }
  },
  "realm_ids": [
