@@ -1,6 +1,6 @@
 {
- "n_points": 133,
- "n_records": 142,
+ "n_points": 134,
+ "n_records": 143,
  "note": "Places the archive holds with a point and does not draw on its sheet. Shown as a layer above the map and never drawn into it, because the base sheet's restraint is deliberate. ONE MARK PER POINT: seven points carry more than one record, and every one of those is a borrowed placing -- Khazad-dûm, its Bridge and its West-gate all sit at Caradhras' point because that is the only point any text gives them. A hollow mark is a point that was borrowed or measured rather than the place's own.",
  "points": [
   {
@@ -1716,6 +1716,21 @@
    "how": "own",
    "x": 5050.0,
    "y": 3425.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "tumladen of gondor",
+     "kind": "NATURAL_VALLEY",
+     "name": "Tumladen of Gondor"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 5125.0,
+   "y": 3725.0
   },
   {
    "at": [
