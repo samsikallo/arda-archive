@@ -76,6 +76,14 @@
  #bar .sp{flex:1}
  #count{color:#7a6a50;font-style:italic}
  @media (max-width:560px){#stage{height:62vh}}
+ /* THE ARCHIVE'S OWN LETTERING, SET WHERE HE SET HIS. His writing is not reproduced, so
+    these words are the archive's own, in the archive's type, at the positions he chose. */
+ .hisname text{fill:#141210;font-family:Georgia,'Times New Roman',serif;font-variant:small-caps;
+               letter-spacing:.04em;paint-order:stroke;stroke:#efe6d2;stroke-width:3;
+               cursor:pointer;pointer-events:none}
+ .hisname .hit{fill:transparent;cursor:pointer}
+ .hisname.on text{fill:var(--red)}
+ .hisname:focus{outline:none}
 </style></head><body>
 <div class="hdr"><h1>The Map of Arda</h1><span style="flex:1"></span>
 <nav id="ardanav" aria-label="Archive halls"></nav>
@@ -169,7 +177,7 @@ function loadTraced(){
       traced.id='traced';
       [...doc.documentElement.querySelectorAll('g.sheet')].forEach(s=>traced.appendChild(s));
       traced.setAttribute('viewBox-note',doc.documentElement.getAttribute('viewBox'));
-      svg.appendChild(traced); wireAside(); show(true);
+      svg.appendChild(traced); wireAside(); loadHisNames(); show(true);
       b.textContent="Christopher's hand";
     });
     return;
@@ -190,6 +198,46 @@ function loadTraced(){
      a.setAttribute('aria-pressed',String(asideOn));
      fit();   // the view must follow what is actually shown
    };
+ }
+ // HIS LINES, OUR WORDS, AT HIS POSITIONS.
+ // The traced sheet carries his linework and NONE of his writing, because his lettering is
+ // not ours to set as our own. That leaves every place he named as blank space on his own
+ // map -- and that is exactly the room the archive's own voice belongs in. Each name below
+ // is the ARCHIVE's name for the place HE marked there, at the position he chose, measured
+ // off his plate and carried through the same transform that placed the sheet in the join.
+ // Nothing here is fitted: it is where he put it.
+ function loadHisNames(){
+   fetch('arda_his_anchors.json').then(r=>r.json()).then(A=>{
+     const NS='http://www.w3.org/2000/svg';
+     const g=document.createElementNS(NS,'g'); g.id='hisnames';
+     A.anchors.forEach(a=>{
+       const w=document.createElementNS(NS,'g');
+       w.setAttribute('class','hisname'); w.setAttribute('tabindex','0');
+       w.setAttribute('role','link'); w.setAttribute('aria-label',a.name);
+       Object.assign(w.dataset,{key:a.key,name:a.name,kind:a.kind,ages:a.ages,plate:a.plate});
+       const t=document.createElementNS(NS,'title'); t.textContent=a.name; w.appendChild(t);
+       // A TARGET BIGGER THAN THE MARK: his own label box, which is a real extent he drew to
+       const h=document.createElementNS(NS,'rect');
+       h.setAttribute('class','hit');
+       h.setAttribute('x',a.x); h.setAttribute('y',a.y);
+       h.setAttribute('width',Math.max(a.w,14)); h.setAttribute('height',Math.max(a.h,14));
+       w.appendChild(h);
+       const tx=document.createElementNS(NS,'text');
+       // sized from the label HE wrote, so a display capital reads large and a river small
+       tx.setAttribute('x',a.x); tx.setAttribute('y',a.y+a.h*0.82);
+       tx.setAttribute('font-size',Math.max(11,Math.min(a.h*0.9,46)));
+       tx.textContent=a.name;
+       w.appendChild(tx);
+       w.addEventListener('mouseenter',()=>w.classList.add('on'));
+       w.addEventListener('mouseleave',()=>w.classList.remove('on'));
+       w.addEventListener('focus',()=>w.classList.add('on'));
+       w.addEventListener('blur',()=>w.classList.remove('on'));
+       w.addEventListener('click',e=>{e.stopPropagation();openCard(w,e)});
+       w.addEventListener('keydown',e=>{if(e.key==='Enter')openCard(w,null)});
+       g.appendChild(w);
+     });
+     traced.appendChild(g);
+   }).catch(()=>{});
  }
  function fit(){ if(traced){const bb=traced.getBBox();
    vb={x:bb.x,y:bb.y,w:bb.width,h:bb.height}; setVB();} }
@@ -430,11 +478,11 @@ function openCard(g,e){
   card.style.left=x+'px'; card.style.top=y+'px';
   document.getElementById('cx').onclick=()=>card.style.display='none';
 }
-stage.addEventListener('click',e=>{if(!e.target.closest('.feat')&&!e.target.closest('#card'))card.style.display='none'});
+stage.addEventListener('click',e=>{if(!e.target.closest('.feat')&&!e.target.closest('.hisname')&&!e.target.closest('#card'))card.style.display='none'});
 addEventListener('keydown',e=>{if(e.key==='Escape')card.style.display='none'});
 // ---- pan and zoom: a viewBox, not a tile server
 let drag=null;
-stage.addEventListener('pointerdown',e=>{if(e.target.closest('.feat'))return;
+stage.addEventListener('pointerdown',e=>{if(e.target.closest('.feat')||e.target.closest('.hisname'))return;
   drag={x:e.clientX,y:e.clientY,vx:vb.x,vy:vb.y};stage.classList.add('drag');stage.setPointerCapture(e.pointerId)});
 stage.addEventListener('pointermove',e=>{if(!drag||!svg)return;
   const k=vb.w/stage.clientWidth;
