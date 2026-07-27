@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 461,
+ "n": 463,
  "places": {
   "adorn": {
    "ages": [
@@ -6370,6 +6370,38 @@
     "MAN_MADE_CROSSING",
     "NATURAL_ISLAND"
    ]
+  },
+  "forest gate": {
+   "ages": [],
+   "aka": [
+    "the Forest Gate"
+   ],
+   "cites": [
+    "The Hobbit, ch. VII — Beorn to the company [C]; and lettered FG on Tolkien's own Wilderland draft, 'Forest-Gate to Elf-road'",
+    "placed at Mirkwood (Greenwood the Great / Eryn Lasgalen) [I-H]: the text names the container, not a position within it"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 650,
+     "y": 664
+    }
+   ],
+   "n": "Forest Gate",
+   "name_conf": "H",
+   "notes": [
+    "“At the gate of the forest I must ask you to send back my horse and my ponies.” — The Hobbit, ch. VII — Beorn to the company [C]; and lettered FG on Tolkien's own Wilderland draft, 'Forest-Gate to Elf-road'",
+    "the western entry of the elf-path into Mirkwood, where Beorn's beasts were sent back",
+    "NOT ITS OWN POINT: this is the point of Mirkwood (Greenwood the Great / Eryn Lasgalen), which contains it — the gate opens into that forest, and this is Mirkwood's point"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "MAN_MADE_GATE"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "forest river": {
    "ages": [
@@ -15357,6 +15389,35 @@
    "types": [
     "MAN_MADE_RUIN",
     "MAN_MADE_TOWER"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "warg clearing": {
+   "ages": [],
+   "cites": [
+    "The Hobbit, ch. VI [C]; and lettered W on Tolkien's own Wilderland draft, 'Warg-clearing'",
+    "placed between High Pass and The Carrock [I-M]: he letters it between the pass and the Carrock on his own draft; the point recorded is the midpoint of those two and is a construction"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 515,
+     "y": 645
+    }
+   ],
+   "n": "Warg Clearing",
+   "name_conf": "H",
+   "notes": [
+    "“even the wild Wargs (for so the evil wolves over the Edge of the Wild were named) cannot climb trees.” — The Hobbit, ch. VI [C]; and lettered W on Tolkien's own Wilderland draft, 'Warg-clearing'",
+    "the glade where the company were treed by the wolves between the mountains and the Carrock, and the eagles took them",
+    "a constructed point, not one he marked: he letters it between the pass and the Carrock on his own draft; the point recorded is the midpoint of those two and is a construction"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "NATURAL_CLEARING"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
