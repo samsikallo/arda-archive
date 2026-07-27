@@ -128,10 +128,18 @@ window.ardaGazFind=function(G,key){
 };
 window.ardaGazPanel=function(e){
  if(!e)return "";
- var pretty=function(t){return t.replace("NATURAL_","natural — ").replace("MAN_MADE_","made — ")
-   .replace("POLITY_","polity — ").replace(/_/g," ").toLowerCase()};
+ // the root is said once; see gen_gazetteer_hall.py
+ var ROOTNAME={NATURAL:"natural",MAN_MADE:"made",POLITY:"polity"};
+ var kinds=function(ts){
+  var by={};
+  (ts||[]).forEach(function(t){
+    var r=t.indexOf("MAN_MADE_")===0?"MAN_MADE":t.split("_")[0];
+    (by[r]=by[r]||[]).push(t.replace(/^(NATURAL|MAN_MADE|POLITY)_/,"").replace(/_/g," ").toLowerCase())});
+  return Object.keys(by).map(function(r){
+    return (ROOTNAME[r]||r.toLowerCase())+" — "+by[r].join(", ")}).join(" · ");
+ };
  var rows="";
- rows+='<div><b>Kind</b> · '+(e.types||[]).map(pretty).join("; ")+'</div>';
+ rows+='<div><b>Kind</b> · '+kinds(e.types)+'</div>';
  // A PARENT IS A REALM OR A PLACE. Caradhras is in the Misty Mountains, which is no
  // polity -- so a link to realms.html would land nowhere. The build ships the realm ids
  // rather than have the page guess from the string.

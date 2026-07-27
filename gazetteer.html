@@ -82,8 +82,17 @@ fetch("arda_gazetteer.json").then(r=>r.json()).then(d=>{
  const root=t=>t.startsWith("NATURAL_")?"NATURAL":t.startsWith("MAN_MADE_")?"MAN_MADE":
    t.startsWith("POLITY_")?"POLITY":"OTHER";
  const cls=t=>({NATURAL:"nat",MAN_MADE:"made",POLITY:"pol"})[root(t)]||"";
- const pretty=t=>t.replace("NATURAL_","natural · ").replace("MAN_MADE_","made · ")
-   .replace("POLITY_","polity · ").replace(/_/g," ").toLowerCase();
+ // THE ROOT IS SAID ONCE. Each type printed its own root, so Tol Sirion read
+ // "made · tower · natural · pass · made · fortress" -- the word "made" twice, and the
+ // reader left to work out which leaf belonged to which. Grouped, it reads
+ // "made — tower, fortress · natural — pass", which is what the taxonomy actually says.
+ const ROOTNAME={NATURAL:"natural",MAN_MADE:"made",POLITY:"polity"};
+ const kinds=ts=>{
+  const by={};
+  (ts||[]).forEach(t=>{const r=root(t);
+    (by[r]=by[r]||[]).push(t.replace(/^(NATURAL|MAN_MADE|POLITY)_/,"").replace(/_/g," ").toLowerCase())});
+  return Object.keys(by).map(r=>(ROOTNAME[r]||r.toLowerCase())+" — "+by[r].join(", ")).join(" · ");
+ };
  // "changed" means the record carries an event that ENDED or REMADE the place -- not merely
  // that something happened near it. The statuses are the gazetteer's own.
  const CHANGED=["destroyed","drowned","abandoned","ruined","rebuilt","renamed","sacked","burned"];
@@ -121,7 +130,7 @@ fetch("arda_gazetteer.json").then(r=>r.json()).then(d=>{
     if(e.place_conf)cf.push("placed "+e.place_conf);
     out.push('<div class="pl '+c+'"><h3><a href="place.html#'+k.replace(/ /g,"_")+'">'+e.n+'</a>'+
       '<span class="n">'+(e.ages||[]).join(", ")+'</span></h3>'+
-      '<div class="kind">'+(e.types||[]).map(pretty).join(" · ")+
+      '<div class="kind">'+kinds(e.types)+
       (cf.length?' <span class="n">'+cf.join(" · ")+'</span>':'')+'</div>'+
       (tl?'<div class="tl">'+tl+'</div>':'')+'</div>');
    });
