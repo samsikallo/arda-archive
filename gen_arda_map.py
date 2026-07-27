@@ -66,24 +66,41 @@ OUT = []
 def add(s): OUT.append(s)
 
 # ------------------------------------------------------------- glyph makers
-def mountains(pts, size=7.0, seed=1, ink="#4a4237", op=1.0):
+def mountains(pts, size=7.0, seed=1, ink="#4a4237", op=1.0, rows=1):
     r = rng(seed); g = []
-    for i, (x, y) in enumerate(resample(pts, size*1.25)):
-        j = (next(r)-0.5) * size * 0.8
-        px, py = P(x, y); px += j*S*0.3
-        s = size*S*(0.75 + next(r)*0.5)
-        g.append('<path d="M%.1f %.1f L%.1f %.1f L%.1f %.1f" />' %
-                 (px-s*0.5, py, px, py-s*0.85, px+s*0.5, py))
-        if next(r) > 0.55:
-            g.append('<path d="M%.1f %.1f L%.1f %.1f" opacity="0.55"/>' %
-                     (px, py-s*0.85, px+s*0.18, py-s*0.35))
-    add('<g fill="none" stroke="%s" stroke-width="1.6" stroke-linejoin="round" opacity="%s">%s</g>'
+    base = resample(pts, size*0.72)
+    chains = []
+    for k in range(1, rows):
+        row = []
+        for i in range(len(base)-1):
+            x = (base[i][0]+base[i+1][0])/2.0; y = (base[i][1]+base[i+1][1])/2.0
+            a = base[max(0,i-1)]; b = base[min(len(base)-1,i+2)]
+            dx,dy = b[0]-a[0], b[1]-a[1]; L = math.hypot(dx,dy) or 1
+            row.append((x - dy/L*size*0.55*k, y + dx/L*size*0.55*k))
+        chains.append(row)
+    chains.append(base)
+    for chain in chains:
+        for (x,y) in chain:
+            px,py = P(x,y); px += (next(r)-0.5)*size*S*0.25
+            sca = size*S*(0.65+next(r)*0.7); w = sca*(0.6+next(r)*0.3)
+            apex = px+(next(r)-0.5)*3
+            g.append('<path d="M%.1f %.1f L%.1f %.1f L%.1f %.1f L%.1f %.1f L%.1f %.1f Z"/>' %
+                     (px-w,py, px-w*0.35,py-sca*0.55, apex,py-sca,
+                      px+w*0.3,py-sca*0.5, px+w,py))
+            g.append('<path d="M%.1f %.1f L%.1f %.1f M%.1f %.1f L%.1f %.1f" fill="none" opacity="0.45" stroke-width="0.9"/>' %
+                     (apex,py-sca, px+w*0.55,py-sca*0.18, apex+w*0.18,py-sca*0.62, px+w*0.72,py-sca*0.1))
+    add('<g fill="#efe5cb" stroke="%s" stroke-width="1.4" stroke-linejoin="round" opacity="%s">%s</g>'
         % (ink, op, "".join(g)))
 
 def peak(x, y, size=10.0, ink="#4a4237", op=1.0, snow=False):
     px, py = P(x, y); s = size*S
-    add('<path d="M%.1f %.1f L%.1f %.1f L%.1f %.1f" fill="%s" stroke="%s" stroke-width="2" opacity="%s"/>'
-        % (px-s*0.55, py, px, py-s, px+s*0.55, py, "#efe6d2" if snow else "none", ink, op))
+    add('<path d="M%.1f %.1f L%.1f %.1f L%.1f %.1f L%.1f %.1f L%.1f %.1f Z" fill="#efe5cb" stroke="%s" stroke-width="1.8" opacity="%s"/>'
+        % (px-s*0.6, py, px-s*0.22, py-s*0.55, px, py-s, px+s*0.2, py-s*0.5, px+s*0.6, py, ink, op))
+    add('<path d="M%.1f %.1f L%.1f %.1f" stroke="%s" stroke-width="1" opacity="%s" fill="none"/>'
+        % (px, py-s, px+s*0.32, py-s*0.2, ink, 0.5*op))
+    if snow:
+        add('<path d="M%.1f %.1f L%.1f %.1f L%.1f %.1f Z" fill="#f7f2e6" stroke="none" opacity="%s"/>'
+            % (px-s*0.12, py-s*0.68, px, py-s, px+s*0.1, py-s*0.66, op))
 
 def hills(pts_or_poly, size=4.0, seed=3, ink="#5b5245", op=0.9, area=False):
     r = rng(seed); g = []
@@ -105,23 +122,23 @@ def hills(pts_or_poly, size=4.0, seed=3, ink="#5b5245", op=0.9, area=False):
                  (px-s*0.6, py, px, py-s*0.9, px+s*0.6, py))
     add('<g fill="none" stroke="%s" stroke-width="1.3" opacity="%s">%s</g>' % (ink, op, "".join(g)))
 
-def forest(poly, seed=5, fill="#b9c39a", tuft="#5f7247", op=0.85, dens=11.0):
+def forest(poly, seed=5, fill="#b9c39a", tuft="#5f7247", op=0.9, dens=11.0):
     add('<path d="%s" fill="%s" fill-opacity="0.5" stroke="%s" stroke-opacity="0.45" stroke-width="1.5" opacity="%s"/>'
         % (pathd(poly, close=True), fill, tuft, op))
     r = rng(seed); g = []
     xs = [p[0] for p in poly]; ys = [p[1] for p in poly]
-    y = min(ys)
+    step = dens*0.85; y = min(ys)
     while y <= max(ys):
-        x = min(xs) + next(r)*dens
+        x = min(xs) + next(r)*step
         while x <= max(xs):
             if inpoly((x, y), poly):
                 px, py = P(x+(next(r)-0.5)*4, y+(next(r)-0.5)*4)
-                s = 2.2*S*(0.7+next(r)*0.6)
+                sc = 2.2*S*(0.7+next(r)*0.6)
                 g.append('<circle cx="%.1f" cy="%.1f" r="%.1f"/><path d="M%.1f %.1f L%.1f %.1f" stroke-width="1.2"/>'
-                         % (px, py-s*0.5, s*0.62, px, py-s*0.1, px, py+s*0.55))
-            x += dens
-        y += dens
-    add('<g fill="%s" fill-opacity="0.55" stroke="%s" stroke-opacity="0.7" opacity="%s">%s</g>'
+                         % (px, py-sc*0.5, sc*0.62, px, py-sc*0.1, px, py+sc*0.55))
+            x += step
+        y += step
+    add('<g fill="%s" fill-opacity="0.5" stroke="%s" stroke-opacity="0.65" opacity="%s">%s</g>'
         % (tuft, tuft, op, "".join(g)))
 
 def marsh(poly, seed=7, ink="#6a7f83", op=0.9):
@@ -141,7 +158,7 @@ def marsh(poly, seed=7, ink="#6a7f83", op=0.9):
 
 def river(pts, w=2.0, ink="#39586b", op=1.0):
     add('<path d="%s" fill="none" stroke="%s" stroke-width="%.1f" stroke-linecap="round" opacity="%s"/>'
-        % (pathd(pts), ink, w, op))
+        % (pathd(pts), ink, w*1.2, op))
 
 def lake(poly, ink="#39586b", fill="#a9c2c8"):
     add('<path d="%s" fill="%s" fill-opacity="0.8" stroke="%s" stroke-width="1.6"/>'
@@ -223,7 +240,7 @@ MTS_TA = [
 ERED_LUIN = [fa(p) for p in [(878,126),(887,296),(898,438),(911,580),(924,694),(931,807)]] + [(122,812)]
 
 PEAKS_TA = [ (507,807,"Gundabad",1),(502,583,"Caradhras",1),(500,578,"Celebdil",0),
- (505,577,"Fanuidhol",0),(472,400,"Methedras",1),(740,272,"Mindolluin",1),
+ (505,577,"Fanuidhol",0),(530,707,"the Carrock",0),(472,400,"Methedras",1),(740,272,"Mindolluin",1),
  (747,767,"EREBOR the Lonely Mountain",1),(488,326,"Thrihyrne",0),(605,325,"Halifirien",1),
  (536,336,"Starkhorn",0),(600,556,"",0),(705,120,"Tolfalas",1) ]
 
@@ -372,25 +389,25 @@ SETTLE_TA = [
 ]
 
 REGIONS_TA = [
- ("ERIADOR",350,628,34,6),("RHOVANION",800,660,26,6),("ROHAN",560,400,30,6),
+ ("ERIADOR",350,628,34,6),("ROHAN",560,400,30,6),
  ("GONDOR",660,250,30,6),("MORDOR",840,290,32,7),("RHUN",900,625,26,6),
  ("KHAND",930,140,22,5),("NEAR HARAD",850,60,22,5),("MINHIRIATH",255,555,18,4),
  ("ENEDWAITH",330,430,18,4),("DUNLAND",432,470,16,3),("DRUWAITH IAUR",430,252,14,3),
  ("FORODWAITH",400,955,22,6),("THE WOLD",560,490,13,2),("ANORIEN",690,302,13,2),
  ("WESTFOLD",500,345,12,2),("EASTFOLD",570,345,12,2),("LINDON",75,648,18,4),
  ("FORLINDON",70,706,12,2),("HARLINDON",80,615,12,2),("THE SHIRE",205,672,15,3),
- ("BUCKLAND",251,652,9,1),("WILDERLAND",630,822,20,5),("EASTEMNET",575,430,12,2),
+ ("BUCKLAND",251,652,9,1),("EASTEMNET",575,430,12,2),
  ("WESTEMNET",540,412,12,2),("GORGOROTH",800,328,13,2),("LITHLAD",880,332,13,2),
  ("NURN",860,205,13,2),("ITHILIEN",763,282,12,2),("LEBENNIN",668,228,13,2),
  ("BELFALAS",612,200,13,2),("LAMEDON",562,290,12,2),("ANFALAS",520,222,13,2),
- ("EOTHEOD",540,838,13,2),("THE ANGLE",398,634,11,1),("HOLLIN",472,600,12,2),
+ ("EOTHEOD",540,838,13,2),("THE ANGLE",398,634,11,1),("EREGION (HOLLIN)",468,600,11,2),
  ("DAGORLAD",733,372,13,2),("the Brown Lands",588,508,12,1),
  ("NOMAN-LANDS",725,395,11,1),("Desolation of Smaug",760,782,11,1),
  ("WITHERED HEATH",808,851,10,1),("DORWINION?",935,568,11,1),
  ("SOUTH GONDOR",760,190,12,2),("Wold of Rohan",548,492,10,1),
 ]
-GHOSTS_TA = [("ARNOR",300,762,26,7),("ARTHEDAIN",280,722,15,3),("CARDOLAN",305,600,15,3),
- ("RHUDAUR",420,690,15,3),("ANGMAR",470,812,16,3),("CALENARDHON",560,388,12,3)]
+GHOSTS_TA = [("ARNOR",300,758,24,7),("The Lost Realm of",300,774,12,2),("ARTHEDAIN",280,722,15,3),("CARDOLAN",305,600,15,3),
+ ("RHUDAUR",420,690,15,3),("ANGMAR",468,812,15,3),("Here was of old the",468,800,8.5,0),("Witch-realm of Angmar",468,791,8.5,0),("CALENARDHON",560,388,12,3)]
 SEAS = [("BELEGAER",-420,520,40,10),("THE GREAT SEA",-410,470,20,6),
  ("Bay of Belfalas",620,120,16,3),("Gulf of Lhun",18,662,12,2),
  ("Icebay of Forochel",240,962,13,2),("Bay of Balar",-105,415,12,2),
@@ -497,7 +514,7 @@ REGIONS_FA = [
  ("THE FALAS",257,367,12,2),("ARVERNIEN",488,182,10,1),
  ("DOR FIRN-I-GUINAR",855,228,9,1),("BELERIAND",470,340,30,8),
  ("DORIATH",594,552,16,4),("ARD-GALEN",568,830,11,2),("Pass of Aglon",752,684,9,1),
- ("Pass of Sirion",494,668,9,1),("Pass of Anach",548,628,9,1),
+ ("Pass of Sirion",494,668,9,1),("Pass of Anach",580,655,8,1),
  ("Tumladen",535,618,9,1),
 ]
 
@@ -519,7 +536,7 @@ CHAINLABELS = [  # (text, x, y, rot, size) TA frame
  ("ERED MITHRIN · GREY MOUNTAINS",660,862,2,13),
  ("ERED NIMRAIS · THE WHITE MOUNTAINS",598,344,-9,13),
  ("EPHEL DUATH",793,262,-84,12),("ERED LITHUI",852,364,-2,12),
- ("ERED LUIN",104,622,-84,13),("IRON HILLS",940,780,0,12),
+ ("ERED LUIN \u00b7 BLUE MOUNTAINS",104,622,-84,12),("IRON HILLS",940,780,0,12),
  ("Mountains of Mirkwood",665,752,0,9),("EMYN MUIL",600,445,0,10),
  ("Ered Engrin (the Iron Mountains)",-90,965,2,12),
 ]
@@ -564,29 +581,35 @@ OFFS = {
 def main():
     add('<?xml version="1.0" encoding="UTF-8"?>')
     add('<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d">' % (W,H,W,H))
-    add('<style>text{font-family:Georgia,"Times New Roman",serif;fill:#2b2721}'
-        '.reg{fill:#6b5d49;font-weight:bold}.ghost{fill:#968b78}.sea{fill:#54707e;font-style:italic}'
-        '.riv{fill:#39586b;font-style:italic}.note{fill:#6b5d49;font-style:italic}'
-        '.fa{fill:#40382d}.pk{fill:#4a4237;font-style:italic}.ttl{fill:#33291c}</style>')
+    add('<style>text{font-family:"Liberation Serif",Georgia,serif;fill:#2b2721}'
+        '.reg{fill:#6b5d49;font-weight:bold;font-style:italic}.ghost{fill:#968b78;font-style:italic}'
+        '.sea{fill:#54707e;font-style:italic}.riv{fill:#39586b;font-style:italic}'
+        '.note{fill:#6b5d49;font-style:italic}.fa{fill:#40382d}'
+        '.pk{fill:#4a4237;font-style:italic}.ttl{fill:#33291c}'
+        '.red{fill:#8f3b2a;font-style:italic}'
+        '.redh{fill:none;stroke:#f2ead2;stroke-width:3;font-style:italic}</style>')
     # sea + lands
     add('<rect width="%d" height="%d" fill="#c3d2ca"/>' % (W,H))
     add('<path d="%s" fill="#ece2c8" stroke="none"/>' % pathd(AMAN_LAND, close=True, smooth=True))
     add('<path d="%s" fill="#efe5cb" stroke="none"/>' % pathd(LAND, close=True, smooth=True))
+    add('<path d="%s" fill="#8a7a5e" fill-opacity="0.18" stroke="none"/>' % pathd(
+        [(772,352),(800,357),(840,355),(880,352),(930,348),(910,180),(795,180),
+         (786,235),(782,270),(780,300),(778,330)], close=True))
 
     # ---------- FIRST AGE terrain (drawn first; wash will tint it) ----------
     for poly,name,dens in FORESTS_FA: forest([fa(p) for p in poly], seed=hash(name)&0xffff, dens=dens)
-    forest([fa(p) for p in DORTHONION], seed=77, dens=17, fill="#adb894")
+    forest([fa(p) for p in DORTHONION], seed=77, dens=15, fill="#a8b491")
     for poly,name in MARSHES_FA: marsh([fa(p) for p in poly], seed=11)
     for name,poly in LAKES_FA: lake([fa(p) for p in poly])
     for name,pts,w in RIVERS_FA: river([fa(p) for p in pts], w)
-    for name,pts,sz in MTS_FA: mountains([fa(p) for p in pts], sz, seed=hash(name)&0xffff)
+    for name,pts,sz in MTS_FA: mountains([fa(p) for p in pts], sz, seed=hash(name)&0xffff, rows=2 if name in ('Ered Wethrin','Ered Lomin') else 1)
     for x,y,nm in PEAKS_FA: peak(*fa((x,y)), size=9 if nm.isupper() else 7)
     for pts in ROADS_FA: road([fa(p) for p in pts], op=0.8)
     # Ered Luin as one chain, broken at the Gulf breach
-    mountains(ERED_LUIN[:4], 7.0, seed=101); mountains(ERED_LUIN[4:], 7.0, seed=102)
+    mountains(ERED_LUIN[:4], 7.0, seed=101, rows=2); mountains(ERED_LUIN[4:], 7.0, seed=102, rows=2)
     # far-north: Angband by the count of leagues
-    mountains([(-250,952),(-150,958),(-54,955),(40,958),(120,952)], 6.0, seed=103, op=0.55)
-    peak(-54,941,13,op=0.8); peak(-63,938,10,op=0.8); peak(-45,938,10,op=0.8)
+    mountains([(-250,952),(-150,958),(-54,955),(40,958),(120,952)], 7.0, seed=103, op=0.6, rows=2)
+    peak(-54,943,14,op=0.8); peak(-66,939,10,op=0.8); peak(-42,939,10,op=0.8)
     label(-54,948,"ANGBAND",12,"fa","middle",0,-14,op=0.85)
     label(-54,929,"THANGORODRIM",11,"fa","middle",0,0,op=0.85)
     label(-54,914,"(set down by the count of leagues: 150 leagues north of Menegroth)",8.5,"note","middle")
@@ -596,8 +619,12 @@ def main():
     for poly,name in MARSHES_TA: marsh(poly, seed=hash(name)&0xffff)
     for name,poly in LAKES_TA: lake(poly)
     for name,pts,w in RIVERS_TA: river(pts, w)
-    for name,pts,sz in MTS_TA: mountains(pts, sz, seed=hash(name)&0xffff)
+    for name,pts,sz in MTS_TA: mountains(pts, sz, seed=hash(name)&0xffff, rows=2 if name in ('Misty Mountains','White Mountains','Ephel Duath','Ered Lithui','Grey Mountains','Iron Hills') else 1)
     for poly,name in HILLFIELDS: hills(poly, seed=hash(name)&0xffff, area=True)
+    for poly,name in HILLFIELDS:
+        if name != "EMYN MUIL":
+            hx = sum(p[0] for p in poly)/len(poly); hy = sum(p[1] for p in poly)/len(poly)
+            label(hx,hy,name,8.5,"note","middle",0,-9)
     for x,y,nm,big in PEAKS_TA: peak(x,y,size=10 if big else 7,snow=(nm in("Caradhras","Mindolluin","Thrihyrne")))
     peak(815,300,11)  # Orodruin
     add('<path d="%s" fill="none" stroke="#4a4237" stroke-width="1.4" opacity="0.7"/>' %
@@ -606,8 +633,7 @@ def main():
 
     # ---------- the drowned wash (subtle, translucent) ----------
     add('<path d="%s" fill="#5e8d9c" fill-opacity="0.15" stroke="none"/>' % pathd(WASH, close=True))
-    add('<path d="%s" fill="none" stroke="#4e7482" stroke-width="1.2" stroke-dasharray="3 4" opacity="0.55"/>'
-        % pathd(WASH, close=True))
+    add('<path d="%s" fill="none" stroke="#4e7482" stroke-width="1.1" stroke-dasharray="3 4" opacity="0.5"/>' % pathd(WASH, close=True))
     # destruction contour near the Blue Mountains (spec section 4)
     add('<path d="%s" fill="none" stroke="#9c6b3f" stroke-width="1.6" stroke-dasharray="8 6" opacity="0.5"/>'
         % pathd([(95,745),(92,700),(88,655),(85,610),(95,570),(105,535)]))
@@ -623,9 +649,12 @@ def main():
     def centroid(poly):
         return (sum(p[0] for p in poly)/len(poly), sum(p[1] for p in poly)/len(poly))
     for poly,name,dens in FORESTS_TA:
-        if name:
+        if name and name != "MIRKWOOD":
             cx0,cy0 = centroid(poly)
             label(cx0,cy0,name,13 if name.isupper() else 10.5,"reg","middle",0,0,0,3,op=0.9)
+    label(640,700,"MIRKWOOD",17,"reg","middle",0,0,rot=-72,spacing=6,op=0.95)
+    label(662,672,"RHOVANION",30,"reg","middle",0,0,rot=-72,spacing=12)
+    label(693,645,"[WILDERLAND]",13,"ghost","middle",0,0,rot=-72,spacing=3)
     for poly,name,dens in FORESTS_FA:
         if name:
             cx0,cy0 = centroid([fa(p) for p in poly])
@@ -650,12 +679,46 @@ def main():
                    ("Andrath",276,650),("Tower Hills",147,672),("Andrast",415,232)]:
         label(x,y,nm,8.5,"note","middle",0,-8)
     for nm,x,y,rot in [("THE EAST ROAD",320,682,-2),("the Greenway",283,620,-75),
-                       ("the North-South Road",372,442,-38),("the Old Forest Road",640,690,-1),
+                       ("the Old South Road",372,442,-38),("the Old Forest Road",640,690,-1),
                        ("the Harad Road",770,120,-85),("the Old East Road",-160,570,8),
                        ("the Dwarf-road",30,565,-18)]:
         label(x,y,nm,8.5,"note","middle",0,0,rot=rot)
     label(985,515,"eastward, by report, lay Cuivienen &#8212;",9.5,"note","end",0,0)
     label(985,502,"two thousand miles from the coast of Beleriand",9.5,"note","end",0,0)
+
+    # ---------- the annals of the Elder Days (red layer) ----------
+    for nm,x,y in [("Fingolfin &amp; Fingon",300,700),("(Turgon)",172,498),("Turgon",563,644),
+      ("Finrod",434,446),("Thingol &amp; Melian",636,540),("Angrod &amp; Aegnor",607,747),
+      ("Maedhros",800,708),("Maglor",828,645),("Celegorm &amp; Curufin",713,612),
+      ("Caranthir",858,625),("Amrod &amp; Amras",700,458),("Cirdan",255,345)]:
+        label(*fa((x,y)),txt=nm,size=10.5,cls="red",anchor="middle",dx=0,dy=0,op=0.95)
+    ex,ey = -462, 352
+    lines = [("Annals of the Elder Days",16)] + [(t,12.5) for t in (
+      "455 \u2014 Dagor Bragollach","472 \u2014 Nirnaeth Arnoediad",
+      "473 \u2014 the Havens of the Falas destroyed","c. 502 \u2014 the Ruin of Doriath",
+      "510 \u2014 the Fall of Gondolin",
+      "thereafter \u2014 the War of Wrath,","and Beleriand was drowned")]
+    yy = ey
+    for t,szl in lines:
+        label(ex,yy,t,szl,"redh","middle",0,0)
+        label(ex,yy,t,szl,"red","middle",0,0)
+        yy -= (7 if szl>13 else 5.5)
+    # fine labels after the reference's density
+    label(548,524,"Field of Celebrant",8.5,"note","middle")
+    label(-65,428,"Isle of Balar",8.5,"sea","middle")
+    label(89,712,"L. Helevorn",7.5,"sea","middle")
+    label(-1,734,"Ladros",8,"note","middle")
+    label(-29,672,"Dor Dinen",8,"note","middle")
+    label(60,724,"the March of Maedhros",8.5,"note","middle",0,0,rot=-12)
+    label(-6,577,"Ramdal",8,"note","middle")
+    label(-95,584,"Gates of Sirion",7.5,"note","middle")
+    label(797,238,"(Mountains of Shadow)",8,"pk","middle",0,0,rot=-84)
+    label(882,364,"(Ash Mountains)",8,"pk","middle")
+    label(852,309,"the Dark Tower",8.5,"pk")
+    label(487,321,"(Helm's Deep)",8,"note","end",-10,0)
+    for nm,x,y in [("Ascar (Rathloriel)",858,446),("Thalos",857,402),("Legolin",855,360),
+      ("Brilthor",851,319),("Duilwen",849,276),("Adurant",866,228)]:
+        label(*fa((x,y)),txt=nm,size=7.5,cls="riv",anchor="middle",dx=0,dy=-4)
 
     # ---------- coasts ----------
     add('<path d="%s" fill="none" stroke="#3a3a33" stroke-width="2.4" stroke-linejoin="round"/>'
@@ -671,9 +734,11 @@ def main():
         px,py=P(x,y); g.append('<path d="M%.1f %.1f l6 -7 M%.1f %.1f l6 7"/>' % (px-3,py+3,px-3,py-3))
     add('<g stroke="#7d98a1" stroke-width="1.4" fill="none" opacity="0.9">%s</g>'%''.join(g))
     # the Straight Road
-    add('<path d="%s" fill="none" stroke="#8a7c5e" stroke-width="1.4" stroke-dasharray="2 6" opacity="0.8"/>'
+    add('<path d="%s" fill="none" stroke="#8a6d2f" stroke-width="1.5" stroke-dasharray="2 6" opacity="0.85"/>'
         % pathd([(53,660),(-180,632),(-380,592),(-548,556)]))
     label(-250,628,"the Straight Road",10,"note","middle",0,-6,rot=-4)
+    spx,spy = P(-548,556)
+    add('<path d="M%.1f %.1f l3 8 l8 3 l-8 3 l-3 8 l-3 -8 l-8 -3 l8 -3 Z" fill="#8a6d2f" opacity="0.9"/>' % (spx,spy-11))
 
     # ---------- Aman schematic content ----------
     mountains(PELORI, 8.0, seed=104, op=0.9)
@@ -751,14 +816,26 @@ def main():
     def tl(dy,t,sz,cls="ttl",sp=0,it=False):
         add('<text x="%.1f" y="%.1f" class="%s" font-size="%s" text-anchor="middle"%s%s>%s</text>' %
             (tx,y0+dy,cls,sz,' letter-spacing="%s"'%sp if sp else '',' font-style="italic"' if it else '',t))
-    tl(56,"A &#183; R &#183; D &#183; A",46,"ttl",10)
-    tl(92,"FROM BELERIAND TO THE THIRD AGE",19,"ttl",4)
-    tl(116,"one continuous world: the drowned West of the Elder Days",13,"note")
-    tl(134,"joined in a single sheet with the surviving lands of Middle-earth",13,"note")
-    tl(166,"The paler sea-wash marks all that the Sea has covered since the War of Wrath;",11.5,"note")
-    tl(182,"beneath it Beleriand is drawn as it was. Dashed coasts are unrecorded.",11.5,"note")
-    tl(198,"Aman, the Lonely Isle and Thangorodrim are set down by report only.",11.5,"note")
-    tl(214,"Compiled solely from the corpus of the histories; nothing here is invented.",11.5,"note")
+    tl(52,"A &#183; R &#183; D &#183; A",44,"ttl",10)
+    tl(82,"AMBARKANTA &#183; THE WESTERN WORLD REMEMBERED",14.5,"ttl",3)
+    tl(104,"from Beleriand of the Elder Days to the lands of the Third Age",13,"note")
+    tl(138,"Herein the loremasters of Imladris have set down the West of Middle-earth",11.5,"note")
+    tl(154,"as it stands at the end of the Third Age; and, beneath the waves, Beleriand",11.5,"note")
+    tl(170,"of the Elder Days &#8212; for the Sea covers it, but the Eldar do not forget.",11.5,"note")
+    tl(186,"Aman and the Lonely Isle are set down by the report of the mariners;",11.5,"note")
+    tl(202,"dashed coasts are unrecorded, and nothing herein is invented.",11.5,"note")
+    tl(220,"Latitudes after the reckoning of the D&#250;nedain &#183; one league = three miles",11,"note")
+    # the Two Trees, silver and gold, flanking the title
+    for tx0,tint,disc in [(x0+46,"#7d8494",0),(x1-46,"#8a6d2f",1)]:
+        add('<g stroke="%s" fill="none" stroke-width="1.6" opacity="0.85">' % tint)
+        add('<path d="M%.1f %.1f C %.1f %.1f %.1f %.1f %.1f %.1f"/>' % (tx0,y0+96, tx0-3,y0+70, tx0+3,y0+48, tx0,y0+34))
+        for dy2,sp in [(44,16),(56,20),(70,22)]:
+            add('<path d="M%.1f %.1f q%.1f %.1f %.1f %.1f"/>' % (tx0,y0+dy2, -sp*0.8,-2, -sp,10))
+            add('<path d="M%.1f %.1f q%.1f %.1f %.1f %.1f"/>' % (tx0,y0+dy2, sp*0.8,-2, sp,10))
+        for ddx,ddy in [(-16,58),(16,58),(-20,74),(20,74),(0,30)]:
+            if disc: add('<circle cx="%.1f" cy="%.1f" r="3.4" fill="%s" stroke="none"/>' % (tx0+ddx,y0+ddy,tint))
+            else: add('<path d="M%.1f %.1f a3.4 3.4 0 1 1 -0.4 -5.4 a2.6 2.6 0 1 0 0.4 5.4Z" fill="%s" stroke="none"/>' % (tx0+ddx,y0+ddy,tint))
+        add('</g>')
     # legend row
     ly = y0+258
     items = [("town","Major","city"),("town","Med","town"),("ruin","Med","ruin"),
@@ -793,9 +870,28 @@ def main():
         '<path d="M%.1f %.1f L%.1f %.1f L%.1f %.1f Z" fill="#f2ead2" stroke-width="1.5"/></g>'
         % (rx,ry,rx,ry, rx-9,ry, rx,ry-56, rx+9,ry, rx-9,ry, rx,ry+34, rx+9,ry))
     add('<text x="%.1f" y="%.1f" class="ttl" font-size="20" text-anchor="middle">N</text>' % (rx,ry-64))
-    # outer frame
+    add('<path d="M%.1f %.1f l2.6 7 l7 2.6 l-7 2.6 l-2.6 7 l-2.6 -7 l-7 -2.6 l7 -2.6 Z" fill="#8a6d2f"/>' % (rx-52,ry-9.6))
+    add('<text x="%.1f" y="%.1f" class="note" font-size="11" text-anchor="middle">N&#250;men</text>' % (rx-52,ry+18))
+    # aged parchment: faint stains + vignette
+    for sx,sy,rx2,ry2 in [(0.18,0.30,180,120),(0.62,0.72,220,140),(0.83,0.20,150,100),(0.40,0.85,170,110)]:
+        add('<ellipse cx="%.1f" cy="%.1f" rx="%d" ry="%d" fill="#8a6d2f" opacity="0.045"/>' % (W*sx,H*sy,rx2,ry2))
+    add('<rect x="45" y="45" width="%d" height="%d" fill="none" stroke="#6b5d49" stroke-width="60" opacity="0.05"/>' % (W-90,H-90))
+    # outer frame + elvish vine border
     add('<rect x="6" y="6" width="%d" height="%d" fill="none" stroke="#4a4237" stroke-width="7"/>' % (W-12,H-12))
     add('<rect x="20" y="20" width="%d" height="%d" fill="none" stroke="#4a4237" stroke-width="1.6"/>' % (W-40,H-40))
+    vine = []
+    stepv = 26
+    xv = 40
+    while xv < W-40-stepv:
+        vine.append('M%.1f %.1f q%.1f %.1f %.1f 0 q%.1f %.1f %.1f 0' % (xv,32, stepv*0.25,-9, stepv*0.5, stepv*0.25,9, stepv*0.5))
+        vine.append('M%.1f %.1f q%.1f %.1f %.1f 0 q%.1f %.1f %.1f 0' % (xv,H-32, stepv*0.25,9, stepv*0.5, stepv*0.25,-9, stepv*0.5))
+        xv += stepv
+    yv = 40
+    while yv < H-40-stepv:
+        vine.append('M%.1f %.1f q%.1f %.1f 0 %.1f q%.1f %.1f 0 %.1f' % (32.0,yv, 9,stepv*0.25, stepv*0.5, -9,stepv*0.25, stepv*0.5))
+        vine.append('M%.1f %.1f q%.1f %.1f 0 %.1f q%.1f %.1f 0 %.1f' % (W-32.0,yv, -9,stepv*0.25, stepv*0.5, 9,stepv*0.25, stepv*0.5))
+        yv += stepv
+    add('<g stroke="#8a6d2f" fill="none" stroke-width="1.3" opacity="0.7"><path d="%s"/></g>' % " ".join(vine))
     add('</svg>')
 
 if __name__ == "__main__":
