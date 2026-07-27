@@ -18,8 +18,8 @@
   "sacked",
   "unrecorded"
  ],
- "n_places": 74,
- "n_steps": 73,
+ "n_places": 77,
+ "n_steps": 79,
  "note": "The slider runs over the moments the archive actually records -- each distinct Age and year at which something in its timelines happened -- so it never moves through invented time. A place with no dated record is never hidden: the archive does not know when it stood, and hiding it would assert an absence no text makes.",
  "places": {
   "amon ereb": [
@@ -38,6 +38,72 @@
     "status": "drowned",
     "what": "Beleriand was drowned; this place stood in that land",
     "year": 587
+   }
+  ],
+  "angband": [
+   {
+    "age": "Y.T.",
+    "cite": "Silm 9, 13 [C]",
+    "rank": 0,
+    "status": "built",
+    "what": "Morgoth returns with the Silmarils; Thangorodrim reared over the re-delved west-fort",
+    "year": 1495
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 13",
+    "rank": 1,
+    "status": "event",
+    "what": "Dagor Aglareb; the Siege of Angband begins",
+    "year": 60
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 13, 18 [C]",
+    "rank": 1,
+    "status": "besieged",
+    "what": "Besieged through the Long Peace (Dagor Aglareb to the Bragollach)",
+    "year": 60
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 13; Grey Annals",
+    "rank": 1,
+    "status": "event",
+    "what": "Glaurung first issues from Angband — driven back by Fingon",
+    "year": 260
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 18",
+    "rank": 1,
+    "status": "destroyed",
+    "what": "Dagor Bragollach; Fingolfin falls before Angband",
+    "year": 455
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 18 [C]",
+    "rank": 1,
+    "status": "destroyed",
+    "what": "The Bragollach beaten off at Eithel Sirion; Fingolfin falls before Angband's gate",
+    "year": 455
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 18–23 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Master of the North: the Bragollach, the Nirnaeth, the fall of every realm",
+    "year": 455
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 24 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "The War of Wrath: Thangorodrim broken, Morgoth thrust through the Door of Night",
+    "year": 583
    }
   ],
   "angle": [
@@ -1012,6 +1078,16 @@
     "year": 587
    }
   ],
+  "high pass": [
+   {
+    "age": "T.A.",
+    "cite": "App A/B; Hobbit 4 [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Orcs multiply; Moria colonized by Azog; the High Pass tolls in blood (Goblin-town's Great Goblin)",
+    "year": 2480
+   }
+  ],
   "himring": [
    {
     "age": "F.A.",
@@ -1134,6 +1210,64 @@
     "status": "event",
     "what": "Variags join the Wainriders' great combination against Gondor",
     "year": 1944
+   }
+  ],
+  "khazaddum": [
+   {
+    "age": "S.A.",
+    "cite": "App A III [C]",
+    "rank": 2,
+    "status": "event",
+    "what": "Refugees of Nogrod and Belegost swell it; 'its wealth and its renown' greatest",
+    "year": 40
+   },
+   {
+    "age": "S.A.",
+    "cite": "App A III [C]",
+    "rank": 2,
+    "status": "event",
+    "what": "Ered Luin broken in the War of Wrath's tumults; many remove to Khazad-dûm",
+    "year": 40
+   },
+   {
+    "age": "S.A.",
+    "cite": "App B; UT [C]",
+    "rank": 2,
+    "status": "founded",
+    "what": "Founded by Noldor drawn to Khazad-dûm's mithril; Ost-in-Edhil built",
+    "year": 750
+   },
+   {
+    "age": "S.A.",
+    "cite": "Silm, Of the Rings; App A [C]",
+    "rank": 2,
+    "status": "event",
+    "what": "The West-gate opened to Eregion; mithril's noon; the gates shut at Eregion's fall",
+    "year": 750
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B",
+    "rank": 3,
+    "status": "abandoned",
+    "what": "The Balrog awakes; Khazad-dûm abandoned; the Witch-king to Mordor",
+    "year": 1980
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A III [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "The Balrog wakes; Durin VI and Náin I slain; the Folk depart",
+    "year": 1980
+   },
+   {
+    "age": "T.A.",
+    "cite": "LotR II.4–5 [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Balin's colony and its end in Mazarbul",
+    "year": 2989
    }
   ],
   "lindon": [
@@ -1797,6 +1931,13 @@
  },
  "steps": [
   {
+   "age": "Y.T.",
+   "era": "the Years of the Trees",
+   "label": "Y.T. 1495",
+   "rank": 0,
+   "year": 1495
+  },
+  {
    "age": "F.A.",
    "era": "the First Age",
    "label": "F.A. 1",
@@ -1820,9 +1961,23 @@
   {
    "age": "F.A.",
    "era": "the First Age",
+   "label": "F.A. 60",
+   "rank": 1,
+   "year": 60
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
    "label": "F.A. 116",
    "rank": 1,
    "year": 116
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 260",
+   "rank": 1,
+   "year": 260
   },
   {
    "age": "F.A.",
@@ -1928,6 +2083,13 @@
    "label": "F.A. 510",
    "rank": 1,
    "year": 510
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 583",
+   "rank": 1,
+   "year": 583
   },
   {
    "age": "F.A.",
@@ -2191,6 +2353,13 @@
   {
    "age": "T.A.",
    "era": "the Third Age",
+   "label": "T.A. 2480",
+   "rank": 3,
+   "year": 2480
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
    "label": "T.A. 2510",
    "rank": 3,
    "year": 2510
@@ -2264,6 +2433,13 @@
    "label": "T.A. 2980",
    "rank": 3,
    "year": 2980
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2989",
+   "rank": 3,
+   "year": 2989
   },
   {
    "age": "T.A.",

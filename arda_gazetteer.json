@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 457,
+ "n": 458,
  "places": {
   "adorn": {
    "ages": [
@@ -638,15 +638,27 @@
    ],
    "cites": [
     "Silm 3/18; CoH intro",
-    "A ch3, ch10, ch14; HoME 5, 11; F Intro"
+    "A ch3, ch10, ch14; HoME 5, 11; F Intro",
+    "The Silmarillion, Of the Return of the Noldor [C]",
+    "placed at the point the archive's own sheet draws [I-M]: the sheet draws it by the spec's count of leagues, 150 leagues north of Menegroth; no place the archive has placed contains it"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": -54,
+     "y": 948
+    }
+   ],
    "n": "Angband",
    "name_conf": "H",
    "notes": [
     "also Thangorodrim",
     "Morgoth's hells beneath the towers of slag; the Gate 150 leagues from Menegroth.",
-    "Evidence Table B2"
+    "Evidence Table B2",
+    "“Then the Elves smote upon the gates of Angband, and the challenge of their trumpets shook the towers of Thangorodrim.” — The Silmarillion, Of the Return of the Noldor [C]",
+    "Morgoth's fortress beneath the towers of Thangorodrim; the archive's sheet sets it down by the count of leagues, 150 leagues north of Menegroth, and not by any border",
+    "set down by measure, not by a border: the sheet draws it by the spec's count of leagues, 150 leagues north of Menegroth; no place the archive has placed contains it"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1038,9 +1050,17 @@
     "The Silmarillion, line 13087",
     "C II.9–III.1; RC[T]",
     "HoME XII, The Peoples of Middle-earth [C]",
-    "LotR II.9; HoME XII"
+    "LotR II.9; HoME XII",
+    "placed at Nen Hithoel [I-H]: the text names the container, not a position within it"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 612,
+     "y": 405
+    }
+   ],
    "n": "Argonath",
    "name_conf": "H",
    "notes": [
@@ -1054,7 +1074,8 @@
     "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
     "the vector spec also lists it as “The Argonath”, at the same place; one record, not two",
     "a merged record also called it natural peak; the kinds are those the corpus states",
-    "drawn within rohan, and that containment is not carried: the pillars were Gondor's border-mark long before Rohan existed; Aragorn names them 'the Argonath, the Pillars of the Kings' (LotR II.9 [C]) and the kings are Gondor's"
+    "drawn within rohan, and that containment is not carried: the pillars were Gondor's border-mark long before Rohan existed; Aragorn names them 'the Argonath, the Pillars of the Kings' (LotR II.9 [C]) and the kings are Gondor's",
+    "NOT ITS OWN POINT: this is the point of Nen Hithoel, which contains it — the pillars stand at that lake's entrance, and this is its point"
    ],
    "parents": [],
    "place_conf": "High",
@@ -6280,15 +6301,30 @@
    "ages": [
     "TA"
    ],
-   "cites": [
-    "LotR I.12"
+   "aka": [
+    "the Ford of Rivendell"
    ],
-   "coords": [],
+   "cites": [
+    "LotR I.12",
+    "LotR I.10, Aragorn at Bree [C]",
+    "placed at Rivendell (Imladris) [I-H]: the text names the container, not a position within it"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 482,
+     "y": 674
+    }
+   ],
    "n": "Ford of Bruinen",
    "name_conf": null,
    "notes": [
     "'By Elbereth and Lúthien the Fair, you shall have neither the Ring nor me!'",
-    "within the Rhudaur boundary as the living map draws it, T.A. 861–c.1409 [I-M]"
+    "within the Rhudaur boundary as the living map draws it, T.A. 861–c.1409 [I-M]",
+    "“the Ford of Bruinen, where the Road crosses the Loudwater that runs out of Rivendell.” — LotR I.10, Aragorn at Bree [C]",
+    "the crossing where the flood took the Nine; the Bruinen is the Loudwater, and it runs out of Rivendell",
+    "NOT ITS OWN POINT: this is the point of Rivendell (Imladris), which contains it — the water it crosses runs out of Rivendell, and this is its point"
    ],
    "parents": [
     "rhudaur",
@@ -6297,7 +6333,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_CROSSING"
+    "NATURAL_FORD"
    ]
   },
   "fords of isen": {
@@ -8033,17 +8069,29 @@
    ],
    "cites": [
     "The Hobbit, line 3435",
-    "Hobbit iv-v; App B"
+    "LotR App A III [C]",
+    "Hobbit iv-v; App B",
+    "placed at Misty Mountains (Hithaeglir) [I-H]: the text names the container, not a position within it"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 501,
+     "y": 583
+    }
+   ],
    "n": "High Pass",
    "name_conf": "High",
    "notes": [
     "“We were crossing by the High Pass that should have brought us to the road that lies to the south of your country, when we were attacked by the evil goblins—as I was about to tell you.” — The Hobbit, line 3435",
     "indexed by Christopher Tolkien as: Pass over the Misty Mountains east of Rivendell",
+    "“The party was assailed by Orcs in a high pass of the Misty Mountains as they went towards Wilderland.” — LotR App A III [C]",
+    "the pass east of Rivendell by which the road to Wilderland climbs, with Goblin-town beneath it; Cirith Forn en Andrath in the Elvish tongue",
     "also Cirith Forn; Goblin-town beneath",
     "Thorin's company taken here; Bilbo found the Ring in the dark below, 2941.",
-    "the vector spec also lists it as “The High Pass”, at the same place; one record, not two"
+    "the vector spec also lists it as “The High Pass”, at the same place; one record, not two",
+    "NOT ITS OWN POINT: this is the point of Misty Mountains (Hithaeglir), which contains it — the text sets it in that range, and this is the range's point"
    ],
    "parents": [
     "beornings"
@@ -8066,7 +8114,6 @@
     }
    ],
    "types": [
-    "NATURAL_MOUNTAIN_RANGE",
     "NATURAL_PASS"
    ]
   },
@@ -9014,14 +9061,26 @@
     "the Black Pit"
    ],
    "cites": [
-    "LotR II.3–6; App A III [I-H] — the archive's synthesis of canon, not a quotation"
+    "LotR II.3–6; App A III [I-H] — the archive's synthesis of canon, not a quotation",
+    "LotR II.6, from the Dimrill Dale [C]",
+    "placed at Caradhras [I-H]: the text names the container, not a position within it"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 502,
+     "y": 583
+    }
+   ],
    "n": "Khazad-dûm",
    "name_conf": "H",
    "notes": [
     "Under Caradhras, Celebdil and Fanuidhol, from the East-gate above Azanulbizar to the Doors of Durin on Sirannon; the Endless Stair from deepest dungeon to Durin's Tower; Kheled-zâram the crown-mirror. — LotR II.3–6; App A III [I-H] — the archive's synthesis of canon, not a quotation",
-    "the realms model dates it Y.T. – T.A. 1981 (as realm); colony 2989–94"
+    "the realms model dates it Y.T. – T.A. 1981 (as realm); colony 2989–94",
+    "“above which three white peaks were shining: Celebdil, Fanuidhol, Caradhras, the Mountains of Moria.” — LotR II.6, from the Dimrill Dale [C]",
+    "the delving beneath the three peaks; the archive draws the mountains and had never placed the halls under them",
+    "NOT ITS OWN POINT: this is the point of Caradhras, which contains it — the Mountains of Moria are named for it, and this is Caradhras' point"
    ],
    "parents": [],
    "place_conf": "H",
@@ -10856,9 +10915,18 @@
    ],
    "cites": [
     "LotR VI.3; App B",
-    "C VI.3; RC"
+    "C VI.3; RC",
+    "LotR VI.4 [C] — the text names the plain and the mountain in one flight; that the one rises from the other is the archive's reading of it [I-H]",
+    "placed at Gorgoroth [I-H]: the text names the container, not a position within it"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 800,
+     "y": 325
+    }
+   ],
    "n": "Mount Doom (Orodruin)",
    "name_conf": "H",
    "notes": [
@@ -10866,7 +10934,10 @@
     "also Orodruin; Amon Amarth",
     "The Ring was forged in its fire, and unmade there, March 25, 3019.",
     "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]",
-    "Evidence Table G23"
+    "Evidence Table G23",
+    "“And they passed over Udun and Gorgoroth and saw all the land in ruin and tumult beneath them, and before them Mount Doom blazing.” — LotR VI.4 [C] — the text names the plain and the mountain in one flight; that the one rises from the other is the archive's reading of it [I-H]",
+    "Orodruin, the Fire-mountain of the plain of Gorgoroth; renamed Amon Amarth, Mount Doom, when the Numenoreans saw its smoke and knew Sauron had returned",
+    "NOT ITS OWN POINT: this is the point of Gorgoroth, which contains it — the mountain rises from that plain, and this is the plain's point"
    ],
    "parents": [
     "mordor"
@@ -10874,7 +10945,6 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_MOUNTAIN_RANGE",
     "NATURAL_PEAK"
    ]
   },
@@ -13743,14 +13813,23 @@
     "the Bridge of Moria"
    ],
    "cites": [
-    "LotR II.5, the Bridge of Khazad-dûm [C]"
+    "LotR II.5, the Bridge of Khazad-dûm [C]",
+    "placed at Khazad-dûm [I-H]: the text names the container, not a position within it"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 502,
+     "y": 583
+    }
+   ],
    "n": "The Bridge of Khazad Dum",
    "name_conf": "H",
    "notes": [
     "“Then Gandalf lifted his staff, and crying aloud he smote the bridge before him.” — LotR II.5, the Bridge of Khazad-dûm [C]",
-    "the span over the chasm before the East-gate of Moria, where Gandalf fell. THE ARCHIVE CANNOT PLACE IT: it lies within Khazad-dûm, and Khazad-dûm has no coordinate of its own either — the attached documents do not provide enough information to answer this"
+    "the span over the chasm before the East-gate of Moria, where Gandalf fell",
+    "NOT ITS OWN POINT: this is the point of Khazad-dûm, which contains it — the bridge is within the delving, and this is Khazad-dûm's point"
    ],
    "parents": [],
    "place_conf": null,
@@ -15362,6 +15441,39 @@
    "types": [
     "POLITY_SUBREGION"
    ]
+  },
+  "west gate of moria": {
+   "ages": [],
+   "aka": [
+    "the Doors of Durin",
+    "the West-gate"
+   ],
+   "cites": [
+    "LotR II.4, the ithildin inscription on the West-gate [C]",
+    "placed at Khazad-dûm [I-H]: the text names the container, not a position within it"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 502,
+     "y": 583
+    }
+   ],
+   "n": "West Gate of Moria",
+   "name_conf": "H",
+   "notes": [
+    "“The Doors of Durin, Lord of Moria. Speak, friend, and enter.” — LotR II.4, the ithildin inscription on the West-gate [C]",
+    "the Doors of Durin at the western foot of the mountains, opening from the Sirannon into Khazad-dûm",
+    "NOT ITS OWN POINT: this is the point of Khazad-dûm, which contains it — the doors open into it, and this is Khazad-dûm's point"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "MAN_MADE_GATE"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "westemnet": {
    "ages": [

@@ -109,8 +109,8 @@
   {
    "colour": "#c9a227",
    "id": "fellowship",
-   "n_drawn": 11,
-   "n_placed": 12,
+   "n_drawn": 15,
+   "n_placed": 15,
    "n_stages": 16,
    "name": "The Ring goes south (Sept 23 – Feb 26)",
    "segments": [
@@ -150,9 +150,13 @@
       1540.0,
       "weathertop",
       "Weathertop: the Morgul-knife (Oct 6)"
-     ]
-    ],
-    [
+     ],
+     [
+      4160.0,
+      1555.0,
+      "ford of bruinen",
+      "The Ford of Bruinen (Oct 20)"
+     ],
      [
       4160.0,
       1555.0,
@@ -170,6 +174,12 @@
       2010.0,
       "caradhras",
       "Repulsed by the Redhorn (Jan 12)"
+     ],
+     [
+      4260.0,
+      2010.0,
+      "west gate of moria",
+      "The West-gate of Moria (Jan 13)"
      ]
     ],
     [
@@ -184,6 +194,18 @@
       2875.0,
       "anduin",
       "Down Anduin — the Undeeps (Feb 18-23)"
+     ],
+     [
+      4810.0,
+      2900.0,
+      "argonath",
+      "The Argonath (Feb 25)"
+     ],
+     [
+      4810.0,
+      2900.0,
+      "parth galen",
+      "Parth Galen: the Breaking (Feb 26)"
      ]
     ]
    ],
@@ -244,12 +266,12 @@
     },
     {
      "day": 29,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "ford of bruinen",
      "label": "The Ford of Bruinen (Oct 20)",
      "note": null,
-     "x": null,
-     "y": null
+     "x": 482,
+     "y": 674
     },
     {
      "day": 95,
@@ -280,12 +302,12 @@
     },
     {
      "day": 114,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "west gate of moria",
      "label": "The West-gate of Moria (Jan 13)",
      "note": "'Speak, friend, and enter.'",
-     "x": null,
-     "y": null
+     "x": 502,
+     "y": 583
     },
     {
      "day": 116,
@@ -316,12 +338,12 @@
     },
     {
      "day": 157,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "argonath",
      "label": "The Argonath (Feb 25)",
      "note": null,
-     "x": null,
-     "y": null
+     "x": 612,
+     "y": 405
     },
     {
      "day": 158,
@@ -337,8 +359,8 @@
   {
    "colour": "#eda100",
    "id": "frodo",
-   "n_drawn": 9,
-   "n_placed": 9,
+   "n_drawn": 10,
+   "n_placed": 10,
    "n_stages": 10,
    "name": "Frodo & Sam to the Fire (Feb 26 – Mar 25)",
    "segments": [
@@ -396,6 +418,12 @@
       3300.0,
       "gorgoroth",
       "The plains of Gorgoroth (Mar 15-23)"
+     ],
+     [
+      5750.0,
+      3300.0,
+      "mount doom",
+      "Mount Doom: the Ring unmade (Mar 25)"
      ]
     ]
    ],
@@ -483,12 +511,12 @@
     },
     {
      "day": 184,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "mount doom",
      "label": "Mount Doom: the Ring unmade (Mar 25)",
      "note": "'Well, this is the end, Sam Gamgee.'",
-     "x": null,
-     "y": null
+     "x": 800,
+     "y": 325
     }
    ]
   },
@@ -911,8 +939,8 @@
   {
    "colour": "#eb6834",
    "id": "hobbit",
-   "n_drawn": 9,
-   "n_placed": 9,
+   "n_drawn": 10,
+   "n_placed": 10,
    "n_stages": 11,
    "name": "There and Back Again (2941, by month)",
    "segments": [
@@ -940,9 +968,13 @@
       1555.0,
       "rivendell",
       "Rivendell (mid-June)"
-     ]
-    ],
-    [
+     ],
+     [
+      4255.0,
+      2010.0,
+      "high pass",
+      "The High Pass: Goblin-town — the Ring found (July)"
+     ],
      [
       4400.0,
       1390.0,
@@ -1014,12 +1046,12 @@
     },
     {
      "day": 60,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "high pass",
      "label": "The High Pass: Goblin-town — the Ring found (July)",
      "note": "'What has it got in its pocketses?'",
-     "x": null,
-     "y": null
+     "x": 501,
+     "y": 583
     },
     {
      "day": 70,
@@ -1244,8 +1276,8 @@
   {
    "colour": "#e0b0ff",
    "id": "beren",
-   "n_drawn": 5,
-   "n_placed": 6,
+   "n_drawn": 6,
+   "n_placed": 7,
    "n_stages": 8,
    "name": "Beren's road — the Quest of the Silmaril (F.A. c.464-66)",
    "segments": [
@@ -1279,6 +1311,12 @@
       1407.5,
       "tol sirion",
       "Tol-in-Gaurhoth: the duel of songs; Finrod dies for him in the pits"
+     ],
+     [
+      1480.0,
+      185.0,
+      "angband",
+      "Angband: Lúthien's spell before the throne; the knife Angrist cuts one Silmaril"
      ]
     ]
    ],
@@ -1330,12 +1368,12 @@
     },
     {
      "day": 5,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "angband",
      "label": "Angband: Lúthien's spell before the throne; the knife Angrist cuts one Silmaril",
      "note": "'the fire of the Silmaril was in his hand'",
-     "x": null,
-     "y": null
+     "x": -54,
+     "y": 948
     },
     {
      "day": 6,
@@ -1504,7 +1542,7 @@
   }
  ],
  "n_journeys": 10,
- "n_placed": 78,
+ "n_placed": 84,
  "n_stages": 88,
  "note": "Each stage is placed by the place its own label names, never by transforming the living map's coordinates onto this sheet: an affine over the 29 places the two sheets share leaves a mean residual of 44 miles. A stage the archive cannot place is recorded and NOT DRAWN, and the course is broken where it cannot be followed, because a road drawn through half its stages is a different road."
 }
