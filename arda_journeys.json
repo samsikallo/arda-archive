@@ -66,6 +66,14 @@
   },
   {
    "frame": "TA",
+   "id": "hornburg",
+   "key": "helm s deep",
+   "name": "The Hornburg (3019)",
+   "x": 4185.0,
+   "y": 3275.0
+  },
+  {
+   "frame": "TA",
    "id": "pelennor",
    "key": "the pelennor",
    "name": "The Pelennor (3019)",
@@ -101,8 +109,8 @@
   {
    "colour": "#c9a227",
    "id": "fellowship",
-   "n_drawn": 9,
-   "n_placed": 11,
+   "n_drawn": 11,
+   "n_placed": 12,
    "n_stages": 16,
    "name": "The Ring goes south (Sept 23 – Feb 26)",
    "segments": [
@@ -162,6 +170,20 @@
       2010.0,
       "caradhras",
       "Repulsed by the Redhorn (Jan 12)"
+     ]
+    ],
+    [
+     [
+      4445.0,
+      2205.0,
+      "lorien",
+      "Lothlórien (Jan 17 – Feb 16)"
+     ],
+     [
+      4750.0,
+      2875.0,
+      "anduin",
+      "Down Anduin — the Undeeps (Feb 18-23)"
      ]
     ]
    ],
@@ -276,12 +298,12 @@
     },
     {
      "day": 148,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "lorien",
      "label": "Lothlórien (Jan 17 – Feb 16)",
      "note": "'No blemish or sickness or deformity could be seen... he saw no shadow.'",
-     "x": null,
-     "y": null
+     "x": 539,
+     "y": 544
     },
     {
      "day": 153,
@@ -315,8 +337,8 @@
   {
    "colour": "#eda100",
    "id": "frodo",
-   "n_drawn": 5,
-   "n_placed": 6,
+   "n_drawn": 9,
+   "n_placed": 9,
    "n_stages": 10,
    "name": "Frodo & Sam to the Fire (Feb 26 – Mar 25)",
    "segments": [
@@ -350,6 +372,30 @@
       3425.0,
       "henneth annun",
       "Henneth Annûn (Mar 7)"
+     ],
+     [
+      5575.0,
+      3585.0,
+      "the crossroads",
+      "The Cross-roads (Mar 9)"
+     ],
+     [
+      5645.0,
+      3610.0,
+      "imlad morgul",
+      "The Morgul Vale (Mar 10)"
+     ],
+     [
+      5665.0,
+      3595.0,
+      "torech ungol",
+      "Shelob's Lair; the Tower (Mar 11-14)"
+     ],
+     [
+      5750.0,
+      3300.0,
+      "gorgoroth",
+      "The plains of Gorgoroth (Mar 15-23)"
      ]
     ]
    ],
@@ -401,30 +447,30 @@
     },
     {
      "day": 170,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "the crossroads",
      "label": "The Cross-roads (Mar 9)",
      "note": "'They cannot conquer for ever!'",
-     "x": null,
-     "y": null
+     "x": 765,
+     "y": 268
     },
     {
      "day": 171,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "imlad morgul",
      "label": "The Morgul Vale (Mar 10)",
      "note": null,
-     "x": null,
-     "y": null
+     "x": 779,
+     "y": 263
     },
     {
      "day": 173,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "torech ungol",
      "label": "Shelob's Lair; the Tower (Mar 11-14)",
      "note": null,
-     "x": null,
-     "y": null
+     "x": 783,
+     "y": 266
     },
     {
      "day": 178,
@@ -449,8 +495,8 @@
   {
    "colour": "#008300",
    "id": "aragorn",
-   "n_drawn": 11,
-   "n_placed": 11,
+   "n_drawn": 12,
+   "n_placed": 12,
    "n_stages": 12,
    "name": "The Three Hunters & the Grey Company (Feb 26 – Mar 15)",
    "segments": [
@@ -478,9 +524,13 @@
       3150.0,
       "edoras",
       "Edoras: Théoden healed (Mar 2)"
-     ]
-    ],
-    [
+     ],
+     [
+      4185.0,
+      3275.0,
+      "helm s deep",
+      "Helm's Deep (Mar 3-4)"
+     ],
      [
       4050.0,
       3000.0,
@@ -494,8 +544,8 @@
       "Dunharrow: the Grey Company (Mar 7-8)"
      ],
      [
-      4430.0,
-      3210.0,
+      4435.0,
+      3235.0,
       "the paths of the dead",
       "The Paths of the Dead (Mar 8)"
      ],
@@ -564,12 +614,12 @@
     },
     {
      "day": 164,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "helm s deep",
      "label": "Helm's Deep (Mar 3-4)",
      "note": "'Arise, arise, Riders of Théoden!'",
-     "x": null,
-     "y": null
+     "x": 487,
+     "y": 330
     },
     {
      "day": 166,
@@ -595,8 +645,8 @@
      "key": "the paths of the dead",
      "label": "The Paths of the Dead (Mar 8)",
      "note": "'The Dead follow us... they are summoned.'",
-     "x": 536,
-     "y": 343
+     "x": 537,
+     "y": 338
     },
     {
      "day": 169.5,
@@ -1310,16 +1360,30 @@
   {
    "colour": "#3a3226",
    "id": "turin",
-   "n_drawn": 4,
-   "n_placed": 6,
+   "n_drawn": 8,
+   "n_placed": 8,
    "n_stages": 9,
    "name": "The wanderings of Túrin Turambar (F.A. 473-99)",
    "segments": [
     [
      [
+      682.5,
+      1632.5,
+      "dorlomin",
+      "Dor-lómin: the Dragon-helm's heir, sent away before the Easterlings came"
+     ],
+     [
+      1490.0,
+      1755.0,
+      "doriath",
+      "Doriath: fostered by Thingol; Saeros' death and the flight from judgment"
+     ]
+    ],
+    [
+     [
       1095.0,
       1855.0,
-      "bar en danwedh",
+      "amon rudh",
       "Amon Rûdh: Bar-en-Danwedh, the Land of Bow and Helm — and Mîm's betrayal"
      ],
      [
@@ -1339,18 +1403,30 @@
       1987.5,
       "nargothrond",
       "Nargothrond: the Black Sword; the bridge that doomed the Doors"
+     ],
+     [
+      682.5,
+      1632.5,
+      "dorlomin",
+      "Back through the Fell Winter to an emptied Dor-lómin"
+     ],
+     [
+      1257.5,
+      1812.5,
+      "brethil",
+      "Brethil: Glaurung slain at Cabed-en-Aras; Níniel; the black blade's answer"
      ]
     ]
    ],
    "stages": [
     {
      "day": 0,
-     "frame": null,
-     "key": null,
+     "frame": "FA",
+     "key": "dorlomin",
      "label": "Dor-lómin: the Dragon-helm's heir, sent away before the Easterlings came",
      "note": null,
-     "x": null,
-     "y": null
+     "x": 271,
+     "y": 601
     },
     {
      "day": 1,
@@ -1373,7 +1449,7 @@
     {
      "day": 3,
      "frame": "FA",
-     "key": "bar en danwedh",
+     "key": "amon rudh",
      "label": "Amon Rûdh: Bar-en-Danwedh, the Land of Bow and Helm — and Mîm's betrayal",
      "note": "'Dor-Cúarthol, the Land of Bow and Helm'",
      "x": 436,
@@ -1408,12 +1484,12 @@
     },
     {
      "day": 7,
-     "frame": null,
-     "key": null,
+     "frame": "FA",
+     "key": "dorlomin",
      "label": "Back through the Fell Winter to an emptied Dor-lómin",
      "note": null,
-     "x": null,
-     "y": null
+     "x": 271,
+     "y": 601
     },
     {
      "day": 8,
@@ -1428,7 +1504,7 @@
   }
  ],
  "n_journeys": 10,
- "n_placed": 71,
+ "n_placed": 78,
  "n_stages": 88,
  "note": "Each stage is placed by the place its own label names, never by transforming the living map's coordinates onto this sheet: an affine over the 29 places the two sheets share leaves a mean residual of 44 miles. A stage the archive cannot place is recorded and NOT DRAWN, and the course is broken where it cannot be followed, because a road drawn through half its stages is a different road."
 }

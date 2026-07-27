@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 458,
+ "n": 457,
  "places": {
   "adorn": {
    "ages": [
@@ -387,15 +387,24 @@
    ],
    "cites": [
     "CoH VII-VIII",
-    "A ch21; F ch VII–VIII"
+    "A ch21; F ch VII–VIII",
+    "placed from the archive's own vector map (SETTLE_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 436,
+     "y": 512
+    }
+   ],
    "n": "Amon Rûdh",
    "name_conf": "H",
    "notes": [
     "also Bar-en-Danwedh",
     "Mîm's bald hill; Túrin's outlaw hold; Beleg's grief.",
-    "Evidence Table B32"
+    "Evidence Table B32",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "nargothrond"
@@ -1380,6 +1389,7 @@
   "bag end": {
    "ages": [],
    "cites": [
+    "LotR I.9 — Gandalf's own direction on the letter [C]",
     "placed at Hobbiton [I-H]: the text names the container, not a position within it"
    ],
    "coords": [
@@ -1393,10 +1403,13 @@
    "n": "Bag End",
    "name_conf": "H",
    "notes": [
+    "“Mr. FRODO BAGGINS, BAG END, HOBBITON in the SHIRE.” — LotR I.9 — Gandalf's own direction on the letter [C]",
+    "the smial under the Hill; 'they lived on the Hill itself, in Number 3 Bagshot Row just below Bag End' (LotR I.1)",
     "NOT ITS OWN POINT: this is the point of Hobbiton, which contains it — the letter addresses it in Hobbiton, and this is Hobbiton's point"
    ],
    "parents": [],
    "place_conf": null,
+   "timeline": [],
    "types": [
     "MAN_MADE_DWELLING"
    ],
@@ -3259,7 +3272,12 @@
   },
   "cirith ninniach": {
    "ages": [],
+   "aka": [
+    "the Rainbow Cleft"
+   ],
    "cites": [
+    "G (Last Version); D Tuor",
+    "The Silmarillion, Of Tuor and the Fall of Gondolin [C]",
     "placed at Nevrast [I-H]: the text names the container, not a position within it"
    ],
    "coords": [
@@ -3273,10 +3291,14 @@
    "n": "Cirith Ninniach",
    "name_conf": "H",
    "notes": [
+    "Evidence Table B9",
+    "“Thence a dark tunnel led beneath the mountains, and issued into Cirith Ninniach, the Rainbow Cleft, through which a turbulent water ran towards the sea.” — The Silmarillion, Of Tuor and the Fall of Gondolin [C]",
+    "the cleft by which Tuor came down out of Dor-lómin to the western sea in Nevrast",
     "NOT ITS OWN POINT: this is the point of Nevrast, which contains it — the cleft issues towards that shore, and this is Nevrast's point"
    ],
    "parents": [],
    "place_conf": null,
+   "timeline": [],
    "types": [
     "NATURAL_PASS"
    ],
@@ -3549,34 +3571,6 @@
     "MAN_MADE_CITY"
    ],
    "unplaced": "a realm in its own right — nothing contains it"
-  },
-  "dark door": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 39 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [
-    {
-     "conf": "M",
-     "frame": "TA",
-     "x": 537,
-     "y": 338
-    }
-   ],
-   "n": "Dark Door",
-   "name_conf": "H",
-   "notes": [
-    "the middle of the shape the archive draws",
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "desolation of smaug": {
    "ages": [
@@ -7957,15 +7951,24 @@
     "Aglarond"
    ],
    "cites": [
-    "App A II; LotR III.7"
+    "App A II; LotR III.7",
+    "placed from the archive's own vector map (SETTLE_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 487,
+     "y": 330
+    }
+   ],
    "n": "Helm's Deep",
    "name_conf": null,
    "notes": [
     "also the Hornburg; Aglarond",
     "Helm's winter-siege 2758-9; the great battle Mar 3-4, 3019; Gimli's Glittering Caves.",
-    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "rohan"
@@ -8480,7 +8483,12 @@
   },
   "imlad morgul": {
    "ages": [],
+   "aka": [
+    "the Morgul Vale",
+    "the Valley of Living Death"
+   ],
    "cites": [
+    "LotR IV.6, Faramir at Henneth Annûn [C]",
     "placed at Minas Morgul [I-H]: the text names the container, not a position within it"
    ],
    "coords": [
@@ -8494,10 +8502,13 @@
    "n": "Imlad Morgul",
    "name_conf": "H",
    "notes": [
+    "“do not drink of any stream that flows from Imlad Morgul, the Valley of Living Death.” — LotR IV.6, Faramir at Henneth Annûn [C]",
+    "the valley of the Morgulduin, in which Minas Morgul stands",
     "NOT ITS OWN POINT: this is the point of Minas Morgul, which contains it — the city stands in this valley, and this is the city's point"
    ],
    "parents": [],
    "place_conf": null,
+   "timeline": [],
    "types": [
     "NATURAL_VALLEY"
    ],
@@ -11875,7 +11886,11 @@
   },
   "orfalch echor": {
    "ages": [],
+   "aka": [
+    "the Seven Gates"
+   ],
    "cites": [
+    "The Silmarillion, Of Tuor and the Fall of Gondolin [C]",
     "placed at Gondolin [I-H]: the text names the container, not a position within it"
    ],
    "coords": [
@@ -11889,10 +11904,13 @@
    "n": "Orfalch Echor",
    "name_conf": "H",
    "notes": [
+    "“Then they were led up the mighty ravine of Orfalch Echor, barred by seven gates.” — The Silmarillion, Of Tuor and the Fall of Gondolin [C]",
+    "the ravine of the Seven Gates, the only road into Gondolin through the Encircling Mountains",
     "NOT ITS OWN POINT: this is the point of Gondolin, which contains it — the ravine is the road into that city, and this is the city's point"
    ],
    "parents": [],
    "place_conf": null,
+   "timeline": [],
    "types": [
     "NATURAL_RAVINE"
    ],
@@ -12037,7 +12055,11 @@
   },
   "parth galen": {
    "ages": [],
+   "aka": [
+    "the Green Sward"
+   ],
    "cites": [
+    "LotR II.10, the Breaking of the Fellowship [C]",
     "placed at Nen Hithoel [I-H]: the text names the container, not a position within it"
    ],
    "coords": [
@@ -12051,10 +12073,13 @@
    "n": "Parth Galen",
    "name_conf": "H",
    "notes": [
+    "“Here upon its western side under the shadow of Tol Brandir a green lawn ran down to the water from the feet of Amon Hen.” — LotR II.10, the Breaking of the Fellowship [C]",
+    "the green sward on the western shore of Nen Hithoel beneath Amon Hen, where the Fellowship broke and Boromir fell",
     "NOT ITS OWN POINT: this is the point of Nen Hithoel, which contains it — the lawn runs down to that water, and this is the lake's point"
    ],
    "parents": [],
    "place_conf": null,
+   "timeline": [],
    "types": [
     "NATURAL_FIELD"
    ],
@@ -13539,24 +13564,15 @@
    "ages": [],
    "cites": [
     "The Silmarillion, line 8271",
-    "A ch14, ch18, ch19; HoME 3",
-    "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
+    "A ch14, ch18, ch19; HoME 3"
    ],
-   "coords": [
-    {
-     "conf": "M",
-     "frame": "FA",
-     "x": 625,
-     "y": 742
-    }
-   ],
+   "coords": [],
    "n": "Taur-nu-Fuin",
    "name_conf": "H",
    "notes": [
     "“By the arts of Felagund their own forms and faces were changed into the likeness of Orcs; and thus disguised they came far upon their northward road, and ventured into the western pass, between Ered Wethrin and the highlands of Taur-nu-Fuin.” — The Silmarillion, line 8271",
     "indexed by Christopher Tolkien as: (also earlier Taur-na-Fuin) ‘The Forest under Night­",
-    "Evidence Table B15",
-    "the middle of the shape the archive draws"
+    "Evidence Table B15"
    ],
    "parents": [],
    "place_conf": "High",
@@ -13723,13 +13739,22 @@
   },
   "the bridge of khazad dum": {
    "ages": [],
-   "cites": [],
+   "aka": [
+    "the Bridge of Moria"
+   ],
+   "cites": [
+    "LotR II.5, the Bridge of Khazad-dûm [C]"
+   ],
    "coords": [],
    "n": "The Bridge of Khazad Dum",
    "name_conf": "H",
-   "notes": [],
+   "notes": [
+    "“Then Gandalf lifted his staff, and crying aloud he smote the bridge before him.” — LotR II.5, the Bridge of Khazad-dûm [C]",
+    "the span over the chasm before the East-gate of Moria, where Gandalf fell. THE ARCHIVE CANNOT PLACE IT: it lies within Khazad-dûm, and Khazad-dûm has no coordinate of its own either — the attached documents do not provide enough information to answer this"
+   ],
    "parents": [],
    "place_conf": null,
+   "timeline": [],
    "types": [
     "MAN_MADE_BRIDGE"
    ],
@@ -13930,24 +13955,32 @@
   },
   "the paths of the dead": {
    "ages": [],
+   "aka": [
+    "the Dark Door",
+    "the Dimholt"
+   ],
    "cites": [
-    "placed at Dunharrow [I-H]: the text names the container, not a position within it"
+    "LotR V.2, the Passing of the Grey Company [C]",
+    "placed from the archive's own vector map (SETTLE_TA) [I-M]; the record existed already and had no coordinate"
    ],
    "coords": [
     {
      "conf": "M",
      "frame": "TA",
-     "x": 536,
-     "y": 343
+     "x": 537,
+     "y": 338
     }
    ],
    "n": "The Paths of the Dead",
    "name_conf": "H",
    "notes": [
-    "NOT ITS OWN POINT: this is the point of Dunharrow, which contains it — the Door is entered above Dunharrow, and this is Dunharrow's point"
+    "“even as they passed between the lines of ancient stones and so came to the Dimholt.” — LotR V.2, the Passing of the Grey Company [C]",
+    "entered by the Dark Door beyond the Dimholt, above Dunharrow under the Haunted Mountain, and issuing far south at Erech",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": null,
+   "timeline": [],
    "types": [
     "NATURAL_PASS"
    ],
@@ -13955,7 +13988,11 @@
   },
   "the pelennor": {
    "ages": [],
+   "aka": [
+    "the Pelennor Fields"
+   ],
    "cites": [
+    "LotR V.1, Minas Tirith [C]",
     "placed at Minas Tirith [I-H]: the text names the container, not a position within it"
    ],
    "coords": [
@@ -13969,10 +14006,13 @@
    "n": "The Pelennor",
    "name_conf": "H",
    "notes": [
+    "“enclosing in its fence the fields of the Pelennor: fair and fertile townlands on the long slopes and terraces falling to the deep levels of the Anduin.” — LotR V.1, Minas Tirith [C]",
+    "the townlands within the Rammas Echor before Minas Tirith, and the field of the great battle of 3019",
     "NOT ITS OWN POINT: this is the point of Minas Tirith, which contains it — the fields lie before that city, and this is the city's point"
    ],
    "parents": [],
    "place_conf": null,
+   "timeline": [],
    "types": [
     "NATURAL_FIELD"
    ],
@@ -14434,7 +14474,11 @@
   },
   "torech ungol": {
    "ages": [],
+   "aka": [
+    "Shelob's Lair"
+   ],
    "cites": [
+    "LotR IV.9 [C]",
     "placed at Cirith Ungol [I-H]: the text names the container, not a position within it"
    ],
    "coords": [
@@ -14448,10 +14492,13 @@
    "n": "Torech Ungol",
    "name_conf": "H",
    "notes": [
+    "“This is the way in,' said Gollum softly. 'This is the entrance to the tunnel.' He did not speak its name: Torech Ungol, Shelob's Lair.” — LotR IV.9 [C]",
+    "the tunnel in the pass above Minas Morgul; the name is not spoken aloud in the text at the moment they enter it",
     "NOT ITS OWN POINT: this is the point of Cirith Ungol, which contains it — the tunnel opens in that pass, and this is the pass's point"
    ],
    "parents": [],
    "place_conf": null,
+   "timeline": [],
    "types": [
     "NATURAL_CAVE"
    ],
@@ -14467,16 +14514,25 @@
    ],
    "cites": [
     "App A/B; Prologue",
-    "C Prologue, App A; A RoP; D; RC[T] (unpub. Index)"
+    "C Prologue, App A; A RoP; D; RC[T] (unpub. Index)",
+    "placed from the archive's own vector map (SETTLE_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 147,
+     "y": 666
+    }
+   ],
    "n": "Tower Hills",
    "name_conf": "H",
    "notes": [
     "also Emyn Beraid; Elostirion",
     "The palantír that looks only West; Elanor's Westmarch beneath.",
     "within the Lindon (Gil-galad) boundary as the living map draws it, S.A. 1–T.A. 3021 [I-M]",
-    "Evidence Table E4"
+    "Evidence Table E4",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "lindon",

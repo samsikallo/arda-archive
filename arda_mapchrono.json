@@ -18,7 +18,7 @@
   "sacked",
   "unrecorded"
  ],
- "n_places": 75,
+ "n_places": 74,
  "n_steps": 73,
  "note": "The slider runs over the moments the archive actually records -- each distinct Age and year at which something in its timelines happened -- so it never moves through invented time. A place with no dated record is never hidden: the archive does not know when it stood, and hiding it would assert an absence no text makes.",
  "places": {
@@ -1592,16 +1592,6 @@
     "status": "event",
     "what": "Rómendacil II breaks the Easterlings to the Sea of Rhûn",
     "year": 1248
-   }
-  ],
-  "taur nu fuin": [
-   {
-    "age": "F.A.",
-    "cite": "Silm 18 [C]",
-    "rank": 1,
-    "status": "event",
-    "what": "Both fall in the Bragollach; the land becomes Taur-nu-Fuin, forest of dread",
-    "year": 455
    }
   ],
   "thargelion": [
