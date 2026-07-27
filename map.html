@@ -356,18 +356,29 @@ function loadRoads(){
 function setVB(){svg.setAttribute('viewBox',`${vb.x} ${vb.y} ${vb.w} ${vb.h}`)}
 // A RECORD MUST BE ABLE TO OPEN THE MAP ON ITSELF, or the cross-link runs one way only.
 // #k=<gazetteer key> finds the feature, centres the view on it and opens its card.
-function goHash(){
+// A DEEP LINK MUST SURVIVE ITS OWN PAGE STILL LOADING.
+// goHash ran in the same tick as loadUndrawn(), which is a fetch. So on ARRIVAL -- the only
+// time that matters, since that is how a reader comes in from realms.html or place.html --
+// the unmapped layer did not exist yet, `if(u)` was false, and the function returned in
+// silence. Every deep link to one of the 142 places the sheet does not draw failed, and
+// failed invisibly: the map simply opened at nothing. It worked ever after, on hashchange,
+// which is why clicking about by hand never showed it.
+// Doriath, Gondolin, Nargothrond and most of the realms are in that layer.
+function goHash(tries){
   const m=(location.hash||'').match(/k=([^&]+)/); if(!m||!svg)return;
   const want=decodeURIComponent(m[1]).toLowerCase();
   const g=[...svg.querySelectorAll('.feat')].find(x=>(x.dataset.key||'').toLowerCase()===want);
   if(!g){  // it may be a place the sheet does not draw: look in the unmapped layer
     const u=document.getElementById('und');
-    if(u){const c=[...u.querySelectorAll('circle')].find(c=>
+    if(!u){ // the layer is still on its way; wait for it rather than give up in silence
+      if((tries||0)<40) setTimeout(()=>goHash((tries||0)+1),150);
+      return;}
+    const c=[...u.querySelectorAll('circle')].find(c=>
         JSON.parse(c.dataset.payload).at.some(a=>(a.key||'').toLowerCase()===want));
-      if(c){document.getElementById('tU').click();
-            centre(+c.getAttribute('cx'),+c.getAttribute('cy'));
-            c.dispatchEvent(new MouseEvent('click',{bubbles:true,
-              clientX:c.getBoundingClientRect().x+2,clientY:c.getBoundingClientRect().y+2}));}}
+    if(c){document.getElementById('tU').click();
+          centre(+c.getAttribute('cx'),+c.getAttribute('cy'));
+          c.dispatchEvent(new MouseEvent('click',{bubbles:true,
+            clientX:c.getBoundingClientRect().x+2,clientY:c.getBoundingClientRect().y+2}));}
     return;}
   const b=g.getBBox(); centre(b.x+b.width/2,b.y+b.height/2);
   g.classList.add('on'); g.focus({preventScroll:true});
@@ -376,7 +387,7 @@ function goHash(){
 function centre(cx,cy){
   vb.w=vb0.w/4; vb.h=vb0.h/4; vb.x=cx-vb.w/2; vb.y=cy-vb.h/2; setVB();
 }
-addEventListener('hashchange',goHash);
+addEventListener('hashchange',()=>goHash(0));
 function wire(){
   const feats=[...svg.querySelectorAll('.feat')];
   feats.forEach(g=>{
