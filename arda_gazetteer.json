@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 301,
+ "n": 295,
  "places": {
   "aeluin": {
    "ages": [],
@@ -90,11 +90,21 @@
    "cites": [
     "Silm 10/22"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 733,
+     "y": 424
+    }
+   ],
    "n": "Amon Ereb",
    "name_conf": null,
    "notes": [
-    "Where Denethor of the Green-elves fell in the First Battle; the Fëanorians' last hold."
+    "Where Denethor of the Green-elves fell in the First Battle; the Fëanorians' last hold.",
+    "spec FA: watch",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
+    "the vector spec also lists it as “Amon Ereb fort”, at the same place; one record, not two"
    ],
    "parents": [
     "ossiriand"
@@ -114,34 +124,7 @@
      "status": "destroyed",
      "what": "Denethor falls on Amon Ereb; the Green-elves take to secrecy — no king again",
      "when": "First Battle"
-    }
-   ],
-   "types": [
-    "NATURAL_PEAK"
-   ]
-  },
-  "amon ereb fort": {
-   "ages": [
-    "FA"
-   ],
-   "cites": [],
-   "coords": [
-    {
-     "conf": "H",
-     "frame": "FA",
-     "x": 733,
-     "y": 424
-    }
-   ],
-   "n": "Amon Ereb fort",
-   "name_conf": null,
-   "notes": [
-    "spec FA: watch",
-    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
-   ],
-   "parents": [],
-   "place_conf": "H",
-   "timeline": [
+    },
     {
      "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
      "realm": null,
@@ -151,7 +134,9 @@
     }
    ],
    "types": [
-    "MAN_MADE_WATCHPOST"
+    "NATURAL_PEAK",
+    "MAN_MADE_WATCHPOST",
+    "MAN_MADE_FORTRESS"
    ]
   },
   "amon ethir": {
@@ -312,7 +297,7 @@
    "place_conf": "L",
    "timeline": [],
    "types": [
-    "NATURAL_SEA"
+    "NATURAL_RIVER"
    ]
   },
   "anfalas": {
@@ -1249,7 +1234,9 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_MANSION"
+    "MAN_MADE_MANSION",
+    "MAN_MADE_HALL",
+    "NATURAL_PEAK"
    ]
   },
   "brandywine bridge": {
@@ -1934,7 +1921,7 @@
    "ages": [],
    "cites": [],
    "coords": [],
-   "n": "Chetwood [",
+   "n": "Chetwood",
    "name_conf": null,
    "notes": [
     "spec TA: Forests"
@@ -2457,7 +2444,7 @@
    "ages": [],
    "cites": [],
    "coords": [],
-   "n": "Drúadan Forest [",
+   "n": "Drúadan Forest",
    "name_conf": null,
    "notes": [
     "spec TA: Forests"
@@ -2971,7 +2958,8 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_CITY"
+    "MAN_MADE_CITY",
+    "MAN_MADE_HALL"
    ]
   },
   "emyn muil": {
@@ -3205,7 +3193,8 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_CITY"
+    "MAN_MADE_CITY",
+    "MAN_MADE_GATE"
    ]
   },
   "ered gorgoroth": {
@@ -3270,7 +3259,7 @@
    "ages": [],
    "cites": [],
    "coords": [],
-   "n": "Eryn Vorn [",
+   "n": "Eryn Vorn",
    "name_conf": null,
    "notes": [
     "spec TA: Forests"
@@ -3334,6 +3323,7 @@
    ],
    "types": [
     "MAN_MADE_TOWN",
+    "NATURAL_LAKE",
     "MAN_MADE_CITY"
    ]
   },
@@ -3417,15 +3407,21 @@
     "TA"
    ],
    "cites": [
-    "LotR III.4"
+    "LotR III.4",
+    "C III.3–4; RC[T]"
    ],
    "coords": [],
    "n": "Fangorn",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "also Entwood",
     "Eldest forest-heart; Treebeard's wellinghall; 'the Ents are going to war'.",
-    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
+    "spec TA: Forests",
+    "named Entwood by the spec, which is how it is told from the other place of the same name",
+    "Ages taken from its realm fangorn, having none of its own [I-H]",
+    "Evidence Table G1",
+    "the vector spec also lists it as “Fangorn Forest (Entwood)”, at the same place; one record, not two"
    ],
    "parents": [
     "rohan"
@@ -3457,31 +3453,6 @@
    "types": [
     "NATURAL_FOREST",
     "MAN_MADE_HALL"
-   ]
-  },
-  "fangorn forest": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "C III.3–4; RC[T]"
-   ],
-   "coords": [],
-   "n": "Fangorn Forest (Entwood)",
-   "name_conf": "H",
-   "notes": [
-    "spec TA: Forests",
-    "named Entwood by the spec, which is how it is told from the other place of the same name",
-    "Ages taken from its realm fangorn, having none of its own [I-H]",
-    "Evidence Table G1"
-   ],
-   "parents": [
-    "fangorn"
-   ],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
-    "NATURAL_FOREST"
    ]
   },
   "fen of serech": {
@@ -3559,7 +3530,7 @@
    "ages": [],
    "cites": [],
    "coords": [],
-   "n": "Firien Wood [",
+   "n": "Firien Wood",
    "name_conf": null,
    "notes": [
     "spec TA: Forests"
@@ -3906,7 +3877,8 @@
    "place_conf": "M",
    "timeline": [],
    "types": [
-    "MAN_MADE_GATE"
+    "MAN_MADE_GATE",
+    "NATURAL_PASS"
    ]
   },
   "gondolin": {
@@ -4162,7 +4134,7 @@
    "n": "Gorgoroth",
    "name_conf": "H",
    "notes": [
-    "interior label of Mordor (realm = its mountain rectangle), per the vector spec",
+    "interior label of Mordor, per the vector spec",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
     "Evidence Table G22"
    ],
@@ -4298,7 +4270,7 @@
    "place_conf": "L",
    "timeline": [],
    "types": [
-    "NATURAL_MARSH"
+    "NATURAL_RIVER"
    ]
   },
   "halifirien hallow": {
@@ -4669,12 +4641,22 @@
    "cites": [
     "Silm 14/18"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "FA",
+     "x": 772,
+     "y": 691
+    }
+   ],
    "n": "Himring",
    "name_conf": null,
    "notes": [
     "also the Ever-cold",
-    "Maedhros' hill-fortress that held the Leaguer's east — and held after the Bragollach."
+    "Maedhros' hill-fortress that held the Leaguer's east — and held after the Bragollach.",
+    "spec FA: fortress",
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
+    "the vector spec also lists it as “Himring citadel”, at the same place; one record, not two"
    ],
    "parents": [],
    "place_conf": "H",
@@ -4699,35 +4681,7 @@
      "status": "event",
      "what": "After Thingol's word, the sons of Fëanor remove east; Maedhros holds Himring",
      "when": "F.A. 7"
-    }
-   ],
-   "types": [
-    "MAN_MADE_FORTRESS",
-    "NATURAL_HILL"
-   ]
-  },
-  "himring citadel": {
-   "ages": [
-    "FA"
-   ],
-   "cites": [],
-   "coords": [
-    {
-     "conf": "H",
-     "frame": "FA",
-     "x": 772,
-     "y": 691
-    }
-   ],
-   "n": "Himring citadel",
-   "name_conf": null,
-   "notes": [
-    "spec FA: fortress",
-    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
-   ],
-   "parents": [],
-   "place_conf": "H",
-   "timeline": [
+    },
     {
      "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
      "realm": null,
@@ -4737,7 +4691,8 @@
     }
    ],
    "types": [
-    "MAN_MADE_FORTRESS"
+    "MAN_MADE_FORTRESS",
+    "NATURAL_HILL"
    ]
   },
   "hobbiton bag end": {
@@ -4888,7 +4843,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_SEA"
+    "NATURAL_BAY"
    ]
   },
   "ingwil": {
@@ -4982,7 +4937,8 @@
     }
    ],
    "types": [
-    "NATURAL_MOUNTAIN_RANGE"
+    "NATURAL_MOUNTAIN_RANGE",
+    "NATURAL_HILL"
    ]
   },
   "isen adorn": {
@@ -5174,7 +5130,9 @@
    "notes": [
     "interior label of Gondor, per the vector spec",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "Evidence Table G19"
+    "Evidence Table G19",
+    "spec TA: Forests",
+    "the vector spec also lists it as “Ithilien woods (open woodland strip)”, at the same place; one record, not two"
    ],
    "parents": [
     "gondor"
@@ -5182,22 +5140,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "POLITY_SUBREGION"
-   ]
-  },
-  "ithilien woods": {
-   "ages": [],
-   "cites": [],
-   "coords": [],
-   "n": "Ithilien woods (open woodland strip)",
-   "name_conf": null,
-   "notes": [
-    "spec TA: Forests"
-   ],
-   "parents": [],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
+    "POLITY_SUBREGION",
     "NATURAL_FOREST"
    ]
   },
@@ -5583,7 +5526,7 @@
    "n": "Lithlad",
    "name_conf": "H",
    "notes": [
-    "interior label of Mordor (realm = its mountain rectangle), per the vector spec",
+    "interior label of Mordor, per the vector spec",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
     "Evidence Table G22"
    ],
@@ -6164,10 +6107,13 @@
    ]
   },
   "mordor": {
-   "ages": [],
+   "ages": [
+    "SA",
+    "TA"
+   ],
    "cites": [],
    "coords": [],
-   "n": "Mordor (realm = its mountain rectangle)",
+   "n": "Mordor",
    "name_conf": null,
    "notes": [
     "spec TA: Political / Regional Polygons"
@@ -6175,6 +6121,13 @@
    "parents": [],
    "place_conf": "H",
    "timeline": [
+    {
+     "cite": "App B [C]",
+     "realm": "dolguldur",
+     "status": "event",
+     "what": "The White Council drives Sauron out — into prepared Mordor",
+     "when": "2941"
+    },
     {
      "cite": "Silm; App B [C]",
      "realm": "mordor",
@@ -6190,11 +6143,46 @@
      "when": "S.A. c.1000"
     },
     {
+     "cite": "App B",
+     "realm": null,
+     "status": "event",
+     "what": "Sauron chooses Mordor; Barad-dûr begun",
+     "when": "S.A. c.1000"
+    },
+    {
      "cite": "App A/B [C]",
      "realm": "mordor",
      "status": "event",
      "what": "The land watched, then unwatched: Gondor's guard-forts fail after the Plague (1636); the Nazgûl re-enter (1980); Sauron returns declared (2951)",
      "when": "T.A. 1000–2942"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "gondor",
+     "status": "destroyed",
+     "what": "The Great Plague — the watch on Mordor abandoned; 2002 Minas Ithil falls; 2050 the King lost; the Stewards rule",
+     "when": "T.A. 1636"
+    },
+    {
+     "cite": "App A/B",
+     "realm": null,
+     "status": "abandoned",
+     "what": "The Balrog awakes; Khazad-dûm abandoned; the Witch-king to Mordor",
+     "when": "T.A. 1980"
+    },
+    {
+     "cite": "App A/B",
+     "realm": null,
+     "status": "event",
+     "what": "Aragorn and Arwen plight their troth on Cerin Amroth; Gollum reaches Mordor's borders",
+     "when": "T.A. 2980"
+    },
+    {
+     "cite": "App B",
+     "realm": null,
+     "status": "taken",
+     "what": "Gollum released from Mordor; taken by Aragorn; Gandalf reads Isildur's scroll",
+     "when": "T.A. 3017"
     },
     {
      "cite": "LotR VI.3–4 [C]",
@@ -6754,7 +6742,7 @@
    "n": "Nurn",
    "name_conf": "H",
    "notes": [
-    "interior label of Mordor (realm = its mountain rectangle), per the vector spec",
+    "interior label of Mordor, per the vector spec",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
     "Evidence Table G22"
    ],
@@ -6794,7 +6782,7 @@
    "ages": [],
    "cites": [],
    "coords": [],
-   "n": "NW-shore forest at Sea of Rhun [",
+   "n": "NW-shore forest at Sea of Rhun",
    "name_conf": null,
    "notes": [
     "spec TA: Forests"
@@ -6803,7 +6791,9 @@
    "place_conf": "M",
    "timeline": [],
    "types": [
-    "NATURAL_FOREST"
+    "NATURAL_FOREST",
+    "NATURAL_COAST",
+    "NATURAL_SEA"
    ]
   },
   "oiolosse": {
@@ -7218,7 +7208,7 @@
    "place_conf": "L",
    "timeline": [],
    "types": [
-    "NATURAL_SEA"
+    "NATURAL_RIVER"
    ]
   },
   "rivil": {
@@ -8435,30 +8425,6 @@
     "Silm 18-19",
     "A ch14, ch18; E"
    ],
-   "coords": [],
-   "n": "Tol Sirion",
-   "name_conf": "H",
-   "notes": [
-    "also Minas Tirith of Orodreth; Tol-in-Gaurhoth",
-    "The isle-tower of the pass; Sauron's werewolf-keep; Finrod died in its pits.",
-    "within the Dominion of Angband (after 455) boundary as the living map draws it, F.A. 455–583 [I-M]",
-    "Evidence Table B14"
-   ],
-   "parents": [
-    "angband"
-   ],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
-    "MAN_MADE_TOWER",
-    "NATURAL_PASS"
-   ]
-  },
-  "tol sirion fort": {
-   "ages": [
-    "FA"
-   ],
-   "cites": [],
    "coords": [
     {
      "conf": "H",
@@ -8467,13 +8433,20 @@
      "y": 691
     }
    ],
-   "n": "Tol Sirion fort",
-   "name_conf": null,
+   "n": "Tol Sirion",
+   "name_conf": "H",
    "notes": [
+    "also Minas Tirith of Orodreth; Tol-in-Gaurhoth",
+    "The isle-tower of the pass; Sauron's werewolf-keep; Finrod died in its pits.",
+    "within the Dominion of Angband (after 455) boundary as the living map draws it, F.A. 455–583 [I-M]",
+    "Evidence Table B14",
     "spec FA: isle-tower",
-    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
+    "the vector spec also lists it as “Tol Sirion fort”, at the same place; one record, not two"
    ],
-   "parents": [],
+   "parents": [
+    "angband"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -8485,7 +8458,9 @@
     }
    ],
    "types": [
-    "MAN_MADE_TOWER"
+    "MAN_MADE_TOWER",
+    "NATURAL_PASS",
+    "MAN_MADE_FORTRESS"
    ]
   },
   "tom bombadil s house": {
@@ -8566,7 +8541,8 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_FORTRESS"
+    "MAN_MADE_FORTRESS",
+    "MAN_MADE_TOWER"
    ]
   },
   "trolls clearing": {
@@ -8607,27 +8583,13 @@
    "name_conf": null,
    "notes": [
     "Bert, Tom and William stood here till dawn found them.",
-    "within the Rhudaur boundary as the living map draws it, T.A. 861–c.1409 [I-M]"
+    "within the Rhudaur boundary as the living map draws it, T.A. 861–c.1409 [I-M]",
+    "spec TA: Forests",
+    "the vector spec also lists it as “Trollshaws woods”, at the same place; one record, not two"
    ],
    "parents": [
     "rhudaur"
    ],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
-    "NATURAL_FOREST"
-   ]
-  },
-  "trollshaws woods hill field 2 1 with tree": {
-   "ages": [],
-   "cites": [],
-   "coords": [],
-   "n": "Trollshaws woods = hill-field 2.1 with tree",
-   "name_conf": null,
-   "notes": [
-    "spec TA: Forests"
-   ],
-   "parents": [],
    "place_conf": "H",
    "timeline": [],
    "types": [
@@ -9039,7 +9001,7 @@
     "named within Fangorn Forest (Entwood) by the vector spec's own block for it"
    ],
    "parents": [
-    "fangorn forest"
+    "fangorn"
    ],
    "place_conf": "High",
    "timeline": [],
