@@ -91,6 +91,13 @@
      "when": "Y.T."
     },
     {
+     "cite": "Silm 5; AAm",
+     "realm": null,
+     "status": "built",
+     "what": "The Eldar come to Aman; Tirion and Alqualondë built",
+     "when": "Y.T. c.1140"
+    },
+    {
      "cite": "Silm 9 [C]",
      "realm": "alqualonde",
      "status": "event",
@@ -103,13 +110,6 @@
      "status": "event",
      "what": "Darkening of Valinor; Kinslaying at Alqualondë; the Flight",
      "when": "Y.T. 1495"
-    },
-    {
-     "cite": "Silm 5; AAm",
-     "realm": null,
-     "status": "built",
-     "what": "The Eldar come to Aman; Tirion and Alqualondë built",
-     "when": "Y.T. c.1140"
     }
    ],
    "types": [
@@ -164,18 +164,18 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "Silm 18 [C]",
-     "realm": "thargelion",
-     "status": "burned",
-     "what": "Burned in the Bragollach; Caranthir retreats to Amon Ereb",
-     "when": "F.A. 455"
-    },
-    {
      "cite": "Silm 10 [C]",
      "realm": "ossiriand",
      "status": "destroyed",
      "what": "Denethor falls on Amon Ereb; the Green-elves take to secrecy — no king again",
      "when": "First Battle"
+    },
+    {
+     "cite": "Silm 18 [C]",
+     "realm": "thargelion",
+     "status": "burned",
+     "what": "Burned in the Bragollach; Caranthir retreats to Amon Ereb",
+     "when": "F.A. 455"
     },
     {
      "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
@@ -426,6 +426,27 @@
    "place_conf": "H",
    "timeline": [
     {
+     "cite": "Silm 9, 13 [C]",
+     "realm": "angband",
+     "status": "built",
+     "what": "Morgoth returns with the Silmarils; Thangorodrim reared over the re-delved west-fort",
+     "when": "Y.T. 1495 – F.A. 1"
+    },
+    {
+     "cite": "Silm 13",
+     "realm": null,
+     "status": "event",
+     "what": "Dagor Aglareb; the Siege of Angband begins",
+     "when": "F.A. 60"
+    },
+    {
+     "cite": "Silm 13, 18 [C]",
+     "realm": "angband",
+     "status": "besieged",
+     "what": "Besieged through the Long Peace (Dagor Aglareb to the Bragollach)",
+     "when": "F.A. 60–455"
+    },
+    {
      "cite": "Silm 13; Grey Annals",
      "realm": null,
      "status": "event",
@@ -459,27 +480,6 @@
      "status": "event",
      "what": "The War of Wrath: Thangorodrim broken, Morgoth thrust through the Door of Night",
      "when": "F.A. 583–587"
-    },
-    {
-     "cite": "Silm 13",
-     "realm": null,
-     "status": "event",
-     "what": "Dagor Aglareb; the Siege of Angband begins",
-     "when": "F.A. 60"
-    },
-    {
-     "cite": "Silm 13, 18 [C]",
-     "realm": "angband",
-     "status": "besieged",
-     "what": "Besieged through the Long Peace (Dagor Aglareb to the Bragollach)",
-     "when": "F.A. 60–455"
-    },
-    {
-     "cite": "Silm 9, 13 [C]",
-     "realm": "angband",
-     "status": "built",
-     "what": "Morgoth returns with the Silmarils; Thangorodrim reared over the re-delved west-fort",
-     "when": "Y.T. 1495 – F.A. 1"
     }
    ],
    "types": [
@@ -531,41 +531,6 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "App A [C]",
-     "realm": "angmar",
-     "status": "event",
-     "what": "The great assault: Amon Sûl razed, Rhudaur absorbed, Cardolan broken",
-     "when": "1409"
-    },
-    {
-     "cite": "App A [C]",
-     "realm": "angmar",
-     "status": "taken",
-     "what": "Fornost taken — then the realm annihilated by Eärnil's host and Glorfindel: 'not a man nor an orc of that realm remained west of the Mountains'",
-     "when": "1974–75"
-    },
-    {
-     "cite": "App A; LotR I.12 [C]",
-     "realm": "rhudaur",
-     "status": "ruined",
-     "what": "Its force spent as Angmar's vanguard; the land after holds only trolls and ruin",
-     "when": "T.A. 1409"
-    },
-    {
-     "cite": "App A [C]",
-     "realm": "arthedain",
-     "status": "burned",
-     "what": "The long Angmar war: Amon Sûl burned (1409); the Great Plague (1636); Fornost falls (1974); Arvedui drowns in Forochel (1975)",
-     "when": "T.A. 1409–1974"
-    },
-    {
-     "cite": "App A/B",
-     "realm": null,
-     "status": "event",
-     "what": "Fall of Arthedain; Battle of Fornost; Angmar broken",
-     "when": "T.A. 1974–75"
-    },
-    {
      "cite": "App A/B",
      "realm": null,
      "status": "event",
@@ -585,6 +550,41 @@
      "status": "event",
      "what": "'an evil lord of the Hill-men' seizes power in secret league with Angmar; the Dúnedain remnant flees",
      "when": "c. T.A. 1350"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "angmar",
+     "status": "event",
+     "what": "The great assault: Amon Sûl razed, Rhudaur absorbed, Cardolan broken",
+     "when": "1409"
+    },
+    {
+     "cite": "App A; LotR I.12 [C]",
+     "realm": "rhudaur",
+     "status": "ruined",
+     "what": "Its force spent as Angmar's vanguard; the land after holds only trolls and ruin",
+     "when": "T.A. 1409"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "arthedain",
+     "status": "burned",
+     "what": "The long Angmar war: Amon Sûl burned (1409); the Great Plague (1636); Fornost falls (1974); Arvedui drowns in Forochel (1975)",
+     "when": "T.A. 1409–1974"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "angmar",
+     "status": "taken",
+     "what": "Fornost taken — then the realm annihilated by Eärnil's host and Glorfindel: 'not a man nor an orc of that realm remained west of the Mountains'",
+     "when": "1974–75"
+    },
+    {
+     "cite": "App A/B",
+     "realm": null,
+     "status": "event",
+     "what": "Fall of Arthedain; Battle of Fornost; Angmar broken",
+     "when": "T.A. 1974–75"
     }
    ],
    "types": [
@@ -805,20 +805,6 @@
     },
     {
      "cite": "App A [C]",
-     "realm": "arthedain",
-     "status": "event",
-     "what": "The line of Isildur endures only here; claims lordship of all Arnor",
-     "when": "T.A. 1349+"
-    },
-    {
-     "cite": "LotR VI.5; App A/B [C]",
-     "realm": "reunited",
-     "status": "event",
-     "what": "Elessar crowned; Arnor's kingship resumed with Gondor's",
-     "when": "T.A. 3019"
-    },
-    {
-     "cite": "App A [C]",
      "realm": "arnor",
      "status": "event",
      "what": "At Eärendur's death the sons divide it: Arthedain, Cardolan, Rhudaur",
@@ -830,6 +816,20 @@
      "status": "event",
      "what": "Arnor divided: Arthedain, Cardolan, Rhudaur",
      "when": "T.A. 861"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "arthedain",
+     "status": "event",
+     "what": "The line of Isildur endures only here; claims lordship of all Arnor",
+     "when": "T.A. 1349+"
+    },
+    {
+     "cite": "LotR VI.5; App A/B [C]",
+     "realm": "reunited",
+     "status": "event",
+     "what": "Elessar crowned; Arnor's kingship resumed with Gondor's",
+     "when": "T.A. 3019"
     }
    ],
    "types": [
@@ -892,27 +892,6 @@
    "timeline": [
     {
      "cite": "App A [C]",
-     "realm": "arthedain",
-     "status": "event",
-     "what": "The line of Isildur endures only here; claims lordship of all Arnor",
-     "when": "T.A. 1349+"
-    },
-    {
-     "cite": "App A [C]",
-     "realm": "arthedain",
-     "status": "burned",
-     "what": "The long Angmar war: Amon Sûl burned (1409); the Great Plague (1636); Fornost falls (1974); Arvedui drowns in Forochel (1975)",
-     "when": "T.A. 1409–1974"
-    },
-    {
-     "cite": "App A/B",
-     "realm": null,
-     "status": "event",
-     "what": "Fall of Arthedain; Battle of Fornost; Angmar broken",
-     "when": "T.A. 1974–75"
-    },
-    {
-     "cite": "App A [C]",
      "realm": "arnor",
      "status": "event",
      "what": "At Eärendur's death the sons divide it: Arthedain, Cardolan, Rhudaur",
@@ -931,6 +910,27 @@
      "status": "event",
      "what": "Arnor divided: Arthedain, Cardolan, Rhudaur",
      "when": "T.A. 861"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "arthedain",
+     "status": "event",
+     "what": "The line of Isildur endures only here; claims lordship of all Arnor",
+     "when": "T.A. 1349+"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "arthedain",
+     "status": "burned",
+     "what": "The long Angmar war: Amon Sûl burned (1409); the Great Plague (1636); Fornost falls (1974); Arvedui drowns in Forochel (1975)",
+     "when": "T.A. 1409–1974"
+    },
+    {
+     "cite": "App A/B",
+     "realm": null,
+     "status": "event",
+     "what": "Fall of Arthedain; Battle of Fornost; Angmar broken",
+     "when": "T.A. 1974–75"
     }
    ],
    "types": [
@@ -983,18 +983,18 @@
      "when": "F.A. 473+"
     },
     {
-     "cite": "Silm 24 [C]",
-     "realm": "balar",
-     "status": "event",
-     "what": "From these shores Eärendil had sailed; the War of Wrath ends the Age",
-     "when": "F.A. 583–587"
-    },
-    {
      "cite": "Silm 24; WotJ ToY [C]",
      "realm": "balar",
      "status": "destroyed",
      "what": "The Third Kinslaying falls on the Havens; Elwing casts herself to sea",
      "when": "F.A. c.538"
+    },
+    {
+     "cite": "Silm 24 [C]",
+     "realm": "balar",
+     "status": "event",
+     "what": "From these shores Eärendil had sailed; the War of Wrath ends the Age",
+     "when": "F.A. 583–587"
     }
    ],
    "types": [
@@ -1059,13 +1059,6 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "Silm; App B [C]",
-     "realm": "mordor",
-     "status": "event",
-     "what": "The Siege of Barad-dûr; Sauron overthrown by Elendil and Gil-galad",
-     "when": "S.A. 3434–3441"
-    },
-    {
      "cite": "App B; Silm [C]",
      "realm": "mordor",
      "status": "event",
@@ -1078,6 +1071,13 @@
      "status": "event",
      "what": "Sauron chooses Mordor; Barad-dûr begun",
      "when": "S.A. c.1000"
+    },
+    {
+     "cite": "Silm; App B [C]",
+     "realm": "mordor",
+     "status": "event",
+     "what": "The Siege of Barad-dûr; Sauron overthrown by Elendil and Gil-galad",
+     "when": "S.A. 3434–3441"
     },
     {
      "cite": "App B",
@@ -1246,11 +1246,25 @@
    "place_conf": "H",
    "timeline": [
     {
+     "cite": "Silm 10 [C]",
+     "realm": "belegost",
+     "status": "built",
+     "what": "Delved in Ered Luin's eastern flank; Menegroth built with their craft",
+     "when": "Y.T."
+    },
+    {
      "cite": "Silm 20 [C]",
      "realm": "belegost",
      "status": "event",
      "what": "Azaghâl's phalanx at the Nirnaeth turns Glaurung — the king slain",
      "when": "F.A. 473"
+    },
+    {
+     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
+     "realm": null,
+     "status": "drowned",
+     "what": "Beleriand was drowned; this place stood in that land",
+     "when": "F.A. 587 (War of Wrath)"
     },
     {
      "cite": "App A III [C]",
@@ -1265,20 +1279,6 @@
      "status": "event",
      "what": "Ered Luin broken in the War of Wrath's tumults; many remove to Khazad-dûm",
      "when": "S.A. c.40"
-    },
-    {
-     "cite": "Silm 10 [C]",
-     "realm": "belegost",
-     "status": "built",
-     "what": "Delved in Ered Luin's eastern flank; Menegroth built with their craft",
-     "when": "Y.T."
-    },
-    {
-     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
-     "realm": null,
-     "status": "drowned",
-     "what": "Beleriand was drowned; this place stood in that land",
-     "when": "F.A. 587 (War of Wrath)"
     }
    ],
    "types": [
@@ -1456,18 +1456,18 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "LotR III.4 [C]",
-     "realm": "fangorn",
-     "status": "event",
-     "what": "'the last remnant of the vast forests of the Elder Days' — once one wood with the Old Forest from Dunland to Bree",
-     "when": "Elder Days"
-    },
-    {
      "cite": "App F; LotR I.9 [C]",
      "realm": "bree",
      "status": "event",
      "what": "Men of the White Mountains' kin settle about Bree-hill — 'the oldest settlement of Men... in the western world' surviving",
      "when": "S.A."
+    },
+    {
+     "cite": "LotR III.4 [C]",
+     "realm": "fangorn",
+     "status": "event",
+     "what": "'the last remnant of the vast forests of the Elder Days' — once one wood with the Old Forest from Dunland to Bree",
+     "when": "Elder Days"
     },
     {
      "cite": "App D; Prologue [C]",
@@ -1535,18 +1535,18 @@
      "when": "F.A."
     },
     {
-     "cite": "Silm 21; CoH [C]",
-     "realm": "brethil",
-     "status": "event",
-     "what": "Brethil holds the Crossings of Teiglin; Túrin's last deeds at Cabed-en-Aras",
-     "when": "F.A. 458–495"
-    },
-    {
      "cite": "Silm 17 [C]",
      "realm": "brethil",
      "status": "event",
      "what": "The Haladin under Haleth remove to Brethil, by leave of Thingol",
      "when": "F.A. c.390"
+    },
+    {
+     "cite": "Silm 21; CoH [C]",
+     "realm": "brethil",
+     "status": "event",
+     "what": "Brethil holds the Crossings of Teiglin; Túrin's last deeds at Cabed-en-Aras",
+     "when": "F.A. 458–495"
     },
     {
      "cite": "WotJ, Wanderings of Húrin [C — unpublished layer]",
@@ -1939,27 +1939,6 @@
    "timeline": [
     {
      "cite": "App A [C]",
-     "realm": "angmar",
-     "status": "event",
-     "what": "The great assault: Amon Sûl razed, Rhudaur absorbed, Cardolan broken",
-     "when": "1409"
-    },
-    {
-     "cite": "App A [C]",
-     "realm": "cardolan",
-     "status": "destroyed",
-     "what": "The last prince falls; a remnant holds Tyrn Gorthad and the Old Forest refuge",
-     "when": "T.A. 1409"
-    },
-    {
-     "cite": "App A [C]",
-     "realm": "cardolan",
-     "status": "event",
-     "what": "The Great Plague ends the Dúnedain here; evil wights enter the Barrows",
-     "when": "T.A. 1636"
-    },
-    {
-     "cite": "App A [C]",
      "realm": "arnor",
      "status": "event",
      "what": "At Eärendur's death the sons divide it: Arthedain, Cardolan, Rhudaur",
@@ -1978,6 +1957,27 @@
      "status": "event",
      "what": "Arnor divided: Arthedain, Cardolan, Rhudaur",
      "when": "T.A. 861"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "angmar",
+     "status": "event",
+     "what": "The great assault: Amon Sûl razed, Rhudaur absorbed, Cardolan broken",
+     "when": "1409"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "cardolan",
+     "status": "destroyed",
+     "what": "The last prince falls; a remnant holds Tyrn Gorthad and the Old Forest refuge",
+     "when": "T.A. 1409"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "cardolan",
+     "status": "event",
+     "what": "The Great Plague ends the Dúnedain here; evil wights enter the Barrows",
+     "when": "T.A. 1636"
     }
    ],
    "types": [
@@ -2129,18 +2129,18 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "App A",
-     "realm": null,
-     "status": "event",
-     "what": "Arwen dies at Cerin Amroth",
-     "when": "F.o.A. 121"
-    },
-    {
      "cite": "App A/B",
      "realm": null,
      "status": "event",
      "what": "Aragorn and Arwen plight their troth on Cerin Amroth; Gollum reaches Mordor's borders",
      "when": "T.A. 2980"
+    },
+    {
+     "cite": "App A",
+     "realm": null,
+     "status": "event",
+     "what": "Arwen dies at Cerin Amroth",
+     "when": "F.o.A. 121"
     }
    ],
    "types": [
@@ -2305,27 +2305,6 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "Hobbit; App A/B [C]",
-     "realm": "dale",
-     "status": "event",
-     "what": "The Dragon dead; Bard rebuilds Dale as king",
-     "when": "2941–44"
-    },
-    {
-     "cite": "App A/B [C]",
-     "realm": "dale",
-     "status": "destroyed",
-     "what": "The Battle of Dale: Brand falls with Dáin; the town holds siege in Erebor; then victory",
-     "when": "3019"
-    },
-    {
-     "cite": "App B [C]",
-     "realm": "rhun",
-     "status": "event",
-     "what": "Easterling armies at the Morannon and Dale; peace of Elessar after",
-     "when": "3019"
-    },
-    {
      "cite": "App A III/B",
      "realm": null,
      "status": "besieged",
@@ -2345,6 +2324,27 @@
      "status": "burned",
      "what": "The bell-town in the Mountain's vale, rich on Erebor's traffic; Girion its last old lord — burned by Smaug",
      "when": "before 2770"
+    },
+    {
+     "cite": "Hobbit; App A/B [C]",
+     "realm": "dale",
+     "status": "event",
+     "what": "The Dragon dead; Bard rebuilds Dale as king",
+     "when": "2941–44"
+    },
+    {
+     "cite": "App A/B [C]",
+     "realm": "dale",
+     "status": "destroyed",
+     "what": "The Battle of Dale: Brand falls with Dáin; the town holds siege in Erebor; then victory",
+     "when": "3019"
+    },
+    {
+     "cite": "App B [C]",
+     "realm": "rhun",
+     "status": "event",
+     "what": "Easterling armies at the Morannon and Dale; peace of Elessar after",
+     "when": "3019"
     }
    ],
    "types": [
@@ -2502,6 +2502,27 @@
    "place_conf": "H",
    "timeline": [
     {
+     "cite": "UT, History of Galadriel app. [C]",
+     "realm": "greenwood",
+     "status": "built",
+     "what": "Oropher, Sindar among the Silvan, king in Greenwood; removes north before Dol Guldur's shadow is ever raised",
+     "when": "S.A."
+    },
+    {
+     "cite": "App A/B [C]",
+     "realm": "greenwood",
+     "status": "event",
+     "what": "The Shadow at Dol Guldur; the wood becomes Mirkwood; the realm withdraws to the north-east halls",
+     "when": "T.A. 1050+"
+    },
+    {
+     "cite": "App B [C]",
+     "realm": "dolguldur",
+     "status": "event",
+     "what": "A shadow rises in southern Greenwood — 'the Necromancer' unknown",
+     "when": "c. T.A. 1050"
+    },
+    {
      "cite": "App B [C]",
      "realm": "dolguldur",
      "status": "event",
@@ -2509,11 +2530,25 @@
      "when": "2063–2460"
     },
     {
+     "cite": "App B",
+     "realm": null,
+     "status": "event",
+     "what": "Gandalf goes to Dol Guldur; the Watchful Peace begins (to 2460)",
+     "when": "T.A. 2063"
+    },
+    {
      "cite": "App A III/B [C]",
      "realm": "dolguldur",
      "status": "event",
      "what": "Gandalf enters, finds Thráin II dying, learns the truth",
      "when": "2850"
+    },
+    {
+     "cite": "App B; Hobbit i",
+     "realm": null,
+     "status": "event",
+     "what": "Gandalf in Dol Guldur: the Necromancer is Sauron; Thráin's map and key",
+     "when": "T.A. 2850"
     },
     {
      "cite": "App B [C]",
@@ -2530,46 +2565,11 @@
      "when": "3019"
     },
     {
-     "cite": "UT, History of Galadriel app. [C]",
-     "realm": "greenwood",
-     "status": "built",
-     "what": "Oropher, Sindar among the Silvan, king in Greenwood; removes north before Dol Guldur's shadow is ever raised",
-     "when": "S.A."
-    },
-    {
-     "cite": "App A/B [C]",
-     "realm": "greenwood",
-     "status": "event",
-     "what": "The Shadow at Dol Guldur; the wood becomes Mirkwood; the realm withdraws to the north-east halls",
-     "when": "T.A. 1050+"
-    },
-    {
-     "cite": "App B",
-     "realm": null,
-     "status": "event",
-     "what": "Gandalf goes to Dol Guldur; the Watchful Peace begins (to 2460)",
-     "when": "T.A. 2063"
-    },
-    {
-     "cite": "App B; Hobbit i",
-     "realm": null,
-     "status": "event",
-     "what": "Gandalf in Dol Guldur: the Necromancer is Sauron; Thráin's map and key",
-     "when": "T.A. 2850"
-    },
-    {
      "cite": "App B [C]",
      "realm": "lorien",
      "status": "event",
      "what": "Thrice assailed from Dol Guldur, thrice holding; then Dol Guldur thrown down — Celeborn takes East Lórien",
      "when": "T.A. 3019"
-    },
-    {
-     "cite": "App B [C]",
-     "realm": "dolguldur",
-     "status": "event",
-     "what": "A shadow rises in southern Greenwood — 'the Necromancer' unknown",
-     "when": "c. T.A. 1050"
     }
    ],
    "types": [
@@ -2694,6 +2694,20 @@
    "place_conf": "H",
    "timeline": [
     {
+     "cite": "Silm 4, 10 [C]",
+     "realm": "doriath",
+     "status": "built",
+     "what": "Elwë and Melian gather the Eldar of Beleriand; Menegroth delved with Dwarven aid",
+     "when": "Y.T."
+    },
+    {
+     "cite": "Silm 10 [C]",
+     "realm": "doriath",
+     "status": "built",
+     "what": "After the First Battle the Girdle of Melian is raised",
+     "when": "Y.T. (first war)"
+    },
+    {
      "cite": "Silm 20, 23 [C]",
      "realm": "balar",
      "status": "event",
@@ -2713,20 +2727,6 @@
      "status": "ruined",
      "what": "Thingol slain; the Ruin of Doriath; Melian returns West",
      "when": "F.A. c.502"
-    },
-    {
-     "cite": "Silm 4, 10 [C]",
-     "realm": "doriath",
-     "status": "built",
-     "what": "Elwë and Melian gather the Eldar of Beleriand; Menegroth delved with Dwarven aid",
-     "when": "Y.T."
-    },
-    {
-     "cite": "Silm 10 [C]",
-     "realm": "doriath",
-     "status": "built",
-     "what": "After the First Battle the Girdle of Melian is raised",
-     "when": "Y.T. (first war)"
     }
    ],
    "types": [
@@ -2749,6 +2749,13 @@
    "place_conf": "H",
    "timeline": [
     {
+     "cite": "Silm 17 [C]",
+     "realm": "dorlomin",
+     "status": "event",
+     "what": "Dor-lómin given to Hador Lórindol by Fingolfin",
+     "when": "F.A. c.423"
+    },
+    {
      "cite": "Silm 20 [C]",
      "realm": "dorlomin",
      "status": "event",
@@ -2761,13 +2768,6 @@
      "status": "event",
      "what": "Túrin's generation scattered; Morwen and Niënor flee",
      "when": "F.A. 495–500"
-    },
-    {
-     "cite": "Silm 17 [C]",
-     "realm": "dorlomin",
-     "status": "event",
-     "what": "Dor-lómin given to Hador Lórindol by Fingolfin",
-     "when": "F.A. c.423"
     }
    ],
    "types": [
@@ -2792,20 +2792,6 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "Silm 18 [C]",
-     "realm": "dorthonion",
-     "status": "event",
-     "what": "Both fall in the Bragollach; the land becomes Taur-nu-Fuin, forest of dread",
-     "when": "F.A. 455"
-    },
-    {
-     "cite": "Silm 18–19 [C]",
-     "realm": "ladros",
-     "status": "burned",
-     "what": "The Bragollach burns Dorthonion; Barahir's outlawry ends at Tarn Aeluin",
-     "when": "F.A. 455–460"
-    },
-    {
      "cite": "Silm 14 [C]",
      "realm": "dorthonion",
      "status": "event",
@@ -2818,6 +2804,20 @@
      "status": "granted",
      "what": "Ladros in north-east Dorthonion granted to the sons of Bëor by the sons of Finarfin",
      "when": "F.A. c.410"
+    },
+    {
+     "cite": "Silm 18 [C]",
+     "realm": "dorthonion",
+     "status": "event",
+     "what": "Both fall in the Bragollach; the land becomes Taur-nu-Fuin, forest of dread",
+     "when": "F.A. 455"
+    },
+    {
+     "cite": "Silm 18–19 [C]",
+     "realm": "ladros",
+     "status": "burned",
+     "what": "The Bragollach burns Dorthonion; Barahir's outlawry ends at Tarn Aeluin",
+     "when": "F.A. 455–460"
     }
    ],
    "types": [
@@ -2920,11 +2920,25 @@
    "place_conf": "High",
    "timeline": [
     {
+     "cite": "App A [C]",
+     "realm": "dunland",
+     "status": "event",
+     "what": "Wulf's host takes Edoras in the Long Winter — the feud's high tide",
+     "when": "T.A. 2758"
+    },
+    {
      "cite": "App F; UT [C]",
      "realm": "dunland",
      "status": "destroyed",
      "what": "Remnant of the peoples displaced by Númenórean felling and Calenardhon's settlement — the grudge is genealogical",
      "when": "(descent)"
+    },
+    {
+     "cite": "LotR III.4 [C]",
+     "realm": "fangorn",
+     "status": "event",
+     "what": "'the last remnant of the vast forests of the Elder Days' — once one wood with the Old Forest from Dunland to Bree",
+     "when": "Elder Days"
     },
     {
      "cite": "App A III [C]",
@@ -2939,20 +2953,6 @@
      "status": "event",
      "what": "Levied by Saruman ('Death to the Forgoil!'); spared at the Hornburg — 'the Men of Dunland were amazed'",
      "when": "3019"
-    },
-    {
-     "cite": "LotR III.4 [C]",
-     "realm": "fangorn",
-     "status": "event",
-     "what": "'the last remnant of the vast forests of the Elder Days' — once one wood with the Old Forest from Dunland to Bree",
-     "when": "Elder Days"
-    },
-    {
-     "cite": "App A [C]",
-     "realm": "dunland",
-     "status": "event",
-     "what": "Wulf's host takes Edoras in the Long Winter — the feud's high tide",
-     "when": "T.A. 2758"
     }
    ],
    "types": [
@@ -3402,13 +3402,6 @@
    "place_conf": "High",
    "timeline": [
     {
-     "cite": "UT, Cirion & Eorl [C]",
-     "realm": "eotheod",
-     "status": "event",
-     "what": "Eorl answers the Red Arrow's forerunner: the ride south to Celebrant",
-     "when": "2509–10"
-    },
-    {
      "cite": "App A [C]",
      "realm": "eotheod",
      "status": "event",
@@ -3421,6 +3414,13 @@
      "status": "event",
      "what": "Fram slays Scatha the Worm — dragon-gold and a Dwarf-feud",
      "when": "c. 2000"
+    },
+    {
+     "cite": "UT, Cirion & Eorl [C]",
+     "realm": "eotheod",
+     "status": "event",
+     "what": "Eorl answers the Red Arrow's forerunner: the ride south to Celebrant",
+     "when": "2509–10"
     }
    ],
    "types": [
@@ -3494,48 +3494,6 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "App A III [C]",
-     "realm": "erebor",
-     "status": "event",
-     "what": "The kings remove to the Grey Mountains until dragons and the Cold-drakes drive them back (Dáin I slain at his door)",
-     "when": "2210–2589"
-    },
-    {
-     "cite": "App A III [C]",
-     "realm": "erebor",
-     "status": "event",
-     "what": "Smaug descends; the Exile: Dunland wanderings, Azanulbizar's war (2793–99), the Ered Luin halls of Thorin",
-     "when": "2770"
-    },
-    {
-     "cite": "Hobbit; App A III [C]",
-     "realm": "erebor",
-     "status": "destroyed",
-     "what": "The Quest of Erebor; Thorin falls in the Five Armies; Dáin II Ironfoot King under the Mountain",
-     "when": "2941"
-    },
-    {
-     "cite": "Hobbit 15+; App A III [C]",
-     "realm": "ironhills",
-     "status": "event",
-     "what": "Dáin's five hundred come to Erebor; the lordship passes into the restored kingdom",
-     "when": "2941"
-    },
-    {
-     "cite": "App A/B [C]",
-     "realm": "dale",
-     "status": "destroyed",
-     "what": "The Battle of Dale: Brand falls with Dáin; the town holds siege in Erebor; then victory",
-     "when": "3019"
-    },
-    {
-     "cite": "App A/B [C]",
-     "realm": "erebor",
-     "status": "event",
-     "what": "The siege in the War; Thorin III Stonehelm; the realm flourishes into the Fourth Age",
-     "when": "3019"
-    },
-    {
      "cite": "App A III/B",
      "realm": null,
      "status": "besieged",
@@ -3557,11 +3515,46 @@
      "when": "T.A. 1999"
     },
     {
+     "cite": "App A III [C]",
+     "realm": "erebor",
+     "status": "event",
+     "what": "The kings remove to the Grey Mountains until dragons and the Cold-drakes drive them back (Dáin I slain at his door)",
+     "when": "2210–2589"
+    },
+    {
+     "cite": "App A III [C]",
+     "realm": "erebor",
+     "status": "event",
+     "what": "Smaug descends; the Exile: Dunland wanderings, Azanulbizar's war (2793–99), the Ered Luin halls of Thorin",
+     "when": "2770"
+    },
+    {
      "cite": "App A/B; Hobbit",
      "realm": null,
      "status": "event",
      "what": "Smaug descends on Erebor and Dale",
      "when": "T.A. 2770"
+    },
+    {
+     "cite": "Hobbit 1, 12 [C]",
+     "realm": "dale",
+     "status": "burned",
+     "what": "The bell-town in the Mountain's vale, rich on Erebor's traffic; Girion its last old lord — burned by Smaug",
+     "when": "before 2770"
+    },
+    {
+     "cite": "Hobbit; App A III [C]",
+     "realm": "erebor",
+     "status": "destroyed",
+     "what": "The Quest of Erebor; Thorin falls in the Five Armies; Dáin II Ironfoot King under the Mountain",
+     "when": "2941"
+    },
+    {
+     "cite": "Hobbit 15+; App A III [C]",
+     "realm": "ironhills",
+     "status": "event",
+     "what": "Dáin's five hundred come to Erebor; the lordship passes into the restored kingdom",
+     "when": "2941"
     },
     {
      "cite": "Hobbit; App A/B",
@@ -3571,11 +3564,18 @@
      "when": "T.A. 2941"
     },
     {
-     "cite": "Hobbit 1, 12 [C]",
+     "cite": "App A/B [C]",
      "realm": "dale",
-     "status": "burned",
-     "what": "The bell-town in the Mountain's vale, rich on Erebor's traffic; Girion its last old lord — burned by Smaug",
-     "when": "before 2770"
+     "status": "destroyed",
+     "what": "The Battle of Dale: Brand falls with Dáin; the town holds siege in Erebor; then victory",
+     "when": "3019"
+    },
+    {
+     "cite": "App A/B [C]",
+     "realm": "erebor",
+     "status": "event",
+     "what": "The siege in the War; Thorin III Stonehelm; the realm flourishes into the Fourth Age",
+     "when": "3019"
     }
    ],
    "types": [
@@ -3669,34 +3669,6 @@
      "when": "S.A."
     },
     {
-     "cite": "App B; UT",
-     "realm": null,
-     "status": "event",
-     "what": "Sauron comes in fair form to Eregion; Númenor begins permanent havens",
-     "when": "S.A. 1200"
-    },
-    {
-     "cite": "App B; UT",
-     "realm": null,
-     "status": "founded",
-     "what": "War of the Elves and Sauron; Eregion destroyed; Imladris founded",
-     "when": "S.A. 1693–1701"
-    },
-    {
-     "cite": "UT, Galadriel & Celeborn [C]",
-     "realm": "eregion",
-     "status": "event",
-     "what": "Sauron's invasion; Ost-in-Edhil razed; Celebrimbor dies bearing witness against him",
-     "when": "S.A. 1695–1697"
-    },
-    {
-     "cite": "UT; App B [C]",
-     "realm": "rivendell",
-     "status": "founded",
-     "what": "Founded by Elrond as a war-refuge of Eregion's remnant; besieged, then relieved",
-     "when": "S.A. 1697"
-    },
-    {
      "cite": "App B; UT [C]",
      "realm": "eregion",
      "status": "founded",
@@ -3718,11 +3690,39 @@
      "when": "S.A. 750–1697"
     },
     {
+     "cite": "App B; UT",
+     "realm": null,
+     "status": "event",
+     "what": "Sauron comes in fair form to Eregion; Númenor begins permanent havens",
+     "when": "S.A. 1200"
+    },
+    {
      "cite": "Silm, Of the Rings [C]",
      "realm": "eregion",
      "status": "event",
      "what": "Annatar among the Mírdain; the Rings of Power forged; the Three made by Celebrimbor alone",
      "when": "c. S.A. 1200–1590"
+    },
+    {
+     "cite": "App B; UT",
+     "realm": null,
+     "status": "founded",
+     "what": "War of the Elves and Sauron; Eregion destroyed; Imladris founded",
+     "when": "S.A. 1693–1701"
+    },
+    {
+     "cite": "UT, Galadriel & Celeborn [C]",
+     "realm": "eregion",
+     "status": "event",
+     "what": "Sauron's invasion; Ost-in-Edhil razed; Celebrimbor dies bearing witness against him",
+     "when": "S.A. 1695–1697"
+    },
+    {
+     "cite": "UT; App B [C]",
+     "realm": "rivendell",
+     "status": "founded",
+     "what": "Founded by Elrond as a war-refuge of Eregion's remnant; besieged, then relieved",
+     "when": "S.A. 1697"
     }
    ],
    "types": [
@@ -3781,18 +3781,18 @@
      "when": "(age-old)"
     },
     {
-     "cite": "Hobbit 14 [C]",
-     "realm": "esgaroth",
-     "status": "destroyed",
-     "what": "Smaug destroys the town; the Master flees with the gold; Bard's arrow ends the Dragon",
-     "when": "2941"
-    },
-    {
      "cite": "Hobbit 19 [C]",
      "realm": "esgaroth",
      "status": "built",
      "what": "Rebuilt fairer; a new Master chosen",
      "when": "after"
+    },
+    {
+     "cite": "Hobbit 14 [C]",
+     "realm": "esgaroth",
+     "status": "destroyed",
+     "what": "Smaug destroys the town; the Master flees with the gold; Bard's arrow ends the Dragon",
+     "when": "2941"
     }
    ],
    "types": [
@@ -3892,18 +3892,18 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "Silm 20 [C]",
-     "realm": "falas",
-     "status": "besieged",
-     "what": "The Havens besieged and razed the year after the Nirnaeth; remnant to Balar and Sirion",
-     "when": "F.A. 473"
-    },
-    {
      "cite": "Silm 5, 10 [C]",
      "realm": "falas",
      "status": "built",
      "what": "Círdan's people remain by the shores for love of Ossë; the walled Havens built",
      "when": "Y.T."
+    },
+    {
+     "cite": "Silm 20 [C]",
+     "realm": "falas",
+     "status": "besieged",
+     "what": "The Havens besieged and razed the year after the Nirnaeth; remnant to Balar and Sirion",
+     "when": "F.A. 473"
     }
    ],
    "types": [
@@ -4197,10 +4197,10 @@
    "timeline": [
     {
      "cite": "App A [C]",
-     "realm": "angmar",
-     "status": "taken",
-     "what": "Fornost taken — then the realm annihilated by Eärnil's host and Glorfindel: 'not a man nor an orc of that realm remained west of the Mountains'",
-     "when": "1974–75"
+     "realm": "arthedain",
+     "status": "event",
+     "what": "Amlaith, eldest son of Eärendur, holds Fornost and the west",
+     "when": "T.A. 861"
     },
     {
      "cite": "App A [C]",
@@ -4210,18 +4210,18 @@
      "when": "T.A. 1409–1974"
     },
     {
+     "cite": "App A [C]",
+     "realm": "angmar",
+     "status": "taken",
+     "what": "Fornost taken — then the realm annihilated by Eärnil's host and Glorfindel: 'not a man nor an orc of that realm remained west of the Mountains'",
+     "when": "1974–75"
+    },
+    {
      "cite": "App A/B",
      "realm": null,
      "status": "event",
      "what": "Fall of Arthedain; Battle of Fornost; Angmar broken",
      "when": "T.A. 1974–75"
-    },
-    {
-     "cite": "App A [C]",
-     "realm": "arthedain",
-     "status": "event",
-     "what": "Amlaith, eldest son of Eärendur, holds Fornost and the west",
-     "when": "T.A. 861"
     }
    ],
    "types": [
@@ -4402,6 +4402,13 @@
    "place_conf": "H",
    "timeline": [
     {
+     "cite": "Silm 15 [C]",
+     "realm": "gondolin",
+     "status": "event",
+     "what": "Turgon, guided by Ulmo, finds Tumladen and builds the city in secret",
+     "when": "F.A. 52–104"
+    },
+    {
      "cite": "Silm 15; GA",
      "realm": null,
      "status": "event",
@@ -4442,13 +4449,6 @@
      "status": "event",
      "what": "The Fall of Gondolin; Glorfindel's duel",
      "when": "F.A. 510"
-    },
-    {
-     "cite": "Silm 15 [C]",
-     "realm": "gondolin",
-     "status": "event",
-     "what": "Turgon, guided by Ulmo, finds Tumladen and builds the city in secret",
-     "when": "F.A. 52–104"
     },
     {
      "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
@@ -4493,13 +4493,6 @@
      "when": "1851–1944"
     },
     {
-     "cite": "App B",
-     "realm": null,
-     "status": "event",
-     "what": "King Éomer dies; Merry and Pippin ride to Rohan and Gondor, and rest in Rath Dínen",
-     "when": "F.o.A. 63"
-    },
-    {
      "cite": "App A/B [C]",
      "realm": "gondor",
      "status": "founded",
@@ -4512,6 +4505,27 @@
      "status": "founded",
      "what": "Arnor and Gondor founded",
      "when": "S.A. 3320"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "gondor",
+     "status": "taken",
+     "what": "The four Ship-kings: Umbar taken, the realm 'reached the summit of its power' under Hyarmendacil I",
+     "when": "T.A. 830–1149"
+    },
+    {
+     "cite": "App A I(iv)",
+     "realm": null,
+     "status": "event",
+     "what": "Gondor's zenith: the Ship-kings take Umbar; Hyarmendacil's peace",
+     "when": "T.A. 933–1050"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "umbar",
+     "status": "event",
+     "what": "Gondor takes Umbar (Eärnil I); the rebels of the Kin-strife flee here after 1448 — the Corsair age begins",
+     "when": "T.A. 933–1448"
     },
     {
      "cite": "App A/B [C]",
@@ -4584,25 +4598,11 @@
      "when": "T.A. 3019"
     },
     {
-     "cite": "App A [C]",
-     "realm": "gondor",
-     "status": "taken",
-     "what": "The four Ship-kings: Umbar taken, the realm 'reached the summit of its power' under Hyarmendacil I",
-     "when": "T.A. 830–1149"
-    },
-    {
-     "cite": "App A I(iv)",
+     "cite": "App B",
      "realm": null,
      "status": "event",
-     "what": "Gondor's zenith: the Ship-kings take Umbar; Hyarmendacil's peace",
-     "when": "T.A. 933–1050"
-    },
-    {
-     "cite": "App A [C]",
-     "realm": "umbar",
-     "status": "event",
-     "what": "Gondor takes Umbar (Eärnil I); the rebels of the Kin-strife flee here after 1448 — the Corsair age begins",
-     "when": "T.A. 933–1448"
+     "what": "King Éomer dies; Merry and Pippin ride to Rohan and Gondor, and rest in Rath Dínen",
+     "when": "F.o.A. 63"
     }
    ],
    "types": [
@@ -4829,20 +4829,6 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "App A [C]",
-     "realm": "harad",
-     "status": "event",
-     "what": "Alliance with the Wainriders; the Poros crossings — the sons of Folcwine fall",
-     "when": "1944 / 2885"
-    },
-    {
-     "cite": "LotR IV.4, V.6; App A/B [C]",
-     "realm": "harad",
-     "status": "destroyed",
-     "what": "The great levy for Sauron: mûmakil at the Pelennor, the Southron army destroyed in Ithilien and before the walls; peace made by Elessar after",
-     "when": "3019"
-    },
-    {
      "cite": "Akallabêth; UT [C]",
      "realm": "harad",
      "status": "event",
@@ -4862,6 +4848,20 @@
      "status": "event",
      "what": "Telumehtar Umbardacil retakes it briefly; lost again to Harad",
      "when": "T.A. 1810"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "harad",
+     "status": "event",
+     "what": "Alliance with the Wainriders; the Poros crossings — the sons of Folcwine fall",
+     "when": "1944 / 2885"
+    },
+    {
+     "cite": "LotR IV.4, V.6; App A/B [C]",
+     "realm": "harad",
+     "status": "destroyed",
+     "what": "The great levy for Sauron: mûmakil at the Pelennor, the Southron army destroyed in Ithilien and before the walls; peace made by Elessar after",
+     "when": "3019"
     }
    ],
    "types": [
@@ -5153,18 +5153,18 @@
    "place_conf": "High",
    "timeline": [
     {
-     "cite": "LotR II.1 [C]",
-     "realm": "beornings",
-     "status": "event",
-     "what": "Grimbeorn the Old holds the High Pass and the Carrock-ford tolls; 'neither orc nor wolf' dare his lands",
-     "when": "3018–19"
-    },
-    {
      "cite": "App A/B; Hobbit 4 [C]",
      "realm": "mistyorcs",
      "status": "event",
      "what": "Orcs multiply; Moria colonized by Azog; the High Pass tolls in blood (Goblin-town's Great Goblin)",
      "when": "T.A. 2480+"
+    },
+    {
+     "cite": "LotR II.1 [C]",
+     "realm": "beornings",
+     "status": "event",
+     "what": "Grimbeorn the Old holds the High Pass and the Carrock-ford tolls; 'neither orc nor wolf' dare his lands",
+     "when": "3018–19"
     }
    ],
    "types": [
@@ -5221,6 +5221,13 @@
    "place_conf": "H",
    "timeline": [
     {
+     "cite": "Silm 13–14 [C]",
+     "realm": "himring",
+     "status": "event",
+     "what": "After Thingol's word, the sons of Fëanor remove east; Maedhros holds Himring",
+     "when": "F.A. 7"
+    },
+    {
      "cite": "Silm 18 [C]",
      "realm": "himring",
      "status": "event",
@@ -5233,13 +5240,6 @@
      "status": "event",
      "what": "After the Nirnaeth the March is broken; the brothers scatter to Ossiriand's eaves",
      "when": "F.A. 473"
-    },
-    {
-     "cite": "Silm 13–14 [C]",
-     "realm": "himring",
-     "status": "event",
-     "what": "After Thingol's word, the sons of Fëanor remove east; Maedhros holds Himring",
-     "when": "F.A. 7"
     },
     {
      "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
@@ -5542,15 +5542,15 @@
      "cite": "App A III [C]",
      "realm": "ironhills",
      "status": "event",
-     "what": "Náin and the Iron Hills' mattock-host decide Azanulbizar; Dáin II slays Azog on the Gate-stair",
-     "when": "2799"
+     "what": "Grór, Dáin I's younger son, settles the Iron Hills as the Grey Mountains empty",
+     "when": "T.A. 2590"
     },
     {
      "cite": "App A III [C]",
      "realm": "ironhills",
      "status": "event",
-     "what": "Grór, Dáin I's younger son, settles the Iron Hills as the Grey Mountains empty",
-     "when": "T.A. 2590"
+     "what": "Náin and the Iron Hills' mattock-host decide Azanulbizar; Dáin II slays Azog on the Gate-stair",
+     "when": "2799"
     },
     {
      "cite": "Hobbit 15+; App A III [C]",
@@ -5622,11 +5622,11 @@
      "when": "(of old)"
     },
     {
-     "cite": "LotR III.8–10 [C]",
+     "cite": "LotR VI.6 [C]",
      "realm": "isengard",
-     "status": "drowned",
-     "what": "The Hill of the Ring-forges in little: bred Uruk-hai, wolf-riders, the dammed Isen; war on Rohan; drowned by the Ents in a night",
-     "when": "3014–19"
+     "status": "event",
+     "what": "The Treegarth of Orthanc: the tower rendered to the King, the ring un-walled by Ent-work",
+     "when": "after"
     },
     {
      "cite": "LotR III.7-9; App B",
@@ -5650,18 +5650,18 @@
      "when": "T.A. 2953"
     },
     {
+     "cite": "LotR III.8–10 [C]",
+     "realm": "isengard",
+     "status": "drowned",
+     "what": "The Hill of the Ring-forges in little: bred Uruk-hai, wolf-riders, the dammed Isen; war on Rohan; drowned by the Ents in a night",
+     "when": "3014–19"
+    },
+    {
      "cite": "LotR III.4, 8–9 [C]",
      "realm": "fangorn",
      "status": "event",
      "what": "The Entmoot; the march on Isengard ('the last march of the Ents'); the Huorns at the Hornburg; the Treegarth after",
      "when": "T.A. 3019"
-    },
-    {
-     "cite": "LotR VI.6 [C]",
-     "realm": "isengard",
-     "status": "event",
-     "what": "The Treegarth of Orthanc: the tower rendered to the King, the ring un-walled by Ent-work",
-     "when": "after"
     }
    ],
    "types": [
@@ -5811,18 +5811,18 @@
    "place_conf": "High",
    "timeline": [
     {
-     "cite": "LotR V.6 [C]",
-     "realm": "khand",
-     "status": "event",
-     "what": "'Variags of Khand' in the second wave at the Pelennor",
-     "when": "3019"
-    },
-    {
      "cite": "App A [C]",
      "realm": "khand",
      "status": "event",
      "what": "Variags join the Wainriders' great combination against Gondor",
      "when": "T.A. 1944"
+    },
+    {
+     "cite": "LotR V.6 [C]",
+     "realm": "khand",
+     "status": "event",
+     "what": "'Variags of Khand' in the second wave at the Pelennor",
+     "when": "3019"
     }
    ],
    "types": [
@@ -5847,11 +5847,11 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "LotR II.5; App B",
-     "realm": null,
-     "status": "destroyed",
-     "what": "The Bridge of Khazad-dûm: Gandalf falls with the Balrog",
-     "when": "Jan 15, 3019"
+     "cite": "Silm 10; App A III [C]",
+     "realm": "khazaddum",
+     "status": "founded",
+     "what": "Durin the Deathless wakes at Gundabad and founds the mansion above Kheled-zâram",
+     "when": "Y.T."
     },
     {
      "cite": "App A III [C]",
@@ -5859,6 +5859,13 @@
      "status": "event",
      "what": "Refugees of Nogrod and Belegost swell it; 'its wealth and its renown' greatest",
      "when": "S.A. 40+"
+    },
+    {
+     "cite": "App A III [C]",
+     "realm": "belegost",
+     "status": "event",
+     "what": "Ered Luin broken in the War of Wrath's tumults; many remove to Khazad-dûm",
+     "when": "S.A. c.40"
     },
     {
      "cite": "App B; UT [C]",
@@ -5875,11 +5882,11 @@
      "when": "S.A. 750–1697"
     },
     {
-     "cite": "App A III [C]",
-     "realm": "belegost",
-     "status": "event",
-     "what": "Ered Luin broken in the War of Wrath's tumults; many remove to Khazad-dûm",
-     "when": "S.A. c.40"
+     "cite": "LotR II.5; App B",
+     "realm": null,
+     "status": "destroyed",
+     "what": "The Bridge of Khazad-dûm: Gandalf falls with the Balrog",
+     "when": "Jan 15, 3019"
     },
     {
      "cite": "App A/B",
@@ -5901,13 +5908,6 @@
      "status": "event",
      "what": "Balin's colony and its end in Mazarbul",
      "when": "T.A. 2989–94"
-    },
-    {
-     "cite": "Silm 10; App A III [C]",
-     "realm": "khazaddum",
-     "status": "founded",
-     "what": "Durin the Deathless wakes at Gundabad and founds the mansion above Kheled-zâram",
-     "when": "Y.T."
     }
    ],
    "types": [
@@ -5931,18 +5931,18 @@
    "place_conf": "High",
    "timeline": [
     {
-     "cite": "Silm 18–19 [C]",
-     "realm": "ladros",
-     "status": "burned",
-     "what": "The Bragollach burns Dorthonion; Barahir's outlawry ends at Tarn Aeluin",
-     "when": "F.A. 455–460"
-    },
-    {
      "cite": "Silm 17 [C]",
      "realm": "ladros",
      "status": "granted",
      "what": "Ladros in north-east Dorthonion granted to the sons of Bëor by the sons of Finarfin",
      "when": "F.A. c.410"
+    },
+    {
+     "cite": "Silm 18–19 [C]",
+     "realm": "ladros",
+     "status": "burned",
+     "what": "The Bragollach burns Dorthonion; Barahir's outlawry ends at Tarn Aeluin",
+     "when": "F.A. 455–460"
     }
    ],
    "types": [
@@ -6400,13 +6400,6 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "App A/B [C]",
-     "realm": "lorien",
-     "status": "event",
-     "what": "Galadriel sails; Celeborn lingers, then to Imladris; the wood fades",
-     "when": "F.o.A."
-    },
-    {
      "cite": "UT, Galadriel & Celeborn [C]",
      "realm": "lorien",
      "status": "event",
@@ -6433,6 +6426,13 @@
      "status": "event",
      "what": "Thrice assailed from Dol Guldur, thrice holding; then Dol Guldur thrown down — Celeborn takes East Lórien",
      "when": "T.A. 3019"
+    },
+    {
+     "cite": "App A/B [C]",
+     "realm": "lorien",
+     "status": "event",
+     "what": "Galadriel sails; Celeborn lingers, then to Imladris; the wood fades",
+     "when": "F.o.A."
     }
    ],
    "types": [
@@ -6489,27 +6489,6 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "Silm 22 [C]",
-     "realm": "nogrod",
-     "status": "sacked",
-     "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
-     "when": "F.A. 502–503"
-    },
-    {
-     "cite": "Silm 22 [C]",
-     "realm": "doriath",
-     "status": "sacked",
-     "what": "Thingol slain in Menegroth; the Girdle withdrawn; the Dwarves sack Menegroth; the Second Kinslaying ends Dior's brief restoration",
-     "when": "F.A. 502–506"
-    },
-    {
-     "cite": "Silm 13 [C]",
-     "realm": "nargothrond",
-     "status": "event",
-     "what": "Finrod, shown Menegroth, delves Nargothrond in the caves of Narog",
-     "when": "F.A. 52–102"
-    },
-    {
      "cite": "Silm 4, 10 [C]",
      "realm": "doriath",
      "status": "built",
@@ -6522,6 +6501,27 @@
      "status": "built",
      "what": "Delved in Ered Luin's eastern flank; Menegroth built with their craft",
      "when": "Y.T."
+    },
+    {
+     "cite": "Silm 13 [C]",
+     "realm": "nargothrond",
+     "status": "event",
+     "what": "Finrod, shown Menegroth, delves Nargothrond in the caves of Narog",
+     "when": "F.A. 52–102"
+    },
+    {
+     "cite": "Silm 22 [C]",
+     "realm": "nogrod",
+     "status": "sacked",
+     "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
+     "when": "F.A. 502–503"
+    },
+    {
+     "cite": "Silm 22 [C]",
+     "realm": "doriath",
+     "status": "sacked",
+     "what": "Thingol slain in Menegroth; the Girdle withdrawn; the Dwarves sack Menegroth; the Second Kinslaying ends Dior's brief restoration",
+     "when": "F.A. 502–506"
     },
     {
      "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
@@ -6646,20 +6646,6 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "App A [C]",
-     "realm": "morgul",
-     "status": "event",
-     "what": "The Witch-king's challenges; King Eärnur rides through its gate and is never seen again — the kings end here",
-     "when": "2043–50"
-    },
-    {
-     "cite": "LotR IV.8, VI.5 [C]",
-     "realm": "morgul",
-     "status": "event",
-     "what": "The Morgul-host marches ('all that host was black'); after the War the vale is cleansed and the tower thrown down by Elessar's decree",
-     "when": "3019"
-    },
-    {
      "cite": "App A/B [C]",
      "realm": "morgul",
      "status": "besieged",
@@ -6672,6 +6658,20 @@
      "status": "destroyed",
      "what": "Minas Ithil falls: Minas Morgul",
      "when": "T.A. 2002"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "morgul",
+     "status": "event",
+     "what": "The Witch-king's challenges; King Eärnur rides through its gate and is never seen again — the kings end here",
+     "when": "2043–50"
+    },
+    {
+     "cite": "LotR IV.8, VI.5 [C]",
+     "realm": "morgul",
+     "status": "event",
+     "what": "The Morgul-host marches ('all that host was black'); after the War the vale is cleansed and the tower thrown down by Elessar's decree",
+     "when": "3019"
     }
    ],
    "types": [
@@ -6827,20 +6827,6 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "App B [C]",
-     "realm": "dolguldur",
-     "status": "event",
-     "what": "The White Council drives Sauron out — into prepared Mordor",
-     "when": "2941"
-    },
-    {
-     "cite": "Silm; App B [C]",
-     "realm": "mordor",
-     "status": "event",
-     "what": "The Siege of Barad-dûr; Sauron overthrown by Elendil and Gil-galad",
-     "when": "S.A. 3434–3441"
-    },
-    {
      "cite": "App B; Silm [C]",
      "realm": "mordor",
      "status": "event",
@@ -6853,6 +6839,20 @@
      "status": "event",
      "what": "Sauron chooses Mordor; Barad-dûr begun",
      "when": "S.A. c.1000"
+    },
+    {
+     "cite": "App B [C]",
+     "realm": "dolguldur",
+     "status": "event",
+     "what": "The White Council drives Sauron out — into prepared Mordor",
+     "when": "2941"
+    },
+    {
+     "cite": "Silm; App B [C]",
+     "realm": "mordor",
+     "status": "event",
+     "what": "The Siege of Barad-dûr; Sauron overthrown by Elendil and Gil-galad",
+     "when": "S.A. 3434–3441"
     },
     {
      "cite": "App A/B [C]",
@@ -7176,6 +7176,20 @@
    "place_conf": "H",
    "timeline": [
     {
+     "cite": "Silm 13; Grey Annals",
+     "realm": null,
+     "status": "founded",
+     "what": "Nargothrond founded by Finrod",
+     "when": "F.A. 52"
+    },
+    {
+     "cite": "Silm 13 [C]",
+     "realm": "nargothrond",
+     "status": "event",
+     "what": "Finrod, shown Menegroth, delves Nargothrond in the caves of Narog",
+     "when": "F.A. 52–102"
+    },
+    {
      "cite": "Silm 19 [C]",
      "realm": "nargothrond",
      "status": "event",
@@ -7195,20 +7209,6 @@
      "status": "sacked",
      "what": "Tumhalad; the Sack of Nargothrond",
      "when": "F.A. 495"
-    },
-    {
-     "cite": "Silm 13; Grey Annals",
-     "realm": null,
-     "status": "founded",
-     "what": "Nargothrond founded by Finrod",
-     "when": "F.A. 52"
-    },
-    {
-     "cite": "Silm 13 [C]",
-     "realm": "nargothrond",
-     "status": "event",
-     "what": "Finrod, shown Menegroth, delves Nargothrond in the caves of Narog",
-     "when": "F.A. 52–102"
     },
     {
      "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
@@ -7377,20 +7377,6 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "Silm 22 [C]",
-     "realm": "nogrod",
-     "status": "sacked",
-     "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
-     "when": "F.A. 502–503"
-    },
-    {
-     "cite": "App A III [C]",
-     "realm": "khazaddum",
-     "status": "event",
-     "what": "Refugees of Nogrod and Belegost swell it; 'its wealth and its renown' greatest",
-     "when": "S.A. 40+"
-    },
-    {
      "cite": "Silm 10 [C]",
      "realm": "nogrod",
      "status": "built",
@@ -7398,11 +7384,25 @@
      "when": "Y.T."
     },
     {
+     "cite": "Silm 22 [C]",
+     "realm": "nogrod",
+     "status": "sacked",
+     "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
+     "when": "F.A. 502–503"
+    },
+    {
      "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]",
      "realm": null,
      "status": "drowned",
      "what": "Beleriand was drowned; this place stood in that land",
      "when": "F.A. 587 (War of Wrath)"
+    },
+    {
+     "cite": "App A III [C]",
+     "realm": "khazaddum",
+     "status": "event",
+     "what": "Refugees of Nogrod and Belegost swell it; 'its wealth and its renown' greatest",
+     "when": "S.A. 40+"
     }
    ],
    "types": [
@@ -7449,6 +7449,27 @@
    "place_conf": "H",
    "timeline": [
     {
+     "cite": "Akallabêth; App A [C]",
+     "realm": "numenor",
+     "status": "built",
+     "what": "Elros Tar-Minyatur takes the Sceptre in the land raised by the Valar",
+     "when": "S.A. 32"
+    },
+    {
+     "cite": "App B; Akallabêth",
+     "realm": null,
+     "status": "event",
+     "what": "The Edain reach Númenor",
+     "when": "S.A. 32"
+    },
+    {
+     "cite": "UT, Aldarion & Erendis [C]",
+     "realm": "numenor",
+     "status": "founded",
+     "what": "The ships return to Middle-earth: Vëantur, Aldarion and the Guild of Venturers; havens founded",
+     "when": "S.A. 600–1200"
+    },
+    {
      "cite": "App B; UT",
      "realm": null,
      "status": "event",
@@ -7484,20 +7505,6 @@
      "when": "S.A. 2280"
     },
     {
-     "cite": "Akallabêth; App A [C]",
-     "realm": "numenor",
-     "status": "built",
-     "what": "Elros Tar-Minyatur takes the Sceptre in the land raised by the Valar",
-     "when": "S.A. 32"
-    },
-    {
-     "cite": "App B; Akallabêth",
-     "realm": null,
-     "status": "event",
-     "what": "The Edain reach Númenor",
-     "when": "S.A. 32"
-    },
-    {
      "cite": "App B; Akallabêth",
      "realm": null,
      "status": "event",
@@ -7510,13 +7517,6 @@
      "status": "event",
      "what": "The Great Armament sails against Valinor; the Downfall",
      "when": "S.A. 3319"
-    },
-    {
-     "cite": "UT, Aldarion & Erendis [C]",
-     "realm": "numenor",
-     "status": "founded",
-     "what": "The ships return to Middle-earth: Vëantur, Aldarion and the Guild of Venturers; havens founded",
-     "when": "S.A. 600–1200"
     }
    ],
    "types": [
@@ -7694,13 +7694,6 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "LotR II.2; App B",
-     "realm": null,
-     "status": "event",
-     "what": "The assault on Osgiliath: the war begins; the last bridge cast down",
-     "when": "June 3018"
-    },
-    {
      "cite": "App A/B [C]",
      "realm": "gondor",
      "status": "founded",
@@ -7713,6 +7706,13 @@
      "status": "burned",
      "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
      "when": "T.A. 1432–48"
+    },
+    {
+     "cite": "LotR II.2; App B",
+     "realm": null,
+     "status": "event",
+     "what": "The assault on Osgiliath: the war begins; the last bridge cast down",
+     "when": "June 3018"
     }
    ],
    "types": [
@@ -7746,18 +7746,18 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "UT, Galadriel & Celeborn [C]",
-     "realm": "eregion",
-     "status": "event",
-     "what": "Sauron's invasion; Ost-in-Edhil razed; Celebrimbor dies bearing witness against him",
-     "when": "S.A. 1695–1697"
-    },
-    {
      "cite": "App B; UT [C]",
      "realm": "eregion",
      "status": "founded",
      "what": "Founded by Noldor drawn to Khazad-dûm's mithril; Ost-in-Edhil built",
      "when": "S.A. 750"
+    },
+    {
+     "cite": "UT, Galadriel & Celeborn [C]",
+     "realm": "eregion",
+     "status": "event",
+     "what": "Sauron's invasion; Ost-in-Edhil razed; Celebrimbor dies bearing witness against him",
+     "when": "S.A. 1695–1697"
     }
    ],
    "types": [
@@ -7937,27 +7937,6 @@
    "timeline": [
     {
      "cite": "App A [C]",
-     "realm": "angmar",
-     "status": "event",
-     "what": "The great assault: Amon Sûl razed, Rhudaur absorbed, Cardolan broken",
-     "when": "1409"
-    },
-    {
-     "cite": "App A; LotR I.12 [C]",
-     "realm": "rhudaur",
-     "status": "ruined",
-     "what": "Its force spent as Angmar's vanguard; the land after holds only trolls and ruin",
-     "when": "T.A. 1409"
-    },
-    {
-     "cite": "App A/B",
-     "realm": null,
-     "status": "event",
-     "what": "Amon Sûl razed; Rhudaur extinguished",
-     "when": "T.A. 1409"
-    },
-    {
-     "cite": "App A [C]",
      "realm": "arnor",
      "status": "event",
      "what": "At Eärendur's death the sons divide it: Arthedain, Cardolan, Rhudaur",
@@ -7983,6 +7962,27 @@
      "status": "event",
      "what": "'an evil lord of the Hill-men' seizes power in secret league with Angmar; the Dúnedain remnant flees",
      "when": "c. T.A. 1350"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "angmar",
+     "status": "event",
+     "what": "The great assault: Amon Sûl razed, Rhudaur absorbed, Cardolan broken",
+     "when": "1409"
+    },
+    {
+     "cite": "App A; LotR I.12 [C]",
+     "realm": "rhudaur",
+     "status": "ruined",
+     "what": "Its force spent as Angmar's vanguard; the land after holds only trolls and ruin",
+     "when": "T.A. 1409"
+    },
+    {
+     "cite": "App A/B",
+     "realm": null,
+     "status": "event",
+     "what": "Amon Sûl razed; Rhudaur extinguished",
+     "when": "T.A. 1409"
     }
    ],
    "types": [
@@ -8010,6 +8010,13 @@
      "cite": "App A [C]",
      "realm": "rhun",
      "status": "event",
+     "what": "Rómendacil II breaks the Easterlings to the Sea of Rhûn",
+     "when": "T.A. 1248"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "rhun",
+     "status": "event",
      "what": "The Wainrider empire: Gondor's eastern provinces lost, King Ondoher slain — ended at the Camp by Eärnil II",
      "when": "1851–1944"
     },
@@ -8026,13 +8033,6 @@
      "status": "event",
      "what": "Easterling armies at the Morannon and Dale; peace of Elessar after",
      "when": "3019"
-    },
-    {
-     "cite": "App A [C]",
-     "realm": "rhun",
-     "status": "event",
-     "what": "Rómendacil II breaks the Easterlings to the Sea of Rhûn",
-     "when": "T.A. 1248"
     }
    ],
    "types": [
@@ -8086,13 +8086,6 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "App A/B [C]",
-     "realm": "rivendell",
-     "status": "event",
-     "what": "Elrond sails; Celeborn and the sons of Elrond abide a while",
-     "when": "F.o.A."
-    },
-    {
      "cite": "UT; App B [C]",
      "realm": "rivendell",
      "status": "founded",
@@ -8112,6 +8105,13 @@
      "status": "destroyed",
      "what": "The Council of Elrond; the Fellowship goes out",
      "when": "T.A. 3018"
+    },
+    {
+     "cite": "App A/B [C]",
+     "realm": "rivendell",
+     "status": "event",
+     "what": "Elrond sails; Celeborn and the sons of Elrond abide a while",
+     "when": "F.o.A."
     }
    ],
    "types": [
@@ -8173,6 +8173,13 @@
    "place_conf": "L",
    "timeline": [
     {
+     "cite": "UT, Cirion & Eorl; App A [C]",
+     "realm": "rohan",
+     "status": "event",
+     "what": "Eorl's ride to Celebrant; Cirion's gift of Calenardhon; the Oath sworn on Halifirien",
+     "when": "T.A. 2510"
+    },
+    {
      "cite": "App A [C]",
      "realm": "rohan",
      "status": "event",
@@ -8185,13 +8192,6 @@
      "status": "event",
      "what": "Saruman's grip on Théoden; the War: Isen, Hornburg, the Ride, the Pelennor",
      "when": "3014–19"
-    },
-    {
-     "cite": "UT, Cirion & Eorl; App A [C]",
-     "realm": "rohan",
-     "status": "event",
-     "what": "Eorl's ride to Celebrant; Cirion's gift of Calenardhon; the Oath sworn on Halifirien",
-     "when": "T.A. 2510"
     }
    ],
    "types": [
@@ -8740,18 +8740,18 @@
    "place_conf": "High",
    "timeline": [
     {
-     "cite": "Silm 18 [C]",
-     "realm": "thargelion",
-     "status": "burned",
-     "what": "Burned in the Bragollach; Caranthir retreats to Amon Ereb",
-     "when": "F.A. 455"
-    },
-    {
      "cite": "Silm 13–14 [C]",
      "realm": "thargelion",
      "status": "event",
      "what": "Caranthir's folk settle between Gelion and Ered Luin by Lake Helevorn",
      "when": "F.A. 7"
+    },
+    {
+     "cite": "Silm 18 [C]",
+     "realm": "thargelion",
+     "status": "burned",
+     "what": "Burned in the Bragollach; Caranthir retreats to Amon Ereb",
+     "when": "F.A. 455"
     },
     {
      "cite": "Silm 17 [C]",
@@ -8941,6 +8941,20 @@
    "place_conf": "H",
    "timeline": [
     {
+     "cite": "LotR Prologue [C]",
+     "realm": "shire",
+     "status": "granted",
+     "what": "Marcho and Blanco granted the land from Baranduin to the Far Downs by King Argeleb II",
+     "when": "T.A. 1601"
+    },
+    {
+     "cite": "Prologue; App B",
+     "realm": null,
+     "status": "granted",
+     "what": "The Shire granted and colonised",
+     "when": "T.A. 1601"
+    },
+    {
      "cite": "App A/B [C]",
      "realm": "shire",
      "status": "event",
@@ -8967,20 +8981,6 @@
      "status": "granted",
      "what": "The ordering of the realm: the Shire made free and banned to Men; Drúadan granted; Núrn to the freed slaves; Ithilien to Faramir's princedom and Legolas's Elves; Rohan's oath renewed",
      "when": "F.o.A. 6–31"
-    },
-    {
-     "cite": "LotR Prologue [C]",
-     "realm": "shire",
-     "status": "granted",
-     "what": "Marcho and Blanco granted the land from Baranduin to the Far Downs by King Argeleb II",
-     "when": "T.A. 1601"
-    },
-    {
-     "cite": "Prologue; App B",
-     "realm": null,
-     "status": "granted",
-     "what": "The Shire granted and colonised",
-     "when": "T.A. 1601"
     }
    ],
    "types": [
@@ -9610,6 +9610,27 @@
     },
     {
      "cite": "App A [C]",
+     "realm": "gondor",
+     "status": "taken",
+     "what": "The four Ship-kings: Umbar taken, the realm 'reached the summit of its power' under Hyarmendacil I",
+     "when": "T.A. 830–1149"
+    },
+    {
+     "cite": "App A I(iv)",
+     "realm": null,
+     "status": "event",
+     "what": "Gondor's zenith: the Ship-kings take Umbar; Hyarmendacil's peace",
+     "when": "T.A. 933–1050"
+    },
+    {
+     "cite": "App A [C]",
+     "realm": "umbar",
+     "status": "event",
+     "what": "Gondor takes Umbar (Eärnil I); the rebels of the Kin-strife flee here after 1448 — the Corsair age begins",
+     "when": "T.A. 933–1448"
+    },
+    {
+     "cite": "App A [C]",
      "realm": "harad",
      "status": "event",
      "what": "Wars with Gondor's Ship-kings; Umbar's loss and the Harad kings' homage to Hyarmendacil",
@@ -9635,27 +9656,6 @@
      "status": "burned",
      "what": "Thorongil's raid burns the fleet; the Corsairs' last armament dies at Pelargir",
      "when": "T.A. 2980–3019"
-    },
-    {
-     "cite": "App A [C]",
-     "realm": "gondor",
-     "status": "taken",
-     "what": "The four Ship-kings: Umbar taken, the realm 'reached the summit of its power' under Hyarmendacil I",
-     "when": "T.A. 830–1149"
-    },
-    {
-     "cite": "App A I(iv)",
-     "realm": null,
-     "status": "event",
-     "what": "Gondor's zenith: the Ship-kings take Umbar; Hyarmendacil's peace",
-     "when": "T.A. 933–1050"
-    },
-    {
-     "cite": "App A [C]",
-     "realm": "umbar",
-     "status": "event",
-     "what": "Gondor takes Umbar (Eärnil I); the rebels of the Kin-strife flee here after 1448 — the Corsair age begins",
-     "when": "T.A. 933–1448"
     }
    ],
    "types": [
@@ -9725,18 +9725,18 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "Silm 1, 3 [C]",
-     "realm": "utumno",
-     "status": "built",
-     "what": "Delved 'exceeding deep' under the northern mountains; the Lamps cast down from it",
-     "when": "Lamps' era"
-    },
-    {
      "cite": "Silm 3 [C]",
      "realm": "utumno",
      "status": "event",
      "what": "The Battle of the Powers; Utumno unroofed; Melkor chained",
      "when": "Y.T. 1090–1099"
+    },
+    {
+     "cite": "Silm 1, 3 [C]",
+     "realm": "utumno",
+     "status": "built",
+     "what": "Delved 'exceeding deep' under the northern mountains; the Lamps cast down from it",
+     "when": "Lamps' era"
     }
    ],
    "types": [
@@ -9792,34 +9792,6 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "Silm 24 [C]",
-     "realm": "valinor",
-     "status": "event",
-     "what": "The Host of Valinor marches — the War of Wrath",
-     "when": "F.A. 583–587"
-    },
-    {
-     "cite": "Silm 24",
-     "realm": null,
-     "status": "event",
-     "what": "Eärendil's embassy reaches Valinor; the Star ascends",
-     "when": "F.A. c.542"
-    },
-    {
-     "cite": "Akallabêth [C]",
-     "realm": "valinor",
-     "status": "event",
-     "what": "Valinor removed from the circles of the world at the Downfall",
-     "when": "S.A. 3319"
-    },
-    {
-     "cite": "Akallabêth [C]",
-     "realm": "numenor",
-     "status": "event",
-     "what": "The Great Armament sails against Valinor; the Downfall",
-     "when": "S.A. 3319"
-    },
-    {
      "cite": "Silm 1 [C]",
      "realm": "valinor",
      "status": "built",
@@ -9839,6 +9811,34 @@
      "status": "event",
      "what": "Darkening of Valinor; Kinslaying at Alqualondë; the Flight",
      "when": "Y.T. 1495"
+    },
+    {
+     "cite": "Silm 24",
+     "realm": null,
+     "status": "event",
+     "what": "Eärendil's embassy reaches Valinor; the Star ascends",
+     "when": "F.A. c.542"
+    },
+    {
+     "cite": "Silm 24 [C]",
+     "realm": "valinor",
+     "status": "event",
+     "what": "The Host of Valinor marches — the War of Wrath",
+     "when": "F.A. 583–587"
+    },
+    {
+     "cite": "Akallabêth [C]",
+     "realm": "valinor",
+     "status": "event",
+     "what": "Valinor removed from the circles of the world at the Downfall",
+     "when": "S.A. 3319"
+    },
+    {
+     "cite": "Akallabêth [C]",
+     "realm": "numenor",
+     "status": "event",
+     "what": "The Great Armament sails against Valinor; the Downfall",
+     "when": "S.A. 3319"
     }
    ],
    "types": [
