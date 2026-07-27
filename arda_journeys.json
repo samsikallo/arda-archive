@@ -66,6 +66,14 @@
   },
   {
    "frame": "TA",
+   "id": "pelennor",
+   "key": "the pelennor",
+   "name": "The Pelennor (3019)",
+   "x": 5470.0,
+   "y": 3585.0
+  },
+  {
+   "frame": "TA",
    "id": "dale",
    "key": "erebor",
    "name": "Dale & Erebor (3019)",
@@ -93,12 +101,18 @@
   {
    "colour": "#c9a227",
    "id": "fellowship",
-   "n_drawn": 8,
-   "n_placed": 9,
+   "n_drawn": 9,
+   "n_placed": 11,
    "n_stages": 16,
    "name": "The Ring goes south (Sept 23 – Feb 26)",
    "segments": [
     [
+     [
+      2840.0,
+      1585.0,
+      "bag end",
+      "Bag End — Frodo sets out (Sept 23)"
+     ],
      [
       3000.0,
       1635.0,
@@ -154,12 +168,12 @@
    "stages": [
     {
      "day": 1,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "bag end",
      "label": "Bag End — Frodo sets out (Sept 23)",
      "note": "'He walked briskly back to Bag End... a very trying time.'",
-     "x": null,
-     "y": null
+     "x": 218,
+     "y": 668
     },
     {
      "day": 3,
@@ -289,24 +303,30 @@
     },
     {
      "day": 158,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "parth galen",
      "label": "Parth Galen: the Breaking (Feb 26)",
      "note": "'I will take the Ring, though I do not know the way.'",
-     "x": null,
-     "y": null
+     "x": 612,
+     "y": 405
     }
    ]
   },
   {
    "colour": "#eda100",
    "id": "frodo",
-   "n_drawn": 4,
-   "n_placed": 5,
+   "n_drawn": 5,
+   "n_placed": 6,
    "n_stages": 10,
    "name": "Frodo & Sam to the Fire (Feb 26 – Mar 25)",
    "segments": [
     [
+     [
+      4810.0,
+      2900.0,
+      "parth galen",
+      "Parth Galen (Feb 26)"
+     ],
      [
       4750.0,
       2855.0,
@@ -336,12 +356,12 @@
    "stages": [
     {
      "day": 158,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "parth galen",
      "label": "Parth Galen (Feb 26)",
      "note": null,
-     "x": null,
-     "y": null
+     "x": 612,
+     "y": 405
     },
     {
      "day": 160,
@@ -429,12 +449,18 @@
   {
    "colour": "#008300",
    "id": "aragorn",
-   "n_drawn": 8,
-   "n_placed": 8,
+   "n_drawn": 11,
+   "n_placed": 11,
    "n_stages": 12,
    "name": "The Three Hunters & the Grey Company (Feb 26 – Mar 15)",
    "segments": [
     [
+     [
+      4810.0,
+      2900.0,
+      "parth galen",
+      "Parth Galen (Feb 26)"
+     ],
      [
       4550.0,
       2475.0,
@@ -466,9 +492,13 @@
       3210.0,
       "dunharrow",
       "Dunharrow: the Grey Company (Mar 7-8)"
-     ]
-    ],
-    [
+     ],
+     [
+      4430.0,
+      3210.0,
+      "the paths of the dead",
+      "The Paths of the Dead (Mar 8)"
+     ],
      [
       4400.0,
       3350.0,
@@ -486,18 +516,24 @@
       3925.0,
       "pelargir",
       "Pelargir: the fleet taken (Mar 13)"
+     ],
+     [
+      5470.0,
+      3585.0,
+      "the pelennor",
+      "The Pelennor: the standard unfurled (Mar 15)"
      ]
     ]
    ],
    "stages": [
     {
      "day": 158,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "parth galen",
      "label": "Parth Galen (Feb 26)",
      "note": null,
-     "x": null,
-     "y": null
+     "x": 612,
+     "y": 405
     },
     {
      "day": 160,
@@ -555,12 +591,12 @@
     },
     {
      "day": 169,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "the paths of the dead",
      "label": "The Paths of the Dead (Mar 8)",
      "note": "'The Dead follow us... they are summoned.'",
-     "x": null,
-     "y": null
+     "x": 536,
+     "y": 343
     },
     {
      "day": 169.5,
@@ -591,12 +627,12 @@
     },
     {
      "day": 176,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "the pelennor",
      "label": "The Pelennor: the standard unfurled (Mar 15)",
      "note": "'Thus came Aragorn son of Arathorn... borne upon a wind from the Sea.'",
-     "x": null,
-     "y": null
+     "x": 744,
+     "y": 268
     }
    ]
   },
@@ -677,8 +713,8 @@
   {
    "colour": "#e87ba4",
    "id": "rohirrim",
-   "n_drawn": 3,
-   "n_placed": 3,
+   "n_drawn": 4,
+   "n_placed": 4,
    "n_stages": 4,
    "name": "The Ride of the Rohirrim (Mar 10 – 15)",
    "segments": [
@@ -700,6 +736,12 @@
       3460.0,
       "druadan",
       "The Drúadan Forest: Ghân-buri-Ghân's road (Mar 13-14)"
+     ],
+     [
+      5470.0,
+      3585.0,
+      "the pelennor",
+      "Dawn on the Pelennor (Mar 15)"
      ]
     ]
    ],
@@ -733,12 +775,12 @@
     },
     {
      "day": 176,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "the pelennor",
      "label": "Dawn on the Pelennor (Mar 15)",
      "note": "'Death! Ride, ride to ruin and the world's ending!'",
-     "x": null,
-     "y": null
+     "x": 744,
+     "y": 268
     }
    ]
   },
@@ -819,12 +861,18 @@
   {
    "colour": "#eb6834",
    "id": "hobbit",
-   "n_drawn": 8,
-   "n_placed": 8,
+   "n_drawn": 9,
+   "n_placed": 9,
    "n_stages": 11,
    "name": "There and Back Again (2941, by month)",
    "segments": [
     [
+     [
+      2840.0,
+      1585.0,
+      "bag end",
+      "Bag End — 'Good morning!' (late April 2941)"
+     ],
      [
       3115.0,
       1500.0,
@@ -880,12 +928,12 @@
    "stages": [
     {
      "day": 0,
-     "frame": null,
-     "key": null,
+     "frame": "TA",
+     "key": "bag end",
      "label": "Bag End — 'Good morning!' (late April 2941)",
      "note": null,
-     "x": null,
-     "y": null
+     "x": 218,
+     "y": 668
     },
     {
      "day": 10,
@@ -982,8 +1030,8 @@
   {
    "colour": "#7ec8e3",
    "id": "tuor",
-   "n_drawn": 7,
-   "n_placed": 8,
+   "n_drawn": 10,
+   "n_placed": 10,
    "n_stages": 10,
    "name": "Tuor's road to the Hidden City (F.A. 495-96)",
    "segments": [
@@ -999,9 +1047,13 @@
       1552.5,
       "annon in gelydh",
       "Annon-in-Gelydh, the Gate of the Noldor (met Gelmir & Arminas)"
-     ]
-    ],
-    [
+     ],
+     [
+      435.0,
+      1845.0,
+      "cirith ninniach",
+      "Cirith Ninniach, the Rainbow Cleft — gulls, and the Sea's calling"
+     ],
      [
       -350.0,
       2325.0,
@@ -1031,6 +1083,18 @@
       1712.5,
       "brithiach",
       "The Ford of Brithiach in the Fell Winter"
+     ],
+     [
+      1342.5,
+      1560.0,
+      "orfalch echor",
+      "The Dry River; the Seven Gates of the Orfalch Echor"
+     ],
+     [
+      1342.5,
+      1560.0,
+      "gondolin",
+      "Gondolin amid the white snow — 'the dusk of the eighteenth day of Hísimë'"
      ]
     ]
    ],
@@ -1055,12 +1119,12 @@
     },
     {
      "day": 2,
-     "frame": null,
-     "key": null,
+     "frame": "FA",
+     "key": "cirith ninniach",
      "label": "Cirith Ninniach, the Rainbow Cleft — gulls, and the Sea's calling",
      "note": null,
-     "x": null,
-     "y": null
+     "x": 172,
+     "y": 516
     },
     {
      "day": 3,
@@ -1109,12 +1173,12 @@
     },
     {
      "day": 8,
-     "frame": null,
-     "key": null,
+     "frame": "FA",
+     "key": "orfalch echor",
      "label": "The Dry River; the Seven Gates of the Orfalch Echor",
      "note": null,
-     "x": null,
-     "y": null
+     "x": 535,
+     "y": 630
     },
     {
      "day": 9,
@@ -1364,7 +1428,7 @@
   }
  ],
  "n_journeys": 10,
- "n_placed": 61,
+ "n_placed": 71,
  "n_stages": 88,
  "note": "Each stage is placed by the place its own label names, never by transforming the living map's coordinates onto this sheet: an affine over the 29 places the two sheets share leaves a mean residual of 44 miles. A stage the archive cannot place is recorded and NOT DRAWN, and the course is broken where it cannot be followed, because a road drawn through half its stages is a different road."
 }

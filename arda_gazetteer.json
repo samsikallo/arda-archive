@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 449,
+ "n": 458,
  "places": {
   "adorn": {
    "ages": [
@@ -1376,6 +1376,31 @@
     "NATURAL_MOUNTAIN_RANGE"
    ],
    "unplaced": "runs through more than one realm — a single parent would be false"
+  },
+  "bag end": {
+   "ages": [],
+   "cites": [
+    "placed at Hobbiton [I-H]: the text names the container, not a position within it"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 218,
+     "y": 668
+    }
+   ],
+   "n": "Bag End",
+   "name_conf": "H",
+   "notes": [
+    "NOT ITS OWN POINT: this is the point of Hobbiton, which contains it — the letter addresses it in Hobbiton, and this is Hobbiton's point"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_DWELLING"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "balar": {
    "ages": [
@@ -3229,6 +3254,31 @@
    "timeline": [],
    "types": [
     "NATURAL_FOREST"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "cirith ninniach": {
+   "ages": [],
+   "cites": [
+    "placed at Nevrast [I-H]: the text names the container, not a position within it"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 172,
+     "y": 516
+    }
+   ],
+   "n": "Cirith Ninniach",
+   "name_conf": "H",
+   "notes": [
+    "NOT ITS OWN POINT: this is the point of Nevrast, which contains it — the cleft issues towards that shore, and this is Nevrast's point"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PASS"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
@@ -8428,6 +8478,31 @@
    ],
    "unplaced": "runs through more than one realm — a single parent would be false"
   },
+  "imlad morgul": {
+   "ages": [],
+   "cites": [
+    "placed at Minas Morgul [I-H]: the text names the container, not a position within it"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 779,
+     "y": 263
+    }
+   ],
+   "n": "Imlad Morgul",
+   "name_conf": "H",
+   "notes": [
+    "NOT ITS OWN POINT: this is the point of Minas Morgul, which contains it — the city stands in this valley, and this is the city's point"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_VALLEY"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
   "ingwil": {
    "ages": [],
    "cites": [
@@ -11798,6 +11873,31 @@
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
+  "orfalch echor": {
+   "ages": [],
+   "cites": [
+    "placed at Gondolin [I-H]: the text names the container, not a position within it"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 535,
+     "y": 630
+    }
+   ],
+   "n": "Orfalch Echor",
+   "name_conf": "H",
+   "notes": [
+    "NOT ITS OWN POINT: this is the point of Gondolin, which contains it — the ravine is the road into that city, and this is the city's point"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_RAVINE"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
   "osgiliath": {
    "ages": [
     "TA"
@@ -11932,6 +12032,31 @@
    ],
    "types": [
     "MAN_MADE_RUIN"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "parth galen": {
+   "ages": [],
+   "cites": [
+    "placed at Nen Hithoel [I-H]: the text names the container, not a position within it"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 612,
+     "y": 405
+    }
+   ],
+   "n": "Parth Galen",
+   "name_conf": "H",
+   "notes": [
+    "NOT ITS OWN POINT: this is the point of Nen Hithoel, which contains it — the lawn runs down to that water, and this is the lake's point"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_FIELD"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
@@ -13596,6 +13721,20 @@
    ],
    "unplaced": "a realm in its own right — nothing contains it"
   },
+  "the bridge of khazad dum": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "The Bridge of Khazad Dum",
+   "name_conf": "H",
+   "notes": [],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "MAN_MADE_BRIDGE"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
   "the carrock": {
    "ages": [
     "TA"
@@ -13788,6 +13927,56 @@
    "types": [
     "NATURAL_FOREST"
    ]
+  },
+  "the paths of the dead": {
+   "ages": [],
+   "cites": [
+    "placed at Dunharrow [I-H]: the text names the container, not a position within it"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 536,
+     "y": 343
+    }
+   ],
+   "n": "The Paths of the Dead",
+   "name_conf": "H",
+   "notes": [
+    "NOT ITS OWN POINT: this is the point of Dunharrow, which contains it — the Door is entered above Dunharrow, and this is Dunharrow's point"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_PASS"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "the pelennor": {
+   "ages": [],
+   "cites": [
+    "placed at Minas Tirith [I-H]: the text names the container, not a position within it"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 744,
+     "y": 268
+    }
+   ],
+   "n": "The Pelennor",
+   "name_conf": "H",
+   "notes": [
+    "NOT ITS OWN POINT: this is the point of Minas Tirith, which contains it — the fields lie before that city, and this is the city's point"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_FIELD"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "the shire": {
    "ages": [
@@ -14240,6 +14429,31 @@
    "timeline": [],
    "types": [
     "MAN_MADE_DWELLING"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "torech ungol": {
+   "ages": [],
+   "cites": [
+    "placed at Cirith Ungol [I-H]: the text names the container, not a position within it"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 783,
+     "y": 266
+    }
+   ],
+   "n": "Torech Ungol",
+   "name_conf": "H",
+   "notes": [
+    "NOT ITS OWN POINT: this is the point of Cirith Ungol, which contains it — the tunnel opens in that pass, and this is the pass's point"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "types": [
+    "NATURAL_CAVE"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
