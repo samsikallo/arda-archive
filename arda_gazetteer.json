@@ -149,7 +149,8 @@
     "FA"
    ],
    "cites": [
-    "Silm 10/22"
+    "Silm 10/22",
+    "The Silmarillion, Of Beleriand and its Realms [C]"
    ],
    "coords": [
     {
@@ -163,13 +164,14 @@
    "name_conf": null,
    "notes": [
     "Where Denethor of the Green-elves fell in the First Battle; the Fëanorians' last hold.",
+    "“an endless chain of hills running from Eglarest beyond Narog in the west to Amon Ereb in the east, within far sight of Gelion.” — The Silmarillion, Of Beleriand and its Realms [C]",
+    "in East Beleriand, west of Gelion and so within the land that was drowned; it is not in Ossiriand, and Lindon is the country on the far bank",
     "spec FA: watch",
     "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
-    "the vector spec also lists it as “Amon Ereb fort”, at the same place; one record, not two"
+    "the vector spec also lists it as “Amon Ereb fort”, at the same place; one record, not two",
+    "drawn within lindon, and that containment is not carried: Lindon is the country on the FAR bank of Gelion; the hill stands west of the river, in East Beleriand"
    ],
-   "parents": [
-    "lindon"
-   ],
+   "parents": [],
    "place_conf": "H",
    "timeline": [
     {
@@ -195,10 +197,11 @@
     }
    ],
    "types": [
-    "NATURAL_PEAK",
-    "MAN_MADE_WATCHPOST",
-    "MAN_MADE_FORTRESS"
-   ]
+    "NATURAL_HILL",
+    "MAN_MADE_FORTRESS",
+    "MAN_MADE_WATCHPOST"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "amon ethir": {
    "ages": [],
@@ -6637,7 +6640,7 @@
     "within the Hithlum (Fingolfin & Fingon) boundary as the living map draws it, F.A. 1–473 [I-M]",
     "“They burned the Telerian ships upon the coast, where it is since called Losgar, nigh to the outlet of Drengist.” — HoME V, The Lost Road (The Later Annals of Beleriand) [C]",
     "the vector spec's word for it is 'burning-site', which names the event; the living map draws it with the haven symbol, which no text supports",
-    "the living map draws it within hithlum; the corpus places it at the outlet of the Firth of Drengist and never there, so that containment is not carried"
+    "drawn within hithlum, and that containment is not carried: the corpus puts it at the OUTLET of the Firth of Drengist — the seaward end, on the coast — and never once inside Hithlum; the living map's Hithlum polygon merely reaches over the point"
    ],
    "parents": [],
    "place_conf": "H",
@@ -8711,7 +8714,8 @@
     "Stony Ford"
    ],
    "cites": [
-    "Silm 22"
+    "Silm 22",
+    "The Silmarillion, Of the Ruin of Doriath [C]"
    ],
    "coords": [
     {
@@ -8727,7 +8731,9 @@
     "spec FA: ford",
     "also the Stony Ford",
     "The Ascar-crossing where Beren and the Green-elves ambushed the treasure-laden host of Nogrod.",
-    "within the Ossiriand (the Green-elves) boundary as the living map draws it, Y.T.–F.A. 587 [I-M]"
+    "within the Ossiriand (the Green-elves) boundary as the living map draws it, Y.T.–F.A. 587 [I-M]",
+    "“into Beleriand from their mansions in Ered Lindon, and passing over Gelion at Sarn Athrad, the Ford of Stones, they travelled the ancient road to Doriath.” — The Silmarillion, Of the Ruin of Doriath [C]",
+    "the ford lay ON Gelion, the river between drowned Beleriand and Ossiriand that remained; the books do not say which side of the change it fell, and the archive will not decide it"
    ],
    "parents": [
     "lindon",
@@ -8750,16 +8756,15 @@
      "when": "F.A. 502–503"
     },
     {
-     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+     "cite": "the Silmarillion puts the ford on Gelion (Of the Ruin of Doriath [C]); what became of it is NOT RECORDED — the attached documents do not provide enough information to answer this",
      "realm": null,
-     "status": "drowned",
-     "what": "Beleriand was drowned; this place stood in that land",
+     "status": "unrecorded",
+     "what": "Beleriand went under the sea; this ford lay on Gelion, the border of the land that remained",
      "when": "F.A. 587 (War of Wrath)"
     }
    ],
    "types": [
-    "MAN_MADE_CROSSING",
-    "NATURAL_PASS"
+    "NATURAL_FORD"
    ]
   },
   "sarn ford": {
@@ -9633,7 +9638,8 @@
     "Green Isle"
    ],
    "cites": [
-    "Silm 20/22"
+    "Silm 20/22",
+    "The Silmarillion, Of the Ruin of Doriath [C]"
    ],
    "coords": [
     {
@@ -9648,7 +9654,9 @@
    "notes": [
     "spec FA: isle-dwelling",
     "also the Green Isle",
-    "Beren and Lúthien's last dwelling, in Ossiriand among the Seven Rivers."
+    "Beren and Lúthien's last dwelling, in Ossiriand among the Seven Rivers.",
+    "“and they passed beyond the River Gelion into Ossiriand, and dwelt there in Tol Galen the green isle, in the midst of Adurant, until all tidings of them ceased.” — The Silmarillion, Of the Ruin of Doriath [C]",
+    "in Ossiriand, beyond Gelion — the land the Silmarillion's own index excepts from the drowning: 'only Ossiriand (Lindon) remained'"
    ],
    "parents": [
     "lindon"
@@ -9663,15 +9671,15 @@
      "when": "F.A. 468+"
     },
     {
-     "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+     "cite": "[I-H] — not stated of the isle itself, but it follows from two: the Silmarillion places it beyond Gelion in Ossiriand (Of the Ruin of Doriath [C]), and the same book's index excepts Ossiriand from the drowning — 'only Ossiriand (Lindon) remained' [C]",
      "realm": null,
-     "status": "drowned",
-     "what": "Beleriand was drowned; this place stood in that land",
+     "status": "remained",
+     "what": "Beleriand went under the sea; this isle lay beyond Gelion in Ossiriand, which remained",
      "when": "F.A. 587 (War of Wrath)"
     }
    ],
    "types": [
-    "NATURAL_ISLAND"
+    "NATURAL_ISLE"
    ]
   },
   "tol in gaurhoth": {
