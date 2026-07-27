@@ -178,4 +178,20 @@ window.ardaGazRecord=function(e){
 };
 </script>
 <!-- ===== end gazetteer panel ===== -->
-</body></html>
+<script>
+/* A RECORD OPENS THE MAP ON ITSELF. The cross-link ran one way only: the map could open a
+   record and no record could open the map. */
+(function ardaMapLink(){
+ function put(){
+  const k=(location.hash||'').slice(1); if(!k)return;
+  const m=document.getElementById('main'); if(!m||document.getElementById('tomap'))return;
+  const a=document.createElement('a'); a.id='tomap';
+  a.href='map.html#k='+k;
+  a.textContent='\u2295 see it on the map';
+  a.style.cssText='display:inline-block;margin:10px 0 0;color:#7a5c12;font-variant:small-caps;letter-spacing:.05em';
+  m.appendChild(a);
+ }
+ addEventListener('hashchange',()=>{const o=document.getElementById('tomap');if(o)o.remove();setTimeout(put,300)});
+ addEventListener('load',()=>setTimeout(put,600));
+})();
+</script></body></html>

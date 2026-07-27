@@ -2,7 +2,8 @@
 // current-page highlight, breadcrumb, keyboard shim for legacy widgets, theme toggle.
 (function(){
 const GROUPS=[
- ["Atlas",[["arda_timemap_jpeg.html","the living map","interactive map, journeys, battles"],
+ ["Atlas",[["map.html","the map of Arda","every feature answers \u2014 hover, click, the record"],
+   ["arda_timemap_jpeg.html","the living map","interactive map, journeys, battles"],
    ["chronicle.html","the turning ages","map + chronicle on one slider"],
    ["realms.html","realms","the political atlas — 60 polities"],
    ["gazetteer.html","gazetteer","every named place, by age and kind"],

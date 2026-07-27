@@ -139,7 +139,7 @@ fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
   stage.insertBefore(svg,nmEl);
   const b=svg.getAttribute('viewBox').split(/\s+/).map(Number);
   vb={x:b[0],y:b[1],w:b[2],h:b[3]}; vb0=Object.assign({},vb);
-  wire(); apply('all'); loadRoads(); loadChrono(); loadUndrawn();
+  wire(); apply('all'); loadRoads(); loadChrono(); loadUndrawn(); goHash();
 });
 // ---- the places the archive knows and does not draw
 function loadUndrawn(){
@@ -288,6 +288,29 @@ function loadRoads(){
  });
 }
 function setVB(){svg.setAttribute('viewBox',`${vb.x} ${vb.y} ${vb.w} ${vb.h}`)}
+// A RECORD MUST BE ABLE TO OPEN THE MAP ON ITSELF, or the cross-link runs one way only.
+// #k=<gazetteer key> finds the feature, centres the view on it and opens its card.
+function goHash(){
+  const m=(location.hash||'').match(/k=([^&]+)/); if(!m||!svg)return;
+  const want=decodeURIComponent(m[1]).toLowerCase();
+  const g=[...svg.querySelectorAll('.feat')].find(x=>(x.dataset.key||'').toLowerCase()===want);
+  if(!g){  // it may be a place the sheet does not draw: look in the unmapped layer
+    const u=document.getElementById('und');
+    if(u){const c=[...u.querySelectorAll('circle')].find(c=>
+        JSON.parse(c.dataset.payload).at.some(a=>(a.key||'').toLowerCase()===want));
+      if(c){document.getElementById('tU').click();
+            centre(+c.getAttribute('cx'),+c.getAttribute('cy'));
+            c.dispatchEvent(new MouseEvent('click',{bubbles:true,
+              clientX:c.getBoundingClientRect().x+2,clientY:c.getBoundingClientRect().y+2}));}}
+    return;}
+  const b=g.getBBox(); centre(b.x+b.width/2,b.y+b.height/2);
+  g.classList.add('on'); g.focus({preventScroll:true});
+  openCard(g,null);
+}
+function centre(cx,cy){
+  vb.w=vb0.w/4; vb.h=vb0.h/4; vb.x=cx-vb.w/2; vb.y=cy-vb.h/2; setVB();
+}
+addEventListener('hashchange',goHash);
 function wire(){
   const feats=[...svg.querySelectorAll('.feat')];
   feats.forEach(g=>{
