@@ -5675,7 +5675,8 @@
     "FA"
    ],
    "cites": [
-    "Silm 9/13"
+    "Silm 9/13",
+    "HoME V, The Lost Road (The Later Annals of Beleriand) [C]"
    ],
    "coords": [
     {
@@ -5691,11 +5692,12 @@
     "spec FA: burning-site",
     "also at the Firth of Drengist",
     "Where Fëanor burned the white ships of the Teleri.",
-    "within the Hithlum (Fingolfin & Fingon) boundary as the living map draws it, F.A. 1–473 [I-M]"
+    "within the Hithlum (Fingolfin & Fingon) boundary as the living map draws it, F.A. 1–473 [I-M]",
+    "“They burned the Telerian ships upon the coast, where it is since called Losgar, nigh to the outlet of Drengist.” — HoME V, The Lost Road (The Later Annals of Beleriand) [C]",
+    "the vector spec's word for it is 'burning-site', which names the event; the living map draws it with the haven symbol, which no text supports",
+    "the living map draws it within hithlum; the corpus places it at the outlet of the Firth of Drengist and never there, so that containment is not carried"
    ],
-   "parents": [
-    "hithlum"
-   ],
+   "parents": [],
    "place_conf": "H",
    "timeline": [
     {
@@ -5707,8 +5709,7 @@
     }
    ],
    "types": [
-    "UNCLASSIFIED",
-    "MAN_MADE_HAVEN"
+    "NATURAL_COAST"
    ]
   },
   "lothlann": {
