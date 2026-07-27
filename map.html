@@ -30,6 +30,18 @@
  #roads .stage{cursor:pointer}
  #bat circle{fill:#a3251d;stroke:#fbf6e8;stroke-width:1.4;opacity:.9;cursor:pointer}
  #bat g[hidden]{display:none}
+ /* THE PLACES THE ARCHIVE KNOWS AND DOES NOT DRAW. A layer above the sheet, never drawn into
+    it: the base map's restraint is deliberate and 142 more marks would make it another kind
+    of map. A HOLLOW mark is a point that was borrowed from a container or set down by a
+    measure rather than the place's own -- visible before anything is opened. */
+ /* SIZED IN THE SHEET'S OWN UNITS, NOT IN SCREEN PIXELS. The viewBox is 6775 wide and the
+    stage about 1200, so a radius of 5 came out at nine tenths of a pixel: the layer switched
+    on and nothing appeared to happen. The base map draws a peak at ten units through a scale
+    of five, so its glyphs are tens of units across; these must be too. */
+ #und circle{fill:#3f3a30;stroke:#efe6d2;stroke-width:5;cursor:pointer}
+ #und circle.soft{fill:none;stroke:#6b5d49;stroke-width:7;stroke-dasharray:12 9}
+ #und circle:hover,#und circle.on{fill:var(--red);stroke:#fbf6e8}
+ #und circle.soft:hover,#und circle.soft.on{fill:none;stroke:var(--red)}
  /* THE CHRONOLOGY. A place not yet founded is faint; one thrown down since is dashed and
     pale. A place the archive has no date for is left ALONE -- it does not know, and dimming
     it would be the map asserting an absence no text states. */
@@ -77,6 +89,7 @@
   <span>·</span>
   <button id="tR" aria-pressed="false">roads</button>
   <button id="tB" aria-pressed="false">battles</button>
+  <button id="tU" aria-pressed="false">unmapped places</button>
   <span class="sp"></span>
   <button id="zin" aria-label="closer">+</button>
   <button id="zout" aria-label="further">&minus;</button>
@@ -106,7 +119,10 @@
  alone, because dimming it would assert an absence no text states.
  <br><br>This sheet is a <b>palimpsest</b>: Beleriand is drawn as it was, beneath the pale water
  that now covers it. For the political extent of the realms age by age — which is drawn in
- another frame this archive has measured and will not force onto this one — see
+ another frame this archive has measured and will not force onto this one — The layer of <b>unmapped places</b> shows 142 records the archive can place and the sheet
+ does not draw — a layer above the map, never drawn into it, because the sheet's restraint is
+ deliberate. A hollow mark is a point borrowed from a containing place or set down by a measure,
+ rather than the place's own. See also
  <a href="arda_timemap.html">the turning of the Ages</a> and
  <a href="arda_timemap_jpeg.html">the living map</a>.</p>
 <script src="nav.js"></script>
@@ -123,8 +139,54 @@ fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
   stage.insertBefore(svg,nmEl);
   const b=svg.getAttribute('viewBox').split(/\s+/).map(Number);
   vb={x:b[0],y:b[1],w:b[2],h:b[3]}; vb0=Object.assign({},vb);
-  wire(); apply('all'); loadRoads(); loadChrono();
+  wire(); apply('all'); loadRoads(); loadChrono(); loadUndrawn();
 });
+// ---- the places the archive knows and does not draw
+function loadUndrawn(){
+ fetch('arda_undrawn.json').then(r=>r.json()).then(U=>{
+  const NS='http://www.w3.org/2000/svg';
+  const g=document.createElementNS(NS,'g'); g.id='und'; g.style.display='none';
+  U.points.forEach(p=>{
+    const c=document.createElementNS(NS,'circle');
+    c.setAttribute('cx',p.x); c.setAttribute('cy',p.y); c.setAttribute('r',17);
+    if(p.how!=='own') c.setAttribute('class','soft');
+    c.dataset.n=p.at.map(a=>a.name).join(' · ');
+    c.dataset.payload=JSON.stringify(p);
+    g.appendChild(c);
+    c.addEventListener('mouseenter',()=>c.classList.add('on'));
+    c.addEventListener('mouseleave',()=>{c.classList.remove('on');nmEl.style.display='none'});
+    c.addEventListener('mousemove',e=>{const r=stage.getBoundingClientRect();
+      nmEl.textContent=c.dataset.n; nmEl.style.display='block';
+      nmEl.style.left=(e.clientX-r.left+14)+'px'; nmEl.style.top=(e.clientY-r.top-12)+'px';});
+    c.addEventListener('click',e=>{e.stopPropagation(); const P=JSON.parse(c.dataset.payload);
+      const r=stage.getBoundingClientRect();
+      const soft=P.how!=='own'
+        ? '<div class="c">'+(P.how==='borrowed'
+            ? 'this point is not its own: the archive borrowed it from the place that contains it'
+            : 'this point was set down by a measure, not by a border')+'</div>' : '';
+      // A POINT MAY HOLD MORE THAN ONE RECORD, and drawing one mark each would invent
+      // positions the archive does not have. The card names them all.
+      const many=P.at.length>1
+        ? '<div class="c">the archive puts '+P.at.length+' records at this one point</div>' : '';
+      card.innerHTML='<span class="x" id="cx">&times;</span>'
+        +P.at.map(a=>'<h3>'+a.name+'</h3><div class="k">'
+            +(a.kind||'').toLowerCase().replace(/_/g,' ').replace(/,/g,' &middot; ')
+            +(a.ages?' &middot; '+a.ages.replace(/,/g,', '):'')+'</div>'
+            +'<a class="go" href="place.html#'+encodeURIComponent(a.key)+'">the full record &#8594;</a>'
+          ).join('<hr style="border:0;border-top:1px solid rgba(176,165,142,.5);margin:9px 0">')
+        +many+soft;
+      card.style.display='block';
+      card.style.left=Math.min(e.clientX-r.left+16,stage.clientWidth-286)+'px';
+      card.style.top=Math.min(e.clientY-r.top+12,Math.max(6,stage.clientHeight-160))+'px';
+      document.getElementById('cx').onclick=()=>card.style.display='none';});
+  });
+  svg.appendChild(g);
+  const b=document.getElementById('tU');
+  b.title=U.n_records+' records the archive places and the sheet does not draw, at '+U.n_points+' points';
+  let on=false;
+  b.onclick=()=>{on=!on; g.style.display=on?'':'none'; b.setAttribute('aria-pressed',String(on));};
+ });
+}
 // ---- the chronology: what stood when, from the archive's own dated records
 let CH=null,chOn=false;
 function loadChrono(){
