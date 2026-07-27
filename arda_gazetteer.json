@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 458,
+ "n": 460,
  "places": {
   "adorn": {
    "ages": [
@@ -12399,6 +12399,38 @@
     "POLITY_SUBREGION"
    ]
   },
+  "rerir": {
+   "ages": [],
+   "aka": [
+    "Mount Rerir"
+   ],
+   "cites": [
+    "The Silmarillion, Of Beleriand and its Realms [C]",
+    "placed at the point the archive's own sheet draws [I-M]: the point the archive's own First Age plate letters it at; the text places it over Lake Helevorn but gives no measure"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 871,
+     "y": 711
+    }
+   ],
+   "n": "Rerir",
+   "name_conf": "H",
+   "notes": [
+    "“the people of Caranthir dwelt furthest east beyond the upper waters of Gelion, about Lake Helevorn under Mount Rerir and to the southward.” — The Silmarillion, Of Beleriand and its Realms [C]",
+    "the mountain above Lake Helevorn in Thargelion, Caranthir's land; Greater Gelion rose from it — 'Greater Gelion that came from Mount Rerir'",
+    "set down by measure, not by a border: the point the archive's own First Age plate letters it at; the text places it over Lake Helevorn but gives no measure"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "NATURAL_PEAK"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
   "rhosgobel": {
    "ages": [
     "TA"
@@ -13499,6 +13531,38 @@
      "when": "Y.T."
     }
    ],
+   "types": [
+    "NATURAL_PEAK"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "taras": {
+   "ages": [],
+   "aka": [
+    "Mount Taras"
+   ],
+   "cites": [
+    "The Silmarillion, Of Beleriand and its Realms [C]",
+    "placed at the point the archive's own sheet draws [I-M]: the point the archive's own First Age plate letters it at; the text sets it on a promontory but gives no measure"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 125,
+     "y": 488
+    }
+   ],
+   "n": "Taras",
+   "name_conf": "H",
+   "notes": [
+    "“the hills which continued the walls of Ered Wethrin westward, from Ivrin to Mount Taras, which stood upon a promontory.” — The Silmarillion, Of Beleriand and its Realms [C]",
+    "the mountain on the promontory of Nevrast, above Vinyamar where Turgon dwelt before Gondolin; Nevrast is the land whose shores lay between Drengist and Mount Taras",
+    "set down by measure, not by a border: the point the archive's own First Age plate letters it at; the text sets it on a promontory but gives no measure"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
    "types": [
     "NATURAL_PEAK"
    ],
