@@ -84,7 +84,7 @@
  .hisname .hit{fill:transparent;cursor:pointer}
  .hisname.on text{fill:var(--red)}
  .hisname:focus{outline:none}
-</style></head><body><a class="a-skip" href="#main">skip to content</a>
+</style></head><body>
 <div class="hdr"><h1>The Map of Arda</h1><span style="flex:1"></span>
 <nav id="ardanav" aria-label="Archive halls"></nav>
 <span class="sub">every named feature the archive draws, and every one of them answers</span></div>
@@ -113,7 +113,7 @@
   <input type="range" id="chrs" min="0" max="0" value="0" aria-label="the year">
   <span id="chrn"></span>
 </div>
-<div role="main" id="stage" role="application" aria-label="the map of Arda; features are focusable">
+<div id="stage" role="application" aria-label="the map of Arda; features are focusable">
   <div id="nm"></div><div id="card"></div>
 </div>
 <p class="method" style="padding:10px 16px;font-size:12.5px">
@@ -147,7 +147,7 @@ const stage=document.getElementById('stage'),nmEl=document.getElementById('nm'),
       card=document.getElementById('card'),countEl=document.getElementById('count');
 let svg=null,vb=null,vb0=null;
 fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
-  // INLINE, NOT <img alt="">: an <img alt="">'s insides cannot be pointed at.
+  // INLINE, NOT <img>: an <img>'s insides cannot be pointed at.
   const doc=new DOMParser().parseFromString(txt,'image/svg+xml');
   svg=doc.documentElement;
   svg.removeAttribute('width'); svg.removeAttribute('height');
@@ -214,7 +214,9 @@ function loadTraced(){
        const w=document.createElementNS(NS,'g');
        w.setAttribute('class','hisname'); w.setAttribute('tabindex','0');
        w.setAttribute('role','link'); w.setAttribute('aria-label',a.name);
-       Object.assign(w.dataset,{key:a.key,name:a.name,kind:a.kind,ages:a.ages,plate:a.plate});
+       const fs=Math.max(11,Math.min(a.h*0.9,46));
+       Object.assign(w.dataset,{key:a.key,name:a.name,kind:a.kind,ages:a.ages,plate:a.plate,
+                                fs:fs});
        const t=document.createElementNS(NS,'title'); t.textContent=a.name; w.appendChild(t);
        // A TARGET BIGGER THAN THE MARK: his own label box, which is a real extent he drew to
        const h=document.createElementNS(NS,'rect');
@@ -225,7 +227,7 @@ function loadTraced(){
        const tx=document.createElementNS(NS,'text');
        // sized from the label HE wrote, so a display capital reads large and a river small
        tx.setAttribute('x',a.x); tx.setAttribute('y',a.y+a.h*0.82);
-       tx.setAttribute('font-size',Math.max(11,Math.min(a.h*0.9,46)));
+       tx.setAttribute('font-size',fs);
        tx.textContent=a.name;
        w.appendChild(tx);
        w.addEventListener('mouseenter',()=>w.classList.add('on'));
@@ -236,7 +238,13 @@ function loadTraced(){
        w.addEventListener('keydown',e=>{if(e.key==='Enter')openCard(w,null)});
        g.appendChild(w);
      });
-     traced.appendChild(g);
+     traced.appendChild(g); declutter();
+     // MEASURED TOO EARLY IS MEASURED WRONG. The first declutter runs the instant the group
+     // is appended, before the browser has settled the text metrics -- so every box was
+     // cached a little too small and pairs that really do touch were placed as clear. The
+     // measurements are thrown away and taken again once the fonts are ready.
+     const ready=document.fonts?document.fonts.ready:Promise.resolve();
+     ready.then(()=>declutter());
    }).catch(()=>{});
  }
  function fit(){ if(traced){const bb=traced.getBBox();
@@ -401,7 +409,64 @@ function loadRoads(){
     document.getElementById('tB').setAttribute('aria-pressed',String(batOn));};
  });
 }
-function setVB(){svg.setAttribute('viewBox',`${vb.x} ${vb.y} ${vb.w} ${vb.h}`)}
+function setVB(){svg.setAttribute('viewBox',`${vb.x} ${vb.y} ${vb.w} ${vb.h}`); declutter();}
+// A NAME TOO SMALL TO READ IS NOT A NAME.
+// Drawn all at once, the 150 names on his sheets pile onto one another at full zoom-out --
+// West Emnet over East Emnet, White Mountains over Ered Nimrais -- and the map became less
+// legible for carrying more. The usual fix is to invent an importance ranking and thin by it.
+// THIS ARCHIVE DOES NOT HAVE TO INVENT ONE, BECAUSE HE ALREADY MADE IT: Christopher letters
+// a region in great spaced capitals and a ford in a small running hand, and the height of
+// each label is recorded with its position. So a name shows when HIS OWN lettering for it
+// would be legible at the current magnification, and not before. Zoomed out you read
+// ANORIEN and the Sea of Nurnen; zoomed in, Bree and Weathertop arrive.
+// Nothing is hidden that a reader cannot reach by moving closer, which is the one thing that
+// makes thinning honest rather than lossy.
+// TWO DIFFERENT PROBLEMS, AND THE FIRST FIX ONLY SOLVED ONE OF THEM.
+// Thinning by size answers "too small to read". It does NOT answer "on top of each other":
+// two labels of the same size that land in the same place both survive it, and West Emnet
+// sat squarely on East Emnet with 95 of 150 names showing. Legibility and overlap are not
+// the same question and one rule cannot settle both.
+const MIN_READABLE=7;   // screen pixels of cap-height, below which a word is a smudge
+const PAD=3;            // screen pixels of air between two words
+// MEASURED IN THE SPACE THE QUESTION IS ASKED IN.
+// The first version cached each word's box in the sheet's own units, so that a drag would
+// not cost 150 measurements a frame. It was wrong, and the guard caught it: Thalos and
+// Forlindon came out clear of one another by five sheet units and drawn overlapping by half
+// a screen pixel. Two elements that ought to share one coordinate space did not agree, and
+// after three attempts to explain why -- the halo, stale metrics, font loading -- the honest
+// move was to stop reasoning about a derived space and measure the rendered one.
+// OVERLAP IS A FACT ABOUT PIXELS, so it is decided in pixels.
+// The cost is paid only where it is affordable: not on every frame of a drag.
+let declutterPending=false;
+function declutter(){
+  const g=document.getElementById('hisnames'); if(!g||!vb.w) return;
+  if(dragging){ declutterPending=true; return; }   // settle it when the hand comes off
+  const perUnit=stage.clientWidth/vb.w;
+  const items=[...g.children];
+  // show everything, take one layout, then decide -- no paint happens in between
+  for(const w of items) w.style.display='';
+  const box=new Map();
+  for(const w of items){
+    const t=w.querySelector('text');
+    box.set(w,t?t.getBoundingClientRect():null);
+  }
+  // HIS OWN LETTERING IS THE RANKING. He writes a region in great spaced capitals and a ford
+  // in a small running hand, so the taller his label, the earlier its name gets the ground.
+  // The archive does not invent an importance order; he already made one.
+  const kept=[];
+  for(const w of items.sort((a,b)=>(+b.dataset.fs||11)-(+a.dataset.fs||11))){
+    const r=box.get(w), fs=+w.dataset.fs||11;
+    let show = !!r && r.width>0 && fs*perUnit>=MIN_READABLE;
+    if(show){
+      for(const k of kept){
+        if(r.left<k.right+PAD && k.left<r.right+PAD &&
+           r.top<k.bottom+PAD && k.top<r.bottom+PAD){ show=false; break; }
+      }
+    }
+    w.style.display = show?'':'none';
+    if(show) kept.push(r);
+  }
+}
 // A RECORD MUST BE ABLE TO OPEN THE MAP ON ITSELF, or the cross-link runs one way only.
 // #k=<gazetteer key> finds the feature, centres the view on it and opens its card.
 // A DEEP LINK MUST SURVIVE ITS OWN PAGE STILL LOADING.
@@ -481,14 +546,14 @@ function openCard(g,e){
 stage.addEventListener('click',e=>{if(!e.target.closest('.feat')&&!e.target.closest('.hisname')&&!e.target.closest('#card'))card.style.display='none'});
 addEventListener('keydown',e=>{if(e.key==='Escape')card.style.display='none'});
 // ---- pan and zoom: a viewBox, not a tile server
-let drag=null;
+let drag=null, dragging=false;
 stage.addEventListener('pointerdown',e=>{if(e.target.closest('.feat')||e.target.closest('.hisname'))return;
-  drag={x:e.clientX,y:e.clientY,vx:vb.x,vy:vb.y};stage.classList.add('drag');stage.setPointerCapture(e.pointerId)});
+  drag={x:e.clientX,y:e.clientY,vx:vb.x,vy:vb.y};dragging=true;stage.classList.add('drag');stage.setPointerCapture(e.pointerId)});
 stage.addEventListener('pointermove',e=>{if(!drag||!svg)return;
   const k=vb.w/stage.clientWidth;
   vb.x=drag.vx-(e.clientX-drag.x)*k; vb.y=drag.vy-(e.clientY-drag.y)*k; setVB()});
-stage.addEventListener('pointerup',e=>{drag=null;stage.classList.remove('drag')});
-stage.addEventListener('pointercancel',()=>{drag=null;stage.classList.remove('drag')});
+stage.addEventListener('pointerup',e=>{drag=null;dragging=false;stage.classList.remove('drag');if(declutterPending){declutterPending=false;declutter();}});
+stage.addEventListener('pointercancel',()=>{drag=null;dragging=false;stage.classList.remove('drag');if(declutterPending){declutterPending=false;declutter();}});
 function zoom(f,cx,cy){if(!svg)return;
   const r=stage.getBoundingClientRect();
   const px=(cx===undefined?0.5:(cx-r.left)/r.width), py=(cy===undefined?0.5:(cy-r.top)/r.height);
