@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 434,
+ "n": 450,
  "places": {
   "adorn": {
    "ages": [
@@ -910,17 +910,11 @@
    "unplaced": "a land, not a place within one"
   },
   "argonath": {
-   "ages": [
-    "TA"
-   ],
-   "aka": [
-    "Pillars of the Kings"
-   ],
+   "ages": [],
    "cites": [
     "The Silmarillion, line 13087",
     "C II.9–III.1; RC[T]",
-    "HoME XII, The Peoples of Middle-earth [C]",
-    "LotR II.9; HoME XII"
+    "HoME XII, The Peoples of Middle-earth [C]"
    ],
    "coords": [],
    "n": "Argonath",
@@ -930,13 +924,7 @@
     "indexed by Christopher Tolkien as: Gates of, Pillars o f",
     "Evidence Table R19",
     "“Romendakil was forced to withdraw his northern border east of Anduin to the Emyn Muil. He there built the Gates of Argonath with images of Isildur and Anarion beyond which no stranger should pass.” — HoME XII, The Peoples of Middle-earth [C]",
-    "Gondor's own northern boundary-work, raised by Romendakil II about T.A. 1248 — twelve centuries before Calenardhon was granted to the Eorlingas in T.A. 2510",
-    "also the Pillars of the Kings",
-    "Rómendacil's giants of stone fencing the north-way of Gondor.",
-    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
-    "the vector spec also lists it as “The Argonath”, at the same place; one record, not two",
-    "a merged record also called it natural peak; the kinds are those the corpus states",
-    "drawn within rohan, and that containment is not carried: the pillars were Gondor's border-mark long before Rohan existed; Aragorn names them 'the Argonath, the Pillars of the Kings' (LotR II.9 [C]) and the kings are Gondor's"
+    "Gondor's own northern boundary-work, raised by Romendakil II about T.A. 1248 — twelve centuries before Calenardhon was granted to the Eorlingas in T.A. 2510"
    ],
    "parents": [],
    "place_conf": "High",
@@ -1765,17 +1753,14 @@
     "TA"
    ],
    "cites": [
-    "LotR I.6–8 [I-H] — the archive's synthesis of canon, not a quotation",
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "LotR I.6–8 [I-H] — the archive's synthesis of canon, not a quotation"
    ],
    "coords": [],
    "n": "The house of Tom Bombadil",
    "name_conf": "H",
    "notes": [
     "The Old Forest and the Downs between Buckland's hedge and the Barrow-country — a bounded march older than every realm around it. — LotR I.6–8 [I-H] — the archive's synthesis of canon, not a quotation",
-    "the realms model dates it 'Eldest' – enduring",
-    "the archive draws this and had no record of it until the map and the gazetteer were compared",
-    "the vector spec also lists it as “Bombadil's house”, at the same place; one record, not two"
+    "the realms model dates it 'Eldest' – enduring"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1796,10 +1781,29 @@
     }
    ],
    "types": [
-    "POLITY_REALM",
-    "MAN_MADE_SETTLEMENT"
+    "POLITY_REALM"
    ],
    "unplaced": "a realm in its own right — nothing contains it"
+  },
+  "bombadil s house": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "coords": [],
+   "n": "Bombadil's house",
+   "name_conf": "H",
+   "notes": [
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "brandywine bridge": {
    "ages": [
@@ -2185,25 +2189,41 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (REGIONS_TA); the name is attested 224 times in the tier-1 corpus [C for the name, I-M for the placing]",
-    "LotR I.5"
+    "drawn on the archive's vector map (REGIONS_TA); the name is attested 224 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
    "coords": [],
    "n": "Buckland",
    "name_conf": "H",
    "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "POLITY_REGION"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "buckland crickhollow": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR I.5"
+   ],
+   "coords": [],
+   "n": "Buckland & Crickhollow",
+   "name_conf": null,
+   "notes": [
     "Brandy Hall of the Brandybucks; the conspiracy unmasked itself here.",
-    "within the The Shire boundary as the living map draws it, T.A. 1601– [I-M]",
-    "the vector spec also lists it as “Buckland & Crickhollow”, at the same place; one record, not two"
+    "within the The Shire boundary as the living map draws it, T.A. 1601– [I-M]"
    ],
    "parents": [
     "the shire"
    ],
-   "place_conf": "M",
+   "place_conf": "H",
    "timeline": [],
    "types": [
-    "POLITY_REGION",
     "MAN_MADE_CITY"
    ]
   },
@@ -2214,6 +2234,24 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 69 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
+   "coords": [],
+   "n": "Bucklebury",
+   "name_conf": "H",
+   "notes": [
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "bucklebury ferry": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [],
    "coords": [
     {
      "conf": "H",
@@ -2222,22 +2260,19 @@
      "y": 656
     }
    ],
-   "n": "Bucklebury",
-   "name_conf": "H",
+   "n": "Bucklebury + Ferry",
+   "name_conf": null,
    "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "spec TA: town+ferry",
     "within the The Shire boundary polygon [I-H]",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "the vector spec also lists it as “Bucklebury + Ferry”, at the same place; one record, not two"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "the shire"
    ],
-   "place_conf": "M",
+   "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_SETTLEMENT",
     "MAN_MADE_TOWN"
    ]
   },
@@ -4046,25 +4081,14 @@
     "LotR III.6",
     "C III.6, V.3, VI.6; RC[T] (unpub. Index)"
    ],
-   "coords": [
-    {
-     "conf": "H",
-     "frame": "TA",
-     "x": 533,
-     "y": 355
-    }
-   ],
+   "coords": [],
    "n": "Edoras",
    "name_conf": "H",
    "notes": [
     "also & Meduseld",
     "Brego's golden hall under the White Mountains; Théoden's seat.",
     "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
-    "Evidence Table G7",
-    "spec TA: royal town",
-    "within the Rohan boundary polygon [I-H]",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "the vector spec also lists it as “Edoras/Meduseld”, at the same place; one record, not two"
+    "Evidence Table G7"
    ],
    "parents": [
     "rohan"
@@ -4081,7 +4105,35 @@
    ],
    "types": [
     "MAN_MADE_CITY",
-    "NATURAL_PEAK",
+    "NATURAL_PEAK"
+   ]
+  },
+  "edoras meduseld": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 533,
+     "y": 355
+    }
+   ],
+   "n": "Edoras/Meduseld",
+   "name_conf": null,
+   "notes": [
+    "spec TA: royal town",
+    "within the Rohan boundary polygon [I-H]",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "parents": [
+    "rohan"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
     "MAN_MADE_TOWN"
    ]
   },
@@ -5531,23 +5583,13 @@
    "cites": [
     "App A I(iii-iv)"
    ],
-   "coords": [
-    {
-     "conf": "H",
-     "frame": "TA",
-     "x": 270,
-     "y": 752
-    }
-   ],
+   "coords": [],
    "n": "Fornost",
    "name_conf": null,
    "notes": [
     "also Norbury; Deadmen's Dike",
     "The North-kingdom's last capital; the great battle of 1975 broke Angmar west of it.",
-    "within the Arthedain boundary as the living map draws it, T.A. 861–1974 [I-M]",
-    "spec TA: ruined city",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "the vector spec also lists it as “Fornost Erain”, at the same place; one record, not two"
+    "within the Arthedain boundary as the living map draws it, T.A. 861–1974 [I-M]"
    ],
    "parents": [
     "arthedain"
@@ -5584,9 +5626,35 @@
     }
    ],
    "types": [
-    "MAN_MADE_RUIN",
-    "MAN_MADE_CITY"
+    "MAN_MADE_RUIN"
    ]
+  },
+  "fornost erain": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 270,
+     "y": 752
+    }
+   ],
+   "n": "Fornost Erain",
+   "name_conf": null,
+   "notes": [
+    "spec TA: ruined city",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "MAN_MADE_CITY"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "forodwaith": {
    "ages": [
@@ -5760,26 +5828,43 @@
    "ages": [
     "TA"
    ],
-   "aka": [
-    "Loeg Ningloron"
-   ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 139 times in the tier-1 corpus [C for the name, I-M for the placing]",
-    "UT; App B",
-    "D Gladden; C I.2; RC[T]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 139 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
    "coords": [],
    "n": "Gladden",
    "name_conf": "H",
    "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared",
-    "also Loeg Ningloron",
-    "Isildur fell among the reeds, T.A. 2; Déagol's find, 2463.",
-    "Evidence Table R7",
-    "the vector spec also lists it as “Gladden Fields”, at the same place; one record, not two"
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
    "place_conf": "M",
+   "types": [
+    "NATURAL_RIVER"
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
+  },
+  "gladden fields": {
+   "ages": [
+    "TA"
+   ],
+   "aka": [
+    "Loeg Ningloron"
+   ],
+   "cites": [
+    "UT; App B",
+    "D Gladden; C I.2; RC[T]"
+   ],
+   "coords": [],
+   "n": "Gladden Fields",
+   "name_conf": "H",
+   "notes": [
+    "also Loeg Ningloron",
+    "Isildur fell among the reeds, T.A. 2; Déagol's find, 2463.",
+    "Evidence Table R7"
+   ],
+   "parents": [],
+   "place_conf": "H",
    "timeline": [
     {
      "cite": "App B; UT",
@@ -5790,10 +5875,9 @@
     }
    ],
    "types": [
-    "NATURAL_RIVER",
     "NATURAL_PLAIN"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "glanduin": {
    "ages": [
@@ -6394,6 +6478,24 @@
    "cites": [
     "drawn on the archive's vector map (PEAKS_TA); the name is attested 40 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
+   "coords": [],
+   "n": "Halifirien",
+   "name_conf": "H",
+   "notes": [
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "NATURAL_PEAK"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "halifirien hallow": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [],
    "coords": [
     {
      "conf": "H",
@@ -6402,19 +6504,16 @@
      "y": 325
     }
    ],
-   "n": "Halifirien",
-   "name_conf": "H",
+   "n": "Halifirien hallow",
+   "name_conf": null,
    "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "spec TA: hallow/beacon",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "the vector spec also lists it as “Halifirien hallow”, at the same place; one record, not two"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [],
-   "place_conf": "M",
+   "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_PEAK",
     "MAN_MADE_HALLOW"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
@@ -6530,6 +6629,24 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 34 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
+   "coords": [],
+   "n": "Harlond",
+   "name_conf": "H",
+   "notes": [
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "harlond gondor quays": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [],
    "coords": [
     {
      "conf": "H",
@@ -6538,22 +6655,19 @@
      "y": 262
     }
    ],
-   "n": "Harlond",
-   "name_conf": "H",
+   "n": "Harlond (Gondor quays)",
+   "name_conf": null,
    "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "spec TA: haven",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "named Gondor quays by the spec, which is how it is told from the other place of the same name",
-    "the vector spec also lists it as “Harlond (Gondor quays)”, at the same place; one record, not two"
+    "named Gondor quays by the spec, which is how it is told from the other place of the same name"
    ],
    "parents": [
     "gondor"
    ],
-   "place_conf": "M",
+   "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_SETTLEMENT",
     "MAN_MADE_HAVEN"
    ]
   },
@@ -6844,30 +6958,18 @@
    ]
   },
   "high pass": {
-   "ages": [
-    "TA"
-   ],
-   "aka": [
-    "Cirith Forn",
-    "Goblin-town beneath"
-   ],
+   "ages": [],
    "cites": [
-    "The Hobbit, line 3435",
-    "Hobbit iv-v; App B"
+    "The Hobbit, line 3435"
    ],
    "coords": [],
    "n": "High Pass",
    "name_conf": "High",
    "notes": [
     "“We were crossing by the High Pass that should have brought us to the road that lies to the south of your country, when we were attacked by the evil goblins—as I was about to tell you.” — The Hobbit, line 3435",
-    "indexed by Christopher Tolkien as: Pass over the Misty Mountains east of Rivendell",
-    "also Cirith Forn; Goblin-town beneath",
-    "Thorin's company taken here; Bilbo found the Ring in the dark below, 2941.",
-    "the vector spec also lists it as “The High Pass”, at the same place; one record, not two"
+    "indexed by Christopher Tolkien as: Pass over the Misty Mountains east of Rivendell"
    ],
-   "parents": [
-    "beornings"
-   ],
+   "parents": [],
    "place_conf": "High",
    "timeline": [
     {
@@ -6886,9 +6988,9 @@
     }
    ],
    "types": [
-    "NATURAL_MOUNTAIN_RANGE",
-    "NATURAL_PASS"
-   ]
+    "NATURAL_MOUNTAIN_RANGE"
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "hildorien": {
    "ages": [],
@@ -7100,7 +7202,28 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 336 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 336 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "coords": [],
+   "n": "Hobbiton",
+   "name_conf": "H",
+   "notes": [
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "named among the shire's own settlements in its dossier [C]"
+   ],
+   "parents": [
+    "the shire"
+   ],
+   "place_conf": "M",
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ]
+  },
+  "hobbiton bag end": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
     "Hobbit i; LotR I.1"
    ],
    "coords": [
@@ -7111,22 +7234,19 @@
      "y": 668
     }
    ],
-   "n": "Hobbiton",
-   "name_conf": "H",
+   "n": "Hobbiton + Bag End",
+   "name_conf": null,
    "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "spec TA: town",
     "Under the Hill: Bilbo's and Frodo's door, where two Quests began.",
-    "within the The Shire boundary polygon [I-H]",
-    "the vector spec also lists it as “Hobbiton + Bag End”, at the same place; one record, not two"
+    "within the The Shire boundary polygon [I-H]"
    ],
    "parents": [
     "the shire"
    ],
-   "place_conf": "M",
+   "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_SETTLEMENT",
     "MAN_MADE_TOWN",
     "MAN_MADE_CITY"
    ]
@@ -7405,24 +7525,14 @@
     "LotR III.8-10",
     "C III.8–10; D Cirion, Fords"
    ],
-   "coords": [
-    {
-     "conf": "H",
-     "frame": "TA",
-     "x": 460,
-     "y": 385
-    }
-   ],
+   "coords": [],
    "n": "Isengard",
    "name_conf": "H",
    "notes": [
     "also Orthanc; Nan Curunír",
     "The unbreakable tower in Saruman's ring — drowned by Ents, Mar 3-5, 3019.",
     "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
-    "Evidence Table G3",
-    "spec TA: ring-fortress",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "the vector spec also lists it as “Isengard/Orthanc”, at the same place; one record, not two"
+    "Evidence Table G3"
    ],
    "parents": [
     "rohan"
@@ -7480,9 +7590,38 @@
     }
    ],
    "types": [
-    "MAN_MADE_TOWER",
-    "MAN_MADE_FORTRESS"
+    "MAN_MADE_TOWER"
    ]
+  },
+  "isengard orthanc": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "C III.8–10; D Cirion, Fords"
+   ],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 460,
+     "y": 385
+    }
+   ],
+   "n": "Isengard/Orthanc",
+   "name_conf": "H",
+   "notes": [
+    "spec TA: ring-fortress",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "Evidence Table G3"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "MAN_MADE_FORTRESS"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "isenmouthe": {
    "ages": [
@@ -7553,9 +7692,7 @@
    "notes": [
     "interior label of Gondor, per the vector spec",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "Evidence Table G19",
-    "spec TA: Forests",
-    "the vector spec also lists it as “Ithilien woods (open woodland strip)”, at the same place; one record, not two"
+    "Evidence Table G19"
    ],
    "parents": [
     "gondor"
@@ -7563,9 +7700,25 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "POLITY_SUBREGION",
-    "NATURAL_FOREST"
+    "POLITY_SUBREGION"
    ]
+  },
+  "ithilien woods": {
+   "ages": [],
+   "cites": [],
+   "coords": [],
+   "n": "Ithilien woods (open woodland strip)",
+   "name_conf": null,
+   "notes": [
+    "spec TA: Forests"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "NATURAL_FOREST"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "ivrin": {
    "ages": [
@@ -10437,6 +10590,24 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 19 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
+   "coords": [],
+   "n": "Poros",
+   "name_conf": "H",
+   "notes": [
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "NATURAL_RIVER"
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
+  },
+  "poros march": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [],
    "coords": [
     {
      "conf": null,
@@ -10445,21 +10616,18 @@
      "y": 220
     }
    ],
-   "n": "Poros",
-   "name_conf": "H",
+   "n": "Poros-March",
+   "name_conf": null,
    "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "interior label of Gondor, per the vector spec",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "the vector spec also lists it as “Poros-March”, at the same place; one record, not two"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "gondor"
    ],
-   "place_conf": "M",
+   "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_RIVER",
     "POLITY_SUBREGION"
    ]
   },
@@ -11323,9 +11491,7 @@
    "ages": [
     "TA"
    ],
-   "cites": [
-    "LotR V.2"
-   ],
+   "cites": [],
    "coords": [
     {
      "conf": "H",
@@ -11338,20 +11504,15 @@
    "name_conf": null,
    "notes": [
     "spec TA: landmark-stone",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "Isildur's black globe where the Oathbreakers gathered to the heir at midnight.",
-    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]",
-    "the vector spec also lists it as “The Stone of Erech”, at the same place; one record, not two"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
-   "parents": [
-    "gondor"
-   ],
+   "parents": [],
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_MONUMENT",
-    "NATURAL_PEAK"
-   ]
+    "MAN_MADE_MONUMENT"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "swanfleet": {
    "ages": [
@@ -11676,6 +11837,33 @@
    ],
    "unplaced": "a realm in its own right — nothing contains it"
   },
+  "the argonath": {
+   "ages": [
+    "TA"
+   ],
+   "aka": [
+    "Pillars of the Kings"
+   ],
+   "cites": [
+    "LotR II.9; HoME XII"
+   ],
+   "coords": [],
+   "n": "The Argonath",
+   "name_conf": null,
+   "notes": [
+    "also the Pillars of the Kings",
+    "Rómendacil's giants of stone fencing the north-way of Gondor.",
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
+   ],
+   "parents": [
+    "rohan"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "NATURAL_PEAK"
+   ]
+  },
   "the carrock": {
    "ages": [
     "TA"
@@ -11763,6 +11951,48 @@
     "NATURAL_MARSH"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "the high pass": {
+   "ages": [
+    "TA"
+   ],
+   "aka": [
+    "Cirith Forn",
+    "Goblin-town beneath"
+   ],
+   "cites": [
+    "Hobbit iv-v; App B"
+   ],
+   "coords": [],
+   "n": "The High Pass",
+   "name_conf": null,
+   "notes": [
+    "also Cirith Forn; Goblin-town beneath",
+    "Thorin's company taken here; Bilbo found the Ring in the dark below, 2941."
+   ],
+   "parents": [
+    "beornings"
+   ],
+   "place_conf": "H",
+   "timeline": [
+    {
+     "cite": "App A/B; Hobbit 4 [C]",
+     "realm": "mistyorcs",
+     "status": "event",
+     "what": "Orcs multiply; Moria colonized by Azog; the High Pass tolls in blood (Goblin-town's Great Goblin)",
+     "when": "T.A. 2480+"
+    },
+    {
+     "cite": "LotR II.1 [C]",
+     "realm": "beornings",
+     "status": "event",
+     "what": "Grimbeorn the Old holds the High Pass and the Carrock-ford tolls; 'neither orc nor wolf' dare his lands",
+     "when": "3018–19"
+    }
+   ],
+   "types": [
+    "NATURAL_PASS"
+   ]
   },
   "the morannon": {
    "ages": [
@@ -11913,6 +12143,29 @@
     "POLITY_REALM"
    ],
    "unplaced": "a realm in its own right — nothing contains it"
+  },
+  "the stone of erech": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "LotR V.2"
+   ],
+   "coords": [],
+   "n": "The Stone of Erech",
+   "name_conf": null,
+   "notes": [
+    "Isildur's black globe where the Oathbreakers gathered to the heir at midnight.",
+    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]"
+   ],
+   "parents": [
+    "gondor"
+   ],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "NATURAL_PEAK"
+   ]
   },
   "the undeeps": {
    "ages": [
@@ -12391,6 +12644,24 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 41 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
+   "coords": [],
+   "n": "Tuckborough",
+   "name_conf": "H",
+   "notes": [
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "MAN_MADE_SETTLEMENT"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "tuckborough great smials": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [],
    "coords": [
     {
      "conf": "H",
@@ -12399,22 +12670,19 @@
      "y": 655
     }
    ],
-   "n": "Tuckborough",
-   "name_conf": "H",
+   "n": "Tuckborough/Great Smials",
+   "name_conf": null,
    "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "spec TA: town",
     "within the The Shire boundary polygon [I-H]",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "the vector spec also lists it as “Tuckborough/Great Smials”, at the same place; one record, not two"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "the shire"
    ],
-   "place_conf": "M",
+   "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_SETTLEMENT",
     "MAN_MADE_TOWN"
    ]
   },
