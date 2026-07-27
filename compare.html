@@ -31,7 +31,7 @@ a{color:#7a4a12}
 &nbsp; <input id="qa" list="la" placeholder="first…" style="width:220px"><datalist id="la"></datalist>
 vs <input id="qb" list="lb" placeholder="second…" style="width:220px"><datalist id="lb"></datalist>
 <button class="tbtn" onclick="go()">compare</button>
-<div class="cite" style="margin-top:6px">try: Fëanor vs Fingolfin · Aragorn vs Arwen · Túrin vs Beren · the Nirnaeth vs the Pelennor</div>
+<div class="cite" style="margin-top:6px">try: Fëanor vs Fingolfin · Aragorn II vs Arwen · Túrin vs Beren · the Nirnaeth vs the Pelennor</div>
 </div>
 <div id="out"></div>
 </div>
@@ -54,11 +54,22 @@ document.getElementById("qa").value="";document.getElementById("qb").value="";
 document.getElementById("out").innerHTML="";fill();};
 function ancSet(id){const par={};G.edges.forEach(([t,a,b])=>{if(t=="p")(par[b]=par[b]||[]).push(a)});
 const s=new Set(),st=[id];while(st.length){const c=st.pop();(par[c]||[]).forEach(p=>{if(!s.has(p)){s.add(p);st.push(p)}})}return s}
+/* AN EXACT NAME BEATS A SUBSTRING. This took the FIRST person whose name merely contained
+   the query, so the page's own suggestion "Aragorn vs Arwen" answered with Aragorn I --
+   dead of wolves in T.A. 2327 -- and with EARWEN, Galadriel's mother, because "arwen" is
+   inside "Earwen". The archive has learned this twice before: "bay" matched inside BAYNES
+   and "Bree" inside "breeze". Exact first, then a name that STARTS with the query, then a
+   whole word inside it, and only then a bare substring. */
+const pick=(rows,q,name)=>{ if(!q)return null;
+  const N=r=>nrm(name(r));
+  return rows.find(r=>N(r)===q) || rows.find(r=>N(r).startsWith(q))
+      || rows.find(r=>new RegExp("(^|[^a-z0-9])"+q.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"([^a-z0-9]|$)").test(N(r)))
+      || rows.find(r=>N(r).includes(q)) || null; };
 window.go=()=>{
 const qa=nrm(document.getElementById("qa").value),qb=nrm(document.getElementById("qb").value);
 const out=document.getElementById("out");
 if(mode=="c"){
-const pa=G.persons.find(p=>nrm(p.n).includes(qa)&&p.r!="X"),pb=G.persons.find(p=>nrm(p.n).includes(qb)&&p.r!="X");
+const live=G.persons.filter(p=>p.r!="X"); const pa=pick(live,qa,p=>p.n),pb=pick(live,qb,p=>p.n);
 if(!pa||!pb){out.innerHTML='<div class="card cite">Both names must be in the family trees.</div>';return}
 history.replaceState(null,"","#a="+pa.id+"&b="+pb.id);
 const RN={A:"Ainur",E:"Elves",M:"Men",H:"Half-elven",D:"Dwarves",B:"Hobbits"};
@@ -80,7 +91,7 @@ ${shared.length?shared.map(p=>`<a class="chip" href="character.html#${p.id}">${p
 ${evShared.length?`<h3>Where their stories touch</h3>${evShared.map(e=>`<div style="margin:.3em 0;padding-left:9px;border-left:3px solid #c9a227"><b>${e.t}</b> — ${e.label} <span class="cite">${e.cite}</span></div>`).join("")}`:""}
 </div>`;
 }else{
-const ca=A.campaigns.find(c=>c.sides&&nrm(c.label).includes(qa)),cb=A.campaigns.find(c=>c.sides&&nrm(c.label).includes(qb));
+const cs=A.campaigns.filter(c=>c.sides); const ca=pick(cs,qa,c=>c.label),cb=pick(cs,qb,c=>c.label);
 if(!ca||!cb){out.innerHTML='<div class="card cite">Both battles must be numbered ones (the unnumbered are in the Silences hall).</div>';return}
 const tot=c=>c.sides.reduce((a,s)=>a+s.contingents.reduce((x,k)=>x+k.n,0),0);
 const mx=Math.max(tot(ca),tot(cb));
