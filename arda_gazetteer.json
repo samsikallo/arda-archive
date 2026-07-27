@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 305,
+ "n": 304,
  "places": {
   "aeluin": {
    "ages": [],
@@ -169,6 +169,7 @@
     "spec FA: watch",
     "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
     "the vector spec also lists it as “Amon Ereb fort”, at the same place; one record, not two",
+    "a merged record also called it man made watchpost; the kinds are those the corpus states",
     "drawn within lindon, and that containment is not carried: Lindon is the country on the FAR bank of Gelion; the hill stands west of the river, in East Beleriand"
    ],
    "parents": [],
@@ -198,8 +199,7 @@
    ],
    "types": [
     "NATURAL_HILL",
-    "MAN_MADE_FORTRESS",
-    "MAN_MADE_WATCHPOST"
+    "MAN_MADE_FORTRESS"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
@@ -759,6 +759,7 @@
    "cites": [
     "The Silmarillion, line 13087",
     "C II.9–III.1; RC[T]",
+    "HoME XII, The Peoples of Middle-earth [C]",
     "LotR II.9; HoME XII"
    ],
    "coords": [],
@@ -768,20 +769,22 @@
     "“These were the chief dwellings of the Númenóreans in Gondor, but other works marvellous and strong they built in the land in the days of their power, at the Argonath, and at Aglarond, and at Erech; and in the circle of Angrenost, which Men called Isengard, they made the Pinnacle of Orthanc of unbreakable stone.” — The Silmarillion, line 13087",
     "indexed by Christopher Tolkien as: Gates of, Pillars o f",
     "Evidence Table R19",
+    "“Romendakil was forced to withdraw his northern border east of Anduin to the Emyn Muil. He there built the Gates of Argonath with images of Isildur and Anarion beyond which no stranger should pass.” — HoME XII, The Peoples of Middle-earth [C]",
+    "Gondor's own northern boundary-work, raised by Romendakil II about T.A. 1248 — twelve centuries before Calenardhon was granted to the Eorlingas in T.A. 2510",
     "also the Pillars of the Kings",
     "Rómendacil's giants of stone fencing the north-way of Gondor.",
     "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
-    "the vector spec also lists it as “The Argonath”, at the same place; one record, not two"
+    "the vector spec also lists it as “The Argonath”, at the same place; one record, not two",
+    "a merged record also called it natural peak; the kinds are those the corpus states",
+    "drawn within rohan, and that containment is not carried: the pillars were Gondor's border-mark long before Rohan existed; Aragorn names them 'the Argonath, the Pillars of the Kings' (LotR II.9 [C]) and the kings are Gondor's"
    ],
-   "parents": [
-    "rohan"
-   ],
+   "parents": [],
    "place_conf": "High",
    "timeline": [],
    "types": [
-    "MAN_MADE_GATE",
-    "NATURAL_PEAK"
-   ]
+    "MAN_MADE_MONUMENT"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "armenelos": {
    "ages": [],
@@ -5687,39 +5690,27 @@
     "TA"
    ],
    "cites": [
-    "App A I(iii)"
+    "App A I(iii)",
+    "LotR App A I(iii) and its footnote [C]"
    ],
    "coords": [],
    "n": "Ice-bay of Forochel",
    "name_conf": null,
    "notes": [
     "Arvedui Last-king drowned here with the palantíri of the North, 1975.",
-    "within the Arthedain boundary as the living map draws it, T.A. 861–1974 [I-M]"
-   ],
-   "parents": [
-    "arthedain"
-   ],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
-    "NATURAL_BAY",
-    "NATURAL_ICE"
-   ]
-  },
-  "icebay of forochel": {
-   "ages": [],
-   "cites": [],
-   "coords": [],
-   "n": "Icebay of Forochel",
-   "name_conf": null,
-   "notes": [
-    "spec TA: Water"
+    "within the Arthedain boundary as the living map draws it, T.A. 861–1974 [I-M]",
+    "“he was driven at last by hunger to seek the help of the Lossoth, the Snowmen of Forochel. ... These are a strange, unfriendly people, remnant of the Forodwaith, Men of far-off days, accustomed to the bitter colds of the realm of Morgoth.” — LotR App A I(iii) and its footnote [C]",
+    "Arvedui FLED NORTH out of his kingdom to reach it, and the folk there are not his but the Lossoth, a people of their own; the bay lies beyond Arthedain, not in it",
+    "spec TA: Water",
+    "the vector spec also lists it as “Icebay of Forochel”, at the same place; one record, not two",
+    "drawn within arthedain, and that containment is not carried: the last king fled north out of the realm to come here, and the people he found were the Lossoth, remnant of the Forodwaith — a land beyond the kingdom, not a part of it"
    ],
    "parents": [],
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_BAY"
+    "NATURAL_BAY",
+    "NATURAL_ICE"
    ],
    "unplaced": "runs through more than one realm — a single parent would be false"
   },
@@ -8158,23 +8149,26 @@
     "TA"
    ],
    "cites": [
-    "LotR II.10"
+    "LotR II.10",
+    "LotR II.9, Aragorn at Nen Hithoel [C]"
    ],
    "coords": [],
    "n": "Parth Galen — Amon Hen",
    "name_conf": null,
    "notes": [
     "The Breaking of the Fellowship; Boromir's last fight, Feb 26, 3019.",
-    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
+    "“Upon the left stands Amon Lhaw, and upon the right is Amon Hen, the Hills of Hearing and of Sight. In the days of the great kings there were high seats upon them, and watch was kept there.” — LotR II.9, Aragorn at Nen Hithoel [C]",
+    "a work of the great kings of Gondor at Nen Hithoel, watched from Gondor's northern march; the Reader's Companion glosses the seat as 'on Amon Hen, the Hill of the Eye of the Men of Numenor' [EXT]",
+    "drawn within rohan, and that containment is not carried: the high seats were made by Gondor's kings, and the hills stand at Nen Hithoel in the Emyn Muil, not in the Calenardhon that became the Mark"
    ],
-   "parents": [
-    "rohan"
-   ],
+   "parents": [],
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "UNCLASSIFIED"
-   ]
+    "NATURAL_HILL"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "pelargir": {
    "ages": [
@@ -9295,23 +9289,26 @@
     "TA"
    ],
    "cites": [
-    "LotR IV.2"
+    "LotR IV.2",
+    "LotR App B, T.A. 1944 [C]"
    ],
    "coords": [],
    "n": "The Dead Marshes",
    "name_conf": null,
    "notes": [
     "The mere of Dagorlad's dead faces; Gollum led them through, Mar 1-2, 3019.",
-    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]"
+    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]",
+    "“He then wins the Battle of the Camp, and drives Wainriders into the Dead Marshes.” — LotR App B, T.A. 1944 [C]",
+    "the graves of the Last Alliance's dead before the Morannon; a land armies are driven INTO, and no text sets it within any realm",
+    "drawn within gondor, and that containment is not carried: the marshes lie before the Black Gate on the field of Dagorlad; Gondor drove its enemies into them, which is not a statement of possession, and no text places them in any realm"
    ],
-   "parents": [
-    "gondor"
-   ],
+   "parents": [],
    "place_conf": "H",
    "timeline": [],
    "types": [
     "NATURAL_MARSH"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "the morannon": {
    "ages": [
