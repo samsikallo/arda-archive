@@ -1,0 +1,169 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Map of Arda — the Arda Archive</title><!--ARDA:META-->
+<link rel="stylesheet" href="arda.css">
+<style>
+ :root{--ink:#141210;--red:#a3251d;--parch:#efe6d2;--panel:#fbf6e8;--rule:#b0a58e}
+ #stage{position:relative;background:var(--parch);overflow:hidden;
+        height:calc(100vh - 190px);min-height:420px;cursor:grab;touch-action:none}
+ #stage.drag{cursor:grabbing}
+ #stage svg{width:100%;height:100%;display:block}
+ /* THE INK. Black by default, red when chosen -- the whole feature, not a fragment. */
+ .feat .ink,.feat path,.feat circle,.feat polygon{transition:stroke .12s,fill .12s}
+ /* THE PAINT IS NOT ALWAYS ON THE PATH. A range is drawn as bare <path> elements inside a
+    <g fill="#241d15" stroke="#eee3b8">, so a selector written for path[fill] turned the
+    label red and left the mountains black -- the one thing the reader was meant to see.
+    Match ANY element that carries the attribute, group or shape alike. */
+ .feat.on [stroke]:not([stroke="none"]):not([stroke="transparent"]){stroke:var(--red)!important}
+ .feat.on [fill]:not([fill="none"]){fill:var(--red)!important}
+ .feat.on text,.feat.on tspan{fill:var(--red)!important}
+ .feat:focus{outline:none}
+ .feat[data-conf="M"] .hit,.feat[data-conf="L"] .hit{stroke:transparent}
+ /* a placing the archive only infers is drawn dashed, and says so when opened */
+ .feat[data-conf="M"].on path[stroke],.feat[data-conf="L"].on path[stroke]{stroke-dasharray:6 4}
+ .feat[hidden]{display:none}
+ #nm{position:absolute;pointer-events:none;display:none;background:var(--panel);
+     border:1px solid var(--rule);padding:2px 9px;font-variant:small-caps;
+     letter-spacing:.05em;font-size:13px;box-shadow:0 2px 8px rgba(0,0,0,.15);z-index:5}
+ #card{position:absolute;display:none;width:270px;max-width:80vw;background:var(--panel);
+       border:1px solid #8a7a52;box-shadow:0 8px 26px rgba(0,0,0,.28);padding:13px 15px;z-index:6}
+ #card h3{margin:0 0 3px;font-variant:small-caps;letter-spacing:.05em;font-size:17px}
+ #card .k{font-size:11.5px;color:#7a6a50;font-style:italic;margin-bottom:7px}
+ #card .c{font-size:11.5px;color:#6b5d49;border-top:1px solid rgba(176,165,142,.5);
+          margin-top:8px;padding-top:6px}
+ #card a.go{display:inline-block;margin-top:9px;color:#7a5c12;font-variant:small-caps;
+            letter-spacing:.05em}
+ #card .x{position:absolute;top:6px;right:10px;cursor:pointer;color:#8a7a52;font-size:16px}
+ /* NO UI CHROME ON THE CANVAS: the controls live above the sheet, never on it. */
+ #bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px 14px;
+      border-bottom:1px solid var(--rule);background:#f6efdd;font-size:13px}
+ #bar button{font:inherit;background:#fbf6e8;border:1px solid var(--rule);
+             padding:3px 11px;cursor:pointer;font-variant:small-caps;letter-spacing:.04em}
+ #bar button[aria-pressed=true]{background:#e6d9b8;border-color:#8a7a52}
+ #bar .sp{flex:1}
+ #count{color:#7a6a50;font-style:italic}
+ @media (max-width:560px){#stage{height:62vh}}
+</style></head><body><a class="a-skip" href="#main">skip to content</a>
+<div class="hdr"><h1>The Map of Arda</h1><span style="flex:1"></span>
+<nav id="ardanav" aria-label="Archive halls"></nav>
+<span class="sub">every named feature the archive draws, and every one of them answers</span></div>
+<div id="bar" role="toolbar" aria-label="map controls">
+  <span>Age</span>
+  <button data-age="all" aria-pressed="true">all</button>
+  <button data-age="FA" aria-pressed="false">First</button>
+  <button data-age="SA" aria-pressed="false">Second</button>
+  <button data-age="TA" aria-pressed="false">Third</button>
+  <span class="sp"></span>
+  <button id="zin" aria-label="closer">+</button>
+  <button id="zout" aria-label="further">&minus;</button>
+  <button id="zfit">whole sheet</button>
+  <span id="count"></span>
+</div>
+<div role="main" id="stage" role="application" aria-label="the map of Arda; features are focusable">
+  <div id="nm"></div><div id="card"></div>
+</div>
+<p class="method" style="padding:10px 16px;font-size:12.5px">
+ Hover or focus a feature and its ink turns red; click it for the record. A feature drawn
+ <b>dashed</b> is one whose <i>placing</i> the archive infers rather than reads — the name may
+ still be Tolkien's own. 209 features are drawn here; 192 answer to a record in the
+ gazetteer, and the rest are the draughtsman's own labels.</p>
+<script src="nav.js"></script>
+<script>
+const stage=document.getElementById('stage'),nmEl=document.getElementById('nm'),
+      card=document.getElementById('card'),countEl=document.getElementById('count');
+let svg=null,vb=null,vb0=null;
+fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
+  // INLINE, NOT <img alt="">: an <img alt="">'s insides cannot be pointed at.
+  const doc=new DOMParser().parseFromString(txt,'image/svg+xml');
+  svg=doc.documentElement;
+  svg.removeAttribute('width'); svg.removeAttribute('height');
+  svg.setAttribute('preserveAspectRatio','xMidYMid meet');
+  stage.insertBefore(svg,nmEl);
+  const b=svg.getAttribute('viewBox').split(/\s+/).map(Number);
+  vb={x:b[0],y:b[1],w:b[2],h:b[3]}; vb0=Object.assign({},vb);
+  wire(); apply('all');
+});
+function setVB(){svg.setAttribute('viewBox',`${vb.x} ${vb.y} ${vb.w} ${vb.h}`)}
+function wire(){
+  const feats=[...svg.querySelectorAll('.feat')];
+  feats.forEach(g=>{
+    const on=v=>g.classList.toggle('on',v);
+    g.addEventListener('mouseenter',()=>on(true));
+    g.addEventListener('mouseleave',()=>{on(false);nmEl.style.display='none'});
+    g.addEventListener('focus',()=>{on(true);showName(g,null)});
+    g.addEventListener('blur',()=>{on(false);nmEl.style.display='none'});
+    g.addEventListener('mousemove',e=>showName(g,e));
+    g.addEventListener('click',e=>{e.stopPropagation();openCard(g,e)});
+    g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openCard(g,null)}});
+  });
+  countEl.textContent=feats.length+' features';
+}
+function showName(g,e){
+  const r=stage.getBoundingClientRect();
+  nmEl.textContent=g.dataset.name; nmEl.style.display='block';
+  const b=g.getBoundingClientRect();
+  const x=e?e.clientX-r.left+14:b.x-r.x+b.width/2, y=e?e.clientY-r.top-12:b.y-r.y-14;
+  nmEl.style.left=Math.max(2,Math.min(x,stage.clientWidth-nmEl.offsetWidth-4))+'px';
+  nmEl.style.top=Math.max(2,y)+'px';
+}
+function openCard(g,e){
+  const d=g.dataset;
+  const kind=(d.kind||'').toLowerCase().replace(/_/g,' ').replace(/,/g,' &middot; ');
+  const conf=d.conf==='M'?'the archive infers this placing; the name may still be Tolkien’s'
+            :d.conf==='L'?'the placing is weakly inferred'
+            :d.conf?'a text places it here':'';
+  card.innerHTML='<span class="x" id="cx">&times;</span><h3>'+d.name+'</h3>'
+    +'<div class="k">'+(kind||'a feature of the map')+(d.ages?' &middot; '+d.ages.replace(/,/g,', '):'')+'</div>'
+    +(conf?'<div class="c">'+conf+'</div>':'')
+    +(d.key?'<a class="go" href="place.html#'+d.key+'">the full record &#8594;</a>'
+           :'<div class="c">a label of the draughtsman’s, not a place the archive holds</div>');
+  card.style.display='block';
+  const r=stage.getBoundingClientRect(),b=g.getBoundingClientRect();
+  let x=(e?e.clientX-r.left:b.x-r.x+b.width/2)+16, y=(e?e.clientY-r.top:b.y-r.y)+12;
+  // the card must never cover the thing it describes
+  if(x+card.offsetWidth>stage.clientWidth-6) x=Math.max(6,x-card.offsetWidth-32);
+  if(y+card.offsetHeight>stage.clientHeight-6) y=Math.max(6,stage.clientHeight-card.offsetHeight-6);
+  card.style.left=x+'px'; card.style.top=y+'px';
+  document.getElementById('cx').onclick=()=>card.style.display='none';
+}
+stage.addEventListener('click',e=>{if(!e.target.closest('.feat')&&!e.target.closest('#card'))card.style.display='none'});
+addEventListener('keydown',e=>{if(e.key==='Escape')card.style.display='none'});
+// ---- pan and zoom: a viewBox, not a tile server
+let drag=null;
+stage.addEventListener('pointerdown',e=>{if(e.target.closest('.feat'))return;
+  drag={x:e.clientX,y:e.clientY,vx:vb.x,vy:vb.y};stage.classList.add('drag');stage.setPointerCapture(e.pointerId)});
+stage.addEventListener('pointermove',e=>{if(!drag||!svg)return;
+  const k=vb.w/stage.clientWidth;
+  vb.x=drag.vx-(e.clientX-drag.x)*k; vb.y=drag.vy-(e.clientY-drag.y)*k; setVB()});
+stage.addEventListener('pointerup',e=>{drag=null;stage.classList.remove('drag')});
+stage.addEventListener('pointercancel',()=>{drag=null;stage.classList.remove('drag')});
+function zoom(f,cx,cy){if(!svg)return;
+  const r=stage.getBoundingClientRect();
+  const px=(cx===undefined?0.5:(cx-r.left)/r.width), py=(cy===undefined?0.5:(cy-r.top)/r.height);
+  const nx=vb.x+vb.w*px*(1-f), ny=vb.y+vb.h*py*(1-f);
+  vb.w*=f; vb.h*=f; vb.x=nx; vb.y=ny; setVB()}
+stage.addEventListener('wheel',e=>{e.preventDefault();zoom(e.deltaY>0?1.15:0.87,e.clientX,e.clientY)},{passive:false});
+document.getElementById('zin').onclick=()=>zoom(0.8);
+document.getElementById('zout').onclick=()=>zoom(1.25);
+document.getElementById('zfit').onclick=()=>{vb=Object.assign({},vb0);setVB()};
+// ---- the Ages: one engine, one sheet
+function apply(age){
+  if(!svg)return;
+  let shown=0;
+  svg.querySelectorAll('.feat').forEach(g=>{
+    const a=(g.dataset.ages||'').split(',').filter(Boolean);
+    // A FEATURE WITH NO AGE IS NOT HIDDEN. The archive does not know its Age; hiding it would
+    // be the map asserting an absence the corpus never states.
+    const show=(age==='all')||a.length===0||a.includes(age);
+    g.hidden=!show; if(show)shown++;
+  });
+  countEl.textContent=shown+' features';
+}
+document.querySelectorAll('#bar button[data-age]').forEach(b=>{
+  b.onclick=()=>{document.querySelectorAll('#bar button[data-age]').forEach(o=>o.setAttribute('aria-pressed',String(o===b)));
+    apply(b.dataset.age); card.style.display='none';};
+});
+</script>
+<script src="quotes.js"></script><script src="touch.js"></script>
+<script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script>
+</body></html>
