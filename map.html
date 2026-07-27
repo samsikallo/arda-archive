@@ -30,6 +30,19 @@
  #roads .stage{cursor:pointer}
  #bat circle{fill:#a3251d;stroke:#fbf6e8;stroke-width:1.4;opacity:.9;cursor:pointer}
  #bat g[hidden]{display:none}
+ /* THE CHRONOLOGY. A place not yet founded is faint; one thrown down since is dashed and
+    pale. A place the archive has no date for is left ALONE -- it does not know, and dimming
+    it would be the map asserting an absence no text states. */
+ .feat.notyet{opacity:.13}
+ .feat.gone [stroke]:not([stroke="none"]):not([stroke="transparent"]){stroke-dasharray:5 4}
+ .feat.gone{opacity:.42}
+ #chr{display:flex;align-items:center;gap:10px;padding:6px 14px;border-bottom:1px solid var(--rule);
+      background:#f2ead6;font-size:13px}
+ #chr input[type=range]{flex:1;min-width:160px;accent-color:#8a7a52}
+ #chrl{font-variant:small-caps;letter-spacing:.05em;min-width:96px}
+ #chrn{color:#7a6a50;font-style:italic;flex:2;overflow:hidden;text-overflow:ellipsis;
+       white-space:nowrap}
+ #chr.off{display:none}
  #nm{position:absolute;pointer-events:none;display:none;background:var(--panel);
      border:1px solid var(--rule);padding:2px 9px;font-variant:small-caps;
      letter-spacing:.05em;font-size:13px;box-shadow:0 2px 8px rgba(0,0,0,.15);z-index:5}
@@ -70,18 +83,32 @@
   <button id="zfit">whole sheet</button>
   <span id="count"></span>
 </div>
+<div id="chr" class="off">
+  <button id="chrx" aria-pressed="false">chronicle</button>
+  <span id="chrl"></span>
+  <input type="range" id="chrs" min="0" max="0" value="0" aria-label="the year">
+  <span id="chrn"></span>
+</div>
 <div role="main" id="stage" role="application" aria-label="the map of Arda; features are focusable">
   <div id="nm"></div><div id="card"></div>
 </div>
 <p class="method" style="padding:10px 16px;font-size:12.5px">
  Hover or focus a feature and its ink turns red; click it for the record. A feature drawn
  <b>dashed</b> is one whose <i>placing</i> the archive infers rather than reads — the name may
- still be Tolkien's own. 209 features are drawn here; 192 answer to a record in the
+ still be Tolkien's own. 234 features are drawn here; 217 answer to a record in the
  gazetteer, and the rest are the draughtsman's own labels.
  The <b>roads</b> are placed by the place each stage's own label names — never by transforming
  another map's coordinates onto this one, which measurement showed to be forty-four miles out.
  A stage the archive cannot place is <i>not drawn</i>, and a course is broken where it cannot be
- followed: 58 of 88 stages are placed.</p>
+ followed: 58 of 88 stages are placed.
+ The <b>chronicle</b> moves through the moments the archive actually records — a place is faint
+ before it was made and dashed after it was thrown down — and a place it cannot date is left
+ alone, because dimming it would assert an absence no text states.
+ <br><br>This sheet is a <b>palimpsest</b>: Beleriand is drawn as it was, beneath the pale water
+ that now covers it. For the political extent of the realms age by age — which is drawn in
+ another frame this archive has measured and will not force onto this one — see
+ <a href="arda_timemap.html">the turning of the Ages</a> and
+ <a href="arda_timemap_jpeg.html">the living map</a>.</p>
 <script src="nav.js"></script>
 <script>
 const stage=document.getElementById('stage'),nmEl=document.getElementById('nm'),
@@ -96,8 +123,52 @@ fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
   stage.insertBefore(svg,nmEl);
   const b=svg.getAttribute('viewBox').split(/\s+/).map(Number);
   vb={x:b[0],y:b[1],w:b[2],h:b[3]}; vb0=Object.assign({},vb);
-  wire(); apply('all'); loadRoads();
+  wire(); apply('all'); loadRoads(); loadChrono();
 });
+// ---- the chronology: what stood when, from the archive's own dated records
+let CH=null,chOn=false;
+function loadChrono(){
+ fetch('arda_mapchrono.json').then(r=>r.json()).then(d=>{
+  CH=d;
+  const s=document.getElementById('chrs'),bar=document.getElementById('chr');
+  s.max=String(d.steps.length-1); s.value=String(d.steps.length-1);
+  document.getElementById('chrx').onclick=()=>{
+    chOn=!chOn; document.getElementById('chrx').setAttribute('aria-pressed',String(chOn));
+    if(!chOn){svg.querySelectorAll('.feat').forEach(g=>g.classList.remove('notyet','gone'));
+              document.getElementById('chrl').textContent='';
+              document.getElementById('chrn').textContent='';}
+    else at(+s.value);
+  };
+  s.addEventListener('input',()=>{if(chOn)at(+s.value)});
+  bar.classList.remove('off');
+ });
+}
+function at(i){
+  const st=CH.steps[i]; if(!st)return;
+  document.getElementById('chrl').textContent=st.label;
+  const gone=new Set(CH.gone),born=new Set(CH.born);
+  const said=[];
+  svg.querySelectorAll('.feat').forEach(g=>{
+    const evs=CH.places[g.dataset.key];
+    g.classList.remove('notyet','gone');
+    // NO DATE, NO CLAIM: a place the archive cannot date is left exactly as it is.
+    if(!evs)return;
+    let seen=false,ended=false;
+    evs.forEach(e=>{
+      const before=(e.rank<st.rank)||(e.rank===st.rank&&e.year<=st.year);
+      if(!before)return;
+      if(born.has(e.status))seen=true;
+      if(gone.has(e.status))ended=true;
+      if(e.rank===st.rank&&e.year===st.year)
+        said.push(g.dataset.name+' — '+(e.what||e.status));
+    });
+    const first=evs[0];
+    const notYet=!seen&&((st.rank<first.rank)||(st.rank===first.rank&&st.year<first.year));
+    if(notYet)g.classList.add('notyet');
+    else if(ended)g.classList.add('gone');
+  });
+  document.getElementById('chrn').textContent=said.length?said.join(' · '):'';
+}
 // ---- the roads and the battles, placed BY NAME (see map/gen_journeys.py); never transformed
 let roadsOn=false,batOn=false;
 function loadRoads(){

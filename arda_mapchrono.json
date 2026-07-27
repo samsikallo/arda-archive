@@ -1,0 +1,2311 @@
+{
+ "born": [
+  "built",
+  "delved",
+  "founded",
+  "granted",
+  "raised",
+  "rebuilt",
+  "remained",
+  "retaken"
+ ],
+ "gone": [
+  "abandoned",
+  "burned",
+  "destroyed",
+  "drowned",
+  "ruined",
+  "sacked",
+  "unrecorded"
+ ],
+ "n_places": 74,
+ "n_steps": 73,
+ "note": "The slider runs over the moments the archive actually records -- each distinct Age and year at which something in its timelines happened -- so it never moves through invented time. A place with no dated record is never hidden: the archive does not know when it stood, and hiding it would assert an absence no text makes.",
+ "places": {
+  "amon ereb": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 18 [C]",
+    "rank": 1,
+    "status": "burned",
+    "what": "Burned in the Bragollach; Caranthir retreats to Amon Ereb",
+    "year": 455
+   },
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "angle": [
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "ruined",
+    "what": "The angle between Ettenmoors, Weather Hills and Bruinen",
+    "year": 861
+   }
+  ],
+  "angmar": [
+   {
+    "age": "T.A.",
+    "cite": "App A/B",
+    "rank": 3,
+    "status": "event",
+    "what": "Angmar arises; the Witch-king in the North",
+    "year": 1300
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "founded",
+    "what": "The Witch-king (unknown then to be the Nazgûl-lord) founds the realm at Carn Dûm",
+    "year": 1300
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "'an evil lord of the Hill-men' seizes power in secret league with Angmar; the Dúnedain remnant flees",
+    "year": 1350
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A; LotR I.12 [C]",
+    "rank": 3,
+    "status": "ruined",
+    "what": "Its force spent as Angmar's vanguard; the land after holds only trolls and ruin",
+    "year": 1409
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "burned",
+    "what": "The long Angmar war: Amon Sûl burned (1409); the Great Plague (1636); Fornost falls (1974); Arvedui drowns in Forochel (1975)",
+    "year": 1409
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B",
+    "rank": 3,
+    "status": "event",
+    "what": "Fall of Arthedain; Battle of Fornost; Angmar broken",
+    "year": 1974
+   }
+  ],
+  "annuminas": [
+   {
+    "age": "S.A.",
+    "cite": "App A/B [C]",
+    "rank": 2,
+    "status": "founded",
+    "what": "Elendil, cast up in the North, founds the realm; Annúminas its seat",
+    "year": 3320
+   }
+  ],
+  "arnor": [
+   {
+    "age": "S.A.",
+    "cite": "App A/B [C]",
+    "rank": 2,
+    "status": "founded",
+    "what": "Elendil, cast up in the North, founds the realm; Annúminas its seat",
+    "year": 3320
+   },
+   {
+    "age": "S.A.",
+    "cite": "App B",
+    "rank": 2,
+    "status": "founded",
+    "what": "Arnor and Gondor founded",
+    "year": 3320
+   },
+   {
+    "age": "S.A.",
+    "cite": "Silm; App A; UT [C]",
+    "rank": 2,
+    "status": "event",
+    "what": "The realm's flower dies with Elendil at the Last Alliance; Isildur's loss at the Gladden follows",
+    "year": 3434
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "At Eärendur's death the sons divide it: Arthedain, Cardolan, Rhudaur",
+    "year": 861
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B",
+    "rank": 3,
+    "status": "event",
+    "what": "Arnor divided: Arthedain, Cardolan, Rhudaur",
+    "year": 861
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "The line of Isildur endures only here; claims lordship of all Arnor",
+    "year": 1349
+   },
+   {
+    "age": "T.A.",
+    "cite": "LotR VI.5; App A/B [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Elessar crowned; Arnor's kingship resumed with Gondor's",
+    "year": 3019
+   }
+  ],
+  "arossiach": [
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "arthedain": [
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "At Eärendur's death the sons divide it: Arthedain, Cardolan, Rhudaur",
+    "year": 861
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Amlaith, eldest son of Eärendur, holds Fornost and the west",
+    "year": 861
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B",
+    "rank": 3,
+    "status": "event",
+    "what": "Arnor divided: Arthedain, Cardolan, Rhudaur",
+    "year": 861
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "The line of Isildur endures only here; claims lordship of all Arnor",
+    "year": 1349
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "burned",
+    "what": "The long Angmar war: Amon Sûl burned (1409); the Great Plague (1636); Fornost falls (1974); Arvedui drowns in Forochel (1975)",
+    "year": 1409
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B",
+    "rank": 3,
+    "status": "event",
+    "what": "Fall of Arthedain; Battle of Fornost; Angmar broken",
+    "year": 1974
+   }
+  ],
+  "bar en danwedh": [
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "barad dur": [
+   {
+    "age": "S.A.",
+    "cite": "App B; Silm [C]",
+    "rank": 2,
+    "status": "event",
+    "what": "Sauron chooses the mountain-ringed land; Barad-dûr begun with the One Ring's power",
+    "year": 1000
+   },
+   {
+    "age": "S.A.",
+    "cite": "App B",
+    "rank": 2,
+    "status": "event",
+    "what": "Sauron chooses Mordor; Barad-dûr begun",
+    "year": 1000
+   },
+   {
+    "age": "S.A.",
+    "cite": "Silm; App B [C]",
+    "rank": 2,
+    "status": "event",
+    "what": "The Siege of Barad-dûr; Sauron overthrown by Elendil and Gil-galad",
+    "year": 3434
+   },
+   {
+    "age": "T.A.",
+    "cite": "App B",
+    "rank": 3,
+    "status": "built",
+    "what": "Sauron declares himself; Barad-dûr rebuilt",
+    "year": 2951
+   },
+   {
+    "age": "T.A.",
+    "cite": "LotR VI.3–4 [C]",
+    "rank": 3,
+    "status": "destroyed",
+    "what": "The Ring destroyed; Barad-dûr falls; the realm ends",
+    "year": 3019
+   },
+   {
+    "age": "T.A.",
+    "cite": "LotR VI; App B",
+    "rank": 3,
+    "status": "destroyed",
+    "what": "THE RING DESTROYED; fall of Barad-dûr",
+    "year": 3019
+   }
+  ],
+  "barad eithel": [
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "barad nimras": [
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "belegost": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 20 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Azaghâl's phalanx at the Nirnaeth turns Glaurung — the king slain",
+    "year": 473
+   },
+   {
+    "age": "F.A.",
+    "cite": "HoME XII, The Peoples of Middle-earth [C]",
+    "rank": 1,
+    "status": "ruined",
+    "what": "Ered Luin broken and the city ruined; its folk removed to Khazad-dum",
+    "year": 587
+   },
+   {
+    "age": "S.A.",
+    "cite": "App A III [C]",
+    "rank": 2,
+    "status": "event",
+    "what": "Refugees of Nogrod and Belegost swell it; 'its wealth and its renown' greatest",
+    "year": 40
+   },
+   {
+    "age": "S.A.",
+    "cite": "App A III [C]",
+    "rank": 2,
+    "status": "event",
+    "what": "Ered Luin broken in the War of Wrath's tumults; many remove to Khazad-dûm",
+    "year": 40
+   }
+  ],
+  "bree": [
+   {
+    "age": "T.A.",
+    "cite": "App D; Prologue [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Hobbits (Stoors and others) join; Bree Year 1 = T.A. 1300 in their count",
+    "year": 1300
+   },
+   {
+    "age": "T.A.",
+    "cite": "LotR VI.7 [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Ruffian troubles and the fight of the five; the Greenway reopens",
+    "year": 3019
+   }
+  ],
+  "brethil": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 17 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "The Haladin under Haleth remove to Brethil, by leave of Thingol",
+    "year": 390
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 21; CoH [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Brethil holds the Crossings of Teiglin; Túrin's last deeds at Cabed-en-Aras",
+    "year": 458
+   },
+   {
+    "age": "F.A.",
+    "cite": "WotJ, Wanderings of Húrin [C — unpublished layer]",
+    "rank": 1,
+    "status": "event",
+    "what": "The Wanderings of Húrin wreck the chieftain's house (HoME layer)",
+    "year": 501
+   }
+  ],
+  "brithiach": [
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "brithombar": [
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "bywater": [
+   {
+    "age": "T.A.",
+    "cite": "LotR VI.8",
+    "rank": 3,
+    "status": "event",
+    "what": "Battle of Bywater; the Shire scoured",
+    "year": 3019
+   }
+  ],
+  "cardolan": [
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "At Eärendur's death the sons divide it: Arthedain, Cardolan, Rhudaur",
+    "year": 861
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "The land between Baranduin, Gwathló and the Great Road",
+    "year": 861
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B",
+    "rank": 3,
+    "status": "event",
+    "what": "Arnor divided: Arthedain, Cardolan, Rhudaur",
+    "year": 861
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "destroyed",
+    "what": "The last prince falls; a remnant holds Tyrn Gorthad and the Old Forest refuge",
+    "year": 1409
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "The Great Plague ends the Dúnedain here; evil wights enter the Barrows",
+    "year": 1636
+   }
+  ],
+  "carn dum": [
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "founded",
+    "what": "The Witch-king (unknown then to be the Nazgûl-lord) founds the realm at Carn Dûm",
+    "year": 1300
+   }
+  ],
+  "celebrant": [
+   {
+    "age": "T.A.",
+    "cite": "UT, Cirion & Eorl; App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Eorl's ride to Celebrant; Cirion's gift of Calenardhon; the Oath sworn on Halifirien",
+    "year": 2510
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B; UT",
+    "rank": 3,
+    "status": "founded",
+    "what": "Field of Celebrant; the Oath of Eorl; Rohan founded",
+    "year": 2510
+   }
+  ],
+  "cerin amroth": [
+   {
+    "age": "T.A.",
+    "cite": "App A/B",
+    "rank": 3,
+    "status": "event",
+    "what": "Aragorn and Arwen plight their troth on Cerin Amroth; Gollum reaches Mordor's borders",
+    "year": 2980
+   },
+   {
+    "age": "Fo.A.",
+    "cite": "App A",
+    "rank": 4,
+    "status": "event",
+    "what": "Arwen dies at Cerin Amroth",
+    "year": 121
+   }
+  ],
+  "dale": [
+   {
+    "age": "T.A.",
+    "cite": "App A/B; Hobbit",
+    "rank": 3,
+    "status": "event",
+    "what": "Smaug descends on Erebor and Dale",
+    "year": 2770
+   }
+  ],
+  "dol guldur": [
+   {
+    "age": "T.A.",
+    "cite": "App A/B [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "The Shadow at Dol Guldur; the wood becomes Mirkwood; the realm withdraws to the north-east halls",
+    "year": 1050
+   },
+   {
+    "age": "T.A.",
+    "cite": "App B [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "A shadow rises in southern Greenwood — 'the Necromancer' unknown",
+    "year": 1050
+   },
+   {
+    "age": "T.A.",
+    "cite": "App B",
+    "rank": 3,
+    "status": "event",
+    "what": "Gandalf goes to Dol Guldur; the Watchful Peace begins (to 2460)",
+    "year": 2063
+   },
+   {
+    "age": "T.A.",
+    "cite": "App B; Hobbit i",
+    "rank": 3,
+    "status": "event",
+    "what": "Gandalf in Dol Guldur: the Necromancer is Sauron; Thráin's map and key",
+    "year": 2850
+   },
+   {
+    "age": "T.A.",
+    "cite": "App B [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Thrice assailed from Dol Guldur, thrice holding; then Dol Guldur thrown down — Celeborn takes East Lórien",
+    "year": 3019
+   }
+  ],
+  "doriath": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 20, 23 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Círdan and Gil-galad hold Balar; the Havens gather Gondolin's and Doriath's survivors",
+    "year": 473
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 22 [C]",
+    "rank": 1,
+    "status": "sacked",
+    "what": "Thingol slain in Menegroth; the Girdle withdrawn; the Dwarves sack Menegroth; the Second Kinslaying ends Dior's brief restoration",
+    "year": 502
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 22",
+    "rank": 1,
+    "status": "ruined",
+    "what": "Thingol slain; the Ruin of Doriath; Melian returns West",
+    "year": 502
+   }
+  ],
+  "dorlomin": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 17 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Dor-lómin given to Hador Lórindol by Fingolfin",
+    "year": 423
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 20 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "The Easterlings possess the land; the Edain enslaved",
+    "year": 473
+   },
+   {
+    "age": "F.A.",
+    "cite": "CoH [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Túrin's generation scattered; Morwen and Niënor flee",
+    "year": 495
+   }
+  ],
+  "dorthonion": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 14 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Angrod and Aegnor hold the northern pine-highlands",
+    "year": 7
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 17 [C]",
+    "rank": 1,
+    "status": "granted",
+    "what": "Ladros in north-east Dorthonion granted to the sons of Bëor by the sons of Finarfin",
+    "year": 410
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 18 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Both fall in the Bragollach; the land becomes Taur-nu-Fuin, forest of dread",
+    "year": 455
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 18–19 [C]",
+    "rank": 1,
+    "status": "burned",
+    "what": "The Bragollach burns Dorthonion; Barahir's outlawry ends at Tarn Aeluin",
+    "year": 455
+   }
+  ],
+  "dorwinion": [
+   {
+    "age": "T.A.",
+    "cite": "Hobbit 9 [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "'the heady vintage of the great gardens of Dorwinion' shipped up the Running River to the Elvenking and Esgaroth",
+    "year": 2941
+   }
+  ],
+  "dunland": [
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Wulf's host takes Edoras in the Long Winter — the feud's high tide",
+    "year": 2758
+   }
+  ],
+  "edhellond": [
+   {
+    "age": "T.A.",
+    "cite": "App A/B; UT [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Amroth lost at Edhellond's sailing; Galadriel and Celeborn take up the guardianship; Nenya's power hides the wood",
+    "year": 1981
+   }
+  ],
+  "edoras": [
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Wulf's host takes Edoras in the Long Winter — the feud's high tide",
+    "year": 2758
+   }
+  ],
+  "eglarest": [
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "eithel ivrin": [
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "eotheod": [
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Northmen remnants free themselves after the Wainrider disasters; Frumgar leads them north (1977) to the Anduin's springs",
+    "year": 1856
+   }
+  ],
+  "ephel brandir": [
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "erebor": [
+   {
+    "age": "T.A.",
+    "cite": "App A III [C]",
+    "rank": 3,
+    "status": "founded",
+    "what": "Thráin I, out of Moria's ruin, founds the Kingdom under the Mountain; the Arkenstone found",
+    "year": 1999
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A III",
+    "rank": 3,
+    "status": "founded",
+    "what": "Erebor founded: Thráin I comes to the Lonely Mountain",
+    "year": 1999
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B; Hobbit",
+    "rank": 3,
+    "status": "event",
+    "what": "Smaug descends on Erebor and Dale",
+    "year": 2770
+   },
+   {
+    "age": "T.A.",
+    "cite": "Hobbit; App A/B",
+    "rank": 3,
+    "status": "founded",
+    "what": "The Quest of Erebor: Smaug slain; Battle of Five Armies; the Ring found",
+    "year": 2941
+   }
+  ],
+  "ettenmoors": [
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "ruined",
+    "what": "The angle between Ettenmoors, Weather Hills and Bruinen",
+    "year": 861
+   }
+  ],
+  "falas": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 20 [C]",
+    "rank": 1,
+    "status": "besieged",
+    "what": "The Havens besieged and razed the year after the Nirnaeth; remnant to Balar and Sirion",
+    "year": 473
+   }
+  ],
+  "fangorn": [
+   {
+    "age": "T.A.",
+    "cite": "LotR III.4, 8–9 [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "The Entmoot; the march on Isengard ('the last march of the Ents'); the Huorns at the Hornburg; the Treegarth after",
+    "year": 3019
+   }
+  ],
+  "fen of serech": [
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "gladden fields": [
+   {
+    "age": "T.A.",
+    "cite": "App B; UT",
+    "rank": 3,
+    "status": "event",
+    "what": "Disaster of the Gladden Fields; Isildur slain; the Ring lost",
+    "year": 2
+   }
+  ],
+  "gondolin": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 15 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Turgon, guided by Ulmo, finds Tumladen and builds the city in secret",
+    "year": 52
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 15; GA",
+    "rank": 1,
+    "status": "event",
+    "what": "Gondolin full-wrought (52 years of toil)",
+    "year": 116
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 20 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "The host of Gondolin issues to the Nirnaeth — the secrecy half-broken",
+    "year": 472
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 20, 23 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Círdan and Gil-galad hold Balar; the Havens gather Gondolin's and Doriath's survivors",
+    "year": 473
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 23; GA",
+    "rank": 1,
+    "status": "event",
+    "what": "Birth of Eärendil in Gondolin",
+    "year": 503
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 23; BoLT2/FoG [C]",
+    "rank": 1,
+    "status": "destroyed",
+    "what": "Betrayed by Maeglin; the city falls at the Gates of Summer",
+    "year": 510
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 23; FoG",
+    "rank": 1,
+    "status": "event",
+    "what": "The Fall of Gondolin; Glorfindel's duel",
+    "year": 510
+   },
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "gondor": [
+   {
+    "age": "S.A.",
+    "cite": "App A/B [C]",
+    "rank": 2,
+    "status": "founded",
+    "what": "Isildur and Anárion found the realm: Osgiliath the capital, Minas Ithil and Minas Anor its flanking cities",
+    "year": 3320
+   },
+   {
+    "age": "S.A.",
+    "cite": "App B",
+    "rank": 2,
+    "status": "founded",
+    "what": "Arnor and Gondor founded",
+    "year": 3320
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "taken",
+    "what": "The four Ship-kings: Umbar taken, the realm 'reached the summit of its power' under Hyarmendacil I",
+    "year": 830
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A I(iv)",
+    "rank": 3,
+    "status": "event",
+    "what": "Gondor's zenith: the Ship-kings take Umbar; Hyarmendacil's peace",
+    "year": 933
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Gondor takes Umbar (Eärnil I); the rebels of the Kin-strife flee here after 1448 — the Corsair age begins",
+    "year": 933
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "The land watched, then unwatched: Gondor's guard-forts fail after the Plague (1636); the Nazgûl re-enter (1980); Sauron returns declared (2951)",
+    "year": 1000
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Wars with Gondor's Ship-kings; Umbar's loss and the Harad kings' homage to Hyarmendacil",
+    "year": 1015
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A",
+    "rank": 3,
+    "status": "event",
+    "what": "The Kin-strife of Gondor",
+    "year": 1432
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "burned",
+    "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
+    "year": 1432
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "destroyed",
+    "what": "The Great Plague — the watch on Mordor abandoned; 2002 Minas Ithil falls; 2050 the King lost; the Stewards rule",
+    "year": 1636
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A; App B",
+    "rank": 3,
+    "status": "destroyed",
+    "what": "The Wainriders destroy Gondor's northern army; Narmacil II slain",
+    "year": 1856
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Variags join the Wainriders' great combination against Gondor",
+    "year": 1944
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A II",
+    "rank": 3,
+    "status": "event",
+    "what": "The Crossings of Poros: Folcwine's twin sons fall for Gondor",
+    "year": 2885
+   },
+   {
+    "age": "T.A.",
+    "cite": "LotR V–VI [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "The War of the Ring; Elessar crowned — the realm renewed",
+    "year": 3019
+   },
+   {
+    "age": "T.A.",
+    "cite": "LotR VI.5; App A/B [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Elessar crowned; Arnor's kingship resumed with Gondor's",
+    "year": 3019
+   },
+   {
+    "age": "Fo.A.",
+    "cite": "App B",
+    "rank": 4,
+    "status": "event",
+    "what": "King Éomer dies; Merry and Pippin ride to Rohan and Gondor, and rest in Rath Dínen",
+    "year": 63
+   }
+  ],
+  "haudh en ndengin": [
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "himring": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 13–14 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "After Thingol's word, the sons of Fëanor remove east; Maedhros holds Himring",
+    "year": 7
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 18 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "The Bragollach: Himring alone stands; the Gap and Lothlann lost",
+    "year": 455
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 20 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "After the Nirnaeth the March is broken; the brothers scatter to Ossiriand's eaves",
+    "year": 473
+   },
+   {
+    "age": "F.A.",
+    "cite": "Unfinished Tales, Christopher Tolkien's note [I-H — his inference, and he says so: 'the fact is nowhere referred to']",
+    "rank": 1,
+    "status": "remained",
+    "what": "Beleriand went under the sea; this hill's top stood above it as the isle of Himling",
+    "year": 587
+   }
+  ],
+  "hithlum": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 13 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "The Noldor land in Mithrim; Fingolfin holds the north-west",
+    "year": 1
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 18 [C]",
+    "rank": 1,
+    "status": "destroyed",
+    "what": "The Bragollach beaten off at Eithel Sirion; Fingolfin falls before Angband's gate",
+    "year": 455
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 20 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "After the Nirnaeth, Morgoth's Easterlings are penned in Hithlum over the Edain's remnant",
+    "year": 473
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 20 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Morgoth pens his hirelings in Hithlum, cheating them of promised plunder",
+    "year": 473
+   }
+  ],
+  "iant iaur": [
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "iron hills": [
+   {
+    "age": "T.A.",
+    "cite": "App A III [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Grór, Dáin I's younger son, settles the Iron Hills as the Grey Mountains empty",
+    "year": 2590
+   }
+  ],
+  "isengard": [
+   {
+    "age": "T.A.",
+    "cite": "App A/B [C]",
+    "rank": 3,
+    "status": "granted",
+    "what": "Saruman granted the keys by Beren the Steward — tenant become tyrant",
+    "year": 2759
+   },
+   {
+    "age": "T.A.",
+    "cite": "App B",
+    "rank": 3,
+    "status": "event",
+    "what": "The last White Council; Saruman claims Isengard",
+    "year": 2953
+   },
+   {
+    "age": "T.A.",
+    "cite": "LotR III.4, 8–9 [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "The Entmoot; the march on Isengard ('the last march of the Ents'); the Huorns at the Hornburg; the Treegarth after",
+    "year": 3019
+   }
+  ],
+  "khand": [
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Variags join the Wainriders' great combination against Gondor",
+    "year": 1944
+   }
+  ],
+  "lindon": [
+   {
+    "age": "S.A.",
+    "cite": "Silm, Of the Rings; App B [C]",
+    "rank": 2,
+    "status": "built",
+    "what": "Gil-galad king in the surviving shore of old Ossiriand; Mithlond built",
+    "year": 1
+   },
+   {
+    "age": "S.A.",
+    "cite": "App B",
+    "rank": 2,
+    "status": "founded",
+    "what": "Lindon and the Grey Havens founded",
+    "year": 1
+   },
+   {
+    "age": "S.A.",
+    "cite": "UT [C]",
+    "rank": 2,
+    "status": "event",
+    "what": "Lindon holds the line of the Lhûn against Sauron until Númenor's relief",
+    "year": 1695
+   },
+   {
+    "age": "S.A.",
+    "cite": "Silm; App B [C]",
+    "rank": 2,
+    "status": "destroyed",
+    "what": "The Last Alliance marches; Gil-galad falls; the High Kingship ends",
+    "year": 3434
+   }
+  ],
+  "losgar": [
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "lothlann": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 18 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "The Bragollach: Himring alone stands; the Gap and Lothlann lost",
+    "year": 455
+   }
+  ],
+  "menegroth": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 13 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Finrod, shown Menegroth, delves Nargothrond in the caves of Narog",
+    "year": 52
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 22 [C]",
+    "rank": 1,
+    "status": "sacked",
+    "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
+    "year": 502
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 22 [C]",
+    "rank": 1,
+    "status": "sacked",
+    "what": "Thingol slain in Menegroth; the Girdle withdrawn; the Dwarves sack Menegroth; the Second Kinslaying ends Dior's brief restoration",
+    "year": 502
+   },
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "minas morgul": [
+   {
+    "age": "T.A.",
+    "cite": "App A/B [C]",
+    "rank": 3,
+    "status": "besieged",
+    "what": "The Nazgûl besiege and take Minas Ithil; the palantír captured",
+    "year": 2000
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B",
+    "rank": 3,
+    "status": "destroyed",
+    "what": "Minas Ithil falls: Minas Morgul",
+    "year": 2002
+   }
+  ],
+  "mordor": [
+   {
+    "age": "S.A.",
+    "cite": "App B; Silm [C]",
+    "rank": 2,
+    "status": "event",
+    "what": "Sauron chooses the mountain-ringed land; Barad-dûr begun with the One Ring's power",
+    "year": 1000
+   },
+   {
+    "age": "S.A.",
+    "cite": "App B",
+    "rank": 2,
+    "status": "event",
+    "what": "Sauron chooses Mordor; Barad-dûr begun",
+    "year": 1000
+   },
+   {
+    "age": "S.A.",
+    "cite": "Silm; App B [C]",
+    "rank": 2,
+    "status": "event",
+    "what": "The Siege of Barad-dûr; Sauron overthrown by Elendil and Gil-galad",
+    "year": 3434
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "The land watched, then unwatched: Gondor's guard-forts fail after the Plague (1636); the Nazgûl re-enter (1980); Sauron returns declared (2951)",
+    "year": 1000
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "destroyed",
+    "what": "The Great Plague — the watch on Mordor abandoned; 2002 Minas Ithil falls; 2050 the King lost; the Stewards rule",
+    "year": 1636
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B",
+    "rank": 3,
+    "status": "abandoned",
+    "what": "The Balrog awakes; Khazad-dûm abandoned; the Witch-king to Mordor",
+    "year": 1980
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B",
+    "rank": 3,
+    "status": "event",
+    "what": "Aragorn and Arwen plight their troth on Cerin Amroth; Gollum reaches Mordor's borders",
+    "year": 2980
+   },
+   {
+    "age": "T.A.",
+    "cite": "App B",
+    "rank": 3,
+    "status": "taken",
+    "what": "Gollum released from Mordor; taken by Aragorn; Gandalf reads Isildur's scroll",
+    "year": 3017
+   },
+   {
+    "age": "T.A.",
+    "cite": "LotR VI.3–4 [C]",
+    "rank": 3,
+    "status": "destroyed",
+    "what": "The Ring destroyed; Barad-dûr falls; the realm ends",
+    "year": 3019
+   }
+  ],
+  "nargothrond": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 13; Grey Annals",
+    "rank": 1,
+    "status": "founded",
+    "what": "Nargothrond founded by Finrod",
+    "year": 52
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 13 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Finrod, shown Menegroth, delves Nargothrond in the caves of Narog",
+    "year": 52
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 19 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Finrod goes with Beren; Celegorm and Curufin usurp the people's love; Orodreth rules after",
+    "year": 465
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 21; CoH [C]",
+    "rank": 1,
+    "status": "sacked",
+    "what": "The bridge and the open battle of Tumhalad; Glaurung sacks the city",
+    "year": 495
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 21; CoH",
+    "rank": 1,
+    "status": "sacked",
+    "what": "Tumhalad; the Sack of Nargothrond",
+    "year": 495
+   },
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "nogrod": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 22 [C]",
+    "rank": 1,
+    "status": "sacked",
+    "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
+    "year": 502
+   },
+   {
+    "age": "F.A.",
+    "cite": "HoME XII, The Peoples of Middle-earth [C]",
+    "rank": 1,
+    "status": "ruined",
+    "what": "Ered Luin broken and the city ruined; its folk removed to Khazad-dum",
+    "year": 587
+   },
+   {
+    "age": "S.A.",
+    "cite": "App A III [C]",
+    "rank": 2,
+    "status": "event",
+    "what": "Refugees of Nogrod and Belegost swell it; 'its wealth and its renown' greatest",
+    "year": 40
+   }
+  ],
+  "osgiliath": [
+   {
+    "age": "S.A.",
+    "cite": "App A/B [C]",
+    "rank": 2,
+    "status": "founded",
+    "what": "Isildur and Anárion found the realm: Osgiliath the capital, Minas Ithil and Minas Anor its flanking cities",
+    "year": 3320
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "burned",
+    "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
+    "year": 1432
+   }
+  ],
+  "ost in edhil": [
+   {
+    "age": "S.A.",
+    "cite": "App B; UT [C]",
+    "rank": 2,
+    "status": "founded",
+    "what": "Founded by Noldor drawn to Khazad-dûm's mithril; Ost-in-Edhil built",
+    "year": 750
+   },
+   {
+    "age": "S.A.",
+    "cite": "UT, Galadriel & Celeborn [C]",
+    "rank": 2,
+    "status": "event",
+    "what": "Sauron's invasion; Ost-in-Edhil razed; Celebrimbor dies bearing witness against him",
+    "year": 1695
+   }
+  ],
+  "pelargir": [
+   {
+    "age": "S.A.",
+    "cite": "App B",
+    "rank": 2,
+    "status": "built",
+    "what": "Pelargir built, haven of the Faithful",
+    "year": 2350
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A; LotR V.9 [C]",
+    "rank": 3,
+    "status": "burned",
+    "what": "Thorongil's raid burns the fleet; the Corsairs' last armament dies at Pelargir",
+    "year": 2980
+   }
+  ],
+  "rhudaur": [
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "At Eärendur's death the sons divide it: Arthedain, Cardolan, Rhudaur",
+    "year": 861
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "ruined",
+    "what": "The angle between Ettenmoors, Weather Hills and Bruinen",
+    "year": 861
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B",
+    "rank": 3,
+    "status": "event",
+    "what": "Arnor divided: Arthedain, Cardolan, Rhudaur",
+    "year": 861
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "'an evil lord of the Hill-men' seizes power in secret league with Angmar; the Dúnedain remnant flees",
+    "year": 1350
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A; LotR I.12 [C]",
+    "rank": 3,
+    "status": "ruined",
+    "what": "Its force spent as Angmar's vanguard; the land after holds only trolls and ruin",
+    "year": 1409
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B",
+    "rank": 3,
+    "status": "event",
+    "what": "Amon Sûl razed; Rhudaur extinguished",
+    "year": 1409
+   }
+  ],
+  "rhun": [
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Rómendacil II breaks the Easterlings to the Sea of Rhûn",
+    "year": 1248
+   }
+  ],
+  "rivendell": [
+   {
+    "age": "S.A.",
+    "cite": "UT; App B [C]",
+    "rank": 2,
+    "status": "founded",
+    "what": "Founded by Elrond as a war-refuge of Eregion's remnant; besieged, then relieved",
+    "year": 1697
+   },
+   {
+    "age": "T.A.",
+    "cite": "LotR II.2–3 [C]",
+    "rank": 3,
+    "status": "destroyed",
+    "what": "The Council of Elrond; the Fellowship goes out",
+    "year": 3018
+   }
+  ],
+  "rohan": [
+   {
+    "age": "T.A.",
+    "cite": "UT, Cirion & Eorl; App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Eorl's ride to Celebrant; Cirion's gift of Calenardhon; the Oath sworn on Halifirien",
+    "year": 2510
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B; UT",
+    "rank": 3,
+    "status": "founded",
+    "what": "Field of Celebrant; the Oath of Eorl; Rohan founded",
+    "year": 2510
+   },
+   {
+    "age": "Fo.A.",
+    "cite": "App A/B; LotR VI.6 [C]",
+    "rank": 4,
+    "status": "granted",
+    "what": "The ordering of the realm: the Shire made free and banned to Men; Drúadan granted; Núrn to the freed slaves; Ithilien to Faramir's princedom and Legolas's Elves; Rohan's oath renewed",
+    "year": 6
+   },
+   {
+    "age": "Fo.A.",
+    "cite": "App B",
+    "rank": 4,
+    "status": "event",
+    "what": "King Éomer dies; Merry and Pippin ride to Rohan and Gondor, and rest in Rath Dínen",
+    "year": 63
+   }
+  ],
+  "sarn athrad": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 22 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Beren and Lúthien dwell on Tol Galen; the Green-elves aid the ambush at Sarn Athrad",
+    "year": 468
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 22 [C]",
+    "rank": 1,
+    "status": "sacked",
+    "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
+    "year": 502
+   },
+   {
+    "age": "F.A.",
+    "cite": "the Silmarillion puts the ford on Gelion (Of the Ruin of Doriath [C]); what became of it is NOT RECORDED — the attached documents do not provide enough information to answer this",
+    "rank": 1,
+    "status": "unrecorded",
+    "what": "Beleriand went under the sea; this ford lay on Gelion, the border of the land that remained",
+    "year": 587
+   }
+  ],
+  "sea of rhun": [
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Rómendacil II breaks the Easterlings to the Sea of Rhûn",
+    "year": 1248
+   }
+  ],
+  "taur nu fuin": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 18 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Both fall in the Bragollach; the land becomes Taur-nu-Fuin, forest of dread",
+    "year": 455
+   }
+  ],
+  "thargelion": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 13–14 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Caranthir's folk settle between Gelion and Ered Luin by Lake Helevorn",
+    "year": 7
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 18 [C]",
+    "rank": 1,
+    "status": "burned",
+    "what": "Burned in the Bragollach; Caranthir retreats to Amon Ereb",
+    "year": 455
+   },
+   {
+    "age": "F.A.",
+    "cite": "Silm 17 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "(after the land's loss) Haladin earlier defended by Caranthir's riders — the offer refused",
+    "year": 463
+   }
+  ],
+  "the shire": [
+   {
+    "age": "T.A.",
+    "cite": "LotR Prologue [C]",
+    "rank": 3,
+    "status": "granted",
+    "what": "Marcho and Blanco granted the land from Baranduin to the Far Downs by King Argeleb II",
+    "year": 1601
+   },
+   {
+    "age": "T.A.",
+    "cite": "Prologue; App B",
+    "rank": 3,
+    "status": "granted",
+    "what": "The Shire granted and colonised",
+    "year": 1601
+   },
+   {
+    "age": "Fo.A.",
+    "cite": "App B [C]",
+    "rank": 4,
+    "status": "event",
+    "what": "The Westmarch gift; Elessar's ban on Men entering — the Shire a protected free-land of the Reunited Kingdom",
+    "year": 6
+   },
+   {
+    "age": "Fo.A.",
+    "cite": "App A/B; LotR VI.6 [C]",
+    "rank": 4,
+    "status": "granted",
+    "what": "The ordering of the realm: the Shire made free and banned to Men; Drúadan granted; Núrn to the freed slaves; Ithilien to Faramir's princedom and Legolas's Elves; Rohan's oath renewed",
+    "year": 6
+   }
+  ],
+  "tol galen": [
+   {
+    "age": "F.A.",
+    "cite": "Silm 22 [C]",
+    "rank": 1,
+    "status": "event",
+    "what": "Beren and Lúthien dwell on Tol Galen; the Green-elves aid the ambush at Sarn Athrad",
+    "year": 468
+   },
+   {
+    "age": "F.A.",
+    "cite": "[I-H] — not stated of the isle itself, but it follows from two: the Silmarillion places it beyond Gelion in Ossiriand (Of the Ruin of Doriath [C]), and the same book's index excepts Ossiriand from the drowning — 'only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "remained",
+    "what": "Beleriand went under the sea; this isle lay beyond Gelion in Ossiriand, which remained",
+    "year": 587
+   }
+  ],
+  "tol sirion": [
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ],
+  "turin s stone": [
+   {
+    "age": "F.A.",
+    "cite": "The Silmarillion, Of Turin Turambar [C]",
+    "rank": 1,
+    "status": "remained",
+    "what": "the sea drowned all the land, and the Stone of the Hapless stood on upon Tol Morwen",
+    "year": 587
+   }
+  ],
+  "umbar": [
+   {
+    "age": "S.A.",
+    "cite": "App B [C]",
+    "rank": 2,
+    "status": "event",
+    "what": "Umbar made a great fortress of Númenor; seat of the King's Men's dominion",
+    "year": 2280
+   },
+   {
+    "age": "S.A.",
+    "cite": "App B",
+    "rank": 2,
+    "status": "event",
+    "what": "Umbar made a great fortress",
+    "year": 2280
+   },
+   {
+    "age": "S.A.",
+    "cite": "Akallabêth; App B [C]",
+    "rank": 2,
+    "status": "event",
+    "what": "Ar-Pharazôn lands here to humble Sauron — the haven's proudest and worst hour",
+    "year": 3261
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "taken",
+    "what": "The four Ship-kings: Umbar taken, the realm 'reached the summit of its power' under Hyarmendacil I",
+    "year": 830
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A I(iv)",
+    "rank": 3,
+    "status": "event",
+    "what": "Gondor's zenith: the Ship-kings take Umbar; Hyarmendacil's peace",
+    "year": 933
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Gondor takes Umbar (Eärnil I); the rebels of the Kin-strife flee here after 1448 — the Corsair age begins",
+    "year": 933
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Wars with Gondor's Ship-kings; Umbar's loss and the Harad kings' homage to Hyarmendacil",
+    "year": 1015
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "burned",
+    "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
+    "year": 1432
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Telumehtar Umbardacil retakes it briefly; lost again to Harad",
+    "year": 1810
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A; LotR V.9 [C]",
+    "rank": 3,
+    "status": "burned",
+    "what": "Thorongil's raid burns the fleet; the Corsairs' last armament dies at Pelargir",
+    "year": 2980
+   }
+  ],
+  "vinyamar": [
+   {
+    "age": "F.A.",
+    "cite": "VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
+    "rank": 1,
+    "status": "drowned",
+    "what": "Beleriand was drowned; this place stood in that land",
+    "year": 587
+   }
+  ]
+ },
+ "steps": [
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 1",
+   "rank": 1,
+   "year": 1
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 7",
+   "rank": 1,
+   "year": 7
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 52",
+   "rank": 1,
+   "year": 52
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 116",
+   "rank": 1,
+   "year": 116
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 390",
+   "rank": 1,
+   "year": 390
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 410",
+   "rank": 1,
+   "year": 410
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 423",
+   "rank": 1,
+   "year": 423
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 455",
+   "rank": 1,
+   "year": 455
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 458",
+   "rank": 1,
+   "year": 458
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 463",
+   "rank": 1,
+   "year": 463
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 465",
+   "rank": 1,
+   "year": 465
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 468",
+   "rank": 1,
+   "year": 468
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 472",
+   "rank": 1,
+   "year": 472
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 473",
+   "rank": 1,
+   "year": 473
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 495",
+   "rank": 1,
+   "year": 495
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 501",
+   "rank": 1,
+   "year": 501
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 502",
+   "rank": 1,
+   "year": 502
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 503",
+   "rank": 1,
+   "year": 503
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 510",
+   "rank": 1,
+   "year": 510
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 587",
+   "rank": 1,
+   "year": 587
+  },
+  {
+   "age": "S.A.",
+   "era": "the Second Age",
+   "label": "S.A. 1",
+   "rank": 2,
+   "year": 1
+  },
+  {
+   "age": "S.A.",
+   "era": "the Second Age",
+   "label": "S.A. 40",
+   "rank": 2,
+   "year": 40
+  },
+  {
+   "age": "S.A.",
+   "era": "the Second Age",
+   "label": "S.A. 750",
+   "rank": 2,
+   "year": 750
+  },
+  {
+   "age": "S.A.",
+   "era": "the Second Age",
+   "label": "S.A. 1000",
+   "rank": 2,
+   "year": 1000
+  },
+  {
+   "age": "S.A.",
+   "era": "the Second Age",
+   "label": "S.A. 1695",
+   "rank": 2,
+   "year": 1695
+  },
+  {
+   "age": "S.A.",
+   "era": "the Second Age",
+   "label": "S.A. 1697",
+   "rank": 2,
+   "year": 1697
+  },
+  {
+   "age": "S.A.",
+   "era": "the Second Age",
+   "label": "S.A. 2280",
+   "rank": 2,
+   "year": 2280
+  },
+  {
+   "age": "S.A.",
+   "era": "the Second Age",
+   "label": "S.A. 2350",
+   "rank": 2,
+   "year": 2350
+  },
+  {
+   "age": "S.A.",
+   "era": "the Second Age",
+   "label": "S.A. 3261",
+   "rank": 2,
+   "year": 3261
+  },
+  {
+   "age": "S.A.",
+   "era": "the Second Age",
+   "label": "S.A. 3320",
+   "rank": 2,
+   "year": 3320
+  },
+  {
+   "age": "S.A.",
+   "era": "the Second Age",
+   "label": "S.A. 3434",
+   "rank": 2,
+   "year": 3434
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2",
+   "rank": 3,
+   "year": 2
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 830",
+   "rank": 3,
+   "year": 830
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 861",
+   "rank": 3,
+   "year": 861
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 933",
+   "rank": 3,
+   "year": 933
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1000",
+   "rank": 3,
+   "year": 1000
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1015",
+   "rank": 3,
+   "year": 1015
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1050",
+   "rank": 3,
+   "year": 1050
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1248",
+   "rank": 3,
+   "year": 1248
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1300",
+   "rank": 3,
+   "year": 1300
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1349",
+   "rank": 3,
+   "year": 1349
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1350",
+   "rank": 3,
+   "year": 1350
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1409",
+   "rank": 3,
+   "year": 1409
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1432",
+   "rank": 3,
+   "year": 1432
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1601",
+   "rank": 3,
+   "year": 1601
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1636",
+   "rank": 3,
+   "year": 1636
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1810",
+   "rank": 3,
+   "year": 1810
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1856",
+   "rank": 3,
+   "year": 1856
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1944",
+   "rank": 3,
+   "year": 1944
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1974",
+   "rank": 3,
+   "year": 1974
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1980",
+   "rank": 3,
+   "year": 1980
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1981",
+   "rank": 3,
+   "year": 1981
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 1999",
+   "rank": 3,
+   "year": 1999
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2000",
+   "rank": 3,
+   "year": 2000
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2002",
+   "rank": 3,
+   "year": 2002
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2063",
+   "rank": 3,
+   "year": 2063
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2510",
+   "rank": 3,
+   "year": 2510
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2590",
+   "rank": 3,
+   "year": 2590
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2758",
+   "rank": 3,
+   "year": 2758
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2759",
+   "rank": 3,
+   "year": 2759
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2770",
+   "rank": 3,
+   "year": 2770
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2850",
+   "rank": 3,
+   "year": 2850
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2885",
+   "rank": 3,
+   "year": 2885
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2941",
+   "rank": 3,
+   "year": 2941
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2951",
+   "rank": 3,
+   "year": 2951
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2953",
+   "rank": 3,
+   "year": 2953
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 2980",
+   "rank": 3,
+   "year": 2980
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 3017",
+   "rank": 3,
+   "year": 3017
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 3018",
+   "rank": 3,
+   "year": 3018
+  },
+  {
+   "age": "T.A.",
+   "era": "the Third Age",
+   "label": "T.A. 3019",
+   "rank": 3,
+   "year": 3019
+  },
+  {
+   "age": "Fo.A.",
+   "era": "the Fourth Age",
+   "label": "Fo.A. 6",
+   "rank": 4,
+   "year": 6
+  },
+  {
+   "age": "Fo.A.",
+   "era": "the Fourth Age",
+   "label": "Fo.A. 63",
+   "rank": 4,
+   "year": 63
+  },
+  {
+   "age": "Fo.A.",
+   "era": "the Fourth Age",
+   "label": "Fo.A. 121",
+   "rank": 4,
+   "year": 121
+  }
+ ]
+}
