@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 295,
+ "n": 286,
  "places": {
   "aeluin": {
    "ages": [],
@@ -660,10 +660,13 @@
    ]
   },
   "argonath": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [
     "The Silmarillion, line 13087",
-    "C II.9–III.1; RC[T]"
+    "C II.9–III.1; RC[T]",
+    "LotR II.9; HoME XII"
    ],
    "coords": [],
    "n": "Argonath",
@@ -671,13 +674,20 @@
    "notes": [
     "“These were the chief dwellings of the Númenóreans in Gondor, but other works marvellous and strong they built in the land in the days of their power, at the Argonath, and at Aglarond, and at Erech; and in the circle of Angrenost, which Men called Isengard, they made the Pinnacle of Orthanc of unbreakable stone.” — The Silmarillion, line 13087",
     "indexed by Christopher Tolkien as: Gates of, Pillars o f",
-    "Evidence Table R19"
+    "Evidence Table R19",
+    "also the Pillars of the Kings",
+    "Rómendacil's giants of stone fencing the north-way of Gondor.",
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
+    "the vector spec also lists it as “The Argonath”, at the same place; one record, not two"
    ],
-   "parents": [],
+   "parents": [
+    "rohan"
+   ],
    "place_conf": "High",
    "timeline": [],
    "types": [
-    "MAN_MADE_GATE"
+    "MAN_MADE_GATE",
+    "NATURAL_PEAK"
    ]
   },
   "armenelos": {
@@ -2722,14 +2732,25 @@
     "LotR III.6",
     "C III.6, V.3, VI.6; RC[T] (unpub. Index)"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 533,
+     "y": 355
+    }
+   ],
    "n": "Edoras",
    "name_conf": "H",
    "notes": [
     "also & Meduseld",
     "Brego's golden hall under the White Mountains; Théoden's seat.",
     "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
-    "Evidence Table G7"
+    "Evidence Table G7",
+    "spec TA: royal town",
+    "within the Rohan (grant bounds of 2510, dotted line) boundary polygon [I-H]",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "the vector spec also lists it as “Edoras/Meduseld”, at the same place; one record, not two"
    ],
    "parents": [
     "rohan"
@@ -2746,35 +2767,7 @@
    ],
    "types": [
     "MAN_MADE_CITY",
-    "NATURAL_PEAK"
-   ]
-  },
-  "edoras meduseld": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [],
-   "coords": [
-    {
-     "conf": "H",
-     "frame": "TA",
-     "x": 533,
-     "y": 355
-    }
-   ],
-   "n": "Edoras/Meduseld",
-   "name_conf": null,
-   "notes": [
-    "spec TA: royal town",
-    "within the Rohan (grant bounds of 2510, dotted line) boundary polygon [I-H]",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
-   ],
-   "parents": [
-    "rohan"
-   ],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
+    "NATURAL_PEAK",
     "MAN_MADE_TOWN"
    ]
   },
@@ -2936,7 +2929,9 @@
    "ages": [
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "Hobbit ix"
+   ],
    "coords": [
     {
      "conf": "H",
@@ -2950,7 +2945,11 @@
    "notes": [
     "spec TA: cave-city",
     "within the Mirkwood (Greenwood the Great / Eryn Lasgalen) boundary polygon [I-H]",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "also Thranduil's caverns",
+    "Gates of stone over the Forest River; barrels rode hence to Esgaroth.",
+    "within the The Woodland Realm (Thranduil) boundary as the living map draws it, T.A. c.1050– [I-M]",
+    "the vector spec also lists it as “The Elvenking's Halls”, at the same place; one record, not two"
    ],
    "parents": [
     "greenwood"
@@ -2959,7 +2958,8 @@
    "timeline": [],
    "types": [
     "MAN_MADE_CITY",
-    "MAN_MADE_HALL"
+    "MAN_MADE_HALL",
+    "NATURAL_RIVER"
    ]
   },
   "emyn muil": {
@@ -3066,14 +3066,24 @@
     "Hobbit; App A III/B",
     "B ch1, 11–13; C App A"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 747,
+     "y": 764
+    }
+   ],
    "n": "Erebor",
    "name_conf": "H",
    "notes": [
     "also the Lonely Mountain",
     "The Kingdom under the Mountain: Thrór's, Smaug's, Thorin's, Dáin's; besieged 3019.",
     "within the Dale & Erebor boundary as the living map draws it, T.A. 1999–2770; 2941– [I-M]",
-    "Evidence Table R10"
+    "Evidence Table R10",
+    "spec TA: gate-city",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "the vector spec also lists it as “Erebor Front Gate”, at the same place; one record, not two"
    ],
    "parents": [
     "dale"
@@ -3167,33 +3177,7 @@
    ],
    "types": [
     "MAN_MADE_CITY",
-    "NATURAL_PEAK"
-   ]
-  },
-  "erebor front gate": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [],
-   "coords": [
-    {
-     "conf": "H",
-     "frame": "TA",
-     "x": 747,
-     "y": 764
-    }
-   ],
-   "n": "Erebor Front Gate",
-   "name_conf": null,
-   "notes": [
-    "spec TA: gate-city",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
-   ],
-   "parents": [],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
-    "MAN_MADE_CITY",
+    "NATURAL_PEAK",
     "MAN_MADE_GATE"
    ]
   },
@@ -3664,13 +3648,23 @@
    "cites": [
     "App A I(iii-iv)"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 270,
+     "y": 752
+    }
+   ],
    "n": "Fornost",
    "name_conf": null,
    "notes": [
     "also Norbury; Deadmen's Dike",
     "The North-kingdom's last capital; the great battle of 1975 broke Angmar west of it.",
-    "within the Arthedain boundary as the living map draws it, T.A. 861–1974 [I-M]"
+    "within the Arthedain boundary as the living map draws it, T.A. 861–1974 [I-M]",
+    "spec TA: ruined city",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "the vector spec also lists it as “Fornost Erain”, at the same place; one record, not two"
    ],
    "parents": [
     "arthedain"
@@ -3707,32 +3701,7 @@
     }
    ],
    "types": [
-    "MAN_MADE_RUIN"
-   ]
-  },
-  "fornost erain": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [],
-   "coords": [
-    {
-     "conf": "H",
-     "frame": "TA",
-     "x": 270,
-     "y": 752
-    }
-   ],
-   "n": "Fornost Erain",
-   "name_conf": null,
-   "notes": [
-    "spec TA: ruined city",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
-   ],
-   "parents": [],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
+    "MAN_MADE_RUIN",
     "MAN_MADE_CITY"
    ]
   },
@@ -4580,18 +4549,26 @@
    ]
   },
   "high pass": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [
-    "The Hobbit, line 3435"
+    "The Hobbit, line 3435",
+    "Hobbit iv-v; App B"
    ],
    "coords": [],
    "n": "High Pass",
    "name_conf": "High",
    "notes": [
     "“We were crossing by the High Pass that should have brought us to the road that lies to the south of your country, when we were attacked by the evil goblins—as I was about to tell you.” — The Hobbit, line 3435",
-    "indexed by Christopher Tolkien as: Pass over the Misty Mountains east of Rivendell"
+    "indexed by Christopher Tolkien as: Pass over the Misty Mountains east of Rivendell",
+    "also Cirith Forn; Goblin-town beneath",
+    "Thorin's company taken here; Bilbo found the Ring in the dark below, 2941.",
+    "the vector spec also lists it as “The High Pass”, at the same place; one record, not two"
    ],
-   "parents": [],
+   "parents": [
+    "beornings"
+   ],
    "place_conf": "High",
    "timeline": [
     {
@@ -4610,7 +4587,8 @@
     }
    ],
    "types": [
-    "NATURAL_MOUNTAIN_RANGE"
+    "NATURAL_MOUNTAIN_RANGE",
+    "NATURAL_PASS"
    ]
   },
   "hildorien": {
@@ -4907,18 +4885,26 @@
    ]
   },
   "iron hills": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [
-    "B ch15–17; C App A; Atlas"
+    "B ch15–17; C App A; Atlas",
+    "App A III; Hobbit"
    ],
    "coords": [],
    "n": "Iron Hills",
    "name_conf": "H",
    "notes": [
     "spec TA: Mountains",
-    "Evidence Table R11"
+    "Evidence Table R11",
+    "Grór's iron-delvings; Dáin's 500 came mailed to the Mountain.",
+    "within the The Iron Hills (Grór's folk) boundary as the living map draws it, T.A. 2590– [I-M]",
+    "the vector spec also lists it as “The Iron Hills”, at the same place; one record, not two"
    ],
-   "parents": [],
+   "parents": [
+    "ironhills"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -4934,11 +4920,19 @@
      "status": "event",
      "what": "Grór, Dáin I's younger son, settles the Iron Hills as the Grey Mountains empty",
      "when": "T.A. 2590"
+    },
+    {
+     "cite": "Hobbit 15+; App A III [C]",
+     "realm": "ironhills",
+     "status": "event",
+     "what": "Dáin's five hundred come to Erebor; the lordship passes into the restored kingdom",
+     "when": "2941"
     }
    ],
    "types": [
     "NATURAL_MOUNTAIN_RANGE",
-    "NATURAL_HILL"
+    "NATURAL_HILL",
+    "MAN_MADE_HALL"
    ]
   },
   "isen adorn": {
@@ -4965,14 +4959,24 @@
     "LotR III.8-10",
     "C III.8–10; D Cirion, Fords"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 460,
+     "y": 385
+    }
+   ],
    "n": "Isengard",
    "name_conf": "H",
    "notes": [
     "also Orthanc; Nan Curunír",
     "The unbreakable tower in Saruman's ring — drowned by Ents, Mar 3-5, 3019.",
     "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
-    "Evidence Table G3"
+    "Evidence Table G3",
+    "spec TA: ring-fortress",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "the vector spec also lists it as “Isengard/Orthanc”, at the same place; one record, not two"
    ],
    "parents": [
     "rohan"
@@ -5030,35 +5034,7 @@
     }
    ],
    "types": [
-    "MAN_MADE_TOWER"
-   ]
-  },
-  "isengard orthanc": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "C III.8–10; D Cirion, Fords"
-   ],
-   "coords": [
-    {
-     "conf": "H",
-     "frame": "TA",
-     "x": 460,
-     "y": 385
-    }
-   ],
-   "n": "Isengard/Orthanc",
-   "name_conf": "H",
-   "notes": [
-    "spec TA: ring-fortress",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "Evidence Table G3"
-   ],
-   "parents": [],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
+    "MAN_MADE_TOWER",
     "MAN_MADE_FORTRESS"
    ]
   },
@@ -7619,7 +7595,9 @@
    "ages": [
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "LotR V.2"
+   ],
    "coords": [
     {
      "conf": "H",
@@ -7632,13 +7610,19 @@
    "name_conf": null,
    "notes": [
     "spec TA: landmark-stone",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "Isildur's black globe where the Oathbreakers gathered to the heir at midnight.",
+    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]",
+    "the vector spec also lists it as “The Stone of Erech”, at the same place; one record, not two"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_MONUMENT"
+    "MAN_MADE_MONUMENT",
+    "NATURAL_PEAK"
    ]
   },
   "taniquetil": {
@@ -7833,30 +7817,6 @@
     "POLITY_REGION"
    ]
   },
-  "the argonath": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "LotR II.9; HoME XII"
-   ],
-   "coords": [],
-   "n": "The Argonath",
-   "name_conf": null,
-   "notes": [
-    "also the Pillars of the Kings",
-    "Rómendacil's giants of stone fencing the north-way of Gondor.",
-    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]"
-   ],
-   "parents": [
-    "rohan"
-   ],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
-    "NATURAL_PEAK"
-   ]
-  },
   "the carrock": {
    "ages": [
     "TA"
@@ -7935,115 +7895,6 @@
    "timeline": [],
    "types": [
     "NATURAL_MARSH"
-   ]
-  },
-  "the elvenking s halls": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "Hobbit ix"
-   ],
-   "coords": [],
-   "n": "The Elvenking's Halls",
-   "name_conf": null,
-   "notes": [
-    "also Thranduil's caverns",
-    "Gates of stone over the Forest River; barrels rode hence to Esgaroth.",
-    "within the The Woodland Realm (Thranduil) boundary as the living map draws it, T.A. c.1050– [I-M]"
-   ],
-   "parents": [
-    "greenwood"
-   ],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
-    "MAN_MADE_HALL",
-    "NATURAL_RIVER"
-   ]
-  },
-  "the high pass": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "Hobbit iv-v; App B"
-   ],
-   "coords": [],
-   "n": "The High Pass",
-   "name_conf": null,
-   "notes": [
-    "also Cirith Forn; Goblin-town beneath",
-    "Thorin's company taken here; Bilbo found the Ring in the dark below, 2941."
-   ],
-   "parents": [
-    "beornings"
-   ],
-   "place_conf": "H",
-   "timeline": [
-    {
-     "cite": "LotR II.1 [C]",
-     "realm": "beornings",
-     "status": "event",
-     "what": "Grimbeorn the Old holds the High Pass and the Carrock-ford tolls; 'neither orc nor wolf' dare his lands",
-     "when": "3018–19"
-    },
-    {
-     "cite": "App A/B; Hobbit 4 [C]",
-     "realm": "mistyorcs",
-     "status": "event",
-     "what": "Orcs multiply; Moria colonized by Azog; the High Pass tolls in blood (Goblin-town's Great Goblin)",
-     "when": "T.A. 2480+"
-    }
-   ],
-   "types": [
-    "NATURAL_PASS"
-   ]
-  },
-  "the iron hills": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "App A III; Hobbit"
-   ],
-   "coords": [],
-   "n": "The Iron Hills",
-   "name_conf": null,
-   "notes": [
-    "Grór's iron-delvings; Dáin's 500 came mailed to the Mountain.",
-    "within the The Iron Hills (Grór's folk) boundary as the living map draws it, T.A. 2590– [I-M]"
-   ],
-   "parents": [
-    "ironhills"
-   ],
-   "place_conf": "H",
-   "timeline": [
-    {
-     "cite": "App A III [C]",
-     "realm": "ironhills",
-     "status": "event",
-     "what": "Náin and the Iron Hills' mattock-host decide Azanulbizar; Dáin II slays Azog on the Gate-stair",
-     "when": "2799"
-    },
-    {
-     "cite": "Hobbit 15+; App A III [C]",
-     "realm": "ironhills",
-     "status": "event",
-     "what": "Dáin's five hundred come to Erebor; the lordship passes into the restored kingdom",
-     "when": "2941"
-    },
-    {
-     "cite": "App A III [C]",
-     "realm": "ironhills",
-     "status": "event",
-     "what": "Grór, Dáin I's younger son, settles the Iron Hills as the Grey Mountains empty",
-     "when": "T.A. 2590"
-    }
-   ],
-   "types": [
-    "NATURAL_HILL",
-    "MAN_MADE_HALL"
    ]
   },
   "the morannon": {
@@ -8183,29 +8034,6 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
-  },
-  "the stone of erech": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "LotR V.2"
-   ],
-   "coords": [],
-   "n": "The Stone of Erech",
-   "name_conf": null,
-   "notes": [
-    "Isildur's black globe where the Oathbreakers gathered to the heir at midnight.",
-    "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]"
-   ],
-   "parents": [
-    "gondor"
-   ],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
-    "NATURAL_PEAK"
    ]
   },
   "the undeeps": {
