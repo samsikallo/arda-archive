@@ -76,7 +76,7 @@
  #bar .sp{flex:1}
  #count{color:#7a6a50;font-style:italic}
  @media (max-width:560px){#stage{height:62vh}}
-</style></head><body><a class="a-skip" href="#main">skip to content</a>
+</style></head><body>
 <div class="hdr"><h1>The Map of Arda</h1><span style="flex:1"></span>
 <nav id="ardanav" aria-label="Archive halls"></nav>
 <span class="sub">every named feature the archive draws, and every one of them answers</span></div>
@@ -92,6 +92,7 @@
   <button id="tU" aria-pressed="false">unmapped places</button>
   <span>·</span>
   <button id="tT" aria-pressed="false">Christopher's hand</button>
+  <button id="tA" aria-pressed="false" hidden>the unjoined plates</button>
   <span class="sp"></span>
   <button id="zin" aria-label="closer">+</button>
   <button id="zout" aria-label="further">&minus;</button>
@@ -104,7 +105,7 @@
   <input type="range" id="chrs" min="0" max="0" value="0" aria-label="the year">
   <span id="chrn"></span>
 </div>
-<div role="main" id="stage" role="application" aria-label="the map of Arda; features are focusable">
+<div id="stage" role="application" aria-label="the map of Arda; features are focusable">
   <div id="nm"></div><div id="card"></div>
 </div>
 <p class="method" style="padding:10px 16px;font-size:12.5px">
@@ -138,7 +139,7 @@ const stage=document.getElementById('stage'),nmEl=document.getElementById('nm'),
       card=document.getElementById('card'),countEl=document.getElementById('count');
 let svg=null,vb=null,vb0=null;
 fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
-  // INLINE, NOT <img alt="">: an <img alt="">'s insides cannot be pointed at.
+  // INLINE, NOT <img>: an <img>'s insides cannot be pointed at.
   const doc=new DOMParser().parseFromString(txt,'image/svg+xml');
   svg=doc.documentElement;
   svg.removeAttribute('width'); svg.removeAttribute('height');
@@ -168,23 +169,40 @@ function loadTraced(){
       traced.id='traced';
       [...doc.documentElement.querySelectorAll('g.sheet')].forEach(s=>traced.appendChild(s));
       traced.setAttribute('viewBox-note',doc.documentElement.getAttribute('viewBox'));
-      svg.appendChild(traced); show(true);
+      svg.appendChild(traced); wireAside(); show(true);
       b.textContent="Christopher's hand";
     });
     return;
   }
   show(!on);
  };
+ // THE SIX UNJOINED PLATES ARE A DIFFERENT KIND OF THING AND GET THEIR OWN SWITCH.
+ // Only two sheets are joined, and only by a sentence in the Silmarillion. The other six sit
+ // beside the join because nothing outside their own drawing says where they belong; showing
+ // them by default would let a reader take a layout for a registration.
+ let asideOn=false;
+ function wireAside(){
+   const a=document.getElementById('tA'), gs=[...traced.querySelectorAll('g.sheet.aside')];
+   if(!gs.length) return;
+   a.hidden=false;
+   a.onclick=()=>{ asideOn=!asideOn;
+     gs.forEach(g=>g.style.display=asideOn?'':'none');
+     a.setAttribute('aria-pressed',String(asideOn));
+     fit();   // the view must follow what is actually shown
+   };
+ }
+ function fit(){ if(traced){const bb=traced.getBBox();
+   vb={x:bb.x,y:bb.y,w:bb.width,h:bb.height}; setVB();} }
  function show(v){
    on=v; if(traced) traced.style.display=v?'':'none';
+   document.getElementById('tA').hidden=!(v&&traced&&traced.querySelector('g.sheet.aside'));
    // HIS SHEET IS A SHEET, NOT AN OVERLAY. Shown on top of the archive's own drawing it
    // made two maps at once in two different spaces -- the very confusion the measurement
    // warned of. Everything the archive drew steps aside while his lines are up.
    [...svg.children].forEach(c=>{ if(c!==traced) c.style.display=v?'none':''; });
    b.setAttribute('aria-pressed',String(v));
    // his sheet is drawn in its own space, so looking at it means going there
-   if(v&&traced){const bb=traced.getBBox();
-     vb={x:bb.x,y:bb.y,w:bb.width,h:bb.height}; setVB();}
+   if(v&&traced){ fit(); }
    else if(!v){vb=Object.assign({},vb0); setVB();}
  }
 }
