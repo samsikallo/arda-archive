@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 460,
+ "n": 434,
  "places": {
   "adorn": {
    "ages": [
@@ -1765,14 +1765,17 @@
     "TA"
    ],
    "cites": [
-    "LotR I.6–8 [I-H] — the archive's synthesis of canon, not a quotation"
+    "LotR I.6–8 [I-H] — the archive's synthesis of canon, not a quotation",
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
    "coords": [],
    "n": "The house of Tom Bombadil",
    "name_conf": "H",
    "notes": [
     "The Old Forest and the Downs between Buckland's hedge and the Barrow-country — a bounded march older than every realm around it. — LotR I.6–8 [I-H] — the archive's synthesis of canon, not a quotation",
-    "the realms model dates it 'Eldest' – enduring"
+    "the realms model dates it 'Eldest' – enduring",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "the vector spec also lists it as “Bombadil's house”, at the same place; one record, not two"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1793,29 +1796,10 @@
     }
    ],
    "types": [
-    "POLITY_REALM"
-   ],
-   "unplaced": "a realm in its own right — nothing contains it"
-  },
-  "bombadil s house": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "Bombadil's house",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
+    "POLITY_REALM",
     "MAN_MADE_SETTLEMENT"
    ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "brandywine bridge": {
    "ages": [
@@ -2201,41 +2185,25 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (REGIONS_TA); the name is attested 224 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (REGIONS_TA); the name is attested 224 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "LotR I.5"
    ],
    "coords": [],
    "n": "Buckland",
    "name_conf": "H",
    "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "POLITY_REGION"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
-  "buckland crickhollow": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "LotR I.5"
-   ],
-   "coords": [],
-   "n": "Buckland & Crickhollow",
-   "name_conf": null,
-   "notes": [
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "Brandy Hall of the Brandybucks; the conspiracy unmasked itself here.",
-    "within the The Shire boundary as the living map draws it, T.A. 1601– [I-M]"
+    "within the The Shire boundary as the living map draws it, T.A. 1601– [I-M]",
+    "the vector spec also lists it as “Buckland & Crickhollow”, at the same place; one record, not two"
    ],
    "parents": [
     "the shire"
    ],
-   "place_conf": "H",
+   "place_conf": "M",
    "timeline": [],
    "types": [
+    "POLITY_REGION",
     "MAN_MADE_CITY"
    ]
   },
@@ -2246,24 +2214,6 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 69 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
-   "n": "Bucklebury",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
-  "bucklebury ferry": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [],
    "coords": [
     {
      "conf": "H",
@@ -2272,19 +2222,22 @@
      "y": 656
     }
    ],
-   "n": "Bucklebury + Ferry",
-   "name_conf": null,
+   "n": "Bucklebury",
+   "name_conf": "H",
    "notes": [
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "spec TA: town+ferry",
     "within the The Shire boundary polygon [I-H]",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "the vector spec also lists it as “Bucklebury + Ferry”, at the same place; one record, not two"
    ],
    "parents": [
     "the shire"
    ],
-   "place_conf": "H",
+   "place_conf": "M",
    "timeline": [],
    "types": [
+    "MAN_MADE_SETTLEMENT",
     "MAN_MADE_TOWN"
    ]
   },
@@ -3504,26 +3457,6 @@
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
-  "dor lomin": {
-   "ages": [
-    "FA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (REGIONS_FA); the name is attested 313 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "Dor-Lomin",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "POLITY_REGION"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
   "doriath": {
    "ages": [
     "FA",
@@ -3596,14 +3529,17 @@
     "FA"
    ],
    "cites": [
-    "Silm 14; CoH 1 [I-H] — the archive's synthesis of canon, not a quotation"
+    "Silm 14; CoH 1 [I-H] — the archive's synthesis of canon, not a quotation",
+    "drawn on the archive's vector map (REGIONS_FA); the name is attested 313 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
    "coords": [],
    "n": "Dor-lómin (House of Hador)",
    "name_conf": "H",
    "notes": [
     "Southern Hithlum under Ered Wethrin; Amon Darthir above Húrin's fields; cold, misted, horse-rearing country. — Silm 14; CoH 1 [I-H] — the archive's synthesis of canon, not a quotation",
-    "the realms model dates it F.A. c.416–495 (free); occupied to 587"
+    "the realms model dates it F.A. c.416–495 (free); occupied to 587",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "the vector spec also lists it as “Dor-Lomin”, at the same place; one record, not two"
    ],
    "parents": [],
    "place_conf": "H",
@@ -3631,7 +3567,8 @@
     }
    ],
    "types": [
-    "POLITY_REALM"
+    "POLITY_REALM",
+    "POLITY_REGION"
    ],
    "unplaced": "a realm in its own right — nothing contains it"
   },
@@ -3734,31 +3671,17 @@
    "n": "Druadan",
    "name_conf": "H",
    "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "spec TA: Forests",
+    "the vector spec also lists it as “Drúadan Forest”, at the same place; one record, not two"
    ],
    "parents": [],
    "place_conf": "M",
-   "types": [
-    "NATURAL_FOREST"
-   ],
-   "unplaced": "a realm in its own right — nothing contains it"
-  },
-  "druadan forest": {
-   "ages": [],
-   "cites": [],
-   "coords": [],
-   "n": "Drúadan Forest",
-   "name_conf": null,
-   "notes": [
-    "spec TA: Forests"
-   ],
-   "parents": [],
-   "place_conf": "H",
    "timeline": [],
    "types": [
     "NATURAL_FOREST"
    ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "druwaith iaur": {
    "ages": [
@@ -4000,7 +3923,9 @@
    "ages": [
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "drawn on the archive's vector map (REGIONS_TA); the name is attested 19 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
    "coords": [
     {
      "conf": null,
@@ -4010,10 +3935,12 @@
     }
    ],
    "n": "East-Emnet",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "interior label of Rohan, per the vector spec",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "the vector spec also lists it as “Eastemnet”, at the same place; one record, not two"
    ],
    "parents": [
     "rohan"
@@ -4021,28 +3948,9 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "POLITY_SUBREGION"
-   ]
-  },
-  "eastemnet": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (REGIONS_TA); the name is attested 19 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "Eastemnet",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
+    "POLITY_SUBREGION",
     "POLITY_REGION"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "eastfold": {
    "ages": [
@@ -5680,26 +5588,6 @@
     "MAN_MADE_CITY"
    ]
   },
-  "fornost erain": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 8 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "Fornost Erain",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
   "forodwaith": {
    "ages": [
     "TA"
@@ -5744,26 +5632,6 @@
    "timeline": [],
    "types": [
     "MAN_MADE_DWELLING"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
-  "fort": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 38 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "fort",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
@@ -5827,26 +5695,6 @@
    "types": [
     "MAN_MADE_VILLAGE"
    ]
-  },
-  "gate": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 1538 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "gate",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "gelion": {
    "ages": [
@@ -5912,43 +5760,26 @@
    "ages": [
     "TA"
    ],
+   "aka": [
+    "Loeg Ningloron"
+   ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 139 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 139 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "UT; App B",
+    "D Gladden; C I.2; RC[T]"
    ],
    "coords": [],
    "n": "Gladden",
    "name_conf": "H",
    "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "also Loeg Ningloron",
+    "Isildur fell among the reeds, T.A. 2; Déagol's find, 2463.",
+    "Evidence Table R7",
+    "the vector spec also lists it as “Gladden Fields”, at the same place; one record, not two"
    ],
    "parents": [],
    "place_conf": "M",
-   "types": [
-    "NATURAL_RIVER"
-   ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
-  },
-  "gladden fields": {
-   "ages": [
-    "TA"
-   ],
-   "aka": [
-    "Loeg Ningloron"
-   ],
-   "cites": [
-    "UT; App B",
-    "D Gladden; C I.2; RC[T]"
-   ],
-   "coords": [],
-   "n": "Gladden Fields",
-   "name_conf": "H",
-   "notes": [
-    "also Loeg Ningloron",
-    "Isildur fell among the reeds, T.A. 2; Déagol's find, 2463.",
-    "Evidence Table R7"
-   ],
-   "parents": [],
-   "place_conf": "H",
    "timeline": [
     {
      "cite": "App B; UT",
@@ -5959,9 +5790,10 @@
     }
    ],
    "types": [
+    "NATURAL_RIVER",
     "NATURAL_PLAIN"
    ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "glanduin": {
    "ages": [
@@ -6562,24 +6394,6 @@
    "cites": [
     "drawn on the archive's vector map (PEAKS_TA); the name is attested 40 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
-   "n": "Halifirien",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "NATURAL_PEAK"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
-  "halifirien hallow": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [],
    "coords": [
     {
      "conf": "H",
@@ -6588,16 +6402,19 @@
      "y": 325
     }
    ],
-   "n": "Halifirien hallow",
-   "name_conf": null,
+   "n": "Halifirien",
+   "name_conf": "H",
    "notes": [
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "spec TA: hallow/beacon",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "the vector spec also lists it as “Halifirien hallow”, at the same place; one record, not two"
    ],
    "parents": [],
-   "place_conf": "H",
+   "place_conf": "M",
    "timeline": [],
    "types": [
+    "NATURAL_PEAK",
     "MAN_MADE_HALLOW"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
@@ -6713,24 +6530,6 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 34 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
-   "n": "Harlond",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
-  "harlond gondor quays": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [],
    "coords": [
     {
      "conf": "H",
@@ -6739,19 +6538,22 @@
      "y": 262
     }
    ],
-   "n": "Harlond (Gondor quays)",
-   "name_conf": null,
+   "n": "Harlond",
+   "name_conf": "H",
    "notes": [
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "spec TA: haven",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "named Gondor quays by the spec, which is how it is told from the other place of the same name"
+    "named Gondor quays by the spec, which is how it is told from the other place of the same name",
+    "the vector spec also lists it as “Harlond (Gondor quays)”, at the same place; one record, not two"
    ],
    "parents": [
     "gondor"
    ],
-   "place_conf": "H",
+   "place_conf": "M",
    "timeline": [],
    "types": [
+    "MAN_MADE_SETTLEMENT",
     "MAN_MADE_HAVEN"
    ]
   },
@@ -6868,26 +6670,6 @@
     "MAN_MADE_TOMB",
     "NATURAL_PEAK"
    ]
-  },
-  "haven": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 640 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "haven",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "havens of sirion": {
    "ages": [
@@ -7318,28 +7100,7 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 336 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "Hobbiton",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared",
-    "named among the shire's own settlements in its dossier [C]"
-   ],
-   "parents": [
-    "the shire"
-   ],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
-   ]
-  },
-  "hobbiton bag end": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 336 times in the tier-1 corpus [C for the name, I-M for the placing]",
     "Hobbit i; LotR I.1"
    ],
    "coords": [
@@ -7350,19 +7111,22 @@
      "y": 668
     }
    ],
-   "n": "Hobbiton + Bag End",
-   "name_conf": null,
+   "n": "Hobbiton",
+   "name_conf": "H",
    "notes": [
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "spec TA: town",
     "Under the Hill: Bilbo's and Frodo's door, where two Quests began.",
-    "within the The Shire boundary polygon [I-H]"
+    "within the The Shire boundary polygon [I-H]",
+    "the vector spec also lists it as “Hobbiton + Bag End”, at the same place; one record, not two"
    ],
    "parents": [
     "the shire"
    ],
-   "place_conf": "H",
+   "place_conf": "M",
    "timeline": [],
    "types": [
+    "MAN_MADE_SETTLEMENT",
     "MAN_MADE_TOWN",
     "MAN_MADE_CITY"
    ]
@@ -7475,24 +7239,6 @@
    "types": [
     "NATURAL_BAY",
     "NATURAL_ICE"
-   ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
-  },
-  "icebay of forochel": {
-   "ages": [],
-   "cites": [
-    "drawn on the archive's vector map (SEAS); the name is attested 1 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "Icebay of Forochel",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "NATURAL_SEA"
    ],
    "unplaced": "runs through more than one realm — a single parent would be false"
   },
@@ -8158,26 +7904,6 @@
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
-  "landmark": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 2 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "landmark",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
   "langwell": {
    "ages": [
     "TA"
@@ -8786,26 +8512,6 @@
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
-  "major": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 249 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "Major",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
   "malduin": {
    "ages": [
     "FA"
@@ -8843,26 +8549,6 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
-  "med": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 1 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "Med",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
@@ -8952,35 +8638,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 24 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 24 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "Unfinished Tales, line 9390"
    ],
    "coords": [],
    "n": "Mering",
    "name_conf": "H",
    "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "“As they descended the trees became ever more dense, especially along the Mering Stream (which rose in the cleft) and northwards out into the plain through which the Stream flowed into the Entwash.” — Unfinished Tales, line 9390",
+    "indexed by Christopher Tolkien as: The ‘Boundary-stream’ between Rohan and",
+    "the vector spec also lists it as “Mering Stream”, at the same place; one record, not two"
    ],
    "parents": [],
    "place_conf": "M",
-   "types": [
-    "NATURAL_RIVER"
-   ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
-  },
-  "mering stream": {
-   "ages": [],
-   "cites": [
-    "Unfinished Tales, line 9390"
-   ],
-   "coords": [],
-   "n": "Mering Stream",
-   "name_conf": "High",
-   "notes": [
-    "“As they descended the trees became ever more dense, especially along the Mering Stream (which rose in the cleft) and northwards out into the plain through which the Stream flowed into the Entwash.” — Unfinished Tales, line 9390",
-    "indexed by Christopher Tolkien as: The ‘Boundary-stream’ between Rohan and"
-   ],
-   "parents": [],
-   "place_conf": "High",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
@@ -9251,26 +8922,6 @@
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
-  "minor": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 242 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "Minor",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
@@ -10786,24 +10437,6 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 19 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
-   "n": "Poros",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "NATURAL_RIVER"
-   ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
-  },
-  "poros march": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [],
    "coords": [
     {
      "conf": null,
@@ -10812,18 +10445,21 @@
      "y": 220
     }
    ],
-   "n": "Poros-March",
-   "name_conf": null,
+   "n": "Poros",
+   "name_conf": "H",
    "notes": [
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "interior label of Gondor, per the vector spec",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "the vector spec also lists it as “Poros-March”, at the same place; one record, not two"
    ],
    "parents": [
     "gondor"
    ],
-   "place_conf": "H",
+   "place_conf": "M",
    "timeline": [],
    "types": [
+    "NATURAL_RIVER",
     "POLITY_SUBREGION"
    ]
   },
@@ -11212,26 +10848,6 @@
    "types": [
     "MAN_MADE_HAVEN"
    ]
-  },
-  "ruin": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 525 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "ruin",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "rushey": {
    "ages": [],
@@ -12655,28 +12271,6 @@
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
-  "tower": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 1562 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "tower",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared",
-    "named among gondolin's own settlements in its dossier [C]"
-   ],
-   "parents": [
-    "gondolin"
-   ],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
-   ]
-  },
   "tower hills": {
    "ages": [
     "TA"
@@ -12735,26 +12329,6 @@
    "types": [
     "MAN_MADE_FORTRESS",
     "MAN_MADE_TOWER"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
-  "town": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 625 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "town",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
@@ -12817,24 +12391,6 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 41 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
-   "n": "Tuckborough",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
-    "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
-  "tuckborough great smials": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [],
    "coords": [
     {
      "conf": "H",
@@ -12843,19 +12399,22 @@
      "y": 655
     }
    ],
-   "n": "Tuckborough/Great Smials",
-   "name_conf": null,
+   "n": "Tuckborough",
+   "name_conf": "H",
    "notes": [
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "spec TA: town",
     "within the The Shire boundary polygon [I-H]",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "the vector spec also lists it as “Tuckborough/Great Smials”, at the same place; one record, not two"
    ],
    "parents": [
     "the shire"
    ],
-   "place_conf": "H",
+   "place_conf": "M",
    "timeline": [],
    "types": [
+    "MAN_MADE_SETTLEMENT",
     "MAN_MADE_TOWN"
    ]
   },
@@ -13465,7 +13024,9 @@
    "ages": [
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "drawn on the archive's vector map (REGIONS_TA); the name is attested 9 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
    "coords": [
     {
      "conf": null,
@@ -13475,10 +13036,12 @@
     }
    ],
    "n": "West-Emnet",
-   "name_conf": null,
+   "name_conf": "H",
    "notes": [
     "interior label of Rohan, per the vector spec",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "the vector spec also lists it as “Westemnet”, at the same place; one record, not two"
    ],
    "parents": [
     "rohan"
@@ -13486,28 +13049,9 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "POLITY_SUBREGION"
-   ]
-  },
-  "westemnet": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (REGIONS_TA); the name is attested 9 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [],
-   "n": "Westemnet",
-   "name_conf": "H",
-   "notes": [
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "types": [
+    "POLITY_SUBREGION",
     "POLITY_REGION"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "westfold": {
    "ages": [
