@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 450,
+ "n": 452,
  "places": {
   "adorn": {
    "ages": [
@@ -14,10 +14,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 28 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 478,
+     "y": 352
+    }
+   ],
    "n": "Adorn",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -34,10 +42,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 42 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 851,
+     "y": 214
+    }
+   ],
    "n": "Adurant",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -54,10 +70,18 @@
    "cites": [
     "drawn on the archive's vector map (LAKES_FA); the name is attested 42 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 531,
+     "y": 469
+    }
+   ],
    "n": "Aelin-uial",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -211,10 +235,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 32 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 718,
+     "y": 293
+    }
+   ],
    "n": "Amon Din",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -401,10 +433,18 @@
    "cites": [
     "drawn on the archive's vector map (MTS_FA); the name is attested 24 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 554,
+     "y": 442
+    }
+   ],
    "n": "Andram",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -443,10 +483,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 16 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 274,
+     "y": 655
+    }
+   ],
    "n": "Andrath",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -755,10 +803,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_FA); the name is attested 18 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 271,
+     "y": 633
+    }
+   ],
    "n": "Annon-in-Gelydh",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -874,10 +930,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 41 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 568,
+     "y": 830
+    }
+   ],
    "n": "Ard-Galen",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -1042,10 +1106,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 166 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 620,
+     "y": 535
+    }
+   ],
    "n": "Aros",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -1164,10 +1236,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 29 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 488,
+     "y": 182
+    }
+   ],
    "n": "Arvernien",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -1184,10 +1264,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 75 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 858,
+     "y": 434
+    }
+   ],
    "n": "Ascar",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -1501,10 +1589,18 @@
    "cites": [
     "drawn on the archive's vector map (SEAS); the name is attested 25 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": -105,
+     "y": 415
+    }
+   ],
    "n": "Bay of Balar",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -1519,10 +1615,18 @@
    "cites": [
     "drawn on the archive's vector map (SEAS); the name is attested 37 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 620,
+     "y": 120
+    }
+   ],
    "n": "Bay of Belfalas",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -1537,10 +1641,18 @@
    "cites": [
     "drawn on the archive's vector map (SEAS); the name is attested 14 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": -575,
+     "y": 545
+    }
+   ],
    "n": "Bay of Eldamar",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -1555,10 +1667,18 @@
    "cites": [
     "drawn on the archive's vector map (SEAS); the name is attested 25 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": -420,
+     "y": 520
+    }
+   ],
    "n": "Belegaer",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -1651,10 +1771,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 1909 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 470,
+     "y": 340
+    }
+   ],
    "n": "Beleriand",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -1792,10 +1920,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 263,
+     "y": 651
+    }
+   ],
    "n": "Bombadil's house",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -2002,10 +2138,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 20 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 808,
+     "y": 303
+    }
+   ],
    "n": "Brilthor",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -2096,10 +2240,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 15 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 251,
+     "y": 438
+    }
+   ],
    "n": "Brithon",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -2116,10 +2268,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_TA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 588,
+     "y": 508
+    }
+   ],
    "n": "the Brown Lands",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -2191,10 +2351,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_TA); the name is attested 224 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 251,
+     "y": 652
+    }
+   ],
    "n": "Buckland",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -2234,10 +2402,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 69 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 249,
+     "y": 656
+    }
+   ],
    "n": "Bucklebury",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -2381,10 +2557,18 @@
    "cites": [
     "drawn on the archive's vector map (GHOSTS_TA); the name is attested 63 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 560,
+     "y": 388
+    }
+   ],
    "n": "Calenardhon",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -2401,10 +2585,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 10 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 620,
+     "y": 320
+    }
+   ],
    "n": "Calenhad",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -2590,10 +2782,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 13 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 880,
+     "y": 660
+    }
+   ],
    "n": "Carnen",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -2637,10 +2837,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 17 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 748,
+     "y": 758
+    }
+   ],
    "n": "Celduin",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -2657,10 +2865,18 @@
    "cites": [
     "drawn on the archive's vector map (PEAKS_TA); the name is attested 32 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 500,
+     "y": 578
+    }
+   ],
    "n": "Celebdil",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -2728,10 +2944,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 83 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 491,
+     "y": 499
+    }
+   ],
    "n": "Celebros",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -2748,10 +2972,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 80 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 686,
+     "y": 597
+    }
+   ],
    "n": "Celon",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -2768,10 +3000,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 14 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 672,
+     "y": 248
+    }
+   ],
    "n": "Celos",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -2968,10 +3208,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_FA); the name is attested 53 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 471,
+     "y": 509
+    }
+   ],
    "n": "Crossings of Teiglin",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -2988,10 +3236,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_TA); the name is attested 68 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 733,
+     "y": 372
+    }
+   ],
    "n": "Dagorlad",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -3084,10 +3340,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 39 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 537,
+     "y": 338
+    }
+   ],
    "n": "Dark Door",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -3104,10 +3368,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_TA); the name is attested 5 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 760,
+     "y": 782
+    }
+   ],
    "n": "Desolation of Smaug",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -3173,10 +3445,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 7 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 512,
+     "y": 572
+    }
+   ],
    "n": "Dimrill Gate",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -3479,10 +3759,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 4 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 855,
+     "y": 228
+    }
+   ],
    "n": "Dor Firn-i-Guinar",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -3567,12 +3855,20 @@
     "Silm 14; CoH 1 [I-H] — the archive's synthesis of canon, not a quotation",
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 313 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 271,
+     "y": 601
+    }
+   ],
    "n": "Dor-lómin (House of Hador)",
    "name_conf": "H",
    "notes": [
     "Southern Hithlum under Ered Wethrin; Amon Darthir above Húrin's fields; cold, misted, horse-rearing country. — Silm 14; CoH 1 [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it F.A. c.416–495 (free); occupied to 587",
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "the vector spec also lists it as “Dor-Lomin”, at the same place; one record, not two"
    ],
@@ -3702,10 +3998,18 @@
    "cites": [
     "drawn on the archive's vector map (FORESTS_TA); the name is attested 51 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 704,
+     "y": 293
+    }
+   ],
    "n": "Druadan",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "spec TA: Forests",
     "the vector spec also lists it as “Drúadan Forest”, at the same place; one record, not two"
@@ -3725,10 +4029,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_TA); the name is attested 10 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 430,
+     "y": 252
+    }
+   ],
    "n": "Druwaith Iaur",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -3745,10 +4057,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 25 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 805,
+     "y": 260
+    }
+   ],
    "n": "Duilwen",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -3941,10 +4261,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 73 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 730,
+     "y": 495
+    }
+   ],
    "n": "East Beleriand",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -3958,9 +4286,7 @@
    "ages": [
     "TA"
    ],
-   "cites": [
-    "drawn on the archive's vector map (REGIONS_TA); the name is attested 19 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
+   "cites": [],
    "coords": [
     {
      "conf": null,
@@ -3970,12 +4296,10 @@
     }
    ],
    "n": "East-Emnet",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "interior label of Rohan, per the vector spec",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "the archive draws this and had no record of it until the map and the gazetteer were compared",
-    "the vector spec also lists it as “Eastemnet”, at the same place; one record, not two"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "rohan"
@@ -3983,9 +4307,36 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "POLITY_SUBREGION",
-    "POLITY_REGION"
+    "POLITY_SUBREGION"
    ]
+  },
+  "eastemnet": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (REGIONS_TA); the name is attested 19 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 575,
+     "y": 430
+    }
+   ],
+   "n": "Eastemnet",
+   "name_conf": "H",
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "POLITY_REGION"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "eastfold": {
    "ages": [
@@ -4022,10 +4373,18 @@
    "cites": [
     "drawn on the archive's vector map (MTS_FA); the name is attested 31 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 578,
+     "y": 630
+    }
+   ],
    "n": "Echoriath",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -4185,10 +4544,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 46 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 698,
+     "y": 298
+    }
+   ],
    "n": "Eilenach",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -4364,10 +4731,18 @@
    "cites": [
     "drawn on the archive's vector map (HILLFIELDS); the name is attested 30 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 765,
+     "y": 244
+    }
+   ],
    "n": "Emyn Arnen",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -4404,10 +4779,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_TA); the name is attested 47 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 330,
+     "y": 430
+    }
+   ],
    "n": "Enedwaith",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -4424,10 +4807,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 14 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 560,
+     "y": 365
+    }
+   ],
    "n": "Entwade",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -4444,10 +4835,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 109 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 557,
+     "y": 360
+    }
+   ],
    "n": "Entwash",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -4464,10 +4863,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_FA); the name is attested 3 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 742,
+     "y": 584
+    }
+   ],
    "n": "Eol's house",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -4565,10 +4972,18 @@
    "cites": [
     "drawn on the archive's vector map (MTS_TA); the name is attested 60 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 782,
+     "y": 270
+    }
+   ],
    "n": "Ephel Duath",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -4757,10 +5172,18 @@
    "cites": [
     "drawn on the archive's vector map (MTS_FA); the name is attested 23 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 218,
+     "y": 658
+    }
+   ],
    "n": "Ered Lomin",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -4794,10 +5217,18 @@
    "cites": [
     "drawn on the archive's vector map (MTS_FA); the name is attested 106 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 449,
+     "y": 573
+    }
+   ],
    "n": "Ered Wethrin",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -4905,10 +5336,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 10 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 655,
+     "y": 310
+    }
+   ],
    "n": "Erelas",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -4925,10 +5364,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_TA); the name is attested 244 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 350,
+     "y": 628
+    }
+   ],
    "n": "Eriador",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -4945,10 +5392,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 25 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 695,
+     "y": 235
+    }
+   ],
    "n": "Erui",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -4982,10 +5437,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 135 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 590,
+     "y": 569
+    }
+   ],
    "n": "Esgalduin",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -5085,10 +5548,18 @@
    "cites": [
     "drawn on the archive's vector map (SEAS); the name is attested 28 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 688,
+     "y": 152
+    }
+   ],
    "n": "Ethir Anduin",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -5136,10 +5607,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 5 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 503,
+     "y": 678
+    }
+   ],
    "n": "the Eyrie",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -5273,10 +5752,18 @@
    "cites": [
     "drawn on the archive's vector map (PEAKS_TA); the name is attested 20 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 505,
+     "y": 577
+    }
+   ],
    "n": "Fanuidhol",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -5293,10 +5780,18 @@
    "cites": [
     "drawn on the archive's vector map (HILLFIELDS); the name is attested 20 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 169,
+     "y": 659
+    }
+   ],
    "n": "Far Downs",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -5403,10 +5898,18 @@
    "cites": [
     "drawn on the archive's vector map (SEAS); the name is attested 38 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": -292,
+     "y": 690
+    }
+   ],
    "n": "Firth of Drengist",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -5482,10 +5985,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 50 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 730,
+     "y": 740
+    }
+   ],
    "n": "Forest River",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -5502,10 +6013,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_TA); the name is attested 5 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 70,
+     "y": 706
+    }
+   ],
    "n": "Forlindon",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -5663,10 +6182,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_TA); the name is attested 42 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 400,
+     "y": 955
+    }
+   ],
    "n": "Forodwaith",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -5771,10 +6298,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 253 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 813,
+     "y": 353
+    }
+   ],
    "n": "Gelion",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -5791,10 +6326,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 43 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 652,
+     "y": 208
+    }
+   ],
    "n": "Gilrain",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -5811,10 +6354,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 30 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 403,
+     "y": 495
+    }
+   ],
    "n": "Ginglith",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -5831,10 +6382,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 139 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 510,
+     "y": 608
+    }
+   ],
    "n": "Gladden",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -5886,10 +6445,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 23 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 390,
+     "y": 520
+    }
+   ],
    "n": "Glanduin",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -5906,10 +6473,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 436,
+     "y": 540
+    }
+   ],
    "n": "Glithui",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -6228,10 +6803,18 @@
    "cites": [
     "drawn on the archive's vector map (SEAS); the name is attested 222 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": -410,
+     "y": 470
+    }
+   ],
    "n": "The Great Sea",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -6248,10 +6831,18 @@
    "cites": [
     "drawn on the archive's vector map (HILLFIELDS); the name is attested 56 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 224,
+     "y": 648
+    }
+   ],
    "n": "Green Hills",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -6380,10 +6971,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 92 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 300,
+     "y": 513
+    }
+   ],
    "n": "Greyflood",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -6400,10 +6999,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 11 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 540,
+     "y": 825
+    }
+   ],
    "n": "Greylin",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -6418,10 +7025,18 @@
    "cites": [
     "drawn on the archive's vector map (SEAS); the name is attested 14 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 18,
+     "y": 662
+    }
+   ],
    "n": "Gulf of Lhun",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -6438,10 +7053,18 @@
    "cites": [
     "drawn on the archive's vector map (PEAKS_TA); the name is attested 15 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 507,
+     "y": 807
+    }
+   ],
    "n": "Gundabad",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -6478,10 +7101,18 @@
    "cites": [
     "drawn on the archive's vector map (PEAKS_TA); the name is attested 40 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 605,
+     "y": 325
+    }
+   ],
    "n": "Halifirien",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -6629,10 +7260,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 34 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 45,
+     "y": 648
+    }
+   ],
    "n": "Harlond",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -6707,10 +7346,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 11 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 735,
+     "y": 135
+    }
+   ],
    "n": "Harnen",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -6852,10 +7499,18 @@
    "cites": [
     "drawn on the archive's vector map (SEAS); the name is attested 38 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": -410,
+     "y": 955
+    }
+   ],
    "n": "Helcaraxe",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -6872,10 +7527,18 @@
    "cites": [
     "drawn on the archive's vector map (LAKES_FA); the name is attested 26 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 881,
+     "y": 706
+    }
+   ],
    "n": "Helevorn",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -7021,10 +7684,18 @@
    "cites": [
     "drawn on the archive's vector map (HILLFIELDS); the name is attested 6 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 222,
+     "y": 760
+    }
+   ],
    "n": "Hills of Evendim",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -7041,10 +7712,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 24 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 713,
+     "y": 630
+    }
+   ],
    "n": "Himlad",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -7184,10 +7863,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 66 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 395,
+     "y": 673
+    }
+   ],
    "n": "Hoarwell",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -7204,10 +7891,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 336 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 218,
+     "y": 668
+    }
+   ],
    "n": "Hobbiton",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "named among the shire's own settlements in its dossier [C]"
    ],
@@ -7482,10 +8177,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 255 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 430,
+     "y": 340
+    }
+   ],
    "n": "Isen",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -7944,10 +8647,18 @@
    "cites": [
     "drawn on the archive's vector map (LAKES_TA); the name is attested 7 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 235,
+     "y": 748
+    }
+   ],
    "n": "Lake Evendim",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -7994,10 +8705,18 @@
    "cites": [
     "drawn on the archive's vector map (LAKES_FA); the name is attested 27 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 347,
+     "y": 654
+    }
+   ],
    "n": "Lake Mithrim",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -8064,10 +8783,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 6 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 540,
+     "y": 825
+    }
+   ],
    "n": "Langwell",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -8159,10 +8886,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 15 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 812,
+     "y": 341
+    }
+   ],
    "n": "Legolin",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -8196,10 +8931,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 56 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 530,
+     "y": 525
+    }
+   ],
    "n": "Limlight",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -8216,10 +8959,18 @@
    "cites": [
     "drawn on the archive's vector map (LAKES_FA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 193,
+     "y": 529
+    }
+   ],
    "n": "Linaewen",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -8387,10 +9138,18 @@
    "cites": [
     "drawn on the archive's vector map (LAKES_TA); the name is attested 42 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 758,
+     "y": 700
+    }
+   ],
    "n": "Long Lake",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -8407,10 +9166,18 @@
    "cites": [
     "drawn on the archive's vector map (MARSHES_TA); the name is attested 1 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 741,
+     "y": 732
+    }
+   ],
    "n": "Long Marshes",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -8474,10 +9241,18 @@
    "cites": [
     "drawn on the archive's vector map (FORESTS_TA); the name is attested 883 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 539,
+     "y": 544
+    }
+   ],
    "n": "Lorien",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -8632,10 +9407,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 62 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 450,
+     "y": 640
+    }
+   ],
    "n": "Loudwater",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -8652,10 +9435,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 10 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 825,
+     "y": 658
+    }
+   ],
    "n": "Maglor'S Gap",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -8672,10 +9463,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 16 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 446,
+     "y": 537
+    }
+   ],
    "n": "Malduin",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -8794,10 +9593,18 @@
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 24 times in the tier-1 corpus [C for the name, I-M for the placing]",
     "Unfinished Tales, line 9390"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 603,
+     "y": 340
+    }
+   ],
    "n": "Mering",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "“As they descended the trees became ever more dense, especially along the Mering Stream (which rose in the cleft) and northwards out into the plain through which the Stream flowed into the Entwash.” — Unfinished Tales, line 9390",
     "indexed by Christopher Tolkien as: The ‘Boundary-stream’ between Rohan and",
@@ -8875,10 +9682,18 @@
    "cites": [
     "drawn on the archive's vector map (MARSHES_TA); the name is attested 17 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 305,
+     "y": 678
+    }
+   ],
    "n": "Midgewater",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -8895,10 +9710,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 640,
+     "y": 315
+    }
+   ],
    "n": "Min-Rimmon",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -9023,10 +9846,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 48 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 541,
+     "y": 580
+    }
+   ],
    "n": "Mindeb",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -9043,10 +9874,18 @@
    "cites": [
     "drawn on the archive's vector map (PEAKS_TA); the name is attested 73 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 740,
+     "y": 272
+    }
+   ],
    "n": "Mindolluin",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -9169,10 +10008,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 330 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 337,
+     "y": 644
+    }
+   ],
    "n": "Mithrim",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -9499,10 +10346,18 @@
    "cites": [
     "drawn on the archive's vector map (SEAS); the name is attested 93 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": -95,
+     "y": 438
+    }
+   ],
    "n": "Mouths of Sirion",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -9562,10 +10417,18 @@
    "cites": [
     "drawn on the archive's vector map (FORESTS_FA); the name is attested 32 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 509,
+     "y": 256
+    }
+   ],
    "n": "Nan-tathren",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -9582,10 +10445,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 26 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 672,
+     "y": 305
+    }
+   ],
    "n": "Nardol",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -9681,10 +10552,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 425 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 416,
+     "y": 381
+    }
+   ],
    "n": "Narog",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -9701,10 +10580,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_TA); the name is attested 14 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 850,
+     "y": 60
+    }
+   ],
    "n": "Near Harad",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -9807,10 +10694,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 34 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 290,
+     "y": 374
+    }
+   ],
    "n": "Nenning",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -9870,10 +10765,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 123 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 540,
+     "y": 552
+    }
+   ],
    "n": "Nimrodel",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -9890,10 +10793,18 @@
    "cites": [
     "drawn on the archive's vector map (MARSHES_TA); the name is attested 25 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 598,
+     "y": 371
+    }
+   ],
    "n": "Nindalf",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -9910,10 +10821,18 @@
    "cites": [
     "drawn on the archive's vector map (FORESTS_FA); the name is attested 21 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 508,
+     "y": 476
+    }
+   ],
    "n": "Nivrim",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -10001,10 +10920,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_TA); the name is attested 11 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 725,
+     "y": 395
+    }
+   ],
    "n": "Noman-Lands",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -10021,10 +10948,18 @@
    "cites": [
     "drawn on the archive's vector map (HILLFIELDS); the name is attested 24 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 272,
+     "y": 742
+    }
+   ],
    "n": "North Downs",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -10366,10 +11301,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 315 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 851,
+     "y": 318
+    }
+   ],
    "n": "Ossiriand",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -10461,10 +11404,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 11 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 752,
+     "y": 684
+    }
+   ],
    "n": "Pass of Aglon",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -10481,10 +11432,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 7 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 580,
+     "y": 655
+    }
+   ],
    "n": "Pass of Anach",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -10501,10 +11460,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 50 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 494,
+     "y": 668
+    }
+   ],
    "n": "Pass of Sirion",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -10590,10 +11557,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 19 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 765,
+     "y": 218
+    }
+   ],
    "n": "Poros",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -11229,10 +12204,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 20 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 650,
+     "y": 215
+    }
+   ],
    "n": "Serni",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -11247,10 +12230,18 @@
    "cites": [
     "drawn on the archive's vector map (SEAS); the name is attested 75 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": -500,
+     "y": 600
+    }
+   ],
    "n": "the Shadowy Seas",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -11295,10 +12286,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 1441 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 515,
+     "y": 474
+    }
+   ],
    "n": "Sirion",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -11315,10 +12314,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 13 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 678,
+     "y": 232
+    }
+   ],
    "n": "Sirith",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -11335,10 +12342,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 30 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 545,
+     "y": 356
+    }
+   ],
    "n": "Snowbourn",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -11355,10 +12370,18 @@
    "cites": [
     "drawn on the archive's vector map (HILLFIELDS); the name is attested 6 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 288,
+     "y": 638
+    }
+   ],
    "n": "South Downs",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -11375,10 +12398,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_TA); the name is attested 18 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 760,
+     "y": 190
+    }
+   ],
    "n": "South Gondor",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -11521,10 +12552,18 @@
    "cites": [
     "drawn on the archive's vector map (MARSHES_TA); the name is attested 13 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 379,
+     "y": 514
+    }
+   ],
    "n": "Swanfleet",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -11541,10 +12580,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 35 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 429,
+     "y": 488
+    }
+   ],
    "n": "Talath Dirnen",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -11611,10 +12658,18 @@
    "cites": [
     "drawn on the archive's vector map (LAKES_FA); the name is attested 22 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 691,
+     "y": 733
+    }
+   ],
    "n": "Tarn Aeluin",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -11651,10 +12706,18 @@
    "cites": [
     "drawn on the archive's vector map (MTS_FA); the name is attested 20 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 399,
+     "y": 438
+    }
+   ],
    "n": "Taur-en-Faroth",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -11722,10 +12785,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 209 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 488,
+     "y": 495
+    }
+   ],
    "n": "Teiglin",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -11742,10 +12813,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_FA); the name is attested 21 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 816,
+     "y": 384
+    }
+   ],
    "n": "Thalos",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -12254,10 +13333,18 @@
    "cites": [
     "drawn on the archive's vector map (PEAKS_TA); the name is attested 15 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 488,
+     "y": 326
+    }
+   ],
    "n": "Thrihyrne",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -12644,10 +13731,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 41 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 222,
+     "y": 655
+    }
+   ],
    "n": "Tuckborough",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -12730,10 +13825,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 59 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 535,
+     "y": 618
+    }
+   ],
    "n": "Tumladen",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -13178,10 +14281,18 @@
    "cites": [
     "drawn on the archive's vector map (HILLFIELDS); the name is attested 19 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 346,
+     "y": 688
+    }
+   ],
    "n": "Weather Hills",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -13253,10 +14364,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 35 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 320,
+     "y": 405
+    }
+   ],
    "n": "West Beleriand",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -13273,10 +14392,18 @@
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 4 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 490,
+     "y": 578
+    }
+   ],
    "n": "West-door",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "named among khazaddum's own settlements in its dossier [C]"
    ],
@@ -13292,9 +14419,7 @@
    "ages": [
     "TA"
    ],
-   "cites": [
-    "drawn on the archive's vector map (REGIONS_TA); the name is attested 9 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
+   "cites": [],
    "coords": [
     {
      "conf": null,
@@ -13304,12 +14429,10 @@
     }
    ],
    "n": "West-Emnet",
-   "name_conf": "H",
+   "name_conf": null,
    "notes": [
     "interior label of Rohan, per the vector spec",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "the archive draws this and had no record of it until the map and the gazetteer were compared",
-    "the vector spec also lists it as “Westemnet”, at the same place; one record, not two"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
    "parents": [
     "rohan"
@@ -13317,9 +14440,36 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "POLITY_SUBREGION",
-    "POLITY_REGION"
+    "POLITY_SUBREGION"
    ]
+  },
+  "westemnet": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "drawn on the archive's vector map (REGIONS_TA); the name is attested 9 times in the tier-1 corpus [C for the name, I-M for the placing]"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 540,
+     "y": 412
+    }
+   ],
+   "n": "Westemnet",
+   "name_conf": "H",
+   "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "types": [
+    "POLITY_REGION"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "westfold": {
    "ages": [
@@ -13356,10 +14506,18 @@
    "cites": [
     "drawn on the archive's vector map (HILLFIELDS); the name is attested 22 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 187,
+     "y": 657
+    }
+   ],
    "n": "White Downs",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -13463,10 +14621,18 @@
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 95 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 258,
+     "y": 648
+    }
+   ],
    "n": "Withywindle",
    "name_conf": "H",
    "notes": [
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -13483,10 +14649,18 @@
    "cites": [
     "drawn on the archive's vector map (REGIONS_TA); the name is attested 14 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 548,
+     "y": 492
+    }
+   ],
    "n": "Wold of Rohan",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
@@ -13549,10 +14723,18 @@
    "cites": [
     "drawn on the archive's vector map (FORESTS_FA); the name is attested 5 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 404,
+     "y": 565
+    }
+   ],
    "n": "Woods of Nuath",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
    "parents": [],
