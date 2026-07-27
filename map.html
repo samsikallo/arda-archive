@@ -90,6 +90,8 @@
   <button id="tR" aria-pressed="false">roads</button>
   <button id="tB" aria-pressed="false">battles</button>
   <button id="tU" aria-pressed="false">unmapped places</button>
+  <span>·</span>
+  <button id="tT" aria-pressed="false">Christopher's hand</button>
   <span class="sp"></span>
   <button id="zin" aria-label="closer">+</button>
   <button id="zout" aria-label="further">&minus;</button>
@@ -119,7 +121,12 @@
  alone, because dimming it would assert an absence no text states.
  <br><br>This sheet is a <b>palimpsest</b>: Beleriand is drawn as it was, beneath the pale water
  that now covers it. For the political extent of the realms age by age — which is drawn in
- another frame this archive has measured and will not force onto this one — The layer of <b>unmapped places</b> shows 145 records the archive can place and the sheet
+ another frame this archive has measured and will not force onto this one — <b>Christopher's hand</b> draws his own linework — every coastline, hatched range and river
+ traced from the published plates and drawn here as paths, not as a picture. His lettering is
+ not reproduced. His sheets keep their own geometry and are shown in their own space: measured
+ against the archive's frame they are 121 miles out across the sheet, so bending them to fit
+ would spoil the one thing they are for.
+ The layer of <b>unmapped places</b> shows 145 records the archive can place and the sheet
  does not draw — a layer above the map, never drawn into it, because the sheet's restraint is
  deliberate. A hollow mark is a point borrowed from a containing place or set down by a measure,
  rather than the place's own. See also
@@ -139,8 +146,49 @@ fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
   stage.insertBefore(svg,nmEl);
   const b=svg.getAttribute('viewBox').split(/\s+/).map(Number);
   vb={x:b[0],y:b[1],w:b[2],h:b[3]}; vb0=Object.assign({},vb);
-  wire(); apply('all'); loadRoads(); loadChrono(); loadUndrawn(); goHash();
+  wire(); apply('all'); loadRoads(); loadChrono(); loadUndrawn(); loadTraced(); goHash();
 });
+// ---- CHRISTOPHER TOLKIEN'S OWN LINEWORK, traced from the plates and drawn here as vectors.
+// Not a picture of his map: his paths, in this page. His LETTERING is not reproduced -- he
+// letters in red and draws in black, and the two separate on the colour channel.
+//
+// The traced sheets keep THEIR OWN geometry and are not warped onto the archive's frame:
+// registering the General Map against it measured 23 miles within Eriador and 121 across the
+// sheet, so the two are not related by any affine, and bending his lines to fit would spoil
+// the one thing they are for. They are shown in their own space, beside the archive's drawing.
+let traced=null;
+function loadTraced(){
+ const b=document.getElementById('tT'); let on=false;
+ b.onclick=()=>{
+  if(!traced){
+    b.textContent='tracing…';
+    fetch('arda_traced.svg').then(r=>r.text()).then(txt=>{
+      const doc=new DOMParser().parseFromString(txt,'image/svg+xml');
+      traced=document.createElementNS('http://www.w3.org/2000/svg','g');
+      traced.id='traced';
+      [...doc.documentElement.querySelectorAll('g.sheet')].forEach(s=>traced.appendChild(s));
+      traced.setAttribute('viewBox-note',doc.documentElement.getAttribute('viewBox'));
+      svg.appendChild(traced); show(true);
+      b.textContent="Christopher's hand";
+    });
+    return;
+  }
+  show(!on);
+ };
+ function show(v){
+   on=v; if(traced) traced.style.display=v?'':'none';
+   // HIS SHEET IS A SHEET, NOT AN OVERLAY. Shown on top of the archive's own drawing it
+   // made two maps at once in two different spaces -- the very confusion the measurement
+   // warned of. Everything the archive drew steps aside while his lines are up.
+   [...svg.children].forEach(c=>{ if(c!==traced) c.style.display=v?'none':''; });
+   b.setAttribute('aria-pressed',String(v));
+   // his sheet is drawn in its own space, so looking at it means going there
+   if(v&&traced){const bb=traced.getBBox();
+     vb={x:bb.x,y:bb.y,w:bb.width,h:bb.height}; setVB();}
+   else if(!v){vb=Object.assign({},vb0); setVB();}
+ }
+}
+
 // ---- the places the archive knows and does not draw
 function loadUndrawn(){
  fetch('arda_undrawn.json').then(r=>r.json()).then(U=>{
