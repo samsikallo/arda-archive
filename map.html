@@ -22,6 +22,14 @@
  /* a placing the archive only infers is drawn dashed, and says so when opened */
  .feat[data-conf="M"].on path[stroke],.feat[data-conf="L"].on path[stroke]{stroke-dasharray:6 4}
  .feat[hidden]{display:none}
+ /* THE ROADS. Drawn above the land, never filled, and broken where the archive cannot
+    follow them -- a road drawn through half its stages is a different road. */
+ #roads path{fill:none;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;opacity:.92}
+ #roads circle{stroke:#fbf6e8;stroke-width:1.2}
+ #roads g[hidden]{display:none}
+ #roads .stage{cursor:pointer}
+ #bat circle{fill:#a3251d;stroke:#fbf6e8;stroke-width:1.4;opacity:.9;cursor:pointer}
+ #bat g[hidden]{display:none}
  #nm{position:absolute;pointer-events:none;display:none;background:var(--panel);
      border:1px solid var(--rule);padding:2px 9px;font-variant:small-caps;
      letter-spacing:.05em;font-size:13px;box-shadow:0 2px 8px rgba(0,0,0,.15);z-index:5}
@@ -53,6 +61,9 @@
   <button data-age="FA" aria-pressed="false">First</button>
   <button data-age="SA" aria-pressed="false">Second</button>
   <button data-age="TA" aria-pressed="false">Third</button>
+  <span>·</span>
+  <button id="tR" aria-pressed="false">roads</button>
+  <button id="tB" aria-pressed="false">battles</button>
   <span class="sp"></span>
   <button id="zin" aria-label="closer">+</button>
   <button id="zout" aria-label="further">&minus;</button>
@@ -66,7 +77,11 @@
  Hover or focus a feature and its ink turns red; click it for the record. A feature drawn
  <b>dashed</b> is one whose <i>placing</i> the archive infers rather than reads — the name may
  still be Tolkien's own. 209 features are drawn here; 192 answer to a record in the
- gazetteer, and the rest are the draughtsman's own labels.</p>
+ gazetteer, and the rest are the draughtsman's own labels.
+ The <b>roads</b> are placed by the place each stage's own label names — never by transforming
+ another map's coordinates onto this one, which measurement showed to be forty-four miles out.
+ A stage the archive cannot place is <i>not drawn</i>, and a course is broken where it cannot be
+ followed: 58 of 88 stages are placed.</p>
 <script src="nav.js"></script>
 <script>
 const stage=document.getElementById('stage'),nmEl=document.getElementById('nm'),
@@ -81,8 +96,64 @@ fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
   stage.insertBefore(svg,nmEl);
   const b=svg.getAttribute('viewBox').split(/\s+/).map(Number);
   vb={x:b[0],y:b[1],w:b[2],h:b[3]}; vb0=Object.assign({},vb);
-  wire(); apply('all');
+  wire(); apply('all'); loadRoads();
 });
+// ---- the roads and the battles, placed BY NAME (see map/gen_journeys.py); never transformed
+let roadsOn=false,batOn=false;
+function loadRoads(){
+ fetch('arda_journeys.json').then(r=>r.json()).then(J=>{
+  const NS='http://www.w3.org/2000/svg';
+  const gR=document.createElementNS(NS,'g'); gR.id='roads'; gR.style.display='none';
+  const gB=document.createElementNS(NS,'g'); gB.id='bat';  gB.style.display='none';
+  J.journeys.forEach(j=>{
+   const g=document.createElementNS(NS,'g');
+   g.dataset.name=j.name; g.dataset.placed=j.n_placed; g.dataset.stages=j.n_stages;
+   j.segments.forEach(seg=>{
+     const p=document.createElementNS(NS,'path');
+     p.setAttribute('d','M'+seg.map(s=>s[0]+' '+s[1]).join(' L'));
+     p.setAttribute('stroke',j.colour||'#c9a227');
+     g.appendChild(p);
+     seg.forEach(s=>{
+       const c=document.createElementNS(NS,'circle');
+       c.setAttribute('cx',s[0]); c.setAttribute('cy',s[1]); c.setAttribute('r',9);
+       c.setAttribute('fill',j.colour||'#c9a227'); c.setAttribute('class','stage');
+       c.dataset.key=s[3]||''; c.dataset.label=s[4]||''; c.dataset.j=j.name;
+       g.appendChild(c);
+     });
+   });
+   gR.appendChild(g);
+  });
+  J.battles.forEach(b=>{
+   const g=document.createElementNS(NS,'g');
+   const c=document.createElementNS(NS,'circle');
+   c.setAttribute('cx',b.x); c.setAttribute('cy',b.y); c.setAttribute('r',13);
+   c.dataset.key=b.key||''; c.dataset.label=b.name;
+   g.appendChild(c); gB.appendChild(g);
+  });
+  svg.appendChild(gR); svg.appendChild(gB);
+  [...gR.querySelectorAll('.stage'),...gB.querySelectorAll('circle')].forEach(c=>{
+    c.addEventListener('mousemove',e=>{const r=stage.getBoundingClientRect();
+      nmEl.textContent=c.dataset.label; nmEl.style.display='block';
+      nmEl.style.left=(e.clientX-r.left+14)+'px'; nmEl.style.top=(e.clientY-r.top-12)+'px';});
+    c.addEventListener('mouseleave',()=>nmEl.style.display='none');
+    c.addEventListener('click',e=>{e.stopPropagation();
+      const r=stage.getBoundingClientRect();
+      card.innerHTML='<span class="x" id="cx">&times;</span><h3>'+(c.dataset.j||'a battle')+'</h3>'
+        +'<div class="k">'+c.dataset.label+'</div>'
+        +(c.dataset.key?'<a class="go" href="place.html#'+c.dataset.key+'">the full record &#8594;</a>':'');
+      card.style.display='block';
+      card.style.left=Math.min(e.clientX-r.left+16,stage.clientWidth-286)+'px';
+      card.style.top=(e.clientY-r.top+12)+'px';
+      document.getElementById('cx').onclick=()=>card.style.display='none';});
+  });
+  const stat=J.n_placed+' of '+J.n_stages+' stages placed';
+  document.getElementById('tR').title='the roads: '+stat;
+  document.getElementById('tR').onclick=()=>{roadsOn=!roadsOn;gR.style.display=roadsOn?'':'none';
+    document.getElementById('tR').setAttribute('aria-pressed',String(roadsOn));};
+  document.getElementById('tB').onclick=()=>{batOn=!batOn;gB.style.display=batOn?'':'none';
+    document.getElementById('tB').setAttribute('aria-pressed',String(batOn));};
+ });
+}
 function setVB(){svg.setAttribute('viewBox',`${vb.x} ${vb.y} ${vb.w} ${vb.h}`)}
 function wire(){
   const feats=[...svg.querySelectorAll('.feat')];

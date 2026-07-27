@@ -527,14 +527,23 @@
   "anduin": {
    "ages": [],
    "cites": [
-    "A RoP; C II.9; D; RC[T]"
+    "A RoP; C II.9; D; RC[T]",
+    "placed from the archive's own vector map (RIVERS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 600,
+     "y": 410
+    }
+   ],
    "n": "Anduin (the Great River)",
    "name_conf": "H",
    "notes": [
     "spec TA: Water",
-    "Evidence Table R5"
+    "Evidence Table R5",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [],
    "place_conf": "L",
@@ -581,16 +590,25 @@
    ],
    "cites": [
     "Silm 18/20",
-    "A ch14, ch18, ch20"
+    "A ch14, ch18, ch20",
+    "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 568,
+     "y": 807
+    }
+   ],
    "n": "Anfauglith",
    "name_conf": "H",
    "notes": [
     "also Ard-galen (before 455)",
     "The green plain burned to gasping dust in the Bragollach; the Haudh-en-Ndengin rose here.",
     "within the Dominion of Angband (after 455) boundary as the living map draws it, F.A. 455–583 [I-M]",
-    "Evidence Table B4"
+    "Evidence Table B4",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "angband"
@@ -689,14 +707,23 @@
   "angle": {
    "ages": [],
    "cites": [
-    "The Lord of the Rings, line 15571"
+    "The Lord of the Rings, line 15571",
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 398,
+     "y": 634
+    }
+   ],
    "n": "Angle",
    "name_conf": "High",
    "notes": [
     "“The others may walk free for a while, until we come nearer to our dwellings, down in Egladil, in the Angle between the waters.” — The Lord of the Rings, line 15571",
-    "indexed by Christopher Tolkien as: Land between the rivers Hoarwell and Loudwater"
+    "indexed by Christopher Tolkien as: Land between the rivers Hoarwell and Loudwater",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "High",
@@ -722,14 +749,23 @@
     "the Witch-realm"
    ],
    "cites": [
-    "C App A; D (Index)"
+    "C App A; D (Index)",
+    "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 468,
+     "y": 812
+    }
+   ],
    "n": "Angmar",
    "name_conf": "H",
    "notes": [
     "spec TA: Political / Regional Polygons",
-    "Evidence Table E20"
+    "Evidence Table E20",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -903,16 +939,25 @@
     "TA"
    ],
    "cites": [
-    "The Lord of the Rings, line 7016"
+    "The Lord of the Rings, line 7016",
+    "placed from the archive's own vector map (SETTLE_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 281,
+     "y": 692
+    }
+   ],
    "n": "Archet",
    "name_conf": "High",
    "notes": [
     "“Besides Bree itself, there was Staddle on the other side of the hill, Combe in a deep valley a little further eastward, and Archet on the edge of the Chetwood.” — The Lord of the Rings, line 7016",
     "indexed by Christopher Tolkien as: Village of the Bree-land",
     "named within Bree-land by the vector spec's own block for it",
-    "Ages taken from its realm bree, having none of its own [I-H]"
+    "Ages taken from its realm bree, having none of its own [I-H]",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "bree"
@@ -1032,14 +1077,23 @@
     "the North-kingdom"
    ],
    "cites": [
-    "C App A; HoME 12; the hundred miles is RC editorial, not Tolkien"
+    "C App A; HoME 12; the hundred miles is RC editorial, not Tolkien",
+    "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 300,
+     "y": 758
+    }
+   ],
    "n": "Arnor",
    "name_conf": "H",
    "notes": [
     "spec TA: Political / Regional Polygons",
-    "Evidence Table E19"
+    "Evidence Table E19",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1167,15 +1221,24 @@
     "TA"
    ],
    "cites": [
-    "App A [I-H] — the archive's synthesis of canon, not a quotation"
+    "App A [I-H] — the archive's synthesis of canon, not a quotation",
+    "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 280,
+     "y": 722
+    }
+   ],
    "n": "Arthedain",
    "name_conf": "H",
    "notes": [
     "Between Lhûn and Weather Hills (Baranduin its south-line): Fornost Erain on the North Downs the king-seat, Annúminas already forsaken; the Tower Hills and the Elostirion-stone westward. — App A [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it T.A. 861–1974",
-    "named within Arnor by the vector spec's own block for it"
+    "named within Arnor by the vector spec's own block for it",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "arnor"
@@ -1398,16 +1461,25 @@
    ],
    "cites": [
     "App B; LotR VI.3",
-    "A RoP; C III.11, IV.3, VI"
+    "A RoP; C III.11, IV.3, VI",
+    "placed from the archive's own vector map (SETTLE_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 850,
+     "y": 318
+    }
+   ],
    "n": "Barad-dûr",
    "name_conf": "H",
    "notes": [
     "also the Dark Tower",
     "Sauron's fortress, founded c. S.A. 1000, rebuilt 2951; its fall shook the world.",
     "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]",
-    "Evidence Table G24"
+    "Evidence Table G24",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "mordor"
@@ -1538,12 +1610,22 @@
   },
   "baranduin": {
    "ages": [],
-   "cites": [],
-   "coords": [],
+   "cites": [
+    "placed from the archive's own vector map (RIVERS_TA) [I-M]; the record existed already and had no coordinate"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 243,
+     "y": 640
+    }
+   ],
    "n": "Baranduin (Brandywine)",
    "name_conf": null,
    "notes": [
-    "spec TA: Water"
+    "spec TA: Water",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1562,16 +1644,25 @@
    ],
    "cites": [
     "LotR I.8; App A",
-    "C I.8, App A; D Hunt; RC[T]"
+    "C I.8, App A; D Hunt; RC[T]",
+    "placed from the archive's own vector map (HILLFIELDS) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 273,
+     "y": 652
+    }
+   ],
    "n": "Barrow-downs",
    "name_conf": "H",
    "notes": [
     "also Tyrn Gorthad",
     "Wights out of Angmar walk the old Edain graves; the swords of Westernesse came hence.",
     "within the Cardolan boundary as the living map draws it, T.A. 861–1636 [I-M]",
-    "Evidence Table E8"
+    "Evidence Table E8",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "cardolan",
@@ -2059,15 +2150,24 @@
    ],
    "cites": [
     "Silm 17/21; CoH",
-    "A ch21; F ch XIII–XVIII; HoME 11"
+    "A ch21; F ch XIII–XVIII; HoME 11",
+    "placed from the archive's own vector map (FORESTS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 501,
+     "y": 529
+    }
+   ],
    "n": "Brethil",
    "name_conf": "H",
    "notes": [
     "also Forest of the Haladin",
     "The Haladin's wood between Teiglin and Sirion; Túrin's last stand-ground.",
-    "Evidence Table B31"
+    "Evidence Table B31",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -2615,15 +2715,24 @@
     "Barazinbar"
    ],
    "cites": [
-    "LotR II.3"
+    "LotR II.3",
+    "placed from the archive's own vector map (PEAKS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 502,
+     "y": 583
+    }
+   ],
    "n": "Caradhras",
    "name_conf": null,
    "notes": [
     "also the Redhorn; Barazinbar",
     "The cruel mountain that defeated the Fellowship with snow.",
-    "named within Misty Mountains (Hithaeglir) by the vector spec's own block for it"
+    "named within Misty Mountains (Hithaeglir) by the vector spec's own block for it",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "misty mountains"
@@ -2671,15 +2780,24 @@
     "TA"
    ],
    "cites": [
-    "App A; UT [I-H] — the archive's synthesis of canon, not a quotation"
+    "App A; UT [I-H] — the archive's synthesis of canon, not a quotation",
+    "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 305,
+     "y": 600
+    }
+   ],
    "n": "Cardolan",
    "name_conf": "H",
    "notes": [
     "Minhiriath and the downs: Tyrn Gorthad (the Barrow-downs) its hallowed height, Tharbad its river-town shared with the south. — App A; UT [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it T.A. 861–1636",
-    "named within Arnor by the vector spec's own block for it"
+    "named within Arnor by the vector spec's own block for it",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "arnor"
@@ -2891,14 +3009,23 @@
     "TA"
    ],
    "cites": [
-    "The Silmarillion, line 13390"
+    "The Silmarillion, line 13390",
+    "placed from the archive's own vector map (RIVERS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 528,
+     "y": 560
+    }
+   ],
    "n": "Celebrant",
    "name_conf": "High",
    "notes": [
     "“Thus it was that in two domains the bliss and beauty of the Elves remained still undiminished while that Age endured: in Imladris; and in Lothlórien, the hidden land between Celebrant and Anduin, where the trees bore flowers of gold and no Orc or evil thing dared ever come.” — The Silmarillion, line 13390",
-    "indexed by Christopher Tolkien as: The river Silverlode"
+    "indexed by Christopher Tolkien as: The river Silverlode",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [],
    "place_conf": "High",
@@ -3068,12 +3195,22 @@
   },
   "chetwood": {
    "ages": [],
-   "cites": [],
-   "coords": [],
+   "cites": [
+    "placed from the archive's own vector map (FORESTS_TA) [I-M]; the record existed already and had no coordinate"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 284,
+     "y": 689
+    }
+   ],
    "n": "Chetwood",
    "name_conf": null,
    "notes": [
-    "spec TA: Forests"
+    "spec TA: Forests",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -3088,14 +3225,23 @@
     "TA"
    ],
    "cites": [
-    "LotR IV.9-10; VI.1"
+    "LotR IV.9-10; VI.1",
+    "placed from the archive's own vector map (SETTLE_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 783,
+     "y": 266
+    }
+   ],
    "n": "Cirith Ungol",
    "name_conf": null,
    "notes": [
     "Shelob's stair and tunnel; the Tower where Sam bore the Ring and found Frodo.",
-    "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]"
+    "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "mordor"
@@ -3133,16 +3279,25 @@
     "TA"
    ],
    "cites": [
-    "The Lord of the Rings, line 7015"
+    "The Lord of the Rings, line 7015",
+    "placed from the archive's own vector map (SETTLE_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 280,
+     "y": 688
+    }
+   ],
    "n": "Combe",
    "name_conf": "High",
    "notes": [
     "“Besides Bree itself, there was Staddle on the other side of the hill, Combe in a deep valley a little further eastward, and Archet on the edge of the Chetwood.” — The Lord of the Rings, line 7015",
     "indexed by Christopher Tolkien as: Village of the Bree-land",
     "named within Bree-land by the vector spec's own block for it",
-    "Ages taken from its realm bree, having none of its own [I-H]"
+    "Ages taken from its realm bree, having none of its own [I-H]",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "bree"
@@ -3393,15 +3548,24 @@
    "ages": [],
    "cites": [
     "The Silmarillion, line 6213",
-    "A ch14"
+    "A ch14",
+    "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 525,
+     "y": 577
+    }
+   ],
    "n": "Dimbar",
    "name_conf": "H",
    "notes": [
     "“Upon the left hand of Sirion lay East Beleriand, at its widest a hundred leagues from Sirion to Gelion and the borders of Ossiriand; and first, between Sirion and Mindeb, lay the empty land of Dimbar under the peaks of the Crissaegrim, abode of eagles.” — The Silmarillion, line 6213",
     "indexed by Christopher Tolkien as: Land between Sirion and Mindeb",
-    "Evidence Table B18"
+    "Evidence Table B18",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "High",
@@ -3792,16 +3956,25 @@
    "cites": [
     "Silm 4, 10, 14 [C]",
     "Silm 10 [C]",
-    "A ch4, ch10, ch14"
+    "A ch4, ch10, ch14",
+    "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 594,
+     "y": 552
+    }
+   ],
    "n": "Doriath",
    "name_conf": "H",
    "notes": [
     "The forests of Neldoreth and Region about the river Esgalduin, with Nivrim west of Sirion and Aelin-uial of the Twilight Meres; fenced by the Girdle of Melian, 'an unseen wall of shadow and bewilderment'. — Silm 4, 10, 14 [C]",
     "Menegroth, the Thousand Caves, on Esgalduin's south bank — 'the fairest dwelling of any king that has ever been east of the Sea'. — Silm 10 [C]",
     "the realms model dates it Y.T. – F.A. 506",
-    "Evidence Table B24"
+    "Evidence Table B24",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -3912,15 +4085,24 @@
    ],
    "cites": [
     "Silm 14, 19 [I-H] — the archive's synthesis of canon, not a quotation",
-    "A ch14, ch18, ch19; HoME 3"
+    "A ch14, ch18, ch19; HoME 3",
+    "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 627,
+     "y": 712
+    }
+   ],
    "n": "Dorthonion",
    "name_conf": "H",
    "notes": [
     "High pine-clad tableland between the passes of Sirion and Aglon, falling sheer to Ard-galen; Tarn Aeluin its hallowed lake. — Silm 14, 19 [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it F.A. 7–455",
-    "Evidence Table B15"
+    "Evidence Table B15",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -3965,15 +4147,24 @@
    ],
    "cites": [
     "Hobbit 9 [I-H] — the archive's synthesis of canon, not a quotation",
-    "B ch9; RC (absence)"
+    "B ch9; RC (absence)",
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 935,
+     "y": 568
+    }
+   ],
    "n": "Dorwinion",
    "name_conf": "L",
    "notes": [
     "By the Sea of Rhûn's north-west (the map tradition); the corpus text gives only the wine and the river-route: of its people and their rule the corpus says nothing. — Hobbit 9 [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it Third Age (attested)",
-    "Evidence Table R14"
+    "Evidence Table R14",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -4118,14 +4309,23 @@
     "TA"
    ],
    "cites": [
-    "The Lord of the Rings, line 827"
+    "The Lord of the Rings, line 827",
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 432,
+     "y": 470
+    }
+   ],
    "n": "Dunland",
    "name_conf": "High",
    "notes": [
     "“They came west after the Harfoots and followed the course of the Loudwater southwards; and there many of them long dwelt between Tharbad and the borders of Dunland before they moved north again.” — The Lord of the Rings, line 827",
-    "indexed by Christopher Tolkien as: Region in the west of the Misty Mountains, at first \\"
+    "indexed by Christopher Tolkien as: Region in the west of the Misty Mountains, at first \\",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "High",
@@ -4438,16 +4638,25 @@
    ],
    "cites": [
     "LotR III.6",
-    "C III.6, V.3, VI.6; RC[T] (unpub. Index)"
+    "C III.6, V.3, VI.6; RC[T] (unpub. Index)",
+    "placed from the archive's own vector map (SETTLE_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 533,
+     "y": 355
+    }
+   ],
    "n": "Edoras",
    "name_conf": "H",
    "notes": [
     "also & Meduseld",
     "Brego's golden hall under the White Mountains; Théoden's seat.",
     "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
-    "Evidence Table G7"
+    "Evidence Table G7",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "rohan"
@@ -4755,14 +4964,23 @@
   "emyn muil": {
    "ages": [],
    "cites": [
-    "C II.9–10, III.1–2, IV.1; RC[T]"
+    "C II.9–10, III.1–2, IV.1; RC[T]",
+    "placed from the archive's own vector map (HILLFIELDS) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 600,
+     "y": 414
+    }
+   ],
    "n": "Emyn Muil",
    "name_conf": "H",
    "notes": [
     "spec TA: Mountains",
-    "Evidence Table R18"
+    "Evidence Table R18",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -4890,15 +5108,24 @@
    ],
    "cites": [
     "The Lord of the Rings, line 46917",
-    "D Cirion; C App A; RC[T]"
+    "D Cirion; C App A; RC[T]",
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 540,
+     "y": 838
+    }
+   ],
    "n": "Eothéod",
    "name_conf": "H",
    "notes": [
     "“The Eothéod had moved to those regions in the days of King Eärnil II from lands in the vales of Anduin between the Carrock and the Gladden, and they were in origin close akin to the Beornings and the men of the west-eaves of the forest.” — The Lord of the Rings, line 46917",
     "indexed by Christopher Tolkien as: ‘Horse-folk’ and ‘Horse-land’ (",
-    "Evidence Table R4"
+    "Evidence Table R4",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "High",
@@ -5127,14 +5354,23 @@
     "Mountains of Terror"
    ],
    "cites": [
-    "Silm 14/19"
+    "Silm 14/19",
+    "placed from the archive's own vector map (MTS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 686,
+     "y": 662
+    }
+   ],
    "n": "Ered Gorgoroth",
    "name_conf": null,
    "notes": [
     "also Mountains of Terror",
-    "Ungoliant's brood-haunted precipices above Nan Dungortheb."
+    "Ungoliant's brood-haunted precipices above Nan Dungortheb.",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [
     "dorthonion"
@@ -5148,14 +5384,23 @@
   "ered lithui": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 15914"
+    "The Silmarillion, line 15914",
+    "placed from the archive's own vector map (MTS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 840,
+     "y": 355
+    }
+   ],
    "n": "Ered Lithui",
    "name_conf": "High",
    "notes": [
     "“lith ‘ash’ in Anfauglith, Dor-nu-Fauglith; also in Ered Lithui, the Ashen Mountains, forming the northern border of Mordor, and Lithlad ‘Plain of Ashes’ at the feet of Ered Lithui.” — The Silmarillion, line 15914",
-    "indexed by Christopher Tolkien as: The Ash Mountains"
+    "indexed by Christopher Tolkien as: The Ash Mountains",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [],
    "place_conf": "High",
@@ -5415,12 +5660,22 @@
   },
   "eryn vorn": {
    "ages": [],
-   "cites": [],
-   "coords": [],
+   "cites": [
+    "placed from the archive's own vector map (FORESTS_TA) [I-M]; the record existed already and had no coordinate"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 189,
+     "y": 500
+    }
+   ],
    "n": "Eryn Vorn",
    "name_conf": null,
    "notes": [
-    "spec TA: Forests"
+    "spec TA: Forests",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -5525,14 +5780,23 @@
     "Encampment"
    ],
    "cites": [
-    "Silm 17"
+    "Silm 17",
+    "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 713,
+     "y": 566
+    }
+   ],
    "n": "Estolad",
    "name_conf": null,
    "notes": [
     "also the Encampment",
-    "First dwelling of Bëor's and Marach's folk east of Celon."
+    "First dwelling of Bëor's and Marach's folk east of Celon.",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "ladros"
@@ -5574,14 +5838,23 @@
     "TA"
    ],
    "cites": [
-    "LotR I.12; App A"
+    "LotR I.12; App A",
+    "placed from the archive's own vector map (HILLFIELDS) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 462,
+     "y": 741
+    }
+   ],
    "n": "Ettenmoors",
    "name_conf": null,
    "notes": [
     "also the troll-fells",
-    "Troll-country north of Rivendell; Arador's death-ground."
+    "Troll-country north of Rivendell; Arador's death-ground.",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "rhudaur"
@@ -5656,14 +5929,23 @@
     "YT"
    ],
    "cites": [
-    "Silm 14 [I-H] — the archive's synthesis of canon, not a quotation"
+    "Silm 14 [I-H] — the archive's synthesis of canon, not a quotation",
+    "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 257,
+     "y": 367
+    }
+   ],
    "n": "The Falas",
    "name_conf": "H",
    "notes": [
     "The western shore-lands about the mouths of Brithon and Nenning; the two walled havens; Barad Nimras raised by Finrod against sea-assault that never came. — Silm 14 [I-H] — the archive's synthesis of canon, not a quotation",
-    "the realms model dates it Y.T. – F.A. 473"
+    "the realms model dates it Y.T. – F.A. 473",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -5698,15 +5980,24 @@
    ],
    "cites": [
     "LotR III.4",
+    "placed from the archive's own vector map (FORESTS_TA) [I-M]; the record existed already and had no coordinate",
     "C III.3–4; RC[T]"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 508,
+     "y": 469
+    }
+   ],
    "n": "Fangorn",
    "name_conf": "H",
    "notes": [
     "also Entwood",
     "Eldest forest-heart; Treebeard's wellinghall; 'the Ents are going to war'.",
     "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
+    "the middle of the shape the archive draws",
     "spec TA: Forests",
     "named Entwood by the spec, which is how it is told from the other place of the same name",
     "Ages taken from its realm fangorn, having none of its own [I-H]",
@@ -5878,12 +6169,22 @@
   },
   "firien wood": {
    "ages": [],
-   "cites": [],
-   "coords": [],
+   "cites": [
+    "placed from the archive's own vector map (FORESTS_TA) [I-M]; the record existed already and had no coordinate"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 606,
+     "y": 319
+    }
+   ],
    "n": "Firien Wood",
    "name_conf": null,
    "notes": [
-    "spec TA: Forests"
+    "spec TA: Forests",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -6412,15 +6713,24 @@
    ],
    "cites": [
     "UT; App B",
-    "D Gladden; C I.2; RC[T]"
+    "D Gladden; C I.2; RC[T]",
+    "placed from the archive's own vector map (MARSHES_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 523,
+     "y": 602
+    }
+   ],
    "n": "Gladden Fields",
    "name_conf": "H",
    "notes": [
     "also Loeg Ningloron",
     "Isildur fell among the reeds, T.A. 2; Déagol's find, 2463.",
-    "Evidence Table R7"
+    "Evidence Table R7",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -6625,12 +6935,22 @@
     "the South-kingdom",
     "the Stone-land"
    ],
-   "cites": [],
-   "coords": [],
+   "cites": [
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 660,
+     "y": 250
+    }
+   ],
    "n": "Gondor",
    "name_conf": null,
    "notes": [
-    "spec TA: Political / Regional Polygons"
+    "spec TA: Political / Regional Polygons",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -6947,14 +7267,23 @@
   "grey mountains": {
    "ages": [],
    "cites": [
-    "B ch1, 18; C App A; D"
+    "B ch1, 18; C App A; D",
+    "placed from the archive's own vector map (MTS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 740,
+     "y": 848
+    }
+   ],
    "n": "Grey Mountains (Ered Mithrin)",
    "name_conf": "H",
    "notes": [
     "spec TA: Mountains",
-    "Evidence Table R3"
+    "Evidence Table R3",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [],
    "place_conf": "H",
@@ -7236,14 +7565,23 @@
   "harlindon": {
    "ages": [],
    "cites": [
-    "Unfinished Tales, line 7936"
+    "Unfinished Tales, line 7936",
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 80,
+     "y": 615
+    }
+   ],
    "n": "Harlindon",
    "name_conf": "High",
    "notes": [
     "“2 In a note in unpublished material the Elves of Harlindon, or Lindon south of the Lune, are said to have been largely of Sindarin origin, and the region to have been a fief under the rule of Celeborn.” — Unfinished Tales, line 7936",
-    "indexed by Christopher Tolkien as: Lindon south of the Gulf of Lune"
+    "indexed by Christopher Tolkien as: Lindon south of the Gulf of Lune",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "High",
@@ -7809,15 +8147,24 @@
    ],
    "cites": [
     "Silm 13–14 [I-H] — the archive's synthesis of canon, not a quotation",
-    "A ch13, ch14; HoME 5"
+    "A ch13, ch14; HoME 5",
+    "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 337,
+     "y": 679
+    }
+   ],
    "n": "Hithlum",
    "name_conf": "H",
    "notes": [
     "Between Ered Wethrin and Ered Lómin, cool and rain-swept, holding Lake Mithrim; Dor-lómin its southern fief; the fortress Barad Eithel at Sirion's well its eastern door. — Silm 13–14 [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it F.A. 1–473 (Elvish rule)",
-    "Evidence Table B6"
+    "Evidence Table B6",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -8125,14 +8472,23 @@
    ],
    "cites": [
     "B ch15–17; C App A; Atlas",
+    "placed from the archive's own vector map (MTS_TA) [I-M]; the record existed already and had no coordinate",
     "App A III; Hobbit"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 940,
+     "y": 770
+    }
+   ],
    "n": "Iron Hills",
    "name_conf": "H",
    "notes": [
     "spec TA: Mountains",
     "Evidence Table R11",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "Grór's iron-delvings; Dáin's 500 came mailed to the Mountain.",
     "within the The Iron Hills (Grór's folk) boundary as the living map draws it, T.A. 2590– [I-M]",
     "the vector spec also lists it as “The Iron Hills”, at the same place; one record, not two"
@@ -8226,16 +8582,25 @@
    ],
    "cites": [
     "LotR III.8-10",
-    "C III.8–10; D Cirion, Fords"
+    "C III.8–10; D Cirion, Fords",
+    "placed from the archive's own vector map (SETTLE_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 460,
+     "y": 385
+    }
+   ],
    "n": "Isengard",
    "name_conf": "H",
    "notes": [
     "also Orthanc; Nan Curunír",
     "The unbreakable tower in Saruman's ring — drowned by Ents, Mar 3-5, 3019.",
     "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
-    "Evidence Table G3"
+    "Evidence Table G3",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "rohan"
@@ -8431,14 +8796,23 @@
     "Eithel Ivrin"
    ],
    "cites": [
-    "CoH IX; Silm 21"
+    "CoH IX; Silm 21",
+    "placed from the archive's own vector map (LAKES_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 447,
+     "y": 584
+    }
+   ],
    "n": "Ivrin",
    "name_conf": null,
    "notes": [
     "also Eithel Ivrin",
-    "The laughing pools under Ered Wethrin, defiled by Glaurung."
+    "The laughing pools under Ered Wethrin, defiled by Glaurung.",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [
     "hithlum"
@@ -8475,15 +8849,24 @@
    ],
    "cites": [
     "The Lord of the Rings, line 37264",
-    "C IV.3, App A; RC[T]"
+    "C IV.3, App A; RC[T]",
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 930,
+     "y": 140
+    }
+   ],
    "n": "Khand",
    "name_conf": "H",
    "notes": [
     "“He now was destroyed; but Gothmog the lieutenant of Morgul had flung them into the fray; Easterlings with axes, and Variags of Khand, Southrons in scarlet, and out of Far Harad black men like half-trolls with white eyes and red tongues.” — The Lord of the Rings, line 37264",
     "indexed by Christopher Tolkien as: Land south-east of Mordor",
-    "Evidence Table G31"
+    "Evidence Table G31",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "High",
@@ -8758,15 +9141,24 @@
    "ages": [],
    "cites": [
     "The Silmarillion, line 4438",
-    "A ch13; G"
+    "A ch13; G",
+    "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 145,
+     "y": 704
+    }
+   ],
    "n": "Lammoth",
    "name_conf": "H",
    "notes": [
     "“Therefore that region was called Lammoth; for the echoes of his voice dwelt there ever after, so that any who cried aloud in that land awoke them, and all the waste between the hills and the sea was filled with a clamour as of voices in anguish.” — The Silmarillion, line 4438",
     "indexed by Christopher Tolkien as: Region north of the Firth of Drengist",
-    "Evidence Table B8"
+    "Evidence Table B8",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "High",
@@ -8909,12 +9301,22 @@
   },
   "lhun": {
    "ages": [],
-   "cites": [],
-   "coords": [],
+   "cites": [
+    "placed from the archive's own vector map (RIVERS_TA) [I-M]; the record existed already and had no coordinate"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 60,
+     "y": 675
+    }
+   ],
    "n": "Lhun (Lune)",
    "name_conf": null,
    "notes": [
-    "spec TA: Water"
+    "spec TA: Water",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [],
    "place_conf": "H",
@@ -8989,14 +9391,23 @@
     "ossiriand"
    ],
    "cites": [
-    "A RoP; C App A/B, VI.9; RC[T]"
+    "A RoP; C App A/B, VI.9; RC[T]",
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 75,
+     "y": 648
+    }
+   ],
    "n": "Lindon",
    "name_conf": "H",
    "notes": [
     "spec TA: Political / Regional Polygons",
-    "Evidence Table E2"
+    "Evidence Table E2",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -9309,15 +9720,24 @@
    "ages": [],
    "cites": [
     "The Silmarillion, line 6325",
-    "A ch14"
+    "A ch14",
+    "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 739,
+     "y": 807
+    }
+   ],
    "n": "Lothlann",
    "name_conf": "H",
    "notes": [
     "“In that region, upon the March of Maedhros and in the lands behind, dwelt the sons of Fëanor with many people; and their riders passed often over the vast northern plain, Lothlann the wide and empty, east of Ard-galen, lest Morgoth should attempt any sortie towards East Beleriand.” — The Silmarillion, line 6325",
     "indexed by Christopher Tolkien as: Great plain east of Dorthonion",
-    "Evidence Table B5"
+    "Evidence Table B5",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "High",
@@ -9622,16 +10042,25 @@
    "ages": [],
    "cites": [
     "The Silmarillion, line 15999",
-    "C III.4; RC[T]"
+    "C III.4; RC[T]",
+    "placed from the archive's own vector map (PEAKS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 472,
+     "y": 400
+    }
+   ],
    "n": "Methedras",
    "name_conf": "H",
    "notes": [
     "“ras ‘horn’ in Barad Nimras, also in Caradhras (‘Redhorn’) and Methedras (‘Last Peak’) in the Misty Mountains; plural rais in Ered Nimrais.” — The Silmarillion, line 15999",
     "indexed by Christopher Tolkien as: Last great peak of the Misty Mountains",
     "named within Misty Mountains (Hithaeglir) by the vector spec's own block for it",
-    "Evidence Table G2"
+    "Evidence Table G2",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "misty mountains"
@@ -9899,15 +10328,24 @@
    "ages": [],
    "cites": [
     "The Silmarillion, line 16045",
-    "D App D; HoME 12"
+    "D App D; HoME 12",
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 255,
+     "y": 555
+    }
+   ],
    "n": "Minhiriath",
    "name_conf": "H",
    "notes": [
     "“With change of s to h in the middle of words it is present in Minhiriath ‘between the rivers’, the region between the Brandywine and the Greyflood; in Nanduhirion ‘vale of dim streams’, the Dimrill Dale (see nan(d) and dú); and in Ethir Anduin, the outflow or delta of Anduin (from et-sîr).” — The Silmarillion, line 16045",
     "indexed by Christopher Tolkien as: Lands between Brandywine and Greyfiood",
-    "Evidence Table E16"
+    "Evidence Table E16",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "High",
@@ -9927,14 +10365,23 @@
     "greenwood"
    ],
    "cites": [
-    "B ch7–9; C App B; D; RC[T]; HoME 12"
+    "B ch7–9; C App B; D; RC[T]; HoME 12",
+    "placed from the archive's own vector map (FORESTS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 650,
+     "y": 664
+    }
+   ],
    "n": "Mirkwood (Greenwood the Great / Eryn Lasgalen)",
    "name_conf": "H",
    "notes": [
     "spec TA: Forests",
-    "Evidence Table R8"
+    "Evidence Table R8",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -9946,12 +10393,22 @@
   },
   "mirrormere": {
    "ages": [],
-   "cites": [],
-   "coords": [],
+   "cites": [
+    "placed from the archive's own vector map (LAKES_TA) [I-M]; the record existed already and had no coordinate"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 517,
+     "y": 568
+    }
+   ],
    "n": "Mirrormere (Kheled-zaram)",
    "name_conf": null,
    "notes": [
-    "spec TA: Water"
+    "spec TA: Water",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [],
    "place_conf": "H",
@@ -9964,14 +10421,23 @@
   "misty mountains": {
    "ages": [],
    "cites": [
-    "C Prologue/App; A ch3; B ch4–6; RC[T]"
+    "C Prologue/App; A ch3; B ch4–6; RC[T]",
+    "placed from the archive's own vector map (MTS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 501,
+     "y": 583
+    }
+   ],
    "n": "Misty Mountains (Hithaeglir)",
    "name_conf": "H",
    "notes": [
     "spec TA: Mountains",
-    "Evidence Table R1"
+    "Evidence Table R1",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [],
    "place_conf": "H",
@@ -10037,12 +10503,22 @@
    "aka": [
     "the Black Land"
    ],
-   "cites": [],
-   "coords": [],
+   "cites": [
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 840,
+     "y": 290
+    }
+   ],
    "n": "Mordor",
    "name_conf": null,
    "notes": [
-    "spec TA: Political / Regional Polygons"
+    "spec TA: Political / Regional Polygons",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -10125,12 +10601,22 @@
   },
   "morgai": {
    "ages": [],
-   "cites": [],
-   "coords": [],
+   "cites": [
+    "placed from the archive's own vector map (MTS_TA) [I-M]; the record existed already and had no coordinate"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 788,
+     "y": 285
+    }
+   ],
    "n": "Morgai (inner ridge)",
    "name_conf": null,
    "notes": [
-    "spec TA: Mountains"
+    "spec TA: Mountains",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [],
    "place_conf": "H",
@@ -10143,14 +10629,23 @@
   "morgulduin": {
    "ages": [],
    "cites": [
-    "The Lord of the Rings, line 30802"
+    "The Lord of the Rings, line 30802",
+    "placed from the archive's own vector map (RIVERS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 766,
+     "y": 262
+    }
+   ],
    "n": "Morgulduin",
    "name_conf": "High",
    "notes": [
     "“Frodo shuddered as he looked again at the distant pinnacles now dwindling into night, and the sound of the water seemed cold and cruel: the voice of Morgulduin, the polluted stream that flowed from the Valley of the Wraiths.” — The Lord of the Rings, line 30802",
-    "indexed by Christopher Tolkien as: Stream flowing through Imlad Morghul"
+    "indexed by Christopher Tolkien as: Stream flowing through Imlad Morghul",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [],
    "place_conf": "High",
@@ -10371,15 +10866,24 @@
    "ages": [],
    "cites": [
     "The Silmarillion, line 4455",
-    "A ch14, ch16, ch19"
+    "A ch14, ch16, ch19",
+    "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 634,
+     "y": 656
+    }
+   ],
    "n": "Nan Dungortheb",
    "name_conf": "H",
    "notes": [
     "“With their whips of flame they smote asunder the webs of Ungoliant, and she quailed, and turned to flight, belching black vapours to cover her; and fleeing from the north she went down into Beleriand, and dwelt beneath Ered Gorgoroth, in that dark valley that was after called Nan Dungortheb, the Valley of Dreadful Death, because of the horror that she bred there.” — The Silmarillion, line 4455",
     "indexed by Christopher Tolkien as: ‘The Valley of Dreadful Death’",
-    "Evidence Table B16"
+    "Evidence Table B16",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "High",
@@ -10394,13 +10898,22 @@
     "FA"
    ],
    "cites": [
-    "Silm 4/16"
+    "Silm 4/16",
+    "placed from the archive's own vector map (FORESTS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 744,
+     "y": 587
+    }
+   ],
    "n": "Nan Elmoth",
    "name_conf": null,
    "notes": [
-    "Where Melian enchanted Thingol; Eöl's dark wood; Maeglin's birthplace."
+    "Where Melian enchanted Thingol; Eöl's dark wood; Maeglin's birthplace.",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -10607,16 +11120,25 @@
     "YT"
    ],
    "cites": [
-    "The Silmarillion, line 3402"
+    "The Silmarillion, line 3402",
+    "placed from the archive's own vector map (FORESTS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 580,
+     "y": 608
+    }
+   ],
    "n": "Neldoreth",
    "name_conf": "High",
    "notes": [
     "“Now when their journey was near its end, as has been told, the people of the Teleri rested long in East Beleriand, beyond the River Gelion; and at that time many of the Noldor still lay to the westward, in those forests that were afterwards named Neldoreth and Region.” — The Silmarillion, line 3402",
     "indexed by Christopher Tolkien as: The forest forming the northern part of Doriath",
     "within doriath, per Christopher Tolkien's index gloss [I-M]",
-    "Ages taken from its realm doriath, having none of its own [I-H]"
+    "Ages taken from its realm doriath, having none of its own [I-H]",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "doriath"
@@ -10650,14 +11172,23 @@
   "nen hithoel": {
    "ages": [],
    "cites": [
-    "C II.9–III.1; RC[T]"
+    "C II.9–III.1; RC[T]",
+    "placed from the archive's own vector map (LAKES_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 612,
+     "y": 405
+    }
+   ],
    "n": "Nen Hithoel",
    "name_conf": "H",
    "notes": [
     "spec TA: Water",
-    "Evidence Table R19"
+    "Evidence Table R19",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [],
    "place_conf": "H",
@@ -10740,15 +11271,24 @@
    "ages": [],
    "cites": [
     "The Silmarillion, line 5913",
-    "A ch14"
+    "A ch14",
+    "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 172,
+     "y": 516
+    }
+   ],
    "n": "Nevrast",
    "name_conf": "H",
    "notes": [
     "“And when again thirty years had passed, Turgon son of Fingolfin left Nevrast where he dwelt and sought out Finrod his friend upon the island of Tol Sirion, and they journeyed southward along the river, being weary for a while of the northern mountains; and as they journeyed night came upon them beyond the Meres of Twilight beside the waters of Sirion, and they slept upon his banks beneath the summer stars.” — The Silmarillion, line 5913",
     "indexed by Christopher Tolkien as: The region south of Drengist",
-    "Evidence Table B10"
+    "Evidence Table B10",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "High",
@@ -11533,14 +12073,23 @@
   "pinnath gelin": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 15730"
+    "The Silmarillion, line 15730",
+    "placed from the archive's own vector map (HILLFIELDS) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 522,
+     "y": 256
+    }
+   ],
    "n": "Pinnath Gelin",
    "name_conf": "High",
    "notes": [
     "“calen (galen) the usual Sindarin word for ‘green’, in Ard-galen, Tol Galen, Calenardhon; also in Parth Galen (‘Green Sward’) beside Anduin and Pinnath Gelin (‘Green Ridges’) in Gondor.” — The Silmarillion, line 15730",
-    "indexed by Christopher Tolkien as: Hills in the west of Gondor"
+    "indexed by Christopher Tolkien as: Hills in the west of Gondor",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "High",
@@ -11643,15 +12192,24 @@
     "TA"
    ],
    "cites": [
-    "LotR I.12 [C]"
+    "LotR I.12 [C]",
+    "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 420,
+     "y": 690
+    }
+   ],
    "n": "Rhudaur",
    "name_conf": "H",
    "notes": [
     "The Trollshaws' castles ('they had an evil look, as if they had been built by wicked people') are its physical remains. — LotR I.12 [C]",
     "the realms model dates it T.A. 861–c.1409",
-    "named within Arnor by the vector spec's own block for it"
+    "named within Arnor by the vector spec's own block for it",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "arnor"
@@ -11718,15 +12276,24 @@
    ],
    "cites": [
     "App A; maps [I-H] — the archive's synthesis of canon, not a quotation",
-    "C App A; HoME 12"
+    "C App A; HoME 12",
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 900,
+     "y": 625
+    }
+   ],
    "n": "Rhûn & the Easterling powers",
    "name_conf": "H",
    "notes": [
     "The inland sea of Rhûn with its ash-forests and steppes beyond the map's edge — the corpus shows only the western shore of an eastern world. — App A; maps [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it First Age origins – enduring",
-    "Evidence Table G32"
+    "Evidence Table G32",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -11873,15 +12440,24 @@
    "ages": [],
    "cites": [
     "The Silmarillion, line 9158",
-    "A ch18, ch19, ch20; HoME 3, 11"
+    "A ch18, ch19, ch20; HoME 3, 11",
+    "placed from the archive's own vector map (RIVERS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 508,
+     "y": 728
+    }
+   ],
    "n": "Rivil",
    "name_conf": "H",
    "notes": [
     "“He marched on therefore until the front of his battle was drawn up before the stream of Sirion, from the walls of the fortress of Eithel Sirion to the inflowing of Rivil at the Fen of Serech; and the outposts of Fingon could see the eyes of their enemies.” — The Silmarillion, line 9158",
     "indexed by Christopher Tolkien as: Tributary stream of Sirion",
-    "Evidence Table B13"
+    "Evidence Table B13",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [],
    "place_conf": "High",
@@ -11901,14 +12477,23 @@
     "the Riddermark"
    ],
    "cites": [
-    "D Cirion; C App A, III.2; HoME 12"
+    "D Cirion; C App A, III.2; HoME 12",
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 560,
+     "y": 400
+    }
+   ],
    "n": "Rohan",
    "name_conf": "H",
    "notes": [
     "spec TA: Political / Regional Polygons",
-    "Evidence Table G10"
+    "Evidence Table G10",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "L",
@@ -12150,12 +12735,22 @@
   },
   "sea of nurnen": {
    "ages": [],
-   "cites": [],
-   "coords": [],
+   "cites": [
+    "placed from the archive's own vector map (LAKES_TA) [I-M]; the record existed already and had no coordinate"
+   ],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 885,
+     "y": 220
+    }
+   ],
    "n": "Sea of Nurnen",
    "name_conf": null,
    "notes": [
-    "spec TA: Water"
+    "spec TA: Water",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [],
    "place_conf": "H",
@@ -12171,15 +12766,24 @@
    ],
    "cites": [
     "App A/B",
-    "C App A; I; HoME 11, 12"
+    "C App A; I; HoME 11, 12",
+    "placed from the archive's own vector map (LAKES_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 952,
+     "y": 592
+    }
+   ],
    "n": "Sea of Rhûn",
    "name_conf": "H",
    "notes": [
     "spec TA: Water",
     "The eastern sea of the Wainrider wars; Dorwinion northwest of it.",
-    "Evidence Table R13"
+    "Evidence Table R13",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [],
    "place_conf": "M",
@@ -12422,14 +13026,23 @@
   "staddle": {
    "ages": [],
    "cites": [
-    "The Lord of the Rings, line 7015"
+    "The Lord of the Rings, line 7015",
+    "placed from the archive's own vector map (SETTLE_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 277,
+     "y": 682
+    }
+   ],
    "n": "Staddle",
    "name_conf": "High",
    "notes": [
     "“Besides Bree itself, there was Staddle on the other side of the hill, Combe in a deep valley a little further eastward, and Archet on the edge of the Chetwood.” — The Lord of the Rings, line 7015",
-    "indexed by Christopher Tolkien as: Village of the Bree-land"
+    "indexed by Christopher Tolkien as: Village of the Bree-land",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "High",
@@ -12470,15 +13083,24 @@
   "starkhorn": {
    "ages": [],
    "cites": [
-    "The Lord of the Rings, line 34765"
+    "The Lord of the Rings, line 34765",
+    "placed from the archive's own vector map (PEAKS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 536,
+     "y": 336
+    }
+   ],
    "n": "Starkhorn",
    "name_conf": "High",
    "notes": [
     "“Away to the right at the head of the great dale the mighty Starkhorn loomed up above its vast buttresses swathed in cloud; but its jagged peak, clothed in everlasting snow, gleamed far above the world, blue-shadowed upon the East, red-stained by the sunset in the West.” — The Lord of the Rings, line 34765",
     "indexed by Christopher Tolkien as: Mountain above Dunharrow",
-    "named within White Mountains (Ered Nimrais) by the vector spec's own block for it"
+    "named within White Mountains (Ered Nimrais) by the vector spec's own block for it",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "white mountains"
@@ -12732,13 +13354,22 @@
     "FA"
    ],
    "cites": [
-    "Silm 14"
+    "Silm 14",
+    "placed from the archive's own vector map (FORESTS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 648,
+     "y": 293
+    }
+   ],
    "n": "Taur-im-Duinath",
    "name_conf": null,
    "notes": [
-    "The trackless wild south of Andram, between the two rivers."
+    "The trackless wild south of Andram, between the two rivers.",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -12752,15 +13383,24 @@
    "ages": [],
    "cites": [
     "The Silmarillion, line 8271",
-    "A ch14, ch18, ch19; HoME 3"
+    "A ch14, ch18, ch19; HoME 3",
+    "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 625,
+     "y": 742
+    }
+   ],
    "n": "Taur-nu-Fuin",
    "name_conf": "H",
    "notes": [
     "“By the arts of Felagund their own forms and faces were changed into the likeness of Orcs; and thus disguised they came far upon their northward road, and ventured into the western pass, between Ered Wethrin and the highlands of Taur-nu-Fuin.” — The Silmarillion, line 8271",
     "indexed by Christopher Tolkien as: (also earlier Taur-na-Fuin) ‘The Forest under Night­",
-    "Evidence Table B15"
+    "Evidence Table B15",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "High",
@@ -12877,14 +13517,23 @@
     "Dor Caranthir"
    ],
    "cites": [
-    "The Silmarillion, line 6349"
+    "The Silmarillion, line 6349",
+    "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 852,
+     "y": 575
+    }
+   ],
    "n": "Thargelion",
    "name_conf": "High",
    "notes": [
     "“That was Lake Helevorn, deep and dark, and beside it Caranthir had his abode; but all the great land between Gelion and the mountains, and between Rerir and the River Ascar, was called by the Noldor Thargelion, which signifies the Land beyond Gelion, or Dor Caranthir, the Land of Caranthir; and it was here that the Noldor first met the Dwarves.” — The Silmarillion, line 6349",
-    "indexed by Christopher Tolkien as: Caranthir’s land, east of Gelion and north of Ascar"
+    "indexed by Christopher Tolkien as: Caranthir’s land, east of Gelion and north of Ascar",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "High",
@@ -13163,14 +13812,23 @@
     "shire"
    ],
    "cites": [
-    "C Prologue, App B; HoME 12; RC"
+    "C Prologue, App B; HoME 12; RC",
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 205,
+     "y": 672
+    }
+   ],
    "n": "The Shire",
    "name_conf": "H",
    "notes": [
     "spec TA: Political / Regional Polygons",
-    "Evidence Table E5"
+    "Evidence Table E5",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",
@@ -13544,9 +14202,16 @@
    ],
    "cites": [
     "Silm 18-19",
-    "A ch14, ch18; E"
+    "A ch14, ch18; E",
+    "placed from the archive's own vector map (SETTLE_FA) [I-M]; the record existed already and had no coordinate"
    ],
    "coords": [
+    {
+     "conf": "M",
+     "frame": "FA",
+     "x": 494,
+     "y": 691
+    },
     {
      "conf": "H",
      "frame": "FA",
@@ -13561,6 +14226,7 @@
     "The isle-tower of the pass; Sauron's werewolf-keep; Finrod died in its pits.",
     "within the Dominion of Angband (after 455) boundary as the living map draws it, F.A. 455–583 [I-M]",
     "Evidence Table B14",
+    "the middle of the shape the archive draws",
     "spec FA: isle-tower",
     "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
     "the vector spec also lists it as “Tol Sirion fort”, at the same place; one record, not two"
@@ -13704,14 +14370,23 @@
     "TA"
    ],
    "cites": [
-    "Hobbit ii"
+    "Hobbit ii",
+    "placed from the archive's own vector map (HILLFIELDS) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 420,
+     "y": 668
+    }
+   ],
    "n": "Trollshaws",
    "name_conf": null,
    "notes": [
     "Bert, Tom and William stood here till dawn found them.",
     "within the Rhudaur boundary as the living map draws it, T.A. 861–c.1409 [I-M]",
+    "the middle of the shape the archive draws",
     "spec TA: Forests",
     "the vector spec also lists it as “Trollshaws woods”, at the same place; one record, not two"
    ],
@@ -14311,16 +14986,25 @@
    ],
    "cites": [
     "App A; LotR I.11",
-    "C I.11, App A; RC"
+    "C I.11, App A; RC",
+    "placed from the archive's own vector map (SETTLE_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 347,
+     "y": 677
+    }
+   ],
    "n": "Weathertop",
    "name_conf": "H",
    "notes": [
     "also Amon Sûl",
     "Watchtower of the North's great palantír; razed 1409; the Witch-king's knife, Oct 6, 3018.",
     "within the Rhudaur boundary as the living map draws it, T.A. 861–c.1409 [I-M]",
-    "Evidence Table E10"
+    "Evidence Table E10",
+    "the middle of the shape the archive draws"
    ],
    "parents": [
     "rhudaur",
@@ -14530,14 +15214,23 @@
   "white mountains": {
    "ages": [],
    "cites": [
-    "C III–V; I"
+    "C III–V; I",
+    "placed from the archive's own vector map (MTS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 600,
+     "y": 332
+    }
+   ],
    "n": "White Mountains (Ered Nimrais)",
    "name_conf": "H",
    "notes": [
     "spec TA: Mountains",
-    "Evidence Table G12"
+    "Evidence Table G12",
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
    "parents": [],
    "place_conf": "H",
@@ -14597,14 +15290,23 @@
     "TA"
    ],
    "cites": [
-    "Hobbit i; App A III"
+    "Hobbit i; App A III",
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "coords": [],
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 808,
+     "y": 851
+    }
+   ],
    "n": "Withered Heath",
    "name_conf": null,
    "notes": [
     "also in Ered Mithrin",
-    "Whence the dragons bred; Dáin I died at his door of a cold-drake."
+    "Whence the dragons bred; Dáin I died at his door of a cold-drake.",
+    "the middle of the shape the archive draws"
    ],
    "parents": [],
    "place_conf": "H",

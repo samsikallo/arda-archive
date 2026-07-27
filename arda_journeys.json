@@ -1,0 +1,1340 @@
+{
+ "battles": [
+  {
+   "frame": "FA",
+   "id": "gondolin",
+   "key": "gondolin",
+   "name": "Fall of Gondolin (510)",
+   "x": 1342.5,
+   "y": 1560.0
+  },
+  {
+   "frame": "FA",
+   "id": "doriath",
+   "key": "doriath",
+   "name": "Sacks of Doriath (502/506)",
+   "x": 1490.0,
+   "y": 1755.0
+  },
+  {
+   "frame": "TA",
+   "id": "lastalliance",
+   "key": "dagorlad",
+   "name": "Dagorlad & the Siege (3434-41)",
+   "x": 5415.0,
+   "y": 3065.0
+  },
+  {
+   "frame": "TA",
+   "id": "gladden",
+   "key": "gladden fields",
+   "name": "Gladden Fields (T.A. 2)",
+   "x": 4365.0,
+   "y": 1915.0
+  },
+  {
+   "frame": "TA",
+   "id": "erui",
+   "key": "erui",
+   "name": "Crossings of Erui (1447)",
+   "x": 5225.0,
+   "y": 3750.0
+  },
+  {
+   "frame": "TA",
+   "id": "celebrant",
+   "key": "celebrant",
+   "name": "Field of Celebrant (2510)",
+   "x": 4390.0,
+   "y": 2125.0
+  },
+  {
+   "frame": "TA",
+   "id": "osgiliath",
+   "key": "osgiliath",
+   "name": "Osgiliath (June 3018)",
+   "x": 5510.0,
+   "y": 3590.0
+  },
+  {
+   "frame": "TA",
+   "id": "isen",
+   "key": "fords of isen",
+   "name": "Fords of Isen (3019)",
+   "x": 4025.0,
+   "y": 3110.0
+  },
+  {
+   "frame": "TA",
+   "id": "dale",
+   "key": "erebor",
+   "name": "Dale & Erebor (3019)",
+   "x": 5485.0,
+   "y": 1105.0
+  },
+  {
+   "frame": "TA",
+   "id": "morannon",
+   "key": "the morannon",
+   "name": "The Morannon (3019)",
+   "x": 5610.0,
+   "y": 3165.0
+  },
+  {
+   "frame": "TA",
+   "id": "bywater",
+   "key": "bywater",
+   "name": "Bywater (Nov 3019)",
+   "x": 2850.0,
+   "y": 1595.0
+  }
+ ],
+ "journeys": [
+  {
+   "colour": "#c9a227",
+   "id": "fellowship",
+   "n_drawn": 6,
+   "n_placed": 8,
+   "n_stages": 16,
+   "name": "The Ring goes south (Sept 23 – Feb 26)",
+   "segments": [
+    [
+     [
+      3115.0,
+      1665.0,
+      "barrow downs",
+      "The Barrow-downs (Sept 28)"
+     ],
+     [
+      3115.0,
+      1500.0,
+      "bree",
+      "Bree — Strider (Sept 29)"
+     ],
+     [
+      3485.0,
+      1540.0,
+      "weathertop",
+      "Weathertop: the Morgul-knife (Oct 6)"
+     ]
+    ],
+    [
+     [
+      4160.0,
+      1555.0,
+      "rivendell",
+      "Rivendell: the Council; the Fellowship (Oct 20 – Dec 25)"
+     ],
+     [
+      4260.0,
+      2010.0,
+      "caradhras",
+      "Hollin under Caradhras (Jan 8-11)"
+     ],
+     [
+      4260.0,
+      2010.0,
+      "caradhras",
+      "Repulsed by the Redhorn (Jan 12)"
+     ]
+    ]
+   ],
+   "stages": [
+    {
+     "day": 1,
+     "frame": null,
+     "key": null,
+     "label": "Bag End — Frodo sets out (Sept 23)",
+     "note": "'He walked briskly back to Bag End... a very trying time.'",
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 3,
+     "frame": "TA",
+     "key": "crickhollow",
+     "label": "Crickhollow (Sept 25)",
+     "note": null,
+     "x": 250,
+     "y": 658
+    },
+    {
+     "day": 5,
+     "frame": null,
+     "key": null,
+     "label": "Old Forest & Bombadil (Sept 26-28)",
+     "note": null,
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 7,
+     "frame": "TA",
+     "key": "barrow downs",
+     "label": "The Barrow-downs (Sept 28)",
+     "note": null,
+     "x": 273,
+     "y": 652
+    },
+    {
+     "day": 8,
+     "frame": "TA",
+     "key": "bree",
+     "label": "Bree — Strider (Sept 29)",
+     "note": null,
+     "x": 273,
+     "y": 685
+    },
+    {
+     "day": 15,
+     "frame": "TA",
+     "key": "weathertop",
+     "label": "Weathertop: the Morgul-knife (Oct 6)",
+     "note": "'A pale king... he stabbed at the shoulder of Frodo.'",
+     "x": 347,
+     "y": 677
+    },
+    {
+     "day": 29,
+     "frame": null,
+     "key": null,
+     "label": "The Ford of Bruinen (Oct 20)",
+     "note": null,
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 95,
+     "frame": "TA",
+     "key": "rivendell",
+     "label": "Rivendell: the Council; the Fellowship (Oct 20 – Dec 25)",
+     "note": "'The Ring must be destroyed... and it must be found in the Shire!'",
+     "x": 482,
+     "y": 674
+    },
+    {
+     "day": 110,
+     "frame": "TA",
+     "key": "caradhras",
+     "label": "Hollin under Caradhras (Jan 8-11)",
+     "note": null,
+     "x": 502,
+     "y": 583
+    },
+    {
+     "day": 113,
+     "frame": "TA",
+     "key": "caradhras",
+     "label": "Repulsed by the Redhorn (Jan 12)",
+     "note": null,
+     "x": 502,
+     "y": 583
+    },
+    {
+     "day": 114,
+     "frame": null,
+     "key": null,
+     "label": "The West-gate of Moria (Jan 13)",
+     "note": "'Speak, friend, and enter.'",
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 116,
+     "frame": null,
+     "key": null,
+     "label": "The Bridge: Gandalf falls (Jan 15)",
+     "note": "'Fly, you fools!'",
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 148,
+     "frame": null,
+     "key": null,
+     "label": "Lothlórien (Jan 17 – Feb 16)",
+     "note": "'No blemish or sickness or deformity could be seen... he saw no shadow.'",
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 153,
+     "frame": "TA",
+     "key": "anduin",
+     "label": "Down Anduin — the Undeeps (Feb 18-23)",
+     "note": null,
+     "x": 600,
+     "y": 410
+    },
+    {
+     "day": 157,
+     "frame": null,
+     "key": null,
+     "label": "The Argonath (Feb 25)",
+     "note": null,
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 158,
+     "frame": null,
+     "key": null,
+     "label": "Parth Galen: the Breaking (Feb 26)",
+     "note": "'I will take the Ring, though I do not know the way.'",
+     "x": null,
+     "y": null
+    }
+   ]
+  },
+  {
+   "colour": "#eda100",
+   "id": "frodo",
+   "n_drawn": 2,
+   "n_placed": 4,
+   "n_stages": 10,
+   "name": "Frodo & Sam to the Fire (Feb 26 – Mar 25)",
+   "segments": [
+    [
+     [
+      5610.0,
+      3165.0,
+      "the morannon",
+      "The Black Gate — barred (Mar 5)"
+     ],
+     [
+      5560.0,
+      3425.0,
+      "henneth annun",
+      "Henneth Annûn (Mar 7)"
+     ]
+    ]
+   ],
+   "stages": [
+    {
+     "day": 158,
+     "frame": null,
+     "key": null,
+     "label": "Parth Galen (Feb 26)",
+     "note": null,
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 160,
+     "frame": "TA",
+     "key": "emyn muil",
+     "label": "Emyn Muil (Feb 27-29)",
+     "note": null,
+     "x": 600,
+     "y": 414
+    },
+    {
+     "day": 162,
+     "frame": null,
+     "key": null,
+     "label": "The Dead Marshes (Mar 1-2)",
+     "note": "'They lie in all the pools... a fell light is in them.'",
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 166,
+     "frame": "TA",
+     "key": "the morannon",
+     "label": "The Black Gate — barred (Mar 5)",
+     "note": null,
+     "x": 772,
+     "y": 352
+    },
+    {
+     "day": 168,
+     "frame": "TA",
+     "key": "henneth annun",
+     "label": "Henneth Annûn (Mar 7)",
+     "note": null,
+     "x": 762,
+     "y": 300
+    },
+    {
+     "day": 170,
+     "frame": null,
+     "key": null,
+     "label": "The Cross-roads (Mar 9)",
+     "note": "'They cannot conquer for ever!'",
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 171,
+     "frame": null,
+     "key": null,
+     "label": "The Morgul Vale (Mar 10)",
+     "note": null,
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 173,
+     "frame": null,
+     "key": null,
+     "label": "Shelob's Lair; the Tower (Mar 11-14)",
+     "note": null,
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 178,
+     "frame": "TA",
+     "key": "gorgoroth",
+     "label": "The plains of Gorgoroth (Mar 15-23)",
+     "note": null,
+     "x": 800,
+     "y": 325
+    },
+    {
+     "day": 184,
+     "frame": null,
+     "key": null,
+     "label": "Mount Doom: the Ring unmade (Mar 25)",
+     "note": "'Well, this is the end, Sam Gamgee.'",
+     "x": null,
+     "y": null
+    }
+   ]
+  },
+  {
+   "colour": "#008300",
+   "id": "aragorn",
+   "n_drawn": 8,
+   "n_placed": 8,
+   "n_stages": 12,
+   "name": "The Three Hunters & the Grey Company (Feb 26 – Mar 15)",
+   "segments": [
+    [
+     [
+      4550.0,
+      2475.0,
+      "the wold",
+      "The chase over the Wold (Feb 27 – Mar 1)"
+     ],
+     [
+      4290.0,
+      2580.0,
+      "fangorn",
+      "Fangorn: the White Rider (Mar 1)"
+     ],
+     [
+      4415.0,
+      3150.0,
+      "edoras",
+      "Edoras: Théoden healed (Mar 2)"
+     ]
+    ],
+    [
+     [
+      4050.0,
+      3000.0,
+      "isengard",
+      "Isengard drowned; the palantír (Mar 5)"
+     ],
+     [
+      4430.0,
+      3210.0,
+      "dunharrow",
+      "Dunharrow: the Grey Company (Mar 7-8)"
+     ]
+    ],
+    [
+     [
+      4400.0,
+      3350.0,
+      "stone of erech",
+      "The Stone of Erech, at midnight (Mar 8)"
+     ],
+     [
+      4550.0,
+      3500.0,
+      "lamedon",
+      "Through Lamedon (Mar 9-11)"
+     ],
+     [
+      5365.0,
+      3925.0,
+      "pelargir",
+      "Pelargir: the fleet taken (Mar 13)"
+     ]
+    ]
+   ],
+   "stages": [
+    {
+     "day": 158,
+     "frame": null,
+     "key": null,
+     "label": "Parth Galen (Feb 26)",
+     "note": null,
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 160,
+     "frame": "TA",
+     "key": "the wold",
+     "label": "The chase over the Wold (Feb 27 – Mar 1)",
+     "note": "'Forty leagues and five you have measured... such a deed of the three kindreds!'",
+     "x": 560,
+     "y": 490
+    },
+    {
+     "day": 161,
+     "frame": "TA",
+     "key": "fangorn",
+     "label": "Fangorn: the White Rider (Mar 1)",
+     "note": null,
+     "x": 508,
+     "y": 469
+    },
+    {
+     "day": 162,
+     "frame": "TA",
+     "key": "edoras",
+     "label": "Edoras: Théoden healed (Mar 2)",
+     "note": null,
+     "x": 533,
+     "y": 355
+    },
+    {
+     "day": 164,
+     "frame": null,
+     "key": null,
+     "label": "Helm's Deep (Mar 3-4)",
+     "note": "'Arise, arise, Riders of Théoden!'",
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 166,
+     "frame": "TA",
+     "key": "isengard",
+     "label": "Isengard drowned; the palantír (Mar 5)",
+     "note": null,
+     "x": 460,
+     "y": 385
+    },
+    {
+     "day": 168,
+     "frame": "TA",
+     "key": "dunharrow",
+     "label": "Dunharrow: the Grey Company (Mar 7-8)",
+     "note": null,
+     "x": 536,
+     "y": 343
+    },
+    {
+     "day": 169,
+     "frame": null,
+     "key": null,
+     "label": "The Paths of the Dead (Mar 8)",
+     "note": "'The Dead follow us... they are summoned.'",
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 169.5,
+     "frame": "TA",
+     "key": "stone of erech",
+     "label": "The Stone of Erech, at midnight (Mar 8)",
+     "note": null,
+     "x": 530,
+     "y": 315
+    },
+    {
+     "day": 171,
+     "frame": "TA",
+     "key": "lamedon",
+     "label": "Through Lamedon (Mar 9-11)",
+     "note": null,
+     "x": 560,
+     "y": 285
+    },
+    {
+     "day": 174,
+     "frame": "TA",
+     "key": "pelargir",
+     "label": "Pelargir: the fleet taken (Mar 13)",
+     "note": null,
+     "x": 723,
+     "y": 200
+    },
+    {
+     "day": 176,
+     "frame": null,
+     "key": null,
+     "label": "The Pelennor: the standard unfurled (Mar 15)",
+     "note": "'Thus came Aragorn son of Arathorn... borne upon a wind from the Sea.'",
+     "x": null,
+     "y": null
+    }
+   ]
+  },
+  {
+   "colour": "#d9dce2",
+   "id": "gandalf",
+   "n_drawn": 4,
+   "n_placed": 4,
+   "n_stages": 4,
+   "name": "Gandalf & Pippin to the White City (Mar 5 – 9)",
+   "segments": [
+    [
+     [
+      4050.0,
+      3000.0,
+      "isengard",
+      "From Isengard, after the palantír (Mar 5)"
+     ],
+     [
+      4415.0,
+      3150.0,
+      "edoras",
+      "Edoras (Mar 6)"
+     ],
+     [
+      5050.0,
+      3425.0,
+      "anorien",
+      "Through Anórien by night"
+     ],
+     [
+      5470.0,
+      3585.0,
+      "minas tirith",
+      "Minas Tirith (Mar 9)"
+     ]
+    ]
+   ],
+   "stages": [
+    {
+     "day": 166,
+     "frame": "TA",
+     "key": "isengard",
+     "label": "From Isengard, after the palantír (Mar 5)",
+     "note": null,
+     "x": 460,
+     "y": 385
+    },
+    {
+     "day": 167,
+     "frame": "TA",
+     "key": "edoras",
+     "label": "Edoras (Mar 6)",
+     "note": null,
+     "x": 533,
+     "y": 355
+    },
+    {
+     "day": 169,
+     "frame": "TA",
+     "key": "anorien",
+     "label": "Through Anórien by night",
+     "note": null,
+     "x": 660,
+     "y": 300
+    },
+    {
+     "day": 170,
+     "frame": "TA",
+     "key": "minas tirith",
+     "label": "Minas Tirith (Mar 9)",
+     "note": "'Shadowfax must bear me... I will carry you.'",
+     "x": 744,
+     "y": 268
+    }
+   ]
+  },
+  {
+   "colour": "#e87ba4",
+   "id": "rohirrim",
+   "n_drawn": 3,
+   "n_placed": 3,
+   "n_stages": 4,
+   "name": "The Ride of the Rohirrim (Mar 10 – 15)",
+   "segments": [
+    [
+     [
+      4430.0,
+      3210.0,
+      "dunharrow",
+      "The Muster at Dunharrow (Mar 9-10)"
+     ],
+     [
+      4415.0,
+      3150.0,
+      "edoras",
+      "Edoras — the beacons burn (Mar 10)"
+     ],
+     [
+      5270.0,
+      3460.0,
+      "druadan",
+      "The Drúadan Forest: Ghân-buri-Ghân's road (Mar 13-14)"
+     ]
+    ]
+   ],
+   "stages": [
+    {
+     "day": 171,
+     "frame": "TA",
+     "key": "dunharrow",
+     "label": "The Muster at Dunharrow (Mar 9-10)",
+     "note": "'Arise now, arise, Riders of Théoden!'",
+     "x": 536,
+     "y": 343
+    },
+    {
+     "day": 172,
+     "frame": "TA",
+     "key": "edoras",
+     "label": "Edoras — the beacons burn (Mar 10)",
+     "note": null,
+     "x": 533,
+     "y": 355
+    },
+    {
+     "day": 174,
+     "frame": "TA",
+     "key": "druadan",
+     "label": "The Drúadan Forest: Ghân-buri-Ghân's road (Mar 13-14)",
+     "note": null,
+     "x": 704,
+     "y": 293
+    },
+    {
+     "day": 176,
+     "frame": null,
+     "key": null,
+     "label": "Dawn on the Pelennor (Mar 15)",
+     "note": "'Death! Ride, ride to ruin and the world's ending!'",
+     "x": null,
+     "y": null
+    }
+   ]
+  },
+  {
+   "colour": "#4a3aa7",
+   "id": "morannon",
+   "n_drawn": 4,
+   "n_placed": 4,
+   "n_stages": 4,
+   "name": "The Host of the West (Mar 18 – 25)",
+   "segments": [
+    [
+     [
+      5470.0,
+      3585.0,
+      "minas tirith",
+      "Minas Tirith: the last debate (Mar 16-18)"
+     ],
+     [
+      5510.0,
+      3590.0,
+      "osgiliath",
+      "Osgiliath crossing (Mar 18)"
+     ],
+     [
+      5440.0,
+      3450.0,
+      "cair andros",
+      "Past Cair Andros (Mar 19-23)"
+     ],
+     [
+      5610.0,
+      3165.0,
+      "the morannon",
+      "The Morannon: 'the realm of Sauron is ended' (Mar 25)"
+     ]
+    ]
+   ],
+   "stages": [
+    {
+     "day": 179,
+     "frame": "TA",
+     "key": "minas tirith",
+     "label": "Minas Tirith: the last debate (Mar 16-18)",
+     "note": null,
+     "x": 744,
+     "y": 268
+    },
+    {
+     "day": 180,
+     "frame": "TA",
+     "key": "osgiliath",
+     "label": "Osgiliath crossing (Mar 18)",
+     "note": null,
+     "x": 752,
+     "y": 267
+    },
+    {
+     "day": 182,
+     "frame": "TA",
+     "key": "cair andros",
+     "label": "Past Cair Andros (Mar 19-23)",
+     "note": null,
+     "x": 738,
+     "y": 295
+    },
+    {
+     "day": 184,
+     "frame": "TA",
+     "key": "the morannon",
+     "label": "The Morannon: 'the realm of Sauron is ended' (Mar 25)",
+     "note": "'The Eagles are coming! The Eagles are coming!'",
+     "x": 772,
+     "y": 352
+    }
+   ]
+  },
+  {
+   "colour": "#eb6834",
+   "id": "hobbit",
+   "n_drawn": 7,
+   "n_placed": 7,
+   "n_stages": 11,
+   "name": "There and Back Again (2941, by month)",
+   "segments": [
+    [
+     [
+      3115.0,
+      1500.0,
+      "bree",
+      "Bree & the East Road (May)"
+     ],
+     [
+      3850.0,
+      1585.0,
+      "trollshaws",
+      "The Trollshaws: three trolls (late May)"
+     ],
+     [
+      4160.0,
+      1555.0,
+      "rivendell",
+      "Rivendell (mid-June)"
+     ]
+    ],
+    [
+     [
+      5000.0,
+      1605.0,
+      "mirkwood",
+      "Mirkwood's northern path (late July – Sept)"
+     ],
+     [
+      5250.0,
+      1185.0,
+      "elvenking s halls",
+      "Spiders & the Elvenking's halls (Aug – Sept)"
+     ],
+     [
+      5510.0,
+      1275.0,
+      "esgaroth",
+      "Esgaroth in barrels (late Sept)"
+     ],
+     [
+      5485.0,
+      1105.0,
+      "erebor",
+      "Erebor: Durin's Day; Smaug flies (autumn)"
+     ]
+    ]
+   ],
+   "stages": [
+    {
+     "day": 0,
+     "frame": null,
+     "key": null,
+     "label": "Bag End — 'Good morning!' (late April 2941)",
+     "note": null,
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 10,
+     "frame": "TA",
+     "key": "bree",
+     "label": "Bree & the East Road (May)",
+     "note": null,
+     "x": 273,
+     "y": 685
+    },
+    {
+     "day": 30,
+     "frame": "TA",
+     "key": "trollshaws",
+     "label": "The Trollshaws: three trolls (late May)",
+     "note": "'Dawn take you all, and be stone to you!'",
+     "x": 420,
+     "y": 668
+    },
+    {
+     "day": 45,
+     "frame": "TA",
+     "key": "rivendell",
+     "label": "Rivendell (mid-June)",
+     "note": null,
+     "x": 482,
+     "y": 674
+    },
+    {
+     "day": 60,
+     "frame": null,
+     "key": null,
+     "label": "The High Pass: Goblin-town — the Ring found (July)",
+     "note": "'What has it got in its pocketses?'",
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 70,
+     "frame": null,
+     "key": null,
+     "label": "The Eagles & the Carrock; Beorn (mid-July)",
+     "note": null,
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 80,
+     "frame": "TA",
+     "key": "mirkwood",
+     "label": "Mirkwood's northern path (late July – Sept)",
+     "note": null,
+     "x": 650,
+     "y": 664
+    },
+    {
+     "day": 95,
+     "frame": "TA",
+     "key": "elvenking s halls",
+     "label": "Spiders & the Elvenking's halls (Aug – Sept)",
+     "note": null,
+     "x": 700,
+     "y": 748
+    },
+    {
+     "day": 110,
+     "frame": "TA",
+     "key": "esgaroth",
+     "label": "Esgaroth in barrels (late Sept)",
+     "note": null,
+     "x": 752,
+     "y": 730
+    },
+    {
+     "day": 120,
+     "frame": "TA",
+     "key": "erebor",
+     "label": "Erebor: Durin's Day; Smaug flies (autumn)",
+     "note": "'I am he that walks unseen... I came from the end of a bag.'",
+     "x": 747,
+     "y": 764
+    },
+    {
+     "day": 128,
+     "frame": null,
+     "key": null,
+     "label": "The Battle of Five Armies (Nov)",
+     "note": null,
+     "x": null,
+     "y": null
+    }
+   ]
+  },
+  {
+   "colour": "#7ec8e3",
+   "id": "tuor",
+   "n_drawn": 7,
+   "n_placed": 8,
+   "n_stages": 10,
+   "name": "Tuor's road to the Hidden City (F.A. 495-96)",
+   "segments": [
+    [
+     [
+      847.5,
+      1525.0,
+      "mithrim",
+      "The caves of Androth above Mithrim"
+     ],
+     [
+      682.5,
+      1552.5,
+      "annon in gelydh",
+      "Annon-in-Gelydh, the Gate of the Noldor (met Gelmir & Arminas)"
+     ]
+    ],
+    [
+     [
+      -350.0,
+      2325.0,
+      "belegaer",
+      "Into hollow Nevrast — the first of Men to look on Belegaer"
+     ],
+     [
+      307.5,
+      1932.5,
+      "vinyamar",
+      "Vinyamar under Taras: the shield, hauberk and sword left by Ulmo's command"
+     ],
+     [
+      1127.5,
+      1702.5,
+      "ered wethrin",
+      "Ulmo rises in the storm; Voronwë cast ashore — east under Ered Wethrin"
+     ],
+     [
+      1122.5,
+      1675.0,
+      "ivrin",
+      "Ivrin defiled — and Túrin passes, crying for Finduilas: the kinsmen's only meeting"
+     ],
+     [
+      1265.0,
+      1712.5,
+      "brithiach",
+      "The Ford of Brithiach in the Fell Winter"
+     ]
+    ]
+   ],
+   "stages": [
+    {
+     "day": 0,
+     "frame": "FA",
+     "key": "mithrim",
+     "label": "The caves of Androth above Mithrim",
+     "note": "'He dwelt alone as an outlaw...'",
+     "x": 337,
+     "y": 644
+    },
+    {
+     "day": 1,
+     "frame": "FA",
+     "key": "annon in gelydh",
+     "label": "Annon-in-Gelydh, the Gate of the Noldor (met Gelmir & Arminas)",
+     "note": null,
+     "x": 271,
+     "y": 633
+    },
+    {
+     "day": 2,
+     "frame": null,
+     "key": null,
+     "label": "Cirith Ninniach, the Rainbow Cleft — gulls, and the Sea's calling",
+     "note": null,
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 3,
+     "frame": "TA",
+     "key": "belegaer",
+     "label": "Into hollow Nevrast — the first of Men to look on Belegaer",
+     "note": null,
+     "x": -420,
+     "y": 520
+    },
+    {
+     "day": 4,
+     "frame": "FA",
+     "key": "vinyamar",
+     "label": "Vinyamar under Taras: the shield, hauberk and sword left by Ulmo's command",
+     "note": "'Thus Tuor put on the arms appointed for him'",
+     "x": 121,
+     "y": 481
+    },
+    {
+     "day": 5,
+     "frame": "FA",
+     "key": "ered wethrin",
+     "label": "Ulmo rises in the storm; Voronwë cast ashore — east under Ered Wethrin",
+     "note": null,
+     "x": 449,
+     "y": 573
+    },
+    {
+     "day": 6,
+     "frame": "FA",
+     "key": "ivrin",
+     "label": "Ivrin defiled — and Túrin passes, crying for Finduilas: the kinsmen's only meeting",
+     "note": "'they saw a tall Man... clad in black, bearing a black sword'",
+     "x": 447,
+     "y": 584
+    },
+    {
+     "day": 7,
+     "frame": "FA",
+     "key": "brithiach",
+     "label": "The Ford of Brithiach in the Fell Winter",
+     "note": null,
+     "x": 504,
+     "y": 569
+    },
+    {
+     "day": 8,
+     "frame": null,
+     "key": null,
+     "label": "The Dry River; the Seven Gates of the Orfalch Echor",
+     "note": null,
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 9,
+     "frame": "FA",
+     "key": "gondolin",
+     "label": "Gondolin amid the white snow — 'the dusk of the eighteenth day of Hísimë'",
+     "note": null,
+     "x": 535,
+     "y": 630
+    }
+   ]
+  },
+  {
+   "colour": "#e0b0ff",
+   "id": "beren",
+   "n_drawn": 5,
+   "n_placed": 6,
+   "n_stages": 8,
+   "name": "Beren's road — the Quest of the Silmaril (F.A. c.464-66)",
+   "segments": [
+    [
+     [
+      1572.5,
+      1355.0,
+      "dorthonion",
+      "Dorthonion: the outlaws of Barahir; the ring saved"
+     ],
+     [
+      1720.0,
+      1480.0,
+      "ered gorgoroth",
+      "Over the Mountains of Terror — 'a journey no Man had dared'"
+     ],
+     [
+      1490.0,
+      1755.0,
+      "doriath",
+      "Doriath: Tinúviel dancing in the hemlock-glade; Thingol's bride-price"
+     ],
+     [
+      1012.5,
+      1987.5,
+      "nargothrond",
+      "Nargothrond: Finrod remembers his oath — ten companions"
+     ],
+     [
+      1240.0,
+      1407.5,
+      "tol sirion",
+      "Tol-in-Gaurhoth: the duel of songs; Finrod dies for him in the pits"
+     ]
+    ]
+   ],
+   "stages": [
+    {
+     "day": 0,
+     "frame": "FA",
+     "key": "dorthonion",
+     "label": "Dorthonion: the outlaws of Barahir; the ring saved",
+     "note": null,
+     "x": 627,
+     "y": 712
+    },
+    {
+     "day": 1,
+     "frame": "FA",
+     "key": "ered gorgoroth",
+     "label": "Over the Mountains of Terror — 'a journey no Man had dared'",
+     "note": "'through Nan Dungortheb... where Ungoliant's brood wove their webs'",
+     "x": 686,
+     "y": 662
+    },
+    {
+     "day": 2,
+     "frame": "FA",
+     "key": "doriath",
+     "label": "Doriath: Tinúviel dancing in the hemlock-glade; Thingol's bride-price",
+     "note": "'Bring to me in your hand a Silmaril from Morgoth's crown'",
+     "x": 594,
+     "y": 552
+    },
+    {
+     "day": 3,
+     "frame": "FA",
+     "key": "nargothrond",
+     "label": "Nargothrond: Finrod remembers his oath — ten companions",
+     "note": null,
+     "x": 403,
+     "y": 459
+    },
+    {
+     "day": 4,
+     "frame": "FA",
+     "key": "tol sirion",
+     "label": "Tol-in-Gaurhoth: the duel of songs; Finrod dies for him in the pits",
+     "note": "'He met Sauron with a song of staying... and Finrod fell before the throne'",
+     "x": 494,
+     "y": 691
+    },
+    {
+     "day": 5,
+     "frame": null,
+     "key": null,
+     "label": "Angband: Lúthien's spell before the throne; the knife Angrist cuts one Silmaril",
+     "note": "'the fire of the Silmaril was in his hand'",
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 6,
+     "frame": null,
+     "key": null,
+     "label": "The Hunting of the Wolf; the hand and the jewel regained; the second life granted",
+     "note": null,
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 7,
+     "frame": "FA",
+     "key": "tol galen",
+     "label": "Tol Galen the Green Isle — the Dead that live, beyond all seeking",
+     "note": null,
+     "x": 845,
+     "y": 214
+    }
+   ]
+  },
+  {
+   "colour": "#3a3226",
+   "id": "turin",
+   "n_drawn": 4,
+   "n_placed": 6,
+   "n_stages": 9,
+   "name": "The wanderings of Túrin Turambar (F.A. 473-99)",
+   "segments": [
+    [
+     [
+      1095.0,
+      1855.0,
+      "bar en danwedh",
+      "Amon Rûdh: Bar-en-Danwedh, the Land of Bow and Helm — and Mîm's betrayal"
+     ],
+     [
+      1572.5,
+      1355.0,
+      "dorthonion",
+      "Rescued on Taur-nu-Fuin; Anglachel drinks Beleg's blood by his own hand"
+     ],
+     [
+      1122.5,
+      1675.0,
+      "ivrin",
+      "Healed of madness at Ivrin's pools"
+     ],
+     [
+      1012.5,
+      1987.5,
+      "nargothrond",
+      "Nargothrond: the Black Sword; the bridge that doomed the Doors"
+     ]
+    ]
+   ],
+   "stages": [
+    {
+     "day": 0,
+     "frame": null,
+     "key": null,
+     "label": "Dor-lómin: the Dragon-helm's heir, sent away before the Easterlings came",
+     "note": null,
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 1,
+     "frame": "FA",
+     "key": "doriath",
+     "label": "Doriath: fostered by Thingol; Saeros' death and the flight from judgment",
+     "note": null,
+     "x": 594,
+     "y": 552
+    },
+    {
+     "day": 2,
+     "frame": null,
+     "key": null,
+     "label": "With the outlaws on the marches; Beleg finds him",
+     "note": null,
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 3,
+     "frame": "FA",
+     "key": "bar en danwedh",
+     "label": "Amon Rûdh: Bar-en-Danwedh, the Land of Bow and Helm — and Mîm's betrayal",
+     "note": "'Dor-Cúarthol, the Land of Bow and Helm'",
+     "x": 436,
+     "y": 512
+    },
+    {
+     "day": 4,
+     "frame": "FA",
+     "key": "dorthonion",
+     "label": "Rescued on Taur-nu-Fuin; Anglachel drinks Beleg's blood by his own hand",
+     "note": null,
+     "x": 627,
+     "y": 712
+    },
+    {
+     "day": 5,
+     "frame": "FA",
+     "key": "ivrin",
+     "label": "Healed of madness at Ivrin's pools",
+     "note": null,
+     "x": 447,
+     "y": 584
+    },
+    {
+     "day": 6,
+     "frame": "FA",
+     "key": "nargothrond",
+     "label": "Nargothrond: the Black Sword; the bridge that doomed the Doors",
+     "note": "'Mormegil, the Black Sword of Nargothrond'",
+     "x": 403,
+     "y": 459
+    },
+    {
+     "day": 7,
+     "frame": null,
+     "key": null,
+     "label": "Back through the Fell Winter to an emptied Dor-lómin",
+     "note": null,
+     "x": null,
+     "y": null
+    },
+    {
+     "day": 8,
+     "frame": "FA",
+     "key": "brethil",
+     "label": "Brethil: Glaurung slain at Cabed-en-Aras; Níniel; the black blade's answer",
+     "note": "'Yea, I will drink thy blood gladly'",
+     "x": 501,
+     "y": 529
+    }
+   ]
+  }
+ ],
+ "n_journeys": 10,
+ "n_placed": 58,
+ "n_stages": 88,
+ "note": "Each stage is placed by the place its own label names, never by transforming the living map's coordinates onto this sheet: an affine over the 29 places the two sheets share leaves a mean residual of 44 miles. A stage the archive cannot place is recorded and NOT DRAWN, and the course is broken where it cannot be followed, because a road drawn through half its stages is a different road."
+}
