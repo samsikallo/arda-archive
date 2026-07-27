@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 482,
+ "n": 485,
  "places": {
   "adorn": {
    "ages": [
@@ -3810,6 +3810,30 @@
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
+  "crissaegrim": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "A ch14, ch18",
+    "The Silmarillion [C]"
+   ],
+   "coords": [],
+   "n": "Crissaegrim",
+   "name_conf": "H",
+   "notes": [
+    "Evidence Table B19",
+    "“Upon the left hand of Sirion lay East Beleriand, at its widest a hundred leagues from Sirion to Gelion and the borders of Ossiriand; and first, between Sirion and Mindeb, lay the empty land of Dimbar under the peaks of the Crissaegrim, abode of eagles.” — The Silmarillion [C]",
+    "he letters Crissaegrim on the Beleriand plate, above Dimbar"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "NATURAL_MOUNTAIN_RANGE"
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
+  },
   "cristhorn": {
    "ages": [],
    "cites": [
@@ -6853,6 +6877,28 @@
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
+  "far harad": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "The Lord of the Rings [C]"
+   ],
+   "coords": [],
+   "n": "Far Harad",
+   "name_conf": "H",
+   "notes": [
+    "“He now was destroyed; but Gothmog the lieutenant of Morgul had ﬂung them into the fray; Easterlings with axes, and Variags of Khand, Southrons in scarlet, and out of Far Harad black men like half-trolls with white eyes and red tongues.” — The Lord of the Rings [C]",
+    "he letters FAR HARAD at the southern edge of the General Map"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "POLITY_REGION"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
   "fen of serech": {
    "ages": [
     "FA"
@@ -8540,6 +8586,29 @@
     "POLITY_REALM"
    ],
    "unplaced": "a realm in its own right — nothing contains it"
+  },
+  "haradwaith": {
+   "ages": [
+    "SA",
+    "TA"
+   ],
+   "cites": [
+    "The Lord of the Rings [C]"
+   ],
+   "coords": [],
+   "n": "Haradwaith",
+   "name_conf": "H",
+   "notes": [
+    "“Ciryandil his son continued the building of ships; but the Men of the Harad, led by the lords that had been driven from Umbar, came up with great power against that stronghold, and Ciryandil fell in battle in Haradwaith.” — The Lord of the Rings [C]",
+    "he letters HARADWAITH across the south of the General Map, glossed [Sutherland]"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "POLITY_REGION"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "harlindon": {
    "ages": [],

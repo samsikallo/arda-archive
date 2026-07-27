@@ -287,6 +287,21 @@
   },
   {
    "ages": "FA",
+   "h": 15.3,
+   "hand": "Christopher Tolkien",
+   "id": "bel-049",
+   "key": "crissaegrim",
+   "kind": "NATURAL_MOUNTAIN_RANGE",
+   "name": "Crissaegrim",
+   "plate": "bel",
+   "reads": "Crissaegrim",
+   "src": "map_beleriand_1.jpg",
+   "w": 48.0,
+   "x": 336.2,
+   "y": 272.3
+  },
+  {
+   "ages": "FA",
    "h": 13.5,
    "hand": "Christopher Tolkien",
    "id": "bel-051",
@@ -1051,6 +1066,21 @@
    "y": 605.9
   },
   {
+   "ages": "",
+   "h": 17.5,
+   "hand": "Christopher Tolkien",
+   "id": "bel-203",
+   "key": "bay of balar",
+   "kind": "NATURAL_SEA",
+   "name": "Bay of Balar",
+   "plate": "bel",
+   "reads": "Bay of Balar",
+   "src": "map_beleriand_1.jpg",
+   "w": 32.7,
+   "x": 245.4,
+   "y": 637.7
+  },
+  {
    "ages": "FA",
    "h": 8.3,
    "hand": "Christopher Tolkien",
@@ -1109,6 +1139,21 @@
    "w": 69.0,
    "x": 946.5,
    "y": 209.0
+  },
+  {
+   "ages": "TA",
+   "h": 100.0,
+   "hand": "Christopher Tolkien",
+   "id": "gm-010",
+   "key": "forodwaith",
+   "kind": "POLITY_REGION",
+   "name": "Forodwaith",
+   "plate": "gm",
+   "reads": "Forodwaith",
+   "src": "map_middle_earth_2.jpeg",
+   "w": 186.0,
+   "x": 1310.5,
+   "y": 182.0
   },
   {
    "ages": "TA",
@@ -1291,6 +1336,21 @@
    "y": 497.0
   },
   {
+   "ages": "FoA,SA,TA",
+   "h": 63.0,
+   "hand": "Christopher Tolkien",
+   "id": "gm-046",
+   "key": "rivendell",
+   "kind": "MAN_MADE_REFUGE,MAN_MADE_HALL",
+   "name": "Rivendell (Imladris)",
+   "plate": "gm",
+   "reads": "Rivendell",
+   "src": "map_middle_earth_2.jpeg",
+   "w": 128.0,
+   "x": 1395.5,
+   "y": 494.0
+  },
+  {
    "ages": "TA",
    "h": 34.0,
    "hand": "Christopher Tolkien",
@@ -1424,6 +1484,21 @@
    "w": 71.0,
    "x": 1204.5,
    "y": 596.0
+  },
+  {
+   "ages": "",
+   "h": 20.0,
+   "hand": "Christopher Tolkien",
+   "id": "gm-067",
+   "key": "gulf of lhun",
+   "kind": "NATURAL_SEA",
+   "name": "Gulf of Lhun",
+   "plate": "gm",
+   "reads": "Gulf of Lune",
+   "src": "map_middle_earth_2.jpeg",
+   "w": 64.0,
+   "x": 602.5,
+   "y": 609.0
   },
   {
    "ages": "SA,TA",
@@ -1754,6 +1829,21 @@
    "w": 118.0,
    "x": 1289.5,
    "y": 965.0
+  },
+  {
+   "ages": "FoA,TA",
+   "h": 71.0,
+   "hand": "Christopher Tolkien",
+   "id": "gm-116",
+   "key": "rohan",
+   "kind": "POLITY_REALM",
+   "name": "Rohan",
+   "plate": "gm",
+   "reads": "Rohan",
+   "src": "map_middle_earth_2.jpeg",
+   "w": 258.0,
+   "x": 1337.5,
+   "y": 980.0
   },
   {
    "ages": "TA",
@@ -2087,6 +2177,21 @@
   },
   {
    "ages": "TA",
+   "h": 90.0,
+   "hand": "Christopher Tolkien",
+   "id": "gm-156",
+   "key": "lebennin",
+   "kind": "POLITY_SUBREGION",
+   "name": "Lebennin",
+   "plate": "gm",
+   "reads": "Lebennin",
+   "src": "map_middle_earth_2.jpeg",
+   "w": 152.0,
+   "x": 1599.5,
+   "y": 1283.0
+  },
+  {
+   "ages": "TA",
    "h": 20.0,
    "hand": "Christopher Tolkien",
    "id": "gm-158",
@@ -2116,6 +2221,21 @@
    "y": 1333.0
   },
   {
+   "ages": "SA,TA",
+   "h": 29.0,
+   "hand": "Christopher Tolkien",
+   "id": "gm-160",
+   "key": "pelargir",
+   "kind": "MAN_MADE_HAVEN",
+   "name": "Pelargir",
+   "plate": "gm",
+   "reads": "Pelargir",
+   "src": "map_middle_earth_2.jpeg",
+   "w": 63.0,
+   "x": 1729.5,
+   "y": 1333.0
+  },
+  {
    "ages": "",
    "h": 15.0,
    "hand": "Christopher Tolkien",
@@ -2129,6 +2249,21 @@
    "w": 85.0,
    "x": 1605.5,
    "y": 1374.0
+  },
+  {
+   "ages": "TA",
+   "h": 54.0,
+   "hand": "Christopher Tolkien",
+   "id": "gm-165",
+   "key": "ephel duath",
+   "kind": "NATURAL_MOUNTAIN_RANGE",
+   "name": "Ephel Duath",
+   "plate": "gm",
+   "reads": "Ephel Dúath",
+   "src": "map_middle_earth_2.jpeg",
+   "w": 114.0,
+   "x": 1931.5,
+   "y": 1383.0
   },
   {
    "ages": "TA",
@@ -2249,19 +2384,49 @@
    "w": 168.0,
    "x": 1369.5,
    "y": 1803.0
+  },
+  {
+   "ages": "SA,TA",
+   "h": 34.0,
+   "hand": "Christopher Tolkien",
+   "id": "gm-185",
+   "key": "haradwaith",
+   "kind": "POLITY_REGION",
+   "name": "Haradwaith",
+   "plate": "gm",
+   "reads": "Haradwaith",
+   "src": "map_middle_earth_2.jpeg",
+   "w": 243.0,
+   "x": 1967.5,
+   "y": 1831.0
+  },
+  {
+   "ages": "TA",
+   "h": 29.0,
+   "hand": "Christopher Tolkien",
+   "id": "gm-187",
+   "key": "far harad",
+   "kind": "POLITY_REGION",
+   "name": "Far Harad",
+   "plate": "gm",
+   "reads": "Far Harad",
+   "src": "map_middle_earth_2.jpeg",
+   "w": 69.0,
+   "x": 1798.5,
+   "y": 2051.0
   }
  ],
- "n": 150,
+ "n": 161,
  "note": "The archive's own lettering, set where Christopher Tolkien set his. His traced sheet carries his lines and NONE of his writing -- his lettering is not ours to set as our own -- so every place he named is blank space on his map, and that is where the archive's own voice goes. Positions are measured off his plates and carried through the same transform that placed each sheet in the join; nothing is fitted or inferred. Each anchor is the archive's NAME for the place HE marked there, linked to the archive's record. Only anchors a reader has verified by eye are here: Tesseract's guesses are never promoted on their own, because about one in five of them is false.",
  "plates": {
   "bel": {
-   "n_anchored": 73,
+   "n_anchored": 75,
    "n_labels": 211,
    "src": "map_beleriand_1.jpg",
    "title": "Map of Beleriand and the Lands to the North"
   },
   "gm": {
-   "n_anchored": 77,
+   "n_anchored": 86,
    "n_labels": 188,
    "src": "map_middle_earth_2.jpeg",
    "title": "The General Map of Middle-earth"
