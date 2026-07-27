@@ -250,8 +250,8 @@ anim=requestAnimationFrame(step);};
 function select(id){const c=D.campaigns.find(x=>x.id==id);
 document.getElementById("battleT").textContent=c.label;
 const tot=s=>s.contingents?s.contingents.reduce((a,k)=>a+k.n,0):0;
-document.getElementById("battleSub").textContent=c.insuf?"recorded, unnumbered":
-c.sides.map(s=>`${s.name} ~${tot(s).toLocaleString()}`).join("  ·  vs  ·  ");
+document.getElementById("battleSub").innerHTML=(D.maps[c.id]?'<a style="color:#7a4a12" href="arda_timemap_jpeg.html#battle='+c.id+'" target="_blank">⚑ see the field on the Living Map</a> · ':'')+(c.insuf?"recorded, unnumbered":
+c.sides.map(s=>`${s.name} ~${tot(s).toLocaleString()}`).join("  ·  vs  ·  "));
 drawBars(c);drawMap(c);}
 // ===== hosts panels =====
 {const H=document.getElementById("hosts");let lastAge="";
@@ -380,5 +380,14 @@ const note=document.createElement("div");note.className="cite";
 note.textContent="⚔ the hosts march in formation: unit glyphs are shaped by kind and culture (stated where the texts state, doctrine-inferred [I] where they do not); the deployment layer shows the arrays the corpus describes — hover any for the passage; green = the free peoples, red = the Enemy. Where no formation is drawn, the corpus describes none.";
 document.getElementById("phase").parentNode.insertBefore(note,document.getElementById("phase"));
 })();
+
+function goHash(){const m=location.hash.match(/b=([\w-]+)/);if(!m)return;
+const c=D.campaigns.find(x=>x.id==m[1]);if(!c)return;
+select(c.id);
+document.querySelectorAll('#warlist .chip').forEach(x=>x.classList.toggle('on',x.dataset.cid==c.id));
+document.getElementById('battleT').scrollIntoView({block:'start',behavior:'smooth'});}
+addEventListener('hashchange',goHash);setTimeout(goHash,60);
 </script>
+<script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script>
+<div class="cite" style="margin:10px 18px 24px">Heraldic devices: canonical recreations (CC BY-SA / Public Domain) &amp; interpretive designs — full credits in the</div>
 </body></html>
