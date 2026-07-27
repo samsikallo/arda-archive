@@ -1102,7 +1102,8 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_PEAK"
+    "MAN_MADE_TOMB",
+    "NATURAL_HILL"
    ]
   },
   "belegost": {
@@ -2131,6 +2132,7 @@
    ],
    "types": [
     "MAN_MADE_TOWN",
+    "NATURAL_VALLEY",
     "MAN_MADE_CITY"
    ]
   },
@@ -2173,8 +2175,8 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_PASS",
-    "MAN_MADE_GATE"
+    "NATURAL_VALLEY",
+    "NATURAL_PASS"
    ]
   },
   "dimrost": {
@@ -3590,8 +3592,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_PASS",
-    "MAN_MADE_HALL"
+    "MAN_MADE_CROSSING"
    ]
   },
   "fords of isen": {
@@ -3626,8 +3627,7 @@
    "timeline": [],
    "types": [
     "MAN_MADE_CROSSING",
-    "NATURAL_ISLAND",
-    "NATURAL_PASS"
+    "NATURAL_ISLAND"
    ]
   },
   "forlond": {
@@ -4871,7 +4871,8 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_BAY"
+    "NATURAL_BAY",
+    "NATURAL_ICE"
    ]
   },
   "icebay of forochel": {
@@ -6315,7 +6316,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_HALL"
+    "MAN_MADE_GATE"
    ]
   },
   "mount doom": {
@@ -6393,6 +6394,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
+    "NATURAL_PEAK",
     "MAN_MADE_FORTRESS"
    ]
   },
@@ -8050,8 +8052,8 @@
     }
    ],
    "types": [
-    "MAN_MADE_HALL",
-    "NATURAL_PEAK"
+    "NATURAL_HILL",
+    "MAN_MADE_HALL"
    ]
   },
   "the morannon": {
@@ -8537,6 +8539,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
+    "NATURAL_HILL",
     "MAN_MADE_TOWER"
    ]
   },
@@ -9182,7 +9185,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_PEAK"
+    "NATURAL_MOOR"
    ]
   },
   "woodhall woody end": {
