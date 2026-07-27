@@ -84,7 +84,7 @@
  .hisname .hit{fill:transparent;cursor:pointer}
  .hisname.on text{fill:var(--red)}
  .hisname:focus{outline:none}
-</style></head><body>
+</style></head><body><a class="a-skip" href="#main">skip to content</a>
 <div class="hdr"><h1>The Map of Arda</h1><span style="flex:1"></span>
 <nav id="ardanav" aria-label="Archive halls"></nav>
 <span class="sub">every named feature the archive draws, and every one of them answers</span></div>
@@ -113,7 +113,7 @@
   <input type="range" id="chrs" min="0" max="0" value="0" aria-label="the year">
   <span id="chrn"></span>
 </div>
-<div id="stage" role="application" aria-label="the map of Arda; features are focusable">
+<div role="main" id="stage" role="application" aria-label="the map of Arda; features are focusable">
   <div id="nm"></div><div id="card"></div>
 </div>
 <p class="method" style="padding:10px 16px;font-size:12.5px">
@@ -147,7 +147,7 @@ const stage=document.getElementById('stage'),nmEl=document.getElementById('nm'),
       card=document.getElementById('card'),countEl=document.getElementById('count');
 let svg=null,vb=null,vb0=null;
 fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
-  // INLINE, NOT <img>: an <img>'s insides cannot be pointed at.
+  // INLINE, NOT <img alt="">: an <img alt="">'s insides cannot be pointed at.
   const doc=new DOMParser().parseFromString(txt,'image/svg+xml');
   svg=doc.documentElement;
   svg.removeAttribute('width'); svg.removeAttribute('height');

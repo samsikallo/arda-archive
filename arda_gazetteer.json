@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 463,
+ "n": 482,
  "places": {
   "adorn": {
    "ages": [
@@ -959,7 +959,7 @@
      "frm": 4892,
      "parent": "arthedain",
      "span": "T.A. 861–1974",
-     "to": 6006,
+     "to": 6005,
      "why": "the archive holds this containment; see the record's notes"
     },
     {
@@ -1171,7 +1171,7 @@
     "“These were the chief dwellings of the Númenóreans in Gondor, but other works marvellous and strong they built in the land in the days of their power, at the Argonath, and at Aglarond, and at Erech; and in the circle of Angrenost, which Men called Isengard, they made the Pinnacle of Orthanc of unbreakable stone.” — The Silmarillion, line 13087",
     "indexed by Christopher Tolkien as: Gates of, Pillars o f",
     "Evidence Table R19",
-    "“Romendakil was forced to withdraw his northern border east of Anduin to the Emyn Muil. He there built the Gates of Argonath with images of Isildur and Anarion beyond which no stranger should pass.” — HoME XII, The Peoples of Middle-earth [C]",
+    "“He there built the Gates of Argonath with images of Isildur and Anárion beyond which no stranger was allowed to come south without leave.” — HoME XII, The Peoples of Middle-earth [C]",
     "Gondor's own northern boundary-work, raised by Romendakil II about T.A. 1248 — twelve centuries before Calenardhon was granted to the Eorlingas in T.A. 2510",
     "also the Pillars of the Kings",
     "Rómendacil's giants of stone fencing the north-way of Gondor.",
@@ -1342,7 +1342,9 @@
    "ages": [
     "FA"
    ],
-   "cites": [],
+   "cites": [
+    "The Silmarillion [C]"
+   ],
    "coords": [
     {
      "conf": "H",
@@ -1355,7 +1357,9 @@
    "name_conf": null,
    "notes": [
     "spec FA: fords",
-    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
+    "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
+    "“Thence he passed through Dor Dínen, the Silent Land, and crossing the Arossiach (which signifies the Fords of Aros) came to the north marches of Beleriand, where dwelt the sons of Fëanor.” — The Silmarillion [C]",
+    "he letters Arossiach on the Beleriand plate; the Fords of Aros"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1378,7 +1382,7 @@
     "TA"
    ],
    "cites": [
-    "App A [I-H] — the archive's synthesis of canon, not a quotation",
+    "App A [C]",
     "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate"
    ],
    "containment": [
@@ -1402,7 +1406,7 @@
    "n": "Arthedain",
    "name_conf": "H",
    "notes": [
-    "Between Lhûn and Weather Hills (Baranduin its south-line): Fornost Erain on the North Downs the king-seat, Annúminas already forsaken; the Tower Hills and the Elostirion-stone westward. — App A [I-H] — the archive's synthesis of canon, not a quotation",
+    "Between Lhûn and Weather Hills (Baranduin its south-line): Fornost Erain on the North Downs the king-seat, Annúminas already forsaken; the Tower Hills and the Elostirion-stone westward. — App A [C]",
     "the realms model dates it T.A. 861–1974",
     "named within Arnor by the vector spec's own block for it",
     "the middle of the shape the archive draws"
@@ -2223,13 +2227,13 @@
     "TA"
    ],
    "cites": [
-    "LotR I.6–8 [I-H] — the archive's synthesis of canon, not a quotation"
+    "LotR I.6–8 [C]"
    ],
    "coords": [],
    "n": "The house of Tom Bombadil",
    "name_conf": "H",
    "notes": [
-    "The Old Forest and the Downs between Buckland's hedge and the Barrow-country — a bounded march older than every realm around it. — LotR I.6–8 [I-H] — the archive's synthesis of canon, not a quotation",
+    "The Old Forest and the Downs between Buckland's hedge and the Barrow-country — a bounded march older than every realm around it. — LotR I.6–8 [C]",
     "the realms model dates it 'Eldest' – enduring"
    ],
    "parents": [],
@@ -3045,6 +3049,28 @@
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
+  "cape balar": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "HoME XI, The War of the Jewels [C]"
+   ],
+   "coords": [],
+   "n": "Cape Balar",
+   "name_conf": "H",
+   "notes": [
+    "“§14 The whole extent of the coastal region from the Firth of Drengist south to Cape Balar is here named the Falas (cf.” — HoME XI, The War of the Jewels [C]",
+    "he letters Cape Balar on the Beleriand plate, at the southern end of the Falas"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "NATURAL_COAST"
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
+  },
   "caradhras": {
    "ages": [
     "TA"
@@ -3139,7 +3165,7 @@
     "TA"
    ],
    "cites": [
-    "App A; UT [I-H] — the archive's synthesis of canon, not a quotation",
+    "App A; UT [C]",
     "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate"
    ],
    "containment": [
@@ -3163,7 +3189,7 @@
    "n": "Cardolan",
    "name_conf": "H",
    "notes": [
-    "Minhiriath and the downs: Tyrn Gorthad (the Barrow-downs) its hallowed height, Tharbad its river-town shared with the south. — App A; UT [I-H] — the archive's synthesis of canon, not a quotation",
+    "Minhiriath and the downs: Tyrn Gorthad (the Barrow-downs) its hallowed height, Tharbad its river-town shared with the south. — App A; UT [C]",
     "the realms model dates it T.A. 861–1636",
     "named within Arnor by the vector spec's own block for it",
     "the middle of the shape the archive draws"
@@ -3622,7 +3648,7 @@
    ],
    "cites": [
     "G (Last Version); D Tuor",
-    "The Silmarillion, Of Tuor and the Fall of Gondolin [C]",
+    "Unfinished Tales [C]",
     "placed at Nevrast [I-H]: the text names the container, not a position within it"
    ],
    "coords": [
@@ -3637,7 +3663,7 @@
    "name_conf": "H",
    "notes": [
     "Evidence Table B9",
-    "“Thence a dark tunnel led beneath the mountains, and issued into Cirith Ninniach, the Rainbow Cleft, through which a turbulent water ran towards the sea.” — The Silmarillion, Of Tuor and the Fall of Gondolin [C]",
+    "“And on the fourth day the channel grew wider, and its walls lower and less sheer; but the river ran deeper and more strongly, for high hills now marched on either side, and fresh waters spilled from them into Cirith Ninniach over shimmering falls.” — Unfinished Tales [C]",
     "the cleft by which Tuor came down out of Dor-lómin to the western sea in Nevrast",
     "NOT ITS OWN POINT: this is the point of Nevrast, which contains it — the cleft issues towards that shore, and this is Nevrast's point"
    ],
@@ -4343,6 +4369,28 @@
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
+  "dor dinen": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "The Silmarillion [C]"
+   ],
+   "coords": [],
+   "n": "Dor Dínen",
+   "name_conf": "H",
+   "notes": [
+    "“Thence he passed through Dor Dínen, the Silent Land, and crossing the Arossiach (which signifies the Fords of Aros) came to the north marches of Beleriand, where dwelt the sons of Fëanor.” — The Silmarillion [C]",
+    "he letters Dor Dinen on the Beleriand plate, between the upper Esgalduin and Aros"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "POLITY_REGION"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
   "dor en ernil": {
    "ages": [
     "TA"
@@ -4491,7 +4539,7 @@
     "FA"
    ],
    "cites": [
-    "Silm 14; CoH 1 [I-H] — the archive's synthesis of canon, not a quotation",
+    "Silm 14; CoH 1 [C]",
     "drawn on the archive's vector map (REGIONS_FA); the name is attested 313 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
    "coords": [
@@ -4505,7 +4553,7 @@
    "n": "Dor-lómin (House of Hador)",
    "name_conf": "H",
    "notes": [
-    "Southern Hithlum under Ered Wethrin; Amon Darthir above Húrin's fields; cold, misted, horse-rearing country. — Silm 14; CoH 1 [I-H] — the archive's synthesis of canon, not a quotation",
+    "Southern Hithlum under Ered Wethrin; Amon Darthir above Húrin's fields; cold, misted, horse-rearing country. — Silm 14; CoH 1 [C]",
     "the realms model dates it F.A. c.416–495 (free); occupied to 587",
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared",
@@ -4550,7 +4598,7 @@
     "Taur-nu-Fuin"
    ],
    "cites": [
-    "Silm 14, 19 [I-H] — the archive's synthesis of canon, not a quotation",
+    "Silm 14, 19 [C]",
     "A ch14, ch18, ch19; HoME 3",
     "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
@@ -4565,7 +4613,7 @@
    "n": "Dorthonion",
    "name_conf": "H",
    "notes": [
-    "High pine-clad tableland between the passes of Sirion and Aglon, falling sheer to Ard-galen; Tarn Aeluin its hallowed lake. — Silm 14, 19 [I-H] — the archive's synthesis of canon, not a quotation",
+    "High pine-clad tableland between the passes of Sirion and Aglon, falling sheer to Ard-galen; Tarn Aeluin its hallowed lake. — Silm 14, 19 [C]",
     "the realms model dates it F.A. 7–455",
     "Evidence Table B15",
     "the middle of the shape the archive draws"
@@ -4612,7 +4660,7 @@
     "TA"
    ],
    "cites": [
-    "Hobbit 9 [I-H] — the archive's synthesis of canon, not a quotation",
+    "Hobbit 9 [C/refusal; map placement EXT/C-chart]",
     "B ch9; RC (absence)",
     "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
@@ -4627,7 +4675,7 @@
    "n": "Dorwinion",
    "name_conf": "L",
    "notes": [
-    "By the Sea of Rhûn's north-west (the map tradition); the corpus text gives only the wine and the river-route: of its people and their rule the corpus says nothing. — Hobbit 9 [I-H] — the archive's synthesis of canon, not a quotation",
+    "By the Sea of Rhûn's north-west (the map tradition); the corpus text gives only the wine and the river-route: of its people and rule, The attached documents do not provide enough information to answer this. — Hobbit 9 [C/refusal; map placement EXT/C-chart]",
     "the realms model dates it Third Age (attested)",
     "Evidence Table R14",
     "the middle of the shape the archive draws"
@@ -4860,7 +4908,7 @@
      "frm": -3800,
      "parent": "khazaddum",
      "span": "Y.T. – T.A. 1981 (as realm); colony 2989–94",
-     "to": 6012,
+     "to": 5990,
      "why": "named among khazaddum's own settlements in its dossier [C]"
     }
    ],
@@ -4912,6 +4960,29 @@
    "timeline": [],
    "types": [
     "MAN_MADE_FORTRESS"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "dwarf road": {
+   "ages": [
+    "FA",
+    "TA"
+   ],
+   "cites": [
+    "Unfinished Tales [C]"
+   ],
+   "coords": [],
+   "n": "Dwarf Road",
+   "name_conf": "H",
+   "notes": [
+    "“Men-i-Naugrim, the Dwarf Road, is the Old Forest Road described in The Hobbit, Chapter 7.” — Unfinished Tales [C]",
+    "he letters Dwarf Road on the Beleriand plate, running east to Ered Luin; Men-i-Naugrim"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "MAN_MADE_ROAD"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
@@ -5008,6 +5079,28 @@
    "types": [
     "POLITY_SUBREGION"
    ]
+  },
+  "east road": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "The Lord of the Rings [C]"
+   ],
+   "coords": [],
+   "n": "The East Road",
+   "name_conf": "H",
+   "notes": [
+    "“And what is more, the Bridge and the East Road near the borders will certainly be watched, whether any Rider gets into Buckland or not.” — The Lord of the Rings [C]",
+    "he letters GREAT EAST ROAD on the General Map; the text of The Lord of the Rings calls it the East Road, and the archive follows the text"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "MAN_MADE_ROAD"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "eastemnet": {
    "ages": [
@@ -6089,14 +6182,14 @@
     "Hollin"
    ],
    "cites": [
-    "LotR II.3; UT [I-H] — the archive's synthesis of canon, not a quotation",
+    "LotR II.3; UT [C]",
     "A RoP; C II.3; D G&C"
    ],
    "coords": [],
    "n": "Eregion",
    "name_conf": "H",
    "notes": [
-    "The holly-lands between Glanduin and Bruinen under the western faces of the Misty Mountains, gated to Khazad-dûm's West-door. — LotR II.3; UT [I-H] — the archive's synthesis of canon, not a quotation",
+    "The holly-lands between Glanduin and Bruinen under the western faces of the Misty Mountains, gated to Khazad-dûm's West-door. — LotR II.3; UT [C]",
     "the realms model dates it S.A. 750–1697",
     "Evidence Table E14"
    ],
@@ -6563,7 +6656,7 @@
     "YT"
    ],
    "cites": [
-    "Silm 14 [I-H] — the archive's synthesis of canon, not a quotation",
+    "Silm 14 [C]",
     "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
    "coords": [
@@ -6577,7 +6670,7 @@
    "n": "The Falas",
    "name_conf": "H",
    "notes": [
-    "The western shore-lands about the mouths of Brithon and Nenning; the two walled havens; Barad Nimras raised by Finrod against sea-assault that never came. — Silm 14 [I-H] — the archive's synthesis of canon, not a quotation",
+    "The western shore-lands about the mouths of Brithon and Nenning; the two walled havens; Barad Nimras raised by Finrod against sea-assault that never came. — Silm 14 [C]",
     "the realms model dates it Y.T. – F.A. 473",
     "the middle of the shape the archive draws"
    ],
@@ -6603,6 +6696,28 @@
     "POLITY_REALM"
    ],
    "unplaced": "a realm in its own right — nothing contains it"
+  },
+  "falls of sirion": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "The Silmarillion [C]"
+   ],
+   "coords": [],
+   "n": "Falls of Sirion",
+   "name_conf": "H",
+   "notes": [
+    "“Now Húrin journeyed eastward, and he came to the Meres of Twilight above the Falls of Sirion; and there he was taken by the Elves that guarded the western marches of Doriath, and brought before King Thingol in the Thousand Caves.” — The Silmarillion [C]",
+    "he letters Falls of Sirion on the Beleriand plate, where the river plunged underground"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "NATURAL_WATERFALL"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "fangorn": {
    "ages": [
@@ -6771,6 +6886,28 @@
      "when": "F.A. 587 (War of Wrath)"
     }
    ],
+   "types": [
+    "NATURAL_MARSH"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "fens of sirion": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "The Silmarillion [C]"
+   ],
+   "coords": [],
+   "n": "Fens of Sirion",
+   "name_conf": "H",
+   "notes": [
+    "“It is told in the Lay of Leithian that Beren passed through Doriath unhindered, and came at length to the region of the Twilight Meres, and the Fens of Sirion; and leaving Thingol’s land he climbed the hills above the Falls of Sirion, where the river plunged underground with great noise.” — The Silmarillion [C]",
+    "he letters Fens of Sirion on the Beleriand plate; the archive held Sirion and its Mouths and neither its Fens, its Falls nor its Gates"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
    "types": [
     "NATURAL_MARSH"
    ],
@@ -7153,7 +7290,7 @@
      "frm": 4892,
      "parent": "arthedain",
      "span": "T.A. 861–1974",
-     "to": 6006,
+     "to": 6005,
      "why": "the archive holds this containment; see the record's notes"
     }
    ],
@@ -7366,6 +7503,30 @@
    "types": [
     "MAN_MADE_VILLAGE"
    ]
+  },
+  "gates of sirion": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "A ch14; HoME 5 §113",
+    "The Silmarillion [C]"
+   ],
+   "coords": [],
+   "n": "Gates of Sirion",
+   "name_conf": "H",
+   "notes": [
+    "Evidence Table B28",
+    "“But some twenty-five leagues east of the gorge of Nargothrond Sirion fell from the north in a mighty fall below the Meres, and then he plunged suddenly underground into great tunnels that the weight of his falling waters delved; and he issued again three leagues southward with great noise and smoke through rocky arches at the foot of the hills which were called the Gates of Sirion.” — The Silmarillion [C]",
+    "he letters Gates of Sirion on the Beleriand plate, three leagues south of the Falls"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "gelion": {
    "ages": [
@@ -9072,7 +9233,7 @@
     "FA"
    ],
    "cites": [
-    "Silm 13–14 [I-H] — the archive's synthesis of canon, not a quotation",
+    "Silm 13–14 [C]",
     "A ch13, ch14; HoME 5",
     "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
@@ -9087,7 +9248,7 @@
    "n": "Hithlum",
    "name_conf": "H",
    "notes": [
-    "Between Ered Wethrin and Ered Lómin, cool and rain-swept, holding Lake Mithrim; Dor-lómin its southern fief; the fortress Barad Eithel at Sirion's well its eastern door. — Silm 13–14 [I-H] — the archive's synthesis of canon, not a quotation",
+    "Between Ered Wethrin and Ered Lómin, cool and rain-swept, holding Lake Mithrim; Dor-lómin its southern fief; the fortress Barad Eithel at Sirion's well its eastern door. — Silm 13–14 [C]",
     "the realms model dates it F.A. 1–473 (Elvish rule)",
     "Evidence Table B6",
     "the middle of the shape the archive draws"
@@ -9946,7 +10107,7 @@
     "the Black Pit"
    ],
    "cites": [
-    "LotR II.3–6; App A III [I-H] — the archive's synthesis of canon, not a quotation",
+    "LotR II.3–6; App A III [C]",
     "LotR II.6, from the Dimrill Dale [C]",
     "placed at Caradhras [I-H]: the text names the container, not a position within it"
    ],
@@ -9961,7 +10122,7 @@
    "n": "Khazad-dûm",
    "name_conf": "H",
    "notes": [
-    "Under Caradhras, Celebdil and Fanuidhol, from the East-gate above Azanulbizar to the Doors of Durin on Sirannon; the Endless Stair from deepest dungeon to Durin's Tower; Kheled-zâram the crown-mirror. — LotR II.3–6; App A III [I-H] — the archive's synthesis of canon, not a quotation",
+    "Under Caradhras, Celebdil and Fanuidhol, from the East-gate above Azanulbizar to the Doors of Durin on Sirannon; the Endless Stair from deepest dungeon to Durin's Tower; Kheled-zâram the crown-mirror. — LotR II.3–6; App A III [C]",
     "the realms model dates it Y.T. – T.A. 1981 (as realm); colony 2989–94",
     "“above which three white peaks were shining: Celebdil, Fanuidhol, Caradhras, the Mountains of Moria.” — LotR II.6, from the Dimrill Dale [C]",
     "the delving beneath the three peaks; the archive draws the mountains and had never placed the halls under them",
@@ -11040,6 +11201,50 @@
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
+  "march of maedhros": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "The Silmarillion [C]"
+   ],
+   "coords": [],
+   "n": "March of Maedhros",
+   "name_conf": "H",
+   "notes": [
+    "“That region was named thereafter the March of Maedhros; for northwards there was little defence of hill or river against assault from Angband.” — The Silmarillion [C]",
+    "he letters March of Maedhros on the Beleriand plate, north-east of Himring"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "POLITY_REGION"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "marshes of nevrast": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "HoME XI, The War of the Jewels [C]"
+   ],
+   "coords": [],
+   "n": "Marshes of Nevrast",
+   "name_conf": "H",
+   "notes": [
+    "“(10) D 2–4 Both Nevrast and the Marshes of Nevrast were first written Nivrost (see p.” — HoME XI, The War of the Jewels [C]",
+    "he letters Marshes of Nevrast on the Beleriand plate. THE ONLY MENTION THE CORPUS MAKES OF THIS NAME IS CHRISTOPHER'S OWN NOTE ON THE MAP'S LETTERING, so the name is attested and nothing is told of the place itself"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "NATURAL_MARSH"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
   "menegroth": {
    "ages": [
     "FA"
@@ -11896,7 +12101,7 @@
      "frm": -3800,
      "parent": "khazaddum",
      "span": "Y.T. – T.A. 1981 (as realm); colony 2989–94",
-     "to": 6012,
+     "to": 5990,
      "why": "the archive holds this containment; see the record's notes"
     }
    ],
@@ -12056,6 +12261,28 @@
     "NATURAL_PEAK",
     "MAN_MADE_FORTRESS"
    ]
+  },
+  "mountains of mirkwood": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "Unfinished Tales [C]"
+   ],
+   "coords": [],
+   "n": "Mountains of Mirkwood",
+   "name_conf": "H",
+   "notes": [
+    "“In later days when the shadow of Sauron spread through Greenwood the Great, and changed its name from Eryn Galen to Taur-nu-Fuin (translated Mirkwood), The Emyn Duir became a haunt of many of his most evil creatures, and were called Emyn-nu-Fuin, the Mountains of Mirkwood.” — Unfinished Tales [C]",
+    "he letters Mountains of Mirkwood on the General Map; Emyn Duir, later Emyn-nu-Fuin"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "NATURAL_MOUNTAIN_RANGE"
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "mountains of shadow": {
    "ages": [],
@@ -12659,7 +12886,7 @@
      "frm": -3800,
      "parent": "khazaddum",
      "span": "Y.T. – T.A. 1981 (as realm); colony 2989–94",
-     "to": 6012,
+     "to": 5990,
      "why": "the archive holds this containment; see the record's notes"
     },
     {
@@ -12817,14 +13044,14 @@
     "Atalantë"
    ],
    "cites": [
-    "UT, Description of Númenor [I-H] — the archive's synthesis of canon, not a quotation",
+    "UT, Description of Númenor [C]",
     "D (Description); I (Land & Beasts); H"
    ],
    "coords": [],
    "n": "Númenor",
    "name_conf": "H",
    "notes": [
-    "The five-lobed star-isle Elenna, Meneltarma at its heart, Armenelos and the haven Rómenna eastward, Andúnië west, Eldalondë the green; described region by region in UT's 'Description' — the corpus's most complete political geography. — UT, Description of Númenor [I-H] — the archive's synthesis of canon, not a quotation",
+    "The five-lobed star-isle Elenna, Meneltarma at its heart, Armenelos and the haven Rómenna eastward, Andúnië west, Eldalondë the green; described region by region in UT's 'Description' — the corpus's most complete political geography. — UT, Description of Númenor [C]",
     "the realms model dates it S.A. 32–3319",
     "Evidence Table N1"
    ],
@@ -13551,6 +13778,52 @@
     "POLITY_SUBREGION"
    ]
   },
+  "ramdal": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "The Silmarillion [C]"
+   ],
+   "coords": [],
+   "n": "Ramdal",
+   "name_conf": "H",
+   "notes": [
+    "“This dividing fall was named Andram, the Long Wall, from Nargothrond to Ramdal, the Wall’s End, in East Beleriand.” — The Silmarillion [C]",
+    "he letters Ramdal on the Beleriand plate at the east end of the Andram"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "MAN_MADE_LANDMARK"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "rauros": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "C II.9–III.1; RC[T]",
+    "The Lord of the Rings [C]"
+   ],
+   "coords": [],
+   "n": "Rauros",
+   "name_conf": "H",
+   "notes": [
+    "Evidence Table R19",
+    "“There it casts its arms about the steep shores of the isle, and falls then with a great noise and smoke over the cataracts of Rauros down into the Nindalf, the Wetwang as it is called in your tongue.” — The Lord of the Rings [C]",
+    "he letters RAUROS on the General Map, at the fall between Nen Hithoel and the Nindalf"
+   ],
+   "parents": [],
+   "place_conf": "M",
+   "timeline": [],
+   "types": [
+    "NATURAL_WATERFALL"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
   "rerir": {
    "ages": [],
    "aka": [
@@ -13723,7 +13996,7 @@
     "TA"
    ],
    "cites": [
-    "App A; maps [I-H] — the archive's synthesis of canon, not a quotation",
+    "App A; maps [C]",
     "C App A; HoME 12",
     "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
@@ -13738,7 +14011,7 @@
    "n": "Rhûn & the Easterling powers",
    "name_conf": "H",
    "notes": [
-    "The inland sea of Rhûn with its ash-forests and steppes beyond the map's edge — the corpus shows only the western shore of an eastern world. — App A; maps [I-H] — the archive's synthesis of canon, not a quotation",
+    "The inland sea of Rhûn with its ash-forests and steppes beyond the map's edge — the corpus shows only the western shore of an eastern world. — App A; maps [C]",
     "the realms model dates it First Age origins – enduring",
     "Evidence Table G32",
     "the middle of the shape the archive draws"
@@ -13799,6 +14072,28 @@
     "POLITY_REGION"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "ringlo": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "The Silmarillion [C]"
+   ],
+   "coords": [],
+   "n": "Ringló",
+   "name_conf": "H",
+   "notes": [
+    "“ring ‘cold, chill’ in Ringil, Ringwil, Himring; also in the river Ringló in Gondor, and in Ringarë, Quenya name of the last month of the year (The Lord of the Rings Appendix D).” — The Silmarillion [C]",
+    "he letters R. RINGLO on the General Map, in Gondor"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "NATURAL_RIVER"
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "rivendell": {
    "ages": [
@@ -13915,6 +14210,28 @@
     "MAN_MADE_FORTRESS"
    ],
    "unplaced": "runs through more than one realm — a single parent would be false"
+  },
+  "rivils well": {
+   "ages": [
+    "FA"
+   ],
+   "cites": [
+    "The Silmarillion [C]"
+   ],
+   "coords": [],
+   "n": "Rivil's Well",
+   "name_conf": "H",
+   "notes": [
+    "“First therefore he pursued the Orcs that had slain his father and his kinsmen, and he found their camp by night at Rivil’s Well above the Fen of Serech, and because of his woodcraft he came near to their fire unseen.” — The Silmarillion [C]",
+    "he letters Rivil's Well on the Beleriand plate; the archive held the river Rivil and not its spring"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "NATURAL_SPRING"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "rohan": {
    "ages": [
@@ -14188,6 +14505,28 @@
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
+  "sarn gebir": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "The Lord of the Rings [C]"
+   ],
+   "coords": [],
+   "n": "Sarn Gebir",
+   "name_conf": "H",
+   "notes": [
+    "“You will come to the rapids of Sarn Gebir, and maybe at last to the great falls of Rauros where the River thunders down from Nen Hithoel; and there are other perils.” — The Lord of the Rings [C]",
+    "he letters Sarn Gebir on the General Map, on Anduin above Rauros"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "NATURAL_RAPIDS"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
   "scary": {
    "ages": [],
    "cites": [
@@ -14333,6 +14672,28 @@
    ],
    "unplaced": "runs through more than one realm — a single parent would be false"
   },
+  "silverlode": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "The Lord of the Rings [C]"
+   ],
+   "coords": [],
+   "n": "Silverlode",
+   "name_conf": "H",
+   "notes": [
+    "“There lies the Mirrormere, and there the River Silverlode rises in its icy springs.” — The Lord of the Rings [C]",
+    "he letters R. SILVERLODE on the General Map; the archive held Celebrant and not this name"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "NATURAL_RIVER"
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
+  },
   "sirannon": {
    "ages": [
     "SA",
@@ -14348,7 +14709,7 @@
      "frm": -3800,
      "parent": "khazaddum",
      "span": "Y.T. – T.A. 1981 (as realm); colony 2989–94",
-     "to": 6012,
+     "to": 5990,
      "why": "within khazaddum, per Christopher Tolkien's index gloss [I-M]"
     }
    ],
@@ -14560,7 +14921,7 @@
      "frm": -3800,
      "parent": "khazaddum",
      "span": "Y.T. – T.A. 1981 (as realm); colony 2989–94",
-     "to": 6012,
+     "to": 5990,
      "why": "within khazaddum, per Christopher Tolkien's index gloss [I-M]"
     }
    ],
@@ -15730,7 +16091,7 @@
     "YT"
    ],
    "cites": [
-    "Silm 5 [I-H] — the archive's synthesis of canon, not a quotation",
+    "Silm 5 [C]",
     "A ch5, ch9"
    ],
    "containment": [
@@ -15747,7 +16108,7 @@
    "n": "Tirion upon Túna",
    "name_conf": "H",
    "notes": [
-    "Set on the green hill Túna in the Calacirya, the only pass of light through the Pelóri; its topmost tower the Mindon Eldaliéva, whose silver lamp shone far into the mists of the sea; the white ways dusted with diamond-dust. — Silm 5 [I-H] — the archive's synthesis of canon, not a quotation",
+    "Set on the green hill Túna in the Calacirya, the only pass of light through the Pelóri; its topmost tower the Mindon Eldaliéva, whose silver lamp shone far into the mists of the sea; the white ways dusted with diamond-dust. — Silm 5 [C]",
     "the realms model dates it Y.T. →",
     "Evidence Table V7",
     "named among valinor's own settlements in its dossier [C]"
@@ -15968,6 +16329,31 @@
     "MAN_MADE_FORTRESS"
    ]
   },
+  "tolfalas": {
+   "ages": [
+    "SA",
+    "TA"
+   ],
+   "cites": [
+    "HoME 12 (unique statement); D Cirion",
+    "HoME XII, The Peoples of Middle-earth [C]"
+   ],
+   "coords": [],
+   "n": "Tolfalas",
+   "name_conf": "M",
+   "notes": [
+    "Evidence Table G28",
+    "“But the Isle of Tolfalas was almost destroyed, and was left at last like a barren and lonely mountain in the water not far from the issue of the River.” — HoME XII, The Peoples of Middle-earth [C]",
+    "he letters TOLFALAS on the General Map, in the Bay of Belfalas"
+   ],
+   "parents": [],
+   "place_conf": "H",
+   "timeline": [],
+   "types": [
+    "NATURAL_ISLAND"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
   "tom bombadil s house": {
    "ages": [
     "TA"
@@ -16062,7 +16448,7 @@
      "frm": 4892,
      "parent": "arthedain",
      "span": "T.A. 861–1974",
-     "to": 6006,
+     "to": 6005,
      "why": "the archive holds this containment; see the record's notes"
     }
    ],
@@ -16451,6 +16837,29 @@
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
+  "udun": {
+   "ages": [
+    "SA",
+    "TA"
+   ],
+   "cites": [
+    "The Silmarillion [C]"
+   ],
+   "coords": [],
+   "n": "Udûn",
+   "name_conf": "H",
+   "notes": [
+    "“Utumno, Sindarin Udûn (Gandalf in Moria named the Balrog ‘Flame of Udûn’), a name afterwards used of the deep dale in Mordor between the Morannon and the Isenmouthe.” — The Silmarillion [C]",
+    "he letters UDUN on the General Map between the Morannon and the Isenmouthe; NOT Utumno, which shares the Sindarin name"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "NATURAL_VALLEY"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
   "umbar": {
    "ages": [
     "SA",
@@ -16688,15 +17097,15 @@
     "the Undying Lands"
    ],
    "cites": [
-    "Silm 1, 5 [I-H] — the archive's synthesis of canon, not a quotation",
-    "Silm 1 [I-H] — the archive's synthesis of canon, not a quotation"
+    "Silm 1, 5 [C]",
+    "Silm 1 [C]"
    ],
    "coords": [],
    "n": "Valinor",
    "name_conf": "H",
    "notes": [
-    "Beyond Belegaer in the uttermost West, walled by the Pelóri, highest of mountains, raised as a fence after Melkor cast down the Lamps; the Calacirya cut to let the Trees' light reach the coast. — Silm 1, 5 [I-H] — the archive's synthesis of canon, not a quotation",
-    "Valmar of many bells at the plain's heart; the green mound Ezellohar of the Two Trees; Máhanaxar, the Ring of Doom, before its gate. — Silm 1 [I-H] — the archive's synthesis of canon, not a quotation",
+    "Beyond Belegaer in the uttermost West, walled by the Pelóri, highest of mountains, raised as a fence after Melkor cast down the Lamps; the Calacirya cut to let the Trees' light reach the coast. — Silm 1, 5 [C]",
+    "Valmar of many bells at the plain's heart; the green mound Ezellohar of the Two Trees; Máhanaxar, the Ring of Doom, before its gate. — Silm 1 [C]",
     "the realms model dates it Y.T. → beyond the world's change"
    ],
    "parents": [],
@@ -16890,7 +17299,7 @@
      "frm": 4892,
      "parent": "arthedain",
      "span": "T.A. 861–1974",
-     "to": 6006,
+     "to": 6005,
      "why": "the archive holds this containment; see the record's notes"
     }
    ],
@@ -16998,7 +17407,7 @@
      "frm": -3800,
      "parent": "khazaddum",
      "span": "Y.T. – T.A. 1981 (as realm); colony 2989–94",
-     "to": 6012,
+     "to": 5990,
      "why": "named among khazaddum's own settlements in its dossier [C]"
     }
    ],
@@ -17163,6 +17572,28 @@
    "types": [
     "POLITY_SUBREGION"
    ]
+  },
+  "wetwang": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "The Lord of the Rings [C]"
+   ],
+   "coords": [],
+   "n": "Wetwang",
+   "name_conf": "H",
+   "notes": [
+    "“There it casts its arms about the steep shores of the isle, and falls then with a great noise and smoke over the cataracts of Rauros down into the Nindalf, the Wetwang as it is called in your tongue.” — The Lord of the Rings [C]",
+    "he letters Wetwang on the General Map; the archive held Nindalf and not its Westron name"
+   ],
+   "parents": [],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "NATURAL_MARSH"
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "white downs": {
    "ages": [
