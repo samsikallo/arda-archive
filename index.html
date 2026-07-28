@@ -37,7 +37,7 @@ h2{font-variant:small-caps;font-weight:normal;letter-spacing:.1em;color:#5a4626;
 style="width:100%;box-sizing:border-box;padding:11px 18px;font:15px Georgia,serif;border:1.5px solid #8a7444;border-radius:24px;background:#fffdf6;color:#3a3226;box-shadow:0 4px 16px rgba(0,0,0,.35)">
 <div id="usr" style="display:none;position:absolute;left:0;right:0;top:52px;background:#fdfaf2;border:1px solid #b0a58e;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.4);max-height:420px;overflow-y:auto;text-align:left;z-index:20"></div>
 </div>
-<div style="margin-top:8px;font-size:11px;color:#8a7a52">1,890 things across the halls · try “Galadriel”, “Nirnaeth”, “mellon”, “√GAL”, “Erebor”</div>
+<div id="uscap" style="margin-top:8px;font-size:11px;color:#8a7a52">3,035 things across the halls · try “Galadriel”, “Nirnaeth”, “mellon”, “√GAL”, “Erebor”</div>
 <div class="sub">Everything of Tolkien's world in one living platform — its lands, peoples, armies, years, bloodlines, tongues and letters — built from the forty-nine books of the corpus, every claim cited, every guess labeled, every gap named rather than filled.</div>
 </div>
 <div class="wrap" role="main" id="main">
@@ -173,7 +173,13 @@ const TLBL={person:"Family Trees & Records",event:"Chronology",battle:"Armies",b
 let IDX=null;
 const nrm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
 const usq=document.getElementById("usq"),usr=document.getElementById("usr");
-usq.addEventListener("focus",()=>{if(!IDX)fetch("arda_search.json").then(r=>r.json()).then(d=>{IDX=d.map(e=>[e[0],e[1],e[2],e[3],nrm(e[1]),nrm(e[2])]);});});
+// THE NUMBER UNDER THE BOX IS COUNTED FROM THE FILE THE BOX SEARCHES. It was typed --
+// "1,890 things across the halls" -- eleven lines above this fetch, while the file held
+// 3,035: the front page understating the archive by 1,145, in its own voice, about its
+// own size. The static 3,035 above is correct today and is checked by map/count_check.py
+// ("things" is in its CLAIMS table now); this line makes it true at load whatever the
+// data does next, so the caption cannot drift from the box again.
+usq.addEventListener("focus",()=>{if(!IDX)fetch("arda_search.json").then(r=>r.json()).then(d=>{IDX=d.map(e=>[e[0],e[1],e[2],e[3],nrm(e[1]),nrm(e[2])]);const c=document.getElementById("uscap");if(c)c.textContent=c.textContent.replace(/^[\d,]+/,d.length.toLocaleString("en-US"));});});
 usq.addEventListener("input",()=>{
 if(!IDX||usq.value.trim().length<2){usr.style.display="none";return}
 const q=nrm(usq.value.trim());
