@@ -84,6 +84,12 @@
  .hisname .hit{fill:transparent;cursor:pointer}
  .hisname.on text{fill:var(--red)}
  .hisname:focus{outline:none}
+ /* A MEMBER OF THE CHOSEN REALM. Lit, and visibly not the same as the thing under the
+    pointer: the archive is showing what a text puts inside a realm, not asserting a border. */
+ .member [stroke]:not([stroke="none"]):not([stroke="transparent"]){stroke:#1d6a8f!important}
+ .member [fill]:not([fill="none"]){fill:#1d6a8f!important}
+ .member text{fill:#1d6a8f!important}
+ circle.member{fill:#1d6a8f!important;stroke:#fbf6e8!important}
 </style></head><body><a class="a-skip" href="#main">skip to content</a>
 <div class="hdr"><h1>The Map of Arda</h1><span style="flex:1"></span>
 <nav id="ardanav" aria-label="Archive halls"></nav>
@@ -155,7 +161,8 @@ fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
   stage.insertBefore(svg,nmEl);
   const b=svg.getAttribute('viewBox').split(/\s+/).map(Number);
   vb={x:b[0],y:b[1],w:b[2],h:b[3]}; vb0=Object.assign({},vb);
-  wire(); apply('all'); loadRoads(); loadChrono(); loadUndrawn(); loadTraced(); goHash();
+  wire(); apply('all'); loadRoads(); loadChrono(); loadUndrawn(); loadTraced();
+  loadRealms(); goHash();
 });
 // ---- CHRISTOPHER TOLKIEN'S OWN LINEWORK, traced from the plates and drawn here as vectors.
 // Not a picture of his map: his paths, in this page. His LETTERING is not reproduced -- he
@@ -263,6 +270,66 @@ function loadTraced(){
  }
 }
 
+// ---- THE REALMS: THEIR MEMBERS, NEVER THEIR BORDERS.
+// The promise was "realms as a layer, drawn only where a border is attested", and the answer
+// to that condition is: almost nowhere. The corpus gives an extent in words -- "from the
+// Anduin to the Sea" -- which names what a border runs BETWEEN and never gives a line, and
+// the one sheet that does draw realm polygons measured 44 miles out. So no boundary is drawn.
+// Opening a realm lights the places the corpus puts inside it, each a containment edge the
+// gazetteer already holds with its citation. The shape a reader infers from those lit places
+// is the reader's own inference, which is exactly what a drawn line would stop it being.
+let REALMS={};
+function loadRealms(){
+  fetch('arda_realms_layer.json').then(r=>r.json()).then(R=>{
+    R.realms.forEach(x=>REALMS[x.key]=x);
+    // A CARD MAY ALREADY BE OPEN WHEN THE DATA ARRIVES. A deep link opens Gondor's card in
+    // the same tick this fetch is issued, so the realm was unknown at the moment the card was
+    // built and the reader saw a card that said nothing about the seventeen places inside it.
+    // The layer decorates what is already on screen rather than only what comes after it --
+    // the same lesson the deep links taught: arrival is the moment that matters.
+    if(cardFor){
+      const keys=cardFor.dataset.payload
+        ? JSON.parse(cardFor.dataset.payload).at.map(a=>a.key)
+        : [cardFor.dataset.key||''];
+      if(keys.some(k=>REALMS[k])) cardFor.dispatchEvent(new MouseEvent('click',{bubbles:true}));
+    }
+  }).catch(()=>{});
+}
+function litFor(key){
+  const r=REALMS[key]; if(!r) return [];
+  const out=[];
+  r.members.forEach(m=>{
+    svg.querySelectorAll('.feat[data-key="'+CSS.escape(m.key)+'"]').forEach(e=>out.push(e));
+    document.querySelectorAll('.hisname[data-key="'+CSS.escape(m.key)+'"]').forEach(e=>out.push(e));
+    const u=document.getElementById('und');
+    if(u) u.querySelectorAll('circle').forEach(c=>{
+      try{ if(JSON.parse(c.dataset.payload).at.some(a=>a.key===m.key)) out.push(c); }catch(e){}
+    });
+  });
+  return out;
+}
+// THERE ARE TWO CARD BUILDERS AND THE DECORATION MUST KNOW BOTH.
+// openCard serves the drawn features and the names on his plates; the unmapped-places layer
+// builds its own card and never calls it. Gondor, Rohan, Arnor and most of the realms live
+// in that layer -- so a realm note written only into openCard reached exactly the cards that
+// were never going to be realms.
+function realmNote(keys){
+  const k=(keys||[]).find(x=>REALMS[x]);
+  if(!k){ clearLit(); return ''; }
+  const R=REALMS[k], n=lightRealm(k);
+  return '<div class="c">'+n+' of '+R.n_members
+    +' places the corpus puts inside it are lit on the sheet.<br>'
+    +'<i>No border is drawn: the corpus gives this realm\'s extent in words, not a line.</i></div>';
+}
+let litNow=[];
+function clearLit(){ litNow.forEach(e=>e.classList.remove('on','member')); litNow=[]; }
+function lightRealm(key){
+  clearLit();
+  litNow=litFor(key);
+  litNow.forEach(e=>e.classList.add('member'));
+  return litNow.length;
+}
+
 // ---- the places the archive knows and does not draw
 function loadUndrawn(){
  fetch('arda_undrawn.json').then(r=>r.json()).then(U=>{
@@ -297,10 +364,20 @@ function loadUndrawn(){
             +'<a class="go" href="place.html#'+encodeURIComponent(a.key)+'">the full record &#8594;</a>'
           ).join('<hr style="border:0;border-top:1px solid rgba(176,165,142,.5);margin:9px 0">')
         +many+soft;
+      // the same realm note, on the layer where most of the realms actually live
+      try{ cardFor=c; card.innerHTML+=realmNote(P.at.map(a=>a.key)); }
+      catch(err){ console.warn('realm layer:',err); }
       card.style.display='block';
+  // A REALM LIGHTS WHAT THE CORPUS PUTS INSIDE IT.
+  // AFTER the card is shown, and inside a try: this is a DECORATION, and a decoration that
+  // can suppress the thing it decorates is worse than no decoration. Placed before the
+  // display line, one throw in here left every card invisible -- the map opened on Gondor
+  // and said nothing at all, and no error reached the reader.
+  try{ card.innerHTML+=realmNote([d.key||'']); }
+  catch(err){ console.warn('realm layer:',err); }
       card.style.left=Math.min(e.clientX-r.left+16,stage.clientWidth-286)+'px';
       card.style.top=Math.min(e.clientY-r.top+12,Math.max(6,stage.clientHeight-160))+'px';
-      document.getElementById('cx').onclick=()=>card.style.display='none';});
+      document.getElementById('cx').onclick=()=>{card.style.display='none';clearLit();cardFor=null;};});
   });
   svg.appendChild(g);
   const b=document.getElementById('tU');
@@ -396,10 +473,18 @@ function loadRoads(){
       card.innerHTML='<span class="x" id="cx">&times;</span><h3>'+(c.dataset.j||'a battle')+'</h3>'
         +'<div class="k">'+c.dataset.label+'</div>'
         +(c.dataset.key?'<a class="go" href="place.html#'+c.dataset.key+'">the full record &#8594;</a>':'');
-      card.style.display='block';
+      // A REALM LIGHTS WHAT THE CORPUS PUTS INSIDE IT
+  const R=REALMS[d.key||''];
+  if(R){
+    const n=lightRealm(d.key);
+    card.innerHTML+='<div class="c">'+n+' of '+R.n_members
+      +' places the corpus puts inside it are lit on the sheet.<br>'
+      +'<i>No border is drawn: the corpus gives this realm\'s extent in words, not in a line.</i></div>';
+  } else clearLit();
+  card.style.display='block';
       card.style.left=Math.min(e.clientX-r.left+16,stage.clientWidth-286)+'px';
       card.style.top=(e.clientY-r.top+12)+'px';
-      document.getElementById('cx').onclick=()=>card.style.display='none';});
+      document.getElementById('cx').onclick=()=>{card.style.display='none';clearLit();cardFor=null;};});
   });
   const stat=J.n_placed+' of '+J.n_stages+' stages placed';
   document.getElementById('tR').title='the roads: '+stat;
@@ -523,7 +608,9 @@ function showName(g,e){
   nmEl.style.left=Math.max(2,Math.min(x,stage.clientWidth-nmEl.offsetWidth-4))+'px';
   nmEl.style.top=Math.max(2,y)+'px';
 }
+let cardFor=null;
 function openCard(g,e){
+  cardFor=g;
   const d=g.dataset;
   const kind=(d.kind||'').toLowerCase().replace(/_/g,' ').replace(/,/g,' &middot; ');
   const conf=d.conf==='M'?'the archive infers this placing; the name may still be Tolkien’s'
@@ -534,6 +621,14 @@ function openCard(g,e){
     +(conf?'<div class="c">'+conf+'</div>':'')
     +(d.key?'<a class="go" href="place.html#'+d.key+'">the full record &#8594;</a>'
            :'<div class="c">a label of the draughtsman’s, not a place the archive holds</div>');
+  // A REALM LIGHTS WHAT THE CORPUS PUTS INSIDE IT
+  const R=REALMS[d.key||''];
+  if(R){
+    const n=lightRealm(d.key);
+    card.innerHTML+='<div class="c">'+n+' of '+R.n_members
+      +' places the corpus puts inside it are lit on the sheet.<br>'
+      +'<i>No border is drawn: the corpus gives this realm\'s extent in words, not in a line.</i></div>';
+  } else clearLit();
   card.style.display='block';
   const r=stage.getBoundingClientRect(),b=g.getBoundingClientRect();
   let x=(e?e.clientX-r.left:b.x-r.x+b.width/2)+16, y=(e?e.clientY-r.top:b.y-r.y)+12;
@@ -541,10 +636,10 @@ function openCard(g,e){
   if(x+card.offsetWidth>stage.clientWidth-6) x=Math.max(6,x-card.offsetWidth-32);
   if(y+card.offsetHeight>stage.clientHeight-6) y=Math.max(6,stage.clientHeight-card.offsetHeight-6);
   card.style.left=x+'px'; card.style.top=y+'px';
-  document.getElementById('cx').onclick=()=>card.style.display='none';
+  document.getElementById('cx').onclick=()=>{card.style.display='none';clearLit();cardFor=null;};
 }
 stage.addEventListener('click',e=>{if(!e.target.closest('.feat')&&!e.target.closest('.hisname')&&!e.target.closest('#card'))card.style.display='none'});
-addEventListener('keydown',e=>{if(e.key==='Escape')card.style.display='none'});
+addEventListener('keydown',e=>{if(e.key==='Escape'){card.style.display='none';clearLit();}});
 // ---- pan and zoom: a viewBox, not a tile server
 let drag=null, dragging=false;
 stage.addEventListener('pointerdown',e=>{if(e.target.closest('.feat')||e.target.closest('.hisname'))return;
