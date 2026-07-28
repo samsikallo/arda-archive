@@ -22,3 +22,32 @@ A language model cannot truthfully claim to have re-read five million words with
 - **Faramir's death**: previously open-ended. PM ('The Heirs of Elendil' commentary) dates it in the redrawn Dol Amroth genealogy: **3103 = F.A. 83** — applied as [C] to the family trees and the chronology.
 - **Éowyn's death**: no year anywhere in the corpus (a rejected WotR draft killed her on the Pelennor). Estimated **c. F.o.A. 65 [I-L]** from Rohirric royal spans (Théoden 71, Éomer 93) and her line's Lossarnach strain; labeled as estimate in both halls.
 - **realms.html regression**: the artifacts-header cloning broke after the nav rework (regex over-capture → truncated script). Root-cause fixed by a canonical header partial (map/hdr_partial.html); console-level QA (map/qa_console.sh) added — the DOM-grep method could not see this error class.
+
+## Addendum (2026-07-28) — what this audit covered, and what the archive holds now
+
+The figures above are the state of the archive on **23 July 2026**, the day this
+audit ran. They are kept, because a history is meant to keep its numbers. They no
+longer describe the archive, and the front page used to state one of them in the
+present tense.
+
+| audited | then | counted today |
+|---|---|---|
+| chronology event-years | 105 | **111** — `arda_chronology.json`, every event carrying a year |
+| genealogy birth/death-years | 390 | **407** of 441 persons carry a birth or a death |
+| campaign-years | 26 | **30** — `arda_armies.json` |
+| the corpus it was checked against | 28 volumes, 5,615,333 words | **49 texts, 6,885,537 words** — `CORPUS_INDEX.md`, `corpus.html` |
+
+So at least six chronology event-years, seventeen genealogy years and four
+campaigns have been added since, and were never part of the 521. Nothing above is
+withdrawn: 521 dated claims *were* checked and 483 verified directly, against the
+corpus as it then stood. What is withdrawn is the present tense — `index.html` now
+dates this figure instead of offering it as the archive's current position, and
+the same line already states the corpus correctly at 49 texts and 6.87M words, so
+the page no longer contradicts itself in one sentence.
+
+`map/recheck_audits.py` re-puts 45 **textual** claims from these audits to the
+matcher and reports 45 of 45 standing, which is real and passes honestly. It does
+not look at a single one of the audit's numbers; these four were counted by hand
+from the datasets.
+
+Found by the Adversary session, 2026-07-28.
