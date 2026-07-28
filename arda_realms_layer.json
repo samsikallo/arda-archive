@@ -1,5 +1,5 @@
 {
- "n_edges": 109,
+ "n_edges": 106,
  "n_realms": 31,
  "note": "A realm is shown by the places the corpus puts inside it, and NEVER by a drawn border. The corpus describes an extent in words -- 'from the Anduin to the Sea' -- which names what a border runs between and does not give a line; the one sheet that does draw realm polygons has been measured at 44 miles out. The shape a reader infers from the lit places is the reader's own inference, not the archive's assertion. Only members the map can actually show are counted.",
  "realms": [
@@ -326,50 +326,6 @@
   },
   {
    "ages": "SA,TA",
-   "bounded_by": [],
-   "bounds_cite": null,
-   "bounds_quote": null,
-   "bounds_unheld": [],
-   "key": "arnor",
-   "kind": "POLITY_REALM",
-   "members": [
-    {
-     "key": "annuminas",
-     "name": "Annúminas",
-     "where": "sheet"
-    },
-    {
-     "key": "arthedain",
-     "name": "Arthedain",
-     "where": "unmapped"
-    },
-    {
-     "key": "cardolan",
-     "name": "Cardolan",
-     "where": "unmapped"
-    },
-    {
-     "key": "rhudaur",
-     "name": "Rhudaur",
-     "where": "unmapped"
-    },
-    {
-     "key": "tower hills",
-     "name": "Tower Hills",
-     "where": "sheet"
-    },
-    {
-     "key": "weathertop",
-     "name": "Weathertop",
-     "where": "sheet"
-    }
-   ],
-   "n_members": 6,
-   "n_shown": 6,
-   "name": "Arnor"
-  },
-  {
-   "ages": "SA,TA",
    "bounded_by": [
     {
      "key": "gulf of lhun",
@@ -528,6 +484,35 @@
    "n_members": 4,
    "n_shown": 4,
    "name": "Rhudaur"
+  },
+  {
+   "ages": "SA,TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "arnor",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "annuminas",
+     "name": "Annúminas",
+     "where": "sheet"
+    },
+    {
+     "key": "tower hills",
+     "name": "Tower Hills",
+     "where": "sheet"
+    },
+    {
+     "key": "weathertop",
+     "name": "Weathertop",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 3,
+   "n_shown": 3,
+   "name": "Arnor"
   },
   {
    "ages": "FA",

@@ -1423,17 +1423,8 @@
    ],
    "cites": [
     "App A [C]",
-    "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate"
-   ],
-   "containment": [
-    {
-     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
-     "frm": 3910,
-     "parent": "arnor",
-     "span": "S.A. 3320 – T.A. 861",
-     "to": 4892,
-     "why": "the archive holds this containment; see the record's notes"
-    }
+    "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate",
+    "The Lord of the Rings, Appendix A [C]"
    ],
    "coords": [
     {
@@ -1449,12 +1440,15 @@
     "Between Lhûn and Weather Hills (Baranduin its south-line): Fornost Erain on the North Downs the king-seat, Annúminas already forsaken; the Tower Hills and the Elostirion-stone westward. — App A [C]",
     "the realms model dates it T.A. 861–1974",
     "named within Arnor by the vector spec's own block for it",
-    "the middle of the shape the archive draws"
+    "the middle of the shape the archive draws",
+    "succeeds arnor -- not a part of it, but what it became when it was divided [C]",
+    "“After Eären- dur, owing to dissensions among his sons their realm was divided into three: Arthedain, Rhudaur, and Cardolan.” — The Lord of the Rings, Appendix A [C]"
    ],
-   "parents": [
+   "parents": [],
+   "place_conf": "H",
+   "succeeds": [
     "arnor"
    ],
-   "place_conf": "H",
    "timeline": [
     {
      "cite": "App A [C]",
@@ -1501,7 +1495,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "arvernien": {
    "ages": [
@@ -3171,17 +3166,8 @@
    ],
    "cites": [
     "App A; UT [C]",
-    "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate"
-   ],
-   "containment": [
-    {
-     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
-     "frm": 3910,
-     "parent": "arnor",
-     "span": "S.A. 3320 – T.A. 861",
-     "to": 4892,
-     "why": "the archive holds this containment; see the record's notes"
-    }
+    "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate",
+    "The Lord of the Rings, Appendix A [C]"
    ],
    "coords": [
     {
@@ -3197,12 +3183,15 @@
     "Minhiriath and the downs: Tyrn Gorthad (the Barrow-downs) its hallowed height, Tharbad its river-town shared with the south. — App A; UT [C]",
     "the realms model dates it T.A. 861–1636",
     "named within Arnor by the vector spec's own block for it",
-    "the middle of the shape the archive draws"
+    "the middle of the shape the archive draws",
+    "succeeds arnor -- not a part of it, but what it became when it was divided [C]",
+    "“After Eären- dur, owing to dissensions among his sons their realm was divided into three: Arthedain, Rhudaur, and Cardolan.” — The Lord of the Rings, Appendix A [C]"
    ],
-   "parents": [
+   "parents": [],
+   "place_conf": "H",
+   "succeeds": [
     "arnor"
    ],
-   "place_conf": "H",
    "timeline": [
     {
      "cite": "App A [C]",
@@ -3249,7 +3238,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "carn dum": {
    "ages": [
@@ -13929,17 +13919,8 @@
    ],
    "cites": [
     "LotR I.12 [C]",
-    "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate"
-   ],
-   "containment": [
-    {
-     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
-     "frm": 3910,
-     "parent": "arnor",
-     "span": "S.A. 3320 – T.A. 861",
-     "to": 4892,
-     "why": "the archive holds this containment; see the record's notes"
-    }
+    "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate",
+    "The Lord of the Rings, Appendix A [C]"
    ],
    "coords": [
     {
@@ -13955,12 +13936,15 @@
     "The Trollshaws' castles ('they had an evil look, as if they had been built by wicked people') are its physical remains. — LotR I.12 [C]",
     "the realms model dates it T.A. 861–c.1409",
     "named within Arnor by the vector spec's own block for it",
-    "the middle of the shape the archive draws"
+    "the middle of the shape the archive draws",
+    "succeeds arnor -- not a part of it, but what it became when it was divided [C]",
+    "“After Eären- dur, owing to dissensions among his sons their realm was divided into three: Arthedain, Rhudaur, and Cardolan.” — The Lord of the Rings, Appendix A [C]"
    ],
-   "parents": [
+   "parents": [],
+   "place_conf": "H",
+   "succeeds": [
     "arnor"
    ],
-   "place_conf": "H",
    "timeline": [
     {
      "cite": "App A [C]",
@@ -14014,7 +13998,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "rhun": {
    "ages": [
