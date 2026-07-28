@@ -8,7 +8,21 @@ bad=0
 for f in glob.glob("*.json"):
     try: json.load(open(f))
     except Exception as e: print("INVALID JSON:",f,e); bad+=1
-pages=[p for p in glob.glob("*.html") if p!="404.html"]
+# A SCRATCH PROBE IS NOT A PAGE. Three guards -- deeplink_check, mobile_check and
+# traverse_check -- write a temporary `_*.html` harness into site/ and delete it when they
+# finish. The gate graded those as real pages, so any run overlapping one of them failed on
+# "MISSING arda.css / nav.js / <meta name=description>" in a file that exists for four
+# seconds. It has happened twice today -- _traverse.html at 06:07 and _mobileprobe.html at
+# 15:46 -- and with five sessions on this machine the overlap is now likely rather than
+# theoretical: a guard in one session was failing the deploy gate in another.
+#
+# The exclusion is deliberately narrow and it is COUNTED, not silent, because a rule that
+# quietly drops files from the gate is a way to hide a page from every check it has.
+_probes=sorted(p for p in glob.glob("_*.html"))
+pages=[p for p in glob.glob("*.html") if p!="404.html" and not p.startswith("_")]
+if _probes:
+    print("note: %d scratch probe(s) skipped, left by a guard running right now: %s"
+          %(len(_probes),", ".join(_probes)))
 for p in pages:
     s=open(p).read()
     for need in ('arda.css','nav.js','<meta name="description"'):
@@ -35,7 +49,7 @@ try:
                 if pp not in polys: print("REF: realm",P["id"],"poly",pp); bad+=1
     # search index targets must be real pages
     import os
-    pages_set={p for p in glob.glob("*.html")}
+    pages_set={p for p in glob.glob("*.html") if not p.startswith("_")}
     for e in json.load(open("arda_search.json")):
         tgt=e[3].split("#")[0]
         if tgt and not tgt.startswith("http") and tgt not in pages_set and not os.path.exists(tgt):
@@ -49,7 +63,7 @@ except Exception as ex:
 from urllib.parse import unquote
 import re as _re2
 dead=0
-for f in glob.glob("*.html"):
+for f in [x for x in glob.glob("*.html") if not x.startswith("_")]:
     txt=open(f).read()
     for m in _re2.finditer(r'(?:href|src)="([^"#{$][^"#?]*?)(?:[#?][^"]*)?"',txt):
         t=unquote(m.group(1))
@@ -105,7 +119,7 @@ try:
     _smoke = _os4.path.join("..", "map", "page_smoke.js")
     if _os4.path.exists(_smoke):
         _sfail = 0; _sn = 0
-        for _pg in sorted(glob.glob("*.html")):
+        for _pg in sorted(x for x in glob.glob("*.html") if not x.startswith("_")):
             _r4 = _sp4.run(["node", _smoke, _pg], capture_output=True, text=True, timeout=180)
             _sn += 1
             if _r4.returncode:
