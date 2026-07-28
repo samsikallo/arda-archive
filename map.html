@@ -667,7 +667,16 @@ function apply(age){
     // A FEATURE WITH NO AGE IS NOT HIDDEN. The archive does not know its Age; hiding it would
     // be the map asserting an absence the corpus never states.
     const show=(age==='all')||a.length===0||a.includes(age);
-    g.hidden=!show; if(show)shown++;
+    // `hidden` IS AN HTMLElement PROPERTY, AND THESE ARE SVG ELEMENTS.
+    // g.hidden=!show set a dead JavaScript field: it did not reflect to an attribute and it
+    // did not affect rendering, so the CSS rule `.feat[hidden]{display:none}` -- written for
+    // exactly this -- never matched anything. THE AGE BUTTONS HAVE NEVER FILTERED THE MAP.
+    // Pressing "First" changed the count from 234 to 103 and drew all 234 features anyway;
+    // Lorien, which belongs to no First Age, stayed on screen 20.9 px wide with the label
+    // claiming it was gone. Found by guard 28 the first time anything checked that a control
+    // does what it says, and nearly dismissed as the guard's own error.
+    if(show) g.removeAttribute('hidden'); else g.setAttribute('hidden','');
+    if(show)shown++;
   });
   countEl.textContent=shown+' features';
 }
