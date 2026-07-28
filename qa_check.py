@@ -106,7 +106,7 @@ try:
     _jsfail = 1 if _broken else 0
     print("js syntax: %s (%d files)" % ("FAIL" if _jsfail else "OK", len(_js)))
 except FileNotFoundError:
-    print("js syntax: skipped - node is not installed")
+    print("js syntax: skipped - node is not installed"); _skipped.append("js syntax")
 except Exception as _e3:
     print("js syntax: could not run - %s" % str(_e3)[:60])
 
@@ -129,10 +129,10 @@ try:
         print("page runtime: %s (%d pages)" % ("FAIL" if _sfail else "OK", _sn))
     else:
         _sfail = 0
-        print("page runtime: skipped - map/page_smoke.js not present")
+        print("page runtime: skipped - map/page_smoke.js not present"); _skipped.append("page runtime")
 except FileNotFoundError:
     _sfail = 0
-    print("page runtime: skipped - node is not installed")
+    print("page runtime: skipped - node is not installed"); _skipped.append("page runtime")
 except Exception as _e4:
     _sfail = 0
     print("page runtime: could not run - %s" % str(_e4)[:60])
@@ -160,10 +160,32 @@ except Exception as _e4:
 # than failed when the corpus is not on disk: it is derived, and its absence is a
 # missing input, not a fault in the site.
 _qfail = 0
+# WHAT WAS SKIPPED, CARRIED INTO THE VERDICT AND NOT ONLY INTO THE LOG.
+#
+# The two corpus checks print "skipped" when corpus/ is not on disk, and the reasoning for
+# that is right and is not being changed: the corpus is derived and rebuildable, and
+# failing a gate because a rebuildable artefact is missing would be wrong. The fault was
+# the sentence AFTERWARDS. With both skipped this file printed "checked 32 pages, 47
+# datasets — OK" and exited 0 -- a claim about completeness that was false, in the one
+# command CLAUDE.md rule 4 elevates above all the others: "must exit 0 before pushing. Not
+# 'looks right' -- exit 0."
+#
+# AND CORPUS-ABSENT IS THE DEFAULT STATE OF A FRESH CLONE, not an exotic one: corpus/ is
+# gitignored and zero files are tracked. Anyone following rule 4 exactly on a clone whose
+# corpus has not been rebuilt got a green verdict with the archive's central verification
+# unrun. (A PUSH would still have been refused -- all four corpus-dependent guards fail
+# closed, so the suite counts failures and the hook stops it -- but that backstop works by
+# side effect, and a future guard written to skip politely, exactly as this one does and
+# with the same good reasoning, would go quiet with it.)
+#
+# So: exit 0 keeps meaning everything ran and everything passed, which is what rule 4 says
+# it means and what a reader takes it to mean. Anything skipped is exit 2.
+_skipped = []
 try:
     import subprocess as _sp5, sys as _sys5, os as _os5
     if not glob.glob(_os5.path.join("..", "corpus", "t*.txt")):
         print("quotations: skipped - no corpus on disk (python3 map/extract_corpus.py)")
+        _skipped.append("quotations")
     else:
         _r5 = _sp5.run([_sys5.executable, "../map/verify_quotes.py"],
                        capture_output=True, text=True, timeout=480)
@@ -186,6 +208,7 @@ try:
     import subprocess as _sp6, sys as _sys6, os as _os6
     if not glob.glob(_os6.path.join("..", "corpus", "t*.txt")):
         print("audit claims: skipped - no corpus on disk")
+        _skipped.append("audit claims")
     else:
         _r6 = _sp6.run([_sys6.executable, "../map/recheck_audits.py"],
                        capture_output=True, text=True, timeout=480)
@@ -199,8 +222,13 @@ try:
 except Exception as _e6:
     print("audit claims: could not run - %s" % str(_e6)[:60])
 
+_failed = bad or _ifail or _jsfail or _sfail or _mfail or _qfail or _afail
 print("checked",len(pages),"pages,",len(glob.glob('*.json')),"datasets —",
-      "FAIL" if (bad or _ifail or _jsfail or _sfail or _mfail or _qfail or _afail) else "OK")
+      "FAIL" if _failed else ("OK" if not _skipped else
+      "OK, with %d check(s) SKIPPED and therefore unverified: %s"
+      %(len(_skipped),", ".join(_skipped))))
 import sys as _s2
-_s2.exit(1 if (bad or _ifail or _jsfail or _sfail or _mfail or _qfail or _afail) else 0)
+# 0 = everything ran and everything passed. 1 = something failed. 2 = nothing failed but
+# something did not run, so this is not the verdict rule 4 asks for.
+_s2.exit(1 if _failed else (2 if _skipped else 0))
 sys.exit(1 if bad else 0)
