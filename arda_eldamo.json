@@ -1,0 +1,1571 @@
+{
+ "credit": {
+  "author": "Paul Strack",
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "statement": "Linked, not imported. Eldamo's words are Paul Strack's work and stay on his site; the archive points at them and copies none of them into its own voice.",
+  "url": "https://eldamo.org/",
+  "work": "Eldamo — An Elvish Lexicon"
+ },
+ "disagreements": [
+  {
+   "archive": "one of the Noldor",
+   "eldamo": "one of the wise folk, Gnome",
+   "word": "noldo"
+  },
+  {
+   "archive": "realm; the World",
+   "eldamo": "The World, (lit.) Realm",
+   "word": "arda"
+  },
+  {
+   "archive": "holy(ness); airë-tári 'holy queen'",
+   "eldamo": "holy; sanctity, holiness",
+   "word": "airë"
+  },
+  {
+   "archive": "Elves, 'the speakers'",
+   "eldamo": "female Elf",
+   "word": "quendi"
+  },
+  {
+   "archive": "jewel of Fëanor",
+   "eldamo": "Great Jewel",
+   "word": "Silmaril"
+  },
+  {
+   "archive": "sun-round, solar year",
+   "eldamo": "(solar) year, (lit.) sun-round",
+   "word": "coranar"
+  },
+  {
+   "archive": "day(light) — 'Aurë entuluva!'",
+   "eldamo": "day (as opposed to night), daylight, sunlight, morning",
+   "word": "aurë"
+  },
+  {
+   "archive": "evening twilight",
+   "eldamo": "twilight, time near evening",
+   "word": "undómë"
+  },
+  {
+   "archive": "morning twilight",
+   "eldamo": "(starry) twilight, (usually) time near dawn",
+   "word": "tindómë"
+  },
+  {
+   "archive": "'be it that' (wish)",
+   "eldamo": "maybe; be it that, may it be that; perhaps, it may be, there is a chance or possibility",
+   "word": "nai"
+  },
+  {
+   "archive": "like, as",
+   "eldamo": "abstract noun, adverb",
+   "word": "ve"
+  },
+  {
+   "archive": "beyond (follows its noun)",
+   "eldamo": "beyond (boundary or limit)",
+   "word": "pella"
+  },
+  {
+   "archive": "praise — laituvalmet 'we will praise them'",
+   "eldamo": "to praise, bless",
+   "word": "laita-"
+  },
+  {
+   "archive": "find — hiruvalyë 'thou shalt find'",
+   "eldamo": "to find",
+   "word": "hir-"
+  },
+  {
+   "archive": "mead of the Valar (loan from Valarin mirub)",
+   "eldamo": "mead, nectar, special wine or cordial, drink of the Elves, (lit.) precious juice",
+   "word": "miruvórë"
+  },
+  {
+   "archive": "Man; pl. edain",
+   "eldamo": "Man (as a species)",
+   "word": "adan"
+  },
+  {
+   "archive": "king (Aran Moria)",
+   "eldamo": "king, lord, chief, (lit.) high or noble person",
+   "word": "aran"
+  },
+  {
+   "archive": "tower; pl. beraid",
+   "eldamo": "tower, great towering building",
+   "word": "barad"
+  },
+  {
+   "archive": "green (Parth Galen)",
+   "eldamo": "green; fresh, vigorous; †bright",
+   "word": "calen"
+  },
+  {
+   "archive": "lord (Hîr i·Mbair Annui, King's Letter)",
+   "eldamo": "lord, master",
+   "word": "hîr"
+  },
+  {
+   "archive": "haven (Mithlond)",
+   "eldamo": "(land-locked) haven",
+   "word": "lond"
+  },
+  {
+   "archive": "valley",
+   "eldamo": "of; with, along with, accompanied by, provided with or by, associated with, marked with",
+   "word": "nan"
+  },
+  {
+   "archive": "stone (small)",
+   "eldamo": "(small) stone, pebble, gem; stony (place)",
+   "word": "sarn"
+  },
+  {
+   "archive": "hymn? 'holy song' [I from elements]",
+   "eldamo": "*hymn, (lit.) holy song",
+   "word": "aerlinn"
+  }
+ ],
+ "eldamo_version": "0.8.13",
+ "links": [
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "Elf, 'of the stars'",
+   "candidates": 3,
+   "eldamo_gloss": "Elf",
+   "eldamo_word": "Elda",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3914447759.html",
+   "word": "Elda"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "jewel of Fëanor",
+   "candidates": 3,
+   "eldamo_gloss": "Great Jewel",
+   "eldamo_word": "Silmaril",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-964594499.html",
+   "word": "Silmaril"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "holy",
+   "candidates": 5,
+   "eldamo_gloss": "holy, revered, numinous",
+   "eldamo_word": "aina",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-234675263.html",
+   "word": "aina"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "holy(ness); airë-tári 'holy queen'",
+   "candidates": 5,
+   "eldamo_gloss": "holy; sanctity, holiness",
+   "eldamo_word": "airë¹",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-71439553.html",
+   "word": "airë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "tree",
+   "candidates": 3,
+   "eldamo_gloss": "tree",
+   "eldamo_word": "alda",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-539805327.html",
+   "word": "alda"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "hook",
+   "candidates": 2,
+   "eldamo_gloss": "hook",
+   "eldamo_word": "ampa",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-128683519.html",
+   "word": "ampa"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "sun",
+   "candidates": 3,
+   "eldamo_gloss": "Sun",
+   "eldamo_word": "Anar",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-2475504767.html",
+   "word": "anar"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "jaws",
+   "candidates": 1,
+   "eldamo_gloss": "jaws",
+   "eldamo_word": "anca",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1954231881.html",
+   "word": "anca"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "gate",
+   "candidates": 5,
+   "eldamo_gloss": "gate, [great] door; †entrances, approaches",
+   "eldamo_word": "ando",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3071385603.html",
+   "word": "ando"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "iron",
+   "candidates": 3,
+   "eldamo_gloss": "iron",
+   "eldamo_word": "anga",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3314352465.html",
+   "word": "anga"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "gift",
+   "candidates": 2,
+   "eldamo_gloss": "gift, (orig.) thing handed, brought or sent to a person",
+   "eldamo_word": "anna",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3547079839.html",
+   "word": "anna"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "mouth",
+   "candidates": 4,
+   "eldamo_gloss": "mouth",
+   "eldamo_word": "anto",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-4217184203.html",
+   "word": "anto"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "king",
+   "candidates": 3,
+   "eldamo_gloss": "king",
+   "eldamo_word": "aran",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1669828031.html",
+   "word": "aran"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "region",
+   "candidates": 5,
+   "eldamo_gloss": "region, realm, particular land or region",
+   "eldamo_word": "arda",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3655691749.html",
+   "word": "arda"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "realm; the World",
+   "candidates": 5,
+   "eldamo_gloss": "The World, (lit.) Realm",
+   "eldamo_word": "Arda",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-999040421.html",
+   "word": "arda"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "Man (Second People)",
+   "candidates": 2,
+   "eldamo_gloss": "Man",
+   "eldamo_word": "Atan",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-360630439.html",
+   "word": "atan"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "day(light) — 'Aurë entuluva!'",
+   "candidates": 2,
+   "eldamo_gloss": "day (as opposed to night), daylight, sunlight, morning",
+   "eldamo_word": "aurë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3521740537.html",
+   "word": "aurë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "lamp",
+   "candidates": 1,
+   "eldamo_gloss": "lamp, (device for shining) light",
+   "eldamo_word": "calma",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-4063999805.html",
+   "word": "calma"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "Dwarf",
+   "candidates": 1,
+   "eldamo_gloss": "Dwarf",
+   "eldamo_word": "Casar",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1711514627.html",
+   "word": "casar"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "ship",
+   "candidates": 2,
+   "eldamo_gloss": "(sharp-prowed) ship; swift gliding",
+   "eldamo_word": "cirya¹",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-2977430193.html",
+   "word": "cirya"
+  },
+  {
+   "agree": false,
+   "ambiguous": false,
+   "archive_gloss": "sun-round, solar year",
+   "candidates": 1,
+   "eldamo_gloss": "(solar) year, (lit.) sun-round",
+   "eldamo_word": "coranar",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-874453311.html",
+   "word": "coranar"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "star",
+   "candidates": 2,
+   "eldamo_gloss": "star",
+   "eldamo_word": "elen",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1319998893.html",
+   "word": "elen"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "'a star shines on the hour of our meeting'",
+   "candidates": 1,
+   "eldamo_gloss": "a star shines on the hour of our meeting",
+   "eldamo_word": "elen síla lúmenn’ omentielvo",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-2420229959.html",
+   "word": "elen síla lúmenn' omentielvo"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "name",
+   "candidates": 5,
+   "eldamo_gloss": "name",
+   "eldamo_word": "essë¹",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-2808635967.html",
+   "word": "essë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "hope, trust",
+   "candidates": 1,
+   "eldamo_gloss": "hope, trust, *faith",
+   "eldamo_word": "estel",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3298435681.html",
+   "word": "estel"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "north",
+   "candidates": 2,
+   "eldamo_gloss": "north",
+   "eldamo_word": "formen",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1223050479.html",
+   "word": "formen"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "spirit, soul",
+   "candidates": 1,
+   "eldamo_gloss": "(indwelling or incarnate) spirit, soul",
+   "eldamo_word": "fëa",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3664448297.html",
+   "word": "fëa"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "treasure (later aha)",
+   "candidates": 3,
+   "eldamo_gloss": "treasure",
+   "eldamo_word": "harma",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-405361249.html",
+   "word": "harma"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "lord",
+   "candidates": 5,
+   "eldamo_gloss": "lord, master",
+   "eldamo_word": "heru",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3187467167.html",
+   "word": "heru"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "find — hiruvalyë 'thou shalt find'",
+   "candidates": 3,
+   "eldamo_gloss": "to find",
+   "eldamo_word": "hir-",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-2780755521.html",
+   "word": "hir-"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "body",
+   "candidates": 1,
+   "eldamo_gloss": "body, bodily form, flesh; physical matter",
+   "eldamo_word": "hröa",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1260023323.html",
+   "word": "hröa"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "breeze",
+   "candidates": 3,
+   "eldamo_gloss": "breeze",
+   "eldamo_word": "hwesta",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-2569461293.html",
+   "word": "hwesta"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "south",
+   "candidates": 2,
+   "eldamo_gloss": "south, (lit.) left-hand direction",
+   "eldamo_word": "hyarmen",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1477365621.html",
+   "word": "hyarmen"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "moon",
+   "candidates": 3,
+   "eldamo_gloss": "Moon, (lit.) Sheen",
+   "eldamo_word": "Isil",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-863158895.html",
+   "word": "isil"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "praise — laituvalmet 'we will praise them'",
+   "candidates": 2,
+   "eldamo_gloss": "to praise, bless",
+   "eldamo_word": "laita-",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-261637557.html",
+   "word": "laita-"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "tongue",
+   "candidates": 3,
+   "eldamo_gloss": "language, tongue, dialect",
+   "eldamo_word": "lambë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1468650059.html",
+   "word": "lambë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "leaf",
+   "candidates": 3,
+   "eldamo_gloss": "leaf",
+   "eldamo_word": "lassë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-240504201.html",
+   "word": "lassë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "golden light",
+   "candidates": 3,
+   "eldamo_gloss": "gold",
+   "eldamo_word": "laure",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-4266875615.html",
+   "word": "laurë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "growth-year (seasonal)",
+   "candidates": 3,
+   "eldamo_gloss": "year",
+   "eldamo_word": "loa",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-2264576425.html",
+   "word": "loa"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "night",
+   "candidates": 3,
+   "eldamo_gloss": "night, dimness, twilight, dusk, darkness",
+   "eldamo_word": "lómë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-2401626913.html",
+   "word": "lómë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "flower",
+   "candidates": 3,
+   "eldamo_gloss": "flower, single blossom",
+   "eldamo_word": "lótë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-2634469607.html",
+   "word": "lótë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "gold",
+   "candidates": 2,
+   "eldamo_gloss": "gold (metal), gold as material",
+   "eldamo_word": "malta",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-4049611703.html",
+   "word": "malta"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "the heavens",
+   "candidates": 2,
+   "eldamo_gloss": "the heavens, firmament, sky",
+   "eldamo_word": "menel",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1335823119.html",
+   "word": "menel"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "lofty tower",
+   "candidates": 3,
+   "eldamo_gloss": "(lofty) tower",
+   "eldamo_word": "mindon",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-344968903.html",
+   "word": "mindon"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "mead of the Valar (loan from Valarin mirub)",
+   "candidates": 2,
+   "eldamo_gloss": "mead, nectar, special wine or cordial, drink of the Elves, (lit.) precious juice",
+   "eldamo_word": "miruvórë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3291161231.html",
+   "word": "miruvórë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "jewel",
+   "candidates": 3,
+   "eldamo_gloss": "jewel, gem, precious thing, treasure; precious",
+   "eldamo_word": "mírë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1337462501.html",
+   "word": "mírë"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "'be it that' (wish)",
+   "candidates": 5,
+   "eldamo_gloss": "maybe; be it that, may it be that; perhaps, it may be, there is a chance or possibility",
+   "eldamo_word": "nai",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-610154351.html",
+   "word": "nai"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "farewell",
+   "candidates": 3,
+   "eldamo_gloss": "Farewell",
+   "eldamo_word": "Namárië",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-436003197.html",
+   "word": "namárië"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "one of the Noldor",
+   "candidates": 3,
+   "eldamo_gloss": "one of the wise folk, Gnome",
+   "eldamo_word": "Noldo",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-840869727.html",
+   "word": "noldo"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "under",
+   "candidates": 6,
+   "eldamo_gloss": "under, beneath",
+   "eldamo_word": "nu",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-4208071129.html",
+   "word": "nu"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "torment",
+   "candidates": 2,
+   "eldamo_gloss": "torment",
+   "eldamo_word": "nwalmë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1844498837.html",
+   "word": "nwalmë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "water",
+   "candidates": 7,
+   "eldamo_gloss": "water",
+   "eldamo_word": "nén",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1552102041.html",
+   "word": "nén"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "west",
+   "candidates": 2,
+   "eldamo_gloss": "west, direction or region of the sunset, occident, (lit.) going down",
+   "eldamo_word": "númen",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1285367433.html",
+   "word": "númen"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "stone",
+   "candidates": 3,
+   "eldamo_gloss": "stone (as a material), (large mass of) rock",
+   "eldamo_word": "ondo",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3686939787.html",
+   "word": "ondo"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "orc",
+   "candidates": 1,
+   "eldamo_gloss": "Orc",
+   "eldamo_word": "orco",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-412479267.html",
+   "word": "orco"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "book",
+   "candidates": 3,
+   "eldamo_gloss": "book, writing, composition, written document of some size",
+   "eldamo_word": "parma",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-2353256327.html",
+   "word": "parma"
+  },
+  {
+   "agree": false,
+   "ambiguous": false,
+   "archive_gloss": "beyond (follows its noun)",
+   "candidates": 1,
+   "eldamo_gloss": "beyond (boundary or limit)",
+   "eldamo_word": "pella",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-966567391.html",
+   "word": "pella"
+  },
+  {
+   "agree": false,
+   "ambiguous": false,
+   "archive_gloss": "Elves, 'the speakers'",
+   "candidates": 1,
+   "eldamo_gloss": "female Elf",
+   "eldamo_word": "quendi",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3395915147.html",
+   "word": "quendi"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "feather",
+   "candidates": 1,
+   "eldamo_gloss": "feather",
+   "eldamo_word": "quessë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-23535743.html",
+   "word": "quessë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "speak",
+   "candidates": 1,
+   "eldamo_gloss": "to say, speak, tell",
+   "eldamo_word": "quet-",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-2355375457.html",
+   "word": "quet-"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "east",
+   "candidates": 2,
+   "eldamo_gloss": "east, uprising, sunrise",
+   "eldamo_word": "rómen",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3503146575.html",
+   "word": "rómen"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "starlight",
+   "candidates": 3,
+   "eldamo_gloss": "starlight",
+   "eldamo_word": "silmë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-321095681.html",
+   "word": "silmë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "now",
+   "candidates": 8,
+   "eldamo_gloss": "now",
+   "eldamo_word": "sí",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3491156127.html",
+   "word": "sí"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "river",
+   "candidates": 3,
+   "eldamo_gloss": "river",
+   "eldamo_word": "sír(ë)",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-2297543987.html",
+   "word": "sírë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "forest",
+   "candidates": 3,
+   "eldamo_gloss": "forest, (great) wood",
+   "eldamo_word": "taurë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3090473943.html",
+   "word": "taurë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "silver (also tyelpë; Telerin telepi — Tolkien discusses the variants)",
+   "candidates": 4,
+   "eldamo_gloss": "silver",
+   "eldamo_word": "telpë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3102361379.html",
+   "word": "telpë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "metal",
+   "candidates": 1,
+   "eldamo_gloss": "metal",
+   "eldamo_word": "tinco",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3305428541.html",
+   "word": "tinco"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "morning twilight",
+   "candidates": 2,
+   "eldamo_gloss": "(starry) twilight, (usually) time near dawn",
+   "eldamo_word": "tindómë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-445436069.html",
+   "word": "tindómë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "come — entuluva 'shall come again'",
+   "candidates": 4,
+   "eldamo_gloss": "come!",
+   "eldamo_word": "tul",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-181920491.html",
+   "word": "tul-"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "queen",
+   "candidates": 3,
+   "eldamo_gloss": "queen",
+   "eldamo_word": "tári",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-771124993.html",
+   "word": "tári"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "fate",
+   "candidates": 2,
+   "eldamo_gloss": "fate, doom, curse",
+   "eldamo_word": "umbar",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-2818816369.html",
+   "word": "umbar"
+  },
+  {
+   "agree": false,
+   "ambiguous": false,
+   "archive_gloss": "evening twilight",
+   "candidates": 1,
+   "eldamo_gloss": "twilight, time near evening",
+   "eldamo_word": "undómë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1825769337.html",
+   "word": "undómë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "spider's web",
+   "candidates": 3,
+   "eldamo_gloss": "spider’s web",
+   "eldamo_word": "ungwë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3049069583.html",
+   "word": "ungwë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "a hollow",
+   "candidates": 1,
+   "eldamo_gloss": "a hollow",
+   "eldamo_word": "unquë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-2855626745.html",
+   "word": "unquë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "angelic power",
+   "candidates": 4,
+   "eldamo_gloss": "(Angelic) Power, ‘God’, Authority",
+   "eldamo_word": "Vala",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3703154217.html",
+   "word": "vala"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "like, as",
+   "candidates": 6,
+   "eldamo_gloss": "abstract noun, adverb",
+   "eldamo_word": "-vë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3407884905.html",
+   "word": "ve"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "air, sky",
+   "candidates": 3,
+   "eldamo_gloss": "air, sky",
+   "eldamo_word": "vilya",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1466471039.html",
+   "word": "vilya"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "bridge",
+   "candidates": 8,
+   "eldamo_gloss": "bridge",
+   "eldamo_word": "yanta",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1229903721.html",
+   "word": "yanta"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "Elvish 'long-year' of 144 sun-years",
+   "candidates": 2,
+   "eldamo_gloss": "year",
+   "eldamo_word": "yén",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-3731599749.html",
+   "word": "yén"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "sea",
+   "candidates": 3,
+   "eldamo_gloss": "sea, great sea",
+   "eldamo_word": "ëar",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-1709219635.html",
+   "word": "ëar"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "heart, inner mind",
+   "candidates": 4,
+   "eldamo_gloss": "heart (inner mind); warning, caution, (pre)monition",
+   "eldamo_word": "órë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-2864436961.html",
+   "word": "órë"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "heat",
+   "candidates": 1,
+   "eldamo_gloss": "heat",
+   "eldamo_word": "úrë",
+   "lang": "q",
+   "url": "https://eldamo.org/content/words/word-4239422769.html",
+   "word": "úrë"
+  },
+  {
+   "agree": false,
+   "ambiguous": false,
+   "archive_gloss": "Man; pl. edain",
+   "candidates": 1,
+   "eldamo_gloss": "Man (as a species)",
+   "eldamo_word": "Adan",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-753238821.html",
+   "word": "adan"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "evening twilight",
+   "candidates": 1,
+   "eldamo_gloss": "(evening) twilight",
+   "eldamo_word": "aduial",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-4029927507.html",
+   "word": "aduial"
+  },
+  {
+   "agree": false,
+   "ambiguous": false,
+   "archive_gloss": "hymn? 'holy song' [I from elements]",
+   "candidates": 1,
+   "eldamo_gloss": "*hymn, (lit.) holy song",
+   "eldamo_word": "aerlinn",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-2357253503.html",
+   "word": "aerlinn"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "sunrise, east",
+   "candidates": 2,
+   "eldamo_gloss": "sunrise, east, (lit.) of the uprising",
+   "eldamo_word": "amrûn",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-3136154397.html",
+   "word": "amrûn"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "sunset, west",
+   "candidates": 2,
+   "eldamo_gloss": "sunset, west; (lit.) going down",
+   "eldamo_word": "annûn",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-1864027637.html",
+   "word": "annûn"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "king (Aran Moria)",
+   "candidates": 2,
+   "eldamo_gloss": "king, lord, chief, (lit.) high or noble person",
+   "eldamo_word": "aran",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-658710813.html",
+   "word": "aran"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "tower; pl. beraid",
+   "candidates": 3,
+   "eldamo_gloss": "tower, great towering building",
+   "eldamo_word": "barad",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-2375289541.html",
+   "word": "barad"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "mighty",
+   "candidates": 5,
+   "eldamo_gloss": "great, mighty; large, big",
+   "eldamo_word": "beleg",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-3202359171.html",
+   "word": "beleg"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "green (Parth Galen)",
+   "candidates": 2,
+   "eldamo_gloss": "green; fresh, vigorous; †bright",
+   "eldamo_word": "calen",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-2594874609.html",
+   "word": "calen"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "cleft, pass",
+   "candidates": 2,
+   "eldamo_gloss": "cleft, pass",
+   "eldamo_word": "cirith",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-481654379.html",
+   "word": "cirith"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "land",
+   "candidates": 5,
+   "eldamo_gloss": "land",
+   "eldamo_word": "dôr",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-3950740861.html",
+   "word": "dôr"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "west",
+   "candidates": 2,
+   "eldamo_gloss": "west",
+   "eldamo_word": "dûn",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-4010460053.html",
+   "word": "dûn"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "Elf; pl. edhil",
+   "candidates": 2,
+   "eldamo_gloss": "Elf",
+   "eldamo_word": "Edhel",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-311394245.html",
+   "word": "edhel"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "prince (Ernil i Pheriannath)",
+   "candidates": 2,
+   "eldamo_gloss": "prince",
+   "eldamo_word": "ernil",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-3557695319.html",
+   "word": "ernil"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "shore",
+   "candidates": 5,
+   "eldamo_gloss": "Western Shore, (lit.) Coast",
+   "eldamo_word": "Falas",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-2077390389.html",
+   "word": "falas"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "light, radiance",
+   "candidates": 2,
+   "eldamo_gloss": "light",
+   "eldamo_word": "galad",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-1357813931.html",
+   "word": "galad"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "tree; Galadhrim 'tree-people'",
+   "candidates": 2,
+   "eldamo_gloss": "tree",
+   "eldamo_word": "galadh",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-3005081253.html",
+   "word": "galadh"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "star",
+   "candidates": 3,
+   "eldamo_gloss": "star; (bright) spark, silver glint, twinkle of light",
+   "eldamo_word": "gil",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-60902367.html",
+   "word": "gil"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "stone",
+   "candidates": 3,
+   "eldamo_gloss": "stone, rock",
+   "eldamo_word": "gond",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-1084088573.html",
+   "word": "gond"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "people (Gwaith-i-Mírdain)",
+   "candidates": 3,
+   "eldamo_gloss": "people",
+   "eldamo_word": "gwaith¹",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-3936102969.html",
+   "word": "gwaith"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "sorcery",
+   "candidates": 4,
+   "eldamo_gloss": "black arts, sorcery, (evil) knowledge",
+   "eldamo_word": "gûl",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-1108144049.html",
+   "word": "gûl"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "mist (Hithaeglir)",
+   "candidates": 3,
+   "eldamo_gloss": "mist",
+   "eldamo_word": "hîth",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-524936671.html",
+   "word": "hith"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "lord (Hîr i·Mbair Annui, King's Letter)",
+   "candidates": 3,
+   "eldamo_gloss": "lord, master",
+   "eldamo_word": "hîr",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-3444049341.html",
+   "word": "hîr"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "bridge (Baranduiniant)",
+   "candidates": 2,
+   "eldamo_gloss": "bridge",
+   "eldamo_word": "iant",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-2353825653.html",
+   "word": "iant"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "I",
+   "candidates": 6,
+   "eldamo_gloss": "I, I myself; reflexive, self(same)",
+   "eldamo_word": "im¹",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-3035605195.html",
+   "word": "im"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "moon",
+   "candidates": 3,
+   "eldamo_gloss": "Moon",
+   "eldamo_word": "Ithil",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-535385615.html",
+   "word": "ithil"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "'moon-star(light)' metal — glossed in text",
+   "candidates": 2,
+   "eldamo_gloss": "*moon-star",
+   "eldamo_word": "ithildin",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-1025553589.html",
+   "word": "ithildin"
+  },
+  {
+   "agree": false,
+   "ambiguous": false,
+   "archive_gloss": "haven (Mithlond)",
+   "candidates": 1,
+   "eldamo_gloss": "(land-locked) haven",
+   "eldamo_word": "lond",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-689415325.html",
+   "word": "lond"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "'well met' [C gloss in text? — greeting at the Ford; gloss C in narrative]",
+   "candidates": 1,
+   "eldamo_gloss": "well met",
+   "eldamo_word": "mae govannen",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-2338511755.html",
+   "word": "mae govannen"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "friend — the Moria password, glossed in text",
+   "candidates": 2,
+   "eldamo_gloss": "friend",
+   "eldamo_word": "mellon",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-2964964287.html",
+   "word": "mellon"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "tower",
+   "candidates": 1,
+   "eldamo_gloss": "tower, fort, city (with a citadel and central watch tower)",
+   "eldamo_word": "minas",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-1739068697.html",
+   "word": "minas"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "grey",
+   "candidates": 4,
+   "eldamo_gloss": "*Sinda, Grey-Elf",
+   "eldamo_word": "Mîth",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-1773048041.html",
+   "word": "mith"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "black",
+   "candidates": 3,
+   "eldamo_gloss": "black, dark; night",
+   "eldamo_word": "morn",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-509187197.html",
+   "word": "morn"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "valley",
+   "candidates": 6,
+   "eldamo_gloss": "of; with, along with, accompanied by, provided with or by, associated with, marked with",
+   "eldamo_word": "na(n)",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-3619674927.html",
+   "word": "nan"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "dwarf; Nogrod? (Naugrim)",
+   "candidates": 3,
+   "eldamo_gloss": "Dwarf",
+   "eldamo_word": "naug",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-3537759611.html",
+   "word": "naug"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "water",
+   "candidates": 2,
+   "eldamo_gloss": "water; lake, pool; (lesser) river",
+   "eldamo_word": "nen",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-3687268913.html",
+   "word": "nen"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "orc; pl. yrch",
+   "candidates": 2,
+   "eldamo_gloss": "Orc",
+   "eldamo_word": "orch",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-86383055.html",
+   "word": "orch"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "mountain; pl. ered",
+   "candidates": 3,
+   "eldamo_gloss": "mountain",
+   "eldamo_word": "orod",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-1491591289.html",
+   "word": "orod"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "fortress",
+   "candidates": 5,
+   "eldamo_gloss": "fort, fortress, stronghold, citadel; fortified town; enclosure",
+   "eldamo_word": "ost",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-1539713025.html",
+   "word": "ost"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "halfling; pl. periain, coll. periannath",
+   "candidates": 2,
+   "eldamo_gloss": "Halfling",
+   "eldamo_word": "Perian",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-2641632981.html",
+   "word": "perian"
+  },
+  {
+   "agree": false,
+   "ambiguous": true,
+   "archive_gloss": "stone (small)",
+   "candidates": 3,
+   "eldamo_gloss": "(small) stone, pebble, gem; stony (place)",
+   "eldamo_word": "sarn",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-1057523367.html",
+   "word": "sarn"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "river",
+   "candidates": 5,
+   "eldamo_gloss": "river, stream",
+   "eldamo_word": "sîr",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-742218303.html",
+   "word": "sîr"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "forest",
+   "candidates": 6,
+   "eldamo_gloss": "forest, wood",
+   "eldamo_word": "taur",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-809570117.html",
+   "word": "taur"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "steadfast, strong (Húrin Thalion)",
+   "candidates": 4,
+   "eldamo_gloss": "Steadfast, Strong",
+   "eldamo_word": "Thalion",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-214795145.html",
+   "word": "thalion"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "isle",
+   "candidates": 5,
+   "eldamo_gloss": "island, isle",
+   "eldamo_word": "tol",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-3555465801.html",
+   "word": "tol"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "spider (Cirith Ungol)",
+   "candidates": 2,
+   "eldamo_gloss": "spider",
+   "eldamo_word": "ungol",
+   "lang": "s",
+   "url": "https://eldamo.org/content/words/word-1216649663.html",
+   "word": "ungol"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "swan",
+   "candidates": 1,
+   "eldamo_gloss": "swan",
+   "eldamo_word": "alpa",
+   "lang": "t",
+   "url": "https://eldamo.org/content/words/word-3103487487.html",
+   "word": "alpa"
+  },
+  {
+   "agree": true,
+   "ambiguous": false,
+   "archive_gloss": "Elf",
+   "candidates": 1,
+   "eldamo_gloss": "Elf",
+   "eldamo_word": "Ello",
+   "lang": "t",
+   "url": "https://eldamo.org/content/words/word-3417378539.html",
+   "word": "ello"
+  }
+ ],
+ "n_ambiguous": 17,
+ "n_archive_elvish": 144,
+ "n_eldamo_words": 35900,
+ "n_gloss_disagreements": 24,
+ "n_linked": 130,
+ "note": "For every word the archive holds on its own evidence, a link to Paul Strack's Eldamo entry for it. NOTHING IS IMPORTED: Eldamo is a scholarly compilation and much of it is reconstruction, while this archive cites the 49 volumes for every claim it makes. The reader gets Strack's depth; the archive keeps saying only what it can cite."
+}

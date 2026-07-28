@@ -397,3 +397,38 @@ if(location.hash.includes("tab=xlate"))b.click();
      reader. No guard could see it, because until now no test had ever pressed a button on
      this site. -->
 <script src="speak.js"></script>
+
+<!-- ELDAMO, LINKED AND NOT IMPORTED.
+     Paul Strack's Eldamo holds 35,900 Elvish words against this archive's 313. Importing it
+     would put a hundred uncitable reconstructions beside every cited form, which is the trade
+     this archive refuses for encyclopedias. So it points instead: for each word the archive
+     holds on its own evidence, a link to Strack's entry. His work stays on his site.
+     CC BY 4.0 requires credit, and the credit lives HERE, beside the links it belongs to. -->
+<script>
+(function eldamoLinks(){
+  fetch('arda_eldamo.json').then(r=>r.json()).then(E=>{
+    const c=E.credit, s=document.createElement('section');
+    s.id='eldamo'; s.style.cssText='padding:18px 26px 40px;max-width:1100px';
+    const rows=E.links.map(l=>
+      '<tr><td class="lem">'+l.word+'</td><td>'+(l.archive_gloss||'')+'</td>'
+      +'<td>'+(l.eldamo_gloss||'')+(l.ambiguous?' <span class="tag M" title="several Eldamo '
+        +'words share this spelling and none matched the sense">ambiguous</span>':'')
+      +(l.agree===false&&!l.ambiguous?' <span class="tag I" title="the two glosses differ">differs</span>':'')
+      +'</td><td><a href="'+l.url+'" rel="noopener" target="_blank">Eldamo &#8599;</a></td></tr>').join('');
+    s.innerHTML='<h2 style="font-variant:small-caps;letter-spacing:.05em">Eldamo — an Elvish '
+      +'lexicon beside this one</h2>'
+      +'<p class="cite"><b>'+c.work+'</b> by '+c.author+' — <a href="'+c.url+'" rel="noopener" '
+      +'target="_blank">eldamo.org</a>, used under <a href="'+c.licence_url+'" rel="noopener" '
+      +'target="_blank">'+c.licence+'</a>. '+c.statement+'</p>'
+      +'<p class="cite">'+E.n_linked+' of the archive\'s '+E.n_archive_elvish+' Elvish words '
+      +'are linked, out of Eldamo\'s '+E.n_eldamo_words.toLocaleString()+'. '
+      +E.n_gloss_disagreements+' glosses differ and '+E.n_ambiguous+' matches are ambiguous; '
+      +'both are marked and neither is reconciled — the archive does not adopt Eldamo\'s '
+      +'reading, nor Eldamo the archive\'s.</p>'
+      +'<div style="overflow-x:auto"><table><tr><th>word</th><th>the archive\'s gloss</th>'
+      +'<th>Eldamo\'s gloss</th><th></th></tr>'+rows+'</table></div>';
+    const m=document.getElementById('main');
+    (m?m.insertAdjacentElement('afterend',s):document.body.appendChild(s));
+  }).catch(()=>{});
+})();
+</script>
