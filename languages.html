@@ -426,7 +426,21 @@ if(location.hash.includes("tab=xlate"))b.click();
       +'both are marked and neither is reconciled — the archive does not adopt Eldamo\'s '
       +'reading, nor Eldamo the archive\'s.</p>'
       +'<div style="overflow-x:auto"><table><tr><th>word</th><th>the archive\'s gloss</th>'
-      +'<th>Eldamo\'s gloss</th><th></th></tr>'+rows+'</table></div>';
+      +'<th>Eldamo\'s gloss</th><th></th></tr>'+rows+'</table></div>'
+      +'<h3 style="font-variant:small-caps;letter-spacing:.05em;margin-top:26px">The roots</h3>'
+      +'<p class="cite">'+(E.roots||[]).length+' of the archive\'s '
+      +'roots — those of The Etymologies and those it curates with citations — are linked to '
+      +'Eldamo\'s. Where a root matched only a NEO-primitive form, that is a reconstruction '
+      +'and is marked as one; the archive may point at a reconstruction, it may not let one '
+      +'pass as a citation.</p>'
+      +'<div style="overflow-x:auto;max-height:520px"><table><tr><th>root</th>'
+      +'<th>the archive\'s gloss</th><th>Eldamo\'s gloss</th><th></th></tr>'
+      +(E.roots||[]).map(function(r){return '<tr><td class="lem">'+r.root+'</td><td>'
+        +(r.archive_gloss||'')+'</td><td>'+(r.eldamo_gloss||'')
+        +(r.reconstructed?' <span class="tag M" title="matched only a Neo-primitive form">reconstructed</span>':'')
+        +(r.ambiguous?' <span class="tag M" title="several roots share this spelling and none matched the sense">ambiguous</span>':'')
+        +'</td><td><a href="'+r.url+'" rel="noopener" target="_blank">Eldamo &#8599;</a></td></tr>';}).join('')
+      +'</table></div>';
     const m=document.getElementById('main');
     (m?m.insertAdjacentElement('afterend',s):document.body.appendChild(s));
   }).catch(()=>{});
