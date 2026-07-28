@@ -4574,7 +4574,7 @@
    ],
    "cites": [
     "Silm 14; CoH 1 [C]",
-    "drawn on the archive's vector map (REGIONS_FA); the name is attested 313 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (REGIONS_FA); the name 'Dor-lómin' is attested 312 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
    "coords": [
     {
@@ -4591,17 +4591,18 @@
     "the realms model dates it F.A. c.416–495 (free); occupied to 587",
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared",
-    "the vector spec also lists it as “Dor-Lomin”, at the same place; one record, not two"
+    "the vector spec also lists it as “Dor-Lomin”, at the same place; one record, not two",
+    "the corpus gives three years and they are not one event: 416, “the granting to him of the lordship of Dor-lómin” in Tolkien's marginal dates as Christopher reports them (HoME XI); 420, the Grey Annals' own year for Hador becoming Fingolfin's vassal and being “given wide lands in Hithlum in the country of Dor-Lómin” (§129); and 423, “Hador's folk entered Dorlómin” (§136), which is the occupation and which Christopher marks a late pencilled addition. The record takes 416 because that is the one dating the grant in so many words. Silm 17 carries the event and no year: the published Silmarillion has no First Age dates. [C for each figure, I-H for the choice]"
    ],
    "parents": [],
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "Silm 17 [C]",
+     "cite": "HoME XI (Grey Annals, CT's note on the marginal dates) for the date [C]; Silm 17 for the event [C]",
      "realm": "dorlomin",
      "status": "event",
      "what": "Dor-lómin given to Hador Lórindol by Fingolfin",
-     "when": "F.A. c.423"
+     "when": "F.A. c.416"
     },
     {
      "cite": "Silm 20 [C]",
