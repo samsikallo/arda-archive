@@ -4,11 +4,11 @@
 const GROUPS=[
  ["Atlas",[["map.html","the map of Arda","every feature answers \u2014 hover, click, the record"],
    ["arda_timemap_jpeg.html","the living map","interactive map, journeys, battles"],
-   ["chronicle.html","the turning ages","map + chronicle on one slider"],
+   ["map.html","the turning ages","map + chronicle on one slider"],
    ["realms.html","realms","the political atlas — 60 polities"],
    ["gazetteer.html","gazetteer","every named place, by age and kind"],
    ["cosmology.html","cosmology","the shape of the world itself"],
-   ["arda_timemap.html","the redrawn base","legacy vector map"]]],
+   ["map.html","the redrawn base","legacy vector map"]]],
  ["Chronicle",[["arda_timeline.html","timeline","all of history, zoomable"],
    ["reckoning.html","reckonings","calendars, dates & measures"],
    ["annals.html","annals of the archive","what's new on this site"]]],
