@@ -43,7 +43,7 @@
    "c": "t1_a_the_silmarillion.txt:2637",
    "attests": "the highest peak OF the Pelóri, therefore on the range",
    "drawn": "the archive's own placement",
-   "infer": "the corpus fixes Taniquetil as the highest of the Pelóri but does not say where along the range it stands; it is drawn beside the Calacirya because the Vanyar who dwelt on it also dwelt in Tirion, which the pass holds"
+   "infer": "the corpus fixes Taniquetil twice — the highest of the Pelóri, and 'standing upon the margin of the sea' (Silm:2732) — but never says where ALONG the range it stands. It is drawn beside the Calacirya because the Vanyar who dwelt on it also dwelt in Tirion, which the pass holds"
   },
   {
    "n": "Valinor",
@@ -244,6 +244,28 @@
    "infer": null
   },
   {
+   "n": "the mansions of Aulë",
+   "k": "hall",
+   "x": 620,
+   "y": 1004,
+   "q": "And in the midst of the Blessed Realm were the mansions of Aulë, and there he laboured long",
+   "c": "t1_a_the_silmarillion.txt:2715",
+   "attests": "in the MIDST of the Blessed Realm",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
+   "n": "Ilmarin",
+   "k": "hall",
+   "x": 862,
+   "y": 776,
+   "q": "Their halls are above the everlasting snow, upon Oiolossë, the uttermost tower of Taniquetil",
+   "c": "t1_a_the_silmarillion.txt:2239",
+   "attests": "ON the summit of Taniquetil, above the snowline",
+   "drawn": "the archive's own placement",
+   "infer": null
+  },
+  {
    "n": "Ulmo in the Outer Ocean",
    "k": "sea",
    "x": 64,
@@ -267,12 +289,6 @@
   }
  ],
  "unplaced": [
-  {
-   "n": "the mansions of Aulë",
-   "q": "mansions of Aulë, and there he laboured long",
-   "c": "t1_a_the_silmarillion.txt:2716",
-   "why": "the corpus says Aulë's mansions are in Valinor and nothing more; no text places them on the plain, against the mountains, or in relation to Valmar"
-  },
   {
    "n": "the gardens of Lórien",
    "q": "In Lórien are his gardens in the land of the Valar, and they are the fairest of all places in the world",
