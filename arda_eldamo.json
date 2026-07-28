@@ -25,7 +25,7 @@
   },
   {
    "archive": "Elves, 'the speakers'",
-   "eldamo": "female Elf",
+   "eldamo": "female Elf — a homograph, not a disagreement; see the link record",
    "word": "quendi"
   },
   {
@@ -763,7 +763,7 @@
    "ambiguous": false,
    "archive_gloss": "Elves, 'the speakers'",
    "candidates": 1,
-   "eldamo_gloss": "female Elf",
+   "eldamo_gloss": "female Elf — A HOMOGRAPH, NOT A DISAGREEMENT: Eldamo's entry is the ner/nis material in Morgoth's Ring, where quende/quendi is the feminine singular; the archive's gloss is the plural Quendi of App F. Both are Tolkien's, for different words. candidates=1 measures how many Eldamo entries share the string, and cannot see an ambiguity inside the word",
    "eldamo_word": "quendi",
    "lang": "q",
    "url": "https://eldamo.org/content/words/word-3395915147.html",
@@ -1572,7 +1572,7 @@
  "n_roots_linked": 438,
  "n_roots_reconstructed": 0,
  "n_roots_unmatched": 40,
- "note": "For every word the archive holds on its own evidence, a link to Paul Strack's Eldamo entry for it. NOTHING IS IMPORTED: Eldamo is a scholarly compilation and much of it is reconstruction, while this archive cites the 49 volumes for every claim it makes. The reader gets Strack's depth; the archive keeps saying only what it can cite.",
+ "note": "For every word the archive holds on its own evidence, a link to Paul Strack's Eldamo entry for it. Strack's glosses are stored only in fields namespaced eldamo_*, never in the archive's own voice: Eldamo is a scholarly compilation and much of it is reconstruction, while this archive cites the 49 volumes for every claim it makes. The reader gets Strack's depth; the archive keeps saying only what it can cite.",
  "roots": [
   {
    "ambiguous": false,
