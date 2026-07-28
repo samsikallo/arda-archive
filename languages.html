@@ -391,3 +391,9 @@ const st=document.createElement("style");st.textContent=".xlt td,.xlt th{border-
 if(location.hash.includes("tab=xlate"))b.click();
 })();
 </script>
+<!-- SPOKEN ARDA. The "say it" button on this page calls speakArda(), which lives in
+     speak.js. compare.html, place.html and character.html all load it; THIS page, the one
+     that carries the button, did not -- so pressing it threw ReferenceError for every
+     reader. No guard could see it, because until now no test had ever pressed a button on
+     this site. -->
+<script src="speak.js"></script>
