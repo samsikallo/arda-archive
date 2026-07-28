@@ -1,6 +1,6 @@
 # THE CORPUS INDEX — Phase 1 of the re-ingestion
 ### All twenty-eight volumes of /home/raz/samsi, machine-extracted in full, structurally indexed, and concordanced.
-Total extracted text: **5,615,333 words** across 28 volumes. Every volume's full text now backs the archive's audits and the entity concordance (arda_concordance.json: 541 entities, 77,372 located mentions).
+Total extracted text: **5,615,333 words** across 28 volumes. Every volume's full text backs the archive's audits. The entity concordance (arda_concordance.json: 541 entities, 77,372 located mentions) is narrower and says so here: it is counted over 28 of the 49 volumes — atlas, beren_bl, bolt1, bolt2 … — so two entities compared in it are compared over the same 28 books and not over the shelf. The 21 outside it are apptables, artfotr, artist, artwork, companion_t, forodrim and 15 more. Widening is not automatic: hobbit_ill is the same book as hobbit and would double-count, and roleplay and companion_t are tier 3/4.
 
 | volume | words | content types |
 |---|---|---|
