@@ -18,7 +18,7 @@
   "sacked",
   "unrecorded"
  ],
- "n_places": 77,
+ "n_places": 79,
  "n_steps": 79,
  "note": "The slider runs over the moments the archive actually records -- each distinct Age and year at which something in its timelines happened -- so it never moves through invented time. A place with no dated record is never hidden: the archive does not know when it stood, and hiding it would assert an absence no text makes.",
  "places": {
@@ -406,6 +406,16 @@
     "status": "event",
     "what": "Ered Luin broken in the War of Wrath's tumults; many remove to Khazad-dûm",
     "year": 40
+   }
+  ],
+  "bombadil s house": [
+   {
+    "age": "T.A.",
+    "cite": "LotR I.6–8 [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Old Man Willow overruled; the Wight cast out; four hobbits saved twice",
+    "year": 3018
    }
   ],
   "bree": [
@@ -860,6 +870,32 @@
     "status": "drowned",
     "what": "Beleriand was drowned; this place stood in that land",
     "year": 587
+   }
+  ],
+  "fornost erain": [
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "event",
+    "what": "Amlaith, eldest son of Eärendur, holds Fornost and the west",
+    "year": 861
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A [C]",
+    "rank": 3,
+    "status": "burned",
+    "what": "The long Angmar war: Amon Sûl burned (1409); the Great Plague (1636); Fornost falls (1974); Arvedui drowns in Forochel (1975)",
+    "year": 1409
+   },
+   {
+    "age": "T.A.",
+    "cite": "App A/B",
+    "rank": 3,
+    "status": "event",
+    "what": "Fall of Arthedain; Battle of Fornost; Angmar broken",
+    "year": 1974
    }
   ],
   "gladden fields": [

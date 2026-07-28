@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 485,
+ "n": 480,
  "places": {
   "adorn": {
    "ages": [
@@ -381,6 +381,46 @@
     "MAN_MADE_CITY"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "amon hen": {
+   "ages": [
+    "TA"
+   ],
+   "cites": [
+    "The Lord of the Rings [C]",
+    "LotR II.10",
+    "LotR II.9, Aragorn at Nen Hithoel [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": 6541,
+     "parent": "rohan",
+     "span": "T.A. 2510 – enduring",
+     "to": 7180,
+     "why": "the archive holds this containment; see the record's notes"
+    }
+   ],
+   "coords": [],
+   "n": "Amon Hen",
+   "name_conf": "H",
+   "notes": [
+    "“He was sitting upon the Seat of Seeing, on Amon Hen, the Hill of the Eye of the Men of Númenor.” — The Lord of the Rings [C]",
+    "the Hill of the Eye, with the Seat of Seeing upon it. THE ARCHIVE HAD NO RECORD FOR IT: its only trace was inside the living map’s event label “Parth Galen — Amon Hen”, which had become a single place under a compound key",
+    "The Breaking of the Fellowship; Boromir's last fight, Feb 26, 3019.",
+    "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
+    "“Upon the left stands Amon Lhaw, and upon the right is Amon Hen, the Hills of Hearing and of Sight. In the days of the great kings there were high seats upon them, and watch was kept there.” — LotR II.9, Aragorn at Nen Hithoel [C]",
+    "a work of the great kings of Gondor at Nen Hithoel, watched from Gondor's northern march; the Reader's Companion glosses the seat as 'on Amon Hen, the Hill of the Eye of the Men of Numenor' [EXT]"
+   ],
+   "parents": [
+    "rohan"
+   ],
+   "place_conf": null,
+   "timeline": [],
+   "types": [
+    "NATURAL_HILL",
+    "MAN_MADE_LANDMARK"
+   ]
   },
   "amon obel": {
    "ages": [],
@@ -1872,18 +1912,18 @@
    "containment": [
     {
      "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
-     "frm": -4800,
-     "parent": "bombadil",
-     "span": "'Eldest' – enduring",
-     "to": 7180,
-     "why": "the archive holds this containment; see the record's notes"
-    },
-    {
-     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
      "frm": 4892,
      "parent": "cardolan",
      "span": "T.A. 861–1636",
      "to": 5667,
+     "why": "the archive holds this containment; see the record's notes"
+    },
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "bombadil s house",
+     "span": "",
+     "to": null,
      "why": "the archive holds this containment; see the record's notes"
     }
    ],
@@ -1906,7 +1946,7 @@
    ],
    "parents": [
     "cardolan",
-    "bombadil"
+    "bombadil s house"
    ],
    "place_conf": "H",
    "timeline": [],
@@ -2222,22 +2262,34 @@
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
-  "bombadil": {
+  "bombadil s house": {
    "ages": [
     "TA"
    ],
    "cites": [
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]",
     "LotR I.6–8 [C]"
    ],
-   "coords": [],
-   "n": "The house of Tom Bombadil",
+   "coords": [
+    {
+     "conf": "M",
+     "frame": "TA",
+     "x": 263,
+     "y": 651
+    }
+   ],
+   "n": "Bombadil's house",
    "name_conf": "H",
    "notes": [
+    "the middle of the shape the archive draws",
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "held under two keys until they were folded: the record keyed 'bombadil' is named 'The house of Tom Bombadil' in its own words -- the same house the other holds, arriving from the realms model instead of the drawn sheet. [I-H]",
     "The Old Forest and the Downs between Buckland's hedge and the Barrow-country — a bounded march older than every realm around it. — LotR I.6–8 [C]",
-    "the realms model dates it 'Eldest' – enduring"
+    "the realms model dates it 'Eldest' – enduring",
+    "the vector spec also lists it as “The house of Tom Bombadil”, at the same place; one record, not two"
    ],
    "parents": [],
-   "place_conf": "H",
+   "place_conf": "M",
    "timeline": [
     {
      "cite": "LotR I.7 [C]",
@@ -2255,38 +2307,10 @@
     }
    ],
    "types": [
+    "MAN_MADE_SETTLEMENT",
     "POLITY_REALM"
    ],
    "unplaced": "a realm in its own right — nothing contains it"
-  },
-  "bombadil s house": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]"
-   ],
-   "coords": [
-    {
-     "conf": "M",
-     "frame": "TA",
-     "x": 263,
-     "y": 651
-    }
-   ],
-   "n": "Bombadil's house",
-   "name_conf": "H",
-   "notes": [
-    "the middle of the shape the archive draws",
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "timeline": [],
-   "types": [
-    "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "brandywine bridge": {
    "ages": [
@@ -2748,7 +2772,18 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (REGIONS_TA); the name is attested 224 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (REGIONS_TA); the name is attested 224 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "LotR I.5"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "the shire",
+     "span": "",
+     "to": null,
+     "why": "the archive holds this containment; see the record's notes"
+    }
    ],
    "coords": [
     {
@@ -2762,47 +2797,17 @@
    "name_conf": "H",
    "notes": [
     "the middle of the shape the archive draws",
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
-   ],
-   "parents": [],
-   "place_conf": "M",
-   "timeline": [],
-   "types": [
-    "POLITY_REGION"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
-  "buckland crickhollow": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "LotR I.5"
-   ],
-   "containment": [
-    {
-     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
-     "frm": null,
-     "parent": "the shire",
-     "span": "",
-     "to": null,
-     "why": "the archive holds this containment; see the record's notes"
-    }
-   ],
-   "coords": [],
-   "n": "Buckland & Crickhollow",
-   "name_conf": null,
-   "notes": [
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "Brandy Hall of the Brandybucks; the conspiracy unmasked itself here.",
     "within the The Shire boundary as the living map draws it, T.A. 1601– [I-M]"
    ],
    "parents": [
     "the shire"
    ],
-   "place_conf": "H",
+   "place_conf": "M",
    "timeline": [],
    "types": [
-    "MAN_MADE_CITY"
+    "POLITY_REGION"
    ]
   },
   "bucklebury": {
@@ -3787,7 +3792,19 @@
    "ages": [
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "LotR I.5"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "the shire",
+     "span": "",
+     "to": null,
+     "why": "the archive holds this containment; see the record's notes"
+    }
+   ],
    "coords": [
     {
      "conf": "H",
@@ -3800,15 +3817,18 @@
    "name_conf": null,
    "notes": [
     "spec TA: house",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "Brandy Hall of the Brandybucks; the conspiracy unmasked itself here.",
+    "within the The Shire boundary as the living map draws it, T.A. 1601– [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "the shire"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
     "MAN_MADE_DWELLING"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "crissaegrim": {
    "ages": [
@@ -7319,7 +7339,7 @@
     "NATURAL_HILL"
    ]
   },
-  "fornost": {
+  "fornost erain": {
    "ages": [
     "TA"
    ],
@@ -7340,13 +7360,24 @@
      "why": "the archive holds this containment; see the record's notes"
     }
    ],
-   "coords": [],
-   "n": "Fornost",
+   "coords": [
+    {
+     "conf": "H",
+     "frame": "TA",
+     "x": 270,
+     "y": 752
+    }
+   ],
+   "n": "Fornost Erain",
    "name_conf": null,
    "notes": [
+    "spec TA: ruined city",
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "held under two keys until they were folded: Fornost Erain, Norbury of the Kings, IS Fornost. One record has the city and the coordinate, the other the ruin it became; the place was both, in that order. [I-H]",
     "also Norbury; Deadmen's Dike",
     "The North-kingdom's last capital; the great battle of 1975 broke Angmar west of it.",
-    "within the Arthedain boundary as the living map draws it, T.A. 861–1974 [I-M]"
+    "within the Arthedain boundary as the living map draws it, T.A. 861–1974 [I-M]",
+    "the vector spec also lists it as “Fornost”, at the same place; one record, not two"
    ],
    "parents": [
     "arthedain"
@@ -7383,35 +7414,9 @@
     }
    ],
    "types": [
+    "MAN_MADE_CITY",
     "MAN_MADE_RUIN"
    ]
-  },
-  "fornost erain": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [],
-   "coords": [
-    {
-     "conf": "H",
-     "frame": "TA",
-     "x": 270,
-     "y": 752
-    }
-   ],
-   "n": "Fornost Erain",
-   "name_conf": null,
-   "notes": [
-    "spec TA: ruined city",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
-   ],
-   "parents": [],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
-    "MAN_MADE_CITY"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "forodwaith": {
    "ages": [
@@ -10022,7 +10027,10 @@
    "notes": [
     "interior label of Gondor, per the vector spec",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "Evidence Table G19"
+    "Evidence Table G19",
+    "held under two keys until they were folded: the open woodland strip IS Ithilien's own character, not a second place within it: the region keeps its coordinate and gains the forest type. [I-H]",
+    "spec TA: Forests",
+    "the vector spec also lists it as “Ithilien woods (open woodland strip)”, at the same place; one record, not two"
    ],
    "parents": [
     "gondor"
@@ -10030,25 +10038,9 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "POLITY_SUBREGION"
-   ]
-  },
-  "ithilien woods": {
-   "ages": [],
-   "cites": [],
-   "coords": [],
-   "n": "Ithilien woods (open woodland strip)",
-   "name_conf": null,
-   "notes": [
-    "spec TA: Forests"
-   ],
-   "parents": [],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
+    "POLITY_SUBREGION",
     "NATURAL_FOREST"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "ivrin": {
    "ages": [
@@ -13209,7 +13201,8 @@
     "TA"
    ],
    "cites": [
-    "C IV.3, VI.2–3"
+    "C IV.3, VI.2–3",
+    "LotR VI.3/5"
    ],
    "containment": [
     {
@@ -13234,38 +13227,7 @@
    "notes": [
     "interior label of Mordor, per the vector spec",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
-    "Evidence Table G22"
-   ],
-   "parents": [
-    "mordor"
-   ],
-   "place_conf": "H",
-   "timeline": [],
-   "types": [
-    "POLITY_SUBREGION"
-   ]
-  },
-  "nurn sea of nurnen": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "LotR VI.3/5"
-   ],
-   "containment": [
-    {
-     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
-     "frm": 1590,
-     "parent": "mordor",
-     "span": "S.A. c.1000 – T.A. 3019",
-     "to": 7050,
-     "why": "the archive holds this containment; see the record's notes"
-    }
-   ],
-   "coords": [],
-   "n": "Núrn & Sea of Núrnen",
-   "name_conf": null,
-   "notes": [
+    "Evidence Table G22",
     "Mordor's slave-fields that fed the armies; given freed to the slaves by Elessar.",
     "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]"
    ],
@@ -13275,7 +13237,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "NATURAL_SEA"
+    "POLITY_SUBREGION"
    ]
   },
   "nw shore forest at sea of rhun": {
@@ -13548,13 +13510,27 @@
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "parth galen": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "aka": [
     "the Green Sward"
    ],
    "cites": [
     "LotR II.10, the Breaking of the Fellowship [C]",
+    "LotR II.10",
+    "LotR II.9, Aragorn at Nen Hithoel [C]",
     "placed at Nen Hithoel [I-H]: the text names the container, not a position within it"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": 6541,
+     "parent": "rohan",
+     "span": "T.A. 2510 – enduring",
+     "to": 7180,
+     "why": "the archive holds this containment; see the record's notes"
+    }
    ],
    "coords": [
     {
@@ -13569,41 +13545,20 @@
    "notes": [
     "“Here upon its western side under the shadow of Tol Brandir a green lawn ran down to the water from the feet of Amon Hen.” — LotR II.10, the Breaking of the Fellowship [C]",
     "the green sward on the western shore of Nen Hithoel beneath Amon Hen, where the Fellowship broke and Boromir fell",
-    "NOT ITS OWN POINT: this is the point of Nen Hithoel, which contains it — the lawn runs down to that water, and this is the lake's point"
-   ],
-   "parents": [],
-   "place_conf": null,
-   "timeline": [],
-   "types": [
-    "NATURAL_FIELD"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
-  "parth galen amon hen": {
-   "ages": [
-    "TA"
-   ],
-   "cites": [
-    "LotR II.10",
-    "LotR II.9, Aragorn at Nen Hithoel [C]"
-   ],
-   "coords": [],
-   "n": "Parth Galen — Amon Hen",
-   "name_conf": null,
-   "notes": [
     "The Breaking of the Fellowship; Boromir's last fight, Feb 26, 3019.",
     "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
     "“Upon the left stands Amon Lhaw, and upon the right is Amon Hen, the Hills of Hearing and of Sight. In the days of the great kings there were high seats upon them, and watch was kept there.” — LotR II.9, Aragorn at Nen Hithoel [C]",
     "a work of the great kings of Gondor at Nen Hithoel, watched from Gondor's northern march; the Reader's Companion glosses the seat as 'on Amon Hen, the Hill of the Eye of the Men of Numenor' [EXT]",
-    "drawn within rohan, and that containment is not carried: the high seats were made by Gondor's kings, and the hills stand at Nen Hithoel in the Emyn Muil, not in the Calenardhon that became the Mark"
+    "NOT ITS OWN POINT: this is the point of Nen Hithoel, which contains it — the lawn runs down to that water, and this is the lake's point"
    ],
-   "parents": [],
-   "place_conf": "H",
+   "parents": [
+    "rohan"
+   ],
+   "place_conf": null,
    "timeline": [],
    "types": [
-    "NATURAL_HILL"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+    "NATURAL_FIELD"
+   ]
   },
   "pass of aglon": {
    "ages": [
@@ -14618,9 +14573,22 @@
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "sea of nurnen": {
-   "ages": [],
+   "ages": [
+    "TA"
+   ],
    "cites": [
-    "placed from the archive's own vector map (LAKES_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (LAKES_TA) [I-M]; the record existed already and had no coordinate",
+    "LotR VI.3/5"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": 1590,
+     "parent": "mordor",
+     "span": "S.A. c.1000 – T.A. 3019",
+     "to": 7050,
+     "why": "the archive holds this containment; see the record's notes"
+    }
    ],
    "coords": [
     {
@@ -14634,15 +14602,18 @@
    "name_conf": null,
    "notes": [
     "spec TA: Water",
-    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
+    "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
+    "Mordor's slave-fields that fed the armies; given freed to the slaves by Elessar.",
+    "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]"
    ],
-   "parents": [],
+   "parents": [
+    "mordor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
     "NATURAL_SEA"
-   ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   ]
   },
   "sea of rhun": {
    "ages": [
@@ -15778,16 +15749,16 @@
    "containment": [
     {
      "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
-     "frm": -4800,
-     "parent": "bombadil",
-     "span": "'Eldest' – enduring",
-     "to": 7180,
+     "frm": null,
+     "parent": "the shire",
+     "span": "",
+     "to": null,
      "why": "the archive holds this containment; see the record's notes"
     },
     {
      "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
      "frm": null,
-     "parent": "the shire",
+     "parent": "bombadil s house",
      "span": "",
      "to": null,
      "why": "the archive holds this containment; see the record's notes"
@@ -15812,7 +15783,7 @@
    ],
    "parents": [
     "the shire",
-    "bombadil"
+    "bombadil s house"
    ],
    "place_conf": "H",
    "timeline": [

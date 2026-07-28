@@ -1,5 +1,5 @@
 {
- "n_edges": 103,
+ "n_edges": 108,
  "n_realms": 23,
  "note": "A realm is shown by the places the corpus puts inside it, and NEVER by a drawn border. The corpus describes an extent in words -- 'from the Anduin to the Sea' -- which names what a border runs between and does not give a line; the one sheet that does draw realm polygons has been measured at 44 miles out. The shape a reader infers from the lit places is the reader's own inference, not the archive's assertion. Only members the map can actually show are counted.",
  "realms": [
@@ -99,6 +99,86 @@
    "name": "Gondor"
   },
   {
+   "ages": "TA",
+   "key": "the shire",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "brandywine bridge",
+     "name": "Brandywine Bridge",
+     "where": "sheet"
+    },
+    {
+     "key": "buckland",
+     "name": "Buckland",
+     "where": "unmapped"
+    },
+    {
+     "key": "bucklebury ferry",
+     "name": "Bucklebury + Ferry",
+     "where": "unmapped"
+    },
+    {
+     "key": "bywater",
+     "name": "Bywater",
+     "where": "sheet"
+    },
+    {
+     "key": "crickhollow",
+     "name": "Crickhollow",
+     "where": "sheet"
+    },
+    {
+     "key": "frogmorton",
+     "name": "Frogmorton",
+     "where": "sheet"
+    },
+    {
+     "key": "hobbiton",
+     "name": "Hobbiton",
+     "where": "sheet"
+    },
+    {
+     "key": "hobbiton bag end",
+     "name": "Hobbiton + Bag End",
+     "where": "unmapped"
+    },
+    {
+     "key": "michel delving",
+     "name": "Michel Delving",
+     "where": "sheet"
+    },
+    {
+     "key": "stock",
+     "name": "Stock",
+     "where": "sheet"
+    },
+    {
+     "key": "the old forest",
+     "name": "The Old Forest",
+     "where": "sheet"
+    },
+    {
+     "key": "three farthing stone",
+     "name": "Three-Farthing Stone",
+     "where": "sheet"
+    },
+    {
+     "key": "tuckborough great smials",
+     "name": "Tuckborough/Great Smials",
+     "where": "unmapped"
+    },
+    {
+     "key": "woodhall woody end",
+     "name": "Woodhall/Woody End",
+     "where": "unmapped"
+    }
+   ],
+   "n_members": 18,
+   "n_shown": 14,
+   "name": "The Shire"
+  },
+  {
    "ages": "FoA,TA",
    "key": "rohan",
    "kind": "POLITY_REALM",
@@ -149,6 +229,11 @@
      "where": "sheet"
     },
     {
+     "key": "parth galen",
+     "name": "Parth Galen",
+     "where": "unmapped"
+    },
+    {
      "key": "the wold",
      "name": "The Wold",
      "where": "unmapped"
@@ -164,79 +249,9 @@
      "where": "unmapped"
     }
    ],
-   "n_members": 12,
-   "n_shown": 12,
+   "n_members": 14,
+   "n_shown": 13,
    "name": "Rohan"
-  },
-  {
-   "ages": "TA",
-   "key": "the shire",
-   "kind": "POLITY_REALM",
-   "members": [
-    {
-     "key": "brandywine bridge",
-     "name": "Brandywine Bridge",
-     "where": "sheet"
-    },
-    {
-     "key": "bucklebury ferry",
-     "name": "Bucklebury + Ferry",
-     "where": "unmapped"
-    },
-    {
-     "key": "bywater",
-     "name": "Bywater",
-     "where": "sheet"
-    },
-    {
-     "key": "frogmorton",
-     "name": "Frogmorton",
-     "where": "sheet"
-    },
-    {
-     "key": "hobbiton",
-     "name": "Hobbiton",
-     "where": "sheet"
-    },
-    {
-     "key": "hobbiton bag end",
-     "name": "Hobbiton + Bag End",
-     "where": "unmapped"
-    },
-    {
-     "key": "michel delving",
-     "name": "Michel Delving",
-     "where": "sheet"
-    },
-    {
-     "key": "stock",
-     "name": "Stock",
-     "where": "sheet"
-    },
-    {
-     "key": "the old forest",
-     "name": "The Old Forest",
-     "where": "sheet"
-    },
-    {
-     "key": "three farthing stone",
-     "name": "Three-Farthing Stone",
-     "where": "sheet"
-    },
-    {
-     "key": "tuckborough great smials",
-     "name": "Tuckborough/Great Smials",
-     "where": "unmapped"
-    },
-    {
-     "key": "woodhall woody end",
-     "name": "Woodhall/Woody End",
-     "where": "unmapped"
-    }
-   ],
-   "n_members": 17,
-   "n_shown": 12,
-   "name": "The Shire"
   },
   {
    "ages": "SA,TA",
@@ -282,10 +297,15 @@
      "key": "nurn",
      "name": "Nurn",
      "where": "unmapped"
+    },
+    {
+     "key": "sea of nurnen",
+     "name": "Sea of Nurnen",
+     "where": "sheet"
     }
    ],
    "n_members": 9,
-   "n_shown": 8,
+   "n_shown": 9,
    "name": "Mordor"
   },
   {
@@ -400,6 +420,36 @@
   },
   {
    "ages": "TA",
+   "key": "arthedain",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "annuminas",
+     "name": "Annúminas",
+     "where": "sheet"
+    },
+    {
+     "key": "fornost erain",
+     "name": "Fornost Erain",
+     "where": "sheet"
+    },
+    {
+     "key": "tower hills",
+     "name": "Tower Hills",
+     "where": "sheet"
+    },
+    {
+     "key": "weathertop",
+     "name": "Weathertop",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 4,
+   "n_shown": 4,
+   "name": "Arthedain"
+  },
+  {
+   "ages": "TA",
    "key": "rhudaur",
    "kind": "POLITY_REALM",
    "members": [
@@ -427,31 +477,6 @@
    "n_members": 4,
    "n_shown": 4,
    "name": "Rhudaur"
-  },
-  {
-   "ages": "TA",
-   "key": "arthedain",
-   "kind": "POLITY_REALM",
-   "members": [
-    {
-     "key": "annuminas",
-     "name": "Annúminas",
-     "where": "sheet"
-    },
-    {
-     "key": "tower hills",
-     "name": "Tower Hills",
-     "where": "sheet"
-    },
-    {
-     "key": "weathertop",
-     "name": "Weathertop",
-     "where": "sheet"
-    }
-   ],
-   "n_members": 4,
-   "n_shown": 3,
-   "name": "Arthedain"
   },
   {
    "ages": "FA",
@@ -547,6 +572,26 @@
    "n_members": 3,
    "n_shown": 2,
    "name": "Angmar"
+  },
+  {
+   "ages": "TA",
+   "key": "bombadil s house",
+   "kind": "MAN_MADE_SETTLEMENT,POLITY_REALM",
+   "members": [
+    {
+     "key": "barrow downs",
+     "name": "Barrow-downs",
+     "where": "sheet"
+    },
+    {
+     "key": "the old forest",
+     "name": "The Old Forest",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 2,
+   "n_shown": 2,
+   "name": "Bombadil's house"
   },
   {
    "ages": "SA,TA",
@@ -727,26 +772,6 @@
    "n_members": 2,
    "n_shown": 2,
    "name": "The Falas"
-  },
-  {
-   "ages": "TA",
-   "key": "bombadil",
-   "kind": "POLITY_REALM",
-   "members": [
-    {
-     "key": "barrow downs",
-     "name": "Barrow-downs",
-     "where": "sheet"
-    },
-    {
-     "key": "the old forest",
-     "name": "The Old Forest",
-     "where": "sheet"
-    }
-   ],
-   "n_members": 2,
-   "n_shown": 2,
-   "name": "The house of Tom Bombadil"
   }
  ]
 }
