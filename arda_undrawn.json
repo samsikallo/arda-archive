@@ -1,7 +1,101 @@
 {
- "n_points": 136,
- "n_records": 145,
+ "n_off_sheet": 6,
+ "n_points": 130,
+ "n_records": 139,
  "note": "Places the archive holds with a point and does not draw on its sheet. Shown as a layer above the map and never drawn into it, because the base sheet's restraint is deliberate. ONE MARK PER POINT: seven points carry more than one record, and every one of those is a borrowed placing -- Khazad-dûm, its Bridge and its West-gate all sit at Caradhras' point because that is the only point any text gives them. A hollow mark is a point that was borrowed or measured rather than the place's own.",
+ "off_sheet": [
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "bay of eldamar",
+     "kind": "NATURAL_SEA",
+     "name": "Bay of Eldamar"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": -1125.0,
+   "y": 2200.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "shadowy seas",
+     "kind": "NATURAL_SEA",
+     "name": "the Shadowy Seas"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": -750.0,
+   "y": 1925.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "belegaer",
+     "kind": "NATURAL_SEA",
+     "name": "Belegaer"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": -350.0,
+   "y": 2325.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "great sea",
+     "kind": "NATURAL_SEA",
+     "name": "The Great Sea"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": -300.0,
+   "y": 2575.0
+  },
+  {
+   "at": [
+    {
+     "ages": "",
+     "how": "own",
+     "key": "helcaraxe",
+     "kind": "NATURAL_SEA",
+     "name": "Helcaraxe"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": -300.0,
+   "y": 150.0
+  },
+  {
+   "at": [
+    {
+     "ages": "TA",
+     "how": "own",
+     "key": "near harad",
+     "kind": "POLITY_REGION",
+     "name": "Near Harad"
+    }
+   ],
+   "frame": "TA",
+   "how": "own",
+   "x": 6000.0,
+   "y": 4625.0
+  }
+ ],
+ "off_sheet_note": "These lie beyond the edge of the sheet the archive draws, which runs from x=-350 to x=1005 and stops. They are recorded here rather than drawn at a coordinate no reader could ever reach, and rather than dropped in silence.",
  "points": [
   {
    "at": [
@@ -564,81 +658,6 @@
    "how": "own",
    "x": 2142.5,
    "y": 2565.0
-  },
-  {
-   "at": [
-    {
-     "ages": "",
-     "how": "own",
-     "key": "bay of eldamar",
-     "kind": "NATURAL_SEA",
-     "name": "Bay of Eldamar"
-    }
-   ],
-   "frame": "TA",
-   "how": "own",
-   "x": -1125.0,
-   "y": 2200.0
-  },
-  {
-   "at": [
-    {
-     "ages": "",
-     "how": "own",
-     "key": "shadowy seas",
-     "kind": "NATURAL_SEA",
-     "name": "the Shadowy Seas"
-    }
-   ],
-   "frame": "TA",
-   "how": "own",
-   "x": -750.0,
-   "y": 1925.0
-  },
-  {
-   "at": [
-    {
-     "ages": "",
-     "how": "own",
-     "key": "belegaer",
-     "kind": "NATURAL_SEA",
-     "name": "Belegaer"
-    }
-   ],
-   "frame": "TA",
-   "how": "own",
-   "x": -350.0,
-   "y": 2325.0
-  },
-  {
-   "at": [
-    {
-     "ages": "",
-     "how": "own",
-     "key": "great sea",
-     "kind": "NATURAL_SEA",
-     "name": "The Great Sea"
-    }
-   ],
-   "frame": "TA",
-   "how": "own",
-   "x": -300.0,
-   "y": 2575.0
-  },
-  {
-   "at": [
-    {
-     "ages": "",
-     "how": "own",
-     "key": "helcaraxe",
-     "kind": "NATURAL_SEA",
-     "name": "Helcaraxe"
-    }
-   ],
-   "frame": "TA",
-   "how": "own",
-   "x": -300.0,
-   "y": 150.0
   },
   {
    "at": [
@@ -2015,21 +2034,6 @@
    "how": "own",
    "x": 5950.0,
    "y": 3475.0
-  },
-  {
-   "at": [
-    {
-     "ages": "TA",
-     "how": "own",
-     "key": "near harad",
-     "kind": "POLITY_REGION",
-     "name": "Near Harad"
-    }
-   ],
-   "frame": "TA",
-   "how": "own",
-   "x": 6000.0,
-   "y": 4625.0
   },
   {
    "at": [
