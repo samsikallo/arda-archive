@@ -2,13 +2,16 @@
 // current-page highlight, breadcrumb, keyboard shim for legacy widgets, theme toggle.
 (function(){
 const GROUPS=[
+  // Three of these used to be separate halls -- the living map, the turning ages, the
+ // redrawn base. They were retired into tombstones and every link repointed onto the
+ // Map, which was right; but the repointing left the NAV offering all three as if they
+ // were still distinct places to go -- four entries, every one landing on map.html. A
+ // menu that lists one destination four times under four names is not a menu.
  ["Atlas",[["map.html","the map of Arda","every feature answers \u2014 hover, click, the record"],
-   ["map.html","the living map","interactive map, journeys, battles"],
-   ["map.html","the turning ages","map + chronicle on one slider"],
-   ["realms.html","realms","the political atlas — 60 polities"],
+   ["valinor.html","Aman","drawn from the corpus \u2014 the archive's own work, not Tolkien's hand"],
+   ["realms.html","realms","the political atlas \u2014 60 polities"],
    ["gazetteer.html","gazetteer","every named place, by age and kind"],
-   ["cosmology.html","cosmology","the shape of the world itself"],
-   ["map.html","the redrawn base","legacy vector map"]]],
+   ["cosmology.html","cosmology","the shape of the world itself"]]],
  ["Chronicle",[["arda_timeline.html","timeline","all of history, zoomable"],
    ["reckoning.html","reckonings","calendars, dates & measures"],
    ["annals.html","annals of the archive","what's new on this site"]]],
