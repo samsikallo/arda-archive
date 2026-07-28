@@ -1,10 +1,14 @@
 {
- "n_edges": 108,
- "n_realms": 23,
+ "n_edges": 109,
+ "n_realms": 31,
  "note": "A realm is shown by the places the corpus puts inside it, and NEVER by a drawn border. The corpus describes an extent in words -- 'from the Anduin to the Sea' -- which names what a border runs between and does not give a line; the one sheet that does draw realm polygons has been measured at 44 miles out. The shape a reader infers from the lit places is the reader's own inference, not the archive's assertion. Only members the map can actually show are counted.",
  "realms": [
   {
    "ages": "FoA,SA,TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "gondor",
    "kind": "POLITY_REALM",
    "members": [
@@ -100,6 +104,10 @@
   },
   {
    "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "the shire",
    "kind": "POLITY_REALM",
    "members": [
@@ -180,6 +188,10 @@
   },
   {
    "ages": "FoA,TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "rohan",
    "kind": "POLITY_REALM",
    "members": [
@@ -255,6 +267,10 @@
   },
   {
    "ages": "SA,TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "mordor",
    "kind": "POLITY_REALM",
    "members": [
@@ -310,6 +326,10 @@
   },
   {
    "ages": "SA,TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "arnor",
    "kind": "POLITY_REALM",
    "members": [
@@ -350,6 +370,25 @@
   },
   {
    "ages": "SA,TA",
+   "bounded_by": [
+    {
+     "key": "gulf of lhun",
+     "name": "Gulf of Lhun"
+    },
+    {
+     "key": "ered luin third age remnant",
+     "name": "Ered Luin (Blue Mountains), Third Age remnant"
+    },
+    {
+     "key": "lhun",
+     "name": "Lhun (Lune)"
+    }
+   ],
+   "bounds_cite": "HoME XII, The Peoples of Middle-earth [C]",
+   "bounds_quote": "The regions of Forlindon and Harlindon were inhabited by Elves and were the chief part of Gil-galad’s kingdom, which extended, north of the Gulf of Lune, to include the lands east of the Blue Mountains and west of the River Lune as far as the inflow of the Little Lune.",
+   "bounds_unheld": [
+    "Little Lune"
+   ],
    "key": "lindon",
    "kind": "POLITY_REALM",
    "members": [
@@ -390,6 +429,10 @@
   },
   {
    "ages": "FA,YT",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "angband",
    "kind": "MAN_MADE_FORTRESS",
    "members": [
@@ -420,6 +463,10 @@
   },
   {
    "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "arthedain",
    "kind": "POLITY_REALM",
    "members": [
@@ -450,6 +497,10 @@
   },
   {
    "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "rhudaur",
    "kind": "POLITY_REALM",
    "members": [
@@ -480,6 +531,10 @@
   },
   {
    "ages": "FA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "hithlum",
    "kind": "POLITY_REALM",
    "members": [
@@ -505,6 +560,10 @@
   },
   {
    "ages": "SA,TA,YT",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "khazaddum",
    "kind": "MAN_MADE_MANSION,POLITY_REALM",
    "members": [
@@ -530,6 +589,10 @@
   },
   {
    "ages": "",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "mirkwood",
    "kind": "NATURAL_FOREST",
    "members": [
@@ -555,6 +618,10 @@
   },
   {
    "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "angmar",
    "kind": "POLITY_REALM",
    "members": [
@@ -575,6 +642,10 @@
   },
   {
    "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "bombadil s house",
    "kind": "MAN_MADE_SETTLEMENT,POLITY_REALM",
    "members": [
@@ -595,6 +666,10 @@
   },
   {
    "ages": "SA,TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "bree",
    "kind": "MAN_MADE_TOWN,MAN_MADE_CITY",
    "members": [
@@ -615,6 +690,10 @@
   },
   {
    "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "cardolan",
    "kind": "POLITY_REALM",
    "members": [
@@ -635,6 +714,10 @@
   },
   {
    "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "dale",
    "kind": "MAN_MADE_TOWN,NATURAL_VALLEY,MAN_MADE_CITY",
    "members": [
@@ -655,6 +738,10 @@
   },
   {
    "ages": "FA,YT",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "doriath",
    "kind": "POLITY_REALM",
    "members": [
@@ -675,6 +762,10 @@
   },
   {
    "ages": "",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "lothlorien",
    "kind": "NATURAL_FOREST",
    "members": [
@@ -695,6 +786,10 @@
   },
   {
    "ages": "",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "misty mountains",
    "kind": "NATURAL_MOUNTAIN_RANGE",
    "members": [
@@ -715,6 +810,10 @@
   },
   {
    "ages": "FA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "nargothrond",
    "kind": "MAN_MADE_CITY,MAN_MADE_HALL",
    "members": [
@@ -735,6 +834,10 @@
   },
   {
    "ages": "FoA,SA,TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "rivendell",
    "kind": "MAN_MADE_REFUGE,MAN_MADE_HALL",
    "members": [
@@ -755,6 +858,10 @@
   },
   {
    "ages": "FA,YT",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
    "key": "falas",
    "kind": "POLITY_REALM",
    "members": [
@@ -772,6 +879,186 @@
    "n_members": 2,
    "n_shown": 2,
    "name": "The Falas"
+  },
+  {
+   "ages": "FA",
+   "bounded_by": [
+    {
+     "key": "rerir",
+     "name": "Rerir"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "There Mount Rerir, and about it many lesser heights, stood out from the main range of Ered Lindon westward; and in the angle between Rerir and Ered Lindon there was a lake, shadowed by mountains on all sides save the south.",
+   "bounds_unheld": [
+    "Ered Lindon"
+   ],
+   "key": "thargelion",
+   "kind": "POLITY_REGION",
+   "members": [
+    {
+     "key": "lake helevorn",
+     "name": "Lake Helevorn",
+     "where": "his plate"
+    }
+   ],
+   "n_members": 1,
+   "n_shown": 1,
+   "name": "Thargelion"
+  },
+  {
+   "ages": "FA",
+   "bounded_by": [
+    {
+     "key": "sirion",
+     "name": "Sirion"
+    },
+    {
+     "key": "teiglin",
+     "name": "Teiglin"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "And following Sirion from north to south there lay upon the right hand in West Beleriand the Forest of Brethil between Sirion and Teiglin, and then the realm of Nargothrond, between Teiglin and Narog.",
+   "bounds_unheld": [],
+   "key": "brethil",
+   "kind": "NATURAL_FOREST",
+   "members": [],
+   "n_members": 1,
+   "n_shown": 0,
+   "name": "Brethil"
+  },
+  {
+   "ages": "",
+   "bounded_by": [
+    {
+     "key": "sirion",
+     "name": "Sirion"
+    },
+    {
+     "key": "mindeb",
+     "name": "Mindeb"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "Upon the left hand of Sirion lay East Beleriand, at its widest a hundred leagues from Sirion to Gelion and the borders of Ossiriand; and first, between Sirion and Mindeb, lay the empty land of Dimbar under the peaks of the Crissaegrim, abode of eagles.",
+   "bounds_unheld": [],
+   "key": "dimbar",
+   "kind": "POLITY_REGION",
+   "members": [],
+   "n_members": 0,
+   "n_shown": 0,
+   "name": "Dimbar"
+  },
+  {
+   "ages": "",
+   "bounded_by": [
+    {
+     "key": "mindeb",
+     "name": "Mindeb"
+    },
+    {
+     "key": "esgalduin",
+     "name": "Esgalduin"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "Between Mindeb and the upper waters of Esgalduin lay the no-land of Nan Dungortheb; and that region was filled with fear, for upon its one side the power of Melian fenced the north march of Doriath, but upon the other side the sheer precipices of Ered Gorgoroth, Mountains of Terror, fell down from high Dorthonion.",
+   "bounds_unheld": [],
+   "key": "nan dungortheb",
+   "kind": "NATURAL_VALLEY",
+   "members": [],
+   "n_members": 0,
+   "n_shown": 0,
+   "name": "Nan Dungortheb"
+  },
+  {
+   "ages": "FA,YT",
+   "bounded_by": [
+    {
+     "key": "esgalduin",
+     "name": "Esgalduin"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "Its northern and lesser part, the Forest of Neldoreth, was bounded east and south by the dark river Esgalduin, which bent westward in the midst of the land; and between Aros and Esgalduin lay the denser and greater woods of Region.",
+   "bounds_unheld": [],
+   "key": "neldoreth",
+   "kind": "NATURAL_FOREST",
+   "members": [],
+   "n_members": 0,
+   "n_shown": 0,
+   "name": "Neldoreth"
+  },
+  {
+   "ages": "",
+   "bounded_by": [
+    {
+     "key": "firth of drengist",
+     "name": "Firth of Drengist"
+    },
+    {
+     "key": "taras",
+     "name": "Taras"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "That name was given at first to all the coastlands south of the Firth, but afterwards only to the land whose shores lay between Drengist and Mount Taras.",
+   "bounds_unheld": [],
+   "key": "nevrast",
+   "kind": "POLITY_REGION",
+   "members": [],
+   "n_members": 0,
+   "n_shown": 0,
+   "name": "Nevrast"
+  },
+  {
+   "ages": "FA",
+   "bounded_by": [
+    {
+     "key": "sirion",
+     "name": "Sirion"
+    },
+    {
+     "key": "narog",
+     "name": "Narog"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "Thence he looked westward, and through the mist and rains that lay upon those hills he saw Talath Dirnen, the Guarded Plain, stretching between Sirion and Narog; and beyond he descried afar the highlands of Taur-en-Faroth that rose above Nargothrond.",
+   "bounds_unheld": [],
+   "key": "talath dirnen",
+   "kind": "POLITY_REGION",
+   "members": [],
+   "n_members": 0,
+   "n_shown": 0,
+   "name": "Talath Dirnen"
+  },
+  {
+   "ages": "FA",
+   "bounded_by": [
+    {
+     "key": "andram",
+     "name": "Andram"
+    },
+    {
+     "key": "sirion",
+     "name": "Sirion"
+    },
+    {
+     "key": "gelion",
+     "name": "Gelion"
+    }
+   ],
+   "bounds_cite": "The Silmarillion [C]",
+   "bounds_quote": "But south of the Andram, between Sirion and Gelion, was a wild land of tangled forest in which no folk went, save here and there a few Dark Elves wandering; Taur-im- Duinath it was named, the Forest between the Rivers.",
+   "bounds_unheld": [],
+   "key": "taur im duinath",
+   "kind": "NATURAL_FOREST",
+   "members": [],
+   "n_members": 0,
+   "n_shown": 0,
+   "name": "Taur-im-Duinath"
   }
  ]
 }

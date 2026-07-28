@@ -95,7 +95,13 @@
  .member [fill]:not([fill="none"]){fill:#1d6a8f!important}
  .member text{fill:#1d6a8f!important}
  circle.member{fill:#1d6a8f!important;stroke:#fbf6e8!important}
-</style></head><body>
+ /* A BOUND IS NOT A MEMBER. What a text names the edge by is a different claim from what a
+    text puts inside, and neither of them is a line. */
+ .bound [stroke]:not([stroke="none"]):not([stroke="transparent"]){stroke:#8a5a12!important}
+ .bound [fill]:not([fill="none"]){fill:#8a5a12!important}
+ .bound text{fill:#8a5a12!important}
+ circle.bound{fill:#8a5a12!important;stroke:#fbf6e8!important}
+</style></head><body><a class="a-skip" href="#main">skip to content</a>
 <div class="hdr"><h1>The Map of Arda</h1><span style="flex:1"></span>
 <nav id="ardanav" aria-label="Archive halls"></nav>
 <span class="sub">every named feature the archive draws, and every one of them answers</span></div>
@@ -124,7 +130,7 @@
   <input type="range" id="chrs" min="0" max="0" value="0" aria-label="the year">
   <span id="chrn"></span>
 </div>
-<div id="stage" role="application" aria-label="the map of Arda; features are focusable">
+<div role="main" id="stage" role="application" aria-label="the map of Arda; features are focusable">
   <div id="nm"></div><div id="card"></div>
 </div>
 <p class="method" style="padding:10px 16px;font-size:12.5px">
@@ -158,7 +164,7 @@ const stage=document.getElementById('stage'),nmEl=document.getElementById('nm'),
       card=document.getElementById('card'),countEl=document.getElementById('count');
 let svg=null,vb=null,vb0=null;
 fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
-  // INLINE, NOT <img>: an <img>'s insides cannot be pointed at.
+  // INLINE, NOT <img alt="">: an <img alt="">'s insides cannot be pointed at.
   const doc=new DOMParser().parseFromString(txt,'image/svg+xml');
   svg=doc.documentElement;
   svg.removeAttribute('width'); svg.removeAttribute('height');
@@ -300,10 +306,10 @@ function loadRealms(){
     }
   }).catch(()=>{});
 }
-function litFor(key){
+function litFor(key,which){
   const r=REALMS[key]; if(!r) return [];
   const out=[];
-  r.members.forEach(m=>{
+  ((which==='bounds'?r.bounded_by:r.members)||[]).forEach(m=>{
     svg.querySelectorAll('.feat[data-key="'+CSS.escape(m.key)+'"]').forEach(e=>out.push(e));
     document.querySelectorAll('.hisname[data-key="'+CSS.escape(m.key)+'"]').forEach(e=>out.push(e));
     const u=document.getElementById('und');
@@ -321,18 +327,29 @@ function litFor(key){
 function realmNote(keys){
   const k=(keys||[]).find(x=>REALMS[x]);
   if(!k){ clearLit(); return ''; }
-  const R=REALMS[k], n=lightRealm(k);
-  return '<div class="c">'+n+' of '+R.n_members
+  const R=REALMS[k], n=lightRealm(k).members;
+  const bl=(R.bounded_by||[]).map(x=>x.name).join(', ');
+  const uh=(R.bounds_unheld||[]);
+  const bnd = bl ? '<div class="c"><b>What the corpus says it runs between:</b> '+bl
+      +(uh.length?' — and '+uh.join(', ')+', which the archive does not hold and cannot light'
+        :'')
+      +'<br><i>&ldquo;'+(R.bounds_quote||'')+'&rdquo;</i><br>'+(R.bounds_cite||'')+'</div>' : '';
+  return bnd+'<div class="c">'+n+' of '+R.n_members
     +' places the corpus puts inside it are lit on the sheet.<br>'
     +'<i>No border is drawn: the corpus gives this realm\'s extent in words, not a line.</i></div>';
 }
 let litNow=[];
-function clearLit(){ litNow.forEach(e=>e.classList.remove('on','member')); litNow=[]; }
+function clearLit(){ litNow.forEach(e=>e.classList.remove('on','member','bound')); litNow=[]; }
 function lightRealm(key){
   clearLit();
-  litNow=litFor(key);
+  litNow=litFor(key,'members');
   litNow.forEach(e=>e.classList.add('member'));
-  return litNow.length;
+  // AND WHAT THE CORPUS SAYS THE BORDER RUNS BETWEEN -- lit differently, because it is a
+  // different kind of claim. A member is a place a text puts INSIDE; a bound is a thing a
+  // text names the edge by. Neither is a line, and the two must not look alike.
+  const b=litFor(key,'bounds');
+  b.forEach(e=>{e.classList.add('bound'); litNow.push(e);});
+  return {members:litNow.length-b.length, bounds:b.length};
 }
 
 // ---- the places the archive knows and does not draw
