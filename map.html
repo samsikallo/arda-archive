@@ -155,9 +155,8 @@
  The layer of <b>unmapped places</b> shows 139 records the archive can place and the sheet
  does not draw — a layer above the map, never drawn into it, because the sheet's restraint is
  deliberate. A hollow mark is a point borrowed from a containing place or set down by a measure,
- rather than the place's own. See also
- <a href="map.html">the turning of the Ages</a> and
- <a href="arda_timemap_jpeg.html">the living map</a>.</p>
+ rather than the place's own. The turning of the Ages and the living map were separate
+ pages once; both were retired into this one, so there is nothing to send the reader on to.</p>
 <script src="nav.js"></script>
 <script>
 const stage=document.getElementById('stage'),nmEl=document.getElementById('nm'),
@@ -461,7 +460,9 @@ function loadRoads(){
   const gB=document.createElementNS(NS,'g'); gB.id='bat';  gB.style.display='none';
   J.journeys.forEach(j=>{
    const g=document.createElementNS(NS,'g');
-   g.dataset.name=j.name; g.dataset.placed=j.n_placed; g.dataset.stages=j.n_stages;
+   // The id is what the retired page's links address a road by (#journey=fellowship);
+   // it is already in the data and was simply not being put on the element.
+   g.dataset.id=j.id||''; g.dataset.name=j.name; g.dataset.placed=j.n_placed; g.dataset.stages=j.n_stages;
    j.segments.forEach(seg=>{
      const p=document.createElementNS(NS,'path');
      p.setAttribute('d','M'+seg.map(s=>s[0]+' '+s[1]).join(' L'));
@@ -471,7 +472,15 @@ function loadRoads(){
        const c=document.createElementNS(NS,'circle');
        c.setAttribute('cx',s[0]); c.setAttribute('cy',s[1]); c.setAttribute('r',9);
        c.setAttribute('fill',j.colour||'#c9a227'); c.setAttribute('class','stage');
-       c.dataset.key=s[3]||''; c.dataset.label=s[4]||''; c.dataset.j=j.name;
+       // OFF BY ONE, AND IT HAD SILENCED EVERY STAGE LABEL. A segment point is
+       // [x, y, key, label] -- four values. This read s[3] as the key and s[4] as the
+       // label, so the key held the label and the label held nothing: hovering a stage
+       // showed an empty tooltip, and any lookup by key could never match. Found while
+       // porting the retired map's #day= links, which needed the stage to be findable.
+       c.dataset.key=s[2]||''; c.dataset.label=s[3]||''; c.dataset.j=j.name;
+       // the day of this stage, so a #day= link can land on the stage it names
+       {const st=(j.stages||[]).find(t=>t.key===s[2]&&t.label===s[3]);
+        if(st&&st.day!=null)c.dataset.day=st.day;}
        g.appendChild(c);
      });
    });
@@ -482,6 +491,7 @@ function loadRoads(){
    const c=document.createElementNS(NS,'circle');
    c.setAttribute('cx',b.x); c.setAttribute('cy',b.y); c.setAttribute('r',13);
    c.dataset.key=b.key||''; c.dataset.label=b.name;
+   c.dataset.id=b.id||''; c.dataset.name=b.name;
    g.appendChild(c); gB.appendChild(g);
   });
   svg.appendChild(gR); svg.appendChild(gB);
@@ -584,8 +594,71 @@ function declutter(){
 // failed invisibly: the map simply opened at nothing. It worked ever after, on hashchange,
 // which is why clicking about by hand never showed it.
 // Doriath, Gondolin, Nargothrond and most of the realms are in that layer.
+// ---- THE LIVING MAP'S VOCABULARY, PORTED HERE SO ITS LINKS SURVIVE ITS RETIREMENT.
+// map.html is retired, and 45 references in eleven pages and four datasets
+// pointed INTO it: place= (19), journey= (12), day= (9), slice= (4), battle= (1). Repointing
+// them at this page without teaching it those forms would have turned 45 precise, cited
+// references into 45 landings on a default view -- a silent downgrade dressed as a tidy-up.
+// So each form is answered here, and where this map cannot do what the old one did, it says
+// so on the page instead of pretending.
+//   place=NAME   the same lookup as k=: the old page addressed places by the key this one uses
+//   journey=ID   the roads layer, that road alone, centred on it
+//   day=N        the stage of that day -- the stages carry `day`, so the day is real here too;
+//                what is gone is the SCRUBBER, so the whole road is drawn and the day's stage
+//                is opened rather than the road being animated up to it. Said, not hidden.
+//   battle=ID    the battles layer, centred on that battle
+//   slice=N      the thirteen era-slices of the old page against four Ages here: a coarser
+//                instrument, and the note says which slice was asked for.
+function layerOn(id){const b=document.getElementById(id);
+  if(b&&b.getAttribute('aria-pressed')!=='true')b.click();}
+function hashNote(t){let n=document.getElementById('hashnote');
+  if(!n){n=document.createElement('div');n.id='hashnote';
+    n.style.cssText='position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:40;'
+      +'background:#241f18;color:#e8dcc0;border:1px solid #8a7444;border-radius:8px;'
+      +'padding:7px 14px;font:12.5px Georgia,serif;max-width:min(680px,92vw);box-shadow:0 4px 14px rgba(0,0,0,.45)';
+    n.onclick=()=>n.remove();document.body.appendChild(n);}
+  n.textContent=t+'  (click to dismiss)';}
+const SLICE_AGE=['FA','FA','FA','FA','SA','SA','SA','TA','TA','TA','TA','TA','TA'];
+function goOld(h,tries){
+  let m;
+  if(m=h.match(/journey=([^&]+)/)){
+    const want=decodeURIComponent(m[1]).toLowerCase();
+    layerOn('tR');
+    const g=[...document.querySelectorAll('#roads > g')].find(x=>(x.dataset.id||'').toLowerCase()===want);
+    if(!g){ if((tries||0)<40) setTimeout(()=>goOld(h,(tries||0)+1),150); return true;}
+    [...document.querySelectorAll('#roads > g')].forEach(x=>x.style.opacity=(x===g?'1':'.12'));
+    const b=g.getBBox(); centre(b.x+b.width/2,b.y+b.height/2);
+    hashNote('Showing "'+(g.dataset.name||want)+'". The other roads are dimmed, not hidden.');
+    return true;}
+  if(m=h.match(/day=(\d+)/)){
+    const d=+m[1]; layerOn('tR');
+    const c=[...document.querySelectorAll('#roads circle.stage')].find(x=>+x.dataset.day===d);
+    if(!c){ if((tries||0)<40) setTimeout(()=>goOld(h,(tries||0)+1),150); return true;}
+    centre(+c.getAttribute('cx'),+c.getAttribute('cy'));
+    hashNote('Day '+d+': '+(c.dataset.label||'')+' — this map draws each road entire and does not '
+             +'scrub by day, so the stage is shown rather than the march animated to it.');
+    return true;}
+  if(m=h.match(/battle=([^&]+)/)){
+    const want=decodeURIComponent(m[1]).toLowerCase();
+    layerOn('tB');
+    const c=[...document.querySelectorAll('#bat circle')].find(x=>(x.dataset.id||'').toLowerCase()===want);
+    if(!c){ if((tries||0)<40) setTimeout(()=>goOld(h,(tries||0)+1),150); return true;}
+    centre(+c.getAttribute('cx'),+c.getAttribute('cy'));
+    hashNote(c.dataset.name||want); return true;}
+  if(m=h.match(/slice=(\d+)/)){
+    const s=+m[1], age=SLICE_AGE[s]||'all';
+    const b=[...document.querySelectorAll('#bar button[data-age]')].find(x=>x.dataset.age===age);
+    if(b)b.click();
+    hashNote('The old map had thirteen slices of history; this one filters by Age. Slice '+s
+             +' fell in the '+({FA:'First',SA:'Second',TA:'Third'}[age]||'—')+' Age, which is what is shown.');
+    return true;}
+  return false;
+}
 function goHash(tries){
-  const m=(location.hash||'').match(/k=([^&]+)/); if(!m||!svg)return;
+  const h=location.hash||'';
+  if(!svg)return;
+  if(goOld(h,tries))return;
+  const m=h.match(/(?:k|place)=([^&]+)/); if(!m)return;
   const want=decodeURIComponent(m[1]).toLowerCase();
   const g=[...svg.querySelectorAll('.feat')].find(x=>(x.dataset.key||'').toLowerCase()===want);
   if(!g){  // it may be a place the sheet does not draw: look in the unmapped layer

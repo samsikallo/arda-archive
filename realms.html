@@ -169,7 +169,7 @@ window.openR=function(id,scroll=true){
  if(L2.length)h+='<b>Places:</b> '+L2.join(" · ")+'<br>';
  if(L3.length)h+='<b>Battles:</b> '+L3.join(" · ")+'<br>';
  if(P.panel)h+='<b>Arms &amp; doctrine:</b> <a href="armies_dashboard.html">'+esc(P.panel)+' (hosts panel)</a><br>';
- h+='<b>Elsewhere:</b> <a href="arda_timeline.html#y='+Math.round(P.yr[0])+'">timeline</a> · <a href="map.html">the turning ages</a>'+(P.poly?' · <a href="arda_timemap_jpeg.html#slice='+Object.keys(P.poly)[0]+'">living map</a>':'')+'</div>';
+ h+='<b>Elsewhere:</b> <a href="arda_timeline.html#y='+Math.round(P.yr[0])+'">timeline</a> · <a href="map.html">the turning ages</a>'+(P.poly?' · <a href="map.html#slice='+Object.keys(P.poly)[0]+'">living map</a>':'')+'</div>';
  h+='</div>';
  $("#dossier").innerHTML=h;
  document.querySelectorAll("#dossier .chip[data-k]").forEach(c=>c.onclick=()=>{secFilter=c.dataset.k||null;openR(id,false)});

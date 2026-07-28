@@ -51,7 +51,7 @@ function render(){
 const key=(location.hash||"").slice(1);
 const p=M.pois.find(x=>slug(x.n)==key)||M.pois.find(x=>nrm(x.n).includes(nrm(decodeURIComponent(key||"")))); 
 const main=document.getElementById("main");
-/*gz-fallback*/if(!p){ardaGazLoad().then(function(G){var e=ardaGazFind(G,key);if(e){document.title=e.n+" \u2014 the Arda Archive";document.getElementById("main").innerHTML=ardaGazRecord(e);}});main.innerHTML='<div class="cite" style="padding:60px 0;text-align:center">No such place in the charts. <a href="arda_timemap_jpeg.html">Open the Living Map</a>.</div>';return}
+/*gz-fallback*/if(!p){ardaGazLoad().then(function(G){var e=ardaGazFind(G,key);if(e){document.title=e.n+" \u2014 the Arda Archive";document.getElementById("main").innerHTML=ardaGazRecord(e);}});main.innerHTML='<div class="cite" style="padding:60px 0;text-align:center">No such place in the charts. <a href="map.html">Open the Living Map</a>.</div>';return}
 document.title=p.n+" — the Arda Archive";
 const near=(x,y,r)=>Math.hypot(x-p.x,y-p.y)<r;
 const battles=A.campaigns.filter(c=>{const b=M.battles.find(z=>z.id==c.id);return b&&near(b.x,b.y,120)});
@@ -77,7 +77,7 @@ main.innerHTML=`
 <circle cx="${p.x}" cy="${p.y}" r="26" fill="none" stroke="#c92f1c" stroke-width="7"/>
 <circle cx="${p.x}" cy="${p.y}" r="52" fill="none" stroke="#fdfaf2" stroke-width="3" opacity=".8"/>
 </svg>
-<a class="chip" href="arda_timemap_jpeg.html#place=${encodeURIComponent(p.n.split(" —")[0])}">open in the Living Map ⧉</a></div>
+<a class="chip" href="map.html#place=${encodeURIComponent(p.n.split(" —")[0])}">open in the Living Map ⧉</a></div>
 ${realms.length?`<div class="card"><h3 style="margin-top:.2em">Under whose banners</h3>
 ${realms.map(([id,r])=>`<div class="ev"><b>${r.n}</b> <span class="cite">${r.span} · ${r.c} [${r.conf}]</span></div>`).join("")}</div>`:""}
 ${battles.length?`<div class="card"><h3 style="margin-top:.2em">Blood on this ground</h3>
@@ -85,7 +85,7 @@ ${battles.map(c=>`<div class="ev"><b>${c.label}</b> <a class="cite" href="armies
 ${events.length?`<div class="card"><h3 style="margin-top:.2em">Written in the Tale of Years</h3>
 ${events.map(e=>`<div class="ev"><b>${e.t}</b> — ${e.label} <span class="cite">${e.cite}</span> <a class="cite" href="arda_timeline.html#y=${Math.round(e.y)}">↦ the year</a></div>`).join("")}</div>`:""}
 ${jstops.length?`<div class="card"><h3 style="margin-top:.2em">Roads that passed this way</h3>
-${jstops.map(({j,w})=>`<div class="ev"><b>${w.l}</b> <span class="cite">${j.n}</span> <a class="cite" href="arda_timemap_jpeg.html#journey=${j.id}">↦ ride it</a></div>`).join("")}</div>`:""}
+${jstops.map(({j,w})=>`<div class="ev"><b>${w.l}</b> <span class="cite">${j.n}</span> <a class="cite" href="map.html#journey=${j.id}">↦ ride it</a></div>`).join("")}</div>`:""}
 ${arts.length?`<div class="card"><h3 style="margin-top:.2em">Treasures that touched this place</h3>
 ${arts.map(a=>`<a class="chip" href="artifacts.html">💎 ${a.n}</a>`).join("")}</div>`:""}
 ${quotes.length?`<div class="card"><h3 style="margin-top:.2em">In the Professor's words</h3>

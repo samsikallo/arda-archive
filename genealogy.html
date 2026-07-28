@@ -237,7 +237,7 @@ ${p.em?`<h3>Heraldry</h3>${(window.ardaEmblemNote&&window.ardaEmblemNote(p.em))|
 ${p.note?`<h3>Notes</h3>${p.note}`:""}
 <h3>Source</h3><span class="cite">${p.cite||"—"}</span>
 ${_pt?`<div class="orn" style="margin:14px 0 8px">❦ ✦ ❦</div>${_pt}`:""}
-<h3>Elsewhere on the site</h3><a href="character.html#${p.id}" target="_blank">Full record ⧉</a> · <a href="arda_timeline.html#c=${p.id}" target="_blank">Timeline ⧉</a> · <a href="arda_timemap_jpeg.html" target="_blank">the living Map ⧉</a>
+<h3>Elsewhere on the site</h3><a href="character.html#${p.id}" target="_blank">Full record ⧉</a> · <a href="arda_timeline.html#c=${p.id}" target="_blank">Timeline ⧉</a> · <a href="map.html" target="_blank">the living Map ⧉</a>
 <p class="cite" style="margin-top:1em">Gold outline = kin (immediate family + full ancestor/descendant chains); the rest of the graph recedes. Shift-click another figure to compare lines.</p>`;}
 else{const sets=sel.map(s=>up(s));sel.forEach((s,i)=>sets[i].add(s));
 let shared=[...sets[0]].filter(x=>sets.every(S=>S.has(x))&&byId[x].r!="X");

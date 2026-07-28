@@ -83,7 +83,7 @@ return {q:`In which Age was ${c.label.replace(/ \(.*$/,"")}?`,o:[era,...others],
 function genPlace(hard){
 const ps=M.pois.filter(p=>p.alt&&p.alt.length>2);
 const p=pick(ps);const wrong=shuffle(ps.filter(x=>x!=p)).slice(0,3);
-return {q:`By what other name is ${p.n.split(" —")[0]} known?`,o:[p.alt.split(";")[0],...wrong.map(w=>w.alt.split(";")[0])],c:p.c,l:"arda_timemap_jpeg.html#place="+p.n.split(" —")[0]};}
+return {q:`By what other name is ${p.n.split(" —")[0]} known?`,o:[p.alt.split(";")[0],...wrong.map(w=>w.alt.split(";")[0])],c:p.c,l:"map.html"+p.n.split(" —")[0]};}
 function genWord(hard){
 const ws=(hard?L.lex.concat(L.elements.map(e=>[e[0],"s","element",e[1].split(" in ")[0]])):L.lex).filter(w=>w[3]&&w[3].length>3&&w[3].length<70);
 const w=pick(ws);const wrong=shuffle(ws.filter(x=>x[0]!=w[0])).slice(0,3);
