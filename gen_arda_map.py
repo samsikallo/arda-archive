@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# THE TREE THIS TOOL WRITES INTO. This was an absolute "/home/raz/samsi/..."
+# path, so every clone's copy of this file wrote into the LIVE archive -- the one
+# thing the clones exist to prevent ("two sessions writing one tree is how this
+# archive loses work"). On 29 July a clone's stale generator overwrote
+# site/arda_genealogy.json twice and reverted repairs already committed and pushed.
+# map/verify_quotes.py carries the same fix and the same reason: "Set ARDA_ROOT to
+# grade a different tree on purpose."
+import os as _os
+_ARDA = _os.environ.get("ARDA_ROOT") or _os.path.dirname(
+    _os.path.dirname(_os.path.abspath(__file__)))
 """One-sheet palimpsest map of Arda: Beleriand (FA) + Middle-earth (TA).
 Data transcribed from /home/raz/samsi/VECTOR_MAP_SPEC.md. Frame TA units,
 canvas X -700..1000, Y 0..1000, 1 unit = 1.5 mi. FA features enter through
@@ -896,5 +906,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-    open("/home/raz/samsi/map/arda_map.svg","w").write("\n".join(OUT))
+    open(_ARDA + "/map/arda_map.svg","w").write("\n".join(OUT))
     print("svg written, %d elements" % len(OUT))
