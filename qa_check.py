@@ -30,6 +30,40 @@ for p in pages:
 for need in ("sitemap.xml","robots.txt","404.html","sw.js","map_1366.jpeg"):
     if not os.path.exists(need): print("MISSING FILE:",need); bad+=1
 
+# AND THE SITEMAP'S URLS MUST RESOLVE, not merely exist as a file.
+#
+# The gate checked that sitemap.xml is THERE and never read what it says. The link-rot pass
+# below reads href and src inside pages and never touches <loc>, so a sitemap advertising a
+# page that does not exist shipped green. The Adversary proved the gate opens the file --
+# strace, not inference -- and passes it anyway, which is worse than not reading it: it
+# looked, and said nothing.
+#
+# The reachable route in is gen_seo globbing every *.html while a guard's `_*.html` probe
+# exists. That is fixed at the source in map/gen_seo.py, and this is the second half: a
+# generator can be repaired, and the gate should still be able to say whether what is
+# published points at anything.
+_sm=open("sitemap.xml",encoding="utf-8").read()
+import re as _resm
+_locs=_resm.findall(r"<loc>([^<]+)</loc>",_sm)
+# THE PATH RELATIVE TO THE SITE ROOT, NOT THE BASENAME. My first version took the last
+# segment of the URL and looked for it beside index.html, which reported 577 of 610 URLs
+# dead -- every stub page, all of which live under realm/ and exist perfectly well. A check
+# that cries wolf on 95% of its subject is worse than no check, and the only reason it did
+# not ship is that the gate was run before it was believed.
+_BASE="https://samsikallo.github.io/arda-archive/"
+_dead=[]
+for _u in _locs:
+    _p=_u[len(_BASE):] if _u.startswith(_BASE) else _u.rsplit("/",1)[-1]
+    _p=_p or "index.html"
+    if not os.path.exists(_p): _dead.append(_p)
+if not _locs:
+    print("SITEMAP: no <loc> entries -- nothing was checked, so this does not pass"); bad+=1
+elif _dead:
+    for _p in _dead[:10]: print("SITEMAP DEAD URL:",_p,"is advertised and is not in site/")
+    print("SITEMAP: %d of %d advertised URL(s) point at nothing"%(len(_dead),len(_locs))); bad+=1
+else:
+    print("sitemap: OK - %d URLs, every one a file that exists"%len(_locs))
+
 # --- referential integrity across halls ---
 import re as _re
 try:

@@ -187,6 +187,15 @@ leg.textContent="opacity = confidence (H solid → L faint) · colors follow the
 svg.appendChild(leg);}
 // ===== minimap =====
 let anim=null,curMap=null;
+/* A READER WHO ASKED THE PLATFORM FOR LESS MOTION IS OBEYED HERE TOO.
+   arda.css carries @media (prefers-reduced-motion:reduce) and it reaches every CSS
+   animation and transition in the archive -- but it cannot reach THIS, because the
+   phase-playback below is driven by requestAnimationFrame, and no stylesheet has any
+   say over a script. This is the one page in the thirty-three that animates in JS.
+   The answer is not to refuse the reader the information: under reduced motion the
+   playback goes STRAIGHT TO THE END STATE, so the whole battle is shown at once
+   instead of unspooling over nine seconds. */
+const lessMotion=!!(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches);
 // A POSITION ALONG A MARCH, AND IT COULD HAND BACK NOTHING.
 // With a t that is not a finite number between 0 and 1 -- and the play loop and the slider
 // both compute t rather than choose it -- Math.floor(t*n) is NaN or out of range, p[i] is
@@ -252,6 +261,7 @@ if(anim){stopPlay();return}
 this.textContent="❚❚";
 const sl=document.getElementById("tslider");
 let t=sl.value>=990?0:sl.value/1000;
+if(lessMotion){sl.value=1000;setT(1);this.textContent="▶ play";return}
 const t0=performance.now(),start=t;
 const step=n=>{t=start+(n-t0)/9000;
 if(t>=1){t=1;setT(1);sl.value=1000;stopPlay();return}
@@ -295,10 +305,6 @@ document.querySelector('[data-cid="pelennor"]').classList.add("on");
 
 <script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script>
 <div class="cite" style="margin:10px 18px 24px">Heraldic devices: canonical recreations (CC BY-SA / Public Domain) &amp; interpretive designs — full credits in the</div>
-
-
-
-
 
 <script>/*ARDA:FORMS*/
 (function(){

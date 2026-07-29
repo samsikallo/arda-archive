@@ -18011,6 +18011,31 @@
     "POLITY_REGION"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
+  },
+  "region": {
+   "n": "Region",
+   "name_conf": "High",
+   "ages": [
+    "FA",
+    "YT"
+   ],
+   "cites": [
+    "The Silmarillion index, line 15401 [C]",
+    "placed from Christopher Tolkien's own lettering on the Beleriand plate, anchor bel-102 [I-M]; the archive draws the plate and had no gazetteer record for it"
+   ],
+   "containment": [
+    {
+     "parent": "doriath",
+     "span": "Y.T. – F.A. 506",
+     "frm": -3500,
+     "to": 506,
+     "why": "the southern forest of Doriath, per the Silmarillion index gloss [C]",
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it"
+    }
+   ],
+   "notes": [
+    "“Region The dense forest forming the southern part of Doriath.” — the Silmarillion index. The Esgalduin “parted Neldoreth from Region”, the two forests of Doriath, named together fourteen times across tier 1. NOT Eregion, which is a Second Age realm in Eriador west of the Misty Mountains and is a different place with a similar name."
+   ]
   }
  },
  "realm_ids": [
