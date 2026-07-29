@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Map of Arda — the Arda Archive</title><!--ARDA:META-->
+<title>The Map of Arda — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Map of Arda: Christopher Tolkien's own plates traced to their centrelines and drawn as vector paths rather than pictures — his linework, with the archive's cited places, realms and roads laid on it."><meta property="og:title" content="The Map of Arda — the Arda Archive"><meta property="og:description" content="The Map of Arda: Christopher Tolkien's own plates traced to their centrelines and drawn as vector paths rather than pictures — his linework, with the archive's cited places, realms and roads laid on it."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/map.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/map.html"><!--/ARDA:META-->
 <link rel="stylesheet" href="arda.css">
 <style>
  :root{--ink:#141210;--red:#a3251d;--parch:#efe6d2;--panel:#fbf6e8;--rule:#b0a58e}
@@ -101,7 +101,7 @@
  .bound [fill]:not([fill="none"]){fill:#8a5a12!important}
  .bound text{fill:#8a5a12!important}
  circle.bound{fill:#8a5a12!important;stroke:#fbf6e8!important}
-</style></head><body>
+</style></head><body><a class="a-skip" href="#main">skip to content</a>
 <div class="hdr"><h1>The Map of Arda</h1><span style="flex:1"></span>
 <nav id="ardanav" aria-label="Archive halls"></nav>
 <span class="sub">every named feature the archive draws, and every one of them answers</span></div>
@@ -128,7 +128,7 @@
   <input type="range" id="chrs" min="0" max="0" value="0" aria-label="the year">
   <span id="chrn"></span>
 </div>
-<div id="stage" role="application" aria-label="the map of Arda; features are focusable">
+<div role="main" id="stage" role="application" aria-label="the map of Arda; features are focusable">
   <div id="nm"></div><div id="card"></div>
 </div>
 <p class="method" style="padding:10px 16px;font-size:12.5px">
@@ -162,7 +162,7 @@ const stage=document.getElementById('stage'),nmEl=document.getElementById('nm'),
       card=document.getElementById('card'),countEl=document.getElementById('count');
 let svg=null,vb=null,vb0=null;
 fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
-  // INLINE, NOT <img>: an <img>'s insides cannot be pointed at.
+  // INLINE, NOT <img alt="">: an <img alt="">'s insides cannot be pointed at.
   const doc=new DOMParser().parseFromString(txt,'image/svg+xml');
   svg=doc.documentElement;
   svg.removeAttribute('width'); svg.removeAttribute('height');
