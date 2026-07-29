@@ -1,0 +1,48 @@
+# The public archive. This repository is served at samsikallo.github.io/arda-archive,
+# so anything committed here is published, and published is not undone by deleting.
+#
+# WHY THIS FILE EXISTS AT ALL, AND WHY ITS ABSENCE WAS THE WORST OF THE FOUR DEPLOY
+# FAULTS. The workshop above has carried a .gitignore for a long time, and its first
+# rule is the books: "the books themselves are not ours to redistribute". This
+# repository -- the PUBLIC one, the only one that actually publishes -- had no
+# .gitignore of any kind. The protection was strongest where the consequence was
+# smallest and absent where it was largest.
+#
+# The workshop's own comment records that three books were once tracked by accident,
+# "because one is an .epub and one is a PDF saved with no extension at all", and they
+# had to be cut out of history with git filter-branch TWICE, the first pass missing the
+# paths they had lived at earlier. That is the cost being guarded against, and it is
+# strictly worse here: a private repository can be rewritten quietly, a published one
+# has already been fetched.
+#
+# The pre-commit hook refuses sources/ unconditionally and does not rely on this file.
+# Both exist on purpose: the hook stops a deliberate `git add -f`, this stops an
+# absent-minded `git add -A`, and neither covers the other's case.
+
+# ---- books, in every form the shelf has ever held one -------------------------------
+*.pdf
+*.epub
+*.mobi
+*.azw3
+*.djvu
+sources/**
+"secondary sources"/
+secondary sources/
+
+# ---- derived full text: rebuildable, large, and just as much theirs as the books ----
+corpus/
+*.folded
+
+# ---- what the guards leave behind ---------------------------------------------------
+# The deep-link, realms and portrait guards drive a real browser against probe pages
+# written beside the real ones. They are removed on a clean run and survive a crash or
+# an interrupted suite, which is exactly when someone is most likely to stage broadly.
+_*.html
+
+# ---- ordinary noise ------------------------------------------------------------------
+*.pyc
+__pycache__/
+.DS_Store
+*.swp
+*~
+.tree-lease
