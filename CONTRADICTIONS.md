@@ -155,11 +155,11 @@ The published cosmology (fruit and flower of the Trees) against the late astrono
 
 *Sources & where displayed:* Silm 11 vs HoME X · timeline epoch note
 
-## Where the éored's arithmetic bends  
-*[unreconciled / intentional ambiguity]*
+## The éored's arithmetic does not bend  
+*[not a contradiction — reconciled in the source]*
 
-UT's n.36 defines the éored at not less than 120 and the Full Muster at a hundred éoreds — while Théoden's actual musters run smaller; the texts themselves show the ideal against the war-worn real.
+**This register held it for a tension between UT and the narrative. It is not one.** UT n.36 gives the definition and the exception in the same note, in Tolkien's own words: a full éored is *"not less than 120 men (including the Captain)"* and *"one hundredth part of the Full Muster"*, but *"no such host, of course, had ever ridden all together to war beyond the Mark"*, and *"owing to losses in the western war, the hastiness of the Muster, and the threat from North and East, Théoden only led out a host of some six thousand spears"*. The same note confirms Éomer's éored at exactly 120 — *"Legolas counted 105 when they were far away, and Éomer said that fifteen men had been lost"* — so the one place the texts could have been checked against each other, they agree.
 
-**Authority & handling:** The armies model uses both: the definition as ceiling, the narrative musters as actuals.
+**Authority & handling:** The armies model uses both numbers, which is right; they were never in conflict. Kept here rather than deleted because the pairing is worth showing — it is the source explaining itself, and the register should record that it was read wrong.
 
-*Sources & where displayed:* UT n.36 vs LotR III · ARMIES.md
+*Sources & where displayed:* UT n.36 (which quotes both figures) · ARMIES.md
