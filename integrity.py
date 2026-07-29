@@ -53,7 +53,13 @@ TWINS=[
  ("Brithombar citation","arda_livingmap.json","arda_timemap_jpeg.json","Silm 14/20",
   "the published Silmarillion carries no years; the date is from the Grey Annals"),
  ("Angband league citation","arda_livingmap.json","arda_timemap_jpeg.json","Silm 3/18",
-  "the 150 leagues is Grey Annals, not the Silmarillion"),
+  "Silm 3 and Silm 18 are the wrong chapters: the 150 leagues is Silm 10 verbatim, 'the "
+  "gates of Morgoth were but one hundred and fifty leagues distant from the bridge of "
+  "Menegroth', and the hells-and-slag is Silm 14. THIS REASON WAS WRONG UNTIL 29 JULY and "
+  "said the figure was Grey Annals and NOT the Silmarillion -- it is both. The probe is "
+  "unchanged and still correct; only the argument behind it was false, which is worse in a "
+  "guard than in prose, because a reader who checks the reason and finds it untrue learns to "
+  "skip the guard"),
  ("mithril-coat at the Havens","arda_artifacts.json","arda_silences.json",
   "Worn at the Havens-riding in 3021",
   "last attested wearing is the Scouring, 3 Nov 3019"),
