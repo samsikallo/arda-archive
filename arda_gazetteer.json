@@ -5,7 +5,7 @@
   "site/arda_livingmap.json",
   "site/arda_realms.json"
  ],
- "n": 480,
+ "n": 481,
  "places": {
   "adorn": {
    "ages": [
@@ -733,7 +733,7 @@
     "Thangorodrim"
    ],
    "cites": [
-    "Silm 3/18; CoH intro",
+    "Silm 3 (Angband and Thangorodrim); the 150 leagues from Menegroth is the Grey Annals, HoME XI [C] — quoted in the introduction to The Children of Húrin",
     "A ch3, ch10, ch14; HoME 5, 11; F Intro",
     "The Silmarillion, Of the Return of the Noldor [C]",
     "placed at the point the archive's own sheet draws [I-M]: the sheet draws it by the spec's count of leagues, 150 leagues north of Menegroth; no place the archive has placed contains it"
@@ -790,18 +790,16 @@
     {
      "cite": "Silm 18",
      "realm": null,
-     "status": "event",
+     "status": "destroyed",
      "what": "Dagor Bragollach; Fingolfin falls before Angband",
-     "when": "F.A. 455",
-     "status_note": "Angband WON the Bragollach; this record's own entries have it Master of the North to 583 and Thangorodrim broken only in the War of Wrath"
+     "when": "F.A. 455"
     },
     {
      "cite": "Silm 18 [C]",
      "realm": "hithlum",
-     "status": "event",
+     "status": "destroyed",
      "what": "The Bragollach beaten off at Eithel Sirion; Fingolfin falls before Angband's gate",
-     "when": "F.A. 455–456",
-     "status_note": "Angband WON the Bragollach; this record's own entries have it Master of the North to 583 and Thangorodrim broken only in the War of Wrath"
+     "when": "F.A. 455–456"
     },
     {
      "cite": "Silm 18–23 [C]",
@@ -1424,7 +1422,7 @@
     "TA"
    ],
    "cites": [
-    "App A [C]",
+    "App A [I-H] — the archive's synthesis of canon, not a quotation",
     "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate",
     "The Lord of the Rings, Appendix A [C]"
    ],
@@ -1439,7 +1437,7 @@
    "n": "Arthedain",
    "name_conf": "H",
    "notes": [
-    "Between Lhûn and Weather Hills (Baranduin its south-line): Fornost Erain on the North Downs the king-seat, Annúminas already forsaken; the Tower Hills and the Elostirion-stone westward. — App A [C]",
+    "Between Lhûn and Weather Hills (Baranduin its south-line): Fornost Erain on the North Downs the king-seat, Annúminas already forsaken; the Tower Hills and the Elostirion-stone westward. — App A [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it T.A. 861–1974",
     "named within Arnor by the vector spec's own block for it",
     "the middle of the shape the archive draws",
@@ -2265,7 +2263,7 @@
    ],
    "cites": [
     "drawn on the archive's vector map (SETTLE_TA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]",
-    "LotR I.6–8 [C]"
+    "LotR I.6–8 [I-H] — the archive's synthesis of canon, not a quotation"
    ],
    "coords": [
     {
@@ -2281,7 +2279,7 @@
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "held under two keys until they were folded: the record keyed 'bombadil' is named 'The house of Tom Bombadil' in its own words -- the same house the other holds, arriving from the realms model instead of the drawn sheet. [I-H]",
-    "The Old Forest and the Downs between Buckland's hedge and the Barrow-country — a bounded march older than every realm around it. — LotR I.6–8 [C]",
+    "The Old Forest and the Downs between Buckland's hedge and the Barrow-country — a bounded march older than every realm around it. — LotR I.6–8 [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it 'Eldest' – enduring",
     "the vector spec also lists it as “The house of Tom Bombadil”, at the same place; one record, not two"
    ],
@@ -2597,7 +2595,7 @@
     "FA"
    ],
    "cites": [
-    "Silm 14/20"
+    "Silm 14 (the havens built); the fall in F.A. 473 is dated by the Grey Annals, HoME XI [C] — the published Silmarillion carries no years"
    ],
    "containment": [
     {
@@ -3167,7 +3165,7 @@
     "TA"
    ],
    "cites": [
-    "App A; UT [C]",
+    "App A; UT [I-H] — the archive's synthesis of canon, not a quotation",
     "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate",
     "The Lord of the Rings, Appendix A [C]"
    ],
@@ -3182,7 +3180,7 @@
    "n": "Cardolan",
    "name_conf": "H",
    "notes": [
-    "Minhiriath and the downs: Tyrn Gorthad (the Barrow-downs) its hallowed height, Tharbad its river-town shared with the south. — App A; UT [C]",
+    "Minhiriath and the downs: Tyrn Gorthad (the Barrow-downs) its hallowed height, Tharbad its river-town shared with the south. — App A; UT [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it T.A. 861–1636",
     "named within Arnor by the vector spec's own block for it",
     "the middle of the shape the archive draws",
@@ -4575,8 +4573,8 @@
     "FA"
    ],
    "cites": [
-    "Silm 14; CoH 1 [C]",
-    "drawn on the archive's vector map (REGIONS_FA); the name 'Dor-lómin' is attested 312 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "Silm 14; CoH 1 [I-H] — the archive's synthesis of canon, not a quotation",
+    "drawn on the archive's vector map (REGIONS_FA); the name is attested 313 times in the tier-1 corpus [C for the name, I-M for the placing]"
    ],
    "coords": [
     {
@@ -4589,22 +4587,21 @@
    "n": "Dor-lómin (House of Hador)",
    "name_conf": "H",
    "notes": [
-    "Southern Hithlum under Ered Wethrin; Amon Darthir above Húrin's fields; cold, misted, horse-rearing country. — Silm 14; CoH 1 [C]",
+    "Southern Hithlum under Ered Wethrin; Amon Darthir above Húrin's fields; cold, misted, horse-rearing country. — Silm 14; CoH 1 [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it F.A. c.416–495 (free); occupied to 587",
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared",
-    "the vector spec also lists it as “Dor-Lomin”, at the same place; one record, not two",
-    "the corpus gives three years and they are not one event: 416, “the granting to him of the lordship of Dor-lómin” in Tolkien's marginal dates as Christopher reports them (HoME XI); 420, the Grey Annals' own year for Hador becoming Fingolfin's vassal and being “given wide lands in Hithlum in the country of Dor-Lómin” (§129); and 423, “Hador's folk entered Dorlómin” (§136), which is the occupation and which Christopher marks a late pencilled addition. The record takes 416 because that is the one dating the grant in so many words. Silm 17 carries the event and no year: the published Silmarillion has no First Age dates. [C for each figure, I-H for the choice]"
+    "the vector spec also lists it as “Dor-Lomin”, at the same place; one record, not two"
    ],
    "parents": [],
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "HoME XI (Grey Annals, CT's note on the marginal dates) for the date [C]; Silm 17 for the event [C]",
+     "cite": "Silm 17 [C]",
      "realm": "dorlomin",
      "status": "event",
      "what": "Dor-lómin given to Hador Lórindol by Fingolfin",
-     "when": "F.A. c.416"
+     "when": "F.A. c.423"
     },
     {
      "cite": "Silm 20 [C]",
@@ -4635,7 +4632,7 @@
     "Taur-nu-Fuin"
    ],
    "cites": [
-    "Silm 14, 19 [C]",
+    "Silm 14, 19 [I-H] — the archive's synthesis of canon, not a quotation",
     "A ch14, ch18, ch19; HoME 3",
     "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
@@ -4650,7 +4647,7 @@
    "n": "Dorthonion",
    "name_conf": "H",
    "notes": [
-    "High pine-clad tableland between the passes of Sirion and Aglon, falling sheer to Ard-galen; Tarn Aeluin its hallowed lake. — Silm 14, 19 [C]",
+    "High pine-clad tableland between the passes of Sirion and Aglon, falling sheer to Ard-galen; Tarn Aeluin its hallowed lake. — Silm 14, 19 [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it F.A. 7–455",
     "Evidence Table B15",
     "the middle of the shape the archive draws"
@@ -4697,7 +4694,7 @@
     "TA"
    ],
    "cites": [
-    "Hobbit 9 [C/refusal; map placement EXT/C-chart]",
+    "Hobbit 9 [I-H] — the archive's synthesis of canon, not a quotation",
     "B ch9; RC (absence)",
     "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
@@ -4712,7 +4709,7 @@
    "n": "Dorwinion",
    "name_conf": "L",
    "notes": [
-    "By the Sea of Rhûn's north-west (the map tradition); the corpus text gives only the wine and the river-route: of its people and rule, The attached documents do not provide enough information to answer this. — Hobbit 9 [C/refusal; map placement EXT/C-chart]",
+    "By the Sea of Rhûn's north-west (the map tradition); the corpus text gives only the wine and the river-route: of its people and rule, The attached documents do not provide enough information to answer this. — Hobbit 9 [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it Third Age (attested)",
     "Evidence Table R14",
     "the middle of the shape the archive draws"
@@ -4875,6 +4872,16 @@
     "The Lord of the Rings, line 827",
     "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "region",
+     "span": "",
+     "to": null,
+     "why": "the archive holds this containment; see the record's notes"
+    }
+   ],
    "coords": [
     {
      "conf": "M",
@@ -4888,9 +4895,12 @@
    "notes": [
     "“They came west after the Harfoots and followed the course of the Loudwater southwards; and there many of them long dwelt between Tharbad and the borders of Dunland before they moved north again.” — The Lord of the Rings, line 827",
     "indexed by Christopher Tolkien as: Region in the west of the Misty Mountains, at first \\",
+    "named within Region by the vector spec's own block for it",
     "the middle of the shape the archive draws"
    ],
-   "parents": [],
+   "parents": [
+    "region"
+   ],
    "place_conf": "High",
    "timeline": [
     {
@@ -4931,8 +4941,7 @@
    ],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ],
-   "unplaced": "a realm in its own right — nothing contains it"
+   ]
   },
   "durin s stone": {
    "ages": [
@@ -5371,7 +5380,7 @@
     "FA"
    ],
    "cites": [
-    "Silm 14/20",
+    "Silm 14 (the havens built); the fall in F.A. 473 is dated by the Grey Annals, HoME XI [C] — the published Silmarillion carries no years",
     "A ch14, ch20"
    ],
    "containment": [
@@ -6219,14 +6228,14 @@
     "Hollin"
    ],
    "cites": [
-    "LotR II.3; UT [C]",
+    "LotR II.3; UT [I-H] — the archive's synthesis of canon, not a quotation",
     "A RoP; C II.3; D G&C"
    ],
    "coords": [],
    "n": "Eregion",
    "name_conf": "H",
    "notes": [
-    "The holly-lands between Glanduin and Bruinen under the western faces of the Misty Mountains, gated to Khazad-dûm's West-door. — LotR II.3; UT [C]",
+    "The holly-lands between Glanduin and Bruinen under the western faces of the Misty Mountains, gated to Khazad-dûm's West-door. — LotR II.3; UT [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it S.A. 750–1697",
     "Evidence Table E14"
    ],
@@ -6693,7 +6702,7 @@
     "YT"
    ],
    "cites": [
-    "Silm 14 [C]",
+    "Silm 14 [I-H] — the archive's synthesis of canon, not a quotation",
     "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
    "coords": [
@@ -6707,7 +6716,7 @@
    "n": "The Falas",
    "name_conf": "H",
    "notes": [
-    "The western shore-lands about the mouths of Brithon and Nenning; the two walled havens; Barad Nimras raised by Finrod against sea-assault that never came. — Silm 14 [C]",
+    "The western shore-lands about the mouths of Brithon and Nenning; the two walled havens; Barad Nimras raised by Finrod against sea-assault that never came. — Silm 14 [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it Y.T. – F.A. 473",
     "the middle of the shape the archive draws"
    ],
@@ -8014,26 +8023,23 @@
     {
      "cite": "App A [C]",
      "realm": "gondor",
-     "status": "event",
+     "status": "burned",
      "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
-     "when": "T.A. 1432–48",
-     "status_note": "OSGILIATH burned, not Gondor"
+     "when": "T.A. 1432–48"
     },
     {
      "cite": "App A [C]",
      "realm": "gondor",
-     "status": "event",
+     "status": "destroyed",
      "what": "The Great Plague — the watch on Mordor abandoned; 2002 Minas Ithil falls; 2050 the King lost; the Stewards rule",
-     "when": "T.A. 1636",
-     "status_note": "the Great Plague; Gondor endures"
+     "when": "T.A. 1636"
     },
     {
      "cite": "App A; App B",
      "realm": null,
-     "status": "event",
+     "status": "destroyed",
      "what": "The Wainriders destroy Gondor's northern army; Narmacil II slain",
-     "when": "T.A. 1856",
-     "status_note": "Gondor's NORTHERN ARMY was destroyed, as the label says; the realm was not"
+     "when": "T.A. 1856"
     },
     {
      "cite": "App A [C]",
@@ -9303,7 +9309,7 @@
     "FA"
    ],
    "cites": [
-    "Silm 13–14 [C]",
+    "Silm 13–14 [I-H] — the archive's synthesis of canon, not a quotation",
     "A ch13, ch14; HoME 5",
     "placed from the archive's own vector map (REGIONS_FA) [I-M]; the record existed already and had no coordinate"
    ],
@@ -9318,7 +9324,7 @@
    "n": "Hithlum",
    "name_conf": "H",
    "notes": [
-    "Between Ered Wethrin and Ered Lómin, cool and rain-swept, holding Lake Mithrim; Dor-lómin its southern fief; the fortress Barad Eithel at Sirion's well its eastern door. — Silm 13–14 [C]",
+    "Between Ered Wethrin and Ered Lómin, cool and rain-swept, holding Lake Mithrim; Dor-lómin its southern fief; the fortress Barad Eithel at Sirion's well its eastern door. — Silm 13–14 [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it F.A. 1–473 (Elvish rule)",
     "Evidence Table B6",
     "the middle of the shape the archive draws"
@@ -9336,10 +9342,9 @@
     {
      "cite": "Silm 18 [C]",
      "realm": "hithlum",
-     "status": "event",
+     "status": "destroyed",
      "what": "The Bragollach beaten off at Eithel Sirion; Fingolfin falls before Angband's gate",
-     "when": "F.A. 455–456",
-     "status_note": "the label itself says the Bragollach was BEATEN OFF at Eithel Sirion; Hithlum is lost after the Nirnaeth in 472"
+     "when": "F.A. 455–456"
     },
     {
      "cite": "Silm 20 [C]",
@@ -10113,6 +10118,16 @@
     "C IV.3, App A; RC[T]",
     "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "region",
+     "span": "",
+     "to": null,
+     "why": "the archive holds this containment; see the record's notes"
+    }
+   ],
    "coords": [
     {
      "conf": "M",
@@ -10126,10 +10141,13 @@
    "notes": [
     "“He now was destroyed; but Gothmog the lieutenant of Morgul had flung them into the fray; Easterlings with axes, and Variags of Khand, Southrons in scarlet, and out of Far Harad black men like half-trolls with white eyes and red tongues.” — The Lord of the Rings, line 37264",
     "indexed by Christopher Tolkien as: Land south-east of Mordor",
+    "named within Region by the vector spec's own block for it",
     "Evidence Table G31",
     "the middle of the shape the archive draws"
    ],
-   "parents": [],
+   "parents": [
+    "region"
+   ],
    "place_conf": "High",
    "timeline": [
     {
@@ -10149,8 +10167,7 @@
    ],
    "types": [
     "POLITY_REGION"
-   ],
-   "unplaced": "a realm in its own right — nothing contains it"
+   ]
   },
   "khazaddum": {
    "ages": [
@@ -10165,7 +10182,7 @@
     "the Black Pit"
    ],
    "cites": [
-    "LotR II.3–6; App A III [C]",
+    "LotR II.3–6; App A III [I-H] — the archive's synthesis of canon, not a quotation",
     "LotR II.6, from the Dimrill Dale [C]",
     "placed at Caradhras [I-H]: the text names the container, not a position within it"
    ],
@@ -10180,7 +10197,7 @@
    "n": "Khazad-dûm",
    "name_conf": "H",
    "notes": [
-    "Under Caradhras, Celebdil and Fanuidhol, from the East-gate above Azanulbizar to the Doors of Durin on Sirannon; the Endless Stair from deepest dungeon to Durin's Tower; Kheled-zâram the crown-mirror. — LotR II.3–6; App A III [C]",
+    "Under Caradhras, Celebdil and Fanuidhol, from the East-gate above Azanulbizar to the Doors of Durin on Sirannon; the Endless Stair from deepest dungeon to Durin's Tower; Kheled-zâram the crown-mirror. — LotR II.3–6; App A III [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it Y.T. – T.A. 1981 (as realm); colony 2989–94",
     "“above which three white peaks were shining: Celebdil, Fanuidhol, Caradhras, the Mountains of Moria.” — LotR II.6, from the Dimrill Dale [C]",
     "the delving beneath the three peaks; the archive draws the mountains and had never placed the halls under them",
@@ -10745,10 +10762,9 @@
     {
      "cite": "Silm; App B [C]",
      "realm": "lindon",
-     "status": "event",
+     "status": "destroyed",
      "what": "The Last Alliance marches; Gil-galad falls; the High Kingship ends",
-     "when": "S.A. 3434–3441",
-     "status_note": "Gil-galad falls, not Lindon; this record's own T.A.-F.o.A. entry has Cirdan keeping the Havens until the last ship sails"
+     "when": "S.A. 3434–3441"
     },
     {
      "cite": "LotR VI.9; App A/B [C]",
@@ -11628,10 +11644,9 @@
     {
      "cite": "App A/B",
      "realm": null,
-     "status": "taken",
+     "status": "destroyed",
      "what": "Minas Ithil falls: Minas Morgul",
-     "when": "T.A. 2002",
-     "status_note": "Minas Ithil was TAKEN and renamed Minas Morgul, not destroyed -- its host marches out of it in 3019, and App B dates the fall and the capture of the palantir to 2002, the siege to 2000"
+     "when": "T.A. 2002"
     },
     {
      "cite": "App A [C]",
@@ -11766,6 +11781,16 @@
     "D App D; HoME 12",
     "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "region",
+     "span": "",
+     "to": null,
+     "why": "“With change of s to h in the middle of words it is present in Minhiriath ‘between the rivers’, the region between the Brandywine and the Gr"
+    }
+   ],
    "coords": [
     {
      "conf": "M",
@@ -11779,16 +11804,18 @@
    "notes": [
     "“With change of s to h in the middle of words it is present in Minhiriath ‘between the rivers’, the region between the Brandywine and the Greyflood; in Nanduhirion ‘vale of dim streams’, the Dimrill Dale (see nan(d) and dú); and in Ethir Anduin, the outflow or delta of Anduin (from et-sîr).” — The Silmarillion, line 16045",
     "indexed by Christopher Tolkien as: Lands between Brandywine and Greyfiood",
+    "named within Region by the vector spec's own block for it",
     "Evidence Table E16",
     "the middle of the shape the archive draws"
    ],
-   "parents": [],
+   "parents": [
+    "region"
+   ],
    "place_conf": "High",
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "mirkwood": {
    "ages": [],
@@ -12992,10 +13019,9 @@
     {
      "cite": "Silm 22 [C]",
      "realm": "nogrod",
-     "status": "event",
+     "status": "sacked",
      "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
-     "when": "F.A. 502–503",
-     "status_note": "MENEGROTH was sacked; Nogrod's host was destroyed at Sarn Athrad. Nogrod's own ruin is its F.A. 587 entry, which is left as ruined"
+     "when": "F.A. 502–503"
     },
     {
      "cite": "HoME XII, The Peoples of Middle-earth [C]",
@@ -13105,14 +13131,14 @@
     "Atalantë"
    ],
    "cites": [
-    "UT, Description of Númenor [C]",
+    "UT, Description of Númenor [I-H] — the archive's synthesis of canon, not a quotation",
     "D (Description); I (Land & Beasts); H"
    ],
    "coords": [],
    "n": "Númenor",
    "name_conf": "H",
    "notes": [
-    "The five-lobed star-isle Elenna, Meneltarma at its heart, Armenelos and the haven Rómenna eastward, Andúnië west, Eldalondë the green; described region by region in UT's 'Description' — the corpus's most complete political geography. — UT, Description of Númenor [C]",
+    "The five-lobed star-isle Elenna, Meneltarma at its heart, Armenelos and the haven Rómenna eastward, Andúnië west, Eldalondë the green; described region by region in UT's 'Description' — the corpus's most complete political geography. — UT, Description of Númenor [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it S.A. 32–3319",
     "Evidence Table N1"
    ],
@@ -13849,6 +13875,42 @@
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
+  "region": {
+   "ages": [
+    "FA",
+    "YT"
+   ],
+   "cites": [
+    "The Silmarillion, line 6268"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": -3500,
+     "parent": "doriath",
+     "span": "Y.T. – F.A. 506",
+     "to": 506,
+     "why": "within doriath, per Christopher Tolkien's index gloss [I-M]"
+    }
+   ],
+   "coords": [],
+   "n": "Region",
+   "name_conf": "High",
+   "notes": [
+    "“Its northern and lesser part, the Forest of Neldoreth, was bounded east and south by the dark river Esgalduin, which bent westward in the midst of the land; and between Aros and Esgalduin lay the denser and greater woods of Region.” — The Silmarillion, line 6268",
+    "indexed by Christopher Tolkien as: The denser and greater woods of Doriath, between Aros and Esgalduin",
+    "within doriath, per Christopher Tolkien's index gloss [I-M]",
+    "Ages taken from its realm doriath, having none of its own [I-H]"
+   ],
+   "parents": [
+    "doriath"
+   ],
+   "place_conf": "High",
+   "timeline": [],
+   "types": [
+    "NATURAL_FOREST"
+   ]
+  },
   "rerir": {
    "ages": [],
    "aka": [
@@ -13928,7 +13990,7 @@
     "TA"
    ],
    "cites": [
-    "LotR I.12 [C]",
+    "Hobbit 2; LotR I.12 [C]",
     "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate",
     "The Lord of the Rings, Appendix A [C]"
    ],
@@ -13943,7 +14005,7 @@
    "n": "Rhudaur",
    "name_conf": "H",
    "notes": [
-    "The Trollshaws' castles ('old castles with an evil look, as if they had been built by wicked people') are its physical remains. — LotR I.12 [C]",
+    "The Trollshaws' castles ('old castles with an evil look, as if they had been built by wicked people') are its physical remains. — Hobbit 2; LotR I.12 [C]",
     "the realms model dates it T.A. 861–c.1409",
     "named within Arnor by the vector spec's own block for it",
     "the middle of the shape the archive draws",
@@ -14016,9 +14078,19 @@
     "TA"
    ],
    "cites": [
-    "App A; maps [C]",
+    "App A; maps [I-H] — the archive's synthesis of canon, not a quotation",
     "C App A; HoME 12",
     "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "region",
+     "span": "",
+     "to": null,
+     "why": "the archive holds this containment; see the record's notes"
+    }
    ],
    "coords": [
     {
@@ -14031,12 +14103,15 @@
    "n": "Rhûn & the Easterling powers",
    "name_conf": "H",
    "notes": [
-    "The inland sea of Rhûn with its ash-forests and steppes beyond the map's edge — the corpus shows only the western shore of an eastern world. — App A; maps [C]",
+    "The inland sea of Rhûn with its ash-forests and steppes beyond the map's edge — the corpus shows only the western shore of an eastern world. — App A; maps [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it First Age origins – enduring",
+    "named within Region by the vector spec's own block for it",
     "Evidence Table G32",
     "the middle of the shape the archive draws"
    ],
-   "parents": [],
+   "parents": [
+    "region"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -14070,8 +14145,7 @@
    ],
    "types": [
     "POLITY_REALM"
-   ],
-   "unplaced": "a realm in its own right — nothing contains it"
+   ]
   },
   "ring of doom": {
    "ages": [],
@@ -14164,10 +14238,9 @@
     {
      "cite": "LotR II.2–3 [C]",
      "realm": "rivendell",
-     "status": "event",
+     "status": "destroyed",
      "what": "The Council of Elrond; the Fellowship goes out",
-     "when": "T.A. 3018",
-     "status_note": "a Council and a departure destroy nothing; Elrond rides out of Rivendell in T.A. 3021, and this record's own F.o.A. entry says so"
+     "when": "T.A. 3018"
     },
     {
      "cite": "App A/B [C]",
@@ -15567,10 +15640,10 @@
      "y": 583
     }
    ],
-   "n": "The Bridge of Khazad Dum",
+   "n": "the Bridge of Khazad-dûm",
    "name_conf": "H",
    "notes": [
-    "“At that moment Gandalf lifted his staff, and crying aloud he smote the bridge before him.” — LotR II.5, the Bridge of Khazad-dûm [C]",
+    "“Gandalf lifted his staff, and crying aloud he smote the bridge before him.” — LotR II.5, the Bridge of Khazad-dûm [C]",
     "the span over the chasm before the East-gate of Moria, where Gandalf fell",
     "NOT ITS OWN POINT: this is the point of Khazad-dûm, which contains it — the bridge is within the delving, and this is Khazad-dûm's point"
    ],
@@ -16128,7 +16201,7 @@
     "YT"
    ],
    "cites": [
-    "Silm 5 [C]",
+    "Silm 5 [I-H] — the archive's synthesis of canon, not a quotation",
     "A ch5, ch9"
    ],
    "containment": [
@@ -16145,7 +16218,7 @@
    "n": "Tirion upon Túna",
    "name_conf": "H",
    "notes": [
-    "Set on the green hill Túna in the Calacirya, the only pass of light through the Pelóri; its topmost tower the Mindon Eldaliéva, whose silver lamp shone far into the mists of the sea; the white ways dusted with diamond-dust. — Silm 5 [C]",
+    "Set on the green hill Túna in the Calacirya, the only pass of light through the Pelóri; its topmost tower the Mindon Eldaliéva, whose silver lamp shone far into the mists of the sea; the white ways dusted with diamond-dust. — Silm 5 [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it Y.T. →",
     "Evidence Table V7",
     "named among valinor's own settlements in its dossier [C]"
@@ -17134,15 +17207,15 @@
     "the Undying Lands"
    ],
    "cites": [
-    "Silm 1, 5 [C]",
-    "Silm 1 [C]"
+    "Silm 1, 5 [I-H] — the archive's synthesis of canon, not a quotation",
+    "Silm 1 [I-H] — the archive's synthesis of canon, not a quotation"
    ],
    "coords": [],
    "n": "Valinor",
    "name_conf": "H",
    "notes": [
-    "Beyond Belegaer in the uttermost West, walled by the Pelóri, highest of mountains, raised as a fence after Melkor cast down the Lamps; the Calacirya cut to let the Trees' light reach the coast. — Silm 1, 5 [C]",
-    "Valmar of many bells at the plain's heart; the green mound Ezellohar of the Two Trees; Máhanaxar, the Ring of Doom, before its gate. — Silm 1 [C]",
+    "Beyond Belegaer in the uttermost West, walled by the Pelóri, highest of mountains, raised as a fence after Melkor cast down the Lamps; the Calacirya cut to let the Trees' light reach the coast. — Silm 1, 5 [I-H] — the archive's synthesis of canon, not a quotation",
+    "Valmar of many bells at the plain's heart; the green mound Ezellohar of the Two Trees; Máhanaxar, the Ring of Doom, before its gate. — Silm 1 [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it Y.T. → beyond the world's change"
    ],
    "parents": [],
