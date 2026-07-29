@@ -289,7 +289,7 @@
    "n": "Amon Ereb",
    "name_conf": null,
    "notes": [
-    "Where Denethor of the Green-elves fell in the First Battle; the Fëanorians' last hold.",
+    "Where Denethor of the Green-elves fell in the First Battle; the sons of Fëanor kept 'a watch and some strength of war' here after the Bragollach (Silm 18) — not their last hold: after the Nirnaeth Silm 20 has them 'wander as leaves before the wind', living wild beneath Ered Lindon.",
     "“an endless chain of hills running from Eglarest beyond Narog in the west to Amon Ereb in the east, within far sight of Gelion.” — The Silmarillion, Of Beleriand and its Realms [C]",
     "in East Beleriand, west of Gelion and so within the land that was drowned; it is not in Ossiriand, and Lindon is the country on the far bank",
     "spec FA: watch",
@@ -1212,7 +1212,7 @@
     "indexed by Christopher Tolkien as: Gates of, Pillars o f",
     "Evidence Table R19",
     "“He there built the Gates of Argonath with images of Isildur and Anárion beyond which no stranger was allowed to come south without leave.” — HoME XII, The Peoples of Middle-earth [C]",
-    "Gondor's own northern boundary-work, raised by Romendakil II about T.A. 1248 — twelve centuries before Calenardhon was granted to the Eorlingas in T.A. 2510",
+    "Gondor's own northern boundary-work, raised by Rómendacil II — no tier-1 text dates the building; App A puts it 'on his return' from the campaign of 1248, and in 1248 he was still Minalcar the Regent, crowned only in 1304 [I-M] — twelve centuries before Calenardhon was granted to the Eorlingas in T.A. 2510",
     "also the Pillars of the Kings",
     "Rómendacil's giants of stone fencing the north-way of Gondor.",
     "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
@@ -1399,7 +1399,7 @@
     "spec FA: fords",
     "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
     "“Thence he passed through Dor Dínen, the Silent Land, and crossing the Arossiach (which signifies the Fords of Aros) came to the north marches of Beleriand, where dwelt the sons of Fëanor.” — The Silmarillion [C]",
-    "he letters Arossiach on the Beleriand plate; the Fords of Aros"
+    "Christopher Tolkien letters Arossiach on the Beleriand plate; the Fords of Aros"
    ],
    "parents": [],
    "place_conf": "H",
@@ -1591,7 +1591,7 @@
    "name_conf": "H",
    "notes": [
     "“Mr. FRODO BAGGINS, BAG END, HOBBITON in the SHIRE.” — LotR I.9 — Gandalf's own direction on the letter [C]",
-    "the smial under the Hill; 'they lived on the Hill itself, in Number 3 Bagshot Row just below Bag End' (LotR I.1)",
+    "the hole under the Hill — 'Bag-End, Under-Hill' in The Hobbit; t1 never calls it a smial; 'they lived on the Hill itself, in Number 3 Bagshot Row just below Bag End' (LotR I.1)",
     "NOT ITS OWN POINT: this is the point of Hobbiton, which contains it — the letter addresses it in Hobbiton, and this is Hobbiton's point"
    ],
    "parents": [],
@@ -1723,7 +1723,7 @@
    "name_conf": "H",
    "notes": [
     "also the Dark Tower",
-    "Sauron's fortress, founded c. S.A. 1000, rebuilt 2951; its fall shook the world.",
+    "Sauron's fortress: App B has him begin the building c. S.A. 1000 and begin the REBUILDING in T.A. 2951 — a different age, and begun rather than finished. At its fall LotR VI.3 says 'the earth shook, the plain heaved and cracked, and Orodruin reeled', which is Mordor and the mountain, not the world.",
     "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]",
     "Evidence Table G24",
     "the middle of the shape the archive draws"
@@ -1777,7 +1777,8 @@
     }
    ],
    "types": [
-    "MAN_MADE_TOWER"
+    "MAN_MADE_TOWER",
+    "NATURAL_PEAK"
    ]
   },
   "barad eithel": {
@@ -2366,7 +2367,7 @@
    "name_conf": null,
    "notes": [
     "spec TA: town",
-    "At the meeting of the Roads: the Prancing Pony, and a man called Strider."
+    "At an old meeting of ways — Tolkien's own phrase, not a place-name: the Prancing Pony, and a man called Strider."
    ],
    "parents": [],
    "place_conf": "H",
@@ -3061,7 +3062,7 @@
    "name_conf": "H",
    "notes": [
     "“§14 The whole extent of the coastal region from the Firth of Drengist south to Cape Balar is here named the Falas (cf.” — HoME XI, The War of the Jewels [C]",
-    "he letters Cape Balar on the Beleriand plate, at the southern end of the Falas"
+    "Christopher Tolkien letters Cape Balar on the Beleriand plate, at the southern end of the Falas"
    ],
    "parents": [],
    "place_conf": null,
@@ -3148,7 +3149,7 @@
    "notes": [
     "spec TA: tree-city",
     "also in Lothlórien",
-    "The city of the trees; Galadriel's mirror; 'On the land of Lórien there was no stain.'",
+    "The City of the Trees; Galadriel's Mirror, in a hollow on the southern slopes of its hill — both LotR II.7. 'On the land of Lórien there was no stain' is II.6, and is said of the LAND by Frodo on Cerin Amroth, a day short of the city, which II.6 never names.",
     "named within Lothlorien by the vector spec's own block for it"
    ],
    "parents": [
@@ -3157,7 +3158,8 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_CITY"
+    "MAN_MADE_CITY",
+    "NATURAL_HILL"
    ]
   },
   "cardolan": {
@@ -3699,7 +3701,7 @@
    "n": "Cirith Ungol",
    "name_conf": null,
    "notes": [
-    "Shelob's stair and tunnel; the Tower where Sam bore the Ring and found Frodo.",
+    "Shelob's tunnel and the Stairs of Cirith Ungol — the Straight Stair and the Winding Stair, LotR IV.8; the tunnel alone is hers. The Tower where Sam bore the Ring and found Frodo.",
     "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]",
     "the middle of the shape the archive draws"
    ],
@@ -3834,7 +3836,7 @@
    "notes": [
     "Evidence Table B19",
     "“Upon the left hand of Sirion lay East Beleriand, at its widest a hundred leagues from Sirion to Gelion and the borders of Ossiriand; and first, between Sirion and Mindeb, lay the empty land of Dimbar under the peaks of the Crissaegrim, abode of eagles.” — The Silmarillion [C]",
-    "he letters Crissaegrim on the Beleriand plate, above Dimbar"
+    "Christopher Tolkien letters Crissaegrim on the Beleriand plate, above Dimbar"
    ],
    "parents": [],
    "place_conf": null,
@@ -3943,7 +3945,7 @@
    "name_conf": "H",
    "notes": [
     "spec TA: town (rebuilt)",
-    "Girion's bell-town, burned 2770; reborn under Bard; battle before it, Mar 3019.",
+    "Girion's bell-town (Hobbit XII names him; ch i gives the bells), destroyed 2770 — the corpus's word, and 'ruined and deserted'; reborn under Bard 2944; the battle of 17 Mar 3019 fought at the Mountain's feet and before the gate of Erebor, Dale being where Brand was driven back to.",
     "Evidence Table R10"
    ],
    "parents": [],
@@ -4415,7 +4417,7 @@
    "name_conf": "H",
    "notes": [
     "“Thence he passed through Dor Dínen, the Silent Land, and crossing the Arossiach (which signifies the Fords of Aros) came to the north marches of Beleriand, where dwelt the sons of Fëanor.” — The Silmarillion [C]",
-    "he letters Dor Dinen on the Beleriand plate, between the upper Esgalduin and Aros"
+    "Christopher Tolkien letters Dor Dinen on the Beleriand plate, between the upper Esgalduin and Aros"
    ],
    "parents": [],
    "place_conf": null,
@@ -5022,7 +5024,7 @@
    "name_conf": "H",
    "notes": [
     "“Men-i-Naugrim, the Dwarf Road, is the Old Forest Road described in The Hobbit, Chapter 7.” — Unfinished Tales [C]",
-    "he letters Dwarf Road on the Beleriand plate, running east to Ered Luin; Men-i-Naugrim"
+    "Christopher Tolkien letters Dwarf Road on the Beleriand plate, running east to Ered Luin; Men-i-Naugrim"
    ],
    "parents": [],
    "place_conf": null,
@@ -5138,7 +5140,7 @@
    "name_conf": "H",
    "notes": [
     "“And what is more, the Bridge and the East Road near the borders will certainly be watched, whether any Rider gets into Buckland or not.” — The Lord of the Rings [C]",
-    "he letters GREAT EAST ROAD on the General Map; the text of The Lord of the Rings calls it the East Road, and the archive follows the text"
+    "Christopher Tolkien letters GREAT EAST ROAD on the General Map; the text of The Lord of the Rings calls it the East Road, and the archive follows the text"
    ],
    "parents": [],
    "place_conf": null,
@@ -6755,7 +6757,7 @@
    "name_conf": "H",
    "notes": [
     "“Now Húrin journeyed eastward, and he came to the Meres of Twilight above the Falls of Sirion; and there he was taken by the Elves that guarded the western marches of Doriath, and brought before King Thingol in the Thousand Caves.” — The Silmarillion [C]",
-    "he letters Falls of Sirion on the Beleriand plate, where the river plunged underground"
+    "Christopher Tolkien letters Falls of Sirion on the Beleriand plate, where the river plunged underground"
    ],
    "parents": [],
    "place_conf": null,
@@ -6911,7 +6913,7 @@
    "name_conf": "H",
    "notes": [
     "“He now was destroyed; but Gothmog the lieutenant of Morgul had ﬂung them into the fray; Easterlings with axes, and Variags of Khand, Southrons in scarlet, and out of Far Harad black men like half-trolls with white eyes and red tongues.” — The Lord of the Rings [C]",
-    "he letters FAR HARAD at the southern edge of the General Map"
+    "Christopher Tolkien letters FAR HARAD at the southern edge of the General Map"
    ],
    "parents": [],
    "place_conf": null,
@@ -6971,7 +6973,7 @@
    "name_conf": "H",
    "notes": [
     "“It is told in the Lay of Leithian that Beren passed through Doriath unhindered, and came at length to the region of the Twilight Meres, and the Fens of Sirion; and leaving Thingol’s land he climbed the hills above the Falls of Sirion, where the river plunged underground with great noise.” — The Silmarillion [C]",
-    "he letters Fens of Sirion on the Beleriand plate; the archive held Sirion and its Mouths and neither its Fens, its Falls nor its Gates"
+    "Christopher Tolkien letters Fens of Sirion on the Beleriand plate; the archive held Sirion and its Mouths and neither its Fens, its Falls nor its Gates"
    ],
    "parents": [],
    "place_conf": null,
@@ -7190,7 +7192,7 @@
     "the Forest Gate"
    ],
    "cites": [
-    "The Hobbit, ch. VII — Beorn to the company [C]; and lettered FG on Tolkien's own Wilderland draft, 'Forest-Gate to Elf-road'",
+    "The Hobbit, ch. VII — Beorn to the company [C]; and lettered FG on Tolkien's own Wilderland draft, 'Forest-Gate to Elf-road' — NOT FOUND in the 49 volumes; the lettering is unverified from the corpus [I-L]",
     "placed at Mirkwood (Greenwood the Great / Eryn Lasgalen) [I-H]: the text names the container, not a position within it"
    ],
    "coords": [
@@ -7204,8 +7206,8 @@
    "n": "Forest Gate",
    "name_conf": "H",
    "notes": [
-    "“At the gate of the forest I must ask you to send back my horse and my ponies.” — The Hobbit, ch. VII — Beorn to the company [C]; and lettered FG on Tolkien's own Wilderland draft, 'Forest-Gate to Elf-road'",
-    "the western entry of the elf-path into Mirkwood, where Beorn's beasts were sent back",
+    "“At the gate of the forest I must ask you to send back my horse and my ponies.” — The Hobbit, ch. VII — Beorn to the company [C]; and lettered FG on Tolkien's own Wilderland draft, 'Forest-Gate to Elf-road' — NOT FOUND in the 49 volumes; the lettering is unverified from the corpus [I-L]",
+    "the western entry of the ELF-ROAD into Mirkwood — Tolkien's word; 'elf-path' and the westward placing are Foster's (t3), not the text's [I-H] — where Beorn's beasts were sent back, Hobbit VII",
     "NOT ITS OWN POINT: this is the point of Mirkwood (Greenwood the Great / Eryn Lasgalen), which contains it — the gate opens into that forest, and this is Mirkwood's point"
    ],
    "parents": [],
@@ -7571,7 +7573,7 @@
    "notes": [
     "Evidence Table B28",
     "“But some twenty-five leagues east of the gorge of Nargothrond Sirion fell from the north in a mighty fall below the Meres, and then he plunged suddenly underground into great tunnels that the weight of his falling waters delved; and he issued again three leagues southward with great noise and smoke through rocky arches at the foot of the hills which were called the Gates of Sirion.” — The Silmarillion [C]",
-    "he letters Gates of Sirion on the Beleriand plate, three leagues south of the Falls"
+    "Christopher Tolkien letters Gates of Sirion on the Beleriand plate, three leagues south of the Falls"
    ],
    "parents": [],
    "place_conf": "H",
@@ -8607,7 +8609,7 @@
    "name_conf": "H",
    "notes": [
     "“Ciryandil his son continued the building of ships; but the Men of the Harad, led by the lords that had been driven from Umbar, came up with great power against that stronghold, and Ciryandil fell in battle in Haradwaith.” — The Lord of the Rings [C]",
-    "he letters HARADWAITH across the south of the General Map, glossed [Sutherland]"
+    "Christopher Tolkien letters HARADWAITH across the south of the General Map, glossed [Sutherland]"
    ],
    "parents": [],
    "place_conf": null,
@@ -11288,7 +11290,7 @@
    "name_conf": "H",
    "notes": [
     "“That region was named thereafter the March of Maedhros; for northwards there was little defence of hill or river against assault from Angband.” — The Silmarillion [C]",
-    "he letters March of Maedhros on the Beleriand plate, north-east of Himring"
+    "Christopher Tolkien letters March of Maedhros on the Beleriand plate, north-east of Himring"
    ],
    "parents": [],
    "place_conf": null,
@@ -11310,7 +11312,7 @@
    "name_conf": "H",
    "notes": [
     "“(10) D 2–4 Both Nevrast and the Marshes of Nevrast were first written Nivrost (see p.” — HoME XI, The War of the Jewels [C]",
-    "he letters Marshes of Nevrast on the Beleriand plate. THE ONLY MENTION THE CORPUS MAKES OF THIS NAME IS CHRISTOPHER'S OWN NOTE ON THE MAP'S LETTERING, so the name is attested and nothing is told of the place itself"
+    "Christopher Tolkien letters Marshes of Nevrast on the Beleriand plate. THE ONLY MENTION THE CORPUS MAKES OF THIS NAME IS CHRISTOPHER'S OWN NOTE ON THE MAP'S LETTERING, so the name is attested and nothing is told of the place itself"
    ],
    "parents": [],
    "place_conf": null,
@@ -12361,7 +12363,7 @@
    "name_conf": "H",
    "notes": [
     "“In later days when the shadow of Sauron spread through Greenwood the Great, and changed its name from Eryn Galen to Taur-nu-Fuin (translated Mirkwood), The Emyn Duir became a haunt of many of his most evil creatures, and were called Emyn-nu-Fuin, the Mountains of Mirkwood.” — Unfinished Tales [C]",
-    "he letters Mountains of Mirkwood on the General Map; Emyn Duir, later Emyn-nu-Fuin"
+    "Christopher Tolkien letters Mountains of Mirkwood on the General Map; Emyn Duir, later Emyn-nu-Fuin"
    ],
    "parents": [],
    "place_conf": null,
@@ -13841,7 +13843,7 @@
    "name_conf": "H",
    "notes": [
     "“This dividing fall was named Andram, the Long Wall, from Nargothrond to Ramdal, the Wall’s End, in East Beleriand.” — The Silmarillion [C]",
-    "he letters Ramdal on the Beleriand plate at the east end of the Andram"
+    "Christopher Tolkien letters Ramdal on the Beleriand plate at the east end of the Andram"
    ],
    "parents": [],
    "place_conf": null,
@@ -13865,7 +13867,7 @@
    "notes": [
     "Evidence Table R19",
     "“There it casts its arms about the steep shores of the isle, and falls then with a great noise and smoke over the cataracts of Rauros down into the Nindalf, the Wetwang as it is called in your tongue.” — The Lord of the Rings [C]",
-    "he letters RAUROS on the General Map, at the fall between Nen Hithoel and the Nindalf"
+    "Christopher Tolkien letters RAUROS on the General Map, at the fall between Nen Hithoel and the Nindalf"
    ],
    "parents": [],
    "place_conf": "M",
@@ -14179,7 +14181,7 @@
    "name_conf": "H",
    "notes": [
     "“ring ‘cold, chill’ in Ringil, Ringwil, Himring; also in the river Ringló in Gondor, and in Ringarë, Quenya name of the last month of the year (The Lord of the Rings Appendix D).” — The Silmarillion [C]",
-    "he letters R. RINGLO on the General Map, in Gondor"
+    "Christopher Tolkien letters R. RINGLO on the General Map, in Gondor"
    ],
    "parents": [],
    "place_conf": null,
@@ -14317,7 +14319,7 @@
    "name_conf": "H",
    "notes": [
     "“First therefore he pursued the Orcs that had slain his father and his kinsmen, and he found their camp by night at Rivil’s Well above the Fen of Serech, and because of his woodcraft he came near to their fire unseen.” — The Silmarillion [C]",
-    "he letters Rivil's Well on the Beleriand plate; the archive held the river Rivil and not its spring"
+    "Christopher Tolkien letters Rivil's Well on the Beleriand plate; the archive held the river Rivil and not its spring"
    ],
    "parents": [],
    "place_conf": null,
@@ -14611,7 +14613,7 @@
    "name_conf": "H",
    "notes": [
     "“You will come to the rapids of Sarn Gebir, and maybe at last to the great falls of Rauros where the River thunders down from Nen Hithoel; and there are other perils.” — The Lord of the Rings [C]",
-    "he letters Sarn Gebir on the General Map, on Anduin above Rauros"
+    "Christopher Tolkien letters Sarn Gebir on the General Map, on Anduin above Rauros"
    ],
    "parents": [],
    "place_conf": null,
@@ -14794,7 +14796,7 @@
    "name_conf": "H",
    "notes": [
     "“There lies the Mirrormere, and there the River Silverlode rises in its icy springs.” — The Lord of the Rings [C]",
-    "he letters R. SILVERLODE on the General Map; the archive held Celebrant and not this name"
+    "Christopher Tolkien letters R. SILVERLODE on the General Map; the archive held Celebrant and not this name"
    ],
    "parents": [],
    "place_conf": null,
@@ -16454,7 +16456,7 @@
    "notes": [
     "Evidence Table G28",
     "“But the Isle of Tolfalas was almost destroyed, and was left at last like a barren and lonely mountain in the water not far from the issue of the River.” — HoME XII, The Peoples of Middle-earth [C]",
-    "he letters TOLFALAS on the General Map, in the Bay of Belfalas"
+    "Christopher Tolkien letters TOLFALAS on the General Map, in the Bay of Belfalas"
    ],
    "parents": [],
    "place_conf": "H",
@@ -16960,7 +16962,7 @@
    "name_conf": "H",
    "notes": [
     "“Utumno, Sindarin Udûn (Gandalf in Moria named the Balrog ‘Flame of Udûn’), a name afterwards used of the deep dale in Mordor between the Morannon and the Isenmouthe.” — The Silmarillion [C]",
-    "he letters UDUN on the General Map between the Morannon and the Isenmouthe; NOT Utumno, which shares the Sindarin name"
+    "Christopher Tolkien letters UDUN on the General Map between the Morannon and the Isenmouthe; NOT Utumno, which shares the Sindarin name"
    ],
    "parents": [],
    "place_conf": null,
@@ -17695,7 +17697,7 @@
    "name_conf": "H",
    "notes": [
     "“There it casts its arms about the steep shores of the isle, and falls then with a great noise and smoke over the cataracts of Rauros down into the Nindalf, the Wetwang as it is called in your tongue.” — The Lord of the Rings [C]",
-    "he letters Wetwang on the General Map; the archive held Nindalf and not its Westron name"
+    "Christopher Tolkien letters Wetwang on the General Map; the archive held Nindalf and not its Westron name"
    ],
    "parents": [],
    "place_conf": null,
