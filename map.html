@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Map of Arda — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Map of Arda: Christopher Tolkien's own plates traced to their centrelines and drawn as vector paths rather than pictures — his linework, with the archive's cited places, realms and roads laid on it."><meta property="og:title" content="The Map of Arda — the Arda Archive"><meta property="og:description" content="The Map of Arda: Christopher Tolkien's own plates traced to their centrelines and drawn as vector paths rather than pictures — his linework, with the archive's cited places, realms and roads laid on it."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/map.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/map.html"><!--/ARDA:META-->
+<title>The Map of Arda — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Map of Arda: the archive's own vector map, drawn from the corpus and from measurement against Christopher Tolkien's geometry rather than reproducing his linework — every named feature cited, with realms, roads and the places the archive knows and does not draw."><meta property="og:title" content="The Map of Arda — the Arda Archive"><meta property="og:description" content="The Map of Arda: the archive's own vector map, drawn from the corpus and from measurement against Christopher Tolkien's geometry rather than reproducing his linework — every named feature cited, with realms, roads and the places the archive knows and does not draw."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/map.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/map.html"><!--/ARDA:META--><!--/ARDA:META-->
 <link rel="stylesheet" href="arda.css">
 <style>
  :root{--ink:#141210;--red:#a3251d;--parch:#efe6d2;--panel:#fbf6e8;--rule:#b0a58e}
@@ -162,7 +162,7 @@ const stage=document.getElementById('stage'),nmEl=document.getElementById('nm'),
       card=document.getElementById('card'),countEl=document.getElementById('count');
 let svg=null,vb=null,vb0=null;
 fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
-  // INLINE, NOT <img alt="">: an <img alt="">'s insides cannot be pointed at.
+  // INLINE, NOT <img>: an <img>'s insides cannot be pointed at.
   const doc=new DOMParser().parseFromString(txt,'image/svg+xml');
   svg=doc.documentElement;
   svg.removeAttribute('width'); svg.removeAttribute('height');
@@ -170,6 +170,26 @@ fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
   stage.insertBefore(svg,nmEl);
   const b=svg.getAttribute('viewBox').split(/\s+/).map(Number);
   vb={x:b[0],y:b[1],w:b[2],h:b[3]}; vb0=Object.assign({},vb);
+  // THE ARCHIVE'S OWN LETTERING IS NOT DRAWN AT ALL, AND IT SHOULD BE. Diagnosed, not
+  // fixed here -- the fix is structural and wants its own commit.
+  //
+  // The owner's ruling of 29 July withdraws Christopher Tolkien's LINEWORK and expressly
+  // keeps the archive's own words: "the archive's own lettering, set where Christopher
+  // Tolkien set his". Those words are read from arda_his_anchors.json, which is published
+  // and always was, and they have nothing to do with his paths.
+  //
+  // But loadHisNames() is DECLARED INSIDE loadTraced(), beside wireAside(), and called only
+  // from the arda_traced.svg callback. The ruling made loadTraced() return early -- `const
+  // b=document.getElementById('tT'); if(!b) return;` -- so the function is now unreachable
+  // and 161 of the archive's own names vanished from its own map as collateral, which
+  // nobody intended and no guard reports, because declutter_check was taken out of the
+  // suite for the same ruling.
+  //
+  // I TRIED THE ONE-LINE VERSION AND IT WAS WRONG: adding loadHisNames() to the call list
+  // below throws ReferenceError, because the function is nested in a scope this line cannot
+  // see -- and the throw killed loadRealms() and goHash() on the same line, taking all five
+  // deep-link forms down with it. Reverted. The real repair is to lift loadHisNames (and
+  // wireAside, which it needs) OUT of loadTraced to file scope, and only then call it here.
   wire(); apply('all'); loadRoads(); loadChrono(); loadUndrawn(); loadTraced();
   loadRealms(); goHash();
 });
@@ -386,7 +406,7 @@ function loadRoads(){
   const gB=document.createElementNS(NS,'g'); gB.id='bat';  gB.style.display='none';
   J.journeys.forEach(j=>{
    const g=document.createElementNS(NS,'g');
-   g.dataset.name=j.name; g.dataset.placed=j.n_placed; g.dataset.stages=j.n_stages;
+   g.dataset.id=j.id||''; g.dataset.name=j.name; g.dataset.placed=j.n_placed; g.dataset.stages=j.n_stages;
    j.segments.forEach(seg=>{
      const p=document.createElementNS(NS,'path');
      p.setAttribute('d','M'+seg.map(s=>s[0]+' '+s[1]).join(' L'));
@@ -406,7 +426,7 @@ function loadRoads(){
    const g=document.createElementNS(NS,'g');
    const c=document.createElementNS(NS,'circle');
    c.setAttribute('cx',b.x); c.setAttribute('cy',b.y); c.setAttribute('r',13);
-   c.dataset.key=b.key||''; c.dataset.label=b.name;
+   g.dataset.id=b.id||''; c.dataset.id=b.id||''; c.dataset.key=b.key||''; c.dataset.label=b.name;
    g.appendChild(c); gB.appendChild(g);
   });
   svg.appendChild(gR); svg.appendChild(gB);
@@ -516,10 +536,50 @@ function goHash(tries){
   // those readers arrived at a map that did nothing and said nothing.
   //
   // place= is an ALIAS for k=: both name a feature by key, and the retired map addressed
-  // places exactly as this one does. slice= selects an Age on the bar. journey=, day= and
-  // battle= are NOT served and are not faked here -- this page has no roads layer, no
-  // battles layer and no day scrubber, and pretending otherwise would be the kind of
-  // silent no-op this comment exists because of.
+  // places exactly as this one does. slice= selects an Age on the bar.
+  //
+  // journey= AND battle= ARE SERVED NOW, AND THE COMMENT THAT SAID THEY COULD NOT BE WAS
+  // WRONG ABOUT THIS PAGE. It read "this page has no roads layer, no battles layer and no
+  // day scrubber". The roads and battles layers are built at runtime a hundred lines below
+  // -- gR.id='roads', gB.id='bat' -- so both existed the whole time; what was missing was
+  // an identifier on each group, because the journey id and the battle id were read from
+  // arda_journeys.json and then dropped on the floor. They are carried onto the elements
+  // now, and these two handlers use them.
+  //
+  // day= CANNOT BE SERVED AND IS ANSWERED ANYWAY, which is the distinction the old comment
+  // was reaching for and stopped short of. Nothing here carries a per-day stage, so there
+  // is no element to centre on and faking one would be the silent no-op. But arriving at a
+  // page that does nothing and says nothing is what sent the reader here in the first
+  // place: the retired map had a day scrubber and sixteen references still use the form.
+  // So the link ARRIVES and the page states plainly that the scrubber is gone and why.
+  {const dm=(location.hash||'').match(/day=(\d+)/);
+   if(dm){ let n=document.getElementById('hashnote');
+     if(!n){ n=document.createElement('div'); n.id='hashnote';
+       n.style.cssText='padding:6px 14px;border-bottom:1px solid var(--rule);'
+                      +'background:#f2ead6;font-size:13px;font-style:italic;color:#6b5d49';
+       const bar=document.getElementById('bar'); bar.parentNode.insertBefore(n,bar.nextSibling); }
+     n.textContent='Day '+dm[1]+': this map draws each road entire and has no day scrubber, '
+       +'so the march is not animated to that stage. Turn on roads to see the whole route.';
+     return; }}
+  {const jm=(location.hash||'').match(/journey=([^&]+)/);
+   if(jm&&svg){ const want=decodeURIComponent(jm[1]).toLowerCase();
+     const gs=[...document.querySelectorAll('#roads > g')];
+     if(!gs.length){ if((tries||0)<40) setTimeout(()=>goHash((tries||0)+1),150); return; }
+     const g=gs.find(x=>(x.dataset.id||'').toLowerCase()===want);
+     if(g){ const b=document.getElementById('tR');
+            if(b&&b.getAttribute('aria-pressed')!=='true') b.click();
+            gs.forEach(x=>x.style.opacity=(x===g?'1':'.12'));
+            const bb=g.getBBox(); centre(bb.x+bb.width/2,bb.y+bb.height/2); }
+     return; }}
+  {const bm=(location.hash||'').match(/battle=([^&]+)/);
+   if(bm&&svg){ const want=decodeURIComponent(bm[1]).toLowerCase();
+     const cs=[...document.querySelectorAll('#bat circle')];
+     if(!cs.length){ if((tries||0)<40) setTimeout(()=>goHash((tries||0)+1),150); return; }
+     const c=cs.find(x=>(x.dataset.id||'').toLowerCase()===want);
+     if(c){ const b=document.getElementById('tB');
+            if(b&&b.getAttribute('aria-pressed')!=='true') b.click();
+            centre(+c.getAttribute('cx'),+c.getAttribute('cy')); }
+     return; }}
   // THE SLICE-TO-AGE MAP IS DERIVED FROM THE DATA AT BUILD TIME, not guessed by position.
   // My first attempt indexed a four-element list by the slice number and sent slice 3 to
   // T.A.; slice 3 is "F.A. 587 / S.A. 1 -- After the War of Wrath", which is F.A. Thirteen
