@@ -131,11 +131,13 @@ Corrupted Elves (published Silm's frame); corrupted Men, beast-forms, and Maiar-
 ## Map against text: Angband to Menegroth  
 *[unreconciled / intentional ambiguity]*
 
-The Annals say one hundred and fifty leagues; the published map scales to roughly half that.
+The **Annals of Beleriand** say the gates of Morgoth were *"but one hundred and fifty leagues distant from the bridge of Menegroth; far and yet all too near"*. Tolkien's own map scale gives roughly **73 leagues** — under half of it, not "roughly half".
 
-**Authority & handling:** The archive keeps map-consistent geometry and flags the textual figure — a map-text tension, not resolved.
+The figure is the Annals'. Christopher Tolkien quotes it in his introduction to *The Children of Húrin*, using it for its force — *"far and yet all too near"* — and remarking nothing there about the map; this register had been citing the quoter rather than the source.
 
-*Sources & where displayed:* CoH intro vs Silm map · RECONSTRUCTION.md
+**Authority & handling:** The archive keeps map-consistent geometry and flags the textual figure. Christopher Tolkien's own response to the same tension is recorded rather than smoothed: **he left Thangorodrim off the published map**. This is a tension he declined to resolve, not one nobody noticed.
+
+*Sources & where displayed:* Annals of Beleriand (quoted at CoH intro) vs the published Silm map · RECONSTRUCTION.md B2, §3.1
 
 ## Who built the White Tower of Minas Anor  
 *[editorial choice vs manuscript]*

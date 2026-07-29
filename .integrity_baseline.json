@@ -37,7 +37,7 @@
   "arda_realms_layer.json": 31,
   "arda_reckoning.json": 46,
   "arda_scripts.json": 112,
-  "arda_search.json": 3035,
+  "arda_search.json": 3026,
   "arda_silences.json": 19,
   "arda_soldier_prompts.json": 44,
   "arda_sources.json": 61,
@@ -47,5 +47,5 @@
   "arda_undrawn.json": 136,
   "arda_valinor.json": 28
  },
- "accepted": "arda_nomenclature 210 -> 200: 14 of the removed headwords are mid-sentence fragments the scanner mistook for names ('Dan', 'Norw', 'The Swed', 'Boston, Massachusetts', 'Ents', 'Fox'...), and 8 real names were recovered ('Orc' and 'Bucklebury' were the same entries under OCR spellings; six cross-references had been dropped by a length filter). 17 entries also had their truncated tails restored. Loremaster, 29 July."
+ "accepted": "arda_search.json 3035 -> 3026: the Nomenclature repair (map/gen_nomenclature.py, 0788a39) removed 14 headwords that were mid-sentence fragments and restored 8 real names, net -10 in the search index, offset by +1 elsewhere. index.html's caption and count_check now agree at 3,026. Loremaster, 29 July."
 }
