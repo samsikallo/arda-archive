@@ -733,7 +733,7 @@
     "Thangorodrim"
    ],
    "cites": [
-    "Silm 3 (Angband and Thangorodrim); the 150 leagues from Menegroth is the Grey Annals, HoME XI [C] — quoted in the introduction to The Children of Húrin",
+    "Silm 14 for the hells and the towers of slag; the 150 leagues is Silm 10 verbatim — 'the gates of Morgoth were but one hundred and fifty leagues distant from the bridge of Menegroth' — and is also HoME XI, Grey Annals §36, quoted again at the CoH introduction",
     "A ch3, ch10, ch14; HoME 5, 11; F Intro",
     "The Silmarillion, Of the Return of the Noldor [C]",
     "placed at the point the archive's own sheet draws [I-M]: the sheet draws it by the spec's count of leagues, 150 leagues north of Menegroth; no place the archive has placed contains it"
@@ -2595,7 +2595,7 @@
     "FA"
    ],
    "cites": [
-    "Silm 14 (the havens built); the fall in F.A. 473 is dated by the Grey Annals, HoME XI [C] — the published Silmarillion carries no years"
+    "HoME XI, Grey Annals, year 473 — the published Silmarillion carries no years"
    ],
    "containment": [
     {
@@ -4647,7 +4647,7 @@
    "n": "Dorthonion",
    "name_conf": "H",
    "notes": [
-    "High pine-clad tableland between the passes of Sirion and Aglon, falling sheer to Ard-galen; Tarn Aeluin its hallowed lake. — Silm 14, 19 [I-H] — the archive's synthesis of canon, not a quotation",
+    "High pine-clad highland between the passes of Sirion and Aglon, rising by gentle slopes from Ard-galen and falling southward in dreadful precipices towards Doriath; Tarn Aeluin its hallowed lake. — Silm 14, 19 [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it F.A. 7–455",
     "Evidence Table B15",
     "the middle of the shape the archive draws"
@@ -5380,7 +5380,7 @@
     "FA"
    ],
    "cites": [
-    "Silm 14 (the havens built); the fall in F.A. 473 is dated by the Grey Annals, HoME XI [C] — the published Silmarillion carries no years",
+    "HoME XI, Grey Annals, year 473 — the published Silmarillion carries no years",
     "A ch14, ch20"
    ],
    "containment": [
@@ -18011,31 +18011,6 @@
     "POLITY_REGION"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
-  },
-  "region": {
-   "n": "Region",
-   "name_conf": "High",
-   "ages": [
-    "FA",
-    "YT"
-   ],
-   "cites": [
-    "The Silmarillion index, line 15401 [C]",
-    "placed from Christopher Tolkien's own lettering on the Beleriand plate, anchor bel-102 [I-M]; the archive draws the plate and had no gazetteer record for it"
-   ],
-   "containment": [
-    {
-     "parent": "doriath",
-     "span": "Y.T. – F.A. 506",
-     "frm": -3500,
-     "to": 506,
-     "why": "the southern forest of Doriath, per the Silmarillion index gloss [C]",
-     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it"
-    }
-   ],
-   "notes": [
-    "“Region The dense forest forming the southern part of Doriath.” — the Silmarillion index. The Esgalduin “parted Neldoreth from Region”, the two forests of Doriath, named together fourteen times across tier 1. NOT Eregion, which is a Second Age realm in Eriador west of the Misty Mountains and is a different place with a similar name."
-   ]
   }
  },
  "realm_ids": [
