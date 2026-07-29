@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Map of Arda — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Map of Arda: Christopher Tolkien's own plates traced to their centrelines and drawn as vector paths rather than pictures — his linework, with the archive's cited places, realms and roads laid on it."><meta property="og:title" content="The Map of Arda — the Arda Archive"><meta property="og:description" content="The Map of Arda: Christopher Tolkien's own plates traced to their centrelines and drawn as vector paths rather than pictures — his linework, with the archive's cited places, realms and roads laid on it."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/map.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/map.html"><!--/ARDA:META-->
+<title>The Map of Arda — the Arda Archive</title><!--ARDA:META-->
 <link rel="stylesheet" href="arda.css">
 <style>
  :root{--ink:#141210;--red:#a3251d;--parch:#efe6d2;--panel:#fbf6e8;--rule:#b0a58e}
@@ -101,7 +101,7 @@
  .bound [fill]:not([fill="none"]){fill:#8a5a12!important}
  .bound text{fill:#8a5a12!important}
  circle.bound{fill:#8a5a12!important;stroke:#fbf6e8!important}
-</style></head><body><a class="a-skip" href="#main">skip to content</a>
+</style></head><body>
 <div class="hdr"><h1>The Map of Arda</h1><span style="flex:1"></span>
 <nav id="ardanav" aria-label="Archive halls"></nav>
 <span class="sub">every named feature the archive draws, and every one of them answers</span></div>
@@ -128,7 +128,7 @@
   <input type="range" id="chrs" min="0" max="0" value="0" aria-label="the year">
   <span id="chrn"></span>
 </div>
-<div role="main" id="stage" role="application" aria-label="the map of Arda; features are focusable">
+<div id="stage" role="application" aria-label="the map of Arda; features are focusable">
   <div id="nm"></div><div id="card"></div>
 </div>
 <p class="method" style="padding:10px 16px;font-size:12.5px">
@@ -162,7 +162,7 @@ const stage=document.getElementById('stage'),nmEl=document.getElementById('nm'),
       card=document.getElementById('card'),countEl=document.getElementById('count');
 let svg=null,vb=null,vb0=null;
 fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
-  // INLINE, NOT <img alt="">: an <img alt="">'s insides cannot be pointed at.
+  // INLINE, NOT <img>: an <img>'s insides cannot be pointed at.
   const doc=new DOMParser().parseFromString(txt,'image/svg+xml');
   svg=doc.documentElement;
   svg.removeAttribute('width'); svg.removeAttribute('height');
@@ -183,91 +183,13 @@ fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
 // the one thing they are for. They are shown in their own space, beside the archive's drawing.
 let traced=null;
 function loadTraced(){
- const b=document.getElementById('tT'); let on=false;
- // THE OWNER'S RULING, 29 July: the archive does not republish his artwork. The button is
- // gone and the traced sheet is no longer published, so this loader has nothing to attach
- // to. It is left in place rather than deleted because the vectors still exist in the
- // workshop as a research artefact and the geometry they carry is still measured against.
- if(!b) return;
- b.onclick=()=>{
-  if(!traced){
-    b.textContent='tracing…';
-    fetch('arda_traced.svg').then(r=>r.text()).then(txt=>{
-      const doc=new DOMParser().parseFromString(txt,'image/svg+xml');
-      traced=document.createElementNS('http://www.w3.org/2000/svg','g');
-      traced.id='traced';
-      [...doc.documentElement.querySelectorAll('g.sheet')].forEach(s=>traced.appendChild(s));
-      traced.setAttribute('viewBox-note',doc.documentElement.getAttribute('viewBox'));
-      svg.appendChild(traced); wireAside(); loadHisNames(); show(true);
-      b.textContent="Christopher's hand";
-    });
-    return;
-  }
-  show(!on);
- };
- // THE SIX UNJOINED PLATES ARE A DIFFERENT KIND OF THING AND GET THEIR OWN SWITCH.
- // Only two sheets are joined, and only by a sentence in the Silmarillion. The other six sit
- // beside the join because nothing outside their own drawing says where they belong; showing
- // them by default would let a reader take a layout for a registration.
- let asideOn=false;
- function wireAside(){
-   const a=document.getElementById('tA'), gs=[...traced.querySelectorAll('g.sheet.aside')];
-   if(!gs.length) return;
-   a.hidden=false;
-   a.onclick=()=>{ asideOn=!asideOn;
-     gs.forEach(g=>g.style.display=asideOn?'':'none');
-     a.setAttribute('aria-pressed',String(asideOn));
-     fit();   // the view must follow what is actually shown
-   };
- }
- // HIS LINES, OUR WORDS, AT HIS POSITIONS.
- // The traced sheet carries his linework and NONE of his writing, because his lettering is
- // not ours to set as our own. That leaves every place he named as blank space on his own
- // map -- and that is exactly the room the archive's own voice belongs in. Each name below
- // is the ARCHIVE's name for the place HE marked there, at the position he chose, measured
- // off his plate and carried through the same transform that placed the sheet in the join.
- // Nothing here is fitted: it is where he put it.
- function loadHisNames(){
-   fetch('arda_his_anchors.json').then(r=>r.json()).then(A=>{
-     const NS='http://www.w3.org/2000/svg';
-     const g=document.createElementNS(NS,'g'); g.id='hisnames';
-     A.anchors.forEach(a=>{
-       const w=document.createElementNS(NS,'g');
-       w.setAttribute('class','hisname'); w.setAttribute('tabindex','0');
-       w.setAttribute('role','link'); w.setAttribute('aria-label',a.name);
-       const fs=Math.max(11,Math.min(a.h*0.9,46));
-       Object.assign(w.dataset,{key:a.key,name:a.name,kind:a.kind,ages:a.ages,plate:a.plate,
-                                fs:fs});
-       const t=document.createElementNS(NS,'title'); t.textContent=a.name; w.appendChild(t);
-       // A TARGET BIGGER THAN THE MARK: his own label box, which is a real extent he drew to
-       const h=document.createElementNS(NS,'rect');
-       h.setAttribute('class','hit');
-       h.setAttribute('x',a.x); h.setAttribute('y',a.y);
-       h.setAttribute('width',Math.max(a.w,14)); h.setAttribute('height',Math.max(a.h,14));
-       w.appendChild(h);
-       const tx=document.createElementNS(NS,'text');
-       // sized from the label HE wrote, so a display capital reads large and a river small
-       tx.setAttribute('x',a.x); tx.setAttribute('y',a.y+a.h*0.82);
-       tx.setAttribute('font-size',fs);
-       tx.textContent=a.name;
-       w.appendChild(tx);
-       w.addEventListener('mouseenter',()=>w.classList.add('on'));
-       w.addEventListener('mouseleave',()=>w.classList.remove('on'));
-       w.addEventListener('focus',()=>w.classList.add('on'));
-       w.addEventListener('blur',()=>w.classList.remove('on'));
-       w.addEventListener('click',e=>{e.stopPropagation();openCard(w,e)});
-       w.addEventListener('keydown',e=>{if(e.key==='Enter')openCard(w,null)});
-       g.appendChild(w);
-     });
-     traced.appendChild(g); declutter();
-     // MEASURED TOO EARLY IS MEASURED WRONG. The first declutter runs the instant the group
-     // is appended, before the browser has settled the text metrics -- so every box was
-     // cached a little too small and pairs that really do touch were placed as clear. The
-     // measurements are thrown away and taken again once the fonts are ready.
-     const ready=document.fonts?document.fonts.ready:Promise.resolve();
-     ready.then(()=>declutter());
-   }).catch(()=>{});
- }
+ // THE TRACED-SHEET LOADER IS GONE, not merely unreachable. The owner's ruling of 29 July
+ // withdrew Christopher Tolkien's plates from publication; the buttons went first and this
+ // body was left behind guarded by `if(!b) return;`. The Warden pointed out that
+ // "Christopher's hand" was still sitting in the committed page, which is true and is worse
+ // than untidy: dead code that names a withdrawn feature reads as though the feature is
+ // merely switched off. It is not. The vectors live in the workshop and nothing here
+ // fetches them.
  function fit(){ if(traced){const bb=traced.getBBox();
    vb={x:bb.x,y:bb.y,w:bb.width,h:bb.height}; setVB();} }
  function show(v){
@@ -588,7 +510,26 @@ function declutter(){
 // which is why clicking about by hand never showed it.
 // Doriath, Gondolin, Nargothrond and most of the realms are in that layer.
 function goHash(tries){
-  const m=(location.hash||'').match(/k=([^&]+)/); if(!m||!svg)return;
+  // THE LIVING MAP'S VOCABULARY, HALF-PORTED. When that page was retired its forms --
+  // place=, journey=, day=, battle=, slice= -- were said to be carried here, and sixteen
+  // references across the site still use them. Only k= was ever wired, so every one of
+  // those readers arrived at a map that did nothing and said nothing.
+  //
+  // place= is an ALIAS for k=: both name a feature by key, and the retired map addressed
+  // places exactly as this one does. slice= selects an Age on the bar. journey=, day= and
+  // battle= are NOT served and are not faked here -- this page has no roads layer, no
+  // battles layer and no day scrubber, and pretending otherwise would be the kind of
+  // silent no-op this comment exists because of.
+  // THE SLICE-TO-AGE MAP IS DERIVED FROM THE DATA AT BUILD TIME, not guessed by position.
+  // My first attempt indexed a four-element list by the slice number and sent slice 3 to
+  // T.A.; slice 3 is "F.A. 587 / S.A. 1 -- After the War of Wrath", which is F.A. Thirteen
+  // slices are answered by four Ages and the mapping is not proportional, so it is read off
+  // each slice's own label by map/gen_engine.py and written here as a literal.
+  const sl=(location.hash||'').match(/slice=(\d+)/);
+  if(sl){ const AGES=["all", "FA", "FA", "FA", "SA", "SA", "SA", "TA", "TA", "TA", "TA", "TA", "FoA"]; const a=AGES[+sl[1]]||'all';
+    const b=[...document.querySelectorAll('#bar button[data-age]')].find(x=>x.dataset.age===a);
+    if(b&&b.getAttribute('aria-pressed')!=='true') b.click(); }
+  const m=(location.hash||'').match(/(?:^|[#&])(?:k|place)=([^&]+)/); if(!m||!svg)return;
   const want=decodeURIComponent(m[1]).toLowerCase();
   const g=[...svg.querySelectorAll('.feat')].find(x=>(x.dataset.key||'').toLowerCase()===want);
   if(!g){  // it may be a place the sheet does not draw: look in the unmapped layer
