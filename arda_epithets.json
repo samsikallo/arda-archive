@@ -113,12 +113,13 @@
    },
    {
     "e": "Isildur's Heir",
-    "by": "himself, to Arwen in Lórien",
+    "by": "himself, to Arwen at their first meeting in the woods of Rivendell",
     "tongue": "Common Speech",
     "mean": "",
     "q": "‘ ‘‘Estel I was called,’’ he said; ‘‘but I am Aragorn, Arathorn’s son, Isildur’s Heir, Lord of the Dúnedain’’",
     "src": "t1_c_the_lord_of_the_rings.txt:47443",
-    "c": "LotR App A"
+    "c": "LotR App A",
+    "note": "App A: 'there Lúthien walked before his eyes IN RIVENDELL' — their first meeting, Aragorn twenty. The meeting on Cerin Amroth in Lórien is a different scene twenty-nine years later."
    }
   ],
   "tier": 1
@@ -537,12 +538,13 @@
    },
    {
     "e": "Turambar turún' ambartanen",
-    "by": "his own epitaph, graven on the stone of Túrin",
+    "by": "Niënor Níniel, crying it over him at Cabed-en-Aras",
     "tongue": "Quenya",
     "mean": "master of doom by doom mastered",
     "q": "A Túrin Turambar turún’ambartanen: master of doom by doom mastered!",
     "src": "t1_f_the_children_of_hurin.txt:5056",
-    "c": "The Children of Húrin"
+    "c": "The Children of Húrin",
+    "note": "NOT an epitaph. All three corpus occurrences are Niënor's cry. What was graven on the stone is different: 'TÚRIN TURAMBAR DAGNIR GLAURUNGA', with 'NIËNOR NÍNIEL' beneath. arda_oaths already attributed this correctly, so the two files disagreed."
    }
   ],
   "tier": 1
@@ -951,12 +953,13 @@
    },
    {
     "e": "Her Ladyship",
-    "by": "Shagrat and Gorbag, orcs of Cirith Ungol",
+    "by": "Shagrat, captain of the tower of Cirith Ungol",
     "tongue": "Orkish/Common Speech",
     "mean": "",
     "q": "Anyway my lads reported that Her Ladyship was having some fun, and that seemed good enough for me, until the message came.",
     "src": "t1_c_the_lord_of_the_rings.txt:33177",
-    "c": "LotR IV.10"
+    "c": "LotR IV.10",
+    "note": "All three occurrences are Shagrat's, the last explicitly: \"'You fool,' snarled Shagrat... Is that all you know of Her Ladyship?\" Gorbag is of Minas Morgul and is the one being addressed."
    },
    {
     "e": "Shelob's Lair (Torech Ungol)",
@@ -1302,7 +1305,9 @@
     "mean": "renewed (from Old English edneowe)",
     "q": "Theoden ... Ednew - The epithet Ednew is derived from Old English edneowe 'renewed'.",
     "src": "t2_the_lord_of_the_rings_a_reader_s_companion.txt:31853",
-    "c": "The LotR: A Reader's Companion"
+    "c": "The LotR: A Reader's Companion",
+    "tier": 2,
+    "note": "TIER 2, and the record's own tier is 1. This is Hammond & Scull's editorial gloss, not Tolkien's words inside a tier-2 book, so it does not inherit tier-1 authority. The record carries ONE tier for all its names, so until that changes this per-name marker is the only place the distinction can live."
    },
    {
     "e": "Lord of the Mark",
