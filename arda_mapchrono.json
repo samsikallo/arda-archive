@@ -27,7 +27,7 @@
     "age": "F.A.",
     "cite": "Silm 18 [C]",
     "rank": 1,
-    "status": "burned",
+    "status": "event",
     "what": "Burned in the Bragollach; Caranthir retreats to Amon Ereb",
     "year": 455
    },
@@ -77,7 +77,7 @@
     "age": "F.A.",
     "cite": "Silm 18",
     "rank": 1,
-    "status": "destroyed",
+    "status": "event",
     "what": "Dagor Bragollach; Fingolfin falls before Angband",
     "year": 455
    },
@@ -85,7 +85,7 @@
     "age": "F.A.",
     "cite": "Silm 18 [C]",
     "rank": 1,
-    "status": "destroyed",
+    "status": "event",
     "what": "The Bragollach beaten off at Eithel Sirion; Fingolfin falls before Angband's gate",
     "year": 455
    },
@@ -111,7 +111,7 @@
     "age": "T.A.",
     "cite": "App A [C]",
     "rank": 3,
-    "status": "ruined",
+    "status": "event",
     "what": "The angle between Ettenmoors, Weather Hills and Bruinen",
     "year": 861
    }
@@ -145,7 +145,7 @@
     "age": "T.A.",
     "cite": "App A; LotR I.12 [C]",
     "rank": 3,
-    "status": "ruined",
+    "status": "event",
     "what": "Its force spent as Angmar's vanguard; the land after holds only trolls and ruin",
     "year": 1409
    },
@@ -153,7 +153,7 @@
     "age": "T.A.",
     "cite": "App A [C]",
     "rank": 3,
-    "status": "burned",
+    "status": "event",
     "what": "The long Angmar war: Amon Sûl burned (1409); the Great Plague (1636); Fornost falls (1974); Arvedui drowns in Forochel (1975)",
     "year": 1409
    },
@@ -171,7 +171,7 @@
     "age": "S.A.",
     "cite": "App A/B [C]",
     "rank": 2,
-    "status": "founded",
+    "status": "event",
     "what": "Elendil, cast up in the North, founds the realm; Annúminas its seat",
     "year": 3320
    }
@@ -341,7 +341,7 @@
     "age": "T.A.",
     "cite": "LotR VI.3–4 [C]",
     "rank": 3,
-    "status": "destroyed",
+    "status": "event",
     "what": "The Ring destroyed; Barad-dûr falls; the realm ends",
     "year": 3019
    },
@@ -539,7 +539,7 @@
     "age": "T.A.",
     "cite": "App A [C]",
     "rank": 3,
-    "status": "founded",
+    "status": "event",
     "what": "The Witch-king (unknown then to be the Nazgûl-lord) founds the realm at Carn Dûm",
     "year": 1300
    }
@@ -661,11 +661,11 @@
   "dorlomin": [
    {
     "age": "F.A.",
-    "cite": "Silm 17 [C]",
+    "cite": "HoME XI (Grey Annals, CT's note on the marginal dates) for the date [C]; Silm 17 for the event [C]",
     "rank": 1,
     "status": "event",
     "what": "Dor-lómin given to Hador Lórindol by Fingolfin",
-    "year": 423
+    "year": 416
    },
    {
     "age": "F.A.",
@@ -697,7 +697,7 @@
     "age": "F.A.",
     "cite": "Silm 17 [C]",
     "rank": 1,
-    "status": "granted",
+    "status": "event",
     "what": "Ladros in north-east Dorthonion granted to the sons of Bëor by the sons of Finarfin",
     "year": 410
    },
@@ -713,7 +713,7 @@
     "age": "F.A.",
     "cite": "Silm 18–19 [C]",
     "rank": 1,
-    "status": "burned",
+    "status": "event",
     "what": "The Bragollach burns Dorthonion; Barahir's outlawry ends at Tarn Aeluin",
     "year": 455
    }
@@ -837,7 +837,7 @@
     "age": "T.A.",
     "cite": "App A [C]",
     "rank": 3,
-    "status": "ruined",
+    "status": "event",
     "what": "The angle between Ettenmoors, Weather Hills and Bruinen",
     "year": 861
    }
@@ -885,7 +885,7 @@
     "age": "T.A.",
     "cite": "App A [C]",
     "rank": 3,
-    "status": "burned",
+    "status": "event",
     "what": "The long Angmar war: Amon Sûl burned (1409); the Great Plague (1636); Fornost falls (1974); Arvedui drowns in Forochel (1975)",
     "year": 1409
    },
@@ -1043,7 +1043,7 @@
     "age": "T.A.",
     "cite": "App A [C]",
     "rank": 3,
-    "status": "burned",
+    "status": "event",
     "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
     "year": 1432
    },
@@ -1051,7 +1051,7 @@
     "age": "T.A.",
     "cite": "App A [C]",
     "rank": 3,
-    "status": "destroyed",
+    "status": "event",
     "what": "The Great Plague — the watch on Mordor abandoned; 2002 Minas Ithil falls; 2050 the King lost; the Stewards rule",
     "year": 1636
    },
@@ -1059,7 +1059,7 @@
     "age": "T.A.",
     "cite": "App A; App B",
     "rank": 3,
-    "status": "destroyed",
+    "status": "event",
     "what": "The Wainriders destroy Gondor's northern army; Narmacil II slain",
     "year": 1856
    },
@@ -1171,7 +1171,7 @@
     "age": "F.A.",
     "cite": "Silm 18 [C]",
     "rank": 1,
-    "status": "destroyed",
+    "status": "event",
     "what": "The Bragollach beaten off at Eithel Sirion; Fingolfin falls before Angband's gate",
     "year": 455
    },
@@ -1269,7 +1269,7 @@
     "age": "S.A.",
     "cite": "App B; UT [C]",
     "rank": 2,
-    "status": "founded",
+    "status": "event",
     "what": "Founded by Noldor drawn to Khazad-dûm's mithril; Ost-in-Edhil built",
     "year": 750
    },
@@ -1335,7 +1335,7 @@
     "age": "S.A.",
     "cite": "Silm; App B [C]",
     "rank": 2,
-    "status": "destroyed",
+    "status": "event",
     "what": "The Last Alliance marches; Gil-galad falls; the High Kingship ends",
     "year": 3434
    }
@@ -1373,7 +1373,7 @@
     "age": "F.A.",
     "cite": "Silm 22 [C]",
     "rank": 1,
-    "status": "sacked",
+    "status": "event",
     "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
     "year": 502
    },
@@ -1381,7 +1381,7 @@
     "age": "F.A.",
     "cite": "Silm 22 [C]",
     "rank": 1,
-    "status": "sacked",
+    "status": "event",
     "what": "Thingol slain in Menegroth; the Girdle withdrawn; the Dwarves sack Menegroth; the Second Kinslaying ends Dior's brief restoration",
     "year": 502
    },
@@ -1407,7 +1407,7 @@
     "age": "T.A.",
     "cite": "App A/B",
     "rank": 3,
-    "status": "destroyed",
+    "status": "taken",
     "what": "Minas Ithil falls: Minas Morgul",
     "year": 2002
    }
@@ -1449,7 +1449,7 @@
     "age": "T.A.",
     "cite": "App A [C]",
     "rank": 3,
-    "status": "destroyed",
+    "status": "event",
     "what": "The Great Plague — the watch on Mordor abandoned; 2002 Minas Ithil falls; 2050 the King lost; the Stewards rule",
     "year": 1636
    },
@@ -1541,7 +1541,7 @@
     "age": "F.A.",
     "cite": "Silm 22 [C]",
     "rank": 1,
-    "status": "sacked",
+    "status": "event",
     "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
     "year": 502
    },
@@ -1567,7 +1567,7 @@
     "age": "S.A.",
     "cite": "App A/B [C]",
     "rank": 2,
-    "status": "founded",
+    "status": "event",
     "what": "Isildur and Anárion found the realm: Osgiliath the capital, Minas Ithil and Minas Anor its flanking cities",
     "year": 3320
    },
@@ -1575,7 +1575,7 @@
     "age": "T.A.",
     "cite": "App A [C]",
     "rank": 3,
-    "status": "burned",
+    "status": "event",
     "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
     "year": 1432
    }
@@ -1585,7 +1585,7 @@
     "age": "S.A.",
     "cite": "App B; UT [C]",
     "rank": 2,
-    "status": "founded",
+    "status": "event",
     "what": "Founded by Noldor drawn to Khazad-dûm's mithril; Ost-in-Edhil built",
     "year": 750
    },
@@ -1611,7 +1611,7 @@
     "age": "T.A.",
     "cite": "App A; LotR V.9 [C]",
     "rank": 3,
-    "status": "burned",
+    "status": "event",
     "what": "Thorongil's raid burns the fleet; the Corsairs' last armament dies at Pelargir",
     "year": 2980
    }
@@ -1689,7 +1689,7 @@
     "age": "T.A.",
     "cite": "LotR II.2–3 [C]",
     "rank": 3,
-    "status": "destroyed",
+    "status": "event",
     "what": "The Council of Elrond; the Fellowship goes out",
     "year": 3018
    }
@@ -1715,7 +1715,7 @@
     "age": "Fo.A.",
     "cite": "App A/B; LotR VI.6 [C]",
     "rank": 4,
-    "status": "granted",
+    "status": "event",
     "what": "The ordering of the realm: the Shire made free and banned to Men; Drúadan granted; Núrn to the freed slaves; Ithilien to Faramir's princedom and Legolas's Elves; Rohan's oath renewed",
     "year": 6
    },
@@ -1741,7 +1741,7 @@
     "age": "F.A.",
     "cite": "Silm 22 [C]",
     "rank": 1,
-    "status": "sacked",
+    "status": "event",
     "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
     "year": 502
    },
@@ -1795,7 +1795,7 @@
     "age": "T.A.",
     "cite": "App A [C]",
     "rank": 3,
-    "status": "destroyed",
+    "status": "event",
     "what": "The last prince falls; a remnant holds Tyrn Gorthad and the Old Forest refuge",
     "year": 1409
    }
@@ -1805,7 +1805,7 @@
     "age": "T.A.",
     "cite": "LotR Prologue [C]",
     "rank": 3,
-    "status": "granted",
+    "status": "event",
     "what": "Marcho and Blanco granted the land from Baranduin to the Far Downs by King Argeleb II",
     "year": 1601
    },
@@ -1829,7 +1829,7 @@
     "age": "Fo.A.",
     "cite": "App A/B; LotR VI.6 [C]",
     "rank": 4,
-    "status": "granted",
+    "status": "event",
     "what": "The ordering of the realm: the Shire made free and banned to Men; Drúadan granted; Núrn to the freed slaves; Ithilien to Faramir's princedom and Legolas's Elves; Rohan's oath renewed",
     "year": 6
    }
@@ -1933,7 +1933,7 @@
     "age": "T.A.",
     "cite": "App A [C]",
     "rank": 3,
-    "status": "burned",
+    "status": "event",
     "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
     "year": 1432
    },
@@ -2032,9 +2032,9 @@
   {
    "age": "F.A.",
    "era": "the First Age",
-   "label": "F.A. 423",
+   "label": "F.A. 416",
    "rank": 1,
-   "year": 423
+   "year": 416
   },
   {
    "age": "F.A.",

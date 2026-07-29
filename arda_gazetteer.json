@@ -790,16 +790,18 @@
     {
      "cite": "Silm 18",
      "realm": null,
-     "status": "destroyed",
+     "status": "event",
      "what": "Dagor Bragollach; Fingolfin falls before Angband",
-     "when": "F.A. 455"
+     "when": "F.A. 455",
+     "status_note": "Angband WON the Bragollach; this record's own entries have it Master of the North to 583 and Thangorodrim broken only in the War of Wrath"
     },
     {
      "cite": "Silm 18 [C]",
      "realm": "hithlum",
-     "status": "destroyed",
+     "status": "event",
      "what": "The Bragollach beaten off at Eithel Sirion; Fingolfin falls before Angband's gate",
-     "when": "F.A. 455–456"
+     "when": "F.A. 455–456",
+     "status_note": "Angband WON the Bragollach; this record's own entries have it Master of the North to 583 and Thangorodrim broken only in the War of Wrath"
     },
     {
      "cite": "Silm 18–23 [C]",
@@ -8012,23 +8014,26 @@
     {
      "cite": "App A [C]",
      "realm": "gondor",
-     "status": "burned",
+     "status": "event",
      "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
-     "when": "T.A. 1432–48"
+     "when": "T.A. 1432–48",
+     "status_note": "OSGILIATH burned, not Gondor"
     },
     {
      "cite": "App A [C]",
      "realm": "gondor",
-     "status": "destroyed",
+     "status": "event",
      "what": "The Great Plague — the watch on Mordor abandoned; 2002 Minas Ithil falls; 2050 the King lost; the Stewards rule",
-     "when": "T.A. 1636"
+     "when": "T.A. 1636",
+     "status_note": "the Great Plague; Gondor endures"
     },
     {
      "cite": "App A; App B",
      "realm": null,
-     "status": "destroyed",
+     "status": "event",
      "what": "The Wainriders destroy Gondor's northern army; Narmacil II slain",
-     "when": "T.A. 1856"
+     "when": "T.A. 1856",
+     "status_note": "Gondor's NORTHERN ARMY was destroyed, as the label says; the realm was not"
     },
     {
      "cite": "App A [C]",
@@ -9331,9 +9336,10 @@
     {
      "cite": "Silm 18 [C]",
      "realm": "hithlum",
-     "status": "destroyed",
+     "status": "event",
      "what": "The Bragollach beaten off at Eithel Sirion; Fingolfin falls before Angband's gate",
-     "when": "F.A. 455–456"
+     "when": "F.A. 455–456",
+     "status_note": "the label itself says the Bragollach was BEATEN OFF at Eithel Sirion; Hithlum is lost after the Nirnaeth in 472"
     },
     {
      "cite": "Silm 20 [C]",
@@ -10739,9 +10745,10 @@
     {
      "cite": "Silm; App B [C]",
      "realm": "lindon",
-     "status": "destroyed",
+     "status": "event",
      "what": "The Last Alliance marches; Gil-galad falls; the High Kingship ends",
-     "when": "S.A. 3434–3441"
+     "when": "S.A. 3434–3441",
+     "status_note": "Gil-galad falls, not Lindon; this record's own T.A.-F.o.A. entry has Cirdan keeping the Havens until the last ship sails"
     },
     {
      "cite": "LotR VI.9; App A/B [C]",
@@ -11621,9 +11628,10 @@
     {
      "cite": "App A/B",
      "realm": null,
-     "status": "destroyed",
+     "status": "taken",
      "what": "Minas Ithil falls: Minas Morgul",
-     "when": "T.A. 2002"
+     "when": "T.A. 2002",
+     "status_note": "Minas Ithil was TAKEN and renamed Minas Morgul, not destroyed -- its host marches out of it in 3019, and App B dates the fall and the capture of the palantir to 2002, the siege to 2000"
     },
     {
      "cite": "App A [C]",
@@ -12984,9 +12992,10 @@
     {
      "cite": "Silm 22 [C]",
      "realm": "nogrod",
-     "status": "sacked",
+     "status": "event",
      "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
-     "when": "F.A. 502–503"
+     "when": "F.A. 502–503",
+     "status_note": "MENEGROTH was sacked; Nogrod's host was destroyed at Sarn Athrad. Nogrod's own ruin is its F.A. 587 entry, which is left as ruined"
     },
     {
      "cite": "HoME XII, The Peoples of Middle-earth [C]",
@@ -14155,9 +14164,10 @@
     {
      "cite": "LotR II.2–3 [C]",
      "realm": "rivendell",
-     "status": "destroyed",
+     "status": "event",
      "what": "The Council of Elrond; the Fellowship goes out",
-     "when": "T.A. 3018"
+     "when": "T.A. 3018",
+     "status_note": "a Council and a departure destroy nothing; Elrond rides out of Rivendell in T.A. 3021, and this record's own F.o.A. entry says so"
     },
     {
      "cite": "App A/B [C]",
