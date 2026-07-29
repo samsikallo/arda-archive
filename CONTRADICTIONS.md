@@ -43,9 +43,9 @@ Published Silm: survives to the Third Kinslaying; Shibboleth: burned with the sh
 
 UT main scheme: Sindar of Doriath, grandson of Elmo; a late note: a Teleri of Aman (Galadriel's kinsman there).
 
-**Authority & handling:** UT's Sindarin descent drawn [M]; the Aman variant noted. CT himself calls the whole Galadriel-and-Celeborn history 'severely inconsistent'.
+**Authority & handling:** UT's Sindarin descent drawn [M]; the Aman variant noted. This register had quoted Christopher Tolkien as calling the history *'severely inconsistent'* — **words he did not write**. What he wrote, opening the chapter, is stronger: *"There is no part of the history of Middle-earth more full of problems than the story of Galadriel and Celeborn, and it must be admitted that there are severe inconsistencies 'embedded in the traditions'."*
 
-*Sources & where displayed:* UT, Hist. of Galadriel & Celeborn · genealogy
+*Sources & where displayed:* UT, Hist. of Galadriel & Celeborn (opening paragraph) · genealogy
 
 ## The history of Galadriel and Celeborn entire  
 *[unreconciled / intentional ambiguity]*
@@ -113,9 +113,9 @@ Lhammas: all tongues descend from Valarin; Quendi & Eldar: Elvish is an independ
 ## Tar-Ardamin in the line of kings  
 *[editorial choice vs manuscript]*
 
-UT's Line of Elros includes Tar-Ardamin (Ar-Abattârik); App A's list omits him, making Ar-Adûnakhôr son of Tar-Calmacil — CT judges App A's statement 'probably an error'.
+UT's Line of Elros includes Tar-Ardamin (Ar-Abattârik); App A's list omits him, making Ar-Adûnakhôr son of Tar-Calmacil. This register had Christopher Tolkien judging that *'probably an error'* — **a hedge he did not write, and the opposite of his confidence**. His words: *"it now seems perfectly clear, from the fact alone that Tar-Ardamin's death-date is here given as 2899, that he was omitted in error from the list in The Lord of the Rings."*
 
-**Authority & handling:** UT's fuller line drawn; App A's omission flagged on the node.
+**Authority & handling:** UT's fuller line drawn; App A's omission flagged on the node. Not a standing tension so much as a published error the author's editor identified — the archive follows his verdict, and now records that he reached one.
 
 *Sources & where displayed:* UT vs LotR App A · genealogy
 
