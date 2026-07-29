@@ -53,3 +53,13 @@ __pycache__/
 # button reading "Christopher's hand". It stays in the workshop as a research artefact,
 # because the archive still measures its own map against his geometry; it is not published.
 arda_traced.svg
+
+# THE SAME RULING, ONE STEP FURTHER OUT. arda_his_anchors.json is 161 of Christopher
+# Tolkien's label POSITIONS measured off his plates, each tagged hand="Christopher Tolkien"
+# and each carrying a `reads` field that TRANSCRIBES WHAT HIS LETTERING SAYS. The archive
+# said "his lettering is not reproduced"; this reproduced it in data rather than in type,
+# and positions plus transcriptions are a reconstruction of his naming layer whatever they
+# are stored as. map.html stopped fetching it when the traced loader was deleted, so it was
+# published and serving nothing. It stays in the workshop, with the vectors, for the same
+# reason: the archive measures its own map against his and does not republish his.
+arda_his_anchors.json
