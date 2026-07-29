@@ -8,7 +8,7 @@
 },
 "marker_counts": {
 "C": 60,
-"C?": 53,
+"C?": 61,
 "I-L": 21,
 "C/?": 14
 },
@@ -465,26 +465,56 @@
 "id": "kit_gondor",
 "subject": "a Guard of the Citadel of Minas Tirith",
 "caption": "Guard of the Citadel",
-"prompt": "Subject: a Guard of the Citadel of Minas Tirith. Lore: Gondorian soldier in black mail and a tall winged helm of silver-steel, a black surcoat bearing the White Tree, Seven Stars and Crown, a long sword; the elite dress-armour of the Tower Guard. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Guard of the Citadel\".",
+"prompt": "Subject: a Guard of the Citadel of Minas Tirith. Lore: a Guard of the gate ROBED IN BLACK — the corpus robes them, it does not mail them. The helm is “of strange shape, high-crowned, with long cheek-guards close-fitting to the face, and above the cheek-guards were set the white wings of SEA-BIRDS”, and it “gleamed with a flame of silver, for they were indeed wrought of MITHRIL, heirlooms from the glory of old days” — not silver-steel, and the wings sit above the cheek-guards rather than sweeping from the crown. Upon the black surcoat, embroidered in white, “a tree blossoming like snow beneath a silver crown and many-pointed stars”. A long sword; the dress-armour of the Tower Guard. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Guard of the Citadel\".",
 "neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
 "traits": [
 {
-"t": "Gondorian soldier in black mail and a tall winged helm of silver-steel",
+"t": "a Guard of the gate ROBED IN BLACK — the corpus robes them",
+"conf": "C?",
+"cite": "not yet read against the corpus"
+},
+{
+"t": "it does not mail them. The helm is “of strange shape, high-crowned",
+"conf": "C?",
+"cite": "not yet read against the corpus"
+},
+{
+"t": "with long cheek-guards close-fitting to the face",
+"conf": "C?",
+"cite": "not yet read against the corpus"
+},
+{
+"t": "and above the cheek-guards were set the white wings of SEA-BIRDS”",
+"conf": "C?",
+"cite": "not yet read against the corpus"
+},
+{
+"t": "and it “gleamed with a flame of silver",
+"conf": "C?",
+"cite": "not yet read against the corpus"
+},
+{
+"t": "for they were indeed wrought of MITHRIL",
+"conf": "C?",
+"cite": "not yet read against the corpus"
+},
+{
+"t": "heirlooms from the glory of old days” — not silver-steel",
 "conf": "C",
 "cite": "Hobbit XIII (1966) — 'It was of silver-steel, which the elves call mithril'; LotR V.1 the Guards' helms 'were indeed wrought of mithril'"
 },
 {
-"t": "a black surcoat bearing the White Tree",
+"t": "and the wings sit above the cheek-guards rather than sweeping from the crown. Upon the black surcoat, embroidered in white",
 "conf": "C?",
 "cite": "not yet read against the corpus"
 },
 {
-"t": "Seven Stars and Crown, a long sword",
+"t": "“a tree blossoming like snow beneath a silver crown and many-pointed stars”. A long sword",
 "conf": "C?",
 "cite": "not yet read against the corpus"
 },
 {
-"t": "the elite dress-armour of the Tower Guard",
+"t": "the dress-armour of the Tower Guard",
 "conf": "C?",
 "cite": "not yet read against the corpus"
 }
@@ -1127,23 +1157,33 @@
 },
 {
 "id": "kit_olog",
-"subject": "an Olog-hai troll of Gorgoroth",
+"subject": "an Olog-hai troll of Sauron's breeding",
 "caption": "Olog-hai of Gorgoroth",
-"prompt": "Subject: an Olog-hai troll of Gorgoroth. Lore: huge war-troll taller and broader than Men, clad ONLY in a close-fitting mesh of horny scales (or maybe that is his hideous hide), a heavy hammer in his knotted hands and a huge black ROUND buckler; Sauron's armoured battle-troll, brutish and vast. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Olog-hai of Gorgoroth\".",
+"prompt": "Subject: an Olog-hai troll of Sauron's breeding. Lore: a great war-troll far surpassing the largest of Orc-kind in size and power, strong, agile, fierce and cunning, harder than stone, enduring the Sun so long as his master's will holds; a heavy hammer in his knotted hands and a huge black round buckler; the corpus gives the Olog-hai NO surface at all, so leave the skin unclaimed. A hand-drawn film-workshop costume design plate, traditional pen-and-ink with watercolour and marker washes on warm off-white cream paper, in the manner of a physical concept sketch scanned from an artist's sketchbook. A SINGLE figure, full body head to feet, standing in a relaxed three-quarter view, centred on an otherwise empty warm-white page with only a faint sketchy pencil ground-shadow and a wisp of grass beneath the feet — NO scenery, NO framing. Drawn with thin, confident dark sepia-brown pen linework and DENSE hand-inked cross-hatching for every shadow; the surface detail is obsessive and hand-drawn — each ring of the chainmail, each overlapping scale, each rivet, buckle, stitch, strap, engraved knot and cloth fold rendered individually with fine ink strokes. Colour is laid on like real watercolour and felt-tip markers: soft, muted, slightly desaturated tones that streak, pool and mottle unevenly across each area — never a flat digital fill; visible paper texture shows through the washes. Muted earthy palette — aged golds and brass rendered as cream and ochre with brown shadow-hatching and a few tiny bright-white highlight flecks, olive and teal greens, oxblood and faded scarlet, slate greys, worn leather browns. Cel-style shading kept simple — one mid-tone, darker cross-hatched shadows, a few pale highlights — so forms stay readable without heavy blending. Proportions realistic but subtly elongated and elegant, anatomy correct and believable, every weapon and piece of armour gripped, buckled and worn exactly as it really would be. A short handwritten flowing calligraphic ink caption sits near the bottom of the page. Looks like traditional media on paper — NOT vector art, NOT cel-shaded cartoon, NOT comic-book, NOT anime, NOT a smooth digital painting, NO gradients, NO glow, NO thick uniform outlines. The calligraphic caption reads \"Olog-hai of Gorgoroth\".",
 "neg": "flat vector art, bold uniform outlines, cel-shaded cartoon, comic book, anime, manga, clean digital painting, smooth airbrushed gradients, glossy render, 3D render, CGI, octane, glow, bloom, neon, lens flare, photograph, photorealistic, orange background, saturated background, dark background, solid colour fill, poster, modern or sci-fi clothing, guns, multiple people, crowd, scenery, landscape, watermark, artist signature, frame, border, long paragraph of text, deformed hands, extra fingers, fused fingers, malformed anatomy, extra limbs, missing limbs, floating weapon, weapon held wrong, two heads, cloned face",
 "traits": [
 {
-"t": "huge war-troll taller and broader than Men",
+"t": "a great war-troll far surpassing the largest of Orc-kind in size and power, strong, agile, fierce and cunning, harder than stone",
+"conf": "C",
+"cite": "LotR App. F — the Olog-hai 'far surpassed in size and power' the largest of Orc-kind; 'a fell race, strong, agile, fierce and cunning, but harder than stone'; they 'could endure the Sun, so long as the will of Sauron held sway over them'. THE HORNY SCALES ARE NOT THEIRS: that is 'a great company of hill-trolls out of Gorgoroth' at V.10, and LotR's own index lists Hill-trolls and Olog-hai as SEPARATE sub-entries under Trolls. Conceded to the Fixer, who was right"
+},
+{
+"t": "enduring the Sun so long as his master's will holds",
 "conf": "C?",
 "cite": "not yet read against the corpus"
 },
 {
-"t": "clad ONLY in a close-fitting mesh of horny scales (or maybe that is his hideous hide)",
-"conf": "C",
-"cite": "LotR V.10 — 'clad only in close-fitting mesh of horny scales'; 'they bore round bucklers huge and black'"
+"t": "a heavy hammer in his knotted hands and a huge black round buckler",
+"conf": "C?",
+"cite": "not yet read against the corpus"
 },
 {
-"t": "a heavy hammer in his knotted hands and a huge black ROUND buckler, Sauron's armoured battle-troll, brutish and vast",
+"t": "the corpus gives the Olog-hai NO surface at all",
+"conf": "C?",
+"cite": "not yet read against the corpus"
+},
+{
+"t": "so leave the skin unclaimed",
 "conf": "C?",
 "cite": "not yet read against the corpus"
 }
