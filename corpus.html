@@ -116,7 +116,7 @@ function init(){
   $("#cres").innerHTML=hits.map(([n,e])=>{
    const rows=Object.entries(e.d).sort((a,b)=>b[1]-a[1]);
    const mx=rows.length?rows[0][1]:1;
-   return '<div class="card" style="margin-top:10px"><h3><a style="color:#5a4626" href="'+e.u+'">'+esc(n)+'</a> <span class="cite">'+e.n+' mentions across '+rows.length+' volumes</span></h3>'+
+   return '<div class="card" style="margin-top:10px"><h3><a style="color:#5a4626" href="'+e.u+'">'+esc(n)+'</a> <span class="cite">'+e.n+' mentions across '+rows.length+' volumes</span></h3>'+(e.amb&&e.amb.length?'<div style="margin:.3em 0;padding:5px 8px;background:#f7efd8;border-left:3px solid #c9a227;font-size:11.5px"><b>This belongs to the name, not to this record.</b> '+(e.amb.length+1)+' entities in the archive bear <i>'+esc(e.probe)+'</i>: '+e.amb.map(esc).join(', ')+'. Nothing here can divide the count.</div>':'')+
    rows.slice(0,12).map(([d,c])=>'<div class="res" style="display:flex;gap:8px;align-items:center"><span style="width:210px">'+esc(DOCN[d]||d)+'</span><span class="bar" style="width:'+Math.max(3,Math.round(c/mx*46))+'%"></span> '+c+'</div>').join("")+'</div>'}).join("")||'<div class="cite">no entity of the archive bears that name — the concordance covers the 541 registered entities.</div>'});
  // ask 1: events by actor+range
  const acts=[...new Set(CH.events.flatMap(e=>e.actors||[]))].sort();
