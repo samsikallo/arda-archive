@@ -46,3 +46,10 @@ __pycache__/
 *.swp
 *~
 .tree-lease
+
+# THE OWNER RULED ON 29 JULY that the archive does not republish Tolkien's or
+# Christopher Tolkien's artwork. arda_traced.svg is 215,090 vector paths traced from his
+# published plates -- his linework, not ours -- and it was reachable from map.html behind a
+# button reading "Christopher's hand". It stays in the workshop as a research artefact,
+# because the archive still measures its own map against his geometry; it is not published.
+arda_traced.svg
