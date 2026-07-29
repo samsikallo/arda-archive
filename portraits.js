@@ -54,7 +54,7 @@ window.ardaPortraitImg=function(p,big){
  return '<div style="text-align:center;margin-bottom:4px"><img src="portraits/'+p.id+'.jpg"'+dim+' loading="lazy" style="'+sty+'" alt="portrait of '+nm+'"><div class="cite" style="font-size:9.5px">'+cap+'</div></div>';
 };
 /*ENDRASTER*/
-window.ardaPortrait=function(p){var _img=window.ardaPortraitImg(p);if(_img)return _img;var _img=window.ardaPortraitImg(p);if(_img)return _img;var _img=window.ardaPortraitImg(p);if(_img)return _img;var _img=window.ardaPortraitImg(p);if(_img)return _img;var _img=window.ardaPortraitImg(p);if(_img)return _img;
+window.ardaPortrait=function(p){var _img=window.ardaPortraitImg(p);if(_img)return _img;
  const R=RACE[p.r]||RACE.X,o=PDESC[p.id]||{};
  const skin=o.skin||R.skin,stated=!!PDESC[p.id];
  const hair=o.h||R.hair,hs=o.hs||R.hs;
