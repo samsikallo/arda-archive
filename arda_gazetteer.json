@@ -1216,7 +1216,7 @@
     "also the Pillars of the Kings",
     "Rómendacil's giants of stone fencing the north-way of Gondor.",
     "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
-    "the vector spec also lists it as “The Argonath”, at the same place; one record, not two",
+    "the archive also lists it as “The Argonath”, at the same place; one record, not two",
     "a merged record also called it natural peak; the kinds are those the corpus states",
     "drawn within rohan, and that containment is not carried: the pillars were Gondor's border-mark long before Rohan existed; Aragorn names them 'the Argonath, the Pillars of the Kings' (LotR II.9 [C]) and the kings are Gondor's",
     "NOT ITS OWN POINT: it shares the point of Nen Hithoel — the pillars stand at that lake's entrance, and this is its point"
@@ -2282,7 +2282,7 @@
     "held under two keys until they were folded: the record keyed 'bombadil' is named 'The house of Tom Bombadil' in its own words -- the same house the other holds, arriving from the realms model instead of the drawn sheet. [I-H]",
     "The Old Forest and the Downs between Buckland's hedge and the Barrow-country — a bounded march older than every realm around it. — LotR I.6–8 [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it 'Eldest' – enduring",
-    "the vector spec also lists it as “The house of Tom Bombadil”, at the same place; one record, not two"
+    "the archive also lists it as “The house of Tom Bombadil”, at the same place; one record, not two"
    ],
    "parents": [],
    "place_conf": "M",
@@ -2699,35 +2699,18 @@
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "bruinen": {
-   "ages": [
-    "SA",
-    "TA"
-   ],
+   "ages": [],
    "cites": [
     "The Silmarillion, line 16071"
-   ],
-   "containment": [
-    {
-     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
-     "frm": 2287,
-     "parent": "rivendell",
-     "span": "S.A. 1697 – F.o.A.",
-     "to": 7180,
-     "why": "within rivendell, per Christopher Tolkien's index gloss [I-M]"
-    }
    ],
    "coords": [],
    "n": "Bruinen",
    "name_conf": "High",
    "notes": [
     "“nen ‘water’, used of lakes, pools, and lesser rivers, in Nen Girith, Nenning, Nenuial, Nenya; Cuiviénen, Uinen; also in many names in The Lord of the Rings,as Nen Hithoel, Bruinen, Emyn Arnen, Núrnen.” — The Silmarillion, line 16071",
-    "indexed by Christopher Tolkien as: The river of Rivendell (Loudwater)",
-    "within rivendell, per Christopher Tolkien's index gloss [I-M]",
-    "Ages taken from its realm rivendell, having none of its own [I-H]"
+    "indexed by Christopher Tolkien as: The river of Rivendell (Loudwater)"
    ],
-   "parents": [
-    "rivendell"
-   ],
+   "parents": [],
    "place_conf": "High",
    "timeline": [
     {
@@ -2740,7 +2723,8 @@
    ],
    "types": [
     "NATURAL_RIVER"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "buck hill": {
    "ages": [],
@@ -4593,7 +4577,7 @@
     "the realms model dates it F.A. c.416–495 (free); occupied to 587",
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared",
-    "the vector spec also lists it as “Dor-Lomin”, at the same place; one record, not two"
+    "the archive also lists it as “Dor-Lomin”, at the same place; one record, not two"
    ],
    "parents": [],
    "place_conf": "H",
@@ -5619,7 +5603,7 @@
     "also Thranduil's caverns",
     "Doors of stone with the river running out before them (Hobbit viii); the barrels went out by the water-gate on a tributary stream and floated down to Lake-town (Hobbit ix — which names neither stone nor Esgaroth; Esgaroth is first named in ch xii).",
     "within the The Woodland Realm (Thranduil) boundary as the living map draws it, T.A. c.1050– [I-M]",
-    "the vector spec also lists it as “The Elvenking's Halls”, at the same place; one record, not two"
+    "the archive also lists it as “The Elvenking's Halls”, at the same place; one record, not two"
    ],
    "parents": [
     "mirkwood"
@@ -9117,7 +9101,7 @@
     "the pass east of Rivendell by which the road to Wilderland climbs, with Goblin-town beneath it; Cirith Forn en Andrath, the High-climbing Pass of the North — Unfinished Tales, which says it is 'named only here'; it is in neither The Hobbit nor LotR",
     "also Cirith Forn; Goblin-town beneath",
     "Thorin's company taken here; Bilbo found the Ring in the dark below, 2941.",
-    "the vector spec also lists it as “The High Pass”, at the same place; one record, not two",
+    "the archive also lists it as “The High Pass”, at the same place; one record, not two",
     "NOT ITS OWN POINT: it shares the point of Misty Mountains (Hithaeglir) — the text sets it in that range, and this is the range's point"
    ],
    "parents": [
@@ -9719,7 +9703,7 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "Grór's iron-delvings; Dáin's 500 came mailed to the Mountain.",
     "within the The Iron Hills (Grór's folk) boundary as the living map draws it, T.A. 2590– [I-M]",
-    "the vector spec also lists it as “The Iron Hills”, at the same place; one record, not two"
+    "the archive also lists it as “The Iron Hills”, at the same place; one record, not two"
    ],
    "parents": [
     "ironhills"
@@ -15101,7 +15085,7 @@
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
     "Isildur's black globe where the Oathbreakers gathered to the heir at midnight.",
     "within the Gondor at its height boundary as the living map draws it, T.A. c.1050–1448 [I-M]",
-    "the vector spec also lists it as “The Stone of Erech”, at the same place; one record, not two"
+    "the archive also lists it as “The Stone of Erech”, at the same place; one record, not two"
    ],
    "parents": [
     "gondor"
