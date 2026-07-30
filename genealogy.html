@@ -231,7 +231,7 @@ Ps.forEach(p=>{if(!sel.includes(p.id)&&!kin.has(p.id))nodeEls[p.id].classList.ad
 const pn=document.getElementById("panel");
 if(sel.length==1){const p=byId[id];const _pt=(window.ardaPortraitImg&&window.ardaPortraitImg(p,'full'))||(window.ardaPortrait?ardaPortrait(p):"");
 const row=(h,ids)=>ids&&ids.length?`<h3>${h}</h3>${ids.map(link).join(" · ")}`:"";
-pn.innerHTML=`${p.em?`<svg id="embig" width="66" height="80" viewBox="0 0 40 48"><use href="#em-${p.em}"/></svg>`:""}
+pn.innerHTML=`${p.em?`<svg id="embig" width="66" height="80" viewBox="0 0 40 48" role="img" aria-label="the device of ${p.n}"><use href="#em-${p.em}"/></svg>`:""}
 <h2>${p.cr?'<svg width="20" height="14" viewBox="0 0 15 10" style="vertical-align:baseline"><path class="crown" d="M1,9 L2.2,3 L5,6.2 L7.5,1.2 L10,6.2 L12.8,3 L14,9 Z"/></svg> ':""}${p.n}</h2>
 <div class="cite">${p.s=="F"?"♀":p.s=="M"?"♂":""} ${RN[p.r]}${p.h?" · "+p.h:""}${p.rl?" · "+p.rl:""}</div>
 <div class="orn">❦</div>
