@@ -246,62 +246,99 @@ fetch("arda_gazetteer.json").then(r=>r.json()).then(d=>{
  function nodeAt(i){const lvl=levelAt(i);return lvl?lvl.find(x=>x.key===PATH[i]):null}
  function countLeaves(n){return n.kids.length?n.kids.reduce((a,c)=>a+countLeaves(c),0)+(n.place?1:0)
    :(n.place?1:0)}
- function renderCols(){
+ const HEADS=["the places of Arda","within","and within that","and within that","and deeper"];
+ const headOf=i=>HEADS[Math.min(i,4)];
+
+ /* COLUMNS ARE KEPT, NOT REBUILT, AND TWO SEPARATE THINGS BROKE WHEN THEY WERE NOT.
+    The first version wrote the whole browser with one innerHTML on every click. That
+    (a) DESTROYED KEYBOARD FOCUS -- open a branch with Enter and focus fell to the body, which
+    makes the arrow-key support below decorative for the reader who most needs it; and
+    (b) replaced every button with a NEW ELEMENT, so traverse_check, which remembers what it has
+    pressed BY ELEMENT IDENTITY, saw an endlessly renewing supply of unpressed controls and
+    could never report full coverage. It refused, correctly, and that refusal is what found (a).
+    Only the columns from the changed level onward are rebuilt now. */
+ function colEl(i,lvl){
+  const col=document.createElement("div");
+  col.className="col";col.setAttribute("role","group");col.setAttribute("aria-label",headOf(i));
+  let h='<div class="colh">'+esc(headOf(i))+'</div>';
+  lvl.forEach(n=>{
+   const nleaf=countLeaves(n);
+   h+='<button class="row'+(n.silent?" silent":"")+'" data-lvl="'+i+'" data-key="'+
+     esc(n.key).replace(/"/g,"&quot;")+'" aria-current="false"'+
+     (n.kids.length?' aria-expanded="false"':"")+'>'+
+     '<span class="lbl">'+esc(n.label)+'</span>'+
+     (nleaf?'<span class="n">'+nleaf+'</span>':'')+
+     (n.kids.length?'<span class="arw">&rsaquo;</span>':'')+'</button>';
+  });
+  col.innerHTML=h;
+  col.querySelectorAll(".row").forEach(b=>{
+   b.addEventListener("click",()=>{
+    const lv=+b.dataset.lvl;
+    const was=b.getAttribute("aria-current")==="true";
+    PATH=PATH.slice(0,lv);
+    if(!was)PATH[lv]=b.dataset.key;
+    writeHash();renderCols(lv+1);
+   });
+   // ARROW KEYS, because a column browser that only takes a mouse is a list again for anyone
+   // who cannot use one. Up/down within a column, right to open, left to go back.
+   b.addEventListener("keydown",ev=>{
+    const sibs=[...b.parentNode.querySelectorAll(".row")];
+    const ix=sibs.indexOf(b);
+    if(ev.key==="ArrowDown"&&ix<sibs.length-1){sibs[ix+1].focus();ev.preventDefault()}
+    else if(ev.key==="ArrowUp"&&ix>0){sibs[ix-1].focus();ev.preventDefault()}
+    else if(ev.key==="ArrowRight"){
+     if(b.getAttribute("aria-current")!=="true")b.click();
+     const nx=document.querySelectorAll("#cols .col")[+b.dataset.lvl+1];
+     if(nx){const f=nx.querySelector(".row");if(f)f.focus()}
+     ev.preventDefault()}
+    else if(ev.key==="ArrowLeft"){
+     const lv=+b.dataset.lvl;
+     if(lv>0){
+      const pv=document.querySelectorAll("#cols .col")[lv-1];
+      PATH=PATH.slice(0,lv-1);writeHash();renderCols(lv);
+      if(pv){const f=pv.querySelector('.row[aria-current="true"]')||pv.querySelector(".row");
+             if(f)f.focus()}
+     }
+     ev.preventDefault()}
+   });
+  });
+  return col;
+ }
+ function renderCols(keep){
   const host=document.getElementById("list");
   if(!TREE.length){
    host.innerHTML='<div class="cite" style="padding:30px 0">The attached documents do not '+
      'provide enough information to answer this.</div>';
    return;
   }
-  let h='<div class="cols" id="cols">';
-  const HEADS=["within","and within that","and within that","and within that","and within that"];
-  for(let i=0;;i++){
+  let box=document.getElementById("cols");
+  if(!box||!keep||keep<0){
+   host.innerHTML='<div class="cols" id="cols"></div>';
+   box=document.getElementById("cols");keep=0;
+  }
+  [...box.children].slice(keep).forEach(el=>el.remove());
+  for(let i=keep;;i++){
    const lvl=levelAt(i);
    if(!lvl||!lvl.length)break;
-   h+='<div class="col" role="group" aria-label="'+(i?HEADS[Math.min(i,4)]:"the places of Arda")+'">';
-   h+='<div class="colh">'+(i?HEADS[Math.min(i,4)]:"the places of Arda")+'</div>';
-   lvl.forEach(n=>{
-    const sel=PATH[i]===n.key;
-    const nleaf=countLeaves(n);
-    h+='<button class="row'+(n.silent?" silent":"")+'" data-lvl="'+i+'" data-key="'+
-      n.key.replace(/"/g,"&quot;")+'" aria-current="'+(sel?"true":"false")+'"'+
-      (n.kids.length?' aria-expanded="'+(sel?"true":"false")+'"':"")+'>'+
-      '<span class="lbl">'+esc(n.label)+'</span>'+
-      (nleaf?'<span class="n">'+nleaf+'</span>':'')+
-      (n.kids.length?'<span class="arw">&rsaquo;</span>':'')+'</button>';
-   });
-   h+='</div>';
+   box.appendChild(colEl(i,lvl));
    if(!PATH[i])break;
   }
+  // The kept columns still have to agree with PATH about what is open.
+  [...box.querySelectorAll(".col")].forEach((c,i)=>{
+   c.querySelectorAll(".row").forEach(b=>{
+    const on=PATH[i]===b.dataset.key;
+    b.setAttribute("aria-current",on?"true":"false");
+    if(b.hasAttribute("aria-expanded"))b.setAttribute("aria-expanded",on?"true":"false");
+   });
+  });
   // The record itself, at the end of whatever path the reader has opened.
   for(let i=PATH.length-1;i>=0;i--){
    const n=nodeAt(i);
-   if(n&&n.place){h+='<div class="detail">'+card(n.place)+'</div>';break}
+   if(n&&n.place){
+    const d=document.createElement("div");d.className="detail";d.innerHTML=card(n.place);
+    box.appendChild(d);break;
+   }
   }
-  h+='</div>';
-  host.innerHTML=h;
-  host.querySelectorAll(".row").forEach(b=>b.addEventListener("click",()=>{
-   const lvl=+b.dataset.lvl;
-   PATH=PATH.slice(0,lvl);
-   if(b.getAttribute("aria-current")!=="true")PATH[lvl]=b.dataset.key;
-   writeHash();renderCols();
-  }));
-  // ARROW KEYS, because a column browser that only takes a mouse is a list again for anyone
-  // who cannot use one. Up/down within a column, right to open, left to go back.
-  host.querySelectorAll(".row").forEach(b=>b.addEventListener("keydown",ev=>{
-   const sibs=[...b.parentNode.querySelectorAll(".row")];
-   const i=sibs.indexOf(b);
-   if(ev.key==="ArrowDown"&&i<sibs.length-1){sibs[i+1].focus();ev.preventDefault()}
-   else if(ev.key==="ArrowUp"&&i>0){sibs[i-1].focus();ev.preventDefault()}
-   else if(ev.key==="ArrowRight"){b.click();ev.preventDefault();
-    const nx=document.querySelectorAll(".col")[+b.dataset.lvl+1];
-    if(nx){const f=nx.querySelector(".row");if(f)f.focus()}}
-   else if(ev.key==="ArrowLeft"){const lvl=+b.dataset.lvl;
-    if(lvl>0){PATH=PATH.slice(0,lvl-1);writeHash();renderCols();
-     const pv=document.querySelectorAll(".col")[lvl-1];
-     if(pv){const f=pv.querySelector('.row[aria-current=true]')||pv.querySelector(".row");if(f)f.focus()}}
-    ev.preventDefault()}
-  }));
  }
  const esc=s=>String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
  // THE QUESTIONS ARE ADDRESSES. The brief's three questions were buttons and nothing
