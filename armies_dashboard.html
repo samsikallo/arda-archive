@@ -372,6 +372,18 @@ function formify(){if(!curMap)return;
   g.onmouseleave=()=>tip.style.display="none";});
  lastPos={}}
 const setT0=setT;setT=function(t){setT0(t);
+ /* THE SAME GUARD lerpPath ALREADY HAS, ON THE MATHS THAT RUNS BESIDE IT. lerpPath was hardened
+    against a t that is not a finite number in [0,1] -- "THE FUNCTION SHOULD NOT BE ABLE TO RETURN
+    UNDEFINED FOR ANY t, whatever the trigger, and now it cannot" -- and that hardening stopped at
+    lerpPath. The casualty scaling below uses the RAW t, and Math.pow(t,1.35) IS NaN FOR ANY NEGATIVE
+    t, which makes cur NaN, then f NaN, then transform="scale(NaN)", which the browser rejects.
+    MEASURED, NOT SUSPECTED: traverse_check emitted twelve
+        "Error: <g> attribute transform: Expected number, "scale(NaN)"." armies_dashboard.html (380)
+    the first time it was able to read Chromium's console at all. That page's own comment says of the
+    lerpPath fault "the exact trigger is a timing condition still unnamed" -- it is still unnamed, and
+    it does not need naming: the function must not be able to produce NaN for ANY t, which is the same
+    conclusion reached about lerpPath and applied one line too narrowly. */
+ if(!isFinite(t))t=0; t=Math.max(0,Math.min(1,t));
  if(curMap){let idx=0;curMap.ph.forEach((p,i)=>{if(t>=p.t-1e-9)idx=i});
   if(idx!==curPh||!layer){curPh=idx;refresh()}
   curMap.units.forEach((u,i)=>{const g=document.getElementById("unit"+i);if(!g)return;
