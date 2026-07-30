@@ -4874,16 +4874,6 @@
     "The Lord of the Rings, line 827",
     "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "containment": [
-    {
-     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
-     "frm": null,
-     "parent": "region",
-     "span": "",
-     "to": null,
-     "why": "the archive holds this containment; see the record's notes"
-    }
-   ],
    "coords": [
     {
      "conf": "M",
@@ -4897,12 +4887,9 @@
    "notes": [
     "“They came west after the Harfoots and followed the course of the Loudwater southwards; and there many of them long dwelt between Tharbad and the borders of Dunland before they moved north again.” — The Lord of the Rings, line 827",
     "indexed by Christopher Tolkien as: Region in the west of the Misty Mountains, at first \\",
-    "named within Region by the vector spec's own block for it",
     "the middle of the shape the archive draws"
    ],
-   "parents": [
-    "region"
-   ],
+   "parents": [],
    "place_conf": "High",
    "timeline": [
     {
@@ -4943,7 +4930,8 @@
    ],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "durin s stone": {
    "ages": [
@@ -10120,16 +10108,6 @@
     "C IV.3, App A; RC[T]",
     "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "containment": [
-    {
-     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
-     "frm": null,
-     "parent": "region",
-     "span": "",
-     "to": null,
-     "why": "the archive holds this containment; see the record's notes"
-    }
-   ],
    "coords": [
     {
      "conf": "M",
@@ -10143,13 +10121,10 @@
    "notes": [
     "“He now was destroyed; but Gothmog the lieutenant of Morgul had flung them into the fray; Easterlings with axes, and Variags of Khand, Southrons in scarlet, and out of Far Harad black men like half-trolls with white eyes and red tongues.” — The Lord of the Rings, line 37264",
     "indexed by Christopher Tolkien as: Land south-east of Mordor",
-    "named within Region by the vector spec's own block for it",
     "Evidence Table G31",
     "the middle of the shape the archive draws"
    ],
-   "parents": [
-    "region"
-   ],
+   "parents": [],
    "place_conf": "High",
    "timeline": [
     {
@@ -10169,7 +10144,8 @@
    ],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "khazaddum": {
    "ages": [
@@ -11783,16 +11759,6 @@
     "D App D; HoME 12",
     "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "containment": [
-    {
-     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
-     "frm": null,
-     "parent": "region",
-     "span": "",
-     "to": null,
-     "why": "“With change of s to h in the middle of words it is present in Minhiriath ‘between the rivers’, the region between the Brandywine and the Gr"
-    }
-   ],
    "coords": [
     {
      "conf": "M",
@@ -11806,18 +11772,16 @@
    "notes": [
     "“With change of s to h in the middle of words it is present in Minhiriath ‘between the rivers’, the region between the Brandywine and the Greyflood; in Nanduhirion ‘vale of dim streams’, the Dimrill Dale (see nan(d) and dú); and in Ethir Anduin, the outflow or delta of Anduin (from et-sîr).” — The Silmarillion, line 16045",
     "indexed by Christopher Tolkien as: Lands between Brandywine and Greyfiood",
-    "named within Region by the vector spec's own block for it",
     "Evidence Table E16",
     "the middle of the shape the archive draws"
    ],
-   "parents": [
-    "region"
-   ],
+   "parents": [],
    "place_conf": "High",
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ]
+   ],
+   "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "mirkwood": {
    "ages": [],
@@ -14084,16 +14048,6 @@
     "C App A; HoME 12",
     "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
    ],
-   "containment": [
-    {
-     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
-     "frm": null,
-     "parent": "region",
-     "span": "",
-     "to": null,
-     "why": "the archive holds this containment; see the record's notes"
-    }
-   ],
    "coords": [
     {
      "conf": "M",
@@ -14107,13 +14061,10 @@
    "notes": [
     "The inland sea of Rhûn with its ash-forests and steppes beyond the map's edge — the corpus shows only the western shore of an eastern world. — App A; maps [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it First Age origins – enduring",
-    "named within Region by the vector spec's own block for it",
     "Evidence Table G32",
     "the middle of the shape the archive draws"
    ],
-   "parents": [
-    "region"
-   ],
+   "parents": [],
    "place_conf": "H",
    "timeline": [
     {
@@ -14147,7 +14098,8 @@
    ],
    "types": [
     "POLITY_REALM"
-   ]
+   ],
+   "unplaced": "a realm in its own right — nothing contains it"
   },
   "ring of doom": {
    "ages": [],
@@ -15645,7 +15597,7 @@
    "n": "the Bridge of Khazad-dûm",
    "name_conf": "H",
    "notes": [
-    "“At that moment Gandalf lifted his staff, and crying aloud he smote the bridge before him.” — LotR II.5, the Bridge of Khazad-dûm [C]",
+    "“Gandalf lifted his staff, and crying aloud he smote the bridge before him.” — LotR II.5, the Bridge of Khazad-dûm [C]",
     "the span over the chasm before the East-gate of Moria, where Gandalf fell",
     "NOT ITS OWN POINT: it shares the point of Khazad-dûm — the bridge is within the delving, and this is Khazad-dûm's point"
    ],
