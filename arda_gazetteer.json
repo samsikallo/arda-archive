@@ -275,7 +275,7 @@
     "FA"
    ],
    "cites": [
-    "Silm 10, 14, 18, 20 — ch 10 Denethor's fall, ch 14 the chain of hills, ch 18 the watch after the Bragollach, ch 20 the wandering after the Nirnaeth",
+    "Silm 10/18/20/22",
     "The Silmarillion, Of Beleriand and its Realms [C]"
    ],
    "coords": [
@@ -733,7 +733,7 @@
     "Thangorodrim"
    ],
    "cites": [
-    "Silm 13 for the smiting of the gates, which is the quotation this record prints; Silm 14 for the hells and the towers of slag; the 150 leagues is Silm 10 verbatim — 'the gates of Morgoth were but one hundred and fifty leagues distant from the bridge of Menegroth' — and is also HoME XI, Grey Annals §36, quoted again at the CoH introduction",
+    "Silm 14 for the hells and the towers of slag; the 150 leagues is Silm 10 verbatim — 'the gates of Morgoth were but one hundred and fifty leagues distant from the bridge of Menegroth' — and is also HoME XI, Grey Annals §36, quoted again at the CoH introduction",
     "A ch3, ch10, ch14; HoME 5, 11; F Intro",
     "The Silmarillion, Of the Return of the Noldor [C]",
     "placed at the point the archive's own sheet draws [I-M]: the sheet draws it by the spec's count of leagues, 150 leagues north of Menegroth; no place the archive has placed contains it"
@@ -3124,7 +3124,7 @@
     "TA"
    ],
    "cites": [
-    "LotR II.7, LotR II.6 — II.7 the city and the Mirror; II.6 the no-stain line, said of the LAND at Cerin Amroth before the city is named"
+    "LotR II.6-7"
    ],
    "containment": [
     {
@@ -3158,7 +3158,8 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
-    "MAN_MADE_CITY"
+    "MAN_MADE_CITY",
+    "NATURAL_HILL"
    ]
   },
   "cardolan": {
@@ -11331,7 +11332,7 @@
    "notes": [
     "spec FA: cave-city",
     "also the Thousand Caves",
-    "Thingol and Melian's hall over Esgalduin, fairest king-house east of the Sea.",
+    "Thingol and Melian's hall on a rocky hill above Esgalduin, entered by one bridge of stone; 'the fairest dwelling of any king that has ever been east of the Sea'.",
     "within the Doriath (Thingol & Melian) boundary as the living map draws it, Y.T.–F.A. c.502 [I-M]",
     "Evidence Table B25"
    ],
@@ -11679,7 +11680,7 @@
    "notes": [
     "spec TA: city (7 walls)",
     "also Minas Anor; the White City",
-    "Seven walls under Mindolluin; the Pelennor before it; the White Tree in the Court.",
+    "Seven walls under Mindolluin; the Pelennor before it; the dead White Tree in the Court of the Fountain.",
     "within the Gondor (late Third Age) boundary as the living map draws it, T.A. c.1900–3019 [I-M]",
     "Evidence Table G15"
    ],
@@ -12145,7 +12146,7 @@
     "Khazad-dûm"
    ],
    "cites": [
-    "LotR II.4-5"
+    "LotR II.4-5; App B"
    ],
    "containment": [
     {
@@ -12162,7 +12163,7 @@
    "name_conf": null,
    "notes": [
     "also Khazad-dûm; the Doors of Durin",
-    "'Speak, friend, and enter'; the Watcher; the Bridge where Gandalf fell, Jan 15, 3019.",
+    "'Speak, friend, and enter'; the Watcher in the Water; the Company came to it at nightfall, 13 January 3019.",
     "within the Khazad-dûm (Durin's Folk) boundary as the living map draws it, Y.T.–T.A. 1980 [I-M]"
    ],
    "parents": [
@@ -12963,7 +12964,7 @@
    "notes": [
     "spec FA: dwarf-city",
     "also Tumunzahar, Hollowbold",
-    "Dwarf-mansion of the Firebeards; Telchar's forge-city; sacked Doriath and died at Sarn Athrad.",
+    "Dwarf-city south of Mount Dolmed, home of Telchar the smith; its host sacked Menegroth and was destroyed at Sarn Athrad.",
     "within the Ossiriand (the Green-elves) boundary as the living map draws it, Y.T.–F.A. 587 [I-M]",
     "“It was after the end of the First Age that the great power and wealth of Moria began, for it was enriched by many folk and much lore and craft, when the ancient cities of Nogrod and Belegost were ruined in the change of the western world and the breaking of Morgoth.” — HoME XII, The Peoples of Middle-earth [C]",
     "in Ered Luin and not in Beleriand: ruined in the upheaval rather than drowned with the land, its folk removing to Khazad-dum after the First Age ended"
@@ -13103,7 +13104,7 @@
    "n": "Númenor",
    "name_conf": "H",
    "notes": [
-    "The five-lobed star-isle Elenna, Meneltarma at its heart, Armenelos and the haven Rómenna eastward, Andúnië west, Eldalondë the green; described region by region in UT's 'Description' — the corpus's most complete political geography. — UT, Description of Númenor [I-H] — the archive's synthesis of canon, not a quotation",
+    "Shaped like a 'five-pointed star, or pentangle', its 'five large peninsular promontories' about the Mittalmar, with the Meneltarma at its heart; the road ran from 'Rómenna in the east, to the royal city of Armenelos' and thence to Andúnië in the west, and 'the most beautiful of all the havens of Númenor, Eldalondë the Green' lay on the Andustar. UT's 'Description' treats each region in turn — the corpus's fullest physical geography of any land. (The name Elenna is the Akallabêth's, not the Description's.) — UT, Description of Númenor [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it S.A. 32–3319",
     "Evidence Table N1"
    ],
@@ -13193,7 +13194,7 @@
    ],
    "cites": [
     "C IV.3, VI.2–3",
-    "LotR VI.3/5"
+    "LotR VI.2, VI.5"
    ],
    "containment": [
     {
@@ -13219,7 +13220,7 @@
     "interior label of Mordor, per the vector spec",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
     "Evidence Table G22",
-    "Mordor's slave-fields that fed the armies; given freed to the slaves by Elessar.",
+    "The 'great slave-worked fields' south of the Mountain; Elessar released the slaves of Mordor and gave them all the lands about the lake.",
     "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]"
    ],
    "parents": [
@@ -13361,7 +13362,7 @@
     "Citadel of the Stars"
    ],
    "cites": [
-    "App A; LotR II.2",
+    "App A/B; LotR II.2, III.11",
     "A RoP; C App A, IV.3; RC[T]"
    ],
    "containment": [
@@ -13387,7 +13388,7 @@
    "notes": [
     "spec TA: ruined city",
     "also Citadel of the Stars",
-    "The old capital astride Anduin; its Dome held the master-stone; the war began here.",
+    "The old capital, the River flowing through its midst; the chief palantir stood under its Dome of Stars; the War of the Ring opened with Sauron's assault on it.",
     "within the Gondor (late Third Age) boundary as the living map draws it, T.A. c.1900–3019 [I-M]",
     "Evidence Table G17"
    ],
@@ -13509,7 +13510,7 @@
     "the Green Sward"
    ],
    "cites": [
-    "LotR II.10, the Breaking of the Fellowship [C]",
+    "LotR II.10, the Breaking of the Fellowship; III.1 [C]",
     "LotR II.10",
     "LotR II.9, Aragorn at Nen Hithoel [C]",
     "placed at Nen Hithoel [I-H]: the text names the container, not a position within it"
@@ -13535,8 +13536,8 @@
    "n": "Parth Galen",
    "name_conf": "H",
    "notes": [
-    "“Here upon its western side under the shadow of Tol Brandir a green lawn ran down to the water from the feet of Amon Hen.” — LotR II.10, the Breaking of the Fellowship [C]",
-    "the green sward on the western shore of Nen Hithoel beneath Amon Hen, where the Fellowship broke and Boromir fell",
+    "“Here upon its western side under the shadow of Tol Brandir a green lawn ran down to the water from the feet of Amon Hen.” — LotR II.10, the Breaking of the Fellowship; III.1 [C]",
+    "the green sward on the river's western side under Tol Brandir, running down from the feet of Amon Hen, where the Fellowship broke; Boromir was found 'a mile, maybe, from Parth Galen in a little glade', not on the lawn itself",
     "The Breaking of the Fellowship; Boromir's last fight, Feb 26, 3019.",
     "within the Rohan (the Mark) boundary as the living map draws it, T.A. 2510– [I-M]",
     "“Upon the left stands Amon Lhaw, and upon the right is Amon Hen, the Hills of Hearing and of Sight. In the days of the great kings there were high seats upon them, and watch was kept there.” — LotR II.9, Aragorn at Nen Hithoel [C]",
@@ -13882,7 +13883,7 @@
     "Mount Rerir"
    ],
    "cites": [
-    "The Silmarillion, Of Beleriand and its Realms [C]",
+    "The Silmarillion, Of the Return of the Noldor; Of Beleriand and its Realms [C]",
     "placed at the point the archive's own sheet draws [I-M]: the point the archive's own First Age plate letters it at; the text places it over Lake Helevorn but gives no measure"
    ],
    "coords": [
@@ -13896,7 +13897,7 @@
    "n": "Rerir",
    "name_conf": "H",
    "notes": [
-    "“the people of Caranthir dwelt furthest east beyond the upper waters of Gelion, about Lake Helevorn under Mount Rerir and to the southward.” — The Silmarillion, Of Beleriand and its Realms [C]",
+    "“the people of Caranthir dwelt furthest east beyond the upper waters of Gelion, about Lake Helevorn under Mount Rerir and to the southward.” — The Silmarillion, Of the Return of the Noldor; Of Beleriand and its Realms [C]",
     "the mountain above Lake Helevorn in Thargelion, Caranthir's land; Greater Gelion rose from it — 'Greater Gelion that came from Mount Rerir'",
     "set down by measure, not by a border: the point the archive's own First Age plate letters it at; the text places it over Lake Helevorn but gives no measure"
    ],
@@ -13955,7 +13956,7 @@
     "TA"
    ],
    "cites": [
-    "Hobbit 2; LotR I.12 [C]",
+    "Hobbit 2; LotR I.12; HoME XII [I-H] — the archive's synthesis of canon, not a quotation",
     "placed from the archive's own vector map (GHOSTS_TA) [I-M]; the record existed already and had no coordinate",
     "The Lord of the Rings, Appendix A [C]"
    ],
@@ -13970,7 +13971,7 @@
    "n": "Rhudaur",
    "name_conf": "H",
    "notes": [
-    "The Trollshaws' castles ('old castles with an evil look, as if they had been built by wicked people') are its physical remains. — Hobbit 2; LotR I.12 [C]",
+    "The ruins in the Trolls' wood — 'old castles with an evil look, as if they had been built by wicked people' in the Lone-lands, and 'the ruins of towers: they had an ominous look' on the road to the Ford — are most likely its remains, but neither passage names the realm: Strider says only that Men here 'fell under the shadow of Angmar'. The one place the corpus joins the two by name is Tolkien's note 'Rhudaur north of the R. Bruinen (where later were the Trollshaws)'. — Hobbit 2; LotR I.12; HoME XII [I-H] — the archive's synthesis of canon, not a quotation",
     "the realms model dates it T.A. 861–c.1409",
     "named within Arnor by the vector spec's own block for it",
     "the middle of the shape the archive draws",
@@ -14601,7 +14602,7 @@
    ],
    "cites": [
     "placed from the archive's own vector map (LAKES_TA) [I-M]; the record existed already and had no coordinate",
-    "LotR VI.3/5"
+    "LotR VI.2, VI.5"
    ],
    "containment": [
     {
@@ -14626,7 +14627,7 @@
    "notes": [
     "spec TA: Water",
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
-    "Mordor's slave-fields that fed the armies; given freed to the slaves by Elessar.",
+    "The 'great slave-worked fields' south of the Mountain; Elessar released the slaves of Mordor and gave them all the lands about the lake.",
     "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]"
    ],
    "parents": [
@@ -15596,7 +15597,7 @@
    "n": "the Bridge of Khazad-dûm",
    "name_conf": "H",
    "notes": [
-    "“Gandalf lifted his staff, and crying aloud he smote the bridge before him.” — LotR II.5, the Bridge of Khazad-dûm [C]",
+    "“At that moment Gandalf lifted his staff, and crying aloud he smote the bridge before him.” — LotR II.5, the Bridge of Khazad-dûm [C]",
     "the span over the chasm before the East-gate of Moria, where Gandalf fell",
     "NOT ITS OWN POINT: it shares the point of Khazad-dûm — the bridge is within the delving, and this is Khazad-dûm's point"
    ],
