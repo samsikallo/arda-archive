@@ -14,6 +14,8 @@
    "note": "THE MOST WANTED OF THE ABSENT, because the archive ALREADY CITES IT: The War of the Jewels refers the reader to 'The Road Goes Ever On, p. 61' for miruvórë, so the corpus depends on a book it does not hold. Published in Tolkien's lifetime and carrying his own commentary on Namárië and A Elbereth Gilthoniel -- the only place he glossed those two texts word by word. ARRIVED 2026-07-30 AND IS AN IMAGE-ONLY SCAN, 78pp with no text layer. The dependency this row was written about is therefore NOT resolved: the corpus still cites 'The Road Goes Ever On, p. 61' for miruvórë and still cannot read the page. Held, and uncitable until OCR'd and checked. EXTRACTION: SILENTLY MISSING — the words are on the page and only the text layer is absent, which is the sharpest thing that can be said about §1 today: the most wanted volume in this register arrived, and the citation that wanted it still cannot be followed.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_k_the_road_goes_ever_on_a_song_cycle.txt",
+   "words": 0,
    "bytes": 7753269,
    "pages": 78
   },
@@ -24,6 +26,8 @@
    "note": "Tolkien's own essay on language invention with the associated manuscripts. Tier 1 as HIS WORDS about his own languages; the editors' apparatus is theirs and is cited as such where used. ARRIVED 2026-07-30 IN CLEAN TEXT, 180pp -- the 1931 lecture with the drafts and the essay on phonetic symbolism. AND THIS ROW CORRECTED ME: I had tiered it 2 for its editors, and the reason written here before the book came is the right one. It is the foundation document for what the languages hall says about WHY the languages exist, which the archive has until now had to infer.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_a_secret_vice_tolkien_on_invented_languages.txt",
+   "words": 55249,
    "bytes": 3036289,
    "pages": 180
   },
@@ -34,6 +38,8 @@
    "note": "The textual history of The Hobbit, with Tolkien's drafts. Tier 2: the DRAFTS are Tolkien and the commentary is Rateliff's, and the archive must not let the second speak with the authority of the first. ARRIVED 2026-07-30 IN CLEAN TEXT, 1333pp -- the longest volume on the shelf, and the counterpart to Christopher Tolkien's History for the one book he never treated.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_the_history_of_the_hobbit.txt",
+   "words": 444467,
    "bytes": 57231760,
    "pages": 1333
   },
@@ -52,6 +58,8 @@
    "note": "As Pictures: the captions and commentary are the evidence, the plates are not republished. ARRIVED 2026-07-30 AND IS AN IMAGE-ONLY SCAN, 145pp. So the half of it this archive wanted -- the captions that date and place Tolkien's drawings -- is exactly the half it cannot read, while the half it may not publish is the half that came through perfectly. EXTRACTION: SILENTLY MISSING — the caption text is on the plates and has no text layer.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t2_the_art_of_the_hobbit.txt",
+   "words": 0,
    "bytes": 9217581,
    "pages": 145
   },
@@ -72,6 +80,8 @@
    "present": true,
    "text_provenance": "aggregator-watermarked",
    "text_provenance_note": "61 aggregator watermark line(s) were found in the extracted text on 30 July 2026 and blanked in place by map/clean_corpus_watermarks.py, leaving every line number unchanged. This records the COPY'S ROUTE, not a doubt about the text: no textual corruption was found beyond the injected lines. Tier is unchanged.",
+   "corpus_file": "t1_a_the_silmarillion.txt",
+   "words": 167635,
    "bytes": 17144394,
    "pages": 544
   },
@@ -82,6 +92,8 @@
    "note": "Published in his lifetime and revised by him. Highest authority for its own matter.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_b_the_hobbit_or_there_and_back_again.txt",
+   "words": 96701,
    "bytes": 5500570,
    "pages": 270
   },
@@ -92,6 +104,8 @@
    "note": "With Appendices A-F. The single densest authority for the Third Age, the calendars, the languages and the writing-systems.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_c_the_lord_of_the_rings.txt",
+   "words": 563525,
    "bytes": 6549111,
    "pages": 1210
   },
@@ -102,6 +116,8 @@
    "note": "Late narratives with editorial commentary. Often supersedes The Silmarillion in detail.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "words": 213907,
    "bytes": 3607801,
    "pages": 391
   },
@@ -112,6 +128,8 @@
    "note": "The tale in its layers, from the Lost Tales to the late prose.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_e_beren_and_luthien.txt",
+   "words": 63832,
    "bytes": 9326291,
    "pages": 203
   },
@@ -124,6 +142,8 @@
    "present": true,
    "text_provenance": "aggregator-watermarked",
    "text_provenance_note": "32 aggregator watermark line(s) were found in the extracted text on 30 July 2026 and blanked in place by map/clean_corpus_watermarks.py, leaving every line number unchanged. This records the COPY'S ROUTE, not a doubt about the text: no textual corruption was found beyond the injected lines. Tier is unchanged.",
+   "corpus_file": "t1_f_the_children_of_hurin.txt",
+   "words": 74809,
    "bytes": 5753989,
    "pages": 212
   },
@@ -134,6 +154,8 @@
    "note": "Every version of the tale, including the Lost Tale with the Twelve Houses.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_g_the_fall_of_gondolin.txt",
+   "words": 84122,
    "bytes": 6594061,
    "pages": 201
   },
@@ -144,6 +166,8 @@
    "note": "The earliest mythology. Names, cosmology and even characters differ from the late work; authoritative for what Tolkien first wrote, not for what he last held.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_1_the_book_of_lost_tales_part_one.txt",
+   "words": 142399,
    "bytes": 4466918,
    "pages": 387
   },
@@ -154,6 +178,8 @@
    "note": "Contains the Fall of Gondolin with the fullest account of the Twelve Houses and their arms.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_2_the_book_of_lost_tales_part_two.txt",
+   "words": 182143,
    "bytes": 4728391,
    "pages": 520
   },
@@ -164,6 +190,8 @@
    "note": "The long verse: the Lay of the Children of Húrin and the Lay of Leithian.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_3_the_lays_of_beleriand.txt",
+   "words": 133615,
    "bytes": 13049773,
    "pages": 400
   },
@@ -174,6 +202,8 @@
    "note": "Sketch, Quenta, earliest Annals, the first maps and the Ambarkanta cosmology.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_4_the_shaping_of_middle_earth.txt",
+   "words": 146073,
    "bytes": 1694924,
    "pages": 403
   },
@@ -184,6 +214,8 @@
    "note": "The Lhammas and the Etymologies — the deepest single source for the roots of the tongues.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_5_the_lost_road_and_other_writings.txt",
+   "words": 201048,
    "bytes": 13486279,
    "pages": 457
   },
@@ -194,6 +226,8 @@
    "note": "Drafts of The Lord of the Rings, I.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_6_the_return_of_the_shadow.txt",
+   "words": 224886,
    "bytes": 19865599,
    "pages": 502
   },
@@ -204,6 +238,8 @@
    "note": "Drafts II; the first LotR map; the runes.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_7_the_treason_of_isengard.txt",
+   "words": 213897,
    "bytes": 16767584,
    "pages": 513
   },
@@ -214,6 +250,8 @@
    "note": "Drafts III.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_8_the_war_of_the_ring.txt",
+   "words": 188088,
    "bytes": 7227340,
    "pages": 470
   },
@@ -226,6 +264,8 @@
    "present": true,
    "text_provenance": "aggregator-watermarked",
    "text_provenance_note": "52 aggregator watermark line(s) were found in the extracted text on 30 July 2026 and blanked in place by map/clean_corpus_watermarks.py, leaving every line number unchanged. This records the COPY'S ROUTE, not a doubt about the text: no textual corruption was found beyond the injected lines. Tier is unchanged.",
+   "corpus_file": "t1_9_sauron_defeated.txt",
+   "words": 196545,
    "bytes": 3663181,
    "pages": 477
   },
@@ -238,6 +278,8 @@
    "present": true,
    "text_provenance": "aggregator-watermarked",
    "text_provenance_note": "89 aggregator watermark line(s) were found in the extracted text on 30 July 2026 and blanked in place by map/clean_corpus_watermarks.py, leaving every line number unchanged. This records the COPY'S ROUTE, not a doubt about the text: no textual corruption was found beyond the injected lines. Tier is unchanged.",
+   "corpus_file": "t1_10_morgoths_ring.txt",
+   "words": 209025,
    "bytes": 5510415,
    "pages": 556
   },
@@ -250,6 +292,8 @@
    "present": true,
    "text_provenance": "aggregator-watermarked",
    "text_provenance_note": "50 aggregator watermark line(s) were found in the extracted text on 30 July 2026 and blanked in place by map/clean_corpus_watermarks.py, leaving every line number unchanged. This records the COPY'S ROUTE, not a doubt about the text: no textual corruption was found beyond the injected lines. Tier is unchanged.",
+   "corpus_file": "t1_11_the_war_of_the_jewels.txt",
+   "words": 204206,
    "bytes": 12237846,
    "pages": 510
   },
@@ -262,6 +306,8 @@
    "present": true,
    "text_provenance": "aggregator-watermarked",
    "text_provenance_note": "75 aggregator watermark line(s) were found in the extracted text on 30 July 2026 and blanked in place by map/clean_corpus_watermarks.py, leaving every line number unchanged. This records the COPY'S ROUTE, not a doubt about the text: no textual corruption was found beyond the injected lines. Tier is unchanged.",
+   "corpus_file": "t1_12_the_peoples_of_middle_earth.txt",
+   "words": 201522,
    "bytes": 6810470,
    "pages": 480
   },
@@ -272,6 +318,8 @@
    "note": "Master index to the History. A finding-aid, not a source of claims.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_13_index.txt",
+   "words": 169735,
    "bytes": 9491854,
    "pages": 510
   },
@@ -282,6 +330,8 @@
    "note": "Tolkien's verse, with his own framing preface placing the poems in the Red Book.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_the_adventures_of_tom_bombadil_and_other_verses_from.txt",
+   "words": 44608,
    "bytes": 3609621,
    "pages": 200
   },
@@ -294,6 +344,8 @@
    "present": true,
    "text_provenance": "aggregator-watermarked",
    "text_provenance_note": "214 aggregator watermark line(s) were found in the extracted text on 30 July 2026 and blanked in place by map/clean_corpus_watermarks.py, leaving every line number unchanged. This records the COPY'S ROUTE, not a doubt about the text: no textual corruption was found beyond the injected lines. Tier is unchanged.",
+   "corpus_file": "t1_the_collected_poems_of_j_r_r_tolkien.txt",
+   "words": 513788,
    "bytes": 8187754,
    "pages": 2018
   },
@@ -304,6 +356,8 @@
    "note": "Tolkien in his own voice on his own work — the primary authority for intent, and for questions the fiction leaves open. Was filed under secondary sources; it is not secondary.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_the_letters_of_j_r_r_tolkien.txt",
+   "words": 220863,
    "bytes": 3546831,
    "pages": 515
   },
@@ -314,6 +368,8 @@
    "note": "Collects Tolkien's own shorter works, including On Fairy-Stories, The Homecoming of Beorhtnoth, Leaf by Niggle and Farmer Giles of Ham.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_the_tolkien_reader.txt",
+   "words": 70929,
    "bytes": 10093146,
    "pages": 258
   },
@@ -324,6 +380,8 @@
    "note": "The pictures are Tolkien's and carry primary authority, including the 1960 heraldic devices and his written note on the rules of Elvish heraldry. The surrounding commentary is Hammond and Scull's and is weighed at tier 2. The images are (c) the Tolkien Estate and are not reproduced by this archive.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_j_r_r_tolkien_artist_and_illustrator.txt",
+   "words": 78048,
    "bytes": 43805140,
    "pages": 212
   },
@@ -336,6 +394,8 @@
    "present": true,
    "text_provenance": "aggregator-watermarked",
    "text_provenance_note": "48 aggregator watermark line(s) were found in the extracted text on 30 July 2026 and blanked in place by map/clean_corpus_watermarks.py, leaving every line number unchanged. This records the COPY'S ROUTE, not a doubt about the text: no textual corruption was found beyond the injected lines. Tier is unchanged.",
+   "corpus_file": "t1_the_hobbit_illustrated.txt",
+   "words": 105597,
    "bytes": 21976878,
    "pages": 340
   },
@@ -346,6 +406,8 @@
    "note": "PARTIAL. The file is an excerpt, not the whole book: it carries the front matter, the introduction, and the letters from 1 to 42 — among them thirteen never printed in 1981 (8a, 8b, 8c, 11a, 11b, 11c, 15a, 15b, 18a, 36a, 36b, 38a, 40a). Its table of contents, however, is complete, and lists all 508 letters of the revised edition: the 354 of 1981 and 154 added. So the archive may now say WHICH letters exist and to whom, while it may quote only those it holds. Beyond letter 42 the 1981 text remains the only text here.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
+   "words": 36185,
    "bytes": 1025143
   },
   {
@@ -357,6 +419,8 @@
    "present": true,
    "text_provenance": "aggregator-watermarked",
    "text_provenance_note": "69 aggregator watermark line(s) were found in the extracted text on 30 July 2026 and blanked in place by map/clean_corpus_watermarks.py, leaving every line number unchanged. This records the COPY'S ROUTE, not a doubt about the text: no textual corruption was found beyond the injected lines. Tier is unchanged.",
+   "corpus_file": "t2_h_the_fall_of_numenor_and_other_tales_from_the_secon.txt",
+   "words": 97379,
    "bytes": 36962472,
    "pages": 373
   },
@@ -369,6 +433,8 @@
    "present": true,
    "text_provenance": "aggregator-watermarked",
    "text_provenance_note": "83 aggregator watermark line(s) were found in the extracted text on 30 July 2026 and blanked in place by map/clean_corpus_watermarks.py, leaving every line number unchanged. This records the COPY'S ROUTE, not a doubt about the text: no textual corruption was found beyond the injected lines. Tier is unchanged.",
+   "corpus_file": "t2_i_the_nature_of_middle_earth.txt",
+   "words": 160887,
    "bytes": 6271614,
    "pages": 467
   },
@@ -379,6 +445,8 @@
    "note": "The authorized Chronology and Reader's Guide. Superb for publication history and for what Tolkien wrote when; its interpretations are still interpretation.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
+   "words": 434964,
    "bytes": 6224648,
    "pages": 1177
   },
@@ -389,6 +457,8 @@
    "note": "Line-by-line commentary on The Lord of the Rings, and the fullest text of Tolkien's own Nomenclature — his instructions to translators, which is primary matter.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+   "words": 424951,
    "bytes": 52704312,
    "pages": 982
   },
@@ -399,6 +469,8 @@
    "note": "Licensed film concept art. Authoritative for the films, never for Middle-earth. EXTRACTION: SILENTLY MISSING, and left that way deliberately. 102 pages yield 1,361 bytes; the pages are double-spread concept art with real caption blocks, but the scan is LuraDocument-compressed at 180x241pt and OCR of a sampled page returns only mush -- Bx uot LOCATIONS Wi ag y= => -- even at 1200dpi. GARBAGE IN THE CORPUS IS WORSE THAN ABSENCE: every claim in this archive is checked by matching against corpus text, and noise that the matcher can hit is a way for a false quotation to verify. Nothing cites this book, and it is film art rather than Middle-earth, so its absence costs no lore.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t2_the_art_of_the_fellowship_of_the_ring.txt",
+   "words": 0,
    "bytes": 3413589,
    "pages": 102
   },
@@ -409,6 +481,8 @@
    "note": "The standard cartographic reconstruction. Careful and honest about its own inference, but its distances and coastlines are Fonstad's reasoning, not Tolkien's measurement.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_the_atlas_of_middle_earth.txt",
+   "words": 78922,
    "bytes": 35637083,
    "pages": 383
   },
@@ -421,6 +495,8 @@
    "present": true,
    "text_provenance": "aggregator-watermarked",
    "text_provenance_note": "37 aggregator watermark line(s) were found in the extracted text on 30 July 2026 and blanked in place by map/clean_corpus_watermarks.py, leaving every line number unchanged. This records the COPY'S ROUTE, not a doubt about the text: no textual corruption was found beyond the injected lines. Tier is unchanged.",
+   "corpus_file": "t3_the_complete_guide_to_middle_earth.txt",
+   "words": 187816,
    "bytes": 13996581,
    "pages": 579
   },
@@ -431,6 +507,8 @@
    "note": "A fuller encyclopaedia, looser than Foster and occasionally speculative without saying so.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_the_complete_tolkien_companion.txt",
+   "words": 242577,
    "bytes": 9383684,
    "pages": 811
   },
@@ -441,6 +519,8 @@
    "note": "A grammar of Sindarin reconstructed from Tolkien's scattered material. Scholarly, but it regularises where Tolkien never settled; its paradigms must not be quoted as his.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_a_gateway_to_sindarin.txt",
+   "words": 137692,
    "bytes": 22003535,
    "pages": 458
   },
@@ -451,6 +531,8 @@
    "note": "Peer-reviewed heraldic scholarship; the source for this archive's heraldic reconstructions. Its figures are reserved by their originators and are not reproduced here.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_tolkien_heraldry.txt",
+   "words": 19327,
    "bytes": 7563151,
    "pages": 44
   },
@@ -461,6 +543,8 @@
    "note": "Held for reference only. Provenance unverified, so nothing is asserted from it. EXTRACTION: CORRECTLY EMPTY. 16 landscape plate pages; the only text on them is the picture captions, which OCR reads as Tolkien's own titles ('Che hill : Taare Water~' for The Hill: Hobbiton-across-the-Water). A 32-byte extraction is the honest result for a book of plates, not a failure.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_tolkien_artwork.txt",
+   "words": 0,
    "bytes": 2379703,
    "pages": 16
   },
@@ -471,6 +555,8 @@
    "note": "ARRIVED 2026-07-26. 'Words of Joy: Five Catholic Prayers in Quenya' -- part one of two, printing Tolkien's own hitherto unpublished Quenya translations of the Pater Noster (Ataremma), the Ave Maria (Aia Maria) and the Gloria Patri (Alcar i Ataren), with the manuscript variants and the editors' analysis. The remaining two prayers -- Sub Tuum Praesidium and the Litany of Loreto -- are in VT 44, which is NOT held. The journal sits at tier 2 because it is published by the Estate's permission; the Quenya inside it is Tolkien's own and carries tier-1 authority, which is what primary_text records. The texts remain the Estate's: they may be read and cited, and are not the archive's to reproduce.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_43.txt",
+   "words": 16887,
    "bytes": 864757,
    "pages": 40
   },
@@ -481,6 +567,8 @@
    "note": "The heraldic reconstruction this archive's forge was measured against. It states for each device whether the illustration is based on published material or reconstructed from a written description — the same distinction this archive makes — so it is usable as a cross-check on provenance, never as authority for a device Tolkien did not draw.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_forodrim.txt",
+   "words": 4616,
    "bytes": 335241,
    "pages": 9
   },
@@ -491,6 +579,8 @@
    "note": "Fanzine, 12pp. Contains no Tolkien manuscript. The scan is OCR of poor quality, so nothing here may be quoted as verbatim without checking the page image.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_parma_eldalamberon_vol_1_no_1.txt",
+   "words": 13575,
    "bytes": 26495208,
    "pages": 12
   },
@@ -501,6 +591,8 @@
    "note": "Fanzine, 16pp. As No. 1: fan articles, poor OCR, no primary text.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_parma_eldalamberon_vol_1_no_2.txt",
+   "words": 16866,
    "bytes": 31358781,
    "pages": 16
   },
@@ -511,6 +603,8 @@
    "note": "Fanzine, 20pp. As No. 1.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_parma_eldalamberon_vol_1_no_3.txt",
+   "words": 26540,
    "bytes": 45563829,
    "pages": 20
   },
@@ -521,6 +615,8 @@
    "note": "Fanzine, 30pp. As No. 1.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_parma_eldalamberon_vol_1_no_4.txt",
+   "words": 35416,
    "bytes": 60895124,
    "pages": 30
   },
@@ -531,6 +627,8 @@
    "note": "Fanzine, 30pp. Contributors include a young Christopher Gilson, later editor of the manuscript series. As No. 1: fan scholarship, not Tolkien's hand.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_parma_eldalamberon_vol_1_no_5.txt",
+   "words": 28172,
    "bytes": 60143262,
    "pages": 30
   },
@@ -541,6 +639,8 @@
    "note": "Game mechanics and invented detail. Nothing here is evidence about Middle-earth; usable only where it happens to restate something Tolkien wrote.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t4_lotr_roleplay.txt",
+   "words": 113997,
    "bytes": 66606923,
    "pages": 242
   },
@@ -553,6 +653,8 @@
    "present": true,
    "text_provenance": "aggregator-watermarked",
    "text_provenance_note": "19 aggregator watermark line(s) were found in the extracted text on 30 July 2026 and blanked in place by map/clean_corpus_watermarks.py, leaving every line number unchanged. This records the COPY'S ROUTE, not a doubt about the text: no textual corruption was found beyond the injected lines. Tier is unchanged.",
+   "corpus_file": "t4_reader_and_educator_guide_to_the_hobbit_and_the_lord.txt",
+   "words": 50489,
    "bytes": 1473526,
    "pages": 179
   },
@@ -563,6 +665,8 @@
    "note": "Useful only as evidence that particular manuscripts and editions exist.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t4_the_lord_of_the_rings_urania_finarte_14_12_2022.txt",
+   "words": 32914,
    "bytes": 17345366,
    "pages": 57
   },
@@ -573,6 +677,8 @@
    "note": "Tolkien's own calligraphic manuscript of the King's Letter, the discarded epilogue to The Lord of the Rings, in tengwar and in English. IT IS BOTH A TEXT AND A PICTURE and the artwork ruling of 29 July governs the picture: his linework is NOT republished. Held in the workshop as primary evidence the archive may read and measure against, and may never serve. EXTRACTION: CORRECTLY EMPTY — it is a .png, so there is no text layer to fail and none is expected. The extractor now refuses any source that is not a .pdf or .epub, having handed this picture to pdftotext once and put the 0-byte answer in the corpus.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t1_the_king_s_letter_manuscript_plate_png.txt",
+   "words": 0,
    "bytes": 1965265
   },
   {
@@ -582,6 +688,8 @@
    "note": "I·Lam na·Ngoldathon: the Grammar and Lexicon of the Gnomish Tongue, written c.1917 beside the Lost Tales. Tolkien's EARLIEST COMPLETE invented language and the direct ancestor of Sindarin, printed entire with his deletions and second thoughts shown. Clean text, 80pp.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_parma_eldalamberon_11.txt",
+   "words": 39557,
    "bytes": 1162280,
    "pages": 80
   },
@@ -592,6 +700,8 @@
    "note": "The Alphabet of Rúmil and the early Noldorin material, including the tables of 'Gondolic Script' dated January 1921 — the writing systems that precede the tengwar. Clean text, 169pp.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_parma_eldalamberon_13.txt",
+   "words": 66174,
    "bytes": 5970512,
    "pages": 169
   },
@@ -602,6 +712,8 @@
    "note": "Early Qenya grammar and fragments, including the parallel list of the NAMES OF THE VALAR in Qenya and Goldogrin taken from the loose leaves of Notebook B. Clean text, 138pp.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_parma_eldalamberon_14.txt",
+   "words": 66874,
    "bytes": 2461159,
    "pages": 138
   },
@@ -612,6 +724,8 @@
    "note": "Sí Qente Feanor and other early Elvish writings, with the outlines of the awakening of Men. Clean text, 126pp.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_parma_eldalamberon_15.txt",
+   "words": 64774,
    "bytes": 4407184,
    "pages": 126
   },
@@ -622,6 +736,8 @@
    "note": "Words, Phrases and Passages in Various Tongues in The Lord of the Rings — Tolkien's own late commentary on every scrap of Elvish in the book, and the single most important linguistic source outside the Etymologies. THIS REGISTER NAMED IT AS THE CHIEF ABSENCE and it is now held. EXTRACTION: SILENTLY MISSING -- an image-only scan, 221pp, no text layer on any page sampled. The most wanted volume on this shelf is held and unreadable, and that is the plainest statement of where §1 actually stands.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_parma_eldalamberon_17.txt",
+   "words": 0,
    "bytes": 8109681,
    "pages": 221
   },
@@ -632,6 +748,8 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan, 152pp and 143 MB, no text layer on pages 1, 10, 50 or 100. THE ARCHIVE CANNOT SAY WHAT IS IN IT. It is held, it is a genuine issue of the modern series, and every further description would be a guess -- so this entry makes none.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_parma_eldalamberon_23.txt",
+   "words": 0,
    "bytes": 150123092,
    "pages": 152
   },
@@ -642,6 +760,8 @@
    "note": "TEN ISSUES BOUND AS ONE, 404pp of clean text, and the largest single gain in this delivery. It carries the late essays the archive's languages hall has been citing at second hand: Notes on Óre, The Rivers and Beacon-hills of Gondor, the Eldarin hands-fingers-and-numerals papers, and the Quenya prayers whose first three arrived alone in no. 43.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_41_50.txt",
+   "words": 189733,
    "bytes": 12624053,
    "pages": 404
   },
@@ -652,6 +772,8 @@
    "note": "Ósanwe-kenta, 'Enquiry into the Communication of Thought' — Tolkien's late essay on how minds meet directly, and on how Melkor and Sauron abused that opening. It is the deepest statement he made about Elvish mind and spirit and it bears on the cosmology hall as much as the languages hall. Clean text, 19pp. ALSO THE CALIBRATION SET: it is the only readable text of VT39, and measuring OCR of the VT39 scan against it is what established what OCR costs (see below).",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_39_41_osanwe_kenta_extract.txt",
+   "words": 8041,
    "bytes": 2157261,
    "pages": 19
   },
@@ -662,6 +784,8 @@
    "note": "EXTRACTION: SILENTLY MISSING — 40pp carrying Adûnaic material. IT HAS A TEXT LAYER AND THE LAYER IS UNUSABLE: the Adûnaic passage reads 'L> uralttn) dttira snib7th-mi ?nn,6'. Excluded by name in map/extract_corpus.py, because a corrupt layer is MORE dangerous than none — extraction succeeds, the damage is silent, and the noise files at tier 2.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_24.txt",
+   "words": 0,
    "bytes": 8519943,
    "pages": 40
   },
@@ -672,6 +796,8 @@
    "note": "EXTRACTION: SILENTLY MISSING -- 28pp, same fault as no. 24: \"atto 'father' also atta\" is rendered 'attd fxher iiso attfi'. Held, and excluded from extraction by name for the same reason.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_25.txt",
+   "words": 0,
    "bytes": 9732600,
    "pages": 28
   },
@@ -682,6 +808,8 @@
    "note": "An index of Elvish forms across the Vinyar Tengwar run, each with its issue and page. It is a CITATION APPARATUS, not an issue: it makes no claim of its own and exists to locate other people's. That is why it sits at tier 3 beside a companion rather than at tier 2 beside the journal. Clean text, 56pp, and immediately useful — it turns 'somewhere in VT' into a locus.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_vinyar_tengwar_index.txt",
+   "words": 31178,
    "bytes": 591600,
    "pages": 56
   },
@@ -692,6 +820,8 @@
    "note": "A lexicon DERIVED FROM Parma Eldalamberon 11, every entry carrying a [PE11:page] citation back to the source. It arrived named 'A New Q(u)enya Lexicon PE11.pdf', which reads as the issue itself; renamed so the shelf cannot be misread as holding PE11 twice. Careful work, and not Tolkien: where it and PE11 differ, PE11 wins.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe11.txt",
+   "words": 11649,
    "bytes": 373557,
    "pages": 17
   },
@@ -702,6 +832,8 @@
    "note": "As above, derived from PE17 — and OF PARTICULAR VALUE while PE17 itself is an unreadable scan, because it is currently the only searchable route into that issue's Quenya. Cited as Giraudeau, never as Tolkien.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt",
+   "words": 58046,
    "bytes": 1356534,
    "pages": 62
   },
@@ -712,6 +844,8 @@
    "note": "Derived from Parma Eldalamberon 21, WHICH THE ARCHIVE DOES NOT HOLD. So this is the archive's only access to that material, and the tier is the point: nothing here may be presented as Tolkien's text, only as Giraudeau's reading of it.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe21.txt",
+   "words": 10641,
    "bytes": 373215,
    "pages": 16
   },
@@ -722,6 +856,8 @@
    "note": "A collation of the revised 3rd printing of PE12 against the earlier one. PE12 — the Qenya Lexicon — is not held, so this records changes to a text the archive cannot read.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_giraudeau_parma_eldalamberon_12_changes_in_the_2011_.txt",
+   "words": 4766,
    "bytes": 760754,
    "pages": 9
   },
@@ -732,6 +868,8 @@
    "note": "A Sindarin corpus derived from PE17. IT ARRIVED NAMED 'Parma Eldalamberon 23 Sindarin Corpus.pdf' AND ITS OWN RUNNING HEAD, on page 1 and again on page 20, READS 'Parma Eldalamberon 17 — Sindarin Corpus'. The filename named the wrong issue and the wrong author; shelved under what the document says it is.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_giraudeau_sindarin_corpus_from_pe17.txt",
+   "words": 23048,
    "bytes": 670578,
    "pages": 70
   },
@@ -742,8 +880,22 @@
    "note": "'Le haut elfique pour les debutants' — a teaching primer for Quenya. A primer regularises what Tolkien left unsettled, exactly as Salo's Gateway to Sindarin does at this tier, so its paradigms must not be quoted as his. Clean text, 37pp.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_kloczko_high_elvish_for_beginners_notes_by_giraudeau.txt",
+   "words": 10824,
    "bytes": 631765,
    "pages": 37
+  },
+  {
+   "file": "Heraldry - Tolkien Gateway.pdf",
+   "tier": 4,
+   "attribution": "Tolkien Gateway contributors, printed from the wiki 2026-07-25",
+   "note": "A 35-page print of the Tolkien Gateway's heraldry article. TIER 4 BY THE RULING OF 29 JULY, which settled this exact case in advance — that ruling defines t4 as a source carrying no independent authority, usable only where it happens to restate something Tolkien wrote, and says in the same breath that this is exactly what a wiki is. THE QUOTATION MARKS CAME OFF THAT SENTENCE DELIBERATELY: quoted_check reads any quoted span in a published dataset as a span owing verification against the corpus, and CLAUDE.md is not in the corpus. Quoting the archive's own ruling inside a register note grew the ratchet by one and the guard was right to refuse it — a rule of this archive is not a source for a claim about Arda. IT SAT AT THE REPOSITORY ROOT, UNSHELVED AND UNREGISTERED, SINCE 25 JULY, and surfaced only because the owner supplied his own list of what should be held and it was reconciled file by file against the shelf. Nothing else would have found it: every guard here checks the register against the corpus or the corpus against the register, and a book in NEITHER is invisible to all of them. The heraldry hall already holds the archive's own devices and Tolkien_heraldry.pdf at tier 3; this is consulted where it restates him and cited as a wiki where it does not.",
+   "primary_text": false,
+   "present": true,
+   "corpus_file": "t4_heraldry_tolkien_gateway.txt",
+   "words": 7270,
+   "bytes": 5649615,
+   "pages": 35
   },
   {
    "file": "Giraudeau - J.R.R. Tolkien, a global theory.pdf",
@@ -752,6 +904,8 @@
    "note": "An interpretative essay. ARRIVED WITH NO FILE EXTENSION AT ALL — `file` reports PDF 1.6, 68pp — so every tool that dispatches on suffix was blind to it; given its extension here. Tier 3 and at the interpretative end of it: a theory about Tolkien is not evidence about Arda.",
    "primary_text": false,
    "present": true,
+   "corpus_file": "t3_giraudeau_j_r_r_tolkien_a_global_theory.txt",
+   "words": 20392,
    "bytes": 2623864,
    "pages": 68
   },
@@ -762,6 +916,8 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_11.txt",
+   "words": 0,
    "bytes": 990891,
    "pages": 12
   },
@@ -772,6 +928,8 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_12.txt",
+   "words": 0,
    "bytes": 1041737,
    "pages": 12
   },
@@ -782,6 +940,8 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_14.txt",
+   "words": 0,
    "bytes": 1205260,
    "pages": 12
   },
@@ -792,6 +952,8 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_27.txt",
+   "words": 0,
    "bytes": 1942372,
    "pages": 22
   },
@@ -802,6 +964,8 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_28.txt",
+   "words": 0,
    "bytes": 1600334,
    "pages": 20
   },
@@ -812,6 +976,8 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_29.txt",
+   "words": 0,
    "bytes": 1158193,
    "pages": 17
   },
@@ -822,6 +988,8 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_31.txt",
+   "words": 0,
    "bytes": 1522652,
    "pages": 18
   },
@@ -832,6 +1000,8 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_36.txt",
+   "words": 0,
    "bytes": 1518959,
    "pages": 18
   },
@@ -842,6 +1012,8 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_37.txt",
+   "words": 0,
    "bytes": 1113078,
    "pages": 16
   },
@@ -852,6 +1024,8 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something. The issue containing Ósanwe-kenta, whose text the archive holds separately as a clean extract — so this scan can be OCR'd and CHECKED against a known-good text, which is how the cost of OCR was measured at all.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_39.txt",
+   "words": 0,
    "bytes": 889546,
    "pages": 36
   },
@@ -862,6 +1036,8 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something. The owner's second, different scan of number 39, uploaded deliberately as a second chance at the same pages.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_vinyar_tengwar_39_2.txt",
+   "words": 0,
    "bytes": 1516745,
    "pages": 18
   }

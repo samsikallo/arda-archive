@@ -297,7 +297,36 @@ if _debt or _debt_unknown:
           "FAILED, not that the archive is clean.")
 
 _failed = bad or _ifail or _jsfail or _sfail or _mfail or _qfail or _afail
-print("checked",len(pages),"pages,",len(glob.glob('*.json')),"datasets —",
+# ── THE GATE'S OWN VERDICT, AND IT USED TO BE ASSEMBLED FROM A DIRECTORY LISTING ────────────
+#
+# THE ADVERSARY'S FINDING 255. This line read `len(glob.glob('*.json'))` -- it re-derived the
+# population inside its own print instead of counting the work the run had done -- and printed
+# "checked 32 pages, 50 datasets". Both numbers over-reported, in the one sentence rule 4 makes the
+# archive's verdict and every session reads.
+#
+#   THE 50 WAS A DIRECTORY LISTING. site/ holds 50 *.json; 48 are arda_* datasets. The other two are
+#   manifest.json, a PWA manifest that is not a dataset at all, and stub_urls.json -- 580 published
+#   URLs which the Adversary established, as finding 186 two days ago and re-verified by AST, NO
+#   GUARD READS. The word in the sentence is "checked", and it was counting among the checked the
+#   one file whose whole problem is that nothing checks it.
+#
+#   THE 32 IS 32 OF 615. The archive publishes 615 tracked pages -- 33 top-level and 582 per-entity
+#   -- and this gate globs 32 of them. It is not false that it checked 32; what a reader cannot
+#   learn from it is that 583 published pages were not among them. `nav_check` had exactly this
+#   ("33 published" against 615) and was repaired hours earlier; the gate still had it.
+#
+# So: count what this run actually verified, name the population it was drawn from, and do not call
+# a file a dataset because it ends in .json.
+_datasets=sorted(f for f in glob.glob('*.json') if f.startswith('arda_'))
+_notdata=sorted(set(glob.glob('*.json'))-set(_datasets))
+import subprocess as _sp
+try:
+    _published=len([l for l in _sp.run(["git","ls-files","*.html"],capture_output=True,text=True,
+                                       timeout=20).stdout.split("\n") if l.strip()])
+except Exception:
+    _published=None
+print("checked %d of %s published page(s), %d arda_* dataset(s) of %d .json file(s) in site/ —"
+      %(len(pages),_published if _published else "?",len(_datasets),len(glob.glob('*.json'))),
       "FAIL" if _failed else ("OK" if not _skipped else
       "OK, with %d check(s) SKIPPED and therefore unverified: %s"
       %(len(_skipped),", ".join(_skipped))))
