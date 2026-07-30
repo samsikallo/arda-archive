@@ -78,6 +78,10 @@
    "note": "As Pictures. Carries Tolkien's own working maps and the note-sheets behind them, which the gazetteer's coordinates are measured against. ARRIVED 2026-07-31 AND IS THE LAST OF THE SIX DECLARED ABSENCES TO BE FILLED. 118 pages at 1822x2436 pt -- a large-format plate book, 87.5 MB, AND AN IMAGE-ONLY SCAN, so it joins the OCR queue rather than the readable shelf. Of the four art volumes the archive now holds, only Pictures by J.R.R. Tolkien came with a text layer; the other three are scans, which is what an art book usually is and why the captions -- the half the artwork ruling permits -- are the hardest half to obtain. EXTRACTION: SILENTLY MISSING until its OCR lands.",
    "primary_text": false,
    "present": true,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read from a scan at 300 dpi on 30 July 2026, at the owner's ruling. THE ENGLISH IS LARGELY FAITHFUL AND THE ELVISH IS NOT: measured against a known-good text of Vinyar Tengwar 39, 37 of 51 distinct Elvish forms were lost or corrupted, almost all of them diacritic-bearing -- fea, hroa, Eruhini, and Feanor itself. This file may be quoted for commentary and may NEVER settle the spelling of an Elvish word.",
+   "corpus_file": "t2_the_art_of_the_lord_of_the_rings.txt",
+   "words": 41538,
    "bytes": 91740393,
    "pages": 118
   },
@@ -761,7 +765,7 @@
    "file": "Parma Eldalamberon 23.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien, ed. Elvish Linguistic Fellowship",
-   "note": "IT IS 'THE FEANORIAN ALPHABET' (parts 1 and 2) AND 'ELDARIN PERSONAL PRONOUNS', both by Tolkien, edited by Arden R. Smith and Christopher Gilson -- established 2026-07-31 from the volume's own running heads after OCR, and NOT from anybody's memory. This entry previously read THE ARCHIVE CANNOT SAY WHAT IS IN IT ... every further description would be a guess, which was the right thing to write while it was a 152-page scan with no text layer. IT SERVES TWO HALLS AT ONCE and that is unusual: the Feanorian Alphabet is writing-systems material -- the volume opens with tengwar mode charts, one captioned 'Beleriandic Mode' -- and Eldarin Personal Pronouns is grammar. Its own numbers say the same: 284 hits for 'verb', 169 for 'consonant', 137 for 'Quenya'. EXTRACTION: OCR-DERIVED, 73,539 words at 300 dpi. The tengwar charts survive as noise, necessarily -- a scan of a non-Latin script read by a Latin-script engine -- so the CHARTS are evidence that material is there and are not themselves readable.",
+   "note": "IT IS THE FEANORIAN ALPHABET (parts 1 and 2) AND ELDARIN PERSONAL PRONOUNS, both by Tolkien, edited by Arden R. Smith and Christopher Gilson -- established 2026-07-31 from the volume's own running heads after OCR, and NOT from anybody's memory. This entry previously said the archive could not say what was in it and that any further description would be a guess, which was the right thing to write while it was a 152-page scan with no text layer. IT SERVES TWO HALLS AT ONCE and that is unusual: the Feanorian Alphabet is writing-systems material -- the volume opens with tengwar mode charts, one captioned 'Beleriandic Mode' -- and Eldarin Personal Pronouns is grammar. Its own numbers say the same: 284 hits for 'verb', 169 for 'consonant', 137 for 'Quenya'. EXTRACTION: OCR-DERIVED, 73,539 words at 300 dpi. The tengwar charts survive as noise, necessarily -- a scan of a non-Latin script read by a Latin-script engine -- so the CHARTS are evidence that material is there and are not themselves readable.",
    "primary_text": true,
    "present": true,
    "corpus_file": "t2_parma_eldalamberon_23.txt",
@@ -906,6 +910,30 @@
    "words": 10824,
    "bytes": 631765,
    "pages": 37
+  },
+  {
+   "file": "(K) The Road Goes Ever On - A Song Cycle (2nd digitisation).pdf",
+   "tier": 1,
+   "attribution": "J.R.R. Tolkien, music Donald Swann (1967) — a second scan supplied by the owner 2026-07-31",
+   "note": "THE SAME BOOK AS THE (K) COPY ABOVE AND A DIFFERENT DIGITISATION, kept because the two are COMPLEMENTARY RATHER THAN RANKED. The held copy had no text layer at all and was OCR'd on 30 July; this one carries a layer of its own — and that layer is largely garbled MUSICAL NOTATION, because the book is a song cycle and the pages are scores: 'NAMARIE (FAREWELL) / Freely / play bassnotes as written' arrives mixed with `py - @ 2 Ff «`. So it is not the clean publisher's text the archive hoped for. What it does have is Elvish the OCR lost — `yéni` occurs 3 times here and 0 times in the OCR — so where the two digitisations agree a reading is far better evidenced than where one stands alone. That is the same argument as the two scans of Vinyar Tengwar 39, and the owner supplied both pairs on the same instinct.",
+   "primary_text": true,
+   "present": true,
+   "corpus_file": "t1_k_the_road_goes_ever_on_a_song_cycle_2nd_digitisatio.txt",
+   "words": 12168,
+   "bytes": 1349098,
+   "pages": 78
+  },
+  {
+   "file": "Ellison - The road goes ever on, the Journey motive in The Lord of the Rings.pdf",
+   "tier": 3,
+   "attribution": "John Ellison",
+   "note": "A five-page scholarly essay. IT IS NOT ABOUT THE SONG CYCLE, despite sharing its title phrase, and it was supplied as though it were: it is about the JOURNEY MOTIF as a structural device in The Lord of the Rings, opening on the observation that so much of the book is given over to descriptions of travel. Renamed so the shelf does not read as holding commentary on the songbook, which would send a later reader to it for Namárië and find an argument about narrative pacing. Tier 3: a reading of Tolkien, with no authority over him.",
+   "primary_text": false,
+   "present": true,
+   "corpus_file": "t3_ellison_the_road_goes_ever_on_the_journey_motive_in_.txt",
+   "words": 5246,
+   "bytes": 615856,
+   "pages": 5
   },
   {
    "file": "Heraldry - Tolkien Gateway.pdf",
