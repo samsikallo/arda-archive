@@ -25,7 +25,7 @@
   "amon ereb": [
    {
     "age": "F.A.",
-    "cite": "Silm 18 [C]",
+    "cite": "Silm 18 [C]; GA 455 §145 (HoME XI) [C]",
     "rank": 1,
     "status": "event",
     "what": "Burned in the Bragollach; Caranthir retreats to Amon Ereb",
@@ -59,7 +59,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 13, 18 [C]",
+    "cite": "Silm 13, 18 [C]; GA 60 §77 and 455 §145 (HoME XI) [C]",
     "rank": 1,
     "status": "besieged",
     "what": "Besieged through the Long Peace (Dagor Aglareb to the Bragollach)",
@@ -77,13 +77,13 @@
     "age": "F.A.",
     "cite": "Silm 18",
     "rank": 1,
-    "status": "event",
+    "status": "destroyed",
     "what": "Dagor Bragollach; Fingolfin falls before Angband",
     "year": 455
    },
    {
     "age": "F.A.",
-    "cite": "Silm 18 [C]",
+    "cite": "Silm 18 [C]; GA 455 §145 and 456 §155 (HoME XI) [C]",
     "rank": 1,
     "status": "event",
     "what": "The Bragollach beaten off at Eithel Sirion; Fingolfin falls before Angband's gate",
@@ -99,11 +99,11 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 24 [C]",
+    "cite": "Silm 24 [C]; HoME XI, the Tale of Years [C]",
     "rank": 1,
     "status": "event",
     "what": "The War of Wrath: Thangorodrim broken, Morgoth thrust through the Door of Night",
-    "year": 583
+    "year": 545
    }
   ],
   "angle": [
@@ -227,7 +227,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "LotR VI.5; App A/B [C]",
+    "cite": "LotR VI.5; App A/B [C]; LotR App B (The Tale of Years) [C]",
     "rank": 3,
     "status": "event",
     "what": "Elessar crowned; Arnor's kingship resumed with Gondor's",
@@ -339,7 +339,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "LotR VI.3–4 [C]",
+    "cite": "LotR VI.3–4 [C]; LotR App B (The Tale of Years) [C]",
     "rank": 3,
     "status": "event",
     "what": "The Ring destroyed; Barad-dûr falls; the realm ends",
@@ -411,7 +411,7 @@
   "bombadil s house": [
    {
     "age": "T.A.",
-    "cite": "LotR I.6–8 [C]",
+    "cite": "LotR I.6–8 [C]; LotR App B (The Tale of Years) [C]",
     "rank": 3,
     "status": "event",
     "what": "Old Man Willow overruled; the Wight cast out; four hobbits saved twice",
@@ -429,7 +429,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "LotR VI.7 [C]",
+    "cite": "LotR VI.7 [C]; LotR App B (The Tale of Years) [C]",
     "rank": 3,
     "status": "event",
     "what": "Ruffian troubles and the fight of the five; the Greenway reopens",
@@ -703,7 +703,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 18 [C]",
+    "cite": "Silm 18 [C]; GA 455 §145 (HoME XI) [C]",
     "rank": 1,
     "status": "event",
     "what": "Both fall in the Bragollach; the land becomes Taur-nu-Fuin, forest of dread",
@@ -711,7 +711,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 18–19 [C]",
+    "cite": "Silm 18–19 [C]; GA 455 §145 and 460 §167 (HoME XI) [C]",
     "rank": 1,
     "status": "event",
     "what": "The Bragollach burns Dorthonion; Barahir's outlawry ends at Tarn Aeluin",
@@ -855,7 +855,7 @@
   "fangorn": [
    {
     "age": "T.A.",
-    "cite": "LotR III.4, 8–9 [C]",
+    "cite": "LotR III.4, 8–9 [C]; LotR App B (The Tale of Years) [C]",
     "rank": 3,
     "status": "event",
     "what": "The Entmoot; the march on Isengard ('the last march of the Ents'); the Huorns at the Hornburg; the Treegarth after",
@@ -927,7 +927,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 20 [C]",
+    "cite": "Silm 20 [C]; GA 472 §217 (HoME XI) [C]",
     "rank": 1,
     "status": "event",
     "what": "The host of Gondolin issues to the Nirnaeth — the secrecy half-broken",
@@ -1043,7 +1043,7 @@
     "age": "T.A.",
     "cite": "App A [C]",
     "rank": 3,
-    "status": "event",
+    "status": "burned",
     "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
     "year": 1432
    },
@@ -1051,7 +1051,7 @@
     "age": "T.A.",
     "cite": "App A [C]",
     "rank": 3,
-    "status": "event",
+    "status": "destroyed",
     "what": "The Great Plague — the watch on Mordor abandoned; 2002 Minas Ithil falls; 2050 the King lost; the Stewards rule",
     "year": 1636
    },
@@ -1059,7 +1059,7 @@
     "age": "T.A.",
     "cite": "App A; App B",
     "rank": 3,
-    "status": "event",
+    "status": "destroyed",
     "what": "The Wainriders destroy Gondor's northern army; Narmacil II slain",
     "year": 1856
    },
@@ -1081,7 +1081,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "LotR V–VI [C]",
+    "cite": "LotR V–VI [C]; LotR App B (The Tale of Years) [C]",
     "rank": 3,
     "status": "event",
     "what": "The War of the Ring; Elessar crowned — the realm renewed",
@@ -1089,7 +1089,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "LotR VI.5; App A/B [C]",
+    "cite": "LotR VI.5; App A/B [C]; LotR App B (The Tale of Years) [C]",
     "rank": 3,
     "status": "event",
     "what": "Elessar crowned; Arnor's kingship resumed with Gondor's",
@@ -1135,7 +1135,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 18 [C]",
+    "cite": "Silm 18 [C]; GA 455 §145 (HoME XI) [C]",
     "rank": 1,
     "status": "event",
     "what": "The Bragollach: Himring alone stands; the Gap and Lothlann lost",
@@ -1169,9 +1169,9 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 18 [C]",
+    "cite": "Silm 18 [C]; GA 455 §145 and 456 §155 (HoME XI) [C]",
     "rank": 1,
-    "status": "event",
+    "status": "destroyed",
     "what": "The Bragollach beaten off at Eithel Sirion; Fingolfin falls before Angband's gate",
     "year": 455
    },
@@ -1231,7 +1231,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "LotR III.4, 8–9 [C]",
+    "cite": "LotR III.4, 8–9 [C]; LotR App B (The Tale of Years) [C]",
     "rank": 3,
     "status": "event",
     "what": "The Entmoot; the march on Isengard ('the last march of the Ents'); the Huorns at the Hornburg; the Treegarth after",
@@ -1335,7 +1335,7 @@
     "age": "S.A.",
     "cite": "Silm; App B [C]",
     "rank": 2,
-    "status": "event",
+    "status": "destroyed",
     "what": "The Last Alliance marches; Gil-galad falls; the High Kingship ends",
     "year": 3434
    }
@@ -1353,7 +1353,7 @@
   "lothlann": [
    {
     "age": "F.A.",
-    "cite": "Silm 18 [C]",
+    "cite": "Silm 18 [C]; GA 455 §145 (HoME XI) [C]",
     "rank": 1,
     "status": "event",
     "what": "The Bragollach: Himring alone stands; the Gap and Lothlann lost",
@@ -1363,7 +1363,7 @@
   "menegroth": [
    {
     "age": "F.A.",
-    "cite": "Silm 13 [C]",
+    "cite": "Silm 13 [C]; GA 52 §75 and 102 §108 (HoME XI) [C]",
     "rank": 1,
     "status": "event",
     "what": "Finrod, shown Menegroth, delves Nargothrond in the caves of Narog",
@@ -1407,7 +1407,7 @@
     "age": "T.A.",
     "cite": "App A/B",
     "rank": 3,
-    "status": "taken",
+    "status": "destroyed",
     "what": "Minas Ithil falls: Minas Morgul",
     "year": 2002
    }
@@ -1479,7 +1479,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "LotR VI.3–4 [C]",
+    "cite": "LotR VI.3–4 [C]; LotR App B (The Tale of Years) [C]",
     "rank": 3,
     "status": "destroyed",
     "what": "The Ring destroyed; Barad-dûr falls; the realm ends",
@@ -1497,7 +1497,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 13 [C]",
+    "cite": "Silm 13 [C]; GA 52 §75 and 102 §108 (HoME XI) [C]",
     "rank": 1,
     "status": "event",
     "what": "Finrod, shown Menegroth, delves Nargothrond in the caves of Narog",
@@ -1513,7 +1513,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 21; CoH [C]",
+    "cite": "Silm 21; CoH [C]; GA 495 §275 (HoME XI) [C]",
     "rank": 1,
     "status": "sacked",
     "what": "The bridge and the open battle of Tumhalad; Glaurung sacks the city",
@@ -1541,7 +1541,7 @@
     "age": "F.A.",
     "cite": "Silm 22 [C]",
     "rank": 1,
-    "status": "event",
+    "status": "sacked",
     "what": "The slaying of Thingol and the sack of Menegroth; the host destroyed at Sarn Athrad",
     "year": 502
    },
@@ -1687,9 +1687,9 @@
    },
    {
     "age": "T.A.",
-    "cite": "LotR II.2–3 [C]",
+    "cite": "LotR II.2–3 [C]; LotR App B (The Tale of Years) [C]",
     "rank": 3,
-    "status": "event",
+    "status": "destroyed",
     "what": "The Council of Elrond; the Fellowship goes out",
     "year": 3018
    }
@@ -1775,7 +1775,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 18 [C]",
+    "cite": "Silm 18 [C]; GA 455 §145 (HoME XI) [C]",
     "rank": 1,
     "status": "burned",
     "what": "Burned in the Bragollach; Caranthir retreats to Amon Ereb",
@@ -2123,9 +2123,9 @@
   {
    "age": "F.A.",
    "era": "the First Age",
-   "label": "F.A. 583",
+   "label": "F.A. 545",
    "rank": 1,
-   "year": 583
+   "year": 545
   },
   {
    "age": "F.A.",
