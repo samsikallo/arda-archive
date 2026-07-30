@@ -104,6 +104,16 @@ fetch("arda_gazetteer.json").then(r=>r.json()).then(d=>{
  K.forEach(k=>{(G[k].ages||[]).forEach(a=>ages[a]=1);(G[k].parents||[]).forEach(p=>realms[p]=1)});
  const AGEORD=["YT","FA","SA","TA","FoA"];
  const REALMN={"valinor": "Valinor — the Realm of the Valar", "tirion": "Tirion upon Túna", "alqualonde": "Alqualondë — the Haven of the Swans", "doriath": "Doriath", "gondolin": "Gondolin", "nargothrond": "Nargothrond", "hithlum": "Hithlum", "dorlomin": "Dor-lómin (House of Hador)", "ladros": "Ladros & the Bëorian lands", "brethil": "Brethil", "falas": "The Falas", "himring": "The March of Maedhros", "thargelion": "Thargelion", "dorthonion": "Dorthonion", "ossiriand": "Ossiriand", "balar": "The Isle of Balar & the Havens of Sirion", "easterlingsfa": "The Easterlings of the First Age", "khazaddum": "Khazad-dûm", "belegost": "Belegost", "nogrod": "Nogrod", "utumno": "Utumno", "angband": "Angband", "numenor": "Númenor", "lindon": "Lindon", "eregion": "Eregion", "lorien": "Lothlórien", "greenwood": "The Woodland Realm", "rivendell": "Imladris (Rivendell)", "mordor": "Mordor", "umbar": "Umbar", "arnor": "Arnor", "gondor": "Gondor", "arthedain": "Arthedain", "cardolan": "Cardolan", "rhudaur": "Rhudaur", "angmar": "Angmar", "shire": "The Shire", "bree": "Bree-land", "rohan": "Rohan", "eotheod": "The Éothéod", "dale": "Dale", "esgaroth": "Esgaroth", "erebor": "Erebor & Durin's Folk in exile", "ironhills": "The Iron Hills", "dolguldur": "Dol Guldur", "isengard": "Isengard", "dunland": "Dunland", "harad": "Harad", "rhun": "Rhûn & the Easterling powers", "khand": "Khand", "dorwinion": "Dorwinion", "lossoth": "The Lossoth of Forochel", "druadan": "The Drúedain", "fangorn": "Fangorn", "beornings": "The Beornings", "woodmen": "The Woodmen of Mirkwood", "bombadil": "The house of Tom Bombadil", "mistyorcs": "The Orc-holds of the Misty Mountains", "morgul": "Minas Morgul", "reunited": "The Reunited Kingdom"};
+ /* CONSTITUENT REALMS, baked in from arda_realms.json beside the names. The owner found that the
+    Reunited Kingdom held ONE place in the gazetteer -- Annúminas -- while Gondor held 18 and Arnor
+    3, and its realm record had said the truth in prose all along: "High Kingship over BOTH REALMS",
+    `aka` "Arnor & Gondor rejoined". A fact recorded in a form nothing could read.
+    `parts` is CONTAINMENT and `fed` is NOT. Rohan is a sworn free ally and the Shire a chartered
+    autonomy; both are federated to the High Kingship and neither is inside it, so they are a
+    separate key and are rendered as a separate line. Collapsing the two would be the `region` fault
+    again -- a relation flattened until it says something false. */
+ const REALMPARTS={"arnor": ["arthedain", "rhudaur", "cardolan"], "reunited": ["arnor", "gondor"]};
+ const REALMFED={"reunited": ["rohan", "shire"]};
  const asel=document.getElementById("age");
  Object.keys(ages).sort((a,b)=>AGEORD.indexOf(a)-AGEORD.indexOf(b)).forEach(a=>{
    const o=document.createElement("option");o.value=a;o.textContent=a;asel.appendChild(o)});
@@ -198,9 +208,20 @@ fetch("arda_gazetteer.json").then(r=>r.json()).then(d=>{
   const conts=[...new Set(rows.reduce((a,k)=>a.concat(G[k].parents||[]),[]))].sort();
   const isCont={};
   const top=[];
-  conts.forEach(p=>{
+  // A REALM WITH CONSTITUENTS IS A CONTAINER EVEN IF NO PLACE NAMES IT AS A PARENT. The Reunited
+  // Kingdom had one child place and would have stayed a one-line branch on the containment graph
+  // alone; its constituents are a realm-level fact and they earn it a branch of its own.
+  const partsOf=p=>(REALMPARTS[p]||[]).filter(x=>kidsOf(x).length||(REALMPARTS[x]||[]).length);
+  const realmBranch=(x,up)=>{
+   const own=kidsOf(x).map(c=>placeNode(c,1,up.concat([x])));
+   const sub=up.indexOf(x)>=0?[]:partsOf(x).map(y=>realmBranch(y,up.concat([x])));
+   return node("c:"+x,((G[x]&&G[x].n)||REALMN[x]||x),own.concat(sub),
+     {place:G[x]?x:null,cont:true});
+  };
+  conts.concat(Object.keys(REALMPARTS)).filter((v,i,a)=>a.indexOf(v)===i).sort().forEach(p=>{
    const kk=kidsOf(p);
-   if(!kk.length)return;
+   const pts=partsOf(p);
+   if(!kk.length&&!pts.length)return;
    isCont[p]=1;
    /* THE BRANCH IS LABELLED WITH A NAME, NOT AN INDEX KEY. It read "gondor" beside a child
       reading "Anfalas", because containers printed the raw parents key and children printed
@@ -209,7 +230,14 @@ fetch("arda_gazetteer.json").then(r=>r.json()).then(d=>{
       are in the gazetteer's own realm_ids, realms with no place record. REALMN is baked in
       from arda_realms.json at build time so they read "The Iron Hills" and "The Reunited
       Kingdom" rather than an id, and without the page fetching a second dataset to find out. */
-   top.push(node("c:"+p,(G[p]&&G[p].n)||REALMN[p]||p,kk.map(c=>placeNode(c,1,[p])),
+   const own=kk.map(c=>placeNode(c,1,[p]));
+   const sub=pts.map(x=>realmBranch(x,[p]));
+   // FEDERATED IS SHOWN AND IS NOT A BRANCH, because Rohan is not inside Gondor and the Shire is
+   // not inside Arnor. A leaf row that states the relation is honest; a sub-branch would not be.
+   const fed=(REALMFED[p]||[]).map(x=>(G[x]&&G[x].n)||REALMN[x]||x);
+   const extra=fed.length?[node("fed:"+p,"federated, not contained — "+fed.join(" · "),[],
+     {silent:true})]:[];
+   top.push(node("c:"+p,(G[p]&&G[p].n)||REALMN[p]||p,own.concat(sub,extra),
      {place:G[p]?p:null,cont:true}));
   });
   /* A CONTAINER IS NOT ALSO A LEFTOVER. This branch was every place with no recorded parent,

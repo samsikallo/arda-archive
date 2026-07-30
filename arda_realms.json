@@ -3468,7 +3468,13 @@
     "lastalliance",
     "gladden"
    ],
-   "panel": "Lindon & the Last Alliance"
+   "panel": "Lindon & the Last Alliance",
+   "parts": [
+    "arthedain",
+    "rhudaur",
+    "cardolan"
+   ],
+   "parts_cite": "App A I(iii) — Arnor divided into three kingdoms after Eärendur [C]"
   },
   {
    "id": "gondor",
@@ -5922,7 +5928,17 @@
     "morannon",
     "bywater"
    ],
-   "panel": "Gondor"
+   "panel": "Gondor",
+   "parts": [
+    "arnor",
+    "gondor"
+   ],
+   "parts_cite": "LotR VI 4 — 'The King of Gondor and Lord of the Western Lands ... and he has taken back all his ancient realm' (t1_c_the_lord_of_the_rings.txt:42565); App A [C]",
+   "fed": [
+    "rohan",
+    "shire"
+   ],
+   "fed_cite": "App A/B; LotR VI [I-H] — the archive's synthesis: a sworn free ally and a chartered autonomy, federated to the High Kingship and NOT contained by it"
   }
  ]
 }
