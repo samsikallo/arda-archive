@@ -11,25 +11,31 @@
    "file": "(K) The Road Goes Ever On - A Song Cycle.pdf",
    "tier": 1,
    "attribution": "J.R.R. Tolkien, music Donald Swann (1967; 2nd ed. 1978)",
-   "note": "THE MOST WANTED OF THE ABSENT, because the archive ALREADY CITES IT: The War of the Jewels refers the reader to 'The Road Goes Ever On, p. 61' for miruvórë, so the corpus depends on a book it does not hold. Published in Tolkien's lifetime and carrying his own commentary on Namárië and A Elbereth Gilthoniel -- the only place he glossed those two texts word by word.",
+   "note": "THE MOST WANTED OF THE ABSENT, because the archive ALREADY CITES IT: The War of the Jewels refers the reader to 'The Road Goes Ever On, p. 61' for miruvórë, so the corpus depends on a book it does not hold. Published in Tolkien's lifetime and carrying his own commentary on Namárië and A Elbereth Gilthoniel -- the only place he glossed those two texts word by word. ARRIVED 2026-07-30 AND IS AN IMAGE-ONLY SCAN, 78pp with no text layer. The dependency this row was written about is therefore NOT resolved: the corpus still cites 'The Road Goes Ever On, p. 61' for miruvórë and still cannot read the page. Held, and uncitable until OCR'd and checked. EXTRACTION: SILENTLY MISSING — the words are on the page and only the text layer is absent, which is the sharpest thing that can be said about §1 today: the most wanted volume in this register arrived, and the citation that wanted it still cannot be followed.",
    "primary_text": true,
-   "present": false
+   "present": true,
+   "bytes": 7753269,
+   "pages": 78
   },
   {
    "file": "secondary sources/A Secret Vice - Tolkien on Invented Languages.pdf",
    "tier": 1,
    "attribution": "J.R.R. Tolkien, ed. Dimitra Fimi & Andrew Higgins (2016)",
-   "note": "Tolkien's own essay on language invention with the associated manuscripts. Tier 1 as HIS WORDS about his own languages; the editors' apparatus is theirs and is cited as such where used.",
+   "note": "Tolkien's own essay on language invention with the associated manuscripts. Tier 1 as HIS WORDS about his own languages; the editors' apparatus is theirs and is cited as such where used. ARRIVED 2026-07-30 IN CLEAN TEXT, 180pp -- the 1931 lecture with the drafts and the essay on phonetic symbolism. AND THIS ROW CORRECTED ME: I had tiered it 2 for its editors, and the reason written here before the book came is the right one. It is the foundation document for what the languages hall says about WHY the languages exist, which the archive has until now had to infer.",
    "primary_text": true,
-   "present": false
+   "present": true,
+   "bytes": 3036289,
+   "pages": 180
   },
   {
    "file": "secondary sources/The History of The Hobbit.pdf",
    "tier": 2,
    "attribution": "John D. Rateliff (2007, rev. 2011)",
-   "note": "The textual history of The Hobbit, with Tolkien's drafts. Tier 2: the DRAFTS are Tolkien and the commentary is Rateliff's, and the archive must not let the second speak with the authority of the first.",
-   "primary_text": false,
-   "present": false
+   "note": "The textual history of The Hobbit, with Tolkien's drafts. Tier 2: the DRAFTS are Tolkien and the commentary is Rateliff's, and the archive must not let the second speak with the authority of the first. ARRIVED 2026-07-30 IN CLEAN TEXT, 1333pp -- the longest volume on the shelf, and the counterpart to Christopher Tolkien's History for the one book he never treated.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 57231760,
+   "pages": 1333
   },
   {
    "file": "secondary sources/Pictures by J.R.R. Tolkien.pdf",
@@ -43,9 +49,11 @@
    "file": "secondary sources/The Art of The Hobbit.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien, ed. Wayne G. Hammond & Christina Scull (2011)",
-   "note": "As Pictures: the captions and commentary are the evidence, the plates are not republished.",
+   "note": "As Pictures: the captions and commentary are the evidence, the plates are not republished. ARRIVED 2026-07-30 AND IS AN IMAGE-ONLY SCAN, 145pp. So the half of it this archive wanted -- the captions that date and place Tolkien's drawings -- is exactly the half it cannot read, while the half it may not publish is the half that came through perfectly. EXTRACTION: SILENTLY MISSING — the caption text is on the plates and has no text layer.",
    "primary_text": false,
-   "present": false
+   "present": true,
+   "bytes": 9217581,
+   "pages": 145
   },
   {
    "file": "secondary sources/The Art of The Lord of the Rings.pdf",
@@ -557,6 +565,305 @@
    "present": true,
    "bytes": 17345366,
    "pages": 57
+  },
+  {
+   "file": "The King's Letter (manuscript plate).png",
+   "tier": 1,
+   "attribution": "J.R.R. Tolkien (manuscript; printed in Sauron Defeated)",
+   "note": "Tolkien's own calligraphic manuscript of the King's Letter, the discarded epilogue to The Lord of the Rings, in tengwar and in English. IT IS BOTH A TEXT AND A PICTURE and the artwork ruling of 29 July governs the picture: his linework is NOT republished. Held in the workshop as primary evidence the archive may read and measure against, and may never serve. EXTRACTION: CORRECTLY EMPTY — it is a .png, so there is no text layer to fail and none is expected. The extractor now refuses any source that is not a .pdf or .epub, having handed this picture to pdftotext once and put the 0-byte answer in the corpus.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 1965265
+  },
+  {
+   "file": "Parma Eldalamberon 11.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien, ed. Christopher Gilson, Patrick Wynne, Arden Smith and Carl Hostetter (1995)",
+   "note": "I·Lam na·Ngoldathon: the Grammar and Lexicon of the Gnomish Tongue, written c.1917 beside the Lost Tales. Tolkien's EARLIEST COMPLETE invented language and the direct ancestor of Sindarin, printed entire with his deletions and second thoughts shown. Clean text, 80pp.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 1162280,
+   "pages": 80
+  },
+  {
+   "file": "Parma Eldalamberon 13.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien, ed. Gilson, Wynne, Smith and Hostetter (2001)",
+   "note": "The Alphabet of Rúmil and the early Noldorin material, including the tables of 'Gondolic Script' dated January 1921 — the writing systems that precede the tengwar. Clean text, 169pp.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 5970512,
+   "pages": 169
+  },
+  {
+   "file": "Parma Eldalamberon 14.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien, ed. Gilson, Wynne, Smith and Hostetter (2003)",
+   "note": "Early Qenya grammar and fragments, including the parallel list of the NAMES OF THE VALAR in Qenya and Goldogrin taken from the loose leaves of Notebook B. Clean text, 138pp.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 2461159,
+   "pages": 138
+  },
+  {
+   "file": "Parma Eldalamberon 15.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien, ed. Gilson, Wynne, Smith and Hostetter (2004)",
+   "note": "Sí Qente Feanor and other early Elvish writings, with the outlines of the awakening of Men. Clean text, 126pp.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 4407184,
+   "pages": 126
+  },
+  {
+   "file": "Parma Eldalamberon 17.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien, ed. Christopher Gilson (2007)",
+   "note": "Words, Phrases and Passages in Various Tongues in The Lord of the Rings — Tolkien's own late commentary on every scrap of Elvish in the book, and the single most important linguistic source outside the Etymologies. THIS REGISTER NAMED IT AS THE CHIEF ABSENCE and it is now held. EXTRACTION: SILENTLY MISSING -- an image-only scan, 221pp, no text layer on any page sampled. The most wanted volume on this shelf is held and unreadable, and that is the plainest statement of where §1 actually stands.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 8109681,
+   "pages": 221
+  },
+  {
+   "file": "Parma Eldalamberon 23.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien, ed. Elvish Linguistic Fellowship",
+   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan, 152pp and 143 MB, no text layer on pages 1, 10, 50 or 100. THE ARCHIVE CANNOT SAY WHAT IS IN IT. It is held, it is a genuine issue of the modern series, and every further description would be a guess -- so this entry makes none.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 150123092,
+   "pages": 152
+  },
+  {
+   "file": "Vinyar Tengwar 41-50.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien, ed. Carl F. Hostetter and the Elvish Linguistic Fellowship, by permission of the Tolkien Estate (2000-2013)",
+   "note": "TEN ISSUES BOUND AS ONE, 404pp of clean text, and the largest single gain in this delivery. It carries the late essays the archive's languages hall has been citing at second hand: Notes on Óre, The Rivers and Beacon-hills of Gondor, the Eldarin hands-fingers-and-numerals papers, and the Quenya prayers whose first three arrived alone in no. 43.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 12624053,
+   "pages": 404
+  },
+  {
+   "file": "Vinyar Tengwar 39-41 - Osanwe-kenta (extract).pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien, ed. Carl F. Hostetter (1998)",
+   "note": "Ósanwe-kenta, 'Enquiry into the Communication of Thought' — Tolkien's late essay on how minds meet directly, and on how Melkor and Sauron abused that opening. It is the deepest statement he made about Elvish mind and spirit and it bears on the cosmology hall as much as the languages hall. Clean text, 19pp. ALSO THE CALIBRATION SET: it is the only readable text of VT39, and measuring OCR of the VT39 scan against it is what established what OCR costs (see below).",
+   "primary_text": true,
+   "present": true,
+   "bytes": 2157261,
+   "pages": 19
+  },
+  {
+   "file": "Vinyar Tengwar 24.pdf",
+   "tier": 2,
+   "attribution": "ed. Elvish Linguistic Fellowship (1992)",
+   "note": "EXTRACTION: SILENTLY MISSING — 40pp carrying Adûnaic material. IT HAS A TEXT LAYER AND THE LAYER IS UNUSABLE: the Adûnaic passage reads 'L> uralttn) dttira snib7th-mi ?nn,6'. Excluded by name in map/extract_corpus.py, because a corrupt layer is MORE dangerous than none — extraction succeeds, the damage is silent, and the noise files at tier 2.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 8519943,
+   "pages": 40
+  },
+  {
+   "file": "Vinyar Tengwar 25.pdf",
+   "tier": 2,
+   "attribution": "ed. Elvish Linguistic Fellowship (1992)",
+   "note": "EXTRACTION: SILENTLY MISSING -- 28pp, same fault as no. 24: \"atto 'father' also atta\" is rendered 'attd fxher iiso attfi'. Held, and excluded from extraction by name for the same reason.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 9732600,
+   "pages": 28
+  },
+  {
+   "file": "Vinyar Tengwar Index.pdf",
+   "tier": 3,
+   "attribution": "compiled for the Elvish Linguistic Fellowship",
+   "note": "An index of Elvish forms across the Vinyar Tengwar run, each with its issue and page. It is a CITATION APPARATUS, not an issue: it makes no claim of its own and exists to locate other people's. That is why it sits at tier 3 beside a companion rather than at tier 2 beside the journal. Clean text, 56pp, and immediately useful — it turns 'somewhere in VT' into a locus.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 591600,
+   "pages": 56
+  },
+  {
+   "file": "Giraudeau - A New Q(u)enya Lexicon (from PE11).pdf",
+   "tier": 3,
+   "attribution": "David Giraudeau, lambenore.free.fr",
+   "note": "A lexicon DERIVED FROM Parma Eldalamberon 11, every entry carrying a [PE11:page] citation back to the source. It arrived named 'A New Q(u)enya Lexicon PE11.pdf', which reads as the issue itself; renamed so the shelf cannot be misread as holding PE11 twice. Careful work, and not Tolkien: where it and PE11 differ, PE11 wins.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 373557,
+   "pages": 17
+  },
+  {
+   "file": "Giraudeau - A New Q(u)enya Lexicon (from PE17).pdf",
+   "tier": 3,
+   "attribution": "David Giraudeau, lambenore.free.fr",
+   "note": "As above, derived from PE17 — and OF PARTICULAR VALUE while PE17 itself is an unreadable scan, because it is currently the only searchable route into that issue's Quenya. Cited as Giraudeau, never as Tolkien.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 1356534,
+   "pages": 62
+  },
+  {
+   "file": "Giraudeau - A New Q(u)enya Lexicon (from PE21).pdf",
+   "tier": 3,
+   "attribution": "David Giraudeau, lambenore.free.fr",
+   "note": "Derived from Parma Eldalamberon 21, WHICH THE ARCHIVE DOES NOT HOLD. So this is the archive's only access to that material, and the tier is the point: nothing here may be presented as Tolkien's text, only as Giraudeau's reading of it.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 373215,
+   "pages": 16
+  },
+  {
+   "file": "Giraudeau - Parma Eldalamberon 12, changes in the 2011 printing.pdf",
+   "tier": 3,
+   "attribution": "David Giraudeau, lambenore.free.fr",
+   "note": "A collation of the revised 3rd printing of PE12 against the earlier one. PE12 — the Qenya Lexicon — is not held, so this records changes to a text the archive cannot read.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 760754,
+   "pages": 9
+  },
+  {
+   "file": "Giraudeau - Sindarin Corpus (from PE17).pdf",
+   "tier": 3,
+   "attribution": "David Giraudeau, lambenore.free.fr",
+   "note": "A Sindarin corpus derived from PE17. IT ARRIVED NAMED 'Parma Eldalamberon 23 Sindarin Corpus.pdf' AND ITS OWN RUNNING HEAD, on page 1 and again on page 20, READS 'Parma Eldalamberon 17 — Sindarin Corpus'. The filename named the wrong issue and the wrong author; shelved under what the document says it is.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 670578,
+   "pages": 70
+  },
+  {
+   "file": "Kloczko - High Elvish for Beginners (notes by Giraudeau).pdf",
+   "tier": 3,
+   "attribution": "Edouard J. Kloczko, notes by David Giraudeau (2013)",
+   "note": "'Le haut elfique pour les debutants' — a teaching primer for Quenya. A primer regularises what Tolkien left unsettled, exactly as Salo's Gateway to Sindarin does at this tier, so its paradigms must not be quoted as his. Clean text, 37pp.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 631765,
+   "pages": 37
+  },
+  {
+   "file": "Giraudeau - J.R.R. Tolkien, a global theory.pdf",
+   "tier": 3,
+   "attribution": "David Giraudeau, lambenore.free.fr",
+   "note": "An interpretative essay. ARRIVED WITH NO FILE EXTENSION AT ALL — `file` reports PDF 1.6, 68pp — so every tool that dispatches on suffix was blind to it; given its extension here. Tier 3 and at the interpretative end of it: a theory about Tolkien is not evidence about Arda.",
+   "primary_text": false,
+   "present": true,
+   "bytes": 2623864,
+   "pages": 68
+  },
+  {
+   "file": "Vinyar Tengwar 11.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 990891,
+   "pages": 12
+  },
+  {
+   "file": "Vinyar Tengwar 12.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 1041737,
+   "pages": 12
+  },
+  {
+   "file": "Vinyar Tengwar 14.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 1205260,
+   "pages": 12
+  },
+  {
+   "file": "Vinyar Tengwar 27.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 1942372,
+   "pages": 22
+  },
+  {
+   "file": "Vinyar Tengwar 28.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 1600334,
+   "pages": 20
+  },
+  {
+   "file": "Vinyar Tengwar 29.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 1158193,
+   "pages": 17
+  },
+  {
+   "file": "Vinyar Tengwar 31.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 1522652,
+   "pages": 18
+  },
+  {
+   "file": "Vinyar Tengwar 36.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 1518959,
+   "pages": 18
+  },
+  {
+   "file": "Vinyar Tengwar 37.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 1113078,
+   "pages": 16
+  },
+  {
+   "file": "Vinyar Tengwar 39.pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something. The issue containing Ósanwe-kenta, whose text the archive holds separately as a clean extract — so this scan can be OCR'd and CHECKED against a known-good text, which is how the cost of OCR was measured at all.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 889546,
+   "pages": 36
+  },
+  {
+   "file": "Vinyar Tengwar 39 (2).pdf",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something. The owner's second, different scan of number 39, uploaded deliberately as a second chance at the same pages.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 1516745,
+   "pages": 18
   }
  ],
  "not_held": [
@@ -572,7 +879,7 @@
    "title": "The Monsters and the Critics and Other Essays (1983)",
    "tier": 1,
    "attribution": "ed. Christopher Tolkien",
-   "note": "Tolkien's scholarly essays, including 'On Fairy-Stories', 'English and Welsh' and 'A Secret Vice' — his own account of why and how he invented languages.",
+   "note": "Tolkien's scholarly essays, including 'On Fairy-Stories' and 'English and Welsh'. IT ALSO PRINTS 'A Secret Vice', AND THAT ESSAY IS NOW HELD SEPARATELY in the fuller Fimi & Higgins edition of 2016, with the drafts and the essay on phonetic symbolism that this collection does not carry. So what is still wanted here is 'On Fairy-Stories' and 'English and Welsh', not the Secret Vice.",
    "affects": "The languages hall, and any statement about Tolkien's philosophy of invention.",
    "held": false
   },
@@ -601,27 +908,27 @@
    "held": false
   },
   {
-   "title": "Parma Eldalamberon 11–22 (1995– )",
+   "title": "Parma Eldalamberon 12, 16, 18–22 (1995– )",
    "tier": 2,
    "attribution": "ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate and with Christopher Tolkien's support",
-   "note": "STILL NOT HELD. The five issues that arrived on 2026-07-24 are Volume 1, numbers 1-5 — the 1971-74 fanzine of the Mythopoeic Linguistic Fellowship, fan articles containing no Tolkien manuscript, and they are registered at tier 3. This entry is a different publication under the same name. The single largest body of primary Tolkien not held here: his own language manuscripts printed in full — the Gnomish Lexicon (PE 11), the Qenya Lexicon (PE 12), Early Noldorin (PE 13), 'Words, Phrases and Passages' from The Lord of the Rings (PE 17), the Quenya phonology and verb structure (PE 18, 19, 22). The text is Tolkien's and carries tier-1 authority; the journals are the Estate-permitted vehicle.",
+   "note": "MOSTLY ANSWERED ON 2026-07-30, AND THIS ENTRY IS THE RECORD OF WHAT IT ASKED FOR. It used to name PE 11, 12, 13, 17, 18, 19 and 22 as the single largest body of primary Tolkien not held. Numbers 11, 13, 14, 15, 17 and 23 have since arrived and are registered above — so the Gnomish Lexicon, Early Noldorin and 'Words, Phrases and Passages' are on the shelf. STILL NOT HELD: the Qenya Lexicon (PE 12) and the Quenya phonology and verb structure (PE 16, 18, 19, 20, 21, 22). Giraudeau's derived lexicons at tier 3 give partial access to 12 and 21 and are not a substitute for either. The distinction this entry drew before the volumes came is still the important one: the five issues that arrived on 2026-07-24 are Volume 1, numbers 1-5, the 1971-74 fanzine of the Mythopoeic Linguistic Fellowship containing no Tolkien manuscript, and they remain at tier 3. That is a different publication under the same name. The modern series' text is Tolkien's and carries tier-1 authority; the journals are the Estate-permitted vehicle.",
    "affects": "The languages hall above all. Its lexicon is built from the Etymologies (HoME V) and the published appendices; PE 17 and PE 22 would correct and greatly enlarge it. Until these are read, no entry in that hall should be presented as the whole of what Tolkien wrote.",
    "held": false
   },
   {
-   "title": "Vinyar Tengwar, esp. nos. 39–50",
+   "title": "Vinyar Tengwar — the issues outside 11–14, 24–25, 27–31, 36–39 and 41–50",
    "tier": 2,
    "attribution": "ed. Elvish Linguistic Fellowship, by Estate permission",
-   "note": "Tolkien's late essays: 'Ósanwe-kenta' on thought-transfer, 'Notes on Óre' on the inner heart, 'The Rivers and Beacon-hills of Gondor', and the Quenya prayers. NUMBER 43 ARRIVED 2026-07-26 and is registered among the held sources above, with the first three prayers; the rest of the run, including no. 44 with the remaining two, is still not held.",
+   "note": "LARGELY ANSWERED ON 2026-07-30. This entry asked for 'Ósanwe-kenta', 'Notes on Óre', 'The Rivers and Beacon-hills of Gondor' and the Quenya prayers, and all four are now held: nos. 41-50 arrived as one 404-page volume of clean text, and Ósanwe-kenta as a clean extract of no. 39. WHAT IS HELD IS NOT THE SAME AS WHAT IS READABLE, and for this run the gap is wide: of the twenty-two issues now on the shelf, ELEVEN ARE IMAGE-ONLY SCANS and TWO MORE carry OCR so corrupt it must not be extracted. Readable today: nos. 41-50, no. 43, and the Ósanwe-kenta extract. Still not held at all: the issues below 11, and 15-23, 26, 30, 32-35, 38, 40.",
    "affects": "The languages hall; also the cosmology and any statement about Elvish mind and spirit.",
    "held": false
   },
   {
-   "title": "The Art of The Hobbit (2011); The Art of The Lord of the Rings (2015)",
+   "title": "The Art of The Lord of the Rings (2015)",
    "tier": 2,
    "attribution": "Hammond & Scull",
-   "note": "Tolkien's own drawings, maps and designs for the two books, reproduced in full.",
-   "affects": "The gallery and the maps. His own cartography outranks any reconstruction the archive draws.",
+   "note": "Tolkien's own drawings, maps and designs for The Lord of the Rings, reproduced in full. ITS COMPANION, The Art of The Hobbit, ARRIVED 2026-07-30 and is registered above — as an image-only scan, so its captions are held and not yet readable either.",
+   "affects": "The gallery and the maps. His own cartography outranks any reconstruction the archive draws. Wanted for the captions and datings; under the artwork ruling the plates are not republished.",
    "held": false
   },
   {
@@ -630,14 +937,6 @@
    "attribution": "ed. Catherine McIlwaine (Bodleian)",
    "note": "The exhibition catalogue: manuscripts, letters and artwork, including heraldic devices.",
    "affects": "The heraldry hall, the gallery.",
-   "held": false
-  },
-  {
-   "title": "The History of The Hobbit (2007; rev. 2011)",
-   "tier": 2,
-   "attribution": "John D. Rateliff",
-   "note": "The drafts of The Hobbit with commentary, the counterpart to Christopher Tolkien's History for the one book he never covered.",
-   "affects": "The Hobbit-era chronology and the dwarves.",
    "held": false
   },
   {
