@@ -1,0 +1,94 @@
+{
+ "note": "provenance of every asset this archive PUBLISHES. `licence` is a statement about rights, `hand` about authorship; ruling 3 refuses a guess in either. A file present in site/ but untracked is not published and is not listed here — arda_traced.svg is the case that matters.",
+ "assets": [
+  {
+   "file": "arda_map.png",
+   "what": "The archive's own map of Arda, raster",
+   "hand": "the archive",
+   "licence": "own work — drawn by this archive's own generators from the corpus",
+   "source": "map/gen_map.py"
+  },
+  {
+   "file": "arda_map.svg",
+   "what": "The archive's own map of Arda, vector",
+   "hand": "the archive",
+   "licence": "own work — drawn by this archive's own generators from the corpus",
+   "source": "map/gen_map.py"
+  },
+  {
+   "file": "arda_map_medium.png",
+   "what": "The same map at medium resolution",
+   "hand": "the archive",
+   "licence": "own work — drawn by this archive's own generators from the corpus",
+   "source": "map/gen_map.py"
+  },
+  {
+   "file": "arda_ref.png",
+   "what": "The archive's redrawn reference sheet, raster",
+   "hand": "the archive",
+   "licence": "own work — drawn by this archive's own generators from the corpus",
+   "source": "map/gen_ref.py"
+  },
+  {
+   "file": "arda_ref.svg",
+   "what": "The archive's redrawn reference sheet, vector",
+   "hand": "the archive",
+   "licence": "own work — drawn by this archive's own generators from the corpus",
+   "source": "map/gen_ref.py"
+  },
+  {
+   "file": "arda_ref_medium.png",
+   "what": "The reference sheet at medium resolution",
+   "hand": "the archive",
+   "licence": "own work — drawn by this archive's own generators from the corpus",
+   "source": "map/gen_ref.py"
+  },
+  {
+   "file": "qa_south.png",
+   "what": "A rendering check of the southern sheet",
+   "hand": "the archive",
+   "licence": "own work — drawn by this archive's own generators from the corpus",
+   "source": "map/qa tooling"
+  },
+  {
+   "file": "ref_hinge.png",
+   "what": "The hinge between the two joined reference sheets",
+   "hand": "the archive",
+   "licence": "own work — drawn by this archive's own generators from the corpus",
+   "source": "map/gen_ref.py"
+  },
+  {
+   "file": "valinor.svg",
+   "what": "Aman, drawn from the corpus and labelled as ours",
+   "hand": "the archive",
+   "licence": "own work — drawn by this archive's own generators from the corpus",
+   "source": "map/gen_valinor.py"
+  },
+  {
+   "file": "base_map.jpeg",
+   "what": "The base map of Arda, full size",
+   "hand": "the owner",
+   "licence": "own work — the owner's, in his own words: “the map is my own work”"
+  },
+  {
+   "file": "map_1366.jpeg",
+   "what": "The same base map at 1366px",
+   "hand": "the owner",
+   "licence": "own work — the owner's; one image at two sizes, correlation 0.9999"
+  },
+  {
+   "file": "icon-192.png",
+   "what": "The installable-app icon, 192px",
+   "hand": "the archive",
+   "licence": "own work — made by this archive during the heraldry hall work, 23 July",
+   "source": "its three colours ARE the archive's palette tokens: #c9a227 and #e2cf96 both appear in arda.css and heraldry.html"
+  },
+  {
+   "file": "icon-512.png",
+   "what": "The installable-app icon, 512px",
+   "hand": "the archive",
+   "licence": "own work — made by this archive during the heraldry hall work, 23 July",
+   "source": "as icon-192.png: same palette, same minute"
+  }
+ ]
+}
