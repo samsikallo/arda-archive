@@ -15,7 +15,7 @@
    "primary_text": true,
    "present": true,
    "corpus_file": "t1_k_the_road_goes_ever_on_a_song_cycle.txt",
-   "words": 0,
+   "words": 12976,
    "bytes": 7753269,
    "pages": 78
   },
@@ -47,9 +47,11 @@
    "file": "secondary sources/Pictures by J.R.R. Tolkien.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien, foreword & notes Christopher Tolkien (1979; 2nd ed. 1992)",
-   "note": "Wanted for its TEXT, not its plates: Christopher's notes date and place his father's drawings, which is primary evidence for the map work. The artwork ruling stands -- the archive draws its own and records whose hand the original was.",
-   "primary_text": false,
-   "present": false
+   "note": "Wanted for its TEXT, not its plates: Christopher's notes date and place his father's drawings, which is primary evidence for the map work. The artwork ruling stands -- the archive draws its own and records whose hand the original was. ARRIVED 2026-07-30 AT 23:38 WITH A CLEAN TEXT LAYER, 100pp, AND IT IS THE FIRST OF THE FOUR ART VOLUMES THAT CAN ACTUALLY BE READ. The Art of The Hobbit, The Art of The Fellowship of the Ring and Tolkien-Artwork are all image-only; this one carries Christopher's foreword and his notes dating and placing each picture, which is the half the artwork ruling permits and the half the archive wanted. It is an ePub conversion (its own front matter says so), which is why its text is clean where the scanned art books are not.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 4359883,
+   "pages": 100
   },
   {
    "file": "secondary sources/The Art of The Hobbit.pdf",
@@ -59,7 +61,7 @@
    "primary_text": false,
    "present": true,
    "corpus_file": "t2_the_art_of_the_hobbit.txt",
-   "words": 0,
+   "words": 20345,
    "bytes": 9217581,
    "pages": 145
   },
@@ -470,7 +472,7 @@
    "primary_text": false,
    "present": true,
    "corpus_file": "t2_the_art_of_the_fellowship_of_the_ring.txt",
-   "words": 193,
+   "words": 573,
    "bytes": 3413589,
    "pages": 102
   },
@@ -544,7 +546,7 @@
    "primary_text": false,
    "present": true,
    "corpus_file": "t3_tolkien_artwork.txt",
-   "words": 2,
+   "words": 81,
    "bytes": 2379703,
    "pages": 16
   },
@@ -1026,7 +1028,7 @@
    "present": true,
    "corpus_file": "t2_vinyar_tengwar_39.txt",
    "words": 0,
-   "bytes": 889546,
+   "bytes": 888189,
    "pages": 36
   },
   {
