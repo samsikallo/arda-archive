@@ -3856,7 +3856,7 @@
    "name_conf": "High",
    "notes": [
     "“Here the pass Cristhorn (‘Eagle’s Cleft’, later Cirith Thoronath) is shown to the south, as it was located originally in The Fall of Gondolin; but by the time of the drawing Tolkien had moved it in his text to the mountains north of the city.” — The Silmarillion, line 1486",
-    "indexed by Christopher Tolkien as: ‘Eagles’ Cleft’ in the Encircling Mountains about Gon­"
+    "indexed by Christopher Tolkien as: ‘Eagles’ Cleft’ in the Encircling Mountains about Gondolin"
    ],
    "parents": [],
    "place_conf": "High",
@@ -4374,7 +4374,7 @@
    "name_conf": "H",
    "notes": [
     "“Dor-Cúarthol, the Land of Bow and Helm, was in that time named all the region between Teiglin and the west march of Doriath; and Túrin named himself anew, Gorthol, the Dread Helm, and his heart was high again.” — The Silmarillion, line 9835",
-    "indexed by Christopher Tolkien as: ‘Land of Bow and Helm’, the country defended by",
+    "indexed by Christopher Tolkien as: ‘Land of Bow and Helm’, the country defended by Beleg and Túrin in the later legend",
     "Evidence Table B32"
    ],
    "parents": [],
@@ -4886,7 +4886,7 @@
    "name_conf": "High",
    "notes": [
     "“They came west after the Harfoots and followed the course of the Loudwater southwards; and there many of them long dwelt between Tharbad and the borders of Dunland before they moved north again.” — The Lord of the Rings, line 873",
-    "indexed by Christopher Tolkien as: Region in the west of the Misty Mountains, at first \\",
+    "indexed by Christopher Tolkien as: Region in the west of the Misty Mountains, at first called Westfold",
     "the middle of the shape the archive draws"
    ],
    "parents": [],
@@ -5545,7 +5545,7 @@
    "name_conf": "High",
    "notes": [
     "“Kôr in Tolkien’s early writings was both the city of the Elves in Eldamar and the hill on which it was built; in later accounts, it is called Tirion upon Túna.” — The Silmarillion, line 1126",
-    "indexed by Christopher Tolkien as: ‘Elvenhome’, land of the Eldar in Aman, and also a name"
+    "indexed by Christopher Tolkien as: ‘Elvenhome’, land of the Eldar in Aman, and also a name of their city (Tirion)"
    ],
    "parents": [],
    "place_conf": "High",
@@ -9622,7 +9622,7 @@
    "name_conf": "High",
    "notes": [
     "“In the ink drawing he removed the centre steps to include the bridge built by Túrin in the last days of Nargothrond, in form like the ‘slim and shapely slender archway’ over the Ingwil.” — The Silmarillion, line 1428",
-    "indexed by Christopher Tolkien as: Stream falling from the Hills of the Hunters into the Narog"
+    "indexed by Christopher Tolkien as: Stream falling from the Hills of the Hunters into the Narog at Nargothrond"
    ],
    "parents": [],
    "place_conf": "High",
@@ -11411,7 +11411,7 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared",
     "“As they descended the trees became ever more dense, especially along the Mering Stream (which rose in the cleft) and northwards out into the plain through which the Stream flowed into the Entwash.” — Unfinished Tales, line 9459",
-    "indexed by Christopher Tolkien as: The ‘Boundary-stream’ between Rohan and",
+    "indexed by Christopher Tolkien as: The ‘Boundary-stream’ between Rohan and Gondor",
     "the vector spec also lists it as “Mering Stream”, at the same place; one record, not two"
    ],
    "parents": [],
@@ -12683,24 +12683,39 @@
    ]
   },
   "nen girith": {
-   "ages": [],
+   "ages": [
+    "FA"
+   ],
    "cites": [
     "The Silmarillion, line 10441"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": 390,
+     "parent": "brethil",
+     "span": "F.A. c.390–501",
+     "to": 501,
+     "why": "within brethil, per Christopher Tolkien's index gloss [I-M]"
+    }
    ],
    "coords": [],
    "n": "Nen Girith",
    "name_conf": "High",
    "notes": [
     "“On the next day they bore her towards Ephel Brandir; but when they came to Dimrost, the Rainy Stair, where the tumbling stream of Celebros fell towards Teiglin, a great shuddering came upon her, wherefore afterwards that place was called Nen Girith, the Shuddering Water.” — The Silmarillion, line 10441",
-    "indexed by Christopher Tolkien as: ‘Shuddering Water’, name given to the falls of Celebros"
+    "indexed by Christopher Tolkien as: ‘Shuddering Water’, name given to the falls of Celebros in the Forest of Brethil",
+    "within brethil, per Christopher Tolkien's index gloss [I-M]",
+    "Ages taken from its realm brethil, having none of its own [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "brethil"
+   ],
    "place_conf": "High",
    "timeline": [],
    "types": [
     "NATURAL_FALLS"
-   ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   ]
   },
   "nen hithoel": {
    "ages": [],
@@ -15159,15 +15174,15 @@
   "taniquetil": {
    "ages": [],
    "cites": [
-    "The Silmarillion, line 1111",
+    "The Silmarillion, Valaquenta",
     "A Valaquenta, ch1"
    ],
    "coords": [],
    "n": "Taniquetil",
    "name_conf": "H",
    "notes": [
-    "“Its title contains linguistic roots from Tolkien’s ‘Elvish’ language Qenya (later Quenya) meaning ‘high, lofty’ and ‘white’, similar to the name ‘Taniquetil’ which we meet later.” — The Silmarillion, line 1111",
-    "indexed by Christopher Tolkien as: ‘High-Snow-Peak’, properly the highest peak of the",
+    "“Their halls are above the everlasting snow, upon Oiolosse, the uttermost tower of Taniquetil, tallest of all the mountains upon Earth.” — The Silmarillion, Valaquenta",
+    "indexed by Christopher Tolkien as: ‘High-Snow-Peak’, properly the highest peak of the mountain Oiolossë",
     "Evidence Table V3"
    ],
    "parents": [],
@@ -15182,7 +15197,8 @@
     }
    ],
    "types": [
-    "NATURAL_PEAK"
+    "NATURAL_PEAK",
+    "MAN_MADE_TOWER"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
@@ -15228,7 +15244,7 @@
    "name_conf": "High",
    "notes": [
     "“They passed Tarlang’s Neck and came into Lamedon; and the Shadow Host pressed behind and fear went on before them, until they came to Calembel upon Ciril, and the sun went down like blood behind Pinnath Gelin away in the West behind them.” — The Lord of the Rings, line 35337",
-    "indexed by Christopher Tolkien as: Pass between the White Mountains and an outly­"
+    "indexed by Christopher Tolkien as: Pass between the White Mountains and an outlying spur, west of Kiril"
    ],
    "parents": [],
    "place_conf": "High",
@@ -15357,7 +15373,7 @@
    "name_conf": "H",
    "notes": [
     "“By the arts of Felagund their own forms and faces were changed into the likeness of Orcs; and thus disguised they came far upon their northward road, and ventured into the western pass, between Ered Wethrin and the highlands of Taur-nu-Fuin.” — The Silmarillion, line 8307",
-    "indexed by Christopher Tolkien as: (also earlier Taur-na-Fuin) ‘The Forest under Night­",
+    "indexed by Christopher Tolkien as: (also earlier Taur-na-Fuin) ‘The Forest under Nightshade’",
     "Evidence Table B15"
    ],
    "parents": [],
@@ -16787,7 +16803,7 @@
    "name_conf": "H",
    "notes": [
     "“Kôr in Tolkien’s early writings was both the city of the Elves in Eldamar and the hill on which it was built; in later accounts, it is called Tirion upon Túna.” — The Silmarillion, line 1126",
-    "indexed by Christopher Tolkien as: The hill on which Tirion was built, but also often used of",
+    "indexed by Christopher Tolkien as: The hill on which Tirion was built, but also often used of the city itself",
     "Evidence Table V7"
    ],
    "parents": [],
