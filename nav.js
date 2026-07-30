@@ -33,7 +33,17 @@ const GROUPS=[
 ];
 const here=location.pathname.split("/").pop()||"index.html";
 const nav=document.getElementById("ardanav");if(!nav)return;
-let h='<a class="home" href="index.html">⌂ the archive</a>';
+/* A BASE PREFIX, DECLARED BY THE PAGE AND NEVER GUESSED FROM THE PATH. 580 of the archive's 613
+   published pages live in person/, place/ and realm/ -- the per-entity records -- and they carried NO
+   MENU AT ALL: a reader arriving from a search engine had two links, ../index.html and the hall page,
+   and no way to reach any other hall. Adding the menu there means every href must be relative to the
+   site root, because `href="map.html"` from person/adalgrim.html resolves to person/map.html.
+   The prefix is set by the page (`window.ARDA_BASE="../"`) rather than derived from
+   location.pathname, because the pathname depth differs between GitHub Pages (/arda-archive/…), a
+   local server (/…) and file:// -- three answers to a question the page already knows. Guessing it
+   would break the menu on exactly one of the three, and probably the published one. */
+const PRE=(typeof window!=="undefined"&&window.ARDA_BASE)||"";
+let h='<a class="home" href="'+PRE+'index.html">⌂ the archive</a>';
 GROUPS.forEach((g,gi)=>{
  const inHere=g[1].some(x=>x[0]===here);
  /* NO role="menu" AND NO role="menuitem", AND REMOVING THEM IS THE FIX, NOT AN OMISSION.
@@ -48,7 +58,7 @@ GROUPS.forEach((g,gi)=>{
     THE ARROW KEYS ARE THEN ADDED FOR REAL, below, so the affordance and the behaviour agree in
     the other direction too. */
  h+='<span class="grp"><button aria-expanded="false" aria-controls="a-g'+gi+'" '+(inHere?'class="here" ':'')+'data-g="'+gi+'">'+g[0]+' ▾</button><div class="menu" id="a-g'+gi+'">';
- g[1].forEach(x=>{h+='<a href="'+x[0]+'"'+(x[0]===here?' aria-current="page"':'')+'>'+x[1]+'<span class="sub2">'+x[2]+'</span></a>'});
+ g[1].forEach(x=>{h+='<a href="'+PRE+x[0]+'"'+(x[0]===here?' aria-current="page"':'')+'>'+x[1]+'<span class="sub2">'+x[2]+'</span></a>'});
  h+='</div></span>';
 });
 /* JUMP TO ANY PAGE FROM ANY HALL -- §7's "multi-hall contextual search", which was outstanding.
@@ -65,7 +75,7 @@ h+='<button id="a-theme" title="toggle dark theme" aria-label="toggle dark theme
 // breadcrumb
 let crumb="";
 GROUPS.forEach(g=>g[1].forEach(x=>{if(x[0]===here)crumb=g[0]+" › "+x[1]}));
-if(here!=="index.html"&&crumb)h+='<span id="a-crumb"><a href="index.html">⌂ the archive</a> › '+crumb+'</span>';
+if(here!=="index.html"&&crumb)h+='<span id="a-crumb"><a href="'+PRE+'index.html">⌂ the archive</a> › '+crumb+'</span>';
 nav.innerHTML=h;
 // dropdown behavior (click + keyboard, close on outside/Esc)
 nav.querySelectorAll(".grp>button").forEach(b=>{
@@ -144,7 +154,7 @@ if(_J&&_JR){
   for(let cut=1;cut<=2&&!_hits.length&&q.length-cut>=4;cut++) _hits=rank(q.slice(0,-cut));
   if(!_hits.length){_JR.innerHTML='<div class="none">nothing in any hall answers to that</div>';
    _JR.classList.add("on");_J.setAttribute("aria-expanded","true");return}
-  _JR.innerHTML=_hits.map((r,i)=>'<a role="option" id="a-jo'+i+'" aria-selected="'+(i===_sel)+'" href="'+r.href+'">'+r.label+'<span class="jh">'+r.hall+'</span></a>').join("");
+  _JR.innerHTML=_hits.map((r,i)=>'<a role="option" id="a-jo'+i+'" aria-selected="'+(i===_sel)+'" href="'+PRE+r.href+'">'+r.label+'<span class="jh">'+r.hall+'</span></a>').join("");
   _JR.classList.add("on");_J.setAttribute("aria-expanded","true");
  };
  const _mark=()=>{[..._JR.querySelectorAll('[role="option"]')].forEach((e,i)=>{
