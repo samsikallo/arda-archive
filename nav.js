@@ -2,39 +2,35 @@
 // current-page highlight, breadcrumb, keyboard shim for legacy widgets, theme toggle.
 (function(){
 const GROUPS=[
-  // Three of these used to be separate halls -- the living map, the turning ages, the
- // redrawn base. They were retired into tombstones and every link repointed onto the
- // Map, which was right; but the repointing left the NAV offering all three as if they
- // were still distinct places to go -- four entries, every one landing on map.html. A
- // menu that lists one destination four times under four names is not a menu.
- ["Atlas",[["map.html","the map of Arda","every feature answers \u2014 hover, click, the record"],
+  ["Peoples & Living Beings",[["genealogy.html","family trees","439 figures, all houses"],
+   ["character.html","records","a page for every person"],
+   ["population_dashboard.html","peoples","demography of Arda"],
+   ["ainur.html","the Ainur","the Valar and the Maiar"],
+   ["living.html","living things","herbarium and bestiary"]]],
+  ["Places & Realms",[["map.html","the map of Arda","every feature answers \u2014 hover, click, the record"],
    ["valinor.html","Aman","drawn from the corpus \u2014 the archive's own work, not Tolkien's hand"],
    ["realms.html","realms","the political atlas \u2014 60 polities"],
    ["gazetteer.html","gazetteer","every named place, by age and kind"],
    ["place.html","a place in full","one place, everything the corpus gives it"],
-   ["cosmology.html","cosmology","the shape of the world itself"]]],
- ["Chronicle",[["arda_timeline.html","timeline","all of history, zoomable"],
-   ["reckoning.html","reckonings","calendars, dates & measures"],
-   ["annals.html","annals of the archive","what's new on this site"]]],
- ["People",[["genealogy.html","family trees","439 figures, all houses"],
-   ["character.html","records","a page for every person"],
-   ["population_dashboard.html","peoples","demography of Arda"]]],
- ["Culture",[["languages.html","tongues & letters","lexicon, scripts, name-craft"],
-   ["poems.html","verse","35 songs & lays, verbatim"],
-   ["artifacts.html","artifacts","20 treasures, chain of custody"],
+   ["gondolin.html","houses of Gondolin","the twelve kindreds & their heraldry"]]],
+  ["Items & Artefacts",[["artifacts.html","artifacts","20 treasures, chain of custody"],
    ["heraldry.html","hall of heraldry","every device + a device-forge"],
-   ["gondolin.html","houses of Gondolin","the twelve kindreds & their heraldry"],
-   ["gallery.html","gallery","armour & weapon plates"],
-   ["ainur.html","the Ainur","the Valar and the Maiar"],
+   ["gallery.html","gallery","armour & weapon plates"]]],
+  ["Languages & Writings",[["languages.html","tongues & letters","lexicon, scripts, name-craft"],
+   ["poems.html","verse","35 songs & lays, verbatim"]]],
+  ["History & Timelines",[["arda_timeline.html","timeline","all of history, zoomable"],
+   ["reckoning.html","reckonings","calendars, dates & measures"],
+   ["annals.html","annals of the archive","what's new on this site"],
+   ["armies_dashboard.html","armies","30 campaigns, animated maps"]]],
+  ["Lore & Concepts",[["cosmology.html","cosmology","the shape of the world itself"],
    ["oaths.html","binding words","oaths, dooms, curses, prophecies"],
-   ["living.html","living things","herbarium and bestiary"]]],
- ["War",[["armies_dashboard.html","armies","30 campaigns, animated maps"]]],
- ["Tools",[["registers.html","registers","what the archive holds, and on whose authority"],
-   ["corpus.html","the corpus","28 volumes, concordance, queries"],
-   ["quiz.html","the trial","test your lore"],
-   ["tours.html","tours","guided roads through the halls"],
+   ["silences.html","the silences","what the corpus does not say"]]],
+  ["Encyclopedia / Lexicon",[["corpus.html","the corpus","28 volumes, concordance, queries"],
+   ["registers.html","registers","what the archive holds, and on whose authority"],
    ["compare.html","side by side","two lives or two battles"],
-   ["silences.html","the silences","what the corpus does not say"]]]];
+   ["quiz.html","the trial","test your lore"],
+   ["tours.html","tours","guided roads through the halls"]]],
+];
 const here=location.pathname.split("/").pop()||"index.html";
 const nav=document.getElementById("ardanav");if(!nav)return;
 let h='<a class="home" href="index.html">⌂ the archive</a>';
