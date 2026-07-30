@@ -50,6 +50,8 @@
    "note": "Wanted for its TEXT, not its plates: Christopher's notes date and place his father's drawings, which is primary evidence for the map work. The artwork ruling stands -- the archive draws its own and records whose hand the original was. ARRIVED 2026-07-30 AT 23:38 WITH A CLEAN TEXT LAYER, 100pp, AND IT IS THE FIRST OF THE FOUR ART VOLUMES THAT CAN ACTUALLY BE READ. The Art of The Hobbit, The Art of The Fellowship of the Ring and Tolkien-Artwork are all image-only; this one carries Christopher's foreword and his notes dating and placing each picture, which is the half the artwork ruling permits and the half the archive wanted. It is an ePub conversion (its own front matter says so), which is why its text is clean where the scanned art books are not.",
    "primary_text": true,
    "present": true,
+   "corpus_file": "t2_pictures_by_j_r_r_tolkien.txt",
+   "words": 7123,
    "bytes": 4359883,
    "pages": 100
   },
@@ -69,9 +71,11 @@
    "file": "secondary sources/The Art of The Lord of the Rings.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien, ed. Wayne G. Hammond & Christina Scull (2015)",
-   "note": "As Pictures. Carries Tolkien's own working maps and the note-sheets behind them, which the gazetteer's coordinates are measured against.",
+   "note": "As Pictures. Carries Tolkien's own working maps and the note-sheets behind them, which the gazetteer's coordinates are measured against. ARRIVED 2026-07-31 AND IS THE LAST OF THE SIX DECLARED ABSENCES TO BE FILLED. 118 pages at 1822x2436 pt -- a large-format plate book, 87.5 MB, AND AN IMAGE-ONLY SCAN, so it joins the OCR queue rather than the readable shelf. Of the four art volumes the archive now holds, only Pictures by J.R.R. Tolkien came with a text layer; the other three are scans, which is what an art book usually is and why the captions -- the half the artwork ruling permits -- are the hardest half to obtain. EXTRACTION: SILENTLY MISSING until its OCR lands.",
    "primary_text": false,
-   "present": false
+   "present": true,
+   "bytes": 91740393,
+   "pages": 118
   },
   {
    "file": "(A) The Silmarillion.pdf",
@@ -735,11 +739,11 @@
    "file": "Parma Eldalamberon 17.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien, ed. Christopher Gilson (2007)",
-   "note": "Words, Phrases and Passages in Various Tongues in The Lord of the Rings — Tolkien's own late commentary on every scrap of Elvish in the book, and the single most important linguistic source outside the Etymologies. THIS REGISTER NAMED IT AS THE CHIEF ABSENCE and it is now held. EXTRACTION: SILENTLY MISSING -- an image-only scan, 221pp, no text layer on any page sampled. The most wanted volume on this shelf is held and unreadable, and that is the plainest statement of where §1 actually stands.",
+   "note": "Words, Phrases and Passages in Various Tongues in The Lord of the Rings — Tolkien's own late commentary on every scrap of Elvish in the book, and the single most important linguistic source outside the Etymologies. THIS REGISTER NAMED IT AS THE CHIEF ABSENCE and it is now held. EXTRACTION: OCR-DERIVED, 123,801 words at 300 dpi, 2026-07-31. The most wanted volume on this shelf is readable at last -- and the archive can now say exactly how far to trust it, because it holds an INDEPENDENT CLEAN CONTROL for this one volume. GIRAUDEAU'S TWO DERIVED INDICES (t3) list 474 distinct Quenya headwords drawn from PE17, each carrying a [PE17:page] citation -- 3,256 citations reaching 176 of these 221 pages. Checking them against the OCR splits exactly along the diacritic: PLAIN FORMS 215 of 364 survive (59.1%); ACCENTED FORMS 10 of 110 (9.1%). A 6.5x difference, measured against somebody else's clean text rather than against my own sample of VT39. Anduril, Elentari, Endore, Finarato, Lorien, Melcore and Poldorea are all listed by Giraudeau and all lost here. SO THE DERIVED INDEX CAN RESCUE THE SOURCE IT WAS DERIVED FROM: he supplies the correct spelling AND the page it stands on, which is a repair route this shelf did not have before both volumes were held. Until that repair is made and checked, this file is commentary and not orthography.",
    "primary_text": true,
    "present": true,
    "corpus_file": "t2_parma_eldalamberon_17.txt",
-   "words": 0,
+   "words": 123851,
    "bytes": 8109681,
    "pages": 221
   },
@@ -747,11 +751,11 @@
    "file": "Parma Eldalamberon 23.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien, ed. Elvish Linguistic Fellowship",
-   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan, 152pp and 143 MB, no text layer on pages 1, 10, 50 or 100. THE ARCHIVE CANNOT SAY WHAT IS IN IT. It is held, it is a genuine issue of the modern series, and every further description would be a guess -- so this entry makes none.",
+   "note": "IT IS 'THE FEANORIAN ALPHABET' (parts 1 and 2) AND 'ELDARIN PERSONAL PRONOUNS', both by Tolkien, edited by Arden R. Smith and Christopher Gilson -- established 2026-07-31 from the volume's own running heads after OCR, and NOT from anybody's memory. This entry previously read 'THE ARCHIVE CANNOT SAY WHAT IS IN IT ... every further description would be a guess', which was the right thing to write while it was a 152-page scan with no text layer. IT SERVES TWO HALLS AT ONCE and that is unusual: the Feanorian Alphabet is writing-systems material -- the volume opens with tengwar mode charts, one captioned 'Beleriandic Mode' -- and Eldarin Personal Pronouns is grammar. Its own numbers say the same: 284 hits for 'verb', 169 for 'consonant', 137 for 'Quenya'. EXTRACTION: OCR-DERIVED, 73,539 words at 300 dpi. The tengwar charts survive as noise, necessarily -- a scan of a non-Latin script read by a Latin-script engine -- so the CHARTS are evidence that material is there and are not themselves readable.",
    "primary_text": true,
    "present": true,
    "corpus_file": "t2_parma_eldalamberon_23.txt",
-   "words": 0,
+   "words": 73589,
    "bytes": 150123092,
    "pages": 152
   },
@@ -787,7 +791,7 @@
    "primary_text": true,
    "present": true,
    "corpus_file": "t2_vinyar_tengwar_24.txt",
-   "words": 0,
+   "words": 15921,
    "bytes": 8519943,
    "pages": 40
   },
@@ -799,7 +803,7 @@
    "primary_text": true,
    "present": true,
    "corpus_file": "t2_vinyar_tengwar_25.txt",
-   "words": 0,
+   "words": 11705,
    "bytes": 9732600,
    "pages": 28
   },
