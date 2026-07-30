@@ -72,9 +72,9 @@ canvas{border:1px solid var(--line);border-radius:8px;background:#e8dfc8;max-wid
 </div>
 
 <div class="pane" id="p-atlas">
- <div class="cite">The living map's thirteen slices of time, worn as political skins. Every border carries the confidence the corpus allows it — click any territory for its dossier. Schematic where the sources are schematic; never sharper than Tolkien drew.</div>
+ <div class="cite" id="atlaslegend">The living map's thirteen slices of time, worn as political skins. Every border carries the confidence the corpus allows it — click any territory for its dossier. Schematic where the sources are schematic; never sharper than Tolkien drew.</div>
  <div id="slicechips" style="margin:6px 0"></div>
- <div class="strip"><canvas id="atlas" width="1180" height="648"></canvas></div>
+ <div class="strip"><canvas id="atlas" width="1180" height="648" role="img" aria-label="The realms atlas: Middle-earth's political borders, drawn for one of thirteen dated slices" aria-describedby="atlaslegend atlasread"></canvas></div>
  <div class="cite" id="atlasread" style="min-height:1.4em"></div>
 </div>
 
@@ -151,8 +151,8 @@ window.openR=function(id,scroll=true){
    +'">\u2295 see it on the map</a>';
  h+='<h4 class="sec">Phases</h4>'+P.phases.map(f=>'<div class="phase"><b>'+esc(f[0])+'</b> — '+esc(f[1])+' <span class="cite">'+esc(f[2])+'</span></div>').join("");
  // map panel
- if(P.poly&&LM){h+='<h4 class="sec">Territory through time</h4><div class="cite">borders from the Living Map\'s registered polygons; confidence as stated per border. Slices:</div><div id="dslice">'+
-  Object.keys(P.poly).map((s,i)=>'<span class="chip'+(i===0?' on':'')+'" data-s="'+s+'">'+esc(LM.slices.find(x=>x.id===s).label)+'</span>').join("")+'</div><div class="map2"><canvas id="mini" width="460" height="300"></canvas><div style="flex:1;min-width:220px" id="mininote"></div></div>'}
+ if(P.poly&&LM){h+='<h4 class="sec">Territory through time</h4><div class="cite" id="minilegend">borders from the Living Map\'s registered polygons; confidence as stated per border. Slices:</div><div id="dslice">'+
+  Object.keys(P.poly).map((s,i)=>'<span class="chip'+(i===0?' on':'')+'" data-s="'+s+'">'+esc(LM.slices.find(x=>x.id===s).label)+'</span>').join("")+'</div><div class="map2"><canvas role="img" aria-label="Registered border polygons for the selected slice" aria-describedby="minilegend mininote" id="mini" width="460" height="300"></canvas><div style="flex:1;min-width:220px" id="mininote"></div></div>'}
  else h+='<div class="refnote">No canonical border is drawable for this polity — the corpus gives seats and reach, not lines on a map. What it does give stands below; nothing sharper is invented.</div>';
  // section filter
  const secs=Object.keys(SEC).filter(k=>P.D[k]);
