@@ -104,7 +104,7 @@ let LM=null; // livingmap
 fetch("arda_livingmap.json").then(r=>r.json()).then(j=>{LM=j;if(location.hash)route();drawAtlas();});
 const IMG=new Image();IMG.src="map_1366.jpeg";IMG.onload=()=>{drawAtlas();};
 let IMGHI=null;function hiRes(cb){if(IMGHI&&IMGHI.complete){if(cb)cb();return}
- if(!IMGHI){IMGHI=new Image();IMGHI.src="downloaded_map.jpeg";IMGHI.onload=()=>{if(cb)cb()}}else if(cb)IMGHI.addEventListener("load",cb,{once:true})}
+ if(!IMGHI){IMGHI=new Image();IMGHI.src="base_map.jpeg";IMGHI.onload=()=>{if(cb)cb()}}else if(cb)IMGHI.addEventListener("load",cb,{once:true})}
 
 /* piecewise time scale for the gantt */
 const SEG=[[-4800,0,0,.14],[0,590,.14,.34],[590,4031,.34,.60],[4031,7052,.60,.92],[7052,7180,.92,1]];
