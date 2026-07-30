@@ -104,7 +104,36 @@ function eraStr(abs){if(abs<0)return "Y.T. "+Math.round(1500+abs/9.582);if(abs<5
 function init(){
  // shelf
  const maxw=Math.max(...CI.map(v=>v.words));
- const topFor=id=>Object.entries(CC).map(([n,e])=>[n,e.d[id]||0,e.u]).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]).slice(0,10);
+ // ONE ROW PER NAME, NOT PER CLAIMANT. This listed every concordance entry separately and
+ // showed its count as that person's, so "Aragorn I — 2960 mentions" sat beside "Aragorn II
+ // Elessar — 2960 mentions" and the obscure tenth King of Arnor could outrank the King of
+ // the Reunited Kingdom, because THE TWO COUNTS ARE THE SAME NUMBER and the sort had no way
+ // to break the tie. Frodo Gardner did the same to Frodo Baggins. The owner found both.
+ //
+ // THE DATA WAS NEVER WRONG AND SAID SO IN WRITING. gen_concord.py counts a bare-name probe
+ // ("aragorn", "frodo"), gives every claimant that probe's count, and attaches `amb` naming
+ // the rivals plus `amb_note`: "the count belongs to the NAME, not to this person, and no
+ // rule here can divide it." 90 of 935 entries carry it. This page read `d` and `u` and threw
+ // the ambiguity away -- so an honest dataset was rendered as a false claim about a person.
+ // That is the week's pattern once more, and this time the proxy was in the VIEW: a per-person
+ // row is not a per-person measurement.
+ //
+ // So rows are keyed on `probe`. A name with one claimant reads as before. A shared name reads
+ // as a name, links each claimant, and repeats the dataset's own refusal to divide the count.
+ const topFor=id=>{
+  const byProbe=new Map();
+  for(const [n,e] of Object.entries(CC)){
+   const c=e.d[id]||0; if(!c) continue;
+   const p=e.probe||n;
+   if(!byProbe.has(p)) byProbe.set(p,{n:c,who:[]});
+   byProbe.get(p).who.push([n,e.u]);
+  }
+  return [...byProbe.entries()]
+   // Tie-break on the name so the order is stable between reloads; identical counts are the
+   // normal case here, not the exception.
+   .sort((a,b)=>b[1].n-a[1].n || a[0].localeCompare(b[0]))
+   .slice(0,10);
+ };
  $("#shelf").innerHTML=CI.map(v=>{
   const top=topFor(v.id);
   return '<div class="card"><h3>'+esc(v.t)+'</h3>'+
@@ -113,7 +142,18 @@ function init(){
   '<details><summary>'+((v.nheads||v.heads.length)>v.heads.length
      ?(v.nheads+' divisions — first '+v.heads.length+' shown')
      :(v.heads.length+' divisions'))+'</summary><div class="heads">'+v.heads.map(esc).join("<br>")+'</div></details>'+
-  (top.length?'<details><summary>who lives here — top entities</summary>'+top.map(t=>'<div class="res"><a href="'+t[2]+'">'+esc(t[0])+'</a> — '+t[1]+' mention'+(t[1]>1?'s':'')+'</div>').join("")+'</details>':'')+
+  (top.length?'<details><summary>who lives here — top names</summary>'+top.map(([probe,r])=>{
+     const n=r.n+' mention'+(r.n>1?'s':'');
+     if(r.who.length===1) return '<div class="res"><a href="'+r.who[0][1]+'">'+esc(r.who[0][0])+'</a> — '+n+'</div>';
+     // THE PROBE IS NORMALISED, SO IT IS NOT SPELLABLE. Printing it raw gave "frodo" and
+     // "aragorn" in lower case, and would have given "turin" for Túrin -- the normaliser strips
+     // diacritics. Take the same number of leading words from a claimant's real label instead,
+     // so the archive's own spelling is what appears.
+     const shown=r.who[0][0].split(/\s+/).slice(0,probe.split(/\s+/).length).join(' ');
+     return '<div class="res"><b>'+esc(shown)+'</b> — '+n+' of this <i>name</i>, shared by '
+       +r.who.map(w=>'<a href="'+w[1]+'">'+esc(w[0])+'</a>').join(' and ')
+       +'. <span class="cite">The count belongs to the name; the corpus does not divide it.</span></div>';
+   }).join("")+'</details>':'')+
   '</div>'}).join("");
  // concordance
  $("#cq").addEventListener("input",()=>{
