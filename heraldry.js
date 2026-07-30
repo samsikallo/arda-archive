@@ -1440,9 +1440,25 @@ window.ardaForgeLayers=function(list,cx,cy,R,col,shape,opt){
   // to say so. ox and oy are fractions of R, positive right and down.
   // NOTE fit: is measured from the TRUE centre, before this move.
   if(GRADS){ out=out.slice(0,MARK)+'<defs>'+GRADS+'</defs>'+out.slice(MARK); GRADS=""; }
-  if(L.ox||L.oy){
+  // ox AND oy MAY BE PER-GLYPH ARRAYS, AND THIS BLOCK READ THEM AS ONE NUMBER.
+  // The comment fifty lines above documents the array form in its own example --
+  // {t:"glyph",n:3,k:["lambe","ando","lambe"],ox:[-0.46,0,0.46]} -- and the glyph layer
+  // consumes it correctly through V("ox",gi,0), which indexes per glyph. This later block
+  // multiplied the whole value by R, and an array times a number is NaN, so it emitted
+  // transform="translate(NaN,NaN)" and the browser rejected the attribute outright:
+  //     Error: <g> attribute transform: Expected number, "translate(NaN,NaN)".
+  // FOUND ON genealogy.html, in symbol#em-stewardseal -- the Seal of the Stewards, whose spec
+  // carries TWO glyph layers with ox/oy arrays for R·ND·R, which is exactly the two NaN
+  // elements measured on the page. It was not found by reading this file; it was found because
+  // a probe of a DIFFERENT fault happened to log the console, and it had been live long enough
+  // that nothing in the suite reads console output on that page.
+  // A COURSE OFFSET IS A SINGLE NUMBER BY DEFINITION -- it moves the whole course -- so a
+  // non-number here is a per-glyph offset that has already been applied, and skipping it is
+  // correct rather than merely safe.
+  var cox=(typeof L.ox==="number")?L.ox:0, coy=(typeof L.oy==="number")?L.oy:0;
+  if(cox||coy){
    var moved=out.slice(MARK);
-   out=out.slice(0,MARK)+'<g transform="translate('+F((L.ox||0)*R)+','+F((L.oy||0)*R)+')">'+
+   out=out.slice(0,MARK)+'<g transform="translate('+F(cox*R)+','+F(coy*R)+')">'+
        moved+'</g>';
   }
  });
