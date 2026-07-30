@@ -256,6 +256,46 @@ try:
 except Exception as _e6:
     print("audit claims: could not run - %s" % str(_e6)[:60])
 
+# THE TOTAL RATCHETED DEBT, ON ONE LINE, ON THE OWNER'S RULING (30 July 2026).
+#
+# Six guards now PASS while holding a known, deliberately-unrepaired count: alias_check 5 alias/record
+# collisions, datecite_check 83 timeline rows dated to text that carries no date, worknote_check 16
+# unpublished generator work-list rows. That ratchet pattern is the owner's own and it is right --
+# turning a hundred live findings red would halt every repair including the repairs to them. But SIX
+# GUARDS EACH PRINTING "OK" WILL EVENTUALLY BE READ AS "THE ARCHIVE IS CLEAN", which is this archive's
+# oldest failure mode arriving through the reporting rather than the code.
+#
+# THE NUMBERS ARE READ FROM THE GUARDS, NEVER RESTATED HERE. A total typed into this file would drift
+# out of step with the constants it summarises, and then the summary would be the lie. Each guard's
+# module is imported and its own constant asked for; a guard that cannot be imported is NAMED as
+# unknown rather than counted as zero, because a debt nobody could read is not a debt of nothing.
+_debt, _debt_unknown = [], []
+try:
+    import importlib, os as _dos, sys as _dsys
+    _dsys.path.insert(0, _dos.path.join(_dos.path.dirname(_dos.path.abspath(__file__)), "..", "map"))
+    for _mod, _const, _what in (("alias_check", "ALIAS_DEBT", "alias/record collisions"),
+                                ("datecite_check", "TIMELINE_DEBT", "timeline rows dated to dateless text"),
+                                ("datecite_check", "DATECITE_DEBT", "notes dated to dateless text"),
+                                ("worknote_check", "WORKNOTE_DEBT", "citations reading as a working note"),
+                                ("worknote_check", "DEAD_ROW_DEBT", "unpublished generator work-list rows"),
+                                ("citeline_check", "STALE_DEBT", "citations naming a line that does not hold them")):
+        try:
+            _m = importlib.import_module(_mod)
+            _n = getattr(_m, _const)
+            if _n:
+                _debt.append((_n, _what))
+        except Exception:
+            _debt_unknown.append("%s.%s" % (_mod, _const))
+except Exception as _de:
+    _debt_unknown.append("could not load the guards (%s)" % str(_de)[:40])
+if _debt or _debt_unknown:
+    _tot = sum(n for n, _w in _debt)
+    print("ratcheted debt: %d known and unrepaired — %s%s"
+          % (_tot, "; ".join("%d %s" % (n, w) for n, w in sorted(_debt, reverse=True)),
+             ("; UNREADABLE: " + ", ".join(_debt_unknown)) if _debt_unknown else ""))
+    print("                these are held by ratchets, not fixed. A green suite means no guard "
+          "FAILED, not that the archive is clean.")
+
 _failed = bad or _ifail or _jsfail or _sfail or _mfail or _qfail or _afail
 print("checked",len(pages),"pages,",len(glob.glob('*.json')),"datasets —",
       "FAIL" if _failed else ("OK" if not _skipped else
