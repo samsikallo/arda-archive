@@ -59,13 +59,37 @@ function lightbox(){document.getElementById("out").querySelectorAll("img").forEa
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){const L=document.getElementById("lb");if(L)L.style.display="none"}});
 
 let A=[],mode="all";
+/* THE ISTARI ARE A SECTION OF THEIR OWN BENEATH THE MAIAR, at the owner's instruction.
+   THE MEMBERSHIP IS A FIELD, NOT A STRING MATCH, and that is the whole reason this works.
+   Four of the five say "Istari" somewhere in `dom` or `note`; AIWENDIL DOES NOT -- his reads
+   "beasts and birds; chosen by Yavanna" -- so a grep for the word would have quietly built an
+   Order of four wizards and looked right. arda_ainur.json now carries `istar`: 1-5, in the
+   corpus's own sequence: "Of these Curunír was the eldest and came first, and after him came
+   Mithrandir and Radagast, and others of the Istari who went into the east of Middle-earth"
+   (The Silmarillion, Of the Rings of Power and the Third Age).
+   CURUMO IS RANKED `corrupted` AND STILL BELONGS HERE. Grouping on rank alone would have put
+   Saruman under "Those that fell" and left an Order of four -- wrong about the Order and no more
+   right about him. He appears among the Istari and his card still prints his rank, so the fall
+   is not hidden; and the "those that fell" filter still finds him, because that filter reads
+   rank. Nothing is lost by his being in one place.
+   Keys are decades so a group can be inserted between two others without renumbering, and the
+   sort below is NUMERIC for the same reason: a string sort puts "10" before "2". */
 const ORDER={"Aratar":0,"Vala":1,"Valië":2,"Maia":3,"corrupted":4};
-const GROUP={0:"The Aratar — the eight of chief reverence",1:"The Valar",
- 2:"The Valier — the Queens of the Valar",3:"The Maiar",4:"Those that fell"};
+const ISTARI_G=35;
+const GROUP={0:"The Aratar — the eight of chief reverence",10:"The Valar",
+ 20:"The Valier — the Queens of the Valar",30:"The Maiar",
+ 35:"The Istari — the Order of Wizards, reckoned among the Maiar",40:"Those that fell"};
+/* The heading above is a name; this is the passage that licenses it. */
+const ISTARI_CITE='&ldquo;there appeared in the west of Middle-earth the Istari, whom Men '
+ +'called the Wizards &hellip; it was said among the Elves that they were messengers sent by '
+ +'the Lords of the West to contest the power of Sauron&rdquo; &mdash; <i>The Silmarillion</i>, '
+ +'Of the Rings of Power and the Third Age';
+const groupOf=x=>x.istar?ISTARI_G:(ORDER[x.rank]==null?30:ORDER[x.rank]*10);
 fetch("arda_ainur.json").then(r=>r.json()).then(j=>{A=j;build();});
 function build(){
  const bar=document.getElementById("bar");
- [["all","all thirty"],["Aratar","the Aratar"],["Maia","the Maiar"],["corrupted","those that fell"]]
+ [["all","all thirty"],["Aratar","the Aratar"],["Maia","the Maiar"],["Istari","the Istari"],
+  ["corrupted","those that fell"]]
   .forEach(([k,l])=>{const c=document.createElement("span");c.className="chip"+(k===mode?" on":"");
    c.textContent=l;c.onclick=()=>{mode=k;[...bar.querySelectorAll(".chip")].forEach(x=>x.classList.remove("on"));
     c.classList.add("on");draw()};bar.appendChild(c)});
@@ -75,11 +99,16 @@ function build(){
 }
 function draw(){
  const q=nrm((document.getElementById("q")||{}).value||"");
- const rows=A.filter(x=>(mode==="all"||x.rank===mode)&&(!q||nrm(JSON.stringify(x)).includes(q)));
- const by={};rows.forEach(x=>{const g=ORDER[x.rank]==null?3:ORDER[x.rank];(by[g]=by[g]||[]).push(x)});
+ const rows=A.filter(x=>(mode==="all"||(mode==="Istari"?!!x.istar:x.rank===mode))
+   &&(!q||nrm(JSON.stringify(x)).includes(q)));
+ const by={};rows.forEach(x=>{(by[groupOf(x)]=by[groupOf(x)]||[]).push(x)});
  let h="";
- Object.keys(by).sort().forEach(g=>{
-  h+='<div class="sec">'+GROUP[g]+'<span class="n">'+by[g].length+'</span></div><div class="grid">';
+ Object.keys(by).map(Number).sort((a,b)=>a-b).forEach(g=>{
+  // Within the Order, the corpus's sequence rather than the file's.
+  if(g===ISTARI_G)by[g].sort((a,b)=>a.istar-b.istar);
+  h+='<div class="sec">'+GROUP[g]+'<span class="n">'+by[g].length+'</span></div>'
+    +(g===ISTARI_G?'<div class="cite" style="margin:-2px 0 8px">'+ISTARI_CITE+'</div>':'')
+    +'<div class="grid">';
   h+=by[g].map(x=>{
    const spouse=x.sp?A.find(y=>y.id===x.sp):null;
    return '<div class="card"><h3>'+esc(x.n)+'</h3>'

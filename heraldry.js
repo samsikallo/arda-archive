@@ -67,7 +67,27 @@ window.ardaHeraldCredits=function(){var seen={},rows=[],changed=[];
  return out;};
 // ===== end of the credit line =====
 
-window.ardaSwapAllEmblems=function(){var NS="http://www.w3.org/2000/svg";var anyDefs=document.querySelector("defs");
+// THE EMBLEM SPRITE IS THE DEFS THAT HOLDS EMBLEMS, NOT THE FIRST DEFS IN THE DOCUMENT.
+// This read `document.querySelector("defs")` and was correct only by an accident of ordering:
+// the sprite is appended with insertAdjacentHTML("beforeend"), so it is LAST in the body, and
+// it won the query only because no earlier element happened to own a <defs>.
+//
+// On 30 July the armies dashboard was fixed so its battle map draws its full terrain on first
+// paint, which made beautify() insert <defs id="terraindefs"> into #bmap -- at line 73, far
+// ahead of the sprite. querySelector("defs") then returned the BATTLE MAP's terrain defs, and
+// this function appended all 121 heraldic devices to it, forge-rendering the ones without a
+// file. Measured in headless chromium: defs#terraindefs went from 900 bytes to 241,909 on load,
+// and a reader clicking any battle wiped it back to 900 because drawMap clears the svg. So the
+// first view of the hall carried a quarter-megabyte of invisible coats of arms inside a map of
+// the Pelennor, and every later view did not.
+//
+// "The first defs" is a PROXY for "the sprite". The sprite is identifiable by the thing itself:
+// it is the defs containing symbols named em-*. Ask that. The fallback to the first defs keeps
+// the old behaviour on any page whose sprite is genuinely empty, so this cannot be a regression.
+window.ardaSwapAllEmblems=function(){var NS="http://www.w3.org/2000/svg";
+ var _all=document.querySelectorAll("defs"),anyDefs=null;
+ for(var _i=0;_i<_all.length;_i++){if(_all[_i].querySelector('symbol[id^="em-"]')){anyDefs=_all[_i];break;}}
+ if(!anyDefs)anyDefs=_all[0]||null;
  function set(symKey,srcKey){var h=window.ARDA_HERALD[srcKey||symKey];if(!h)return;if(!h.file&&!h.forge)return;
   var sym=document.getElementById("em-"+symKey);
   if(!sym){if(!anyDefs)return;sym=document.createElementNS(NS,"symbol");sym.id="em-"+symKey;anyDefs.appendChild(sym);}
