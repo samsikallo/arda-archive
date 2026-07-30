@@ -14759,42 +14759,25 @@
    "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "sirannon": {
-   "ages": [
-    "SA",
-    "TA",
-    "YT"
-   ],
+   "ages": [],
    "cites": [
     "The Silmarillion, line 16147"
-   ],
-   "containment": [
-    {
-     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
-     "frm": -3800,
-     "parent": "khazaddum",
-     "span": "Y.T. – T.A. 1981 (as realm); colony 2989–94",
-     "to": 5990,
-     "why": "within khazaddum, per Christopher Tolkien's index gloss [I-M]"
-    }
    ],
    "coords": [],
    "n": "Sirannon",
    "name_conf": "High",
    "notes": [
     "“sîr ‘river’, from root sir- ‘flow’, in Ossiriand (the first element is from the stem of the numeral ‘seven’, Quenya otso, Sindarin odo), Sirion; also in Sirannon (the ‘Gate-stream’ of Moria) and Sirith (‘a flowing’, as tirith ‘watching’ from tir), a river in Gondor.” — The Silmarillion, line 16147",
-    "indexed by Christopher Tolkien as: The Gate-stream of Moria",
-    "within khazaddum, per Christopher Tolkien's index gloss [I-M]",
-    "Ages taken from its realm khazaddum, having none of its own [I-H]"
+    "indexed by Christopher Tolkien as: The Gate-stream of Moria"
    ],
-   "parents": [
-    "khazaddum"
-   ],
+   "parents": [],
    "place_conf": "High",
    "timeline": [],
    "types": [
     "NATURAL_RIVER",
     "MAN_MADE_GATE"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "sirion": {
    "ages": [
@@ -14971,42 +14954,25 @@
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
   },
   "stair falls": {
-   "ages": [
-    "SA",
-    "TA",
-    "YT"
-   ],
+   "ages": [],
    "cites": [
     "The Lord of the Rings, line 13891"
-   ],
-   "containment": [
-    {
-     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
-     "frm": -3800,
-     "parent": "khazaddum",
-     "span": "Y.T. – T.A. 1981 (as realm); colony 2989–94",
-     "to": 5990,
-     "why": "within khazaddum, per Christopher Tolkien's index gloss [I-M]"
-    }
    ],
    "coords": [],
    "n": "Stair Falls",
    "name_conf": "High",
    "notes": [
     "“There is all that remains of the Stair Falls.” — The Lord of the Rings, line 13891",
-    "indexed by Christopher Tolkien as: Falls in the Gate-stream of Moria",
-    "within khazaddum, per Christopher Tolkien's index gloss [I-M]",
-    "Ages taken from its realm khazaddum, having none of its own [I-H]"
+    "indexed by Christopher Tolkien as: Falls in the Gate-stream of Moria"
    ],
-   "parents": [
-    "khazaddum"
-   ],
+   "parents": [],
    "place_conf": "Medium",
    "timeline": [],
    "types": [
     "NATURAL_RIVER",
     "MAN_MADE_GATE"
-   ]
+   ],
+   "unplaced": "runs through more than one realm — a single parent would be false"
   },
   "starkhorn": {
    "ages": [],
