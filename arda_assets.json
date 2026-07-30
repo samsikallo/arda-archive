@@ -81,14 +81,16 @@
    "what": "The installable-app icon, 192px",
    "hand": "the archive",
    "licence": "own work — made by this archive during the heraldry hall work, 23 July",
-   "source": "its three colours ARE the archive's palette tokens: #c9a227 and #e2cf96 both appear in arda.css and heraldry.html"
+   "source": "its three colours ARE the archive's palette tokens: #c9a227 and #e2cf96 both appear in arda.css and heraldry.html",
+   "note": "LOAD-BEARING: 610 published file(s) reference it. The owner said on 30 July \"we don't need them\" -- that was about not INVESTING further in them, and deleting them would strip the favicon from every page and break manifest.json's PWA icons and sw.js's precache list. It was 33 files when he said it and is 610 now, because every per-entity page carries one. Do not remove without replacing the references."
   },
   {
    "file": "icon-512.png",
    "what": "The installable-app icon, 512px",
    "hand": "the archive",
    "licence": "own work — made by this archive during the heraldry hall work, 23 July",
-   "source": "as icon-192.png: same palette, same minute"
+   "source": "as icon-192.png: same palette, same minute",
+   "note": "LOAD-BEARING: 610 published file(s) reference it. The owner said on 30 July \"we don't need them\" -- that was about not INVESTING further in them, and deleting them would strip the favicon from every page and break manifest.json's PWA icons and sw.js's precache list. It was 33 files when he said it and is 610 now, because every per-entity page carries one. Do not remove without replacing the references."
   }
  ]
 }
