@@ -15,6 +15,20 @@ a:focus-visible{outline:2px solid var(--a-gold) !important;}
   padding:6px 14px;z-index:999;border-radius:0 0 8px 0;font:13px Georgia,serif}
 .a-skip:focus{left:0}
 /* ---- Grouped nav (rendered by nav.js) ---- */
+/* THE NAVBAR STAYS VISIBLE -- §7's "persistent navbar", and it was outstanding for a measurable
+   reason: nav.js puts the menu on all 33 pages, but nothing kept it ON SCREEN. The Chronology's
+   drawing is 4620px tall and the gazetteer holds 481 places; a reader who scrolled either lost the
+   menu, the breadcrumb and the jump box together, and had to travel back to the top to move house.
+   Sticky rather than fixed, so the header keeps its place in the flow and pushes nothing under
+   itself -- fixed would need a compensating top margin on every one of the 33 pages, each of which
+   styles its own #hdr. Declared here and not per page for the same reason.
+   z-index sits above the dropdown's own 60 so an open hall is not clipped by the page beneath. */
+/* #hdr AND .hdr, because the archive's header markup is not uniform and measuring said so: 26
+   pages carry id="hdr", map.html carries class="hdr", and the Chronology's bar had NEITHER -- an
+   anonymous div with inline styles that no selector could reach, on the tallest page in the
+   archive. It has been given the id. The five still outside this rule are 404.html, index.html and
+   the three tombstones: all short, none scrollable enough for a sticky bar to mean anything. */
+#hdr,.hdr{position:sticky;top:0;z-index:80}
 #ardanav{display:flex;flex-wrap:wrap;gap:2px;align-items:center;font-size:12px}
 #ardanav .grp{position:relative}
 #ardanav .grp>button{background:none;border:none;color:#c9b06a;font:12px Georgia,serif;
@@ -30,6 +44,25 @@ a:focus-visible{outline:2px solid var(--a-gold) !important;}
 #ardanav .menu a[aria-current="page"]{color:#e8dcb0;border-left:3px solid var(--a-gold);padding-left:11px}
 #ardanav .home{color:#c9b06a;text-decoration:none;font-size:12px;font-variant:small-caps;padding:3px 9px;border-radius:8px}
 #ardanav .home:hover{background:rgba(201,162,39,.16)}
+/* THE JUMP BOX -- §7's multi-hall search. Styled to the nav's own palette rather than a new one:
+   the archive's chrome is #221c15 on gold, and a search field that looked like a search field from
+   some other site would read as an advert. */
+#ardanav #a-jumpw{position:relative;margin-left:4px}
+#ardanav #a-jump{width:112px;background:rgba(201,162,39,.10);border:1px solid #6d5a34;color:#e2cf96;
+  font:11.5px Georgia,serif;padding:3px 8px;border-radius:9px;transition:width .18s ease}
+#ardanav #a-jump::placeholder{color:#8a7a52;font-style:italic}
+#ardanav #a-jump:focus{width:210px;outline:none;border-color:var(--a-gold);background:rgba(201,162,39,.18)}
+#ardanav #a-jumpres{display:none;position:absolute;top:100%;right:0;min-width:250px;background:#221c15;
+  border:1px solid #8a7444;border-radius:0 0 10px 10px;padding:5px 0;z-index:70;
+  box-shadow:0 8px 22px rgba(0,0,0,.5)}
+#ardanav #a-jumpres.on{display:block}
+#ardanav #a-jumpres a{display:flex;justify-content:space-between;gap:10px;align-items:baseline;
+  padding:5px 12px;color:#c9b06a;text-decoration:none;font-size:12.5px}
+#ardanav #a-jumpres a .jh{font-size:10px;color:#8a7a52;font-style:italic;white-space:nowrap}
+#ardanav #a-jumpres a:hover,#ardanav #a-jumpres a.sel,#ardanav #a-jumpres a:focus-visible{
+  background:rgba(201,162,39,.16);color:#e8dcb0}
+#ardanav #a-jumpres .none{padding:6px 12px;color:#8a7a52;font-size:11.5px;font-style:italic}
+@media (max-width:640px){#ardanav #a-jump{width:84px}#ardanav #a-jump:focus{width:150px}}
 #a-crumb{font-size:10.5px;color:#8a7a52;font-style:italic;flex-basis:100%;margin-top:-1px}
 #a-crumb a{color:#a08d5c;text-decoration:none}
 #a-theme{background:none;border:1px solid #8a7444;color:#c9b06a;border-radius:10px;cursor:pointer;

@@ -36,10 +36,31 @@ const nav=document.getElementById("ardanav");if(!nav)return;
 let h='<a class="home" href="index.html">⌂ the archive</a>';
 GROUPS.forEach((g,gi)=>{
  const inHere=g[1].some(x=>x[0]===here);
- h+='<span class="grp"><button aria-expanded="false" aria-haspopup="true" '+(inHere?'class="here" ':'')+'data-g="'+gi+'">'+g[0]+' ▾</button><div class="menu" role="menu">';
- g[1].forEach(x=>{h+='<a role="menuitem" href="'+x[0]+'"'+(x[0]===here?' aria-current="page"':'')+'>'+x[1]+'<span class="sub2">'+x[2]+'</span></a>'});
+ /* NO role="menu" AND NO role="menuitem", AND REMOVING THEM IS THE FIX, NOT AN OMISSION.
+    WAI-ARIA reserves menu/menubar for APPLICATION menus -- the desktop-app kind, which promise
+    arrow-key operation, a roving tabindex where exactly one item is tabbable, and Escape. This
+    navigation implemented ONLY Escape, left all 28 links tabbable, and `role="menuitem"` on an
+    <a> OVERRIDES ITS LINK ROLE, so a screen reader announced "menu item" for something that is a
+    link and set the reader up to press arrows that did nothing. The W3C APG pattern for site
+    navigation is DISCLOSURE NAVIGATION: a button carrying aria-expanded, controlling a plain list
+    of links. That is what this is now -- aria-expanded stays because it is correct for a
+    disclosure, aria-haspopup goes because it belongs to menus.
+    THE ARROW KEYS ARE THEN ADDED FOR REAL, below, so the affordance and the behaviour agree in
+    the other direction too. */
+ h+='<span class="grp"><button aria-expanded="false" aria-controls="a-g'+gi+'" '+(inHere?'class="here" ':'')+'data-g="'+gi+'">'+g[0]+' ▾</button><div class="menu" id="a-g'+gi+'">';
+ g[1].forEach(x=>{h+='<a href="'+x[0]+'"'+(x[0]===here?' aria-current="page"':'')+'>'+x[1]+'<span class="sub2">'+x[2]+'</span></a>'});
  h+='</div></span>';
 });
+/* JUMP TO ANY PAGE FROM ANY HALL -- §7's "multi-hall contextual search", which was outstanding.
+   With 28 pages behind seven buttons, finding one means guessing which hall holds it, and the halls
+   are a good taxonomy rather than an obvious one: `annals` is under History, `compare` under
+   Encyclopedia, `gallery` under Items. A filter that searches ACROSS the halls and shows which hall
+   each answer lives in solves the guess and teaches the taxonomy at the same time.
+   The pattern is the one every documentation site has converged on -- GitHub's `/`, VS Code and
+   Linear's palette, Algolia DocSearch -- so the keystroke is the one readers already have in their
+   fingers. It searches the label, the subtitle and the hall name, because a reader looking for
+   heraldry may think "devices" or "arms" and the subtitle is where those words are. */
+h+='<span id="a-jumpw"><input id="a-jump" type="search" autocomplete="off" placeholder="jump to\u2026  /" aria-label="jump to a page in any hall" aria-expanded="false" aria-controls="a-jumpres" role="combobox"><div id="a-jumpres" role="listbox" aria-label="matching pages"></div></span>';
 h+='<button id="a-theme" title="toggle dark theme" aria-label="toggle dark theme">☾</button>';
 // breadcrumb
 let crumb="";
@@ -53,6 +74,100 @@ nav.querySelectorAll(".grp>button").forEach(b=>{
   b.setAttribute("aria-expanded",open?"false":"true");e.stopPropagation()});});
 document.addEventListener("click",()=>nav.querySelectorAll(".grp>button").forEach(x=>x.setAttribute("aria-expanded","false")));
 document.addEventListener("keydown",e=>{if(e.key==="Escape")nav.querySelectorAll(".grp>button").forEach(x=>x.setAttribute("aria-expanded","false"))});
+
+/* ===== ARROW KEYS, so the disclosure behaves the way a reader expects of a menu bar =====
+   Down/Up from a hall button opens it and enters the list; Up/Down move within; Left/Right move
+   between halls; Home/End jump to the ends; Escape closes and RETURNS FOCUS TO THE BUTTON, which is
+   the part that is usually forgotten and the part a keyboard reader notices, because without it
+   focus is left inside a hidden element. */
+const _btns=[...nav.querySelectorAll(".grp>button")];
+const _open=b=>{_btns.forEach(x=>x.setAttribute("aria-expanded",x===b?"true":"false"))};
+const _links=b=>[...document.getElementById(b.getAttribute("aria-controls")).querySelectorAll("a")];
+_btns.forEach((b,bi)=>{
+ b.addEventListener("keydown",e=>{
+  if(e.key==="ArrowDown"||e.key==="ArrowUp"){_open(b);const L=_links(b);
+   (e.key==="ArrowDown"?L[0]:L[L.length-1]).focus();e.preventDefault();}
+  else if(e.key==="ArrowRight"){_btns[(bi+1)%_btns.length].focus();e.preventDefault();}
+  else if(e.key==="ArrowLeft"){_btns[(bi-1+_btns.length)%_btns.length].focus();e.preventDefault();}
+ });
+ _links(b).forEach((a,ai)=>{
+  a.addEventListener("keydown",e=>{
+   const L=_links(b);
+   if(e.key==="ArrowDown"){L[(ai+1)%L.length].focus();e.preventDefault();}
+   else if(e.key==="ArrowUp"){if(ai===0)b.focus();else L[ai-1].focus();e.preventDefault();}
+   else if(e.key==="Home"){L[0].focus();e.preventDefault();}
+   else if(e.key==="End"){L[L.length-1].focus();e.preventDefault();}
+   else if(e.key==="Escape"){_open(null);b.focus();e.preventDefault();}
+   else if(e.key==="ArrowRight"||e.key==="ArrowLeft"){
+    const nb=_btns[(bi+(e.key==="ArrowRight"?1:-1)+_btns.length)%_btns.length];
+    _open(nb);nb.focus();e.preventDefault();}
+  });
+ });
+});
+
+/* ===== THE JUMP BOX ===== */
+const _J=document.getElementById("a-jump"),_JR=document.getElementById("a-jumpres");
+if(_J&&_JR){
+ // Flatten the halls once: every page with the hall it belongs to, so a result can say where it is.
+ const _ALL=[];GROUPS.forEach(g=>g[1].forEach(x=>_ALL.push({href:x[0],label:x[1],sub:x[2],hall:g[0]})));
+ const _nrm=t=>(t||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+ let _sel=-1,_hits=[];
+ const _close=()=>{_JR.innerHTML="";_JR.classList.remove("on");_J.setAttribute("aria-expanded","false");_sel=-1;_hits=[]};
+ const _render=()=>{
+  const q=_nrm(_J.value.trim());
+  if(!q){_close();return}
+  // Rank: a label that STARTS with the query first, then any label match, then subtitle or hall.
+  // Without the ranking, typing "map" offered "the map of Arda" fourth, behind three subtitles
+  // that merely mention a map -- correct matches in a useless order.
+  const score=r=>{const l=_nrm(r.label),s2=_nrm(r.sub),h=_nrm(r.hall);
+   if(l.startsWith(q))return 0; if(l.includes(q))return 1;
+   if(s2.includes(q))return 2; if(h.includes(q))return 3; return 9};
+  /* THE FILENAME IS SEARCHABLE TOO, AND "genealogy" IS WHY. The menu calls that page "family
+     trees" -- a better label than its filename -- so a reader who types the word they know, or the
+     word in the URL they have seen, got NOTHING from a search box that had the page all along.
+     The archive's labels are chosen for the reader arriving; the filenames are the words the
+     reader already has. Ranked last, so a real label match always wins. */
+  const rank=qq=>{const sc=r=>{const l=_nrm(r.label),s2=_nrm(r.sub),h=_nrm(r.hall),
+     f=_nrm(r.href.replace(/\.html$/,"").replace(/_/g," "));
+    if(l.startsWith(qq))return 0; if(l.includes(qq))return 1;
+    if(s2.includes(qq))return 2; if(h.includes(qq))return 3; if(f.includes(qq))return 4; return 9};
+   return _ALL.map(r=>({r:r,s:sc(r)})).filter(x=>x.s<9)
+          .sort((a,b)=>a.s-b.s||a.r.label.localeCompare(b.r.label)).slice(0,8).map(x=>x.r)};
+  _hits=rank(q);
+  /* A BOUNDED RELAXATION FOR PLURALS, and the case that earned it: typing "devices" found NOTHING,
+     because heraldry's subtitle reads "every device + a device-forge" and the QUERY IS LONGER THAN
+     THE WORD -- no amount of substring matching can bridge that direction. Dropping up to two
+     trailing characters catches devices/device, realms/realm, tongues/tongue, reckonings/reckoning
+     without any stemmer and without inventing matches: it is still a substring test, just of a
+     shorter query. Bounded at two so "genealogy" cannot decay into "gene" and start answering
+     questions nobody asked, and only tried when the full query found nothing at all. */
+  for(let cut=1;cut<=2&&!_hits.length&&q.length-cut>=4;cut++) _hits=rank(q.slice(0,-cut));
+  if(!_hits.length){_JR.innerHTML='<div class="none">nothing in any hall answers to that</div>';
+   _JR.classList.add("on");_J.setAttribute("aria-expanded","true");return}
+  _JR.innerHTML=_hits.map((r,i)=>'<a role="option" id="a-jo'+i+'" aria-selected="'+(i===_sel)+'" href="'+r.href+'">'+r.label+'<span class="jh">'+r.hall+'</span></a>').join("");
+  _JR.classList.add("on");_J.setAttribute("aria-expanded","true");
+ };
+ const _mark=()=>{[..._JR.querySelectorAll('[role="option"]')].forEach((e,i)=>{
+   e.setAttribute("aria-selected",i===_sel?"true":"false");
+   if(i===_sel){e.classList.add("sel");_J.setAttribute("aria-activedescendant",e.id)}else e.classList.remove("sel")})};
+ _J.addEventListener("input",()=>{_sel=-1;_render()});
+ _J.addEventListener("keydown",e=>{
+  if(e.key==="ArrowDown"){if(!_hits.length)_render();_sel=Math.min(_sel+1,_hits.length-1);_mark();e.preventDefault()}
+  else if(e.key==="ArrowUp"){_sel=Math.max(_sel-1,0);_mark();e.preventDefault()}
+  else if(e.key==="Enter"){const r=_hits[_sel<0?0:_sel];if(r)location.href=r.href;e.preventDefault()}
+  else if(e.key==="Escape"){if(_JR.classList.contains("on")){_close()}else{_J.value="";_J.blur()}e.preventDefault()}
+ });
+ _J.addEventListener("blur",()=>setTimeout(_close,150));
+ // `/` FOCUSES IT, AND MUST NOT STEAL A SLASH FROM SOMEONE TYPING. Every hall has a search field of
+ // its own and the gazetteer has a filter; hijacking "/" inside one of those would be a fault worse
+ // than the shortcut is worth.
+ document.addEventListener("keydown",e=>{
+  if(e.key!=="/"||e.metaKey||e.ctrlKey||e.altKey)return;
+  const t=e.target,tn=(t&&t.tagName||"").toLowerCase();
+  if(tn==="input"||tn==="textarea"||tn==="select"||(t&&t.isContentEditable))return;
+  _J.focus();e.preventDefault();
+ });
+}
 // theme toggle
 const T=document.getElementById("a-theme");
 function setTheme(d){document.documentElement.classList.toggle("arda-dark",d);try{localStorage.setItem("ardaTheme",d?"dark":"light")}catch(e){}}
