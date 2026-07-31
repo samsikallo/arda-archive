@@ -26,7 +26,7 @@ const GROUPS=[
    ["silences.html","the silences","what the corpus does not say"]]],
   ["Encyclopedia / Lexicon",[["annals.html","annals of the archive","what's new on this site"],
    ["corpus.html","the corpus","28 volumes, concordance, queries"],
-   ["registers.html","registers","what the archive holds, and on whose authority"],
+   ["theindex.html","the index","6,630 names, the editors' own glosses"],["registers.html","registers","what the archive holds, and on whose authority"],
    ["compare.html","side by side","two lives or two battles"],
    ["quiz.html","the trial","test your lore"],
    ["tours.html","tours","guided roads through the halls"]]],
