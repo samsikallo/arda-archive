@@ -45,6 +45,12 @@
     of five, so its glyphs are tens of units across; these must be too. */
  #und circle{fill:#3f3a30;stroke:#efe6d2;stroke-width:5;cursor:pointer}
  #und circle.soft{fill:none;stroke:#6b5d49;stroke-width:7;stroke-dasharray:12 9}
+ /* THE ANNOTATION LAYER. A square, not a circle: it is not a place the archive draws, it is a
+    note somebody wrote about one, and the shape says so before the colour does -- ruling 5's
+    rule that colour is never the only channel. Tolkien's hand and Baynes's differ in BOTH. */
+ #bay rect{fill:#f4efe2;stroke:#3f6b3a;stroke-width:5;cursor:pointer}
+ #bay rect.baynes{stroke:#2f5aa8;stroke-dasharray:9 7}
+ #bay rect.on{fill:#fffaf0;stroke-width:8}
  #und circle:hover,#und circle.on{fill:var(--red);stroke:#fbf6e8}
  #und circle.soft:hover,#und circle.soft.on{fill:none;stroke:var(--red)}
  /* THE CHRONOLOGY. A place not yet founded is faint; one thrown down since is dashed and
@@ -115,6 +121,7 @@
   <button id="tR" aria-pressed="false">roads</button>
   <button id="tB" aria-pressed="false">battles</button>
   <button id="tU" aria-pressed="false">unmapped places</button>
+  <button id="tN" aria-pressed="false">Tolkien's notes</button>
   <span>·</span>
   <span class="sp"></span>
   <button id="zin" aria-label="closer">+</button>
@@ -190,7 +197,7 @@ fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
   // see -- and the throw killed loadRealms() and goHash() on the same line, taking all five
   // deep-link forms down with it. Reverted. The real repair is to lift loadHisNames (and
   // wireAside, which it needs) OUT of loadTraced to file scope, and only then call it here.
-  wire(); apply('all'); loadRoads(); loadChrono(); loadUndrawn(); loadTraced();
+  wire(); apply('all'); loadRoads(); loadChrono(); loadUndrawn(); loadTraced(); loadBaynes();
   loadRealms(); goHash();
 });
 // ---- CHRISTOPHER TOLKIEN'S OWN LINEWORK, traced from the plates and drawn here as vectors.
@@ -352,6 +359,53 @@ function loadUndrawn(){
   let on=false;
   b.onclick=()=>{on=!on; g.style.display=on?'':'none'; b.setAttribute('aria-pressed',String(on));};
  });
+}
+// ---- the notes Tolkien wrote on Pauline Baynes's map (1969-70)
+// The sheet itself is NOT here and never will be: it is her artwork, in copyright, and the
+// archive's artwork ruling refuses even Christopher Tolkien's plates. What is here is what
+// Tolkien WROTE, pinned through the gazetteer to the archive's own geometry -- see
+// map/gen_baynesmap.py. A note the gazetteer cannot place is counted on the button and not
+// drawn, because a pin invented for it would be this archive putting a name where no source
+// puts it.
+function loadBaynes(){
+ fetch('arda_baynes.json').then(r=>r.json()).then(D=>{
+  const NS='http://www.w3.org/2000/svg';
+  const g=document.createElementNS(NS,'g'); g.id='bay'; g.style.display='none';
+  const placed=D.notes.filter(n=>n.at&&n.at.x!=null);
+  placed.forEach(n=>{
+    const s=document.createElementNS(NS,'rect');
+    s.setAttribute('x',n.at.x-13); s.setAttribute('y',n.at.y-13);
+    s.setAttribute('width',26); s.setAttribute('height',26);
+    if(n.hand==='baynes') s.setAttribute('class','baynes');
+    s.dataset.n=n.subject+' — '+(n.hand==='tolkien'?"Tolkien's hand":"Baynes's hand");
+    s.dataset.payload=JSON.stringify(n);
+    g.appendChild(s);
+    s.addEventListener('mouseenter',()=>s.classList.add('on'));
+    s.addEventListener('mouseleave',()=>{s.classList.remove('on');nmEl.style.display='none'});
+    s.addEventListener('mousemove',e=>{const r=stage.getBoundingClientRect();
+      nmEl.textContent=s.dataset.n; nmEl.style.display='block';
+      nmEl.style.left=(e.clientX-r.left+14)+'px'; nmEl.style.top=(e.clientY-r.top-12)+'px';});
+    s.addEventListener('click',e=>{e.stopPropagation(); const P=JSON.parse(s.dataset.payload);
+      const r=stage.getBoundingClientRect();
+      card.innerHTML='<span class="x" id="cx">&times;</span><h3>'+P.subject+'</h3>'
+        +'<div class="k">'+(P.hand==='tolkien'?'in Tolkien&rsquo;s hand':'in Pauline Baynes&rsquo;s hand')
+        +' &middot; '+P.kind+'</div>'
+        +'<div style="margin:8px 0">'+P.text+'</div>'
+        +(P.his_cite?'<div class="c">his own reference on the sheet: '+P.his_cite+'</div>':'')
+        +'<div class="c">'+P.conf+' '+P.cite+'</div>';
+      card.style.display='block';
+      card.style.left=Math.min(e.clientX-r.left+16,stage.clientWidth-286)+'px';
+      card.style.top=Math.min(e.clientY-r.top+12,Math.max(6,stage.clientHeight-160))+'px';
+      document.getElementById('cx').onclick=()=>{card.style.display='none';clearLit();cardFor=null;};});
+  });
+  svg.appendChild(g);
+  const b=document.getElementById('tN');
+  b.title=D.count+' notes on the sheet ('+D.hands.tolkien+" in Tolkien's hand, "+D.hands.baynes
+    +" in Baynes's); "+placed.length+' the gazetteer can place, '+(D.count-placed.length)
+    +' it cannot and which are therefore not drawn';
+  let on=false;
+  b.onclick=()=>{on=!on; g.style.display=on?'':'none'; b.setAttribute('aria-pressed',String(on));};
+ }).catch(err=>console.warn('baynes layer:',err));
 }
 // ---- the chronology: what stood when, from the archive's own dated records
 let CH=null,chOn=false;
