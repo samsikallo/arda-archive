@@ -294,4 +294,4 @@ function init(){
 <script>if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js");</script>
 <script>fetch('arda_sources.json').then(r=>r.json()).then(sd=>{const L=(sd.limits||[])[0];if(L&&document.getElementById('limtext'))document.getElementById('limtext').textContent=L.what+' \u2014 '+L.why+' '+L.effect;}).catch(()=>{});</script>
 <script src="nav.js"></script>
-</body></html>
+<script src="glossary.js" defer></script></body></html>
