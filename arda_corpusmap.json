@@ -12,7 +12,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "J.R.R. Tolkien, music Donald Swann (1967; 2nd ed. 1978)",
-   "ci": "rgeo"
+   "ci": null
   },
   {
    "file": "secondary sources/A Secret Vice - Tolkien on Invented Languages.pdf",
@@ -68,7 +68,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "J.R.R. Tolkien, ed. Wayne G. Hammond & Christina Scull (2011)",
-   "ci": "arthobbit"
+   "ci": null
   },
   {
    "file": "secondary sources/The Art of The Lord of the Rings.pdf",
@@ -519,6 +519,20 @@
    "ci": "rc"
   },
   {
+   "file": "corpus/t1_c_appendix_tables_raw.txt",
+   "title": "corpus/t1_c_appendix_tables_raw.txt",
+   "tier": 1,
+   "hand": "J.R.R. Tolkien",
+   "kind": "unclassified",
+   "covers": "unclassified",
+   "primary_text": true,
+   "words": 12795,
+   "readable": true,
+   "text_provenance": null,
+   "attribution": "J.R.R. Tolkien -- Appendices A III, C and E, transcribed from the page images by this archive",
+   "ci": "apptables"
+  },
+  {
    "file": "secondary sources/The Art of The Fellowship of the Ring.pdf",
    "title": "The Art of The Fellowship of the Ring",
    "tier": 4,
@@ -838,7 +852,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "J.R.R. Tolkien, ed. Christopher Gilson (2007)",
-   "ci": "pe17"
+   "ci": null
   },
   {
    "file": "Parma Eldalamberon 23.pdf",
@@ -852,7 +866,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "J.R.R. Tolkien, ed. Elvish Linguistic Fellowship",
-   "ci": "pe23"
+   "ci": null
   },
   {
    "file": "Vinyar Tengwar 41-50.pdf",
@@ -894,7 +908,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "ed. Elvish Linguistic Fellowship (1992)",
-   "ci": "vt24"
+   "ci": null
   },
   {
    "file": "Vinyar Tengwar 25.pdf",
@@ -908,7 +922,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "ed. Elvish Linguistic Fellowship (1992)",
-   "ci": "vt25"
+   "ci": null
   },
   {
    "file": "Vinyar Tengwar Index.pdf",
@@ -1076,7 +1090,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "ci": "vt11"
+   "ci": null
   },
   {
    "file": "Vinyar Tengwar 12.pdf",
@@ -1090,7 +1104,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "ci": "vt12"
+   "ci": null
   },
   {
    "file": "Vinyar Tengwar 14.pdf",
@@ -1104,7 +1118,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "ci": "vt14"
+   "ci": null
   },
   {
    "file": "Vinyar Tengwar 27.pdf",
@@ -1118,7 +1132,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "ci": "vt27"
+   "ci": null
   },
   {
    "file": "Vinyar Tengwar 28.pdf",
@@ -1132,7 +1146,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "ci": "vt28"
+   "ci": null
   },
   {
    "file": "Vinyar Tengwar 29.pdf",
@@ -1146,7 +1160,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "ci": "vt29"
+   "ci": null
   },
   {
    "file": "Vinyar Tengwar 31.pdf",
@@ -1160,7 +1174,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "ci": "vt31"
+   "ci": null
   },
   {
    "file": "Vinyar Tengwar 36.pdf",
@@ -1174,7 +1188,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "ci": "vt36"
+   "ci": null
   },
   {
    "file": "Vinyar Tengwar 37.pdf",
@@ -1188,7 +1202,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "ci": "vt37"
+   "ci": null
   },
   {
    "file": "Vinyar Tengwar 39.pdf",
@@ -1202,7 +1216,7 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "ci": "vt39"
+   "ci": null
   },
   {
    "file": "Vinyar Tengwar 39 (2).pdf",
@@ -1216,21 +1230,245 @@
    "readable": true,
    "text_provenance": "ocr-derived",
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "ci": "vt39_2"
+   "ci": null
   },
   {
    "file": null,
-   "title": "LotR Appendices A III, C, E — tables recovered from the page images",
+   "title": "The Road Goes Ever On",
    "tier": 5,
    "hand": "this archive, transcribing from the plates",
    "kind": "apparatus",
    "covers": "whole legendarium",
    "primary_text": false,
-   "words": 12795,
+   "words": 23035,
    "readable": true,
    "text_provenance": "transcribed by this archive",
-   "attribution": "transcribed by this archive from the plates; tier 5 by origin, tier 1 by content",
-   "ci": "apptables"
+   "attribution": "song cycle; Tolkien's own commentary on Namarie and A Elbereth Gilthoniel; tengwar [machine-read 31 Jul: the lyrics are typeset syllable-by-syllable under the staves, so the prose is broken -- the poorest of the seventeen]",
+   "ci": "rgeo"
+  },
+  {
+   "file": null,
+   "title": "Parma Eldalamberon 17",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 125269,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "Words, Phrases and Passages in The Lord of the Rings [machine-read 31 Jul, 125,269 words -- the largest recovery on the shelf]",
+   "ci": "pe17"
+  },
+  {
+   "file": null,
+   "title": "Parma Eldalamberon 23",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 73945,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "The Feanorian Alphabet (parts 1 and 2), Eldarin Personal Pronouns, and an Article section -- established 31 Jul from the volume's own running heads after OCR [machine-read, 73,945 words]",
+   "ci": "pe23"
+  },
+  {
+   "file": null,
+   "title": "The Art of The Hobbit",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 26107,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "plates, captions and datings [machine-read 31 Jul; the plates themselves are not republished under the artwork ruling]",
+   "ci": "arthobbit"
+  },
+  {
+   "file": null,
+   "title": "Vinyar Tengwar 11",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 12001,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "journal issue [machine-read 31 Jul]",
+   "ci": "vt11"
+  },
+  {
+   "file": null,
+   "title": "Vinyar Tengwar 12",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 13437,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "journal issue [machine-read 31 Jul]",
+   "ci": "vt12"
+  },
+  {
+   "file": null,
+   "title": "Vinyar Tengwar 14",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 13633,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "journal issue [machine-read 31 Jul]",
+   "ci": "vt14"
+  },
+  {
+   "file": null,
+   "title": "Vinyar Tengwar 24",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 15984,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "journal issue [machine-read 31 Jul]",
+   "ci": "vt24"
+  },
+  {
+   "file": null,
+   "title": "Vinyar Tengwar 25",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 12805,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "journal issue [machine-read 31 Jul]",
+   "ci": "vt25"
+  },
+  {
+   "file": null,
+   "title": "Vinyar Tengwar 27",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 22302,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "journal issue [machine-read 31 Jul]",
+   "ci": "vt27"
+  },
+  {
+   "file": null,
+   "title": "Vinyar Tengwar 28",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 19896,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "journal issue [machine-read 31 Jul]",
+   "ci": "vt28"
+  },
+  {
+   "file": null,
+   "title": "Vinyar Tengwar 29",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 11805,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "journal issue [machine-read 31 Jul]",
+   "ci": "vt29"
+  },
+  {
+   "file": null,
+   "title": "Vinyar Tengwar 31",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 15753,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "journal issue [machine-read 31 Jul]",
+   "ci": "vt31"
+  },
+  {
+   "file": null,
+   "title": "Vinyar Tengwar 36",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 18457,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "journal issue [machine-read 31 Jul]",
+   "ci": "vt36"
+  },
+  {
+   "file": null,
+   "title": "Vinyar Tengwar 37",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 12357,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "journal issue [machine-read 31 Jul]",
+   "ci": "vt37"
+  },
+  {
+   "file": null,
+   "title": "Vinyar Tengwar 39",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 17669,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "journal issue [machine-read 31 Jul]",
+   "ci": "vt39"
+  },
+  {
+   "file": null,
+   "title": "Vinyar Tengwar 39 (2)",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 18061,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "the owner's second scan of issue 39 [IMAGE-ONLY SCAN, no text layer]",
+   "ci": "vt39_2"
   }
  ],
  "edges": [
