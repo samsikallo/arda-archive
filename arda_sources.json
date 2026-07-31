@@ -18,6 +18,8 @@
    "words": 12976,
    "text_provenance": "ocr-derived",
    "text_provenance_note": "Machine-read from a scan at 300 dpi on 30 July 2026, at the owner's ruling. THE ENGLISH IS LARGELY FAITHFUL AND THE ELVISH IS NOT: measured against a known-good text of Vinyar Tengwar 39, 37 of 51 distinct Elvish forms were lost or corrupted, almost all of them diacritic-bearing -- fea, hroa, Eruhini, and Feanor itself. This file may be quoted for commentary and may NEVER settle the spelling of an Elvish word.",
+   "digitisation_of": "The Road Goes Ever On - A Song Cycle (J.R.R. Tolkien & Donald Swann, 1967)",
+   "digitisation_note": "Two scans of one 1967 songbook. Recorded as a pair because the attributions register and attrib_check both assume one text per book: without this, a quotation found in both verifies 'in exactly two books' and is one book counted twice. NEITHER COPY IS A RELIABLE WITNESS TO THE ELVISH. Scored against Namárië as printed in The Lord of the Rings, over 28 distinctive Quenya forms: folded, the OCR holds 23 and this second scan 16; exactly accented, 6 and 8. The OCR drops diacritics and sometimes invents them (`tellumar` read as `téllumar`); the second misreads letters outright (`miruvórë` read as `miruvére`), its pages being musical scores. Neither holds one correctly accented form of Namárië's Quenya, so the citation this volume was sought for — The War of the Jewels sending the reader to p. 61 for `miruvórë` — cannot be followed from either.",
    "bytes": 7753269,
    "pages": 78
   },
@@ -920,6 +922,8 @@
    "present": true,
    "corpus_file": "t1_k_the_road_goes_ever_on_a_song_cycle_2nd_digitisatio.txt",
    "words": 12168,
+   "digitisation_of": "The Road Goes Ever On - A Song Cycle (J.R.R. Tolkien & Donald Swann, 1967)",
+   "digitisation_note": "Two scans of one 1967 songbook. Recorded as a pair because the attributions register and attrib_check both assume one text per book: without this, a quotation found in both verifies 'in exactly two books' and is one book counted twice. NEITHER COPY IS A RELIABLE WITNESS TO THE ELVISH. Scored against Namárië as printed in The Lord of the Rings, over 28 distinctive Quenya forms: folded, the OCR holds 23 and this second scan 16; exactly accented, 6 and 8. The OCR drops diacritics and sometimes invents them (`tellumar` read as `téllumar`); the second misreads letters outright (`miruvórë` read as `miruvére`), its pages being musical scores. Neither holds one correctly accented form of Namárië's Quenya, so the citation this volume was sought for — The War of the Jewels sending the reader to p. 61 for `miruvórë` — cannot be followed from either.",
    "bytes": 1349098,
    "pages": 78
   },
