@@ -2,13 +2,14 @@
 // current-page highlight, breadcrumb, keyboard shim for legacy widgets, theme toggle.
 (function(){
 const GROUPS=[
-  ["Peoples & Living Beings",[["genealogy.html","family trees","439 figures, all houses"],
+  ["Peoples & Living Beings",[["genealogy.html","family trees","441 figures, all houses"],
    ["character.html","records","a page for every person"],
    ["population_dashboard.html","peoples","demography of Arda"],
    ["ainur.html","the Ainur","the Valar and the Maiar"],
    ["living.html","living things","herbarium and bestiary"]]],
   ["Places & Realms",[["map.html","the map of Arda","every feature answers \u2014 hover, click, the record"],
    ["valinor.html","Aman","drawn from the corpus \u2014 the archive's own work, not Tolkien's hand"],
+   ["baynes.html","the marked sheet","Baynes's 1969 map, traced \u2014 with Tolkien's notes on it"],
    ["realms.html","realms","the political atlas \u2014 60 polities"],
    ["gazetteer.html","gazetteer","every named place, by age and kind"],
    ["place.html","a place in full","one place, everything the corpus gives it"],
@@ -26,9 +27,8 @@ const GROUPS=[
    ["oaths.html","binding words","oaths, dooms, curses, prophecies"],
    ["silences.html","the silences","what the corpus does not say"]]],
   ["Encyclopedia / Lexicon",[["annals.html","annals of the archive","what's new on this site"],
-   ["corpus.html","the corpus","28 volumes, concordance, queries"],
-   ["theindex.html","the index","6,630 names, the editors' own glosses"],["registers.html","registers","what the archive holds, and on whose authority"],
-   ["compare.html","side by side","two lives or two battles"],
+   ["corpus.html","the corpus","99 volumes, concordance, queries"],
+   ["theindex.html","the index","6,630 names, the editors' own glosses"],   ["compare.html","side by side","two lives or two battles"],
    ["quiz.html","the trial","test your lore"],
    ["tours.html","tours","guided roads through the halls"]]],
 ];
