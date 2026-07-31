@@ -58,7 +58,13 @@ GROUPS.forEach((g,gi)=>{
     disclosure, aria-haspopup goes because it belongs to menus.
     THE ARROW KEYS ARE THEN ADDED FOR REAL, below, so the affordance and the behaviour agree in
     the other direction too. */
- h+='<span class="grp"><button aria-expanded="false" aria-controls="a-g'+gi+'" '+(inHere?'class="here" ':'')+'data-g="'+gi+'">'+g[0]+' ▾</button><div class="menu" id="a-g'+gi+'">';
+ /* THE CURRENT HALL WAS MARKED BY A GOLD UNDERLINE AND NOTHING ELSE. `class="here"` styles
+    `border-bottom:2px solid var(--a-gold)` in arda.css -- a purely VISUAL channel, so a reader
+    using a screen reader was told which PAGE they were on (aria-current on the link, inside a
+    closed menu they cannot see) and never which HALL. Ruling 5: colour is never the only channel,
+    and a border is the same kind of channel as a colour. The words are added here rather than in
+    the stylesheet because a stylesheet cannot say anything to a screen reader. */
+ h+='<span class="grp"><button aria-expanded="false" aria-controls="a-g'+gi+'" '+(inHere?'class="here" ':'')+'data-g="'+gi+'">'+g[0]+' ▾'+(inHere?'<span class="a-sr">(the hall you are in)</span>':'')+'</button><div class="menu" id="a-g'+gi+'">';
  g[1].forEach(x=>{h+='<a href="'+PRE+x[0]+'"'+(x[0]===here?' aria-current="page"':'')+'>'+x[1]+'<span class="sub2">'+x[2]+'</span></a>'});
  h+='</div></span>';
 });

@@ -108,3 +108,7 @@ html.arda-canon .conf,html.arda-canon .refnote{opacity:.4}
    which would reset any repeat rule written before it. */
 html{background:#efe6cd}
 html.arda-dark{background:#181410}
+
+/* Visually hidden, still announced. nav.js uses it to NAME the hall you are in, which was
+   marked by a gold border alone -- a channel a screen reader cannot perceive. */
+.a-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
