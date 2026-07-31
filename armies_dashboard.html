@@ -284,10 +284,10 @@ html+=`<div class="pcard hostcard">
   ? `<svg width="72" height="86" viewBox="0 0 40 48" role="img" aria-label="no device is recorded"><path d="M4 4h32v22c0 10-8 16-16 20C12 42 4 36 4 26Z" fill="#fdfaf2" stroke="#b0a58e" stroke-width="1.6"/></svg><div class="cite" style="font-size:10.5px;margin-top:-4px">\u25cc no device recorded</div>`
   : p.em.startsWith("plate:")
    ? `<img src="heraldry/illustrated/${p.em.slice(6)}.png" width="72" alt="the device of ${p.n}" style="border-radius:5px">`
-   : `<svg width="72" height="86" viewBox="0 0 40 48"><use href="#em-${p.em}"/></svg>`
+   : `<svg width="72" height="86" viewBox="0 0 40 48" role="img" aria-label="the device of ${p.n}"><use href="#em-${p.em}"/></svg>`
 }</div>
 <div><h3>${p.n}</h3><div class="cite">${p.org}</div>
-${p.gear.map(g=>`<div class="gearrow"><svg width="58" height="17" viewBox="0 0 60 16"><use href="#a-${g[0]}"/></svg><span style="font-size:12.5px">${g[1]}</span></div>`).join("")}
+${p.gear.map(g=>`<div class="gearrow"><svg width="58" height="17" viewBox="0 0 60 16" aria-hidden="true"><use href="#a-${g[0]}"/></svg><span style="font-size:12.5px">${g[1]}</span></div>`).join("")}
 <div style="font-size:12.5px;margin-top:.3em"><b style="font-variant:small-caps">way of war</b> — ${p.style}</div>
 <div class="cite" style="margin-top:.3em">named arms: ${p.arms}</div>
 <div class="cite">${p.cite}</div></div></div>`;});
@@ -295,7 +295,7 @@ html+="</div>";H.innerHTML=html;}
 // ===== blades =====
 {const B=document.getElementById("blades");
 const icon={sword:"a-sword",knife:"a-knife",spear:"a-spear",bow:"a-bow",axe:"a-axe",helm:"a-helm",ram:"a-ram"};
-B.innerHTML=D.blades.map(b=>`<div class="blade"><svg width="60" height="17" viewBox="0 0 60 16"><use href="#${icon[b[1]]||'a-sword'}"/></svg>
+B.innerHTML=D.blades.map(b=>`<div class="blade"><svg width="60" height="17" viewBox="0 0 60 16" aria-hidden="true"><use href="#${icon[b[1]]||'a-sword'}"/></svg>
 <span><b>${b[0]}</b><br><span style="font-size:12px">${b[2]}</span><br><span class="cite">${b[3]}</span></span></div>`).join("");}
 // initial
 select("pelennor");

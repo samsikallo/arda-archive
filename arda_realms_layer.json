@@ -1,6 +1,6 @@
 {
- "n_edges": 106,
- "n_realms": 31,
+ "n_edges": 104,
+ "n_realms": 30,
  "note": "A realm is shown by the places the corpus puts inside it, and NEVER by a drawn border. The corpus describes an extent in words -- 'from the Anduin to the Sea' -- which names what a border runs between and does not give a line; the one sheet that does draw realm polygons has been measured at 44 miles out. The shape a reader infers from the lit places is the reader's own inference, not the archive's assertion. Only members the map can actually show are counted.",
  "realms": [
   {
@@ -568,7 +568,7 @@
      "where": "sheet"
     }
    ],
-   "n_members": 6,
+   "n_members": 4,
    "n_shown": 3,
    "name": "Khazad-dûm"
   },
@@ -818,30 +818,6 @@
    "name": "Nargothrond"
   },
   {
-   "ages": "FoA,SA,TA",
-   "bounded_by": [],
-   "bounds_cite": null,
-   "bounds_quote": null,
-   "bounds_unheld": [],
-   "key": "rivendell",
-   "kind": "MAN_MADE_REFUGE,MAN_MADE_HALL",
-   "members": [
-    {
-     "key": "bruinen",
-     "name": "Bruinen",
-     "where": "his plate"
-    },
-    {
-     "key": "ford of bruinen",
-     "name": "Ford of Bruinen",
-     "where": "unmapped"
-    }
-   ],
-   "n_members": 2,
-   "n_shown": 2,
-   "name": "Rivendell (Imladris)"
-  },
-  {
    "ages": "FA,YT",
    "bounded_by": [],
    "bounds_cite": null,
@@ -909,7 +885,7 @@
    "key": "brethil",
    "kind": "NATURAL_FOREST",
    "members": [],
-   "n_members": 1,
+   "n_members": 2,
    "n_shown": 0,
    "name": "Brethil"
   },

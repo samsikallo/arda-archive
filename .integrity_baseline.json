@@ -8,7 +8,7 @@
   "arda_attributions.json": 201,
   "arda_bestiary_prompts.json": 33,
   "arda_chronology.json": 397,
-  "arda_concordance.json": 935,
+  "arda_concordance.json": 937,
   "arda_contradictions.json": 17,
   "arda_corpusindex.json": 49,
   "arda_creatures.json": 39,
@@ -34,7 +34,7 @@
   "arda_portrait_prompts.json": 431,
   "arda_quotes.json": 50,
   "arda_realms.json": 60,
-  "arda_realms_layer.json": 31,
+  "arda_realms_layer.json": 30,
   "arda_reckoning.json": 46,
   "arda_scripts.json": 112,
   "arda_search.json": 3026,
@@ -47,5 +47,5 @@
   "arda_undrawn.json": 136,
   "arda_valinor.json": 28
  },
- "accepted": "arda_search.json 3035 -> 3026: the Nomenclature repair (map/gen_nomenclature.py, 0788a39) removed 14 headwords that were mid-sentence fragments and restored 8 real names, net -10 in the search index, offset by +1 elsewhere. index.html's caption and count_check now agree at 3,026. Loremaster, 29 July."
+ "accepted": "arda_realms_layer 31 -> 30: the thirty-first realm was 'region', invented from the vector spec's legend head 'Region labels (letter-spaced caps, no borders)' and containing Dunland, Khand, Minhiriath and Rhun. gen_gazetteer's LEGEND refusal was applied where a place is CREATED and not where containment is READ; both readers now refuse it, so the bogus realm is gone. Accepted deliberately: a shrink is what this guard is for and this one is the repair."
 }
