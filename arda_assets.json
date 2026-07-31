@@ -93,6 +93,13 @@
    "note": "LOAD-BEARING: 610 published file(s) reference it. The owner said on 30 July \"we don't need them\" -- that was about not INVESTING further in them, and deleting them would strip the favicon from every page and break manifest.json's PWA icons and sw.js's precache list. It was 33 files when he said it and is 610 now, because every per-entity page carries one. Do not remove without replacing the references."
   },
   {
+   "file": "arda_baynes_sheet.svg",
+   "what": "25,805 centrelines traced from the black linework of the poster-map Pauline Baynes drew in 1969, from the copy J.R.R. Tolkien marked up for her. Her hand-lettering is NOT traced.",
+   "hand": "Pauline Baynes drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
+   "licence": "published at the owner's explicit direction, 31 July 2026 — his words: the map lines, my request rules. This is NOT a grant from the rightsholder and is not recorded as one. The archive states whose hand it is and on whose instruction it is published, which is the true thing it can say. See CLAUDE.md, The Baynes sheet.",
+   "source": "Middle_Earth_transcribed_map.jpg, supplied by the owner 31 July 2026; the sheet itself is gitignored and not published"
+  },
+  {
    "file": "sarati/Sarati,_Phonetic_Form_-_long_vowels.png",
    "what": "A plate of the sarati, Rúmil's script, from the Commons documentation of the system: a single letter, a vowel sign, or a specimen",
    "source": "Wikimedia Commons, File:Sarati,_Phonetic_Form_-_long_vowels.png",
@@ -546,13 +553,15 @@
    "source": "Wikimedia Commons, File:Sarati_vowels.png",
    "hand": "ZiTee, uploaded to Wikimedia Commons by Datahaki",
    "licence": "public domain — as declared on the Commons file page"
-  },
+  }
+ ],
+ "pending_provenance": [
   {
-   "file": "arda_baynes_sheet.svg",
-   "what": "25,805 centrelines traced from the black linework of the poster-map Pauline Baynes drew in 1969, from the copy J.R.R. Tolkien marked up for her. Her hand-lettering is NOT traced.",
-   "hand": "Pauline Baynes drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
-   "licence": "published at the owner's explicit direction, 31 July 2026 — his words: the map lines, my request rules. This is NOT a grant from the rightsholder and is not recorded as one. The archive states whose hand it is and on whose instruction it is published, which is the true thing it can say. See CLAUDE.md, The Baynes sheet.",
-   "source": "Middle_Earth_transcribed_map.jpg, supplied by the owner 31 July 2026; the sheet itself is gitignored and not published"
+   "file": "sarati/Sarati_-_specimen_the_Two_Trees.png",
+   "what": "A passage of continuous sarati in vertical columns. Its reading, supplied by the archive's owner on 31 July 2026: Valar empannen Aldaru / mi kon-alkorin / ar sealalan taro / ar silankalan ve laure ve misil — the Gods planted the Two Trees in a blessed garth, and they grow high and shine like gold like silver. The forms are attested early Qenya; the weight of them sits in Vinyar Tengwar 27, which this archive holds only as a machine reading, so the text is attested and uncitable at once.",
+   "source": "https://tolkiengateway.net/wiki/Sarati — given by the archive's owner",
+   "blocked": "no page this archive can read names a creator or a licence. tolkiengateway.net returns HTTP 403 to this archive, and the plate is on Wikimedia Commons under no name tried. Its 65 neighbours being CC BY-SA 4.0 is NOT evidence about this one.",
+   "what_would_settle_it": "one line from the Tolkien Gateway file page: the licence template it carries and the uploader it credits."
   }
  ]
 }
