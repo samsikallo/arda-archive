@@ -11,7 +11,8 @@
    "words": 12976,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien, music Donald Swann (1967; 2nd ed. 1978)"
+   "attribution": "J.R.R. Tolkien, music Donald Swann (1967; 2nd ed. 1978)",
+   "ci": "rgeo"
   },
   {
    "file": "secondary sources/A Secret Vice - Tolkien on Invented Languages.pdf",
@@ -24,7 +25,8 @@
    "words": 55249,
    "readable": true,
    "text_provenance": null,
-   "attribution": "J.R.R. Tolkien, ed. Dimitra Fimi & Andrew Higgins (2016)"
+   "attribution": "J.R.R. Tolkien, ed. Dimitra Fimi & Andrew Higgins (2016)",
+   "ci": "secret_vice"
   },
   {
    "file": "secondary sources/The History of The Hobbit.pdf",
@@ -37,7 +39,8 @@
    "words": 444467,
    "readable": true,
    "text_provenance": null,
-   "attribution": "John D. Rateliff (2007, rev. 2011)"
+   "attribution": "John D. Rateliff (2007, rev. 2011)",
+   "ci": "hoth"
   },
   {
    "file": "secondary sources/Pictures by J.R.R. Tolkien.pdf",
@@ -50,7 +53,8 @@
    "words": 7123,
    "readable": true,
    "text_provenance": null,
-   "attribution": "J.R.R. Tolkien, foreword & notes Christopher Tolkien (1979; 2nd ed. 1992)"
+   "attribution": "J.R.R. Tolkien, foreword & notes Christopher Tolkien (1979; 2nd ed. 1992)",
+   "ci": null
   },
   {
    "file": "secondary sources/The Art of The Hobbit.pdf",
@@ -63,7 +67,8 @@
    "words": 20345,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien, ed. Wayne G. Hammond & Christina Scull (2011)"
+   "attribution": "J.R.R. Tolkien, ed. Wayne G. Hammond & Christina Scull (2011)",
+   "ci": "arthobbit"
   },
   {
    "file": "secondary sources/The Art of The Lord of the Rings.pdf",
@@ -76,7 +81,8 @@
    "words": 41538,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien, ed. Wayne G. Hammond & Christina Scull (2015)"
+   "attribution": "J.R.R. Tolkien, ed. Wayne G. Hammond & Christina Scull (2015)",
+   "ci": null
   },
   {
    "file": "(A) The Silmarillion.pdf",
@@ -89,7 +95,8 @@
    "words": 167635,
    "readable": true,
    "text_provenance": "aggregator-watermarked",
-   "attribution": "J.R.R. Tolkien, ed. Christopher Tolkien (1977)"
+   "attribution": "J.R.R. Tolkien, ed. Christopher Tolkien (1977)",
+   "ci": "silm"
   },
   {
    "file": "(B) The Hobbit, or There and Back Again.pdf",
@@ -102,7 +109,8 @@
    "words": 96701,
    "readable": true,
    "text_provenance": null,
-   "attribution": "J.R.R. Tolkien (1937; rev. 1951, 1966)"
+   "attribution": "J.R.R. Tolkien (1937; rev. 1951, 1966)",
+   "ci": "hobbit"
   },
   {
    "file": "(C) The Lord of the Rings.pdf",
@@ -115,7 +123,8 @@
    "words": 563525,
    "readable": true,
    "text_provenance": null,
-   "attribution": "J.R.R. Tolkien (1954-55; rev. 1965, 1966)"
+   "attribution": "J.R.R. Tolkien (1954-55; rev. 1965, 1966)",
+   "ci": "lotr"
   },
   {
    "file": "(D) Unfinished Tales of Númenor and Middle-earth.pdf",
@@ -128,7 +137,8 @@
    "words": 213907,
    "readable": true,
    "text_provenance": null,
-   "attribution": "ed. Christopher Tolkien (1980)"
+   "attribution": "ed. Christopher Tolkien (1980)",
+   "ci": "ut"
   },
   {
    "file": "(E) Beren and Lúthien.pdf",
@@ -141,7 +151,8 @@
    "words": 63832,
    "readable": true,
    "text_provenance": null,
-   "attribution": "ed. Christopher Tolkien (2017)"
+   "attribution": "ed. Christopher Tolkien (2017)",
+   "ci": "beren_bl"
   },
   {
    "file": "(F) The Children of Húrin.pdf",
@@ -154,7 +165,8 @@
    "words": 74809,
    "readable": true,
    "text_provenance": "aggregator-watermarked",
-   "attribution": "ed. Christopher Tolkien (2007)"
+   "attribution": "ed. Christopher Tolkien (2007)",
+   "ci": "coh"
   },
   {
    "file": "(G) The Fall of Gondolin.pdf",
@@ -167,7 +179,8 @@
    "words": 84122,
    "readable": true,
    "text_provenance": null,
-   "attribution": "ed. Christopher Tolkien (2018)"
+   "attribution": "ed. Christopher Tolkien (2018)",
+   "ci": "fog"
   },
   {
    "file": "1 The Book of Lost Tales, Part One.pdf",
@@ -180,7 +193,8 @@
    "words": 142399,
    "readable": true,
    "text_provenance": null,
-   "attribution": "HoME I, ed. Christopher Tolkien (1983)"
+   "attribution": "HoME I, ed. Christopher Tolkien (1983)",
+   "ci": "bolt1"
   },
   {
    "file": "2 The Book of Lost Tales, Part Two.pdf",
@@ -193,7 +207,8 @@
    "words": 182143,
    "readable": true,
    "text_provenance": null,
-   "attribution": "HoME II, ed. Christopher Tolkien (1984)"
+   "attribution": "HoME II, ed. Christopher Tolkien (1984)",
+   "ci": "bolt2"
   },
   {
    "file": "3 The Lays of Beleriand.pdf",
@@ -206,7 +221,8 @@
    "words": 133615,
    "readable": true,
    "text_provenance": null,
-   "attribution": "HoME III, ed. Christopher Tolkien (1985)"
+   "attribution": "HoME III, ed. Christopher Tolkien (1985)",
+   "ci": "lays"
   },
   {
    "file": "4 The Shaping of Middle-Earth.pdf",
@@ -219,7 +235,8 @@
    "words": 146073,
    "readable": true,
    "text_provenance": null,
-   "attribution": "HoME IV, ed. Christopher Tolkien (1986)"
+   "attribution": "HoME IV, ed. Christopher Tolkien (1986)",
+   "ci": "shaping"
   },
   {
    "file": "5 The Lost Road and Other Writings.pdf",
@@ -232,7 +249,8 @@
    "words": 201048,
    "readable": true,
    "text_provenance": null,
-   "attribution": "HoME V, ed. Christopher Tolkien (1987)"
+   "attribution": "HoME V, ed. Christopher Tolkien (1987)",
+   "ci": "lostroad"
   },
   {
    "file": "6 The Return of the Shadow.pdf",
@@ -245,7 +263,8 @@
    "words": 224886,
    "readable": true,
    "text_provenance": null,
-   "attribution": "HoME VI, ed. Christopher Tolkien (1988)"
+   "attribution": "HoME VI, ed. Christopher Tolkien (1988)",
+   "ci": "rots"
   },
   {
    "file": "7 The Treason of Isengard.pdf",
@@ -258,7 +277,8 @@
    "words": 213897,
    "readable": true,
    "text_provenance": null,
-   "attribution": "HoME VII, ed. Christopher Tolkien (1989)"
+   "attribution": "HoME VII, ed. Christopher Tolkien (1989)",
+   "ci": "treason"
   },
   {
    "file": "8 The War of the Ring.pdf",
@@ -271,7 +291,8 @@
    "words": 188088,
    "readable": true,
    "text_provenance": null,
-   "attribution": "HoME VIII, ed. Christopher Tolkien (1990)"
+   "attribution": "HoME VIII, ed. Christopher Tolkien (1990)",
+   "ci": "wotr_home"
   },
   {
    "file": "9 Sauron Defeated.pdf",
@@ -284,7 +305,8 @@
    "words": 196545,
    "readable": true,
    "text_provenance": "aggregator-watermarked",
-   "attribution": "HoME IX, ed. Christopher Tolkien (1992)"
+   "attribution": "HoME IX, ed. Christopher Tolkien (1992)",
+   "ci": "sd"
   },
   {
    "file": "10 Morgoth’s Ring.pdf",
@@ -297,7 +319,8 @@
    "words": 209025,
    "readable": true,
    "text_provenance": "aggregator-watermarked",
-   "attribution": "HoME X, ed. Christopher Tolkien (1993)"
+   "attribution": "HoME X, ed. Christopher Tolkien (1993)",
+   "ci": "mr"
   },
   {
    "file": "11 The War of the Jewels.pdf",
@@ -310,7 +333,8 @@
    "words": 204206,
    "readable": true,
    "text_provenance": "aggregator-watermarked",
-   "attribution": "HoME XI, ed. Christopher Tolkien (1994)"
+   "attribution": "HoME XI, ed. Christopher Tolkien (1994)",
+   "ci": "wj"
   },
   {
    "file": "12 The Peoples of Middle-earth.pdf",
@@ -323,7 +347,8 @@
    "words": 201522,
    "readable": true,
    "text_provenance": "aggregator-watermarked",
-   "attribution": "HoME XII, ed. Christopher Tolkien (1996)"
+   "attribution": "HoME XII, ed. Christopher Tolkien (1996)",
+   "ci": "pome"
   },
   {
    "file": "13 Index.pdf",
@@ -336,7 +361,8 @@
    "words": 169735,
    "readable": true,
    "text_provenance": null,
-   "attribution": "HoME XIII: Index, ed. Christopher Tolkien"
+   "attribution": "HoME XIII: Index, ed. Christopher Tolkien",
+   "ci": "homeindex"
   },
   {
    "file": "The Adventures of Tom Bombadil and Other Verses from the Red Book.pdf",
@@ -349,7 +375,8 @@
    "words": 44608,
    "readable": true,
    "text_provenance": null,
-   "attribution": "J.R.R. Tolkien (1962); ed. Scull & Hammond (2014)"
+   "attribution": "J.R.R. Tolkien (1962); ed. Scull & Hammond (2014)",
+   "ci": "bombadil"
   },
   {
    "file": "The Collected Poems of J.R.R. Tolkien.pdf",
@@ -362,7 +389,8 @@
    "words": 513788,
    "readable": true,
    "text_provenance": "aggregator-watermarked",
-   "attribution": "ed. Scull & Hammond (2024)"
+   "attribution": "ed. Scull & Hammond (2024)",
+   "ci": "poems_coll"
   },
   {
    "file": "secondary sources/The Letters of J.R.R. Tolkien.pdf",
@@ -375,7 +403,8 @@
    "words": 220863,
    "readable": true,
    "text_provenance": null,
-   "attribution": "ed. Humphrey Carpenter with Christopher Tolkien (1981; expanded 2023)"
+   "attribution": "ed. Humphrey Carpenter with Christopher Tolkien (1981; expanded 2023)",
+   "ci": "letters"
   },
   {
    "file": "secondary sources/The Tolkien Reader.pdf",
@@ -388,7 +417,8 @@
    "words": 70929,
    "readable": true,
    "text_provenance": null,
-   "attribution": "J.R.R. Tolkien (1966)"
+   "attribution": "J.R.R. Tolkien (1966)",
+   "ci": "reader"
   },
   {
    "file": "secondary sources/J. R. R. Tolkien- Artist and Illustrator ",
@@ -401,7 +431,8 @@
    "words": 78048,
    "readable": true,
    "text_provenance": null,
-   "attribution": "Hammond & Scull (1995) — reproducing J.R.R. Tolkien's own art"
+   "attribution": "Hammond & Scull (1995) — reproducing J.R.R. Tolkien's own art",
+   "ci": "artist"
   },
   {
    "file": "secondary sources/The Hobbit (illustrated).pdf",
@@ -414,7 +445,8 @@
    "words": 105597,
    "readable": true,
    "text_provenance": "aggregator-watermarked",
-   "attribution": "J.R.R. Tolkien, illustrated edition"
+   "attribution": "J.R.R. Tolkien, illustrated edition",
+   "ci": "hobbit_ill"
   },
   {
    "file": "The Letters of J. R. R. Tolkien (Revised and Expanded Edition).epub",
@@ -427,7 +459,8 @@
    "words": 36185,
    "readable": true,
    "text_provenance": null,
-   "attribution": "ed. Humphrey Carpenter with Christopher Tolkien; revised Hammond & Scull (2023)"
+   "attribution": "ed. Humphrey Carpenter with Christopher Tolkien; revised Hammond & Scull (2023)",
+   "ci": "letters_rev"
   },
   {
    "file": "(H) The Fall of Númenor and Other Tales from the Second Age of Middle-earth.pdf",
@@ -440,7 +473,8 @@
    "words": 97379,
    "readable": true,
    "text_provenance": "aggregator-watermarked",
-   "attribution": "ed. Brian Sibley (2022)"
+   "attribution": "ed. Brian Sibley (2022)",
+   "ci": "fon"
   },
   {
    "file": "(I) The Nature of Middle-earth.pdf",
@@ -453,7 +487,8 @@
    "words": 160887,
    "readable": true,
    "text_provenance": "aggregator-watermarked",
-   "attribution": "ed. Carl F. Hostetter (2021)"
+   "attribution": "ed. Carl F. Hostetter (2021)",
+   "ci": "nome"
   },
   {
    "file": "The J. R. R. Tolkien Companion and Guide.pdf",
@@ -466,7 +501,8 @@
    "words": 434964,
    "readable": true,
    "text_provenance": null,
-   "attribution": "Hammond & Scull (2006; rev. 2017)"
+   "attribution": "Hammond & Scull (2006; rev. 2017)",
+   "ci": "companion"
   },
   {
    "file": "The Lord of the Rings A Reader_s Companion.pdf",
@@ -479,7 +515,8 @@
    "words": 424951,
    "readable": true,
    "text_provenance": null,
-   "attribution": "Hammond & Scull (2005)"
+   "attribution": "Hammond & Scull (2005)",
+   "ci": "rc"
   },
   {
    "file": "secondary sources/The Art of The Fellowship of the Ring.pdf",
@@ -492,7 +529,8 @@
    "words": 573,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "ed. Gary Russell (2002)"
+   "attribution": "ed. Gary Russell (2002)",
+   "ci": "artfotr"
   },
   {
    "file": "The Atlas of Middle-Earth.pdf",
@@ -505,7 +543,8 @@
    "words": 78922,
    "readable": true,
    "text_provenance": null,
-   "attribution": "Karen Wynn Fonstad (1981; rev. 1991)"
+   "attribution": "Karen Wynn Fonstad (1981; rev. 1991)",
+   "ci": "atlas"
   },
   {
    "file": "The Complete Guide to Middle-Earth.pdf",
@@ -518,7 +557,8 @@
    "words": 187816,
    "readable": true,
    "text_provenance": "aggregator-watermarked",
-   "attribution": "Robert Foster (1971; rev. 1978)"
+   "attribution": "Robert Foster (1971; rev. 1978)",
+   "ci": "guide"
   },
   {
    "file": "secondary sources/The Complete Tolkien Companion.pdf",
@@ -531,7 +571,8 @@
    "words": 242577,
    "readable": true,
    "text_provenance": null,
-   "attribution": "J.E.A. Tyler (1976; rev. 2002)"
+   "attribution": "J.E.A. Tyler (1976; rev. 2002)",
+   "ci": "companion_t"
   },
   {
    "file": "secondary sources/A Gateway to Sindarin.pdf",
@@ -544,7 +585,8 @@
    "words": 137692,
    "readable": true,
    "text_provenance": null,
-   "attribution": "David Salo (2004)"
+   "attribution": "David Salo (2004)",
+   "ci": "sindarin"
   },
   {
    "file": "secondary sources/Tolkien_heraldry.pdf",
@@ -557,7 +599,8 @@
    "words": 19327,
    "readable": true,
    "text_provenance": null,
-   "attribution": "A. Żurek, 'Heraldry in J.R.R. Tolkien's Legendarium', The Coat of Arms 4th ser. 5 (2022)"
+   "attribution": "A. Żurek, 'Heraldry in J.R.R. Tolkien's Legendarium', The Coat of Arms 4th ser. 5 (2022)",
+   "ci": "heraldry_ca"
   },
   {
    "file": "secondary sources/Tolkien-Artwork.pdf",
@@ -570,7 +613,8 @@
    "words": 81,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "artwork compilation, provenance unstated"
+   "attribution": "artwork compilation, provenance unstated",
+   "ci": "artwork"
   },
   {
    "file": "Vinyar Tengwar 43.pdf",
@@ -583,7 +627,8 @@
    "words": 16887,
    "readable": true,
    "text_provenance": null,
-   "attribution": "ed. Carl F. Hostetter; texts co-edited with Patrick Wynne and Arden R. Smith; Elvish Linguistic Fellowship, January 2002, by permission of the Tolkien Estate"
+   "attribution": "ed. Carl F. Hostetter; texts co-edited with Patrick Wynne and Arden R. Smith; Elvish Linguistic Fellowship, January 2002, by permission of the Tolkien Estate",
+   "ci": "vt43"
   },
   {
    "file": "FORODRIM.pdf",
@@ -596,7 +641,8 @@
    "words": 4616,
    "readable": true,
    "text_provenance": null,
-   "attribution": "Måns Björkman, 'Emblems and Heraldry', Forodrim / Gobennas (2000)"
+   "attribution": "Måns Björkman, 'Emblems and Heraldry', Forodrim / Gobennas (2000)",
+   "ci": "forodrim"
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 1.pdf",
@@ -609,7 +655,8 @@
    "words": 13575,
    "readable": true,
    "text_provenance": null,
-   "attribution": "ed. Paula Marmor, Mythopoeic Linguistic Fellowship (Autumn 1971)"
+   "attribution": "ed. Paula Marmor, Mythopoeic Linguistic Fellowship (Autumn 1971)",
+   "ci": "pe1"
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 2.pdf",
@@ -622,7 +669,8 @@
    "words": 16866,
    "readable": true,
    "text_provenance": null,
-   "attribution": "ed. Paula Marmor, Mythopoeic Linguistic Fellowship (1972)"
+   "attribution": "ed. Paula Marmor, Mythopoeic Linguistic Fellowship (1972)",
+   "ci": "pe2"
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 3.pdf",
@@ -635,7 +683,8 @@
    "words": 26540,
    "readable": true,
    "text_provenance": null,
-   "attribution": "ed. Paula Marmor, Mythopoeic Linguistic Fellowship (1972)"
+   "attribution": "ed. Paula Marmor, Mythopoeic Linguistic Fellowship (1972)",
+   "ci": "pe3"
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 4.pdf",
@@ -648,7 +697,8 @@
    "words": 35416,
    "readable": true,
    "text_provenance": null,
-   "attribution": "ed. Paula Marmor, Mythopoeic Linguistic Fellowship (1973)"
+   "attribution": "ed. Paula Marmor, Mythopoeic Linguistic Fellowship (1973)",
+   "ci": "pe4"
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 5.pdf",
@@ -661,7 +711,8 @@
    "words": 28172,
    "readable": true,
    "text_provenance": null,
-   "attribution": "ed. Paula Marmor, Mythopoeic Linguistic Fellowship (1974)"
+   "attribution": "ed. Paula Marmor, Mythopoeic Linguistic Fellowship (1974)",
+   "ci": "pe5"
   },
   {
    "file": "secondary sources/LOTR ROLEPLAY.pdf",
@@ -674,7 +725,8 @@
    "words": 113997,
    "readable": true,
    "text_provenance": null,
-   "attribution": "licensed roleplaying game material"
+   "attribution": "licensed roleplaying game material",
+   "ci": "roleplay"
   },
   {
    "file": "secondary sources/Reader And Educator Guide To the Hobbit And the Lord Of The Rings.pdf",
@@ -687,7 +739,8 @@
    "words": 50489,
    "readable": true,
    "text_provenance": "aggregator-watermarked",
-   "attribution": "publisher's teaching guide"
+   "attribution": "publisher's teaching guide",
+   "ci": "readerguide"
   },
   {
    "file": "secondary sources/THE-LORD-OF-THE-RINGS-Urania-Finarte-14.12.2022.pdf",
@@ -700,7 +753,8 @@
    "words": 32914,
    "readable": true,
    "text_provenance": null,
-   "attribution": "auction catalogue (Urania/Finarte, 14 Dec 2022)"
+   "attribution": "auction catalogue (Urania/Finarte, 14 Dec 2022)",
+   "ci": "urania"
   },
   {
    "file": "The King's Letter (manuscript plate).png",
@@ -713,7 +767,8 @@
    "words": 0,
    "readable": false,
    "text_provenance": null,
-   "attribution": "J.R.R. Tolkien (manuscript; printed in Sauron Defeated)"
+   "attribution": "J.R.R. Tolkien (manuscript; printed in Sauron Defeated)",
+   "ci": "kingsletter"
   },
   {
    "file": "Parma Eldalamberon 11.pdf",
@@ -726,7 +781,8 @@
    "words": 39557,
    "readable": true,
    "text_provenance": null,
-   "attribution": "J.R.R. Tolkien, ed. Christopher Gilson, Patrick Wynne, Arden Smith and Carl Hostetter (1995)"
+   "attribution": "J.R.R. Tolkien, ed. Christopher Gilson, Patrick Wynne, Arden Smith and Carl Hostetter (1995)",
+   "ci": "pe11"
   },
   {
    "file": "Parma Eldalamberon 13.pdf",
@@ -739,7 +795,8 @@
    "words": 66174,
    "readable": true,
    "text_provenance": null,
-   "attribution": "J.R.R. Tolkien, ed. Gilson, Wynne, Smith and Hostetter (2001)"
+   "attribution": "J.R.R. Tolkien, ed. Gilson, Wynne, Smith and Hostetter (2001)",
+   "ci": "pe13"
   },
   {
    "file": "Parma Eldalamberon 14.pdf",
@@ -752,7 +809,8 @@
    "words": 66874,
    "readable": true,
    "text_provenance": null,
-   "attribution": "J.R.R. Tolkien, ed. Gilson, Wynne, Smith and Hostetter (2003)"
+   "attribution": "J.R.R. Tolkien, ed. Gilson, Wynne, Smith and Hostetter (2003)",
+   "ci": "pe14"
   },
   {
    "file": "Parma Eldalamberon 15.pdf",
@@ -765,7 +823,8 @@
    "words": 64774,
    "readable": true,
    "text_provenance": null,
-   "attribution": "J.R.R. Tolkien, ed. Gilson, Wynne, Smith and Hostetter (2004)"
+   "attribution": "J.R.R. Tolkien, ed. Gilson, Wynne, Smith and Hostetter (2004)",
+   "ci": "pe15"
   },
   {
    "file": "Parma Eldalamberon 17.pdf",
@@ -778,7 +837,8 @@
    "words": 123851,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien, ed. Christopher Gilson (2007)"
+   "attribution": "J.R.R. Tolkien, ed. Christopher Gilson (2007)",
+   "ci": "pe17"
   },
   {
    "file": "Parma Eldalamberon 23.pdf",
@@ -791,7 +851,8 @@
    "words": 73589,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien, ed. Elvish Linguistic Fellowship"
+   "attribution": "J.R.R. Tolkien, ed. Elvish Linguistic Fellowship",
+   "ci": "pe23"
   },
   {
    "file": "Vinyar Tengwar 41-50.pdf",
@@ -804,7 +865,8 @@
    "words": 189733,
    "readable": true,
    "text_provenance": null,
-   "attribution": "J.R.R. Tolkien, ed. Carl F. Hostetter and the Elvish Linguistic Fellowship, by permission of the Tolkien Estate (2000-2013)"
+   "attribution": "J.R.R. Tolkien, ed. Carl F. Hostetter and the Elvish Linguistic Fellowship, by permission of the Tolkien Estate (2000-2013)",
+   "ci": "vt4150"
   },
   {
    "file": "Vinyar Tengwar 39-41 - Osanwe-kenta (extract).pdf",
@@ -817,7 +879,8 @@
    "words": 8041,
    "readable": true,
    "text_provenance": null,
-   "attribution": "J.R.R. Tolkien, ed. Carl F. Hostetter (1998)"
+   "attribution": "J.R.R. Tolkien, ed. Carl F. Hostetter (1998)",
+   "ci": "osanwe"
   },
   {
    "file": "Vinyar Tengwar 24.pdf",
@@ -830,7 +893,8 @@
    "words": 15921,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "ed. Elvish Linguistic Fellowship (1992)"
+   "attribution": "ed. Elvish Linguistic Fellowship (1992)",
+   "ci": "vt24"
   },
   {
    "file": "Vinyar Tengwar 25.pdf",
@@ -843,7 +907,8 @@
    "words": 11705,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "ed. Elvish Linguistic Fellowship (1992)"
+   "attribution": "ed. Elvish Linguistic Fellowship (1992)",
+   "ci": "vt25"
   },
   {
    "file": "Vinyar Tengwar Index.pdf",
@@ -856,7 +921,8 @@
    "words": 31178,
    "readable": true,
    "text_provenance": null,
-   "attribution": "compiled for the Elvish Linguistic Fellowship"
+   "attribution": "compiled for the Elvish Linguistic Fellowship",
+   "ci": "vtindex"
   },
   {
    "file": "Giraudeau - A New Q(u)enya Lexicon (from PE11).pdf",
@@ -869,7 +935,8 @@
    "words": 11649,
    "readable": true,
    "text_provenance": null,
-   "attribution": "David Giraudeau, lambenore.free.fr"
+   "attribution": "David Giraudeau, lambenore.free.fr",
+   "ci": "gir_pe11"
   },
   {
    "file": "Giraudeau - A New Q(u)enya Lexicon (from PE17).pdf",
@@ -882,7 +949,8 @@
    "words": 58046,
    "readable": true,
    "text_provenance": null,
-   "attribution": "David Giraudeau, lambenore.free.fr"
+   "attribution": "David Giraudeau, lambenore.free.fr",
+   "ci": "gir_pe17"
   },
   {
    "file": "Giraudeau - A New Q(u)enya Lexicon (from PE21).pdf",
@@ -895,7 +963,8 @@
    "words": 10641,
    "readable": true,
    "text_provenance": null,
-   "attribution": "David Giraudeau, lambenore.free.fr"
+   "attribution": "David Giraudeau, lambenore.free.fr",
+   "ci": "gir_pe21"
   },
   {
    "file": "Giraudeau - Parma Eldalamberon 12, changes in the 2011 printing.pdf",
@@ -908,7 +977,8 @@
    "words": 4766,
    "readable": true,
    "text_provenance": null,
-   "attribution": "David Giraudeau, lambenore.free.fr"
+   "attribution": "David Giraudeau, lambenore.free.fr",
+   "ci": "gir_pe12"
   },
   {
    "file": "Giraudeau - Sindarin Corpus (from PE17).pdf",
@@ -921,7 +991,8 @@
    "words": 23048,
    "readable": true,
    "text_provenance": null,
-   "attribution": "David Giraudeau, lambenore.free.fr"
+   "attribution": "David Giraudeau, lambenore.free.fr",
+   "ci": "gir_sind"
   },
   {
    "file": "Kloczko - High Elvish for Beginners (notes by Giraudeau).pdf",
@@ -934,7 +1005,8 @@
    "words": 10824,
    "readable": true,
    "text_provenance": null,
-   "attribution": "Edouard J. Kloczko, notes by David Giraudeau (2013)"
+   "attribution": "Edouard J. Kloczko, notes by David Giraudeau (2013)",
+   "ci": "kloczko"
   },
   {
    "file": "(K) The Road Goes Ever On - A Song Cycle (2nd digitisation).pdf",
@@ -947,7 +1019,8 @@
    "words": 12168,
    "readable": true,
    "text_provenance": null,
-   "attribution": "J.R.R. Tolkien, music Donald Swann (1967) — a second scan supplied by the owner 2026-07-31"
+   "attribution": "J.R.R. Tolkien, music Donald Swann (1967) — a second scan supplied by the owner 2026-07-31",
+   "ci": null
   },
   {
    "file": "Ellison - The road goes ever on, the Journey motive in The Lord of the Rings.pdf",
@@ -960,7 +1033,8 @@
    "words": 5246,
    "readable": true,
    "text_provenance": null,
-   "attribution": "John Ellison"
+   "attribution": "John Ellison",
+   "ci": null
   },
   {
    "file": "Heraldry - Tolkien Gateway.pdf",
@@ -973,7 +1047,8 @@
    "words": 7270,
    "readable": true,
    "text_provenance": null,
-   "attribution": "Tolkien Gateway contributors, printed from the wiki 2026-07-25"
+   "attribution": "Tolkien Gateway contributors, printed from the wiki 2026-07-25",
+   "ci": "gatewayheraldry"
   },
   {
    "file": "Giraudeau - J.R.R. Tolkien, a global theory.pdf",
@@ -986,7 +1061,8 @@
    "words": 20392,
    "readable": true,
    "text_provenance": null,
-   "attribution": "David Giraudeau, lambenore.free.fr"
+   "attribution": "David Giraudeau, lambenore.free.fr",
+   "ci": "gir_theory"
   },
   {
    "file": "Vinyar Tengwar 11.pdf",
@@ -999,7 +1075,8 @@
    "words": 10730,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate"
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "ci": "vt11"
   },
   {
    "file": "Vinyar Tengwar 12.pdf",
@@ -1012,7 +1089,8 @@
    "words": 12031,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate"
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "ci": "vt12"
   },
   {
    "file": "Vinyar Tengwar 14.pdf",
@@ -1025,7 +1103,8 @@
    "words": 12416,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate"
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "ci": "vt14"
   },
   {
    "file": "Vinyar Tengwar 27.pdf",
@@ -1038,7 +1117,8 @@
    "words": 20746,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate"
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "ci": "vt27"
   },
   {
    "file": "Vinyar Tengwar 28.pdf",
@@ -1051,7 +1131,8 @@
    "words": 18128,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate"
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "ci": "vt28"
   },
   {
    "file": "Vinyar Tengwar 29.pdf",
@@ -1064,7 +1145,8 @@
    "words": 11104,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate"
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "ci": "vt29"
   },
   {
    "file": "Vinyar Tengwar 31.pdf",
@@ -1077,7 +1159,8 @@
    "words": 15008,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate"
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "ci": "vt31"
   },
   {
    "file": "Vinyar Tengwar 36.pdf",
@@ -1090,7 +1173,8 @@
    "words": 17719,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate"
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "ci": "vt36"
   },
   {
    "file": "Vinyar Tengwar 37.pdf",
@@ -1103,7 +1187,8 @@
    "words": 11341,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate"
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "ci": "vt37"
   },
   {
    "file": "Vinyar Tengwar 39.pdf",
@@ -1116,7 +1201,8 @@
    "words": 17376,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate"
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "ci": "vt39"
   },
   {
    "file": "Vinyar Tengwar 39 (2).pdf",
@@ -1129,7 +1215,22 @@
    "words": 17417,
    "readable": true,
    "text_provenance": "ocr-derived",
-   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate"
+   "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
+   "ci": "vt39_2"
+  },
+  {
+   "file": null,
+   "title": "LotR Appendices A III, C, E — tables recovered from the page images",
+   "tier": 5,
+   "hand": "this archive, transcribing from the plates",
+   "kind": "apparatus",
+   "covers": "whole legendarium",
+   "primary_text": false,
+   "words": 12795,
+   "readable": true,
+   "text_provenance": "transcribed by this archive",
+   "attribution": "transcribed by this archive from the plates; tier 5 by origin, tier 1 by content",
+   "ci": "apptables"
   }
  ],
  "edges": [

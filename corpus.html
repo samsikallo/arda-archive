@@ -51,9 +51,30 @@ h2{font-variant:small-caps;font-weight:normal;color:#5a4626;border-bottom:1px so
 <span class="tab" data-t="ask">Ask the Archive</span>
 </div>
 
+<style>
+#p-shelf .fx-axis{margin:.45rem 0}
+#p-shelf .fx-lab{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;opacity:.72;margin-bottom:.22rem}
+#p-shelf .fx-b{display:inline-block;margin:.12rem .25rem .12rem 0;padding:.18rem .55rem;border:1px solid rgba(122,74,18,.35);
+  border-radius:2px;font-size:.8rem;cursor:pointer;background:transparent;color:inherit;font-family:inherit}
+#p-shelf .fx-b[aria-pressed="true"]{background:#7a4a12;color:#fff;border-color:#7a4a12}
+#p-shelf .fx-b .n{opacity:.6;font-size:.75em;margin-left:.3rem}
+#p-shelf .fx-meta{font-size:.78rem;opacity:.8;margin:.15rem 0 .3rem}
+#p-shelf .fx-tier{display:inline-block;padding:0 .35rem;border-radius:2px;font-size:.72rem;
+  background:rgba(122,74,18,.12);border:1px solid rgba(122,74,18,.3);margin-right:.35rem}
+#p-shelf .fx-u{color:#9a3b1b;font-size:.8rem;margin:.2rem 0}
+#p-shelf .fx-e{font-size:.75rem;opacity:.8;font-style:italic;margin-top:.2rem}
+@media (prefers-color-scheme:dark){
+ #p-shelf .fx-b[aria-pressed="true"]{background:#c9a227;color:#1b1a17;border-color:#c9a227}
+ #p-shelf .fx-tier{background:rgba(201,162,39,.14);border-color:rgba(201,162,39,.32)}
+ #p-shelf .fx-u{color:#e08b6a}
+}
+</style>
 <div class="pane on" id="p-shelf">
- <div class="cite">The 84 texts, each with its weight in words, its declared nature, its table of divisions — and the people and places that live most thickly in it. Bars are proportional to word-count.</div>
+ <div class="cite">The whole shelf as ONE list — every registered source with its tier, whose hand it is, what kind of book it is and which part of the legendarium it is evidence about; and for every volume the archive has extracted, its weight in words, its declared nature, its table of divisions, and the people and places that live most thickly in it. Bars are proportional to word-count. <b>Where two sources disagree the lower tier wins.</b></div>
+ <div id="fx-filters"></div>
+ <div id="fx-count" class="cite"></div>
  <div class="grid" id="shelf"></div>
+ <div class="cite" id="fx-note"></div>
 </div>
 
 <div class="pane" id="p-conc">
@@ -86,92 +107,6 @@ h2{font-variant:small-caps;font-weight:normal;color:#5a4626;border-bottom:1px so
   <div id="q3out"></div>
  </div>
 </div>
-
-<div class="card" id="facets">
- <h2>The shelf, by facet</h2>
- <div class="cite">Every source on four independent axes — what KIND of book it is, WHOSE HAND it is,
- what TIER it carries, and WHICH PART of the legendarium it is evidence about. The axes are
- independent on purpose: a source has all four at once, so a single tree would make one of them the
- truth and hide the rest. Choose any combination; the count updates. <b>Tier decides disputes</b> —
- where two sources disagree the lower tier wins.</div>
- <div id="fx-filters"></div>
- <div id="fx-count" class="cite"></div>
- <div id="fx-grid"></div>
- <div class="cite" id="fx-note"></div>
-</div>
-
-<style>
-#facets .fx-axis{margin:.5rem 0}
-#facets .fx-lab{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;opacity:.72;margin-bottom:.25rem}
-#facets .fx-b{display:inline-block;margin:.12rem .25rem .12rem 0;padding:.2rem .55rem;border:1px solid rgba(122,74,18,.35);
-  border-radius:2px;font-size:.82rem;cursor:pointer;background:transparent;color:inherit;font-family:inherit}
-#facets .fx-b[aria-pressed="true"]{background:#7a4a12;color:#fff;border-color:#7a4a12}
-#facets .fx-b .n{opacity:.6;font-size:.75em;margin-left:.3rem}
-#facets #fx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.6rem;margin-top:.7rem}
-#facets .fx-c{border:1px solid rgba(122,74,18,.22);border-left-width:3px;padding:.5rem .6rem;font-size:.85rem}
-#facets .fx-c.t1{border-left-color:#7a4a12}
-#facets .fx-c.t2{border-left-color:#a8762f}
-#facets .fx-c.t3{border-left-color:#c0a06a}
-#facets .fx-c.t4{border-left-color:#d8cbb0}
-#facets .fx-t{font-weight:600;line-height:1.25}
-#facets .fx-m{opacity:.75;font-size:.78rem;margin-top:.25rem}
-#facets .fx-u{color:#9a3b1b;font-size:.78rem;margin-top:.2rem}
-#facets .fx-e{font-size:.75rem;margin-top:.25rem;opacity:.8;font-style:italic}
-@media (prefers-color-scheme:dark){
-  #facets .fx-b[aria-pressed="true"]{background:#c9a227;color:#1b1a17;border-color:#c9a227}
-  #facets .fx-c{border-color:rgba(201,162,39,.25)}
-  #facets .fx-c.t1{border-left-color:#c9a227}#facets .fx-c.t2{border-left-color:#a8862f}
-  #facets .fx-c.t3{border-left-color:#7d6a3a}#facets .fx-c.t4{border-left-color:#4d4636}
-  #facets .fx-u{color:#e08b6a}
-}
-</style>
-<script>
-(function(){
- var D=null,sel={kind:null,hand:null,tier:null,covers:null};
- var AX=[["kind","what kind of book"],["hand","whose hand"],["tier","tier"],["covers","what it is evidence about"]];
- function match(s){return AX.every(function(a){var k=a[0];return sel[k]===null||String(s[k])===String(sel[k]);});}
- function draw(){
-  var F=document.getElementById("fx-filters");F.innerHTML="";
-  AX.forEach(function(a){
-   var k=a[0],box=document.createElement("div");box.className="fx-axis";
-   var l=document.createElement("div");l.className="fx-lab";l.textContent=a[1];box.appendChild(l);
-   var vals={};D.sources.forEach(function(s){
-     var keep=AX.every(function(b){return b[0]===k||sel[b[0]]===null||String(s[b[0]])===String(sel[b[0]]);});
-     if(keep)vals[s[k]]=(vals[s[k]]||0)+1;});
-   Object.keys(vals).sort(function(x,y){return vals[y]-vals[x];}).forEach(function(v){
-    var b=document.createElement("button");b.className="fx-b";b.type="button";
-    b.setAttribute("aria-pressed",String(sel[k])===String(v));
-    b.innerHTML=(k==="tier"?"tier "+v:v)+' <span class="n">'+vals[v]+"</span>";
-    b.onclick=function(){sel[k]=(String(sel[k])===String(v))?null:v;draw();};
-    box.appendChild(b);});
-   F.appendChild(box);});
-  var rows=D.sources.filter(match);
-  document.getElementById("fx-count").textContent=
-    rows.length+" of "+D.sources.length+" source"+(rows.length===1?"":"s")+
-    (Object.keys(sel).every(function(k){return sel[k]===null;})?" — no filter applied":"");
-  var G=document.getElementById("fx-grid");G.innerHTML="";
-  rows.sort(function(a,b){return a.tier-b.tier||a.title.localeCompare(b.title);}).forEach(function(s){
-   var c=document.createElement("div");c.className="fx-c t"+s.tier;
-   var e=D.edges.filter(function(x){return x.from===s.file;});
-   c.innerHTML='<div class="fx-t">'+s.title+'</div>'+
-     '<div class="fx-m">tier '+s.tier+' · '+s.kind+' · '+s.hand+'</div>'+
-     '<div class="fx-m">'+s.covers+(s.primary_text?' · <b>Tolkien\u2019s own words</b>':"")+'</div>'+
-     (s.readable?'<div class="fx-m">'+s.words.toLocaleString()+' words'+
-        (s.text_provenance?' \u00b7 '+s.text_provenance:"")+'</div>'
-      :'<div class="fx-u">held but not yet readable</div>')+
-     (e.length?'<div class="fx-e">'+e[0].rel+'</div>':"");
-   G.appendChild(c);});
- }
- fetch("arda_corpusmap.json").then(function(r){return r.json();}).then(function(j){
-   D=j;draw();
-   document.getElementById("fx-note").textContent=
-     "Facets are derived by named rule in map/gen_corpusmap.py; a source no rule matches is shown as "+
-     "unclassified rather than swept into a default. "+D.edges.length+" derivation edge(s) are drawn, "+
-     "and only where the register states one \u2014 none is inferred from a title.";
- }).catch(function(){
-   document.getElementById("fx-count").textContent="the facet map could not be loaded.";});
-})();
-</script>
 
 <div class="ft">The shelf and concordance are machine-built from the full-text extractions of all 84 texts (re-ingested 2026-07-24, when the shelf grew to 87 registered sources); questions run over the same datasets that power every hall — <a href="arda_chronology.json">chronology</a> · <a href="arda_realms.json">realms</a> · <a href="arda_languages.json">languages</a>. Where a dataset cannot answer, the answer is the refusal, not a guess.</div>
 </div>
@@ -220,11 +155,45 @@ function init(){
    .sort((a,b)=>b[1].n-a[1].n || a[0].localeCompare(b[0]))
    .slice(0,10);
  };
- $("#shelf").innerHTML=CI.map(v=>{
-  const top=topFor(v.id);
-  return '<div class="card"><h3>'+esc(v.t)+'</h3>'+
-  '<div class="bar" style="width:'+Math.max(6,Math.round(v.words/maxw*100))+'%"></div>'+
-  '<div class="cite">'+v.words.toLocaleString()+' words · '+esc(v.tags)+'</div>'+
+ // ── ONE LIST, TWO DATASETS. ────────────────────────────────────────────────────────────────
+ // The hall showed the shelf twice: this list (bars, divisions, who lives here) and a separate
+ // facet card. The owner asked for one carrying everything. arda_corpusmap is the register
+ // JOINED to this index on gen_corpusindex.py's own id->corpus_file map, so a card can show a
+ // source's tier, hand, kind and period AND its extracted text in the same place.
+ //
+ // THE POPULATION IS THE SUPERSET, WHICH IS THE POINT: 84 volumes have extracted text, 88
+ // sources are registered. A source with no text still gets a card and SAYS it is unreadable,
+ // where before it was simply absent from the hall.
+ const CIBY={}; CI.forEach(v=>CIBY[v.id]=v);
+ let FX={sources:[],edges:[]}, SEL={kind:null,hand:null,tier:null,covers:null};
+ const AX=[["kind","what kind of book"],["hand","whose hand"],["tier","tier"],
+           ["covers","what it is evidence about"]];
+ const fxMatch=s=>AX.every(a=>SEL[a[0]]===null||String(s[a[0]])===String(SEL[a[0]]));
+ function card(s){
+  const v=s.ci?CIBY[s.ci]:null;
+  const top=v?topFor(v.id):[];
+  return '<div class="card"><h3>'+esc(v?v.t:s.title)+'</h3>'+
+  '<div class="fx-meta"><span class="fx-tier">tier '+s.tier+'</span>'+esc(s.kind)+' · '+esc(s.hand)+
+    ' · '+esc(s.covers)+(s.primary_text?' · <b>Tolkien\u2019s own words</b>':'')+'</div>'+
+  // THE UNREADABLE NOTICE IS DRIVEN BY THE WORD COUNT, NOT BY WHICH DATASET KNOWS THE SOURCE.
+  // My first version showed it only when the corpusindex had no entry, so a volume that HAS an
+  // index entry holding zero words rendered "0 words" and a bar of minimum width instead of
+  // saying it cannot be read. A before/after count caught it: unreadable notices went 2 to 1.
+  // Whether a book can be read is a fact about the book, not about which table mentions it.
+  ((v?v.words:s.words)>0
+    ?(v?'<div class="bar" style="width:'+Math.max(6,Math.round(v.words/maxw*100))+'%"></div>'+
+        '<div class="cite">'+v.words.toLocaleString()+' words · '+esc(v.tags)+'</div>'
+       :'<div class="cite">'+s.words.toLocaleString()+' words</div>')
+    :'<div class="fx-u">held on the shelf, not yet readable — no extracted text</div>'
+      +(v&&v.tags?'<div class="cite">'+esc(v.tags)+'</div>':''))+
+  (s.text_provenance?'<div class="cite">text provenance: '+esc(s.text_provenance)+'</div>':'')+
+  (FX.edges.filter(e=>e.from===s.file).slice(0,1)
+     .map(e=>'<div class="fx-e">'+esc(e.rel)+'</div>').join(''))+
+  (v?divisionsAndNames(v,top):'')+
+  '</div>';
+ }
+ function divisionsAndNames(v,top){
+  return ''+
   '<details><summary>'+((v.nheads||v.heads.length)>v.heads.length
      ?(v.nheads+' divisions — first '+v.heads.length+' shown')
      :(v.heads.length+' divisions'))+'</summary><div class="heads">'+v.heads.map(esc).join("<br>")+'</div></details>'+
@@ -240,7 +209,43 @@ function init(){
        +r.who.map(w=>'<a href="'+w[1]+'">'+esc(w[0])+'</a>').join(' and ')
        +'. <span class="cite">The count belongs to the name; the corpus does not divide it.</span></div>';
    }).join("")+'</details>':'')+
-  '</div>'}).join("");
+  '';
+ }
+ function fxDraw(){
+  const F=$("#fx-filters"); F.innerHTML="";
+  AX.forEach(a=>{
+   const k=a[0], box=document.createElement("div"); box.className="fx-axis";
+   const l=document.createElement("div"); l.className="fx-lab"; l.textContent=a[1]; box.appendChild(l);
+   const vals={};
+   FX.sources.forEach(s=>{
+     const keep=AX.every(b=>b[0]===k||SEL[b[0]]===null||String(s[b[0]])===String(SEL[b[0]]));
+     if(keep) vals[s[k]]=(vals[s[k]]||0)+1;});
+   Object.keys(vals).sort((x,y)=>vals[y]-vals[x]).forEach(val=>{
+    const b=document.createElement("button"); b.className="fx-b"; b.type="button";
+    b.setAttribute("aria-pressed",String(SEL[k])===String(val));
+    b.innerHTML=(k==="tier"?"tier "+val:esc(val))+' <span class="n">'+vals[val]+'</span>';
+    b.onclick=()=>{SEL[k]=(String(SEL[k])===String(val))?null:val; fxDraw();};
+    box.appendChild(b);});
+   F.appendChild(box);});
+  const rows=FX.sources.filter(fxMatch);
+  $("#fx-count").textContent=rows.length+" of "+FX.sources.length+" source"+(rows.length===1?"":"s")+
+    (AX.every(a=>SEL[a[0]]===null)?" — no filter applied":"");
+  $("#shelf").innerHTML=rows.slice().sort((a,b)=>
+     (b.words||0)-(a.words||0)||String(a.title).localeCompare(String(b.title))).map(card).join("");
+ }
+ fetch("arda_corpusmap.json").then(r=>r.json()).then(j=>{
+   FX=j; fxDraw();
+   $("#fx-note").textContent="Facets are derived by named rule in map/gen_corpusmap.py; a source no "+
+    "rule matches is shown as unclassified rather than swept into a default. "+FX.edges.length+
+    " derivation edge(s) are drawn, and only where the register states one.";
+ }).catch(()=>{
+   // FAILS BACK TO THE ORIGINAL LIST rather than to an empty hall: if the facet dataset cannot be
+   // fetched the reader still gets every volume with its bars, divisions and names, which is what
+   // this pane showed before the facets existed. A new feature must not be able to remove an old one.
+   $("#shelf").innerHTML=CI.map(v=>card({ci:v.id,tier:"?",kind:"—",hand:"—",covers:"—",
+     title:v.t,words:v.words,readable:true})).join("");
+   $("#fx-count").textContent="the facet data could not be loaded — showing every volume, unfiltered.";
+ });
  // concordance
  $("#cq").addEventListener("input",()=>{
   const q=$("#cq").value.trim().toLowerCase();
