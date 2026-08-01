@@ -63,3 +63,18 @@ arda_traced.svg
 # published and serving nothing. It stays in the workshop, with the vectors, for the same
 # reason: the archive measures its own map against his and does not republish his.
 arda_his_anchors.json
+
+# THE CENTRELINE SHEETS, WITHDRAWN 1 Aug 2026 under the owner's artwork ruling of 29 July:
+# "The archive does not republish Tolkien's or Christopher Tolkien's artwork." These eight say in
+# their OWN header comments that they are "centrelines of Christopher Tolkien's linework, one path
+# per stroke", and they were being SERVED publicly (bel.svg 1.78 MB, gm.svg 3.00 MB, fetched from
+# the live site by the Fixer, who found this).
+#
+# arda_traced.svg was withdrawn under the same ruling and these are the eight sheets it was
+# ASSEMBLED FROM. The withdrawal was applied to the assembled file; the parts were never in scope,
+# and traced_check's population is that one filename, so nothing could see them. A withdrawal aimed
+# at a FILE leaves the SOURCES it was built from.
+#
+# They stay on disk: the archive still measures its own map against his geometry. What changes is
+# that they are not published.
+cl/*.svg
