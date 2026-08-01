@@ -10,6 +10,7 @@ const GROUPS=[
   ["Places & Realms",[["map.html","the map of Arda","every feature answers \u2014 hover, click, the record"],
    ["valinor.html","Aman","drawn from the corpus \u2014 the archive's own work, not Tolkien's hand"],
    ["baynes.html","the marked sheet","Baynes's 1969 map, traced \u2014 with Tolkien's notes on it"],
+   ["sheets.html","the drawn sheets","Middle-earth and Beleriand, 113,737 centrelines at one scale"],
    ["realms.html","realms","the political atlas \u2014 60 polities"],
    ["gazetteer.html","gazetteer","every named place, by age and kind"],
    ["place.html","a place in full","one place, everything the corpus gives it"],
@@ -250,7 +251,11 @@ FB.addEventListener("click",()=>{
  })}catch(e){}
  addEventListener("DOMContentLoaded",()=>{
   const nav=document.getElementById("ardanav");
-  if(!nav||nav.querySelector(".theme"))return;
+  // TWO TOGGLES IS WORSE THAN NONE. Another session added `#a-theme` to the nav markup while
+  // this was being written, and my check was for `.theme` -- a class it does not carry -- so
+  // both would have been added. A reader with two buttons for one setting cannot tell which
+  // one is authoritative, and pressing both is a no-op that looks like a bug.
+  if(!nav||nav.querySelector(".theme")||document.getElementById("a-theme"))return;
   const b=document.createElement("button");
   b.className="theme"; b.type="button";
   const now=()=>document.documentElement.getAttribute("data-theme")==="dark";
