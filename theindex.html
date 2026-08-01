@@ -376,7 +376,12 @@ title.</span></div>
   // it is done here and not left to the browser -- at first paint #out held the word "Loading".
   if(location.hash.length>1){
    var tgt=document.getElementById(location.hash.slice(1));
-   if(tgt){tgt.classList.add("hit");tgt.scrollIntoView();}
+   // AND IT ASKS BEFORE IT MOVES. `prefers-reduced-motion` lives in arda.css and a stylesheet has
+  // no say over a script -- budget_check says exactly that, and it caught this page the moment the
+  // guide line started throttling on requestAnimationFrame. The rAF above is a THROTTLE and not
+  // motion, but the jump to an entry is real movement, so it is the one that consults the reader.
+  if(tgt){tgt.classList.add("hit");
+   tgt.scrollIntoView(matchMedia("(prefers-reduced-motion: reduce)").matches?{}:{block:"start"});}
   }
   document.addEventListener("keydown",function(ev){
    if(ev.key==="/"&&document.activeElement!==$("#q")){ev.preventDefault();$("#q").focus()}
