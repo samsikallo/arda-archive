@@ -29,6 +29,56 @@ a:focus-visible{outline:2px solid var(--a-gold) !important;}
    archive. It has been given the id. The five still outside this rule are 404.html, index.html and
    the three tombstones: all short, none scrollable enough for a sticky bar to mean anything. */
 #hdr,.hdr{position:sticky;top:0;z-index:80}
+
+/* ---- THE HOUSE GROUND, AT ZERO SPECIFICITY ----------------------------------------------------
+   THE FAULT: the archive has ONE ground -- parchment, with a dark header band over it -- and every
+   hall declared it for itself, in its own <style>, 26 times. That is not a convention, it is a
+   habit, and a habit is kept by remembering. I built three halls this week (theindex, names,
+   baynes) and forgot all three times. They therefore had NO body background and NO #hdr background
+   at all, and the owner saw exactly what that produces:
+
+     "inverted colors, than the other pages"   the three fell back to the browser's default white
+                                               while carrying their own prefers-color-scheme block,
+                                               so their CARDS went dark on a light ground -- the
+                                               only three halls in the archive that answered the OS
+     "no bar, just floating text"              #hdr,.hdr is sticky (above) and these three gave it
+                                               no background, so the page scrolled THROUGH the
+                                               header and the title hung in mid-air
+     "switches order ... looks wrong"          the house #hdr is a flex row; with no rule at all its
+                                               children stacked in document order, so the header
+                                               re-laid-out the moment it stuck
+
+   `:where()` HAS ZERO SPECIFICITY -- that is the whole reason it is used here and not a plain
+   selector. arda.css is loaded AFTER every page's own <style>, so a normal `body{...}` here would
+   BEAT all 33 halls' own grounds and repaint the archive. Wrapped in :where(), this rule loses to
+   any page that states its own ground (0,0,1 beats 0,0,0) and applies only where a page states
+   none. The 33 halls that declare their own are untouched, byte for byte -- measured, not assumed,
+   by `map/houseground_check.py`, which also refuses a new hall that declares neither.
+
+   Every future hall is now right by default, which is the only fix that survives the next hall
+   built by someone tired at four in the morning. */
+   AND IT IS NARROWED TO GROUND AND INK ONLY -- background, colour, font. THE FIRST VERSION OF THIS
+   BLOCK ALSO CARRIED `display:flex`, `padding` AND `border-bottom`, AND THAT WAS WRONG in a way no
+   amount of reading the CSS would have shown me. Zero specificity does not mean "applies only to
+   pages with no rule"; it means "loses per PROPERTY". A hall that declares `#hdr{background:...}`
+   and nothing else was still handed my `display` and my `padding` -- so a headless probe of all 36
+   halls, before and after, found FOUR working headers silently relaid out: valinor block->flex,
+   map block->flex, gazetteer 100px->146px, reckoning 193px->162px. I had reasoned the rule was
+   inert and the browser said otherwise. Ground and ink cannot cause that: a page that sets its own
+   background keeps it, and a page that sets none could not have been relying on transparent.
+   The three halls that want the full house header say so in their own <style>, like the other 26. */
+:where(body){margin:0;color:var(--a-ink);font:14.5px/1.55 Georgia,'Palatino Linotype',serif;
+  background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 50%),var(--a-parch)}
+:where(#hdr,.hdr){background:linear-gradient(#221c15,#191512 60%,#12100d);color:var(--a-hdr-gold)}
+
+/* A SECOND STICKY MUST NOT SHARE THE FIRST ONE'S OFFSET. `#ix .bar` was `position:sticky;top:0`
+   while the header is also sticky at top:0 -- so on every scroll the filter bar slid up UNDERNEATH
+   the header and the two occupied the same line. That is the "switches order" the owner saw, and it
+   is a collision, not a reordering. nav.js measures the header and publishes its height here; any
+   page with a second sticky sets `top:var(--a-hdr-h)` and sits below it at every wrap width.
+   Measured rather than hardcoded because the header WRAPS: 44px on a wide screen, 70px on a phone,
+   and a constant would be wrong on one of them. */
+:root{--a-hdr-h:0px}
 #ardanav{display:flex;flex-wrap:wrap;gap:2px;align-items:center;font-size:12px}
 #ardanav .grp{position:relative}
 #ardanav .grp>button{background:none;border:none;color:#c9b06a;font:12px Georgia,serif;

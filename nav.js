@@ -222,6 +222,22 @@ FB.addEventListener("click",()=>{
   location.href="mailto:bobo.linux@gmail.com?subject="+encodeURIComponent("[arda-archive feedback] "+g.t)+"&body="+encodeURIComponent(g.body)};
  document.getElementById("fbclose").onclick=()=>{d.style.display="none"};
 });
+// THE HEADER'S HEIGHT, PUBLISHED AS --a-hdr-h SO A SECOND STICKY CAN SIT BELOW IT.
+// #hdr is sticky at top:0. Any page with its own sticky bar -- the Index's filter row was the first
+// -- must offset by the header's height or the two stack on the same line and the reader sees the
+// bar slide up through the menu. It is MEASURED and not a constant because the header is a wrapping
+// flex row: it is one line on a desktop and two or three on a phone, so any number written here
+// would be wrong at some width. Re-measured on resize, and after fonts load, because a header that
+// wraps when Georgia arrives is a header whose height changed after the first measurement.
+(function(){
+ const bar=document.querySelector("#hdr,.hdr");
+ if(!bar)return;
+ const put=()=>document.documentElement.style.setProperty("--a-hdr-h",bar.offsetHeight+"px");
+ put();
+ addEventListener("resize",put,{passive:true});
+ if(document.fonts&&document.fonts.ready)document.fonts.ready.then(put).catch(()=>{});
+ if(window.ResizeObserver)new ResizeObserver(put).observe(bar);
+})();
 // keyboard shim: legacy span-widgets become focusable buttons
 function shim(root){root.querySelectorAll(".chip,.tab,.card[onclick],[data-t],[data-id]").forEach(el=>{
  if(el.closest("#ardanav"))return;

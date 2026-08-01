@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Gazetteer of Arda — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Gazetteer of Arda: every named place and landmark, natural and made, with its containing realms, the Ages it belongs to and what befell it — each claim cited."><meta property="og:title" content="The Gazetteer of Arda — the Arda Archive"><meta property="og:description" content="The Gazetteer of Arda: every named place and landmark, natural and made, with its containing realms, the Ages it belongs to and what befell it — each claim cited."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/gazetteer.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/gazetteer.html"><!--/ARDA:META--><!--/ARDA:META-->
+<title>The Gazetteer of Arda — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Gazetteer of Arda: every named place and landmark, natural and made, with its containing realms, the Ages it belongs to and what befell it — each claim cited."><meta property="og:title" content="The Gazetteer of Arda — the Arda Archive"><meta property="og:description" content="The Gazetteer of Arda: every named place and landmark, natural and made, with its containing realms, the Ages it belongs to and what befell it — each claim cited."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/gazetteer.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/gazetteer.html"><!--/ARDA:META-->
 <!-- THE STALE TEMPLATE, sixth and last of the six BLIND page writers I measured.
      CLAUDE.md rule 3: this file is written whole on every run, so anything the built page
      gained from another tool is reverted. MEASURED with gate_check --measure, not
@@ -49,7 +49,13 @@ button.q:hover{background:#f7f0de}
  box-shadow:0 2px 8px rgba(60,40,10,.10);margin-top:10px}
 .col{flex:0 0 auto;width:250px;max-height:66vh;overflow-y:auto;border-right:1px solid rgba(176,165,142,.55)}
 .col:last-child{border-right:0}
-.colh{position:sticky;top:0;background:#f2e9d4;border-bottom:1px solid rgba(176,165,142,.55);
+/* BELOW THE HEADER, NOT AT ITS OFFSET. arda.css makes `#hdr,.hdr` sticky at top:0, so a second
+   sticky at top:0 slides up underneath the menu on every scroll and the two fight over one line.
+   Found by map/houseground_check.py on the day that fault was reported against three OTHER halls --
+   this one nobody had noticed, on the page with 481 places and the most scrolling in the archive.
+   nav.js measures the header and publishes --a-hdr-h; the 0px fallback matters only if nav.js
+   failed, in which case there is no menu to collide with. */
+.colh{position:sticky;top:var(--a-hdr-h,0px);background:#f2e9d4;border-bottom:1px solid rgba(176,165,142,.55);
  padding:5px 10px;font-variant:small-caps;letter-spacing:.05em;font-size:12.5px;color:#5a4626}
 .row{display:flex;align-items:center;gap:6px;width:100%;box-sizing:border-box;text-align:left;
  border:0;background:none;font:14px Georgia,serif;color:#3a3226;padding:5px 10px;cursor:pointer;
