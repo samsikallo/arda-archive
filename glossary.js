@@ -91,7 +91,24 @@
      if(n>=MAX) return NodeFilter.FILTER_REJECT;
      var p=t.parentNode;
      while(p&&p!==root){
-       if(p.nodeType===1&&(SKIP.test(p.nodeName)||p.isContentEditable||p.classList.contains("gl")))
+       // AN SVG IS SKIPPED BY ITS NAMESPACE, NOT BY ITS NAME, AND THE NAME COULD NEVER MATCH.
+       //
+       // THE FAULT, reported by the owner on 01 Aug: "Galadriel's name doesn't show up on her panel
+       // in the family trees." Her node held
+       //     <text x="11" y="14.5"><span class="gl" ...>Galadriel</span></text>
+       // and an HTML <span> INSIDE AN SVG <text> RENDERS NOTHING -- SVG wants <tspan>. So this
+       // glossary was not decorating her name, it was DELETING it.
+       //
+       // `SKIP` has carried "SVG" since the day it was written and it never fired. `nodeName` is
+       // upper-cased for HTML elements and left ALONE for SVG ones, because SVG is XML: an <svg>
+       // reports "svg", and /^(...|SVG|...)$/ is case-sensitive. The guard was there, it was
+       // spelled correctly for the wrong document type, and it silently did nothing.
+       //
+       // That is the third instance today of a string test that reads correctly and cannot match --
+       // after `"transparent".rstrip("!important")` and a lower-case grep against an upper-case
+       // file. THE NAMESPACE IS THE THING ITSELF; the tag name is a spelling of it.
+       if(p.namespaceURI==="http://www.w3.org/2000/svg") return NodeFilter.FILTER_REJECT;
+       if(p.nodeType===1&&(SKIP.test((p.nodeName||"").toUpperCase())||p.isContentEditable||p.classList.contains("gl")))
          return NodeFilter.FILTER_REJECT;
        p=p.parentNode;
      }
