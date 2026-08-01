@@ -45,6 +45,9 @@ explicit, is not secret; and a by-name might <b>not be recognised at all</b> by 
 applied to, unless they adopted it or gave it themselves. A list of four kinds cannot say any of
 that, which is why this page does not present one.</div>
 
+<h2>How far this reaches</h2>
+<div class="law" id="cover">Counting…</div>
+
 <h2>Lives, as the sources set them out</h2>
 <div class="cite" id="pcount"></div>
 <div id="people"></div>
@@ -56,6 +59,28 @@ that, which is why this page does not present one.</div>
 (function(){
  var $=function(s){return document.querySelector(s)};
  function esc(s){return String(s).replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c]})}
+ // THE PAGE MUST SAY HOW FAR IT REACHES. It showed three demonstration lives and nothing else,
+ // while arda_name_kinds had grown to 250 names -- so a reader was told the archive knows about
+ // thirteen names when it had classified thirty-nine and recorded two hundred and fifty. A page
+ // that understates its own coverage is the mirror of one that overstates it, and both are the
+ // same fault: the artefact and the thing describing it disagreeing.
+ fetch('arda_name_kinds.json').then(function(r){return r.json()}).then(function(K){
+  var kinds=K.by_kind||{}, order=["father-name","mother-name-insight","chosen-name","anessi-other","epesse"];
+  var LBL={"father-name":"father-names","mother-name-insight":"mother-names of insight",
+           "chosen-name":"chosen names","anessi-other":"other given names","epesse":"after-names"};
+  var ONE={"father-name":"father-name","mother-name-insight":"mother-name of insight",
+           "chosen-name":"chosen name","anessi-other":"other given name","epesse":"after-name"};
+  var parts=order.filter(function(k){return kinds[k]}).map(function(k){
+    return '<b>'+kinds[k]+'</b> '+(kinds[k]===1?ONE[k]:LBL[k])});
+  $("#cover").innerHTML='<b>The archive holds '+K.count.toLocaleString()+' by-names, and '+K.classified
+   +' of them carry a kind</b> — '+parts.join(" &middot; ")+'. '
+   +'The rest are blank <i>and say why</i>: the kinds are defined by WHO GAVE THE NAME, so a source '
+   +'that records a name and not its giver cannot yield one, and the Eldarin custom is not asked of '
+   +'Men, Hobbits, Dwarves or the Ainur. '+(K.count-K.classified)+' names are recorded with their '
+   +'giver, tongue, meaning and citation where the archive has them, and with the reason where it '
+   +'does not.';
+ }).catch(function(){ $("#cover").textContent=
+   "The coverage figures could not be loaded; the taxonomy below is unaffected."; });
  fetch('arda_names.json').then(function(r){return r.json()}).then(function(D){
   // ---- the kinds
   var byid={};
