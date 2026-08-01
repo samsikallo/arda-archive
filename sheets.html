@@ -38,11 +38,21 @@ body{margin:0;color:var(--ink);font:14.5px/1.55 Georgia,'Palatino Linotype',seri
 Each sheet is traced <b>one path per pen stroke</b> — not shown as a picture — by the same instrument
 and at the same settings that produced the Marked Sheet. <b>The hand that drew each plate is named on
 it.</b>
-<b>The placement of one sheet against the other is a first registration</b>, read off
-<i>Middle-earth and Beleriand Map (2)</i> rather than measured from the corpus: the Blue Mountains are
-the seam the two plates share, because Beleriand <i>is</i> the drowned land west of Ered Luin.
-Refining that fit against the range in both plates is work still to do, and it is said here rather
-than hidden in a number.</div>
+<b>The placement is MEASURED, not judged by eye.</b> Each plate's linework was correlated against
+<i>Middle-earth and Beleriand Map (2)</i> over an exhaustive search of scale and offset, refined to a
+single pixel: Beleriand at ×0.613, the General Map at ×1.460 offset (792, −257).
+<b>And the composite SPLICES the two plates rather than superimposing them.</b> Ered Luin is one range
+and Tolkien drew it on both sheets — so the two drawings ought to coincide — but in this composite
+Beleriand&rsquo;s own Ossiriand, Thargelion and Ered Luin were <b>cut away</b>, and what stands east of
+Lothlann and Estolad is the General Map&rsquo;s Lindon: the Gulf of Lhûn, Forlindon, Mithlond,
+Harlindon. <b>The two drawings of the range never meet anywhere on this sheet.</b> The crossover is not
+an edge but a curve — the ink is Beleriand&rsquo;s out to about x&nbsp;780 and the General Map&rsquo;s
+beyond x&nbsp;907.
+<b>The General Map plate is also a different edition from the one composed here</b> — no ocean
+hachuring, a square compass cartouche where the reference has a rose, different lettering, and it runs
+south to Far Harad, which is why its fit is good rather than exact (±5 px, ±0.5%).
+<b>The lettering is not stripped</b>, and that is a measured refusal: on these plates a mountain range
+and a word are the same geometry, and the rule that removed one removed the other.</div>
 
 <div class="row" id="toggles"></div>
 <div id="canvas"></div>
@@ -54,7 +64,7 @@ than hidden in a number.</div>
 <script src="nav.js"></script><script src="touch.js"></script>
 <script>
 (function(){
- var D={"sheets": [{"key": "bel", "label": "Beleriand — the drowned land west of Ered Luin", "hand": "Christopher Tolkien", "file": "cl/bel.svg", "paths": 42718, "scale": 0.72, "dx": 0.0, "dy": 430.0, "viewBox": [0.0, 0.0, 1893.0, 1391.0]}, {"key": "gm", "label": "The General Map — Middle-earth west of Rhûn", "hand": "Christopher Tolkien", "file": "cl/gm.svg", "paths": 71019, "scale": 1.0, "dx": 1362.96, "dy": 0.0, "viewBox": [0.0, 0.0, 1920.0, 2130.0]}], "width": 3283.0, "height": 2130.0, "total_paths": 113737, "note": "The linework is traced from the published plates, one path per pen stroke, and the hand that drew each sheet is named on it. The placement of one sheet against the other is a FIRST REGISTRATION read off Middle-earth_and_Beleriand_Map_(2) and corrected on the owner's finding that Ered Luin stands beside Ossiriand: the plates ABUT at that range rather than overlapping, because Ered Luin is the east border of one plate and the west edge of the other. The relative SCALE is still unmeasured — nothing has matched the range's drawn length across the two."};
+ var D={"sheets": [{"key": "bel", "label": "Beleriand — the drowned land west of Ered Luin", "hand": "Christopher Tolkien", "file": "cl/bel.svg", "paths": 42718, "scale": 0.613, "dx": 0.0, "dy": 0.0, "viewBox": [0.0, 0.0, 1893.0, 1391.0]}, {"key": "gm", "label": "The General Map — Middle-earth west of Rhûn", "hand": "Christopher Tolkien", "file": "cl/gm.svg", "paths": 71019, "scale": 1.46, "dx": 792.0, "dy": -257.0, "viewBox": [0.0, 0.0, 1920.0, 2130.0]}], "x": 0.0, "y": -257.0, "width": 3595.2, "height": 3109.8, "total_paths": 113737, "note": "The linework is traced from the published plates, one path per pen stroke, and the hand that drew each sheet is named on it. The placement is measured by correlating each plate against the reference composite — bel scoring 0.64 with a sharp peak, gm 0.44 on a broader plateau because that plate is a different edition from the one composed. A direct plate-against-plate correlation was attempted and FAILED (0.167, flat, and it fell on refinement), because the composite splices the sheets at the Blue Mountains instead of superimposing them: Beleriand's own eastern marches were cut away and the General Map's Lindon stands in their place."};
  var $=function(s){return document.querySelector(s)};
  function esc(s){return String(s).replace(/[&<>"]/g,function(c){
    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
@@ -64,7 +74,7 @@ than hidden in a number.</div>
  // ONE COORDINATE SPACE, BUILT ONCE. Each sheet is fetched, its own <svg> unwrapped, and its
  // contents placed in a <g> carrying the scale and offset the generator declared. Fetched and not
  // inlined: 4.8 MB of geometry is a page-specific cost and must not be paid by any other hall.
- var svg='<svg viewBox="0 0 '+D.width+' '+D.height+'" role="img" '
+ var svg='<svg viewBox="'+D.x+' '+D.y+' '+D.width+' '+D.height+'" role="img" '
    +'aria-label="Middle-earth and Beleriand, traced as linework">'
    +D.sheets.map(function(s){
       return '<g id="g-'+s.key+'" transform="translate('+s.dx+','+s.dy+') scale('+s.scale+')"'
