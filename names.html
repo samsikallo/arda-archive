@@ -83,7 +83,23 @@ that, which is why this page does not present one.</div>
     return '<b>'+kinds[k]+'</b> '+(kinds[k]===1?ONE[k]:LBL[k])});
   $("#cover").innerHTML='<b>The archive holds '+K.count.toLocaleString()+' by-names, and '+K.classified
    +' of them carry a kind</b> — '+parts.join(" &middot; ")+'. '
-   +'The rest are blank <i>and say why</i>: the kinds are defined by WHO GAVE THE NAME, so a source '
+   +'<br><br><b>The rest are blank, and the archive can say exactly why each one is.</b> '
+   +'This is not a backlog. '+(function(){
+     // THE CEILING, COMPUTED FROM THE REASONS THEMSELVES so it can never disagree with them.
+     // Two of the three cannot be worked: they are Tolkien's silence, not the archive's.
+     var R=K.blank_reasons||{},ne=0,ng=0,un=0;
+     for(var k in R){
+       if(/OF THE ELDAR|not of the Eldar/.test(k)) ne+=R[k];
+       else if(/no giver/.test(k)) ng+=R[k];
+       else un+=R[k];
+     }
+     return '<b>'+ne+'</b> belong to figures Tolkien never wrote the custom for — the Ainur, Men, '
+      +'Hobbits, Ents — because <i>Laws and Customs among the Eldar</i> is stated OF THE ELDAR; '
+      +'<b>'+ng+'</b> are names whose source records the name and not who gave it; and <b>'+un+'</b> '
+      +'belong to figures no published dataset places among a people at all. '
+      +'<b>Only the last of those three is work the archive could do.</b> ';
+   })()
+   +'The kinds are defined by WHO GAVE THE NAME, so a source '
    +'that records a name and not its giver cannot yield one, and the Eldarin custom is not asked of '
    +'Men, Hobbits, Dwarves or the Ainur. '+(K.count-K.classified)+' names are recorded with their '
    +'giver, tongue, meaning and citation where the archive has them, and with the reason where it '
