@@ -204,7 +204,14 @@ title.</span></div>
      return '<li class="st">'+esc(p.text)
        +' <span class="vols">('+esc(p.vols.join(" · "))+')</span></li>';
     }).join("");
+    // A HEADWORD WITH NOTHING BEHIND IT SAYS SO. One entry -- Itaril, an early name for Idril --
+    // is listed by its index and given no statement and no page. Rendering it as a bare name with
+    // an empty list reads as a rendering fault; saying what happened is rule 1 applied to the
+    // archive's own apparatus rather than to Arda. The name is real: 50 corpus occurrences, 49
+    // citable, chiefly The Peoples of Middle-earth.
     var pg="";
+    if(!e.parts.length && !(e.pages&&Object.keys(e.pages).length))
+      parts='<li class="st"><i>The index lists this name and gives no statement for it.</i></li>';
     if(e.pages&&Object.keys(e.pages).length){
      pg='<li class="pg">'+Object.keys(e.pages).map(function(v){
        return esc(v)+' '+esc(e.pages[v]);}).join(' · ')+'</li>';

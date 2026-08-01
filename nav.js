@@ -222,6 +222,51 @@ FB.addEventListener("click",()=>{
   location.href="mailto:bobo.linux@gmail.com?subject="+encodeURIComponent("[arda-archive feedback] "+g.t)+"&body="+encodeURIComponent(g.body)};
  document.getElementById("fbclose").onclick=()=>{d.style.display="none"};
 });
+// THE NIGHT GROUND — one toggle, every hall, the owner's ruling of 01 August.
+//
+// THE ATTRIBUTE IS STAMPED HERE AND NOWHERE ELSE, which is what lets arda.css key every dark rule
+// on ONE selector instead of writing each twice (once for the media query, once for the choice).
+// Two spellings of the same theme is the fault this archive already paid for with a second quote
+// matcher and a second retirement list; a theme is no different.
+//
+// THE READER'S CHOICE OUTRANKS THE OS, because a person who picked a theme on this site meant it
+// more recently than they meant their system setting. With nothing stored, the OS decides — and
+// `matchMedia` is asked rather than assumed, so a reader who has never touched the toggle still
+// gets the ground they asked their machine for.
+//
+// IT RUNS BEFORE THE HEADER MEASUREMENT BELOW ON PURPOSE: the theme changes no metrics today, but
+// if a future rule ever gives the header a different border in the dark, the height must be
+// measured after the ground is chosen and not before.
+(function(){
+ const KEY="arda-theme";
+ const os=()=>matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";
+ let stored=null; try{stored=localStorage.getItem(KEY)}catch(e){}   // private mode throws; the OS still answers
+ const put=t=>document.documentElement.setAttribute("data-theme",t);
+ put(stored||os());
+ // The OS changing while the page is open follows, UNLESS the reader has chosen for themselves.
+ try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{
+   let s=null; try{s=localStorage.getItem(KEY)}catch(_){}
+   if(!s) put(e.matches?"dark":"light");
+ })}catch(e){}
+ addEventListener("DOMContentLoaded",()=>{
+  const nav=document.getElementById("ardanav");
+  if(!nav||nav.querySelector(".theme"))return;
+  const b=document.createElement("button");
+  b.className="theme"; b.type="button";
+  const now=()=>document.documentElement.getAttribute("data-theme")==="dark";
+  // THE LABEL NAMES WHAT THE BUTTON DOES, NOT WHAT THE PAGE IS. A control captioned with the
+  // current state is the commonest toggle bug in the wild: the reader cannot tell whether "dark"
+  // means "you are in dark" or "press for dark", and both readings are reasonable.
+  const paint=()=>{const d=now();
+   b.textContent=d?"day":"night";
+   b.setAttribute("aria-label",d?"switch to the day ground":"switch to the night ground");
+   b.setAttribute("aria-pressed",String(d));};
+  paint();
+  b.onclick=()=>{const t=now()?"light":"dark"; put(t);
+   try{localStorage.setItem(KEY,t)}catch(e){} paint();};
+  nav.appendChild(b);
+ });
+})();
 // THE HEADER'S HEIGHT, PUBLISHED AS --a-hdr-h SO A SECOND STICKY CAN SIT BELOW IT.
 // #hdr is sticky at top:0. Any page with its own sticky bar -- the Index's filter row was the first
 // -- must offset by the header's height or the two stack on the same line and the reader sees the

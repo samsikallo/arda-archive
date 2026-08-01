@@ -182,3 +182,150 @@ html.arda-dark{background:#181410}
  .gl{border-bottom-color:rgba(201,162,39,.75)}
  #gl-box{background:#231d14;border-color:#6b5620;color:#e8dcc0}
 }
+
+
+
+/* ================================================================================================
+   THE NIGHT GROUND — the archive's second theme (the owner's ruling, 01 August 2026)
+
+   HIS WORDS: "there should be a dark theme". This morning's rule was ONE GROUND, written because
+   three halls answered the OS colour scheme while thirty-three did not and those three looked
+   inverted beside their neighbours. This is that rule KEPT, not broken: the archive now has two
+   grounds, both declared HERE, for every hall at once. A hall still never answers the OS on its
+   own — `map/houseground_check.py` refuses that, and it refuses it under this theme too.
+
+   IT IS NOT AN INVERSION, AND THE ARCHIVE ALREADY OWNED THE PALETTE. Every hall's header is
+   `linear-gradient(#221c15,#191512 60%,#12100d)` with #d8c78e lettering over a #8a7444 double
+   rule. That is the archive at night and it has been on every page since the first hall. The dark
+   theme carries that chrome down the page, so the two themes are one design lit two ways rather
+   than a design and its negative. #221c15 below is the header gradient's own top stop.
+
+   ONE SELECTOR, NOT TWO, AND THAT IS DELIBERATE. Every rule here keys on `[data-theme="dark"]`
+   alone. nav.js stamps that attribute — from the reader's stored choice, or from the OS when they
+   have not made one — so the OS path and the chosen path land on identical CSS and cannot drift.
+   The only media query is the two-property one directly below, which exists solely so a
+   dark-preferring reader does not get a white flash in the moment before nav.js runs.
+
+   WHY IT NEEDS `!important`, WHICH I FIRST WROTE THAT IT DID NOT. My reasoning was that arda.css
+   loads after every hall's <style>, so `:root[data-theme="dark"] X` outranks any `X` a hall writes.
+   THAT IS FALSE AND A BROWSER SAID SO: specificity compares (ids, classes, elements)
+   lexicographically, so ONE ID BEATS ANY NUMBER OF ATTRIBUTES — and nearly every hall scopes its
+   rules with an id (`#ix .law`, `#gal input`, `#p-shelf .fx-b`). A headless pass over all 36 halls
+   with the theme stamped found 484 light patches surviving on the night ground across 24 halls.
+   There is no specificity trick that wins: `<html>` carries no id to borrow. So the colour
+   properties below carry `!important`, and the cost is stated rather than hidden — a hall that
+   genuinely needs its own colour in the dark must now say so with an id-scoped
+   `:root[data-theme="dark"] #hall .thing` rule of its own, which is more specific and still wins.
+   A theme that does not apply is worse than one that is harder to override.
+
+   WHAT IT LEAVES ALONE, because a theme is not a licence to repaint meaning:
+     * the traced Baynes sheet and the drawn maps keep their light ground. They are black ink, and
+       Pauline Baynes's paper was not black; a dark sheet is a different drawing, not a theme.
+     * heraldic devices keep their tinctures. Gules is gules at midnight.
+     * confidence markers keep their hues — only their grounds move — so [C] and [I-M] read the
+       same in both themes, which ruling 5's "colour is never the only channel" already required.
+   ================================================================================================ */
+:root{--n-ground:#17140f;/* the page */
+  --n-card:#221c15;/* a card, a .law box, a panel */
+  --n-raise:#2a2318;/* a chip, a pressed tab, an input */
+  --n-ink:#e6dcc2;/* running text */
+  --n-mut:#a9997a;/* citations and captions */
+  --n-line:#5b4a28;/* rules and borders */
+  --n-gold:#d9b544;/* the accent, lifted from #c9a227 so it holds on charcoal */}
+/* Flash guard only. Two properties, no components — nav.js does the rest a tick later. */
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) body{background:#17140f;color:#e6dcc2}
+}
+
+:root[data-theme="dark"] body{background:var(--n-ground) !important;color:var(--n-ink) !important}
+:root[data-theme="dark"] .wrap{color:var(--n-ink) !important}
+
+/* CARDS AND PANELS. These class names are not guessed: they were counted across all 36 halls'
+   own <style> blocks by how often each carries a solid background — .on 17, .chip 15, .card 7,
+   .law 7, .tab 5, .warn 4, .tag 4, .q 3, .conf 3, .strip 2 — so the list is what the archive
+   actually uses rather than what a theme author imagines it uses. */
+:root[data-theme="dark"] .law,
+:root[data-theme="dark"] .card,
+:root[data-theme="dark"] .panel,
+:root[data-theme="dark"] .box,
+:root[data-theme="dark"] .strip,
+:root[data-theme="dark"] .k,
+:root[data-theme="dark"] .e,
+:root[data-theme="dark"] .n{background:var(--n-card) !important;border-color:var(--n-line) !important;color:var(--n-ink) !important}
+:root[data-theme="dark"] .chip,
+:root[data-theme="dark"] .tab,
+:root[data-theme="dark"] .tag,
+:root[data-theme="dark"] .tbtn,
+:root[data-theme="dark"] .seg button,
+:root[data-theme="dark"] button,
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] textarea{background:var(--n-raise) !important;border-color:var(--n-line) !important;color:var(--n-ink) !important}
+:root[data-theme="dark"] .chip.on,
+:root[data-theme="dark"] .tab.on,
+:root[data-theme="dark"] .on,
+:root[data-theme="dark"] [aria-pressed="true"]{background:rgba(217,181,68,.24) !important;border-color:var(--n-gold) !important;color:#f2e6c4 !important}
+:root[data-theme="dark"] .cite,
+:root[data-theme="dark"] .sub,
+:root[data-theme="dark"] .mut,
+:root[data-theme="dark"] .q{color:var(--n-mut) !important}
+:root[data-theme="dark"] a{color:var(--n-gold) !important}
+:root[data-theme="dark"] table,
+:root[data-theme="dark"] td,
+:root[data-theme="dark"] th{border-color:var(--n-line) !important;color:var(--n-ink) !important}
+:root[data-theme="dark"] hr{border-color:var(--n-line) !important}
+:root[data-theme="dark"] mark{background:rgba(217,181,68,.34) !important;color:inherit !important}
+:root[data-theme="dark"] .warn,
+:root[data-theme="dark"] .gap,
+:root[data-theme="dark"] .unp{background:#2c2214 !important;border-color:#8a6a2f !important;color:var(--n-ink) !important}
+/* The Index's sticky bar and letter heads must match the ground they sit on, or they smear the
+   entries scrolling underneath them. */
+:root[data-theme="dark"] #ix .bar,
+:root[data-theme="dark"] #ix .lh{background:var(--n-ground) !important;color:var(--n-ink) !important}
+:root[data-theme="dark"] #ix .lh{border-bottom-color:var(--n-line) !important}
+:root[data-theme="dark"] #ix .az a{color:var(--n-gold) !important}
+:root[data-theme="dark"] #ix .az a.on{background:var(--n-gold) !important;color:#17140f !important}
+:root[data-theme="dark"] #gl-box{background:var(--n-card) !important;border-color:var(--n-line) !important;color:var(--n-ink) !important}
+
+/* THE DRAWINGS KEEP THEIR PAPER. Named, not inferred: a traced sheet is black ink on light stock
+   and inverting it would publish a drawing nobody made. */
+:root[data-theme="dark"] #bs #sheet,
+:root[data-theme="dark"] .plate,
+:root[data-theme="dark"] .sheet{background:#fdfaf2 !important;color:#3a3226 !important}
+
+/* The toggle itself, in the header beside the jump box. */
+#ardanav .theme{background:none;border:1px solid #6d5a34;color:#c9b06a;font:11.5px Georgia,serif;
+  border-radius:9px;padding:3px 9px;cursor:pointer;margin-left:4px}
+#ardanav .theme:hover{background:rgba(201,162,39,.16)}
+
+/* THE HALLS THE FIRST PASS MISSED, EACH NAMED BY THE PROBE AND NOT BY GUESSWORK. These are the
+   element and class selectors that survived on a dark ground across 24 halls -- quotations, the
+   dashboards' blades and fates, the silences' references, the badges, and every hall that scopes
+   its inputs behind an id. */
+:root[data-theme="dark"] blockquote,
+:root[data-theme="dark"] .blade,:root[data-theme="dark"] .fate,:root[data-theme="dark"] .ref,
+:root[data-theme="dark"] .badge,:root[data-theme="dark"] .colh,:root[data-theme="dark"] .cols,
+:root[data-theme="dark"] .conf,:root[data-theme="dark"] .fx-b,:root[data-theme="dark"] .fx-tier,
+:root[data-theme="dark"] #bar,:root[data-theme="dark"] #cols,:root[data-theme="dark"] #limits,
+:root[data-theme="dark"] #main,:root[data-theme="dark"] main,
+:root[data-theme="dark"] .cell,:root[data-theme="dark"] .row,:root[data-theme="dark"] .item,
+:root[data-theme="dark"] .entry,:root[data-theme="dark"] .pane,:root[data-theme="dark"] .sec,
+:root[data-theme="dark"] .tile,:root[data-theme="dark"] .note,:root[data-theme="dark"] .lgd,
+:root[data-theme="dark"] .hd,:root[data-theme="dark"] .col{
+  background:var(--n-card) !important;border-color:var(--n-line) !important;color:var(--n-ink) !important}
+:root[data-theme="dark"] input,:root[data-theme="dark"] select,
+:root[data-theme="dark"] textarea,:root[data-theme="dark"] button{
+  background:var(--n-raise) !important;border-color:var(--n-line) !important;color:var(--n-ink) !important}
+/* AN <img> IS NOT REPAINTED. Its whiteness is the picture's own, and a theme that recolours
+   photographs is not a theme. Where a plate needs a ground it keeps the light one above. */
+/* THE SECOND PASS, AGAIN NAMED BY THE PROBE. `.fdm` is the heraldry hall's device card (63 of the
+   survivors), `.q` carried a colour but no ground, and the character hall's portrait frames. */
+:root[data-theme="dark"] .fdm,:root[data-theme="dark"] .q,
+:root[data-theme="dark"] .frame,:root[data-theme="dark"] .por,:root[data-theme="dark"] .bio{
+  background:var(--n-card) !important;border-color:var(--n-line) !important;color:var(--n-ink) !important}
+/* WHAT STAYS LIGHT, AND EACH FOR A STATED REASON RATHER THAN BECAUSE THE RULE MISSED IT:
+     <img>                  a photograph's whiteness is the picture's, not the page's
+     map.html #stage,#chr   the drawn map is ink on paper, like the Baynes sheet
+     gondolin.html's spans  pastel grounds that CODE something -- a house, a quarter -- and
+                            recolouring them would destroy the distinction they carry
+   Measured, not assumed: 212 light elements remain and 119 of them are <img>. */
