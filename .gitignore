@@ -63,3 +63,13 @@ arda_traced.svg
 # published and serving nothing. It stays in the workshop, with the vectors, for the same
 # reason: the archive measures its own map against his and does not republish his.
 arda_his_anchors.json
+
+# THE TWO UNSTRIPPED CENTRELINE SHEETS, retired from publication 4 August 2026 on the owner's
+# ruling -- his words, "yes, the sheets carry linework only." They carried 2,769 and 12,443
+# strokes tracing Christopher Tolkien's RED LETTERING; site/cl/bel_nolabel.svg and
+# site/cl/gm_nolabel.svg carry the same linework with 84.6% and 66.7% of that removed and are
+# now the published sheets. The files stay on disk because the archive still measures its own
+# map against his geometry -- the same posture arda_traced.svg has held since 29 July.
+# map/lettering_check.py REFUSES if either is tracked again.
+cl/bel.svg
+cl/gm.svg
