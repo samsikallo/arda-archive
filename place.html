@@ -66,7 +66,7 @@ const phrases=[p.n.split(" —")[0].split(",")[0],...(p.alt?p.alt.split(";"):[])
 .map(s=>nrm(s).replace(/^the /,"").trim()).filter(s=>s.length>3);
 const mentions=t=>{const nt=nrm(t);return phrases.some(ph=>nt.includes(ph))};
 const events=C.events.filter(e=>mentions(e.label));
-const arts=AF.filter(a=>mentions(a.d)||a.ch.some(s=>mentions(s[0])));
+const arts=AF.filter(a=>mentions(a.d)||a.ch.some(s=>mentions(s.what)));
 const quotes=Q.filter(q=>mentions(q.q)||mentions(q.t)).slice(0,2);
 const realms=Object.entries(M.realms).filter(([id,r])=>inPoly(p.x,p.y,r.p));
 const PI={city:"◉",fort:"▲",ruin:"◌",haven:"⚓",hall:"⬟",mtn:"△",pass:"︿",tower:"♜",forest:"❦",field:"✳",isle:"◍"};

@@ -73,14 +73,14 @@ function card(a){return `<div class="card"><span class="ic">${ICON[a.t]||""}</sp
 ${PLATE[a.n]?`<img class="plate" src="art/${PLATE[a.n]}.jpg" loading="lazy" alt="concept plate of ${a.n.replace(/"/g,"")}" data-cap="${a.n.replace(/"/g,"")}">`:""}
 <div class="cite">${a.o}</div>
 <p style="font-size:13px;margin:.4em 0">${a.d}</p>
-<div class="chain">${a.ch.map(s=>`<div class="step"><b>${s[0]}</b><br><span class="w">${s[1]} · ${s[2]}</span></div>`).join("")}</div>
+<div class="chain">${a.ch.map(s=>`<div class="step"><b>${s.what}</b><br><span class="w">${s.when} · ${s.cite}</span></div>`).join("")}</div>
 <div class="fate">${a.f}</div>
 ${a.x?`<div class="conf">⚖ ${a.x}</div>`:""}
 ${a.l.length?`<div class="lnk">${a.l.map(l=>`<a href="${l[0]}">${l[1]} ⧉</a>`).join(" · ")}</div>`:""}
 </div>`}
 function draw(){
 const q=nrm(document.getElementById("q").value||"");
-const hit=a=>on[a.cat]&&(!q||nrm(a.n+a.d+a.o+a.sub+a.cl+a.ch.map(s=>s[0]).join(" ")).includes(q));
+const hit=a=>on[a.cat]&&(!q||nrm(a.n+a.d+a.o+a.sub+a.cl+a.ch.map(s=>s.what).join(" ")).includes(q));
 let h="";
 cats.forEach(c=>{
  const inCat=D.filter(a=>a.cat===c.k&&hit(a));
