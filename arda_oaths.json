@@ -656,5 +656,85 @@
   "tier": 1,
   "fulfil": "Never; and by Tolkien's later intention, never to be.",
   "note": "ABANDONED, like second_prophecy_mandos_q. This is the fuller and later of the two texts (c. 1937), but it too was dropped in the 1950s revisions; see HoME X, t1_10_morgoths_ring.txt:7845. It appears nowhere in the published Silmarillion. Recorded here because it is the source of every later reference to the Dagor Dagorath and to Túrin's return, but it is superseded material, not current."
+ },
+ {
+  "id": "oath_morgoth_maedhros",
+  "n": "Morgoth's oath over Maedhros",
+  "kind": "oath",
+  "when": "Y.T. 1497",
+  "c": "HoME XI, the Grey Annals §50, year header 1497 [C] — 'Then Morgoth held Maidros as a hostage, and swore only to release him, if the Noldor would march away'.",
+  "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
+ },
+ {
+  "id": "oaths_mereth_aderthad",
+  "n": "Oaths of league and friendship at Mereth Aderthad",
+  "kind": "oath",
+  "when": "F.A. 20",
+  "c": "HoME XI, the Grey Annals §72, year header 20 [C] — 'At Mereth Aderthad many counsels were taken in good will, and oaths were sworn of league and friendship'.",
+  "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
+ },
+ {
+  "id": "doom_eol_gondolin",
+  "n": "The dooming of Eöl, and his curse on Maeglin",
+  "kind": "oath",
+  "when": "F.A. 400",
+  "c": "HoME XI, the Grey Annals §120, year header 400 [C] — 'Therefore Eöl was doomed to death, and cast from the high walls of Gondolin; and he cursed his son as he died, foreboding that he should die a like death'.",
+  "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
+ },
+ {
+  "id": "oath_hurin_huor_secrecy",
+  "n": "Húrin and Huor's oath of secrecy to Turgon",
+  "kind": "oath",
+  "when": "F.A. 455",
+  "c": "HoME XI, the Grey Annals §150, year header 455 [C] — 'but they swore to him oaths of secrecy and never revealed Gondolin'. A bracketed later insertion, INSIDE the annal.",
+  "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
+ },
+ {
+  "id": "oath_brethren_turgon",
+  "n": "The brethren swear to keep Turgon's counsels",
+  "kind": "oath",
+  "when": "F.A. 458",
+  "c": "HoME XI, the Grey Annals §166, year header 458 [C] — 'And the brethren swore never to reveal the counsels of Turgon and to keep secret all that they had seen in his realm'.",
+  "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
+ },
+ {
+  "id": "oath_feanorians_silmaril",
+  "n": "The Feänorians' second swearing over the Silmaril",
+  "kind": "oath",
+  "when": "F.A. 465",
+  "c": "HoME XI, the Grey Annals §179, year header 465 [C] — 'for their Oath was roused from slumber, and they swore that even should the quest be achieved they would slay any that kept the Silmaril or gave it to any hands but their own'.",
+  "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
+ },
+ {
+  "id": "vow_beren_luthien",
+  "n": "Beren's vow that nothing should withhold him",
+  "kind": "oath",
+  "when": "F.A. 465",
+  "c": "HoME XI, the Grey Annals §189, year header 465, Version II [C] — Beren 'swore that by no power of spell, wall or weapon should he be withheld from his love'.",
+  "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
+ },
+ {
+  "id": "oath_felagund_no_release",
+  "n": "'I also have sworn an oath, and I seek no release from it'",
+  "kind": "oath",
+  "when": "F.A. 465",
+  "c": "HoME XI, the Grey Annals §194, year header 465, Version II [C].",
+  "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
+ },
+ {
+  "id": "doom_luthien_manwe",
+  "n": "The doom Lúthien won from Manwë",
+  "kind": "oath",
+  "when": "F.A. 469",
+  "c": "HoME XI, the Grey Annals §214, year header 469 [C] — 'For Lúthien had won this doom from Manwë that Beren might return to live again, and she with him... This doom she chose'.",
+  "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
+ },
+ {
+  "id": "counterdoom_feanor",
+  "n": "Feänor's counter-doom to the Doom of Mandos",
+  "kind": "oath",
+  "when": "Y.T. 1496",
+  "c": "HoME X, the Annals of Aman §155, year header 1496 [C] — \"'Therefore I say we will go on, and this doom I add: the deeds that we do shall be the matter of song until the last days of Arda.'\" In the SAME annal as the Doom of Mandos.",
+  "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
  }
 ]
