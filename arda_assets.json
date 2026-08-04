@@ -573,7 +573,7 @@
    "what": "Centreline trace of Christopher Tolkien's Beleriand plate with his lettering omitted — one open path per pen stroke, 40,355 paths",
    "hand": "Christopher Tolkien drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
    "licence": "own work — traced by the archive's own generator from published plates",
-   "source": "map/gen_centerline.py, traced from map_beleriand_1.jpg"
+   "source": "map/gen_nolabel_sheets.py, from cl/bel.svg -- which strips his lettering from the centreline sheet; the centreline trace itself is map/gen_centerline.py from map_beleriand_1.jpg"
   },
   {
    "file": "cl/gm.svg",
@@ -587,7 +587,7 @@
    "what": "Centreline trace of Christopher Tolkien's General Map of Middle-earth with his lettering omitted — one open path per pen stroke, 62,646 paths",
    "hand": "Christopher Tolkien drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
    "licence": "own work — traced by the archive's own generator from published plates",
-   "source": "map/gen_centerline.py, traced from map_middle_earth_2.jpeg"
+   "source": "map/gen_nolabel_sheets.py, from cl/gm.svg -- which strips his lettering from the centreline sheet; the centreline trace itself is map/gen_centerline.py from map_middle_earth_2.jpeg"
   },
   {
    "file": "cl/gr.svg",
