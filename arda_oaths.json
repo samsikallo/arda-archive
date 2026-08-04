@@ -736,5 +736,21 @@
   "when": "Y.T. 1496",
   "c": "HoME X, the Annals of Aman §155, year header 1496 [C] — \"'Therefore I say we will go on, and this doom I add: the deeds that we do shall be the matter of song until the last days of Arda.'\" In the SAME annal as the Doom of Mandos.",
   "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
+ },
+ {
+  "id": "oath_felagund_foresees",
+  "n": "Felagund foresees his own oath",
+  "kind": "oath",
+  "when": "F.A. 102 / 499",
+  "c": "HoME XI, the Grey Annals §108 [C]. THE PASSAGE SITS UNDER TWO YEAR HEADERS -- 102 and 499 -- because the Grey Annals print VARIANT RECENSIONS IN SEQUENCE, and the archive publishes the RANGE with both named (the owner's ruling, 4 Aug 2026). \"'An oath I too shall swear, and must be free to fulfill it and go into darkness.'\" — Felagund to Galadriel, foreseeing the oath he swears to Barahir at §146.",
+  "note": "Added 5 Aug 2026. Both year headers verified with map/annal_header.py, which now returns EVERY matching block rather than choosing one -- the tie-break it had picked wrongly for exactly these two."
+ },
+ {
+  "id": "oath_ulfang_sons",
+  "n": "Ulfang's sons swear allegiance to Caranthir",
+  "kind": "oath",
+  "when": "F.A. 463 / 466",
+  "c": "HoME XI, the Grey Annals §174 [C], repeated verbatim at §186 which Christopher heads '(Conclusion of annal 463 in Version II)'. TWO HEADERS, 463 and 466, BOTH NAMED. 'and they followed Cranthir and swore allegiance to him and were faithless' — CRANTHIR is the annals' form of Caranthir.",
+  "note": "Added 5 Aug 2026. Both year headers verified with map/annal_header.py, which now returns EVERY matching block rather than choosing one -- the tie-break it had picked wrongly for exactly these two."
  }
 ]
