@@ -88,7 +88,7 @@ cats.forEach(c=>{
  h+=`<h2 class="cathead">${c.l}<span class="n">${inCat.length} treasure${inCat.length>1?"s":""}</span></h2>`;
  const subs=[];inCat.forEach(a=>{if(!subs.includes(a.sub))subs.push(a.sub)});
  subs.forEach(s=>{const g=inCat.filter(a=>a.sub===s);
-  h+=`<h3 class="subhead">${s}<span class="n">${g.length}</span></h3><div class="grid">`
+  h+=`<div class="grid">`
     +g.map(card).join("")+`</div>`;});
 });
 document.getElementById("grid").innerHTML=h||`<div id="none">Nothing in the hall answers to that name. ${D.length} treasures in all.</div>`;
