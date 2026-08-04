@@ -19,7 +19,7 @@
   "unrecorded"
  ],
  "n_places": 79,
- "n_steps": 79,
+ "n_steps": 80,
  "note": "The slider runs over the moments the archive actually records -- each distinct Age and year at which something in its timelines happened -- so it never moves through invented time. A place with no dated record is never hidden: the archive does not know when it stood, and hiding it would assert an absence no text makes.",
  "places": {
   "amon ereb": [
@@ -51,7 +51,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 13",
+    "cite": "Silm 13; GA 60, The Third Battle §77 (HoME XI) — 'Here Morgoth... made trial of the strength and watchfulness of his enemies'",
     "rank": 1,
     "status": "event",
     "what": "Dagor Aglareb; the Siege of Angband begins",
@@ -67,7 +67,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 13; Grey Annals",
+    "cite": "Silm 13; GA 260 §116 (HoME XI) — 'Here Glaurung, the first of the Urulóki, the fire-drakes of the North, came forth from Angband's gate by night'",
     "rank": 1,
     "status": "event",
     "what": "Glaurung first issues from Angband — driven back by Fingon",
@@ -91,7 +91,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 18–23 [C]",
+    "cite": "Silm 18–23; GA 455 §145 and HoME XI, the Tale of Years [C] — the opening year is the annal's own '455 §145 The Fell Year. Here came an end of peace and mirth... Morgoth unloosed at last his long-gathered strength', and the closing year is where the War of Wrath opens, F.A. 545, per the owner's ruling of 31 July",
     "rank": 1,
     "status": "event",
     "what": "Master of the North: the Bragollach, the Nirnaeth, the fall of every realm",
@@ -109,7 +109,7 @@
   "angle": [
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — '861 Death of Eärendur, and division of Arnor', the annal that creates Rhudaur",
     "rank": 3,
     "status": "event",
     "what": "The angle between Ettenmoors, Weather Hills and Bruinen",
@@ -135,7 +135,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [I-M] — the archive's own placement. NO ANNAL DATES c.1350: the Tale of Years' nearest entry is '1356 King Argeleb I slain in battle with Rhudaur', which dates the war and not the realm's passing to the Witch-king's hand",
     "rank": 3,
     "status": "event",
     "what": "'an evil lord of the Hill-men' seizes power in secret league with Angmar; the Dúnedain remnant flees",
@@ -143,7 +143,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A; LotR I.12 [C]",
+    "cite": "App A; LotR I.12; LotR App B [C] — '1409 The Witch-king of Angmar invades Arnor. King Arveleg I slain. Fornost and Tyrn Gorthad are defended. The Tower of Amon Sûl destroyed'",
     "rank": 3,
     "status": "event",
     "what": "Its force spent as Angmar's vanguard; the land after holds only trolls and ruin",
@@ -195,7 +195,7 @@
    },
    {
     "age": "S.A.",
-    "cite": "Silm; App A; UT [C]",
+    "cite": "Silm; App A; UT; LotR App B [C] — '3434 The host of the Alliance crosses the Misty Mountains. Battle of Dagorlad and defeat of Sauron' and '3441 Sauron overthrown by Elendil and Gil-galad, who perish'. Isildur's loss follows in T.A. 2, named in the record's own words",
     "rank": 2,
     "status": "event",
     "what": "The realm's flower dies with Elendil at the Last Alliance; Isildur's loss at the Gladden follows",
@@ -203,7 +203,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — '861 Death of Eärendur, and division of Arnor'",
     "rank": 3,
     "status": "event",
     "what": "At Eärendur's death the sons divide it: Arthedain, Cardolan, Rhudaur",
@@ -247,7 +247,7 @@
   "arthedain": [
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — '861 Death of Eärendur, and division of Arnor'",
     "rank": 3,
     "status": "event",
     "what": "At Eärendur's death the sons divide it: Arthedain, Cardolan, Rhudaur",
@@ -377,11 +377,11 @@
   "belegost": [
    {
     "age": "F.A.",
-    "cite": "Silm 20 [C]",
+    "cite": "Silm 20; GA §217 (HoME XI) [C]",
     "rank": 1,
     "status": "event",
     "what": "Azaghâl's phalanx at the Nirnaeth turns Glaurung — the king slain",
-    "year": 473
+    "year": 472
    },
    {
     "age": "F.A.",
@@ -393,7 +393,7 @@
    },
    {
     "age": "S.A.",
-    "cite": "App A III [C]",
+    "cite": "App A III; LotR App B [C] — '40 Many Dwarves leaving their old cities in Ered Luin go to Moria and swell its numbers'",
     "rank": 2,
     "status": "event",
     "what": "Refugees of Nogrod and Belegost swell it; 'its wealth and its renown' greatest",
@@ -421,7 +421,7 @@
   "bree": [
    {
     "age": "T.A.",
-    "cite": "App D; Prologue [C]",
+    "cite": "App D; Prologue; LotR App B [C] — 'c. 1300 ... The Periannath migrate westward; many settle at Bree' and '1356 ... About this time the Stoors leave the Angle'. App B's own 'c.' matches the record's '1300s'; the Bree-reckoning itself is App D's",
     "rank": 3,
     "status": "event",
     "what": "Hobbits (Stoors and others) join; Bree Year 1 = T.A. 1300 in their count",
@@ -447,10 +447,10 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 21; CoH [C]",
+    "cite": "Silm 21; CoH; GA 499 §320–333 (HoME XI) [C]",
     "rank": 1,
     "status": "event",
-    "what": "Brethil holds the Crossings of Teiglin; Túrin's last deeds at Cabed-en-Aras",
+    "what": "Brethil holds the Crossings of Teiglin; Túrin's last deeds at Cabed-en-Aras (GA 499 §320–333: the Worm lay at Cabed-en-Aras, and there Turambar and Níniel died)",
     "year": 458
    },
    {
@@ -495,7 +495,7 @@
   "cardolan": [
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — '861 Death of Eärendur, and division of Arnor'",
     "rank": 3,
     "status": "event",
     "what": "At Eärendur's death the sons divide it: Arthedain, Cardolan, Rhudaur",
@@ -547,7 +547,7 @@
   "celebrant": [
    {
     "age": "T.A.",
-    "cite": "UT, Cirion & Eorl; App A [C]",
+    "cite": "UT, Cirion & Eorl; App A; LotR App B [C] — '2510 ... Eorl the Young wins the victory of the Field of Celebrant. The Rohirrim settle in Calenardhon'. The Oath itself is UT's and undated there; see finding 404",
     "rank": 3,
     "status": "event",
     "what": "Eorl's ride to Celebrant; Cirion's gift of Calenardhon; the Oath sworn on Halifirien",
@@ -635,7 +635,7 @@
   "doriath": [
    {
     "age": "F.A.",
-    "cite": "Silm 20, 23 [C]",
+    "cite": "Silm 20, 23; GA 473 §257 (HoME XI) [C] — 'Then Cirdan took his remnant by ship, and they sailed to the Isle of Balar, and made a refuge for all that could come thither', the annal after the Havens were laid in ruin",
     "rank": 1,
     "status": "event",
     "what": "Círdan and Gil-galad hold Balar; the Havens gather Gondolin's and Doriath's survivors",
@@ -643,7 +643,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 22 [C]",
+    "cite": "HoME XI, the Tale of Years [C] — \"502 The Dwarves invade Doriath. Thingol is slain and his realm ended... 506 The Second Kin-slaying\"; also HoME V (AB2) annals 502 and 506. Silm 22 narrates the events and dates none of them",
     "rank": 1,
     "status": "sacked",
     "what": "Thingol slain in Menegroth; the Girdle withdrawn; the Dwarves sack Menegroth; the Second Kinslaying ends Dior's brief restoration",
@@ -669,7 +669,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 20 [C]",
+    "cite": "[I-M] the archive's own reading. NO ANNAL DATES THE BEGINNING of the Easterlings' possession; 473 is inferred from the Nirnaeth being 472. The possession itself IS dated: HoME XI, the Grey Annals §263 (488) -- \"Here Tuor son of Huor, being now sixteen years of age, seeking to escape from Dorlómin, was made captive and enslaved by Lorgan chief of the Easterlings\". Silm 20 narrates the aftermath and dates none of it. Owner's ruling 31 Jul",
     "rank": 1,
     "status": "event",
     "what": "The Easterlings possess the land; the Edain enslaved",
@@ -677,7 +677,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "CoH [C]",
+    "cite": "CoH [I-M] — the archive's own reading. NO ANNAL DATES THIS: the Grey Annals run to 499, so 500 lies past their last entry, and CoH prints no years at all. The earlier Doriath invitation Morwen REFUSED ('Morwen would not depart from her house... Nienor was a babe in arms') is decades before, so the span is the archive's placement of a later departure the corpus does not date",
     "rank": 1,
     "status": "event",
     "what": "Túrin's generation scattered; Morwen and Niënor flee",
@@ -687,7 +687,7 @@
   "dorthonion": [
    {
     "age": "F.A.",
-    "cite": "Silm 14 [C]",
+    "cite": "Silm 14 [I-M] — the archive's own placement, after the council of F.A. 7. NO ANNAL DATES IT: the Grey Annals' annal 7 (§65–§71) holds the council and the sons of Fëanor's removal east and names neither brother nor Dorthonion, and Silm 14 is a geographical survey that prints no years — 'From the northern slopes of Dorthonion Angrod and Aegnor, sons of Finarfin, looked out over the fields of Ard-galen'",
     "rank": 1,
     "status": "event",
     "what": "Angrod and Aegnor hold the northern pine-highlands",
@@ -721,7 +721,7 @@
   "dorwinion": [
    {
     "age": "T.A.",
-    "cite": "Hobbit 9 [C]",
+    "cite": "Hobbit 9 [I-M] — the archive's own placement. NO ANNAL DATES IT: the Dorwinion wine is a detail of the Hobbit's narrative, and the Tale of Years' 2941 entry carries the Quest of Erebor and the Battle of Five Armies, not the Elvenking's cellars",
     "rank": 3,
     "status": "event",
     "what": "'the heady vintage of the great gardens of Dorwinion' shipped up the Running River to the Elvenking and Esgaroth",
@@ -781,7 +781,7 @@
   "eotheod": [
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — '1977 Frumgar leads the Eótheod into the North'; 1977 appears NOWHERE in Appendix A",
     "rank": 3,
     "status": "event",
     "what": "Northmen remnants free themselves after the Wainrider disasters; Frumgar leads them north (1977) to the Anduin's springs",
@@ -835,7 +835,7 @@
   "ettenmoors": [
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — '861 Death of Eärendur, and division of Arnor', the annal that creates Rhudaur",
     "rank": 3,
     "status": "event",
     "what": "The angle between Ettenmoors, Weather Hills and Bruinen",
@@ -845,7 +845,7 @@
   "falas": [
    {
     "age": "F.A.",
-    "cite": "Silm 20 [C]",
+    "cite": "[I-M] the archive's own reading, as its own prose already says (\"the year after the Nirnaeth\"). NO ANNAL DATES THE RAZING; 473 is inferred from the Nirnaeth being 472. The havens are attested RUINED by c.495 -- HoME V (AB2), before annal 495-6: \"journeying down the coast he passed the ruined havens of Brithombar and Eglorest, and came to the mouths of Sirion\". Silm 20 narrates and dates nothing; the Silmarillion contains 473 zero times. Owner's ruling 31 Jul",
     "rank": 1,
     "status": "besieged",
     "what": "The Havens besieged and razed the year after the Nirnaeth; remnant to Balar and Sirion",
@@ -911,11 +911,11 @@
   "gondolin": [
    {
     "age": "F.A.",
-    "cite": "Silm 15 [C]",
+    "cite": "HoME XI, the Grey Annals §89 (work begun) and §110 (full-wrought) [C]; owner's ruling 31 Jul — Silm 15 narrates the event and dates nothing, and 104 has no witness in any text",
     "rank": 1,
     "status": "event",
     "what": "Turgon, guided by Ulmo, finds Tumladen and builds the city in secret",
-    "year": 52
+    "year": 64
    },
    {
     "age": "F.A.",
@@ -935,7 +935,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 20, 23 [C]",
+    "cite": "Silm 20, 23; GA 473 §257 (HoME XI) [C] — 'Then Cirdan took his remnant by ship, and they sailed to the Isle of Balar, and made a refuge for all that could come thither', the annal after the Havens were laid in ruin",
     "rank": 1,
     "status": "event",
     "what": "Círdan and Gil-galad hold Balar; the Havens gather Gondolin's and Doriath's survivors",
@@ -959,7 +959,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 23; FoG; the year is the archive's own reading, not the corpus's [I-M]",
+    "cite": "Silm 23; FoG; the year is the archive's own reading, not the corpus's [I-M] — and the conf field now agrees with the sentence it has always carried",
     "rank": 1,
     "status": "event",
     "what": "The Fall of Gondolin; Glorfindel's duel",
@@ -993,7 +993,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — '830 Falastur begins the line of the Ship-kings of Gondor', '1050 Hyarmendacil conquers the Harad. Gondor reaches the height of its power', and '1149 Reign of Atanatar Alcarin begins'",
     "rank": 3,
     "status": "taken",
     "what": "The four Ship-kings: Umbar taken, the realm 'reached the summit of its power' under Hyarmendacil I",
@@ -1009,7 +1009,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — both ends are annals: '933 King Eärnil I takes Umbar, which becomes a fortress of Gondor' and '1448 Rebels escape and seize Umbar'",
     "rank": 3,
     "status": "event",
     "what": "Gondor takes Umbar (Eärnil I); the rebels of the Kin-strife flee here after 1448 — the Corsair age begins",
@@ -1041,7 +1041,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — every clause is an annal: '1432 King Valacar of Gondor dies, and the civil war of the Kin-strife begins', '1437 Burning of Osgiliath and loss of the palantír', '1448 Rebels escape and seize Umbar'",
     "rank": 3,
     "status": "burned",
     "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
@@ -1049,7 +1049,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — the record names its later years inline and each is an annal: '1636 The Great Plague devastates Gondor. Death of King Telemnar and his children', '2002 Fall of Minas Ithil, afterwards known as Minas Morgul', and '2050 ... Eärnur rides to Minas Morgul and is lost. Mardil becomes the first Ruling Steward'",
     "rank": 3,
     "status": "destroyed",
     "what": "The Great Plague — the watch on Mordor abandoned; 2002 Minas Ithil falls; 2050 the King lost; the Stewards rule",
@@ -1127,7 +1127,7 @@
   "himring": [
    {
     "age": "F.A.",
-    "cite": "Silm 13–14 [C]",
+    "cite": "Silm 13–14; GA 7 §70 (HoME XI) [C]",
     "rank": 1,
     "status": "event",
     "what": "After Thingol's word, the sons of Fëanor remove east; Maedhros holds Himring",
@@ -1143,7 +1143,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 20 [C]",
+    "cite": "[I-M] the archive's own reading. NO ANNAL DATES THE BREAKING of the March; 473 is inferred from the Nirnaeth being 472. Searched both recensions for Ossiriand and 'March of Maedhros/Maidros' in contexts of scattering, flight or breaking: the Grey Annals passages are GEOGRAPHIC -- \"east the wide countries south of the March of Maidros, even to the borders of Ossiriand were held to be the domain of the sons of Fëanor\" -- and carry no year. Silm 20 narrates and dates nothing; the Silmarillion contains 473 zero times. Owner's ruling 31 Jul",
     "rank": 1,
     "status": "event",
     "what": "After the Nirnaeth the March is broken; the brothers scatter to Ossiriand's eaves",
@@ -1161,10 +1161,10 @@
   "hithlum": [
    {
     "age": "F.A.",
-    "cite": "Silm 13 [C]",
+    "cite": "Silm 13; GA (HoME XI) and Silm 9 [C] — the two annals are quoted in the clause itself: Fëanor's host at Y.T. 1497, Fingolfin's at the first rising of the Moon",
     "rank": 1,
     "status": "event",
-    "what": "The Noldor land in Mithrim; Fingolfin holds the north-west",
+    "what": "TWO Noldorin arrivals, an age apart: Feanor's host reached Lake Mithrim in Y.T. 1497, 'before the rising of the Moon' (GA, HoME XI); Fingolfin's came 'at the first rising of the Moon' (Silm 9) and held the north-west, and it is his realm this series follows",
     "year": 1
    },
    {
@@ -1177,18 +1177,18 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 20 [C]",
-    "rank": 1,
-    "status": "event",
-    "what": "After the Nirnaeth, Morgoth's Easterlings are penned in Hithlum over the Edain's remnant",
-    "year": 473
-   },
-   {
-    "age": "F.A.",
-    "cite": "Silm 20 [C]",
+    "cite": "Silm 20; GA 472 §252 (HoME XI) [C] — 'Morgoth now broke his pledges to the Easterlings that had served him, and denied to them the rich lands of Beleriand which they coveted, and he sent away these evil folk into Hithlum, and there commanded them to dwell'. §252 falls between 472 §217 and 473 §254, so it is the Year of Lamentation itself",
     "rank": 1,
     "status": "event",
     "what": "Morgoth pens his hirelings in Hithlum, cheating them of promised plunder",
+    "year": 472
+   },
+   {
+    "age": "F.A.",
+    "cite": "[I-M] the archive's own reading. NO ANNAL DATES THE EASTERLINGS' ARRIVAL in Hithlum; 473 is inferred from the Nirnaeth being 472. Their POSSESSION is dated: HoME XI, the Grey Annals §263 (488, Lorgan their chief) and HoME V (AB2) 495-6 (Brodda in his hall). Silm 20 narrates the aftermath and dates none of it. Owner's ruling 31 Jul: a span may rest on the archive's own reading, marked as such",
+    "rank": 1,
+    "status": "event",
+    "what": "After the Nirnaeth, Morgoth's Easterlings are penned in Hithlum over the Edain's remnant",
     "year": 473
    }
   ],
@@ -1251,7 +1251,7 @@
   "khazaddum": [
    {
     "age": "S.A.",
-    "cite": "App A III [C]",
+    "cite": "App A III; LotR App B [C] — '40 Many Dwarves leaving their old cities in Ered Luin go to Moria and swell its numbers'",
     "rank": 2,
     "status": "event",
     "what": "Refugees of Nogrod and Belegost swell it; 'its wealth and its renown' greatest",
@@ -1275,7 +1275,7 @@
    },
    {
     "age": "S.A.",
-    "cite": "Silm, Of the Rings; App A [C]",
+    "cite": "Silm, Of the Rings; App A; LotR App B [C] — BOTH endpoints are Tale of Years annals: '750 Eregion founded by the Noldor' and '1697 Eregion laid waste. Death of Celebrimbor. The gates of Moria are shut'",
     "rank": 2,
     "status": "event",
     "what": "The West-gate opened to Eregion; mithril's noon; the gates shut at Eregion's fall",
@@ -1291,7 +1291,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A III [C]",
+    "cite": "App A III; LotR App B [C] — both years in the annals' own words: '1980 ... A Balrog appears in Moria, and slays Durin VI. 1981 Náin I slain. The Dwarves flee from Moria'",
     "rank": 3,
     "status": "event",
     "what": "The Balrog wakes; Durin VI and Náin I slain; the Folk depart",
@@ -1325,7 +1325,7 @@
    },
    {
     "age": "S.A.",
-    "cite": "UT [C]",
+    "cite": "UT; LotR App B [C] — the annals date both ends: '1695 Sauron's forces invade Eriador. Gil-galad sends Elrond to Eregion' and '1700 Tar-Minastir sends a great navy from Númenor to Lindon. Sauron is defeated. 1701 Sauron is driven out of Eriador'",
     "rank": 2,
     "status": "event",
     "what": "Lindon holds the line of the Lhûn against Sauron until Númenor's relief",
@@ -1379,7 +1379,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 22 [C]",
+    "cite": "HoME XI, the Tale of Years [C] — \"502 The Dwarves invade Doriath. Thingol is slain and his realm ended... 506 The Second Kin-slaying\"; also HoME V (AB2) annals 502 and 506. Silm 22 narrates the events and dates none of them",
     "rank": 1,
     "status": "event",
     "what": "Thingol slain in Menegroth; the Girdle withdrawn; the Dwarves sack Menegroth; the Second Kinslaying ends Dior's brief restoration",
@@ -1447,7 +1447,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — the record names its later years inline and each is an annal: '1636 The Great Plague devastates Gondor. Death of King Telemnar and his children', '2002 Fall of Minas Ithil, afterwards known as Minas Morgul', and '2050 ... Eärnur rides to Minas Morgul and is lost. Mardil becomes the first Ruling Steward'",
     "rank": 3,
     "status": "event",
     "what": "The Great Plague — the watch on Mordor abandoned; 2002 Minas Ithil falls; 2050 the King lost; the Stewards rule",
@@ -1505,7 +1505,7 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 19 [C]",
+    "cite": "[I-M] the archive's own reading of when the aftermath reached Nargothrond. AB2 dates Felagund's death to 464 (\"264 [464] Here King Felagund and Beren son of Barahir were emprisoned in Tol-na-Gaurhoth by Thu, and King Felagund was slain\"); the Grey Annals narrate the sequel undated -- \"when the tidings came to Nargothrond of the death of Felagund... then Celegorn and Curufin were hated, and Orodreth took the crown of Nargothrond\". No annal dates the usurpation or Orodreth's accession. Silm 19 narrates and dates nothing. Owner's ruling 31 Jul",
     "rank": 1,
     "status": "event",
     "what": "Finrod goes with Beren; Celegorm and Curufin usurp the people's love; Orodreth rules after",
@@ -1555,7 +1555,7 @@
    },
    {
     "age": "S.A.",
-    "cite": "App A III [C]",
+    "cite": "App A III; LotR App B [C] — '40 Many Dwarves leaving their old cities in Ered Luin go to Moria and swell its numbers'",
     "rank": 2,
     "status": "event",
     "what": "Refugees of Nogrod and Belegost swell it; 'its wealth and its renown' greatest",
@@ -1573,7 +1573,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — every clause is an annal: '1432 King Valacar of Gondor dies, and the civil war of the Kin-strife begins', '1437 Burning of Osgiliath and loss of the palantír', '1448 Rebels escape and seize Umbar'",
     "rank": 3,
     "status": "event",
     "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
@@ -1591,7 +1591,7 @@
    },
    {
     "age": "S.A.",
-    "cite": "UT, Galadriel & Celeborn [C]",
+    "cite": "UT, Galadriel & Celeborn; LotR App B [C] — '1695 Sauron's forces invade Eriador' and '1697 Eregion laid waste. Death of Celebrimbor. The gates of Moria are shut'",
     "rank": 2,
     "status": "event",
     "what": "Sauron's invasion; Ost-in-Edhil razed; Celebrimbor dies bearing witness against him",
@@ -1609,7 +1609,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A; LotR V.9 [C]",
+    "cite": "App A; LotR V.9 [I-M] — the OPENING year is the archive's own placement. NO ANNAL DATES THE RAID: App A narrates it without a year — 'he came to Umbar unlooked for by night, and there burned a great part of the ships of the Corsairs' — and no Third Age entry in the Tale of Years mentions Umbar at all; its only Umbar annal is S.A. 3261. The closing year is sound: the Corsairs' end at Pelargir is March 3019, LotR V.9",
     "rank": 3,
     "status": "event",
     "what": "Thorongil's raid burns the fleet; the Corsairs' last armament dies at Pelargir",
@@ -1619,7 +1619,7 @@
   "rhudaur": [
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — '861 Death of Eärendur, and division of Arnor'",
     "rank": 3,
     "status": "event",
     "what": "At Eärendur's death the sons divide it: Arthedain, Cardolan, Rhudaur",
@@ -1627,7 +1627,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — '861 Death of Eärendur, and division of Arnor', the annal that creates Rhudaur",
     "rank": 3,
     "status": "ruined",
     "what": "The angle between Ettenmoors, Weather Hills and Bruinen",
@@ -1643,7 +1643,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [I-M] — the archive's own placement. NO ANNAL DATES c.1350: the Tale of Years' nearest entry is '1356 King Argeleb I slain in battle with Rhudaur', which dates the war and not the realm's passing to the Witch-king's hand",
     "rank": 3,
     "status": "event",
     "what": "'an evil lord of the Hill-men' seizes power in secret league with Angmar; the Dúnedain remnant flees",
@@ -1651,7 +1651,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A; LotR I.12 [C]",
+    "cite": "App A; LotR I.12; LotR App B [C] — '1409 The Witch-king of Angmar invades Arnor. King Arveleg I slain. Fornost and Tyrn Gorthad are defended. The Tower of Amon Sûl destroyed'",
     "rank": 3,
     "status": "ruined",
     "what": "Its force spent as Angmar's vanguard; the land after holds only trolls and ruin",
@@ -1697,7 +1697,7 @@
   "rohan": [
    {
     "age": "T.A.",
-    "cite": "UT, Cirion & Eorl; App A [C]",
+    "cite": "UT, Cirion & Eorl; App A; LotR App B [C] — '2510 ... Eorl the Young wins the victory of the Field of Celebrant. The Rohirrim settle in Calenardhon'. The Oath itself is UT's and undated there; see finding 404",
     "rank": 3,
     "status": "event",
     "what": "Eorl's ride to Celebrant; Cirion's gift of Calenardhon; the Oath sworn on Halifirien",
@@ -1731,7 +1731,7 @@
   "sarn athrad": [
    {
     "age": "F.A.",
-    "cite": "Silm 22 [C]",
+    "cite": "Silm 22 [I-M] — the archive's own placement, and the open '+' is doing the honest work. NO ANNAL DATES EITHER: every mention of Tol Galen and Sarn Athrad in HoME XI sits in the map commentary, under no annal year, and Silm 22 prints none. The ambush follows Thingol's death, which the archive places at F.A. c.502",
     "rank": 1,
     "status": "event",
     "what": "Beren and Lúthien dwell on Tol Galen; the Green-elves aid the ambush at Sarn Athrad",
@@ -1767,7 +1767,7 @@
   "thargelion": [
    {
     "age": "F.A.",
-    "cite": "Silm 13–14 [C]",
+    "cite": "Silm 13–14; GA 7 §70 (HoME XI) [C]",
     "rank": 1,
     "status": "event",
     "what": "Caranthir's folk settle between Gelion and Ered Luin by Lake Helevorn",
@@ -1783,10 +1783,10 @@
    },
    {
     "age": "F.A.",
-    "cite": "Silm 17 [C]",
+    "cite": "Silm 17 [I-M] — the archive's own placement. NO ANNAL DATES THE DEED: Silm 17 prints no years, and HoME XI's account sits in 'Of the Kindreds and Houses of the Edain', outside the annals",
     "rank": 1,
     "status": "event",
-    "what": "(after the land's loss) Haladin earlier defended by Caranthir's riders — the offer refused",
+    "what": "A RETROSPECTIVE, placed here after the land's loss and NOT in sequence: Caranthir's host had earlier come down from the north and driven the Orcs into the rivers, and Haleth refused his offer of lands further north. That belongs to the coming of Men, decades before the Bragollach — c.463 dates the telling, not the deed",
     "year": 463
    }
   ],
@@ -1803,7 +1803,7 @@
   "the shire": [
    {
     "age": "T.A.",
-    "cite": "LotR Prologue [C]",
+    "cite": "LotR Prologue; LotR App B [C] — '1601 Many Periannath migrate from Bree, and are granted land beyond Baranduin by Argeleb II', which is the record's grant in the annal's own words",
     "rank": 3,
     "status": "event",
     "what": "Marcho and Blanco granted the land from Baranduin to the Far Downs by King Argeleb II",
@@ -1837,7 +1837,7 @@
   "tol galen": [
    {
     "age": "F.A.",
-    "cite": "Silm 22 [C]",
+    "cite": "Silm 22 [I-M] — the archive's own placement, and the open '+' is doing the honest work. NO ANNAL DATES EITHER: every mention of Tol Galen and Sarn Athrad in HoME XI sits in the map commentary, under no annal year, and Silm 22 prints none. The ambush follows Thingol's death, which the archive places at F.A. c.502",
     "rank": 1,
     "status": "event",
     "what": "Beren and Lúthien dwell on Tol Galen; the Green-elves aid the ambush at Sarn Athrad",
@@ -1899,7 +1899,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — '830 Falastur begins the line of the Ship-kings of Gondor', '1050 Hyarmendacil conquers the Harad. Gondor reaches the height of its power', and '1149 Reign of Atanatar Alcarin begins'",
     "rank": 3,
     "status": "taken",
     "what": "The four Ship-kings: Umbar taken, the realm 'reached the summit of its power' under Hyarmendacil I",
@@ -1915,7 +1915,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — both ends are annals: '933 King Eärnil I takes Umbar, which becomes a fortress of Gondor' and '1448 Rebels escape and seize Umbar'",
     "rank": 3,
     "status": "event",
     "what": "Gondor takes Umbar (Eärnil I); the rebels of the Kin-strife flee here after 1448 — the Corsair age begins",
@@ -1931,7 +1931,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — every clause is an annal: '1432 King Valacar of Gondor dies, and the civil war of the Kin-strife begins', '1437 Burning of Osgiliath and loss of the palantír', '1448 Rebels escape and seize Umbar'",
     "rank": 3,
     "status": "event",
     "what": "The Kin-strife: Castamir's usurpation, Osgiliath burned, the rebels to Umbar",
@@ -1939,7 +1939,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A [C]",
+    "cite": "App A; LotR App B [C] — '1810 King Telumehtar Umbardacil retakes Umbar and drives out the Corsairs'",
     "rank": 3,
     "status": "event",
     "what": "Telumehtar Umbardacil retakes it briefly; lost again to Harad",
@@ -1947,7 +1947,7 @@
    },
    {
     "age": "T.A.",
-    "cite": "App A; LotR V.9 [C]",
+    "cite": "App A; LotR V.9 [I-M] — the OPENING year is the archive's own placement. NO ANNAL DATES THE RAID: App A narrates it without a year — 'he came to Umbar unlooked for by night, and there burned a great part of the ships of the Corsairs' — and no Third Age entry in the Tale of Years mentions Umbar at all; its only Umbar annal is S.A. 3261. The closing year is sound: the Corsairs' end at Pelargir is March 3019, LotR V.9",
     "rank": 3,
     "status": "burned",
     "what": "Thorongil's raid burns the fleet; the Corsairs' last armament dies at Pelargir",
@@ -2000,6 +2000,13 @@
    "label": "F.A. 60",
    "rank": 1,
    "year": 60
+  },
+  {
+   "age": "F.A.",
+   "era": "the First Age",
+   "label": "F.A. 64",
+   "rank": 1,
+   "year": 64
   },
   {
    "age": "F.A.",
