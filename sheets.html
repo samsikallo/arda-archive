@@ -149,7 +149,9 @@ two wrong placements earlier today.</div>
   if(!g||!D.anchors) return;
   g.innerHTML=D.anchors.map(function(a,i){
    return '<g class="pin" data-plate="'+a.plate+'">'
-     +'<circle cx="'+a.x+'" cy="'+a.y+'" r="5" fill="#7a4a12" fill-opacity=".85"/>><title>'+esc(a.name)+'</title></circle>'
+     +'<circle cx="'+a.x+'" cy="'+a.y+'" r="5" fill="#7a4a12" fill-opacity=".85"'
+     +' style="cursor:pointer" data-i="'+i+'" tabindex="0" role="button"'
+     +' aria-label="'+esc(a.name)+', open its record"><title>'+esc(a.name)+'</title></circle>'
      +'<text x="'+(a.x+9)+'" y="'+(a.y+5)+'" font-size="17" font-family="Georgia,serif" '
      +'fill="#5a3a10" style="cursor:pointer" data-i="'+i+'">'+esc(a.name)+'</text></g>';
   }).join("");
@@ -157,8 +159,25 @@ two wrong placements earlier today.</div>
   // with a name, and the archive knows what kind of place it is, when it stood, what it was also
   // called, what the corpus says and where that is written. Carried across by LOOKUP -- the
   // gazetteer keys its places by lowercase name, and all 161 anchors resolve.
+  // KEYBOARD ACCESS. The page had ZERO focusable features against map.html's 234 -- 161 pins
+  // reachable only by mouse, which is not "hard to use" but unusable, and it is the property
+  // ruling 5 names as easiest to lose because nothing goes red when it does.
+  // Enter and Space open a pin; Escape closes the record and RETURNS FOCUS TO THE PIN that opened
+  // it, because focus stranded inside a panel that has just closed is the commonest keyboard trap.
+  var lastPin=null;
+  g.addEventListener("keydown",function(ev){
+   if(ev.key!=="Enter"&&ev.key!==" ")return;
+   var el=ev.target.closest("[data-i]"); if(!el)return;
+   ev.preventDefault(); el.dispatchEvent(new MouseEvent("click",{bubbles:true}));
+  });
+  document.addEventListener("keydown",function(ev){
+   if(ev.key!=="Escape")return;
+   var r=document.getElementById("rec");
+   if(r&&!r.hidden){r.hidden=true; if(lastPin)lastPin.focus();}
+  });
   g.addEventListener("click",function(ev){
    var el=ev.target.closest("[data-i]"); if(!el)return;
+   lastPin=el;
    var a=D.anchors[+el.dataset.i]; if(!a)return;
    var r=document.getElementById("rec");
    r.innerHTML='<b>'+esc(a.name)+'</b>'
@@ -172,6 +191,7 @@ two wrong placements earlier today.</div>
       :"General Map plate — registered to about \u00b15\u202fpx, a different edition from the reference")
     +'</span>';
    r.hidden=false;
+   r.setAttribute("tabindex","-1"); r.setAttribute("role","status"); r.focus();
   });
  })();
  $("#toggles").innerHTML=D.sheets.map(function(s){
