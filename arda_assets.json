@@ -570,7 +570,7 @@
   },
   {
    "file": "cl/bel_nolabel.svg",
-   "what": "Centreline trace of Christopher Tolkien's Beleriand plate with his lettering omitted — one open path per pen stroke, 40,355 paths",
+   "what": "Centreline trace of Christopher Tolkien's Beleriand plate with most of his lettering removed — one open path per pen stroke, 40,355 paths; 425 strokes of his lettering remain, 266 of them inside his own label boxes",
    "hand": "Christopher Tolkien drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
    "licence": "published at the owner's explicit direction, 1 August 2026 -- his words: keep cl/, record it. This is NOT a grant from the rightsholder and is not recorded as one. The archive states whose hand it is and on whose instruction it is published, which is the true thing it can say. The source plates are NOT published: they are held in uploads/, which is gitignored.",
    "source": "map/gen_nolabel_sheets.py, from cl/bel.svg -- which strips his lettering from the centreline sheet; the centreline trace itself is map/gen_centerline.py from map_beleriand_1.jpg"
@@ -584,7 +584,7 @@
   },
   {
    "file": "cl/gm_nolabel.svg",
-   "what": "Centreline trace of Christopher Tolkien's General Map of Middle-earth with his lettering omitted — one open path per pen stroke, 62,646 paths",
+   "what": "Centreline trace of Christopher Tolkien's General Map of Middle-earth with most of his lettering removed — one open path per pen stroke, 62,646 paths; 4,144 strokes of his lettering remain, 4,115 of them inside his own label boxes",
    "hand": "Christopher Tolkien drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
    "licence": "published at the owner's explicit direction, 1 August 2026 -- his words: keep cl/, record it. This is NOT a grant from the rightsholder and is not recorded as one. The archive states whose hand it is and on whose instruction it is published, which is the true thing it can say. The source plates are NOT published: they are held in uploads/, which is gitignored.",
    "source": "map/gen_nolabel_sheets.py, from cl/gm.svg -- which strips his lettering from the centreline sheet; the centreline trace itself is map/gen_centerline.py from map_middle_earth_2.jpeg"
