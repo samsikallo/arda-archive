@@ -1699,6 +1699,7 @@
    "cites": [
     "App B; LotR VI.3",
     "A RoP; C III.11, IV.3, VI",
+    "The Silmarillion [C]",
     "placed from the archive's own vector map (SETTLE_TA) [I-M]; the record existed already and had no coordinate"
    ],
    "containment": [
@@ -1726,6 +1727,8 @@
     "Sauron's fortress: App B has him begin the building c. S.A. 1000 and begin the REBUILDING in T.A. 2951 — a different age, and begun rather than finished. At its fall LotR VI.3 says 'the earth shook, the plain heaved and cracked, and Orodruin reeled', which is Mordor and the mountain, not the world.",
     "within the Mordor (Sauron) boundary as the living map draws it, S.A. c.1000–3441; T.A. 2951–3019 [I-M]",
     "Evidence Table G24",
+    "“he had fortified the land of Mordor and had built there the Tower of Barad-dûr” — The Silmarillion [C]",
+    "the archive typed it NATURAL_PEAK from a note of its own about Orodruin; no source calls Barad-dûr a mountain, and the mountains near it are what it stands on",
     "the middle of the shape the archive draws"
    ],
    "parents": [
@@ -1777,8 +1780,7 @@
     }
    ],
    "types": [
-    "MAN_MADE_TOWER",
-    "NATURAL_PEAK"
+    "MAN_MADE_TOWER"
    ]
   },
   "barad eithel": {
