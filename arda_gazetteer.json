@@ -1042,8 +1042,8 @@
     }
    ],
    "types": [
-    "MAN_MADE_CITY",
-    "MAN_MADE_RUIN"
+    "MAN_MADE_RUIN",
+    "MAN_MADE_CITY"
    ]
   },
   "anorien": {
@@ -1458,7 +1458,7 @@
      "when": "T.A. 861"
     },
     {
-     "cite": "App B, the Tale of Years [C] — '861 Death of Eärendur, and division of Arnor'. App A carries the narrative of the division; App B carries the year. The annal names the EVENT and none of the detail this record gives.",
+     "cite": "App B, the Tale of Years [C] — '861 Death of Earendur, and division of Arnor'. App A carries the narrative; App B the year.",
      "realm": "arthedain",
      "status": "event",
      "what": "Amlaith, eldest son of Eärendur, holds Fornost and the west",
@@ -2109,7 +2109,7 @@
      "when": "F.A. 472"
     },
     {
-     "cite": "HoME XII, The Peoples of Middle-earth [C]. WJ Tale of Years [C] for the year: recension A '597 Maidros and Maglor, last surviving sons of Fëanor, seize the Silmarils', recension B '597 This entry was changed to 587', and the same recension's '550–597 ... changed to 545–587' — the two ends of one redating, and the witness behind the owner's ruling of 31 July.",
+     "cite": "HoME XII, The Peoples of Middle-earth [C]",
      "realm": null,
      "status": "ruined",
      "what": "Ered Luin broken and the city ruined; its folk removed to Khazad-dum",
@@ -2123,7 +2123,7 @@
      "when": "S.A. 40+"
     },
     {
-     "cite": "App B, the Tale of Years, Second Age, 'c. 40' [C] — 'Many Dwarves leaving their old cities in Ered Luin go to Moria and swell its numbers'. [I-M] on identifying those cities as Nogrod and Belegost: the annal does not name them. The 'Ered Luin broken … tumults' clause is Silm 24. Full reasoning in arda_realms.pol belegost and LORE_QUEUE 464.",
+     "cite": "App B, the Tale of Years, Second Age, 'c. 40' [C] — 'Many Dwarves leaving their old cities in Ered Luin go to Moria and swell its numbers'. THE ARCHIVE'S OWN LABEL S.A. c.40 IS THAT ANNAL'S YEAR VERBATIM, and it was cited to App A III, which carries NO YEAR: its whole dating is 'After the end of the First Age'. The tenth instance of that substitution after 426, 433, 434 and 437–439. THE OTHER CLAUSE HAS A DIFFERENT SOURCE AGAIN: 'Ered Luin broken … tumults' is Silm 24 — 'In the Great Battle and the tumults of the fall of Thangorodrim … the walls of Ered Luin were broken' — and NO ANNAL DATES THE RUIN OF THE TWO CITIES: App B names Nogrod and Belegost 0 times in 44,662 characters and never mentions the War of Wrath. [I-M] on the identification: the annal says 'their old cities in Ered Luin' and does not name them; App A III names them, undated",
      "realm": "belegost",
      "status": "event",
      "what": "Ered Luin broken in the War of Wrath's tumults; many remove to Khazad-dûm",
@@ -2466,7 +2466,7 @@
      "when": "F.A."
     },
     {
-     "cite": "[I-M] the archive's own reading. NO ANNAL DATES THIS REMOVAL: Christopher disqualifies GA §132 himself — 'Haleth here is of course Haleth the Hunter' — and 'Haladin' occurs 0 times in the Grey Annals. 390 is a typed margin for the END OF THE ESTOLAD SOJOURN; the crossing of the Brithiach is margined 391. Full reasoning in arda_realms.pol brethil and LORE_QUEUE 464.",
+     "cite": "[I-M] the archive's own reading. NO ANNAL DATES THIS REMOVAL. Grey Annals §132 (year header 422) does grant Brethil by Thingol's leave — 'Here at the prayer of Inglor Thingol granted to Haleth's people to live in Brethil' — BUT CHRISTOPHER TOLKIEN DISQUALIFIES IT FOR THIS RECORD IN HIS OWN WORDS: 'Haleth here is of course Haleth the Hunter, who had entered Beleriand two years before' (HoME XI, commentary on Of the Coming of Men into the West §29). The Lady Haleth's Haladin do not occur in the Grey Annals text at all — 'Haladin' 0 times. The only dates are TYPED MARGINS on the LQ 1 typescript: the stockade siege 375, the Estolad sojourn 376–390, the crossing of the Brithiach 391, Haleth's death 420. AND 390 IS THE END OF THE SOJOURN, NOT THE REMOVAL — the crossing is margined 391, and Thingol's grace carries no date at all. The strictest true statement is: after 391, not later than 420, dated by nothing",
      "realm": "brethil",
      "status": "event",
      "what": "The Haladin under Haleth remove to Brethil, by leave of Thingol",
@@ -3187,7 +3187,7 @@
      "when": "T.A. 861"
     },
     {
-     "cite": "App B, the Tale of Years [C] — '861 Death of Eärendur, and division of Arnor'. App A carries the narrative of the division; App B carries the year. The annal names the EVENT and none of the detail this record gives.",
+     "cite": "App B, the Tale of Years [C] — '861 Death of Earendur, and division of Arnor'. App A carries the narrative; App B the year.",
      "realm": "cardolan",
      "status": "event",
      "what": "The land between Baranduin, Gwathló and the Great Road",
@@ -3208,14 +3208,14 @@
      "when": "1409"
     },
     {
-     "cite": "App B, the Tale of Years [C] — '1409 The Witch-king of Angmar invades Arnor. King Arveleg I slain. Fornost and Tyrn Gorthad are defended'. App A carries the narrative; App B carries the year.",
+     "cite": "App B, the Tale of Years [C] — '1409 The Witch-king of Angmar invades Arnor. King Arveleg I slain'. App A carries the narrative; App B the year.",
      "realm": "cardolan",
      "status": "destroyed",
      "what": "The last prince falls; a remnant holds Tyrn Gorthad and the Old Forest refuge",
      "when": "T.A. 1409"
     },
     {
-     "cite": "App B, the Tale of Years [C] — '1636 The Great Plague devastates Gondor. Death of King Telemnar and his children'. App A carries the narrative; App B carries the year.",
+     "cite": "App B, the Tale of Years [C] — '1636 The Great Plague devastates Gondor'. App A carries the narrative; App B the year.",
      "realm": "cardolan",
      "status": "event",
      "what": "The Great Plague ends the Dúnedain here; evil wights enter the Barrows",
@@ -3276,7 +3276,7 @@
    ],
    "types": [
     "MAN_MADE_FORTRESS",
-    "NATURAL_PEAK"
+    "MAN_MADE_RUIN"
    ]
   },
   "carnen": {
@@ -4648,7 +4648,7 @@
      "when": "F.A. 7"
     },
     {
-     "cite": "[I-M] the archive's own reading. NO ANNAL DATES THIS GRANT: 410 is a date typed in the MARGIN of a Later Quenta typescript, and the Grey Annals have no year 410 at all. 'by the sons of Finarfin' has no witness — WJ §31 names no giver. Full reasoning in arda_realms.pol ladros and LORE_QUEUE 464.",
+     "cite": "[I-M] the archive's own reading. NO ANNAL DATES THIS GRANT. 410 is a date TYPED IN THE MARGIN of a Later Quenta typescript, reported by Christopher Tolkien: HoME XI, commentary on LQ §31 — 'The date of this gift, as typed in the margin, was 410'. It is not an annal entry: the Grey Annals have no year 410 at all (…402, 413…) and Ladros occurs 0 times in the Grey Annals, 0 in AB 2 and 0 in AB 1. Silm 17 narrates it and dates nothing. TWO FURTHER CAUTIONS: the margin was typed against the AS-TYPED reading naming BREGOR son of Boromir, and Christopher carries 410 across to the emended Boromir; and 'BY THE SONS OF FINARFIN' HAS NO WITNESS — WJ §31 is passive and names no giver, and every glossary the corpus holds says 'the Noldorin Kings'",
      "realm": "ladros",
      "status": "granted",
      "what": "Ladros in north-east Dorthonion granted to the sons of Bëor by the sons of Finarfin",
@@ -4890,7 +4890,7 @@
      "when": "Elder Days"
     },
     {
-     "cite": "App B, the Tale of Years [C] — '2758 Rohan attacked from west and east and overrun. Gondor attacked by fleets of the Corsairs'. App A carries the narrative; App B carries the year.",
+     "cite": "App B, the Tale of Years [C] — '2758 Rohan attacked from west and east and overrun'. App A carries the narrative; App B the year.",
      "realm": "dunland",
      "status": "event",
      "what": "Wulf's host takes Edoras in the Long Winter — the feud's high tide",
@@ -5248,6 +5248,7 @@
     }
    ],
    "types": [
+    "MAN_MADE_RUIN",
     "MAN_MADE_HAVEN"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
@@ -5297,7 +5298,7 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "App B, the Tale of Years [C] — '2758 Rohan attacked from west and east and overrun. Gondor attacked by fleets of the Corsairs'. App A carries the narrative; App B carries the year.",
+     "cite": "App B, the Tale of Years [C] — '2758 Rohan attacked from west and east and overrun'. App A carries the narrative; App B the year.",
      "realm": "dunland",
      "status": "event",
      "what": "Wulf's host takes Edoras in the Long Winter — the feud's high tide",
@@ -5961,7 +5962,7 @@
      "when": "Mar 17-27, 3019"
     },
     {
-     "cite": "App B, the Tale of Years [C] — '1999 Thrain I comes to Erebor and founds a dwarf-kingdom 'under the Mountain''. App A carries the narrative; App B carries the year.",
+     "cite": "App B, the Tale of Years [C] — '1999 Thrain I comes to Erebor and founds a dwarf-kingdom'. App A carries the narrative; App B the year.",
      "realm": "erebor",
      "status": "founded",
      "what": "Thráin I, out of Moria's ruin, founds the Kingdom under the Mountain; the Arkenstone found",
@@ -7360,7 +7361,7 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "App B, the Tale of Years [C] — '861 Death of Eärendur, and division of Arnor'. App A carries the narrative of the division; App B carries the year. The annal names the EVENT and none of the detail this record gives.",
+     "cite": "App B, the Tale of Years [C] — '861 Death of Earendur, and division of Arnor'. App A carries the narrative; App B the year.",
      "realm": "arthedain",
      "status": "event",
      "what": "Amlaith, eldest son of Eärendur, holds Fornost and the west",
@@ -7389,8 +7390,8 @@
     }
    ],
    "types": [
-    "MAN_MADE_CITY",
-    "MAN_MADE_RUIN"
+    "MAN_MADE_RUIN",
+    "MAN_MADE_CITY"
    ]
   },
   "forodwaith": {
@@ -7488,7 +7489,8 @@
    "place_conf": "M",
    "timeline": [],
    "types": [
-    "MAN_MADE_RUIN"
+    "MAN_MADE_RUIN",
+    "MAN_MADE_FORTRESS"
    ]
   },
   "frogmorton": {
@@ -8015,7 +8017,7 @@
      "when": "T.A. 1856"
     },
     {
-     "cite": "App B, the Tale of Years [C] — '1944 Ondoher falls in battle'. App A carries the narrative; App B carries the year.",
+     "cite": "App B, the Tale of Years [C] — '1944 Ondoher falls in battle'. App A carries the narrative; App B the year.",
      "realm": "khand",
      "status": "event",
      "what": "Variags join the Wainriders' great combination against Gondor",
@@ -9264,7 +9266,7 @@
      "when": "F.A. 473"
     },
     {
-     "cite": "Unfinished Tales, Christopher Tolkien's note [I-H — his inference, and he says so: 'the fact is nowhere referred to']. WJ Tale of Years [C] for the year: recension A '597 Maidros and Maglor, last surviving sons of Fëanor, seize the Silmarils', recension B '597 This entry was changed to 587', and the same recension's '550–597 ... changed to 545–587' — the two ends of one redating, and the witness behind the owner's ruling of 31 July.",
+     "cite": "Unfinished Tales, Christopher Tolkien's note [I-H — his inference, and he says so: 'the fact is nowhere referred to']",
      "realm": null,
      "status": "remained",
      "what": "Beleriand went under the sea; this hill's top stood above it as the isle of Himling",
@@ -9320,18 +9322,18 @@
      "when": "F.A. 455–456"
     },
     {
-     "cite": "Silm 20; GA 472 §252 (HoME XI) [C] — 'Morgoth now broke his pledges to the Easterlings that had served him, and denied to them the rich lands of Beleriand which they coveted, and he sent away these evil folk into Hithlum, and there commanded them to dwell'. §252 falls between 472 §217 and 473 §254, so it is the Year of Lamentation itself",
-     "realm": "easterlingsfa",
-     "status": "event",
-     "what": "Morgoth pens his hirelings in Hithlum, cheating them of promised plunder",
-     "when": "F.A. 472+"
-    },
-    {
      "cite": "Silm 20; GA 472 §252 (HoME XI) [C] — 'Morgoth now broke his pledges to the Easterlings that had served him, and denied to them the rich lands of Beleriand which they coveted, and he sent away these evil folk into Hithlum, and there commanded them to dwell'. Header verified in the Grey Annals section: 472, one block. THE OWNER RULED 472 ON 5 AUGUST 2026, closing Lore 558. This field previously read F.A. 473, marked inferred-medium, on the reading that no annal dates the Easterlings' ARRIVAL and 473 is inferred from the Nirnaeth being 472 — but §252 dates the SENDING, which is what this sentence says, and the archive's own easterlingsfa record had cited it all along. Their later POSSESSION remains separately dated: GA §263 (488, Lorgan their chief) and HoME V (AB2) 495-6 (Brodda in his hall)",
      "realm": "hithlum",
      "status": "event",
      "what": "After the Nirnaeth, Morgoth's Easterlings are penned in Hithlum over the Edain's remnant",
      "when": "F.A. 472"
+    },
+    {
+     "cite": "Silm 20; GA 472 §252 (HoME XI) [C] — 'Morgoth now broke his pledges to the Easterlings that had served him, and denied to them the rich lands of Beleriand which they coveted, and he sent away these evil folk into Hithlum, and there commanded them to dwell'. §252 falls between 472 §217 and 473 §254, so it is the Year of Lamentation itself",
+     "realm": "easterlingsfa",
+     "status": "event",
+     "what": "Morgoth pens his hirelings in Hithlum, cheating them of promised plunder",
+     "when": "F.A. 472+"
     }
    ],
    "types": [
@@ -9710,7 +9712,7 @@
    "place_conf": "H",
    "timeline": [
     {
-     "cite": "App B, the Tale of Years [C] — '2590 Thror returns to Erebor. Gror his brother goes to the Iron Hills'. App A carries the narrative; App B carries the year.",
+     "cite": "App B, the Tale of Years [C] — '2590 Thror returns to Erebor. Gror his brother goes to the Iron Hills'. App A carries the narrative; App B the year.",
      "realm": "ironhills",
      "status": "event",
      "what": "Grór, Dáin I's younger son, settles the Iron Hills as the Grey Mountains empty",
@@ -10111,7 +10113,7 @@
    "place_conf": "High",
    "timeline": [
     {
-     "cite": "App B, the Tale of Years [C] — '1944 Ondoher falls in battle'. App A carries the narrative; App B carries the year.",
+     "cite": "App B, the Tale of Years [C] — '1944 Ondoher falls in battle'. App A carries the narrative; App B the year.",
      "realm": "khand",
      "status": "event",
      "what": "Variags join the Wainriders' great combination against Gondor",
@@ -10189,7 +10191,7 @@
      "when": "S.A. 40+"
     },
     {
-     "cite": "App B, the Tale of Years, Second Age, 'c. 40' [C] — 'Many Dwarves leaving their old cities in Ered Luin go to Moria and swell its numbers'. [I-M] on identifying those cities as Nogrod and Belegost: the annal does not name them. The 'Ered Luin broken … tumults' clause is Silm 24. Full reasoning in arda_realms.pol belegost and LORE_QUEUE 464.",
+     "cite": "App B, the Tale of Years, Second Age, 'c. 40' [C] — 'Many Dwarves leaving their old cities in Ered Luin go to Moria and swell its numbers'. THE ARCHIVE'S OWN LABEL S.A. c.40 IS THAT ANNAL'S YEAR VERBATIM, and it was cited to App A III, which carries NO YEAR: its whole dating is 'After the end of the First Age'. The tenth instance of that substitution after 426, 433, 434 and 437–439. THE OTHER CLAUSE HAS A DIFFERENT SOURCE AGAIN: 'Ered Luin broken … tumults' is Silm 24 — 'In the Great Battle and the tumults of the fall of Thangorodrim … the walls of Ered Luin were broken' — and NO ANNAL DATES THE RUIN OF THE TWO CITIES: App B names Nogrod and Belegost 0 times in 44,662 characters and never mentions the War of Wrath. [I-M] on the identification: the annal says 'their old cities in Ered Luin' and does not name them; App A III names them, undated",
      "realm": "belegost",
      "status": "event",
      "what": "Ered Luin broken in the War of Wrath's tumults; many remove to Khazad-dûm",
@@ -10255,7 +10257,7 @@
    "place_conf": "High",
    "timeline": [
     {
-     "cite": "[I-M] the archive's own reading. NO ANNAL DATES THIS GRANT: 410 is a date typed in the MARGIN of a Later Quenta typescript, and the Grey Annals have no year 410 at all. 'by the sons of Finarfin' has no witness — WJ §31 names no giver. Full reasoning in arda_realms.pol ladros and LORE_QUEUE 464.",
+     "cite": "[I-M] the archive's own reading. NO ANNAL DATES THIS GRANT. 410 is a date TYPED IN THE MARGIN of a Later Quenta typescript, reported by Christopher Tolkien: HoME XI, commentary on LQ §31 — 'The date of this gift, as typed in the margin, was 410'. It is not an annal entry: the Grey Annals have no year 410 at all (…402, 413…) and Ladros occurs 0 times in the Grey Annals, 0 in AB 2 and 0 in AB 1. Silm 17 narrates it and dates nothing. TWO FURTHER CAUTIONS: the margin was typed against the AS-TYPED reading naming BREGOR son of Boromir, and Christopher carries 410 across to the emended Boromir; and 'BY THE SONS OF FINARFIN' HAS NO WITNESS — WJ §31 is passive and names no giver, and every glossary the corpus holds says 'the Noldorin Kings'",
      "realm": "ladros",
      "status": "granted",
      "what": "Ladros in north-east Dorthonion granted to the sons of Bëor by the sons of Finarfin",
@@ -10835,6 +10837,7 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
+    "MAN_MADE_RUIN",
     "MAN_MADE_HAVEN"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
@@ -12988,7 +12991,7 @@
      "when": "F.A. 502 or 503"
     },
     {
-     "cite": "HoME XII, The Peoples of Middle-earth [C]. WJ Tale of Years [C] for the year: recension A '597 Maidros and Maglor, last surviving sons of Fëanor, seize the Silmarils', recension B '597 This entry was changed to 587', and the same recension's '550–597 ... changed to 545–587' — the two ends of one redating, and the witness behind the owner's ruling of 31 July.",
+     "cite": "HoME XII, The Peoples of Middle-earth [C]",
      "realm": null,
      "status": "ruined",
      "what": "Ered Luin broken and the city ruined; its folk removed to Khazad-dum",
@@ -13418,8 +13421,8 @@
     }
    ],
    "types": [
-    "MAN_MADE_CITY",
-    "MAN_MADE_RUIN"
+    "MAN_MADE_RUIN",
+    "MAN_MADE_CITY"
    ]
   },
   "ossiriand": {
@@ -15480,9 +15483,9 @@
    "place_conf": "H",
    "timeline": [],
    "types": [
+    "MAN_MADE_RUIN",
     "MAN_MADE_CROSSING",
-    "MAN_MADE_TOWN",
-    "MAN_MADE_RUIN"
+    "MAN_MADE_TOWN"
    ]
   },
   "thargelion": {
@@ -15787,7 +15790,7 @@
      "when": "Elder Days"
     },
     {
-     "cite": "App B, the Tale of Years [C] — '1409 The Witch-king of Angmar invades Arnor. King Arveleg I slain. Fornost and Tyrn Gorthad are defended'. App A carries the narrative; App B carries the year.",
+     "cite": "App B, the Tale of Years [C] — '1409 The Witch-king of Angmar invades Arnor. King Arveleg I slain'. App A carries the narrative; App B the year.",
      "realm": "cardolan",
      "status": "destroyed",
      "what": "The last prince falls; a remnant holds Tyrn Gorthad and the Old Forest refuge",
@@ -16241,7 +16244,7 @@
      "when": "F.A. 468+"
     },
     {
-     "cite": "[I-H] — not stated of the isle itself, but it follows from two: the Silmarillion places it beyond Gelion in Ossiriand (Of the Ruin of Doriath [C]), and the same book's index excepts Ossiriand from the drowning — 'only Ossiriand (Lindon) remained' [C]. WJ Tale of Years [C] for the year: recension A '597 Maidros and Maglor, last surviving sons of Fëanor, seize the Silmarils', recension B '597 This entry was changed to 587', and the same recension's '550–597 ... changed to 545–587' — the two ends of one redating, and the witness behind the owner's ruling of 31 July.",
+     "cite": "[I-H] — not stated of the isle itself, but it follows from two: the Silmarillion places it beyond Gelion in Ossiriand (Of the Ruin of Doriath [C]), and the same book's index excepts Ossiriand from the drowning — 'only Ossiriand (Lindon) remained' [C]",
      "realm": null,
      "status": "remained",
      "what": "Beleriand went under the sea; this isle lay beyond Gelion in Ossiriand, which remained",
@@ -17235,6 +17238,7 @@
    ],
    "types": [
     "MAN_MADE_RUIN",
+    "MAN_MADE_HALL",
     "MAN_MADE_TOWER"
    ],
    "unplaced": "the corpus does not say what contains it — the archive will not guess"
