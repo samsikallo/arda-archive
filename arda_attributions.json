@@ -1,7 +1,7 @@
 {
  "note": "Quoted spans bound to their source by EVIDENCE, not by reading the prose around them: each span below verifies in exactly one book of the 49, so that book is its only possible source. Spans present in several books are not listed -- proximity to a book name is not attribution, and pairing by proximity was measured at a 20% artifact rate before this file existed. map/attrib_check.py re-verifies every binding here on every run.",
  "minwords": 7,
- "n": 533,
+ "n": 536,
  "bindings": [
   {
    "d": "arda_ainur.json",
@@ -1762,6 +1762,24 @@
    "r": "alfirin",
    "f": "note",
    "q": "alfirin A small white flower, also called uilos and simbelmynë (Evermind)",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+  },
+  {
+   "d": "arda_nature.json",
+   "r": "alfirin",
+   "f": "note",
+   "q": "The golden bells are shaken of mallos and alfirin / In the green fields of Lebennin",
+   "bb": [
+    "t1_c_the_lord_of_the_rings.txt",
+    "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+   ],
+   "by": "tie"
+  },
+  {
+   "d": "arda_nature.json",
+   "r": "alfirin",
+   "f": "note",
+   "q": "Alfirin is named, but apparently of a different flower, in a verse that Legolas sang in Minas Tirith (The Return of the King V 9): ‘The golden bells are shaken of mallos and alfirin / In the green fields of Lebennin",
    "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
   },
   {
@@ -4043,6 +4061,13 @@
    "r": "ré (day)",
    "f": "d",
    "q": "A day of the sun they called ré and reckoned from sunset to sunset",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "yén (long-year)",
+   "f": "d",
+   "q": "The Quenya word yén, often translated ‘year’ (p. 377), really means 144 of our years. The Eldar preferred to reckon in sixes and twelves as far as possible",
    "b": "t1_c_the_lord_of_the_rings.txt"
   },
   {
