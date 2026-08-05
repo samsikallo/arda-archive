@@ -1,5 +1,5 @@
 {
- "note": "Quoted spans bound to their source by EVIDENCE, not by reading the prose around them: each span below verifies in exactly one book of the 49, so that book is its only possible source. Spans present in several books are not listed -- proximity to a book name is not attribution, and pairing by proximity was measured at a 20% artifact rate before this file existed. map/attrib_check.py re-verifies every binding here on every run.",
+ "note": "Quoted spans bound to their source by EVIDENCE, not by reading the prose around them. A span carrying `b` verifies in exactly one book of the corpus, or in one book at the LOWEST tier that holds it (`by`:`tier`, with `over` naming how many it outranked). A span carrying `bb` verifies in SEVERAL books at the same lowest tier: every witness is named and none is asserted as THE source. Proximity to a book name is not attribution, and pairing by proximity was measured at a 20% artifact rate before this file existed. map/attrib_check.py re-verifies every binding here on every run.",
  "minwords": 7,
  "n": 536,
  "bindings": [
