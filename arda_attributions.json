@@ -1,7 +1,7 @@
 {
  "note": "Quoted spans bound to their source by EVIDENCE, not by reading the prose around them: each span below verifies in exactly one book of the 49, so that book is its only possible source. Spans present in several books are not listed -- proximity to a book name is not attribution, and pairing by proximity was measured at a 20% artifact rate before this file existed. map/attrib_check.py re-verifies every binding here on every run.",
  "minwords": 7,
- "n": 301,
+ "n": 378,
  "bindings": [
   {
    "d": "arda_ainur.json",
@@ -201,6 +201,15 @@
   },
   {
    "d": "arda_ainur.json",
+   "r": "olorin",
+   "f": "note",
+   "q": "Mithrandir among the Elves, Tharkûn to the Dwarves; Olórin I was in my youth in the West that is forgotten, in the South Incánus, in the North Gandalf",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_ainur.json",
    "r": "curumo",
    "f": "note",
    "q": "would seem to be Saruman's name in Quenya, recorded nowhere else",
@@ -229,6 +238,24 @@
   },
   {
    "d": "arda_ainur.json",
+   "r": "alatar",
+   "f": "note",
+   "q": "They must have had very great influence on the history of the Second Age and Third Age in weakening and disarraying the forces of East",
+   "b": "t1_12_the_peoples_of_middle_earth.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_ainur.json",
+   "r": "alatar",
+   "f": "note",
+   "q": "the names of the other two wizards",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_ainur.json",
    "r": "pallando",
    "f": "note",
    "q": "Alatar to Oromë, and Pallando also to Oromë (but this replaces Pallando to Mandos and Nienna)",
@@ -240,6 +267,15 @@
    "f": "note",
    "q": "a great craftsman of the household of Aulë",
    "b": "t1_10_morgoths_ring.txt"
+  },
+  {
+   "d": "arda_ainur.json",
+   "r": "sauron",
+   "f": "note",
+   "q": "Sauron took to himself the name of Annatar, the Lord of Gifts",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_ainur.json",
@@ -280,8 +316,26 @@
    "d": "arda_artifacts.json",
    "r": "The Three Rings — Narya, Nenya, Vilya",
    "f": "o",
+   "q": "the Three remained unsullied, for they were forged by Celebrimbor alone, and the hand of Sauron had never touched them",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "The Three Rings — Narya, Nenya, Vilya",
+   "f": "o",
    "q": "The Three were not made by Sauron, nor did he ever touch them",
    "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "The Seven and the Nine",
+   "f": "o",
+   "q": "the smiths of Ost-in-Edhil surpassed all that they had contrived before",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 2
   },
   {
    "d": "arda_artifacts.json",
@@ -324,6 +378,15 @@
    "f": "o",
    "q": "Upon its crest was set in defiance a gilded image of Glaurung the dragon",
    "b": "t1_f_the_children_of_hurin.txt"
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "The Phial of Galadriel",
+   "f": "d",
+   "q": "A light to you in dark places, when all other lights go out",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_artifacts.json",
@@ -397,6 +460,24 @@
   },
   {
    "d": "arda_contradictions.json",
+   "r": "The Blue Wizards",
+   "f": "r",
+   "q": "in weakening and disarraying the forces of East",
+   "b": "t1_12_the_peoples_of_middle_earth.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_contradictions.json",
+   "r": "Tar-Ardamin in the line of kings",
+   "f": "r",
+   "q": "it now seems perfectly clear, from the fact alone that Tar-Ardamin's death-date is here given as 2899, that he was omitted in error from the list in The Lord of the Rings",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "by": "tier",
+   "over": 2
+  },
+  {
+   "d": "arda_contradictions.json",
    "r": "The éored's arithmetic does not bend",
    "f": "r",
    "q": "owing to losses in the western war, the hastiness of the Muster, and the threat from North and East, Théoden only led out a host of some six thousand spears",
@@ -415,6 +496,15 @@
    "f": "note",
    "q": "took upon himself the form of a werewolf, and made himself the mightiest that had yet walked the world",
    "b": "t1_a_the_silmarillion.txt"
+  },
+  {
+   "d": "arda_creatures.json",
+   "r": "ungoliant",
+   "f": "note",
+   "q": "The Eldar knew not whence she came",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_creatures.json",
@@ -499,6 +589,15 @@
    "f": "note",
    "q": "Woman of Secret Shadow, the messenger of Sauron from Tol-in-Gaurhoth who took the form of a great bat, and in whose shape Luthien entered Angband",
    "b": "t1_a_the_silmarillion.txt"
+  },
+  {
+   "d": "arda_creatures.json",
+   "r": "treebeard",
+   "f": "note",
+   "q": "of the first Ents that walked in the woods before the Darkness",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_creatures.json",
@@ -635,6 +734,15 @@
   },
   {
    "d": "arda_genealogy.json",
+   "r": "herucalmo",
+   "f": "note",
+   "q": "some do not reckon him in the Line of Kings as seventeenth",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_genealogy.json",
    "r": "elldurin",
    "f": "note",
    "q": "so like unto his Forefather that he received the name of Durin",
@@ -653,6 +761,15 @@
    "f": "note",
    "q": "he felt a pain like a dart of poisoned ice pierce his left shoulder",
    "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_journeys.json",
+   "r": "?",
+   "f": "note",
+   "q": "though I do not know the way",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_journeys.json",
@@ -704,11 +821,38 @@
    "b": "t1_a_the_silmarillion.txt"
   },
   {
+   "d": "arda_journeys.json",
+   "r": "?",
+   "f": "note",
+   "q": "Bring to me in your hand a Silmaril from Morgoth's crown",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 3
+  },
+  {
+   "d": "arda_journeys.json",
+   "r": "?",
+   "f": "note",
+   "q": "the radiance welled through his living flesh, and his hand became as a shining lamp",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
    "d": "arda_livingmap.json",
    "r": "Ford of Bruinen",
    "f": "b",
    "q": "you shall have neither the Ring nor me!",
    "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_livingmap.json",
+   "r": "Caras Galadhon",
+   "f": "b",
+   "q": "On the land of Lórien there was no stain",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_livingmap.json",
@@ -730,6 +874,15 @@
    "f": "d",
    "q": "Its lands lay on both sides of the Mountains",
    "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_livingmap.json",
+   "r": "Arnor (Elendil's realm)",
+   "f": "d",
+   "q": "All Eriador except the regions beyond the Lune and the lands east of Greyflood and Loudwater",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_livingmap.json",
@@ -775,6 +928,24 @@
   },
   {
    "d": "arda_nature.json",
+   "r": "malinorne_numenor",
+   "f": "note",
+   "q": "reaching after five centuries a height scarce less than it achieved in Eressëa itself",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "by": "tier",
+   "over": 2
+  },
+  {
+   "d": "arda_nature.json",
+   "r": "malinorne_numenor",
+   "f": "note",
+   "q": "did not reach the height or girth of the great groves of Númenor",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "by": "tier",
+   "over": 2
+  },
+  {
+   "d": "arda_nature.json",
    "r": "niphredil",
    "f": "note",
    "q": "A white flower that bloomed in Doriath in starlight when Lúthien was born",
@@ -803,10 +974,28 @@
   },
   {
    "d": "arda_nature.json",
+   "r": "uilos",
+   "f": "note",
+   "q": "the word is found also in Amon Uilos, as the Quenya name Oiolossë (‘Ever-snow-white’, the Mountain of Manwë) was rendered into Sindarin",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_nature.json",
    "r": "alfirin",
    "f": "note",
    "q": "alfirin A small white flower, also called uilos and simbelmynë (Evermind)",
    "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+  },
+  {
+   "d": "arda_nature.json",
+   "r": "athelas",
+   "f": "note",
+   "q": "or athelas in the noble tongue, or to those who know somewhat of the Valinorean",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_nature.json",
@@ -831,6 +1020,15 @@
   },
   {
    "d": "arda_nature.json",
+   "r": "lissuin",
+   "f": "note",
+   "q": "Thus the Eldar graced the wedding of Erendis",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_nature.json",
    "r": "seregon",
    "f": "note",
    "q": "blood flowed out upon the seregon that mantled the stone",
@@ -849,6 +1047,42 @@
    "f": "note",
    "q": "*aeglos (1) ‘Snowthorn’, a plant that grew on Amon Rûdh",
    "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+  },
+  {
+   "d": "arda_nature.json",
+   "r": "oiolaire",
+   "f": "note",
+   "q": "for such a thing had never befallen the bough of oiolairë, so long as it was washed with the spray",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_nature.json",
+   "r": "lairelosse",
+   "f": "note",
+   "q": "Flower, leaf, and rind of those trees exuded sweet scents",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_nature.json",
+   "r": "laurelin",
+   "f": "note",
+   "q": "Flowers swung upon her branches in clusters of yellow flame, formed each to a glowing horn that spilled a golden rain upon the ground",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_nature.json",
+   "r": "nimloth_tree",
+   "f": "note",
+   "q": "the first fire upon the altar Sauron kindled with the hewn wood of Nimloth, and it crackled and was consumed",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_nature.json",
@@ -922,6 +1156,15 @@
   },
   {
    "d": "arda_nature.json",
+   "r": "werewolves",
+   "f": "note",
+   "q": "the fire and anguish of hell entered into him",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_nature.json",
    "r": "great_eagles",
    "f": "note",
    "q": "the great eagles that were held sacred to Manwë, and never afflicted, until the days of evil and the hatred of the Valar began",
@@ -973,6 +1216,15 @@
    "d": "arda_nature.json",
    "r": "kine_araw",
    "f": "note",
+   "q": "were said in legend to be descended from",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_nature.json",
+   "r": "kine_araw",
+   "f": "note",
    "q": "and so did each eldest son of our house, far back into the vanished years",
    "b": "t1_c_the_lord_of_the_rings.txt"
   },
@@ -989,6 +1241,24 @@
    "f": "note",
    "q": "A creature of an older world maybe it was, whose kind, lingering in forgotten mountains cold beneath the Moon, outstayed their day, and in hideous eyrie bred this last untimely brood, apt to evil",
    "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_nature.json",
+   "r": "shelob",
+   "f": "note",
+   "q": "for all living things were her food, and her vomit darkness",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 3
+  },
+  {
+   "d": "arda_nature.json",
+   "r": "shelob",
+   "f": "note",
+   "q": "his cat he calls her, but she owns him not",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_nature.json",
@@ -1020,6 +1290,15 @@
   },
   {
    "d": "arda_nature.json",
+   "r": "winged_dragons",
+   "f": "note",
+   "q": "Greatest of the winged dragons of Morgoth, destroyed by Eärendil",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_nature.json",
    "r": "olog_hai",
    "f": "note",
    "q": "so long as the will of Sauron held sway over them",
@@ -1031,6 +1310,15 @@
    "f": "note",
    "q": "The Orcs were beasts of humanized shape (to mock Men and Elves)",
    "b": "t1_10_morgoths_ring.txt"
+  },
+  {
+   "d": "arda_nature.json",
+   "r": "orcs",
+   "f": "note",
+   "q": "was really reeling off records set in them by Melkor",
+   "b": "t1_10_morgoths_ring.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_nature.json",
@@ -1059,6 +1347,15 @@
    "f": "note",
    "q": "the great eagles that were held sacred to Manwë",
    "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+  },
+  {
+   "d": "arda_nature.json",
+   "r": "beasts_of_valinor",
+   "f": "note",
+   "q": "came often to Middle-earth in the Elder Days",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_nomenclature.json",
@@ -1094,6 +1391,15 @@
    "f": "t",
    "q": "in the days of our forefathers, long ago",
    "b": "t2_the_lord_of_the_rings_a_reader_s_companion.txt"
+  },
+  {
+   "d": "arda_nomenclature.json",
+   "r": "Mathom",
+   "f": "t",
+   "q": "anything that Hobbits had no immediate use for, but were unwilling to throwaway",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_oaths.json",
@@ -1153,6 +1459,33 @@
   },
   {
    "d": "arda_oaths.json",
+   "r": "fulfil_beren_camlost",
+   "f": "q",
+   "q": "I return according to my word. I am come now to claim my own",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_oaths.json",
+   "r": "fulfil_beren_camlost",
+   "f": "q",
+   "q": "What of your quest, and of your vow?",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_oaths.json",
+   "r": "fulfil_beren_camlost",
+   "f": "q",
+   "q": "It is fulfilled. Even now a Silmaril is in my hand",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_oaths.json",
    "r": "prophecy_huor_new_star",
    "f": "q",
    "q": "Yet if it stands but a little while, then out of your house shall come the hope of Elves and Men. This I say to you, lord, with the eyes of death: though we part here for ever, and I shall not look on your white walls again, from you and from me a new star shall arise. Farewell!",
@@ -1199,6 +1532,24 @@
    "f": "q",
    "q": "But how shall our voices reach to Ilúvatar beyond the Circles of the World? And by Ilúvatar we swore in our madness, and called the Everlasting Darkness upon us, if we kept not our word. Who shall release us?",
    "b": "t1_a_the_silmarillion.txt"
+  },
+  {
+   "d": "arda_oaths.json",
+   "r": "doom_world_messengers",
+   "f": "q",
+   "q": "One alone can change who made it. And were you so to voyage that escaping all deceits and snares you came indeed to Aman, the Blessed Realm, little would it profit you. For it is not the land of Manwë that makes its people deathless, but the Deathless that dwell therein have hallowed the land; and there you would but wither and grow weary the sooner, as moths in a light too strong and steadfast",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_oaths.json",
+   "r": "doom_world_messengers",
+   "f": "note",
+   "q": "your home is not here, neither in the Land of Aman nor anywhere within the Circles of the World",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_oaths.json",
@@ -1260,6 +1611,15 @@
    "d": "arda_oaths.json",
    "r": "vow_frodo_council",
    "f": "note",
+   "q": "I think that this task is appointed for you, Frodo; and that if you do not find a way, no one will",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_oaths.json",
+   "r": "vow_frodo_council",
+   "f": "note",
    "q": "as if he was awaiting the pronouncement of some doom that he had long foreseen",
    "b": "t1_c_the_lord_of_the_rings.txt"
   },
@@ -1269,6 +1629,15 @@
    "f": "q",
    "q": "The others go with him as free companions, to help him on his way. You may tarry, or come back, or turn aside into other paths, as chance allows. The further you go, the less easy will it be to withdraw; yet no oath or bond is laid on you to go further than you will. For you do not yet know the strength of your hearts, and you cannot foresee what each may meet upon the road",
    "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_oaths.json",
+   "r": "no_oath_fellowship",
+   "f": "q",
+   "q": "Faithless is he that says farewell when the road darkens",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_oaths.json",
@@ -1297,6 +1666,15 @@
    "f": "note",
    "q": "Would you commit your promise to that, Sméagol? It will hold you. But it is more treacherous than you are. It may twist your words. Beware!",
    "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_oaths.json",
+   "r": "doom_frodo_gollum",
+   "f": "q",
+   "q": "Begone, and trouble me no more! If you touch me ever again, you shall be cast yourself into the Fire of Doom",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_oaths.json",
@@ -1393,8 +1771,26 @@
    "d": "arda_pe17_lexicon.json",
    "r": "?",
    "f": "gloss",
+   "q": "Out of the Great Sea to Middle-earth I am come",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 3
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
    "q": "The Valar and the Maiar cloaked their true-being in fanar (veils)",
    "b": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "Here will I abide, and my heirs, unto the ending of the world",
+   "b": "t1_9_sauron_defeated.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_pe17_lexicon.json",
@@ -1517,6 +1913,15 @@
   },
   {
    "d": "arda_quotes.json",
+   "r": "Frodo at the Council",
+   "f": "q",
+   "q": "though I do not know the way",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_quotes.json",
    "r": "at the Morannon",
    "f": "q",
    "q": "The Eagles are coming! The Eagles are coming!",
@@ -1579,6 +1984,15 @@
    "b": "t1_c_the_lord_of_the_rings.txt"
   },
   {
+   "d": "arda_quotes.json",
+   "r": "the lament of the Rohirrim",
+   "f": "q",
+   "q": "It runs thus in the Common Speech",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
    "d": "arda_realms.json",
    "r": "Festival is canonical institution: the harvest-feast on Tani",
    "f": "0",
@@ -1622,6 +2036,15 @@
   },
   {
    "d": "arda_realms.json",
+   "r": "Mithril, found here alone in Middle-earth — 'its worth was t",
+   "f": "0",
+   "q": "its worth was ten times that of gold",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_realms.json",
    "r": "Beneath Ered Engrin in the uttermost North, its pits never w",
    "f": "0",
    "q": "did not discover all the mighty vaults",
@@ -1650,6 +2073,60 @@
   },
   {
    "d": "arda_realms.json",
+   "r": "Shaped like a 'five-pointed star, or pentangle', its 'five l",
+   "f": "0",
+   "q": "the most beautiful of all the havens of Númenor, Eldalondë the Green",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_realms.json",
+   "r": "Gift-culture and death-culture entwined: the andúnië-custom ",
+   "f": "0",
+   "q": "they filled all the land with silent tombs in which the thought of death was enshrined in the darkness",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_realms.json",
+   "r": "The realm that said no to Annatar — 'Gil-galad and Elrond do",
+   "f": "0",
+   "q": "Gil-galad and Elrond doubted him and his fair-seeming, and though they knew not who in truth he was they would not admit him to that land",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_realms.json",
+   "r": "Silvan kingship (Amdír, Amroth) succeeded by an explicit non",
+   "f": "0",
+   "q": "took no title of King or Queen",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_realms.json",
+   "r": "The preserved past: 'On the land of Lórien there was no stai",
+   "f": "0",
+   "q": "On the land of Lórien there was no stain",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_realms.json",
+   "r": "Silvan speech and Sindarin; Frodo hears a speech 'the Silvan",
+   "f": "0",
+   "q": "the Silvan folk east of the mountains used among themselves",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_realms.json",
    "r": "Slave-agriculture: 'great slave-worked fields away south in ",
    "f": "0",
    "q": "great slave-worked fields away south in this wide realm",
@@ -1668,6 +2145,15 @@
    "f": "0",
    "q": "Where there's a whip there's a will",
    "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_realms.json",
+   "r": "Two millennia of glory and decline told in App A's annal-den",
+   "f": "0",
+   "q": "Gondor waned, and the line of Meneldil son of Anárion failed",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_realms.json",
@@ -1692,6 +2178,15 @@
   },
   {
    "d": "arda_realms.json",
+   "r": "Attrition by sorcery, hill-men clients and orc-levies across",
+   "f": "0",
+   "q": "not by the hand of man will he fall",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_realms.json",
    "r": "The corpus's minimal state, described outright: 'The Shire a",
    "f": "0",
    "q": "The Shire at this time had hardly any government",
@@ -1710,6 +2205,15 @@
    "f": "0",
    "q": "They love peace and quiet and good tilled earth",
    "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_realms.json",
+   "r": "Nominal allegiance to the king ('they attributed to the king",
+   "f": "0",
+   "q": "they attributed to the king of old all their essential laws",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 2
   },
   {
    "d": "arda_realms.json",
@@ -1734,10 +2238,37 @@
   },
   {
    "d": "arda_realms.json",
+   "r": "Sam's meditation over the dead Southron — 'he wondered what ",
+   "f": "0",
+   "q": "he wondered what the man's name was",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 2
+  },
+  {
+   "d": "arda_realms.json",
+   "r": "Sam's meditation over the dead Southron — 'he wondered what ",
+   "f": "0",
+   "q": "and if he would not really rather have stayed there in peace",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_realms.json",
    "r": "Wagon-lordships and khagan-like war-confederacies (the Wainr",
    "f": "0",
    "q": "a people, or a confederacy of many peoples",
    "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_realms.json",
+   "r": "Sled-and-snow craft ('they can run on the ice with bones on ",
+   "f": "0",
+   "q": "they can run on the ice with bones on their feet",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 2
   },
   {
    "d": "arda_realms.json",
@@ -1804,10 +2335,55 @@
   },
   {
    "d": "arda_reckoning.json",
+   "r": "man-high",
+   "f": "d",
+   "q": "Two rangar was often called man-high, which at thirty-eight inches gives an average height of six feet four inches",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "Elendil's height",
+   "f": "d",
+   "q": "More than man-high by nearly half a ranga",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "Galadriel's height",
+   "f": "d",
+   "q": "The tallest of all the women of the Eldar of whom tales tell",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "Galadriel's height",
+   "f": "d",
+   "q": "according to the measure of the Dúnedain and the men of old",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_reckoning.json",
    "r": "Hobbit stature",
    "f": "d",
    "q": "The Hobbits of the Shire were in height between three and four feet, never less and seldom more",
    "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "castar & tharni (Gondor)",
+   "f": "d",
+   "q": "In Gondor tharni was used for a silver coin, the fourth part of the castar (in Noldorin the canath or fourth part of the mirian)",
+   "b": "t1_12_the_peoples_of_middle_earth.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_reckoning.json",
@@ -1853,6 +2429,15 @@
   },
   {
    "d": "arda_reckoning.json",
+   "r": "shire",
+   "f": "notes",
+   "q": "similar names were found in Dale and Rohan",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_reckoning.json",
    "r": "new",
    "f": "notes",
    "q": "referred to periods beginning generally five days earlier than previously",
@@ -1878,6 +2463,15 @@
    "f": "notes",
    "q": "There are twelve Tree-hours in each Valian Day, 144 Days in each Valian Year. But each Valian Year = 144 Mortal Years",
    "b": "t2_i_the_nature_of_middle_earth.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "The Free Fair",
+   "f": "note",
+   "q": "At the Free Fair on the White Downs at the Lithe, that is at Midsummer",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_reckoning.json",
@@ -1944,6 +2538,51 @@
   },
   {
    "d": "arda_silences.json",
+   "r": "Fates Unknown",
+   "f": "a",
+   "q": "had disappeared for good, being destroyed with their gardens in the War of the Last Alliance",
+   "b": "t1_the_letters_of_j_r_r_tolkien.txt",
+   "by": "tier",
+   "over": 2
+  },
+  {
+   "d": "arda_silences.json",
+   "r": "Fates Unknown",
+   "f": "a",
+   "q": "when Sauron pursued a scorched earth policy and burned their land",
+   "b": "t1_the_letters_of_j_r_r_tolkien.txt",
+   "by": "tier",
+   "over": 2
+  },
+  {
+   "d": "arda_silences.json",
+   "r": "Fates Unknown",
+   "f": "a",
+   "q": "As for the Entwives: I do not know",
+   "b": "t1_the_letters_of_j_r_r_tolkien.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_silences.json",
+   "r": "Fates Unknown",
+   "f": "a",
+   "q": "an “allegory”, or an exemplar, a particular embodying of pure (real) natural science: the spirit that desires knowledge of other things, their history and nature, because they are “other” and wholly independent of the enquiring mind",
+   "b": "t1_the_letters_of_j_r_r_tolkien.txt",
+   "by": "tier",
+   "over": 2
+  },
+  {
+   "d": "arda_silences.json",
+   "r": "Names Ungiven",
+   "f": "a",
+   "q": "went with his wife and his sons by ship down the River, and they sailed from the mouths of Anduin seeking Elendil",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 2
+  },
+  {
+   "d": "arda_silences.json",
    "r": "Names Ungiven",
    "f": "a",
    "q": "sails north from Anduin's Mouths to Elendil in Arnor, with his wife and sons",
@@ -1953,8 +2592,26 @@
    "d": "arda_silences.json",
    "r": "Names Ungiven",
    "f": "a",
+   "q": "his wife and his youngest son, Valandil, he had left in Imladris when he went to the war",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_silences.json",
+   "r": "Names Ungiven",
+   "f": "a",
    "q": "for he had left his wife and youngest son there",
    "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+  },
+  {
+   "d": "arda_silences.json",
+   "r": "Names Ungiven",
+   "f": "a",
+   "q": "Isildur and Anárion were borne away southwards",
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_silences.json",
@@ -2027,6 +2684,33 @@
    "b": "t1_c_the_lord_of_the_rings.txt"
   },
   {
+   "d": "arda_silences.json",
+   "r": "Lands Beyond the Map",
+   "f": "a",
+   "q": "must have had very great influence on the history of the Second Age and Third Age in weakening and disarraying the forces of East",
+   "b": "t1_12_the_peoples_of_middle_earth.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_soldier_prompts.json",
+   "r": "“a tree blossoming like snow beneath a silver crown and many",
+   "f": "t",
+   "q": "a tree blossoming like snow beneath a silver crown and many-pointed stars",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
+   "d": "arda_timemap.json",
+   "r": "Arnor (Elendil's realm)",
+   "f": "d",
+   "q": "All Eriador except the regions beyond the Lune and the lands east of Greyflood and Loudwater",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
+  },
+  {
    "d": "arda_timemap.json",
    "r": "Arthedain",
    "f": "d",
@@ -2074,6 +2758,15 @@
    "f": "d",
    "q": "Its lands lay on both sides of the Mountains",
    "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_timemap_jpeg.json",
+   "r": "Arnor (Elendil's realm)",
+   "f": "d",
+   "q": "All Eriador except the regions beyond the Lune and the lands east of Greyflood and Loudwater",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_timemap_jpeg.json",
