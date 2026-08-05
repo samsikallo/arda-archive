@@ -1,7 +1,7 @@
 {
  "note": "Quoted spans bound to their source by EVIDENCE, not by reading the prose around them: each span below verifies in exactly one book of the 49, so that book is its only possible source. Spans present in several books are not listed -- proximity to a book name is not attribution, and pairing by proximity was measured at a 20% artifact rate before this file existed. map/attrib_check.py re-verifies every binding here on every run.",
  "minwords": 7,
- "n": 201,
+ "n": 301,
  "bindings": [
   {
    "d": "arda_ainur.json",
@@ -145,6 +145,13 @@
   },
   {
    "d": "arda_ainur.json",
+   "r": "salmar",
+   "f": "note",
+   "q": "Salmar A Maia who entered Arda with Ulmo; maker of Ulmo’s great horns, the Ulumúri",
+   "b": "t1_a_the_silmarillion.txt"
+  },
+  {
+   "d": "arda_ainur.json",
    "r": "melian",
    "f": "note",
    "q": "She was akin before the World was made to Yavanna herself",
@@ -194,13 +201,6 @@
   },
   {
    "d": "arda_ainur.json",
-   "r": "olorin",
-   "f": "note",
-   "q": "Mithrandir among the Elves, Tharkûn to the Dwarves; Olórin I was in my youth in the West that is forgotten, in the South Incánus, in the North Gandalf",
-   "b": "t1_c_the_lord_of_the_rings.txt"
-  },
-  {
-   "d": "arda_ainur.json",
    "r": "curumo",
    "f": "note",
    "q": "would seem to be Saruman's name in Quenya, recorded nowhere else",
@@ -229,13 +229,6 @@
   },
   {
    "d": "arda_ainur.json",
-   "r": "alatar",
-   "f": "note",
-   "q": "They must have had very great influence on the history of the Second Age and Third Age in weakening and disarraying the forces of East",
-   "b": "t1_12_the_peoples_of_middle_earth.txt"
-  },
-  {
-   "d": "arda_ainur.json",
    "r": "pallando",
    "f": "note",
    "q": "Alatar to Oromë, and Pallando also to Oromë (but this replaces Pallando to Mandos and Nienna)",
@@ -256,11 +249,158 @@
    "b": "t1_10_morgoths_ring.txt"
   },
   {
-   "d": "arda_contradictions.json",
-   "r": "The Blue Wizards",
-   "f": "r",
-   "q": "in weakening and disarraying the forces of East",
+   "d": "arda_armies.json",
+   "r": "dwarves_fa",
+   "f": "org",
+   "q": "it was their custom moreover to wear great masks in battle hideous to look upon",
+   "b": "t1_a_the_silmarillion.txt"
+  },
+  {
+   "d": "arda_armies.json",
+   "r": "angband",
+   "f": "org",
+   "q": "multitudes such as the Noldor had never before seen or imagined",
+   "b": "t1_a_the_silmarillion.txt"
+  },
+  {
+   "d": "arda_armies.json",
+   "r": "wow",
+   "f": "insuf",
+   "q": "had become great beyond count, so that Anfauglith could not contain it",
+   "b": "t1_a_the_silmarillion.txt"
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "The One Ring",
+   "f": "d",
+   "q": "he let a great part of his own former power pass into it",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "The Three Rings — Narya, Nenya, Vilya",
+   "f": "o",
+   "q": "The Three were not made by Sauron, nor did he ever touch them",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "Narsil / Andúril",
+   "f": "o",
+   "q": "In this Elvish sheath dwells the Blade that was Broken and has been made again. Telchar first wrought it in the deeps of time",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "The ring of Barahir",
+   "f": "o",
+   "q": "this ring was like to twin serpents, whose eyes were emeralds, and their heads met beneath a crown of golden flowers, that the one upheld and the other devoured; that was the badge of Finarfin and his house",
+   "b": "t1_a_the_silmarillion.txt"
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "The White Tree line",
+   "f": "o",
+   "q": "Yavanna made for them a tree like to a lesser image of Telperion, save that it did not give light of its own being; Galathilion it was named",
+   "b": "t1_a_the_silmarillion.txt"
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "Sting",
+   "f": "o",
+   "q": "the work of Elvish smiths in the Elder Days",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "Anglachel / Gurthang",
+   "f": "o",
+   "q": "forged anew for him by cunning smiths of Nargothrond",
+   "b": "t1_a_the_silmarillion.txt"
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "The Dragon-helm of Dor-lómin",
+   "f": "o",
+   "q": "Upon its crest was set in defiance a gilded image of Glaurung the dragon",
+   "b": "t1_f_the_children_of_hurin.txt"
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "The Horn of the Mark",
+   "f": "d",
+   "q": "He that blows it at need shall set fear in the hearts of his enemies and joy in the hearts of his friends",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "The mithril-coat",
+   "f": "d",
+   "q": "its worth was greater than the value of the whole Shire and everything in it",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "Grond, twice",
+   "f": "o",
+   "q": "Then Morgoth hurled aloft Grond, the Hammer of the Underworld, and swung it down like a bolt of thunder",
+   "b": "t1_a_the_silmarillion.txt"
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "The Red Arrow & the beacons",
+   "f": "o",
+   "q": "He sank on one knee and presented the arrow to Théoden",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_artifacts.json",
+   "r": "The Red Arrow & the beacons",
+   "f": "o",
+   "q": "Hirgon I am, errand-rider of Denethor, who bring you this token of war",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_chronology.json",
+   "r": "before the count of years",
+   "f": "label",
+   "q": "Illuin and Ormal they were named. 1900 And they were set upon mighty pillars",
+   "b": "t1_10_morgoths_ring.txt"
+  },
+  {
+   "d": "arda_chronology.json",
+   "r": "F.A. 1",
+   "f": "label",
+   "q": "the Battle under the Stars, for the Moon had not yet risen",
+   "b": "t1_11_the_war_of_the_jewels.txt"
+  },
+  {
+   "d": "arda_chronology.json",
+   "r": "Fo.A. 104",
+   "f": "label",
+   "q": "One hundred and five years had passed since the fall of the Dark Tower",
    "b": "t1_12_the_peoples_of_middle_earth.txt"
+  },
+  {
+   "d": "arda_contradictions.json",
+   "r": "Gil-galad's father",
+   "f": "a",
+   "q": "Ereinion: Scion of Kings, the son of Fingon",
+   "b": "t1_a_the_silmarillion.txt"
+  },
+  {
+   "d": "arda_contradictions.json",
+   "r": "Gil-galad's father",
+   "f": "a",
+   "q": "Their mother was a Sindarin lady of the North. She called her son Gil-galad",
+   "b": "t1_12_the_peoples_of_middle_earth.txt"
+  },
+  {
+   "d": "arda_contradictions.json",
+   "r": "The éored's arithmetic does not bend",
+   "f": "r",
+   "q": "owing to losses in the western war, the hastiness of the Muster, and the threat from North and East, Théoden only led out a host of some six thousand spears",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
   },
   {
    "d": "arda_creatures.json",
@@ -403,6 +543,76 @@
    "b": "t1_c_the_lord_of_the_rings.txt"
   },
   {
+   "d": "arda_epithets.json",
+   "r": "?",
+   "f": "q",
+   "q": "Ah, there you are at last, Dúnadan!",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_epithets.json",
+   "r": "?",
+   "f": "q",
+   "q": "Strider is too poor a name, son of Arathorn",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_epithets.json",
+   "r": "?",
+   "f": "q",
+   "q": "Verily, for in the high tongue of old I am Elessar, the Elfstone, and Envinyatar, the Renewer",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_epithets.json",
+   "r": "?",
+   "f": "q",
+   "q": "The Grey Wanderer or no one, it would seem",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_epithets.json",
+   "r": "?",
+   "f": "q",
+   "q": "You feel the power of the Lady of the Galadhrim",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_epithets.json",
+   "r": "?",
+   "f": "q",
+   "q": "for they come from the Golden Wood and the Lady of Lothlórien gave them to me",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_epithets.json",
+   "r": "?",
+   "f": "q",
+   "q": "King of Angmar long ago, Sorcerer, Ringwraith, Lord of the Nazgûl, a spear of terror in the hand of Sauron, shadow of despair",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_epithets.json",
+   "r": "?",
+   "f": "q",
+   "q": "that the Black Captain leads them once again, and the fear of him has passed before him over the River",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_epithets.json",
+   "r": "?",
+   "f": "q",
+   "q": "Master Perhael who should be called Panthael",
+   "b": "t1_9_sauron_defeated.txt"
+  },
+  {
+   "d": "arda_epithets.json",
+   "r": "?",
+   "f": "q",
+   "q": "The Lord Denethor or the Grey Wanderer?",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
    "d": "arda_gazetteer.json",
    "r": "?",
    "f": "what",
@@ -435,6 +645,125 @@
    "r": "smeagrandma",
    "f": "note",
    "q": "Ruled by a grandmother of the folk, stern and wise",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_journeys.json",
+   "r": "?",
+   "f": "note",
+   "q": "he felt a pain like a dart of poisoned ice pierce his left shoulder",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_journeys.json",
+   "r": "?",
+   "f": "note",
+   "q": "Well, this is the end, Sam Gamgee",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_journeys.json",
+   "r": "?",
+   "f": "note",
+   "q": "Forty leagues and five you have measured ere the fourth day is ended! Hardy is the race of Elendil!",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_journeys.json",
+   "r": "?",
+   "f": "note",
+   "q": "borne upon a wind from the Sea",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_journeys.json",
+   "r": "?",
+   "f": "note",
+   "q": "Shadowfax must bear me now on a swift errand",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_journeys.json",
+   "r": "?",
+   "f": "note",
+   "q": "Death! Ride, ride to ruin and the world's ending!",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_journeys.json",
+   "r": "?",
+   "f": "note",
+   "q": "The Eagles are coming! The Eagles are coming!",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_journeys.json",
+   "r": "?",
+   "f": "note",
+   "q": "they saw one going northward in haste, and he was a tall Man, clad in black, and bearing a black sword",
+   "b": "t1_a_the_silmarillion.txt"
+  },
+  {
+   "d": "arda_livingmap.json",
+   "r": "Ford of Bruinen",
+   "f": "b",
+   "q": "you shall have neither the Ring nor me!",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_livingmap.json",
+   "r": "Fangorn",
+   "f": "b",
+   "q": "we are going to our doom: the last march of the Ents",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_livingmap.json",
+   "r": "Barad-dûr",
+   "f": "b",
+   "q": "the earth shook, the plain heaved and cracked, and Orodruin reeled",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_livingmap.json",
+   "r": "Angmar (the Witch-king)",
+   "f": "d",
+   "q": "Its lands lay on both sides of the Mountains",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_livingmap.json",
+   "r": "Arthedain",
+   "f": "d",
+   "q": "the land between Brandywine and Lune, and also the land north",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_livingmap.json",
+   "r": "Arthedain",
+   "f": "d",
+   "q": "of the Great Road as far as the Weather Hills",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_livingmap.json",
+   "r": "Cardolan",
+   "f": "d",
+   "q": "its bounds being the Brandywine, the Greyflood, and the Great Road",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_livingmap.json",
+   "r": "Gondor at its height",
+   "f": "d",
+   "q": "north to the field of Celebrant and the southern eaves of Mirkwood; west to the Greyflood; east to the inland Sea of Rhûn; south to the River Harnen, and thence along the coast to the peninsula and haven of Umbar",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_livingmap.json",
+   "r": "Rhudaur",
+   "f": "d",
+   "q": "between the Ettenmoors, the Weather Hills, and the Misty Mountains, but included also the Angle between the Hoarwell and the Loudwater",
    "b": "t1_c_the_lord_of_the_rings.txt"
   },
   {
@@ -478,13 +807,6 @@
    "f": "note",
    "q": "alfirin A small white flower, also called uilos and simbelmynë (Evermind)",
    "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
-  },
-  {
-   "d": "arda_nature.json",
-   "r": "athelas",
-   "f": "note",
-   "q": "kingsfoil, as the rustics name it, or athelas in the noble tongue, or to those who know somewhat of the Valinorean",
-   "b": "t2_the_lord_of_the_rings_a_reader_s_companion.txt"
   },
   {
    "d": "arda_nature.json",
@@ -754,7 +1076,7 @@
   },
   {
    "d": "arda_nomenclature.json",
-   "r": "Buddebury",
+   "r": "Bucklebury",
    "f": "t",
    "q": "a place occupying a defensive position, walled or enclosed, a town",
    "b": "t2_the_lord_of_the_rings_a_reader_s_companion.txt"
@@ -1033,6 +1355,146 @@
    "b": "t1_10_morgoths_ring.txt"
   },
   {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "long years as the wings of trees",
+   "b": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "run with more running, sc. run faster",
+   "b": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "A did that as / like B (did)",
+   "b": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "The Valar and the Maiar cloaked their true-being in fanar (veils)",
+   "b": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "[a]fter vowel stems or stems with medial u̯ , ı̯",
+   "b": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "The Valar and the Maiar cloaked their true-being in fanar (veils)",
+   "b": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "fierce, savage, hostile (to Elves & Men)",
+   "b": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "he came (to a point) (far) beyond the river",
+   "b": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "sing harder / better / with more vigour or with more vocal art",
+   "b": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "in earliest formations nr > ¯r (with nasality of the preceding vowel subsequently lost)",
+   "b": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "I am learning by means of a book",
+   "b": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "long years as the wings of trees",
+   "b": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "This won't do, since le is a pronominal element. It should be ve, oiave",
+   "b": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "Is Felegond = of stone, or = kondo, lord",
+   "b": "t3_giraudeau_sindarin_corpus_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "doorway of the Dwarf-folk listen to the words of my tongue",
+   "b": "t3_giraudeau_sindarin_corpus_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "Ah! At last, Dúnadan ! Well met !",
+   "b": "t3_giraudeau_sindarin_corpus_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "Ah! At last, Dúnadan ! Well met !",
+   "b": "t3_giraudeau_sindarin_corpus_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "come down a slope or from a hill",
+   "b": "t3_giraudeau_sindarin_corpus_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "fierce, savage, hostile (to Elves and Men)",
+   "b": "t3_giraudeau_sindarin_corpus_from_pe17.txt"
+  },
+  {
+   "d": "arda_pe17_lexicon.json",
+   "r": "?",
+   "f": "gloss",
+   "q": "the Vale or lands about the River Síre",
+   "b": "t3_giraudeau_sindarin_corpus_from_pe17.txt"
+  },
+  {
    "d": "arda_poems.json",
    "r": "The Ent Marching-song",
    "f": "note",
@@ -1083,14 +1545,14 @@
   },
   {
    "d": "arda_quotes.json",
-   "r": "Théoden and Éomer on the Paths of the Dead",
+   "r": "Éowyn before the Witch-king",
    "f": "q",
    "q": "If there be in truth such paths",
    "b": "t1_c_the_lord_of_the_rings.txt"
   },
   {
    "d": "arda_quotes.json",
-   "r": "Théoden and Éomer on the Paths of the Dead",
+   "r": "Éowyn before the Witch-king",
    "f": "q",
    "q": "their gate is in Dunharrow; but no living man may pass it",
    "b": "t1_c_the_lord_of_the_rings.txt"
@@ -1181,6 +1643,13 @@
   },
   {
    "d": "arda_realms.json",
+   "r": "Shaped like a 'five-pointed star, or pentangle', its 'five l",
+   "f": "0",
+   "q": "Rómenna in the east, to the royal city of Armenelos",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+  },
+  {
+   "d": "arda_realms.json",
    "r": "Slave-agriculture: 'great slave-worked fields away south in ",
    "f": "0",
    "q": "great slave-worked fields away south in this wide realm",
@@ -1206,6 +1675,20 @@
    "f": "0",
    "q": "wound about with spells for the bane of Mordor",
    "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_realms.json",
+   "r": "The ruins in the Trolls' wood — 'old castles with an evil lo",
+   "f": "0",
+   "q": "the ruins of towers: they had an ominous look",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_realms.json",
+   "r": "The ruins in the Trolls' wood — 'old castles with an evil lo",
+   "f": "0",
+   "q": "Rhudaur north of the R. Bruinen (where later were the Trollshaws)",
+   "b": "t1_12_the_peoples_of_middle_earth.txt"
   },
   {
    "d": "arda_realms.json",
@@ -1292,6 +1775,139 @@
    "b": "t1_c_the_lord_of_the_rings.txt"
   },
   {
+   "d": "arda_reckoning.json",
+   "r": "ranga (full pace)",
+   "f": "d",
+   "q": "slightly longer than our yard, approximately thirty-eight inches, owing to their greater stature",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "ranga (full pace)",
+   "f": "d",
+   "q": "might be well nigh a ranga and a half",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "lár (league; S. daur)",
+   "f": "d",
+   "q": "Five thousand rangar (full paces) made a lár, which was very nearly three of our miles",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "ell & fathom",
+   "f": "d",
+   "q": "Thirty ells, or say, about eighteen fathom'",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "Hobbit stature",
+   "f": "d",
+   "q": "The Hobbits of the Shire were in height between three and four feet, never less and seldom more",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "silver pennies (Bree)",
+   "f": "d",
+   "q": "Bill Ferny's price was twelve silver pennies; and that was indeed at least three times the pony's value",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "ré (day)",
+   "f": "d",
+   "q": "A day of the sun they called ré and reckoned from sunset to sunset",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "Valian Day, Month & Year (late scheme)",
+   "f": "d",
+   "q": "1 Valian Day (or Tree-day) = 1 Sun-year",
+   "b": "t2_i_the_nature_of_middle_earth.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "The hours of Gondor",
+   "f": "d",
+   "q": "the third hour from the rising of the sun",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "Entish time",
+   "f": "d",
+   "q": "a lovely language, but it takes a very long time to say anything in it, because we do not say anything in it, unless it is worth taking a long time to say",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "Entish time",
+   "f": "d",
+   "q": "Do not be hasty, that is my motto",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "new",
+   "f": "notes",
+   "q": "referred to periods beginning generally five days earlier than previously",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "new",
+   "f": "notes",
+   "q": "it corresponded more or less with Shire April 6",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "valian",
+   "f": "notes",
+   "q": "the Valian year of 1000 days was also due to the Trees",
+   "b": "t1_10_morgoths_ring.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "valian",
+   "f": "notes",
+   "q": "There are twelve Tree-hours in each Valian Day, 144 Days in each Valian Year. But each Valian Year = 144 Mortal Years",
+   "b": "t2_i_the_nature_of_middle_earth.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "April 6 in the Party Field",
+   "f": "note",
+   "q": "A custom of making holiday and dancing in the Party Field, when weather permitted, on April 6",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "The Horn of the Mark",
+   "f": "note",
+   "q": "The Horn of the Mark was blown at sundown every November 2 and bonfires and feastings followed",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_reckoning.json",
+   "r": "Yestarë of the New Reckoning",
+   "f": "note",
+   "q": "in commemoration of the fall of Sauron and the deeds of the Ring-bearers",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_silences.json",
+   "r": "Peoples & Numbers",
+   "f": "a",
+   "q": "forces ten times and more than ten times their match would ring them in a sea of enemies",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
    "d": "arda_silences.json",
    "r": "Peoples & Numbers",
    "f": "a",
@@ -1318,6 +1934,13 @@
    "f": "a",
    "q": "Nothing is said about Orkish tribal structures or female Orcs",
    "b": "t3_the_complete_guide_to_middle_earth.txt"
+  },
+  {
+   "d": "arda_silences.json",
+   "r": "Peoples & Numbers",
+   "f": "a",
+   "q": "the Vanyar, the people of Ingwë, and those also of the Noldor who never departed from Valinor",
+   "b": "t1_a_the_silmarillion.txt"
   },
   {
    "d": "arda_silences.json",
@@ -1404,11 +2027,88 @@
    "b": "t1_c_the_lord_of_the_rings.txt"
   },
   {
-   "d": "arda_silences.json",
-   "r": "Lands Beyond the Map",
-   "f": "a",
-   "q": "must have had very great influence on the history of the Second Age and Third Age in weakening and disarraying the forces of East",
-   "b": "t1_12_the_peoples_of_middle_earth.txt"
+   "d": "arda_timemap.json",
+   "r": "Arthedain",
+   "f": "d",
+   "q": "the land between Brandywine and Lune, and also the land north",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_timemap.json",
+   "r": "Arthedain",
+   "f": "d",
+   "q": "of the Great Road as far as the Weather Hills",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_timemap.json",
+   "r": "Cardolan",
+   "f": "d",
+   "q": "its bounds being the Brandywine, the Greyflood, and the Great Road",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_timemap.json",
+   "r": "Rhudaur",
+   "f": "d",
+   "q": "between the Ettenmoors, the Weather Hills, and the Misty Mountains, but included also the Angle between the Hoarwell and the Loudwater",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_timemap.json",
+   "r": "Angmar (the Witch-king)",
+   "f": "d",
+   "q": "Its lands lay on both sides of the Mountains",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_timemap.json",
+   "r": "Gondor at its height",
+   "f": "d",
+   "q": "north to the field of Celebrant and the southern eaves of Mirkwood; west to the Greyflood; east to the inland Sea of Rhûn; south to the River Harnen, and thence along the coast to the peninsula and haven of Umbar",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_timemap_jpeg.json",
+   "r": "Angmar (the Witch-king)",
+   "f": "d",
+   "q": "Its lands lay on both sides of the Mountains",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_timemap_jpeg.json",
+   "r": "Arthedain",
+   "f": "d",
+   "q": "the land between Brandywine and Lune, and also the land north",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_timemap_jpeg.json",
+   "r": "Arthedain",
+   "f": "d",
+   "q": "of the Great Road as far as the Weather Hills",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_timemap_jpeg.json",
+   "r": "Cardolan",
+   "f": "d",
+   "q": "its bounds being the Brandywine, the Greyflood, and the Great Road",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_timemap_jpeg.json",
+   "r": "Gondor at its height",
+   "f": "d",
+   "q": "north to the field of Celebrant and the southern eaves of Mirkwood; west to the Greyflood; east to the inland Sea of Rhûn; south to the River Harnen, and thence along the coast to the peninsula and haven of Umbar",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_timemap_jpeg.json",
+   "r": "Rhudaur",
+   "f": "d",
+   "q": "between the Ettenmoors, the Weather Hills, and the Misty Mountains, but included also the Angle between the Hoarwell and the Loudwater",
+   "b": "t1_c_the_lord_of_the_rings.txt"
   }
  ]
 }
