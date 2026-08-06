@@ -94,8 +94,8 @@ function shardOf(term){
   return ((t.slice(0,2)||'_')+'__').slice(0,2);
 }
 
-var MAN=null, CACHE={};
-fetch('arda_corpus_index.json').then(r=>r.json()).then(m=>{MAN=m;}).catch(()=>{
+var MAN=null, CACHE={}, READY;
+READY=fetch('arda_corpus_index.json').then(r=>r.json()).then(m=>{MAN=m;return m;}).catch(()=>{
   document.getElementById('out').innerHTML='<div class="verdict no">The index could not be loaded, '+
     'so nothing was searched. <b>This is not an answer about Arda</b> — it is a failure to ask.</div>';
 });
@@ -175,8 +175,13 @@ function fromUrl(){
   if(!m) return;
   var q=decodeURIComponent(m[1].replace(/\+/g,' '));
   document.getElementById('q').value=q;
-  var t=setInterval(function(){ if(MAN){ clearInterval(t); ask(); } },60);
-  setTimeout(function(){clearInterval(t);},15000);
+  /* AWAIT THE MANIFEST'S OWN PROMISE RATHER THAN POLLING FOR IT. The first version set a 60ms
+     setInterval, and budget_check refused the page: "carries the CSS rule but animates in JS
+     without consulting matchMedia -- a stylesheet has no say over a script." It was RIGHT to
+     refuse a timer it could not tell from an animation, and the honest repair is not to assert a
+     matchMedia check over motion that does not exist -- it is to have no timer. The fetch was
+     already a promise; polling it was the wrong shape from the start. */
+  READY.then(function(){ if(MAN) ask(); });
 }
 document.getElementById('go').addEventListener('click',ask);
 document.getElementById('q').addEventListener('keydown',function(e){if(e.key==='Enter')ask();});
