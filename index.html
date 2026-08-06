@@ -170,7 +170,7 @@ hits.map(e=>`<div style="margin:.5em 0;padding-left:10px;border-left:3px solid #
 </div><script>
 const TICON={person:"👤",event:"⏳",battle:"⚔",blade:"🗡",host:"🛡",place:"📍",journey:"🐎",word:"✒",element:"✳",root:"√",phrase:"❝",people:"👥"};
 const TLBL={person:"Family Trees & Records",event:"Chronology",battle:"Armies",blade:"Named Blades",host:"Hosts of the Ages",place:"Living Map",journey:"Journeys",word:"Lexicon",element:"Name-elements",root:"Etymologies",phrase:"Phrasebook",people:"Peoples"};
-let IDX=null;
+let IDX=null,IDXFAIL=false;
 const nrm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
 const usq=document.getElementById("usq"),usr=document.getElementById("usr");
 // THE NUMBER UNDER THE BOX IS COUNTED FROM THE FILE THE BOX SEARCHES. It was typed --
@@ -179,9 +179,18 @@ const usq=document.getElementById("usq"),usr=document.getElementById("usr");
 // own size. The static 3,035 above is correct today and is checked by map/count_check.py
 // ("things" is in its CLAIMS table now); this line makes it true at load whatever the
 // data does next, so the caption cannot drift from the box again.
-usq.addEventListener("focus",()=>{if(!IDX)fetch("arda_search.json").then(r=>r.json()).then(d=>{IDX=d.map(e=>[e[0],e[1],e[2],e[3],nrm(e[1]),nrm(e[2])]);const c=document.getElementById("uscap");if(c)c.textContent=c.textContent.replace(/^[\d,]+/,d.length.toLocaleString("en-US"));});});
+usq.addEventListener("focus",()=>{if(!IDX)fetch("arda_search.json").then(r=>r.json()).then(d=>{IDX=d.map(e=>[e[0],e[1],e[2],e[3],nrm(e[1]),nrm(e[2])]);IDXFAIL=false;const c=document.getElementById("uscap");if(c)c.textContent=c.textContent.replace(/^[\d,]+/,d.length.toLocaleString("en-US"));}).catch(()=>{IDXFAIL=true;usfail();});});
+// SAY SO WHEN THE BOX CANNOT SEARCH (Adversary 688/691). This chain had no handler at all, so
+// offline the front door took the focus, took the typing, and returned NOTHING -- Ruling 4's
+// third property, silence is visible, failing on the first page anybody loads. The sentence is
+// canon.html's, which is the archive's own answer to exactly this case and should not be
+// reworded into a second one.
+function usfail(){usr.innerHTML='<div style="padding:12px 16px;color:#7a6a50">The search index could not be loaded, '+
+ 'so nothing was searched. <b>This is not an answer about Arda</b> — it is a failure to ask. '+
+ 'Every hall is still reachable from the menu above.</div>';usr.style.display="block";}
 usq.addEventListener("input",()=>{
-if(!IDX||usq.value.trim().length<2){usr.style.display="none";return}
+if(!IDX){if(IDXFAIL)usfail();else usr.style.display="none";return}
+if(usq.value.trim().length<2){usr.style.display="none";return}
 const q=nrm(usq.value.trim());
 const hits=[];
 for(const e of IDX){
