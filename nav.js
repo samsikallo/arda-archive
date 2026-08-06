@@ -29,6 +29,7 @@ const GROUPS=[
    ["silences.html","the silences","what the corpus does not say"]]],
   ["Encyclopedia / Lexicon",[["annals.html","annals of the archive","what's new on this site"],
    ["corpus.html","the corpus","99 volumes, concordance, queries"],
+   ["canon.html","is it canon?","ask a phrase, see which volume attests it"],
    ["theindex.html","the index","6,157 names, the editors' own glosses"],   ["compare.html","side by side","two lives or two battles"],
    ["quiz.html","the trial","test your lore"],
    ["tours.html","tours","guided roads through the halls"]]],
