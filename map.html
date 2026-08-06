@@ -135,7 +135,7 @@
   <input type="range" id="chrs" min="0" max="0" value="0" aria-label="the year">
   <span id="chrn"></span>
 </div>
-<div role="main" id="stage" aria-label="the map of Arda; features are focusable">
+<div role="main" id="stage" role="application" aria-label="the map of Arda; features are focusable">
   <div id="nm"></div><div id="card"></div>
 </div>
 <p class="method" style="padding:10px 16px;font-size:12.5px">
@@ -168,6 +168,15 @@
 const stage=document.getElementById('stage'),nmEl=document.getElementById('nm'),
       card=document.getElementById('card'),countEl=document.getElementById('count');
 let svg=null,vb=null,vb0=null;
+// A layer that could not be LOADED must not look like a layer that is OFF -- Adversary 691.
+// The reasoning is in map/gen_engine.py beside the template; it is not shipped to a reader.
+function layerFailed(id,what){
+  const b=document.getElementById(id); if(!b) return;
+  b.disabled=true; b.setAttribute('aria-disabled','true');
+  if(!/unavailable/.test(b.textContent)) b.textContent=b.textContent+' \u2014 unavailable';
+  b.title=what+' could not be loaded, so this layer is not drawn. This is not an answer about '
+        +'Arda \u2014 it is a failure to ask.';
+}
 fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
   // INLINE, NOT <img>: an <img>'s insides cannot be pointed at.
   const doc=new DOMParser().parseFromString(txt,'image/svg+xml');
@@ -180,25 +189,49 @@ fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
   // THE ARCHIVE'S OWN LETTERING IS NOT DRAWN AT ALL, AND IT SHOULD BE. Diagnosed, not
   // fixed here -- the fix is structural and wants its own commit.
   //
-  // The owner's ruling of 29 July withdraws Christopher Tolkien's LINEWORK and expressly
-  // keeps the archive's own words: "the archive's own lettering, set where Christopher
-  // Tolkien set his". Those words are read from arda_his_anchors.json, which is published
-  // and always was, and they have nothing to do with his paths.
+  // *** DO NOT EXECUTE THE PLAN THAT USED TO BE WRITTEN HERE. THE OWNER HAS RULED AGAINST IT
+  // *** TWICE, AND THE PLAN RESTED ON THREE PREMISES THAT ARE ALL FALSE. Kept as a warning
+  // *** rather than deleted, because a session that finds loadHisNames() unreachable will
+  // *** re-derive the same "fix" from scratch, and this is the only place it would look.
   //
-  // But loadHisNames() is DECLARED INSIDE loadTraced(), beside wireAside(), and called only
-  // from the arda_traced.svg callback. The ruling made loadTraced() return early -- `const
-  // b=document.getElementById('tT'); if(!b) return;` -- so the function is now unreachable
-  // and 161 of the archive's own names vanished from its own map as collateral, which
-  // nobody intended and no guard reports, because declutter_check was taken out of the
-  // suite for the same ruling.
+  // THE PLAN WAS: lift loadHisNames (and wireAside, which it needs) out of loadTraced to file
+  // scope, and call it, so that 161 map labels return. DOING THAT WOULD REPUBLISH WITHDRAWN
+  // MATERIAL, and it would fail anyway because the file it reads is not served.
   //
-  // I TRIED THE ONE-LINE VERSION AND IT WAS WRONG: adding loadHisNames() to the call list
-  // below throws ReferenceError, because the function is nested in a scope this line cannot
-  // see -- and the throw killed loadRealms() and goHash() on the same line, taking all five
-  // deep-link forms down with it. Reverted. The real repair is to lift loadHisNames (and
-  // wireAside, which it needs) OUT of loadTraced to file scope, and only then call it here.
+  // PREMISE 1, FALSE: "arda_his_anchors.json ... is published and always was."
+  //     git ls-files site/arda_his_anchors.json  ->  empty
+  //     .gitignore:65                            ->  arda_his_anchors.json
+  //   It was published once and WITHDRAWN on 29 July by site e4137b9, "His label positions and
+  //   lettering transcriptions leave the published archive too", whose own message says the
+  //   ruling reaches it "one step further than the question assumed". One command settles this
+  //   and the plan was written without running it.
+  //
+  // PREMISE 2, FALSE: "161 of the archive's own names". They are not the archive's. Each anchor
+  //   carries one of CHRISTOPHER TOLKIEN'S label positions together with a transcription of his
+  //   lettering -- e4137b9's reason: "positions plus transcriptions are a reconstruction of his
+  //   naming layer whatever they are stored as".
+  //
+  // PREMISE 3, FALSE: that the 29 July ruling left his lettering untouched. The owner ruled the
+  //   boundary explicitly on 4 August -- "only his linework -- his lettering stays withdrawn."
+  //   The archive may publish its own MEASUREMENTS of his lines (site/cl/*.svg, eight sheets,
+  //   published by his separate ruling of 1 August). His LETTERING is not measurement, and stays
+  //   withdrawn.
+  //
+  // WHAT IS TRUE AND WORTH KEEPING: loadHisNames() IS unreachable, because the artwork ruling
+  // made loadTraced() return early on `const b=document.getElementById('tT'); if(!b) return;`.
+  // That is not a bug to repair -- it is the ruling taking effect, and the labels are gone
+  // BECAUSE THEY ARE MEANT TO BE GONE. And the scoping diagnosis was right: a one-line call
+  // throws ReferenceError and takes loadRealms() and goHash() down with it, which is how the
+  // one session that tried it lost all five deep-link forms. Correct diagnosis, forbidden cure.
   wire(); apply('all'); loadRoads(); loadChrono(); loadUndrawn(); loadTraced(); loadBaynes();
   loadRealms(); goHash();
+}).catch(()=>{
+  // DOMParser returns a <parsererror> DOCUMENT rather than throwing, and this chain had already
+  // inserted it; drop it before speaking. Reasoning in map/gen_engine.py, not shipped.
+  if(svg&&svg.parentNode===stage&&!svg.getAttribute('viewBox')) svg.remove();
+  stage.insertAdjacentHTML('afterbegin','<p class="method" style="padding:18px 16px;font-size:13px">'
+   +'The map could not be loaded, so nothing is drawn. <b>This is not an answer about Arda</b> '
+   +'\u2014 it is a failure to ask. Every hall is still reachable from the menu above.</p>');
 });
 // ---- CHRISTOPHER TOLKIEN'S OWN LINEWORK, traced from the plates and drawn here as vectors.
 // Not a picture of his map: his paths, in this page. His LETTERING is not reproduced -- he
@@ -358,7 +391,7 @@ function loadUndrawn(){
   b.title=U.n_records+' records the archive places and the sheet does not draw, at '+U.n_points+' points';
   let on=false;
   b.onclick=()=>{on=!on; g.style.display=on?'':'none'; b.setAttribute('aria-pressed',String(on));};
- });
+ }).catch(()=>layerFailed('tU','the unmapped places'));
 }
 // ---- the notes Tolkien wrote on Pauline Baynes's map (1969-70)
 // The sheet itself is NOT here and never will be: it is her artwork, in copyright, and the
@@ -423,7 +456,7 @@ function loadChrono(){
   };
   s.addEventListener('input',()=>{if(chOn)at(+s.value)});
   bar.classList.remove('off');
- });
+ }).catch(()=>layerFailed('chrx','the chronology'));
 }
 function at(i){
   const st=CH.steps[i]; if(!st)return;
@@ -513,7 +546,7 @@ function loadRoads(){
     document.getElementById('tR').setAttribute('aria-pressed',String(roadsOn));};
   document.getElementById('tB').onclick=()=>{batOn=!batOn;gB.style.display=batOn?'':'none';
     document.getElementById('tB').setAttribute('aria-pressed',String(batOn));};
- });
+ }).catch(()=>{layerFailed('tR','the roads');layerFailed('tB','the battles');});
 }
 function setVB(){svg.setAttribute('viewBox',`${vb.x} ${vb.y} ${vb.w} ${vb.h}`); declutter();}
 // A NAME TOO SMALL TO READ IS NOT A NAME.
