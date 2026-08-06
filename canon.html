@@ -167,7 +167,19 @@ function ask(){
   });
 }
 function esc(s){return String(s).replace(/[<>&]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));}
+/* ?q= MAKES A QUERY SHAREABLE AND TESTABLE, and it was added because neither was possible.
+   A reader could not link to an answer, and no headless browser could drive the bar without
+   synthesising keystrokes -- so the page could be verified in node but never AS A PAGE. */
+function fromUrl(){
+  var m=/[?&]q=([^&]*)/.exec(location.search);
+  if(!m) return;
+  var q=decodeURIComponent(m[1].replace(/\+/g,' '));
+  document.getElementById('q').value=q;
+  var t=setInterval(function(){ if(MAN){ clearInterval(t); ask(); } },60);
+  setTimeout(function(){clearInterval(t);},15000);
+}
 document.getElementById('go').addEventListener('click',ask);
 document.getElementById('q').addEventListener('keydown',function(e){if(e.key==='Enter')ask();});
+fromUrl();
 </script>
 </body></html>
