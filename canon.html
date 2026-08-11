@@ -27,12 +27,12 @@ background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 
 kbd{font:12px monospace;background:#e8dfc4;padding:1px 5px;border:1px solid var(--line)}
 </style></head><body>
 <a class="a-skip" href="#main">skip to content</a>
-<div id="hdr"><h1>Is it canon?</h1>
+<div id="hdr"><h1>Is it canon?</h1><nav id="ardanav" aria-label="Archive halls"></nav>
 <span class="sub">ask whether a phrase is Tolkien's — answered from 99 volumes and 8,088,881 word positions</span></div>
 <div class="wrap" id="main">
 
 <div id="bar">
-  <input id="q" placeholder="a phrase, or a single word — try: miruvórë, or the light of Eärendil" autofocus>
+  <input id="q" aria-label="search" placeholder="a phrase, or a single word — try: miruvórë, or the light of Eärendil" autofocus>
   <button id="go">Ask</button>
 </div>
 <div class="cite">Press <kbd>Enter</kbd> to ask. Accents are optional — <i>Theoden</i> and <i>Théoden</i> find the same lines.</div>
@@ -187,4 +187,4 @@ document.getElementById('go').addEventListener('click',ask);
 document.getElementById('q').addEventListener('keydown',function(e){if(e.key==='Enter')ask();});
 fromUrl();
 </script>
-</body></html>
+<script src="glossary.js" defer></script></body></html>
