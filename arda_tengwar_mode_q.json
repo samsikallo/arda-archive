@@ -100,6 +100,26 @@
   "ï": "i",
   "ü": "u"
  },
+ "modes": {
+  "quenya-classical": {
+   "language": "Quenya",
+   "built": true,
+   "vowels": "tehtar on the PRECEDING consonant",
+   "cite": "Appendix E, The Tengwar; Amanyë Tenceli, The Classical Mode"
+  },
+  "beleriand": {
+   "language": "Sindarin",
+   "built": false,
+   "vowels": "FULL TENGWAR -- quanta sarmë, 'full writing'",
+   "cite": "Amanyë Tenceli, The Mode of Beleriand, citing DTS 58",
+   "known": [
+    "the mode is quanta sarmë: consonants AND vowels are written with tengwar",
+    "either the long or the short carrier may be used to represent i"
+   ],
+   "unresolved": "which tengwa carries a, e, o and u. Amanyë Tenceli gives them in a FIGURE -- an image -- and this archive holds the page, not the plate. The same wall Appendix E puts in front of the Quenya values, which arda_scripts records with [I-H] on every row.",
+   "refuses": "transcription, until those four values are read off a plate. A transcriber that invented them would produce fluent Sindarin-looking nonsense, which is this module's worst available failure: wrong and confident."
+  }
+ },
  "positional": {
   "r": {
    "before_vowel": "U+E018",
