@@ -1,0 +1,33 @@
+{
+ "mode": "Quenya, classical",
+ "built_from": "map/gen_tengwar.py",
+ "reads": "site/arda_scripts.json -- the inventory is read, never restated",
+ "encoding": "ConScript Unicode Registry tengwar, U+E000 onward",
+ "rule": "In Quenya the vowel-sign sits over the PRECEDING consonant (Appendix E, The Tengwar). A vowel with no preceding consonant rides a carrier.",
+ "tehtar": {
+  "a": {
+   "cp": "U+E040",
+   "sign": "three dots above",
+   "cite": "Appendix E, The Tengwar: the a-tehta is the three-dot sign. [I-H] -- read off the plate, since Appendix E's tables are images in the edition this archive holds."
+  },
+  "e": {
+   "cp": "U+E046",
+   "sign": "acute",
+   "cite": "Appendix E, The Tengwar: the e-tehta is the acute. [I-H] -- read off the plate."
+  },
+  "o": {
+   "cp": "U+E048",
+   "sign": "right curl",
+   "cite": "Appendix E, The Tengwar: o is a right curl, u a left. [I-H] -- read off the plate."
+  },
+  "u": {
+   "cp": "U+E04A",
+   "sign": "left curl",
+   "cite": "Appendix E, The Tengwar: o is a right curl, u a left. [I-H] -- read off the plate."
+  }
+ },
+ "unresolved": {
+  "i": "CSUR allocates no single-dot-above sign (U+E050 is PUSTA, punctuation). Which sign carries Quenya i differs between faces, and Amanyë Tenceli's mode tables -- not yet ingested -- are what settle it. REFUSED rather than guessed."
+ },
+ "owed": "Correctness is NOT established until this is proven against Glaemscribe's published output. Until then this is a careful reading of Appendix E."
+}
