@@ -404,52 +404,149 @@ if(location.hash.includes("tab=xlate"))b.click();
      this site. -->
 <script src="speak.js"></script>
 
-<!-- ELDAMO, LINKED AND NOT IMPORTED.
-     Paul Strack's Eldamo holds 35,900 Elvish words against this archive's 313. Importing it
-     would put a hundred uncitable reconstructions beside every cited form, which is the trade
-     this archive refuses for encyclopedias. So it points instead: for each word the archive
-     holds on its own evidence, a link to Strack's entry. His work stays on his site.
-     CC BY 4.0 requires credit, and the credit lives HERE, beside the links it belongs to. -->
+<!-- ONE LEXICON. The owner's instruction of 11 August: not a lexicon BESIDE this one,
+     but one collection. 35,733 entries -- the archive's own cited words and Paul Strack's
+     Eldamo under CC BY 4.0 -- searched together, each result saying whose evidence it is.
+     Sharded 449 ways so a lookup fetches ONE shard and not 11.9 MB. -->
 <script>
-(function eldamoLinks(){
-  fetch('arda_eldamo.json').then(r=>r.json()).then(E=>{
-    const c=E.credit, s=document.createElement('section');
-    s.id='eldamo'; s.style.cssText='padding:18px 26px 40px;max-width:1100px';
-    const rows=E.links.map(l=>
-      '<tr><td class="lem">'+l.word+'</td><td>'+(l.archive_gloss||'')+'</td>'
-      +'<td>'+(l.eldamo_gloss||'')+(l.ambiguous?' <span class="tag M" title="several Eldamo '
-        +'words share this spelling and none matched the sense">ambiguous</span>':'')
-      +(l.agree===false&&!l.ambiguous?' <span class="tag I" title="the two glosses differ">differs</span>':'')
-      +'</td><td><a href="'+l.url+'" rel="noopener" target="_blank">Eldamo &#8599;</a></td></tr>').join('');
-    s.innerHTML='<h2 style="font-variant:small-caps;letter-spacing:.05em">Eldamo — an Elvish '
-      +'lexicon beside this one</h2>'
-      +'<p class="cite"><b>'+c.work+'</b> by '+c.author+' — <a href="'+c.url+'" rel="noopener" '
-      +'target="_blank">eldamo.org</a>, used under <a href="'+c.licence_url+'" rel="noopener" '
-      +'target="_blank">'+c.licence+'</a>. '+c.statement+'</p>'
-      +'<p class="cite">'+E.n_linked+' of the archive\'s '+E.n_archive_elvish+' Elvish words '
-      +'are linked, out of Eldamo\'s '+E.n_eldamo_words.toLocaleString()+'. '
-      +E.n_gloss_disagreements+' glosses differ and '+E.n_ambiguous+' matches are ambiguous; '
-      +'both are marked and neither is reconciled — the archive does not adopt Eldamo\'s '
-      +'reading, nor Eldamo the archive\'s.</p>'
-      +'<div style="overflow-x:auto"><table><tr><th>word</th><th>the archive\'s gloss</th>'
-      +'<th>Eldamo\'s gloss</th><th></th></tr>'+rows+'</table></div>'
-      +'<h3 style="font-variant:small-caps;letter-spacing:.05em;margin-top:26px">The roots</h3>'
-      +'<p class="cite">'+(E.roots||[]).length+' of the archive\'s '
-      +'roots — those of The Etymologies and those it curates with citations — are linked to '
-      +'Eldamo\'s. Where a root matched only a NEO-primitive form, that is a reconstruction '
-      +'and is marked as one; the archive may point at a reconstruction, it may not let one '
-      +'pass as a citation.</p>'
-      +'<div style="overflow-x:auto;max-height:520px"><table><tr><th>root</th>'
-      +'<th>the archive\'s gloss</th><th>Eldamo\'s gloss</th><th></th></tr>'
-      +(E.roots||[]).map(function(r){return '<tr><td class="lem">'+r.root+'</td><td>'
-        +(r.archive_gloss||'')+'</td><td>'+(r.eldamo_gloss||'')
-        +(r.reconstructed?' <span class="tag M" title="matched only a Neo-primitive form">reconstructed</span>':'')
-        +(r.ambiguous?' <span class="tag M" title="several roots share this spelling and none matched the sense">ambiguous</span>':'')
-        +'</td><td><a href="'+r.url+'" rel="noopener" target="_blank">Eldamo &#8599;</a></td></tr>';}).join('')
-      +'</table></div>';
-    const m=document.getElementById('main');
-    (m?m.insertAdjacentElement('afterend',s):document.body.appendChild(s));
-  }).catch(()=>{});
+(function lexicon(){
+  var MAN=null, CACHE={};
+  /* THE FOLD MUST MATCH map/gen_lexicon.py, WHICH SHARDS ON ardatext.fold_accents. Same
+     discipline as canon.html: fold FIRST, then strip marks, then keep ASCII alnum. Baring
+     before folding sent capitalised names to the wrong shard on the canon searcher, found only
+     by running that page's own JS in node. */
+  function fold(s){ return (s||'').toLowerCase().replace(/[‘’]/g,"'").normalize('NFC'); }
+  function bare(s){ return (s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').normalize('NFC'); }
+  function shardOf(t){
+    var x=bare(fold(t)).replace(/[^a-z0-9]/g,'');
+    return ((x.slice(0,2)||'_')+'__').slice(0,2);
+  }
+  function esc(s){return String(s==null?'':s).replace(/[<>&]/g,function(c){
+    return {'<':'&lt;','>':'&gt;','&':'&amp;'}[c];});}
+
+  var host=document.createElement('section');
+  host.id='lexicon';
+  host.style.cssText='padding:18px 26px 40px;max-width:1100px';
+  host.innerHTML='<h2 style="font-variant:small-caps;letter-spacing:.05em">The lexicon</h2>'
+    +'<p class="cite" id="lxcredit">Loading&#8230;</p>'
+    +'<div style="display:flex;gap:8px;margin:12px 0 4px">'
+    +'<input id="lxq" style="flex:1;font:16px/1.4 Georgia,serif;padding:8px 10px;'
+    +'border:1px solid #b0a58e;background:#fffdf5" placeholder="a word, a root, or an English '
+    +'gloss — try: mellon, or star" aria-label="search the lexicon">'
+    +'<button id="lxgo" style="font:14px Georgia,serif;padding:8px 16px;border:1px solid #8a7444;'
+    +'background:#221c15;color:#e2cf96;cursor:pointer">Look up</button></div>'
+    +'<div id="lxout"></div>';
+  var m=document.getElementById('main');
+  (m?m.insertAdjacentElement('afterend',host):document.body.appendChild(host));
+
+  var READY=fetch('arda_lexicon.json').then(function(r){return r.json();}).then(function(d){
+    MAN=d;
+    var c=(d.credit&&d.credit.eldamo)||{};
+    document.getElementById('lxcredit').innerHTML=
+      '<b>'+esc(d.n_entries.toLocaleString())+' entries in one collection.</b> '
+      +esc(d.n_archive_only.toLocaleString())+' the archive cites to the corpus itself, '
+      +esc(d.n_eldamo_only.toLocaleString())+' from <b>'+esc(c.work||'Eldamo')+'</b> by '
+      +esc(c.author||'Paul Strack')+' — <a href="'+esc(c.url||'https://eldamo.org/')
+      +'" rel="noopener" target="_blank">eldamo.org</a>, used under <a href="'
+      +esc(c.licence_url||'')+'" rel="noopener" target="_blank">'+esc(c.licence||'CC BY 4.0')
+      +'</a> — and '+esc(d.n_entries_held_by_both.toLocaleString())+' held by both. '
+      +'Of those, <b>'+esc(d.n_gloss_disagreements)+'</b> read differently in the two, and where '
+      +'they do this page shows BOTH and adopts neither.';
+    return d;
+  }).catch(function(){
+    document.getElementById('lxcredit').textContent=
+      'The lexicon index could not be loaded, so nothing was searched. This is not an answer '
+      +'about Elvish — it is a failure to ask.';
+  });
+
+  function shard(n){
+    if(CACHE[n]) return Promise.resolve(CACHE[n]);
+    return fetch('lex/'+n+'.json').then(function(r){return r.ok?r.json():[];})
+      .then(function(d){CACHE[n]=d;return d;}).catch(function(){return [];});
+  }
+
+  function glosses(e){
+    var out=[];
+    (e.senses||[]).forEach(function(s){ if(s.gloss) out.push({t:s.gloss,who:'archive',cite:s.cite,speech:s.speech}); });
+    (e.eldamo||[]).forEach(function(x){ if(x.eldamo_gloss) out.push({t:x.eldamo_gloss,who:'eldamo',url:x.eldamo_url,speech:x.eldamo_speech}); });
+    return out;
+  }
+
+  function render(list,q){
+    var o=document.getElementById('lxout');
+    if(!list.length){
+      o.innerHTML='<div style="padding:10px 0;color:#7a3a2a">Not in this lexicon. '
+        +'<span class="cite">That means neither the archive’s cited words nor Eldamo holds '
+        +'<b>'+esc(q)+'</b> — not that Tolkien never wrote it.</span></div>';
+      return;
+    }
+    var h='<p class="cite">'+list.length+' entr'+(list.length>1?'ies':'y')+'.</p>'
+      +'<div style="overflow-x:auto"><table><tr><th>form</th><th>language</th>'
+      +'<th>gloss</th><th>held by</th><th></th></tr>';
+    list.slice(0,200).forEach(function(e){
+      var gs=glosses(e), url=(e.eldamo||[]).map(function(x){return x.eldamo_url;}).filter(Boolean)[0];
+      var who=(e.held_by||[]).join(' + ');
+      /* THE MARK IS PER ENTRY AND IT IS THE POINT: [C] means the archive can cite the corpus,
+         [EXT] means this is Strack's scholarship and the archive does not speak it in its own
+         voice. The old panel put that distinction on the SECTION; here it is on the ROW. */
+      var tag=(e.held_by||[]).indexOf('archive')>=0
+        ? '<span class="tag C" title="the archive cites the corpus for this">[C]</span>'
+        : '<span class="tag M" title="Eldamo, under CC BY 4.0 — not the archive’s own cited work">[EXT]</span>';
+      var body=gs.map(function(g){
+        return '<div><span class="cite">'+(g.who==='archive'?'archive':'Eldamo')+':</span> '
+          +esc(g.t)+(g.speech?' <span class="cite">('+esc(g.speech)+')</span>':'')
+          +(g.cite?' <span class="cite">'+esc(g.cite)+'</span>':'')+'</div>';
+      }).join('');
+      if(e.gloss_disagrees) body+='<div class="cite"><b>the two readings differ</b> — both '
+        +'are shown and neither is adopted</div>';
+      h+='<tr><td class="lem">'+esc(e.form)+'</td><td>'+esc(e.lang||'')+'</td>'
+        +'<td>'+(body||'<span class="cite">no gloss recorded</span>')+'</td>'
+        +'<td>'+tag+' <span class="cite">'+esc(who)+'</span></td>'
+        +'<td>'+(url?'<a href="'+esc(url)+'" rel="noopener" target="_blank">Eldamo &#8599;</a>':'')
+        +'</td></tr>';
+    });
+    h+='</table></div>';
+    if(list.length>200) h+='<p class="cite">Showing the first 200 of '+list.length+'.</p>';
+    o.innerHTML=h;
+  }
+
+  function ask(){
+    var q=document.getElementById('lxq').value.trim();
+    var o=document.getElementById('lxout');
+    if(!q){ o.innerHTML=''; return; }
+    if(!MAN){ o.innerHTML='<p class="cite">The index is still loading.</p>'; return; }
+    o.innerHTML='<p class="cite">Looking…</p>';
+    var want=bare(fold(q));
+    /* BY FORM FIRST -- one shard. Then, only if the form finds nothing, by GLOSS across the
+       shards a word of the query could start in. A gloss sweep is the expensive path and it is
+       NOT the default, because the common case is looking a word up. */
+    shard(shardOf(q)).then(function(rows){
+      var hit=rows.filter(function(e){ return bare(fold(e.form))===want; });
+      if(hit.length){ render(hit,q); return; }
+      var pre=rows.filter(function(e){ return bare(fold(e.form)).indexOf(want)===0; });
+      if(pre.length){ render(pre,q); return; }
+      var names=(MAN.shards||[]).filter(function(n){ return n.indexOf(want.slice(0,1))===0; });
+      return Promise.all(names.slice(0,40).map(shard)).then(function(all){
+        var g=[];
+        all.forEach(function(rows2){ rows2.forEach(function(e){
+          var t=glosses(e).map(function(x){return bare(fold(x.t));}).join(' | ');
+          if(t.indexOf(want)>=0) g.push(e);
+        });});
+        render(g,q);
+      });
+    });
+  }
+  document.getElementById('lxgo').addEventListener('click',ask);
+  document.getElementById('lxq').addEventListener('keydown',function(e){ if(e.key==='Enter') ask(); });
+  /* ?w= makes a lookup shareable AND testable as a page -- the same reason canon.html has ?q=,
+     and it awaits the manifest's own promise rather than polling for it, because budget_check
+     refuses a timer it cannot tell from an animation. */
+  var mm=/[?&]w=([^&]*)/.exec(location.search);
+  if(mm){
+    var v=decodeURIComponent(mm[1].replace(/\+/g,' '));
+    document.getElementById('lxq').value=v;
+    READY.then(function(){ if(MAN) ask(); });
+  }
 })();
 </script>
 <script src="glossary.js" defer></script></body>
