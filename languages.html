@@ -523,8 +523,10 @@ if(location.hash.includes("tab=xlate"))b.click();
   document.getElementById('kbs').addEventListener('change',function(){buf=[];
     if(S) draw(); else load();
     document.getElementById('kbout').value='';});
+  /* `if(S)` guards the lazy load, as the kbs handler above does: Clear before Load threw
+     "Cannot read properties of null (reading 'teng')". LORE_QUEUE 774. Do not remove. */
   document.getElementById('kbclr').addEventListener('click',function(){buf=[];
-    document.getElementById('kbout').value='';draw();});
+    document.getElementById('kbout').value='';if(S) draw();});
 })();
 </script>
 <!-- THE WRITING TOOL. Type Quenya, see it in tengwar, choose the face.
