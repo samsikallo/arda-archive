@@ -497,6 +497,10 @@ if(location.hash.includes("tab=xlate"))b.click();
   }
 
   function draw(){
+    /* AND THE FUNCTION REFUSES TOO. Guarding every caller is a list that grows; guarding the
+       function is the thing itself. Both, because the caller-guard keeps the UX right and this
+       keeps a future caller from reintroducing the throw. */
+    if(!S) return;
     var kind=document.getElementById('kbs').value;
     var rows=(S[kind]||[]).filter(function(r){return r.g&&r.g.b;});
     var box=document.getElementById('kbkeys');
