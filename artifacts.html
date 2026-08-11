@@ -100,7 +100,7 @@ document.getElementById("grid").querySelectorAll("img.plate").forEach(im=>im.add
   L.addEventListener("click",()=>{L.style.display="none"});
   document.addEventListener("keydown",ev=>{if(ev.key==="Escape")L.style.display="none"});}
  L.innerHTML='<img src="'+im.getAttribute("src")+'" alt="'+im.getAttribute("alt")+'"><div class="pc">'
-  +im.dataset.cap+' — an original concept plate drawn for this archive from the corpus’ own description [I]</div>';
+  +im.dataset.cap+' — an original concept plate drawn for this archive from the corpus’ own description [I-M]</div>';
  L.style.display="flex";}));}
 document.getElementById("q").addEventListener("input",draw);
 draw();});

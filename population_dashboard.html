@@ -90,7 +90,7 @@ th:first-child,td:first-child{text-align:left}
 </div>
 
 <h2>The Sundering of the Peoples — an interactive taxonomy</h2>
-<p class="cite">Every speaking people of Arda in one descent-and-division map. Click any node for its demographic record — lifespan, stature, fertility, sex-ratio, society, trajectory, citations. Dashed cards = peoples extinct, annihilated or terminally declining by the end of the Third Age. The orc-descent link is dashed: the corpus itself gives divergent accounts [M].</p>
+<p class="cite">Every speaking people of Arda in one descent-and-division map. Click any node for its demographic record — lifespan, stature, fertility, sex-ratio, society, trajectory, citations. Dashed cards = peoples extinct, annihilated or terminally declining by the end of the Third Age. The orc-descent link is dashed: the corpus itself gives divergent accounts [C].</p>
 <div class="pcard" style="overflow-x:auto"><svg id="tax" viewBox="0 0 1660 640" style="min-width:1100px;width:100%"></svg></div>
 <div id="taxpanel" class="pcard" style="display:none"></div>
 
@@ -200,25 +200,25 @@ hador:{Life:"~70–90",Trajectory:"most numerous → enslaved in Hithlum after t
 numenor:{Life:"350–420 yrs (commons); line of Elros ~400 (Elros 500)",Fertility:"late marriage (♂50–100, ♀30–75), 1–4 children",Count:"5–10k landed → 200–350k → 2M (S.A. 1000) → ~15M before the Downfall — all Tolkien's own figures",Trajectory:"annihilated S.A. 3319 save the Faithful and the colonies",Source:"NoME [C rails]"},
 kingsmen:{Trajectory:"→ Black Númenóreans of Umbar; the Mouth of Sauron their last notable",Source:"Akallabêth; LotR V.10"},
 faithful:{Count:"nine ships of Elendil [C]",Trajectory:"→ Arnor + Gondor over Middle-Men substrates",Source:"Akallabêth; App A"},
-gondor:{Life:"200+ early, waning toward ~100",Fertility:"'married late, and their children were few' — the corpus's stated cause of decline",Count:"peak order 2–4M; ~500k at the War [M]",Source:"App A I(iv); LotR IV.5"},
+gondor:{Life:"200+ early, waning toward ~100",Fertility:"'married late, and their children were few' — the corpus's stated cause of decline",Count:"peak order 2–4M; ~500k at the War [I-L]",Source:"App A I(iv); LotR IV.5"},
 arnor:{Count:"peak ~10⁵–10⁶ → after 1974: thousands; the Grey Company's 30 = all that could gather in haste [C]",Source:"App A; LotR V.2"},
 middlemen:{Life:"~70–80",Fertility:"agrarian-high",Source:"App F"},
 northmen:{Count:"Esgaroth lost ~¼ to Smaug [C fraction]; Dale reborn richer",Trajectory:"~40–100k at the War",Source:"Hobbit; App A/B"},
 eotheod:{Count:"Eorl rode with 7,000+ riders [C]; Full Muster '>12,000 Riders' [C] → people ~125k",Sex:"male cavalry culture; Éowyn the flagged exception",Source:"UT, Cirion & Eorl; n.36"},
-dunlend:{Count:"~20–60k [L]; thousands under Saruman",Source:"LotR III; App A"},
+dunlend:{Count:"~20–60k [I-L]; thousands under Saruman",Source:"LotR III; App A"},
 darkmen:{Count:"armies only: Haradrim ≥18,000 at the Pelennor; Morannon hosts 'ten times and more' the West's 6,000. Populations: The attached documents do not provide enough information to answer this. Floor ≥10⁶ collectively.",Source:"LotR V; App A"},
 druedain:{Life:"shorter-lived than other Men (UT)",Count:"bands of 10²–10³ at every appearance",Trajectory:"relict, dwindling every age",Source:"UT, The Drúedain"},
 hobbits:{Life:"~100 (Bilbo's 131 the record); adult at 33",Fertility:"highest sustained in the corpus — 13 children attested",Source:"Prologue; App B/C"},
 harfoots:{Count:"'far the most numerous'",Source:"Prologue"},
 stoors:{Trajectory:"riverine; the Gladden remnant bred Sméagol's folk",Source:"Prologue; I.2"},
 fallohides:{Count:"'the least numerous'; Tooks & Brandybucks led from this strain",Source:"Prologue"},
-shire:{Count:"~100–250k at the War [M]; 19 dead at Bywater — the whole war-cost [C]",Source:"Prologue; VI.8"},
+shire:{Count:"~100–250k at the War [I-L]; 19 dead at Bywater — the whole war-cost [C]",Source:"Prologue; VI.8"},
 khazad:{Life:"~250 yrs (Dwalin's 340 exceptional)",Sex:"women ≤⅓, seldom abroad; <⅓ of men marry; single lifelong marriages [C]",Trajectory:"'increases slowly' — every mansion-loss near-permanent",Source:"App A III"},
 longbeards:{Count:"Khazad-dûm 'greatest of the mansions' → Balrog 1980 → Erebor/Iron Hills ~15–40k at the War",Source:"App A III; UT"},
 firebeards:{Trajectory:"Nogrod & Belegost ruined at the Age's end; folk to Khazad-dûm [C]",Source:"App A III; Silm 22"},
 eastdwarves:{Count:"names and directions only — no numbers anywhere in the corpus",Source:"HoME XII, Of Dwarves and Men"},
 onodrim:{Count:"~50 marched on Isengard; total likely <200",Fertility:"zero since the Entwives' gardens were destroyed (S.A.)",Trajectory:"terminal",Source:"LotR III.4; VI.6"},
-orcs:{Fertility:"'multiplied after the manner of the Children' [C]; females never mentioned — flagged gap",Count:"war-derived only: ~3–6×10⁵ at Sauron's peak [L]",Trajectory:"boom under each Dark Lord, crash at each fall",Source:"HoME X; Silm; LotR V"},
+orcs:{Fertility:"'multiplied after the manner of the Children' [C]; females never mentioned — flagged gap",Count:"war-derived only: ~3–6×10⁵ at Sauron's peak [I-L]",Trajectory:"boom under each Dark Lord, crash at each fall",Source:"HoME X; Silm; LotR V"},
 };
 const tax=document.getElementById("tax"),NS="http://www.w3.org/2000/svg";
 const TW=118,TH=46;
@@ -237,7 +237,7 @@ e.setAttribute("d",`M${tById["quendi"][2]+TW/2},${tById["quendi"][3]+TH} C 470,3
 e.setAttribute("fill","none");e.setAttribute("stroke","#8a6a6a");e.setAttribute("stroke-width","1.3");e.setAttribute("stroke-dasharray","3 5");
 tg.appendChild(e);
 const t=document.createElementNS(NS,"text");t.setAttribute("x",430);t.setAttribute("y",395);t.setAttribute("class","txs");
-t.textContent="'corrupted stock' — divergent accounts [M]";tg.appendChild(t);}
+t.textContent="'corrupted stock' — divergent accounts [C]";tg.appendChild(t);}
 TAX.forEach(t=>{const[id,lab,x,y,par,dead,short]=t;
 const n=document.createElementNS(NS,"g");n.setAttribute("class","tnode"+(dead?" dead":""));
 n.setAttribute("transform",`translate(${x},${y})`);
@@ -371,7 +371,7 @@ const LS=[["Eldar",Infinity,null,"immortal within Arda","s1","HoME X"],
 ["Dúnedain, late Third Age",155,210,"Aragorn 210","s6","App A"],
 ["Dwarves",250,340,"Dwalin 340","s2","App A [I from dates]"],
 ["Hobbits",100,131,"Bilbo 131","s4","Prologue; App C"],
-["Rohirrim & Northmen",78,null,"~70–80","s5","App A [I]"],
+["Rohirrim & Northmen",78,null,"~70–80","s5","App A [I-H]"],
 ["Drúedain",60,null,"'shorter than other Men' [C qualitative]","s8","UT"]];
 const Wl=1140,Hl=300,MLl=210,MRl=140,MTl=16,rowH=(Hl-60)/LS.length;
 const Xl=v=>MLl+Math.min(v,520)/520*(Wl-MLl-MRl);
