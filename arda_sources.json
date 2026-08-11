@@ -419,7 +419,7 @@
    "file": "The Letters of J. R. R. Tolkien (Revised and Expanded Edition).epub",
    "tier": 1,
    "attribution": "ed. Humphrey Carpenter with Christopher Tolkien; revised Hammond & Scull (2023)",
-   "note": "PARTIAL. The file is an excerpt, not the whole book: it carries the front matter, the introduction, and the letters from 1 to 42 — among them thirteen never printed in 1981 (8a, 8b, 8c, 11a, 11b, 11c, 15a, 15b, 18a, 36a, 36b, 38a, 40a). Its table of contents, however, is complete, and lists all 508 letters of the revised edition: the 354 of 1981 and 154 added. So the archive may now say WHICH letters exist and to whom, while it may quote only those it holds. Beyond letter 42 the 1981 text remains the only text here.",
+   "note": "PARTIAL. The file is an excerpt, not the whole book: it carries the front matter, the introduction, and the letters from 1 to 42 — among them thirteen never printed in 1981 (8a, 8b, 8c, 11a, 11b, 11c, 15a, 15b, 18a, 36a, 36b, 38a, 40a). THOSE THIRTEEN ARE THE NEW LETTERS WHOSE TEXT IS CARRIED, AND THE LIST OF NEW LETTERS IN THIS RANGE DOES NOT END THERE: 42a, 42b and 42c (all To Christopher Tolkien) stand in the contents and their TEXT IS NOT HERE — measured, contents-style 2 and body-style 0 apiece, against 2 and 1 for 8a and 40a. So the new-letter list ends at 40a FOR TEXT and at 42c FOR EXISTENCE. Its table of contents, however, is complete, and lists all 508 letters of the revised edition: the 354 of 1981 and 154 added. So the archive may now say WHICH letters exist and to whom, while it may quote only those it holds. Beyond letter 42 the 1981 text remains the only text here.",
    "primary_text": true,
    "present": true,
    "bytes": 1025143,
@@ -549,7 +549,7 @@
    "bytes": 12899027,
    "pages": 101,
    "corpus_file": "t3_ocr_alan_lee_the_lord_of_the_rings_sketchbook.txt",
-   "words": 33255
+   "words": 104259
   },
   {
    "file": "eldamo_PEE_Parma_Errata.pdf",
@@ -853,9 +853,7 @@
    "note": "Tolkien's own calligraphic manuscript of the King's Letter, the discarded epilogue to The Lord of the Rings, in tengwar and in English. IT IS BOTH A TEXT AND A PICTURE and the artwork ruling of 29 July governs the picture: his linework is NOT republished. Held in the workshop as primary evidence the archive may read and measure against, and may never serve. EXTRACTION: CORRECTLY EMPTY — it is a .png, so there is no text layer to fail and none is expected. The extractor now refuses any source that is not a .pdf or .epub, having handed this picture to pdftotext once and put the 0-byte answer in the corpus.",
    "primary_text": false,
    "present": true,
-   "bytes": 1965265,
-   "corpus_file": "t1_the_king_s_letter_manuscript_plate_png.txt",
-   "words": 0
+   "bytes": 1965265
   },
   {
    "file": "Parma Eldalamberon 11.pdf",
