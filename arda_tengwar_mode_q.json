@@ -32,5 +32,73 @@
   }
  },
  "unresolved": {},
+ "letters": {
+  "c": "U+E002",
+  "ch": "U+E00A",
+  "f": "U+E009",
+  "hw": "U+E00B",
+  "hy": "U+E020",
+  "k": "U+E002",
+  "l": "U+E01A",
+  "ld": "U+E01B",
+  "m": "U+E011",
+  "mb": "U+E005",
+  "mp": "U+E00D",
+  "n": "U+E010",
+  "nc": "U+E00E",
+  "nd": "U+E004",
+  "ng": "U+E006",
+  "ngw": "U+E007",
+  "nqu": "U+E00F",
+  "nt": "U+E00C",
+  "p": "U+E001",
+  "qu": "U+E003",
+  "r": "U+E014",
+  "rd": "U+E019",
+  "s": "U+E01C",
+  "ss": "U+E01E",
+  "t": "U+E000",
+  "v": "U+E015",
+  "w": "U+E017",
+  "y": "U+E016",
+  "ñ": "U+E012",
+  "ñw": "U+E013",
+  "þ": "U+E008"
+ },
+ "digraphs": [
+  "ngw",
+  "nqu",
+  "nd",
+  "mb",
+  "ng",
+  "mp",
+  "nt",
+  "nc",
+  "qu",
+  "hw",
+  "hy",
+  "ht",
+  "th",
+  "ss",
+  "ld",
+  "rd"
+ ],
+ "carriers": {
+  "short": "U+E025",
+  "long": "U+E026"
+ },
+ "doubled": {
+  "e": "U+E047",
+  "i": "U+E042",
+  "o": "U+E049",
+  "u": "U+E04B"
+ },
+ "equivalent": {
+  "ë": "e",
+  "ä": "a",
+  "ö": "o",
+  "ï": "i",
+  "ü": "u"
+ },
  "owed": "Correctness is NOT established until this is proven against Glaemscribe's published output. Until then this is a careful reading of Appendix E."
 }
