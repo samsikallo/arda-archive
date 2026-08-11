@@ -100,5 +100,12 @@
   "ï": "i",
   "ü": "u"
  },
+ "positional": {
+  "r": {
+   "before_vowel": "U+E018",
+   "otherwise": "U+E014",
+   "cite": "Appendix E, The Tengwar: rómen is the full trilled r used before a vowel; óre the weak r used finally and before a consonant."
+  }
+ },
  "owed": "Correctness is NOT established until this is proven against Glaemscribe's published output. Until then this is a careful reading of Appendix E."
 }
