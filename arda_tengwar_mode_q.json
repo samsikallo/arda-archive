@@ -15,6 +15,11 @@
    "sign": "acute",
    "cite": "Appendix E, The Tengwar: the e-tehta is the acute. [I-H] -- read off the plate."
   },
+  "i": {
+   "cp": "U+E044",
+   "sign": "single dot above (amatixë)",
+   "cite": "Amanyë Tenceli, The Classical Mode, citing Appendix E: long í 'is indicated by a doubled dot', so short i is the SINGLE dot. Confirmed against the font's own geometry -- see the note below."
+  },
   "o": {
    "cp": "U+E048",
    "sign": "right curl",
@@ -26,8 +31,6 @@
    "cite": "Appendix E, The Tengwar: o is a right curl, u a left. [I-H] -- read off the plate."
   }
  },
- "unresolved": {
-  "i": "CSUR allocates no single-dot-above sign (U+E050 is PUSTA, punctuation). Which sign carries Quenya i differs between faces, and Amanyë Tenceli's mode tables -- not yet ingested -- are what settle it. REFUSED rather than guessed."
- },
+ "unresolved": {},
  "owed": "Correctness is NOT established until this is proven against Glaemscribe's published output. Until then this is a careful reading of Appendix E."
 }
