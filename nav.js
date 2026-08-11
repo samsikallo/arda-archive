@@ -18,7 +18,7 @@ const GROUPS=[
   ["Items & Artefacts",[["artifacts.html","artifacts","20 treasures, chain of custody"],
    ["heraldry.html","hall of heraldry","every device + a device-forge"],
    ["gallery.html","gallery","armour & weapon plates"]]],
-  ["Languages & Writings",[["languages.html","tongues & letters","lexicon, scripts, name-craft"],
+  ["Languages & Writings",[["writing.html","the scriptorium","write in cirth, tengwar and the modes"],["languages.html","tongues & letters","lexicon, scripts, name-craft"],
    ["names.html","the names of Arda","who gave which name, and which were true"],
    ["poems.html","verse","35 songs & lays, verbatim"]]],
   ["History & Timelines",[["arda_timeline.html","timeline","all of history, zoomable"],

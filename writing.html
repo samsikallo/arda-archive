@@ -1,0 +1,162 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png">
+<meta name="theme-color" content="#191512">
+<title>The Scriptorium — the Arda Archive</title>
+<meta name="description" content="Write in Tolkien's scripts: the Cirth in the Angerthas Daeron, the Angerthas Moria and the mode of Erebor, drawn by this archive and cited to Appendix E.">
+<link rel="stylesheet" href="arda.css">
+<style>
+:root{--ink:#3a3226;--mut:#7a6a50;--line:#b0a58e;--gold:#c9a227}
+body{margin:0;color:var(--ink);font:14.5px/1.55 Georgia,'Palatino Linotype',serif;
+background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 50%),#efe6cd}
+#hdr{background:linear-gradient(#221c15,#191512 60%,#12100d);color:#d8c78e;padding:11px 22px 8px;
+  border-bottom:3px double #8a7444;display:flex;align-items:baseline;flex-wrap:wrap}
+#hdr h1{margin:0;font-size:20px;font-variant:small-caps;letter-spacing:.14em;font-weight:normal;
+  color:#e2cf96;text-shadow:0 0 12px rgba(201,162,39,.35)}
+#hdr .sub{font-size:10.5px;font-style:italic;color:#a08d5c;flex-basis:100%;margin-top:-2px}
+.wrap{max-width:1220px;margin:0 auto;padding:16px 20px 60px}
+.cite{color:var(--mut);font-style:italic;font-size:11.5px}
+.intro{background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid var(--line);border-radius:12px;
+  padding:13px 18px;box-shadow:0 2px 8px rgba(60,40,10,.07);margin-bottom:6px}
+:root[data-theme="dark"] .intro{background:#241f18!important;border-color:#5a4c32!important}
+</style></head><body>
+<a href="#main" class="skip">Skip to content</a>
+<div id="hdr"><h1>The Scriptorium</h1><span style="flex:1"></span>
+<nav id="ardanav" aria-label="Archive halls"></nav>
+<div class="sub">Write in Tolkien&#8217;s scripts &#8212; every glyph drawn by this archive, every value marked with whose evidence it is</div></div>
+<div class="wrap" id="main">
+<div class="intro"><p style="margin:.2em 0"><b>This page writes. It does not translate.</b>
+The Cirth below are the archive&#8217;s own drawings of all sixty certar, and each value carries a
+marker: <span style="color:#4a6a3a"><b>green</b></span> where Appendix E states it in prose, plain
+where it is read off the Angerthas plate &#8212; the shape is Tolkien&#8217;s, the reading is ours.
+<b>Where plate and prose disagree, both are shown and neither is adopted</b>, and four of those
+disagreements are Tolkien&#8217;s own: Appendix E says the assignment of <i>s</i> and <i>h</i>
+&#8220;continued to hesitate&#8221; between arrangements.</p>
+<p class="cite" style="margin:.4em 0 0">The tengwar transcriber, the on-screen keyboard, the
+glosser and the merged lexicon remain in <a href="languages.html">tongues &amp; letters</a>. They
+are working panels and moving one is its own change, measured on its own.</p></div>
+<!-- WRITE IN CIRTH. The archive's OWN drawn certar, from arda_scripts.json, with the
+     merged value table from arda_cirth.json. NO FONT IS INVOLVED and none is needed: the glyphs
+     are SVG the archive already had. Three arrangements, because the same certh carries
+     different sounds in different hands, and every value prints whose evidence it rests on. -->
+<style>
+#cw .row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;margin:10px 0}
+#cw .out{min-height:78px;padding:12px;border:1px solid #b0a58e;background:#fffdf5;
+  display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end}
+#cw .cq{display:flex;flex-direction:column;align-items:center;gap:2px}
+#cw .cq svg{width:26px;height:39px}
+#cw .cq .v{font:11px Georgia,serif;color:#7a6a50}
+#cw .cq.c .v{color:#4a6a3a;font-weight:bold}
+#cw .cq.miss{opacity:.45}
+#cw label{font-size:12px;color:#7a6a50}
+:root[data-theme="dark"] #cw .out{background:#241f18!important;border-color:#5a4c32!important}
+:root[data-theme="dark"] #cw .cq svg path{stroke:#e8dcc0!important;fill:#e8dcc0!important}
+</style>
+<script>
+(function cirthwrite(){
+  function esc(s){return String(s==null?'':s).replace(/[<>&]/g,function(c){
+    return {'<':'&lt;','>':'&gt;','&':'&amp;'}[c];});}
+
+  var host=document.createElement('section');
+  host.id='cw';
+  host.style.cssText='padding:18px 26px 30px;max-width:1100px';
+  host.innerHTML='<h2 style="font-variant:small-caps;letter-spacing:.05em">Write in Cirth</h2>'
+    +'<p class="cite" id="cwcite">Loading the certar&#8230;</p>'
+    +'<div class="row"><div style="flex:1;min-width:250px">'
+    +'<label for="cwq">text, in the archive’s spelling</label><br>'
+    +'<input id="cwq" style="width:100%;font:16px/1.4 Georgia,serif;padding:8px 10px;'
+    +'border:1px solid #b0a58e;background:#fffdf5" value="balin fundinul" '
+    +'aria-label="text to write in cirth"></div>'
+    +'<div><label for="cwa">arrangement</label><br><select id="cwa" '
+    +'style="font:14px Georgia,serif;padding:8px">'
+    +'<option value="daeron">Angerthas Daeron — the Elvish arrangement</option>'
+    +'<option value="moria">Angerthas Moria — the Dwarves of Moria</option>'
+    +'<option value="erebor">mode of Erebor — the Book of Mazarbul</option>'
+    +'</select></div></div>'
+    +'<div class="out" id="cwout" aria-live="polite"></div>'
+    +'<p class="cite" id="cwwhy"></p>';
+  var a=document.getElementById('lexicon')||document.getElementById('main');
+  (a?a.insertAdjacentElement('beforebegin',host):document.body.appendChild(host));
+
+  var G=null, V=null;
+  Promise.all([
+    fetch('arda_scripts.json').then(function(r){return r.json();}),
+    fetch('arda_cirth.json').then(function(r){return r.json();})
+  ]).then(function(d){
+    G={}; (d[0].cirth||[]).forEach(function(r){ G[String(r.num)]=r; });
+    V={}; (d[1].merged||[]).forEach(function(r){ V[String(r.n)]=r; });
+    document.getElementById('cwcite').innerHTML=
+      '<b>The Cirth, drawn by this archive.</b> Sixty certar, each with the value it carries in '
+      +'each arrangement. <b>' + (d[1].n_upgraded||0) + ' values are cited to Appendix E’s prose '
+      +'and marked <span style="color:#4a6a3a">[C]</span></b>; the rest are read off its plate and '
+      +'marked [I-H] — the shape is Tolkien’s, the reading is ours. '
+      +'<b>' + (d[1].n_plate_prose_disagreements||0) + ' disagree</b> between plate and prose and '
+      +'are shown both ways, unresolved — four of them are Tolkien’s own, since Appendix E says '
+      +'the assignment of s and h “continued to hesitate”. No font is used: these are the '
+      +'archive’s own drawings.';
+    go();
+  }).catch(function(){
+    document.getElementById('cwcite').textContent=
+      'The certar could not be loaded, so nothing was written. That is a failure to ask, not a '
+      +'statement about the Cirth.';
+  });
+
+  /* A LOOKUP, NEVER A SECOND ENGINE. The value table is built by map/gen_cirth.py and merged
+     from the archive's own held data; this walks it. Change a value there and it reaches this
+     page on the next --apply; change it here and it reaches nothing. */
+  function index(arr){
+    var by={};
+    Object.keys(V).forEach(function(n){
+      var v=(V[n].values||{})[arr]; if(!v||!v.value) return;
+      String(v.value).split('/').forEach(function(p){
+        p=p.replace(/\s*\([^)]*\)/,'').replace('*','').trim().toLowerCase();
+        if(p && !by[p]) by[p]={n:n, rec:v};
+      });
+    });
+    return by;
+  }
+
+  function go(){
+    if(!G||!V) return;
+    var arr=document.getElementById('cwa').value, by=index(arr);
+    var s=document.getElementById('cwq').value.toLowerCase();
+    var o=document.getElementById('cwout'), h='', found=0, tot=0, miss={};
+    var DI=['th','ch','dh','ph','mb','nd','ng','mp','nt','nc','kh','sh','zh','ks'];
+    for(var i=0;i<s.length;){
+      var hit=null;
+      for(var d=0;d<DI.length;d++){ if(s.substr(i,2)===DI[d] && by[DI[d]]){ hit=DI[d]; break; } }
+      if(!hit && by[s[i]]) hit=s[i];
+      if(!hit){
+        if(/\s/.test(s[i])){ h+='<div style="width:16px"></div>'; i++; continue; }
+        tot++; miss[s[i]]=1;
+        h+='<div class="cq miss"><svg viewBox="0 0 32 48"></svg><span class="v">'
+          +esc(s[i])+'</span></div>';
+        i++; continue;
+      }
+      tot++; found++;
+      var e=by[hit], row=G[e.n], g=(row&&row.g)||{}, rec=e.rec;
+      var cls='cq'+(rec.conf==='C'?' c':'');
+      var title=(rec.conf==='C'?'[C] '+(rec.cite||''):'[I-H] '+(rec.how||''))
+        +(rec.disagrees_with_prose?' — plate and prose DISAGREE: prose reads “'
+          +rec.disagrees_with_prose.value+'”, both kept':'');
+      h+='<div class="'+cls+'" title="certh '+e.n+' — '+esc(title)+'">'
+        +'<svg viewBox="'+esc(g.vb||'0 0 32 48')+'">'+(g.b||'')+'</svg>'
+        +'<span class="v">'+esc(hit)+'</span></div>';
+      i+=hit.length;
+    }
+    o.innerHTML=h||'<span class="cite">Nothing to write.</span>';
+    var m=Object.keys(miss);
+    document.getElementById('cwwhy').innerHTML=
+      '<b>'+found+' of '+tot+' written.</b> Hover a certh for its number, its confidence and its '
+      +'citation. Green marks a value Appendix E states in PROSE; the rest are read off its plate.'
+      +(m.length?' <b>No certh in this arrangement for:</b> <code>'+esc(m.join(' '))
+        +'</code> — the archive says so rather than substituting a similar shape.':'');
+  }
+  document.getElementById('cwq').addEventListener('input',go);
+  document.getElementById('cwa').addEventListener('change',go);
+})();
+</script>
+</div>
+<script>if("serviceWorker" in navigator)addEventListener("load",function(){
+  navigator.serviceWorker.register("sw.js").catch(function(){});});</script>
+<script src="nav.js"></script><script src="glossary.js" defer></script></body></html>
