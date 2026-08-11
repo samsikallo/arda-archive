@@ -299,3 +299,14 @@ function shim(root){root.querySelectorAll(".chip,.tab,.card[onclick],[data-t],[d
 shim(document);
 new MutationObserver(ms=>ms.forEach(m=>m.addedNodes.forEach(n=>{if(n.nodeType===1)shim(n)}))).observe(document.body,{childList:true,subtree:true});
 })();
+
+// The service worker is registered HERE, not per page: 16 of 38 halls never registered it,
+// 12 of them already in the precache shell. Adversary 689 and DATASET_REGISTER 11 Aug carry
+// the reasoning. RELATIVE path: BASE is a subpath, so "/sw.js" would hit the domain root --
+// and every hall loads THIS file the same relative way, so a nested 404 attempts nothing.
+// The 22 inline registrations stay: same URL and scope, so this is idempotent, and a page
+// that registers itself still works if this file fails to load. Form is index.html's.
+(function(){
+ if(!("serviceWorker" in navigator))return;
+ addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+})();
