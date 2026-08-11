@@ -621,7 +621,17 @@ if(location.hash.includes("tab=xlate"))b.click();
         if(s.substr(i,g.length)===g && M.letters[g]){ hit=g; break; }
       }
       if(!hit && M.letters[ch]) hit=ch;
-      if(hit){ out.push({c:cp(M.letters[hit]),k:'tengwa'}); i+=hit.length; continue; }
+      if(hit){
+        /* THE POSITIONAL RULE, READ FROM THE ENGINE'S TABLE. Quenya has two r-letters -- romen
+           before a vowel, ore elsewhere (Appendix E) -- and this page must not decide that
+           independently. The engine exports the rule; this applies it. */
+        var g=M.letters[hit], P=(M.positional||{})[hit];
+        if(P){
+          var nx=s.charAt(i+hit.length);
+          g = (nx && 'aeiouáéíóú'.indexOf(nx)>=0) ? P.before_vowel : P.otherwise;
+        }
+        out.push({c:cp(g),k:'tengwa'}); i+=hit.length; continue;
+      }
       if(/\s/.test(ch)){ out.push({c:' ',k:'space'}); i++; continue; }
       refused.push([ch,'no cited rule in this mode']); i++;
     }
