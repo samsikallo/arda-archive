@@ -156,6 +156,112 @@ are working panels and moving one is its own change, measured on its own.</p></d
   document.getElementById('cwa').addEventListener('change',go);
 })();
 </script>
+<!-- THE GLOSSER. It says what each word MEANS and does not call that translation.
+     The archive has the lexicon and not the grammar -- Tolkien did not leave one -- and a
+     word-list plus no syntax produces fluent-looking nonsense, which is what gen_tengwar
+     refuses by name when it will not invent a tehta. -->
+<style>
+#gl .w{border-left:3px solid #c9a227;padding:6px 0 6px 11px;margin:10px 0}
+#gl .w b{font-variant:small-caps;letter-spacing:.04em;font-size:16px}
+#gl .miss{border-left-color:#7a3a2a}
+:root[data-theme="dark"] #gl .w{border-left-color:#c9a227!important}
+</style>
+<script>
+(function glosser(){
+  function esc(s){return String(s==null?'':s).replace(/[<>&]/g,function(c){
+    return {'<':'&lt;','>':'&gt;','&':'&amp;'}[c];});}
+  function fold(s){ return (s||'').toLowerCase().normalize('NFC'); }
+  function bare(s){ return (s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').normalize('NFC'); }
+  function shardOf(t){ var x=bare(fold(t)).replace(/[^a-z0-9]/g,'');
+    return ((x.slice(0,2)||'_')+'__').slice(0,2); }
+
+  var host=document.createElement('section');
+  host.id='gl';
+  host.style.cssText='padding:18px 26px 30px;max-width:1100px';
+  host.innerHTML='<h2 style="font-variant:small-caps;letter-spacing:.05em">Gloss a phrase</h2>'
+    +'<p class="cite"><b>This says what each word means. It does NOT translate.</b> '
+    +'The archive holds 35,733 lexical entries and no GRAMMAR — Tolkien did not leave one. '
+    +'Sindarin’s syntax is “shown by example, never stated”; Khuzdul’s “was never given”. '
+    +'A word-list with no syntax would produce fluent-looking nonsense, so this glosses '
+    +'word by word and composes nothing. Each result names whose evidence it rests on, and '
+    +'where the archive and Eldamo read a word differently it shows <b>both</b>.</p>'
+    +'<div style="display:flex;gap:8px;margin:12px 0 4px">'
+    +'<input id="glq" style="flex:1;font:16px/1.4 Georgia,serif;padding:8px 10px;'
+    +'border:1px solid #b0a58e;background:#fffdf5" value="elen síla lúmenn omentielvo" '
+    +'aria-label="phrase to gloss">'
+    +'<button id="glgo" style="font:14px Georgia,serif;padding:8px 16px;border:1px solid #8a7444;'
+    +'background:#221c15;color:#e2cf96;cursor:pointer">Gloss</button></div>'
+    +'<div id="glout"></div>';
+  var a=document.getElementById('lexicon')||document.getElementById('main');
+  (a?a.insertAdjacentElement('beforebegin',host):document.body.appendChild(host));
+
+  var CACHE={};
+  function shard(n){
+    if(CACHE[n]) return Promise.resolve(CACHE[n]);
+    return fetch('lex/'+n+'.json').then(function(r){return r.ok?r.json():[];})
+      .then(function(d){CACHE[n]=d;return d;}).catch(function(){return [];});
+  }
+
+  function readings(e){
+    var out=[];
+    (e.senses||[]).forEach(function(s){ if(s.gloss)
+      out.push({who:'the archive',t:s.gloss,cite:s.cite,speech:s.speech}); });
+    (e.eldamo||[]).forEach(function(x){ if(x.eldamo_gloss)
+      out.push({who:'Eldamo',t:x.eldamo_gloss,url:x.eldamo_url,speech:x.eldamo_speech}); });
+    return out;
+  }
+
+  function go(){
+    var raw=document.getElementById('glq').value.trim();
+    var o=document.getElementById('glout');
+    if(!raw){ o.innerHTML=''; return; }
+    var words=raw.split(/[^A-Za-zÀ-ɏ']+/).filter(function(w){return w.length>0;});
+    if(!words.length){ o.innerHTML='<p class="cite">Nothing to gloss.</p>'; return; }
+    o.innerHTML='<p class="cite">Looking…</p>';
+    Promise.all(words.map(function(w){
+      return shard(shardOf(w)).then(function(rows){
+        var want=bare(fold(w));
+        return {w:w, hits:rows.filter(function(e){return bare(fold(e.form))===want;})};
+      });
+    })).then(function(res){
+      var found=0, h='';
+      res.forEach(function(r){
+        if(!r.hits.length){
+          h+='<div class="w miss"><b>'+esc(r.w)+'</b> <span class="cite">— not in this '
+            +'lexicon. NOT guessed at from a similar spelling; the archive says so exactly.'
+            +'</span></div>';
+          return;
+        }
+        found++;
+        r.hits.slice(0,3).forEach(function(e){
+          var rs=readings(e), url=(e.eldamo||[]).map(function(x){return x.eldamo_url;})
+            .filter(Boolean)[0];
+          var body=rs.map(function(g){
+            return '<div><span class="cite">'+esc(g.who)+':</span> '+esc(g.t)
+              +(g.speech?' <span class="cite">('+esc(g.speech)+')</span>':'')
+              +(g.cite?' <span class="cite">'+esc(g.cite)+'</span>':'')+'</div>';
+          }).join('');
+          if(!rs.length) body='<div class="cite">held, but NO GLOSS RECORDED — a blank is not '
+            +'a meaning, and 5,142 of Eldamo’s entries have none.</div>';
+          if(e.gloss_disagrees) body+='<div class="cite"><b>the two readings differ</b> — both '
+            +'are shown and neither is adopted</div>';
+          h+='<div class="w"><b>'+esc(e.form)+'</b> <span class="cite">'+esc(e.lang||'')+'</span> '
+            +(url?'<a href="'+esc(url)+'" rel="noopener" target="_blank">Eldamo ↗</a>':'')
+            +body+'</div>';
+        });
+      });
+      h+='<p class="cite"><b>'+found+' of '+res.length+' word(s) found.</b> '
+        +'These are GLOSSES, not a translation: they are listed in the order you typed them and '
+        +'nothing has been composed into a sentence. The archive has no syntax for any of '
+        +'Tolkien’s languages because he did not leave one.</p>';
+      o.innerHTML=h;
+    });
+  }
+  document.getElementById('glgo').addEventListener('click',go);
+  document.getElementById('glq').addEventListener('keydown',function(e){
+    if(e.key==='Enter') go(); });
+})();
+</script>
 </div>
 <script>if("serviceWorker" in navigator)addEventListener("load",function(){
   navigator.serviceWorker.register("sw.js").catch(function(){});});</script>
