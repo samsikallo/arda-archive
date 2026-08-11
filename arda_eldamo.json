@@ -24,11 +24,6 @@
    "word": "airë"
   },
   {
-   "archive": "Elves, 'the speakers'",
-   "eldamo": "female Elf — a homograph, not a disagreement; see the link record",
-   "word": "quendi"
-  },
-  {
    "archive": "jewel of Fëanor",
    "eldamo": "Great Jewel",
    "word": "Silmaril"
@@ -759,15 +754,16 @@
    "word": "pella"
   },
   {
-   "agree": false,
-   "ambiguous": false,
+   "agree": null,
+   "ambiguous": true,
    "archive_gloss": "Elves, 'the speakers'",
    "candidates": 1,
    "eldamo_gloss": "female Elf — A HOMOGRAPH, NOT A DISAGREEMENT: Eldamo's entry is the ner/nis material in Morgoth's Ring, where quende/quendi is the feminine singular; the archive's gloss is the plural Quendi of App F. Both are Tolkien's, for different words. candidates=1 measures how many Eldamo entries share the string, and cannot see an ambiguity inside the word",
    "eldamo_word": "quendi",
    "lang": "q",
    "url": "https://eldamo.org/content/words/word-3395915147.html",
-   "word": "quendi"
+   "word": "quendi",
+   "homograph": "both glosses are attested and neither is wrong: the archive's is the plural Quendi 'the Speakers' (App F, HoME XI), Eldamo's is the feminine singular quende/quendi 'elvish woman' from the ner/nis material in Morgoth's Ring. The ambiguity is inside the word, not across candidates, which is why candidates=1 did not catch it."
   },
   {
    "agree": true,
@@ -1562,10 +1558,10 @@
    "word": "ello"
   }
  ],
- "n_ambiguous": 17,
+ "n_ambiguous": 18,
  "n_archive_elvish": 144,
  "n_eldamo_words": 35900,
- "n_gloss_disagreements": 24,
+ "n_gloss_disagreements": 23,
  "n_linked": 130,
  "n_roots_ambiguous": 14,
  "n_roots_duplicate": 24,
