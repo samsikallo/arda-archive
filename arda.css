@@ -56,7 +56,26 @@ a:focus-visible{outline:2px solid var(--a-gold) !important;}
    by `map/houseground_check.py`, which also refuses a new hall that declares neither.
 
    Every future hall is now right by default, which is the only fix that survives the next hall
-   built by someone tired at four in the morning. */
+   built by someone tired at four in the morning.
+
+   [REPAIRED 12 Aug. An END-COMMENT MARKER sat at the end of the line above, closing this comment
+   ten lines early. Everything between there and the next marker was RAW TEXT to the parser, and
+   the error recovery swallowed the zero-specificity ground rule that follows -- so THE ARCHIVE'S
+   HOUSE GROUND WAS NOT BEING APPLIED AT ALL. Measured in a browser over http, not read: 92 rules
+   parsed and the ground rule absent; with the stray marker removed, 93 and present.
+   registers.html was rendering on browser defaults -- Times New Roman, margin 8px, transparent --
+   which is the exact failure the paragraph above says already cost this archive once.
+
+   AND THE GUARD REPORTED THE OPPOSITE THROUGHOUT. map/houseground_check.py printed "arda.css net
+   present" and exited 0, because it tested the STYLESHEET'S TEXT with a regex instead of asking a
+   browser for cssRules. A grep over source is evidence about the source and is not evidence about
+   the program; here the two disagreed for as long as the fault existed.
+
+   AND WRITING THIS NOTE REINTRODUCED THE FAULT ONCE, which is why no delimiter appears in it: my
+   first draft quoted the marker literally to explain it, and a marker inside a comment closes the
+   comment. The browser said 92 again and I had to be told twice by the same instrument. NEVER PUT
+   EITHER COMMENT DELIMITER INSIDE A CSS COMMENT, not even in quotes, not even to describe one.]
+
    AND IT IS NARROWED TO GROUND AND INK ONLY -- background, colour, font. THE FIRST VERSION OF THIS
    BLOCK ALSO CARRIED `display:flex`, `padding` AND `border-bottom`, AND THAT WAS WRONG in a way no
    amount of reading the CSS would have shown me. Zero specificity does not mean "applies only to
