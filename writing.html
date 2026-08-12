@@ -392,6 +392,135 @@ are working panels and moving one is its own change, measured on its own.</p></d
   document.getElementById('twf').addEventListener('change',go);
 })();
 </script>
+<!-- THE KEYBOARD CHANGER. Tengwar and cirth, drawn from arda_scripts.json -- the
+     archive's OWN 106 glyphs, not a font. Neither OFL face carries the Angerthas: Eldamar has
+     10 codepoints in the CSUR cirth block and Alcarin 12, against SIXTY certh. So a
+     font-rendered keyboard could not have offered the runes at all. -->
+<style>
+#kb .keys{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+#kb .key{width:46px;height:58px;border:1px solid #b0a58e;background:#fffdf5;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;padding:2px}
+#kb .key:hover,#kb .key:focus{border-color:#8a7444;background:#f6efd8;outline:2px solid #c9a227}
+#kb .key svg{width:100%;height:100%}
+#kb .key svg path{fill:#3a3226}
+#kb textarea{width:100%;min-height:70px;font:15px Georgia,serif;padding:8px;
+  border:1px solid #b0a58e;background:#fffdf5}
+:root[data-theme="dark"] #kb .key{background:#241f18!important;border-color:#5a4c32!important}
+:root[data-theme="dark"] #kb .key svg path{fill:#e8dcc0!important}
+:root[data-theme="dark"] #kb textarea{background:#241f18!important;color:#e8dcc0!important;
+  border-color:#5a4c32!important}
+</style>
+<script>
+(function keyboard(){
+  function esc(s){return String(s==null?'':s).replace(/[<>&"]/g,function(c){
+    return {'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c];});}
+
+  var host=document.createElement('section');
+  host.id='kb';
+  host.style.cssText='padding:18px 26px 30px;max-width:1100px';
+  host.innerHTML='<h2 style="font-variant:small-caps;letter-spacing:.05em">The keyboard</h2>'
+    +'<p class="cite" id="kbcite">Loading the glyphs&#8230;</p>'
+    +'<div style="display:flex;gap:10px;align-items:flex-end;flex-wrap:wrap;margin:8px 0">'
+    +'<div><label for="kbs" style="font-size:12px;color:#7a6a50">script</label><br>'
+    +'<select id="kbs" style="font:14px Georgia,serif;padding:8px">'
+    +'<option value="teng">Tengwar — the 40 letters</option>'
+    +'<option value="cirth">Cirth — the Angerthas, 60 certh</option>'
+    +'</select></div>'
+    +'<button id="kbclr" style="font:14px Georgia,serif;padding:8px 14px;border:1px solid #8a7444;'
+    +'background:#221c15;color:#e2cf96;cursor:pointer">Clear</button></div>'
+    +'<div class="keys" id="kbkeys" role="group" aria-label="on-screen keyboard"></div>'
+    +'<label for="kbout" style="font-size:12px;color:#7a6a50">what you have typed</label>'
+    +'<textarea id="kbout" aria-label="typed glyphs"></textarea>'
+    +'<p class="cite" id="kbnote"></p>';
+  var a=document.getElementById('tw')||document.getElementById('lexicon')
+       ||document.getElementById('main');
+  (a?a.insertAdjacentElement('afterend',host):document.body.appendChild(host));
+
+  var S=null, buf=[], loading=null;
+  /* ── LAZY, AND THE BUDGET IS WHY ─────────────────────────────────────────────────────────
+     arda_scripts.json is 215 KB and languages.html did NOT fetch it before this panel existed.
+     Loading it on page load put the hall 7,589 gzipped bytes over its reader-weight ceiling --
+     and budget_check refused, correctly. The owner's 31 July ruling is that a performance
+     budget measures WHAT A READER PAYS, and a reader who never opens the keyboard should pay
+     nothing for it.
+
+     THE FIX IS NOT A HIGHER CEILING. Ruling 5: "a page fetches what it needs and no more."
+     So the glyphs are fetched on the FIRST INTERACTION with this panel, once, and cached. */
+  function load(){
+    if(S) return Promise.resolve(S);
+    if(loading) return loading;
+    document.getElementById('kbcite').textContent='Fetching the glyphs…';
+    loading=fetch('arda_scripts.json').then(function(r){return r.json();}).then(function(d){
+    S=d;
+    document.getElementById('kbcite').innerHTML=
+      '<b>'+(d.teng||[]).length+' tengwar and '+(d.cirth||[]).length+' certh, drawn from the '
+      +'archive’s own outlines</b> — not from a font. Neither of the archive’s two OFL tengwar '
+      +'faces carries the Angerthas (10 and 12 codepoints against sixty certh), so the runes '
+      +'exist here only because the archive drew them. Each value is marked '
+      +'<span class="tag I">[I-H]</span> in the data: Appendix E prints its tables as IMAGES in '
+      +'the edition this archive holds, so the values were read off the plate rather than out of '
+      +'the prose. <b>Sarati is not offered</b> — the archive holds its scholarship but not its '
+      +'glyphs, and a keyboard with no glyphs is a row of empty boxes.';
+    draw();
+    return d;
+  }).catch(function(){
+    document.getElementById('kbcite').textContent=
+      'The glyphs could not be loaded, so no keyboard was drawn. This is not a statement about '
+      +'the tengwar — it is a failure to ask.';
+  });
+    return loading;
+  }
+  document.getElementById('kbcite').innerHTML=
+    '<b>40 tengwar and 60 certh, drawn from the archive’s own outlines</b> — not from a font. '
+    +'Neither OFL face carries the Angerthas (10 and 12 codepoints against sixty certh). '
+    +'<button id="kbload" style="font:13px Georgia,serif;padding:5px 12px;border:1px solid '
+    +'#8a7444;background:#221c15;color:#e2cf96;cursor:pointer">Open the keyboard</button> '
+    +'— the glyph file is 215 KB and is fetched only when you ask for it, so a reader who does '
+    +'not want a keyboard does not pay for one.';
+  document.getElementById('kbload').addEventListener('click',load);
+
+  function label(r,kind){
+    if(kind==='teng') return (r.n||r.k||'')+(r.q?' — '+r.q:'');
+    return 'certh '+(r.num||'')+(r.d?' — '+r.d:'');
+  }
+
+  function draw(){
+    /* AND THE FUNCTION REFUSES TOO. Guarding every caller is a list that grows; guarding the
+       function is the thing itself. Both, because the caller-guard keeps the UX right and this
+       keeps a future caller from reintroducing the throw. */
+    if(!S) return;
+    var kind=document.getElementById('kbs').value;
+    var rows=(S[kind]||[]).filter(function(r){return r.g&&r.g.b;});
+    var box=document.getElementById('kbkeys');
+    box.innerHTML=rows.map(function(r,i){
+      var t=label(r,kind);
+      return '<button class="key" type="button" data-i="'+i+'" title="'+esc(t)+'" '
+        +'aria-label="'+esc(t)+'"><svg viewBox="'+esc(r.g.vb||'0 0 32 48')+'" '
+        +'aria-hidden="true">'+r.g.b+'</svg></button>';
+    }).join('');
+    box.querySelectorAll('.key').forEach(function(b){
+      b.addEventListener('click',function(){
+        var r=rows[+b.dataset.i];
+        buf.push({svg:r.g,label:label(r,kind)});
+        document.getElementById('kbout').value=buf.map(function(x){return x.label;}).join(' · ');
+        document.getElementById('kbnote').innerHTML=
+          '<b>'+buf.length+' glyph'+(buf.length>1?'s':'')+' picked.</b> The box names each one '
+          +'rather than showing it, because a NAME is what a reader can search, cite and check — '
+          +'and this is a keyboard, not a transcriber: nothing here has been checked against a '
+          +'mode. Use the writing tool above for that.';
+      });
+    });
+    document.getElementById('kbnote').textContent=rows.length+' glyph(s) in this script.';
+  }
+  document.getElementById('kbs').addEventListener('change',function(){buf=[];
+    if(S) draw(); else load();
+    document.getElementById('kbout').value='';});
+  /* `if(S)` guards the lazy load, as the kbs handler above does: Clear before Load threw
+     "Cannot read properties of null (reading 'teng')". LORE_QUEUE 774. Do not remove. */
+  document.getElementById('kbclr').addEventListener('click',function(){buf=[];
+    document.getElementById('kbout').value='';if(S) draw();});
+})();
+</script>
 </div>
 <script>if("serviceWorker" in navigator)addEventListener("load",function(){
   navigator.serviceWorker.register("sw.js").catch(function(){});});</script>
