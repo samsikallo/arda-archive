@@ -7,10 +7,10 @@
 "C?": "NOT YET CHECKED against the corpus. A debt, not a verdict."
 },
 "marker_counts": {
-"C": 69,
-"C?": 51,
+"C": 71,
+"C?": 48,
 "I-L": 21,
-"C/?": 15
+"C/?": 16
 },
 "prompts": [
 {
@@ -470,8 +470,8 @@
 "traits": [
 {
 "t": "a Guard of the gate ROBED IN BLACK — the corpus robes them",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "LotR V.1 — 'Upon the black surcoats were embroidered in white a tree blossoming like snow beneath a silver crown and many-pointed stars'. THE SEARCH: 'robed in black' occurs ONCE in 49 volumes and is BORLAS at a gate in The New Shadow, HoME XII — a false positive of the phrase the sentence was written from. The claim holds on 'black surcoats', not on the words that were used to support it"
 },
 {
 "t": "it does not mail them. The helm is “of strange shape, high-crowned",
@@ -939,8 +939,8 @@
 },
 {
 "t": "of the wild hillmen and herd-folk — the corpus describes NO Dunlending war-gear beyond this",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "THE SILENCE HOLDS, AND IT IS NOW A SEARCHED ONE: 'Dunlendings', 'Dunlending', 'hillmen of Dunland' and 'wild hillmen' return language, genealogy and history across the corpus and NO garment, mail, helm, shield or weapon. The nearest is War of the Ring 'the hill-men were hewn down, or fled leaving their ram upon the ground' — a siege engine, not a kit"
 },
 {
 "t": "and face-paint in Tolkien is Haradrim",
@@ -1179,8 +1179,8 @@
 },
 {
 "t": "the corpus gives the Olog-hai NO surface at all",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "TOO STRONG AS WRITTEN, and this file already held what qualifies it. LotR App. F gives the Olog-hai 'a fell race, strong, agile, fierce and cunning, but harder than stone' — a HARDNESS, quoted in this very kit's other citation. What the corpus withholds is COLOUR and TEXTURE, and 'no surface at all' overstates that. THE SEARCH: 'black troll' and 'troll-skin' are absent from all 49 volumes; the other 'harder than stone' is Sam's Troll Song, another subject"
 },
 {
 "t": "so leave the skin unclaimed",
