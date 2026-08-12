@@ -650,6 +650,16 @@
    "source": "https://unifoundry.com/unifont/",
    "renamed": "RENAMED from 'Unifont CSUR' to 'Arda CSUR' because it is a MODIFIED version. The OFL requires that of derivatives, and it also stops a reader mistaking a 304-glyph subset for the 11,691-glyph original.",
    "why_it_matters": "the archive had NO Cirth and NO Sarati font. This is the only freely-licensed source of either that could be verified, and its licence was read from the file rather than taken from a third party."
+  },
+  {
+   "file": "fonts/TengwarTelcontar.woff2",
+   "what": "Tengwar Telcontar 0.09 — 424 glyphs, 112 in the ConScript tengwar block, 49 in the Cirth block, 0 Sarati",
+   "hand": "Johan Winge (2005-2010) and J. 'Mach' Wust (2009-2010)",
+   "licence": "GNU General Public License — BARE GPL, with NO font exception",
+   "licence_read_from": "the font's own name table, ID 13 and 14; second witness the AUR PKGBUILD declaring GPL3. Full notice ships beside it as fonts/TengwarTelcontar-LICENCE.txt",
+   "source": "the Free Tengwar Font Project; this copy taken from a mirrored page rather than from SourceForge, whose release ZIPs sit behind a Cloudflare interstitial",
+   "ruled": "the owner ruled 12 August 2026 that it MAY BE SERVED. Recorded, not re-litigated.",
+   "note": "the absence of a font exception is unusual and is stated in the licence file rather than smoothed over: a sibling font in the same mirror spells one out in full. GPL compliance asks that the notice travel with the font, the licence be named and linked, and the source remain obtainable upstream."
   }
  ],
  "pending_provenance": []
