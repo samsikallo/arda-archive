@@ -46,6 +46,9 @@ are working panels and moving one is its own change, measured on its own.</p></d
 #cw .cq{display:flex;flex-direction:column;align-items:center;gap:2px}
 #cw .cq svg{width:26px;height:39px}
 #cw .cq .v{font:11px Georgia,serif;color:#7a6a50}
+#cw .cq .cp{font-family:'ArdaCSUR',serif;font-size:22px;line-height:1;user-select:text}
+#cw .cq.weak .cp{opacity:.55}
+#cw .cq.weak sup{color:#7a3a2a;font-weight:bold}
 #cw .cq.c .v{color:#4a6a3a;font-weight:bold}
 #cw .cq.miss{opacity:.45}
 #cw label{font-size:12px;color:#7a6a50}
@@ -78,13 +81,18 @@ are working panels and moving one is its own change, measured on its own.</p></d
   var a=document.getElementById('lexicon')||document.getElementById('main');
   (a?a.insertAdjacentElement('beforebegin',host):document.body.appendChild(host));
 
-  var G=null, V=null;
+  var G=null, V=null, CP={}, WEAKSET={};
   Promise.all([
     fetch('arda_scripts.json').then(function(r){return r.json();}),
-    fetch('arda_cirth.json').then(function(r){return r.json();})
+    fetch('arda_cirth.json').then(function(r){return r.json();}),
+    fetch('arda_cirth_codepoints.json').then(function(r){return r.ok?r.json():{};})
+      .catch(function(){return {};})
   ]).then(function(d){
     G={}; (d[0].cirth||[]).forEach(function(r){ G[String(r.num)]=r; });
     V={}; (d[1].merged||[]).forEach(function(r){ V[String(r.n)]=r; });
+    /* THE MAPPING IS OPTIONAL BY DESIGN. If it is absent the panel still draws every certh --
+       a reader loses the ability to copy, not the ability to read. */
+    CP=(d[2]&&d[2].mapping)||{}; (((d[2]&&d[2].weak)||[])).forEach(function(n){WEAKSET[n]=1;});
     document.getElementById('cwcite').innerHTML=
       '<b>The Cirth, drawn by this archive.</b> Sixty certar, each with the value it carries in '
       +'each arrangement. <b>' + (d[1].n_upgraded||0) + ' values are cited to Appendix E’s prose '
@@ -139,9 +147,17 @@ are working panels and moving one is its own change, measured on its own.</p></d
       var title=(rec.conf==='C'?'[C] '+(rec.cite||''):'[I-H] '+(rec.how||''))
         +(rec.disagrees_with_prose?' — plate and prose DISAGREE: prose reads “'
           +rec.disagrees_with_prose.value+'”, both kept':'');
-      h+='<div class="'+cls+'" title="certh '+e.n+' — '+esc(title)+'">'
+      /* THE CODEPOINT BESIDE THE DRAWING, NEVER INSTEAD OF IT. The archive's own certh is the
+         primary rendering; the codepoint is offered so a reader can SELECT and COPY. They are not
+         asserted to be the same thing -- the mapping is DERIVED (see gen_cirth_codepoints.py) and
+         six certh are marked WEAK, which is printed rather than smoothed over. */
+      var cp=(CP[e.n]||null), weak=cp&&WEAKSET[e.n];
+      h+='<div class="'+cls+(weak?' weak':'')+'" title="certh '+e.n+' — '+esc(title)
+        +(cp?' · '+esc(cp)+(weak?' (WEAK: this codepoint is the least corroborated part of a '
+          +'derived mapping)':''):' · no codepoint in the mapping')+'">'
         +'<svg viewBox="'+esc(g.vb||'0 0 32 48')+'">'+(g.b||'')+'</svg>'
-        +'<span class="v">'+esc(hit)+'</span></div>';
+        +(cp?'<span class="cp">'+String.fromCodePoint(parseInt(cp.replace('U+',''),16))+'</span>':'')
+        +'<span class="v">'+esc(hit)+(weak?'<sup>?</sup>':'')+'</span></div>';
       i+=hit.length;
     }
     o.innerHTML=h||'<span class="cite">Nothing to write.</span>';
@@ -296,7 +312,7 @@ are working panels and moving one is its own change, measured on its own.</p></d
     +'padding:8px;width:100%">'
     +'<option value="face-eldamar">Eldamar 1.1 — Måns (Björkman) Berg, OFL-1.1</option>'
     +'<option value="face-alcarin">Alcarin Tengwar — Toshi Omagari, OFL-1.1</option>'
-    +'<option value="face-ardacsur">Arda CSUR — Unifont contributors, OFL-1.1 &amp; GPL+FE (all 128 tengwar)</option>'
+    +'<option value="face-ardacsur">Arda CSUR — Unifont contributors, OFL-1.1</option>'
     +'</select></div></div>'
     +'<div class="out face-eldamar" id="twout" aria-live="polite"></div>'
     +'<p class="cite" id="twwhy"></p>';
