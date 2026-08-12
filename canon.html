@@ -42,9 +42,18 @@ kbd{font:12px monospace;background:#e8dfc4;padding:1px 5px;border:1px solid var(
 <div class="limits">
 <b>What this can and cannot tell you.</b>
 It searches the archive's <i>corpus</i> — 99 volumes, tiered, listed in the Corpus hall — for the
-words of your phrase, and reports every line where <b>all of them occur together</b>.
+words of your phrase, and reports every place where <b>all of them occur on one line or on two
+neighbouring lines</b>.
 <br><br>
-<b>A hit means the words share a line, not that they sit side by side.</b> The index records where
+<b>Two lines, because this corpus is hard-wrapped.</b> 74 of its 99 volumes break at about 73
+characters, so a long phrase is usually split. Measured over 12,000 sampled phrases: a nine-word
+phrase falls on a single line only <b>42%</b> of the time, and within two lines <b>88%</b> — so a
+one-line search missed the majority of them. It missed Frodo's own greeting in
+<i>The Lord of the Rings</i>, where “a star shines on the hour” ends a line and “of our meeting”
+begins the next. Every answer says how many of its hits sit on one line and how many are carried
+across two.
+<br><br>
+<b>A hit means the words are close together, not that they sit side by side.</b> The index records where
 each word is, to the line; it does not record their order within it. So a hit is strong evidence
 and not a quotation, and this page will not pretend otherwise.
 <br><br>
@@ -138,29 +147,85 @@ function ask(){
         'That means these 99 volumes do not have the word — not that Tolkien never wrote it.</div>';
       return;
     }
-    var sets=lists.map(function(l){var s={};l.forEach(p=>s[p[0]+':'+p[1]]=1);return s;});
-    var keep=Object.keys(sets[0]).filter(k=>sets.every(s=>s[k]));
+    /* ── THE WINDOW IS TWO LINES, BECAUSE THE CORPUS IS HARD-WRAPPED ──────────────────────────
+       This required all terms on ONE line and so lost most long phrases: 74 of 99 volumes break
+       at ~73 chars, and a nine-word phrase falls on one line only 41.7% of the time (measured,
+       12,000 sampled phrases per length). It missed Frodo's greeting in The Lord of the Rings,
+       answering from four secondary volumes instead. Two lines takes nine words to 87.9%.
+       Query-side only -- the postings already carry line numbers, nothing was reindexed.
+       Full measurement and the two citation faults found with it: CLAUDE.md, 12 Aug. */
+    var SPAN=2;
+    var byv=lists.map(function(l){
+      var m={}; l.forEach(function(p){ (m[p[0]]=m[p[0]]||{})[p[1]]=1; }); return m; });
+    var keep=[], tight=0;
+    Object.keys(byv[0]).forEach(function(v){
+      Object.keys(byv[0][v]).forEach(function(ln){
+        var L=+ln;
+        /* every other term must have a line inside SOME window of SPAN consecutive lines that
+           also contains L -- anchored on L rather than centred, so the window never quietly
+           becomes 2*SPAN-1 wide. */
+        for(var s=L-SPAN+1; s<=L; s++){
+          var ok=true, hi=L, lo=L;
+          for(var t=1;t<byv.length;t++){
+            var found=-1;
+            for(var y=s;y<s+SPAN;y++){ if(byv[t][v]&&byv[t][v][y]){ found=y; break; } }
+            if(found<0){ ok=false; break; }
+            if(found>hi)hi=found; if(found<lo)lo=found;
+          }
+          /* THE SPAN, NOT THE ANCHOR. Reporting only the anchor term's line is accurate and
+             still misleading: for Frodo's greeting the anchor is "meeting" on 4170, while
+             "star shines on the hour" is on 4169, so a reader sent to 4170 finds the tail of
+             the sentence and not its head. A citation should name where the evidence IS. */
+          if(ok){ keep.push(v+':'+lo+(hi>lo?'-'+hi:'')); if(hi===lo) tight++; break; }
+        }
+      });
+    });
     if(!keep.length){
-      out.innerHTML='<div class="verdict no">Every word is attested, but never on one line.</div>'+
+      out.innerHTML='<div class="verdict no">Every word is attested, but never close together.</div>'+
         '<div class="cite">Searched on <b>'+chosen.map(esc).join('</b>, <b>')+'</b>. '+
-        'Each appears in this corpus; no single line carries all of them together.</div>';
+        'Each appears in this corpus; no line, and no pair of neighbouring lines, carries all of '+
+        'them together.</div>';
       return;
     }
     var byVol={};
-    keep.forEach(function(k){var p=k.split(':');(byVol[p[0]]=byVol[p[0]]||[]).push(+p[1]);});
+    /* +1 BECAUSE THE INDEX IS 0-BASED AND EVERY READER IS NOT. `enumerate` starts at zero;
+       grep, sed, editors and browsers all start at one. This page printed the raw index, so a
+       reader who took a citation to the text landed one line short of it -- a SECOND and
+       independent off-by-one sitting underneath the form-feed drift repaired in
+       gen_corpus_index.py the same day. Two wrongs in the same number, and neither was visible
+       from inside the system: every check compared the index against itself. */
+    /* +1 BECAUSE THE INDEX IS 0-BASED AND EVERY READER IS NOT. `enumerate` starts at zero;
+       grep, sed, editors and browsers all start at one. This page printed the raw index, so a
+       reader who took a citation to the text landed one line short of it -- a SECOND and
+       independent off-by-one sitting underneath the form-feed drift repaired in
+       gen_corpus_index.py the same day. Two wrongs in the same number, and neither was visible
+       from inside the system: every check compared the index against itself. */
+    keep.forEach(function(k){
+      var p=k.split(':'), r=p[1].split('-');
+      (byVol[p[0]]=byVol[p[0]]||[]).push(r.length>1 ? (+r[0]+1)+'–'+(+r[1]+1) : String(+r[0]+1));
+    });
     var vols=Object.keys(byVol).sort((a,b)=>byVol[b].length-byVol[a].length);
     var h='<div class="verdict">Attested — all '+chosen.length+' searched word'+
           (chosen.length>1?'s occur':' occurs')+' together on <b>'+keep.length+
           '</b> line'+(keep.length>1?'s':'')+', in <b>'+vols.length+'</b> volume'+
           (vols.length>1?'s':'')+'.</div>'+
           '<div class="cite">Searched on <b>'+chosen.map(esc).join('</b>, <b>')+'</b>'+
-          (terms.length>chosen.length?' — the rarest of your '+terms.length+' words':'')+'.</div>';
+          (terms.length>chosen.length?' — the rarest of your '+terms.length+' words':'')+'. '+
+          /* WHICH KIND OF HIT, NEVER JUST HOW MANY. A phrase split across two lines is weaker
+             evidence than one held on a single line, and the reader is told the split rather
+             than left to assume the stronger reading. */
+          '<b>'+tight+'</b> of these sit entirely on one line; the rest are carried across two '+
+          'neighbouring lines, which this corpus does constantly — 74 of its 99 volumes are '+
+          'hard-wrapped at about 73 characters, so a phrase of nine words falls on a single '+
+          'line only 42% of the time.</div>';
     vols.forEach(function(v){
       var vol=MAN.volumes[+v]||{file:'volume '+v};
-      var lines=byVol[v].sort((a,b)=>a-b);
+      /* SORT ON THE LEADING NUMBER. These are now strings -- "4169" or "4169–4170" -- and the
+         old `(a,b)=>a-b` yields NaN on the ranged ones, which leaves the order to chance. */
+      var lines=byVol[v].sort((a,b)=>parseInt(a,10)-parseInt(b,10));
       h+='<div class="hit"><b>'+esc(vol.file.replace(/^t\d_/,'').replace(/_/g,' ').replace(/\.txt$/,''))+
-         '</b> <span class="vol">'+lines.length+' line'+(lines.length>1?'s':'')+
-         ' — '+esc(vol.file)+', line'+(lines.length>1?'s':'')+' '+
+         '</b> <span class="vol">'+lines.length+' place'+(lines.length>1?'s':'')+
+         ' — '+esc(vol.file)+', '+(lines.length>1?'lines ':'line ')+
          lines.slice(0,12).join(', ')+(lines.length>12?', …':'')+'</span></div>';
     });
     out.innerHTML=h;
