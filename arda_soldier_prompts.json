@@ -7,10 +7,10 @@
 "C?": "NOT YET CHECKED against the corpus. A debt, not a verdict."
 },
 "marker_counts": {
-"C": 60,
-"C?": 61,
+"C": 64,
+"C?": 56,
 "I-L": 21,
-"C/?": 14
+"C/?": 15
 },
 "prompts": [
 {
@@ -818,8 +818,8 @@
 "traits": [
 {
 "t": "stout Dwarf in a hauberk of steel mail hanging to the knee",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "Hobbit XVII — 'Each one of his folk was clad in a hauberk of steel mail that hung to his knees'"
 },
 {
 "t": "legs covered in hose of a FINE AND FLEXIBLE METAL MESH, an iron cap, iron-shod feet",
@@ -828,23 +828,23 @@
 },
 {
 "t": "beard forked and plaited into the belt",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "Hobbit XVII — 'Their beards were forked and plaited and thrust into their belts'"
 },
 {
 "t": "a heavy two-handed mattock",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "Hobbit XVII — 'In battle they wielded heavy two-handed mattocks'. IN THE CORPUS BUT OF ANOTHER SUBJECT: the mattock hit a raw matcher offers first is BoLT II's Gondolindrim, 'axes two-headed like mattocks' — a different people in a different Age"
 },
 {
 "t": "a short broad sword and a round shield slung at the back",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "Hobbit XVII — 'each of them had also a short broad sword at his side and a roundshield slung at his back'"
 },
 {
 "t": "Dáin's grim iron-clad heavy infantry",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the GRIM AND THE IRON only: Hobbit XVII — 'Their caps were of iron and they were shod with iron, and their faces were grim'. 'Heavy infantry' is the archive's own framing and no corpus phrase carries it"
 }
 ]
 },
