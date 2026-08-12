@@ -1437,5 +1437,13 @@
     "held": false
    }
   }
+ ],
+ "supersedes": [
+  {
+   "newer": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
+   "older": "t1_the_letters_of_j_r_r_tolkien.txt",
+   "work": "The Letters of J.R.R. Tolkien",
+   "note": "TWO EDITIONS OF ONE BOOK, not two books. The 2023 revision is the CITATION OF RECORD; the 1981 text stays on the shelf as a WITNESS to what the revision changed, which is a different question from what Tolkien wrote. Declared 12 Aug because attrib_check went red the hour the complete edition landed: five spans bound to 1981 began verifying in the revision too, both tier 1, and the guard read that as a choice among rival sources. It is not one, and the hierarchy is not the only thing that speaks here. ANY better edition of a book already held will produce that finding once per shared passage, so this is a data row rather than a special case in a guard."
+  }
  ]
 }
