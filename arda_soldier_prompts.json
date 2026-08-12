@@ -7,10 +7,10 @@
 "C?": "NOT YET CHECKED against the corpus. A debt, not a verdict."
 },
 "marker_counts": {
-"C": 79,
-"C/?": 33,
-"I-L": 31,
-"C?": 13
+"C": 80,
+"C/?": 35,
+"I-L": 35,
+"C?": 6
 },
 "prompts": [
 {
@@ -249,8 +249,8 @@
 "traits": [
 {
 "t": "broad Dwarf in heavy dwarf-mail to the knee",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the MAIL IS THIS PEOPLE'S OWN INVENTION and the LENGTH IS ANOTHER AGE'S: Silm 10 — 'in the making of mail of linked rings, which was first contrived by the smiths of Belegost, their work had no rival'. TO THE KNEE is Hobbit XVII, of DAIN'S IRON HILLS folk — Third Age Dwarves of Durin's line, not First Age Belegost — and HEAVY is the archive's"
 },
 {
 "t": "a great mask hideous to look upon covering the face, a great war-axe, dark harness, First Age craftsmanship",
@@ -297,8 +297,8 @@
 },
 {
 "t": "swart hide and a snarling fanged face",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED FOR ORCS, and the three hits are three different wrong subjects: 'Indrafangs' is a DWARF-name, the Longbeards of Belegost; 'a fanged peak' is THANGORODRIM; 'white fangs' are GOLLUM'S. Letters #210 gives the orc face as 'squat, broad, flat-nosed, sallow-skinned' and says nothing of fangs"
 },
 {
 "t": "in the ragged raiment of Angband",
@@ -780,8 +780,8 @@
 },
 {
 "t": "founded on the Noldorin survivors of Eregion",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "THE FOUNDING IS EXACT AND THE PEOPLE ARE THE ARCHIVE'S READING: UT — 'Elrond was able to extricate himself, but he was forced away northwards, and it was at that time [1697] that he established a refuge and stronghold at Imladris', and 'many fled to swell Elrond's host to the northward'. BUT the corpus's ONE explicit statement about where Eregion's survivors went names LORIEN — NoME, 'Lorien, where many of the survivors of Eregion had taken refuge'"
 },
 {
 "t": "no arms and no device are recorded",
@@ -1021,8 +1021,8 @@
 },
 {
 "t": "disciplined eastern heavy infantry",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED, ON THIS KIT'S OWN GOVERNING FINDING one line below: the corpus gives the Easterlings no armour, helm or shield beyond their axes, so neither 'heavy' nor 'disciplined' has a witness. LotR V.6 gives 'Easterlings with axes' and nothing about their order"
 }
 ]
 },
@@ -1035,18 +1035,18 @@
 "traits": [
 {
 "t": "Easterling chieftain in bronze-scaled armour and a helm",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED: 'bronze-scaled' is absent from all 49 volumes. HoME XII says only that these Men were 'better armed' and gives no armour, and this file's own Easterling kits already record that the corpus gives their people no armour, helm or shield beyond their axes"
 },
 {
 "t": "a long lance and a curved sword, driving-gauntlets",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED: 'driving-gauntlets' and a Wainrider lance are absent from all 49 volumes, and the curved swords the corpus does name are ORCS' — kit_ulfang's finding, one kit away"
 },
 {
 "t": "charioteer-lord of the eastern confederacies",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "BOTH HALVES, IN THE RIGHT SUBJECT: LotR App. A — 'The Wainriders were a people, OR A CONFEDERACY OF MANY PEOPLES, that came from the East'; HoME XII — 'Men out of the East appeared of a new sort, stronger, better armed, journeying in huge wains, and FIGHTING IN CHARIOTS'"
 }
 ]
 },
