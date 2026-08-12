@@ -416,10 +416,10 @@
    "words": 105597
   },
   {
-   "file": "The Letters of J. R. R. Tolkien (Revised and Expanded Edition).epub",
+   "file": "The Letters of J. R. R. Tolkien (Revised and Expanded Edition).pdf",
    "tier": 1,
    "attribution": "ed. Humphrey Carpenter with Christopher Tolkien; revised Hammond & Scull (2023)",
-   "note": "PARTIAL. The file is an excerpt, not the whole book: it carries the front matter, the introduction, and the letters from 1 to 42 — among them thirteen never printed in 1981 (8a, 8b, 8c, 11a, 11b, 11c, 15a, 15b, 18a, 36a, 36b, 38a, 40a). THOSE THIRTEEN ARE THE NEW LETTERS WHOSE TEXT IS CARRIED, AND THE LIST OF NEW LETTERS IN THIS RANGE DOES NOT END THERE: 42a, 42b and 42c (all To Christopher Tolkien) stand in the contents and their TEXT IS NOT HERE — measured, contents-style 2 and body-style 0 apiece, against 2 and 1 for 8a and 40a. So the new-letter list ends at 40a FOR TEXT and at 42c FOR EXISTENCE. Its table of contents, AND THE ARCHIVE CAN NOW NAME AT LEAST 170 OF THE ADDED ONES ACROSS LETTERS 1-400, all of the form <number><letter> and every one verified ABSENT from the 1981 text this corpus holds (Warden, 11 August 2026, over FIVE trials and 220 items with ZERO filter violations; two samples re-verified independently here, 20/20 and 15/15 absent from 1981 and present in the revised file, with plain numbers 42, 131, 222 and 289 as negative controls appearing in BOTH). 222 ALONE GAINED SIX (222a-222f). THE 170 ARE A FLOOR AND NOT AN ENUMERATION: they are what a source volunteered across five ranges, checked here, and there may be lettered entries nobody asked about. LETTERS 400-508 ARE UNTESTED and are the only range where the convention has never been observed. The convention should hold through 400-508, and THAT IS AN INFERENCE [I-H] rather than a measurement. The mechanism is why it survives its sample: the 2023 edition gives a NEW letter a suffix and leaves an EXPANDED one on its base number, so the suffix IS the property, not a proxy for it. however, is complete, and lists all 508 letters of the revised edition: the 354 of 1981 and 154 added. So the archive may now say WHICH letters exist and to whom, while it may quote only those it holds. Beyond letter 42 the 1981 text remains the only text here.",
+   "note": "COMPLETE as of 2026-08-12, replacing the excerpt that stood here from 24 July. 740 pages, 308,261 words, letters 1 to 354 plus every alphanumeric addition and the full index, from a real text layer (0.04% control characters). It supersedes the 1981 edition held beside it as the citation of record; the 1981 text remains on the shelf as a WITNESS to what the revision changed, which is a different question from what Tolkien wrote.",
    "primary_text": true,
    "present": true,
    "bytes": 1025143,
@@ -1270,17 +1270,65 @@
    "pages": 18,
    "corpus_file": "t2_ocr_vinyar_tengwar_39_2.txt",
    "words": 18061
+  },
+  {
+   "file": "Bilbo's Last Song.pdf",
+   "tier": 1,
+   "attribution": "J.R.R. Tolkien; illus. Pauline Baynes (1974/1990)",
+   "note": "HELD, IMAGE-ONLY. Tier 1 by authorship — Tolkien's own poem — and NOT YET CITABLE: 36 of its 41 pages yield under 50 extractable characters and the poem itself yields zero. It needs OCR, as The Road Goes Ever On did. Filed now so the shelf records that the archive HOLDS it and cannot yet read it, which is a different statement from not having it.",
+   "primary_text": true,
+   "present": false
+  },
+  {
+   "file": "The Road to Middle-earth (3rd ed.).pdf",
+   "tier": 2,
+   "attribution": "Tom Shippey (3rd edition)",
+   "note": "NEW TO THE SHELF. The standard philological reading of Tolkien, by a scholar who held Tolkien's own chair at Leeds. Tier 2: it is not Tolkien and it is not Christopher, but its authority on the languages and the sources is of a different order from an encyclopaedia's.",
+   "primary_text": false,
+   "present": true
+  },
+  {
+   "file": "The Science of Middle-earth — Larsen review (Journal of Tolkien Research 12:2 art. 5).pdf",
+   "tier": 3,
+   "attribution": "Kristine Larsen (2021), Journal of Tolkien Research",
+   "note": "A PEER-REVIEWED BOOK REVIEW, OPEN ACCESS — the only one of the eight uploads whose licence permits reproduction, and it is filed as a review rather than as the book. It is critical of Lehoucq et al., which is why it is useful: it names where that book's science departs from the text. Cite it for what it says about the BOOK, never for what the book says about Arda.",
+   "primary_text": false,
+   "present": true
+  },
+  {
+   "file": "The Science of Middle-earth (Lehoucq, Mangin, Steyer) — illustration insert.pdf",
+   "tier": 4,
+   "attribution": "Roland Lehoucq, Loïc Mangin, Jean-Sébastien Steyer (Pegasus, 2021)",
+   "note": "NOT THE BOOK. 45 pages, 172 images, 5,808 extractable characters in total: the copyright page and figure captions of the 2021 edition's illustration insert. It is recorded so no later session mistakes the filename for the volume and cites a caption as an argument.",
+   "primary_text": false,
+   "present": false
+  },
+  {
+   "file": "The Flora of Middle-earth (excerpt).pdf",
+   "tier": 3,
+   "attribution": "Walter S. Judd & Graham A. Judd (2017)",
+   "note": "EXCERPT ONLY — 43 pages of roughly 424: front matter, contents, chapter 1. A botanist's reading of Tolkien's plants. Filed with its extent stated, because an excerpt shelved as a book is how an archive comes to believe it has checked something it has not.",
+   "primary_text": false,
+   "present": false
+  },
+  {
+   "file": "Picturing Tolkien.pdf",
+   "tier": 4,
+   "attribution": "ed. Janice M. Bogstad & Philip E. Kaveny (McFarland, 2011)",
+   "note": "Film criticism on Jackson's trilogy. Tier 4: it carries no independent authority about Arda and is usable only where it happens to restate something Tolkien wrote. Its subject is the FILMS, which this archive does not treat as evidence about the legendarium.",
+   "primary_text": false,
+   "present": true
+  },
+  {
+   "file": "Guide to Carpenter's Revised Tolkien Letters Changes (TolkienGuide.com, v2023-11-09).pdf",
+   "tier": 4,
+   "attribution": "TolkienGuide.com",
+   "note": "A CONCORDANCE, AND IT EARNED ITS PLACE THE DAY IT ARRIVED: 13 pages listing the 154 new and 45 revised letters with a line on what each adds. Tier 4 by authority, and it was used on 12 Aug to VERIFY the Letters ingest — all 154 new letters confirmed present in the extracted text. A t4 source may not settle a claim about Arda; it may perfectly well settle a claim about a book's contents.",
+   "primary_text": false,
+   "present": true
   }
  ],
  "not_held": [
-  {
-   "title": "The Letters of J.R.R. Tolkien — Revised and Expanded Edition (2023), letters 43-354 and 40a onward",
-   "tier": 1,
-   "attribution": "ed. Carpenter & C. Tolkien; revised Hammond & Scull",
-   "note": "PARTLY HELD as of 2026-07-24. The excerpt now on the shelf gives the complete contents list — 508 letters, the 354 of 1981 plus 154 added — and the full text of letters 1 to 42, including thirteen that 1981 never printed. What is still missing is the text of the remaining 141 new letters, and the passages the revision restored to letters 43-354.",
-   "affects": "The archive may now name which letters exist, to whom and when, for the whole edition. It may quote only 1-42 from the revision, and must otherwise cite the 1981 text. It still may not assert that a subject is absent from the Letters.",
-   "held": false
-  },
   {
    "title": "The Monsters and the Critics and Other Essays (1983)",
    "tier": 1,
@@ -1370,6 +1418,24 @@
    "why": "In the edition held here these tables are embedded as IMAGES, not text, so no text extraction reaches them. They have now been recovered by rendering the pages and reading the plates directly, and cross-checked with tesseract OCR.",
    "effect": "RESOLVED. The Dwarf line is verified against App A III: six birth-years were wrong in this archive and are corrected (Nain I was out by 101 years). The hobbit dates are verified against App C and were correct in every case checked, but now carry the warrant they lacked. Where OCR and a direct reading disagreed, the reading was confirmed at 450 dpi and OCR was found to be the one in error.",
    "found": "Phase 5, 2026-07-24; resolved same day"
+  }
+ ],
+ "resolved_absences": [
+  {
+   "title": "The Letters of J.R.R. Tolkien — Revised and Expanded Edition (2023), letters 43-354 and 40a onward",
+   "tier": 1,
+   "attribution": "ed. Carpenter & C. Tolkien; revised Hammond & Scull",
+   "closed": "2026-08-12",
+   "closed_by": "the owner supplied the complete Revised and Expanded Edition as a PDF with a real text layer. Extracted with pdftotext -enc UTF-8 and MEASURED before it replaced the excerpt: 308,261 words against the excerpt's 36,185, a gain of 8.5x; 351 distinct letter headers spanning 1 to 354, against the excerpt's 42; 740 control characters in 1,706,988, which is 0.04% and is a real text layer rather than OCR.",
+   "note": "THIS WAS THE ARCHIVE'S FIRST DECLARED ABSENCE and it stood from 2026-07-24. Two standing restrictions fall with it: the archive may now QUOTE the whole edition rather than only letters 1-42, and it may no longer treat 'absent from the Letters' as unanswerable -- a search that finds nothing in this volume is now evidence rather than a gap in the shelf.",
+   "was": {
+    "title": "The Letters of J.R.R. Tolkien — Revised and Expanded Edition (2023), letters 43-354 and 40a onward",
+    "tier": 1,
+    "attribution": "ed. Carpenter & C. Tolkien; revised Hammond & Scull",
+    "note": "PARTLY HELD as of 2026-07-24. The excerpt now on the shelf gives the complete contents list — 508 letters, the 354 of 1981 plus 154 added — and the full text of letters 1 to 42, including thirteen that 1981 never printed. What is still missing is the text of the remaining 141 new letters, and the passages the revision restored to letters 43-354.",
+    "affects": "The archive may now name which letters exist, to whom and when, for the whole edition. It may quote only 1-42 from the revision, and must otherwise cite the 1981 text. It still may not assert that a subject is absent from the Letters.",
+    "held": false
+   }
   }
  ]
 }

@@ -32,9 +32,14 @@ where it is read off the Angerthas plate &#8212; the shape is Tolkien&#8217;s, t
 <b>Where plate and prose disagree, both are shown and neither is adopted</b>, and four of those
 disagreements are Tolkien&#8217;s own: Appendix E says the assignment of <i>s</i> and <i>h</i>
 &#8220;continued to hesitate&#8221; between arrangements.</p>
-<p class="cite" style="margin:.4em 0 0">The tengwar transcriber, the on-screen keyboard, the
-glosser and the merged lexicon remain in <a href="languages.html">tongues &amp; letters</a>. They
-are working panels and moving one is its own change, measured on its own.</p></div>
+<p class="cite" style="margin:.4em 0 0">The tengwar transcriber, the on-screen keyboard and
+the glosser are <b>here</b> &#8212; they moved from <a href="languages.html">tongues &amp; letters</a>,
+which keeps the merged lexicon and the language tree. This sentence said the opposite until 12 August,
+after the move had happened: <b>a page that tells a reader its tools are somewhere else sends them to
+a page that no longer has them</b>, and no guard reads prose.</p>
+<p class="cite" style="margin:.4em 0 0">Every script below can be <b>copied</b>, as glyphs or as
+codepoints. Prefer the codepoints when quoting: these are Private Use Area assignments, so the
+glyphs render only where a font that carries them is installed.</p></div>
 <!-- WRITE IN CIRTH. The archive's OWN drawn certar, from arda_scripts.json, with the
      merged value table from arda_cirth.json. NO FONT IS INVOLVED and none is needed: the glyphs
      are SVG the archive already had. Three arrangements, because the same certh carries
@@ -47,7 +52,7 @@ are working panels and moving one is its own change, measured on its own.</p></d
 #cw .cq svg{width:26px;height:39px}
 #cw .cq .v{font:11px Georgia,serif;color:#7a6a50}
 @font-face{font-family:'TengwarTelcontar';src:url('fonts/TengwarTelcontar.woff2') format('woff2');font-display:swap}
-#cw .cq .cp{font-family:'ArdaCSUR',serif;font-size:22px;line-height:1;user-select:text}
+#cw .cq .cp{font-family:'TengwarTelcontar','ArdaCSUR',serif;font-size:22px;line-height:1;user-select:text}
 #cw.face-telcontar .cq .cp{font-family:'TengwarTelcontar',serif}
 #cw .cq.nofont .cp{opacity:.25;outline:1px dotted #7a3a2a}
 #cw .cq.weak .cp{opacity:.55}
@@ -557,4 +562,84 @@ are working panels and moving one is its own change, measured on its own.</p></d
 </div>
 <script>if("serviceWorker" in navigator)addEventListener("load",function(){
   navigator.serviceWorker.register("sw.js").catch(function(){});});</script>
+<style>
+.acbar{display:flex;gap:7px;align-items:center;margin:7px 0 2px;flex-wrap:wrap}
+.acbar button{font:12px Georgia,serif;padding:4px 11px;border:1px solid #8a7444;
+  background:#221c15;color:#e2cf96;cursor:pointer}
+.acbar .acnote{font-size:11px;font-style:italic;color:#7a6a50}
+:root[data-theme="dark"] .acbar .acnote{color:#a08d5c}
+</style>
+<script>
+(function ardacopy(){
+  /* THE GLYPHS A PANEL HAS DRAWN, read out of the DOM rather than recomputed. Recomputing would
+     be a SECOND transcriber, and CLAUDE.md forbids a second implementation of a thing this
+     archive already has one of: two of them disagree eventually and both look right. */
+  function glyphsOf(host){
+    if(!host) return '';
+    if(host.tagName==='TEXTAREA') return host.value;
+    var t=(host.innerText||host.textContent||'');
+    /* Keep ONLY the three CSUR blocks. The panels interleave labels, citations and refusal
+       notes with the glyphs, and copying those would hand a reader prose dressed as script. */
+    var out='';
+    for(var i=0;i<t.length;i++){
+      var c=t.codePointAt(i);
+      if(c>0xFFFF) i++;
+      if((c>=0xE000&&c<=0xE0FF)||(c>=0xE390&&c<=0xE3BF)) out+=String.fromCodePoint(c);
+    }
+    return out;
+  }
+  function pointsOf(g){
+    var out=[];
+    for(var i=0;i<g.length;i++){
+      var c=g.codePointAt(i); if(c>0xFFFF) i++;
+      out.push('U+'+c.toString(16).toUpperCase());
+    }
+    return out.join(' ');
+  }
+  function say(btn,msg){ var o=btn.textContent; btn.textContent=msg;
+    setTimeout(function(){ btn.textContent=o; },1600); }
+
+  function put(btn,text){
+    if(!text){ say(btn,'nothing drawn yet'); return; }
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){ say(btn,'copied'); },
+        function(){ say(btn,'the browser refused — select and copy by hand'); });
+    } else {
+      /* NO CLIPBOARD API: over file:// or an insecure origin it simply does not exist. Say so
+         and put the text where a reader can take it, rather than claiming a copy that did not
+         happen. */
+      var ta=document.createElement('textarea');
+      ta.value=text; ta.setAttribute('readonly','');
+      ta.style.cssText='width:100%;height:64px;font:12px monospace;margin-top:6px';
+      btn.parentNode.appendChild(ta); ta.select();
+      say(btn,'no clipboard here — take it from the box');
+    }
+  }
+
+  function bar(hostId, label){
+    var host=document.getElementById(hostId);
+    if(!host) return;                     /* a panel that is not on this page is not a fault */
+    var b=document.createElement('div');
+    b.className='acbar';
+    var p=document.createElement('button'), g=document.createElement('button'),
+        n=document.createElement('span');
+    p.type='button'; g.type='button';
+    p.textContent='Copy codepoints'; g.textContent='Copy glyphs';
+    n.className='acnote';
+    n.textContent='these are Private Use Area codepoints — the glyphs render only where a CSUR '
+      +'font is installed, so codepoints are what survives being pasted elsewhere';
+    p.addEventListener('click',function(){ put(p,pointsOf(glyphsOf(host))); });
+    g.addEventListener('click',function(){ put(g,glyphsOf(host)); });
+    b.appendChild(p); b.appendChild(g); b.appendChild(n);
+    b.setAttribute('aria-label','copy '+label);
+    host.parentNode.insertBefore(b, host.nextSibling);
+  }
+
+  function go(){ bar('twout','the tengwar transcription');
+                 bar('cwout','the cirth');
+                 bar('kbout','what you have typed'); }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',go);
+  else go();
+})();
+</script>
 <script src="nav.js"></script><script src="glossary.js" defer></script></body></html>
