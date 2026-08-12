@@ -7,10 +7,10 @@
 "C?": "NOT YET CHECKED against the corpus. A debt, not a verdict."
 },
 "marker_counts": {
-"C": 77,
-"C?": 40,
-"I-L": 21,
-"C/?": 18
+"C": 78,
+"C?": 32,
+"I-L": 24,
+"C/?": 22
 },
 "prompts": [
 {
@@ -582,8 +582,8 @@
 "traits": [
 {
 "t": "tall Gondorian knight in bright mail and plate",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the HARNESS only: LotR V.1 — 'a company of knights in full harness riding grey horses'. PLATE is the archive's: no plate armour is described for Dol Amroth or for anyone in Gondor"
 },
 {
 "t": "a helm crowned with swan-wings",
@@ -592,18 +592,18 @@
 },
 {
 "t": "a blue surcoat bearing the silver Swan-ship",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the DEVICE AND THE BLUE ARE CANON AND THEY ARE ON A BANNER, NOT A GARMENT: LotR V.1 — 'gilded banners bearing his token of the Ship and the Silver Swan', and V.6 — 'the swan-knights of Dol Amroth with their Prince and his blue banner at their head'. 'blue surcoat' is absent from all 49 volumes, and the banners the corpus does colour are GILDED"
 },
 {
 "t": "a lance and long sword",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED: 'with lances' and 'a lance in his hand' are absent from all 49 volumes, and the only 'lances of' is a Christian crusading poem in the Collected Poems. No weapon at all is named for the Swan-knights"
 },
 {
 "t": "the sea-princes' heavy cavalry",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the CAVALRY only: LotR V.1 — 'a company of knights in full harness RIDING GREY HORSES'. 'Heavy' and 'sea-princes' are the archive's framing; the corpus gives Imrahil the title Prince of Dol Amroth and no statement about the weight of his horse"
 }
 ]
 },
@@ -674,23 +674,23 @@
 },
 {
 "t": "not the eored's kit, a green cloak",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED: no cloak of any colour is described for the Riders. The corpus's green cloaks are the HOBBITS' in Return of the Shadow — 'in their dark [?green] cloaks they were quite invisible' — and the Lorien cloaks are grey. Nothing contradicts a green cloak; nothing states one"
 },
 {
 "t": "a round painted shield",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the PAINTING only: LotR III.2 — 'painted shields were slung at their backs'. ROUND is the archive's: no shape is given for a Rohirric shield anywhere, and the corpus's one 'small round shield' is an ORC's, at Treason of Isengard"
 },
 {
 "t": "an ash spear and a long sword",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "LotR III.2 — 'In their hands were tall spears of ash … long swords were at their belts', of the eored that rides up on Aragorn, Legolas and Gimli"
 },
 {
 "t": "Norse-flavoured horse-motif war-gear of Rohan",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "THE ARCHIVE'S OWN FRAMING AND NOT A CORPUS CLAIM: 'Norse' is a comparison to our world, which Tolkien's text does not make about the Rohirrim's gear. The horse-motif is inferred from the Mark's name and its banner, not from any described ornament"
 }
 ]
 },
