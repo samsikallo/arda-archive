@@ -46,7 +46,10 @@ are working panels and moving one is its own change, measured on its own.</p></d
 #cw .cq{display:flex;flex-direction:column;align-items:center;gap:2px}
 #cw .cq svg{width:26px;height:39px}
 #cw .cq .v{font:11px Georgia,serif;color:#7a6a50}
+@font-face{font-family:'TengwarTelcontar';src:url('fonts/TengwarTelcontar.woff2') format('woff2');font-display:swap}
 #cw .cq .cp{font-family:'ArdaCSUR',serif;font-size:22px;line-height:1;user-select:text}
+#cw.face-telcontar .cq .cp{font-family:'TengwarTelcontar',serif}
+#cw .cq.nofont .cp{opacity:.25;outline:1px dotted #7a3a2a}
 #cw .cq.weak .cp{opacity:.55}
 #cw .cq.weak sup{color:#7a3a2a;font-weight:bold}
 #cw .cq.c .v{color:#4a6a3a;font-weight:bold}
@@ -75,13 +78,20 @@ are working panels and moving one is its own change, measured on its own.</p></d
     +'<option value="daeron">Angerthas Daeron — the Elvish arrangement</option>'
     +'<option value="moria">Angerthas Moria — the Dwarves of Moria</option>'
     +'<option value="erebor">mode of Erebor — the Book of Mazarbul</option>'
+    +'</select></div>'
+    +'<div><label for="cwf">face</label><br><select id="cwf" style="font:14px Georgia,serif;padding:8px">'
+    +'<option value="">Arda CSUR — Unifont contributors, OFL-1.1 &amp; GPL+FE (all 60)</option>'
+    +'<option value="face-telcontar">Tengwar Telcontar — Winge &amp; Wust, GPL (46 of 60)</option>'
     +'</select></div></div>'
     +'<div class="out" id="cwout" aria-live="polite"></div>'
     +'<p class="cite" id="cwwhy"></p>';
   var a=document.getElementById('lexicon')||document.getElementById('main');
   (a?a.insertAdjacentElement('beforebegin',host):document.body.appendChild(host));
 
-  var G=null, V=null, CP={}, WEAKSET={};
+  var G=null, V=null, CP={}, WEAKSET={}, FACE='';
+  /* The 14 certh Telcontar has no glyph for, measured from its cmap against the archive's
+     own 60-certh mapping -- not guessed from its glyph count. */
+  var TELC_MISSING={"41": 1, "43": 1, "46": 1, "47": 1, "48": 1, "50": 1, "51": 1, "53": 1, "54": 1, "56": 1, "57": 1, "58": 1};
   Promise.all([
     fetch('arda_scripts.json').then(function(r){return r.json();}),
     fetch('arda_cirth.json').then(function(r){return r.json();}),
@@ -151,8 +161,13 @@ are working panels and moving one is its own change, measured on its own.</p></d
          primary rendering; the codepoint is offered so a reader can SELECT and COPY. They are not
          asserted to be the same thing -- the mapping is DERIVED (see gen_cirth_codepoints.py) and
          six certh are marked WEAK, which is printed rather than smoothed over. */
+      /* WHAT THE CHOSEN FACE CANNOT DRAW IS MARKED, NEVER DROPPED. Telcontar carries 46 of the
+         60 certh the archive maps; Arda CSUR carries all 60. A picker that silently omitted
+         fourteen would be the archive asserting a script is complete when its face is not. */
       var cp=(CP[e.n]||null), weak=cp&&WEAKSET[e.n];
-      h+='<div class="'+cls+(weak?' weak':'')+'" title="certh '+e.n+' — '+esc(title)
+      var nofont = cp && FACE==='face-telcontar' && TELC_MISSING[e.n];
+      h+='<div class="'+cls+(weak?' weak':'')+(nofont?' nofont':'')+'" title="certh '+e.n+' — '+esc(title)
+        +(nofont?' · THIS FACE HAS NO GLYPH for this certh — Arda CSUR does':'')
         +(cp?' · '+esc(cp)+(weak?' (WEAK: this codepoint is the least corroborated part of a '
           +'derived mapping)':''):' · no codepoint in the mapping')+'">'
         +'<svg viewBox="'+esc(g.vb||'0 0 32 48')+'">'+(g.b||'')+'</svg>'
@@ -170,6 +185,8 @@ are working panels and moving one is its own change, measured on its own.</p></d
   }
   document.getElementById('cwq').addEventListener('input',go);
   document.getElementById('cwa').addEventListener('change',go);
+  document.getElementById('cwf').addEventListener('change',function(){
+    FACE=this.value; host.className=FACE; go(); });
 })();
 </script>
 <!-- THE GLOSSER. It says what each word MEANS and does not call that translation.
