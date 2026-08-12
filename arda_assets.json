@@ -640,6 +640,16 @@
    "hand": "the archive",
    "licence": "own work — drawn by this archive's own generators from the corpus",
    "source": "map/gen_valinor.py"
+  },
+  {
+   "file": "fonts/ArdaCSUR.woff2",
+   "what": "a 304-glyph subset of Unifont CSUR covering the ConScript Unicode Registry blocks for Tengwar (U+E000-E07F, 128/128), Cirth (U+E080-E0FF, 128/128) and Sarati (U+E390-E3BF, 48/48)",
+   "hand": "Roman Czyborra, Paul Hardy, Qianqian Fang, Andrew Miller, Johnnie Weaver and the Unifont contributors; subset and renamed for this archive",
+   "licence": "OFL-1.1 and GPL-2.0-or-later with the GNU Font Embedding Exception (dual)",
+   "licence_read_from": "the font's own name table, ID 13, verified after subsetting; the full text ships beside it as fonts/ArdaCSUR-LICENSE.txt",
+   "source": "https://unifoundry.com/unifont/",
+   "renamed": "RENAMED from 'Unifont CSUR' to 'Arda CSUR' because it is a MODIFIED version. The OFL requires that of derivatives, and it also stops a reader mistaking a 304-glyph subset for the 11,691-glyph original.",
+   "why_it_matters": "the archive had NO Cirth and NO Sarati font. This is the only freely-licensed source of either that could be verified, and its licence was read from the file rather than taken from a third party."
   }
  ],
  "pending_provenance": []
