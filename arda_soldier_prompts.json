@@ -7,10 +7,10 @@
 "C?": "NOT YET CHECKED against the corpus. A debt, not a verdict."
 },
 "marker_counts": {
-"C": 78,
-"C?": 32,
-"I-L": 24,
-"C/?": 22
+"C": 79,
+"C?": 23,
+"C/?": 25,
+"I-L": 29
 },
 "prompts": [
 {
@@ -56,18 +56,18 @@
 },
 {
 "t": "mail overlaid with a white surcoat",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the WHITE only, and it is a COLOUR OF THE HOUSE rather than a garment: BoLT II 'their colours were white and gold and red'. 'white surcoat' is absent from all 49 volumes, and so is any surcoat for Gondolin"
 },
 {
 "t": "a long bright sword",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED for Gondolin. The nearest are of ANOTHER HOST: Silm 'their swords were long and terrible', of the Noldor at Mithrim, and the Lay's 'out their bright swords' in an orc-fight. Nothing describes a sword of the Gondothlim"
 },
 {
 "t": "sun-and-moon and scarlet-heart motifs of Turgon's house, regal, ceremonial armour",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "THE THREE EMBLEMS ARE EXACT: BoLT II — 'Mighty was the array of the house of the king and their colours were white and gold and red, and their emblems the moon and the sun and the scarlet heart'; HoME XII index, 'Scarlet Heart, The — Emblem of the King's House in Gondolin'. 'Regal, ceremonial armour' is the archive's: the corpus calls the array mighty and says nothing about ceremony"
 }
 ]
 },
@@ -529,8 +529,8 @@
 "traits": [
 {
 "t": "Gondorian foot-soldier in a mail hauberk and a plain conical helm",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED: 'conical helm' is absent from all 49 volumes, and the corpus's one 'mail hauberk' is a DWARF's, in a tier-3 companion. Gondor's ordinary soldiery is never described head to foot the way its Citadel Guard is"
 },
 {
 "t": "a plain undevised surcoat — black-and-silver was the livery of the heirs of Elendil and NONE WORE IT IN ALL GONDOR save the Guards of the Citadel, a spear",
@@ -539,13 +539,13 @@
 },
 {
 "t": "a long shield and a short sword",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED for Gondor's line, AND BOTH PHRASES EXIST OF OTHER SUBJECTS — which is why the search had to be read rather than counted: 'long shields' are the IRON GUARDS of Numenor in UT, and the 'short sword' is MERRY's in Return of the Shadow"
 },
 {
 "t": "practical Third Age infantry",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "THE ARCHIVE'S OWN FRAMING. The corpus describes Gondor's companies by WHERE THEY CAME FROM and how many, never by their kit — the one full description in Minas Tirith is the Guards of the Citadel, which is this kit's opposite"
 }
 ]
 },
@@ -857,8 +857,8 @@
 "traits": [
 {
 "t": "mortal Man of the Long Lake in a mail-shirt and a fur-trimmed cap",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED: 'fur-trimmed' is absent from all 49 volumes, and no garment at all is described for the men of Dale or Esgaroth"
 },
 {
 "t": "a very great longbow and a quiver of arrows — Bard's black arrow is a single named heirloom",
@@ -867,13 +867,13 @@
 },
 {
 "t": "not Dale's issue kit, a short sword",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "THE POINT IS THE NEGATIVE AND IT IS CANON: Hobbit XIV — the black arrow is 'I have saved you to the last… I had you from my father', a single inherited shaft. It is Bard's heirloom and not the equipment of a Dale soldier"
 },
 {
 "t": "northern archer of Bard's people",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "BARD is canon and HIS PEOPLE AS ARCHERS is not: Hobbit XIV gives Bard the Bowman and his black arrow, and Return of the Shadow 'Brand son of Bain son of Bard'. The spearmen-and-bowmen muster the corpus does describe is DAIN'S, in The History of The Hobbit — a different people, found by reading the line rather than the hit"
 }
 ]
 },
