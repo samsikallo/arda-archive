@@ -7,10 +7,10 @@
 "C?": "NOT YET CHECKED against the corpus. A debt, not a verdict."
 },
 "marker_counts": {
-"C": 77,
-"C?": 40,
-"I-L": 21,
-"C/?": 18
+"C": 79,
+"C?": 23,
+"C/?": 25,
+"I-L": 29
 },
 "prompts": [
 {
@@ -56,18 +56,18 @@
 },
 {
 "t": "mail overlaid with a white surcoat",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the WHITE only, and it is a COLOUR OF THE HOUSE rather than a garment: BoLT II 'their colours were white and gold and red'. 'white surcoat' is absent from all 49 volumes, and so is any surcoat for Gondolin"
 },
 {
 "t": "a long bright sword",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED for Gondolin. The nearest are of ANOTHER HOST: Silm 'their swords were long and terrible', of the Noldor at Mithrim, and the Lay's 'out their bright swords' in an orc-fight. Nothing describes a sword of the Gondothlim"
 },
 {
 "t": "sun-and-moon and scarlet-heart motifs of Turgon's house, regal, ceremonial armour",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "THE THREE EMBLEMS ARE EXACT: BoLT II — 'Mighty was the array of the house of the king and their colours were white and gold and red, and their emblems the moon and the sun and the scarlet heart'; HoME XII index, 'Scarlet Heart, The — Emblem of the King's House in Gondolin'. 'Regal, ceremonial armour' is the archive's: the corpus calls the array mighty and says nothing about ceremony"
 }
 ]
 },
@@ -529,8 +529,8 @@
 "traits": [
 {
 "t": "Gondorian foot-soldier in a mail hauberk and a plain conical helm",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED: 'conical helm' is absent from all 49 volumes, and the corpus's one 'mail hauberk' is a DWARF's, in a tier-3 companion. Gondor's ordinary soldiery is never described head to foot the way its Citadel Guard is"
 },
 {
 "t": "a plain undevised surcoat — black-and-silver was the livery of the heirs of Elendil and NONE WORE IT IN ALL GONDOR save the Guards of the Citadel, a spear",
@@ -539,13 +539,13 @@
 },
 {
 "t": "a long shield and a short sword",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED for Gondor's line, AND BOTH PHRASES EXIST OF OTHER SUBJECTS — which is why the search had to be read rather than counted: 'long shields' are the IRON GUARDS of Numenor in UT, and the 'short sword' is MERRY's in Return of the Shadow"
 },
 {
 "t": "practical Third Age infantry",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "THE ARCHIVE'S OWN FRAMING. The corpus describes Gondor's companies by WHERE THEY CAME FROM and how many, never by their kit — the one full description in Minas Tirith is the Guards of the Citadel, which is this kit's opposite"
 }
 ]
 },
@@ -582,8 +582,8 @@
 "traits": [
 {
 "t": "tall Gondorian knight in bright mail and plate",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the HARNESS only: LotR V.1 — 'a company of knights in full harness riding grey horses'. PLATE is the archive's: no plate armour is described for Dol Amroth or for anyone in Gondor"
 },
 {
 "t": "a helm crowned with swan-wings",
@@ -592,18 +592,18 @@
 },
 {
 "t": "a blue surcoat bearing the silver Swan-ship",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the DEVICE AND THE BLUE ARE CANON AND THEY ARE ON A BANNER, NOT A GARMENT: LotR V.1 — 'gilded banners bearing his token of the Ship and the Silver Swan', and V.6 — 'the swan-knights of Dol Amroth with their Prince and his blue banner at their head'. 'blue surcoat' is absent from all 49 volumes, and the banners the corpus does colour are GILDED"
 },
 {
 "t": "a lance and long sword",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED: 'with lances' and 'a lance in his hand' are absent from all 49 volumes, and the only 'lances of' is a Christian crusading poem in the Collected Poems. No weapon at all is named for the Swan-knights"
 },
 {
 "t": "the sea-princes' heavy cavalry",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the CAVALRY only: LotR V.1 — 'a company of knights in full harness RIDING GREY HORSES'. 'Heavy' and 'sea-princes' are the archive's framing; the corpus gives Imrahil the title Prince of Dol Amroth and no statement about the weight of his horse"
 }
 ]
 },
@@ -674,23 +674,23 @@
 },
 {
 "t": "not the eored's kit, a green cloak",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED: no cloak of any colour is described for the Riders. The corpus's green cloaks are the HOBBITS' in Return of the Shadow — 'in their dark [?green] cloaks they were quite invisible' — and the Lorien cloaks are grey. Nothing contradicts a green cloak; nothing states one"
 },
 {
 "t": "a round painted shield",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the PAINTING only: LotR III.2 — 'painted shields were slung at their backs'. ROUND is the archive's: no shape is given for a Rohirric shield anywhere, and the corpus's one 'small round shield' is an ORC's, at Treason of Isengard"
 },
 {
 "t": "an ash spear and a long sword",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "LotR III.2 — 'In their hands were tall spears of ash … long swords were at their belts', of the eored that rides up on Aragorn, Legolas and Gimli"
 },
 {
 "t": "Norse-flavoured horse-motif war-gear of Rohan",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "THE ARCHIVE'S OWN FRAMING AND NOT A CORPUS CLAIM: 'Norse' is a comparison to our world, which Tolkien's text does not make about the Rohirrim's gear. The horse-motif is inferred from the Mark's name and its banner, not from any described ornament"
 }
 ]
 },
@@ -857,8 +857,8 @@
 "traits": [
 {
 "t": "mortal Man of the Long Lake in a mail-shirt and a fur-trimmed cap",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED: 'fur-trimmed' is absent from all 49 volumes, and no garment at all is described for the men of Dale or Esgaroth"
 },
 {
 "t": "a very great longbow and a quiver of arrows — Bard's black arrow is a single named heirloom",
@@ -867,13 +867,13 @@
 },
 {
 "t": "not Dale's issue kit, a short sword",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "THE POINT IS THE NEGATIVE AND IT IS CANON: Hobbit XIV — the black arrow is 'I have saved you to the last… I had you from my father', a single inherited shaft. It is Bard's heirloom and not the equipment of a Dale soldier"
 },
 {
 "t": "northern archer of Bard's people",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "BARD is canon and HIS PEOPLE AS ARCHERS is not: Hobbit XIV gives Bard the Bowman and his black arrow, and Return of the Shadow 'Brand son of Bain son of Bard'. The spearmen-and-bowmen muster the corpus does describe is DAIN'S, in The History of The Hobbit — a different people, found by reading the line rather than the hit"
 }
 ]
 },
