@@ -8,9 +8,9 @@
 },
 "marker_counts": {
 "C": 79,
-"C?": 16,
-"C/?": 31,
-"I-L": 30
+"C/?": 33,
+"I-L": 31,
+"C?": 13
 },
 "prompts": [
 {
@@ -32,8 +32,8 @@
 },
 {
 "t": "a long sword and a spear",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the SWORD only, and the HOST is not this one: Silm — 'the Noldor… were strong and swift, and deadly in anger, and their swords were long and terrible', on the grey fields of MITHRIM, which lies in Hithlum. But that is Dagor-nuin-Giliath and the host is FEANOR'S, before Fingolfin came over the Ice. The spear is not in the passage"
 },
 {
 "t": "banners of blue and silver, cold northern war-gear, proud bearing",
@@ -350,8 +350,8 @@
 "traits": [
 {
 "t": "tall Númenórean Man in a long mail-coat and a sea-crested steel helm",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the STATURE only, and the CREST IS WORSE THAN UNATTESTED: Silm gives 'the Numenoreans were strong and tall'. 'sea-crested' is absent from all 49 volumes, and the ONE Numenorean war-helm the corpus describes is PLAIN — LotR App. A, 'The crown of Gondor was derived from the form of a Numenorean war-helm. In the beginning it was indeed a plain helm'. The mail-coat is not located either"
 },
 {
 "t": "a great hollow-steel bow and a long arrow, a straight sword",
@@ -360,8 +360,8 @@
 },
 {
 "t": "silver star of Númenor, high sea-kingdom war-gear",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED as war-gear: the corpus's silver stars are ELBERETH'S on a sail in Peoples of Middle-earth, and the Star of Elendil is a JEWEL on a fillet rather than a device on armour. No badge of Numenor is described on any soldier"
 }
 ]
 },
