@@ -7,10 +7,10 @@
 "C?": "NOT YET CHECKED against the corpus. A debt, not a verdict."
 },
 "marker_counts": {
-"C": 71,
-"C?": 48,
+"C": 77,
+"C?": 40,
 "I-L": 21,
-"C/?": 16
+"C/?": 18
 },
 "prompts": [
 {
@@ -471,32 +471,32 @@
 {
 "t": "a Guard of the gate ROBED IN BLACK — the corpus robes them",
 "conf": "C",
-"cite": "LotR V.1 — 'Upon the black surcoats were embroidered in white a tree blossoming like snow beneath a silver crown and many-pointed stars'. THE SEARCH: 'robed in black' occurs ONCE in 49 volumes and is BORLAS at a gate in The New Shadow, HoME XII — a false positive of the phrase the sentence was written from. The claim holds on 'black surcoats', not on the words that were used to support it"
+"cite": "LotR V.1 — 'The Guards of the gate were robed in black', verbatim. CORRECTING MY OWN NOTE OF AN HOUR EARLIER: I wrote that this phrase occurs ONCE and is Borlas in The New Shadow. It occurs TWICE — `ardatext.verify_any` returns the FIRST FILE that matches and HoME XII sorts before LotR, so I read an existence test as a census"
 },
 {
 "t": "it does not mail them. The helm is “of strange shape, high-crowned",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "LotR V.1 — the paragraph robes them and describes helms and surcoats; no mail is mentioned for the Guards of the gate anywhere in it"
 },
 {
 "t": "with long cheek-guards close-fitting to the face",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "LotR V.1 — 'their helms were of strange shape, high-crowned, with long cheek-guards close-fitting to the face'"
 },
 {
 "t": "and above the cheek-guards were set the white wings of SEA-BIRDS”",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "LotR V.1 — 'and above the cheek-guards were set the white wings of sea-birds'"
 },
 {
 "t": "and it “gleamed with a flame of silver",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "LotR V.1 — 'but the helms gleamed with a flame of silver'"
 },
 {
 "t": "for they were indeed wrought of MITHRIL",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "LotR V.1 — 'for they were indeed wrought of mithril, heirlooms from the glory of old days'"
 },
 {
 "t": "heirlooms from the glory of old days” — not silver-steel",
@@ -505,18 +505,18 @@
 },
 {
 "t": "and the wings sit above the cheek-guards rather than sweeping from the crown. Upon the black surcoat, embroidered in white",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the POSITION is canon — LotR V.1 'ABOVE THE CHEEK-GUARDS were set the white wings'. 'Rather than sweeping from the crown' is the archive correcting a common depiction, and Tolkien says nothing about a crown-mounted wing either way"
 },
 {
 "t": "“a tree blossoming like snow beneath a silver crown and many-pointed stars”. A long sword",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C",
+"cite": "LotR V.1 — 'Upon the black surcoats were embroidered in white a tree blossoming like snow beneath a silver crown and many-pointed stars'"
 },
 {
 "t": "the dress-armour of the Tower Guard",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the LIVERY is canon — LotR V.1 'This was the livery of the heirs of Elendil, and none wore it now in all Gondor, save the Guards of the Citadel'. 'Dress-armour' is the archive's word: the corpus never says this gear was ceremonial rather than fighting kit"
 }
 ]
 },
