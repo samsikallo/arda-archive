@@ -246,7 +246,18 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 32 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 32 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "corpus/t1_13_index.txt:892 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "anorien",
+     "span": "",
+     "to": null,
+     "why": "within anorien, per Christopher Tolkien's index gloss — “The seventh beacon in Anórien” [I-H]"
+    }
    ],
    "coords": [
     {
@@ -260,15 +271,17 @@
    "name_conf": "H",
    "notes": [
     "the middle of the shape the archive draws",
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "within anorien, per Christopher Tolkien's index gloss — “The seventh beacon in Anórien” [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "anorien"
+   ],
    "place_conf": "M",
    "timeline": [],
    "types": [
     "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "amon ereb": {
    "ages": [
@@ -276,7 +289,18 @@
    ],
    "cites": [
     "Silm 10/18/20/22",
-    "The Silmarillion, Of Beleriand and its Realms [C]"
+    "The Silmarillion, Of Beleriand and its Realms [C]",
+    "corpus/t1_13_index.txt:893 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "east beleriand",
+     "span": "",
+     "to": null,
+     "why": "within east beleriand, per Christopher Tolkien's index gloss — “'The Lonely Hill' in East Beleriand” [I-H]"
+    }
    ],
    "coords": [
     {
@@ -296,9 +320,12 @@
     "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand",
     "the vector spec also lists it as “Amon Ereb fort”, at the same place; one record, not two",
     "a merged record also called it man made watchpost; the kinds are those the corpus states",
-    "drawn within lindon, and that containment is not carried: Lindon is the country on the FAR bank of Gelion; the hill stands west of the river, in East Beleriand"
+    "drawn within lindon, and that containment is not carried: Lindon is the country on the FAR bank of Gelion; the hill stands west of the river, in East Beleriand",
+    "within east beleriand, per Christopher Tolkien's index gloss — “'The Lonely Hill' in East Beleriand” [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "east beleriand"
+   ],
    "place_conf": "H",
    "timeline": [
     {
@@ -326,8 +353,7 @@
    "types": [
     "NATURAL_HILL",
     "MAN_MADE_FORTRESS"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "amon ethir": {
    "ages": [],
@@ -2954,7 +2980,19 @@
    "ages": [
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "corpus/t1_13_index.txt:3247 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "lamedon",
+     "span": "",
+     "to": null,
+     "why": "within lamedon, per Christopher Tolkien's index gloss — “Town in Lamedon” [I-H]"
+    }
+   ],
    "coords": [
     {
      "conf": "H",
@@ -2967,15 +3005,17 @@
    "name_conf": null,
    "notes": [
     "spec TA: town",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "within lamedon, per Christopher Tolkien's index gloss — “Town in Lamedon” [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "lamedon"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
     "MAN_MADE_TOWN"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "calenardhon": {
    "ages": [
@@ -3011,7 +3051,18 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 10 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 10 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "corpus/t1_13_index.txt:3262 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "anorien",
+     "span": "",
+     "to": null,
+     "why": "within anorien, per Christopher Tolkien's index gloss — “The second beacon in Anórien” [I-H]"
+    }
    ],
    "coords": [
     {
@@ -3025,15 +3076,17 @@
    "name_conf": "H",
    "notes": [
     "the middle of the shape the archive draws",
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "within anorien, per Christopher Tolkien's index gloss — “The second beacon in Anórien” [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "anorien"
+   ],
    "place_conf": "M",
    "timeline": [],
    "types": [
     "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "cape balar": {
    "ages": [
@@ -5126,7 +5179,18 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (REGIONS_TA); the name is attested 19 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (REGIONS_TA); the name is attested 19 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "corpus/t1_13_index.txt:4995 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": 6541,
+     "parent": "rohan",
+     "span": "T.A. 2510 – enduring",
+     "to": 7180,
+     "why": "within rohan, per Christopher Tolkien's index gloss — “Rohan east of the Entwash” [I-H]"
+    }
    ],
    "coords": [
     {
@@ -5140,15 +5204,17 @@
    "name_conf": "H",
    "notes": [
     "the middle of the shape the archive draws",
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "within rohan, per Christopher Tolkien's index gloss — “Rohan east of the Entwash” [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "rohan"
+   ],
    "place_conf": "M",
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "eastfold": {
    "ages": [
@@ -5405,7 +5471,18 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 46 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 46 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "corpus/t1_13_index.txt:5170 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "anorien",
+     "span": "",
+     "to": null,
+     "why": "within anorien, per Christopher Tolkien's index gloss — “The sixth beacon in Anórien” [I-H]"
+    }
    ],
    "coords": [
     {
@@ -5419,15 +5496,17 @@
    "name_conf": "H",
    "notes": [
     "the middle of the shape the archive draws",
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "within anorien, per Christopher Tolkien's index gloss — “The sixth beacon in Anórien” [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "anorien"
+   ],
    "place_conf": "M",
    "timeline": [],
    "types": [
     "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "eithel ivrin": {
    "ages": [
@@ -6290,7 +6369,18 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 10 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 10 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "corpus/t1_13_index.txt:6312 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "anorien",
+     "span": "",
+     "to": null,
+     "why": "within anorien, per Christopher Tolkien's index gloss — “The fourth beacon in Anórien” [I-H]"
+    }
    ],
    "coords": [
     {
@@ -6304,15 +6394,17 @@
    "name_conf": "H",
    "notes": [
     "the middle of the shape the archive draws",
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "within anorien, per Christopher Tolkien's index gloss — “The fourth beacon in Anórien” [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "anorien"
+   ],
    "place_conf": "M",
    "timeline": [],
    "types": [
     "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "eriador": {
    "ages": [
@@ -8432,7 +8524,18 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (PEAKS_TA); the name is attested 40 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (PEAKS_TA); the name is attested 40 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "corpus/t1_13_index.txt:9036 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "anorien",
+     "span": "",
+     "to": null,
+     "why": "within anorien, per Christopher Tolkien's index gloss — “The first beacon in Anórien” [I-H]"
+    }
    ],
    "coords": [
     {
@@ -8446,15 +8549,17 @@
    "name_conf": "H",
    "notes": [
     "the middle of the shape the archive draws",
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "within anorien, per Christopher Tolkien's index gloss — “The first beacon in Anórien” [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "anorien"
+   ],
    "place_conf": "M",
    "timeline": [],
    "types": [
     "NATURAL_PEAK"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "halifirien hallow": {
    "ages": [
@@ -10744,7 +10849,19 @@
    "ages": [
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "corpus/t1_13_index.txt:11270 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": 3910,
+     "parent": "gondor",
+     "span": "S.A. 3320 – enduring",
+     "to": 7180,
+     "why": "within gondor, per Christopher Tolkien's index gloss — “Town in Gondor on the river Lameduin” [I-H]"
+    }
+   ],
    "coords": [
     {
      "conf": "H",
@@ -10757,16 +10874,18 @@
    "name_conf": null,
    "notes": [
     "spec TA: town+fords",
-    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
+    "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth",
+    "within gondor, per Christopher Tolkien's index gloss — “Town in Gondor on the river Lameduin” [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
     "MAN_MADE_CROSSING",
     "MAN_MADE_TOWN"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "lithlad": {
    "ages": [
@@ -12401,7 +12520,18 @@
    ],
    "cites": [
     "Silm 4/16",
-    "placed from the archive's own vector map (FORESTS_FA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (FORESTS_FA) [I-M]; the record existed already and had no coordinate",
+    "corpus/t1_13_index.txt:13239 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "beleriand",
+     "span": "",
+     "to": null,
+     "why": "within beleriand, per Christopher Tolkien's index gloss — “Forest in Beleriand” [I-H]"
+    }
    ],
    "coords": [
     {
@@ -12415,15 +12545,17 @@
    "name_conf": null,
    "notes": [
     "Where Melian enchanted Thingol; Eöl's dark wood; Maeglin's birthplace.",
-    "the middle of the shape the archive draws"
+    "the middle of the shape the archive draws",
+    "within beleriand, per Christopher Tolkien's index gloss — “Forest in Beleriand” [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "beleriand"
+   ],
    "place_conf": "H",
    "timeline": [],
    "types": [
     "NATURAL_FOREST"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "nan tathren": {
    "ages": [
@@ -12459,7 +12591,18 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 26 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 26 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "corpus/t1_13_index.txt:13289 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "anorien",
+     "span": "",
+     "to": null,
+     "why": "within anorien, per Christopher Tolkien's index gloss — “The fifth beacon in Anórien” [I-H]"
+    }
    ],
    "coords": [
     {
@@ -12473,15 +12616,17 @@
    "name_conf": "H",
    "notes": [
     "the middle of the shape the archive draws",
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "within anorien, per Christopher Tolkien's index gloss — “The fifth beacon in Anórien” [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "anorien"
+   ],
    "place_conf": "M",
    "timeline": [],
    "types": [
     "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "nargothrond": {
    "ages": [
@@ -13796,22 +13941,35 @@
     "FA"
    ],
    "cites": [
-    "The Silmarillion [C]"
+    "The Silmarillion [C]",
+    "corpus/t1_13_index.txt:15110 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "east beleriand",
+     "span": "",
+     "to": null,
+     "why": "within east beleriand, per Christopher Tolkien's index gloss — “'Wall's End' in East Beleriand” [I-H]"
+    }
    ],
    "coords": [],
    "n": "Ramdal",
    "name_conf": "H",
    "notes": [
     "“This dividing fall was named Andram, the Long Wall, from Nargothrond to Ramdal, the Wall’s End, in East Beleriand.” — The Silmarillion [C]",
-    "Christopher Tolkien letters Ramdal on the Beleriand plate at the east end of the Andram"
+    "Christopher Tolkien letters Ramdal on the Beleriand plate at the east end of the Andram",
+    "within east beleriand, per Christopher Tolkien's index gloss — “'Wall's End' in East Beleriand” [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "east beleriand"
+   ],
    "place_conf": null,
    "timeline": [],
    "types": [
     "MAN_MADE_LANDMARK"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "rauros": {
    "ages": [
@@ -15244,7 +15402,18 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (LAKES_FA); the name is attested 22 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (LAKES_FA); the name is attested 22 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "corpus/t1_13_index.txt:17059 [I-H]: the index states the container; the reading is the archive's, not a quotation of the narrative"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": 7,
+     "parent": "dorthonion",
+     "span": "F.A. 7–455",
+     "to": 455,
+     "why": "within dorthonion, per Christopher Tolkien's index gloss — “Lake on Dorthonion where Barahir made his lair” [I-H]"
+    }
    ],
    "coords": [
     {
@@ -15258,15 +15427,17 @@
    "name_conf": "H",
    "notes": [
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
-    "the archive draws this and had no record of it until the map and the gazetteer were compared"
+    "the archive draws this and had no record of it until the map and the gazetteer were compared",
+    "within dorthonion, per Christopher Tolkien's index gloss — “Lake on Dorthonion where Barahir made his lair” [I-H]"
    ],
-   "parents": [],
+   "parents": [
+    "dorthonion"
+   ],
    "place_conf": "M",
    "timeline": [],
    "types": [
     "NATURAL_LAKE"
-   ],
-   "unplaced": "the corpus does not say what contains it — the archive will not guess"
+   ]
   },
   "tasarinan": {
    "ages": [],
