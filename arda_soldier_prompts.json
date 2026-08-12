@@ -8,9 +8,9 @@
 },
 "marker_counts": {
 "C": 79,
-"C?": 20,
-"C/?": 28,
-"I-L": 29
+"C?": 16,
+"C/?": 31,
+"I-L": 30
 },
 "prompts": [
 {
@@ -568,8 +568,8 @@
 },
 {
 "t": "woodland ambush-gear of Faramir's men, no shining metal",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the AMBUSH AND THE GREEN are exact and the METAL IS NOT: LotR IV.4, in the same sentence as the Southron who falls — 'swarthy men in red running down the slope some way off with GREEN-CLAD WARRIORS leaping after them, hewing them down as they fled'. NOT LOCATED: nothing says Faramir's Rangers avoided bright metal; it is an inference FROM the concealment rather than a statement"
 }
 ]
 },
@@ -968,8 +968,8 @@
 },
 {
 "t": "a long spear and a curved sword",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "the SWORD only, and not its shape: LotR IV.4 — 'His brown hand still clutched the hilt of a broken sword'. CURVED and the SPEAR are the archive's; the corpus gives Harad footmen at V.6 without naming a weapon, and the scimitars it does name are ORCS'"
 },
 {
 "t": "the black serpent on scarlet, exotic desert war-gear",
@@ -987,13 +987,13 @@
 "traits": [
 {
 "t": "Southron soldier in light scaled armour and flowing red-and-gold cloth",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "C/?",
+"cite": "THE CLOTH AND THE SCALES ARE EXACT AND 'LIGHT' IS NOT: LotR IV.4 — 'His scarlet robes… his corslet of overlapping brazen plates', with 'a golden collar' and 'black plaits of hair braided with gold' for the red-and-gold. The corpus's word is BRAZEN — bronze — and it says nothing about the weight"
 },
 {
 "t": "a long war-spear and a short bow",
-"conf": "C?",
-"cite": "not yet read against the corpus"
+"conf": "I-L",
+"cite": "NOT LOCATED: the IV.4 ambush gives the Southron a SWORD and nothing else, and the arrows in that air are the RANGERS' — 'green arrow-feathers sticking from his neck'. No bow or spear is given a Haradrim anywhere"
 },
 {
 "t": "harness for riding a war-mûmak's tower, hot-country rig",
