@@ -423,9 +423,22 @@ title.</span></div>
     return {entries:m.names.map(function(n){
       return {name:n[0], n_indexes:n[1], _letter:n[2], parts:[], pages:{}, _stub:true};
     }), volumes:m.volumes, count:m.count};
-  }).catch(function(){
-    LAZY=false;
-    return fetch('arda_index_merged.json').then(function(r){return r.json()});
+  }).catch(function(e){
+    /* NO FALLBACK TO THE WHOLE FILE, AND THE REASON IS A MEASUREMENT.
+       The first version fell back to arda_index_merged.json if the manifest were missing. That
+       protected against nothing -- the page and the manifest ship in the SAME COMMIT, so there
+       is no window in which one exists without the other -- and it cost the truth of the
+       budget: the guard reads every fetch() literal on the page, so a fallback nobody takes
+       still counted 685,589 bytes against the hall, and theindex measured 793,345 when a
+       reader fetches about 70,000.
+       A DEAD BRANCH THAT MAKES A MEASUREMENT LIE IS WORSE THAN NO BRANCH. If the manifest
+       genuinely cannot be fetched the hall says so, which is what the archive does everywhere
+       else it cannot ask. */
+    document.getElementById("out").innerHTML=
+      '<p class="cite">The index manifest could not be loaded, so nothing was listed. '
+      +'<b>This is not a statement that the archive holds no names</b> — it is a failure to '
+      +'fetch <code>arda_index_manifest.json</code>.</p>';
+    throw e;
   });
  }
  /* Fetch one letter's glosses and splice them into the stubs already on the page. */
