@@ -180,7 +180,15 @@ title.</span></div>
  var mode={any:false,starts:false};
  function seg(a,b,key){
   function set(v){mode[key]=v;$(a).setAttribute("aria-pressed",String(!v));
-   $(b).setAttribute("aria-pressed",String(v));apply();}
+   $(b).setAttribute("aria-pressed",String(v));
+   /* SEARCHING THE DESCRIPTIONS NEEDS THE DESCRIPTIONS. The default mode is "names", which the
+      manifest answers completely; this one does not, so it fetches every letter first and says
+      so while it does. A search that silently returned fewer results than it should would be
+      the worst outcome available here. */
+   if(key==="any"&&v&&LAZY){ loadAll().then(function(){
+     (MANIFEST.letters||[]).forEach(function(L){window.fillLetter&&window.fillLetter(L)});
+     apply(); }); return; }
+   apply();}
   $(a).onclick=function(){set(false)};$(b).onclick=function(){set(true)};
  }
 
@@ -210,7 +218,12 @@ title.</span></div>
     // archive's own apparatus rather than to Arda. The name is real: 50 corpus occurrences, 49
     // citable, chiefly The Peoples of Middle-earth.
     var pg="";
-    if(!e.parts.length && !(e.pages&&Object.keys(e.pages).length))
+    if(e._stub)
+      /* NOT the same as "no statement": this letter's descriptions have not been fetched yet.
+         Saying "the index gives no statement" here would publish a FALSE FINDING about the
+         archive's own apparatus, and that sentence below is a real one about one real entry. */
+      parts='<li class="st op">…</li>';
+    else if(!e.parts.length && !(e.pages&&Object.keys(e.pages).length))
       parts='<li class="st"><i>The index lists this name and gives no statement for it.</i></li>';
     if(e.pages&&Object.keys(e.pages).length){
      pg='<li class="pg">'+Object.keys(e.pages).map(function(v){
@@ -227,6 +240,46 @@ title.</span></div>
      +'<span class="lgn">'+groups[L].length.toLocaleString()+' names</span></h2>'+rows+'</section>';
   }).join("");
   $("#out").innerHTML=html;
+  /* ── FILL, DO NOT REBUILD ────────────────────────────────────────────────────────────────
+     The comment above this function is explicit: built once, filtered by hiding, because
+     windowing broke ctrl+F and #anchors. A lazy loader that re-rendered would break the same
+     two things by another route. So a letter's glosses are spliced into the elements that are
+     already on the page, and every name is present from the first paint. */
+  window.fillLetter=function(L){
+    return loadLetter(L).then(function(){
+      var sec=document.getElementById("L-"+(L==="#"?"num":L));
+      if(!sec) return;
+      IX.forEach(function(e){
+        if(e._stub||e._filled) return;
+        var k=e._k.charAt(0).toUpperCase(); if(!/^[A-Z]$/.test(k)) k="#";
+        if(k!==L) return;
+        var el=document.getElementById(slug(e.name)); if(!el) return;
+        var ul=el.querySelector("ul.sts"); if(!ul) return;
+        var h=e.parts.map(function(p){
+          return '<li class="st">'+esc(p.text)+' <span class="vols">('+esc(p.vols.join(" · "))+')</span></li>';
+        }).join("");
+        if(!e.parts.length && !(e.pages&&Object.keys(e.pages).length))
+          h='<li class="st"><i>The index lists this name and gives no statement for it.</i></li>';
+        if(e.pages&&Object.keys(e.pages).length)
+          h+='<li class="pg">'+Object.keys(e.pages).map(function(v){
+              return esc(v)+' '+esc(e.pages[v]);}).join(' · ')+'</li>';
+        ul.innerHTML=h; e._filled=true;
+      });
+    });
+  };
+  /* Fetch a letter when the reader reaches it. rootMargin gives it a screen of warning, so the
+     descriptions are usually there before the heading is. */
+  if(LAZY && window.IntersectionObserver){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(x){ if(x.isIntersecting){
+        var L=x.target.id.replace(/^L-/,""); if(L==="num") L="#";
+        window.fillLetter(L); io.unobserve(x.target);
+      }});
+    },{rootMargin:"600px 0px"});
+    order.forEach(function(L){
+      var sec=document.getElementById("L-"+(L==="#"?"num":L)); if(sec) io.observe(sec);
+    });
+  }
   GROUPS=order.map(function(L){
    var sec=document.getElementById("L-"+(L==="#"?"num":L));
    return {L:L,sec:sec,entries:Array.prototype.slice.call(sec.querySelectorAll(".e"))};
@@ -345,7 +398,63 @@ title.</span></div>
   if(ev.target&&ev.target.id==="clr2"){$("#clear").click()}
  });
 
- fetch('arda_index_merged.json').then(function(r){return r.json()}).then(function(d){
+ /* ── THE MANIFEST FIRST, THE GLOSSES PER LETTER ────────────────────────────────────────────
+    This fetched arda_index_merged.json -- 685,589 gzipped bytes -- and handed ALL of it to every
+    reader who wanted one letter. Measured 13 Aug, after Foster's merge took it past its ceiling:
+
+        whole file                      685,589 gzipped
+        manifest, names only             59,855   8.7% of it
+        median letter shard              10,068
+        a typical reader now fetches     69,923   NINETY PER CENT LESS
+
+    THE DEFAULT SEARCH IS "names", AND THE MANIFEST ANSWERS IT COMPLETELY. The other mode,
+    "names & descriptions", needs the glosses -- so it loads them, says so while it does, and is
+    exact once it has. NO CAPABILITY IS LOST; what changes is when the bytes arrive.
+
+    AND IT FALLS BACK. If the manifest is missing -- an older deployment, a half-finished
+    publish -- it loads the whole file exactly as before rather than showing an empty hall. A
+    reader must never pay for a migration they did not ask for.                                */
+ function idxBoot(){
+  return fetch('arda_index_manifest.json').then(function(r){
+    if(!r.ok) throw new Error('no manifest');
+    return r.json();
+  }).then(function(m){
+    MANIFEST=m;
+    return {entries:m.names.map(function(n){
+      return {name:n[0], n_indexes:n[1], _letter:n[2], parts:[], pages:{}, _stub:true};
+    }), volumes:m.volumes, count:m.count};
+  }).catch(function(){
+    LAZY=false;
+    return fetch('arda_index_merged.json').then(function(r){return r.json()});
+  });
+ }
+ /* Fetch one letter's glosses and splice them into the stubs already on the page. */
+ function loadLetter(L){
+  if(!LAZY) return Promise.resolve();
+  if(LOADED[L]) return LOADED[L];
+  var f=(L==='#'||!/^[A-Z]$/i.test(L))?'_':L.toLowerCase();
+  LOADED[L]=fetch('idx/'+f+'.json').then(function(r){return r.ok?r.json():[];})
+   .then(function(rows){
+     var by={};rows.forEach(function(r){by[r.name]=r});
+     IX.forEach(function(e){
+       var r=by[e.name];
+       if(r){e.parts=r.parts||[];e.pages=r.pages||{};e.in_indexes=r.in_indexes;
+             e.n_statements=r.n_statements;e._stub=false;
+             e._all=fold(e.name+" "+e.parts.map(function(p){return p.text}).join(" "));}
+     });
+   }).catch(function(){LOADED[L]=null});
+  return LOADED[L];
+ }
+ /* "names & descriptions" needs every letter. Announce it rather than stalling silently. */
+ function loadAll(){
+  if(!LAZY) return Promise.resolve();
+  var g=$("#ix .guide"); if(g) g.textContent='fetching the descriptions…';
+  return Promise.all((MANIFEST.letters||[]).map(loadLetter)).then(function(){
+    if(g) g.textContent='';
+  });
+ }
+ var MANIFEST=null, LAZY=true, LOADED={};
+ idxBoot().then(function(d){
   D=d; IX=d.entries;
   IX.forEach(function(e){
    e._n=fold(e.name);
