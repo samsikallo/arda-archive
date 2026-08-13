@@ -30,7 +30,7 @@ const GROUPS=[
   ["Encyclopedia / Lexicon",[["annals.html","annals of the archive","what's new on this site"],
    ["corpus.html","the corpus","99 volumes, concordance, queries"],
    ["canon.html","is it canon?","ask a phrase, see which volume attests it"],
-   ["theindex.html","the index","8,041 names, the editors' own glosses"],   ["compare.html","side by side","two lives or two battles"],
+   ["theindex.html","the index","9,416 names, the editors' own glosses"],   ["compare.html","side by side","two lives or two battles"],
    ["quiz.html","the trial","test your lore"],
    ["tours.html","tours","guided roads through the halls"]]],
 ];
