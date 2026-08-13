@@ -264,7 +264,7 @@ fetch("arda_gazetteer.json").then(r=>r.json()).then(d=>{
      Object.keys(byRoot[r]).sort().map(leaf=>
       node("k:"+r+":"+leaf,leaf,byRoot[r][leaf].map(k=>placeNode(k,3,[])))
      )));
-   top.push(node("unplaced","— no container recorded in the corpus",rootKids,{silent:true}));
+   top.push(node("unplaced","— no container established",rootKids,{silent:true}));
   }
   return top;
  }
