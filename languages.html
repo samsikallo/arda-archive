@@ -252,11 +252,8 @@ p.innerHTML=`<h2>Writing Lab</h2><div class="warn" style="border-left:4px solid 
 <div class="warn"><b>Letterforms:</b> authentic vector glyphs of the App E tables (via Wikimedia Commons, checked against the plate). Tehtar are drawn schematically above their tengwa. Mode-appropriateness is labeled — e.g. classical-Quenya tehta placement over English text is a playful, non-canonical use.</div>
 <textarea id="labin">elen sila lumenn omentielvo</textarea><br>
 <select id="labmode">
-<option value="cq">Tengwar — classical Quenya mode (tehta on preceding consonant)</option>
-<option value="gu">Tengwar — General Use (Sindarin / English / Westron; tehta on following consonant)</option>
-<option value="cd">Cirth — Angerthas Daeron (Sindarin)</option>
-<option value="cm">Cirth — Angerthas Moria (Khuzdul)</option>
-<option value="ce">Cirth — mode of Erebor (Westron / English)</option></select>
+<option value="gu">Tengwar — General Use (Sindarin / English / Westron) — this Lab draws the FOLLOWING-consonant placement only; both are attested</option>
+</select>
 <button onclick="renderLab()" style="font:13px Georgia;padding:5px 14px;border-radius:6px;border:1px solid #b0a58e;background:#e8dfc6;cursor:pointer">write ✒</button>
 <div id="labnote" class="cite"></div>
 <div id="glyphout" style="background:#fffdf6;border:1px solid var(--line);border-radius:8px;margin-top:10px;padding:16px;overflow-x:auto;white-space:nowrap;min-height:90px"></div>

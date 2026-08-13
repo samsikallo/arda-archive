@@ -642,4 +642,55 @@ glyphs render only where a font that carries them is installed.</p></div>
   else go();
 })();
 </script>
+<style>
+#gu .r{border-left:3px solid #c9a227;padding:5px 0 5px 11px;margin:8px 0}
+#gu .mk{font:11px monospace;color:#7a6a50}
+#gu .no{border-left-color:#7a3a2a}
+:root[data-theme="dark"] #gu .r{border-left-color:#c9a227!important}
+</style>
+<script>
+(function generaluse(){
+  function esc(s){return String(s==null?'':s).replace(/[<>&]/g,function(c){
+    return {'<':'&lt;','>':'&gt;','&':'&amp;'}[c];});}
+  var host=document.createElement('section');
+  host.id='gu'; host.style.cssText='padding:14px 26px 26px;max-width:1100px';
+  host.innerHTML='<h2 style="font-variant:small-caps;letter-spacing:.05em">The General Use</h2>'
+    +'<p class="cite">Loading the mode…</p>';
+  var a=document.getElementById('main')||document.body;
+  a.appendChild(host);
+
+  fetch('arda_tengwar_mode_gu.json').then(function(r){return r.json();}).then(function(d){
+    var P=d.placement||{}, h='';
+    h+='<p class="cite"><b>'+esc(d.rule)+'</b></p>';
+    /* THE PLACEMENT IS THE MODE'S DEFINING PARAMETER, and the specimen numbers are printed so a
+       reader can check the claim rather than take it. */
+    Object.keys(P).forEach(function(k){
+      var p=P[k];
+      h+='<div class="r"><b>tehta over the '+esc(k.toUpperCase())+' tengwa</b> — '
+        +esc(p.rule)+'<br><span class="mk">'+p.specimens.length+' attested specimen(s): DTS '
+        +p.specimens.join(', ')+'</span><br><span class="cite">'+esc(p.cite)+'</span></div>';
+    });
+    h+='<h3 style="font-variant:small-caps;font-size:15px;margin-top:18px">What the sources settle</h3>';
+    (d.rules||[]).forEach(function(r){
+      h+='<div class="r"><span class="mk">'+esc(r.mark)+'</span> <b>'+esc(r.what)+'</b> — '
+        +esc(r.says)+'<br><span class="cite">'+esc(r.cite)+'</span></div>';
+    });
+    h+='<h3 style="font-variant:small-caps;font-size:15px;margin-top:18px">What they do not</h3>';
+    var u=d.unresolved||{};
+    Object.keys(u).forEach(function(k){
+      h+='<div class="r no"><b>'+esc(k)+'</b><br><span class="cite">'+esc(u[k])+'</span></div>';
+    });
+    h+='<p class="cite" style="margin-top:14px"><b>This page does not transcribe into the General '
+      +'Use, and that is a refusal rather than an omission.</b> The letter table is a picture in '
+      +'every source this archive holds, so a transcriber here would be guessing with a citation '
+      +'attached. The uncited one on <a href="languages.html">tongues &amp; letters</a> is kept, '
+      +'labelled as uncited, until the plate is read.</p>';
+    host.innerHTML='<h2 style="font-variant:small-caps;letter-spacing:.05em">The General Use</h2>'+h;
+  }).catch(function(){
+    host.innerHTML='<h2 style="font-variant:small-caps">The General Use</h2>'
+      +'<p class="cite">The mode could not be loaded, so nothing is stated here. '
+      +'<b>This is not a statement about the General Use</b> — it is a failure to ask.</p>';
+  });
+})();
+</script>
 <script src="nav.js"></script><script src="glossary.js" defer></script></body></html>
