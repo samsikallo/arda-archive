@@ -303,6 +303,12 @@ title.</span></div>
  function apply(){
   if(!D)return;
   var q=fold($("#q").value.trim()), vol=$("#vol").value;
+  /* A VOLUME FILTER OVER UNFETCHED ENTRIES WOULD SILENTLY HIDE THEM. in_indexes is empty on
+     a stub, so every unloaded name would fail the test and the reader would be shown a
+     confident subset. Fetch the letters first, once, then filter for real. */
+  if(vol && LAZY && !ALLLOADED){ ALLLOADED=true;
+    loadAll().then(function(){(MANIFEST.letters||[]).forEach(function(L){
+      window.fillLetter&&window.fillLetter(L)}); apply();}); return; }
   var only=$("#only").checked, haspg=$("#haspg").checked;
   var shown=0,firstEl=null;
   for(var i=0;i<IX.length;i++){
@@ -421,7 +427,11 @@ title.</span></div>
   }).then(function(m){
     MANIFEST=m;
     return {entries:m.names.map(function(n){
-      return {name:n[0], n_indexes:n[1], _letter:n[2], parts:[], pages:{}, _stub:true};
+      /* EVERY FIELD apply() READS MUST EXIST ON A STUB. Omitting in_indexes cost three uncaught
+         TypeErrors in traverse_check -- `e.in_indexes.indexOf(vol)` on an unfetched entry --
+         and the guard caught it on the first walk. A partial object is a null in disguise. */
+      return {name:n[0], n_indexes:n[1], _letter:n[2], parts:[], pages:{},
+              in_indexes:[], n_statements:0, _stub:true};
     }), volumes:m.volumes, count:m.count};
   }).catch(function(e){
     /* NO FALLBACK TO THE WHOLE FILE, AND THE REASON IS A MEASUREMENT.
@@ -466,7 +476,7 @@ title.</span></div>
     if(g) g.textContent='';
   });
  }
- var MANIFEST=null, LAZY=true, LOADED={};
+ var MANIFEST=null, LAZY=true, LOADED={}, ALLLOADED=false;
  idxBoot().then(function(d){
   D=d; IX=d.entries;
   IX.forEach(function(e){
