@@ -4057,6 +4057,13 @@
    "source": "map/gen_ref.py"
   },
   {
+   "file": "valinor.svg",
+   "what": "Aman, drawn from the corpus and labelled as ours",
+   "hand": "the archive",
+   "licence": "own work — drawn by this archive's own generators from the corpus",
+   "source": "map/gen_valinor.py"
+  },
+  {
    "file": "sarati/Sarati,_Phonetic_Form_-_long_vowels.png",
    "what": "A plate of the sarati, Rúmil's script, from the Commons documentation of the system: a single letter, a vowel sign, or a specimen",
    "source": "Wikimedia Commons, File:Sarati,_Phonetic_Form_-_long_vowels.png",
@@ -4470,13 +4477,6 @@
    "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/"
   },
   {
-   "file": "sarati/Sarati_-_specimen_the_Two_Trees.png",
-   "what": "A passage of continuous sarati in vertical columns, the Two Trees. Its reading, supplied by the archive's owner: Valar empannen Aldaru / mi kon-alkorin / ar sealalan taro / ar silankalan ve laure ve misil — the Gods planted the Two Trees in a blessed garth, and they grow high and shine like gold like silver. The forms are attested early Qenya; their weight sits in Vinyar Tengwar 27, which this archive holds only as a machine reading, so the text is attested and uncitable at once.",
-   "hand": "Quentandil, contributor to Tolkien Gateway",
-   "licence": "GNU Free Documentation License 1.2 or later — no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts. https://www.gnu.org/licenses/fdl-1.2.html",
-   "source": "https://tolkiengateway.net/wiki/Sarati — file page read by the archive's owner, 31 July 2026; tolkiengateway.net returns HTTP 403 to this archive"
-  },
-  {
    "file": "sarati/Sarati_-_vowel_short_carrier_(horizontal).png",
    "what": "A plate of the sarati, Rúmil's script, from the Commons documentation of the system: a single letter, a vowel sign, or a specimen",
    "source": "Wikimedia Commons, File:Sarati_-_vowel_short_carrier_(horizontal).png",
@@ -4519,11 +4519,851 @@
    "licence": "public domain — as declared on the Commons file page"
   },
   {
-   "file": "valinor.svg",
-   "what": "Aman, drawn from the corpus and labelled as ours",
-   "hand": "the archive",
-   "licence": "own work — drawn by this archive's own generators from the corpus",
-   "source": "map/gen_valinor.py"
+   "file": "sarati/cells/sarati_Sarati_Early_Form_-_vowels_r0_c4.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Early_Form)_-_vowels.gif (row 0, col 4) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Early_Form)_-_vowels.gif, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Early_Form_-_vowels_r0_c9.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Early_Form)_-_vowels.gif (row 0, col 9) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Early_Form)_-_vowels.gif, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Early_Form_-_vowels_r1_c0.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Early_Form)_-_vowels.gif (row 1, col 0) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Early_Form)_-_vowels.gif, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Early_Form_-_vowels_r1_c1.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Early_Form)_-_vowels.gif (row 1, col 1) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Early_Form)_-_vowels.gif, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Early_Form_-_vowels_r1_c2.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Early_Form)_-_vowels.gif (row 1, col 2) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Early_Form)_-_vowels.gif, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Early_Form_-_vowels_r1_c3.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Early_Form)_-_vowels.gif (row 1, col 3) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Early_Form)_-_vowels.gif, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Early_Form_-_vowels_r2_c0.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Early_Form)_-_vowels.gif (row 2, col 0) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Early_Form)_-_vowels.gif, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Early_Form_-_vowels_r2_c1.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Early_Form)_-_vowels.gif (row 2, col 1) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Early_Form)_-_vowels.gif, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Early_Form_-_vowels_r2_c2.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Early_Form)_-_vowels.gif (row 2, col 2) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Early_Form)_-_vowels.gif, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Early_Form_-_vowels_r2_c3.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Early_Form)_-_vowels.gif (row 2, col 3) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Early_Form)_-_vowels.gif, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r0_c0.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 0, col 0) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r0_c1.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 0, col 1) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r0_c10.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 0, col 10) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r0_c11.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 0, col 11) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r0_c12.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 0, col 12) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r0_c2.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 0, col 2) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r0_c3.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 0, col 3) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r0_c4.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 0, col 4) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r0_c5.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 0, col 5) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r0_c6.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 0, col 6) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r0_c7.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 0, col 7) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r0_c8.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 0, col 8) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r0_c9.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 0, col 9) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r1_c0.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 1, col 0) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r1_c1.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 1, col 1) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r1_c2.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 1, col 2) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r1_c3.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 1, col 3) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r1_c4.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 1, col 4) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r1_c5.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 1, col 5) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r2_c0.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 2, col 0) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r2_c1.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 2, col 1) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r2_c10.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 2, col 10) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r2_c11.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 2, col 11) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r2_c2.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 2, col 2) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r2_c3.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 2, col 3) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r2_c4.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 2, col 4) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r2_c5.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 2, col 5) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r2_c6.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 2, col 6) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r2_c7.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 2, col 7) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r2_c8.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 2, col 8) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r2_c9.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 2, col 9) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r3_c0.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 3, col 0) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r3_c1.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 3, col 1) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r3_c2.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 3, col 2) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r3_c3.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 3, col 3) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r3_c4.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 3, col 4) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r3_c5.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 3, col 5) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r3_c6.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 3, col 6) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r3_c7.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 3, col 7) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r4_c0.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 4, col 0) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r4_c1.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 4, col 1) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r4_c2.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 4, col 2) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r4_c3.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 4, col 3) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r4_c4.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 4, col 4) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r4_c5.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 4, col 5) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r5_c0.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 5, col 0) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r6_c0.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 6, col 0) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r6_c1.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 6, col 1) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r6_c2.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 6, col 2) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Late_Form_-_vowels_r6_c3.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Late_Form)_-_vowels.png (row 6, col 3) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Late_Form)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r0_c0.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 0, col 0) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r0_c1.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 0, col 1) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r0_c10.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 0, col 10) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r0_c11.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 0, col 11) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r0_c2.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 0, col 2) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r0_c3.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 0, col 3) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r0_c4.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 0, col 4) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r0_c5.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 0, col 5) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r0_c6.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 0, col 6) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r0_c7.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 0, col 7) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r0_c8.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 0, col 8) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r0_c9.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 0, col 9) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r1_c0.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 1, col 0) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r1_c1.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 1, col 1) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r1_c10.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 1, col 10) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r1_c11.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 1, col 11) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r1_c12.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 1, col 12) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r1_c2.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 1, col 2) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r1_c3.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 1, col 3) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r1_c4.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 1, col 4) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r1_c5.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 1, col 5) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r1_c6.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 1, col 6) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r1_c7.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 1, col 7) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r1_c8.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 1, col 8) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_long_vowels_r1_c9.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_long_vowels.png (row 1, col 9) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_long_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r0_c0.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 0, col 0) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r0_c1.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 0, col 1) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r0_c10.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 0, col 10) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r0_c11.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 0, col 11) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r0_c12.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 0, col 12) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r0_c13.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 0, col 13) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r0_c14.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 0, col 14) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r0_c2.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 0, col 2) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r0_c3.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 0, col 3) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r0_c4.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 0, col 4) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r0_c5.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 0, col 5) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r0_c6.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 0, col 6) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r0_c7.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 0, col 7) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r0_c8.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 0, col 8) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r0_c9.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 0, col 9) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c0.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 0) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c1.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 1) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c10.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 10) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c11.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 11) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c12.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 12) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c13.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 13) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c14.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 14) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c15.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 15) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c16.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 16) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c17.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 17) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c18.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 18) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c19.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 19) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c2.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 2) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c3.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 3) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c4.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 4) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c5.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 5) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c6.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 6) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c7.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 7) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c8.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 8) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/cells/sarati_Sarati_Quenya_-_vowels_r1_c9.png",
+   "what": "one cell CROPPED BY THIS ARCHIVE from the plate Sarati_(Quenya)_-_vowels.png (row 1, col 9) -- it is a crop of a Commons plate, not a Commons file, and no title of this name exists there",
+   "hand": "Hëernamae Pëen Ionoëryn, uploaded to Wikimedia Commons by JanezPavelZebovec; the CROP is the archive's own, made by map/segment_sarati_vowels.py",
+   "licence": "CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/ -- INHERITED from the parent plate, which obliges the same attribution",
+   "source": "a crop of sarati/Sarati_(Quenya)_-_vowels.png, recorded per cell in arda_sarati_vowel_cells.json"
+  },
+  {
+   "file": "sarati/Sarati_-_specimen_the_Two_Trees.png",
+   "what": "A passage of continuous sarati in vertical columns, the Two Trees. Its reading, supplied by the archive's owner: Valar empannen Aldaru / mi kon-alkorin / ar sealalan taro / ar silankalan ve laure ve misil — the Gods planted the Two Trees in a blessed garth, and they grow high and shine like gold like silver. The forms are attested early Qenya; their weight sits in Vinyar Tengwar 27, which this archive holds only as a machine reading, so the text is attested and uncitable at once.",
+   "hand": "Quentandil, contributor to Tolkien Gateway",
+   "licence": "GNU Free Documentation License 1.2 or later — no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts. https://www.gnu.org/licenses/fdl-1.2.html",
+   "source": "https://tolkiengateway.net/wiki/Sarati — file page read by the archive's owner, 31 July 2026; tolkiengateway.net returns HTTP 403 to this archive"
   }
  ],
  "pending_provenance": []
