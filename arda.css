@@ -346,25 +346,11 @@ html.arda-dark{background:#181410}
    Measured, not assumed: 212 light elements remain and 119 of them are <img>. */
 
 
-/* ── THE READABILITY LAYER, 13 Aug — TEMPORARY, AND MEASURED ────────────────────────────────
-   The owner: "across all the Arda Archive many texts are unreadable because they are lighter
-   texts on light background or darker texts on dark background." MEASURED in a browser over
-   http, both themes, computing WCAG contrast on every rendered text node: 885 failures under
-   4.5:1 across eight halls. The worst, by count:
-
-     1.88:1  .gl        rgb(90,70,38)   on rgb(34,28,21)   x211  glossary marks, dark on dark
-     1.20:1  a chip     rgb(230,220,194) on rgb(233,243,228) x200  LIGHT ON LIGHT
-     4.01:1  .sub2      rgb(138,122,82) on rgb(34,28,21)   x132  the menu's own sub-labels
-     2.07:1  .el        rgb(40,82,122)  on rgb(34,28,21)    x72  race colours, chosen for parchment
-
-   THE CAUSE IS ONE MISTAKE MADE MANY TIMES: colours were chosen against the PARCHMENT ground
-   and dark mode flipped the ground without flipping them. They are not dark-mode colours that
-   went wrong; they are light-mode colours that were never given a dark counterpart.
-
-   THIS IS A HOLDING FIX AND SAYS SO. The book-look rework replaces the whole palette; until
-   then a reader must be able to READ. It is deliberately blunt -- it raises lightness rather
-   than re-designing -- and it is scoped to the dark theme plus the one light-on-light case, so
-   it cannot disturb what already passes. */
+/* THE READABILITY LAYER, 13 Aug — HOLDING FIX. Dark-mode contrast measured in a browser:
+   885 failures under 4.5:1, reduced to 175. Light mode verified unchanged at 354. The inks
+   were chosen for parchment and dark mode flipped the ground without flipping them; blunt
+   because they live in 39 pages' own <style>. Race/kind marks re-applied after, since those
+   carry meaning. Full account and the four measured attempts: the roadmap, 13 Aug. */
 :root[data-theme="dark"]{--a-ink:#e8dcc0;--a-mut:#b9a883;--a-line:#5a4c32}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --a-ink:#e8dcc0;--a-mut:#b9a883;--a-line:#5a4c32}}
@@ -376,28 +362,18 @@ html.arda-dark{background:#181410}
 :root[data-theme="dark"] .cite,
 :root[data-theme="dark"] .vol,
 :root[data-theme="dark"] .mut{color:#c3b28c !important}
-/* The race/kind colours were picked for parchment and are unreadable on the dark ground.
-   Lightened, keeping each hue distinguishable from the others -- the colour still CARRIES
-   MEANING here, so washing them all to one grey would destroy information to fix contrast. */
+
 :root[data-theme="dark"] .el{color:#8fc0e8 !important}
 :root[data-theme="dark"] .nu{color:#9fc4e0 !important}
 :root[data-theme="dark"] .ma{color:#d8b98a !important}
 :root[data-theme="dark"] .dw{color:#d3a6d3 !important}
 :root[data-theme="dark"] .ho{color:#e0c07a !important}
 :root[data-theme="dark"] .da{color:#d69a92 !important}
-/* LIGHT ON LIGHT, and it fails in BOTH themes because the chip sets its own pale ground.
-   Any element whose own background is pale gets dark ink, whatever the theme says. */
+
 [style*="background:#e9f3e4"],[style*="background:#eef6ea"],
 .chip,.tag,.pill{color:#2a241a !important}
 
-/* ── AND THE ACTUAL ROOT CAUSE, FOUND BY THE FIRST FIX MAKING IT VISIBLE ────────────────────
-   Lightening the text took dark-on-dark from 885 to 404 -- and the residue was WORSE in kind:
-   my new light gold sitting on rgb(255,253,246). THE CARDS NEVER WENT DARK. Pages declare
-   `background:#fffdf5` on their panels in their own <style> with no dark counterpart, so the
-   GROUND flips and the PANELS do not. Every "light text on light background" the owner saw is
-   this, and lightening text can only ever make it worse.
-   So the panels are darkened, which fixes both directions at once. Blunt, holding, and scoped
-   to the dark theme. Inline hexes are matched because that is how most of them are written. */
+
 :root[data-theme="dark"] [style*="#fffdf5"],
 :root[data-theme="dark"] [style*="#fdfaf2"],
 :root[data-theme="dark"] [style*="#f7f0de"],
@@ -411,17 +387,11 @@ html.arda-dark{background:#181410}
 :root[data-theme="dark"] textarea,
 :root[data-theme="dark"] select{background:#241f18 !important;color:#e8dcc0 !important;
   border-color:#5a4c32 !important}
-/* Inside a darkened panel the marks must read against IT, not against parchment. */
+
 :root[data-theme="dark"] .card .cite,:root[data-theme="dark"] .intro .cite,
 :root[data-theme="dark"] .hit .vol,:root[data-theme="dark"] .cite{color:#c3b28c !important}
 
-/* ── THE INK SET, OVERRIDDEN BY VALUE ───────────────────────────────────────────────────
-   Chasing selectors did not work: the dark inks are written 81 times as `color:#5a4626`, 62 as
-   `#7a4a12`, and so on -- some inline, some in each page's own <style>, across 39 halls. So the
-   COLOURS THEMSELVES are overridden, matched on the inline attribute, each mapped to a lighter
-   counterpart OF THE SAME HUE so the colour keeps whatever meaning it carried. Counted from
-   site/*.html, commonest first. This is a holding fix; the book-look rework replaces the
-   palette wholesale. */
+
 :root[data-theme="dark"] [style*="#5a4626"]{color:#d8bd86 !important}
 :root[data-theme="dark"] [style*="#7a4a12"]{color:#e0b878 !important}
 :root[data-theme="dark"] [style*="#7a6a50"]{color:#c3b28c !important}
@@ -438,16 +408,7 @@ html.arda-dark{background:#181410}
 :root[data-theme="dark"] [style*="#a2762a"]{color:#e0c07a !important}
 :root[data-theme="dark"] [style*="#5a3a35"]{color:#d69a92 !important}
 
-/* ── AND THE BLUNT RULE, BECAUSE THE PRECISE ONES DID NOT REACH ────────────────────────────
-   Three narrower attempts took 885 -> 404 -> 397 -> 380. Each failed for the same reason: the
-   dark inks live in each page's OWN <style>, not in inline attributes, so neither an attribute
-   selector nor a class list reaches them. arda.css loads LAST, so a declaration here with
-   !important does reach them -- all 39 halls at once.
-   IT IS DELIBERATELY BLUNT AND DELIBERATELY TEMPORARY. It flattens colour that was chosen for
-   parchment, which is a real loss; being able to READ THE TEXT is a larger gain, and the
-   book-look rework replaces the palette wholesale. The colours that CARRY MEANING -- the race
-   and kind marks -- are re-applied after it, because washing those to one ink would destroy
-   information rather than restore it. */
+
 :root[data-theme="dark"] p,:root[data-theme="dark"] li,:root[data-theme="dark"] td,
 :root[data-theme="dark"] th,:root[data-theme="dark"] dd,:root[data-theme="dark"] dt,
 :root[data-theme="dark"] label,:root[data-theme="dark"] figcaption,
@@ -457,7 +418,7 @@ html.arda-dark{background:#181410}
   color:#e8dcc0 !important}
 :root[data-theme="dark"] .cite,:root[data-theme="dark"] .vol,:root[data-theme="dark"] .mut,
 :root[data-theme="dark"] .sub,:root[data-theme="dark"] .sub2{color:#c3b28c !important}
-/* re-applied AFTER the blunt rule: these carry meaning, not decoration */
+
 :root[data-theme="dark"] .el{color:#8fc0e8 !important}
 :root[data-theme="dark"] .nu{color:#9fc4e0 !important}
 :root[data-theme="dark"] .ma{color:#d8b98a !important}
