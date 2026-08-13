@@ -240,18 +240,9 @@ FB.addEventListener("click",()=>{
 // if a future rule ever gives the header a different border in the dark, the height must be
 // measured after the ground is chosen and not before.
 (function(){
- // ── STAGE 0 OF THE BOOK-LOOK: THE SWITCH, WHICH SHIPS NOTHING VISIBLE ─────────────────────
- // The codex rework cannot add per-page HTML -- the smallest plausible codex markup is 402 raw
- // bytes and breaks EIGHT page ceilings on its own, index.html having ZERO headroom. So it will
- // be CSS over markup that already exists, delivered by arda.css, which every one of the 621
- // published pages already links.
- //
- // THIS ATTRIBUTE IS THE ESCAPE HATCH, AND IT EXISTS BEFORE ANYTHING DEPENDS ON IT. Every later
- // stage hangs its rules off :root[data-codex="on"], so the whole rework reverses with ONE
- // ATTRIBUTE, on every page at once, without a revert and without a deploy.
- //
- // IT DEFAULTS TO OFF AND DRAWS NOTHING TODAY. A switch built after the thing it switches is a
- // switch nobody trusts to be complete.
+ // STAGE 0 OF THE BOOK-LOOK: the escape hatch, built BEFORE anything depends on it. Later
+ // stages hang off :root[data-codex="on"], so the whole rework reverses with one attribute
+ // on all 621 pages. Defaults off, draws nothing. Full reasoning: the roadmap, 13 Aug.
  try{document.documentElement.setAttribute("data-codex",
    localStorage.getItem("arda-codex")==="on"?"on":"off");}catch(e){
    document.documentElement.setAttribute("data-codex","off");}

@@ -89,14 +89,8 @@ a:focus-visible{outline:2px solid var(--a-gold) !important;}
    Measured rather than hardcoded because the header WRAPS: 44px on a wide screen, 70px on a phone,
    and a constant would be wrong on one of them. */
 :root{--a-hdr-h:0px}
-/* STAGE 0 OF THE BOOK-LOOK: THE TOKENS. Values only, no rule uses them yet, and that is the
-   point -- every later stage reads these instead of inventing its own, so a palette change is
-   one edit rather than forty. Named for the manuscript, not for the CSS: `rubric` is the red a
-   scribe used for headings, `vellum` the ground, `gold` the ornament stroke.
-   AND THE GOLD IS DECLARED UNSAFE FOR TEXT, MEASURED: #c9a227 on parchment is 1.94:1, which
-   fails contrast outright. It is an ORNAMENT STROKE. A later stage that sets it as a colour on
-   running text will be refused by this archive's own accessibility guards, and the note is here
-   so that refusal is expected rather than discovered. */
+/* BOOK-LOOK STAGE 0 TOKENS. Values only; no rule uses them yet. GOLD IS UNSAFE FOR TEXT --
+   #c9a227 on parchment is 1.94:1 and fails contrast. Ornament stroke only. */
 :root{--a-vellum:#efe6cd;--a-rubric:#8c2f1e;--a-gold-stroke:#c9a227;
       --a-ink-brown:#3a3226;--a-codex-rule:#b0a58e}
 
