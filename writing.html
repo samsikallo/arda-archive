@@ -693,4 +693,94 @@ glyphs render only where a font that carries them is installed.</p></div>
   });
 })();
 </script>
+<style>
+#sw .sq{display:inline-block;text-align:center;margin:0 3px 8px;vertical-align:top}
+#sw .sq img{height:56px;width:auto;background:#fffdf5;border:1px solid #d9cfae;padding:2px}
+#sw .sq .v{font:11px monospace;color:#7a6a50;display:block}
+#sw .miss img{display:none}
+#sw .miss{border-left:3px solid #7a3a2a;padding-left:6px;font-size:11px;color:#7a3a2a}
+:root[data-theme="dark"] #sw .sq img{background:#efe6cd}
+</style>
+<script>
+(function saratiwrite(){
+  function esc(s){return String(s==null?'':s).replace(/[<>&"]/g,function(c){
+    return {'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c];});}
+  var host=document.createElement('section');
+  host.id='sw'; host.style.cssText='padding:14px 26px 26px;max-width:1100px';
+  host.innerHTML='<h2 style="font-variant:small-caps;letter-spacing:.05em">Write in Sarati</h2>'
+    +'<p class="cite">Loading the plates…</p>';
+  (document.getElementById('main')||document.body).appendChild(host);
+
+  fetch('arda_sarati.json').then(function(r){return r.json();}).then(function(D){
+    var forms=Object.keys(D.forms||{});
+    var head='<h2 style="font-variant:small-caps;letter-spacing:.05em">Write in Sarati</h2>'
+      +'<p class="cite"><b>These are the archive’s plates, not a font.</b> The only font '
+      +'covering the Sarati block is a 16×16 bitmap whose glyphs are named '
+      +'<code>cid00904</code>–<code>cid00951</code> — bare identifiers that say nothing, '
+      +'so nothing here maps a sound to a codepoint. Plates: '+esc(D.credit.plates)+', '
+      +esc(D.credit.licence)+'.</p>'
+      +'<div style="display:flex;gap:8px;margin:12px 0 4px;flex-wrap:wrap">'
+      +'<input id="swq" style="flex:1;min-width:220px;font:16px/1.4 Georgia,serif;padding:8px 10px;'
+      +'border:1px solid #b0a58e;background:#fffdf5" value="elen sila lumenn" '
+      +'aria-label="text to write in sarati">'
+      +'<select id="swf" aria-label="valuation" style="font:13px Georgia,serif;padding:8px">'
+      + forms.map(function(f){return '<option value="'+esc(f)+'">'+esc(f)+'</option>';}).join('')
+      +'</select>'
+      +'<button id="swgo" style="font:14px Georgia,serif;padding:8px 16px;border:1px solid #8a7444;'
+      +'background:#221c15;color:#e2cf96;cursor:pointer">Write</button></div>'
+      +'<p class="cite" id="swrule"></p><div id="swout"></div>'
+      +'<p class="cite" style="margin-top:12px"><b>Direction.</b> '+esc(D.direction)+'</p>'
+      +'<p class="cite"><b>What is refused.</b> '+esc(D.unresolved['sound → codepoint'])+'</p>';
+    host.innerHTML=head;
+
+    /* THE LONGEST VALUE FIRST, so `ngw` is matched before `ng` and `n`. A greedy short match
+       would silently mis-write every cluster the Quenya usage has a single sarat for. */
+    function tableFor(form){
+      var t=(D.letters||[]).filter(function(r){return !r.form||r.form===form;});
+      t.sort(function(a,b){return b.value.length-a.value.length;});
+      return t;
+    }
+    function go(){
+      var raw=document.getElementById('swq').value.toLowerCase();
+      var form=document.getElementById('swf').value;
+      document.getElementById('swrule').innerHTML='<b>'+esc(form)+'.</b> '+esc(D.forms[form]);
+      var T=tableFor(form), out='', i=0, drew=0, missed=[];
+      while(i<raw.length){
+        var ch=raw[i];
+        if(/\s/.test(ch)){ out+='<span style="display:inline-block;width:18px"></span>'; i++; continue; }
+        var hit=null;
+        for(var k=0;k<T.length;k++){
+          var v=T[k].value;
+          if(v && raw.substr(i,v.length)===v){ hit=T[k]; break; }
+        }
+        if(hit){
+          out+='<span class="sq"><img src="sarati/'+esc(hit.plate)+'" alt="sarat for '
+            +esc(hit.value)+'" loading="lazy"><span class="v">'+esc(hit.value)+'</span></span>';
+          i+=hit.value.length; drew++;
+        } else {
+          /* NAMED, NEVER DROPPED. A transcriber that omitted what it could not draw would return
+             a shorter word and look successful. */
+          missed.push(ch);
+          out+='<span class="sq miss"><span class="v">'+esc(ch)+' — no plate</span></span>';
+          i++;
+        }
+      }
+      out+='<p class="cite" style="margin-top:10px"><b>'+drew+' sarat(i) drawn'
+        +(missed.length?(', '+missed.length+' sound(s) with no plate in this form: '
+          +esc(missed.join(' '))):'')+'.</b> Every value rests on the plate labelling and on '
+        +'Amanyë Tenceli, corroborated where Glaemscribe’s charset names the same '
+        +'sound independently. <b>Sarati is not in the corpus, so no value here is [C].</b></p>';
+      document.getElementById('swout').innerHTML=out;
+    }
+    document.getElementById('swgo').addEventListener('click',go);
+    document.getElementById('swq').addEventListener('keydown',function(e){if(e.key==='Enter')go();});
+    document.getElementById('swf').addEventListener('change',go);
+    go();
+  }).catch(function(){
+    host.innerHTML='<h2 style="font-variant:small-caps">Write in Sarati</h2>'
+      +'<p class="cite">The Sarati plates could not be loaded, so nothing was written. '
+      +'<b>This is not a statement about Sarati</b> — it is a failure to ask.</p>';
+  });
+})();
+</script>
 <script src="nav.js"></script><script src="glossary.js" defer></script></body></html>

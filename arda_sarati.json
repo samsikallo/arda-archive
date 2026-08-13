@@ -1,0 +1,463 @@
+{
+ "script": "Sarati",
+ "built_from": "map/gen_sarati.py",
+ "reads": "site/sarati/ — the plates themselves; the FILENAMES carry the labelling",
+ "encoding": "NONE. This maps a sound to a PICTURE, never to a codepoint — see `unresolved`.",
+ "credit": {
+  "plates": "Hëernamae Pëen Ionoëryn, uploaded by JanezPavelZebovec, via Wikimedia Commons",
+  "licence": "CC BY-SA 4.0",
+  "scholarship": "Måns Björkman Berg, Amanyë Tenceli — FACTS ONLY; no prose or figure of his is republished here"
+ },
+ "forms": {
+  "Quenya": "the Quenya usage (R15, R17). Vowel-sign always on TOP in R17, of the consonant it FOLLOWS; R15 allows top or bottom, top meaning before and bottom after. R17 has an INHERENT `a`: every sarat is read as followed by a, and a single dot below means no vowel follows.",
+  "Late": "the Late Form. Vowel-sign always TOP and read BEFORE; the schwa always BOTTOM.",
+  "Phonetic": "the Phonetic Form. Vowel-sign on top of the FOLLOWING consonant in the majority of samples; preceding in R19/RV1; bottom in R20.",
+  "Early": "the Early Form. Vowel-sign top OR bottom — top read before, bottom after."
+ },
+ "direction": "A PROPERTY OF THE DOCUMENT, NOT THE SCRIPT. R17 says Sarati was 'originally written from right to left, or boustrophedon ... but in books and cursive form it was usually written from top to bottom beginning at the top right-hand corner.' Five directions are attested, and the MAJORITY of samples run top-to-bottom from the LEFT — against R17's own description. A transcriber must be told which.",
+ "alignment": "R17: the letters are 'hangers to a bar', consonants to the right (or below), vowels to the left (or above). Many samples omit the bar and two mirror it, so Björkman uses FRONT · BACK · TOP · BOTTOM rather than left/right — a description that survives a change of direction, which left/right does not.",
+ "n_letters": 50,
+ "n_sheets": 15,
+ "letters": [
+  {
+   "value": "b",
+   "plate": "Sarati_-_letter_b_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "d",
+   "plate": "Sarati_-_letter_d_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "dʒ",
+   "plate": "Sarati_-_letter_dʒ.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "f",
+   "plate": "Sarati_-_letter_f_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "g",
+   "plate": "Sarati_-_letter_g.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "h",
+   "plate": "Sarati_-_letter_h_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "j",
+   "plate": "Sarati_-_letter_j_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "j̊, ç",
+   "plate": "Sarati_-_letter_j̊,_ç_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "k",
+   "plate": "Sarati_-_letter_k.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "l",
+   "plate": "Sarati_-_letter_l_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "m",
+   "plate": "Sarati_-_letter_m_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "n",
+   "plate": "Sarati_-_letter_n_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "p",
+   "plate": "Sarati_-_letter_p_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "r",
+   "plate": "Sarati_-_letter_r_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "t",
+   "plate": "Sarati_-_letter_t_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "tʃ",
+   "plate": "Sarati_-_letter_tʃ.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "v",
+   "plate": "Sarati_-_letter_v_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "w",
+   "plate": "Sarati_-_letter_w_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "z",
+   "plate": "Sarati_-_letter_z.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ð",
+   "plate": "Sarati_-_letter_ð.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ŋ",
+   "plate": "Sarati_-_letter_ŋ.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ʀ",
+   "plate": "Sarati_-_letter_ʀ_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ʃ",
+   "plate": "Sarati_-_letter_ʃ.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ʍ",
+   "plate": "Sarati_-_letter_ʍ_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ʒ",
+   "plate": "Sarati_-_letter_ʒ.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ʟ",
+   "plate": "Sarati_-_letter_ʟ_(vertical).png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "θ",
+   "plate": "Sarati_-_letter_θ.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ð",
+   "plate": "Sarati_-_letter_ð_(2nd_variant).png",
+   "form": "2nd variant",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "z",
+   "plate": "Sarati_letter_z_(2nd_variation).png",
+   "form": "2nd variation",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ss",
+   "plate": "Sarati_-_letter_ss_(3rd_variation,_Quenya).png",
+   "form": "3rd variation, Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "s",
+   "plate": "Sarati_-_letter_s_(Fonetic_form).png",
+   "form": "Fonetic form",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "s",
+   "plate": "Sarati_-_letter_s_(Late_Form).png",
+   "form": "Late Form",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "h",
+   "plate": "Sarati_-_letter_h_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ht, s",
+   "plate": "Sarati_-_letter_ht,_s_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "hty",
+   "plate": "Sarati_-_letter_hty_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "nc",
+   "plate": "Sarati_-_letter_nc_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "nd, d",
+   "plate": "Sarati_-_letter_nd,_d_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ndy",
+   "plate": "Sarati_-_letter_ndy_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ng",
+   "plate": "Sarati_-_letter_ng_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ngw",
+   "plate": "Sarati_-_letter_ngw_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ngw, gw",
+   "plate": "Sarati_-_letter_ngw,_gw_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "nqu",
+   "plate": "Sarati_-_letter_nqu_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "nt",
+   "plate": "Sarati_-_letter_nt_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "nty",
+   "plate": "Sarati_-_letter_nty_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "nw",
+   "plate": "Sarati_-_letter_nw_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ny",
+   "plate": "Sarati_-_letter_ny_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "st",
+   "plate": "Sarati_-_letter_st_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "sty",
+   "plate": "Sarati_-_letter_sty_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ty",
+   "plate": "Sarati_-_letter_ty_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "ñ",
+   "plate": "Sarati_-_letter_ñ_(Quenya).png",
+   "form": "Quenya",
+   "mark": "[I-H]",
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  }
+ ],
+ "sheets": [
+  {
+   "plate": "Sarati,_Phonetic_Form_-_long_vowels.png",
+   "what": "Phonetic Form - long vowels",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_(Early_Form)_-_vowels.gif",
+   "what": "vowels",
+   "form": "Early_Form"
+  },
+  {
+   "plate": "Sarati_(Late_Form)_-_vowels.png",
+   "what": "vowels",
+   "form": "Late_Form"
+  },
+  {
+   "plate": "Sarati_(Quenya)_-_long_vowels.png",
+   "what": "long vowels",
+   "form": "Quenya"
+  },
+  {
+   "plate": "Sarati_(Quenya)_-_vowels.png",
+   "what": "vowels",
+   "form": "Quenya"
+  },
+  {
+   "plate": "Sarati_-_Alignment.png",
+   "what": "Alignment",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_-_Fonetic_form_-_semivowels_or_glides_(consonants).png",
+   "what": "Fonetic form - semivowels or glides (consonants)",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_-_cupshaped_diatric_(for_preceding_homorganic_nasal).png",
+   "what": "cupshaped diatric (for preceding homorganic nasal)",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_-_diatric_i_(single_dot).png",
+   "what": "diatric i (single dot)",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_-_example_of_long_vowels.png",
+   "what": "example of long vowels",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_-_vowel_short_carrier_(horizontal).png",
+   "what": "vowel short carrier (horizontal)",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_-_vowel_short_carrier_(vertical).png",
+   "what": "vowel short carrier (vertical)",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_-_vowels_of_Fonetic_Form.png",
+   "what": "vowels of Fonetic Form",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_basic_vowels.gif",
+   "what": "basic vowels",
+   "form": ""
+  },
+  {
+   "plate": "Sarati_vowels.png",
+   "what": "vowels",
+   "form": ""
+  }
+ ],
+ "excluded": [
+  {
+   "plate": "Sarati_-_specimen_the_Two_Trees",
+   "why": "no recorded licence and not on Commons — ruling 3 settles it before quality is reached"
+  }
+ ],
+ "unresolved": {
+  "sound → codepoint": "REFUSED. ArdaCSUR carries all 48 of U+E390-E3BF and names them `cid00904`-`cid00951` — bare CIDs that say nothing. Glaemscribe's charset names its letters and assigns ZERO codepoints in that block. Nothing in the archive binds a shape to a slot, and `sarat N = U+E390+N` is a guess that would render confidently.",
+  "the Diary Form": "NOT OFFERED. Björkman records five valuations; the archive holds no Diary plate at all. Settled by PE 13's R7-R8 tables, which the archive lacks.",
+  "individual vowel shapes": "The vowels are held as four whole SHEETS plus two isolated diacritics, not as one plate per vowel. Settled by segmenting the sheets — a measurement this archive may make and publish.",
+  "the 18 plates marked `(vertical)`": "That names an ORIENTATION, not a valuation. Björkman's own point is that appearance changes with direction while identity does not, so these are filed without a form rather than assigned to one."
+ },
+ "note": "Sarati is NOT IN THE CORPUS, so no row here is [C]. Every value rests on the plate labelling [I-H] and on Björkman's scholarship [EXT], and the two are corroborated by a third party: Glaemscribe's charset names the same unusual inventory independently. ONE TRANSCRIBER CANNOT SERVE ALL FOUR FORMS -- the same mark means different things in different valuations -- so a form must be chosen before anything is written."
+}
