@@ -89,10 +89,11 @@ a:focus-visible{outline:2px solid var(--a-gold) !important;}
    Measured rather than hardcoded because the header WRAPS: 44px on a wide screen, 70px on a phone,
    and a constant would be wrong on one of them. */
 :root{--a-hdr-h:0px}
-/* BOOK-LOOK STAGE 0 TOKENS. Values only; no rule uses them yet. GOLD IS UNSAFE FOR TEXT --
-   #c9a227 on parchment is 1.94:1 and fails contrast. Ornament stroke only. */
+/* CODEX-STAGE-0-BEGIN */
+/* Codex tokens. Values only. GOLD IS UNSAFE FOR TEXT: 1.94:1 on parchment. Ornament stroke. */
 :root{--a-vellum:#efe6cd;--a-rubric:#8c2f1e;--a-gold-stroke:#c9a227;
       --a-ink-brown:#3a3226;--a-codex-rule:#b0a58e}
+/* CODEX-STAGE-0-END */
 
 #ardanav{display:flex;flex-wrap:wrap;gap:2px;align-items:center;font-size:12px}
 #ardanav .grp{position:relative}
@@ -426,3 +427,27 @@ html.arda-dark{background:#181410}
 :root[data-theme="dark"] .ho{color:#e0c07a !important}
 :root[data-theme="dark"] .da{color:#d69a92 !important}
 :root[data-theme="dark"] .gl{color:#e0cf9a !important}
+
+/* CODEX-STAGE-1-BEGIN */
+/* Ground and ruled page. Behind the switch, so it draws nothing until data-codex="on".
+   No new HTML: every selector below is markup all 621 pages already have. */
+:root[data-codex="on"] body{
+  background:
+    repeating-linear-gradient(0deg,rgba(120,96,48,.035) 0 1px,rgba(0,0,0,0) 1px 30px),
+    radial-gradient(ellipse at 12% 4%,rgba(255,252,240,.9),rgba(0,0,0,0) 55%),
+    var(--a-vellum)}
+:root[data-codex="on"] .wrap,:root[data-codex="on"] #main{
+  border-left:1px solid rgba(201,162,39,.35);border-right:1px solid rgba(201,162,39,.35);
+  box-shadow:inset 0 0 0 1px rgba(255,253,246,.5)}
+:root[data-codex="on"] h2,:root[data-codex="on"] h3{
+  font-variant:small-caps;letter-spacing:.06em;color:var(--a-rubric);
+  border-bottom:1px solid rgba(201,162,39,.4);padding-bottom:.2em}
+:root[data-codex="on"] .cite{font-style:italic;padding-left:.7em;
+  border-left:2px solid rgba(201,162,39,.45)}
+:root[data-codex="on"] h1{font-variant:small-caps;letter-spacing:.1em}
+:root[data-theme="dark"][data-codex="on"] h2,
+:root[data-theme="dark"][data-codex="on"] h3{color:#e0a094}
+:root[data-theme="dark"][data-codex="on"] body{
+  background:repeating-linear-gradient(0deg,rgba(216,199,142,.04) 0 1px,rgba(0,0,0,0) 1px 30px),
+    var(--a-char,#191512)}
+/* CODEX-STAGE-1-END */

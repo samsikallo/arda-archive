@@ -240,12 +240,14 @@ FB.addEventListener("click",()=>{
 // if a future rule ever gives the header a different border in the dark, the height must be
 // measured after the ground is chosen and not before.
 (function(){
+/* CODEX-STAGE-0-BEGIN */
  // STAGE 0 OF THE BOOK-LOOK: the escape hatch, built BEFORE anything depends on it. Later
  // stages hang off :root[data-codex="on"], so the whole rework reverses with one attribute
  // on all 621 pages. Defaults off, draws nothing. Full reasoning: the roadmap, 13 Aug.
  try{document.documentElement.setAttribute("data-codex",
    localStorage.getItem("arda-codex")==="on"?"on":"off");}catch(e){
    document.documentElement.setAttribute("data-codex","off");}
+/* CODEX-STAGE-0-END */
  const KEY="arda-theme";
  const os=()=>matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";
  let stored=null; try{stored=localStorage.getItem(KEY)}catch(e){}   // private mode throws; the OS still answers
