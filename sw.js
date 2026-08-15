@@ -7,7 +7,13 @@ self.addEventListener("fetch",e=>{
 if(e.request.method!="GET"||new URL(e.request.url).origin!=location.origin)return;
 e.respondWith(caches.open(V).then(async c=>{
 const hit=await c.match(e.request,{ignoreSearch:true});
-const net=fetch(e.request).then(r=>{if(r.ok)c.put(e.request,r.clone());return r}).catch(()=>null);
+/* A CACHE WRITE MAY NEVER BREAK A FETCH. Two concurrent revalidations of the same request
+   race on Cache.put and Chromium throws InvalidAccessError 'Entry already exists' -- an
+   UNHANDLED REJECTION, which traverse_check counts against a measured baseline of zero, so
+   it refused every session's push. The entry IS in the cache when this throws; the write
+   simply lost a race it did not need to win. Swallowed deliberately, and only here. */
+const net=fetch(e.request).then(r=>{if(r.ok)c.put(e.request,r.clone()).catch(()=>{});return r})
+  .catch(()=>null);
 if(hit){e.waitUntil(net);return hit}
 const r=await net;
 if(r)return r;
