@@ -478,3 +478,15 @@ html.arda-dark{background:#181410}
   background:linear-gradient(160deg,rgba(216,199,142,.14),rgba(0,0,0,0) 70%);
   text-shadow:0 1px 0 rgba(0,0,0,.5)}
 /* CODEX-STAGE-2-END */
+/* LIGHT-CONTRAST-BEGIN */
+/* Light-ground legibility. Measured by map/contrast_check.py, which composites the REAL ground
+   (alpha and gradients) rather than the first backgroundColor it meets. NOT the dark layer's
+   blunt !important: these are the four classes that actually failed, on the light grounds only. */
+:root:not([data-theme="dark"]) .src,
+:root:not([data-theme="dark"]) .src i{color:#746448}
+:root:not([data-theme="dark"]) .orn{color:#6c6557}
+:root:not([data-theme="dark"]) .meta,
+:root:not([data-theme="dark"]) .ft,
+:root:not([data-theme="dark"]) .sec .n,
+:root:not([data-theme="dark"]) h3.sub{color:#73644c}
+/* LIGHT-CONTRAST-END */

@@ -37,7 +37,7 @@ h2{font-variant:small-caps;font-weight:normal;letter-spacing:.1em;color:#5a4626;
 style="width:100%;box-sizing:border-box;padding:11px 18px;font:15px Georgia,serif;border:1.5px solid #8a7444;border-radius:24px;background:#fffdf6;color:#3a3226;box-shadow:0 4px 16px rgba(0,0,0,.35)">
 <div id="usr" style="display:none;position:absolute;left:0;right:0;top:52px;background:#fdfaf2;border:1px solid #b0a58e;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.4);max-height:420px;overflow-y:auto;text-align:left;z-index:20"></div>
 </div>
-<div id="uscap" style="margin-top:8px;font-size:11px;color:#8a7a52">3,049 things across the halls · try “Galadriel”, “Nirnaeth”, “mellon”, “√GAL”, “Erebor”</div>
+<div id="uscap" style="margin-top:8px;font-size:11px;color:#9a8a61">3,049 things across the halls · try “Galadriel”, “Nirnaeth”, “mellon”, “√GAL”, “Erebor”</div>
 <div class="sub">Everything of Tolkien's world in one living platform — its lands, peoples, armies, years, bloodlines, tongues and letters — built from the ninety-nine books of the corpus, every claim cited, every guess labeled, every gap named rather than filled.</div>
 </div>
 <div class="wrap" role="main" id="main">
@@ -203,7 +203,7 @@ const top=hits.slice(0,40);
 if(!top.length){usr.innerHTML='<div style="padding:12px 16px;color:#7a6a50;font-style:italic">The archive holds nothing by that name — the corpus may be silent, or the spelling other.</div>';usr.style.display="block";return}
 let lastT=null,html="";
 for(const[,e]of top){
- if(e[0]!=lastT){html+=`<div style="padding:7px 16px 2px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a7a52;border-top:1px solid rgba(176,165,142,.4)">${TICON[e[0]]||""} ${TLBL[e[0]]||e[0]}</div>`;lastT=e[0];}
+ if(e[0]!=lastT){html+=`<div style="padding:7px 16px 2px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#9a8a61;border-top:1px solid rgba(176,165,142,.4)">${TICON[e[0]]||""} ${TLBL[e[0]]||e[0]}</div>`;lastT=e[0];}
  html+=`<a href="${e[3]}" style="display:block;padding:5px 16px;text-decoration:none;color:#3a3226" onmouseover="this.style.background='#f3ebd6'" onmouseout="this.style.background=''"><b style="font-variant:small-caps">${e[1]}</b> <span style="font-size:11.5px;color:#7a6a50;font-style:italic;display:inline-block;max-width:62%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:bottom">— ${e[2]}</span></a>`;}
 usr.innerHTML=html;usr.style.display="block";});
 document.addEventListener("click",e=>{if(!document.getElementById("usbox").contains(e.target))usr.style.display="none";});
