@@ -451,3 +451,30 @@ html.arda-dark{background:#181410}
   background:repeating-linear-gradient(0deg,rgba(216,199,142,.04) 0 1px,rgba(0,0,0,0) 1px 30px),
     var(--a-char,#191512)}
 /* CODEX-STAGE-1-END */
+/* CODEX-STAGE-2-BEGIN */
+:root[data-codex="on"] #hdr h1::first-letter,
+:root[data-codex="on"] #hero h1::first-letter{
+  font-size:2.1em;line-height:.86;padding:.09em .16em .05em;margin:0 .10em 0 0;
+  color:var(--a-gold-stroke);
+  background:
+    repeating-linear-gradient(45deg,rgba(216,199,142,.20) 0 2px,rgba(0,0,0,0) 2px 7px),
+    repeating-linear-gradient(-45deg,rgba(201,162,39,.16) 0 2px,rgba(0,0,0,0) 2px 7px),
+    radial-gradient(circle at 30% 22%,rgba(216,199,142,.16),rgba(0,0,0,0) 64%),
+    linear-gradient(150deg,rgba(201,162,39,.14),rgba(0,0,0,.28));
+  border:1px solid rgba(201,162,39,.55);border-radius:2px;
+  box-shadow:0 0 0 2px #12100d,0 0 0 3px rgba(201,162,39,.45),
+             inset 0 0 7px rgba(0,0,0,.45);
+  text-shadow:0 1px 0 rgba(0,0,0,.6)}
+:root[data-codex="on"] #hdr h1,
+:root[data-codex="on"] #hero h1{border-bottom:3px double rgba(201,162,39,.5);
+  padding-bottom:.16em}
+:root[data-codex="on"] h2::first-letter{
+  font-size:1.42em;line-height:1;color:var(--a-rubric);padding:0 .12em 0 .05em;
+  background:linear-gradient(160deg,rgba(201,162,39,.20),rgba(0,0,0,0) 70%);
+  border-left:2px solid rgba(140,47,30,.45);
+  text-shadow:0 1px 0 rgba(255,253,246,.6)}
+:root[data-theme="dark"][data-codex="on"] h2::first-letter{
+  color:#e0a094;border-left-color:rgba(224,160,148,.40);
+  background:linear-gradient(160deg,rgba(216,199,142,.14),rgba(0,0,0,0) 70%);
+  text-shadow:0 1px 0 rgba(0,0,0,.5)}
+/* CODEX-STAGE-2-END */
