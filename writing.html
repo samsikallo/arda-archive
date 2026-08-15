@@ -784,16 +784,28 @@ glyphs render only where a font that carries them is installed.</p></div>
 })();
 </script>
 <style>
-#sc .col{display:inline-block;vertical-align:top;margin:0 26px 10px 0;position:relative}
-/* THE BAR. The specimen's letters hang from a continuous stem, and a stack of images with gaps
-   between them looks nothing like it -- measured: one 51px column is a SINGLE connected ink band
-   403px tall. So the stem is drawn and the letters sit tight against it. */
-#sc .col .bar{position:absolute;top:0;bottom:0;left:50%;width:2px;margin-left:-1px;
-  background:#3a3226;opacity:.85}
-#sc .col .s{display:block;position:relative;line-height:0}
-#sc .col .s img{height:42px;width:auto;display:block;margin:0 auto}
-#sc .miss{display:block;font:10px monospace;color:#7a3a2a;text-align:center;line-height:1.4}
-#sc .lbl{display:block;font:10px monospace;color:#7a6a50;text-align:center;margin-top:4px}
+/* MEASURED ON THE SPECIMEN, not guessed. Within one 51px column: the stem occupies x-offsets
+   0-4 -- the LEFT EDGE, not the centre -- and runs y=7..410 unbroken. Ink right of it 4,149px,
+   left of it 798. Ten letter bands hang off it, heights 24-28px with a pitch of 26-29: THE
+   LETTERS TOUCH ONE ANOTHER VERTICALLY, there is no gap. 8 of 10 reach the stem.
+   The first version centred the bar and centred the letters, which is none of those things. */
+#sc .col{display:inline-block;vertical-align:top;margin:0 34px 16px 0;position:relative;
+  padding-left:30px}
+#sc .col .bar{position:absolute;top:0;bottom:16px;left:24px;width:3px;background:#3a3226;
+  opacity:.9;border-radius:1px}
+/* CONSONANTS HANG ON ONE SIDE OF THE BAR AND TOUCH ONE ANOTHER -- measured pitch 26-29 against
+   heights 24-28, i.e. no vertical gap at all. */
+#sc .col .s{display:block;position:relative;line-height:0;margin:0}
+#sc .col .s img{height:30px;width:auto;display:block;margin:0}
+/* AND VOWELS HANG ON THE OTHER, which is R17's rule and not a layout preference: the letters are
+   "hangers to a bar", consonants to one side and vowels to the other. My first version stacked
+   the vowel markers INLINE with the consonants, which pushed the consonants 15px apart and
+   destroyed the one property the specimen most obviously has. */
+#sc .col .s .v{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);
+  font:10px monospace;color:#7a3a2a;white-space:nowrap;line-height:1}
+#sc .miss{display:block;font:10px monospace;color:#7a3a2a;text-align:left;line-height:1.5;
+  padding-left:2px}
+#sc .lbl{display:block;font:10px monospace;color:#7a6a50;text-align:left;margin-top:6px}
 :root[data-theme="dark"] #sc .col .bar{background:#d8c78e}
 </style>
 <script>
@@ -830,22 +842,29 @@ glyphs render only where a font that carries them is installed.</p></div>
       var raw=document.getElementById('scq').value.toLowerCase();
       var words=raw.split(/\s+/).filter(Boolean), html='', drew=0, novowel=0, nop=[];
       words.forEach(function(w){
-        var i=0, col='<div class="col"><span class="bar"></span>';
+        var i=0, col='<div class="col"><span class="bar"></span>', pend='';
         while(i<w.length){
           var hit=null;
           for(var k=0;k<T.length;k++){ var v=T[k].value;
             if(v&&w.substr(i,v.length)===v){hit=T[k];break;} }
           if(hit){
+            /* THE PENDING VOWEL RIDES ON THE CONSONANT, on the far side of the bar. Emitting it
+               as its own block pushed the consonants 15px apart -- and the specimen's consonants
+               TOUCH. R17: hangers to a bar, consonants one side, vowels the other. */
             col+='<span class="s"><img src="sarati/'+esc(hit.plate)+'" alt="sarat for '
-              +esc(hit.value)+'" loading="lazy"></span>'; i+=hit.value.length; drew++;
+              +esc(hit.value)+'" loading="lazy">'
+              +(pend?'<i class="v">'+pend+'</i>':'')+'</span>';
+            pend=''; i+=hit.value.length; drew++;
           } else if(/[aeiouáéíóúäëïöü]/.test(w[i])){
             /* A VOWEL. The archive has the sheets and not the values -- 120 cells cut, not one
                carrying a sound. Marked, never drawn from a guess. */
-            col+='<span class="miss">'+esc(w[i])+'&#183;</span>'; novowel++; i++;
+            pend+=esc(w[i])+'\u00b7'; novowel++; i++;
           } else {
-            col+='<span class="miss">'+esc(w[i])+'?</span>'; nop.push(w[i]); i++;
+            pend+=esc(w[i])+'?'; nop.push(w[i]); i++;
           }
         }
+        /* a word ending in vowels still has to show them: a slot with no consonant in it */
+        if(pend) col+='<span class="s" style="height:16px"><i class="v">'+pend+'</i></span>';
         col+='<span class="lbl">'+esc(w)+'</span></div>';
         html+=col;
       });
