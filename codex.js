@@ -33,11 +33,15 @@
   }
 
   function boot(ix) {
-    var meta = ix.routes[route] || ix.routes[here] || null;
+    /* FAMILY BEFORE BASENAME. `ix.routes[here]` matched a nested page against a ROOT page of the
+       same name: realm/valinor.html took root valinor.html's atlas+full, place/ and realm/
+       gondolin.html took "Houses of Gondolin". The basename fallback still serves root pages. */
+    var meta = ix.routes[route] || null;
     if (!meta && nested) {
       var fam = ix.families[route.split("/")[0] + "/"];
       if (fam) meta = { vol: fam.volume, part: fam.part, arch: fam.archetype, spread: fam.spread };
     }
+    if (!meta) meta = ix.routes[here] || null;
     if (!meta) { warn("no metadata for " + route + " — neutral fallback shell"); meta = { arch: "folio" }; }
 
     R.setAttribute("data-archetype", meta.arch || "folio");

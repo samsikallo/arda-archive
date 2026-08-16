@@ -100,14 +100,14 @@
    "present": true,
    "text_provenance": "ocr-derived",
    "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
-   "ocr_text": true,
-   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bound": 0,
    "cited": 0,
    "bytes": 303506296,
    "pages": 133,
    "corpus_file": "t3_verlyn_flieger_a_question_of_time.txt",
-   "words": 117178
+   "words": 117178,
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for."
   },
   {
    "file": "Tolkien the Medievalist part.pdf",
@@ -314,6 +314,10 @@
    "present": false,
    "bound": 0,
    "cited": 0,
+   "text_only": true,
+   "source_url": "https://scholar.valpo.edu/journaloftolkienresearch/vol12/iss2/5/",
+   "why_absent": "Journal of Tolkien Research is fully open access and the article page answers HTTP 200, but every download route -- cgi/viewcontent.cgi and both /context/ forms -- returns HTTP 202 with an AWS WAF JavaScript challenge (gokuProps / awsWafCookieDomainList) that curl cannot solve. Measured 16 Aug 2026. FALSIFIER: any 2xx from that host carrying %PDF magic bytes.",
+   "text_held": "The complete extracted text is in corpus/, 63 KB, and was read to confirm it is the review itself rather than the book it reviews.",
    "corpus_file": "t3_the_science_of_middle_earth_larsen_review_journal_of.txt",
    "words": 9564
   },
@@ -340,14 +344,14 @@
    "present": true,
    "text_provenance": "ocr-derived",
    "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
-   "ocr_text": true,
-   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bound": 0,
    "cited": 0,
    "bytes": 112914341,
    "pages": 44,
    "corpus_file": "t4_the_maps_of_tolkiens_middle_earth_brian_sibley_john_.txt",
-   "words": 27605
+   "words": 27605,
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for."
   },
   {
    "file": "The_Fantasy_Art_of_John_Howe_-_The_Fantasy_Art_of_John_Howe.pdf",
@@ -358,14 +362,14 @@
    "present": true,
    "text_provenance": "ocr-derived",
    "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
-   "ocr_text": true,
-   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bound": 0,
    "cited": 0,
    "bytes": 3899661,
    "pages": 58,
    "corpus_file": "t4_the_fantasy_art_of_john_howe_the_fantasy_art_of_john.txt",
-   "words": 138
+   "words": 138,
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for."
   },
   {
    "file": "Mallorn 1.pdf",
@@ -1362,14 +1366,14 @@
    "present": true,
    "text_provenance": "ocr-derived",
    "text_provenance_note": "Machine-read from a scan at 300 dpi on 30 July 2026, at the owner's ruling. THE ENGLISH IS LARGELY FAITHFUL AND THE ELVISH IS NOT: measured against a known-good text of Vinyar Tengwar 39, 37 of 51 distinct Elvish forms were lost or corrupted, almost all of them diacritic-bearing -- fea, hroa, Eruhini, and Feanor itself. This file may be quoted for commentary and may NEVER settle the spelling of an Elvish word.",
-   "ocr_text": true,
-   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bound": 0,
    "cited": 0,
    "bytes": 91740393,
    "pages": 118,
    "corpus_file": "t4_the_art_of_the_lord_of_the_rings.txt",
-   "words": 41538
+   "words": 41538,
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for."
   },
   {
    "file": "(A) The Silmarillion.pdf",
@@ -2015,14 +2019,14 @@
    "present": true,
    "text_provenance": "ocr-derived",
    "text_provenance_note": "Machine-read from a scan at 300 dpi on 30 July 2026, at the owner's ruling. THE ENGLISH IS LARGELY FAITHFUL AND THE ELVISH IS NOT: measured against a known-good text of Vinyar Tengwar 39, 37 of 51 distinct Elvish forms were lost or corrupted, almost all of them diacritic-bearing -- fea, hroa, Eruhini, and Feanor itself. This file may be quoted for commentary and may NEVER settle the spelling of an Elvish word.",
-   "ocr_text": true,
-   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bound": 0,
    "cited": 0,
    "bytes": 3413589,
    "pages": 102,
    "corpus_file": "t4_the_art_of_the_fellowship_of_the_ring.txt",
-   "words": 573
+   "words": 573,
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for."
   },
   {
    "file": "The Atlas of Middle-Earth.pdf",
@@ -2105,14 +2109,14 @@
    "present": true,
    "text_provenance": "ocr-derived",
    "text_provenance_note": "Machine-read from a scan at 300 dpi on 30 July 2026, at the owner's ruling. THE ENGLISH IS LARGELY FAITHFUL AND THE ELVISH IS NOT: measured against a known-good text of Vinyar Tengwar 39, 37 of 51 distinct Elvish forms were lost or corrupted, almost all of them diacritic-bearing -- fea, hroa, Eruhini, and Feanor itself. This file may be quoted for commentary and may NEVER settle the spelling of an Elvish word.",
-   "ocr_text": true,
-   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bound": 0,
    "cited": 0,
    "bytes": 2379703,
    "pages": 16,
    "corpus_file": "t3_tolkien_artwork.txt",
-   "words": 81
+   "words": 81,
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for."
   },
   {
    "file": "Vinyar Tengwar 43.pdf",
