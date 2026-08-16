@@ -16,7 +16,7 @@
  },
  "direction": "A PROPERTY OF THE DOCUMENT, NOT THE SCRIPT. R17 says Sarati was 'originally written from right to left, or boustrophedon ... but in books and cursive form it was usually written from top to bottom beginning at the top right-hand corner.' Five directions are attested, and the MAJORITY of samples run top-to-bottom from the LEFT — against R17's own description. A transcriber must be told which.",
  "alignment": "R17: the letters are 'hangers to a bar', consonants to the right (or below), vowels to the left (or above). Many samples omit the bar and two mirror it, so Björkman uses FRONT · BACK · TOP · BOTTOM rather than left/right — a description that survives a change of direction, which left/right does not.",
- "n_letters": 50,
+ "n_letters": 57,
  "n_sheets": 15,
  "letters": [
   {
@@ -213,35 +213,43 @@
    "plate": "Sarati_-_letter_ð_(2nd_variant).png",
    "form": "2nd variant",
    "mark": "[I-H]",
-   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound",
+   "form_note": "this row names a VARIANT rather than one of the four declared forms, so it is not offered by the writer. Left as it is rather than assigned to a form it does not claim -- which form it belongs to is not stated by the plate and would be a guess."
   },
   {
    "value": "z",
    "plate": "Sarati_letter_z_(2nd_variation).png",
    "form": "2nd variation",
    "mark": "[I-H]",
-   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound",
+   "form_note": "this row names a VARIANT rather than one of the four declared forms, so it is not offered by the writer. Left as it is rather than assigned to a form it does not claim -- which form it belongs to is not stated by the plate and would be a guess."
   },
   {
    "value": "ss",
    "plate": "Sarati_-_letter_ss_(3rd_variation,_Quenya).png",
-   "form": "3rd variation, Quenya",
+   "form": "Quenya",
    "mark": "[I-H]",
-   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound",
+   "form_as_plated": "3rd variation, Quenya",
+   "form_note": "the plate's own label spelt this form differently from the dataset's declared vocabulary, so the row matched NO form and the letter was unreachable in every one. Normalised 16 Aug; the plate's spelling is kept in form_as_plated."
   },
   {
    "value": "s",
    "plate": "Sarati_-_letter_s_(Fonetic_form).png",
-   "form": "Fonetic form",
+   "form": "Phonetic",
    "mark": "[I-H]",
-   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound",
+   "form_as_plated": "Fonetic form",
+   "form_note": "the plate's own label spelt this form differently from the dataset's declared vocabulary, so the row matched NO form and the letter was unreachable in every one. Normalised 16 Aug; the plate's spelling is kept in form_as_plated."
   },
   {
    "value": "s",
    "plate": "Sarati_-_letter_s_(Late_Form).png",
-   "form": "Late Form",
+   "form": "Late",
    "mark": "[I-H]",
-   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+   "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound",
+   "form_as_plated": "Late Form",
+   "form_note": "the plate's own label spelt this form differently from the dataset's declared vocabulary, so the row matched NO form and the letter was unreachable in every one. Normalised 16 Aug; the plate's spelling is kept in form_as_plated."
   },
   {
    "value": "h",
@@ -368,6 +376,69 @@
    "form": "Quenya",
    "mark": "[I-H]",
    "cite": "read off the plate labelling (Wikimedia Commons, CC BY-SA 4.0); corroborated where Glaemscribe's charset names the same sound"
+  },
+  {
+   "value": "i",
+   "plate": "sarati_vowel_i.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "kind": "vowel-sign",
+   "note": "a VOWEL SIGN, not a letter: Sarati writes vowels as marks placed relative to the consonant, and where it goes is the usage rule this file already records (R15/R17 for Quenya). Cropped from the owner's chart 16 Aug 2026."
+  },
+  {
+   "value": "e",
+   "plate": "sarati_vowel_e.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "kind": "vowel-sign",
+   "note": "a VOWEL SIGN, not a letter: Sarati writes vowels as marks placed relative to the consonant, and where it goes is the usage rule this file already records (R15/R17 for Quenya). Cropped from the owner's chart 16 Aug 2026."
+  },
+  {
+   "value": "ə",
+   "plate": "sarati_vowel_schwa.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "kind": "vowel-sign",
+   "note": "a VOWEL SIGN, not a letter: Sarati writes vowels as marks placed relative to the consonant, and where it goes is the usage rule this file already records (R15/R17 for Quenya). Cropped from the owner's chart 16 Aug 2026."
+  },
+  {
+   "value": "æ",
+   "plate": "sarati_vowel_ae.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "kind": "vowel-sign",
+   "note": "a VOWEL SIGN, not a letter: Sarati writes vowels as marks placed relative to the consonant, and where it goes is the usage rule this file already records (R15/R17 for Quenya). Cropped from the owner's chart 16 Aug 2026."
+  },
+  {
+   "value": "a",
+   "plate": "sarati_vowel_a.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "kind": "vowel-sign",
+   "note": "a VOWEL SIGN, not a letter: Sarati writes vowels as marks placed relative to the consonant, and where it goes is the usage rule this file already records (R15/R17 for Quenya). Cropped from the owner's chart 16 Aug 2026."
+  },
+  {
+   "value": "o",
+   "plate": "sarati_vowel_o.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "kind": "vowel-sign",
+   "note": "a VOWEL SIGN, not a letter: Sarati writes vowels as marks placed relative to the consonant, and where it goes is the usage rule this file already records (R15/R17 for Quenya). Cropped from the owner's chart 16 Aug 2026."
+  },
+  {
+   "value": "u",
+   "plate": "sarati_vowel_u.png",
+   "form": null,
+   "mark": "[I-H]",
+   "cite": "read off uploads/scripts/Sarati_vowels.png, the owner's chart, 16 Aug 2026 — the label is the chart's, the crop is this tool's",
+   "kind": "vowel-sign",
+   "note": "a VOWEL SIGN, not a letter: Sarati writes vowels as marks placed relative to the consonant, and where it goes is the usage rule this file already records (R15/R17 for Quenya). Cropped from the owner's chart 16 Aug 2026."
   }
  ],
  "sheets": [
