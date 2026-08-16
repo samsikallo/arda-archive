@@ -510,3 +510,50 @@ html.arda-dark{background:#181410}
 :root:not([data-theme="dark"]) .sec .n,
 :root:not([data-theme="dark"]) h3.sub{color:#73644c}
 /* LIGHT-CONTRAST-END */
+/* DARK-CONTRAST-BEGIN */
+/* Dark-ground legibility, scoped BY GROUND on the auditor's independent census: 4,260 failures
+   over 41,501 nodes, which it reproduced to the node after trying to refute it. Not a global
+   recolour -- the dark layer's own unscoped !important is CAUSAL here, not corrective. */
+
+/* 1. DARK CARDS. Muted and cite inks chosen for parchment were left on #241f18: 2,368 nodes at
+      2.52:1, plus 141 at 3.12 and 131 at 2.19. They need a LIGHT variant, not a darker one. */
+:root[data-theme="dark"] .card details .heads,
+:root[data-theme="dark"] .card .heads,
+:root[data-theme="dark"] details .heads,
+:root[data-theme="dark"] .card .meta,
+:root[data-theme="dark"] .grid .card .meta,
+:root[data-theme="dark"] .card details summary,
+:root[data-theme="dark"] .card summary{color:#c3b28c !important}
+
+/* 2. THE MAP AND ITS PLATES KEEP LIGHT PAPER BY RULING -- "black ink on light stock; a dark sheet
+      is a different drawing" -- and the dark layer recoloured their LABELS to light anyway, so
+      light ink sat on light paper: 481 nodes at 1.10:1 and 161 at 1.31:1. The paper is right and
+      the ink was wrong, so the ink goes back to dark ON THOSE GROUNDS ONLY. */
+:root[data-theme="dark"] #stage svg text,
+:root[data-theme="dark"] svg#stage text,
+:root[data-theme="dark"] #g-pins text,
+:root[data-theme="dark"] g#g-pins g text,
+:root[data-theme="dark"] .plate svg text,
+:root[data-theme="dark"] #bs #sheet text{fill:#3a3226 !important;color:#3a3226 !important}
+/* NO BLANKET `svg text` RULE. I tried one to catch the remaining map pins and it cost 752 NEW
+   failures: cosmology's diagram and the timeline draw their SVGs on DARK grounds (#221c15,
+   #201f1c), so forcing dark ink onto every svg put dark on dark. THE GROUND, NOT THE ELEMENT --
+   which is the same lesson as the versal, the .cite !important, and this layer's own reason for
+   existing. A rule widened to catch more cases stops being about a ground at all. */
+
+/* 3. CONTAINERS THAT NEVER WENT DARK. The dark layer lightened the TEXT and these grounds stayed
+      near-white (#fdfaf2), so light ink sat on light card: 171 of 171 near-white nodes failing in
+      the four halls sampled. Named individually rather than by a blanket, because the ONLY thing
+      that distinguishes them is the ground, and a selector cannot see a ground -- which a blanket
+      `svg text` rule proved by costing 752 new failures on the dark diagrams. */
+:root[data-theme="dark"] #lifes text,
+:root[data-theme="dark"] svg#lifes text,
+:root[data-theme="dark"] .pcard svg text,
+:root[data-theme="dark"] #tax text,
+:root[data-theme="dark"] svg#tax text,
+:root[data-theme="dark"] #chart text,
+:root[data-theme="dark"] svg#chart text{fill:#3a3226 !important}
+:root[data-theme="dark"] #hcredits,
+:root[data-theme="dark"] #hcredits .cite,
+:root[data-theme="dark"] #hcredits .cite a{color:#4a4030 !important}
+/* DARK-CONTRAST-END */
