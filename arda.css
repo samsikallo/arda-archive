@@ -489,6 +489,18 @@ html.arda-dark{background:#181410}
 :root[data-theme="dark"][data-codex="on"] .wrap,
 :root[data-theme="dark"][data-codex="on"] #main{border-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20d%3D%22M-64%20-32%20L0%2032%20M-48%20-32%20L16%2032%20M-32%20-32%20L32%2032%20M-16%20-32%20L48%2032%20M0%20-32%20L64%2032%20M16%20-32%20L80%2032%20M32%20-32%20L96%2032%22%20stroke%3D%22%23d8c78e%22%20stroke-width%3D%223.2%22%20fill%3D%22none%22%20stroke-linecap%3D%22butt%22%20stroke-dasharray%3D%2216.027%206.600%22%20stroke-dashoffset%3D%2219.327%22%2F%3E%3Cpath%20d%3D%22M0%20-32%20L-64%2032%20M16%20-32%20L-48%2032%20M32%20-32%20L-32%2032%20M48%20-32%20L-16%2032%20M64%20-32%20L0%2032%20M80%20-32%20L16%2032%20M96%20-32%20L32%2032%22%20stroke%3D%22%23d8c78e%22%20stroke-width%3D%223.2%22%20fill%3D%22none%22%20stroke-linecap%3D%22butt%22%20stroke-dasharray%3D%2216.027%206.600%22%20stroke-dashoffset%3D%228.014%22%2F%3E%3C%2Fsvg%3E") 14 repeat}
 /* CODEX-STAGE-3-END */
+/* CODEX-STAGE-4-BEGIN */
+/* Carpet page and diminuendo incipit, index.html only (#hero). Why: the roadmap, 16 Aug. */
+:root[data-codex="on"] #hero{position:relative}
+:root[data-codex="on"] #hero::before{content:"";position:absolute;inset:0 0 auto 0;height:10px;
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2252%22%20height%3D%2252%22%20viewBox%3D%220%200%2052%2052%22%3E%3Cpath%20d%3D%22M-104%20-52%20L0%2052%20M-78%20-52%20L26%2052%20M-52%20-52%20L52%2052%20M-26%20-52%20L78%2052%20M0%20-52%20L104%2052%20M26%20-52%20L130%2052%20M52%20-52%20L156%2052%22%20stroke%3D%22%23c9a227%22%20stroke-width%3D%223.2%22%20fill%3D%22none%22%20stroke-linecap%3D%22butt%22%20stroke-dasharray%3D%2228.970%207.800%22%20stroke-dashoffset%3D%2232.870%22%2F%3E%3Cpath%20d%3D%22M0%20-52%20L-104%2052%20M26%20-52%20L-78%2052%20M52%20-52%20L-52%2052%20M78%20-52%20L-26%2052%20M104%20-52%20L0%2052%20M130%20-52%20L26%2052%20M156%20-52%20L52%2052%22%20stroke%3D%22%23c9a227%22%20stroke-width%3D%223.2%22%20fill%3D%22none%22%20stroke-linecap%3D%22butt%22%20stroke-dasharray%3D%2228.970%207.800%22%20stroke-dashoffset%3D%2214.485%22%2F%3E%3C%2Fsvg%3E");background-size:52px 52px;opacity:.5}
+:root[data-codex="on"] #hero::after{content:"";position:absolute;inset:auto 0 0 0;height:10px;
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2252%22%20height%3D%2252%22%20viewBox%3D%220%200%2052%2052%22%3E%3Cpath%20d%3D%22M-104%20-52%20L0%2052%20M-78%20-52%20L26%2052%20M-52%20-52%20L52%2052%20M-26%20-52%20L78%2052%20M0%20-52%20L104%2052%20M26%20-52%20L130%2052%20M52%20-52%20L156%2052%22%20stroke%3D%22%23c9a227%22%20stroke-width%3D%223.2%22%20fill%3D%22none%22%20stroke-linecap%3D%22butt%22%20stroke-dasharray%3D%2228.970%207.800%22%20stroke-dashoffset%3D%2232.870%22%2F%3E%3Cpath%20d%3D%22M0%20-52%20L-104%2052%20M26%20-52%20L-78%2052%20M52%20-52%20L-52%2052%20M78%20-52%20L-26%2052%20M104%20-52%20L0%2052%20M130%20-52%20L26%2052%20M156%20-52%20L52%2052%22%20stroke%3D%22%23c9a227%22%20stroke-width%3D%223.2%22%20fill%3D%22none%22%20stroke-linecap%3D%22butt%22%20stroke-dasharray%3D%2228.970%207.800%22%20stroke-dashoffset%3D%2214.485%22%2F%3E%3C%2Fsvg%3E");background-size:52px 52px;opacity:.5}
+:root[data-codex="on"] #hero h1{font-size:2.3em;letter-spacing:.13em}
+:root[data-codex="on"] #hero h1::first-line{letter-spacing:.16em}
+:root[data-codex="on"] #hero .sub,
+:root[data-codex="on"] #hero #uscap{font-variant:small-caps;letter-spacing:.07em}
+/* CODEX-STAGE-4-END */
 /* LIGHT-CONTRAST-BEGIN */
 /* THE HOUSE BAND, AS A FLOOR. Measured 16 Aug: two halls style #hdr with no ground at all, so
    the parchment body showed through and the gold nav read at 1.70:1 -- the owner's "lighter text
@@ -511,12 +523,8 @@ html.arda-dark{background:#181410}
 :root:not([data-theme="dark"]) h3.sub{color:#73644c}
 /* LIGHT-CONTRAST-END */
 /* DARK-CONTRAST-BEGIN */
-/* Dark-ground legibility, scoped BY GROUND on the auditor's independent census: 4,260 failures
-   over 41,501 nodes, which it reproduced to the node after trying to refute it. Not a global
-   recolour -- the dark layer's own unscoped !important is CAUSAL here, not corrective. */
-
-/* 1. DARK CARDS. Muted and cite inks chosen for parchment were left on #241f18: 2,368 nodes at
-      2.52:1, plus 141 at 3.12 and 131 at 2.19. They need a LIGHT variant, not a darker one. */
+/* Dark-ground legibility, scoped BY GROUND. 4,260 -> 897. Why, and the blanket-svg attempt that
+   cost 752 new failures: the roadmap, 16 Aug. */
 :root[data-theme="dark"] .card details .heads,
 :root[data-theme="dark"] .card .heads,
 :root[data-theme="dark"] details .heads,
@@ -524,28 +532,12 @@ html.arda-dark{background:#181410}
 :root[data-theme="dark"] .grid .card .meta,
 :root[data-theme="dark"] .card details summary,
 :root[data-theme="dark"] .card summary{color:#c3b28c !important}
-
-/* 2. THE MAP AND ITS PLATES KEEP LIGHT PAPER BY RULING -- "black ink on light stock; a dark sheet
-      is a different drawing" -- and the dark layer recoloured their LABELS to light anyway, so
-      light ink sat on light paper: 481 nodes at 1.10:1 and 161 at 1.31:1. The paper is right and
-      the ink was wrong, so the ink goes back to dark ON THOSE GROUNDS ONLY. */
 :root[data-theme="dark"] #stage svg text,
 :root[data-theme="dark"] svg#stage text,
 :root[data-theme="dark"] #g-pins text,
 :root[data-theme="dark"] g#g-pins g text,
 :root[data-theme="dark"] .plate svg text,
 :root[data-theme="dark"] #bs #sheet text{fill:#3a3226 !important;color:#3a3226 !important}
-/* NO BLANKET `svg text` RULE. I tried one to catch the remaining map pins and it cost 752 NEW
-   failures: cosmology's diagram and the timeline draw their SVGs on DARK grounds (#221c15,
-   #201f1c), so forcing dark ink onto every svg put dark on dark. THE GROUND, NOT THE ELEMENT --
-   which is the same lesson as the versal, the .cite !important, and this layer's own reason for
-   existing. A rule widened to catch more cases stops being about a ground at all. */
-
-/* 3. CONTAINERS THAT NEVER WENT DARK. The dark layer lightened the TEXT and these grounds stayed
-      near-white (#fdfaf2), so light ink sat on light card: 171 of 171 near-white nodes failing in
-      the four halls sampled. Named individually rather than by a blanket, because the ONLY thing
-      that distinguishes them is the ground, and a selector cannot see a ground -- which a blanket
-      `svg text` rule proved by costing 752 new failures on the dark diagrams. */
 :root[data-theme="dark"] #lifes text,
 :root[data-theme="dark"] svg#lifes text,
 :root[data-theme="dark"] .pcard svg text,
