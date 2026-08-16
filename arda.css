@@ -601,4 +601,6 @@ html{background:#efe6cd}
 :root[data-theme="dark"] :is(.dcard .bz,.card .ft,.wrap .ft,.limits,.dcard .tk .src,.blz .cite,.row .arw){color:#c3b28c !important}
 :root[data-theme="dark"] .ann b{color:#d8bd86 !important}
 :root[data-theme="dark"] .ann .d{color:#e0b878 !important}
+/* Sarati plates are ink on a transparent ground: dark-on-dark at night. See 060144d. */
+:root[data-theme="dark"] :is(#swout img,#scout img,.sq img,img[src*="sarati/"]){filter:invert(1)}
 /* DARK-CONTRAST-END */
