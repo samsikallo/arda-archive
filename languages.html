@@ -105,13 +105,14 @@ D.etym.map(e=>["√"+e[0],"pq","root",e[1].slice(0,150),"","The Etymologies, HoM
    page's remaining headroom. A reader who has typed something has asked for it; one who has not
    pays nothing. XTRA is a const ARRAY, so pushing into it is legal and the existing filter needs
    no rewrite — this adds a gate in front of it and nothing else. */
-let _minedState=0;
+let _minedState=0,_q="a",_minedSeen={};
+function _shardOf(q){var c=String(q||"").normalize("NFD").replace(/[^A-Za-z]/g,"").slice(0,1).toLowerCase();return c||"_";}
 function _loadMined(){
- if(_minedState===2)return Promise.resolve();
- if(_minedState===1)return _minedP;
- _minedState=1;
+ var _k=_shardOf(_q);
+ if(_minedSeen[_k])return Promise.resolve();
+ _minedSeen[_k]=1;
  _minedP=Promise.all([
-   fetch("arda_sindarin_dict.json").then(r=>r.json()).catch(()=>null),
+   fetch("sd/"+_shardOf(_q)+".json").then(r=>r.json()).then(function(x){return {words:x}}).catch(()=>null),
    fetch("arda_renk_quenya.json").then(r=>r.json()).catch(()=>null)
  ]).then(function(a){
    var s=a[0],r=a[1];
@@ -120,7 +121,7 @@ function _loadMined(){
      (w.cite?w.cite+" — ":"")+"Sindarin Dictionary Project [EXT]",""]);});
    if(r&&r.words)r.words.forEach(function(w){XTRA.push([w.form,"q","",
      w.gloss||"","",(w.cite||"Renk, a Quenya course")+" [EXT]",""]);});
-   _minedState=2;
+   /* one shard per initial letter, loaded when a reader first types it */
  });
  return _minedP;
 }
@@ -141,7 +142,8 @@ p.querySelector("#lc").textContent=` ${n} shown · ${(D.lex.length+XTRA.length).
 /* Load the mined layers on the FIRST keystroke, then filter. The gate is here rather than
    inside lexFilter so the filter itself stays synchronous and unchanged. */
 p.querySelector("#ls").addEventListener("input",function(){
- if(this.value.trim().length>=2){_loadMined().then(lexFilter);}else{lexFilter();}});
+ _q=this.value.trim();
+ if(_q.length>=2){_loadMined().then(lexFilter);}else{lexFilter();}});
 p.querySelector("#lf").addEventListener("change",lexFilter);
 lexFilter();}
 // ---- Name-craft tab
