@@ -13,8 +13,7 @@
              bookmarks: [], recents: [] };
   }
 
-  /* Every array is validated and capped ON READ. Corrupt or future-version data falls back to a
-     usable blank rather than throwing: storage is the one input a reader can corrupt by hand. */
+  /* Arrays validated and CAPPED ON READ; corrupt or future data falls back to blank. */
   function read() {
     var raw = null;
     try { raw = localStorage.getItem(KEY); } catch (e) { return blank(); }   // blocked storage
@@ -79,10 +78,7 @@
   };
   window.ardaState = api;
 
-  /* ---- §7.3 OVERLAY AND FOCUS STATE MACHINE ------------------------------------------------
-     One authority for every layer. Opening a primary layer closes the previous one; Escape closes
-     the topmost and RETURNS FOCUS to the trigger; a route change closes transient state. Without
-     this each component invents its own drawer and the reader learns four different dismissals. */
+  /* §7.3 overlay/focus machine: one authority for every layer. Why: commit log, 16 Aug. */
   var open = null, trigger = null, layers = {};
 
   function close(reason) {
@@ -97,8 +93,9 @@
   }
 
   window.ardaLayers = {
-    register: function (name, el, triggerEl) {
-      layers[name] = { el: el, trigger: triggerEl };
+    /* takeFocus: modal layers only. A disclosure must NOT steal focus (WAI pattern). */
+    register: function (name, el, triggerEl, opts) {
+      layers[name] = { el: el, trigger: triggerEl, takeFocus: !!(opts && opts.takeFocus) };
       el.hidden = true;
       if (triggerEl) {
         triggerEl.setAttribute("aria-expanded", "false");
@@ -113,8 +110,10 @@
       open = name; trigger = l.trigger || null;
       l.el.hidden = false;
       if (l.trigger) l.trigger.setAttribute("aria-expanded", "true");
-      var first = l.el.querySelector("a,button,input,[tabindex]:not([tabindex='-1'])");
-      if (first) { try { first.focus(); } catch (e) {} }
+      if (l.takeFocus) {
+        var first = l.el.querySelector("a,button,input,[tabindex]:not([tabindex='-1'])");
+        if (first) { try { first.focus(); } catch (e) {} }
+      }
       return true;
     },
     close: close,
