@@ -14,9 +14,8 @@
   --cx-mut:#c3b28c; --cx-stock:#221c15; --cx-edge:rgba(0,0,0,.35);
 }
 
-#codex-shell{font:12.5px/1.5 Georgia,'Palatino Linotype',serif;color:var(--cx-mut)}
-.cx-sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);
-  white-space:nowrap}
+#codex-shell{font:12.5px/1.5 Georgia,'Palatino Linotype',serif;color:var(--cx-mut);
+  max-width:100%;overflow-x:clip}   /* the shell may never widen the document */
 
 /* ---- 2. BREADCRUMB — canonical position, as links, ending in plain current text ---- */
 #cx-crumb{max-width:1100px;margin:0 auto;padding:6px 16px 0}

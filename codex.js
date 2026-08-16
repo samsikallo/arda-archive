@@ -36,15 +36,15 @@
     var meta = ix.routes[route] || ix.routes[here] || null;
     if (!meta && nested) {
       var fam = ix.families[route.split("/")[0] + "/"];
-      if (fam) meta = { v: fam.volume, p: fam.part, a: fam.archetype, s: fam.spread };
+      if (fam) meta = { vol: fam.volume, part: fam.part, arch: fam.archetype, spread: fam.spread };
     }
-    if (!meta) { warn("no metadata for " + route + " — neutral fallback shell"); meta = { a: "folio" }; }
+    if (!meta) { warn("no metadata for " + route + " — neutral fallback shell"); meta = { arch: "folio" }; }
 
-    R.setAttribute("data-archetype", meta.a || "folio");
-    if (meta.s) R.setAttribute("data-spread", meta.s);
+    R.setAttribute("data-archetype", meta.arch || "folio");
+    if (meta.spread) R.setAttribute("data-spread", meta.spread);
 
     var vol = null, i;
-    for (i = 0; i < ix.volumes.length; i++) if (ix.volumes[i].id === meta.v) vol = ix.volumes[i];
+    for (i = 0; i < ix.volumes.length; i++) if (ix.volumes[i].id === meta.vol) vol = ix.volumes[i];
     if (vol) R.setAttribute("data-volume", vol.id);
 
     var host = el("div", { id: "codex-shell", "data-v": "1" });
@@ -55,9 +55,13 @@
     var vlist = el("ul", null);
     for (i = 0; i < ix.volumes.length; i++) {
       var v = ix.volumes[i], li = el("li", null);
-      var a = el("a", { href: PRE + "index.html#vol-" + v.id, title: v.title }, v.short);
+      /* The full volume name rides on aria-label, NOT in a visually-hidden span. A hidden span
+         depends on CSS having arrived; when it had not, every tab rendered its full title and the
+         row overflowed the viewport by 117px on 14 pages. An accessible name that cannot be
+         widened by a missing stylesheet is simply better. */
+      var a = el("a", { href: PRE + "index.html#vol-" + v.id, title: v.title,
+                        "aria-label": "Volume " + v.id + " — " + v.title }, v.short);
       if (vol && v.id === vol.id) { a.setAttribute("aria-current", "true"); li.className = "on"; }
-      a.appendChild(el("span", { class: "cx-sr" }, " — " + v.title));
       li.appendChild(a); vlist.appendChild(li);
     }
     vnav.appendChild(vlist); host.appendChild(vnav);
@@ -72,10 +76,10 @@
       c2.appendChild(el("a", { href: PRE + "index.html#vol-" + vol.id }, vol.title));
       ol.appendChild(c2);
     }
-    if (meta.p) ol.appendChild(el("li", null, meta.p));
+    if (meta.part) ol.appendChild(el("li", null, meta.part));
     var t = entryTitle();
     /* The entrance is already the first crumb; repeating it reads as a broken trail. */
-    var dup = !t || t === meta.p || /^the arda archive$|^the archive$/i.test(t);
+    var dup = !t || t === meta.part || /^the arda archive$|^the archive$/i.test(t);
     if (!dup) ol.appendChild(el("li", { "aria-current": "page" }, t));
     bc.appendChild(ol); host.appendChild(bc);
 
@@ -83,7 +87,7 @@
     if (vol) {
       var rh = el("div", { id: "cx-run", "aria-hidden": "true" });
       rh.appendChild(el("span", { class: "cx-rv" }, "Volume " + vol.id));
-      rh.appendChild(el("span", { class: "cx-rp" }, meta.p || vol.title));
+      rh.appendChild(el("span", { class: "cx-rp" }, meta.part || vol.title));
       host.appendChild(rh);
     }
 
@@ -94,7 +98,7 @@
       if (meta.prev) {
         var pa = el("a", { href: PRE + meta.prev, rel: "prev" });
         pa.appendChild(el("span", { class: "cx-dir" }, "Previous"));
-        pa.appendChild(el("span", { class: "cx-dest" }, (ix.routes[meta.prev] || {}).p || meta.prev));
+        pa.appendChild(el("span", { class: "cx-dest" }, (ix.routes[meta.prev] || {}).part || meta.prev));
         fn.appendChild(pa);
       }
       if (vol) {
@@ -106,7 +110,7 @@
       if (meta.next) {
         var na = el("a", { href: PRE + meta.next, rel: "next" });
         na.appendChild(el("span", { class: "cx-dir" }, "Next"));
-        na.appendChild(el("span", { class: "cx-dest" }, (ix.routes[meta.next] || {}).p || meta.next));
+        na.appendChild(el("span", { class: "cx-dest" }, (ix.routes[meta.next] || {}).part || meta.next));
         fn.appendChild(na);
       }
       host.appendChild(fn);
