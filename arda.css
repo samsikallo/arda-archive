@@ -140,9 +140,6 @@ a:focus-visible{outline:2px solid var(--a-gold) !important;}
 }
 /* ---- Opt-in dark theme (moon toggle; stored in localStorage) ----
    Pragmatic inversion: the parchment site inverts cleanly; images/canvas/video counter-invert. */
-html.arda-dark body{filter:invert(1) hue-rotate(180deg);background:#181410}
-html.arda-dark img,html.arda-dark canvas,html.arda-dark svg image,html.arda-dark video{filter:invert(1) hue-rotate(180deg)}
-html.arda-dark{background:#181410}
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01s !important;transition-duration:.01s !important}}
 
 /* canon-focus layer: dim entries badged inferred/external (the badge stays visible as the reason) */
@@ -173,7 +170,6 @@ html.arda-canon .conf,html.arda-canon .refnote{opacity:.4}
    set here rather than in each hall because the halls set `background` with the shorthand,
    which would reset any repeat rule written before it. */
 html{background:#efe6cd}
-html.arda-dark{background:#181410}
 
 /* Visually hidden, still announced. nav.js uses it to NAME the hall you are in, which was
    marked by a gold border alone -- a channel a screen reader cannot perceive. */

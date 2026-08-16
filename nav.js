@@ -197,9 +197,26 @@ if(_J&&_JR){
 }
 // theme toggle
 const T=document.getElementById("a-theme");
-function setTheme(d){document.documentElement.classList.toggle("arda-dark",d);try{localStorage.setItem("ardaTheme",d?"dark":"light")}catch(e){}}
-try{if(localStorage.getItem("ardaTheme")==="dark")setTheme(true)}catch(e){}
-T.addEventListener("click",()=>setTheme(!document.documentElement.classList.contains("arda-dark")));
+// THIS BUTTON DROVE THE WRONG MECHANISM AND THE ARCHIVE HAD TWO DARK THEMES.
+// Measured in a browser, 16 Aug, clicking this very button:
+//     BEFORE  data-theme=light   AFTER click  data-theme=light  class="arda-dark"
+//     body filter = invert(1) hue-rotate(180deg)
+// So the reader got a PHOTOGRAPHIC NEGATIVE of the page, while the designed night ground --
+// 195 rules in arda.css keyed on [data-theme="dark"] -- never engaged at all. It could only
+// ever appear if the READER'S OS asked for dark, because nothing in the interface wrote the
+// key it reads. A reader on a light-mode machine could not reach it by any means.
+// AND THE SECOND TOGGLE NEVER APPEARED, BY ITS OWN GUARD: the block below bails out when it
+// finds #a-theme, on the sound principle that two buttons for one setting is worse than
+// none. The guard was right and it preserved the WRONG button, which is a shape this archive
+// already knows -- an escape hatch nobody opens, a ruling recorded as landed that was not.
+// The button now drives data-theme and persists under "arda-theme", the same key the block
+// below reads, so there is ONE mechanism and this control is its face.
+function setTheme(d){document.documentElement.setAttribute("data-theme",d?"dark":"light");
+  try{localStorage.setItem("arda-theme",d?"dark":"light")}catch(e){}
+  T.textContent=d?"\u2600":"\u263e"; T.title=d?"switch to the day ground":"switch to the night ground";
+  T.setAttribute("aria-label",T.title);}
+try{setTheme(document.documentElement.getAttribute("data-theme")==="dark")}catch(e){}
+T.addEventListener("click",()=>setTheme(document.documentElement.getAttribute("data-theme")!=="dark"));
 // layer toggle: canon focus (dims inferred/external-badged entries)
 const Lb=document.createElement("button");Lb.id="a-layers";Lb.textContent="layers: all";Lb.title="toggle canon-focus — dims material badged inferred [I] or external [EXT]";
 Lb.style.cssText=T.style.cssText;Lb.className=T.className||"";T.parentNode.insertBefore(Lb,T.nextSibling);
