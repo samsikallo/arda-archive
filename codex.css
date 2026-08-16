@@ -85,6 +85,36 @@
 :root[data-ornament="0"] #cx-vols a{box-shadow:none}
 :root[data-ornament="0"] #cx-run{display:none}
 
+/* ---- READER CONTROLS (Phase 3). Personal state is a DIFFERENT SHAPE from the canonical volume
+        tabs: a bar of labelled buttons, never an edge ribbon that could be mistaken for a tab. */
+#cx-bar{max-width:1100px;margin:6px auto 0;padding:0 16px;display:flex;gap:8px;flex-wrap:wrap}
+#cx-bar button{min-height:44px;padding:6px 12px;font:12.5px Georgia,serif;font-variant:small-caps;
+  letter-spacing:.05em;background:var(--cx-stock);color:var(--cx-mut);
+  border:1px solid var(--cx-rule);border-radius:8px;cursor:pointer}
+#cx-bar button:hover,#cx-bar button:focus-visible{border-color:var(--cx-rubric);color:var(--cx-ink)}
+#cx-bar button[aria-pressed="true"]{border-color:var(--cx-rubric);border-width:2px;
+  color:var(--cx-ink);font-weight:600}
+#cx-bar button[aria-expanded="true"]{border-color:var(--cx-rubric);color:var(--cx-ink)}
+#cx-bar button[disabled]{opacity:.6;cursor:not-allowed}
+
+#cx-toc,#cx-jrn{max-width:1100px;margin:8px auto 0;padding:12px 16px;background:var(--cx-stock);
+  border:1px solid var(--cx-rule);border-radius:10px}
+#cx-toc[hidden],#cx-jrn[hidden]{display:none}
+#cx-toc ul,#cx-jrn ul{list-style:none;margin:0;padding:0}
+#cx-toc li{padding:5px 0;border-bottom:1px dotted var(--cx-rule-soft)}
+#cx-toc a,#cx-jrn a{color:var(--cx-ink);text-decoration:none;border-bottom:1px solid transparent}
+#cx-toc a:hover,#cx-toc a:focus-visible,#cx-jrn a:hover,#cx-jrn a:focus-visible{
+  border-bottom-color:var(--cx-rubric)}
+#cx-toc [aria-current="true"]{font-weight:600;color:var(--cx-rubric)}
+#cx-toc .cx-th{display:block;font-size:11.5px;color:var(--cx-mut);font-style:italic}
+#cx-jrn h3{font-variant:small-caps;letter-spacing:.06em;font-size:12.5px;color:var(--cx-rubric);
+  margin:8px 0 4px}
+#cx-jrn li{padding:3px 0}
+#cx-jrn .cx-empty{color:var(--cx-mut);font-style:italic;margin:2px 0}
+#cx-jrn .cx-clear{margin-top:10px;min-height:44px;padding:6px 12px;font:12px Georgia,serif;
+  background:none;border:1px solid var(--cx-rule);border-radius:8px;color:var(--cx-mut);cursor:pointer}
+:root[data-ornament="0"] #cx-toc .cx-th{display:none}
+
 @media (prefers-reduced-motion:reduce){
   #cx-vols a{transition:none}
   #cx-vols a:hover,#cx-vols a:focus-visible{transform:none}

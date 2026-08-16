@@ -8,6 +8,8 @@
   var B=(typeof window!=="undefined"&&window.ARDA_BASE)||"";
   var l=document.createElement("link");l.rel="stylesheet";l.href=B+"codex.css";
   document.head.appendChild(l);
+  var st=document.createElement("script");st.src=B+"codex_state.js";st.defer=true;
+  document.head.appendChild(st);
   var s=document.createElement("script");s.src=B+"codex.js";s.defer=true;
   document.head.appendChild(s);
 }catch(e){}})();
@@ -267,9 +269,14 @@ Lb.addEventListener("click",()=>setLayers(!document.documentElement.classList.co
 // ---- feedback panel (store-nothing composer: site collects no data; user sends via GitHub or email) ----
 const FB=document.createElement("button");FB.id="a-fb";FB.textContent="\u{1F4AC} feedback";FB.title="leave a suggestion or bug report";
 FB.style.cssText=T.style.cssText;T.parentNode.insertBefore(FB,document.getElementById("a-layers").nextSibling);
+/* P4 (risk register): this panel was a positioned <div> with no dialog semantics -- no focus
+   return, no Escape, no accessible name. It is now a CLIENT OF THE ONE LAYER MACHINE in
+   codex_state.js, so it shares Escape, focus return and mutual exclusion with contents and
+   the journal rather than inventing a fourth dismissal the reader has to learn. */
 FB.addEventListener("click",()=>{
  let d=document.getElementById("a-fbdlg");
- if(d){d.style.display=d.style.display==="none"?"block":"none";return}
+ if(d){if(window.ardaLayers)window.ardaLayers.open("feedback");
+       else d.style.display=d.style.display==="none"?"block":"none";return}
  d=document.createElement("div");d.id="a-fbdlg";
  d.innerHTML='<div class="fbh">Feedback for the Arda Archive</div>'
  +'<label>What kind? <select id="fbt"><option>bug</option><option>suggestion</option><option>content issue (lore/citation)</option><option>general UX</option></select></label>'
@@ -279,6 +286,7 @@ FB.addEventListener("click",()=>{
  +'<div class="fbbtns"><button id="fbgh">open as a GitHub issue</button><button id="fbmail">send by e-mail</button><button id="fbclose">close</button></div>'
  +'<div class="fbnote"><b>Privacy, plainly:</b> this site stores nothing you type \u2014 there is no server behind it. Your text is handed to the channel you choose: a <b>GitHub issue</b> is public and governed by GitHub\u2019s terms; <b>e-mail</b> reveals your address to the site\u2019s maintainer, who uses it only to read your feedback. Both are optional; name and e-mail are never required. Please include no sensitive personal data.</div>';
  document.body.appendChild(d);
+ if(window.ardaLayers){window.ardaLayers.register("feedback",d,FB);window.ardaLayers.open("feedback");}
  document.getElementById("fbp").value=location.pathname.split("/").pop()+location.hash;
  const gather=()=>{const t=document.getElementById("fbt").value,p=document.getElementById("fbp").value,
   x=document.getElementById("fbx").value.trim(),n=document.getElementById("fbn").value.trim();
@@ -287,7 +295,8 @@ FB.addEventListener("click",()=>{
   open("https://github.com/samsikallo/arda-archive/issues/new?title="+encodeURIComponent("["+g.t+"] "+g.p)+"&body="+encodeURIComponent(g.body),"_blank")};
  document.getElementById("fbmail").onclick=()=>{const g=gather();if(!g.x){alert("Write a few words first \u2014 specifics help most.");return}
   location.href="mailto:bobo.linux@gmail.com?subject="+encodeURIComponent("[arda-archive feedback] "+g.t)+"&body="+encodeURIComponent(g.body)};
- document.getElementById("fbclose").onclick=()=>{d.style.display="none"};
+ document.getElementById("fbclose").onclick=()=>{
+  if(window.ardaLayers)window.ardaLayers.close("button"); else d.style.display="none"};
 });
 // THE NIGHT GROUND — one toggle, every hall, the owner's ruling of 01 August.
 //

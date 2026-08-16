@@ -116,6 +116,76 @@
       host.appendChild(fn);
     }
 
+    /* ---- 5. CONTENTS LAYER, 6. READER RIBBON, and the JOURNAL (§7.2, Phase 3) ------------
+       All three are clients of the ONE state machine in codex_state.js: opening any of them
+       closes the others, Escape returns focus to the trigger, and a bfcache restore closes
+       them. Personal bookmarks are deliberately a DIFFERENT SHAPE and a different word from the
+       canonical volume tabs -- §7.4 warns those must never be confused. */
+    var S = window.ardaState, L = window.ardaLayers;
+    if (S && L) {
+      var bar = el("div", { id: "cx-bar" });
+      var title = entryTitle();
+
+      var tocBtn = el("button", { type: "button", id: "cx-toc-b" }, "Contents");
+      var toc = el("div", { id: "cx-toc", role: "group", "aria-label": "Chapter contents" });
+      var tl = el("ul", null);
+      for (i = 0; i < ix.volumes.length; i++) {
+        var vv = ix.volumes[i], tli = el("li", null);
+        var ta = el("a", { href: PRE + "index.html#vol-" + vv.id }, vv.title);
+        if (vol && vv.id === vol.id) ta.setAttribute("aria-current", "true");
+        tli.appendChild(ta);
+        tli.appendChild(el("span", { class: "cx-th" }, vv.thesis));
+        tl.appendChild(tli);
+      }
+      toc.appendChild(tl);
+
+      var markBtn = el("button", { type: "button", id: "cx-mark-b" });
+      function paintMark() {
+        var on = S.isMarked(route);
+        markBtn.textContent = on ? "Bookmarked" : "Bookmark this entry";
+        markBtn.setAttribute("aria-pressed", on ? "true" : "false");
+      }
+      paintMark();
+      markBtn.addEventListener("click", function () {
+        var r = S.toggleMark(route, title);
+        if (!r.ok) { markBtn.textContent = "Bookmarks unavailable"; markBtn.disabled = true; return; }
+        paintMark(); fillJournal();
+      });
+
+      var jrnBtn = el("button", { type: "button", id: "cx-jrn-b" }, "Reader's Journal");
+      var jrn = el("div", { id: "cx-jrn", role: "group", "aria-label": "Reader's Journal" });
+      function fillJournal() {
+        jrn.textContent = "";
+        var s = S.get();
+        function section(label, list, empty) {
+          jrn.appendChild(el("h3", null, label));
+          if (!list.length) { jrn.appendChild(el("p", { class: "cx-empty" }, empty)); return; }
+          var ul = el("ul", null), k;
+          for (k = 0; k < list.length && k < 12; k++) {
+            var li2 = el("li", null);
+            li2.appendChild(el("a", { href: PRE + list[k].route }, list[k].title || list[k].route));
+            ul.appendChild(li2);
+          }
+          jrn.appendChild(ul);
+        }
+        section("Bookmarks", s.bookmarks, "No bookmarks yet.");
+        section("Recent folios", s.recents, "No recent folios yet.");
+        var clr = el("button", { type: "button", class: "cx-clear" }, "Clear all reader state");
+        clr.addEventListener("click", function () { S.reset(); paintMark(); fillJournal(); });
+        jrn.appendChild(clr);
+      }
+      fillJournal();
+
+      bar.appendChild(tocBtn); bar.appendChild(markBtn); bar.appendChild(jrnBtn);
+      host.appendChild(bar); host.appendChild(toc); host.appendChild(jrn);
+      L.register("contents", toc, tocBtn);
+      L.register("journal", jrn, jrnBtn);
+      tocBtn.addEventListener("click", function () { L.open("contents"); });
+      jrnBtn.addEventListener("click", function () { L.open("journal"); });
+
+      if (meta.vol) S.noteVisit(route, title);   /* a VISIT, never a completion (§11) */
+    }
+
     document.body.appendChild(host);
     R.setAttribute("data-codex-shell", "on");
   }
