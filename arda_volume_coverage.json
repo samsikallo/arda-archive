@@ -6,9 +6,9 @@
   "cited": "a human named the volume in a cite field — no machine checked it"
  },
  "not_classified": "this record does NOT say which volumes are reference works and which are narrative. No dataset here classifies a volume by kind, so any such split would be a guess from filenames rather than a measurement.",
- "n_volumes": 209,
+ "n_volumes": 190,
  "n_used": 37,
- "n_empty": 20,
+ "n_empty": 1,
  "n_unused": 152,
  "volumes": [
   {
@@ -126,12 +126,6 @@
    "cited": 4650
   },
   {
-   "file": "t1_corpus_t1_c_appendix_tables_raw_txt.txt",
-   "bytes": 0,
-   "bound": 0,
-   "cited": 0
-  },
-  {
    "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
    "bytes": 1205529,
    "bound": 56,
@@ -159,12 +153,6 @@
    "file": "t1_j_r_r_tolkien_artist_and_illustrator.txt",
    "bytes": 670307,
    "bound": 1,
-   "cited": 0
-  },
-  {
-   "file": "t1_k_the_road_goes_ever_on_a_song_cycle.txt",
-   "bytes": 0,
-   "bound": 0,
    "cited": 0
   },
   {
@@ -360,26 +348,8 @@
    "cited": 0
   },
   {
-   "file": "t2_parma_eldalamberon_17.txt",
-   "bytes": 0,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t2_parma_eldalamberon_23.txt",
-   "bytes": 0,
-   "bound": 0,
-   "cited": 0
-  },
-  {
    "file": "t2_pictures_by_j_r_r_tolkien.txt",
    "bytes": 43022,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t2_the_art_of_the_hobbit.txt",
-   "bytes": 0,
    "bound": 0,
    "cited": 0
   },
@@ -399,90 +369,6 @@
    "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
    "bytes": 2551141,
    "bound": 5,
-   "cited": 0
-  },
-  {
-   "file": "t2_the_road_to_middle_earth_3rd_ed.txt",
-   "bytes": 1001141,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t2_vinyar_tengwar_11.txt",
-   "bytes": 0,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t2_vinyar_tengwar_12.txt",
-   "bytes": 0,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t2_vinyar_tengwar_14.txt",
-   "bytes": 0,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t2_vinyar_tengwar_24.txt",
-   "bytes": 0,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t2_vinyar_tengwar_25.txt",
-   "bytes": 0,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t2_vinyar_tengwar_27.txt",
-   "bytes": 0,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t2_vinyar_tengwar_28.txt",
-   "bytes": 0,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t2_vinyar_tengwar_29.txt",
-   "bytes": 0,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t2_vinyar_tengwar_31.txt",
-   "bytes": 0,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t2_vinyar_tengwar_36.txt",
-   "bytes": 0,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t2_vinyar_tengwar_37.txt",
-   "bytes": 0,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t2_vinyar_tengwar_39.txt",
-   "bytes": 0,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t2_vinyar_tengwar_39_2.txt",
-   "bytes": 0,
-   "bound": 0,
    "cited": 0
   },
   {
@@ -512,12 +398,6 @@
   {
    "file": "t3_a_sindarin_and_noldorin_dictionary.txt",
    "bytes": 385820,
-   "bound": 0,
-   "cited": 0
-  },
-  {
-   "file": "t3_alan_lee_the_lord_of_the_rings_sketchbook.txt",
-   "bytes": 0,
    "bound": 0,
    "cited": 0
   },
@@ -1086,6 +966,12 @@
    "cited": 0
   },
   {
+   "file": "t3_picturing_tolkien_janice_m_bogstad_and_philip_e_kave.txt",
+   "bytes": 814737,
+   "bound": 0,
+   "cited": 0
+  },
+  {
    "file": "t3_quenya_quetin_i_lambe_eldaiva_a_quenya_course_renk.txt",
    "bytes": 311552,
    "bound": 0,
@@ -1130,6 +1016,12 @@
   {
    "file": "t3_the_ring_goes_ever_on.txt",
    "bytes": 3522475,
+   "bound": 0,
+   "cited": 0
+  },
+  {
+   "file": "t3_the_road_to_middle_earth_tom_shippey.txt",
+   "bytes": 1001141,
    "bound": 0,
    "cited": 0
   },
@@ -1194,26 +1086,20 @@
    "cited": 0
   },
   {
-   "file": "t4_guide_to_carpenter_s_revised_tolkien_letters_changes.txt",
-   "bytes": 64347,
-   "bound": 0,
-   "cited": 833
-  },
-  {
    "file": "t4_heraldry_tolkien_gateway.txt",
    "bytes": 131593,
    "bound": 0,
    "cited": 0
   },
   {
-   "file": "t4_lotr_roleplay.txt",
-   "bytes": 1296896,
+   "file": "t4_letterschanges.txt",
+   "bytes": 64347,
    "bound": 0,
-   "cited": 0
+   "cited": 833
   },
   {
-   "file": "t4_picturing_tolkien.txt",
-   "bytes": 814737,
+   "file": "t4_lotr_roleplay.txt",
+   "bytes": 1296896,
    "bound": 0,
    "cited": 0
   },
