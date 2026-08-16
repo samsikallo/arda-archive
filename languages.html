@@ -551,5 +551,95 @@ if(location.hash.includes("tab=xlate"))b.click();
   }
 })();
 </script>
-<script src="glossary.js" defer></script></body>
+<script src="glossary.js" defer></script><script>/*ARDA:PHRASEPARTS*/
+(function(){
+ var tabsEl=document.getElementById("tabs"),main=document.getElementById("main");
+ if(!tabsEl||!main)return;
+ var b=document.createElement("div");b.className="tab";b.id="tab-parts";
+ b.textContent="Word by Word";
+ var p=document.createElement("div");p.className="pane";
+ var loaded=false,MAN=null,CACHE={};
+ b.onclick=function(){
+  document.querySelectorAll(".tab").forEach(function(x){x.classList.remove("on")});
+  b.classList.add("on");
+  document.querySelectorAll(".pane").forEach(function(x){x.classList.remove("on")});
+  p.classList.add("on");
+  if(!loaded){loaded=true;load();}
+ };
+ tabsEl.appendChild(b);main.appendChild(p);
+ p.innerHTML='<h2 style="font-variant:small-caps;font-weight:normal">Every phrase, taken apart</h2>'+
+  '<div style="max-width:900px;font-size:13.5px" id="pp-intro">'+
+  '<p>The lexicon holds whole sentences &mdash; <i>elen síla lúmenn’ omentielvo</i> &mdash; '+
+  'and a reader who wants to know what one WORD in them means has had nowhere to look. '+
+  'This takes each phrase apart and shows every token with the gloss, citation and confidence '+
+  'of the lexicon entry it resolves to.</p>'+
+  '<p><b>The gaps are shown as gaps.</b> Where no entry folds to a token it says so and why; '+
+  'nothing here is guessed from grammar. Where a token is not held but splits into two forms that '+
+  'ARE, the split is marked <span class="pp-k">[I-M]</span> with both halves cited &mdash; '+
+  '<i>two attested pieces do not make an attested join</i>.</p>'+
+  '<p id="pp-status">loading…</p></div>'+
+  '<div id="pp-box" style="margin-top:10px"></div>';
+ var st=document.createElement("style");
+ st.textContent=".pp-row{border-bottom:1px dotted #d8cfb8;padding:6px 0}"+
+  ".pp-f{font-style:italic;font-size:15px}"+
+  ".pp-t{display:inline-block;min-width:120px;font-weight:600}"+
+  ".pp-g{}.pp-c{opacity:.75;font-size:11.5px}"+
+  ".pp-k{font-size:10.5px;border:1px solid currentColor;border-radius:3px;padding:0 3px;opacity:.8}"+
+  ".pp-x{font-size:11.5px;font-style:italic;opacity:.85}";
+ document.head.appendChild(st);
+ function load(){
+  fetch("pp/manifest.json").then(function(r){return r.json()}).then(function(m){
+   MAN=m;
+   document.getElementById("pp-status").innerHTML=
+    "<b>"+m.n.toLocaleString()+"</b> phrases, taken apart into <b>"+m.tokens.toLocaleString()+
+    "</b> tokens. Type to find one.";
+   var inp=document.createElement("input");
+   inp.type="search";inp.placeholder="a phrase, or a word inside one…";
+   inp.setAttribute("aria-label","find a phrase");
+   inp.style.cssText="width:min(560px,92%);padding:7px 10px;font-size:14px;margin:4px 0 10px";
+   document.getElementById("pp-box").appendChild(inp);
+   var out=document.createElement("div");document.getElementById("pp-box").appendChild(out);
+   function fold(s){return s.normalize("NFD").replace(/[^a-zA-Z0-9]/g,"").toLowerCase()}
+   function show(q){
+    out.innerHTML="";
+    if(!q||q.length<2){out.innerHTML='<p class="pp-x">type at least two letters</p>';return}
+    var f=fold(q);
+    var hits=m.forms.filter(function(r){return fold(r[0]).indexOf(f)>=0}).slice(0,40);
+    if(!hits.length){out.innerHTML='<p class="pp-x">no phrase in the lexicon matches that</p>';return}
+    var need={};hits.forEach(function(h){need[h[1]]=1});
+    var keys=Object.keys(need).filter(function(k){return !CACHE[k]});
+    Promise.all(keys.map(function(k){
+     return fetch("pp/"+k+".json").then(function(r){return r.json()}).then(function(j){CACHE[k]=j})
+    })).then(function(){
+     hits.forEach(function(h){
+      var sh=CACHE[h[1]]||[];
+      var rec=null;for(var i=0;i<sh.length;i++){if(sh[i].f===h[0]){rec=sh[i];break}}
+      if(!rec)return;
+      var d=document.createElement("div");d.className="pp-row";
+      var html='<div class="pp-f">'+rec.f+(rec.l?' <span class="pp-c">'+rec.l+'</span>':'')+'</div>';
+      rec.p.forEach(function(t){
+       html+='<div><span class="pp-t">'+t.t+'</span>';
+       if(t.g){html+='<span class="pp-g">'+t.g+'</span>';
+        if(t.k)html+=' <span class="pp-k">'+t.k+'</span>';
+        if(t.c)html+=' <span class="pp-c">'+t.c+'</span>';
+        if(t.a)html+=' <span class="pp-c">= '+t.a+'</span>';
+        if(t.e)html+=' <span class="pp-c">unelided candidate: '+t.e+'</span>';
+       }else{html+='<span class="pp-x">'+(t.x||"not held")+'</span>'}
+       html+='</div>';
+      });
+      d.innerHTML=html;out.appendChild(d);
+     });
+    });
+   }
+   inp.addEventListener("input",function(){show(inp.value)});
+   show("omentielvo");inp.value="omentielvo";
+  }).catch(function(e){
+   document.getElementById("pp-status").textContent=
+    "the word-by-word data could not be loaded ("+e+")";
+  });
+ }
+ if(location.hash.indexOf("tab=parts")>=0)b.click();
+})();
+</script>
+</body>
 </html>
