@@ -307,6 +307,14 @@ html.arda-dark{background:#181410}
    and inverting it would publish a drawing nobody made. */
 :root[data-theme="dark"] #bs #sheet,
 :root[data-theme="dark"] .plate,
+:root[data-theme="dark"] #stage,
+:root[data-theme="dark"] #stage .note,
+:root[data-theme="dark"] #stage .lgd,
+:root[data-theme="dark"] #stage .row,
+:root[data-theme="dark"] #stage .col,
+:root[data-theme="dark"] #stage .cell,
+:root[data-theme="dark"] svg .note{background:transparent !important;color:#3a3226 !important}
+:root[data-theme="dark"] #stage > svg,
 :root[data-theme="dark"] .sheet{background:#fdfaf2 !important;color:#3a3226 !important}
 
 /* The toggle itself, in the header beside the jump box. */
@@ -384,6 +392,12 @@ html.arda-dark{background:#181410}
 :root[data-theme="dark"] .hit,
 :root[data-theme="dark"] .sq,
 :root[data-theme="dark"] .w,
+:root[data-theme="dark"] .ann,
+:root[data-theme="dark"] .pcard,
+:root[data-theme="dark"] .dcard,
+:root[data-theme="dark"] .hcard,
+:root[data-theme="dark"] .hcard .txt,
+:root[data-theme="dark"] .blz,
 :root[data-theme="dark"] input,
 :root[data-theme="dark"] textarea,
 :root[data-theme="dark"] select{background:#241f18 !important;color:#e8dcc0 !important;
@@ -555,6 +569,10 @@ html.arda-dark{background:#181410}
 :root:not([data-theme="dark"]) #bs .row button[aria-pressed="true"]{color:#fdfaf2 !important}
 /* LIGHT-CONTRAST-END */
 /* DARK-CONTRAST-BEGIN */
+/* Dark-ground readability, 16 Aug: 897 unreadable nodes -> 303. The four causes -- semantic
+   inks, class-rule card grounds, class-rule muted inks, and `.note` as a homograph between a
+   hall card and an SVG map label -- are in commit c1825f0. Kept OUT of this file on purpose:
+   every hall fetches it, and the long version cost ten pages their ceilings. */
 /* Dark-ground legibility, scoped BY GROUND. 4,260 -> 897. Why, and the blanket-svg attempt that
    cost 752 new failures: the roadmap, 16 Aug. */
 :root[data-theme="dark"] .card details .heads,
@@ -580,4 +598,11 @@ html.arda-dark{background:#181410}
 :root[data-theme="dark"] #hcredits,
 :root[data-theme="dark"] #hcredits .cite,
 :root[data-theme="dark"] #hcredits .cite a{color:#4a4030 !important}
+:root[data-theme="dark"] :is(#swout .sq .v,#swout .sq.vs .v,#swout .sq.miss .v,#cwout .cq .v,#gu .r .mk,.col .lbl){color:#9a8565 !important}
+:root[data-theme="dark"] :is(.cq.c>.v,.cite b span){color:#689451 !important}
+:root[data-theme="dark"] :is(.cq.c>.v>sup,.col .s i.v){color:#c7725d !important}
+:root[data-theme="dark"] [style*="#4a6a3a"]{color:#689451 !important}
+:root[data-theme="dark"] :is(.dcard .bz,.card .ft,.wrap .ft,.limits,.dcard .tk .src,.blz .cite,.row .arw){color:#c3b28c !important}
+:root[data-theme="dark"] .ann b{color:#d8bd86 !important}
+:root[data-theme="dark"] .ann .d{color:#e0b878 !important}
 /* DARK-CONTRAST-END */
