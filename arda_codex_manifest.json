@@ -1,0 +1,5880 @@
+{
+ "what": "Every published route's place in the codex: volume, part, archetype, spread and neighbours. The shared shell reads its state from here rather than guessing from DOM shape, which is the brief's §14.3.",
+ "refuses": {
+  "inventing a volume for an unplaced route": "the tool exits non-zero instead, so 'every route is placed' is a checkable fact and not a sentence somebody wrote.",
+  "prev/next across the entity records": "alphabetical adjacency is not a reading sequence; an arrow promising one would lie."
+ },
+ "divergence_from_the_brief": {
+  "annals.html": "the brief places archive annals in Volume II; the owner moved it to Encyclopedia on 30 July because its subject is the ARCHIVE and not Arda. The owner's ruling wins and the divergence is recorded.",
+  "living.html": "the halls put it under Peoples; the brief's Volume IV contents list puts a herbarium with relics and devices. The brief is followed."
+ },
+ "n_routes": 621,
+ "n_volumes": 7,
+ "volumes": [
+  {
+   "volume": "I",
+   "name": "Atlas and Realms",
+   "thesis": "where things are",
+   "parts": [
+    {
+     "part": "The Marked Sheet",
+     "entries": [
+      "baynes.html"
+     ]
+    },
+    {
+     "part": "Gazetteer",
+     "entries": [
+      "gazetteer.html"
+     ]
+    },
+    {
+     "part": "Houses of Gondolin",
+     "entries": [
+      "gondolin.html"
+     ]
+    },
+    {
+     "part": "The Living Map",
+     "entries": [
+      "map.html"
+     ]
+    },
+    {
+     "part": "A Place in Full",
+     "entries": [
+      "place.html"
+     ]
+    },
+    {
+     "part": "Realms",
+     "entries": [
+      "realms.html"
+     ]
+    },
+    {
+     "part": "The Drawn Sheets",
+     "entries": [
+      "sheets.html"
+     ]
+    },
+    {
+     "part": "Aman",
+     "entries": [
+      "valinor.html"
+     ]
+    }
+   ]
+  },
+  {
+   "volume": "II",
+   "name": "Annals, Wars and Reckonings",
+   "thesis": "when things happened",
+   "parts": [
+    {
+     "part": "The Timeline",
+     "entries": [
+      "arda_timeline.html"
+     ]
+    },
+    {
+     "part": "Armies and Campaigns",
+     "entries": [
+      "armies_dashboard.html"
+     ]
+    },
+    {
+     "part": "Reckonings",
+     "entries": [
+      "reckoning.html"
+     ]
+    }
+   ]
+  },
+  {
+   "volume": "III",
+   "name": "Peoples and Houses",
+   "thesis": "who they were",
+   "parts": [
+    {
+     "part": "The Ainur",
+     "entries": [
+      "ainur.html"
+     ]
+    },
+    {
+     "part": "Records of Persons",
+     "entries": [
+      "character.html"
+     ]
+    },
+    {
+     "part": "The Family Trees",
+     "entries": [
+      "genealogy.html"
+     ]
+    },
+    {
+     "part": "Peoples",
+     "entries": [
+      "population_dashboard.html"
+     ]
+    }
+   ]
+  },
+  {
+   "volume": "IV",
+   "name": "Living World, Relics and Devices",
+   "thesis": "what was made and what grows",
+   "parts": [
+    {
+     "part": "Artefacts",
+     "entries": [
+      "artifacts.html"
+     ]
+    },
+    {
+     "part": "The Plate Book",
+     "entries": [
+      "gallery.html"
+     ]
+    },
+    {
+     "part": "Hall of Heraldry",
+     "entries": [
+      "heraldry.html"
+     ]
+    },
+    {
+     "part": "Living Things",
+     "entries": [
+      "living.html"
+     ]
+    }
+   ]
+  },
+  {
+   "volume": "V",
+   "name": "Tongues, Scripts, Names and Verse",
+   "thesis": "how they spoke and wrote",
+   "parts": [
+    {
+     "part": "Tongues and Letters",
+     "entries": [
+      "languages.html"
+     ]
+    },
+    {
+     "part": "The Names of Arda",
+     "entries": [
+      "names.html"
+     ]
+    },
+    {
+     "part": "Verse",
+     "entries": [
+      "poems.html"
+     ]
+    },
+    {
+     "part": "The Scriptorium",
+     "entries": [
+      "writing.html"
+     ]
+    }
+   ]
+  },
+  {
+   "volume": "VI",
+   "name": "Lore and First Principles",
+   "thesis": "what holds the world up",
+   "parts": [
+    {
+     "part": "Is It Canon?",
+     "entries": [
+      "canon.html"
+     ]
+    },
+    {
+     "part": "Cosmology",
+     "entries": [
+      "cosmology.html"
+     ]
+    },
+    {
+     "part": "Binding Words",
+     "entries": [
+      "oaths.html"
+     ]
+    },
+    {
+     "part": "The Silences",
+     "entries": [
+      "silences.html"
+     ]
+    }
+   ]
+  },
+  {
+   "volume": "VII",
+   "name": "Index, Corpus and Reader's Paths",
+   "thesis": "the apparatus of the archive",
+   "parts": [
+    {
+     "part": "Annals of the Archive",
+     "entries": [
+      "annals.html"
+     ]
+    },
+    {
+     "part": "Side by Side",
+     "entries": [
+      "compare.html"
+     ]
+    },
+    {
+     "part": "The Corpus",
+     "entries": [
+      "corpus.html"
+     ]
+    },
+    {
+     "part": "The Trial",
+     "entries": [
+      "quiz.html"
+     ]
+    },
+    {
+     "part": "The Registers",
+     "entries": [
+      "registers.html"
+     ]
+    },
+    {
+     "part": "The Index",
+     "entries": [
+      "theindex.html"
+     ]
+    },
+    {
+     "part": "Reader's Paths",
+     "entries": [
+      "tours.html"
+     ]
+    }
+   ]
+  }
+ ],
+ "routes": {
+  "404.html": {
+   "volume": null,
+   "part": "A Lost Folio",
+   "archetype": "carpet",
+   "spread": "none",
+   "title": "A Lost Folio",
+   "canonical": "404.html"
+  },
+  "ainur.html": {
+   "volume": "III",
+   "part": "The Ainur",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "The Ainur",
+   "canonical": "ainur.html",
+   "next": "character.html"
+  },
+  "annals.html": {
+   "volume": "VII",
+   "part": "Annals of the Archive",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "Annals of the Archive",
+   "canonical": "annals.html",
+   "next": "compare.html"
+  },
+  "arda_timeline.html": {
+   "volume": "II",
+   "part": "The Timeline",
+   "archetype": "atlas",
+   "spread": "full",
+   "title": "The Timeline",
+   "canonical": "arda_timeline.html",
+   "next": "armies_dashboard.html"
+  },
+  "arda_timemap.html": {
+   "volume": null,
+   "part": "Retired Routes",
+   "archetype": "tombstone",
+   "spread": "none",
+   "title": "arda_timemap",
+   "canonical": "arda_timemap.html",
+   "retired": true,
+   "successor": "map.html"
+  },
+  "arda_timemap_jpeg.html": {
+   "volume": null,
+   "part": "Retired Routes",
+   "archetype": "tombstone",
+   "spread": "none",
+   "title": "arda_timemap_jpeg",
+   "canonical": "arda_timemap_jpeg.html",
+   "retired": true,
+   "successor": "map.html"
+  },
+  "armies_dashboard.html": {
+   "volume": "II",
+   "part": "Armies and Campaigns",
+   "archetype": "roll",
+   "spread": "full",
+   "title": "Armies and Campaigns",
+   "canonical": "armies_dashboard.html",
+   "prev": "arda_timeline.html",
+   "next": "reckoning.html"
+  },
+  "artifacts.html": {
+   "volume": "IV",
+   "part": "Artefacts",
+   "archetype": "plates",
+   "spread": "spread",
+   "title": "Artefacts",
+   "canonical": "artifacts.html",
+   "next": "gallery.html"
+  },
+  "baynes.html": {
+   "volume": "I",
+   "part": "The Marked Sheet",
+   "archetype": "atlas",
+   "spread": "full",
+   "title": "The Marked Sheet",
+   "canonical": "baynes.html",
+   "next": "gazetteer.html"
+  },
+  "canon.html": {
+   "volume": "VI",
+   "part": "Is It Canon?",
+   "archetype": "workbench",
+   "spread": "spread",
+   "title": "Is It Canon?",
+   "canonical": "canon.html",
+   "next": "cosmology.html"
+  },
+  "character.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "Records of Persons",
+   "canonical": "character.html",
+   "prev": "ainur.html",
+   "next": "genealogy.html"
+  },
+  "chronicle.html": {
+   "volume": null,
+   "part": "Retired Routes",
+   "archetype": "tombstone",
+   "spread": "none",
+   "title": "chronicle",
+   "canonical": "chronicle.html",
+   "retired": true,
+   "successor": "map.html"
+  },
+  "compare.html": {
+   "volume": "VII",
+   "part": "Side by Side",
+   "archetype": "workbench",
+   "spread": "spread",
+   "title": "Side by Side",
+   "canonical": "compare.html",
+   "prev": "annals.html",
+   "next": "corpus.html"
+  },
+  "corpus.html": {
+   "volume": "VII",
+   "part": "The Corpus",
+   "archetype": "index",
+   "spread": "spread",
+   "title": "The Corpus",
+   "canonical": "corpus.html",
+   "prev": "compare.html",
+   "next": "quiz.html"
+  },
+  "cosmology.html": {
+   "volume": "VI",
+   "part": "Cosmology",
+   "archetype": "folio",
+   "spread": "full",
+   "title": "Cosmology",
+   "canonical": "cosmology.html",
+   "prev": "canon.html",
+   "next": "oaths.html"
+  },
+  "gallery.html": {
+   "volume": "IV",
+   "part": "The Plate Book",
+   "archetype": "plates",
+   "spread": "full",
+   "title": "The Plate Book",
+   "canonical": "gallery.html",
+   "prev": "artifacts.html",
+   "next": "heraldry.html"
+  },
+  "gazetteer.html": {
+   "volume": "I",
+   "part": "Gazetteer",
+   "archetype": "index",
+   "spread": "spread",
+   "title": "Gazetteer",
+   "canonical": "gazetteer.html",
+   "prev": "baynes.html",
+   "next": "gondolin.html"
+  },
+  "genealogy.html": {
+   "volume": "III",
+   "part": "The Family Trees",
+   "archetype": "roll",
+   "spread": "full",
+   "title": "The Family Trees",
+   "canonical": "genealogy.html",
+   "prev": "character.html",
+   "next": "population_dashboard.html"
+  },
+  "gondolin.html": {
+   "volume": "I",
+   "part": "Houses of Gondolin",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "Houses of Gondolin",
+   "canonical": "gondolin.html",
+   "prev": "gazetteer.html",
+   "next": "map.html"
+  },
+  "heraldry.html": {
+   "volume": "IV",
+   "part": "Hall of Heraldry",
+   "archetype": "plates",
+   "spread": "spread",
+   "title": "Hall of Heraldry",
+   "canonical": "heraldry.html",
+   "prev": "gallery.html",
+   "next": "living.html"
+  },
+  "index.html": {
+   "volume": null,
+   "part": "The Archive",
+   "archetype": "carpet",
+   "spread": "full",
+   "title": "The Archive",
+   "canonical": "index.html"
+  },
+  "languages.html": {
+   "volume": "V",
+   "part": "Tongues and Letters",
+   "archetype": "workbench",
+   "spread": "spread",
+   "title": "Tongues and Letters",
+   "canonical": "languages.html",
+   "next": "names.html"
+  },
+  "living.html": {
+   "volume": "IV",
+   "part": "Living Things",
+   "archetype": "plates",
+   "spread": "spread",
+   "title": "Living Things",
+   "canonical": "living.html",
+   "prev": "heraldry.html"
+  },
+  "map.html": {
+   "volume": "I",
+   "part": "The Living Map",
+   "archetype": "atlas",
+   "spread": "full",
+   "title": "The Living Map",
+   "canonical": "map.html",
+   "prev": "gondolin.html",
+   "next": "place.html"
+  },
+  "names.html": {
+   "volume": "V",
+   "part": "The Names of Arda",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "The Names of Arda",
+   "canonical": "names.html",
+   "prev": "languages.html",
+   "next": "poems.html"
+  },
+  "oaths.html": {
+   "volume": "VI",
+   "part": "Binding Words",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "Binding Words",
+   "canonical": "oaths.html",
+   "prev": "cosmology.html",
+   "next": "silences.html"
+  },
+  "person/adalgrim.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "adalgrim",
+   "canonical": "person/adalgrim.html",
+   "generated": true
+  },
+  "person/adamanta.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "adamanta",
+   "canonical": "person/adamanta.html",
+   "generated": true
+  },
+  "person/adrahil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "adrahil",
+   "canonical": "person/adrahil.html",
+   "generated": true
+  },
+  "person/aegnor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aegnor",
+   "canonical": "person/aegnor.html",
+   "generated": true
+  },
+  "person/aglahad.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aglahad",
+   "canonical": "person/aglahad.html",
+   "generated": true
+  },
+  "person/ailinel.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ailinel",
+   "canonical": "person/ailinel.html",
+   "generated": true
+  },
+  "person/aldamir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aldamir",
+   "canonical": "person/aldamir.html",
+   "generated": true
+  },
+  "person/aldor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aldor",
+   "canonical": "person/aldor.html",
+   "generated": true
+  },
+  "person/almarian.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "almarian",
+   "canonical": "person/almarian.html",
+   "generated": true
+  },
+  "person/almiel.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "almiel",
+   "canonical": "person/almiel.html",
+   "generated": true
+  },
+  "person/amandil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "amandil",
+   "canonical": "person/amandil.html",
+   "generated": true
+  },
+  "person/amarie.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "amarie",
+   "canonical": "person/amarie.html",
+   "generated": true
+  },
+  "person/amdir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "amdir",
+   "canonical": "person/amdir.html",
+   "generated": true
+  },
+  "person/amlaith.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "amlaith",
+   "canonical": "person/amlaith.html",
+   "generated": true
+  },
+  "person/amras.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "amras",
+   "canonical": "person/amras.html",
+   "generated": true
+  },
+  "person/amrod.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "amrod",
+   "canonical": "person/amrod.html",
+   "generated": true
+  },
+  "person/amroth.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "amroth",
+   "canonical": "person/amroth.html",
+   "generated": true
+  },
+  "person/anaire.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "anaire",
+   "canonical": "person/anaire.html",
+   "generated": true
+  },
+  "person/anardil_g.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "anardil g",
+   "canonical": "person/anardil_g.html",
+   "generated": true
+  },
+  "person/anarion_g.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "anarion g",
+   "canonical": "person/anarion_g.html",
+   "generated": true
+  },
+  "person/andreth.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "andreth",
+   "canonical": "person/andreth.html",
+   "generated": true
+  },
+  "person/angamaite.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "angamaite",
+   "canonical": "person/angamaite.html",
+   "generated": true
+  },
+  "person/angelimir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "angelimir",
+   "canonical": "person/angelimir.html",
+   "generated": true
+  },
+  "person/angrod.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "angrod",
+   "canonical": "person/angrod.html",
+   "generated": true
+  },
+  "person/annael_n.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "annael n",
+   "canonical": "person/annael_n.html",
+   "generated": true
+  },
+  "person/arador.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arador",
+   "canonical": "person/arador.html",
+   "generated": true
+  },
+  "person/aradunakhor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aradunakhor",
+   "canonical": "person/aradunakhor.html",
+   "generated": true
+  },
+  "person/araglas.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "araglas",
+   "canonical": "person/araglas.html",
+   "generated": true
+  },
+  "person/aragorn.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aragorn",
+   "canonical": "person/aragorn.html",
+   "generated": true
+  },
+  "person/aragorn1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aragorn1",
+   "canonical": "person/aragorn1.html",
+   "generated": true
+  },
+  "person/aragost.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aragost",
+   "canonical": "person/aragost.html",
+   "generated": true
+  },
+  "person/arahad1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arahad1",
+   "canonical": "person/arahad1.html",
+   "generated": true
+  },
+  "person/arahad2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arahad2",
+   "canonical": "person/arahad2.html",
+   "generated": true
+  },
+  "person/arahael.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arahael",
+   "canonical": "person/arahael.html",
+   "generated": true
+  },
+  "person/aranarth.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aranarth",
+   "canonical": "person/aranarth.html",
+   "generated": true
+  },
+  "person/arantar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arantar",
+   "canonical": "person/arantar.html",
+   "generated": true
+  },
+  "person/aranuir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aranuir",
+   "canonical": "person/aranuir.html",
+   "generated": true
+  },
+  "person/aranwe.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aranwe",
+   "canonical": "person/aranwe.html",
+   "generated": true
+  },
+  "person/araphant.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "araphant",
+   "canonical": "person/araphant.html",
+   "generated": true
+  },
+  "person/araphor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "araphor",
+   "canonical": "person/araphor.html",
+   "generated": true
+  },
+  "person/arassuil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arassuil",
+   "canonical": "person/arassuil.html",
+   "generated": true
+  },
+  "person/aratan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aratan",
+   "canonical": "person/aratan.html",
+   "generated": true
+  },
+  "person/arathorn.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arathorn",
+   "canonical": "person/arathorn.html",
+   "generated": true
+  },
+  "person/arathorn1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arathorn1",
+   "canonical": "person/arathorn1.html",
+   "generated": true
+  },
+  "person/araval.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "araval",
+   "canonical": "person/araval.html",
+   "generated": true
+  },
+  "person/aravir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aravir",
+   "canonical": "person/aravir.html",
+   "generated": true
+  },
+  "person/aravorn.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aravorn",
+   "canonical": "person/aravorn.html",
+   "generated": true
+  },
+  "person/arciryas.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arciryas",
+   "canonical": "person/arciryas.html",
+   "generated": true
+  },
+  "person/aredhel.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aredhel",
+   "canonical": "person/aredhel.html",
+   "generated": true
+  },
+  "person/argeleb1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "argeleb1",
+   "canonical": "person/argeleb1.html",
+   "generated": true
+  },
+  "person/argeleb2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "argeleb2",
+   "canonical": "person/argeleb2.html",
+   "generated": true
+  },
+  "person/argimilzor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "argimilzor",
+   "canonical": "person/argimilzor.html",
+   "generated": true
+  },
+  "person/argon.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "argon",
+   "canonical": "person/argon.html",
+   "generated": true
+  },
+  "person/argonui.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "argonui",
+   "canonical": "person/argonui.html",
+   "generated": true
+  },
+  "person/arsakalthor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arsakalthor",
+   "canonical": "person/arsakalthor.html",
+   "generated": true
+  },
+  "person/artamir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "artamir",
+   "canonical": "person/artamir.html",
+   "generated": true
+  },
+  "person/arvedui.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arvedui",
+   "canonical": "person/arvedui.html",
+   "generated": true
+  },
+  "person/arvegil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arvegil",
+   "canonical": "person/arvegil.html",
+   "generated": true
+  },
+  "person/arveleg1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arveleg1",
+   "canonical": "person/arveleg1.html",
+   "generated": true
+  },
+  "person/arveleg2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arveleg2",
+   "canonical": "person/arveleg2.html",
+   "generated": true
+  },
+  "person/arwen.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arwen",
+   "canonical": "person/arwen.html",
+   "generated": true
+  },
+  "person/arzimrathon.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arzimrathon",
+   "canonical": "person/arzimrathon.html",
+   "generated": true
+  },
+  "person/atanatar1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "atanatar1",
+   "canonical": "person/atanatar1.html",
+   "generated": true
+  },
+  "person/atanatar2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "atanatar2",
+   "canonical": "person/atanatar2.html",
+   "generated": true
+  },
+  "person/aule.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "aule",
+   "canonical": "person/aule.html",
+   "generated": true
+  },
+  "person/balbo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "balbo",
+   "canonical": "person/balbo.html",
+   "generated": true
+  },
+  "person/baldor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "baldor",
+   "canonical": "person/baldor.html",
+   "generated": true
+  },
+  "person/balin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "balin",
+   "canonical": "person/balin.html",
+   "generated": true
+  },
+  "person/baragund.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "baragund",
+   "canonical": "person/baragund.html",
+   "generated": true
+  },
+  "person/barahir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "barahir",
+   "canonical": "person/barahir.html",
+   "generated": true
+  },
+  "person/barahir_f.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "barahir f",
+   "canonical": "person/barahir_f.html",
+   "generated": true
+  },
+  "person/barahir_s.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "barahir s",
+   "canonical": "person/barahir_s.html",
+   "generated": true
+  },
+  "person/baran.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "baran",
+   "canonical": "person/baran.html",
+   "generated": true
+  },
+  "person/belecthor1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "belecthor1",
+   "canonical": "person/belecthor1.html",
+   "generated": true
+  },
+  "person/belecthor2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "belecthor2",
+   "canonical": "person/belecthor2.html",
+   "generated": true
+  },
+  "person/beleg_a.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "beleg a",
+   "canonical": "person/beleg_a.html",
+   "generated": true
+  },
+  "person/belegorn.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "belegorn",
+   "canonical": "person/belegorn.html",
+   "generated": true
+  },
+  "person/belegund.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "belegund",
+   "canonical": "person/belegund.html",
+   "generated": true
+  },
+  "person/bell.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "bell",
+   "canonical": "person/bell.html",
+   "generated": true
+  },
+  "person/belladonna.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "belladonna",
+   "canonical": "person/belladonna.html",
+   "generated": true
+  },
+  "person/beor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "beor",
+   "canonical": "person/beor.html",
+   "generated": true
+  },
+  "person/beregar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "beregar",
+   "canonical": "person/beregar.html",
+   "generated": true
+  },
+  "person/beregond_s.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "beregond s",
+   "canonical": "person/beregond_s.html",
+   "generated": true
+  },
+  "person/beren.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "beren",
+   "canonical": "person/beren.html",
+   "generated": true
+  },
+  "person/beren_s.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "beren s",
+   "canonical": "person/beren_s.html",
+   "generated": true
+  },
+  "person/beril.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "beril",
+   "canonical": "person/beril.html",
+   "generated": true
+  },
+  "person/beruthiel.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "beruthiel",
+   "canonical": "person/beruthiel.html",
+   "generated": true
+  },
+  "person/berylla.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "berylla",
+   "canonical": "person/berylla.html",
+   "generated": true
+  },
+  "person/bilbo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "bilbo",
+   "canonical": "person/bilbo.html",
+   "generated": true
+  },
+  "person/borin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "borin",
+   "canonical": "person/borin.html",
+   "generated": true
+  },
+  "person/boromir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "boromir",
+   "canonical": "person/boromir.html",
+   "generated": true
+  },
+  "person/boromir_b.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "boromir b",
+   "canonical": "person/boromir_b.html",
+   "generated": true
+  },
+  "person/boromir_s.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "boromir s",
+   "canonical": "person/boromir_s.html",
+   "generated": true
+  },
+  "person/boron.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "boron",
+   "canonical": "person/boron.html",
+   "generated": true
+  },
+  "person/brandir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "brandir",
+   "canonical": "person/brandir.html",
+   "generated": true
+  },
+  "person/brego.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "brego",
+   "canonical": "person/brego.html",
+   "generated": true
+  },
+  "person/bregolas.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "bregolas",
+   "canonical": "person/bregolas.html",
+   "generated": true
+  },
+  "person/bregor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "bregor",
+   "canonical": "person/bregor.html",
+   "generated": true
+  },
+  "person/brytta.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "brytta",
+   "canonical": "person/brytta.html",
+   "generated": true
+  },
+  "person/bungo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "bungo",
+   "canonical": "person/bungo.html",
+   "generated": true
+  },
+  "person/calimehtar_c.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "calimehtar c",
+   "canonical": "person/calimehtar_c.html",
+   "generated": true
+  },
+  "person/calimehtar_g.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "calimehtar g",
+   "canonical": "person/calimehtar_g.html",
+   "generated": true
+  },
+  "person/calimmacil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "calimmacil",
+   "canonical": "person/calimmacil.html",
+   "generated": true
+  },
+  "person/calmacil_g.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "calmacil g",
+   "canonical": "person/calmacil_g.html",
+   "generated": true
+  },
+  "person/camellia.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "camellia",
+   "canonical": "person/camellia.html",
+   "generated": true
+  },
+  "person/caranthir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "caranthir",
+   "canonical": "person/caranthir.html",
+   "generated": true
+  },
+  "person/castamir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "castamir",
+   "canonical": "person/castamir.html",
+   "generated": true
+  },
+  "person/celeborn.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "celeborn",
+   "canonical": "person/celeborn.html",
+   "generated": true
+  },
+  "person/celebrian.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "celebrian",
+   "canonical": "person/celebrian.html",
+   "generated": true
+  },
+  "person/celebrimbor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "celebrimbor",
+   "canonical": "person/celebrimbor.html",
+   "generated": true
+  },
+  "person/celebrindor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "celebrindor",
+   "canonical": "person/celebrindor.html",
+   "generated": true
+  },
+  "person/celegorm.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "celegorm",
+   "canonical": "person/celegorm.html",
+   "generated": true
+  },
+  "person/celepharn.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "celepharn",
+   "canonical": "person/celepharn.html",
+   "generated": true
+  },
+  "person/cemendur.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "cemendur",
+   "canonical": "person/cemendur.html",
+   "generated": true
+  },
+  "person/cirdan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "cirdan",
+   "canonical": "person/cirdan.html",
+   "generated": true
+  },
+  "person/cirion.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "cirion",
+   "canonical": "person/cirion.html",
+   "generated": true
+  },
+  "person/ciryandil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ciryandil",
+   "canonical": "person/ciryandil.html",
+   "generated": true
+  },
+  "person/ciryon.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ciryon",
+   "canonical": "person/ciryon.html",
+   "generated": true
+  },
+  "person/curufin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "curufin",
+   "canonical": "person/curufin.html",
+   "generated": true
+  },
+  "person/dain1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dain1",
+   "canonical": "person/dain1.html",
+   "generated": true
+  },
+  "person/dain2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dain2",
+   "canonical": "person/dain2.html",
+   "generated": true
+  },
+  "person/deagol.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "deagol",
+   "canonical": "person/deagol.html",
+   "generated": true
+  },
+  "person/denethor1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "denethor1",
+   "canonical": "person/denethor1.html",
+   "generated": true
+  },
+  "person/denethor2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "denethor2",
+   "canonical": "person/denethor2.html",
+   "generated": true
+  },
+  "person/deor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "deor",
+   "canonical": "person/deor.html",
+   "generated": true
+  },
+  "person/diamond.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "diamond",
+   "canonical": "person/diamond.html",
+   "generated": true
+  },
+  "person/dior.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dior",
+   "canonical": "person/dior.html",
+   "generated": true
+  },
+  "person/dior_s.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dior s",
+   "canonical": "person/dior_s.html",
+   "generated": true
+  },
+  "person/dirhael.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dirhael",
+   "canonical": "person/dirhael.html",
+   "generated": true
+  },
+  "person/dis.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dis",
+   "canonical": "person/dis.html",
+   "generated": true
+  },
+  "person/drogo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "drogo",
+   "canonical": "person/drogo.html",
+   "generated": true
+  },
+  "person/durin1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "durin1",
+   "canonical": "person/durin1.html",
+   "generated": true
+  },
+  "person/durin6.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "durin6",
+   "canonical": "person/durin6.html",
+   "generated": true
+  },
+  "person/durin7.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "durin7",
+   "canonical": "person/durin7.html",
+   "generated": true
+  },
+  "person/dwalin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dwalin",
+   "canonical": "person/dwalin.html",
+   "generated": true
+  },
+  "person/earendil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "earendil",
+   "canonical": "person/earendil.html",
+   "generated": true
+  },
+  "person/earendil_g.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "earendil g",
+   "canonical": "person/earendil_g.html",
+   "generated": true
+  },
+  "person/earendur_a.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "earendur a",
+   "canonical": "person/earendur_a.html",
+   "generated": true
+  },
+  "person/earendur_l.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "earendur l",
+   "canonical": "person/earendur_l.html",
+   "generated": true
+  },
+  "person/earnil1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "earnil1",
+   "canonical": "person/earnil1.html",
+   "generated": true
+  },
+  "person/earnil2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "earnil2",
+   "canonical": "person/earnil2.html",
+   "generated": true
+  },
+  "person/earnur.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "earnur",
+   "canonical": "person/earnur.html",
+   "generated": true
+  },
+  "person/earwen.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "earwen",
+   "canonical": "person/earwen.html",
+   "generated": true
+  },
+  "person/ecthelion1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ecthelion1",
+   "canonical": "person/ecthelion1.html",
+   "generated": true
+  },
+  "person/ecthelion2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ecthelion2",
+   "canonical": "person/ecthelion2.html",
+   "generated": true
+  },
+  "person/egalmoth.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "egalmoth",
+   "canonical": "person/egalmoth.html",
+   "generated": true
+  },
+  "person/eglantine.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eglantine",
+   "canonical": "person/eglantine.html",
+   "generated": true
+  },
+  "person/elanor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elanor",
+   "canonical": "person/elanor.html",
+   "generated": true
+  },
+  "person/elatan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elatan",
+   "canonical": "person/elatan.html",
+   "generated": true
+  },
+  "person/elboron.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elboron",
+   "canonical": "person/elboron.html",
+   "generated": true
+  },
+  "person/eldacar_a.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eldacar a",
+   "canonical": "person/eldacar_a.html",
+   "generated": true
+  },
+  "person/eldacar_g.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eldacar g",
+   "canonical": "person/eldacar_g.html",
+   "generated": true
+  },
+  "person/eldarion.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eldarion",
+   "canonical": "person/eldarion.html",
+   "generated": true
+  },
+  "person/elendil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elendil",
+   "canonical": "person/elendil.html",
+   "generated": true
+  },
+  "person/elendur_a.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elendur a",
+   "canonical": "person/elendur_a.html",
+   "generated": true
+  },
+  "person/elendur_i.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elendur i",
+   "canonical": "person/elendur_i.html",
+   "generated": true
+  },
+  "person/elenwe.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elenwe",
+   "canonical": "person/elenwe.html",
+   "generated": true
+  },
+  "person/elfhild.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elfhild",
+   "canonical": "person/elfhild.html",
+   "generated": true
+  },
+  "person/elfstan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elfstan",
+   "canonical": "person/elfstan.html",
+   "generated": true
+  },
+  "person/elfwine.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elfwine",
+   "canonical": "person/elfwine.html",
+   "generated": true
+  },
+  "person/elladan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elladan",
+   "canonical": "person/elladan.html",
+   "generated": true
+  },
+  "person/elmo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elmo",
+   "canonical": "person/elmo.html",
+   "generated": true
+  },
+  "person/elrohir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elrohir",
+   "canonical": "person/elrohir.html",
+   "generated": true
+  },
+  "person/elrond.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elrond",
+   "canonical": "person/elrond.html",
+   "generated": true
+  },
+  "person/elros.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elros",
+   "canonical": "person/elros.html",
+   "generated": true
+  },
+  "person/elured.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elured",
+   "canonical": "person/elured.html",
+   "generated": true
+  },
+  "person/elurin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elurin",
+   "canonical": "person/elurin.html",
+   "generated": true
+  },
+  "person/elwe.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elwe",
+   "canonical": "person/elwe.html",
+   "generated": true
+  },
+  "person/elwing.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elwing",
+   "canonical": "person/elwing.html",
+   "generated": true
+  },
+  "person/emeldir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "emeldir",
+   "canonical": "person/emeldir.html",
+   "generated": true
+  },
+  "person/eol.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eol",
+   "canonical": "person/eol.html",
+   "generated": true
+  },
+  "person/eomer.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eomer",
+   "canonical": "person/eomer.html",
+   "generated": true
+  },
+  "person/eomund.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eomund",
+   "canonical": "person/eomund.html",
+   "generated": true
+  },
+  "person/eorl.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eorl",
+   "canonical": "person/eorl.html",
+   "generated": true
+  },
+  "person/eowyn.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eowyn",
+   "canonical": "person/eowyn.html",
+   "generated": true
+  },
+  "person/eradan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eradan",
+   "canonical": "person/eradan.html",
+   "generated": true
+  },
+  "person/erendis.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "erendis",
+   "canonical": "person/erendis.html",
+   "generated": true
+  },
+  "person/esmeralda.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "esmeralda",
+   "canonical": "person/esmeralda.html",
+   "generated": true
+  },
+  "person/este.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "este",
+   "canonical": "person/este.html",
+   "generated": true
+  },
+  "person/estella.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "estella",
+   "canonical": "person/estella.html",
+   "generated": true
+  },
+  "person/falastur.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "falastur",
+   "canonical": "person/falastur.html",
+   "generated": true
+  },
+  "person/faramir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "faramir",
+   "canonical": "person/faramir.html",
+   "generated": true
+  },
+  "person/faramir_o.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "faramir o",
+   "canonical": "person/faramir_o.html",
+   "generated": true
+  },
+  "person/faramir_t.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "faramir t",
+   "canonical": "person/faramir_t.html",
+   "generated": true
+  },
+  "person/farin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "farin",
+   "canonical": "person/farin.html",
+   "generated": true
+  },
+  "person/fastred.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fastred",
+   "canonical": "person/fastred.html",
+   "generated": true
+  },
+  "person/fastred_r.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fastred r",
+   "canonical": "person/fastred_r.html",
+   "generated": true
+  },
+  "person/feanor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "feanor",
+   "canonical": "person/feanor.html",
+   "generated": true
+  },
+  "person/fengel.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fengel",
+   "canonical": "person/fengel.html",
+   "generated": true
+  },
+  "person/fili.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fili",
+   "canonical": "person/fili.html",
+   "generated": true
+  },
+  "person/finarfin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "finarfin",
+   "canonical": "person/finarfin.html",
+   "generated": true
+  },
+  "person/findis.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "findis",
+   "canonical": "person/findis.html",
+   "generated": true
+  },
+  "person/finduilas_a.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "finduilas a",
+   "canonical": "person/finduilas_a.html",
+   "generated": true
+  },
+  "person/finduilas_n.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "finduilas n",
+   "canonical": "person/finduilas_n.html",
+   "generated": true
+  },
+  "person/fingolfin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fingolfin",
+   "canonical": "person/fingolfin.html",
+   "generated": true
+  },
+  "person/fingon.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fingon",
+   "canonical": "person/fingon.html",
+   "generated": true
+  },
+  "person/finrod.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "finrod",
+   "canonical": "person/finrod.html",
+   "generated": true
+  },
+  "person/finwe.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "finwe",
+   "canonical": "person/finwe.html",
+   "generated": true
+  },
+  "person/firiel.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "firiel",
+   "canonical": "person/firiel.html",
+   "generated": true
+  },
+  "person/folca.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "folca",
+   "canonical": "person/folca.html",
+   "generated": true
+  },
+  "person/folcred.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "folcred",
+   "canonical": "person/folcred.html",
+   "generated": true
+  },
+  "person/folcwine.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "folcwine",
+   "canonical": "person/folcwine.html",
+   "generated": true
+  },
+  "person/fosco.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fosco",
+   "canonical": "person/fosco.html",
+   "generated": true
+  },
+  "person/fram.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fram",
+   "canonical": "person/fram.html",
+   "generated": true
+  },
+  "person/frea.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "frea",
+   "canonical": "person/frea.html",
+   "generated": true
+  },
+  "person/frealaf.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "frealaf",
+   "canonical": "person/frealaf.html",
+   "generated": true
+  },
+  "person/freawine.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "freawine",
+   "canonical": "person/freawine.html",
+   "generated": true
+  },
+  "person/fredegar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fredegar",
+   "canonical": "person/fredegar.html",
+   "generated": true
+  },
+  "person/frerin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "frerin",
+   "canonical": "person/frerin.html",
+   "generated": true
+  },
+  "person/frodo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "frodo",
+   "canonical": "person/frodo.html",
+   "generated": true
+  },
+  "person/frodog.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "frodog",
+   "canonical": "person/frodog.html",
+   "generated": true
+  },
+  "person/fror.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fror",
+   "canonical": "person/fror.html",
+   "generated": true
+  },
+  "person/frumgar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "frumgar",
+   "canonical": "person/frumgar.html",
+   "generated": true
+  },
+  "person/fundin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fundin",
+   "canonical": "person/fundin.html",
+   "generated": true
+  },
+  "person/galadhon.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "galadhon",
+   "canonical": "person/galadhon.html",
+   "generated": true
+  },
+  "person/galador.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "galador",
+   "canonical": "person/galador.html",
+   "generated": true
+  },
+  "person/galadriel.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "galadriel",
+   "canonical": "person/galadriel.html",
+   "generated": true
+  },
+  "person/galathil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "galathil",
+   "canonical": "person/galathil.html",
+   "generated": true
+  },
+  "person/galdor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "galdor",
+   "canonical": "person/galdor.html",
+   "generated": true
+  },
+  "person/gelmir_n.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gelmir n",
+   "canonical": "person/gelmir_n.html",
+   "generated": true
+  },
+  "person/gerontius.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gerontius",
+   "canonical": "person/gerontius.html",
+   "generated": true
+  },
+  "person/gildor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gildor",
+   "canonical": "person/gildor.html",
+   "generated": true
+  },
+  "person/gilgalad.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gilgalad",
+   "canonical": "person/gilgalad.html",
+   "generated": true
+  },
+  "person/gilraen.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gilraen",
+   "canonical": "person/gilraen.html",
+   "generated": true
+  },
+  "person/gimilkhad.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gimilkhad",
+   "canonical": "person/gimilkhad.html",
+   "generated": true
+  },
+  "person/gimli.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gimli",
+   "canonical": "person/gimli.html",
+   "generated": true
+  },
+  "person/gloin_d.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gloin d",
+   "canonical": "person/gloin_d.html",
+   "generated": true
+  },
+  "person/gloin_k.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gloin k",
+   "canonical": "person/gloin_k.html",
+   "generated": true
+  },
+  "person/gloredhel.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gloredhel",
+   "canonical": "person/gloredhel.html",
+   "generated": true
+  },
+  "person/goldilocks.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "goldilocks",
+   "canonical": "person/goldilocks.html",
+   "generated": true
+  },
+  "person/goldwine.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "goldwine",
+   "canonical": "person/goldwine.html",
+   "generated": true
+  },
+  "person/gorbadoc.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gorbadoc",
+   "canonical": "person/gorbadoc.html",
+   "generated": true
+  },
+  "person/gram.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gram",
+   "canonical": "person/gram.html",
+   "generated": true
+  },
+  "person/groin_d.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "groin d",
+   "canonical": "person/groin_d.html",
+   "generated": true
+  },
+  "person/gror.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gror",
+   "canonical": "person/gror.html",
+   "generated": true
+  },
+  "person/guilin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "guilin",
+   "canonical": "person/guilin.html",
+   "generated": true
+  },
+  "person/gundor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gundor",
+   "canonical": "person/gundor.html",
+   "generated": true
+  },
+  "person/gwindor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gwindor",
+   "canonical": "person/gwindor.html",
+   "generated": true
+  },
+  "person/hador.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hador",
+   "canonical": "person/hador.html",
+   "generated": true
+  },
+  "person/hador_s.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hador s",
+   "canonical": "person/hador_s.html",
+   "generated": true
+  },
+  "person/halbarad.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "halbarad",
+   "canonical": "person/halbarad.html",
+   "generated": true
+  },
+  "person/haldad.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "haldad",
+   "canonical": "person/haldad.html",
+   "generated": true
+  },
+  "person/haldan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "haldan",
+   "canonical": "person/haldan.html",
+   "generated": true
+  },
+  "person/haldar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "haldar",
+   "canonical": "person/haldar.html",
+   "generated": true
+  },
+  "person/haldir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "haldir",
+   "canonical": "person/haldir.html",
+   "generated": true
+  },
+  "person/haleth.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "haleth",
+   "canonical": "person/haleth.html",
+   "generated": true
+  },
+  "person/haleth_r.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "haleth r",
+   "canonical": "person/haleth_r.html",
+   "generated": true
+  },
+  "person/hallacar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hallacar",
+   "canonical": "person/hallacar.html",
+   "generated": true
+  },
+  "person/hallas.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hallas",
+   "canonical": "person/hallas.html",
+   "generated": true
+  },
+  "person/hallatan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hallatan",
+   "canonical": "person/hallatan.html",
+   "generated": true
+  },
+  "person/halmir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "halmir",
+   "canonical": "person/halmir.html",
+   "generated": true
+  },
+  "person/hama_r.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hama r",
+   "canonical": "person/hama_r.html",
+   "generated": true
+  },
+  "person/hamfast.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hamfast",
+   "canonical": "person/hamfast.html",
+   "generated": true
+  },
+  "person/handir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "handir",
+   "canonical": "person/handir.html",
+   "generated": true
+  },
+  "person/hareth.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hareth",
+   "canonical": "person/hareth.html",
+   "generated": true
+  },
+  "person/hathol.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hathol",
+   "canonical": "person/hathol.html",
+   "generated": true
+  },
+  "person/helm.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "helm",
+   "canonical": "person/helm.html",
+   "generated": true
+  },
+  "person/herion.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "herion",
+   "canonical": "person/herion.html",
+   "generated": true
+  },
+  "person/herucalmo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "herucalmo",
+   "canonical": "person/herucalmo.html",
+   "generated": true
+  },
+  "person/hild.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hild",
+   "canonical": "person/hild.html",
+   "generated": true
+  },
+  "person/hildigrim.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hildigrim",
+   "canonical": "person/hildigrim.html",
+   "generated": true
+  },
+  "person/hiril.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hiril",
+   "canonical": "person/hiril.html",
+   "generated": true
+  },
+  "person/holfast.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "holfast",
+   "canonical": "person/holfast.html",
+   "generated": true
+  },
+  "person/hundar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hundar",
+   "canonical": "person/hundar.html",
+   "generated": true
+  },
+  "person/huor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "huor",
+   "canonical": "person/huor.html",
+   "generated": true
+  },
+  "person/hurin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hurin",
+   "canonical": "person/hurin.html",
+   "generated": true
+  },
+  "person/hurin1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hurin1",
+   "canonical": "person/hurin1.html",
+   "generated": true
+  },
+  "person/hurin2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hurin2",
+   "canonical": "person/hurin2.html",
+   "generated": true
+  },
+  "person/hurin_e.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hurin e",
+   "canonical": "person/hurin_e.html",
+   "generated": true
+  },
+  "person/hyarmendacil1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hyarmendacil1",
+   "canonical": "person/hyarmendacil1.html",
+   "generated": true
+  },
+  "person/hyarmendacil2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hyarmendacil2",
+   "canonical": "person/hyarmendacil2.html",
+   "generated": true
+  },
+  "person/idril.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "idril",
+   "canonical": "person/idril.html",
+   "generated": true
+  },
+  "person/imrahil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "imrahil",
+   "canonical": "person/imrahil.html",
+   "generated": true
+  },
+  "person/imrazor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "imrazor",
+   "canonical": "person/imrazor.html",
+   "generated": true
+  },
+  "person/indis.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "indis",
+   "canonical": "person/indis.html",
+   "generated": true
+  },
+  "person/inzilbeth.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "inzilbeth",
+   "canonical": "person/inzilbeth.html",
+   "generated": true
+  },
+  "person/irime.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "irime",
+   "canonical": "person/irime.html",
+   "generated": true
+  },
+  "person/irmo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "irmo",
+   "canonical": "person/irmo.html",
+   "generated": true
+  },
+  "person/isildur.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "isildur",
+   "canonical": "person/isildur.html",
+   "generated": true
+  },
+  "person/isilme.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "isilme",
+   "canonical": "person/isilme.html",
+   "generated": true
+  },
+  "person/isilmo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "isilmo",
+   "canonical": "person/isilmo.html",
+   "generated": true
+  },
+  "person/ivorwen.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ivorwen",
+   "canonical": "person/ivorwen.html",
+   "generated": true
+  },
+  "person/kili.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "kili",
+   "canonical": "person/kili.html",
+   "generated": true
+  },
+  "person/lalaith.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "lalaith",
+   "canonical": "person/lalaith.html",
+   "generated": true
+  },
+  "person/largo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "largo",
+   "canonical": "person/largo.html",
+   "generated": true
+  },
+  "person/laura.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "laura",
+   "canonical": "person/laura.html",
+   "generated": true
+  },
+  "person/legolas.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "legolas",
+   "canonical": "person/legolas.html",
+   "generated": true
+  },
+  "person/leod.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "leod",
+   "canonical": "person/leod.html",
+   "generated": true
+  },
+  "person/lily_c.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "lily c",
+   "canonical": "person/lily_c.html",
+   "generated": true
+  },
+  "person/lindorie.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "lindorie",
+   "canonical": "person/lindorie.html",
+   "generated": true
+  },
+  "person/lobelia.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "lobelia",
+   "canonical": "person/lobelia.html",
+   "generated": true
+  },
+  "person/longo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "longo",
+   "canonical": "person/longo.html",
+   "generated": true
+  },
+  "person/lothiriel.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "lothiriel",
+   "canonical": "person/lothiriel.html",
+   "generated": true
+  },
+  "person/lotho.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "lotho",
+   "canonical": "person/lotho.html",
+   "generated": true
+  },
+  "person/luthien.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "luthien",
+   "canonical": "person/luthien.html",
+   "generated": true
+  },
+  "person/maedhros.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "maedhros",
+   "canonical": "person/maedhros.html",
+   "generated": true
+  },
+  "person/maeglin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "maeglin",
+   "canonical": "person/maeglin.html",
+   "generated": true
+  },
+  "person/maglor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "maglor",
+   "canonical": "person/maglor.html",
+   "generated": true
+  },
+  "person/magor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "magor",
+   "canonical": "person/magor.html",
+   "generated": true
+  },
+  "person/mahtan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "mahtan",
+   "canonical": "person/mahtan.html",
+   "generated": true
+  },
+  "person/malach.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "malach",
+   "canonical": "person/malach.html",
+   "generated": true
+  },
+  "person/mallor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "mallor",
+   "canonical": "person/mallor.html",
+   "generated": true
+  },
+  "person/malvegil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "malvegil",
+   "canonical": "person/malvegil.html",
+   "generated": true
+  },
+  "person/manwe.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "manwe",
+   "canonical": "person/manwe.html",
+   "generated": true
+  },
+  "person/marach.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "marach",
+   "canonical": "person/marach.html",
+   "generated": true
+  },
+  "person/mardil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "mardil",
+   "canonical": "person/mardil.html",
+   "generated": true
+  },
+  "person/marigold.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "marigold",
+   "canonical": "person/marigold.html",
+   "generated": true
+  },
+  "person/melian.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "melian",
+   "canonical": "person/melian.html",
+   "generated": true
+  },
+  "person/melkor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "melkor",
+   "canonical": "person/melkor.html",
+   "generated": true
+  },
+  "person/meneldil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "meneldil",
+   "canonical": "person/meneldil.html",
+   "generated": true
+  },
+  "person/merry.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "merry",
+   "canonical": "person/merry.html",
+   "generated": true
+  },
+  "person/minardil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "minardil",
+   "canonical": "person/minardil.html",
+   "generated": true
+  },
+  "person/minastan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "minastan",
+   "canonical": "person/minastan.html",
+   "generated": true
+  },
+  "person/minohtar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "minohtar",
+   "canonical": "person/minohtar.html",
+   "generated": true
+  },
+  "person/mirabella.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "mirabella",
+   "canonical": "person/mirabella.html",
+   "generated": true
+  },
+  "person/miriel.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "miriel",
+   "canonical": "person/miriel.html",
+   "generated": true
+  },
+  "person/miriel_n.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "miriel n",
+   "canonical": "person/miriel_n.html",
+   "generated": true
+  },
+  "person/mithrellas.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "mithrellas",
+   "canonical": "person/mithrellas.html",
+   "generated": true
+  },
+  "person/morwen.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "morwen",
+   "canonical": "person/morwen.html",
+   "generated": true
+  },
+  "person/morwen_l.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "morwen l",
+   "canonical": "person/morwen_l.html",
+   "generated": true
+  },
+  "person/mungo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "mungo",
+   "canonical": "person/mungo.html",
+   "generated": true
+  },
+  "person/nain1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nain1",
+   "canonical": "person/nain1.html",
+   "generated": true
+  },
+  "person/nain2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nain2",
+   "canonical": "person/nain2.html",
+   "generated": true
+  },
+  "person/nain_d.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nain d",
+   "canonical": "person/nain_d.html",
+   "generated": true
+  },
+  "person/namo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "namo",
+   "canonical": "person/namo.html",
+   "generated": true
+  },
+  "person/narmacil1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "narmacil1",
+   "canonical": "person/narmacil1.html",
+   "generated": true
+  },
+  "person/narmacil2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "narmacil2",
+   "canonical": "person/narmacil2.html",
+   "generated": true
+  },
+  "person/nerdanel.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nerdanel",
+   "canonical": "person/nerdanel.html",
+   "generated": true
+  },
+  "person/nessa.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nessa",
+   "canonical": "person/nessa.html",
+   "generated": true
+  },
+  "person/nienna.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nienna",
+   "canonical": "person/nienna.html",
+   "generated": true
+  },
+  "person/nienor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nienor",
+   "canonical": "person/nienor.html",
+   "generated": true
+  },
+  "person/nimloth_e.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nimloth e",
+   "canonical": "person/nimloth_e.html",
+   "generated": true
+  },
+  "person/nimrodel.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nimrodel",
+   "canonical": "person/nimrodel.html",
+   "generated": true
+  },
+  "person/numendil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "numendil",
+   "canonical": "person/numendil.html",
+   "generated": true
+  },
+  "person/nuneth.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nuneth",
+   "canonical": "person/nuneth.html",
+   "generated": true
+  },
+  "person/odovacar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "odovacar",
+   "canonical": "person/odovacar.html",
+   "generated": true
+  },
+  "person/oin_d.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "oin d",
+   "canonical": "person/oin_d.html",
+   "generated": true
+  },
+  "person/oin_k.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "oin k",
+   "canonical": "person/oin_k.html",
+   "generated": true
+  },
+  "person/olwe.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "olwe",
+   "canonical": "person/olwe.html",
+   "generated": true
+  },
+  "person/ondoher.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ondoher",
+   "canonical": "person/ondoher.html",
+   "generated": true
+  },
+  "person/ornendil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ornendil",
+   "canonical": "person/ornendil.html",
+   "generated": true
+  },
+  "person/orodreth.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "orodreth",
+   "canonical": "person/orodreth.html",
+   "generated": true
+  },
+  "person/orodreth_s.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "orodreth s",
+   "canonical": "person/orodreth_s.html",
+   "generated": true
+  },
+  "person/orome.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "orome",
+   "canonical": "person/orome.html",
+   "generated": true
+  },
+  "person/oropher.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "oropher",
+   "canonical": "person/oropher.html",
+   "generated": true
+  },
+  "person/osse.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "osse",
+   "canonical": "person/osse.html",
+   "generated": true
+  },
+  "person/ostoher.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ostoher",
+   "canonical": "person/ostoher.html",
+   "generated": true
+  },
+  "person/otho.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "otho",
+   "canonical": "person/otho.html",
+   "generated": true
+  },
+  "person/paladin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "paladin",
+   "canonical": "person/paladin.html",
+   "generated": true
+  },
+  "person/pelendur.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "pelendur",
+   "canonical": "person/pelendur.html",
+   "generated": true
+  },
+  "person/pharazon.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "pharazon",
+   "canonical": "person/pharazon.html",
+   "generated": true
+  },
+  "person/pippin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "pippin",
+   "canonical": "person/pippin.html",
+   "generated": true
+  },
+  "person/primula.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "primula",
+   "canonical": "person/primula.html",
+   "generated": true
+  },
+  "person/rian.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rian",
+   "canonical": "person/rian.html",
+   "generated": true
+  },
+  "person/romendacil1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "romendacil1",
+   "canonical": "person/romendacil1.html",
+   "generated": true
+  },
+  "person/romendacil2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "romendacil2",
+   "canonical": "person/romendacil2.html",
+   "generated": true
+  },
+  "person/rorimac.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rorimac",
+   "canonical": "person/rorimac.html",
+   "generated": true
+  },
+  "person/rosamunda.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rosamunda",
+   "canonical": "person/rosamunda.html",
+   "generated": true
+  },
+  "person/rosie.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rosie",
+   "canonical": "person/rosie.html",
+   "generated": true
+  },
+  "person/sam.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "sam",
+   "canonical": "person/sam.html",
+   "generated": true
+  },
+  "person/sangahyando.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "sangahyando",
+   "canonical": "person/sangahyando.html",
+   "generated": true
+  },
+  "person/saradoc.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "saradoc",
+   "canonical": "person/saradoc.html",
+   "generated": true
+  },
+  "person/silmarien.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "silmarien",
+   "canonical": "person/silmarien.html",
+   "generated": true
+  },
+  "person/siriondil2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "siriondil2",
+   "canonical": "person/siriondil2.html",
+   "generated": true
+  },
+  "person/siriondil_g.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "siriondil g",
+   "canonical": "person/siriondil_g.html",
+   "generated": true
+  },
+  "person/smeagol.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "smeagol",
+   "canonical": "person/smeagol.html",
+   "generated": true
+  },
+  "person/smeagrandma.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "smeagrandma",
+   "canonical": "person/smeagrandma.html",
+   "generated": true
+  },
+  "person/tanta.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tanta",
+   "canonical": "person/tanta.html",
+   "generated": true
+  },
+  "person/taralcarin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "taralcarin",
+   "canonical": "person/taralcarin.html",
+   "generated": true
+  },
+  "person/taraldarion.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "taraldarion",
+   "canonical": "person/taraldarion.html",
+   "generated": true
+  },
+  "person/taramandil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "taramandil",
+   "canonical": "person/taramandil.html",
+   "generated": true
+  },
+  "person/taranarion.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "taranarion",
+   "canonical": "person/taranarion.html",
+   "generated": true
+  },
+  "person/tarancalime.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tarancalime",
+   "canonical": "person/tarancalime.html",
+   "generated": true
+  },
+  "person/tarancalimon.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tarancalimon",
+   "canonical": "person/tarancalimon.html",
+   "generated": true
+  },
+  "person/tarardamin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tarardamin",
+   "canonical": "person/tarardamin.html",
+   "generated": true
+  },
+  "person/taratanamir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "taratanamir",
+   "canonical": "person/taratanamir.html",
+   "generated": true
+  },
+  "person/tarcalmacil2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tarcalmacil2",
+   "canonical": "person/tarcalmacil2.html",
+   "generated": true
+  },
+  "person/tarcil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tarcil",
+   "canonical": "person/tarcil.html",
+   "generated": true
+  },
+  "person/tarciryan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tarciryan",
+   "canonical": "person/tarciryan.html",
+   "generated": true
+  },
+  "person/tarciryatan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tarciryatan",
+   "canonical": "person/tarciryatan.html",
+   "generated": true
+  },
+  "person/tarelendil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tarelendil",
+   "canonical": "person/tarelendil.html",
+   "generated": true
+  },
+  "person/tarmeneldur.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tarmeneldur",
+   "canonical": "person/tarmeneldur.html",
+   "generated": true
+  },
+  "person/tarminastir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tarminastir",
+   "canonical": "person/tarminastir.html",
+   "generated": true
+  },
+  "person/tarondor_a.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tarondor a",
+   "canonical": "person/tarondor_a.html",
+   "generated": true
+  },
+  "person/tarondor_g.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tarondor g",
+   "canonical": "person/tarondor_g.html",
+   "generated": true
+  },
+  "person/tarpalantir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tarpalantir",
+   "canonical": "person/tarpalantir.html",
+   "generated": true
+  },
+  "person/tarsurion.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tarsurion",
+   "canonical": "person/tarsurion.html",
+   "generated": true
+  },
+  "person/tartelemmaite.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tartelemmaite",
+   "canonical": "person/tartelemmaite.html",
+   "generated": true
+  },
+  "person/tartelperien.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tartelperien",
+   "canonical": "person/tartelperien.html",
+   "generated": true
+  },
+  "person/tarvanimelde.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tarvanimelde",
+   "canonical": "person/tarvanimelde.html",
+   "generated": true
+  },
+  "person/telemnar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "telemnar",
+   "canonical": "person/telemnar.html",
+   "generated": true
+  },
+  "person/telumehtar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "telumehtar",
+   "canonical": "person/telumehtar.html",
+   "generated": true
+  },
+  "person/thengel.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "thengel",
+   "canonical": "person/thengel.html",
+   "generated": true
+  },
+  "person/theoden.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "theoden",
+   "canonical": "person/theoden.html",
+   "generated": true
+  },
+  "person/theodred.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "theodred",
+   "canonical": "person/theodred.html",
+   "generated": true
+  },
+  "person/theodwyn.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "theodwyn",
+   "canonical": "person/theodwyn.html",
+   "generated": true
+  },
+  "person/thorin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "thorin",
+   "canonical": "person/thorin.html",
+   "generated": true
+  },
+  "person/thorin1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "thorin1",
+   "canonical": "person/thorin1.html",
+   "generated": true
+  },
+  "person/thorin3.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "thorin3",
+   "canonical": "person/thorin3.html",
+   "generated": true
+  },
+  "person/thorondir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "thorondir",
+   "canonical": "person/thorondir.html",
+   "generated": true
+  },
+  "person/thrain1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "thrain1",
+   "canonical": "person/thrain1.html",
+   "generated": true
+  },
+  "person/thrain2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "thrain2",
+   "canonical": "person/thrain2.html",
+   "generated": true
+  },
+  "person/thranduil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "thranduil",
+   "canonical": "person/thranduil.html",
+   "generated": true
+  },
+  "person/thror.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "thror",
+   "canonical": "person/thror.html",
+   "generated": true
+  },
+  "person/tolman_c.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tolman c",
+   "canonical": "person/tolman_c.html",
+   "generated": true
+  },
+  "person/tomcotton_y.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tomcotton y",
+   "canonical": "person/tomcotton_y.html",
+   "generated": true
+  },
+  "person/tulkas.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tulkas",
+   "canonical": "person/tulkas.html",
+   "generated": true
+  },
+  "person/tuor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tuor",
+   "canonical": "person/tuor.html",
+   "generated": true
+  },
+  "person/turambar_g.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "turambar g",
+   "canonical": "person/turambar_g.html",
+   "generated": true
+  },
+  "person/turgon.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "turgon",
+   "canonical": "person/turgon.html",
+   "generated": true
+  },
+  "person/turgon_s.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "turgon s",
+   "canonical": "person/turgon_s.html",
+   "generated": true
+  },
+  "person/turin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "turin",
+   "canonical": "person/turin.html",
+   "generated": true
+  },
+  "person/turin1.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "turin1",
+   "canonical": "person/turin1.html",
+   "generated": true
+  },
+  "person/turin2.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "turin2",
+   "canonical": "person/turin2.html",
+   "generated": true
+  },
+  "person/uinen.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "uinen",
+   "canonical": "person/uinen.html",
+   "generated": true
+  },
+  "person/ulmo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ulmo",
+   "canonical": "person/ulmo.html",
+   "generated": true
+  },
+  "person/vaire.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "vaire",
+   "canonical": "person/vaire.html",
+   "generated": true
+  },
+  "person/valacar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "valacar",
+   "canonical": "person/valacar.html",
+   "generated": true
+  },
+  "person/valandil_a.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "valandil a",
+   "canonical": "person/valandil_a.html",
+   "generated": true
+  },
+  "person/valandil_k.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "valandil k",
+   "canonical": "person/valandil_k.html",
+   "generated": true
+  },
+  "person/valandur.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "valandur",
+   "canonical": "person/valandur.html",
+   "generated": true
+  },
+  "person/vana.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "vana",
+   "canonical": "person/vana.html",
+   "generated": true
+  },
+  "person/varda.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "varda",
+   "canonical": "person/varda.html",
+   "generated": true
+  },
+  "person/vardamir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "vardamir",
+   "canonical": "person/vardamir.html",
+   "generated": true
+  },
+  "person/veantur.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "veantur",
+   "canonical": "person/veantur.html",
+   "generated": true
+  },
+  "person/vidugavia.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "vidugavia",
+   "canonical": "person/vidugavia.html",
+   "generated": true
+  },
+  "person/vidumavi.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "vidumavi",
+   "canonical": "person/vidumavi.html",
+   "generated": true
+  },
+  "person/vorondil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "vorondil",
+   "canonical": "person/vorondil.html",
+   "generated": true
+  },
+  "person/voronwe.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "voronwe",
+   "canonical": "person/voronwe.html",
+   "generated": true
+  },
+  "person/walda.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "walda",
+   "canonical": "person/walda.html",
+   "generated": true
+  },
+  "person/yavanna.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "yavanna",
+   "canonical": "person/yavanna.html",
+   "generated": true
+  },
+  "place.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "A Place in Full",
+   "canonical": "place.html",
+   "prev": "map.html",
+   "next": "realms.html"
+  },
+  "place/amon_ereb.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "amon ereb",
+   "canonical": "place/amon_ereb.html",
+   "generated": true
+  },
+  "place/amon_rudh.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "amon rudh",
+   "canonical": "place/amon_rudh.html",
+   "generated": true
+  },
+  "place/anfauglith.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "anfauglith",
+   "canonical": "place/anfauglith.html",
+   "generated": true
+  },
+  "place/angband.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "angband",
+   "canonical": "place/angband.html",
+   "generated": true
+  },
+  "place/annuminas.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "annuminas",
+   "canonical": "place/annuminas.html",
+   "generated": true
+  },
+  "place/barad_dur.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "barad dur",
+   "canonical": "place/barad_dur.html",
+   "generated": true
+  },
+  "place/barrow_downs.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "barrow downs",
+   "canonical": "place/barrow_downs.html",
+   "generated": true
+  },
+  "place/belegost.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "belegost",
+   "canonical": "place/belegost.html",
+   "generated": true
+  },
+  "place/bree.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "bree",
+   "canonical": "place/bree.html",
+   "generated": true
+  },
+  "place/brethil.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "brethil",
+   "canonical": "place/brethil.html",
+   "generated": true
+  },
+  "place/brithombar.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "brithombar",
+   "canonical": "place/brithombar.html",
+   "generated": true
+  },
+  "place/buckland_crickhollow.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "buckland crickhollow",
+   "canonical": "place/buckland_crickhollow.html",
+   "generated": true
+  },
+  "place/cair_andros.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "cair andros",
+   "canonical": "place/cair_andros.html",
+   "generated": true
+  },
+  "place/caradhras.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "caradhras",
+   "canonical": "place/caradhras.html",
+   "generated": true
+  },
+  "place/caras_galadhon.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "caras galadhon",
+   "canonical": "place/caras_galadhon.html",
+   "generated": true
+  },
+  "place/carn_dum.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "carn dum",
+   "canonical": "place/carn_dum.html",
+   "generated": true
+  },
+  "place/cirith_ungol.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "cirith ungol",
+   "canonical": "place/cirith_ungol.html",
+   "generated": true
+  },
+  "place/dale.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dale",
+   "canonical": "place/dale.html",
+   "generated": true
+  },
+  "place/dimrill_dale.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dimrill dale",
+   "canonical": "place/dimrill_dale.html",
+   "generated": true
+  },
+  "place/dol_amroth.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dol amroth",
+   "canonical": "place/dol_amroth.html",
+   "generated": true
+  },
+  "place/dol_guldur.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dol guldur",
+   "canonical": "place/dol_guldur.html",
+   "generated": true
+  },
+  "place/dunharrow.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dunharrow",
+   "canonical": "place/dunharrow.html",
+   "generated": true
+  },
+  "place/edoras.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "edoras",
+   "canonical": "place/edoras.html",
+   "generated": true
+  },
+  "place/eglarest.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eglarest",
+   "canonical": "place/eglarest.html",
+   "generated": true
+  },
+  "place/eithel_sirion.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eithel sirion",
+   "canonical": "place/eithel_sirion.html",
+   "generated": true
+  },
+  "place/erebor.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "erebor",
+   "canonical": "place/erebor.html",
+   "generated": true
+  },
+  "place/ered_gorgoroth.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ered gorgoroth",
+   "canonical": "place/ered_gorgoroth.html",
+   "generated": true
+  },
+  "place/esgaroth.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "esgaroth",
+   "canonical": "place/esgaroth.html",
+   "generated": true
+  },
+  "place/estolad.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "estolad",
+   "canonical": "place/estolad.html",
+   "generated": true
+  },
+  "place/ettenmoors.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ettenmoors",
+   "canonical": "place/ettenmoors.html",
+   "generated": true
+  },
+  "place/fangorn.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fangorn",
+   "canonical": "place/fangorn.html",
+   "generated": true
+  },
+  "place/field_of_celebrant.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "field of celebrant",
+   "canonical": "place/field_of_celebrant.html",
+   "generated": true
+  },
+  "place/ford_of_bruinen.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ford of bruinen",
+   "canonical": "place/ford_of_bruinen.html",
+   "generated": true
+  },
+  "place/fords_of_isen.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fords of isen",
+   "canonical": "place/fords_of_isen.html",
+   "generated": true
+  },
+  "place/fornost.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fornost",
+   "canonical": "place/fornost.html",
+   "generated": true
+  },
+  "place/framsburg.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "framsburg",
+   "canonical": "place/framsburg.html",
+   "generated": true
+  },
+  "place/gladden_fields.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gladden fields",
+   "canonical": "place/gladden_fields.html",
+   "generated": true
+  },
+  "place/gondolin.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gondolin",
+   "canonical": "place/gondolin.html",
+   "generated": true
+  },
+  "place/greenfields.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "greenfields",
+   "canonical": "place/greenfields.html",
+   "generated": true
+  },
+  "place/grey_havens.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "grey havens",
+   "canonical": "place/grey_havens.html",
+   "generated": true
+  },
+  "place/haudh_en_ndengin.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "haudh en ndengin",
+   "canonical": "place/haudh_en_ndengin.html",
+   "generated": true
+  },
+  "place/havens_of_sirion.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "havens of sirion",
+   "canonical": "place/havens_of_sirion.html",
+   "generated": true
+  },
+  "place/helm_s_deep.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "helm s deep",
+   "canonical": "place/helm_s_deep.html",
+   "generated": true
+  },
+  "place/henneth_annun.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "henneth annun",
+   "canonical": "place/henneth_annun.html",
+   "generated": true
+  },
+  "place/himring.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "himring",
+   "canonical": "place/himring.html",
+   "generated": true
+  },
+  "place/hobbiton.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hobbiton",
+   "canonical": "place/hobbiton.html",
+   "generated": true
+  },
+  "place/ice_bay_of_forochel.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ice bay of forochel",
+   "canonical": "place/ice_bay_of_forochel.html",
+   "generated": true
+  },
+  "place/isengard.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "isengard",
+   "canonical": "place/isengard.html",
+   "generated": true
+  },
+  "place/isle_of_balar.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "isle of balar",
+   "canonical": "place/isle_of_balar.html",
+   "generated": true
+  },
+  "place/ivrin.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ivrin",
+   "canonical": "place/ivrin.html",
+   "generated": true
+  },
+  "place/lake_helevorn.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "lake helevorn",
+   "canonical": "place/lake_helevorn.html",
+   "generated": true
+  },
+  "place/losgar.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "losgar",
+   "canonical": "place/losgar.html",
+   "generated": true
+  },
+  "place/menegroth.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "menegroth",
+   "canonical": "place/menegroth.html",
+   "generated": true
+  },
+  "place/michel_delving.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "michel delving",
+   "canonical": "place/michel_delving.html",
+   "generated": true
+  },
+  "place/minas_morgul.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "minas morgul",
+   "canonical": "place/minas_morgul.html",
+   "generated": true
+  },
+  "place/minas_tirith.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "minas tirith",
+   "canonical": "place/minas_tirith.html",
+   "generated": true
+  },
+  "place/moria.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "moria",
+   "canonical": "place/moria.html",
+   "generated": true
+  },
+  "place/mount_doom.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "mount doom",
+   "canonical": "place/mount_doom.html",
+   "generated": true
+  },
+  "place/mount_gram.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "mount gram",
+   "canonical": "place/mount_gram.html",
+   "generated": true
+  },
+  "place/mount_gundabad.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "mount gundabad",
+   "canonical": "place/mount_gundabad.html",
+   "generated": true
+  },
+  "place/nan_elmoth.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nan elmoth",
+   "canonical": "place/nan_elmoth.html",
+   "generated": true
+  },
+  "place/nargothrond.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nargothrond",
+   "canonical": "place/nargothrond.html",
+   "generated": true
+  },
+  "place/nogrod.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nogrod",
+   "canonical": "place/nogrod.html",
+   "generated": true
+  },
+  "place/nurn_sea_of_nurnen.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nurn sea of nurnen",
+   "canonical": "place/nurn_sea_of_nurnen.html",
+   "generated": true
+  },
+  "place/osgiliath.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "osgiliath",
+   "canonical": "place/osgiliath.html",
+   "generated": true
+  },
+  "place/ost_in_edhil.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ost in edhil",
+   "canonical": "place/ost_in_edhil.html",
+   "generated": true
+  },
+  "place/parth_galen.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "parth galen",
+   "canonical": "place/parth_galen.html",
+   "generated": true
+  },
+  "place/pelargir.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "pelargir",
+   "canonical": "place/pelargir.html",
+   "generated": true
+  },
+  "place/rhosgobel.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rhosgobel",
+   "canonical": "place/rhosgobel.html",
+   "generated": true
+  },
+  "place/rivendell.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rivendell",
+   "canonical": "place/rivendell.html",
+   "generated": true
+  },
+  "place/sarn_athrad.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "sarn athrad",
+   "canonical": "place/sarn_athrad.html",
+   "generated": true
+  },
+  "place/sea_of_rhun.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "sea of rhun",
+   "canonical": "place/sea_of_rhun.html",
+   "generated": true
+  },
+  "place/taur_im_duinath.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "taur im duinath",
+   "canonical": "place/taur_im_duinath.html",
+   "generated": true
+  },
+  "place/tharbad.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tharbad",
+   "canonical": "place/tharbad.html",
+   "generated": true
+  },
+  "place/the_argonath.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "the argonath",
+   "canonical": "place/the_argonath.html",
+   "generated": true
+  },
+  "place/the_carrock.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "the carrock",
+   "canonical": "place/the_carrock.html",
+   "generated": true
+  },
+  "place/the_dead_marshes.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "the dead marshes",
+   "canonical": "place/the_dead_marshes.html",
+   "generated": true
+  },
+  "place/the_elvenking_s_halls.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "the elvenking s halls",
+   "canonical": "place/the_elvenking_s_halls.html",
+   "generated": true
+  },
+  "place/the_high_pass.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "the high pass",
+   "canonical": "place/the_high_pass.html",
+   "generated": true
+  },
+  "place/the_iron_hills.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "the iron hills",
+   "canonical": "place/the_iron_hills.html",
+   "generated": true
+  },
+  "place/the_morannon.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "the morannon",
+   "canonical": "place/the_morannon.html",
+   "generated": true
+  },
+  "place/the_old_forest.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "the old forest",
+   "canonical": "place/the_old_forest.html",
+   "generated": true
+  },
+  "place/the_stone_of_erech.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "the stone of erech",
+   "canonical": "place/the_stone_of_erech.html",
+   "generated": true
+  },
+  "place/the_undeeps.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "the undeeps",
+   "canonical": "place/the_undeeps.html",
+   "generated": true
+  },
+  "place/tol_galen.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tol galen",
+   "canonical": "place/tol_galen.html",
+   "generated": true
+  },
+  "place/tol_sirion.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tol sirion",
+   "canonical": "place/tol_sirion.html",
+   "generated": true
+  },
+  "place/tower_hills.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tower hills",
+   "canonical": "place/tower_hills.html",
+   "generated": true
+  },
+  "place/trollshaws.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "trollshaws",
+   "canonical": "place/trollshaws.html",
+   "generated": true
+  },
+  "place/vinyamar.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "vinyamar",
+   "canonical": "place/vinyamar.html",
+   "generated": true
+  },
+  "place/weathertop.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "weathertop",
+   "canonical": "place/weathertop.html",
+   "generated": true
+  },
+  "place/withered_heath.html": {
+   "volume": "I",
+   "part": "A Place in Full",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "withered heath",
+   "canonical": "place/withered_heath.html",
+   "generated": true
+  },
+  "poems.html": {
+   "volume": "V",
+   "part": "Verse",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "Verse",
+   "canonical": "poems.html",
+   "prev": "names.html",
+   "next": "writing.html"
+  },
+  "population_dashboard.html": {
+   "volume": "III",
+   "part": "Peoples",
+   "archetype": "roll",
+   "spread": "full",
+   "title": "Peoples",
+   "canonical": "population_dashboard.html",
+   "prev": "genealogy.html"
+  },
+  "quiz.html": {
+   "volume": "VII",
+   "part": "The Trial",
+   "archetype": "workbench",
+   "spread": "spread",
+   "title": "The Trial",
+   "canonical": "quiz.html",
+   "prev": "corpus.html",
+   "next": "registers.html"
+  },
+  "realm/alqualonde.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "alqualonde",
+   "canonical": "realm/alqualonde.html",
+   "generated": true
+  },
+  "realm/angband.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "angband",
+   "canonical": "realm/angband.html",
+   "generated": true
+  },
+  "realm/angmar.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "angmar",
+   "canonical": "realm/angmar.html",
+   "generated": true
+  },
+  "realm/arnor.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arnor",
+   "canonical": "realm/arnor.html",
+   "generated": true
+  },
+  "realm/arthedain.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "arthedain",
+   "canonical": "realm/arthedain.html",
+   "generated": true
+  },
+  "realm/balar.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "balar",
+   "canonical": "realm/balar.html",
+   "generated": true
+  },
+  "realm/belegost.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "belegost",
+   "canonical": "realm/belegost.html",
+   "generated": true
+  },
+  "realm/beornings.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "beornings",
+   "canonical": "realm/beornings.html",
+   "generated": true
+  },
+  "realm/bombadil.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "bombadil",
+   "canonical": "realm/bombadil.html",
+   "generated": true
+  },
+  "realm/bree.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "bree",
+   "canonical": "realm/bree.html",
+   "generated": true
+  },
+  "realm/brethil.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "brethil",
+   "canonical": "realm/brethil.html",
+   "generated": true
+  },
+  "realm/cardolan.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "cardolan",
+   "canonical": "realm/cardolan.html",
+   "generated": true
+  },
+  "realm/dale.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dale",
+   "canonical": "realm/dale.html",
+   "generated": true
+  },
+  "realm/dolguldur.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dolguldur",
+   "canonical": "realm/dolguldur.html",
+   "generated": true
+  },
+  "realm/doriath.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "doriath",
+   "canonical": "realm/doriath.html",
+   "generated": true
+  },
+  "realm/dorlomin.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dorlomin",
+   "canonical": "realm/dorlomin.html",
+   "generated": true
+  },
+  "realm/dorthonion.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dorthonion",
+   "canonical": "realm/dorthonion.html",
+   "generated": true
+  },
+  "realm/dorwinion.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dorwinion",
+   "canonical": "realm/dorwinion.html",
+   "generated": true
+  },
+  "realm/druadan.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "druadan",
+   "canonical": "realm/druadan.html",
+   "generated": true
+  },
+  "realm/dunland.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dunland",
+   "canonical": "realm/dunland.html",
+   "generated": true
+  },
+  "realm/easterlingsfa.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "easterlingsfa",
+   "canonical": "realm/easterlingsfa.html",
+   "generated": true
+  },
+  "realm/eotheod.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eotheod",
+   "canonical": "realm/eotheod.html",
+   "generated": true
+  },
+  "realm/erebor.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "erebor",
+   "canonical": "realm/erebor.html",
+   "generated": true
+  },
+  "realm/eregion.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eregion",
+   "canonical": "realm/eregion.html",
+   "generated": true
+  },
+  "realm/esgaroth.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "esgaroth",
+   "canonical": "realm/esgaroth.html",
+   "generated": true
+  },
+  "realm/falas.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "falas",
+   "canonical": "realm/falas.html",
+   "generated": true
+  },
+  "realm/fangorn.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fangorn",
+   "canonical": "realm/fangorn.html",
+   "generated": true
+  },
+  "realm/gondolin.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gondolin",
+   "canonical": "realm/gondolin.html",
+   "generated": true
+  },
+  "realm/gondor.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gondor",
+   "canonical": "realm/gondor.html",
+   "generated": true
+  },
+  "realm/greenwood.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "greenwood",
+   "canonical": "realm/greenwood.html",
+   "generated": true
+  },
+  "realm/harad.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "harad",
+   "canonical": "realm/harad.html",
+   "generated": true
+  },
+  "realm/himring.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "himring",
+   "canonical": "realm/himring.html",
+   "generated": true
+  },
+  "realm/hithlum.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hithlum",
+   "canonical": "realm/hithlum.html",
+   "generated": true
+  },
+  "realm/ironhills.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ironhills",
+   "canonical": "realm/ironhills.html",
+   "generated": true
+  },
+  "realm/isengard.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "isengard",
+   "canonical": "realm/isengard.html",
+   "generated": true
+  },
+  "realm/khand.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "khand",
+   "canonical": "realm/khand.html",
+   "generated": true
+  },
+  "realm/khazaddum.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "khazaddum",
+   "canonical": "realm/khazaddum.html",
+   "generated": true
+  },
+  "realm/ladros.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ladros",
+   "canonical": "realm/ladros.html",
+   "generated": true
+  },
+  "realm/lindon.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "lindon",
+   "canonical": "realm/lindon.html",
+   "generated": true
+  },
+  "realm/lorien.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "lorien",
+   "canonical": "realm/lorien.html",
+   "generated": true
+  },
+  "realm/lossoth.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "lossoth",
+   "canonical": "realm/lossoth.html",
+   "generated": true
+  },
+  "realm/mistyorcs.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "mistyorcs",
+   "canonical": "realm/mistyorcs.html",
+   "generated": true
+  },
+  "realm/mordor.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "mordor",
+   "canonical": "realm/mordor.html",
+   "generated": true
+  },
+  "realm/morgul.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "morgul",
+   "canonical": "realm/morgul.html",
+   "generated": true
+  },
+  "realm/nargothrond.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nargothrond",
+   "canonical": "realm/nargothrond.html",
+   "generated": true
+  },
+  "realm/nogrod.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nogrod",
+   "canonical": "realm/nogrod.html",
+   "generated": true
+  },
+  "realm/numenor.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "numenor",
+   "canonical": "realm/numenor.html",
+   "generated": true
+  },
+  "realm/ossiriand.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ossiriand",
+   "canonical": "realm/ossiriand.html",
+   "generated": true
+  },
+  "realm/reunited.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "reunited",
+   "canonical": "realm/reunited.html",
+   "generated": true
+  },
+  "realm/rhudaur.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rhudaur",
+   "canonical": "realm/rhudaur.html",
+   "generated": true
+  },
+  "realm/rhun.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rhun",
+   "canonical": "realm/rhun.html",
+   "generated": true
+  },
+  "realm/rivendell.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rivendell",
+   "canonical": "realm/rivendell.html",
+   "generated": true
+  },
+  "realm/rohan.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rohan",
+   "canonical": "realm/rohan.html",
+   "generated": true
+  },
+  "realm/shire.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "shire",
+   "canonical": "realm/shire.html",
+   "generated": true
+  },
+  "realm/thargelion.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "thargelion",
+   "canonical": "realm/thargelion.html",
+   "generated": true
+  },
+  "realm/tirion.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tirion",
+   "canonical": "realm/tirion.html",
+   "generated": true
+  },
+  "realm/umbar.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "umbar",
+   "canonical": "realm/umbar.html",
+   "generated": true
+  },
+  "realm/utumno.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "utumno",
+   "canonical": "realm/utumno.html",
+   "generated": true
+  },
+  "realm/valinor.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "valinor",
+   "canonical": "realm/valinor.html",
+   "generated": true
+  },
+  "realm/woodmen.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "woodmen",
+   "canonical": "realm/woodmen.html",
+   "generated": true
+  },
+  "realms.html": {
+   "volume": "I",
+   "part": "Realms",
+   "archetype": "contents",
+   "spread": "spread",
+   "title": "Realms",
+   "canonical": "realms.html",
+   "prev": "place.html",
+   "next": "sheets.html"
+  },
+  "reckoning.html": {
+   "volume": "II",
+   "part": "Reckonings",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "Reckonings",
+   "canonical": "reckoning.html",
+   "prev": "armies_dashboard.html"
+  },
+  "registers.html": {
+   "volume": "VII",
+   "part": "The Registers",
+   "archetype": "index",
+   "spread": "spread",
+   "title": "The Registers",
+   "canonical": "registers.html",
+   "prev": "quiz.html",
+   "next": "theindex.html"
+  },
+  "sheets.html": {
+   "volume": "I",
+   "part": "The Drawn Sheets",
+   "archetype": "atlas",
+   "spread": "full",
+   "title": "The Drawn Sheets",
+   "canonical": "sheets.html",
+   "prev": "realms.html",
+   "next": "valinor.html"
+  },
+  "silences.html": {
+   "volume": "VI",
+   "part": "The Silences",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "The Silences",
+   "canonical": "silences.html",
+   "prev": "oaths.html"
+  },
+  "theindex.html": {
+   "volume": "VII",
+   "part": "The Index",
+   "archetype": "index",
+   "spread": "spread",
+   "title": "The Index",
+   "canonical": "theindex.html",
+   "prev": "registers.html",
+   "next": "tours.html"
+  },
+  "tours.html": {
+   "volume": "VII",
+   "part": "Reader's Paths",
+   "archetype": "contents",
+   "spread": "spread",
+   "title": "Reader's Paths",
+   "canonical": "tours.html",
+   "prev": "theindex.html"
+  },
+  "valinor.html": {
+   "volume": "I",
+   "part": "Aman",
+   "archetype": "atlas",
+   "spread": "full",
+   "title": "Aman",
+   "canonical": "valinor.html",
+   "prev": "sheets.html"
+  },
+  "writing.html": {
+   "volume": "V",
+   "part": "The Scriptorium",
+   "archetype": "workbench",
+   "spread": "spread",
+   "title": "The Scriptorium",
+   "canonical": "writing.html",
+   "prev": "poems.html"
+  }
+ }
+}
