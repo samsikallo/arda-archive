@@ -8,6 +8,31 @@ try{document.documentElement.setAttribute("data-codex",
   localStorage.getItem("arda-codex")==="off"?"off":"on");}catch(e){
   document.documentElement.setAttribute("data-codex","on");}
 /* CODEX-STAGE-0-END */
+/* THE GROUND IS RESOLVED AT FILE SCOPE, ABOVE EVERY EARLY RETURN.
+   It used to sit below `const nav=document.getElementById("ardanav"); if(!nav) return;`, so any
+   page without a nav element got NO ground at all. Measured in a browser: registers.html and
+   chronicle.html both reported nav=false, data-theme=null, body #efe6cd -- permanently on the day
+   ground, whatever the reader had chosen. Four halls in all.
+   THIS IS THE THIRD TIME THIS EXACT SHAPE HAS COST THIS ARCHIVE SOMETHING: the codex switch
+   defaulted off below a return for three days, the dark theme had no reachable control for
+   weeks, and now the ground itself never reached four pages. A feature below an early return is
+   a feature those pages do not have. Anything global goes above the guard. */
+(function(){
+ const KEY="arda-theme";
+ const os=()=>matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";
+ let stored=null; try{stored=localStorage.getItem(KEY)}catch(e){}   // private mode throws; the OS still answers
+ // paint the button whenever the ground changes, WITHOUT touching storage -- see the note above
+ // setTheme(): syncing a label and recording a choice are different acts, and conflating them
+ // silently overwrote the reader's preference on every load.
+ const put=t=>{document.documentElement.setAttribute("data-theme",t);
+   try{if(window.ardaPaintTheme)window.ardaPaintTheme()}catch(e){}};
+ put(stored||os());
+ // The OS changing while the page is open follows, UNLESS the reader has chosen for themselves.
+ try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{
+   let s=null; try{s=localStorage.getItem(KEY)}catch(_){}
+   if(!s) put(e.matches?"dark":"light");
+ })}catch(e){}
+})();
 (function(){
 const GROUPS=[
   ["Peoples & Living Beings",[["genealogy.html","family trees","441 figures, all houses"],
@@ -211,11 +236,23 @@ const T=document.getElementById("a-theme");
 // already knows -- an escape hatch nobody opens, a ruling recorded as landed that was not.
 // The button now drives data-theme and persists under "arda-theme", the same key the block
 // below reads, so there is ONE mechanism and this control is its face.
+// AN INIT CALL THAT PERSISTS IS AN INIT CALL THAT DESTROYS. My first version ran setTheme() HERE
+// to sync the label -- but the resolver that decides the ground lives ~50 lines BELOW, so at this
+// point data-theme is unset, getAttribute returned null, and setTheme(false) wrote
+// localStorage["arda-theme"]="light" over whatever the reader had chosen. Proven in a browser:
+// stored "dark" before load -> storage "light" and a light page after it. A reader who chose the
+// night ground lost it on every single navigation, and contrast_check's dark census became a
+// LIGHT census. Found by the Auditor, not by me.
+// SO: label sync is now SEPARATE from persistence and happens AFTER the resolver (see paintTheme
+// below). setTheme() persists and is called ONLY from the click handler, where the reader really
+// did choose. Nothing writes storage on load.
 function setTheme(d){document.documentElement.setAttribute("data-theme",d?"dark":"light");
   try{localStorage.setItem("arda-theme",d?"dark":"light")}catch(e){}
+  paintTheme();}
+function paintTheme(){const d=document.documentElement.getAttribute("data-theme")==="dark";
   T.textContent=d?"\u2600":"\u263e"; T.title=d?"switch to the day ground":"switch to the night ground";
   T.setAttribute("aria-label",T.title);}
-try{setTheme(document.documentElement.getAttribute("data-theme")==="dark")}catch(e){}
+window.ardaPaintTheme=paintTheme;
 T.addEventListener("click",()=>setTheme(document.documentElement.getAttribute("data-theme")!=="dark"));
 // layer toggle: canon focus (dims inferred/external-badged entries)
 const Lb=document.createElement("button");Lb.id="a-layers";Lb.textContent="layers: all";Lb.title="toggle canon-focus — dims material badged inferred [I] or external [EXT]";
@@ -265,16 +302,6 @@ FB.addEventListener("click",()=>{
 // if a future rule ever gives the header a different border in the dark, the height must be
 // measured after the ground is chosen and not before.
 (function(){
- const KEY="arda-theme";
- const os=()=>matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";
- let stored=null; try{stored=localStorage.getItem(KEY)}catch(e){}   // private mode throws; the OS still answers
- const put=t=>document.documentElement.setAttribute("data-theme",t);
- put(stored||os());
- // The OS changing while the page is open follows, UNLESS the reader has chosen for themselves.
- try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{
-   let s=null; try{s=localStorage.getItem(KEY)}catch(_){}
-   if(!s) put(e.matches?"dark":"light");
- })}catch(e){}
  addEventListener("DOMContentLoaded",()=>{
   const nav=document.getElementById("ardanav");
   // TWO TOGGLES IS WORSE THAN NONE. Another session added `#a-theme` to the nav markup while
