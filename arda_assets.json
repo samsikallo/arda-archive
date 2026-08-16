@@ -5371,6 +5371,14 @@
    "hand": "Mans Bjorkman Berg",
    "licence": "Permission to publish granted by the archive's owner and recorded by his ruling of 16 August 2026. Recorded as a RULING rather than as a quotation, because ruling 3 requires a licence to be stated and this archive declined to publish Bjorkman's Tengwar Eldamar on the opposite ground -- its name table reserves all rights and Eldamo's permission was granted to Paul Strack, not to the world. This one is the owner's own.",
    "source": "uploads/fonts_candidate/Tirion.ttf -- its name table records Bjorkman as the designer and 1999 as the year; the licence field (nameID 13) is EMPTY, which is why the owner's permission is what makes it publishable"
+  },
+  {
+   "file": "fonts/AngerthasMoria.woff2",
+   "what": "Angerthas Moria — an OUTLINE cirth typeface at 2443 units/em, 116 glyphs. The archive's first outline Cirth face: ArdaCSUR, the only other source for these letters, is a 16x16 BITMAP at 64 upm, which is why the cirth have rendered pixelated.",
+   "hand": "Morten Bek, 1996-97",
+   "licence": "The font's own accompanying file states: the author asks that it be kept with the font whenever it is copied and spread. It is published here on that permission AND on the owner's standing authorization of 16 August 2026 to use and publish what the archive holds or finds. Recorded as resting on those two, not on an SPDX licence the file does not carry.",
+   "licence_file": "fonts/AngerthasMoria-TECH.txt",
+   "source": "dl.dafont.com/dl/?f=angerthas_moria, fetched 16 Aug 2026; ZIP verified by magic bytes"
   }
  ],
  "pending_provenance": []

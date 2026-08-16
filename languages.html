@@ -100,6 +100,31 @@ const lt=p.querySelector("#lt");
 const XTRA=[].concat(
 D.elements.map(e=>[e[0],"s","element",e[1].slice(0,150),"","Silm, Appendix of name-elements [C]",""]),
 D.etym.map(e=>["√"+e[0],"pq","root",e[1].slice(0,150),"","The Etymologies, HoME V [C]",""]));
+/* ARDA:MINED — the mined layers, fetched ON FIRST SEARCH and pushed into XTRA.
+   Eager loading is not possible: the Sindarin dictionary alone is 70,639 gzipped against this
+   page's remaining headroom. A reader who has typed something has asked for it; one who has not
+   pays nothing. XTRA is a const ARRAY, so pushing into it is legal and the existing filter needs
+   no rewrite — this adds a gate in front of it and nothing else. */
+let _minedState=0;
+function _loadMined(){
+ if(_minedState===2)return Promise.resolve();
+ if(_minedState===1)return _minedP;
+ _minedState=1;
+ _minedP=Promise.all([
+   fetch("arda_sindarin_dict.json").then(r=>r.json()).catch(()=>null),
+   fetch("arda_renk_quenya.json").then(r=>r.json()).catch(()=>null)
+ ]).then(function(a){
+   var s=a[0],r=a[1];
+   if(s&&s.words)s.words.forEach(function(w){XTRA.push([w.form,"s",w.pos||"",
+     (w.gloss||"")+(w.gloss_damaged?" ⚠ ligature lost in the source scan":""),"",
+     (w.cite?w.cite+" — ":"")+"Sindarin Dictionary Project [EXT]",""]);});
+   if(r&&r.words)r.words.forEach(function(w){XTRA.push([w.form,"q","",
+     w.gloss||"","",(w.cite||"Renk, a Quenya course")+" [EXT]",""]);});
+   _minedState=2;
+ });
+ return _minedP;
+}
+let _minedP=null;
 window.lexFilter=()=>{const q=p.querySelector("#ls").value.trim().toLowerCase(),f=p.querySelector("#lf").value;
 let rx=null;if(q.includes("*"))try{rx=new RegExp("^"+q.replace(/[.+?^${}()|[\]\\]/g,"\\$&").replace(/\*/g,".*")+"$","i")}catch(e){}
 const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
@@ -112,8 +137,12 @@ else if(!hay.includes(norm(q)))return}
 if(n++>400)return;
 rows+=`<tr><td class="lem">${le}</td><td>${byLang[la]?byLang[la].name.split(" /")[0].split(" (")[0]:la}</td><td>${po}</td><td>${gl}${no?` <span class="cite">${no}</span>`:""}</td><td>${et}</td><td class="cite">${ci}</td></tr>`});
 lt.innerHTML=`<tr><th>form</th><th>lang</th><th>pos</th><th>meaning</th><th>etymology</th><th>source</th></tr>`+rows;
-p.querySelector("#lc").textContent=` ${n} entries`;};
-p.querySelector("#ls").addEventListener("input",lexFilter);p.querySelector("#lf").addEventListener("change",lexFilter);
+p.querySelector("#lc").textContent=` ${n} shown · ${(D.lex.length+XTRA.length).toLocaleString()} searchable here · 37,539 in the archive`;};
+/* Load the mined layers on the FIRST keystroke, then filter. The gate is here rather than
+   inside lexFilter so the filter itself stays synchronous and unchanged. */
+p.querySelector("#ls").addEventListener("input",function(){
+ if(this.value.trim().length>=2){_loadMined().then(lexFilter);}else{lexFilter();}});
+p.querySelector("#lf").addEventListener("change",lexFilter);
 lexFilter();}
 // ---- Name-craft tab
 {const p=panes.name;

@@ -1,11 +1,12 @@
 // nav.js — the one nav for every hall: grouped menu with plain-word subtitles,
 // current-page highlight, breadcrumb, keyboard shim for legacy widgets, theme toggle.
 /* CODEX-STAGE-0-BEGIN */
-// Book-look escape hatch. File scope, above every IIFE: the menu closure returns early
-// where there is no #ardanav, and 4 halls have none. Why: roadmap, 13 & 15 Aug.
+// Book-look. DEFAULTS ON since 16 Aug: it defaulted OFF for three days and five stages,
+// so the owner never saw any of it. An escape hatch nobody opens is a feature nobody has.
+// Still reversible: localStorage arda-codex='off'. Why: roadmap, 13 & 16 Aug.
 try{document.documentElement.setAttribute("data-codex",
-  localStorage.getItem("arda-codex")==="on"?"on":"off");}catch(e){
-  document.documentElement.setAttribute("data-codex","off");}
+  localStorage.getItem("arda-codex")==="off"?"off":"on");}catch(e){
+  document.documentElement.setAttribute("data-codex","on");}
 /* CODEX-STAGE-0-END */
 (function(){
 const GROUPS=[

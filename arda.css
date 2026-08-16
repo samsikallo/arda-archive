@@ -502,6 +502,23 @@ html.arda-dark{background:#181410}
 :root[data-codex="on"] #hero #uscap{font-variant:small-caps;letter-spacing:.07em}
 /* CODEX-STAGE-4-END */
 /* LIGHT-CONTRAST-BEGIN */
+/* THE MUTED INK, FIXED ONCE AT THE VARIABLE. `--mut:#7a6a50` is declared on 36 of 39 halls and
+   fails on every parchment ground: 4.03:1 on #ebe1c8, 4.21 on #efe6cd, 4.49 on #f5edd8. Fixing it
+   class by class is what made the earlier pass miss `.mk`, `.sq .v`, `.lbl`, `.acnote` and every
+   `label` in the Scriptorium -- 37 failures on one page while the site census said 25.
+   #6d5f47 clears 4.78:1 on the DARKEST of those grounds, so it clears all of them. */
+:root:not([data-theme="dark"]){--mut:#6d5f47}
+/* AND THE LITERALS, because most uses are NOT var(--mut): ten in the Scriptorium alone are
+   `color:#7a6a50`, several of them INLINE, and an inline style beats everything but !important.
+   The dark layer already carries the mirror of this rule for the same ink; light had none. */
+:root:not([data-theme="dark"]) [style*="#7a6a50"],
+:root:not([data-theme="dark"]) .mk,
+:root:not([data-theme="dark"]) .lbl,
+:root:not([data-theme="dark"]) .acnote,
+:root:not([data-theme="dark"]) .sq .v,
+:root:not([data-theme="dark"]) .row label,
+:root:not([data-theme="dark"]) section label{color:#6d5f47 !important}
+
 /* THE HOUSE BAND, AS A FLOOR. Measured 16 Aug: two halls style #hdr with no ground at all, so
    the parchment body showed through and the gold nav read at 1.70:1 -- the owner's "lighter text
    on light background", exactly. The band is the archive's since its first hall; a hall that
@@ -514,13 +531,28 @@ html.arda-dark{background:#181410}
 :root:not([data-theme="dark"]) .src,
 :root:not([data-theme="dark"]) .src i,
 :root:not([data-theme="dark"]) .tile .c{color:#746448}
-:root:not([data-theme="dark"]) .orn{color:#6c6557}
+:root:not([data-theme="dark"]) .orn{color:#635d50}
 :root:not([data-theme="dark"]) .art .cap .cite,
 :root:not([data-theme="dark"]) .art .cap .cite .gl{color:#a89777 !important}
 :root:not([data-theme="dark"]) .meta,
 :root:not([data-theme="dark"]) .ft,
 :root:not([data-theme="dark"]) .sec .n,
-:root:not([data-theme="dark"]) h3.sub{color:#73644c}
+:root:not([data-theme="dark"]) h3.sub{color:#6d5f47}
+
+/* THREE CLASSES THE CENSUS FOUND ONCE THE CODEX WAS ON, and it could not have found them before:
+   turning the book-look on CHANGED THE GROUND under 30,000 nodes from near-white to parchment,
+   so colours that passed on #fdfaf2 now face #ebe1c8. A default nobody had switched was hiding
+   its own consequences. */
+/* the nav where a hall has neither #hdr nor #hero, so it sits on the page ground: 404 and map */
+:root:not([data-theme="dark"]) body > nav#ardanav,
+:root:not([data-theme="dark"]) body > nav#ardanav a,
+:root:not([data-theme="dark"]) body > nav#ardanav button{color:#5d4c1f !important}
+/* dark ink on a GOLD button is 2.64:1, so the ink goes light -- BUT ONLY ON THE PRESSED ONE.
+   My first version coloured every button light and put #fdfaf2 on parchment at 1.25:1: the gold
+   is the PRESSED state, and an unpressed button keeps the page ground. aria-pressed is the
+   archive's own marker for it and is already on these controls. */
+:root:not([data-theme="dark"]) #sh #toggles button[aria-pressed="true"],
+:root:not([data-theme="dark"]) #bs .row button[aria-pressed="true"]{color:#fdfaf2 !important}
 /* LIGHT-CONTRAST-END */
 /* DARK-CONTRAST-BEGIN */
 /* Dark-ground legibility, scoped BY GROUND. 4,260 -> 897. Why, and the blanket-svg attempt that
