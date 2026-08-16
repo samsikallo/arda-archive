@@ -189,40 +189,18 @@ fetch('arda_ref.svg').then(r=>r.text()).then(txt=>{
   // THE ARCHIVE'S OWN LETTERING IS NOT DRAWN AT ALL, AND IT SHOULD BE. Diagnosed, not
   // fixed here -- the fix is structural and wants its own commit.
   //
-  // *** DO NOT EXECUTE THE PLAN THAT USED TO BE WRITTEN HERE. THE OWNER HAS RULED AGAINST IT
-  // *** TWICE, AND THE PLAN RESTED ON THREE PREMISES THAT ARE ALL FALSE. Kept as a warning
-  // *** rather than deleted, because a session that finds loadHisNames() unreachable will
-  // *** re-derive the same "fix" from scratch, and this is the only place it would look.
-  //
-  // THE PLAN WAS: lift loadHisNames (and wireAside, which it needs) out of loadTraced to file
-  // scope, and call it, so that 161 map labels return. DOING THAT WOULD REPUBLISH WITHDRAWN
-  // MATERIAL, and it would fail anyway because the file it reads is not served.
-  //
-  // PREMISE 1, FALSE: "arda_his_anchors.json ... is published and always was."
-  //     git ls-files site/arda_his_anchors.json  ->  empty
-  //     .gitignore:65                            ->  arda_his_anchors.json
-  //   It was published once and WITHDRAWN on 29 July by site e4137b9, "His label positions and
-  //   lettering transcriptions leave the published archive too", whose own message says the
-  //   ruling reaches it "one step further than the question assumed". One command settles this
-  //   and the plan was written without running it.
-  //
-  // PREMISE 2, FALSE: "161 of the archive's own names". They are not the archive's. Each anchor
-  //   carries one of CHRISTOPHER TOLKIEN'S label positions together with a transcription of his
-  //   lettering -- e4137b9's reason: "positions plus transcriptions are a reconstruction of his
-  //   naming layer whatever they are stored as".
-  //
-  // PREMISE 3, FALSE: that the 29 July ruling left his lettering untouched. The owner ruled the
-  //   boundary explicitly on 4 August -- "only his linework -- his lettering stays withdrawn."
-  //   The archive may publish its own MEASUREMENTS of his lines (site/cl/*.svg, eight sheets,
-  //   published by his separate ruling of 1 August). His LETTERING is not measurement, and stays
-  //   withdrawn.
-  //
-  // WHAT IS TRUE AND WORTH KEEPING: loadHisNames() IS unreachable, because the artwork ruling
-  // made loadTraced() return early on `const b=document.getElementById('tT'); if(!b) return;`.
-  // That is not a bug to repair -- it is the ruling taking effect, and the labels are gone
-  // BECAUSE THEY ARE MEANT TO BE GONE. And the scoping diagnosis was right: a one-line call
-  // throws ReferenceError and takes loadRealms() and goHash() down with it, which is how the
-  // one session that tried it lost all five deep-link forms. Correct diagnosis, forbidden cure.
+  // HIS LABEL POSITIONS: THE RULING CHANGED ON 16 Aug 2026 AND THIS WARNING IS SPENT.
+  // arda_his_anchors.json is PUBLISHED again on the owner's standing authorization, and his
+  // own two-part test was applied (useful; no better alternative). The long warning that
+  // stood here refused a plan on three premises; two were about PERMISSION and are now
+  // lifted. THE THIRD STANDS AND IS NOT A PERMISSION QUESTION: the 161 anchors are
+  // CHRISTOPHER TOLKIEN'S label positions and transcriptions, not the archive's own names,
+  // and anything that shows them must say so.
+  // AND THE PLAN IS NOT EXECUTABLE ANYWAY, FOR A REASON THE WARNING DID NOT GIVE:
+  // loadHisNames() NO LONGER EXISTS. The traced loader was removed, not merely gated, so
+  // there is nothing to hoist. Showing his labels is now a NEW build against the restored
+  // dataset, and it wants its own commit and its own test of all five deep-link forms --
+  // one session already lost them to a one-line call here.
   wire(); apply('all'); loadRoads(); loadChrono(); loadUndrawn(); loadTraced(); loadBaynes();
   loadRealms(); goHash();
 }).catch(()=>{

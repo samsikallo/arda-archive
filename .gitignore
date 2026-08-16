@@ -54,15 +54,21 @@ __pycache__/
 # because the archive still measures its own map against his geometry; it is not published.
 arda_traced.svg
 
-# THE SAME RULING, ONE STEP FURTHER OUT. arda_his_anchors.json is 161 of Christopher
-# Tolkien's label POSITIONS measured off his plates, each tagged hand="Christopher Tolkien"
-# and each carrying a `reads` field that TRANSCRIBES WHAT HIS LETTERING SAYS. The archive
-# said "his lettering is not reproduced"; this reproduced it in data rather than in type,
-# and positions plus transcriptions are a reconstruction of his naming layer whatever they
-# are stored as. map.html stopped fetching it when the traced loader was deleted, so it was
-# published and serving nothing. It stays in the workshop, with the vectors, for the same
-# reason: the archive measures its own map against his and does not republish his.
-arda_his_anchors.json
+# arda_his_anchors.json IS PUBLISHED AGAIN, 16 Aug 2026, ON THE OWNER'S STANDING
+# AUTHORIZATION: "if in the previous declutter you removed anything based on being
+# unpublishable, restore them and publish them (but only if they are really useful and we
+# don't have better alternatives!)". Both halves of his test were applied:
+#   USEFUL?              161 anchors carrying Christopher Tolkien's own label POSITIONS,
+#                        measured off his plates. His backlog names the drawn sheets'
+#                        placing as wrong; this is the measurement that fixes it.
+#   BETTER ALTERNATIVE?  None. Nothing else in the archive records where HIS labels sit.
+# The withdrawal reasoning it replaces is kept in git and in CLAUDE.md; it was correct
+# under the licence rule that stood until he lifted it, and it is not deleted, only spent.
+# arda_traced.svg above STAYS OUT, and by the same test: it is 9.05 MB and is merely the
+# ASSEMBLY of the eight sheets in site/cl/ that are already published. We have the better
+# alternative, so his clause excludes it.
+# (The withdrawal block was written TWICE. Lifting the first changed nothing, because
+#  git was still matching the second -- `git check-ignore -v` named the line in one run.)
 
 # THE TWO UNSTRIPPED CENTRELINE SHEETS, retired from publication 4 August 2026 on the owner's
 # ruling -- his words, "yes, the sheets carry linework only." They carried 2,769 and 12,443
