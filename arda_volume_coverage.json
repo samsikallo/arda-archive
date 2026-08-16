@@ -2,30 +2,31 @@
  "what": "Per-volume USE, not per-volume reading. A volume no published claim rests on is one the archive holds and has never drawn on.",
  "why_not_read": "nothing in this archive distinguishes a volume that has been read from one merely extracted, and a per-volume 'read' flag would be an unevidenced claim about 190 books. USE is measurable; reading is not.",
  "signals": {
-  "bound": "a machine verified a published quotation against this text (arda_attributions) — the stronger signal",
+  "bound": "a machine verified a published quotation against this text (arda_attributions, both the `b` and `bb` binding forms) — the stronger signal",
   "cited": "a human named the volume in a cite field — no machine checked it"
  },
+ "not_classified": "this record does NOT say which volumes are reference works and which are narrative. No dataset here classifies a volume by kind, so any such split would be a guess from filenames rather than a measurement.",
  "n_volumes": 209,
- "n_used": 31,
- "n_empty": 22,
- "n_unused": 156,
+ "n_used": 37,
+ "n_empty": 20,
+ "n_unused": 152,
  "volumes": [
   {
    "file": "t1_10_morgoths_ring.txt",
    "bytes": 1198608,
-   "bound": 30,
+   "bound": 52,
    "cited": 542
   },
   {
    "file": "t1_11_the_war_of_the_jewels.txt",
    "bytes": 1187682,
-   "bound": 13,
+   "bound": 20,
    "cited": 18
   },
   {
    "file": "t1_12_the_peoples_of_middle_earth.txt",
    "bytes": 1203316,
-   "bound": 5,
+   "bound": 15,
    "cited": 21
   },
   {
@@ -49,13 +50,13 @@
   {
    "file": "t1_3_the_lays_of_beleriand.txt",
    "bytes": 822359,
-   "bound": 3,
+   "bound": 4,
    "cited": 371
   },
   {
    "file": "t1_4_the_shaping_of_middle_earth.txt",
    "bytes": 805031,
-   "bound": 7,
+   "bound": 8,
    "cited": 0
   },
   {
@@ -67,13 +68,13 @@
   {
    "file": "t1_6_the_return_of_the_shadow.txt",
    "bytes": 1250766,
-   "bound": 5,
+   "bound": 6,
    "cited": 448
   },
   {
    "file": "t1_7_the_treason_of_isengard.txt",
    "bytes": 1239795,
-   "bound": 5,
+   "bound": 7,
    "cited": 545
   },
   {
@@ -85,7 +86,7 @@
   {
    "file": "t1_9_sauron_defeated.txt",
    "bytes": 1146754,
-   "bound": 5,
+   "bound": 7,
    "cited": 23
   },
   {
@@ -97,7 +98,7 @@
   {
    "file": "t1_a_the_silmarillion.txt",
    "bytes": 938372,
-   "bound": 59,
+   "bound": 145,
    "cited": 1255
   },
   {
@@ -121,7 +122,7 @@
   {
    "file": "t1_c_the_lord_of_the_rings.txt",
    "bytes": 3210307,
-   "bound": 49,
+   "bound": 272,
    "cited": 4650
   },
   {
@@ -133,7 +134,7 @@
   {
    "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
    "bytes": 1205529,
-   "bound": 15,
+   "bound": 56,
    "cited": 1554
   },
   {
@@ -145,7 +146,7 @@
   {
    "file": "t1_f_the_children_of_hurin.txt",
    "bytes": 416379,
-   "bound": 13,
+   "bound": 15,
    "cited": 0
   },
   {
@@ -181,7 +182,7 @@
   {
    "file": "t1_the_adventures_of_tom_bombadil_and_other_verses_from.txt",
    "bytes": 268550,
-   "bound": 5,
+   "bound": 7,
    "cited": 0
   },
   {
@@ -235,7 +236,7 @@
   {
    "file": "t2_i_the_nature_of_middle_earth.txt",
    "bytes": 947938,
-   "bound": 0,
+   "bound": 2,
    "cited": 592
   },
   {
@@ -397,7 +398,7 @@
   {
    "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
    "bytes": 2551141,
-   "bound": 0,
+   "bound": 5,
    "cited": 0
   },
   {
@@ -565,7 +566,7 @@
   {
    "file": "t3_eldamo_qq_quen_eng_doc.txt",
    "bytes": 675104,
-   "bound": 0,
+   "bound": 1,
    "cited": 0
   },
   {
@@ -595,7 +596,7 @@
   {
    "file": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt",
    "bytes": 625417,
-   "bound": 0,
+   "bound": 13,
    "cited": 0
   },
   {
@@ -619,13 +620,13 @@
   {
    "file": "t3_giraudeau_sindarin_corpus_from_pe17.txt",
    "bytes": 154102,
-   "bound": 0,
+   "bound": 7,
    "cited": 0
   },
   {
    "file": "t3_kloczko_high_elvish_for_beginners_notes_by_giraudeau.txt",
    "bytes": 80321,
-   "bound": 0,
+   "bound": 1,
    "cited": 0
   },
   {
@@ -1117,7 +1118,7 @@
   {
    "file": "t3_the_complete_guide_to_middle_earth.txt",
    "bytes": 1106872,
-   "bound": 0,
+   "bound": 1,
    "cited": 0
   },
   {
@@ -1248,7 +1249,7 @@
   },
   {
    "file": "t4_the_fantasy_art_of_john_howe_the_fantasy_art_of_john.txt",
-   "bytes": 0,
+   "bytes": 763,
    "bound": 0,
    "cited": 0
   },
@@ -1260,7 +1261,7 @@
   },
   {
    "file": "t4_the_maps_of_tolkiens_middle_earth_brian_sibley_john_.txt",
-   "bytes": 0,
+   "bytes": 151753,
    "bound": 0,
    "cited": 0
   }

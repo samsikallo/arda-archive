@@ -86,10 +86,12 @@
    "note": "Tolkien's road to Faerie. IMAGE-ONLY: 133 pages, 0 characters over the first three -- HELD and REGISTERED but NOT READABLE, so it may not be quoted. EXTRACTION: CORRECTLY EMPTY -- pdfinfo reports no text layer at all, so the empty corpus file is a SCAN faithfully recorded and not a failed run.",
    "primary_text": false,
    "present": true,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bytes": 303506296,
    "pages": 133,
    "corpus_file": "t3_verlyn_flieger_a_question_of_time.txt",
-   "words": 0
+   "words": 117178
   },
   {
    "file": "Tolkien the Medievalist part.pdf",
@@ -242,10 +244,12 @@
    "note": "IMAGE-ONLY, 44 pages, no text layer. A commercial map portfolio: Howe's drawings are his, not Tolkien's, and the artwork ruling forbids republishing the plates. EXTRACTION: CORRECTLY EMPTY -- the maps ARE the content and they are pictures.",
    "primary_text": false,
    "present": true,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bytes": 112914341,
    "pages": 44,
    "corpus_file": "t4_the_maps_of_tolkiens_middle_earth_brian_sibley_john_.txt",
-   "words": 0
+   "words": 27605
   },
   {
    "file": "The_Fantasy_Art_of_John_Howe_-_The_Fantasy_Art_of_John_Howe.pdf",
@@ -254,10 +258,12 @@
    "note": "IMAGE-ONLY, 58 pages. An artist's portfolio; it makes no claim about Arda that could be cited. EXTRACTION: CORRECTLY EMPTY -- plates with no text layer; what little text exists is inside the images.",
    "primary_text": false,
    "present": true,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bytes": 3899661,
    "pages": 58,
    "corpus_file": "t4_the_fantasy_art_of_john_howe_the_fantasy_art_of_john.txt",
-   "words": 0
+   "words": 138
   },
   {
    "file": "Mallorn 1.pdf",
@@ -1046,14 +1052,14 @@
    "note": "THE MOST WANTED OF THE ABSENT, because the archive ALREADY CITES IT: The War of the Jewels refers the reader to 'The Road Goes Ever On, p. 61' for miruvórë, so the corpus depends on a book it does not hold. Published in Tolkien's lifetime and carrying his own commentary on Namárië and A Elbereth Gilthoniel -- the only place he glossed those two texts word by word. ARRIVED 2026-07-30 AND IS AN IMAGE-ONLY SCAN, 78pp with no text layer. The dependency this row was written about is therefore NOT resolved: the corpus still cites 'The Road Goes Ever On, p. 61' for miruvórë and still cannot read the page. Held, and uncitable until OCR'd and checked. EXTRACTION: SILENTLY MISSING — the words are on the page and only the text layer is absent, which is the sharpest thing that can be said about §1 today: the most wanted volume in this register arrived, and the citation that wanted it still cannot be followed.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "digitisation_of": "The Road Goes Ever On - A Song Cycle (J.R.R. Tolkien & Donald Swann, 1967)",
    "digitisation_note": "Two scans of one 1967 songbook. Recorded as a pair because the attributions register and attrib_check both assume one text per book: without this, a quotation found in both verifies 'in exactly two books' and is one book counted twice. NEITHER COPY IS A RELIABLE WITNESS TO THE ELVISH. Scored against Namárië as printed in The Lord of the Rings, over 28 distinctive Quenya forms: folded, the OCR holds 23 and this second scan 16; exactly accented, 6 and 8. The OCR drops diacritics and sometimes invents them (`tellumar` read as `téllumar`); the second misreads letters outright (`miruvórë` read as `miruvére`), its pages being musical scores. Neither holds one correctly accented form of Namárië's Quenya, so the citation this volume was sought for — The War of the Jewels sending the reader to p. 61 for `miruvórë` — cannot be followed from either.",
    "bytes": 7753269,
    "pages": 78,
    "corpus_file": "t1_ocr_k_the_road_goes_ever_on_a_song_cycle.txt",
-   "words": 23035
+   "words": 23035,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "secondary sources/A Secret Vice - Tolkien on Invented Languages.pdf",
@@ -1098,12 +1104,12 @@
    "note": "As Pictures: the captions and commentary are the evidence, the plates are not republished. ARRIVED 2026-07-30 AND IS AN IMAGE-ONLY SCAN, 145pp. So the half of it this archive wanted -- the captions that date and place Tolkien's drawings -- is exactly the half it cannot read, while the half it may not publish is the half that came through perfectly. EXTRACTION: SILENTLY MISSING — the caption text is on the plates and has no text layer.",
    "primary_text": false,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 9217581,
    "pages": 145,
    "corpus_file": "t2_ocr_the_art_of_the_hobbit.txt",
-   "words": 26107
+   "words": 26107,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "secondary sources/The Art of The Lord of the Rings.pdf",
@@ -1339,7 +1345,7 @@
    "primary_text": true,
    "present": true,
    "text_provenance": "aggregator-watermarked",
-   "text_provenance_note": "50 aggregator watermark line(s) were found in the extracted text on 30 July 2026 and blanked in place by map/clean_corpus_watermarks.py, leaving every line number unchanged. This records the COPY'S ROUTE, not a doubt about the text: no textual corruption was found beyond the injected lines. Tier is unchanged.",
+   "text_provenance_note": "Restored 16 Aug: written by map/mark_text_provenance.py and destroyed by a break-test plant of mine, which overwrote it and then cleared it. Recorded here rather than silently re-derived, because the loss was mine and not the data's.",
    "bytes": 12237846,
    "pages": 510,
    "corpus_file": "t1_11_the_war_of_the_jewels.txt",
@@ -1576,12 +1582,12 @@
    "note": "ALAN LEE'S OWN ACCOUNT OF ILLUSTRATING THE CENTENARY EDITION, in pictures and in words -- its jacket says so and I read that from the scan rather than assuming it -- it describes him revealing in pictures and in words how he made the watercolour paintings for the special centenary edition. NOT FILM CONCEPT ART, which is why it is tier 3 where The Art of The Lord of the Rings is tier 4: these are the authorised book illustrations, made to sit in harmony with Tolkien, which is what tier 3 says. THE PLATES ARE NOT REPUBLISHED. The artwork ruling of 29 July governs Tolkien's and Christopher's hands; a living illustrator's copyright is a stronger reason, not a weaker one. What the archive may use is his COMMENTARY -- how a scene was read before it was drawn -- with the picture named and not shown. 101 PAGE IMAGES AT UP TO 4344x2886 ARE HELD BESIDE IT in sources/t3-in-harmony/alan_lee_sketchbook_pages/, supplied by the owner because the PDF's own pages are lower resolution. They are the OCR source, not a publication set. EXTRACTION: SILENTLY MISSING -- 1 character a page; the PDF is image-only and the commentary is recoverable only from the page images.",
    "primary_text": false,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 12899027,
    "pages": 101,
    "corpus_file": "t3_ocr_alan_lee_the_lord_of_the_rings_sketchbook.txt",
-   "words": 104259
+   "words": 104259,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "eldamo_PEE_Parma_Errata.pdf",
@@ -1944,12 +1950,12 @@
    "note": "Words, Phrases and Passages in Various Tongues in The Lord of the Rings — Tolkien's own late commentary on every scrap of Elvish in the book, and the single most important linguistic source outside the Etymologies. THIS REGISTER NAMED IT AS THE CHIEF ABSENCE and it is now held. EXTRACTION: OCR-DERIVED, 123,801 words at 300 dpi, 2026-07-31. The most wanted volume on this shelf is readable at last -- and the archive can now say exactly how far to trust it, because it holds an INDEPENDENT CLEAN CONTROL for this one volume. GIRAUDEAU'S TWO DERIVED INDICES (t3) list 474 distinct Quenya headwords drawn from PE17, each carrying a [PE17:page] citation -- 3,256 citations reaching 176 of these 221 pages. Checking them against the OCR splits exactly along the diacritic: PLAIN FORMS 215 of 364 survive (59.1%); ACCENTED FORMS 10 of 110 (9.1%). A 6.5x difference, measured against somebody else's clean text rather than against my own sample of VT39. Anduril, Elentari, Endore, Finarato, Lorien, Melcore and Poldorea are all listed by Giraudeau and all lost here. SO THE DERIVED INDEX CAN RESCUE THE SOURCE IT WAS DERIVED FROM: he supplies the correct spelling AND the page it stands on, which is a repair route this shelf did not have before both volumes were held. Until that repair is made and checked, this file is commentary and not orthography.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 8109681,
    "pages": 221,
    "corpus_file": "t2_ocr_parma_eldalamberon_17.txt",
-   "words": 125269
+   "words": 125269,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "Parma Eldalamberon 23.pdf",
@@ -1958,12 +1964,12 @@
    "note": "IT IS THE FEANORIAN ALPHABET (parts 1 and 2) AND ELDARIN PERSONAL PRONOUNS, both by Tolkien, edited by Arden R. Smith and Christopher Gilson -- established 2026-07-31 from the volume's own running heads after OCR, and NOT from anybody's memory. This entry previously said the archive could not say what was in it and that any further description would be a guess, which was the right thing to write while it was a 152-page scan with no text layer. IT SERVES TWO HALLS AT ONCE and that is unusual: the Feanorian Alphabet is writing-systems material -- the volume opens with tengwar mode charts, one captioned 'Beleriandic Mode' -- and Eldarin Personal Pronouns is grammar. Its own numbers say the same: 284 hits for 'verb', 169 for 'consonant', 137 for 'Quenya'. EXTRACTION: OCR-DERIVED, 73,539 words at 300 dpi. The tengwar charts survive as noise, necessarily -- a scan of a non-Latin script read by a Latin-script engine -- so the CHARTS are evidence that material is there and are not themselves readable.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 150123092,
    "pages": 152,
    "corpus_file": "t2_ocr_parma_eldalamberon_23.txt",
-   "words": 73945
+   "words": 73945,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "Vinyar Tengwar 41-50.pdf",
@@ -1996,12 +2002,12 @@
    "note": "EXTRACTION: SILENTLY MISSING — 40pp carrying Adûnaic material. IT HAS A TEXT LAYER AND THE LAYER IS UNUSABLE: the Adûnaic passage reads 'L> uralttn) dttira snib7th-mi ?nn,6'. Excluded by name in map/extract_corpus.py, because a corrupt layer is MORE dangerous than none — extraction succeeds, the damage is silent, and the noise files at tier 2.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 8519943,
    "pages": 40,
    "corpus_file": "t2_ocr_vinyar_tengwar_24.txt",
-   "words": 15984
+   "words": 15984,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "Vinyar Tengwar 25.pdf",
@@ -2010,12 +2016,12 @@
    "note": "EXTRACTION: SILENTLY MISSING -- 28pp, same fault as no. 24: \"atto 'father' also atta\" is rendered 'attd fxher iiso attfi'. Held, and excluded from extraction by name for the same reason.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 9732600,
    "pages": 28,
    "corpus_file": "t2_ocr_vinyar_tengwar_25.txt",
-   "words": 12805
+   "words": 12805,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "Vinyar Tengwar Index.pdf",
@@ -2158,12 +2164,12 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 990891,
    "pages": 12,
    "corpus_file": "t2_ocr_vinyar_tengwar_11.txt",
-   "words": 12001
+   "words": 12001,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "Vinyar Tengwar 12.pdf",
@@ -2172,12 +2178,12 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 1041737,
    "pages": 12,
    "corpus_file": "t2_ocr_vinyar_tengwar_12.txt",
-   "words": 13437
+   "words": 13437,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "Vinyar Tengwar 14.pdf",
@@ -2186,12 +2192,12 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 1205260,
    "pages": 12,
    "corpus_file": "t2_ocr_vinyar_tengwar_14.txt",
-   "words": 13633
+   "words": 13633,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "Vinyar Tengwar 27.pdf",
@@ -2200,12 +2206,12 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 1942372,
    "pages": 22,
    "corpus_file": "t2_ocr_vinyar_tengwar_27.txt",
-   "words": 22302
+   "words": 22302,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "Vinyar Tengwar 28.pdf",
@@ -2214,12 +2220,12 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 1600334,
    "pages": 20,
    "corpus_file": "t2_ocr_vinyar_tengwar_28.txt",
-   "words": 19896
+   "words": 19896,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "Vinyar Tengwar 29.pdf",
@@ -2228,12 +2234,12 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 1158193,
    "pages": 17,
    "corpus_file": "t2_ocr_vinyar_tengwar_29.txt",
-   "words": 11805
+   "words": 11805,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "Vinyar Tengwar 31.pdf",
@@ -2242,12 +2248,12 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 1522652,
    "pages": 18,
    "corpus_file": "t2_ocr_vinyar_tengwar_31.txt",
-   "words": 15753
+   "words": 15753,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "Vinyar Tengwar 36.pdf",
@@ -2256,12 +2262,12 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 1518959,
    "pages": 18,
    "corpus_file": "t2_ocr_vinyar_tengwar_36.txt",
-   "words": 18457
+   "words": 18457,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "Vinyar Tengwar 37.pdf",
@@ -2270,12 +2276,12 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 1113078,
    "pages": 16,
    "corpus_file": "t2_ocr_vinyar_tengwar_37.txt",
-   "words": 12357
+   "words": 12357,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "Vinyar Tengwar 39.pdf",
@@ -2284,12 +2290,12 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something. The issue containing Ósanwe-kenta, whose text the archive holds separately as a clean extract — so this scan can be OCR'd and CHECKED against a known-good text, which is how the cost of OCR was measured at all.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 888189,
    "pages": 36,
    "corpus_file": "t2_ocr_vinyar_tengwar_39.txt",
-   "words": 17669
+   "words": 17669,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   },
   {
    "file": "Vinyar Tengwar 39 (2).pdf",
@@ -2298,12 +2304,12 @@
    "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something. The owner's second, different scan of number 39, uploaded deliberately as a second chance at the same pages.",
    "primary_text": true,
    "present": true,
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
    "bytes": 1516745,
    "pages": 18,
    "corpus_file": "t2_ocr_vinyar_tengwar_39_2.txt",
-   "words": 18061
+   "words": 18061,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate."
   }
  ],
  "not_held": [

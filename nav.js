@@ -286,7 +286,7 @@ FB.addEventListener("click",()=>{
  +'<div class="fbbtns"><button id="fbgh">open as a GitHub issue</button><button id="fbmail">send by e-mail</button><button id="fbclose">close</button></div>'
  +'<div class="fbnote"><b>Privacy, plainly:</b> this site stores nothing you type \u2014 there is no server behind it. Your text is handed to the channel you choose: a <b>GitHub issue</b> is public and governed by GitHub\u2019s terms; <b>e-mail</b> reveals your address to the site\u2019s maintainer, who uses it only to read your feedback. Both are optional; name and e-mail are never required. Please include no sensitive personal data.</div>';
  document.body.appendChild(d);
- if(window.ardaLayers){window.ardaLayers.register("feedback",d,FB);window.ardaLayers.open("feedback");}
+ if(window.ardaLayers){window.ardaLayers.register("feedback",d,FB,{takeFocus:true});window.ardaLayers.open("feedback");}
  document.getElementById("fbp").value=location.pathname.split("/").pop()+location.hash;
  const gather=()=>{const t=document.getElementById("fbt").value,p=document.getElementById("fbp").value,
   x=document.getElementById("fbx").value.trim(),n=document.getElementById("fbn").value.trim();
