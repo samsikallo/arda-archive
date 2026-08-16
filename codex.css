@@ -120,3 +120,18 @@
   #cx-vols a:hover,#cx-vols a:focus-visible{transform:none}
 }
 @media print{ #codex-shell{display:none} }                        /* content and citations only */
+/* ---- PHASE 4: the archetypes that styled nothing ------------------------------------------
+   593 of 621 routes are `folio`; folio, contents and plates had NO rule, and data-spread (on 522
+   routes) was read by nothing. Reasoning, and why no page layout is touched: docs/codex-ia.md. */
+:root[data-archetype="folio"] #cx-run{border-bottom:1px solid var(--a-codex-rule,#b0a58e);
+  letter-spacing:.06em}
+:root[data-archetype="folio"] #cx-crumb{padding-bottom:2px}
+@media (min-width:900px){
+  :root[data-spread="spread"] :where(body){padding-inline:clamp(0px,2.5vw,34px)}
+}
+:root[data-archetype="contents"] #cx-vols{opacity:1}
+:root[data-archetype="contents"] #cx-run{border-bottom-width:2px}
+:root[data-archetype="plates"] #cx-vols{opacity:.55}
+:root[data-archetype="plates"] #cx-vols:hover,
+:root[data-archetype="plates"] #cx-vols:focus-within{opacity:1}
+:root[data-archetype="plates"] #cx-crumb{padding-bottom:4px}

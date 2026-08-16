@@ -17,7 +17,9 @@
    "bytes": 1258267,
    "pages": 164,
    "corpus_file": "t3_tolkien_studies_9.txt",
-   "words": 66104
+   "words": 66104,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Tolkien Studies 10.pdf",
@@ -29,7 +31,9 @@
    "bytes": 1748803,
    "pages": 310,
    "corpus_file": "t3_tolkien_studies_10.txt",
-   "words": 125274
+   "words": 125274,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Tolkien's Legendarium.pdf",
@@ -41,7 +45,9 @@
    "bytes": 14144700,
    "pages": 291,
    "corpus_file": "t3_tolkien_s_legendarium.txt",
-   "words": 122541
+   "words": 122541,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Perilous_Realms_-_Marjorie_Burns.pdf",
@@ -53,7 +59,9 @@
    "bytes": 910227,
    "pages": 237,
    "corpus_file": "t3_perilous_realms_marjorie_burns.txt",
-   "words": 84533
+   "words": 84533,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Patrick Curry Defending Middle-earth.pdf",
@@ -65,7 +73,9 @@
    "bytes": 1000107,
    "pages": 171,
    "corpus_file": "t3_patrick_curry_defending_middle_earth.txt",
-   "words": 62138
+   "words": 62138,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Patrick Curry Ecology in Middle-earth.pdf",
@@ -77,7 +87,9 @@
    "bytes": 341383,
    "pages": 5,
    "corpus_file": "t3_patrick_curry_ecology_in_middle_earth.txt",
-   "words": 3056
+   "words": 3056,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Verlyn Flieger A Question of Time.pdf",
@@ -88,10 +100,14 @@
    "present": true,
    "text_provenance": "ocr-derived",
    "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bytes": 303506296,
    "pages": 133,
    "corpus_file": "t3_verlyn_flieger_a_question_of_time.txt",
-   "words": 117178
+   "words": 117178,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Tolkien the Medievalist part.pdf",
@@ -103,7 +119,9 @@
    "bytes": 389273,
    "pages": 31,
    "corpus_file": "t3_tolkien_the_medievalist_part.txt",
-   "words": 10689
+   "words": 10689,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "The Ring Goes Ever On.pdf",
@@ -115,7 +133,9 @@
    "bytes": 70919361,
    "pages": 858,
    "corpus_file": "t3_the_ring_goes_ever_on.txt",
-   "words": 562050
+   "words": 562050,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "LOTR (1954-2004).pdf",
@@ -127,7 +147,9 @@
    "bytes": 1740709,
    "pages": 387,
    "corpus_file": "t3_lotr_1954_2004.txt",
-   "words": 148929
+   "words": 148929,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Barbara Strachey Journeys of Frodo.pdf",
@@ -139,7 +161,9 @@
    "bytes": 32238901,
    "pages": 112,
    "corpus_file": "t3_barbara_strachey_journeys_of_frodo.txt",
-   "words": 14874
+   "words": 14874,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "A Sindarin and Noldorin dictionary.pdf",
@@ -151,7 +175,9 @@
    "bytes": 1278640,
    "pages": 87,
    "corpus_file": "t3_a_sindarin_and_noldorin_dictionary.txt",
-   "words": 44552
+   "words": 44552,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "tengwar-numbers.pdf",
@@ -163,7 +189,9 @@
    "bytes": 59075,
    "pages": 1,
    "corpus_file": "t3_tengwar_numbers.txt",
-   "words": 371
+   "words": 371,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Quenya; Quetin i lambë eldaiva - a Quenya-Course (Renk).pdf",
@@ -175,7 +203,9 @@
    "bytes": 1301404,
    "pages": 136,
    "corpus_file": "t3_quenya_quetin_i_lambe_eldaiva_a_quenya_course_renk.txt",
-   "words": 46897
+   "words": 46897,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Amanye Tenceli_ The Sarati.pdf",
@@ -187,7 +217,9 @@
    "bytes": 278982,
    "pages": 6,
    "corpus_file": "t3_amanye_tenceli_the_sarati.txt",
-   "words": 1407
+   "words": 1407,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Rúmilian Numerals.pdf",
@@ -199,7 +231,9 @@
    "bytes": 563577,
    "pages": 13,
    "corpus_file": "t3_rumilian_numerals.txt",
-   "words": 5947
+   "words": 5947,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Sarati Rúmilo Quenyava.pdf",
@@ -211,7 +245,9 @@
    "bytes": 174283,
    "pages": 2,
    "corpus_file": "t3_sarati_rumilo_quenyava.txt",
-   "words": 292
+   "words": 292,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Sarati - Wikipedia.pdf",
@@ -223,7 +259,9 @@
    "bytes": 296599,
    "pages": 4,
    "corpus_file": "t4_sarati_wikipedia.txt",
-   "words": 929
+   "words": 929,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Sarati alphabet.pdf",
@@ -235,7 +273,9 @@
    "bytes": 554036,
    "pages": 5,
    "corpus_file": "t4_sarati_alphabet.txt",
-   "words": 599
+   "words": 599,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "The_Road_to_Middle-Earth_-_Tom_Shippey.pdf",
@@ -247,7 +287,9 @@
    "bytes": 2817275,
    "pages": 485,
    "corpus_file": "t3_the_road_to_middle_earth_tom_shippey.txt",
-   "words": 167545
+   "words": 167545,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Picturing_Tolkien_-_Janice_M_Bogstad_and_Philip_E_Kaveny.pdf",
@@ -259,7 +301,9 @@
    "bytes": 1811877,
    "pages": 428,
    "corpus_file": "t3_picturing_tolkien_janice_m_bogstad_and_philip_e_kave.txt",
-   "words": 131480
+   "words": 131480,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "The Science of Middle-earth (Larsen review, Journal of Tolkien Research).pdf",
@@ -269,7 +313,9 @@
    "primary_text": true,
    "present": false,
    "corpus_file": "t3_the_science_of_middle_earth_larsen_review_journal_of.txt",
-   "words": 9564
+   "words": 9564,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "LettersChanges.pdf",
@@ -281,7 +327,9 @@
    "bytes": 582330,
    "pages": 13,
    "corpus_file": "t4_letterschanges.txt",
-   "words": 11146
+   "words": 11146,
+   "bound": 0,
+   "cited": 833
   },
   {
    "file": "The Maps of Tolkiens Middle-earth (Brian Sibley, John Howe).pdf",
@@ -292,10 +340,14 @@
    "present": true,
    "text_provenance": "ocr-derived",
    "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bytes": 112914341,
    "pages": 44,
    "corpus_file": "t4_the_maps_of_tolkiens_middle_earth_brian_sibley_john_.txt",
-   "words": 27605
+   "words": 27605,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "The_Fantasy_Art_of_John_Howe_-_The_Fantasy_Art_of_John_Howe.pdf",
@@ -306,10 +358,14 @@
    "present": true,
    "text_provenance": "ocr-derived",
    "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bytes": 3899661,
    "pages": 58,
    "corpus_file": "t4_the_fantasy_art_of_john_howe_the_fantasy_art_of_john.txt",
-   "words": 138
+   "words": 138,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 1.pdf",
@@ -321,7 +377,9 @@
    "bytes": 2111720,
    "pages": 22,
    "corpus_file": "t3_mallorn_1.txt",
-   "words": 10405
+   "words": 10405,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 2.pdf",
@@ -333,7 +391,9 @@
    "bytes": 1924662,
    "pages": 19,
    "corpus_file": "t3_mallorn_2.txt",
-   "words": 11076
+   "words": 11076,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 3.pdf",
@@ -345,7 +405,9 @@
    "bytes": 3447370,
    "pages": 24,
    "corpus_file": "t3_mallorn_3.txt",
-   "words": 34102
+   "words": 34102,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 4.pdf",
@@ -357,7 +419,9 @@
    "bytes": 5413981,
    "pages": 36,
    "corpus_file": "t3_mallorn_4.txt",
-   "words": 17617
+   "words": 17617,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 5.pdf",
@@ -369,7 +433,9 @@
    "bytes": 3943868,
    "pages": 31,
    "corpus_file": "t3_mallorn_5.txt",
-   "words": 13482
+   "words": 13482,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 6.pdf",
@@ -381,7 +447,9 @@
    "bytes": 7635683,
    "pages": 48,
    "corpus_file": "t3_mallorn_6.txt",
-   "words": 16962
+   "words": 16962,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 7.pdf",
@@ -393,7 +461,9 @@
    "bytes": 4722008,
    "pages": 36,
    "corpus_file": "t3_mallorn_7.txt",
-   "words": 15758
+   "words": 15758,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 8.pdf",
@@ -405,7 +475,9 @@
    "bytes": 5503158,
    "pages": 52,
    "corpus_file": "t3_mallorn_8.txt",
-   "words": 18251
+   "words": 18251,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 9.pdf",
@@ -417,7 +489,9 @@
    "bytes": 5245805,
    "pages": 37,
    "corpus_file": "t3_mallorn_9.txt",
-   "words": 13595
+   "words": 13595,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 10.pdf",
@@ -429,7 +503,9 @@
    "bytes": 5330572,
    "pages": 46,
    "corpus_file": "t3_mallorn_10.txt",
-   "words": 12702
+   "words": 12702,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 11.pdf",
@@ -441,7 +517,9 @@
    "bytes": 8059003,
    "pages": 46,
    "corpus_file": "t3_mallorn_11.txt",
-   "words": 18533
+   "words": 18533,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 12.pdf",
@@ -453,7 +531,9 @@
    "bytes": 6808702,
    "pages": 51,
    "corpus_file": "t3_mallorn_12.txt",
-   "words": 18737
+   "words": 18737,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 13.pdf",
@@ -465,7 +545,9 @@
    "bytes": 5531108,
    "pages": 34,
    "corpus_file": "t3_mallorn_13.txt",
-   "words": 13877
+   "words": 13877,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 14.pdf",
@@ -477,7 +559,9 @@
    "bytes": 5838956,
    "pages": 34,
    "corpus_file": "t3_mallorn_14.txt",
-   "words": 12372
+   "words": 12372,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 15.pdf",
@@ -489,7 +573,9 @@
    "bytes": 3934786,
    "pages": 33,
    "corpus_file": "t3_mallorn_15.txt",
-   "words": 14541
+   "words": 14541,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 16.pdf",
@@ -501,7 +587,9 @@
    "bytes": 7977216,
    "pages": 35,
    "corpus_file": "t3_mallorn_16.txt",
-   "words": 14979
+   "words": 14979,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 17.pdf",
@@ -513,7 +601,9 @@
    "bytes": 6537471,
    "pages": 36,
    "corpus_file": "t3_mallorn_17.txt",
-   "words": 28857
+   "words": 28857,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 18.pdf",
@@ -525,7 +615,9 @@
    "bytes": 5901652,
    "pages": 36,
    "corpus_file": "t3_mallorn_18.txt",
-   "words": 19616
+   "words": 19616,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 19.pdf",
@@ -537,7 +629,9 @@
    "bytes": 6814043,
    "pages": 37,
    "corpus_file": "t3_mallorn_19.txt",
-   "words": 22320
+   "words": 22320,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 20.pdf",
@@ -549,7 +643,9 @@
    "bytes": 4885509,
    "pages": 31,
    "corpus_file": "t3_mallorn_20.txt",
-   "words": 16957
+   "words": 16957,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 21.pdf",
@@ -561,7 +657,9 @@
    "bytes": 6194607,
    "pages": 39,
    "corpus_file": "t3_mallorn_21.txt",
-   "words": 25276
+   "words": 25276,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 22.pdf",
@@ -573,7 +671,9 @@
    "bytes": 6876914,
    "pages": 45,
    "corpus_file": "t3_mallorn_22.txt",
-   "words": 27837
+   "words": 27837,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 23.pdf",
@@ -585,7 +685,9 @@
    "bytes": 8524024,
    "pages": 40,
    "corpus_file": "t3_mallorn_23.txt",
-   "words": 30429
+   "words": 30429,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 24.pdf",
@@ -597,7 +699,9 @@
    "bytes": 6887543,
    "pages": 40,
    "corpus_file": "t3_mallorn_24.txt",
-   "words": 35771
+   "words": 35771,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 25.pdf",
@@ -609,7 +713,9 @@
    "bytes": 5480977,
    "pages": 36,
    "corpus_file": "t3_mallorn_25.txt",
-   "words": 39670
+   "words": 39670,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 26.pdf",
@@ -621,7 +727,9 @@
    "bytes": 8846160,
    "pages": 52,
    "corpus_file": "t3_mallorn_26.txt",
-   "words": 57712
+   "words": 57712,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 27.pdf",
@@ -633,7 +741,9 @@
    "bytes": 6335107,
    "pages": 44,
    "corpus_file": "t3_mallorn_27.txt",
-   "words": 44799
+   "words": 44799,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 28.pdf",
@@ -645,7 +755,9 @@
    "bytes": 6828361,
    "pages": 52,
    "corpus_file": "t3_mallorn_28.txt",
-   "words": 39296
+   "words": 39296,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 29.pdf",
@@ -657,7 +769,9 @@
    "bytes": 9206797,
    "pages": 60,
    "corpus_file": "t3_mallorn_29.txt",
-   "words": 38611
+   "words": 38611,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 30.pdf",
@@ -669,7 +783,9 @@
    "bytes": 5792198,
    "pages": 56,
    "corpus_file": "t3_mallorn_30.txt",
-   "words": 35269
+   "words": 35269,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 31.pdf",
@@ -681,7 +797,9 @@
    "bytes": 5882216,
    "pages": 59,
    "corpus_file": "t3_mallorn_31.txt",
-   "words": 36460
+   "words": 36460,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 32.pdf",
@@ -693,7 +811,9 @@
    "bytes": 3002209,
    "pages": 36,
    "corpus_file": "t3_mallorn_32.txt",
-   "words": 21234
+   "words": 21234,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 33 (Proceedings of the J.R.R. Tolkien Centenary Conference).pdf",
@@ -705,7 +825,9 @@
    "bytes": 31697813,
    "pages": 462,
    "corpus_file": "t3_mallorn_33_proceedings_of_the_j_r_r_tolkien_centenar.txt",
-   "words": 397349
+   "words": 397349,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 34.pdf",
@@ -717,7 +839,9 @@
    "bytes": 4414855,
    "pages": 44,
    "corpus_file": "t3_mallorn_34.txt",
-   "words": 30797
+   "words": 30797,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 35.pdf",
@@ -729,7 +853,9 @@
    "bytes": 5914872,
    "pages": 59,
    "corpus_file": "t3_mallorn_35.txt",
-   "words": 41806
+   "words": 41806,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 36.pdf",
@@ -741,7 +867,9 @@
    "bytes": 7982997,
    "pages": 64,
    "corpus_file": "t3_mallorn_36.txt",
-   "words": 42718
+   "words": 42718,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 37.pdf",
@@ -753,7 +881,9 @@
    "bytes": 4117934,
    "pages": 42,
    "corpus_file": "t3_mallorn_37.txt",
-   "words": 30598
+   "words": 30598,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 38.pdf",
@@ -765,7 +895,9 @@
    "bytes": 6593678,
    "pages": 42,
    "corpus_file": "t3_mallorn_38.txt",
-   "words": 39589
+   "words": 39589,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 39.pdf",
@@ -777,7 +909,9 @@
    "bytes": 5775505,
    "pages": 47,
    "corpus_file": "t3_mallorn_39.txt",
-   "words": 39982
+   "words": 39982,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 40.pdf",
@@ -789,7 +923,9 @@
    "bytes": 6532040,
    "pages": 55,
    "corpus_file": "t3_mallorn_40.txt",
-   "words": 61177
+   "words": 61177,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 41.pdf",
@@ -801,7 +937,9 @@
    "bytes": 5761218,
    "pages": 54,
    "corpus_file": "t3_mallorn_41.txt",
-   "words": 47586
+   "words": 47586,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 42.pdf",
@@ -813,7 +951,9 @@
    "bytes": 6571391,
    "pages": 62,
    "corpus_file": "t3_mallorn_42.txt",
-   "words": 59739
+   "words": 59739,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 43.pdf",
@@ -825,7 +965,9 @@
    "bytes": 7747664,
    "pages": 63,
    "corpus_file": "t3_mallorn_43.txt",
-   "words": 59806
+   "words": 59806,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 44.pdf",
@@ -837,7 +979,9 @@
    "bytes": 9863528,
    "pages": 64,
    "corpus_file": "t3_mallorn_44.txt",
-   "words": 55471
+   "words": 55471,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 45.pdf",
@@ -849,7 +993,9 @@
    "bytes": 1826537,
    "pages": 52,
    "corpus_file": "t3_mallorn_45.txt",
-   "words": 40680
+   "words": 40680,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 46.pdf",
@@ -861,7 +1007,9 @@
    "bytes": 8380323,
    "pages": 51,
    "corpus_file": "t3_mallorn_46.txt",
-   "words": 37382
+   "words": 37382,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 47.pdf",
@@ -873,7 +1021,9 @@
    "bytes": 4363661,
    "pages": 52,
    "corpus_file": "t3_mallorn_47.txt",
-   "words": 39767
+   "words": 39767,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 48.pdf",
@@ -885,7 +1035,9 @@
    "bytes": 2061210,
    "pages": 52,
    "corpus_file": "t3_mallorn_48.txt",
-   "words": 38008
+   "words": 38008,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 49.pdf",
@@ -897,7 +1049,9 @@
    "bytes": 3793694,
    "pages": 52,
    "corpus_file": "t3_mallorn_49.txt",
-   "words": 37919
+   "words": 37919,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 50.pdf",
@@ -909,7 +1063,9 @@
    "bytes": 2438006,
    "pages": 52,
    "corpus_file": "t3_mallorn_50.txt",
-   "words": 39089
+   "words": 39089,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 51.pdf",
@@ -921,7 +1077,9 @@
    "bytes": 2290996,
    "pages": 52,
    "corpus_file": "t3_mallorn_51.txt",
-   "words": 38802
+   "words": 38802,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 52.pdf",
@@ -933,7 +1091,9 @@
    "bytes": 3925511,
    "pages": 52,
    "corpus_file": "t3_mallorn_52.txt",
-   "words": 38996
+   "words": 38996,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 53.pdf",
@@ -945,7 +1105,9 @@
    "bytes": 2408978,
    "pages": 48,
    "corpus_file": "t3_mallorn_53.txt",
-   "words": 33759
+   "words": 33759,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 54.pdf",
@@ -957,7 +1119,9 @@
    "bytes": 1466781,
    "pages": 52,
    "corpus_file": "t3_mallorn_54.txt",
-   "words": 44818
+   "words": 44818,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 55.pdf",
@@ -969,7 +1133,9 @@
    "bytes": 4369278,
    "pages": 48,
    "corpus_file": "t3_mallorn_55.txt",
-   "words": 37399
+   "words": 37399,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 56.pdf",
@@ -981,7 +1147,9 @@
    "bytes": 4319151,
    "pages": 48,
    "corpus_file": "t3_mallorn_56.txt",
-   "words": 35925
+   "words": 35925,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 57.pdf",
@@ -993,7 +1161,9 @@
    "bytes": 4159301,
    "pages": 44,
    "corpus_file": "t3_mallorn_57.txt",
-   "words": 31301
+   "words": 31301,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 58-Updated.pdf",
@@ -1005,7 +1175,9 @@
    "bytes": 5856708,
    "pages": 46,
    "corpus_file": "t3_mallorn_58_updated.txt",
-   "words": 35097
+   "words": 35097,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 59.pdf",
@@ -1017,7 +1189,9 @@
    "bytes": 9529583,
    "pages": 68,
    "corpus_file": "t3_mallorn_59.txt",
-   "words": 60985
+   "words": 60985,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 60.pdf",
@@ -1029,7 +1203,9 @@
    "bytes": 1183201,
    "pages": 45,
    "corpus_file": "t3_mallorn_60.txt",
-   "words": 35186
+   "words": 35186,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 61 (Digital).pdf",
@@ -1041,7 +1217,9 @@
    "bytes": 15684156,
    "pages": 48,
    "corpus_file": "t3_mallorn_61_digital.txt",
-   "words": 37297
+   "words": 37297,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 62.pdf",
@@ -1053,7 +1231,9 @@
    "bytes": 14561127,
    "pages": 56,
    "corpus_file": "t3_mallorn_62.txt",
-   "words": 43915
+   "words": 43915,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 63 (Galley 1).pdf",
@@ -1065,7 +1245,9 @@
    "bytes": 109486,
    "pages": 3,
    "corpus_file": "t3_mallorn_63_galley_1.txt",
-   "words": 2945
+   "words": 2945,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 63 (Galley 2).pdf",
@@ -1077,7 +1259,9 @@
    "bytes": 13125924,
    "pages": 52,
    "corpus_file": "t3_mallorn_63_galley_2.txt",
-   "words": 41493
+   "words": 41493,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mallorn 64 (Corrected).pdf",
@@ -1089,7 +1273,9 @@
    "bytes": 14228250,
    "pages": 64,
    "corpus_file": "t3_mallorn_64_corrected.txt",
-   "words": 53371
+   "words": 53371,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "(K) The Road Goes Ever On - A Song Cycle.pdf",
@@ -1105,7 +1291,9 @@
    "bytes": 7753269,
    "pages": 78,
    "corpus_file": "t1_ocr_k_the_road_goes_ever_on_a_song_cycle.txt",
-   "words": 23035
+   "words": 23035,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "secondary sources/A Secret Vice - Tolkien on Invented Languages.pdf",
@@ -1117,7 +1305,9 @@
    "bytes": 3036289,
    "pages": 180,
    "corpus_file": "t1_a_secret_vice_tolkien_on_invented_languages.txt",
-   "words": 55249
+   "words": 55249,
+   "bound": 1,
+   "cited": 0
   },
   {
    "file": "secondary sources/The History of The Hobbit.pdf",
@@ -1129,7 +1319,9 @@
    "bytes": 57231760,
    "pages": 1333,
    "corpus_file": "t2_the_history_of_the_hobbit.txt",
-   "words": 444467
+   "words": 444467,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "secondary sources/Pictures by J.R.R. Tolkien.pdf",
@@ -1141,7 +1333,9 @@
    "bytes": 4359883,
    "pages": 100,
    "corpus_file": "t2_pictures_by_j_r_r_tolkien.txt",
-   "words": 7123
+   "words": 7123,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "secondary sources/The Art of The Hobbit.pdf",
@@ -1155,7 +1349,9 @@
    "bytes": 9217581,
    "pages": 145,
    "corpus_file": "t2_ocr_the_art_of_the_hobbit.txt",
-   "words": 26107
+   "words": 26107,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "secondary sources/The Art of The Lord of the Rings.pdf",
@@ -1166,10 +1362,14 @@
    "present": true,
    "text_provenance": "ocr-derived",
    "text_provenance_note": "Machine-read from a scan at 300 dpi on 30 July 2026, at the owner's ruling. THE ENGLISH IS LARGELY FAITHFUL AND THE ELVISH IS NOT: measured against a known-good text of Vinyar Tengwar 39, 37 of 51 distinct Elvish forms were lost or corrupted, almost all of them diacritic-bearing -- fea, hroa, Eruhini, and Feanor itself. This file may be quoted for commentary and may NEVER settle the spelling of an Elvish word.",
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bytes": 91740393,
    "pages": 118,
    "corpus_file": "t4_the_art_of_the_lord_of_the_rings.txt",
-   "words": 41538
+   "words": 41538,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "(A) The Silmarillion.pdf",
@@ -1183,7 +1383,9 @@
    "bytes": 17144394,
    "pages": 544,
    "corpus_file": "t1_a_the_silmarillion.txt",
-   "words": 167635
+   "words": 167635,
+   "bound": 145,
+   "cited": 1255
   },
   {
    "file": "(B) The Hobbit, or There and Back Again.pdf",
@@ -1195,7 +1397,9 @@
    "bytes": 5500570,
    "pages": 270,
    "corpus_file": "t1_b_the_hobbit_or_there_and_back_again.txt",
-   "words": 96701
+   "words": 96701,
+   "bound": 34,
+   "cited": 80
   },
   {
    "file": "(C) The Lord of the Rings.pdf",
@@ -1207,7 +1411,9 @@
    "bytes": 6549111,
    "pages": 1210,
    "corpus_file": "t1_c_the_lord_of_the_rings.txt",
-   "words": 563525
+   "words": 563525,
+   "bound": 272,
+   "cited": 4650
   },
   {
    "file": "(D) Unfinished Tales of Númenor and Middle-earth.pdf",
@@ -1219,7 +1425,9 @@
    "bytes": 3607801,
    "pages": 391,
    "corpus_file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
-   "words": 213907
+   "words": 213907,
+   "bound": 56,
+   "cited": 1554
   },
   {
    "file": "(E) Beren and Lúthien.pdf",
@@ -1231,7 +1439,9 @@
    "bytes": 9326291,
    "pages": 203,
    "corpus_file": "t1_e_beren_and_luthien.txt",
-   "words": 63832
+   "words": 63832,
+   "bound": 7,
+   "cited": 0
   },
   {
    "file": "(F) The Children of Húrin.pdf",
@@ -1245,7 +1455,9 @@
    "bytes": 5753989,
    "pages": 212,
    "corpus_file": "t1_f_the_children_of_hurin.txt",
-   "words": 74809
+   "words": 74809,
+   "bound": 15,
+   "cited": 0
   },
   {
    "file": "(G) The Fall of Gondolin.pdf",
@@ -1257,7 +1469,9 @@
    "bytes": 6594061,
    "pages": 201,
    "corpus_file": "t1_g_the_fall_of_gondolin.txt",
-   "words": 84122
+   "words": 84122,
+   "bound": 9,
+   "cited": 0
   },
   {
    "file": "1 The Book of Lost Tales, Part One.pdf",
@@ -1269,7 +1483,9 @@
    "bytes": 4466918,
    "pages": 387,
    "corpus_file": "t1_1_the_book_of_lost_tales_part_one.txt",
-   "words": 142399
+   "words": 142399,
+   "bound": 2,
+   "cited": 413
   },
   {
    "file": "2 The Book of Lost Tales, Part Two.pdf",
@@ -1281,7 +1497,9 @@
    "bytes": 4728391,
    "pages": 520,
    "corpus_file": "t1_2_the_book_of_lost_tales_part_two.txt",
-   "words": 182143
+   "words": 182143,
+   "bound": 4,
+   "cited": 618
   },
   {
    "file": "3 The Lays of Beleriand.pdf",
@@ -1293,7 +1511,9 @@
    "bytes": 13049773,
    "pages": 400,
    "corpus_file": "t1_3_the_lays_of_beleriand.txt",
-   "words": 133615
+   "words": 133615,
+   "bound": 4,
+   "cited": 371
   },
   {
    "file": "4 The Shaping of Middle-Earth.pdf",
@@ -1305,7 +1525,9 @@
    "bytes": 1694924,
    "pages": 403,
    "corpus_file": "t1_4_the_shaping_of_middle_earth.txt",
-   "words": 146073
+   "words": 146073,
+   "bound": 8,
+   "cited": 0
   },
   {
    "file": "5 The Lost Road and Other Writings.pdf",
@@ -1317,7 +1539,9 @@
    "bytes": 13486279,
    "pages": 457,
    "corpus_file": "t1_5_the_lost_road_and_other_writings.txt",
-   "words": 201048
+   "words": 201048,
+   "bound": 14,
+   "cited": 736
   },
   {
    "file": "6 The Return of the Shadow.pdf",
@@ -1329,7 +1553,9 @@
    "bytes": 19865599,
    "pages": 502,
    "corpus_file": "t1_6_the_return_of_the_shadow.txt",
-   "words": 224886
+   "words": 224886,
+   "bound": 6,
+   "cited": 448
   },
   {
    "file": "7 The Treason of Isengard.pdf",
@@ -1341,7 +1567,9 @@
    "bytes": 16767584,
    "pages": 513,
    "corpus_file": "t1_7_the_treason_of_isengard.txt",
-   "words": 213897
+   "words": 213897,
+   "bound": 7,
+   "cited": 545
   },
   {
    "file": "8 The War of the Ring.pdf",
@@ -1353,7 +1581,9 @@
    "bytes": 7227340,
    "pages": 470,
    "corpus_file": "t1_8_the_war_of_the_ring.txt",
-   "words": 188088
+   "words": 188088,
+   "bound": 0,
+   "cited": 3
   },
   {
    "file": "9 Sauron Defeated.pdf",
@@ -1367,7 +1597,9 @@
    "bytes": 3663181,
    "pages": 477,
    "corpus_file": "t1_9_sauron_defeated.txt",
-   "words": 196545
+   "words": 196545,
+   "bound": 7,
+   "cited": 23
   },
   {
    "file": "10 Morgoth’s Ring.pdf",
@@ -1381,7 +1613,9 @@
    "bytes": 5510415,
    "pages": 556,
    "corpus_file": "t1_10_morgoths_ring.txt",
-   "words": 209025
+   "words": 209025,
+   "bound": 52,
+   "cited": 542
   },
   {
    "file": "11 The War of the Jewels.pdf",
@@ -1395,7 +1629,9 @@
    "bytes": 12237846,
    "pages": 510,
    "corpus_file": "t1_11_the_war_of_the_jewels.txt",
-   "words": 204206
+   "words": 204206,
+   "bound": 20,
+   "cited": 18
   },
   {
    "file": "12 The Peoples of Middle-earth.pdf",
@@ -1409,7 +1645,9 @@
    "bytes": 6810470,
    "pages": 480,
    "corpus_file": "t1_12_the_peoples_of_middle_earth.txt",
-   "words": 201522
+   "words": 201522,
+   "bound": 15,
+   "cited": 21
   },
   {
    "file": "13 Index.pdf",
@@ -1421,7 +1659,9 @@
    "bytes": 9491854,
    "pages": 510,
    "corpus_file": "t1_13_index.txt",
-   "words": 169735
+   "words": 169735,
+   "bound": 1,
+   "cited": 0
   },
   {
    "file": "The Adventures of Tom Bombadil and Other Verses from the Red Book.pdf",
@@ -1433,7 +1673,9 @@
    "bytes": 3609621,
    "pages": 200,
    "corpus_file": "t1_the_adventures_of_tom_bombadil_and_other_verses_from.txt",
-   "words": 44608
+   "words": 44608,
+   "bound": 7,
+   "cited": 0
   },
   {
    "file": "The Collected Poems of J.R.R. Tolkien.pdf",
@@ -1447,7 +1689,9 @@
    "bytes": 8187754,
    "pages": 2018,
    "corpus_file": "t1_the_collected_poems_of_j_r_r_tolkien.txt",
-   "words": 513788
+   "words": 513788,
+   "bound": 16,
+   "cited": 0
   },
   {
    "file": "secondary sources/The Letters of J.R.R. Tolkien.pdf",
@@ -1459,7 +1703,9 @@
    "bytes": 3546831,
    "pages": 515,
    "corpus_file": "t1_the_letters_of_j_r_r_tolkien.txt",
-   "words": 220863
+   "words": 220863,
+   "bound": 13,
+   "cited": 833
   },
   {
    "file": "secondary sources/The Tolkien Reader.pdf",
@@ -1471,7 +1717,9 @@
    "bytes": 10093146,
    "pages": 258,
    "corpus_file": "t1_the_tolkien_reader.txt",
-   "words": 70929
+   "words": 70929,
+   "bound": 3,
+   "cited": 0
   },
   {
    "file": "secondary sources/J. R. R. Tolkien- Artist and Illustrator ",
@@ -1483,7 +1731,9 @@
    "bytes": 43805140,
    "pages": 212,
    "corpus_file": "t1_j_r_r_tolkien_artist_and_illustrator.txt",
-   "words": 78048
+   "words": 78048,
+   "bound": 1,
+   "cited": 0
   },
   {
    "file": "secondary sources/The Hobbit (illustrated).pdf",
@@ -1497,7 +1747,9 @@
    "bytes": 21976878,
    "pages": 340,
    "corpus_file": "t1_the_hobbit_illustrated.txt",
-   "words": 105597
+   "words": 105597,
+   "bound": 34,
+   "cited": 0
   },
   {
    "file": "The Letters of J. R. R. Tolkien (Revised and Expanded Edition).epub",
@@ -1508,7 +1760,9 @@
    "present": true,
    "bytes": 1025143,
    "corpus_file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
-   "words": 308243
+   "words": 308243,
+   "bound": 13,
+   "cited": 833
   },
   {
    "file": "(H) The Fall of Númenor and Other Tales from the Second Age of Middle-earth.pdf",
@@ -1522,7 +1776,9 @@
    "bytes": 36962472,
    "pages": 373,
    "corpus_file": "t2_h_the_fall_of_numenor_and_other_tales_from_the_secon.txt",
-   "words": 97379
+   "words": 97379,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "(I) The Nature of Middle-earth.pdf",
@@ -1536,7 +1792,9 @@
    "bytes": 6271614,
    "pages": 467,
    "corpus_file": "t2_i_the_nature_of_middle_earth.txt",
-   "words": 160887
+   "words": 160887,
+   "bound": 2,
+   "cited": 592
   },
   {
    "file": "The J. R. R. Tolkien Companion and Guide.pdf",
@@ -1548,7 +1806,9 @@
    "bytes": 6224648,
    "pages": 1177,
    "corpus_file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
-   "words": 434964
+   "words": 434964,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "The Lord of the Rings A Reader_s Companion.pdf",
@@ -1560,7 +1820,9 @@
    "bytes": 52704312,
    "pages": 982,
    "corpus_file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
-   "words": 424951
+   "words": 424951,
+   "bound": 5,
+   "cited": 0
   },
   {
    "file": "corpus/t1_c_appendix_tables_raw.txt",
@@ -1571,7 +1833,9 @@
    "present": true,
    "bytes": 71580,
    "corpus_file": "t1_c_appendix_tables_raw.txt",
-   "words": 12795
+   "words": 12795,
+   "bound": 15,
+   "cited": 0
   },
   {
    "file": "The_Monsters_and_the_Critics_and_Other_Essays.pdf",
@@ -1583,7 +1847,9 @@
    "bytes": 17423836,
    "pages": 260,
    "corpus_file": "t1_the_monsters_and_the_critics_and_other_essays.txt",
-   "words": 105074
+   "words": 105074,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "BEOWULF_THE_MONSTERS_AND_THE_CRITICS.pdf",
@@ -1595,7 +1861,9 @@
    "bytes": 382156,
    "pages": 22,
    "corpus_file": "t1_beowulf_the_monsters_and_the_critics.txt",
-   "words": 20387
+   "words": 20387,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Tolkienian_Linguistics_The_First_Fifty_Y.pdf",
@@ -1607,7 +1875,9 @@
    "bytes": 245710,
    "pages": 46,
    "corpus_file": "t3_tolkienian_linguistics_the_first_fifty_y.txt",
-   "words": 20442
+   "words": 20442,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Mythlore_Index.pdf",
@@ -1619,7 +1889,9 @@
    "bytes": 6653905,
    "pages": 443,
    "corpus_file": "t3_mythlore_index.txt",
-   "words": 254020
+   "words": 254020,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Alan_Lee_The_Lord_of_the_Rings_Sketchbook.pdf",
@@ -1633,7 +1905,9 @@
    "bytes": 12899027,
    "pages": 101,
    "corpus_file": "t3_ocr_alan_lee_the_lord_of_the_rings_sketchbook.txt",
-   "words": 104259
+   "words": 104259,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "eldamo_PEE_Parma_Errata.pdf",
@@ -1645,7 +1919,9 @@
    "bytes": 95922,
    "pages": 5,
    "corpus_file": "t3_eldamo_pee_parma_errata.txt",
-   "words": 2590
+   "words": 2590,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "eldamo_VTE_VT_Errata.pdf",
@@ -1657,7 +1933,9 @@
    "bytes": 83308,
    "pages": 7,
    "corpus_file": "t3_eldamo_vte_vt_errata.txt",
-   "words": 1697
+   "words": 1697,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "eldamo_QQ_quen_eng.doc",
@@ -1668,7 +1946,9 @@
    "present": true,
    "bytes": 1777152,
    "corpus_file": "t3_eldamo_qq_quen_eng_doc.txt",
-   "words": 98697
+   "words": 98697,
+   "bound": 1,
+   "cited": 0
   },
   {
    "file": "eldamo_GPT_goldpat.pdf",
@@ -1680,7 +1960,9 @@
    "bytes": 368220,
    "pages": 21,
    "corpus_file": "t3_eldamo_gpt_goldpat.txt",
-   "words": 12996
+   "words": 12996,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "eldamo_EIP_earlyilkorin.pdf",
@@ -1692,7 +1974,9 @@
    "bytes": 326263,
    "pages": 26,
    "corpus_file": "t3_eldamo_eip_earlyilkorin.txt",
-   "words": 12270
+   "words": 12270,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "eldamo_HPITN_1923_phon.pdf",
@@ -1704,7 +1988,9 @@
    "bytes": 553485,
    "pages": 25,
    "corpus_file": "t3_eldamo_hpitn_1923_phon.txt",
-   "words": 11159
+   "words": 11159,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "eldamo_NBA_ni_bitha_adunaye.pdf",
@@ -1716,7 +2002,9 @@
    "bytes": 425328,
    "pages": 39,
    "corpus_file": "t3_eldamo_nba_ni_bitha_adunaye.txt",
-   "words": 10388
+   "words": 10388,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "secondary sources/The Art of The Fellowship of the Ring.pdf",
@@ -1727,10 +2015,14 @@
    "present": true,
    "text_provenance": "ocr-derived",
    "text_provenance_note": "Machine-read from a scan at 300 dpi on 30 July 2026, at the owner's ruling. THE ENGLISH IS LARGELY FAITHFUL AND THE ELVISH IS NOT: measured against a known-good text of Vinyar Tengwar 39, 37 of 51 distinct Elvish forms were lost or corrupted, almost all of them diacritic-bearing -- fea, hroa, Eruhini, and Feanor itself. This file may be quoted for commentary and may NEVER settle the spelling of an Elvish word.",
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bytes": 3413589,
    "pages": 102,
    "corpus_file": "t4_the_art_of_the_fellowship_of_the_ring.txt",
-   "words": 573
+   "words": 573,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "The Atlas of Middle-Earth.pdf",
@@ -1742,7 +2034,9 @@
    "bytes": 35637083,
    "pages": 383,
    "corpus_file": "t3_the_atlas_of_middle_earth.txt",
-   "words": 78922
+   "words": 78922,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "The Complete Guide to Middle-Earth.pdf",
@@ -1756,7 +2050,9 @@
    "bytes": 13996581,
    "pages": 579,
    "corpus_file": "t3_the_complete_guide_to_middle_earth.txt",
-   "words": 187816
+   "words": 187816,
+   "bound": 1,
+   "cited": 0
   },
   {
    "file": "secondary sources/The Complete Tolkien Companion.pdf",
@@ -1768,7 +2064,9 @@
    "bytes": 9383684,
    "pages": 811,
    "corpus_file": "t3_the_complete_tolkien_companion.txt",
-   "words": 242577
+   "words": 242577,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "secondary sources/A Gateway to Sindarin.pdf",
@@ -1780,7 +2078,9 @@
    "bytes": 22003535,
    "pages": 458,
    "corpus_file": "t3_a_gateway_to_sindarin.txt",
-   "words": 137692
+   "words": 137692,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "secondary sources/Tolkien_heraldry.pdf",
@@ -1792,7 +2092,9 @@
    "bytes": 7563151,
    "pages": 44,
    "corpus_file": "t3_tolkien_heraldry.txt",
-   "words": 19327
+   "words": 19327,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "secondary sources/Tolkien-Artwork.pdf",
@@ -1803,10 +2105,14 @@
    "present": true,
    "text_provenance": "ocr-derived",
    "text_provenance_note": "Machine-read from a scan at 300 dpi on 30 July 2026, at the owner's ruling. THE ENGLISH IS LARGELY FAITHFUL AND THE ELVISH IS NOT: measured against a known-good text of Vinyar Tengwar 39, 37 of 51 distinct Elvish forms were lost or corrupted, almost all of them diacritic-bearing -- fea, hroa, Eruhini, and Feanor itself. This file may be quoted for commentary and may NEVER settle the spelling of an Elvish word.",
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bytes": 2379703,
    "pages": 16,
    "corpus_file": "t3_tolkien_artwork.txt",
-   "words": 81
+   "words": 81,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 43.pdf",
@@ -1818,7 +2124,9 @@
    "bytes": 864757,
    "pages": 40,
    "corpus_file": "t2_vinyar_tengwar_43.txt",
-   "words": 16887
+   "words": 16887,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "FORODRIM.pdf",
@@ -1830,7 +2138,9 @@
    "bytes": 335241,
    "pages": 9,
    "corpus_file": "t3_forodrim.txt",
-   "words": 4616
+   "words": 4616,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 1.pdf",
@@ -1842,7 +2152,9 @@
    "bytes": 26495208,
    "pages": 12,
    "corpus_file": "t3_parma_eldalamberon_vol_1_no_1.txt",
-   "words": 13575
+   "words": 13575,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 2.pdf",
@@ -1854,7 +2166,9 @@
    "bytes": 31358781,
    "pages": 16,
    "corpus_file": "t3_parma_eldalamberon_vol_1_no_2.txt",
-   "words": 16866
+   "words": 16866,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 3.pdf",
@@ -1866,7 +2180,9 @@
    "bytes": 45563829,
    "pages": 20,
    "corpus_file": "t3_parma_eldalamberon_vol_1_no_3.txt",
-   "words": 26540
+   "words": 26540,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 4.pdf",
@@ -1878,7 +2194,9 @@
    "bytes": 60895124,
    "pages": 30,
    "corpus_file": "t3_parma_eldalamberon_vol_1_no_4.txt",
-   "words": 35416
+   "words": 35416,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 5.pdf",
@@ -1890,7 +2208,9 @@
    "bytes": 60143262,
    "pages": 30,
    "corpus_file": "t3_parma_eldalamberon_vol_1_no_5.txt",
-   "words": 28172
+   "words": 28172,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "secondary sources/LOTR ROLEPLAY.pdf",
@@ -1902,7 +2222,9 @@
    "bytes": 66606923,
    "pages": 242,
    "corpus_file": "t4_lotr_roleplay.txt",
-   "words": 113997
+   "words": 113997,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "secondary sources/Reader And Educator Guide To the Hobbit And the Lord Of The Rings.pdf",
@@ -1916,7 +2238,9 @@
    "bytes": 1473526,
    "pages": 179,
    "corpus_file": "t4_reader_and_educator_guide_to_the_hobbit_and_the_lord.txt",
-   "words": 50489
+   "words": 50489,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "secondary sources/THE-LORD-OF-THE-RINGS-Urania-Finarte-14.12.2022.pdf",
@@ -1928,7 +2252,9 @@
    "bytes": 17345366,
    "pages": 57,
    "corpus_file": "t4_the_lord_of_the_rings_urania_finarte_14_12_2022.txt",
-   "words": 32914
+   "words": 32914,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "The King's Letter (manuscript plate).png",
@@ -1939,7 +2265,9 @@
    "present": true,
    "bytes": 1965265,
    "corpus_file": "t1_the_king_s_letter_manuscript_plate_png.txt",
-   "words": 0
+   "words": 0,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Parma Eldalamberon 11.pdf",
@@ -1951,7 +2279,9 @@
    "bytes": 1162280,
    "pages": 80,
    "corpus_file": "t2_parma_eldalamberon_11.txt",
-   "words": 39557
+   "words": 39557,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Parma Eldalamberon 13.pdf",
@@ -1963,7 +2293,9 @@
    "bytes": 5970512,
    "pages": 169,
    "corpus_file": "t2_parma_eldalamberon_13.txt",
-   "words": 66174
+   "words": 66174,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Parma Eldalamberon 14.pdf",
@@ -1975,7 +2307,9 @@
    "bytes": 2461159,
    "pages": 138,
    "corpus_file": "t2_parma_eldalamberon_14.txt",
-   "words": 66874
+   "words": 66874,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Parma Eldalamberon 15.pdf",
@@ -1987,7 +2321,9 @@
    "bytes": 4407184,
    "pages": 126,
    "corpus_file": "t2_parma_eldalamberon_15.txt",
-   "words": 64774
+   "words": 64774,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Parma Eldalamberon 17.pdf",
@@ -2001,7 +2337,9 @@
    "bytes": 8109681,
    "pages": 221,
    "corpus_file": "t2_ocr_parma_eldalamberon_17.txt",
-   "words": 125269
+   "words": 125269,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Parma Eldalamberon 23.pdf",
@@ -2015,7 +2353,9 @@
    "bytes": 150123092,
    "pages": 152,
    "corpus_file": "t2_ocr_parma_eldalamberon_23.txt",
-   "words": 73945
+   "words": 73945,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 41-50.pdf",
@@ -2027,7 +2367,9 @@
    "bytes": 12624053,
    "pages": 404,
    "corpus_file": "t2_vinyar_tengwar_41_50.txt",
-   "words": 189733
+   "words": 189733,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 39-41 - Osanwe-kenta (extract).pdf",
@@ -2039,7 +2381,9 @@
    "bytes": 2157261,
    "pages": 19,
    "corpus_file": "t2_vinyar_tengwar_39_41_osanwe_kenta_extract.txt",
-   "words": 8041
+   "words": 8041,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 24.pdf",
@@ -2053,7 +2397,9 @@
    "bytes": 8519943,
    "pages": 40,
    "corpus_file": "t2_ocr_vinyar_tengwar_24.txt",
-   "words": 15984
+   "words": 15984,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 25.pdf",
@@ -2067,7 +2413,9 @@
    "bytes": 9732600,
    "pages": 28,
    "corpus_file": "t2_ocr_vinyar_tengwar_25.txt",
-   "words": 12805
+   "words": 12805,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar Index.pdf",
@@ -2079,7 +2427,9 @@
    "bytes": 591600,
    "pages": 56,
    "corpus_file": "t3_vinyar_tengwar_index.txt",
-   "words": 31178
+   "words": 31178,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Giraudeau - A New Q(u)enya Lexicon (from PE11).pdf",
@@ -2091,7 +2441,9 @@
    "bytes": 373557,
    "pages": 17,
    "corpus_file": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe11.txt",
-   "words": 11649
+   "words": 11649,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Giraudeau - A New Q(u)enya Lexicon (from PE17).pdf",
@@ -2103,7 +2455,9 @@
    "bytes": 1356534,
    "pages": 62,
    "corpus_file": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt",
-   "words": 58046
+   "words": 58046,
+   "bound": 13,
+   "cited": 0
   },
   {
    "file": "Giraudeau - A New Q(u)enya Lexicon (from PE21).pdf",
@@ -2115,7 +2469,9 @@
    "bytes": 373215,
    "pages": 16,
    "corpus_file": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe21.txt",
-   "words": 10641
+   "words": 10641,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Giraudeau - Parma Eldalamberon 12, changes in the 2011 printing.pdf",
@@ -2127,7 +2483,9 @@
    "bytes": 760754,
    "pages": 9,
    "corpus_file": "t3_giraudeau_parma_eldalamberon_12_changes_in_the_2011_.txt",
-   "words": 4766
+   "words": 4766,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Giraudeau - Sindarin Corpus (from PE17).pdf",
@@ -2139,7 +2497,9 @@
    "bytes": 670578,
    "pages": 70,
    "corpus_file": "t3_giraudeau_sindarin_corpus_from_pe17.txt",
-   "words": 23048
+   "words": 23048,
+   "bound": 7,
+   "cited": 0
   },
   {
    "file": "Kloczko - High Elvish for Beginners (notes by Giraudeau).pdf",
@@ -2151,7 +2511,9 @@
    "bytes": 631765,
    "pages": 37,
    "corpus_file": "t3_kloczko_high_elvish_for_beginners_notes_by_giraudeau.txt",
-   "words": 10824
+   "words": 10824,
+   "bound": 1,
+   "cited": 0
   },
   {
    "file": "(K) The Road Goes Ever On - A Song Cycle (2nd digitisation).pdf",
@@ -2165,7 +2527,9 @@
    "bytes": 1349098,
    "pages": 78,
    "corpus_file": "t1_k_the_road_goes_ever_on_a_song_cycle_2nd_digitisatio.txt",
-   "words": 12168
+   "words": 12168,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Ellison - The road goes ever on, the Journey motive in The Lord of the Rings.pdf",
@@ -2177,7 +2541,9 @@
    "bytes": 615856,
    "pages": 5,
    "corpus_file": "t3_ellison_the_road_goes_ever_on_the_journey_motive_in_.txt",
-   "words": 5246
+   "words": 5246,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Heraldry - Tolkien Gateway.pdf",
@@ -2189,7 +2555,9 @@
    "bytes": 5649615,
    "pages": 35,
    "corpus_file": "t4_heraldry_tolkien_gateway.txt",
-   "words": 7270
+   "words": 7270,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Giraudeau - J.R.R. Tolkien, a global theory.pdf",
@@ -2201,7 +2569,9 @@
    "bytes": 2623864,
    "pages": 68,
    "corpus_file": "t3_giraudeau_j_r_r_tolkien_a_global_theory.txt",
-   "words": 20392
+   "words": 20392,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 11.pdf",
@@ -2215,7 +2585,9 @@
    "bytes": 990891,
    "pages": 12,
    "corpus_file": "t2_ocr_vinyar_tengwar_11.txt",
-   "words": 12001
+   "words": 12001,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 12.pdf",
@@ -2229,7 +2601,9 @@
    "bytes": 1041737,
    "pages": 12,
    "corpus_file": "t2_ocr_vinyar_tengwar_12.txt",
-   "words": 13437
+   "words": 13437,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 14.pdf",
@@ -2243,7 +2617,9 @@
    "bytes": 1205260,
    "pages": 12,
    "corpus_file": "t2_ocr_vinyar_tengwar_14.txt",
-   "words": 13633
+   "words": 13633,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 27.pdf",
@@ -2257,7 +2633,9 @@
    "bytes": 1942372,
    "pages": 22,
    "corpus_file": "t2_ocr_vinyar_tengwar_27.txt",
-   "words": 22302
+   "words": 22302,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 28.pdf",
@@ -2271,7 +2649,9 @@
    "bytes": 1600334,
    "pages": 20,
    "corpus_file": "t2_ocr_vinyar_tengwar_28.txt",
-   "words": 19896
+   "words": 19896,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 29.pdf",
@@ -2285,7 +2665,9 @@
    "bytes": 1158193,
    "pages": 17,
    "corpus_file": "t2_ocr_vinyar_tengwar_29.txt",
-   "words": 11805
+   "words": 11805,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 31.pdf",
@@ -2299,7 +2681,9 @@
    "bytes": 1522652,
    "pages": 18,
    "corpus_file": "t2_ocr_vinyar_tengwar_31.txt",
-   "words": 15753
+   "words": 15753,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 36.pdf",
@@ -2313,7 +2697,9 @@
    "bytes": 1518959,
    "pages": 18,
    "corpus_file": "t2_ocr_vinyar_tengwar_36.txt",
-   "words": 18457
+   "words": 18457,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 37.pdf",
@@ -2327,7 +2713,9 @@
    "bytes": 1113078,
    "pages": 16,
    "corpus_file": "t2_ocr_vinyar_tengwar_37.txt",
-   "words": 12357
+   "words": 12357,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 39.pdf",
@@ -2341,7 +2729,9 @@
    "bytes": 888189,
    "pages": 36,
    "corpus_file": "t2_ocr_vinyar_tengwar_39.txt",
-   "words": 17669
+   "words": 17669,
+   "bound": 0,
+   "cited": 0
   },
   {
    "file": "Vinyar Tengwar 39 (2).pdf",
@@ -2355,7 +2745,9 @@
    "bytes": 1516745,
    "pages": 18,
    "corpus_file": "t2_ocr_vinyar_tengwar_39_2.txt",
-   "words": 18061
+   "words": 18061,
+   "bound": 0,
+   "cited": 0
   }
  ],
  "not_held": [

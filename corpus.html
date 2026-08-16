@@ -71,6 +71,8 @@ h2{font-variant:small-caps;font-weight:normal;color:#5a4626;border-bottom:1px so
 </style>
 <div class="pane on" id="p-shelf">
  <div class="cite">The whole shelf as ONE list — every registered source with its tier, whose hand it is, what kind of book it is and which part of the legendarium it is evidence about; and for every volume the archive has extracted, its weight in words, its declared nature, its table of divisions, and the people and places that live most thickly in it. Bars are proportional to word-count. <b>Where two sources disagree the lower tier wins.</b></div>
+ <div style="margin:.4rem 0"><label for="fx-q" style="font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;opacity:.72">find a book</label><br>
+  <input id="fx-q" type="search" placeholder="title or hand — try Shippey, or Vinyar" style="width:min(28rem,100%);padding:.3rem .5rem;font:inherit;border:1px solid rgba(122,74,18,.35);border-radius:3px;background:transparent;color:inherit"></div>
  <div id="fx-filters"></div>
  <div id="fx-count" class="cite"></div>
  <div class="grid" id="shelf"></div>
@@ -108,7 +110,7 @@ h2{font-variant:small-caps;font-weight:normal;color:#5a4626;border-bottom:1px so
  </div>
 </div>
 
-<div class="ft">The shelf and concordance are machine-built from the full-text extractions of all 99 texts (re-ingested 2026-07-24, when the shelf grew to 100 registered sources); questions run over the same datasets that power every hall — <a href="arda_chronology.json">chronology</a> · <a href="arda_realms.json">realms</a> · <a href="arda_languages.json">languages</a>. Where a dataset cannot answer, the answer is the refusal, not a guess.</div>
+<div class="ft">The shelf and concordance are machine-built from the full-text extractions of all 99 texts (re-ingested 2026-07-24, when the shelf grew to 190 registered sources); questions run over the same datasets that power every hall — <a href="arda_chronology.json">chronology</a> · <a href="arda_realms.json">realms</a> · <a href="arda_languages.json">languages</a>. Where a dataset cannot answer, the answer is the refusal, not a guess.</div>
 </div>
 <script>
 const $=s=>document.querySelector(s);
@@ -165,15 +167,20 @@ function init(){
  // sources are registered. A source with no text still gets a card and SAYS it is unreadable,
  // where before it was simply absent from the hall.
  const CIBY={}; CI.forEach(v=>CIBY[v.id]=v);
- let FX={sources:[],edges:[]}, SEL={kind:null,hand:null,tier:null,covers:null};
+ let FX={sources:[],edges:[]}, SEL={kind:null,hand:null,tier:null,covers:null,drawn:null};
+ let QRY="";
+ /* DRAWN ON: derived from bound+cited. Why they are never summed: map/volume_coverage.py. */
+ const drawnOf=s=>((s.bound||0)+(s.cited||0)>0?"drawn on":"nothing rests on it yet");
  const AX=[["kind","what kind of book"],["hand","whose hand"],["tier","tier"],
-           ["covers","what it is evidence about"]];
- const fxMatch=s=>AX.every(a=>SEL[a[0]]===null||String(s[a[0]])===String(SEL[a[0]]));
+           ["covers","what it is evidence about"],["drawn","has the archive used it"]];
+ const fxMatch=s=>AX.every(a=>SEL[a[0]]===null||String(a[0]==="drawn"?drawnOf(s):s[a[0]])===String(SEL[a[0]]))
+   && (!QRY || (String(s.title||"")+" "+String(s.hand||"")).toLowerCase().indexOf(QRY)>=0);
  function card(s){
   const v=s.ci?CIBY[s.ci]:null;
   const top=v?topFor(v.id):[];
   return '<div class="card"><h3>'+esc(v?v.t:s.title)+'</h3>'+
-  '<div class="fx-meta"><span class="fx-tier">tier '+s.tier+'</span>'+esc(s.kind)+' · '+esc(s.hand)+
+  /* NO FIFTH TIER (CLAUDE.md): tier 5 marks an untiered extraction, not a rank. */
+  '<div class="fx-meta"><span class="fx-tier">'+(s.tier===5?'not tiered':'tier '+s.tier)+'</span>'+esc(s.kind)+' · '+esc(s.hand)+
     ' · '+esc(s.covers)+(s.primary_text?' · <b>Tolkien\u2019s own words</b>':'')+'</div>'+
   // THE UNREADABLE NOTICE IS DRIVEN BY THE WORD COUNT, NOT BY WHICH DATASET KNOWS THE SOURCE.
   // My first version showed it only when the corpusindex had no entry, so a volume that HAS an
@@ -194,6 +201,13 @@ function init(){
     :'<div class="fx-u">held on the shelf, not yet readable — no extracted text</div>'
       +(v&&v.tags?'<div class="cite">'+esc(v.tags)+'</div>':''))+
   (s.text_provenance?'<div class="cite">text provenance: '+esc(s.text_provenance)+'</div>':'')+
+  /* two figures, never summed; no figure at all prints nothing -- unknown is not zero. */
+  ((s.bound||s.cited)
+    ?'<div class="cite"><b>the archive draws on this</b> — '+(s.bound||0).toLocaleString()+
+      ' verified quotation'+((s.bound||0)===1?'':'s')+' · '+(s.cited||0).toLocaleString()+
+      ' citation'+((s.cited||0)===1?'':'s')+'</div>'
+    :(Math.max(v?(v.words||0):0, s.words||0)>0
+       ?'<div class="cite">no published claim rests on this volume yet</div>':''))+
   (FX.edges.filter(e=>e.from===s.file).slice(0,1)
      .map(e=>'<div class="fx-e">'+esc(e.rel)+'</div>').join(''))+
   (v?divisionsAndNames(v,top):'')+
@@ -225,12 +239,13 @@ function init(){
    const l=document.createElement("div"); l.className="fx-lab"; l.textContent=a[1]; box.appendChild(l);
    const vals={};
    FX.sources.forEach(s=>{
-     const keep=AX.every(b=>b[0]===k||SEL[b[0]]===null||String(s[b[0]])===String(SEL[b[0]]));
-     if(keep) vals[s[k]]=(vals[s[k]]||0)+1;});
+     const keep=AX.every(b=>b[0]===k||SEL[b[0]]===null||
+       String(b[0]==="drawn"?drawnOf(s):s[b[0]])===String(SEL[b[0]]));
+     if(keep){const vv=(k==="drawn"?drawnOf(s):s[k]); vals[vv]=(vals[vv]||0)+1;}});
    Object.keys(vals).sort((x,y)=>vals[y]-vals[x]).forEach(val=>{
     const b=document.createElement("button"); b.className="fx-b"; b.type="button";
     b.setAttribute("aria-pressed",String(SEL[k])===String(val));
-    b.innerHTML=(k==="tier"?"tier "+val:esc(val))+' <span class="n">'+vals[val]+'</span>';
+    b.innerHTML=(k==="tier"?(String(val)==="5"?"not tiered":"tier "+val):esc(val))+' <span class="n">'+vals[val]+'</span>';
     b.onclick=()=>{SEL[k]=(String(SEL[k])===String(val))?null:val; fxDraw();};
     box.appendChild(b);});
    F.appendChild(box);});
@@ -241,7 +256,11 @@ function init(){
      (b.words||0)-(a.words||0)||String(a.title).localeCompare(String(b.title))).map(card).join("");
  }
  fetch("arda_corpusmap.json").then(r=>r.json()).then(j=>{
-   FX=j; fxDraw();
+   FX=j;
+   /* composes with the facets; counts recompute each draw. */
+   const q=$("#fx-q");
+   if(q) q.addEventListener("input",()=>{QRY=q.value.trim().toLowerCase(); fxDraw();});
+   fxDraw();
    $("#fx-note").textContent="Facets are derived by named rule in map/gen_corpusmap.py; a source no "+
     "rule matches is shown as unclassified rather than swept into a default. "+FX.edges.length+
     " derivation edge(s) are drawn, and only where the register states one.";
