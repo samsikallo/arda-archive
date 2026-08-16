@@ -176,7 +176,8 @@ for(const t in types){const el2=document.createElement('span');el2.className='to
  el2.innerHTML='<span class="sw" style="--c:var(--acc)"></span>'+glyph[t]+' '+t;
  el2.onclick=()=>{types[t]=!types[t];el2.classList.toggle('off');draw();};togs.appendChild(el2);}
 document.getElementById('thm').onclick=()=>{const r=document.documentElement;
- r.setAttribute('data-theme',r.getAttribute('data-theme')==='dark'?'light':'dark');draw();};
+ const d=r.getAttribute('data-theme')!=='dark';
+ (window.ardaSetTheme||(v=>r.setAttribute('data-theme',v?'dark':'light')))(d);draw();};
 addEventListener('resize',draw);
 draw();
 </script>

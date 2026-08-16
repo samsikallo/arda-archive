@@ -21,6 +21,9 @@ try{document.documentElement.setAttribute("data-codex",
  const put=t=>{document.documentElement.setAttribute("data-theme",t);
    try{if(window.ardaPaintTheme)window.ardaPaintTheme()}catch(e){}};
  put(stored||os());
+ /* One theme authority: two halls set data-theme directly and persisted nothing. */
+ window.ardaSetTheme=function(d){const v=d?"dark":"light";
+   put(v); try{localStorage.setItem(KEY,v)}catch(e){}; return v;};
  // The OS changing while the page is open follows, UNLESS the reader has chosen for themselves.
  try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{
    let s=null; try{s=localStorage.getItem(KEY)}catch(_){}
@@ -200,7 +203,10 @@ if(_J&&_JR){
  _J.addEventListener("keydown",e=>{
   if(e.key==="ArrowDown"){if(!_hits.length)_render();_sel=Math.min(_sel+1,_hits.length-1);_mark();e.preventDefault()}
   else if(e.key==="ArrowUp"){_sel=Math.max(_sel-1,0);_mark();e.preventDefault()}
-  else if(e.key==="Enter"){const r=_hits[_sel<0?0:_sel];if(r)location.href=r.href;e.preventDefault()}
+  else if(e.key==="Enter"){const r=_hits[_sel<0?0:_sel];
+   /* PRE: the rendered anchor uses it and this did not -- Enter 404'd on 582 nested
+      routes. Evidence in the commit. */
+   if(r)location.href=PRE+r.href;e.preventDefault()}
   else if(e.key==="Escape"){if(_JR.classList.contains("on")){_close()}else{_J.value="";_J.blur()}e.preventDefault()}
  });
  _J.addEventListener("blur",()=>setTimeout(_close,150));
@@ -346,5 +352,12 @@ new MutationObserver(ms=>ms.forEach(m=>m.addedNodes.forEach(n=>{if(n.nodeType===
 // that registers itself still works if this file fails to load. Form is index.html's.
 (function(){
  if(!("serviceWorker" in navigator))return;
- addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+ addEventListener("load",()=>{
+  /* "sw.js" is RELATIVE: from person/ it resolved to person/sw.js and never registered
+     on 582 routes, with the error swallowed. Evidence in the commit. */
+  var _b=(typeof window!=="undefined"&&window.ARDA_BASE)||"";
+  navigator.serviceWorker.register(_b+"sw.js").catch(function(e){
+    if(location.hostname==="127.0.0.1"||location.hostname==="localhost")
+      console.warn("[arda] service worker did not register:",e&&e.message);});
+});
 })();

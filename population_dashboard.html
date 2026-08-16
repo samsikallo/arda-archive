@@ -359,7 +359,10 @@ document.getElementById('sexbtn').onclick=function(){sexSplit=!sexSplit;this.set
 document.getElementById('tblbtn').onclick=function(){const d=document.getElementById('tbl');
  const on=d.style.display!=='block';d.style.display=on?'block':'none';this.setAttribute('aria-pressed',on);};
 document.getElementById('thmbtn').onclick=function(){const r=document.documentElement;
- const dark=r.getAttribute('data-theme')!=='dark';r.setAttribute('data-theme',dark?'dark':'light');
+ const dark=r.getAttribute('data-theme')!=='dark';
+ /* one authority: nav.js owns the ground and the storage key. Setting data-theme here directly
+    persisted nothing, so the choice died on reload and the shared nav label went stale. */
+ if(window.ardaSetTheme)window.ardaSetTheme(dark); else r.setAttribute('data-theme',dark?'dark':'light');
  this.setAttribute('aria-pressed',dark);};
 draw();
 
