@@ -21,8 +21,13 @@
    "attested": "only inside a compound or name, per the source's own `#`",
    "cite": "WJ/387,, WJ/387",
    "ipa": "ɑb",
-   "gloss": "pref. a er, later",
-   "gloss_damaged": "a ligature was lost in extraction -- this gloss has a gap where ff/fi/fl/ft stood. NOT repaired: the obvious filling is still a guess, and the source page settles it"
+   "gloss": "pref. after, later",
+   "gloss_as_extracted": "pref. a er, later",
+   "gloss_repair": {
+    "read_by": "hand, against corpus/t1_5_the_lost_road_and_other_writings.txt, 16 Aug 2026",
+    "note": "LIGATURE ONLY, and the Etymologies does NOT witness it: its AB-, ABAR- is 'refuse, deny', a different stem entirely. The cite is WJ/387, not Ety."
+   },
+   "conf_gloss": "[I-H]"
   },
   {
    "form": "ablad",
@@ -42,8 +47,15 @@
    "cite": "WJ/387, PE/17:92, VT/50:15, Ety/392",
    "ipa": "ɑbˈɔnnɛn",
    "pos": "adj",
-   "gloss": "ebœnnin 1. born later, born a er ○ 2. man, one born later than the Elves, a human being (elvish name for men) ach I neck",
-   "gloss_damaged": "a ligature was lost in extraction -- this gloss has a gap where ff/fi/fl/ft stood. NOT repaired: the obvious filling is still a guess, and the source page settles it"
+   "gloss": "ebœnnin 1. born later, born after ○ 2. man, one born later than the Elves, a human being (elvish name for men)",
+   "gloss_as_extracted": "ebœnnin 1. born later, born a er ○ 2. man, one born later than the Elves, a human being (elvish name for men) ach I neck",
+   "gloss_repair": {
+    "read_by": "hand, against corpus/t1_5_the_lost_road_and_other_writings.txt, 16 Aug 2026",
+    "note": "The row cites Ety/392, but no form `abonnen` occurs anywhere in the Etymologies — the nearest stem, ONO- 'beget', gives Q onna and ed-onna and no Sindarin After-born. The word is WJ's. THE CITE IS THEREFORE SUSPECT and is left untouched, because correcting somebody else's citation is a separate claim.",
+    "bleed_removed": "ach I neck",
+    "bleed_belongs_to": "the NEXT headword, `ach` 'neck', with its part-of-speech marker"
+   },
+   "conf_gloss": "[I-H]"
   },
   {
    "form": "achad",
@@ -2630,8 +2642,15 @@
    "cite": "Ety/386, LotR/VI:IX,, UT/432,, Letters/402",
    "ipa": "ˈɛlɑnɔr",
    "pos": "n",
-   "gloss": "Bot. a ower, a kind of en- larged pimpernel bearing golden and silver emmelin → emlin owers",
-   "gloss_damaged": "a ligature was lost in extraction -- this gloss has a gap where ff/fi/fl/ft stood. NOT repaired: the obvious filling is still a guess, and the source page settles it"
+   "gloss": "Bot. a flower, a kind of enlarged pimpernel bearing golden and silver flowers",
+   "gloss_as_extracted": "Bot. a ower, a kind of en- larged pimpernel bearing golden and silver emmelin → emlin owers",
+   "gloss_repair": {
+    "read_by": "hand, against corpus/t1_5_the_lost_road_and_other_writings.txt, 16 Aug 2026",
+    "note": "Two `fl` ligatures lost (`a ower`, `owers`) and one hyphenated line-break rejoined (`en- larged`). AND THE ROW CITES Ety/386 FOR A WORD THE ETYMOLOGIES DOES NOT CONTAIN: neither `elanor` nor `pimpernel` occurs anywhere in it (checked with the folding matcher, on a bounded extract). elanor is LotR's word. The cite is left untouched — correcting a third party's citation is a separate claim from restoring a dropped glyph — but it is recorded here.",
+    "bleed_removed": "emmelin → emlin",
+    "bleed_belongs_to": "the `emlin` entry from the neighbouring column — AND `emlin` IS ITSELF ONE OF THESE FIFTEEN, which is what shows the two columns are adjacent"
+   },
+   "conf_gloss": "[I-H]"
   },
   {
    "form": "elei",
@@ -3121,8 +3140,18 @@
    "cite": "Ety/381,, NM/304, Ety/381, PE/17:17",
    "ipa": "fˈɛlɑ",
    "pos": "n",
-   "gloss": "ili 1. cave, minor ineg sing. (?) hair of head excavations made by wild animals (o en used ing lock of hair",
-   "gloss_damaged": "a ligature was lost in extraction -- this gloss has a gap where ff/fi/fl/ft stood. NOT repaired: the obvious filling is still a guess, and the source page settles it"
+   "gloss": "1. cave, minor excavations made by wild animals (often used",
+   "gloss_damaged": "the bleed is cut and the ligatures are restored; the TAIL is still missing and the Etymologies does not supply it",
+   "gloss_as_extracted": "ili 1. cave, minor ineg sing. (?) hair of head excavations made by wild animals (o en used ing lock of hair",
+   "gloss_repair": {
+    "read_by": "hand, against corpus/t1_5_the_lost_road_and_other_writings.txt, 16 Aug 2026",
+    "note": "THE TAIL IS LOST AND STAYS LOST. The gloss breaks off mid-parenthesis at '(often used' and nothing in the Etymologies supplies the compilers' ending, so the row remains flagged.",
+    "bleed_removed": "ili … ineg sing. (?) hair of head … ing lock of hair",
+    "bleed_belongs_to": "TWO sources at once: the leading `ili` is the tail of fela's own plural `fili`, and the hair-of-head material is a different entry interleaved line-by-line from the facing column",
+    "witness": "PHELEG- cave. Tfelga cave; Qfelya; ONphelga, Nfela, pifili",
+    "witness_cite": "HoME V, The Etymologies, stem PHELEG- (tier 1) — verified verbatim in the corpus by this tool before it was written"
+   },
+   "conf_gloss": "[C]"
   },
   {
    "form": "fen",
@@ -4292,8 +4321,17 @@
    "cite": "X/W, Ety/398, HL/115, WJ/388,",
    "ipa": "gwˈɛlu",
    "pos": "n",
-   "gloss": "(gwelw ) air (as substance) ing South” in the rst version, or probably east of the gwîn III — 40 — Blue Mountains in the second. Then we have Dorwin- ion as a meadow-land in Tol Eressëa at the end of the uenta Silmarilli",
-   "gloss_damaged": "a ligature was lost in extraction -- this gloss has a gap where ff/fi/fl/ft stood. NOT repaired: the obvious filling is still a guess, and the source page settles it"
+   "gloss": "(gwelw) air (as substance)",
+   "gloss_as_extracted": "(gwelw ) air (as substance) ing South” in the rst version, or probably east of the gwîn III — 40 — Blue Mountains in the second. Then we have Dorwin- ion as a meadow-land in Tol Eressëa at the end of the uenta Silmarilli",
+   "gloss_repair": {
+    "read_by": "hand, against corpus/t1_5_the_lost_road_and_other_writings.txt, 16 Aug 2026",
+    "note": "The witness gives the compilers' wording verbatim — 'air (as substance)' is Tolkien's own phrase, which is why the entry survives the excision intact.",
+    "bleed_removed": "ing South” in the rst version, or probably east of the … Blue Mountains in the second. Then we have Dorwin-  ·  gwîn III  ·  — 40 —",
+    "bleed_belongs_to": "EDITORIAL PROSE FROM ANOTHER PAGE ENTIRELY, about Dorwinion, dragged in with a running head and a page number. It is not a gloss and never was",
+    "witness": "N gwelw air (as substance);gwelwen = Q vilwa; Ilk. gwelu,gwelo",
+    "witness_cite": "HoME V, The Etymologies, stem WAY- (tier 1) — verified verbatim in the corpus by this tool before it was written"
+   },
+   "conf_gloss": "[C]"
   },
   {
    "form": "gwing",
@@ -5750,8 +5788,17 @@
    "lang": "Sindarin/Noldorin",
    "conf": "[EXT]",
    "cite": "SD/62",
-   "gloss": "→ lond ing",
-   "gloss_damaged": "a ligature was lost in extraction -- this gloss has a gap where ff/fi/fl/ft stood. NOT repaired: the obvious filling is still a guess, and the source page settles it"
+   "gloss": "→ lond",
+   "gloss_as_extracted": "→ lond ing",
+   "gloss_repair": {
+    "read_by": "hand, against corpus/t1_5_the_lost_road_and_other_writings.txt, 16 Aug 2026",
+    "note": "A pointer entry. The sense lives at `lond`, and HoME V confirms the pair.",
+    "bleed_removed": "ing",
+    "bleed_belongs_to": "a fragment of an adjacent word; it is not part of a cross-reference",
+    "witness": "cf. lond, lonn path [LOD]",
+    "witness_cite": "HoME V, The Etymologies, stem AK- (tier 1) — verified verbatim in the corpus by this tool before it was written"
+   },
+   "conf_gloss": "[C]"
   },
   {
    "form": "lonnas",
@@ -6439,8 +6486,17 @@
    "cite": "VT/42:25, Ety/387,, UT/282,, RC/307,",
    "ipa": "nˈɑjθ",
    "pos": "n",
-   "gloss": "→ morn ord. third naith (neith ) any formation or projection tapering to a point: a spearhead, N triangle gore, wedge, narrow promontory, an- gle",
-   "gloss_damaged": "a ligature was lost in extraction -- this gloss has a gap where ff/fi/fl/ft stood. NOT repaired: the obvious filling is still a guess, and the source page settles it"
+   "gloss": "→ morn",
+   "gloss_as_extracted": "→ morn ord. third naith (neith ) any formation or projection tapering to a point: a spearhead, N triangle gore, wedge, narrow promontory, an- gle",
+   "gloss_repair": {
+    "read_by": "hand, against corpus/t1_5_the_lost_road_and_other_writings.txt, 16 Aug 2026",
+    "note": "`myrn` is the plural of `morn`; the entry is a pointer and the whole of its apparent content was another word's.",
+    "bleed_removed": "ord. third naith (neith ) any formation or projection tapering to a point: a spearhead, N triangle gore, wedge, narrow promontory, an- gle",
+    "bleed_belongs_to": "the tail of an ordinal entry PLUS the whole of the `naith` entry — two neighbours, not one",
+    "witness": "MOR- *mori black: Q more black",
+    "witness_cite": "HoME V, The Etymologies, stem MOR- (tier 1) — verified verbatim in the corpus by this tool before it was written"
+   },
+   "conf_gloss": "[C]"
   },
   {
    "form": "na",
@@ -7379,8 +7435,18 @@
    "cite": "Ety/370,, Ety/379,, S/435,, WJ/414,",
    "ipa": "ˈɔst",
    "pos": "n",
-   "gloss": "1. city, town with wall round, for- ti ed town, “enclosure” (a space or P #pâd I way",
-   "gloss_damaged": "a ligature was lost in extraction -- this gloss has a gap where ff/fi/fl/ft stood. NOT repaired: the obvious filling is still a guess, and the source page settles it"
+   "gloss": "1. city, town with wall round, fortified town, “enclosure” (a space or",
+   "gloss_damaged": "the bleed is cut and the ligatures are restored; the TAIL is still missing and the Etymologies does not supply it",
+   "gloss_as_extracted": "1. city, town with wall round, for- ti ed town, “enclosure” (a space or P #pâd I way",
+   "gloss_repair": {
+    "read_by": "hand, against corpus/t1_5_the_lost_road_and_other_writings.txt, 16 Aug 2026",
+    "note": "THE WITNESS IS VERBATIM AND ON THE CITED PAGE: the row cites Ety/370 and OS- sits on 370. 'fortified' is a lost `fi`, supported by the same entry's 'othrond fortress, city in underground caves'. The tail after '(a space or' is truncated and stays flagged.",
+    "bleed_removed": "P #pâd I way",
+    "bleed_belongs_to": "a LETTER-SECTION HEADING (`P`) and the first headword under it, `pâd`",
+    "witness": "Q osto city, town with wall round. N ost",
+    "witness_cite": "HoME V, The Etymologies, stem OS- (tier 1) — verified verbatim in the corpus by this tool before it was written"
+   },
+   "conf_gloss": "[C]"
   },
   {
    "form": "ostrad",
@@ -7502,8 +7568,13 @@
    "cite": "RC/433,, PE/17:86,171, RC/433, PE/17:",
    "ipa": "pˈɑrɑn",
    "pos": "adj",
-   "gloss": "naked, bald, bare, smooth, shaven (o en applied to hills without trees)",
-   "gloss_damaged": "a ligature was lost in extraction -- this gloss has a gap where ff/fi/fl/ft stood. NOT repaired: the obvious filling is still a guess, and the source page settles it"
+   "gloss": "naked, bald, bare, smooth, shaven (often applied to hills without trees)",
+   "gloss_as_extracted": "naked, bald, bare, smooth, shaven (o en applied to hills without trees)",
+   "gloss_repair": {
+    "read_by": "hand, against corpus/t1_5_the_lost_road_and_other_writings.txt, 16 Aug 2026",
+    "note": "LIGATURE ONLY and CLEAN — no bleed at all. Not in the Etymologies; it cites RC and PE/17. Included because it is flagged and one `ft` was all that ailed it."
+   },
+   "conf_gloss": "[I-H]"
   },
   {
    "form": "parch",
@@ -7584,8 +7655,17 @@
    "conf": "[EXT]",
    "ipa": "pˈɑur",
    "pos": "n",
-   "gloss": "Biol. st (o en used to mean “hand”, its chief use was in reference of the tighly closed hand, as in using an implement pen-nod — 67 —",
-   "gloss_damaged": "a ligature was lost in extraction -- this gloss has a gap where ff/fi/fl/ft stood. NOT repaired: the obvious filling is still a guess, and the source page settles it"
+   "gloss": "Biol. fist (often used to mean “hand”, its chief use was in reference of the tighly closed hand, as in using an implement",
+   "gloss_as_extracted": "Biol. st (o en used to mean “hand”, its chief use was in reference of the tighly closed hand, as in using an implement pen-nod — 67 —",
+   "gloss_repair": {
+    "read_by": "hand, against corpus/t1_5_the_lost_road_and_other_writings.txt, 16 Aug 2026",
+    "note": "`tighly` IS LEFT EXACTLY AS PUBLISHED. It is either the compilers' typo or a second extraction slip, and silently correcting a third party's spelling is a different act from restoring a glyph the extractor dropped.",
+    "bleed_removed": "pen-nod — 67 —",
+    "bleed_belongs_to": "a neighbouring headword and the page number, run together",
+    "witness": "KWAR- Q qare fist; ON pore\\ N paur, -bor, cf. Celebrimbor Silver-",
+    "witness_cite": "HoME V, The Etymologies, stem KWAR- (tier 1) — verified verbatim in the corpus by this tool before it was written"
+   },
+   "conf_gloss": "[C]"
   },
   {
    "form": "pen-nod",
@@ -7896,8 +7976,17 @@
    "cite": "Ety/383,, LotR/Index,, RC/523,551,, PE/17:96,98,",
    "ipa": "rˈɑθ",
    "pos": "n",
-   "gloss": "-364,367 1. course, riverbed ○ 2. -364 track (o en applied to ways known to mountaineers, to passes in the moun- tains and the climbing ways to them, to tracks across a marshland or trails in forest) ○ 3. pp. woven, nett",
-   "gloss_damaged": "a ligature was lost in extraction -- this gloss has a gap where ff/fi/fl/ft stood. NOT repaired: the obvious filling is still a guess, and the source page settles it"
+   "gloss": "1. course, riverbed ○ 2. track (often applied to ways known to mountaineers, to passes in the mountains and the climbing ways to them,",
+   "gloss_as_extracted": "-364,367 1. course, riverbed ○ 2. -364 track (o en applied to ways known to mountaineers, to passes in the moun- tains and the climbing ways to them, to tracks across a marshland or trails in forest) ○ 3. pp. woven, nett",
+   "gloss_repair": {
+    "read_by": "hand, against corpus/t1_5_the_lost_road_and_other_writings.txt, 16 Aug 2026",
+    "note": "'course, river-bed' is Tolkien's own phrase and the compilers reproduce it. One `ft` and one rejoined line-break (`moun- tains`).",
+    "bleed_removed": "-364,367  and  -364",
+    "bleed_belongs_to": "PAGE-REFERENCE FRAGMENTS from the citation column, which is why they look like part of a numbered sense and are not",
+    "witness": "*ratta: O N rattha course, river-bed, N rath",
+    "witness_cite": "HoME V, The Etymologies, stem RAT- (tier 1) — verified verbatim in the corpus by this tool before it was written"
+   },
+   "conf_gloss": "[C]"
   },
   {
    "form": "raudh",
@@ -8011,8 +8100,15 @@
    "cite": "Ety/384, Ety/383, Ety/383,, VT/46:11",
    "ipa": "rˈiːð",
    "pos": "n",
-   "gloss": "→ ^renia- rhœin → ^rein II rhenio inf. → ^renia- rhenn → ^rend rhess → ^riss rhofel → roval rhest → ^rest rhom → rom rhomru — 71 — rhomru → ^romru rîdh sown eld, acre, tilled ground",
-   "gloss_damaged": "a ligature was lost in extraction -- this gloss has a gap where ff/fi/fl/ft stood. NOT repaired: the obvious filling is still a guess, and the source page settles it"
+   "gloss": "→ ^renia-",
+   "gloss_as_extracted": "→ ^renia- rhœin → ^rein II rhenio inf. → ^renia- rhenn → ^rend rhess → ^riss rhofel → roval rhest → ^rest rhom → rom rhomru — 71 — rhomru → ^romru rîdh sown eld, acre, tilled ground",
+   "gloss_repair": {
+    "read_by": "hand, against corpus/t1_5_the_lost_road_and_other_writings.txt, 16 Aug 2026",
+    "note": "The worst structural case of the fifteen and the one no ligature rule touches. Ten entries became one.",
+    "bleed_removed": "rhœin → ^rein II rhenio inf. → ^renia- rhenn → ^rend rhess → ^riss rhofel → roval rhest → ^rest rhom → rom rhomru — 71 — rhomru → ^romru rîd",
+    "bleed_belongs_to": "NINE FURTHER CROSS-REFERENCE ENTRIES and a page number, collapsed into one row. Purely structural: not a ligature in it"
+   },
+   "conf_gloss": "[I-H]"
   },
   {
    "form": "rhosg",
@@ -11434,8 +11530,17 @@
    "conf": "[EXT]",
    "cite": "Ety/386, Ety/386,, VT/48:17, LotR/VI:",
    "ipa": "ˈɛmlin",
-   "gloss": "(emmelin emmel → emel en I art. of the (genitival article)",
-   "gloss_damaged": "a ligature was lost in extraction -- this gloss has a gap where ff/fi/fl/ft stood. NOT repaired: the obvious filling is still a guess, and the source page settles it"
+   "gloss": "(emmelin, emmel) → emel",
+   "gloss_as_extracted": "(emmelin emmel → emel en I art. of the (genitival article)",
+   "gloss_repair": {
+    "read_by": "hand, against corpus/t1_5_the_lost_road_and_other_writings.txt, 16 Aug 2026",
+    "note": "THE WITNESS RECOVERS THE SENSE THE ROW NEVER CARRIED. SMAL- 'yellow' glosses *asmalinde as 'yellow bird, yellow hammer', so `emlin` is the yellowhammer — and the row itself is only a pointer to `emel`. The variants the damage ran together, `emmelin` and `emmel`, are both in the witness as em(m)elint.",
+    "bleed_removed": "en I art. of the (genitival article)",
+    "bleed_belongs_to": "the entry for `en`, the genitival article — a neighbour",
+    "witness": "ON ammale, ammalinde, N em(m)elint emlin",
+    "witness_cite": "HoME V, The Etymologies, stem SMAL- (tier 1) — verified verbatim in the corpus by this tool before it was written"
+   },
+   "conf_gloss": "[C]"
   },
   {
    "form": "ened",
@@ -12036,8 +12141,17 @@
    "cite": "Ety/375",
    "ipa": "gɔnˈɑθrɑ",
    "pos": "v",
-   "gloss": "to en- gruin",
-   "gloss_damaged": "a ligature was lost in extraction -- this gloss has a gap where ff/fi/fl/ft stood. NOT repaired: the obvious filling is still a guess, and the source page settles it"
+   "gloss": "to entangle",
+   "gloss_as_extracted": "to en- gruin",
+   "gloss_repair": {
+    "read_by": "hand, against corpus/t1_5_the_lost_road_and_other_writings.txt, 16 Aug 2026",
+    "note": "THE CLEANEST RESULT OF THE FIFTEEN. The published gloss was the two characters 'to en-' — a hyphenated line-break whose continuation was dropped — and the Etymologies gives the word outright under NAT- 'lace, weave, tie'.",
+    "bleed_removed": "gruin",
+    "bleed_belongs_to": "a fragment of a neighbouring headword",
+    "witness": "gonathra- entangle, enmesh, gonathras entanglement",
+    "witness_cite": "HoME V, The Etymologies, stem NAT- (tier 1) — verified verbatim in the corpus by this tool before it was written"
+   },
+   "conf_gloss": "[C]"
   },
   {
    "form": "gornodui",
@@ -12397,8 +12511,13 @@
    "conf": "[EXT]",
    "cite": "PE/22:148, PE/22:",
    "ipa": "hˈɑðwɑ",
-   "gloss": "(hadhma- hadhwad, arhadhwad and archath (?). The two rst seem to be gerunds, see also arahadhw and ^hadhu",
-   "gloss_damaged": "a ligature was lost in extraction -- this gloss has a gap where ff/fi/fl/ft stood. NOT repaired: the obvious filling is still a guess, and the source page settles it"
+   "gloss": "(hadhma-) hadhwad, arhadhwad and archath (?). The two first seem to be gerunds, see also arahadhw and ^hadhu",
+   "gloss_as_extracted": "(hadhma- hadhwad, arhadhwad and archath (?). The two rst seem to be gerunds, see also arahadhw and ^hadhu",
+   "gloss_repair": {
+    "read_by": "hand, against corpus/t1_5_the_lost_road_and_other_writings.txt, 16 Aug 2026",
+    "note": "LIGATURE ONLY (`rst` -> `first`). Cites PE/22, not the Etymologies, and no form of it occurs there."
+   },
+   "conf_gloss": "[I-H]"
   },
   {
    "form": "hadlath",
@@ -15429,5 +15548,6 @@
    "pos": "adj",
    "gloss": "(inib ) card. -9 → ýneg ýneg (yneg - 9) card. twelve → Linguistics masculine Military domain mutation noun proper name nasal mutation ordinal (number) Ornithology past tense participle pejorative register perfective plur"
   }
- ]
+ ],
+ "gloss_damage_note": "15 glosses arrived damaged from the PDF's text layer. Read by hand against HoME V's Etymologies on 16 Aug 2026: the damage is TWO faults — lost ligature glyphs (fi/fl/ft/ffi) and COLUMN BLEED, text spliced in from a neighbouring entry, a running head or a page number. 9 rows carry a tier-1 witness from the Etymologies and are marked [C]; the rest rest on the ligature pattern and are marked [I-H]. 2 remain flagged because their tail is genuinely lost."
 }
