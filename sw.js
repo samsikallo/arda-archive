@@ -1,19 +1,13 @@
 // Arda Archive service worker v2 — content-hashed version; shell precached; stale-while-revalidate runtime.
-const V="arda-49e4a9097d";
-const SHELL=["404.html", "ainur.html", "annals.html", "arda.css", "arda_timeline.html", "armies_dashboard.html", "artifacts.html", "baynes.html", "canon.html", "character.html", "compare.html", "corpus.html", "cosmology.html", "gallery.html", "gazetteer.html", "genealogy.html", "glossary.js", "gondolin.html", "heraldry.html", "heraldry.js", "index.html", "languages.html", "living.html", "map.html", "names.html", "nav.js", "oaths.html", "place.html", "poems.html", "population_dashboard.html", "portraits.js", "quiz.html", "quotes.js", "realms.html", "reckoning.html", "sheets.html", "silences.html", "speak.js", "theindex.html", "touch.js", "tours.html", "valinor.html", "writing.html", "manifest.json", "icon-192.png", "icon-512.png", "map_1366.jpeg"];
+const V="arda-e4146f6c84";
+const SHELL=["404.html", "ainur.html", "annals.html", "arda.css", "arda_timeline.html", "armies_dashboard.html", "artifacts.html", "baynes.html", "canon.html", "character.html", "codex.css", "codex.js", "compare.html", "corpus.html", "cosmology.html", "gallery.html", "gazetteer.html", "genealogy.html", "glossary.js", "gondolin.html", "heraldry.html", "heraldry.js", "index.html", "languages.html", "living.html", "map.html", "names.html", "nav.js", "oaths.html", "place.html", "poems.html", "population_dashboard.html", "portraits.js", "quiz.html", "quotes.js", "realms.html", "reckoning.html", "sheets.html", "silences.html", "speak.js", "theindex.html", "touch.js", "tours.html", "valinor.html", "writing.html", "manifest.json", "icon-192.png", "icon-512.png", "map_1366.jpeg"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(V).then(c=>c.addAll(SHELL.map(u=>new Request(u,{cache:"reload"})))).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!=V).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
 self.addEventListener("fetch",e=>{
 if(e.request.method!="GET"||new URL(e.request.url).origin!=location.origin)return;
 e.respondWith(caches.open(V).then(async c=>{
 const hit=await c.match(e.request,{ignoreSearch:true});
-/* A CACHE WRITE MAY NEVER BREAK A FETCH. Two concurrent revalidations of the same request
-   race on Cache.put and Chromium throws InvalidAccessError 'Entry already exists' -- an
-   UNHANDLED REJECTION, which traverse_check counts against a measured baseline of zero, so
-   it refused every session's push. The entry IS in the cache when this throws; the write
-   simply lost a race it did not need to win. Swallowed deliberately, and only here. */
-const net=fetch(e.request).then(r=>{if(r.ok)c.put(e.request,r.clone()).catch(()=>{});return r})
-  .catch(()=>null);
+const net=fetch(e.request).then(r=>{if(r.ok)c.put(e.request,r.clone());return r}).catch(()=>null);
 if(hit){e.waitUntil(net);return hit}
 const r=await net;
 if(r)return r;

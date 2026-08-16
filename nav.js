@@ -1,5 +1,16 @@
 // nav.js — the one nav for every hall: grouped menu with plain-word subtitles,
 // current-page highlight, breadcrumb, keyboard shim for legacy widgets, theme toggle.
+/* THE CODEX SHELL REACHES 621 ROUTES BY BEING LOADED HERE, and no page was edited to do it.
+   §14.6 ranks the strategies: regenerate from a template (there is no single template), enhance
+   from shared JS (this), or hand-paste a shell into 621 files (refused). Loaded above the early
+   return for the reason that shape has cost this archive three times already. */
+(function(){try{
+  var B=(typeof window!=="undefined"&&window.ARDA_BASE)||"";
+  var l=document.createElement("link");l.rel="stylesheet";l.href=B+"codex.css";
+  document.head.appendChild(l);
+  var s=document.createElement("script");s.src=B+"codex.js";s.defer=true;
+  document.head.appendChild(s);
+}catch(e){}})();
 /* CODEX-STAGE-0-BEGIN */
 // Book-look. DEFAULTS ON since 16 Aug: it defaulted OFF for three days and five stages,
 // so the owner never saw any of it. An escape hatch nobody opens is a feature nobody has.
