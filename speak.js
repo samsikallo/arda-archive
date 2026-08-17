@@ -1,3 +1,11 @@
+(function(){try{
+  if(document.getElementById("i-audio"))return;
+  var s=document.createElementNS("http://www.w3.org/2000/svg","svg");
+  s.setAttribute("style","display:none");s.setAttribute("aria-hidden","true");
+  s.innerHTML='<symbol id="i-audio" viewBox="0 0 16 16"><path d="M3 6.2h2.4L8 3.8v8.4L5.4 9.8H3Z M10.6 6.2a3 3 0 0 1 0 3.6 M12.6 4.6a5.6 5.6 0 0 1 0 6.8"/></symbol>';
+  document.addEventListener("DOMContentLoaded",function(){document.body.appendChild(s);});
+  if(document.body)document.body.appendChild(s);
+}catch(e){}})();
 // Spoken Arda — pronunciation via the browser's speech synthesis, driven by App E's rules.
 // Returns a respelling + the list of App E rules applied, so the sound is explainable.
 (function(){
@@ -49,5 +57,5 @@ speechSynthesis.cancel();speechSynthesis.speak(u);
 return r;};
 // helper: turn any element into a speak-button target
 window.ardaSpeakBtn=function(name){
-return `<span onclick="event.stopPropagation();speakArda('${name.replace(/'/g,"\\'")}')" title="hear it (App E rules)" style="cursor:pointer;user-select:none">🔊</span>`;};
+return `<span onclick="event.stopPropagation();speakArda('${name.replace(/'/g,"\\'")}')" title="hear it (App E rules)" style="cursor:pointer;user-select:none"><svg class=ai aria-hidden=true><use href=#i-audio /></svg></span>`;};
 })();
