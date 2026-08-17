@@ -626,3 +626,20 @@ background:#221c15!important;color:var(--n-ink)!important;border-color:#4a3f2c!i
    page's ink in either theme. */
 .ai{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;
   stroke-linejoin:round;vertical-align:-.12em}
+/* A CODED GROUND KEEPS ITS COLOUR AND TAKES DARK INK. The blazon swatches (#fdf3df inferred,
+   #efe8d6 silent, #f2ecf7) ENCODE a device's basis -- the same kind of distinction as Gondolin's
+   pastel spans, which CLAUDE.md forbids recolouring. So the ground stays and the ink inverts. */
+/* [style] raises specificity above the card-wide `color:inherit` rule, which scores as a
+   CLASS because :is() takes its highest-specificity argument -- being later in the file is
+   not enough. These are the swatches that carry an inline coded background. */
+/* #main RAISES THIS TO ID STRENGTH, and it has to. The card-wide `color:inherit` rule above
+   uses :is(.hcard,...,#narr,#otd,#panel,#hosts) -- and :is() TAKES THE HIGHEST SPECIFICITY
+   OF ITS ARGUMENTS, so one ID in that list scores the whole selector as an ID: (1,3,0).
+   No amount of classes or attributes beats it, and being later in the file does not either.
+   THE SPANS ONLY. The DIVS in .blz were given a DARK ground earlier, so forcing dark ink on
+   them put dark on dark and cost 22 nodes -- the two carry opposite treatments and must not
+   share a rule. */
+:root[data-theme="dark"] #main .blz span[style]{color:#3a3226!important}
+/* Parchment inks left on the night card in containers the earlier pass did not name. */
+:root[data-theme="dark"] :is(#hcredits,#warlist,.pcard) :is(a,span,div,b,.era,.cite),
+:root[data-theme="dark"] td.q .inf{color:#c9b98f!important}
