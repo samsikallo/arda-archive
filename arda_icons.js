@@ -29,6 +29,17 @@
     word:    "M3.2 12.8 11 5l1.8 1.8-7.8 7.8-2.4.6Z M10.2 3.8l1.4-1.4 2.2 2.2-1.4 1.4",
     element: "M8 2 14 12.8H2Z",
     root:    "M2.6 8.2h2.6L8 13.4 11 2.6h3",
+    /* front-door tile kinds */
+    map:      "M1.8 4 6 2.4l4 1.6 4.2-1.6v9.6L10 13.6l-4-1.6-4.2 1.6Z M6 2.4v9.6 M10 4v9.6",
+    crown:    "M2.4 11.6h11.2 M2.4 11.6 3.2 5l3 3L8 3.4 9.8 8l3-3 .8 6.6Z",
+    scroll:   "M4 2.6h7.4a1.6 1.6 0 0 1 1.6 1.6v9.2H5.6a1.6 1.6 0 0 1-1.6-1.6Z M4 2.6a1.6 1.6 0 0 0-1.6 1.6v1.6H4 M6.4 6h4.4 M6.4 8.6h4.4",
+    scales:   "M8 2.4v10.4 M4 12.8h8 M2.6 5.2h10.8 M2.6 5.2 1 9.2h3.2Z M13.4 5.2 15 9.2h-3.2Z",
+    cosmos:   "M8 2.2a5.8 5.8 0 1 0 .01 0Z M8 2.2a5.8 5.8 0 0 1 0 11.6Z",
+    music:    "M6 12.2V4l6.4-1.4v8.2 M6 12.2a1.8 1.8 0 1 1-1.6-1.8 M12.4 10.8a1.8 1.8 0 1 1-1.6-1.8",
+    art:      "M8 2.2c3.4 0 5.8 2.3 5.8 5.2 0 1.9-1.5 2.7-2.8 2.7H9.6c-.9 0-1.4.7-1.4 1.4 0 .5.3.8.3 1.2 0 .6-.5 1.1-1.2 1.1-3 0-5.1-2.7-5.1-5.8C2.2 4.7 4.6 2.2 8 2.2Z M5.4 6.6a.9.9 0 1 0 .01 0Z M9.4 5.4a.9.9 0 1 0 .01 0Z",
+    flag:     "M4 14V2.4 M4 3c3-1.2 5.6 1.2 8.6 0v5.6c-3 1.2-5.6-1.2-8.6 0Z",
+    silence:  "M8 2.6a5.4 5.4 0 1 0 .01 0Z M4.6 4.6l6.8 6.8",
+    reckon:   "M8 2.4a5.6 5.6 0 1 0 .01 0Z M8 5v3.3l2.4 1.4 M8 1v1.4 M14.2 3.4l-1 1",
     phrase:  "M4 4.4c-1.4.9-2 2.1-2 3.7h2.6V4.4Z M11 4.4c-1.4.9-2 2.1-2 3.7h2.6V4.4Z"
   };
   var A = {
@@ -36,7 +47,9 @@
     phial: "phial", horn: "horn", mail: "mail", ram: "battering ram", token: "token",
     person: "person", people: "peoples", event: "event", battle: "battle", blade: "blade",
     host: "host", place: "place", journey: "journey", word: "word", element: "element",
-    root: "root", phrase: "phrase"
+    root: "root", phrase: "phrase", map: "map", crown: "crown", scroll: "scroll",
+    scales: "scales", cosmos: "cosmos", music: "music", art: "art", flag: "flag",
+    silence: "silence", reckon: "reckoning"
   };
   /* The mark is DECORATIVE beside a label that already names the thing, so it is aria-hidden and
      carries no title: announcing "jewel" twice is worse than not announcing it once. Where a mark
