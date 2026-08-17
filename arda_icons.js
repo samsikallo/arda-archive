@@ -29,6 +29,8 @@
     word:    "M3.2 12.8 11 5l1.8 1.8-7.8 7.8-2.4.6Z M10.2 3.8l1.4-1.4 2.2 2.2-1.4 1.4",
     element: "M8 2 14 12.8H2Z",
     root:    "M2.6 8.2h2.6L8 13.4 11 2.6h3",
+    letters:  "M3.4 12.6 6.8 3.4h2.4l3.4 9.2 M4.9 9.6h6.2",
+    book:     "M2.6 3.2h4.2c.7 0 1.2.5 1.2 1.2v8.4c0-.7-.5-1.2-1.2-1.2H2.6Z M13.4 3.2H9.2c-.7 0-1.2.5-1.2 1.2v8.4c0-.7.5-1.2 1.2-1.2h4.2Z",
     /* front-door tile kinds */
     map:      "M1.8 4 6 2.4l4 1.6 4.2-1.6v9.6L10 13.6l-4-1.6-4.2 1.6Z M6 2.4v9.6 M10 4v9.6",
     crown:    "M2.4 11.6h11.2 M2.4 11.6 3.2 5l3 3L8 3.4 9.8 8l3-3 .8 6.6Z",
@@ -47,7 +49,7 @@
     phial: "phial", horn: "horn", mail: "mail", ram: "battering ram", token: "token",
     person: "person", people: "peoples", event: "event", battle: "battle", blade: "blade",
     host: "host", place: "place", journey: "journey", word: "word", element: "element",
-    root: "root", phrase: "phrase", map: "map", crown: "crown", scroll: "scroll",
+    root: "root", phrase: "phrase", letters: "letters", book: "book", map: "map", crown: "crown", scroll: "scroll",
     scales: "scales", cosmos: "cosmos", music: "music", art: "art", flag: "flag",
     silence: "silence", reckon: "reckoning"
   };
