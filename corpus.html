@@ -72,6 +72,7 @@ h2{font-variant:small-caps;font-weight:normal;color:#5a4626;border-bottom:1px so
  letter-spacing:0}
 #p-shelf .ser[open]>summary{border-bottom:1px solid rgba(122,74,18,.18)}
 #p-shelf .ser>.grid{padding:.55rem}
+#p-shelf .ser.sub{border-style:dashed}
 #p-shelf .ser>.grid>.cite{color:#5f5138}
 #p-shelf .nome{color:#7a4a12;border:1px solid rgba(122,74,18,.4);border-radius:2px;
  padding:0 .3rem;font-size:.7rem;margin-left:.3rem}
@@ -309,7 +310,30 @@ function init(){
       '<div class="grid"><div class="cite" style="grid-column:1/-1;margin:0 0 .3rem">'+esc(blurb)+'</div>'+
       mine.sort((a,b)=>num(a)-num(b)).map(card).join("")+'</div></details>');
   });
-  return out.join("")+'<div class="grid">'+left.sort(byWords).map(card).join("")+'</div>';
+  /* Second tier: 77 loose cards grouped by subject, first rule wins. docs/CORPUS_HALL.md */
+  const SUBJ=[
+   ["Art and illustration", s=>s.kind==='art'||s.covers==="Tolkien's own hand"||s.covers==='the films, not the books'],
+   ["The languages and the scripts", s=>s.covers==='the languages'||s.kind==='linguistic'],
+   ["Tolkien's own writing, and Christopher's editions",
+     s=>/J\.R\.R\. Tolkien|Christopher Tolkien/.test(s.hand||'')||/^an editor/.test(s.hand||'')],
+   ["Reference and apparatus", s=>s.kind==='reference'||s.kind==='apparatus'],
+   ["Outside the canon", s=>s.tier===4],
+   ["Scholarship about Tolkien", s=>true]
+  ];
+  SUBJ.forEach(([name,test])=>{
+    const mine=left.filter(test);
+    if(!mine.length) return;
+    mine.forEach(s=>left.splice(left.indexOf(s),1));
+    const w=mine.reduce((t,s)=>t+(s.words||0),0);
+    const tiers=[...new Set(mine.map(s=>s.tier))].sort();
+    const unread=mine.filter(s=>!(s.words>0)).length;
+    out.push('<details class="ser sub"><summary>'+esc(name)+
+      ' <span class="n">'+mine.length+' volume'+(mine.length===1?'':'s')+
+      ' · '+w.toLocaleString()+' words · tier '+tiers.join("/")+
+      (unread?' · '+unread+' held but not readable':'')+'</span></summary>'+
+      '<div class="grid">'+mine.sort(byWords).map(card).join("")+'</div></details>');
+  });
+  return out.join("")+(left.length?'<div class="grid">'+left.sort(byWords).map(card).join("")+'</div>':'');
  }
  fetch("arda_corpusmap.json").then(r=>r.json()).then(j=>{
    FX=j;
