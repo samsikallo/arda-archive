@@ -605,3 +605,21 @@ html{background:#efe6cd}
 :root[data-theme="dark"] :is(#swout img,#scout img,.sq img,img[src*="sarati/"]:not([src*="sarati_vowel_"])){filter:invert(1)}
 :root[data-theme="dark"] :is(img[src*="/illustrated/"],img[src*="sarati_vowel_"]){background:#e9dec2;padding:2px}
 /* DARK-CONTRAST-END */
+
+/* `.dcard .tk` paints #f5edd8 and is a CHILD of .dcard, so an earlier rule aimed at .dcard never
+   reached it -- nothing "beat !important", the wrong element was named. Ink stays; ground moves. */
+:root[data-theme="dark"] .dcard .tk{background:#2a2318 !important;color:#e8dcc0 !important;
+  border-left-color:#c9a227 !important}
+/* The light CARD GRADIENT family: linear-gradient(#fdfaf2,#f7f0de) on cards that were never
+   darkened with the rest of the night palette. Ground AND ink together -- moving only the ground
+   turns a light-on-light failure into a dark-on-dark one, which is how an earlier attempt made
+   the count worse while looking like progress. */
+:root[data-theme="dark"] :is(.hcard,.intro,.tourcard,#narr,.ours,#otd,#panel)
+  {background:linear-gradient(#221c15,#1d1811) !important;color:var(--n-ink) !important;
+   border-color:#4a3f2c !important}
+/* Children of those cards hardcode muted tones chosen for a LIGHT card -- #4a4030, #7a4a12,
+   #7a6a50 -- so darkening the card left them at 1.66:1. The ink follows the ground it sits on. */
+:root[data-theme="dark"] :is(.hcard,.intro,.tourcard,#narr,.ours,#otd,#panel,#hosts)
+  :is(.cite,.era,b,i,em,span,p,div,h3,h4){color:inherit !important}
+:root[data-theme="dark"] :is(.hcard,.intro,.tourcard,#narr,.ours,#otd,#panel,#hosts) a
+  {color:#d9b544 !important}
