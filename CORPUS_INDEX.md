@@ -1,5 +1,28 @@
 # THE CORPUS INDEX — Phase 1 of the re-ingestion
 ### All twenty-eight volumes of /home/raz/samsi, machine-extracted in full, structurally indexed, and concordanced.
+
+> **THIS IS THE PHASE 1 RECORD, AND ITS NUMBERS ARE THE NUMBERS OF THAT DAY.** Re-measured
+> **17 August 2026**: the shelf was **194 registered sources**, the index held **99 texts** and
+> **9,170,420 words**, **192** corpus texts were readable, and the concordance held **937 entities**
+> over **98** documents — not the 541 over 28 the body records.
+>
+> **AND THE GAP THAT HEADER DESCRIBED IS CLOSED, 18 August 2026.** The index held 99 of 192
+> readable texts; **93 volumes and 4,268,679 words — 31.1% of the corpus — were outside the
+> searcher**, and of those 93, one was tier 1, 87 tier 3 and five tier 4. Both indices are rebuilt:
+> the structure index holds **192 texts and 13,711,157 words**, and the canon searcher's postings
+> index covers **194 volumes, 322,457 terms, 12,042,768 postings**. The 17 August figures above are
+> kept in the past tense rather than overwritten, which is the whole of the convention this header
+> was written to demonstrate: **a corrected absence is written past-tense, or with its retraction
+> attached.**
+> 
+> The body below is **kept unaltered on purpose**. It is a dated record of what Phase 1 did,
+> exactly as `HANDOFF.md` and `LEDGER.md` are, and this archive's rule is that such a record
+> stays true to its day. What was wrong was not the numbers but the TENSE: written in the
+> present, a count becomes a standing assertion that ages without inviting anyone to check
+> it. This header is the retraction the rule asks for, so a reader arriving from the front
+> door — which advertises 99 texts and 9,170,420 words — is not handed a document that
+> contradicts the link that sent them.
+
 Total extracted text: **5,615,333 words** across 28 volumes. Every volume's full text backs the archive's audits. The entity concordance (arda_concordance.json: 541 entities, 77,372 located mentions) is narrower and says so here: it is counted over 28 of the 49 volumes — atlas, beren_bl, bolt1, bolt2 … — so two entities compared in it are compared over the same 28 books and not over the shelf. The 21 outside it are apptables, artfotr, artist, artwork, companion_t, forodrim and 15 more. Widening is not automatic: hobbit_ill is the same book as hobbit and would double-count, and roleplay and companion_t are tier 3/4.
 
 | volume | words | content types |

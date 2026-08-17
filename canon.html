@@ -1,8 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512">
-<title>Is it canon? — the Arda Archive</title><!--ARDA:META--><meta name="description" content="Ask whether a phrase is Tolkien's and see which volume attests it: a full-text search over 99 indexed volumes of the archive's 194-source shelf, answering from the rarest words of your query and naming which ones it used."><meta property="og:title" content="Is it canon? — the Arda Archive"><meta property="og:description" content="Ask whether a phrase is Tolkien's and see which volume attests it: a full-text search over 99 indexed volumes of the archive's 194-source shelf, answering from the rarest words of your query and naming which ones it used."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/canon.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/canon.html"><!--/ARDA:META-->
-<meta name="description" content="Ask whether a phrase is Tolkien's, and see which volume attests it and where. Searched over 99 volumes and 8,088,881 word positions.">
+<title>Is it canon? — the Arda Archive</title><!--ARDA:META--><meta name="description" content="Ask whether a phrase is Tolkien's and see which volume attests it: a full-text search over 192 indexed volumes of the archive's 194-source shelf, answering from the rarest words of your query and naming which ones it used."><meta property="og:title" content="Is it canon? — the Arda Archive"><meta property="og:description" content="Ask whether a phrase is Tolkien's and see which volume attests it: a full-text search over 192 indexed volumes of the archive's 194-source shelf, answering from the rarest words of your query and naming which ones it used."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/canon.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/canon.html"><!--/ARDA:META-->
+<!-- a second, stale description meta was removed here; compose.py owns that field -->
 <link rel="stylesheet" href="arda.css">
 <style>
 :root{--ink:#3a3226;--mut:#7a6a50;--line:#b0a58e;--gold:#c9a227}
@@ -28,7 +28,7 @@ kbd{font:12px monospace;background:#e8dfc4;padding:1px 5px;border:1px solid var(
 </style></head><body>
 <a class="a-skip" href="#main">skip to content</a>
 <div id="hdr"><h1>Is it canon?</h1><nav id="ardanav" aria-label="Archive halls"></nav>
-<span class="sub">ask whether a phrase is Tolkien's — answered from 99 volumes and 8,088,881 word positions</span></div>
+<span class="sub">ask whether a phrase is Tolkien's — answered from <span id="nvol2">the whole</span> indexed shelf</span></div>
 <div role="main" class="wrap" id="main">
 
 <div id="bar">
@@ -41,11 +41,12 @@ kbd{font:12px monospace;background:#e8dfc4;padding:1px 5px;border:1px solid var(
 
 <div class="limits">
 <b>What this can and cannot tell you.</b>
-It searches the archive's <i>corpus</i> — 99 volumes, tiered, listed in the Corpus hall — for the
+It searches the archive's <i>corpus</i> — <span id="nvol">every</span> volume it holds, tiered,
+listed in the Corpus hall — for the
 words of your phrase, and reports every place where <b>all of them occur on one line or on two
 neighbouring lines</b>.
 <br><br>
-<b>Two lines, because this corpus is hard-wrapped.</b> 74 of its 99 volumes break at about 73
+<b>Two lines, because this corpus is hard-wrapped.</b> 110 of its volumes break at about 72
 characters, so a long phrase is usually split. Measured over 12,000 sampled phrases: a nine-word
 phrase falls on a single line only <b>42%</b> of the time, and within two lines <b>88%</b> — so a
 one-line search missed the majority of them. It missed Frodo's own greeting in
@@ -58,7 +59,7 @@ each word is, to the line; it does not record their order within it. So a hit is
 and not a quotation, and this page will not pretend otherwise.
 <br><br>
 <b>“Not attested” means this corpus does not hold it</b> — not that Tolkien never wrote it. The
-shelf is 99 volumes and it is not everything: sixteen held volumes are image-only scans with no
+shelf is <span id="nvol3">large</span> and it is not everything: some held volumes are image-only scans with no
 text to search, and they are named in the Corpus hall.
 <br><br>
 <b>Long phrases are answered from their rarest words.</b> A query of nine words is answered from
@@ -104,7 +105,15 @@ function shardOf(term){
 }
 
 var MAN=null, CACHE={}, READY;
-READY=fetch('arda_corpus_index.json').then(r=>r.json()).then(m=>{MAN=m;return m;}).catch(()=>{
+/* volume counts read from the manifest, never typed -- a typed one decays. CLAUDE.md, 18 Aug. */
+READY=fetch('arda_corpus_index.json').then(r=>r.json()).then(m=>{MAN=m;
+  var _n=document.getElementById('nvol');
+  if(_n&&m.volumes) _n.textContent='all '+m.volumes.length;
+  var _n2=document.getElementById('nvol2');
+  if(_n2&&m.volumes) _n2.textContent='the '+m.volumes.length+'-volume';
+  var _n3=document.getElementById('nvol3');
+  if(_n3&&m.volumes) _n3.textContent=m.volumes.length+' volumes';
+  return m;}).catch(()=>{
   document.getElementById('out').innerHTML='<div class="verdict no">The index could not be loaded, '+
     'so nothing was searched. <b>This is not an answer about Arda</b> — it is a failure to ask.</div>';
 });
@@ -144,13 +153,17 @@ function ask(){
     if(miss.length){
       out.innerHTML='<div class="verdict no">Not attested in this corpus.</div>'+
         '<div class="cite">No volume holds <b>'+miss.map(esc).join('</b>, <b>')+'</b>. '+
-        'That means these 99 volumes do not have the word — not that Tolkien never wrote it.</div>';
+        'That means these '+(MAN&&MAN.volumes?MAN.volumes.length:'indexed')+' volumes do not have the word — not that Tolkien never wrote it.</div>';
       return;
     }
     /* ── THE WINDOW IS TWO LINES, BECAUSE THE CORPUS IS HARD-WRAPPED ──────────────────────────
-       This required all terms on ONE line and so lost most long phrases: 74 of 99 volumes break
-       at ~73 chars, and a nine-word phrase falls on one line only 41.7% of the time (measured,
-       12,000 sampled phrases per length). It missed Frodo's greeting in The Lord of the Rings,
+       This required all terms on ONE line and so lost most long phrases: 110 of the 194 indexed
+       volumes break at ~72 chars, and a nine-word phrase falls on one line only 41.7% of the time
+       (measured, 12,000 sampled phrases per length).
+       WRAP PREDICATE, named because the old one was lost: median non-blank line length 45-95
+       chars; 110 of 194 pass at a median width of 72. The 41.7%/87.9% figures are the 12 Aug
+       sampling, not re-measured. Full reasoning: CLAUDE.md, 18 Aug.
+       It missed Frodo's greeting in The Lord of the Rings,
        answering from four secondary volumes instead. Two lines takes nine words to 87.9%.
        Query-side only -- the postings already carry line numbers, nothing was reindexed.
        Full measurement and the two citation faults found with it: CLAUDE.md, 12 Aug. */
@@ -215,8 +228,9 @@ function ask(){
              evidence than one held on a single line, and the reader is told the split rather
              than left to assume the stronger reading. */
           '<b>'+tight+'</b> of these sit entirely on one line; the rest are carried across two '+
-          'neighbouring lines, which this corpus does constantly — 74 of its 99 volumes are '+
-          'hard-wrapped at about 73 characters, so a phrase of nine words falls on a single '+
+          'neighbouring lines, which this corpus does constantly — 110 of its '+
+          (MAN.volumes?MAN.volumes.length:'')+' volumes are '+
+          'hard-wrapped at about 72 characters, so a phrase of nine words falls on a single '+
           'line only 42% of the time.</div>';
     vols.forEach(function(v){
       var vol=MAN.volumes[+v]||{file:'volume '+v};

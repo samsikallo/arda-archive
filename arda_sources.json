@@ -2304,6 +2304,8 @@
    "text_held": {
     "corpus_file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
     "words": 308243,
+    "relation": "SAME_EDITION_OTHER_DIGITISATION",
+    "evidence": "MEASURED: 308,243 words from the epub against 308,261 from the PDF -- an 18-word difference across 308,000, which is a re-flow and not a different book.",
     "why": "the same edition, read from the epub rather than this PDF. Measured, not assumed: the two digitisations of the Revised and Expanded Letters give 308,243 words from the epub against 308,261 from the PDF, an 18-word difference across 308,000. The epub is the one extracted, so this row reports no text of its own -- and DUPLICATE_DIGITISATION in map/extract_corpus.py keeps it that way, because a register holding one edition twice is how the archive came to publish 13 contradictory attributions."
    }
   },
@@ -2322,6 +2324,8 @@
    "text_held": {
     "corpus_file": "t1_9_sauron_defeated.txt",
     "words": 196545,
+    "relation": "PRINTED_TRANSLITERATION",
+    "evidence": "t1_9_sauron_defeated.txt:4573-4630",
     "why": "Christopher Tolkien printed the text of this very manuscript, with a transliteration of both its English and its Sindarin, in HoME IX -- and said in the same breath exactly where the tengwar and the transliteration DISAGREE: the English transliteration omits Arathornsson and adds `day` where the tengwar read `the thirty-first of the Stirring`, and `and Arnor, ar Arnor` was added to both tengwar texts and is absent from both transliterations. All three copies are given, at t1_9_sauron_defeated.txt:4573-4630. So the archive is not owed a machine reading of the plate: it holds the Estate's own reading of it, including the variants an OCR pass could not have known were there. The .png remains what it always was -- a picture with no text layer, correctly extracting to nothing."
    }
   },

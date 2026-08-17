@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512"><title>The Corpus — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Corpus: 194 registered sources across four tiers, 99 of them indexed to the word — the shelf grouped by series, the 937-entity concordance, and live research queries over the archive's datasets."><meta property="og:title" content="The Corpus — the Arda Archive"><meta property="og:description" content="The Corpus: 194 registered sources across four tiers, 99 of them indexed to the word — the shelf grouped by series, the 937-entity concordance, and live research queries over the archive's datasets."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/corpus.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/corpus.html"><!--/ARDA:META-->
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512"><title>The Corpus — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Corpus: 194 registered sources across four tiers, 192 of them indexed to the word — the shelf grouped by series, the 937-entity concordance, and live research queries over the archive's datasets."><meta property="og:title" content="The Corpus — the Arda Archive"><meta property="og:description" content="The Corpus: 194 registered sources across four tiers, 192 of them indexed to the word — the shelf grouped by series, the 937-entity concordance, and live research queries over the archive's datasets."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/corpus.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/corpus.html"><!--/ARDA:META-->
 <link rel="stylesheet" href="arda.css">
 <!-- THE STALE TEMPLATE. CLAUDE.MD RULE 3: gen_corpus.py splices this into site/corpus.html, so
      anything the built page gained from another tool is reverted on the next run. MEASURED,
@@ -130,7 +130,7 @@ h2{font-variant:small-caps;font-weight:normal;color:#5a4626;border-bottom:1px so
  </div>
 </div>
 
-<div class="ft">The shelf and concordance are machine-built from the full-text extractions of all 99 texts (re-ingested 2026-07-24, when the shelf grew to 194 registered sources); questions run over the same datasets that power every hall — <a href="arda_chronology.json">chronology</a> · <a href="arda_realms.json">realms</a> · <a href="arda_languages.json">languages</a>. Where a dataset cannot answer, the answer is the refusal, not a guess.</div>
+<div class="ft">The shelf and concordance are machine-built from the full-text extractions of all 192 texts (re-ingested 2026-07-24, when the shelf grew to 194 registered sources); questions run over the same datasets that power every hall — <a href="arda_chronology.json">chronology</a> · <a href="arda_realms.json">realms</a> · <a href="arda_languages.json">languages</a>. Where a dataset cannot answer, the answer is the refusal, not a guess.</div>
 </div>
 <script>
 const $=s=>document.querySelector(s);
@@ -224,6 +224,9 @@ function init(){
     :(s.text_held
        ?'<div class="fx-u">no text of its own — its text is held in '+esc(s.text_held.corpus_file)+
           ' ('+(s.text_held.words||0).toLocaleString()+' words)</div>'+
+        /* relation + evidence: closed vocabulary, refused at build time -- gen_sources.py */
+        '<div class="cite"><b>'+esc((s.text_held.relation||'').replace(/_/g,' ').toLowerCase())+
+          '</b> — '+esc(s.text_held.evidence||'')+'</div>'+
         '<div class="cite">'+esc(s.text_held.why)+'</div>'
        :'<div class="fx-u">held on the shelf, not yet readable — no extracted text</div>')
       +(v&&v.tags?'<div class="cite">'+esc(v.tags)+'</div>':''))+
