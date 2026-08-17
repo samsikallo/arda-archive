@@ -2,7 +2,8 @@
  "what": "Quenya vocabulary mined from Thorsten Renk's course, tier 3.",
  "source": "corpus/t3_quenya_quetin_i_lambe_eldaiva_a_quenya_course_renk.txt",
  "scope": "ONLY the VOCABULARY tables. Renk's GRAMMAR is his reconstruction -- a teaching grammar systematises what Tolkien left unfinished, and where it fills a gap it is Renk's rule and not Tolkien's. The word lists are where he reports attested forms with glosses.",
- "conf": "[EXT] on every row -- it rests on Renk's reading.",
+ "conf": "[EXT]",
+ "conf_note": "[EXT] on every row -- it rests on Renk's reading.",
  "n_entries": 252,
  "words": [
   {

@@ -3,7 +3,7 @@
  "why_not_per_article": "a row per article would bury the 190 books this archive is built on under a thousand rows of periodical literature, in a file the corpus hall fetches on every visit. The unit that matters is the run; the journal's own site indexes the articles better.",
  "not_extracted": "NONE of these is extracted into corpus/. They are tier-3 scholarship and could be, but sweeping several hundred files into the citable set in one commit would be a claim that they were read. Extraction is a separate decision, by touch, recorded when it is taken.",
  "n_runs": 3,
- "n_articles": 2570,
+ "n_articles": 2704,
  "runs": [
   {
    "journal": "Inklings Forever",
@@ -39,8 +39,8 @@
    "terms": "fully open access; the complete run is free to read and download",
    "note": "Published since 1969, covering Tolkien, Lewis and Williams. The longest continuous run of Inklings scholarship there is.",
    "dir": "sources/openaccess/mythlore",
-   "articles": 1875,
-   "bytes": 2920424135,
+   "articles": 2009,
+   "bytes": 3102829971,
    "extracted_to_corpus": false,
    "how_obtained": "map/oa_fetch.py, a real browser: the publisher's download endpoint answers HTTP 202 behind an AWS WAF JavaScript challenge that curl cannot solve. Every file verified as a PDF by magic bytes and a page count before it was kept."
   }
