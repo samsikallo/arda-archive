@@ -379,10 +379,13 @@ html{background:#efe6cd}
 .chip,.tag,.pill{color:#2a241a !important}
 
 
+/* #e9f3e4 WAS in the list above and is removed: it is the BLAZON'S 'artwork' CODE, not a
+   decorative light background. Darkening it made one of the five provenance swatches read
+   differently from the other four, which is the distinction being encoded. The swatch keeps
+   its colour at night and takes dark ink; see the coded-swatch rule further down. */
 :root[data-theme="dark"] [style*="#fffdf5"],
 :root[data-theme="dark"] [style*="#fdfaf2"],
 :root[data-theme="dark"] [style*="#f7f0de"],
-:root[data-theme="dark"] [style*="#e9f3e4"],
 :root[data-theme="dark"] .card,
 :root[data-theme="dark"] .intro,
 :root[data-theme="dark"] .hit,
@@ -631,7 +634,14 @@ background:#221c15!important;color:var(--n-ink)!important;border-color:#4a3f2c!i
    CLASS because :is() takes its highest-specificity argument -- being later in the file is
    not enough. These are the swatches that carry an inline coded background. */
 /* #main is needed: the card-wide rule's :is() contains IDs, so it scores ID-strength. */
-:root[data-theme="dark"] #main .blz span[style]{color:#3a3226!important}
+/* ONLY the five CODED swatches take dark ink -- artwork, design, text, inferred, silent --
+   matched on the background they carry. The earlier rule hit every .blz span[style], and
+   some of those sit on the CARD's dark ground, so dark ink made them 1.30:1. */
+:root[data-theme="dark"] #main .blz span[style*="background:#e9f3e4"],
+:root[data-theme="dark"] #main .blz span[style*="background:#e6eef7"],
+:root[data-theme="dark"] #main .blz span[style*="background:#f2ecf7"],
+:root[data-theme="dark"] #main .blz span[style*="background:#fdf3df"],
+:root[data-theme="dark"] #main .blz span[style*="background:#efe8d6"]{color:#3a3226!important}
 /* Parchment inks left on the night card in containers the earlier pass did not name. */
 :root[data-theme="dark"] :is(#hcredits,#warlist,.pcard) :is(a,span,div,b,.era,.cite),
 :root[data-theme="dark"] td.q .inf{color:#c9b98f!important}
