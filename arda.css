@@ -379,10 +379,7 @@ html{background:#efe6cd}
 .chip,.tag,.pill{color:#2a241a !important}
 
 
-/* #e9f3e4 WAS in the list above and is removed: it is the BLAZON'S 'artwork' CODE, not a
-   decorative light background. Darkening it made one of the five provenance swatches read
-   differently from the other four, which is the distinction being encoded. The swatch keeps
-   its colour at night and takes dark ink; see the coded-swatch rule further down. */
+/* #e9f3e4 is NOT here: it is a blazon provenance CODE. docs/DARK_CONTRAST_ANATOMY.md */
 :root[data-theme="dark"] [style*="#fffdf5"],
 :root[data-theme="dark"] [style*="#fdfaf2"],
 :root[data-theme="dark"] [style*="#f7f0de"],
