@@ -642,3 +642,29 @@ background:#221c15!important;color:var(--n-ink)!important;border-color:#4a3f2c!i
 /* Parchment inks left on the night card in containers the earlier pass did not name. */
 :root[data-theme="dark"] :is(#hcredits,#warlist,.pcard) :is(a,span,div,b,.era,.cite),
 :root[data-theme="dark"] td.q .inf{color:#c9b98f!important}
+
+/* DARK-CONTRAST-2 -- 195 dark-theme failures to an expected 8. Every rule names ground AND ink.
+   Measured 39/39 halls, 43,994 visible text nodes. Reasoning: docs/DARK_CONTRAST_ANATOMY.md.
+   Comments are deliberately few: this file is fetched by all 621 halls. */
+:root[data-theme="dark"]{--mut:#c3b28c}
+:root[data-theme="dark"] #main #hcredits,
+:root[data-theme="dark"] #main #hcredits .cite,
+:root[data-theme="dark"] #main #hcredits .cite a{color:#c9b98f !important}
+:root[data-theme="dark"] [style*="#5a4a30"]{color:#c9b98f !important}
+:root[data-theme="dark"] [style*="#f7efd8"]{background:#2c2214 !important;color:#e8dcc0 !important}
+:root[data-theme="dark"] .method{background:#221c15 !important;color:var(--n-ink) !important;
+ border-color:#4a3f2c !important}
+:root[data-theme="dark"] #p-shelf .fx-u{color:#e08b6a !important}
+:root[data-theme="dark"] #nm .f.true{color:#8fce9f !important;border-color:#5f8f4a !important}
+:root[data-theme="dark"] #nm .f.nottrue{color:#e0b878 !important;border-color:#8a6a2f !important}
+/* NOT theme-scoped: svg#bmap keeps light paper in BOTH themes by the drawn-map ruling, so the
+   defect and the fix are the same in both. `>` excludes g#formlayer's labels, whose fill is the
+   side's colour code from map/gen_formations.py:191. */
+svg#bmap > text,
+svg#bmap > g > text{fill:#6d5f47 !important}
+:root[data-theme="dark"] #main .qtxt{color:#d8bd86 !important}
+:root[data-theme="dark"] #bar #count{color:#c3b28c !important}
+:root[data-theme="dark"] #hpanlab{color:#c3b28c !important}
+:root[data-theme="dark"] kbd{background:#2a2318 !important;color:#e8dcc0 !important;
+ border-color:#5a4c32 !important}
+/* DARK-CONTRAST-2-END */
