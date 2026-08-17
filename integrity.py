@@ -12,6 +12,18 @@ Six guards, each earned by a real fault:
   1. SHRINKAGE     a dataset that loses entries without the baseline being updated.
                    (The search index fell 2,421 -> 2,024 across three regenerations
                    and nothing noticed.)
+                   1a. NO BASELINE — a dataset this guard reads but has never
+                   recorded, and therefore can never call shrunken. The arm was
+                   `was is not None`: a dataset absent from the baseline took the
+                   `elif`, matched nothing, and was skipped IN SILENCE. On 17 Aug
+                   the Auditor measured the cost: 85 datasets globbed, 64 baseline
+                   entries, so **20 tracked published datasets had no shrinkage
+                   floor at all** and the guard reported "85 datasets checked — OK".
+                   A guard that skips a fifth of its population and says OK is the
+                   archive's rule-5 fault in its exact form. Absence from a registry
+                   is invisible by construction, so it has to be enumerated, and
+                   only a TRACKED file is a published one — `arda_westgate.json` is
+                   live work and is named, not failed.
   2. TWINS         the same claim held in two files, which must agree.
                    (Framsburg's caveat went into arda_livingmap while
                    arda_timemap_jpeg kept the uncorrected pin. Twice: the
@@ -31,8 +43,16 @@ Six guards, each earned by a real fault:
 
 Run from site/:  python3 integrity.py            check
                  python3 integrity.py --accept "reason"   re-baseline deliberately
+                 python3 integrity.py --adopt            baseline ONLY the unbaselined
+
+WHY `--adopt` EXISTS AND `--accept` IS NOT THE REMEDY. The fix for a missing baseline
+looks like `--accept`, and it must not be: `--accept` rewrites ALL 64 existing entries
+from current counts, so a dataset that had genuinely shrunk would have its loss
+recorded as the new floor in the same keystroke that repaired an unrelated gap. That
+is how a shrinkage guard launders a shrinkage. `--adopt` writes an entry only where
+there is none, refuses to modify one that exists, and prints every entry it added.
 """
-import json,os,sys,re,glob
+import json,os,sys,re,glob,subprocess
 
 SITE=os.path.dirname(os.path.abspath(__file__))
 BASELINE=os.path.join(SITE,".integrity_baseline.json")
@@ -75,6 +95,24 @@ CANON_TAG=re.compile(r"\[C\]")
 
 def fail(msgs,m): msgs.append(m)
 
+_TRACKED=None
+def _tracked(f):
+    """Is this path in the index? Measured once, from git, and never from os.path.exists.
+
+    Fails CLOSED: if git cannot be asked, every dataset counts as tracked, so the answer
+    when the reader is broken is "owed a baseline" and not "exempt".
+    """
+    global _TRACKED
+    if _TRACKED is None:
+        try:
+            out=subprocess.check_output(["git","-C",SITE,"ls-files","-z"],stderr=subprocess.DEVNULL)
+            _TRACKED=set(out.decode("utf-8").split("\0"))
+        except Exception:
+            _TRACKED=False
+    if _TRACKED is False: return True
+    return f in _TRACKED
+
+
 def check():
     os.chdir(SITE)
     errs,warns,notes=[],[],[]
@@ -82,14 +120,28 @@ def check():
     counts={}
 
     # 1. SHRINKAGE
+    unbaselined=[]
     for f in sorted(glob.glob("arda_*.json")):
         try: counts[f]=count(f)
         except Exception as e: fail(errs,"UNREADABLE %s (%s)"%(f,str(e)[:60])); continue
         was=base.get("counts",{}).get(f)
-        if was is not None and counts[f]<was:
+        if was is None:
+            unbaselined.append(f)                 # 1a — enumerated, never skipped in silence
+        elif counts[f]<was:
             fail(errs,"SHRANK   %-28s %d -> %d  (was %d at baseline)"%(f,was,counts[f],was))
-        elif was is not None and counts[f]>was:
+        elif counts[f]>was:
             notes.append("grew    %-28s %d -> %d"%(f,was,counts[f]))
+
+    # 1a. NO BASELINE. Tracked means published, and only a published dataset is owed a
+    # floor; live untracked work is named so the absence is visible without being a
+    # refusal. `git ls-files` is the reader here for the reason the readers table gives:
+    # the convenient test (does the file exist?) fails toward ABSENCE of protection.
+    for f in unbaselined:
+        if _tracked(f):
+            fail(errs,"NO BASELINE %-25s %d entries, never recorded — this guard cannot "
+                      "call it shrunken. Run --adopt."%(f,counts[f]))
+        else:
+            notes.append("no baseline, and untracked so not published: %-22s %d entries"%(f,counts[f]))
 
     # 2. TWINS
     for label,fa,fb,probe,why in TWINS:
@@ -189,6 +241,27 @@ def main():
     for n in notes: print("  ·",n)
     for w in warns: print("  ⚠", w)
     for e in errs:  print("  ✗", e)
+    if "--adopt" in sys.argv:
+        base=json.load(open(BASELINE)) if os.path.exists(BASELINE) else {"counts":{}}
+        had=dict(base.get("counts",{}))
+        added={}
+        for f,n in sorted(counts.items()):
+            if f in had: continue
+            if not _tracked(f):
+                print("  skipped (untracked, so not published): %s"%f); continue
+            added[f]=n; print("  adopted %-28s %d entries"%(f,n))
+        if not added:
+            print("\nnothing to adopt — every tracked dataset already has a floor"); return 0
+        base.setdefault("counts",{}).update(added)
+        # PROVE we changed nothing that existed, before writing.
+        for f,n in had.items():
+            if base["counts"][f]!=n:
+                print("\n  ✗ REFUSING: --adopt would have altered the existing floor for %s "
+                      "(%d -> %d). That is --accept's job, not this one."%(f,n,base["counts"][f]))
+                return 1
+        json.dump(base,open(BASELINE,"w"),indent=1)
+        print("\n%d floor(s) adopted; %d existing floor(s) untouched"%(len(added),len(had)))
+        return 0
     if "--accept" in sys.argv:
         why=sys.argv[sys.argv.index("--accept")+1] if len(sys.argv)>sys.argv.index("--accept")+1 else "(no reason given)"
         json.dump({"counts":counts,"accepted":why},open(BASELINE,"w"),indent=1)
