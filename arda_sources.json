@@ -2258,13 +2258,13 @@
    "file": "Bilbos_Last_Song_-_JRR_Tolkien.pdf",
    "tier": 1,
    "attribution": "J.R.R. Tolkien; illustrated by Pauline Baynes (1990)",
-   "note": "Tolkien's own poem, and the last he wrote for publication -- so tier 1 without question. EXTRACTION: CORRECTLY EMPTY -- 41 pages yielding 2,144 words, 52 a page, which is a picture book with captions rather than a text layer. `extract_corpus.py` refuses under 200 characters a page and is right to. NOT OCR'd, and that is a judgement rather than an omission: the poem is three stanzas, its whole value is the exact wording, and this archive has MEASURED that tesseract destroys precisely the diacritic-bearing forms a poem is wanted for. A machine reading of a short poem would be worse than the honest absence.",
+   "note": "Tolkien's own poem, and the last he wrote for publication -- so tier 1 without question. EXTRACTION: PLATE-TRANSCRIBED, 17 Aug, and this row previously said the absence was correct. The old reasoning held that the poem's whole value is its exact wording and that tesseract destroys the diacritic-bearing forms a poem is wanted for, so a machine reading would be worse than an honest absence. THE MEASUREMENT WAS RIGHT AND THE CONCLUSION WAS TOO NARROW. Right: run at 300 dpi over Baynes's paintings, tesseract returned `he \"ghJay is ended` for `Day is ended` -- every stanza's decorated initial defeats it. Too narrow twice. First, the argument was about a MACHINE reading, and it never considered a reader looking at the plate; all twelve verse plates were read directly, and the tesseract pass kept only as a second opinion. Second, the diacritic argument does not actually reach this poem: THERE IS NOT ONE ACCENTED CHARACTER IN ITS 24 LINES, so the specific destruction measured was of forms this text does not contain. The metrical division is corroborated by the book's own structure rather than assumed -- twelve verse plates in three groups of four, two metrical lines a plate, giving 3 stanzas of 8 and couplet rhyme throughout -- and the printed display layout is preserved plate by plate beneath the poem so the source's own form is not lost. The PDF's own text layer, 12,040 characters, is front matter plus Baynes's `Notes on the Pictures` and carries none of the verse: pages 1-3 and 6-8 return zero characters.",
    "primary_text": true,
    "present": true,
    "bytes": 11268487,
    "pages": 41,
    "corpus_file": "t1_bilbos_last_song_jrr_tolkien.txt",
-   "words": 0
+   "words": 710
   },
   {
    "file": "The Science of Middle-Earth.pdf",
@@ -2300,7 +2300,12 @@
    "bytes": 6063364,
    "pages": 740,
    "corpus_file": "t1_the_letters_of_jrr_tolkien_revised_and_expanded_edit.txt",
-   "words": 0
+   "words": 0,
+   "text_held": {
+    "corpus_file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
+    "words": 308243,
+    "why": "the same edition, read from the epub rather than this PDF. Measured, not assumed: the two digitisations of the Revised and Expanded Letters give 308,243 words from the epub against 308,261 from the PDF, an 18-word difference across 308,000. The epub is the one extracted, so this row reports no text of its own -- and DUPLICATE_DIGITISATION in map/extract_corpus.py keeps it that way, because a register holding one edition twice is how the archive came to publish 13 contradictory attributions."
+   }
   },
   {
    "file": "The King's Letter (manuscript plate).png",
@@ -2313,7 +2318,12 @@
    "cited": 0,
    "bytes": 1965265,
    "corpus_file": "t1_the_king_s_letter_manuscript_plate_png.txt",
-   "words": 0
+   "words": 0,
+   "text_held": {
+    "corpus_file": "t1_9_sauron_defeated.txt",
+    "words": 196545,
+    "why": "Christopher Tolkien printed the text of this very manuscript, with a transliteration of both its English and its Sindarin, in HoME IX -- and said in the same breath exactly where the tengwar and the transliteration DISAGREE: the English transliteration omits Arathornsson and adds `day` where the tengwar read `the thirty-first of the Stirring`, and `and Arnor, ar Arnor` was added to both tengwar texts and is absent from both transliterations. All three copies are given, at t1_9_sauron_defeated.txt:4573-4630. So the archive is not owed a machine reading of the plate: it holds the Estate's own reading of it, including the variants an OCR pass could not have known were there. The .png remains what it always was -- a picture with no text layer, correctly extracting to nothing."
+   }
   },
   {
    "file": "Parma Eldalamberon 11.pdf",

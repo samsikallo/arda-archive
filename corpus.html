@@ -221,7 +221,11 @@ function init(){
     ?((v&&v.words)?'<div class="bar" style="width:'+Math.max(6,Math.round(v.words/maxw*100))+'%"></div>'+
         '<div class="cite">'+v.words.toLocaleString()+' words · '+esc(v.tags)+'</div>'
        :'<div class="cite">'+s.words.toLocaleString()+' words</div>')
-    :'<div class="fx-u">held on the shelf, not yet readable — no extracted text</div>'
+    :(s.text_held
+       ?'<div class="fx-u">no text of its own — its text is held in '+esc(s.text_held.corpus_file)+
+          ' ('+(s.text_held.words||0).toLocaleString()+' words)</div>'+
+        '<div class="cite">'+esc(s.text_held.why)+'</div>'
+       :'<div class="fx-u">held on the shelf, not yet readable — no extracted text</div>')
       +(v&&v.tags?'<div class="cite">'+esc(v.tags)+'</div>':''))+
   (s.text_provenance?'<div class="cite">text provenance: '+esc(s.text_provenance)+'</div>':'')+
   /* two figures, never summed; no figure at all prints nothing -- unknown is not zero. */
