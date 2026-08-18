@@ -442,7 +442,10 @@
 @media (min-width:900px){
   :root[data-codex="on"] [role="main"] p,
   :root[data-codex="on"] [role="main"] li,
-  :root[data-codex="on"] [role="main"] blockquote{
+  :root[data-codex="on"] [role="main"] blockquote,
+  :root[data-codex="on"] main p,
+  :root[data-codex="on"] main li,
+  :root[data-codex="on"] main blockquote{
     max-width:66ch;
   }
   /* AND THE LEDGER IS PUT BACK, because the cap above is a DESCENDANT rule and a record's
@@ -451,7 +454,10 @@
      explicit rather than expressed as :not(), so a reader of this file can see both halves. */
   :root[data-codex="on"] [role="main"] .grid p,
   :root[data-codex="on"] [role="main"] .grid li,
-  :root[data-codex="on"] [role="main"] .grid blockquote{
+  :root[data-codex="on"] [role="main"] .grid blockquote,
+  :root[data-codex="on"] main .grid p,
+  :root[data-codex="on"] main .grid li,
+  :root[data-codex="on"] main .grid blockquote{
     max-width:none;
   }
 }
@@ -481,7 +487,8 @@
    Mobile needs no separate rule: this whole block is inside `min-width:1100px`, so a narrow
    screen never becomes a grid at all. Verified at 390 -- all 7 single column, no scroll. */
 @media (min-width:1100px){
-  :root[data-codex="on"] [role="main"] .intro:has(> p){
+  :root[data-codex="on"] [role="main"] .intro:has(> p),
+  :root[data-codex="on"] main .intro:has(> p){
     display:grid;
     grid-template-columns:repeat(2,minmax(0,1fr));
     column-gap:clamp(24px,3vw,48px);
@@ -489,6 +496,23 @@
     align-items:start;
   }
 }
+/* ── AND THE THREE RULES ABOVE REACHED 39 ROUTES OF 621 UNTIL 19 AUGUST ─────────────────────
+   The gate was the ATTRIBUTE `[role="main"]`. All 39 halls carry an explicit `role="main"`; all
+   582 generated entity pages use a bare `<main class="card">`, whose ARIA role is IMPLICIT -- and
+   a CSS attribute selector does not match an implicit role. So every person/, place/ and realm/
+   page rendered its prose at 88.0ch, 17% over the top of §12.1's band, while the halls sat at 66.
+
+   THE ASYMMETRY WAS INSIDE THIS FILE AND IT IS WHY THE FAULT WAS INVISIBLE. The codex OBJECT rule
+   already carries a bare-`main` companion, so entity pages got the book, the stock and the shadow
+   -- they looked entirely correct. Only the measure was missing, and a page that looks right is
+   the last place anyone checks. codex.js has always queried `'[role="main"], main'`: the
+   JavaScript handled both and the stylesheet did not.
+
+   Measured as a CENSUS of all 621 routes, not a sample: 582/582 entity pages at 88.0ch before,
+   and the figure is a dead tie because they share one `.card{max-width:660px}` at 15px Georgia --
+   660/7.5 = 88.0 exactly. Verified by setting role="main" at runtime on two of them, which moved
+   computed max-width from `none` to 495px and the measure to 66.0ch on both. */
+
 
 /* ── THE INCOMPLETE LEAF ────────────────────────────────────────────────────────────────────
    §9 calls a blank leaf an anti-pattern, and measured across all 39 halls, ELEVEN of them lost

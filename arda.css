@@ -668,3 +668,48 @@ svg#bmap > g > text{fill:#6d5f47 !important}
 :root[data-theme="dark"] kbd{background:#2a2318 !important;color:#e8dcc0 !important;
  border-color:#5a4c32 !important}
 /* DARK-CONTRAST-2-END */
+
+/* ── THE NIGHT GROUND REACHED EVERY ELEMENT EXCEPT THE ONE BEHIND THEM ALL ───────────────────
+   Measured 19 August 2026 over all 621 routes, in a browser, with the theme proved applied
+   before any count was believed (body resolved to #17140f, and the same probe in light mode
+   returned 184 light patches on heraldry against 1 in dark -- an instrument that moves 184:1
+   across the switch is measuring the theme and not the page):
+
+       light patches in dark mode      1,225 across 621 of 621 routes
+       of which the ROOT CANVAS          621 -- one per route, every single one
+
+   `html{background:#efe6cd}` at :172 exists for a stated reason: it stops the body gradient
+   propagating to the canvas and repeating into hard seams. The dark theme never gave it a
+   counterpart, so the ROOT CANVAS stayed parchment at night on every page in the archive. It is
+   the most visible defect the archive had: 43% of compare.html's viewport, 30% of quiz, 28% of
+   chronicle, and a 212px parchment band under the codex shell on genealogy and tours.
+
+   ONE DECLARATION CLEARS 621 OF 1,225. `!important` is kept for consistency with the block above
+   and to survive a hall writing `html[data-theme]`, but this is NOT the id-beats-attributes case
+   the file documents elsewhere: `<html>` carries no id for a hall to borrow, so the dark rule
+   wins on specificity regardless. */
+:root[data-theme="dark"]{background:var(--n-ground) !important; color-scheme:dark}
+
+/* `color-scheme` is the second half and reaches what no background rule can: the native tick
+   inside a checkbox is UA chrome, and theindex.html's and gazetteer.html's boxes stayed light
+   through an `input{background:…!important}` rule. It darkens the scrollbars with them. */
+
+/* ── THE CODEX VOLUME TABS WERE THE ARCHIVE'S WORST CONTRAST, AND THEY ARE MINE ──────────────
+   `#cx-vols a` renders gold #d9b544 on a #6b5836 tab: 3.88:1 at 11.5px, against AA's 4.5. It is
+   the single most-repeated failure in the archive -- 6 to 7 tabs on every one of 621 routes,
+   about 3,700 instances -- because the tabs were built into codex.css without a night rule and
+   arda.css's blanket `a{color:var(--n-gold)!important}` then painted them.
+
+   THIS IS THE ID CASE THE FILE DOCUMENTS. `#cx-vols a` scores (1,0,1); no number of attributes
+   reaches it, so only an id-scoped dark rule wins. On the card ground the same gold reads 8.6:1. */
+:root[data-theme="dark"] #cx-vols a{background:var(--n-card) !important; color:#e8dcc0 !important}
+:root[data-theme="dark"] #cx-vols a[aria-current="true"]{background:var(--n-raise) !important;
+  color:var(--n-gold) !important}
+
+/* ── AND THE PILL AT THE FOOT OF ALL 582 ENTITY RECORDS ──────────────────────────────────────
+   Every generated person/, place/ and realm/ page ends with `a.go` -- "Open the full record" --
+   painted #efe0bd by the page's own style, with the label repainted gold by arda.css's blanket
+   `a` rule. Gold on parchment: 1.51:1, effectively unreadable, on 582 routes. It was named
+   nowhere in this file. */
+:root[data-theme="dark"] a.go{background:var(--n-raise) !important;
+  border-color:var(--n-line) !important; color:var(--n-gold) !important}
