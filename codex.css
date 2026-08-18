@@ -408,3 +408,84 @@
     display:flex; align-items:center;
   }
 }
+
+/* ── THE READING MEASURE, §12.1 ────────────────────────────────────────────────────────────
+   MEASURED FIRST, in a browser, on a real paragraph, in the page's own font:
+
+       viewport 1440   main 1340px   paragraph 1182px   163 CHARACTERS
+       viewport 1280   main 1216px   paragraph 1068px   147
+       viewport 1100   main 1045px   paragraph  909px   125
+
+   against §12.1's 60-75. At 1440 a line of prose is more than twice as long as a reader can
+   track, and the return sweep -- the eye's jump from the end of one line to the start of the
+   next -- is where a too-long measure actually costs comprehension.
+
+   THE CAP IS ON PROSE AND NOT ON THE LEAF. A leaf is furniture and may be as wide as the book;
+   what has a measure is a line of TEXT. So this caps the elements that hold running prose and
+   deliberately leaves the ledger alone: `#out` is 26,062 characters of RECORDS, laid out in two
+   columns by stage 6, and a record is scanned rather than read. Capping it would fight the
+   grammar built one commit ago.
+
+   `ch` is the right unit and not a guess: 1ch is the advance of "0" in the element's own font,
+   so the rule tracks Georgia at 14.5px and would still track a different face if the archive
+   ever changed one. 66ch sits in the middle of the 60-75 band rather than at its edge.
+
+   AND THE FIRST VERSION OF THIS RULE NAMED `.intro` AND MEASURED ON THE ONE HALL THAT HAS ONE.
+   `.intro` exists on 7 of 39 halls. Enumerated at 1440 across all 39 -- which is the readers-table
+   rule pointed at my own CSS -- the direct-child form left SIX halls over 75ch: languages 200,
+   sheets 200, heraldry 185, writing 176, silences 133, valinor 107. Every one nests its prose
+   deeper than a direct child, and heraldry's is inside an `.intro` the rule could not reach.
+
+   So the selector is STRUCTURAL and not positional: prose is a paragraph anywhere in the leaf,
+   and the ledger is put back by name below. A rule that names the class a hall happens to use
+   is a rule that goes stale the next time a hall is built. */
+@media (min-width:900px){
+  :root[data-codex="on"] [role="main"] p,
+  :root[data-codex="on"] [role="main"] li,
+  :root[data-codex="on"] [role="main"] blockquote{
+    max-width:66ch;
+  }
+  /* AND THE LEDGER IS PUT BACK, because the cap above is a DESCENDANT rule and a record's
+     prose is inside it. A record is scanned, not read: it is already in a 2-column ledger and
+     a second cap inside one would set 66ch inside 585px and waste the leaf. The reset is
+     explicit rather than expressed as :not(), so a reader of this file can see both halves. */
+  :root[data-codex="on"] [role="main"] .grid p,
+  :root[data-codex="on"] [role="main"] .grid li,
+  :root[data-codex="on"] [role="main"] .grid blockquote{
+    max-width:none;
+  }
+}
+
+/* ── THE INTRO BECOMES A SPREAD, WHICH IS WHAT THE MEASURE LEFT UNFINISHED ──────────────────
+   Capping prose at 66ch fixed the line length and left the intro card holding text in its left
+   470px and nothing in its right 750px -- a margin is a good thing and an EMPTY BOX is not, and
+   a bordered card with one half filled reads as the second half having failed to load.
+
+   An intro is already two things: the statement, and the caveat that qualifies it. On ainur
+   those are a <p> and a <blockquote>, and standing them side by side is not decoration -- it is
+   the paired-leaf grammar this codex is built on, applied to the one block that already had two
+   parts and was stacking them.
+
+   TWO COLUMNS EXACTLY, because the grammar is a PAIRED LEAF and a book does not open to three.
+   An earlier version used auto-fit, which fitted three tracks in a 1120px intro and broke
+   heraldry's eight blocks across a row of three -- flexible, and not the thing being built.
+
+   `:has(> p)` IS THE GATE, AND IT IS NOT A STYLE PREFERENCE -- IT PREVENTS SCRAMBLED PROSE.
+   Measured across all 7 halls that carry an .intro: six hold block children (p, ul, blockquote,
+   div) and gazetteer holds `<b>` and `<span>` WITH A BARE TEXT NODE BESIDE THEM. Bare text
+   inside a grid container becomes an ANONYMOUS GRID ITEM, so gazetteer's one sentence would be
+   cut into pieces and dealt into separate tracks -- its prose reordered on screen by a layout
+   rule. The six safe halls all have a direct-child <p> and the one unsafe hall has none, so the
+   gate is exactly the measured population rather than a list of hall names.
+
+   Mobile needs no separate rule: this whole block is inside `min-width:1100px`, so a narrow
+   screen never becomes a grid at all. Verified at 390 -- all 7 single column, no scroll. */
+@media (min-width:1100px){
+  :root[data-codex="on"] [role="main"] .intro:has(> p){
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    column-gap:clamp(24px,3vw,48px);
+    row-gap:10px;
+    align-items:start;
+  }
+}
