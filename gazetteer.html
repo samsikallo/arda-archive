@@ -102,7 +102,7 @@ anywhere.</span></div>
 <div id="list"></div>
 </div>
 <script src="nav.js"></script>
-<script>function aJ(u){return fetch(u).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.json()})["catch"](function(e){(self.__aF=self.__aF||[]).push(u);throw e})}</script>
+<script>var __aF=[],__aN=0;function aJ(u){var R=document.documentElement,d=function(){if(--__aN<1)R.removeAttribute("data-loading")};__aN++;R.setAttribute("data-loading","1");return fetch(u).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.json()}).then(function(j){d();return j},function(e){d();__aF.push(u);throw e})}</script>
 <script>
 
 aJ("arda_gazetteer.json").then(d=>{

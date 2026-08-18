@@ -518,3 +518,51 @@
 }
 :root[data-codex="on"] #cx-fail .cx-retry:hover,
 :root[data-codex="on"] #cx-fail .cx-retry:focus-visible{border-color:var(--cx-rubric)}
+
+/* ── THE LEAF BEING WRITTEN ─────────────────────────────────────────────────────────────────
+   Measured 18 Aug by holding every dataset request 2.5s (async route handler -- a SYNC one
+   blocks the driver rather than the request, and the service worker must be blocked or it
+   answers from cache; both defeated an earlier attempt at this measurement):
+
+       at 1.0s into the load, NINE of eleven data halls showed no waiting cue whatsoever
+       and ZERO halls set aria-busy. tours.html showed a completely blank leaf -- 0 characters.
+
+   character and place already did the right thing by hand -- "Summoning the record…" and
+   "Unrolling the charts…" -- so, as with the failure notice, the archive had a habit that most
+   halls did not follow.
+
+   THE CUE IS CSS SO IT DOES NOT WAIT FOR JAVASCRIPT. `data-loading` is set by aJ() inside each
+   hall's own first inline script, which runs before nav.js, before codex.js, and before the
+   fetch resolves -- so the rule below applies at the first paint that has this stylesheet, with
+   no scripting between the two. codex.js still adds aria-busy for assistive technology; that is
+   the layer that CAN afford to be late, because it is announced rather than seen.
+
+   `:empty` GUARDS IT: the cue is drawn only where the leaf's record container is still empty.
+   A hall that already has its records on screen and is quietly fetching a second dataset must
+   not tell the reader it is waiting -- living.html fetches three.
+
+   THE CUE IS NOT SCOPED TO [role="main"], AND THAT IS MEASURED RATHER THAN LAZY. tours.html's
+   [role="main"] is #stage -- an iframe that plays a tour -- and its record list #list sits
+   OUTSIDE main altogether. A rule scoped to the leaf could never reach it, which is how that
+   hall came to show 0 characters while loading. The containers are named directly instead. */
+:root[data-codex="on"][data-loading] .grid:empty::before,
+:root[data-codex="on"][data-loading] #grid:empty::before,
+:root[data-codex="on"][data-loading] #list:empty::before,
+:root[data-codex="on"][data-loading] #out:empty::before,
+:root[data-codex="on"][data-loading] #halls:empty::before{
+  content:"Reading the record\2026";
+  display:block; padding:34px 0; text-align:center;
+  color:var(--cx-mut); font:italic 15px Georgia,serif; letter-spacing:.02em;
+}
+/* The rule breathes rather than spins: a codex is not a progress bar. Motion is opt-out by the
+   reader's own setting, and the text stands unaided when it is off. */
+@media (prefers-reduced-motion:no-preference){
+  :root[data-codex="on"][data-loading] .grid:empty::before,
+  :root[data-codex="on"][data-loading] #grid:empty::before,
+  :root[data-codex="on"][data-loading] #list:empty::before,
+  :root[data-codex="on"][data-loading] #out:empty::before,
+  :root[data-codex="on"][data-loading] #halls:empty::before{
+    animation:cx-breathe 1.9s ease-in-out infinite;
+  }
+  @keyframes cx-breathe{0%,100%{opacity:.45}50%{opacity:.95}}
+}

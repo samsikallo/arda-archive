@@ -385,4 +385,18 @@
     setTimeout(render, 4000);
   })();
 
+
+  /* aria-busy while a dataset is in flight. The SEEN cue is CSS (codex.css, data-loading);
+     this is the ANNOUNCED one, and it can afford to be late. Reasoning: docs/codex-states.md */
+  (function busy() {
+    var main = document.querySelector('[role="main"], main');
+    if (!main) return;
+    function sync() {
+      if (R.hasAttribute("data-loading")) main.setAttribute("aria-busy", "true");
+      else main.removeAttribute("aria-busy");
+    }
+    sync();
+    new MutationObserver(sync).observe(R, { attributes: true, attributeFilter: ["data-loading"] });
+  })();
+
 })();
