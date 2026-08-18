@@ -246,12 +246,6 @@
      ]
     },
     {
-     "part": "The Registers",
-     "entries": [
-      "registers.html"
-     ]
-    },
-    {
      "part": "The Index",
      "entries": [
       "theindex.html"
@@ -7920,7 +7914,7 @@
    "canonicalRoute": "quiz.html",
    "presentation": "paired-leaf",
    "prev": "corpus.html",
-   "next": "registers.html"
+   "next": "theindex.html"
   },
   "realm/alqualonde.html": {
    "volume": "I",
@@ -8786,16 +8780,16 @@
    "prev": "armies_dashboard.html"
   },
   "registers.html": {
-   "volume": "VII",
-   "part": "The Registers",
-   "archetype": "index",
-   "spread": "spread",
-   "title": "The Registers",
+   "volume": null,
+   "part": "Retired Routes",
+   "archetype": "tombstone",
+   "spread": "none",
+   "title": "registers",
    "canonical": "registers.html",
+   "retired": true,
+   "successor": "ainur.html",
    "canonicalRoute": "registers.html",
-   "presentation": "paired-leaf",
-   "prev": "quiz.html",
-   "next": "theindex.html"
+   "presentation": "single-folio"
   },
   "sheets.html": {
    "volume": "I",
@@ -8829,7 +8823,7 @@
    "canonical": "theindex.html",
    "canonicalRoute": "theindex.html",
    "presentation": "paired-leaf",
-   "prev": "registers.html",
+   "prev": "quiz.html",
    "next": "tours.html"
   },
   "tours.html": {
@@ -8911,7 +8905,6 @@
    "compare.html",
    "corpus.html",
    "quiz.html",
-   "registers.html",
    "theindex.html",
    "tours.html"
   ]
