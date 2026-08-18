@@ -8,6 +8,7 @@
   "annals.html": "the brief places archive annals in Volume II; the owner moved it to Encyclopedia on 30 July because its subject is the ARCHIVE and not Arda. The owner's ruling wins and the divergence is recorded.",
   "living.html": "the halls put it under Peoples; the brief's Volume IV contents list puts a herbarium with relics and devices. The brief is followed."
  },
+ "schemaVersion": 1,
  "n_routes": 621,
  "n_volumes": 7,
  "volumes": [
@@ -272,7 +273,9 @@
    "archetype": "carpet",
    "spread": "none",
    "title": "A Lost Folio",
-   "canonical": "404.html"
+   "canonical": "404.html",
+   "canonicalRoute": "404.html",
+   "presentation": "single-folio"
   },
   "ainur.html": {
    "volume": "III",
@@ -281,6 +284,8 @@
    "spread": "spread",
    "title": "The Ainur",
    "canonical": "ainur.html",
+   "canonicalRoute": "ainur.html",
+   "presentation": "paired-leaf",
    "next": "character.html"
   },
   "annals.html": {
@@ -290,6 +295,8 @@
    "spread": "spread",
    "title": "Annals of the Archive",
    "canonical": "annals.html",
+   "canonicalRoute": "annals.html",
+   "presentation": "paired-leaf",
    "next": "compare.html"
   },
   "arda_timeline.html": {
@@ -299,6 +306,8 @@
    "spread": "full",
    "title": "The Timeline",
    "canonical": "arda_timeline.html",
+   "canonicalRoute": "arda_timeline.html",
+   "presentation": "full-bleed",
    "next": "armies_dashboard.html"
   },
   "arda_timemap.html": {
@@ -309,7 +318,9 @@
    "title": "arda_timemap",
    "canonical": "arda_timemap.html",
    "retired": true,
-   "successor": "map.html"
+   "successor": "map.html",
+   "canonicalRoute": "arda_timemap.html",
+   "presentation": "single-folio"
   },
   "arda_timemap_jpeg.html": {
    "volume": null,
@@ -319,7 +330,9 @@
    "title": "arda_timemap_jpeg",
    "canonical": "arda_timemap_jpeg.html",
    "retired": true,
-   "successor": "map.html"
+   "successor": "map.html",
+   "canonicalRoute": "arda_timemap_jpeg.html",
+   "presentation": "single-folio"
   },
   "armies_dashboard.html": {
    "volume": "II",
@@ -328,6 +341,8 @@
    "spread": "full",
    "title": "Armies and Campaigns",
    "canonical": "armies_dashboard.html",
+   "canonicalRoute": "armies_dashboard.html",
+   "presentation": "full-bleed",
    "prev": "arda_timeline.html",
    "next": "reckoning.html"
   },
@@ -338,6 +353,8 @@
    "spread": "spread",
    "title": "Artefacts",
    "canonical": "artifacts.html",
+   "canonicalRoute": "artifacts.html",
+   "presentation": "paired-leaf",
    "next": "gallery.html"
   },
   "baynes.html": {
@@ -347,6 +364,8 @@
    "spread": "full",
    "title": "The Marked Sheet",
    "canonical": "baynes.html",
+   "canonicalRoute": "baynes.html",
+   "presentation": "full-bleed",
    "next": "gazetteer.html"
   },
   "canon.html": {
@@ -356,6 +375,8 @@
    "spread": "spread",
    "title": "Is It Canon?",
    "canonical": "canon.html",
+   "canonicalRoute": "canon.html",
+   "presentation": "paired-leaf",
    "next": "cosmology.html"
   },
   "character.html": {
@@ -365,6 +386,8 @@
    "spread": "spread",
    "title": "Records of Persons",
    "canonical": "character.html",
+   "canonicalRoute": "character.html",
+   "presentation": "paired-leaf",
    "prev": "ainur.html",
    "next": "genealogy.html"
   },
@@ -376,7 +399,9 @@
    "title": "chronicle",
    "canonical": "chronicle.html",
    "retired": true,
-   "successor": "map.html"
+   "successor": "map.html",
+   "canonicalRoute": "chronicle.html",
+   "presentation": "single-folio"
   },
   "compare.html": {
    "volume": "VII",
@@ -385,6 +410,8 @@
    "spread": "spread",
    "title": "Side by Side",
    "canonical": "compare.html",
+   "canonicalRoute": "compare.html",
+   "presentation": "paired-leaf",
    "prev": "annals.html",
    "next": "corpus.html"
   },
@@ -395,6 +422,8 @@
    "spread": "spread",
    "title": "The Corpus",
    "canonical": "corpus.html",
+   "canonicalRoute": "corpus.html",
+   "presentation": "paired-leaf",
    "prev": "compare.html",
    "next": "quiz.html"
   },
@@ -405,6 +434,8 @@
    "spread": "full",
    "title": "Cosmology",
    "canonical": "cosmology.html",
+   "canonicalRoute": "cosmology.html",
+   "presentation": "full-bleed",
    "prev": "canon.html",
    "next": "oaths.html"
   },
@@ -415,6 +446,8 @@
    "spread": "full",
    "title": "The Plate Book",
    "canonical": "gallery.html",
+   "canonicalRoute": "gallery.html",
+   "presentation": "full-bleed",
    "prev": "artifacts.html",
    "next": "heraldry.html"
   },
@@ -425,6 +458,8 @@
    "spread": "spread",
    "title": "Gazetteer",
    "canonical": "gazetteer.html",
+   "canonicalRoute": "gazetteer.html",
+   "presentation": "paired-leaf",
    "prev": "baynes.html",
    "next": "gondolin.html"
   },
@@ -435,6 +470,8 @@
    "spread": "full",
    "title": "The Family Trees",
    "canonical": "genealogy.html",
+   "canonicalRoute": "genealogy.html",
+   "presentation": "full-bleed",
    "prev": "character.html",
    "next": "population_dashboard.html"
   },
@@ -445,6 +482,8 @@
    "spread": "spread",
    "title": "Houses of Gondolin",
    "canonical": "gondolin.html",
+   "canonicalRoute": "gondolin.html",
+   "presentation": "paired-leaf",
    "prev": "gazetteer.html",
    "next": "map.html"
   },
@@ -455,6 +494,8 @@
    "spread": "spread",
    "title": "Hall of Heraldry",
    "canonical": "heraldry.html",
+   "canonicalRoute": "heraldry.html",
+   "presentation": "paired-leaf",
    "prev": "gallery.html",
    "next": "living.html"
   },
@@ -464,7 +505,9 @@
    "archetype": "carpet",
    "spread": "full",
    "title": "The Archive",
-   "canonical": "index.html"
+   "canonical": "index.html",
+   "canonicalRoute": "index.html",
+   "presentation": "full-bleed"
   },
   "languages.html": {
    "volume": "V",
@@ -473,6 +516,8 @@
    "spread": "spread",
    "title": "Tongues and Letters",
    "canonical": "languages.html",
+   "canonicalRoute": "languages.html",
+   "presentation": "paired-leaf",
    "next": "names.html"
   },
   "living.html": {
@@ -482,6 +527,8 @@
    "spread": "spread",
    "title": "Living Things",
    "canonical": "living.html",
+   "canonicalRoute": "living.html",
+   "presentation": "paired-leaf",
    "prev": "heraldry.html"
   },
   "map.html": {
@@ -491,6 +538,8 @@
    "spread": "full",
    "title": "The Living Map",
    "canonical": "map.html",
+   "canonicalRoute": "map.html",
+   "presentation": "full-bleed",
    "prev": "gondolin.html",
    "next": "place.html"
   },
@@ -501,6 +550,8 @@
    "spread": "spread",
    "title": "The Names of Arda",
    "canonical": "names.html",
+   "canonicalRoute": "names.html",
+   "presentation": "paired-leaf",
    "prev": "languages.html",
    "next": "poems.html"
   },
@@ -511,6 +562,8 @@
    "spread": "spread",
    "title": "Binding Words",
    "canonical": "oaths.html",
+   "canonicalRoute": "oaths.html",
+   "presentation": "paired-leaf",
    "prev": "cosmology.html",
    "next": "silences.html"
   },
@@ -525,7 +578,8 @@
    "entityId": "adalgrim",
    "entityType": "person",
    "sourceRoute": "character.html#adalgrim",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/adamanta.html": {
    "volume": "III",
@@ -538,7 +592,8 @@
    "entityId": "adamanta",
    "entityType": "person",
    "sourceRoute": "character.html#adamanta",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/adrahil.html": {
    "volume": "III",
@@ -551,7 +606,8 @@
    "entityId": "adrahil",
    "entityType": "person",
    "sourceRoute": "character.html#adrahil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aegnor.html": {
    "volume": "III",
@@ -564,7 +620,8 @@
    "entityId": "aegnor",
    "entityType": "person",
    "sourceRoute": "character.html#aegnor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aglahad.html": {
    "volume": "III",
@@ -577,7 +634,8 @@
    "entityId": "aglahad",
    "entityType": "person",
    "sourceRoute": "character.html#aglahad",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/ailinel.html": {
    "volume": "III",
@@ -590,7 +648,8 @@
    "entityId": "ailinel",
    "entityType": "person",
    "sourceRoute": "character.html#ailinel",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aldamir.html": {
    "volume": "III",
@@ -603,7 +662,8 @@
    "entityId": "aldamir",
    "entityType": "person",
    "sourceRoute": "character.html#aldamir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aldor.html": {
    "volume": "III",
@@ -616,7 +676,8 @@
    "entityId": "aldor",
    "entityType": "person",
    "sourceRoute": "character.html#aldor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/almarian.html": {
    "volume": "III",
@@ -629,7 +690,8 @@
    "entityId": "almarian",
    "entityType": "person",
    "sourceRoute": "character.html#almarian",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/almiel.html": {
    "volume": "III",
@@ -642,7 +704,8 @@
    "entityId": "almiel",
    "entityType": "person",
    "sourceRoute": "character.html#almiel",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/amandil.html": {
    "volume": "III",
@@ -655,7 +718,8 @@
    "entityId": "amandil",
    "entityType": "person",
    "sourceRoute": "character.html#amandil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/amarie.html": {
    "volume": "III",
@@ -668,7 +732,8 @@
    "entityId": "amarie",
    "entityType": "person",
    "sourceRoute": "character.html#amarie",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/amdir.html": {
    "volume": "III",
@@ -681,7 +746,8 @@
    "entityId": "amdir",
    "entityType": "person",
    "sourceRoute": "character.html#amdir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/amlaith.html": {
    "volume": "III",
@@ -694,7 +760,8 @@
    "entityId": "amlaith",
    "entityType": "person",
    "sourceRoute": "character.html#amlaith",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/amras.html": {
    "volume": "III",
@@ -707,7 +774,8 @@
    "entityId": "amras",
    "entityType": "person",
    "sourceRoute": "character.html#amras",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/amrod.html": {
    "volume": "III",
@@ -720,7 +788,8 @@
    "entityId": "amrod",
    "entityType": "person",
    "sourceRoute": "character.html#amrod",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/amroth.html": {
    "volume": "III",
@@ -733,7 +802,8 @@
    "entityId": "amroth",
    "entityType": "person",
    "sourceRoute": "character.html#amroth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/anaire.html": {
    "volume": "III",
@@ -746,7 +816,8 @@
    "entityId": "anaire",
    "entityType": "person",
    "sourceRoute": "character.html#anaire",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/anardil_g.html": {
    "volume": "III",
@@ -759,7 +830,8 @@
    "entityId": "anardil_g",
    "entityType": "person",
    "sourceRoute": "character.html#anardil_g",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/anarion_g.html": {
    "volume": "III",
@@ -772,7 +844,8 @@
    "entityId": "anarion_g",
    "entityType": "person",
    "sourceRoute": "character.html#anarion_g",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/andreth.html": {
    "volume": "III",
@@ -785,7 +858,8 @@
    "entityId": "andreth",
    "entityType": "person",
    "sourceRoute": "character.html#andreth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/angamaite.html": {
    "volume": "III",
@@ -798,7 +872,8 @@
    "entityId": "angamaite",
    "entityType": "person",
    "sourceRoute": "character.html#angamaite",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/angelimir.html": {
    "volume": "III",
@@ -811,7 +886,8 @@
    "entityId": "angelimir",
    "entityType": "person",
    "sourceRoute": "character.html#angelimir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/angrod.html": {
    "volume": "III",
@@ -824,7 +900,8 @@
    "entityId": "angrod",
    "entityType": "person",
    "sourceRoute": "character.html#angrod",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/annael_n.html": {
    "volume": "III",
@@ -837,7 +914,8 @@
    "entityId": "annael_n",
    "entityType": "person",
    "sourceRoute": "character.html#annael_n",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arador.html": {
    "volume": "III",
@@ -850,7 +928,8 @@
    "entityId": "arador",
    "entityType": "person",
    "sourceRoute": "character.html#arador",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aradunakhor.html": {
    "volume": "III",
@@ -863,7 +942,8 @@
    "entityId": "aradunakhor",
    "entityType": "person",
    "sourceRoute": "character.html#aradunakhor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/araglas.html": {
    "volume": "III",
@@ -876,7 +956,8 @@
    "entityId": "araglas",
    "entityType": "person",
    "sourceRoute": "character.html#araglas",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aragorn.html": {
    "volume": "III",
@@ -889,7 +970,8 @@
    "entityId": "aragorn",
    "entityType": "person",
    "sourceRoute": "character.html#aragorn",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aragorn1.html": {
    "volume": "III",
@@ -902,7 +984,8 @@
    "entityId": "aragorn1",
    "entityType": "person",
    "sourceRoute": "character.html#aragorn1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aragost.html": {
    "volume": "III",
@@ -915,7 +998,8 @@
    "entityId": "aragost",
    "entityType": "person",
    "sourceRoute": "character.html#aragost",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arahad1.html": {
    "volume": "III",
@@ -928,7 +1012,8 @@
    "entityId": "arahad1",
    "entityType": "person",
    "sourceRoute": "character.html#arahad1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arahad2.html": {
    "volume": "III",
@@ -941,7 +1026,8 @@
    "entityId": "arahad2",
    "entityType": "person",
    "sourceRoute": "character.html#arahad2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arahael.html": {
    "volume": "III",
@@ -954,7 +1040,8 @@
    "entityId": "arahael",
    "entityType": "person",
    "sourceRoute": "character.html#arahael",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aranarth.html": {
    "volume": "III",
@@ -967,7 +1054,8 @@
    "entityId": "aranarth",
    "entityType": "person",
    "sourceRoute": "character.html#aranarth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arantar.html": {
    "volume": "III",
@@ -980,7 +1068,8 @@
    "entityId": "arantar",
    "entityType": "person",
    "sourceRoute": "character.html#arantar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aranuir.html": {
    "volume": "III",
@@ -993,7 +1082,8 @@
    "entityId": "aranuir",
    "entityType": "person",
    "sourceRoute": "character.html#aranuir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aranwe.html": {
    "volume": "III",
@@ -1006,7 +1096,8 @@
    "entityId": "aranwe",
    "entityType": "person",
    "sourceRoute": "character.html#aranwe",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/araphant.html": {
    "volume": "III",
@@ -1019,7 +1110,8 @@
    "entityId": "araphant",
    "entityType": "person",
    "sourceRoute": "character.html#araphant",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/araphor.html": {
    "volume": "III",
@@ -1032,7 +1124,8 @@
    "entityId": "araphor",
    "entityType": "person",
    "sourceRoute": "character.html#araphor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arassuil.html": {
    "volume": "III",
@@ -1045,7 +1138,8 @@
    "entityId": "arassuil",
    "entityType": "person",
    "sourceRoute": "character.html#arassuil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aratan.html": {
    "volume": "III",
@@ -1058,7 +1152,8 @@
    "entityId": "aratan",
    "entityType": "person",
    "sourceRoute": "character.html#aratan",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arathorn.html": {
    "volume": "III",
@@ -1071,7 +1166,8 @@
    "entityId": "arathorn",
    "entityType": "person",
    "sourceRoute": "character.html#arathorn",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arathorn1.html": {
    "volume": "III",
@@ -1084,7 +1180,8 @@
    "entityId": "arathorn1",
    "entityType": "person",
    "sourceRoute": "character.html#arathorn1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/araval.html": {
    "volume": "III",
@@ -1097,7 +1194,8 @@
    "entityId": "araval",
    "entityType": "person",
    "sourceRoute": "character.html#araval",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aravir.html": {
    "volume": "III",
@@ -1110,7 +1208,8 @@
    "entityId": "aravir",
    "entityType": "person",
    "sourceRoute": "character.html#aravir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aravorn.html": {
    "volume": "III",
@@ -1123,7 +1222,8 @@
    "entityId": "aravorn",
    "entityType": "person",
    "sourceRoute": "character.html#aravorn",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arciryas.html": {
    "volume": "III",
@@ -1136,7 +1236,8 @@
    "entityId": "arciryas",
    "entityType": "person",
    "sourceRoute": "character.html#arciryas",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aredhel.html": {
    "volume": "III",
@@ -1149,7 +1250,8 @@
    "entityId": "aredhel",
    "entityType": "person",
    "sourceRoute": "character.html#aredhel",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/argeleb1.html": {
    "volume": "III",
@@ -1162,7 +1264,8 @@
    "entityId": "argeleb1",
    "entityType": "person",
    "sourceRoute": "character.html#argeleb1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/argeleb2.html": {
    "volume": "III",
@@ -1175,7 +1278,8 @@
    "entityId": "argeleb2",
    "entityType": "person",
    "sourceRoute": "character.html#argeleb2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/argimilzor.html": {
    "volume": "III",
@@ -1188,7 +1292,8 @@
    "entityId": "argimilzor",
    "entityType": "person",
    "sourceRoute": "character.html#argimilzor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/argon.html": {
    "volume": "III",
@@ -1201,7 +1306,8 @@
    "entityId": "argon",
    "entityType": "person",
    "sourceRoute": "character.html#argon",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/argonui.html": {
    "volume": "III",
@@ -1214,7 +1320,8 @@
    "entityId": "argonui",
    "entityType": "person",
    "sourceRoute": "character.html#argonui",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arsakalthor.html": {
    "volume": "III",
@@ -1227,7 +1334,8 @@
    "entityId": "arsakalthor",
    "entityType": "person",
    "sourceRoute": "character.html#arsakalthor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/artamir.html": {
    "volume": "III",
@@ -1240,7 +1348,8 @@
    "entityId": "artamir",
    "entityType": "person",
    "sourceRoute": "character.html#artamir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arvedui.html": {
    "volume": "III",
@@ -1253,7 +1362,8 @@
    "entityId": "arvedui",
    "entityType": "person",
    "sourceRoute": "character.html#arvedui",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arvegil.html": {
    "volume": "III",
@@ -1266,7 +1376,8 @@
    "entityId": "arvegil",
    "entityType": "person",
    "sourceRoute": "character.html#arvegil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arveleg1.html": {
    "volume": "III",
@@ -1279,7 +1390,8 @@
    "entityId": "arveleg1",
    "entityType": "person",
    "sourceRoute": "character.html#arveleg1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arveleg2.html": {
    "volume": "III",
@@ -1292,7 +1404,8 @@
    "entityId": "arveleg2",
    "entityType": "person",
    "sourceRoute": "character.html#arveleg2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arwen.html": {
    "volume": "III",
@@ -1305,7 +1418,8 @@
    "entityId": "arwen",
    "entityType": "person",
    "sourceRoute": "character.html#arwen",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/arzimrathon.html": {
    "volume": "III",
@@ -1318,7 +1432,8 @@
    "entityId": "arzimrathon",
    "entityType": "person",
    "sourceRoute": "character.html#arzimrathon",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/atanatar1.html": {
    "volume": "III",
@@ -1331,7 +1446,8 @@
    "entityId": "atanatar1",
    "entityType": "person",
    "sourceRoute": "character.html#atanatar1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/atanatar2.html": {
    "volume": "III",
@@ -1344,7 +1460,8 @@
    "entityId": "atanatar2",
    "entityType": "person",
    "sourceRoute": "character.html#atanatar2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/aule.html": {
    "volume": "III",
@@ -1357,7 +1474,8 @@
    "entityId": "aule",
    "entityType": "person",
    "sourceRoute": "character.html#aule",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/balbo.html": {
    "volume": "III",
@@ -1370,7 +1488,8 @@
    "entityId": "balbo",
    "entityType": "person",
    "sourceRoute": "character.html#balbo",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/baldor.html": {
    "volume": "III",
@@ -1383,7 +1502,8 @@
    "entityId": "baldor",
    "entityType": "person",
    "sourceRoute": "character.html#baldor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/balin.html": {
    "volume": "III",
@@ -1396,7 +1516,8 @@
    "entityId": "balin",
    "entityType": "person",
    "sourceRoute": "character.html#balin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/baragund.html": {
    "volume": "III",
@@ -1409,7 +1530,8 @@
    "entityId": "baragund",
    "entityType": "person",
    "sourceRoute": "character.html#baragund",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/barahir.html": {
    "volume": "III",
@@ -1422,7 +1544,8 @@
    "entityId": "barahir",
    "entityType": "person",
    "sourceRoute": "character.html#barahir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/barahir_f.html": {
    "volume": "III",
@@ -1435,7 +1558,8 @@
    "entityId": "barahir_f",
    "entityType": "person",
    "sourceRoute": "character.html#barahir_f",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/barahir_s.html": {
    "volume": "III",
@@ -1448,7 +1572,8 @@
    "entityId": "barahir_s",
    "entityType": "person",
    "sourceRoute": "character.html#barahir_s",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/baran.html": {
    "volume": "III",
@@ -1461,7 +1586,8 @@
    "entityId": "baran",
    "entityType": "person",
    "sourceRoute": "character.html#baran",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/belecthor1.html": {
    "volume": "III",
@@ -1474,7 +1600,8 @@
    "entityId": "belecthor1",
    "entityType": "person",
    "sourceRoute": "character.html#belecthor1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/belecthor2.html": {
    "volume": "III",
@@ -1487,7 +1614,8 @@
    "entityId": "belecthor2",
    "entityType": "person",
    "sourceRoute": "character.html#belecthor2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/beleg_a.html": {
    "volume": "III",
@@ -1500,7 +1628,8 @@
    "entityId": "beleg_a",
    "entityType": "person",
    "sourceRoute": "character.html#beleg_a",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/belegorn.html": {
    "volume": "III",
@@ -1513,7 +1642,8 @@
    "entityId": "belegorn",
    "entityType": "person",
    "sourceRoute": "character.html#belegorn",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/belegund.html": {
    "volume": "III",
@@ -1526,7 +1656,8 @@
    "entityId": "belegund",
    "entityType": "person",
    "sourceRoute": "character.html#belegund",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/bell.html": {
    "volume": "III",
@@ -1539,7 +1670,8 @@
    "entityId": "bell",
    "entityType": "person",
    "sourceRoute": "character.html#bell",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/belladonna.html": {
    "volume": "III",
@@ -1552,7 +1684,8 @@
    "entityId": "belladonna",
    "entityType": "person",
    "sourceRoute": "character.html#belladonna",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/beor.html": {
    "volume": "III",
@@ -1565,7 +1698,8 @@
    "entityId": "beor",
    "entityType": "person",
    "sourceRoute": "character.html#beor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/beregar.html": {
    "volume": "III",
@@ -1578,7 +1712,8 @@
    "entityId": "beregar",
    "entityType": "person",
    "sourceRoute": "character.html#beregar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/beregond_s.html": {
    "volume": "III",
@@ -1591,7 +1726,8 @@
    "entityId": "beregond_s",
    "entityType": "person",
    "sourceRoute": "character.html#beregond_s",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/beren.html": {
    "volume": "III",
@@ -1604,7 +1740,8 @@
    "entityId": "beren",
    "entityType": "person",
    "sourceRoute": "character.html#beren",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/beren_s.html": {
    "volume": "III",
@@ -1617,7 +1754,8 @@
    "entityId": "beren_s",
    "entityType": "person",
    "sourceRoute": "character.html#beren_s",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/beril.html": {
    "volume": "III",
@@ -1630,7 +1768,8 @@
    "entityId": "beril",
    "entityType": "person",
    "sourceRoute": "character.html#beril",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/beruthiel.html": {
    "volume": "III",
@@ -1643,7 +1782,8 @@
    "entityId": "beruthiel",
    "entityType": "person",
    "sourceRoute": "character.html#beruthiel",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/berylla.html": {
    "volume": "III",
@@ -1656,7 +1796,8 @@
    "entityId": "berylla",
    "entityType": "person",
    "sourceRoute": "character.html#berylla",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/bilbo.html": {
    "volume": "III",
@@ -1669,7 +1810,8 @@
    "entityId": "bilbo",
    "entityType": "person",
    "sourceRoute": "character.html#bilbo",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/borin.html": {
    "volume": "III",
@@ -1682,7 +1824,8 @@
    "entityId": "borin",
    "entityType": "person",
    "sourceRoute": "character.html#borin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/boromir.html": {
    "volume": "III",
@@ -1695,7 +1838,8 @@
    "entityId": "boromir",
    "entityType": "person",
    "sourceRoute": "character.html#boromir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/boromir_b.html": {
    "volume": "III",
@@ -1708,7 +1852,8 @@
    "entityId": "boromir_b",
    "entityType": "person",
    "sourceRoute": "character.html#boromir_b",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/boromir_s.html": {
    "volume": "III",
@@ -1721,7 +1866,8 @@
    "entityId": "boromir_s",
    "entityType": "person",
    "sourceRoute": "character.html#boromir_s",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/boron.html": {
    "volume": "III",
@@ -1734,7 +1880,8 @@
    "entityId": "boron",
    "entityType": "person",
    "sourceRoute": "character.html#boron",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/brandir.html": {
    "volume": "III",
@@ -1747,7 +1894,8 @@
    "entityId": "brandir",
    "entityType": "person",
    "sourceRoute": "character.html#brandir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/brego.html": {
    "volume": "III",
@@ -1760,7 +1908,8 @@
    "entityId": "brego",
    "entityType": "person",
    "sourceRoute": "character.html#brego",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/bregolas.html": {
    "volume": "III",
@@ -1773,7 +1922,8 @@
    "entityId": "bregolas",
    "entityType": "person",
    "sourceRoute": "character.html#bregolas",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/bregor.html": {
    "volume": "III",
@@ -1786,7 +1936,8 @@
    "entityId": "bregor",
    "entityType": "person",
    "sourceRoute": "character.html#bregor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/brytta.html": {
    "volume": "III",
@@ -1799,7 +1950,8 @@
    "entityId": "brytta",
    "entityType": "person",
    "sourceRoute": "character.html#brytta",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/bungo.html": {
    "volume": "III",
@@ -1812,7 +1964,8 @@
    "entityId": "bungo",
    "entityType": "person",
    "sourceRoute": "character.html#bungo",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/calimehtar_c.html": {
    "volume": "III",
@@ -1825,7 +1978,8 @@
    "entityId": "calimehtar_c",
    "entityType": "person",
    "sourceRoute": "character.html#calimehtar_c",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/calimehtar_g.html": {
    "volume": "III",
@@ -1838,7 +1992,8 @@
    "entityId": "calimehtar_g",
    "entityType": "person",
    "sourceRoute": "character.html#calimehtar_g",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/calimmacil.html": {
    "volume": "III",
@@ -1851,7 +2006,8 @@
    "entityId": "calimmacil",
    "entityType": "person",
    "sourceRoute": "character.html#calimmacil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/calmacil_g.html": {
    "volume": "III",
@@ -1864,7 +2020,8 @@
    "entityId": "calmacil_g",
    "entityType": "person",
    "sourceRoute": "character.html#calmacil_g",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/camellia.html": {
    "volume": "III",
@@ -1877,7 +2034,8 @@
    "entityId": "camellia",
    "entityType": "person",
    "sourceRoute": "character.html#camellia",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/caranthir.html": {
    "volume": "III",
@@ -1890,7 +2048,8 @@
    "entityId": "caranthir",
    "entityType": "person",
    "sourceRoute": "character.html#caranthir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/castamir.html": {
    "volume": "III",
@@ -1903,7 +2062,8 @@
    "entityId": "castamir",
    "entityType": "person",
    "sourceRoute": "character.html#castamir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/celeborn.html": {
    "volume": "III",
@@ -1916,7 +2076,8 @@
    "entityId": "celeborn",
    "entityType": "person",
    "sourceRoute": "character.html#celeborn",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/celebrian.html": {
    "volume": "III",
@@ -1929,7 +2090,8 @@
    "entityId": "celebrian",
    "entityType": "person",
    "sourceRoute": "character.html#celebrian",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/celebrimbor.html": {
    "volume": "III",
@@ -1942,7 +2104,8 @@
    "entityId": "celebrimbor",
    "entityType": "person",
    "sourceRoute": "character.html#celebrimbor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/celebrindor.html": {
    "volume": "III",
@@ -1955,7 +2118,8 @@
    "entityId": "celebrindor",
    "entityType": "person",
    "sourceRoute": "character.html#celebrindor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/celegorm.html": {
    "volume": "III",
@@ -1968,7 +2132,8 @@
    "entityId": "celegorm",
    "entityType": "person",
    "sourceRoute": "character.html#celegorm",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/celepharn.html": {
    "volume": "III",
@@ -1981,7 +2146,8 @@
    "entityId": "celepharn",
    "entityType": "person",
    "sourceRoute": "character.html#celepharn",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/cemendur.html": {
    "volume": "III",
@@ -1994,7 +2160,8 @@
    "entityId": "cemendur",
    "entityType": "person",
    "sourceRoute": "character.html#cemendur",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/cirdan.html": {
    "volume": "III",
@@ -2007,7 +2174,8 @@
    "entityId": "cirdan",
    "entityType": "person",
    "sourceRoute": "character.html#cirdan",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/cirion.html": {
    "volume": "III",
@@ -2020,7 +2188,8 @@
    "entityId": "cirion",
    "entityType": "person",
    "sourceRoute": "character.html#cirion",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/ciryandil.html": {
    "volume": "III",
@@ -2033,7 +2202,8 @@
    "entityId": "ciryandil",
    "entityType": "person",
    "sourceRoute": "character.html#ciryandil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/ciryon.html": {
    "volume": "III",
@@ -2046,7 +2216,8 @@
    "entityId": "ciryon",
    "entityType": "person",
    "sourceRoute": "character.html#ciryon",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/curufin.html": {
    "volume": "III",
@@ -2059,7 +2230,8 @@
    "entityId": "curufin",
    "entityType": "person",
    "sourceRoute": "character.html#curufin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/dain1.html": {
    "volume": "III",
@@ -2072,7 +2244,8 @@
    "entityId": "dain1",
    "entityType": "person",
    "sourceRoute": "character.html#dain1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/dain2.html": {
    "volume": "III",
@@ -2085,7 +2258,8 @@
    "entityId": "dain2",
    "entityType": "person",
    "sourceRoute": "character.html#dain2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/deagol.html": {
    "volume": "III",
@@ -2098,7 +2272,8 @@
    "entityId": "deagol",
    "entityType": "person",
    "sourceRoute": "character.html#deagol",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/denethor1.html": {
    "volume": "III",
@@ -2111,7 +2286,8 @@
    "entityId": "denethor1",
    "entityType": "person",
    "sourceRoute": "character.html#denethor1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/denethor2.html": {
    "volume": "III",
@@ -2124,7 +2300,8 @@
    "entityId": "denethor2",
    "entityType": "person",
    "sourceRoute": "character.html#denethor2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/deor.html": {
    "volume": "III",
@@ -2137,7 +2314,8 @@
    "entityId": "deor",
    "entityType": "person",
    "sourceRoute": "character.html#deor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/diamond.html": {
    "volume": "III",
@@ -2150,7 +2328,8 @@
    "entityId": "diamond",
    "entityType": "person",
    "sourceRoute": "character.html#diamond",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/dior.html": {
    "volume": "III",
@@ -2163,7 +2342,8 @@
    "entityId": "dior",
    "entityType": "person",
    "sourceRoute": "character.html#dior",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/dior_s.html": {
    "volume": "III",
@@ -2176,7 +2356,8 @@
    "entityId": "dior_s",
    "entityType": "person",
    "sourceRoute": "character.html#dior_s",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/dirhael.html": {
    "volume": "III",
@@ -2189,7 +2370,8 @@
    "entityId": "dirhael",
    "entityType": "person",
    "sourceRoute": "character.html#dirhael",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/dis.html": {
    "volume": "III",
@@ -2202,7 +2384,8 @@
    "entityId": "dis",
    "entityType": "person",
    "sourceRoute": "character.html#dis",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/drogo.html": {
    "volume": "III",
@@ -2215,7 +2398,8 @@
    "entityId": "drogo",
    "entityType": "person",
    "sourceRoute": "character.html#drogo",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/durin1.html": {
    "volume": "III",
@@ -2228,7 +2412,8 @@
    "entityId": "durin1",
    "entityType": "person",
    "sourceRoute": "character.html#durin1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/durin6.html": {
    "volume": "III",
@@ -2241,7 +2426,8 @@
    "entityId": "durin6",
    "entityType": "person",
    "sourceRoute": "character.html#durin6",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/durin7.html": {
    "volume": "III",
@@ -2254,7 +2440,8 @@
    "entityId": "durin7",
    "entityType": "person",
    "sourceRoute": "character.html#durin7",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/dwalin.html": {
    "volume": "III",
@@ -2267,7 +2454,8 @@
    "entityId": "dwalin",
    "entityType": "person",
    "sourceRoute": "character.html#dwalin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/earendil.html": {
    "volume": "III",
@@ -2280,7 +2468,8 @@
    "entityId": "earendil",
    "entityType": "person",
    "sourceRoute": "character.html#earendil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/earendil_g.html": {
    "volume": "III",
@@ -2293,7 +2482,8 @@
    "entityId": "earendil_g",
    "entityType": "person",
    "sourceRoute": "character.html#earendil_g",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/earendur_a.html": {
    "volume": "III",
@@ -2306,7 +2496,8 @@
    "entityId": "earendur_a",
    "entityType": "person",
    "sourceRoute": "character.html#earendur_a",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/earendur_l.html": {
    "volume": "III",
@@ -2319,7 +2510,8 @@
    "entityId": "earendur_l",
    "entityType": "person",
    "sourceRoute": "character.html#earendur_l",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/earnil1.html": {
    "volume": "III",
@@ -2332,7 +2524,8 @@
    "entityId": "earnil1",
    "entityType": "person",
    "sourceRoute": "character.html#earnil1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/earnil2.html": {
    "volume": "III",
@@ -2345,7 +2538,8 @@
    "entityId": "earnil2",
    "entityType": "person",
    "sourceRoute": "character.html#earnil2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/earnur.html": {
    "volume": "III",
@@ -2358,7 +2552,8 @@
    "entityId": "earnur",
    "entityType": "person",
    "sourceRoute": "character.html#earnur",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/earwen.html": {
    "volume": "III",
@@ -2371,7 +2566,8 @@
    "entityId": "earwen",
    "entityType": "person",
    "sourceRoute": "character.html#earwen",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/ecthelion1.html": {
    "volume": "III",
@@ -2384,7 +2580,8 @@
    "entityId": "ecthelion1",
    "entityType": "person",
    "sourceRoute": "character.html#ecthelion1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/ecthelion2.html": {
    "volume": "III",
@@ -2397,7 +2594,8 @@
    "entityId": "ecthelion2",
    "entityType": "person",
    "sourceRoute": "character.html#ecthelion2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/egalmoth.html": {
    "volume": "III",
@@ -2410,7 +2608,8 @@
    "entityId": "egalmoth",
    "entityType": "person",
    "sourceRoute": "character.html#egalmoth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/eglantine.html": {
    "volume": "III",
@@ -2423,7 +2622,8 @@
    "entityId": "eglantine",
    "entityType": "person",
    "sourceRoute": "character.html#eglantine",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elanor.html": {
    "volume": "III",
@@ -2436,7 +2636,8 @@
    "entityId": "elanor",
    "entityType": "person",
    "sourceRoute": "character.html#elanor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elatan.html": {
    "volume": "III",
@@ -2449,7 +2650,8 @@
    "entityId": "elatan",
    "entityType": "person",
    "sourceRoute": "character.html#elatan",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elboron.html": {
    "volume": "III",
@@ -2462,7 +2664,8 @@
    "entityId": "elboron",
    "entityType": "person",
    "sourceRoute": "character.html#elboron",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/eldacar_a.html": {
    "volume": "III",
@@ -2475,7 +2678,8 @@
    "entityId": "eldacar_a",
    "entityType": "person",
    "sourceRoute": "character.html#eldacar_a",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/eldacar_g.html": {
    "volume": "III",
@@ -2488,7 +2692,8 @@
    "entityId": "eldacar_g",
    "entityType": "person",
    "sourceRoute": "character.html#eldacar_g",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/eldarion.html": {
    "volume": "III",
@@ -2501,7 +2706,8 @@
    "entityId": "eldarion",
    "entityType": "person",
    "sourceRoute": "character.html#eldarion",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elendil.html": {
    "volume": "III",
@@ -2514,7 +2720,8 @@
    "entityId": "elendil",
    "entityType": "person",
    "sourceRoute": "character.html#elendil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elendur_a.html": {
    "volume": "III",
@@ -2527,7 +2734,8 @@
    "entityId": "elendur_a",
    "entityType": "person",
    "sourceRoute": "character.html#elendur_a",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elendur_i.html": {
    "volume": "III",
@@ -2540,7 +2748,8 @@
    "entityId": "elendur_i",
    "entityType": "person",
    "sourceRoute": "character.html#elendur_i",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elenwe.html": {
    "volume": "III",
@@ -2553,7 +2762,8 @@
    "entityId": "elenwe",
    "entityType": "person",
    "sourceRoute": "character.html#elenwe",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elfhild.html": {
    "volume": "III",
@@ -2566,7 +2776,8 @@
    "entityId": "elfhild",
    "entityType": "person",
    "sourceRoute": "character.html#elfhild",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elfstan.html": {
    "volume": "III",
@@ -2579,7 +2790,8 @@
    "entityId": "elfstan",
    "entityType": "person",
    "sourceRoute": "character.html#elfstan",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elfwine.html": {
    "volume": "III",
@@ -2592,7 +2804,8 @@
    "entityId": "elfwine",
    "entityType": "person",
    "sourceRoute": "character.html#elfwine",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elladan.html": {
    "volume": "III",
@@ -2605,7 +2818,8 @@
    "entityId": "elladan",
    "entityType": "person",
    "sourceRoute": "character.html#elladan",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elmo.html": {
    "volume": "III",
@@ -2618,7 +2832,8 @@
    "entityId": "elmo",
    "entityType": "person",
    "sourceRoute": "character.html#elmo",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elrohir.html": {
    "volume": "III",
@@ -2631,7 +2846,8 @@
    "entityId": "elrohir",
    "entityType": "person",
    "sourceRoute": "character.html#elrohir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elrond.html": {
    "volume": "III",
@@ -2644,7 +2860,8 @@
    "entityId": "elrond",
    "entityType": "person",
    "sourceRoute": "character.html#elrond",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elros.html": {
    "volume": "III",
@@ -2657,7 +2874,8 @@
    "entityId": "elros",
    "entityType": "person",
    "sourceRoute": "character.html#elros",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elured.html": {
    "volume": "III",
@@ -2670,7 +2888,8 @@
    "entityId": "elured",
    "entityType": "person",
    "sourceRoute": "character.html#elured",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elurin.html": {
    "volume": "III",
@@ -2683,7 +2902,8 @@
    "entityId": "elurin",
    "entityType": "person",
    "sourceRoute": "character.html#elurin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elwe.html": {
    "volume": "III",
@@ -2696,7 +2916,8 @@
    "entityId": "elwe",
    "entityType": "person",
    "sourceRoute": "character.html#elwe",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/elwing.html": {
    "volume": "III",
@@ -2709,7 +2930,8 @@
    "entityId": "elwing",
    "entityType": "person",
    "sourceRoute": "character.html#elwing",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/emeldir.html": {
    "volume": "III",
@@ -2722,7 +2944,8 @@
    "entityId": "emeldir",
    "entityType": "person",
    "sourceRoute": "character.html#emeldir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/eol.html": {
    "volume": "III",
@@ -2735,7 +2958,8 @@
    "entityId": "eol",
    "entityType": "person",
    "sourceRoute": "character.html#eol",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/eomer.html": {
    "volume": "III",
@@ -2748,7 +2972,8 @@
    "entityId": "eomer",
    "entityType": "person",
    "sourceRoute": "character.html#eomer",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/eomund.html": {
    "volume": "III",
@@ -2761,7 +2986,8 @@
    "entityId": "eomund",
    "entityType": "person",
    "sourceRoute": "character.html#eomund",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/eorl.html": {
    "volume": "III",
@@ -2774,7 +3000,8 @@
    "entityId": "eorl",
    "entityType": "person",
    "sourceRoute": "character.html#eorl",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/eowyn.html": {
    "volume": "III",
@@ -2787,7 +3014,8 @@
    "entityId": "eowyn",
    "entityType": "person",
    "sourceRoute": "character.html#eowyn",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/eradan.html": {
    "volume": "III",
@@ -2800,7 +3028,8 @@
    "entityId": "eradan",
    "entityType": "person",
    "sourceRoute": "character.html#eradan",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/erendis.html": {
    "volume": "III",
@@ -2813,7 +3042,8 @@
    "entityId": "erendis",
    "entityType": "person",
    "sourceRoute": "character.html#erendis",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/esmeralda.html": {
    "volume": "III",
@@ -2826,7 +3056,8 @@
    "entityId": "esmeralda",
    "entityType": "person",
    "sourceRoute": "character.html#esmeralda",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/este.html": {
    "volume": "III",
@@ -2839,7 +3070,8 @@
    "entityId": "este",
    "entityType": "person",
    "sourceRoute": "character.html#este",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/estella.html": {
    "volume": "III",
@@ -2852,7 +3084,8 @@
    "entityId": "estella",
    "entityType": "person",
    "sourceRoute": "character.html#estella",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/falastur.html": {
    "volume": "III",
@@ -2865,7 +3098,8 @@
    "entityId": "falastur",
    "entityType": "person",
    "sourceRoute": "character.html#falastur",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/faramir.html": {
    "volume": "III",
@@ -2878,7 +3112,8 @@
    "entityId": "faramir",
    "entityType": "person",
    "sourceRoute": "character.html#faramir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/faramir_o.html": {
    "volume": "III",
@@ -2891,7 +3126,8 @@
    "entityId": "faramir_o",
    "entityType": "person",
    "sourceRoute": "character.html#faramir_o",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/faramir_t.html": {
    "volume": "III",
@@ -2904,7 +3140,8 @@
    "entityId": "faramir_t",
    "entityType": "person",
    "sourceRoute": "character.html#faramir_t",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/farin.html": {
    "volume": "III",
@@ -2917,7 +3154,8 @@
    "entityId": "farin",
    "entityType": "person",
    "sourceRoute": "character.html#farin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/fastred.html": {
    "volume": "III",
@@ -2930,7 +3168,8 @@
    "entityId": "fastred",
    "entityType": "person",
    "sourceRoute": "character.html#fastred",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/fastred_r.html": {
    "volume": "III",
@@ -2943,7 +3182,8 @@
    "entityId": "fastred_r",
    "entityType": "person",
    "sourceRoute": "character.html#fastred_r",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/feanor.html": {
    "volume": "III",
@@ -2956,7 +3196,8 @@
    "entityId": "feanor",
    "entityType": "person",
    "sourceRoute": "character.html#feanor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/fengel.html": {
    "volume": "III",
@@ -2969,7 +3210,8 @@
    "entityId": "fengel",
    "entityType": "person",
    "sourceRoute": "character.html#fengel",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/fili.html": {
    "volume": "III",
@@ -2982,7 +3224,8 @@
    "entityId": "fili",
    "entityType": "person",
    "sourceRoute": "character.html#fili",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/finarfin.html": {
    "volume": "III",
@@ -2995,7 +3238,8 @@
    "entityId": "finarfin",
    "entityType": "person",
    "sourceRoute": "character.html#finarfin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/findis.html": {
    "volume": "III",
@@ -3008,7 +3252,8 @@
    "entityId": "findis",
    "entityType": "person",
    "sourceRoute": "character.html#findis",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/finduilas_a.html": {
    "volume": "III",
@@ -3021,7 +3266,8 @@
    "entityId": "finduilas_a",
    "entityType": "person",
    "sourceRoute": "character.html#finduilas_a",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/finduilas_n.html": {
    "volume": "III",
@@ -3034,7 +3280,8 @@
    "entityId": "finduilas_n",
    "entityType": "person",
    "sourceRoute": "character.html#finduilas_n",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/fingolfin.html": {
    "volume": "III",
@@ -3047,7 +3294,8 @@
    "entityId": "fingolfin",
    "entityType": "person",
    "sourceRoute": "character.html#fingolfin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/fingon.html": {
    "volume": "III",
@@ -3060,7 +3308,8 @@
    "entityId": "fingon",
    "entityType": "person",
    "sourceRoute": "character.html#fingon",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/finrod.html": {
    "volume": "III",
@@ -3073,7 +3322,8 @@
    "entityId": "finrod",
    "entityType": "person",
    "sourceRoute": "character.html#finrod",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/finwe.html": {
    "volume": "III",
@@ -3086,7 +3336,8 @@
    "entityId": "finwe",
    "entityType": "person",
    "sourceRoute": "character.html#finwe",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/firiel.html": {
    "volume": "III",
@@ -3099,7 +3350,8 @@
    "entityId": "firiel",
    "entityType": "person",
    "sourceRoute": "character.html#firiel",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/folca.html": {
    "volume": "III",
@@ -3112,7 +3364,8 @@
    "entityId": "folca",
    "entityType": "person",
    "sourceRoute": "character.html#folca",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/folcred.html": {
    "volume": "III",
@@ -3125,7 +3378,8 @@
    "entityId": "folcred",
    "entityType": "person",
    "sourceRoute": "character.html#folcred",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/folcwine.html": {
    "volume": "III",
@@ -3138,7 +3392,8 @@
    "entityId": "folcwine",
    "entityType": "person",
    "sourceRoute": "character.html#folcwine",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/fosco.html": {
    "volume": "III",
@@ -3151,7 +3406,8 @@
    "entityId": "fosco",
    "entityType": "person",
    "sourceRoute": "character.html#fosco",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/fram.html": {
    "volume": "III",
@@ -3164,7 +3420,8 @@
    "entityId": "fram",
    "entityType": "person",
    "sourceRoute": "character.html#fram",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/frea.html": {
    "volume": "III",
@@ -3177,7 +3434,8 @@
    "entityId": "frea",
    "entityType": "person",
    "sourceRoute": "character.html#frea",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/frealaf.html": {
    "volume": "III",
@@ -3190,7 +3448,8 @@
    "entityId": "frealaf",
    "entityType": "person",
    "sourceRoute": "character.html#frealaf",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/freawine.html": {
    "volume": "III",
@@ -3203,7 +3462,8 @@
    "entityId": "freawine",
    "entityType": "person",
    "sourceRoute": "character.html#freawine",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/fredegar.html": {
    "volume": "III",
@@ -3216,7 +3476,8 @@
    "entityId": "fredegar",
    "entityType": "person",
    "sourceRoute": "character.html#fredegar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/frerin.html": {
    "volume": "III",
@@ -3229,7 +3490,8 @@
    "entityId": "frerin",
    "entityType": "person",
    "sourceRoute": "character.html#frerin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/frodo.html": {
    "volume": "III",
@@ -3242,7 +3504,8 @@
    "entityId": "frodo",
    "entityType": "person",
    "sourceRoute": "character.html#frodo",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/frodog.html": {
    "volume": "III",
@@ -3255,7 +3518,8 @@
    "entityId": "frodog",
    "entityType": "person",
    "sourceRoute": "character.html#frodog",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/fror.html": {
    "volume": "III",
@@ -3268,7 +3532,8 @@
    "entityId": "fror",
    "entityType": "person",
    "sourceRoute": "character.html#fror",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/frumgar.html": {
    "volume": "III",
@@ -3281,7 +3546,8 @@
    "entityId": "frumgar",
    "entityType": "person",
    "sourceRoute": "character.html#frumgar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/fundin.html": {
    "volume": "III",
@@ -3294,7 +3560,8 @@
    "entityId": "fundin",
    "entityType": "person",
    "sourceRoute": "character.html#fundin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/galadhon.html": {
    "volume": "III",
@@ -3307,7 +3574,8 @@
    "entityId": "galadhon",
    "entityType": "person",
    "sourceRoute": "character.html#galadhon",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/galador.html": {
    "volume": "III",
@@ -3320,7 +3588,8 @@
    "entityId": "galador",
    "entityType": "person",
    "sourceRoute": "character.html#galador",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/galadriel.html": {
    "volume": "III",
@@ -3333,7 +3602,8 @@
    "entityId": "galadriel",
    "entityType": "person",
    "sourceRoute": "character.html#galadriel",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/galathil.html": {
    "volume": "III",
@@ -3346,7 +3616,8 @@
    "entityId": "galathil",
    "entityType": "person",
    "sourceRoute": "character.html#galathil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/galdor.html": {
    "volume": "III",
@@ -3359,7 +3630,8 @@
    "entityId": "galdor",
    "entityType": "person",
    "sourceRoute": "character.html#galdor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/gelmir_n.html": {
    "volume": "III",
@@ -3372,7 +3644,8 @@
    "entityId": "gelmir_n",
    "entityType": "person",
    "sourceRoute": "character.html#gelmir_n",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/gerontius.html": {
    "volume": "III",
@@ -3385,7 +3658,8 @@
    "entityId": "gerontius",
    "entityType": "person",
    "sourceRoute": "character.html#gerontius",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/gildor.html": {
    "volume": "III",
@@ -3398,7 +3672,8 @@
    "entityId": "gildor",
    "entityType": "person",
    "sourceRoute": "character.html#gildor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/gilgalad.html": {
    "volume": "III",
@@ -3411,7 +3686,8 @@
    "entityId": "gilgalad",
    "entityType": "person",
    "sourceRoute": "character.html#gilgalad",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/gilraen.html": {
    "volume": "III",
@@ -3424,7 +3700,8 @@
    "entityId": "gilraen",
    "entityType": "person",
    "sourceRoute": "character.html#gilraen",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/gimilkhad.html": {
    "volume": "III",
@@ -3437,7 +3714,8 @@
    "entityId": "gimilkhad",
    "entityType": "person",
    "sourceRoute": "character.html#gimilkhad",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/gimli.html": {
    "volume": "III",
@@ -3450,7 +3728,8 @@
    "entityId": "gimli",
    "entityType": "person",
    "sourceRoute": "character.html#gimli",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/gloin_d.html": {
    "volume": "III",
@@ -3463,7 +3742,8 @@
    "entityId": "gloin_d",
    "entityType": "person",
    "sourceRoute": "character.html#gloin_d",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/gloin_k.html": {
    "volume": "III",
@@ -3476,7 +3756,8 @@
    "entityId": "gloin_k",
    "entityType": "person",
    "sourceRoute": "character.html#gloin_k",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/gloredhel.html": {
    "volume": "III",
@@ -3489,7 +3770,8 @@
    "entityId": "gloredhel",
    "entityType": "person",
    "sourceRoute": "character.html#gloredhel",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/goldilocks.html": {
    "volume": "III",
@@ -3502,7 +3784,8 @@
    "entityId": "goldilocks",
    "entityType": "person",
    "sourceRoute": "character.html#goldilocks",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/goldwine.html": {
    "volume": "III",
@@ -3515,7 +3798,8 @@
    "entityId": "goldwine",
    "entityType": "person",
    "sourceRoute": "character.html#goldwine",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/gorbadoc.html": {
    "volume": "III",
@@ -3528,7 +3812,8 @@
    "entityId": "gorbadoc",
    "entityType": "person",
    "sourceRoute": "character.html#gorbadoc",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/gram.html": {
    "volume": "III",
@@ -3541,7 +3826,8 @@
    "entityId": "gram",
    "entityType": "person",
    "sourceRoute": "character.html#gram",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/groin_d.html": {
    "volume": "III",
@@ -3554,7 +3840,8 @@
    "entityId": "groin_d",
    "entityType": "person",
    "sourceRoute": "character.html#groin_d",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/gror.html": {
    "volume": "III",
@@ -3567,7 +3854,8 @@
    "entityId": "gror",
    "entityType": "person",
    "sourceRoute": "character.html#gror",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/guilin.html": {
    "volume": "III",
@@ -3580,7 +3868,8 @@
    "entityId": "guilin",
    "entityType": "person",
    "sourceRoute": "character.html#guilin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/gundor.html": {
    "volume": "III",
@@ -3593,7 +3882,8 @@
    "entityId": "gundor",
    "entityType": "person",
    "sourceRoute": "character.html#gundor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/gwindor.html": {
    "volume": "III",
@@ -3606,7 +3896,8 @@
    "entityId": "gwindor",
    "entityType": "person",
    "sourceRoute": "character.html#gwindor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hador.html": {
    "volume": "III",
@@ -3619,7 +3910,8 @@
    "entityId": "hador",
    "entityType": "person",
    "sourceRoute": "character.html#hador",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hador_s.html": {
    "volume": "III",
@@ -3632,7 +3924,8 @@
    "entityId": "hador_s",
    "entityType": "person",
    "sourceRoute": "character.html#hador_s",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/halbarad.html": {
    "volume": "III",
@@ -3645,7 +3938,8 @@
    "entityId": "halbarad",
    "entityType": "person",
    "sourceRoute": "character.html#halbarad",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/haldad.html": {
    "volume": "III",
@@ -3658,7 +3952,8 @@
    "entityId": "haldad",
    "entityType": "person",
    "sourceRoute": "character.html#haldad",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/haldan.html": {
    "volume": "III",
@@ -3671,7 +3966,8 @@
    "entityId": "haldan",
    "entityType": "person",
    "sourceRoute": "character.html#haldan",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/haldar.html": {
    "volume": "III",
@@ -3684,7 +3980,8 @@
    "entityId": "haldar",
    "entityType": "person",
    "sourceRoute": "character.html#haldar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/haldir.html": {
    "volume": "III",
@@ -3697,7 +3994,8 @@
    "entityId": "haldir",
    "entityType": "person",
    "sourceRoute": "character.html#haldir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/haleth.html": {
    "volume": "III",
@@ -3710,7 +4008,8 @@
    "entityId": "haleth",
    "entityType": "person",
    "sourceRoute": "character.html#haleth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/haleth_r.html": {
    "volume": "III",
@@ -3723,7 +4022,8 @@
    "entityId": "haleth_r",
    "entityType": "person",
    "sourceRoute": "character.html#haleth_r",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hallacar.html": {
    "volume": "III",
@@ -3736,7 +4036,8 @@
    "entityId": "hallacar",
    "entityType": "person",
    "sourceRoute": "character.html#hallacar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hallas.html": {
    "volume": "III",
@@ -3749,7 +4050,8 @@
    "entityId": "hallas",
    "entityType": "person",
    "sourceRoute": "character.html#hallas",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hallatan.html": {
    "volume": "III",
@@ -3762,7 +4064,8 @@
    "entityId": "hallatan",
    "entityType": "person",
    "sourceRoute": "character.html#hallatan",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/halmir.html": {
    "volume": "III",
@@ -3775,7 +4078,8 @@
    "entityId": "halmir",
    "entityType": "person",
    "sourceRoute": "character.html#halmir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hama_r.html": {
    "volume": "III",
@@ -3788,7 +4092,8 @@
    "entityId": "hama_r",
    "entityType": "person",
    "sourceRoute": "character.html#hama_r",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hamfast.html": {
    "volume": "III",
@@ -3801,7 +4106,8 @@
    "entityId": "hamfast",
    "entityType": "person",
    "sourceRoute": "character.html#hamfast",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/handir.html": {
    "volume": "III",
@@ -3814,7 +4120,8 @@
    "entityId": "handir",
    "entityType": "person",
    "sourceRoute": "character.html#handir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hareth.html": {
    "volume": "III",
@@ -3827,7 +4134,8 @@
    "entityId": "hareth",
    "entityType": "person",
    "sourceRoute": "character.html#hareth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hathol.html": {
    "volume": "III",
@@ -3840,7 +4148,8 @@
    "entityId": "hathol",
    "entityType": "person",
    "sourceRoute": "character.html#hathol",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/helm.html": {
    "volume": "III",
@@ -3853,7 +4162,8 @@
    "entityId": "helm",
    "entityType": "person",
    "sourceRoute": "character.html#helm",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/herion.html": {
    "volume": "III",
@@ -3866,7 +4176,8 @@
    "entityId": "herion",
    "entityType": "person",
    "sourceRoute": "character.html#herion",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/herucalmo.html": {
    "volume": "III",
@@ -3879,7 +4190,8 @@
    "entityId": "herucalmo",
    "entityType": "person",
    "sourceRoute": "character.html#herucalmo",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hild.html": {
    "volume": "III",
@@ -3892,7 +4204,8 @@
    "entityId": "hild",
    "entityType": "person",
    "sourceRoute": "character.html#hild",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hildigrim.html": {
    "volume": "III",
@@ -3905,7 +4218,8 @@
    "entityId": "hildigrim",
    "entityType": "person",
    "sourceRoute": "character.html#hildigrim",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hiril.html": {
    "volume": "III",
@@ -3918,7 +4232,8 @@
    "entityId": "hiril",
    "entityType": "person",
    "sourceRoute": "character.html#hiril",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/holfast.html": {
    "volume": "III",
@@ -3931,7 +4246,8 @@
    "entityId": "holfast",
    "entityType": "person",
    "sourceRoute": "character.html#holfast",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hundar.html": {
    "volume": "III",
@@ -3944,7 +4260,8 @@
    "entityId": "hundar",
    "entityType": "person",
    "sourceRoute": "character.html#hundar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/huor.html": {
    "volume": "III",
@@ -3957,7 +4274,8 @@
    "entityId": "huor",
    "entityType": "person",
    "sourceRoute": "character.html#huor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hurin.html": {
    "volume": "III",
@@ -3970,7 +4288,8 @@
    "entityId": "hurin",
    "entityType": "person",
    "sourceRoute": "character.html#hurin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hurin1.html": {
    "volume": "III",
@@ -3983,7 +4302,8 @@
    "entityId": "hurin1",
    "entityType": "person",
    "sourceRoute": "character.html#hurin1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hurin2.html": {
    "volume": "III",
@@ -3996,7 +4316,8 @@
    "entityId": "hurin2",
    "entityType": "person",
    "sourceRoute": "character.html#hurin2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hurin_e.html": {
    "volume": "III",
@@ -4009,7 +4330,8 @@
    "entityId": "hurin_e",
    "entityType": "person",
    "sourceRoute": "character.html#hurin_e",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hyarmendacil1.html": {
    "volume": "III",
@@ -4022,7 +4344,8 @@
    "entityId": "hyarmendacil1",
    "entityType": "person",
    "sourceRoute": "character.html#hyarmendacil1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/hyarmendacil2.html": {
    "volume": "III",
@@ -4035,7 +4358,8 @@
    "entityId": "hyarmendacil2",
    "entityType": "person",
    "sourceRoute": "character.html#hyarmendacil2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/idril.html": {
    "volume": "III",
@@ -4048,7 +4372,8 @@
    "entityId": "idril",
    "entityType": "person",
    "sourceRoute": "character.html#idril",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/imrahil.html": {
    "volume": "III",
@@ -4061,7 +4386,8 @@
    "entityId": "imrahil",
    "entityType": "person",
    "sourceRoute": "character.html#imrahil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/imrazor.html": {
    "volume": "III",
@@ -4074,7 +4400,8 @@
    "entityId": "imrazor",
    "entityType": "person",
    "sourceRoute": "character.html#imrazor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/indis.html": {
    "volume": "III",
@@ -4087,7 +4414,8 @@
    "entityId": "indis",
    "entityType": "person",
    "sourceRoute": "character.html#indis",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/inzilbeth.html": {
    "volume": "III",
@@ -4100,7 +4428,8 @@
    "entityId": "inzilbeth",
    "entityType": "person",
    "sourceRoute": "character.html#inzilbeth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/irime.html": {
    "volume": "III",
@@ -4113,7 +4442,8 @@
    "entityId": "irime",
    "entityType": "person",
    "sourceRoute": "character.html#irime",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/irmo.html": {
    "volume": "III",
@@ -4126,7 +4456,8 @@
    "entityId": "irmo",
    "entityType": "person",
    "sourceRoute": "character.html#irmo",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/isildur.html": {
    "volume": "III",
@@ -4139,7 +4470,8 @@
    "entityId": "isildur",
    "entityType": "person",
    "sourceRoute": "character.html#isildur",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/isilme.html": {
    "volume": "III",
@@ -4152,7 +4484,8 @@
    "entityId": "isilme",
    "entityType": "person",
    "sourceRoute": "character.html#isilme",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/isilmo.html": {
    "volume": "III",
@@ -4165,7 +4498,8 @@
    "entityId": "isilmo",
    "entityType": "person",
    "sourceRoute": "character.html#isilmo",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/ivorwen.html": {
    "volume": "III",
@@ -4178,7 +4512,8 @@
    "entityId": "ivorwen",
    "entityType": "person",
    "sourceRoute": "character.html#ivorwen",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/kili.html": {
    "volume": "III",
@@ -4191,7 +4526,8 @@
    "entityId": "kili",
    "entityType": "person",
    "sourceRoute": "character.html#kili",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/lalaith.html": {
    "volume": "III",
@@ -4204,7 +4540,8 @@
    "entityId": "lalaith",
    "entityType": "person",
    "sourceRoute": "character.html#lalaith",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/largo.html": {
    "volume": "III",
@@ -4217,7 +4554,8 @@
    "entityId": "largo",
    "entityType": "person",
    "sourceRoute": "character.html#largo",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/laura.html": {
    "volume": "III",
@@ -4230,7 +4568,8 @@
    "entityId": "laura",
    "entityType": "person",
    "sourceRoute": "character.html#laura",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/legolas.html": {
    "volume": "III",
@@ -4243,7 +4582,8 @@
    "entityId": "legolas",
    "entityType": "person",
    "sourceRoute": "character.html#legolas",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/leod.html": {
    "volume": "III",
@@ -4256,7 +4596,8 @@
    "entityId": "leod",
    "entityType": "person",
    "sourceRoute": "character.html#leod",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/lily_c.html": {
    "volume": "III",
@@ -4269,7 +4610,8 @@
    "entityId": "lily_c",
    "entityType": "person",
    "sourceRoute": "character.html#lily_c",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/lindorie.html": {
    "volume": "III",
@@ -4282,7 +4624,8 @@
    "entityId": "lindorie",
    "entityType": "person",
    "sourceRoute": "character.html#lindorie",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/lobelia.html": {
    "volume": "III",
@@ -4295,7 +4638,8 @@
    "entityId": "lobelia",
    "entityType": "person",
    "sourceRoute": "character.html#lobelia",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/longo.html": {
    "volume": "III",
@@ -4308,7 +4652,8 @@
    "entityId": "longo",
    "entityType": "person",
    "sourceRoute": "character.html#longo",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/lothiriel.html": {
    "volume": "III",
@@ -4321,7 +4666,8 @@
    "entityId": "lothiriel",
    "entityType": "person",
    "sourceRoute": "character.html#lothiriel",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/lotho.html": {
    "volume": "III",
@@ -4334,7 +4680,8 @@
    "entityId": "lotho",
    "entityType": "person",
    "sourceRoute": "character.html#lotho",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/luthien.html": {
    "volume": "III",
@@ -4347,7 +4694,8 @@
    "entityId": "luthien",
    "entityType": "person",
    "sourceRoute": "character.html#luthien",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/maedhros.html": {
    "volume": "III",
@@ -4360,7 +4708,8 @@
    "entityId": "maedhros",
    "entityType": "person",
    "sourceRoute": "character.html#maedhros",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/maeglin.html": {
    "volume": "III",
@@ -4373,7 +4722,8 @@
    "entityId": "maeglin",
    "entityType": "person",
    "sourceRoute": "character.html#maeglin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/maglor.html": {
    "volume": "III",
@@ -4386,7 +4736,8 @@
    "entityId": "maglor",
    "entityType": "person",
    "sourceRoute": "character.html#maglor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/magor.html": {
    "volume": "III",
@@ -4399,7 +4750,8 @@
    "entityId": "magor",
    "entityType": "person",
    "sourceRoute": "character.html#magor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/mahtan.html": {
    "volume": "III",
@@ -4412,7 +4764,8 @@
    "entityId": "mahtan",
    "entityType": "person",
    "sourceRoute": "character.html#mahtan",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/malach.html": {
    "volume": "III",
@@ -4425,7 +4778,8 @@
    "entityId": "malach",
    "entityType": "person",
    "sourceRoute": "character.html#malach",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/mallor.html": {
    "volume": "III",
@@ -4438,7 +4792,8 @@
    "entityId": "mallor",
    "entityType": "person",
    "sourceRoute": "character.html#mallor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/malvegil.html": {
    "volume": "III",
@@ -4451,7 +4806,8 @@
    "entityId": "malvegil",
    "entityType": "person",
    "sourceRoute": "character.html#malvegil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/manwe.html": {
    "volume": "III",
@@ -4464,7 +4820,8 @@
    "entityId": "manwe",
    "entityType": "person",
    "sourceRoute": "character.html#manwe",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/marach.html": {
    "volume": "III",
@@ -4477,7 +4834,8 @@
    "entityId": "marach",
    "entityType": "person",
    "sourceRoute": "character.html#marach",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/mardil.html": {
    "volume": "III",
@@ -4490,7 +4848,8 @@
    "entityId": "mardil",
    "entityType": "person",
    "sourceRoute": "character.html#mardil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/marigold.html": {
    "volume": "III",
@@ -4503,7 +4862,8 @@
    "entityId": "marigold",
    "entityType": "person",
    "sourceRoute": "character.html#marigold",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/melian.html": {
    "volume": "III",
@@ -4516,7 +4876,8 @@
    "entityId": "melian",
    "entityType": "person",
    "sourceRoute": "character.html#melian",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/melkor.html": {
    "volume": "III",
@@ -4529,7 +4890,8 @@
    "entityId": "melkor",
    "entityType": "person",
    "sourceRoute": "character.html#melkor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/meneldil.html": {
    "volume": "III",
@@ -4542,7 +4904,8 @@
    "entityId": "meneldil",
    "entityType": "person",
    "sourceRoute": "character.html#meneldil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/merry.html": {
    "volume": "III",
@@ -4555,7 +4918,8 @@
    "entityId": "merry",
    "entityType": "person",
    "sourceRoute": "character.html#merry",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/minardil.html": {
    "volume": "III",
@@ -4568,7 +4932,8 @@
    "entityId": "minardil",
    "entityType": "person",
    "sourceRoute": "character.html#minardil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/minastan.html": {
    "volume": "III",
@@ -4581,7 +4946,8 @@
    "entityId": "minastan",
    "entityType": "person",
    "sourceRoute": "character.html#minastan",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/minohtar.html": {
    "volume": "III",
@@ -4594,7 +4960,8 @@
    "entityId": "minohtar",
    "entityType": "person",
    "sourceRoute": "character.html#minohtar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/mirabella.html": {
    "volume": "III",
@@ -4607,7 +4974,8 @@
    "entityId": "mirabella",
    "entityType": "person",
    "sourceRoute": "character.html#mirabella",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/miriel.html": {
    "volume": "III",
@@ -4620,7 +4988,8 @@
    "entityId": "miriel",
    "entityType": "person",
    "sourceRoute": "character.html#miriel",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/miriel_n.html": {
    "volume": "III",
@@ -4633,7 +5002,8 @@
    "entityId": "miriel_n",
    "entityType": "person",
    "sourceRoute": "character.html#miriel_n",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/mithrellas.html": {
    "volume": "III",
@@ -4646,7 +5016,8 @@
    "entityId": "mithrellas",
    "entityType": "person",
    "sourceRoute": "character.html#mithrellas",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/morwen.html": {
    "volume": "III",
@@ -4659,7 +5030,8 @@
    "entityId": "morwen",
    "entityType": "person",
    "sourceRoute": "character.html#morwen",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/morwen_l.html": {
    "volume": "III",
@@ -4672,7 +5044,8 @@
    "entityId": "morwen_l",
    "entityType": "person",
    "sourceRoute": "character.html#morwen_l",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/mungo.html": {
    "volume": "III",
@@ -4685,7 +5058,8 @@
    "entityId": "mungo",
    "entityType": "person",
    "sourceRoute": "character.html#mungo",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/nain1.html": {
    "volume": "III",
@@ -4698,7 +5072,8 @@
    "entityId": "nain1",
    "entityType": "person",
    "sourceRoute": "character.html#nain1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/nain2.html": {
    "volume": "III",
@@ -4711,7 +5086,8 @@
    "entityId": "nain2",
    "entityType": "person",
    "sourceRoute": "character.html#nain2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/nain_d.html": {
    "volume": "III",
@@ -4724,7 +5100,8 @@
    "entityId": "nain_d",
    "entityType": "person",
    "sourceRoute": "character.html#nain_d",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/namo.html": {
    "volume": "III",
@@ -4737,7 +5114,8 @@
    "entityId": "namo",
    "entityType": "person",
    "sourceRoute": "character.html#namo",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/narmacil1.html": {
    "volume": "III",
@@ -4750,7 +5128,8 @@
    "entityId": "narmacil1",
    "entityType": "person",
    "sourceRoute": "character.html#narmacil1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/narmacil2.html": {
    "volume": "III",
@@ -4763,7 +5142,8 @@
    "entityId": "narmacil2",
    "entityType": "person",
    "sourceRoute": "character.html#narmacil2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/nerdanel.html": {
    "volume": "III",
@@ -4776,7 +5156,8 @@
    "entityId": "nerdanel",
    "entityType": "person",
    "sourceRoute": "character.html#nerdanel",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/nessa.html": {
    "volume": "III",
@@ -4789,7 +5170,8 @@
    "entityId": "nessa",
    "entityType": "person",
    "sourceRoute": "character.html#nessa",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/nienna.html": {
    "volume": "III",
@@ -4802,7 +5184,8 @@
    "entityId": "nienna",
    "entityType": "person",
    "sourceRoute": "character.html#nienna",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/nienor.html": {
    "volume": "III",
@@ -4815,7 +5198,8 @@
    "entityId": "nienor",
    "entityType": "person",
    "sourceRoute": "character.html#nienor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/nimloth_e.html": {
    "volume": "III",
@@ -4828,7 +5212,8 @@
    "entityId": "nimloth_e",
    "entityType": "person",
    "sourceRoute": "character.html#nimloth_e",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/nimrodel.html": {
    "volume": "III",
@@ -4841,7 +5226,8 @@
    "entityId": "nimrodel",
    "entityType": "person",
    "sourceRoute": "character.html#nimrodel",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/numendil.html": {
    "volume": "III",
@@ -4854,7 +5240,8 @@
    "entityId": "numendil",
    "entityType": "person",
    "sourceRoute": "character.html#numendil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/nuneth.html": {
    "volume": "III",
@@ -4867,7 +5254,8 @@
    "entityId": "nuneth",
    "entityType": "person",
    "sourceRoute": "character.html#nuneth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/odovacar.html": {
    "volume": "III",
@@ -4880,7 +5268,8 @@
    "entityId": "odovacar",
    "entityType": "person",
    "sourceRoute": "character.html#odovacar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/oin_d.html": {
    "volume": "III",
@@ -4893,7 +5282,8 @@
    "entityId": "oin_d",
    "entityType": "person",
    "sourceRoute": "character.html#oin_d",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/oin_k.html": {
    "volume": "III",
@@ -4906,7 +5296,8 @@
    "entityId": "oin_k",
    "entityType": "person",
    "sourceRoute": "character.html#oin_k",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/olwe.html": {
    "volume": "III",
@@ -4919,7 +5310,8 @@
    "entityId": "olwe",
    "entityType": "person",
    "sourceRoute": "character.html#olwe",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/ondoher.html": {
    "volume": "III",
@@ -4932,7 +5324,8 @@
    "entityId": "ondoher",
    "entityType": "person",
    "sourceRoute": "character.html#ondoher",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/ornendil.html": {
    "volume": "III",
@@ -4945,7 +5338,8 @@
    "entityId": "ornendil",
    "entityType": "person",
    "sourceRoute": "character.html#ornendil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/orodreth.html": {
    "volume": "III",
@@ -4958,7 +5352,8 @@
    "entityId": "orodreth",
    "entityType": "person",
    "sourceRoute": "character.html#orodreth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/orodreth_s.html": {
    "volume": "III",
@@ -4971,7 +5366,8 @@
    "entityId": "orodreth_s",
    "entityType": "person",
    "sourceRoute": "character.html#orodreth_s",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/orome.html": {
    "volume": "III",
@@ -4984,7 +5380,8 @@
    "entityId": "orome",
    "entityType": "person",
    "sourceRoute": "character.html#orome",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/oropher.html": {
    "volume": "III",
@@ -4997,7 +5394,8 @@
    "entityId": "oropher",
    "entityType": "person",
    "sourceRoute": "character.html#oropher",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/osse.html": {
    "volume": "III",
@@ -5010,7 +5408,8 @@
    "entityId": "osse",
    "entityType": "person",
    "sourceRoute": "character.html#osse",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/ostoher.html": {
    "volume": "III",
@@ -5023,7 +5422,8 @@
    "entityId": "ostoher",
    "entityType": "person",
    "sourceRoute": "character.html#ostoher",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/otho.html": {
    "volume": "III",
@@ -5036,7 +5436,8 @@
    "entityId": "otho",
    "entityType": "person",
    "sourceRoute": "character.html#otho",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/paladin.html": {
    "volume": "III",
@@ -5049,7 +5450,8 @@
    "entityId": "paladin",
    "entityType": "person",
    "sourceRoute": "character.html#paladin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/pelendur.html": {
    "volume": "III",
@@ -5062,7 +5464,8 @@
    "entityId": "pelendur",
    "entityType": "person",
    "sourceRoute": "character.html#pelendur",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/pharazon.html": {
    "volume": "III",
@@ -5075,7 +5478,8 @@
    "entityId": "pharazon",
    "entityType": "person",
    "sourceRoute": "character.html#pharazon",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/pippin.html": {
    "volume": "III",
@@ -5088,7 +5492,8 @@
    "entityId": "pippin",
    "entityType": "person",
    "sourceRoute": "character.html#pippin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/primula.html": {
    "volume": "III",
@@ -5101,7 +5506,8 @@
    "entityId": "primula",
    "entityType": "person",
    "sourceRoute": "character.html#primula",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/rian.html": {
    "volume": "III",
@@ -5114,7 +5520,8 @@
    "entityId": "rian",
    "entityType": "person",
    "sourceRoute": "character.html#rian",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/romendacil1.html": {
    "volume": "III",
@@ -5127,7 +5534,8 @@
    "entityId": "romendacil1",
    "entityType": "person",
    "sourceRoute": "character.html#romendacil1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/romendacil2.html": {
    "volume": "III",
@@ -5140,7 +5548,8 @@
    "entityId": "romendacil2",
    "entityType": "person",
    "sourceRoute": "character.html#romendacil2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/rorimac.html": {
    "volume": "III",
@@ -5153,7 +5562,8 @@
    "entityId": "rorimac",
    "entityType": "person",
    "sourceRoute": "character.html#rorimac",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/rosamunda.html": {
    "volume": "III",
@@ -5166,7 +5576,8 @@
    "entityId": "rosamunda",
    "entityType": "person",
    "sourceRoute": "character.html#rosamunda",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/rosie.html": {
    "volume": "III",
@@ -5179,7 +5590,8 @@
    "entityId": "rosie",
    "entityType": "person",
    "sourceRoute": "character.html#rosie",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/sam.html": {
    "volume": "III",
@@ -5192,7 +5604,8 @@
    "entityId": "sam",
    "entityType": "person",
    "sourceRoute": "character.html#sam",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/sangahyando.html": {
    "volume": "III",
@@ -5205,7 +5618,8 @@
    "entityId": "sangahyando",
    "entityType": "person",
    "sourceRoute": "character.html#sangahyando",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/saradoc.html": {
    "volume": "III",
@@ -5218,7 +5632,8 @@
    "entityId": "saradoc",
    "entityType": "person",
    "sourceRoute": "character.html#saradoc",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/silmarien.html": {
    "volume": "III",
@@ -5231,7 +5646,8 @@
    "entityId": "silmarien",
    "entityType": "person",
    "sourceRoute": "character.html#silmarien",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/siriondil2.html": {
    "volume": "III",
@@ -5244,7 +5660,8 @@
    "entityId": "siriondil2",
    "entityType": "person",
    "sourceRoute": "character.html#siriondil2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/siriondil_g.html": {
    "volume": "III",
@@ -5257,7 +5674,8 @@
    "entityId": "siriondil_g",
    "entityType": "person",
    "sourceRoute": "character.html#siriondil_g",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/smeagol.html": {
    "volume": "III",
@@ -5270,7 +5688,8 @@
    "entityId": "smeagol",
    "entityType": "person",
    "sourceRoute": "character.html#smeagol",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/smeagrandma.html": {
    "volume": "III",
@@ -5283,7 +5702,8 @@
    "entityId": "smeagrandma",
    "entityType": "person",
    "sourceRoute": "character.html#smeagrandma",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tanta.html": {
    "volume": "III",
@@ -5296,7 +5716,8 @@
    "entityId": "tanta",
    "entityType": "person",
    "sourceRoute": "character.html#tanta",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/taralcarin.html": {
    "volume": "III",
@@ -5309,7 +5730,8 @@
    "entityId": "taralcarin",
    "entityType": "person",
    "sourceRoute": "character.html#taralcarin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/taraldarion.html": {
    "volume": "III",
@@ -5322,7 +5744,8 @@
    "entityId": "taraldarion",
    "entityType": "person",
    "sourceRoute": "character.html#taraldarion",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/taramandil.html": {
    "volume": "III",
@@ -5335,7 +5758,8 @@
    "entityId": "taramandil",
    "entityType": "person",
    "sourceRoute": "character.html#taramandil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/taranarion.html": {
    "volume": "III",
@@ -5348,7 +5772,8 @@
    "entityId": "taranarion",
    "entityType": "person",
    "sourceRoute": "character.html#taranarion",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tarancalime.html": {
    "volume": "III",
@@ -5361,7 +5786,8 @@
    "entityId": "tarancalime",
    "entityType": "person",
    "sourceRoute": "character.html#tarancalime",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tarancalimon.html": {
    "volume": "III",
@@ -5374,7 +5800,8 @@
    "entityId": "tarancalimon",
    "entityType": "person",
    "sourceRoute": "character.html#tarancalimon",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tarardamin.html": {
    "volume": "III",
@@ -5387,7 +5814,8 @@
    "entityId": "tarardamin",
    "entityType": "person",
    "sourceRoute": "character.html#tarardamin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/taratanamir.html": {
    "volume": "III",
@@ -5400,7 +5828,8 @@
    "entityId": "taratanamir",
    "entityType": "person",
    "sourceRoute": "character.html#taratanamir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tarcalmacil2.html": {
    "volume": "III",
@@ -5413,7 +5842,8 @@
    "entityId": "tarcalmacil2",
    "entityType": "person",
    "sourceRoute": "character.html#tarcalmacil2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tarcil.html": {
    "volume": "III",
@@ -5426,7 +5856,8 @@
    "entityId": "tarcil",
    "entityType": "person",
    "sourceRoute": "character.html#tarcil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tarciryan.html": {
    "volume": "III",
@@ -5439,7 +5870,8 @@
    "entityId": "tarciryan",
    "entityType": "person",
    "sourceRoute": "character.html#tarciryan",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tarciryatan.html": {
    "volume": "III",
@@ -5452,7 +5884,8 @@
    "entityId": "tarciryatan",
    "entityType": "person",
    "sourceRoute": "character.html#tarciryatan",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tarelendil.html": {
    "volume": "III",
@@ -5465,7 +5898,8 @@
    "entityId": "tarelendil",
    "entityType": "person",
    "sourceRoute": "character.html#tarelendil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tarmeneldur.html": {
    "volume": "III",
@@ -5478,7 +5912,8 @@
    "entityId": "tarmeneldur",
    "entityType": "person",
    "sourceRoute": "character.html#tarmeneldur",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tarminastir.html": {
    "volume": "III",
@@ -5491,7 +5926,8 @@
    "entityId": "tarminastir",
    "entityType": "person",
    "sourceRoute": "character.html#tarminastir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tarondor_a.html": {
    "volume": "III",
@@ -5504,7 +5940,8 @@
    "entityId": "tarondor_a",
    "entityType": "person",
    "sourceRoute": "character.html#tarondor_a",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tarondor_g.html": {
    "volume": "III",
@@ -5517,7 +5954,8 @@
    "entityId": "tarondor_g",
    "entityType": "person",
    "sourceRoute": "character.html#tarondor_g",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tarpalantir.html": {
    "volume": "III",
@@ -5530,7 +5968,8 @@
    "entityId": "tarpalantir",
    "entityType": "person",
    "sourceRoute": "character.html#tarpalantir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tarsurion.html": {
    "volume": "III",
@@ -5543,7 +5982,8 @@
    "entityId": "tarsurion",
    "entityType": "person",
    "sourceRoute": "character.html#tarsurion",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tartelemmaite.html": {
    "volume": "III",
@@ -5556,7 +5996,8 @@
    "entityId": "tartelemmaite",
    "entityType": "person",
    "sourceRoute": "character.html#tartelemmaite",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tartelperien.html": {
    "volume": "III",
@@ -5569,7 +6010,8 @@
    "entityId": "tartelperien",
    "entityType": "person",
    "sourceRoute": "character.html#tartelperien",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tarvanimelde.html": {
    "volume": "III",
@@ -5582,7 +6024,8 @@
    "entityId": "tarvanimelde",
    "entityType": "person",
    "sourceRoute": "character.html#tarvanimelde",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/telemnar.html": {
    "volume": "III",
@@ -5595,7 +6038,8 @@
    "entityId": "telemnar",
    "entityType": "person",
    "sourceRoute": "character.html#telemnar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/telumehtar.html": {
    "volume": "III",
@@ -5608,7 +6052,8 @@
    "entityId": "telumehtar",
    "entityType": "person",
    "sourceRoute": "character.html#telumehtar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/thengel.html": {
    "volume": "III",
@@ -5621,7 +6066,8 @@
    "entityId": "thengel",
    "entityType": "person",
    "sourceRoute": "character.html#thengel",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/theoden.html": {
    "volume": "III",
@@ -5634,7 +6080,8 @@
    "entityId": "theoden",
    "entityType": "person",
    "sourceRoute": "character.html#theoden",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/theodred.html": {
    "volume": "III",
@@ -5647,7 +6094,8 @@
    "entityId": "theodred",
    "entityType": "person",
    "sourceRoute": "character.html#theodred",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/theodwyn.html": {
    "volume": "III",
@@ -5660,7 +6108,8 @@
    "entityId": "theodwyn",
    "entityType": "person",
    "sourceRoute": "character.html#theodwyn",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/thorin.html": {
    "volume": "III",
@@ -5673,7 +6122,8 @@
    "entityId": "thorin",
    "entityType": "person",
    "sourceRoute": "character.html#thorin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/thorin1.html": {
    "volume": "III",
@@ -5686,7 +6136,8 @@
    "entityId": "thorin1",
    "entityType": "person",
    "sourceRoute": "character.html#thorin1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/thorin3.html": {
    "volume": "III",
@@ -5699,7 +6150,8 @@
    "entityId": "thorin3",
    "entityType": "person",
    "sourceRoute": "character.html#thorin3",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/thorondir.html": {
    "volume": "III",
@@ -5712,7 +6164,8 @@
    "entityId": "thorondir",
    "entityType": "person",
    "sourceRoute": "character.html#thorondir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/thrain1.html": {
    "volume": "III",
@@ -5725,7 +6178,8 @@
    "entityId": "thrain1",
    "entityType": "person",
    "sourceRoute": "character.html#thrain1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/thrain2.html": {
    "volume": "III",
@@ -5738,7 +6192,8 @@
    "entityId": "thrain2",
    "entityType": "person",
    "sourceRoute": "character.html#thrain2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/thranduil.html": {
    "volume": "III",
@@ -5751,7 +6206,8 @@
    "entityId": "thranduil",
    "entityType": "person",
    "sourceRoute": "character.html#thranduil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/thror.html": {
    "volume": "III",
@@ -5764,7 +6220,8 @@
    "entityId": "thror",
    "entityType": "person",
    "sourceRoute": "character.html#thror",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tolman_c.html": {
    "volume": "III",
@@ -5777,7 +6234,8 @@
    "entityId": "tolman_c",
    "entityType": "person",
    "sourceRoute": "character.html#tolman_c",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tomcotton_y.html": {
    "volume": "III",
@@ -5790,7 +6248,8 @@
    "entityId": "tomcotton_y",
    "entityType": "person",
    "sourceRoute": "character.html#tomcotton_y",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tulkas.html": {
    "volume": "III",
@@ -5803,7 +6262,8 @@
    "entityId": "tulkas",
    "entityType": "person",
    "sourceRoute": "character.html#tulkas",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/tuor.html": {
    "volume": "III",
@@ -5816,7 +6276,8 @@
    "entityId": "tuor",
    "entityType": "person",
    "sourceRoute": "character.html#tuor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/turambar_g.html": {
    "volume": "III",
@@ -5829,7 +6290,8 @@
    "entityId": "turambar_g",
    "entityType": "person",
    "sourceRoute": "character.html#turambar_g",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/turgon.html": {
    "volume": "III",
@@ -5842,7 +6304,8 @@
    "entityId": "turgon",
    "entityType": "person",
    "sourceRoute": "character.html#turgon",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/turgon_s.html": {
    "volume": "III",
@@ -5855,7 +6318,8 @@
    "entityId": "turgon_s",
    "entityType": "person",
    "sourceRoute": "character.html#turgon_s",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/turin.html": {
    "volume": "III",
@@ -5868,7 +6332,8 @@
    "entityId": "turin",
    "entityType": "person",
    "sourceRoute": "character.html#turin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/turin1.html": {
    "volume": "III",
@@ -5881,7 +6346,8 @@
    "entityId": "turin1",
    "entityType": "person",
    "sourceRoute": "character.html#turin1",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/turin2.html": {
    "volume": "III",
@@ -5894,7 +6360,8 @@
    "entityId": "turin2",
    "entityType": "person",
    "sourceRoute": "character.html#turin2",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/uinen.html": {
    "volume": "III",
@@ -5907,7 +6374,8 @@
    "entityId": "uinen",
    "entityType": "person",
    "sourceRoute": "character.html#uinen",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/ulmo.html": {
    "volume": "III",
@@ -5920,7 +6388,8 @@
    "entityId": "ulmo",
    "entityType": "person",
    "sourceRoute": "character.html#ulmo",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/vaire.html": {
    "volume": "III",
@@ -5933,7 +6402,8 @@
    "entityId": "vaire",
    "entityType": "person",
    "sourceRoute": "character.html#vaire",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/valacar.html": {
    "volume": "III",
@@ -5946,7 +6416,8 @@
    "entityId": "valacar",
    "entityType": "person",
    "sourceRoute": "character.html#valacar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/valandil_a.html": {
    "volume": "III",
@@ -5959,7 +6430,8 @@
    "entityId": "valandil_a",
    "entityType": "person",
    "sourceRoute": "character.html#valandil_a",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/valandil_k.html": {
    "volume": "III",
@@ -5972,7 +6444,8 @@
    "entityId": "valandil_k",
    "entityType": "person",
    "sourceRoute": "character.html#valandil_k",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/valandur.html": {
    "volume": "III",
@@ -5985,7 +6458,8 @@
    "entityId": "valandur",
    "entityType": "person",
    "sourceRoute": "character.html#valandur",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/vana.html": {
    "volume": "III",
@@ -5998,7 +6472,8 @@
    "entityId": "vana",
    "entityType": "person",
    "sourceRoute": "character.html#vana",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/varda.html": {
    "volume": "III",
@@ -6011,7 +6486,8 @@
    "entityId": "varda",
    "entityType": "person",
    "sourceRoute": "character.html#varda",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/vardamir.html": {
    "volume": "III",
@@ -6024,7 +6500,8 @@
    "entityId": "vardamir",
    "entityType": "person",
    "sourceRoute": "character.html#vardamir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/veantur.html": {
    "volume": "III",
@@ -6037,7 +6514,8 @@
    "entityId": "veantur",
    "entityType": "person",
    "sourceRoute": "character.html#veantur",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/vidugavia.html": {
    "volume": "III",
@@ -6050,7 +6528,8 @@
    "entityId": "vidugavia",
    "entityType": "person",
    "sourceRoute": "character.html#vidugavia",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/vidumavi.html": {
    "volume": "III",
@@ -6063,7 +6542,8 @@
    "entityId": "vidumavi",
    "entityType": "person",
    "sourceRoute": "character.html#vidumavi",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/vorondil.html": {
    "volume": "III",
@@ -6076,7 +6556,8 @@
    "entityId": "vorondil",
    "entityType": "person",
    "sourceRoute": "character.html#vorondil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/voronwe.html": {
    "volume": "III",
@@ -6089,7 +6570,8 @@
    "entityId": "voronwe",
    "entityType": "person",
    "sourceRoute": "character.html#voronwe",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/walda.html": {
    "volume": "III",
@@ -6102,7 +6584,8 @@
    "entityId": "walda",
    "entityType": "person",
    "sourceRoute": "character.html#walda",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "person/yavanna.html": {
    "volume": "III",
@@ -6115,7 +6598,8 @@
    "entityId": "yavanna",
    "entityType": "person",
    "sourceRoute": "character.html#yavanna",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place.html": {
    "volume": "I",
@@ -6124,6 +6608,8 @@
    "spread": "spread",
    "title": "A Place in Full",
    "canonical": "place.html",
+   "canonicalRoute": "place.html",
+   "presentation": "paired-leaf",
    "prev": "map.html",
    "next": "realms.html"
   },
@@ -6138,7 +6624,8 @@
    "entityId": "amon_ereb",
    "entityType": "place",
    "sourceRoute": "place.html#amon_ereb",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/amon_rudh.html": {
    "volume": "I",
@@ -6151,7 +6638,8 @@
    "entityId": "amon_rudh",
    "entityType": "place",
    "sourceRoute": "place.html#amon_rudh",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/anfauglith.html": {
    "volume": "I",
@@ -6164,7 +6652,8 @@
    "entityId": "anfauglith",
    "entityType": "place",
    "sourceRoute": "place.html#anfauglith",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/angband.html": {
    "volume": "I",
@@ -6177,7 +6666,8 @@
    "entityId": "angband",
    "entityType": "place",
    "sourceRoute": "place.html#angband",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/annuminas.html": {
    "volume": "I",
@@ -6190,7 +6680,8 @@
    "entityId": "annuminas",
    "entityType": "place",
    "sourceRoute": "place.html#annuminas",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/barad_dur.html": {
    "volume": "I",
@@ -6203,7 +6694,8 @@
    "entityId": "barad_dur",
    "entityType": "place",
    "sourceRoute": "place.html#barad_dur",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/barrow_downs.html": {
    "volume": "I",
@@ -6216,7 +6708,8 @@
    "entityId": "barrow_downs",
    "entityType": "place",
    "sourceRoute": "place.html#barrow_downs",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/belegost.html": {
    "volume": "I",
@@ -6229,7 +6722,8 @@
    "entityId": "belegost",
    "entityType": "place",
    "sourceRoute": "place.html#belegost",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/bree.html": {
    "volume": "I",
@@ -6242,7 +6736,8 @@
    "entityId": "bree",
    "entityType": "place",
    "sourceRoute": "place.html#bree",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/brethil.html": {
    "volume": "I",
@@ -6255,7 +6750,8 @@
    "entityId": "brethil",
    "entityType": "place",
    "sourceRoute": "place.html#brethil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/brithombar.html": {
    "volume": "I",
@@ -6268,7 +6764,8 @@
    "entityId": "brithombar",
    "entityType": "place",
    "sourceRoute": "place.html#brithombar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/buckland_crickhollow.html": {
    "volume": "I",
@@ -6281,7 +6778,8 @@
    "entityId": "buckland_crickhollow",
    "entityType": "place",
    "sourceRoute": "place.html#buckland_crickhollow",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/cair_andros.html": {
    "volume": "I",
@@ -6294,7 +6792,8 @@
    "entityId": "cair_andros",
    "entityType": "place",
    "sourceRoute": "place.html#cair_andros",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/caradhras.html": {
    "volume": "I",
@@ -6307,7 +6806,8 @@
    "entityId": "caradhras",
    "entityType": "place",
    "sourceRoute": "place.html#caradhras",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/caras_galadhon.html": {
    "volume": "I",
@@ -6320,7 +6820,8 @@
    "entityId": "caras_galadhon",
    "entityType": "place",
    "sourceRoute": "place.html#caras_galadhon",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/carn_dum.html": {
    "volume": "I",
@@ -6333,7 +6834,8 @@
    "entityId": "carn_dum",
    "entityType": "place",
    "sourceRoute": "place.html#carn_dum",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/cirith_ungol.html": {
    "volume": "I",
@@ -6346,7 +6848,8 @@
    "entityId": "cirith_ungol",
    "entityType": "place",
    "sourceRoute": "place.html#cirith_ungol",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/dale.html": {
    "volume": "I",
@@ -6359,7 +6862,8 @@
    "entityId": "dale",
    "entityType": "place",
    "sourceRoute": "place.html#dale",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/dimrill_dale.html": {
    "volume": "I",
@@ -6372,7 +6876,8 @@
    "entityId": "dimrill_dale",
    "entityType": "place",
    "sourceRoute": "place.html#dimrill_dale",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/dol_amroth.html": {
    "volume": "I",
@@ -6385,7 +6890,8 @@
    "entityId": "dol_amroth",
    "entityType": "place",
    "sourceRoute": "place.html#dol_amroth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/dol_guldur.html": {
    "volume": "I",
@@ -6398,7 +6904,8 @@
    "entityId": "dol_guldur",
    "entityType": "place",
    "sourceRoute": "place.html#dol_guldur",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/dunharrow.html": {
    "volume": "I",
@@ -6411,7 +6918,8 @@
    "entityId": "dunharrow",
    "entityType": "place",
    "sourceRoute": "place.html#dunharrow",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/edoras.html": {
    "volume": "I",
@@ -6424,7 +6932,8 @@
    "entityId": "edoras",
    "entityType": "place",
    "sourceRoute": "place.html#edoras",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/eglarest.html": {
    "volume": "I",
@@ -6437,7 +6946,8 @@
    "entityId": "eglarest",
    "entityType": "place",
    "sourceRoute": "place.html#eglarest",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/eithel_sirion.html": {
    "volume": "I",
@@ -6450,7 +6960,8 @@
    "entityId": "eithel_sirion",
    "entityType": "place",
    "sourceRoute": "place.html#eithel_sirion",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/erebor.html": {
    "volume": "I",
@@ -6463,7 +6974,8 @@
    "entityId": "erebor",
    "entityType": "place",
    "sourceRoute": "place.html#erebor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/ered_gorgoroth.html": {
    "volume": "I",
@@ -6476,7 +6988,8 @@
    "entityId": "ered_gorgoroth",
    "entityType": "place",
    "sourceRoute": "place.html#ered_gorgoroth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/esgaroth.html": {
    "volume": "I",
@@ -6489,7 +7002,8 @@
    "entityId": "esgaroth",
    "entityType": "place",
    "sourceRoute": "place.html#esgaroth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/estolad.html": {
    "volume": "I",
@@ -6502,7 +7016,8 @@
    "entityId": "estolad",
    "entityType": "place",
    "sourceRoute": "place.html#estolad",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/ettenmoors.html": {
    "volume": "I",
@@ -6515,7 +7030,8 @@
    "entityId": "ettenmoors",
    "entityType": "place",
    "sourceRoute": "place.html#ettenmoors",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/fangorn.html": {
    "volume": "I",
@@ -6528,7 +7044,8 @@
    "entityId": "fangorn",
    "entityType": "place",
    "sourceRoute": "place.html#fangorn",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/field_of_celebrant.html": {
    "volume": "I",
@@ -6541,7 +7058,8 @@
    "entityId": "field_of_celebrant",
    "entityType": "place",
    "sourceRoute": "place.html#field_of_celebrant",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/ford_of_bruinen.html": {
    "volume": "I",
@@ -6554,7 +7072,8 @@
    "entityId": "ford_of_bruinen",
    "entityType": "place",
    "sourceRoute": "place.html#ford_of_bruinen",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/fords_of_isen.html": {
    "volume": "I",
@@ -6567,7 +7086,8 @@
    "entityId": "fords_of_isen",
    "entityType": "place",
    "sourceRoute": "place.html#fords_of_isen",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/fornost.html": {
    "volume": "I",
@@ -6580,7 +7100,8 @@
    "entityId": "fornost",
    "entityType": "place",
    "sourceRoute": "place.html#fornost",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/framsburg.html": {
    "volume": "I",
@@ -6593,7 +7114,8 @@
    "entityId": "framsburg",
    "entityType": "place",
    "sourceRoute": "place.html#framsburg",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/gladden_fields.html": {
    "volume": "I",
@@ -6606,7 +7128,8 @@
    "entityId": "gladden_fields",
    "entityType": "place",
    "sourceRoute": "place.html#gladden_fields",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/gondolin.html": {
    "volume": "I",
@@ -6619,7 +7142,8 @@
    "entityId": "gondolin",
    "entityType": "place",
    "sourceRoute": "place.html#gondolin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/greenfields.html": {
    "volume": "I",
@@ -6632,7 +7156,8 @@
    "entityId": "greenfields",
    "entityType": "place",
    "sourceRoute": "place.html#greenfields",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/grey_havens.html": {
    "volume": "I",
@@ -6645,7 +7170,8 @@
    "entityId": "grey_havens",
    "entityType": "place",
    "sourceRoute": "place.html#grey_havens",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/haudh_en_ndengin.html": {
    "volume": "I",
@@ -6658,7 +7184,8 @@
    "entityId": "haudh_en_ndengin",
    "entityType": "place",
    "sourceRoute": "place.html#haudh_en_ndengin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/havens_of_sirion.html": {
    "volume": "I",
@@ -6671,7 +7198,8 @@
    "entityId": "havens_of_sirion",
    "entityType": "place",
    "sourceRoute": "place.html#havens_of_sirion",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/helm_s_deep.html": {
    "volume": "I",
@@ -6684,7 +7212,8 @@
    "entityId": "helm_s_deep",
    "entityType": "place",
    "sourceRoute": "place.html#helm_s_deep",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/henneth_annun.html": {
    "volume": "I",
@@ -6697,7 +7226,8 @@
    "entityId": "henneth_annun",
    "entityType": "place",
    "sourceRoute": "place.html#henneth_annun",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/himring.html": {
    "volume": "I",
@@ -6710,7 +7240,8 @@
    "entityId": "himring",
    "entityType": "place",
    "sourceRoute": "place.html#himring",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/hobbiton.html": {
    "volume": "I",
@@ -6723,7 +7254,8 @@
    "entityId": "hobbiton",
    "entityType": "place",
    "sourceRoute": "place.html#hobbiton",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/ice_bay_of_forochel.html": {
    "volume": "I",
@@ -6736,7 +7268,8 @@
    "entityId": "ice_bay_of_forochel",
    "entityType": "place",
    "sourceRoute": "place.html#ice_bay_of_forochel",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/isengard.html": {
    "volume": "I",
@@ -6749,7 +7282,8 @@
    "entityId": "isengard",
    "entityType": "place",
    "sourceRoute": "place.html#isengard",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/isle_of_balar.html": {
    "volume": "I",
@@ -6762,7 +7296,8 @@
    "entityId": "isle_of_balar",
    "entityType": "place",
    "sourceRoute": "place.html#isle_of_balar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/ivrin.html": {
    "volume": "I",
@@ -6775,7 +7310,8 @@
    "entityId": "ivrin",
    "entityType": "place",
    "sourceRoute": "place.html#ivrin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/lake_helevorn.html": {
    "volume": "I",
@@ -6788,7 +7324,8 @@
    "entityId": "lake_helevorn",
    "entityType": "place",
    "sourceRoute": "place.html#lake_helevorn",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/losgar.html": {
    "volume": "I",
@@ -6801,7 +7338,8 @@
    "entityId": "losgar",
    "entityType": "place",
    "sourceRoute": "place.html#losgar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/menegroth.html": {
    "volume": "I",
@@ -6814,7 +7352,8 @@
    "entityId": "menegroth",
    "entityType": "place",
    "sourceRoute": "place.html#menegroth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/michel_delving.html": {
    "volume": "I",
@@ -6827,7 +7366,8 @@
    "entityId": "michel_delving",
    "entityType": "place",
    "sourceRoute": "place.html#michel_delving",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/minas_morgul.html": {
    "volume": "I",
@@ -6840,7 +7380,8 @@
    "entityId": "minas_morgul",
    "entityType": "place",
    "sourceRoute": "place.html#minas_morgul",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/minas_tirith.html": {
    "volume": "I",
@@ -6853,7 +7394,8 @@
    "entityId": "minas_tirith",
    "entityType": "place",
    "sourceRoute": "place.html#minas_tirith",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/moria.html": {
    "volume": "I",
@@ -6866,7 +7408,8 @@
    "entityId": "moria",
    "entityType": "place",
    "sourceRoute": "place.html#moria",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/mount_doom.html": {
    "volume": "I",
@@ -6879,7 +7422,8 @@
    "entityId": "mount_doom",
    "entityType": "place",
    "sourceRoute": "place.html#mount_doom",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/mount_gram.html": {
    "volume": "I",
@@ -6892,7 +7436,8 @@
    "entityId": "mount_gram",
    "entityType": "place",
    "sourceRoute": "place.html#mount_gram",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/mount_gundabad.html": {
    "volume": "I",
@@ -6905,7 +7450,8 @@
    "entityId": "mount_gundabad",
    "entityType": "place",
    "sourceRoute": "place.html#mount_gundabad",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/nan_elmoth.html": {
    "volume": "I",
@@ -6918,7 +7464,8 @@
    "entityId": "nan_elmoth",
    "entityType": "place",
    "sourceRoute": "place.html#nan_elmoth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/nargothrond.html": {
    "volume": "I",
@@ -6931,7 +7478,8 @@
    "entityId": "nargothrond",
    "entityType": "place",
    "sourceRoute": "place.html#nargothrond",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/nogrod.html": {
    "volume": "I",
@@ -6944,7 +7492,8 @@
    "entityId": "nogrod",
    "entityType": "place",
    "sourceRoute": "place.html#nogrod",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/nurn_sea_of_nurnen.html": {
    "volume": "I",
@@ -6957,7 +7506,8 @@
    "entityId": "nurn_sea_of_nurnen",
    "entityType": "place",
    "sourceRoute": "place.html#nurn_sea_of_nurnen",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/osgiliath.html": {
    "volume": "I",
@@ -6970,7 +7520,8 @@
    "entityId": "osgiliath",
    "entityType": "place",
    "sourceRoute": "place.html#osgiliath",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/ost_in_edhil.html": {
    "volume": "I",
@@ -6983,7 +7534,8 @@
    "entityId": "ost_in_edhil",
    "entityType": "place",
    "sourceRoute": "place.html#ost_in_edhil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/parth_galen.html": {
    "volume": "I",
@@ -6996,7 +7548,8 @@
    "entityId": "parth_galen",
    "entityType": "place",
    "sourceRoute": "place.html#parth_galen",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/pelargir.html": {
    "volume": "I",
@@ -7009,7 +7562,8 @@
    "entityId": "pelargir",
    "entityType": "place",
    "sourceRoute": "place.html#pelargir",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/rhosgobel.html": {
    "volume": "I",
@@ -7022,7 +7576,8 @@
    "entityId": "rhosgobel",
    "entityType": "place",
    "sourceRoute": "place.html#rhosgobel",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/rivendell.html": {
    "volume": "I",
@@ -7035,7 +7590,8 @@
    "entityId": "rivendell",
    "entityType": "place",
    "sourceRoute": "place.html#rivendell",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/sarn_athrad.html": {
    "volume": "I",
@@ -7048,7 +7604,8 @@
    "entityId": "sarn_athrad",
    "entityType": "place",
    "sourceRoute": "place.html#sarn_athrad",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/sea_of_rhun.html": {
    "volume": "I",
@@ -7061,7 +7618,8 @@
    "entityId": "sea_of_rhun",
    "entityType": "place",
    "sourceRoute": "place.html#sea_of_rhun",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/taur_im_duinath.html": {
    "volume": "I",
@@ -7074,7 +7632,8 @@
    "entityId": "taur_im_duinath",
    "entityType": "place",
    "sourceRoute": "place.html#taur_im_duinath",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/tharbad.html": {
    "volume": "I",
@@ -7087,7 +7646,8 @@
    "entityId": "tharbad",
    "entityType": "place",
    "sourceRoute": "place.html#tharbad",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/the_argonath.html": {
    "volume": "I",
@@ -7100,7 +7660,8 @@
    "entityId": "the_argonath",
    "entityType": "place",
    "sourceRoute": "place.html#the_argonath",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/the_carrock.html": {
    "volume": "I",
@@ -7113,7 +7674,8 @@
    "entityId": "the_carrock",
    "entityType": "place",
    "sourceRoute": "place.html#the_carrock",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/the_dead_marshes.html": {
    "volume": "I",
@@ -7126,7 +7688,8 @@
    "entityId": "the_dead_marshes",
    "entityType": "place",
    "sourceRoute": "place.html#the_dead_marshes",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/the_elvenking_s_halls.html": {
    "volume": "I",
@@ -7139,7 +7702,8 @@
    "entityId": "the_elvenking_s_halls",
    "entityType": "place",
    "sourceRoute": "place.html#the_elvenking_s_halls",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/the_high_pass.html": {
    "volume": "I",
@@ -7152,7 +7716,8 @@
    "entityId": "the_high_pass",
    "entityType": "place",
    "sourceRoute": "place.html#the_high_pass",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/the_iron_hills.html": {
    "volume": "I",
@@ -7165,7 +7730,8 @@
    "entityId": "the_iron_hills",
    "entityType": "place",
    "sourceRoute": "place.html#the_iron_hills",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/the_morannon.html": {
    "volume": "I",
@@ -7178,7 +7744,8 @@
    "entityId": "the_morannon",
    "entityType": "place",
    "sourceRoute": "place.html#the_morannon",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/the_old_forest.html": {
    "volume": "I",
@@ -7191,7 +7758,8 @@
    "entityId": "the_old_forest",
    "entityType": "place",
    "sourceRoute": "place.html#the_old_forest",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/the_stone_of_erech.html": {
    "volume": "I",
@@ -7204,7 +7772,8 @@
    "entityId": "the_stone_of_erech",
    "entityType": "place",
    "sourceRoute": "place.html#the_stone_of_erech",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/the_undeeps.html": {
    "volume": "I",
@@ -7217,7 +7786,8 @@
    "entityId": "the_undeeps",
    "entityType": "place",
    "sourceRoute": "place.html#the_undeeps",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/tol_galen.html": {
    "volume": "I",
@@ -7230,7 +7800,8 @@
    "entityId": "tol_galen",
    "entityType": "place",
    "sourceRoute": "place.html#tol_galen",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/tol_sirion.html": {
    "volume": "I",
@@ -7243,7 +7814,8 @@
    "entityId": "tol_sirion",
    "entityType": "place",
    "sourceRoute": "place.html#tol_sirion",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/tower_hills.html": {
    "volume": "I",
@@ -7256,7 +7828,8 @@
    "entityId": "tower_hills",
    "entityType": "place",
    "sourceRoute": "place.html#tower_hills",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/trollshaws.html": {
    "volume": "I",
@@ -7269,7 +7842,8 @@
    "entityId": "trollshaws",
    "entityType": "place",
    "sourceRoute": "place.html#trollshaws",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/vinyamar.html": {
    "volume": "I",
@@ -7282,7 +7856,8 @@
    "entityId": "vinyamar",
    "entityType": "place",
    "sourceRoute": "place.html#vinyamar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/weathertop.html": {
    "volume": "I",
@@ -7295,7 +7870,8 @@
    "entityId": "weathertop",
    "entityType": "place",
    "sourceRoute": "place.html#weathertop",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "place/withered_heath.html": {
    "volume": "I",
@@ -7308,7 +7884,8 @@
    "entityId": "withered_heath",
    "entityType": "place",
    "sourceRoute": "place.html#withered_heath",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "poems.html": {
    "volume": "V",
@@ -7317,6 +7894,8 @@
    "spread": "spread",
    "title": "Verse",
    "canonical": "poems.html",
+   "canonicalRoute": "poems.html",
+   "presentation": "paired-leaf",
    "prev": "names.html",
    "next": "writing.html"
   },
@@ -7327,6 +7906,8 @@
    "spread": "full",
    "title": "Peoples",
    "canonical": "population_dashboard.html",
+   "canonicalRoute": "population_dashboard.html",
+   "presentation": "full-bleed",
    "prev": "genealogy.html"
   },
   "quiz.html": {
@@ -7336,6 +7917,8 @@
    "spread": "spread",
    "title": "The Trial",
    "canonical": "quiz.html",
+   "canonicalRoute": "quiz.html",
+   "presentation": "paired-leaf",
    "prev": "corpus.html",
    "next": "registers.html"
   },
@@ -7350,7 +7933,8 @@
    "entityId": "alqualonde",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=alqualonde",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/angband.html": {
    "volume": "I",
@@ -7363,7 +7947,8 @@
    "entityId": "angband",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=angband",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/angmar.html": {
    "volume": "I",
@@ -7376,7 +7961,8 @@
    "entityId": "angmar",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=angmar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/arnor.html": {
    "volume": "I",
@@ -7389,7 +7975,8 @@
    "entityId": "arnor",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=arnor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/arthedain.html": {
    "volume": "I",
@@ -7402,7 +7989,8 @@
    "entityId": "arthedain",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=arthedain",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/balar.html": {
    "volume": "I",
@@ -7415,7 +8003,8 @@
    "entityId": "balar",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=balar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/belegost.html": {
    "volume": "I",
@@ -7428,7 +8017,8 @@
    "entityId": "belegost",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=belegost",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/beornings.html": {
    "volume": "I",
@@ -7441,7 +8031,8 @@
    "entityId": "beornings",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=beornings",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/bombadil.html": {
    "volume": "I",
@@ -7454,7 +8045,8 @@
    "entityId": "bombadil",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=bombadil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/bree.html": {
    "volume": "I",
@@ -7467,7 +8059,8 @@
    "entityId": "bree",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=bree",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/brethil.html": {
    "volume": "I",
@@ -7480,7 +8073,8 @@
    "entityId": "brethil",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=brethil",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/cardolan.html": {
    "volume": "I",
@@ -7493,7 +8087,8 @@
    "entityId": "cardolan",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=cardolan",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/dale.html": {
    "volume": "I",
@@ -7506,7 +8101,8 @@
    "entityId": "dale",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=dale",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/dolguldur.html": {
    "volume": "I",
@@ -7519,7 +8115,8 @@
    "entityId": "dolguldur",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=dolguldur",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/doriath.html": {
    "volume": "I",
@@ -7532,7 +8129,8 @@
    "entityId": "doriath",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=doriath",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/dorlomin.html": {
    "volume": "I",
@@ -7545,7 +8143,8 @@
    "entityId": "dorlomin",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=dorlomin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/dorthonion.html": {
    "volume": "I",
@@ -7558,7 +8157,8 @@
    "entityId": "dorthonion",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=dorthonion",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/dorwinion.html": {
    "volume": "I",
@@ -7571,7 +8171,8 @@
    "entityId": "dorwinion",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=dorwinion",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/druadan.html": {
    "volume": "I",
@@ -7584,7 +8185,8 @@
    "entityId": "druadan",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=druadan",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/dunland.html": {
    "volume": "I",
@@ -7597,7 +8199,8 @@
    "entityId": "dunland",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=dunland",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/easterlingsfa.html": {
    "volume": "I",
@@ -7610,7 +8213,8 @@
    "entityId": "easterlingsfa",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=easterlingsfa",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/eotheod.html": {
    "volume": "I",
@@ -7623,7 +8227,8 @@
    "entityId": "eotheod",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=eotheod",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/erebor.html": {
    "volume": "I",
@@ -7636,7 +8241,8 @@
    "entityId": "erebor",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=erebor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/eregion.html": {
    "volume": "I",
@@ -7649,7 +8255,8 @@
    "entityId": "eregion",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=eregion",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/esgaroth.html": {
    "volume": "I",
@@ -7662,7 +8269,8 @@
    "entityId": "esgaroth",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=esgaroth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/falas.html": {
    "volume": "I",
@@ -7675,7 +8283,8 @@
    "entityId": "falas",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=falas",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/fangorn.html": {
    "volume": "I",
@@ -7688,7 +8297,8 @@
    "entityId": "fangorn",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=fangorn",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/gondolin.html": {
    "volume": "I",
@@ -7701,7 +8311,8 @@
    "entityId": "gondolin",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=gondolin",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/gondor.html": {
    "volume": "I",
@@ -7714,7 +8325,8 @@
    "entityId": "gondor",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=gondor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/greenwood.html": {
    "volume": "I",
@@ -7727,7 +8339,8 @@
    "entityId": "greenwood",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=greenwood",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/harad.html": {
    "volume": "I",
@@ -7740,7 +8353,8 @@
    "entityId": "harad",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=harad",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/himring.html": {
    "volume": "I",
@@ -7753,7 +8367,8 @@
    "entityId": "himring",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=himring",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/hithlum.html": {
    "volume": "I",
@@ -7766,7 +8381,8 @@
    "entityId": "hithlum",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=hithlum",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/ironhills.html": {
    "volume": "I",
@@ -7779,7 +8395,8 @@
    "entityId": "ironhills",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=ironhills",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/isengard.html": {
    "volume": "I",
@@ -7792,7 +8409,8 @@
    "entityId": "isengard",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=isengard",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/khand.html": {
    "volume": "I",
@@ -7805,7 +8423,8 @@
    "entityId": "khand",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=khand",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/khazaddum.html": {
    "volume": "I",
@@ -7818,7 +8437,8 @@
    "entityId": "khazaddum",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=khazaddum",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/ladros.html": {
    "volume": "I",
@@ -7831,7 +8451,8 @@
    "entityId": "ladros",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=ladros",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/lindon.html": {
    "volume": "I",
@@ -7844,7 +8465,8 @@
    "entityId": "lindon",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=lindon",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/lorien.html": {
    "volume": "I",
@@ -7857,7 +8479,8 @@
    "entityId": "lorien",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=lorien",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/lossoth.html": {
    "volume": "I",
@@ -7870,7 +8493,8 @@
    "entityId": "lossoth",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=lossoth",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/mistyorcs.html": {
    "volume": "I",
@@ -7883,7 +8507,8 @@
    "entityId": "mistyorcs",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=mistyorcs",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/mordor.html": {
    "volume": "I",
@@ -7896,7 +8521,8 @@
    "entityId": "mordor",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=mordor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/morgul.html": {
    "volume": "I",
@@ -7909,7 +8535,8 @@
    "entityId": "morgul",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=morgul",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/nargothrond.html": {
    "volume": "I",
@@ -7922,7 +8549,8 @@
    "entityId": "nargothrond",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=nargothrond",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/nogrod.html": {
    "volume": "I",
@@ -7935,7 +8563,8 @@
    "entityId": "nogrod",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=nogrod",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/numenor.html": {
    "volume": "I",
@@ -7948,7 +8577,8 @@
    "entityId": "numenor",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=numenor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/ossiriand.html": {
    "volume": "I",
@@ -7961,7 +8591,8 @@
    "entityId": "ossiriand",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=ossiriand",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/reunited.html": {
    "volume": "I",
@@ -7974,7 +8605,8 @@
    "entityId": "reunited",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=reunited",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/rhudaur.html": {
    "volume": "I",
@@ -7987,7 +8619,8 @@
    "entityId": "rhudaur",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=rhudaur",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/rhun.html": {
    "volume": "I",
@@ -8000,7 +8633,8 @@
    "entityId": "rhun",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=rhun",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/rivendell.html": {
    "volume": "I",
@@ -8013,7 +8647,8 @@
    "entityId": "rivendell",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=rivendell",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/rohan.html": {
    "volume": "I",
@@ -8026,7 +8661,8 @@
    "entityId": "rohan",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=rohan",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/shire.html": {
    "volume": "I",
@@ -8039,7 +8675,8 @@
    "entityId": "shire",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=shire",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/thargelion.html": {
    "volume": "I",
@@ -8052,7 +8689,8 @@
    "entityId": "thargelion",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=thargelion",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/tirion.html": {
    "volume": "I",
@@ -8065,7 +8703,8 @@
    "entityId": "tirion",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=tirion",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/umbar.html": {
    "volume": "I",
@@ -8078,7 +8717,8 @@
    "entityId": "umbar",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=umbar",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/utumno.html": {
    "volume": "I",
@@ -8091,7 +8731,8 @@
    "entityId": "utumno",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=utumno",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/valinor.html": {
    "volume": "I",
@@ -8104,7 +8745,8 @@
    "entityId": "valinor",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=valinor",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realm/woodmen.html": {
    "volume": "I",
@@ -8117,7 +8759,8 @@
    "entityId": "woodmen",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=woodmen",
-   "generated": true
+   "generated": true,
+   "presentation": "paired-leaf"
   },
   "realms.html": {
    "volume": "I",
@@ -8126,6 +8769,8 @@
    "spread": "spread",
    "title": "Realms",
    "canonical": "realms.html",
+   "canonicalRoute": "realms.html",
+   "presentation": "paired-leaf",
    "prev": "place.html",
    "next": "sheets.html"
   },
@@ -8136,6 +8781,8 @@
    "spread": "spread",
    "title": "Reckonings",
    "canonical": "reckoning.html",
+   "canonicalRoute": "reckoning.html",
+   "presentation": "paired-leaf",
    "prev": "armies_dashboard.html"
   },
   "registers.html": {
@@ -8145,6 +8792,8 @@
    "spread": "spread",
    "title": "The Registers",
    "canonical": "registers.html",
+   "canonicalRoute": "registers.html",
+   "presentation": "paired-leaf",
    "prev": "quiz.html",
    "next": "theindex.html"
   },
@@ -8155,6 +8804,8 @@
    "spread": "full",
    "title": "The Drawn Sheets",
    "canonical": "sheets.html",
+   "canonicalRoute": "sheets.html",
+   "presentation": "full-bleed",
    "prev": "realms.html",
    "next": "valinor.html"
   },
@@ -8165,6 +8816,8 @@
    "spread": "spread",
    "title": "The Silences",
    "canonical": "silences.html",
+   "canonicalRoute": "silences.html",
+   "presentation": "paired-leaf",
    "prev": "oaths.html"
   },
   "theindex.html": {
@@ -8174,6 +8827,8 @@
    "spread": "spread",
    "title": "The Index",
    "canonical": "theindex.html",
+   "canonicalRoute": "theindex.html",
+   "presentation": "paired-leaf",
    "prev": "registers.html",
    "next": "tours.html"
   },
@@ -8184,6 +8839,8 @@
    "spread": "spread",
    "title": "Reader's Paths",
    "canonical": "tours.html",
+   "canonicalRoute": "tours.html",
+   "presentation": "paired-leaf",
    "prev": "theindex.html"
   },
   "valinor.html": {
@@ -8193,6 +8850,8 @@
    "spread": "full",
    "title": "Aman",
    "canonical": "valinor.html",
+   "canonicalRoute": "valinor.html",
+   "presentation": "full-bleed",
    "prev": "sheets.html"
   },
   "writing.html": {
@@ -8202,7 +8861,61 @@
    "spread": "spread",
    "title": "The Scriptorium",
    "canonical": "writing.html",
+   "canonicalRoute": "writing.html",
+   "presentation": "paired-leaf",
    "prev": "poems.html"
   }
- }
+ },
+ "sequences": {
+  "I": [
+   "baynes.html",
+   "gazetteer.html",
+   "gondolin.html",
+   "map.html",
+   "place.html",
+   "realms.html",
+   "sheets.html",
+   "valinor.html"
+  ],
+  "II": [
+   "arda_timeline.html",
+   "armies_dashboard.html",
+   "reckoning.html"
+  ],
+  "III": [
+   "ainur.html",
+   "character.html",
+   "genealogy.html",
+   "population_dashboard.html"
+  ],
+  "IV": [
+   "artifacts.html",
+   "gallery.html",
+   "heraldry.html",
+   "living.html"
+  ],
+  "V": [
+   "languages.html",
+   "names.html",
+   "poems.html",
+   "writing.html"
+  ],
+  "VI": [
+   "canon.html",
+   "cosmology.html",
+   "oaths.html",
+   "silences.html"
+  ],
+  "VII": [
+   "annals.html",
+   "compare.html",
+   "corpus.html",
+   "quiz.html",
+   "registers.html",
+   "theindex.html",
+   "tours.html"
+  ]
+ },
+ "aliases": {},
+ "rights": {}
 }

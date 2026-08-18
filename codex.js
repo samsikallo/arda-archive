@@ -51,6 +51,28 @@
     for (i = 0; i < ix.volumes.length; i++) if (ix.volumes[i].id === meta.vol) vol = ix.volumes[i];
     if (vol) R.setAttribute("data-volume", vol.id);
 
+    /* ── CODEX-STAGE-5: THE SPATIAL CONTRACT ────────────────────────────────────────────────
+       Everything below builds the OBJECT the furniture above was always missing. The stylesheet
+       keys entirely off data-presentation, so a route the manifest does not know still lands in
+       the neutral object rather than in an empty frame.                                       */
+    R.setAttribute("data-presentation", meta.presentation ||
+      ({ spread: "paired-leaf", full: "full-bleed", none: "single-folio" })[meta.spread] || "single-folio");
+
+    var mainEl = document.querySelector('[role="main"], main');
+
+    /* THE TITLE PLAQUE names the ARCHIVE and the VOLUME and never the route's own <h1>.
+       Repeating the page heading in a gold box is decoration wearing orientation's clothes: it
+       tells the reader something the heading two centimetres below already said, and it costs a
+       landmark-free div on 621 routes. aria-hidden because it duplicates information the
+       breadcrumb already exposes to assistive technology in a better order. */
+    if (mainEl && mainEl.parentNode) {
+      var plq = el("div", { id: "cx-plaque", "aria-hidden": "true" });
+      plq.appendChild(el("span", { class: "cx-pa" }, "The Arda Archive"));
+      if (vol) plq.appendChild(el("span", { class: "cx-pv" }, vol.title || ("Volume " + vol.id)));
+      mainEl.parentNode.insertBefore(plq, mainEl);
+    }
+
+
     var host = el("div", { id: "codex-shell", "data-v": "1" });
 
     /* 1. VOLUME THUMB INDEX. Canonical, global, and visually distinct from a personal bookmark —
@@ -189,6 +211,48 @@
 
       if (meta.vol) S.noteVisit(route, title);   /* a VISIT, never a completion (§11) */
     }
+
+    /* CLASPS ARE BUILT HERE, NOT BESIDE THE PLAQUE, AND THE REASON IS A BUG I SHIPPED FOR
+       ONE RUN. `host` is declared with `var` further down; at the plaque's position the
+       DECLARATION is hoisted and the ASSIGNMENT is not, so `host.appendChild` threw
+       TypeError on every route. The failure was correct in one respect -- boot() caught it
+       and left the page in its own layout, which is what the fallback is for -- and the
+       whole shell was gone with it. Build furniture where its container exists. */
+    /* THE UTILITY CLASPS. A second silhouette family on the opposite edge, because the left edge
+       is WHERE YOU GO and the right edge is WHAT YOU DO. They are native <button>s that delegate
+       to the one layer machine in codex_state.js -- not a fourth dismissal model for the reader
+       to learn -- and they are built only when that machine is present, so a partial load cannot
+       leave dead metal on the page. */
+    if (window.ardaLayers) {
+      var clasps = el("div", { id: "cx-clasps" });
+      [["contents", "\u2261", "Contents"],
+       ["journal", "\u2767", "Reader\u2019s Journal"]].forEach(function (c) {
+        var b = el("button", { type: "button", "aria-label": c[2], title: c[2] }, c[1]);
+        b.addEventListener("click", function () { window.ardaLayers.open(c[0]); });
+        clasps.appendChild(b);
+      });
+      host.appendChild(clasps);
+    }
+    /* PUBLISH THE BOOK'S MEASURED EDGES so the fixed tabs and clasps can sit against it.
+       The object's width is whatever each page's own layout gives its main landmark -- 1100px on
+       a record, full width on the map -- so no constant in a stylesheet can find its edge. This
+       measures and republishes on resize, throttled through rAF. It writes only two custom
+       properties; if it never runs, the CSS falls back to a sane constant and the tabs still
+       render, just not flush. */
+    (function () {
+      var mEl = document.querySelector('[role="main"], main'), t = 0;
+      if (!mEl) return;
+      function pub() {
+        t = 0;
+        var b = mEl.getBoundingClientRect();
+        R.style.setProperty("--cx-book-x", Math.round(b.left) + "px");
+        R.style.setProperty("--cx-book-r", Math.round(window.innerWidth - b.right) + "px");
+      }
+      pub();
+      window.addEventListener("resize", function () {
+        if (!t) t = requestAnimationFrame(pub);
+      }, { passive: true });
+    })();
 
     document.body.appendChild(host);
     R.setAttribute("data-codex-shell", "on");

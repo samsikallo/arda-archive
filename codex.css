@@ -135,3 +135,156 @@
 :root[data-archetype="plates"] #cx-vols:hover,
 :root[data-archetype="plates"] #cx-vols:focus-within{opacity:1}
 :root[data-archetype="plates"] #cx-crumb{padding-bottom:4px}
+
+/* ═══════════════════════════════════════════════════════════════════════════════════════════
+   CODEX-STAGE-5 — THE SPATIAL CONTRACT. Added 18 August 2026.
+
+   WHY THIS EXISTS, AND WHAT WAS ACTUALLY MISSING. Everything above this line builds FURNITURE --
+   #cx-toc, #cx-folio, #cx-crumb, #cx-bar, #cx-jrn, #cx-run, #cx-vols -- and #codex-shell is
+   appended to the END of <body>, so it floats beside the page instead of containing it. Measured
+   before writing a line: this stylesheet contained `grid-template` 0 times, `leaf` 0, `spine` 0,
+   `plaque` 0, `clasp` 0. The pieces of a book were all present and the BOOK was not, which is
+   exactly why the result read as a manuscript skin rather than a codex.
+
+   THE HOOK IS THE MAIN LANDMARK, AND IT IS UNIVERSAL. Sampled 51 routes across every family:
+   51 of 51 expose a main landmark and 49 use id="main". So the object can be built AROUND the
+   content that already exists -- no DOM is moved, no page is regenerated, and a route that has
+   not been migrated still lands inside the object.
+
+   IT DEGRADES BEFORE IT BREAKS. Every rule here is scoped under [data-codex="on"], which nav.js
+   sets from localStorage `arda-codex`, so the whole layer is one switch away from off. Nothing
+   here is required for a page to be readable.                                                */
+
+:root[data-codex="on"]{
+  /* the ground, the object and the furniture are three separate token groups on purpose, so the
+     low-ornament and print modes can drop one without rebuilding the others. */
+  --cx-ground:#171310; --cx-ground2:#241d17;
+  --cx-stock:#f4ecd8; --cx-stock2:#efe4c9;
+  --cx-edge:#c9b98f; --cx-rule:#b7a373;
+  --cx-tab:#6b5836; --cx-tab-on:#8a6d3b;
+  --cx-plaque:#241d17; --cx-plaque-ink:#e2cf96;
+  --cx-leafgap:clamp(14px,2.2vw,34px);
+  --cx-tabw:clamp(26px,3vw,40px);
+}
+:root[data-theme="dark"][data-codex="on"]{
+  --cx-ground:#0d0b09; --cx-ground2:#161210;
+  --cx-stock:#221c15; --cx-stock2:#1b1611;
+  --cx-edge:#5a4c33; --cx-rule:#6b5a3c;
+}
+
+/* 1. THE LIBRARY GROUND. A place, not a picture: two radial pools suggesting lamplight on a
+      lectern, painted in colour only. No image, no video, no parallax, no canvas -- the brief's
+      budget is 25 KB gzip for the whole shell and a single frame of "library photograph" would
+      spend it all and still crop badly on a phone. */
+:root[data-codex="on"] body{
+  background:
+    radial-gradient(120% 80% at 50% -10%, var(--cx-ground2), transparent 60%),
+    radial-gradient(80% 60% at 50% 120%, var(--cx-ground2), transparent 55%),
+    var(--cx-ground);
+}
+
+/* 2. THE CODEX OBJECT. The existing main landmark IS the open book: page stock, a bevelled
+      edge, and the shadow that makes it sit on something. */
+@media (min-width:900px){
+  :root[data-codex="on"] [role="main"],
+  :root[data-codex="on"] main{
+    background:linear-gradient(92deg,var(--cx-stock2),var(--cx-stock) 8%,var(--cx-stock) 92%,var(--cx-stock2));
+    border:1px solid var(--cx-edge);
+    border-radius:3px;
+    box-shadow:0 1px 0 rgba(255,255,255,.35) inset, 0 18px 44px -14px rgba(0,0,0,.65),
+               0 3px 10px -4px rgba(0,0,0,.5);
+    padding-inline:clamp(20px,3.2vw,46px);
+    margin-inline:auto;
+    position:relative;
+  }
+  /* THE GUTTER IS DECORATION AND MUST NEVER BE A TARGET. pointer-events:none is not a nicety:
+     a shaded strip down the middle of the reading surface would otherwise swallow text
+     selection, focus outlines and map drags on every route at once. */
+  /* THE GUTTER IS DRAWN ONLY WHERE TWO LEAVES ACTUALLY EXIST, and the first version drew it on
+     all 606 paired-leaf routes -- none of which splits its content. A shaded spine down the
+     middle of a single prose column is a painted affordance: it tells the reader the page has
+     two halves when it has one, which is the same class of lie as an arrow promising a sequence
+     that is not there. codex.js sets data-leaves="2" only when it has produced a real second
+     leaf, so today this rule matches nothing, and that is the honest state. */
+  :root[data-codex="on"][data-presentation="paired-leaf"][data-leaves="2"] [role="main"]::before,
+  :root[data-codex="on"][data-presentation="paired-leaf"][data-leaves="2"] main::before{
+    content:"";position:absolute;inset-block:0;inset-inline-start:50%;
+    width:clamp(10px,1.6vw,26px);transform:translateX(-50%);
+    background:linear-gradient(90deg,transparent,rgba(90,70,40,.16) 42%,rgba(90,70,40,.22) 50%,rgba(90,70,40,.16) 58%,transparent);
+    pointer-events:none;z-index:1;
+  }
+}
+
+/* 3. THE TITLE PLAQUE. Persistent identity above the binding: it names the ARCHIVE and the
+      VOLUME, never the route's own heading -- repeating the <h1> in a gold box is decoration
+      pretending to be orientation. */
+:root[data-codex="on"] #cx-plaque{
+  display:block;margin:0 auto clamp(8px,1.4vw,16px);max-width:min(92vw,44rem);
+  background:linear-gradient(#2c241b,var(--cx-plaque));color:var(--cx-plaque-ink);
+  border:1px solid #6b5a3c;border-radius:2px;
+  padding:.34em 1.1em;text-align:center;
+  font-variant:small-caps;letter-spacing:.13em;font-size:.92rem;line-height:1.5;
+}
+:root[data-codex="on"] #cx-plaque .cx-pv{opacity:.72;font-size:.86em}
+:root[data-codex="on"] #cx-plaque .cx-pv::before{content:" · ";opacity:.5}
+
+/* 4. THE VOLUME THUMB INDEX, on the OUTER LEFT EDGE. Canonical destinations, one silhouette
+      family, and never confusable with a personal ribbon. Below 1100px they stop being tabs and
+      become an ordinary labelled list inside the contents layer -- a 30px tab with rotated text
+      is unusable on a phone and pretending otherwise is how the metaphor starts costing access. */
+@media (min-width:1100px){
+  :root[data-codex="on"] #cx-vols{
+    /* ANCHORED TO THE MEASURED BOOK, NOT A GUESSED WIDTH. This was
+       `50vw - min(46rem,46vw)`, which assumed a 736px page; the real main landmark is 1100px at
+       1440 viewport, so the expression went negative, clamped to the viewport edge, and left the
+       tabs floating 160px away from the object they are supposed to be bound into. A thumb index
+       that does not touch its book is a decoration. codex.js measures the landmark and publishes
+       --cx-book-x / --cx-book-r, re-measured on resize. */
+    position:fixed;inset-inline-start:max(4px,calc(var(--cx-book-x,170px) - var(--cx-tabw)));
+    inset-block-start:22vh;z-index:30;inline-size:max-content;
+  }
+  :root[data-codex="on"] #cx-vols ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:3px}
+  :root[data-codex="on"] #cx-vols a{
+    display:flex;align-items:center;justify-content:center;
+    /* PHYSICAL width/height HERE, DELIBERATELY, AND THE LOGICAL PAIR WAS A REAL BUG.
+       `writing-mode:vertical-rl` SWAPS THE AXES: inline-size becomes the vertical dimension and
+       block-size the horizontal. Written logically this box came out 73px wide and 40px tall --
+       the opposite of a thumb tab -- and it overlapped 34px into the page it is supposed to sit
+       against. Logical properties are right almost everywhere and wrong exactly here, because
+       this box's orientation is fixed by design rather than by the document's direction. */
+    box-sizing:border-box;width:var(--cx-tabw);height:clamp(58px,7vh,84px);
+    background:linear-gradient(90deg,var(--cx-tab),#5a4a2c);color:#f0e4c0;
+    border:1px solid #4a3d24;border-inline-end:0;
+    border-start-start-radius:4px;border-end-start-radius:4px;
+    writing-mode:vertical-rl;text-orientation:mixed;
+    font-variant:small-caps;letter-spacing:.1em;font-size:.72rem;text-decoration:none;
+    box-shadow:-2px 2px 6px -2px rgba(0,0,0,.6);
+    transition:inline-size .16s ease, background .16s ease;
+  }
+  :root[data-codex="on"] #cx-vols a:hover{width:calc(var(--cx-tabw) + 5px)}
+  /* THE ACTIVE TAB READS AS CONNECTED TO THE LEAF, which is the whole job of a thumb index:
+     it is lighter, wider, and its inner edge is the page's own colour so the tab and the page
+     look like one object. Shape and value carry it, not colour alone. */
+  :root[data-codex="on"] #cx-vols a[aria-current="page"],
+  :root[data-codex="on"] #cx-vols a[aria-current="true"]{
+    background:linear-gradient(90deg,var(--cx-tab-on),var(--cx-stock));
+    color:#2c2318;width:calc(var(--cx-tabw) + 8px);font-weight:600;
+  }
+}
+
+/* 5. THE UTILITY CLASPS, on the OUTER RIGHT EDGE. A SECOND silhouette family, deliberately:
+      the left edge is where you go, the right edge is what you do. Round versus rectangular is
+      the difference, and it survives with every texture disabled. */
+@media (min-width:1100px){
+  :root[data-codex="on"] #cx-clasps{
+    position:fixed;inset-inline-end:max(4px,calc(var(--cx-book-r,170px) - 42px));
+    inset-block-start:24vh;z-index:30;display:flex;flex-direction:column;gap:8px;
+  }
+  :root[data-codex="on"] #cx-clasps button{
+    inline-size:34px;block-size:34px;border-radius:50%;
+    background:radial-gradient(circle at 34% 30%,#9d8a5e,#6b5a3c);
+    border:1px solid #4a3d24;color:#f0e4c0;cursor:pointer;
+    display:grid;place-items:center;font-size:.9rem;line-height:1;
+    box-shadow:0 2px 6px -2px rgba(0,0,0,.6);
+  }
+}
