@@ -662,7 +662,10 @@
   "n": "Morgoth's oath over Maedhros",
   "kind": "oath",
   "when": "Y.T. 1497",
+  "q": "Then Morgoth held Maidros as a hostage, and swore only to release him, if the Noldor would march away",
   "c": "HoME XI, the Grey Annals §50, year header 1497 [C] — 'Then Morgoth held Maidros as a hostage, and swore only to release him, if the Noldor would march away'.",
+  "src": "t1_11_the_war_of_the_jewels.txt:1274",
+  "tier": 1,
   "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
  },
  {
@@ -670,7 +673,10 @@
   "n": "Oaths of league and friendship at Mereth Aderthad",
   "kind": "oath",
   "when": "F.A. 20",
+  "q": "At Mereth Aderthad many counsels were taken in good will, and oaths were sworn of league and friendship",
   "c": "HoME XI, the Grey Annals §72, year header 20 [C] — 'At Mereth Aderthad many counsels were taken in good will, and oaths were sworn of league and friendship'.",
+  "src": "t1_11_the_war_of_the_jewels.txt:1457",
+  "tier": 1,
   "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
  },
  {
@@ -678,7 +684,10 @@
   "n": "The dooming of Eöl, and his curse on Maeglin",
   "kind": "oath",
   "when": "F.A. 400",
+  "q": "Therefore Eöl was doomed to death, and cast from the high walls of Gondolin; and he cursed his son as he died, foreboding that he should die a like death",
   "c": "HoME XI, the Grey Annals §120, year header 400 [C] — 'Therefore Eöl was doomed to death, and cast from the high walls of Gondolin; and he cursed his son as he died, foreboding that he should die a like death'.",
+  "src": "t1_11_the_war_of_the_jewels.txt:1932",
+  "tier": 1,
   "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
  },
  {
@@ -686,7 +695,10 @@
   "n": "Húrin and Huor's oath of secrecy to Turgon",
   "kind": "oath",
   "when": "F.A. 455",
+  "q": "but they swore to him oaths of secrecy and never revealed Gondolin",
   "c": "HoME XI, the Grey Annals §150, year header 455 [C] — 'but they swore to him oaths of secrecy and never revealed Gondolin'. A bracketed later insertion, INSIDE the annal.",
+  "src": "t1_11_the_war_of_the_jewels.txt:2124",
+  "tier": 1,
   "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
  },
  {
@@ -694,7 +706,10 @@
   "n": "The brethren swear to keep Turgon's counsels",
   "kind": "oath",
   "when": "F.A. 458",
+  "q": "And the brethren swore never to reveal the counsels of Turgon and to keep secret all that they had seen in his realm",
   "c": "HoME XI, the Grey Annals §166, year header 458 [C] — 'And the brethren swore never to reveal the counsels of Turgon and to keep secret all that they had seen in his realm'.",
+  "src": "t1_11_the_war_of_the_jewels.txt:2285",
+  "tier": 1,
   "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
  },
  {
@@ -702,7 +717,10 @@
   "n": "The Feänorians' second swearing over the Silmaril",
   "kind": "oath",
   "when": "F.A. 465",
+  "q": "for their Oath was roused from slumber, and they swore that even should the quest be achieved they would slay any that kept the Silmaril or gave it to any hands but their own",
   "c": "HoME XI, the Grey Annals §179, year header 465 [C] — 'for their Oath was roused from slumber, and they swore that even should the quest be achieved they would slay any that kept the Silmaril or gave it to any hands but their own'.",
+  "src": "t1_11_the_war_of_the_jewels.txt:2422",
+  "tier": 1,
   "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
  },
  {
@@ -710,7 +728,10 @@
   "n": "Beren's vow that nothing should withhold him",
   "kind": "oath",
   "when": "F.A. 465",
+  "q": "swore that by no power of spell, wall or weapon should he be withheld from his love",
   "c": "HoME XI, the Grey Annals §189, year header 465, Version II [C] — Beren 'swore that by no power of spell, wall or weapon should he be withheld from his love'.",
+  "src": "t1_11_the_war_of_the_jewels.txt:2521",
+  "tier": 1,
   "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
  },
  {
@@ -719,14 +740,17 @@
   "kind": "oath",
   "when": "F.A. 465",
   "c": "HoME XI, the Grey Annals §194, year header 465, Version II [C].",
-  "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
+  "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains. NO QUOTATION IS RECORDED FOR THIS ONE, and that is stated rather than left as a gap: its citation (HoME XI, the Grey Annals §194, Version II) is given for the FACT that Felagund would not be released, and the annal does not put the refusal in words the archive could quote. The other eleven records that carried evidence only in prose `c` were given `q` and `src` on 18 Aug, each verified in its cited book at an exact line; this one could not be, because there is nothing to verify."
  },
  {
   "id": "doom_luthien_manwe",
   "n": "The doom Lúthien won from Manwë",
   "kind": "oath",
   "when": "F.A. 469",
+  "q": "For Lúthien had won this doom from Manwë that Beren might return to live again, and she with him",
   "c": "HoME XI, the Grey Annals §214, year header 469 [C] — 'For Lúthien had won this doom from Manwë that Beren might return to live again, and she with him... This doom she chose'.",
+  "src": "t1_11_the_war_of_the_jewels.txt:2713",
+  "tier": 1,
   "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
  },
  {
@@ -734,7 +758,10 @@
   "n": "Feänor's counter-doom to the Doom of Mandos",
   "kind": "oath",
   "when": "Y.T. 1496",
+  "q": "Therefore I say we will go on, and this doom I add: the deeds that we do shall be the matter of song until the last days of Arda.",
   "c": "HoME X, the Annals of Aman §155, year header 1496 [C] — \"'Therefore I say we will go on, and this doom I add: the deeds that we do shall be the matter of song until the last days of Arda.'\" In the SAME annal as the Doom of Mandos.",
+  "src": "t1_10_morgoths_ring.txt:4608",
+  "tier": 1,
   "note": "Added 5 Aug 2026. Year header verified independently with map/annal_header.py; passage verified with ardatext.contains."
  },
  {
@@ -742,7 +769,10 @@
   "n": "Felagund foresees his own oath",
   "kind": "oath",
   "when": "F.A. 102 / 499",
+  "q": "An oath I too shall swear, and must be free to fulfill it and go into darkness.",
   "c": "HoME XI, the Grey Annals §108 [C]. THE PASSAGE SITS UNDER TWO YEAR HEADERS -- 102 and 499 -- because the Grey Annals print VARIANT RECENSIONS IN SEQUENCE, and the archive publishes the RANGE with both named (the owner's ruling, 4 Aug 2026). \"'An oath I too shall swear, and must be free to fulfill it and go into darkness.'\" — Felagund to Galadriel, foreseeing the oath he swears to Barahir at §146.",
+  "src": "t1_11_the_war_of_the_jewels.txt:1785",
+  "tier": 1,
   "note": "Added 5 Aug 2026. Both year headers verified with map/annal_header.py, which now returns EVERY matching block rather than choosing one -- the tie-break it had picked wrongly for exactly these two."
  },
  {
@@ -750,7 +780,10 @@
   "n": "Ulfang's sons swear allegiance to Caranthir",
   "kind": "oath",
   "when": "F.A. 463 / 466",
+  "q": "and they followed Cranthir and swore allegiance to him and were faithless",
   "c": "HoME XI, the Grey Annals §174 [C], repeated verbatim at §186 which Christopher heads '(Conclusion of annal 463 in Version II)'. TWO HEADERS, 463 and 466, BOTH NAMED. 'and they followed Cranthir and swore allegiance to him and were faithless' — CRANTHIR is the annals' form of Caranthir.",
+  "src": "t1_11_the_war_of_the_jewels.txt:2390",
+  "tier": 1,
   "note": "Added 5 Aug 2026. Both year headers verified with map/annal_header.py, which now returns EVERY matching block rather than choosing one -- the tie-break it had picked wrongly for exactly these two."
  }
 ]
