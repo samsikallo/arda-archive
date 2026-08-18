@@ -1,7 +1,7 @@
 {
  "note": "Quoted spans bound to their source by EVIDENCE, not by reading the prose around them. A span carrying `b` verifies in exactly one book of the corpus, or in one book at the LOWEST tier that holds it (`by`:`tier`, with `over` naming how many it outranked). A span carrying `bb` verifies in SEVERAL books at the same lowest tier: every witness is named and none is asserted as THE source. Proximity to a book name is not attribution, and pairing by proximity was measured at a 20% artifact rate before this file existed. map/attrib_check.py re-verifies every binding here on every run.",
  "minwords": 7,
- "n": 591,
+ "n": 593,
  "bindings": [
   {
    "d": "arda_ainur.json",
@@ -42,7 +42,9 @@
    "rid": "varda",
    "f": "note",
    "q": "Melkor she knew from before the making of the Music and rejected him, and he hated her, and feared her more than all others whom Eru made",
-   "b": "t1_a_the_silmarillion.txt"
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_ainur.json",
@@ -175,7 +177,9 @@
    "rid": "melkor",
    "f": "note",
    "q": "Melkor is counted no longer among the Valar, and his name is not spoken upon Earth",
-   "b": "t1_a_the_silmarillion.txt"
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_ainur.json",
@@ -382,7 +386,7 @@
    "q": "Mithrandir among the Elves, Tharkûn to the Dwarves; Olórin I was in my youth in the West that is forgotten, in the South Incánus, in the North Gandalf",
    "b": "t1_c_the_lord_of_the_rings.txt",
    "by": "tier",
-   "over": 1
+   "over": 3
   },
   {
    "d": "arda_ainur.json",
@@ -470,7 +474,12 @@
    "rid": "sauron",
    "f": "note",
    "q": "he continued to call himself Mairon the Admirable, or Tar-mairon",
-   "b": "t3_eldamo_qq_quen_eng_doc.txt"
+   "bb": [
+    "t3_ardalambion_quen_eng_htm.txt",
+    "t3_ardalambion_sauronname_htm.txt",
+    "t3_eldamo_qq_quen_eng_doc.txt"
+   ],
+   "by": "tie"
   },
   {
    "d": "arda_ainur.json",
@@ -588,7 +597,7 @@
    "q": "And much of the strength and will of Sauron passed into that One Ring",
    "b": "t1_a_the_silmarillion.txt",
    "by": "tier",
-   "over": 1
+   "over": 2
   },
   {
    "d": "arda_artifacts.json",
@@ -859,14 +868,16 @@
    "q": "A light to you in dark places, when all other lights go out",
    "b": "t1_c_the_lord_of_the_rings.txt",
    "by": "tier",
-   "over": 1
+   "over": 2
   },
   {
    "d": "arda_artifacts.json",
    "r": "The Horn of the Mark",
    "f": "d",
    "q": "He that blows it at need shall set fear in the hearts of his enemies and joy in the hearts of his friends",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_artifacts.json",
@@ -1231,7 +1242,9 @@
    "rid": "gwaihir",
    "f": "note",
    "q": "Twice you have borne me, Gwaihir my friend",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_creatures.json",
@@ -1239,7 +1252,9 @@
    "rid": "landroval",
    "f": "note",
    "q": "down swept Gwaihir, and down came Landroval and Meneldor the swift",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_creatures.json",
@@ -1526,7 +1541,9 @@
    "rid": "smeagrandma",
    "f": "note",
    "q": "Ruled by a grandmother of the folk, stern and wise",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_genealogy.json",
@@ -1569,7 +1586,7 @@
    "q": "though I do not know the way",
    "b": "t1_c_the_lord_of_the_rings.txt",
    "by": "tier",
-   "over": 1
+   "over": 4
   },
   {
    "d": "arda_journeys.json",
@@ -1605,7 +1622,9 @@
    "rid": "the pelennor",
    "f": "note",
    "q": "borne upon a wind from the Sea",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 2
   },
   {
    "d": "arda_journeys.json",
@@ -1621,7 +1640,9 @@
    "rid": "the pelennor",
    "f": "note",
    "q": "Death! Ride, ride to ruin and the world's ending!",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_journeys.json",
@@ -1629,7 +1650,9 @@
    "rid": "the morannon",
    "f": "note",
    "q": "The Eagles are coming! The Eagles are coming!",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_journeys.json",
@@ -1720,7 +1743,7 @@
    "q": "Bring to me in your hand a Silmaril from Morgoth's crown",
    "b": "t1_a_the_silmarillion.txt",
    "by": "tier",
-   "over": 3
+   "over": 4
   },
   {
    "d": "arda_journeys.json",
@@ -1797,7 +1820,9 @@
    "r": "Ford of Bruinen",
    "f": "b",
    "q": "you shall have neither the Ring nor me!",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 4
   },
   {
    "d": "arda_livingmap.json",
@@ -1806,7 +1831,7 @@
    "q": "On the land of Lórien there was no stain",
    "b": "t1_c_the_lord_of_the_rings.txt",
    "by": "tier",
-   "over": 1
+   "over": 6
   },
   {
    "d": "arda_livingmap.json",
@@ -1997,7 +2022,9 @@
    "rid": "niphredil",
    "f": "note",
    "q": "elanor and niphredil bloom no more east of the Sea",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 2
   },
   {
    "d": "arda_nature.json",
@@ -2065,7 +2092,7 @@
    "q": "or athelas in the noble tongue, or to those who know somewhat of the Valinorean",
    "b": "t1_c_the_lord_of_the_rings.txt",
    "by": "tier",
-   "over": 1
+   "over": 2
   },
   {
    "d": "arda_nature.json",
@@ -2288,7 +2315,9 @@
    "rid": "kelvar_olvar",
    "f": "note",
    "q": "go among the kelvar and the olvar, and some will dwell therein, and be held in reverence, and their just anger shall be feared",
-   "b": "t1_a_the_silmarillion.txt"
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_nature.json",
@@ -2518,7 +2547,7 @@
    "q": "for all living things were her food, and her vomit darkness",
    "b": "t1_c_the_lord_of_the_rings.txt",
    "by": "tier",
-   "over": 3
+   "over": 4
   },
   {
    "d": "arda_nature.json",
@@ -2898,7 +2927,9 @@
    "rid": "doom_mandos_thou_hast_spoken",
    "f": "note",
    "q": "slain; first of all the Eldar in Aman",
-   "b": "t1_a_the_silmarillion.txt"
+   "b": "t1_a_the_silmarillion.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_oaths.json",
@@ -3129,7 +3160,9 @@
    "rid": "oath_dead_men_isildur",
    "f": "note",
    "q": "in the beginning of the realm of Gondor",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_oaths.json",
@@ -3214,7 +3247,9 @@
    "rid": "claim_isildur_weregild",
    "f": "q",
    "q": "''This I will have as weregild for my father, and my brother,'",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_oaths.json",
@@ -3250,7 +3285,7 @@
    "q": "Faithless is he that says farewell when the road darkens",
    "b": "t1_c_the_lord_of_the_rings.txt",
    "by": "tier",
-   "over": 1
+   "over": 2
   },
   {
    "d": "arda_oaths.json",
@@ -3292,7 +3327,7 @@
    "q": "Begone, and trouble me no more! If you touch me ever again, you shall be cast yourself into the Fire of Doom",
    "b": "t1_c_the_lord_of_the_rings.txt",
    "by": "tier",
-   "over": 1
+   "over": 2
   },
   {
    "d": "arda_oaths.json",
@@ -3308,7 +3343,9 @@
    "rid": "curse_saruman_shire",
    "f": "note",
    "q": "I have already done much that you will find it hard to mend or undo in your lives",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_oaths.json",
@@ -3316,7 +3353,9 @@
    "rid": "curse_saruman_shire",
    "f": "note",
    "q": "It is useless to meet revenge with revenge: it will heal nothing",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_oaths.json",
@@ -3412,7 +3451,7 @@
    "q": "Out of the Great Sea to Middle-earth I am come",
    "b": "t1_c_the_lord_of_the_rings.txt",
    "by": "tier",
-   "over": 3
+   "over": 6
   },
   {
    "d": "arda_pe17_lexicon.json",
@@ -3665,14 +3704,16 @@
    "q": "though I do not know the way",
    "b": "t1_c_the_lord_of_the_rings.txt",
    "by": "tier",
-   "over": 1
+   "over": 4
   },
   {
    "d": "arda_quotes.json",
    "r": "at the Morannon",
    "f": "q",
    "q": "The Eagles are coming! The Eagles are coming!",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_quotes.json",
@@ -3758,14 +3799,18 @@
    "r": "Frodo & Gandalf on the time given us",
    "f": "q",
    "q": "I wish it need not have happened in my time",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 3
   },
   {
    "d": "arda_quotes.json",
    "r": "Gandalf's answer",
    "f": "q",
    "q": "I wish it need not have happened in my time",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 3
   },
   {
    "d": "arda_quotes.json",
@@ -3974,7 +4019,7 @@
    "q": "its worth was ten times that of gold",
    "b": "t1_c_the_lord_of_the_rings.txt",
    "by": "tier",
-   "over": 1
+   "over": 2
   },
   {
    "d": "arda_realms.json",
@@ -4058,7 +4103,7 @@
    "q": "On the land of Lórien there was no stain",
    "b": "t1_c_the_lord_of_the_rings.txt",
    "by": "tier",
-   "over": 1
+   "over": 6
   },
   {
    "d": "arda_realms.json",
@@ -4110,7 +4155,9 @@
    "r": "Terror-strategy in three arms: the Nazgûl, the hosts of Orcs",
    "f": "0",
    "q": "Where there's a whip there's a will",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 2
   },
   {
    "d": "arda_realms.json",
@@ -4167,21 +4214,27 @@
    "r": "The corpus's minimal state, described outright: 'The Shire a",
    "f": "0",
    "q": "The Shire at this time had hardly any government",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 2
   },
   {
    "d": "arda_realms.json",
    "r": "The corpus's minimal state, described outright: 'The Shire a",
    "f": "0",
    "q": "families for the most part managed their own affairs",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 3
   },
   {
    "d": "arda_realms.json",
    "r": "Birthday mathom-giving, six meals, pipe-weed lore (the Prolo",
    "f": "0",
    "q": "They love peace and quiet and good tilled earth",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 2
   },
   {
    "d": "arda_realms.json",
@@ -4375,7 +4428,9 @@
    "r": "'The Master of wood, water and hill' who owns nothing and co",
    "f": "0",
    "q": "power to defy our Enemy is not in him, unless such power is in the earth itself",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_realms.json",
@@ -4515,7 +4570,9 @@
    "r": "Entish time",
    "f": "d",
    "q": "a lovely language, but it takes a very long time to say anything in it, because we do not say anything in it, unless it is worth taking a long time to say",
-   "b": "t1_c_the_lord_of_the_rings.txt"
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 2
   },
   {
    "d": "arda_reckoning.json",
@@ -4914,6 +4971,20 @@
   },
   {
    "d": "arda_scripts.json",
+   "r": "essë (árë; older ázë)",
+   "f": "note",
+   "q": "áre was originally áze, but when this z became merged with 21",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_scripts.json",
+   "r": "essë (árë; older ázë)",
+   "f": "note",
+   "q": "and the name esse was given to it",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_scripts.json",
    "r": "hyarmen",
    "f": "note",
    "q": "Later 33 was used for independent h",
@@ -4956,7 +5027,9 @@
    "r": "Peoples & Numbers",
    "f": "a",
    "q": "they would or could be made to mate with Orcs, producing new breeds, often larger and more cunning",
-   "b": "t1_10_morgoths_ring.txt"
+   "b": "t1_10_morgoths_ring.txt",
+   "by": "tier",
+   "over": 1
   },
   {
    "d": "arda_silences.json",
@@ -5143,7 +5216,7 @@
    "q": "a tree blossoming like snow beneath a silver crown and many-pointed stars",
    "b": "t1_c_the_lord_of_the_rings.txt",
    "by": "tier",
-   "over": 1
+   "over": 2
   },
   {
    "d": "arda_timemap.json",
