@@ -26,9 +26,10 @@ background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 
 <div class="orn" style="margin-top:16px">❦ ✦ ❦</div>
 <div class="cite" style="text-align:center">Brief quotations, letter-faithful, each with its source and its story — the archive points to the songs; the books hold them.</div>
 </div>
+<script>function aJ(u){return fetch(u).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.json()})["catch"](function(e){(self.__aF=self.__aF||[]).push(u);throw e})}</script>
 <script>
 const KL={shire:"the Shire",lay:"the great lays",elvish:"Elvish measures",rohan:"the Mark",dwarf:"Durin's folk",ent:"the Onodrim",lore:"lore & prophecy",bombadil:"the Red Book margins"};
-fetch("arda_poems.json").then(r=>r.json()).then(D=>{
+aJ("arda_poems.json").then(D=>{
 const kinds=[...new Set(D.map(p=>p.k))];const on={};kinds.forEach(k=>on[k]=1);
 const ch=document.getElementById("chips");
 kinds.forEach(k=>{const c=document.createElement("span");c.className="chip on";c.textContent=KL[k]||k;

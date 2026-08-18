@@ -35,9 +35,10 @@ background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 
 <div id="narr"></div>
 <div role="main" id="stage"><iframe id="frame" title="tour stop"></iframe></div>
 </div>
+<script>function aJ(u){return fetch(u).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.json()})["catch"](function(e){(self.__aF=self.__aF||[]).push(u);throw e})}</script>
 <script>
 let TOURS=null,cur=null,idx=0;
-fetch("arda_tours.json").then(r=>r.json()).then(D=>{TOURS=D;
+aJ("arda_tours.json").then(D=>{TOURS=D;
 document.getElementById("list").innerHTML=
 '<p class="cite">Pick a road. The left column tells the story; the right shows the hall itself, live — every stop is a real view you can touch.</p>'+
 D.map(t=>`<div class="tourcard" onclick="startTour('${t.id}')"><h3><svg class='ai' aria-hidden='true'><use href='#i-flag'/></svg> ${t.t}</h3>

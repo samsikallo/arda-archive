@@ -45,6 +45,7 @@ background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 
 <div class="cite" style="text-align:center;max-width:900px;margin:0 auto">The botanical plates are drawn for this archive from the corpus’ own descriptions — herbarium studies, not photographs of anything that exists.</div>
 </div>
 <div id="lb"></div>
+<script>function aJ(u){return fetch(u).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.json()})["catch"](function(e){(self.__aF=self.__aF||[]).push(u);throw e})}</script>
 <script>
 const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const nrm=s=>String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
@@ -61,9 +62,9 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape"){const L=document.ge
 let N=[],C=[],ART={},view="flora";
 const FLORA=["tree","flower","herb","grass"],FAUNA=["beast","bird","fish","insect","monstrous"];
 Promise.all([
- fetch("arda_nature.json").then(r=>r.json()),
- fetch("arda_creatures.json").then(r=>r.json()),
- fetch("arda_herbarium.json").then(r=>r.json()).catch(()=>({}))
+ aJ("arda_nature.json"),
+ aJ("arda_creatures.json"),
+ aJ("arda_herbarium.json").catch(()=>({}))
 ]).then(([n,c,a])=>{N=n;C=c;ART=a||{};build();});
 function build(){
  const bar=document.getElementById("bar");

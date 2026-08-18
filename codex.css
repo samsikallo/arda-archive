@@ -489,3 +489,32 @@
     align-items:start;
   }
 }
+
+/* ── THE INCOMPLETE LEAF ────────────────────────────────────────────────────────────────────
+   §9 calls a blank leaf an anti-pattern, and measured across all 39 halls, ELEVEN of them lost
+   their records SILENTLY when the data failed -- oaths.html shed 85,679 characters and said
+   nothing, character.html and place.html fell to 21 characters of visible text. Five other halls
+   already said "could not", so the archive had a house habit that eleven halls did not follow.
+
+   It is a NOTICE and not an error dialog: the reader has a page that still works, and what they
+   need is to be told it is showing less than it holds -- and which records are missing, because
+   naming the absence is the same rule the corpus pages follow. */
+:root[data-codex="on"] #cx-fail{
+  display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 10px;
+  margin:0 0 14px; padding:11px 14px;
+  border:1px solid var(--cx-rule); border-left:3px solid var(--cx-rubric);
+  background:var(--cx-stock); color:var(--cx-ink);
+  font:14px/1.5 Georgia,serif;
+}
+:root[data-codex="on"] #cx-fail strong{color:var(--cx-rubric); font-weight:600}
+:root[data-codex="on"] #cx-fail .cx-fail-f{
+  flex-basis:100%; color:var(--cx-mut); font-size:12.5px; font-style:italic;
+  word-break:break-word;
+}
+:root[data-codex="on"] #cx-fail .cx-retry{
+  min-height:44px; padding:6px 14px; cursor:pointer;
+  font:13px Georgia,serif; color:var(--cx-ink);
+  background:transparent; border:1px solid var(--cx-rule); border-radius:3px;
+}
+:root[data-codex="on"] #cx-fail .cx-retry:hover,
+:root[data-codex="on"] #cx-fail .cx-retry:focus-visible{border-color:var(--cx-rubric)}

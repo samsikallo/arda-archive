@@ -50,6 +50,7 @@ background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 
 <div class="cite" style="text-align:center">Provenance gaps are stated, never bridged: where six millennia go dark between Gondolin and a troll-hoard, the card says so.</div>
 </div>
 <script src="arda_icons.js"></script>
+<script>function aJ(u){return fetch(u).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.json()})["catch"](function(e){(self.__aF=self.__aF||[]).push(u);throw e})}</script>
 <script>
 /* Drawn marks, not emoji -- Codex Phase 5. The whole map moves at once: a list where a jewel
    is drawn and a phial is an emoji reads as an accident. arda_icons.js */
@@ -63,7 +64,7 @@ const PLATE={"The Silmarils":"it_silmarils","The One Ring":"it_onering",
 "The Dragon-helm of Dor-lómin":"it_dragonhelm","The Nauglamír":"it_nauglamir","The Elessar":"it_elessar",
 "The Phial of Galadriel":"it_phial","The Horn of the Mark":"it_horn","The mithril-coat":"it_mithril",
 "Grond, twice":"it_grond","The Red Arrow & the beacons":"it_redarrow"};
-fetch("arda_artifacts.json").then(r=>r.json()).then(D=>{
+aJ("arda_artifacts.json").then(D=>{
 // categories + labels come from the data (map/gen_artifact_taxonomy.py)
 const cats=[];D.forEach(a=>{if(!cats.some(c=>c.k===a.cat))cats.push({k:a.cat,l:a.cl||a.cat})});
 const on={};cats.forEach(c=>on[c.k]=1);

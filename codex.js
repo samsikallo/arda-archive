@@ -354,4 +354,35 @@
       });
   }
   start();
+
+  /* The incomplete-leaf notice. A hall whose records fail to load renders its furniture and
+     nothing else; §9 calls a blank leaf an anti-pattern. The failure is recorded by aJ() in each
+     hall's own first inline script -- that script runs before this file, which is deferred, so a
+     shared fetch wrapper here would always be installed too late. Reasoning: docs/codex-states.md */
+  (function states() {
+    function render() {
+      var f = window.__aF;
+      if (!f || !f.length || document.getElementById("cx-fail")) return;
+      var main = document.querySelector('[role="main"], main');
+      if (!main) return;
+      var off = navigator.onLine === false;
+      var box = el("div", { id: "cx-fail", role: "status", "aria-live": "polite" });
+      box.appendChild(el("strong", null, off ? "You are offline." : "This leaf is incomplete."));
+      box.appendChild(el("span", null, off
+        ? " The archive could not reach its records, so this hall is showing only what your browser had already stored."
+        : " The archive could not load its records, so this hall is showing less than it holds."));
+      var seen = [], i;
+      for (i = 0; i < f.length; i++) if (seen.indexOf(f[i]) < 0) seen.push(f[i]);
+      box.appendChild(el("span", { class: "cx-fail-f" }, seen.join(" · ")));
+      var b = el("button", { type: "button", class: "cx-retry" }, "Try again");
+      b.addEventListener("click", function () { location.reload(); });
+      box.appendChild(b);
+      main.insertBefore(box, main.firstChild);
+    }
+    render();
+    window.addEventListener("load", render);
+    setTimeout(render, 1200);
+    setTimeout(render, 4000);
+  })();
+
 })();

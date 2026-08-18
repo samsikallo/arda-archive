@@ -102,9 +102,10 @@ anywhere.</span></div>
 <div id="list"></div>
 </div>
 <script src="nav.js"></script>
+<script>function aJ(u){return fetch(u).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.json()})["catch"](function(e){(self.__aF=self.__aF||[]).push(u);throw e})}</script>
 <script>
 
-fetch("arda_gazetteer.json").then(r=>r.json()).then(d=>{
+aJ("arda_gazetteer.json").then(d=>{
  const G=d.places, K=Object.keys(G).sort((a,b)=>G[a].n.localeCompare(G[b].n));
  const ages={},realms={};
  K.forEach(k=>{(G[k].ages||[]).forEach(a=>ages[a]=1);(G[k].parents||[]).forEach(p=>realms[p]=1)});

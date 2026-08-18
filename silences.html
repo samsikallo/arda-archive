@@ -26,8 +26,9 @@ h2{font-variant:small-caps;font-weight:normal;letter-spacing:.1em;color:#5a4626;
 <div class="orn" style="margin-top:20px">❦ ✦ ❦</div>
 <p class="cite" style="text-align:center">A silence recorded is worth more than a guess enshrined.</p>
 </div>
+<script>function aJ(u){return fetch(u).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.json()})["catch"](function(e){(self.__aF=self.__aF||[]).push(u);throw e})}</script>
 <script>
-fetch("arda_silences.json").then(r=>r.json()).then(D=>{
+aJ("arda_silences.json").then(D=>{
 const themes=[...new Set(D.map(s=>s.th))];
 document.getElementById("halls").innerHTML=themes.map(th=>
 `<h2>${th}</h2><div class="grid">`+
