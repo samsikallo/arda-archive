@@ -86,6 +86,60 @@ TWINS=[
  ("the beacons at Edoras","arda_livingmap.json","arda_timemap_jpeg.json","beacons burn",
   "the beacons are Gondor's, seen by Pippin on 8 March"),
 ]
+
+# ---- 2b. TWINS, STRUCTURALLY: two files that hold the same collections must agree ---
+#
+# WHY THIS ARM EXISTS. The table above is a BLOCKLIST OF FOUR HISTORICAL STRINGS, and the
+# section header promises something else entirely: "the same claim held in two files, which must
+# agree." Those are different questions, and the Auditor proved the gap rather than arguing it --
+# in a valid isolated two-file fixture it planted a deliberately wrong citation in BOTH map
+# files, and this guard returned OK, because the planted string was not one of its four probes.
+# **Live green proved only that four known-bad strings were absent.** A guard whose name is a
+# property and whose code is a denylist will pass every fault nobody has met yet.
+#
+# THE POPULATION, MEASURED BEFORE THE PREDICATE WAS WRITTEN. arda_livingmap.json and
+# arda_timemap_jpeg.json share four collections at identical counts:
+#
+#     alive 17 · pins 8 · slices 13 · realms 39      77 shared records, 0 differing today
+#
+# So the honest predicate is: JOIN THE SHARED COLLECTIONS AND REQUIRE THEM TO AGREE. That is
+# checkable, it is true of 100% of the data right now, and it catches the entire class the four
+# probes catch one member of.
+#
+# INSTALLED AT ZERO, which is the cheapest moment for a ratchet: it costs nothing today and
+# refuses the next divergence. A ratchet installed while debt exists is a number nobody can meet.
+#
+# THE HONEST LIMIT, AND IT IS WHY THE FOUR PROBES ABOVE ARE KEPT RATHER THAN REPLACED. This arm
+# asks whether the twins AGREE. It cannot ask whether they are RIGHT. Two files carrying the same
+# wrong citation agree perfectly and pass here -- measured, not reasoned: planting an identical
+# bad value in both leaves this arm green. The probe list catches exactly that case for the four
+# faults the archive has actually met, and this arm catches the whole class of divergence the
+# probe list cannot anticipate. Neither subsumes the other, so both run.
+#
+# THE OTHER DECLARED PAIR IS NOT STRUCTURAL AND IS NOT LISTED HERE. arda_artifacts and
+# arda_silences share no collection -- one is 20 artifacts, the other 19 silences -- and their
+# twin relationship is a single CLAIM about the mithril-coat. Forcing them into a structural
+# comparison would produce a guard that reports on nothing, which is this file's own rule-5
+# fault. Two kinds of twin, two mechanisms, each saying which it is.
+TWIN_FILES=[
+ ("arda_livingmap.json","arda_timemap_jpeg.json",
+  "the living map and the JPEG time-map are generated from one source and publish the same "
+  "realms, pins, slices and lifelines; a divergence means one of them was repaired and the "
+  "other was not, which is exactly how the Framsburg caveat and the mithril-coat error survived"),
+]
+
+def _twin_key(rec,i):
+    """The record's own identity, or its position when it has none.
+
+    POSITION IS A LAST RESORT AND IT IS DECLARED. Joining two lists by index compares the third
+    record of one file against the third of the other, which is only meaningful if both are
+    generated in one order -- these are, from one generator. Where a record carries a real id the
+    id wins, so a reordering surfaces as a missing key rather than as 39 false differences."""
+    if isinstance(rec,dict):
+        for k in ("id","key","n","name","t"):
+            if isinstance(rec.get(k),str) and rec[k]: return rec[k]
+    return "#%d"%i
+
 # ---- 6. TIER: phrases that betray a tier-3 source being trusted as canon ----------
 TIER_TRAPS=[
  ("Foster","a tier-3 concordance"),("Fonstad","a tier-3 reconstruction"),
@@ -149,6 +203,47 @@ def check():
             if not os.path.exists(f): continue
             if probe.lower() in json.dumps(json.load(open(f)),ensure_ascii=False).lower():
                 fail(errs,"TWIN     %s still present in %s — %s"%(label,f,why))
+
+    # 2b. TWINS, STRUCTURALLY
+    for fa,fb,why in TWIN_FILES:
+        if not (os.path.exists(fa) and os.path.exists(fb)):
+            continue
+        try:
+            A=json.load(open(fa)); B=json.load(open(fb))
+        except Exception as e:
+            fail(errs,"TWIN     %s / %s could not both be read (%s)"%(fa,fb,e)); continue
+        if not (isinstance(A,dict) and isinstance(B,dict)):
+            fail(errs,"TWIN     %s / %s are not both keyed documents"%(fa,fb)); continue
+        shared=[k for k in A if k in B and type(A[k])is type(B[k]) and isinstance(A[k],(list,dict))]
+        # A PAIR THAT SHARES NOTHING IS A DECLARATION THAT HAS GONE STALE, and it must be loud.
+        # If these two files stop holding common collections, this arm silently checks zero
+        # records and prints OK -- the failure mode this whole section exists to end.
+        if not shared:
+            fail(errs,"TWIN     %s and %s are declared twins and now share NO comparable "
+                      "collection. Either the declaration is stale or one file was restructured; "
+                      "this arm is checking nothing until it is resolved."%(fa,fb)); continue
+        nrec=0; bad=[]
+        for coll in shared:
+            a,b=A[coll],B[coll]
+            if isinstance(a,list):
+                ka={_twin_key(r,i):r for i,r in enumerate(a)}
+                kb={_twin_key(r,i):r for i,r in enumerate(b)}
+            else:
+                ka,kb=a,b
+            common=set(ka)&set(kb)
+            nrec+=len(common)
+            for k in sorted(common):
+                if ka[k]!=kb[k]: bad.append((coll,k))
+            for k in sorted(set(ka)^set(kb)):
+                bad.append((coll,k+"  (present in only one file)"))
+        if bad:
+            fail(errs,"TWIN     %s and %s disagree on %d of %d shared record(s) — %s"
+                      %(fa,fb,len(bad),nrec,why))
+            for coll,k in bad[:8]:
+                fail(errs,"           %s / %s"%(coll,k))
+        else:
+            notes.append("TWIN     %s and %s agree on all %d shared record(s) across %s"
+                         %(fa,fb,nrec,", ".join(shared)))
 
     # 3. REFERENCES
     #    a) the character-record alias map must point at records that exist
