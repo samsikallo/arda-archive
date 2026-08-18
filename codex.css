@@ -346,3 +346,65 @@
 @media (max-width:1099px){
   :root[data-codex="on"][data-ledger="on"] .grid{grid-template-columns:minmax(0,1fr)}
 }
+
+/* ── ONE CANONICAL NAVIGATION AT A TIME ─────────────────────────────────────────────────────
+   At wide sizes the left edge owns the volumes, so the top bar's hall dropdowns come down: the
+   same seven destinations were being offered twice in two shapes. What remains above the book is
+   identity, the jump search, the theme and layer controls, feedback and the breadcrumb -- the
+   things the thumb index does NOT carry.
+
+   GUARDED THREE WAYS, and each is load-bearing. `[data-volnav="tabs"]` is set by codex.js ONLY
+   after it has rendered at least one volume link, so a failed manifest fetch or an old cached
+   shell leaves the dropdowns in place. `[data-codex="on"]` means the reader's own escape hatch
+   restores them. And the media query matches the one that draws the tabs, so below 1100px --
+   where the thumb index does not render at all -- the dropdowns are untouched and remain the
+   only route between halls. Immersion must degrade before access does. */
+@media (min-width:1100px){
+  :root[data-codex="on"][data-volnav="tabs"] #ardanav .grp{display:none}
+}
+
+/* ── BELOW THE WIDE BREAKPOINT THE THUMB INDEX STANDS DOWN ──────────────────────────────────
+   Everything that MAKES a thumb tab -- the fixed position, the vertical writing mode, the
+   silhouette, the anchoring to the book's measured edge -- lives inside `@media (min-width:1100px)`.
+   Below it those rules simply do not apply, so `#cx-vols` fell back into normal flow and rendered
+   as a bare list of seven links stacked above the page. Measured at 390 and at 1024: seven tabs
+   "visible", none of them a tab.
+
+   THAT IS THE FAULT §9 NAMES -- "no tiny page-edge tabs ... decorative frame consuming most of
+   the viewport" -- and the honest fix is not to shrink a tab until it is unusable. IT IS TO LET
+   THE OTHER MECHANISM CARRY IT. The top bar's hall dropdowns are already an accessible disclosure
+   navigation with `aria-expanded` buttons, they hold the same seven halls, and the rule above
+   leaves them untouched at exactly these widths. So the volume index does not vanish; it CHANGES
+   SHAPE, which is what a responsive transformation is.
+
+   `display:none` and not `visibility:hidden`, deliberately: the links are duplicated in the
+   dropdowns at these widths, and a screen reader should meet each destination once, not twice. */
+@media (max-width:1099px){
+  :root[data-codex="on"] #cx-vols{display:none}
+  /* The clasps go with them for the same reason: they are fixed furniture anchored to a book
+     edge that only exists at wide sizes. Contents and the Journal remain reachable -- the layer
+     machine in codex_state.js is what actually opens them, and it is width-independent. */
+  :root[data-codex="on"] #cx-clasps{display:none}
+}
+
+/* ── THE TOUCH TARGET, WHICH IS THE HALF THAT MAKES THE DRAWER A DRAWER ─────────────────────
+   Driven at 390px: the seven hall buttons are 24px tall. They are the ONLY route between halls
+   at that width now, they carry `aria-expanded`, they open to five links each and they fit the
+   viewport -- every part of §9's "accessible drawer" holds EXCEPT the part a thumb touches.
+   44px is the figure the archive already uses for `#cx-jrn .cx-clear`, so this is the house
+   number rather than a new one.
+
+   `min-height` and not `height`: a hall label wraps at this width ("Peoples & Living Beings"
+   is 116px on a 390px screen), and a fixed height would clip the second line. */
+@media (max-width:1099px){
+  :root[data-codex="on"] #ardanav .grp > button{
+    min-height:44px;
+    display:flex; align-items:center;
+  }
+  /* The links INSIDE an opened hall are touched too, and they were never sized for it either. */
+  :root[data-codex="on"] #ardanav .grp [role="menu"] a,
+  :root[data-codex="on"] #ardanav .grp > div a{
+    min-height:44px;
+    display:flex; align-items:center;
+  }
+}

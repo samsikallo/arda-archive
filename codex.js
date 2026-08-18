@@ -91,6 +91,22 @@
       li.appendChild(a); vlist.appendChild(li);
     }
     vnav.appendChild(vlist); host.appendChild(vnav);
+    /* ── ONE CANONICAL NAVIGATION AT A TIME, AND THE THUMB INDEX MUST EARN IT ────────────────
+       The old horizontal bar carries the same seven halls the thumb tabs carry, so at wide
+       sizes a reader sees the archive's volumes twice, in two different shapes, and has to work
+       out whether they are the same thing. The spec reserves the left edge for canonical volume
+       navigation; the top bar keeps identity, search and preferences.
+
+       THE ATTRIBUTE IS SET ONLY IF TABS WERE ACTUALLY RENDERED, and that is the whole safety of
+       it. Hiding the dropdowns from CSS alone would mean a manifest fetch failure, a JS error or
+       an old cached shell leaves a reader with NO hall navigation at all -- immersion degrading
+       before access, which is exactly the trade the spec forbids. Measured here: if the list is
+       empty the attribute is never set and the dropdowns stay.
+
+       AND THE HIDING IS WIDE-SIZE ONLY, in the stylesheet, because the tabs themselves are
+       wide-size only. Below 1100px the thumb index does not render and the dropdowns are the
+       reader's only route between halls. */
+    if (vlist.children.length) R.setAttribute("data-volnav", "tabs");
 
     /* 2. BREADCRUMB — canonical position only. Cross-facets are marginalia, not ancestry (§4.7). */
     var bc = el("nav", { "aria-label": "Breadcrumb", id: "cx-crumb" });
