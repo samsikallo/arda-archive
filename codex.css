@@ -206,8 +206,14 @@
      two halves when it has one, which is the same class of lie as an arrow promising a sequence
      that is not there. codex.js sets data-leaves="2" only when it has produced a real second
      leaf, so today this rule matches nothing, and that is the honest state. */
-  :root[data-codex="on"][data-presentation="paired-leaf"][data-leaves="2"] [role="main"]::before,
-  :root[data-codex="on"][data-presentation="paired-leaf"][data-leaves="2"] main::before{
+  /* AND NOT WHEN THE LEAVES ARE INSIDE A LEDGER, which drew TWO gutters the first time the two
+     stages met. The ledger's leaves are the grid's two columns, so its spine belongs on the
+     grid; the page-level spine here ran down the whole main -- straight through the intro
+     paragraph, which has no facing half at all. `:not([data-ledger])` keeps each stage drawing
+     the division it actually owns. A second gutter is not twice as much book; it is a page
+     claiming a fold it does not have. */
+  :root[data-codex="on"][data-presentation="paired-leaf"][data-leaves="2"]:not([data-ledger]) [role="main"]::before,
+  :root[data-codex="on"][data-presentation="paired-leaf"][data-leaves="2"]:not([data-ledger]) main::before{
     content:"";position:absolute;inset-block:0;inset-inline-start:50%;
     width:clamp(10px,1.6vw,26px);transform:translateX(-50%);
     background:linear-gradient(90deg,transparent,rgba(90,70,40,.16) 42%,rgba(90,70,40,.22) 50%,rgba(90,70,40,.16) 58%,transparent);
@@ -287,4 +293,56 @@
     display:grid;place-items:center;font-size:.9rem;line-height:1;
     box-shadow:0 2px 6px -2px rgba(0,0,0,.6);
   }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════════════════════
+   CODEX-STAGE-6 — THE LEDGER GRAMMAR, AND THE FIRST REAL SECOND LEAF.
+
+   WHAT THIS IS FOR. The reference's transferable 2x2 short-record spread: four concise,
+   comparable records across a facing pair, collapsing to an ordinary list in reflow. Until now
+   `data-leaves="2"` was set on ZERO routes, so the gutter correctly rendered nowhere and the
+   codex had no page with two functional halves. This is that page.
+
+   IT IS APPLIED TO A GRID THE ARCHIVE ALREADY BUILDS, NOT TO A NEW COMPONENT. `ainur.html` has
+   carried `.grid`/`.card` since long before the codex: 30 records, each a heading, a meta line, a
+   quotation and a citation. What it did NOT have is a codex-aware column count -- it was
+   `auto-fill minmax(320px,1fr)`, which at 1440 flows three or four tiles a row and reads as a
+   dashboard. The spec's own §7.3 names that failure by name: "cards must not become a generic
+   dashboard tile system."
+
+   SO THE LEDGER CHANGES THE COLUMN COUNT AND THE GUTTER, AND NOTHING ELSE. Same markup, same
+   records, same citations. A grammar is a layout decision about existing content; if it needed
+   new content it would be a new page wearing a grammar's name.
+
+   AND IT IS EARNED PER ROUTE, NEVER DECLARED. codex.js sets data-ledger only where it has
+   COUNTED at least four comparable records in a real grid. A route with two records gets no
+   ledger, because a 2x2 with two empty cells is the blank-leaf anti-pattern the spec calls out
+   in its own bug capture.                                                                      */
+
+@media (min-width:1100px){
+  /* EXACTLY TWO COLUMNS, because the grammar is a SPREAD and not a flow. auto-fill would give
+     three or four at this width and the facing-page relationship would be lost -- which is the
+     difference between a ledger and a tile wall. */
+  :root[data-codex="on"][data-ledger="on"] .grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    column-gap:clamp(26px,3.4vw,54px);   /* the gutter lives HERE, as space between the leaves */
+    row-gap:14px;
+  }
+  /* THE GUTTER IS DRAWN ONLY NOW, and this is the first route where it means anything. It is
+     pointer-events:none so it can never swallow a card's text selection or focus ring. */
+  :root[data-codex="on"][data-leaves="2"] .grid{position:relative}
+  :root[data-codex="on"][data-leaves="2"] .grid::before{
+    content:"";position:absolute;inset-block:-4px;inset-inline-start:50%;
+    width:clamp(10px,1.4vw,22px);transform:translateX(-50%);
+    background:linear-gradient(90deg,transparent,rgba(90,70,40,.13) 42%,rgba(90,70,40,.20) 50%,rgba(90,70,40,.13) 58%,transparent);
+    pointer-events:none;z-index:0;
+  }
+  :root[data-codex="on"][data-leaves="2"] .grid>*{position:relative;z-index:1}
+}
+
+/* REFLOW IS ONE COLUMN AND IS NOT AN AFTERTHOUGHT. Below the wide breakpoint the ledger is an
+   ordinary vertical list of the same records -- no miniature two-page canvas, no horizontal
+   scroll, and no gutter, because there are no facing leaves to divide. */
+@media (max-width:1099px){
+  :root[data-codex="on"][data-ledger="on"] .grid{grid-template-columns:minmax(0,1fr)}
 }

@@ -254,6 +254,74 @@
       }, { passive: true });
     })();
 
+    /* ── CODEX-STAGE-6: THE LEDGER IS EARNED BY COUNTING, NEVER BY DECLARING ────────────────
+       A route gets the 2x2 ledger only when this has FOUND at least four comparable records in
+       a real grid. Three reasons it is measured rather than read off the manifest archetype:
+
+       ONE, the archetype is a classification and not a promise about the DOM. `registers.html`
+       is classified `index` and is a TOMBSTONE -- four sentences and a link list. A ledger keyed
+       on the archetype would have laid a facing-page spread over a retired page's apology.
+
+       TWO, the record count is data. `ainur.html` renders 30 Ainur today; a filter can take it
+       to two, and a 2x2 holding two records and two holes is precisely the blank-leaf state the
+       spec names as an explicit anti-pattern. So the count is re-taken after the page renders
+       AND whenever the grid changes.
+
+       THREE, this is progressive enhancement over pages the codex did not write. The grid it
+       styles has existed since long before any of this; if the page stops producing one, the
+       ledger stops applying, silently and correctly, with no stale attribute left behind.       */
+    (function ledger() {
+      var LEDGER_MIN = 4;          /* four records: two rows of two. Fewer is not a spread. */
+      var grid = null;
+
+      function count(g) {
+        /* COMPARABLE RECORDS, not child nodes. A grid's children may include a stray text node
+           or a spacer; what the ledger needs is units that each carry their own heading. */
+        var n = 0, kids = g.children, i;
+        for (i = 0; i < kids.length; i++) {
+          if (kids[i].querySelector && kids[i].querySelector("h1,h2,h3,h4")) n++;
+        }
+        return n;
+      }
+
+      function apply() {
+        /* EVERY GRID ON THE PAGE, NOT THE FIRST ONE. `ainur.html` renders SIX grids inside #out
+           -- the Aratar, then the other orders -- holding 8, 2, 4, 8, 5 and 3 records. A
+           querySelector took the first and hung the whole page's ledger on one section's size:
+           filter the Aratar down to three and the ledger would switch off while 22 comparable
+           records sat below it. The population is the page's records, so the count is the
+           page's records. */
+        var grids = document.querySelectorAll('[role="main"] .grid, main .grid');
+        var n = 0, gi;
+        for (gi = 0; gi < grids.length; gi++) n += count(grids[gi]);
+        grid = grids.length ? grids[0] : null;
+        if (n >= LEDGER_MIN) {
+          R.setAttribute("data-ledger", "on");
+          R.setAttribute("data-leaves", "2");
+          R.setAttribute("data-ledger-n", String(n));
+        } else {
+          /* REMOVED, NOT LEFT STALE. An attribute that outlives its reason is how a gutter ends
+             up drawn down a page that no longer has two halves. */
+          R.removeAttribute("data-ledger");
+          R.removeAttribute("data-leaves");
+          R.removeAttribute("data-ledger-n");
+        }
+      }
+
+      apply();
+      /* The grid is built by the page's own script, which may run after this one and rebuilds on
+         every filter keystroke. Observing the container is what keeps the count honest without
+         this file knowing anything about how that page filters. */
+      var mainEl = document.querySelector('[role="main"], main');
+      if (mainEl && window.MutationObserver) {
+        var t = 0;
+        new MutationObserver(function () {
+          if (t) return;
+          t = setTimeout(function () { t = 0; apply(); }, 60);
+        }).observe(mainEl, { childList: true, subtree: true });
+      }
+    })();
+
     document.body.appendChild(host);
     R.setAttribute("data-codex-shell", "on");
   }
