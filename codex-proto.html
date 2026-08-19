@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Gondorian Codex</title>
+<meta name="description" content="A prototype of the Arda Archive as a diegetic codex object.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+/* ═══════════════════════════════════════════════════════════════════════════════════════════
+   THE CODEX, AS AN OBJECT. Prototype, 19 August 2026.
+
+   This is deliberately standalone -- its own stylesheet, no arda.css, no codex.css -- so it can
+   be judged and thrown away without touching one of the 621 live routes.
+
+   NOTHING HERE IS TRACED, COPIED OR SAMPLED FROM ANY GAME. Every gradient, fitting, ornament and
+   colour is written from scratch, and the palette is deliberately the opposite of the reference's
+   dwarven oak-and-brass: this is GONDOR -- near-black boards, SILVER fittings, fine pale vellum,
+   oxblood rubric, the White Tree and the seven stars. What is taken from the reference is the
+   GRAMMAR (an interface can be a physical object with mounted furniture and hand-made state),
+   never the art. See docs/codex-the-object.md.
+   ═══════════════════════════════════════════════════════════════════════════════════════════ */
+
+:root{
+  /* the ground the book lies on -- a dark stone table in a library */
+  --ground:#14161a; --ground-2:#0b0c0f;
+  /* the boards: near-black leather with a blue-grey cast, over wood */
+  --board:#1c2028; --board-hi:#2b313c; --board-lo:#0e1116; --board-edge:#3a4252;
+  /* silver, in three states: raised, flat, shadowed */
+  --silver:#c3c9d4; --silver-hi:#eef1f6; --silver-lo:#6f7787; --silver-deep:#454c59;
+  /* the leaves: fine pale vellum, aged unevenly */
+  --vellum:#efe7d4; --vellum-2:#e5dbc4; --vellum-3:#d8ccb0; --vellum-edge:#c4b696;
+  /* the inks */
+  --ink:#241f18; --ink-soft:#4b4237; --rubric:#7d2b20; --rubric-soft:#9c4a3c;
+  --rule:#b9a982; --rule-soft:#d3c6a6;
+  --tab-1:#3f4a5c; --tab-2:#4a3f3a; --tab-3:#3a4a42; --tab-4:#4a4436;
+}
+
+.a-skip{position:absolute;left:-9999px;top:8px;z-index:99;padding:8px 14px;border-radius:3px;
+  background:#161a21;color:#eef1f6;font:600 12px Cinzel,Georgia,serif;letter-spacing:.14em;
+  text-decoration:none;box-shadow:0 0 0 1px #454c59}
+.a-skip:focus{left:12px}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; background:var(--ground);
+  /* the library: a dark stone ground with a pool of light where the book lies */
+  background-image:
+    radial-gradient(120% 90% at 50% 42%, rgba(190,205,235,.10), transparent 62%),
+    radial-gradient(60% 45% at 50% 40%, rgba(255,240,200,.07), transparent 70%),
+    repeating-linear-gradient(94deg, rgba(255,255,255,.012) 0 2px, transparent 2px 7px),
+    linear-gradient(160deg, var(--ground) 0%, var(--ground-2) 100%);
+  font:16px/1.6 'EB Garamond','Iowan Old Style',Georgia,serif; color:var(--ink);
+  display:flex; align-items:center; justify-content:center; padding:34px 18px;
+}
+
+/* ── THE BOOK ────────────────────────────────────────────────────────────────────────────────
+   An object with thickness lying on the ground, not a page filling the viewport. The reference's
+   own proportion: it occupies most of the view but the world is visible around and beneath it. */
+.book{
+  position:relative; width:min(1240px, 84vw); aspect-ratio:1.58/1; min-height:520px;
+  /* the boards */
+  background:
+    linear-gradient(180deg, var(--board-hi) 0 2px, transparent 2px),
+    linear-gradient(172deg, var(--board) 0%, var(--board-lo) 100%);
+  border-radius:10px 14px 14px 10px;
+  /* thickness: a stack of leaves seen at the edge, then the board, then the shadow on the table */
+  box-shadow:
+    inset 0 0 0 1px var(--board-edge),
+    inset 0 0 0 6px var(--board-lo),
+    inset 0 0 0 7px rgba(190,200,215,.10),
+    inset 0 3px 0 rgba(255,255,255,.09),
+    0 2px 0 #0a0c10, 0 4px 0 #14171d, 0 6px 0 #0a0c10, 0 8px 0 #171b22,
+    0 26px 48px rgba(0,0,0,.62), 0 6px 14px rgba(0,0,0,.5);
+  padding:30px 34px 34px;
+  display:flex;
+}
+
+/* the leather grain -- generated, never sampled */
+.book::before{
+  content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none;
+  background:
+    repeating-linear-gradient(38deg, rgba(255,255,255,.030) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(-52deg, rgba(0,0,0,.09) 0 1px, transparent 1px 5px),
+    radial-gradient(80% 60% at 50% 0%, rgba(255,255,255,.05), transparent 60%);
+  mix-blend-mode:overlay;
+}
+
+/* ── THE SPREAD: two leaves and the valley between them ─────────────────────────────────────── */
+.spread{
+  position:relative; flex:1; display:grid; grid-template-columns:1fr 1fr;
+  border-radius:3px 3px 2px 2px; overflow:hidden;
+  box-shadow:0 0 0 1px rgba(0,0,0,.55), inset 0 0 34px rgba(60,40,15,.10);
+}
+.leaf{
+  position:relative; padding:30px 34px 34px;
+  background:
+    radial-gradient(70% 50% at 30% 18%, rgba(255,255,255,.42), transparent 60%),
+    radial-gradient(45% 38% at 82% 74%, rgba(160,130,80,.13), transparent 62%),
+    radial-gradient(30% 26% at 12% 88%, rgba(150,120,70,.10), transparent 60%),
+    linear-gradient(178deg, var(--vellum) 0%, var(--vellum-2) 58%, var(--vellum-3) 100%);
+  overflow:auto;
+}
+/* the page curves INTO the gutter -- this shading is what makes two surfaces read as one fold */
+.leaf.l{ background-image:
+  linear-gradient(270deg, rgba(60,44,20,.30) 0 14px, rgba(60,44,20,.10) 14px 46px, transparent 46px),
+  radial-gradient(70% 50% at 30% 18%, rgba(255,255,255,.42), transparent 60%),
+  linear-gradient(178deg, var(--vellum) 0%, var(--vellum-2) 58%, var(--vellum-3) 100%); }
+.leaf.r{ background-image:
+  linear-gradient(90deg, rgba(60,44,20,.30) 0 14px, rgba(60,44,20,.10) 14px 46px, transparent 46px),
+  radial-gradient(70% 50% at 70% 18%, rgba(255,255,255,.40), transparent 60%),
+  linear-gradient(178deg, var(--vellum) 0%, var(--vellum-2) 58%, var(--vellum-3) 100%); }
+
+/* the valley itself: a real dark trough with the binding cord showing */
+.gutter{
+  position:absolute; left:50%; top:0; bottom:0; width:30px; transform:translateX(-50%);
+  background:linear-gradient(90deg,
+    rgba(30,20,8,0) 0%, rgba(40,28,12,.42) 26%, #241a0c 48%, #1a1208 50%,
+    #241a0c 52%, rgba(40,28,12,.42) 74%, rgba(30,20,8,0) 100%);
+  pointer-events:none; z-index:3;
+}
+.gutter::after{ /* the sewn cord, at intervals -- original geometry, a simple stitch */
+  content:""; position:absolute; left:50%; top:8%; bottom:8%; width:3px; transform:translateX(-50%);
+  background:repeating-linear-gradient(180deg,
+    rgba(190,200,215,.30) 0 9px, transparent 9px 30px);
+}
+
+/* ── FURNITURE MOUNTED ON THE BOARD, not floated on the page ────────────────────────────────── */
+
+/* the title plaque: set into the top board, spanning the spine */
+.plaque{
+  position:absolute; top:-13px; left:50%; transform:translateX(-50%); z-index:6;
+  padding:7px 30px 8px; border-radius:3px;
+  background:linear-gradient(180deg,#2b313c,#161a21);
+  box-shadow:
+    inset 0 0 0 1px var(--silver-deep), inset 0 1px 0 rgba(238,241,246,.32),
+    0 3px 7px rgba(0,0,0,.55);
+  font:600 15px/1 Cinzel,Georgia,serif; letter-spacing:.20em; text-transform:uppercase;
+  color:var(--silver-hi); text-shadow:0 1px 0 #000; white-space:nowrap;
+}
+.plaque i{ color:var(--silver-lo); font-style:normal; }
+
+/* the folio plate: set into the bottom board */
+.folio{
+  position:absolute; bottom:-11px; left:50%; transform:translateX(-50%); z-index:6;
+  padding:4px 18px 5px; border-radius:2px;
+  background:linear-gradient(180deg,#262c36,#12161c);
+  box-shadow:inset 0 0 0 1px var(--silver-deep), 0 3px 6px rgba(0,0,0,.5);
+  font:600 11px/1 Cinzel,Georgia,serif; letter-spacing:.18em; color:var(--silver);
+}
+
+/* the thumb tabs: they protrude FROM BEHIND the left board, notched, layered */
+.tabs{ position:absolute; left:-1px; top:74px; z-index:1; display:flex; flex-direction:column; gap:9px; }
+.tab{
+  position:relative; margin-left:-40px; width:104px; padding:8px 10px 8px 14px;
+  font:600 10.5px/1.1 Cinzel,Georgia,serif; letter-spacing:.12em; text-transform:uppercase;
+  color:#d9dee7; text-decoration:none; text-align:left;
+  background:linear-gradient(90deg,#151920 0%, var(--tab-1) 22%, var(--tab-1) 100%);
+  border-radius:2px 0 0 2px;
+  /* the notched fore-end, cut like a ribbon */
+  clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%, 9px 50%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14), inset 0 0 0 1px rgba(0,0,0,.5),
+             -3px 3px 6px rgba(0,0,0,.45);
+  transition:margin-left .16s ease, filter .16s ease;
+}
+.tab:nth-child(2){background:linear-gradient(90deg,#151920 0%, var(--tab-2) 22%, var(--tab-2) 100%)}
+.tab:nth-child(3){background:linear-gradient(90deg,#151920 0%, var(--tab-3) 22%, var(--tab-3) 100%)}
+.tab:nth-child(4){background:linear-gradient(90deg,#151920 0%, var(--tab-4) 22%, var(--tab-4) 100%)}
+.tab:hover,.tab:focus-visible{ margin-left:-54px; filter:brightness(1.22); outline:none; }
+.tab[aria-current]{ margin-left:-60px; color:#fff;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.26), inset 0 0 0 1px var(--silver-deep),
+             -5px 4px 9px rgba(0,0,0,.5); }
+
+/* the clasp: a silver strap on the fore-edge with a stone */
+.clasp{
+  position:absolute; right:-13px; top:50%; transform:translateY(-50%); z-index:6;
+  width:30px; height:96px; border-radius:3px;
+  background:linear-gradient(180deg,#4e5665,#242a34 42%,#4e5665);
+  box-shadow:inset 0 0 0 1px var(--silver-deep), inset 0 1px 0 rgba(238,241,246,.30),
+             0 3px 8px rgba(0,0,0,.55);
+  display:flex; align-items:center; justify-content:center;
+}
+.clasp::after{ /* the stone */
+  content:""; width:13px; height:13px; border-radius:50%;
+  background:radial-gradient(circle at 34% 30%, #d9e4f2, #6d8bb4 46%, #24384f);
+  box-shadow:0 0 0 2px #5c6472, 0 0 8px rgba(140,180,235,.5);
+}
+
+/* ── WHAT IS ON A LEAF ───────────────────────────────────────────────────────────────────────
+   The reference's leaf is not full-bleed text: it carries a ruled border inset from the edge,
+   and content sits in bordered panels within it. */
+.leaf::before{
+  content:""; position:absolute; inset:16px 20px; pointer-events:none;
+  border:1px solid var(--rule); box-shadow:inset 0 0 0 3px transparent, inset 0 0 0 4px var(--rule-soft);
+  opacity:.55;
+}
+
+.rubric{ /* a centred heading flanked by ornament -- the reference's grammar, our geometry */
+  display:flex; align-items:center; gap:12px; justify-content:center;
+  margin:6px 0 16px; color:var(--rubric);
+  font:700 19px/1.2 Cinzel,Georgia,serif; letter-spacing:.14em; text-transform:uppercase;
+}
+.rubric::before,.rubric::after{
+  content:""; flex:1; height:7px; max-width:96px;
+  /* seven stars of Elendil, reduced to a rule: a line with small points on it */
+  background:
+    radial-gradient(circle at 12% 50%, var(--rule) 1.4px, transparent 1.6px),
+    radial-gradient(circle at 38% 50%, var(--rule) 1.4px, transparent 1.6px),
+    radial-gradient(circle at 64% 50%, var(--rule) 1.4px, transparent 1.6px),
+    radial-gradient(circle at 88% 50%, var(--rule) 1.4px, transparent 1.6px),
+    linear-gradient(var(--rule),var(--rule)) center/100% 1px no-repeat;
+}
+.lede{ font-style:italic; color:var(--ink-soft); margin:0 auto 20px; max-width:60ch; text-align:center; }
+
+.cards{ display:grid; grid-template-columns:1fr; gap:16px; }
+@media (min-width:900px){ .cards{ grid-template-columns:1fr; } }
+
+.card{
+  position:relative; padding:16px 18px 15px; background:rgba(255,252,244,.34);
+  border:1px solid var(--rule); border-radius:2px;
+  box-shadow:0 1px 0 rgba(255,255,255,.5) inset, 0 1px 3px rgba(90,70,35,.12);
+}
+/* corner marks, as a scribe rules a box */
+.card::before,.card::after{
+  content:""; position:absolute; width:11px; height:11px; border:1px solid var(--rubric-soft); opacity:.6;
+}
+.card::before{ top:-1px; left:-1px; border-right:0; border-bottom:0; }
+.card::after{ bottom:-1px; right:-1px; border-left:0; border-top:0; }
+
+.no{ /* the number badge, top-left, as in the reference's record cards */
+  position:absolute; top:-10px; left:12px; width:24px; height:24px; border-radius:2px;
+  transform:rotate(45deg); background:linear-gradient(160deg,#39404d,#1a1e26);
+  box-shadow:inset 0 0 0 1px var(--silver-deep), 0 2px 4px rgba(0,0,0,.4);
+}
+.no span{ display:block; transform:rotate(-45deg); line-height:24px; text-align:center;
+  font:600 11px Cinzel,Georgia,serif; color:var(--silver-hi); }
+
+.card h3{
+  margin:2px 0 10px; text-align:center; color:var(--rubric);
+  font:600 15px/1.25 Cinzel,Georgia,serif; letter-spacing:.11em; text-transform:uppercase;
+}
+.card h3 em{ font-style:normal; color:var(--rubric-soft); }
+.sub{
+  display:flex; align-items:center; gap:9px; justify-content:center; margin:12px 0 6px;
+  font:600 10px/1 Cinzel,Georgia,serif; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft);
+}
+.sub::before,.sub::after{ content:""; flex:1; max-width:54px; height:1px; background:var(--rule); }
+.card p{ margin:0 0 8px; }
+.q{ font-style:italic; }
+.cite{ font-size:12.5px; color:var(--ink-soft); }
+.mark{ font-size:11px; letter-spacing:.1em; color:var(--rubric); }
+
+/* ── STATE AS SOMETHING A HAND DID TO THE PAGE ────────────────────────────────────────────────
+   The reference's single best idea: a settled grudge is STRUCK THROUGH, not greyed out. Here a
+   superseded reading is crossed out the way the archive's own scribe would cross it. */
+.struck{ position:relative; }
+.struck > *{ opacity:.55; }
+.struck::after{
+  content:""; position:absolute; left:5%; right:5%; top:16%; width:auto; height:10px; border:0;
+  background:linear-gradient(92deg, rgba(125,43,32,0) 0%, var(--rubric) 8%, var(--rubric) 92%, rgba(125,43,32,0) 100%);
+  transform:rotate(6.5deg); transform-origin:left center; opacity:.72; border-radius:2px;
+  box-shadow:0 1px 0 rgba(125,43,32,.35);
+}
+.struck .why{
+  position:absolute; right:14px; bottom:8px; transform:rotate(-2deg);
+  font:italic 12px Georgia,serif; color:var(--rubric); opacity:1;
+}
+
+/* ── A MEASURED SILENCE: ruled space, not an empty div ───────────────────────────────────────── */
+.silence{ padding:14px 18px; }
+.silence .lines{ height:64px; background:repeating-linear-gradient(180deg,
+  transparent 0 15px, var(--rule-soft) 15px 16px); opacity:.6; margin:8px 0 6px; }
+.silence .note{ font:italic 12.5px Georgia,serif; color:var(--ink-soft); }
+
+@media (prefers-reduced-motion:reduce){
+  .tab{transition:none}
+  .tab:hover,.tab:focus-visible,.tab[aria-current]{margin-left:-40px}
+  .tab[aria-current]{filter:brightness(1.3)}
+}
+
+@media (max-width:1000px){
+  .book{ aspect-ratio:auto; padding:26px 20px 30px; }
+  .spread{ grid-template-columns:1fr; }
+  .gutter{ display:none; }
+  .leaf.r{ border-top:1px solid var(--vellum-edge); }
+  .tabs{ display:none; }
+  .clasp{ display:none; }
+}
+</style>
+</head>
+<body>
+
+<a class="a-skip" href="#leaf-1">Skip to the leaf</a>
+
+<div class="book">
+  <div class="plaque">The Arda Archive <i>·</i> Volume III <i>·</i> The Ainur</div>
+
+  <nav class="tabs" aria-label="Volumes">
+    <a class="tab" href="#" aria-current="page">Peoples</a>
+    <a class="tab" href="#">Realms</a>
+    <a class="tab" href="#">Relics</a>
+    <a class="tab" href="#">Tongues</a>
+  </nav>
+
+  <div class="spread">
+    <div class="gutter" aria-hidden="true"></div>
+
+    <section class="leaf l" id="leaf-1" tabindex="-1">
+      <h2 class="rubric">The Aratar</h2>
+      <p class="lede">Eight are held in chief reverence, and one, mightiest in his beginning,
+        unmade himself.</p>
+
+      <div class="cards">
+        <article class="card">
+          <span class="no"><span>I</span></span>
+          <h3>Manwë <em>Súlimo</em></h3>
+          <p>Lord of the Breath of Arda, the Elder King. The winds, the clouds and all the regions
+            of the air; appointed King of Arda under Eru.</p>
+          <div class="sub">The text</div>
+          <p class="q">“Súlimo he is surnamed, Lord of the Breath of Arda.”</p>
+          <p class="cite">Silm, Valaquenta · <span class="mark">[C]</span> located at
+            t1_a_the_silmarillion.txt:2228</p>
+        </article>
+
+        <article class="card struck">
+          <span class="no"><span>—</span></span>
+          <h3>Mairon, of the Maiar</h3>
+          <p>Listed here as an alternate name of Sauron on the reading that the corpus does not
+            attest it.</p>
+          <div class="sub">The text</div>
+          <p class="cite">Withdrawn 6 Aug 2026: it appears four times in PE 17, legibly, and
+            carries no diacritic.</p>
+          <span class="why">superseded</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="leaf r">
+      <h2 class="rubric">Where the texts disagree</h2>
+      <p class="lede">They are shown disagreeing. The archive does not choose for you.</p>
+
+      <div class="cards">
+        <article class="card">
+          <span class="no"><span>II</span></span>
+          <h3>Melian &mdash; whose people?</h3>
+          <p><strong>The Valaquenta</strong> sets her among the people of Vána and Estë.
+            <strong>The Annals</strong> put her among Yavanna's.</p>
+          <div class="sub">The archive's reading</div>
+          <p class="cite">Neither is preferred. Both are printed, and the disagreement is the
+            finding. <span class="mark">[C]</span> on both witnesses.</p>
+        </article>
+
+        <article class="card silence">
+          <span class="no"><span>?</span></span>
+          <h3>The two Blue Wizards</h3>
+          <p>Four incompatible accounts, and no verdict is given here.</p>
+          <div class="lines" aria-hidden="true"></div>
+          <p class="note">Ruled space, left blank. The corpus is silent on which account stands,
+            and the archive says so exactly rather than filling it with something reasonable.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <div class="clasp" role="presentation"></div>
+  <div class="folio">Leaf I of VII</div>
+</div>
+
+</body></html>
