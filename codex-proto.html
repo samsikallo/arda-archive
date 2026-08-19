@@ -459,7 +459,7 @@ body{
      ruling           the faint lines the scribe ruled before writing a word */
 
 /* the scribe's ruling, under everything on the leaf */
-.leaf{ --line:23px; }   /* the ruling pitch. The type was 1.78x too small for its page:
+.leaf{ --line:21px; }   /* the ruling pitch. The type was 1.78x too small for its page:
      measured across the primary tier the pitch is a median 0.0486 of page height -- 21 lines
      to a page -- against this leaf's 0.0273 and 33 lines. 23px takes most of that distance
      without turning a working archive into a display manuscript. */
@@ -488,7 +488,7 @@ body{
 
 /* MARGINALIA — a later hand, smaller, in a browner ink, tilted a degree or two */
 .marg{
-  position:absolute; width:clamp(96px,17%,138px); max-height:120px; font:italic 11px/1.36 'EB Garamond',Georgia,serif;
+  position:absolute; width:clamp(96px,17%,138px); max-height:112px; font:italic 10.4px/1.34 'EB Garamond',Georgia,serif;
   color:#6b4a24; transform:rotate(-1.2deg); text-align:left;
 }
 /* OUTER MARGIN, and the inset must clear the illuminated border (7-22px) and the fore-edge.
@@ -540,13 +540,13 @@ body{
 :root[data-hand="authentic"] .leaf .tb p,
 :root[data-hand="authentic"] .leaf .tb li,
 :root[data-hand="authentic"] .leaf .lede{ font-family:'Uncial Antiqua','EB Garamond',Georgia,serif;
-  font-size:14.6px; letter-spacing:.002em; }
+  font-size:13.3px; letter-spacing:.001em; }
 /* THE RULING TIGHTENS FOR THE UNCIAL, AND THIS IS MEASURED RATHER THAN TASTE. Across the primary
    tier the ratio of line pitch to the ink extent of one line has a median of 1.09 -- TWELVE OF
    FOURTEEN pieces sit between 0.96 and 1.42. These hands are set SOLID. The uncial has almost no
    ascenders and a large x-height, so it needs LESS leading than a humanist face at the same size,
    not more; at the humanist pitch it read airy and modern, which is the opposite of the source. */
-:root[data-hand="authentic"] .leaf{ --line:19px; }
+:root[data-hand="authentic"] .leaf{ --line:17px; }
 /* AND JUSTIFICATION IS DROPPED FOR THIS HAND. A justified uncial in a narrow column opens rivers
    of white, because the uncial is WIDE and few words reach a line. A medieval scribe closed those
    with abbreviations and line-fillers, which we do not have; ragged-right is the honest substitute
@@ -588,7 +588,7 @@ body{
    click away. `.marg` is capped and clipped, so the quotation MUST NOT expand it -- it opens as a
    slip laid over the leaf, which is both what a codex does and the only layout-safe answer. */
 .marg{ overflow:visible; }
-.marg .marg-t{ display:block; max-height:72px; overflow:hidden;
+.marg .marg-t{ display:block; max-height:70px; overflow:hidden;
   -webkit-mask-image:linear-gradient(#000 62%,rgba(0,0,0,.15)); mask-image:linear-gradient(#000 62%,rgba(0,0,0,.15)); }
 /* When the slip is open the note is printed in it IN FULL, so the fade never hides anything. */
 .marg-q > blockquote .marg-full{ display:block; font-style:normal; font-size:11px; line-height:1.45;
@@ -744,10 +744,10 @@ body{
 .leaf.twocol .tb{ margin-left:calc(26px + clamp(96px,17%,138px) + 10px); column-count:2; column-gap:19px; column-rule:1px solid var(--rule-soft); }
 /* MEASURED: the verso ran 25px past its own foot and clipped the last footnote. A packed leaf
    sets smaller -- which is what a real crowded codex does -- rather than losing a line. */
-.leaf.twocol .tb p{ font-size:15.4px; margin-bottom:0; }
+.leaf.twocol .tb p{ font-size:14.2px; margin-bottom:0; }
 /* margin-bottom must be a WHOLE number of rules or the next paragraph sits off them. */
 .leaf.twocol .tb p + p{ margin-top:var(--line); }
-.leaf.twocol .fn{ font-size:10.4px; line-height:1.4; padding-top:6px; }
+.leaf.twocol .fn{ font-size:9.7px; line-height:1.36; padding-top:5px; }
 .leaf.twocol .fn p{ margin:0 0 3px; }
 .leaf.twocol .slip{ font-size:10.8px; line-height:1.38; padding:7px 10px 8px; }
 .leaf.r.twocol .tb{ margin-left:0; margin-right:calc(26px + clamp(96px,17%,138px) + 10px); }
@@ -1011,6 +1011,13 @@ body{
           measured — 382 portrait prompts, and 208 of the gazetteer's 481 places above.</p>
         <p class="cite">The cost of not looking is not only a false claim. It is a citation the
           archive owned and could not see. <span class="mark">[C]</span></p>
+        <div class="sub">What a silence costs when it is wrong</div>
+        <p>A declared silence is <em>load-bearing</em>. Later work builds inferences on top of it,
+          and each inherits a weaker footing than the corpus actually offers. Of four false
+          silences found in one week, one did not retract a claim — it <em>upgraded</em> one.</p>
+        <p>So the tally is kept where a reader can see it: <span class="mark">14</span> silence
+          claims tested, four false, two written by a generator and two by a hand.</p>
+
 
       </div>
       <span class="manicule" style="top:172px" aria-hidden="true">☞</span>
@@ -1056,6 +1063,17 @@ body{
           <figcaption>A star of the Seven, as the archive draws it</figcaption></figure>
         <p>Of the four, one <em>upgraded</em> a claim rather than retracting one, which is why a
           silence audit is run at all: it recovers evidence as often as it removes it.</p>
+        <div class="sub">The rule that widened twice</div>
+        <p>It began as a rule about one branch of one generator. Within the hour it covered every
+          fall-through in the tree; within the day it covered a sentence typed by a careful reader,
+          which has no shape at all and which no sweep can find.</p>
+        <p>The asymmetry is what makes it cheap to obey: asserting a silence costs one sentence,
+          and falsifying one costs a single call to <em>ardatext</em> — a matcher that folds
+          accents, case and line-breaks, which are the three ways a raw search reports a silence
+          that is not there.<span class="rm">g</span></p>
+        <p class="cite">A raw search for <em>Théoden</em> returns nought in The Lord of the Rings,
+          where the name stands 261 times. <span class="mark">[C]</span></p>
+
         <div class="slip"><b>Struck 19 Aug</b> — <span class="struck">oath_felagund: the annal does
           not put the refusal in words the archive could quote.</span> It does, verbatim, and a
           sibling record was quoting it at the same moment.</div>
