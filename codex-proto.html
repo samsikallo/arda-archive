@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head>
+<html lang="en" data-scene="library"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Gondorian Codex</title>
@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="codex-backdrops.css">
 <style>
 /* ═══════════════════════════════════════════════════════════════════════════════════════════
    THE CODEX, AS AN OBJECT. Prototype, 19 August 2026.
@@ -99,7 +100,7 @@ body{
   box-shadow:0 0 0 1px rgba(0,0,0,.55), inset 0 0 34px rgba(60,40,15,.10);
 }
 .leaf{
-  position:relative; padding:30px 34px 44px;
+  position:relative; padding:30px 34px 50px;
   background:
     radial-gradient(70% 50% at 30% 18%, rgba(255,255,255,.42), transparent 60%),
     radial-gradient(45% 38% at 82% 74%, rgba(160,130,80,.13), transparent 62%),
@@ -423,7 +424,7 @@ body{
 
 /* MARGINALIA — a later hand, smaller, in a browner ink, tilted a degree or two */
 .marg{
-  position:absolute; width:clamp(70px,15%,124px); max-height:190px; overflow:hidden; font:italic 11px/1.35 'EB Garamond',Georgia,serif;
+  position:absolute; width:clamp(70px,15%,124px); max-height:116px; overflow:hidden; font:italic 11px/1.35 'EB Garamond',Georgia,serif;
   color:#6b4a24; opacity:.92; transform:rotate(-1.2deg); text-align:left;
 }
 .leaf.l .marg{ left:14px; } .leaf.r .marg{ right:14px; transform:rotate(1deg); }
@@ -448,9 +449,10 @@ body{
 
 /* REFERENCE MARK and the FOOTNOTES it answers */
 .rm{ font-size:.66em; vertical-align:super; color:var(--rubric); font-weight:600; }
-.fn{ margin-top:auto; margin-bottom:16px; padding-top:9px; border-top:1px solid var(--rule);
+.fn{ margin-top:auto; margin-bottom:24px; margin-left:78px; padding-right:64px; padding-top:9px; border-top:1px solid var(--rule);
   font:10.5px/1.42 'EB Garamond',Georgia,serif; color:var(--ink-soft); column-count:2;
   column-gap:16px; column-rule:1px solid var(--rule-soft); }
+.leaf.r .fn{ margin-left:0; margin-right:78px; }
 .fn p{ margin:0 0 4px; text-indent:-9px; padding-left:9px; }
 .fn .rm{ font-size:.8em; }
 
@@ -461,7 +463,7 @@ body{
 /* CATCHWORD — the first word of the next leaf, set at the foot, as a binder needed */
 .catch{ position:absolute; bottom:22px; font:italic 11px 'EB Garamond',Georgia,serif;
   color:var(--ink-soft); opacity:.75; }
-.leaf.l .catch{ right:26px; } .leaf.r .catch{ right:26px; }
+.catch{ right:26px; bottom:6px; z-index:3; }   /* bottom-right, as a binder read it */
 
 /* A TIPPED-IN SLIP — a smaller sheet pasted on, carrying a later note */
 .slip{ position:relative; margin:10px 0 12px; padding:9px 12px 10px;
@@ -498,6 +500,95 @@ body{
 .book[data-density="high"] .card h3{ font-size:13px; margin-bottom:7px; }
 .book[data-density="high"] .cards{ gap:10px; }
 .book[data-density="high"] .rubric{ font-size:16px; margin-bottom:11px; }
+
+
+/* ── DENSITY, ROUND TWO ──────────────────────────────────────────────────────────────────────
+   The owner asked for more: "more figures, a second text column, running heads, quire
+   signatures, an illuminated border." Each below is real practice, drawn from scratch.
+
+   RUNNING HEAD -- the book and section named across the top of every opening, so a reader who
+   opens the codex anywhere knows where they are without turning back to the title.
+   QUIRE SIGNATURE -- the binder's mark at the foot of the first leaf of each gathering: a letter
+   for the quire and a numeral for the leaf within it. This is the machinery that kept a hand-sewn
+   book in order, and it belongs on a page that means it.
+   ILLUMINATED BORDER -- a vine band down the outer edge. Restrained on purpose: a border that
+   competes with the text is decoration, and this archive's whole claim is that the text matters. */
+
+.rh{ position:absolute; top:19px; left:26px; right:26px; display:flex; justify-content:space-between;
+  align-items:baseline; font:600 9.5px/1 Cinzel,Georgia,serif; letter-spacing:.22em;
+  text-transform:uppercase; color:var(--rubric-soft); opacity:.85; pointer-events:none; z-index:2; }
+.rh .n{ font-variant-numeric:tabular-nums; color:var(--ink-soft); letter-spacing:.1em; }
+.leaf.r .rh{ flex-direction:row-reverse; }
+
+.quire{ position:absolute; bottom:6px; left:26px; font:600 9px Cinzel,Georgia,serif;
+  letter-spacing:.14em; color:var(--ink-soft); opacity:.7; }
+
+
+/* the vine band: two interlacing strands with leaves, in the outer margin, generated */
+.illum{ position:absolute; top:34px; bottom:34px; width:15px; pointer-events:none; opacity:.55;
+  background:
+    repeating-linear-gradient(180deg,
+      transparent 0 6px, var(--rubric) 6px 7px, transparent 7px 13px),
+    repeating-radial-gradient(circle at 3px 10px, #4a6b3e 0 2px, transparent 2px 20px),
+    repeating-radial-gradient(circle at 12px 20px, #7d6237 0 2px, transparent 2px 20px),
+    linear-gradient(180deg, transparent, var(--rule) 8%, var(--rule) 92%, transparent);
+  background-size:100% 26px, 100% 40px, 100% 40px, 1px 100%;
+  background-position:center, left, right, center; background-repeat:repeat-y;
+}
+.leaf.l .illum{ left:7px; } .leaf.r .illum{ right:7px; }
+.illum::before,.illum::after{ content:"❦"; position:absolute; left:50%; transform:translateX(-50%);
+  color:var(--rubric); font-size:11px; opacity:.9; }
+.illum::before{ top:-14px; } .illum::after{ bottom:-15px; }
+
+/* A SECOND TEXT COLUMN on any leaf that asks for it */
+.leaf.twocol .tb{ margin-left:78px; column-count:2; column-gap:19px; column-rule:1px solid var(--rule-soft); }
+.leaf.r.twocol .tb{ margin-left:0; margin-right:78px; }
+.leaf.twocol .tb > h2,.leaf.twocol .tb > .lede,.leaf.twocol .tb > .slip{ column-span:all; }
+.leaf.twocol .tb p{ text-align:justify; hyphens:auto; margin:0 0 .55em; }
+@media (max-width:1000px){ .leaf.twocol .tb{ column-count:1; } }
+
+/* MORE FIGURES: three further devices, all original geometry */
+.dev-star{ width:64px; height:64px; position:relative; }
+.dev-star::before{ content:"✶"; position:absolute; inset:0; display:grid; place-items:center;
+  font-size:46px; color:#8a6134; }
+.dev-crown{ width:70px; height:56px; position:relative; }
+.dev-crown::before{ content:""; position:absolute; left:0; right:0; bottom:8px; height:12px;
+  background:#8a6134; border-radius:2px; }
+.dev-crown::after{ content:"✦ ✦ ✦"; position:absolute; left:0; right:0; top:4px; text-align:center;
+  font-size:13px; color:#a5813c; letter-spacing:6px; }
+.dev-ship{ width:78px; height:56px; position:relative; }
+.dev-ship::before{ content:""; position:absolute; left:6px; right:6px; bottom:10px; height:10px;
+  background:#7d6237; clip-path:polygon(0 0,100% 0,86% 100%,14% 100%); }
+.dev-ship::after{ content:""; position:absolute; left:50%; bottom:20px; width:2px; height:26px;
+  background:#5f4622; box-shadow:8px -6px 0 -1px #a5813c, -8px -6px 0 -1px #a5813c; }
+/* a small figure that sits IN the margin rather than in the text */
+.fig.marg-fig{ position:absolute; float:none; width:74px; margin:0; bottom:34px; }
+/* the foot of the margin belongs to figures; .marg is bounded above so it cannot reach here */
+.leaf.l .fig.marg-fig{ left:24px; } .leaf.r .fig.marg-fig{ right:24px; }
+
+
+/* ── THE APPARATUS COLLAPSES ON A PHONE ──────────────────────────────────────────────────────
+   A margin is a property of a WIDE page. At 390px there is no outer margin to write in, so
+   absolutely-positioned hands, figures, quire marks and catchwords pile on top of each other --
+   measured: 6 overlapping pairs at 390 against 1 at 1500.
+
+   So below 1000px the apparatus comes into the flow and becomes what it always was underneath: a
+   note, after the passage it annotates. The illuminated border and the catchword go entirely --
+   a border needs a margin, and a catchword is a BINDER'S instruction for a physical gathering,
+   meaningless where there are no leaves to keep in order. Nothing is hidden that carries meaning;
+   what goes is the furniture of a codex that is not there. */
+@media (max-width:1100px){
+  .tb,.leaf.r .tb,.leaf.twocol .tb,.leaf.r.twocol .tb{ margin-left:0; margin-right:0; }
+  .fn,.leaf.r .fn{ margin-left:0; margin-right:0; column-count:1; }
+  .marg{ position:static; width:auto; max-height:none; transform:none; margin:12px 0;
+    padding:9px 11px; border-left:2px solid var(--rubric-soft);
+    background:rgba(255,250,236,.42); }
+  .leaf.l .marg,.leaf.r .marg{ left:auto; right:auto; transform:none; }
+  .fig.marg-fig{ position:static; float:none; width:96px; margin:12px auto; }
+  .illum,.catch{ display:none; }
+  .quire{ position:static; display:block; margin-top:10px; text-align:center; }
+  .manicule{ display:none; }
+}
 
 </style>
 <link rel="stylesheet" href="arda.css"></head>
@@ -680,7 +771,9 @@ body{
   <div class="spread">
     <div class="gutter" aria-hidden="true"></div>
 
-    <section class="leaf l ruled" style="display:flex;flex-direction:column">
+    <section class="leaf l ruled twocol" style="display:flex;flex-direction:column">
+      <div class="rh"><span>The Arda Archive &middot; Of the Silences</span><span class="n">vi</span></div>
+      <span class="illum" aria-hidden="true"></span>
       <div class="tb">
         <h2 class="rubric">Of the silences</h2>
         <figure class="fig"><div class="frame"><span class="dev-tree" aria-hidden="true"></span></div>
@@ -700,9 +793,9 @@ body{
           could not see.<span class="rm">c</span></p>
       </div>
       <span class="manicule" style="top:172px" aria-hidden="true">☞</span>
-      <aside class="marg" style="top:96px"><b>Hand II</b>Cf. the Taniquetil case — a silence that,
+      <aside class="marg" style="top:92px"><b>Hand II</b>Cf. the Taniquetil case — a silence that,
         when searched, <i>upgraded</i> the claim from inference to witness.</aside>
-      <aside class="marg hand2" style="top:264px"><b>Hand III</b>Fourteen tested, four false. Blast
+      <aside class="marg hand2" style="top:218px"><b>Hand III</b>Fourteen tested, four false. Blast
         radius, not authorship: two were generated, two written by hand.</aside>
       <div class="fn">
         <p><span class="rm">a</span> The archive's fourth property: every published claim is guarded
@@ -710,10 +803,14 @@ body{
         <p><span class="rm">b</span> <i>gen_gazetteer</i> :2716, repaired 12 Aug 2026.</p>
         <p><span class="rm">c</span> Silm 1 and AAm §144 both state the placing outright.</p>
       </div>
+      <span class="quire">F&middot;iij</span>
       <span class="catch">Where</span>
+      <figure class="fig marg-fig"><div class="frame"><span class="dev-ship" aria-hidden="true"></span></div><figcaption>Vingilot, as a device</figcaption></figure>
     </section>
 
-    <section class="leaf r ruled" style="display:flex;flex-direction:column">
+    <section class="leaf r ruled twocol" style="display:flex;flex-direction:column">
+      <div class="rh"><span>Volume VI &middot; Lore and First Principles</span><span class="n">vii</span></div>
+      <span class="illum" aria-hidden="true"></span>
       <div class="tb">
         <p><span class="versal">W</span>here the corpus is silent the archive says so
           <span class="gl" data-gl="exactly: no rounding">exactly</span>, and where two texts
@@ -732,10 +829,10 @@ body{
           it. <span class="mark">[C]</span></p>
       </div>
       <span class="manicule" style="top:238px" aria-hidden="true">☞</span>
-      <aside class="marg" style="top:118px"><b>Hand II</b>The matcher folds ligatures, accents and
+      <aside class="marg" style="top:92px"><b>Hand II</b>The matcher folds ligatures, accents and
         line-breaks. A raw grep for <i>Théoden</i> returns nought in the Lord of the Rings — 261
         times over.</aside>
-      <aside class="marg hand2" style="top:300px"><b>Hand IV</b>oath_felagund: declared silent 18
+      <aside class="marg hand2" style="top:218px"><b>Hand IV</b>oath_felagund: declared silent 18
         Aug, withdrawn 19 Aug. The annal sets it down verbatim.</aside>
       <div class="fn">
         <p><span class="rm">d</span> The owner's ruling, 19 Aug 2026: show the two houses
@@ -743,11 +840,14 @@ body{
         <p><span class="rm">e</span> 27 absence-claims tested across the archive's prose: 5 false,
           5 stale, 17 hold.</p>
       </div>
+      <span class="quire">F&middot;iv</span>
       <span class="catch">Of the</span>
+      <figure class="fig marg-fig"><div class="frame"><span class="dev-crown" aria-hidden="true"></span></div><figcaption>The Crown of Gondor</figcaption></figure>
     </section>
   </div>
   <div class="clasp" role="presentation"></div>
   <div class="folio">Leaf VI of VII</div>
 </div>
 
+<script src="glossary.js" defer></script>
 </body></html>
