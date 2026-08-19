@@ -1382,6 +1382,19 @@ body{
 .fig .frame:has(> img){ position:relative; overflow:hidden; }
 .fig .frame > img{ position:absolute; inset:0; width:100%; height:100%;
   object-fit:cover; display:block; }
+/* A FLOATED FIGURE MAY NOT FRAGMENT ACROSS A COLUMN BREAK.
+   Measured on three published routes: the left leaf's .tb is a 458px two-column
+   fragmentainer, and the floated plate produced THREE client rects where the prototype's
+   produces one -- an overflow column at x~787-1006, past the gutter and INSIDE THE RIGHT
+   LEAF. The third fragment is the figcaption, so "The archive's drawing of Valinor" was
+   printed straight through the facing page's first paragraph, on every route with a
+   plate. scrollWidth 696 against clientWidth 458 is the fingerprint.
+   It is NOT the prose deficit: padding the leaf to 300 words, halving it, and
+   column-fill:auto all left the caption at x=881. break-inside:avoid returns it to 643.
+   Scoped to a frame holding an <img>, which this file provably contains none of -- the
+   prototype's devices are CSS-drawn spans, and its figure produces one rect already. */
+.fig:has(.frame > img){ break-inside:avoid; }
+
 </style>
 <link rel="stylesheet" href="arda.css"></head>
 <body>
