@@ -5597,6 +5597,34 @@
    "what": "Metamorphous, subset to Latin + Latin Extended-A + General Punctuation. A DISPLAY hand only: flared stems, angular pointed terminals, high modulation -- the nearest openly-licensed face to the Aniron/film-credits idiom the owner pointed at. It carries NO combining marks, so it may set headings and rubrics but must never set the phonological notation on the language leaves.",
    "file": "fonts/Metamorphous-Regular.woff2",
    "licence": "OFL-1.1"
+  },
+  {
+   "file": "heraldry/durin.svg",
+   "what": "The device of Durin — the crown of seven stars, drawn as the archive's own recreation.",
+   "hand": "the archive's own hand, from the blazon in the texts",
+   "licence": "own work. The archive's own drawing, published by the archive.",
+   "source": "site/arda_heraldry_assets.json records the blazon this device is drawn from."
+  },
+  {
+   "file": "fonts/ArchitectsDaughter.woff2",
+   "what": "Architects Daughter — the annotator's hand: marginalia, footnotes and the generated-plate notice.",
+   "hand": "Kimberly Geswein",
+   "licence": "OFL-1.1",
+   "source": "github.com/google/fonts/tree/main/ofl/architectsdaughter — licence read from the OFL.txt in that release"
+  },
+  {
+   "file": "fonts/Aniron-Regular.woff2",
+   "what": "Aniron — the archive's Latin reading hand (regular).",
+   "hand": "Pete Klassen, 2004",
+   "licence": "All Rights Reserved. Published on the OWNER'S RULING of 19 Aug 2026, given with the fact in hand that the site is already reachable on the public web; he undertook to obtain a licence before publication. Full position in fonts/Aniron-LICENCE.txt.",
+   "source": "dafont.com/aniron.font — converted to WOFF2 with NO subsetting, 278 glyphs in and 278 out, because subsetting is modification and the licence does not permit it."
+  },
+  {
+   "file": "fonts/Aniron-Bold.woff2",
+   "what": "Aniron — the archive's Latin reading hand (bold).",
+   "hand": "Pete Klassen, 2004",
+   "licence": "All Rights Reserved. Published on the OWNER'S RULING of 19 Aug 2026, given with the fact in hand that the site is already reachable on the public web; he undertook to obtain a licence before publication. Full position in fonts/Aniron-LICENCE.txt.",
+   "source": "dafont.com/aniron.font — converted to WOFF2 with NO subsetting, 278 glyphs in and 278 out, because subsetting is modification and the licence does not permit it."
   }
  ],
  "pending_provenance": []
