@@ -1260,17 +1260,10 @@ body{
 :root[data-codex-object="on"] .book .leaf{ overflow:visible; }
 /* COMPACTION, not clipping: the leaf's own furniture gives up room before the words do. */
 :root[data-codex-object="on"] .book .leaf{ padding:18px 20px 26px; }
-/* THE HEAD BAND, RESERVED. `.rh` is `position:absolute`, so it reserves no vertical room, and
-   the text block began at the leaf's 18px padding while the head occupied 0..28.5px of it.
-   Measured 19 Aug on the packed spread: "Volume VI - Lore and First Principles" printed straight
-   across "the fall-through publishes at", both illegible, on BOTH leaves. It had looked right
-   everywhere else only because those leaves' first child happened to carry a top margin -- an
-   accident that held, not a design, which is why no guard and no count ever saw it: my overlap
-   instrument was reading union boxes across a multicol break and ancestor pairs, and reported
-   178 collisions that were not there while missing the one that was. A SCREENSHOT FOUND IT.
-   `:has(> .rh)` so a leaf with no running head keeps its 18px and gives up no room; the
-   reservation is paid only where a head is actually printed. The 16px is the head's own measured
-   height plus air, and `--rh-top` binds this to the rule above so the two cannot drift apart. */
+/* THE HEAD BAND, RESERVED. `.rh` is absolute and reserves no room; the head occupied 0..28.5px
+   while text began at 18px, printing the running head across the first line on both leaves.
+   `:has(> .rh)` so a leaf without a head gives up nothing; `--rh-top` binds the two numbers.
+   Why it went unseen, and the instrument that finds it now: map/head_band_check.py. */
 :root[data-codex-object="on"] .book .leaf:has(> .rh){ padding-top:calc(var(--rh-top,19px) + 16px); }
 :root[data-codex-object="on"] .book .card{ padding:7px 9px 6px; margin-bottom:7px; }
 :root[data-codex-object="on"] .book .card h3{ font-size:12px; margin-bottom:4px; }
