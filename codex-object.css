@@ -19,9 +19,14 @@
   font-weight:400; font-style:normal; font-display:swap; }
 @font-face{ font-family:"Junicode"; src:url("fonts/Junicode-Italic.woff2") format("woff2");
   font-weight:400; font-style:italic; font-display:swap; }
-@font-face{ font-family:"Metamorphous"; src:url("fonts/Metamorphous-Regular.woff2") format("woff2");
+@font-face{ font-family:"Aniron"; src:url("fonts/Aniron-Regular.woff2") format("woff2");
   font-weight:400; font-style:normal; font-display:swap; }
-:root{ --face-latin:"Metamorphous","Junicode","EB Garamond",Georgia,serif;
+@font-face{ font-family:"Aniron"; src:url("fonts/Aniron-Bold.woff2") format("woff2");
+  font-weight:700; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Architects Daughter"; src:url("fonts/ArchitectsDaughter.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+:root{ --face-latin:"Aniron","Junicode","EB Garamond",Georgia,serif;
+  --face-hand:"Architects Daughter","Junicode",Georgia,cursive;
   --face-display:"Metamorphous","Junicode",Georgia,serif; }
 
 /* ═══════════════════════════════════════════════════════════════════════════════════════════
@@ -556,7 +561,7 @@ body{
    that sentence excludes. Set at 14/17 it was 1.21 and read cramped; the owner said so looking at
    this page. 21px restores the leaf's own measured pitch and the type now sits ON the ruling
    rather than between two of them, which is the whole point of ruling a page. */
-:root[data-hand="authentic"] .leaf{ --line:21px; }
+:root[data-hand="authentic"] .leaf{ --line:17px; }
 /* AND JUSTIFICATION IS DROPPED FOR THIS HAND. A justified uncial in a narrow column opens rivers
    of white, because the uncial is WIDE and few words reach a line. A medieval scribe closed those
    with abbreviations and line-fillers, which we do not have; ragged-right is the honest substitute
@@ -888,7 +893,7 @@ body{
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf li,
 :root[data-codex-object="on"][data-hand="authentic"] .book .card p{
   font-family:var(--face-latin) !important;
-  font-size:13.8px !important; line-height:21px !important; letter-spacing:0 !important; }
+  font-size:12.4px !important; line-height:17px !important; letter-spacing:0 !important; }
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.q{ font-style:italic !important; }
 /* THE FURNITURE: volume tab, spread kind, folio. Cinzel small-caps, as the prototype has them. */
 :root[data-codex-object="on"][data-hand="authentic"] .book .kind,
@@ -982,6 +987,220 @@ body{
        --no-hinting --desubroutinize --drop-tables+=DSIG
    `--no-layout-closure` is safe ONLY with an explicit --glyphs list; alone it deletes the feature
    outright. And HarfBuzz cannot read WOFF2, so shape-test a .ttf. */
+
+/* ── THE ANNOTATOR'S HAND, 19 August ─────────────────────────────────────────────────────────
+   The owner: "make the notes, sidetones and all these in another, more sketchy-handwriting style
+   font, and not Aniron, but make sure it fits as well." Architects Daughter (Kimberly Geswein,
+   OFL 1.1), 19 KB, 352 glyphs and NOT ONE of the archive's accented names missing -- checked
+   before choosing, because the first four candidates all reported every letter absent and the
+   reason was that Google's CSS2 API serves unicode-range SUBSETS and I had fetched the wrong
+   block. The canonical OFL repository serves the whole face.
+   THREE VOICES, THREE FACES, and that is the point rather than the decoration: the SCRIBE sets
+   the record (Aniron), the ARCHIVE speaks in the apparatus, and the ANNOTATOR writes in the
+   margin. A reader should be able to tell who is talking without being told. */
+:root[data-codex-object="on"] .book .marg,
+:root[data-codex-object="on"] .book .note,
+:root[data-codex-object="on"] .book .fn,
+:root[data-codex-object="on"] .book .catch,
+:root[data-codex-object="on"] .book .why,
+:root[data-codex-object="on"] .book .leaf .portrait ~ p.cite{
+  font-family:var(--face-hand) !important; font-style:normal !important;
+  letter-spacing:.004em; }
+:root[data-codex-object="on"] .book .marg{ font-size:11.2px !important; line-height:1.42 !important; }
+:root[data-codex-object="on"] .book .note{ font-size:11.6px !important; }
+
+/* ═══════════════════════════════════════════════════════════════════════════════════════════════
+   THE EDGE SCRIPTS — real cirth and real tengwar down the outer edge of every leaf.
+   Ready to paste into site/codex-object.css. Nothing here edits a page.
+
+   THE OWNER'S DIRECTION, 19 August 2026: "the edges of the leafs have some minimal art, replace
+   them with real tengwar, cirth, and sarati scripts, which always should be relevant to the
+   currently opened pages (great direction is the texts used on some Tolkien book edition's
+   covers)". The five jackets he named are two-line tengwar bands set between DOUBLE RULES, and
+   that is the shape this block reproduces: rule, band, rule, turned to run down the fore-edge
+   where a codex's outer margin is.
+
+   WHAT IT REPLACES. `.illum` at codex-object.css:738 — the generated vine band, whose own comment
+   calls it "restrained on purpose". The geometry here is deliberately the SAME (top/bottom 34px,
+   a narrow strip 7px in from the outer edge) so this is a drop-in: keep `.illum` for leaves that
+   want a vine, or delete it. Both can coexist; they do not overlap.
+
+   ── WIRING: ONE ATTRIBUTE, AND NO PAGE FETCHES ANYTHING ──────────────────────────────────────
+   The text comes from `site/arda_edge_scripts.json` AT BUILD TIME, not over the wire. The
+   dataset is 935 KB — the citable record, never a page's payload — and a leaf needs one row of
+   it. Whoever owns the page generator emits one inline style on `.book`:
+
+       <div class="book" style="--edge-l:'<glyphs>'; --edge-r:'<glyphs>'"
+            data-edge-src="t1_a_the_silmarillion.txt:9382">
+
+   from `routes[<route>].text`. With neither property set, `content: var(--edge-l, none)` makes
+   the pseudo-element vanish — no empty rules, no broken band, no fallback art. A leaf either
+   carries a real inscription or carries nothing, which is this archive's rule about silence
+   applied to an ornament.
+
+   ── THE FONT STACK IS ORDERED BY WHAT EACH FACE ACTUALLY HAS ─────────────────────────────────
+   Measured with fontTools over site/fonts/:
+
+       TengwarTelcontar   716 glyphs   112/128 CSUR tengwar   49/128 CSUR cirth   2048 upm
+       AlcarinTengwar     365          119/128                12/128              outline
+       Eldamar 1.1       1116          117/128                10/128              outline
+       ArdaCSUR           305          128/128                128/128             64 upm, BITMAP
+
+   Telcontar leads because it is an outline face carrying both blocks. ArdaCSUR is LAST and is
+   there for the 79 certh nothing else draws — it is Unifont subset, a 16×16 bitmap at 64 units
+   per em, so it renders pixelated at any size and that is arithmetic rather than a setting
+   (CLAUDE.md, the CSUR ruling of 13 August). CSS fallback is PER CHARACTER, so a word mixes an
+   outline certh with a bitmap one and neither is lost.
+
+   ArdaCSUR is NOT in the tengwar stack: Telcontar, Alcarin and Eldamar together cover the block
+   and a bitmap face would only ever make a letter worse.
+
+   AngerthasMoria.woff2 is deliberately absent. It is an outline cirth face and it is
+   ASCII-mapped — 91 ASCII codepoints, 0 in U+E080–E0FF — so pointing CSUR text at it renders
+   nothing, or worse, silently renders the wrong letters.
+
+   ── THE PUA CAVEAT, WHICH BELONGS IN THE CSS AND NOT ONLY IN THE DATASET ─────────────────────
+   Every codepoint here is ConScript Private Use Area. A reader who copies the band into another
+   document gets boxes: nothing in a PUA codepoint says which font to find. The band is therefore
+   marked `aria-hidden` in spirit — it is a `::after` and so is already out of the accessibility
+   tree in every engine — and the readable transcription lives in the dataset beside it.
+   ══════════════════════════════════════════════════════════════════════════════════════════════ */
+
+/* The faces. Paths are relative to the STYLESHEET, matching codex-object.css:18 and :573.
+   `font-display:block` and not `swap`: a swap would flash the fallback, and the fallback for a
+   PUA codepoint is a row of tofu boxes — the one substitution that must never be seen. */
+@font-face{
+  font-family:"TengwarTelcontar";
+  src:url("fonts/TengwarTelcontar.woff2") format("woff2");
+  font-weight:normal; font-style:normal; font-display:block;
+  unicode-range:U+E000-E0FF;
+}
+@font-face{
+  font-family:"AlcarinTengwar";
+  src:url("fonts/AlcarinTengwar-Regular.woff2") format("woff2");
+  font-weight:normal; font-style:normal; font-display:block;
+  unicode-range:U+E000-E0FF;
+}
+@font-face{
+  font-family:"ArdaCSUR";
+  src:url("fonts/ArdaCSUR.woff2") format("woff2");
+  font-weight:normal; font-style:normal; font-display:block;
+  unicode-range:U+E000-E0FF;
+}
+
+:root[data-codex-object="on"] .book{
+  /* THE BAND'S OWN TOKENS, so a hall can tune it without touching this block.
+     --edge-ink is the rubric brown at strength: an inscription is not a watermark. The vine band
+     it replaces sat at opacity .55 and was decoration; this is TEXT, and text a reader cannot
+     make out is worse than no text — it looks like an ornament pretending to be writing. */
+  --edge-ink:#7a5a2c;
+  --edge-rule:#b49a63;
+  /* MEASURED IN A BROWSER, NOT CHOSEN. At 12.5px in a 17px strip a name set in cirth rendered
+     8 glyphs into a 700px band and read as an accident rather than as lettering. The fore-edge
+     carries a NAME -- short, like a spine title -- so it is set at spine-title scale; the head
+     band carries a LINE and stays small, which is how the jackets themselves are set: one short
+     band and one long one. */
+  --edge-size:17px;
+  --edge-head-size:12.5px;
+  --edge-track:.06em;
+  --edge-width:23px;
+  --edge-head-width:18px;
+}
+
+/* ── THE BAND ─────────────────────────────────────────────────────────────────────────────────
+   `.leaf::before` is taken — it draws the leaf's ruled border at codex-object.css:243 — so the
+   band is `::after`, which nothing else uses. Checked before writing, because a pseudo-element
+   collision silently replaces somebody else's art. */
+:root[data-codex-object="on"] .leaf::after{
+  content:var(--edge-l, none);
+  position:absolute; top:34px; bottom:34px; width:var(--edge-width);
+  pointer-events:none; z-index:2;
+
+  /* the double rule, top and bottom of the band as the jackets set them — turned 90° with it */
+  border-left:1px solid var(--edge-rule);
+  border-right:1px solid var(--edge-rule);
+  box-shadow:inset 2px 0 0 -1px var(--edge-rule), inset -2px 0 0 -1px var(--edge-rule);
+
+  /* THE SCRIPT ITSELF. `writing-mode:vertical-rl` + `rotate(180deg)` runs the line bottom-to-top
+     up the fore-edge, which is how a spine or an edge is lettered and how the eye expects to
+     read a turned line on a book. `text-orientation:sideways` keeps the glyphs joined: `mixed`
+     would upright each tengwa individually and destroy every tehta's position over its
+     consonant, which in the Quenya mode IS the vowel. */
+  writing-mode:vertical-rl;
+  text-orientation:sideways;
+  transform:rotate(180deg);
+
+  font-family:"TengwarTelcontar","AlcarinTengwar","ArdaCSUR",serif;
+  font-size:var(--edge-size);
+  line-height:var(--edge-width);
+  letter-spacing:var(--edge-track);
+  color:var(--edge-ink);
+  white-space:nowrap;
+  overflow:hidden;
+  text-align:center;
+
+  /* a faint vellum ground so the band reads as an inscribed strip rather than as ink floating
+     on the page — the jackets print black on white paper inside their rules */
+  background:linear-gradient(90deg,
+    rgba(250,242,203,0) 0, rgba(250,242,203,.55) 18%,
+    rgba(250,242,203,.55) 82%, rgba(250,242,203,0) 100%);
+}
+
+/* the outer margin of each leaf: verso letters down the LEFT, recto down the RIGHT */
+:root[data-codex-object="on"] .leaf.l::after{ left:7px; }
+:root[data-codex-object="on"] .leaf.r::after{ right:7px; content:var(--edge-r, none); }
+
+/* A SECOND BAND AT THE HEAD, for a leaf that carries a line of verse as well as a name.
+   The jackets carry TWO bands and this is the other one. It runs horizontally, as they do, and
+   is opt-in: no `--edge-head` means no element at all. */
+:root[data-codex-object="on"] .spread::after{
+  content:var(--edge-head, none);
+  position:absolute; left:34px; right:34px; top:6px; height:var(--edge-head-width);
+  pointer-events:none; z-index:2;
+  border-top:1px solid var(--edge-rule);
+  border-bottom:1px solid var(--edge-rule);
+  box-shadow:inset 0 2px 0 -1px var(--edge-rule), inset 0 -2px 0 -1px var(--edge-rule);
+  font-family:"TengwarTelcontar","AlcarinTengwar","ArdaCSUR",serif;
+  font-size:var(--edge-head-size); line-height:var(--edge-head-width);
+  letter-spacing:var(--edge-track); color:var(--edge-ink);
+  white-space:nowrap; overflow:hidden; text-align:center;
+  background:linear-gradient(180deg,
+    rgba(250,242,203,0) 0, rgba(250,242,203,.5) 22%,
+    rgba(250,242,203,.5) 78%, rgba(250,242,203,0) 100%);
+}
+
+/* ── THE NARROW VIEWPORT ──────────────────────────────────────────────────────────────────────
+   codex-object.css:352 stacks the leaves at narrow widths, so a fore-edge band on each of two
+   stacked leaves would run down the middle of the reading column. Below the stack breakpoint the
+   fore-edge band goes and the head band stays: one inscription per opening rather than none,
+   which keeps the direction met on a phone without crowding the text.
+   THE BREAKPOINT IS 900px BECAUSE THAT IS WHERE codex-object.css ITSELF STACKS — a second,
+   different breakpoint is two layouts that must be kept in step, and this archive retires keys
+   for that. If the stack point moves there, it moves here. */
+@media (max-width:900px){
+  :root[data-codex-object="on"] .leaf::after{ content:none; }
+  :root[data-codex-object="on"] .spread::after{ left:14px; right:14px; }
+}
+
+/* Reduced motion is not relevant here — nothing animates, deliberately. An inscription that
+   scrolls or fades is a gimmick, and Tolkien's scripts are not a gimmick. */
+
+/* ── DARK GROUND ──────────────────────────────────────────────────────────────────────────────
+   arda.css declares one dark theme for all halls on `:root[data-theme="dark"]`, and every colour
+   there carries `!important` for the reason CLAUDE.md records: specificity compares (ids,
+   classes, elements) lexicographically, so ONE ID BEATS ANY NUMBER OF ATTRIBUTES. These are
+   token redefinitions on the same `.book` selector rather than colour declarations on the band,
+   so they need no `!important` and cannot fight anything. */
+:root[data-theme="dark"][data-codex-object="on"] .book{
+  --edge-ink:#c9a961;
+  --edge-rule:#8a6f3e;
+}
+:root[data-theme="dark"][data-codex-object="on"] .leaf::after,
+:root[data-theme="dark"][data-codex-object="on"] .spread::after{
+  background:linear-gradient(90deg,
+    rgba(28,22,14,0) 0, rgba(28,22,14,.45) 18%, rgba(28,22,14,.45) 82%, rgba(28,22,14,0) 100%);
+}
+
 
 /* ── APPENDIX, written by map/gen_codex_route.py and by nothing else ────────────────────────
    The proto is a page whose <body> IS the library. A published route is a page with a header

@@ -18,11 +18,16 @@
   font-weight:400; font-style:normal; font-display:swap; }
 @font-face{ font-family:"Junicode"; src:url("fonts/Junicode-Italic.woff2") format("woff2");
   font-weight:400; font-style:italic; font-display:swap; }
-@font-face{ font-family:"Metamorphous"; src:url("fonts/Metamorphous-Regular.woff2") format("woff2");
+@font-face{ font-family:"Aniron"; src:url("fonts/Aniron-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Aniron"; src:url("fonts/Aniron-Bold.woff2") format("woff2");
+  font-weight:700; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Architects Daughter"; src:url("fonts/ArchitectsDaughter.woff2") format("woff2");
   font-weight:400; font-style:normal; font-display:swap; }
 
 :root{
-  --face-latin:"Metamorphous","Junicode",Georgia,'Palatino Linotype',serif;
+  --face-latin:"Aniron","Junicode",Georgia,'Palatino Linotype',serif;
+  --face-hand:"Architects Daughter","Junicode",Georgia,cursive;
   --face-display:"Metamorphous","Junicode",Georgia,serif;
   --a-parch:#efe6cd; --a-card:#fdfaf2; --a-ink:#3a3226; --a-mut:#6b5c44; /* AA on parchment */
   --a-line:#b0a58e; --a-gold:#c9a227; --a-gold-dk:#7a5f14; --a-char:#191512; --a-hdr-gold:#d8c78e;
