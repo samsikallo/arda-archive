@@ -784,103 +784,18 @@ body{
 }
 
 
-/* ── APPENDIX, written by map/gen_codex_route.py and by nothing else ────────────────────────
-   The proto is a page whose <body> IS the library. A published route is a page with a header
-   bar, a plain record card and a menu already on it, and the book is spliced INTO that. These
-   rules do only what that difference requires; the look above is untouched. */
-body{ background:var(--ground); }
-.book{ margin:0 auto; }
-.cx-plate{ width:100%; height:100%; object-fit:cover; display:block; border-radius:2px;
-  /* THE 429 BUSTS ARE PURE WHITE -- a* 0.0 / b* 0.0 at L* 99.4, and the whole 20.8 dE gap to the
-     vellum IS the missing yellow. Multiply lets the leaf through the white and leaves the wash
-     alone; a duotone would flatten the one thing distinguishing 429 otherwise-uniform busts. */
-  mix-blend-mode:multiply; }
-.portrait.cx-has::after{ content:none; }
-.sheet:has(.cx-plate){ overflow:hidden; }
-.cx-here{ box-shadow:inset 0 0 0 2px var(--rubric); }
-/* The plain record survives, visible, beneath the object: nothing is hidden and nothing is lost.
-   It is the colophon -- the same record in plain text, for a reader who wants it that way. */
-main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vellum-2);
-  border:1px solid var(--vellum-edge); color:var(--ink); }
+/* ══ MOVED HERE FROM THE GENERATED codex-object.css, 19 August 2026 ═══════════════════════════
+   These rules were edited straight into `site/codex-object.css`, which `map/gen_codex_route.py`
+   rebuilds WHOLE from this STYLE element plus its own appendix -- so the next --apply would have taken
+   them, silently, with a success message. They are here because they are the LOOK: the type
+   hierarchy the prototype itself was measured for, and ruling C12's margin notice. Change them
+   here and 622 routes follow; change them in the generated file and they are gone.
 
-/* ══ THE SLICE FAULTS, 19 August 2026 ═══════════════════════════════════════════════════════
-   Five faults were visible in one glance when the first 59 re-hung routes were rendered. Four
-   were CSS and are fixed here. THE REASON THEY ALL HAVE THE SAME SHAPE IS THE IMPORTANT PART:
-   every one of the 622 published routes carries its own inline <style> block, written long
-   before the codex existed, and those blocks WIN on specificity or on source order against a
-   stylesheet linked in the head. A rule that is correct in this file is not thereby applied on
-   a page. So each fix below is scoped through `:root[data-codex-object="on"] .book`, which no page's
-   inline CSS can outrank, and the ones that must not be negotiable carry !important.
-   This is the same lesson CLAUDE.md records against the dark theme: specificity compares
-   (ids, classes, elements) lexicographically, and counting selectors by eye is not a method. */
-
-/* 1 · THE VOLUME TABS WERE STACKED DOWN THE MIDDLE OF THE VERSO, over the portrait. They belong
-      on the FORE-EDGE, protruding from behind the board. The rule in this file was already
-      right; a page's own `.tab` styling was reaching them. */
-:root[data-codex-object="on"] .book > .tabs{
-  position:absolute !important; left:-1px !important; top:74px !important;
-  display:flex !important; flex-direction:column !important; gap:9px !important;
-  width:auto !important; z-index:3 !important; }
-:root[data-codex-object="on"] .book > .tabs > .tab{
-  position:relative !important; margin-left:-74px !important; width:104px !important;
-  float:none !important; display:block !important; }
-
-/* 3 · AND THE MULTIPLY WAS TRAPPED. The fix below is right and did nothing for eight days, because
-   `.portrait` carries `z-index:1` with `position:relative` and that CREATES A STACKING CONTEXT. A
-   `mix-blend-mode` cannot blend with anything outside its own stacking context, so the busts were
-   multiplying against an empty transparent group instead of against the vellum, and rendered as
-   the plain white rectangles they are. Measured off the rendered PNG, not off the stylesheet:
-   portrait ground rgb(255,255,255), leaf beside it rgb(250,244,216). Declared, computed, applied,
-   and inert -- the same shape as the ENLA axis and the pinned `data-codex` switch.
-   `z-index:auto` restores it to the leaf's own painting order, which is where a plate laid on a
-   page belongs anyway; the ruling lines it was lifted above are drawn on `.leaf::before`, behind
-   the content, so nothing needed lifting. */
-:root[data-codex-object="on"] .book .portrait{ z-index:auto; }
-
-/* AND THEY MUST GO ON A PHONE. `.tabs{display:none}` is already declared in the 1000px block at
-   (0,1,0); the scoped rule above is (0,3,1) with !important and silently beat it, so the fore-edge
-   tabs ran off the left edge of a 430px screen with their labels cut in half -- "S AND RMS", "GUES".
-   A media query adds no specificity, which is the part that catches people. Seen in the first phone
-   screenshot of the switched-on object; the top nav carries the same destinations there. */
-@media (max-width:1000px){
-  :root[data-codex-object="on"] .book > .tabs{ display:none !important; }
-}
-
-/* 2 · THE PORTRAIT WAS A WHITE RECTANGLE ON THE VELLUM. Measured: the 429 busts sit at
-      a* 0.0 / b* 0.0, L* 99.4 -- pure white, and the ENTIRE 20.8 dE gap to the leaf is the
-      missing yellow. `multiply` lets the vellum through the white and leaves the drawn ink
-      alone, so all 429 inherit the leaf in one line. NOT a duotone: the wash is the only thing
-      distinguishing 429 otherwise-uniform busts, and flattening it would lose that. */
-:root[data-codex-object="on"] .cx-plate{
-  mix-blend-mode:multiply; background:transparent; border-radius:0; }
-:root[data-codex-object="on"] .portrait:has(.cx-plate){
-  background:none !important; box-shadow:inset 0 0 0 1px var(--rule) !important; }
-
-/* 3 · PAGE CHROME SHOWED THROUGH ONTO THE LEAF -- two floating circular controls over the
-      recto. Anything the old page draws for itself has no business inside the boards. */
-:root[data-codex-object="on"] .book .hd,
-:root[data-codex-object="on"] .book #ardanav,
-:root[data-codex-object="on"] .book .a-skip,
-:root[data-codex-object="on"] .book button:not(.cx-keep),
-:root[data-codex-object="on"] .book [class*="fab"],
-:root[data-codex-object="on"] .book [class*="toggle"]{ display:none !important; }
-
-/* 4 · THE CARDS READ AS MODERN WEB UI -- rounded corners, drop shadows, a floating badge on a
-      parchment ground. That is precisely the "a theme, not an object" failure the owner
-      rejected on 19 August. A codex panel is INSET into the leaf: a hairline rule, square
-      corners, and small corner marks where a scribe ruled the box. */
-:root[data-codex-object="on"] .book .card{
-  border-radius:0 !important; box-shadow:none !important;
-  background:rgba(255,252,244,.30) !important;
-  border:1px solid var(--rule-soft) !important; }
-:root[data-codex-object="on"] .book .card::before,
-:root[data-codex-object="on"] .book .card::after{
-  content:"" !important; position:absolute; width:9px; height:9px; border:1px solid var(--rule);
-  border-radius:0 !important; box-shadow:none !important; background:none !important; }
-:root[data-codex-object="on"] .book .card::before{ left:-1px; top:-1px; border-width:1px 0 0 1px; }
-:root[data-codex-object="on"] .book .card::after{ right:-1px; bottom:-1px; border-width:0 1px 1px 0; }
-:root[data-codex-object="on"] .book .card .no{
-  box-shadow:none !important; border-radius:0 !important; }
+   THEY KEEP THEIR ROUTE SCOPE ON PURPOSE. `:root[data-codex-object="on"] .book` and the
+   !important flags are what make them survive the inline STYLE block every published route carries.
+   Stripping that armour would be a redesign, not a move, so it was not done -- but it does mean
+   this prototype page, which carries no `data-codex-object`, does not itself show them. That is
+   the one thing this move did not fix, and it is reported rather than papered over. */
 
 /* 6 · THE RE-HUNG ROUTE WORE THE RIGHT OBJECT AND THE WRONG HAND. `data-hand="authentic"` is
       stamped on the root of every spliced route and nothing acted on it, so 59 routes were set in
@@ -964,27 +879,7 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
   font-family:'EB Garamond',Georgia,serif !important;
   font-size:11.6px !important; line-height:1.45 !important; }
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf .styles{ font-size:13px !important; font-style:italic !important; }
-/* THE RECORD WAS PRINTING TWICE. `main.card` is the route's original body -- heading, meta line,
-   the link into the living archive -- and the codex block is spliced ABOVE it, so a re-hung route
-   showed the whole record in the book and then again in a cream card underneath. Seen in the first
-   screenshot of the repaired object and not before, because until today the object was switched off
-   and only the card was ever visible.
-   THE CARD IS NOT DELETED. It carries the one thing the book does not -- `.go`, the link into the
-   living archive -- and it is the no-CSS and no-JS fallback for the whole route. So the DUPLICATED
-   parts are hidden and the link is kept, set as a plain line under the book where a colophon goes. */
-:root[data-codex-object="on"] main.card{
-  background:none; border:0; box-shadow:none; padding:0; margin:6px auto 40px;
-  max-width:min(1480px,85vw); text-align:center; }
-:root[data-codex-object="on"] main.card > h1,
-:root[data-codex-object="on"] main.card > p,
-:root[data-codex-object="on"] main.card > .cite:first-of-type{ display:none; }
-:root[data-codex-object="on"] main.card .go{
-  display:inline-block; font:italic 13px/1.5 'EB Garamond',Georgia,serif;
-  color:var(--ink-soft); text-decoration:none; border-bottom:1px solid currentColor;
-  opacity:.72; }
-:root[data-codex-object="on"] main.card .go:hover{ opacity:1; }
-:root[data-codex-object="on"] main.card .cite{
-  font:italic 11.5px/1.5 'EB Garamond',Georgia,serif; opacity:.6; }
+
 /* C12 — THE GENERATED-PLATE NOTICE GOES TO THE OUTER MARGIN. The owner's ruling of 19 August,
    answering a question put with the measurement beside it: the notice runs to two full lines of
    body text under every one of the 429 person portraits, and at the reading size it competes with
@@ -1008,9 +903,6 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
 :root[data-codex-object="on"] .book .leaf.l .styles{ margin-left:clamp(76px,17%,132px); }
 :root[data-codex-object="on"] .book .leaf.r .portrait,
 :root[data-codex-object="on"] .book .leaf.r .styles{ margin-right:clamp(76px,17%,132px); }
-
-:root[data-codex-object="on"] .book .versal{ font-family:"Junicode Versal",Cinzel,Georgia,serif !important;
-  font-feature-settings:"salt" 2 !important; }
 
 /* ⚠ THE VERSAL FONT IS A NO-OP, TWICE OVER — found by research the same day it shipped.
    `site/fonts/junicode-versal.woff2` was built by pinning Junicode's ENLA axis to 100 and
@@ -1059,3 +951,134 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
        --no-hinting --desubroutinize --drop-tables+=DSIG
    `--no-layout-closure` is safe ONLY with an explicit --glyphs list; alone it deletes the feature
    outright. And HarfBuzz cannot read WOFF2, so shape-test a .ttf. */
+
+/* ── APPENDIX, written by map/gen_codex_route.py and by nothing else ────────────────────────
+   The proto is a page whose <body> IS the library. A published route is a page with a header
+   bar, a plain record card and a menu already on it, and the book is spliced INTO that. These
+   rules do only what that difference requires; the look above is untouched. */
+body{ background:var(--ground); }
+.book{ margin:0 auto; }
+.cx-plate{ width:100%; height:100%; object-fit:cover; display:block; border-radius:2px;
+  /* THE 429 BUSTS ARE PURE WHITE -- a* 0.0 / b* 0.0 at L* 99.4, and the whole 20.8 dE gap to the
+     vellum IS the missing yellow. Multiply lets the leaf through the white and leaves the wash
+     alone; a duotone would flatten the one thing distinguishing 429 otherwise-uniform busts. */
+  mix-blend-mode:multiply; }
+.portrait.cx-has::after{ content:none; }
+.sheet:has(.cx-plate){ overflow:hidden; }
+.cx-here{ box-shadow:inset 0 0 0 2px var(--rubric); }
+/* The plain record survives, visible, beneath the object: nothing is hidden and nothing is lost.
+   It is the colophon -- the same record in plain text, for a reader who wants it that way. */
+main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vellum-2);
+  border:1px solid var(--vellum-edge); color:var(--ink); }
+
+/* ══ MOVED HERE FROM THE GENERATED codex-object.css, 19 August 2026 ═══════════════════════════
+   Everything below was edited straight into `site/codex-object.css`, which this generator rebuilds
+   WHOLE -- so the next --apply would have deleted it, silently, with a success message. It is here
+   rather than in codex-proto.html because none of it is the LOOK: every rule either names
+   something only a published route has (`main.card`, the page header, the nav, the generator's own
+   `.cx-plate`), or exists solely to outrank the inline STYLE block each route carries. The
+   prototype has no such competitors, so none of these rules would mean anything standing there. */
+
+/* ══ THE SLICE FAULTS, 19 August 2026 ═══════════════════════════════════════════════════════
+   Five faults were visible in one glance when the first 59 re-hung routes were rendered. Four
+   were CSS and are fixed here. THE REASON THEY ALL HAVE THE SAME SHAPE IS THE IMPORTANT PART:
+   every one of the 622 published routes carries its own inline <style> block, written long
+   before the codex existed, and those blocks WIN on specificity or on source order against a
+   stylesheet linked in the head. A rule that is correct in this file is not thereby applied on
+   a page. So each fix below is scoped through `:root[data-codex-object="on"] .book`, which no page's
+   inline CSS can outrank, and the ones that must not be negotiable carry !important.
+   This is the same lesson CLAUDE.md records against the dark theme: specificity compares
+   (ids, classes, elements) lexicographically, and counting selectors by eye is not a method. */
+
+/* 1 · THE VOLUME TABS WERE STACKED DOWN THE MIDDLE OF THE VERSO, over the portrait. They belong
+      on the FORE-EDGE, protruding from behind the board. The rule in this file was already
+      right; a page's own `.tab` styling was reaching them. */
+:root[data-codex-object="on"] .book > .tabs{
+  position:absolute !important; left:-1px !important; top:74px !important;
+  display:flex !important; flex-direction:column !important; gap:9px !important;
+  width:auto !important; z-index:3 !important; }
+:root[data-codex-object="on"] .book > .tabs > .tab{
+  position:relative !important; margin-left:-74px !important; width:104px !important;
+  float:none !important; display:block !important; }
+
+/* 3 · AND THE MULTIPLY WAS TRAPPED. The fix below is right and did nothing for eight days, because
+   `.portrait` carries `z-index:1` with `position:relative` and that CREATES A STACKING CONTEXT. A
+   `mix-blend-mode` cannot blend with anything outside its own stacking context, so the busts were
+   multiplying against an empty transparent group instead of against the vellum, and rendered as
+   the plain white rectangles they are. Measured off the rendered PNG, not off the stylesheet:
+   portrait ground rgb(255,255,255), leaf beside it rgb(250,244,216). Declared, computed, applied,
+   and inert -- the same shape as the ENLA axis and the pinned `data-codex` switch.
+   `z-index:auto` restores it to the leaf's own painting order, which is where a plate laid on a
+   page belongs anyway; the ruling lines it was lifted above are drawn on `.leaf::before`, behind
+   the content, so nothing needed lifting. */
+:root[data-codex-object="on"] .book .portrait{ z-index:auto; }
+
+/* AND THEY MUST GO ON A PHONE. `.tabs{display:none}` is already declared in the 1000px block at
+   (0,1,0); the scoped rule above is (0,3,1) with !important and silently beat it, so the fore-edge
+   tabs ran off the left edge of a 430px screen with their labels cut in half -- "S AND RMS", "GUES".
+   A media query adds no specificity, which is the part that catches people. Seen in the first phone
+   screenshot of the switched-on object; the top nav carries the same destinations there. */
+@media (max-width:1000px){
+  :root[data-codex-object="on"] .book > .tabs{ display:none !important; }
+}
+
+/* 2 · THE PORTRAIT WAS A WHITE RECTANGLE ON THE VELLUM. Measured: the 429 busts sit at
+      a* 0.0 / b* 0.0, L* 99.4 -- pure white, and the ENTIRE 20.8 dE gap to the leaf is the
+      missing yellow. `multiply` lets the vellum through the white and leaves the drawn ink
+      alone, so all 429 inherit the leaf in one line. NOT a duotone: the wash is the only thing
+      distinguishing 429 otherwise-uniform busts, and flattening it would lose that. */
+:root[data-codex-object="on"] .cx-plate{
+  mix-blend-mode:multiply; background:transparent; border-radius:0; }
+:root[data-codex-object="on"] .portrait:has(.cx-plate){
+  background:none !important; box-shadow:inset 0 0 0 1px var(--rule) !important; }
+
+/* 3 · PAGE CHROME SHOWED THROUGH ONTO THE LEAF -- two floating circular controls over the
+      recto. Anything the old page draws for itself has no business inside the boards. */
+:root[data-codex-object="on"] .book .hd,
+:root[data-codex-object="on"] .book #ardanav,
+:root[data-codex-object="on"] .book .a-skip,
+:root[data-codex-object="on"] .book button:not(.cx-keep),
+:root[data-codex-object="on"] .book [class*="fab"],
+:root[data-codex-object="on"] .book [class*="toggle"]{ display:none !important; }
+
+/* 4 · THE CARDS READ AS MODERN WEB UI -- rounded corners, drop shadows, a floating badge on a
+      parchment ground. That is precisely the "a theme, not an object" failure the owner
+      rejected on 19 August. A codex panel is INSET into the leaf: a hairline rule, square
+      corners, and small corner marks where a scribe ruled the box. */
+:root[data-codex-object="on"] .book .card{
+  border-radius:0 !important; box-shadow:none !important;
+  background:rgba(255,252,244,.30) !important;
+  border:1px solid var(--rule-soft) !important; }
+:root[data-codex-object="on"] .book .card::before,
+:root[data-codex-object="on"] .book .card::after{
+  content:"" !important; position:absolute; width:9px; height:9px; border:1px solid var(--rule);
+  border-radius:0 !important; box-shadow:none !important; background:none !important; }
+:root[data-codex-object="on"] .book .card::before{ left:-1px; top:-1px; border-width:1px 0 0 1px; }
+:root[data-codex-object="on"] .book .card::after{ right:-1px; bottom:-1px; border-width:0 1px 1px 0; }
+:root[data-codex-object="on"] .book .card .no{
+  box-shadow:none !important; border-radius:0 !important; }
+
+/* THE RECORD WAS PRINTING TWICE. `main.card` is the route's original body -- heading, meta line,
+   the link into the living archive -- and the codex block is spliced ABOVE it, so a re-hung route
+   showed the whole record in the book and then again in a cream card underneath. Seen in the first
+   screenshot of the repaired object and not before, because until today the object was switched off
+   and only the card was ever visible.
+   THE CARD IS NOT DELETED. It carries the one thing the book does not -- `.go`, the link into the
+   living archive -- and it is the no-CSS and no-JS fallback for the whole route. So the DUPLICATED
+   parts are hidden and the link is kept, set as a plain line under the book where a colophon goes. */
+:root[data-codex-object="on"] main.card{
+  background:none; border:0; box-shadow:none; padding:0; margin:6px auto 40px;
+  max-width:min(1480px,85vw); text-align:center; }
+:root[data-codex-object="on"] main.card > h1,
+:root[data-codex-object="on"] main.card > p,
+:root[data-codex-object="on"] main.card > .cite:first-of-type{ display:none; }
+:root[data-codex-object="on"] main.card .go{
+  display:inline-block; font:italic 13px/1.5 'EB Garamond',Georgia,serif;
+  color:var(--ink-soft); text-decoration:none; border-bottom:1px solid currentColor;
+  opacity:.72; }
+:root[data-codex-object="on"] main.card .go:hover{ opacity:1; }
+:root[data-codex-object="on"] main.card .cite{
+  font:italic 11.5px/1.5 'EB Garamond',Georgia,serif; opacity:.6; }
+
+:root[data-codex-object="on"] .book .versal{ font-family:"Junicode Versal",Cinzel,Georgia,serif !important;
+  font-feature-settings:"salt" 2 !important; }
