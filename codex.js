@@ -61,7 +61,7 @@
 
 
     /* FAMILY BEFORE BASENAME. `ix.routes[here]` matched a nested page against a ROOT page of the
-       same name: realm/sheets.html took root sheets.html's atlas+full, place/ and realm/
+       same name: realm/valinor.html took root valinor.html's atlas+full, place/ and realm/
        gondolin.html took "Houses of Gondolin". The basename fallback still serves root pages. */
     var meta = ix.routes[route] || null;
     if (!meta && nested) {
@@ -69,7 +69,16 @@
       if (fam) meta = { vol: fam.volume, part: fam.part, arch: fam.archetype, spread: fam.spread };
     }
     if (!meta) meta = ix.routes[here] || null;
-    if (!meta) { warn("no metadata for " + route + " — neutral fallback shell"); meta = { arch: "folio" }; }
+    // A TOMBSTONE HAS NO CODEX METADATA ON PURPOSE. nav.js injects this script into every
+    // published page, and a retired route is deliberately not a leaf of the codex — so the
+    // fallback shell is the CORRECT outcome there, and warning about it made traverse_check
+    // report six console lines against a measured baseline of zero. The page says what it is;
+    // this asks it rather than keeping a second list of what is retired.
+    if (!meta) {
+      if (!R.hasAttribute("data-retired"))
+        warn("no metadata for " + route + " — neutral fallback shell");
+      meta = { arch: "folio" };
+    }
 
     R.setAttribute("data-archetype", meta.arch || "folio");
     if (meta.spread) R.setAttribute("data-spread", meta.spread);
