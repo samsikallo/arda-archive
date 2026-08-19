@@ -103,13 +103,29 @@ body{
      than the viewport were SHRUNK to their `min-height`. That is why every book measured exactly
      520px at every desktop width instead of its own 1.58:1 shape, and why seven leaves were
      clipping up to 216px of their own text. The ratio was never being applied at all. */
-  position:relative; flex:0 0 auto; width:min(1480px, 85vw);
+  /* THE BOOK IS SIZED BY THE VIEWPORT'S SHORTER CONSTRAINT, NOT BY ITS WIDTH ALONE.
+     `width:min(1480px, 85vw)` sets width and lets the 1.58 ratio decide height — so on a
+     1600x913 screen the book came out 1360x861, the site header took 140px above it, and
+     1,047px of book sat in 913px of window. The owner: "the whole book still doesn't fit
+     perfectly into the website". 85% is kept — it is his figure — and a THIRD term is added:
+     the width that the available HEIGHT can afford at the same ratio. Whichever of the three
+     binds, binds. `--fit-h` is the room left after the header and the page's own padding. */
+  position:relative; flex:0 0 auto;
+  --fit-h: calc(100dvh - var(--a-hdr-h, 140px) - 112px);
+  /* BOTH DIMENSIONS COME FROM THE SAME CHOICE, or the ratio breaks. Sizing width alone let the
+     CONTENT decide height and the book came out at 2.149 on a wide screen and 0.997 on a short
+     one — a book that is taller than it is wide. `aspect-ratio` holds the proportion; `height`
+     caps it at what the window can afford; the leaves scroll internally only when the archive
+     genuinely holds more than a spread. */
+  width: min(1480px, 85vw, calc(var(--fit-h) * 1.58));
+  height: min(calc(min(1480px, 85vw) / 1.58), var(--fit-h));
+  aspect-ratio: 1.58;
   /* THE PROPORTION IS A FLOOR, NOT A CEILING. `aspect-ratio` sets an EXACT height, so a leaf with
      one paragraph too many is clipped rather than accommodated -- which is what 1200px was still
      doing. Expressed as a min-height the book keeps its 1.58:1 shape whenever the content fits,
      and grows instead of hiding text when it does not. A codex leaf that hides its own words is
      the one thing this object must never do. */
-  min-height:max(520px, calc(min(1480px, 85vw) / 1.58));
+  min-height:0;
   /* the boards */
   background:
     linear-gradient(180deg, var(--board-hi) 0 2px, transparent 2px),
@@ -1209,6 +1225,8 @@ body{
     rgba(28,22,14,0) 0, rgba(28,22,14,.45) 18%, rgba(28,22,14,.45) 82%, rgba(28,22,14,0) 100%);
 }
 
+/* a leaf scrolls only when the record is genuinely longer than the spread it is given */
+:root[data-codex-object="on"] .book .leaf{ overflow-y:auto; overscroll-behavior:contain; }
 
 /* ── APPENDIX, written by map/gen_codex_route.py and by nothing else ────────────────────────
    The proto is a page whose <body> IS the library. A published route is a page with a header
