@@ -320,7 +320,19 @@ def check():
         try: blob=json.dumps(json.load(open(f)),ensure_ascii=False)
         except Exception: continue
         for name,what in TIER_TRAPS:
-            for m in re.finditer(re.escape(name),blob):
+            # WORD BOUNDARIES, OR `Fostered by Thingol` IS A CITATION TO ROBERT FOSTER.
+            # Measured 19 Aug 2026 when site/arda_apparatus.json first tripped this: 6 occurrences
+            # of the string `Foster`, 2 of them near a [C] tag, and BOTH were the English verb --
+            # `Fostered by Annael the Grey-elf (UT)` and `Fostered by Thingol`, notes copied
+            # verbatim out of arda_genealogy.json about Tuor and Turin. Not one whole-word Foster
+            # in that file sits near a canon tag; the one real mention is the source register's
+            # own attribution line, `Robert Foster (1971; rev. 1978)`, which carries [EXT].
+            # THE THREE STANDING WARNINGS ARE UNAFFECTED AND WERE CHECKED BEFORE THIS LANDED --
+            # arda_gazetteer, arda_mapchrono and arda_realms each trip on a WHOLE WORD, `Foster
+            # (tier 3) gives ...`, so this narrows the trap without lowering it.
+            # AND IT IS THIS FILE'S OWN HOUSE RULE: *a string match is not a citation*, which
+            # `rule1_check` learned when its bookless `UT` matched every `out` and `south`.
+            for m in re.finditer(r"\b%s\b"%re.escape(name),blob):
                 seg=blob[max(0,m.start()-160):m.start()+160]
                 # naming a lower-tier source in order to REJECT it is a disclosure,
                 # not a citation. Those read "previously followed Foster [t3]".

@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Uncial+Antiqua&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap");
 
+/* ── THE LATIN FACE, and it is ONE TOKEN so it costs one line to change ──────────────────────
+   The owner looked at 15px EB Garamond on this page and said it read as "just Times New Roman.
+   Boring", and asked for Aniron across the whole archive wherever Latin is set. Aniron is Pete
+   Klassen's 2004 retracing of the LOTR film-credits face, and its own readme says it was drawn
+   to work "for headers as well as for paragraph text".
+
+   THE LICENCE IS RECORDED IN fonts/Aniron-LICENCE.txt AND IS NOT SETTLED. Font directories call
+   it personal-use-only; the owner has ruled to use it now and obtain a licence before publishing,
+   having been told plainly that the GitHub Pages site is already reachable. Converted to WOFF2
+   with NO SUBSETTING -- 278 glyphs in, 278 out -- because subsetting is modification.
+
+   IT CARRIES THE PRECOMPOSED ACCENTS (é ë í ú ä) AND NO COMBINING MARKS (U+0300-0308). Measured
+   before shipping: of 623 published pages exactly 18 contain a combining mark and all but one are
+   inside a JavaScript regex rather than display text -- the pages are generated NFC even though
+   the corpus is mixed-normalisation. The fallback stack catches the remainder. */
+@font-face{ font-family:"Aniron"; src:url("fonts/Aniron-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Aniron"; src:url("fonts/Aniron-Bold.woff2") format("woff2");
+  font-weight:700; font-style:normal; font-display:swap; }
+:root{ --face-latin:"Aniron","EB Garamond",Georgia,serif; }
+
 /* ═══════════════════════════════════════════════════════════════════════════════════════════
    THE CODEX, AS AN OBJECT. Prototype, 19 August 2026.
 
@@ -863,7 +884,7 @@ body{
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf p,
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf li,
 :root[data-codex-object="on"][data-hand="authentic"] .book .card p{
-  font-family:'EB Garamond',Georgia,serif !important;
+  font-family:var(--face-latin) !important;
   font-size:15px !important; line-height:21px !important; letter-spacing:0 !important; }
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.q{ font-style:italic !important; }
 /* THE FURNITURE: volume tab, spread kind, folio. Cinzel small-caps, as the prototype has them. */
@@ -883,7 +904,7 @@ body{
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf .fn,
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf .marg,
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf .styles{
-  font-family:'EB Garamond',Georgia,serif !important;
+  font-family:var(--face-latin) !important;
   font-size:11.6px !important; line-height:1.45 !important; }
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf .styles{ font-size:13px !important; font-style:italic !important; }
 
