@@ -297,6 +297,13 @@ body{
   .tabs{ display:none; }
   .clasp{ display:none; }
 }
+
+/* nav.js IS DELIBERATELY NOT LOADED HERE. compose adds it to every page, but this specimen has no
+   <nav id="ardanav"> for it to fill -- nav.js:38 returns at once, so it would download and draw
+   nothing, and nav_check catches exactly that waste. The prototype's navigation IS its thumb tabs:
+   that is the whole proposition being tested. If compose re-adds the tag on a later run, remove it
+   again rather than adding an empty #ardanav, which would put two navigations on one page -- the
+   fault CODEX-STAGE-7 spent a day removing. */
 </style>
 <link rel="stylesheet" href="arda.css"></head>
 <body>
@@ -378,4 +385,4 @@ body{
 </div>
 
 <script src="glossary.js" defer></script>
-<script src="nav.js"></script></body></html>
+</body></html>
