@@ -52,7 +52,12 @@ body{
     repeating-linear-gradient(94deg, rgba(255,255,255,.012) 0 2px, transparent 2px 7px),
     linear-gradient(160deg, var(--ground) 0%, var(--ground-2) 100%);
   font:16px/1.6 'EB Garamond','Iowan Old Style',Georgia,serif; color:var(--ink);
-  display:flex; align-items:center; justify-content:center; padding:34px 18px;
+  /* FOUR SPREADS NOW STACK. This was `display:flex` with the default row direction, written
+     when there was one book; with four it laid them side by side and pushed three off the
+     screen -- document scrollWidth 2406 against a 1500 viewport, and the archive forbids a
+     horizontal scroll on any route. */
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+  gap:56px; padding:34px 18px 64px;
 }
 
 /* ── THE BOOK ────────────────────────────────────────────────────────────────────────────────
@@ -304,85 +309,250 @@ body{
    that is the whole proposition being tested. If compose re-adds the tag on a later run, remove it
    again rather than adding an empty #ardanav, which would put two navigations on one page -- the
    fault CODEX-STAGE-7 spent a day removing. */
+
+/* ── THE FOUR SPREAD TYPES ───────────────────────────────────────────────────────────────────
+   The owner ruled on 19 Aug that every route becomes a spread, and asked what I recommend for
+   the shape of them. This is the answer, and it comes from his own reference: book3.jpg puts a
+   MAP on the left leaf and a LIST on the right. The book never stops being a book; the LEAVES
+   change what they carry. So one object, four grammars, set by data-spread on .book:
+
+     ledger   a record hall -- 2x2 record cards across the spread, as book4.jpeg lays them out
+     dossier  one entity -- the portrait and arms on the left leaf, the record on the right
+     plate    a map or drawn sheet -- the image fills the left leaf, its apparatus on the right
+     codex    running prose -- two columns across the fold, as a real book sets text
+
+   A reference page then never has to pretend to be a chapter, which is the failure the previous
+   one-size layout produced. */
+
+/* LEDGER: records two-up per leaf, four across the spread */
+.book[data-spread="ledger"] .cards{ display:grid; grid-template-columns:1fr; gap:14px; }
+@media (min-width:1000px){
+  .book[data-spread="ledger"] .cards{ grid-template-columns:1fr; }
+}
+
+/* DOSSIER: the left leaf becomes a standing figure -- portrait, arms, styles */
+.book[data-spread="dossier"] .leaf.l{ display:flex; flex-direction:column; align-items:center;
+  justify-content:flex-start; gap:14px; padding-top:38px; }
+.portrait{ width:min(230px,58%); aspect-ratio:3/4; border-radius:2px;
+  background:
+    radial-gradient(60% 45% at 50% 30%, rgba(255,246,222,.55), transparent 62%),
+    linear-gradient(168deg,#cbb68c,#a98a5c 58%,#7d6237);
+  box-shadow:inset 0 0 0 1px var(--rule), inset 0 0 26px rgba(60,40,12,.35),
+             0 3px 9px rgba(50,32,10,.30);
+  position:relative; }
+.portrait::after{ content:"the archive holds no likeness"; position:absolute; inset:auto 8px 10px;
+  text-align:center; font:italic 11.5px 'EB Garamond',Georgia,serif; color:#5c4520; opacity:.85; }
+.arms{ width:82px; height:96px; clip-path:polygon(0 0,100% 0,100% 62%,50% 100%,0 62%);
+  background:linear-gradient(160deg,#2f4a5e,#1a2b38); position:relative;
+  box-shadow:0 2px 6px rgba(0,0,0,.35); }
+.arms::after{ content:"✦"; position:absolute; inset:0; display:grid; place-items:center;
+  color:#e8cf94; font-size:26px; }
+.styles{ text-align:center; font:italic 14px 'EB Garamond',Georgia,serif; color:var(--ink-soft);
+  max-width:34ch; }
+
+/* PLATE: the drawn sheet fills the left leaf, its apparatus reads on the right */
+.book[data-spread="plate"] .leaf.l{ padding:26px; display:flex; }
+.sheet{ flex:1; position:relative; border:1px solid var(--rule); border-radius:2px;
+  background:
+    repeating-linear-gradient(31deg, rgba(120,92,44,.10) 0 1px, transparent 1px 13px),
+    repeating-linear-gradient(-24deg, rgba(120,92,44,.07) 0 1px, transparent 1px 19px),
+    radial-gradient(58% 44% at 40% 38%, rgba(150,120,66,.20), transparent 66%),
+    linear-gradient(170deg,#eadfc0,#ddcda6);
+  box-shadow:inset 0 0 30px rgba(90,64,22,.22); }
+.sheet .pin{ position:absolute; width:7px; height:7px; border-radius:50%; background:var(--rubric);
+  box-shadow:0 0 0 3px rgba(143,47,28,.20); }
+.sheet .nm{ position:absolute; font:italic 12px 'EB Garamond',Georgia,serif; color:#5f4622;
+  white-space:nowrap; transform:translate(10px,-7px); }
+.sheet .rose{ position:absolute; right:14px; bottom:14px; width:54px; height:54px; opacity:.6;
+  background:
+    conic-gradient(from 0deg, transparent 0 43deg, var(--rule) 44deg 46deg, transparent 47deg 133deg,
+      var(--rule) 134deg 136deg, transparent 137deg 223deg, var(--rule) 224deg 226deg,
+      transparent 227deg 313deg, var(--rule) 314deg 316deg, transparent 317deg);
+  border:1px solid var(--rule); border-radius:50%; }
+
+/* CODEX: running prose set in two columns across the fold */
+.book[data-spread="codex"] .leaf{ column-count:2; column-gap:26px; column-rule:1px solid var(--rule-soft); }
+.book[data-spread="codex"] .rubric{ column-span:all; }
+.book[data-spread="codex"] .lede{ column-span:all; }
+.book[data-spread="codex"] p{ margin:0 0 .8em; text-align:justify; hyphens:auto; }
+.book[data-spread="codex"] .drop::first-letter{ float:left; font:700 3.1em/0.82 Cinzel,Georgia,serif;
+  color:var(--rubric); padding:2px 8px 0 0; }
+@media (max-width:1000px){ .book[data-spread="codex"] .leaf{ column-count:1; } }
+
+/* the spread-type label, so the specimen says what it is demonstrating */
+.kind{ position:absolute; top:-13px; left:26px; z-index:6; padding:5px 13px 6px; border-radius:2px;
+  background:linear-gradient(180deg,#6d4b28,#31200e);
+  box-shadow:inset 0 0 0 1px var(--silver-deep), 0 3px 6px rgba(0,0,0,.5);
+  font:600 10px/1 Cinzel,Georgia,serif; letter-spacing:.2em; color:var(--silver); }
+
 </style>
 <link rel="stylesheet" href="arda.css"></head>
 <body>
-
 <a class="a-skip" href="#leaf-1">Skip to the leaf</a>
 
-<div class="book">
+<!-- ═══ 1. LEDGER — a record hall ═══════════════════════════════════════════════════════ -->
+<div class="book" data-spread="ledger">
+  <div class="kind">Ledger</div>
   <div class="plaque">The Arda Archive <i>·</i> Volume III <i>·</i> The Ainur</div>
-
   <nav class="tabs" aria-label="Volumes">
-    <a class="tab" href="#" aria-current="page">Peoples</a>
-    <a class="tab" href="#">Realms</a>
-    <a class="tab" href="#">Relics</a>
-    <a class="tab" href="#">Tongues</a>
+    <a class="tab" href="#" aria-current="page">Peoples</a><a class="tab" href="#">Realms</a>
+    <a class="tab" href="#">Relics</a><a class="tab" href="#">Tongues</a>
   </nav>
-
   <div class="spread">
     <div class="gutter" aria-hidden="true"></div>
-
     <section class="leaf l" id="leaf-1" tabindex="-1">
       <h2 class="rubric">The Aratar</h2>
       <p class="lede">Eight are held in chief reverence, and one, mightiest in his beginning,
         unmade himself.</p>
-
       <div class="cards">
-        <article class="card">
-          <span class="no"><span>I</span></span>
+        <article class="card"><span class="no"><span>I</span></span>
           <h3>Manwë <em>Súlimo</em></h3>
           <p>Lord of the Breath of Arda, the Elder King. The winds, the clouds and all the regions
             of the air; appointed King of Arda under Eru.</p>
           <div class="sub">The text</div>
           <p class="q">“Súlimo he is surnamed, Lord of the Breath of Arda.”</p>
-          <p class="cite">Silm, Valaquenta · <span class="mark">[C]</span> located at
-            t1_a_the_silmarillion.txt:2228</p>
-        </article>
-
-        <article class="card struck">
-          <span class="no"><span>—</span></span>
+          <p class="cite">Silm, Valaquenta · <span class="mark">[C]</span> t1_a:2228</p></article>
+        <article class="card struck"><span class="no"><span>—</span></span>
           <h3>Mairon, of the Maiar</h3>
-          <p>Listed here as an alternate name of Sauron on the reading that the corpus does not
-            attest it.</p>
+          <p>Listed as an alternate name of Sauron on the reading that the corpus does not attest it.</p>
           <div class="sub">The text</div>
-          <p class="cite">Withdrawn 6 Aug 2026: it appears four times in PE 17, legibly, and
-            carries no diacritic.</p>
-          <span class="why">superseded</span>
-        </article>
+          <p class="cite">Withdrawn 6 Aug 2026: it appears four times in PE 17, legibly, carrying no
+            diacritic.</p><span class="why">superseded</span></article>
       </div>
     </section>
-
     <section class="leaf r">
       <h2 class="rubric">Where the texts disagree</h2>
       <p class="lede">They are shown disagreeing. The archive does not choose for you.</p>
-
       <div class="cards">
-        <article class="card">
-          <span class="no"><span>II</span></span>
+        <article class="card"><span class="no"><span>II</span></span>
           <h3>Melian &mdash; whose people?</h3>
           <p><strong>The Valaquenta</strong> sets her among the people of Vána and Estë.
             <strong>The Annals</strong> put her among Yavanna's.</p>
           <div class="sub">The archive's reading</div>
           <p class="cite">Neither is preferred. Both are printed, and the disagreement is the
-            finding. <span class="mark">[C]</span> on both witnesses.</p>
-        </article>
-
-        <article class="card silence">
-          <span class="no"><span>?</span></span>
+            finding. <span class="mark">[C]</span> on both witnesses.</p></article>
+        <article class="card silence"><span class="no"><span>?</span></span>
           <h3>The two Blue Wizards</h3>
           <p>Four incompatible accounts, and no verdict is given here.</p>
           <div class="lines" aria-hidden="true"></div>
           <p class="note">Ruled space, left blank. The corpus is silent on which account stands,
-            and the archive says so exactly rather than filling it with something reasonable.</p>
-        </article>
+            and the archive says so exactly.</p></article>
       </div>
     </section>
   </div>
-
   <div class="clasp" role="presentation"></div>
   <div class="folio">Leaf I of VII</div>
 </div>
 
-<script src="glossary.js" defer></script>
+<!-- ═══ 2. DOSSIER — one entity ═════════════════════════════════════════════════════════ -->
+<div class="book" data-spread="dossier">
+  <div class="kind">Dossier</div>
+  <div class="plaque">The Arda Archive <i>·</i> Volume III <i>·</i> Records of Persons</div>
+  <div class="spread">
+    <div class="gutter" aria-hidden="true"></div>
+    <section class="leaf l">
+      <div class="portrait" role="img" aria-label="No likeness of Fingolfin is held"></div>
+      <div class="arms" role="img" aria-label="Arms of Fingolfin"></div>
+      <p class="styles">High King of the Noldor in Middle-earth<br>the second son of Finwë</p>
+    </section>
+    <section class="leaf r">
+      <h2 class="rubric">Fingolfin</h2>
+      <div class="cards">
+        <article class="card"><span class="no"><span>1</span></span>
+          <h3>The single combat</h3>
+          <p>He rode alone to the gates of Angband and challenged Morgoth, and smote him seven
+            times, and gave him seven wounds.</p>
+          <div class="sub">The text</div>
+          <p class="q">“…and Morgoth came.”</p>
+          <p class="cite">Silm 18 · <span class="mark">[C]</span> t1_a:9204</p></article>
+        <article class="card"><span class="no"><span>2</span></span>
+          <h3>Of his name</h3>
+          <p>A father-name in Quenya rendered in Sindarin form; the archive prints both and marks
+            which hand gave which.</p>
+          <div class="sub">The archive's reading</div>
+          <p class="cite"><span class="mark">[I-H]</span> the Shibboleth is the witness for the
+            father-name; the Sindarin form is later usage.</p></article>
+      </div>
+    </section>
+  </div>
+  <div class="clasp" role="presentation"></div>
+  <div class="folio">Leaf II of VII</div>
+</div>
+
+<!-- ═══ 3. PLATE — a drawn sheet and its apparatus ═══════════════════════════════════════ -->
+<div class="book" data-spread="plate">
+  <div class="kind">Plate</div>
+  <div class="plaque">The Arda Archive <i>·</i> Volume I <i>·</i> Atlas and Realms</div>
+  <div class="spread">
+    <div class="gutter" aria-hidden="true"></div>
+    <section class="leaf l">
+      <div class="sheet" role="img" aria-label="The archive's drawing of Beleriand">
+        <span class="pin" style="left:31%;top:38%"></span><span class="nm" style="left:31%;top:38%">Hithlum</span>
+        <span class="pin" style="left:52%;top:52%"></span><span class="nm" style="left:52%;top:52%">Doriath</span>
+        <span class="pin" style="left:40%;top:69%"></span><span class="nm" style="left:40%;top:69%">Nargothrond</span>
+        <span class="pin" style="left:66%;top:29%"></span><span class="nm" style="left:66%;top:29%">Himring</span>
+        <span class="rose" aria-hidden="true"></span>
+      </div>
+    </section>
+    <section class="leaf r">
+      <h2 class="rubric">Beleriand, as the archive draws it</h2>
+      <p class="lede">Not his plate. The archive's own measurement of it, and it says so.</p>
+      <div class="cards">
+        <article class="card"><span class="no"><span>✦</span></span>
+          <h3>Whose hand</h3>
+          <p>The linework is measured from Christopher Tolkien's published plate by the archive's
+            own instrument; his LETTERING is not reproduced. Every name here is the archive's.</p>
+          <div class="sub">The ruling</div>
+          <p class="cite">29 July 2026, amended 1 and 4 August: the archive publishes its own
+            measurement, never their image.</p></article>
+        <article class="card"><span class="no"><span>4</span></span>
+          <h3>Four places named on this leaf</h3>
+          <p>Each pin resolves to a gazetteer record with its own citation; a pin the corpus cannot
+            place is not drawn at all.</p>
+          <div class="sub">The archive's reading</div>
+          <p class="cite"><span class="mark">[I-M]</span> on placement, <span class="mark">[C]</span>
+            on every name.</p></article>
+      </div>
+    </section>
+  </div>
+  <div class="clasp" role="presentation"></div>
+  <div class="folio">Leaf III of VII</div>
+</div>
+
+<!-- ═══ 4. CODEX — running prose across the fold ═════════════════════════════════════════ -->
+<div class="book" data-spread="codex">
+  <div class="kind">Codex</div>
+  <div class="plaque">The Arda Archive <i>·</i> Volume VI <i>·</i> Lore and First Principles</div>
+  <div class="spread">
+    <div class="gutter" aria-hidden="true"></div>
+    <section class="leaf l">
+      <h2 class="rubric">Of the silences</h2>
+      <p class="lede">Where the corpus is silent, the archive says so exactly.</p>
+      <p class="drop">An archive that hides its gaps cannot be checked, and an unfalsifiable archive
+        is a story. So the blank space on these leaves is ruled rather than filled, and every
+        silence carries the name of whatever looked for the thing and did not find it.</p>
+      <p>A silence may only be asserted by something that looked. That rule was written after a
+        fall-through branch in a generator published two hundred and eight claims that the corpus
+        did not say what contained a place — a sentence about Tolkien reached by not matching three
+        tests about the data.</p>
+      <p>It widened within the hour: a hand may not assert a silence it did not search either. A
+        fall-through has a shape and can be swept for. A sentence typed by a careful reader has no
+        shape at all, and looks exactly like a measured silence.</p>
+    </section>
+    <section class="leaf r">
+      <p>The cost of not looking is not only a false claim. It is a citation the archive owned and
+        could not see. Of four false silences found in one week, one <em>upgraded</em> a claim: the
+        placing of Taniquetil, recorded as an inference about where the Vanyar dwelt, is stated
+        outright in the Silmarillion twice.</p>
+      <p>So a silence audit is not only a hunt for overclaiming. It recovers evidence.</p>
+      <div class="sub">The rule as it stands</div>
+      <p class="cite">Never write that the corpus does not say X without having asked
+        <em>ardatext</em> for X — and without asking whether a neighbouring record already says it.
+        <span class="mark">[C]</span></p>
+    </section>
+  </div>
+  <div class="clasp" role="presentation"></div>
+  <div class="folio">Leaf VI of VII</div>
+</div>
+
 </body></html>
