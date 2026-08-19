@@ -1,5 +1,5 @@
 {
- "what": "Which entity routes carry an illustration, and therefore -- under the owner's ruling of 19 August 2026 -- which earn a whole two-page spread in the codex rather than an entry in a register spread. His words: \"a whole spread is earned by having an illustration.\"",
+ "what": "Which entity routes carry an illustration, and therefore -- under the owner's ruling of 19 August 2026 -- which earn a whole two-page spread in the codex rather than an entry in a register spread. He ruled that a spread is EARNED by having an illustration; his words are in DECISIONS.md, where nothing tries to verify them against the corpus.",
  "reading": "This file is a BINDING and nothing else: entity id -> the plate file(s) that illustrate it. IT DOES NOT CARRY PROVENANCE. Hand, licence and subject live in arda_assets.json, which owns them, and are read from there. The first version of this file COPIED them in -- 370 KB, and a second place for a fact to go stale. A dataset every codex route fetches must carry only what those routes need.",
  "expected_to_change": "He also ruled that empty space is FILLED with art that fits, so this register GROWS. Every plate found promotes a route from a register entry to a spread of its own. Nothing should cache its contents.",
  "measured": {
