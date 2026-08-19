@@ -734,6 +734,17 @@ body{
 
 :root[data-codex-object="on"] .book .leaf{ padding:18px 20px 26px; }
 
+:root[data-codex-object="on"] .book .leaf .marg:has(.marg-q[open]){ z-index:50; }
+
+:root[data-codex-object="on"] .book{ --gutter-w:30px; --gutter-reserve:calc(var(--gutter-w) / 2 + 16px); }
+:root[data-codex-object="on"] .book .gutter{ width:var(--gutter-w); }
+:root[data-codex-object="on"] .book .leaf.l{ padding-right:var(--gutter-reserve); }
+:root[data-codex-object="on"] .book .leaf.r{ padding-left:var(--gutter-reserve); }
+@media (max-width:1000px){
+  :root[data-codex-object="on"] .book .leaf.l{ padding-right:20px; }
+  :root[data-codex-object="on"] .book .leaf.r{ padding-left:20px; }
+}
+
 :root[data-codex-object="on"] .book .leaf:has(> .rh){ padding-top:calc(var(--rh-top,19px) + 16px); }
 :root[data-codex-object="on"] .book .card{ padding:7px 9px 6px; margin-bottom:7px; }
 :root[data-codex-object="on"] .book .card h3{ font-size:12px; margin-bottom:4px; }

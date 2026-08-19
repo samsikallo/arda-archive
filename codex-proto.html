@@ -1260,6 +1260,32 @@ body{
 :root[data-codex-object="on"] .book .leaf{ overflow:visible; }
 /* COMPACTION, not clipping: the leaf's own furniture gives up room before the words do. */
 :root[data-codex-object="on"] .book .leaf{ padding:18px 20px 26px; }
+/* A SIDENOTE'S QUOTATION MUST RISE ABOVE THE FURNITURE, AND `z-index:40` DID NOT BUY IT.
+   The owner, 19 Aug: "when i open any of the sidenotes the panel that pops up isn't placed over
+   everything and thus isn't readable." Measured: `.marg` carries BOTH a `transform` and
+   `z-index:1`, so it CREATES A STACKING CONTEXT AT 1 -- and the blockquote's 40 is scoped inside
+   it and cannot compete with anything outside. 40 looks generous and is worth nothing: the
+   popover was painting under the edge band (z 2), the gutter (z 3) and the clasp (z 6).
+   The number that matters is the one on the CONTEXT, not the one on the element. Raised only
+   while a note is actually open, so a closed margin keeps its place in the leaf's own order.
+   50 clears every piece of the book's furniture and still sits below the site header at 60. */
+:root[data-codex-object="on"] .book .leaf .marg:has(.marg-q[open]){ z-index:50; }
+/* THE GUTTER IS THE BINDING, AND A BOOK KEEPS ITS TEXT OUT OF IT. The owner, 19 Aug: "in the
+   inside parts of the leaves there's a shaded area where the pages separate. As in real books,
+   there shouldn't be texts." Measured by sampling the rendered pixels rather than the CSS: the
+   band that actually reads as shaded is 22px wide (x 782..803 at a 1600px viewport), and the
+   text block cleared it by 9.5px -- not an overlap, but text crowding the binding, which is what
+   he is looking at. The reserve is DERIVED from the gutter's own width so the two cannot drift:
+   half the band, plus a real margin. Reset on the stacked layout, where `.gutter` is display:none
+   and there is no binding to keep clear of. */
+:root[data-codex-object="on"] .book{ --gutter-w:30px; --gutter-reserve:calc(var(--gutter-w) / 2 + 16px); }
+:root[data-codex-object="on"] .book .gutter{ width:var(--gutter-w); }
+:root[data-codex-object="on"] .book .leaf.l{ padding-right:var(--gutter-reserve); }
+:root[data-codex-object="on"] .book .leaf.r{ padding-left:var(--gutter-reserve); }
+@media (max-width:1000px){
+  :root[data-codex-object="on"] .book .leaf.l{ padding-right:20px; }
+  :root[data-codex-object="on"] .book .leaf.r{ padding-left:20px; }
+}
 /* THE HEAD BAND, RESERVED. `.rh` is absolute and reserves no room; the head occupied 0..28.5px
    while text began at 18px, printing the running head across the first line on both leaves.
    `:has(> .rh)` so a leaf without a head gives up nothing; `--rh-top` binds the two numbers.
