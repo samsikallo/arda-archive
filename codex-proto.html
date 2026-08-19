@@ -467,6 +467,36 @@ body{
 
 /* CODEX: running prose set in two columns across the fold */
 .book[data-spread="codex"] .leaf{ column-count:2; column-gap:26px; column-rule:1px solid var(--rule-soft); }
+/* THE PACKED CODEX PUTS ITS COLUMNS ON THE TEXT BLOCK, NOT ON THE LEAF. Measured in a
+   browser 20 Aug: the leaf computed column-count 2 from the rule above AND the .tb inside
+   it computed 2 from .leaf.twocol .tb -- four nested columns, paragraphs 153px wide, about
+   twenty characters to a line. Both rules are right on their own; only together are they
+   wrong. The plain codex spread has no .tb and columns its whole leaf; the PACKED one sets
+   its columns on .tb, so the leaf must stay single. Reading the stylesheet would not have
+   found this -- two correct rules compounding is only visible in the computed value. */
+.book[data-spread="codex"][data-density="high"] .leaf{ column-count:1; }
+/* AND THE PACKED LEAF IS A FLEX COLUMN. The prototype carries this as an inline
+   style="display:flex;flex-direction:column" on both of its packed leaves, and it is
+   load-bearing, not tidying: without it .tb does not take the leaf's free height, the
+   footnote band does not settle at the foot, and every paragraph paints over its
+   neighbour. Measured, not read. It is a RULE here rather than an inline attribute
+   because 622 routes carry two leaves each and an inline copy is ~48 bytes x 1,244. */
+.book[data-spread="codex"][data-density="high"] .leaf{ display:flex; flex-direction:column; }
+.book[data-spread="codex"][data-density="high"] .leaf .tb{ flex:1 1 auto; }
+/* A PLATE SPANS THE COLUMNS; A DEVICE DOES NOT. The prototype's figures are small marginal
+   devices that sit happily inside one 230px column. A route's PLATE is a full drawing, and
+   inside a column it fragmented across the rule and overflowed the leaf edge into the
+   gutter. h2, .lede and .slip already span all columns for the same reason. The marginal
+   device keeps its column, which is what a marginal device is for. */
+.book[data-spread="codex"][data-density="high"] .leaf .tb > .fig{ column-span:all;
+  float:none; margin:0 auto 10px; max-width:min(78%, 320px); }
+.book[data-spread="codex"][data-density="high"] .leaf .tb > .fig.marg-fig{ column-span:none;
+  max-width:none; margin:2px 0 8px; }
+.book[data-spread="codex"][data-density="high"] .leaf .tb > .fig img{ width:100%; height:auto;
+  display:block; }
+
+
+
 .book[data-spread="codex"] .rubric{ column-span:all; }
 .book[data-spread="codex"] .lede{ column-span:all; }
 .book[data-spread="codex"] p{ margin:0 0 .8em; text-align:justify; hyphens:auto; }

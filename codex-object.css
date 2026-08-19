@@ -333,6 +333,19 @@ body{
   border:1px solid var(--rule); border-radius:50%; }
 
 .book[data-spread="codex"] .leaf{ column-count:2; column-gap:26px; column-rule:1px solid var(--rule-soft); }
+
+.book[data-spread="codex"][data-density="high"] .leaf{ column-count:1; }
+
+.book[data-spread="codex"][data-density="high"] .leaf{ display:flex; flex-direction:column; }
+.book[data-spread="codex"][data-density="high"] .leaf .tb{ flex:1 1 auto; }
+
+.book[data-spread="codex"][data-density="high"] .leaf .tb > .fig{ column-span:all;
+  float:none; margin:0 auto 10px; max-width:min(78%, 320px); }
+.book[data-spread="codex"][data-density="high"] .leaf .tb > .fig.marg-fig{ column-span:none;
+  max-width:none; margin:2px 0 8px; }
+.book[data-spread="codex"][data-density="high"] .leaf .tb > .fig img{ width:100%; height:auto;
+  display:block; }
+
 .book[data-spread="codex"] .rubric{ column-span:all; }
 .book[data-spread="codex"] .lede{ column-span:all; }
 .book[data-spread="codex"] p{ margin:0 0 .8em; text-align:justify; hyphens:auto; }
