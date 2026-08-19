@@ -33,6 +33,25 @@
   }
 
   function boot(ix) {
+  /* A VOLUME TAB MUST LAND SOMEWHERE THAT EXISTS. Until 19 Aug all four volume-link sites pointed
+     at index.html#vol-<id>, and index.html carries no such anchor -- not statically (the string
+     "vol-" occurs zero times in it) and not dynamically (no hashchange handler, no id producer
+     anywhere in codex.js, codex_state.js or nav.js). So every thumb tab, every breadcrumb rung,
+     every folio "Up" and every Contents entry dropped the reader at the top of the front door
+     with nothing targeted and no sign anything had been aimed at. Found by an outside review of
+     the published output; confirmed here by counting: 4 link sites, 0 destinations.
+
+     The front door has no volume structure to anchor INTO -- it is 18 hall cards in one flow --
+     so inventing seven anchors would be inventing an information architecture in a href. The
+     honest destination is the volume's OWN FIRST ROUTE, which the shell index already knows. */
+  function volHome(id) {
+    var seq = ix.sequences && ix.sequences[id];
+    if (seq && seq.length) return PRE + seq[0];
+    for (var r in ix.routes) if (ix.routes[r] && ix.routes[r].vol === id) return PRE + r;
+    return PRE + "index.html";           /* a volume with no routes: the front door is honest */
+  }
+
+
     /* FAMILY BEFORE BASENAME. `ix.routes[here]` matched a nested page against a ROOT page of the
        same name: realm/valinor.html took root valinor.html's atlas+full, place/ and realm/
        gondolin.html took "Houses of Gondolin". The basename fallback still serves root pages. */
@@ -85,7 +104,7 @@
          depends on CSS having arrived; when it had not, every tab rendered its full title and the
          row overflowed the viewport by 117px on 14 pages. An accessible name that cannot be
          widened by a missing stylesheet is simply better. */
-      var a = el("a", { href: PRE + "index.html#vol-" + v.id, title: v.title,
+      var a = el("a", { href: volHome(v.id), title: v.title,
                         "aria-label": "Volume " + v.id + " — " + v.title }, v.short);
       if (vol && v.id === vol.id) { a.setAttribute("aria-current", "true"); li.className = "on"; }
       li.appendChild(a); vlist.appendChild(li);
@@ -115,7 +134,7 @@
     ol.appendChild(c1);
     if (vol) {
       var c2 = el("li", null);
-      c2.appendChild(el("a", { href: PRE + "index.html#vol-" + vol.id }, vol.title));
+      c2.appendChild(el("a", { href: volHome(vol.id) }, vol.title));
       ol.appendChild(c2);
     }
     if (meta.part) ol.appendChild(el("li", null, meta.part));
@@ -144,7 +163,7 @@
         fn.appendChild(pa);
       }
       if (vol) {
-        var ua = el("a", { href: PRE + "index.html#vol-" + vol.id, class: "cx-up" });
+        var ua = el("a", { href: volHome(vol.id), class: "cx-up" });
         ua.appendChild(el("span", { class: "cx-dir" }, "Up"));
         ua.appendChild(el("span", { class: "cx-dest" }, vol.title));
         fn.appendChild(ua);
@@ -173,7 +192,7 @@
       var tl = el("ul", null);
       for (i = 0; i < ix.volumes.length; i++) {
         var vv = ix.volumes[i], tli = el("li", null);
-        var ta = el("a", { href: PRE + "index.html#vol-" + vv.id }, vv.title);
+        var ta = el("a", { href: volHome(vv.id) }, vv.title);
         if (vol && vv.id === vol.id) ta.setAttribute("aria-current", "true");
         tli.appendChild(ta);
         tli.appendChild(el("span", { class: "cx-th" }, vv.thesis));
