@@ -23,23 +23,23 @@
    ═══════════════════════════════════════════════════════════════════════════════════════════ */
 
 :root{
-  /* the ground the book lies on -- a dark stone table in a library */
-  --ground:#14161a; --ground-2:#0b0c0f;
-  /* the boards: near-black leather with a blue-grey cast, over wood */
-  --board:#1c2028; --board-hi:#2b313c; --board-lo:#0e1116; --board-edge:#3a4252;
-  /* silver, in three states: raised, flat, shadowed */
-  --silver:#c3c9d4; --silver-hi:#eef1f6; --silver-lo:#6f7787; --silver-deep:#454c59;
-  /* the leaves: fine pale vellum, aged unevenly */
-  --vellum:#efe7d4; --vellum-2:#e5dbc4; --vellum-3:#d8ccb0; --vellum-edge:#c4b696;
+  /* the ground: a dark hall, warm rather than cold, so the book sits IN a place */
+  --ground:#1a1410; --ground-2:#0d0a07;
+  /* the boards: oxblood-brown leather over oak, tooled and worn at the edges */
+  --board:#5a3a1f; --board-hi:#7d5730; --board-lo:#2e1c0d; --board-edge:#8a6134;
+  /* BRASS, in four states -- the owner chose warm metal over silver */
+  --silver:#c9a44c; --silver-hi:#f0d79a; --silver-lo:#9a7434; --silver-deep:#5d4318;
+  /* the leaves: aged tan parchment, unevenly foxed */
+  --vellum:#efe0bd; --vellum-2:#e6d3a9; --vellum-3:#d8c193; --vellum-edge:#bfa571;
   /* the inks */
-  --ink:#241f18; --ink-soft:#4b4237; --rubric:#7d2b20; --rubric-soft:#9c4a3c;
-  --rule:#b9a982; --rule-soft:#d3c6a6;
-  --tab-1:#3f4a5c; --tab-2:#4a3f3a; --tab-3:#3a4a42; --tab-4:#4a4436;
+  --ink:#3a2a16; --ink-soft:#61492a; --rubric:#8f2f1c; --rubric-soft:#b0553c;
+  --rule:#a98a4e; --rule-soft:#c9ae76;
+  --tab-1:#8a3b2a; --tab-2:#7a6222; --tab-3:#3f5a3a; --tab-4:#2f4a5e;
 }
 
 .a-skip{position:absolute;left:-9999px;top:8px;z-index:99;padding:8px 14px;border-radius:3px;
-  background:#161a21;color:#eef1f6;font:600 12px Cinzel,Georgia,serif;letter-spacing:.14em;
-  text-decoration:none;box-shadow:0 0 0 1px #454c59}
+  background:#3a2410;color:#f0d79a;font:600 12px Cinzel,Georgia,serif;letter-spacing:.14em;
+  text-decoration:none;box-shadow:0 0 0 1px #8a6134}
 .a-skip:focus{left:12px}
 *{box-sizing:border-box}
 html,body{height:100%}
@@ -47,8 +47,8 @@ body{
   margin:0; background:var(--ground);
   /* the library: a dark stone ground with a pool of light where the book lies */
   background-image:
-    radial-gradient(120% 90% at 50% 42%, rgba(190,205,235,.10), transparent 62%),
-    radial-gradient(60% 45% at 50% 40%, rgba(255,240,200,.07), transparent 70%),
+    radial-gradient(120% 90% at 50% 42%, rgba(255,214,140,.13), transparent 62%),
+    radial-gradient(60% 45% at 50% 40%, rgba(255,196,110,.09), transparent 70%),
     repeating-linear-gradient(94deg, rgba(255,255,255,.012) 0 2px, transparent 2px 7px),
     linear-gradient(160deg, var(--ground) 0%, var(--ground-2) 100%);
   font:16px/1.6 'EB Garamond','Iowan Old Style',Georgia,serif; color:var(--ink);
@@ -59,7 +59,7 @@ body{
    An object with thickness lying on the ground, not a page filling the viewport. The reference's
    own proportion: it occupies most of the view but the world is visible around and beneath it. */
 .book{
-  position:relative; width:min(1240px, 84vw); aspect-ratio:1.58/1; min-height:520px;
+  position:relative; width:min(1480px, 85vw); aspect-ratio:1.58/1; min-height:520px;
   /* the boards */
   background:
     linear-gradient(180deg, var(--board-hi) 0 2px, transparent 2px),
@@ -69,7 +69,7 @@ body{
   box-shadow:
     inset 0 0 0 1px var(--board-edge),
     inset 0 0 0 6px var(--board-lo),
-    inset 0 0 0 7px rgba(190,200,215,.10),
+    inset 0 0 0 7px rgba(240,206,130,.16),
     inset 0 3px 0 rgba(255,255,255,.09),
     0 2px 0 #0a0c10, 0 4px 0 #14171d, 0 6px 0 #0a0c10, 0 8px 0 #171b22,
     0 26px 48px rgba(0,0,0,.62), 0 6px 14px rgba(0,0,0,.5);
@@ -123,7 +123,7 @@ body{
 .gutter::after{ /* the sewn cord, at intervals -- original geometry, a simple stitch */
   content:""; position:absolute; left:50%; top:8%; bottom:8%; width:3px; transform:translateX(-50%);
   background:repeating-linear-gradient(180deg,
-    rgba(190,200,215,.30) 0 9px, transparent 9px 30px);
+    rgba(240,206,130,.34) 0 9px, transparent 9px 30px);
 }
 
 /* ── FURNITURE MOUNTED ON THE BOARD, not floated on the page ────────────────────────────────── */
@@ -132,7 +132,7 @@ body{
 .plaque{
   position:absolute; top:-13px; left:50%; transform:translateX(-50%); z-index:6;
   padding:7px 30px 8px; border-radius:3px;
-  background:linear-gradient(180deg,#2b313c,#161a21);
+  background:linear-gradient(180deg,#7d5730,#3a2410);
   box-shadow:
     inset 0 0 0 1px var(--silver-deep), inset 0 1px 0 rgba(238,241,246,.32),
     0 3px 7px rgba(0,0,0,.55);
@@ -145,7 +145,7 @@ body{
 .folio{
   position:absolute; bottom:-11px; left:50%; transform:translateX(-50%); z-index:6;
   padding:4px 18px 5px; border-radius:2px;
-  background:linear-gradient(180deg,#262c36,#12161c);
+  background:linear-gradient(180deg,#6d4b28,#31200e);
   box-shadow:inset 0 0 0 1px var(--silver-deep), 0 3px 6px rgba(0,0,0,.5);
   font:600 11px/1 Cinzel,Georgia,serif; letter-spacing:.18em; color:var(--silver);
 }
@@ -156,7 +156,7 @@ body{
   position:relative; margin-left:-40px; width:104px; padding:8px 10px 8px 14px;
   font:600 10.5px/1.1 Cinzel,Georgia,serif; letter-spacing:.12em; text-transform:uppercase;
   color:#d9dee7; text-decoration:none; text-align:left;
-  background:linear-gradient(90deg,#151920 0%, var(--tab-1) 22%, var(--tab-1) 100%);
+  background:linear-gradient(90deg,#241505 0%, var(--tab-1) 22%, var(--tab-1) 100%);
   border-radius:2px 0 0 2px;
   /* the notched fore-end, cut like a ribbon */
   clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%, 9px 50%);
@@ -164,9 +164,9 @@ body{
              -3px 3px 6px rgba(0,0,0,.45);
   transition:margin-left .16s ease, filter .16s ease;
 }
-.tab:nth-child(2){background:linear-gradient(90deg,#151920 0%, var(--tab-2) 22%, var(--tab-2) 100%)}
-.tab:nth-child(3){background:linear-gradient(90deg,#151920 0%, var(--tab-3) 22%, var(--tab-3) 100%)}
-.tab:nth-child(4){background:linear-gradient(90deg,#151920 0%, var(--tab-4) 22%, var(--tab-4) 100%)}
+.tab:nth-child(2){background:linear-gradient(90deg,#241505 0%, var(--tab-2) 22%, var(--tab-2) 100%)}
+.tab:nth-child(3){background:linear-gradient(90deg,#241505 0%, var(--tab-3) 22%, var(--tab-3) 100%)}
+.tab:nth-child(4){background:linear-gradient(90deg,#241505 0%, var(--tab-4) 22%, var(--tab-4) 100%)}
 .tab:hover,.tab:focus-visible{ margin-left:-54px; filter:brightness(1.22); outline:none; }
 .tab[aria-current]{ margin-left:-60px; color:#fff;
   box-shadow:inset 0 1px 0 rgba(255,255,255,.26), inset 0 0 0 1px var(--silver-deep),
@@ -176,15 +176,15 @@ body{
 .clasp{
   position:absolute; right:-13px; top:50%; transform:translateY(-50%); z-index:6;
   width:30px; height:96px; border-radius:3px;
-  background:linear-gradient(180deg,#4e5665,#242a34 42%,#4e5665);
+  background:linear-gradient(180deg,#a57c3c,#4a3416 42%,#a57c3c);
   box-shadow:inset 0 0 0 1px var(--silver-deep), inset 0 1px 0 rgba(238,241,246,.30),
              0 3px 8px rgba(0,0,0,.55);
   display:flex; align-items:center; justify-content:center;
 }
 .clasp::after{ /* the stone */
   content:""; width:13px; height:13px; border-radius:50%;
-  background:radial-gradient(circle at 34% 30%, #d9e4f2, #6d8bb4 46%, #24384f);
-  box-shadow:0 0 0 2px #5c6472, 0 0 8px rgba(140,180,235,.5);
+  background:radial-gradient(circle at 34% 30%, #ffe9b0, #c1892f 46%, #5a3a10);
+  box-shadow:0 0 0 2px #6d4d1e, 0 0 9px rgba(240,200,110,.55);
 }
 
 /* ── WHAT IS ON A LEAF ───────────────────────────────────────────────────────────────────────
@@ -230,7 +230,7 @@ body{
 
 .no{ /* the number badge, top-left, as in the reference's record cards */
   position:absolute; top:-10px; left:12px; width:24px; height:24px; border-radius:2px;
-  transform:rotate(45deg); background:linear-gradient(160deg,#39404d,#1a1e26);
+  transform:rotate(45deg); background:linear-gradient(160deg,#8a6134,#3a2410);
   box-shadow:inset 0 0 0 1px var(--silver-deep), 0 2px 4px rgba(0,0,0,.4);
 }
 .no span{ display:block; transform:rotate(-45deg); line-height:24px; text-align:center;
