@@ -525,7 +525,14 @@ body{
    FOURTEEN pieces sit between 0.96 and 1.42. These hands are set SOLID. The uncial has almost no
    ascenders and a large x-height, so it needs LESS leading than a humanist face at the same size,
    not more; at the humanist pitch it read airy and modern, which is the opposite of the source. */
-:root[data-hand="authentic"] .leaf{ --line:17px; }
+/* AND 17px WAS TUNED FOR A HAND THAT IS NO LONGER THE READING HAND -- the paragraph above says
+   so itself: "the uncial has almost no ascenders and a large x-height, so it needs LESS leading
+   than a humanist face at the same size". Ruling C9, 19 Aug, settled that the uncial is the
+   DISPLAY hand and EB Garamond carries the reading, and Garamond is precisely the humanist face
+   that sentence excludes. Set at 14/17 it was 1.21 and read cramped; the owner said so looking at
+   this page. 21px restores the leaf's own measured pitch and the type now sits ON the ruling
+   rather than between two of them, which is the whole point of ruling a page. */
+:root[data-hand="authentic"] .leaf{ --line:21px; }
 /* AND JUSTIFICATION IS DROPPED FOR THIS HAND. A justified uncial in a narrow column opens rivers
    of white, because the uncial is WIDE and few words reach a line. A medieval scribe closed those
    with abbreviations and line-fillers, which we do not have; ragged-right is the honest substitute
@@ -857,7 +864,7 @@ body{
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf li,
 :root[data-codex-object="on"][data-hand="authentic"] .book .card p{
   font-family:'EB Garamond',Georgia,serif !important;
-  font-size:14px !important; line-height:18px !important; letter-spacing:0 !important; }
+  font-size:15px !important; line-height:21px !important; letter-spacing:0 !important; }
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.q{ font-style:italic !important; }
 /* THE FURNITURE: volume tab, spread kind, folio. Cinzel small-caps, as the prototype has them. */
 :root[data-codex-object="on"][data-hand="authentic"] .book .kind,
