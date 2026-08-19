@@ -936,3 +936,27 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
 :root[data-codex="on"][data-hand="authentic"] .book .leaf .marg{
   font-family:'EB Garamond',Georgia,serif !important; font-size:11.4px !important;
   line-height:1.45 !important; }
+
+/* ⚠ THE LOMBARDIC VERSAL IS NOT SHIPPED, AND THIS IS WHY — second attempt, also failed.
+   `salt` 2 IS the right feature: read out of Junicode's own GSUB before building anything,
+   capital A maps to ['A.rustic','A.lombardic'], so alternate 2 is the Lombardic versal, and 22
+   capitals carry the pair. THE FONT WAS BUILT CORRECTLY TOO — subset from the VARIABLE font with
+   `salt` retained and the 56 `.lombardic` glyphs named EXPLICITLY, because the subsetter's layout
+   closure does not reach a discretionary feature's alternates on its own (the first build kept
+   GSUB and zero lombardic glyphs, which is the trap). 35.5 KB, glyph names retained so the result
+   could be checked rather than assumed.
+
+   AND THE SUBSTITUTION STILL DOES NOT FIRE. Measured three ways in Chromium, all negative:
+     DOM span width   108.33px with `salt` 0 and 108.33px with `salt` 2
+     bounding height  identical
+     canvas toDataURL BYTE-IDENTICAL between the two renderings
+   Metrics alone would be weak evidence — a Lombardic A can share an advance width — but identical
+   PIXELS are not weak. Something between the subset's GSUB and the shaper is not connecting, and
+   finding it needs a full context window rather than a fourth attempt at the end of one.
+
+   NOTHING IS SHIPPED FOR IT. No @font-face, no font-feature-settings, no 35 KB of dead weight on
+   622 routes. The versal renders in Junicode's ordinary capitals, which is what it has always
+   actually been. THE FIRST ATTEMPT'S FAULT IS STILL THE MORE INSTRUCTIVE ONE: it pinned ENLA,
+   which is "enlarged MINUSCULES" and touches lowercase only, then instanced the font and dropped
+   GSUB — a no-op twice over that loaded, rendered, and passed every check I ran, because none of
+   them asked whether the axis had DONE anything. */
