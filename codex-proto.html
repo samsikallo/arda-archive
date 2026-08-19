@@ -582,7 +582,7 @@ body{
    that sentence excludes. Set at 14/17 it was 1.21 and read cramped; the owner said so looking at
    this page. 21px restores the leaf's own measured pitch and the type now sits ON the ruling
    rather than between two of them, which is the whole point of ruling a page. */
-:root[data-hand="authentic"] .leaf{ --line:17px; }
+:root[data-hand="authentic"] .leaf{ --line:15px; }
 /* AND JUSTIFICATION IS DROPPED FOR THIS HAND. A justified uncial in a narrow column opens rivers
    of white, because the uncial is WIDE and few words reach a line. A medieval scribe closed those
    with abbreviations and line-fillers, which we do not have; ragged-right is the honest substitute
@@ -907,14 +907,14 @@ body{
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.lede,
 :root[data-codex-object="on"][data-hand="authentic"] .book .lede{
   font-family:'Uncial Antiqua','EB Garamond',Georgia,serif !important; font-style:italic !important;
-  font-size:13.3px !important; line-height:20px !important; }
+  font-size:12.2px !important; line-height:17px !important; }
 /* THE READING HAND. Everything a reader actually reads through, at the smaller and denser
    measure the owner asked for on 19 Aug: 14px on an 18px rule, against the prototype's 16/25.6. */
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf p,
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf li,
 :root[data-codex-object="on"][data-hand="authentic"] .book .card p{
   font-family:var(--face-latin) !important;
-  font-size:12.4px !important; line-height:17px !important; letter-spacing:0 !important; }
+  font-size:11.4px !important; line-height:15px !important; letter-spacing:0 !important; }
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.q{ font-style:italic !important; }
 /* THE FURNITURE: volume tab, spread kind, folio. Cinzel small-caps, as the prototype has them. */
 :root[data-codex-object="on"][data-hand="authentic"] .book .kind,
@@ -934,7 +934,7 @@ body{
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf .marg,
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf .styles{
   font-family:var(--face-latin) !important;
-  font-size:11.6px !important; line-height:1.45 !important; }
+  font-size:10.6px !important; line-height:1.4 !important; }
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf .styles{ font-size:13px !important; font-style:italic !important; }
 
 /* C12 — THE GENERATED-PLATE NOTICE GOES TO THE OUTER MARGIN. The owner's ruling of 19 August,
@@ -1019,16 +1019,24 @@ body{
    THREE VOICES, THREE FACES, and that is the point rather than the decoration: the SCRIBE sets
    the record (Aniron), the ARCHIVE speaks in the apparatus, and the ANNOTATOR writes in the
    margin. A reader should be able to tell who is talking without being told. */
-:root[data-codex-object="on"] .book .marg,
-:root[data-codex-object="on"] .book .note,
-:root[data-codex-object="on"] .book .fn,
-:root[data-codex-object="on"] .book .catch,
-:root[data-codex-object="on"] .book .why,
-:root[data-codex-object="on"] .book .leaf .portrait ~ p.cite{
+/* THE ANNOTATOR'S RULES MUST OUT-SPECIFY THE APPARATUS RULES, and the first version did not.
+   `…[data-hand] .book .leaf .marg` is (0,5,2) and my `…[data-codex-object] .book .marg` was
+   (0,4,1), so every margin note went on being set in the scribe's face. THIRD TIME a specificity
+   comparison has silently reversed an intended rule in this file — and the third time it was
+   caught by MEASURING the rendered page rather than by reading the stylesheet. Every selector
+   here now names `.leaf` and the element, exactly as the apparatus ones do. */
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .marg,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.note,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .fn,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .catch,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .why,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .portrait ~ p.cite,
+:root[data-codex-object="on"][data-hand="authentic"] .book .card .marg,
+:root[data-codex-object="on"][data-hand="authentic"] .book .card p.note{
   font-family:var(--face-hand) !important; font-style:normal !important;
-  letter-spacing:.004em; }
-:root[data-codex-object="on"] .book .marg{ font-size:11.2px !important; line-height:1.42 !important; }
-:root[data-codex-object="on"] .book .note{ font-size:11.6px !important; }
+  letter-spacing:.004em !important; }
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .marg{ font-size:10.6px !important; line-height:1.4 !important; }
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.note,:root[data-codex-object="on"][data-hand="authentic"] .book .card p.note{ font-size:11px !important; }
 
 /* ═══════════════════════════════════════════════════════════════════════════════════════════════
    THE EDGE SCRIPTS — real cirth and real tengwar down the outer edge of every leaf.
