@@ -531,22 +531,24 @@ body{
    with abbreviations and line-fillers, which we do not have; ragged-right is the honest substitute
    and costs nothing the sources actually show. */
 :root[data-hand="authentic"] .leaf.twocol .tb p{ text-align:left; hyphens:auto; }
-/* THE VERSAL IS A REAL MEDIEVAL LETTER NOW, AND IT IS LIVE TEXT RATHER THAN A PICTURE.
-   Junicode 2.226 carries an ENLARGE axis (ENLA, 0-100) built for exactly this: the capitals grow
-   into versals with the weight and the terminals a scribe drew, and at ENLA=100 they ARE versals.
-   Peter S. Baker, OFL-1.1, read from the OFL.txt inside his own release rather than from a
-   summary of it -- the licence file ships beside the font.
+/* THE VERSAL IS A REAL MEDIEVAL LETTER, AND IT IS LIVE TEXT RATHER THAN A PICTURE.
+   Junicode 2.226 by Peter S. Baker, OFL-1.1, read from the OFL.txt inside his own release rather
+   than from a summary of it -- the licence file ships beside the font.
 
-   1,141 KB OF VARIABLE FONT REDUCED TO 3.8 KB. The axis is pinned at 100, weight and width at
-   book values, 5,936 glyphs this will never set are dropped, and every layout table a versal does
-   not need goes with them. A drawn initial would be an image with a caption and a licence; this
-   is a letter -- selectable, searchable, scalable, and it inherits the leaf's ink. */
+   THE LETTERFORM COMES FROM `salt` 2, NOT FROM AN AXIS. This paragraph used to claim the ENLA
+   axis gave versals at 100; it does not, and the full account of both failures is at the foot of
+   this file. What ships is a 33.7 KB subset carrying Junicode's Lombardic AND Rustic capitals
+   with the `salt` feature intact and its alternate INDEX unchanged, so `"salt" 2` addresses the
+   Lombardic here exactly as it does in the 1,141 KB original.
+   A drawn initial would be an image with a caption and a licence; this is a letter -- selectable,
+   searchable, scalable, and it inherits the leaf's ink. */
 @font-face{ font-family:"Junicode Versal"; src:url("fonts/junicode-versal.woff2") format("woff2");
   font-weight:400; font-style:normal; font-display:swap;
   unicode-range:U+0041-005A,U+00C0-00DE,U+0152,U+00C6; }
-.versal{ font-family:"Junicode Versal",Cinzel,Georgia,serif; }
+.versal{ font-family:"Junicode Versal",Cinzel,Georgia,serif;
+  font-feature-settings:"salt" 2; }                 /* 2 = Lombardic, 1 = Rustic, 0 = plain */
 :root[data-hand="authentic"] .versal{ font-family:"Junicode Versal",UnifrakturMaguntia,Cinzel,serif;
-  font-size:3.6em; line-height:.8; }
+  font-size:3.6em; line-height:.8; font-feature-settings:"salt" 2; }
 /* the apparatus stays humanist ON PURPOSE -- it is the archive speaking, not the scribe */
 :root[data-hand="authentic"] .fn,
 :root[data-hand="authentic"] .marg,
@@ -632,7 +634,10 @@ body{
    pl_namarie #470871, andries_aiamaria #3d5991, pl_anga #112972 -- every one lapis or violet,
    and not one red. Red is what the RUBRIC is for. Alternating them is what makes a book read
    as illuminated rather than as a legal instrument. */
+/* the `font:` SHORTHAND here resets font-family to Cinzel and would undo the Lombardic, so the
+   family is restated after it rather than before -- shorthand-then-longhand, in that order. */
 .versal{ float:left; font:700 3.4em/0.78 Cinzel,Georgia,serif; color:var(--lapis);
+  font-family:"Junicode Versal",Cinzel,Georgia,serif; font-feature-settings:"salt" 2;
   padding:3px 9px 0 0; text-shadow:0 1px 0 rgba(255,255,255,.55); }
 .leaf.r .versal,.leaf:nth-of-type(2n) .versal{ color:var(--rubric); }   /* they alternate */
 
@@ -820,6 +825,27 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
   position:relative !important; margin-left:-74px !important; width:104px !important;
   float:none !important; display:block !important; }
 
+/* 3 · AND THE MULTIPLY WAS TRAPPED. The fix below is right and did nothing for eight days, because
+   `.portrait` carries `z-index:1` with `position:relative` and that CREATES A STACKING CONTEXT. A
+   `mix-blend-mode` cannot blend with anything outside its own stacking context, so the busts were
+   multiplying against an empty transparent group instead of against the vellum, and rendered as
+   the plain white rectangles they are. Measured off the rendered PNG, not off the stylesheet:
+   portrait ground rgb(255,255,255), leaf beside it rgb(250,244,216). Declared, computed, applied,
+   and inert -- the same shape as the ENLA axis and the pinned `data-codex` switch.
+   `z-index:auto` restores it to the leaf's own painting order, which is where a plate laid on a
+   page belongs anyway; the ruling lines it was lifted above are drawn on `.leaf::before`, behind
+   the content, so nothing needed lifting. */
+:root[data-codex-object="on"] .book .portrait{ z-index:auto; }
+
+/* AND THEY MUST GO ON A PHONE. `.tabs{display:none}` is already declared in the 1000px block at
+   (0,1,0); the scoped rule above is (0,3,1) with !important and silently beat it, so the fore-edge
+   tabs ran off the left edge of a 430px screen with their labels cut in half -- "S AND RMS", "GUES".
+   A media query adds no specificity, which is the part that catches people. Seen in the first phone
+   screenshot of the switched-on object; the top nav carries the same destinations there. */
+@media (max-width:1000px){
+  :root[data-codex-object="on"] .book > .tabs{ display:none !important; }
+}
+
 /* 2 · THE PORTRAIT WAS A WHITE RECTANGLE ON THE VELLUM. Measured: the 429 busts sit at
       a* 0.0 / b* 0.0, L* 99.4 -- pure white, and the ENTIRE 20.8 dE gap to the leaf is the
       missing yellow. `multiply` lets the vellum through the white and leaves the drawn ink
@@ -959,7 +985,32 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
 :root[data-codex-object="on"] main.card .go:hover{ opacity:1; }
 :root[data-codex-object="on"] main.card .cite{
   font:italic 11.5px/1.5 'EB Garamond',Georgia,serif; opacity:.6; }
-:root[data-codex-object="on"] .book .versal{ font-family:"Junicode Versal",Cinzel,Georgia,serif !important; }
+/* C12 — THE GENERATED-PLATE NOTICE GOES TO THE OUTER MARGIN. The owner's ruling of 19 August,
+   answering a question put with the measurement beside it: the notice runs to two full lines of
+   body text under every one of the 429 person portraits, and at the reading size it competes with
+   the record itself. His ruling of 13 August that it must be there is UNTOUCHED -- it moves, it
+   does not go. The outer margin is where a manuscript puts an annotator's remark about the page,
+   and this notice is the archive remarking on its own plate.
+
+   MATCHED WITHOUT NEW MARKUP: it is the `.cite` that FOLLOWS a `.portrait`, which no other cite on
+   any leaf does. That keeps the generator out of it -- 59 routes today and 622 later -- and CSS
+   cannot match on text, so the structural selector is the honest one.
+   OUTER means verso-LEFT and recto-RIGHT, which is what `.marg` above already encodes; this
+   borrows its ink, its size and its tilt so the two read as one hand rather than two. */
+:root[data-codex-object="on"] .book .leaf .portrait ~ p.cite{
+  position:absolute; top:34px; width:clamp(96px,17%,138px); max-height:none;
+  font:italic 10.4px/1.34 'EB Garamond',Georgia,serif !important; color:#6b4a24;
+  text-align:left; margin:0; z-index:2; }
+:root[data-codex-object="on"] .book .leaf.l .portrait ~ p.cite{ left:26px; transform:rotate(-1.2deg); }
+:root[data-codex-object="on"] .book .leaf.r .portrait ~ p.cite{ right:26px; transform:rotate(1deg); }
+/* and the plate itself moves inboard so the margin it vacated is actually clear */
+:root[data-codex-object="on"] .book .leaf.l .portrait,
+:root[data-codex-object="on"] .book .leaf.l .styles{ margin-left:clamp(76px,17%,132px); }
+:root[data-codex-object="on"] .book .leaf.r .portrait,
+:root[data-codex-object="on"] .book .leaf.r .styles{ margin-right:clamp(76px,17%,132px); }
+
+:root[data-codex-object="on"] .book .versal{ font-family:"Junicode Versal",Cinzel,Georgia,serif !important;
+  font-feature-settings:"salt" 2 !important; }
 
 /* ⚠ THE VERSAL FONT IS A NO-OP, TWICE OVER — found by research the same day it shipped.
    `site/fonts/junicode-versal.woff2` was built by pinning Junicode's ENLA axis to 100 and
@@ -972,26 +1023,39 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
    THE REAL DROP CAPS ARE `salt` 2 — Lombardic — one line of CSS and 13.2 KB. Not changed here
    because a font swap wants measuring, and this comment is worth more right now than a guess. */
 
-/* ⚠ THE LOMBARDIC VERSAL IS NOT SHIPPED, AND THIS IS WHY — second attempt, also failed.
-   `salt` 2 IS the right feature: read out of Junicode's own GSUB before building anything,
-   capital A maps to ['A.rustic','A.lombardic'], so alternate 2 is the Lombardic versal, and 22
-   capitals carry the pair. THE FONT WAS BUILT CORRECTLY TOO — subset from the VARIABLE font with
-   `salt` retained and the 56 `.lombardic` glyphs named EXPLICITLY, because the subsetter's layout
-   closure does not reach a discretionary feature's alternates on its own (the first build kept
-   GSUB and zero lombardic glyphs, which is the trap). 35.5 KB, glyph names retained so the result
-   could be checked rather than assumed.
+/* THE LOMBARDIC VERSAL SHIPS, 19 August — after two failures, and the second failure's EVIDENCE
+   was the wrong instrument rather than the wrong font.
 
-   AND THE SUBSTITUTION STILL DOES NOT FIRE. Measured three ways in Chromium, all negative:
-     DOM span width   108.33px with `salt` 0 and 108.33px with `salt` 2
-     bounding height  identical
-     canvas toDataURL BYTE-IDENTICAL between the two renderings
-   Metrics alone would be weak evidence — a Lombardic A can share an advance width — but identical
-   PIXELS are not weak. Something between the subset's GSUB and the shaper is not connecting, and
-   finding it needs a full context window rather than a fourth attempt at the end of one.
+   FAILURE 1 was Junicode's ENLA axis, and it is worse than "lowercase only": `A.enlarged` and
+   `a.enlarged` are the SAME outline at the same advance, 516 units against a capHeight of 663, so
+   the "enlarged" capital is SHORTER than an ordinary one. That path is abandoned permanently.
 
-   NOTHING IS SHIPPED FOR IT. No @font-face, no font-feature-settings, no 35 KB of dead weight on
-   622 routes. The versal renders in Junicode's ordinary capitals, which is what it has always
-   actually been. THE FIRST ATTEMPT'S FAULT IS STILL THE MORE INSTRUCTIVE ONE: it pinned ENLA,
-   which is "enlarged MINUSCULES" and touches lowercase only, then instanced the font and dropped
-   GSUB — a no-op twice over that loaded, rendered, and passed every check I ran, because none of
-   them asked whether the axis had DONE anything. */
+   FAILURE 2 was `salt` 2, and it had TWO independent causes, either of which alone renders
+   identically to no feature at all:
+     · `pyftsubset --layout-features` DEFAULTS to a list that does not include `salt`. Retaining
+       all 56 alternate glyphs does nothing about this -- the glyphs survive and the FeatureList
+       comes out empty. That was the first build.
+     · Subsetting RENUMBERS THE ALTERNATE INDEX. Keep only the `.lombardic` glyphs and the
+       subsetter prunes `.rustic` out of every AlternateSet, so the set becomes length 1, `salt 1`
+       silently becomes the Lombardic and `salt 2` addresses nothing. That was the second build,
+       and it is documented nowhere I could find.
+
+   AND MY OWN MEASUREMENT WAS THE THIRD FAULT. I ruled the second build dead on canvas
+   `toDataURL` coming back byte-identical between `salt` 0 and `salt` 2, and wrote that identical
+   PIXELS are not weak evidence. They are not -- but canvas does not honour
+   `ctx.fontFeatureSettings` in Chromium, so the instrument was reporting its own limitation. The
+   DOM had the answer all along: with this build the same five capitals measure 411.25px with no
+   feature, 354.48px at `salt` 1 and 380.41px at `salt` 2, and a screenshot shows three visibly
+   different alphabets. A NEGATIVE RESULT NEEDS ITS INSTRUMENT CHECKED EXACTLY AS A POSITIVE ONE
+   DOES, and this one was never checked against a font known to work.
+
+   WHAT SHIPS: 33.7 KB, 79 glyphs, both alphabets. Keeping the 26 `.rustic` glyphs costs 10 KB and
+   buys index stability -- `alternates['A']` reads `['A.rustic','A.lombardic']` exactly as in the
+   full font, so `"salt" 2` means the same thing whether a browser has the subset or the original.
+   That is immunity to the precise bug that cost the second attempt. Rustic capitals come free as
+   a second display hand. Built with:
+     pyftsubset JunicodeVF-Roman.ttf --flavor=woff2 --unicodes=U+0041-005A
+       --glyphs=<26 X.lombardic + 26 X.rustic> --layout-features+=salt --no-layout-closure
+       --no-hinting --desubroutinize --drop-tables+=DSIG
+   `--no-layout-closure` is safe ONLY with an explicit --glyphs list; alone it deletes the feature
+   outright. And HarfBuzz cannot read WOFF2, so shape-test a .ttf. */
