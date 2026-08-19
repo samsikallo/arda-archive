@@ -1,5 +1,17 @@
 <!doctype html>
-<html lang="en" data-scene="library"><head>
+<html lang="en" data-scene="library" data-theme="light"><head>
+<!-- `data-theme="light"` IS A BUG FIX, AND IT IS NOT ABOUT LIGHT MODE.
+     THE CODEX CARRIES ITS OWN COMPLETE PALETTE -- a DARK hall with LIGHT vellum in it -- so it
+     must not take the archive's theme on top. It links arda.css for the glossary, and arda.css's
+     `@media (prefers-color-scheme:dark)` block sets --a-ink:#e8dcc0, a pale cream, which every
+     leaf INHERITED while keeping its own light parchment background. Measured 19 Aug in a real
+     browser at prefers-color-scheme:dark: 150 elements below 3.5:1, most of them cream text on
+     vellum. The owner saw it and reported it as "most of the text became white on light
+     background", which is exactly what it was.
+     arda.css guards every dark block with `:root:not([data-theme="light"])`, so stamping the
+     attribute is the archive's OWN mechanism for opting a page out. A PAGE OF VELLUM DOES NOT
+     INVERT BECAUSE THE READER'S OPERATING SYSTEM DID -- the leaf is a physical object, and the
+     night in this design is the hall around it, which is already dark in both schemes. -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Gondorian Codex</title>
