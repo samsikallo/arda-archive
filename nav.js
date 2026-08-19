@@ -17,16 +17,7 @@
 // Book-look. DEFAULTS ON since 16 Aug: it defaulted OFF for three days and five stages,
 // so the owner never saw any of it. An escape hatch nobody opens is a feature nobody has.
 // Still reversible: localStorage arda-codex='off'. Why: roadmap, 13 & 16 Aug.
-// A ROUTE RE-HUNG ON THE CODEX OBJECT OPTS OUT HERE, and this line is the whole of the body
-// hand bug of 19 Aug. Three stylesheets scope on `data-codex="on"` -- arda.css (25 rules),
-// codex.css (61) and, until today, codex-object.css (41). A re-hung route must have the
-// OBJECT and not the two older skins, so it shipped with an inline script that monkey-patched
-// setAttribute to pin `data-codex` to "off" forever. That worked, and it also made the object
-// stylesheet inert, because the object was reading the same switch it had just nailed shut.
-// I spent three attempts on the CSS. The browser was telling me the truth the whole time --
-// it reported ZERO matching rules, and I read that as a broken enumeration rather than as an
-// answer. TWO SKINS ON ONE SWITCH IS THE BUG; the object now has `data-codex-object`, the
-// patch is gone, and the opt-out is declared here in one place instead of inlined in 59 files.
+// C7: a re-hung route wears the OBJECT, never both. Why: codex-object.css.
 if(!document.documentElement.hasAttribute("data-codex-object")){
  try{document.documentElement.setAttribute("data-codex",
    localStorage.getItem("arda-codex")==="off"?"off":"on");}catch(e){
