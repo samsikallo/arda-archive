@@ -577,7 +577,7 @@ body{
    that sentence excludes. Set at 14/17 it was 1.21 and read cramped; the owner said so looking at
    this page. 21px restores the leaf's own measured pitch and the type now sits ON the ruling
    rather than between two of them, which is the whole point of ruling a page. */
-:root[data-hand="authentic"] .leaf{ --line:15px; }
+:root[data-hand="authentic"] .leaf{ --line:13.6px; }
 /* AND JUSTIFICATION IS DROPPED FOR THIS HAND. A justified uncial in a narrow column opens rivers
    of white, because the uncial is WIDE and few words reach a line. A medieval scribe closed those
    with abbreviations and line-fillers, which we do not have; ragged-right is the honest substitute
@@ -902,14 +902,14 @@ body{
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.lede,
 :root[data-codex-object="on"][data-hand="authentic"] .book .lede{
   font-family:'Uncial Antiqua','EB Garamond',Georgia,serif !important; font-style:italic !important;
-  font-size:12.2px !important; line-height:17px !important; }
+  font-size:11.4px !important; line-height:15px !important; }
 /* THE READING HAND. Everything a reader actually reads through, at the smaller and denser
    measure the owner asked for on 19 Aug: 14px on an 18px rule, against the prototype's 16/25.6. */
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf p,
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf li,
 :root[data-codex-object="on"][data-hand="authentic"] .book .card p{
   font-family:var(--face-latin) !important;
-  font-size:11.4px !important; line-height:15px !important; letter-spacing:0 !important; }
+  font-size:10.6px !important; line-height:13.6px !important; letter-spacing:0 !important; }
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.q{ font-style:italic !important; }
 /* THE FURNITURE: volume tab, spread kind, folio. Cinzel small-caps, as the prototype has them. */
 :root[data-codex-object="on"][data-hand="authentic"] .book .kind,
@@ -929,7 +929,7 @@ body{
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf .marg,
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf .styles{
   font-family:var(--face-latin) !important;
-  font-size:10.6px !important; line-height:1.4 !important; }
+  font-size:9.8px !important; line-height:1.34 !important; }
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf .styles{ font-size:13px !important; font-style:italic !important; }
 
 /* C12 — THE GENERATED-PLATE NOTICE GOES TO THE OUTER MARGIN. The owner's ruling of 19 August,
@@ -1030,7 +1030,7 @@ body{
 :root[data-codex-object="on"][data-hand="authentic"] .book .card p.note{
   font-family:var(--face-hand) !important; font-style:normal !important;
   letter-spacing:.004em !important; }
-:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .marg{ font-size:10.6px !important; line-height:1.4 !important; }
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .marg{ font-size:9.8px !important; line-height:1.34 !important; }
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.note,:root[data-codex-object="on"][data-hand="authentic"] .book .card p.note{ font-size:11px !important; }
 
 /* ═══════════════════════════════════════════════════════════════════════════════════════════════
@@ -1225,8 +1225,26 @@ body{
     rgba(28,22,14,0) 0, rgba(28,22,14,.45) 18%, rgba(28,22,14,.45) 82%, rgba(28,22,14,0) 100%);
 }
 
-/* a leaf scrolls only when the record is genuinely longer than the spread it is given */
-:root[data-codex-object="on"] .book .leaf{ overflow-y:auto; overscroll-behavior:contain; }
+/* A LEAF DOES NOT SCROLL. The owner, 19 Aug: "don't make the pages/leafs scrollable, that's not
+   how books work... So if the content doesn't fit right now, make the texts smaller and more
+   compacted." I had reached for a scrollbar an hour after writing in this file that a codex leaf
+   does not scroll, it TURNS — the archive's own words, and I contradicted them at the first
+   inconvenience.
+   NOT `overflow:hidden` EITHER, which is worse: a scrollbar at least tells a reader something is
+   there, and a clip silently deletes the end of a record with every guard green. The honest
+   answers are, in order: set the type smaller (done here), and where a record genuinely exceeds a
+   spread, GIVE IT ANOTHER LEAF — which is what a book does and is ruling C10's fourth step read
+   forwards. Panels that carry their own scroll — a map, a table — are a different thing and are
+   not this. */
+:root[data-codex-object="on"] .book .leaf{ overflow:visible; }
+/* COMPACTION, not clipping: the leaf's own furniture gives up room before the words do. */
+:root[data-codex-object="on"] .book .leaf{ padding:18px 20px 26px; }
+:root[data-codex-object="on"] .book .card{ padding:7px 9px 6px; margin-bottom:7px; }
+:root[data-codex-object="on"] .book .card h3{ font-size:12px; margin-bottom:4px; }
+:root[data-codex-object="on"] .book .sub{ margin:5px 0 3px; }
+:root[data-codex-object="on"] .book .rubric{ font-size:16px !important; margin-bottom:4px; }
+:root[data-codex-object="on"] .book .portrait{ max-height:34vh; }
+:root[data-codex-object="on"] .book .cx-plate{ max-height:34vh; object-fit:contain; }
 
 /* ── APPENDIX, written by map/gen_codex_route.py and by nothing else ────────────────────────
    The proto is a page whose <body> IS the library. A published route is a page with a header
