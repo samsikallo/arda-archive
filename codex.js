@@ -61,7 +61,7 @@
 
 
     /* FAMILY BEFORE BASENAME. `ix.routes[here]` matched a nested page against a ROOT page of the
-       same name: realm/valinor.html took root valinor.html's atlas+full, place/ and realm/
+       same name: realm/sheets.html took root sheets.html's atlas+full, place/ and realm/
        gondolin.html took "Houses of Gondolin". The basename fallback still serves root pages. */
     var meta = ix.routes[route] || null;
     if (!meta && nested) {
@@ -303,7 +303,7 @@
        A route gets the 2x2 ledger only when this has FOUND at least four comparable records in
        a real grid. Three reasons it is measured rather than read off the manifest archetype:
 
-       ONE, the archetype is a classification and not a promise about the DOM. `registers.html`
+       ONE, the archetype is a classification and not a promise about the DOM. `ainur.html`
        is classified `index` and is a TOMBSTONE -- four sentences and a link list. A ledger keyed
        on the archetype would have laid a facing-page spread over a retired page's apology.
 

@@ -38,7 +38,7 @@
     {
      "part": "The Living Map",
      "entries": [
-      "map.html"
+      "sheets.html"
      ]
     },
     {
@@ -62,7 +62,7 @@
     {
      "part": "Aman",
      "entries": [
-      "valinor.html"
+      "sheets.html"
      ]
     }
    ]
@@ -304,28 +304,28 @@
    "presentation": "full-bleed",
    "next": "armies_dashboard.html"
   },
-  "arda_timemap.html": {
+  "sheets.html": {
    "volume": null,
    "part": "Retired Routes",
    "archetype": "tombstone",
    "spread": "none",
    "title": "arda_timemap",
-   "canonical": "arda_timemap.html",
+   "canonical": "sheets.html",
    "retired": true,
-   "successor": "map.html",
-   "canonicalRoute": "arda_timemap.html",
+   "successor": "sheets.html",
+   "canonicalRoute": "sheets.html",
    "presentation": "single-folio"
   },
-  "arda_timemap_jpeg.html": {
+  "sheets.html": {
    "volume": null,
    "part": "Retired Routes",
    "archetype": "tombstone",
    "spread": "none",
    "title": "arda_timemap_jpeg",
-   "canonical": "arda_timemap_jpeg.html",
+   "canonical": "sheets.html",
    "retired": true,
-   "successor": "map.html",
-   "canonicalRoute": "arda_timemap_jpeg.html",
+   "successor": "sheets.html",
+   "canonicalRoute": "sheets.html",
    "presentation": "single-folio"
   },
   "armies_dashboard.html": {
@@ -385,16 +385,16 @@
    "prev": "ainur.html",
    "next": "genealogy.html"
   },
-  "chronicle.html": {
+  "sheets.html": {
    "volume": null,
    "part": "Retired Routes",
    "archetype": "tombstone",
    "spread": "none",
    "title": "chronicle",
-   "canonical": "chronicle.html",
+   "canonical": "sheets.html",
    "retired": true,
-   "successor": "map.html",
-   "canonicalRoute": "chronicle.html",
+   "successor": "sheets.html",
+   "canonicalRoute": "sheets.html",
    "presentation": "single-folio"
   },
   "compare.html": {
@@ -479,7 +479,7 @@
    "canonicalRoute": "gondolin.html",
    "presentation": "paired-leaf",
    "prev": "gazetteer.html",
-   "next": "map.html"
+   "next": "sheets.html"
   },
   "heraldry.html": {
    "volume": "IV",
@@ -525,14 +525,14 @@
    "presentation": "paired-leaf",
    "prev": "heraldry.html"
   },
-  "map.html": {
+  "sheets.html": {
    "volume": "I",
    "part": "The Living Map",
    "archetype": "atlas",
    "spread": "full",
    "title": "The Living Map",
-   "canonical": "map.html",
-   "canonicalRoute": "map.html",
+   "canonical": "sheets.html",
+   "canonicalRoute": "sheets.html",
    "presentation": "full-bleed",
    "prev": "gondolin.html",
    "next": "place.html"
@@ -6604,7 +6604,7 @@
    "canonical": "place.html",
    "canonicalRoute": "place.html",
    "presentation": "paired-leaf",
-   "prev": "map.html",
+   "prev": "sheets.html",
    "next": "realms.html"
   },
   "place/amon_ereb.html": {
@@ -8728,14 +8728,14 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
-  "realm/valinor.html": {
+  "realm/sheets.html": {
    "volume": "I",
    "part": "Realms",
    "archetype": "folio",
    "spread": "spread",
    "title": "valinor",
-   "canonical": "realm/valinor.html",
-   "canonicalRoute": "realm/valinor.html",
+   "canonical": "realm/sheets.html",
+   "canonicalRoute": "realm/sheets.html",
    "entityId": "valinor",
    "entityType": "realm",
    "sourceRoute": "realms.html#r=valinor",
@@ -8779,16 +8779,16 @@
    "presentation": "paired-leaf",
    "prev": "armies_dashboard.html"
   },
-  "registers.html": {
+  "ainur.html": {
    "volume": null,
    "part": "Retired Routes",
    "archetype": "tombstone",
    "spread": "none",
    "title": "registers",
-   "canonical": "registers.html",
+   "canonical": "ainur.html",
    "retired": true,
    "successor": "ainur.html",
-   "canonicalRoute": "registers.html",
+   "canonicalRoute": "ainur.html",
    "presentation": "single-folio"
   },
   "sheets.html": {
@@ -8801,7 +8801,7 @@
    "canonicalRoute": "sheets.html",
    "presentation": "full-bleed",
    "prev": "realms.html",
-   "next": "valinor.html"
+   "next": "sheets.html"
   },
   "silences.html": {
    "volume": "VI",
@@ -8837,14 +8837,14 @@
    "presentation": "paired-leaf",
    "prev": "theindex.html"
   },
-  "valinor.html": {
+  "sheets.html": {
    "volume": "I",
    "part": "Aman",
    "archetype": "atlas",
    "spread": "full",
    "title": "Aman",
-   "canonical": "valinor.html",
-   "canonicalRoute": "valinor.html",
+   "canonical": "sheets.html",
+   "canonicalRoute": "sheets.html",
    "presentation": "full-bleed",
    "prev": "sheets.html"
   },
@@ -8865,11 +8865,11 @@
    "baynes.html",
    "gazetteer.html",
    "gondolin.html",
-   "map.html",
+   "sheets.html",
    "place.html",
    "realms.html",
    "sheets.html",
-   "valinor.html"
+   "sheets.html"
   ],
   "II": [
    "arda_timeline.html",

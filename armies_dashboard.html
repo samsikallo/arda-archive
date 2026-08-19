@@ -270,7 +270,7 @@ anim=requestAnimationFrame(step);};
 function select(id){const c=D.campaigns.find(x=>x.id==id);
 document.getElementById("battleT").textContent=c.label;
 const tot=s=>s.contingents?s.contingents.reduce((a,k)=>a+k.n,0):0;
-document.getElementById("battleSub").innerHTML=(D.maps[c.id]?'<a style="color:#7a4a12" href="map.html'+c.id+'" target="_blank">⚑ see the field on the Living Map</a> · ':'')+(c.insuf?"recorded, unnumbered":
+document.getElementById("battleSub").innerHTML=(D.maps[c.id]?'<a style="color:#7a4a12" href="sheets.html'+c.id+'" target="_blank">⚑ see the field on the Living Map</a> · ':'')+(c.insuf?"recorded, unnumbered":
 c.sides.map(s=>`${s.name} ~${tot(s).toLocaleString()}`).join("  ·  vs  ·  "));
 drawBars(c);drawMap(c);}
 // ===== hosts panels =====

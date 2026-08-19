@@ -84,7 +84,7 @@ const nav=document.getElementById("ardanav");if(!nav)return;
    published pages live in person/, place/ and realm/ -- the per-entity records -- and they carried NO
    MENU AT ALL: a reader arriving from a search engine had two links, ../index.html and the hall page,
    and no way to reach any other hall. Adding the menu there means every href must be relative to the
-   site root, because `href="map.html"` from person/adalgrim.html resolves to person/map.html.
+   site root, because `href="sheets.html"` from person/adalgrim.html resolves to person/sheets.html.
    The prefix is set by the page (`window.ARDA_BASE="../"`) rather than derived from
    location.pathname, because the pathname depth differs between GitHub Pages (/arda-archive/…), a
    local server (/…) and file:// -- three answers to a question the page already knows. Guessing it
