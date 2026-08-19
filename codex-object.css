@@ -898,3 +898,41 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
    a versal. It fails toward looking fine, which is why nobody would have caught it by looking.
    THE REAL DROP CAPS ARE `salt` 2 — Lombardic — one line of CSS and 13.2 KB. Not changed here
    because a font swap wants measuring, and this comment is worth more right now than a guess. */
+
+/* ⚠ THE BODY HAND IS STILL NOT APPLIED. THIS RULE DOES NOT WORK AND I AM SAYING SO RATHER THAN
+   LEAVING IT LOOKING FIXED. Three attempts, each verified in a browser and each failing:
+     1. `:root[data-hand] .tb p` — lost on specificity to `.leaf.twocol .tb p` (0,3,1) vs (0,2,2)
+     2. the same scoped through `.book .leaf p` with !important — `.lede` and `.rubric` took the
+        uncial from the SAME declaration while `.styles` and the bare <p> did not
+     3. this block, last in the file, maximally specific, !important — still Garamond
+   AND THE THIRD ATTEMPT'S DIAGNOSTIC IS THE INTERESTING ONE: asking the browser which rules match
+   `.book .styles` and carry a font-family returns ZERO. So these selectors are not LOSING, they
+   are NOT MATCHING — and the earlier ones that visibly did apply are not in that list either,
+   which means the enumeration is wrong, or the element is not where the markup suggests.
+   Somebody with a full context window should start from `document.styleSheets` and the real DOM
+   rather than from this file. Headings, the plaque and the rubric ARE correct; only running text
+   is wrong. Left in place because it is harmless and because the next person should see what has
+   already been tried.
+   THE ORIGINAL DIAGNOSIS BELOW STANDS AS A RECORD OF WHAT WAS RULED OUT.
+   The rule above set `.book .leaf p`, `.lede` and `.styles` together in ONE declaration, and
+   `.lede` and `.rubric` took the uncial while `.styles` and the bare `<p>` did not. Same rule,
+   same file, same !important, different outcome — which means something later in the cascade was
+   reaching the paragraphs and not the classed elements. Rather than spend a shrinking context
+   hunting it, this is placed LAST in the file, where nothing in this stylesheet can follow it,
+   and scoped tightly enough that a page's inline <style> cannot either.
+   THE APPARATUS EXCLUSION IS RE-STATED AFTERWARDS, because a blanket rule on `p` would otherwise
+   swallow the citations — and those must stay humanist: it is the ARCHIVE speaking there, not the
+   scribe, and the two voices have to differ or the marker means nothing. */
+:root[data-codex="on"][data-hand="authentic"] .book .leaf p,
+:root[data-codex="on"][data-hand="authentic"] .book .leaf .styles,
+:root[data-codex="on"][data-hand="authentic"] .book .leaf li,
+:root[data-codex="on"][data-hand="authentic"] .book .card p{
+  font-family:'Uncial Antiqua','EB Garamond',Georgia,serif !important;
+  font-size:13.4px !important; line-height:17px !important; }
+:root[data-codex="on"][data-hand="authentic"] .book .leaf p.cite,
+:root[data-codex="on"][data-hand="authentic"] .book .card p.cite,
+:root[data-codex="on"][data-hand="authentic"] .book .leaf .mark,
+:root[data-codex="on"][data-hand="authentic"] .book .leaf .fn,
+:root[data-codex="on"][data-hand="authentic"] .book .leaf .marg{
+  font-family:'EB Garamond',Georgia,serif !important; font-size:11.4px !important;
+  line-height:1.45 !important; }
