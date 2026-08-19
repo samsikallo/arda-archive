@@ -7,7 +7,15 @@
   window.__ardaCodex = { version: 1 };
 
   var R = document.documentElement;
-  if (R.getAttribute("data-codex") === "off") return;   // the escape hatch stays (§14.2)
+  /* C25, 19 Aug 2026: THE READER TOOLS COME BACK FOR THE OBJECT. `data-codex="off"` was my
+     own C7 opt-out, written so no route wears two skins -- and it returned this file on
+     line 10, taking Contents, Bookmark, the Journal and the clasps with it on all 60
+     re-hung routes. The owner has twice said not to lose the interactivity.
+     THE SHELL STILL DOES NOT RUN FOR THE OLD SKIN TURNED OFF; it runs for the OBJECT,
+     which draws its own tabs, plaque, running head and folio in static markup -- so the
+     four builders that would duplicate them are suppressed below on OBJ. */
+  var OBJ = R.getAttribute("data-codex-object") === "on";
+  if (!OBJ && R.getAttribute("data-codex") === "off") return;   // the escape hatch stays (§14.2)
 
   var PRE = (typeof window !== "undefined" && window.ARDA_BASE) || "";
   var here = location.pathname.split("/").pop() || "index.html";
@@ -109,7 +117,8 @@
       if (vol && v.id === vol.id) { a.setAttribute("aria-current", "true"); li.className = "on"; }
       li.appendChild(a); vlist.appendChild(li);
     }
-    vnav.appendChild(vlist); host.appendChild(vnav);
+    /* OBJ: the book draws `.tabs` on its fore-edge. Two volume indexes is the fault C25 warns of. */
+    vnav.appendChild(vlist); if (!OBJ) host.appendChild(vnav);
     /* ── ONE CANONICAL NAVIGATION AT A TIME, AND THE THUMB INDEX MUST EARN IT ────────────────
        The old horizontal bar carries the same seven halls the thumb tabs carry, so at wide
        sizes a reader sees the archive's volumes twice, in two different shapes, and has to work
@@ -142,14 +151,15 @@
     /* The entrance is already the first crumb; repeating it reads as a broken trail. */
     var dup = !t || t === meta.part || /^the arda archive$|^the archive$/i.test(t);
     if (!dup) ol.appendChild(el("li", { "aria-current": "page" }, t));
-    bc.appendChild(ol); host.appendChild(bc);
+    /* OBJ: the book draws `.plaque`, and the site header carries its own breadcrumb. */
+    bc.appendChild(ol); if (!OBJ) host.appendChild(bc);
 
     /* 3. RUNNING HEAD — compact orientation, never the only navigation. */
     if (vol) {
       var rh = el("div", { id: "cx-run", "aria-hidden": "true" });
       rh.appendChild(el("span", { class: "cx-rv" }, "Volume " + vol.id));
       rh.appendChild(el("span", { class: "cx-rp" }, meta.part || vol.title));
-      host.appendChild(rh);
+      if (!OBJ) host.appendChild(rh);   /* OBJ: the leaf draws `.rh` itself */
     }
 
     /* 4. FOLIO NAVIGATION — only where the manifest declares a real sequence, and always with the
@@ -174,7 +184,7 @@
         na.appendChild(el("span", { class: "cx-dest" }, (ix.routes[meta.next] || {}).part || meta.next));
         fn.appendChild(na);
       }
-      host.appendChild(fn);
+      if (!OBJ) host.appendChild(fn);   /* OBJ: the book draws `.folio` itself */
     }
 
     /* ---- 5. CONTENTS LAYER, 6. READER RIBBON, and the JOURNAL (§7.2, Phase 3) ------------
