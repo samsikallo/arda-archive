@@ -1,4 +1,4 @@
-<!doctype html><html lang="en" data-theme="light" data-hand="authentic" data-codex="off" data-scene="library" data-codex-object="on"><head><meta charset="utf-8">
+<!doctype html><html lang="en" data-hand="authentic" data-codex="off" data-codex-object="on"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512">
 <title>The Ainur — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Ainur: the Valar and the Maiar, and those of them that fell — every entry anchored to the text that attests it."><meta property="og:title" content="The Ainur — the Arda Archive"><meta property="og:description" content="The Ainur: the Valar and the Maiar, and those of them that fell — every entry anchored to the text that attests it."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/ainur.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/ainur.html"><!--/ARDA:META-->
@@ -45,7 +45,6 @@ background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 
 <div class="cite" style="text-align:center;max-width:900px;margin:0 auto">Every quotation was located in the text before it was written down. Where a name is commonly given that the corpus does not contain — <b>Mairon</b> for Sauron is the clearest case — it is omitted and the absence noted.</div>
 </div>
 <div id="lb"></div>
-<script>var __aF=[],__aN=0;function aJ(u){var R=document.documentElement,d=function(){if(--__aN<1)R.removeAttribute("data-loading")};__aN++;R.setAttribute("data-loading","1");return fetch(u).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.json()}).then(function(j){d();return j},function(e){d();__aF.push(u);throw e})}</script>
 <script>
 const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const nrm=s=>String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
@@ -86,7 +85,7 @@ const ISTARI_CITE='&ldquo;there appeared in the west of Middle-earth the Istari,
  +'the Lords of the West to contest the power of Sauron&rdquo; &mdash; <i>The Silmarillion</i>, '
  +'Of the Rings of Power and the Third Age';
 const groupOf=x=>x.istar?ISTARI_G:(ORDER[x.rank]==null?30:ORDER[x.rank]*10);
-aJ("arda_ainur.json").then(j=>{A=j;build();});
+fetch("arda_ainur.json").then(r=>r.json()).then(j=>{A=j;build();});
 function build(){
  const bar=document.getElementById("bar");
  [["all","all thirty"],["Aratar","the Aratar"],["Maia","the Maiar"],["Istari","the Istari"],
