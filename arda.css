@@ -14,13 +14,16 @@
    NO COMBINING MARKS IN THIS FACE (U+0300-0308), only precomposed accents. Measured before
    shipping: of 623 published pages, 18 contain a combining mark and all but one of those are
    inside a JavaScript regex rather than display text. The fallback stack catches the rest. */
-@font-face{ font-family:"Aniron"; src:url("fonts/Aniron-Regular.woff2") format("woff2");
+@font-face{ font-family:"Junicode"; src:url("fonts/Junicode-Regular.woff2") format("woff2");
   font-weight:400; font-style:normal; font-display:swap; }
-@font-face{ font-family:"Aniron"; src:url("fonts/Aniron-Bold.woff2") format("woff2");
-  font-weight:700; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Junicode"; src:url("fonts/Junicode-Italic.woff2") format("woff2");
+  font-weight:400; font-style:italic; font-display:swap; }
+@font-face{ font-family:"Metamorphous"; src:url("fonts/Metamorphous-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
 
 :root{
-  --face-latin:"Aniron",Georgia,'Palatino Linotype',serif;
+  --face-latin:"Metamorphous","Junicode",Georgia,'Palatino Linotype',serif;
+  --face-display:"Metamorphous","Junicode",Georgia,serif;
   --a-parch:#efe6cd; --a-card:#fdfaf2; --a-ink:#3a3226; --a-mut:#6b5c44; /* AA on parchment */
   --a-line:#b0a58e; --a-gold:#c9a227; --a-gold-dk:#7a5f14; --a-char:#191512; --a-hdr-gold:#d8c78e;
   --a-elf:#4a7c59; --a-num:#4a6a8a; --a-man:#8a6a3a; --a-dwarf:#8a5a8a; --a-hobbit:#a2762a; --a-dark:#5a3a35;

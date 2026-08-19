@@ -15,11 +15,14 @@
    before shipping: of 623 published pages exactly 18 contain a combining mark and all but one are
    inside a JavaScript regex rather than display text -- the pages are generated NFC even though
    the corpus is mixed-normalisation. The fallback stack catches the remainder. */
-@font-face{ font-family:"Aniron"; src:url("fonts/Aniron-Regular.woff2") format("woff2");
+@font-face{ font-family:"Junicode"; src:url("fonts/Junicode-Regular.woff2") format("woff2");
   font-weight:400; font-style:normal; font-display:swap; }
-@font-face{ font-family:"Aniron"; src:url("fonts/Aniron-Bold.woff2") format("woff2");
-  font-weight:700; font-style:normal; font-display:swap; }
-:root{ --face-latin:"Aniron","EB Garamond",Georgia,serif; }
+@font-face{ font-family:"Junicode"; src:url("fonts/Junicode-Italic.woff2") format("woff2");
+  font-weight:400; font-style:italic; font-display:swap; }
+@font-face{ font-family:"Metamorphous"; src:url("fonts/Metamorphous-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+:root{ --face-latin:"Metamorphous","Junicode","EB Garamond",Georgia,serif;
+  --face-display:"Metamorphous","Junicode",Georgia,serif; }
 
 /* ═══════════════════════════════════════════════════════════════════════════════════════════
    THE CODEX, AS AN OBJECT. Prototype, 19 August 2026.
@@ -885,7 +888,7 @@ body{
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf li,
 :root[data-codex-object="on"][data-hand="authentic"] .book .card p{
   font-family:var(--face-latin) !important;
-  font-size:15px !important; line-height:21px !important; letter-spacing:0 !important; }
+  font-size:13.8px !important; line-height:21px !important; letter-spacing:0 !important; }
 :root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.q{ font-style:italic !important; }
 /* THE FURNITURE: volume tab, spread kind, folio. Cinzel small-caps, as the prototype has them. */
 :root[data-codex-object="on"][data-hand="authentic"] .book .kind,
