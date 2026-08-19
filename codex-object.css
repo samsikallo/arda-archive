@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Uncial+Antiqua&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap");
 
 /* ═══════════════════════════════════════════════════════════════════════════════════════════
    THE CODEX, AS AN OBJECT. Prototype, 19 August 2026.
@@ -854,3 +855,46 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
 :root[data-codex="on"] .book .card::after{ right:-1px; bottom:-1px; border-width:0 1px 1px 0; }
 :root[data-codex="on"] .book .card .no{
   box-shadow:none !important; border-radius:0 !important; }
+
+/* 6 · THE RE-HUNG ROUTE WORE THE RIGHT OBJECT AND THE WRONG HAND. `data-hand="authentic"` is
+      stamped on the root of every spliced route and nothing acted on it, so 59 routes were set in
+      Georgia while the owner's ruling of 19 August is "go fully authentic". This is the same
+      class as faults 1-4: the value was declared and no rule consumed it.
+      THE THREE HANDS, as measured off his primary tier and already proven on the prototype:
+      textura for the volume title (a display hand, seen not read), UNCIAL for headings and body
+      (the BOOK hand of the same tradition, and the readable one), Garamond for the apparatus --
+      that is the ARCHIVE speaking, not the scribe, and the two voices should differ. */
+:root[data-codex="on"][data-hand="authentic"] .book .plaque{
+  font-family:UnifrakturMaguntia,'Uncial Antiqua',Cinzel,serif !important; letter-spacing:0 !important; }
+:root[data-codex="on"][data-hand="authentic"] .book .rubric,
+:root[data-codex="on"][data-hand="authentic"] .book .card h3,
+:root[data-codex="on"][data-hand="authentic"] .book .sub,
+:root[data-codex="on"][data-hand="authentic"] .book .kind,
+:root[data-codex="on"][data-hand="authentic"] .book .tab{
+  font-family:'Uncial Antiqua',Cinzel,Georgia,serif !important; letter-spacing:0 !important; }
+:root[data-codex="on"][data-hand="authentic"] .book .leaf p,
+:root[data-codex="on"][data-hand="authentic"] .book .leaf li,
+:root[data-codex="on"][data-hand="authentic"] .book .lede,
+:root[data-codex="on"][data-hand="authentic"] .book .styles{
+  font-family:'Uncial Antiqua','EB Garamond',Georgia,serif !important;
+  font-size:13.4px !important; line-height:17px !important; letter-spacing:.001em !important; }
+/* the apparatus stays humanist ON PURPOSE -- citations, markers and the generated-plate notice
+   are the archive's own voice and must not be mistaken for the scribe's */
+:root[data-codex="on"][data-hand="authentic"] .book .cite,
+:root[data-codex="on"][data-hand="authentic"] .book .mark,
+:root[data-codex="on"][data-hand="authentic"] .book .fn,
+:root[data-codex="on"][data-hand="authentic"] .book .marg{
+  font-family:'EB Garamond',Georgia,serif !important; }
+/* and the versal, which is a real medieval letter and 3.8 KB */
+:root[data-codex="on"] .book .versal{ font-family:"Junicode Versal",Cinzel,Georgia,serif !important; }
+
+/* ⚠ THE VERSAL FONT IS A NO-OP, TWICE OVER — found by research the same day it shipped.
+   `site/fonts/junicode-versal.woff2` was built by pinning Junicode's ENLA axis to 100 and
+   subsetting to A-Z. TWO THINGS ARE WRONG WITH THAT and only reading the MUFI spec found either:
+     1. ENLA IS "enlarged MINUSCULES" -- it acts on LOWERCASE ONLY. G and Q are byte-identical at
+        ENLA 0 and ENLA 100. The subset is uppercase-only, so the axis touches nothing in it.
+     2. Instancing removed `fvar`, so the axis is not there to act anyway.
+   The file loads, the letters render, and they are ORDINARY JUNICODE CAPITALS wearing the name of
+   a versal. It fails toward looking fine, which is why nobody would have caught it by looking.
+   THE REAL DROP CAPS ARE `salt` 2 — Lombardic — one line of CSS and 13.2 KB. Not changed here
+   because a font swap wants measuring, and this comment is worth more right now than a guess. */
