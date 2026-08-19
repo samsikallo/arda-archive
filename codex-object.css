@@ -804,7 +804,7 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
    every one of the 622 published routes carries its own inline <style> block, written long
    before the codex existed, and those blocks WIN on specificity or on source order against a
    stylesheet linked in the head. A rule that is correct in this file is not thereby applied on
-   a page. So each fix below is scoped through `:root[data-codex="on"] .book`, which no page's
+   a page. So each fix below is scoped through `:root[data-codex-object="on"] .book`, which no page's
    inline CSS can outrank, and the ones that must not be negotiable carry !important.
    This is the same lesson CLAUDE.md records against the dark theme: specificity compares
    (ids, classes, elements) lexicographically, and counting selectors by eye is not a method. */
@@ -812,11 +812,11 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
 /* 1 · THE VOLUME TABS WERE STACKED DOWN THE MIDDLE OF THE VERSO, over the portrait. They belong
       on the FORE-EDGE, protruding from behind the board. The rule in this file was already
       right; a page's own `.tab` styling was reaching them. */
-:root[data-codex="on"] .book > .tabs{
+:root[data-codex-object="on"] .book > .tabs{
   position:absolute !important; left:-1px !important; top:74px !important;
   display:flex !important; flex-direction:column !important; gap:9px !important;
   width:auto !important; z-index:3 !important; }
-:root[data-codex="on"] .book > .tabs > .tab{
+:root[data-codex-object="on"] .book > .tabs > .tab{
   position:relative !important; margin-left:-74px !important; width:104px !important;
   float:none !important; display:block !important; }
 
@@ -825,35 +825,35 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
       missing yellow. `multiply` lets the vellum through the white and leaves the drawn ink
       alone, so all 429 inherit the leaf in one line. NOT a duotone: the wash is the only thing
       distinguishing 429 otherwise-uniform busts, and flattening it would lose that. */
-:root[data-codex="on"] .cx-plate{
+:root[data-codex-object="on"] .cx-plate{
   mix-blend-mode:multiply; background:transparent; border-radius:0; }
-:root[data-codex="on"] .portrait:has(.cx-plate){
+:root[data-codex-object="on"] .portrait:has(.cx-plate){
   background:none !important; box-shadow:inset 0 0 0 1px var(--rule) !important; }
 
 /* 3 · PAGE CHROME SHOWED THROUGH ONTO THE LEAF -- two floating circular controls over the
       recto. Anything the old page draws for itself has no business inside the boards. */
-:root[data-codex="on"] .book .hd,
-:root[data-codex="on"] .book #ardanav,
-:root[data-codex="on"] .book .a-skip,
-:root[data-codex="on"] .book button:not(.cx-keep),
-:root[data-codex="on"] .book [class*="fab"],
-:root[data-codex="on"] .book [class*="toggle"]{ display:none !important; }
+:root[data-codex-object="on"] .book .hd,
+:root[data-codex-object="on"] .book #ardanav,
+:root[data-codex-object="on"] .book .a-skip,
+:root[data-codex-object="on"] .book button:not(.cx-keep),
+:root[data-codex-object="on"] .book [class*="fab"],
+:root[data-codex-object="on"] .book [class*="toggle"]{ display:none !important; }
 
 /* 4 · THE CARDS READ AS MODERN WEB UI -- rounded corners, drop shadows, a floating badge on a
       parchment ground. That is precisely the "a theme, not an object" failure the owner
       rejected on 19 August. A codex panel is INSET into the leaf: a hairline rule, square
       corners, and small corner marks where a scribe ruled the box. */
-:root[data-codex="on"] .book .card{
+:root[data-codex-object="on"] .book .card{
   border-radius:0 !important; box-shadow:none !important;
   background:rgba(255,252,244,.30) !important;
   border:1px solid var(--rule-soft) !important; }
-:root[data-codex="on"] .book .card::before,
-:root[data-codex="on"] .book .card::after{
+:root[data-codex-object="on"] .book .card::before,
+:root[data-codex-object="on"] .book .card::after{
   content:"" !important; position:absolute; width:9px; height:9px; border:1px solid var(--rule);
   border-radius:0 !important; box-shadow:none !important; background:none !important; }
-:root[data-codex="on"] .book .card::before{ left:-1px; top:-1px; border-width:1px 0 0 1px; }
-:root[data-codex="on"] .book .card::after{ right:-1px; bottom:-1px; border-width:0 1px 1px 0; }
-:root[data-codex="on"] .book .card .no{
+:root[data-codex-object="on"] .book .card::before{ left:-1px; top:-1px; border-width:1px 0 0 1px; }
+:root[data-codex-object="on"] .book .card::after{ right:-1px; bottom:-1px; border-width:0 1px 1px 0; }
+:root[data-codex-object="on"] .book .card .no{
   box-shadow:none !important; border-radius:0 !important; }
 
 /* 6 · THE RE-HUNG ROUTE WORE THE RIGHT OBJECT AND THE WRONG HAND. `data-hand="authentic"` is
@@ -864,29 +864,102 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
       textura for the volume title (a display hand, seen not read), UNCIAL for headings and body
       (the BOOK hand of the same tradition, and the readable one), Garamond for the apparatus --
       that is the ARCHIVE speaking, not the scribe, and the two voices should differ. */
-:root[data-codex="on"][data-hand="authentic"] .book .plaque{
+/* THE BODY HAND — RESOLVED 19 AUGUST, AND THE ANSWER WAS THAT I HAD THE GOAL WRONG.
+
+   Three attempts failed here and each blamed the cascade: specificity, then !important, then
+   position in the file. The third attempt's diagnostic said the browser reported ZERO rules
+   matching `.book .styles` with a font-family, and I recorded that as "the enumeration must be
+   wrong". IT WAS NOT WRONG. IT WAS THE ANSWER. Every rule in this stylesheet was scoped
+   `:root[data-codex="on"]`, and every re-hung route shipped with an inline script that
+   monkey-patched `setAttribute` to pin `data-codex` to "off" forever -- put there to keep the
+   OLD `codex.css` skin off these pages, and it kept THIS ONE off too. Three stylesheets were
+   reading one switch: arda.css (25 rules), codex.css (61) and this file (41). The object now has
+   its own switch, `data-codex-object`, declared on the <html> tag; the patch is gone; the
+   opt-out lives once in nav.js instead of inline in 59 files.
+
+   AND THEN THE MEASUREMENT CORRECTED THE GOAL ITSELF, which is the part worth keeping. With the
+   switch on, I measured `codex-proto.html` -- the object the owner approved -- element by element
+   instead of arguing from a screenshot:
+
+       .plaque                UnifrakturMaguntia  15px      the textura, once, on the board
+       .rubric  h3  .gl  .sub  .lede    Uncial Antiqua      the DISPLAY hand
+       running <p>, .q, .cite, .mark    EB Garamond         the READING hand
+       .kind  .tab  .folio             Cinzel               the furniture
+
+   Garamond appears 153 times inside the approved book and the uncial 83. **The uncial is the
+   display hand and was never the reading hand.** The rule I had been trying for three attempts to
+   make work would have put a 13px uncial under every line of running text on 622 routes -- a
+   deviation from the approved object, dressed as a repair of it. It failing was the good outcome.
+
+   WHAT THIS SETS, therefore: the prototype's hierarchy exactly, at the smaller and denser measure
+   the owner asked for on 19 Aug ("the main text a little bit smaller so we can fit in it as much
+   info as possible"). Running text 14px on an 18px rule -- 12.5% smaller than the prototype's
+   16px and much tighter than its 1.6 leading, which is where the density comes from. The
+   apparatus stays humanist and smaller still: it is the ARCHIVE speaking there, not the scribe,
+   and the two voices have to differ or the tier marker means nothing. */
+:root[data-codex-object="on"][data-hand="authentic"] .book .plaque{
   font-family:UnifrakturMaguntia,'Uncial Antiqua',Cinzel,serif !important; letter-spacing:0 !important; }
-:root[data-codex="on"][data-hand="authentic"] .book .rubric,
-:root[data-codex="on"][data-hand="authentic"] .book .card h3,
-:root[data-codex="on"][data-hand="authentic"] .book .sub,
-:root[data-codex="on"][data-hand="authentic"] .book .kind,
-:root[data-codex="on"][data-hand="authentic"] .book .tab{
+/* THE DISPLAY HAND: rubric, sub-headings, glosses and the "The text" label. Seen, not read. */
+:root[data-codex-object="on"][data-hand="authentic"] .book .rubric,
+:root[data-codex-object="on"][data-hand="authentic"] .book .card h3,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf h3,
+:root[data-codex-object="on"][data-hand="authentic"] .book .gl,
+:root[data-codex-object="on"][data-hand="authentic"] .book .sub{
   font-family:'Uncial Antiqua',Cinzel,Georgia,serif !important; letter-spacing:0 !important; }
-:root[data-codex="on"][data-hand="authentic"] .book .leaf p,
-:root[data-codex="on"][data-hand="authentic"] .book .leaf li,
-:root[data-codex="on"][data-hand="authentic"] .book .lede,
-:root[data-codex="on"][data-hand="authentic"] .book .styles{
-  font-family:'Uncial Antiqua','EB Garamond',Georgia,serif !important;
-  font-size:13.4px !important; line-height:17px !important; letter-spacing:.001em !important; }
-/* the apparatus stays humanist ON PURPOSE -- citations, markers and the generated-plate notice
-   are the archive's own voice and must not be mistaken for the scribe's */
-:root[data-codex="on"][data-hand="authentic"] .book .cite,
-:root[data-codex="on"][data-hand="authentic"] .book .mark,
-:root[data-codex="on"][data-hand="authentic"] .book .fn,
-:root[data-codex="on"][data-hand="authentic"] .book .marg{
-  font-family:'EB Garamond',Georgia,serif !important; }
-/* and the versal, which is a real medieval letter and 3.8 KB */
-:root[data-codex="on"] .book .versal{ font-family:"Junicode Versal",Cinzel,Georgia,serif !important; }
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.lede,
+:root[data-codex-object="on"][data-hand="authentic"] .book .lede{
+  font-family:'Uncial Antiqua','EB Garamond',Georgia,serif !important; font-style:italic !important;
+  font-size:13.3px !important; line-height:20px !important; }
+/* THE READING HAND. Everything a reader actually reads through, at the smaller and denser
+   measure the owner asked for on 19 Aug: 14px on an 18px rule, against the prototype's 16/25.6. */
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf p,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf li,
+:root[data-codex-object="on"][data-hand="authentic"] .book .card p{
+  font-family:'EB Garamond',Georgia,serif !important;
+  font-size:14px !important; line-height:18px !important; letter-spacing:0 !important; }
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.q{ font-style:italic !important; }
+/* THE FURNITURE: volume tab, spread kind, folio. Cinzel small-caps, as the prototype has them. */
+:root[data-codex-object="on"][data-hand="authentic"] .book .kind,
+:root[data-codex-object="on"][data-hand="authentic"] .book .tab,
+:root[data-codex-object="on"][data-hand="authentic"] .book .folio{
+  font-family:Cinzel,Georgia,serif !important; }
+/* THE APPARATUS stays humanist and SMALLER -- it is the ARCHIVE speaking, not the scribe, and the
+   two voices have to differ or the tier marker means nothing. Every selector here names the
+   ELEMENT as well as the class: `.book .leaf p` is (0,4,2) and beat a bare `.book .cite` at
+   (0,4,1), so until today every citation on a re-hung route was set in the scribe's hand. That is
+   the third time a specificity comparison has silently reversed an intended rule in this file. */
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.cite,
+:root[data-codex-object="on"][data-hand="authentic"] .book .card p.cite,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf p.note,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .mark,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .fn,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .marg,
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .styles{
+  font-family:'EB Garamond',Georgia,serif !important;
+  font-size:11.6px !important; line-height:1.45 !important; }
+:root[data-codex-object="on"][data-hand="authentic"] .book .leaf .styles{ font-size:13px !important; font-style:italic !important; }
+/* THE RECORD WAS PRINTING TWICE. `main.card` is the route's original body -- heading, meta line,
+   the link into the living archive -- and the codex block is spliced ABOVE it, so a re-hung route
+   showed the whole record in the book and then again in a cream card underneath. Seen in the first
+   screenshot of the repaired object and not before, because until today the object was switched off
+   and only the card was ever visible.
+   THE CARD IS NOT DELETED. It carries the one thing the book does not -- `.go`, the link into the
+   living archive -- and it is the no-CSS and no-JS fallback for the whole route. So the DUPLICATED
+   parts are hidden and the link is kept, set as a plain line under the book where a colophon goes. */
+:root[data-codex-object="on"] main.card{
+  background:none; border:0; box-shadow:none; padding:0; margin:6px auto 40px;
+  max-width:min(1480px,85vw); text-align:center; }
+:root[data-codex-object="on"] main.card > h1,
+:root[data-codex-object="on"] main.card > p,
+:root[data-codex-object="on"] main.card > .cite:first-of-type{ display:none; }
+:root[data-codex-object="on"] main.card .go{
+  display:inline-block; font:italic 13px/1.5 'EB Garamond',Georgia,serif;
+  color:var(--ink-soft); text-decoration:none; border-bottom:1px solid currentColor;
+  opacity:.72; }
+:root[data-codex-object="on"] main.card .go:hover{ opacity:1; }
+:root[data-codex-object="on"] main.card .cite{
+  font:italic 11.5px/1.5 'EB Garamond',Georgia,serif; opacity:.6; }
+:root[data-codex-object="on"] .book .versal{ font-family:"Junicode Versal",Cinzel,Georgia,serif !important; }
 
 /* ⚠ THE VERSAL FONT IS A NO-OP, TWICE OVER — found by research the same day it shipped.
    `site/fonts/junicode-versal.woff2` was built by pinning Junicode's ENLA axis to 100 and
@@ -898,44 +971,6 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
    a versal. It fails toward looking fine, which is why nobody would have caught it by looking.
    THE REAL DROP CAPS ARE `salt` 2 — Lombardic — one line of CSS and 13.2 KB. Not changed here
    because a font swap wants measuring, and this comment is worth more right now than a guess. */
-
-/* ⚠ THE BODY HAND IS STILL NOT APPLIED. THIS RULE DOES NOT WORK AND I AM SAYING SO RATHER THAN
-   LEAVING IT LOOKING FIXED. Three attempts, each verified in a browser and each failing:
-     1. `:root[data-hand] .tb p` — lost on specificity to `.leaf.twocol .tb p` (0,3,1) vs (0,2,2)
-     2. the same scoped through `.book .leaf p` with !important — `.lede` and `.rubric` took the
-        uncial from the SAME declaration while `.styles` and the bare <p> did not
-     3. this block, last in the file, maximally specific, !important — still Garamond
-   AND THE THIRD ATTEMPT'S DIAGNOSTIC IS THE INTERESTING ONE: asking the browser which rules match
-   `.book .styles` and carry a font-family returns ZERO. So these selectors are not LOSING, they
-   are NOT MATCHING — and the earlier ones that visibly did apply are not in that list either,
-   which means the enumeration is wrong, or the element is not where the markup suggests.
-   Somebody with a full context window should start from `document.styleSheets` and the real DOM
-   rather than from this file. Headings, the plaque and the rubric ARE correct; only running text
-   is wrong. Left in place because it is harmless and because the next person should see what has
-   already been tried.
-   THE ORIGINAL DIAGNOSIS BELOW STANDS AS A RECORD OF WHAT WAS RULED OUT.
-   The rule above set `.book .leaf p`, `.lede` and `.styles` together in ONE declaration, and
-   `.lede` and `.rubric` took the uncial while `.styles` and the bare `<p>` did not. Same rule,
-   same file, same !important, different outcome — which means something later in the cascade was
-   reaching the paragraphs and not the classed elements. Rather than spend a shrinking context
-   hunting it, this is placed LAST in the file, where nothing in this stylesheet can follow it,
-   and scoped tightly enough that a page's inline <style> cannot either.
-   THE APPARATUS EXCLUSION IS RE-STATED AFTERWARDS, because a blanket rule on `p` would otherwise
-   swallow the citations — and those must stay humanist: it is the ARCHIVE speaking there, not the
-   scribe, and the two voices have to differ or the marker means nothing. */
-:root[data-codex="on"][data-hand="authentic"] .book .leaf p,
-:root[data-codex="on"][data-hand="authentic"] .book .leaf .styles,
-:root[data-codex="on"][data-hand="authentic"] .book .leaf li,
-:root[data-codex="on"][data-hand="authentic"] .book .card p{
-  font-family:'Uncial Antiqua','EB Garamond',Georgia,serif !important;
-  font-size:13.4px !important; line-height:17px !important; }
-:root[data-codex="on"][data-hand="authentic"] .book .leaf p.cite,
-:root[data-codex="on"][data-hand="authentic"] .book .card p.cite,
-:root[data-codex="on"][data-hand="authentic"] .book .leaf .mark,
-:root[data-codex="on"][data-hand="authentic"] .book .leaf .fn,
-:root[data-codex="on"][data-hand="authentic"] .book .leaf .marg{
-  font-family:'EB Garamond',Georgia,serif !important; font-size:11.4px !important;
-  line-height:1.45 !important; }
 
 /* ⚠ THE LOMBARDIC VERSAL IS NOT SHIPPED, AND THIS IS WHY — second attempt, also failed.
    `salt` 2 IS the right feature: read out of Junicode's own GSUB before building anything,
