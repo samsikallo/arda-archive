@@ -1323,6 +1323,48 @@ body{
 @media (prefers-reduced-motion:reduce){
   :root[data-codex-object="on"] .book{ transition:none !important; }
 }
+
+/* A HALL OPENS FLAT — C37. One full-width leaf, no gutter, no facing page. The binding still
+   frames it, so a hall is recognisably part of the same object; what changes is that the paper is
+   one sheet instead of two, because a tool cannot be cut down the middle.
+   THE LEAF SCROLLS HERE AND ONLY HERE, and that is the ruling's cost stated plainly: a dossier
+   leaf does not scroll, but a hall holds a search box, a filter bar and hundreds of results, and
+   the alternative was splitting 31 tools by hand across two leaves — which is where features get
+   lost. The board holds still; the paper moves inside it. */
+:root[data-codex-object="on"] .book[data-spread="flat"] .spread{ display:block; }
+:root[data-codex-object="on"] .book[data-spread="flat"] .leaf.wide{
+  width:100%; max-width:none; column-count:1; -webkit-columns:auto; columns:auto;
+  padding:calc(var(--rh-top,19px) + 16px) clamp(18px,3.4vw,52px) 40px;
+  max-height:calc(100vh - 210px); overflow-y:auto; overscroll-behavior:contain; }
+/* The hall's own container came from a page that centred itself; inside a leaf it must not. */
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot > .wrap,
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot > main{
+  max-width:none; width:auto; margin:0; padding:0; background:none; }
+/* A tool's own controls are KEPT on a flat leaf. The blanket rule that hides a re-hung page's
+   buttons exists so a dossier leaf is not littered with a hall's furniture; on a hall the
+   furniture IS the content, and hiding it would deliver a tool nobody can operate. */
+/* `!important`, AND IT IS NOT A CASCADE SHORTCUT -- IT IS THE ONLY THING THAT WINS HERE.
+   The blanket rule is `.book button:not(.cx-keep){ display:none !important }`, and an important
+   declaration is beaten only by another important one however specific the loser is. Measured
+   rather than reasoned: with `display:revert` this rule LOST and 36 of corpus.html's 47 controls
+   were invisible -- a tool delivered to a reader who cannot operate it, which is the exact thing
+   C37's ruling was chosen to prevent. Enumerating the rules that set `display` on a hidden control
+   named the winner in one run. */
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot button,
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot input,
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot select,
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot textarea,
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot a{ display:revert !important; }
+/* A control the HALL ITSELF hides -- a collapsed panel, a filter that does not apply -- must STAY
+   hidden. `display:revert !important` would reveal every one of them, which is the opposite fault
+   and just as bad. So the hall's own `[hidden]` and `[aria-hidden]` win it back. */
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot [hidden],
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot [aria-hidden="true"]{ display:none !important; }
+:root[data-codex-object="on"] .book[data-spread="flat"] .leaf.wide::after{ content:none; }
+@media (max-width:1000px){
+  :root[data-codex-object="on"] .book[data-spread="flat"] .leaf.wide{
+    padding-left:16px; padding-right:16px; max-height:calc(100vh - 150px); }
+}
 </style>
 <link rel="stylesheet" href="arda.css"></head>
 <body>

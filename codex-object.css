@@ -775,6 +775,30 @@ body{
   :root[data-codex-object="on"] .book{ transition:none !important; }
 }
 
+:root[data-codex-object="on"] .book[data-spread="flat"] .spread{ display:block; }
+:root[data-codex-object="on"] .book[data-spread="flat"] .leaf.wide{
+  width:100%; max-width:none; column-count:1; -webkit-columns:auto; columns:auto;
+  padding:calc(var(--rh-top,19px) + 16px) clamp(18px,3.4vw,52px) 40px;
+  max-height:calc(100vh - 210px); overflow-y:auto; overscroll-behavior:contain; }
+
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot > .wrap,
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot > main{
+  max-width:none; width:auto; margin:0; padding:0; background:none; }
+
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot button,
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot input,
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot select,
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot textarea,
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot a{ display:revert !important; }
+
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot [hidden],
+:root[data-codex-object="on"] .book[data-spread="flat"] .hall-slot [aria-hidden="true"]{ display:none !important; }
+:root[data-codex-object="on"] .book[data-spread="flat"] .leaf.wide::after{ content:none; }
+@media (max-width:1000px){
+  :root[data-codex-object="on"] .book[data-spread="flat"] .leaf.wide{
+    padding-left:16px; padding-right:16px; max-height:calc(100vh - 150px); }
+}
+
 body{ background:var(--ground); }
 .book{ margin:0 auto; }
 .cx-plate{ width:100%; height:100%; object-fit:cover; display:block; border-radius:2px;
