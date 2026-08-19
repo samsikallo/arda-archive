@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-scene="library" data-theme="light"><head>
+<html lang="en" data-scene="library" data-theme="light" data-hand="authentic"><head>
 <!-- `data-theme="light"` IS A BUG FIX, AND IT IS NOT ABOUT LIGHT MODE.
      THE CODEX CARRIES ITS OWN COMPLETE PALETTE -- a DARK hall with LIGHT vellum in it -- so it
      must not take the archive's theme on top. It links arda.css for the glossary, and arda.css's
@@ -18,7 +18,7 @@
 <meta name="description" content="A prototype of the Arda Archive as a diegetic codex object.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Uncial+Antiqua&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
 <link rel="stylesheet" href="codex-backdrops.css">
 <style>
 /* ═══════════════════════════════════════════════════════════════════════════════════════════
@@ -497,6 +497,67 @@ body{
 .marg b{ display:block; font:600 9.5px/1.2 Cinzel,Georgia,serif; letter-spacing:.02em;
   text-transform:none; color:var(--rubric); margin-bottom:2px; }
 .marg.hand2{ color:#4a5a3a; transform:rotate(1.6deg); font-size:10.5px; }
+
+
+/* ── THE HANDS, at the owner's ruling of 19 August: "go fully authentic" ──────────────────────
+   HIS PRIMARY TIER HAS THREE HANDS, NOT ONE, AND THAT IS THE WHOLE OF THE DESIGN HERE. Measured:
+
+     tengwar_calligraphy_1   GOTHIC TEXTURA QUADRATA -- vertical, dense, set solid, 19.8% ink
+     andriesd                INSULAR / UNCIAL MAJUSCULE -- round, wide, low contrast, no real
+                             ascenders, letters filled with gold
+     The King's Letter       BROAD-NIB CHANCERY ITALIC -- flat pen angle, long horizontal lids
+
+   So "fully authentic" does not mean textura everywhere. Textura is the DISPLAY hand: it is what
+   a scribe used for a title and an incipit, and it is close to unreadable at length -- which is
+   why medieval scribes did not write books in it either. The uncial is the BOOK hand of the same
+   tradition, and it is one of his own three. Choosing it is not a compromise with legibility; it
+   is picking the right one of the hands he supplied.
+
+   THE THREE ROLES, EACH TAKING THE HAND IT HAD IN A REAL MANUSCRIPT:
+     the volume title, on the board   TEXTURA     grandest, shortest, seen not read
+     rubric headings on the leaf      UNCIAL      read at a glance
+     the body of the leaf             UNCIAL      the book hand
+     citations, marginalia, apparatus GARAMOND    a humanist face, drawn FROM Carolingian
+                                                  minuscule -- the same tradition, three centuries
+                                                  later, and the archive's own voice rather than
+                                                  the scribe's
+
+   AND IT IS SWITCHABLE, so a reading can be looked at rather than argued about.
+   `data-hand="humanist"` on <html> returns the leaf to Garamond throughout. */
+:root[data-hand="authentic"] .plaque,
+:root[data-hand="authentic"] .vol-title{ font-family:UnifrakturMaguntia,'Uncial Antiqua',Cinzel,serif;
+  letter-spacing:0; }
+:root[data-hand="authentic"] .rubric,
+:root[data-hand="authentic"] .card h3,
+:root[data-hand="authentic"] .sub,
+:root[data-hand="authentic"] .rh{ font-family:'Uncial Antiqua',Cinzel,Georgia,serif; letter-spacing:0; }
+/* SPECIFICITY, AND IT BIT IMMEDIATELY. `.leaf.twocol .tb p` is (0,3,1) and
+   `:root[data-hand="authentic"] .tb p` is (0,2,2) -- the dense-leaf rule WINS, so the size and the
+   alignment set here were silently discarded while the family and the leading applied. Measured
+   after writing it: font-size stayed 15.4px and text-align stayed justify. Same trap CLAUDE.md
+   records against the dark theme -- specificity compares (ids, classes, elements)
+   lexicographically, so counting selectors by eye is not a method. */
+:root[data-hand="authentic"] .leaf .tb p,
+:root[data-hand="authentic"] .leaf .tb li,
+:root[data-hand="authentic"] .leaf .lede{ font-family:'Uncial Antiqua','EB Garamond',Georgia,serif;
+  font-size:14.6px; letter-spacing:.002em; }
+/* THE RULING TIGHTENS FOR THE UNCIAL, AND THIS IS MEASURED RATHER THAN TASTE. Across the primary
+   tier the ratio of line pitch to the ink extent of one line has a median of 1.09 -- TWELVE OF
+   FOURTEEN pieces sit between 0.96 and 1.42. These hands are set SOLID. The uncial has almost no
+   ascenders and a large x-height, so it needs LESS leading than a humanist face at the same size,
+   not more; at the humanist pitch it read airy and modern, which is the opposite of the source. */
+:root[data-hand="authentic"] .leaf{ --line:19px; }
+/* AND JUSTIFICATION IS DROPPED FOR THIS HAND. A justified uncial in a narrow column opens rivers
+   of white, because the uncial is WIDE and few words reach a line. A medieval scribe closed those
+   with abbreviations and line-fillers, which we do not have; ragged-right is the honest substitute
+   and costs nothing the sources actually show. */
+:root[data-hand="authentic"] .leaf.twocol .tb p{ text-align:left; hyphens:auto; }
+:root[data-hand="authentic"] .versal{ font-family:UnifrakturMaguntia,Cinzel,serif; }
+/* the apparatus stays humanist ON PURPOSE -- it is the archive speaking, not the scribe */
+:root[data-hand="authentic"] .fn,
+:root[data-hand="authentic"] .marg,
+:root[data-hand="authentic"] .cite,
+:root[data-hand="authentic"] .slip{ font-family:'EB Garamond',Georgia,serif; }
 
 /* THE SIX HANDS, each in its own ink. Six scribes did not share a pot, and the colour is how a
    reader tells one annotator from another before reading a word. Values are separated in hue and
