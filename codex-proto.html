@@ -30,16 +30,29 @@
   --board:#5a3a1f; --board-hi:#7d5730; --board-lo:#2e1c0d; --board-edge:#8a6134;
   /* BRASS, in four states -- the owner chose warm metal over silver */
   --silver:#c9a44c; --silver-hi:#f0d79a; --silver-lo:#9a7434; --silver-deep:#5d4318;
-  /* the leaves: aged tan parchment, unevenly foxed */
-  --vellum:#efe0bd; --vellum-2:#e6d3a9; --vellum-3:#d8c193; --vellum-edge:#bfa571;
-  /* the inks */
-  --ink:#3a2a16; --ink-soft:#61492a; --rubric:#8f2f1c; --rubric-soft:#b0553c;
-  --rule:#a98a4e; --rule-soft:#c9ae76;
+  /* THE LEAF, MEASURED off the owner's primary tier rather than chosen. Lab-averaged from
+     five real parchment grounds -- The King's Letter plate, pl_namarie, andriesd, mancenuva,
+     andries_ataremma -- which run L* 89.3 to 98.8. The old values started at L* 89.6 and RAMPED
+     DOWN to 68.9 toward the foot; NO measured source darkens toward its foot, and that ramp was
+     the single biggest reason the leaf read as stained rather than as vellum. */
+  --vellum:#faf2cb; --vellum-2:#f6ecc0; --vellum-3:#f1e4b3; --vellum-edge:#d9c48b;
+  --vellum-warm:#fff1b1;                    /* display leaves only: pl_elbereth + andriesd */
+  /* THE INKS. `--ink` was #3a2a16, a BROWN at chroma 16.5 against a measured mean of 4.9 across
+     seven sources -- one of which reads exactly neutral. It sepia-tinted every word on the page.
+     AND THE CODEX IS A RED-AND-BLUE SYSTEM: every panel initial in the primary tier is lapis or
+     violet, and andries_aiamaria alternates whole lines of red and blue. Red alone is the palette
+     of a CHARTER; red with blue is the palette of a BOOK. The archive had built a charter. */
+  --ink:#3d3430; --ink-deep:#0e0c0a; --ink-soft:#5c534c;
+  --rubric:#bf3637; --rubric-soft:#cf6a63;
+  --lapis:#28418c; --lapis-soft:#5b6fb0;    /* panel initials and their grounds */
+  --azure:#2a5c6b;                          /* apparatus: running head, folio, secondary rules */
+  --gold:#a47741;
+  --rule:#cbb684; --rule-soft:#e3d3a6;
   --tab-1:#8a3b2a; --tab-2:#7a6222; --tab-3:#3f5a3a; --tab-4:#2f4a5e;
 }
 
 .a-skip{position:absolute;left:-9999px;top:8px;z-index:99;padding:8px 14px;border-radius:3px;
-  background:#3a2410;color:#f0d79a;font:600 12px Cinzel,Georgia,serif;letter-spacing:.14em;
+  background:#3a2410;color:#f0d79a;font:600 12px Cinzel,Georgia,serif;letter-spacing:.02em;
   text-decoration:none;box-shadow:0 0 0 1px #8a6134}
 .a-skip:focus{left:12px}
 *{box-sizing:border-box}
@@ -65,7 +78,18 @@ body{
    An object with thickness lying on the ground, not a page filling the viewport. The reference's
    own proportion: it occupies most of the view but the world is visible around and beneath it. */
 .book{
-  position:relative; width:min(1480px, 85vw); aspect-ratio:1.58/1; min-height:520px;
+  /* `flex:0 0 auto` IS LOad-BEARING. `body` is a column flex container, so each book is a flex
+     ITEM whose main axis is VERTICAL -- and with the default `flex-shrink:1`, five books taller
+     than the viewport were SHRUNK to their `min-height`. That is why every book measured exactly
+     520px at every desktop width instead of its own 1.58:1 shape, and why seven leaves were
+     clipping up to 216px of their own text. The ratio was never being applied at all. */
+  position:relative; flex:0 0 auto; width:min(1480px, 85vw);
+  /* THE PROPORTION IS A FLOOR, NOT A CEILING. `aspect-ratio` sets an EXACT height, so a leaf with
+     one paragraph too many is clipped rather than accommodated -- which is what 1200px was still
+     doing. Expressed as a min-height the book keeps its 1.58:1 shape whenever the content fits,
+     and grows instead of hiding text when it does not. A codex leaf that hides its own words is
+     the one thing this object must never do. */
+  min-height:max(520px, calc(min(1480px, 85vw) / 1.58));
   /* the boards */
   background:
     linear-gradient(180deg, var(--board-hi) 0 2px, transparent 2px),
@@ -95,12 +119,20 @@ body{
 
 /* ── THE SPREAD: two leaves and the valley between them ─────────────────────────────────────── */
 .spread{
-  position:relative; flex:1; display:grid; grid-template-columns:1fr 1fr;
+  /* `flex:1` is `1 1 0%`, and a ZERO BASIS means the spread's own content never contributes to
+     the book's height -- so a leaf longer than the 1.58:1 box was silently CLIPPED by the
+     `overflow:hidden` below. Measured 19 Aug at 1200px: seven leaves hiding 31-216px of their
+     own text, on every book, at every desktop width, with no guard able to see it. `1 1 auto`
+     lets the ratio set the SHAPE while the content sets the FLOOR.
+     `min-width:0` because a grid/flex item's automatic minimum is its CONTENT width, which is
+     what pushed an 850px spread into a 390px viewport. */
+  position:relative; flex:1 1 auto; min-width:0; width:100%; box-sizing:border-box;
+  display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr);
   border-radius:3px 3px 2px 2px; overflow:hidden;
   box-shadow:0 0 0 1px rgba(0,0,0,.55), inset 0 0 34px rgba(60,40,15,.10);
 }
 .leaf{
-  position:relative; padding:30px 34px 50px;
+  position:relative; min-width:0; padding:30px 34px 50px;
   background:
     radial-gradient(70% 50% at 30% 18%, rgba(255,255,255,.42), transparent 60%),
     radial-gradient(45% 38% at 82% 74%, rgba(160,130,80,.13), transparent 62%),
@@ -142,7 +174,7 @@ body{
   box-shadow:
     inset 0 0 0 1px var(--silver-deep), inset 0 1px 0 rgba(238,241,246,.32),
     0 3px 7px rgba(0,0,0,.55);
-  font:600 15px/1 Cinzel,Georgia,serif; letter-spacing:.20em; text-transform:uppercase;
+  font:600 15px/1 Cinzel,Georgia,serif; letter-spacing:.02em; text-transform:none;
   color:var(--silver-hi); text-shadow:0 1px 0 #000; white-space:nowrap;
 }
 .plaque i{ color:var(--silver-lo); font-style:normal; }
@@ -153,14 +185,14 @@ body{
   padding:4px 18px 5px; border-radius:2px;
   background:linear-gradient(180deg,#6d4b28,#31200e);
   box-shadow:inset 0 0 0 1px var(--silver-deep), 0 3px 6px rgba(0,0,0,.5);
-  font:600 11px/1 Cinzel,Georgia,serif; letter-spacing:.18em; color:var(--silver);
+  font:600 11px/1 Cinzel,Georgia,serif; letter-spacing:.02em; color:var(--silver);
 }
 
 /* the thumb tabs: they protrude FROM BEHIND the left board, notched, layered */
 .tabs{ position:absolute; left:-1px; top:74px; z-index:1; display:flex; flex-direction:column; gap:9px; }
 .tab{
   position:relative; margin-left:-74px; width:104px; padding:8px 10px 8px 14px;
-  font:600 10.5px/1.1 Cinzel,Georgia,serif; letter-spacing:.12em; text-transform:uppercase;
+  font:600 10.5px/1.1 Cinzel,Georgia,serif; letter-spacing:.02em; text-transform:none;
   color:#d9dee7; text-decoration:none; text-align:left;
   background:linear-gradient(90deg,#241505 0%, var(--tab-1) 22%, var(--tab-1) 100%);
   border-radius:2px 0 0 2px;
@@ -205,7 +237,7 @@ body{
 .rubric{ /* a centred heading flanked by ornament -- the reference's grammar, our geometry */
   display:flex; align-items:center; gap:12px; justify-content:center;
   margin:6px 0 16px; color:var(--rubric);
-  font:700 19px/1.2 Cinzel,Georgia,serif; letter-spacing:.14em; text-transform:uppercase;
+  font:700 19px/1.2 Cinzel,Georgia,serif; letter-spacing:.02em; text-transform:none;
 }
 .rubric::before,.rubric::after{
   content:""; flex:1; height:7px; max-width:96px;
@@ -244,12 +276,12 @@ body{
 
 .card h3{
   margin:2px 0 10px; text-align:center; color:var(--rubric);
-  font:600 15px/1.25 Cinzel,Georgia,serif; letter-spacing:.11em; text-transform:uppercase;
+  font:600 15px/1.25 Cinzel,Georgia,serif; letter-spacing:.02em; text-transform:none;
 }
 .card h3 em{ font-style:normal; color:var(--rubric-soft); }
 .sub{
   display:flex; align-items:center; gap:9px; justify-content:center; margin:12px 0 6px;
-  font:600 10px/1 Cinzel,Georgia,serif; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft);
+  font:600 10px/1 Cinzel,Georgia,serif; letter-spacing:.2em; text-transform:none; color:var(--ink-soft);
 }
 .sub::before,.sub::after{ content:""; flex:1; max-width:54px; height:1px; background:var(--rule); }
 .card p{ margin:0 0 8px; }
@@ -263,9 +295,9 @@ body{
 .struck{ position:relative; }
 .struck > *{ opacity:.55; }
 .struck::after{
-  content:""; position:absolute; left:5%; right:5%; top:16%; width:auto; height:10px; border:0;
+  content:""; position:absolute; left:3%; right:3%; top:38%; width:auto; height:7px; border:0;
   background:linear-gradient(92deg, rgba(125,43,32,0) 0%, var(--rubric) 8%, var(--rubric) 92%, rgba(125,43,32,0) 100%);
-  transform:rotate(6.5deg); transform-origin:left center; opacity:.72; border-radius:2px;
+  transform:rotate(3deg); transform-origin:center; opacity:.72; border-radius:2px;
   box-shadow:0 1px 0 rgba(125,43,32,.35);
 }
 .struck .why{
@@ -288,16 +320,22 @@ body{
 @media (max-width:560px){
   /* the plaque must wrap, or a long volume title makes the whole document scroll sideways */
   .plaque{ white-space:normal; max-width:86vw; text-align:center; line-height:1.35;
-    font-size:11px; letter-spacing:.14em; padding:6px 14px 7px; }
-  .folio{ font-size:10px; letter-spacing:.14em; }
+    font-size:11px; letter-spacing:.02em; padding:6px 14px 7px; }
+  .folio{ font-size:10px; letter-spacing:.02em; }
   .leaf{ padding:22px 18px 24px; }
   .leaf::before{ inset:10px 12px; }
   body{ padding:22px 10px; }
 }
 
 @media (max-width:1000px){
-  .book{ aspect-ratio:auto; padding:26px 20px 30px; }
-  .spread{ grid-template-columns:1fr; }
+  /* MEASURED 19 Aug: the dense leaf was UNREADABLE here and no guard could see it. `.book` keeps
+     `min-height:520px`, `.spread` is `flex:1 1 0%`, so the spread took the REMAINDER of a fixed
+     520px box -- 464px, split into two 231px rows -- while the leaf's own content ran to 1064px.
+     `.leaf{overflow:auto}` then hid the rest behind a scrollbar inside a book. A codex leaf does
+     not scroll; it turns. So the book sizes to its leaves here, and nothing is hidden. */
+  .book{ aspect-ratio:auto; min-height:0; padding:26px 20px 30px; }
+  .spread{ grid-template-columns:minmax(0,1fr); grid-template-rows:auto auto; flex:0 0 auto; }
+  .leaf{ overflow:visible; }
   .gutter{ display:none; }
   .leaf.r{ border-top:1px solid var(--vellum-edge); }
   .tabs{ display:none; }
@@ -326,9 +364,9 @@ body{
    one-size layout produced. */
 
 /* LEDGER: records two-up per leaf, four across the spread */
-.book[data-spread="ledger"] .cards{ display:grid; grid-template-columns:1fr; gap:14px; }
+.book[data-spread="ledger"] .cards{ display:grid; grid-template-columns:minmax(0,1fr); gap:14px; }
 @media (min-width:1000px){
-  .book[data-spread="ledger"] .cards{ grid-template-columns:1fr; }
+  .book[data-spread="ledger"] .cards{ grid-template-columns:minmax(0,1fr); }
 }
 
 /* DOSSIER: the left leaf becomes a standing figure -- portrait, arms, styles */
@@ -346,8 +384,7 @@ body{
 .arms{ width:82px; height:96px; clip-path:polygon(0 0,100% 0,100% 62%,50% 100%,0 62%);
   background:linear-gradient(160deg,#2f4a5e,#1a2b38); position:relative;
   box-shadow:0 2px 6px rgba(0,0,0,.35); }
-.arms::after{ content:"✦"; position:absolute; inset:0; display:grid; place-items:center;
-  color:#e8cf94; font-size:26px; }
+.arms::after{ content:""; position:absolute; inset:0; background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>") center/58% no-repeat; }
 .styles{ text-align:center; font:italic 14px 'EB Garamond',Georgia,serif; color:var(--ink-soft);
   max-width:34ch; }
 
@@ -410,12 +447,27 @@ body{
      ruling           the faint lines the scribe ruled before writing a word */
 
 /* the scribe's ruling, under everything on the leaf */
+.leaf{ --line:23px; }   /* the ruling pitch. The type was 1.78x too small for its page:
+     measured across the primary tier the pitch is a median 0.0486 of page height -- 21 lines
+     to a page -- against this leaf's 0.0273 and 33 lines. 23px takes most of that distance
+     without turning a working archive into a display manuscript. */
 .leaf.ruled::before{
-  content:""; position:absolute; inset:16px 20px; pointer-events:none; z-index:0;
+  content:""; position:absolute; inset:30px 34px 50px; pointer-events:none; z-index:0;
   border:1px solid var(--rule); box-shadow:inset 0 0 0 4px var(--rule-soft);
-  background:repeating-linear-gradient(180deg, transparent 0 21px, rgba(150,120,66,.13) 21px 22px);
-  opacity:.5;
+  /* a HARD-POINT ruling shadows the sheet; it is not a drawn line. Measured on the King's
+     Letter plate as dL 7-12 of 255 with a* barely moving -- so this is a luminance step with
+     almost no hue, at 4.3% rather than the 13% the old value used. */
+  background:repeating-linear-gradient(180deg,
+    transparent 0 calc(var(--line) - 1px), rgba(120,96,52,.11) calc(var(--line) - 1px) var(--line));
+  opacity:.62;
 }
+/* THE TEXT SITS ON THE RULING: its line-box IS the pitch, so every line lands on a rule.
+   Tolkien wrote on every SECOND rule of the King's Letter -- but his hand is 30px tall on that
+   plate and ours is 13.6px, so copying the 2:1 ratio literally gave a 38px line on 13.6px type
+   and the page read SPARSE, which is the exact opposite of what was asked for. What transfers
+   from the plate is that the writing REGISTERS to the ruling, not the integer he happened to use.
+   One rule per line, at a pitch measured against our own type. */
+.leaf.ruled .tb p,.leaf.ruled .tb li{ line-height:var(--line); }
 .leaf > *{ position:relative; z-index:1; }
 
 /* the text block sits inboard, leaving a wide OUTER margin for the apparatus, as a codex does */
@@ -424,13 +476,65 @@ body{
 
 /* MARGINALIA — a later hand, smaller, in a browner ink, tilted a degree or two */
 .marg{
-  position:absolute; width:clamp(70px,15%,124px); max-height:116px; overflow:hidden; font:italic 11px/1.35 'EB Garamond',Georgia,serif;
-  color:#6b4a24; opacity:.92; transform:rotate(-1.2deg); text-align:left;
+  position:absolute; width:clamp(96px,17%,138px); max-height:120px; font:italic 11px/1.36 'EB Garamond',Georgia,serif;
+  color:#6b4a24; transform:rotate(-1.2deg); text-align:left;
 }
-.leaf.l .marg{ left:14px; } .leaf.r .marg{ right:14px; transform:rotate(1deg); }
-.marg b{ display:block; font:600 9.5px/1.2 Cinzel,Georgia,serif; letter-spacing:.13em;
-  text-transform:uppercase; color:var(--rubric); margin-bottom:2px; }
+/* OUTER MARGIN, and the inset must clear the illuminated border (7-22px) and the fore-edge.
+   The right leaf ran onto the board at 14px because the border sits INSIDE the leaf, not outside. */
+.leaf.l .marg{ left:26px; } .leaf.r .marg{ right:26px; transform:rotate(1deg); }
+.marg b{ display:block; font:600 9.5px/1.2 Cinzel,Georgia,serif; letter-spacing:.02em;
+  text-transform:none; color:var(--rubric); margin-bottom:2px; }
 .marg.hand2{ color:#4a5a3a; transform:rotate(1.6deg); font-size:10.5px; }
+
+/* THE SIX HANDS, each in its own ink. Six scribes did not share a pot, and the colour is how a
+   reader tells one annotator from another before reading a word. Values are separated in hue and
+   held within a narrow lightness band so no hand looks louder than the rest. */
+.marg.hand-nomenclator{ color:#6b4a24; }   /* names       — the base brown-black of the book */
+.marg.hand-stemma     { color:#4a5a3a; }   /* kinship     — a green-cast iron gall */
+.marg.hand-annalist   { color:#5a4470; }   /* dates       — a faded purple */
+.marg.hand-corrector  { color:#8f2f1c; }   /* the page    — rubric, because it marks the leaf */
+.marg.hand-revisor    { color:#2f4a5e; }   /* conceptions — a cold blue-black */
+.marg.hand-chartarius { color:#7a5a1f; }   /* the maps    — the ochre of a drawn sheet */
+
+/* A NOTE CARRIES ITS OWN PROOF. The paraphrase is always visible; the span it paraphrases is one
+   click away. `.marg` is capped and clipped, so the quotation MUST NOT expand it -- it opens as a
+   slip laid over the leaf, which is both what a codex does and the only layout-safe answer. */
+.marg{ overflow:visible; }
+.marg .marg-t{ display:block; max-height:72px; overflow:hidden;
+  -webkit-mask-image:linear-gradient(#000 62%,rgba(0,0,0,.15)); mask-image:linear-gradient(#000 62%,rgba(0,0,0,.15)); }
+/* When the slip is open the note is printed in it IN FULL, so the fade never hides anything. */
+.marg-q > blockquote .marg-full{ display:block; font-style:normal; font-size:11px; line-height:1.45;
+  color:var(--ink-soft); padding-bottom:7px; margin-bottom:7px; border-bottom:1px solid rgba(169,138,78,.5); }
+.marg-q{ margin-top:3px; }
+.marg-q summary{ list-style:none; cursor:pointer; display:flex; gap:4px; align-items:baseline;
+  font:600 8.5px/1 Cinzel,Georgia,serif; letter-spacing:.1em; text-transform:none;
+  color:var(--rubric); opacity:.85; }
+.marg-q summary::-webkit-details-marker{ display:none; }
+.marg-q summary:hover,.marg-q summary:focus-visible{ opacity:1; text-decoration:underline; }
+.marg-q .marg-more{ border-bottom:1px dotted currentColor; }
+.marg-q[open] summary .marg-more{ border-bottom:none; }
+.marg-q[open]{ position:relative; }
+.marg-q[open] > blockquote,
+.marg-q[open] > cite{ position:absolute; z-index:40; width:min(340px,46vw); box-sizing:border-box; }
+.marg-q > blockquote{ margin:0; padding:11px 13px 8px; left:0; top:16px;
+  background:linear-gradient(172deg,#faf4e2,#ece0c2); transform:rotate(-.4deg);
+  box-shadow:0 3px 9px rgba(70,48,16,.34), inset 0 0 0 1px rgba(190,165,113,.75);
+  font:italic 11.5px/1.5 'EB Garamond',Georgia,serif; color:var(--ink); text-align:left; }
+.marg-q > cite{ left:0; top:calc(16px + 100%); padding:0 13px 9px 13px; transform:rotate(-.4deg);
+  background:linear-gradient(172deg,#e9dcbb,#e2d3ae);
+  box-shadow:0 3px 9px rgba(70,48,16,.34), inset 0 0 0 1px rgba(190,165,113,.75);
+  font:600 9px/1.5 Cinzel,Georgia,serif; letter-spacing:.015em; text-transform:none;
+  color:var(--ink-soft); font-style:normal; display:block; }
+/* The slip opens INWARD from the outer margin, or it would hang off the board. */
+.leaf.r .marg-q[open] > blockquote,.leaf.r .marg-q[open] > cite{ left:auto; right:0; }
+.marg-q > blockquote::before{ content:""; position:absolute; left:50%; top:-6px; width:32px;
+  height:10px; transform:translateX(-50%) rotate(-2deg); background:rgba(214,198,158,.9);
+  box-shadow:0 1px 2px rgba(60,40,12,.25); }
+
+/* A margin that is empty for want of its record must SAY so. An unexplained blank is this
+   archive's own declared anti-pattern -- see docs/codex-states.md. */
+.marg-absent{ color:var(--ink-soft); opacity:.7; }
+.marg-absent b{ color:var(--ink-soft); }
 
 /* MANICULE — the pointing hand a reader inked beside a passage */
 .manicule{ position:absolute; font-size:15px; color:var(--rubric); opacity:.8; line-height:1; }
@@ -457,8 +561,13 @@ body{
 .fn .rm{ font-size:.8em; }
 
 /* A VERSAL — the outsized coloured initial opening a section */
-.versal{ float:left; font:700 3.4em/0.78 Cinzel,Georgia,serif; color:var(--rubric);
-  padding:3px 9px 0 0; text-shadow:0 1px 0 rgba(255,255,255,.5); }
+/* THE PANEL INITIAL IS BLUE. Measured across the primary tier: pl_elbereth #143086,
+   pl_namarie #470871, andries_aiamaria #3d5991, pl_anga #112972 -- every one lapis or violet,
+   and not one red. Red is what the RUBRIC is for. Alternating them is what makes a book read
+   as illuminated rather than as a legal instrument. */
+.versal{ float:left; font:700 3.4em/0.78 Cinzel,Georgia,serif; color:var(--lapis);
+  padding:3px 9px 0 0; text-shadow:0 1px 0 rgba(255,255,255,.55); }
+.leaf.r .versal,.leaf:nth-of-type(2n) .versal{ color:var(--rubric); }   /* they alternate */
 
 /* CATCHWORD — the first word of the next leaf, set at the foot, as a binder needed */
 .catch{ position:absolute; bottom:22px; font:italic 11px 'EB Garamond',Georgia,serif;
@@ -473,7 +582,7 @@ body{
 .slip::before{ content:""; position:absolute; left:50%; top:-6px; width:34px; height:11px;
   transform:translateX(-50%) rotate(-2deg); background:rgba(214,198,158,.85);
   box-shadow:0 1px 2px rgba(60,40,12,.25); }
-.slip b{ font:600 9.5px Cinzel,Georgia,serif; letter-spacing:.14em; text-transform:uppercase;
+.slip b{ font:600 9.5px Cinzel,Georgia,serif; letter-spacing:.02em; text-transform:none;
   color:var(--rubric); }
 
 /* A FIGURE set into the text, which flows around it */
@@ -486,11 +595,14 @@ body{
 .fig figcaption{ margin-top:4px; font:italic 10px/1.3 'EB Garamond',Georgia,serif;
   color:var(--ink-soft); text-align:center; }
 /* the two devices drawn into figures, both original geometry */
-.dev-tree{ width:74px; height:74px; position:relative; }
-.dev-tree::before{ content:""; position:absolute; left:50%; bottom:6px; width:3px; height:36px;
-  transform:translateX(-50%); background:#5f4622; }
-.dev-tree::after{ content:"✦ ✦ ✦ ✦ ✦ ✦ ✦"; position:absolute; inset:0 0 auto; text-align:center;
-  font-size:9px; letter-spacing:1px; color:#7d6237; line-height:1.1; }
+.dev-tree{ width:74px; height:74px; position:relative;
+  /* THE WHITE TREE AND THE SEVEN STARS, drawn here as original geometry: a mirrored pair of
+     branch curves with a bloom at each tip, the seventh above the crown. Nothing traced. */
+  background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 52'><g fill='none' stroke='%23a47741' stroke-width='1.7' stroke-linecap='round'><path d='M20 51V22'/><path d='M20 22C20 22 12 20 9 12M20 22C20 22 28 20 31 12'/><path d='M20 28C20 28 13.5 26.5 11 20M20 28C20 28 26.5 26.5 29 20'/><path d='M20 16C20 16 15 14.5 13.5 8M20 16C20 16 25 14.5 26.5 8'/><path d='M20 22V8'/></g><g fill='%23a47741'><circle cx='9' cy='11' r='1.7'/><circle cx='31' cy='11' r='1.7'/><circle cx='11' cy='19' r='1.5'/><circle cx='29' cy='19' r='1.5'/><circle cx='13.5' cy='7' r='1.5'/><circle cx='26.5' cy='7' r='1.5'/><circle cx='20' cy='4' r='1.9'/></g></svg>") center/62% no-repeat; }
+.dev-tree::after{ content:""; position:absolute; inset:auto 0 2px; height:8px;
+  background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>"),url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>"),url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>"),url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>"),url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>"),url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>"),url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23a47741' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>");
+  background-repeat:no-repeat; background-size:8px 8px;
+  background-position:8% 3px,22% 0,36% 3px,50% 0,64% 3px,78% 0,92% 3px; }
 .dev-ring{ width:66px; height:66px; border-radius:50%; border:3px double #8a6134;
   box-shadow:inset 0 0 10px rgba(120,88,36,.4); }
 
@@ -515,13 +627,13 @@ body{
    competes with the text is decoration, and this archive's whole claim is that the text matters. */
 
 .rh{ position:absolute; top:19px; left:26px; right:26px; display:flex; justify-content:space-between;
-  align-items:baseline; font:600 9.5px/1 Cinzel,Georgia,serif; letter-spacing:.22em;
-  text-transform:uppercase; color:var(--rubric-soft); opacity:.85; pointer-events:none; z-index:2; }
+  align-items:baseline; font:600 9.5px/1 Cinzel,Georgia,serif; letter-spacing:.02em;
+  text-transform:none; color:var(--azure); opacity:.9; pointer-events:none; z-index:2; }
 .rh .n{ font-variant-numeric:tabular-nums; color:var(--ink-soft); letter-spacing:.1em; }
 .leaf.r .rh{ flex-direction:row-reverse; }
 
 .quire{ position:absolute; bottom:6px; left:26px; font:600 9px Cinzel,Georgia,serif;
-  letter-spacing:.14em; color:var(--ink-soft); opacity:.7; }
+  letter-spacing:.02em; color:var(--ink-soft); opacity:.7; }
 
 
 /* the vine band: two interlacing strands with leaves, in the outer margin, generated */
@@ -536,26 +648,32 @@ body{
   background-position:center, left, right, center; background-repeat:repeat-y;
 }
 .leaf.l .illum{ left:7px; } .leaf.r .illum{ right:7px; }
-.illum::before,.illum::after{ content:"❦"; position:absolute; left:50%; transform:translateX(-50%);
-  color:var(--rubric); font-size:11px; opacity:.9; }
+.illum::before,.illum::after{ content:""; position:absolute; left:50%; width:13px; height:19px;
+  transform:translateX(-50%); background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 20'><path fill='none' stroke='%23a47741' stroke-width='1.2' d='M7 19C7 19 1 13 1 7.5 1 3 4 1 7 1s6 2 6 6.5C13 13 7 19 7 19ZM7 19V4'/></svg>") center/contain no-repeat; }
 .illum::before{ top:-14px; } .illum::after{ bottom:-15px; }
 
 /* A SECOND TEXT COLUMN on any leaf that asks for it */
-.leaf.twocol .tb{ margin-left:78px; column-count:2; column-gap:19px; column-rule:1px solid var(--rule-soft); }
-.leaf.r.twocol .tb{ margin-left:0; margin-right:78px; }
+.leaf.twocol .tb{ margin-left:calc(26px + clamp(96px,17%,138px) + 10px); column-count:2; column-gap:19px; column-rule:1px solid var(--rule-soft); }
+/* MEASURED: the verso ran 25px past its own foot and clipped the last footnote. A packed leaf
+   sets smaller -- which is what a real crowded codex does -- rather than losing a line. */
+.leaf.twocol .tb p{ font-size:15.4px; margin-bottom:0; }
+/* margin-bottom must be a WHOLE number of rules or the next paragraph sits off them. */
+.leaf.twocol .tb p + p{ margin-top:var(--line); }
+.leaf.twocol .fn{ font-size:10.4px; line-height:1.4; padding-top:6px; }
+.leaf.twocol .fn p{ margin:0 0 3px; }
+.leaf.twocol .slip{ font-size:10.8px; line-height:1.38; padding:7px 10px 8px; }
+.leaf.r.twocol .tb{ margin-left:0; margin-right:calc(26px + clamp(96px,17%,138px) + 10px); }
 .leaf.twocol .tb > h2,.leaf.twocol .tb > .lede,.leaf.twocol .tb > .slip{ column-span:all; }
 .leaf.twocol .tb p{ text-align:justify; hyphens:auto; margin:0 0 .55em; }
 @media (max-width:1000px){ .leaf.twocol .tb{ column-count:1; } }
 
 /* MORE FIGURES: three further devices, all original geometry */
 .dev-star{ width:64px; height:64px; position:relative; }
-.dev-star::before{ content:"✶"; position:absolute; inset:0; display:grid; place-items:center;
-  font-size:46px; color:#8a6134; }
+.dev-star::before{ content:""; position:absolute; inset:0; background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%2328418c' d='M12 1.6 14.6 8 21.4 6.4 17.2 12 21.4 17.6 14.6 16 12 22.4 9.4 16 2.6 17.6 6.8 12 2.6 6.4 9.4 8Z'/></svg>") center/54% no-repeat; }
 .dev-crown{ width:70px; height:56px; position:relative; }
 .dev-crown::before{ content:""; position:absolute; left:0; right:0; bottom:8px; height:12px;
   background:#8a6134; border-radius:2px; }
-.dev-crown::after{ content:"✦ ✦ ✦"; position:absolute; left:0; right:0; top:4px; text-align:center;
-  font-size:13px; color:#a5813c; letter-spacing:6px; }
+.dev-crown::after{ content:""; position:absolute; left:0; right:0; top:8px; height:22px; background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 20'><path fill='none' stroke='%23a47741' stroke-width='1.4' stroke-linejoin='round' d='M4 17h24M4 17C4 17 3 7 5.5 4.5 8 7 10 9 12.5 5 15 1 16 1 16 1s1 0 3.5 4C22 9 24 7 26.5 4.5 29 7 28 17 28 17'/><circle cx='16' cy='1.6' r='1.5' fill='%23bf3637'/></svg>") center/44px 22px no-repeat; }
 .dev-ship{ width:78px; height:56px; position:relative; }
 .dev-ship::before{ content:""; position:absolute; left:6px; right:6px; bottom:10px; height:10px;
   background:#7d6237; clip-path:polygon(0 0,100% 0,86% 100%,14% 100%); }
@@ -578,6 +696,9 @@ body{
    meaningless where there are no leaves to keep in order. Nothing is hidden that carries meaning;
    what goes is the furniture of a codex that is not there. */
 @media (max-width:1100px){
+  .book{ aspect-ratio:auto; min-height:0; }
+  .spread{ flex:0 0 auto; }
+  .leaf{ overflow:visible; }
   .tb,.leaf.r .tb,.leaf.twocol .tb,.leaf.r.twocol .tb{ margin-left:0; margin-right:0; }
   .fn,.leaf.r .fn{ margin-left:0; margin-right:0; column-count:1; }
   .marg{ position:static; width:auto; max-height:none; transform:none; margin:12px 0;
@@ -771,7 +892,7 @@ body{
   <div class="spread">
     <div class="gutter" aria-hidden="true"></div>
 
-    <section class="leaf l ruled twocol" style="display:flex;flex-direction:column">
+    <section class="leaf l ruled twocol" style="display:flex;flex-direction:column" data-hands-hand="nomenclator,corrector,revisor,chartarius">
       <div class="rh"><span>The Arda Archive &middot; Of the Silences</span><span class="n">vi</span></div>
       <span class="illum" aria-hidden="true"></span>
       <div class="tb">
@@ -791,12 +912,24 @@ body{
           sentence typed by a careful reader has no shape at all.</div>
         <p>The cost of not looking is not only a false claim. It is a citation the archive owned and
           could not see.<span class="rm">c</span></p>
+        <p>The rule widened again within the day. A hand may not assert a silence it did not
+          search, and a <span class="gl" data-gl="a branch nothing tested">fall-through</span> at
+          least has a shape a sweep can find. A sentence typed by a careful reader has no shape at
+          all, and passes every instrument the archive owns.<span class="rm">f</span></p>
+        <div class="sub">What the sweep found</div>
+        <p>An <span class="corr" data-was="AST">abstract-syntax</span> sweep of all 326 modules
+          tested seven shapes of fall-through and qualified <em>two</em>. Between them they
+          published <span class="mark">598</span> records asserting a silence nothing had
+          measured — 382 portrait prompts and the 208 places above.</p>
+        <p class="cite">The cost of not looking is not only a false claim. It is a citation the
+          archive owned and could not see. <span class="mark">[C]</span></p>
+
       </div>
       <span class="manicule" style="top:172px" aria-hidden="true">☞</span>
-      <aside class="marg" style="top:92px"><b>Hand II</b>Cf. the Taniquetil case — a silence that,
-        when searched, <i>upgraded</i> the claim from inference to witness.</aside>
-      <aside class="marg hand2" style="top:218px"><b>Hand III</b>Fourteen tested, four false. Blast
-        radius, not authorship: two were generated, two written by hand.</aside>
+      <span data-hand-slot="52"></span>
+      <span data-hand-slot="180"></span>
+      <span data-hand-slot="308"></span>
+      <span data-hand-slot="436"></span>
       <div class="fn">
         <p><span class="rm">a</span> The archive's fourth property: every published claim is guarded
           by something that can fail.</p>
@@ -808,7 +941,7 @@ body{
       <figure class="fig marg-fig"><div class="frame"><span class="dev-ship" aria-hidden="true"></span></div><figcaption>Vingilot, as a device</figcaption></figure>
     </section>
 
-    <section class="leaf r ruled twocol" style="display:flex;flex-direction:column">
+    <section class="leaf r ruled twocol" style="display:flex;flex-direction:column" data-hands-hand="annalist,stemma,revisor,nomenclator">
       <div class="rh"><span>Volume VI &middot; Lore and First Principles</span><span class="n">vii</span></div>
       <span class="illum" aria-hidden="true"></span>
       <div class="tb">
@@ -827,13 +960,24 @@ body{
         <p class="cite">Never write that the corpus does not say X without having asked
           <em>ardatext</em> for X — and without asking whether a neighbouring record already says
           it. <span class="mark">[C]</span></p>
+        <p>Fourteen silence claims have been tested and four were false — two written by a
+          generator and two by a hand. <span class="corr" data-was="Authorship">Blast radius</span>,
+          not authorship: the fall-through publishes at scale, and the typed sentence is the one
+          nobody can sweep for.<span class="rm">f</span></p>
+        <figure class="fig"><div class="frame"><span class="dev-star" aria-hidden="true"></span></div>
+          <figcaption>A star of the Seven, as the archive draws it</figcaption></figure>
+        <p>Of the four, one <em>upgraded</em> a claim rather than retracting one, which is why a
+          silence audit is run at all: it recovers evidence as often as it removes it.</p>
+        <div class="slip"><b>Struck 19 Aug</b> — <span class="struck">oath_felagund: the annal does
+          not put the refusal in words the archive could quote.</span> It does, verbatim, and a
+          sibling record was quoting it at the same moment.</div>
+
       </div>
       <span class="manicule" style="top:238px" aria-hidden="true">☞</span>
-      <aside class="marg" style="top:92px"><b>Hand II</b>The matcher folds ligatures, accents and
-        line-breaks. A raw grep for <i>Théoden</i> returns nought in the Lord of the Rings — 261
-        times over.</aside>
-      <aside class="marg hand2" style="top:218px"><b>Hand IV</b>oath_felagund: declared silent 18
-        Aug, withdrawn 19 Aug. The annal sets it down verbatim.</aside>
+      <span data-hand-slot="52"></span>
+      <span data-hand-slot="180"></span>
+      <span data-hand-slot="308"></span>
+      <span data-hand-slot="436"></span>
       <div class="fn">
         <p><span class="rm">d</span> The owner's ruling, 19 Aug 2026: show the two houses
           disagreeing rather than resolving them.</p>
@@ -850,4 +994,5 @@ body{
 </div>
 
 <script src="glossary.js" defer></script>
+<script src="codex-hands.js" defer></script>
 </body></html>
