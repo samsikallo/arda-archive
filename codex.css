@@ -136,53 +136,6 @@
 :root[data-archetype="plates"] #cx-vols:focus-within{opacity:1}
 :root[data-archetype="plates"] #cx-crumb{padding-bottom:4px}
 
-/* ═══════════════════════════════════════════════════════════════════════════════════════════
-   CODEX-STAGE-5 — THE SPATIAL CONTRACT. Added 18 August 2026.
-
-   WHY THIS EXISTS, AND WHAT WAS ACTUALLY MISSING. Everything above this line builds FURNITURE --
-   #cx-toc, #cx-folio, #cx-crumb, #cx-bar, #cx-jrn, #cx-run, #cx-vols -- and #codex-shell is
-   appended to the END of <body>, so it floats beside the page instead of containing it. Measured
-   before writing a line: this stylesheet contained `grid-template` 0 times, `leaf` 0, `spine` 0,
-   `plaque` 0, `clasp` 0. The pieces of a book were all present and the BOOK was not, which is
-   exactly why the result read as a manuscript skin rather than a codex.
-
-   THE HOOK IS THE MAIN LANDMARK, AND IT IS UNIVERSAL. Sampled 51 routes across every family:
-   51 of 51 expose a main landmark and 49 use id="main". So the object can be built AROUND the
-   content that already exists -- no DOM is moved, no page is regenerated, and a route that has
-   not been migrated still lands inside the object.
-
-   IT DEGRADES BEFORE IT BREAKS. Every rule here is scoped under [data-codex="on"], which nav.js
-   sets from localStorage `arda-codex`, so the whole layer is one switch away from off. Nothing
-   here is required for a page to be readable.                                                */
-
-:root[data-codex="on"]{
-  /* the ground, the object and the furniture are three separate token groups on purpose, so the
-     low-ornament and print modes can drop one without rebuilding the others. */
-  --cx-ground:#171310; --cx-ground2:#241d17;
-  --cx-stock:#f4ecd8; --cx-stock2:#efe4c9;
-  --cx-edge:#c9b98f; --cx-rule:#b7a373;
-  --cx-tab:#6b5836; --cx-tab-on:#8a6d3b;
-  --cx-plaque:#241d17; --cx-plaque-ink:#e2cf96;
-  --cx-leafgap:clamp(14px,2.2vw,34px);
-  --cx-tabw:clamp(26px,3vw,40px);
-}
-:root[data-theme="dark"][data-codex="on"]{
-  --cx-ground:#0d0b09; --cx-ground2:#161210;
-  --cx-stock:#221c15; --cx-stock2:#1b1611;
-  --cx-edge:#5a4c33; --cx-rule:#6b5a3c;
-}
-
-/* 1. THE LIBRARY GROUND. A place, not a picture: two radial pools suggesting lamplight on a
-      lectern, painted in colour only. No image, no video, no parallax, no canvas -- the brief's
-      budget is 25 KB gzip for the whole shell and a single frame of "library photograph" would
-      spend it all and still crop badly on a phone. */
-:root[data-codex="on"] body{
-  background:
-    radial-gradient(120% 80% at 50% -10%, var(--cx-ground2), transparent 60%),
-    radial-gradient(80% 60% at 50% 120%, var(--cx-ground2), transparent 55%),
-    var(--cx-ground);
-}
-
 /* 2. THE CODEX OBJECT. The existing main landmark IS the open book: page stock, a bevelled
       edge, and the shadow that makes it sit on something. */
 @media (min-width:900px){
@@ -220,19 +173,6 @@
     pointer-events:none;z-index:1;
   }
 }
-
-/* 3. THE TITLE PLAQUE. Persistent identity above the binding: it names the ARCHIVE and the
-      VOLUME, never the route's own heading -- repeating the <h1> in a gold box is decoration
-      pretending to be orientation. */
-:root[data-codex="on"] #cx-plaque{
-  display:block;margin:0 auto clamp(8px,1.4vw,16px);max-width:min(92vw,44rem);
-  background:linear-gradient(#2c241b,var(--cx-plaque));color:var(--cx-plaque-ink);
-  border:1px solid #6b5a3c;border-radius:2px;
-  padding:.34em 1.1em;text-align:center;
-  font-variant:small-caps;letter-spacing:.13em;font-size:.92rem;line-height:1.5;
-}
-:root[data-codex="on"] #cx-plaque .cx-pv{opacity:.72;font-size:.86em}
-:root[data-codex="on"] #cx-plaque .cx-pv::before{content:" · ";opacity:.5}
 
 /* 4. THE VOLUME THUMB INDEX, on the OUTER LEFT EDGE. Canonical destinations, one silhouette
       family, and never confusable with a personal ribbon. Below 1100px they stop being tabs and
@@ -345,22 +285,6 @@
    scroll, and no gutter, because there are no facing leaves to divide. */
 @media (max-width:1099px){
   :root[data-codex="on"][data-ledger="on"] .grid{grid-template-columns:minmax(0,1fr)}
-}
-
-/* ── ONE CANONICAL NAVIGATION AT A TIME ─────────────────────────────────────────────────────
-   At wide sizes the left edge owns the volumes, so the top bar's hall dropdowns come down: the
-   same seven destinations were being offered twice in two shapes. What remains above the book is
-   identity, the jump search, the theme and layer controls, feedback and the breadcrumb -- the
-   things the thumb index does NOT carry.
-
-   GUARDED THREE WAYS, and each is load-bearing. `[data-volnav="tabs"]` is set by codex.js ONLY
-   after it has rendered at least one volume link, so a failed manifest fetch or an old cached
-   shell leaves the dropdowns in place. `[data-codex="on"]` means the reader's own escape hatch
-   restores them. And the media query matches the one that draws the tabs, so below 1100px --
-   where the thumb index does not render at all -- the dropdowns are untouched and remain the
-   only route between halls. Immersion must degrade before access does. */
-@media (min-width:1100px){
-  :root[data-codex="on"][data-volnav="tabs"] #ardanav .grp{display:none}
 }
 
 /* ── BELOW THE WIDE BREAKPOINT THE THUMB INDEX STANDS DOWN ──────────────────────────────────
@@ -509,75 +433,7 @@
    JavaScript handled both and the stylesheet did not.
 
    Measured as a CENSUS of all 621 routes, not a sample: 582/582 entity pages at 88.0ch before,
-   and the figure is a dead tie because they share one `.card{max-width:660px}` at 15px Georgia --
-   660/7.5 = 88.0 exactly. Verified by setting role="main" at runtime on two of them, which moved
-   computed max-width from `none` to 495px and the measure to 66.0ch on both. */
-
-
-/* ── THE INCOMPLETE LEAF ────────────────────────────────────────────────────────────────────
-   §9 calls a blank leaf an anti-pattern, and measured across all 39 halls, ELEVEN of them lost
-   their records SILENTLY when the data failed -- oaths.html shed 85,679 characters and said
-   nothing, character.html and place.html fell to 21 characters of visible text. Five other halls
-   already said "could not", so the archive had a house habit that eleven halls did not follow.
-
-   It is a NOTICE and not an error dialog: the reader has a page that still works, and what they
-   need is to be told it is showing less than it holds -- and which records are missing, because
-   naming the absence is the same rule the corpus pages follow. */
-:root[data-codex="on"] #cx-fail{
-  display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 10px;
-  margin:0 0 14px; padding:11px 14px;
-  border:1px solid var(--cx-rule); border-left:3px solid var(--cx-rubric);
-  background:var(--cx-stock); color:var(--cx-ink);
-  font:14px/1.5 Georgia,serif;
-}
-:root[data-codex="on"] #cx-fail strong{color:var(--cx-rubric); font-weight:600}
-:root[data-codex="on"] #cx-fail .cx-fail-f{
-  flex-basis:100%; color:var(--cx-mut); font-size:12.5px; font-style:italic;
-  word-break:break-word;
-}
-:root[data-codex="on"] #cx-fail .cx-retry{
-  min-height:44px; padding:6px 14px; cursor:pointer;
-  font:13px Georgia,serif; color:var(--cx-ink);
-  background:transparent; border:1px solid var(--cx-rule); border-radius:3px;
-}
-:root[data-codex="on"] #cx-fail .cx-retry:hover,
-:root[data-codex="on"] #cx-fail .cx-retry:focus-visible{border-color:var(--cx-rubric)}
-
-/* ── THE LEAF BEING WRITTEN ─────────────────────────────────────────────────────────────────
-   Measured 18 Aug by holding every dataset request 2.5s (async route handler -- a SYNC one
-   blocks the driver rather than the request, and the service worker must be blocked or it
-   answers from cache; both defeated an earlier attempt at this measurement):
-
-       at 1.0s into the load, NINE of eleven data halls showed no waiting cue whatsoever
-       and ZERO halls set aria-busy. tours.html showed a completely blank leaf -- 0 characters.
-
-   character and place already did the right thing by hand -- "Summoning the record…" and
-   "Unrolling the charts…" -- so, as with the failure notice, the archive had a habit that most
-   halls did not follow.
-
-   THE CUE IS CSS SO IT DOES NOT WAIT FOR JAVASCRIPT. `data-loading` is set by aJ() inside each
-   hall's own first inline script, which runs before nav.js, before codex.js, and before the
-   fetch resolves -- so the rule below applies at the first paint that has this stylesheet, with
-   no scripting between the two. codex.js still adds aria-busy for assistive technology; that is
-   the layer that CAN afford to be late, because it is announced rather than seen.
-
-   `:empty` GUARDS IT: the cue is drawn only where the leaf's record container is still empty.
-   A hall that already has its records on screen and is quietly fetching a second dataset must
-   not tell the reader it is waiting -- living.html fetches three.
-
-   THE CUE IS NOT SCOPED TO [role="main"], AND THAT IS MEASURED RATHER THAN LAZY. tours.html's
-   [role="main"] is #stage -- an iframe that plays a tour -- and its record list #list sits
-   OUTSIDE main altogether. A rule scoped to the leaf could never reach it, which is how that
-   hall came to show 0 characters while loading. The containers are named directly instead. */
-:root[data-codex="on"][data-loading] .grid:empty::before,
-:root[data-codex="on"][data-loading] #grid:empty::before,
-:root[data-codex="on"][data-loading] #list:empty::before,
-:root[data-codex="on"][data-loading] #out:empty::before,
-:root[data-codex="on"][data-loading] #halls:empty::before{
-  content:"Reading the record\2026";
-  display:block; padding:34px 0; text-align:center;
-  color:var(--cx-mut); font:italic 15px Georgia,serif; letter-spacing:.02em;
-}
+   and the figure is a dead tie because they share one `.card{max-width:660px}
 /* The rule breathes rather than spins: a codex is not a progress bar. Motion is opt-out by the
    reader's own setting, and the text stands unaided when it is off. */
 @media (prefers-reduced-motion:no-preference){
