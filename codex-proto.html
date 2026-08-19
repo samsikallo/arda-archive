@@ -552,7 +552,22 @@ body{
    with abbreviations and line-fillers, which we do not have; ragged-right is the honest substitute
    and costs nothing the sources actually show. */
 :root[data-hand="authentic"] .leaf.twocol .tb p{ text-align:left; hyphens:auto; }
-:root[data-hand="authentic"] .versal{ font-family:UnifrakturMaguntia,Cinzel,serif; }
+/* THE VERSAL IS A REAL MEDIEVAL LETTER NOW, AND IT IS LIVE TEXT RATHER THAN A PICTURE.
+   Junicode 2.226 carries an ENLARGE axis (ENLA, 0-100) built for exactly this: the capitals grow
+   into versals with the weight and the terminals a scribe drew, and at ENLA=100 they ARE versals.
+   Peter S. Baker, OFL-1.1, read from the OFL.txt inside his own release rather than from a
+   summary of it -- the licence file ships beside the font.
+
+   1,141 KB OF VARIABLE FONT REDUCED TO 3.8 KB. The axis is pinned at 100, weight and width at
+   book values, 5,936 glyphs this will never set are dropped, and every layout table a versal does
+   not need goes with them. A drawn initial would be an image with a caption and a licence; this
+   is a letter -- selectable, searchable, scalable, and it inherits the leaf's ink. */
+@font-face{ font-family:"Junicode Versal"; src:url("fonts/junicode-versal.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap;
+  unicode-range:U+0041-005A,U+00C0-00DE,U+0152,U+00C6; }
+.versal{ font-family:"Junicode Versal",Cinzel,Georgia,serif; }
+:root[data-hand="authentic"] .versal{ font-family:"Junicode Versal",UnifrakturMaguntia,Cinzel,serif;
+  font-size:3.6em; line-height:.8; }
 /* the apparatus stays humanist ON PURPOSE -- it is the archive speaking, not the scribe */
 :root[data-hand="authentic"] .fn,
 :root[data-hand="authentic"] .marg,

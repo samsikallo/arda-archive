@@ -5428,6 +5428,14 @@
    "hand": "cropped by map/gen_sarati_vowels.py from an image supplied by the archive's owner",
    "licence": "published on the owner's standing authorization of 16 August 2026 to use and publish what the archive holds or finds; the chart was supplied by him",
    "source": "uploads/scripts/Sarati_vowels.png"
+  },
+  {
+   "file": "fonts/junicode-versal.woff2",
+   "what": "44 medieval versal capitals as LIVE TEXT -- Junicode's Enlarge (ENLA) axis pinned at 100, instanced and subset to the capitals this archive uses. 1,141 KB of variable font reduced to 3.8 KB by dropping 5,936 glyphs it will never set and every layout table a versal does not need. A drawn initial would be an image; this is a letter.",
+   "hand": "Peter S. Baker",
+   "licence": "OFL-1.1",
+   "source": "https://github.com/psb1558/Junicode-font  (v2.226)",
+   "licence_file": "fonts/junicode-OFL.txt"
   }
  ],
  "pending_provenance": []
