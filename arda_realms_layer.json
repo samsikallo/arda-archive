@@ -1,6 +1,6 @@
 {
- "n_edges": 105,
- "n_realms": 30,
+ "n_edges": 117,
+ "n_realms": 33,
  "note": "A realm is shown by the places the corpus puts inside it, and NEVER by a drawn border. The corpus describes an extent in words -- 'from the Anduin to the Sea' -- which names what a border runs between and does not give a line; the one sheet that does draw realm polygons has been measured at 44 miles out. The shape a reader infers from the lit places is the reader's own inference, not the archive's assertion. Only members the map can actually show are counted.",
  "realms": [
   {
@@ -68,6 +68,11 @@
      "where": "unmapped"
     },
     {
+     "key": "linhir",
+     "name": "Linhir",
+     "where": "sheet"
+    },
+    {
      "key": "minas tirith",
      "name": "Minas Tirith",
      "where": "sheet"
@@ -98,9 +103,93 @@
      "where": "sheet"
     }
    ],
-   "n_members": 18,
-   "n_shown": 17,
+   "n_members": 19,
+   "n_shown": 18,
    "name": "Gondor"
+  },
+  {
+   "ages": "FoA,TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "rohan",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "dunharrow",
+     "name": "Dunharrow",
+     "where": "sheet"
+    },
+    {
+     "key": "east emnet",
+     "name": "East-Emnet",
+     "where": "unmapped"
+    },
+    {
+     "key": "eastemnet",
+     "name": "Eastemnet",
+     "where": "unmapped"
+    },
+    {
+     "key": "eastfold",
+     "name": "Eastfold",
+     "where": "unmapped"
+    },
+    {
+     "key": "edoras",
+     "name": "Edoras",
+     "where": "sheet"
+    },
+    {
+     "key": "edoras meduseld",
+     "name": "Edoras/Meduseld",
+     "where": "unmapped"
+    },
+    {
+     "key": "fangorn",
+     "name": "Fangorn",
+     "where": "sheet"
+    },
+    {
+     "key": "fords of isen",
+     "name": "Fords of Isen",
+     "where": "sheet"
+    },
+    {
+     "key": "helm s deep",
+     "name": "Helm's Deep",
+     "where": "sheet"
+    },
+    {
+     "key": "isengard",
+     "name": "Isengard",
+     "where": "sheet"
+    },
+    {
+     "key": "parth galen",
+     "name": "Parth Galen",
+     "where": "unmapped"
+    },
+    {
+     "key": "the wold",
+     "name": "The Wold",
+     "where": "unmapped"
+    },
+    {
+     "key": "west emnet",
+     "name": "West-Emnet",
+     "where": "unmapped"
+    },
+    {
+     "key": "westfold",
+     "name": "Westfold",
+     "where": "unmapped"
+    }
+   ],
+   "n_members": 15,
+   "n_shown": 14,
+   "name": "Rohan"
   },
   {
    "ages": "TA",
@@ -187,85 +276,6 @@
    "name": "The Shire"
   },
   {
-   "ages": "FoA,TA",
-   "bounded_by": [],
-   "bounds_cite": null,
-   "bounds_quote": null,
-   "bounds_unheld": [],
-   "key": "rohan",
-   "kind": "POLITY_REALM",
-   "members": [
-    {
-     "key": "dunharrow",
-     "name": "Dunharrow",
-     "where": "sheet"
-    },
-    {
-     "key": "east emnet",
-     "name": "East-Emnet",
-     "where": "unmapped"
-    },
-    {
-     "key": "eastfold",
-     "name": "Eastfold",
-     "where": "unmapped"
-    },
-    {
-     "key": "edoras",
-     "name": "Edoras",
-     "where": "sheet"
-    },
-    {
-     "key": "edoras meduseld",
-     "name": "Edoras/Meduseld",
-     "where": "unmapped"
-    },
-    {
-     "key": "fangorn",
-     "name": "Fangorn",
-     "where": "sheet"
-    },
-    {
-     "key": "fords of isen",
-     "name": "Fords of Isen",
-     "where": "sheet"
-    },
-    {
-     "key": "helm s deep",
-     "name": "Helm's Deep",
-     "where": "sheet"
-    },
-    {
-     "key": "isengard",
-     "name": "Isengard",
-     "where": "sheet"
-    },
-    {
-     "key": "parth galen",
-     "name": "Parth Galen",
-     "where": "unmapped"
-    },
-    {
-     "key": "the wold",
-     "name": "The Wold",
-     "where": "unmapped"
-    },
-    {
-     "key": "west emnet",
-     "name": "West-Emnet",
-     "where": "unmapped"
-    },
-    {
-     "key": "westfold",
-     "name": "Westfold",
-     "where": "unmapped"
-    }
-   ],
-   "n_members": 14,
-   "n_shown": 13,
-   "name": "Rohan"
-  },
-  {
    "ages": "SA,TA",
    "bounded_by": [],
    "bounds_cite": null,
@@ -323,6 +333,50 @@
    "n_members": 9,
    "n_shown": 9,
    "name": "Mordor"
+  },
+  {
+   "ages": "TA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "anorien",
+   "kind": "POLITY_SUBREGION",
+   "members": [
+    {
+     "key": "amon din",
+     "name": "Amon Din",
+     "where": "sheet"
+    },
+    {
+     "key": "calenhad",
+     "name": "Calenhad",
+     "where": "sheet"
+    },
+    {
+     "key": "eilenach",
+     "name": "Eilenach",
+     "where": "sheet"
+    },
+    {
+     "key": "erelas",
+     "name": "Erelas",
+     "where": "sheet"
+    },
+    {
+     "key": "halifirien",
+     "name": "Halifirien",
+     "where": "unmapped"
+    },
+    {
+     "key": "nardol",
+     "name": "Nardol",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 6,
+   "n_shown": 6,
+   "name": "Anórien"
   },
   {
    "ages": "SA,TA",
@@ -749,6 +803,54 @@
    "n_members": 2,
    "n_shown": 2,
    "name": "Dale"
+  },
+  {
+   "ages": "FA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "dorthonion",
+   "kind": "POLITY_REALM",
+   "members": [
+    {
+     "key": "ered gorgoroth",
+     "name": "Ered Gorgoroth",
+     "where": "sheet"
+    },
+    {
+     "key": "tarn aeluin",
+     "name": "Tarn Aeluin",
+     "where": "sheet"
+    }
+   ],
+   "n_members": 2,
+   "n_shown": 2,
+   "name": "Dorthonion"
+  },
+  {
+   "ages": "FA",
+   "bounded_by": [],
+   "bounds_cite": null,
+   "bounds_quote": null,
+   "bounds_unheld": [],
+   "key": "east beleriand",
+   "kind": "POLITY_REGION",
+   "members": [
+    {
+     "key": "amon ereb",
+     "name": "Amon Ereb",
+     "where": "sheet"
+    },
+    {
+     "key": "ramdal",
+     "name": "Ramdal",
+     "where": "his plate"
+    }
+   ],
+   "n_members": 2,
+   "n_shown": 2,
+   "name": "East Beleriand"
   },
   {
    "ages": "",

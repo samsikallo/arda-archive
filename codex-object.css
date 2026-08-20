@@ -833,6 +833,59 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
   position:relative !important; margin-left:-74px !important; width:104px !important;
   float:none !important; display:block !important; }
 
+:root[data-codex-object="on"] .book{ --tab-5:#5c3f6b; --tab-6:#2b5b55; --tab-7:#6b4a2a; }
+:root[data-codex-object="on"] .book > .tabs > .tab:nth-child(5){
+  background:linear-gradient(90deg,#241505 0%, var(--tab-5) 22%, var(--tab-5) 100%) !important; }
+:root[data-codex-object="on"] .book > .tabs > .tab:nth-child(6){
+  background:linear-gradient(90deg,#241505 0%, var(--tab-6) 22%, var(--tab-6) 100%) !important; }
+:root[data-codex-object="on"] .book > .tabs > .tab:nth-child(7){
+  background:linear-gradient(90deg,#241505 0%, var(--tab-7) 22%, var(--tab-7) 100%) !important; }
+
+:root[data-codex-object="on"] .book > .tabs > .tab[aria-current]{
+  margin-left:-94px !important; color:#fff !important; }
+
+:root[data-codex-object="on"] .book .toc{ list-style:none; margin:.35em 0 0; padding:0; }
+:root[data-codex-object="on"] .book .toc > li{
+  display:flex; align-items:baseline; gap:.4em; break-inside:avoid;
+  margin:0 0 .18em; line-height:1.34; }
+:root[data-codex-object="on"] .book .toc > li > a{
+  color:var(--ink); text-decoration:none; border-bottom:1px solid transparent; }
+:root[data-codex-object="on"] .book .toc > li > a:hover,
+:root[data-codex-object="on"] .book .toc > li > a:focus-visible{
+  border-bottom-color:var(--rubric); }
+:root[data-codex-object="on"] .book .toc > li::after{
+  content:""; flex:1 1 auto; min-width:1.2em; align-self:center; height:0;
+  border-bottom:1px dotted var(--ink-soft); opacity:.5; }
+
+:root[data-codex-object="on"] .book .leaf.contents .tb > .sub,
+:root[data-codex-object="on"] .book .leaf.l.contents .tb > .toc{ column-span:all; }
+:root[data-codex-object="on"] .book .toc > li > .fol{
+  flex:0 0 auto; order:3; font-variant-numeric:tabular-nums; letter-spacing:.06em;
+  color:var(--ink-soft); font-size:.92em; }
+
+:root[data-codex-object="on"] .book .spread:has(> .leaf.contents){ grid-template-rows:minmax(0,1fr); }
+:root[data-codex-object="on"] .book .leaf.contents{ min-height:0; overflow:hidden; }
+
+:root[data-codex-object="on"] .book .leaf.contents.long .tb{
+  columns:auto; column-rule:none; flex:1 1 auto; min-height:0;
+  overflow-y:auto; overflow-x:hidden; overscroll-behavior:contain; scrollbar-width:thin; }
+
+:root[data-codex-object="on"] .book .leaf.contents.long .tb{
+  -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 14px,#000 calc(100% - 14px),transparent 100%);
+  mask-image:linear-gradient(180deg,transparent 0,#000 14px,#000 calc(100% - 14px),transparent 100%); }
+@media (max-width:1000px){
+
+  :root[data-codex-object="on"] .book:has(.leaf.contents){ height:auto; }
+
+  :root[data-codex-object="on"] .book .leaf.contents{
+    overflow:visible; min-height:auto; }
+  :root[data-codex-object="on"] .book .leaf.contents.long .tb{
+    overflow:visible; min-height:auto; flex:0 0 auto;
+    -webkit-mask-image:none; mask-image:none; }
+  
+  :root[data-codex-object="on"] .book .spread:has(> .leaf.contents){ grid-template-rows:auto auto; }
+}
+
 :root[data-codex-object="on"] .book .portrait{ z-index:auto; }
 
 @media (max-width:1000px){

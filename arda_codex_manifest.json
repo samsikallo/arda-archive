@@ -9,7 +9,7 @@
   "living.html": "the halls put it under Peoples; the brief's Volume IV contents list puts a herbarium with relics and devices. The brief is followed."
  },
  "schemaVersion": 1,
- "n_routes": 621,
+ "n_routes": 622,
  "n_volumes": 7,
  "volumes": [
   {
@@ -36,12 +36,6 @@
      ]
     },
     {
-     "part": "The Living Map",
-     "entries": [
-      "sheets.html"
-     ]
-    },
-    {
      "part": "A Place in Full",
      "entries": [
       "place.html"
@@ -55,12 +49,6 @@
     },
     {
      "part": "The Drawn Sheets",
-     "entries": [
-      "sheets.html"
-     ]
-    },
-    {
-     "part": "Aman",
      "entries": [
       "sheets.html"
      ]
@@ -197,6 +185,12 @@
      ]
     },
     {
+     "part": "The Design of the Book",
+     "entries": [
+      "codex-proto.html"
+     ]
+    },
+    {
      "part": "Cosmology",
      "entries": [
       "cosmology.html"
@@ -304,28 +298,28 @@
    "presentation": "full-bleed",
    "next": "armies_dashboard.html"
   },
-  "sheets.html": {
+  "arda_timemap.html": {
    "volume": null,
    "part": "Retired Routes",
    "archetype": "tombstone",
    "spread": "none",
    "title": "arda_timemap",
-   "canonical": "sheets.html",
+   "canonical": "arda_timemap.html",
    "retired": true,
    "successor": "sheets.html",
-   "canonicalRoute": "sheets.html",
+   "canonicalRoute": "arda_timemap.html",
    "presentation": "single-folio"
   },
-  "sheets.html": {
+  "arda_timemap_jpeg.html": {
    "volume": null,
    "part": "Retired Routes",
    "archetype": "tombstone",
    "spread": "none",
    "title": "arda_timemap_jpeg",
-   "canonical": "sheets.html",
+   "canonical": "arda_timemap_jpeg.html",
    "retired": true,
    "successor": "sheets.html",
-   "canonicalRoute": "sheets.html",
+   "canonicalRoute": "arda_timemap_jpeg.html",
    "presentation": "single-folio"
   },
   "armies_dashboard.html": {
@@ -371,7 +365,7 @@
    "canonical": "canon.html",
    "canonicalRoute": "canon.html",
    "presentation": "paired-leaf",
-   "next": "cosmology.html"
+   "next": "codex-proto.html"
   },
   "character.html": {
    "volume": "III",
@@ -385,17 +379,29 @@
    "prev": "ainur.html",
    "next": "genealogy.html"
   },
-  "sheets.html": {
+  "chronicle.html": {
    "volume": null,
    "part": "Retired Routes",
    "archetype": "tombstone",
    "spread": "none",
    "title": "chronicle",
-   "canonical": "sheets.html",
+   "canonical": "chronicle.html",
    "retired": true,
    "successor": "sheets.html",
-   "canonicalRoute": "sheets.html",
+   "canonicalRoute": "chronicle.html",
    "presentation": "single-folio"
+  },
+  "codex-proto.html": {
+   "volume": "VI",
+   "part": "The Design of the Book",
+   "archetype": "workbench",
+   "spread": "flat",
+   "title": "The Design of the Book",
+   "canonical": "codex-proto.html",
+   "canonicalRoute": "codex-proto.html",
+   "presentation": "single-folio",
+   "prev": "canon.html",
+   "next": "cosmology.html"
   },
   "compare.html": {
    "volume": "VII",
@@ -430,7 +436,7 @@
    "canonical": "cosmology.html",
    "canonicalRoute": "cosmology.html",
    "presentation": "full-bleed",
-   "prev": "canon.html",
+   "prev": "codex-proto.html",
    "next": "oaths.html"
   },
   "gallery.html": {
@@ -479,7 +485,7 @@
    "canonicalRoute": "gondolin.html",
    "presentation": "paired-leaf",
    "prev": "gazetteer.html",
-   "next": "sheets.html"
+   "next": "place.html"
   },
   "heraldry.html": {
    "volume": "IV",
@@ -525,17 +531,17 @@
    "presentation": "paired-leaf",
    "prev": "heraldry.html"
   },
-  "sheets.html": {
-   "volume": "I",
-   "part": "The Living Map",
-   "archetype": "atlas",
-   "spread": "full",
-   "title": "The Living Map",
-   "canonical": "sheets.html",
-   "canonicalRoute": "sheets.html",
-   "presentation": "full-bleed",
-   "prev": "gondolin.html",
-   "next": "place.html"
+  "map.html": {
+   "volume": null,
+   "part": "Retired Routes",
+   "archetype": "tombstone",
+   "spread": "none",
+   "title": "map",
+   "canonical": "map.html",
+   "retired": true,
+   "successor": "sheets.html",
+   "canonicalRoute": "map.html",
+   "presentation": "single-folio"
   },
   "names.html": {
    "volume": "V",
@@ -6604,7 +6610,7 @@
    "canonical": "place.html",
    "canonicalRoute": "place.html",
    "presentation": "paired-leaf",
-   "prev": "sheets.html",
+   "prev": "gondolin.html",
    "next": "realms.html"
   },
   "place/amon_ereb.html": {
@@ -8779,16 +8785,16 @@
    "presentation": "paired-leaf",
    "prev": "armies_dashboard.html"
   },
-  "ainur.html": {
+  "registers.html": {
    "volume": null,
    "part": "Retired Routes",
    "archetype": "tombstone",
    "spread": "none",
    "title": "registers",
-   "canonical": "ainur.html",
+   "canonical": "registers.html",
    "retired": true,
    "successor": "ainur.html",
-   "canonicalRoute": "ainur.html",
+   "canonicalRoute": "registers.html",
    "presentation": "single-folio"
   },
   "sheets.html": {
@@ -8800,8 +8806,7 @@
    "canonical": "sheets.html",
    "canonicalRoute": "sheets.html",
    "presentation": "full-bleed",
-   "prev": "realms.html",
-   "next": "sheets.html"
+   "prev": "realms.html"
   },
   "silences.html": {
    "volume": "VI",
@@ -8837,16 +8842,17 @@
    "presentation": "paired-leaf",
    "prev": "theindex.html"
   },
-  "sheets.html": {
-   "volume": "I",
-   "part": "Aman",
-   "archetype": "atlas",
-   "spread": "full",
-   "title": "Aman",
-   "canonical": "sheets.html",
-   "canonicalRoute": "sheets.html",
-   "presentation": "full-bleed",
-   "prev": "sheets.html"
+  "valinor.html": {
+   "volume": null,
+   "part": "Retired Routes",
+   "archetype": "tombstone",
+   "spread": "none",
+   "title": "valinor",
+   "canonical": "valinor.html",
+   "retired": true,
+   "successor": "sheets.html",
+   "canonicalRoute": "valinor.html",
+   "presentation": "single-folio"
   },
   "writing.html": {
    "volume": "V",
@@ -8865,10 +8871,8 @@
    "baynes.html",
    "gazetteer.html",
    "gondolin.html",
-   "sheets.html",
    "place.html",
    "realms.html",
-   "sheets.html",
    "sheets.html"
   ],
   "II": [
@@ -8896,6 +8900,7 @@
   ],
   "VI": [
    "canon.html",
+   "codex-proto.html",
    "cosmology.html",
    "oaths.html",
    "silences.html"
