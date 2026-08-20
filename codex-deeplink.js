@@ -1,6 +1,6 @@
 /* codex-deeplink.js — the retired Living Map's hash vocabulary, served on the Drawn Sheets.
  *
- * WHY THIS FILE EXISTS. R9 retired map.html and map_aman.html and ruled: KEEP the data and use it
+ * WHY THIS FILE EXISTS. R9 retired the retired map page and map_aman.html and ruled: KEEP the data and use it
  * to refine the maps that remain live. Twenty-four references across tracked site/ still point a
  * reader at sheets.html with a hash on the end — 18 x #place=, 4 x #slice=, 2 x #k= — and
  * sheets.html has had ZERO location.hash handling since it was built. Every one of those links
@@ -10,7 +10,7 @@
  * tracked site/ and are not built here. Asserting a form nothing links to is how deeplink_check
  * came to test three forms the page did not serve.
  *
- * HOW A LANDMARK IS IDENTIFIED ON THIS PAGE, which is the whole difficulty. The retired map.html
+ * HOW A LANDMARK IS IDENTIFIED ON THIS PAGE, which is the whole difficulty. The retired the retired map page
  * drew every feature as `<g class="feat" data-key="...">` and `goHash` could ask for a key
  * directly. sheets.html does NOT do that. map/sheets_template.html:184 emits each of the 161
  * landmarks as
@@ -32,7 +32,7 @@
  *   'Grey Havens'        -> pin reads 'Grey Havens (Mithlond)'   parenthetical stripped
  *   'The Stone of Erech' -> pin reads 'Stone of Erech'           leading article stripped
  *
- * That is a name match, not a key match, and it is weaker than what map.html had. The honest fix
+ * That is a name match, not a key match, and it is weaker than what the retired map page had. The honest fix
  * is one line in the generator — see the note at the foot of this file.
  *
  * WHAT THIS FILE WILL NOT PRETEND. Of the 14 distinct place names published as #place=, six are
@@ -56,7 +56,7 @@
   if (!pinLayer) return;                      // not this hall — degrade silently, touch nothing.
 
   var REALMS_URL = "arda_realms_layer.json";
-  var TRIES_MAX = 40, TRY_MS = 150;           // map.html's own figures: 6s of patience.
+  var TRIES_MAX = 40, TRY_MS = 150;           // the retired map page's own figures: 6s of patience.
 
   // ---- THE PAGE'S OWN INK ---------------------------------------------------------------------
   // The lit classes are the ones the retired map used — `on` for the thing asked for, `member`
@@ -162,7 +162,7 @@
   // PRESENCE IS NOT VISIBILITY. A reader may have switched the names off with the page's own
   // toggle, and a pin inside a display:none layer is lit where nobody can see it. The toggle is
   // CLICKED rather than the style overwritten, so the page's own `on` state stays true — the same
-  // reason map.html clicked its Age button instead of setting aria-pressed by hand.
+  // reason the retired map page clicked its Age button instead of setting aria-pressed by hand.
   function showPins() {
     if (pinLayer.style.display !== "none") return;
     var b = document.querySelector('#toggles button[data-k="pins"]');
@@ -274,7 +274,7 @@
   }
 
   // ---- #slice=<n> — CANNOT BE SERVED HERE, AND IS SAID SO -------------------------------------
-  // On map.html a slice selected an Age on a bar: thirteen era-slices answered by four Ages,
+  // On the retired map page a slice selected an Age on a bar: thirteen era-slices answered by four Ages,
   // read off each slice's own label. THE DRAWN SHEETS HAVE NO ERA CONTROL — measured, not
   // assumed: zero occurrences of `data-age`, `#bar` or any time control in the built page. Two
   // traced plates are one drawing each; there is no Age for a slice to select. Rather than fail
@@ -295,7 +295,7 @@
   }
 
   // ---- THE PARSE ------------------------------------------------------------------------------
-  // Same shape map.html used: `(?:^|[#&])form=([^&]+)`, so several forms may ride one hash and a
+  // Same shape the retired map page used: `(?:^|[#&])form=([^&]+)`, so several forms may ride one hash and a
   // form is never matched inside another form's value.
   //
   // THE THREE FORMS ARE SPELLED OUT AS LITERAL REGEXES ON PURPOSE, AND THIS IS NOT STYLE.
@@ -321,7 +321,7 @@
   // ---- THE RUN --------------------------------------------------------------------------------
   // WHY IT RETRIES. The sheets arrive by fetch and the pin layer is written only once they land,
   // so on ARRIVAL — the one case a shared link is actually used — the pins are not in the document
-  // when this first runs. map.html had exactly this fault and it failed invisibly: the page simply
+  // when this first runs. the retired map page had exactly this fault and it failed invisibly: the page simply
   // opened at nothing, and worked ever after on hashchange, which is why it went unnoticed. The
   // wait is for the LAYER TO BE POPULATED, not for a fixed delay.
   function run(tries) {
