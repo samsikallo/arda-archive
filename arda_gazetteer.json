@@ -6715,7 +6715,7 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 5 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 5 times in the tier-1 corpus [C for the name, I-M for the placing] — the count is exact and case-sensitive, all 5 in The Hobbit. DOUBLED: this is the same place as the record keyed “eagles eyrie” (“Eagles' Eyrie”), which the vector spec drew separately; notes/PLACE_CORPUS_SEARCH.md records the two as one place. Both records are kept until the owner merges them, because a merge changes the population and every page that counts it."
    ],
    "coords": [
     {
@@ -7546,7 +7546,7 @@
    ],
    "cites": [
     "RC (Baynes-map names) [I-M]; Fram and Scatha: App A II",
-    "D Cirion; C App A; RC[T]"
+    "RC[T] (the Reader's Companion, Baynes-map name-list) is the whole of it for the BURG. The row this cite comes from, Evidence Table R4, is headed “Éothéod & Framsburg” and its tier-1 sources — D, Cirion & Eorl; C, Appendix A — carry the ÉOTHÉOD and the tale of Fram and Scatha, NOT the stronghold. Framsburg occurs 0 times in all 33 tier-1 files (map/ardatext.py has_word, 20 Aug 2026) and stands in 4 tier-2/3 books only; the Companion itself hedges it, “presumably a stronghold named for Fram”. [I-M], and the tier-1 sigils are withdrawn from this place."
    ],
    "containment": [
     {
@@ -8729,7 +8729,7 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 34 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 34 times in the tier-1 corpus [C for the name, I-M for the placing] — exact and case-sensitive. BUT THE COUNT IS OF A NAME TWO PLACES SHARE, so it vouches for the word and not for this point. DOUBLED: this record is the same place as “harlond gondor quays”; “harlond lindon” is a genuinely different Harlond and must not be merged with either. Kept unmerged: the population is the owner's to change."
    ],
    "coords": [
     {
@@ -16793,7 +16793,7 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 41 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 41 times in the tier-1 corpus [C for the name, I-M for the placing] — exact and case-sensitive. DOUBLED: the same village is held under “tuckborough great smials” (“Tuckborough/Great Smials”) from the vector spec; notes/PLACE_CORPUS_SEARCH.md finds both entries resolve to the same texts. Kept unmerged pending the owner: a merge changes the population."
    ],
    "coords": [
     {
@@ -17610,7 +17610,7 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 4 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SETTLE_TA). THE COUNT OF 4 IS CASE-INSENSITIVE AND MIXES THREE DOORS. Measured 20 Aug 2026: only 2 of the 4 are the capitalised proper name — The Treason of Isengard and The Lord of the Rings, which are Moria's — while the other 2 are lower-case “west door”, one in Unfinished Tales naming VINYAMAR's door and one in The Fall of Gondolin. [I-M] for the name at 2 attestations, I-M for the placing. DOUBLED: the same door is also held under the keys “moria west door”, “moria west gate” and “west gate of moria”; the corpus index equates them itself (“West-gate, of Moria see Moria”), and merging four keys into one is a population change for the dataset's owner, not for this table. Note also that “West-gate” in LotR most often means BREE's."
    ],
    "containment": [
     {
