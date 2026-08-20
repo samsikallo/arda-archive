@@ -125,11 +125,11 @@ window.ardaGazMatch=function(keys,key){
 };
 window.ardaGazLoad=function(key){
  if(window.ARDA_GZ)return Promise.resolve(window.ARDA_GZ);
- return fetch("gaz_index.json").then(r=>r.json()).then(function(ix){
+ return aJ("gaz_index.json").then(function(ix){
    window.ARDA_GZR=new Set(ix.realm_ids||[]);
    var k=window.ardaGazMatch(ix.keys||[],key);
    if(!k){window.ARDA_GZ={};return {};}
-   return fetch("gaz/"+window.ardaGazFile(k)+".json").then(function(r){return r.json()}).then(function(rec){
+   return aJ("gaz/"+window.ardaGazFile(k)+".json").then(function(rec){
      var G={};G[k]=rec;window.ARDA_GZ=G;return G;});
  }).catch(function(){window.ARDA_GZ={};return {};});
 };

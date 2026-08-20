@@ -9,7 +9,7 @@
   "living.html": "the halls put it under Peoples; the brief's Volume IV contents list puts a herbarium with relics and devices. The brief is followed."
  },
  "schemaVersion": 1,
- "n_routes": 622,
+ "n_routes": 629,
  "n_volumes": 7,
  "volumes": [
   {
@@ -17,6 +17,12 @@
    "name": "Atlas and Realms",
    "thesis": "where things are",
    "parts": [
+    {
+     "part": "The Contents",
+     "entries": [
+      "volume-i.html"
+     ]
+    },
     {
      "part": "The Marked Sheet",
      "entries": [
@@ -61,6 +67,12 @@
    "thesis": "when things happened",
    "parts": [
     {
+     "part": "The Contents",
+     "entries": [
+      "volume-ii.html"
+     ]
+    },
+    {
      "part": "The Timeline",
      "entries": [
       "arda_timeline.html"
@@ -85,6 +97,12 @@
    "name": "Peoples and Houses",
    "thesis": "who they were",
    "parts": [
+    {
+     "part": "The Contents",
+     "entries": [
+      "volume-iii.html"
+     ]
+    },
     {
      "part": "The Ainur",
      "entries": [
@@ -117,6 +135,12 @@
    "thesis": "what was made and what grows",
    "parts": [
     {
+     "part": "The Contents",
+     "entries": [
+      "volume-iv.html"
+     ]
+    },
+    {
      "part": "Artefacts",
      "entries": [
       "artifacts.html"
@@ -148,6 +172,12 @@
    "thesis": "how they spoke and wrote",
    "parts": [
     {
+     "part": "The Contents",
+     "entries": [
+      "volume-v.html"
+     ]
+    },
+    {
      "part": "Tongues and Letters",
      "entries": [
       "languages.html"
@@ -178,6 +208,12 @@
    "name": "Lore and First Principles",
    "thesis": "what holds the world up",
    "parts": [
+    {
+     "part": "The Contents",
+     "entries": [
+      "volume-vi.html"
+     ]
+    },
     {
      "part": "Is It Canon?",
      "entries": [
@@ -215,6 +251,12 @@
    "name": "Index, Corpus and Reader's Paths",
    "thesis": "the apparatus of the archive",
    "parts": [
+    {
+     "part": "The Contents",
+     "entries": [
+      "volume-vii.html"
+     ]
+    },
     {
      "part": "Annals of the Archive",
      "entries": [
@@ -274,6 +316,7 @@
    "canonical": "ainur.html",
    "canonicalRoute": "ainur.html",
    "presentation": "paired-leaf",
+   "prev": "volume-iii.html",
    "next": "character.html"
   },
   "annals.html": {
@@ -285,6 +328,7 @@
    "canonical": "annals.html",
    "canonicalRoute": "annals.html",
    "presentation": "paired-leaf",
+   "prev": "volume-vii.html",
    "next": "compare.html"
   },
   "arda_timeline.html": {
@@ -296,6 +340,7 @@
    "canonical": "arda_timeline.html",
    "canonicalRoute": "arda_timeline.html",
    "presentation": "full-bleed",
+   "prev": "volume-ii.html",
    "next": "armies_dashboard.html"
   },
   "arda_timemap.html": {
@@ -343,6 +388,7 @@
    "canonical": "artifacts.html",
    "canonicalRoute": "artifacts.html",
    "presentation": "paired-leaf",
+   "prev": "volume-iv.html",
    "next": "gallery.html"
   },
   "baynes.html": {
@@ -354,6 +400,7 @@
    "canonical": "baynes.html",
    "canonicalRoute": "baynes.html",
    "presentation": "full-bleed",
+   "prev": "volume-i.html",
    "next": "gazetteer.html"
   },
   "canon.html": {
@@ -365,6 +412,7 @@
    "canonical": "canon.html",
    "canonicalRoute": "canon.html",
    "presentation": "paired-leaf",
+   "prev": "volume-vi.html",
    "next": "codex-proto.html"
   },
   "character.html": {
@@ -518,6 +566,7 @@
    "canonical": "languages.html",
    "canonicalRoute": "languages.html",
    "presentation": "paired-leaf",
+   "prev": "volume-v.html",
    "next": "names.html"
   },
   "living.html": {
@@ -8854,6 +8903,83 @@
    "canonicalRoute": "valinor.html",
    "presentation": "single-folio"
   },
+  "volume-i.html": {
+   "volume": "I",
+   "part": "The Contents",
+   "archetype": "contents",
+   "spread": "spread",
+   "title": "The Contents",
+   "canonical": "volume-i.html",
+   "canonicalRoute": "volume-i.html",
+   "presentation": "paired-leaf",
+   "next": "baynes.html"
+  },
+  "volume-ii.html": {
+   "volume": "II",
+   "part": "The Contents",
+   "archetype": "contents",
+   "spread": "spread",
+   "title": "The Contents",
+   "canonical": "volume-ii.html",
+   "canonicalRoute": "volume-ii.html",
+   "presentation": "paired-leaf",
+   "next": "arda_timeline.html"
+  },
+  "volume-iii.html": {
+   "volume": "III",
+   "part": "The Contents",
+   "archetype": "contents",
+   "spread": "spread",
+   "title": "The Contents",
+   "canonical": "volume-iii.html",
+   "canonicalRoute": "volume-iii.html",
+   "presentation": "paired-leaf",
+   "next": "ainur.html"
+  },
+  "volume-iv.html": {
+   "volume": "IV",
+   "part": "The Contents",
+   "archetype": "contents",
+   "spread": "spread",
+   "title": "The Contents",
+   "canonical": "volume-iv.html",
+   "canonicalRoute": "volume-iv.html",
+   "presentation": "paired-leaf",
+   "next": "artifacts.html"
+  },
+  "volume-v.html": {
+   "volume": "V",
+   "part": "The Contents",
+   "archetype": "contents",
+   "spread": "spread",
+   "title": "The Contents",
+   "canonical": "volume-v.html",
+   "canonicalRoute": "volume-v.html",
+   "presentation": "paired-leaf",
+   "next": "languages.html"
+  },
+  "volume-vi.html": {
+   "volume": "VI",
+   "part": "The Contents",
+   "archetype": "contents",
+   "spread": "spread",
+   "title": "The Contents",
+   "canonical": "volume-vi.html",
+   "canonicalRoute": "volume-vi.html",
+   "presentation": "paired-leaf",
+   "next": "canon.html"
+  },
+  "volume-vii.html": {
+   "volume": "VII",
+   "part": "The Contents",
+   "archetype": "contents",
+   "spread": "spread",
+   "title": "The Contents",
+   "canonical": "volume-vii.html",
+   "canonicalRoute": "volume-vii.html",
+   "presentation": "paired-leaf",
+   "next": "annals.html"
+  },
   "writing.html": {
    "volume": "V",
    "part": "The Scriptorium",
@@ -8868,6 +8994,7 @@
  },
  "sequences": {
   "I": [
+   "volume-i.html",
    "baynes.html",
    "gazetteer.html",
    "gondolin.html",
@@ -8876,29 +9003,34 @@
    "sheets.html"
   ],
   "II": [
+   "volume-ii.html",
    "arda_timeline.html",
    "armies_dashboard.html",
    "reckoning.html"
   ],
   "III": [
+   "volume-iii.html",
    "ainur.html",
    "character.html",
    "genealogy.html",
    "population_dashboard.html"
   ],
   "IV": [
+   "volume-iv.html",
    "artifacts.html",
    "gallery.html",
    "heraldry.html",
    "living.html"
   ],
   "V": [
+   "volume-v.html",
    "languages.html",
    "names.html",
    "poems.html",
    "writing.html"
   ],
   "VI": [
+   "volume-vi.html",
    "canon.html",
    "codex-proto.html",
    "cosmology.html",
@@ -8906,6 +9038,7 @@
    "silences.html"
   ],
   "VII": [
+   "volume-vii.html",
    "annals.html",
    "compare.html",
    "corpus.html",
