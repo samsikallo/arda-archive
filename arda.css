@@ -668,3 +668,32 @@ svg#bmap > g > text{fill:#6d5f47 !important}
    nowhere in this file. */
 :root[data-theme="dark"] a.go{background:var(--n-raise) !important;
   border-color:var(--n-line) !important; color:var(--n-gold) !important}
+
+
+/* ══ C16 · A WITHDRAWAL IS TOLD BY ITS FORM, NEVER BY ITS HUE ══════════════════════════
+   Rubric red meant BOTH "this is a heading" and "this claim was withdrawn". C16: no colour may
+   mean two things on the same page. THE PROTOTYPE ALREADY ANSWERS IT and says so in its own words
+   -- codex-proto.html:349, "a settled grudge is STRUCK THROUGH, not greyed out" -- so nothing here
+   invents a third device; it extends the strike to the one place an ornament stood in for it.
+   `.struck` drew its whole crossing stroke with a background-image, AND FORCED-COLORS DELETES
+   BACKGROUND-IMAGES: measured on codex-proto.html under `chromium --force-high-contrast`, the
+   withdrawn sentence rendered as plain standing black text with no mark at all.
+   NON-`!important` on purpose: codex-object.css owns `.corr`/`.struck` and these are declarations
+   it does not make, so nothing is contested -- and if it ever goes inert, the mark survives here.
+   THE CENSUS, THE BROWSER EVIDENCE AND THE ARGUMENT ARE IN map/rubric_check.py, which guards this
+   and is in the gate. They are not repeated here because 632 pages download this file. */
+.corr,.struck{ text-decoration-line:line-through; text-decoration-thickness:1px;
+  text-decoration-skip-ink:none }
+
+/* THE OBELUS -- Aristarchus' athetesis mark, the sign set against a reading judged not to stand.
+   A glyph survives where a decoration does not. `display:inline-block` is load-bearing: a
+   descendant cannot switch off a decoration its ancestor propagates, and an inline-block stops
+   the propagation, so the mark stands unstruck at the head of the struck matter. */
+.struck::before{ content:"\00F7\00A0"; display:inline-block; text-decoration:none;
+  font-weight:700; font-style:normal; opacity:1 }
+
+/* THE HEADING KEEPS ITS RULE WHERE THE ORNAMENT DIES. Both `.rubric` flanks are painted with
+   `background: radial-gradient(...)`, measured as `none` under forced-colors; a border is not. */
+@media (forced-colors: active){
+  .rubric::before,.rubric::after{ border-top:1px solid; height:1px; box-sizing:border-box }
+}
