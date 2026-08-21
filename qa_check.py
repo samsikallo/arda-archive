@@ -99,7 +99,13 @@ import re as _re2
 dead=0
 for f in [x for x in glob.glob("*.html") if not x.startswith("_")]:
     txt=open(f).read()
-    for m in _re2.finditer(r'(?:href|src)="([^"#{$][^"#?]*?)(?:[#?][^"]*)?"',txt):
+    # THE BOUNDARY IS LOAD-BEARING. Without `(?<![-\w])` this matches the last three letters of
+    # `data-edge-src="..."`, and every data attribute that records a SOURCE is read as a hyperlink.
+    # That is what reported codex-proto.html -> t1_a_the_silmarillion.txt:9382 as a dead link: it
+    # is a corpus CITATION inside a code example in the prototype's own prose, never a link, and
+    # the same "fault" sits in ef2c7264 which GitHub Pages serves without complaint. A guard that
+    # cannot tell a citation from a link blocked the archive's publication for a day.
+    for m in _re2.finditer(r'(?<![-\w])(?:href|src)="([^"#{$][^"#?]*?)(?:[#?][^"]*)?"',txt):
         t=unquote(m.group(1))
         if "'" in t or "+" in t or "${" in t or "{" in t: continue   # JS template, not a link
         if t.startswith(("http","data:","mailto","//","/","about:")): continue

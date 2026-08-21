@@ -1332,15 +1332,15 @@
    "device": "elrond",
    "label": "Elrond of Imladris",
    "canon": false,
-   "tier": 2,
+   "tier": 3,
    "batch": "uploaded 2026-08-19",
-   "basis": "a named third party's device plate, matched to the device it depicts; published on the owner's ruling of 21 August, because the hall holds no canon device for this subject",
+   "basis": "a named third party's device plate, matched to the device it depicts; held -- the hall's own canon device holds this subject and he ruled that those always win",
    "source": "supplied to the workshop, 2026-08-19",
-   "licence": "the owner's standing confirmation of rights",
+   "licence": "NOT ESTABLISHED -- the artist is named in the supplied filename and no licence from that artist is on record",
    "author": "Quentandil",
-   "publishable": true,
-   "why_not": null,
-   "would_fill": "elrond",
+   "publishable": false,
+   "why_not": "a canon device already holds this subject in the hall, and the owner ruled on 21 August that the hall's canon devices always overwrite -- so this plate is kept as a matched reference and not shown.",
+   "would_fill": null,
    "sha1": "e71e9c8a1a954796",
    "size": [
     545,
@@ -1521,15 +1521,15 @@
    "device": "turgon",
    "label": "House of the King — Turgon",
    "canon": false,
-   "tier": 2,
+   "tier": 3,
    "batch": "uploaded 2026-08-19",
-   "basis": "a named third party's device plate, matched to the device it depicts; published on the owner's ruling of 21 August, because the hall holds no canon device for this subject",
+   "basis": "a named third party's device plate, matched to the device it depicts; held -- the hall's own canon device holds this subject and he ruled that those always win",
    "source": "supplied to the workshop, 2026-08-19",
-   "licence": "the owner's standing confirmation of rights",
+   "licence": "NOT ESTABLISHED -- the artist is named in the supplied filename and no licence from that artist is on record",
    "author": "Rondador Nocturno",
-   "publishable": true,
-   "why_not": null,
-   "would_fill": "turgon",
+   "publishable": false,
+   "why_not": "a canon device already holds this subject in the hall, and the owner ruled on 21 August that the hall's canon devices always overwrite -- so this plate is kept as a matched reference and not shown.",
+   "would_fill": null,
    "sha1": "c45286abc9f5e3cd",
    "size": [
     612,
@@ -1563,15 +1563,15 @@
    "device": "stewardseal",
    "label": "The Seal of the Stewards — R·ND·R",
    "canon": false,
-   "tier": 2,
+   "tier": 3,
    "batch": "uploaded 2026-08-19",
-   "basis": "a named third party's device plate, matched to the device it depicts; published on the owner's ruling of 21 August, because the hall holds no canon device for this subject",
+   "basis": "a named third party's device plate, matched to the device it depicts; held -- the hall's own canon device holds this subject and he ruled that those always win",
    "source": "supplied to the workshop, 2026-08-19",
-   "licence": "the owner's standing confirmation of rights",
+   "licence": "NOT ESTABLISHED -- the artist is named in the supplied filename and no licence from that artist is on record",
    "author": "Rondador Nocturno",
-   "publishable": true,
-   "why_not": null,
-   "would_fill": "stewardseal",
+   "publishable": false,
+   "why_not": "a canon device already holds this subject in the hall, and the owner ruled on 21 August that the hall's canon devices always overwrite -- so this plate is kept as a matched reference and not shown.",
+   "would_fill": null,
    "sha1": "292086b2def8c91a",
    "size": [
     931,
@@ -1647,15 +1647,15 @@
    "device": "gondorplain",
    "label": "The arms of Gondor, un-augmented",
    "canon": false,
-   "tier": 2,
+   "tier": 3,
    "batch": "uploaded 2026-08-19",
-   "basis": "a named third party's device plate, matched to the device it depicts; published on the owner's ruling of 21 August, because the hall holds no canon device for this subject",
+   "basis": "a named third party's device plate, matched to the device it depicts; held -- the hall's own canon device holds this subject and he ruled that those always win",
    "source": "supplied to the workshop, 2026-08-19",
-   "licence": "the owner's standing confirmation of rights",
+   "licence": "NOT ESTABLISHED -- the artist is named in the supplied filename and no licence from that artist is on record",
    "author": "Rondador Nocturno",
-   "publishable": true,
-   "why_not": null,
-   "would_fill": "gondorplain",
+   "publishable": false,
+   "why_not": "a canon device already holds this subject in the hall, and the owner ruled on 21 August that the hall's canon devices always overwrite -- so this plate is kept as a matched reference and not shown.",
+   "would_fill": null,
    "sha1": "8457a6489d8cbd87",
    "size": [
     931,
@@ -2432,7 +2432,7 @@
    "licence": "NOT ESTABLISHED",
    "author": "NOT ESTABLISHED",
    "publishable": false,
-   "why_not": "provenance nobody can state is not published. Recorded, not omitted, so that it is distinguishable from a file nobody checked.",
+   "why_not": "a canon hall device already holds this subject, and he ruled those always win. Recorded, not omitted, so it stays distinguishable from a file nobody checked.",
    "sha1": "3baebe0ef9b00861",
    "size": null
   },
@@ -2446,8 +2446,8 @@
    "source": "supplied to the workshop, 2026-08-19",
    "licence": "NOT ESTABLISHED",
    "author": "NOT ESTABLISHED",
-   "publishable": false,
-   "why_not": "provenance nobody can state is not published. Recorded, not omitted, so that it is distinguishable from a file nobody checked.",
+   "publishable": true,
+   "why_not": null,
    "sha1": "af388ca020dad957",
    "size": [
     800,
@@ -2609,7 +2609,7 @@
    "source": "map/gen_forge_layers.py",
    "licence": "the archive's own",
    "publishable": true,
-   "shown": true
+   "shown": false
   },
   {
    "file": null,
@@ -2861,7 +2861,7 @@
    "source": "map/gen_forge_layers.py",
    "licence": "the archive's own",
    "publishable": true,
-   "shown": true
+   "shown": false
   },
   {
    "file": null,
@@ -3169,7 +3169,7 @@
    "source": "map/gen_forge_layers.py",
    "licence": "the archive's own",
    "publishable": true,
-   "shown": true
+   "shown": false
   },
   {
    "file": null,
@@ -3267,7 +3267,7 @@
    "source": "map/gen_forge_layers.py",
    "licence": "the archive's own",
    "publishable": true,
-   "shown": true
+   "shown": false
   },
   {
    "file": null,
