@@ -5625,6 +5625,70 @@
    "hand": "Pete Klassen, 2004",
    "licence": "All Rights Reserved. Published on the OWNER'S RULING of 19 Aug 2026, given with the fact in hand that the site is already reachable on the public web; he undertook to obtain a licence before publication. Full position in fonts/Aniron-LICENCE.txt.",
    "source": "dafont.com/aniron.font — converted to WOFF2 with NO subsetting, 278 glyphs in and 278 out, because subsetting is modification and the licence does not permit it."
+  },
+  {
+   "file": "fonts/UnifrakturMaguntia-Regular.woff2",
+   "what": "UnifrakturMaguntia -- the blackletter hand the codex sets its volume titles in when the reader turns on the authentic hand. 247 codepoints, converted to WOFF2 with NO subsetting and no instancing; the upstream file is named UnifrakturMaguntia-Book.ttf and is renamed here to the archive's Family-Weight convention.",
+   "hand": "j. 'mach' wust, 2010, from Peter Wiegel's 2009 original -- both copyright lines stand verbatim in the licence file",
+   "licence": "OFL-1.1",
+   "licence_file": "fonts/UnifrakturMaguntia-OFL.txt",
+   "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/unifrakturmaguntia/UnifrakturMaguntia-Book.ttf (google/fonts main @ 3b1480ea4b6e15fed70a42f4cb29216476a044ed, fetched 20 Aug 2026)"
+  },
+  {
+   "file": "fonts/UncialAntiqua-Regular.woff2",
+   "what": "Uncial Antiqua -- the uncial hand for running heads, ledes and the codex's authentic-hand rubrics. 368 codepoints, converted to WOFF2 with NO subsetting.",
+   "hand": "Brian J. Bonislawsky DBA Astigmatic (AOETI), 2011",
+   "licence": "OFL-1.1",
+   "licence_file": "fonts/UncialAntiqua-OFL.txt",
+   "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/uncialantiqua/UncialAntiqua-Regular.ttf (google/fonts main @ 3b1480ea4b6e15fed70a42f4cb29216476a044ed, fetched 20 Aug 2026)"
+  },
+  {
+   "file": "fonts/Cinzel-Regular.woff2",
+   "what": "Cinzel 400 -- the Trajan-derived capital the codex sets its tabs, plaques, quire marks and small rubrics in. Instanced from the upstream VARIABLE font Cinzel[wght].ttf at wght=400; 548 glyphs, 367 codepoints, not subset.",
+   "hand": "The Cinzel Project Authors (https://github.com/NDISCOVER/Cinzel), 2020",
+   "licence": "OFL-1.1",
+   "licence_file": "fonts/Cinzel-OFL.txt",
+   "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/cinzel/Cinzel%5Bwght%5D.ttf (google/fonts main @ 3b1480ea4b6e15fed70a42f4cb29216476a044ed, fetched 20 Aug 2026)"
+  },
+  {
+   "file": "fonts/Cinzel-SemiBold.woff2",
+   "what": "Cinzel 600 -- the weight 30-odd rules across codex-object.css and arda.css actually ask for (`font:600 ... Cinzel`). Instanced at wght=600 rather than left to the browser, which would otherwise synthesise a bold from the 400. Cinzel's STAT table names no Axis Value at 600, so the instance's name records were written here rather than derived.",
+   "hand": "The Cinzel Project Authors (https://github.com/NDISCOVER/Cinzel), 2020",
+   "licence": "OFL-1.1",
+   "licence_file": "fonts/Cinzel-OFL.txt",
+   "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/cinzel/Cinzel%5Bwght%5D.ttf (google/fonts main @ 3b1480ea4b6e15fed70a42f4cb29216476a044ed, fetched 20 Aug 2026)"
+  },
+  {
+   "file": "fonts/Cinzel-Bold.woff2",
+   "what": "Cinzel 700 -- the drop capital and the volume headings. Instanced at wght=700.",
+   "hand": "The Cinzel Project Authors (https://github.com/NDISCOVER/Cinzel), 2020",
+   "licence": "OFL-1.1",
+   "licence_file": "fonts/Cinzel-OFL.txt",
+   "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/cinzel/Cinzel%5Bwght%5D.ttf (google/fonts main @ 3b1480ea4b6e15fed70a42f4cb29216476a044ed, fetched 20 Aug 2026)"
+  },
+  {
+   "file": "fonts/EBGaramond-Regular.woff2",
+   "what": "EB Garamond 400 -- the codex's book face: ledes, columns, slips, catchwords and marginalia. Instanced from the upstream VARIABLE EBGaramond[wght].ttf at wght=400. 3,247 glyphs over 2,091 codepoints, NOT subset: Google's own delivery splits this face into unicode-range subsets, and the archive sets accented Elvish, Greek and Cyrillic beside its Latin.",
+   "hand": "The EB Garamond Project Authors (https://github.com/octaviopardo/EBGaramond12), 2017",
+   "licence": "OFL-1.1",
+   "licence_file": "fonts/EBGaramond-OFL.txt",
+   "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ebgaramond/EBGaramond%5Bwght%5D.ttf (google/fonts main @ 3b1480ea4b6e15fed70a42f4cb29216476a044ed, fetched 20 Aug 2026)"
+  },
+  {
+   "file": "fonts/EBGaramond-Medium.woff2",
+   "what": "EB Garamond 500 -- the medium the pages ask for by weight. Instanced at wght=500.",
+   "hand": "The EB Garamond Project Authors (https://github.com/octaviopardo/EBGaramond12), 2017",
+   "licence": "OFL-1.1",
+   "licence_file": "fonts/EBGaramond-OFL.txt",
+   "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ebgaramond/EBGaramond%5Bwght%5D.ttf (google/fonts main @ 3b1480ea4b6e15fed70a42f4cb29216476a044ed, fetched 20 Aug 2026)"
+  },
+  {
+   "file": "fonts/EBGaramond-Italic.woff2",
+   "what": "EB Garamond italic 400 -- the codex sets its catchwords, figure captions, margin notes and the object view's slips in italic, and a DRAWN italic is what those rules mean; obliquing the roman is not the same letterform. Instanced from EBGaramond-Italic[wght].ttf at wght=400.",
+   "hand": "The EB Garamond Project Authors (https://github.com/octaviopardo/EBGaramond12), 2017",
+   "licence": "OFL-1.1",
+   "licence_file": "fonts/EBGaramond-OFL.txt",
+   "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ebgaramond/EBGaramond-Italic%5Bwght%5D.ttf (google/fonts main @ 3b1480ea4b6e15fed70a42f4cb29216476a044ed, fetched 20 Aug 2026)"
   }
  ],
  "pending_provenance": []

@@ -9,7 +9,7 @@
   "living.html": "the halls put it under Peoples; the brief's Volume IV contents list puts a herbarium with relics and devices. The brief is followed."
  },
  "schemaVersion": 1,
- "n_routes": 629,
+ "n_routes": 624,
  "n_volumes": 7,
  "volumes": [
   {
@@ -221,9 +221,15 @@
      ]
     },
     {
-     "part": "The Design of the Book",
+     "part": "The Specimen Sheet",
      "entries": [
       "codex-proto.html"
+     ]
+    },
+    {
+     "part": "The Colophon",
+     "entries": [
+      "colophon.html"
      ]
     },
     {
@@ -343,30 +349,6 @@
    "prev": "volume-ii.html",
    "next": "armies_dashboard.html"
   },
-  "arda_timemap.html": {
-   "volume": null,
-   "part": "Retired Routes",
-   "archetype": "tombstone",
-   "spread": "none",
-   "title": "arda_timemap",
-   "canonical": "arda_timemap.html",
-   "retired": true,
-   "successor": "sheets.html",
-   "canonicalRoute": "arda_timemap.html",
-   "presentation": "single-folio"
-  },
-  "arda_timemap_jpeg.html": {
-   "volume": null,
-   "part": "Retired Routes",
-   "archetype": "tombstone",
-   "spread": "none",
-   "title": "arda_timemap_jpeg",
-   "canonical": "arda_timemap_jpeg.html",
-   "retired": true,
-   "successor": "sheets.html",
-   "canonicalRoute": "arda_timemap_jpeg.html",
-   "presentation": "single-folio"
-  },
   "armies_dashboard.html": {
    "volume": "II",
    "part": "Armies and Campaigns",
@@ -427,28 +409,30 @@
    "prev": "ainur.html",
    "next": "genealogy.html"
   },
-  "chronicle.html": {
-   "volume": null,
-   "part": "Retired Routes",
-   "archetype": "tombstone",
-   "spread": "none",
-   "title": "chronicle",
-   "canonical": "chronicle.html",
-   "retired": true,
-   "successor": "sheets.html",
-   "canonicalRoute": "chronicle.html",
-   "presentation": "single-folio"
-  },
   "codex-proto.html": {
    "volume": "VI",
-   "part": "The Design of the Book",
+   "part": "The Specimen Sheet",
    "archetype": "workbench",
    "spread": "flat",
-   "title": "The Design of the Book",
+   "title": "The Specimen Sheet",
    "canonical": "codex-proto.html",
    "canonicalRoute": "codex-proto.html",
    "presentation": "single-folio",
+   "specimen": true,
+   "note": "C73: this is the specimen sheet every other page in the archive is scored against, not a hall of the archive. It is published so a reader can see what the halls are measured by. It is never edited.",
    "prev": "canon.html",
+   "next": "colophon.html"
+  },
+  "colophon.html": {
+   "volume": "VI",
+   "part": "The Colophon",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "The Colophon",
+   "canonical": "colophon.html",
+   "canonicalRoute": "colophon.html",
+   "presentation": "paired-leaf",
+   "prev": "codex-proto.html",
    "next": "cosmology.html"
   },
   "compare.html": {
@@ -484,7 +468,7 @@
    "canonical": "cosmology.html",
    "canonicalRoute": "cosmology.html",
    "presentation": "full-bleed",
-   "prev": "codex-proto.html",
+   "prev": "colophon.html",
    "next": "oaths.html"
   },
   "gallery.html": {
@@ -579,18 +563,6 @@
    "canonicalRoute": "living.html",
    "presentation": "paired-leaf",
    "prev": "heraldry.html"
-  },
-  "map.html": {
-   "volume": null,
-   "part": "Retired Routes",
-   "archetype": "tombstone",
-   "spread": "none",
-   "title": "map",
-   "canonical": "map.html",
-   "retired": true,
-   "successor": "sheets.html",
-   "canonicalRoute": "map.html",
-   "presentation": "single-folio"
   },
   "names.html": {
    "volume": "V",
@@ -8834,18 +8806,6 @@
    "presentation": "paired-leaf",
    "prev": "armies_dashboard.html"
   },
-  "registers.html": {
-   "volume": null,
-   "part": "Retired Routes",
-   "archetype": "tombstone",
-   "spread": "none",
-   "title": "registers",
-   "canonical": "registers.html",
-   "retired": true,
-   "successor": "ainur.html",
-   "canonicalRoute": "registers.html",
-   "presentation": "single-folio"
-  },
   "sheets.html": {
    "volume": "I",
    "part": "The Drawn Sheets",
@@ -8890,18 +8850,6 @@
    "canonicalRoute": "tours.html",
    "presentation": "paired-leaf",
    "prev": "theindex.html"
-  },
-  "valinor.html": {
-   "volume": null,
-   "part": "Retired Routes",
-   "archetype": "tombstone",
-   "spread": "none",
-   "title": "valinor",
-   "canonical": "valinor.html",
-   "retired": true,
-   "successor": "sheets.html",
-   "canonicalRoute": "valinor.html",
-   "presentation": "single-folio"
   },
   "volume-i.html": {
    "volume": "I",
@@ -8990,6 +8938,84 @@
    "canonicalRoute": "writing.html",
    "presentation": "paired-leaf",
    "prev": "poems.html"
+  },
+  "arda_timemap.html": {
+   "volume": null,
+   "part": "Retired Routes",
+   "archetype": "tombstone",
+   "spread": "none",
+   "title": "arda_timemap",
+   "canonical": "arda_timemap.html",
+   "retired": true,
+   "successor": "sheets.html",
+   "served": false,
+   "canonicalRoute": "arda_timemap.html",
+   "presentation": "single-folio"
+  },
+  "arda_timemap_jpeg.html": {
+   "volume": null,
+   "part": "Retired Routes",
+   "archetype": "tombstone",
+   "spread": "none",
+   "title": "arda_timemap_jpeg",
+   "canonical": "arda_timemap_jpeg.html",
+   "retired": true,
+   "successor": "sheets.html",
+   "served": false,
+   "canonicalRoute": "arda_timemap_jpeg.html",
+   "presentation": "single-folio"
+  },
+  "chronicle.html": {
+   "volume": null,
+   "part": "Retired Routes",
+   "archetype": "tombstone",
+   "spread": "none",
+   "title": "chronicle",
+   "canonical": "chronicle.html",
+   "retired": true,
+   "successor": "sheets.html",
+   "served": false,
+   "canonicalRoute": "chronicle.html",
+   "presentation": "single-folio"
+  },
+  "map.html": {
+   "volume": null,
+   "part": "Retired Routes",
+   "archetype": "tombstone",
+   "spread": "none",
+   "title": "map",
+   "canonical": "map.html",
+   "retired": true,
+   "successor": "sheets.html",
+   "served": false,
+   "canonicalRoute": "map.html",
+   "presentation": "single-folio"
+  },
+  "registers.html": {
+   "volume": null,
+   "part": "Retired Routes",
+   "archetype": "tombstone",
+   "spread": "none",
+   "title": "registers",
+   "canonical": "registers.html",
+   "retired": true,
+   "successor": "ainur.html",
+   "served": false,
+   "canonicalRoute": "registers.html",
+   "presentation": "single-folio"
+  },
+  "valinor.html": {
+   "volume": null,
+   "part": "Retired Routes",
+   "archetype": "tombstone",
+   "spread": "none",
+   "title": "valinor",
+   "canonical": "valinor.html",
+   "retired": true,
+   "successor": "sheets.html",
+   "served": false,
+   "canonicalRoute": "valinor.html",
+   "presentation": "single-folio"
   }
  },
  "sequences": {
@@ -9033,6 +9059,7 @@
    "volume-vi.html",
    "canon.html",
    "codex-proto.html",
+   "colophon.html",
    "cosmology.html",
    "oaths.html",
    "silences.html"

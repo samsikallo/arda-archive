@@ -1,4 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Uncial+Antiqua&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap");
+@font-face{ font-family:"UnifrakturMaguntia"; src:url("fonts/UnifrakturMaguntia-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Uncial Antiqua"; src:url("fonts/UncialAntiqua-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Cinzel"; src:url("fonts/Cinzel-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Cinzel"; src:url("fonts/Cinzel-SemiBold.woff2") format("woff2");
+  font-weight:600; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Cinzel"; src:url("fonts/Cinzel-Bold.woff2") format("woff2");
+  font-weight:700; font-style:normal; font-display:swap; }
+@font-face{ font-family:"EB Garamond"; src:url("fonts/EBGaramond-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"EB Garamond"; src:url("fonts/EBGaramond-Medium.woff2") format("woff2");
+  font-weight:500; font-style:normal; font-display:swap; }
+@font-face{ font-family:"EB Garamond"; src:url("fonts/EBGaramond-Italic.woff2") format("woff2");
+  font-weight:400; font-style:italic; font-display:swap; }
 
 @font-face{ font-family:"Junicode"; src:url("fonts/Junicode-Regular.woff2") format("woff2");
   font-weight:400; font-style:normal; font-display:swap; }
@@ -516,21 +531,6 @@ body{
 .quire{ position:absolute; bottom:6px; left:26px; font:600 9px Cinzel,Georgia,serif;
   letter-spacing:.02em; color:var(--ink-soft); opacity:.7; }
 
-.illum{ position:absolute; top:34px; bottom:34px; width:15px; pointer-events:none; opacity:.55;
-  background:
-    repeating-linear-gradient(180deg,
-      transparent 0 6px, var(--rubric) 6px 7px, transparent 7px 13px),
-    repeating-radial-gradient(circle at 3px 10px, #4a6b3e 0 2px, transparent 2px 20px),
-    repeating-radial-gradient(circle at 12px 20px, #7d6237 0 2px, transparent 2px 20px),
-    linear-gradient(180deg, transparent, var(--rule) 8%, var(--rule) 92%, transparent);
-  background-size:100% 26px, 100% 40px, 100% 40px, 1px 100%;
-  background-position:center, left, right, center; background-repeat:repeat-y;
-}
-.leaf.l .illum{ left:7px; } .leaf.r .illum{ right:7px; }
-.illum::before,.illum::after{ content:""; position:absolute; left:50%; width:13px; height:19px;
-  transform:translateX(-50%); background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 20'><path fill='none' stroke='%23a47741' stroke-width='1.2' d='M7 19C7 19 1 13 1 7.5 1 3 4 1 7 1s6 2 6 6.5C13 13 7 19 7 19ZM7 19V4'/></svg>") center/contain no-repeat; }
-.illum::before{ top:-14px; } .illum::after{ bottom:-15px; }
-
 .leaf.twocol .tb{ margin-left:calc(26px + clamp(96px,17%,138px) + 10px); column-count:2; column-gap:19px; column-rule:1px solid var(--rule-soft); }
 
 .leaf.twocol .tb p{ font-size:14.2px; margin-bottom:0; }
@@ -571,7 +571,7 @@ body{
     background:rgba(255,250,236,.42); }
   .leaf.l .marg,.leaf.r .marg{ left:auto; right:auto; transform:none; }
   .fig.marg-fig{ position:static; float:none; width:96px; margin:12px auto; }
-  .illum,.catch{ display:none; }
+  .catch{ display:none; }
   .quire{ position:static; display:block; margin-top:10px; text-align:center; }
   .manicule{ display:none; }
 }
@@ -813,6 +813,17 @@ body{
 
 .fig:has(.frame > img){ break-inside:avoid; }
 
+@font-face{
+  font-family:"Eldamar";
+  src:url("fonts/Eldamar-1.1.woff2") format("woff2");
+  font-weight:normal; font-style:normal; font-display:block;
+  unicode-range:U+E000-E0FF;
+}
+:root[data-codex-object="on"] .book[data-edge-script="tengwar"] .leaf::after{
+  font-family:"Eldamar","TengwarTelcontar","AlcarinTengwar",serif; }
+:root[data-codex-object="on"] .book[data-edge-script="tengwar"] .spread::after{
+  font-family:"Eldamar","TengwarTelcontar","AlcarinTengwar",serif; }
+
 body{ background:var(--ground); }
 .book{ margin:0 auto; }
 .cx-plate{ width:100%; height:100%; object-fit:cover; display:block; border-radius:2px;
@@ -824,6 +835,21 @@ body{ background:var(--ground); }
 
 main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vellum-2);
   border:1px solid var(--vellum-edge); color:var(--ink); }
+
+:root[data-codex-object="on"] .book .leaf.fitted .card{ break-inside:avoid; }
+:root[data-codex-object="on"] .book[data-spread="dossier"] .leaf.fitted.l{
+  align-items:stretch; gap:0; padding-top:30px; }
+:root[data-codex-object="on"] .book[data-spread="plate"] .leaf.fitted.l{ padding:30px 34px 50px; }
+.arms.cx-has::after{ content:none; }
+.arms.cx-has{ display:grid; place-items:center; overflow:hidden; }
+:root[data-codex-object="on"] .book .leaf .reg{ list-style:none; margin:0 0 .6em; padding:0; }
+:root[data-codex-object="on"] .book .leaf .reg li{
+  display:flex; align-items:baseline; gap:8px; break-inside:avoid;
+  line-height:var(--line,21px); border-bottom:1px solid var(--rule-soft); }
+:root[data-codex-object="on"] .book .leaf .reg li > span{ flex:1 1 auto; min-width:0;
+  overflow-wrap:anywhere; }
+:root[data-codex-object="on"] .book .leaf .reg li > b{ flex:0 0 auto; font-weight:600;
+  font-variant-numeric:tabular-nums; color:var(--ink-soft); }
 
 :root[data-codex-object="on"] .book > .tabs{
   position:absolute !important; left:-1px !important; top:74px !important;
@@ -875,7 +901,7 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
   mask-image:linear-gradient(180deg,transparent 0,#000 14px,#000 calc(100% - 14px),transparent 100%); }
 @media (max-width:1000px){
 
-  :root[data-codex-object="on"] .book:has(.leaf.contents){ height:auto; }
+  :root[data-codex-object="on"] .book{ height:auto; }
 
   :root[data-codex-object="on"] .book .leaf.contents{
     overflow:visible; min-height:auto; }
@@ -938,15 +964,16 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
   grid-template-rows:minmax(0,1fr); min-height:0; }
 :root[data-codex-object="on"] .book .leaf.fitted{ min-height:0; overflow:hidden; padding-bottom:14px; }
 :root[data-codex-object="on"] .book .leaf.fitted .tb{
-  
-  columns:auto; column-rule:none; flex:0 1 auto; min-height:0;
-  overflow-y:auto; overflow-x:hidden; overscroll-behavior:contain; scrollbar-width:thin; }
+
+  columns:auto; column-rule:none; flex:0 1 auto; min-height:0; overflow:visible; }
 :root[data-codex-object="on"] .book .leaf.fitted .tb > .tbi{
   column-count:2; column-gap:19px; column-rule:1px solid var(--rule-soft); }
 :root[data-codex-object="on"] .book .leaf.fitted .tb > .tbi > h2,
 :root[data-codex-object="on"] .book .leaf.fitted .tb > .tbi > .lede,
 :root[data-codex-object="on"] .book .leaf.fitted .tb > .tbi > .slip{ column-span:all; }
 :root[data-codex-object="on"] .book .leaf.fitted .fn{ flex:0 0 auto; margin-bottom:16px; }
+
+:root[data-codex-object="on"] .book .leaf.fitted .marg .marg-t{ max-height:none; overflow:visible; }
 
 :root[data-codex-object="on"] .book .leaf.fitted .fig{ width:104px; }
 :root[data-codex-object="on"] .book .leaf.fitted .fig.marg-fig{ width:66px; bottom:30px; }
@@ -958,3 +985,36 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
     overflow:visible; min-height:auto; flex:0 0 auto; }
   :root[data-codex-object="on"] .book .leaf.fitted .tb > .tbi{ column-count:1; }
 }
+
+:root[data-codex-object="on"] .book .turn::after{
+  content:""; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+  width:max(100%,44px); height:max(100%,44px);
+  background:none; border:0; border-radius:inherit; }
+
+@media (max-width:1000px){
+  
+  :root[data-codex-object="on"] #ardanav .grp > button,
+  :root[data-codex-object="on"] #ardanav .home,
+  :root[data-codex-object="on"] #ardanav #a-theme,
+  :root[data-codex-object="on"] #a-crumb > a,
+  :root[data-codex-object="on"] .hd > a,
+  :root[data-codex-object="on"] #hdr > a,
+  :root[data-codex-object="on"] #a-layers,
+  :root[data-codex-object="on"] #a-fb{
+    display:inline-flex; align-items:center; justify-content:center;
+    min-height:44px; padding-top:4px; padding-bottom:4px; }
+  :root[data-codex-object="on"] #ardanav .grp > button,
+  :root[data-codex-object="on"] #ardanav .home,
+  :root[data-codex-object="on"] #ardanav #a-theme,
+  :root[data-codex-object="on"] #a-layers,
+  :root[data-codex-object="on"] #a-fb{ min-width:44px; }
+  :root[data-codex-object="on"] #ardanav #a-jump{ min-height:44px; }
+  
+  :root[data-codex-object="on"] #ardanav .menu a{ min-height:44px;
+    display:flex; flex-direction:column; justify-content:center; }
+  
+  :root[data-codex-object="on"] .book #ardanav,
+  :root[data-codex-object="on"] .book #a-crumb > a{ display:none !important; }
+}
+
+.leaf{ overflow-wrap:break-word; }

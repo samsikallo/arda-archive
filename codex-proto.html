@@ -781,21 +781,14 @@ body{
   letter-spacing:.02em; color:var(--ink-soft); opacity:.7; }
 
 
-/* the vine band: two interlacing strands with leaves, in the outer margin, generated */
-.illum{ position:absolute; top:34px; bottom:34px; width:15px; pointer-events:none; opacity:.55;
-  background:
-    repeating-linear-gradient(180deg,
-      transparent 0 6px, var(--rubric) 6px 7px, transparent 7px 13px),
-    repeating-radial-gradient(circle at 3px 10px, #4a6b3e 0 2px, transparent 2px 20px),
-    repeating-radial-gradient(circle at 12px 20px, #7d6237 0 2px, transparent 2px 20px),
-    linear-gradient(180deg, transparent, var(--rule) 8%, var(--rule) 92%, transparent);
-  background-size:100% 26px, 100% 40px, 100% 40px, 1px 100%;
-  background-position:center, left, right, center; background-repeat:repeat-y;
-}
-.leaf.l .illum{ left:7px; } .leaf.r .illum{ right:7px; }
-.illum::before,.illum::after{ content:""; position:absolute; left:50%; width:13px; height:19px;
-  transform:translateX(-50%); background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 20'><path fill='none' stroke='%23a47741' stroke-width='1.2' d='M7 19C7 19 1 13 1 7.5 1 3 4 1 7 1s6 2 6 6.5C13 13 7 19 7 19ZM7 19V4'/></svg>") center/contain no-repeat; }
-.illum::before{ top:-14px; } .illum::after{ bottom:-15px; }
+/* THE VINE BAND IS GONE -- the owner's ruling C76, 20 August 2026. His direction of
+   19 August was that the fore-edges carry real tengwar, cirth and sarati relevant to the
+   open leaf, REPLACING the minimal art -- and the note further down this file already
+   offered the choice: "keep `.illum` for leaves that want a vine, or delete it". The edge
+   scripts were built, the vine was never deleted, and both ran down the edge; `replace`
+   had been read as `add`. He has now deleted it. The writing stays, the ornament goes.
+   Identified by differential measurement: hiding it changed exactly 7,316 pixels in two
+   clusters at x=163-175 and x=1424-1437, and nothing else on the page. */
 
 /* A SECOND TEXT COLUMN on any leaf that asks for it */
 .leaf.twocol .tb{ margin-left:calc(26px + clamp(96px,17%,138px) + 10px); column-count:2; column-gap:19px; column-rule:1px solid var(--rule-soft); }
@@ -851,7 +844,7 @@ body{
     background:rgba(255,250,236,.42); }
   .leaf.l .marg,.leaf.r .marg{ left:auto; right:auto; transform:none; }
   .fig.marg-fig{ position:static; float:none; width:96px; margin:12px auto; }
-  .illum,.catch{ display:none; }
+  .catch{ display:none; }
   .quire{ position:static; display:block; margin-top:10px; text-align:center; }
   .manicule{ display:none; }
 }
@@ -1578,7 +1571,6 @@ body{
 
     <section class="leaf l ruled twocol" style="display:flex;flex-direction:column" data-hands-hand="nomenclator,corrector,revisor,chartarius">
       <div class="rh"><span>The Arda Archive &middot; Of the Silences</span><span class="n">vi</span></div>
-      <span class="illum" aria-hidden="true"></span>
       <div class="tb">
         <h2 class="rubric">Of the silences</h2>
         <figure class="fig"><div class="frame"><span class="dev-tree" aria-hidden="true"></span></div>
@@ -1634,7 +1626,6 @@ body{
 
     <section class="leaf r ruled twocol" style="display:flex;flex-direction:column" data-hands-hand="annalist,stemma,revisor,nomenclator">
       <div class="rh"><span>Volume VI &middot; Lore and First Principles</span><span class="n">vii</span></div>
-      <span class="illum" aria-hidden="true"></span>
       <div class="tb">
         <p><span class="versal">W</span>here the corpus is silent the archive says so
           <span class="gl" data-gl="exactly: no rounding">exactly</span>, and where two texts

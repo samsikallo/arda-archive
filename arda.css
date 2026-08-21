@@ -25,6 +25,38 @@
 @font-face{ font-family:"Architects Daughter"; src:url("fonts/ArchitectsDaughter.woff2") format("woff2");
   font-weight:400; font-style:normal; font-display:swap; }
 
+/* ── C61: THE FOUR GOOGLE-HOSTED FACES, NOW IN THE REPOSITORY ────────────────────────────────
+   Ruling C61, 20 August 2026: self-host them. Until this block, UnifrakturMaguntia, Uncial
+   Antiqua, Cinzel and EB Garamond arrived over the wire from fonts.gstatic.com -- a <link> in
+   codex-proto.html and, more widely, an `@import` on line 1 of codex-object.css, which 41
+   published pages load. A face fetched from somebody else's host is a face the archive does not
+   HAVE: offline it is simply gone and the look changes under the reader, and every page view
+   tells Google who is reading Tolkien here.
+
+   ALL FOUR ARE SIL OPEN FONT LICENSE 1.1 and each licence ships verbatim beside its file as
+   fonts/<Family>-OFL.txt; provenance for all eight faces is recorded in arda_assets.json.
+   Built from github.com/google/fonts (main @ 3b1480ea4b6e, fetched 20 Aug 2026). Cinzel and
+   EB Garamond ship upstream as VARIABLE fonts; they were instanced at the exact weights the
+   pages ask for -- 400/600/700 and 400/500 -- so `font:600 ... Cinzel` gets a drawn semibold
+   rather than a browser-synthesised smear of the regular. Nothing here is subsetted: EB
+   Garamond keeps all 2,091 codepoints because this archive sets accented Elvish. */
+@font-face{ font-family:"UnifrakturMaguntia"; src:url("fonts/UnifrakturMaguntia-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Uncial Antiqua"; src:url("fonts/UncialAntiqua-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Cinzel"; src:url("fonts/Cinzel-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Cinzel"; src:url("fonts/Cinzel-SemiBold.woff2") format("woff2");
+  font-weight:600; font-style:normal; font-display:swap; }
+@font-face{ font-family:"Cinzel"; src:url("fonts/Cinzel-Bold.woff2") format("woff2");
+  font-weight:700; font-style:normal; font-display:swap; }
+@font-face{ font-family:"EB Garamond"; src:url("fonts/EBGaramond-Regular.woff2") format("woff2");
+  font-weight:400; font-style:normal; font-display:swap; }
+@font-face{ font-family:"EB Garamond"; src:url("fonts/EBGaramond-Medium.woff2") format("woff2");
+  font-weight:500; font-style:normal; font-display:swap; }
+@font-face{ font-family:"EB Garamond"; src:url("fonts/EBGaramond-Italic.woff2") format("woff2");
+  font-weight:400; font-style:italic; font-display:swap; }
+
 :root{
   --face-latin:"Aniron","Junicode",Georgia,'Palatino Linotype',serif;
   --face-hand:"Architects Daughter","Junicode",Georgia,cursive;
@@ -697,3 +729,233 @@ svg#bmap > g > text{fill:#6d5f47 !important}
 @media (forced-colors: active){
   .rubric::before,.rubric::after{ border-top:1px solid; height:1px; box-sizing:border-box }
 }
+
+
+/* ================================================================================================
+   A LEAF OF VELLUM DOES NOT INVERT BECAUSE THE READER'S OPERATING SYSTEM DID.
+   Added 20 August 2026, on the owner's third fault of that day -- "the light and dark mode is
+   confused" -- and it is the SAME fault he reported on 19 August as "most of the text became
+   white on light background". codex-proto.html's own header comment (line 3) is the ruling:
+   the codex carries its own complete palette, a DARK HALL WITH LIGHT VELLUM IN IT, so it must
+   not take the archive's night theme on top of that.
+
+   WHY THE EXISTING FIX DOES NOT HOLD, MEASURED RATHER THAN READ. The generators stamp
+   `data-theme="light"` on the root of every converted route, and the prototype's comment calls
+   that "the archive's OWN mechanism for opting a page out". IT IS OVERWRITTEN A TICK LATER:
+   nav.js:39 runs `put(stored||os())` unconditionally on every page that loads it, and the
+   prototype survives only because it deliberately does not load nav.js. Measured in Chromium at
+   color_scheme=dark, 404.html and person/beren.html: the root reads `data-theme="dark"`, and the
+   leaf's PAINTED ground stays rgb(250,242,203) -- parchment -- in both schemes, because
+   codex-object.css carries no `prefers-color-scheme` block at all. So the night theme repaints
+   the INK and nothing repaints the PAPER:
+
+       p  .rubric  .lede  .corr  .fn p  figcaption  .rh .n    #e8dcc0 on parchment   1.21:1
+       .gl                                                    #e0cf9a               1.37:1
+       .sub  .cite  .toc a                                    #c3b28c / #d9b544  1.75-1.85:1
+       .slip .quire .catch .rh .fol .mark .rm .versal         UNCHANGED          4.9-8.4:1
+
+   TEN OF TWENTY MEASURABLE INKS ON THE LEAF WERE ILLEGIBLE AND THE OTHER TEN WERE CORRECT --
+   which is exactly what "confused" describes, and why it reads as a fault rather than as a theme.
+
+   THE FIX IS SCOPED TO `.book` AND NOTHING ELSE. The hall AROUND the book is already dark in both
+   schemes (`body` is rgb(9,10,12) at noon), so the night theme has nothing to do there and keeps
+   doing it everywhere else -- the header, the nav, the colophon card below the book all still
+   follow the reader's choice. Only the physical object stops following it.
+   VALUES COME FROM codex-object.css's OWN VARIABLES, never re-typed, so the leaf cannot drift
+   into a second palette; the literal fallbacks are for `gen_errata_hall.py`, which emits a
+   `.book` on pages that do not link that sheet.
+   ================================================================================================ */
+:root[data-theme="dark"] .book,
+:root[data-theme="dark"] .book .spread,
+:root[data-theme="dark"] .book .leaf,
+:root[data-theme="dark"] .book .tb{ color:var(--ink,#3d3430) !important }
+
+/* THE THREE READABILITY VARIABLES GO BACK TO THEIR DAYLIGHT VALUES INSIDE THE BOOK, and this is
+   the general form of the fix rather than one more name in a list. The night theme redefines
+   `--a-ink`/`--a-mut`/`--a-line` on `:root` (line 419), so every rule in the archive written as
+   `color:var(--a-mut)` flips underneath the leaf without naming it -- `.cite` is the one this was
+   caught on, at #c3b28c where noon gives #6b5c44. Re-declaring them here means a rule added to
+   arda.css tomorrow that uses these variables stays correct on a leaf without anybody remembering
+   this block exists. The values are line 64's, unaltered. */
+:root[data-theme="dark"] .book{ --a-ink:#3a3226; --a-mut:#6b5c44; --a-line:#b0a58e }
+:root[data-theme="dark"] .book :is(.cite,.hit .vol){ color:var(--a-mut) !important }
+
+:root[data-theme="dark"] .book :is(p,li,td,th,dd,dt,label,small,blockquote,
+  h1,h2,h3,h4,h5,h6,a,.gl,.corr,.n,.toc a,.wrap){ color:var(--ink,#3d3430) !important }
+
+:root[data-theme="dark"] .book :is(.rubric,.mark,.rm,.manicule,.marg b,.struck .why){
+  color:var(--rubric,#bf3637) !important }
+
+:root[data-theme="dark"] .book :is(.lede,.sub,.sub2,.mut,.vol,.fn,.fn p,.quire,.catch,
+  .fol,.rh .n,figcaption,.styles,.silence .note){ color:var(--ink-soft,#5c534c) !important }
+
+:root[data-theme="dark"] .book .versal{ color:var(--lapis,#28418c) !important }
+:root[data-theme="dark"] .book .rh{ color:#2a5c6b !important }
+
+/* THE SIX SCRIBAL HANDS KEEP THEIR OWN INKS, and every element inside a note takes the hand's
+   colour by inheritance exactly as it does at noon -- so the blanket above must not reach in.
+   `.book .marg <thing>` carries one class more than `.book <thing>`, which is what makes this
+   win without a second `!important` argument. */
+:root[data-theme="dark"] .book .marg :is(b,span,p,blockquote,cite,summary,details){
+  color:inherit !important }
+:root[data-theme="dark"] .book .marg .mark{ color:var(--rubric,#bf3637) !important }
+
+/* BACKGROUNDS, AND ONLY THE ONES THE NIGHT THEME PAINTS. Measured at noon, every one of these is
+   `rgba(0,0,0,0)` inside a book; the night theme gives them --n-card/--n-raise, which puts a
+   charcoal chip on a parchment leaf. `background-color`, never `background`, so a codex gradient
+   or a paper texture underneath is left alone. */
+:root[data-theme="dark"] .book :is(.tab,.chip,.tag,.pill,.n,.k,.e,.card,.law,.panel,.box,.strip,
+  .frame,.seg button,button){ background-color:transparent !important }
+
+/* CODEX-THUMBS-BEGIN */
+/* C57 · THE STEPPED THUMB-INDEX. Reasoning: map/gen_codex_thumbs.py, not here. */
+
+:root[data-codex-object="on"] .book > nav.cx-rail{
+  position:absolute; z-index:3; display:flex; margin:0; padding:0; }
+
+/* LEVEL 2 · the fore-edge opposite the volumes. */
+:root[data-codex-object="on"] .book > nav.cx-rail-2{
+  right:-1px; top:74px; flex-direction:column; gap:8px; }
+:root[data-codex-object="on"] .book > nav.cx-rail-2 > a.cx-thumb{
+  position:relative; display:block; float:none; margin:0 -58px 0 0; width:88px;
+  padding:6px 14px 6px 9px; text-align:right; white-space:normal;
+  font:600 9.5px/1.15 Cinzel,Georgia,serif; letter-spacing:.02em; text-transform:none;
+  color:#d9dee7; text-decoration:none; border-radius:0 2px 2px 0;
+  background:linear-gradient(270deg,#241505 0%, var(--cx-hue,#4a3418) 22%, var(--cx-hue,#4a3418) 100%);
+  clip-path:polygon(0 0, 100% 0, calc(100% - 8px) 50%, 100% 100%, 0 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14), inset 0 0 0 1px rgba(0,0,0,.5),
+             3px 3px 6px rgba(0,0,0,.45);
+  transition:margin-right .16s ease, filter .16s ease; }
+:root[data-codex-object="on"] .book > nav.cx-rail-2 > a.cx-thumb:hover,
+:root[data-codex-object="on"] .book > nav.cx-rail-2 > a.cx-thumb:focus-visible{
+  margin-right:-70px; filter:brightness(1.22); outline:none; }
+:root[data-codex-object="on"] .book > nav.cx-rail-2 > a.cx-thumb[aria-current]{
+  margin-right:-76px; color:#fff;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.26), inset 0 0 0 1px var(--silver-deep,#5d4318),
+             5px 4px 9px rgba(0,0,0,.5); }
+
+/* LEVEL 3 · the HEAD, ruled by C58: above the running head, and the foot stays clear for the
+   catchword that already lives there. It hangs ABOVE the plaque, which sits at top:-13px. */
+:root[data-codex-object="on"] .book > nav.cx-rail-3{
+  left:0; right:0; top:-64px; z-index:2;
+  flex-direction:row; flex-wrap:wrap-reverse; justify-content:center; gap:7px; }
+:root[data-codex-object="on"] .book[data-cx-thumbs~="3"]{ margin-top:88px; }
+:root[data-codex-object="on"] .book > nav.cx-rail-3 > a.cx-thumb{
+  position:relative; display:flex; align-items:center; justify-content:center;
+  min-width:46px; height:40px; padding:7px 10px 0;
+  font:600 11px/1 Cinzel,Georgia,serif; letter-spacing:.04em;
+  color:#d9dee7; text-decoration:none; border-radius:2px 2px 0 0;
+  background:linear-gradient(180deg,#241505 0%, var(--cx-hue,#4a3418) 26%, var(--cx-hue,#4a3418) 100%);
+  clip-path:polygon(50% 0, 100% 8px, 100% 100%, 0 100%, 0 8px);
+  box-shadow:inset 0 -1px 0 rgba(255,255,255,.12), inset 0 0 0 1px rgba(0,0,0,.5),
+             0 -3px 6px rgba(0,0,0,.45);
+  transition:transform .16s ease, filter .16s ease; }
+:root[data-codex-object="on"] .book > nav.cx-rail-3 > a.cx-thumb:hover,
+:root[data-codex-object="on"] .book > nav.cx-rail-3 > a.cx-thumb:focus-visible{
+  transform:translateY(-5px); filter:brightness(1.22); outline:none; }
+:root[data-codex-object="on"] .book > nav.cx-rail-3 > a.cx-thumb[aria-current]{
+  transform:translateY(-8px); color:#fff;
+  box-shadow:inset 0 -1px 0 rgba(255,255,255,.26), inset 0 0 0 1px var(--silver-deep,#5d4318),
+             0 -5px 9px rgba(0,0,0,.5); }
+
+/* THE DRAWER TAB AND THE DECLARATION EXIST ONLY BELOW 1000px. */
+:root[data-codex-object="on"] .cx-drawer-tab,
+:root[data-codex-object="on"] .cx-drawer-veil,
+:root[data-codex-object="on"] .book > .cx-omission{ display:none; }
+
+/* ══ C62 · BELOW 1000px THE PRIMARY BOOKMARKS BECOME A DRAWER, AND THE OTHER TWO LEVELS GO.
+   Three edges of tabs at 390px leave a text block near 35 characters, below readable measure. */
+@media (max-width:1000px){
+  :root[data-codex-object="on"] .book > nav.cx-rail-2,
+  :root[data-codex-object="on"] .book > nav.cx-rail-3{ display:none !important; }
+  :root[data-codex-object="on"] .book[data-cx-thumbs~="3"]{ margin-top:0; }
+
+  /* the hittable tab: a real button, click-activated, never hover. */
+  :root[data-codex-object="on"] button.cx-drawer-tab{
+    display:flex !important; position:fixed; left:0; top:38vh; z-index:90;
+    align-items:center; justify-content:center; gap:6px;
+    min-width:44px; min-height:88px; padding:10px 9px; border:0; cursor:pointer;
+    writing-mode:vertical-rl; text-orientation:mixed;
+    font:600 11px/1 Cinzel,Georgia,serif; letter-spacing:.14em;
+    color:#f0d79a; border-radius:0 4px 4px 0;
+    background:linear-gradient(90deg,#3a2410,#6d4b28);
+    box-shadow:inset 0 0 0 1px var(--silver-deep,#5d4318), 3px 3px 8px rgba(0,0,0,.5); }
+  :root[data-codex-object="on"] button.cx-drawer-tab:focus-visible{
+    outline:2px solid var(--silver-hi,#f0d79a); outline-offset:2px; }
+  /* open, the tab rides the drawer's edge and becomes the way back out. */
+  :root[data-codex-object="on"][data-cx-drawer="open"] button.cx-drawer-tab{
+    left:min(78vw,292px); border-radius:0 4px 4px 0; transition:left .2s ease; }
+
+  :root[data-codex-object="on"] .cx-drawer-veil{
+    display:block !important; position:fixed; inset:0; z-index:88;
+    background:rgba(10,7,3,.55); opacity:0; pointer-events:none;
+    transition:opacity .18s ease; }
+  :root[data-codex-object="on"][data-cx-drawer="open"] .cx-drawer-veil{
+    opacity:1; pointer-events:auto; }
+
+  :root[data-codex-object="on"] .book > nav.tabs{
+    display:flex !important; position:fixed !important;
+    left:0 !important; top:0 !important; bottom:0 !important; right:auto !important;
+    width:min(78vw,292px) !important; max-width:100% !important; box-sizing:border-box !important;
+    z-index:89 !important; flex-direction:column !important; flex-wrap:nowrap !important;
+    justify-content:flex-start !important; gap:6px !important;
+    margin:0 !important; padding:64px 12px 20px !important;
+    overflow:visible !important;
+    background:linear-gradient(180deg,#2a1a09,#160e05) !important;
+    box-shadow:6px 0 18px rgba(0,0,0,.55) !important;
+    transform:translateX(-102%) !important; transition:transform .2s ease !important; }
+  :root[data-codex-object="on"][data-cx-drawer="open"] .book > nav.tabs{
+    transform:translateX(0) !important; }
+
+  :root[data-codex-object="on"] .book > nav.tabs > a.tab{
+    position:relative !important; float:none !important;
+    display:flex !important; align-items:center !important; justify-content:flex-start !important;
+    margin:0 !important; width:auto !important; height:auto !important;
+    min-height:44px !important; min-width:58px !important; max-width:100% !important;
+    box-sizing:border-box !important;
+    padding:8px 12px !important; text-align:left !important; white-space:normal !important;
+    border-radius:2px !important; clip-path:none !important; transform:none !important;
+    font:600 12px/1.2 Cinzel,Georgia,serif !important; }
+  :root[data-codex-object="on"] .book > nav.tabs > a.tab[aria-current]{
+    color:#fff !important; box-shadow:inset 0 0 0 1px var(--silver-hi,#f0d79a) !important; }
+
+  /* ── C59 · A FLEX BASIS OF 100% IS NOT A ROW. ────────────────────────────────────────────
+     `.book` is `display:flex` with the initial `flex-wrap:nowrap`, and in a NOWRAP row a
+     flex-basis of 100% does not begin a new line -- it makes one item as wide as the container
+     and leaves the next item beside it, off the end. The declaration below and `.spread` are
+     the only two in-flow children of `.book` at this width (measured: 13 of the book's 15
+     children are absolute, fixed or display:none), so the spread was pushed exactly one full
+     column to the right and every route scrolled sideways:
+
+         430px   documentElement scrollWidth - clientWidth = 273px   49 of 49 routes sampled
+         768px                                             = 535px   49 of 49 routes sampled
+
+     C59 permits a vertical scroll below 1000px and forbids a horizontal one AT ANY WIDTH, so
+     this was a standing breach of the ruling that put the declaration here. It is NOT a symptom
+     of the fixed-height board C68 repaired: `volume-i.html`, the one route that always survived
+     a phone because `height:auto` was already scoped to it, carried the same 273px.
+
+     `flex-wrap:wrap` is what actually gives the notice its own row, and it takes the sampled
+     horizontal scroll to 0 at both widths with the leaves untouched -- 220 leaves measured, all
+     still 100.00% of their text inside their own leaf. It is confined to this media block and
+     to pages wearing the object, and above 1000px the declaration is `display:none`, leaving
+     `.spread` as the container's only in-flow child, where wrapping cannot change anything.
+     `align-self:flex-start` is the second half: a flex line stretches its items to the line's
+     cross size by default, which drew this four-line notice as a 326x1713 box. */
+  :root[data-codex-object="on"] .book{ flex-wrap:wrap; }
+
+  /* C62 REQUIRES THE OMISSION TO BE DECLARED IN THE PAGE, not merely in the record. */
+  :root[data-codex-object="on"] .book > .cx-omission{
+    /* THE BOOK IS A FLEX CONTAINER, so a plain block child becomes a COLUMN beside the spread.
+       Measured on the 430px screenshot: the declaration rendered about 60px wide, one or two
+       words a line. flex-basis 100% sizes it to the full row; the `flex-wrap` above is what
+       puts it ON a row of its own, and `align-self` stops the row stretching it. */
+    display:block !important; flex:0 0 100% !important; width:100% !important;
+    align-self:flex-start;
+    box-sizing:border-box; order:-1;
+    margin:0 0 10px; padding:7px 10px;
+    border:1px solid var(--rule,#cbb684); border-radius:2px;
+    background:rgba(255,252,244,.34);
+    font:italic 400 12px/1.35 Georgia,serif; color:var(--ink,#3a3226); }
+}
+/* CODEX-THUMBS-END */

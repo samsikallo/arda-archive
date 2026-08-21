@@ -19,7 +19,12 @@
    "bytes": 1258267,
    "pages": 164,
    "corpus_file": "t3_tolkien_studies_9.txt",
-   "words": 66104
+   "words": 66104,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Tolkien Studies 10.pdf",
@@ -33,7 +38,12 @@
    "bytes": 1748803,
    "pages": 310,
    "corpus_file": "t3_tolkien_studies_10.txt",
-   "words": 125274
+   "words": 125274,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Tolkien's Legendarium.pdf",
@@ -47,7 +57,15 @@
    "bytes": 14144700,
    "pages": 291,
    "corpus_file": "t3_tolkien_s_legendarium.txt",
-   "words": 122541
+   "words": 122541,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0313305307"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t3_tolkien_s_legendarium.txt)"
+   }
   },
   {
    "file": "Perilous_Realms_-_Marjorie_Burns.pdf",
@@ -61,7 +79,16 @@
    "bytes": 910227,
    "pages": 237,
    "corpus_file": "t3_perilous_realms_marjorie_burns.txt",
-   "words": 84533
+   "words": 84533,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0802038719",
+     "0802038069"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t3_perilous_realms_marjorie_burns.txt)"
+   }
   },
   {
    "file": "Patrick Curry Defending Middle-earth.pdf",
@@ -75,7 +102,15 @@
    "bytes": 1000107,
    "pages": 171,
    "corpus_file": "t3_patrick_curry_defending_middle_earth.txt",
-   "words": 62138
+   "words": 62138,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "061847885X"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t3_patrick_curry_defending_middle_earth.txt)"
+   }
   },
   {
    "file": "Patrick Curry Ecology in Middle-earth.pdf",
@@ -89,7 +124,12 @@
    "bytes": 341383,
    "pages": 5,
    "corpus_file": "t3_patrick_curry_ecology_in_middle_earth.txt",
-   "words": 3056
+   "words": 3056,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Verlyn Flieger A Question of Time.pdf",
@@ -107,7 +147,12 @@
    "corpus_file": "t3_verlyn_flieger_a_question_of_time.txt",
    "words": 117178,
    "ocr_text": true,
-   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for."
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Tolkien the Medievalist part.pdf",
@@ -121,7 +166,15 @@
    "bytes": 389273,
    "pages": 31,
    "corpus_file": "t3_tolkien_the_medievalist_part.txt",
-   "words": 10689
+   "words": 10689,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0415289440"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t3_tolkien_the_medievalist_part.txt)"
+   }
   },
   {
    "file": "The Ring Goes Ever On.pdf",
@@ -135,7 +188,16 @@
    "bytes": 70919361,
    "pages": 858,
    "corpus_file": "t3_the_ring_goes_ever_on.txt",
-   "words": 562050
+   "words": 562050,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0905520254",
+     "0905520246"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t3_the_ring_goes_ever_on.txt)"
+   }
   },
   {
    "file": "LOTR (1954-2004).pdf",
@@ -149,7 +211,12 @@
    "bytes": 1740709,
    "pages": 387,
    "corpus_file": "t3_lotr_1954_2004.txt",
-   "words": 148929
+   "words": 148929,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Barbara Strachey Journeys of Frodo.pdf",
@@ -163,7 +230,12 @@
    "bytes": 32238901,
    "pages": 112,
    "corpus_file": "t3_barbara_strachey_journeys_of_frodo.txt",
-   "words": 14874
+   "words": 14874,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "A Sindarin and Noldorin dictionary.pdf",
@@ -177,7 +249,12 @@
    "bytes": 1278640,
    "pages": 87,
    "corpus_file": "t3_a_sindarin_and_noldorin_dictionary.txt",
-   "words": 44552
+   "words": 44552,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "tengwar-numbers.pdf",
@@ -191,7 +268,12 @@
    "bytes": 59075,
    "pages": 1,
    "corpus_file": "t3_tengwar_numbers.txt",
-   "words": 371
+   "words": 371,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Quenya; Quetin i lambë eldaiva - a Quenya-Course (Renk).pdf",
@@ -205,7 +287,12 @@
    "bytes": 1301404,
    "pages": 136,
    "corpus_file": "t3_quenya_quetin_i_lambe_eldaiva_a_quenya_course_renk.txt",
-   "words": 46897
+   "words": 46897,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Amanye Tenceli_ The Sarati.pdf",
@@ -219,7 +306,15 @@
    "bytes": 278982,
    "pages": 6,
    "corpus_file": "t3_amanye_tenceli_the_sarati.txt",
-   "words": 1407
+   "words": 1407,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://at.boktypografen.se/sarati.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_amanye_tenceli_the_sarati.txt)"
+   }
   },
   {
    "file": "Rúmilian Numerals.pdf",
@@ -233,7 +328,15 @@
    "bytes": 563577,
    "pages": 13,
    "corpus_file": "t3_rumilian_numerals.txt",
-   "words": 5947
+   "words": 5947,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/rumiliannumerals.phtml"
+    ],
+    "granularity": "item",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_rumilian_numerals.txt)"
+   }
   },
   {
    "file": "Sarati Rúmilo Quenyava.pdf",
@@ -247,7 +350,15 @@
    "bytes": 174283,
    "pages": 2,
    "corpus_file": "t3_sarati_rumilo_quenyava.txt",
-   "words": 292
+   "words": 292,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.elvish.org/gwaith/sarati.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_sarati_rumilo_quenyava.txt)"
+   }
   },
   {
    "file": "Sarati - Wikipedia.pdf",
@@ -261,7 +372,15 @@
    "bytes": 296599,
    "pages": 4,
    "corpus_file": "t4_sarati_wikipedia.txt",
-   "words": 929
+   "words": 929,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://en.wikipedia.org/wiki/Sarati"
+    ],
+    "granularity": "item",
+    "evidence": "the page's own address, printed in the saved print of it (corpus/t4_sarati_wikipedia.txt)"
+   }
   },
   {
    "file": "Sarati alphabet.pdf",
@@ -275,7 +394,12 @@
    "bytes": 554036,
    "pages": 5,
    "corpus_file": "t4_sarati_alphabet.txt",
-   "words": 599
+   "words": 599,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "The_Road_to_Middle-Earth_-_Tom_Shippey.pdf",
@@ -289,7 +413,12 @@
    "bytes": 2817275,
    "pages": 485,
    "corpus_file": "t3_the_road_to_middle_earth_tom_shippey.txt",
-   "words": 167545
+   "words": 167545,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Picturing_Tolkien_-_Janice_M_Bogstad_and_Philip_E_Kaveny.pdf",
@@ -303,7 +432,12 @@
    "bytes": 1811877,
    "pages": 428,
    "corpus_file": "t3_picturing_tolkien_janice_m_bogstad_and_philip_e_kave.txt",
-   "words": 131480
+   "words": 131480,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "The Science of Middle-earth (Larsen review, Journal of Tolkien Research).pdf",
@@ -317,7 +451,15 @@
    "bytes": 339079,
    "pages": 21,
    "corpus_file": "t3_the_science_of_middle_earth_larsen_review_journal_of.txt",
-   "words": 9564
+   "words": 9564,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9781643136165"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t3_the_science_of_middle_earth_larsen_review_journal_of.txt)"
+   }
   },
   {
    "file": "LettersChanges.pdf",
@@ -331,7 +473,12 @@
    "bytes": 582330,
    "pages": 13,
    "corpus_file": "t4_letterschanges.txt",
-   "words": 11146
+   "words": 11146,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "The Maps of Tolkiens Middle-earth (Brian Sibley, John Howe).pdf",
@@ -349,7 +496,12 @@
    "corpus_file": "t4_the_maps_of_tolkiens_middle_earth_brian_sibley_john_.txt",
    "words": 27605,
    "ocr_text": true,
-   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for."
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "The_Fantasy_Art_of_John_Howe_-_The_Fantasy_Art_of_John_Howe.pdf",
@@ -367,7 +519,12 @@
    "corpus_file": "t4_the_fantasy_art_of_john_howe_the_fantasy_art_of_john.txt",
    "words": 138,
    "ocr_text": true,
-   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for."
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 1.pdf",
@@ -381,7 +538,12 @@
    "bytes": 2111720,
    "pages": 22,
    "corpus_file": "t3_mallorn_1.txt",
-   "words": 10405
+   "words": 10405,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 2.pdf",
@@ -395,7 +557,12 @@
    "bytes": 1924662,
    "pages": 19,
    "corpus_file": "t3_mallorn_2.txt",
-   "words": 11076
+   "words": 11076,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 3.pdf",
@@ -409,7 +576,12 @@
    "bytes": 3447370,
    "pages": 24,
    "corpus_file": "t3_mallorn_3.txt",
-   "words": 34102
+   "words": 34102,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 4.pdf",
@@ -423,7 +595,12 @@
    "bytes": 5413981,
    "pages": 36,
    "corpus_file": "t3_mallorn_4.txt",
-   "words": 17617
+   "words": 17617,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 5.pdf",
@@ -437,7 +614,12 @@
    "bytes": 3943868,
    "pages": 31,
    "corpus_file": "t3_mallorn_5.txt",
-   "words": 13482
+   "words": 13482,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 6.pdf",
@@ -451,7 +633,12 @@
    "bytes": 7635683,
    "pages": 48,
    "corpus_file": "t3_mallorn_6.txt",
-   "words": 16962
+   "words": 16962,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 7.pdf",
@@ -465,7 +652,12 @@
    "bytes": 4722008,
    "pages": 36,
    "corpus_file": "t3_mallorn_7.txt",
-   "words": 15758
+   "words": 15758,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 8.pdf",
@@ -479,7 +671,12 @@
    "bytes": 5503158,
    "pages": 52,
    "corpus_file": "t3_mallorn_8.txt",
-   "words": 18251
+   "words": 18251,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 9.pdf",
@@ -493,7 +690,12 @@
    "bytes": 5245805,
    "pages": 37,
    "corpus_file": "t3_mallorn_9.txt",
-   "words": 13595
+   "words": 13595,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 10.pdf",
@@ -507,7 +709,12 @@
    "bytes": 5330572,
    "pages": 46,
    "corpus_file": "t3_mallorn_10.txt",
-   "words": 12702
+   "words": 12702,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 11.pdf",
@@ -521,7 +728,12 @@
    "bytes": 8059003,
    "pages": 46,
    "corpus_file": "t3_mallorn_11.txt",
-   "words": 18533
+   "words": 18533,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 12.pdf",
@@ -535,7 +747,12 @@
    "bytes": 6808702,
    "pages": 51,
    "corpus_file": "t3_mallorn_12.txt",
-   "words": 18737
+   "words": 18737,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 13.pdf",
@@ -549,7 +766,15 @@
    "bytes": 5531108,
    "pages": 34,
    "corpus_file": "t3_mallorn_13.txt",
-   "words": 13877
+   "words": 13877,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_13.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 14.pdf",
@@ -563,7 +788,15 @@
    "bytes": 5838956,
    "pages": 34,
    "corpus_file": "t3_mallorn_14.txt",
-   "words": 12372
+   "words": 12372,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_14.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 15.pdf",
@@ -577,7 +810,15 @@
    "bytes": 3934786,
    "pages": 33,
    "corpus_file": "t3_mallorn_15.txt",
-   "words": 14541
+   "words": 14541,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_15.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 16.pdf",
@@ -591,7 +832,12 @@
    "bytes": 7977216,
    "pages": 35,
    "corpus_file": "t3_mallorn_16.txt",
-   "words": 14979
+   "words": 14979,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 17.pdf",
@@ -605,7 +851,15 @@
    "bytes": 6537471,
    "pages": 36,
    "corpus_file": "t3_mallorn_17.txt",
-   "words": 28857
+   "words": 28857,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_17.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 18.pdf",
@@ -619,7 +873,15 @@
    "bytes": 5901652,
    "pages": 36,
    "corpus_file": "t3_mallorn_18.txt",
-   "words": 19616
+   "words": 19616,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_18.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 19.pdf",
@@ -633,7 +895,15 @@
    "bytes": 6814043,
    "pages": 37,
    "corpus_file": "t3_mallorn_19.txt",
-   "words": 22320
+   "words": 22320,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_19.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 20.pdf",
@@ -647,7 +917,15 @@
    "bytes": 4885509,
    "pages": 31,
    "corpus_file": "t3_mallorn_20.txt",
-   "words": 16957
+   "words": 16957,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_20.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 21.pdf",
@@ -661,7 +939,12 @@
    "bytes": 6194607,
    "pages": 39,
    "corpus_file": "t3_mallorn_21.txt",
-   "words": 25276
+   "words": 25276,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 22.pdf",
@@ -675,7 +958,15 @@
    "bytes": 6876914,
    "pages": 45,
    "corpus_file": "t3_mallorn_22.txt",
-   "words": 27837
+   "words": 27837,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_22.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 23.pdf",
@@ -689,7 +980,12 @@
    "bytes": 8524024,
    "pages": 40,
    "corpus_file": "t3_mallorn_23.txt",
-   "words": 30429
+   "words": 30429,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 24.pdf",
@@ -703,7 +999,15 @@
    "bytes": 6887543,
    "pages": 40,
    "corpus_file": "t3_mallorn_24.txt",
-   "words": 35771
+   "words": 35771,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_24.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 25.pdf",
@@ -717,7 +1021,15 @@
    "bytes": 5480977,
    "pages": 36,
    "corpus_file": "t3_mallorn_25.txt",
-   "words": 39670
+   "words": 39670,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_25.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 26.pdf",
@@ -731,7 +1043,15 @@
    "bytes": 8846160,
    "pages": 52,
    "corpus_file": "t3_mallorn_26.txt",
-   "words": 57712
+   "words": 57712,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_26.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 27.pdf",
@@ -745,7 +1065,15 @@
    "bytes": 6335107,
    "pages": 44,
    "corpus_file": "t3_mallorn_27.txt",
-   "words": 44799
+   "words": 44799,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_27.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 28.pdf",
@@ -759,7 +1087,15 @@
    "bytes": 6828361,
    "pages": 52,
    "corpus_file": "t3_mallorn_28.txt",
-   "words": 39296
+   "words": 39296,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_28.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 29.pdf",
@@ -773,7 +1109,15 @@
    "bytes": 9206797,
    "pages": 60,
    "corpus_file": "t3_mallorn_29.txt",
-   "words": 38611
+   "words": 38611,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_29.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 30.pdf",
@@ -787,7 +1131,12 @@
    "bytes": 5792198,
    "pages": 56,
    "corpus_file": "t3_mallorn_30.txt",
-   "words": 35269
+   "words": 35269,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 31.pdf",
@@ -801,7 +1150,15 @@
    "bytes": 5882216,
    "pages": 59,
    "corpus_file": "t3_mallorn_31.txt",
-   "words": 36460
+   "words": 36460,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_31.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 32.pdf",
@@ -815,7 +1172,15 @@
    "bytes": 3002209,
    "pages": 36,
    "corpus_file": "t3_mallorn_32.txt",
-   "words": 21234
+   "words": 21234,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_32.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 33 (Proceedings of the J.R.R. Tolkien Centenary Conference).pdf",
@@ -829,7 +1194,16 @@
    "bytes": 31697813,
    "pages": 462,
    "corpus_file": "t3_mallorn_33_proceedings_of_the_j_r_r_tolkien_centenar.txt",
-   "words": 397349
+   "words": 397349,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0905520068",
+     "0905520092"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t3_mallorn_33_proceedings_of_the_j_r_r_tolkien_centenar.txt)"
+   }
   },
   {
    "file": "Mallorn 34.pdf",
@@ -843,7 +1217,15 @@
    "bytes": 4414855,
    "pages": 44,
    "corpus_file": "t3_mallorn_34.txt",
-   "words": 30797
+   "words": 30797,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_34.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 35.pdf",
@@ -857,7 +1239,15 @@
    "bytes": 5914872,
    "pages": 59,
    "corpus_file": "t3_mallorn_35.txt",
-   "words": 41806
+   "words": 41806,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_35.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 36.pdf",
@@ -871,7 +1261,15 @@
    "bytes": 7982997,
    "pages": 64,
    "corpus_file": "t3_mallorn_36.txt",
-   "words": 42718
+   "words": 42718,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_36.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 37.pdf",
@@ -885,7 +1283,15 @@
    "bytes": 4117934,
    "pages": 42,
    "corpus_file": "t3_mallorn_37.txt",
-   "words": 30598
+   "words": 30598,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_37.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 38.pdf",
@@ -899,7 +1305,15 @@
    "bytes": 6593678,
    "pages": 42,
    "corpus_file": "t3_mallorn_38.txt",
-   "words": 39589
+   "words": 39589,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_38.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 39.pdf",
@@ -913,7 +1327,15 @@
    "bytes": 5775505,
    "pages": 47,
    "corpus_file": "t3_mallorn_39.txt",
-   "words": 39982
+   "words": 39982,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_39.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 40.pdf",
@@ -927,7 +1349,15 @@
    "bytes": 6532040,
    "pages": 55,
    "corpus_file": "t3_mallorn_40.txt",
-   "words": 61177
+   "words": 61177,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_40.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 41.pdf",
@@ -941,7 +1371,15 @@
    "bytes": 5761218,
    "pages": 54,
    "corpus_file": "t3_mallorn_41.txt",
-   "words": 47586
+   "words": 47586,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_41.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 42.pdf",
@@ -955,7 +1393,15 @@
    "bytes": 6571391,
    "pages": 62,
    "corpus_file": "t3_mallorn_42.txt",
-   "words": 59739
+   "words": 59739,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_42.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 43.pdf",
@@ -969,7 +1415,12 @@
    "bytes": 7747664,
    "pages": 63,
    "corpus_file": "t3_mallorn_43.txt",
-   "words": 59806
+   "words": 59806,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 44.pdf",
@@ -983,7 +1434,15 @@
    "bytes": 9863528,
    "pages": 64,
    "corpus_file": "t3_mallorn_44.txt",
-   "words": 55471
+   "words": 55471,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_44.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 45.pdf",
@@ -997,7 +1456,15 @@
    "bytes": 1826537,
    "pages": 52,
    "corpus_file": "t3_mallorn_45.txt",
-   "words": 40680
+   "words": 40680,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "15473155"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_45.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 46.pdf",
@@ -1011,7 +1478,12 @@
    "bytes": 8380323,
    "pages": 51,
    "corpus_file": "t3_mallorn_46.txt",
-   "words": 37382
+   "words": 37382,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 47.pdf",
@@ -1025,7 +1497,12 @@
    "bytes": 4363661,
    "pages": 52,
    "corpus_file": "t3_mallorn_47.txt",
-   "words": 39767
+   "words": 39767,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 48.pdf",
@@ -1039,7 +1516,15 @@
    "bytes": 2061210,
    "pages": 52,
    "corpus_file": "t3_mallorn_48.txt",
-   "words": 38008
+   "words": 38008,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "15473155"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_48.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 49.pdf",
@@ -1053,7 +1538,12 @@
    "bytes": 3793694,
    "pages": 52,
    "corpus_file": "t3_mallorn_49.txt",
-   "words": 37919
+   "words": 37919,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 50.pdf",
@@ -1067,7 +1557,12 @@
    "bytes": 2438006,
    "pages": 52,
    "corpus_file": "t3_mallorn_50.txt",
-   "words": 39089
+   "words": 39089,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 51.pdf",
@@ -1081,7 +1576,15 @@
    "bytes": 2290996,
    "pages": 52,
    "corpus_file": "t3_mallorn_51.txt",
-   "words": 38802
+   "words": 38802,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "15473155"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_51.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 52.pdf",
@@ -1095,7 +1598,12 @@
    "bytes": 3925511,
    "pages": 52,
    "corpus_file": "t3_mallorn_52.txt",
-   "words": 38996
+   "words": 38996,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 53.pdf",
@@ -1109,7 +1617,12 @@
    "bytes": 2408978,
    "pages": 48,
    "corpus_file": "t3_mallorn_53.txt",
-   "words": 33759
+   "words": 33759,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 54.pdf",
@@ -1123,7 +1636,12 @@
    "bytes": 1466781,
    "pages": 52,
    "corpus_file": "t3_mallorn_54.txt",
-   "words": 44818
+   "words": 44818,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 55.pdf",
@@ -1137,7 +1655,15 @@
    "bytes": 4369278,
    "pages": 48,
    "corpus_file": "t3_mallorn_55.txt",
-   "words": 37399
+   "words": 37399,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_55.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 56.pdf",
@@ -1151,7 +1677,15 @@
    "bytes": 4319151,
    "pages": 48,
    "corpus_file": "t3_mallorn_56.txt",
-   "words": 35925
+   "words": 35925,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_56.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 57.pdf",
@@ -1165,7 +1699,15 @@
    "bytes": 4159301,
    "pages": 44,
    "corpus_file": "t3_mallorn_57.txt",
-   "words": 31301
+   "words": 31301,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_57.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 58-Updated.pdf",
@@ -1179,7 +1721,15 @@
    "bytes": 5856708,
    "pages": 46,
    "corpus_file": "t3_mallorn_58_updated.txt",
-   "words": 35097
+   "words": 35097,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_58_updated.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 59.pdf",
@@ -1193,7 +1743,15 @@
    "bytes": 9529583,
    "pages": 68,
    "corpus_file": "t3_mallorn_59.txt",
-   "words": 60985
+   "words": 60985,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_59.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 60.pdf",
@@ -1207,7 +1765,15 @@
    "bytes": 1183201,
    "pages": 45,
    "corpus_file": "t3_mallorn_60.txt",
-   "words": 35186
+   "words": 35186,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_60.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 61 (Digital).pdf",
@@ -1221,7 +1787,15 @@
    "bytes": 15684156,
    "pages": 48,
    "corpus_file": "t3_mallorn_61_digital.txt",
-   "words": 37297
+   "words": 37297,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_61_digital.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 62.pdf",
@@ -1235,7 +1809,15 @@
    "bytes": 14561127,
    "pages": 56,
    "corpus_file": "t3_mallorn_62.txt",
-   "words": 43915
+   "words": 43915,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_62.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 63 (Galley 1).pdf",
@@ -1249,7 +1831,12 @@
    "bytes": 109486,
    "pages": 3,
    "corpus_file": "t3_mallorn_63_galley_1.txt",
-   "words": 2945
+   "words": 2945,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Mallorn 63 (Galley 2).pdf",
@@ -1263,7 +1850,15 @@
    "bytes": 13125924,
    "pages": 52,
    "corpus_file": "t3_mallorn_63_galley_2.txt",
-   "words": 41493
+   "words": 41493,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_63_galley_2.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Mallorn 64 (Corrected).pdf",
@@ -1277,7 +1872,15 @@
    "bytes": 14228250,
    "pages": 64,
    "corpus_file": "t3_mallorn_64_corrected.txt",
-   "words": 53371
+   "words": 53371,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "03086674"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_64_corrected.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "(K) The Road Goes Ever On - A Song Cycle.pdf",
@@ -1295,7 +1898,12 @@
    "bytes": 7753269,
    "pages": 78,
    "corpus_file": "t1_ocr_k_the_road_goes_ever_on_a_song_cycle.txt",
-   "words": 23035
+   "words": 23035,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "A Secret Vice - Tolkien on Invented Languages.pdf",
@@ -1309,7 +1917,16 @@
    "bytes": 3036289,
    "pages": 180,
    "corpus_file": "t1_a_secret_vice_tolkien_on_invented_languages.txt",
-   "words": 55249
+   "words": 55249,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780008131395",
+     "9780008131401"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_a_secret_vice_tolkien_on_invented_languages.txt)"
+   }
   },
   {
    "file": "The History of The Hobbit.pdf",
@@ -1323,7 +1940,12 @@
    "bytes": 57231760,
    "pages": 1333,
    "corpus_file": "t2_the_history_of_the_hobbit.txt",
-   "words": 444467
+   "words": 444467,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Pictures by J.R.R. Tolkien.pdf",
@@ -1337,7 +1959,12 @@
    "bytes": 4359883,
    "pages": 100,
    "corpus_file": "t2_pictures_by_j_r_r_tolkien.txt",
-   "words": 7123
+   "words": 7123,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "The Art of The Hobbit.pdf",
@@ -1353,7 +1980,15 @@
    "bytes": 9217581,
    "pages": 145,
    "corpus_file": "t2_ocr_the_art_of_the_hobbit.txt",
-   "words": 26107
+   "words": 26107,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780007440818"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t2_ocr_the_art_of_the_hobbit.txt)"
+   }
   },
   {
    "file": "The Art of The Lord of the Rings.pdf",
@@ -1371,7 +2006,15 @@
    "corpus_file": "t4_the_art_of_the_lord_of_the_rings.txt",
    "words": 41538,
    "ocr_text": true,
-   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for."
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0618510982"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t4_the_art_of_the_lord_of_the_rings.txt)"
+   }
   },
   {
    "file": "(A) The Silmarillion.pdf",
@@ -1387,7 +2030,16 @@
    "bytes": 17144394,
    "pages": 544,
    "corpus_file": "t1_a_the_silmarillion.txt",
-   "words": 167635
+   "words": 167635,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780008537890",
+     "9780008560317"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_a_the_silmarillion.txt)"
+   }
   },
   {
    "file": "(B) The Hobbit, or There and Back Again.pdf",
@@ -1401,7 +2053,12 @@
    "bytes": 5500570,
    "pages": 270,
    "corpus_file": "t1_b_the_hobbit_or_there_and_back_again.txt",
-   "words": 96701
+   "words": 96701,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "(C) The Lord of the Rings.pdf",
@@ -1415,7 +2072,12 @@
    "bytes": 6549111,
    "pages": 1210,
    "corpus_file": "t1_c_the_lord_of_the_rings.txt",
-   "words": 563525
+   "words": 563525,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "(D) Unfinished Tales of Númenor and Middle-earth.pdf",
@@ -1429,7 +2091,12 @@
    "bytes": 3607801,
    "pages": 391,
    "corpus_file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
-   "words": 213907
+   "words": 213907,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "(E) Beren and Lúthien.pdf",
@@ -1443,7 +2110,16 @@
    "bytes": 9326291,
    "pages": 203,
    "corpus_file": "t1_e_beren_and_luthien.txt",
-   "words": 63832
+   "words": 63832,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9781328791825",
+     "9781328784865"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_e_beren_and_luthien.txt)"
+   }
   },
   {
    "file": "(F) The Children of Húrin.pdf",
@@ -1459,7 +2135,12 @@
    "bytes": 5753989,
    "pages": 212,
    "corpus_file": "t1_f_the_children_of_hurin.txt",
-   "words": 74809
+   "words": 74809,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "(G) The Fall of Gondolin.pdf",
@@ -1473,7 +2154,16 @@
    "bytes": 6594061,
    "pages": 201,
    "corpus_file": "t1_g_the_fall_of_gondolin.txt",
-   "words": 84122
+   "words": 84122,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9781328613042",
+     "9781328612991"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_g_the_fall_of_gondolin.txt)"
+   }
   },
   {
    "file": "1 The Book of Lost Tales, Part One.pdf",
@@ -1487,7 +2177,15 @@
    "bytes": 4466918,
    "pages": 387,
    "corpus_file": "t1_1_the_book_of_lost_tales_part_one.txt",
-   "words": 142399
+   "words": 142399,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0345375211"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_1_the_book_of_lost_tales_part_one.txt)"
+   }
   },
   {
    "file": "2 The Book of Lost Tales, Part Two.pdf",
@@ -1501,7 +2199,12 @@
    "bytes": 4728391,
    "pages": 520,
    "corpus_file": "t1_2_the_book_of_lost_tales_part_two.txt",
-   "words": 182143
+   "words": 182143,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "3 The Lays of Beleriand.pdf",
@@ -1515,7 +2218,15 @@
    "bytes": 13049773,
    "pages": 400,
    "corpus_file": "t1_3_the_lays_of_beleriand.txt",
-   "words": 133615
+   "words": 133615,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0261102265"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_3_the_lays_of_beleriand.txt)"
+   }
   },
   {
    "file": "4 The Shaping of Middle-Earth.pdf",
@@ -1529,7 +2240,15 @@
    "bytes": 1694924,
    "pages": 403,
    "corpus_file": "t1_4_the_shaping_of_middle_earth.txt",
-   "words": 146073
+   "words": 146073,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0345400437"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_4_the_shaping_of_middle_earth.txt)"
+   }
   },
   {
    "file": "5 The Lost Road and Other Writings.pdf",
@@ -1543,7 +2262,15 @@
    "bytes": 13486279,
    "pages": 457,
    "corpus_file": "t1_5_the_lost_road_and_other_writings.txt",
-   "words": 201048
+   "words": 201048,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0261102257"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_5_the_lost_road_and_other_writings.txt)"
+   }
   },
   {
    "file": "6 The Return of the Shadow.pdf",
@@ -1557,7 +2284,15 @@
    "bytes": 19865599,
    "pages": 502,
    "corpus_file": "t1_6_the_return_of_the_shadow.txt",
-   "words": 224886
+   "words": 224886,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0261102249"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_6_the_return_of_the_shadow.txt)"
+   }
   },
   {
    "file": "7 The Treason of Isengard.pdf",
@@ -1571,7 +2306,15 @@
    "bytes": 16767584,
    "pages": 513,
    "corpus_file": "t1_7_the_treason_of_isengard.txt",
-   "words": 213897
+   "words": 213897,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0261102206"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_7_the_treason_of_isengard.txt)"
+   }
   },
   {
    "file": "8 The War of the Ring.pdf",
@@ -1585,7 +2328,12 @@
    "bytes": 7227340,
    "pages": 470,
    "corpus_file": "t1_8_the_war_of_the_ring.txt",
-   "words": 188088
+   "words": 188088,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "9 Sauron Defeated.pdf",
@@ -1601,7 +2349,16 @@
    "bytes": 3663181,
    "pages": 477,
    "corpus_file": "t1_9_sauron_defeated.txt",
-   "words": 196545
+   "words": 196545,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780261103054",
+     "9780007348268"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_9_sauron_defeated.txt)"
+   }
   },
   {
    "file": "10 Morgoth’s Ring.pdf",
@@ -1617,7 +2374,12 @@
    "bytes": 5510415,
    "pages": 556,
    "corpus_file": "t1_10_morgoths_ring.txt",
-   "words": 209025
+   "words": 209025,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "11 The War of the Jewels.pdf",
@@ -1633,7 +2395,16 @@
    "bytes": 12237846,
    "pages": 510,
    "corpus_file": "t1_11_the_war_of_the_jewels.txt",
-   "words": 204206
+   "words": 204206,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780261103245",
+     "9780007348282"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_11_the_war_of_the_jewels.txt)"
+   }
   },
   {
    "file": "12 The Peoples of Middle-earth.pdf",
@@ -1649,7 +2420,16 @@
    "bytes": 6810470,
    "pages": 480,
    "corpus_file": "t1_12_the_peoples_of_middle_earth.txt",
-   "words": 201522
+   "words": 201522,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780261103481",
+     "9780007348299"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_12_the_peoples_of_middle_earth.txt)"
+   }
   },
   {
    "file": "13 Index.pdf",
@@ -1663,7 +2443,15 @@
    "bytes": 9491854,
    "pages": 510,
    "corpus_file": "t1_13_index.txt",
-   "words": 169735
+   "words": 169735,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0007137435"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_13_index.txt)"
+   }
   },
   {
    "file": "The Adventures of Tom Bombadil and Other Verses from the Red Book.pdf",
@@ -1677,7 +2465,15 @@
    "bytes": 3609621,
    "pages": 200,
    "corpus_file": "t1_the_adventures_of_tom_bombadil_and_other_verses_from.txt",
-   "words": 44608
+   "words": 44608,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780007584697"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_the_adventures_of_tom_bombadil_and_other_verses_from.txt)"
+   }
   },
   {
    "file": "The Collected Poems of J.R.R. Tolkien.pdf",
@@ -1693,7 +2489,16 @@
    "bytes": 8187754,
    "pages": 2018,
    "corpus_file": "t1_the_collected_poems_of_j_r_r_tolkien.txt",
-   "words": 513788
+   "words": 513788,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780008628826",
+     "9780008628833"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_the_collected_poems_of_j_r_r_tolkien.txt)"
+   }
   },
   {
    "file": "The Letters of J.R.R. Tolkien.pdf",
@@ -1707,7 +2512,12 @@
    "bytes": 3546831,
    "pages": 515,
    "corpus_file": "t1_the_letters_of_j_r_r_tolkien.txt",
-   "words": 220863
+   "words": 220863,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "The Tolkien Reader.pdf",
@@ -1721,7 +2531,15 @@
    "bytes": 10093146,
    "pages": 258,
    "corpus_file": "t1_the_tolkien_reader.txt",
-   "words": 70929
+   "words": 70929,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0345345061"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_the_tolkien_reader.txt)"
+   }
   },
   {
    "file": "J.R.R. Tolkien - Artist and Illustrator.pdf",
@@ -1735,7 +2553,16 @@
    "bytes": 43805140,
    "pages": 212,
    "corpus_file": "t1_j_r_r_tolkien_artist_and_illustrator.txt",
-   "words": 78048
+   "words": 78048,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780618083619",
+     "0618083618"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_j_r_r_tolkien_artist_and_illustrator.txt)"
+   }
   },
   {
    "file": "The Hobbit (illustrated).pdf",
@@ -1749,7 +2576,12 @@
    "bytes": 21976878,
    "pages": 340,
    "corpus_file": "t1_the_hobbit_illustrated.txt",
-   "words": 105597
+   "words": 105597,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "The Letters of J. R. R. Tolkien (Revised and Expanded Edition).epub",
@@ -1762,7 +2594,12 @@
    "cited": 833,
    "bytes": 1025143,
    "corpus_file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
-   "words": 308243
+   "words": 308243,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "(H) The Fall of Númenor and Other Tales from the Second Age of Middle-earth.pdf",
@@ -1778,7 +2615,16 @@
    "bytes": 36962472,
    "pages": 373,
    "corpus_file": "t2_h_the_fall_of_numenor_and_other_tales_from_the_secon.txt",
-   "words": 97379
+   "words": 97379,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780008537838",
+     "9780008537852"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t2_h_the_fall_of_numenor_and_other_tales_from_the_secon.txt)"
+   }
   },
   {
    "file": "(I) The Nature of Middle-earth.pdf",
@@ -1794,7 +2640,16 @@
    "bytes": 6271614,
    "pages": 467,
    "corpus_file": "t2_i_the_nature_of_middle_earth.txt",
-   "words": 160887
+   "words": 160887,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780008387921",
+     "9780008387938"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t2_i_the_nature_of_middle_earth.txt)"
+   }
   },
   {
    "file": "The J. R. R. Tolkien Companion and Guide.pdf",
@@ -1808,7 +2663,16 @@
    "bytes": 6224648,
    "pages": 1177,
    "corpus_file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
-   "words": 434964
+   "words": 434964,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780008214524",
+     "9780008273484"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t2_the_j_r_r_tolkien_companion_and_guide.txt)"
+   }
   },
   {
    "file": "The Lord of the Rings A Reader_s Companion.pdf",
@@ -1822,7 +2686,15 @@
    "bytes": 52704312,
    "pages": 982,
    "corpus_file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
-   "words": 424951
+   "words": 424951,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780007556908"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t2_the_lord_of_the_rings_a_reader_s_companion.txt)"
+   }
   },
   {
    "file": "corpus/t1_c_appendix_tables_raw.txt",
@@ -1835,7 +2707,12 @@
    "cited": 0,
    "bytes": 71580,
    "corpus_file": "t1_c_appendix_tables_raw.txt",
-   "words": 12795
+   "words": 12795,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "The_Monsters_and_the_Critics_and_Other_Essays.pdf",
@@ -1849,7 +2726,15 @@
    "bytes": 17423836,
    "pages": 260,
    "corpus_file": "t1_the_monsters_and_the_critics_and_other_essays.txt",
-   "words": 105074
+   "words": 105074,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "026110263X"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t1_the_monsters_and_the_critics_and_other_essays.txt)"
+   }
   },
   {
    "file": "BEOWULF_THE_MONSTERS_AND_THE_CRITICS.pdf",
@@ -1863,7 +2748,12 @@
    "bytes": 382156,
    "pages": 22,
    "corpus_file": "t1_beowulf_the_monsters_and_the_critics.txt",
-   "words": 20387
+   "words": 20387,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Tolkienian_Linguistics_The_First_Fifty_Y.pdf",
@@ -1877,7 +2767,15 @@
    "bytes": 245710,
    "pages": 46,
    "corpus_file": "t3_tolkienian_linguistics_the_first_fifty_y.txt",
-   "words": 20442
+   "words": 20442,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "http://www.elvish.org/resources"
+    ],
+    "granularity": "item",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_tolkienian_linguistics_the_first_fifty_y.txt)"
+   }
   },
   {
    "file": "Mythlore_Index.pdf",
@@ -1891,7 +2789,12 @@
    "bytes": 6653905,
    "pages": 443,
    "corpus_file": "t3_mythlore_index.txt",
-   "words": 254020
+   "words": 254020,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Alan_Lee_The_Lord_of_the_Rings_Sketchbook.pdf",
@@ -1907,7 +2810,12 @@
    "bytes": 12899027,
    "pages": 101,
    "corpus_file": "t3_ocr_alan_lee_the_lord_of_the_rings_sketchbook.txt",
-   "words": 104259
+   "words": 104259,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "eldamo_PEE_Parma_Errata.pdf",
@@ -1921,7 +2829,12 @@
    "bytes": 95922,
    "pages": 5,
    "corpus_file": "t3_eldamo_pee_parma_errata.txt",
-   "words": 2590
+   "words": 2590,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "eldamo_VTE_VT_Errata.pdf",
@@ -1935,7 +2848,12 @@
    "bytes": 83308,
    "pages": 7,
    "corpus_file": "t3_eldamo_vte_vt_errata.txt",
-   "words": 1697
+   "words": 1697,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "eldamo_QQ_quen_eng.doc",
@@ -1948,7 +2866,12 @@
    "cited": 0,
    "bytes": 1777152,
    "corpus_file": "t3_eldamo_qq_quen_eng_doc.txt",
-   "words": 98697
+   "words": 98697,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "eldamo_GPT_goldpat.pdf",
@@ -1962,7 +2885,15 @@
    "bytes": 368220,
    "pages": 21,
    "corpus_file": "t3_eldamo_gpt_goldpat.txt",
-   "words": 12996
+   "words": 12996,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "http://www.elvish.org/Tengwestie/articles/Wynne/goldpat.phtml"
+    ],
+    "granularity": "item",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_eldamo_gpt_goldpat.txt)"
+   }
   },
   {
    "file": "eldamo_EIP_earlyilkorin.pdf",
@@ -1976,7 +2907,15 @@
    "bytes": 326263,
    "pages": 26,
    "corpus_file": "t3_eldamo_eip_earlyilkorin.txt",
-   "words": 12270
+   "words": 12270,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/earlyilkorin.phtml"
+    ],
+    "granularity": "item",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_eldamo_eip_earlyilkorin.txt)"
+   }
   },
   {
    "file": "eldamo_HPITN_1923_phon.pdf",
@@ -1990,7 +2929,15 @@
    "bytes": 553485,
    "pages": 25,
    "corpus_file": "t3_eldamo_hpitn_1923_phon.txt",
-   "words": 11159
+   "words": 11159,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "http://www.elvish.org/Tengwestie/articles/"
+    ],
+    "granularity": "item",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_eldamo_hpitn_1923_phon.txt)"
+   }
   },
   {
    "file": "eldamo_NBA_ni_bitha_adunaye.pdf",
@@ -2004,7 +2951,12 @@
    "bytes": 425328,
    "pages": 39,
    "corpus_file": "t3_eldamo_nba_ni_bitha_adunaye.txt",
-   "words": 10388
+   "words": 10388,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "The Art of The Fellowship of the Ring.pdf",
@@ -2022,7 +2974,12 @@
    "corpus_file": "t4_the_art_of_the_fellowship_of_the_ring.txt",
    "words": 573,
    "ocr_text": true,
-   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for."
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "The Atlas of Middle-Earth.pdf",
@@ -2036,7 +2993,16 @@
    "bytes": 35637083,
    "pages": 383,
    "corpus_file": "t3_the_atlas_of_middle_earth.txt",
-   "words": 78922
+   "words": 78922,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0618126996",
+     "9780547524405"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t3_the_atlas_of_middle_earth.txt)"
+   }
   },
   {
    "file": "The Complete Guide to Middle-Earth.pdf",
@@ -2052,7 +3018,16 @@
    "bytes": 13996581,
    "pages": 579,
    "corpus_file": "t3_the_complete_guide_to_middle_earth.txt",
-   "words": 187816
+   "words": 187816,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780345449764",
+     "9780593594490"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t3_the_complete_guide_to_middle_earth.txt)"
+   }
   },
   {
    "file": "The Complete Tolkien Companion.pdf",
@@ -2066,7 +3041,12 @@
    "bytes": 9383684,
    "pages": 811,
    "corpus_file": "t3_the_complete_tolkien_companion.txt",
-   "words": 242577
+   "words": 242577,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "A Gateway to Sindarin.pdf",
@@ -2080,7 +3060,15 @@
    "bytes": 22003535,
    "pages": 458,
    "corpus_file": "t3_a_gateway_to_sindarin.txt",
-   "words": 137692
+   "words": 137692,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780874809121"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t3_a_gateway_to_sindarin.txt)"
+   }
   },
   {
    "file": "Tolkien_heraldry.pdf",
@@ -2094,7 +3082,12 @@
    "bytes": 7563151,
    "pages": 44,
    "corpus_file": "t3_tolkien_heraldry.txt",
-   "words": 19327
+   "words": 19327,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Tolkien-Artwork.pdf",
@@ -2112,7 +3105,12 @@
    "corpus_file": "t3_tolkien_artwork.txt",
    "words": 81,
    "ocr_text": true,
-   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for."
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Vinyar Tengwar 43.pdf",
@@ -2126,7 +3124,12 @@
    "bytes": 864757,
    "pages": 40,
    "corpus_file": "t2_vinyar_tengwar_43.txt",
-   "words": 16887
+   "words": 16887,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "FORODRIM.pdf",
@@ -2140,7 +3143,15 @@
    "bytes": 335241,
    "pages": 9,
    "corpus_file": "t3_forodrim.txt",
-   "words": 4616
+   "words": 4616,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://forodrim.org/gobennas/heraldry/heraldry.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_forodrim.txt)"
+   }
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 1.pdf",
@@ -2154,7 +3165,12 @@
    "bytes": 26495208,
    "pages": 12,
    "corpus_file": "t3_parma_eldalamberon_vol_1_no_1.txt",
-   "words": 13575
+   "words": 13575,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 2.pdf",
@@ -2168,7 +3184,12 @@
    "bytes": 31358781,
    "pages": 16,
    "corpus_file": "t3_parma_eldalamberon_vol_1_no_2.txt",
-   "words": 16866
+   "words": 16866,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 3.pdf",
@@ -2182,7 +3203,12 @@
    "bytes": 45563829,
    "pages": 20,
    "corpus_file": "t3_parma_eldalamberon_vol_1_no_3.txt",
-   "words": 26540
+   "words": 26540,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 4.pdf",
@@ -2196,7 +3222,12 @@
    "bytes": 60895124,
    "pages": 30,
    "corpus_file": "t3_parma_eldalamberon_vol_1_no_4.txt",
-   "words": 35416
+   "words": 35416,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 5.pdf",
@@ -2210,7 +3241,12 @@
    "bytes": 60143262,
    "pages": 30,
    "corpus_file": "t3_parma_eldalamberon_vol_1_no_5.txt",
-   "words": 28172
+   "words": 28172,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "LOTR ROLEPLAY.pdf",
@@ -2224,7 +3260,12 @@
    "bytes": 66606923,
    "pages": 242,
    "corpus_file": "t4_lotr_roleplay.txt",
-   "words": 113997
+   "words": 113997,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Reader And Educator Guide To the Hobbit And the Lord Of The Rings.pdf",
@@ -2238,7 +3279,15 @@
    "bytes": 1473526,
    "pages": 179,
    "corpus_file": "t4_reader_and_educator_guide_to_the_hobbit_and_the_lord.txt",
-   "words": 50489
+   "words": 50489,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780544052000"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t4_reader_and_educator_guide_to_the_hobbit_and_the_lord.txt)"
+   }
   },
   {
    "file": "THE-LORD-OF-THE-RINGS-Urania-Finarte-14.12.2022.pdf",
@@ -2252,7 +3301,12 @@
    "bytes": 17345366,
    "pages": 57,
    "corpus_file": "t4_the_lord_of_the_rings_urania_finarte_14_12_2022.txt",
-   "words": 32914
+   "words": 32914,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Bilbos_Last_Song_-_JRR_Tolkien.pdf",
@@ -2264,7 +3318,12 @@
    "bytes": 11268487,
    "pages": 41,
    "corpus_file": "t1_bilbos_last_song_jrr_tolkien.txt",
-   "words": 710
+   "words": 710,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "The Science of Middle-Earth.pdf",
@@ -2276,7 +3335,12 @@
    "bytes": 14464118,
    "pages": 45,
    "corpus_file": "t3_the_science_of_middle_earth.txt",
-   "words": 909
+   "words": 909,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "The_Flora_of_Middle_Earth.pdf",
@@ -2288,7 +3352,15 @@
    "bytes": 3311248,
    "pages": 43,
    "corpus_file": "t3_the_flora_of_middle_earth.txt",
-   "words": 13367
+   "words": 13367,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "9780190276317"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t3_the_flora_of_middle_earth.txt)"
+   }
   },
   {
    "file": "The_Letters_of_JRR_Tolkien_Revised_and_Expanded_Edition_-_JRR_Tolkien.pdf",
@@ -2307,6 +3379,11 @@
     "relation": "SAME_EDITION_OTHER_DIGITISATION",
     "evidence": "MEASURED: 308,243 words from the epub against 308,261 from the PDF -- an 18-word difference across 308,000, which is a re-flow and not a different book.",
     "why": "the same edition, read from the epub rather than this PDF. Measured, not assumed: the two digitisations of the Revised and Expanded Letters give 308,243 words from the epub against 308,261 from the PDF, an 18-word difference across 308,000. The epub is the one extracted, so this row reports no text of its own -- and DUPLICATE_DIGITISATION in map/extract_corpus.py keeps it that way, because a register holding one edition twice is how the archive came to publish 13 contradictory attributions."
+   },
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "nothing readable to read an identifier out of: this row's corpus text is absent or empty, so the held copy cannot be asked where it came from."
    }
   },
   {
@@ -2318,7 +3395,15 @@
    "present": true,
    "bytes": 84545,
    "corpus_file": "t3_ardalambion_adunaic_htm.txt",
-   "words": 9993
+   "words": 9993,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_adunaic.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_adunaic_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_affix~1.htm",
@@ -2329,7 +3414,15 @@
    "present": true,
    "bytes": 42007,
    "corpus_file": "t3_ardalambion_affix_1_htm.txt",
-   "words": 5830
+   "words": 5830,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_affix~1.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_affix_1_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_animalic.htm",
@@ -2340,7 +3433,15 @@
    "present": true,
    "bytes": 2105,
    "corpus_file": "t3_ardalambion_animalic_htm.txt",
-   "words": 345
+   "words": 345,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_animalic.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_animalic_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_artlang.htm",
@@ -2351,7 +3452,15 @@
    "present": true,
    "bytes": 33603,
    "corpus_file": "t3_ardalambion_artlang_htm.txt",
-   "words": 3800
+   "words": 3800,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_artlang.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_artlang_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_auldelv.htm",
@@ -2362,7 +3471,15 @@
    "present": true,
    "bytes": 5668,
    "corpus_file": "t3_ardalambion_auldelv_htm.txt",
-   "words": 900
+   "words": 900,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_auldelv.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_auldelv_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_avarin.htm",
@@ -2373,7 +3490,15 @@
    "present": true,
    "bytes": 8286,
    "corpus_file": "t3_ardalambion_avarin_htm.txt",
-   "words": 1275
+   "words": 1275,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_avarin.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_avarin_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_birth.htm",
@@ -2384,7 +3509,15 @@
    "present": true,
    "bytes": 16062,
    "corpus_file": "t3_ardalambion_birth_htm.txt",
-   "words": 2235
+   "words": 2235,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_birth.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_birth_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_blackspeech.htm",
@@ -2395,7 +3528,15 @@
    "present": true,
    "bytes": 18390,
    "corpus_file": "t3_ardalambion_blackspeech_htm.txt",
-   "words": 2889
+   "words": 2889,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_blackspeech.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_blackspeech_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_botany.htm",
@@ -2406,7 +3547,15 @@
    "present": true,
    "bytes": 5190,
    "corpus_file": "t3_ardalambion_botany_htm.txt",
-   "words": 675
+   "words": 675,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_botany.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_botany_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_corpus.htm",
@@ -2417,7 +3566,15 @@
    "present": true,
    "bytes": 26044,
    "corpus_file": "t3_ardalambion_corpus_htm.txt",
-   "words": 3866
+   "words": 3866,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_corpus.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_corpus_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_d2.htm",
@@ -2428,7 +3585,15 @@
    "present": true,
    "bytes": 73705,
    "corpus_file": "t3_ardalambion_d2_htm.txt",
-   "words": 10053
+   "words": 10053,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_d2.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_d2_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_elbereth.htm",
@@ -2439,7 +3604,15 @@
    "present": true,
    "bytes": 27508,
    "corpus_file": "t3_ardalambion_elbereth_htm.txt",
-   "words": 3955
+   "words": 3955,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_elbereth.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_elbereth_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_elfnam.htm",
@@ -2450,7 +3623,15 @@
    "present": true,
    "bytes": 21690,
    "corpus_file": "t3_ardalambion_elfnam_htm.txt",
-   "words": 2993
+   "words": 2993,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_elfnam.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_elfnam_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_entish.htm",
@@ -2461,7 +3642,15 @@
    "present": true,
    "bytes": 7437,
    "corpus_file": "t3_ardalambion_entish_htm.txt",
-   "words": 1199
+   "words": 1199,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_entish.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_entish_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_errors.htm",
@@ -2472,7 +3661,15 @@
    "present": true,
    "bytes": 21044,
    "corpus_file": "t3_ardalambion_errors_htm.txt",
-   "words": 3170
+   "words": 3170,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_errors.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_errors_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_esperanto.htm",
@@ -2483,7 +3680,15 @@
    "present": true,
    "bytes": 4439,
    "corpus_file": "t3_ardalambion_esperanto_htm.txt",
-   "words": 370
+   "words": 370,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_esperanto.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_esperanto_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_explan.htm",
@@ -2494,7 +3699,15 @@
    "present": true,
    "bytes": 15735,
    "corpus_file": "t3_ardalambion_explan_htm.txt",
-   "words": 2465
+   "words": 2465,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_explan.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_explan_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_firiel.htm",
@@ -2505,7 +3718,15 @@
    "present": true,
    "bytes": 57858,
    "corpus_file": "t3_ardalambion_firiel_htm.txt",
-   "words": 8284
+   "words": 8284,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_firiel.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_firiel_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_genesis2.htm",
@@ -2516,7 +3737,15 @@
    "present": true,
    "bytes": 30511,
    "corpus_file": "t3_ardalambion_genesis2_htm.txt",
-   "words": 4205
+   "words": 4205,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_genesis2.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_genesis2_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_gobeth.htm",
@@ -2527,7 +3756,15 @@
    "present": true,
    "bytes": 4659,
    "corpus_file": "t3_ardalambion_gobeth_htm.txt",
-   "words": 401
+   "words": 401,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_gobeth.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_gobeth_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_greven.htm",
@@ -2538,7 +3775,15 @@
    "present": true,
    "bytes": 5227,
    "corpus_file": "t3_ardalambion_greven_htm.txt",
-   "words": 866
+   "words": 866,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_greven.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_greven_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_howmany.htm",
@@ -2549,7 +3794,15 @@
    "present": true,
    "bytes": 14348,
    "corpus_file": "t3_ardalambion_howmany_htm.txt",
-   "words": 2293
+   "words": 2293,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_howmany.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_howmany_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_ilkorin.htm",
@@ -2560,7 +3813,15 @@
    "present": true,
    "bytes": 167120,
    "corpus_file": "t3_ardalambion_ilkorin_htm.txt",
-   "words": 24250
+   "words": 24250,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_ilkorin.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_ilkorin_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_index.htm",
@@ -2571,7 +3832,15 @@
    "present": true,
    "bytes": 26663,
    "corpus_file": "t3_ardalambion_index_htm.txt",
-   "words": 2307
+   "words": 2307,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_index.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_index_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_index2_explan.htm",
@@ -2582,7 +3851,15 @@
    "present": true,
    "bytes": 5530,
    "corpus_file": "t3_ardalambion_index2_explan_htm.txt",
-   "words": 870
+   "words": 870,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_index2_explan.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_index2_explan_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_index_indexs.htm",
@@ -2593,7 +3870,15 @@
    "present": true,
    "bytes": 12025,
    "corpus_file": "t3_ardalambion_index_indexs_htm.txt",
-   "words": 1844
+   "words": 1844,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_index_indexs.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_index_indexs_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_k2.htm",
@@ -2604,7 +3889,15 @@
    "present": true,
    "bytes": 51375,
    "corpus_file": "t3_ardalambion_k2_htm.txt",
-   "words": 6752
+   "words": 6752,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_k2.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_k2_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_khuzdul.htm",
@@ -2615,7 +3908,15 @@
    "present": true,
    "bytes": 51375,
    "corpus_file": "t3_ardalambion_khuzdul_htm.txt",
-   "words": 6752
+   "words": 6752,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_khuzdul.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_khuzdul_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_lh-rh.htm",
@@ -2626,7 +3927,15 @@
    "present": true,
    "bytes": 37532,
    "corpus_file": "t3_ardalambion_lh_rh_htm.txt",
-   "words": 4809
+   "words": 4809,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_lh-rh.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_lh_rh_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_m2.htm",
@@ -2637,7 +3946,15 @@
    "present": true,
    "bytes": 6523,
    "corpus_file": "t3_ardalambion_m2_htm.txt",
-   "words": 976
+   "words": 976,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_m2.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_m2_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_mannish.htm",
@@ -2648,7 +3965,15 @@
    "present": true,
    "bytes": 13479,
    "corpus_file": "t3_ardalambion_mannish_htm.txt",
-   "words": 2007
+   "words": 2007,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_mannish.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_mannish_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_markirya.htm",
@@ -2659,7 +3984,15 @@
    "present": true,
    "bytes": 32559,
    "corpus_file": "t3_ardalambion_markirya_htm.txt",
-   "words": 4435
+   "words": 4435,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_markirya.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_markirya_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_naffarin.htm",
@@ -2670,7 +4003,15 @@
    "present": true,
    "bytes": 6283,
    "corpus_file": "t3_ardalambion_naffarin_htm.txt",
-   "words": 835
+   "words": 835,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_naffarin.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_naffarin_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_namarie.htm",
@@ -2681,7 +4022,15 @@
    "present": true,
    "bytes": 38199,
    "corpus_file": "t3_ardalambion_namarie_htm.txt",
-   "words": 4986
+   "words": 4986,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_namarie.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_namarie_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_nandorin.htm",
@@ -2692,7 +4041,15 @@
    "present": true,
    "bytes": 32313,
    "corpus_file": "t3_ardalambion_nandorin_htm.txt",
-   "words": 4646
+   "words": 4646,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_nandorin.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_nandorin_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_ndnn.htm",
@@ -2703,7 +4060,15 @@
    "present": true,
    "bytes": 51846,
    "corpus_file": "t3_ardalambion_ndnn_htm.txt",
-   "words": 7798
+   "words": 7798,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_ndnn.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_ndnn_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_nevbosh.htm",
@@ -2714,7 +4079,15 @@
    "present": true,
    "bytes": 9073,
    "corpus_file": "t3_ardalambion_nevbosh_htm.txt",
-   "words": 1208
+   "words": 1208,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_nevbosh.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_nevbosh_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_new.htm",
@@ -2725,7 +4098,15 @@
    "present": true,
    "bytes": 12083,
    "corpus_file": "t3_ardalambion_new_htm.txt",
-   "words": 1431
+   "words": 1431,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_new.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_new_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_num-intro.htm",
@@ -2736,7 +4117,15 @@
    "present": true,
    "bytes": 36328,
    "corpus_file": "t3_ardalambion_num_intro_htm.txt",
-   "words": 5946
+   "words": 5946,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_num-intro.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_num_intro_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_numenor1.htm",
@@ -2747,7 +4136,15 @@
    "present": true,
    "bytes": 145076,
    "corpus_file": "t3_ardalambion_numenor1_htm.txt",
-   "words": 24034
+   "words": 24034,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_numenor1.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_numenor1_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_numenor2.htm",
@@ -2758,7 +4155,15 @@
    "present": true,
    "bytes": 227447,
    "corpus_file": "t3_ardalambion_numenor2_htm.txt",
-   "words": 38445
+   "words": 38445,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_numenor2.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_numenor2_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_o2.htm",
@@ -2769,7 +4174,15 @@
    "present": true,
    "bytes": 31058,
    "corpus_file": "t3_ardalambion_o2_htm.txt",
-   "words": 4557
+   "words": 4557,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_o2.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_o2_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_oe.htm",
@@ -2780,7 +4193,15 @@
    "present": true,
    "bytes": 15331,
    "corpus_file": "t3_ardalambion_oe_htm.txt",
-   "words": 2298
+   "words": 2298,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_oe.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_oe_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_oldsind.htm",
@@ -2791,7 +4212,15 @@
    "present": true,
    "bytes": 279729,
    "corpus_file": "t3_ardalambion_oldsind_htm.txt",
-   "words": 39040
+   "words": 39040,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_oldsind.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_oldsind_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_orkish.htm",
@@ -2802,7 +4231,15 @@
    "present": true,
    "bytes": 31058,
    "corpus_file": "t3_ardalambion_orkish_htm.txt",
-   "words": 4557
+   "words": 4557,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_orkish.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_orkish_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_p2.htm",
@@ -2813,7 +4250,15 @@
    "present": true,
    "bytes": 254486,
    "corpus_file": "t3_ardalambion_p2_htm.txt",
-   "words": 28563
+   "words": 28563,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_p2.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_p2_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_primelv.htm",
@@ -2824,7 +4269,15 @@
    "present": true,
    "bytes": 263852,
    "corpus_file": "t3_ardalambion_primelv_htm.txt",
-   "words": 29847
+   "words": 29847,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_primelv.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_primelv_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_qcourse.htm",
@@ -2835,7 +4288,15 @@
    "present": true,
    "bytes": 6963,
    "corpus_file": "t3_ardalambion_qcourse_htm.txt",
-   "words": 957
+   "words": 957,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_qcourse.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_qcourse_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_qlindex1.htm",
@@ -2846,7 +4307,15 @@
    "present": true,
    "bytes": 143164,
    "corpus_file": "t3_ardalambion_qlindex1_htm.txt",
-   "words": 16940
+   "words": 16940,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_qlindex1.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_qlindex1_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_qlindex2.htm",
@@ -2857,7 +4326,15 @@
    "present": true,
    "bytes": 137319,
    "corpus_file": "t3_ardalambion_qlindex2_htm.txt",
-   "words": 12822
+   "words": 12822,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_qlindex2.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_qlindex2_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_qlreview.htm",
@@ -2868,7 +4345,15 @@
    "present": true,
    "bytes": 26306,
    "corpus_file": "t3_ardalambion_qlreview_htm.txt",
-   "words": 4307
+   "words": 4307,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_qlreview.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_qlreview_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_quen-eng.htm",
@@ -2879,7 +4364,15 @@
    "present": true,
    "bytes": 926646,
    "corpus_file": "t3_ardalambion_quen_eng_htm.txt",
-   "words": 107449
+   "words": 107449,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_quen-eng.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_quen_eng_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_quenya.htm",
@@ -2890,7 +4383,15 @@
    "present": true,
    "bytes": 112091,
    "corpus_file": "t3_ardalambion_quenya_htm.txt",
-   "words": 16689
+   "words": 16689,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_quenya.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_quenya_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_sauronname.htm",
@@ -2901,7 +4402,15 @@
    "present": true,
    "bytes": 23126,
    "corpus_file": "t3_ardalambion_sauronname_htm.txt",
-   "words": 3700
+   "words": 3700,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_sauronname.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_sauronname_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_sindarin.htm",
@@ -2912,7 +4421,15 @@
    "present": true,
    "bytes": 326780,
    "corpus_file": "t3_ardalambion_sindarin_htm.txt",
-   "words": 46485
+   "words": 46485,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_sindarin.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_sindarin_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_sindverb.htm",
@@ -2923,7 +4440,15 @@
    "present": true,
    "bytes": 88270,
    "corpus_file": "t3_ardalambion_sindverb_htm.txt",
-   "words": 10535
+   "words": 10535,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_sindverb.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_sindverb_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_ss.htm",
@@ -2934,7 +4459,15 @@
    "present": true,
    "bytes": 30149,
    "corpus_file": "t3_ardalambion_ss_htm.txt",
-   "words": 4734
+   "words": 4734,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_ss.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_ss_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_sverb-rec.htm",
@@ -2945,7 +4478,15 @@
    "present": true,
    "bytes": 207422,
    "corpus_file": "t3_ardalambion_sverb_rec_htm.txt",
-   "words": 31712
+   "words": 31712,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_sverb-rec.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_sverb_rec_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_telerin.htm",
@@ -2956,7 +4497,15 @@
    "present": true,
    "bytes": 101897,
    "corpus_file": "t3_ardalambion_telerin_htm.txt",
-   "words": 14075
+   "words": 14075,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_telerin.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_telerin_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_v2.htm",
@@ -2967,7 +4516,15 @@
    "present": true,
    "bytes": 22132,
    "corpus_file": "t3_ardalambion_v2_htm.txt",
-   "words": 2775
+   "words": 2775,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_v2.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_v2_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_vice.htm",
@@ -2978,7 +4535,15 @@
    "present": true,
    "bytes": 34350,
    "corpus_file": "t3_ardalambion_vice_htm.txt",
-   "words": 5253
+   "words": 5253,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_vice.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_vice_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_vocab.htm",
@@ -2989,7 +4554,15 @@
    "present": true,
    "bytes": 36048,
    "corpus_file": "t3_ardalambion_vocab_htm.txt",
-   "words": 4177
+   "words": 4177,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_vocab.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_vocab_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_westron.htm",
@@ -3000,7 +4573,15 @@
    "present": true,
    "bytes": 20320,
    "corpus_file": "t3_ardalambion_westron_htm.txt",
-   "words": 2918
+   "words": 2918,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_westron.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_westron_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_whoami.htm",
@@ -3011,7 +4592,15 @@
    "present": true,
    "bytes": 9983,
    "corpus_file": "t3_ardalambion_whoami_htm.txt",
-   "words": 552
+   "words": 552,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_whoami.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_whoami_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_wordlists.htm",
@@ -3022,7 +4611,15 @@
    "present": true,
    "bytes": 2300,
    "corpus_file": "t3_ardalambion_wordlists_htm.txt",
-   "words": 318
+   "words": 318,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_wordlists.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_wordlists_htm.txt)"
+   }
   },
   {
    "file": "ardalambion_yessesse.htm",
@@ -3033,7 +4630,15 @@
    "present": true,
    "bytes": 27735,
    "corpus_file": "t3_ardalambion_yessesse_htm.txt",
-   "words": 4127
+   "words": 4127,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://www.ardalambion.org/ardalambion_yessesse.htm"
+    ],
+    "granularity": "item",
+    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_yessesse_htm.txt)"
+   }
   },
   {
    "file": "The King's Letter (manuscript plate).png",
@@ -3053,6 +4658,11 @@
     "relation": "PRINTED_TRANSLITERATION",
     "evidence": "t1_9_sauron_defeated.txt:4573-4630",
     "why": "Christopher Tolkien printed the text of this very manuscript, with a transliteration of both its English and its Sindarin, in HoME IX -- and said in the same breath exactly where the tengwar and the transliteration DISAGREE: the English transliteration omits Arathornsson and adds `day` where the tengwar read `the thirty-first of the Stirring`, and `and Arnor, ar Arnor` was added to both tengwar texts and is absent from both transliterations. All three copies are given, at t1_9_sauron_defeated.txt:4573-4630. So the archive is not owed a machine reading of the plate: it holds the Estate's own reading of it, including the variants an OCR pass could not have known were there. The .png remains what it always was -- a picture with no text layer, correctly extracting to nothing."
+   },
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "nothing readable to read an identifier out of: this row's corpus text is absent or empty, so the held copy cannot be asked where it came from."
    }
   },
   {
@@ -3067,7 +4677,12 @@
    "bytes": 1162280,
    "pages": 80,
    "corpus_file": "t2_parma_eldalamberon_11.txt",
-   "words": 39557
+   "words": 39557,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Parma Eldalamberon 13.pdf",
@@ -3081,7 +4696,12 @@
    "bytes": 5970512,
    "pages": 169,
    "corpus_file": "t2_parma_eldalamberon_13.txt",
-   "words": 66174
+   "words": 66174,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Parma Eldalamberon 14.pdf",
@@ -3095,7 +4715,12 @@
    "bytes": 2461159,
    "pages": 138,
    "corpus_file": "t2_parma_eldalamberon_14.txt",
-   "words": 66874
+   "words": 66874,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Parma Eldalamberon 15.pdf",
@@ -3109,7 +4734,12 @@
    "bytes": 4407184,
    "pages": 126,
    "corpus_file": "t2_parma_eldalamberon_15.txt",
-   "words": 64774
+   "words": 64774,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Parma Eldalamberon 17.pdf",
@@ -3125,7 +4755,12 @@
    "bytes": 8109681,
    "pages": 221,
    "corpus_file": "t2_ocr_parma_eldalamberon_17.txt",
-   "words": 125269
+   "words": 125269,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Parma Eldalamberon 23.pdf",
@@ -3141,7 +4776,12 @@
    "bytes": 150123092,
    "pages": 152,
    "corpus_file": "t2_ocr_parma_eldalamberon_23.txt",
-   "words": 73945
+   "words": 73945,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Vinyar Tengwar 41-50.pdf",
@@ -3155,7 +4795,15 @@
    "bytes": 12624053,
    "pages": 404,
    "corpus_file": "t2_vinyar_tengwar_41_50.txt",
-   "words": 189733
+   "words": 189733,
+   "retrieval": {
+    "kind": "isbn",
+    "ids": [
+     "0395974682"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t2_vinyar_tengwar_41_50.txt)"
+   }
   },
   {
    "file": "Vinyar Tengwar 39-41 - Osanwe-kenta (extract).pdf",
@@ -3169,7 +4817,12 @@
    "bytes": 2157261,
    "pages": 19,
    "corpus_file": "t2_vinyar_tengwar_39_41_osanwe_kenta_extract.txt",
-   "words": 8041
+   "words": 8041,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Vinyar Tengwar 24.pdf",
@@ -3185,7 +4838,12 @@
    "bytes": 8519943,
    "pages": 40,
    "corpus_file": "t2_ocr_vinyar_tengwar_24.txt",
-   "words": 15984
+   "words": 15984,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Vinyar Tengwar 25.pdf",
@@ -3201,7 +4859,15 @@
    "bytes": 9732600,
    "pages": 28,
    "corpus_file": "t2_ocr_vinyar_tengwar_25.txt",
-   "words": 12805
+   "words": 12805,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "10547606"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t2_ocr_vinyar_tengwar_25.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Vinyar Tengwar Index.pdf",
@@ -3215,7 +4881,12 @@
    "bytes": 591600,
    "pages": 56,
    "corpus_file": "t3_vinyar_tengwar_index.txt",
-   "words": 31178
+   "words": 31178,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Giraudeau - A New Q(u)enya Lexicon (from PE11).pdf",
@@ -3229,7 +4900,15 @@
    "bytes": 373557,
    "pages": 17,
    "corpus_file": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe11.txt",
-   "words": 11649
+   "words": 11649,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "http://lambenore.free.fr"
+    ],
+    "granularity": "serial",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_giraudeau_a_new_q_u_enya_lexicon_from_pe11.txt)"
+   }
   },
   {
    "file": "Giraudeau - A New Q(u)enya Lexicon (from PE17).pdf",
@@ -3243,7 +4922,15 @@
    "bytes": 1356534,
    "pages": 62,
    "corpus_file": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt",
-   "words": 58046
+   "words": 58046,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "http://lambenore.free.fr"
+    ],
+    "granularity": "serial",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt)"
+   }
   },
   {
    "file": "Giraudeau - A New Q(u)enya Lexicon (from PE21).pdf",
@@ -3257,7 +4944,15 @@
    "bytes": 373215,
    "pages": 16,
    "corpus_file": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe21.txt",
-   "words": 10641
+   "words": 10641,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "http://lambenore.free.fr"
+    ],
+    "granularity": "serial",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_giraudeau_a_new_q_u_enya_lexicon_from_pe21.txt)"
+   }
   },
   {
    "file": "Giraudeau - Parma Eldalamberon 12, changes in the 2011 printing.pdf",
@@ -3271,7 +4966,16 @@
    "bytes": 760754,
    "pages": 9,
    "corpus_file": "t3_giraudeau_parma_eldalamberon_12_changes_in_the_2011_.txt",
-   "words": 4766
+   "words": 4766,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "http://lambenore.free.fr",
+     "http://www.elvish.org/errata/Parma-Errata.pdf"
+    ],
+    "granularity": "serial",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_giraudeau_parma_eldalamberon_12_changes_in_the_2011_.txt)"
+   }
   },
   {
    "file": "Giraudeau - Sindarin Corpus (from PE17).pdf",
@@ -3285,7 +4989,15 @@
    "bytes": 670578,
    "pages": 70,
    "corpus_file": "t3_giraudeau_sindarin_corpus_from_pe17.txt",
-   "words": 23048
+   "words": 23048,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "http://lambenore.free.fr"
+    ],
+    "granularity": "serial",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_giraudeau_sindarin_corpus_from_pe17.txt)"
+   }
   },
   {
    "file": "Kloczko - High Elvish for Beginners (notes by Giraudeau).pdf",
@@ -3299,7 +5011,15 @@
    "bytes": 631765,
    "pages": 37,
    "corpus_file": "t3_kloczko_high_elvish_for_beginners_notes_by_giraudeau.txt",
-   "words": 10824
+   "words": 10824,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "http://lambenore.free.fr"
+    ],
+    "granularity": "serial",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_kloczko_high_elvish_for_beginners_notes_by_giraudeau.txt)"
+   }
   },
   {
    "file": "(K) The Road Goes Ever On - A Song Cycle (2nd digitisation).pdf",
@@ -3315,7 +5035,12 @@
    "bytes": 1349098,
    "pages": 78,
    "corpus_file": "t1_k_the_road_goes_ever_on_a_song_cycle_2nd_digitisatio.txt",
-   "words": 12168
+   "words": 12168,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Ellison - The road goes ever on, the Journey motive in The Lord of the Rings.pdf",
@@ -3329,7 +5054,12 @@
    "bytes": 615856,
    "pages": 5,
    "corpus_file": "t3_ellison_the_road_goes_ever_on_the_journey_motive_in_.txt",
-   "words": 5246
+   "words": 5246,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Heraldry - Tolkien Gateway.pdf",
@@ -3343,7 +5073,15 @@
    "bytes": 5649615,
    "pages": 35,
    "corpus_file": "t4_heraldry_tolkien_gateway.txt",
-   "words": 7270
+   "words": 7270,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://tolkiengateway.net/wiki/Heraldry"
+    ],
+    "granularity": "item",
+    "evidence": "the page's own address, printed in the saved print of it (corpus/t4_heraldry_tolkien_gateway.txt)"
+   }
   },
   {
    "file": "Giraudeau - J.R.R. Tolkien, a global theory.pdf",
@@ -3357,7 +5095,15 @@
    "bytes": 2623864,
    "pages": 68,
    "corpus_file": "t3_giraudeau_j_r_r_tolkien_a_global_theory.txt",
-   "words": 20392
+   "words": 20392,
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "http://lambenore.free.fr"
+    ],
+    "granularity": "serial",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_giraudeau_j_r_r_tolkien_a_global_theory.txt)"
+   }
   },
   {
    "file": "Vinyar Tengwar 11.pdf",
@@ -3373,7 +5119,12 @@
    "bytes": 990891,
    "pages": 12,
    "corpus_file": "t2_ocr_vinyar_tengwar_11.txt",
-   "words": 12001
+   "words": 12001,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Vinyar Tengwar 12.pdf",
@@ -3389,7 +5140,12 @@
    "bytes": 1041737,
    "pages": 12,
    "corpus_file": "t2_ocr_vinyar_tengwar_12.txt",
-   "words": 13437
+   "words": 13437,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Vinyar Tengwar 14.pdf",
@@ -3405,7 +5161,12 @@
    "bytes": 1205260,
    "pages": 12,
    "corpus_file": "t2_ocr_vinyar_tengwar_14.txt",
-   "words": 13633
+   "words": 13633,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Vinyar Tengwar 27.pdf",
@@ -3421,7 +5182,12 @@
    "bytes": 1942372,
    "pages": 22,
    "corpus_file": "t2_ocr_vinyar_tengwar_27.txt",
-   "words": 22302
+   "words": 22302,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Vinyar Tengwar 28.pdf",
@@ -3437,7 +5203,15 @@
    "bytes": 1600334,
    "pages": 20,
    "corpus_file": "t2_ocr_vinyar_tengwar_28.txt",
-   "words": 19896
+   "words": 19896,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "10547606"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t2_ocr_vinyar_tengwar_28.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Vinyar Tengwar 29.pdf",
@@ -3453,7 +5227,12 @@
    "bytes": 1158193,
    "pages": 17,
    "corpus_file": "t2_ocr_vinyar_tengwar_29.txt",
-   "words": 11805
+   "words": 11805,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Vinyar Tengwar 31.pdf",
@@ -3469,7 +5248,12 @@
    "bytes": 1522652,
    "pages": 18,
    "corpus_file": "t2_ocr_vinyar_tengwar_31.txt",
-   "words": 15753
+   "words": 15753,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   },
   {
    "file": "Vinyar Tengwar 36.pdf",
@@ -3485,7 +5269,15 @@
    "bytes": 1518959,
    "pages": 18,
    "corpus_file": "t2_ocr_vinyar_tengwar_36.txt",
-   "words": 18457
+   "words": 18457,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "10547606"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t2_ocr_vinyar_tengwar_36.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Vinyar Tengwar 37.pdf",
@@ -3501,7 +5293,15 @@
    "bytes": 1113078,
    "pages": 16,
    "corpus_file": "t2_ocr_vinyar_tengwar_37.txt",
-   "words": 12357
+   "words": 12357,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "10547606"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t2_ocr_vinyar_tengwar_37.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Vinyar Tengwar 39.pdf",
@@ -3517,7 +5317,15 @@
    "bytes": 888189,
    "pages": 36,
    "corpus_file": "t2_ocr_vinyar_tengwar_39.txt",
-   "words": 17669
+   "words": 17669,
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "10547606"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t2_ocr_vinyar_tengwar_39.txt). It reaches the periodical; this row's own title names the issue."
+   }
   },
   {
    "file": "Vinyar Tengwar 39 (2).pdf",
@@ -3533,7 +5341,12 @@
    "bytes": 1516745,
    "pages": 18,
    "corpus_file": "t2_ocr_vinyar_tengwar_39_2.txt",
-   "words": 18061
+   "words": 18061,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   }
  ],
  "not_held": [
@@ -3643,6 +5456,41 @@
    "note": "Those tables are printed as images and survive no text extraction. They were recovered by rendering each plate with pdftoppm and reading it. OCR was tried and rejected: tesseract read Nain I's date as 1882 where the plate says 1832. Treat every figure here as a transcription that can be checked against the plate, not as extracted text."
   }
  ],
+ "retrieval_summary": {
+  "what": "Whether each source in this register can be retrieved by somebody who is not this archive. `path` means an identifier read out of the copy we hold -- an ISBN from its copyright page, an ISSN from its masthead, the address a saved web page prints of itself. `unrecorded` means no such identifier is printed in our copy and nobody has looked one up. Nothing here is guessed: an invented ISBN would look checkable and be false, which is worse than an empty field.",
+  "granularity": "`item` reaches this exact thing. `serial` reaches the periodical it belongs to, and the row's own title names the issue.",
+  "by_tier": {
+   "1": {
+    "total": 36,
+    "with_path": 19,
+    "unrecorded": 17
+   },
+   "2": {
+    "total": 29,
+    "with_path": 11,
+    "unrecorded": 18
+   },
+   "3": {
+    "total": 184,
+    "with_path": 131,
+    "unrecorded": 53
+   },
+   "4": {
+    "total": 11,
+    "with_path": 4,
+    "unrecorded": 7
+   }
+  },
+  "by_kind": {
+   "unrecorded": 95,
+   "isbn": 38,
+   "url": 83,
+   "issn": 44
+  },
+  "total": 260,
+  "with_path": 165,
+  "unrecorded": 95
+ },
  "rule": "Where two sources disagree, the lower tier number wins. A tier-5 file is corrected by any tier above it. Tolkien's own words quoted inside a tier-2 book carry tier-1 authority; the editor's framing does not.",
  "limits": [
   {

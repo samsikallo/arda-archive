@@ -36,12 +36,33 @@ if(!document.documentElement.hasAttribute("data-codex-object")){
  // silently overwrote the reader's preference on every load.
  const put=t=>{document.documentElement.setAttribute("data-theme",t);
    try{if(window.ardaPaintTheme)window.ardaPaintTheme()}catch(e){}};
- put(stored||os());
+ /* C108: THIS LINE USED TO READ `put(stored||os())` AND OVERWROTE EVERY PAGE'S OWN THEME.
+    The generators stamp data-theme on all 652 routes -- and measured, all 652 stamp "light",
+    because it is a PRE-JS PLACEHOLDER and not a declaration of intent. So simply honouring the
+    stamp would pin every reader to light and delete dark mode outright; that was the obvious fix
+    and it was wrong. What the stamp cannot say is the one thing that matters: "this page has a
+    parchment ground and NO dark design, so dark will paint near-parchment ink on it." That was
+    measured at contrast 1.21 on ten of twenty inks -- the "light and dark mode is confused" he
+    reported. A page says it now, in its own markup, and nav.js obeys:
+
+        <html data-theme="light" data-theme-lock="light">
+
+    LOCK BEATS THE READER'S STORED CHOICE, deliberately. A reader's preference is a preference;
+    an unreadable page is not a preference. Where a page is locked the toggle reports the lock
+    instead of lying about a change it cannot make. A CSS exemption scoped to `.book` already
+    makes the symptom impossible on 649 of 652 routes -- but an exemption is not a repair, and the
+    trap it leaves is armed for the NEXT page with a parchment ground and no book. Today that is
+    `_typeface_specimen.html` and `_unicase.html`. */
+ const lock=document.documentElement.getAttribute("data-theme-lock");
+ put(lock||stored||os());
  /* One theme authority: two halls set data-theme directly and persisted nothing. */
- window.ardaSetTheme=function(d){const v=d?"dark":"light";
+ window.ardaSetTheme=function(d){
+   if(lock){put(lock); return lock;}          // a locked page cannot be toggled, and says so
+   const v=d?"dark":"light";
    put(v); try{localStorage.setItem(KEY,v)}catch(e){}; return v;};
  // The OS changing while the page is open follows, UNLESS the reader has chosen for themselves.
  try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{
+   if(lock) return;                            // C108: the OS does not override a locked page either
    let s=null; try{s=localStorage.getItem(KEY)}catch(_){}
    if(!s) put(e.matches?"dark":"light");
  })}catch(e){}
