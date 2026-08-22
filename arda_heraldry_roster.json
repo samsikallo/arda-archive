@@ -1,17 +1,17 @@
 {
- "note": "ALL 218 SUBJECTS, ruling C93, so the silence is countable. Each row points at a device key in window.ARDA_HERALD or declares itself bare with the measured reason. No device is drawn here and none is duplicated: 208 subjects share 153 devices, because the corpus gives one running horse to six bearers and one white tree to nine.",
+ "note": "ALL 218 SUBJECTS, ruling C93, so the silence is countable. Each row points at a device key in window.ARDA_HERALD or declares itself bare with the measured reason. No device is drawn here and none is duplicated: 208 subjects share 152 devices, because the corpus gives one running horse to six bearers and one white tree to nine.",
  "axes": "`basis` is the HALL's axis and answers how the archive came to have the picture: artwork ✔ a device Tolkien designed, shown as a recreation · design ✦ a device he drew that cannot be reproduced here, drawn by the forge from his description and from arrangements and inks measured off the plates · text ✧ blazoned in the texts and never drawn · inferred ◆ the archive's own interpretation, where he left no device · silent ○ nothing recorded anywhere, and the field is left bare rather than filled in. `conf` is the ROSTER's axis and answers how strong the evidence is that this subject bears it: [C] the corpus names the charge AS a device of this subject · [I-H] it attests the image but not as heraldry, or attests it for the parent of a branch · [I-M] a longer chain · null refused. THEY ARE NOT ONE AXIS AND NEITHER IS DERIVED FROM THE OTHER: a device whose picture is `artwork` can be attached to a subject at [I-H], and a subject can be [C] on a device whose picture is `inferred`.",
  "generated_by": "map/gen_heraldry_roster.py",
  "measured": {
   "subjects": 218,
   "with_device": 208,
   "bare": 10,
-  "distinct_devices_used": 153,
+  "distinct_devices_used": 152,
   "by_basis": {
    "silent": 10,
-   "text": 19,
-   "inferred": 136,
-   "artwork": 50,
+   "text": 21,
+   "inferred": 131,
+   "artwork": 53,
    "design": 3
   },
   "by_conf": {
@@ -40,15 +40,15 @@
     5
    ],
    [
-    "gondorplain",
-    5
-   ],
-   [
     "beor",
     4
    ],
    [
     "feanor",
+    3
+   ],
+   [
+    "haleth",
     3
    ]
   ]
@@ -5058,11 +5058,11 @@
    "id": "tower_hills",
    "kind": "place",
    "subject": "Tower Hills",
-   "device": "gondorplain",
-   "device_label": "The arms of Gondor, un-augmented",
-   "from_design": "gondor_plain",
-   "why_this_key": "newly forged: the hall held the ROYAL arms only, never the un-augmented tree",
-   "basis": "inferred",
+   "device": "elendilbadge",
+   "device_label": "The badge of Elendil — L·ND·L",
+   "from_design": null,
+   "why_this_key": "the owner named this device for this subject, C119, 21 August 2026 -- the livery of Elendil's heirs is a HOUSE device and the royal banner is the realm's; one key had been doing both jobs",
+   "basis": "text",
    "canon": false,
    "conf": "[I-M]",
    "rule": "R6",
@@ -5083,10 +5083,10 @@
    "forged_not_routed": {
     "key": "inf_p_tower_hills",
     "conf": "[I-L]",
-    "why": "this subject already bears 'gondorplain' on this roster, and routing an invention over an inherited device is the one thing C120's forge did not do. The drawing stands in the catalogue as its own record."
+    "why": "this subject already bears 'elendilbadge' on this roster, and routing an invention over an inherited device is the one thing C120's forge did not do. The drawing stands in the catalogue as its own record."
    },
-   "author": "interpretive: the tree upon sable is Tolkien’s; borne un-augmented by a house not of the crowned line is the reading of Żurek and of this archive",
-   "licence": null,
+   "author": "unattributed",
+   "licence": "unattributed; rights confirmed by the site's owner",
    "publishable": true,
    "reason": null,
    "cannot_bear": null,
@@ -5299,11 +5299,11 @@
    "id": "annuminas",
    "kind": "place",
    "subject": "Annúminas",
-   "device": "gondorplain",
-   "device_label": "The arms of Gondor, un-augmented",
-   "from_design": "gondor_plain",
-   "why_this_key": "newly forged: the hall held the ROYAL arms only, never the un-augmented tree",
-   "basis": "inferred",
+   "device": "elendilbadge",
+   "device_label": "The badge of Elendil — L·ND·L",
+   "from_design": null,
+   "why_this_key": "the owner named this device for this subject, C119, 21 August 2026 -- the livery of Elendil's heirs is a HOUSE device and the royal banner is the realm's; one key had been doing both jobs",
+   "basis": "text",
    "canon": false,
    "conf": "[I-M]",
    "rule": "R6",
@@ -5324,10 +5324,10 @@
    "forged_not_routed": {
     "key": "inf_p_annuminas",
     "conf": "[I-L]",
-    "why": "this subject already bears 'gondorplain' on this roster, and routing an invention over an inherited device is the one thing C120's forge did not do. The drawing stands in the catalogue as its own record."
+    "why": "this subject already bears 'elendilbadge' on this roster, and routing an invention over an inherited device is the one thing C120's forge did not do. The drawing stands in the catalogue as its own record."
    },
-   "author": "interpretive: the tree upon sable is Tolkien’s; borne un-augmented by a house not of the crowned line is the reading of Żurek and of this archive",
-   "licence": null,
+   "author": "unattributed",
+   "licence": "unattributed; rights confirmed by the site's owner",
    "publishable": true,
    "reason": null,
    "cannot_bear": null,
@@ -6543,12 +6543,12 @@
    "id": "pelargir",
    "kind": "place",
    "subject": "Pelargir",
-   "device": "gondorplain",
-   "device_label": "The arms of Gondor, un-augmented",
-   "from_design": "gondor_plain",
-   "why_this_key": "newly forged: the hall held the ROYAL arms only, never the un-augmented tree",
-   "basis": "inferred",
-   "canon": false,
+   "device": "gondor",
+   "device_label": "Arms of the Kings of Gondor",
+   "from_design": null,
+   "why_this_key": "the owner named this device for this subject, C119, 21 August 2026 -- the livery of Elendil's heirs is a HOUSE device and the royal banner is the realm's; one key had been doing both jobs",
+   "basis": "artwork",
+   "canon": true,
    "conf": "[I-M]",
    "rule": "R6",
    "tier": 5,
@@ -6568,10 +6568,10 @@
    "forged_not_routed": {
     "key": "inf_p_pelargir",
     "conf": "[I-L]",
-    "why": "this subject already bears 'gondorplain' on this roster, and routing an invention over an inherited device is the one thing C120's forge did not do. The drawing stands in the catalogue as its own record."
+    "why": "this subject already bears 'gondor' on this roster, and routing an invention over an inherited device is the one thing C120's forge did not do. The drawing stands in the catalogue as its own record."
    },
-   "author": "interpretive: the tree upon sable is Tolkien’s; borne un-augmented by a house not of the crowned line is the reading of Żurek and of this archive",
-   "licence": null,
+   "author": "Escudo Gondor.svg: *Escudo Gondor.png: Vëon Menelion\nderivat",
+   "licence": "CC BY-SA 3.0",
    "publishable": true,
    "reason": null,
    "cannot_bear": null,
@@ -6649,12 +6649,12 @@
    "id": "osgiliath",
    "kind": "place",
    "subject": "Osgiliath",
-   "device": "gondorplain",
-   "device_label": "The arms of Gondor, un-augmented",
-   "from_design": "gondor_plain",
-   "why_this_key": "newly forged: the hall held the ROYAL arms only, never the un-augmented tree",
-   "basis": "inferred",
-   "canon": false,
+   "device": "gondor",
+   "device_label": "Arms of the Kings of Gondor",
+   "from_design": null,
+   "why_this_key": "the owner named this device for this subject, C119, 21 August 2026 -- the livery of Elendil's heirs is a HOUSE device and the royal banner is the realm's; one key had been doing both jobs",
+   "basis": "artwork",
+   "canon": true,
    "conf": "[I-M]",
    "rule": "R6",
    "tier": 5,
@@ -6674,10 +6674,10 @@
    "forged_not_routed": {
     "key": "inf_p_osgiliath",
     "conf": "[I-L]",
-    "why": "this subject already bears 'gondorplain' on this roster, and routing an invention over an inherited device is the one thing C120's forge did not do. The drawing stands in the catalogue as its own record."
+    "why": "this subject already bears 'gondor' on this roster, and routing an invention over an inherited device is the one thing C120's forge did not do. The drawing stands in the catalogue as its own record."
    },
-   "author": "interpretive: the tree upon sable is Tolkien’s; borne un-augmented by a house not of the crowned line is the reading of Żurek and of this archive",
-   "licence": null,
+   "author": "Escudo Gondor.svg: *Escudo Gondor.png: Vëon Menelion\nderivat",
+   "licence": "CC BY-SA 3.0",
    "publishable": true,
    "reason": null,
    "cannot_bear": null,
@@ -6842,12 +6842,12 @@
    "id": "cair_andros",
    "kind": "place",
    "subject": "Cair Andros",
-   "device": "gondorplain",
-   "device_label": "The arms of Gondor, un-augmented",
-   "from_design": "gondor_plain",
-   "why_this_key": "newly forged: the hall held the ROYAL arms only, never the un-augmented tree",
-   "basis": "inferred",
-   "canon": false,
+   "device": "gondor",
+   "device_label": "Arms of the Kings of Gondor",
+   "from_design": null,
+   "why_this_key": "the owner named this device for this subject, C119, 21 August 2026 -- the livery of Elendil's heirs is a HOUSE device and the royal banner is the realm's; one key had been doing both jobs",
+   "basis": "artwork",
+   "canon": true,
    "conf": "[I-M]",
    "rule": "R6",
    "tier": 5,
@@ -6867,10 +6867,10 @@
    "forged_not_routed": {
     "key": "inf_p_cair_andros",
     "conf": "[I-L]",
-    "why": "this subject already bears 'gondorplain' on this roster, and routing an invention over an inherited device is the one thing C120's forge did not do. The drawing stands in the catalogue as its own record."
+    "why": "this subject already bears 'gondor' on this roster, and routing an invention over an inherited device is the one thing C120's forge did not do. The drawing stands in the catalogue as its own record."
    },
-   "author": "interpretive: the tree upon sable is Tolkien’s; borne un-augmented by a house not of the crowned line is the reading of Żurek and of this archive",
-   "licence": null,
+   "author": "Escudo Gondor.svg: *Escudo Gondor.png: Vëon Menelion\nderivat",
+   "licence": "CC BY-SA 3.0",
    "publishable": true,
    "reason": null,
    "cannot_bear": null,
