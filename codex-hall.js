@@ -480,6 +480,25 @@
     }
     var li2, spilled = 0;
     var leaves = pageLeaves, anchor = pageAnchor, shown = pageShown;
+    /* AND THERE IS A FOURTH PATH, WHICH THE NOTE ABOVE DOES NOT COVER (22 August 2026).
+       That repair clears the state restore() invalidates, and it is right. But the anchor can
+       ALSO go stale by a route the teardown does not own -- realms.html carries THREE
+       `hall-slot`s and C132 made `.book > .hall-slot` absolutely positioned -- and the two
+       callers of this pass gate on `!pageLeaves.length` alone. A repopulated `pageLeaves` with
+       a detached `pageAnchor` walks straight past both guards into
+       `anchor.parentNode.insertBefore` and throws on the reader's console.
+       MEASURED, by running each page by itself rather than in the 46-page walk that can only
+       name the script: heraldry 0, colophon 0, errata 0, index 0, realms.html 14.
+       The count is also TIMING-DEPENDENT -- 0, then 4, then 14 on the same unchanged tree --
+       so a pass that merely "usually" has a live anchor is not enough.
+       Bail and CLEAR rather than continue: a spill pass against a detached anchor cannot
+       produce a valid layout, and leaving the stale names in place is what lets the next
+       watcher tick walk into it again. Returning 0 is this function's own "nothing spilled"
+       contract, so the next paginate() recomputes from scratch. */
+    if (!anchor || !anchor.parentNode) {
+      pageLeaves = []; pageAnchor = null; pageShown = null;
+      return 0;
+    }
     for (li2 = 0; li2 < leaves.length && spilled < 4000; li2++) {
       var L2 = leaves[li2], turns = 0;
       reveal(L2);
