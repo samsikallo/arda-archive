@@ -55,7 +55,7 @@
  },
  "the_countable_silence": {
   "question": "which of these subjects rest on nothing textual?",
-  "answer": "the rows whose `rests_on_nothing` is true, and `measured.rests_on_nothing` is how many. Each says so in its own words as well: \"no passage grounds this; drawn from the subject's attributes, by this archive\". Their `why_blank` is the corpus's own answer, kept verbatim from before a device was ever drawn, and their `cite` is deliberately null.",
+  "answer": "the rows whose `rests_on_nothing` is true, and `measured.rests_on_nothing` is how many. Each says so on the row itself, in this module's IL_SENTENCE. Their `why_blank` is the corpus's own answer, kept verbatim from before a device was ever drawn, and their `cite` is deliberately null.",
   "the_objection": "CLAUDE.md §5 forbids filling a silence with something reasonable. It was put to the owner in those words and he ruled route them, C130, 21 August 2026. It is recorded with the objection attached rather than quietly."
  },
  "subjects": [
