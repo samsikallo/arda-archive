@@ -5448,6 +5448,20 @@
   },
   {
    "file": null,
+   "device": "telcontar",
+   "label": "The Royal Arms of the Reunited Kingdom",
+   "tier": 4,
+   "basis": "computed by this archive's forge, its arrangement and tinctures measured off the plates; a device Tolkien drew himself, reproduced here from his own drawing",
+   "canon": true,
+   "note": "Escudo Gondor.svg: *Escudo Gondor.png: Vëon Menelion\nderivat",
+   "author": "this archive — computed by its own forge from the spec recorded beside it",
+   "source": "map/gen_forge_layers.py",
+   "licence": "the archive's own",
+   "publishable": true,
+   "shown": false
+  },
+  {
+   "file": null,
    "device": "teleri",
    "label": "The Swan of the Teleri",
    "tier": 4,
