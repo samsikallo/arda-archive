@@ -942,7 +942,26 @@ svg#bmap > g > text{fill:#6d5f47 !important}
      `.spread` as the container's only in-flow child, where wrapping cannot change anything.
      `align-self:flex-start` is the second half: a flex line stretches its items to the line's
      cross size by default, which drew this four-line notice as a 326x1713 box. */
-  :root[data-codex-object="on"] .book{ flex-wrap:wrap; }
+  /* CORRECTED 22 August 2026, AND THE REASONING ABOVE IS THE THING THAT WAS WRONG.
+     It says wrapping "cannot change anything" when `.spread` is the only in-flow child. That
+     is true of a ROW and false of a COLUMN, and `.book` is a COLUMN -- codex-object.css:1022,
+     `.book{ flex-direction:column; }`. In a column flex container with a DEFINITE HEIGHT,
+     `flex-wrap:wrap` does not wrap onto new rows; it wraps into NEW COLUMNS TO THE RIGHT. The
+     ~<=1000px block clears `aspect-ratio` and `min-height` and does NOT clear `height`, so the
+     height stays definite on a phone and the wrap has somewhere to spill.
+     MEASURED at a 390px viewport, in a browser, on 404.html -- the simplest page there is:
+        .book        flex-direction column, width 332, scrollWidth 603
+        P.cx-omission  x 42..333     <- fills the whole first column
+        DIV.spread     x 333..625    <- wrapped into a SECOND column
+        document scrollWidth 625
+     46 of the 47 pages mobile_check drives reported EXACTLY 625, from 404.html to every hall
+     and all seven volumes -- forty-six identical numbers are one cause, not forty-six design
+     decisions, and C151 was about to declare three of them permanent for reasons that cannot
+     be right when a page with none of those features overflows by the same pixel.
+     `nowrap` is the fix and it costs the omission nothing: in a COLUMN it already stacks above
+     `.spread` on its own, which is all the wrap was ever asked for. See the `flex` correction
+     on `.cx-omission` immediately below -- both halves are needed, and either alone leaves it. */
+  :root[data-codex-object="on"] .book{ flex-wrap:nowrap; }
 
   /* C62 REQUIRES THE OMISSION TO BE DECLARED IN THE PAGE, not merely in the record. */
   :root[data-codex-object="on"] .book > .cx-omission{
@@ -950,7 +969,11 @@ svg#bmap > g > text{fill:#6d5f47 !important}
        Measured on the 430px screenshot: the declaration rendered about 60px wide, one or two
        words a line. flex-basis 100% sizes it to the full row; the `flex-wrap` above is what
        puts it ON a row of its own, and `align-self` stops the row stretching it. */
-    display:block !important; flex:0 0 100% !important; width:100% !important;
+    /* `flex:0 0 100%` MEANT "the full width of its row" AND A COLUMN READS IT AS "the full
+       HEIGHT of its column" -- flex-basis is along the MAIN axis, and the main axis here is
+       vertical. So the notice claimed the entire column and forced `.spread` to wrap beside it.
+       `0 0 auto` lets it take its own height; `width:100%` still gives it the full measure. */
+    display:block !important; flex:0 0 auto !important; width:100% !important;
     align-self:flex-start;
     box-sizing:border-box; order:-1;
     margin:0 0 10px; padding:7px 10px;
