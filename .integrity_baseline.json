@@ -92,7 +92,8 @@
   "arda_heraldry_roster.json": 218,
   "arda_place_dossiers.json": 143,
   "arda_sketches.json": 13,
-  "arda_westgate.json": 8
+  "arda_westgate.json": 8,
+  "arda_devices.json": 218
  },
  "accepted": "arda_eldamo.json 592 -> 591: repair_quendi_homograph --apply removes 'quendi' from the disagreements list. It is NOT a disagreement between the archive and Eldamo but a HOMOGRAPH -- two different words sharing a spelling, both attested at tier 1: App F 'Quendi, the speakers' (t1_c_the_lord_of_the_rings.txt:50882) and 'quende, quendi, pl. quender, quendir (Elvish) woman' (t1_10_morgoths_ring.txt:17464). Both verified by Lore at the lines named. The row already carried its own annotation saying so while still being counted, so n_gloss_disagreements: 24 was overstated by one. The record is not deleted -- it moves to the link set with agree=None, ambiguous=True and the explanation. Lore, LORE_QUEUE 788."
 }

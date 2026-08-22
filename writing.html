@@ -476,6 +476,7 @@ glyphs render only where a font that carries them is installed.</p></div>
     +'<select id="kbs" style="font:14px Georgia,serif;padding:8px">'
     +'<option value="teng">Tengwar — the 40 letters</option>'
     +'<option value="cirth">Cirth — the Angerthas, 60 certh</option>'
+    +'<option value="sarati">Sarati — the archive’s 57 plates (no codepoints)</option>'
     +'</select></div>'
     +'<button id="kbclr" style="font:14px Georgia,serif;padding:8px 14px;border:1px solid #8a7444;'
     +'background:#221c15;color:#e2cf96;cursor:pointer">Clear</button></div>'
@@ -497,7 +498,32 @@ glyphs render only where a font that carries them is installed.</p></div>
 
      THE FIX IS NOT A HIGHER CEILING. Ruling 5: "a page fetches what it needs and no more."
      So the glyphs are fetched on the FIRST INTERACTION with this panel, once, and cached. */
+  var SAR=null, sarloading=null;
+  function loadsar(){
+    if(SAR) return Promise.resolve(SAR);
+    if(sarloading) return sarloading;
+    document.getElementById('kbcite').textContent='Fetching the Sarati plates…';
+    sarloading=fetch('arda_sarati.json').then(function(r){return r.json();}).then(function(d){
+      SAR=d;
+      var corr=(d.letters||[]).filter(function(r){return r.corroborated;}).length;
+      document.getElementById('kbcite').innerHTML=
+        '<b>'+(d.letters||[]).length+' sarati, as the archive’s own PLATES</b> — not a font: the '
+        +'only face covering U+E390–E3BF is a 16×16 bitmap named <code>cid00904</code>–'
+        +'<code>cid00951</code>, bare identifiers. Every key names its marker: '
+        +'<span class="tag I">[I-H]</span> off the plate, <b>'+corr+' corroborated ✓✓</b> by '
+        +'Glaemscribe’s charset independently. Graded from <code>uploads/sarati_values.md</code>. '
+        +'<b>Copy codepoints is refused here</b>: '+esc(d.unresolved['sound → codepoint']);
+      draw();
+      return d;
+    }).catch(function(){
+      document.getElementById('kbcite').textContent=
+        'The Sarati plates could not be loaded, so no keyboard was drawn. This is not a statement '
+        +'about Sarati — it is a failure to ask.';
+    });
+    return sarloading;
+  }
   function load(){
+    if(document.getElementById('kbs').value==='sarati') return loadsar();
     if(S) return Promise.resolve(S);
     if(loading) return loading;
     document.getElementById('kbcite').textContent='Fetching the glyphs…';
@@ -510,8 +536,12 @@ glyphs render only where a font that carries them is installed.</p></div>
       +'exist here only because the archive drew them. Each value is marked '
       +'<span class="tag I">[I-H]</span> in the data: Appendix E prints its tables as IMAGES in '
       +'the edition this archive holds, so the values were read off the plate rather than out of '
-      +'the prose. <b>Sarati is not transcribable here — the archive publishes 66 drawn Sarati plates on the languages hall, and holds no sound-to-CODEPOINT mapping, which is what a transcriber needs</b> — the archive holds its scholarship but not its '
-      +'glyphs, and a keyboard with no glyphs is a row of empty boxes.';
+      +'the prose. <b>Sarati is on this keyboard now</b> — pick it in the script box: it draws the '
+      +'archive’s own 57 plates rather than outlines, and every key names its marker. '
+      +'<b>What Sarati still has no mapping for is a CODEPOINT</b>, which is why Copy codepoints '
+      +'refuses for it by name. The sentence that stood here until 21 Aug 2026 — that Sarati was '
+      +'“not transcribable” and that its plates were “on the languages hall” — was wrong in both '
+      +'halves: the Scriptorium writes Sarati two panels above this one.';
     draw();
     return d;
   }).catch(function(){
@@ -535,10 +565,43 @@ glyphs render only where a font that carries them is installed.</p></div>
     return 'certh '+(r.num||'')+(r.d?' — '+r.d:'');
   }
 
+  function drawsar(){
+    if(!SAR) return;
+    var rows=(SAR.letters||[]).filter(function(r){return r.plate;});
+    var box=document.getElementById('kbkeys');
+    box.innerHTML=rows.map(function(r,i){
+      var t=sarlabel(r);
+      return '<button class="key" type="button" data-i="'+i+'" title="'+esc(t)+'" '
+        +'aria-label="'+esc(t)+'"><img src="sarati/'+esc(r.plate)+'" alt="" aria-hidden="true" loading="lazy" '
+        +'style="height:38px;width:auto;background:#fffdf5"></button>';
+    }).join('');
+    box.querySelectorAll('.key').forEach(function(b){
+      b.addEventListener('click',function(){
+        var r=rows[+b.dataset.i];
+        buf.push({plate:r.plate,label:sarlabel(r)});
+        document.getElementById('kbout').value=buf.map(function(x){return x.label;}).join(' · ');
+        document.getElementById('kbnote').innerHTML=
+          '<b>'+buf.length+' sarat'+(buf.length>1?'i':'')+' picked</b>, each named with its '
+          +'MARKER: a value without one is a claim dressed as a fact. <b>✓✓</b> plate and '
+          +'charset agree independently; <b>[I-H]</b> the plate alone; <b>(not graded)</b> the '
+          +'record reaches no row for it.';
+      });
+    });
+    document.getElementById('kbnote').innerHTML=rows.length+' sarat(i) in this script. '
+      +'<b>No codepoints:</b> '+esc((SAR.unresolved||{})['sound → codepoint']||'');
+  }
+  function sarlabel(r){
+    var g=(r.corroborated?' ✓✓':'');
+    var reached=!(!!r.not_graded);
+    return (r.value||'?')+' '+(r.mark||'')+g+(reached?'':' (not graded)')
+      +(r.form?' ['+r.form+']':'')+(r.kind==='vowel-sign'?' — vowel-sign':'');
+  }
+
   function draw(){
     /* AND THE FUNCTION REFUSES TOO. Guarding every caller is a list that grows; guarding the
        function is the thing itself. Both, because the caller-guard keeps the UX right and this
        keeps a future caller from reintroducing the throw. */
+    if(document.getElementById('kbs').value==='sarati') return drawsar();
     if(!S) return;
     var kind=document.getElementById('kbs').value;
     var rows=(S[kind]||[]).filter(function(r){return r.g&&r.g.b;});
@@ -564,7 +627,9 @@ glyphs render only where a font that carries them is installed.</p></div>
     document.getElementById('kbnote').textContent=rows.length+' glyph(s) in this script.';
   }
   document.getElementById('kbs').addEventListener('change',function(){buf=[];
-    if(S) draw(); else load();
+    var k=document.getElementById('kbs').value;
+    if(k==='sarati'){ if(SAR) drawsar(); else loadsar(); }
+    else if(S) draw(); else load();
     document.getElementById('kbout').value='';});
   /* `if(S)` guards the lazy load, as the kbs handler above does: Clear before Load threw
      "Cannot read properties of null (reading 'teng')". LORE_QUEUE 774. Do not remove. */
@@ -641,7 +706,15 @@ glyphs render only where a font that carries them is installed.</p></div>
     n.className='acnote';
     n.textContent='these are Private Use Area codepoints — the glyphs render only where a CSUR '
       +'font is installed, so codepoints are what survives being pasted elsewhere';
-    p.addEventListener('click',function(){ put(p,pointsOf(glyphsOf(host))); });
+    p.addEventListener('click',function(){
+      var sel=document.getElementById('kbs');
+      if(hostId==='kbout' && sel && sel.value==='sarati'){
+        say(p,'refused — Sarati has no codepoints: ArdaCSUR names its 48 glyphs cid00904–cid00951, '
+             +'bare identifiers. Copy glyphs gives the names.');
+        return;
+      }
+      put(p,pointsOf(glyphsOf(host)));
+    });
     g.addEventListener('click',function(){ put(g,glyphsOf(host)); });
     b.appendChild(p); b.appendChild(g); b.appendChild(n);
     b.setAttribute('aria-label','copy '+label);
@@ -696,8 +769,12 @@ glyphs render only where a font that carries them is installed.</p></div>
     h+='<p class="cite" style="margin-top:14px"><b>This page does not transcribe into the General '
       +'Use, and that is a refusal rather than an omission.</b> The letter table is a picture in '
       +'every source this archive holds, so a transcriber here would be guessing with a citation '
-      +'attached. The uncited one on <a href="languages.html">tongues &amp; letters</a> is kept, '
-      +'labelled as uncited, until the plate is read.</p>';
+      +'attached. <b>The uncited transcriber that offered it on '
+      +'<a href="languages.html">tongues &amp; letters</a> is RETIRED</b> (21 Aug 2026): it cited '
+      +'nothing, drew only the FOLLOWING placement of the two attested above, and wrote '
+      +'Frodo&#8217;s Quenya greeting in a mode meant for Sindarin and Westron &#8212; a second '
+      +'answer to a question the tengwar panel answers with its working shown. The refusal now '
+      +'stands alone, and stands until the plate is read.</p>';
     host.innerHTML='<h2 style="font-variant:small-caps;letter-spacing:.05em">The General Use</h2>'+h;
   }).catch(function(){
     host.innerHTML='<h2 style="font-variant:small-caps">The General Use</h2>'
@@ -710,6 +787,8 @@ glyphs render only where a font that carries them is installed.</p></div>
 #sw .sq{display:inline-block;text-align:center;margin:0 3px 8px;vertical-align:top}
 #sw .sq img{height:56px;width:auto;background:#fffdf5;border:1px solid #d9cfae;padding:2px}
 #sw .sq .v{font:11px monospace;color:#7a6a50;display:block}
+#sw .sq .mk{font:10px monospace;color:#8a7444;display:block}
+:root[data-theme="dark"] #sw .sq .mk{color:#c9a227}
 #sw .miss img{display:none}
 #sw .miss{border-left:3px solid #7a3a2a;padding-left:6px;font-size:11px;color:#7a3a2a}
 :root[data-theme="dark"] #sw .sq img{background:#efe6cd}
@@ -742,6 +821,7 @@ glyphs render only where a font that carries them is installed.</p></div>
       +'<button id="swgo" style="font:14px Georgia,serif;padding:8px 16px;border:1px solid #8a7444;'
       +'background:#221c15;color:#e2cf96;cursor:pointer">Write</button></div>'
       +'<p class="cite" id="swrule"></p><div id="swout"></div><div id="swtirwrap"></div>'
+      +'<div id="swdis"></div>'
       +'<p class="cite" style="margin-top:12px"><b>Direction.</b> '+esc(D.direction)+'</p>'
       +'<p class="cite"><b>What is refused.</b> '+esc(D.unresolved['sound → codepoint'])+'</p>';
     host.innerHTML=head;
@@ -757,7 +837,7 @@ glyphs render only where a font that carries them is installed.</p></div>
       var raw=document.getElementById('swq').value.toLowerCase();
       var form=document.getElementById('swf').value;
       document.getElementById('swrule').innerHTML='<b>'+esc(form)+'.</b> '+esc(D.forms[form]);
-      var T=tableFor(form), out='', i=0, drew=0, missed=[];
+      var T=tableFor(form), out='', i=0, drew=0, missed=[], corr=0, ungraded=0;
       while(i<raw.length){
         var ch=raw[i];
         if(/\s/.test(ch)){ out+='<span style="display:inline-block;width:18px"></span>'; i++; continue; }
@@ -767,8 +847,12 @@ glyphs render only where a font that carries them is installed.</p></div>
           if(v && raw.substr(i,v.length)===v){ hit=T[k]; break; }
         }
         if(hit){
-          out+='<span class="sq'+(hit.kind==="vowel-sign"?' vs':'')+'"><img src="sarati/'+esc(hit.plate)+'" alt="'+(hit.kind==="vowel-sign"?'vowel-sign for ':'sarat for ')+esc(hit.value)+'" loading="lazy"><span class="v">'+esc(hit.value)+'</span></span>';
+          var mk=(hit.mark||'[I-H]')+(hit.corroborated?' \u2713\u2713':'');
+          var ng=(!!hit.not_graded);
+          out+='<span class="sq'+(hit.kind==="vowel-sign"?' vs':'')+'"><img src="sarati/'+esc(hit.plate)+'" alt="'+(hit.kind==="vowel-sign"?'vowel-sign for ':'sarat for ')+esc(hit.value)+', '+esc(mk)+'" title="'+esc(hit.value+' '+mk+' \u2014 '+(hit.evidence||hit.cite||''))+'" loading="lazy"><span class="v">'+esc(hit.value)+'</span><span class="mk">'+esc(mk)+(ng?' \u00b7ng':'')+'</span></span>';
           i+=hit.value.length; drew++;
+          if(hit.corroborated) corr++;
+          if(ng) ungraded++;
         } else {
           /* NAMED, NEVER DROPPED. A transcriber that omitted what it could not draw would return
              a shorter word and look successful. */
@@ -777,11 +861,21 @@ glyphs render only where a font that carries them is installed.</p></div>
           i++;
         }
       }
-      out+='<p class="cite" style="margin-top:10px"><b>'+drew+' sarat(i) drawn'
+      var nop=(D.refused_sounds||[]).map(function(r){return r.value;});
+      var nC=(D.facts||[]).filter(function(f){return f.mark==="[C]";}).length;
+      out+='<p class="cite" style="margin-top:10px"><b>'+drew+' sarat(i) drawn, '
+        +corr+' of them corroborated \u2713\u2713'
+        +(ungraded?(', '+ungraded+' not graded (\u00b7ng)'):'')
         +(missed.length?(', '+missed.length+' sound(s) with no plate in this form: '
-          +esc(missed.join(' '))):'')+'.</b> Every value rests on the plate labelling and on '
-        +'Amanyë Tenceli, corroborated where Glaemscribe’s charset names the same '
-        +'sound independently. <b>Sarati is not in the corpus, so no value here is [C].</b></p>';
+          +esc(missed.join(' '))):'')+'.</b> '
+        +'<b>[I-H]</b> the plate reading, ours. <b>\u2713\u2713</b> plate label AND '
+        +'Glaemscribe\u2019s charset, independently \u2014 a second witness to the SAME [I-H], '
+        +'not a promotion. <b>\u00b7ng</b> <code>sarati_values.md</code> grades no row for it: a '
+        +'statement about the record, not the sarat. <b>No value here is [C]</b> \u2014 no primary '
+        +'text describes Sarati letter by letter; the '+nC+' [C] facts are in <code>facts</code>. '
+        +(nop.length?('<b>Refused for want of a plate:</b> '+esc(nop.join(', '))
+          +' \u2014 attested, and named rather than skipped. '):'')
+        +'</p>';
       document.getElementById('swout').innerHTML=out;
       /* A second rendering, set in Björkman's outline face. KEY->glyph is his [EXT]; reading a
          latin letter as its sound is this archive's inference [I-H]. Why: commit log, 16 Aug. */
@@ -808,6 +902,18 @@ glyphs render only where a font that carries them is installed.</p></div>
         document.getElementById('swtir').textContent=set;
       }
     }
+    (function(){
+      var w=document.getElementById('swdis'); if(!w) return;
+      var ds=D.disagreements||[]; if(!ds.length){ w.innerHTML=''; return; }
+      w.innerHTML='<p class="cite" style="margin-top:12px"><b>Where the sources disagree, both '
+        +'readings stand</b> — '+ds.length+' here, and this page adopts none:</p>'
+        +ds.map(function(x){
+          return '<p class="cite" style="border-left:3px solid #7a3a2a;padding-left:8px">'
+            +'<b>'+esc(x.what)+'</b> <span class="mk">'+esc(x.mark||'')+'</span><br>'
+            +esc(x.readings)+'<br><i>'+esc(x.why_not_adopted||'')+'</i><br>'
+            +'<span class="mk">'+esc(x.source||'')+'</span></p>';
+        }).join('');
+    })();
     document.getElementById('swgo').addEventListener('click',go);
     document.getElementById('swq').addEventListener('keydown',function(e){if(e.key==='Enter')go();});
     document.getElementById('swf').addEventListener('change',go);

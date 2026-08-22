@@ -247,6 +247,17 @@
     for (i = 0; i < madeSpreads.length; i++)
       if (madeSpreads[i].parentNode) madeSpreads[i].parentNode.removeChild(madeSpreads[i]);
     madeSpreads.length = 0;
+    /* AND THE PAGINATED STATE GOES WITH THEM, WHICH IS THE SAME FAULT AS THE NOTE ABOVE ONE
+       TURN FURTHER ON. restore() detaches every spread this file made, but `pageAnchor` and
+       `pageLeaves` still NAMED those nodes: paginate() calls restore() first and then has three
+       early returns before it re-assigns them (a slot with no children; no first leaf; a hall
+       that fits on one leaf and does not overflow). A hall that took any of the three came out
+       of restore() holding an anchor with no parentNode -- and the settle watcher's next
+       spillPass() read `!pageLeaves.length` as false on the stale array and ran, so
+       `anchor.parentNode.insertBefore` threw `Cannot read properties of null` on the reader's
+       console. Measured: 4 of the 5 lines traverse_check saw against a baseline of ZERO, all of
+       them codex-hall.js:481. The state a teardown invalidates is the teardown's to clear. */
+    pageLeaves = []; pageAnchor = null; pageShown = null; pageProto = null; pageBase = 0;
     var ghosts = book.querySelectorAll("[data-cx-split]");
     for (i = 0; i < ghosts.length; i++)
       if (ghosts[i].parentNode) ghosts[i].parentNode.removeChild(ghosts[i]);

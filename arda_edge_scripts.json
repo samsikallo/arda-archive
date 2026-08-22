@@ -689,7 +689,7 @@
  "n_people_not_established": 134,
  "fill_distribution": {
   "all_rows": {
-   "n": 624,
+   "rows_counted": 624,
    "min": 0.0,
    "p25": 31.0,
    "median": 96.9,
@@ -697,7 +697,7 @@
    "max": 161.7
   },
   "passage_rows": {
-   "n": 447,
+   "rows_counted": 447,
    "min": 60.4,
    "p25": 96.0,
    "median": 98.4,
@@ -705,7 +705,7 @@
    "max": 100.0
   },
   "name_rows": {
-   "n": 155,
+   "rows_counted": 155,
    "min": 3.3,
    "p25": 11.0,
    "median": 16.5,
@@ -713,7 +713,7 @@
    "max": 161.7
   },
   "phrase_rows": {
-   "n": 18,
+   "rows_counted": 18,
    "min": 11.8,
    "p25": 12.7,
    "median": 31.0,
