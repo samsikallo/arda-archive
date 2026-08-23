@@ -434,14 +434,27 @@
 
    Measured as a CENSUS of all 621 routes, not a sample: 582/582 entity pages at 88.0ch before,
    and the figure is a dead tie because they share one `.card{max-width:660px}
+/* THE CUE HAD NOTHING TO SHOW AND COULD NOT HAVE MATCHED THESE PAGES EITHER -- two faults,
+   23 Aug 2026. There was no `content` in any stylesheet, so this breathed the opacity of a
+   ::before that generated no box; and every selector demanded data-codex="on" while all 13
+   dataset-fetching halls are data-codex-object="on". "Loading..." is the archive's own generic
+   form, already published in writing.html. The full measurement is in the commit, not here:
+   every page fetches this file, and prose the author could have cut is not worth a ceiling. */
+:root[data-codex="on"][data-loading] :is(.grid,#grid,#list,#out,#halls):empty::before,
+:root[data-codex-object="on"][data-loading] :is(.grid,#grid,#list,#out,#halls):empty::before{
+  content:"Loading\2026";
+  display:block;
+  padding:1.5em 0;
+  text-align:center;
+  font-style:italic;
+  opacity:.6;
+}
+
 /* The rule breathes rather than spins: a codex is not a progress bar. Motion is opt-out by the
    reader's own setting, and the text stands unaided when it is off. */
 @media (prefers-reduced-motion:no-preference){
-  :root[data-codex="on"][data-loading] .grid:empty::before,
-  :root[data-codex="on"][data-loading] #grid:empty::before,
-  :root[data-codex="on"][data-loading] #list:empty::before,
-  :root[data-codex="on"][data-loading] #out:empty::before,
-  :root[data-codex="on"][data-loading] #halls:empty::before{
+  :root[data-codex="on"][data-loading] :is(.grid,#grid,#list,#out,#halls):empty::before,
+  :root[data-codex-object="on"][data-loading] :is(.grid,#grid,#list,#out,#halls):empty::before{
     animation:cx-breathe 1.9s ease-in-out infinite;
   }
   @keyframes cx-breathe{0%,100%{opacity:.45}50%{opacity:.95}}
