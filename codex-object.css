@@ -665,17 +665,7 @@ body{
   --edge-size:17px;
   --edge-head-size:12.5px;
   --edge-track:.06em;
-  /* C97, applied 23 August 2026. The inscription bands in all five files of
-     uploads/scripts/ carry FOUR full-width rules and exactly TWO lines of writing; this
-     band carried one, at 23px. The owner ruled it widened at a cost of about 20px of leaf
-     per edge, and 23 + 20 = 43.
-     IT IS NOT ONLY A CONVENTION FIX. Measured in chromium at 1600x1000: a per-entity leaf
-     is 641px tall, giving a 573px band, and the text of realm/tirion.html runs 675px --
-     it OVERFLOWED BY 102px and the reader lost the end of the inscription. At the measured
-     10.23px per glyph one line holds ~56 glyphs and 395 of 620 routes overflow; two lines
-     hold ~112 and NONE do. 81% of the inscriptions carry a space, so they wrap on their
-     own; the rest need the break rule below. */
-  --edge-width:43px;
+  --edge-width:23px;
   --edge-head-width:18px;
 }
 
@@ -694,14 +684,10 @@ body{
 
   font-family:"Eldamar","TengwarTelcontar","AlcarinTengwar","ArdaCSUR",serif;
   font-size:var(--edge-size);
-  /* Two line boxes across the band's thickness, not one filling it. */
-  line-height:calc(var(--edge-width) / 2);
+  line-height:var(--edge-width);
   letter-spacing:var(--edge-track);
   color:var(--edge-ink);
-  /* nowrap is what held it to one line and clipped the other 102px. The 19% of
-     inscriptions with no space need break-word or they cannot use the second line. */
-  white-space:normal;
-  overflow-wrap:break-word;
+  white-space:nowrap;
   overflow:hidden;
   text-align:center;
 
@@ -837,6 +823,12 @@ body{
   font-family:"Eldamar","TengwarTelcontar","AlcarinTengwar",serif; }
 :root[data-codex-object="on"] .book[data-edge-script="tengwar"] .spread::after{
   font-family:"Eldamar","TengwarTelcontar","AlcarinTengwar",serif; }
+
+:root[data-codex-object="on"] .book{ --edge-width:43px; }
+:root[data-codex-object="on"] .leaf::after{
+  line-height:calc(var(--edge-width) / 2);
+  white-space:normal;
+  overflow-wrap:break-word; }
 
 body{ background:var(--ground); }
 .book{ margin:0 auto; }
