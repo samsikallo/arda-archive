@@ -232,9 +232,7 @@ window.ARDA_PAL=[["argent","#e8e6df"],["or","#d8b13c"],["azure","#2b4a8c"],["ver
 // contradicting itself in two places about the same device.
 ["Durin navy","#0c2a66"],["Dol Amroth azure","#0078fc"],["Rohan vert","#007e00"],
 ["Gondolin blue","#0000fc"],["Gandalf grey","#c6c6c6"],["Harad gules","#d80000"],
-// 153 -- the ground of site/heraldry/glorfindel.png, MEASURED: 59.7% of the
-// plate's pixels are exactly this ink. C209. The green is Bjorkman's inference, not
-// Tolkien's word: he names no colour for Glorfindel at all.
+// 153 -- glorfindel.png's measured ground, C209
 ["Golden Flower green","#3cb400"]];
 window.ARDA_CHARGES=["none","star","sun","wingedsun","moon","wingedmoon","flame","flower",
 "cornflower","elanor","harp","torch","serpents","crown","anvil","hammer","gem","silmaril",
