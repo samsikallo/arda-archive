@@ -76,6 +76,7 @@ glyphs render only where a font that carries them is installed.</p></div>
 :root[data-theme="dark"] #cw .out{background:#241f18!important;border-color:#5a4c32!important}
 :root[data-theme="dark"] #cw .cq svg path{stroke:#e8dcc0!important;fill:#e8dcc0!important}
 </style>
+<script>var __aF=[],__aN=0;function aJ(u){var R=document.documentElement,d=function(){if(--__aN<1)R.removeAttribute("data-loading")};__aN++;R.setAttribute("data-loading","1");return fetch(u).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.json()}).then(function(j){d();return j},function(e){d();__aF.push(u);throw e})}</script>
 <script>
 (function cirthwrite(){
   function esc(s){return String(s==null?'':s).replace(/[<>&]/g,function(c){
@@ -111,9 +112,9 @@ glyphs render only where a font that carries them is installed.</p></div>
      own 60-certh mapping -- not guessed from its glyph count. */
   var TELC_MISSING={"41": 1, "43": 1, "46": 1, "47": 1, "48": 1, "50": 1, "51": 1, "53": 1, "54": 1, "56": 1, "57": 1, "58": 1};
   Promise.all([
-    fetch('arda_scripts.json').then(function(r){return r.json();}),
-    fetch('arda_cirth.json').then(function(r){return r.json();}),
-    fetch('arda_cirth_codepoints.json').then(function(r){return r.ok?r.json():{};})
+    aJ('arda_scripts.json'),
+    aJ('arda_cirth.json'),
+    aJ('arda_cirth_codepoints.json').catch(function(){return {};})
       .catch(function(){return {};})
   ]).then(function(d){
     G={}; (d[0].cirth||[]).forEach(function(r){ G[String(r.num)]=r; });
@@ -249,7 +250,7 @@ glyphs render only where a font that carries them is installed.</p></div>
   var CACHE={};
   function shard(n){
     if(CACHE[n]) return Promise.resolve(CACHE[n]);
-    return fetch('lex/'+n+'.json').then(function(r){return r.ok?r.json():[];})
+    return aJ('lex/'+n+'.json').catch(function(){return [];})
       .then(function(d){CACHE[n]=d;return d;}).catch(function(){return [];});
   }
 
@@ -355,7 +356,7 @@ glyphs render only where a font that carries them is installed.</p></div>
   (anchor?anchor.insertAdjacentElement('beforebegin',host):document.body.appendChild(host));
 
   var M=null;
-  fetch('arda_tengwar_mode_q.json').then(function(r){return r.json();}).then(function(d){
+  aJ('arda_tengwar_mode_q.json').then(function(d){
     M=d;
     document.getElementById('twcite').innerHTML=
       '<b>'+esc(d.mode)+'.</b> '+esc(d.rule)+' Rendered in the ConScript Unicode Registry '
@@ -503,7 +504,7 @@ glyphs render only where a font that carries them is installed.</p></div>
     if(SAR) return Promise.resolve(SAR);
     if(sarloading) return sarloading;
     document.getElementById('kbcite').textContent='Fetching the Sarati plates…';
-    sarloading=fetch('arda_sarati.json').then(function(r){return r.json();}).then(function(d){
+    sarloading=aJ('arda_sarati.json').then(function(d){
       SAR=d;
       var corr=(d.letters||[]).filter(function(r){return r.corroborated;}).length;
       document.getElementById('kbcite').innerHTML=
@@ -527,7 +528,7 @@ glyphs render only where a font that carries them is installed.</p></div>
     if(S) return Promise.resolve(S);
     if(loading) return loading;
     document.getElementById('kbcite').textContent='Fetching the glyphs…';
-    loading=fetch('arda_scripts.json').then(function(r){return r.json();}).then(function(d){
+    loading=aJ('arda_scripts.json').then(function(d){
     S=d;
     document.getElementById('kbcite').innerHTML=
       '<b>'+(d.teng||[]).length+' tengwar and '+(d.cirth||[]).length+' certh, drawn from the '
@@ -745,7 +746,7 @@ glyphs render only where a font that carries them is installed.</p></div>
   var a=document.getElementById('main')||document.body;
   a.appendChild(host);
 
-  fetch('arda_tengwar_mode_gu.json').then(function(r){return r.json();}).then(function(d){
+  aJ('arda_tengwar_mode_gu.json').then(function(d){
     var P=d.placement||{}, h='';
     h+='<p class="cite"><b>'+esc(d.rule)+'</b></p>';
     /* THE PLACEMENT IS THE MODE'S DEFINING PARAMETER, and the specimen numbers are printed so a
@@ -803,7 +804,7 @@ glyphs render only where a font that carries them is installed.</p></div>
     +'<p class="cite">Loading the plates…</p>';
   (document.getElementById('main')||document.body).appendChild(host);
 
-  fetch('arda_sarati.json').then(function(r){return r.json();}).then(function(D){
+  aJ('arda_sarati.json').then(function(D){
     var forms=Object.keys(D.forms||{});
     var head='<h2 style="font-variant:small-caps;letter-spacing:.05em">Write in Sarati</h2>'
       +'<p class="cite"><b>These are the archive’s plates, not a font.</b> The only font '
@@ -960,7 +961,7 @@ glyphs render only where a font that carries them is installed.</p></div>
     +'Sarati, written continuously</h2><p class="cite">Loading…</p>';
   (document.getElementById('main')||document.body).appendChild(host);
 
-  fetch('arda_sarati.json').then(function(r){return r.json();}).then(function(D){
+  aJ('arda_sarati.json').then(function(D){
     host.innerHTML='<h2 style="font-variant:small-caps;letter-spacing:.05em">'
       +'Sarati, written continuously</h2>'
       +'<p class="cite"><b>Down the page, as the Two Trees specimen is written.</b> That plate is '
