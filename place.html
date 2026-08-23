@@ -42,7 +42,7 @@ ${rows.map(([d,n])=>`<div style="display:flex;align-items:center;gap:8px;margin:
 <span style="width:170px">${DOCN[d]||d}</span>
 <span style="flex:1;height:12px;background:linear-gradient(90deg,#c9a227,#8a6a14);border-radius:3px;max-width:${Math.max(3,n/mx*100)}%"></span>
 <span class="cite">${n}</span></div>`).join("")}
-<div class="cite" style="margin-top:.3em">machine concordance over the full extracted corpus (Phase 2 of the re-ingestion; CORPUS_INDEX.md)</div></div>`;});}
+<div class="cite" style="margin-top:.3em">machine concordance over the full extracted corpus (Phase 2 of the re-ingestion; CORPUS_INDEX.md)</div></div>`;}).catch(()=>{});}
 
 const nrm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
 const slug=s=>nrm(s.split(" —")[0]).replace(/[^a-z0-9]+/g,"_").replace(/^_+|_+$/g,"");
@@ -130,7 +130,7 @@ window.ardaGazLoad=function(key){
    var k=window.ardaGazMatch(ix.keys||[],key);
    if(!k){window.ARDA_GZ={};return {};}
    return aJ("gaz/"+window.ardaGazFile(k)+".json").then(function(rec){
-     var G={};G[k]=rec;window.ARDA_GZ=G;return G;});
+     var G={};G[k]=rec;window.ARDA_GZ=G;return G;}).catch(()=>{});
  }).catch(function(){window.ARDA_GZ={};return {};});
 };
 window.ardaGazKey=function(s){

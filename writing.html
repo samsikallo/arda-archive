@@ -112,7 +112,7 @@ glyphs render only where a font that carries them is installed.</p></div>
      own 60-certh mapping -- not guessed from its glyph count. */
   var TELC_MISSING={"41": 1, "43": 1, "46": 1, "47": 1, "48": 1, "50": 1, "51": 1, "53": 1, "54": 1, "56": 1, "57": 1, "58": 1};
   Promise.all([
-    aJ('arda_scripts.json'),
+    aJ('arda_scripts.json').catch(()=>{}),
     aJ('arda_cirth.json'),
     aJ('arda_cirth_codepoints.json').catch(function(){return {};})
       .catch(function(){return {};})

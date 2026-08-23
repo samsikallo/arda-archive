@@ -37,7 +37,7 @@ D.filter(s=>s.th==th).map(s=>`<div class="card"><h3>${s.q}</h3>
 <p style="font-size:13px;margin:.2em 0">${s.a}</p>
 <div class="ref">${s.r}</div>
 ${s.l.map(l=>`<a href="${l[0]}">↦ ${l[1]}</a>`).join(" · ")}
-</div>`).join("")+"</div>").join("");});
+</div>`).join("")+"</div>").join("");}).catch(()=>{});
 </script>
 <script src="quotes.js"></script><script src="touch.js"></script>
 <script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script><script src="nav.js"></script><script src="glossary.js" defer></script><!--ARDA:THUMBS--><script src="codex-thumbs.js" defer></script><!--/ARDA:THUMBS--></body></html>

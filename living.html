@@ -63,7 +63,7 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape"){const L=document.ge
 let N=[],C=[],ART={},view="flora";
 const FLORA=["tree","flower","herb","grass"],FAUNA=["beast","bird","fish","insect","monstrous"];
 Promise.all([
- aJ("arda_nature.json"),
+ aJ("arda_nature.json").catch(()=>{}),
  aJ("arda_creatures.json"),
  aJ("arda_herbarium.json").catch(()=>({}))
 ]).then(([n,c,a])=>{N=n;C=c;ART=a||{};build();});

@@ -491,7 +491,7 @@ addEventListener("load",function(){var c=document.getElementById("credits");if(c
 
 <!-- THE STATES HELPER, and it is here because the roster below fetches a dataset. Spec 9 calls
      a blank leaf an anti-pattern: a hall whose fetch fails and says nothing loses its records
-     SILENTLY. aJ() publishes `data-loading` while a fetch is in flight, records the failure in
+     SILENTLY. aJ().catch(()=>{}) publishes `data-loading` while a fetch is in flight, records the failure in
      __aF and rethrows, which is what the shared loading, error and offline states are built on
      -- see docs/codex-states.md. It is BYTE-IDENTICAL to the helper in character.html,
      gazetteer.html, living.html, oaths.html and gallery.html; states_check cuts this

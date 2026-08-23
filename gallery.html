@@ -84,6 +84,6 @@ function draw(){
   document.getElementById("light").style.display="flex";});}
 document.getElementById("light").onclick=()=>document.getElementById("light").style.display="none";
 document.addEventListener("keydown",e=>{if(e.key==="Escape")document.getElementById("light").style.display="none"});
-draw();});
+draw();}).catch(()=>{});
 </script>
 <script src="quotes.js"></script><script src="touch.js"></script><script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script><script src="nav.js"></script><script src="glossary.js" defer></script><!--ARDA:THUMBS--><script src="codex-thumbs.js" defer></script><!--/ARDA:THUMBS--></body></html>

@@ -46,7 +46,7 @@ ${rows.map(([d,n])=>`<div style="display:flex;align-items:center;gap:8px;margin:
 <span style="width:170px">${DOCN[d]||d}</span>
 <span style="flex:1;height:12px;background:linear-gradient(90deg,#c9a227,#8a6a14);border-radius:3px;max-width:${Math.max(3,n/mx*100)}%"></span>
 <span class="cite">${n}</span></div>`).join("")}
-<div class="cite" style="margin-top:.3em">machine concordance over the full extracted corpus (Phase 2 of the re-ingestion; CORPUS_INDEX.md)</div></div>`;});}
+<div class="cite" style="margin-top:.3em">machine concordance over the full extracted corpus (Phase 2 of the re-ingestion; CORPUS_INDEX.md)</div></div>`;}).catch(()=>{});}
 
 // genealogy id -> chronology id, where the two files name the same person differently.
 // Only elwe/thingol actually differ; the other three entries pointed at records that do

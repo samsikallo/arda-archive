@@ -44,7 +44,7 @@ document.getElementById("list").innerHTML=
 D.map(t=>`<div class="tourcard" onclick="startTour('${t.id}')"><h3><svg class='ai' aria-hidden='true'><use href='#i-flag'/></svg> ${t.t}</h3>
 <div class="cite">${t.s} · ${t.stops.length} stops</div></div>`).join("");
 const m=location.hash.match(/t=([\w-]+)(?:&s=(\d+))?/);
-if(m)startTour(m[1],+(m[2]||0));});
+if(m)startTour(m[1],+(m[2]||0));}).catch(()=>{});
 window.startTour=(id,s=0)=>{cur=TOURS.find(t=>t.id==id);if(!cur)return;idx=s;
 document.getElementById("list").style.display="none";
 document.getElementById("player").classList.add("on");

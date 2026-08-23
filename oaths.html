@@ -63,7 +63,7 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape"){const L=document.ge
 let O=[],kind="all";
 const KL={oath:"Oaths sworn",doom:"Dooms pronounced",curse:"Curses laid",
  prophecy:"Things foretold",vow:"Vows and promises"};
-aJ("arda_oaths.json").then(j=>{O=j;build();});
+aJ("arda_oaths.json").then(j=>{O=j;build();}).catch(()=>{});
 function build(){
  const bar=document.getElementById("bar");
  const kinds=["all"].concat([...new Set(O.map(x=>x.kind))]);

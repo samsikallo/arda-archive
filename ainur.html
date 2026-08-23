@@ -87,7 +87,7 @@ const ISTARI_CITE='&ldquo;there appeared in the west of Middle-earth the Istari,
  +'the Lords of the West to contest the power of Sauron&rdquo; &mdash; <i>The Silmarillion</i>, '
  +'Of the Rings of Power and the Third Age';
 const groupOf=x=>x.istar?ISTARI_G:(ORDER[x.rank]==null?30:ORDER[x.rank]*10);
-aJ("arda_ainur.json").then(j=>{A=j;build();});
+aJ("arda_ainur.json").then(j=>{A=j;build();}).catch(()=>{});
 function build(){
  const bar=document.getElementById("bar");
  [["all","all thirty"],["Aratar","the Aratar"],["Maia","the Maiar"],["Istari","the Istari"],
