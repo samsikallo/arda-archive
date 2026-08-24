@@ -982,7 +982,11 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
 :root[data-codex-object="on"] .book .leaf.fitted .tb > .tbi > .slip{ column-span:all; }
 :root[data-codex-object="on"] .book .leaf.fitted .fn{ flex:0 0 auto; margin-bottom:16px; }
 
-:root[data-codex-object="on"] .book .leaf.fitted .marg .marg-t{ max-height:none; overflow:visible; }
+/* C240, 24 Aug 2026: this un-clip was .leaf.fitted ONLY, so on every other leaf the marginal note
+   clipped its own text -- 111px wide, max-height 70px, overflow hidden, 8 of them on 404.html. The
+   owner saw it and named it: "the sidenotes are cropping out of the frame at the edges". He ruled
+   it a defect, not the .marg-more disclosure working as designed. Now every leaf in the object. */
+:root[data-codex-object="on"] .book .leaf .marg .marg-t{ max-height:none; overflow:visible; }
 
 :root[data-codex-object="on"] .book .leaf.fitted .fig{ width:104px; }
 :root[data-codex-object="on"] .book .leaf.fitted .fig.marg-fig{ width:66px; bottom:30px; }
