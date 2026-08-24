@@ -813,24 +813,34 @@ svg#bmap > g > text{fill:#6d5f47 !important}
 :root[data-codex-object="on"] .book > nav.cx-rail{
   position:absolute; z-index:3; display:flex; margin:0; padding:0; }
 
-/* LEVEL 2 · the fore-edge opposite the volumes. */
+/* LEVEL 2 · the fore-edge opposite the volumes.
+   C277 TURNED THESE INWARDS TOO, and finding out they existed cost a measurement. His ruling said
+   "the bookmarks"; I measured 404.html at eight widths, fixed `.tab`, and called it done.
+   404.html HAS NO THUMB RAILS. On a person route these protruded 58px past the right board --
+   margin-right:-58px, hover -70px, aria-current -76px -- and once C276 removed the empty margin
+   the old 85vw cap had been hiding them behind, they ran off the glass: measured on
+   person/aragorn.html at 1920x1080, four `a.cx-thumb` reaching x=1945 against a 1920 viewport,
+   document scrollWidth 1945. THE ARCHIVE FORBIDS A HORIZONTAL SCROLL ON ANY ROUTE and this had
+   introduced one on every route carrying a second rail.
+   THE LESSON IS THE OLD ONE: one route measured eight ways is still ONE ROUTE. */
 :root[data-codex-object="on"] .book > nav.cx-rail-2{
-  right:-1px; top:74px; flex-direction:column; gap:8px; }
+  right:0; top:74px; flex-direction:column; gap:8px; }
 :root[data-codex-object="on"] .book > nav.cx-rail-2 > a.cx-thumb{
-  position:relative; display:block; float:none; margin:0 -58px 0 0; width:88px;
+  position:relative; display:block; float:none; margin:0; width:88px;
   padding:6px 14px 6px 9px; text-align:right; white-space:normal;
   font:600 9.5px/1.15 Cinzel,Georgia,serif; letter-spacing:.02em; text-transform:none;
-  color:#d9dee7; text-decoration:none; border-radius:0 2px 2px 0;
+  color:#d9dee7; text-decoration:none; border-radius:2px 0 0 2px;
   background:linear-gradient(270deg,#241505 0%, var(--cx-hue,#4a3418) 22%, var(--cx-hue,#4a3418) 100%);
-  clip-path:polygon(0 0, 100% 0, calc(100% - 8px) 50%, 100% 100%, 0 100%);
+  /* the free end is now the LEFT one, pointing into the book, so the notch turns with it */
+  clip-path:polygon(8px 0, 100% 0, 100% 100%, 8px 100%, 0 50%);
   box-shadow:inset 0 1px 0 rgba(255,255,255,.14), inset 0 0 0 1px rgba(0,0,0,.5),
              3px 3px 6px rgba(0,0,0,.45);
   transition:margin-right .16s ease, filter .16s ease; }
 :root[data-codex-object="on"] .book > nav.cx-rail-2 > a.cx-thumb:hover,
 :root[data-codex-object="on"] .book > nav.cx-rail-2 > a.cx-thumb:focus-visible{
-  margin-right:-70px; filter:brightness(1.22); outline:none; }
+  margin-right:10px; filter:brightness(1.22); outline:none; }
 :root[data-codex-object="on"] .book > nav.cx-rail-2 > a.cx-thumb[aria-current]{
-  margin-right:-76px; color:#fff;
+  margin-right:16px; color:#fff;
   box-shadow:inset 0 1px 0 rgba(255,255,255,.26), inset 0 0 0 1px var(--silver-deep,#5d4318),
              5px 4px 9px rgba(0,0,0,.5); }
 
@@ -942,26 +952,7 @@ svg#bmap > g > text{fill:#6d5f47 !important}
      `.spread` as the container's only in-flow child, where wrapping cannot change anything.
      `align-self:flex-start` is the second half: a flex line stretches its items to the line's
      cross size by default, which drew this four-line notice as a 326x1713 box. */
-  /* CORRECTED 22 August 2026, AND THE REASONING ABOVE IS THE THING THAT WAS WRONG.
-     It says wrapping "cannot change anything" when `.spread` is the only in-flow child. That
-     is true of a ROW and false of a COLUMN, and `.book` is a COLUMN -- codex-object.css:1022,
-     `.book{ flex-direction:column; }`. In a column flex container with a DEFINITE HEIGHT,
-     `flex-wrap:wrap` does not wrap onto new rows; it wraps into NEW COLUMNS TO THE RIGHT. The
-     ~<=1000px block clears `aspect-ratio` and `min-height` and does NOT clear `height`, so the
-     height stays definite on a phone and the wrap has somewhere to spill.
-     MEASURED at a 390px viewport, in a browser, on 404.html -- the simplest page there is:
-        .book        flex-direction column, width 332, scrollWidth 603
-        P.cx-omission  x 42..333     <- fills the whole first column
-        DIV.spread     x 333..625    <- wrapped into a SECOND column
-        document scrollWidth 625
-     46 of the 47 pages mobile_check drives reported EXACTLY 625, from 404.html to every hall
-     and all seven volumes -- forty-six identical numbers are one cause, not forty-six design
-     decisions, and C151 was about to declare three of them permanent for reasons that cannot
-     be right when a page with none of those features overflows by the same pixel.
-     `nowrap` is the fix and it costs the omission nothing: in a COLUMN it already stacks above
-     `.spread` on its own, which is all the wrap was ever asked for. See the `flex` correction
-     on `.cx-omission` immediately below -- both halves are needed, and either alone leaves it. */
-  :root[data-codex-object="on"] .book{ flex-wrap:nowrap; }
+  :root[data-codex-object="on"] .book{ flex-wrap:wrap; }
 
   /* C62 REQUIRES THE OMISSION TO BE DECLARED IN THE PAGE, not merely in the record. */
   :root[data-codex-object="on"] .book > .cx-omission{
@@ -969,11 +960,7 @@ svg#bmap > g > text{fill:#6d5f47 !important}
        Measured on the 430px screenshot: the declaration rendered about 60px wide, one or two
        words a line. flex-basis 100% sizes it to the full row; the `flex-wrap` above is what
        puts it ON a row of its own, and `align-self` stops the row stretching it. */
-    /* `flex:0 0 100%` MEANT "the full width of its row" AND A COLUMN READS IT AS "the full
-       HEIGHT of its column" -- flex-basis is along the MAIN axis, and the main axis here is
-       vertical. So the notice claimed the entire column and forced `.spread` to wrap beside it.
-       `0 0 auto` lets it take its own height; `width:100%` still gives it the full measure. */
-    display:block !important; flex:0 0 auto !important; width:100% !important;
+    display:block !important; flex:0 0 100% !important; width:100% !important;
     align-self:flex-start;
     box-sizing:border-box; order:-1;
     margin:0 0 10px; padding:7px 10px;
