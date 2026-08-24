@@ -736,7 +736,17 @@ body{
 
 :root[data-codex-object="on"] .book .leaf .marg:has(.marg-q[open]){ z-index:50; }
 
-:root[data-codex-object="on"] .book{ --gutter-w:30px; --gutter-reserve:calc(var(--gutter-w) / 2 + 16px); }
+/* C236, 24 Aug 2026: --gutter-reserve was calc(--gutter-w/2 + 16px) = 31px, and BODY TEXT SAT
+   INSIDE THE SPINE SHADING ON BOTH LEAVES -- the owner saw it and every box test called the page
+   clean, because the shading is PAINTED and paint is not geometry. Measured by luminance of the
+   parchment BETWEEN the glyphs (so the ink cannot fake the dip): clear parchment reads ~230, and
+   the shading reaches 48px left of the spine and 46px right of it. Crucially that reach is
+   IDENTICAL at 1600x1000, 1920x1080 and 1440x900 while the leaf itself is 646, 706 and 578 wide --
+   it is fixed pixels, not proportional, so ONE constant is right at every desktop width. 50px
+   clears the worst reach (48px) with 2px to spare. Do not re-derive this from --gutter-w: the
+   leaves MEET at a 0px gap, so --gutter-w describes no real space and the shading does not
+   follow it. */
+:root[data-codex-object="on"] .book{ --gutter-w:30px; --gutter-reserve:50px; }
 :root[data-codex-object="on"] .book .gutter{ width:var(--gutter-w); }
 :root[data-codex-object="on"] .book .leaf.l{ padding-right:var(--gutter-reserve); }
 :root[data-codex-object="on"] .book .leaf.r{ padding-left:var(--gutter-reserve); }
