@@ -98,7 +98,9 @@ body{
     inset 0 3px 0 rgba(255,255,255,.09),
     0 2px 0 #0a0c10, 0 4px 0 #14171d, 0 6px 0 #0a0c10, 0 8px 0 #171b22,
     0 26px 48px rgba(0,0,0,.62), 0 6px 14px rgba(0,0,0,.5);
-  padding:30px 34px 34px;
+  
+  --board-reserve: 116px;
+  padding:30px var(--board-reserve) 34px;
   display:flex;
 }
 

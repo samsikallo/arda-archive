@@ -184,7 +184,17 @@ body{
     inset 0 3px 0 rgba(255,255,255,.09),
     0 2px 0 #0a0c10, 0 4px 0 #14171d, 0 6px 0 #0a0c10, 0 8px 0 #171b22,
     0 26px 48px rgba(0,0,0,.62), 0 6px 14px rgba(0,0,0,.5);
-  padding:30px 34px 34px;
+  /* C283 -- THE BOARD RESERVES ROOM FOR THE FORE-EDGE FURNITURE. C277 moved the tabs inside the
+     book and they landed ON THE WRITING: the volume names sat over the left leaf's marginal
+     hands. The board is now wide enough to hold them, so nothing can ever be underneath -- the
+     same pattern as C236's gutter reserve, and he chose it over fade-on-hover (a bookmark you
+     cannot see is one you forget, and it fails keyboard and touch) and over a top-edge row
+     (which abandons the fore-edge idea of C57).
+     BOTH SIDES, EQUALLY. He ruled the right mirrors the left: the right board carries the clasp
+     and the recto's marginal notes, and unequal boards make the opening read as two pages that
+     happen to be adjacent rather than one spread. */
+  --board-reserve: 116px;
+  padding:30px var(--board-reserve) 34px;
   display:flex;
 }
 
