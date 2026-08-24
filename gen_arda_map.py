@@ -11,7 +11,7 @@ import os as _os
 _ARDA = _os.environ.get("ARDA_ROOT") or _os.path.dirname(
     _os.path.dirname(_os.path.abspath(__file__)))
 """One-sheet palimpsest map of Arda: Beleriand (FA) + Middle-earth (TA).
-Data transcribed from /home/raz/samsi/VECTOR_MAP_SPEC.md. Frame TA units,
+Data transcribed from /home/raz/samsi/docs/lore/VECTOR_MAP_SPEC.md. Frame TA units,
 canvas X -700..1000, Y 0..1000, 1 unit = 1.5 mi. FA features enter through
 the registration affine TA=(100+(x-898)/2, 358+y/2)."""
 import math
@@ -210,7 +210,7 @@ def label(x, y, txt, size=13, cls="pl", anchor="start", dx=9, dy=4, rot=0, spaci
         % (px+dx, py+dy, cls, size, anchor, t, sp, op, txt))
 
 # ======================================================================
-# DATA — THIRD AGE (FRAME TA, from VECTOR_MAP_SPEC.md Section 2)
+# DATA — THIRD AGE (FRAME TA, from docs/lore/VECTOR_MAP_SPEC.md Section 2)
 # ======================================================================
 TA_COAST = [(770,0),(760,18),(735,60),(720,120),(700,165),(655,175),(620,178),
  (560,190),(465,215),(413,222),(405,265),(408,280),(330,360),(210,455),
