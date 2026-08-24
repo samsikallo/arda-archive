@@ -115,6 +115,14 @@ body{
   gap:56px; padding:34px 18px 64px;
 }
 
+/* C276 -- THE DESKTOP PADDING SHRINKS SO THE BOOK CAN REACH THE WINDOW. Scoped to the desktop
+   side of the breakpoint ON PURPOSE: C278 froze the mobile and tablet rules, so nothing at or
+   below 1100px is touched here. 10px is not nothing -- the boards are raised and cast a shadow,
+   and a book flush against the glass clips its own edge rather than looking full-bleed. */
+@media (min-width:1101px){
+  body{ padding:10px 10px 14px; gap:24px; }
+}
+
 /* ── THE BOOK ────────────────────────────────────────────────────────────────────────────────
    An object with thickness lying on the ground, not a page filling the viewport. The reference's
    own proportion: it occupies most of the view but the world is visible around and beneath it. */
@@ -132,15 +140,31 @@ body{
      the width that the available HEIGHT can afford at the same ratio. Whichever of the three
      binds, binds. `--fit-h` is the room left after the header and the page's own padding. */
   position:relative; flex:0 0 auto;
-  --fit-h: calc(100dvh - var(--a-hdr-h, 140px) - 112px);
+  /* C276 -- HE RULED THE BOOK FILLS THE SCREEN. `--a-hdr-h` is set to 0px at :root in arda.css
+     and only a page carrying a sticky header overwrites it, so the fallback in the old
+     `var(--a-hdr-h, 140px)` NEVER APPLIED: this was already 100dvh - 112px. The 112 was the
+     old body padding (34 top + 64 bottom) plus slack. It is now the desktop padding below,
+     which is deliberately small so the book reaches the window. */
+  --book-pad: 24px;
+  --fit-h: calc(100dvh - var(--a-hdr-h, 0px) - var(--book-pad));
   /* BOTH DIMENSIONS COME FROM THE SAME CHOICE, or the ratio breaks. Sizing width alone let the
      CONTENT decide height and the book came out at 2.149 on a wide screen and 0.997 on a short
      one — a book that is taller than it is wide. `aspect-ratio` holds the proportion; `height`
      caps it at what the window can afford; the leaves scroll internally only when the archive
      genuinely holds more than a spread. */
-  width: min(1480px, 85vw, calc(var(--fit-h) * 1.58));
-  height: min(calc(min(1480px, 85vw) / 1.58), var(--fit-h));
-  aspect-ratio: 1.58;
+  /* C276 -- THE 1.58 LOCK IS DROPPED AND THE CAPS ARE GONE. Measured before this change, the
+     old `min(1480px, 85vw, ...)` gave 85.0% of width at 1366, 77.1% at 1920 and only 57.8%
+     wide / 65.1% tall at 2560: the larger the monitor, the emptier the screen, because the
+     1480px cap binds from about 1740px up. He ruled it fills the screen.
+     THE CEILING IS 2.0, which he chose from the options: width may not exceed twice the
+     height, so a 21:9 ultrawide gets small side margins instead of a codex stretched into a
+     scroll. On 16:9 and 16:10 the available width always binds first, so it fills completely.
+     FONT SIZES ARE UNCHANGED (his words) -- the leaves are two-column and measured 23-37
+     characters per column BEFORE this, which is below the comfortable range, so the extra
+     width buys wider columns and more text, not longer lines. */
+  width: min(100%, calc(var(--fit-h) * 2));
+  height: var(--fit-h);
+  aspect-ratio: auto;
   /* THE PROPORTION IS A FLOOR, NOT A CEILING. `aspect-ratio` sets an EXACT height, so a leaf with
      one paragraph too many is clipped rather than accommodated -- which is what 1200px was still
      doing. Expressed as a min-height the book keeps its 1.58:1 shape whenever the content fits,
@@ -245,31 +269,44 @@ body{
   font:600 11px/1 Cinzel,Georgia,serif; letter-spacing:.02em; color:var(--silver);
 }
 
-/* the thumb tabs: they protrude FROM BEHIND the left board, notched, layered */
-.tabs{ position:absolute; left:-1px; top:74px; z-index:1; display:flex; flex-direction:column; gap:9px; }
+/* C277 -- THE TABS TURN INWARDS. They used to protrude FROM BEHIND the left board: measured at
+   all eight desktop widths, each tab sat 75px LEFT of the book's edge (left:-1px plus
+   margin-left:-74px on a 104px tab), so only 30 of 104px was inside it, and hover pulled it to
+   -88px, aria-current to -94px. That escaped clipping only because the old 85vw cap left a wide
+   empty margin either side -- and C276 removes that margin, so at full width they would have
+   been cut off at the glass. He ruled them inwards, sitting wholly within the fore-edge and
+   sliding further IN on hover, which keeps the ribbon-marker reading rather than a browser tab. */
+.tabs{ position:absolute; left:0; top:74px; z-index:7; display:flex; flex-direction:column; gap:9px; }
 .tab{
-  position:relative; margin-left:-74px; width:104px; padding:8px 10px 8px 14px;
+  position:relative; margin-left:0; width:104px; padding:8px 14px 8px 10px;
   font:600 10.5px/1.1 Cinzel,Georgia,serif; letter-spacing:.02em; text-transform:none;
   color:#d9dee7; text-decoration:none; text-align:left;
   background:linear-gradient(90deg,#241505 0%, var(--tab-1) 22%, var(--tab-1) 100%);
-  border-radius:2px 0 0 2px;
-  /* the notched fore-end, cut like a ribbon */
-  clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%, 9px 50%);
+  /* EVERY DIRECTIONAL DETAIL IS MIRRORED, or the tab reads as pointing the wrong way. The free
+     end is now the RIGHT one, so the ribbon notch, the corner radius and the cast shadow all
+     turn with it. */
+  border-radius:0 2px 2px 0;
+  text-align:right;
+  clip-path:polygon(0 0, 100% 0, calc(100% - 9px) 50%, 100% 100%, 0 100%);
   box-shadow:inset 0 1px 0 rgba(255,255,255,.14), inset 0 0 0 1px rgba(0,0,0,.5),
-             -3px 3px 6px rgba(0,0,0,.45);
+             3px 3px 6px rgba(0,0,0,.45);
   transition:margin-left .16s ease, filter .16s ease;
 }
 .tab:nth-child(2){background:linear-gradient(90deg,#241505 0%, var(--tab-2) 22%, var(--tab-2) 100%)}
 .tab:nth-child(3){background:linear-gradient(90deg,#241505 0%, var(--tab-3) 22%, var(--tab-3) 100%)}
 .tab:nth-child(4){background:linear-gradient(90deg,#241505 0%, var(--tab-4) 22%, var(--tab-4) 100%)}
-.tab:hover,.tab:focus-visible{ margin-left:-88px; filter:brightness(1.22); outline:none; }
-.tab[aria-current]{ margin-left:-94px; color:#fff;
+/* INWARD, NOT OUTWARD. Positive margin moves the tab further into the book. */
+.tab:hover,.tab:focus-visible{ margin-left:10px; filter:brightness(1.22); outline:none; }
+.tab[aria-current]{ margin-left:16px; color:#fff;
   box-shadow:inset 0 1px 0 rgba(255,255,255,.26), inset 0 0 0 1px var(--silver-deep),
-             -5px 4px 9px rgba(0,0,0,.5); }
+             5px 4px 9px rgba(0,0,0,.5); }
 
 /* the clasp: a silver strap on the fore-edge with a stone */
 .clasp{
-  position:absolute; right:-13px; top:50%; transform:translateY(-50%); z-index:6;
+  /* C277 -- INWARDS with the tabs. It protruded 13px past the right edge; at full-screen width
+     that is cut by the window rather than reading as a strap over the fore-edge. He was asked
+     separately and ruled it in. */
+  position:absolute; right:6px; top:50%; transform:translateY(-50%); z-index:6;
   width:30px; height:96px; border-radius:3px;
   background:linear-gradient(180deg,#a57c3c,#4a3416 42%,#a57c3c);
   box-shadow:inset 0 0 0 1px var(--silver-deep), inset 0 1px 0 rgba(238,241,246,.30),
@@ -833,7 +870,13 @@ body{
    a border needs a margin, and a catchword is a BINDER'S instruction for a physical gathering,
    meaningless where there are no leaves to keep in order. Nothing is hidden that carries meaning;
    what goes is the furniture of a codex that is not there. */
-@media (max-width:1100px){
+/* C278 -- 1100 BECOMES 1000 SO THE TWO NARROW BLOCKS AGREE. Measured in-browser: this block fired
+   between 1001px and 1100px while the `max-width:1000px` block above did NOT, so a real desktop
+   width -- 1024x768 is a common laptop -- rendered the two-page spread WITH gutter, tabs and clasp
+   AND the phone treatment of marginal notes with no catchwords. Half of each, which is exactly the
+   mingling he reported. Nothing at or below 1000px changes: C278 froze the mobile and tablet rules,
+   and this only stops them reaching a desktop. */
+@media (max-width:1000px){
   .book{ aspect-ratio:auto; min-height:0; }
   .spread{ flex:0 0 auto; }
   .leaf{ overflow:visible; }
@@ -1280,7 +1323,17 @@ body{
    he is looking at. The reserve is DERIVED from the gutter's own width so the two cannot drift:
    half the band, plus a real margin. Reset on the stacked layout, where `.gutter` is display:none
    and there is no binding to keep clear of. */
-:root[data-codex-object="on"] .book{ --gutter-w:30px; --gutter-reserve:calc(var(--gutter-w) / 2 + 16px); }
+/* C236 -- HIS RULING, applied here at last. This computed to 31px and he ruled 50px. It had been
+   edited straight into the GENERATED codex-object.css, which is why gen_codex_route.py refused to
+   rebuild at all; C279 authorises this file for the repair. */
+:root[data-codex-object="on"] .book{ --gutter-w:30px; --gutter-reserve:50px; }
+
+/* C240 -- HIS RULING, applied here at last. The un-clip was `.leaf.fitted` ONLY, so on every other
+   leaf the marginal note clipped its own text: 111px wide, max-height 70px, overflow hidden, eight
+   of them on 404.html alone. He saw it and named it -- "the sidenotes are cropping out of the frame
+   at the edges" -- and ruled it a defect, not the .marg-more disclosure working as designed. Like
+   C236 this had been edited into the GENERATED file; C279 authorises the repair at the source. */
+:root[data-codex-object="on"] .book .leaf .marg .marg-t{ max-height:none; overflow:visible; }
 :root[data-codex-object="on"] .book .gutter{ width:var(--gutter-w); }
 :root[data-codex-object="on"] .book .leaf.l{ padding-right:var(--gutter-reserve); }
 :root[data-codex-object="on"] .book .leaf.r{ padding-left:var(--gutter-reserve); }
