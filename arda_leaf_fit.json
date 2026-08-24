@@ -1,3497 +1,3641 @@
 {
 "how": "browser layout via map/measure_leaf_fit.py; never predicted from text",
 "routes": {
+"errata/2026-07-23.html": {
+"hold": 775,
+"leaves": 2,
+"notes": 0,
+"text": 704
+},
+"errata/2026-07-24.html": {
+"hold": 775,
+"leaves": 12,
+"notes": 0,
+"text": 17749
+},
+"errata/2026-07-26.html": {
+"hold": 775,
+"leaves": 2,
+"notes": 0,
+"text": 441
+},
+"errata/2026-07-27.html": {
+"hold": 775,
+"leaves": 6,
+"notes": 0,
+"text": 3798
+},
+"errata/2026-07-28.html": {
+"hold": 775,
+"leaves": 12,
+"notes": 0,
+"text": 11354
+},
+"errata/2026-07-29.html": {
+"hold": 775,
+"leaves": 12,
+"notes": 0,
+"text": 21406
+},
+"errata/2026-07-30.html": {
+"hold": 775,
+"leaves": 12,
+"notes": 0,
+"text": 10842
+},
+"errata/2026-07-31.html": {
+"hold": 775,
+"leaves": 2,
+"notes": 0,
+"text": 1537
+},
+"errata/2026-08-01.html": {
+"hold": 775,
+"leaves": 12,
+"notes": 0,
+"text": 30643
+},
+"errata/2026-08-04.html": {
+"hold": 775,
+"leaves": 12,
+"notes": 0,
+"text": 10477
+},
+"errata/2026-08-05.html": {
+"hold": 775,
+"leaves": 12,
+"notes": 0,
+"text": 17173
+},
+"errata/2026-08-11.html": {
+"hold": 775,
+"leaves": 10,
+"notes": 0,
+"text": 6691
+},
+"errata/2026-08-12.html": {
+"hold": 775,
+"leaves": 4,
+"notes": 0,
+"text": 1674
+},
+"errata/2026-08-13.html": {
+"hold": 775,
+"leaves": 2,
+"notes": 0,
+"text": 559
+},
+"errata/2026-08-16.html": {
+"hold": 775,
+"leaves": 6,
+"notes": 0,
+"text": 3399
+},
+"errata/2026-08-17.html": {
+"hold": 775,
+"leaves": 6,
+"notes": 0,
+"text": 4265
+},
+"errata/2026-08-18.html": {
+"hold": 775,
+"leaves": 2,
+"notes": 0,
+"text": 893
+},
+"errata/2026-08-19.html": {
+"hold": 775,
+"leaves": 12,
+"notes": 0,
+"text": 9325
+},
+"errata/2026-08-20-ii.html": {
+"hold": 775,
+"leaves": 12,
+"notes": 0,
+"text": 26677
+},
+"errata/2026-08-20-iii.html": {
+"hold": 775,
+"leaves": 12,
+"notes": 0,
+"text": 25824
+},
+"errata/2026-08-20-iv.html": {
+"hold": 775,
+"leaves": 12,
+"notes": 0,
+"text": 26787
+},
+"errata/2026-08-20-v.html": {
+"hold": 775,
+"leaves": 12,
+"notes": 0,
+"text": 26549
+},
+"errata/2026-08-20-vi.html": {
+"hold": 775,
+"leaves": 12,
+"notes": 0,
+"text": 21975
+},
+"errata/2026-08-20.html": {
+"hold": 775,
+"leaves": 12,
+"notes": 0,
+"text": 27201
+},
 "person/adalgrim.html": {
-"hold": 676,
+"hold": 769,
+"leaves": 2,
+"notes": 280,
+"text": 818
+},
+"person/adamanta.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 327,
+"text": 825
+},
+"person/adrahil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 303,
+"text": 823
+},
+"person/aegnor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 344,
+"text": 787
+},
+"person/aglahad.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 212,
+"text": 712
+},
+"person/ailinel.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 866
+},
+"person/aldamir.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 331,
+"text": 971
+},
+"person/aldor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 334,
+"text": 883
+},
+"person/almarian.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 293,
 "text": 831
 },
-"person/adamanta.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 328,
-"text": 832
-},
-"person/adrahil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 813
-},
-"person/aegnor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 347,
-"text": 795
-},
-"person/aglahad.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 226,
-"text": 670
-},
-"person/ailinel.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 878
-},
-"person/aldamir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 362,
-"text": 909
-},
-"person/aldor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 838
-},
-"person/almarian.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 844
-},
 "person/almiel.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
-"notes": 324,
-"text": 839
+"notes": 311,
+"text": 843
 },
 "person/amandil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 352,
-"text": 926
-},
-"person/amarie.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 314,
-"text": 836
-},
-"person/amdir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 347,
-"text": 906
-},
-"person/amlaith.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 359,
-"text": 918
-},
-"person/amras.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 389,
-"text": 1317
-},
-"person/amrod.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 397,
-"text": 1411
-},
-"person/amroth.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 320,
-"text": 838
-},
-"person/anaire.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 313,
-"text": 822
-},
-"person/anardil_g.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
 "notes": 348,
-"text": 886
+"text": 956
 },
-"person/anarion_g.html": {
-"hold": 676,
+"person/amarie.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 355,
-"text": 966
-},
-"person/andreth.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 345,
-"text": 897
-},
-"person/angamaite.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 362,
-"text": 905
-},
-"person/angelimir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 361,
+"notes": 311,
 "text": 819
 },
-"person/angrod.html": {
-"hold": 676,
+"person/amdir.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 354,
+"notes": 324,
+"text": 915
+},
+"person/amlaith.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 331,
+"text": 905
+},
+"person/amras.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 399,
+"text": 1275
+},
+"person/amrod.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 401,
+"text": 1318
+},
+"person/amroth.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 307,
 "text": 831
 },
-"person/annael_n.html": {
-"hold": 676,
+"person/anaire.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 303,
-"text": 831
+"text": 816
 },
-"person/arador.html": {
-"hold": 676,
+"person/anardil_g.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 323,
-"text": 826
+"notes": 320,
+"text": 938
 },
-"person/aradunakhor.html": {
-"hold": 676,
+"person/anarion_g.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 347,
-"text": 954
+"notes": 341,
+"text": 993
 },
-"person/araglas.html": {
-"hold": 676,
+"person/andreth.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 313,
-"text": 862
+"notes": 342,
+"text": 895
 },
-"person/aragorn.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 362,
-"text": 1048
-},
-"person/aragorn1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 282,
-"text": 789
-},
-"person/aragost.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 297,
-"text": 835
-},
-"person/arahad1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 297,
-"text": 810
-},
-"person/arahad2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 277,
-"text": 805
-},
-"person/arahael.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 300,
-"text": 822
-},
-"person/aranarth.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 313,
-"text": 839
-},
-"person/arantar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 295,
-"text": 777
-},
-"person/aranuir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 297,
-"text": 827
-},
-"person/aranwe.html": {
-"hold": 676,
+"person/angamaite.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 358,
-"text": 870
+"text": 921
 },
-"person/araphant.html": {
-"hold": 676,
+"person/angelimir.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 300,
-"text": 790
+"notes": 355,
+"text": 803
 },
-"person/araphor.html": {
-"hold": 676,
+"person/angrod.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 300,
-"text": 790
+"notes": 341,
+"text": 826
 },
-"person/arassuil.html": {
-"hold": 676,
+"person/annael_n.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 345,
-"text": 873
+"notes": 287,
+"text": 850
 },
-"person/aratan.html": {
-"hold": 676,
+"person/arador.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 375,
-"text": 894
+"notes": 306,
+"text": 859
 },
-"person/arathorn.html": {
-"hold": 676,
+"person/aradunakhor.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 282,
-"text": 801
+"notes": 334,
+"text": 925
 },
-"person/arathorn1.html": {
-"hold": 676,
+"person/araglas.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 297,
-"text": 809
+"notes": 306,
+"text": 843
 },
-"person/araval.html": {
-"hold": 676,
+"person/aragorn.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 379,
+"text": 1051
+},
+"person/aragorn1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 277,
+"text": 804
+},
+"person/aragost.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 279,
-"text": 831
+"text": 823
+},
+"person/arahad1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 279,
+"text": 813
+},
+"person/arahad2.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 252,
+"text": 793
+},
+"person/arahael.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 276,
+"text": 829
+},
+"person/aranarth.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 303,
+"text": 841
+},
+"person/arantar.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 290,
+"text": 790
+},
+"person/aranuir.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 279,
+"text": 813
+},
+"person/aranwe.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 345,
+"text": 904
+},
+"person/araphant.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 276,
+"text": 805
+},
+"person/araphor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 276,
+"text": 786
+},
+"person/arassuil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 328,
+"text": 886
+},
+"person/aratan.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 348,
+"text": 895
+},
+"person/arathorn.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 277,
+"text": 818
+},
+"person/arathorn1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 279,
+"text": 823
+},
+"person/araval.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 263,
+"text": 795
 },
 "person/aravir.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
-"notes": 297,
+"notes": 279,
 "text": 813
 },
 "person/aravorn.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 297,
-"text": 810
-},
-"person/arciryas.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 359,
-"text": 917
-},
-"person/aredhel.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 381,
-"text": 873
-},
-"person/argeleb1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 286,
-"text": 801
-},
-"person/argeleb2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 847
-},
-"person/argimilzor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 909
-},
-"person/argon.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 300,
-"text": 777
-},
-"person/argonui.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
 "notes": 279,
-"text": 805
-},
-"person/arsakalthor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 300,
-"text": 846
-},
-"person/artamir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 358,
-"text": 969
-},
-"person/arvedui.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 372,
-"text": 997
-},
-"person/arvegil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 303,
-"text": 806
-},
-"person/arveleg1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 303,
-"text": 849
-},
-"person/arveleg2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 858
-},
-"person/arwen.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 331,
-"text": 1346
-},
-"person/arzimrathon.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 286,
-"text": 843
-},
-"person/atanatar1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 311,
-"text": 822
-},
-"person/atanatar2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 286,
-"text": 796
-},
-"person/aule.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 362,
-"text": 945
-},
-"person/balbo.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 847
-},
-"person/baldor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 365,
-"text": 930
-},
-"person/balin.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 328,
-"text": 874
-},
-"person/baragund.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 395,
-"text": 857
-},
-"person/barahir.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 406,
-"text": 948
-},
-"person/barahir_f.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 286,
-"text": 747
-},
-"person/barahir_s.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 355,
-"text": 921
-},
-"person/baran.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 342,
-"text": 913
-},
-"person/belecthor1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 297,
-"text": 823
-},
-"person/belecthor2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 289,
-"text": 797
-},
-"person/beleg_a.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 354,
-"text": 984
-},
-"person/belegorn.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 292,
-"text": 803
-},
-"person/belegund.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 351,
-"text": 844
-},
-"person/bell.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 239,
-"text": 661
-},
-"person/belladonna.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 882
-},
-"person/beor.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 416,
-"text": 939
-},
-"person/beregar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 316,
-"text": 858
-},
-"person/beregond_s.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 328,
-"text": 880
-},
-"person/beren.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 383,
-"text": 1245
-},
-"person/beren_s.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 297,
-"text": 757
-},
-"person/beril.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 306,
-"text": 678
-},
-"person/beruthiel.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 327,
-"text": 899
-},
-"person/berylla.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 320,
-"text": 881
-},
-"person/bilbo.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 355,
-"text": 1043
-},
-"person/borin.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 318,
-"text": 886
-},
-"person/boromir.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 362,
-"text": 1053
-},
-"person/boromir_b.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 320,
-"text": 835
-},
-"person/boromir_s.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 211,
-"text": 503
-},
-"person/boron.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 328,
-"text": 815
-},
-"person/brandir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
-"text": 782
-},
-"person/brego.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 303,
-"text": 800
-},
-"person/bregolas.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 382,
-"text": 940
-},
-"person/bregor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 280,
-"text": 795
-},
-"person/brytta.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 345,
-"text": 916
-},
-"person/bungo.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 314,
-"text": 849
-},
-"person/calimehtar_c.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 324,
-"text": 937
-},
-"person/calimehtar_g.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 359,
-"text": 954
-},
-"person/calimmacil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 363,
-"text": 932
-},
-"person/calmacil_g.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 323,
-"text": 933
-},
-"person/camellia.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 885
-},
-"person/caranthir.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 427,
-"text": 1317
-},
-"person/castamir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 348,
-"text": 997
-},
-"person/celeborn.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 348,
-"text": 952
-},
-"person/celebrian.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 345,
-"text": 905
-},
-"person/celebrimbor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 369,
-"text": 894
-},
-"person/celebrindor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 293,
-"text": 831
-},
-"person/celegorm.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 427,
-"text": 1241
-},
-"person/celepharn.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 320,
-"text": 846
-},
-"person/cemendur.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 369,
-"text": 929
-},
-"person/cirdan.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 373,
-"text": 977
-},
-"person/cirion.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 410,
-"text": 1147
-},
-"person/ciryandil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 320,
-"text": 865
-},
-"person/ciryon.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 344,
-"text": 885
-},
-"person/curufin.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 427,
-"text": 1306
-},
-"person/dain1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
-"text": 916
-},
-"person/dain2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 893
-},
-"person/deagol.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 325,
-"text": 859
-},
-"person/denethor1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 815
-},
-"person/denethor2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 328,
-"text": 882
-},
-"person/deor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
-"text": 867
-},
-"person/diamond.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 282,
-"text": 804
-},
-"person/dior.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 315,
-"text": 841
-},
-"person/dior_s.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 842
-},
-"person/dirhael.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 826
-},
-"person/dis.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 348,
-"text": 912
-},
-"person/drogo.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 812
-},
-"person/durin1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 255,
-"text": 651
-},
-"person/durin6.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 334,
-"text": 857
-},
-"person/durin7.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 211,
-"text": 500
-},
-"person/dwalin.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 313,
-"text": 836
-},
-"person/earendil.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 389,
-"text": 1473
-},
-"person/earendil_g.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 187,
-"text": 459
-},
-"person/earendur_a.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
-"text": 889
-},
-"person/earendur_l.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 245,
-"text": 659
-},
-"person/earnil1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 854
-},
-"person/earnil2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 359,
-"text": 956
-},
-"person/earnur.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 365,
-"text": 988
-},
-"person/earwen.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 331,
-"text": 883
-},
-"person/ecthelion1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 359,
-"text": 935
-},
-"person/ecthelion2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 859
-},
-"person/egalmoth.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 362,
-"text": 938
-},
-"person/eglantine.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
 "text": 813
 },
-"person/elanor.html": {
-"hold": 676,
+"person/arciryas.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 361,
-"text": 971
+"notes": 327,
+"text": 959
+},
+"person/aredhel.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 372,
+"text": 866
+},
+"person/argeleb1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 273,
+"text": 815
+},
+"person/argeleb2.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 829
+},
+"person/argimilzor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 314,
+"text": 917
+},
+"person/argon.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 290,
+"text": 791
+},
+"person/argonui.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 263,
+"text": 786
+},
+"person/arsakalthor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 290,
+"text": 830
+},
+"person/artamir.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 341,
+"text": 988
+},
+"person/arvedui.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 359,
+"text": 998
+},
+"person/arvegil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 277,
+"text": 838
+},
+"person/arveleg1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 290,
+"text": 819
+},
+"person/arveleg2.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 287,
+"text": 821
+},
+"person/arwen.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 370,
+"text": 1429
+},
+"person/arzimrathon.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 276,
+"text": 828
+},
+"person/atanatar1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 307,
+"text": 879
+},
+"person/atanatar2.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 273,
+"text": 886
+},
+"person/aule.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 359,
+"text": 939
+},
+"person/balbo.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 303,
+"text": 871
+},
+"person/baldor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 359,
+"text": 966
+},
+"person/balin.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 317,
+"text": 883
+},
+"person/baragund.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 381,
+"text": 843
+},
+"person/barahir.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 409,
+"text": 927
+},
+"person/barahir_f.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 283,
+"text": 754
+},
+"person/barahir_s.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 341,
+"text": 981
+},
+"person/baran.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 342,
+"text": 885
+},
+"person/belecthor1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 297,
+"text": 864
+},
+"person/belecthor2.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 286,
+"text": 877
+},
+"person/beleg_a.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 341,
+"text": 985
+},
+"person/belegorn.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 290,
+"text": 869
+},
+"person/belegund.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 338,
+"text": 802
+},
+"person/bell.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 225,
+"text": 688
+},
+"person/belladonna.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 314,
+"text": 876
+},
+"person/beor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 423,
+"text": 992
+},
+"person/beregar.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 303,
+"text": 864
+},
+"person/beregond_s.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 317,
+"text": 932
+},
+"person/beren.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 403,
+"text": 1266
+},
+"person/beren_s.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 287,
+"text": 812
+},
+"person/beril.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 292,
+"text": 700
+},
+"person/beruthiel.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 325,
+"text": 874
+},
+"person/berylla.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 296,
+"text": 868
+},
+"person/bilbo.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 354,
+"text": 983
+},
+"person/borin.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 318,
+"text": 874
+},
+"person/boromir.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 403,
+"text": 1121
+},
+"person/boromir_b.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 314,
+"text": 841
+},
+"person/boromir_s.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 204,
+"text": 571
+},
+"person/boron.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 320,
+"text": 829
+},
+"person/brandir.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 338,
+"text": 790
+},
+"person/brego.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 857
+},
+"person/bregolas.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 368,
+"text": 900
+},
+"person/bregor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 266,
+"text": 777
+},
+"person/brytta.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 334,
+"text": 961
+},
+"person/bungo.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 311,
+"text": 814
+},
+"person/calimehtar_c.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 315,
+"text": 979
+},
+"person/calimehtar_g.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 331,
+"text": 981
+},
+"person/calimmacil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 341,
+"text": 986
+},
+"person/calmacil_g.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 314,
+"text": 988
+},
+"person/camellia.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 297,
+"text": 836
+},
+"person/caranthir.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 435,
+"text": 1258
+},
+"person/castamir.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 331,
+"text": 988
+},
+"person/celeborn.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 335,
+"text": 932
+},
+"person/celebrian.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 317,
+"text": 915
+},
+"person/celebrimbor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 355,
+"text": 879
+},
+"person/celebrindor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 279,
+"text": 815
+},
+"person/celegorm.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 446,
+"text": 1226
+},
+"person/celepharn.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 848
+},
+"person/cemendur.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 341,
+"text": 967
+},
+"person/cirdan.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 359,
+"text": 948
+},
+"person/cirion.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 409,
+"text": 1182
+},
+"person/ciryandil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 306,
+"text": 924
+},
+"person/ciryon.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 317,
+"text": 876
+},
+"person/curufin.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 446,
+"text": 1237
+},
+"person/dain1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 327,
+"text": 883
+},
+"person/dain2.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 313,
+"text": 894
+},
+"person/deagol.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 315,
+"text": 882
+},
+"person/denethor1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 334,
+"text": 899
+},
+"person/denethor2.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 325,
+"text": 946
+},
+"person/deor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 331,
+"text": 921
+},
+"person/diamond.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 280,
+"text": 808
+},
+"person/dior.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 315,
+"text": 847
+},
+"person/dior_s.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 334,
+"text": 896
+},
+"person/dirhael.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 303,
+"text": 813
+},
+"person/dis.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 345,
+"text": 878
+},
+"person/drogo.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 810
+},
+"person/durin1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 252,
+"text": 675
+},
+"person/durin6.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 324,
+"text": 867
+},
+"person/durin7.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 198,
+"text": 505
+},
+"person/dwalin.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 311,
+"text": 818
+},
+"person/earendil.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 385,
+"text": 1463
+},
+"person/earendil_g.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 177,
+"text": 552
+},
+"person/earendur_a.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 330,
+"text": 906
+},
+"person/earendur_l.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 222,
+"text": 627
+},
+"person/earnil1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 311,
+"text": 944
+},
+"person/earnil2.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 345,
+"text": 1005
+},
+"person/earnur.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 388,
+"text": 1048
+},
+"person/earwen.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 331,
+"text": 858
+},
+"person/ecthelion1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 348,
+"text": 959
+},
+"person/ecthelion2.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 314,
+"text": 905
+},
+"person/egalmoth.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 355,
+"text": 969
+},
+"person/eglantine.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 825
+},
+"person/elanor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 348,
+"text": 962
 },
 "person/elatan.html": {
-"hold": 676,
+"hold": 769,
+"leaves": 2,
+"notes": 280,
+"text": 831
+},
+"person/elboron.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 303,
+"text": 808
+},
+"person/eldacar_a.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 177,
+"text": 491
+},
+"person/eldacar_g.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 290,
+"text": 888
+},
+"person/eldarion.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 324,
+"text": 885
+},
+"person/elendil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 334,
+"text": 961
+},
+"person/elendur_a.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 177,
+"text": 491
+},
+"person/elendur_i.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 362,
+"text": 925
+},
+"person/elenwe.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 809
+},
+"person/elfhild.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 265,
+"text": 831
+},
+"person/elfstan.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 300,
+"text": 785
+},
+"person/elfwine.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 331,
+"text": 935
+},
+"person/elladan.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 307,
+"text": 842
+},
+"person/elmo.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 348,
+"text": 892
+},
+"person/elrohir.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 328,
+"text": 912
+},
+"person/elrond.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 422,
+"text": 1296
+},
+"person/elros.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 334,
+"text": 920
+},
+"person/elured.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 400,
+"text": 886
+},
+"person/elurin.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 365,
+"text": 830
+},
+"person/elwe.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 358,
+"text": 932
+},
+"person/elwing.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 415,
+"text": 1209
+},
+"person/emeldir.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 306,
+"text": 807
+},
+"person/eol.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 283,
+"text": 874
+},
+"person/eomer.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 345,
+"text": 992
+},
+"person/eomund.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 331,
+"text": 931
+},
+"person/eorl.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 368,
+"text": 1206
+},
+"person/eowyn.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 389,
+"text": 1177
+},
+"person/eradan.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 307,
+"text": 887
+},
+"person/erendis.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 338,
+"text": 937
+},
+"person/esmeralda.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 262,
+"text": 763
+},
+"person/este.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 293,
 "text": 785
 },
-"person/elboron.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 313,
-"text": 795
-},
-"person/eldacar_a.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 187,
-"text": 431
-},
-"person/eldacar_g.html": {
-"hold": 676,
+"person/estella.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 303,
-"text": 831
-},
-"person/eldarion.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 324,
-"text": 879
-},
-"person/elendil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 347,
-"text": 961
-},
-"person/elendur_a.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 187,
-"text": 434
-},
-"person/elendur_i.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 388,
-"text": 931
-},
-"person/elenwe.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 297,
-"text": 811
-},
-"person/elfhild.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 276,
-"text": 786
-},
-"person/elfstan.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 304,
-"text": 772
-},
-"person/elfwine.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
-"text": 909
-},
-"person/elladan.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 321,
-"text": 837
-},
-"person/elmo.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 362,
-"text": 900
-},
-"person/elrohir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 328,
-"text": 925
-},
-"person/elrond.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 431,
-"text": 1261
-},
-"person/elros.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 347,
-"text": 919
-},
-"person/elured.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 409,
-"text": 878
-},
-"person/elurin.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 378,
-"text": 811
-},
-"person/elwe.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 371,
-"text": 930
-},
-"person/elwing.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 378,
-"text": 1221
-},
-"person/emeldir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 310,
-"text": 791
-},
-"person/eol.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 293,
-"text": 856
-},
-"person/eomer.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 359,
-"text": 966
-},
-"person/eomund.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 344,
-"text": 896
-},
-"person/eorl.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 375,
-"text": 1203
-},
-"person/eowyn.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 383,
-"text": 1177
-},
-"person/eradan.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 311,
-"text": 819
-},
-"person/erendis.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 352,
-"text": 909
-},
-"person/esmeralda.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 276,
-"text": 769
-},
-"person/este.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 787
-},
-"person/estella.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 854
+"text": 882
 },
 "person/falastur.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
-"notes": 338,
-"text": 884
+"notes": 324,
+"text": 945
 },
 "person/faramir.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 352,
-"text": 1108
+"hold": 769,
+"leaves": 2,
+"notes": 404,
+"text": 1126
 },
 "person/faramir_o.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
 "notes": 290,
-"text": 809
+"text": 852
 },
 "person/faramir_t.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
 "notes": 198,
-"text": 472
+"text": 503
 },
 "person/farin.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
-"notes": 279,
-"text": 745
+"notes": 266,
+"text": 751
 },
 "person/fastred.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 303,
-"text": 845
-},
-"person/fastred_r.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 269,
-"text": 733
-},
-"person/feanor.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 449,
-"text": 1361
-},
-"person/fengel.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 841
-},
-"person/fili.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 292,
-"text": 818
-},
-"person/finarfin.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
 "notes": 293,
-"text": 799
+"text": 839
+},
+"person/fastred_r.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 259,
+"text": 801
+},
+"person/feanor.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 449,
+"text": 1347
+},
+"person/fengel.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 314,
+"text": 917
+},
+"person/fili.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 290,
+"text": 811
+},
+"person/finarfin.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 280,
+"text": 859
 },
 "person/findis.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
-"notes": 283,
-"text": 757
+"notes": 273,
+"text": 762
 },
 "person/finduilas_a.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
-"notes": 307,
-"text": 773
+"notes": 290,
+"text": 831
 },
 "person/finduilas_n.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 916
-},
-"person/fingolfin.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 395,
-"text": 1011
-},
-"person/fingon.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 388,
-"text": 846
-},
-"person/finrod.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 402,
-"text": 1029
-},
-"person/finwe.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 344,
-"text": 905
-},
-"person/firiel.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
-"text": 900
-},
-"person/folca.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 869
-},
-"person/folcred.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
 "notes": 303,
-"text": 843
+"text": 913
+},
+"person/fingolfin.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 422,
+"text": 1026
+},
+"person/fingon.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 379,
+"text": 841
+},
+"person/finrod.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 418,
+"text": 1083
+},
+"person/finwe.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 331,
+"text": 962
+},
+"person/firiel.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 338,
+"text": 923
+},
+"person/folca.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 314,
+"text": 934
+},
+"person/folcred.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 897
 },
 "person/folcwine.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
-"notes": 334,
-"text": 857
+"notes": 324,
+"text": 911
 },
 "person/fosco.html": {
-"hold": 676,
+"hold": 769,
+"leaves": 2,
+"notes": 290,
+"text": 831
+},
+"person/fram.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 314,
+"text": 893
+},
+"person/frea.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 301,
+"text": 872
+},
+"person/frealaf.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 359,
+"text": 988
+},
+"person/freawine.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 306,
+"text": 889
+},
+"person/fredegar.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 334,
+"text": 882
+},
+"person/frerin.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 311,
+"text": 828
+},
+"person/frodo.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 417,
+"text": 1062
+},
+"person/frodog.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 290,
+"text": 764
+},
+"person/fror.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 293,
 "text": 830
 },
-"person/fram.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 907
-},
-"person/frea.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 841
-},
-"person/frealaf.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 359,
-"text": 942
-},
-"person/freawine.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 320,
-"text": 835
-},
-"person/fredegar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 896
-},
-"person/frerin.html": {
-"hold": 676,
+"person/frumgar.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 313,
-"text": 827
-},
-"person/frodo.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 378,
-"text": 1094
-},
-"person/frodog.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 304,
-"text": 746
-},
-"person/fror.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 838
-},
-"person/frumgar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 327,
-"text": 808
+"text": 822
 },
 "person/fundin.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
-"notes": 313,
-"text": 807
+"notes": 311,
+"text": 822
 },
 "person/galadhon.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
-"notes": 359,
-"text": 939
+"notes": 345,
+"text": 948
 },
 "person/galador.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 304,
-"text": 823
-},
-"person/galadriel.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 439,
-"text": 1086
-},
-"person/galathil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 831
-},
-"person/galdor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 355,
-"text": 918
-},
-"person/gelmir_n.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 320,
-"text": 905
-},
-"person/gerontius.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 348,
-"text": 964
-},
-"person/gildor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 331,
-"text": 905
-},
-"person/gilgalad.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 352,
-"text": 907
-},
-"person/gilraen.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 895
-},
-"person/gimilkhad.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 359,
-"text": 915
-},
-"person/gimli.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 348,
-"text": 969
-},
-"person/gloin_d.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 348,
-"text": 941
-},
-"person/gloin_k.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 177,
-"text": 459
-},
-"person/gloredhel.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 355,
-"text": 920
-},
-"person/goldilocks.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 310,
-"text": 895
-},
-"person/goldwine.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 840
-},
-"person/gorbadoc.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 876
-},
-"person/gram.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 331,
-"text": 900
-},
-"person/groin_d.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
 "notes": 290,
-"text": 784
+"text": 825
+},
+"person/galadriel.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 432,
+"text": 1076
+},
+"person/galathil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 828
+},
+"person/galdor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 341,
+"text": 924
+},
+"person/gelmir_n.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 307,
+"text": 880
+},
+"person/gerontius.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 345,
+"text": 920
+},
+"person/gildor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 331,
+"text": 902
+},
+"person/gilgalad.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 338,
+"text": 945
+},
+"person/gilraen.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 311,
+"text": 889
+},
+"person/gimilkhad.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 345,
+"text": 921
+},
+"person/gimli.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 345,
+"text": 952
+},
+"person/gloin_d.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 334,
+"text": 917
+},
+"person/gloin_k.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 174,
+"text": 489
+},
+"person/gloredhel.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 341,
+"text": 949
+},
+"person/goldilocks.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 296,
+"text": 876
+},
+"person/goldwine.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 297,
+"text": 889
+},
+"person/gorbadoc.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 828
+},
+"person/gram.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 327,
+"text": 938
+},
+"person/groin_d.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 279,
+"text": 804
 },
 "person/gror.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
-"notes": 324,
+"notes": 321,
 "text": 828
 },
 "person/guilin.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
-"notes": 293,
-"text": 854
+"notes": 283,
+"text": 825
 },
 "person/gundor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 368,
-"text": 794
-},
-"person/gwindor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 878
-},
-"person/hador.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 345,
-"text": 909
-},
-"person/hador_s.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 375,
-"text": 1001
-},
-"person/halbarad.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 306,
-"text": 815
-},
-"person/haldad.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 399,
-"text": 895
-},
-"person/haldan.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 300,
-"text": 787
-},
-"person/haldar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 361,
-"text": 804
-},
-"person/haldir.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
 "notes": 354,
-"text": 808
-},
-"person/haleth.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 863
-},
-"person/haleth_r.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 207,
-"text": 553
-},
-"person/hallacar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 980
-},
-"person/hallas.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 376,
-"text": 957
-},
-"person/hallatan.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 321,
-"text": 868
-},
-"person/halmir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 350,
-"text": 760
-},
-"person/hama_r.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
-"text": 876
-},
-"person/hamfast.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 310,
-"text": 868
-},
-"person/handir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 324,
-"text": 832
-},
-"person/hareth.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 324,
-"text": 798
-},
-"person/hathol.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 313,
-"text": 835
-},
-"person/helm.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 875
-},
-"person/herion.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 293,
-"text": 792
-},
-"person/herucalmo.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 316,
-"text": 872
-},
-"person/hild.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 331,
-"text": 867
-},
-"person/hildigrim.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 279,
-"text": 801
-},
-"person/hiril.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 311,
-"text": 758
-},
-"person/holfast.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 324,
-"text": 784
-},
-"person/hundar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 286,
-"text": 734
-},
-"person/huor.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 367,
-"text": 994
-},
-"person/hurin.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 391,
-"text": 1260
-},
-"person/hurin1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 355,
-"text": 911
-},
-"person/hurin2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 290,
-"text": 761
-},
-"person/hurin_e.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 818
-},
-"person/hyarmendacil1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 844
-},
-"person/hyarmendacil2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 773
-},
-"person/idril.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 310,
-"text": 855
-},
-"person/imrahil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 886
-},
-"person/imrazor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 327,
-"text": 859
-},
-"person/indis.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 328,
-"text": 900
-},
-"person/inzilbeth.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 375,
-"text": 971
-},
-"person/irime.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 300,
-"text": 858
-},
-"person/irmo.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
-"text": 970
-},
-"person/isildur.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 378,
-"text": 1093
-},
-"person/isilme.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 366,
-"text": 881
-},
-"person/isilmo.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 811
-},
-"person/ivorwen.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 843
-},
-"person/kili.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 292,
-"text": 803
-},
-"person/lalaith.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 290,
-"text": 826
-},
-"person/largo.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 344,
-"text": 894
-},
-"person/laura.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 313,
-"text": 891
-},
-"person/legolas.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 359,
-"text": 905
-},
-"person/leod.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 310,
-"text": 870
-},
-"person/lily_c.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 177,
-"text": 454
-},
-"person/lindorie.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 311,
-"text": 879
-},
-"person/lobelia.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 372,
-"text": 954
-},
-"person/longo.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 282,
-"text": 856
-},
-"person/lothiriel.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 348,
-"text": 928
-},
-"person/lotho.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 372,
-"text": 948
-},
-"person/luthien.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 400,
-"text": 1001
-},
-"person/maedhros.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 383,
-"text": 1362
-},
-"person/maeglin.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 313,
-"text": 859
-},
-"person/maglor.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 389,
-"text": 1338
-},
-"person/magor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 349,
-"text": 899
-},
-"person/mahtan.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 293,
-"text": 682
-},
-"person/malach.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 304,
-"text": 772
-},
-"person/mallor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 279,
-"text": 804
-},
-"person/malvegil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 320,
-"text": 805
-},
-"person/manwe.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 348,
-"text": 954
-},
-"person/marach.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 300,
-"text": 780
-},
-"person/mardil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 328,
-"text": 868
-},
-"person/marigold.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 211,
-"text": 473
-},
-"person/melian.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 413,
-"text": 862
-},
-"person/melkor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 348,
-"text": 944
-},
-"person/meneldil.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 388,
-"text": 1033
-},
-"person/merry.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 328,
-"text": 935
-},
-"person/minardil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 324,
-"text": 868
-},
-"person/minastan.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 372,
-"text": 914
-},
-"person/minohtar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 857
-},
-"person/mirabella.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
-"text": 947
-},
-"person/miriel.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 348,
-"text": 980
-},
-"person/miriel_n.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 325,
-"text": 899
-},
-"person/mithrellas.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 300,
-"text": 900
-},
-"person/morwen.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 321,
-"text": 834
-},
-"person/morwen_l.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 316,
-"text": 840
-},
-"person/mungo.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 803
-},
-"person/nain1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 348,
-"text": 940
-},
-"person/nain2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 348,
-"text": 872
-},
-"person/nain_d.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 349,
-"text": 934
-},
-"person/namo.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 359,
-"text": 967
-},
-"person/narmacil1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 933
-},
-"person/narmacil2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 293,
-"text": 881
-},
-"person/nerdanel.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 276,
-"text": 750
-},
-"person/nessa.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 354,
-"text": 932
-},
-"person/nienna.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 839
-},
-"person/nienor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 328,
-"text": 970
-},
-"person/nimloth_e.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 396,
-"text": 867
-},
-"person/nimrodel.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 352,
-"text": 907
-},
-"person/numendil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 368,
-"text": 890
-},
-"person/nuneth.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 273,
-"text": 738
-},
-"person/odovacar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
 "text": 816
 },
-"person/oin_d.html": {
-"hold": 676,
+"person/gwindor.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 341,
-"text": 886
+"notes": 310,
+"text": 852
 },
-"person/oin_k.html": {
-"hold": 676,
+"person/hador.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 177,
-"text": 459
+"notes": 328,
+"text": 994
 },
-"person/olwe.html": {
-"hold": 676,
+"person/hador_s.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 354,
-"text": 887
+"notes": 388,
+"text": 1078
 },
-"person/ondoher.html": {
-"hold": 676,
+"person/halbarad.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 355,
-"text": 944
+"notes": 297,
+"text": 830
 },
-"person/ornendil.html": {
-"hold": 676,
+"person/haldad.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 362,
-"text": 972
+"notes": 372,
+"text": 859
 },
-"person/orodreth.html": {
-"hold": 676,
+"person/haldan.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 396,
-"text": 928
+"notes": 300,
+"text": 794
 },
-"person/orodreth_s.html": {
-"hold": 676,
+"person/haldar.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 323,
+"text": 793
+},
+"person/haldir.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 352,
+"text": 805
+},
+"person/haleth.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 334,
+"text": 899
+},
+"person/haleth_r.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 197,
+"text": 581
+},
+"person/hallacar.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 324,
-"text": 804
+"text": 971
 },
-"person/orome.html": {
-"hold": 676,
+"person/hallas.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 359,
+"text": 993
+},
+"person/hallatan.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 873
+},
+"person/halmir.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 348,
-"text": 954
+"text": 766
 },
-"person/oropher.html": {
-"hold": 676,
+"person/hama_r.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 290,
-"text": 807
+"notes": 327,
+"text": 902
 },
-"person/osse.html": {
-"hold": 676,
+"person/hamfast.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 368,
-"text": 928
+"notes": 296,
+"text": 870
 },
-"person/ostoher.html": {
-"hold": 676,
+"person/handir.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 348,
-"text": 837
+"notes": 324,
+"text": 852
 },
-"person/otho.html": {
-"hold": 676,
+"person/hareth.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 311,
+"text": 788
+},
+"person/hathol.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 848
+},
+"person/helm.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 334,
+"text": 925
+},
+"person/herion.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 279,
+"text": 858
+},
+"person/herucalmo.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 880
+},
+"person/hild.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 331,
+"text": 907
+},
+"person/hildigrim.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 277,
+"text": 792
+},
+"person/hiril.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 300,
+"text": 765
+},
+"person/holfast.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 311,
+"text": 792
+},
+"person/hundar.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 276,
+"text": 748
+},
+"person/huor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 374,
+"text": 995
+},
+"person/hurin.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 413,
+"text": 1222
+},
+"person/hurin1.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 341,
-"text": 912
+"text": 943
 },
-"person/paladin.html": {
-"hold": 676,
+"person/hurin2.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 354,
-"text": 905
+"notes": 279,
+"text": 826
 },
-"person/pelendur.html": {
-"hold": 676,
+"person/hurin_e.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 338,
+"notes": 290,
+"text": 872
+},
+"person/hyarmendacil1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 290,
+"text": 927
+},
+"person/hyarmendacil2.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 277,
+"text": 845
+},
+"person/idril.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 296,
+"text": 889
+},
+"person/imrahil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 324,
+"text": 866
+},
+"person/imrazor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 300,
+"text": 864
+},
+"person/indis.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 328,
+"text": 916
+},
+"person/inzilbeth.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 362,
+"text": 942
+},
+"person/irime.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 290,
+"text": 836
+},
+"person/irmo.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 331,
+"text": 939
+},
+"person/isildur.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 388,
+"text": 1134
+},
+"person/isilme.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 352,
+"text": 878
+},
+"person/isilmo.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 818
+},
+"person/ivorwen.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 334,
+"text": 816
+},
+"person/kili.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 290,
+"text": 825
+},
+"person/lalaith.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 277,
+"text": 866
+},
+"person/largo.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 328,
+"text": 886
+},
+"person/laura.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 300,
 "text": 874
 },
-"person/pharazon.html": {
-"hold": 676,
+"person/legolas.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 359,
+"text": 928
+},
+"person/leod.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 296,
+"text": 839
+},
+"person/lily_c.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 174,
+"text": 502
+},
+"person/lindorie.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 286,
+"text": 872
+},
+"person/lobelia.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 359,
+"text": 928
+},
+"person/longo.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 280,
+"text": 857
+},
+"person/lothiriel.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 334,
+"text": 937
+},
+"person/lotho.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 372,
+"text": 962
+},
+"person/luthien.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 430,
+"text": 1056
+},
+"person/maedhros.html": {
+"hold": 769,
 "leaves": 4,
-"notes": 348,
+"notes": 410,
+"text": 1290
+},
+"person/maeglin.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 300,
+"text": 898
+},
+"person/maglor.html": {
+"hold": 769,
+"leaves": 4,
+"notes": 421,
+"text": 1289
+},
+"person/magor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 335,
+"text": 921
+},
+"person/mahtan.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 287,
+"text": 774
+},
+"person/malach.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 280,
+"text": 799
+},
+"person/mallor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 263,
+"text": 807
+},
+"person/malvegil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 303,
+"text": 807
+},
+"person/manwe.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 345,
+"text": 935
+},
+"person/marach.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 280,
+"text": 797
+},
+"person/mardil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 325,
+"text": 932
+},
+"person/marigold.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 204,
+"text": 503
+},
+"person/melian.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 399,
+"text": 932
+},
+"person/melkor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 345,
+"text": 921
+},
+"person/meneldil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 392,
+"text": 1068
+},
+"person/merry.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 328,
+"text": 916
+},
+"person/minardil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 297,
+"text": 913
+},
+"person/minastan.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 355,
+"text": 966
+},
+"person/minohtar.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 311,
+"text": 906
+},
+"person/mirabella.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 318,
+"text": 936
+},
+"person/miriel.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 345,
+"text": 971
+},
+"person/miriel_n.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 311,
+"text": 912
+},
+"person/mithrellas.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 277,
+"text": 899
+},
+"person/morwen.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 823
+},
+"person/morwen_l.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 885
+},
+"person/mungo.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 815
+},
+"person/nain1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 345,
+"text": 915
+},
+"person/nain2.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 345,
+"text": 866
+},
+"person/nain_d.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 349,
+"text": 921
+},
+"person/namo.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 359,
+"text": 963
+},
+"person/narmacil1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 310,
+"text": 958
+},
+"person/narmacil2.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 277,
+"text": 935
+},
+"person/nerdanel.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 262,
+"text": 770
+},
+"person/nessa.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 341,
+"text": 937
+},
+"person/nienna.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 335,
+"text": 850
+},
+"person/nienor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 317,
+"text": 998
+},
+"person/nimloth_e.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 371,
+"text": 862
+},
+"person/nimrodel.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 338,
+"text": 918
+},
+"person/numendil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 355,
+"text": 884
+},
+"person/nuneth.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 245,
+"text": 773
+},
+"person/odovacar.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 803
+},
+"person/oin_d.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 327,
+"text": 893
+},
+"person/oin_k.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 174,
+"text": 502
+},
+"person/olwe.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 341,
+"text": 894
+},
+"person/ondoher.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 327,
+"text": 1000
+},
+"person/ornendil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 359,
+"text": 1004
+},
+"person/orodreth.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 392,
+"text": 909
+},
+"person/orodreth_s.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 313,
+"text": 867
+},
+"person/orome.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 345,
+"text": 934
+},
+"person/oropher.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 277,
+"text": 805
+},
+"person/osse.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 358,
+"text": 913
+},
+"person/ostoher.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 335,
+"text": 919
+},
+"person/otho.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 331,
+"text": 889
+},
+"person/paladin.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 341,
+"text": 927
+},
+"person/pelendur.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 320,
+"text": 916
+},
+"person/pharazon.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 383,
 "text": 1031
 },
 "person/pippin.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 328,
-"text": 895
-},
-"person/primula.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 293,
-"text": 826
-},
-"person/rian.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 355,
-"text": 940
-},
-"person/romendacil1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 351,
-"text": 910
-},
-"person/romendacil2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 375,
-"text": 968
-},
-"person/rorimac.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 310,
-"text": 892
-},
-"person/rosamunda.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 325,
-"text": 879
-},
-"person/rosie.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 303,
-"text": 849
-},
-"person/sam.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 956
-},
-"person/sangahyando.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 359,
-"text": 933
-},
-"person/saradoc.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 921
-},
-"person/silmarien.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 328,
-"text": 908
-},
-"person/siriondil2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 170,
-"text": 437
-},
-"person/siriondil_g.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 317,
-"text": 833
-},
-"person/smeagol.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 349,
-"text": 1103
-},
-"person/smeagrandma.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 286,
-"text": 761
-},
-"person/tanta.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 239,
-"text": 690
-},
-"person/taralcarin.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 286,
-"text": 827
-},
-"person/taraldarion.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 316,
-"text": 889
-},
-"person/taramandil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 279,
-"text": 796
-},
-"person/taranarion.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 282,
-"text": 851
-},
-"person/tarancalime.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
-"text": 965
-},
-"person/tarancalimon.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 864
-},
-"person/tarardamin.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 276,
-"text": 811
-},
-"person/taratanamir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 283,
-"text": 801
-},
-"person/tarcalmacil2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 289,
-"text": 838
-},
-"person/tarcil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
-"text": 887
-},
-"person/tarciryan.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 321,
-"text": 810
-},
-"person/tarciryatan.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 334,
-"text": 870
-},
-"person/tarelendil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 813
-},
-"person/tarmeneldur.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 293,
-"text": 842
-},
-"person/tarminastir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 899
-},
-"person/tarondor_a.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 187,
-"text": 440
-},
-"person/tarondor_g.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 198,
-"text": 499
-},
-"person/tarpalantir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 269,
-"text": 755
-},
-"person/tarsurion.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 286,
-"text": 824
-},
-"person/tartelemmaite.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 286,
-"text": 864
-},
-"person/tartelperien.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 304,
-"text": 845
-},
-"person/tarvanimelde.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 303,
-"text": 895
-},
-"person/telemnar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 334,
-"text": 863
-},
-"person/telumehtar.html": {
-"hold": 676,
+"hold": 769,
 "leaves": 2,
 "notes": 314,
-"text": 834
+"text": 927
 },
-"person/thengel.html": {
-"hold": 676,
+"person/primula.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 324,
-"text": 886
+"notes": 280,
+"text": 793
 },
-"person/theoden.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 388,
-"text": 1051
-},
-"person/theodred.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 358,
-"text": 956
-},
-"person/theodwyn.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 842
-},
-"person/thorin.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 255,
-"text": 709
-},
-"person/thorin1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 909
-},
-"person/thorin3.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 269,
-"text": 712
-},
-"person/thorondir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 327,
-"text": 865
-},
-"person/thrain1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 348,
-"text": 929
-},
-"person/thrain2.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 334,
-"text": 908
-},
-"person/thranduil.html": {
-"hold": 676,
+"person/rian.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 341,
-"text": 912
+"text": 923
 },
-"person/thror.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 359,
-"text": 947
-},
-"person/tolman_c.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 214,
-"text": 566
-},
-"person/tomcotton_y.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 177,
-"text": 466
-},
-"person/tulkas.html": {
-"hold": 676,
+"person/romendacil1.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 317,
-"text": 872
+"text": 957
 },
-"person/tuor.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 376,
-"text": 979
-},
-"person/turambar_g.html": {
-"hold": 676,
+"person/romendacil2.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 378,
-"text": 963
+"notes": 345,
+"text": 991
 },
-"person/turgon.html": {
-"hold": 676,
+"person/rorimac.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 399,
-"text": 948
+"notes": 296,
+"text": 880
 },
-"person/turgon_s.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 369,
-"text": 935
-},
-"person/turin.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 381,
-"text": 1074
-},
-"person/turin1.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 324,
-"text": 867
-},
-"person/turin2.html": {
-"hold": 676,
+"person/rosamunda.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 325,
-"text": 850
+"text": 871
 },
-"person/uinen.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 361,
-"text": 866
-},
-"person/ulmo.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 402,
-"text": 1019
-},
-"person/vaire.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 310,
-"text": 842
-},
-"person/valacar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
-"text": 881
-},
-"person/valandil_a.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 297,
-"text": 786
-},
-"person/valandil_k.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 374,
-"text": 943
-},
-"person/valandur.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 327,
-"text": 800
-},
-"person/vana.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 331,
-"text": 860
-},
-"person/varda.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 361,
-"text": 941
-},
-"person/vardamir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 351,
-"text": 928
-},
-"person/veantur.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 313,
-"text": 941
-},
-"person/vidugavia.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 313,
-"text": 836
-},
-"person/vidumavi.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 347,
-"text": 859
-},
-"person/vorondil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 348,
-"text": 944
-},
-"person/voronwe.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 373,
-"text": 983
-},
-"person/walda.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 310,
-"text": 842
-},
-"person/yavanna.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 348,
-"text": 859
-},
-"place/amon_ereb.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 225,
-"text": 708
-},
-"place/amon_rudh.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 850
-},
-"place/anfauglith.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 246,
-"text": 701
-},
-"place/angband.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 418,
-"text": 890
-},
-"place/annuminas.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 246,
-"text": 751
-},
-"place/barad_dur.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
-"text": 926
-},
-"place/barrow_downs.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 215,
-"text": 740
-},
-"place/belegost.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 320,
-"text": 800
-},
-"place/bree.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 181,
-"text": 686
-},
-"place/brethil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 331,
-"text": 819
-},
-"place/brithombar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 326,
-"text": 767
-},
-"place/buckland_crickhollow.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 201,
-"text": 728
-},
-"place/cair_andros.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 215,
-"text": 676
-},
-"place/caradhras.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 232,
-"text": 774
-},
-"place/caras_galadhon.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 354,
-"text": 941
-},
-"place/carn_dum.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 224,
-"text": 700
-},
-"place/cirith_ungol.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 303,
-"text": 819
-},
-"place/dale.html": {
-"hold": 676,
+"person/rosie.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 293,
 "text": 877
 },
-"place/dimrill_dale.html": {
-"hold": 676,
+"person/sam.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 194,
-"text": 673
+"notes": 314,
+"text": 926
 },
-"place/dol_amroth.html": {
-"hold": 676,
+"person/sangahyando.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 260,
-"text": 666
+"notes": 355,
+"text": 922
 },
-"place/dol_guldur.html": {
-"hold": 676,
+"person/saradoc.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 255,
-"text": 836
+"notes": 303,
+"text": 902
 },
-"place/dunharrow.html": {
-"hold": 676,
+"person/silmarien.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 218,
-"text": 747
+"notes": 317,
+"text": 910
 },
-"place/edoras.html": {
-"hold": 676,
+"person/siriondil2.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 352,
-"text": 883
+"notes": 146,
+"text": 518
 },
-"place/eglarest.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 326,
-"text": 769
-},
-"place/eithel_sirion.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 246,
-"text": 695
-},
-"place/erebor.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 327,
-"text": 857
-},
-"place/ered_gorgoroth.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 320,
-"text": 823
-},
-"place/esgaroth.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 249,
-"text": 822
-},
-"place/estolad.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 259,
-"text": 748
-},
-"place/ettenmoors.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 300,
-"text": 802
-},
-"place/fangorn.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 331,
-"text": 925
-},
-"place/field_of_celebrant.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 245,
-"text": 801
-},
-"place/ford_of_bruinen.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 181,
-"text": 655
-},
-"place/fords_of_isen.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 194,
-"text": 651
-},
-"place/fornost.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 258,
-"text": 835
-},
-"place/framsburg.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 184,
-"text": 638
-},
-"place/gladden_fields.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 323,
-"text": 861
-},
-"place/gondolin.html": {
-"hold": 656,
-"leaves": 2,
-"notes": 320,
-"text": 933
-},
-"place/greenfields.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 184,
-"text": 671
-},
-"place/grey_havens.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 246,
-"text": 759
-},
-"place/haudh_en_ndengin.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 225,
-"text": 657
-},
-"place/havens_of_sirion.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 228,
-"text": 721
-},
-"place/helm_s_deep.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 211,
-"text": 687
-},
-"place/henneth_annun.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 262,
-"text": 753
-},
-"place/himring.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 249,
-"text": 751
-},
-"place/hobbiton.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 215,
-"text": 758
-},
-"place/ice_bay_of_forochel.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 214,
-"text": 597
-},
-"place/isengard.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 358,
-"text": 993
-},
-"place/isle_of_balar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 299,
-"text": 761
-},
-"place/ivrin.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 249,
-"text": 754
-},
-"place/lake_helevorn.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 181,
-"text": 670
-},
-"place/losgar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 181,
-"text": 627
-},
-"place/menegroth.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
-"text": 903
-},
-"place/michel_delving.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 215,
-"text": 727
-},
-"place/minas_morgul.html": {
-"hold": 676,
+"person/siriondil_g.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 290,
-"text": 754
+"text": 883
 },
-"place/minas_tirith.html": {
-"hold": 676,
+"person/smeagol.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 317,
-"text": 869
+"notes": 354,
+"text": 1104
 },
-"place/moria.html": {
-"hold": 676,
+"person/smeagrandma.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 259,
-"text": 773
+"notes": 276,
+"text": 783
 },
-"place/mount_doom.html": {
-"hold": 676,
+"person/tanta.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 201,
-"text": 681
+"notes": 225,
+"text": 684
 },
-"place/mount_gram.html": {
-"hold": 676,
+"person/taralcarin.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 167,
-"text": 604
-},
-"place/mount_gundabad.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 184,
-"text": 663
-},
-"place/nan_elmoth.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 299,
-"text": 778
-},
-"place/nargothrond.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 228,
-"text": 789
-},
-"place/nogrod.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 320,
+"notes": 276,
 "text": 815
 },
-"place/nurn_sea_of_nurnen.html": {
-"hold": 676,
+"person/taraldarion.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 177,
-"text": 622
+"notes": 303,
+"text": 882
 },
-"place/osgiliath.html": {
-"hold": 676,
+"person/taramandil.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 340,
-"text": 869
+"notes": 277,
+"text": 793
 },
-"place/ost_in_edhil.html": {
-"hold": 676,
+"person/taranarion.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 317,
-"text": 810
+"notes": 280,
+"text": 823
 },
-"place/parth_galen.html": {
-"hold": 676,
+"person/tarancalime.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 201,
-"text": 750
+"notes": 328,
+"text": 941
 },
-"place/pelargir.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 225,
-"text": 683
-},
-"place/rhosgobel.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 225,
-"text": 656
-},
-"place/rivendell.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 321,
-"text": 865
-},
-"place/sarn_athrad.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 259,
-"text": 751
-},
-"place/sea_of_rhun.html": {
-"hold": 676,
+"person/tarancalimon.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 293,
-"text": 860
+"text": 856
 },
-"place/taur_im_duinath.html": {
-"hold": 676,
+"person/tarardamin.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 212,
-"text": 656
+"notes": 263,
+"text": 797
 },
-"place/tharbad.html": {
-"hold": 676,
+"person/taratanamir.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 225,
-"text": 683
+"notes": 273,
+"text": 797
 },
-"place/the_argonath.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 321,
-"text": 863
-},
-"place/the_carrock.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 894
-},
-"place/the_dead_marshes.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 215,
-"text": 753
-},
-"place/the_elvenking_s_halls.html": {
-"hold": 676,
+"person/tarcalmacil2.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 286,
-"text": 866
+"text": 829
 },
-"place/the_high_pass.html": {
-"hold": 676,
+"person/tarcil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 313,
+"text": 910
+},
+"person/tarciryan.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 873
+},
+"person/tarciryatan.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 324,
+"text": 856
+},
+"person/tarelendil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 293,
+"text": 858
+},
+"person/tarmeneldur.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 280,
+"text": 840
+},
+"person/tarminastir.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 324,
+"text": 893
+},
+"person/tarondor_a.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 177,
+"text": 484
+},
+"person/tarondor_g.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 184,
+"text": 583
+},
+"person/tarpalantir.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 259,
-"text": 778
+"text": 753
 },
-"place/the_iron_hills.html": {
-"hold": 676,
+"person/tarsurion.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 238,
-"text": 692
+"notes": 276,
+"text": 816
 },
-"place/the_morannon.html": {
-"hold": 676,
+"person/tartelemmaite.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 246,
-"text": 759
+"notes": 276,
+"text": 845
 },
-"place/the_old_forest.html": {
-"hold": 676,
+"person/tartelperien.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 245,
-"text": 798
+"notes": 300,
+"text": 828
 },
-"place/the_stone_of_erech.html": {
-"hold": 676,
+"person/tarvanimelde.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 212,
-"text": 740
+"notes": 293,
+"text": 886
 },
-"place/the_undeeps.html": {
-"hold": 676,
+"person/telemnar.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 228,
-"text": 760
+"notes": 310,
+"text": 910
 },
-"place/tol_galen.html": {
-"hold": 676,
+"person/telumehtar.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 249,
-"text": 724
+"notes": 297,
+"text": 889
 },
-"place/tol_sirion.html": {
-"hold": 676,
+"person/thengel.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 321,
+"text": 933
+},
+"person/theoden.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 386,
+"text": 1077
+},
+"person/theodred.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 347,
+"text": 992
+},
+"person/theodwyn.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 303,
+"text": 925
+},
+"person/thorin.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 252,
+"text": 718
+},
+"person/thorin1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 328,
+"text": 890
+},
+"person/thorin3.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 259,
+"text": 733
+},
+"person/thorondir.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 310,
+"text": 920
+},
+"person/thrain1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 345,
+"text": 941
+},
+"person/thrain2.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 324,
+"text": 904
+},
+"person/thranduil.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 313,
+"text": 893
+},
+"person/thror.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 348,
+"text": 932
+},
+"person/tolman_c.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 211,
+"text": 565
+},
+"person/tomcotton_y.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 174,
+"text": 488
+},
+"person/tulkas.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 314,
+"text": 874
+},
+"person/tuor.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 392,
+"text": 1031
+},
+"person/turambar_g.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 362,
+"text": 1009
+},
+"person/turgon.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 382,
+"text": 970
+},
+"person/turgon_s.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 363,
+"text": 983
+},
+"person/turin.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 383,
+"text": 1070
+},
+"person/turin1.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 310,
+"text": 924
+},
+"person/turin2.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 314,
+"text": 899
+},
+"person/uinen.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 348,
+"text": 860
+},
+"person/ulmo.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 399,
+"text": 1042
+},
+"person/vaire.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 296,
+"text": 850
+},
+"person/valacar.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 313,
+"text": 939
+},
+"person/valandil_a.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 283,
+"text": 777
+},
+"person/valandil_k.html": {
+"hold": 769,
+"leaves": 2,
+"notes": 362,
+"text": 930
+},
+"person/valandur.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 320,
 "text": 831
 },
-"place/tower_hills.html": {
-"hold": 676,
+"person/vana.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 318,
-"text": 811
+"text": 862
 },
-"place/trollshaws.html": {
-"hold": 676,
+"person/varda.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 286,
-"text": 738
+"notes": 359,
+"text": 958
 },
-"place/vinyamar.html": {
-"hold": 676,
+"person/vardamir.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 252,
-"text": 717
+"notes": 328,
+"text": 930
 },
-"place/weathertop.html": {
-"hold": 676,
+"person/veantur.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 307,
-"text": 874
+"notes": 300,
+"text": 928
 },
-"place/withered_heath.html": {
-"hold": 676,
+"person/vidugavia.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 307,
-"text": 813
+"notes": 300,
+"text": 843
 },
-"realm/alqualonde.html": {
-"hold": 676,
+"person/vidumavi.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 361,
-"text": 979
-},
-"realm/angband.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 378,
-"text": 1152
-},
-"realm/angmar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 307,
-"text": 940
-},
-"realm/arnor.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 361,
-"text": 1071
-},
-"realm/arthedain.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 345,
-"text": 979
-},
-"realm/balar.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 340,
-"text": 942
-},
-"realm/belegost.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
+"notes": 334,
 "text": 913
 },
-"realm/beornings.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 352,
-"text": 997
-},
-"realm/bombadil.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 249,
-"text": 926
-},
-"realm/bree.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 280,
-"text": 939
-},
-"realm/brethil.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 351,
-"text": 1040
-},
-"realm/cardolan.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 259,
-"text": 844
-},
-"realm/dale.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 341,
-"text": 1003
-},
-"realm/dolguldur.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 279,
-"text": 980
-},
-"realm/doriath.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 368,
-"text": 1030
-},
-"realm/dorlomin.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 361,
-"text": 1122
-},
-"realm/dorthonion.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 238,
-"text": 757
-},
-"realm/dorwinion.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 231,
-"text": 822
-},
-"realm/druadan.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 263,
-"text": 922
-},
-"realm/dunland.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 310,
-"text": 913
-},
-"realm/easterlingsfa.html": {
-"hold": 676,
+"person/vorondil.html": {
+"hold": 769,
 "leaves": 2,
 "notes": 331,
-"text": 943
+"text": 991
 },
-"realm/eotheod.html": {
-"hold": 676,
+"person/voronwe.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 260,
-"text": 823
-},
-"realm/erebor.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 361,
-"text": 1091
-},
-"realm/eregion.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 379,
-"text": 1127
-},
-"realm/esgaroth.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 263,
-"text": 953
-},
-"realm/falas.html": {
-"hold": 676,
-"leaves": 4,
 "notes": 365,
-"text": 1041
+"text": 983
 },
-"realm/fangorn.html": {
-"hold": 676,
+"person/walda.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 354,
-"text": 996
+"notes": 296,
+"text": 903
 },
-"realm/gondolin.html": {
-"hold": 656,
-"leaves": 4,
-"notes": 358,
-"text": 1190
-},
-"realm/gondor.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 381,
-"text": 1186
-},
-"realm/greenwood.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 364,
-"text": 1100
-},
-"realm/harad.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 361,
-"text": 1046
-},
-"realm/himring.html": {
-"hold": 676,
+"person/yavanna.html": {
+"hold": 769,
 "leaves": 2,
-"notes": 260,
-"text": 823
+"notes": 345,
+"text": 887
 },
-"realm/hithlum.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 338,
-"text": 1000
-},
-"realm/ironhills.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 258,
-"text": 761
-},
-"realm/isengard.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 392,
-"text": 1122
-},
-"realm/khand.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 272,
-"text": 727
-},
-"realm/khazaddum.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 338,
-"text": 1073
-},
-"realm/ladros.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 365,
-"text": 1087
-},
-"realm/lindon.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 361,
-"text": 986
-},
-"realm/lorien.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 392,
-"text": 1161
-},
-"realm/lossoth.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 80,
-"text": 439
-},
-"realm/mistyorcs.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 172,
-"text": 538
-},
-"realm/mordor.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 392,
-"text": 1166
-},
-"realm/morgul.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 325,
-"text": 941
-},
-"realm/nargothrond.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 280,
-"text": 1020
-},
-"realm/nogrod.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 324,
-"text": 855
-},
-"realm/numenor.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 358,
-"text": 1209
-},
-"realm/ossiriand.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 249,
-"text": 871
-},
-"realm/reunited.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 249,
-"text": 940
-},
-"realm/rhudaur.html": {
-"hold": 676,
-"leaves": 2,
-"notes": 259,
-"text": 917
-},
-"realm/rhun.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 354,
-"text": 1040
-},
-"realm/rivendell.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 350,
-"text": 1072
-},
-"realm/rohan.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 358,
-"text": 1116
-},
-"realm/shire.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 350,
-"text": 1183
-},
-"realm/thargelion.html": {
-"hold": 676,
+"place/amon_ereb.html": {
+"hold": 764,
 "leaves": 2,
 "notes": 225,
-"text": 781
+"text": 798
 },
-"realm/tirion.html": {
-"hold": 676,
+"place/amon_rudh.html": {
+"hold": 764,
 "leaves": 2,
-"notes": 320,
-"text": 965
+"notes": 314,
+"text": 890
 },
-"realm/umbar.html": {
-"hold": 676,
-"leaves": 4,
-"notes": 366,
-"text": 1020
+"place/anfauglith.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 233,
+"text": 785
 },
-"realm/utumno.html": {
-"hold": 676,
+"place/angband.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 388,
+"text": 930
+},
+"place/annuminas.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 232,
+"text": 816
+},
+"place/barad_dur.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 328,
+"text": 939
+},
+"place/barrow_downs.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 215,
+"text": 822
+},
+"place/belegost.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 303,
+"text": 840
+},
+"place/bree.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 181,
+"text": 742
+},
+"place/brethil.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 306,
+"text": 850
+},
+"place/brithombar.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 312,
+"text": 818
+},
+"place/buckland_crickhollow.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 201,
+"text": 801
+},
+"place/cair_andros.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 215,
+"text": 741
+},
+"place/caradhras.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 232,
+"text": 822
+},
+"place/caras_galadhon.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 324,
+"text": 989
+},
+"place/carn_dum.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 215,
+"text": 743
+},
+"place/cirith_ungol.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 290,
+"text": 863
+},
+"place/dale.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 280,
+"text": 924
+},
+"place/dimrill_dale.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 195,
+"text": 755
+},
+"place/dol_amroth.html": {
+"hold": 764,
 "leaves": 2,
 "notes": 249,
-"text": 820
+"text": 702
 },
-"realm/valinor.html": {
-"hold": 676,
+"place/dol_guldur.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 245,
+"text": 877
+},
+"place/dunharrow.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 218,
+"text": 796
+},
+"place/edoras.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 324,
+"text": 911
+},
+"place/eglarest.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 312,
+"text": 816
+},
+"place/eithel_sirion.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 233,
+"text": 769
+},
+"place/erebor.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 314,
+"text": 881
+},
+"place/ered_gorgoroth.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 303,
+"text": 865
+},
+"place/esgaroth.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 249,
+"text": 902
+},
+"place/estolad.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 246,
+"text": 834
+},
+"place/ettenmoors.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 286,
+"text": 839
+},
+"place/fangorn.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 314,
+"text": 925
+},
+"place/field_of_celebrant.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 246,
+"text": 846
+},
+"place/ford_of_bruinen.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 181,
+"text": 695
+},
+"place/fords_of_isen.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 181,
+"text": 744
+},
+"place/fornost.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 249,
+"text": 896
+},
+"place/framsburg.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 160,
+"text": 683
+},
+"place/gladden_fields.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 293,
+"text": 907
+},
+"place/gondolin.html": {
+"hold": 744,
+"leaves": 2,
+"notes": 306,
+"text": 916
+},
+"place/greenfields.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 184,
+"text": 702
+},
+"place/grey_havens.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 246,
+"text": 811
+},
+"place/haudh_en_ndengin.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 215,
+"text": 716
+},
+"place/havens_of_sirion.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 202,
+"text": 808
+},
+"place/helm_s_deep.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 212,
+"text": 772
+},
+"place/henneth_annun.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 246,
+"text": 808
+},
+"place/himring.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 246,
+"text": 806
+},
+"place/hobbiton.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 215,
+"text": 807
+},
+"place/ice_bay_of_forochel.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 197,
+"text": 675
+},
+"place/isengard.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 331,
+"text": 994
+},
+"place/isle_of_balar.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 277,
+"text": 814
+},
+"place/ivrin.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 249,
+"text": 812
+},
+"place/lake_helevorn.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 181,
+"text": 657
+},
+"place/losgar.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 181,
+"text": 683
+},
+"place/menegroth.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 324,
+"text": 921
+},
+"place/michel_delving.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 212,
+"text": 792
+},
+"place/minas_morgul.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 290,
+"text": 788
+},
+"place/minas_tirith.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 304,
+"text": 917
+},
+"place/moria.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 246,
+"text": 813
+},
+"place/mount_doom.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 201,
+"text": 749
+},
+"place/mount_gram.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 167,
+"text": 668
+},
+"place/mount_gundabad.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 184,
+"text": 702
+},
+"place/nan_elmoth.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 290,
+"text": 814
+},
+"place/nargothrond.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 228,
+"text": 838
+},
+"place/nogrod.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 306,
+"text": 863
+},
+"place/nurn_sea_of_nurnen.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 178,
+"text": 661
+},
+"place/osgiliath.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 327,
+"text": 921
+},
+"place/ost_in_edhil.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 303,
+"text": 839
+},
+"place/parth_galen.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 201,
+"text": 821
+},
+"place/pelargir.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 215,
+"text": 763
+},
+"place/rhosgobel.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 225,
+"text": 668
+},
+"place/rivendell.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 296,
+"text": 877
+},
+"place/sarn_athrad.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 259,
+"text": 819
+},
+"place/sea_of_rhun.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 280,
+"text": 869
+},
+"place/taur_im_duinath.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 212,
+"text": 676
+},
+"place/tharbad.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 215,
+"text": 752
+},
+"place/the_argonath.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 296,
+"text": 899
+},
+"place/the_carrock.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 289,
+"text": 895
+},
+"place/the_dead_marshes.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 201,
+"text": 807
+},
+"place/the_elvenking_s_halls.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 273,
+"text": 889
+},
+"place/the_high_pass.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 247,
+"text": 830
+},
+"place/the_iron_hills.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 225,
+"text": 733
+},
+"place/the_morannon.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 246,
+"text": 793
+},
+"place/the_old_forest.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 233,
+"text": 845
+},
+"place/the_stone_of_erech.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 212,
+"text": 784
+},
+"place/the_undeeps.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 215,
+"text": 791
+},
+"place/tol_galen.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 246,
+"text": 796
+},
+"place/tol_sirion.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 303,
+"text": 853
+},
+"place/tower_hills.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 304,
+"text": 863
+},
+"place/trollshaws.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 277,
+"text": 797
+},
+"place/vinyamar.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 228,
+"text": 805
+},
+"place/weathertop.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 293,
+"text": 907
+},
+"place/withered_heath.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 293,
+"text": 836
+},
+"realm/alqualonde.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 345,
+"text": 988
+},
+"realm/angband.html": {
+"hold": 764,
 "leaves": 4,
-"notes": 335,
+"notes": 399,
+"text": 1161
+},
+"realm/angmar.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 295,
+"text": 956
+},
+"realm/arnor.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 365,
+"text": 1120
+},
+"realm/arthedain.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 328,
+"text": 983
+},
+"realm/balar.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 317,
+"text": 979
+},
+"realm/belegost.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 328,
+"text": 943
+},
+"realm/beornings.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 327,
+"text": 1002
+},
+"realm/bombadil.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 249,
+"text": 974
+},
+"realm/bree.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 280,
+"text": 973
+},
+"realm/brethil.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 351,
+"text": 1072
+},
+"realm/cardolan.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 249,
+"text": 910
+},
+"realm/dale.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 327,
+"text": 1040
+},
+"realm/dolguldur.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 281,
+"text": 1013
+},
+"realm/doriath.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 382,
+"text": 1089
+},
+"realm/dorlomin.html": {
+"hold": 764,
+"leaves": 4,
+"notes": 391,
+"text": 1154
+},
+"realm/dorthonion.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 228,
+"text": 848
+},
+"realm/dorwinion.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 228,
+"text": 853
+},
+"realm/druadan.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 250,
+"text": 979
+},
+"realm/dunland.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 297,
+"text": 959
+},
+"realm/easterlingsfa.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 296,
+"text": 972
+},
+"realm/eotheod.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 250,
+"text": 917
+},
+"realm/erebor.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 411,
+"text": 1117
+},
+"realm/eregion.html": {
+"hold": 764,
+"leaves": 4,
+"notes": 392,
+"text": 1158
+},
+"realm/esgaroth.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 263,
+"text": 972
+},
+"realm/falas.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 379,
 "text": 1098
 },
-"realm/woodmen.html": {
-"hold": 676,
+"realm/fangorn.html": {
+"hold": 764,
 "leaves": 2,
-"notes": 256,
-"text": 719
+"notes": 341,
+"text": 1032
+},
+"realm/gondolin.html": {
+"hold": 744,
+"leaves": 4,
+"notes": 383,
+"text": 1177
+},
+"realm/gondor.html": {
+"hold": 764,
+"leaves": 4,
+"notes": 399,
+"text": 1226
+},
+"realm/greenwood.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 386,
+"text": 1123
+},
+"realm/harad.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 368,
+"text": 1109
+},
+"realm/himring.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 246,
+"text": 851
+},
+"realm/hithlum.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 325,
+"text": 1006
+},
+"realm/ironhills.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 245,
+"text": 816
+},
+"realm/isengard.html": {
+"hold": 764,
+"leaves": 4,
+"notes": 399,
+"text": 1137
+},
+"realm/khand.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 259,
+"text": 787
+},
+"realm/khazaddum.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 371,
+"text": 1092
+},
+"realm/ladros.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 376,
+"text": 1125
+},
+"realm/lindon.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 345,
+"text": 1017
+},
+"realm/lorien.html": {
+"hold": 764,
+"leaves": 4,
+"notes": 399,
+"text": 1167
+},
+"realm/lossoth.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 81,
+"text": 447
+},
+"realm/mistyorcs.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 160,
+"text": 606
+},
+"realm/mordor.html": {
+"hold": 764,
+"leaves": 4,
+"notes": 423,
+"text": 1189
+},
+"realm/morgul.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 325,
+"text": 946
+},
+"realm/nargothrond.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 280,
+"text": 1059
+},
+"realm/nogrod.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 311,
+"text": 898
+},
+"realm/numenor.html": {
+"hold": 764,
+"leaves": 4,
+"notes": 361,
+"text": 1254
+},
+"realm/ossiriand.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 249,
+"text": 939
+},
+"realm/reunited.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 249,
+"text": 975
+},
+"realm/rhudaur.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 249,
+"text": 973
+},
+"realm/rhun.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 341,
+"text": 1086
+},
+"realm/rivendell.html": {
+"hold": 764,
+"leaves": 4,
+"notes": 386,
+"text": 1149
+},
+"realm/rohan.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 368,
+"text": 1149
+},
+"realm/shire.html": {
+"hold": 764,
+"leaves": 4,
+"notes": 400,
+"text": 1199
+},
+"realm/thargelion.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 225,
+"text": 837
+},
+"realm/tirion.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 317,
+"text": 1004
+},
+"realm/umbar.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 372,
+"text": 1083
+},
+"realm/utumno.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 249,
+"text": 851
+},
+"realm/valinor.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 354,
+"text": 1109
+},
+"realm/woodmen.html": {
+"hold": 764,
+"leaves": 2,
+"notes": 242,
+"text": 771
 }
 },
 "what": "C53 measured page-fit: how many leaves each route's text needs"
