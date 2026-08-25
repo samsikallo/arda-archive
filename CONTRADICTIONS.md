@@ -5,11 +5,11 @@ Classes: **[draft evolution]** early vs late conception · **[editorial choice v
 ## The length of a Valian Year  
 *[unreconciled / intentional ambiguity]*
 
-Annals of Aman: 1 V.Y. = 9.582 sun-years, with Tolkien's own arithmetic; NoME's late time-schemes: 1 V.Y. = 144 sun-years.
+**Three** schemes, each in Tolkien's own hand. **×10** — the earliest Annals of Valinor: a Valian age "hath 100 of the years of the Valar, which are each as ten years are now" (AV 1), and again in AV 2, "each Valian year is as ten years of the Sun now are". **×9.582** — the *Annals of Aman*, with Tolkien's own arithmetic: the Valian Day of twelve Tree-hours, each seven of ours, is 84 hours; the Valian Year of a thousand such days is 84,000, "which is as much as three thousand and five hundred of our days, and is somewhat more than are nine and one half of our years (nine and one half and eight hundredths and yet a little)". **×144** — the late *Nature of Middle-earth* time-schemes: "144 Days in each Valian Year. But each Valian Year = 144 Mortal Years", which makes the Valian Year the Elvish yén and the Valian Day one löa.
 
-**Authority & handling:** Never reconciled — both are the Professor's own, decades apart. The archive computes with 9.582 and flags the alternative on every pre-Sun date.
+**Authority & handling:** Never reconciled — all three are the Professor's own, decades apart, and the archive resolves none of them. Two cited facts bear on the split without settling it. The ×10 and ×9.582 readings meet *inside one text*: Christopher Tolkien records that the AAm draft first read "even as are ten years of the Sun that is now" — the old computation running back through AV 2 to AV 1 — and that his father changed it on that draft to "longer than are nine years of the Sun that is now". And AAm keeps ×10 alive as an intention rather than a measure: the Valar meant "that ten years of the Sun, no more and no less, should be in length as one Year of the Trees had been", but "the Moon and Sun proved more wayward and slower in their passage than the Valar had intended". Neither fact touches ×144, which is a later and separate conception. The archive computes with ×9.582 and flags the alternatives on every pre-Sun date — **a declared editorial default, not a finding**; the hall shows all three in one table and one converter.
 
-*Sources & where displayed:* HoME X (AAm) vs NoME Pt I · shown in the timeline's epoch note
+*Sources & where displayed:* HoME IV (AV 1) and HoME V (AV 2) · HoME X, *Annals of Aman* §§7–9 with CT's note 6 · NoME Pt I · shown in the reckonings hall and the timeline's epoch note
 
 ## Gil-galad's father  
 *[editorial choice vs manuscript]*

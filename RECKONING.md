@@ -43,7 +43,7 @@ All Westron-line conversions run through the **Shire day-of-year** (1–365/366)
 | Shire ↔ ours, structural | equal day-of-year | [C]: "March 25 … would correspond to our March 27, if our years began at the same seasonal point" — and indeed our March 27 is day 86 |
 | Shire ↔ ours, seasonal | our day ≈ Shire day − 9 | [I-M] from [C]: Mid-year's Day ≈ summer solstice; "our New Year's Day corresponded more or less to the Shire January 9"; Shire dates "in advance of ours by some ten days" |
 | Year counts | S.R. = T.A. − 1600 · Bree = T.A. − 1299 · T.A. 1 = S.A. 3442 · Fo.A. 1 = T.A. 3021 · Kings' count from S.A. 1 | [C] App B/D |
-| Valian ↔ sun-years | ×10 (earliest Annals) / ×9.582 (AAm) / ×144 (NoME, = yén) | each [C] of its layer; **no final choice exists** — see CONTRADICTIONS.md §1. Archive default for AAm-dated annals: ×9.582, editorial. |
+| Valian ↔ sun-years | ×10 (earliest Annals) / ×9.582 (AAm) / ×144 (NoME, = yén) | each [C] of its layer; **no final choice exists** — see CONTRADICTIONS.md §1, *The length of a Valian Year*, which names all three. Archive default for AAm-dated annals: ×9.582, editorial. |
 
 **Declared limits [C-grounded]:** leap-days are handled structurally (Overlithe ↔ doubled enderi align only approximately — App D gives no day-level statement); no Middle-earth date maps to a real historical year (Gregorian equivalences are structural/seasonal only); exact cross-era day-alignment through the millennial corrections is not reconstructible beyond App D's summary and is not pretended to.
 
@@ -61,7 +61,7 @@ Shire: Yuletide (six days), the Lithedays, Overlithe (1420!), the **Free Fair** 
 
 ## 5 · Contradictions touched (displayed, not resolved)
 
-1. **Valian Year length** — 10 vs 9.582 vs 144 sun-years: already CONTRADICTIONS.md §1 (draft evolution); the hall shows all three in one table and converter.
+1. **Valian Year length** — 10 vs 9.582 vs 144 sun-years: already CONTRADICTIONS.md §1, *The length of a Valian Year* — classed there *[unreconciled / intentional ambiguity]*, not draft evolution; the hall shows all three in one table and converter.
 2. **PM "The Calendars" drafts** vs published App D — the drafts differ in detail (e.g. name-forms and arrangements changed "when the need to submit his text to the publishers became imperative"); published App D is adopted as final authority, drafts noted as background [editorial choice vs manuscript].
 3. Imladris↔Shire offset is Tolkien's own "more or less" — kept approximate, never sharpened.
 

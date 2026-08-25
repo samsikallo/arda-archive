@@ -213,7 +213,7 @@ Any charting tool can re-render from this file; t is a 0–1 position within its
 
 ## 6. CONFLICTS, GAPS AND EXTERNAL INFORMATION
 
-- **Internal conflicts handled:** two Valian-year lengths (9.582 vs 144 sun-years) — avoided by era-segmenting; NoME's ~30,000-Eldar March vs the implied scale of Beleriand hosts (Turgon's 10,000 alone) — reconciled by centuries of Aman/Doriath growth between March and Exile, and flagged M/L; old Silmarillion host-rhetoric ("countless") never converted to numbers.
+- **Internal conflicts handled:** three Valian-year lengths (×10, ×9.582, ×144 sun-years; the model's own exposure is the 9.582-vs-144 pair, the ×10 scheme belonging to the pre-Sun Annals it does not count) — avoided by era-segmenting; NoME's ~30,000-Eldar March vs the implied scale of Beleriand hosts (Turgon's 10,000 alone) — reconciled by centuries of Aman/Doriath growth between March and Exile, and flagged M/L; old Silmarillion host-rhetoric ("countless") never converted to numbers.
 - **Systematic gaps (stated, not filled):** Avari totals; Easterling/Haradrim/Khand populations; orc reproduction and female orcs; troll/dragon/eagle counts; Maiar total; Shire census.
 - **External information: none used.** Every figure above derives from the corpus in /home/raz/samsi; Fonstad's Atlas (a corpus member, but secondary) contributed only cross-checks on battle strengths, each marked where used in §3.
 
