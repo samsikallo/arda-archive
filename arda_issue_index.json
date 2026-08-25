@@ -1,7 +1,11 @@
 {
  "issues": {
+  "PE01": {
+   "cited_by_archive": 1,
+   "discussed_by": []
+  },
   "PE11": {
-   "cited_by_archive": 45,
+   "cited_by_archive": 49,
    "discussed_by": [
     {
      "title": "Early Ilkorin Phonology",
@@ -42,7 +46,7 @@
    ]
   },
   "PE12": {
-   "cited_by_archive": 1756,
+   "cited_by_archive": 1776,
    "discussed_by": [
     {
      "title": "Parma Penyane Quettaron v2.5",
@@ -65,7 +69,7 @@
       "D",
       "E"
      ],
-     "words": 10319,
+     "words": 10106,
      "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
     },
     {
@@ -119,7 +123,7 @@
    ]
   },
   "PE13": {
-   "cited_by_archive": 6668,
+   "cited_by_archive": 6788,
    "discussed_by": [
     {
      "title": "Early Ilkorin Phonology",
@@ -162,11 +166,17 @@
      "headings": [],
      "words": 14916,
      "url": "https://www.elvish.org/www.elvish.org/Tengwestie/articles/Wynne/goldpat.phtml.html"
+    },
+    {
+     "title": "the -s case",
+     "headings": [],
+     "words": 7171,
+     "url": "https://www.elvish.org/www.elvish.org/elm/scase.html"
     }
    ]
   },
   "PE14": {
-   "cited_by_archive": 3748,
+   "cited_by_archive": 4093,
    "discussed_by": [
     {
      "title": "Early Ilkorin Phonology",
@@ -213,7 +223,7 @@
    ]
   },
   "PE15": {
-   "cited_by_archive": 1484,
+   "cited_by_archive": 1548,
    "discussed_by": [
     {
      "title": "Early Ilkorin Phonology",
@@ -248,7 +258,7 @@
    ]
   },
   "PE16": {
-   "cited_by_archive": 1930,
+   "cited_by_archive": 2115,
    "discussed_by": [
     {
      "title": "Commentary on The Nature of Middle-earth",
@@ -271,7 +281,7 @@
    ]
   },
   "PE17": {
-   "cited_by_archive": 15010,
+   "cited_by_archive": 16206,
    "discussed_by": [
     {
      "title": "The Eldarin Accent System",
@@ -312,7 +322,7 @@
    ]
   },
   "PE18": {
-   "cited_by_archive": 2394,
+   "cited_by_archive": 2460,
    "discussed_by": [
     {
      "title": "The Eldarin Accent System",
@@ -329,7 +339,7 @@
    ]
   },
   "PE19": {
-   "cited_by_archive": 4950,
+   "cited_by_archive": 4974,
    "discussed_by": [
     {
      "title": "The Eldarin Accent System",
@@ -352,7 +362,7 @@
    ]
   },
   "PE21": {
-   "cited_by_archive": 3552,
+   "cited_by_archive": 3747,
    "discussed_by": [
     {
      "title": "The Eldarin Accent System",
@@ -369,7 +379,7 @@
    ]
   },
   "PE22": {
-   "cited_by_archive": 6775,
+   "cited_by_archive": 7216,
    "discussed_by": [
     {
      "title": "The Eldarin Accent System",
@@ -398,7 +408,7 @@
    ]
   },
   "PE23": {
-   "cited_by_archive": 5217,
+   "cited_by_archive": 5541,
    "discussed_by": []
   },
   "VT13": {
@@ -445,7 +455,7 @@
    ]
   },
   "VT27": {
-   "cited_by_archive": 33,
+   "cited_by_archive": 36,
    "discussed_by": [
     {
      "title": "Parma Penyane Quettaron v2.5",
@@ -468,19 +478,31 @@
       "D",
       "E"
      ],
-     "words": 10319,
+     "words": 10106,
      "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
+    },
+    {
+     "title": "the -s case",
+     "headings": [],
+     "words": 7171,
+     "url": "https://www.elvish.org/www.elvish.org/elm/scase.html"
     }
    ]
   },
   "VT28": {
-   "cited_by_archive": 34,
+   "cited_by_archive": 38,
    "discussed_by": [
     {
      "title": "abbreviations",
      "headings": [],
      "words": 612,
      "url": "https://www.elvish.org/www.elvish.org/elm/abbrev.html"
+    },
+    {
+     "title": "the -s case",
+     "headings": [],
+     "words": 7171,
+     "url": "https://www.elvish.org/www.elvish.org/elm/scase.html"
     }
    ]
   },
@@ -508,7 +530,7 @@
       "D",
       "E"
      ],
-     "words": 10319,
+     "words": 10106,
      "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
     }
    ]
@@ -525,18 +547,24 @@
    ]
   },
   "VT36": {
-   "cited_by_archive": 83,
+   "cited_by_archive": 90,
    "discussed_by": [
     {
      "title": "abbreviations",
      "headings": [],
      "words": 612,
      "url": "https://www.elvish.org/www.elvish.org/elm/abbrev.html"
+    },
+    {
+     "title": "the -s case",
+     "headings": [],
+     "words": 7171,
+     "url": "https://www.elvish.org/www.elvish.org/elm/scase.html"
     }
    ]
   },
   "VT39": {
-   "cited_by_archive": 406,
+   "cited_by_archive": 424,
    "discussed_by": [
     {
      "title": "Parma Penyane Quettaron v2.5",
@@ -559,7 +587,7 @@
       "D",
       "E"
      ],
-     "words": 10319,
+     "words": 10106,
      "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
     },
     {
@@ -605,6 +633,12 @@
      "url": "https://www.elvish.org/www.elvish.org/elm/newwords.html"
     },
     {
+     "title": "the -s case",
+     "headings": [],
+     "words": 7171,
+     "url": "https://www.elvish.org/www.elvish.org/elm/scase.html"
+    },
+    {
      "title": "tyalie",
      "headings": [],
      "words": 521,
@@ -613,23 +647,29 @@
    ]
   },
   "VT40": {
-   "cited_by_archive": 152,
+   "cited_by_archive": 167,
    "discussed_by": [
     {
      "title": "abbreviations",
      "headings": [],
      "words": 612,
      "url": "https://www.elvish.org/www.elvish.org/elm/abbrev.html"
+    },
+    {
+     "title": "the -s case",
+     "headings": [],
+     "words": 7171,
+     "url": "https://www.elvish.org/www.elvish.org/elm/scase.html"
     }
    ]
   },
   "VT41": {
-   "cited_by_archive": 448,
+   "cited_by_archive": 464,
    "discussed_by": [
     {
      "title": "Soundtrack Analysis",
      "headings": [],
-     "words": 5606,
+     "words": 5497,
      "url": "https://www.elvish.org/www.elvish.org/gwaith/movie_soundtrack_fotr.htm"
     },
     {
@@ -653,7 +693,7 @@
       "D",
       "E"
      ],
-     "words": 10319,
+     "words": 10106,
      "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
     },
     {
@@ -695,7 +735,7 @@
    ]
   },
   "VT42": {
-   "cited_by_archive": 983,
+   "cited_by_archive": 998,
    "discussed_by": [
     {
      "title": "O Hatholad",
@@ -730,7 +770,7 @@
       "D",
       "E"
      ],
-     "words": 10319,
+     "words": 10106,
      "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
     },
     {
@@ -766,7 +806,7 @@
    ]
   },
   "VT43": {
-   "cited_by_archive": 688,
+   "cited_by_archive": 746,
    "discussed_by": [
     {
      "title": "Parma Penyane Quettaron v2.5",
@@ -789,7 +829,7 @@
       "D",
       "E"
      ],
-     "words": 10319,
+     "words": 10106,
      "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
     },
     {
@@ -823,6 +863,12 @@
      "url": "https://www.elvish.org/www.elvish.org/elm/newwords.html"
     },
     {
+     "title": "the -s case",
+     "headings": [],
+     "words": 7171,
+     "url": "https://www.elvish.org/www.elvish.org/elm/scase.html"
+    },
+    {
      "title": "quenya lapseparma | S",
      "headings": [],
      "words": 1067,
@@ -831,7 +877,7 @@
    ]
   },
   "VT44": {
-   "cited_by_archive": 396,
+   "cited_by_archive": 447,
    "discussed_by": [
     {
      "title": "Parma Penyane Quettaron v2.5",
@@ -854,7 +900,7 @@
       "D",
       "E"
      ],
-     "words": 10319,
+     "words": 10106,
      "url": "https://www.elvish.org/www.elvish.org/gwaith/ppq/ppq.htm"
     },
     {
@@ -884,7 +930,7 @@
    ]
   },
   "VT45": {
-   "cited_by_archive": 13,
+   "cited_by_archive": 42,
    "discussed_by": [
     {
      "title": "Light and Tree",
@@ -919,7 +965,7 @@
    ]
   },
   "VT46": {
-   "cited_by_archive": 6,
+   "cited_by_archive": 20,
    "discussed_by": [
     {
      "title": "Intensifying Prefixes in the Etymologies",
@@ -936,7 +982,7 @@
    ]
   },
   "VT47": {
-   "cited_by_archive": 1561,
+   "cited_by_archive": 1592,
    "discussed_by": [
     {
      "title": "The Eldarin Accent System",
@@ -959,7 +1005,7 @@
    ]
   },
   "VT48": {
-   "cited_by_archive": 966,
+   "cited_by_archive": 989,
    "discussed_by": [
     {
      "title": "Quenya Compound Tenses",
@@ -976,7 +1022,7 @@
    ]
   },
   "VT49": {
-   "cited_by_archive": 1101,
+   "cited_by_archive": 1132,
    "discussed_by": [
     {
      "title": "A Glossary of Elvish Terms in Fragments on Elvish Reincarnation",
@@ -993,19 +1039,22 @@
    ]
   },
   "VT50": {
-   "cited_by_archive": 129,
+   "cited_by_archive": 135,
    "discussed_by": []
   }
  },
- "n_cited": 33,
+ "n_cited": 34,
  "n_discussed": 30,
  "n_covered": 30,
  "no_scholarship_yet": [
+  "PE01",
   "PE23",
   "VT13",
   "VT50"
  ],
- "cited_outside_published_ranges": [],
+ "cited_outside_published_ranges": [
+  "PE01"
+ ],
  "note": "Issue -> the scholarship that discusses it. POINTERS ONLY: titles, section headings and URLs from a mirror of the Elvish Linguistic Fellowship's site. The archive does not hold the journals and reproduces none of anyone's prose. Built because the archive cites 33 issues and a reader following one arrived at a journal rather than at a paper.",
  "not_a_guard": "A guard on 'is this a real issue' was measured and NOT kept: all cited issues fall inside the published ranges, zero out of range, so its debt is zero on the day it is written and rule 5 says such a thing has never been shown to be a guard."
 }
