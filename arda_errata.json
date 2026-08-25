@@ -5,24 +5,3399 @@
  "generated_by": "map/gen_errata.py",
  "guard": "map/errata_check.py",
  "counts": {
-  "commits_scanned": 551,
-  "pairs": 853,
-  "correction": 6671,
-  "retraction": 1362,
-  "refinement": 3878,
+  "commits_scanned": 566,
+  "pairs": 882,
+  "correction": 9432,
+  "retraction": 1904,
+  "refinement": 3938,
   "typographic": 0,
-  "no_stated_reason": 6800,
-  "machinery": 1216,
-  "below_floor": 6329,
+  "no_stated_reason": 9905,
+  "machinery": 1409,
+  "below_floor": 9641,
   "duplicate": 21,
   "unparsable": 0,
   "renamed_fields": 4954,
-  "unaligned_lists": 12071,
-  "unaligned_rows": 197635,
-  "vanished_rows": 5147,
-  "written": 1212
+  "unaligned_lists": 12428,
+  "unaligned_rows": 218889,
+  "vanished_rows": 5148,
+  "written": 1410
  },
  "errata": [
+  {
+   "dataset": "arda_livingmap.json",
+   "route": "rohirrim",
+   "field": "journeys.id=rohirrim.p.[1].l",
+   "path": [
+    "journeys",
+    "id=rohirrim",
+    "p",
+    "[1]",
+    "l"
+   ],
+   "now": "the road east of Edoras — the ride, not the muster (Mar 10)",
+   "was": "Edoras — the Muster of Rohan (Mar 10)",
+   "kind": "correction",
+   "why": "The fault was a COLLISION OF VOCABULARY: this document's tiers grade how much a text can settle a question about the MAP; the register grades who wrote it and how directly.",
+   "sha": "e4a5b5611099",
+   "date": "2026-08-25",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_livingmap.json",
+   "route": "frodo",
+   "field": "journeys.id=frodo.p.[5].l",
+   "path": [
+    "journeys",
+    "id=frodo",
+    "p",
+    "[5]",
+    "l"
+   ],
+   "now": "The Cross-roads (Mar 10)",
+   "was": "The Cross-roads (Mar 9)",
+   "kind": "correction",
+   "why": "The fault was a COLLISION OF VOCABULARY: this document's tiers grade how much a text can settle a question about the MAP; the register grades who wrote it and how directly.",
+   "sha": "e4a5b5611099",
+   "date": "2026-08-25",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_livingmap.json",
+   "route": "fellowship",
+   "field": "journeys.id=fellowship.p.[15].q",
+   "path": [
+    "journeys",
+    "id=fellowship",
+    "p",
+    "[15]",
+    "q"
+   ],
+   "now": "'I will do now what I must ... I will go alone.'",
+   "was": "'I will take the Ring,' he said, 'though I do not know the way.'",
+   "kind": "correction",
+   "why": "The fault was a COLLISION OF VOCABULARY: this document's tiers grade how much a text can settle a question about the MAP; the register grades who wrote it and how directly.",
+   "sha": "e4a5b5611099",
+   "date": "2026-08-25",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_assets.json",
+   "route": null,
+   "field": "assets.[45].source",
+   "path": [
+    "assets",
+    "[45]",
+    "source"
+   ],
+   "now": "supplied to the workshop, 2026-07-26; the plate carries the monogram of Rondador Nocturno, and a search of Commons and Tolkien Gateway turned up nothing -- the owner was shown exactly that before he ruled",
+   "was": "supplied to the workshop, 2026-07-26",
+   "kind": "correction",
+   "why": "The durin plate records the ruling that published it heraldry/illustrated/durin.png has been live for a month carrying \"NOT ESTABLISHED\" as its licence, because nobody wrote down that the owner had already answered.",
+   "sha": "faa003c95ce9",
+   "date": "2026-08-22",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_assets.json",
+   "route": null,
+   "field": "assets.[45].licence",
+   "path": [
+    "assets",
+    "[45]",
+    "licence"
+   ],
+   "now": "published at the owner's explicit direction, 26 July 2026 -- his clicked answer \"Publish, credited to Rondador\", chosen over \"Hold as reference only\" and \"You establish the licence first\". THIS IS NOT A GRANT FROM THE RIGHTSHOLDER.",
+   "was": "NOT ESTABLISHED -- the plate carries the monogram of Rondador Nocturno, so it is not unattributed and no licence is on record",
+   "kind": "correction",
+   "why": "`licence` now states that permission and says in capitals that it IS NOT A GRANT FROM THE RIGHTSHOLDER.",
+   "sha": "faa003c95ce9",
+   "date": "2026-08-22",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_timemap_jpeg.json",
+   "route": null,
+   "field": "pins.[3].[3]",
+   "path": [
+    "pins",
+    "[3]",
+    "[3]"
+   ],
+   "now": "[I-M] Not in any primary text — a label on the published general map only; absent from the Baynes name-list UT enumerates. The Reader's Companion calls it 'presumably a stronghold named for Fram'. Downgraded from I-H on 20 Aug 2026: measured with map/ardatext.py, Framsburg occurs 0 times in all 36 tier-1 files and stands in 4 tier-2/3 books only, so the placing cannot be a high inference. I-M is what the gazetteer, the shard and this map's own POI already say; the pin was the one record still reading I-H.",
+   "was": "[I-H] Not in any primary text — a label on the published general map only; absent from the Baynes name-list UT enumerates. The Reader's Companion calls it 'presumably a stronghold named for Fram'.",
+   "kind": "correction",
+   "why": "The errata reach a reader, and the devices he named take their places The errata register has existed since C70 and published nowhere: 24 date-band routes and 1,212 entries, every one re-opened against its own commit and verified as the value that actually stood at that path in that commit's parent.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_realms.json",
+   "route": "eotheod",
+   "field": "pol.id=eotheod.D.geo.[1].[1]",
+   "path": [
+    "pol",
+    "id=eotheod",
+    "D",
+    "geo",
+    "[1]",
+    "[1]"
+   ],
+   "now": "RC (Baynes-map names) [I-M] — downgraded from I-H on 20 Aug 2026: this clause shared the vales' marker, so the archive inferred the burg's placing as strongly as the land it stands in. The NAME is Tolkien's — he supplied it for Pauline Baynes's 1969 map and the Reader's Companion records it — but that book hedges the PLACE itself, 'presumably a stronghold named for Fram'. Measured with map/ardatext.py: Framsburg occurs 0 times in all 36 tier-1 files and stands in 4 tier-2/3 books only. App A and UT carry the Éothéod and Fram's dragon, not the burg. I-M is what the gazetteer, the living map and the shard already say.",
+   "was": "RC (Baynes-map names) [I-M] — downgraded from I-H on 20 Aug 2026: this clause shared the vales' marker, so the archive inferred the burg's placing as strongly as the land it stands in. The NAME is Tolkien's — he supplied it for Pauline Baynes's 1969 map and the Reader's Companion records it — but that book hedges the PLACE itself, 'presumably a stronghold named for Fram'. Measured with map/ardatext.py: Framsburg occurs 0 times in all 33 tier-1 files and stands in 4 tier-2/3 books only. App A and UT carry the Éothéod and Fram's dragon, not the burg. I-M is what the gazetteer, the living map and the shard already say.",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_livingmap.json",
+   "route": null,
+   "field": "pins.[3].[3]",
+   "path": [
+    "pins",
+    "[3]",
+    "[3]"
+   ],
+   "now": "[I-M] Not in any primary text — a label on the published general map only; absent from the Baynes name-list UT enumerates. The Reader's Companion calls it 'presumably a stronghold named for Fram'. Downgraded from I-H on 20 Aug 2026: measured with map/ardatext.py, Framsburg occurs 0 times in all 36 tier-1 files and stands in 4 tier-2/3 books only, so the placing cannot be a high inference. I-M is what the gazetteer, the shard and this map's own POI already say; the pin was the one record still reading I-H.",
+   "was": "[I-M] Not in any primary text — a label on the published general map only; absent from the Baynes name-list UT enumerates. The Reader's Companion calls it 'presumably a stronghold named for Fram'. Downgraded from I-H on 20 Aug 2026: measured with map/ardatext.py, Framsburg occurs 0 times in all 33 tier-1 files and stands in 4 tier-2/3 books only, so the placing cannot be a high inference. I-M is what the gazetteer, the shard and this map's own POI already say; the pin was the one record still reading I-H.",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[9].author",
+   "path": [
+    "subjects",
+    "[9]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[99].why_this_key",
+   "path": [
+    "subjects",
+    "[99]",
+    "why_this_key"
+   ],
+   "now": "the owner named this device for this subject, C119, 21 August 2026 -- the livery of Elendil's heirs is a HOUSE device and the royal banner is the realm's; one key had been doing both jobs",
+   "was": "already in the hall as the Arms of the Kings of Gondor",
+   "kind": "correction",
+   "why": "They are two devices again -- elendilbadge from 0 subjects to 12, gondor from 9 to 6, Arnor and Arthedain taking the livery because Gondor's banner on the northern kingdoms reads as an error.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[99].device_label",
+   "path": [
+    "subjects",
+    "[99]",
+    "device_label"
+   ],
+   "now": "The badge of Elendil — L·ND·L",
+   "was": "Arms of the Kings of Gondor",
+   "kind": "correction",
+   "why": "They are two devices again -- elendilbadge from 0 subjects to 12, gondor from 9 to 6, Arnor and Arthedain taking the livery because Gondor's banner on the northern kingdoms reads as an error.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[98].why_this_key",
+   "path": [
+    "subjects",
+    "[98]",
+    "why_this_key"
+   ],
+   "now": "the owner named this device for this subject, C119, 21 August 2026 -- the livery of Elendil's heirs is a HOUSE device and the royal banner is the realm's; one key had been doing both jobs",
+   "was": "already in the hall as the Arms of the Kings of Gondor",
+   "kind": "correction",
+   "why": "They are two devices again -- elendilbadge from 0 subjects to 12, gondor from 9 to 6, Arnor and Arthedain taking the livery because Gondor's banner on the northern kingdoms reads as an error.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[97].why_this_key",
+   "path": [
+    "subjects",
+    "[97]",
+    "why_this_key"
+   ],
+   "now": "the owner named this device for this subject, C119, 21 August 2026 -- the livery of Elendil's heirs is a HOUSE device and the royal banner is the realm's; one key had been doing both jobs",
+   "was": "already in the hall as the Arms of the Kings of Gondor",
+   "kind": "correction",
+   "why": "They are two devices again -- elendilbadge from 0 subjects to 12, gondor from 9 to 6, Arnor and Arthedain taking the livery because Gondor's banner on the northern kingdoms reads as an error.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[97].device_label",
+   "path": [
+    "subjects",
+    "[97]",
+    "device_label"
+   ],
+   "now": "The badge of Elendil — L·ND·L",
+   "was": "Arms of the Kings of Gondor",
+   "kind": "correction",
+   "why": "They are two devices again -- elendilbadge from 0 subjects to 12, gondor from 9 to 6, Arnor and Arthedain taking the livery because Gondor's banner on the northern kingdoms reads as an error.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[96].author",
+   "path": [
+    "subjects",
+    "[96]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[94].author",
+   "path": [
+    "subjects",
+    "[94]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[91].reason",
+   "path": [
+    "subjects",
+    "[91]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[91].author",
+   "path": [
+    "subjects",
+    "[91]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[90].author",
+   "path": [
+    "subjects",
+    "[90]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[8].author",
+   "path": [
+    "subjects",
+    "[8]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[88].reason",
+   "path": [
+    "subjects",
+    "[88]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[88].author",
+   "path": [
+    "subjects",
+    "[88]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[87].reason",
+   "path": [
+    "subjects",
+    "[87]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[87].author",
+   "path": [
+    "subjects",
+    "[87]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[86].author",
+   "path": [
+    "subjects",
+    "[86]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[85].author",
+   "path": [
+    "subjects",
+    "[85]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[83].author",
+   "path": [
+    "subjects",
+    "[83]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[82].author",
+   "path": [
+    "subjects",
+    "[82]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[81].author",
+   "path": [
+    "subjects",
+    "[81]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[7].author",
+   "path": [
+    "subjects",
+    "[7]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[77].author",
+   "path": [
+    "subjects",
+    "[77]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[73].reason",
+   "path": [
+    "subjects",
+    "[73]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[73].author",
+   "path": [
+    "subjects",
+    "[73]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[6].author",
+   "path": [
+    "subjects",
+    "[6]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[67].reason",
+   "path": [
+    "subjects",
+    "[67]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[67].author",
+   "path": [
+    "subjects",
+    "[67]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[66].reason",
+   "path": [
+    "subjects",
+    "[66]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[66].author",
+   "path": [
+    "subjects",
+    "[66]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[64].reason",
+   "path": [
+    "subjects",
+    "[64]",
+    "reason"
+   ],
+   "now": null,
+   "was": "No attested device, no attested image, and no declared link to either. The archive's own tier-1 ceiling says why this is the commonest answer: `except for the descriptions in The Fall of Gondolin, and that of the badge of Finarphin in The Lay of Leithian and elsewhere, references to Elvish heraldic devices are rare and brief in Tolkien's works`. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "It ships here with the nav entry that points at it -- and only now, because until the pages were tracked that one nav line would have put a 404 in the menu of every page in the archive.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[63].author",
+   "path": [
+    "subjects",
+    "[63]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[5].reason",
+   "path": [
+    "subjects",
+    "[5]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[5].author",
+   "path": [
+    "subjects",
+    "[5]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[58].author",
+   "path": [
+    "subjects",
+    "[58]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[56].author",
+   "path": [
+    "subjects",
+    "[56]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[52].author",
+   "path": [
+    "subjects",
+    "[52]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[51].author",
+   "path": [
+    "subjects",
+    "[51]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[50].author",
+   "path": [
+    "subjects",
+    "[50]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[4].device_label",
+   "path": [
+    "subjects",
+    "[4]",
+    "device_label"
+   ],
+   "now": "The badge of Elendil — L·ND·L",
+   "was": "The arms of Gondor, un-augmented",
+   "kind": "correction",
+   "why": "They are two devices again -- elendilbadge from 0 subjects to 12, gondor from 9 to 6, Arnor and Arthedain taking the livery because Gondor's banner on the northern kingdoms reads as an error.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[49].author",
+   "path": [
+    "subjects",
+    "[49]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[45].author",
+   "path": [
+    "subjects",
+    "[45]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[44].reason",
+   "path": [
+    "subjects",
+    "[44]",
+    "reason"
+   ],
+   "now": null,
+   "was": "No attested device, no attested image, and no declared link to either. The archive's own tier-1 ceiling says why this is the commonest answer: `except for the descriptions in The Fall of Gondolin, and that of the badge of Finarphin in The Lay of Leithian and elsewhere, references to Elvish heraldic devices are rare and brief in Tolkien's works`. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "It ships here with the nav entry that points at it -- and only now, because until the pages were tracked that one nav line would have put a 404 in the menu of every page in the archive.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[43].reason",
+   "path": [
+    "subjects",
+    "[43]",
+    "reason"
+   ],
+   "now": null,
+   "was": "No attested device, no attested image, and no declared link to either. The archive's own tier-1 ceiling says why this is the commonest answer: `except for the descriptions in The Fall of Gondolin, and that of the badge of Finarphin in The Lay of Leithian and elsewhere, references to Elvish heraldic devices are rare and brief in Tolkien's works`. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "It ships here with the nav entry that points at it -- and only now, because until the pages were tracked that one nav line would have put a 404 in the menu of every page in the archive.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[42].reason",
+   "path": [
+    "subjects",
+    "[42]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "It ships here with the nav entry that points at it -- and only now, because until the pages were tracked that one nav line would have put a 404 in the menu of every page in the archive.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[41].why_this_key",
+   "path": [
+    "subjects",
+    "[41]",
+    "why_this_key"
+   ],
+   "now": "the owner named this device for this subject, C119, 21 August 2026 -- the livery of Elendil's heirs is a HOUSE device and the royal banner is the realm's; one key had been doing both jobs",
+   "was": "already in the hall as the Arms of the Kings of Gondor",
+   "kind": "correction",
+   "why": "They are two devices again -- elendilbadge from 0 subjects to 12, gondor from 9 to 6, Arnor and Arthedain taking the livery because Gondor's banner on the northern kingdoms reads as an error.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[3].reason",
+   "path": [
+    "subjects",
+    "[3]",
+    "reason"
+   ],
+   "now": null,
+   "was": "No attested device, no attested image, and no declared link to either. The archive's own tier-1 ceiling says why this is the commonest answer: `except for the descriptions in The Fall of Gondolin, and that of the badge of Finarphin in The Lay of Leithian and elsewhere, references to Elvish heraldic devices are rare and brief in Tolkien's works`. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "It ships here with the nav entry that points at it -- and only now, because until the pages were tracked that one nav line would have put a 404 in the menu of every page in the archive.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[34].why_this_key",
+   "path": [
+    "subjects",
+    "[34]",
+    "why_this_key"
+   ],
+   "now": "the owner named this device for this subject, C119, 21 August 2026 -- the livery of Elendil's heirs is a HOUSE device and the royal banner is the realm's; one key had been doing both jobs",
+   "was": "already in the hall as the Arms of the Kings of Gondor",
+   "kind": "correction",
+   "why": "They are two devices again -- elendilbadge from 0 subjects to 12, gondor from 9 to 6, Arnor and Arthedain taking the livery because Gondor's banner on the northern kingdoms reads as an error.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[33].why_this_key",
+   "path": [
+    "subjects",
+    "[33]",
+    "why_this_key"
+   ],
+   "now": "the owner named this device for this subject, C119, 21 August 2026 -- the livery of Elendil's heirs is a HOUSE device and the royal banner is the realm's; one key had been doing both jobs",
+   "was": "already in the hall as the Arms of the Kings of Gondor",
+   "kind": "correction",
+   "why": "They are two devices again -- elendilbadge from 0 subjects to 12, gondor from 9 to 6, Arnor and Arthedain taking the livery because Gondor's banner on the northern kingdoms reads as an error.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[32].why_this_key",
+   "path": [
+    "subjects",
+    "[32]",
+    "why_this_key"
+   ],
+   "now": "the owner named this device for this subject, C119, 21 August 2026 -- the livery of Elendil's heirs is a HOUSE device and the royal banner is the realm's; one key had been doing both jobs",
+   "was": "already in the hall as the Arms of the Kings of Gondor",
+   "kind": "correction",
+   "why": "They are two devices again -- elendilbadge from 0 subjects to 12, gondor from 9 to 6, Arnor and Arthedain taking the livery because Gondor's banner on the northern kingdoms reads as an error.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[32].device_label",
+   "path": [
+    "subjects",
+    "[32]",
+    "device_label"
+   ],
+   "now": "The badge of Elendil — L·ND·L",
+   "was": "Arms of the Kings of Gondor",
+   "kind": "correction",
+   "why": "They are two devices again -- elendilbadge from 0 subjects to 12, gondor from 9 to 6, Arnor and Arthedain taking the livery because Gondor's banner on the northern kingdoms reads as an error.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[2].reason",
+   "path": [
+    "subjects",
+    "[2]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "It ships here with the nav entry that points at it -- and only now, because until the pages were tracked that one nav line would have put a 404 in the menu of every page in the archive.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[29].reason",
+   "path": [
+    "subjects",
+    "[29]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[29].author",
+   "path": [
+    "subjects",
+    "[29]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[27].author",
+   "path": [
+    "subjects",
+    "[27]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[26].author",
+   "path": [
+    "subjects",
+    "[26]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[24].author",
+   "path": [
+    "subjects",
+    "[24]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[21].author",
+   "path": [
+    "subjects",
+    "[21]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[217].author",
+   "path": [
+    "subjects",
+    "[217]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[216].author",
+   "path": [
+    "subjects",
+    "[216]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[215].author",
+   "path": [
+    "subjects",
+    "[215]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[213].reason",
+   "path": [
+    "subjects",
+    "[213]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[213].author",
+   "path": [
+    "subjects",
+    "[213]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[211].author",
+   "path": [
+    "subjects",
+    "[211]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[210].author",
+   "path": [
+    "subjects",
+    "[210]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[204].author",
+   "path": [
+    "subjects",
+    "[204]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[19].author",
+   "path": [
+    "subjects",
+    "[19]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[199].author",
+   "path": [
+    "subjects",
+    "[199]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[198].author",
+   "path": [
+    "subjects",
+    "[198]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[197].author",
+   "path": [
+    "subjects",
+    "[197]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[196].author",
+   "path": [
+    "subjects",
+    "[196]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[195].author",
+   "path": [
+    "subjects",
+    "[195]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[194].author",
+   "path": [
+    "subjects",
+    "[194]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[193].author",
+   "path": [
+    "subjects",
+    "[193]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[192].author",
+   "path": [
+    "subjects",
+    "[192]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[191].author",
+   "path": [
+    "subjects",
+    "[191]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[190].author",
+   "path": [
+    "subjects",
+    "[190]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[18].author",
+   "path": [
+    "subjects",
+    "[18]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[188].author",
+   "path": [
+    "subjects",
+    "[188]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[187].author",
+   "path": [
+    "subjects",
+    "[187]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[186].reason",
+   "path": [
+    "subjects",
+    "[186]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[186].author",
+   "path": [
+    "subjects",
+    "[186]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[185].author",
+   "path": [
+    "subjects",
+    "[185]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[184].author",
+   "path": [
+    "subjects",
+    "[184]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[183].author",
+   "path": [
+    "subjects",
+    "[183]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[182].reason",
+   "path": [
+    "subjects",
+    "[182]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[182].author",
+   "path": [
+    "subjects",
+    "[182]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[181].reason",
+   "path": [
+    "subjects",
+    "[181]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[181].author",
+   "path": [
+    "subjects",
+    "[181]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[17].reason",
+   "path": [
+    "subjects",
+    "[17]",
+    "reason"
+   ],
+   "now": null,
+   "was": "No attested device, no attested image, and no declared link to either. The archive's own tier-1 ceiling says why this is the commonest answer: `except for the descriptions in The Fall of Gondolin, and that of the badge of Finarphin in The Lay of Leithian and elsewhere, references to Elvish heraldic devices are rare and brief in Tolkien's works`. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "It ships here with the nav entry that points at it -- and only now, because until the pages were tracked that one nav line would have put a 404 in the menu of every page in the archive.",
+   "sha": "6dac0a42a6e1",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[179].author",
+   "path": [
+    "subjects",
+    "[179]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[178].author",
+   "path": [
+    "subjects",
+    "[178]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[177].author",
+   "path": [
+    "subjects",
+    "[177]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[176].author",
+   "path": [
+    "subjects",
+    "[176]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[175].author",
+   "path": [
+    "subjects",
+    "[175]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[174].author",
+   "path": [
+    "subjects",
+    "[174]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[173].author",
+   "path": [
+    "subjects",
+    "[173]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[172].author",
+   "path": [
+    "subjects",
+    "[172]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[171].reason",
+   "path": [
+    "subjects",
+    "[171]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[171].author",
+   "path": [
+    "subjects",
+    "[171]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[170].author",
+   "path": [
+    "subjects",
+    "[170]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[169].author",
+   "path": [
+    "subjects",
+    "[169]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[168].author",
+   "path": [
+    "subjects",
+    "[168]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[167].author",
+   "path": [
+    "subjects",
+    "[167]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[166].author",
+   "path": [
+    "subjects",
+    "[166]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[165].author",
+   "path": [
+    "subjects",
+    "[165]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[163].author",
+   "path": [
+    "subjects",
+    "[163]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[162].reason",
+   "path": [
+    "subjects",
+    "[162]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[162].author",
+   "path": [
+    "subjects",
+    "[162]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[161].author",
+   "path": [
+    "subjects",
+    "[161]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[160].author",
+   "path": [
+    "subjects",
+    "[160]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[159].author",
+   "path": [
+    "subjects",
+    "[159]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[158].reason",
+   "path": [
+    "subjects",
+    "[158]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[158].author",
+   "path": [
+    "subjects",
+    "[158]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[157].reason",
+   "path": [
+    "subjects",
+    "[157]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[157].author",
+   "path": [
+    "subjects",
+    "[157]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[155].reason",
+   "path": [
+    "subjects",
+    "[155]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[155].author",
+   "path": [
+    "subjects",
+    "[155]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[154].author",
+   "path": [
+    "subjects",
+    "[154]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[153].author",
+   "path": [
+    "subjects",
+    "[153]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[152].author",
+   "path": [
+    "subjects",
+    "[152]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[151].author",
+   "path": [
+    "subjects",
+    "[151]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[150].author",
+   "path": [
+    "subjects",
+    "[150]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[149].author",
+   "path": [
+    "subjects",
+    "[149]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[148].author",
+   "path": [
+    "subjects",
+    "[148]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[147].author",
+   "path": [
+    "subjects",
+    "[147]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[146].author",
+   "path": [
+    "subjects",
+    "[146]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[145].author",
+   "path": [
+    "subjects",
+    "[145]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[144].author",
+   "path": [
+    "subjects",
+    "[144]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[143].author",
+   "path": [
+    "subjects",
+    "[143]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[142].author",
+   "path": [
+    "subjects",
+    "[142]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[141].author",
+   "path": [
+    "subjects",
+    "[141]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[140].author",
+   "path": [
+    "subjects",
+    "[140]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[13].author",
+   "path": [
+    "subjects",
+    "[13]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[139].author",
+   "path": [
+    "subjects",
+    "[139]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[138].author",
+   "path": [
+    "subjects",
+    "[138]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[137].author",
+   "path": [
+    "subjects",
+    "[137]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[136].author",
+   "path": [
+    "subjects",
+    "[136]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[135].author",
+   "path": [
+    "subjects",
+    "[135]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[130].author",
+   "path": [
+    "subjects",
+    "[130]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[12].author",
+   "path": [
+    "subjects",
+    "[12]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[129].author",
+   "path": [
+    "subjects",
+    "[129]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[128].author",
+   "path": [
+    "subjects",
+    "[128]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[127].reason",
+   "path": [
+    "subjects",
+    "[127]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[127].author",
+   "path": [
+    "subjects",
+    "[127]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[123].author",
+   "path": [
+    "subjects",
+    "[123]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[122].author",
+   "path": [
+    "subjects",
+    "[122]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[121].author",
+   "path": [
+    "subjects",
+    "[121]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[120].author",
+   "path": [
+    "subjects",
+    "[120]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[11].reason",
+   "path": [
+    "subjects",
+    "[11]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[11].author",
+   "path": [
+    "subjects",
+    "[11]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[119].author",
+   "path": [
+    "subjects",
+    "[119]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[118].author",
+   "path": [
+    "subjects",
+    "[118]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[117].author",
+   "path": [
+    "subjects",
+    "[117]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[116].author",
+   "path": [
+    "subjects",
+    "[116]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[115].author",
+   "path": [
+    "subjects",
+    "[115]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[113].author",
+   "path": [
+    "subjects",
+    "[113]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[111].reason",
+   "path": [
+    "subjects",
+    "[111]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[111].author",
+   "path": [
+    "subjects",
+    "[111]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[10].reason",
+   "path": [
+    "subjects",
+    "[10]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[10].author",
+   "path": [
+    "subjects",
+    "[10]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[107].reason",
+   "path": [
+    "subjects",
+    "[107]",
+    "reason"
+   ],
+   "now": null,
+   "was": "NAME-GLOSS ONLY. The corpus glosses this name, or the archive's registers bind a creature, plant or object to it -- and NOTHING in the corpus attaches that image to this subject AS A SIGN. Composing here would be invention, and this is the rule that kills the most tempting candidates: Ossiriand's seven rivers, Thargelion's Land Beyond Gelion, Dorwinion's wine, Framsburg's dragon-slaying founder. Every one would need a charge Tolkien never gave and, usually, an ordinary he never used. The evidence sweep found CO-OCCURRENCE ONLY: a blazon word standing near the name with nothing binding the two. On its own that supports a declared blank as readily as it supports a device.",
+   "kind": "retraction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[107].author",
+   "path": [
+    "subjects",
+    "[107]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[104].author",
+   "path": [
+    "subjects",
+    "[104]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[103].author",
+   "path": [
+    "subjects",
+    "[103]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[102].author",
+   "path": [
+    "subjects",
+    "[102]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[101].author",
+   "path": [
+    "subjects",
+    "[101]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_heraldry_roster.json",
+   "route": null,
+   "field": "subjects.[100].author",
+   "path": [
+    "subjects",
+    "[100]",
+    "author"
+   ],
+   "now": "the archive, by inference under C120",
+   "was": "no device is recorded for this subject; the field is left bare",
+   "kind": "correction",
+   "why": "208 subjects carry a device, and 126 of them say they rest on nothing Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>",
+   "sha": "09e560271cec",
+   "date": "2026-08-21",
+   "conf": "[I-M]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "realm/thargelion.html",
+   "field": "routes.realm/thargelion.html.src_line",
+   "path": [
+    "routes",
+    "realm/thargelion.html",
+    "src_line"
+   ],
+   "now": "lake, shadowed by mountains on all sides save the south. That",
+   "was": "the Noldor Thargelion, which signifies the Land beyond Gelion, or",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "realm/ossiriand.html",
+   "field": "routes.realm/ossiriand.html.src_line",
+   "path": [
+    "routes",
+    "realm/ossiriand.html",
+    "src_line"
+   ],
+   "now": "demanding admittance to the King. He was a lord of the",
+   "was": "they dwelt in Ossiriand, the Land of Seven Rivers.",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "realm/esgaroth.html",
+   "field": "routes.realm/esgaroth.html.src_line",
+   "path": [
+    "routes",
+    "realm/esgaroth.html",
+    "src_line"
+   ],
+   "now": "The Dragon was slain by Bard of Esgaroth, but there was battle in Dale.",
+   "was": "of my arrival by barrel at Esgaroth on the Long Lake; though the fact",
+   "kind": "correction",
+   "why": "The rest are library because they belong there.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "realm/dorwinion.html",
+   "field": "routes.realm/dorwinion.html.relevance",
+   "path": [
+    "routes",
+    "realm/dorwinion.html",
+    "relevance"
+   ],
+   "now": "C79: the band carries a PASSAGE, not a label. This leaf's subject stands in this sentence AS WHOLE WORDS -- re-tested on the sentence itself, because ardatext.occurrences places a line by substring and would report `aldor` present in a line whose only word is `Galdor`. The sentence is the corpus's own, at t1_b_the_hobbit_or_there_and_back_again.txt:5074 in (B) The Hobbit, or There and Back Again.pdf.",
+   "was": "The name of this leaf's subject, standing in t1_b_the_hobbit_or_there_and_back_again.txt -- the first volume of the declared narrative order that attests it as whole words, and the cited line is the line that carries the name. That is why this edge carries this book's matter and no other's.",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "place/withered_heath.html",
+   "field": "routes.place/withered_heath.html.src_volume",
+   "path": [
+    "routes",
+    "place/withered_heath.html",
+    "src_volume"
+   ],
+   "now": "2 The Book of Lost Tales, Part Two.pdf",
+   "was": "(B) The Hobbit, or There and Back Again.pdf",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "place/withered_heath.html",
+   "field": "routes.place/withered_heath.html.conf_why",
+   "path": [
+    "routes",
+    "place/withered_heath.html",
+    "conf_why"
+   ],
+   "now": "[C] on the WORDS -- the sentence is printed at the cited line of 2 The Book of Lost Tales, Part Two.pdf, tier 1, and map/edge_scripts_check.py re-opens the file and looks again. The letter VALUES are arda_cirth.json's plus the one App E states in prose for the Moria arrangement (certh 54 = s), each carrying its own marker; the CODEPOINTS are arda_cirth_codepoints.json's. The punctuation of the original is NOT set: the archive publishes no cirth punctuation, so the stops are kept in `passage` and dropped from the glyphs.",
+   "was": "[I-M] -- the ARRANGEMENT is this archive's. Daeron's Angerthas has no certh for `h`, so this name is set in the Dwarves' arrangement instead; a choice like that is a reading, and it is marked as one. On the name itself: [C] on the NAME -- it stands at the cited line of (B) The Hobbit, or There and Back Again.pdf, which site/arda_sources.json ranks TIER 1: a text of Tolkien's own, which is what this archive's [C] means.",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "place/the_carrock.html",
+   "field": "routes.place/the_carrock.html.src_line",
+   "path": [
+    "routes",
+    "place/the_carrock.html",
+    "src_line"
+   ],
+   "now": "north and east the Men of the Long Lake and of Dale. From the lands",
+   "was": "between the Carrock and the Gladden, and they were in origin close akin",
+   "kind": "correction",
+   "why": "The rest are library because they belong there.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "place/himring.html",
+   "field": "routes.place/himring.html.translation",
+   "path": [
+    "routes",
+    "place/himring.html",
+    "translation"
+   ],
+   "now": "The chief citadel of Maedhros was upon the Hill of Himring the Ever",
+   "was": "The night is passing",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "place/esgaroth.html",
+   "field": "routes.place/esgaroth.html.src_line",
+   "path": [
+    "routes",
+    "place/esgaroth.html",
+    "src_line"
+   ],
+   "now": "The Dragon was slain by Bard of Esgaroth, but there was battle in Dale.",
+   "was": "of my arrival by barrel at Esgaroth on the Long Lake; though the fact",
+   "kind": "correction",
+   "why": "The rest are library because they belong there.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "person/theoden.html",
+   "field": "routes.person/theoden.html.src_line",
+   "path": [
+    "routes",
+    "person/theoden.html",
+    "src_line"
+   ],
+   "now": "‘Nor will you again,’ said Gandalf. ‘That is Shadowfax. He is the",
+   "was": "Five; and there as the beacons ﬂared in Anórien and Théoden came",
+   "kind": "correction",
+   "why": "errata.html is not published, and a menu entry on every page in the archive pointing at a page that is not there is worse than a menu without the entry.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "person/kili.html",
+   "field": "routes.person/kili.html.src_volume",
+   "path": [
+    "routes",
+    "person/kili.html",
+    "src_volume"
+   ],
+   "now": "(B) The Hobbit, or There and Back Again.pdf",
+   "was": "(C) The Lord of the Rings.pdf",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "person/kili.html",
+   "field": "routes.person/kili.html.relevance",
+   "path": [
+    "routes",
+    "person/kili.html",
+    "relevance"
+   ],
+   "now": "C79: the band carries a PASSAGE, not a label. This leaf's subject stands in this sentence AS WHOLE WORDS -- re-tested on the sentence itself, because ardatext.occurrences places a line by substring and would report `aldor` present in a line whose only word is `Galdor`. The sentence is the corpus's own, at t1_b_the_hobbit_or_there_and_back_again.txt:1032 in (B) The Hobbit, or There and Back Again.pdf.",
+   "was": "The name of this leaf's subject, standing in t1_c_the_lord_of_the_rings.txt -- the first volume of the declared narrative order that attests it as whole words, and the cited line is the line that carries the name. That is why this edge carries this book's matter and no other's.",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "person/kili.html",
+   "field": "routes.person/kili.html.conf_why",
+   "path": [
+    "routes",
+    "person/kili.html",
+    "conf_why"
+   ],
+   "now": "[C] on the WORDS -- the sentence is printed at the cited line of (B) The Hobbit, or There and Back Again.pdf, tier 1, and map/edge_scripts_check.py re-opens the file and looks again. The letter VALUES are arda_cirth.json's plus the one App E states in prose for the Moria arrangement (certh 54 = s), each carrying its own marker; the CODEPOINTS are arda_cirth_codepoints.json's. The punctuation of the original is NOT set: the archive publishes no cirth punctuation, so the stops are kept in `passage` and dropped from the glyphs.",
+   "was": "[C] on the NAME -- it stands at the cited line of (C) The Lord of the Rings.pdf, which site/arda_sources.json ranks TIER 1: a text of Tolkien's own, which is what this archive's [C] means. The LANGUAGE attribution that chose this mode is Eldamo's and is [EXT]; the letter values are arda_scripts.json's and carry their own markers.",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "person/fili.html",
+   "field": "routes.person/fili.html.relevance",
+   "path": [
+    "routes",
+    "person/fili.html",
+    "relevance"
+   ],
+   "now": "C79: the band carries a PASSAGE, not a label. This leaf's subject stands in this sentence AS WHOLE WORDS -- re-tested on the sentence itself, because ardatext.occurrences places a line by substring and would report `aldor` present in a line whose only word is `Galdor`. The sentence is the corpus's own, at t1_b_the_hobbit_or_there_and_back_again.txt:4598 in (B) The Hobbit, or There and Back Again.pdf.",
+   "was": "The name of this leaf's subject. t1_c_the_lord_of_the_rings.txt attests it as whole words; the substring index could not place a line, so no line is claimed.",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "person/fili.html",
+   "field": "routes.person/fili.html.conf_why",
+   "path": [
+    "routes",
+    "person/fili.html",
+    "conf_why"
+   ],
+   "now": "[C] on the WORDS -- the sentence is printed at the cited line of (B) The Hobbit, or There and Back Again.pdf, tier 1, and map/edge_scripts_check.py re-opens the file and looks again. The letter VALUES are arda_cirth.json's plus the one App E states in prose for the Moria arrangement (certh 54 = s), each carrying its own marker; the CODEPOINTS are arda_cirth_codepoints.json's. The punctuation of the original is NOT set: the archive publishes no cirth punctuation, so the stops are kept in `passage` and dropped from the glyphs.",
+   "was": "[I-H] -- the setting is sound and no corpus line was placed for the name, so the row rests on the value tables alone. The letter VALUES are arda_cirth.json's, each carrying its own marker; the CODEPOINTS are arda_cirth_codepoints.json's, DERIVED by three agreeing methods and marked as such. This row asserts no certh value of its own.",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "person/eomer.html",
+   "field": "routes.person/eomer.html.src_line",
+   "path": [
+    "routes",
+    "person/eomer.html",
+    "src_line"
+   ],
+   "now": "‘That you need not pursue them further,’ said Eomer.    ‘The Orcs",
+   "was": "stranger should declare himself ﬁrst. Yet I am named Eomer       son of",
+   "kind": "correction",
+   "why": "errata.html is not published, and a menu entry on every page in the archive pointing at a page that is not there is worse than a menu without the entry.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "person/belladonna.html",
+   "field": "routes.person/belladonna.html.src_volume",
+   "path": [
+    "routes",
+    "person/belladonna.html",
+    "src_volume"
+   ],
+   "now": "(B) The Hobbit, or There and Back Again.pdf",
+   "was": "(C) The Lord of the Rings.pdf",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "person/belladonna.html",
+   "field": "routes.person/belladonna.html.relevance",
+   "path": [
+    "routes",
+    "person/belladonna.html",
+    "relevance"
+   ],
+   "now": "C79: the band carries a PASSAGE, not a label. This leaf's subject stands in this sentence AS WHOLE WORDS -- re-tested on the sentence itself, because ardatext.occurrences places a line by substring and would report `aldor` present in a line whose only word is `Galdor`. The sentence is the corpus's own, at t1_b_the_hobbit_or_there_and_back_again.txt:174 in (B) The Hobbit, or There and Back Again.pdf.",
+   "was": "The name of this leaf's subject, standing in t1_c_the_lord_of_the_rings.txt -- the first volume of the declared narrative order that attests it as whole words, and the cited line is the line that carries the name. That is why this edge carries this book's matter and no other's.",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "person/belladonna.html",
+   "field": "routes.person/belladonna.html.conf_why",
+   "path": [
+    "routes",
+    "person/belladonna.html",
+    "conf_why"
+   ],
+   "now": "[C] on the WORDS -- the sentence is printed at the cited line of (B) The Hobbit, or There and Back Again.pdf, tier 1, and map/edge_scripts_check.py re-opens the file and looks again. The letter VALUES are arda_cirth.json's plus the one App E states in prose for the Moria arrangement (certh 54 = s), each carrying its own marker; the CODEPOINTS are arda_cirth_codepoints.json's. The punctuation of the original is NOT set: the archive publishes no cirth punctuation, so the stops are kept in `passage` and dropped from the glyphs.",
+   "was": "[C] on the NAME -- it stands at the cited line of (C) The Lord of the Rings.pdf, which site/arda_sources.json ranks TIER 1: a text of Tolkien's own, which is what this archive's [C] means. The letter VALUES are arda_cirth.json's, each carrying its own marker; the CODEPOINTS are arda_cirth_codepoints.json's, DERIVED by three agreeing methods and marked as such. This row asserts no certh value of its own.",
+   "kind": "correction",
+   "why": "Six backdrops were drawn and one of them was reachable Every per-entity record has carried data-scene=\"library\" since the codex shell landed -- all 582 of them -- because the generator wrote the default and nothing ever wrote over it.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "person/bell.html",
+   "field": "routes.person/bell.html.src_line",
+   "path": [
+    "routes",
+    "person/bell.html",
+    "src_line"
+   ],
+   "now": "Suddenly as they were talking a single clear bell rang out. ‘That",
+   "was": "machines more complicated than a forge-bellows, a water-mill, or a",
+   "kind": "correction",
+   "why": "errata.html is not published, and a menu entry on every page in the archive pointing at a page that is not there is worse than a menu without the entry.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": "person/angamaite.html",
+   "field": "routes.person/angamaite.html.src_line",
+   "path": [
+    "routes",
+    "person/angamaite.html",
+    "src_line"
+   ],
+   "now": "The names Angomaitë and Sangahyanda were changed to Angamaitë and Sangahyando in",
+   "was": "Pelargir by the Corsairs of Umbar. (They were led by Angamaitë and Sangah-",
+   "kind": "correction",
+   "why": "The rest are library because they belong there.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
+  {
+   "dataset": "arda_edge_scripts.json",
+   "route": null,
+   "field": "routes.compare.html.relevance",
+   "path": [
+    "routes",
+    "compare.html",
+    "relevance"
+   ],
+   "now": "Nothing is inscribed on this leaf's edge: its codex body was built by a hand and no generator may re-hang it, so no band can be hung there either.",
+   "was": "This leaf is a hub of the archive and has no subject of Tolkien's: its title is a heading THIS ARCHIVE wrote. The band spells that heading, and no book's matter is claimed for it.",
+   "kind": "correction",
+   "why": "errata.html is not published, and a menu entry on every page in the archive pointing at a page that is not there is worse than a menu without the entry.",
+   "sha": "72a8df9d9fbe",
+   "date": "2026-08-21",
+   "conf": "[I-H]"
+  },
   {
    "dataset": "arda_livingmap.json",
    "route": null,
