@@ -1,7 +1,7 @@
 # THE ARMIES OF ARDA — A MILITARY MODEL
 ### Polities, hosts, campaigns and compositions across the Ages, built solely from the corpus in /home/raz/samsi
 Companion to DEMOGRAPHY.md (whose methods M1–M6 and population baselines this model reuses).
-*The Letters of J.R.R. Tolkien* is cited in the brief but **absent from the folder**; no Letters material is used. **No external sources are used**; the "External information" section is empty by design (§5).
+*The Letters of J.R.R. Tolkien* is **present in the corpus** as two tier-1 volumes (`t1_the_letters_of_j_r_r_tolkien` and the revised and expanded edition); this model does not cite it; the refusals in §5 were re-checked against it and **none is filled** — indeed Tolkien himself names the Wainriders and the Harad among what "general enquirers want" and he has not told. **No external sources are used**; the "External information" section is empty by design (§5).
 
 Labels: **[CANON]** direct statement · **[INF—H/M/L]** reasoned estimate with confidence · **[SPEC—L]** flagged speculation (minimized). Where the corpus is silent: *"The attached documents do not provide enough information to answer this."*
 
@@ -16,9 +16,9 @@ Labels: **[CANON]** direct statement · **[INF—H/M/L]** reasoned estimate with
 - Saruman empties Isengard: **"ten thousand at the very least"** counted marching out (III.9); Gandalf: "I have about ten thousand Orcs to manage."
 - Five Armies 2941: Dáin's **500** mailed Dwarves; the Elvenking's "many spearmen and bowmen"; **"three parts of the goblin warriors of the North perished"** (Hobbit XV–XVIII).
 - Azanulbizar 2799: of the mustered dwarf-host **"barely half... could still stand"** (App A III).
-- Dagorlad/Last Alliance: Oropher+Malgalad's Silvan host — Thranduil **"led back home barely a third"** (UT); the Alliance itself: "the hosts of Gil-galad and Elendil... recalled the glory of the Elder Days" (II.2) — **no total given**.
+- Dagorlad/Last Alliance: Oropher+Malgalad's Silvan host — Thranduil **"led back home barely a third"** (UT); the Alliance itself: Elrond "recalled to me the glory of the Elder Days and the hosts of Beleriand", but "not so many, nor so fair, as when Thangorodrim was broken" (II.2) — **no total given; the only bound is that comparison**.
 - Isildur's Gladden company: **200 knights and soldiers** + 3 sons, ~20 archers, ten-to-one odds (UT).
-- Shire 3019: Bywater — ~**200+100** hobbits vs ~**100** ruffians; **~70 ruffians and 19 hobbits dead** (VI.8). Standing institutions: **12 Shirriffs**, the Bounders "varied in number" (Prologue).
+- Shire 3019: Bywater — ~**200+100** hobbits vs ~**100** ruffians; **~70 ruffians and 19 hobbits dead** (VI.8). Standing institutions: **12 Shirriffs**, the Bounders a larger body "varying at need" (Prologue).
 - First Age Men: Bëor's folk field at most **2,000 grown men** (HoME XII); Bereg leads **1,000** away south (Silm 17); Haladin besieged until Caranthir breaks the siege (Silm 17).
 - Nazgûl: **9**; Balrogs **"3 or at most 7"** (HoME X margin); Istari **5**.
 
@@ -28,7 +28,7 @@ Labels: **[CANON]** direct statement · **[INF—H/M/L]** reasoned estimate with
 - Gondor: concentric fortress doctrine (Rammas → seven walls; beacon-and-errand-rider mobilization; causeway forts; river squadrons at Pelargir; Ithilien ranger companies — Henneth Annûn's 200–300).
 - Angband/Mordor: mass orc infantry with troll/mûmak shock and siege trains (Grond, towers, catapults, mines; Isengard's "blasting-fire" at Helm's Deep; Uruk phalanxes with pikes vs the Deeping Wall).
 - Elves: Noldorin mail-and-spear hosts by lordly houses (Gondolin's array; Fingon's banners); Sindar of Doriath rarely march beyond the Girdle; Silvan troops "ill-equipped with armour" (UT) — archery-forest fighters; Falathrim sea-craft.
-- Dwarves: masked heavy infantry (Belegost's iron masks vs dragon-fire at Nirnaeth [Silm 20]); mattock-companies (Iron Hills, Hobbit XVII).
+- Dwarves: masked heavy infantry (Belegost's "great masks" vs dragon-fire at Nirnaeth [Silm 20]); mattock-companies (Iron Hills, Hobbit XVII).
 - Númenor: naval-expeditionary supremacy — Tar-Minastir's "great navy" lands at Vinyalondë and takes Sauron in the rear at the Gwathló (UT); the King's Archers' hollow-steel bows (UT/NoME).
 
 **Women and war [CANON]:**
@@ -71,7 +71,7 @@ Labels: **[CANON]** direct statement · **[INF—H/M/L]** reasoned estimate with
 | Dale/Esgaroth | Northmen | town levy | levy | medium | great-bow tradition (Bard) |
 | Woodland Realm | Silvan+Sindar elite | king's host | levy+guard | medium | archer lines, spear companies |
 | Lórien | Galadhrim | border wards | levy | medium-high | tree-war, river denial |
-| Isengard | Uruk-hai+Orcs+Dunlendings+wolfriders | manufactured army | standing (new-made) | high (pikes, blasting-fire) | combined assault, night marches ("we ran the whole way") |
+| Isengard | Uruk-hai+Orcs+Dunlendings+wolfriders | manufactured army | standing (new-made) | high (pikes, blasting-fire) | combined assault, night marches ("we do not stop the fight for night or day") |
 | Mordor (TA) | Orcs+Olog-hai+client Men | tribute-levy empire | horde + professional cores | high siege-tech | multi-front grand strategy, terror weapon (Nazgûl) |
 | Umbar | Corsairs (Black-Númenórean-led) | fleet companies | professional raiders | naval | 50-dromund battle-fleets, coastal descents |
 | Harad/Rhûn/Khand | Haradrim, Easterlings, Variags | tribal/royal hosts | levy hordes | medium + mûmakil | mass infantry, war-towers on mûmakil, wain-columns |
@@ -90,7 +90,7 @@ Point estimates with [range]; confidence per figure.
 **First Age**
 - **Dagor-nuin-Giliath (FA 1–2):** Fëanor's landing force — half the Exile host [INF—L: 20–60k of the ~55–115k exiles incl. non-combatants] routs Morgoth's assault "though outnumbered". No enemy figure. *Insufficient for totals.*
 - **Dagor Aglareb (FA 60):** siege-founding victory; hosts unnumbered. *Insufficient.*
-- **Dagor Bragollach (FA 455):** defenders = the Siege ring (Hithlum, Dorthonion, the March) [INF—L: 40–70k under arms total]; Angband: rivers of fire, Glaurung, Balrogs, "Orcs in numbers never before seen" [CANON qualitative; INF—L 100–200k].
+- **Dagor Bragollach (FA 455):** defenders = the Siege ring (Hithlum, Dorthonion, the March) [INF—L: 40–70k under arms total]; Angband: rivers of fire, Glaurung, Balrogs, "multitudes such as the Noldor had never before seen or imagined" [CANON qualitative; INF—L 100–200k].
 - **Nirnaeth Arnoediad (FA 472):** West-host: Fingon's Hithlum army (Noldor+Sindar+Hador's Men) [INF—M 18–30k], **Turgon's 10,000 [CANON—H]**, Falas & Nargothrond companies [INF—L 1–3k], Haladin company [INF—L ~500], Belegost's Dwarves [INF—L 2–4k]; East-host: Maedhros' Union with Bórrim Easterlings [INF—L 12–25k]. **Union total ~45,000–70,000 [INF—M-L]**. Angband: outnumbering mass + Glaurung + Balrogs + Ulfang's traitors [INF—L 120–250k committed in waves; M7 supports: Anfauglith adjoins Angband's own logistics]. Losses: West annihilated less Gondolin's withdrawal and Húrin's stand [CANON narrative].
 - **Tumhalad (FA 495):** Nargothrond's open-field army [INF—L 4–8k] destroyed by Glaurung's host [INF—L 15–30k].
 - **Fall of Gondolin (FA 510):** defenders ≈ the 472 army rebuilt [INF—M ~10k] by hidden-city muster; attackers: orcs, Balrogs, dragons, "engines" [INF—L 40–80k; M7: a one-city siege]. 
@@ -100,14 +100,14 @@ Point estimates with [range]; confidence per figure.
 - **War of the Elves and Sauron (1693–1701):** Sauron overruns Eriador — [INF—L 100–250k orc+Men host; M7: multi-year occupation of a subcontinent]; Lindon line held at the Lhûn [INF—L 20–40k]; **Númenórean intervention (Tar-Minastir/Ciryatur): "great navy"** landing at Lhûn AND Vinyalondë pincer [CANON operations; INF—M-L 25–50k expeditionary]. Sauron "routed utterly" at the Gwathló [CANON].
 - **Ar-Pharazôn's landing at Umbar (3262):** armament so great Sauron's servants desert him [CANON qualitative]. *Numbers insufficient*; capability ceiling: a 10⁷-population state [M3] could ship 10⁵ soldiers [INF—L].
 - **Great Armament (3310–19):** fleet-building for nine years; destroyed at the World's change. *Numbers insufficient.*
-- **War of the Last Alliance (3429–41):** Alliance: Gil-galad's Lindon host [INF—L 20–40k], **Silvan host (Oropher, Amdír): "great army... now numerous people"; returned "barely a third" [CANON] → committed [INF—M 20–35k]**, Elendil's Arnor + Gondor levies [INF—L 25–50k], Khazad-dûm contingent [INF—L 1–3k]. **Alliance total ~70,000–125,000 [INF—M-L]** — "the glory... recalled the hosts of Beleriand" [CANON comparator]. Mordor: orc mass + Easterling/Haradrim clients + 9 Nazgûl [INF—L 100–200k across seven years; M7: Dagorlad + 7-year siege demands rotation]. 
+- **War of the Last Alliance (3429–41):** Alliance: Gil-galad's Lindon host [INF—L 20–40k], **Silvan host (Oropher, Amdír): "great army... now numerous people"; returned "barely a third" [CANON] → committed [INF—M 20–35k]**, Elendil's Arnor + Gondor levies [INF—L 25–50k], Khazad-dûm contingent [INF—L 1–3k]. **Alliance total ~70,000–125,000 [INF—M-L]** — "not so many, nor so fair, as when Thangorodrim was broken" [CANON comparator]. Mordor: orc mass + Easterling/Haradrim clients + 9 Nazgûl [INF—L 100–200k across seven years; M7: Dagorlad + 7-year siege demands rotation]. 
 
 **Third Age**
-- **Angmar wars → Fornost (1409–1975):** Arthedain's fading levies + Elvish aid vs Carn Dûm's orcs and hillmen. Final battle: Gondor's army under Eärnur ("fleet filled Forlond and Harlond") + Círdan's elves + remnant Dúnedain [INF—L 15–25k combined] destroy Angmar's host [INF—L 15–30k].
-- **Wainrider wars (1851–1944):** Gondor's northern army destroyed then avenged (Calimehtar; Eärnil's camp-counterstroke at the Fords of Poros; the Wainriders "burned in the Dead Marshes") [CANON events; numbers insufficient — hosts of "many thousands", INF—L 20–50k a side].
+- **Angmar wars → Fornost (1409–1975):** Arthedain's fading levies + Elvish aid vs Carn Dûm's orcs and hillmen. Final battle: Gondor's army under Eärnur ("both the Harlond and the Forlond also were filled") + Círdan's elves + remnant Dúnedain [INF—L 15–25k combined] destroy Angmar's host [INF—L 15–30k].
+- **Wainrider wars (1851–1944):** Gondor's northern army destroyed then avenged (Calimehtar; Eärnil's camp-counterstroke at the Fords of Poros; Eärnil "set fire to the wains" and a great part of those who fled "perished in the Dead Marshes") [CANON events; numbers insufficient — hosts of "many thousands", INF—L 20–50k a side].
 - **Field of Celebrant (2510):** **Eorl: 7,000+ riders + several hundred horsed archers [CANON—H]**; Gondor's trapped northern army [INF—L 8–15k]; Balchoth+orc host [INF—L 25–50k; it had overrun the Wold].
 - **Azanulbizar (2799):** the mustered host of Durin's Folk + all Houses' contingents [INF—M 12–25k; M4: "barely half" survived]; orcs of the Misty Mountains [INF—L 20–40k; Gundabad-to-Gladden chain emptied].
-- **Battle of Five Armies (2941):** Elves [INF—L 2–5k "many spearmen and bowmen"], Men of the Lake ~[INF—M 0.5–1k], **Dáin's 500 Dwarves [CANON—H]**, Eagles + Beorn; Goblins+wargs of the North [INF—M-L 10–25k; M4 "three parts perished"].
+- **Battle of Five Armies (2941):** Elves [INF—L 2–5k "many spearmen and bowmen"], Men of the Lake ~[INF—M 0.5–1k], **Dáin's 500 Dwarves [CANON—H]**, Eagles + Beorn; Goblins+wargs of the North [INF—M-L 10–25k; M4 "three parts of the goblin warriors of the North perished"].
 - **War of the Ring (3018–19):**
   - **Fords of Isen (Feb 25 / Mar 2):** Rohan west-muster ~[INF—M 3–4k: Théodred's 8 companies + Grimbold + Elfhelm's reinforcements] vs Isengard's waves [INF—M 8–12k of the 10k+ total].
   - **Hornburg (Mar 3–4):** Rohan ~[INF—M ~3k: 1,000+ riders in, Gamling's 1,000, Erkenbrand's 1,000] vs **Saruman's 10,000+ [CANON—H]** incl. Dunlending levies. Huorn annihilation of the rout [CANON].
@@ -123,7 +123,7 @@ Point estimates with [range]; confidence per figure.
 
 ## 3. STRUCTURED DATA & THE INTERACTIVE DIAGRAM
 
-**Dataset:** `arda_armies.json` (site + this folder) — 14 campaigns; per campaign: era-position, two sides, contingents with {people-group, n, lo, hi, conf, cite}; female-share handled as annotations (see below).
+**Dataset:** `arda_armies.json` (site + this folder) — 30 campaigns; per campaign: era-position, two sides, contingents with {people-group, n, lo, hi, conf, cite}; female-share handled as annotations (see below).
 
 **Sex composition — modeling decision [stated, not hidden]:** every attested field army in the corpus is male, with three cited exceptions (Haleth's bodyguard of women; the nissi "in dire straits or desperate defence"; Éowyn). Painting ♂/♀ stacks would therefore fabricate percentages; instead the dashboard carries a **"Women & war" panel** quoting the three canon passages, and per-army tooltips state "recorded combatants male; exceptions noted". This follows the brief's own conservatism rule.
 

@@ -39,7 +39,12 @@ The worst class: it manufactures warrant.
   fashion", and **coal is not in the text at all**.
 - `lindon.dip`: "they refused to treat with him" → "they would not admit him to that land".
 - `thargelion.eco`: cites "the recorded toll-taking" → **no toll is recorded**.
-- `gondor.eco`: quotes "much traffic" → the word *traffic* never occurs in LotR.
+- `gondor.eco`: quotes "much traffic" → the phrase does not occur in LotR.
+  *Corrected 2026-07-24:* this originally read "the word *traffic* never occurs in
+  LotR", which is false — it stands at LotR:3862 as "little traffic", spelled with
+  an **ffi ligature** that `grep` cannot see and that is how the auditor missed it.
+  The finding is unchanged: the archive's "much traffic" is invented. The reason
+  given for it was not.
 - `greenwood.eco`: "the wine… came from far away" is not in the corpus.
 
 ## C. Statements that invert or contradict their own source (3)

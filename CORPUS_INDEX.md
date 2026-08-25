@@ -14,7 +14,7 @@
 > kept in the past tense rather than overwritten, which is the whole of the convention this header
 > was written to demonstrate: **a corrected absence is written past-tense, or with its retraction
 > attached.**
-> 
+>
 > The body below is **kept unaltered on purpose**. It is a dated record of what Phase 1 did,
 > exactly as `HANDOFF.md` and `LEDGER.md` are, and this archive's rule is that such a record
 > stays true to its day. What was wrong was not the numbers but the TENSE: written in the
@@ -23,7 +23,20 @@
 > door — which advertises 99 texts and 9,170,420 words — is not handed a document that
 > contradicts the link that sent them.
 
-Total extracted text: **5,615,333 words** across 28 volumes. Every volume's full text backs the archive's audits. The entity concordance (arda_concordance.json: 541 entities, 77,372 located mentions) is narrower and says so here: it is counted over 28 of the 49 volumes — atlas, beren_bl, bolt1, bolt2 … — so two entities compared in it are compared over the same 28 books and not over the shelf. The 21 outside it are apptables, artfotr, artist, artwork, companion_t, forodrim and 15 more. Widening is not automatic: hobbit_ill is the same book as hobbit and would double-count, and roleplay and companion_t are tier 3/4.
+Total extracted text: **6,885,537 words** across 49 volumes **as measured on 28 July 2026** (the body's own figure, 5,615,333 across 28, is Phase 1's and is kept below). Every volume's full text backs the archive's audits. The entity concordance (arda_concordance.json: 541 entities, 77,372 located mentions) is narrower and says so here: it is counted over 28 of the 49 volumes — atlas, beren_bl, bolt1, bolt2 … — so two entities compared in it are compared over the same 28 books and not over the shelf. The 21 outside it are apptables, artfotr, artist, artwork, companion_t, forodrim and 15 more. Widening is not automatic: hobbit_ill is the same book as hobbit and would double-count, and roleplay and companion_t are tier 3/4.
+
+
+> **AND THE CONCORDANCE CLAUSE ABOVE IS A JULY MEASUREMENT TOO — re-measured 25 August 2026.**
+> The sentence beginning *"The entity concordance (arda_concordance.json: 541 entities, 77,372
+> located mentions) … counted over 28 of the 49 volumes"* described the file as it stood when
+> `map/repair_concord_coverage.py` wrote it. **`site/arda_concordance.json` now holds 937 entities
+> and 315,105 located mentions over 188 of the 192 texts in the structure index.** The clause is
+> left standing rather than overwritten, for the reason this document's header already gives: the
+> body is a dated record and the fault was the TENSE, not the number.
+>
+> The shelf, on the same day: **260 registered sources** (`site/arda_sources.json`, 14,326,937
+> words) and **192 texts** in the structure index (`site/arda_corpusindex.json`, 13,711,157 words).
+> Counted from the datasets, not from a caption.
 
 | volume | words | content types |
 |---|---|---|

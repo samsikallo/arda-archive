@@ -59,12 +59,74 @@ BASELINE=os.path.join(SITE,".integrity_baseline.json")
 
 # ---- what a dataset's "size" means, per file -------------------------------------
 def count(path):
+    """The number of RECORDS, never the number of top-level keys.
+
+    THE FALLBACK USED TO MEASURE THE SCHEMA. `return sum(lists) if lists else len(d)`
+    counted TOP-LEVEL KEYS whenever a dataset held no list-valued member, and for a
+    dataset shaped `{"how": "...", "what": "...", "routes": {606 records}}` that is a
+    count of the WRAPPER, not of the wrapped. Measured 2026-08-25 on copies in a
+    scratch directory, never on the published files:
+
+        arda_leaf_fit.json  as published                   count() = 3
+        arda_leaf_fit.json  with 605 of 606 routes deleted count() = 3
+        arda_hall_fit.json  with ALL 31 halls deleted      count() = 3
+
+    A floor of 3 over 606 records cannot detect anything, and on the afternoon of
+    2026-08-25 (commit 6e26e4d) arda_leaf_fit and arda_hall_fit were given exactly
+    that floor -- which turned "NO BASELINE, this guard cannot call it shrunken" into
+    "98 datasets checked -- OK". A guard that admits its blindness was replaced by one
+    that reports health over it, which is strictly worse than the gap it repaired.
+
+    AND THE OBVIOUS REPAIR IS WRONG, WHICH IS WHY THE PREDICATE IS NOT "SUM THE DICTS".
+    Only 5 of the 98 datasets reach this fallback at all, and 2 of them were already
+    measured correctly:
+
+        arda_concordance.json  937 keys, ALL 937 dicts, 0 non-dict   len(d)=937 RECORDS
+        arda_herbarium.json     54 keys,   0 dicts,    54 strings    len(d)= 54 RECORDS
+        arda_leaf_fit.json       3 keys,   1 dict,      2 strings    a WRAPPER
+        arda_hall_fit.json       3 keys,   1 dict,      2 ints       a WRAPPER
+        arda_charset_check.json  5 keys,   2 dicts,     3 scalars    a WRAPPER
+
+    Summing dict members unconditionally would take arda_concordance from 937 records
+    to 5812 -- the sum of each record's SIX FIELDS. That is the same schema-for-
+    population error one level down, and it would silently re-baseline a dataset whose
+    floor was right.
+
+    THE TELL THAT SEPARATES THEM IS MIXTURE. A dict-of-records is homogeneous: every
+    top-level value is a record. A wrapper is not: its dicts are collections and its
+    scalars are metadata. So sum the dict members only when at least one non-dict
+    member proves this is a wrapper; otherwise the keys ARE the records. Measured over
+    all 98: this moves exactly the three wrappers (3->606, 3->31, 5->19) and leaves the
+    other 95 byte-identical.
+
+    AND THE DISCRIMINATOR HAS ITS OWN BLIND SPOT, SAID OUT LOUD. A wrapper whose every
+    top-level member happened to be a dict -- no scalar metadata at all -- would be read
+    as a dict-of-records and measured by its key count, which is this exact bug again.
+    No dataset has that shape today: of the 5 that reach this fallback, the only all-dict
+    one is arda_concordance, whose 937 keys really are its 937 records. If a future
+    dataset arrives shaped that way, this predicate will under-count it in silence.
+
+    THE HONEST LIMIT, DECLARED RATHER THAN LEFT TO BE DISCOVERED. This still counts
+    only ONE kind of member per dataset. 13 datasets hold a list AND a larger unwatched
+    dict -- arda_codex_manifest is floored at 7 while holding 655 routes,
+    arda_edge_scripts at 45 while holding 624, arda_gazetteer at 64 while holding 481 --
+    and 2 more (arda_eldamo_content, arda_mirrored_sources) sit at a floor of 0, which
+    is arithmetically unshrinkable. Those are real and they are NOT repaired here,
+    because widening the predicate would move 15 floors at once and a bulk floor move is
+    how a genuine shrinkage gets absorbed. They are written down so the next reader
+    inherits the measurement rather than the surprise.
+    """
     d=json.load(open(path))
     if isinstance(d,list): return len(d)
     if isinstance(d,dict):
-        # sum the lengths of the list-valued members; else count keys
+        # the collections, wherever they are: lists first, then wrapped dicts.
         lists=[len(v) for v in d.values() if isinstance(v,list)]
-        return sum(lists) if lists else len(d)
+        if lists: return sum(lists)
+        dicts=[len(v) for v in d.values() if isinstance(v,dict)]
+        # `len(dicts)<len(d)` -- a non-dict member is what proves this is a WRAPPER.
+        # Without it, a dict-of-records is measured by its records' FIELDS.
+        if dicts and len(dicts)<len(d): return sum(dicts)
+        return len(d)
     return 0
 
 # ---- 2. TWINS: claims duplicated across files, which must stay in step ------------

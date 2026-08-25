@@ -1,7 +1,7 @@
 # THE PEOPLES OF ARDA — A DEMOGRAPHIC MODEL
 ### Races, subraces, populations and armies across the Ages, built solely from the corpus in /home/raz/samsi
 
-**Source hierarchy.** Primary: Tolkien's narrative texts (Silmarillion; LotR + Appendices; Hobbit; Unfinished Tales; the three Great Tales; Fall of Númenor; Nature of Middle-earth [NoME]; History of Middle-earth I–XII [HoME]). Secondary within the corpus (flagged wherever used): Fonstad's Atlas, Hammond & Scull's Reader's Companion, the two Guides. *The Letters of J.R.R. Tolkien* is named in the task but is **not present in the folder**; no Letters citations are used. **No external sources were used anywhere in this model** — the "External information" heading required by the brief is therefore empty by design, and stated as such at the end.
+**Source hierarchy.** Primary: Tolkien's narrative texts (Silmarillion; LotR + Appendices; Hobbit; Unfinished Tales; the three Great Tales; Fall of Númenor; Nature of Middle-earth [NoME]; History of Middle-earth I–XII [HoME]). Secondary within the corpus (flagged wherever used): Fonstad's Atlas, Hammond & Scull's Reader's Companion, the two Guides. *The Letters of J.R.R. Tolkien* is **present in the corpus** as two tier-1 volumes; no Letters citations are used here; the refusals in §6 were re-checked against it and **none is filled** — the words *Avari*, *orc-women* and *female orc* occur there not at all, and Tolkien names the Harad among what general enquirers want of him and he has not told. **No external sources were used anywhere in this model** — the "External information" heading required by the brief is therefore empty by design, and stated as such at the end.
 
 **Labeling convention used throughout:**
 - **[CANON]** — directly stated in the corpus (quotation + source given).
@@ -83,7 +83,7 @@
 | Edain: Haladin | ~70–90 | shorter, fewer words | mortal-normal | fighting-women attested early | woodland republic (Haleth) | Thargelion→Brethil | "dwindled by war to a small people" |
 | Edain: Hador | ~70–90 | tall, golden | mortal-normal, largest house | 1:1 | warrior lordship | Hithlum/Dor-lómin | most numerous → enslaved after Nirnaeth |
 | Númenóreans | 350–420 (line of Elros ~400+); marry ♂50–100 ♀30–75 | very tall (2 rangar = 6'4" norm) | few (1–4), late; childbearing ≤ yr 125 | 1:1; queens ruled (Ruling Queens) | high maritime monarchy | Númenor S.A. 32–3319; colonies | 5–10k → 200–350k → 2M (S.A. 1000) → ~15M → **annihilated 3319** |
-| Dúnedain (Gondor) | 200+ early, waning to ~100 | tall | "married late... children few" | 1:1; male war-dead | stewardship state | Gondor T.A. | slow reproductive decline + Plague/Kin-strife/wars |
+| Dúnedain (Gondor) | 200+ early, waning to ~100 | tall | "the high men of the South married late, and their children were few" | 1:1; male war-dead | stewardship state | Gondor T.A. | slow reproductive decline + Plague/Kin-strife/wars |
 | Dúnedain (Arnor/Rangers) | as Gondor, better preserved (Aragorn 210) | tall | small families | male war-bands | itinerant chieftaincy | Eriador | kingdom-fall 1974 → hundreds |
 | Rohirrim | ~70–80 | tall, fair | agrarian-high | male cavalry culture | horse-lord kingship | Éothéod→Calenardhon 2510 | growth to ~Full Muster >12,000 riders |
 | Northmen/Dale/Beornings | ~70–80 | big-framed | agrarian-high | 1:1 | trade-towns, chiefdoms | Rhovanion, Long Lake | plague/war dips, TA recovery |
@@ -93,7 +93,7 @@
 | Hobbits | ~100 (record 131); adult 33 | 2–4 ft | high (up to 13 attested) | 1:1; male shirriffs/bounders | family-smial gentry | Anduin vale→Shire 1601 | steady growth in peace |
 | Dwarves (all houses) | ~250 | 4–5 ft, massive strength | ≤⅓ female; <⅓ of males marry; 1 spouse | ♂:♀ ≈ 2:1; women rarely abroad | mansion-kingships, crafts | seven mansions E→W | slow growth, crash-prone |
 | Ents | ageless | 14 ft | **zero since S.A.** | Entwives lost | shepherd-moots | Fangorn (remnant) | terminal decline (~50+ marchers) |
-| Orcs | unknown | shorter, strong | "multiply after the manner of the Children"; else unknown | females never mentioned | slave-hordes under Dark Lords | Angband; Misty Mtns; Mordor | boom-crash with each Dark Lord |
+| Orcs | unknown | shorter, strong | "multiplied after the manner of the Children"; else unknown | females never mentioned | slave-hordes under Dark Lords | Angband; Misty Mtns; Mordor | boom-crash with each Dark Lord |
 | Trolls/dragons/others | unknown | huge | unknown | unknown | none | scattered | uncounted |
 
 ---
@@ -121,7 +121,7 @@ Format: era-point — estimate (method; confidence). ♂/♀ splits where meanin
 - Awakening: **144** (72♂/72♀). [CANON]
 - Finding by Oromë (V.Y. 1085): **~3,460**; March departure: **~20,000 Eldar** (+ ~9–10.8k Avari stay). [CANON — NoME tables]
 - Arrival/settled Beleriand + Aman split: **~30,000 Eldar total**; Aman receives Vanyar (~2,000–3,100), most Noldor (~7–8.4k), a large Teleri part; Beleriand keeps Sindar-to-be (~11k) growing through the Peace of Melian. [CANON model]
-- Years of the Trees growth in Aman & Beleriand (≈ millennia): compounding at the canon begetting-pace roughly doubles population every 300–500 sun-years in peace → by the Exile: Noldor **~60,000–130,000**, of whom nine-tenths march ("but one tithe... refused the road", Silm 9): **exiles ~55,000–115,000**; Beleriand Sindar+Falathrim by F.A. 1: **~80,000–150,000**; Green-elves ~5–10k. (M3 growth rails + M2; **M** for orders, **L** for edges.)
+- Years of the Trees growth in Aman & Beleriand (≈ millennia): compounding at the canon begetting-pace roughly doubles population every 300–500 sun-years in peace → by the Exile: Noldor **~60,000–130,000**, of whom nine-tenths march ("but one tithe refused to take the road", Silm 9): **exiles ~55,000–115,000**; Beleriand Sindar+Falathrim by F.A. 1: **~80,000–150,000**; Green-elves ~5–10k. (M3 growth rails + M2; **M** for orders, **L** for edges.)
 - Cross-check [CANON]: Turgon marches **10,000** from one hidden city (Nirnaeth) → Gondolin ≈ 30–50k people (M1 at 20–30%); Nargothrond, Doriath, Hithlum, Falas comparable or larger → **Beleriand Eldar peak (c. F.A. 400–455): ~180,000–300,000, central ~230,000** (M1+M2; **M**).
 - Shocks: Bragollach & Nirnaeth (male war-dead in tens of thousands; ♀ share rises to ~55–60%); Falls 495–510; sacks of Doriath & Sirion. End of F.A. survivors gathered at Balar/Lindon: **~30,000–60,000** (M4; **M-L**).
 - S.A.: Lindon under Gil-galad **~40–80k at peak** (absorbs returnees; "great realm" [CANON phrasing]); Eregion **~5–15k** until 1697 (annihilated/absorbed → Imladris hundreds-to-2k); Silvan realms east of the mountains: Oropher's "now numerous people" + Amdír's Lórinand: **~40–80k combined** (M1 vs the "great army" lost at Dagorlad; **L-M**). Last Alliance losses: Silvan host returns "barely a third" [CANON] → Silvan crash ~-10-20k.
@@ -149,7 +149,7 @@ Format: era-point — estimate (method; confidence). ♂/♀ splits where meanin
 
 ### 3.4 Hobbits
 - Wandering days: bands of 10²–10³ crossing Eriador (Prologue) — **L**.
-- Shire founded 1601; "increased and prospered"; post-Plague recovery; Long Winter losses [CANON events].
+- Shire founded 1601; "prospered and multiplied"; post-Plague recovery; Long Winter losses [CANON events].
 - T.A. 3019: Shire **~100,000–250,000, central ~150,000** (M5: ~20k sq mi of good land at 5–12/sq mi hobbit-scale farming; M1 cross-check: ad-hoc musters of 100–300 per district within a day at Bywater [CANON numbers] imply village-web of hundreds of settlements; **M-L**). Bree-hobbits ~1k. ♂/♀ ~50:50; war losses trivial (19 dead at Bywater [CANON]).
 
 ### 3.5 Ents, Orcs, others
@@ -169,7 +169,7 @@ Sex split given as ♂% where the model departs from 50:50. C = confidence.
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Eldar (Aman) | 90000 | 110000 | 130000 | 140000 | 150000 | 160000 | 160000 | 170000 | 175000 | 180000 | 190000 | 195000 | L | grows by sailings; no war loss |
 | Eldar (Middle-earth) | 140000 | 230000 | 45000 | 110000 | 95000 | 80000 | 55000 | 50000 | 45000 | 40000 | 32000 | 28000 | M-L | Beleriand peak → crash → TA drain |
-| — of which Silvan | 30000 | 35000 | 38000 | 60000 | 65000 | 60000 | 40000 | 38000 | 35000 | 32000 | 26000 | 22000 | L | Dagorlad "barely a third came home" |
+| — of which Silvan | 30000 | 35000 | 38000 | 60000 | 65000 | 60000 | 40000 | 38000 | 35000 | 32000 | 26000 | 22000 | L | Dagorlad: Thranduil "led back home barely a third" |
 | Edain / Númenóreans | 0 | 80000 | 10000 | 2000000 | 4000000 | 15000000 | 60000 | — | — | — | — | — | M3 rails H/M | island only; annihilated 3319 |
 | Dúnedain (Gondor+Arnor) | — | — | — | — | 150000 | 400000 | 500000 | 2500000 | 1400000 | 900000 | 650000 | 550000 | M-L | incl. mixed populations under the crown |
 | — Dúnedain of the North | — | — | — | — | — | — | 150000 | 400000 | 250000 | 30000 | 3000 | 2500 | L | 1974 fall of Arthedain |

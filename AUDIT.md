@@ -1,9 +1,13 @@
 # THE AUDIT — Phases 4–5 of the re-ingestion
-### The archive's claims machine-checked against the full extracted corpus (5,615,333 words).
+### The archive's claims machine-checked against the corpus **as it stood on 23 July 2026** (5,615,333 words). It has grown since; see the addendum of 25 August 2026 at the foot.
 
 ## What was checked
 - **521 dated claims** (105 chronology event-years, 390 genealogy birth/death-years, 26 campaign-years) verified by direct text search across era-appropriate volumes, including App A's abbreviated year-spans ('2804–64').
-- **541 entities** concordanced across all 28 volumes (77,372 mentions located) — every archive person, place, battle and treasure now traceable to the books that speak of it.
+- **541 entities** concordanced across the 28 volumes the concordance covers (77,372 mentions located)
+  — **as measured on 23 July 2026**. Every archive person, place, battle and treasure was thereby
+  traceable to the books that speak of it. This line formerly read *"across all 28 volumes"* in the
+  present tense; 28 is not the shelf and has not been since, and the concordance's coverage is
+  stated where the number is, in CORPUS_INDEX.md.
 - Structural cross-consistency (edges, actors, links, bounds) re-run clean.
 
 ## Findings & classification (per the audit brief)
@@ -51,3 +55,25 @@ not look at a single one of the audit's numbers; these four were counted by hand
 from the datasets.
 
 Found by the Adversary session, 2026-07-28.
+
+## Addendum (2026-08-25) — the corpus this audit was checked against, re-measured
+
+The two figures above are dated now rather than overwritten, because a history keeps its numbers.
+Re-measured today against `site/arda_sources.json` and `site/arda_corpusindex.json`:
+
+| measured | 23 Jul 2026 | 28 Jul 2026 | 25 Aug 2026 |
+|---|---|---|---|
+| the shelf | 28 volumes, 5,615,333 words | 49 texts, 6,885,537 words | **260 registered sources**, 14,326,937 words |
+| the structure index | — | — | **192 texts, 13,711,157 words** |
+| the entity concordance | 541 entities over 28 volumes, 77,372 mentions | unchanged | **937 entities over 188 of 192 volumes, 315,105 mentions** |
+
+So the audit's own coverage has not widened with the shelf: the 521 dated claims were checked
+against a corpus roughly a fifth of today's register. The concordance HAS been rebuilt since —
+the 541-over-28 figure quoted in the body is the July file, not the one the halls read today —
+but the 521 dated claims were never re-put to the wider set. Nothing above is withdrawn; what is
+withdrawn, again, is the present tense.
+
+Measured with `python3 map/repair_concord_coverage.py` (report mode), which counts the dataset
+rather than reading a caption, and which now refuses on its own declared invariant precisely
+because the file it guards has moved: *"REFUSING: the sum of n is 315105, not the published
+77,372."* That refusal is how this row was found.

@@ -66,8 +66,15 @@ states the tengwar grade formulas but only ~15 of 58 certh values.
 - **Fabricated quotation** at Weathertop ("A pale king… stabbed at the shoulder of Frodo" — 0 hits);
   **misattributed quotation** at Parth Galen ("I will take the Ring" is the Council of Elrond,
   four months earlier).
-- **Framsburg is a phantom**: zero hits in any t1/UT text, absent from the Baynes list UT
-  enumerates, and it carries **two conflicting coordinates** ~59 miles apart.
+- **Framsburg**: zero hits in any t1/UT text — that half stands. But *"absent from the Baynes
+  list"* is **wrong, corrected 2026-07-26**: the Reader's Companion glosses it among the
+  Pauline Baynes map-names, between Eryn Vorn and Lond Daer, as *"Framsburg, near Eotheod,
+  presumably a stronghold named for Fram, son of Frumgar, who slew the dragon Scatha"*. So the
+  NAME is Tolkien's, supplied by him for that map; what the Companion says the place *is*, is
+  expressly a guess; and no narrative text places it. It carried **two conflicting coordinates**
+  ~59 miles apart, and VECTOR_MAP_SPEC §8.4 flags the 800-mile figure as jointly unsatisfiable.
+  The living map cited it to "App A II; UT" — neither of which contains it — and now says what
+  is true of it.
 - Angband's 150 leagues and Brithombar's 473 are cited to *The Silmarillion*, **which carries no
   years at all** — both are Grey Annals (HoME XI).
 - "Bree & the East Road" in the Hobbit journey: **Bree is never mentioned in The Hobbit.**

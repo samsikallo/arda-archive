@@ -640,7 +640,7 @@ Mindeb: [(548,608) below Anach,(541,580),(535,544) joins Sirion]  Conf H
 Gelion: Little Gelion [(779,679),(803,640),(821,606)]; Greater Gelion [(869,701),
   (851,651),(825,601) arms meet]; main [(825,601),(821,509),(818,435) Sarn
   Athrad ford + Ascar confl just below,(813,353),(808,268),(803,211),(799,154)
-  exits S edge — annotation "flows on; twice Sirion's length"]  Conf H
+  exits S edge — annotation "flows on; twice as long as Sirion"]  Conf H
 Ossiriand tributaries (Ered Luin -> Gelion, N->S):
   Ascar/Rathloriel [(898,438),(858,434),(820,432)]
   Thalos  [(898,395),(816,384)] ; Legolin [(898,353),(812,341)]
