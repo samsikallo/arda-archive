@@ -139,12 +139,24 @@ The figure is the Annals'. Christopher Tolkien quotes it in his introduction to 
 
 *Sources & where displayed:* Annals of Beleriand (quoted at CoH intro) vs the published Silm map · RECONSTRUCTION.md B2, §3.1
 
-## Who built the White Tower of Minas Anor  
-*[editorial choice vs manuscript]*
+## The White Tower of Minas Anor — an omission, not a rival ascription  
+*[silence in one text vs record in another]*
 
-App A ascribes the building one way; HoME XII's Heirs of Elendil ascribes it to Calimehtar — CT notes the discrepancy.
+**This entry formerly read "App A ascribes the building one way; HoME XII ascribes it to
+Calimehtar", and that was wrong** — corrected 25 August 2026 against the source. Appendix A does
+not ascribe the building to anyone. Christopher Tolkien's note is explicit: *"The building of the
+White Tower by Kalimehtar is not referred to in Appendix A, but is recorded in the Tale of Years,
+Third Age 1900."* (*The Peoples of Middle-earth*, Heirs of Elendil, the Kalimehtar note.) So the
+two texts do not disagree about a builder; **one is silent where the other records.**
 
-**Authority & handling:** Both ascriptions carried in the Gondor line notes.
+**Authority & handling:** the ascription to Kalimehtar stands, carried in the Gondor line notes and
+attributed to the Tale of Years rather than to Appendix A. **A silence is not a counter-claim** —
+the archive's own standing rule — and an entry that reads a gap as a dispute manufactures a
+contradiction out of nothing. The vagueness of the old wording ("ascribes the building one way")
+was the tell that no one had opened the passage.
+
+*Note on spelling:* the source spells the king **Kalimehtar**; **Calimehtar** is the more familiar
+form and appears throughout the corpus. They are the same king, not two.
 
 *Sources & where displayed:* App A vs HoME XII · genealogy
 
