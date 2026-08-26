@@ -306,7 +306,7 @@ FB.addEventListener("click",()=>{
  +'<label>Where? <input id="fbp" type="text"></label>'
  +'<label>Tell us \u2014 the more specific, the better:<br><textarea id="fbx" rows="5" placeholder="What happened / what you expected / what you would change\u2026"></textarea></label>'
  +'<label>Nickname <i>(optional)</i>: <input id="fbn" type="text" placeholder="leave empty to stay anonymous"></label>'
- +'<div class="fbbtns"><button id="fbgh">open as a GitHub issue</button><button id="fbmail">send by e-mail</button><button id="fbclose">close</button></div>'
+ +'<div class="fbbtns"><button id="fbgh">open as a GitHub issue</button><button id="fbclose">close</button></div>'
  +'<div class="fbnote"><b>Privacy, plainly:</b> this site stores nothing you type \u2014 there is no server behind it. Your text is handed to the channel you choose: a <b>GitHub issue</b> is public and governed by GitHub\u2019s terms; <b>e-mail</b> reveals your address to the site\u2019s maintainer, who uses it only to read your feedback. Both are optional; name and e-mail are never required. Please include no sensitive personal data.</div>';
  document.body.appendChild(d);
  if(window.ardaLayers){window.ardaLayers.register("feedback",d,FB,{takeFocus:true});window.ardaLayers.open("feedback");}
@@ -316,8 +316,12 @@ FB.addEventListener("click",()=>{
   return {t,p,x,n,body:"["+t+"] on "+p+"\n\n"+x+(n?"\n\n\u2014 "+n:"")}};
  document.getElementById("fbgh").onclick=()=>{const g=gather();if(!g.x){alert("Write a few words first \u2014 specifics help most.");return}
   open("https://github.com/samsikallo/arda-archive/issues/new?title="+encodeURIComponent("["+g.t+"] "+g.p)+"&body="+encodeURIComponent(g.body),"_blank")};
- document.getElementById("fbmail").onclick=()=>{const g=gather();if(!g.x){alert("Write a few words first \u2014 specifics help most.");return}
-  location.href="mailto:bobo.linux@gmail.com?subject="+encodeURIComponent("[arda-archive feedback] "+g.t)+"&body="+encodeURIComponent(g.body)};
+ /* HIS RULING, 26 August 2026: the mailto is removed and feedback goes through the public issue
+    path only. A personal address sat here behind the "email instead" button and nav.js is loaded
+    by ALL 653 published pages, so it was scrapable from every one of them. It was put here
+    deliberately in a Reddit-ready pass and no ruling ever covered it, which is why it read as an
+    accident to every audit. Removing the button rather than blanking the address: a control that
+    does nothing is worse than an absent one. */
  document.getElementById("fbclose").onclick=()=>{
   if(window.ardaLayers)window.ardaLayers.close("button"); else d.style.display="none"};
 });
