@@ -1,6 +1,7 @@
 {
  "what": "WHAT TOLKIEN FANDOM BELIEVES, and what the corpus does with it. Fan encyclopedias, fan fiction archives, forums, games' inventions and the theories that circulate -- recorded as BELIEFS held by named people in named places, never as facts about Arda. A SEPARATE LAYER in a separate file.",
  "no_tier": "NO ROW CARRIES A TIER. The tiers rank claims about Arda by distance from Tolkien's word; a row here is a claim about what a FAN COMMUNITY says. Every row carries a hand, a source URL, a retrieved_at and a licence as stated. Not to be confused with C474's `tier: 5`, which is an ORIGIN axis meaning made by this archive.",
+ "why_corpus_tier_and_not_tier": "A locus carries `corpus_tier` -- the tier of the CORPUS FILE a quotation was found in, which is a property of the shelf and not a rank on this row. It is named `corpus_tier` rather than `tier` so that a reader grepping this file for a tier finds nothing that could be mistaken for one.",
  "the_field_that_matters": "`attestation`. Every row states what the corpus does with the claim, MEASURED by map/ardatext.py at generation over every corpus file, with every locus published. Nothing here is called unattested because it looked unlikely.",
  "four_verdicts_not_two": {
   "not attested": "the string occurs nowhere in the corpus",
@@ -58,61 +59,61 @@
       "loci": [
        {
         "file": "t2_vinyar_tengwar_41_50.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 5839
        },
        {
         "file": "t3_a_sindarin_and_noldorin_dictionary.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 45
        },
        {
         "file": "t3_ardalambion_artlang_htm.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 135
        },
        {
         "file": "t3_ardalambion_index_htm.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 250
        },
        {
         "file": "t3_ardalambion_sindverb_htm.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 53
        },
        {
         "file": "t3_ardalambion_sverb_rec_htm.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 208
        },
        {
         "file": "t3_ardalambion_whoami_htm.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 38
        },
        {
         "file": "t3_eldamo_vte_vt_errata.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 128
        },
        {
         "file": "t3_lotr_1954_2004.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 9856
        },
        {
         "file": "t3_the_ring_goes_ever_on.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 43961
        },
        {
         "file": "t3_tolkienian_linguistics_the_first_fifty_y.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1057
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        2,
        3
       ],
@@ -124,11 +125,11 @@
       "loci": [
        {
         "file": "t3_mallorn_36.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 704
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        3
       ],
       "reading": "one occurrence, in Mallorn 36 -- the Tolkien Society's journal discussing the fandom, not Tolkien writing about Dwarves."
@@ -163,61 +164,61 @@
       "loci": [
        {
         "file": "t1_the_collected_poems_of_j_r_r_tolkien.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 31010
        },
        {
         "file": "t2_the_history_of_the_hobbit.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 35995
        },
        {
         "file": "t3_ardalambion_qlindex1_htm.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 5871
        },
        {
         "file": "t3_giraudeau_parma_eldalamberon_12_changes_in_the_2011_.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 177
        },
        {
         "file": "t3_mallorn_23.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1752
        },
        {
         "file": "t3_mallorn_33_proceedings_of_the_j_r_r_tolkien_centenar.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 14412
        },
        {
         "file": "t3_mallorn_35.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1392
        },
        {
         "file": "t3_mallorn_43.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 3493
        },
        {
         "file": "t3_mallorn_50.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1980
        },
        {
         "file": "t3_patrick_curry_defending_middle_earth.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 2441
        },
        {
         "file": "t3_perilous_realms_marjorie_burns.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 126
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        1,
        2,
        3
@@ -254,46 +255,46 @@
       "loci": [
        {
         "file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 38950
        },
        {
         "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 4924
        },
        {
         "file": "t3_lotr_1954_2004.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1499
        },
        {
         "file": "t3_mallorn_34.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1260
        },
        {
         "file": "t3_mallorn_35.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 345
        },
        {
         "file": "t3_mallorn_50.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 375
        },
        {
         "file": "t3_mallorn_51.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1986
        },
        {
         "file": "t3_the_complete_tolkien_companion.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 9614
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        2,
        3
       ],
@@ -305,46 +306,46 @@
       "loci": [
        {
         "file": "t1_the_letters_of_j_r_r_tolkien.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 8318
        },
        {
         "file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 10853
        },
        {
         "file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 14097
        },
        {
         "file": "t3_ardalambion_qlindex1_htm.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1090
        },
        {
         "file": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 2393
        },
        {
         "file": "t3_mallorn_19.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1828
        },
        {
         "file": "t3_mallorn_31.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 2724
        },
        {
         "file": "t3_mallorn_33_proceedings_of_the_j_r_r_tolkien_centenar.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 4523
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        1,
        2,
        3
@@ -357,61 +358,61 @@
       "loci": [
        {
         "file": "t1_the_letters_of_j_r_r_tolkien.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 14250
        },
        {
         "file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 434
        },
        {
         "file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 5959
        },
        {
         "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 2936
        },
        {
         "file": "t3_mallorn_34.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1444
        },
        {
         "file": "t3_mallorn_49.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 674
        },
        {
         "file": "t3_mallorn_50.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 409
        },
        {
         "file": "t3_mallorn_51.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 958
        },
        {
         "file": "t3_mallorn_57.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1258
        },
        {
         "file": "t3_the_ring_goes_ever_on.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 33253
        },
        {
         "file": "t3_the_road_to_middle_earth_tom_shippey.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 3527
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        1,
        2,
        3
@@ -424,231 +425,231 @@
       "loci": [
        {
         "file": "t1_10_morgoths_ring.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 6007
        },
        {
         "file": "t1_11_the_war_of_the_jewels.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 1533
        },
        {
         "file": "t1_12_the_peoples_of_middle_earth.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 8715
        },
        {
         "file": "t1_13_index.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 2063
        },
        {
         "file": "t1_2_the_book_of_lost_tales_part_two.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 3272
        },
        {
         "file": "t1_8_the_war_of_the_ring.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 13990
        },
        {
         "file": "t1_a_the_silmarillion.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 3042
        },
        {
         "file": "t1_c_the_lord_of_the_rings.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 37906
        },
        {
         "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 8037
        },
        {
         "file": "t1_the_collected_poems_of_j_r_r_tolkien.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 2729
        },
        {
         "file": "t1_the_letters_of_j_r_r_tolkien.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 187
        },
        {
         "file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 793
        },
        {
         "file": "t2_h_the_fall_of_numenor_and_other_tales_from_the_secon.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 9090
        },
        {
         "file": "t2_the_history_of_the_hobbit.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 12460
        },
        {
         "file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 6199
        },
        {
         "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 4372
        },
        {
         "file": "t3_ardalambion_sauronname_htm.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 16
        },
        {
         "file": "t3_lotr_1954_2004.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 3934
        },
        {
         "file": "t3_mallorn_14.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 967
        },
        {
         "file": "t3_mallorn_24.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1548
        },
        {
         "file": "t3_mallorn_26.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 2432
        },
        {
         "file": "t3_mallorn_28.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 2733
        },
        {
         "file": "t3_mallorn_33_proceedings_of_the_j_r_r_tolkien_centenar.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 19593
        },
        {
         "file": "t3_mallorn_34.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1444
        },
        {
         "file": "t3_mallorn_37.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1628
        },
        {
         "file": "t3_mallorn_39.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 797
        },
        {
         "file": "t3_mallorn_40.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 358
        },
        {
         "file": "t3_mallorn_41.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 2591
        },
        {
         "file": "t3_mallorn_42.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 2805
        },
        {
         "file": "t3_mallorn_43.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 2880
        },
        {
         "file": "t3_mallorn_45.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 2733
        },
        {
         "file": "t3_mallorn_46.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1312
        },
        {
         "file": "t3_mallorn_48.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 272
        },
        {
         "file": "t3_mallorn_55.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1919
        },
        {
         "file": "t3_mallorn_58_updated.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 45
        },
        {
         "file": "t3_mallorn_64_corrected.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1751
        },
        {
         "file": "t3_picturing_tolkien_janice_m_bogstad_and_philip_e_kave.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 7295
        },
        {
         "file": "t3_the_atlas_of_middle_earth.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1843
        },
        {
         "file": "t3_the_complete_guide_to_middle_earth.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1536
        },
        {
         "file": "t3_the_complete_tolkien_companion.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1049
        },
        {
         "file": "t3_the_ring_goes_ever_on.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 832
        },
        {
         "file": "t3_tolkien_s_legendarium.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 9446
        },
        {
         "file": "t3_tolkien_studies_10.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 11069
        },
        {
         "file": "t4_letterschanges.txt",
-        "tier": 4,
+        "corpus_tier": 4,
         "line": 479
        },
        {
         "file": "t4_reader_and_educator_guide_to_the_hobbit_and_the_lord.txt",
-        "tier": 4,
+        "corpus_tier": 4,
         "line": 5247
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        1,
        2,
        3,
@@ -687,21 +688,21 @@
       "loci": [
        {
         "file": "t1_7_the_treason_of_isengard.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 8933
        },
        {
         "file": "t1_c_the_lord_of_the_rings.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 15153
        },
        {
         "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 15752
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        1,
        2
       ],
@@ -713,16 +714,16 @@
       "loci": [
        {
         "file": "t1_c_the_lord_of_the_rings.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 15144
        },
        {
         "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 15750
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        1,
        2
       ],
@@ -734,21 +735,21 @@
       "loci": [
        {
         "file": "t1_4_the_shaping_of_middle_earth.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 6660
        },
        {
         "file": "t1_a_the_silmarillion.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 11440
        },
        {
         "file": "t1_g_the_fall_of_gondolin.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 3050
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        1
       ],
       "reading": null
@@ -783,76 +784,76 @@
       "loci": [
        {
         "file": "t1_12_the_peoples_of_middle_earth.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 12756
        },
        {
         "file": "t1_13_index.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 713
        },
        {
         "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 12233
        },
        {
         "file": "t1_the_collected_poems_of_j_r_r_tolkien.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 52672
        },
        {
         "file": "t1_the_letters_of_j_r_r_tolkien.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 19412
        },
        {
         "file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 24117
        },
        {
         "file": "t2_the_history_of_the_hobbit.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 10793
        },
        {
         "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 13525
        },
        {
         "file": "t3_a_gateway_to_sindarin.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 9242
        },
        {
         "file": "t3_ardalambion_sindarin_htm.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 786
        },
        {
         "file": "t3_mallorn_41.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1600
        },
        {
         "file": "t3_mallorn_53.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 44
        },
        {
         "file": "t3_the_complete_tolkien_companion.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 475
        },
        {
         "file": "t3_the_ring_goes_ever_on.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 4296
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        1,
        2,
        3
@@ -865,51 +866,51 @@
       "loci": [
        {
         "file": "t1_12_the_peoples_of_middle_earth.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 15293
        },
        {
         "file": "t1_13_index.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": null
        },
        {
         "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 12233
        },
        {
         "file": "t1_the_letters_of_j_r_r_tolkien.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 19411
        },
        {
         "file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 24117
        },
        {
         "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 13505
        },
        {
         "file": "t3_a_gateway_to_sindarin.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 9242
        },
        {
         "file": "t3_ardalambion_sindarin_htm.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 786
        },
        {
         "file": "t3_the_complete_tolkien_companion.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 3214
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        1,
        2,
        3
@@ -922,31 +923,31 @@
       "loci": [
        {
         "file": "t1_12_the_peoples_of_middle_earth.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 12741
        },
        {
         "file": "t1_13_index.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 12956
        },
        {
         "file": "t2_the_history_of_the_hobbit.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 10813
        },
        {
         "file": "t3_ardalambion_quen_eng_htm.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 4410
        },
        {
         "file": "t3_eldamo_qq_quen_eng_doc.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 5557
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        1,
        2,
        3
@@ -959,56 +960,56 @@
       "loci": [
        {
         "file": "t1_12_the_peoples_of_middle_earth.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 12757
        },
        {
         "file": "t1_13_index.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 713
        },
        {
         "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 12331
        },
        {
         "file": "t2_the_history_of_the_hobbit.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 37165
        },
        {
         "file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 28921
        },
        {
         "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 13525
        },
        {
         "file": "t3_mallorn_28.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 2140
        },
        {
         "file": "t3_mallorn_41.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1599
        },
        {
         "file": "t3_mallorn_53.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 32
        },
        {
         "file": "t3_the_complete_tolkien_companion.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 475
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        1,
        2,
        3
@@ -1045,16 +1046,16 @@
       "loci": [
        {
         "file": "t3_ardalambion_p2_htm.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 3408
        },
        {
         "file": "t3_ardalambion_primelv_htm.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 3498
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        3
       ],
       "reading": "two files, both Ardalambion -- Helge Fauskanger's Elvish linguistics pages ANALYSING the film's invented name. A tier-3 scholar discussing a film prop is not Tolkien naming a sword."
@@ -1089,11 +1090,11 @@
       "loci": [
        {
         "file": "t1_7_the_treason_of_isengard.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 16249
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        1
       ],
       "reading": "ONE occurrence in the whole corpus, and it is the MUAR RIVER IN MALAYA. Christopher Tolkien, dating a manuscript by what his father had scribbled on the back of an examination script, notes japanese attack in malaya and muar river among the jottings, and a footnote gives the crossing of the Muar as 16 January 1942. A Balrog probe answering FOUND on a Second World War river crossing is this archive's oldest fault in one line."
@@ -1126,14 +1127,14 @@
       "asked": "Thaurlach",
       "hits": 0,
       "loci": [],
-      "tiers": [],
+      "corpus_tiers": [],
       "reading": null
      },
      {
       "asked": "Tar Goroth",
       "hits": 0,
       "loci": [],
-      "tiers": [],
+      "corpus_tiers": [],
       "reading": null
      }
     ],
@@ -1164,7 +1165,7 @@
       "asked": "New Notion Club Archives",
       "hits": 0,
       "loci": [],
-      "tiers": [],
+      "corpus_tiers": [],
       "reading": "absent, as the project's own name should be."
      },
      {
@@ -1173,121 +1174,121 @@
       "loci": [
        {
         "file": "t1_12_the_peoples_of_middle_earth.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 76
        },
        {
         "file": "t1_13_index.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 15176
        },
        {
         "file": "t1_7_the_treason_of_isengard.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 5380
        },
        {
         "file": "t1_a_the_silmarillion.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": null
        },
        {
         "file": "t1_c_appendix_tables_raw.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 558
        },
        {
         "file": "t1_c_the_lord_of_the_rings.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 46365
        },
        {
         "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 13130
        },
        {
         "file": "t2_h_the_fall_of_numenor_and_other_tales_from_the_secon.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 202
        },
        {
         "file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 24528
        },
        {
         "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 7008
        },
        {
         "file": "t3_ardalambion_quenya_htm.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 59
        },
        {
         "file": "t3_ardalambion_sindarin_htm.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 225
        },
        {
         "file": "t3_forodrim.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 386
        },
        {
         "file": "t3_mallorn_18.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": null
        },
        {
         "file": "t3_mallorn_34.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1834
        },
        {
         "file": "t3_mallorn_39.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1679
        },
        {
         "file": "t3_mallorn_4.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1150
        },
        {
         "file": "t3_mallorn_43.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 289
        },
        {
         "file": "t3_mallorn_8.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": null
        },
        {
         "file": "t3_parma_eldalamberon_vol_1_no_5.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 959
        },
        {
         "file": "t3_the_atlas_of_middle_earth.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 32
        },
        {
         "file": "t3_the_complete_tolkien_companion.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 752
        },
        {
         "file": "t3_the_ring_goes_ever_on.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 3464
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        1,
        2,
        3
@@ -1324,51 +1325,51 @@
       "loci": [
        {
         "file": "t2_the_history_of_the_hobbit.txt",
-        "tier": 2,
+        "corpus_tier": 2,
         "line": 36398
        },
        {
         "file": "t3_mallorn_20.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 265
        },
        {
         "file": "t3_mallorn_23.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1413
        },
        {
         "file": "t3_mallorn_31.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 2505
        },
        {
         "file": "t3_mallorn_33_proceedings_of_the_j_r_r_tolkien_centenar.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 17493
        },
        {
         "file": "t3_mallorn_40.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 2930
        },
        {
         "file": "t3_mallorn_60.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 35
        },
        {
         "file": "t3_the_ring_goes_ever_on.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 10299
        },
        {
         "file": "t4_the_lord_of_the_rings_urania_finarte_14_12_2022.txt",
-        "tier": 4,
+        "corpus_tier": 4,
         "line": 717
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        2,
        3,
        4
@@ -1381,31 +1382,31 @@
       "loci": [
        {
         "file": "t3_mallorn_20.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 266
        },
        {
         "file": "t3_mallorn_23.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 1786
        },
        {
         "file": "t3_mallorn_33_proceedings_of_the_j_r_r_tolkien_centenar.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 17493
        },
        {
         "file": "t3_the_ring_goes_ever_on.txt",
-        "tier": 3,
+        "corpus_tier": 3,
         "line": 10672
        },
        {
         "file": "t4_the_lord_of_the_rings_urania_finarte_14_12_2022.txt",
-        "tier": 4,
+        "corpus_tier": 4,
         "line": 717
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        3,
        4
       ],
@@ -1461,7 +1462,7 @@
       "asked": "The Passing of the Elven-kind",
       "hits": 0,
       "loci": [],
-      "tiers": [],
+      "corpus_tiers": [],
       "reading": "absent, as a 1959 fanzine poem should be."
      },
      {
@@ -1470,11 +1471,11 @@
       "loci": [
        {
         "file": "t1_the_collected_poems_of_j_r_r_tolkien.txt",
-        "tier": 1,
+        "corpus_tier": 1,
         "line": 56971
        }
       ],
-      "tiers": [
+      "corpus_tiers": [
        1
       ],
       "reading": "one hit, in The Collected Poems -- and it is JABBERWOCKY. All mimsy were the borogoves, quoted whole in the editorial matter beside Tolkien's Old English translation of Carroll. The fanzine took its title from the same line, sixty years earlier, and a probe for the fanzine finds Lewis Carroll."

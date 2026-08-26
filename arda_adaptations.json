@@ -1,6 +1,7 @@
 {
  "what": "ADAPTATIONS OF TOLKIEN'S WORK -- films, television, radio, video games, tabletop games, music and print -- and where named adaptations DIVERGE from the text. A SEPARATE LAYER, in a separate file, because the protocol asks for separately queryable layers and a flag inside the canon datasets fails its own audit 4 by construction.",
  "no_tier": "NO ROW CARRIES A TIER. The tiers rank claims about ARDA by distance from Tolkien's word; an adaptation makes a claim about a FILM. Every row carries a HAND, a SOURCE URL, a RETRIEVED_AT and a LICENCE AS STATED instead. Note also C474: `tier: 5` elsewhere in this archive is an ORIGIN axis meaning made by this archive, with `content_tier` beside it -- a different axis again, and nothing here carries either.",
+ "why_corpus_tier_and_not_tier": "A locus carries `corpus_tier` -- the tier of the CORPUS FILE a quotation was found in, which is a property of the shelf and not a rank on this row. It is named `corpus_tier` rather than `tier` so that a reader grepping this file for a tier finds nothing that could be mistaken for one.",
  "not_the_canon": "Nothing in this file is evidence about Middle-earth. A reader who wants what Tolkien wrote wants site/arda_quotes.json or the corpus; a reader who wants what a fan believes wants site/arda_fanon.json.",
  "sibling": "site/arda_fanon.json holds the fan layer. The two are separate files for the same reason both are separate from the canon datasets.",
  "provenance": {
@@ -3968,11 +3969,11 @@
     "loci": [
      {
       "file": "t1_c_the_lord_of_the_rings.txt",
-      "tier": 1,
+      "corpus_tier": 1,
       "line": 10113
      }
     ],
-    "tiers": [
+    "corpus_tiers": [
      1
     ],
     "note": "Frodo faces the Riders at the Ford alone and unhorsed of any rescuer; Arwen is not present in the chapter.",
@@ -4005,26 +4006,26 @@
     "loci": [
      {
       "file": "t1_c_the_lord_of_the_rings.txt",
-      "tier": 1,
+      "corpus_tier": 1,
       "line": 6102
      },
      {
       "file": "t1_the_adventures_of_tom_bombadil_and_other_verses_from.txt",
-      "tier": 1,
+      "corpus_tier": 1,
       "line": 104
      },
      {
       "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
-      "tier": 2,
+      "corpus_tier": 2,
       "line": 9352
      },
      {
       "file": "t3_the_ring_goes_ever_on.txt",
-      "tier": 3,
+      "corpus_tier": 3,
       "line": 35480
      }
     ],
-    "tiers": [
+    "corpus_tiers": [
      1,
      2,
      3
@@ -4059,26 +4060,26 @@
     "loci": [
      {
       "file": "t1_c_the_lord_of_the_rings.txt",
-      "tier": 1,
+      "corpus_tier": 1,
       "line": 30196
      },
      {
       "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
-      "tier": 2,
+      "corpus_tier": 2,
       "line": 22580
      },
      {
       "file": "t3_the_ring_goes_ever_on.txt",
-      "tier": 3,
+      "corpus_tier": 3,
       "line": 41094
      },
      {
       "file": "t4_reader_and_educator_guide_to_the_hobbit_and_the_lord.txt",
-      "tier": 4,
+      "corpus_tier": 4,
       "line": 4859
      }
     ],
-    "tiers": [
+    "corpus_tiers": [
      1,
      2,
      3,
@@ -4114,11 +4115,11 @@
     "loci": [
      {
       "file": "t1_c_the_lord_of_the_rings.txt",
-      "tier": 1,
+      "corpus_tier": 1,
       "line": 23814
      }
     ],
-    "tiers": [
+    "corpus_tiers": [
      1
     ],
     "note": "The relief that comes is Erkenbrand's, Gandalf's, and the Huorns'. No elvish host rides to the Hornburg in the text.",
@@ -4151,11 +4152,11 @@
     "loci": [
      {
       "file": "t1_c_the_lord_of_the_rings.txt",
-      "tier": 1,
+      "corpus_tier": 1,
       "line": 38286
      }
     ],
-    "tiers": [
+    "corpus_tiers": [
      1
     ],
     "note": "He lies down on the pyre and is consumed there, clasping the palantir.",
@@ -4188,16 +4189,16 @@
     "loci": [
      {
       "file": "t1_c_the_lord_of_the_rings.txt",
-      "tier": 1,
+      "corpus_tier": 1,
       "line": 37109
      },
      {
       "file": "t3_the_road_to_middle_earth_tom_shippey.txt",
-      "tier": 3,
+      "corpus_tier": 3,
       "line": 8221
      }
     ],
-    "tiers": [
+    "corpus_tiers": [
      1,
      3
     ],
@@ -4231,11 +4232,11 @@
     "loci": [
      {
       "file": "t1_c_the_lord_of_the_rings.txt",
-      "tier": 1,
+      "corpus_tier": 1,
       "line": 44926
      }
     ],
-    "tiers": [
+    "corpus_tiers": [
      1
     ],
     "note": "The Shire's ruin and its cleansing occupy a full chapter of the last book.",
@@ -4268,12 +4269,12 @@
     "loci": [
      {
       "file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
-      "tier": 2,
+      "corpus_tier": 2,
       "line": 2499
      },
      {
       "file": "t3_mallorn_55.txt",
-      "tier": 3,
+      "corpus_tier": 3,
       "line": 2128
      }
     ],
@@ -4308,16 +4309,16 @@
     "loci": [
      {
       "file": "t1_12_the_peoples_of_middle_earth.txt",
-      "tier": 1,
+      "corpus_tier": 1,
       "line": 9620
      },
      {
       "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
-      "tier": 2,
+      "corpus_tier": 2,
       "line": 32074
      }
     ],
-    "tiers": [
+    "corpus_tiers": [
      1,
      2
     ],
@@ -4380,11 +4381,11 @@
     "loci": [
      {
       "file": "t1_a_the_silmarillion.txt",
-      "tier": 1,
+      "corpus_tier": 1,
       "line": 13028
      }
     ],
-    "tiers": [
+    "corpus_tiers": [
      1
     ],
     "note": "The published Silmarillion gives him a few sentences and a death.",
@@ -4417,16 +4418,16 @@
     "loci": [
      {
       "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
-      "tier": 1,
+      "corpus_tier": 1,
       "line": 7530
      },
      {
       "file": "t2_h_the_fall_of_numenor_and_other_tales_from_the_secon.txt",
-      "tier": 2,
+      "corpus_tier": 2,
       "line": 5077
      }
     ],
-    "tiers": [
+    "corpus_tiers": [
      1,
      2
     ],
@@ -4460,11 +4461,11 @@
     "loci": [
      {
       "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
-      "tier": 1,
+      "corpus_tier": 1,
       "line": 10692
      }
     ],
-    "tiers": [
+    "corpus_tiers": [
      1
     ],
     "note": "Tolkien names one Nazgul besides the Witch-king. See `string_present_wrong_subject` on this row: the game's name Uvatha DOES occur in the corpus, in a Qenya lexicon, meaning something else entirely.",
@@ -4511,21 +4512,21 @@
     "loci": [
      {
       "file": "t1_7_the_treason_of_isengard.txt",
-      "tier": 1,
+      "corpus_tier": 1,
       "line": 8933
      },
      {
       "file": "t1_c_the_lord_of_the_rings.txt",
-      "tier": 1,
+      "corpus_tier": 1,
       "line": 15153
      },
      {
       "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
-      "tier": 2,
+      "corpus_tier": 2,
       "line": 15752
      }
     ],
-    "tiers": [
+    "corpus_tiers": [
      1,
      2
     ],
