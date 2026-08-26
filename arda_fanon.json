@@ -1,0 +1,1543 @@
+{
+ "what": "WHAT TOLKIEN FANDOM BELIEVES, and what the corpus does with it. Fan encyclopedias, fan fiction archives, forums, games' inventions and the theories that circulate -- recorded as BELIEFS held by named people in named places, never as facts about Arda. A SEPARATE LAYER in a separate file.",
+ "no_tier": "NO ROW CARRIES A TIER. The tiers rank claims about Arda by distance from Tolkien's word; a row here is a claim about what a FAN COMMUNITY says. Every row carries a hand, a source URL, a retrieved_at and a licence as stated. Not to be confused with C474's `tier: 5`, which is an ORIGIN axis meaning made by this archive.",
+ "the_field_that_matters": "`attestation`. Every row states what the corpus does with the claim, MEASURED by map/ardatext.py at generation over every corpus file, with every locus published. Nothing here is called unattested because it looked unlikely.",
+ "four_verdicts_not_two": {
+  "not attested": "the string occurs nowhere in the corpus",
+  "attested elsewhere": "it occurs, but only in a text discussing the fandom or the adaptations -- so `absent` would be false and `present` would be worse",
+  "disputed reading": "the claim rests on a passage that IS in the corpus and that readers disagree about. NOT fanon, and the row says so",
+  "true string wrong subject": "the string verifies and means something else. Published, because a matcher answering FOUND on a homonym is this archive's oldest fault -- and a row with this verdict must give a READING for every probe that hit, or the generator refuses it",
+  "attested but overgeneralised": "the term IS Tolkien's, once, and the fanon is its REACH rather than its existence. The commonest shape a fanon fact takes and the hardest to see, because every step of it can be sourced"
+ },
+ "sibling": "site/arda_adaptations.json holds the adaptation layer. Two files, pointing at each other, because §IX audits 4 and 5 look for rows in the wrong FILE.",
+ "provenance": {
+  "corroboration_from": "Tolkien Gateway and three fan venues, one capture each, held with sha256 in /home/raz/.arda-crawl-stage/layers-20260826/fetched/",
+  "attestation_from": "map/ardatext.py against corpus/",
+  "refusals": "recorded in site/arda_adaptations.json under `refusals`, not duplicated here. MobyGames, the Encyclopedia of Arda and the LOTR Fandom wiki were all refused; the last of those is the largest fan encyclopedia in existence and its absence from this file is a PERMISSION finding, not a judgement about the wiki.",
+  "no_fan_prose_is_republished": "Rows carry the CLAIM in this archive's own words with a URL and a digest pointing at the source. The one exception is `disputed_source.who_says`, which carries the critics' judgements close to their wording because a warning paraphrased into vagueness is not a warning."
+ },
+ "counts": {
+  "claims": 11,
+  "claims_by_verdict": {
+   "attested but overgeneralised": 1,
+   "attested elsewhere": 2,
+   "disputed reading": 1,
+   "not attested": 1,
+   "true string wrong subject": 6
+  },
+  "claims_not_attested": 1,
+  "claims_with_a_disputed_source_warning": 1,
+  "claims_with_established_ancestry": 8,
+  "venues": 4,
+  "venues_with_no_stated_licence": 3,
+  "probes_run": 24,
+  "refused": 0,
+  "corpus_files_searched": 232
+ },
+ "claims_what": "One row per recorded belief. A row is written only if its capture is in the stage at HTTP 200 AND the corpus measurement agrees with what the row states. A row claiming to be unattested that turns out to be attested is REFUSED, not reworded.",
+ "claims": [
+  {
+   "id": "elfling-dwarfling",
+   "claim": "elfling and dwarfling are Middle-earth words for the young of those peoples.",
+   "who_makes_it": "fan fiction writers, listed by the TV Tropes community as a common fanon usage",
+   "where_it_is_made": {
+    "source": "https://tolkiengateway.net/wiki/Fanon",
+    "hand": "the editors of Tolkien Gateway",
+    "retrieved_at": "2026-08-26T21:50:07Z",
+    "capture_sha256": "61c09cc475c352f49663612c8ae4773e4f071d8b7a150dd9eb5a829134b72ec2",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "attestation": {
+    "verdict": "true string wrong subject",
+    "measured": "attested elsewhere",
+    "probes": [
+     {
+      "asked": "elfling",
+      "hits": 11,
+      "loci": [
+       {
+        "file": "t2_vinyar_tengwar_41_50.txt",
+        "tier": 2,
+        "line": 5839
+       },
+       {
+        "file": "t3_a_sindarin_and_noldorin_dictionary.txt",
+        "tier": 3,
+        "line": 45
+       },
+       {
+        "file": "t3_ardalambion_artlang_htm.txt",
+        "tier": 3,
+        "line": 135
+       },
+       {
+        "file": "t3_ardalambion_index_htm.txt",
+        "tier": 3,
+        "line": 250
+       },
+       {
+        "file": "t3_ardalambion_sindverb_htm.txt",
+        "tier": 3,
+        "line": 53
+       },
+       {
+        "file": "t3_ardalambion_sverb_rec_htm.txt",
+        "tier": 3,
+        "line": 208
+       },
+       {
+        "file": "t3_ardalambion_whoami_htm.txt",
+        "tier": 3,
+        "line": 38
+       },
+       {
+        "file": "t3_eldamo_vte_vt_errata.txt",
+        "tier": 3,
+        "line": 128
+       },
+       {
+        "file": "t3_lotr_1954_2004.txt",
+        "tier": 3,
+        "line": 9856
+       },
+       {
+        "file": "t3_the_ring_goes_ever_on.txt",
+        "tier": 3,
+        "line": 43961
+       },
+       {
+        "file": "t3_tolkienian_linguistics_the_first_fifty_y.txt",
+        "tier": 3,
+        "line": 1057
+       }
+      ],
+      "tiers": [
+       2,
+       3
+      ],
+      "reading": "the Elfling mailing list -- an internet discussion list for Elvish linguistics, thanked in the acknowledgements of a Sindarin dictionary and cited across Vinyar Tengwar and Ardalambion. Not a word of any language Tolkien invented, and not a word for a child."
+     },
+     {
+      "asked": "dwarfling",
+      "hits": 1,
+      "loci": [
+       {
+        "file": "t3_mallorn_36.txt",
+        "tier": 3,
+        "line": 704
+       }
+      ],
+      "tiers": [
+       3
+      ],
+      "reading": "one occurrence, in Mallorn 36 -- the Tolkien Society's journal discussing the fandom, not Tolkien writing about Dwarves."
+     }
+    ],
+    "asked_of": "map/ardatext.py over all 232 corpus files, by its name path. ASKED, NOT ASSUMED -- a raw grep returns false zeros on a mixed NFC/NFD corpus, and the squeeze path returns false HITS on a short name.",
+    "conf": "C"
+   },
+   "ancestry": "Tolkien Gateway attributes the observation to TV Tropes' Tolkien's Legendarium fanon page; the usage itself is a fan-fiction convention with no single origin this archive can name.",
+   "ancestry_established": false,
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+  },
+  {
+   "id": "elves-vegetarian",
+   "claim": "Elves are strictly vegetarian.",
+   "who_makes_it": "fan fiction writers, listed by the TV Tropes community as a common fanon usage",
+   "where_it_is_made": {
+    "source": "https://tolkiengateway.net/wiki/Fanon",
+    "hand": "the editors of Tolkien Gateway",
+    "retrieved_at": "2026-08-26T21:50:07Z",
+    "capture_sha256": "61c09cc475c352f49663612c8ae4773e4f071d8b7a150dd9eb5a829134b72ec2",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "attestation": {
+    "verdict": "true string wrong subject",
+    "measured": "attested in a tier-1 text",
+    "probes": [
+     {
+      "asked": "vegetarian",
+      "hits": 11,
+      "loci": [
+       {
+        "file": "t1_the_collected_poems_of_j_r_r_tolkien.txt",
+        "tier": 1,
+        "line": 31010
+       },
+       {
+        "file": "t2_the_history_of_the_hobbit.txt",
+        "tier": 2,
+        "line": 35995
+       },
+       {
+        "file": "t3_ardalambion_qlindex1_htm.txt",
+        "tier": 3,
+        "line": 5871
+       },
+       {
+        "file": "t3_giraudeau_parma_eldalamberon_12_changes_in_the_2011_.txt",
+        "tier": 3,
+        "line": 177
+       },
+       {
+        "file": "t3_mallorn_23.txt",
+        "tier": 3,
+        "line": 1752
+       },
+       {
+        "file": "t3_mallorn_33_proceedings_of_the_j_r_r_tolkien_centenar.txt",
+        "tier": 3,
+        "line": 14412
+       },
+       {
+        "file": "t3_mallorn_35.txt",
+        "tier": 3,
+        "line": 1392
+       },
+       {
+        "file": "t3_mallorn_43.txt",
+        "tier": 3,
+        "line": 3493
+       },
+       {
+        "file": "t3_mallorn_50.txt",
+        "tier": 3,
+        "line": 1980
+       },
+       {
+        "file": "t3_patrick_curry_defending_middle_earth.txt",
+        "tier": 3,
+        "line": 2441
+       },
+       {
+        "file": "t3_perilous_realms_marjorie_burns.txt",
+        "tier": 3,
+        "line": 126
+       }
+      ],
+      "tiers": [
+       1,
+       2,
+       3
+      ],
+      "reading": "eleven files, and the tier-1 hit is EDITORIAL APPARATUS, not narrative: in The Collected Poems the editors describe a draft in which a bumpus became a troll, remarkably vegetarian and teetotal. A troll, in a discarded draft, described by an editor. Nothing anywhere says it of Elves."
+     }
+    ],
+    "asked_of": "map/ardatext.py over all 232 corpus files, by its name path. ASKED, NOT ASSUMED -- a raw grep returns false zeros on a mixed NFC/NFD corpus, and the squeeze path returns false HITS on a short name.",
+    "conf": "C"
+   },
+   "ancestry": "Same list as elfling and dwarfling; no origin is named by the source.",
+   "ancestry_established": false,
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+  },
+  {
+   "id": "modern-military-ranks",
+   "claim": "Middle-earth's armies use modern military ranks -- sergeants, corporals, colonels.",
+   "who_makes_it": "fan fiction writers, listed by the TV Tropes community as a common fanon usage",
+   "where_it_is_made": {
+    "source": "https://tolkiengateway.net/wiki/Fanon",
+    "hand": "the editors of Tolkien Gateway",
+    "retrieved_at": "2026-08-26T21:50:07Z",
+    "capture_sha256": "61c09cc475c352f49663612c8ae4773e4f071d8b7a150dd9eb5a829134b72ec2",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "attestation": {
+    "verdict": "true string wrong subject",
+    "measured": "attested in a tier-1 text",
+    "probes": [
+     {
+      "asked": "sergeant",
+      "hits": 8,
+      "loci": [
+       {
+        "file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
+        "tier": 2,
+        "line": 38950
+       },
+       {
+        "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+        "tier": 2,
+        "line": 4924
+       },
+       {
+        "file": "t3_lotr_1954_2004.txt",
+        "tier": 3,
+        "line": 1499
+       },
+       {
+        "file": "t3_mallorn_34.txt",
+        "tier": 3,
+        "line": 1260
+       },
+       {
+        "file": "t3_mallorn_35.txt",
+        "tier": 3,
+        "line": 345
+       },
+       {
+        "file": "t3_mallorn_50.txt",
+        "tier": 3,
+        "line": 375
+       },
+       {
+        "file": "t3_mallorn_51.txt",
+        "tier": 3,
+        "line": 1986
+       },
+       {
+        "file": "t3_the_complete_tolkien_companion.txt",
+        "tier": 3,
+        "line": 9614
+       }
+      ],
+      "tiers": [
+       2,
+       3
+      ],
+      "reading": "reference works and journals discussing Tolkien's life and war service; not a rank borne by anyone in Middle-earth."
+     },
+     {
+      "asked": "corporal",
+      "hits": 8,
+      "loci": [
+       {
+        "file": "t1_the_letters_of_j_r_r_tolkien.txt",
+        "tier": 1,
+        "line": 8318
+       },
+       {
+        "file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
+        "tier": 1,
+        "line": 10853
+       },
+       {
+        "file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
+        "tier": 2,
+        "line": 14097
+       },
+       {
+        "file": "t3_ardalambion_qlindex1_htm.txt",
+        "tier": 3,
+        "line": 1090
+       },
+       {
+        "file": "t3_giraudeau_a_new_q_u_enya_lexicon_from_pe17.txt",
+        "tier": 3,
+        "line": 2393
+       },
+       {
+        "file": "t3_mallorn_19.txt",
+        "tier": 3,
+        "line": 1828
+       },
+       {
+        "file": "t3_mallorn_31.txt",
+        "tier": 3,
+        "line": 2724
+       },
+       {
+        "file": "t3_mallorn_33_proceedings_of_the_j_r_r_tolkien_centenar.txt",
+        "tier": 3,
+        "line": 4523
+       }
+      ],
+      "tiers": [
+       1,
+       2,
+       3
+      ],
+      "reading": "Tolkien's own Letters, where he writes about the British Army, and the reference works that quote them."
+     },
+     {
+      "asked": "colonel",
+      "hits": 11,
+      "loci": [
+       {
+        "file": "t1_the_letters_of_j_r_r_tolkien.txt",
+        "tier": 1,
+        "line": 14250
+       },
+       {
+        "file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
+        "tier": 1,
+        "line": 434
+       },
+       {
+        "file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
+        "tier": 2,
+        "line": 5959
+       },
+       {
+        "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+        "tier": 2,
+        "line": 2936
+       },
+       {
+        "file": "t3_mallorn_34.txt",
+        "tier": 3,
+        "line": 1444
+       },
+       {
+        "file": "t3_mallorn_49.txt",
+        "tier": 3,
+        "line": 674
+       },
+       {
+        "file": "t3_mallorn_50.txt",
+        "tier": 3,
+        "line": 409
+       },
+       {
+        "file": "t3_mallorn_51.txt",
+        "tier": 3,
+        "line": 958
+       },
+       {
+        "file": "t3_mallorn_57.txt",
+        "tier": 3,
+        "line": 1258
+       },
+       {
+        "file": "t3_the_ring_goes_ever_on.txt",
+        "tier": 3,
+        "line": 33253
+       },
+       {
+        "file": "t3_the_road_to_middle_earth_tom_shippey.txt",
+        "tier": 3,
+        "line": 3527
+       }
+      ],
+      "tiers": [
+       1,
+       2,
+       3
+      ],
+      "reading": "the Letters again, and the Companion and Guide's biography."
+     },
+     {
+      "asked": "Lieutenant",
+      "hits": 45,
+      "loci": [
+       {
+        "file": "t1_10_morgoths_ring.txt",
+        "tier": 1,
+        "line": 6007
+       },
+       {
+        "file": "t1_11_the_war_of_the_jewels.txt",
+        "tier": 1,
+        "line": 1533
+       },
+       {
+        "file": "t1_12_the_peoples_of_middle_earth.txt",
+        "tier": 1,
+        "line": 8715
+       },
+       {
+        "file": "t1_13_index.txt",
+        "tier": 1,
+        "line": 2063
+       },
+       {
+        "file": "t1_2_the_book_of_lost_tales_part_two.txt",
+        "tier": 1,
+        "line": 3272
+       },
+       {
+        "file": "t1_8_the_war_of_the_ring.txt",
+        "tier": 1,
+        "line": 13990
+       },
+       {
+        "file": "t1_a_the_silmarillion.txt",
+        "tier": 1,
+        "line": 3042
+       },
+       {
+        "file": "t1_c_the_lord_of_the_rings.txt",
+        "tier": 1,
+        "line": 37906
+       },
+       {
+        "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+        "tier": 1,
+        "line": 8037
+       },
+       {
+        "file": "t1_the_collected_poems_of_j_r_r_tolkien.txt",
+        "tier": 1,
+        "line": 2729
+       },
+       {
+        "file": "t1_the_letters_of_j_r_r_tolkien.txt",
+        "tier": 1,
+        "line": 187
+       },
+       {
+        "file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
+        "tier": 1,
+        "line": 793
+       },
+       {
+        "file": "t2_h_the_fall_of_numenor_and_other_tales_from_the_secon.txt",
+        "tier": 2,
+        "line": 9090
+       },
+       {
+        "file": "t2_the_history_of_the_hobbit.txt",
+        "tier": 2,
+        "line": 12460
+       },
+       {
+        "file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
+        "tier": 2,
+        "line": 6199
+       },
+       {
+        "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+        "tier": 2,
+        "line": 4372
+       },
+       {
+        "file": "t3_ardalambion_sauronname_htm.txt",
+        "tier": 3,
+        "line": 16
+       },
+       {
+        "file": "t3_lotr_1954_2004.txt",
+        "tier": 3,
+        "line": 3934
+       },
+       {
+        "file": "t3_mallorn_14.txt",
+        "tier": 3,
+        "line": 967
+       },
+       {
+        "file": "t3_mallorn_24.txt",
+        "tier": 3,
+        "line": 1548
+       },
+       {
+        "file": "t3_mallorn_26.txt",
+        "tier": 3,
+        "line": 2432
+       },
+       {
+        "file": "t3_mallorn_28.txt",
+        "tier": 3,
+        "line": 2733
+       },
+       {
+        "file": "t3_mallorn_33_proceedings_of_the_j_r_r_tolkien_centenar.txt",
+        "tier": 3,
+        "line": 19593
+       },
+       {
+        "file": "t3_mallorn_34.txt",
+        "tier": 3,
+        "line": 1444
+       },
+       {
+        "file": "t3_mallorn_37.txt",
+        "tier": 3,
+        "line": 1628
+       },
+       {
+        "file": "t3_mallorn_39.txt",
+        "tier": 3,
+        "line": 797
+       },
+       {
+        "file": "t3_mallorn_40.txt",
+        "tier": 3,
+        "line": 358
+       },
+       {
+        "file": "t3_mallorn_41.txt",
+        "tier": 3,
+        "line": 2591
+       },
+       {
+        "file": "t3_mallorn_42.txt",
+        "tier": 3,
+        "line": 2805
+       },
+       {
+        "file": "t3_mallorn_43.txt",
+        "tier": 3,
+        "line": 2880
+       },
+       {
+        "file": "t3_mallorn_45.txt",
+        "tier": 3,
+        "line": 2733
+       },
+       {
+        "file": "t3_mallorn_46.txt",
+        "tier": 3,
+        "line": 1312
+       },
+       {
+        "file": "t3_mallorn_48.txt",
+        "tier": 3,
+        "line": 272
+       },
+       {
+        "file": "t3_mallorn_55.txt",
+        "tier": 3,
+        "line": 1919
+       },
+       {
+        "file": "t3_mallorn_58_updated.txt",
+        "tier": 3,
+        "line": 45
+       },
+       {
+        "file": "t3_mallorn_64_corrected.txt",
+        "tier": 3,
+        "line": 1751
+       },
+       {
+        "file": "t3_picturing_tolkien_janice_m_bogstad_and_philip_e_kave.txt",
+        "tier": 3,
+        "line": 7295
+       },
+       {
+        "file": "t3_the_atlas_of_middle_earth.txt",
+        "tier": 3,
+        "line": 1843
+       },
+       {
+        "file": "t3_the_complete_guide_to_middle_earth.txt",
+        "tier": 3,
+        "line": 1536
+       },
+       {
+        "file": "t3_the_complete_tolkien_companion.txt",
+        "tier": 3,
+        "line": 1049
+       },
+       {
+        "file": "t3_the_ring_goes_ever_on.txt",
+        "tier": 3,
+        "line": 832
+       },
+       {
+        "file": "t3_tolkien_s_legendarium.txt",
+        "tier": 3,
+        "line": 9446
+       },
+       {
+        "file": "t3_tolkien_studies_10.txt",
+        "tier": 3,
+        "line": 11069
+       },
+       {
+        "file": "t4_letterschanges.txt",
+        "tier": 4,
+        "line": 479
+       },
+       {
+        "file": "t4_reader_and_educator_guide_to_the_hobbit_and_the_lord.txt",
+        "tier": 4,
+        "line": 5247
+       }
+      ],
+      "tiers": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "reading": "45 files, AND THIS ONE IS REAL IN A SENSE THE OTHER THREE ARE NOT: The Lord of the Rings has the Lieutenant of Barad-dur. It is a title of office in a dark tower, not a rank in a table of organisation, and it is the reason this row exists."
+     }
+    ],
+    "asked_of": "map/ardatext.py over all 232 corpus files, by its name path. ASKED, NOT ASSUMED -- a raw grep returns false zeros on a mixed NFC/NFD corpus, and the squeeze path returns false HITS on a short name.",
+    "conf": "C",
+    "true_string_wrong_subject": "THE ROW IS A TRAP AND IS PUBLISHED AS ONE. A probe for military-rank words answers FOUND on all four, and a careless reader concludes the fanon is canon. Three of the four are Tolkien's biography, one is a title of office, and none is a rank in an army of Middle-earth. All four measurements are published side by side so the reading is checkable rather than asserted."
+   },
+   "ancestry": "Same list; the convention is imported from modern war fiction rather than from any source about Arda.",
+   "ancestry_established": false,
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+  },
+  {
+   "id": "balrog-wings",
+   "claim": "Balrogs have physical wings and can fly.",
+   "who_makes_it": "fandom at large; Tolkien Gateway keeps a standing article of arguments on both sides",
+   "where_it_is_made": {
+    "source": "https://tolkiengateway.net/wiki/Balrogs/Wings",
+    "hand": "the editors of Tolkien Gateway",
+    "retrieved_at": "2026-08-26T21:51:08Z",
+    "capture_sha256": "3c00e91eb1e610094efa0e350c429532d7dfc40283f92200b2ce26cae2cbd50e",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "attestation": {
+    "verdict": "disputed reading",
+    "measured": "attested in a tier-1 text",
+    "probes": [
+     {
+      "asked": "its wings were spread from wall to wall",
+      "hits": 3,
+      "loci": [
+       {
+        "file": "t1_7_the_treason_of_isengard.txt",
+        "tier": 1,
+        "line": 8933
+       },
+       {
+        "file": "t1_c_the_lord_of_the_rings.txt",
+        "tier": 1,
+        "line": 15153
+       },
+       {
+        "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+        "tier": 2,
+        "line": 15752
+       }
+      ],
+      "tiers": [
+       1,
+       2
+      ],
+      "reading": null
+     },
+     {
+      "asked": "the shadow about it reached out like two vast wings",
+      "hits": 2,
+      "loci": [
+       {
+        "file": "t1_c_the_lord_of_the_rings.txt",
+        "tier": 1,
+        "line": 15144
+       },
+       {
+        "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+        "tier": 2,
+        "line": 15750
+       }
+      ],
+      "tiers": [
+       1,
+       2
+      ],
+      "reading": null
+     },
+     {
+      "asked": "and both fell to ruin in the abyss",
+      "hits": 3,
+      "loci": [
+       {
+        "file": "t1_4_the_shaping_of_middle_earth.txt",
+        "tier": 1,
+        "line": 6660
+       },
+       {
+        "file": "t1_a_the_silmarillion.txt",
+        "tier": 1,
+        "line": 11440
+       },
+       {
+        "file": "t1_g_the_fall_of_gondolin.txt",
+        "tier": 1,
+        "line": 3050
+       }
+      ],
+      "tiers": [
+       1
+      ],
+      "reading": null
+     }
+    ],
+    "asked_of": "map/ardatext.py over all 232 corpus files, by its quote path. ASKED, NOT ASSUMED -- a raw grep returns false zeros on a mixed NFC/NFD corpus, and the squeeze path returns false HITS on a short name.",
+    "conf": "C"
+   },
+   "ancestry": "NOT FANON, AND THIS FILE SAYS SO RATHER THAN FILING IT TIDILY. The argument rests on sentences Tolkien wrote, which is what makes it a reading rather than an invention -- and all three of the sentences the argument turns on verify here, two for and one against. It is amplified by adaptation: the 1978 Bakshi film gives the Balrog literal wings and limited flight, and Jackson's 2001 design gives it wings, an elongated tail and hoofed feet. See site/arda_adaptations.json, deviation bakshi-balrog-wings, which records the same passage from the other side.",
+   "ancestry_established": true,
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+  },
+  {
+   "id": "blue-wizards-name",
+   "claim": "The two Wizards who went east are called the Blue Wizards.",
+   "who_makes_it": "fandom at large",
+   "where_it_is_made": {
+    "source": "https://tolkiengateway.net/wiki/Blue_Wizards",
+    "hand": "the editors of Tolkien Gateway",
+    "retrieved_at": "2026-08-26T21:50:32Z",
+    "capture_sha256": "1d9c793940e7a2ba0d04a7aa358874bb8b27f23972d8c9686f36f06d5561886c",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "attestation": {
+    "verdict": "attested but overgeneralised",
+    "measured": "attested in a tier-1 text",
+    "probes": [
+     {
+      "asked": "Blue Wizards",
+      "hits": 14,
+      "loci": [
+       {
+        "file": "t1_12_the_peoples_of_middle_earth.txt",
+        "tier": 1,
+        "line": 12756
+       },
+       {
+        "file": "t1_13_index.txt",
+        "tier": 1,
+        "line": 713
+       },
+       {
+        "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+        "tier": 1,
+        "line": 12233
+       },
+       {
+        "file": "t1_the_collected_poems_of_j_r_r_tolkien.txt",
+        "tier": 1,
+        "line": 52672
+       },
+       {
+        "file": "t1_the_letters_of_j_r_r_tolkien.txt",
+        "tier": 1,
+        "line": 19412
+       },
+       {
+        "file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
+        "tier": 1,
+        "line": 24117
+       },
+       {
+        "file": "t2_the_history_of_the_hobbit.txt",
+        "tier": 2,
+        "line": 10793
+       },
+       {
+        "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+        "tier": 2,
+        "line": 13525
+       },
+       {
+        "file": "t3_a_gateway_to_sindarin.txt",
+        "tier": 3,
+        "line": 9242
+       },
+       {
+        "file": "t3_ardalambion_sindarin_htm.txt",
+        "tier": 3,
+        "line": 786
+       },
+       {
+        "file": "t3_mallorn_41.txt",
+        "tier": 3,
+        "line": 1600
+       },
+       {
+        "file": "t3_mallorn_53.txt",
+        "tier": 3,
+        "line": 44
+       },
+       {
+        "file": "t3_the_complete_tolkien_companion.txt",
+        "tier": 3,
+        "line": 475
+       },
+       {
+        "file": "t3_the_ring_goes_ever_on.txt",
+        "tier": 3,
+        "line": 4296
+       }
+      ],
+      "tiers": [
+       1,
+       2,
+       3
+      ],
+      "reading": "attested, and the fanon is not the NAME but its REACH."
+     },
+     {
+      "asked": "Ithryn Luin",
+      "hits": 9,
+      "loci": [
+       {
+        "file": "t1_12_the_peoples_of_middle_earth.txt",
+        "tier": 1,
+        "line": 15293
+       },
+       {
+        "file": "t1_13_index.txt",
+        "tier": 1,
+        "line": null
+       },
+       {
+        "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+        "tier": 1,
+        "line": 12233
+       },
+       {
+        "file": "t1_the_letters_of_j_r_r_tolkien.txt",
+        "tier": 1,
+        "line": 19411
+       },
+       {
+        "file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
+        "tier": 1,
+        "line": 24117
+       },
+       {
+        "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+        "tier": 2,
+        "line": 13505
+       },
+       {
+        "file": "t3_a_gateway_to_sindarin.txt",
+        "tier": 3,
+        "line": 9242
+       },
+       {
+        "file": "t3_ardalambion_sindarin_htm.txt",
+        "tier": 3,
+        "line": 786
+       },
+       {
+        "file": "t3_the_complete_tolkien_companion.txt",
+        "tier": 3,
+        "line": 3214
+       }
+      ],
+      "tiers": [
+       1,
+       2,
+       3
+      ],
+      "reading": "the Sindarin form, attested alongside it."
+     },
+     {
+      "asked": "Morinehtar",
+      "hits": 5,
+      "loci": [
+       {
+        "file": "t1_12_the_peoples_of_middle_earth.txt",
+        "tier": 1,
+        "line": 12741
+       },
+       {
+        "file": "t1_13_index.txt",
+        "tier": 1,
+        "line": 12956
+       },
+       {
+        "file": "t2_the_history_of_the_hobbit.txt",
+        "tier": 2,
+        "line": 10813
+       },
+       {
+        "file": "t3_ardalambion_quen_eng_htm.txt",
+        "tier": 3,
+        "line": 4410
+       },
+       {
+        "file": "t3_eldamo_qq_quen_eng_doc.txt",
+        "tier": 3,
+        "line": 5557
+       }
+      ],
+      "tiers": [
+       1,
+       2,
+       3
+      ],
+      "reading": "one of the names Tolkien gave the two Wizards in a LATER conception, where no colour is assigned at all."
+     },
+     {
+      "asked": "Alatar",
+      "hits": 10,
+      "loci": [
+       {
+        "file": "t1_12_the_peoples_of_middle_earth.txt",
+        "tier": 1,
+        "line": 12757
+       },
+       {
+        "file": "t1_13_index.txt",
+        "tier": 1,
+        "line": 713
+       },
+       {
+        "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+        "tier": 1,
+        "line": 12331
+       },
+       {
+        "file": "t2_the_history_of_the_hobbit.txt",
+        "tier": 2,
+        "line": 37165
+       },
+       {
+        "file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
+        "tier": 2,
+        "line": 28921
+       },
+       {
+        "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+        "tier": 2,
+        "line": 13525
+       },
+       {
+        "file": "t3_mallorn_28.txt",
+        "tier": 3,
+        "line": 2140
+       },
+       {
+        "file": "t3_mallorn_41.txt",
+        "tier": 3,
+        "line": 1599
+       },
+       {
+        "file": "t3_mallorn_53.txt",
+        "tier": 3,
+        "line": 32
+       },
+       {
+        "file": "t3_the_complete_tolkien_companion.txt",
+        "tier": 3,
+        "line": 475
+       }
+      ],
+      "tiers": [
+       1,
+       2,
+       3
+      ],
+      "reading": "an earlier conception again, and Tolkien did not equate the two -- Tolkien Gateway states as much in its own footnote."
+     }
+    ],
+    "asked_of": "map/ardatext.py over all 232 corpus files, by its name path. ASKED, NOT ASSUMED -- a raw grep returns false zeros on a mixed NFC/NFD corpus, and the squeeze path returns false HITS on a short name.",
+    "conf": "C"
+   },
+   "ancestry": "Tolkien Gateway's own note records the mechanism exactly: the term is mentioned in ONE essay, which is the only source assigning them a colour, and when Tolkien returned to the two Wizards he gave them other names and backgrounds and never specified a colour again. THE FANON IS A SINGLE ATTESTATION GENERALISED TO EVERY VERSION -- which is why this row is not filed as an invention. It is the most common shape a fanon fact takes and the hardest to see, because every step of it can be sourced.",
+   "ancestry_established": true,
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+  },
+  {
+   "id": "hadhafang",
+   "claim": "Hadhafang is Arwen's sword, an heirloom of her father.",
+   "who_makes_it": "fandom, following the 2001 film and its merchandise",
+   "where_it_is_made": {
+    "source": "https://tolkiengateway.net/wiki/Arwen",
+    "hand": "the editors of Tolkien Gateway",
+    "retrieved_at": "2026-08-26T21:51:30Z",
+    "capture_sha256": "3dda38a26b5059f9fa36ca9d9ead4216845515eb68c821eda2531090db4bb102",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "attestation": {
+    "verdict": "attested elsewhere",
+    "measured": "attested elsewhere",
+    "probes": [
+     {
+      "asked": "Hadhafang",
+      "hits": 2,
+      "loci": [
+       {
+        "file": "t3_ardalambion_p2_htm.txt",
+        "tier": 3,
+        "line": 3408
+       },
+       {
+        "file": "t3_ardalambion_primelv_htm.txt",
+        "tier": 3,
+        "line": 3498
+       }
+      ],
+      "tiers": [
+       3
+      ],
+      "reading": "two files, both Ardalambion -- Helge Fauskanger's Elvish linguistics pages ANALYSING the film's invented name. A tier-3 scholar discussing a film prop is not Tolkien naming a sword."
+     }
+    ],
+    "asked_of": "map/ardatext.py over all 232 corpus files, by its name path. ASKED, NOT ASSUMED -- a raw grep returns false zeros on a mixed NFC/NFD corpus, and the squeeze path returns false HITS on a short name.",
+    "conf": "C"
+   },
+   "ancestry": "ORIGIN IS ESTABLISHED AND IT IS AN ADAPTATION. The sword is invented for The Fellowship of the Ring (2001); Tolkien Gateway calls it a non-canonical sword. The chain adaptation -> merchandise -> fandom is the commonest way a fanon fact enters, and it is the reason this archive keeps the adaptation layer and the fan layer in two files that point at each other.",
+   "ancestry_established": true,
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+  },
+  {
+   "id": "muar-balrog",
+   "claim": "Muar is a Balrog of Morgoth.",
+   "who_makes_it": "Iron Crown Enterprises' Middle-earth Role Playing, and the fandom that plays it",
+   "where_it_is_made": {
+    "source": "https://tolkiengateway.net/wiki/Balrog",
+    "hand": "the editors of Tolkien Gateway",
+    "retrieved_at": "2026-08-26T21:50:15Z",
+    "capture_sha256": "3cd1a03a148a7f6e52e0034219bd112616c32f9211e46f919e5c323e2230c1db",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "attestation": {
+    "verdict": "true string wrong subject",
+    "measured": "attested in a tier-1 text",
+    "probes": [
+     {
+      "asked": "Muar",
+      "hits": 1,
+      "loci": [
+       {
+        "file": "t1_7_the_treason_of_isengard.txt",
+        "tier": 1,
+        "line": 16249
+       }
+      ],
+      "tiers": [
+       1
+      ],
+      "reading": "ONE occurrence in the whole corpus, and it is the MUAR RIVER IN MALAYA. Christopher Tolkien, dating a manuscript by what his father had scribbled on the back of an examination script, notes japanese attack in malaya and muar river among the jottings, and a footnote gives the crossing of the Muar as 16 January 1942. A Balrog probe answering FOUND on a Second World War river crossing is this archive's oldest fault in one line."
+     }
+    ],
+    "asked_of": "map/ardatext.py over all 232 corpus files, by its name path. ASKED, NOT ASSUMED -- a raw grep returns false zeros on a mixed NFC/NFD corpus, and the squeeze path returns false HITS on a short name.",
+    "conf": "C"
+   },
+   "ancestry": "Invented for a 1984 licensed game. Tolkien names Gothmog, Durin's Bane and Lungorthin; the game adds this one. A LICENSED invention is still an invention, and the licence changes who may print it, not whether Tolkien wrote it.",
+   "ancestry_established": true,
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+  },
+  {
+   "id": "thaurlach-targoroth",
+   "claim": "Thaurlach and Tar Goroth are Balrogs of Middle-earth.",
+   "who_makes_it": "The Lord of the Rings Online and Middle-earth: Shadow of War, and their players",
+   "where_it_is_made": {
+    "source": "https://tolkiengateway.net/wiki/Balrog",
+    "hand": "the editors of Tolkien Gateway",
+    "retrieved_at": "2026-08-26T21:50:15Z",
+    "capture_sha256": "3cd1a03a148a7f6e52e0034219bd112616c32f9211e46f919e5c323e2230c1db",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "attestation": {
+    "verdict": "not attested",
+    "measured": "not attested",
+    "probes": [
+     {
+      "asked": "Thaurlach",
+      "hits": 0,
+      "loci": [],
+      "tiers": [],
+      "reading": null
+     },
+     {
+      "asked": "Tar Goroth",
+      "hits": 0,
+      "loci": [],
+      "tiers": [],
+      "reading": null
+     }
+    ],
+    "asked_of": "map/ardatext.py over all 232 corpus files, by its name path. ASKED, NOT ASSUMED -- a raw grep returns false zeros on a mixed NFC/NFD corpus, and the squeeze path returns false HITS on a short name.",
+    "conf": "C"
+   },
+   "ancestry": "Each is invented by one game. They are recorded together because the SHAPE is the same as Muar's and repeating it across three products is not three confirmations -- §I.5's rule, applied. THE CONTRAST WITH THE Muar ROW IS THE USEFUL PART: these two really are absent, and it took the same measurement to find out, run over the same 232 files.",
+   "ancestry_established": true,
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+  },
+  {
+   "id": "new-notion-club-archives",
+   "claim": "A coherent, denser Arda can be welded together from the adaptations, reconciled for consistency.",
+   "who_makes_it": "the New Notion Club Archives, a fan project",
+   "where_it_is_made": {
+    "source": "https://tolkiengateway.net/wiki/Fanon",
+    "hand": "the editors of Tolkien Gateway",
+    "retrieved_at": "2026-08-26T21:50:07Z",
+    "capture_sha256": "61c09cc475c352f49663612c8ae4773e4f071d8b7a150dd9eb5a829134b72ec2",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "attestation": {
+    "verdict": "true string wrong subject",
+    "measured": "attested in a tier-1 text",
+    "probes": [
+     {
+      "asked": "New Notion Club Archives",
+      "hits": 0,
+      "loci": [],
+      "tiers": [],
+      "reading": "absent, as the project's own name should be."
+     },
+     {
+      "asked": "Realms in Exile",
+      "hits": 23,
+      "loci": [
+       {
+        "file": "t1_12_the_peoples_of_middle_earth.txt",
+        "tier": 1,
+        "line": 76
+       },
+       {
+        "file": "t1_13_index.txt",
+        "tier": 1,
+        "line": 15176
+       },
+       {
+        "file": "t1_7_the_treason_of_isengard.txt",
+        "tier": 1,
+        "line": 5380
+       },
+       {
+        "file": "t1_a_the_silmarillion.txt",
+        "tier": 1,
+        "line": null
+       },
+       {
+        "file": "t1_c_appendix_tables_raw.txt",
+        "tier": 1,
+        "line": 558
+       },
+       {
+        "file": "t1_c_the_lord_of_the_rings.txt",
+        "tier": 1,
+        "line": 46365
+       },
+       {
+        "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+        "tier": 1,
+        "line": 13130
+       },
+       {
+        "file": "t2_h_the_fall_of_numenor_and_other_tales_from_the_secon.txt",
+        "tier": 2,
+        "line": 202
+       },
+       {
+        "file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
+        "tier": 2,
+        "line": 24528
+       },
+       {
+        "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+        "tier": 2,
+        "line": 7008
+       },
+       {
+        "file": "t3_ardalambion_quenya_htm.txt",
+        "tier": 3,
+        "line": 59
+       },
+       {
+        "file": "t3_ardalambion_sindarin_htm.txt",
+        "tier": 3,
+        "line": 225
+       },
+       {
+        "file": "t3_forodrim.txt",
+        "tier": 3,
+        "line": 386
+       },
+       {
+        "file": "t3_mallorn_18.txt",
+        "tier": 3,
+        "line": null
+       },
+       {
+        "file": "t3_mallorn_34.txt",
+        "tier": 3,
+        "line": 1834
+       },
+       {
+        "file": "t3_mallorn_39.txt",
+        "tier": 3,
+        "line": 1679
+       },
+       {
+        "file": "t3_mallorn_4.txt",
+        "tier": 3,
+        "line": 1150
+       },
+       {
+        "file": "t3_mallorn_43.txt",
+        "tier": 3,
+        "line": 289
+       },
+       {
+        "file": "t3_mallorn_8.txt",
+        "tier": 3,
+        "line": null
+       },
+       {
+        "file": "t3_parma_eldalamberon_vol_1_no_5.txt",
+        "tier": 3,
+        "line": 959
+       },
+       {
+        "file": "t3_the_atlas_of_middle_earth.txt",
+        "tier": 3,
+        "line": 32
+       },
+       {
+        "file": "t3_the_complete_tolkien_companion.txt",
+        "tier": 3,
+        "line": 752
+       },
+       {
+        "file": "t3_the_ring_goes_ever_on.txt",
+        "tier": 3,
+        "line": 3464
+       }
+      ],
+      "tiers": [
+       1,
+       2,
+       3
+      ],
+      "reading": "23 files, AND NOT ONE OF THEM IS THE FAN PROJECT. The Numenorean realms in exile are Arnor and Gondor, and the phrase is Tolkien's -- the Silmarillion's index uses it of Isildur and Anarion. A fan project took a phrase already in the books for its title, and a probe for the project finds the books."
+     }
+    ],
+    "asked_of": "map/ardatext.py over all 232 corpus files, by its name path. ASKED, NOT ASSUMED -- a raw grep returns false zeros on a mixed NFC/NFD corpus, and the squeeze path returns false HITS on a short name.",
+    "conf": "C"
+   },
+   "ancestry": "THE CLEAREST ANCESTRY CHAIN IN THIS FILE AND THE POINT OF RECORDING ANCESTRY AT ALL. Tolkien Gateway states that the Archives were in turn used as a source for other fan projects, naming The Lord of the Rings: Realms in Exile. A reader who meets the same invented fact in both has met ONE source twice.",
+   "ancestry_established": true,
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+  },
+  {
+   "id": "david-day-bestiary",
+   "claim": "A Tolkien Bestiary and its successors are reference works for Tolkien's Middle-earth.",
+   "who_makes_it": "David Day, whose Tolkien reference books have sold over three million copies in more than 120 editions and 20 languages",
+   "where_it_is_made": {
+    "source": "https://tolkiengateway.net/wiki/David_Day",
+    "hand": "the editors of Tolkien Gateway",
+    "retrieved_at": "2026-08-26T21:50:11Z",
+    "capture_sha256": "4a90ab5ad551eccddff08822a36e4322be509fbbb52dc208edd46012f53f4f8a",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "attestation": {
+    "verdict": "attested elsewhere",
+    "measured": "attested elsewhere",
+    "probes": [
+     {
+      "asked": "David Day",
+      "hits": 9,
+      "loci": [
+       {
+        "file": "t2_the_history_of_the_hobbit.txt",
+        "tier": 2,
+        "line": 36398
+       },
+       {
+        "file": "t3_mallorn_20.txt",
+        "tier": 3,
+        "line": 265
+       },
+       {
+        "file": "t3_mallorn_23.txt",
+        "tier": 3,
+        "line": 1413
+       },
+       {
+        "file": "t3_mallorn_31.txt",
+        "tier": 3,
+        "line": 2505
+       },
+       {
+        "file": "t3_mallorn_33_proceedings_of_the_j_r_r_tolkien_centenar.txt",
+        "tier": 3,
+        "line": 17493
+       },
+       {
+        "file": "t3_mallorn_40.txt",
+        "tier": 3,
+        "line": 2930
+       },
+       {
+        "file": "t3_mallorn_60.txt",
+        "tier": 3,
+        "line": 35
+       },
+       {
+        "file": "t3_the_ring_goes_ever_on.txt",
+        "tier": 3,
+        "line": 10299
+       },
+       {
+        "file": "t4_the_lord_of_the_rings_urania_finarte_14_12_2022.txt",
+        "tier": 4,
+        "line": 717
+       }
+      ],
+      "tiers": [
+       2,
+       3,
+       4
+      ],
+      "reading": "nine files, every one of them SCHOLARSHIP ABOUT the books -- Mallorn, The History of the Hobbit, conference proceedings. The corpus knows Day the way it knows any critic."
+     },
+     {
+      "asked": "A Tolkien Bestiary",
+      "hits": 5,
+      "loci": [
+       {
+        "file": "t3_mallorn_20.txt",
+        "tier": 3,
+        "line": 266
+       },
+       {
+        "file": "t3_mallorn_23.txt",
+        "tier": 3,
+        "line": 1786
+       },
+       {
+        "file": "t3_mallorn_33_proceedings_of_the_j_r_r_tolkien_centenar.txt",
+        "tier": 3,
+        "line": 17493
+       },
+       {
+        "file": "t3_the_ring_goes_ever_on.txt",
+        "tier": 3,
+        "line": 10672
+       },
+       {
+        "file": "t4_the_lord_of_the_rings_urania_finarte_14_12_2022.txt",
+        "tier": 4,
+        "line": 717
+       }
+      ],
+      "tiers": [
+       3,
+       4
+      ],
+      "reading": "five files, same kind. Being discussed in the corpus is not being sourced by it."
+     }
+    ],
+    "asked_of": "map/ardatext.py over all 232 corpus files, by its name path. ASKED, NOT ASSUMED -- a raw grep returns false zeros on a mixed NFC/NFD corpus, and the squeeze path returns false HITS on a short name.",
+    "conf": "C"
+   },
+   "ancestry": "Day's books are widely held, widely reprinted under changed titles, and widely repeated -- which is precisely why §I.5's rule matters here: a claim that appears in four Day titles has one source.",
+   "ancestry_established": true,
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier.",
+   "disputed_source": {
+    "name": "David Day",
+    "why": "Tolkien Gateway records that Day is notable for a tendency to fabricate false or inaccurate information, and that his books have been repeatedly criticised by the Tolkien community; Day rejects the charge of inaccuracy.",
+    "who_says": [
+     "The Tolkien Society, which recommends none of Day's books in its suggested readings and prefers Robert Foster's The Complete Guide to Middle-earth",
+     "David Bratman, editor of the journal Tolkien Studies, who lists Day's books as Not Recommended",
+     "Troels Forchhammer, who wrote that Day is infamous in Tolkien circles for his creative re-interpretation of Tolkien's work",
+     "Michael Martinez, who wrote that in Tolkien scholarship the worst insult one could deliver for many years was that something sounded like David Day wrote it",
+     "Steuard Jensen, author of the Tolkien Meta-FAQ, who wrote that it is not wise to rely on A Tolkien Bestiary for information on Tolkien's vision of Middle-earth, and that a considerable number of details in it were invented by Day himself with little or no justification in the texts, not distinguished from the justified facts in any way"
+    ],
+    "entries_criticised": [
+     "Beren",
+     "Giants",
+     "long-worms",
+     "Sauron",
+     "Telcontari"
+    ],
+    "and_the_other_way": "THE WARNING IS NOT A BLANKET AND IS NOT WRITTEN AS ONE. The same page carries a review of The Battles of Tolkien finding its factual content on the battles and characters accurate, with none of the obvious errors common in the earlier books. A disputed source is disputed, not void, and an archive that flattens that is doing to Day what it accuses Day of doing to Tolkien.",
+    "audit": "§IX audit 21: a claim resting on a disputed source carries an explicit warning. This block IS that warning, and it names who says so rather than asserting it in this archive's voice.",
+    "read_from": "https://tolkiengateway.net/wiki/David_Day",
+    "retrieved_at": "2026-08-26T21:50:11Z"
+   }
+  },
+  {
+   "id": "tolkien-fan-fiction-corpus",
+   "claim": "The oldest published Tolkien fan fiction is the poem The Passing of the Elven-kind, in the fanzine All Mimsy 5, November 1959.",
+   "who_makes_it": "Tolkien Gateway, citing the bibliographer Sumner Gary Hunnewell",
+   "where_it_is_made": {
+    "source": "https://tolkiengateway.net/wiki/Fan_fiction",
+    "hand": "the editors of Tolkien Gateway",
+    "retrieved_at": "2026-08-26T21:50:23Z",
+    "capture_sha256": "dec88519054cbf7b1a4e1c90564ab7defc9766473bb5801191cfecd2135352ae",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "attestation": {
+    "verdict": "true string wrong subject",
+    "measured": "attested in a tier-1 text",
+    "probes": [
+     {
+      "asked": "The Passing of the Elven-kind",
+      "hits": 0,
+      "loci": [],
+      "tiers": [],
+      "reading": "absent, as a 1959 fanzine poem should be."
+     },
+     {
+      "asked": "All Mimsy",
+      "hits": 1,
+      "loci": [
+       {
+        "file": "t1_the_collected_poems_of_j_r_r_tolkien.txt",
+        "tier": 1,
+        "line": 56971
+       }
+      ],
+      "tiers": [
+       1
+      ],
+      "reading": "one hit, in The Collected Poems -- and it is JABBERWOCKY. All mimsy were the borogoves, quoted whole in the editorial matter beside Tolkien's Old English translation of Carroll. The fanzine took its title from the same line, sixty years earlier, and a probe for the fanzine finds Lewis Carroll."
+     }
+    ],
+    "asked_of": "map/ardatext.py over all 232 corpus files, by its name path. ASKED, NOT ASSUMED -- a raw grep returns false zeros on a mixed NFC/NFD corpus, and the squeeze path returns false HITS on a short name.",
+    "conf": "C"
+   },
+   "ancestry": "A claim about the FANDOM rather than about Arda, and it is here because the fan layer must be able to describe its own population. Its ancestry is a named bibliographer, which is as good as ancestry gets in this file.",
+   "ancestry_established": true,
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+  }
+ ],
+ "venues_what": "Where fan material lives. A venue row is not a claim about Arda or about the fandom; it records that a place exists, who runs it, and what it states about its own rights. Nothing of their content is carried.",
+ "venues": [
+  {
+   "id": "tolkien-gateway",
+   "name": "Tolkien Gateway",
+   "kind": "fan encyclopedia",
+   "hand": "the editors of Tolkien Gateway",
+   "source_url": "https://tolkiengateway.net/wiki/Fanon",
+   "retrieved_at": "2026-08-26T21:50:07Z",
+   "capture_sha256": "61c09cc475c352f49663612c8ae4773e4f071d8b7a150dd9eb5a829134b72ec2",
+   "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+   "note": "A fan-edited wiki. Used throughout this file as the CORROBORATING source for what fandom believes -- never as a source for what Tolkien wrote.",
+   "conf": "EXT"
+  },
+  {
+   "id": "silmarillion-writers-guild",
+   "name": "Silmarillion Writers' Guild",
+   "kind": "fan fiction archive",
+   "hand": "the Silmarillion Writers' Guild and its contributing authors",
+   "source_url": "https://www.silmarillionwritersguild.org/",
+   "retrieved_at": "2026-08-26T21:50:37Z",
+   "capture_sha256": "e18f2519ff8b014ca82238c59985d20b499436943e248be628c07dc28d9043b8",
+   "licence_as_stated": "no site-wide licence is stated; the site states that copyrights for creative work hosted on it are retained by their creators",
+   "note": "LICENCE NOT ESTABLISHED and deliberately not guessed. Nothing of its content is carried here; the row records that the venue exists.",
+   "conf": "EXT"
+  },
+  {
+   "id": "council-of-elrond",
+   "name": "Council of Elrond",
+   "kind": "fan community and fiction archive",
+   "hand": "Council of Elrond",
+   "source_url": "https://councilofelrond.com/",
+   "retrieved_at": "2026-08-26T21:50:41Z",
+   "capture_sha256": "32bd8791f3094e1a90fe0278335bb78a580c218e8dd2307c8619e7477a4efd30",
+   "licence_as_stated": "Copyright 2026 Council of Elrond, per the site footer; no open licence is offered",
+   "note": "robots.txt allows all agents with a Crawl-delay of 10. Nothing but the front page was requested.",
+   "conf": "EXT"
+  },
+  {
+   "id": "theonering-net",
+   "name": "TheOneRing.net",
+   "kind": "fan news site and forum",
+   "hand": "TheOneRing.net",
+   "source_url": "http://www.theonering.net/",
+   "retrieved_at": "2026-08-26T21:50:45Z",
+   "capture_sha256": "306094ab04ae710059657aef641feb3154fb2158c328efcd1484fea3afa03f98",
+   "licence_as_stated": "copyright 1999-2026 TheOneRing.net, per the site footer; no open licence is offered",
+   "note": "robots.txt carries a sitemap and no Disallow. Nothing but the front page was requested.",
+   "conf": "EXT"
+  }
+ ],
+ "refused": []
+}

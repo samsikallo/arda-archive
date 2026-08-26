@@ -1,0 +1,4540 @@
+{
+ "what": "ADAPTATIONS OF TOLKIEN'S WORK -- films, television, radio, video games, tabletop games, music and print -- and where named adaptations DIVERGE from the text. A SEPARATE LAYER, in a separate file, because the protocol asks for separately queryable layers and a flag inside the canon datasets fails its own audit 4 by construction.",
+ "no_tier": "NO ROW CARRIES A TIER. The tiers rank claims about ARDA by distance from Tolkien's word; an adaptation makes a claim about a FILM. Every row carries a HAND, a SOURCE URL, a RETRIEVED_AT and a LICENCE AS STATED instead. Note also C474: `tier: 5` elsewhere in this archive is an ORIGIN axis meaning made by this archive, with `content_tier` beside it -- a different axis again, and nothing here carries either.",
+ "not_the_canon": "Nothing in this file is evidence about Middle-earth. A reader who wants what Tolkien wrote wants site/arda_quotes.json or the corpus; a reader who wants what a fan believes wants site/arda_fanon.json.",
+ "sibling": "site/arda_fanon.json holds the fan layer. The two are separate files for the same reason both are separate from the canon datasets.",
+ "provenance": {
+  "works_from": "Wikidata, via four SPARQL queries held in /home/raz/.arda-crawl-stage/layers-20260826/meta/",
+  "works_licence": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+  "deviation_corroboration_from": "Tolkien Gateway, one capture per deviation, held with its sha256 in /home/raz/.arda-crawl-stage/layers-20260826/fetched/",
+  "deviation_corroboration_licence": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+  "text_side_verified_by": "map/ardatext.py -- the archive's ONE matcher. A raw grep returns false zeros here: the corpus is mixed NFC/NFD and quotations cross line breaks and running heads.",
+  "why_the_anchors_carry_no_quotation_marks": "They are TOLKIEN GATEWAY'S wording, not this archive's quotation of Tolkien. In this archive quotation marks assert that Tolkien wrote the words; these are a wiki's. That is C478's reading applied when the field was NAMED -- the field is called `corroboration_anchor` and a second field says whose words they are -- rather than bolted on afterwards as a skip in map/quoted_check.py.",
+  "robots": {
+   "councilofelrond.com": {
+    "http_status": "200",
+    "bytes": 135,
+    "retrieved_at": "2026-08-26T21:39:43Z"
+   },
+   "deviantart.com": {
+    "http_status": "302",
+    "bytes": 0,
+    "retrieved_at": "2026-08-26T21:39:45Z"
+   },
+   "encyclopedia-of-arda.com": {
+    "http_status": "301",
+    "bytes": 255,
+    "retrieved_at": "2026-08-26T21:39:43Z"
+   },
+   "lotr.fandom.com": {
+    "http_status": "403",
+    "bytes": 5777,
+    "retrieved_at": "2026-08-26T21:39:43Z"
+   },
+   "mobygames.com": {
+    "http_status": "200",
+    "bytes": 1836,
+    "retrieved_at": "2026-08-26T21:39:44Z"
+   },
+   "prancingponypodcast.com": {
+    "http_status": "404",
+    "bytes": 1251,
+    "retrieved_at": "2026-08-26T21:39:45Z"
+   },
+   "query.wikidata.org": {
+    "http_status": "200",
+    "bytes": 95,
+    "retrieved_at": "2026-08-26T21:39:44Z"
+   },
+   "scifi.stackexchange.com": {
+    "http_status": "418",
+    "bytes": 113,
+    "retrieved_at": "2026-08-26T21:39:44Z"
+   },
+   "silmarillionwritersguild.org": {
+    "http_status": "301",
+    "bytes": 299,
+    "retrieved_at": "2026-08-26T21:39:44Z"
+   },
+   "theonering.net": {
+    "http_status": "302",
+    "bytes": 301,
+    "retrieved_at": "2026-08-26T21:39:44Z"
+   },
+   "tolkiengateway.net": {
+    "http_status": "200",
+    "bytes": 3880,
+    "retrieved_at": "2026-08-26T21:39:43Z"
+   },
+   "tolkienprofessor.com": {
+    "http_status": "200",
+    "bytes": 178,
+    "retrieved_at": "2026-08-26T21:39:45Z"
+   },
+   "www.tolkiensociety.org": {
+    "http_status": "200",
+    "bytes": 129,
+    "retrieved_at": "2026-08-26T21:39:45Z"
+   },
+   "www.wikidata.org": {
+    "http_status": "200",
+    "bytes": 15896,
+    "retrieved_at": "2026-08-26T21:39:44Z"
+   }
+  }
+ },
+ "refusals": [
+  {
+   "host": "mobygames.com",
+   "what": "every page of the site; nothing was fetched but robots.txt",
+   "site_says": "robots.txt carries User-agent: ClaudeBot / Disallow: / , an express EU-DSM Article 4 reservation of rights, and Content-Signal: search=yes,ai-train=no,use=reference",
+   "robots_capture": "robots/mobygames.com.txt",
+   "authority": "C477, the owner's ruling of 26 August 2026: his authorisation OVERRIDES the site's reservation for this archive. The same ruling records the session's own limit, which is kept here: this archive will not spoof a User-Agent to evade a block that names it, because misrepresenting what we are is the one thing this archive's ethic forbids absolutely.",
+   "what_was_done": "The override was EXERCISED rather than declined. Identifying honestly as a Claude agent acting for this archive, https://www.mobygames.com/game/the-hobbit/ was requested once on 2026-08-26T21:56:30Z. The host returned HTTP 403 and a 55-byte body reading that one should contact the site owner for access. The body was SNIFFED rather than trusted to the status line, and is held in the stage. No page was taken, and no second attempt was made under a different name.",
+   "substitute": "Wikidata, CC0, supplied the MobyGames identifiers on the work rows without touching the refusing host."
+  },
+  {
+   "host": "www.encyclopedia-of-arda.com",
+   "what": "every page of the site; nothing was fetched but robots.txt",
+   "site_says": "robots.txt names ClaudeBot in a Disallow: / group, beside Amazonbot, Amzn-SearchBot, BUbiNG and Scrapy",
+   "robots_capture": "robots/encyclopedia-of-arda.com.L.txt",
+   "authority": "NO RULING EXISTS ON THIS SITE. C477 decides MobyGames and is not extended here by analogy: an authority inferred from a ruling about a different subject is exactly what got a pre-push exemption blocked at C479, where a guard's header cited C477 for something C477 does not say.",
+   "what_was_done": "Refused. The site is named in `site/arda_sources.json` and stays cited rather than harvested.",
+   "substitute": null
+  },
+  {
+   "host": "lotr.fandom.com",
+   "what": "every page of the site, robots.txt included",
+   "site_says": "robots.txt itself returns HTTP 403 behind an interstitial challenge, so the site's own permissions cannot be read",
+   "robots_capture": "robots/lotr.fandom.com.L.txt",
+   "authority": "This archive's own standing rule that could-not-ask is never a measurement. A permission that cannot be READ is not a permission GRANTED, and the failure direction matters: reading an unreadable robots.txt as silence would let every challenge-protected site become permissive by accident.",
+   "what_was_done": "Refused, and the 403 body is held in the stage as the evidence.",
+   "substitute": null
+  },
+  {
+   "host": "query.wikidata.org",
+   "what": "nothing -- this row records a PERMISSION READ RATHER THAN A REFUSAL, so that the judgement is visible instead of buried",
+   "site_says": "robots.txt is three lines: Disallow: /sparql and Disallow: /bigdata for User-agent: *",
+   "robots_capture": "robots/query.wikidata.org.txt",
+   "authority": "Read as a directive to CRAWLERS about indexable paths rather than a bar on the query service itself, which exists to be queried programmatically. THE PRECEDENT IS THIS ARCHIVE'S OWN AND IT IS IN THE TREE TODAY: map/gen_wikidata_ids.py's 1,270 published Q-ids come through the same endpoint, harvested by ~/.arda-crawl-stage/rz-20260826/sparql.sh with an honest User-Agent naming the archive and a contact address.",
+   "what_was_done": "Four queries, honest User-Agent, results held in the stage. This is a JUDGEMENT and it is recorded as one so it can be overruled; it is not presented as an unambiguous permission.",
+   "substitute": null
+  }
+ ],
+ "counts": {
+  "works": 76,
+  "works_by_medium": {
+   "video game": 25,
+   "film": 24,
+   "print": 8,
+   "tabletop": 5,
+   "music": 4,
+   "radio": 4,
+   "unclassified": 3,
+   "television": 2,
+   "internet": 1
+  },
+  "works_with_imdb_id": 40,
+  "works_with_mobygames_id": 19,
+  "works_with_a_year": 62,
+  "deviations": 14,
+  "deviations_by_kind": {
+   "addition": 2,
+   "alteration": 2,
+   "interpretation": 1,
+   "invented character": 2,
+   "invented nomenclature": 1,
+   "omission": 2,
+   "reversal": 3,
+   "substitution": 1
+  },
+  "deviations_attested_text_side": 12,
+  "deviations_absence_measured": 2,
+  "deviations_refused": 0,
+  "corpus_files_searched": 232,
+  "hosts_refused": 2
+ },
+ "works_what": "One row per adaptation, from Wikidata's structured data. `medium` is this archive's classification of Wikidata's `instance of` labels and a work that fits none is left `unclassified` rather than forced. `how_it_reached_this_file` names which of three arguments found it.",
+ "works": [
+  {
+   "id": "Q5473",
+   "title": "Middle-Earth Role Playing",
+   "description": null,
+   "medium": "tabletop",
+   "wikidata_instance_of": [
+    "fantasy role-playing game",
+    "tabletop role-playing game"
+   ],
+   "year": 1984,
+   "years": [
+    "1984"
+   ],
+   "makers": {
+    "publisher": [
+     "Iron Crown Enterprises"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [
+    "tabletop role-playing game"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q5473",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q74229",
+   "title": "The Hobbit",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "animated film",
+    "animated television film",
+    "television special"
+   ],
+   "year": 1977,
+   "years": [
+    "1977"
+   ],
+   "makers": {
+    "director": [
+     "Arthur Rankin Jr.",
+     "Jules Bass"
+    ],
+    "screenwriter": [
+     "J. R. R. Tolkien",
+     "Romeo Muller"
+    ],
+    "producer": [
+     "Arthur Rankin Jr.",
+     "Jules Bass"
+    ],
+    "production_company": [
+     "Rankin/Bass Animated Entertainment",
+     "Topcraft"
+    ],
+    "composer": [
+     "Glenn Yarbrough",
+     "Maury Laws"
+    ],
+    "distributor": [
+     "Netflix",
+     "Warner Bros. Family Entertainment"
+    ]
+   },
+   "based_on": [
+    "The Hobbit"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt0077687"
+    ]
+   },
+   "genre": [
+    "children's film",
+    "fantasy film",
+    "musical film",
+    "sword and sorcery film"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q74229",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q74331",
+   "title": "The Hobbit trilogy",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "film trilogy"
+   ],
+   "year": 2012,
+   "years": [
+    "2012"
+   ],
+   "makers": {
+    "director": [
+     "Peter Jackson"
+    ],
+    "screenwriter": [
+     "Fran Walsh",
+     "Guillermo del Toro",
+     "Philippa Boyens"
+    ],
+    "producer": [
+     "Peter Jackson"
+    ],
+    "production_company": [
+     "WingNut Films"
+    ],
+    "composer": [
+     "Howard Shore"
+    ],
+    "distributor": [
+     "Warner Bros. Entertainment"
+    ]
+   },
+   "based_on": [
+    "The Hobbit"
+   ],
+   "identifiers": {},
+   "genre": [
+    "fantasy film"
+   ],
+   "country": [
+    "New Zealand",
+    "United States"
+   ],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [
+    "Peter Jackson's Middle-earth film series"
+   ],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q74331",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q80379",
+   "title": "The Hobbit: An Unexpected Journey",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "film"
+   ],
+   "year": 2012,
+   "years": [
+    "2012",
+    "2012",
+    "2012",
+    "2012"
+   ],
+   "makers": {
+    "director": [
+     "Peter Jackson"
+    ],
+    "screenwriter": [
+     "Fran Walsh",
+     "Guillermo del Toro",
+     "J. R. R. Tolkien",
+     "Peter Jackson",
+     "Philippa Boyens"
+    ],
+    "producer": [
+     "Carolynne Cunningham",
+     "Fran Walsh",
+     "Peter Jackson",
+     "Zane Weiner"
+    ],
+    "production_company": [
+     "Metro-Goldwyn-Mayer",
+     "New Line Cinema",
+     "Warner Bros. Entertainment",
+     "WingNut Films"
+    ],
+    "composer": [
+     "Howard Shore"
+    ],
+    "distributor": [
+     "Fórum Hungary",
+     "Netflix"
+    ]
+   },
+   "based_on": [
+    "The Hobbit"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt0903624"
+    ]
+   },
+   "genre": [
+    "action film",
+    "adventure film",
+    "fantasy film"
+   ],
+   "country": [
+    "New Zealand",
+    "United States"
+   ],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [
+    "Peter Jackson's Middle-earth film series",
+    "The Hobbit trilogy"
+   ],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q80379",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q115285",
+   "title": "The Return of the King",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "television film"
+   ],
+   "year": 1980,
+   "years": [
+    "1980",
+    "1980"
+   ],
+   "makers": {
+    "director": [
+     "Arthur Rankin Jr.",
+     "Jules Bass"
+    ],
+    "screenwriter": [
+     "J. R. R. Tolkien"
+    ],
+    "composer": [
+     "Maury Laws"
+    ],
+    "distributor": [
+     "American Broadcasting Company",
+     "Netflix"
+    ]
+   },
+   "based_on": [
+    "The Return of the King"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt0079802"
+    ]
+   },
+   "genre": [
+    "children's film",
+    "fantasy film"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q115285",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q127367",
+   "title": "The Lord of the Rings: The Fellowship of the Ring",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "film"
+   ],
+   "year": 2001,
+   "years": [
+    "2001",
+    "2002",
+    "2002"
+   ],
+   "makers": {
+    "director": [
+     "Peter Jackson"
+    ],
+    "screenwriter": [
+     "Fran Walsh",
+     "Peter Jackson",
+     "Philippa Boyens"
+    ],
+    "producer": [
+     "Barrie M. Osborne",
+     "Fran Walsh",
+     "Peter Jackson",
+     "Tim Sanders"
+    ],
+    "production_company": [
+     "New Line Cinema",
+     "WingNut Films"
+    ],
+    "composer": [
+     "Howard Shore"
+    ],
+    "creator": [
+     "Peter Jackson"
+    ],
+    "distributor": [
+     "New Line Cinema"
+    ]
+   },
+   "based_on": [
+    "The Fellowship of the Ring"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt0120737"
+    ]
+   },
+   "genre": [
+    "action film",
+    "adventure film",
+    "fantasy film"
+   ],
+   "country": [
+    "New Zealand",
+    "United States"
+   ],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [
+    "Peter Jackson's Middle-earth film series",
+    "The Lord of the Rings"
+   ],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q127367",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q131074",
+   "title": "The Lord of the Rings: The Return of the King",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "film"
+   ],
+   "year": 2003,
+   "years": [
+    "2003",
+    "2003",
+    "2003",
+    "2003",
+    "2004"
+   ],
+   "makers": {
+    "director": [
+     "Peter Jackson"
+    ],
+    "screenwriter": [
+     "Fran Walsh",
+     "Peter Jackson",
+     "Philippa Boyens"
+    ],
+    "producer": [
+     "Barrie M. Osborne",
+     "Fran Walsh",
+     "Peter Jackson"
+    ],
+    "production_company": [
+     "New Line Cinema",
+     "WingNut Films"
+    ],
+    "composer": [
+     "Howard Shore"
+    ],
+    "creator": [
+     "Peter Jackson"
+    ],
+    "distributor": [
+     "New Line Cinema"
+    ]
+   },
+   "based_on": [
+    "The Return of the King"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt0167260"
+    ]
+   },
+   "genre": [
+    "adventure film",
+    "fantasy film"
+   ],
+   "country": [
+    "New Zealand",
+    "United States"
+   ],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [
+    "Peter Jackson's Middle-earth film series",
+    "The Lord of the Rings"
+   ],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q131074",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q164963",
+   "title": "The Lord of the Rings: The Two Towers",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "film"
+   ],
+   "year": 2002,
+   "years": [
+    "2002",
+    "2002",
+    "2003"
+   ],
+   "makers": {
+    "director": [
+     "Peter Jackson"
+    ],
+    "screenwriter": [
+     "Fran Walsh",
+     "Peter Jackson",
+     "Philippa Boyens",
+     "Stephen Sinclair"
+    ],
+    "producer": [
+     "Barrie M. Osborne",
+     "Fran Walsh",
+     "Peter Jackson"
+    ],
+    "production_company": [
+     "New Line Cinema",
+     "WingNut Films"
+    ],
+    "composer": [
+     "Howard Shore"
+    ],
+    "creator": [
+     "Peter Jackson"
+    ],
+    "distributor": [
+     "New Line Cinema"
+    ]
+   },
+   "based_on": [
+    "The Two Towers"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt0167261"
+    ]
+   },
+   "genre": [
+    "action film",
+    "adventure film",
+    "fantasy film"
+   ],
+   "country": [
+    "New Zealand",
+    "United States"
+   ],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [
+    "Peter Jackson's Middle-earth film series",
+    "The Lord of the Rings"
+   ],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q164963",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q190214",
+   "title": "The Lord of the Rings",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "film trilogy"
+   ],
+   "year": 2001,
+   "years": [
+    "2001"
+   ],
+   "makers": {
+    "director": [
+     "Peter Jackson"
+    ],
+    "screenwriter": [
+     "Fran Walsh"
+    ],
+    "producer": [
+     "Peter Jackson"
+    ],
+    "production_company": [
+     "New Line Cinema",
+     "WingNut Films"
+    ],
+    "composer": [
+     "Howard Shore"
+    ],
+    "distributor": [
+     "New Line Cinema"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [
+    "action film",
+    "adventure film",
+    "fantasy film"
+   ],
+   "country": [
+    "New Zealand",
+    "United States"
+   ],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [
+    "Peter Jackson's Middle-earth film series"
+   ],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q190214",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q263593",
+   "title": "The Lord of the Rings  — Original Soundtrack Recording",
+   "description": null,
+   "medium": "music",
+   "wikidata_instance_of": [
+    "album"
+   ],
+   "year": 1978,
+   "years": [
+    "1978"
+   ],
+   "makers": {},
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [
+    "stage and screen"
+   ],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q263593",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q268133",
+   "title": "Symphony No. 1 \"The Lord of the Rings\"",
+   "description": null,
+   "medium": "music",
+   "wikidata_instance_of": [
+    "musical work/composition"
+   ],
+   "year": 1988,
+   "years": [
+    "1988"
+   ],
+   "makers": {
+    "composer": [
+     "Johan de Meij"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q268133",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q293181",
+   "title": "Born of Hope",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "film"
+   ],
+   "year": 2009,
+   "years": [
+    "2009"
+   ],
+   "makers": {
+    "director": [
+     "Kate Madison"
+    ],
+    "distributor": [
+     "YouTube"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt1301303"
+    ]
+   },
+   "genre": [
+    "adventure film",
+    "fan film",
+    "fantasy film"
+   ],
+   "country": [
+    "United Kingdom"
+   ],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q293181",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q293219",
+   "title": "The Hunt for Gollum",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "short film"
+   ],
+   "year": 2009,
+   "years": [
+    "2009"
+   ],
+   "makers": {
+    "director": [
+     "Chris Bouchard"
+    ],
+    "distributor": [
+     "Dailymotion"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt1323925"
+    ]
+   },
+   "genre": [
+    "fan film",
+    "fantasy film"
+   ],
+   "country": [
+    "United Kingdom"
+   ],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q293219",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q293269",
+   "title": "The Hobbit",
+   "description": null,
+   "medium": "radio",
+   "wikidata_instance_of": [
+    "radio program"
+   ],
+   "year": null,
+   "years": [],
+   "makers": {
+    "production_company": [
+     "BBC Radio"
+    ]
+   },
+   "based_on": [
+    "The Hobbit"
+   ],
+   "identifiers": {},
+   "genre": [
+    "radio drama series"
+   ],
+   "country": [
+    "United Kingdom"
+   ],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q293269",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q372385",
+   "title": "The Lord of the Rings: The Third Age",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2004,
+   "years": [
+    "2004"
+   ],
+   "makers": {
+    "publisher": [
+     "Electronic Arts"
+    ],
+    "developer": [
+     "Visceral Games"
+    ],
+    "distributor": [
+     "New Line Cinema"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt0415947"
+    ],
+    "mobygames_id": [
+     "lord-of-the-rings-the-third-age_"
+    ]
+   },
+   "genre": [
+    "role-playing video game"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [
+    "Nintendo GameCube",
+    "Q10680",
+    "Q132020"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q372385",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q378913",
+   "title": "The Lord of the Rings",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "animated film"
+   ],
+   "year": 1978,
+   "years": [
+    "1978",
+    "1979"
+   ],
+   "makers": {
+    "director": [
+     "Ralph Bakshi"
+    ],
+    "screenwriter": [
+     "Chris Conkling",
+     "J. R. R. Tolkien",
+     "Peter S. Beagle"
+    ],
+    "producer": [
+     "Saul Zaentz"
+    ],
+    "production_company": [
+     "Fantasy Films Productions"
+    ],
+    "composer": [
+     "Leonard Rosenman"
+    ],
+    "distributor": [
+     "InterCom",
+     "Netflix",
+     "United Artists"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt0077869"
+    ]
+   },
+   "genre": [
+    "adventure film",
+    "fantasy film",
+    "sword and sorcery film"
+   ],
+   "country": [
+    "Spain",
+    "United Kingdom",
+    "United States"
+   ],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q378913",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q393059",
+   "title": "Lego The Hobbit",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2014,
+   "years": [
+    "2014"
+   ],
+   "makers": {
+    "publisher": [
+     "Warner Bros. Games"
+    ],
+    "developer": [
+     "Traveller's Tales"
+    ],
+    "composer": [
+     "Howard Shore"
+    ],
+    "distributor": [
+     "Q135288",
+     "Q3070866",
+     "Steam"
+    ]
+   },
+   "based_on": [
+    "The Hobbit: An Unexpected Journey",
+    "The Hobbit: The Desolation of Smaug"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt3584562"
+    ],
+    "mobygames_id": [
+     "lego-the-hobbit",
+     "lego-the-hobbit_"
+    ]
+   },
+   "genre": [
+    "action-adventure game",
+    "role-playing video game"
+   ],
+   "country": [
+    "United Kingdom"
+   ],
+   "original_language": [],
+   "platform": [
+    "Microsoft Windows",
+    "Nintendo 3DS",
+    "PlayStation 3",
+    "PlayStation Vita",
+    "Q13361286",
+    "Q48263",
+    "Q5014725",
+    "Wii U"
+   ],
+   "part_of_series": [
+    "Lego The Lord of the Rings"
+   ],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q393059",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q440046",
+   "title": "The Lord of the Rings: The Return of the King",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2003,
+   "years": [
+    "2003"
+   ],
+   "makers": {
+    "publisher": [
+     "Electronic Arts"
+    ],
+    "developer": [
+     "Visceral Games"
+    ],
+    "distributor": [
+     "New Line Cinema"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings: The Return of the King",
+    "The Lord of the Rings: The Two Towers"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt0387360"
+    ],
+    "mobygames_id": [
+     "lord-of-the-rings-the-return-of-the-king",
+     "lord-of-the-rings-the-return-of-the-king-"
+    ]
+   },
+   "genre": [
+    "action-adventure game",
+    "hack and slash"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [
+    "Microsoft Windows",
+    "Nintendo GameCube",
+    "Q10680",
+    "Q132020",
+    "Q188642",
+    "macOS"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q440046",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q440060",
+   "title": "The Lord of the Rings: The Battle for Middle-earth",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2004,
+   "years": [
+    "2004"
+   ],
+   "makers": {
+    "publisher": [
+     "Electronic Arts"
+    ],
+    "developer": [
+     "Danger Close Games"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt0412935"
+    ],
+    "mobygames_id": [
+     "lord-of-the-rings-the-battle-for-middle-earth",
+     "lord-of-the-rings-the-battle-for-middle-earth-limited-edition"
+    ]
+   },
+   "genre": [
+    "real-time strategy"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [
+    "Microsoft Windows"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q440060",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q719915",
+   "title": "The Hobbit: The Desolation of Smaug",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "film"
+   ],
+   "year": 2013,
+   "years": [
+    "2013",
+    "2013",
+    "2013",
+    "2013",
+    "2013"
+   ],
+   "makers": {
+    "director": [
+     "Peter Jackson"
+    ],
+    "screenwriter": [
+     "Fran Walsh",
+     "Guillermo del Toro",
+     "Peter Jackson",
+     "Philippa Boyens"
+    ],
+    "producer": [
+     "Carolynne Cunningham",
+     "Fran Walsh",
+     "Peter Jackson"
+    ],
+    "production_company": [
+     "Metro-Goldwyn-Mayer",
+     "New Line Cinema",
+     "WingNut Films"
+    ],
+    "composer": [
+     "Howard Shore"
+    ],
+    "creator": [
+     "Peter Jackson"
+    ],
+    "distributor": [
+     "Fórum Hungary",
+     "Netflix",
+     "Warner Bros. Entertainment"
+    ]
+   },
+   "based_on": [
+    "The Hobbit"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt1170358"
+    ]
+   },
+   "genre": [
+    "action film",
+    "adventure film",
+    "fantasy film"
+   ],
+   "country": [
+    "New Zealand",
+    "United States"
+   ],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [
+    "Peter Jackson's Middle-earth film series",
+    "The Hobbit trilogy"
+   ],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q719915",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q905691",
+   "title": "Lord of the Rings",
+   "description": null,
+   "medium": "music",
+   "wikidata_instance_of": [
+    "dramatico-musical work"
+   ],
+   "year": null,
+   "years": [],
+   "makers": {
+    "composer": [
+     "A. R. Rahman"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q905691",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q919649",
+   "title": "The Hobbit: The Battle of the Five Armies",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "film"
+   ],
+   "year": 2014,
+   "years": [
+    "2014",
+    "2014",
+    "2014",
+    "2014",
+    "2014"
+   ],
+   "makers": {
+    "director": [
+     "Peter Jackson"
+    ],
+    "screenwriter": [
+     "Fran Walsh",
+     "Guillermo del Toro",
+     "Peter Jackson",
+     "Philippa Boyens"
+    ],
+    "producer": [
+     "Carolynne Cunningham",
+     "Fran Walsh",
+     "Mark Ordesky",
+     "Peter Jackson"
+    ],
+    "production_company": [
+     "Metro-Goldwyn-Mayer",
+     "New Line Cinema",
+     "WingNut Films"
+    ],
+    "composer": [
+     "Howard Shore"
+    ],
+    "distributor": [
+     "Fórum Hungary",
+     "Netflix",
+     "Warner Bros. Entertainment"
+    ]
+   },
+   "based_on": [
+    "The Hobbit"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt2310332"
+    ]
+   },
+   "genre": [
+    "action film",
+    "adventure film",
+    "fantasy film"
+   ],
+   "country": [
+    "New Zealand",
+    "United States"
+   ],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [
+    "Peter Jackson's Middle-earth film series",
+    "The Hobbit trilogy"
+   ],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q919649",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q1187415",
+   "title": "The Hobbit",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "teleplay",
+    "television film"
+   ],
+   "year": 1985,
+   "years": [
+    "1985"
+   ],
+   "makers": {
+    "director": [
+     "Vladimir Latyshev"
+    ],
+    "production_company": [
+     "Petersburg – Channel 5"
+    ],
+    "composer": [
+     "Vladislav Uspensky"
+    ]
+   },
+   "based_on": [
+    "The Hobbit"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt2563662"
+    ]
+   },
+   "genre": [
+    "adventure film",
+    "family film",
+    "fantasy film"
+   ],
+   "country": [
+    "Soviet Union"
+   ],
+   "original_language": [
+    "Russian"
+   ],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q1187415",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q1194246",
+   "title": "The Lord of the Rings: Conquest",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2009,
+   "years": [
+    "2009"
+   ],
+   "makers": {
+    "publisher": [
+     "Electronic Arts"
+    ],
+    "developer": [
+     "Pandemic Studios"
+    ],
+    "distributor": [
+     "Electronic Arts",
+     "Q3070866"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt1320276"
+    ],
+    "mobygames_id": [
+     "lord-of-the-rings-conquest",
+     "lord-of-the-rings-conquest_"
+    ]
+   },
+   "genre": [
+    "action-adventure game"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [
+    "Microsoft Windows",
+    "Nintendo DS",
+    "PlayStation 3",
+    "Q48263"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q1194246",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q1194258",
+   "title": "Lord of the Rings",
+   "description": null,
+   "medium": "tabletop",
+   "wikidata_instance_of": [
+    "board game",
+    "cooperative board game"
+   ],
+   "year": 2000,
+   "years": [
+    "2000"
+   ],
+   "makers": {
+    "developer": [
+     "Reiner Knizia"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [
+    "fantasy"
+   ],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q1194258",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q1194265",
+   "title": "Middle-Earth Strategy Battle Game",
+   "description": null,
+   "medium": "tabletop",
+   "wikidata_instance_of": [
+    "miniature wargaming"
+   ],
+   "year": 2001,
+   "years": [
+    "2001"
+   ],
+   "makers": {
+    "publisher": [
+     "Games Workshop"
+    ]
+   },
+   "based_on": [
+    "The Hobbit",
+    "The Hobbit trilogy",
+    "The Lord of the Rings",
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Return of the King",
+    "The Lord of the Rings: The Two Towers"
+   ],
+   "identifiers": {},
+   "genre": [
+    "miniature wargaming"
+   ],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work",
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q1194265",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q1194266",
+   "title": "The Lord of the Rings Roleplaying Game",
+   "description": null,
+   "medium": "tabletop",
+   "wikidata_instance_of": [
+    "tabletop role-playing game"
+   ],
+   "year": 2002,
+   "years": [
+    "2002"
+   ],
+   "makers": {
+    "publisher": [
+     "Decipher"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [
+    "tabletop role-playing game"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q1194266",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q1440462",
+   "title": "The Lord of the Rings: War in the North",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2011,
+   "years": [
+    "2011"
+   ],
+   "makers": {
+    "publisher": [
+     "Warner Bros. Games"
+    ],
+    "developer": [
+     "Snowblind Studios"
+    ],
+    "composer": [
+     "Inon Zur"
+    ],
+    "distributor": [
+     "Steam"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt2102446"
+    ],
+    "mobygames_id": [
+     "lord-of-the-rings-war-in-the-north",
+     "lord-of-the-rings-war-in-the-north-collectors-edition"
+    ]
+   },
+   "genre": [
+    "role-playing video game"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [
+    "Microsoft Windows",
+    "PlayStation 3",
+    "Q48263",
+    "macOS"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work",
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q1440462",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q1613936",
+   "title": "Bored of the Rings",
+   "description": null,
+   "medium": "print",
+   "wikidata_instance_of": [
+    "literary work"
+   ],
+   "year": 1969,
+   "years": [
+    "1969",
+    "1969"
+   ],
+   "makers": {},
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [
+    "fantasy",
+    "satirical fiction"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q1613936",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q1754787",
+   "title": "The Lord of the Rings: The Battle for Middle-earth II: The Rise of the Witch-king",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "expansion add-on"
+   ],
+   "year": 2006,
+   "years": [
+    "2006"
+   ],
+   "makers": {
+    "publisher": [
+     "Electronic Arts"
+    ],
+    "developer": [
+     "Danger Close Games"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt1058040"
+    ],
+    "mobygames_id": [
+     "lord-of-the-rings-the-battle-for-middle-earth-ii-the-rise-of-the"
+    ]
+   },
+   "genre": [
+    "real-time strategy"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [
+    "Microsoft Windows"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q1754787",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q1778141",
+   "title": "The Hobbit",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 1982,
+   "years": [
+    "1982"
+   ],
+   "makers": {
+    "publisher": [
+     "Krome Studios Melbourne"
+    ],
+    "developer": [
+     "Veronika Megler"
+    ]
+   },
+   "based_on": [
+    "The Hobbit"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt0392119"
+    ],
+    "mobygames_id": [
+     "hobbit"
+    ]
+   },
+   "genre": [
+    "interactive fiction"
+   ],
+   "country": [
+    "Australia"
+   ],
+   "original_language": [],
+   "platform": [
+    "Amstrad CPC",
+    "Classic Mac OS",
+    "Commodore 64",
+    "DOS",
+    "MSX",
+    "Q1238768",
+    "ZX Spectrum"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q1778141",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q1996197",
+   "title": "The Lord of the Rings: The Battle for Middle-earth II",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2006,
+   "years": [
+    "2006"
+   ],
+   "makers": {
+    "publisher": [
+     "Electronic Arts"
+    ],
+    "developer": [
+     "Danger Close Games"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt0760172"
+    ],
+    "mobygames_id": [
+     "lord-of-the-rings-the-battle-for-middle-earth-ii",
+     "lord-of-the-rings-the-battle-for-middle-earth-ii-collectors-edit"
+    ]
+   },
+   "genre": [
+    "real-time strategy"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [
+    "Microsoft Windows",
+    "Q48263"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q1996197",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q2028764",
+   "title": "The One Ring Roleplaying Game",
+   "description": null,
+   "medium": "tabletop",
+   "wikidata_instance_of": [
+    "tabletop role-playing game"
+   ],
+   "year": 2011,
+   "years": [
+    "2011"
+   ],
+   "makers": {
+    "publisher": [
+     "Cubicle 7"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [
+    "tabletop role-playing game"
+   ],
+   "country": [
+    "United Kingdom",
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q2028764",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q2082291",
+   "title": "Lego The Lord of the Rings",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2012,
+   "years": [
+    "2012",
+    "2012",
+    "2012",
+    "2012"
+   ],
+   "makers": {
+    "publisher": [
+     "Warner Bros. Games"
+    ],
+    "developer": [
+     "Traveller's Tales"
+    ],
+    "composer": [
+     "Howard Shore"
+    ],
+    "distributor": [
+     "Google Play",
+     "Q3070866",
+     "Q368215",
+     "Steam"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt2283948"
+    ],
+    "mobygames_id": [
+     "lego-the-lord-of-the-rings",
+     "lego-the-lord-of-the-rings_"
+    ]
+   },
+   "genre": [
+    "action-adventure game"
+   ],
+   "country": [
+    "United Kingdom"
+   ],
+   "original_language": [],
+   "platform": [
+    "Microsoft Windows",
+    "Nintendo 3DS",
+    "Nintendo DS",
+    "PlayStation 3",
+    "PlayStation Vita",
+    "Q48263",
+    "Q48493",
+    "Q94",
+    "Wii",
+    "macOS"
+   ],
+   "part_of_series": [
+    "Lego The Lord of the Rings"
+   ],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q2082291",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q2157919",
+   "title": "The Lord of the Rings: Aragorn's Quest",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2010,
+   "years": [
+    "2010",
+    "2010",
+    "2010"
+   ],
+   "makers": {
+    "publisher": [
+     "Warner Bros. Games"
+    ],
+    "developer": [
+     "Traveller's Tales"
+    ],
+    "composer": [
+     "James Hannigan"
+    ],
+    "distributor": [
+     "New Line Cinema",
+     "Q3070866"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt1786716"
+    ],
+    "mobygames_id": [
+     "lord-of-the-rings-aragorns-quest",
+     "lord-of-the-rings-aragorns-quest_"
+    ]
+   },
+   "genre": [
+    "action-adventure game"
+   ],
+   "country": [
+    "United Kingdom"
+   ],
+   "original_language": [],
+   "platform": [
+    "Nintendo DS",
+    "PlayStation 3",
+    "PlayStation Portable",
+    "Q10680",
+    "Wii"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q2157919",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q2353071",
+   "title": "The Lord of the Rings: The Two Towers",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2002,
+   "years": [
+    "2002"
+   ],
+   "makers": {
+    "publisher": [
+     "Electronic Arts"
+    ],
+    "developer": [
+     "Stormfront Studios"
+    ],
+    "distributor": [
+     "New Line Cinema"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Two Towers"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt0347436"
+    ],
+    "mobygames_id": [
+     "lord-of-the-rings-the-two-towers",
+     "lord-of-the-rings-the-two-towers__"
+    ]
+   },
+   "genre": [
+    "action game",
+    "action-adventure game"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [
+    "Nintendo GameCube",
+    "Q10680",
+    "Q132020",
+    "Q188642"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q2353071",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q2458718",
+   "title": "The Lord of the Rings: Tactics",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2005,
+   "years": [
+    "2005"
+   ],
+   "makers": {
+    "publisher": [
+     "Electronic Arts"
+    ],
+    "developer": [
+     "Electronic Arts"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt9674742"
+    ],
+    "mobygames_id": [
+     "lord-of-the-rings-tactics"
+    ]
+   },
+   "genre": [
+    "tactical role-playing game"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [
+    "PlayStation Portable"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q2458718",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q2494353",
+   "title": "The Hobbit",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2003,
+   "years": [
+    "2003"
+   ],
+   "makers": {
+    "publisher": [
+     "Q494614",
+     "Vivendi"
+    ],
+    "developer": [
+     "Fizz Factor",
+     "Midway Austin"
+    ],
+    "composer": [
+     "Jason Graves",
+     "Rod Abernethy"
+    ],
+    "distributor": [
+     "Q2264873"
+    ]
+   },
+   "based_on": [
+    "The Hobbit"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt0395578"
+    ],
+    "mobygames_id": [
+     "hobbit_",
+     "hobbit__"
+    ]
+   },
+   "genre": [
+    "action-adventure game",
+    "adventure video game",
+    "platformer"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [
+    "Microsoft Windows",
+    "Nintendo GameCube",
+    "Q10680",
+    "Q132020",
+    "Q188642"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q2494353",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q2824095",
+   "title": "film and television adaptations of The Hobbit",
+   "description": null,
+   "medium": "unclassified",
+   "wikidata_instance_of": [],
+   "year": null,
+   "years": [],
+   "makers": {},
+   "based_on": [
+    "The Hobbit"
+   ],
+   "identifiers": {},
+   "genre": [],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q2824095",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q3005035",
+   "title": "Tales from the Perilous Realm",
+   "description": null,
+   "medium": "print",
+   "wikidata_instance_of": [
+    "literary work"
+   ],
+   "year": 1997,
+   "years": [
+    "1997"
+   ],
+   "makers": {
+    "publisher": [
+     "HarperCollins"
+    ]
+   },
+   "based_on": [
+    "Farmer Giles of Ham",
+    "Leaf by Niggle",
+    "Roverandom",
+    "Smith of Wootton Major",
+    "The Adventures of Tom Bombadil"
+   ],
+   "identifiers": {},
+   "genre": [
+    "fantasy"
+   ],
+   "country": [
+    "United Kingdom"
+   ],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q3005035",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q3227048",
+   "title": "The Lord of the Rings",
+   "description": null,
+   "medium": "radio",
+   "wikidata_instance_of": [
+    "radio adaptation of the Lord of the Ring",
+    "radio serial"
+   ],
+   "year": 1955,
+   "years": [
+    "1955"
+   ],
+   "makers": {},
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [],
+   "country": [
+    "United Kingdom"
+   ],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q3227048",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q3467448",
+   "title": "Guardians of Middle-earth",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2012,
+   "years": [
+    "2012"
+   ],
+   "makers": {
+    "publisher": [
+     "Warner Bros. Games"
+    ],
+    "developer": [
+     "Monolith Productions",
+     "Zombie Studios"
+    ],
+    "composer": [
+     "Inon Zur"
+    ],
+    "distributor": [
+     "Steam"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt2544658"
+    ],
+    "mobygames_id": [
+     "guardians-of-middle-earth"
+    ]
+   },
+   "genre": [
+    "multiplayer online battle arena"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [
+    "Microsoft Windows",
+    "PlayStation 3",
+    "Q48263"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q3467448",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q4189655",
+   "title": "Q4189655",
+   "description": null,
+   "medium": "print",
+   "wikidata_instance_of": [
+    "literary work"
+   ],
+   "year": 1993,
+   "years": [
+    "1993"
+   ],
+   "makers": {},
+   "based_on": [
+    "The Silmarillion"
+   ],
+   "identifiers": {},
+   "genre": [],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q4189655",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q4228990",
+   "title": "Q4228990",
+   "description": null,
+   "medium": "print",
+   "wikidata_instance_of": [
+    "literary work",
+    "work of fiction"
+   ],
+   "year": null,
+   "years": [],
+   "makers": {
+    "publisher": [
+     "Eksmo"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [
+    "fan fiction"
+   ],
+   "country": [
+    "Russia"
+   ],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q4228990",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q4373807",
+   "title": "The Last Ringbearer",
+   "description": null,
+   "medium": "print",
+   "wikidata_instance_of": [
+    "literary work",
+    "work of fiction"
+   ],
+   "year": 1999,
+   "years": [
+    "1999"
+   ],
+   "makers": {},
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [
+    "dark fantasy",
+    "fan fiction",
+    "fantasy",
+    "high fantasy",
+    "parallel novel"
+   ],
+   "country": [
+    "Russia"
+   ],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q4373807",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q6581169",
+   "title": "The Lord of the Rings: The Third Age",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2004,
+   "years": [
+    "2004"
+   ],
+   "makers": {
+    "publisher": [
+     "Electronic Arts"
+    ],
+    "developer": [
+     "Griptonite Games"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "mobygames_id": [
+     "lord-of-the-rings-the-third-age"
+    ]
+   },
+   "genre": [
+    "turn-based tactics"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [
+    "Q188642"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q6581169",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q6680121",
+   "title": "The Lord of the Rings: Journey to Rivendell",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": null,
+   "years": [],
+   "makers": {
+    "publisher": [
+     "Parker Brothers"
+    ],
+    "developer": [
+     "Parker Brothers"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [
+    "platformer"
+   ],
+   "country": [],
+   "original_language": [],
+   "platform": [
+    "Atari 2600"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q6680121",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q7748465",
+   "title": "The Lord of the Rings",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "pinball machine game"
+   ],
+   "year": 2003,
+   "years": [
+    "2003"
+   ],
+   "makers": {},
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q7748465",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q9318176",
+   "title": "Pár Pařmenů",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "film"
+   ],
+   "year": 2004,
+   "years": [
+    "2004"
+   ],
+   "makers": {},
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [
+    "parody film"
+   ],
+   "country": [
+    "Czech Republic"
+   ],
+   "original_language": [
+    "Czech"
+   ],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q9318176",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q10429531",
+   "title": "Q10429531",
+   "description": null,
+   "medium": "radio",
+   "wikidata_instance_of": [
+    "radio drama"
+   ],
+   "year": 1970,
+   "years": [
+    "1970"
+   ],
+   "makers": {
+    "director": [
+     "Staffan Olzon"
+    ],
+    "publisher": [
+     "Sveriges Radio"
+    ]
+   },
+   "based_on": [
+    "The Hobbit"
+   ],
+   "identifiers": {},
+   "genre": [],
+   "country": [
+    "Sweden"
+   ],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q10429531",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q11863501",
+   "title": "Hobitit",
+   "description": null,
+   "medium": "television",
+   "wikidata_instance_of": [
+    "miniseries"
+   ],
+   "year": null,
+   "years": [],
+   "makers": {
+    "production_company": [
+     "Yle"
+    ],
+    "distributor": [
+     "Yle"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt0441925"
+    ]
+   },
+   "genre": [],
+   "country": [
+    "Finland"
+   ],
+   "original_language": [
+    "Finnish"
+   ],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q11863501",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q11896556",
+   "title": "The Lord of the Rings: Weapons and Warfare",
+   "description": null,
+   "medium": "print",
+   "wikidata_instance_of": [
+    "literary work"
+   ],
+   "year": null,
+   "years": [],
+   "makers": {},
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q11896556",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q15709637",
+   "title": "Middle-earth: Shadow of Mordor",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2014,
+   "years": [
+    "2014"
+   ],
+   "makers": {
+    "publisher": [
+     "Feral Interactive",
+     "Warner Bros. Games"
+    ],
+    "developer": [
+     "Feral Interactive",
+     "Monolith Productions"
+    ],
+    "composer": [
+     "Garry Schyman"
+    ],
+    "distributor": [
+     "Humble Store",
+     "Q1052025",
+     "Q135288",
+     "Q1486288",
+     "Steam"
+    ]
+   },
+   "based_on": [
+    "The Hobbit",
+    "The Hobbit trilogy",
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt3330488"
+    ],
+    "mobygames_id": [
+     "middle-earth-shadow-of-mordor",
+     "middle-earth-shadow-of-mordor-blood-hunters-warband",
+     "middle-earth-shadow-of-mordor-endless-challenge",
+     "middle-earth-shadow-of-mordor-flame-of-anor-rune",
+     "middle-earth-shadow-of-mordor-game-of-the-year-edition",
+     "middle-earth-shadow-of-mordor_"
+    ]
+   },
+   "genre": [
+    "action role-playing game"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [
+    "Microsoft Windows",
+    "PlayStation 3",
+    "Q13361286",
+    "Q388",
+    "Q48263",
+    "Q5014725",
+    "macOS"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work",
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q15709637",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q21706161",
+   "title": "They’re Taking The Hobbits To Isengard",
+   "description": null,
+   "medium": "internet",
+   "wikidata_instance_of": [
+    "meme",
+    "viral video"
+   ],
+   "year": 2005,
+   "years": [
+    "2005"
+   ],
+   "makers": {},
+   "based_on": [
+    "The Lord of the Rings: The Fellowship of the Ring",
+    "The Lord of the Rings: The Two Towers"
+   ],
+   "identifiers": {},
+   "genre": [],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q21706161",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q25859648",
+   "title": "LORD",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 1981,
+   "years": [
+    "1981"
+   ],
+   "makers": {},
+   "based_on": [
+    "The Hobbit",
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [
+    "interactive fiction"
+   ],
+   "country": [
+    "Finland"
+   ],
+   "original_language": [],
+   "platform": [
+    "DECSYSTEM-20"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q25859648",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q28495400",
+   "title": "Le Hobbit : Le Retour du roi du Cantal",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "film"
+   ],
+   "year": 2015,
+   "years": [
+    "2015"
+   ],
+   "makers": {
+    "director": [
+     "Léo Pons"
+    ]
+   },
+   "based_on": [
+    "The Hobbit trilogy"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt4450930"
+    ]
+   },
+   "genre": [
+    "parody film"
+   ],
+   "country": [
+    "France"
+   ],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q28495400",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q28859887",
+   "title": "Middle-earth: Shadow of War",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2017,
+   "years": [
+    "2017"
+   ],
+   "makers": {
+    "publisher": [
+     "Warner Bros. Games"
+    ],
+    "developer": [
+     "Monolith Productions"
+    ],
+    "distributor": [
+     "Humble Store",
+     "Q1052025",
+     "Q135288",
+     "Q1486288",
+     "Steam"
+    ]
+   },
+   "based_on": [
+    "The Hobbit",
+    "The Hobbit trilogy",
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt6579422"
+    ],
+    "mobygames_id": [
+     "middle-earth-shadow-of-war",
+     "middle-earth-shadow-of-war-gold-edition",
+     "middle-earth-shadow-of-war-silver-edition"
+    ]
+   },
+   "genre": [
+    "action role-playing game",
+    "action-adventure game"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [
+    "Microsoft Windows",
+    "Q13361286",
+    "Q5014725"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work",
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q28859887",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q30879053",
+   "title": "Q30879053",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "film",
+    "film dubbing"
+   ],
+   "year": 2002,
+   "years": [
+    "2002"
+   ],
+   "makers": {
+    "director": [
+     "Peter Jackson"
+    ],
+    "screenwriter": [
+     "Dmitry Puchkov",
+     "Fran Walsh",
+     "Peter Jackson",
+     "Philippa Boyens"
+    ],
+    "producer": [
+     "Barrie M. Osborne",
+     "Fran Walsh",
+     "Peter Jackson"
+    ],
+    "production_company": [
+     "New Line Cinema",
+     "Q4090217"
+    ],
+    "composer": [
+     "Howard Shore"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings: The Fellowship of the Ring"
+   ],
+   "identifiers": {},
+   "genre": [
+    "adventure film",
+    "comedy film",
+    "fantasy film",
+    "parody film"
+   ],
+   "country": [
+    "New Zealand",
+    "Russia",
+    "United States"
+   ],
+   "original_language": [
+    "Russian"
+   ],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q30879053",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q59149852",
+   "title": "The Lord of the Rings: The Rings of Power",
+   "description": null,
+   "medium": "television",
+   "wikidata_instance_of": [
+    "television series"
+   ],
+   "year": 2022,
+   "years": [
+    "2022"
+   ],
+   "makers": {
+    "director": [
+     "Charlotte Brändström",
+     "J. A. Bayona",
+     "Wayne Yip"
+    ],
+    "screenwriter": [
+     "Gennifer Hutchison",
+     "Jason Cahill"
+    ],
+    "production_company": [
+     "Amazon MGM Studios",
+     "HarperCollins",
+     "New Line Cinema",
+     "The Tolkien Trust",
+     "Tolkien Estate"
+    ],
+    "composer": [
+     "Bear McCreary"
+    ],
+    "distributor": [
+     "Amazon MGM Studios"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt7631058"
+    ]
+   },
+   "genre": [
+    "action television series",
+    "adventure television series",
+    "drama television series",
+    "fantasy television series"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q59149852",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q66503636",
+   "title": "The Lord of the Rings: The Return of the King Extended Edition",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "extended cut"
+   ],
+   "year": 2004,
+   "years": [
+    "2004"
+   ],
+   "makers": {},
+   "based_on": [
+    "The Lord of the Rings: The Return of the King"
+   ],
+   "identifiers": {},
+   "genre": [],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q66503636",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q66503911",
+   "title": "The Hobbit: An Unexpected Journey Extended Edition",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "extended cut"
+   ],
+   "year": 2013,
+   "years": [
+    "2013"
+   ],
+   "makers": {},
+   "based_on": [
+    "The Hobbit: An Unexpected Journey"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt21836008"
+    ]
+   },
+   "genre": [],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q66503911",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q93235255",
+   "title": "The Lord of the Rings: Gollum",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": 2023,
+   "years": [
+    "2023"
+   ],
+   "makers": {
+    "publisher": [
+     "Daedalic Entertainment",
+     "Maximum Games",
+     "Nacon"
+    ],
+    "developer": [
+     "Daedalic Entertainment"
+    ],
+    "distributor": [
+     "Q1052025",
+     "Q135288",
+     "Q1486288",
+     "Q3070866",
+     "Q59510068",
+     "Steam"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt12789698"
+    ]
+   },
+   "genre": [
+    "action-adventure game",
+    "platformer",
+    "stealth game"
+   ],
+   "country": [
+    "Germany"
+   ],
+   "original_language": [],
+   "platform": [
+    "Microsoft Windows",
+    "Q13361286",
+    "Q19610114",
+    "Q5014725",
+    "Q63184502",
+    "Xbox Series X and Series S"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q93235255",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q106382169",
+   "title": "Khraniteli",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "television film"
+   ],
+   "year": 1991,
+   "years": [
+    "1991"
+   ],
+   "makers": {
+    "director": [
+     "Natalya Serebryakova"
+    ],
+    "composer": [
+     "Dyusha Romanov"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt14358016"
+    ]
+   },
+   "genre": [
+    "fantasy film"
+   ],
+   "country": [
+    "Soviet Union"
+   ],
+   "original_language": [
+    "Russian"
+   ],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q106382169",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q107210110",
+   "title": "The Lord of the Rings: The War of the Rohirrim",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "animated film"
+   ],
+   "year": 2024,
+   "years": [
+    "2024",
+    "2024",
+    "2024"
+   ],
+   "makers": {
+    "director": [
+     "Kenji Kamiyama"
+    ],
+    "producer": [
+     "Philippa Boyens"
+    ],
+    "production_company": [
+     "New Line Cinema",
+     "Sola Digital Arts",
+     "Warner Bros. Animation"
+    ],
+    "distributor": [
+     "InterCom",
+     "Warner Bros. Pictures"
+    ]
+   },
+   "based_on": [
+    "Appendices of The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt14824600"
+    ]
+   },
+   "genre": [
+    "fantasy film"
+   ],
+   "country": [
+    "Japan",
+    "United States"
+   ],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [
+    "The Lord of the Rings"
+   ],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q107210110",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q109286227",
+   "title": "The Hobbit",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "pinball machine game"
+   ],
+   "year": null,
+   "years": [],
+   "makers": {},
+   "based_on": [
+    "The Hobbit trilogy"
+   ],
+   "identifiers": {},
+   "genre": [],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q109286227",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q109656366",
+   "title": "Middle-earth: Shadow of Mordor - Lord of the Hunt",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "expansion add-on"
+   ],
+   "year": 2014,
+   "years": [
+    "2014"
+   ],
+   "makers": {
+    "publisher": [
+     "Feral Interactive",
+     "Warner Bros. Games"
+    ],
+    "developer": [
+     "Monolith Productions"
+    ],
+    "distributor": [
+     "Q1052025",
+     "Q135288",
+     "Steam"
+    ]
+   },
+   "based_on": [],
+   "identifiers": {
+    "mobygames_id": [
+     "middle-earth-shadow-of-mordor-lord-of-the-hunt"
+    ]
+   },
+   "genre": [
+    "action role-playing game"
+   ],
+   "country": [
+    "United States"
+   ],
+   "original_language": [],
+   "platform": [
+    "Microsoft Windows",
+    "Q13361286",
+    "Q388",
+    "Q5014725",
+    "macOS"
+   ],
+   "part_of_series": [
+    "Middle-earth"
+   ],
+   "how_it_reached_this_file": [
+    "declared as part of the Middle-earth franchise or series"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q109656366",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q113992896",
+   "title": "The Great Wave",
+   "description": null,
+   "medium": "unclassified",
+   "wikidata_instance_of": [
+    "television series episode"
+   ],
+   "year": 2022,
+   "years": [
+    "2022"
+   ],
+   "makers": {
+    "director": [
+     "Wayne Yip"
+    ],
+    "screenwriter": [
+     "Stephany Folsom"
+    ]
+   },
+   "based_on": [],
+   "identifiers": {
+    "imdb_id": [
+     "tt11609038"
+    ]
+   },
+   "genre": [],
+   "country": [],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [
+    "The Lord of the Rings: The Rings of Power"
+   ],
+   "how_it_reached_this_file": [
+    "declared as part of the Middle-earth franchise or series"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q113992896",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q115683392",
+   "title": "adaptations of The Lord of the Rings",
+   "description": null,
+   "medium": "print",
+   "wikidata_instance_of": [
+    "adaptations of works"
+   ],
+   "year": null,
+   "years": [],
+   "makers": {},
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q115683392",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q130234545",
+   "title": "Elven Kings Under the Sky",
+   "description": null,
+   "medium": "unclassified",
+   "wikidata_instance_of": [
+    "television series episode"
+   ],
+   "year": 2024,
+   "years": [
+    "2024"
+   ],
+   "makers": {
+    "director": [
+     "Charlotte Brändström"
+    ],
+    "screenwriter": [
+     "Gennifer Hutchison"
+    ]
+   },
+   "based_on": [],
+   "identifiers": {
+    "imdb_id": [
+     "tt13580784"
+    ]
+   },
+   "genre": [],
+   "country": [],
+   "original_language": [
+    "English"
+   ],
+   "platform": [],
+   "part_of_series": [
+    "The Lord of the Rings: The Rings of Power"
+   ],
+   "how_it_reached_this_file": [
+    "declared as part of the Middle-earth franchise or series"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q130234545",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q130735102",
+   "title": "Q130735102",
+   "description": null,
+   "medium": "print",
+   "wikidata_instance_of": [
+    "literary work"
+   ],
+   "year": null,
+   "years": [],
+   "makers": {},
+   "based_on": [
+    "The Hobbit"
+   ],
+   "identifiers": {},
+   "genre": [],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q130735102",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q134711969",
+   "title": "Aragorn's Lullaby (Cormac)",
+   "description": null,
+   "medium": "music",
+   "wikidata_instance_of": [
+    "single"
+   ],
+   "year": 2023,
+   "years": [
+    "2023"
+   ],
+   "makers": {},
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {},
+   "genre": [
+    "popular music"
+   ],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q134711969",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q137824478",
+   "title": "Q137824478",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "film",
+    "film dubbing"
+   ],
+   "year": null,
+   "years": [],
+   "makers": {},
+   "based_on": [
+    "The Lord of the Rings: The Two Towers"
+   ],
+   "identifiers": {},
+   "genre": [
+    "parody film"
+   ],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q137824478",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q137824479",
+   "title": "Q137824479",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "film",
+    "film dubbing"
+   ],
+   "year": null,
+   "years": [],
+   "makers": {},
+   "based_on": [
+    "The Lord of the Rings: The Return of the King"
+   ],
+   "identifiers": {},
+   "genre": [
+    "parody film"
+   ],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q137824479",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q138849431",
+   "title": "The Lord of the Rings: Shadow of the Past",
+   "description": null,
+   "medium": "film",
+   "wikidata_instance_of": [
+    "film project"
+   ],
+   "year": null,
+   "years": [],
+   "makers": {
+    "screenwriter": [
+     "Philippa Boyens",
+     "Stephen Colbert"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt41070763"
+    ]
+   },
+   "genre": [],
+   "country": [],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q138849431",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q141033094",
+   "title": "The Lord of the Rings: War in the North - Legacy Edition",
+   "description": null,
+   "medium": "video game",
+   "wikidata_instance_of": [
+    "video game"
+   ],
+   "year": null,
+   "years": [],
+   "makers": {
+    "distributor": [
+     "Steam"
+    ]
+   },
+   "based_on": [
+    "The Lord of the Rings: War in the North"
+   ],
+   "identifiers": {},
+   "genre": [],
+   "country": [],
+   "original_language": [],
+   "platform": [
+    "Microsoft Windows"
+   ],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared as based on something itself based on such a work"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q141033094",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  },
+  {
+   "id": "Q141131125",
+   "title": "Der Hobbit",
+   "description": null,
+   "medium": "radio",
+   "wikidata_instance_of": [
+    "radio series"
+   ],
+   "year": 1980,
+   "years": [
+    "1980"
+   ],
+   "makers": {
+    "director": [
+     "Heinz Dieter Köhler"
+    ],
+    "composer": [
+     "Enno E. Dugend"
+    ]
+   },
+   "based_on": [
+    "The Hobbit"
+   ],
+   "identifiers": {
+    "imdb_id": [
+     "tt30778093"
+    ]
+   },
+   "genre": [
+    "fantasy radio program",
+    "radio serial"
+   ],
+   "country": [
+    "Germany"
+   ],
+   "original_language": [],
+   "platform": [],
+   "part_of_series": [],
+   "how_it_reached_this_file": [
+    "declared in Wikidata as based on a work authored by J.R.R. or Christopher Tolkien"
+   ],
+   "hand": "the editors of Wikidata",
+   "source_url": "https://www.wikidata.org/wiki/Q141131125",
+   "retrieved_at": "2026-08-26T21:39:43Z",
+   "licence_as_stated": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
+   "conf": "EXT"
+  }
+ ],
+ "deviations_what": "One row per named divergence, EACH CARRYING ITS EVIDENCE ON BOTH SIDES. A row is written only if its corroborating capture is in the stage at HTTP 200, its anchor sentence is really in that capture, and its text side verifies against the corpus (or, for an absence, is measured absent from every tier-1 text). Rows that failed any of those are in `deviations_refused` and are NOT published as facts.",
+ "deviations": [
+  {
+   "id": "jackson-fotr-arwen-ford",
+   "work": "The Lord of the Rings: The Fellowship of the Ring",
+   "maker": "Peter Jackson / New Line Cinema",
+   "year": 2001,
+   "medium": "film",
+   "kind": "substitution",
+   "adaptation_side": {
+    "shows": "Arwen rides to the Ford of Bruinen, bears Frodo there and summons the flood herself.",
+    "corroboration_anchor": "In the book, it was Glorfindel who put Frodo on horseback and sent him alone to flee the Black Riders, and Elrond and Gandalf arranged the flood.",
+    "corroboration_anchor_whose_words": "the editors of Tolkien Gateway",
+    "hand": "the editors of Tolkien Gateway",
+    "source_url": "https://tolkiengateway.net/wiki/Arwen",
+    "retrieved_at": "2026-08-26T21:51:30Z",
+    "capture_sha256": "3dda38a26b5059f9fa36ca9d9ead4216845515eb68c821eda2531090db4bb102",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "text_side": {
+    "kind": "attested",
+    "quote_of_the_corpus": "Go back! he cried. Go back to the land of Mordor, and follow me no more!",
+    "loci": [
+     {
+      "file": "t1_c_the_lord_of_the_rings.txt",
+      "tier": 1,
+      "line": 10113
+     }
+    ],
+    "tiers": [
+     1
+    ],
+    "note": "Frodo faces the Riders at the Ford alone and unhorsed of any rescuer; Arwen is not present in the chapter.",
+    "verified_by": "map/ardatext.py at generation, over all 232 corpus files",
+    "hand": "J.R.R. Tolkien, in the edition this archive holds",
+    "conf": "C"
+   }
+  },
+  {
+   "id": "jackson-fotr-bombadil",
+   "work": "The Lord of the Rings: The Fellowship of the Ring",
+   "maker": "Peter Jackson / New Line Cinema",
+   "year": 2001,
+   "medium": "film",
+   "kind": "omission",
+   "adaptation_side": {
+    "shows": "Tom Bombadil, Goldberry, the Old Forest and the Barrow-downs do not appear.",
+    "corroboration_anchor": "Tolkien wrote Bombadil as a direct contrast to the artistry and (sub)creative force of the Elves",
+    "corroboration_anchor_whose_words": "the editors of Tolkien Gateway",
+    "hand": "the editors of Tolkien Gateway",
+    "source_url": "https://tolkiengateway.net/wiki/Tom_Bombadil",
+    "retrieved_at": "2026-08-26T21:50:19Z",
+    "capture_sha256": "5624570f6d3b9b47ca9149e1439e9653b91a70c2c2da585c64098051d21c88d3",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "text_side": {
+    "kind": "attested",
+    "quote_of_the_corpus": "Old Tom Bombadil is a merry fellow",
+    "loci": [
+     {
+      "file": "t1_c_the_lord_of_the_rings.txt",
+      "tier": 1,
+      "line": 6102
+     },
+     {
+      "file": "t1_the_adventures_of_tom_bombadil_and_other_verses_from.txt",
+      "tier": 1,
+      "line": 104
+     },
+     {
+      "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+      "tier": 2,
+      "line": 9352
+     },
+     {
+      "file": "t3_the_ring_goes_ever_on.txt",
+      "tier": 3,
+      "line": 35480
+     }
+    ],
+    "tiers": [
+     1,
+     2,
+     3
+    ],
+    "note": "Three chapters of Book I turn on him.",
+    "verified_by": "map/ardatext.py at generation, over all 232 corpus files",
+    "hand": "J.R.R. Tolkien, in the edition this archive holds",
+    "conf": "C"
+   }
+  },
+  {
+   "id": "jackson-ttt-faramir-osgiliath",
+   "work": "The Lord of the Rings: The Two Towers",
+   "maker": "Peter Jackson / New Line Cinema",
+   "year": 2002,
+   "medium": "film",
+   "kind": "reversal",
+   "adaptation_side": {
+    "shows": "Faramir does not release Frodo and Sam but takes them and the Ring west to Osgiliath, and frees them only when the city is attacked.",
+    "corroboration_anchor": "He does not at first let Frodo, Sam, and Gollum go, but decides to bring them and the Ring to Gondor.",
+    "corroboration_anchor_whose_words": "the editors of Tolkien Gateway",
+    "hand": "the editors of Tolkien Gateway",
+    "source_url": "https://tolkiengateway.net/wiki/Faramir",
+    "retrieved_at": "2026-08-26T21:51:34Z",
+    "capture_sha256": "c773794f9418852fb28b1b5aab517bf628e238b5bd482afa3a521cb4160bdec6",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "text_side": {
+    "kind": "attested",
+    "quote_of_the_corpus": "I would not take this thing, if it lay by the highway.",
+    "loci": [
+     {
+      "file": "t1_c_the_lord_of_the_rings.txt",
+      "tier": 1,
+      "line": 30196
+     },
+     {
+      "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+      "tier": 2,
+      "line": 22580
+     },
+     {
+      "file": "t3_the_ring_goes_ever_on.txt",
+      "tier": 3,
+      "line": 41094
+     },
+     {
+      "file": "t4_reader_and_educator_guide_to_the_hobbit_and_the_lord.txt",
+      "tier": 4,
+      "line": 4859
+     }
+    ],
+    "tiers": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "note": "Faramir refuses the Ring at the first knowledge of it and never claims it.",
+    "verified_by": "map/ardatext.py at generation, over all 232 corpus files",
+    "hand": "J.R.R. Tolkien, in the edition this archive holds",
+    "conf": "C"
+   }
+  },
+  {
+   "id": "jackson-ttt-hornburg",
+   "work": "The Lord of the Rings: The Two Towers",
+   "maker": "Peter Jackson / New Line Cinema",
+   "year": 2002,
+   "medium": "film",
+   "kind": "addition",
+   "adaptation_side": {
+    "shows": "An elvish company reinforces the Hornburg, and the battle is renamed the Battle of Helm's Deep.",
+    "corroboration_anchor": "This film-based battle is referred to as the",
+    "corroboration_anchor_whose_words": "the editors of Tolkien Gateway",
+    "hand": "the editors of Tolkien Gateway",
+    "source_url": "https://tolkiengateway.net/wiki/Battle_of_the_Hornburg",
+    "retrieved_at": "2026-08-26T21:51:59Z",
+    "capture_sha256": "200137043507ecd90d26ba29f24f1e7a72a947f9018fce40c6947ea22704d7cd",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "text_side": {
+    "kind": "attested",
+    "quote_of_the_corpus": "Erkenbrand of Westfold has drawn off those men he could gather towards his fastness in Helm's Deep.",
+    "loci": [
+     {
+      "file": "t1_c_the_lord_of_the_rings.txt",
+      "tier": 1,
+      "line": 23814
+     }
+    ],
+    "tiers": [
+     1
+    ],
+    "note": "The relief that comes is Erkenbrand's, Gandalf's, and the Huorns'. No elvish host rides to the Hornburg in the text.",
+    "verified_by": "map/ardatext.py at generation, over all 232 corpus files",
+    "hand": "J.R.R. Tolkien, in the edition this archive holds",
+    "conf": "C"
+   }
+  },
+  {
+   "id": "jackson-rotk-denethor",
+   "work": "The Lord of the Rings: The Return of the King",
+   "maker": "Peter Jackson / New Line Cinema",
+   "year": 2003,
+   "medium": "film",
+   "kind": "alteration",
+   "adaptation_side": {
+    "shows": "Denethor refuses to light the beacons, and dies by running ablaze from the Citadel.",
+    "corroboration_anchor": "stubbornly refuses to light the warning beacons of Gondor to call for the aid of Rohan",
+    "corroboration_anchor_whose_words": "the editors of Tolkien Gateway",
+    "hand": "the editors of Tolkien Gateway",
+    "source_url": "https://tolkiengateway.net/wiki/Denethor_II",
+    "retrieved_at": "2026-08-26T21:51:38Z",
+    "capture_sha256": "e6173477dd56b93057d8a4cd5473d3281506e60b8205c9e7ba894f8818f11d54",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "text_side": {
+    "kind": "attested",
+    "quote_of_the_corpus": "Then Denethor leaped upon the table, and standing there wreathed in fire and smoke he took up the staff of his stewardship that lay at his feet and broke it on his knee.",
+    "loci": [
+     {
+      "file": "t1_c_the_lord_of_the_rings.txt",
+      "tier": 1,
+      "line": 38286
+     }
+    ],
+    "tiers": [
+     1
+    ],
+    "note": "He lies down on the pyre and is consumed there, clasping the palantir.",
+    "verified_by": "map/ardatext.py at generation, over all 232 corpus files",
+    "hand": "J.R.R. Tolkien, in the edition this archive holds",
+    "conf": "C"
+   }
+  },
+  {
+   "id": "jackson-rotk-witchking-staff",
+   "work": "The Lord of the Rings: The Return of the King",
+   "maker": "Peter Jackson / New Line Cinema",
+   "year": 2003,
+   "medium": "film",
+   "kind": "addition",
+   "adaptation_side": {
+    "shows": "The Witch-king breaks Gandalf's staff at the Gate and throws him down.",
+    "corroboration_anchor": "Unlike in the book, this meeting decisively favors the Witch-king, who breaks Gandalf's staff and throws the wizard to the ground",
+    "corroboration_anchor_whose_words": "the editors of Tolkien Gateway",
+    "hand": "the editors of Tolkien Gateway",
+    "source_url": "https://tolkiengateway.net/wiki/Witch-king_of_Angmar",
+    "retrieved_at": "2026-08-26T21:52:07Z",
+    "capture_sha256": "0c17db84d7c44fdeb79261fffc295da028b4d78f5943555a68da4ffdd4785f25",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "text_side": {
+    "kind": "attested",
+    "quote_of_the_corpus": "Old fool! he said. Old fool! This is my hour. Do you not know death when you see it?",
+    "loci": [
+     {
+      "file": "t1_c_the_lord_of_the_rings.txt",
+      "tier": 1,
+      "line": 37109
+     },
+     {
+      "file": "t3_the_road_to_middle_earth_tom_shippey.txt",
+      "tier": 3,
+      "line": 8221
+     }
+    ],
+    "tiers": [
+     1,
+     3
+    ],
+    "note": "The meeting at the Gate ends when the horns of Rohan are heard; nothing is broken and Gandalf does not fall.",
+    "verified_by": "map/ardatext.py at generation, over all 232 corpus files",
+    "hand": "J.R.R. Tolkien, in the edition this archive holds",
+    "conf": "C"
+   }
+  },
+  {
+   "id": "jackson-rotk-scouring",
+   "work": "The Lord of the Rings: The Return of the King",
+   "maker": "Peter Jackson / New Line Cinema",
+   "year": 2003,
+   "medium": "film",
+   "kind": "omission",
+   "adaptation_side": {
+    "shows": "The Battle of Bywater is not filmed; the scouring appears only as a vision in the Mirror of Galadriel.",
+    "corroboration_anchor": "The Battle of Bywater is not featured in the film.",
+    "corroboration_anchor_whose_words": "the editors of Tolkien Gateway",
+    "hand": "the editors of Tolkien Gateway",
+    "source_url": "https://tolkiengateway.net/wiki/Scouring_of_the_Shire",
+    "retrieved_at": "2026-08-26T21:52:03Z",
+    "capture_sha256": "18ec4d5586501bf9a9a670c9b2558a55881df17f1bb079829ba886ee5eeeee8f",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "text_side": {
+    "kind": "attested",
+    "quote_of_the_corpus": "Sharkey's come now, and he'll do what Sharkey says.",
+    "loci": [
+     {
+      "file": "t1_c_the_lord_of_the_rings.txt",
+      "tier": 1,
+      "line": 44926
+     }
+    ],
+    "tiers": [
+     1
+    ],
+    "note": "The Shire's ruin and its cleansing occupy a full chapter of the last book.",
+    "verified_by": "map/ardatext.py at generation, over all 232 corpus files",
+    "hand": "J.R.R. Tolkien, in the edition this archive holds",
+    "conf": "C"
+   }
+  },
+  {
+   "id": "hobbit-films-tauriel",
+   "work": "The Hobbit (film series)",
+   "maker": "Peter Jackson / New Line Cinema and MGM",
+   "year": 2013,
+   "medium": "film",
+   "kind": "invented character",
+   "adaptation_side": {
+    "shows": "Tauriel, a captain of the Mirkwood guard, is a principal character of the second and third films and of the tie-in games and figures.",
+    "corroboration_anchor": "Tauriel is a hero figurine in two different versions",
+    "corroboration_anchor_whose_words": "the editors of Tolkien Gateway",
+    "hand": "the editors of Tolkien Gateway",
+    "source_url": "https://tolkiengateway.net/wiki/Tauriel",
+    "retrieved_at": "2026-08-26T21:51:42Z",
+    "capture_sha256": "d24d1fcebcd1352fec337a829d984ca5653dffb4069fd4c6f48b49badad536d8",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "text_side": {
+    "kind": "not attested",
+    "searched_for": "Tauriel",
+    "loci": [
+     {
+      "file": "t2_the_j_r_r_tolkien_companion_and_guide.txt",
+      "tier": 2,
+      "line": 2499
+     },
+     {
+      "file": "t3_mallorn_55.txt",
+      "tier": 3,
+      "line": 2128
+     }
+    ],
+    "absence_scope": "absent from every tier-1 text; present in 2 file(s) of tier [2, 3], which discuss the adaptations rather than Arda",
+    "attested_in_tier_1": false,
+    "note": "Measured, not assumed: absent from every tier-1 text. The one hit anywhere in the corpus is a tier-2 reference work discussing the films.",
+    "verified_by": "map/ardatext.py at generation, over all 232 corpus files",
+    "conf": "C"
+   }
+  },
+  {
+   "id": "hobbit-films-azog",
+   "work": "The Hobbit (film series)",
+   "maker": "Peter Jackson / New Line Cinema and MGM",
+   "year": 2012,
+   "medium": "film",
+   "kind": "reversal",
+   "adaptation_side": {
+    "shows": "Azog survives Azanulbizar, loses a forearm to Thorin rather than his head to Dain, and pursues Thorin through all three films.",
+    "corroboration_anchor": "Thorin believes Azog to have died from his wounds, but, unlike in the book, he actually survived the battle and serves as Thorin's nemesis.",
+    "corroboration_anchor_whose_words": "the editors of Tolkien Gateway",
+    "hand": "the editors of Tolkien Gateway",
+    "source_url": "https://tolkiengateway.net/wiki/Azog",
+    "retrieved_at": "2026-08-26T21:51:46Z",
+    "capture_sha256": "13d8475ccb1ebfcb069d4a3daf6c08cca0b5cc98418b18302dcbb77ec0d34a55",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "text_side": {
+    "kind": "attested",
+    "quote_of_the_corpus": "Dain II was very young in 2799 (32) and his slaying of Azog was a great feat.",
+    "loci": [
+     {
+      "file": "t1_12_the_peoples_of_middle_earth.txt",
+      "tier": 1,
+      "line": 9620
+     },
+     {
+      "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+      "tier": 2,
+      "line": 32074
+     }
+    ],
+    "tiers": [
+     1,
+     2
+    ],
+    "note": "Azog is killed at Azanulbizar in 2799, by Dain Ironfoot, before The Hobbit begins.",
+    "verified_by": "map/ardatext.py at generation, over all 232 corpus files",
+    "hand": "J.R.R. Tolkien, in the edition this archive holds",
+    "conf": "C"
+   }
+  },
+  {
+   "id": "rop-halbrand",
+   "work": "The Lord of the Rings: The Rings of Power",
+   "maker": "Amazon MGM Studios",
+   "year": 2022,
+   "medium": "television",
+   "kind": "invented character",
+   "adaptation_side": {
+    "shows": "Sauron passes in the Second Age under the name Halbrand, a Southlander claiming a kingship.",
+    "corroboration_anchor": "is a concept which has only appeared in an adaptation of the works of J.R.R. Tolkien",
+    "corroboration_anchor_whose_words": "the editors of Tolkien Gateway",
+    "hand": "the editors of Tolkien Gateway",
+    "source_url": "https://tolkiengateway.net/wiki/Halbrand",
+    "retrieved_at": "2026-08-26T21:52:11Z",
+    "capture_sha256": "11b26d5c8ef98b9ec1b7b2e40a62ce1deec49c3ec3af2280ecb43594bae55e0d",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "text_side": {
+    "kind": "not attested",
+    "searched_for": "Halbrand",
+    "loci": [],
+    "absence_scope": "absent from every corpus file",
+    "attested_in_tier_1": false,
+    "note": "Absent from the whole corpus. The fair guise Tolkien gives Sauron in the Second Age is Annatar, Lord of Gifts.",
+    "verified_by": "map/ardatext.py at generation, over all 232 corpus files",
+    "conf": "C"
+   }
+  },
+  {
+   "id": "rop-celebrimbor",
+   "work": "The Lord of the Rings: The Rings of Power",
+   "maker": "Amazon MGM Studios",
+   "year": 2022,
+   "medium": "television",
+   "kind": "alteration",
+   "adaptation_side": {
+    "shows": "Celebrimbor is a central character of the series from its first episode, introduced at Lindon.",
+    "corroboration_anchor": "Lord Celebrimbor is portrayed by Charles Edwards as one of the central characters of the series.",
+    "corroboration_anchor_whose_words": "the editors of Tolkien Gateway",
+    "hand": "the editors of Tolkien Gateway",
+    "source_url": "https://tolkiengateway.net/wiki/Celebrimbor",
+    "retrieved_at": "2026-08-26T21:51:50Z",
+    "capture_sha256": "9983b43339594f52467fe3d3eba0ecdd286d874e5120120f5ee35164e04e554b",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "text_side": {
+    "kind": "attested",
+    "quote_of_the_corpus": "Eregion was laid waste, and Celebrimbor slain, and the doors of Moria were shut.",
+    "loci": [
+     {
+      "file": "t1_a_the_silmarillion.txt",
+      "tier": 1,
+      "line": 13028
+     }
+    ],
+    "tiers": [
+     1
+    ],
+    "note": "The published Silmarillion gives him a few sentences and a death.",
+    "verified_by": "map/ardatext.py at generation, over all 232 corpus files",
+    "hand": "J.R.R. Tolkien, in the edition this archive holds",
+    "conf": "C"
+   }
+  },
+  {
+   "id": "shadow-of-mordor-celebrimbor",
+   "work": "Middle-earth: Shadow of Mordor",
+   "maker": "Monolith Productions / Warner Bros. Interactive",
+   "year": 2014,
+   "medium": "video game",
+   "kind": "reversal",
+   "adaptation_side": {
+    "shows": "Celebrimbor survives as a wraith bound to a Gondorian ranger, and in an expansion is revealed to have taken the One Ring from Sauron.",
+    "corroboration_anchor": "serving as a wraith who is bound to an undead Gondorian Ranger",
+    "corroboration_anchor_whose_words": "the editors of Tolkien Gateway",
+    "hand": "the editors of Tolkien Gateway",
+    "source_url": "https://tolkiengateway.net/wiki/Celebrimbor",
+    "retrieved_at": "2026-08-26T21:51:50Z",
+    "capture_sha256": "9983b43339594f52467fe3d3eba0ecdd286d874e5120120f5ee35164e04e554b",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "text_side": {
+    "kind": "attested",
+    "quote_of_the_corpus": "bearing as a banner Celebrimbor's body hung upon a pole, shot through with orc-arrows",
+    "loci": [
+     {
+      "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+      "tier": 1,
+      "line": 7530
+     },
+     {
+      "file": "t2_h_the_fall_of_numenor_and_other_tales_from_the_secon.txt",
+      "tier": 2,
+      "line": 5077
+     }
+    ],
+    "tiers": [
+     1,
+     2
+    ],
+    "note": "Sauron kills him and carries his corpse as a standard against Elrond.",
+    "verified_by": "map/ardatext.py at generation, over all 232 corpus files",
+    "hand": "J.R.R. Tolkien, in the edition this archive holds",
+    "conf": "C"
+   }
+  },
+  {
+   "id": "merp-nazgul-names",
+   "work": "Middle-earth Role Playing",
+   "maker": "Iron Crown Enterprises",
+   "year": 1984,
+   "medium": "tabletop",
+   "kind": "invented nomenclature",
+   "adaptation_side": {
+    "shows": "The game and its supplements name and stat all nine Ringwraiths, and add Balrogs and regions Tolkien never named.",
+    "corroboration_anchor": "Nazgul's Citadel",
+    "corroboration_anchor_whose_words": "the editors of Tolkien Gateway",
+    "hand": "the editors of Tolkien Gateway",
+    "source_url": "https://tolkiengateway.net/wiki/Middle-earth_Role_Playing",
+    "retrieved_at": "2026-08-26T21:52:15Z",
+    "capture_sha256": "4176e234b67d2430b9fb9f3eee3707f1566c104c02a01fe91c084b262c09e196",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "text_side": {
+    "kind": "attested",
+    "quote_of_the_corpus": "the second to the chief, Khamul the Shadow of the East, abode in Dol Guldur as Sauron's lieutenant, with one other as his messenger",
+    "loci": [
+     {
+      "file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+      "tier": 1,
+      "line": 10692
+     }
+    ],
+    "tiers": [
+     1
+    ],
+    "note": "Tolkien names one Nazgul besides the Witch-king. See `string_present_wrong_subject` on this row: the game's name Uvatha DOES occur in the corpus, in a Qenya lexicon, meaning something else entirely.",
+    "verified_by": "map/ardatext.py at generation, over all 232 corpus files",
+    "hand": "J.R.R. Tolkien, in the edition this archive holds",
+    "conf": "C"
+   },
+   "string_present_wrong_subject": [
+    {
+     "string": "Uvatha",
+     "loci": [],
+     "reading": "a Qenya word in Parma Eldalamberon 13, not a Ringwraith",
+     "why_it_is_here": "the string is a true match and the SUBJECT is not. Published rather than hidden, because a matcher that answers FOUND on a homonym is this archive's oldest fault."
+    },
+    {
+     "string": "Hoarmurath",
+     "loci": [],
+     "reading": "no occurrence anywhere in the corpus",
+     "why_it_is_here": "the string is a true match and the SUBJECT is not. Published rather than hidden, because a matcher that answers FOUND on a homonym is this archive's oldest fault."
+    }
+   ]
+  },
+  {
+   "id": "bakshi-balrog-wings",
+   "work": "The Lord of the Rings (1978 film)",
+   "maker": "Ralph Bakshi / United Artists",
+   "year": 1978,
+   "medium": "film",
+   "kind": "interpretation",
+   "adaptation_side": {
+    "shows": "The Balrog has literal wings and appears capable of limited flight.",
+    "corroboration_anchor": "The Balrog has wings and appears capable of limited flight.",
+    "corroboration_anchor_whose_words": "the editors of Tolkien Gateway",
+    "hand": "the editors of Tolkien Gateway",
+    "source_url": "https://tolkiengateway.net/wiki/Balrog",
+    "retrieved_at": "2026-08-26T21:50:15Z",
+    "capture_sha256": "3cd1a03a148a7f6e52e0034219bd112616c32f9211e46f919e5c323e2230c1db",
+    "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
+    "conf": "EXT"
+   },
+   "text_side": {
+    "kind": "attested",
+    "quote_of_the_corpus": "its wings were spread from wall to wall",
+    "loci": [
+     {
+      "file": "t1_7_the_treason_of_isengard.txt",
+      "tier": 1,
+      "line": 8933
+     },
+     {
+      "file": "t1_c_the_lord_of_the_rings.txt",
+      "tier": 1,
+      "line": 15153
+     },
+     {
+      "file": "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+      "tier": 2,
+      "line": 15752
+     }
+    ],
+    "tiers": [
+     1,
+     2
+    ],
+    "note": "NOT A CLEAN DEVIATION AND IT IS PUBLISHED AS ONE ANYWAY, because the honest answer is that the text is ambiguous here and this archive does not settle it. The same chapter reads that the shadow about it reached out like two vast wings, which is a simile, and then that its wings were spread from wall to wall, which is not. See site/arda_fanon.json, which records the same passage as the archive's clearest case of a DISPUTED READING rather than a fanon invention.",
+    "verified_by": "map/ardatext.py at generation, over all 232 corpus files",
+    "hand": "J.R.R. Tolkien, in the edition this archive holds",
+    "conf": "C"
+   }
+  }
+ ],
+ "deviations_refused": []
+}
