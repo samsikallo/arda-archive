@@ -5595,5 +5595,16 @@
   "why_not_here": "1,338 catalogue rows would take this register past a megabyte, and site/corpus.html fetches it over the wire under a ceiling map/budget_check.py enforces and corpus.html is already over. The register declares; the dataset holds.",
   "sibling": "site/arda_witnesses.json holds the folders the corpus CITES; 417 of the Marquette rows here are the same folders and say so on the row.",
   "conf": "EXT"
+ },
+ "scholarship": {
+  "what": "Bibliographic records for the open-access Tolkien and Inklings journals, and the licence-and-digest record of every PDF held under sources/openaccess/. METADATA ONLY -- no article text, no PDF, nothing under sources/ committed.",
+  "records": 2166,
+  "held_pdfs": 2704,
+  "held_pdfs_unlicensed": 695,
+  "doi_rows": 84,
+  "dataset": "site/arda_scholarship.json",
+  "rule": "conf EXT on every row, a HAND and a LICENCE AS STATED instead of a tier, and no licence guessed where none is stated. Stated in full in the dataset.",
+  "why_not_here": "as `witnesses` and `art_catalogue`: the register declares, the dataset holds.",
+  "conf": "EXT"
  }
 }
