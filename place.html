@@ -97,7 +97,7 @@ ${arts.map(a=>`<a class="chip" href="artifacts.html"><svg class='ai' aria-hidden
 ${quotes.length?`<div class="card"><h3 style="margin-top:.2em">In the Professor's words</h3>
 ${quotes.map(q=>`<div class="ev" style="font-style:italic">“${q.q}” <span class="cite">— ${q.src}</span></div>`).join("")}</div>`:""}
 <div class="orn">❦</div>
-<div class="cite" style="text-align:center">Assembled live from the archive's datasets; every claim keeps its citation.</div>`;}
+<div class="cite" style="text-align:center">Assembled live from the archive's datasets, each claim with the citation its dataset holds.</div>`;}
 const render0=render;render=function(){render0();
 const key=(location.hash||"").slice(1);
 const pp=M.pois.find(x=>slug(x.n)==key);

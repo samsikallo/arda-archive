@@ -408,3 +408,26 @@ new MutationObserver(ms=>ms.forEach(m=>m.addedNodes.forEach(n=>{if(n.nodeType===
       console.warn("[arda] service worker did not register:",e&&e.message);});
 });
 })();
+
+// ── THE ONE LINE THE ARCHIVE OWED ITSELF, ON ALL 653 PAGES (his ruling, 26 August 2026) ──────
+// A grep of 653 pages and 16 docs for `not affiliated|unofficial|not endorsed|no affiliation|
+// fair use|trademark` returned ZERO, and nothing linked LICENCE.md or ABOUT_THE_QUOTATIONS.md.
+// HERE AND NOT IN A GENERATOR: there is no one template behind the 653 -- gen_stubs.py owns 582,
+// six generators own most of the rest, ~40 halls are hand-built. Every page loads this file, so
+// the cost is paid once in one cached file, and codex-proto.html is reached without being edited.
+// IT STATES A FACT, NOT A DEFENCE: "not affiliated" is checkable; fair use would be a legal
+// conclusion neither this archive nor the two linked documents will draw -- both open by saying so.
+(function(){try{
+ if(document.getElementById("a-legal"))return;
+ var B=(typeof window!=="undefined"&&window.ARDA_BASE)||"";
+ var s=document.createElement("style");
+ s.textContent="#a-legal{font:12px/1.7 Georgia,serif;text-align:center;opacity:.66;"
+  +"padding:18px 16px;max-width:62ch;margin:0 auto;clear:both}#a-legal a{color:inherit}";
+ document.head.appendChild(s);
+ var f=document.createElement("footer");f.id="a-legal";
+ f.innerHTML="The Arda Archive is not affiliated with or endorsed by the Tolkien Estate, "
+  +'HarperCollins or Middle-earth Enterprises. <a href="'+B+'LICENCE.md">Licence</a> · '
+  +'<a href="'+B+'ABOUT_THE_QUOTATIONS.md">About the quotations</a>';
+ var put=function(){if(document.getElementById("a-legal"))return;document.body.appendChild(f)};
+ if(document.body)put(); else addEventListener("DOMContentLoaded",put);
+}catch(e){}})();
