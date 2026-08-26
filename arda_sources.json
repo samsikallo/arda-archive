@@ -6358,7 +6358,53 @@
   "dataset": "site/arda_art_catalogue.json",
   "no_image_data": true,
   "conf": "EXT",
-  "tier": 3
+  "tier": 3,
+  "source_reservations": {
+   "tai.tolkienists.org": {
+    "host": "tai.tolkienists.org",
+    "rows_from_this_host": 546,
+    "robots_txt": "https://tai.tolkienists.org/robots.txt",
+    "robots_txt_read": "2026-08-26",
+    "robots_txt_read_utc": "2026-08-26T21:39:14Z",
+    "robots_txt_http_status": 200,
+    "robots_txt_capture": "~/.arda-crawl-stage/gap-20260826/robots/tai.tolkienists.org.txt",
+    "reserves": "YES -- against this agent family by name, and by Content-Signal",
+    "verbatim_robots_lines": [
+     "User-agent: *",
+     "Content-Signal: search=yes,ai-train=no,use=reference",
+     "Allow: /",
+     "User-agent: ClaudeBot",
+     "Disallow: /"
+    ],
+    "verbatim_rights_statement": "ANY RESTRICTIONS EXPRESSED VIA CONTENT SIGNALS ARE EXPRESS RESERVATIONS OF RIGHTS UNDER ARTICLE 4 OF THE EUROPEAN UNION DIRECTIVE 2019/790 ON COPYRIGHT AND RELATED RIGHTS IN THE DIGITAL SINGLE MARKET.",
+    "verbatim_signal_definitions": {
+     "ai-train": "training or fine-tuning AI models.",
+     "use": "how AI systems may consume the content (immediate, reference, or full)."
+    },
+    "the_reservation_in_the_hosts_own_words": "Content-Signal: search=yes,ai-train=no,use=reference -- and, for this agent family by name, User-agent: ClaudeBot / Disallow: /. The host declares that any restriction expressed via Content Signals is an express reservation of rights under Article 4 of the EU Directive 2019/790.",
+    "when_these_rows_were_fetched": "2026-08-26",
+    "fetched_before_the_robots_txt_was_read": true,
+    "published_on": "the owner's standing authorisation of 16 August 2026 -- his words, quoted verbatim in CLAUDE.md section 6 and in site/.gitignore:57: the archive has his right and authorization to use and publish everything and anything it has or finds -- exercised under his ruling C493 of 27 August 2026. NOT on a licence this host granted: IT GRANTED NONE, and it reserved its rights expressly. The authorisation answers whether the archive may publish what it holds; it has never lifted the requirement to state on what footing a thing is published, and this record is that statement.",
+    "what_was_taken": "catalogue metadata only -- catalogue, tai_id, title, repository, shelfmark, type, medium, subjects, places, reproduction rows, and the host URL. No prose of the host's is carried and no image is carried or served.",
+    "this_does_not_license_a_further_fetch": true,
+    "ruling": "DECISIONS.md C493, 27 August 2026",
+    "rows_in_this_dataset": 1140
+   },
+   "www.hammondandscull.com": {
+    "host": "www.hammondandscull.com",
+    "rows_from_this_host": 594,
+    "robots_txt": "https://hammondandscull.com/robots.txt",
+    "robots_txt_read": "2026-08-26",
+    "robots_txt_read_utc": "2026-08-26T21:38:17Z",
+    "robots_txt_http_status": 404,
+    "robots_txt_capture": "~/.arda-crawl-stage/gap-20260826/robots/hammondandscull.com.txt",
+    "reserves": "NO RESERVATION FOUND -- and this is a MEASURED absence, not an unasked question: the host was asked in the same sweep and answered 404 Not Found, so it publishes no robots.txt and states no Content-Signal.",
+    "when_these_rows_were_fetched": "2026-08-26",
+    "published_on": "the owner's standing authorisation of 16 August 2026 -- his words, quoted verbatim in CLAUDE.md section 6 and in site/.gitignore:57: the archive has his right and authorization to use and publish everything and anything it has or finds -- exercised under his ruling C493 of 27 August 2026. NOT on a licence this host granted: IT GRANTED NONE, and it reserved its rights expressly. The authorisation answers whether the archive may publish what it holds; it has never lifted the requirement to state on what footing a thing is published, and this record is that statement.",
+    "ruling": "DECISIONS.md C493, 27 August 2026",
+    "rows_in_this_dataset": 1140
+   }
+  }
  },
  "mss_catalogue": {
   "what": "Archival catalogue descriptions of Tolkien material from two repositories' own catalogues -- what a named repository says it holds. Metadata only: no manuscript text and no image is reproduced.",
