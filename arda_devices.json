@@ -10,12 +10,12 @@
  "measured": {
   "corpus_files_eligible_for_C": 44,
   "blazon_passages_in_them": 1272,
-  "subjects": 218,
+  "subjects": 225,
   "filled": 49,
-  "blank": 169,
+  "blank": 176,
   "by_kind": {
    "house": {
-    "subjects": 67,
+    "subjects": 74,
     "filled": 23
    },
    "realm": {
@@ -366,6 +366,25 @@
    }
   },
   {
+   "id": "brockhouse",
+   "kind": "house",
+   "subject": "Brockhouse",
+   "device": null,
+   "conf": null,
+   "blank": true,
+   "note": null,
+   "cite": "The Silmarillion, editorial note on Tolkien's heraldic devices",
+   "words": "references to Elvish heraldic devices are rare and brief in Tolkien's works",
+   "source": {
+    "corpus_file": "t1_a_the_silmarillion.txt",
+    "line": 1553,
+    "tier": 1,
+    "primary_text": true
+   },
+   "near_blazon_passages": 0,
+   "why_blank": "The archive holds no device it can source for this subject. Measured this run over the 44 corpus files a [C] may rest on: its name appears in NO passage that also carries blazon vocabulary. The corner stays BARE, and this record is why it is bare on purpose."
+  },
+  {
    "id": "brown",
    "kind": "house",
    "subject": "Brown",
@@ -396,6 +415,25 @@
     },
     "from": "site/arda_genealogy.json"
    }
+  },
+  {
+   "id": "burrows",
+   "kind": "house",
+   "subject": "Burrows",
+   "device": null,
+   "conf": null,
+   "blank": true,
+   "note": null,
+   "cite": "The Silmarillion, editorial note on Tolkien's heraldic devices",
+   "words": "references to Elvish heraldic devices are rare and brief in Tolkien's works",
+   "source": {
+    "corpus_file": "t1_a_the_silmarillion.txt",
+    "line": 1553,
+    "tier": 1,
+    "primary_text": true
+   },
+   "near_blazon_passages": 0,
+   "why_blank": "The archive holds no device it can source for this subject. Measured this run over the 44 corpus files a [C] may rest on: its name appears in NO passage that also carries blazon vocabulary. The corner stays BARE, and this record is why it is bare on purpose."
   },
   {
    "id": "chubb",
@@ -430,6 +468,25 @@
    }
   },
   {
+   "id": "chubb_baggins",
+   "kind": "house",
+   "subject": "Chubb-Baggins",
+   "device": null,
+   "conf": null,
+   "blank": true,
+   "note": null,
+   "cite": "The Silmarillion, editorial note on Tolkien's heraldic devices",
+   "words": "references to Elvish heraldic devices are rare and brief in Tolkien's works",
+   "source": {
+    "corpus_file": "t1_a_the_silmarillion.txt",
+    "line": 1553,
+    "tier": 1,
+    "primary_text": true
+   },
+   "near_blazon_passages": 0,
+   "why_blank": "The archive holds no device it can source for this subject. Measured this run over the 44 corpus files a [C] may rest on: its name appears in NO passage that also carries blazon vocabulary. The corner stays BARE, and this record is why it is bare on purpose."
+  },
+  {
    "id": "cotton",
    "kind": "house",
    "subject": "Cotton",
@@ -460,6 +517,25 @@
     },
     "from": "site/arda_genealogy.json"
    }
+  },
+  {
+   "id": "diggle",
+   "kind": "house",
+   "subject": "Diggle",
+   "device": null,
+   "conf": null,
+   "blank": true,
+   "note": null,
+   "cite": "The Silmarillion, editorial note on Tolkien's heraldic devices",
+   "words": "references to Elvish heraldic devices are rare and brief in Tolkien's works",
+   "source": {
+    "corpus_file": "t1_a_the_silmarillion.txt",
+    "line": 1553,
+    "tier": 1,
+    "primary_text": true
+   },
+   "near_blazon_passages": 0,
+   "why_blank": "The archive holds no device it can source for this subject. Measured this run over the 44 corpus files a [C] may rest on: its name appears in NO passage that also carries blazon vocabulary. The corner stays BARE, and this record is why it is bare on purpose."
   },
   {
    "id": "dol_amroth",
@@ -770,6 +846,25 @@
    }
   },
   {
+   "id": "goodbody",
+   "kind": "house",
+   "subject": "Goodbody",
+   "device": null,
+   "conf": null,
+   "blank": true,
+   "note": null,
+   "cite": "The Silmarillion, editorial note on Tolkien's heraldic devices",
+   "words": "references to Elvish heraldic devices are rare and brief in Tolkien's works",
+   "source": {
+    "corpus_file": "t1_a_the_silmarillion.txt",
+    "line": 1553,
+    "tier": 1,
+    "primary_text": true
+   },
+   "near_blazon_passages": 0,
+   "why_blank": "The archive holds no device it can source for this subject. Measured this run over the 44 corpus files a [C] may rest on: its name appears in NO passage that also carries blazon vocabulary. The corner stays BARE, and this record is why it is bare on purpose."
+  },
+  {
    "id": "goodchild",
    "kind": "house",
    "subject": "Goodchild",
@@ -800,6 +895,25 @@
     },
     "from": "site/arda_genealogy.json"
    }
+  },
+  {
+   "id": "goodenough",
+   "kind": "house",
+   "subject": "Goodenough",
+   "device": null,
+   "conf": null,
+   "blank": true,
+   "note": null,
+   "cite": "The Silmarillion, editorial note on Tolkien's heraldic devices",
+   "words": "references to Elvish heraldic devices are rare and brief in Tolkien's works",
+   "source": {
+    "corpus_file": "t1_a_the_silmarillion.txt",
+    "line": 1553,
+    "tier": 1,
+    "primary_text": true
+   },
+   "near_blazon_passages": 0,
+   "why_blank": "The archive holds no device it can source for this subject. Measured this run over the 44 corpus files a [C] may rest on: its name appears in NO passage that also carries blazon vocabulary. The corner stays BARE, and this record is why it is bare on purpose."
   },
   {
    "id": "grubb",
@@ -1099,6 +1213,25 @@
    },
    "inherits_from": "House of Elendil",
    "note": "the house Aragorn founded, of the line of Elendil in this archive's own genealogy"
+  },
+  {
+   "id": "lightfoot",
+   "kind": "house",
+   "subject": "Lightfoot",
+   "device": null,
+   "conf": null,
+   "blank": true,
+   "note": null,
+   "cite": "The Silmarillion, editorial note on Tolkien's heraldic devices",
+   "words": "references to Elvish heraldic devices are rare and brief in Tolkien's works",
+   "source": {
+    "corpus_file": "t1_a_the_silmarillion.txt",
+    "line": 1553,
+    "tier": 1,
+    "primary_text": true
+   },
+   "near_blazon_passages": 0,
+   "why_blank": "The archive holds no device it can source for this subject. Measured this run over the 44 corpus files a [C] may rest on: its name appears in NO passage that also carries blazon vocabulary. The corner stays BARE, and this record is why it is bare on purpose."
   },
   {
    "id": "line_of_elros",
