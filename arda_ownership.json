@@ -1,0 +1,4971 @@
+{
+ "what": "WHO HELD WHAT, AND WHEN -- one row per tenure, lifted out of the prose chains in arda_artifacts.json and given a holder that resolves to a record. §VI `relationships/ownership/`.",
+ "not_a_new_population": "EVERY ROW IS ONE `ch` ENTRY OF ONE ARTIFACT, carrying that entry's own `when` and its own `cite` unchanged. Nothing is added to the history and nothing is dated here. What is new is the HOLDER, as an id.",
+ "how_a_holder_is_resolved": {
+  "the index": "map/ardaentity.py, built from the collections that DEFINE ids -- the genealogy, the Ainur, the creatures, the epithets, the gazetteer, the realms -- read off `git -C site ls-files`, never a glob.",
+  "the match": "whole words, through ardatext.words_of, which is the archive's ONE matcher. Never a raw lower(): the datasets are mixed NFC/NFD exactly as the corpus is, and Fëanor typed one way does not equal Fëanor typed the other.",
+  "one word of a person's name is a match, and says so": "prose does not use full names. `Thingol — set in the Nauglamír` names a person the archive holds as `Elu Thingol`; matching full names only called 19 of 62 tenures empty and every one of those absences was false. A single word of a PERSON's name is therefore in the matching vocabulary, and every edge records `matched_by` so a reader can tell it from a full-name match. PERSONS ONLY: splitting place names would put `Minas`, `Amon` and `Haudh` -- common nouns of Sindarin -- into the vocabulary.",
+  "a place is not a holder": "a place or realm standing in tenure prose goes to `place_or_realm_named`, never to `held_by`. Reading it as a bearer was this file's first fault: `Fëanor — at Formenos` produced Formenos as a holder and 50 of 113 edges were places.",
+  "the longest name wins, and only by containment": "`Beren Erchamion` and `Beren` are both in the index; where one matched name is contained in another, only the longer stands. Two unrelated names both present both stand -- a tenure can have two holders.",
+  "ambiguity is published, never resolved": "a name borne by more than one record yields a holder with `id: null` and every candidate named. The owner's ruling of 5 August: publish the correspondence, do not choose a winner."
+ },
+ "the_artifact_id_is_minted_here": "MEASURED, NOT ASSUMED: arda_artifacts.json carries no `id` on any of its rows. `af_<slug>` is derived from the record's own name, it is unique to this file, and `source_record` carries the dataset, the collection and the index so it can be followed back. Where exactly one arda_artifact_prompts caption normalises to the same name that correspondence is published; where none or several do it is NOT RESOLVED, because a fuzzy match between `Narsil / Andúril` and `Narsil and Anduril` would be this file deciding which artifact a prompt is about.",
+ "silence_is_split_in_two_and_never_blurred": {
+  "searched and empty": "the tenure's prose was matched against every name the entity index holds and none of them stands in it. The row publishes the size of that index (C224). This is a statement about the ARCHIVE'S REGISTERS -- no search of the corpus was run for it, and none is implied.",
+  "ambiguous": "a name that matched more than one record. Not an absence at all: the archive holds several, and the row names them."
+ },
+ "manner_is_not_a_judgement_of_right": "`manner` records the words the tenure's own prose uses -- taken, given, made, borne, found, lost. Morgoth held the Silmarils and the register says so; `taken` is what keeps that row from reading as ownership by right. The patterns are published below.",
+ "manner_patterns": {
+  "taken": "\\bstol|\\bstole|\\btheft|\\bseiz|\\btook\\b|\\bwrest|\\bcut free\\b|\\breft\\b",
+  "given": "\\bgiven\\b|\\bgift\\b|\\bgave\\b|\\bbestow",
+  "made": "\\bwrought\\b|\\bforged\\b|\\bmade\\b|\\bmade by\\b",
+  "borne": "\\bborn\\b|\\bbore\\b|\\bbearing\\b|\\bborne\\b",
+  "found": "\\bfound\\b|\\bfinding\\b",
+  "lost": "\\blost\\b|\\bcast\\b|\\bfell\\b|\\bdrown"
+ },
+ "built_from": [
+  "site/arda_artifacts.json",
+  "site/arda_artifact_prompts.json",
+  "map/ardaentity.py",
+  "map/ardatext.py",
+  "corpus/"
+ ],
+ "counts": {
+  "tenures": 97,
+  "artifacts": 20,
+  "holder_edges": 76,
+  "place_or_realm_edges": 51,
+  "tenures_resolved": 55,
+  "tenures_searched_and_empty": 8,
+  "tenures_with_an_ambiguous_name": 44,
+  "tenures_carrying_a_citation": 97,
+  "entity_index_names": 1708,
+  "entity_index_collections": 7,
+  "by_conf": {
+   "(cited, no marker)": 39,
+   "C": 23,
+   "I-M": 35
+  },
+  "by_holder_kind": {
+   "person": 76
+  },
+  "by_manner": {
+   "taken": 3,
+   "given": 11,
+   "borne": 6,
+   "made": 2,
+   "lost": 2,
+   "found": 2
+  },
+  "corpus_files_searched": 232
+ },
+ "artifacts_what": "One row per artifact, with the id this file mints and what it corresponds to elsewhere. NOT a new artifact register: arda_artifacts.json is still the record, and this holds only what an ownership edge needs to point at.",
+ "artifacts": [
+  {
+   "id": "af_the_silmarils",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "The Silmarils",
+   "kind": "jewel",
+   "category": "rings",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 0,
+    "named": "The Silmarils"
+   },
+   "artifact_prompt_id": "it_silmarils",
+   "artifact_prompt_basis": "exactly one arda_artifact_prompts:prompts row carries this name as its caption, compared through ardatext.words_of",
+   "artifact_prompt_not_resolved": null,
+   "n_tenures": 7,
+   "attestation": {
+    "term_searched": "The Silmarils",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 91,
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_10_morgoths_ring.txt",
+     "corpus_tier": 1,
+     "line": 22,
+     "line_text": "6. Of the Silmarils and the Darkening of Valinor",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_the_one_ring",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "The One Ring",
+   "kind": "ring",
+   "category": "rings",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 1,
+    "named": "The One Ring"
+   },
+   "artifact_prompt_id": "it_onering",
+   "artifact_prompt_basis": "exactly one arda_artifact_prompts:prompts row carries this name as its caption, compared through ardatext.words_of",
+   "artifact_prompt_not_resolved": null,
+   "n_tenures": 8,
+   "attestation": {
+    "term_searched": "The One Ring",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 80,
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_10_morgoths_ring.txt",
+     "corpus_tier": 1,
+     "line": 140,
+     "line_text": "concentrated in the One Ring, with that of Morgoth, enormously greater,",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_the_three_rings_narya_nenya_vilya",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "The Three Rings — Narya, Nenya, Vilya",
+   "kind": "ring",
+   "category": "rings",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 2,
+    "named": "The Three Rings — Narya, Nenya, Vilya"
+   },
+   "artifact_prompt_id": null,
+   "artifact_prompt_basis": null,
+   "artifact_prompt_not_resolved": "no arda_artifact_prompts caption normalises to this name. NOT RESOLVED rather than matched loosely: a fuzzy match would be this file choosing which artifact a prompt is about",
+   "n_tenures": 5,
+   "attestation": {
+    "term_searched": "The Three Rings — Narya, Nenya, Vilya",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 0,
+    "lowest_corpus_tier": null,
+    "locus": null,
+    "verdict": "searched and empty",
+    "searched_and_empty_note": "the artifact's display name was searched as whole words through all 232 citable corpus files and stands in none of them. A MEASUREMENT ABOUT THE NAME: `The Three Rings — Narya, Nenya, Vilya` is this archive's label for a set, and no book prints the label."
+   }
+  },
+  {
+   "id": "af_the_seven_and_the_nine",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "The Seven and the Nine",
+   "kind": "ring",
+   "category": "rings",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 3,
+    "named": "The Seven and the Nine"
+   },
+   "artifact_prompt_id": "it_sevennine",
+   "artifact_prompt_basis": "exactly one arda_artifact_prompts:prompts row carries this name as its caption, compared through ardatext.words_of",
+   "artifact_prompt_not_resolved": null,
+   "n_tenures": 4,
+   "attestation": {
+    "term_searched": "The Seven and the Nine",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 9,
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_a_the_silmarillion.txt",
+     "corpus_tier": 1,
+     "line": null,
+     "line_text": null,
+     "line_note": "the only printing in this file is broken across a line end -- ardatext's break windows hold it and no single line does"
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_narsil_anduril",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "Narsil / Andúril",
+   "kind": "sword",
+   "category": "arms",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 4,
+    "named": "Narsil / Andúril"
+   },
+   "artifact_prompt_id": null,
+   "artifact_prompt_basis": null,
+   "artifact_prompt_not_resolved": "no arda_artifact_prompts caption normalises to this name. NOT RESOLVED rather than matched loosely: a fuzzy match would be this file choosing which artifact a prompt is about",
+   "n_tenures": 6,
+   "attestation": {
+    "term_searched": "Narsil / Andúril",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 4,
+    "lowest_corpus_tier": 3,
+    "locus": {
+     "file": "t3_mallorn_59.txt",
+     "corpus_tier": 3,
+     "line": 388,
+     "line_text": "paralleling Aragorn’s sword, Narsil-Andúril. The riddle             by Lucy Paton in her 1903 Studies in the Fairy Mythology of",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_the_ring_of_barahir",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "The ring of Barahir",
+   "kind": "ring",
+   "category": "tokens",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 5,
+    "named": "The ring of Barahir"
+   },
+   "artifact_prompt_id": "it_barahir",
+   "artifact_prompt_basis": "exactly one arda_artifact_prompts:prompts row carries this name as its caption, compared through ardatext.words_of",
+   "artifact_prompt_not_resolved": null,
+   "n_tenures": 8,
+   "attestation": {
+    "term_searched": "The ring of Barahir",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 14,
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_4_the_shaping_of_middle_earth.txt",
+     "corpus_tier": 1,
+     "line": 5085,
+     "line_text": "went from Doriath to Nargothrond bearing the ring of Barahir. The quest of",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_the_palantiri",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "The palantíri",
+   "kind": "stone",
+   "category": "tokens",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 6,
+    "named": "The palantíri"
+   },
+   "artifact_prompt_id": null,
+   "artifact_prompt_basis": null,
+   "artifact_prompt_not_resolved": "no arda_artifact_prompts caption normalises to this name. NOT RESOLVED rather than matched loosely: a fuzzy match would be this file choosing which artifact a prompt is about",
+   "n_tenures": 7,
+   "attestation": {
+    "term_searched": "The palantíri",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 47,
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_10_morgoths_ring.txt",
+     "corpus_tier": 1,
+     "line": 7363,
+     "line_text": "words in The Two Towers (III.11): ‘The palantíri came from beyond",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_the_white_tree_line",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "The White Tree line",
+   "kind": "tree",
+   "category": "tokens",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 7,
+    "named": "The White Tree line"
+   },
+   "artifact_prompt_id": null,
+   "artifact_prompt_basis": null,
+   "artifact_prompt_not_resolved": "no arda_artifact_prompts caption normalises to this name. NOT RESOLVED rather than matched loosely: a fuzzy match would be this file choosing which artifact a prompt is about",
+   "n_tenures": 6,
+   "attestation": {
+    "term_searched": "The White Tree line",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 0,
+    "lowest_corpus_tier": null,
+    "locus": null,
+    "verdict": "searched and empty",
+    "searched_and_empty_note": "the artifact's display name was searched as whole words through all 232 citable corpus files and stands in none of them. A MEASUREMENT ABOUT THE NAME: `The Three Rings — Narya, Nenya, Vilya` is this archive's label for a set, and no book prints the label."
+   }
+  },
+  {
+   "id": "af_the_arkenstone",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "The Arkenstone",
+   "kind": "jewel",
+   "category": "rings",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 8,
+    "named": "The Arkenstone"
+   },
+   "artifact_prompt_id": "it_arkenstone",
+   "artifact_prompt_basis": "exactly one arda_artifact_prompts:prompts row carries this name as its caption, compared through ardatext.words_of",
+   "artifact_prompt_not_resolved": null,
+   "n_tenures": 4,
+   "attestation": {
+    "term_searched": "The Arkenstone",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 35,
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_4_the_shaping_of_middle_earth.txt",
+     "corpus_tier": 1,
+     "line": null,
+     "line_text": null,
+     "line_note": "the only printing in this file is broken across a line end -- ardatext's break windows hold it and no single line does"
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_sting",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "Sting",
+   "kind": "sword",
+   "category": "arms",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 9,
+    "named": "Sting"
+   },
+   "artifact_prompt_id": "it_sting",
+   "artifact_prompt_basis": "exactly one arda_artifact_prompts:prompts row carries this name as its caption, compared through ardatext.words_of",
+   "artifact_prompt_not_resolved": null,
+   "n_tenures": 5,
+   "attestation": {
+    "term_searched": "Sting",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 56,
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_12_the_peoples_of_middle_earth.txt",
+     "corpus_tier": 1,
+     "line": 720,
+     "line_text": "Sting and the coat of mail; ending ‘And the years passed, while he wrote in",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_glamdring_orcrist",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "Glamdring & Orcrist",
+   "kind": "sword",
+   "category": "arms",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 10,
+    "named": "Glamdring & Orcrist"
+   },
+   "artifact_prompt_id": null,
+   "artifact_prompt_basis": null,
+   "artifact_prompt_not_resolved": "no arda_artifact_prompts caption normalises to this name. NOT RESOLVED rather than matched loosely: a fuzzy match would be this file choosing which artifact a prompt is about",
+   "n_tenures": 4,
+   "attestation": {
+    "term_searched": "Glamdring & Orcrist",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 1,
+    "lowest_corpus_tier": 3,
+    "locus": {
+     "file": "t3_mallorn_30.txt",
+     "corpus_tier": 3,
+     "line": null,
+     "line_text": null,
+     "line_note": "the only printing in this file is broken across a line end -- ardatext's break windows hold it and no single line does"
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_anglachel_gurthang",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "Anglachel / Gurthang",
+   "kind": "sword",
+   "category": "arms",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 11,
+    "named": "Anglachel / Gurthang"
+   },
+   "artifact_prompt_id": null,
+   "artifact_prompt_basis": null,
+   "artifact_prompt_not_resolved": "no arda_artifact_prompts caption normalises to this name. NOT RESOLVED rather than matched loosely: a fuzzy match would be this file choosing which artifact a prompt is about",
+   "n_tenures": 4,
+   "attestation": {
+    "term_searched": "Anglachel / Gurthang",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 3,
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_a_the_silmarillion.txt",
+     "corpus_tier": 1,
+     "line": 14533,
+     "line_text": "the Dwarves; maker of the sword Anglachel (Gurthang);",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_the_dragon_helm_of_dor_lomin",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "The Dragon-helm of Dor-lómin",
+   "kind": "helm",
+   "category": "arms",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 12,
+    "named": "The Dragon-helm of Dor-lómin"
+   },
+   "artifact_prompt_id": "it_dragonhelm",
+   "artifact_prompt_basis": "exactly one arda_artifact_prompts:prompts row carries this name as its caption, compared through ardatext.words_of",
+   "artifact_prompt_not_resolved": null,
+   "n_tenures": 4,
+   "attestation": {
+    "term_searched": "The Dragon-helm of Dor-lómin",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 9,
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_11_the_war_of_the_jewels.txt",
+     "corpus_tier": 1,
+     "line": 5302,
+     "line_text": "brought out of Dimbar the Dragon-helm of Dor-lómin’.",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_the_nauglamir",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "The Nauglamír",
+   "kind": "jewel",
+   "category": "rings",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 13,
+    "named": "The Nauglamír"
+   },
+   "artifact_prompt_id": "it_nauglamir",
+   "artifact_prompt_basis": "exactly one arda_artifact_prompts:prompts row carries this name as its caption, compared through ardatext.words_of",
+   "artifact_prompt_not_resolved": null,
+   "n_tenures": 5,
+   "attestation": {
+    "term_searched": "The Nauglamír",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 18,
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_11_the_war_of_the_jewels.txt",
+     "corpus_tier": 1,
+     "line": 9010,
+     "line_text": "the story of the return of Húrin, the Nauglamír, the death of Thingol, the",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_the_elessar",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "The Elessar",
+   "kind": "jewel",
+   "category": "rings",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 14,
+    "named": "The Elessar"
+   },
+   "artifact_prompt_id": "it_elessar",
+   "artifact_prompt_basis": "exactly one arda_artifact_prompts:prompts row carries this name as its caption, compared through ardatext.words_of",
+   "artifact_prompt_not_resolved": null,
+   "n_tenures": 4,
+   "attestation": {
+    "term_searched": "The Elessar",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 12,
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_11_the_war_of_the_jewels.txt",
+     "corpus_tier": 1,
+     "line": 6704,
+     "line_text": "than a reference to the Elessar that came in the end to Aragorn; cf. the note",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_the_phial_of_galadriel",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "The Phial of Galadriel",
+   "kind": "phial",
+   "category": "tokens",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 15,
+    "named": "The Phial of Galadriel"
+   },
+   "artifact_prompt_id": "it_phial",
+   "artifact_prompt_basis": "exactly one arda_artifact_prompts:prompts row carries this name as its caption, compared through ardatext.words_of",
+   "artifact_prompt_not_resolved": null,
+   "n_tenures": 3,
+   "attestation": {
+    "term_searched": "The Phial of Galadriel",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 18,
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_7_the_treason_of_isengard.txt",
+     "corpus_tier": 1,
+     "line": 18842,
+     "line_text": "15    The light of the Phial of Galadriel must be conceived here to be of",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_the_horn_of_the_mark",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "The Horn of the Mark",
+   "kind": "horn",
+   "category": "tokens",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 16,
+    "named": "The Horn of the Mark"
+   },
+   "artifact_prompt_id": "it_horn",
+   "artifact_prompt_basis": "exactly one arda_artifact_prompts:prompts row carries this name as its caption, compared through ardatext.words_of",
+   "artifact_prompt_not_resolved": null,
+   "n_tenures": 4,
+   "attestation": {
+    "term_searched": "The Horn of the Mark",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 1,
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_c_the_lord_of_the_rings.txt",
+     "corpus_tier": 1,
+     "line": 49776,
+     "line_text": "Buckland the Horn of the Mark was blown at sundown every November 2 and",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_the_mithril_coat",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "The mithril-coat",
+   "kind": "mail",
+   "category": "arms",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 17,
+    "named": "The mithril-coat"
+   },
+   "artifact_prompt_id": "it_mithril",
+   "artifact_prompt_basis": "exactly one arda_artifact_prompts:prompts row carries this name as its caption, compared through ardatext.words_of",
+   "artifact_prompt_not_resolved": null,
+   "n_tenures": 4,
+   "attestation": {
+    "term_searched": "The mithril-coat",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 6,
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_8_the_war_of_the_ring.txt",
+     "corpus_tier": 1,
+     "line": 8358,
+     "line_text": "which Sauron shows various tokens (such as the mithril coat) to prove that he",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null
+   }
+  },
+  {
+   "id": "af_grond_twice",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "Grond, twice",
+   "kind": "ram",
+   "category": "arms",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 18,
+    "named": "Grond, twice"
+   },
+   "artifact_prompt_id": null,
+   "artifact_prompt_basis": null,
+   "artifact_prompt_not_resolved": "no arda_artifact_prompts caption normalises to this name. NOT RESOLVED rather than matched loosely: a fuzzy match would be this file choosing which artifact a prompt is about",
+   "n_tenures": 2,
+   "attestation": {
+    "term_searched": "Grond, twice",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 0,
+    "lowest_corpus_tier": null,
+    "locus": null,
+    "verdict": "searched and empty",
+    "searched_and_empty_note": "the artifact's display name was searched as whole words through all 232 citable corpus files and stands in none of them. A MEASUREMENT ABOUT THE NAME: `The Three Rings — Narya, Nenya, Vilya` is this archive's label for a set, and no book prints the label."
+   }
+  },
+  {
+   "id": "af_the_red_arrow_the_beacons",
+   "minted_here": true,
+   "minted_here_why": "arda_artifacts.json carries no `id` on any of its 20 rows -- measured, not assumed. This id is derived from the record's own name and is unique to this file; `source_record` follows it back.",
+   "name": "The Red Arrow & the beacons",
+   "kind": "token",
+   "category": "tokens",
+   "source_record": {
+    "dataset": "arda_artifacts.json",
+    "collection": "(root)",
+    "index": 19,
+    "named": "The Red Arrow & the beacons"
+   },
+   "artifact_prompt_id": null,
+   "artifact_prompt_basis": null,
+   "artifact_prompt_not_resolved": "no arda_artifact_prompts caption normalises to this name. NOT RESOLVED rather than matched loosely: a fuzzy match would be this file choosing which artifact a prompt is about",
+   "n_tenures": 3,
+   "attestation": {
+    "term_searched": "The Red Arrow & the beacons",
+    "searched": 232,
+    "searched_by": "map/ardatext.py has_word over every citable corpus file",
+    "n_attesting_files": 0,
+    "lowest_corpus_tier": null,
+    "locus": null,
+    "verdict": "searched and empty",
+    "searched_and_empty_note": "the artifact's display name was searched as whole words through all 232 citable corpus files and stands in none of them. A MEASUREMENT ABOUT THE NAME: `The Three Rings — Narya, Nenya, Vilya` is this archive's label for a set, and no book prints the label."
+   }
+  }
+ ],
+ "tenures_what": "One row per tenure. `artifact` resolves in this file's own `artifacts`; every `held_by[].id` resolves in the collection named beside it. `cite` and `when` are the artifact record's own and are not touched.",
+ "tenures": [
+  {
+   "id": "af_the_silmarils#0",
+   "artifact": "af_the_silmarils",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Silmarils",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": "feanor",
+     "name": "Fëanor",
+     "matched": "Fëanor",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "formenos",
+     "name": "Formenos",
+     "matched": "Formenos",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Fëanor — at Formenos",
+   "manner": [],
+   "when": "Y.T.",
+   "cite": "Silm 7",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_silmarils#1",
+   "artifact": "af_the_silmarils",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Silmarils",
+   "seq": 1,
+   "held_by": [
+    {
+     "id": "melkor",
+     "name": "Melkor (Morgoth)",
+     "matched": "Morgoth",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Morgoth — in the Iron Crown",
+   "manner": [],
+   "when": "Y.T. 1495 – F.A. 587",
+   "cite": "Silm 9/18 for the deed; HoME X, the Annals of Aman 1495 [C] for the year — 'in Angband Morgoth forged for himself a great crown of iron ... In token of which he set the Silmarils in his crown'. The Silmarillion carries NO age-marker at all.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_silmarils#2",
+   "artifact": "af_the_silmarils",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Silmarils",
+   "seq": 2,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "Beren",
+     "matched_by": "full name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "beren",
+      "beren_s"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    },
+    {
+     "id": "luthien",
+     "name": "Lúthien",
+     "matched": "Lúthien",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "one cut free by Beren and Lúthien",
+   "manner": [
+    "taken"
+   ],
+   "when": "F.A. 466",
+   "cite": "Silm 19 for the deed; HoME XI, the Grey Annals §§184-185, annal 466 [C] for the year — 'the Iron Crown rolled from his head ... Luthien and Beren bearing a Silmaril'. The annal dates the WINNING and describes no cutting; Angrist appears NOWHERE in the annals.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_silmarils#3",
+   "artifact": "af_the_silmarils",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Silmarils",
+   "seq": 3,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "thingol",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "elwe",
+      "thingol"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Thingol — set in the Nauglamír",
+   "manner": [],
+   "when": "F.A. c.500-502",
+   "cite": "Silm 22 for the deed; HoME XI, the Tale of Years 502 [C] for the year — 'The Nauglamir is wrought of the treasure of Glaurung, and the Silmaril is hung thereon'.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_silmarils#4",
+   "artifact": "af_the_silmarils",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Silmarils",
+   "seq": 4,
+   "held_by": [
+    {
+     "id": "dior_s",
+     "name": "Dior",
+     "matched": "Dior",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "elwing",
+     "name": "Elwing",
+     "matched": "Elwing",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "sirion",
+     "name": "Sirion",
+     "matched": "Sirion",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Dior, then Elwing at Sirion",
+   "manner": [],
+   "when": "F.A. 504–538",
+   "cite": "Silm 22-23 for the deeds; HoME XI, the Tale of Years, TWO RECENSIONS NAMED because they disagree [I-M]: 506 is D 2 ('506-507 At Yule Dior fought the sons of Feanor ... and was slain'), and 538 is C alone, as its final emendation ('532 [> 534 > 538] The Third and Last Kinslaying ... Elwing carries away the Silmaril'). B and C move the Second Kinslaying to 509; D 2 never reaches 538. THE START DATE IS D 2's 504, when 'Dior now publicly wore the Nauglamír and the Jewel' (t1_11:12936-12938); 506 was here before and dated his DEATH, which is when a tenure ends, not when it begins.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_silmarils#5",
+   "artifact": "af_the_silmarils",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Silmarils",
+   "seq": 5,
+   "held_by": [
+    {
+     "id": "earendil",
+     "name": "Eärendil",
+     "matched": "Eärendil",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Eärendil — bound on his brow, raised as the Star",
+   "manner": [],
+   "when": "F.A. 536 – 542",
+   "cite": "Silm 24 for the deed [C]; HoME XI, the Tale of Years C for the year, in its own revision series '536 [> 540 > 542] Earendil comes to Valinor' [I-M]. THE ANNAL DATES THE ARRIVAL, NOT THE STAR: 'brow', 'sky' and 'star' return ZERO across the whole Tale of Years.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_silmarils#6",
+   "artifact": "af_the_silmarils",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Silmarils",
+   "seq": 6,
+   "held_by": [
+    {
+     "id": "maedhros",
+     "name": "Maedhros",
+     "matched": "Maedhros",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "maglor",
+     "name": "Maglor",
+     "matched": "Maglor",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "the last two: Maedhros to the fiery chasm, Maglor to the sea",
+   "manner": [],
+   "when": "F.A. 587",
+   "cite": "Silm 24 for the deeds; HoME XI, the Tale of Years A '597 Maidros and Maglor ... seize the Silmarils. Maidros perishes. The Silmarils are lost in fire and sea', REDATED IN B to 587 [C]. THE ANNAL SAYS 'fire and sea' AND NO MORE: 'fiery pit', 'fiery chasm' and 'yawning chasm' return zero in all three annal files. The chasm and the casting into the Sea are Silm 24, undated.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_one_ring#0",
+   "artifact": "af_the_one_ring",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The One Ring",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": "sauron",
+     "name": "Sauron",
+     "matched": "Sauron",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_ainur:(root)",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Sauron",
+   "manner": [],
+   "when": "S.A. c. 1600 – 3441",
+   "cite": "App B; Silm, Of the Rings",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_one_ring#1",
+   "artifact": "af_the_one_ring",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The One Ring",
+   "seq": 1,
+   "held_by": [
+    {
+     "id": "elrond",
+     "name": "Elrond",
+     "matched": "Elrond",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "isildur",
+     "name": "Isildur",
+     "matched": "Isildur",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Isildur takes it — the annal says taking; 'cut from the hand' is Elrond at the Council",
+   "manner": [],
+   "when": "S.A. 3441 – T.A. 2",
+   "cite": "LotR App B [C] — '3441 Sauron overthrown by Elendil and Gil-galad, who perish. Isildur takes the One Ring.' THE ANNAL DATES THE TAKING; 'cut from the hand' is LotR II.2, Elrond at the Council, and is not annal text.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_one_ring#2",
+   "artifact": "af_the_one_ring",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The One Ring",
+   "seq": 2,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": "gladden",
+     "name": "Gladden",
+     "matched": "Gladden",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "the Gladden river-bed",
+   "manner": [],
+   "when": "T.A. 2 – 2463",
+   "cite": "UT; App B",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_one_ring#3",
+   "artifact": "af_the_one_ring",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The One Ring",
+   "seq": 3,
+   "held_by": [
+    {
+     "id": "deagol",
+     "name": "Déagol",
+     "matched": "Déagol",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "smeagol",
+     "name": "Sméagol (Gollum)",
+     "matched": "Sméagol",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Déagol finds it and is murdered by Sméagol — the annal gives no duration",
+   "manner": [],
+   "when": "T.A. 2463",
+   "cite": "LotR App B [C] — '2463 The White Council is formed. About this time Deagol the Stoor finds the One Ring, and is murdered by Smeagol.' THE ANNAL HEDGES: 'About this time' attaches 2463 firmly to the Council and loosely to Deagol. 'For minutes' is not in the annal; no duration is given.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_one_ring#4",
+   "artifact": "af_the_one_ring",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The One Ring",
+   "seq": 4,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "Sméagol (Gollum)",
+     "matched_by": "full name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "smeagol",
+      "gollum"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Sméagol-Gollum, under the mountains",
+   "manner": [],
+   "when": "T.A. 2463 – 2941",
+   "cite": "LotR I.2; App B",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_one_ring#5",
+   "artifact": "af_the_one_ring",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The One Ring",
+   "seq": 5,
+   "held_by": [
+    {
+     "id": "bilbo",
+     "name": "Bilbo Baggins",
+     "matched": "Bilbo Baggins",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Bilbo Baggins",
+   "manner": [],
+   "when": "T.A. 2941 – 3001",
+   "cite": "Hobbit v; App B",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_one_ring#6",
+   "artifact": "af_the_one_ring",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The One Ring",
+   "seq": 6,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "frodo",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "frodo",
+      "frodog"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    },
+    {
+     "id": null,
+     "name": null,
+     "matched": "samwise",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "sam",
+      "samwise"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Frodo (and at need Samwise)",
+   "manner": [],
+   "when": "T.A. 3001 – 3019",
+   "cite": "LotR I-VI for the bearing. NO ANNAL [I-M]: App B dates the Ring's FINDING (2463, 2941) and its DESTRUCTION (3019 March 25) and never annals a custody in between. A bearer is not an event.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_one_ring#7",
+   "artifact": "af_the_one_ring",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The One Ring",
+   "seq": 7,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": "mount doom",
+     "name": "Mount Doom (Orodruin)",
+     "matched": "Orodruin",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "the Fire of Orodruin",
+   "manner": [],
+   "when": "Mar 25, 3019",
+   "cite": "LotR VI.3",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_three_rings_narya_nenya_vilya#0",
+   "artifact": "af_the_three_rings_narya_nenya_vilya",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Three Rings — Narya, Nenya, Vilya",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": "celebrimbor",
+     "name": "Celebrimbor",
+     "matched": "Celebrimbor",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Celebrimbor — sent them away before the sack",
+   "manner": [],
+   "when": "S.A. c. 1590 – 1693",
+   "cite": "Silm, Of the Rings of Power for the deed; LotR App B for BOTH ends [C] — 'c. 1590 The Three Rings are completed in Eregion' and '1693 War of the Elves and Sauron begins. The Three Rings are hidden'. TWO CORRECTIONS: the c. is the corpus's own hedge and was dropped; and the span closed on 1697, which is the SACK ('Eregion laid waste. Death of Celebrimbor'), not the hiding. No annal names Celebrimbor as the agent -- Silm says 'the Elves fled from him; and three of their rings they saved'.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_three_rings_narya_nenya_vilya#1",
+   "artifact": "af_the_three_rings_narya_nenya_vilya",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Three Rings — Narya, Nenya, Vilya",
+   "seq": 1,
+   "held_by": [
+    {
+     "id": "galadriel",
+     "name": "Galadriel",
+     "matched": "Galadriel",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "gilgalad",
+     "name": "Gil-galad",
+     "matched": "Gil-galad",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Gil-galad took Vilya and Narya; Galadriel Nenya",
+   "manner": [
+    "taken"
+   ],
+   "when": "S.A. 1697",
+   "cite": "UT, The History of Galadriel and Celeborn, for the dispersal. NO ANNAL [I-M]: App B's 1697 names no ring. AND THE CORPUS CONTRADICTS ITSELF: UT says Gil-galad gave Narya to Cirdan, then a marginal note says he kept it; App B's own preamble says the Three were held from the first by Gil-galad, Galadriel and CIRDAN. Nenya was RECEIVED by Galadriel from Celebrimbor, not kept.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_three_rings_narya_nenya_vilya#2",
+   "artifact": "af_the_three_rings_narya_nenya_vilya",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Three Rings — Narya, Nenya, Vilya",
+   "seq": 2,
+   "held_by": [
+    {
+     "id": "cirdan",
+     "name": "Círdan",
+     "matched": "Círdan",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "elrond",
+     "name": "Elrond",
+     "matched": "Elrond",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Vilya to Elrond; Narya to Círdan",
+   "manner": [],
+   "when": "S.A. 3441 / earlier",
+   "cite": "App B; UT",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_three_rings_narya_nenya_vilya#3",
+   "artifact": "af_the_three_rings_narya_nenya_vilya",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Three Rings — Narya, Nenya, Vilya",
+   "seq": 3,
+   "held_by": [
+    {
+     "id": "cirdan",
+     "name": "Círdan",
+     "matched": "Círdan",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": null,
+     "name": null,
+     "matched": "Gandalf",
+     "matched_by": "full name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "olorin",
+      "gandalf"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Círdan gave Narya to Gandalf at his landing",
+   "manner": [
+    "given"
+   ],
+   "when": "T.A. c.1000",
+   "cite": "UT, The Istari; App B",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_three_rings_narya_nenya_vilya#4",
+   "artifact": "af_the_three_rings_narya_nenya_vilya",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Three Rings — Narya, Nenya, Vilya",
+   "seq": 4,
+   "held_by": [],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "borne over Sea by the Three Keepers",
+   "manner": [
+    "borne"
+   ],
+   "when": "Sept 29, 3021",
+   "cite": "LotR VI.9",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "searched and empty",
+   "searched_and_empty_note": "the tenure's own prose was matched, as whole words through ardatext.words_of, against every one of the 1708 names the archive's entity index holds over 7 defining collections, and none of them stands in it. THE ARCHIVE WAS ASKED AND HOLDS NO SUCH RECORD -- this is not a statement about the corpus, and no search of the corpus was run for it here."
+  },
+  {
+   "id": "af_the_seven_and_the_nine#0",
+   "artifact": "af_the_seven_and_the_nine",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Seven and the Nine",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": "sauron",
+     "name": "Sauron",
+     "matched": "Sauron",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_ainur:(root)",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "eregion",
+     "name": "Eregion",
+     "matched": "Eregion",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Sauron seized them at Eregion's fall; distributed",
+   "manner": [
+    "taken"
+   ],
+   "when": "S.A. 1697+",
+   "cite": "Silm, Of the Rings of Power for the deed [C]. THE YEAR IS THE ARCHIVE'S OWN INFERENCE [I-M]: NO ANNAL records Sauron seizing or dealing out the Seven and the Nine. App B's nearest entry is 2251, 'the Nazgul ... first appear', which dates the Nine's EFFECT 554 years later.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_seven_and_the_nine#1",
+   "artifact": "af_the_seven_and_the_nine",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Seven and the Nine",
+   "seq": 1,
+   "held_by": [],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "the Nine: the Nazgûl appear",
+   "manner": [],
+   "when": "c. S.A. 2251",
+   "cite": "App B",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "searched and empty",
+   "searched_and_empty_note": "the tenure's own prose was matched, as whole words through ardatext.words_of, against every one of the 1708 names the archive's entity index holds over 7 defining collections, and none of them stands in it. THE ARCHIVE WAS ASKED AND HOLDS NO SUCH RECORD -- this is not a statement about the corpus, and no search of the corpus was run for it here."
+  },
+  {
+   "id": "af_the_seven_and_the_nine#2",
+   "artifact": "af_the_seven_and_the_nine",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Seven and the Nine",
+   "seq": 2,
+   "held_by": [],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "the Seven: 'of the Seven he has recovered three' [C]; the rest 'consumed in fire' as the Dragons devoured the hoards — the tally of four is 7 − 3, and tier 1 says only 'some' [I-H]",
+   "manner": [],
+   "when": "T.A.",
+   "cite": "Silm, Of the Rings",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "searched and empty",
+   "searched_and_empty_note": "the tenure's own prose was matched, as whole words through ardatext.words_of, against every one of the 1708 names the archive's entity index holds over 7 defining collections, and none of them stands in it. THE ARCHIVE WAS ASKED AND HOLDS NO SUCH RECORD -- this is not a statement about the corpus, and no search of the corpus was run for it here."
+  },
+  {
+   "id": "af_the_seven_and_the_nine#3",
+   "artifact": "af_the_seven_and_the_nine",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Seven and the Nine",
+   "seq": 3,
+   "held_by": [
+    {
+     "id": "thrain2",
+     "name": "Thráin II",
+     "matched": "Thráin II",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "Dol Guldur",
+     "matched_by": "full name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "dol guldur",
+      "dolguldur"
+     ],
+     "candidate_kinds": [
+      "place",
+      "realm"
+     ]
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "the last of the Seven taken from Thráin II in Dol Guldur",
+   "manner": [],
+   "when": "T.A. 2845",
+   "cite": "LotR App B [C] — '2845 Thrain the Dwarf is imprisoned in Dol Guldur; the last of the Seven Rings is taken from him.' Exact, unhedged.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_narsil_anduril#0",
+   "artifact": "af_narsil_anduril",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Narsil / Andúril",
+   "seq": 0,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": "nogrod",
+     "name": "Nogrod",
+     "matched": "Nogrod",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Telchar's forge, Nogrod — 'Telchar first wrought it in the deeps of time'",
+   "manner": [
+    "made"
+   ],
+   "when": "F.A.",
+   "cite": "LotR TT III.6 for the deed, and the corpus flags it as ONE CHARACTER'S TESTIMONY -- the Silmarillion index attributes it '(according to Aragorn in The Two Towers III 6)'. NO ANNAL AND NO DATE EXISTS IN ANY FORM [I-M]: 'Telchar' occurs zero times in Appendix B.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_narsil_anduril#1",
+   "artifact": "af_narsil_anduril",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Narsil / Andúril",
+   "seq": 1,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "elendil",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "tarelendil",
+      "elendil"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "heirloom to Elendil (the road between unstated — honest gap)",
+   "manner": [],
+   "when": "S.A.",
+   "cite": "App A",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_narsil_anduril#2",
+   "artifact": "af_narsil_anduril",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Narsil / Andúril",
+   "seq": 2,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "elendil",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "tarelendil",
+      "elendil"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "broken beneath Elendil at the Siege",
+   "manner": [],
+   "when": "S.A. 3441",
+   "cite": "Silm, Of the Rings of Power for the deed. THE ANNAL DATES THE SURROUNDING EVENT AND IS SILENT ON THE SWORD [I-M]: App B 3441 reads 'Sauron overthrown by Elendil and Gil-galad, who perish. Isildur takes the One Ring' and never mentions Narsil, which appears nowhere in the Second Age annals.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_narsil_anduril#3",
+   "artifact": "af_narsil_anduril",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Narsil / Andúril",
+   "seq": 3,
+   "held_by": [
+    {
+     "id": "isildur",
+     "name": "Isildur",
+     "matched": "Isildur",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "the Shards, heirloom of Isildur's line",
+   "manner": [],
+   "when": "T.A. 2 – 2951",
+   "cite": "LotR App B [C] — T.A. 3 'Ohtar brings the shards of Narsil to Imladris', and 'delivers to him the shards of Narsil' (T.A. 2951). NOTE THE ANNAL SAYS 3, NOT 2: the archive's opening year is one earlier than the entry it rests on.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_narsil_anduril#4",
+   "artifact": "af_narsil_anduril",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Narsil / Andúril",
+   "seq": 4,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "aragorn",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "aragorn1",
+      "aragorn"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    },
+    {
+     "id": null,
+     "name": null,
+     "matched": "Barahir",
+     "matched_by": "full name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "barahir",
+      "barahir_s",
+      "barahir_f"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "given to Aragorn with the ring of Barahir",
+   "manner": [
+    "given"
+   ],
+   "when": "T.A. 2951",
+   "cite": "LotR App B [C] FOR THE SHARDS ONLY — '2951 ... delivers to him the shards of Narsil'. THE RING OF BARAHIR IS NOT NAMED IN IT [I-M]: 'Barahir' appears twice in App B and neither is this handover. The joint delivery is App A I(v), narrative.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_narsil_anduril#5",
+   "artifact": "af_narsil_anduril",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Narsil / Andúril",
+   "seq": 5,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": "rivendell",
+     "name": "Rivendell (Imladris)",
+     "matched": "Rivendell",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "reforged at Rivendell: Andúril",
+   "manner": [],
+   "when": "T.A. 3018-19",
+   "cite": "LotR FR II.3 for the deed. NO ANNAL DATES THIS [I-M]: 'Anduril' and 'reforged' occur ZERO times in Appendix B, and the whole of December 3018 in the Tale of Years is one line, 'December 25 The Company of the Ring leaves Rivendell at dusk'. The annal bounds are 25 October and 25 December 3018.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_ring_of_barahir#0",
+   "artifact": "af_the_ring_of_barahir",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The ring of Barahir",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": "finrod",
+     "name": "Finrod Felagund",
+     "matched": "Finrod Felagund",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Finrod Felagund",
+   "manner": [],
+   "when": "Y.T. – F.A. 465",
+   "cite": "Silm 17/19 for the deed. NEITHER BOUND IS ANNALLED [I-M]: 'ring' occurs ZERO times in the Grey Annals' whole Years-of-the-Trees section, so the making has no annal; and the EARLIEST annal naming it, GA §146 at 455, calls it ALREADY 'an heirloom of his house', giving the heirloom no origin date. The closing 465 is unsupported too -- GA dates Beren's recovery to 460 (§168), and §189 at 465 only has the ring SHOWN to Thingol. The annal names the giver INGLOR.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_ring_of_barahir#1",
+   "artifact": "af_the_ring_of_barahir",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The ring of Barahir",
+   "seq": 1,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "Barahir",
+     "matched_by": "full name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "barahir",
+      "barahir_s",
+      "barahir_f"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "given to Barahir for the saving of his life at the Bragollach",
+   "manner": [
+    "given"
+   ],
+   "when": "F.A. 455",
+   "cite": "Silm 17 for the deed; HoME XI, the Grey Annals §146, annal 455 [C] for the year — 'Then Inglor gave to Barahir his ring, an heirloom of his house'. The annal names the giver INGLOR; 'Finrod' in the Grey Annals is his FATHER, Finarfin.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_ring_of_barahir#2",
+   "artifact": "af_the_ring_of_barahir",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The ring of Barahir",
+   "seq": 2,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "Beren",
+     "matched_by": "full name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "beren",
+      "beren_s"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    },
+    {
+     "id": "orcs",
+     "name": "Orcs",
+     "matched": "Orcs",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_nature:(root)",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "recovered from the Orcs by Beren, with his father's hand",
+   "manner": [],
+   "when": "F.A. 460",
+   "cite": "Silm 19 for the deed; HoME XI, the Grey Annals §168, annal 460 [C] for the year — 'Thus he regained the Ring of Felagund that his father had worn'. The header is a BARE 460: the archive's earlier 'c.460' invented a hedge the corpus does not carry.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_ring_of_barahir#3",
+   "artifact": "af_the_ring_of_barahir",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The ring of Barahir",
+   "seq": 3,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "Beren",
+     "matched_by": "full name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "beren",
+      "beren_s"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    },
+    {
+     "id": "dior_s",
+     "name": "Dior",
+     "matched": "Dior",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "elros",
+     "name": "Elros Tar-Minyatur",
+     "matched": "elros",
+     "matched_by": "one word of a person's name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "numenor",
+     "name": "Númenor",
+     "matched": "Númenor",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Beren → Dior → the line of Elros in Númenor",
+   "manner": [],
+   "when": "F.A.-S.A.",
+   "cite": "UT, Line of Elros; Akallabêth",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_ring_of_barahir#4",
+   "artifact": "af_the_ring_of_barahir",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The ring of Barahir",
+   "seq": 4,
+   "held_by": [
+    {
+     "id": "ellandunie",
+     "name": "⟨Lords of Andúnië — names not recorded⟩",
+     "matched": "⟨Lords of Andúnië",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "silmarien",
+     "name": "Silmariën",
+     "matched": "Silmariën",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Silmariën's line: the Lords of Andúnië",
+   "manner": [],
+   "when": "S.A.",
+   "cite": "UT; App A",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_ring_of_barahir#5",
+   "artifact": "af_the_ring_of_barahir",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The ring of Barahir",
+   "seq": 5,
+   "held_by": [
+    {
+     "id": "arvedui",
+     "name": "Arvedui 'Last-king'",
+     "matched": "arvedui",
+     "matched_by": "one word of a person's name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": null,
+     "name": null,
+     "matched": "elendil",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "tarelendil",
+      "elendil"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "arnor",
+     "name": "Arnor",
+     "matched": "Arnor",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Elendil → the kings of Arnor → Arvedui",
+   "manner": [],
+   "when": "S.A. 3320 – T.A. 1975",
+   "cite": "LotR App A I(iii) footnote for the descent, UNDATED. NO ANNAL [I-M]: App B's 3320 entry is 'Foundations of the Realms in Exile ... The Stones are divided' and names no ring. A custody hand-off, which the annals never date.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_ring_of_barahir#6",
+   "artifact": "af_the_ring_of_barahir",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The ring of Barahir",
+   "seq": 6,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": "lossoth",
+     "name": "The Lossoth of Forochel",
+     "matched": "The Lossoth of Forochel",
+     "matched_by": "full name",
+     "kind": "realm",
+     "resolves_in": "arda_realms:pol",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "pledged to the Lossoth of Forochel; ransomed back",
+   "manner": [],
+   "when": "T.A. 1975+",
+   "cite": "LotR App A I(iii) for the pledge and the ransom, BOTH UNDATED. NO ANNAL [I-M]: App B 1975 names the palantiri and not the ring; 1976 has 'The heirlooms of Arnor are given into the keeping of Elrond' -- collectively, ring unnamed. The open-ended '1975+' is the archive's own.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_ring_of_barahir#7",
+   "artifact": "af_the_ring_of_barahir",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The ring of Barahir",
+   "seq": 7,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "aragorn",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "aragorn1",
+      "aragorn"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    },
+    {
+     "id": "arwen",
+     "name": "Arwen Undómiel",
+     "matched": "arwen",
+     "matched_by": "one word of a person's name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "cerin amroth",
+     "name": "Cerin Amroth",
+     "matched": "Cerin Amroth",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "the Chieftains → Aragorn → given to Arwen on Cerin Amroth",
+   "manner": [
+    "given"
+   ],
+   "when": "T.A. 2951-2980",
+   "cite": "SPLIT. App B 2951 delivers THE SHARDS OF NARSIL ONLY and never names the ring; that handover is App A I(v), narrative. But the CLOSE is annalled -- LotR App B [C] '2980 Aragorn enters Lorien, and there meets again Arwen Undomiel. Aragorn gives her the ring of Barahir, and they plight their troth upon the hill of Cerin Amroth.' The 'About this time' in that entry hedges the Gollum clause, not the ring.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_palantiri#0",
+   "artifact": "af_the_palantiri",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The palantíri",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": "amandil",
+     "name": "Amandil",
+     "matched": "Amandil",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "gift of the Eldar to Amandil's house",
+   "manner": [
+    "given"
+   ],
+   "when": "S.A.",
+   "cite": "UT, The Palantíri; Silm, Of the Rings",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_palantiri#1",
+   "artifact": "af_the_palantiri",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The palantíri",
+   "seq": 1,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": "weathertop",
+     "name": "Weathertop",
+     "matched": "Amon Sûl",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "annuminas",
+     "name": "Annúminas",
+     "matched": "Annúminas",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "tower hills",
+     "name": "Tower Hills",
+     "matched": "Elostirion",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "minas tirith",
+     "name": "Minas Tirith",
+     "matched": "Minas Anor",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "minas morgul",
+     "name": "Minas Morgul",
+     "matched": "Minas Ithil",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "isengard",
+     "name": "Isengard",
+     "matched": "Orthanc",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "osgiliath",
+     "name": "Osgiliath",
+     "matched": "Osgiliath",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "seven placed: Annúminas, Amon Sûl, Elostirion; Osgiliath, Minas Ithil, Minas Anor, Orthanc",
+   "manner": [],
+   "when": "S.A. 3320+",
+   "cite": "LotR App B [C] — '3320 Foundations of the Realms in Exile: Arnor and Gondor. The Stones are divided.' THE ANNAL DATES THE DIVISION, not the bringing: 3319 records the Downfall and Elendil's escape with no mention of the Stones, and the carrying is narrative only (Akallabeth), undated.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_palantiri#2",
+   "artifact": "af_the_palantiri",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The palantíri",
+   "seq": 2,
+   "held_by": [
+    {
+     "id": "arvedui",
+     "name": "Arvedui 'Last-king'",
+     "matched": "arvedui",
+     "matched_by": "one word of a person's name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "weathertop",
+     "name": "Weathertop",
+     "matched": "Amon Sûl",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "annuminas",
+     "name": "Annúminas",
+     "matched": "Annúminas",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Amon Sûl & Annúminas lost with Arvedui in the Ice-bay",
+   "manner": [
+    "lost"
+   ],
+   "when": "T.A. 1975",
+   "cite": "LotR App B [C] — '1975 Arvedui drowned in the Bay of Forochel. The palantiri of Annuminas and Amon Sul are lost.'",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_palantiri#3",
+   "artifact": "af_the_palantiri",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The palantíri",
+   "seq": 3,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": "anduin",
+     "name": "Anduin (the Great River)",
+     "matched": "Anduin",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "osgiliath",
+     "name": "Osgiliath",
+     "matched": "Osgiliath",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Osgiliath-stone lost in the Anduin (Kin-strife)",
+   "manner": [
+    "lost"
+   ],
+   "when": "T.A. 1437",
+   "cite": "LotR App B [C] — '1437 Burning of Osgiliath and loss of the palantir. Eldacar flees to Rhovanion'. The annal says LOSS, not destruction.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_palantiri#4",
+   "artifact": "af_the_palantiri",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The palantíri",
+   "seq": 4,
+   "held_by": [
+    {
+     "id": "sauron",
+     "name": "Sauron",
+     "matched": "Sauron",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_ainur:(root)",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Ithil-stone taken — Sauron's trap",
+   "manner": [],
+   "when": "T.A. 2002",
+   "cite": "LotR App B [C] — '2002 Fall of Minas Ithil, afterwards known as Minas Morgul. The palantir is captured.' The annal does NOT name Sauron as the taker; that comes from the c.3000 entry.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_palantiri#5",
+   "artifact": "af_the_palantiri",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The palantíri",
+   "seq": 5,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "denethor",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "denethor1",
+      "denethor2",
+      "boromir",
+      "faramir",
+      "denethor"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "isengard",
+     "name": "Isengard",
+     "matched": "Orthanc",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Anor-stone: Denethor's despair; Orthanc-stone: to the King",
+   "manner": [],
+   "when": "T.A. 3019",
+   "cite": "LotR III.11 and V.7 for the deeds. NO ANNAL [I-M]: no 3019 entry names a palantir. App B's whole palantir population is FIVE mentions, none later than c.3000. March 5 annals the Orthanc parley and March 15 Denethor's pyre, both without the Stone.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_palantiri#6",
+   "artifact": "af_the_palantiri",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The palantíri",
+   "seq": 6,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": "tower hills",
+     "name": "Tower Hills",
+     "matched": "Elostirion",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Elostirion-stone borne back over Sea",
+   "manner": [
+    "borne"
+   ],
+   "when": "T.A. 3021",
+   "cite": "LotR App A I(iii) FOOTNOTE for the deed — 'Cirdan put it aboard Elrond's ship when he left'. NO ANNAL [I-M]: 'Elostirion' occurs ZERO times in LotR, and the 3021 entry records only the departure.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_white_tree_line#0",
+   "artifact": "af_the_white_tree_line",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The White Tree line",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": "melkor",
+     "name": "Melkor (Morgoth)",
+     "matched": "Melkor",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "telperion",
+     "name": "Telperion",
+     "matched": "Telperion",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_nature:(root)",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "ungoliant",
+     "name": "Ungoliant",
+     "matched": "Ungoliant",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_creatures:(root)",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "valinor",
+     "name": "Valinor",
+     "matched": "Valinor",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Telperion of Valinor — slain by Melkor & Ungoliant",
+   "manner": [],
+   "when": "Y.T. 1495",
+   "cite": "Silm 8 for the deed; HoME X, the Annals of Aman 1495 §113 [C] for the year — 'with his black spear he smote each Tree to its core ... and they died'. The annal says EACH TREE and does not name Telperion; the name is in §108 of the same annal.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_white_tree_line#1",
+   "artifact": "af_the_white_tree_line",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The White Tree line",
+   "seq": 1,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "Celeborn",
+     "matched_by": "full name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "celeborn",
+      "celeborn_tree"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    },
+    {
+     "id": "galathilion",
+     "name": "Galathilion",
+     "matched": "Galathilion",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_nature:(root)",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Galathilion in Tirion → Celeborn of Tol Eressëa",
+   "manner": [],
+   "when": "Y.T.",
+   "cite": "Silm 5; Akallabêth",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_white_tree_line#2",
+   "artifact": "af_the_white_tree_line",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The White Tree line",
+   "seq": 2,
+   "held_by": [
+    {
+     "id": "isildur",
+     "name": "Isildur",
+     "matched": "Isildur",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": null,
+     "name": null,
+     "matched": "nimloth",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "nimloth_e",
+      "nimloth_tree"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    },
+    {
+     "id": "sauron",
+     "name": "Sauron",
+     "matched": "Sauron",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_ainur:(root)",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "numenor",
+     "name": "Númenor",
+     "matched": "Númenor",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Nimloth of Númenor — Isildur steals the fruit; the Tree burned by Sauron",
+   "manner": [],
+   "when": "S.A. c.3280",
+   "cite": "Silm/Akallabeth for the deed. NO ANNAL DATES THIS [I-M]: there is NO ANNAL BLOCK FOR S.A. 3280 ANYWHERE -- checked by exhaustion against every year header in the Annals of Aman, the Grey Annals, the First Age Tale of Years and LotR Appendix B, 1107 distinct years. The archive's c.3280 is its own reading and the corpus offers no annal to confirm it.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_white_tree_line#3",
+   "artifact": "af_the_white_tree_line",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The White Tree line",
+   "seq": 3,
+   "held_by": [
+    {
+     "id": "sauron",
+     "name": "Sauron",
+     "matched": "Sauron",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_ainur:(root)",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "minas morgul",
+     "name": "Minas Morgul",
+     "matched": "Minas Ithil",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "the First White Tree of Minas Ithil — burned by Sauron",
+   "manner": [],
+   "when": "S.A. 3320-3429",
+   "cite": "App A/B",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_white_tree_line#4",
+   "artifact": "af_the_white_tree_line",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The White Tree line",
+   "seq": 4,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": "minas tirith",
+     "name": "Minas Tirith",
+     "matched": "Minas Anor",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "second and third Trees of Minas Anor; the Withered Tree",
+   "manner": [],
+   "when": "T.A. 2 – 3019",
+   "cite": "App A/B",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_white_tree_line#5",
+   "artifact": "af_the_white_tree_line",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The White Tree line",
+   "seq": 5,
+   "held_by": [
+    {
+     "id": "olorin",
+     "name": "Olórin",
+     "matched": "Mithrandir",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_ainur:(root)",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "mindolluin",
+     "name": "Mindolluin",
+     "matched": "Mindolluin",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "the sapling found on Mindolluin by the King and Mithrandir",
+   "manner": [
+    "found"
+   ],
+   "when": "June 3019",
+   "cite": "LotR VI.5",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_arkenstone#0",
+   "artifact": "af_the_arkenstone",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Arkenstone",
+   "seq": 0,
+   "held_by": [],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "the Kings under the Mountain",
+   "manner": [],
+   "when": "T.A. 1999-2770",
+   "cite": "LotR App A III for the finding — 'In Erebor he found the great jewel, the Arkenstone, Heart of the Mountain'. NO ANNAL [I-M]: 'Arkenstone' occurs ZERO times in Appendix B; 1999 and 2770 are both annalled and neither names it.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "searched and empty",
+   "searched_and_empty_note": "the tenure's own prose was matched, as whole words through ardatext.words_of, against every one of the 1708 names the archive's entity index holds over 7 defining collections, and none of them stands in it. THE ARCHIVE WAS ASKED AND HOLDS NO SUCH RECORD -- this is not a statement about the corpus, and no search of the corpus was run for it here."
+  },
+  {
+   "id": "af_the_arkenstone#1",
+   "artifact": "af_the_arkenstone",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Arkenstone",
+   "seq": 1,
+   "held_by": [
+    {
+     "id": "smaug",
+     "name": "Smaug",
+     "matched": "Smaug",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_creatures:(root)",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "in Smaug's bed of gold",
+   "manner": [],
+   "when": "T.A. 2770-2941",
+   "cite": "LotR App B [C] for the year -- '2770 Smaug the Dragon descends on Erebor. Dale destroyed.' THE ANNAL DATES THE SACK AND NEVER NAMES THE ARKENSTONE [I-M]; App A III goes only as far as 'Smaug entered into the Great Hall and lay there upon a bed of gold', the jewel unnamed.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_arkenstone#2",
+   "artifact": "af_the_arkenstone",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Arkenstone",
+   "seq": 2,
+   "held_by": [
+    {
+     "id": "bilbo",
+     "name": "Bilbo Baggins",
+     "matched": "bilbo",
+     "matched_by": "one word of a person's name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Bilbo's pocket — and his ransom-gambit",
+   "manner": [],
+   "when": "T.A. 2941",
+   "cite": "The Hobbit xiii for the deed. NO ANNAL [I-M]: the 2941 entry names the RING and not the Arkenstone.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_arkenstone#3",
+   "artifact": "af_the_arkenstone",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Arkenstone",
+   "seq": 3,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "thorin",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "thorin1",
+      "thorin",
+      "thorin3"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "laid on Thorin's breast in the deep tomb",
+   "manner": [],
+   "when": "T.A. 2941",
+   "cite": "LotR App B [C] for the year -- '2941 ... The Battle of the Five Armies in Dale. Death of Thorin II.' THE ANNAL DATES THE DEATH AND NEVER NAMES THE ARKENSTONE [I-M]; the burial is The Hobbit XVIII, 'Bard laid the Arkenstone upon his breast', undated.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_sting#0",
+   "artifact": "af_sting",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Sting",
+   "seq": 0,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": "gondolin",
+     "name": "Gondolin",
+     "matched": "Gondolin",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "the armouries of Gondolin",
+   "manner": [],
+   "when": "F.A.",
+   "cite": "Hobbit iii; LotR",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_sting#1",
+   "artifact": "af_sting",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Sting",
+   "seq": 1,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": "trollshaws",
+     "name": "Trollshaws",
+     "matched": "Trollshaws",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "a troll-hoard in the Trollshaws",
+   "manner": [],
+   "when": "T.A. 2941",
+   "cite": "The Hobbit ii for the finding [C]. NO ANNAL [I-M]: Sting is named nowhere in Appendix B — its two 'sting' substring hits are 'casting' and 'lasting'. The blade is unnamed in The Hobbit ii and named only in ch. viii, 'I will give you a name ... and I shall call you Sting'.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_sting#2",
+   "artifact": "af_sting",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Sting",
+   "seq": 2,
+   "held_by": [
+    {
+     "id": "bilbo",
+     "name": "Bilbo Baggins",
+     "matched": "bilbo",
+     "matched_by": "one word of a person's name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Bilbo",
+   "manner": [],
+   "when": "2941-3001? (given at Rivendell 3018)",
+   "cite": "Hobbit; LotR II.3",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_sting#3",
+   "artifact": "af_sting",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Sting",
+   "seq": 3,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "frodo",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "frodo",
+      "frodog"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "cirith ungol",
+     "name": "Cirith Ungol",
+     "matched": "Cirith Ungol",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Frodo; borne by Sam through Cirith Ungol",
+   "manner": [
+    "borne"
+   ],
+   "when": "3018-3019",
+   "cite": "LotR IV.9-VI.1",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_sting#4",
+   "artifact": "af_sting",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Sting",
+   "seq": 4,
+   "held_by": [],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "with Sam, then his line? — the corpus does not say beyond",
+   "manner": [],
+   "when": "after 3019",
+   "cite": "LotR VI.2 and VI.4 for the giving and its REFUSAL. NO ANNAL, AND THE ARCHIVE'S 'after 3019' OVERSTATES [I-M]: Frodo gives Sting to Sam in VI.2, Sam REFUSES it in VI.4 ('No, master! Mr. Bilbo gave it to you'), and VI.6 has it back with Frodo. The corpus records no later transfer.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "searched and empty",
+   "searched_and_empty_note": "the tenure's own prose was matched, as whole words through ardatext.words_of, against every one of the 1708 names the archive's entity index holds over 7 defining collections, and none of them stands in it. THE ARCHIVE WAS ASKED AND HOLDS NO SUCH RECORD -- this is not a statement about the corpus, and no search of the corpus was run for it here."
+  },
+  {
+   "id": "af_glamdring_orcrist#0",
+   "artifact": "af_glamdring_orcrist",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Glamdring & Orcrist",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "Turgon",
+     "matched_by": "full name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "turgon",
+      "turgon_s"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "gondolin",
+     "name": "Gondolin",
+     "matched": "the Hidden City",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Turgon; the armouries of the Hidden City",
+   "manner": [],
+   "when": "F.A. 126–510",
+   "cite": "The Hobbit iii, Elrond speaking, for the making [C]. NO ANNAL AND NO DATE [I-M]: the swords are named nowhere in either appendix, and the archive's span closes on Gondolin's fall, which is annalled for the CITY and not for them.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_glamdring_orcrist#1",
+   "artifact": "af_glamdring_orcrist",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Glamdring & Orcrist",
+   "seq": 1,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": "gondolin",
+     "name": "Gondolin",
+     "matched": "Gondolin",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "plunder-road unstated: 'they came from Gondolin' — six millennia dark",
+   "manner": [],
+   "when": "F.A. 510 – T.A. 2941",
+   "cite": "The Hobbit iii for the making. NO ANNAL [I-M]: 'Glamdring' and 'Orcrist' are ZERO in the Grey Annals, the Tale of Years and the Annals of Aman alike. Gondolin's fall IS annalled at 510 and the entry names no sword. The plunder-road is a guess IN THE SOURCE: 'one may guess that your trolls had plundered other plunderers'.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_glamdring_orcrist#2",
+   "artifact": "af_glamdring_orcrist",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Glamdring & Orcrist",
+   "seq": 2,
+   "held_by": [],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "the troll-hoard",
+   "manner": [],
+   "when": "T.A. 2941",
+   "cite": "The Hobbit ii for the finding [C]. NO ANNAL [I-M]: 'Glamdring' and 'Orcrist' occur ZERO times in Appendix B and zero in Appendix A. The 2941 annal records the Battle of Five Armies and says nothing of the swords.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "searched and empty",
+   "searched_and_empty_note": "the tenure's own prose was matched, as whole words through ardatext.words_of, against every one of the 1708 names the archive's entity index holds over 7 defining collections, and none of them stands in it. THE ARCHIVE WAS ASKED AND HOLDS NO SUCH RECORD -- this is not a statement about the corpus, and no search of the corpus was run for it here."
+  },
+  {
+   "id": "af_glamdring_orcrist#3",
+   "artifact": "af_glamdring_orcrist",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Glamdring & Orcrist",
+   "seq": 3,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "Gandalf",
+     "matched_by": "full name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "olorin",
+      "gandalf"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    },
+    {
+     "id": null,
+     "name": null,
+     "matched": "thorin",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "thorin1",
+      "thorin",
+      "thorin3"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "Moria",
+     "matched_by": "full name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "khazaddum",
+      "moria west gate"
+     ],
+     "candidate_kinds": [
+      "place"
+     ]
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Glamdring: Gandalf, through Moria and the war; Orcrist: on Thorin's tomb",
+   "manner": [],
+   "when": "2941 —",
+   "cite": "Hobbit; LotR; App A III",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_anglachel_gurthang#0",
+   "artifact": "af_anglachel_gurthang",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Anglachel / Gurthang",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "thingol",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "elwe",
+      "thingol"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "nan elmoth",
+     "name": "Nan Elmoth",
+     "matched": "Nan Elmoth",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Eöl of Nan Elmoth — given to Thingol as fee for Nan Elmoth",
+   "manner": [
+    "given"
+   ],
+   "when": "F.A.",
+   "cite": "Silm 21; CoH",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_anglachel_gurthang#1",
+   "artifact": "af_anglachel_gurthang",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Anglachel / Gurthang",
+   "seq": 1,
+   "held_by": [
+    {
+     "id": "beleg_a",
+     "name": "Beleg",
+     "matched": "Beleg",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "melian",
+     "name": "Melian",
+     "matched": "Melian",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Beleg Strongbow — against the counsel of Melian",
+   "manner": [],
+   "when": "F.A.",
+   "cite": "CoH IX",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_anglachel_gurthang#2",
+   "artifact": "af_anglachel_gurthang",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Anglachel / Gurthang",
+   "seq": 2,
+   "held_by": [
+    {
+     "id": "beleg_a",
+     "name": "Beleg",
+     "matched": "Beleg",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": null,
+     "name": null,
+     "matched": "turin",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "turin",
+      "turin1",
+      "turin2"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Túrin — who slew Beleg with it; reforged black: Gurthang",
+   "manner": [],
+   "when": "F.A. 490–5",
+   "cite": "CoH for the deeds; HoME XI, the Grey Annals §268 [C] for the reforging — 'The Noldor took Beleg's sword which Turin had kept, and re-forged it ... the sword itself he named Gurthang Iron of Death'. THE ANNAL HEADER IS 490-5, NOT 489: 489 is §§265-266, Turin's capture and Beleg's death. The archive's opening year belonged to a different event.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_anglachel_gurthang#3",
+   "artifact": "af_anglachel_gurthang",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Anglachel / Gurthang",
+   "seq": 3,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "turin",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "turin",
+      "turin1",
+      "turin2"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "broken beneath Túrin at Cabed Naeramarth; buried with him",
+   "manner": [],
+   "when": "F.A. 499",
+   "cite": "HoME XI, the Grey Annals §349, under year header 499 [C] — 'Then they lifted up Turin and found that Gurthang had broken asunder ... the shards of Gurthang were laid beside him'. THE ANNAL CARRIES BOTH HALVES. Note the annal spells it Cabad Naeramarth, and ANGLACHEL DOES NOT OCCUR IN THE GREY ANNALS AT ALL -- the sword is Gurthang throughout.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_dragon_helm_of_dor_lomin#0",
+   "artifact": "af_the_dragon_helm_of_dor_lomin",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Dragon-helm of Dor-lómin",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": "fingon",
+     "name": "Fingon",
+     "matched": "Fingon",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "maedhros",
+     "name": "Maedhros",
+     "matched": "Maedhros",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "belegost",
+     "name": "Belegost",
+     "matched": "Belegost",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Azaghâl of Belegost → Maedhros → Fingon",
+   "manner": [],
+   "when": "F.A.",
+   "cite": "CoH VI",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_dragon_helm_of_dor_lomin#1",
+   "artifact": "af_the_dragon_helm_of_dor_lomin",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Dragon-helm of Dor-lómin",
+   "seq": 1,
+   "held_by": [
+    {
+     "id": "fingolfin",
+     "name": "Fingolfin",
+     "matched": "Fingolfin",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "hador_s",
+     "name": "Hador",
+     "matched": "Hador",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "dorlomin",
+     "name": "Dor-lómin (House of Hador)",
+     "matched": "Dor-lómin",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Fingolfin to Hador with the lordship of Dor-lómin (GA §129, 420); the helm's own passage is undated",
+   "manner": [],
+   "when": "F.A. c.416",
+   "cite": "UT, Narn i Hin Hurin, for the gift, UNDATED. NO ANNAL AND THERE IS NO F.A. 416 [I-M]: I checked the Grey Annals headers myself -- 413, 417, 419, 420, 422, 423. AND THE ANNAL DISAGREES ON THE GIVER: GA §129 under 420 gives Hador the lordship from FINGOLFIN, not Fingon -- 'became a vassal of Fingolfin ... he was given wide lands in Hithlum in the country of Dor-Lomin' -- and names no helm.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_dragon_helm_of_dor_lomin#2",
+   "artifact": "af_the_dragon_helm_of_dor_lomin",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Dragon-helm of Dor-lómin",
+   "seq": 2,
+   "held_by": [
+    {
+     "id": "galdor",
+     "name": "Galdor the Tall",
+     "matched": "galdor",
+     "matched_by": "one word of a person's name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "hador_s",
+     "name": "Hador",
+     "matched": "Hador",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": null,
+     "name": null,
+     "matched": "hurin",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "hurin",
+      "turin",
+      "hurin_e",
+      "hurin1",
+      "hurin2"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    },
+    {
+     "id": null,
+     "name": null,
+     "matched": "turin",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "turin",
+      "turin1",
+      "turin2"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Hador → Galdor → Húrin (who wore it not) → Túrin",
+   "manner": [],
+   "when": "F.A.",
+   "cite": "CoH VI",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_dragon_helm_of_dor_lomin#3",
+   "artifact": "af_the_dragon_helm_of_dor_lomin",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Dragon-helm of Dor-lómin",
+   "seq": 3,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "turin",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "turin",
+      "turin1",
+      "turin2"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "dimbar",
+     "name": "Dimbar",
+     "matched": "Dimbar",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "dor cuarthol",
+     "name": "Dor-Cúarthol",
+     "matched": "Dor-Cúarthol",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "borne by Túrin in Dor-Cúarthol — the whisper went that 'the Helm and Bow that had fallen in Dimbar had arisen again beyond hope'",
+   "manner": [
+    "borne"
+   ],
+   "when": "F.A. 486–489",
+   "cite": "Silm 21; CoH for the deed. NO ANNAL, AND THERE IS NO F.A. 486 AT ALL [I-M]: I checked every Grey Annals header and they run 481, 484, 487, 488, 489, 490 — 486 does not exist. The only annal-line record of the helm reaching Turin is GA §258 under 481, and Christopher states that note 'is not in the typescript of GA'. Every other Dragon-helm mention in the annals is a bracketed pencilled marginal, including Tolkien's own 'What happened to the Dragon-helm?' at 489.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_nauglamir#0",
+   "artifact": "af_the_nauglamir",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Nauglamír",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": "finrod",
+     "name": "Finrod Felagund",
+     "matched": "finrod",
+     "matched_by": "one word of a person's name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "nargothrond",
+     "name": "Nargothrond",
+     "matched": "Nargothrond",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Finrod, chief treasure of Nargothrond",
+   "manner": [],
+   "when": "F.A. 102–495",
+   "cite": "Silm for the making [C]. NO ANNAL DATES A NAUGLAMIR MADE FOR FINROD [I-M], and this is silence across COVERED years — the Grey Annals run 2 to 499 and never name it. THE ANNALS RECORD AN INCOMPATIBLE MAKING: every Tale of Years recension dates a 'Making of the Nauglamir' to 501/502, from Glaurung's treasure, FOR THINGOL.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_nauglamir#1",
+   "artifact": "af_the_nauglamir",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Nauglamír",
+   "seq": 1,
+   "held_by": [
+    {
+     "id": "glaurung",
+     "name": "Glaurung",
+     "matched": "Glaurung",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_creatures:(root)",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": null,
+     "name": null,
+     "matched": "hurin",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "hurin",
+      "turin",
+      "hurin_e",
+      "hurin1",
+      "hurin2"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    },
+    {
+     "id": null,
+     "name": null,
+     "matched": "thingol",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "elwe",
+      "thingol"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Húrin bore GLAURUNG'S TREASURE from the sacked halls to Thingol — the necklace is wrought from it after — 'thy fee'",
+   "manner": [
+    "borne",
+    "made"
+   ],
+   "when": "F.A. c.501",
+   "cite": "Silm 22 for the deed. THE ANNAL DATES THE TREASURE, NOT THE NECKLACE [I-M]: Tale of Years D 1, 501 -- 'He goes to Nargothrond and seizes THE TREASURE of Glaurung. He takes THE TREASURE to Menegroth and casts it at the feet of Thingol.' In that same recension the Nauglamir is MADE AFTERWARDS, at 502, out of that treasure. Hurin bearing the necklace itself is the published Silmarillion, which carries no year.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_nauglamir#2",
+   "artifact": "af_the_nauglamir",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Nauglamír",
+   "seq": 2,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "thingol",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "elwe",
+      "thingol"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "nogrod",
+     "name": "Nogrod",
+     "matched": "Nogrod",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "remade about a Silmaril; Thingol slain over it by the smiths of Nogrod",
+   "manner": [],
+   "when": "F.A. c.502",
+   "cite": "HoME XI, the Tale of Years D 1 [C] for the making -- '502 The Nauglamir is wrought of the treasure of Glaurung, and the Silmaril is hung thereon.' THE SLAYING IS 503, NOT 502, IN EVERY RECENSION: D 1 503 'King Elu Thingol is slain and his realm ended'; B and C likewise 502/503; A alone 501/502, and A's making entry names no Silmaril. The Silmaril-hung-thereon element exists ONLY in D 1.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_nauglamir#3",
+   "artifact": "af_the_nauglamir",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Nauglamír",
+   "seq": 3,
+   "held_by": [
+    {
+     "id": "luthien",
+     "name": "Lúthien",
+     "matched": "Lúthien",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "sarn athrad",
+     "name": "Sarn Athrad",
+     "matched": "Sarn Athrad",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "tol galen",
+     "name": "Tol Galen",
+     "matched": "Tol Galen",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "recovered at Sarn Athrad; Lúthien wore it at Tol Galen",
+   "manner": [],
+   "when": "F.A.",
+   "cite": "Silm 22",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_nauglamir#4",
+   "artifact": "af_the_nauglamir",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Nauglamír",
+   "seq": 4,
+   "held_by": [
+    {
+     "id": "dior_s",
+     "name": "Dior",
+     "matched": "Dior",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "earendil",
+     "name": "Eärendil",
+     "matched": "Eärendil",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "elwing",
+     "name": "Elwing",
+     "matched": "Elwing",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Dior, then Elwing — into the Sea and to Eärendil",
+   "manner": [],
+   "when": "F.A. 504–538",
+   "cite": "Silm 22-24 for the deeds; HoME XI, the Tale of Years, TWO RECENSIONS NAMED because they disagree [I-M]: 506 is D 2 ('506-507 At Yule Dior fought the sons of Feanor ... and was slain'), and 538 is C ALONE as its final emendation ('532 [> 534 > 538] The Third and Last Kinslaying ... Elwing carries away the Silmaril'). B and C move the Second Kinslaying to 509; D 2 never reaches 538. THE START DATE IS D 2's 504, when 'Dior now publicly wore the Nauglamír and the Jewel' (t1_11:12936-12938); 506 was here before and dated his DEATH, which is when a tenure ends, not when it begins. Same weld as the Silmarils record repaired at 4e776f0.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_elessar#0",
+   "artifact": "af_the_elessar",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Elessar",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": "earendil",
+     "name": "Eärendil",
+     "matched": "Eärendil",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "idril",
+     "name": "Idril Celebrindal",
+     "matched": "idril",
+     "matched_by": "one word of a person's name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "(tradition one) Enerdhil → Idril → Eärendil, into the sky",
+   "manner": [],
+   "when": "F.A.",
+   "cite": "UT, The Elessar, for the tradition. NO ANNAL [I-M]: 'elessar', 'elfstone', 'enerdhil' and 'celebrimbor' are ZERO inside the Grey Annals and the Tale of Years, and zero in Morgoth's Ring entire. Every temporal marker in that essay is RELATIVE — 'ere Sauron deluded the smiths of Eregion', 'before Sauron rose again' — and no numbered year appears.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_elessar#1",
+   "artifact": "af_the_elessar",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Elessar",
+   "seq": 1,
+   "held_by": [
+    {
+     "id": "celebrimbor",
+     "name": "Celebrimbor",
+     "matched": "Celebrimbor",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "galadriel",
+     "name": "Galadriel",
+     "matched": "Galadriel",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "(tradition two, or a second stone) Celebrimbor → Galadriel",
+   "manner": [],
+   "when": "S.A.",
+   "cite": "UT, The Elessar",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_elessar#2",
+   "artifact": "af_the_elessar",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Elessar",
+   "seq": 2,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "aragorn",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "aragorn1",
+      "aragorn"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    },
+    {
+     "id": "arwen",
+     "name": "Arwen Undómiel",
+     "matched": "arwen",
+     "matched_by": "one word of a person's name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "celebrian",
+     "name": "Celebrían",
+     "matched": "Celebrían",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "galadriel",
+     "name": "Galadriel",
+     "matched": "Galadriel",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "Lórien",
+     "matched_by": "full name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "irmo",
+      "lorien"
+     ],
+     "candidate_kinds": [
+      "person",
+      "place"
+     ]
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Galadriel → Celebrían → Arwen? — 'by right of kin'; given to Aragorn at Lórien",
+   "manner": [
+    "given"
+   ],
+   "when": "T.A. 3019",
+   "cite": "LotR II.8 for the giving; UT 'The Elessar' for the descent. NO ANNAL [I-M]: no App B entry names the Elessar as a JEWEL — all eight occurrences there are the king-name. 'Green stone' and 'Elfstone' are zero.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_elessar#3",
+   "artifact": "af_the_elessar",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Elessar",
+   "seq": 3,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "aragorn",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "aragorn1",
+      "aragorn"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    },
+    {
+     "id": "aragorn",
+     "name": "Aragorn II Elessar",
+     "matched": "elessar",
+     "matched_by": "one word of a person's name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Aragorn Elessar — crowned in its name",
+   "manner": [],
+   "when": "3019 —",
+   "cite": "LotR V.8/VI.5",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_phial_of_galadriel#0",
+   "artifact": "af_the_phial_of_galadriel",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Phial of Galadriel",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "frodo",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "frodo",
+      "frodog"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    },
+    {
+     "id": "galadriel",
+     "name": "Galadriel",
+     "matched": "Galadriel",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Galadriel's parting gift to Frodo",
+   "manner": [
+    "given"
+   ],
+   "when": "Feb 3019",
+   "cite": "LotR II.8",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_phial_of_galadriel#1",
+   "artifact": "af_the_phial_of_galadriel",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Phial of Galadriel",
+   "seq": 1,
+   "held_by": [
+    {
+     "id": "shelob",
+     "name": "Shelob",
+     "matched": "Shelob",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_creatures:(root)",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "against Shelob in the pass; against the Watchers of the Tower",
+   "manner": [],
+   "when": "Mar 3019",
+   "cite": "LotR IV.9; VI.1",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_phial_of_galadriel#2",
+   "artifact": "af_the_phial_of_galadriel",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Phial of Galadriel",
+   "seq": 2,
+   "held_by": [],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "borne over Sea in the Ring-bearer's hand",
+   "manner": [
+    "borne"
+   ],
+   "when": "Sept 3021",
+   "cite": "LotR VI.9",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "searched and empty",
+   "searched_and_empty_note": "the tenure's own prose was matched, as whole words through ardatext.words_of, against every one of the 1708 names the archive's entity index holds over 7 defining collections, and none of them stands in it. THE ARCHIVE WAS ASKED AND HOLDS NO SUCH RECORD -- this is not a statement about the corpus, and no search of the corpus was run for it here."
+  },
+  {
+   "id": "af_the_horn_of_the_mark#0",
+   "artifact": "af_the_horn_of_the_mark",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Horn of the Mark",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": "scatha",
+     "name": "Scatha the Worm",
+     "matched": "scatha",
+     "matched_by": "one word of a person's name",
+     "kind": "person",
+     "resolves_in": "arda_creatures:(root)",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "eotheod",
+     "name": "Eothéod",
+     "matched": "The Éothéod",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "the hoard of Scatha; the Éothéod",
+   "manner": [],
+   "when": "before T.A. 2510",
+   "cite": "LotR VI.6 for the gift. NO ANNAL [I-M]: 'Scatha' occurs ZERO times in Appendix B; the 2510 entry annals Eorl's victory with no horn and no hoard.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_horn_of_the_mark#1",
+   "artifact": "af_the_horn_of_the_mark",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Horn of the Mark",
+   "seq": 1,
+   "held_by": [
+    {
+     "id": "eorl",
+     "name": "Eorl the Young",
+     "matched": "eorl",
+     "matched_by": "one word of a person's name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "the house of Eorl",
+   "manner": [],
+   "when": "2510-3019",
+   "cite": "LotR VI.6",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_horn_of_the_mark#2",
+   "artifact": "af_the_horn_of_the_mark",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Horn of the Mark",
+   "seq": 2,
+   "held_by": [
+    {
+     "id": "eowyn",
+     "name": "Éowyn",
+     "matched": "Éowyn",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": null,
+     "name": null,
+     "matched": "meriadoc",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "merry",
+      "meriadoc"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Éowyn's gift to Meriadoc at the parting",
+   "manner": [
+    "given"
+   ],
+   "when": "3019",
+   "cite": "LotR VI.6 for the gift, quoted at length there. NO ANNAL [I-M]: 'Horn of the Mark' occurs NOWHERE in the corpus file; App B's August 3019 entries date the leave-taking -- '14. The guests take leave of King Eomer' -- without mentioning the horn.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_horn_of_the_mark#3",
+   "artifact": "af_the_horn_of_the_mark",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Horn of the Mark",
+   "seq": 3,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": "bywater",
+     "name": "Bywater",
+     "matched": "Bywater",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "blown at the raising of the Shire — Bywater",
+   "manner": [],
+   "when": "Nov 3019",
+   "cite": "LotR VI.8",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_mithril_coat#0",
+   "artifact": "af_the_mithril_coat",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The mithril-coat",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": "bilbo",
+     "name": "Bilbo Baggins",
+     "matched": "bilbo",
+     "matched_by": "one word of a person's name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": null,
+     "name": null,
+     "matched": "thorin",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "thorin1",
+      "thorin",
+      "thorin3"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Thorin's gift to Bilbo",
+   "manner": [
+    "given"
+   ],
+   "when": "T.A. 2941",
+   "cite": "The Hobbit xiii for the gift [C]. NO ANNAL [I-M]: the 2941 annal dates the Battle of Five Armies and Thorin's death and omits the coat.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_mithril_coat#1",
+   "artifact": "af_the_mithril_coat",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The mithril-coat",
+   "seq": 1,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "frodo",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "frodo",
+      "frodog"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "michel delving",
+     "name": "Michel Delving",
+     "matched": "Michel Delving",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "lent to the Mathom-house of Michel Delving; recalled, and given to Frodo",
+   "manner": [
+    "given"
+   ],
+   "when": "3018",
+   "cite": "LotR Prologue; II.3",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_mithril_coat#2",
+   "artifact": "af_the_mithril_coat",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The mithril-coat",
+   "seq": 2,
+   "held_by": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "frodo",
+     "matched_by": "one word of a person's name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "frodo",
+      "frodog"
+     ],
+     "candidate_kinds": [
+      "person"
+     ]
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "Moria",
+     "matched_by": "full name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "khazaddum",
+      "moria west gate"
+     ],
+     "candidate_kinds": [
+      "place"
+     ]
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "saved Frodo from the Moria-spear; taken by the Tower; restored at Cormallen",
+   "manner": [],
+   "when": "3019",
+   "cite": "LotR II.4 and VI.1 for the deeds; LotR App B [C] for the year — '17 Battle of Dale ... Shagrat brings Frodo's cloak, mail-shirt, and sword to Barad-dur' (3019, March 17). THE ONLY ENTRY IN THE WHOLE OF APPENDIX B NAMING ANY ARTEFACT OF THIS DATASET. Note the annal writes 'sword' unnamed.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "ambiguous only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_mithril_coat#3",
+   "artifact": "af_the_mithril_coat",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The mithril-coat",
+   "seq": 3,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": "falas",
+     "name": "The Falas",
+     "matched": "the Havens",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "worn again at the Havens-riding",
+   "manner": [],
+   "when": "3021",
+   "cite": "LotR VI.6 for the last sighting. NO ANNAL AND NO NARRATIVE [I-M]: the 3021 annal names only 'They come to the Grey Havens ... the end of the Third Age', and VI.9 mentions neither the coat nor Sting. The last record of the coat is VI.6.",
+   "conf": "I-M",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_grond_twice#0",
+   "artifact": "af_grond_twice",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Grond, twice",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": "melkor",
+     "name": "Melkor (Morgoth)",
+     "matched": "Morgoth",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Morgoth's mace at the duel",
+   "manner": [],
+   "when": "F.A. 456",
+   "cite": "HoME XI, the Grey Annals §156, annal 456 [C] — 'Morgoth fought with a great hammer, Grond, that he wielded as a mace'. THE ANNAL DATES THE WIELDING and says nothing of the mace's making.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_grond_twice#1",
+   "artifact": "af_grond_twice",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "Grond, twice",
+   "seq": 1,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": null,
+     "name": null,
+     "matched": "Minas Morgul",
+     "matched_by": "full name",
+     "kind": null,
+     "resolves_in": null,
+     "resolution": "AMBIGUOUS -- more than one record bears this name, and choosing one would be choosing a winner (the owner's ruling of 5 August)",
+     "candidates": [
+      "minas morgul",
+      "morgul"
+     ],
+     "candidate_kinds": [
+      "place",
+      "realm"
+     ]
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "the ram of Minas Morgul, 'a hundred feet in length', hauled by great beasts",
+   "manner": [],
+   "when": "Mar 15, 3019",
+   "cite": "LotR V.4 for the ram, undated in the narrative. LotR App B [C] dates the EVENT and never names it — '15 In the early hours the Witch-king breaks the Gates of the City'.",
+   "conf": "C",
+   "conf_basis": "the marker the artifact record's own citation carries; read, never chosen",
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_red_arrow_the_beacons#0",
+   "artifact": "af_the_red_arrow_the_beacons",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Red Arrow & the beacons",
+   "seq": 0,
+   "held_by": [
+    {
+     "id": "theoden",
+     "name": "Théoden",
+     "matched": "Théoden",
+     "matched_by": "full name",
+     "kind": "person",
+     "resolves_in": "arda_genealogy:persons",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named": [
+    {
+     "id": "dunharrow",
+     "name": "Dunharrow",
+     "matched": "Dunharrow",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "gondor",
+     "name": "Gondor",
+     "matched": "Gondor",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "Hirgon of Gondor to Théoden at Dunharrow",
+   "manner": [],
+   "when": "9 March 3019 (the evening Théoden came to Dunharrow; the Mark rides next day)",
+   "cite": "LotR V.3",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "resolved",
+   "searched_and_empty_note": null
+  },
+  {
+   "id": "af_the_red_arrow_the_beacons#1",
+   "artifact": "af_the_red_arrow_the_beacons",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Red Arrow & the beacons",
+   "seq": 1,
+   "held_by": [],
+   "place_or_realm_named": [],
+   "place_or_realm_named_note": null,
+   "holder_prose": "Hirgon slain riding back; the arrow found by the fallen",
+   "manner": [
+    "found"
+   ],
+   "when": "Mar 15?",
+   "cite": "LotR V.5",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "searched and empty",
+   "searched_and_empty_note": "the tenure's own prose was matched, as whole words through ardatext.words_of, against every one of the 1708 names the archive's entity index holds over 7 defining collections, and none of them stands in it. THE ARCHIVE WAS ASKED AND HOLDS NO SUCH RECORD -- this is not a statement about the corpus, and no search of the corpus was run for it here."
+  },
+  {
+   "id": "af_the_red_arrow_the_beacons#2",
+   "artifact": "af_the_red_arrow_the_beacons",
+   "artifact_resolves_in": "arda_ownership:artifacts",
+   "artifact_name": "The Red Arrow & the beacons",
+   "seq": 2,
+   "held_by": [],
+   "place_or_realm_named": [
+    {
+     "id": "amon din",
+     "name": "Amon Din",
+     "matched": "Amon Din",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    },
+    {
+     "id": "halifirien",
+     "name": "Halifirien",
+     "matched": "Halifirien",
+     "matched_by": "full name",
+     "kind": "place",
+     "resolves_in": "arda_gazetteer:places",
+     "resolution": "one record bears this name"
+    }
+   ],
+   "place_or_realm_named_note": "a place or realm standing in this tenure's prose. This file does not decide whether it is WHERE the artifact lay or WHOSE realm held it; both readings are live and the corpus is not asked here.",
+   "holder_prose": "the beacons: Amon Dîn to Halifirien, burning westward",
+   "manner": [],
+   "when": "Mar 7-8, 3019",
+   "cite": "LotR V.1",
+   "conf": null,
+   "conf_basis": null,
+   "resolution": "place or realm only",
+   "searched_and_empty_note": null
+  }
+ ],
+ "ambiguous_names_what": "Every name that matched more than one record, with its candidates. Published so the ambiguity is countable rather than invisible.",
+ "ambiguous_names": [
+  {
+   "artifact": "af_the_silmarils",
+   "seq": 2,
+   "matched": "Beren",
+   "candidates": [
+    "beren",
+    "beren_s"
+   ]
+  },
+  {
+   "artifact": "af_the_silmarils",
+   "seq": 3,
+   "matched": "thingol",
+   "candidates": [
+    "elwe",
+    "thingol"
+   ]
+  },
+  {
+   "artifact": "af_the_one_ring",
+   "seq": 4,
+   "matched": "Sméagol (Gollum)",
+   "candidates": [
+    "smeagol",
+    "gollum"
+   ]
+  },
+  {
+   "artifact": "af_the_one_ring",
+   "seq": 6,
+   "matched": "frodo",
+   "candidates": [
+    "frodo",
+    "frodog"
+   ]
+  },
+  {
+   "artifact": "af_the_one_ring",
+   "seq": 6,
+   "matched": "samwise",
+   "candidates": [
+    "sam",
+    "samwise"
+   ]
+  },
+  {
+   "artifact": "af_the_three_rings_narya_nenya_vilya",
+   "seq": 3,
+   "matched": "Gandalf",
+   "candidates": [
+    "olorin",
+    "gandalf"
+   ]
+  },
+  {
+   "artifact": "af_the_seven_and_the_nine",
+   "seq": 3,
+   "matched": "Dol Guldur",
+   "candidates": [
+    "dol guldur",
+    "dolguldur"
+   ]
+  },
+  {
+   "artifact": "af_narsil_anduril",
+   "seq": 1,
+   "matched": "elendil",
+   "candidates": [
+    "tarelendil",
+    "elendil"
+   ]
+  },
+  {
+   "artifact": "af_narsil_anduril",
+   "seq": 2,
+   "matched": "elendil",
+   "candidates": [
+    "tarelendil",
+    "elendil"
+   ]
+  },
+  {
+   "artifact": "af_narsil_anduril",
+   "seq": 4,
+   "matched": "aragorn",
+   "candidates": [
+    "aragorn1",
+    "aragorn"
+   ]
+  },
+  {
+   "artifact": "af_narsil_anduril",
+   "seq": 4,
+   "matched": "Barahir",
+   "candidates": [
+    "barahir",
+    "barahir_s",
+    "barahir_f"
+   ]
+  },
+  {
+   "artifact": "af_the_ring_of_barahir",
+   "seq": 1,
+   "matched": "Barahir",
+   "candidates": [
+    "barahir",
+    "barahir_s",
+    "barahir_f"
+   ]
+  },
+  {
+   "artifact": "af_the_ring_of_barahir",
+   "seq": 2,
+   "matched": "Beren",
+   "candidates": [
+    "beren",
+    "beren_s"
+   ]
+  },
+  {
+   "artifact": "af_the_ring_of_barahir",
+   "seq": 3,
+   "matched": "Beren",
+   "candidates": [
+    "beren",
+    "beren_s"
+   ]
+  },
+  {
+   "artifact": "af_the_ring_of_barahir",
+   "seq": 5,
+   "matched": "elendil",
+   "candidates": [
+    "tarelendil",
+    "elendil"
+   ]
+  },
+  {
+   "artifact": "af_the_ring_of_barahir",
+   "seq": 7,
+   "matched": "aragorn",
+   "candidates": [
+    "aragorn1",
+    "aragorn"
+   ]
+  },
+  {
+   "artifact": "af_the_palantiri",
+   "seq": 5,
+   "matched": "denethor",
+   "candidates": [
+    "denethor1",
+    "denethor2",
+    "boromir",
+    "faramir",
+    "denethor"
+   ]
+  },
+  {
+   "artifact": "af_the_white_tree_line",
+   "seq": 1,
+   "matched": "Celeborn",
+   "candidates": [
+    "celeborn",
+    "celeborn_tree"
+   ]
+  },
+  {
+   "artifact": "af_the_white_tree_line",
+   "seq": 2,
+   "matched": "nimloth",
+   "candidates": [
+    "nimloth_e",
+    "nimloth_tree"
+   ]
+  },
+  {
+   "artifact": "af_the_arkenstone",
+   "seq": 3,
+   "matched": "thorin",
+   "candidates": [
+    "thorin1",
+    "thorin",
+    "thorin3"
+   ]
+  },
+  {
+   "artifact": "af_sting",
+   "seq": 3,
+   "matched": "frodo",
+   "candidates": [
+    "frodo",
+    "frodog"
+   ]
+  },
+  {
+   "artifact": "af_glamdring_orcrist",
+   "seq": 0,
+   "matched": "Turgon",
+   "candidates": [
+    "turgon",
+    "turgon_s"
+   ]
+  },
+  {
+   "artifact": "af_glamdring_orcrist",
+   "seq": 3,
+   "matched": "Gandalf",
+   "candidates": [
+    "olorin",
+    "gandalf"
+   ]
+  },
+  {
+   "artifact": "af_glamdring_orcrist",
+   "seq": 3,
+   "matched": "Moria",
+   "candidates": [
+    "khazaddum",
+    "moria west gate"
+   ]
+  },
+  {
+   "artifact": "af_glamdring_orcrist",
+   "seq": 3,
+   "matched": "thorin",
+   "candidates": [
+    "thorin1",
+    "thorin",
+    "thorin3"
+   ]
+  },
+  {
+   "artifact": "af_anglachel_gurthang",
+   "seq": 0,
+   "matched": "thingol",
+   "candidates": [
+    "elwe",
+    "thingol"
+   ]
+  },
+  {
+   "artifact": "af_anglachel_gurthang",
+   "seq": 2,
+   "matched": "turin",
+   "candidates": [
+    "turin",
+    "turin1",
+    "turin2"
+   ]
+  },
+  {
+   "artifact": "af_anglachel_gurthang",
+   "seq": 3,
+   "matched": "turin",
+   "candidates": [
+    "turin",
+    "turin1",
+    "turin2"
+   ]
+  },
+  {
+   "artifact": "af_the_dragon_helm_of_dor_lomin",
+   "seq": 2,
+   "matched": "hurin",
+   "candidates": [
+    "hurin",
+    "turin",
+    "hurin_e",
+    "hurin1",
+    "hurin2"
+   ]
+  },
+  {
+   "artifact": "af_the_dragon_helm_of_dor_lomin",
+   "seq": 2,
+   "matched": "turin",
+   "candidates": [
+    "turin",
+    "turin1",
+    "turin2"
+   ]
+  },
+  {
+   "artifact": "af_the_dragon_helm_of_dor_lomin",
+   "seq": 3,
+   "matched": "turin",
+   "candidates": [
+    "turin",
+    "turin1",
+    "turin2"
+   ]
+  },
+  {
+   "artifact": "af_the_nauglamir",
+   "seq": 1,
+   "matched": "hurin",
+   "candidates": [
+    "hurin",
+    "turin",
+    "hurin_e",
+    "hurin1",
+    "hurin2"
+   ]
+  },
+  {
+   "artifact": "af_the_nauglamir",
+   "seq": 1,
+   "matched": "thingol",
+   "candidates": [
+    "elwe",
+    "thingol"
+   ]
+  },
+  {
+   "artifact": "af_the_nauglamir",
+   "seq": 2,
+   "matched": "thingol",
+   "candidates": [
+    "elwe",
+    "thingol"
+   ]
+  },
+  {
+   "artifact": "af_the_elessar",
+   "seq": 2,
+   "matched": "aragorn",
+   "candidates": [
+    "aragorn1",
+    "aragorn"
+   ]
+  },
+  {
+   "artifact": "af_the_elessar",
+   "seq": 2,
+   "matched": "Lórien",
+   "candidates": [
+    "irmo",
+    "lorien"
+   ]
+  },
+  {
+   "artifact": "af_the_elessar",
+   "seq": 3,
+   "matched": "aragorn",
+   "candidates": [
+    "aragorn1",
+    "aragorn"
+   ]
+  },
+  {
+   "artifact": "af_the_phial_of_galadriel",
+   "seq": 0,
+   "matched": "frodo",
+   "candidates": [
+    "frodo",
+    "frodog"
+   ]
+  },
+  {
+   "artifact": "af_the_horn_of_the_mark",
+   "seq": 2,
+   "matched": "meriadoc",
+   "candidates": [
+    "merry",
+    "meriadoc"
+   ]
+  },
+  {
+   "artifact": "af_the_mithril_coat",
+   "seq": 0,
+   "matched": "thorin",
+   "candidates": [
+    "thorin1",
+    "thorin",
+    "thorin3"
+   ]
+  },
+  {
+   "artifact": "af_the_mithril_coat",
+   "seq": 1,
+   "matched": "frodo",
+   "candidates": [
+    "frodo",
+    "frodog"
+   ]
+  },
+  {
+   "artifact": "af_the_mithril_coat",
+   "seq": 2,
+   "matched": "frodo",
+   "candidates": [
+    "frodo",
+    "frodog"
+   ]
+  },
+  {
+   "artifact": "af_the_mithril_coat",
+   "seq": 2,
+   "matched": "Moria",
+   "candidates": [
+    "khazaddum",
+    "moria west gate"
+   ]
+  },
+  {
+   "artifact": "af_grond_twice",
+   "seq": 1,
+   "matched": "Minas Morgul",
+   "candidates": [
+    "minas morgul",
+    "morgul"
+   ]
+  }
+ ],
+ "prose_stoplist": [
+  "company",
+  "hall of fire",
+  "hedge",
+  "men",
+  "shadow",
+  "the bridge",
+  "the crossings",
+  "the crossroads",
+  "the doors",
+  "the east",
+  "the field",
+  "the ford",
+  "the fords",
+  "the gate",
+  "the gates",
+  "the golden hall",
+  "the great river",
+  "the hall",
+  "the halls",
+  "the hill",
+  "the house",
+  "the last bridge",
+  "the mark",
+  "the moon",
+  "the mountain",
+  "the mountains",
+  "the north",
+  "the old forest",
+  "the one ring",
+  "the pass",
+  "the ring",
+  "the rings",
+  "the road",
+  "the sea",
+  "the shire",
+  "the south",
+  "the stair",
+  "the sun",
+  "the tower",
+  "the wall",
+  "the water",
+  "the west",
+  "the white tower",
+  "the world",
+  "walking"
+ ],
+ "prose_stoplist_why": "names struck from the PROSE-MATCHING vocabulary because they are ordinary English and would match a sentence that names nothing. The records keep their names; only reading them out of prose is refused. Published because a stoplist nobody can see is a silent exemption."
+}

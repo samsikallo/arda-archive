@@ -1,0 +1,3833 @@
+{
+ "what": "THE EDGE FROM A CANON ENTITY TO THE ADAPTATION RECORD THAT TOUCHES IT, and from an adaptation to the text it was made from. §VI `relationships/adaptation_mapping/`, which the coverage table records as MISSING because nothing mapped a canon entity to its adaptation.",
+ "this_file_does_not_build_the_adaptation_layer": "site/arda_adaptations.json and site/arda_fanon.json hold it -- 76 works, 14 deviations each carrying evidence on both sides, 11 fan claims each with its corpus verdict measured by map/ardatext.py. This file adds EDGES and nothing else, and every edge points at a row those files already hold, by that row's own id.",
+ "tier_is_not_an_adaptation_flag": "NOTHING HERE IS DERIVED FROM `tier`. t4 means NO INDEPENDENT AUTHORITY -- a wiki, a companion, a guide. It does not mean ADAPTATION and it does not mean FANON, and synthesising a layer out of it would put Robert Foster's Complete Guide in the same bucket as a Peter Jackson film. The layer is a PATH: §IX audits 4 and 5 hunt for adaptation and fanon facts sitting in canonical records, and an audit about a row in the wrong FILE cannot be satisfied by a FLAG on a row still in the wrong file.",
+ "the_edge_kinds": {
+  "deviation names entity": "a named divergence whose own prose names a canon entity. The claim is that the DEVIATION RECORD names it -- `matched_in` says which field and `whose_words` says whose wording that field is. The edge does not restate what the deviation says and adds no reading of its own.",
+  "fanon claim names entity": "the same, over arda_fanon.json's claims.",
+  "work adapted from the text": "a work's own `based_on`, resolved to a TIER-1 corpus volume by complete word-prefix -- the route site/arda_place_ids.json already uses and publishes.",
+  "work adapted from an adaptation": "a `based_on` that names another work in the same file. The Hobbit trilogy and An Unexpected Journey are both films, and an edge from one to Tolkien's text would be false."
+ },
+ "why_conf_is_EXT_and_no_row_carries_a_tier": "the tiers rank claims about ARDA and an adaptation makes a claim about a FILM. Nothing in this file is evidence about Middle-earth. Both source files declare the same thing in their own words.",
+ "not_resolved_is_published_with_its_reason": "`The Two Towers` names no tier-1 volume in this corpus, because the corpus holds The Lord of the Rings as ONE book. That is a fact about the shelf and not a failure, and it is published rather than matched loosely -- a looser match would be this file choosing which book a film adapts.",
+ "the_match": {
+  "vocabulary": "map/ardaentity.py, from the collections that DEFINE entity ids.",
+  "comparison": "whole words through ardatext.words_of, the archive's ONE matcher.",
+  "fields": {
+   "adaptation_side.shows": "what the adaptation shows -- this archive's own summary",
+   "adaptation_side.corroboration_anchor": "the corroborating source's wording, carried with its hand and licence in arda_adaptations.json",
+   "text_side.note": "this archive's note on what the text does",
+   "text_side.quote_of_the_corpus": "Tolkien's own words, verified by map/ardatext.py when arda_adaptations.json was built",
+   "claim": "the belief, in this archive's own words",
+   "ancestry": "where the belief is recorded to have come from"
+  },
+  "fields_are_named_one_at_a_time": "a walk of the record would sweep in source_url, licence_as_stated and capture_sha256, and a name matched inside a URL is not a name.",
+  "containment": "where one matched name is inside another, only the longer stands.",
+  "ambiguity": "published with every candidate and no winner -- the owner's ruling of 5 August."
+ },
+ "mapping_stoplist": [
+  "black",
+  "book",
+  "film",
+  "films",
+  "ford",
+  "fords",
+  "grey",
+  "hall",
+  "master",
+  "north",
+  "rider",
+  "riders",
+  "scene",
+  "song",
+  "south",
+  "story",
+  "white",
+  "wings"
+ ],
+ "mapping_stoplist_why": "names that are also ordinary words of film criticism. Measured by running the match with the list empty and reading what it caught.",
+ "built_from": [
+  "site/arda_adaptations.json",
+  "site/arda_fanon.json",
+  "site/arda_corpusmap.json",
+  "map/ardaentity.py",
+  "map/ardatext.py"
+ ],
+ "counts": {
+  "edges": 110,
+  "edges_to_a_canon_entity": 53,
+  "edges_work_to_source": 57,
+  "by_kind": {
+   "deviation names entity": 43,
+   "fanon claim names entity": 10,
+   "work adapted from the text": 43,
+   "work adapted from an adaptation": 14
+  },
+  "by_medium": {
+   "film": 40,
+   "television": 9,
+   "video game": 29,
+   "tabletop": 9,
+   "music": 4,
+   "print": 7,
+   "radio": 1,
+   "internet": 1
+  },
+  "distinct_canon_entities_reached": 26,
+  "deviations_reaching_an_entity": 14,
+  "fanon_claims_reaching_an_entity": 7,
+  "ambiguous": 24,
+  "based_on_not_resolved": 34,
+  "population": {
+   "works": 76,
+   "deviations": 14,
+   "fanon_claims": 11,
+   "tier1_corpus_volumes": 36,
+   "entity_index_names": 1708,
+   "entity_index_entities": 1122
+  }
+ },
+ "edges_what": "One row per edge. `entity` resolves in the collection named beside it; `adaptation_record` names the dataset, the collection and the row id it points at. A work-to-source edge carries no entity and says so with a null.",
+ "edges": [
+  {
+   "kind": "deviation names entity",
+   "entity": "arwen",
+   "entity_name": "Arwen Undómiel",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_genealogy:persons",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-fotr-arwen-ford",
+    "work": "The Lord of the Rings: The Fellowship of the Ring",
+    "medium": "film",
+    "year": 2001,
+    "deviation_kind": "substitution"
+   },
+   "matched": "arwen",
+   "matched_by": "one word of a person's name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "ford of bruinen",
+   "entity_name": "Ford of Bruinen",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-fotr-arwen-ford",
+    "work": "The Lord of the Rings: The Fellowship of the Ring",
+    "medium": "film",
+    "year": 2001,
+    "deviation_kind": "substitution"
+   },
+   "matched": "Ford of Bruinen",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "elrond",
+   "entity_name": "Elrond",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_genealogy:persons",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-fotr-arwen-ford",
+    "work": "The Lord of the Rings: The Fellowship of the Ring",
+    "medium": "film",
+    "year": 2001,
+    "deviation_kind": "substitution"
+   },
+   "matched": "Elrond",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.corroboration_anchor",
+   "whose_words": "the corroborating source's wording, carried with its hand and licence in arda_adaptations.json",
+   "basis": "the adaptation record's own adaptation_side.corroboration_anchor names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "arwen",
+   "entity_name": "Arwen Undómiel",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_genealogy:persons",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-fotr-arwen-ford",
+    "work": "The Lord of the Rings: The Fellowship of the Ring",
+    "medium": "film",
+    "year": 2001,
+    "deviation_kind": "substitution"
+   },
+   "matched": "arwen",
+   "matched_by": "one word of a person's name",
+   "matched_in": "text_side.note",
+   "whose_words": "this archive's note on what the text does",
+   "basis": "the adaptation record's own text_side.note names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "mordor",
+   "entity_name": "Mordor",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-fotr-arwen-ford",
+    "work": "The Lord of the Rings: The Fellowship of the Ring",
+    "medium": "film",
+    "year": 2001,
+    "deviation_kind": "substitution"
+   },
+   "matched": "Mordor",
+   "matched_by": "full name",
+   "matched_in": "text_side.quote_of_the_corpus",
+   "whose_words": "Tolkien's own words, verified by map/ardatext.py when arda_adaptations.json was built",
+   "basis": "the adaptation record's own text_side.quote_of_the_corpus names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "barrow downs",
+   "entity_name": "Barrow-downs",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-fotr-bombadil",
+    "work": "The Lord of the Rings: The Fellowship of the Ring",
+    "medium": "film",
+    "year": 2001,
+    "deviation_kind": "omission"
+   },
+   "matched": "Barrow-downs",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "goldberry",
+   "entity_name": "Goldberry",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_epithets:(root)",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-fotr-bombadil",
+    "work": "The Lord of the Rings: The Fellowship of the Ring",
+    "medium": "film",
+    "year": 2001,
+    "deviation_kind": "omission"
+   },
+   "matched": "Goldberry",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "bombadil",
+   "entity_name": "Tom Bombadil",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_epithets:(root)",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-fotr-bombadil",
+    "work": "The Lord of the Rings: The Fellowship of the Ring",
+    "medium": "film",
+    "year": 2001,
+    "deviation_kind": "omission"
+   },
+   "matched": "Tom Bombadil",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "bombadil",
+   "entity_name": "Tom Bombadil",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_epithets:(root)",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-fotr-bombadil",
+    "work": "The Lord of the Rings: The Fellowship of the Ring",
+    "medium": "film",
+    "year": 2001,
+    "deviation_kind": "omission"
+   },
+   "matched": "bombadil",
+   "matched_by": "one word of a person's name",
+   "matched_in": "adaptation_side.corroboration_anchor",
+   "whose_words": "the corroborating source's wording, carried with its hand and licence in arda_adaptations.json",
+   "basis": "the adaptation record's own adaptation_side.corroboration_anchor names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "bombadil",
+   "entity_name": "Tom Bombadil",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_epithets:(root)",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-fotr-bombadil",
+    "work": "The Lord of the Rings: The Fellowship of the Ring",
+    "medium": "film",
+    "year": 2001,
+    "deviation_kind": "omission"
+   },
+   "matched": "Tom Bombadil",
+   "matched_by": "full name",
+   "matched_in": "text_side.quote_of_the_corpus",
+   "whose_words": "Tolkien's own words, verified by map/ardatext.py when arda_adaptations.json was built",
+   "basis": "the adaptation record's own text_side.quote_of_the_corpus names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "osgiliath",
+   "entity_name": "Osgiliath",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-ttt-faramir-osgiliath",
+    "work": "The Lord of the Rings: The Two Towers",
+    "medium": "film",
+    "year": 2002,
+    "deviation_kind": "reversal"
+   },
+   "matched": "Osgiliath",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "gondor",
+   "entity_name": "Gondor",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-ttt-faramir-osgiliath",
+    "work": "The Lord of the Rings: The Two Towers",
+    "medium": "film",
+    "year": 2002,
+    "deviation_kind": "reversal"
+   },
+   "matched": "Gondor",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.corroboration_anchor",
+   "whose_words": "the corroborating source's wording, carried with its hand and licence in arda_adaptations.json",
+   "basis": "the adaptation record's own adaptation_side.corroboration_anchor names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "helm s deep",
+   "entity_name": "Helm's Deep",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-ttt-hornburg",
+    "work": "The Lord of the Rings: The Two Towers",
+    "medium": "film",
+    "year": 2002,
+    "deviation_kind": "addition"
+   },
+   "matched": "Helm's Deep",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "helm s deep",
+   "entity_name": "Helm's Deep",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-ttt-hornburg",
+    "work": "The Lord of the Rings: The Two Towers",
+    "medium": "film",
+    "year": 2002,
+    "deviation_kind": "addition"
+   },
+   "matched": "Hornburg",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "helm s deep",
+   "entity_name": "Helm's Deep",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-ttt-hornburg",
+    "work": "The Lord of the Rings: The Two Towers",
+    "medium": "film",
+    "year": 2002,
+    "deviation_kind": "addition"
+   },
+   "matched": "Hornburg",
+   "matched_by": "full name",
+   "matched_in": "text_side.note",
+   "whose_words": "this archive's note on what the text does",
+   "basis": "the adaptation record's own text_side.note names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "huorns",
+   "entity_name": "Huorns",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_nature:(root)",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-ttt-hornburg",
+    "work": "The Lord of the Rings: The Two Towers",
+    "medium": "film",
+    "year": 2002,
+    "deviation_kind": "addition"
+   },
+   "matched": "Huorns",
+   "matched_by": "full name",
+   "matched_in": "text_side.note",
+   "whose_words": "this archive's note on what the text does",
+   "basis": "the adaptation record's own text_side.note names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "helm s deep",
+   "entity_name": "Helm's Deep",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-ttt-hornburg",
+    "work": "The Lord of the Rings: The Two Towers",
+    "medium": "film",
+    "year": 2002,
+    "deviation_kind": "addition"
+   },
+   "matched": "Helm's Deep",
+   "matched_by": "full name",
+   "matched_in": "text_side.quote_of_the_corpus",
+   "whose_words": "Tolkien's own words, verified by map/ardatext.py when arda_adaptations.json was built",
+   "basis": "the adaptation record's own text_side.quote_of_the_corpus names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "westfold",
+   "entity_name": "Westfold",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-ttt-hornburg",
+    "work": "The Lord of the Rings: The Two Towers",
+    "medium": "film",
+    "year": 2002,
+    "deviation_kind": "addition"
+   },
+   "matched": "Westfold",
+   "matched_by": "full name",
+   "matched_in": "text_side.quote_of_the_corpus",
+   "whose_words": "Tolkien's own words, verified by map/ardatext.py when arda_adaptations.json was built",
+   "basis": "the adaptation record's own text_side.quote_of_the_corpus names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "gondor",
+   "entity_name": "Gondor",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-rotk-denethor",
+    "work": "The Lord of the Rings: The Return of the King",
+    "medium": "film",
+    "year": 2003,
+    "deviation_kind": "alteration"
+   },
+   "matched": "Gondor",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.corroboration_anchor",
+   "whose_words": "the corroborating source's wording, carried with its hand and licence in arda_adaptations.json",
+   "basis": "the adaptation record's own adaptation_side.corroboration_anchor names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "rohan",
+   "entity_name": "Rohan",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-rotk-denethor",
+    "work": "The Lord of the Rings: The Return of the King",
+    "medium": "film",
+    "year": 2003,
+    "deviation_kind": "alteration"
+   },
+   "matched": "Rohan",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.corroboration_anchor",
+   "whose_words": "the corroborating source's wording, carried with its hand and licence in arda_adaptations.json",
+   "basis": "the adaptation record's own adaptation_side.corroboration_anchor names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "rohan",
+   "entity_name": "Rohan",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-rotk-witchking-staff",
+    "work": "The Lord of the Rings: The Return of the King",
+    "medium": "film",
+    "year": 2003,
+    "deviation_kind": "addition"
+   },
+   "matched": "Rohan",
+   "matched_by": "full name",
+   "matched_in": "text_side.note",
+   "whose_words": "this archive's note on what the text does",
+   "basis": "the adaptation record's own text_side.note names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "bywater",
+   "entity_name": "Bywater",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-rotk-scouring",
+    "work": "The Lord of the Rings: The Return of the King",
+    "medium": "film",
+    "year": 2003,
+    "deviation_kind": "omission"
+   },
+   "matched": "Bywater",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "galadriel",
+   "entity_name": "Galadriel",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_genealogy:persons",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-rotk-scouring",
+    "work": "The Lord of the Rings: The Return of the King",
+    "medium": "film",
+    "year": 2003,
+    "deviation_kind": "omission"
+   },
+   "matched": "Galadriel",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "bywater",
+   "entity_name": "Bywater",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-rotk-scouring",
+    "work": "The Lord of the Rings: The Return of the King",
+    "medium": "film",
+    "year": 2003,
+    "deviation_kind": "omission"
+   },
+   "matched": "Bywater",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.corroboration_anchor",
+   "whose_words": "the corroborating source's wording, carried with its hand and licence in arda_adaptations.json",
+   "basis": "the adaptation record's own adaptation_side.corroboration_anchor names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "mallorn",
+   "entity_name": "mallorn",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_nature:(root)",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "hobbit-films-tauriel",
+    "work": "The Hobbit (film series)",
+    "medium": "film",
+    "year": 2013,
+    "deviation_kind": "invented character"
+   },
+   "matched": "mallorn",
+   "matched_by": "full name",
+   "matched_in": "text_side.note",
+   "whose_words": "this archive's note on what the text does",
+   "basis": "the adaptation record's own text_side.note names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "dimrill dale",
+   "entity_name": "Dimrill Dale",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "hobbit-films-azog",
+    "work": "The Hobbit (film series)",
+    "medium": "film",
+    "year": 2012,
+    "deviation_kind": "reversal"
+   },
+   "matched": "Azanulbizar",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "dimrill dale",
+   "entity_name": "Dimrill Dale",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "hobbit-films-azog",
+    "work": "The Hobbit (film series)",
+    "medium": "film",
+    "year": 2012,
+    "deviation_kind": "reversal"
+   },
+   "matched": "Azanulbizar",
+   "matched_by": "full name",
+   "matched_in": "text_side.note",
+   "whose_words": "this archive's note on what the text does",
+   "basis": "the adaptation record's own text_side.note names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "dain2",
+   "entity_name": "Dáin II Ironfoot",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_genealogy:persons",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "hobbit-films-azog",
+    "work": "The Hobbit (film series)",
+    "medium": "film",
+    "year": 2012,
+    "deviation_kind": "reversal"
+   },
+   "matched": "ironfoot",
+   "matched_by": "one word of a person's name",
+   "matched_in": "text_side.note",
+   "whose_words": "this archive's note on what the text does",
+   "basis": "the adaptation record's own text_side.note names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "sauron",
+   "entity_name": "Sauron",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_ainur:(root)",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "rop-halbrand",
+    "work": "The Lord of the Rings: The Rings of Power",
+    "medium": "television",
+    "year": 2022,
+    "deviation_kind": "invented character"
+   },
+   "matched": "Sauron",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "sauron",
+   "entity_name": "Sauron",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_ainur:(root)",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "rop-halbrand",
+    "work": "The Lord of the Rings: The Rings of Power",
+    "medium": "television",
+    "year": 2022,
+    "deviation_kind": "invented character"
+   },
+   "matched": "Annatar",
+   "matched_by": "full name",
+   "matched_in": "text_side.note",
+   "whose_words": "this archive's note on what the text does",
+   "basis": "the adaptation record's own text_side.note names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "sauron",
+   "entity_name": "Sauron",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_ainur:(root)",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "rop-halbrand",
+    "work": "The Lord of the Rings: The Rings of Power",
+    "medium": "television",
+    "year": 2022,
+    "deviation_kind": "invented character"
+   },
+   "matched": "Sauron",
+   "matched_by": "full name",
+   "matched_in": "text_side.note",
+   "whose_words": "this archive's note on what the text does",
+   "basis": "the adaptation record's own text_side.note names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "celebrimbor",
+   "entity_name": "Celebrimbor",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_genealogy:persons",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "rop-celebrimbor",
+    "work": "The Lord of the Rings: The Rings of Power",
+    "medium": "television",
+    "year": 2022,
+    "deviation_kind": "alteration"
+   },
+   "matched": "Celebrimbor",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "celebrimbor",
+   "entity_name": "Celebrimbor",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_genealogy:persons",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "rop-celebrimbor",
+    "work": "The Lord of the Rings: The Rings of Power",
+    "medium": "television",
+    "year": 2022,
+    "deviation_kind": "alteration"
+   },
+   "matched": "Celebrimbor",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.corroboration_anchor",
+   "whose_words": "the corroborating source's wording, carried with its hand and licence in arda_adaptations.json",
+   "basis": "the adaptation record's own adaptation_side.corroboration_anchor names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "celebrimbor",
+   "entity_name": "Celebrimbor",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_genealogy:persons",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "rop-celebrimbor",
+    "work": "The Lord of the Rings: The Rings of Power",
+    "medium": "television",
+    "year": 2022,
+    "deviation_kind": "alteration"
+   },
+   "matched": "Celebrimbor",
+   "matched_by": "full name",
+   "matched_in": "text_side.quote_of_the_corpus",
+   "whose_words": "Tolkien's own words, verified by map/ardatext.py when arda_adaptations.json was built",
+   "basis": "the adaptation record's own text_side.quote_of_the_corpus names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "eregion",
+   "entity_name": "Eregion",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "rop-celebrimbor",
+    "work": "The Lord of the Rings: The Rings of Power",
+    "medium": "television",
+    "year": 2022,
+    "deviation_kind": "alteration"
+   },
+   "matched": "Eregion",
+   "matched_by": "full name",
+   "matched_in": "text_side.quote_of_the_corpus",
+   "whose_words": "Tolkien's own words, verified by map/ardatext.py when arda_adaptations.json was built",
+   "basis": "the adaptation record's own text_side.quote_of_the_corpus names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "celebrimbor",
+   "entity_name": "Celebrimbor",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_genealogy:persons",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "shadow-of-mordor-celebrimbor",
+    "work": "Middle-earth: Shadow of Mordor",
+    "medium": "video game",
+    "year": 2014,
+    "deviation_kind": "reversal"
+   },
+   "matched": "Celebrimbor",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "sauron",
+   "entity_name": "Sauron",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_ainur:(root)",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "shadow-of-mordor-celebrimbor",
+    "work": "Middle-earth: Shadow of Mordor",
+    "medium": "video game",
+    "year": 2014,
+    "deviation_kind": "reversal"
+   },
+   "matched": "Sauron",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "elrond",
+   "entity_name": "Elrond",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_genealogy:persons",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "shadow-of-mordor-celebrimbor",
+    "work": "Middle-earth: Shadow of Mordor",
+    "medium": "video game",
+    "year": 2014,
+    "deviation_kind": "reversal"
+   },
+   "matched": "Elrond",
+   "matched_by": "full name",
+   "matched_in": "text_side.note",
+   "whose_words": "this archive's note on what the text does",
+   "basis": "the adaptation record's own text_side.note names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "sauron",
+   "entity_name": "Sauron",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_ainur:(root)",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "shadow-of-mordor-celebrimbor",
+    "work": "Middle-earth: Shadow of Mordor",
+    "medium": "video game",
+    "year": 2014,
+    "deviation_kind": "reversal"
+   },
+   "matched": "Sauron",
+   "matched_by": "full name",
+   "matched_in": "text_side.note",
+   "whose_words": "this archive's note on what the text does",
+   "basis": "the adaptation record's own text_side.note names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "celebrimbor",
+   "entity_name": "Celebrimbor",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_genealogy:persons",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "shadow-of-mordor-celebrimbor",
+    "work": "Middle-earth: Shadow of Mordor",
+    "medium": "video game",
+    "year": 2014,
+    "deviation_kind": "reversal"
+   },
+   "matched": "Celebrimbor",
+   "matched_by": "full name",
+   "matched_in": "text_side.quote_of_the_corpus",
+   "whose_words": "Tolkien's own words, verified by map/ardatext.py when arda_adaptations.json was built",
+   "basis": "the adaptation record's own text_side.quote_of_the_corpus names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "valaraukar",
+   "entity_name": "Valaraukar",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_ainur:(root)",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "merp-nazgul-names",
+    "work": "Middle-earth Role Playing",
+    "medium": "tabletop",
+    "year": 1984,
+    "deviation_kind": "invented nomenclature"
+   },
+   "matched": "Balrogs",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "whose_words": "what the adaptation shows -- this archive's own summary",
+   "basis": "the adaptation record's own adaptation_side.shows names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "sauron",
+   "entity_name": "Sauron",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_ainur:(root)",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "merp-nazgul-names",
+    "work": "Middle-earth Role Playing",
+    "medium": "tabletop",
+    "year": 1984,
+    "deviation_kind": "invented nomenclature"
+   },
+   "matched": "Sauron",
+   "matched_by": "full name",
+   "matched_in": "text_side.quote_of_the_corpus",
+   "whose_words": "Tolkien's own words, verified by map/ardatext.py when arda_adaptations.json was built",
+   "basis": "the adaptation record's own text_side.quote_of_the_corpus names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "deviation names entity",
+   "entity": "arda",
+   "entity_name": "Arda",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "bakshi-balrog-wings",
+    "work": "The Lord of the Rings (1978 film)",
+    "medium": "film",
+    "year": 1978,
+    "deviation_kind": "interpretation"
+   },
+   "matched": "Arda",
+   "matched_by": "full name",
+   "matched_in": "text_side.note",
+   "whose_words": "this archive's note on what the text does",
+   "basis": "the adaptation record's own text_side.note names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "fanon claim names entity",
+   "entity": "arda",
+   "entity_name": "Arda",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_fanon.json",
+    "collection": "claims",
+    "id": "modern-military-ranks",
+    "verdict": null
+   },
+   "matched": "Arda",
+   "matched_by": "full name",
+   "matched_in": "ancestry",
+   "whose_words": "where the belief is recorded to have come from",
+   "basis": "the adaptation record's own ancestry names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "fanon claim names entity",
+   "entity": "valaraukar",
+   "entity_name": "Valaraukar",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_ainur:(root)",
+   "adaptation_record": {
+    "dataset": "arda_fanon.json",
+    "collection": "claims",
+    "id": "balrog-wings",
+    "verdict": null
+   },
+   "matched": "Balrogs",
+   "matched_by": "full name",
+   "matched_in": "claim",
+   "whose_words": "the belief, in this archive's own words",
+   "basis": "the adaptation record's own claim names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "fanon claim names entity",
+   "entity": "arda",
+   "entity_name": "Arda",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_fanon.json",
+    "collection": "claims",
+    "id": "balrog-wings",
+    "verdict": null
+   },
+   "matched": "Arda",
+   "matched_by": "full name",
+   "matched_in": "ancestry",
+   "whose_words": "where the belief is recorded to have come from",
+   "basis": "the adaptation record's own ancestry names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "fanon claim names entity",
+   "entity": "arwen",
+   "entity_name": "Arwen Undómiel",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_genealogy:persons",
+   "adaptation_record": {
+    "dataset": "arda_fanon.json",
+    "collection": "claims",
+    "id": "hadhafang",
+    "verdict": null
+   },
+   "matched": "arwen",
+   "matched_by": "one word of a person's name",
+   "matched_in": "claim",
+   "whose_words": "the belief, in this archive's own words",
+   "basis": "the adaptation record's own claim names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "fanon claim names entity",
+   "entity": "melkor",
+   "entity_name": "Melkor (Morgoth)",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_genealogy:persons",
+   "adaptation_record": {
+    "dataset": "arda_fanon.json",
+    "collection": "claims",
+    "id": "muar-balrog",
+    "verdict": null
+   },
+   "matched": "Morgoth",
+   "matched_by": "full name",
+   "matched_in": "claim",
+   "whose_words": "the belief, in this archive's own words",
+   "basis": "the adaptation record's own claim names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "fanon claim names entity",
+   "entity": "durins-bane",
+   "entity_name": "Durin's Bane",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_creatures:(root)",
+   "adaptation_record": {
+    "dataset": "arda_fanon.json",
+    "collection": "claims",
+    "id": "muar-balrog",
+    "verdict": null
+   },
+   "matched": "Durin's Bane",
+   "matched_by": "full name",
+   "matched_in": "ancestry",
+   "whose_words": "where the belief is recorded to have come from",
+   "basis": "the adaptation record's own ancestry names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "fanon claim names entity",
+   "entity": "gothmog",
+   "entity_name": "Gothmog",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_creatures:(root)",
+   "adaptation_record": {
+    "dataset": "arda_fanon.json",
+    "collection": "claims",
+    "id": "muar-balrog",
+    "verdict": null
+   },
+   "matched": "Gothmog",
+   "matched_by": "full name",
+   "matched_in": "ancestry",
+   "whose_words": "where the belief is recorded to have come from",
+   "basis": "the adaptation record's own ancestry names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "fanon claim names entity",
+   "entity": "valaraukar",
+   "entity_name": "Valaraukar",
+   "entity_kind": "person",
+   "entity_resolves_in": "arda_ainur:(root)",
+   "adaptation_record": {
+    "dataset": "arda_fanon.json",
+    "collection": "claims",
+    "id": "thaurlach-targoroth",
+    "verdict": null
+   },
+   "matched": "Balrogs",
+   "matched_by": "full name",
+   "matched_in": "claim",
+   "whose_words": "the belief, in this archive's own words",
+   "basis": "the adaptation record's own claim names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "fanon claim names entity",
+   "entity": "arda",
+   "entity_name": "Arda",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_fanon.json",
+    "collection": "claims",
+    "id": "new-notion-club-archives",
+    "verdict": null
+   },
+   "matched": "Arda",
+   "matched_by": "full name",
+   "matched_in": "claim",
+   "whose_words": "the belief, in this archive's own words",
+   "basis": "the adaptation record's own claim names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "fanon claim names entity",
+   "entity": "arda",
+   "entity_name": "Arda",
+   "entity_kind": "place",
+   "entity_resolves_in": "arda_gazetteer:places",
+   "adaptation_record": {
+    "dataset": "arda_fanon.json",
+    "collection": "claims",
+    "id": "tolkien-fan-fiction-corpus",
+    "verdict": null
+   },
+   "matched": "Arda",
+   "matched_by": "full name",
+   "matched_in": "ancestry",
+   "whose_words": "where the belief is recorded to have come from",
+   "basis": "the adaptation record's own ancestry names this entity. The edge does not restate what the record says and adds no reading of its own.",
+   "conf": "EXT",
+   "conf_basis": "a claim about an adaptation record, not about Arda. Both source files carry conf EXT on every row for the same reason."
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q5473",
+    "title": "Middle-Earth Role Playing",
+    "medium": "tabletop"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from an adaptation",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q131074",
+    "title": "The Lord of the Rings: The Return of the King",
+    "medium": "film"
+   },
+   "adapted_from": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q115285"
+   },
+   "based_on_as_written": "The Return of the King",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names another adaptation in this same file, resolved by exact. NOT an edge to Tolkien's text.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q190214",
+    "title": "The Lord of the Rings",
+    "medium": "film"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q263593",
+    "title": "The Lord of the Rings  — Original Soundtrack Recording",
+    "medium": "music"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q268133",
+    "title": "Symphony No. 1 \"The Lord of the Rings\"",
+    "medium": "music"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q293181",
+    "title": "Born of Hope",
+    "medium": "film"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q293219",
+    "title": "The Hunt for Gollum",
+    "medium": "film"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q372385",
+    "title": "The Lord of the Rings: The Third Age",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q378913",
+    "title": "The Lord of the Rings",
+    "medium": "film"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from an adaptation",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q393059",
+    "title": "Lego The Hobbit",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q80379"
+   },
+   "based_on_as_written": "The Hobbit: An Unexpected Journey",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names another adaptation in this same file, resolved by exact. NOT an edge to Tolkien's text.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from an adaptation",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q393059",
+    "title": "Lego The Hobbit",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q719915"
+   },
+   "based_on_as_written": "The Hobbit: The Desolation of Smaug",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names another adaptation in this same file, resolved by exact. NOT an edge to Tolkien's text.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q440060",
+    "title": "The Lord of the Rings: The Battle for Middle-earth",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q905691",
+    "title": "Lord of the Rings",
+    "medium": "music"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q1194246",
+    "title": "The Lord of the Rings: Conquest",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q1194258",
+    "title": "Lord of the Rings",
+    "medium": "tabletop"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from an adaptation",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q1194265",
+    "title": "Middle-Earth Strategy Battle Game",
+    "medium": "tabletop"
+   },
+   "adapted_from": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q74331"
+   },
+   "based_on_as_written": "The Hobbit trilogy",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names another adaptation in this same file, resolved by exact. NOT an edge to Tolkien's text.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q1194265",
+    "title": "Middle-Earth Strategy Battle Game",
+    "medium": "tabletop"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from an adaptation",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q1194265",
+    "title": "Middle-Earth Strategy Battle Game",
+    "medium": "tabletop"
+   },
+   "adapted_from": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q127367"
+   },
+   "based_on_as_written": "The Lord of the Rings: The Fellowship of the Ring",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names another adaptation in this same file, resolved by exact. NOT an edge to Tolkien's text.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q1194266",
+    "title": "The Lord of the Rings Roleplaying Game",
+    "medium": "tabletop"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q1440462",
+    "title": "The Lord of the Rings: War in the North",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q1613936",
+    "title": "Bored of the Rings",
+    "medium": "print"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q1754787",
+    "title": "The Lord of the Rings: The Battle for Middle-earth II: The Rise of the Witch-king",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q1996197",
+    "title": "The Lord of the Rings: The Battle for Middle-earth II",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q2028764",
+    "title": "The One Ring Roleplaying Game",
+    "medium": "tabletop"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q2082291",
+    "title": "Lego The Lord of the Rings",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q2157919",
+    "title": "The Lord of the Rings: Aragorn's Quest",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from an adaptation",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q2353071",
+    "title": "The Lord of the Rings: The Two Towers",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q127367"
+   },
+   "based_on_as_written": "The Lord of the Rings: The Fellowship of the Ring",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names another adaptation in this same file, resolved by exact. NOT an edge to Tolkien's text.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q2458718",
+    "title": "The Lord of the Rings: Tactics",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q3005035",
+    "title": "Tales from the Perilous Realm",
+    "medium": "print"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "The Adventures of Tom Bombadil and Other Verses from the Red Book.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Adventures of Tom Bombadil",
+   "matched_by": "complete word-prefix",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by complete word-prefix against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q3227048",
+    "title": "The Lord of the Rings",
+    "medium": "radio"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q3467448",
+    "title": "Guardians of Middle-earth",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q4189655",
+    "title": "Q4189655",
+    "medium": "print"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(A) The Silmarillion.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Silmarillion",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q4228990",
+    "title": "Q4228990",
+    "medium": "print"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q4373807",
+    "title": "The Last Ringbearer",
+    "medium": "print"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q6581169",
+    "title": "The Lord of the Rings: The Third Age",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q6680121",
+    "title": "The Lord of the Rings: Journey to Rivendell",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q7748465",
+    "title": "The Lord of the Rings",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q9318176",
+    "title": "Pár Pařmenů",
+    "medium": "film"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q11863501",
+    "title": "Hobitit",
+    "medium": "television"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q11896556",
+    "title": "The Lord of the Rings: Weapons and Warfare",
+    "medium": "print"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from an adaptation",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q15709637",
+    "title": "Middle-earth: Shadow of Mordor",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q74331"
+   },
+   "based_on_as_written": "The Hobbit trilogy",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names another adaptation in this same file, resolved by exact. NOT an edge to Tolkien's text.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q15709637",
+    "title": "Middle-earth: Shadow of Mordor",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from an adaptation",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q21706161",
+    "title": "They’re Taking The Hobbits To Isengard",
+    "medium": "internet"
+   },
+   "adapted_from": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q127367"
+   },
+   "based_on_as_written": "The Lord of the Rings: The Fellowship of the Ring",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names another adaptation in this same file, resolved by exact. NOT an edge to Tolkien's text.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q25859648",
+    "title": "LORD",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from an adaptation",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q28495400",
+    "title": "Le Hobbit : Le Retour du roi du Cantal",
+    "medium": "film"
+   },
+   "adapted_from": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q74331"
+   },
+   "based_on_as_written": "The Hobbit trilogy",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names another adaptation in this same file, resolved by exact. NOT an edge to Tolkien's text.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from an adaptation",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q28859887",
+    "title": "Middle-earth: Shadow of War",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q74331"
+   },
+   "based_on_as_written": "The Hobbit trilogy",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names another adaptation in this same file, resolved by exact. NOT an edge to Tolkien's text.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q28859887",
+    "title": "Middle-earth: Shadow of War",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from an adaptation",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q30879053",
+    "title": "Q30879053",
+    "medium": "film"
+   },
+   "adapted_from": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q127367"
+   },
+   "based_on_as_written": "The Lord of the Rings: The Fellowship of the Ring",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names another adaptation in this same file, resolved by exact. NOT an edge to Tolkien's text.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q59149852",
+    "title": "The Lord of the Rings: The Rings of Power",
+    "medium": "television"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from an adaptation",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q66503911",
+    "title": "The Hobbit: An Unexpected Journey Extended Edition",
+    "medium": "film"
+   },
+   "adapted_from": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q80379"
+   },
+   "based_on_as_written": "The Hobbit: An Unexpected Journey",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names another adaptation in this same file, resolved by exact. NOT an edge to Tolkien's text.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q93235255",
+    "title": "The Lord of the Rings: Gollum",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q106382169",
+    "title": "Khraniteli",
+    "medium": "film"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from an adaptation",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q109286227",
+    "title": "The Hobbit",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q74331"
+   },
+   "based_on_as_written": "The Hobbit trilogy",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names another adaptation in this same file, resolved by exact. NOT an edge to Tolkien's text.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q115683392",
+    "title": "adaptations of The Lord of the Rings",
+    "medium": "print"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q134711969",
+    "title": "Aragorn's Lullaby (Cormac)",
+    "medium": "music"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from the text",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q138849431",
+    "title": "The Lord of the Rings: Shadow of the Past",
+    "medium": "film"
+   },
+   "adapted_from": {
+    "dataset": "arda_corpusmap.json",
+    "collection": "sources",
+    "key_field": "file",
+    "key": "(C) The Lord of the Rings.pdf",
+    "corpus_tier": 1
+   },
+   "based_on_as_written": "The Lord of the Rings",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names a tier-1 volume this archive holds, resolved by exact against the corpus map.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  },
+  {
+   "kind": "work adapted from an adaptation",
+   "entity": null,
+   "entity_name": null,
+   "entity_kind": null,
+   "entity_resolves_in": null,
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q141033094",
+    "title": "The Lord of the Rings: War in the North - Legacy Edition",
+    "medium": "video game"
+   },
+   "adapted_from": {
+    "dataset": "arda_adaptations.json",
+    "collection": "works",
+    "id": "Q1440462"
+   },
+   "based_on_as_written": "The Lord of the Rings: War in the North",
+   "matched_by": "exact",
+   "basis": "the work's own `based_on` names another adaptation in this same file, resolved by exact. NOT an edge to Tolkien's text.",
+   "conf": "EXT",
+   "conf_basis": "Wikidata's own structured statement, CC0"
+  }
+ ],
+ "ambiguous_what": "A matched name borne by more than one record. Every candidate named, no winner chosen.",
+ "ambiguous": [
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-fotr-arwen-ford",
+    "work": "The Lord of the Rings: The Fellowship of the Ring",
+    "medium": "film",
+    "year": 2001,
+    "deviation_kind": "substitution"
+   },
+   "matched": "frodo",
+   "matched_by": "one word of a person's name",
+   "matched_in": "adaptation_side.shows",
+   "candidates": [
+    "frodo",
+    "frodog"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-fotr-arwen-ford",
+    "work": "The Lord of the Rings: The Fellowship of the Ring",
+    "medium": "film",
+    "year": 2001,
+    "deviation_kind": "substitution"
+   },
+   "matched": "frodo",
+   "matched_by": "one word of a person's name",
+   "matched_in": "adaptation_side.corroboration_anchor",
+   "candidates": [
+    "frodo",
+    "frodog"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-fotr-arwen-ford",
+    "work": "The Lord of the Rings: The Fellowship of the Ring",
+    "medium": "film",
+    "year": 2001,
+    "deviation_kind": "substitution"
+   },
+   "matched": "Gandalf",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.corroboration_anchor",
+   "candidates": [
+    "olorin",
+    "gandalf"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-fotr-arwen-ford",
+    "work": "The Lord of the Rings: The Fellowship of the Ring",
+    "medium": "film",
+    "year": 2001,
+    "deviation_kind": "substitution"
+   },
+   "matched": "frodo",
+   "matched_by": "one word of a person's name",
+   "matched_in": "text_side.note",
+   "candidates": [
+    "frodo",
+    "frodog"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-ttt-faramir-osgiliath",
+    "work": "The Lord of the Rings: The Two Towers",
+    "medium": "film",
+    "year": 2002,
+    "deviation_kind": "reversal"
+   },
+   "matched": "Faramir",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "candidates": [
+    "faramir_o",
+    "faramir"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-ttt-faramir-osgiliath",
+    "work": "The Lord of the Rings: The Two Towers",
+    "medium": "film",
+    "year": 2002,
+    "deviation_kind": "reversal"
+   },
+   "matched": "frodo",
+   "matched_by": "one word of a person's name",
+   "matched_in": "adaptation_side.shows",
+   "candidates": [
+    "frodo",
+    "frodog"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-ttt-faramir-osgiliath",
+    "work": "The Lord of the Rings: The Two Towers",
+    "medium": "film",
+    "year": 2002,
+    "deviation_kind": "reversal"
+   },
+   "matched": "frodo",
+   "matched_by": "one word of a person's name",
+   "matched_in": "adaptation_side.corroboration_anchor",
+   "candidates": [
+    "frodo",
+    "frodog"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-ttt-faramir-osgiliath",
+    "work": "The Lord of the Rings: The Two Towers",
+    "medium": "film",
+    "year": 2002,
+    "deviation_kind": "reversal"
+   },
+   "matched": "gollum",
+   "matched_by": "one word of a person's name",
+   "matched_in": "adaptation_side.corroboration_anchor",
+   "candidates": [
+    "smeagol",
+    "gollum"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-ttt-faramir-osgiliath",
+    "work": "The Lord of the Rings: The Two Towers",
+    "medium": "film",
+    "year": 2002,
+    "deviation_kind": "reversal"
+   },
+   "matched": "Faramir",
+   "matched_by": "full name",
+   "matched_in": "text_side.note",
+   "candidates": [
+    "faramir_o",
+    "faramir"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-ttt-hornburg",
+    "work": "The Lord of the Rings: The Two Towers",
+    "medium": "film",
+    "year": 2002,
+    "deviation_kind": "addition"
+   },
+   "matched": "Gandalf",
+   "matched_by": "full name",
+   "matched_in": "text_side.note",
+   "candidates": [
+    "olorin",
+    "gandalf"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-rotk-denethor",
+    "work": "The Lord of the Rings: The Return of the King",
+    "medium": "film",
+    "year": 2003,
+    "deviation_kind": "alteration"
+   },
+   "matched": "denethor",
+   "matched_by": "one word of a person's name",
+   "matched_in": "adaptation_side.shows",
+   "candidates": [
+    "denethor1",
+    "denethor2",
+    "boromir",
+    "faramir",
+    "denethor"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-rotk-denethor",
+    "work": "The Lord of the Rings: The Return of the King",
+    "medium": "film",
+    "year": 2003,
+    "deviation_kind": "alteration"
+   },
+   "matched": "denethor",
+   "matched_by": "one word of a person's name",
+   "matched_in": "text_side.quote_of_the_corpus",
+   "candidates": [
+    "denethor1",
+    "denethor2",
+    "boromir",
+    "faramir",
+    "denethor"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-rotk-witchking-staff",
+    "work": "The Lord of the Rings: The Return of the King",
+    "medium": "film",
+    "year": 2003,
+    "deviation_kind": "addition"
+   },
+   "matched": "Gandalf",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "candidates": [
+    "olorin",
+    "gandalf"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-rotk-witchking-staff",
+    "work": "The Lord of the Rings: The Return of the King",
+    "medium": "film",
+    "year": 2003,
+    "deviation_kind": "addition"
+   },
+   "matched": "Gandalf",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.corroboration_anchor",
+   "candidates": [
+    "olorin",
+    "gandalf"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "jackson-rotk-witchking-staff",
+    "work": "The Lord of the Rings: The Return of the King",
+    "medium": "film",
+    "year": 2003,
+    "deviation_kind": "addition"
+   },
+   "matched": "Gandalf",
+   "matched_by": "full name",
+   "matched_in": "text_side.note",
+   "candidates": [
+    "olorin",
+    "gandalf"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "hobbit-films-tauriel",
+    "work": "The Hobbit (film series)",
+    "medium": "film",
+    "year": 2013,
+    "deviation_kind": "invented character"
+   },
+   "matched": "Mirkwood",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "candidates": [
+    "mirkwood",
+    "greenwood"
+   ],
+   "candidate_kinds": [
+    "place",
+    "realm"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "hobbit-films-azog",
+    "work": "The Hobbit (film series)",
+    "medium": "film",
+    "year": 2012,
+    "deviation_kind": "reversal"
+   },
+   "matched": "dain",
+   "matched_by": "one word of a person's name",
+   "matched_in": "adaptation_side.shows",
+   "candidates": [
+    "dain1",
+    "dain2"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "hobbit-films-azog",
+    "work": "The Hobbit (film series)",
+    "medium": "film",
+    "year": 2012,
+    "deviation_kind": "reversal"
+   },
+   "matched": "thorin",
+   "matched_by": "one word of a person's name",
+   "matched_in": "adaptation_side.shows",
+   "candidates": [
+    "thorin1",
+    "thorin",
+    "thorin3"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "hobbit-films-azog",
+    "work": "The Hobbit (film series)",
+    "medium": "film",
+    "year": 2012,
+    "deviation_kind": "reversal"
+   },
+   "matched": "thorin",
+   "matched_by": "one word of a person's name",
+   "matched_in": "adaptation_side.corroboration_anchor",
+   "candidates": [
+    "thorin1",
+    "thorin",
+    "thorin3"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "hobbit-films-azog",
+    "work": "The Hobbit (film series)",
+    "medium": "film",
+    "year": 2012,
+    "deviation_kind": "reversal"
+   },
+   "matched": "dain",
+   "matched_by": "one word of a person's name",
+   "matched_in": "text_side.note",
+   "candidates": [
+    "dain1",
+    "dain2"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "hobbit-films-azog",
+    "work": "The Hobbit (film series)",
+    "medium": "film",
+    "year": 2012,
+    "deviation_kind": "reversal"
+   },
+   "matched": "dain",
+   "matched_by": "one word of a person's name",
+   "matched_in": "text_side.quote_of_the_corpus",
+   "candidates": [
+    "dain1",
+    "dain2"
+   ],
+   "candidate_kinds": [
+    "person"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "rop-celebrimbor",
+    "work": "The Lord of the Rings: The Rings of Power",
+    "medium": "television",
+    "year": 2022,
+    "deviation_kind": "alteration"
+   },
+   "matched": "Lindon",
+   "matched_by": "full name",
+   "matched_in": "adaptation_side.shows",
+   "candidates": [
+    "lindon",
+    "ossiriand"
+   ],
+   "candidate_kinds": [
+    "place"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "rop-celebrimbor",
+    "work": "The Lord of the Rings: The Rings of Power",
+    "medium": "television",
+    "year": 2022,
+    "deviation_kind": "alteration"
+   },
+   "matched": "Moria",
+   "matched_by": "full name",
+   "matched_in": "text_side.quote_of_the_corpus",
+   "candidates": [
+    "khazaddum",
+    "moria west gate"
+   ],
+   "candidate_kinds": [
+    "place"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  },
+  {
+   "kind": "deviation names entity",
+   "adaptation_record": {
+    "dataset": "arda_adaptations.json",
+    "collection": "deviations",
+    "id": "merp-nazgul-names",
+    "work": "Middle-earth Role Playing",
+    "medium": "tabletop",
+    "year": 1984,
+    "deviation_kind": "invented nomenclature"
+   },
+   "matched": "Dol Guldur",
+   "matched_by": "full name",
+   "matched_in": "text_side.quote_of_the_corpus",
+   "candidates": [
+    "dol guldur",
+    "dolguldur"
+   ],
+   "candidate_kinds": [
+    "place",
+    "realm"
+   ],
+   "why": "more than one record bears this name; published with its candidates and no winner",
+   "conf": "EXT"
+  }
+ ],
+ "based_on_not_resolved_what": "A work's `based_on` that names neither another work in this file nor a tier-1 volume in this corpus, by exact match or complete word-prefix.",
+ "based_on_not_resolved": [
+  {
+   "work": "Q74229",
+   "work_title": "The Hobbit",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q74331",
+   "work_title": "The Hobbit trilogy",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q80379",
+   "work_title": "The Hobbit: An Unexpected Journey",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q115285",
+   "work_title": "The Return of the King",
+   "based_on_as_written": "The Return of the King",
+   "candidates_in_works": [
+    "Q115285"
+   ],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q127367",
+   "work_title": "The Lord of the Rings: The Fellowship of the Ring",
+   "based_on_as_written": "The Fellowship of the Ring",
+   "candidates_in_works": [],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q164963",
+   "work_title": "The Lord of the Rings: The Two Towers",
+   "based_on_as_written": "The Two Towers",
+   "candidates_in_works": [],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q293269",
+   "work_title": "The Hobbit",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q440046",
+   "work_title": "The Lord of the Rings: The Return of the King",
+   "based_on_as_written": "The Lord of the Rings: The Return of the King",
+   "candidates_in_works": [
+    "Q131074",
+    "Q440046"
+   ],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q440046",
+   "work_title": "The Lord of the Rings: The Return of the King",
+   "based_on_as_written": "The Lord of the Rings: The Two Towers",
+   "candidates_in_works": [
+    "Q164963",
+    "Q2353071"
+   ],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q719915",
+   "work_title": "The Hobbit: The Desolation of Smaug",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q919649",
+   "work_title": "The Hobbit: The Battle of the Five Armies",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q1187415",
+   "work_title": "The Hobbit",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q1194265",
+   "work_title": "Middle-Earth Strategy Battle Game",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q1194265",
+   "work_title": "Middle-Earth Strategy Battle Game",
+   "based_on_as_written": "The Lord of the Rings: The Return of the King",
+   "candidates_in_works": [
+    "Q131074",
+    "Q440046"
+   ],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q1194265",
+   "work_title": "Middle-Earth Strategy Battle Game",
+   "based_on_as_written": "The Lord of the Rings: The Two Towers",
+   "candidates_in_works": [
+    "Q164963",
+    "Q2353071"
+   ],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q1778141",
+   "work_title": "The Hobbit",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q2353071",
+   "work_title": "The Lord of the Rings: The Two Towers",
+   "based_on_as_written": "The Lord of the Rings: The Two Towers",
+   "candidates_in_works": [
+    "Q164963",
+    "Q2353071"
+   ],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q2494353",
+   "work_title": "The Hobbit",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q2824095",
+   "work_title": "film and television adaptations of The Hobbit",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q3005035",
+   "work_title": "Tales from the Perilous Realm",
+   "based_on_as_written": "Farmer Giles of Ham",
+   "candidates_in_works": [],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q3005035",
+   "work_title": "Tales from the Perilous Realm",
+   "based_on_as_written": "Leaf by Niggle",
+   "candidates_in_works": [],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q3005035",
+   "work_title": "Tales from the Perilous Realm",
+   "based_on_as_written": "Roverandom",
+   "candidates_in_works": [],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q3005035",
+   "work_title": "Tales from the Perilous Realm",
+   "based_on_as_written": "Smith of Wootton Major",
+   "candidates_in_works": [],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q10429531",
+   "work_title": "Q10429531",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q15709637",
+   "work_title": "Middle-earth: Shadow of Mordor",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q21706161",
+   "work_title": "They’re Taking The Hobbits To Isengard",
+   "based_on_as_written": "The Lord of the Rings: The Two Towers",
+   "candidates_in_works": [
+    "Q164963",
+    "Q2353071"
+   ],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q25859648",
+   "work_title": "LORD",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q28859887",
+   "work_title": "Middle-earth: Shadow of War",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q66503636",
+   "work_title": "The Lord of the Rings: The Return of the King Extended Edition",
+   "based_on_as_written": "The Lord of the Rings: The Return of the King",
+   "candidates_in_works": [
+    "Q131074",
+    "Q440046"
+   ],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q107210110",
+   "work_title": "The Lord of the Rings: The War of the Rohirrim",
+   "based_on_as_written": "Appendices of The Lord of the Rings",
+   "candidates_in_works": [],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q130735102",
+   "work_title": "Q130735102",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q137824478",
+   "work_title": "Q137824478",
+   "based_on_as_written": "The Lord of the Rings: The Two Towers",
+   "candidates_in_works": [
+    "Q164963",
+    "Q2353071"
+   ],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q137824479",
+   "work_title": "Q137824479",
+   "based_on_as_written": "The Lord of the Rings: The Return of the King",
+   "candidates_in_works": [
+    "Q131074",
+    "Q440046"
+   ],
+   "candidates_in_corpusmap": [],
+   "why": "NO tier-1 volume in this corpus carries this title as a complete word-prefix, and no other work in this file does either. `The Two Towers` is the case: the corpus holds The Lord of the Rings as ONE book, so the part-title names no volume on the shelf. A fact about the shelf, not a failure -- and NOT RESOLVED rather than matched loosely, because a looser match would be this file choosing which book a film adapts.",
+   "conf": "EXT"
+  },
+  {
+   "work": "Q141131125",
+   "work_title": "Der Hobbit",
+   "based_on_as_written": "The Hobbit",
+   "candidates_in_works": [
+    "Q74229",
+    "Q293269",
+    "Q1187415",
+    "Q1778141",
+    "Q2494353",
+    "Q109286227"
+   ],
+   "candidates_in_corpusmap": [
+    "(B) The Hobbit, or There and Back Again.pdf",
+    "The Hobbit (illustrated).pdf"
+   ],
+   "why": "more than one tier-1 volume matches",
+   "conf": "EXT"
+  }
+ ]
+}
