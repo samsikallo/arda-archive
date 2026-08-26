@@ -4280,7 +4280,7 @@
     ],
     "absence_scope": "absent from every tier-1 text; present in 2 file(s) of tier [2, 3], which discuss the adaptations rather than Arda",
     "attested_in_tier_1": false,
-    "note": "Measured, not assumed: absent from every tier-1 text. The one hit anywhere in the corpus is a tier-2 reference work discussing the films.",
+    "note": "Measured, not assumed: absent from every tier-1 text. The hits are Hammond and Scull's Companion and Guide and an issue of Mallorn -- reference work and journal, DISCUSSING the films. `absence_scope` on this row is computed from the loci, not typed, because the first draft of this note said one hit and the measurement said two.",
     "verified_by": "map/ardatext.py at generation, over all 232 corpus files",
     "conf": "C"
    }
