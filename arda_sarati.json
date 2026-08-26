@@ -17,13 +17,13 @@
  "direction": "A PROPERTY OF THE DOCUMENT, NOT THE SCRIPT. R17 says Sarati was 'originally written from right to left, or boustrophedon ... but in books and cursive form it was usually written from top to bottom beginning at the top right-hand corner.' Five directions are attested, and the MAJORITY of samples run top-to-bottom from the LEFT — against R17's own description. A transcriber must be told which.",
  "alignment": "R17: the letters are 'hangers to a bar', consonants to the right (or below), vowels to the left (or above). Many samples omit the bar and two mirror it, so Björkman uses FRONT · BACK · TOP · BOTTOM rather than left/right — a description that survives a change of direction, which left/right does not.",
  "reads_also": [
-  "uploads/sarati_values.md",
-  "uploads/sarati_findings.json"
+  "docs/sarati_values.md",
+  "reports/sarati_findings.json"
  ],
  "legend": {
   "every value": "read off the plate labelling — Hëernamae Pëen Ionoëryn, via Wikimedia Commons, CC BY-SA 4.0. The shape is Tolkien's; the reading is the Commons contributor's, and taking it is ours. That is why every value is [I-H] and none is [C].",
   "corroborated": "TWO UNRELATED THIRD PARTIES, INDEPENDENTLY — the Commons plate label and Glaemscribe's semantic charset name (`VELAR_LATERAL_APPROXIMANT`, `UVULAR_TRILL`). The plate reading is still ours, so the marker STAYS [I-H]: what a second witness removes is the possibility that one contributor's labelling is the whole evidence. Corroboration is not promotion.",
-  "not_graded": "uploads/sarati_values.md grades no row naming this sound, so the row carries the plate-label marker and nothing more. THAT IS A STATEMENT ABOUT THE RECORD, NOT ABOUT THE SARAT.",
+  "not_graded": "docs/sarati_values.md grades no row naming this sound, so the row carries the plate-label marker and nothing more. THAT IS A STATEMENT ABOUT THE RECORD, NOT ABOUT THE SARAT.",
   "vowel-sign": "a VOWEL SIGN, not a letter: Sarati writes vowels as marks placed relative to the consonant, and WHERE it goes is the usage rule this file records per form (R15/R17 for Quenya). Cropped by map/gen_sarati_vowels.py from the owner's chart, 16 Aug 2026.",
   "cite": "each row's `cite` is the research record's own citation for that sound; `evidence` is its P (plate) and G (charset) column verbatim; `graded` is the record's own mark cell, ✓✓ meaning both witnesses.",
   "why_one_legend": "these four sentences were repeated on every one of the 57 rows until 21 August 2026, which cost a reader 4.4 KB gzipped to learn four things. A budget must not be paid in features — and boilerplate is not a feature."
@@ -47,7 +47,7 @@
    "mark": "[EXT]",
    "of": "Sarati",
    "withdrawn_as": "[C]",
-   "withdrawal": "WITHDRAWN AS [C], 13 Aug 2026, by uploads/sarati_values.md and by CLAUDE.md. Read at 3,000 characters of context that sentence in Quendi and Eldar is about the FEANORIAN TENGWAR -- it explains why `tengwar` came to mean 'consonants' and the vowel-signs `omatehtar`. It cannot be cited for Sarati, and it was the only [C] in the list about Sarati's STRUCTURE. The true equivalent is [EXT]: Bjorkman, citing FQD, that under the Quenya phonematic analysis vowels were not full phonemes, so only consonants are true sarati and vowels are diacritics. The two supplied research files DISAGREE here and the later one corrects the earlier; that is a finding, not a quiet choice."
+   "withdrawal": "WITHDRAWN AS [C], 13 Aug 2026, by docs/sarati_values.md and by CLAUDE.md. Read at 3,000 characters of context that sentence in Quendi and Eldar is about the FEANORIAN TENGWAR -- it explains why `tengwar` came to mean 'consonants' and the vowel-signs `omatehtar`. It cannot be cited for Sarati, and it was the only [C] in the list about Sarati's STRUCTURE. The true equivalent is [EXT]: Bjorkman, citing FQD, that under the Quenya phonematic analysis vowels were not full phonemes, so only consonants are true sarati and vowels are diacritics. The two supplied research files DISAGREE here and the later one corrects the earlier; that is a finding, not a quiet choice."
   },
   {
    "fact": "A specimen exists and is published: part of the 'Tale of Turin' written in the Rumilian alphabet.",
@@ -153,7 +153,7 @@
    "mark": "[EXT]",
    "adopted": null,
    "why_not_adopted": "unestablished per pair. A homograph is attested elsewhere in this charset (SARATI_B / _QUENYA_MB share slot 5f, and R15 gives the reason), so a shared slot is not by itself evidence of a font economy -- which is exactly why neither reading is taken.",
-   "source": "uploads/sarati_values.md §3.7"
+   "source": "docs/sarati_values.md §3.7"
   },
   {
    "what": "the sign transcribed h, against R17's hw",
@@ -161,7 +161,7 @@
    "mark": "[I-H]",
    "adopted": null,
    "why_not_adopted": "Amanye Tenceli calls R17's hw an EDITORIAL ERROR on the PE errata's authority. That is a third party correcting a primary publication, so both readings stand here and the correction is named rather than applied.",
-   "source": "uploads/sarati_values.md, Quenya Usage — consonants, the h row"
+   "source": "docs/sarati_values.md, Quenya Usage — consonants, the h row"
   },
   {
    "what": "the [s] sign, Phonetic Form against Late Form",
@@ -169,7 +169,7 @@
    "mark": "[I-H]",
    "adopted": null,
    "why_not_adopted": "the sign differs BY VALUATION, so `s` alone is not a value in this script. The form must be chosen before anything is written, which is why this file publishes four forms and one transcriber cannot serve them all.",
-   "source": "uploads/sarati_values.md, Phonetic Form and the untagged plates"
+   "source": "docs/sarati_values.md, Phonetic Form and the untagged plates"
   }
  ],
  "correction_the_archive_owes_itself": "CLAUDE.md lists \"[C] the full signs were consonantal\" as its one Sarati fact from a primary text. Read at 3,000 characters of context, that sentence is about the Fëanorian tengwar — it explains why tengwar came to mean 'consonants' and the vowel-signs ómatehtar. It must not be cited for Sarati. The true equivalent is [EXT]: Björkman from FQD — under the Quenya phonematic analysis vowels were not full phonemes, so only consonants are true sarati and vowels are diacritics.",
