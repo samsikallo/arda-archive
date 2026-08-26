@@ -5579,5 +5579,21 @@
   "no_image_data": true,
   "conf": "EXT",
   "tier": 3
+ },
+ "mss_catalogue": {
+  "what": "Archival catalogue descriptions of Tolkien material from two repositories' own catalogues -- what a named repository says it holds. Metadata only: no manuscript text and no image is reproduced.",
+  "rows": 1338,
+  "tna_discovery": 355,
+  "marquette_finding_aid": 983,
+  "tna_repositories": 18,
+  "licences_as_stated": {
+   "tna_discovery": "OGL v3.0 per TNA's footer, NOT established as reaching the 330 contributed descriptions authored by the holding repositories",
+   "marquette_finding_aid": "no open licence; written permission of Raynor Library beyond fair use, credit line mandated, (c) 2026 Marquette University"
+  },
+  "no_tier": "A catalogue record makes no claim about Arda, so these rows carry a hand and a licence and no tier. There is no fifth tier.",
+  "dataset": "site/arda_mss_catalogue.json",
+  "why_not_here": "1,338 catalogue rows would take this register past a megabyte, and site/corpus.html fetches it over the wire under a ceiling map/budget_check.py enforces and corpus.html is already over. The register declares; the dataset holds.",
+  "sibling": "site/arda_witnesses.json holds the folders the corpus CITES; 417 of the Marquette rows here are the same folders and say so on the row.",
+  "conf": "EXT"
  }
 }
