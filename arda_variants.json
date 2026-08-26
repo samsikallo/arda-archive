@@ -1,0 +1,1268 @@
+{
+ "what": "TEXTUAL VARIANTS: where the corpus tells the same matter two or more ways, each reading anchored to the line that says it. Tolkien wrote the legendarium repeatedly over fifty years and Christopher Tolkien published the layers; this dataset exists so that the archive can say THIS text says one thing and THAT text says another, without either being erased and without a winner being computed.",
+ "principle": "SAMSI §X.4, executing the protocol's second non-negotiable principle -- do not collapse Tolkien's textual variants into a single simplified canon. Conflicting claims are held as PARALLEL ASSERTIONS (§I.7): every reading carries its own locus, tier and confidence, and none is subordinated to another by this file.",
+ "the_ruling": {
+  "id": "C366",
+  "where": "DECISIONS.md -- C366, his ruling of 25 August 2026",
+  "his_words": "the latest published form is canon, or the one that Tolkien or his son said to be canon.",
+  "typed": "16 August 2026, 06:06:41, and re-sent unchanged at 09:36:54",
+  "what_it_owes": "C366 records that no canon-standing field existed anywhere in the archive and that the rule's own prescription -- a superseded reading stays, labelled as superseded, with its date -- had nowhere to be written down. This dataset is that place.",
+  "clauses_wired_in": [
+   "(1) NEITHER CLAUSE RANKS. No record here computes a winner; `adjudication` is null unless a person decided, and then it names who and where.",
+   "(2) PUBLISHED MEANS THE LAST AUTHORIAL STATE, NOT THE LATEST PRINT DATE. Every `later_state` rests on a statement in the corpus by Tolkien or Christopher Tolkien, quoted and anchored.",
+   "(3) THE RULE DOES NOT FIRE WHERE THE SOURCE DECLINES TO CHOOSE; R12b governs -- show the disagreement. Those records carry `declines` with the refusing sentence verbatim."
+  ]
+ },
+ "how": "Every reading's `q` is sought with map/ardatext.py -- the archive's one quote matcher -- and the LINE PUBLISHED IN `src` IS THE LINE THAT MATCHER RETURNED. No line number in this file was counted by hand or by a second reader: the corpus is mixed NFC/NFD and carries form feeds, so Python's splitlines() and grep -n disagree by hundreds of lines in a single volume. A span that does not verify is not published as a reading; it is published in `refused`.",
+ "vocabulary": {
+  "conf_field": "ruling 1's six, bare: C, I-H, I-M, I-L, EXT, NEO. `conf` grades the EVIDENCE for a reading -- how plainly the cited line says it -- and never its standing in the legendarium. A reading marked [C] is one the text states outright; it is not 'the canon one'.",
+  "date_conf_field": "carried where the variant is about a DATE or a duration, in the same six values, under the owner's ruling of 11 August 2026.",
+  "refused": "`C?` was named in this file's commission and is NOT used. map/confvocab_check.py is a per-dataset ratchet -- nine datasets carry unruled `conf` values under a declared debt and a dataset not already carrying the fault may not start -- so a new dataset writing `C?` would turn that guard red on its first run. The archive's own reading of `C?` is that it was invented because the ruled six cannot express canon standing, which is the gap C366 left open. Widening the vocabulary is a RULING, not a side effect of landing a dataset."
+ },
+ "no_adjudication_rule": "A variant is NOT resolved here unless a person resolved it, and then the record names who, where it is written, and what it says. Two of the records carry an adjudication and neither is this archive's: one is the owner's, one is the author's own designation in the Prologue to The Lord of the Rings. Where the archive cannot tell which reading is later, `later_state.known` is false and the reason is stated. THAT IS A MEASURED SILENCE AND IT IS HONEST.",
+ "silences_rule": "A silence may only be asserted by something that looked. Every entry in `silences` carries the probe, the population it was put to, and what came back.",
+ "extends": {
+  "dataset": "site/arda_contradictions.json",
+  "entries_there": 17,
+  "anchored_here": 9,
+  "not_yet_anchored": [
+   "'Noldorin' versus Sindarin",
+   "Amroth's parentage",
+   "Celeborn's origin",
+   "Map against text: Angband to Menegroth",
+   "Myths Transformed: the Sun and Moon",
+   "The date of the Third Kinslaying",
+   "The descent of all Elvish speech",
+   "The éored's arithmetic does not bend"
+  ],
+  "why_not_merged": "That register says THAT the archive holds a standing tension and what it does about it. This dataset says WHERE each reading stands, line by line. Merging them would lose the first, which is prose a reader can read, or the second, which is evidence a guard can check. The subjects it has not reached are listed above rather than left to be discovered."
+ },
+ "precedence": {
+  "publication_year_available": {
+   "asked": true,
+   "rows": 260,
+   "distinct_keys": 24,
+   "keys_naming_a_date": [],
+   "verdict": "no row in the shelf register carries a publication year, so ranking two Tolkien texts by print date is not computable from anything this archive stores"
+  },
+  "tier_is_not_canon": "The tier ranks WHO IS SPEAKING; the owner's rule ranks WHEN. Every subject here except two is tier-1 against tier-1, where tier is silent by construction (C366(4))."
+ },
+ "schemaVersion": 1,
+ "generated_by": "map/gen_variants.py",
+ "corpus": {
+  "citable_files": 232,
+  "resolver": "ardatext.corpus_files() -- the citable set under the owner's ruling of 31 July"
+ },
+ "counts": {
+  "variants": 18,
+  "readings": 55,
+  "subjects_with_2_readings": 8,
+  "subjects_with_3_readings": 4,
+  "subjects_with_4_or_more": 6,
+  "adjudicated": 3,
+  "unadjudicated": 15,
+  "source_declines": 4,
+  "later_state_unknown": 2,
+  "volumes": 10,
+  "extends_contradictions": 9,
+  "new_subjects": 9,
+  "refused": 0,
+  "silences_probed": 4,
+  "silences_confirmed": 1,
+  "silences_silent_in_tier1": 1,
+  "by_kind": {
+   "authorial revision within one text": 3,
+   "designated by the author": 1,
+   "draft evolution": 7,
+   "editorial choice vs manuscript": 3,
+   "unreconciled / intentional ambiguity": 4
+  }
+ },
+ "variants": [
+  {
+   "id": "gilgalad-father",
+   "subject": "Whose son was Gil-galad?",
+   "kind": "draft evolution",
+   "readings": [
+    {
+     "n": "son of Fingon",
+     "says": "The published Silmarillion makes him Fingon's son, sent to the Havens by his father after the Dagor Bragollach.",
+     "q": "Ereinion Gil-galad son of Fingon was named High King of the Noldor in Middle-earth",
+     "src": "t1_a_the_silmarillion.txt:11467",
+     "text": "of Turgon, Ereinion Gil-galad son of Fingon was named High King of",
+     "witness": "The Silmarillion (published text), ch. 23",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "son of Fingon (the published index)",
+     "says": "Tolkien's own published index repeats the Fingon descent under Ereinion, which is why the archive does not correct it there.",
+     "q": "the son of Fingon, known always by his surname Gil-galad",
+     "src": "t1_a_the_silmarillion.txt:14567",
+     "text": "Ereinion ‘Scion of Kings’, the son of Fingon, known always by",
+     "witness": "The Silmarillion, Index of Names",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "son of Felagund",
+     "says": "A Second Age Tale of Years draft makes him the son of Felagund -- that is, of Finrod under his older name.",
+     "q": "This was ruled by Gil-galad son of Felagund",
+     "src": "t1_12_the_peoples_of_middle_earth.txt:5690",
+     "text": "This was ruled by Gil-galad son of Felagund,8 chief of all the",
+     "witness": "The Tale of Years of the Second Age (T 2), PoME",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "brother of Galadriel, emended to son of Felagund",
+     "says": "The same draft first makes Galadriel his SISTER, then emends the phrase in the manuscript to 'sister of Felagund Gil-galad's sire'.",
+     "q": "the Lady Galadriel of the Noldor, sister of Gil-galad",
+     "src": "t1_12_the_peoples_of_middle_earth.txt:5711",
+     "text": "the Lady Galadriel of the Noldor, sister of Gil-galad [> sister of",
+     "witness": "The Tale of Years of the Second Age (T 2), PoME",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "son of Orodreth",
+     "says": "A note Christopher dates to August 1965 finds him in 'the son of Orodreth', Orodreth being himself moved to son of Angrod.",
+     "q": "the best solution to the problem of Gil-galad's parentage was to find him in",
+     "src": "t1_12_the_peoples_of_middle_earth.txt:11652",
+     "text": "great speed but nonetheless dated, August 1965, my father suggested that the best solution",
+     "witness": "The Shibboleth of Feanor, PoME (note dated August 1965)",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "son of Arothir, nephew of Finrod",
+     "says": "The last state of the genealogies renames Orodreth to Arothir and states the descent in that form.",
+     "q": "the son of Arothir, nephew of Finrod",
+     "src": "t1_12_the_peoples_of_middle_earth.txt:11668",
+     "text": "galad is ‘the son of Arothir, nephew of Finrod’. The final genealogy was:",
+     "witness": "The Shibboleth of Feanor, PoME (final genealogy)",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 6,
+   "witnesses": [
+    "The Shibboleth of Feanor, PoME (final genealogy)",
+    "The Shibboleth of Feanor, PoME (note dated August 1965)",
+    "The Silmarillion (published text), ch. 23",
+    "The Silmarillion, Index of Names",
+    "The Tale of Years of the Second Age (T 2), PoME"
+   ],
+   "volumes": [
+    "t1_12_the_peoples_of_middle_earth.txt",
+    "t1_a_the_silmarillion.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "I-H",
+    "why": "Christopher Tolkien dates the Orodreth note (August 1965) and calls the Arothir form 'the final genealogy', so the direction of change is stated in the corpus rather than inferred from print order. Which of the TWO EARLIER forms -- Fingon, Felagund -- stood first is not stated here."
+   },
+   "declines_to_choose": false,
+   "adjudication": {
+    "conf": "C",
+    "by": "the archive's owner",
+    "date": "2026-08-01",
+    "ruling_id": null,
+    "where": "site/arda_contradictions.json -- entry \"Gil-galad's father\"",
+    "reads": "THE FATHER IS ORODRETH, following the latest manuscript layer, with the confusion recorded everywhere relevant and the published Silmarillion NOT corrected in arda_index, which reproduces Tolkien's own index.",
+    "ruling_id_note": "No C-number exists. DECISIONS.md opens on 19 August 2026 and this decision is dated 1 August 2026; the ledger names Gil-galad exactly once, in an unrelated note about duplicate index entries. The decision is his and is recorded as his; a number invented for it would not be."
+   },
+   "also_in": {
+    "dataset": "site/arda_contradictions.json",
+    "subject": "Gil-galad's father",
+    "present": true,
+    "note": "the standing register describes this tension in prose; this record anchors each reading to a corpus line. The two are not duplicates: one says THAT the archive disagrees with itself, the other says WHERE."
+   }
+  },
+  {
+   "id": "orodreth-house",
+   "subject": "Where does Orodreth stand in the house of Finarfin?",
+   "kind": "editorial choice vs manuscript",
+   "readings": [
+    {
+     "n": "brother of Finrod, son of Finarfin",
+     "says": "The Grey Annals hold him a brother of Inglor -- Finrod under his older name -- and so a son of Finarfin.",
+     "q": "Orodreth the brother of Inglor who",
+     "src": "t1_11_the_war_of_the_jewels.txt:2149",
+     "text": "this they took after bitter fighting, and Orodreth the brother of Inglor who",
+     "witness": "The Grey Annals, WJ",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "son of Angrod, of the next generation",
+     "says": "The Shibboleth moves him down a generation and makes him Angrod's son, Finrod's nephew.",
+     "q": "to become, still in the same generation, the son of",
+     "src": "t1_12_the_peoples_of_middle_earth.txt:11647",
+     "text": "Aman)’, and moved Artanáro Rhodothir to become, still in the same generation, the son of",
+     "witness": "The Shibboleth of Feanor, PoME",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "never carried into the published narratives",
+     "says": "Christopher records the displacement AND records that it never reached the Silmarillion narratives, which is why the published text and the late manuscripts disagree about a living relationship.",
+     "q": "my father displaced the second King of Nargothrond and made him a member of the same family in the next generation",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:8110",
+     "text": "a reason unknown to me, my father displaced the second King of Nargothrond and made him",
+     "witness": "Christopher Tolkien's note 20, UT",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 3,
+   "witnesses": [
+    "Christopher Tolkien's note 20, UT",
+    "The Grey Annals, WJ",
+    "The Shibboleth of Feanor, PoME"
+   ],
+   "volumes": [
+    "t1_11_the_war_of_the_jewels.txt",
+    "t1_12_the_peoples_of_middle_earth.txt",
+    "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "C",
+    "why": "Christopher states the direction outright, in the words quoted on the third reading above, and states equally plainly that the change never reached the narratives of The Silmarillion."
+   },
+   "declines_to_choose": false,
+   "adjudication": null,
+   "also_in": {
+    "dataset": "site/arda_contradictions.json",
+    "subject": "Orodreth's own place in the House of Finarfin",
+    "present": true,
+    "note": "the standing register describes this tension in prose; this record anchors each reading to a corpus line. The two are not duplicates: one says THAT the archive disagrees with itself, the other says WHERE."
+   },
+   "why_no_adjudication": "C366(1): neither clause of the owner's rule ranks, and no ruling of his names this subject. Both readings stand; the later one is marked as later because Christopher says so."
+  },
+  {
+   "id": "amrod-death",
+   "subject": "When did Amrod die?",
+   "kind": "draft evolution",
+   "readings": [
+    {
+     "n": "slain at the Third Kinslaying",
+     "says": "The published text keeps both twins alive until the sack of the Havens of Sirion, where both are slain.",
+     "q": "though they alone remained thereafter of the sons of Feanor, for both Amrod and Amras were slain",
+     "src": "t1_a_the_silmarillion.txt:11556",
+     "text": "and Maglor won the day, though they alone remained thereafter of the sons",
+     "witness": "The Silmarillion (published text), ch. 24",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "burned in the ships at Losgar",
+     "says": "The Shibboleth tells the sinister story of the twins: one sleeps aboard, and Feanor burns that ship first.",
+     "q": "In the morning the host was mustered, but of",
+     "src": "t1_12_the_peoples_of_middle_earth.txt:11788",
+     "text": "In the morning the host was mustered, but of Fëanor’s seven sons only six were to be",
+     "witness": "The Shibboleth of Feanor, PoME",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "burned with the ships (the genealogical note)",
+     "says": "A second, separate note in the same volume states the Losgar death as settled fact in passing.",
+     "q": "also the two youngest (twins, of whom one was by evil mischance burned with the ships)",
+     "src": "t1_12_the_peoples_of_middle_earth.txt:10659",
+     "text": "Maedros the eldest appears to have been unwedded, also the two youngest (twins, of whom",
+     "witness": "Notes on the Sons of Feanor, PoME",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 3,
+   "witnesses": [
+    "Notes on the Sons of Feanor, PoME",
+    "The Shibboleth of Feanor, PoME",
+    "The Silmarillion (published text), ch. 24"
+   ],
+   "volumes": [
+    "t1_12_the_peoples_of_middle_earth.txt",
+    "t1_a_the_silmarillion.txt"
+   ],
+   "later_state": {
+    "known": false,
+    "conf": "I-L",
+    "why": "Christopher calls this material 'confused and confusing' and says the story emerged only as his father worked on the names; he gives no date for it and no statement that it supersedes the published chapter. THE ARCHIVE CANNOT SAY WHICH READING IS LATER, and says so rather than guessing."
+   },
+   "declines_to_choose": false,
+   "adjudication": null,
+   "also_in": {
+    "dataset": "site/arda_contradictions.json",
+    "subject": "Amrod's death",
+    "present": true,
+    "note": "the standing register describes this tension in prose; this record anchors each reading to a corpus line. The two are not duplicates: one says THAT the archive disagrees with itself, the other says WHERE."
+   },
+   "why_no_adjudication": "No ruling of his names it, and the corpus does not date the two against each other. arda_contradictions already records the archive's practice: both are displayed, no resolution offered."
+  },
+  {
+   "id": "valian-year-length",
+   "subject": "How long is a Valian Year in years of the Sun?",
+   "kind": "unreconciled / intentional ambiguity",
+   "readings": [
+    {
+     "n": "ten Sun Years",
+     "says": "The Annals' own scheme of 700 times of sunlight and moonlight yields a Valian Year of exactly ten Sun Years.",
+     "q": "thus 1 Valian Year would = 10 Sun Years",
+     "src": "t1_10_morgoths_ring.txt:2337",
+     "text": "thus 1 Valian Year would = 10 Sun Years",
+     "witness": "Annals of Aman, MR (Christopher Tolkien's computation of the text's own device)",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "47,901 of our years to 5,000 Valian Years",
+     "says": "Tolkien's own arithmetic inside the Annals does NOT use ten: 5,000 V.Y. is given as 47,901 of our years, which is a Valian Year of about 9.58 -- the ratio a true solar year of 365.25 days produces.",
+     "q": "five thousand Valian Years ere the first rising of the Moon, which is as much as to say",
+     "src": "t1_10_morgoths_ring.txt:1997",
+     "text": "realm of Arda, which is the Earth, five thousand Valian Years ere the first",
+     "witness": "Annals of Aman, MR",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "144 mortal years",
+     "says": "The late time-schemes make the Valian Year the Elvish yen: 144 days of 144 mortal years each.",
+     "q": "But each Valian Year = 144 Mortal Years",
+     "src": "t2_i_the_nature_of_middle_earth.txt:591",
+     "text": "Year. But each Valian Year = 144 Mortal Years; therefore 1 Valian Day = 1",
+     "witness": "Time and Ageing, Text 2, NoME",
+     "tier": 2,
+     "conf": "C"
+    },
+    {
+     "n": "variously 100 or 144",
+     "says": "The volume's own abbreviation list refuses to fix the value -- the source declining to choose, in a list of abbreviations, which is as plain a refusal as a source ever makes.",
+     "q": "Valian Year(s) (variously = 100 or 144",
+     "src": "t2_i_the_nature_of_middle_earth.txt:349",
+     "text": "VY        Valian Year(s) (variously = 100 or 144 löar)",
+     "witness": "The Nature of Middle-earth, abbreviations",
+     "tier": 2,
+     "conf": "EXT"
+    }
+   ],
+   "n_readings": 4,
+   "witnesses": [
+    "Annals of Aman, MR",
+    "Annals of Aman, MR (Christopher Tolkien's computation of the text's own device)",
+    "The Nature of Middle-earth, abbreviations",
+    "Time and Ageing, Text 2, NoME"
+   ],
+   "volumes": [
+    "t1_10_morgoths_ring.txt",
+    "t2_i_the_nature_of_middle_earth.txt"
+   ],
+   "later_state": {
+    "known": false,
+    "conf": "I-L",
+    "why": "NoME's texts are later authorial states than the Annals of Aman, but NoME's OWN abbreviation list still reads 'variously = 100 or 144', so the late layer is not internally settled either. C366(3) applies: the source declines to choose and the rule does not fire."
+   },
+   "declines_to_choose": true,
+   "adjudication": null,
+   "date_conf": "I-M",
+   "also_in": {
+    "dataset": "site/arda_contradictions.json",
+    "subject": "The length of a Valian Year",
+    "present": true,
+    "note": "the standing register describes this tension in prose; this record anchors each reading to a corpus line. The two are not duplicates: one says THAT the archive disagrees with itself, the other says WHERE."
+   },
+   "declines": {
+    "q": "Valian Year(s) (variously = 100 or 144",
+    "src": "t2_i_the_nature_of_middle_earth.txt:349",
+    "text": "VY        Valian Year(s) (variously = 100 or 144 löar)",
+    "conf": "C",
+    "rule": "C366(3): the rule does not fire where the source declines to choose; R12b governs -- show the disagreement."
+   },
+   "why_no_adjudication": "This is the subject C366 uses as its own example -- it records that the Valian Year was settled by the tier rule winning by default, and that the ledger records no such choice. The archive computes with one value for its timeline and flags the alternatives; that is a COMPUTATIONAL choice made in arda_reckoning, not an adjudication of the texts, and it is not recorded here as one."
+  },
+  {
+   "id": "teleri-tol-eressea",
+   "subject": "How long did the Teleri dwell apart in Tol Eressea, and in whose years?",
+   "kind": "authorial revision within one text",
+   "readings": [
+    {
+     "n": "a hundred Valian years, each as ten Sun years",
+     "says": "The manuscript reading: a hundred VALIAN years, which the sentence then glosses as ten Sun years each -- a thousand Sun years in Tol Eressea.",
+     "q": "For nigh on one hundred of the years of Valinor, which were each as ten of the years of the Sun",
+     "src": "t1_10_morgoths_ring.txt:6795",
+     "text": "§43 Here must be told how the Teleri came at last to Valinor. For nigh",
+     "witness": "Quenta Silmarillion (QS/LQ), MR",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "a hundred of our years, being ten Valian years",
+     "says": "The substituted reading INVERTS the units: a hundred of OUR years, which is only ten Valian years. The same sentence, the same hundred, and a tenfold difference in the time the Teleri were apart.",
+     "q": "For well-nigh one hundred of the years of our time",
+     "src": "t1_10_morgoths_ring.txt:7007",
+     "text": "For well-nigh one hundred of the years of our time (though that",
+     "witness": "Quenta Silmarillion, the QS typescript substitution, MR",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 2,
+   "witnesses": [
+    "Quenta Silmarillion (QS/LQ), MR",
+    "Quenta Silmarillion, the QS typescript substitution, MR"
+   ],
+   "volumes": [
+    "t1_10_morgoths_ring.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "C",
+    "why": "Christopher states the order and the mechanism of loss: the substitution was made to the QS typescript AFTER LQ 1 had been copied from it, so the later reading never reached the copies the published text rests on. He calls such changes 'lost'."
+   },
+   "declines_to_choose": false,
+   "adjudication": null,
+   "date_conf": "C",
+   "why_no_adjudication": "No ruling names it. It is included because it is the cleanest specimen in the archive of what this dataset is for: ONE sentence, TWO authorial states, a tenfold difference, and the later state invisible in every published narrative."
+  },
+  {
+   "id": "orc-origin",
+   "subject": "What were the Orcs made from?",
+   "kind": "unreconciled / intentional ambiguity",
+   "readings": [
+    {
+     "n": "corrupted Quendi",
+     "says": "The published frame: Elves taken before Utumno was broken, corrupted in the pits, bred in mockery of the Elves.",
+     "q": "by slow arts of cruelty were corrupted and enslaved; and thus did Melkor breed the hideous race of the Orcs",
+     "src": "t1_a_the_silmarillion.txt:3167",
+     "text": "there in prison, and by slow arts of cruelty were corrupted",
+     "witness": "The Silmarillion (published text), ch. 3",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "made of stone",
+     "says": "An earlier Quenta reading has Morgoth bring them into being AFTER the destruction of the Trees, made of stone.",
+     "q": "and they were made of stone, but their hearts of hatred",
+     "src": "t1_10_morgoths_ring.txt:3069",
+     "text": "in envy and mockery of the Elves, and they were made of stone,",
+     "witness": "Quenta Silmarillion §62 quoted in MR",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "beasts of humanized shape",
+     "says": "A late essay denies them a rational soul altogether: their speech is 'reeling off records set in them by Melkor'.",
+     "q": "The Orcs were beasts of humanized shape (to mock Men and Elves) deliberately perverted",
+     "src": "t1_10_morgoths_ring.txt:15244",
+     "text": "the sign of the possession of a ‘rational soul’ or fëa.7 The Orcs were beasts",
+     "witness": "Myths Transformed, MR",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "not Elvish at all",
+     "says": "Four words in the margin of his own Annals, instructing himself to undo the Elvish descent. The instruction was never carried out in a completed narrative.",
+     "q": "Alter this. Orcs are not Elvish.",
+     "src": "t1_10_morgoths_ring.txt:3170",
+     "text": "‘Alter this. Orcs are not Elvish.’ See pp. 408 ff.",
+     "witness": "Tolkien's marginal note on AAm §43, MR",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 4,
+   "witnesses": [
+    "Myths Transformed, MR",
+    "Quenta Silmarillion §62 quoted in MR",
+    "The Silmarillion (published text), ch. 3",
+    "Tolkien's marginal note on AAm §43, MR"
+   ],
+   "volumes": [
+    "t1_10_morgoths_ring.txt",
+    "t1_a_the_silmarillion.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "I-M",
+    "why": "Christopher places the Myths Transformed essays among the latest material and prints the marginal note as a late instruction, so the non-Elvish readings are later authorial states than the published chapter. What is NOT knowable is which of the late alternatives he settled on -- he wrote several and finished none."
+   },
+   "declines_to_choose": true,
+   "adjudication": null,
+   "also_in": {
+    "dataset": "site/arda_contradictions.json",
+    "subject": "The origin of the Orcs",
+    "present": true,
+    "note": "the standing register describes this tension in prose; this record anchors each reading to a corpus line. The two are not duplicates: one says THAT the archive disagrees with itself, the other says WHERE."
+   },
+   "declines": {
+    "q": "Alter this. Orcs are not Elvish.",
+    "src": "t1_10_morgoths_ring.txt:3170",
+    "text": "‘Alter this. Orcs are not Elvish.’ See pp. 408 ff.",
+    "conf": "C",
+    "rule": "C366(3): the rule does not fire where the source declines to choose; R12b governs -- show the disagreement."
+   },
+   "why_no_adjudication": "C366(3) and R12b: the source declines. Four accounts stand and the archive draws the descent-link dashed with the divergence stated."
+  },
+  {
+   "id": "balrog-number",
+   "subject": "How many Balrogs were there?",
+   "kind": "authorial revision within one text",
+   "readings": [
+    {
+     "n": "a host",
+     "says": "The Annals as written give Morgoth a HOST of Balrogs at his last stand.",
+     "q": "a host of Balrogs, the last of his servants that remained",
+     "src": "t1_10_morgoths_ring.txt:2959",
+     "text": "seeing that all was lost (for that time), he sent forth on a sudden a host of",
+     "witness": "Annals of Aman §50, the manuscript reading, MR",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "three, or at most seven",
+     "says": "In the margin beside that sentence he sets a ceiling on the whole race, in the same hand and the same pass in which he struck 'a host' out of the text.",
+     "q": "There should not be supposed more than say 3 or at most 7 ever existed",
+     "src": "t1_10_morgoths_ring.txt:3173",
+     "text": "margin my father wrote: ‘There should not be supposed more than",
+     "witness": "Tolkien's marginal note on AAm §50, MR",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 2,
+   "witnesses": [
+    "Annals of Aman §50, the manuscript reading, MR",
+    "Tolkien's marginal note on AAm §50, MR"
+   ],
+   "volumes": [
+    "t1_10_morgoths_ring.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "C",
+    "why": "The two are the SAME PASSAGE before and after his own emendation, printed side by side by Christopher: 'a host of Balrogs...' > 'his Balrogs...', with the ceiling written in the margin against it."
+   },
+   "declines_to_choose": false,
+   "adjudication": null,
+   "why_no_adjudication": "No ruling names it. Both readings are Tolkien's and the later one is a marginal instruction he never carried into a finished narrative, which is precisely the state C366 says must stay visible."
+  },
+  {
+   "id": "blue-wizards",
+   "subject": "Who were the two Blue Wizards, when did they come, and what became of them?",
+   "kind": "unreconciled / intentional ambiguity",
+   "readings": [
+    {
+     "n": "nameless in the West; three fates, none known",
+     "says": "The essay on the Istari gives three fates as alternatives and closes the question in the same sentence.",
+     "q": "whether they remained in the East, pursuing there the purposes for which they were sent; or perished; or as some hold were ensnared by Sauron and became his servants, is not now known",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:12234",
+     "text": "with Curunír, but they never returned, and whether they remained in the East, pursuing there the",
+     "witness": "The Istari, UT",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "Alatar and Pallando, of Orome",
+     "says": "A separate note names them and associates them with Orome, with no reason given for the association.",
+     "q": "here they are named, as Alatar and Pallando",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:12370",
+     "text": "in the West of Middle-earth), here they are named, as Alatar and Pallando, and are",
+     "witness": "A note printed with The Istari, UT",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "Morinehtar and Romestamo, come in the Second Age",
+     "says": "A late note names them Darkness-slayer and East-helper, brings them much earlier -- with Glorfindel, in the Second Age -- and credits them with weakening and disarraying the forces of the East.",
+     "q": "But the other two Istari were sent for a different purpose",
+     "src": "t1_12_the_peoples_of_middle_earth.txt:12740",
+     "text": "in the war in Eriador.27 But the other two Istari were sent for a different",
+     "witness": "Last Writings, PoME",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "arriving with Glorfindel",
+     "says": "The same note dates their coming against Glorfindel's return rather than against the Third Age mission of the Five.",
+     "q": "came much earlier, at the same time probably as Glorfindel, when matters became very dangerous in the Second Age",
+     "src": "t1_12_the_peoples_of_middle_earth.txt:12737",
+     "text": "The ‘other two’ came much earlier, at the same time probably as",
+     "witness": "Last Writings, PoME",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 4,
+   "witnesses": [
+    "A note printed with The Istari, UT",
+    "Last Writings, PoME",
+    "The Istari, UT"
+   ],
+   "volumes": [
+    "t1_12_the_peoples_of_middle_earth.txt",
+    "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "I-H",
+    "why": "Christopher groups the Morinehtar note with the Last Writings, the latest material in PoME, so it is a later authorial state than the UT essay. It does not therefore WIN: the earlier text is not a draft of it but an account that declines to choose among three fates."
+   },
+   "declines_to_choose": true,
+   "adjudication": null,
+   "also_in": {
+    "dataset": "site/arda_contradictions.json",
+    "subject": "The Blue Wizards",
+    "present": true,
+    "note": "the standing register describes this tension in prose; this record anchors each reading to a corpus line. The two are not duplicates: one says THAT the archive disagrees with itself, the other says WHERE."
+   },
+   "declines": {
+    "q": "whether they remained in the East, pursuing there the purposes for which they were sent; or perished; or as some hold were ensnared by Sauron and became his servants, is not now known",
+    "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:12234",
+    "text": "with Curunír, but they never returned, and whether they remained in the East, pursuing there the",
+    "conf": "C",
+    "rule": "C366(3): the rule does not fire where the source declines to choose; R12b governs -- show the disagreement."
+   },
+   "why_no_adjudication": "THE OWNER ANSWERED THIS ONE DIRECTLY AND THE ANSWER WAS NO. C366(3) records it: asked whether the 16 August rule should silently decide the Blue Wizards, he said No and ruled to display both. R12b -- his instruction that the interface show them disagreeing -- governs here."
+  },
+  {
+   "id": "elessar-maker",
+   "subject": "Who made the Elessar?",
+   "kind": "unreconciled / intentional ambiguity",
+   "readings": [
+    {
+     "n": "Enerdhil of Gondolin",
+     "says": "The text opens by naming Enerdhil, greatest of that craft among the Noldor after Feanor's death, as its maker.",
+     "q": "There was in Gondolin a jewel-smith named Enerdhil",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7875",
+     "text": "There was in Gondolin a jewel-smith named Enerdhil, the greatest of that craft among the",
+     "witness": "The Elessar, UT (the manuscript's opening)",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "the first stone returned by Olorin, from Yavanna",
+     "says": "In the first of two tales the second Elessar is the FIRST one returned by the grace of the Valar, brought to Galadriel by Olorin.",
+     "q": "This I bring to you from Yavanna. Use it as you may",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7916",
+     "text": "and wondered. And Olórin said: ‘This I bring to you from Yavanna. Use it as you may,",
+     "witness": "The Elessar, UT (first of the two tales)",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "made anew by Celebrimbor in Eregion",
+     "says": "In the second, Celebrimbor makes a new green gem for Galadriel -- more subtle and clear than Enerdhil's, and of less power, because the light of the Sun was no longer young.",
+     "q": "The other tale runs so: that long ago, ere Sauron deluded the smiths of Eregion",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7921",
+     "text": "The other tale runs so: that long ago, ere Sauron deluded the smiths of Eregion,",
+     "witness": "The Elessar, UT (second of the two tales)",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "Celebrimbor made both, and Enerdhil never existed",
+     "says": "A note at the end of the same four pages erases Enerdhil entirely and gives Celebrimbor BOTH stones.",
+     "q": "The Elessar was made in Gondolin by Celebrimbor",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7956",
+     "text": "The Elessar was made in Gondolin by Celebrimbor, and so came to Idril and so to",
+     "witness": "The Elessar, UT (the note written at the end)",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "Christopher Tolkien on the direction of change",
+     "says": "Christopher reads the end-note as an intention -- 'was to displace' -- not as an accomplished revision, and notes that Enerdhil appears in no other writing at all.",
+     "q": "the concluding words of the text show that Celebrimbor was to displace him as the maker of the Elessar in Gondolin",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7967",
+     "text": "Enerdhil appears in no other writing; and the concluding words of the text show that",
+     "witness": "Christopher Tolkien's commentary, UT",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 5,
+   "witnesses": [
+    "Christopher Tolkien's commentary, UT",
+    "The Elessar, UT (first of the two tales)",
+    "The Elessar, UT (second of the two tales)",
+    "The Elessar, UT (the manuscript's opening)",
+    "The Elessar, UT (the note written at the end)"
+   ],
+   "volumes": [
+    "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "I-M",
+    "why": "The end-note is later than the narrative it is written at the end of, and Christopher says what it was FOR. But 'was to displace' is an intention: no narrative in which Celebrimbor makes the Gondolin stone was ever written, so the later state exists only as a note."
+   },
+   "declines_to_choose": true,
+   "adjudication": null,
+   "also_in": {
+    "dataset": "site/arda_contradictions.json",
+    "subject": "Who made the Elessar",
+    "present": true,
+    "note": "the standing register describes this tension in prose; this record anchors each reading to a corpus line. The two are not duplicates: one says THAT the archive disagrees with itself, the other says WHERE."
+   },
+   "declines": {
+    "q": "In ages after there was again an Elessar, and of this two things are said, though which is true only those Wise could say who now are gone",
+    "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7895",
+    "text": "In ages after there was again an Elessar, and of this two things are said, though which",
+    "conf": "C",
+    "rule": "C366(3): the rule does not fire where the source declines to choose; R12b governs -- show the disagreement."
+   },
+   "why_no_adjudication": "The source declines in its own voice, inside the narrative frame, and C366(3) says the rule does not fire there. Four makers stand on the artifact card as a fork with no verdict."
+  },
+  {
+   "id": "celebrimbor-descent",
+   "subject": "Whose son was Celebrimbor?",
+   "kind": "draft evolution",
+   "readings": [
+    {
+     "n": "a survivor of Gondolin, one of Turgon's artificers",
+     "says": "The earlier conception makes him a Gondolindrim smith with no Feanorian blood at all.",
+     "q": "He is here said to have been one of the survivors of Gondolin, who had been among Turgon's greatest artificers",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7429",
+     "text": "Galadriel and Celeborn had in their company a Noldorin craftsman named Celebrimbor. [He",
+     "witness": "Concerning Galadriel and Celeborn, UT",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "a descendant of Feanor, son of Curufin",
+     "says": "The text is emended to the descent the revised Lord of the Rings and the published Silmarillion carry: son of Curufin, left in Nargothrond when his father was driven forth.",
+     "q": "but the text is emended to the later story that made him a descendant of",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7431",
+     "text": "greatest artificers; but the text is emended to the later story that made him a descendant of",
+     "witness": "Christopher Tolkien's bracketed note, UT",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 2,
+   "witnesses": [
+    "Christopher Tolkien's bracketed note, UT",
+    "Concerning Galadriel and Celeborn, UT"
+   ],
+   "volumes": [
+    "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "C",
+    "why": "Christopher writes 'the later story' outright, and names where it was printed."
+   },
+   "declines_to_choose": false,
+   "adjudication": null,
+   "why_no_adjudication": "No ruling names it. Both stand; the Feanorian descent is marked as the later authorial state on Christopher's word, not on a print date."
+  },
+  {
+   "id": "finrod-finarfin-names",
+   "subject": "Which prince is Finrod -- the father or the son?",
+   "kind": "editorial choice vs manuscript",
+   "readings": [
+    {
+     "n": "Finrod the father, Inglor Felagund the son",
+     "says": "In the older naming, Finrod is the third son of Finwe and INGLOR Felagund is his son -- the manuscript even shows the substitution being made in this sentence.",
+     "q": "Then [Finrod >] Inglor cast off his crown and made ready to go forth alone with Beren",
+     "src": "t1_11_the_war_of_the_jewels.txt:2543",
+     "text": "§193 Then [Finrod >] Inglor cast off his crown and made ready to go",
+     "witness": "The Grey Annals, WJ",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "Finarfin the father, Finrod Felagund the son",
+     "says": "Before the 1966 revised Lord of the Rings the two names were reassigned; two passages in Appendices B and F were emended for it, and the older texts were not.",
+     "q": "my father changed Finrod to Finarfin, while his son Felagund, previously called Inglor Felagund, became Finrod Felagund",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:8106",
+     "text": "my father changed Finrod to Finarfin, while his son Felagund, previously called Inglor",
+     "witness": "Christopher Tolkien's note 20, UT",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 2,
+   "witnesses": [
+    "Christopher Tolkien's note 20, UT",
+    "The Grey Annals, WJ"
+   ],
+   "volumes": [
+    "t1_11_the_war_of_the_jewels.txt",
+    "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "C",
+    "why": "Christopher gives the change, its direction and the edition it preceded. This is a NAMING variant rather than a narrative one, and it is included because it is why the same name means two different people across the corpus -- which is how a true string gets matched against the wrong subject."
+   },
+   "declines_to_choose": false,
+   "adjudication": null,
+   "why_no_adjudication": "No ruling names it. The later assignment is universal in the published texts; the earlier one is live in every HoME volume that predates it, and a reader following a name across the corpus meets both."
+  },
+  {
+   "id": "tar-ardamin",
+   "subject": "Was Tar-Ardamin a King of Numenor, and does Appendix A list him?",
+   "kind": "editorial choice vs manuscript",
+   "readings": [
+    {
+     "n": "the nineteenth ruler, died 2899",
+     "says": "The Line of Elros gives him his own numbered entry between Tar-Calmacil and Ar-Adunakhor, with dates.",
+     "q": "He was born in the year 2618, and he ruled for 74 years until his death in 2899",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:6966",
+     "text": "He was born in the year 2618, and he ruled for 74 years until his death in 2899. His name in",
+     "witness": "The Line of Elros, UT",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "Christopher Tolkien, 1980: omitted in error from The Lord of the Rings",
+     "says": "Christopher reaches a verdict about the text he had in front of him in 1980, and grounds it on the death-date alone rather than on a preference. He also records that he had already edited the Akallabeth down from a twentieth king to a nineteenth before he noticed the Line of Elros.",
+     "q": "he was omitted in error from the list in The Lord of the Rings",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7136",
+     "text": "clear, from the fact alone that Tar-Ardamin’s death-date is here given as 2899, that he was",
+     "witness": "Christopher Tolkien's note 11, UT",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "Christopher Tolkien, hedging his own verdict",
+     "says": "The same note ends by withdrawing some of its own confidence, which is why this record keeps both halves.",
+     "q": "It may be that a more complex textual situation underlies the passage than a mere error of omission",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7142",
+     "text": "the royal names should there be attributed to the first ruler after Tar-Calmacil. It may be that",
+     "witness": "Christopher Tolkien's note 11, UT",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "present in Appendix A, in the copy this archive holds",
+     "says": "THE PROBE REFUTED THIS RECORD'S FIRST DRAFT. The list of Kings and Queens in the archive's own copy ENDS with Tar-Ardamin and the next sentence begins 'After Ardamin the Kings took the sceptre in names of the Numenorean (or Adunaic) tongue'. The omission Christopher argued against in 1980 is not in the text this archive quotes -- so the two are not two readings of one edition, they are two editions.",
+     "q": "Tar-Alcarin, Tar-Calmacil, Tar-Ardamin",
+     "src": "t1_c_the_lord_of_the_rings.txt:46275",
+     "text": "Tar-Ancalimon, Tar-Telemmaitë, Tar-Vanimeldë (the third Queen), Tar-",
+     "witness": "The Lord of the Rings, Appendix A I(i)",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 4,
+   "witnesses": [
+    "Christopher Tolkien's note 11, UT",
+    "The Line of Elros, UT",
+    "The Lord of the Rings, Appendix A I(i)"
+   ],
+   "volumes": [
+    "t1_c_the_lord_of_the_rings.txt",
+    "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "C",
+    "why": "Not a question of drafts at all once the probe had run. Christopher DESIGNATES the absence an error in 1980; the copy the archive holds already carries the king. The direction is therefore stated by the corpus twice over -- by the designation, and by the printed list that now agrees with it."
+   },
+   "declines_to_choose": false,
+   "adjudication": {
+    "conf": "C",
+    "by": "Christopher Tolkien, in the corpus",
+    "date": null,
+    "ruling_id": null,
+    "where": "Unfinished Tales, The Line of Elros, note 11",
+    "reads": "Tar-Ardamin was omitted in error from Appendix A's list; the Akallabeth was editorially changed from a twentieth king to a nineteenth before this was noticed.",
+    "ruling_id_note": "An adjudication BY THE AUTHOR'S EDITOR INSIDE THE CORPUS, not by the archive and not by its owner. It is recorded because R13 -- the owner's ruling -- directs the archive to use what Tolkien and his son deem canon, and this is his son deeming. The hedge in the same note is published as a reading beside it, and so is the printed list that has since caught up with him."
+   },
+   "date_conf": "C",
+   "also_in": {
+    "dataset": "site/arda_contradictions.json",
+    "subject": "Tar-Ardamin in the line of kings",
+    "present": true,
+    "note": "the standing register describes this tension in prose; this record anchors each reading to a corpus line. The two are not duplicates: one says THAT the archive disagrees with itself, the other says WHERE."
+   }
+  },
+  {
+   "id": "strider-trotter",
+   "subject": "Who is the Ranger the hobbits meet at Bree?",
+   "kind": "draft evolution",
+   "readings": [
+    {
+     "n": "Trotter, known by his shoes",
+     "says": "In the drafts Butterbur's counterpart names him for the noise of his wooden shoes -- Trotter is a hobbit in this layer, not a Man.",
+     "q": "but he's known round here as Trotter. You can hear him coming along the road in those shoes",
+     "src": "t1_6_the_return_of_the_shadow.txt:5945",
+     "text": "is I never heard, but he's known round here as Trotter. You can",
+     "witness": "The Return of the Shadow (the first Bree chapter)",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "Strider, known by his stride",
+     "says": "The published sentence keeps the shape of the draft exactly and changes the man: the shoes become long shanks.",
+     "q": "but he's known round here as Strider. Goes about at a great pace on his long shanks",
+     "src": "t1_c_the_lord_of_the_rings.txt:7550",
+     "text": "his right name is I’ve never heard: but he’s known round here as",
+     "witness": "The Lord of the Rings, Book I ch. 9",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 2,
+   "witnesses": [
+    "The Lord of the Rings, Book I ch. 9",
+    "The Return of the Shadow (the first Bree chapter)"
+   ],
+   "volumes": [
+    "t1_6_the_return_of_the_shadow.txt",
+    "t1_c_the_lord_of_the_rings.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "C",
+    "why": "The Return of the Shadow is Christopher's edition of the drafts OF the published book; the direction is the book's own composition and is not in question."
+   },
+   "declines_to_choose": false,
+   "adjudication": null,
+   "why_no_adjudication": "No ruling names it, and none is needed for the narrative: The Lord of the Rings is the finished text. The record exists because the two sentences are the same sentence, and reading them together is how a reader sees a book being made."
+  },
+  {
+   "id": "bingo-frodo",
+   "subject": "Whose party opens The Lord of the Rings, and whose birthday?",
+   "kind": "draft evolution",
+   "readings": [
+    {
+     "n": "Bingo Bolger-Baggins' seventy-second",
+     "says": "Through four versions the party is BINGO'S, and Bingo moves from Bilbo's son to Bilbo's nephew and ward.",
+     "q": "When Bingo Bolger-Baggins of the well-known Baggins family prepared to celebrate his seventy-",
+     "src": "t1_6_the_return_of_the_shadow.txt:1635",
+     "text": "into the text (which therefore now begins: 'When Bingo Bolger-Baggins",
+     "witness": "The Return of the Shadow (fourth version of ch. 1)",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "Bilbo Baggins' eleventy-first",
+     "says": "The published opening returns the party to Bilbo and the age to eleventy-one.",
+     "q": "When Mr. Bilbo Baggins of Bag End announced that he would shortly be celebrating his eleventy-",
+     "src": "t1_c_the_lord_of_the_rings.txt:1455",
+     "text": "When Mr. Bilbo Baggins of Bag End announced that he would shortly",
+     "witness": "The Lord of the Rings, Book I ch. 1",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 2,
+   "witnesses": [
+    "The Lord of the Rings, Book I ch. 1",
+    "The Return of the Shadow (fourth version of ch. 1)"
+   ],
+   "volumes": [
+    "t1_6_the_return_of_the_shadow.txt",
+    "t1_c_the_lord_of_the_rings.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "C",
+    "why": "Same as strider-trotter: these are the drafts of the published book, and Christopher's edition is arranged as their sequence."
+   },
+   "declines_to_choose": false,
+   "adjudication": null,
+   "why_no_adjudication": "No ruling names it; the published text is finished and the drafts are drafts. Recorded so that the opening sentence of the archive's most-cited book can be read against the sentence it replaced."
+  },
+  {
+   "id": "beren-kindred",
+   "subject": "Was Beren an Elf or a Man?",
+   "kind": "draft evolution",
+   "readings": [
+    {
+     "n": "a Gnome of Aryador",
+     "says": "In the Lost Tales Beren is an ELF -- a Gnome, in that layer's word -- and his kindred dwell among Men in Aryador. The whole force of the later story, that a mortal loved an immortal, is not yet there.",
+     "q": "he was no runagate but came of a kindred of Gnomes that dwelt in Aryador",
+     "src": "t1_2_the_book_of_lost_tales_part_two.txt:623",
+     "text": "but Beren answered that he was no runagate but came of a kindred of",
+     "witness": "The Tale of Tinuviel, BoLT II",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "son of Barahir, of the House of Beor",
+     "says": "In the published text he is a Man of the First House, the last of the outlaws of Dorthonion.",
+     "q": "and Beren son of Barahir alone escaping came hardly into Doriath",
+     "src": "t1_a_the_silmarillion.txt:7932",
+     "text": "told hereafter; and Beren son of Barahir alone escaping came hardly",
+     "witness": "The Silmarillion (published text), ch. 18",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 2,
+   "witnesses": [
+    "The Silmarillion (published text), ch. 18",
+    "The Tale of Tinuviel, BoLT II"
+   ],
+   "volumes": [
+    "t1_2_the_book_of_lost_tales_part_two.txt",
+    "t1_a_the_silmarillion.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "C",
+    "why": "The Book of Lost Tales is the earliest layer of the legendarium and Christopher's edition says so throughout; no statement is needed beyond the volume's own frame."
+   },
+   "declines_to_choose": false,
+   "adjudication": null,
+   "why_no_adjudication": "No ruling names it. It is recorded because it is the largest single change in the legendarium's central love story, and because the archive's Beren pages rest entirely on the later reading."
+  },
+  {
+   "id": "beren-captor",
+   "subject": "Who held Beren captive?",
+   "kind": "draft evolution",
+   "readings": [
+    {
+     "n": "Tevildo Prince of Cats",
+     "says": "In the Lost Tales the captor is a giant cat, Melko's thane, whose kitchens Beren is set to work in.",
+     "q": "he gave orders for Beren to be made a thrall of Tevildo Prince of Cats",
+     "src": "t1_2_the_book_of_lost_tales_part_two.txt:650",
+     "text": "clothed sweetly in words of praise; therefore now he gave orders for",
+     "witness": "The Tale of Tinuviel, BoLT II",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "Sauron, in Tol-in-Gaurhoth",
+     "says": "In the published text the captor is Sauron, lord of werewolves, in the tower on Tol Sirion that he had taken from Orodreth.",
+     "q": "In the time when Sauron cast Beren into the pit",
+     "src": "t1_a_the_silmarillion.txt:8364",
+     "text": "In the time when Sauron cast Beren into the pit a weight of horror",
+     "witness": "The Silmarillion (published text), ch. 19",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 2,
+   "witnesses": [
+    "The Silmarillion (published text), ch. 19",
+    "The Tale of Tinuviel, BoLT II"
+   ],
+   "volumes": [
+    "t1_2_the_book_of_lost_tales_part_two.txt",
+    "t1_a_the_silmarillion.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "C",
+    "why": "Same as beren-kindred: the Lost Tales are the earliest layer, and Christopher traces the succession Tevildo > Thu > Sauron across the volumes."
+   },
+   "declines_to_choose": false,
+   "adjudication": null,
+   "why_no_adjudication": "No ruling names it. Recorded because Sauron's own early history is a variant chain, not a biography, and a reader who meets Tevildo in a footnote should be able to find out what he is."
+  },
+  {
+   "id": "riddle-game-ending",
+   "subject": "How did the Riddle-game end?",
+   "kind": "designated by the author",
+   "readings": [
+    {
+     "n": "Bilbo leaped over Gollum and fled",
+     "says": "The account the Prologue gives as true, and the one the revised Hobbit prints.",
+     "q": "In the end, gathering his courage, he leaped over Gollum in the dark, and",
+     "src": "t1_c_the_lord_of_the_rings.txt:1290",
+     "text": "use it to help him kill the wretched creature at a disadvantage. In the",
+     "witness": "The Lord of the Rings, Prologue 4",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "Gollum promised him a present and could not find it",
+     "says": "The story Bilbo first told -- which is word for word the story the FIRST EDITION of The Hobbit printed. Tolkien did not delete the earlier reading; he made it a lie told by his own character.",
+     "q": "To them his account was that Gollum had promised to give him a present, if he won the game",
+     "src": "t1_c_the_lord_of_the_rings.txt:1296",
+     "text": "it to his companions. To them his account was that Gollum had",
+     "witness": "The Lord of the Rings, Prologue 4",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "Gollum showed him the way out",
+     "says": "The scholarship's description of the original manuscript layer, carried in its own voice. NOT Tolkien's words and not tier 1.",
+     "q": "Gollum does not try to kill Bilbo but instead faithfully shows him the way out of the goblin-tunnels",
+     "src": "t2_the_history_of_the_hobbit.txt:203",
+     "text": "striking examples, in this original version of the story Gollum does not try",
+     "witness": "John Rateliff, The History of The Hobbit",
+     "tier": 2,
+     "conf": "EXT"
+    }
+   ],
+   "n_readings": 3,
+   "witnesses": [
+    "John Rateliff, The History of The Hobbit",
+    "The Lord of the Rings, Prologue 4"
+   ],
+   "volumes": [
+    "t1_c_the_lord_of_the_rings.txt",
+    "t2_the_history_of_the_hobbit.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "C",
+    "why": "Tolkien himself states which is later and why, in the Prologue, in the published book."
+   },
+   "declines_to_choose": false,
+   "adjudication": {
+    "conf": "C",
+    "by": "J.R.R. Tolkien, in the corpus",
+    "date": null,
+    "ruling_id": null,
+    "where": "The Lord of the Rings, Prologue, 'Of the Finding of the Ring'",
+    "reads": "The Prologue names the first account a false one told by Bilbo, and keeps it in the book as such -- the author designating a canonical reading without deleting the variant.",
+    "ruling_id_note": "This is the clean case of the DESIGNATION half of the owner's rule of 16 August, ratified at C366 -- the clause about the form Tolkien or his son said to be canon. Here Tolkien said."
+   }
+  },
+  {
+   "id": "galadriel-ban",
+   "subject": "Was Galadriel unwilling to return to Aman, or forbidden?",
+   "kind": "authorial revision within one text",
+   "readings": [
+    {
+     "n": "unwilling to forsake Middle-earth",
+     "says": "As first written she stays by choice: the years of exile lie heavy on her and she still will not go.",
+     "q": "and yet was unwilling to forsake Middle-earth",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7901",
+     "text": "Noldor, and she longed for news of her kin and for the blessed land of her birth, and yet",
+     "witness": "The Elessar, UT (the manuscript reading)",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "not permitted yet to forsake Middle-earth",
+     "says": "The emendation introduces the BAN: she is not permitted. Choice becomes sentence, in one substituted clause.",
+     "q": "but was not permitted yet to forsake Middle-earth",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7902",
+     "text": "was unwilling to forsake Middle-earth [this sentence was changed to read: but was not",
+     "witness": "The Elessar, UT (the emendation)",
+     "tier": 1,
+     "conf": "C"
+    },
+    {
+     "n": "Christopher Tolkien on the sequence",
+     "says": "Christopher states that the ban is the later conception and that it is introduced by emendation here.",
+     "q": "though the text was later emended and the conception of the ban introduced",
+     "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7964",
+     "text": "being unwilling to forsake Middle-earth (cf. p. 302) – though the text was later emended and the",
+     "witness": "Christopher Tolkien's commentary, UT",
+     "tier": 1,
+     "conf": "C"
+    }
+   ],
+   "n_readings": 3,
+   "witnesses": [
+    "Christopher Tolkien's commentary, UT",
+    "The Elessar, UT (the emendation)",
+    "The Elessar, UT (the manuscript reading)"
+   ],
+   "volumes": [
+    "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "C",
+    "why": "Christopher states it: the ban is the later conception, introduced by emendation to this very text."
+   },
+   "declines_to_choose": false,
+   "adjudication": null,
+   "also_in": {
+    "dataset": "site/arda_contradictions.json",
+    "subject": "The history of Galadriel and Celeborn entire",
+    "present": true,
+    "note": "the standing register describes this tension in prose; this record anchors each reading to a corpus line. The two are not duplicates: one says THAT the archive disagrees with itself, the other says WHERE."
+   },
+   "why_no_adjudication": "No ruling names it, and arda_contradictions already records the archive's practice for the whole Galadriel-and-Celeborn history: use only movements attested per-scheme, with the scheme named, and invent no composite. Christopher's own words on that history are quoted there."
+  }
+ ],
+ "silences": [
+  {
+   "id": "tar-ardamin-in-the-held-lord-of-the-rings",
+   "asked": "Is the name Tar-Ardamin present anywhere in The Lord of the Rings?",
+   "probe": "ardatext.has_word('Tar-Ardamin')",
+   "population": 2,
+   "population_named": [
+    "t1_c_the_lord_of_the_rings.txt",
+    "t1_c_appendix_tables_raw.txt"
+   ],
+   "found_in": [
+    "t1_c_the_lord_of_the_rings.txt"
+   ],
+   "found_in_tier1": [
+    "t1_c_the_lord_of_the_rings.txt"
+   ],
+   "silent": false,
+   "silent_in_tolkiens_own_books": false,
+   "state": "attested",
+   "matters": "THIS PROBE REFUTED THE RECORD IT WAS WRITTEN TO SUPPORT, which is the only reason it is worth reading. The variant `tar-ardamin` was drafted with a reading that said the king is ABSENT from Appendix A, on the strength of Christopher Tolkien's 1980 note. The probe found him twice in the archive's own copy -- in the list of Kings and Queens and in the index -- so the reading was struck and replaced by the printed line. A silence asserted from a scholar's sentence about a DIFFERENT EDITION is not a silence; it is a claim about a book nobody in this archive has opened.",
+   "conf": "C"
+  },
+  {
+   "id": "ardamin-adunaic-name",
+   "asked": "Is Ar-Abattarik, Tar-Ardamin's Adunaic name, present anywhere in The Lord of the Rings?",
+   "probe": "ardatext.has_word('Ar-Abattarik')",
+   "population": 2,
+   "population_named": [
+    "t1_c_the_lord_of_the_rings.txt",
+    "t1_c_appendix_tables_raw.txt"
+   ],
+   "found_in": [],
+   "found_in_tier1": [],
+   "silent": true,
+   "silent_in_tolkiens_own_books": true,
+   "state": "the corpus does not say",
+   "matters": "Appendix A gives the King's Men's Adunaic names beside the Quenya ones, so the Adunaic form is the second place the king could have survived in the published text.",
+   "conf": "C"
+  },
+  {
+   "id": "enerdhil-elsewhere",
+   "asked": "Is Enerdhil, the Elessar's first maker, named in any other book of the citable corpus?",
+   "probe": "ardatext.has_word('Enerdhil')",
+   "population": 232,
+   "population_named": "the citable corpus",
+   "found_in": [
+    "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
+    "t2_the_j_r_r_tolkien_companion_and_guide.txt",
+    "t2_the_lord_of_the_rings_a_reader_s_companion.txt",
+    "t3_a_gateway_to_sindarin.txt",
+    "t3_the_complete_tolkien_companion.txt"
+   ],
+   "found_in_tier1": [
+    "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
+   ],
+   "silent": false,
+   "silent_in_tolkiens_own_books": false,
+   "state": "attested",
+   "matters": "Christopher writes that 'Enerdhil appears in no other writing'. That is a claim about the manuscripts, and this probe asks the narrower question the archive can actually answer: does he appear in any other BOOK this archive holds? A silence the archive can check is worth more than one it repeats.",
+   "conf": "C"
+  },
+  {
+   "id": "morinehtar-elsewhere",
+   "asked": "Are Morinehtar and Romestamo named anywhere outside The Peoples of Middle-earth?",
+   "probe": "ardatext.has_word('Morinehtar')",
+   "population": 232,
+   "population_named": "the citable corpus",
+   "found_in": [
+    "t1_12_the_peoples_of_middle_earth.txt",
+    "t1_13_index.txt",
+    "t2_the_history_of_the_hobbit.txt",
+    "t3_ardalambion_quen_eng_htm.txt",
+    "t3_eldamo_qq_quen_eng_doc.txt"
+   ],
+   "found_in_tier1": [
+    "t1_12_the_peoples_of_middle_earth.txt",
+    "t1_13_index.txt"
+   ],
+   "silent": false,
+   "silent_in_tolkiens_own_books": false,
+   "state": "attested",
+   "matters": "If the late names appeared in Unfinished Tales too, the two accounts of the Blue Wizards would be one account and this record would be a false variant.",
+   "conf": "C"
+  }
+ ],
+ "refused": []
+}

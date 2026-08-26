@@ -5606,5 +5606,58 @@
   "rule": "conf EXT on every row, a HAND and a LICENCE AS STATED instead of a tier, and no licence guessed where none is stated. Stated in full in the dataset.",
   "why_not_here": "as `witnesses` and `art_catalogue`: the register declares, the dataset holds.",
   "conf": "EXT"
+ },
+ "variants": {
+  "what": "Textual variants: the same matter told two or more ways across Tolkien's fifty years of writing, each reading anchored to the corpus line that says it, with NO adjudication unless a person made one. SAMSI §X.4, executing C366.",
+  "variants": 18,
+  "readings": 55,
+  "volumes": 10,
+  "adjudicated": 3,
+  "source_declines_to_choose": 4,
+  "later_state_unknown": 2,
+  "dataset": "site/arda_variants.json",
+  "why_not_here": "The readings are quotations with loci and prose; site/corpus.html fetches this register over the wire under a gzipped ceiling map/budget_check.py enforces. The register declares; the dataset holds.",
+  "conf": "C",
+  "tier": 1
+ },
+ "adaptations": {
+  "what": "Adaptations of Tolkien's work -- film, television, radio, video game, tabletop, music, print -- and where named adaptations diverge from the text. A SEPARATE LAYER in a separate file, per the protocol's separately-queryable-layers rule.",
+  "works": 76,
+  "deviations": 14,
+  "by_medium": {
+   "video game": 25,
+   "film": 24,
+   "print": 8,
+   "tabletop": 5,
+   "music": 4,
+   "radio": 4,
+   "unclassified": 3,
+   "television": 2,
+   "internet": 1
+  },
+  "dataset": "site/arda_adaptations.json",
+  "no_tier": "An adaptation makes no claim about Arda, so no row carries a tier. Each carries a hand, a source URL, a retrieved_at and a licence as stated. NOT to be confused with C474's `tier: 5`, which is an ORIGIN axis.",
+  "hosts_refused": 2,
+  "why_not_here": "as `witnesses`, `art_catalogue`, `mss_catalogue` and `scholarship`: site/corpus.html fetches this register over the wire under a ceiling map/budget_check.py enforces. The register declares; the dataset holds.",
+  "sibling": "site/arda_fanon.json",
+  "conf": "EXT"
+ },
+ "fanon": {
+  "what": "What Tolkien fandom believes -- fan encyclopedias, fan fiction archives, forums, games' inventions, circulating theories -- recorded as beliefs held by named people in named places, with what the corpus does with each MEASURED by map/ardatext.py. A SEPARATE LAYER in a separate file.",
+  "claims": 11,
+  "venues": 4,
+  "by_verdict": {
+   "attested but overgeneralised": 1,
+   "attested elsewhere": 2,
+   "disputed reading": 1,
+   "not attested": 1,
+   "true string wrong subject": 6
+  },
+  "disputed_source_warnings": 1,
+  "dataset": "site/arda_fanon.json",
+  "no_tier": "A fan's belief makes no claim this archive endorses about Arda, so no row carries a tier. Each carries a hand, a source URL, a retrieved_at and a licence as stated.",
+  "why_not_here": "as `witnesses`, `scholarship` and `adaptations`: the register declares, the dataset holds.",
+  "sibling": "site/arda_adaptations.json",
+  "conf": "EXT"
  }
 }
