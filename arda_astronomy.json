@@ -212,7 +212,7 @@
  ],
  "refused_by_shape": "a headword carrying a digit or a slash: [0-9/]",
  "counts": {
-  "objects": 60,
+  "objects": 69,
   "index_entries_read": 9673,
   "declared_probes": 31,
   "corpus_files_searched": 231,
@@ -224,22 +224,22 @@
    "celestial region": 3,
    "constellation": 16,
    "moon": 9,
-   "planet": 1,
+   "planet": 10,
    "star": 11,
    "sun": 20
   },
   "by_conf": {
-   "C": 60
+   "C": 69
   },
   "by_route": {
    "declared probe": 31,
-   "index gloss": 50
+   "index gloss": 59
   },
   "by_lowest_corpus_tier": {
-   "t1": 60
+   "t1": 69
   },
   "searched_and_empty": 0,
-  "refused_scan_artefacts": 3,
+  "refused_scan_artefacts": 4,
   "refused_common_words": 7
  },
  "objects_what": "One row per astronomical object. `id` is minted here and is unique to this file -- no other published dataset holds an id for a star, which is the gap this file fills. `cite` names the index and the volume that classified it; `attestation` is the independent measurement.",
@@ -3713,6 +3713,73 @@
    ]
   },
   {
+   "id": "astro_alkarinque",
+   "name": "Alkarinquë",
+   "kind": "planet",
+   "kinds": [
+    "planet"
+   ],
+   "route": "index gloss",
+   "why_probed": null,
+   "named_inside_frame": [],
+   "named_inside_frame_note": null,
+   "index_glosses": [
+    {
+     "gloss": "(X) The planet Jupiter. 160, 166; Alcarinquë 166. See pp 434-5",
+     "source": "13 Index",
+     "tier": 1
+    }
+   ],
+   "gloss_text": "(X) The planet Jupiter. 160, 166; Alcarinquë 166. See pp 434-5",
+   "cite": [
+    "13 Index, index s.v. Alkarinquë [t1]"
+   ],
+   "conf": "C",
+   "conf_basis": "the name stands as whole words in a tier-1 text -- Tolkien's own -- at the locus below, and the kind is the index's own classifying gloss",
+   "attestation": {
+    "searched": 231,
+    "searched_by": "map/ardatext.py has_word, EXCLUDING corpus/t1_13_index.txt -- the merged-index volume site/arda_index.json was extracted from, where every Route-A headword is attested by construction",
+    "n_attesting_files": 4,
+    "attested_in": [
+     {
+      "file": "t1_10_morgoths_ring.txt",
+      "corpus_tier": 1
+     },
+     {
+      "file": "t1_a_the_silmarillion.txt",
+      "corpus_tier": 1
+     },
+     {
+      "file": "t3_ardalambion_quen_eng_htm.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_eldamo_qq_quen_eng_doc.txt",
+      "corpus_tier": 3
+     }
+    ],
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_10_morgoths_ring.txt",
+     "corpus_tier": 1,
+     "line": 6140,
+     "line_text": "Queen of the Stars. Karnil and Luinil, Nénar and Lumbar, Alkarinquë and",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null,
+    "including_the_index_volume": {
+     "searched": 232,
+     "n_attesting_files": 5,
+     "lowest_corpus_tier": 1,
+     "note": "the same measurement WITH corpus/t1_13_index.txt in the population. Published so the exclusion is visible rather than silent; nothing in this file is decided on it."
+    }
+   },
+   "routes": [
+    "index gloss"
+   ]
+  },
+  {
    "id": "astro_elmo",
    "name": "Elmō",
    "kind": "planet",
@@ -3783,6 +3850,588 @@
     "including_the_index_volume": {
      "searched": 232,
      "n_attesting_files": 8,
+     "lowest_corpus_tier": 1,
+     "note": "the same measurement WITH corpus/t1_13_index.txt in the population. Published so the exclusion is visible rather than silent; nothing in this file is decided on it."
+    }
+   },
+   "routes": [
+    "index gloss"
+   ]
+  },
+  {
+   "id": "astro_enekol",
+   "name": "Eneköl",
+   "kind": "planet",
+   "kinds": [
+    "planet"
+   ],
+   "route": "index gloss",
+   "why_probed": null,
+   "named_inside_frame": [
+    "Ramer"
+   ],
+   "named_inside_frame_note": "the index attributes this name to a character of The Notion Club Papers, not to the legendarium. Kept, and marked, because dropping it would publish nothing and hiding the attribution would publish a falsehood.",
+   "index_glosses": [
+    {
+     "gloss": "(IXb) [Ramer] The planet Saturn. 205, 221. (Replaced Shomorú.)",
+     "source": "13 Index",
+     "tier": 1
+    }
+   ],
+   "gloss_text": "(IXb) [Ramer] The planet Saturn. 205, 221. (Replaced Shomorú.)",
+   "cite": [
+    "13 Index, index s.v. Eneköl [t1]"
+   ],
+   "conf": "C",
+   "conf_basis": "the name stands as whole words in a tier-1 text -- Tolkien's own -- at the locus below, and the kind is the index's own classifying gloss",
+   "attestation": {
+    "searched": 231,
+    "searched_by": "map/ardatext.py has_word, EXCLUDING corpus/t1_13_index.txt -- the merged-index volume site/arda_index.json was extracted from, where every Route-A headword is attested by construction",
+    "n_attesting_files": 2,
+    "attested_in": [
+     {
+      "file": "t1_11_the_war_of_the_jewels.txt",
+      "corpus_tier": 1
+     },
+     {
+      "file": "t1_9_sauron_defeated.txt",
+      "corpus_tier": 1
+     }
+    ],
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_11_the_war_of_the_jewels.txt",
+     "corpus_tier": 1,
+     "line": 290,
+     "line_text": "others (Emberü, and Eneköl for Saturn) that cannot be so explained.",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null,
+    "including_the_index_volume": {
+     "searched": 232,
+     "n_attesting_files": 3,
+     "lowest_corpus_tier": 1,
+     "note": "the same measurement WITH corpus/t1_13_index.txt in the population. Published so the exclusion is visible rather than silent; nothing in this file is decided on it."
+    }
+   },
+   "routes": [
+    "index gloss"
+   ]
+  },
+  {
+   "id": "astro_glund",
+   "name": "Glund",
+   "kind": "planet",
+   "kinds": [
+    "planet"
+   ],
+   "route": "index gloss",
+   "why_probed": null,
+   "named_inside_frame": [
+    "Lewis"
+   ],
+   "named_inside_frame_note": "the index attributes this name to a character of The Notion Club Papers, not to the legendarium. Kept, and marked, because dropping it would publish nothing and hiding the attribution would publish a falsehood.",
+   "index_glosses": [
+    {
+     "gloss": "(IXb) [Lewis] The planet Jupiter. 203, 220; Glundandra 220",
+     "source": "13 Index",
+     "tier": 1
+    }
+   ],
+   "gloss_text": "(IXb) [Lewis] The planet Jupiter. 203, 220; Glundandra 220",
+   "cite": [
+    "13 Index, index s.v. Glund [t1]"
+   ],
+   "conf": "C",
+   "conf_basis": "the name stands as whole words in a tier-1 text -- Tolkien's own -- at the locus below, and the kind is the index's own classifying gloss",
+   "attestation": {
+    "searched": 231,
+    "searched_by": "map/ardatext.py has_word, EXCLUDING corpus/t1_13_index.txt -- the merged-index volume site/arda_index.json was extracted from, where every Route-A headword is attested by construction",
+    "n_attesting_files": 1,
+    "attested_in": [
+     {
+      "file": "t1_9_sauron_defeated.txt",
+      "corpus_tier": 1
+     }
+    ],
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_9_sauron_defeated.txt",
+     "corpus_tier": 1,
+     "line": 6843,
+     "line_text": "Perelandra or Glund.54 I get names much more consonant with the forms I",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null,
+    "including_the_index_volume": {
+     "searched": 232,
+     "n_attesting_files": 2,
+     "lowest_corpus_tier": 1,
+     "note": "the same measurement WITH corpus/t1_13_index.txt in the population. Published so the exclusion is visible rather than silent; nothing in this file is decided on it."
+    }
+   },
+   "routes": [
+    "index gloss"
+   ]
+  },
+  {
+   "id": "astro_gormok",
+   "name": "Gormok",
+   "kind": "planet",
+   "kinds": [
+    "planet"
+   ],
+   "route": "index gloss",
+   "why_probed": null,
+   "named_inside_frame": [
+    "Ramer"
+   ],
+   "named_inside_frame_note": "the index attributes this name to a character of The Notion Club Papers, not to the legendarium. Kept, and marked, because dropping it would publish nothing and hiding the attribution would publish a falsehood.",
+   "index_glosses": [
+    {
+     "gloss": "(IXb) [Ramer] The planet Mars 205, 220. See Karan",
+     "source": "13 Index",
+     "tier": 1
+    }
+   ],
+   "gloss_text": "(IXb) [Ramer] The planet Mars 205, 220. See Karan",
+   "cite": [
+    "13 Index, index s.v. Gormok [t1]"
+   ],
+   "conf": "C",
+   "conf_basis": "the name stands as whole words in a tier-1 text -- Tolkien's own -- at the locus below, and the kind is the index's own classifying gloss",
+   "attestation": {
+    "searched": 231,
+    "searched_by": "map/ardatext.py has_word, EXCLUDING corpus/t1_13_index.txt -- the merged-index volume site/arda_index.json was extracted from, where every Route-A headword is attested by construction",
+    "n_attesting_files": 1,
+    "attested_in": [
+     {
+      "file": "t1_9_sauron_defeated.txt",
+      "corpus_tier": 1
+     }
+    ],
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_9_sauron_defeated.txt",
+     "corpus_tier": 1,
+     "line": 6894,
+     "line_text": "of Earth, the Talkative Planet. The only hnau ever to dwell in red Gormok",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null,
+    "including_the_index_volume": {
+     "searched": 232,
+     "n_attesting_files": 2,
+     "lowest_corpus_tier": 1,
+     "note": "the same measurement WITH corpus/t1_13_index.txt in the population. Published so the exclusion is visible rather than silent; nothing in this file is decided on it."
+    }
+   },
+   "routes": [
+    "index gloss"
+   ]
+  },
+  {
+   "id": "astro_gyuruchill",
+   "name": "Gyürüchill",
+   "kind": "planet",
+   "kinds": [
+    "planet"
+   ],
+   "route": "index gloss",
+   "why_probed": null,
+   "named_inside_frame": [
+    "Ramer"
+   ],
+   "named_inside_frame_note": "the index attributes this name to a character of The Notion Club Papers, not to the legendarium. Kept, and marked, because dropping it would publish nothing and hiding the attribution would publish a falsehood.",
+   "index_glosses": [
+    {
+     "gloss": "(IXb) [Ramer] The planet Saturn. 221. (Replaced by Shomorú.)",
+     "source": "13 Index",
+     "tier": 1
+    }
+   ],
+   "gloss_text": "(IXb) [Ramer] The planet Saturn. 221. (Replaced by Shomorú.)",
+   "cite": [
+    "13 Index, index s.v. Gyürüchill [t1]"
+   ],
+   "conf": "C",
+   "conf_basis": "the name stands as whole words in a tier-1 text -- Tolkien's own -- at the locus below, and the kind is the index's own classifying gloss",
+   "attestation": {
+    "searched": 231,
+    "searched_by": "map/ardatext.py has_word, EXCLUDING corpus/t1_13_index.txt -- the merged-index volume site/arda_index.json was extracted from, where every Route-A headword is attested by construction",
+    "n_attesting_files": 2,
+    "attested_in": [
+     {
+      "file": "t1_11_the_war_of_the_jewels.txt",
+      "corpus_tier": 1
+     },
+     {
+      "file": "t1_9_sauron_defeated.txt",
+      "corpus_tier": 1
+     }
+    ],
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_11_the_war_of_the_jewels.txt",
+     "corpus_tier": 1,
+     "line": 284,
+     "line_text": "Gyürüchill (p. 221, note 60), derived from Hungarian gyürü ‘ring’ and",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null,
+    "including_the_index_volume": {
+     "searched": 232,
+     "n_attesting_files": 3,
+     "lowest_corpus_tier": 1,
+     "note": "the same measurement WITH corpus/t1_13_index.txt in the population. Published so the exclusion is visible rather than silent; nothing in this file is decided on it."
+    }
+   },
+   "routes": [
+    "index gloss"
+   ]
+  },
+  {
+   "id": "astro_karan",
+   "name": "Karan",
+   "kind": "planet",
+   "kinds": [
+    "planet"
+   ],
+   "route": "index gloss",
+   "why_probed": null,
+   "named_inside_frame": [
+    "Ramer"
+   ],
+   "named_inside_frame_note": "the index attributes this name to a character of The Notion Club Papers, not to the legendarium. Kept, and marked, because dropping it would publish nothing and hiding the attribution would publish a falsehood.",
+   "index_glosses": [
+    {
+     "gloss": "(IXb) [Ramer] The planet Mars. 220. (Replaced by Gormok.)",
+     "source": "13 Index",
+     "tier": 1
+    }
+   ],
+   "gloss_text": "(IXb) [Ramer] The planet Mars. 220. (Replaced by Gormok.)",
+   "cite": [
+    "13 Index, index s.v. Karan [t1]"
+   ],
+   "conf": "C",
+   "conf_basis": "the name stands as whole words in a tier-1 text -- Tolkien's own -- at the locus below, and the kind is the index's own classifying gloss",
+   "attestation": {
+    "searched": 231,
+    "searched_by": "map/ardatext.py has_word, EXCLUDING corpus/t1_13_index.txt -- the merged-index volume site/arda_index.json was extracted from, where every Route-A headword is attested by construction",
+    "n_attesting_files": 17,
+    "attested_in": [
+     {
+      "file": "t1_10_morgoths_ring.txt",
+      "corpus_tier": 1
+     },
+     {
+      "file": "t1_5_the_lost_road_and_other_writings.txt",
+      "corpus_tier": 1
+     },
+     {
+      "file": "t1_9_sauron_defeated.txt",
+      "corpus_tier": 1
+     },
+     {
+      "file": "t1_a_secret_vice_tolkien_on_invented_languages.txt",
+      "corpus_tier": 1
+     },
+     {
+      "file": "t2_vinyar_tengwar_41_50.txt",
+      "corpus_tier": 2
+     },
+     {
+      "file": "t3_a_gateway_to_sindarin.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_ardalambion_affix_1_htm.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_ardalambion_ilkorin_htm.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_ardalambion_index_indexs_htm.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_ardalambion_ndnn_htm.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_ardalambion_oldsind_htm.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_ardalambion_p2_htm.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_ardalambion_primelv_htm.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_ardalambion_quen_eng_htm.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_eldamo_qq_quen_eng_doc.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_giraudeau_j_r_r_tolkien_a_global_theory.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_vinyar_tengwar_index.txt",
+      "corpus_tier": 3
+     }
+    ],
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_10_morgoths_ring.txt",
+     "corpus_tier": 1,
+     "line": 16133,
+     "line_text": "Mars (cf. Michael Ramer’s name Karan for Mars, IX.220) — which in turn leads to the identification",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null,
+    "including_the_index_volume": {
+     "searched": 232,
+     "n_attesting_files": 18,
+     "lowest_corpus_tier": 1,
+     "note": "the same measurement WITH corpus/t1_13_index.txt in the population. Published so the exclusion is visible rather than silent; nothing in this file is decided on it."
+    }
+   },
+   "routes": [
+    "index gloss"
+   ]
+  },
+  {
+   "id": "astro_malacandra",
+   "name": "Malacandra",
+   "kind": "planet",
+   "kinds": [
+    "planet"
+   ],
+   "route": "index gloss",
+   "why_probed": null,
+   "named_inside_frame": [
+    "Lewis"
+   ],
+   "named_inside_frame_note": "the index attributes this name to a character of The Notion Club Papers, not to the legendarium. Kept, and marked, because dropping it would publish nothing and hiding the attribution would publish a falsehood.",
+   "index_glosses": [
+    {
+     "gloss": "(IXb) [Lewis] The planet Mars. 181, 212-13, 220; Mala- candrian 220. See Mars",
+     "source": "13 Index",
+     "tier": 1
+    }
+   ],
+   "gloss_text": "(IXb) [Lewis] The planet Mars. 181, 212-13, 220; Mala- candrian 220. See Mars",
+   "cite": [
+    "13 Index, index s.v. Malacandra [t1]"
+   ],
+   "conf": "C",
+   "conf_basis": "the name stands as whole words in a tier-1 text -- Tolkien's own -- at the locus below, and the kind is the index's own classifying gloss",
+   "attestation": {
+    "searched": 231,
+    "searched_by": "map/ardatext.py has_word, EXCLUDING corpus/t1_13_index.txt -- the merged-index volume site/arda_index.json was extracted from, where every Route-A headword is attested by construction",
+    "n_attesting_files": 14,
+    "attested_in": [
+     {
+      "file": "t1_7_the_treason_of_isengard.txt",
+      "corpus_tier": 1
+     },
+     {
+      "file": "t1_9_sauron_defeated.txt",
+      "corpus_tier": 1
+     },
+     {
+      "file": "t1_the_letters_of_j_r_r_tolkien.txt",
+      "corpus_tier": 1
+     },
+     {
+      "file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
+      "corpus_tier": 1
+     },
+     {
+      "file": "t2_the_history_of_the_hobbit.txt",
+      "corpus_tier": 2
+     },
+     {
+      "file": "t3_lotr_1954_2004.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_mallorn_17.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_mallorn_33_proceedings_of_the_j_r_r_tolkien_centenar.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_mallorn_46.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_mallorn_54.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_mythlore_index.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_parma_eldalamberon_vol_1_no_5.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_the_ring_goes_ever_on.txt",
+      "corpus_tier": 3
+     },
+     {
+      "file": "t3_tolkien_s_legendarium.txt",
+      "corpus_tier": 3
+     }
+    ],
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_7_the_treason_of_isengard.txt",
+     "corpus_tier": 1,
+     "line": 17964,
+     "line_text": "Malacandra there are three totally distinct races that are hnau.",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null,
+    "including_the_index_volume": {
+     "searched": 232,
+     "n_attesting_files": 15,
+     "lowest_corpus_tier": 1,
+     "note": "the same measurement WITH corpus/t1_13_index.txt in the population. Published so the exclusion is visible rather than silent; nothing in this file is decided on it."
+    }
+   },
+   "routes": [
+    "index gloss"
+   ]
+  },
+  {
+   "id": "astro_shomoru",
+   "name": "Shomorû",
+   "kind": "planet",
+   "kinds": [
+    "planet"
+   ],
+   "route": "index gloss",
+   "why_probed": null,
+   "named_inside_frame": [
+    "Ramer"
+   ],
+   "named_inside_frame_note": "the index attributes this name to a character of The Notion Club Papers, not to the legendarium. Kept, and marked, because dropping it would publish nothing and hiding the attribution would publish a falsehood.",
+   "index_glosses": [
+    {
+     "gloss": "(IXb) [Ramer] The planet Saturn. 221. (Replaced Gyürüchill replaced by Eneköl.)",
+     "source": "13 Index",
+     "tier": 1
+    }
+   ],
+   "gloss_text": "(IXb) [Ramer] The planet Saturn. 221. (Replaced Gyürüchill replaced by Eneköl.)",
+   "cite": [
+    "13 Index, index s.v. Shomorû [t1]"
+   ],
+   "conf": "C",
+   "conf_basis": "the name stands as whole words in a tier-1 text -- Tolkien's own -- at the locus below, and the kind is the index's own classifying gloss",
+   "attestation": {
+    "searched": 231,
+    "searched_by": "map/ardatext.py has_word, EXCLUDING corpus/t1_13_index.txt -- the merged-index volume site/arda_index.json was extracted from, where every Route-A headword is attested by construction",
+    "n_attesting_files": 2,
+    "attested_in": [
+     {
+      "file": "t1_11_the_war_of_the_jewels.txt",
+      "corpus_tier": 1
+     },
+     {
+      "file": "t1_9_sauron_defeated.txt",
+      "corpus_tier": 1
+     }
+    ],
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_11_the_war_of_the_jewels.txt",
+     "corpus_tier": 1,
+     "line": 286,
+     "line_text": "was then changed to Shomorú, probably from Hungarian szomorú ‘sad’",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null,
+    "including_the_index_volume": {
+     "searched": 232,
+     "n_attesting_files": 3,
+     "lowest_corpus_tier": 1,
+     "note": "the same measurement WITH corpus/t1_13_index.txt in the population. Published so the exclusion is visible rather than silent; nothing in this file is decided on it."
+    }
+   },
+   "routes": [
+    "index gloss"
+   ]
+  },
+  {
+   "id": "astro_zingil",
+   "name": "Zingil",
+   "kind": "planet",
+   "kinds": [
+    "planet"
+   ],
+   "route": "index gloss",
+   "why_probed": null,
+   "named_inside_frame": [],
+   "named_inside_frame_note": null,
+   "index_glosses": [
+    {
+     "gloss": "(IXb) [Raraer] The planet Venus. 205, 220",
+     "source": "13 Index",
+     "tier": 1
+    }
+   ],
+   "gloss_text": "(IXb) [Raraer] The planet Venus. 205, 220",
+   "cite": [
+    "13 Index, index s.v. Zingil [t1]"
+   ],
+   "conf": "C",
+   "conf_basis": "the name stands as whole words in a tier-1 text -- Tolkien's own -- at the locus below, and the kind is the index's own classifying gloss",
+   "attestation": {
+    "searched": 231,
+    "searched_by": "map/ardatext.py has_word, EXCLUDING corpus/t1_13_index.txt -- the merged-index volume site/arda_index.json was extracted from, where every Route-A headword is attested by construction",
+    "n_attesting_files": 1,
+    "attested_in": [
+     {
+      "file": "t1_9_sauron_defeated.txt",
+      "corpus_tier": 1
+     }
+    ],
+    "lowest_corpus_tier": 1,
+    "locus": {
+     "file": "t1_9_sauron_defeated.txt",
+     "corpus_tier": 1,
+     "line": 7433,
+     "line_text": "58 Gormok, Zingil: in A Ramer’s name for Mars is the Elvish word Karan (‘red’); Venus",
+     "line_note": null
+    },
+    "verdict": "attested",
+    "searched_and_empty_note": null,
+    "including_the_index_volume": {
+     "searched": 232,
+     "n_attesting_files": 2,
      "lowest_corpus_tier": 1,
      "note": "the same measurement WITH corpus/t1_13_index.txt in the population. Published so the exclusion is visible rather than silent; nothing in this file is decided on it."
     }
@@ -8031,6 +8680,17 @@
    "glosses": [
     {
      "gloss": "(V) Name of the Moon in Noldorin. 41, 56, 243, 361, 385, 392 (another name Elfaron ‘Star-hunter’ 387, cf. 241). See Isil, Rana",
+     "source": "13 Index",
+     "tier": 1
+    }
+   ],
+   "searched": 231
+  },
+  {
+   "name": "Kamil",
+   "glosses": [
+    {
+     "gloss": "(X) The planet Mars. 160, 166; Carnil 166. See pp. 434-5",
      "source": "13 Index",
      "tier": 1
     }
