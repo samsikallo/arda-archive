@@ -501,7 +501,9 @@
     "kind": "unrecorded",
     "ids": [],
     "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
-   }
+   },
+   "publication_layer": "LICENSED_DERIVATIVE",
+   "publication_layer_basis": "corpus/t4_the_maps_of_tolkiens_middle_earth_brian_sibley_john_.txt carries the copyright page: 'Published by HarperCollins Publishers 2003', 'Text Copyright (c) Brian Sibley', 'Illustrations copyright (c) John Howe', 'Original maps copyright (c) The Trustees of The J.R.R. Tolkien 1967', 'The J.R.R. Tolkien Estate Limited'. Tolkien's publisher, the Estate named, other hands' work derived from his -- which is what LICENSED_DERIVATIVE is and is NOT an adaptation."
   },
   {
    "file": "The_Fantasy_Art_of_John_Howe_-_The_Fantasy_Art_of_John_Howe.pdf",
@@ -2014,7 +2016,9 @@
     ],
     "granularity": "item",
     "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t4_the_art_of_the_lord_of_the_rings.txt)"
-   }
+   },
+   "publication_layer": "ADAPTATION",
+   "publication_layer_basis": "corpus/t4_the_art_of_the_lord_of_the_rings.txt opens 'Although filming the enormously successful Lord of the Rings trilogy began'. The register's own note records the correction that established it -- filed for three weeks as Tolkien's own hand, caught by the owner, and re-measured at 139 occurrences of film vocabulary against 0 in every volume of Tolkien's own writing. A film design book is an adaptation's own material."
   },
   {
    "file": "(A) The Silmarillion.pdf",
@@ -2815,7 +2819,9 @@
     "kind": "unrecorded",
     "ids": [],
     "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
-   }
+   },
+   "publication_layer": "LICENSED_DERIVATIVE",
+   "publication_layer_basis": "corpus/t3_ocr_alan_lee_the_lord_of_the_rings_sketchbook.txt carries 'Copyright (c) Alan Lee 2005', 'Illustrations (c) Alan Lee 1991, 2005', 'Published by HarperCollins Publishers 2005', 'The J.R.R. Tolkien Estate Limited', and its own subject: the watercolours 'for the special centenary edition'. THE AUTHORISED BOOK ILLUSTRATIONS, NOT FILM CONCEPT ART -- which is why this row is t3 where the two Gary Russell books are t4, and the layer follows the same fact."
   },
   {
    "file": "eldamo_PEE_Parma_Errata.pdf",
@@ -2979,7 +2985,9 @@
     "kind": "unrecorded",
     "ids": [],
     "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
-   }
+   },
+   "publication_layer": "ADAPTATION",
+   "publication_layer_basis": "corpus/t4_the_art_of_the_fellowship_of_the_ring.txt carries its own jacket copy: 'Cover images (c) 2001 New Line Productions, Inc.', 'NEW LINE CINEMA', 'exclusive interviews with director Peter Jackson', 'images that did not make it into the final film'. Read from the artefact, not inferred from the title -- which is how the companion volume above was got wrong."
   },
   {
    "file": "The Atlas of Middle-Earth.pdf",
@@ -3269,7 +3277,9 @@
     "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
    },
    "text_damaged": true,
-   "text_damaged_note": "publisher text layer corrupt; quarantined 26 Aug 2026 by the owner's ruling. NOT machine-read -- the OCR banner would be the wrong claim about how this text came to exist."
+   "text_damaged_note": "publisher text layer corrupt; quarantined 26 Aug 2026 by the owner's ruling. NOT machine-read -- the OCR banner would be the wrong claim about how this text came to exist.",
+   "publication_layer": "RPG",
+   "publication_layer_basis": "corpus/t4_lotr_roleplay.txt names itself: 'Based on The One Ring Roleplaying Game by Francesco Nepitello and Marco Maggi' and 'trademarks of Middle-earth Enterprises, LLC and are used under [licence]'. 23 occurrences of 'Roleplaying', 58 of 'd6', 6 of 'character sheet'. THE TEXT LAYER IS QUARANTINED as publisher-corrupt (C-ruled 26 Aug) and these counts are of TITLE-CASE STRINGS THAT SURVIVED THE DAMAGE, which is a weaker reading than a clean text would give and is still decisive about what the book IS."
   },
   {
    "file": "Reader And Educator Guide To the Hobbit And the Lord Of The Rings.pdf",
