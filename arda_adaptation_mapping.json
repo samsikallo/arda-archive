@@ -87,7 +87,7 @@
    "entity_index_entities": 1122
   }
  },
- "edges_what": "One row per edge. `entity` resolves in the collection named beside it; `adaptation_record` names the dataset, the collection and the row id it points at. A work-to-source edge carries no entity and says so with a null.",
+ "edges_what": "One row per edge. `entity` resolves in the collection named beside it; `adaptation_record` names the dataset, the collection and the row id it points at, in a field called `record_id` and NEVER `id`: map/xref_census.py calls a record `anything carrying id or key`, so a reference written as `id` would read as this file DEFINING the deviation it points at -- a reference wearing a definition's clothes, in a census whose whole subject is telling those apart. A work-to-source edge carries no entity and says so with a null.",
  "edges": [
   {
    "kind": "deviation names entity",
@@ -98,7 +98,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-fotr-arwen-ford",
+    "record_id": "jackson-fotr-arwen-ford",
     "work": "The Lord of the Rings: The Fellowship of the Ring",
     "medium": "film",
     "year": 2001,
@@ -121,7 +121,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-fotr-arwen-ford",
+    "record_id": "jackson-fotr-arwen-ford",
     "work": "The Lord of the Rings: The Fellowship of the Ring",
     "medium": "film",
     "year": 2001,
@@ -144,7 +144,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-fotr-arwen-ford",
+    "record_id": "jackson-fotr-arwen-ford",
     "work": "The Lord of the Rings: The Fellowship of the Ring",
     "medium": "film",
     "year": 2001,
@@ -167,7 +167,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-fotr-arwen-ford",
+    "record_id": "jackson-fotr-arwen-ford",
     "work": "The Lord of the Rings: The Fellowship of the Ring",
     "medium": "film",
     "year": 2001,
@@ -190,7 +190,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-fotr-arwen-ford",
+    "record_id": "jackson-fotr-arwen-ford",
     "work": "The Lord of the Rings: The Fellowship of the Ring",
     "medium": "film",
     "year": 2001,
@@ -213,7 +213,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-fotr-bombadil",
+    "record_id": "jackson-fotr-bombadil",
     "work": "The Lord of the Rings: The Fellowship of the Ring",
     "medium": "film",
     "year": 2001,
@@ -236,7 +236,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-fotr-bombadil",
+    "record_id": "jackson-fotr-bombadil",
     "work": "The Lord of the Rings: The Fellowship of the Ring",
     "medium": "film",
     "year": 2001,
@@ -259,7 +259,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-fotr-bombadil",
+    "record_id": "jackson-fotr-bombadil",
     "work": "The Lord of the Rings: The Fellowship of the Ring",
     "medium": "film",
     "year": 2001,
@@ -282,7 +282,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-fotr-bombadil",
+    "record_id": "jackson-fotr-bombadil",
     "work": "The Lord of the Rings: The Fellowship of the Ring",
     "medium": "film",
     "year": 2001,
@@ -305,7 +305,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-fotr-bombadil",
+    "record_id": "jackson-fotr-bombadil",
     "work": "The Lord of the Rings: The Fellowship of the Ring",
     "medium": "film",
     "year": 2001,
@@ -328,7 +328,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-ttt-faramir-osgiliath",
+    "record_id": "jackson-ttt-faramir-osgiliath",
     "work": "The Lord of the Rings: The Two Towers",
     "medium": "film",
     "year": 2002,
@@ -351,7 +351,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-ttt-faramir-osgiliath",
+    "record_id": "jackson-ttt-faramir-osgiliath",
     "work": "The Lord of the Rings: The Two Towers",
     "medium": "film",
     "year": 2002,
@@ -374,7 +374,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-ttt-hornburg",
+    "record_id": "jackson-ttt-hornburg",
     "work": "The Lord of the Rings: The Two Towers",
     "medium": "film",
     "year": 2002,
@@ -397,7 +397,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-ttt-hornburg",
+    "record_id": "jackson-ttt-hornburg",
     "work": "The Lord of the Rings: The Two Towers",
     "medium": "film",
     "year": 2002,
@@ -420,7 +420,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-ttt-hornburg",
+    "record_id": "jackson-ttt-hornburg",
     "work": "The Lord of the Rings: The Two Towers",
     "medium": "film",
     "year": 2002,
@@ -443,7 +443,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-ttt-hornburg",
+    "record_id": "jackson-ttt-hornburg",
     "work": "The Lord of the Rings: The Two Towers",
     "medium": "film",
     "year": 2002,
@@ -466,7 +466,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-ttt-hornburg",
+    "record_id": "jackson-ttt-hornburg",
     "work": "The Lord of the Rings: The Two Towers",
     "medium": "film",
     "year": 2002,
@@ -489,7 +489,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-ttt-hornburg",
+    "record_id": "jackson-ttt-hornburg",
     "work": "The Lord of the Rings: The Two Towers",
     "medium": "film",
     "year": 2002,
@@ -512,7 +512,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-rotk-denethor",
+    "record_id": "jackson-rotk-denethor",
     "work": "The Lord of the Rings: The Return of the King",
     "medium": "film",
     "year": 2003,
@@ -535,7 +535,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-rotk-denethor",
+    "record_id": "jackson-rotk-denethor",
     "work": "The Lord of the Rings: The Return of the King",
     "medium": "film",
     "year": 2003,
@@ -558,7 +558,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-rotk-witchking-staff",
+    "record_id": "jackson-rotk-witchking-staff",
     "work": "The Lord of the Rings: The Return of the King",
     "medium": "film",
     "year": 2003,
@@ -581,7 +581,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-rotk-scouring",
+    "record_id": "jackson-rotk-scouring",
     "work": "The Lord of the Rings: The Return of the King",
     "medium": "film",
     "year": 2003,
@@ -604,7 +604,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-rotk-scouring",
+    "record_id": "jackson-rotk-scouring",
     "work": "The Lord of the Rings: The Return of the King",
     "medium": "film",
     "year": 2003,
@@ -627,7 +627,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-rotk-scouring",
+    "record_id": "jackson-rotk-scouring",
     "work": "The Lord of the Rings: The Return of the King",
     "medium": "film",
     "year": 2003,
@@ -650,7 +650,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "hobbit-films-tauriel",
+    "record_id": "hobbit-films-tauriel",
     "work": "The Hobbit (film series)",
     "medium": "film",
     "year": 2013,
@@ -673,7 +673,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "hobbit-films-azog",
+    "record_id": "hobbit-films-azog",
     "work": "The Hobbit (film series)",
     "medium": "film",
     "year": 2012,
@@ -696,7 +696,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "hobbit-films-azog",
+    "record_id": "hobbit-films-azog",
     "work": "The Hobbit (film series)",
     "medium": "film",
     "year": 2012,
@@ -719,7 +719,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "hobbit-films-azog",
+    "record_id": "hobbit-films-azog",
     "work": "The Hobbit (film series)",
     "medium": "film",
     "year": 2012,
@@ -742,7 +742,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "rop-halbrand",
+    "record_id": "rop-halbrand",
     "work": "The Lord of the Rings: The Rings of Power",
     "medium": "television",
     "year": 2022,
@@ -765,7 +765,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "rop-halbrand",
+    "record_id": "rop-halbrand",
     "work": "The Lord of the Rings: The Rings of Power",
     "medium": "television",
     "year": 2022,
@@ -788,7 +788,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "rop-halbrand",
+    "record_id": "rop-halbrand",
     "work": "The Lord of the Rings: The Rings of Power",
     "medium": "television",
     "year": 2022,
@@ -811,7 +811,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "rop-celebrimbor",
+    "record_id": "rop-celebrimbor",
     "work": "The Lord of the Rings: The Rings of Power",
     "medium": "television",
     "year": 2022,
@@ -834,7 +834,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "rop-celebrimbor",
+    "record_id": "rop-celebrimbor",
     "work": "The Lord of the Rings: The Rings of Power",
     "medium": "television",
     "year": 2022,
@@ -857,7 +857,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "rop-celebrimbor",
+    "record_id": "rop-celebrimbor",
     "work": "The Lord of the Rings: The Rings of Power",
     "medium": "television",
     "year": 2022,
@@ -880,7 +880,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "rop-celebrimbor",
+    "record_id": "rop-celebrimbor",
     "work": "The Lord of the Rings: The Rings of Power",
     "medium": "television",
     "year": 2022,
@@ -903,7 +903,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "shadow-of-mordor-celebrimbor",
+    "record_id": "shadow-of-mordor-celebrimbor",
     "work": "Middle-earth: Shadow of Mordor",
     "medium": "video game",
     "year": 2014,
@@ -926,7 +926,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "shadow-of-mordor-celebrimbor",
+    "record_id": "shadow-of-mordor-celebrimbor",
     "work": "Middle-earth: Shadow of Mordor",
     "medium": "video game",
     "year": 2014,
@@ -949,7 +949,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "shadow-of-mordor-celebrimbor",
+    "record_id": "shadow-of-mordor-celebrimbor",
     "work": "Middle-earth: Shadow of Mordor",
     "medium": "video game",
     "year": 2014,
@@ -972,7 +972,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "shadow-of-mordor-celebrimbor",
+    "record_id": "shadow-of-mordor-celebrimbor",
     "work": "Middle-earth: Shadow of Mordor",
     "medium": "video game",
     "year": 2014,
@@ -995,7 +995,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "shadow-of-mordor-celebrimbor",
+    "record_id": "shadow-of-mordor-celebrimbor",
     "work": "Middle-earth: Shadow of Mordor",
     "medium": "video game",
     "year": 2014,
@@ -1018,7 +1018,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "merp-nazgul-names",
+    "record_id": "merp-nazgul-names",
     "work": "Middle-earth Role Playing",
     "medium": "tabletop",
     "year": 1984,
@@ -1041,7 +1041,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "merp-nazgul-names",
+    "record_id": "merp-nazgul-names",
     "work": "Middle-earth Role Playing",
     "medium": "tabletop",
     "year": 1984,
@@ -1064,7 +1064,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "bakshi-balrog-wings",
+    "record_id": "bakshi-balrog-wings",
     "work": "The Lord of the Rings (1978 film)",
     "medium": "film",
     "year": 1978,
@@ -1087,7 +1087,7 @@
    "adaptation_record": {
     "dataset": "arda_fanon.json",
     "collection": "claims",
-    "id": "modern-military-ranks",
+    "record_id": "modern-military-ranks",
     "verdict": null
    },
    "matched": "Arda",
@@ -1107,7 +1107,7 @@
    "adaptation_record": {
     "dataset": "arda_fanon.json",
     "collection": "claims",
-    "id": "balrog-wings",
+    "record_id": "balrog-wings",
     "verdict": null
    },
    "matched": "Balrogs",
@@ -1127,7 +1127,7 @@
    "adaptation_record": {
     "dataset": "arda_fanon.json",
     "collection": "claims",
-    "id": "balrog-wings",
+    "record_id": "balrog-wings",
     "verdict": null
    },
    "matched": "Arda",
@@ -1147,7 +1147,7 @@
    "adaptation_record": {
     "dataset": "arda_fanon.json",
     "collection": "claims",
-    "id": "hadhafang",
+    "record_id": "hadhafang",
     "verdict": null
    },
    "matched": "arwen",
@@ -1167,7 +1167,7 @@
    "adaptation_record": {
     "dataset": "arda_fanon.json",
     "collection": "claims",
-    "id": "muar-balrog",
+    "record_id": "muar-balrog",
     "verdict": null
    },
    "matched": "Morgoth",
@@ -1187,7 +1187,7 @@
    "adaptation_record": {
     "dataset": "arda_fanon.json",
     "collection": "claims",
-    "id": "muar-balrog",
+    "record_id": "muar-balrog",
     "verdict": null
    },
    "matched": "Durin's Bane",
@@ -1207,7 +1207,7 @@
    "adaptation_record": {
     "dataset": "arda_fanon.json",
     "collection": "claims",
-    "id": "muar-balrog",
+    "record_id": "muar-balrog",
     "verdict": null
    },
    "matched": "Gothmog",
@@ -1227,7 +1227,7 @@
    "adaptation_record": {
     "dataset": "arda_fanon.json",
     "collection": "claims",
-    "id": "thaurlach-targoroth",
+    "record_id": "thaurlach-targoroth",
     "verdict": null
    },
    "matched": "Balrogs",
@@ -1247,7 +1247,7 @@
    "adaptation_record": {
     "dataset": "arda_fanon.json",
     "collection": "claims",
-    "id": "new-notion-club-archives",
+    "record_id": "new-notion-club-archives",
     "verdict": null
    },
    "matched": "Arda",
@@ -1267,7 +1267,7 @@
    "adaptation_record": {
     "dataset": "arda_fanon.json",
     "collection": "claims",
-    "id": "tolkien-fan-fiction-corpus",
+    "record_id": "tolkien-fan-fiction-corpus",
     "verdict": null
    },
    "matched": "Arda",
@@ -1287,7 +1287,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q5473",
+    "record_id": "Q5473",
     "title": "Middle-Earth Role Playing",
     "medium": "tabletop"
    },
@@ -1295,7 +1295,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1313,14 +1313,14 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q131074",
+    "record_id": "Q131074",
     "title": "The Lord of the Rings: The Return of the King",
     "medium": "film"
    },
    "adapted_from": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q115285"
+    "record_id": "Q115285"
    },
    "based_on_as_written": "The Return of the King",
    "matched_by": "exact",
@@ -1337,7 +1337,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q190214",
+    "record_id": "Q190214",
     "title": "The Lord of the Rings",
     "medium": "film"
    },
@@ -1345,7 +1345,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1363,7 +1363,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q263593",
+    "record_id": "Q263593",
     "title": "The Lord of the Rings  — Original Soundtrack Recording",
     "medium": "music"
    },
@@ -1371,7 +1371,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1389,7 +1389,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q268133",
+    "record_id": "Q268133",
     "title": "Symphony No. 1 \"The Lord of the Rings\"",
     "medium": "music"
    },
@@ -1397,7 +1397,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1415,7 +1415,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q293181",
+    "record_id": "Q293181",
     "title": "Born of Hope",
     "medium": "film"
    },
@@ -1423,7 +1423,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1441,7 +1441,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q293219",
+    "record_id": "Q293219",
     "title": "The Hunt for Gollum",
     "medium": "film"
    },
@@ -1449,7 +1449,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1467,7 +1467,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q372385",
+    "record_id": "Q372385",
     "title": "The Lord of the Rings: The Third Age",
     "medium": "video game"
    },
@@ -1475,7 +1475,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1493,7 +1493,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q378913",
+    "record_id": "Q378913",
     "title": "The Lord of the Rings",
     "medium": "film"
    },
@@ -1501,7 +1501,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1519,14 +1519,14 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q393059",
+    "record_id": "Q393059",
     "title": "Lego The Hobbit",
     "medium": "video game"
    },
    "adapted_from": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q80379"
+    "record_id": "Q80379"
    },
    "based_on_as_written": "The Hobbit: An Unexpected Journey",
    "matched_by": "exact",
@@ -1543,14 +1543,14 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q393059",
+    "record_id": "Q393059",
     "title": "Lego The Hobbit",
     "medium": "video game"
    },
    "adapted_from": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q719915"
+    "record_id": "Q719915"
    },
    "based_on_as_written": "The Hobbit: The Desolation of Smaug",
    "matched_by": "exact",
@@ -1567,7 +1567,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q440060",
+    "record_id": "Q440060",
     "title": "The Lord of the Rings: The Battle for Middle-earth",
     "medium": "video game"
    },
@@ -1575,7 +1575,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1593,7 +1593,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q905691",
+    "record_id": "Q905691",
     "title": "Lord of the Rings",
     "medium": "music"
    },
@@ -1601,7 +1601,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1619,7 +1619,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q1194246",
+    "record_id": "Q1194246",
     "title": "The Lord of the Rings: Conquest",
     "medium": "video game"
    },
@@ -1627,7 +1627,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1645,7 +1645,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q1194258",
+    "record_id": "Q1194258",
     "title": "Lord of the Rings",
     "medium": "tabletop"
    },
@@ -1653,7 +1653,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1671,14 +1671,14 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q1194265",
+    "record_id": "Q1194265",
     "title": "Middle-Earth Strategy Battle Game",
     "medium": "tabletop"
    },
    "adapted_from": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q74331"
+    "record_id": "Q74331"
    },
    "based_on_as_written": "The Hobbit trilogy",
    "matched_by": "exact",
@@ -1695,7 +1695,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q1194265",
+    "record_id": "Q1194265",
     "title": "Middle-Earth Strategy Battle Game",
     "medium": "tabletop"
    },
@@ -1703,7 +1703,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1721,14 +1721,14 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q1194265",
+    "record_id": "Q1194265",
     "title": "Middle-Earth Strategy Battle Game",
     "medium": "tabletop"
    },
    "adapted_from": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q127367"
+    "record_id": "Q127367"
    },
    "based_on_as_written": "The Lord of the Rings: The Fellowship of the Ring",
    "matched_by": "exact",
@@ -1745,7 +1745,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q1194266",
+    "record_id": "Q1194266",
     "title": "The Lord of the Rings Roleplaying Game",
     "medium": "tabletop"
    },
@@ -1753,7 +1753,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1771,7 +1771,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q1440462",
+    "record_id": "Q1440462",
     "title": "The Lord of the Rings: War in the North",
     "medium": "video game"
    },
@@ -1779,7 +1779,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1797,7 +1797,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q1613936",
+    "record_id": "Q1613936",
     "title": "Bored of the Rings",
     "medium": "print"
    },
@@ -1805,7 +1805,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1823,7 +1823,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q1754787",
+    "record_id": "Q1754787",
     "title": "The Lord of the Rings: The Battle for Middle-earth II: The Rise of the Witch-king",
     "medium": "video game"
    },
@@ -1831,7 +1831,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1849,7 +1849,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q1996197",
+    "record_id": "Q1996197",
     "title": "The Lord of the Rings: The Battle for Middle-earth II",
     "medium": "video game"
    },
@@ -1857,7 +1857,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1875,7 +1875,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q2028764",
+    "record_id": "Q2028764",
     "title": "The One Ring Roleplaying Game",
     "medium": "tabletop"
    },
@@ -1883,7 +1883,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1901,7 +1901,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q2082291",
+    "record_id": "Q2082291",
     "title": "Lego The Lord of the Rings",
     "medium": "video game"
    },
@@ -1909,7 +1909,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1927,7 +1927,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q2157919",
+    "record_id": "Q2157919",
     "title": "The Lord of the Rings: Aragorn's Quest",
     "medium": "video game"
    },
@@ -1935,7 +1935,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -1953,14 +1953,14 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q2353071",
+    "record_id": "Q2353071",
     "title": "The Lord of the Rings: The Two Towers",
     "medium": "video game"
    },
    "adapted_from": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q127367"
+    "record_id": "Q127367"
    },
    "based_on_as_written": "The Lord of the Rings: The Fellowship of the Ring",
    "matched_by": "exact",
@@ -1977,7 +1977,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q2458718",
+    "record_id": "Q2458718",
     "title": "The Lord of the Rings: Tactics",
     "medium": "video game"
    },
@@ -1985,7 +1985,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2003,7 +2003,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q3005035",
+    "record_id": "Q3005035",
     "title": "Tales from the Perilous Realm",
     "medium": "print"
    },
@@ -2011,7 +2011,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "The Adventures of Tom Bombadil and Other Verses from the Red Book.pdf",
+    "key_value": "The Adventures of Tom Bombadil and Other Verses from the Red Book.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Adventures of Tom Bombadil",
@@ -2029,7 +2029,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q3227048",
+    "record_id": "Q3227048",
     "title": "The Lord of the Rings",
     "medium": "radio"
    },
@@ -2037,7 +2037,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2055,7 +2055,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q3467448",
+    "record_id": "Q3467448",
     "title": "Guardians of Middle-earth",
     "medium": "video game"
    },
@@ -2063,7 +2063,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2081,7 +2081,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q4189655",
+    "record_id": "Q4189655",
     "title": "Q4189655",
     "medium": "print"
    },
@@ -2089,7 +2089,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(A) The Silmarillion.pdf",
+    "key_value": "(A) The Silmarillion.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Silmarillion",
@@ -2107,7 +2107,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q4228990",
+    "record_id": "Q4228990",
     "title": "Q4228990",
     "medium": "print"
    },
@@ -2115,7 +2115,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2133,7 +2133,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q4373807",
+    "record_id": "Q4373807",
     "title": "The Last Ringbearer",
     "medium": "print"
    },
@@ -2141,7 +2141,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2159,7 +2159,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q6581169",
+    "record_id": "Q6581169",
     "title": "The Lord of the Rings: The Third Age",
     "medium": "video game"
    },
@@ -2167,7 +2167,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2185,7 +2185,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q6680121",
+    "record_id": "Q6680121",
     "title": "The Lord of the Rings: Journey to Rivendell",
     "medium": "video game"
    },
@@ -2193,7 +2193,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2211,7 +2211,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q7748465",
+    "record_id": "Q7748465",
     "title": "The Lord of the Rings",
     "medium": "video game"
    },
@@ -2219,7 +2219,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2237,7 +2237,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q9318176",
+    "record_id": "Q9318176",
     "title": "Pár Pařmenů",
     "medium": "film"
    },
@@ -2245,7 +2245,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2263,7 +2263,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q11863501",
+    "record_id": "Q11863501",
     "title": "Hobitit",
     "medium": "television"
    },
@@ -2271,7 +2271,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2289,7 +2289,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q11896556",
+    "record_id": "Q11896556",
     "title": "The Lord of the Rings: Weapons and Warfare",
     "medium": "print"
    },
@@ -2297,7 +2297,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2315,14 +2315,14 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q15709637",
+    "record_id": "Q15709637",
     "title": "Middle-earth: Shadow of Mordor",
     "medium": "video game"
    },
    "adapted_from": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q74331"
+    "record_id": "Q74331"
    },
    "based_on_as_written": "The Hobbit trilogy",
    "matched_by": "exact",
@@ -2339,7 +2339,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q15709637",
+    "record_id": "Q15709637",
     "title": "Middle-earth: Shadow of Mordor",
     "medium": "video game"
    },
@@ -2347,7 +2347,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2365,14 +2365,14 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q21706161",
+    "record_id": "Q21706161",
     "title": "They’re Taking The Hobbits To Isengard",
     "medium": "internet"
    },
    "adapted_from": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q127367"
+    "record_id": "Q127367"
    },
    "based_on_as_written": "The Lord of the Rings: The Fellowship of the Ring",
    "matched_by": "exact",
@@ -2389,7 +2389,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q25859648",
+    "record_id": "Q25859648",
     "title": "LORD",
     "medium": "video game"
    },
@@ -2397,7 +2397,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2415,14 +2415,14 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q28495400",
+    "record_id": "Q28495400",
     "title": "Le Hobbit : Le Retour du roi du Cantal",
     "medium": "film"
    },
    "adapted_from": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q74331"
+    "record_id": "Q74331"
    },
    "based_on_as_written": "The Hobbit trilogy",
    "matched_by": "exact",
@@ -2439,14 +2439,14 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q28859887",
+    "record_id": "Q28859887",
     "title": "Middle-earth: Shadow of War",
     "medium": "video game"
    },
    "adapted_from": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q74331"
+    "record_id": "Q74331"
    },
    "based_on_as_written": "The Hobbit trilogy",
    "matched_by": "exact",
@@ -2463,7 +2463,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q28859887",
+    "record_id": "Q28859887",
     "title": "Middle-earth: Shadow of War",
     "medium": "video game"
    },
@@ -2471,7 +2471,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2489,14 +2489,14 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q30879053",
+    "record_id": "Q30879053",
     "title": "Q30879053",
     "medium": "film"
    },
    "adapted_from": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q127367"
+    "record_id": "Q127367"
    },
    "based_on_as_written": "The Lord of the Rings: The Fellowship of the Ring",
    "matched_by": "exact",
@@ -2513,7 +2513,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q59149852",
+    "record_id": "Q59149852",
     "title": "The Lord of the Rings: The Rings of Power",
     "medium": "television"
    },
@@ -2521,7 +2521,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2539,14 +2539,14 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q66503911",
+    "record_id": "Q66503911",
     "title": "The Hobbit: An Unexpected Journey Extended Edition",
     "medium": "film"
    },
    "adapted_from": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q80379"
+    "record_id": "Q80379"
    },
    "based_on_as_written": "The Hobbit: An Unexpected Journey",
    "matched_by": "exact",
@@ -2563,7 +2563,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q93235255",
+    "record_id": "Q93235255",
     "title": "The Lord of the Rings: Gollum",
     "medium": "video game"
    },
@@ -2571,7 +2571,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2589,7 +2589,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q106382169",
+    "record_id": "Q106382169",
     "title": "Khraniteli",
     "medium": "film"
    },
@@ -2597,7 +2597,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2615,14 +2615,14 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q109286227",
+    "record_id": "Q109286227",
     "title": "The Hobbit",
     "medium": "video game"
    },
    "adapted_from": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q74331"
+    "record_id": "Q74331"
    },
    "based_on_as_written": "The Hobbit trilogy",
    "matched_by": "exact",
@@ -2639,7 +2639,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q115683392",
+    "record_id": "Q115683392",
     "title": "adaptations of The Lord of the Rings",
     "medium": "print"
    },
@@ -2647,7 +2647,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2665,7 +2665,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q134711969",
+    "record_id": "Q134711969",
     "title": "Aragorn's Lullaby (Cormac)",
     "medium": "music"
    },
@@ -2673,7 +2673,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2691,7 +2691,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q138849431",
+    "record_id": "Q138849431",
     "title": "The Lord of the Rings: Shadow of the Past",
     "medium": "film"
    },
@@ -2699,7 +2699,7 @@
     "dataset": "arda_corpusmap.json",
     "collection": "sources",
     "key_field": "file",
-    "key": "(C) The Lord of the Rings.pdf",
+    "key_value": "(C) The Lord of the Rings.pdf",
     "corpus_tier": 1
    },
    "based_on_as_written": "The Lord of the Rings",
@@ -2717,14 +2717,14 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q141033094",
+    "record_id": "Q141033094",
     "title": "The Lord of the Rings: War in the North - Legacy Edition",
     "medium": "video game"
    },
    "adapted_from": {
     "dataset": "arda_adaptations.json",
     "collection": "works",
-    "id": "Q1440462"
+    "record_id": "Q1440462"
    },
    "based_on_as_written": "The Lord of the Rings: War in the North",
    "matched_by": "exact",
@@ -2740,7 +2740,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-fotr-arwen-ford",
+    "record_id": "jackson-fotr-arwen-ford",
     "work": "The Lord of the Rings: The Fellowship of the Ring",
     "medium": "film",
     "year": 2001,
@@ -2764,7 +2764,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-fotr-arwen-ford",
+    "record_id": "jackson-fotr-arwen-ford",
     "work": "The Lord of the Rings: The Fellowship of the Ring",
     "medium": "film",
     "year": 2001,
@@ -2788,7 +2788,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-fotr-arwen-ford",
+    "record_id": "jackson-fotr-arwen-ford",
     "work": "The Lord of the Rings: The Fellowship of the Ring",
     "medium": "film",
     "year": 2001,
@@ -2812,7 +2812,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-fotr-arwen-ford",
+    "record_id": "jackson-fotr-arwen-ford",
     "work": "The Lord of the Rings: The Fellowship of the Ring",
     "medium": "film",
     "year": 2001,
@@ -2836,7 +2836,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-ttt-faramir-osgiliath",
+    "record_id": "jackson-ttt-faramir-osgiliath",
     "work": "The Lord of the Rings: The Two Towers",
     "medium": "film",
     "year": 2002,
@@ -2860,7 +2860,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-ttt-faramir-osgiliath",
+    "record_id": "jackson-ttt-faramir-osgiliath",
     "work": "The Lord of the Rings: The Two Towers",
     "medium": "film",
     "year": 2002,
@@ -2884,7 +2884,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-ttt-faramir-osgiliath",
+    "record_id": "jackson-ttt-faramir-osgiliath",
     "work": "The Lord of the Rings: The Two Towers",
     "medium": "film",
     "year": 2002,
@@ -2908,7 +2908,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-ttt-faramir-osgiliath",
+    "record_id": "jackson-ttt-faramir-osgiliath",
     "work": "The Lord of the Rings: The Two Towers",
     "medium": "film",
     "year": 2002,
@@ -2932,7 +2932,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-ttt-faramir-osgiliath",
+    "record_id": "jackson-ttt-faramir-osgiliath",
     "work": "The Lord of the Rings: The Two Towers",
     "medium": "film",
     "year": 2002,
@@ -2956,7 +2956,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-ttt-hornburg",
+    "record_id": "jackson-ttt-hornburg",
     "work": "The Lord of the Rings: The Two Towers",
     "medium": "film",
     "year": 2002,
@@ -2980,7 +2980,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-rotk-denethor",
+    "record_id": "jackson-rotk-denethor",
     "work": "The Lord of the Rings: The Return of the King",
     "medium": "film",
     "year": 2003,
@@ -3007,7 +3007,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-rotk-denethor",
+    "record_id": "jackson-rotk-denethor",
     "work": "The Lord of the Rings: The Return of the King",
     "medium": "film",
     "year": 2003,
@@ -3034,7 +3034,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-rotk-witchking-staff",
+    "record_id": "jackson-rotk-witchking-staff",
     "work": "The Lord of the Rings: The Return of the King",
     "medium": "film",
     "year": 2003,
@@ -3058,7 +3058,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-rotk-witchking-staff",
+    "record_id": "jackson-rotk-witchking-staff",
     "work": "The Lord of the Rings: The Return of the King",
     "medium": "film",
     "year": 2003,
@@ -3082,7 +3082,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "jackson-rotk-witchking-staff",
+    "record_id": "jackson-rotk-witchking-staff",
     "work": "The Lord of the Rings: The Return of the King",
     "medium": "film",
     "year": 2003,
@@ -3106,7 +3106,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "hobbit-films-tauriel",
+    "record_id": "hobbit-films-tauriel",
     "work": "The Hobbit (film series)",
     "medium": "film",
     "year": 2013,
@@ -3131,7 +3131,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "hobbit-films-azog",
+    "record_id": "hobbit-films-azog",
     "work": "The Hobbit (film series)",
     "medium": "film",
     "year": 2012,
@@ -3155,7 +3155,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "hobbit-films-azog",
+    "record_id": "hobbit-films-azog",
     "work": "The Hobbit (film series)",
     "medium": "film",
     "year": 2012,
@@ -3180,7 +3180,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "hobbit-films-azog",
+    "record_id": "hobbit-films-azog",
     "work": "The Hobbit (film series)",
     "medium": "film",
     "year": 2012,
@@ -3205,7 +3205,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "hobbit-films-azog",
+    "record_id": "hobbit-films-azog",
     "work": "The Hobbit (film series)",
     "medium": "film",
     "year": 2012,
@@ -3229,7 +3229,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "hobbit-films-azog",
+    "record_id": "hobbit-films-azog",
     "work": "The Hobbit (film series)",
     "medium": "film",
     "year": 2012,
@@ -3253,7 +3253,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "rop-celebrimbor",
+    "record_id": "rop-celebrimbor",
     "work": "The Lord of the Rings: The Rings of Power",
     "medium": "television",
     "year": 2022,
@@ -3277,7 +3277,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "rop-celebrimbor",
+    "record_id": "rop-celebrimbor",
     "work": "The Lord of the Rings: The Rings of Power",
     "medium": "television",
     "year": 2022,
@@ -3301,7 +3301,7 @@
    "adaptation_record": {
     "dataset": "arda_adaptations.json",
     "collection": "deviations",
-    "id": "merp-nazgul-names",
+    "record_id": "merp-nazgul-names",
     "work": "Middle-earth Role Playing",
     "medium": "tabletop",
     "year": 1984,

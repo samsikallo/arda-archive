@@ -7,7 +7,7 @@
   "one word of a person's name is a match, and says so": "prose does not use full names. `Thingol — set in the Nauglamír` names a person the archive holds as `Elu Thingol`; matching full names only called 19 of 62 tenures empty and every one of those absences was false. A single word of a PERSON's name is therefore in the matching vocabulary, and every edge records `matched_by` so a reader can tell it from a full-name match. PERSONS ONLY: splitting place names would put `Minas`, `Amon` and `Haudh` -- common nouns of Sindarin -- into the vocabulary.",
   "a place is not a holder": "a place or realm standing in tenure prose goes to `place_or_realm_named`, never to `held_by`. Reading it as a bearer was this file's first fault: `Fëanor — at Formenos` produced Formenos as a holder and 50 of 113 edges were places.",
   "the longest name wins, and only by containment": "`Beren Erchamion` and `Beren` are both in the index; where one matched name is contained in another, only the longer stands. Two unrelated names both present both stand -- a tenure can have two holders.",
-  "ambiguity is published, never resolved": "a name borne by more than one record yields a holder with `id: null` and every candidate named. The owner's ruling of 5 August: publish the correspondence, do not choose a winner."
+  "ambiguity is published, never resolved": "a name borne by more than one record yields a holder with `entity: null` and every candidate named. The owner's ruling of 5 August: publish the correspondence, do not choose a winner."
  },
  "the_artifact_id_is_minted_here": "MEASURED, NOT ASSUMED: arda_artifacts.json carries no `id` on any of its rows. `af_<slug>` is derived from the record's own name, it is unique to this file, and `source_record` carries the dataset, the collection and the index so it can be followed back. Where exactly one arda_artifact_prompts caption normalises to the same name that correspondence is published; where none or several do it is NOT RESOLVED, because a fuzzy match between `Narsil / Andúril` and `Narsil and Anduril` would be this file deciding which artifact a prompt is about.",
  "silence_is_split_in_two_and_never_blurred": {
@@ -718,7 +718,7 @@
    }
   }
  ],
- "tenures_what": "One row per tenure. `artifact` resolves in this file's own `artifacts`; every `held_by[].id` resolves in the collection named beside it. `cite` and `when` are the artifact record's own and are not touched.",
+ "tenures_what": "One row per tenure. `artifact` resolves in this file's own `artifacts`; every `held_by[].entity` resolves in the collection named beside it. `cite` and `when` are the artifact record's own and are not touched.",
  "tenures": [
   {
    "id": "af_the_silmarils#0",
@@ -728,7 +728,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": "feanor",
+     "entity": "feanor",
      "name": "Fëanor",
      "matched": "Fëanor",
      "matched_by": "full name",
@@ -739,7 +739,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "formenos",
+     "entity": "formenos",
      "name": "Formenos",
      "matched": "Formenos",
      "matched_by": "full name",
@@ -766,7 +766,7 @@
    "seq": 1,
    "held_by": [
     {
-     "id": "melkor",
+     "entity": "melkor",
      "name": "Melkor (Morgoth)",
      "matched": "Morgoth",
      "matched_by": "full name",
@@ -794,7 +794,7 @@
    "seq": 2,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "Beren",
      "matched_by": "full name",
@@ -810,7 +810,7 @@
      ]
     },
     {
-     "id": "luthien",
+     "entity": "luthien",
      "name": "Lúthien",
      "matched": "Lúthien",
      "matched_by": "full name",
@@ -840,7 +840,7 @@
    "seq": 3,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "thingol",
      "matched_by": "one word of a person's name",
@@ -875,7 +875,7 @@
    "seq": 4,
    "held_by": [
     {
-     "id": "dior_s",
+     "entity": "dior_s",
      "name": "Dior",
      "matched": "Dior",
      "matched_by": "full name",
@@ -884,7 +884,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "elwing",
+     "entity": "elwing",
      "name": "Elwing",
      "matched": "Elwing",
      "matched_by": "full name",
@@ -895,7 +895,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "sirion",
+     "entity": "sirion",
      "name": "Sirion",
      "matched": "Sirion",
      "matched_by": "full name",
@@ -922,7 +922,7 @@
    "seq": 5,
    "held_by": [
     {
-     "id": "earendil",
+     "entity": "earendil",
      "name": "Eärendil",
      "matched": "Eärendil",
      "matched_by": "full name",
@@ -950,7 +950,7 @@
    "seq": 6,
    "held_by": [
     {
-     "id": "maedhros",
+     "entity": "maedhros",
      "name": "Maedhros",
      "matched": "Maedhros",
      "matched_by": "full name",
@@ -959,7 +959,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "maglor",
+     "entity": "maglor",
      "name": "Maglor",
      "matched": "Maglor",
      "matched_by": "full name",
@@ -987,7 +987,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": "sauron",
+     "entity": "sauron",
      "name": "Sauron",
      "matched": "Sauron",
      "matched_by": "full name",
@@ -1015,7 +1015,7 @@
    "seq": 1,
    "held_by": [
     {
-     "id": "elrond",
+     "entity": "elrond",
      "name": "Elrond",
      "matched": "Elrond",
      "matched_by": "full name",
@@ -1024,7 +1024,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "isildur",
+     "entity": "isildur",
      "name": "Isildur",
      "matched": "Isildur",
      "matched_by": "full name",
@@ -1053,7 +1053,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": "gladden",
+     "entity": "gladden",
      "name": "Gladden",
      "matched": "Gladden",
      "matched_by": "full name",
@@ -1080,7 +1080,7 @@
    "seq": 3,
    "held_by": [
     {
-     "id": "deagol",
+     "entity": "deagol",
      "name": "Déagol",
      "matched": "Déagol",
      "matched_by": "full name",
@@ -1089,7 +1089,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "smeagol",
+     "entity": "smeagol",
      "name": "Sméagol (Gollum)",
      "matched": "Sméagol",
      "matched_by": "full name",
@@ -1117,7 +1117,7 @@
    "seq": 4,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "Sméagol (Gollum)",
      "matched_by": "full name",
@@ -1152,7 +1152,7 @@
    "seq": 5,
    "held_by": [
     {
-     "id": "bilbo",
+     "entity": "bilbo",
      "name": "Bilbo Baggins",
      "matched": "Bilbo Baggins",
      "matched_by": "full name",
@@ -1180,7 +1180,7 @@
    "seq": 6,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "frodo",
      "matched_by": "one word of a person's name",
@@ -1196,7 +1196,7 @@
      ]
     },
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "samwise",
      "matched_by": "one word of a person's name",
@@ -1232,7 +1232,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": "mount doom",
+     "entity": "mount doom",
      "name": "Mount Doom (Orodruin)",
      "matched": "Orodruin",
      "matched_by": "full name",
@@ -1259,7 +1259,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": "celebrimbor",
+     "entity": "celebrimbor",
      "name": "Celebrimbor",
      "matched": "Celebrimbor",
      "matched_by": "full name",
@@ -1287,7 +1287,7 @@
    "seq": 1,
    "held_by": [
     {
-     "id": "galadriel",
+     "entity": "galadriel",
      "name": "Galadriel",
      "matched": "Galadriel",
      "matched_by": "full name",
@@ -1296,7 +1296,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "gilgalad",
+     "entity": "gilgalad",
      "name": "Gil-galad",
      "matched": "Gil-galad",
      "matched_by": "full name",
@@ -1326,7 +1326,7 @@
    "seq": 2,
    "held_by": [
     {
-     "id": "cirdan",
+     "entity": "cirdan",
      "name": "Círdan",
      "matched": "Círdan",
      "matched_by": "full name",
@@ -1335,7 +1335,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "elrond",
+     "entity": "elrond",
      "name": "Elrond",
      "matched": "Elrond",
      "matched_by": "full name",
@@ -1363,7 +1363,7 @@
    "seq": 3,
    "held_by": [
     {
-     "id": "cirdan",
+     "entity": "cirdan",
      "name": "Círdan",
      "matched": "Círdan",
      "matched_by": "full name",
@@ -1372,7 +1372,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "Gandalf",
      "matched_by": "full name",
@@ -1429,7 +1429,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": "sauron",
+     "entity": "sauron",
      "name": "Sauron",
      "matched": "Sauron",
      "matched_by": "full name",
@@ -1440,7 +1440,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "eregion",
+     "entity": "eregion",
      "name": "Eregion",
      "matched": "Eregion",
      "matched_by": "full name",
@@ -1505,7 +1505,7 @@
    "seq": 3,
    "held_by": [
     {
-     "id": "thrain2",
+     "entity": "thrain2",
      "name": "Thráin II",
      "matched": "Thráin II",
      "matched_by": "full name",
@@ -1516,7 +1516,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "Dol Guldur",
      "matched_by": "full name",
@@ -1552,7 +1552,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": "nogrod",
+     "entity": "nogrod",
      "name": "Nogrod",
      "matched": "Nogrod",
      "matched_by": "full name",
@@ -1581,7 +1581,7 @@
    "seq": 1,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "elendil",
      "matched_by": "one word of a person's name",
@@ -1616,7 +1616,7 @@
    "seq": 2,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "elendil",
      "matched_by": "one word of a person's name",
@@ -1651,7 +1651,7 @@
    "seq": 3,
    "held_by": [
     {
-     "id": "isildur",
+     "entity": "isildur",
      "name": "Isildur",
      "matched": "Isildur",
      "matched_by": "full name",
@@ -1679,7 +1679,7 @@
    "seq": 4,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "aragorn",
      "matched_by": "one word of a person's name",
@@ -1695,7 +1695,7 @@
      ]
     },
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "Barahir",
      "matched_by": "full name",
@@ -1734,7 +1734,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": "rivendell",
+     "entity": "rivendell",
      "name": "Rivendell (Imladris)",
      "matched": "Rivendell",
      "matched_by": "full name",
@@ -1761,7 +1761,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": "finrod",
+     "entity": "finrod",
      "name": "Finrod Felagund",
      "matched": "Finrod Felagund",
      "matched_by": "full name",
@@ -1789,7 +1789,7 @@
    "seq": 1,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "Barahir",
      "matched_by": "full name",
@@ -1827,7 +1827,7 @@
    "seq": 2,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "Beren",
      "matched_by": "full name",
@@ -1843,7 +1843,7 @@
      ]
     },
     {
-     "id": "orcs",
+     "entity": "orcs",
      "name": "Orcs",
      "matched": "Orcs",
      "matched_by": "full name",
@@ -1871,7 +1871,7 @@
    "seq": 3,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "Beren",
      "matched_by": "full name",
@@ -1887,7 +1887,7 @@
      ]
     },
     {
-     "id": "dior_s",
+     "entity": "dior_s",
      "name": "Dior",
      "matched": "Dior",
      "matched_by": "full name",
@@ -1896,7 +1896,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "elros",
+     "entity": "elros",
      "name": "Elros Tar-Minyatur",
      "matched": "elros",
      "matched_by": "one word of a person's name",
@@ -1907,7 +1907,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "numenor",
+     "entity": "numenor",
      "name": "Númenor",
      "matched": "Númenor",
      "matched_by": "full name",
@@ -1934,7 +1934,7 @@
    "seq": 4,
    "held_by": [
     {
-     "id": "ellandunie",
+     "entity": "ellandunie",
      "name": "⟨Lords of Andúnië — names not recorded⟩",
      "matched": "⟨Lords of Andúnië",
      "matched_by": "full name",
@@ -1943,7 +1943,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "silmarien",
+     "entity": "silmarien",
      "name": "Silmariën",
      "matched": "Silmariën",
      "matched_by": "full name",
@@ -1971,7 +1971,7 @@
    "seq": 5,
    "held_by": [
     {
-     "id": "arvedui",
+     "entity": "arvedui",
      "name": "Arvedui 'Last-king'",
      "matched": "arvedui",
      "matched_by": "one word of a person's name",
@@ -1980,7 +1980,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "elendil",
      "matched_by": "one word of a person's name",
@@ -1998,7 +1998,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "arnor",
+     "entity": "arnor",
      "name": "Arnor",
      "matched": "Arnor",
      "matched_by": "full name",
@@ -2026,7 +2026,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": "lossoth",
+     "entity": "lossoth",
      "name": "The Lossoth of Forochel",
      "matched": "The Lossoth of Forochel",
      "matched_by": "full name",
@@ -2053,7 +2053,7 @@
    "seq": 7,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "aragorn",
      "matched_by": "one word of a person's name",
@@ -2069,7 +2069,7 @@
      ]
     },
     {
-     "id": "arwen",
+     "entity": "arwen",
      "name": "Arwen Undómiel",
      "matched": "arwen",
      "matched_by": "one word of a person's name",
@@ -2080,7 +2080,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "cerin amroth",
+     "entity": "cerin amroth",
      "name": "Cerin Amroth",
      "matched": "Cerin Amroth",
      "matched_by": "full name",
@@ -2109,7 +2109,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": "amandil",
+     "entity": "amandil",
      "name": "Amandil",
      "matched": "Amandil",
      "matched_by": "full name",
@@ -2140,7 +2140,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": "weathertop",
+     "entity": "weathertop",
      "name": "Weathertop",
      "matched": "Amon Sûl",
      "matched_by": "full name",
@@ -2149,7 +2149,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "annuminas",
+     "entity": "annuminas",
      "name": "Annúminas",
      "matched": "Annúminas",
      "matched_by": "full name",
@@ -2158,7 +2158,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "tower hills",
+     "entity": "tower hills",
      "name": "Tower Hills",
      "matched": "Elostirion",
      "matched_by": "full name",
@@ -2167,7 +2167,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "minas tirith",
+     "entity": "minas tirith",
      "name": "Minas Tirith",
      "matched": "Minas Anor",
      "matched_by": "full name",
@@ -2176,7 +2176,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "minas morgul",
+     "entity": "minas morgul",
      "name": "Minas Morgul",
      "matched": "Minas Ithil",
      "matched_by": "full name",
@@ -2185,7 +2185,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "isengard",
+     "entity": "isengard",
      "name": "Isengard",
      "matched": "Orthanc",
      "matched_by": "full name",
@@ -2194,7 +2194,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "osgiliath",
+     "entity": "osgiliath",
      "name": "Osgiliath",
      "matched": "Osgiliath",
      "matched_by": "full name",
@@ -2221,7 +2221,7 @@
    "seq": 2,
    "held_by": [
     {
-     "id": "arvedui",
+     "entity": "arvedui",
      "name": "Arvedui 'Last-king'",
      "matched": "arvedui",
      "matched_by": "one word of a person's name",
@@ -2232,7 +2232,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "weathertop",
+     "entity": "weathertop",
      "name": "Weathertop",
      "matched": "Amon Sûl",
      "matched_by": "full name",
@@ -2241,7 +2241,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "annuminas",
+     "entity": "annuminas",
      "name": "Annúminas",
      "matched": "Annúminas",
      "matched_by": "full name",
@@ -2271,7 +2271,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": "anduin",
+     "entity": "anduin",
      "name": "Anduin (the Great River)",
      "matched": "Anduin",
      "matched_by": "full name",
@@ -2280,7 +2280,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "osgiliath",
+     "entity": "osgiliath",
      "name": "Osgiliath",
      "matched": "Osgiliath",
      "matched_by": "full name",
@@ -2309,7 +2309,7 @@
    "seq": 4,
    "held_by": [
     {
-     "id": "sauron",
+     "entity": "sauron",
      "name": "Sauron",
      "matched": "Sauron",
      "matched_by": "full name",
@@ -2337,7 +2337,7 @@
    "seq": 5,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "denethor",
      "matched_by": "one word of a person's name",
@@ -2358,7 +2358,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "isengard",
+     "entity": "isengard",
      "name": "Isengard",
      "matched": "Orthanc",
      "matched_by": "full name",
@@ -2386,7 +2386,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": "tower hills",
+     "entity": "tower hills",
      "name": "Tower Hills",
      "matched": "Elostirion",
      "matched_by": "full name",
@@ -2415,7 +2415,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": "melkor",
+     "entity": "melkor",
      "name": "Melkor (Morgoth)",
      "matched": "Melkor",
      "matched_by": "full name",
@@ -2424,7 +2424,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "telperion",
+     "entity": "telperion",
      "name": "Telperion",
      "matched": "Telperion",
      "matched_by": "full name",
@@ -2433,7 +2433,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "ungoliant",
+     "entity": "ungoliant",
      "name": "Ungoliant",
      "matched": "Ungoliant",
      "matched_by": "full name",
@@ -2444,7 +2444,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "valinor",
+     "entity": "valinor",
      "name": "Valinor",
      "matched": "Valinor",
      "matched_by": "full name",
@@ -2471,7 +2471,7 @@
    "seq": 1,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "Celeborn",
      "matched_by": "full name",
@@ -2487,7 +2487,7 @@
      ]
     },
     {
-     "id": "galathilion",
+     "entity": "galathilion",
      "name": "Galathilion",
      "matched": "Galathilion",
      "matched_by": "full name",
@@ -2515,7 +2515,7 @@
    "seq": 2,
    "held_by": [
     {
-     "id": "isildur",
+     "entity": "isildur",
      "name": "Isildur",
      "matched": "Isildur",
      "matched_by": "full name",
@@ -2524,7 +2524,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "nimloth",
      "matched_by": "one word of a person's name",
@@ -2540,7 +2540,7 @@
      ]
     },
     {
-     "id": "sauron",
+     "entity": "sauron",
      "name": "Sauron",
      "matched": "Sauron",
      "matched_by": "full name",
@@ -2551,7 +2551,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "numenor",
+     "entity": "numenor",
      "name": "Númenor",
      "matched": "Númenor",
      "matched_by": "full name",
@@ -2578,7 +2578,7 @@
    "seq": 3,
    "held_by": [
     {
-     "id": "sauron",
+     "entity": "sauron",
      "name": "Sauron",
      "matched": "Sauron",
      "matched_by": "full name",
@@ -2589,7 +2589,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "minas morgul",
+     "entity": "minas morgul",
      "name": "Minas Morgul",
      "matched": "Minas Ithil",
      "matched_by": "full name",
@@ -2617,7 +2617,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": "minas tirith",
+     "entity": "minas tirith",
      "name": "Minas Tirith",
      "matched": "Minas Anor",
      "matched_by": "full name",
@@ -2644,7 +2644,7 @@
    "seq": 5,
    "held_by": [
     {
-     "id": "olorin",
+     "entity": "olorin",
      "name": "Olórin",
      "matched": "Mithrandir",
      "matched_by": "full name",
@@ -2655,7 +2655,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "mindolluin",
+     "entity": "mindolluin",
      "name": "Mindolluin",
      "matched": "Mindolluin",
      "matched_by": "full name",
@@ -2702,7 +2702,7 @@
    "seq": 1,
    "held_by": [
     {
-     "id": "smaug",
+     "entity": "smaug",
      "name": "Smaug",
      "matched": "Smaug",
      "matched_by": "full name",
@@ -2730,7 +2730,7 @@
    "seq": 2,
    "held_by": [
     {
-     "id": "bilbo",
+     "entity": "bilbo",
      "name": "Bilbo Baggins",
      "matched": "bilbo",
      "matched_by": "one word of a person's name",
@@ -2758,7 +2758,7 @@
    "seq": 3,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "thorin",
      "matched_by": "one word of a person's name",
@@ -2795,7 +2795,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": "gondolin",
+     "entity": "gondolin",
      "name": "Gondolin",
      "matched": "Gondolin",
      "matched_by": "full name",
@@ -2823,7 +2823,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": "trollshaws",
+     "entity": "trollshaws",
      "name": "Trollshaws",
      "matched": "Trollshaws",
      "matched_by": "full name",
@@ -2850,7 +2850,7 @@
    "seq": 2,
    "held_by": [
     {
-     "id": "bilbo",
+     "entity": "bilbo",
      "name": "Bilbo Baggins",
      "matched": "bilbo",
      "matched_by": "one word of a person's name",
@@ -2878,7 +2878,7 @@
    "seq": 3,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "frodo",
      "matched_by": "one word of a person's name",
@@ -2896,7 +2896,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "cirith ungol",
+     "entity": "cirith ungol",
      "name": "Cirith Ungol",
      "matched": "Cirith Ungol",
      "matched_by": "full name",
@@ -2943,7 +2943,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "Turgon",
      "matched_by": "full name",
@@ -2961,7 +2961,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "gondolin",
+     "entity": "gondolin",
      "name": "Gondolin",
      "matched": "the Hidden City",
      "matched_by": "full name",
@@ -2989,7 +2989,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": "gondolin",
+     "entity": "gondolin",
      "name": "Gondolin",
      "matched": "Gondolin",
      "matched_by": "full name",
@@ -3034,7 +3034,7 @@
    "seq": 3,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "Gandalf",
      "matched_by": "full name",
@@ -3050,7 +3050,7 @@
      ]
     },
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "thorin",
      "matched_by": "one word of a person's name",
@@ -3069,7 +3069,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "Moria",
      "matched_by": "full name",
@@ -3103,7 +3103,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "thingol",
      "matched_by": "one word of a person's name",
@@ -3121,7 +3121,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "nan elmoth",
+     "entity": "nan elmoth",
      "name": "Nan Elmoth",
      "matched": "Nan Elmoth",
      "matched_by": "full name",
@@ -3150,7 +3150,7 @@
    "seq": 1,
    "held_by": [
     {
-     "id": "beleg_a",
+     "entity": "beleg_a",
      "name": "Beleg",
      "matched": "Beleg",
      "matched_by": "full name",
@@ -3159,7 +3159,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "melian",
+     "entity": "melian",
      "name": "Melian",
      "matched": "Melian",
      "matched_by": "full name",
@@ -3187,7 +3187,7 @@
    "seq": 2,
    "held_by": [
     {
-     "id": "beleg_a",
+     "entity": "beleg_a",
      "name": "Beleg",
      "matched": "Beleg",
      "matched_by": "full name",
@@ -3196,7 +3196,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "turin",
      "matched_by": "one word of a person's name",
@@ -3232,7 +3232,7 @@
    "seq": 3,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "turin",
      "matched_by": "one word of a person's name",
@@ -3268,7 +3268,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": "fingon",
+     "entity": "fingon",
      "name": "Fingon",
      "matched": "Fingon",
      "matched_by": "full name",
@@ -3277,7 +3277,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "maedhros",
+     "entity": "maedhros",
      "name": "Maedhros",
      "matched": "Maedhros",
      "matched_by": "full name",
@@ -3288,7 +3288,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "belegost",
+     "entity": "belegost",
      "name": "Belegost",
      "matched": "Belegost",
      "matched_by": "full name",
@@ -3315,7 +3315,7 @@
    "seq": 1,
    "held_by": [
     {
-     "id": "fingolfin",
+     "entity": "fingolfin",
      "name": "Fingolfin",
      "matched": "Fingolfin",
      "matched_by": "full name",
@@ -3324,7 +3324,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "hador_s",
+     "entity": "hador_s",
      "name": "Hador",
      "matched": "Hador",
      "matched_by": "full name",
@@ -3335,7 +3335,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "dorlomin",
+     "entity": "dorlomin",
      "name": "Dor-lómin (House of Hador)",
      "matched": "Dor-lómin",
      "matched_by": "full name",
@@ -3362,7 +3362,7 @@
    "seq": 2,
    "held_by": [
     {
-     "id": "galdor",
+     "entity": "galdor",
      "name": "Galdor the Tall",
      "matched": "galdor",
      "matched_by": "one word of a person's name",
@@ -3371,7 +3371,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "hador_s",
+     "entity": "hador_s",
      "name": "Hador",
      "matched": "Hador",
      "matched_by": "full name",
@@ -3380,7 +3380,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "hurin",
      "matched_by": "one word of a person's name",
@@ -3399,7 +3399,7 @@
      ]
     },
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "turin",
      "matched_by": "one word of a person's name",
@@ -3435,7 +3435,7 @@
    "seq": 3,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "turin",
      "matched_by": "one word of a person's name",
@@ -3454,7 +3454,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "dimbar",
+     "entity": "dimbar",
      "name": "Dimbar",
      "matched": "Dimbar",
      "matched_by": "full name",
@@ -3463,7 +3463,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "dor cuarthol",
+     "entity": "dor cuarthol",
      "name": "Dor-Cúarthol",
      "matched": "Dor-Cúarthol",
      "matched_by": "full name",
@@ -3492,7 +3492,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": "finrod",
+     "entity": "finrod",
      "name": "Finrod Felagund",
      "matched": "finrod",
      "matched_by": "one word of a person's name",
@@ -3503,7 +3503,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "nargothrond",
+     "entity": "nargothrond",
      "name": "Nargothrond",
      "matched": "Nargothrond",
      "matched_by": "full name",
@@ -3530,7 +3530,7 @@
    "seq": 1,
    "held_by": [
     {
-     "id": "glaurung",
+     "entity": "glaurung",
      "name": "Glaurung",
      "matched": "Glaurung",
      "matched_by": "full name",
@@ -3539,7 +3539,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "hurin",
      "matched_by": "one word of a person's name",
@@ -3558,7 +3558,7 @@
      ]
     },
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "thingol",
      "matched_by": "one word of a person's name",
@@ -3596,7 +3596,7 @@
    "seq": 2,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "thingol",
      "matched_by": "one word of a person's name",
@@ -3614,7 +3614,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "nogrod",
+     "entity": "nogrod",
      "name": "Nogrod",
      "matched": "Nogrod",
      "matched_by": "full name",
@@ -3641,7 +3641,7 @@
    "seq": 3,
    "held_by": [
     {
-     "id": "luthien",
+     "entity": "luthien",
      "name": "Lúthien",
      "matched": "Lúthien",
      "matched_by": "full name",
@@ -3652,7 +3652,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "sarn athrad",
+     "entity": "sarn athrad",
      "name": "Sarn Athrad",
      "matched": "Sarn Athrad",
      "matched_by": "full name",
@@ -3661,7 +3661,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "tol galen",
+     "entity": "tol galen",
      "name": "Tol Galen",
      "matched": "Tol Galen",
      "matched_by": "full name",
@@ -3688,7 +3688,7 @@
    "seq": 4,
    "held_by": [
     {
-     "id": "dior_s",
+     "entity": "dior_s",
      "name": "Dior",
      "matched": "Dior",
      "matched_by": "full name",
@@ -3697,7 +3697,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "earendil",
+     "entity": "earendil",
      "name": "Eärendil",
      "matched": "Eärendil",
      "matched_by": "full name",
@@ -3706,7 +3706,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "elwing",
+     "entity": "elwing",
      "name": "Elwing",
      "matched": "Elwing",
      "matched_by": "full name",
@@ -3734,7 +3734,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": "earendil",
+     "entity": "earendil",
      "name": "Eärendil",
      "matched": "Eärendil",
      "matched_by": "full name",
@@ -3743,7 +3743,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "idril",
+     "entity": "idril",
      "name": "Idril Celebrindal",
      "matched": "idril",
      "matched_by": "one word of a person's name",
@@ -3771,7 +3771,7 @@
    "seq": 1,
    "held_by": [
     {
-     "id": "celebrimbor",
+     "entity": "celebrimbor",
      "name": "Celebrimbor",
      "matched": "Celebrimbor",
      "matched_by": "full name",
@@ -3780,7 +3780,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "galadriel",
+     "entity": "galadriel",
      "name": "Galadriel",
      "matched": "Galadriel",
      "matched_by": "full name",
@@ -3808,7 +3808,7 @@
    "seq": 2,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "aragorn",
      "matched_by": "one word of a person's name",
@@ -3824,7 +3824,7 @@
      ]
     },
     {
-     "id": "arwen",
+     "entity": "arwen",
      "name": "Arwen Undómiel",
      "matched": "arwen",
      "matched_by": "one word of a person's name",
@@ -3833,7 +3833,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "celebrian",
+     "entity": "celebrian",
      "name": "Celebrían",
      "matched": "Celebrían",
      "matched_by": "full name",
@@ -3842,7 +3842,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "galadriel",
+     "entity": "galadriel",
      "name": "Galadriel",
      "matched": "Galadriel",
      "matched_by": "full name",
@@ -3853,7 +3853,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "Lórien",
      "matched_by": "full name",
@@ -3890,7 +3890,7 @@
    "seq": 3,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "aragorn",
      "matched_by": "one word of a person's name",
@@ -3906,7 +3906,7 @@
      ]
     },
     {
-     "id": "aragorn",
+     "entity": "aragorn",
      "name": "Aragorn II Elessar",
      "matched": "elessar",
      "matched_by": "one word of a person's name",
@@ -3934,7 +3934,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "frodo",
      "matched_by": "one word of a person's name",
@@ -3950,7 +3950,7 @@
      ]
     },
     {
-     "id": "galadriel",
+     "entity": "galadriel",
      "name": "Galadriel",
      "matched": "Galadriel",
      "matched_by": "full name",
@@ -3980,7 +3980,7 @@
    "seq": 1,
    "held_by": [
     {
-     "id": "shelob",
+     "entity": "shelob",
      "name": "Shelob",
      "matched": "Shelob",
      "matched_by": "full name",
@@ -4028,7 +4028,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": "scatha",
+     "entity": "scatha",
      "name": "Scatha the Worm",
      "matched": "scatha",
      "matched_by": "one word of a person's name",
@@ -4039,7 +4039,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "eotheod",
+     "entity": "eotheod",
      "name": "Eothéod",
      "matched": "The Éothéod",
      "matched_by": "full name",
@@ -4066,7 +4066,7 @@
    "seq": 1,
    "held_by": [
     {
-     "id": "eorl",
+     "entity": "eorl",
      "name": "Eorl the Young",
      "matched": "eorl",
      "matched_by": "one word of a person's name",
@@ -4094,7 +4094,7 @@
    "seq": 2,
    "held_by": [
     {
-     "id": "eowyn",
+     "entity": "eowyn",
      "name": "Éowyn",
      "matched": "Éowyn",
      "matched_by": "full name",
@@ -4103,7 +4103,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "meriadoc",
      "matched_by": "one word of a person's name",
@@ -4141,7 +4141,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": "bywater",
+     "entity": "bywater",
      "name": "Bywater",
      "matched": "Bywater",
      "matched_by": "full name",
@@ -4168,7 +4168,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": "bilbo",
+     "entity": "bilbo",
      "name": "Bilbo Baggins",
      "matched": "bilbo",
      "matched_by": "one word of a person's name",
@@ -4177,7 +4177,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "thorin",
      "matched_by": "one word of a person's name",
@@ -4215,7 +4215,7 @@
    "seq": 1,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "frodo",
      "matched_by": "one word of a person's name",
@@ -4233,7 +4233,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "michel delving",
+     "entity": "michel delving",
      "name": "Michel Delving",
      "matched": "Michel Delving",
      "matched_by": "full name",
@@ -4262,7 +4262,7 @@
    "seq": 2,
    "held_by": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "frodo",
      "matched_by": "one word of a person's name",
@@ -4280,7 +4280,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "Moria",
      "matched_by": "full name",
@@ -4315,7 +4315,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": "falas",
+     "entity": "falas",
      "name": "The Falas",
      "matched": "the Havens",
      "matched_by": "full name",
@@ -4342,7 +4342,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": "melkor",
+     "entity": "melkor",
      "name": "Melkor (Morgoth)",
      "matched": "Morgoth",
      "matched_by": "full name",
@@ -4371,7 +4371,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": null,
+     "entity": null,
      "name": null,
      "matched": "Minas Morgul",
      "matched_by": "full name",
@@ -4406,7 +4406,7 @@
    "seq": 0,
    "held_by": [
     {
-     "id": "theoden",
+     "entity": "theoden",
      "name": "Théoden",
      "matched": "Théoden",
      "matched_by": "full name",
@@ -4417,7 +4417,7 @@
    ],
    "place_or_realm_named": [
     {
-     "id": "dunharrow",
+     "entity": "dunharrow",
      "name": "Dunharrow",
      "matched": "Dunharrow",
      "matched_by": "full name",
@@ -4426,7 +4426,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "gondor",
+     "entity": "gondor",
      "name": "Gondor",
      "matched": "Gondor",
      "matched_by": "full name",
@@ -4474,7 +4474,7 @@
    "held_by": [],
    "place_or_realm_named": [
     {
-     "id": "amon din",
+     "entity": "amon din",
      "name": "Amon Din",
      "matched": "Amon Din",
      "matched_by": "full name",
@@ -4483,7 +4483,7 @@
      "resolution": "one record bears this name"
     },
     {
-     "id": "halifirien",
+     "entity": "halifirien",
      "name": "Halifirien",
      "matched": "Halifirien",
      "matched_by": "full name",
