@@ -9,7 +9,7 @@
   "living.html": "the halls put it under Peoples; the brief's Volume IV contents list puts a herbarium with relics and devices. The brief is followed."
  },
  "schemaVersion": 1,
- "n_routes": 711,
+ "n_routes": 712,
  "n_volumes": 7,
  "volumes": [
   {
@@ -596,6 +596,20 @@
    "canonical": "errata/2026-07-31.html",
    "canonicalRoute": "errata/2026-07-31.html",
    "entityId": "2026-07-31",
+   "entityType": "errata",
+   "sourceRoute": null,
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "errata/2026-08-01-ii.html": {
+   "volume": "VII",
+   "part": "Errata",
+   "archetype": "index",
+   "spread": "spread",
+   "title": "2026-08-01-ii",
+   "canonical": "errata/2026-08-01-ii.html",
+   "canonicalRoute": "errata/2026-08-01-ii.html",
+   "entityId": "2026-08-01-ii",
    "entityType": "errata",
    "sourceRoute": null,
    "generated": true,
