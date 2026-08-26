@@ -491,6 +491,8 @@
    "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bound": 0,
    "cited": 0,
+   "publication_layer": "LICENSED_DERIVATIVE",
+   "publication_layer_basis": "corpus/t4_the_maps_of_tolkiens_middle_earth_brian_sibley_john_.txt carries the copyright page: 'Published by HarperCollins Publishers 2003', 'Text Copyright (c) Brian Sibley', 'Illustrations copyright (c) John Howe', 'Original maps copyright (c) The Trustees of The J.R.R. Tolkien 1967', 'The J.R.R. Tolkien Estate Limited'. Tolkien's publisher, the Estate named, other hands' work derived from his -- which is what LICENSED_DERIVATIVE is and is NOT an adaptation.",
    "bytes": 112914341,
    "pages": 44,
    "corpus_file": "t4_the_maps_of_tolkiens_middle_earth_brian_sibley_john_.txt",
@@ -501,9 +503,7 @@
     "kind": "unrecorded",
     "ids": [],
     "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
-   },
-   "publication_layer": "LICENSED_DERIVATIVE",
-   "publication_layer_basis": "corpus/t4_the_maps_of_tolkiens_middle_earth_brian_sibley_john_.txt carries the copyright page: 'Published by HarperCollins Publishers 2003', 'Text Copyright (c) Brian Sibley', 'Illustrations copyright (c) John Howe', 'Original maps copyright (c) The Trustees of The J.R.R. Tolkien 1967', 'The J.R.R. Tolkien Estate Limited'. Tolkien's publisher, the Estate named, other hands' work derived from his -- which is what LICENSED_DERIVATIVE is and is NOT an adaptation."
+   }
   },
   {
    "file": "The_Fantasy_Art_of_John_Howe_-_The_Fantasy_Art_of_John_Howe.pdf",
@@ -2003,6 +2003,8 @@
    "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bound": 0,
    "cited": 0,
+   "publication_layer": "ADAPTATION",
+   "publication_layer_basis": "corpus/t4_the_art_of_the_lord_of_the_rings.txt opens 'Although filming the enormously successful Lord of the Rings trilogy began'. The register's own note records the correction that established it -- filed for three weeks as Tolkien's own hand, caught by the owner, and re-measured at 139 occurrences of film vocabulary against 0 in every volume of Tolkien's own writing. A film design book is an adaptation's own material.",
    "bytes": 91740393,
    "pages": 118,
    "corpus_file": "t4_the_art_of_the_lord_of_the_rings.txt",
@@ -2016,9 +2018,7 @@
     ],
     "granularity": "item",
     "evidence": "printed on the copyright page of the copy this archive holds (first three pages of corpus/t4_the_art_of_the_lord_of_the_rings.txt)"
-   },
-   "publication_layer": "ADAPTATION",
-   "publication_layer_basis": "corpus/t4_the_art_of_the_lord_of_the_rings.txt opens 'Although filming the enormously successful Lord of the Rings trilogy began'. The register's own note records the correction that established it -- filed for three weeks as Tolkien's own hand, caught by the owner, and re-measured at 139 occurrences of film vocabulary against 0 in every volume of Tolkien's own writing. A film design book is an adaptation's own material."
+   }
   },
   {
    "file": "(A) The Silmarillion.pdf",
@@ -2811,6 +2811,8 @@
    "cited": 0,
    "text_provenance": "ocr-derived",
    "text_provenance_note": "Machine-read by map/ocr_campaign.py on 31 July 2026 at 300 dpi greyscale with tesseract -l Latin, then accent-restored against the archive's clean corpus and the Eldamo lexicon. Measured against a known-good text of Vinyar Tengwar 39: 93% of accented forms correct, conditioned on the word being read. NOT a publisher's text layer; nothing here is a quotation until a reader has checked it against the plate.",
+   "publication_layer": "LICENSED_DERIVATIVE",
+   "publication_layer_basis": "corpus/t3_ocr_alan_lee_the_lord_of_the_rings_sketchbook.txt carries 'Copyright (c) Alan Lee 2005', 'Illustrations (c) Alan Lee 1991, 2005', 'Published by HarperCollins Publishers 2005', 'The J.R.R. Tolkien Estate Limited', and its own subject: the watercolours 'for the special centenary edition'. THE AUTHORISED BOOK ILLUSTRATIONS, NOT FILM CONCEPT ART -- which is why this row is t3 where the two Gary Russell books are t4, and the layer follows the same fact.",
    "bytes": 12899027,
    "pages": 101,
    "corpus_file": "t3_ocr_alan_lee_the_lord_of_the_rings_sketchbook.txt",
@@ -2819,9 +2821,7 @@
     "kind": "unrecorded",
     "ids": [],
     "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
-   },
-   "publication_layer": "LICENSED_DERIVATIVE",
-   "publication_layer_basis": "corpus/t3_ocr_alan_lee_the_lord_of_the_rings_sketchbook.txt carries 'Copyright (c) Alan Lee 2005', 'Illustrations (c) Alan Lee 1991, 2005', 'Published by HarperCollins Publishers 2005', 'The J.R.R. Tolkien Estate Limited', and its own subject: the watercolours 'for the special centenary edition'. THE AUTHORISED BOOK ILLUSTRATIONS, NOT FILM CONCEPT ART -- which is why this row is t3 where the two Gary Russell books are t4, and the layer follows the same fact."
+   }
   },
   {
    "file": "eldamo_PEE_Parma_Errata.pdf",
@@ -2975,6 +2975,8 @@
    "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "bound": 0,
    "cited": 0,
+   "publication_layer": "ADAPTATION",
+   "publication_layer_basis": "corpus/t4_the_art_of_the_fellowship_of_the_ring.txt carries its own jacket copy: 'Cover images (c) 2001 New Line Productions, Inc.', 'NEW LINE CINEMA', 'exclusive interviews with director Peter Jackson', 'images that did not make it into the final film'. Read from the artefact, not inferred from the title -- which is how the companion volume above was got wrong.",
    "bytes": 3413589,
    "pages": 102,
    "corpus_file": "t4_the_art_of_the_fellowship_of_the_ring.txt",
@@ -2985,9 +2987,7 @@
     "kind": "unrecorded",
     "ids": [],
     "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
-   },
-   "publication_layer": "ADAPTATION",
-   "publication_layer_basis": "corpus/t4_the_art_of_the_fellowship_of_the_ring.txt carries its own jacket copy: 'Cover images (c) 2001 New Line Productions, Inc.', 'NEW LINE CINEMA', 'exclusive interviews with director Peter Jackson', 'images that did not make it into the final film'. Read from the artefact, not inferred from the title -- which is how the companion volume above was got wrong."
+   }
   },
   {
    "file": "The Atlas of Middle-Earth.pdf",
@@ -3170,17 +3170,17 @@
    "present": true,
    "bound": 0,
    "cited": 0,
+   "text_damaged": true,
+   "text_damaged_note": "publisher text layer corrupt; quarantined 26 Aug 2026 by the owner's ruling. NOT machine-read -- the OCR banner would be the wrong claim about how this text came to exist.",
    "bytes": 26495208,
    "pages": 12,
    "corpus_file": "t3_parma_eldalamberon_vol_1_no_1.txt",
-   "words": 13575,
+   "words": 13643,
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
     "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
-   },
-   "text_damaged": true,
-   "text_damaged_note": "publisher text layer corrupt; quarantined 26 Aug 2026 by the owner's ruling. NOT machine-read -- the OCR banner would be the wrong claim about how this text came to exist."
+   }
   },
   {
    "file": "Parma Eldalamberon Vol. 1 No. 2.pdf",
@@ -3267,19 +3267,19 @@
    "present": true,
    "bound": 0,
    "cited": 0,
+   "text_damaged": true,
+   "text_damaged_note": "publisher text layer corrupt; quarantined 26 Aug 2026 by the owner's ruling. NOT machine-read -- the OCR banner would be the wrong claim about how this text came to exist.",
+   "publication_layer": "RPG",
+   "publication_layer_basis": "corpus/t4_lotr_roleplay.txt names itself: 'Based on The One Ring Roleplaying Game by Francesco Nepitello and Marco Maggi' and 'trademarks of Middle-earth Enterprises, LLC and are used under [licence]'. 23 occurrences of 'Roleplaying', 58 of 'd6', 6 of 'character sheet'. THE TEXT LAYER IS QUARANTINED as publisher-corrupt (C-ruled 26 Aug) and these counts are of TITLE-CASE STRINGS THAT SURVIVED THE DAMAGE, which is a weaker reading than a clean text would give and is still decisive about what the book IS.",
    "bytes": 66606923,
    "pages": 242,
    "corpus_file": "t4_lotr_roleplay.txt",
-   "words": 113997,
+   "words": 114065,
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
     "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
-   },
-   "text_damaged": true,
-   "text_damaged_note": "publisher text layer corrupt; quarantined 26 Aug 2026 by the owner's ruling. NOT machine-read -- the OCR banner would be the wrong claim about how this text came to exist.",
-   "publication_layer": "RPG",
-   "publication_layer_basis": "corpus/t4_lotr_roleplay.txt names itself: 'Based on The One Ring Roleplaying Game by Francesco Nepitello and Marco Maggi' and 'trademarks of Middle-earth Enterprises, LLC and are used under [licence]'. 23 occurrences of 'Roleplaying', 58 of 'd6', 6 of 'character sheet'. THE TEXT LAYER IS QUARANTINED as publisher-corrupt (C-ruled 26 Aug) and these counts are of TITLE-CASE STRINGS THAT SURVIVED THE DAMAGE, which is a weaker reading than a clean text would give and is still decisive about what the book IS."
+   }
   },
   {
    "file": "Reader And Educator Guide To the Hobbit And the Lord Of The Rings.pdf",
@@ -5547,5 +5547,37 @@
    "work": "The Letters of J.R.R. Tolkien",
    "note": "TWO EDITIONS OF ONE BOOK, not two books. The 2023 revision is the CITATION OF RECORD; the 1981 text stays on the shelf as a WITNESS to what the revision changed, which is a different question from what Tolkien wrote. Declared 12 Aug because attrib_check went red the hour the complete edition landed: five spans bound to 1981 began verifying in the revision too, both tier 1, and the guard read that as a choice among rival sources. It is not one, and the hierarchy is not the only thing that speaks here. ANY better edition of a book already held will produce that finding once per shared passage, so this is a data row rather than a special case in a guard."
   }
- ]
+ ],
+ "witnesses": {
+  "what": "Manuscripts this archive can CITE and does not HOLD, described by the repository that holds them. A fourth case beside `sources` (held), `not_held` (a publication known and not acquired) and `derived` (made here).",
+  "repository": "Marquette University, Raynor Memorial Libraries, Department of Special Collections and University Archives",
+  "rows": 654,
+  "sheets": 9026,
+  "pages": 12029,
+  "corpus_links": 56,
+  "dataset": "site/arda_witnesses.json",
+  "why_not_here": "654 folder records would take this register from 264 KB to over 1 MB, and site/corpus.html fetches it over the wire under a ceiling map/budget_check.py enforces. The register declares; the dataset holds.",
+  "conf": "EXT",
+  "tier": 3
+ },
+ "art_catalogue": {
+  "what": "Catalogue records for J.R.R. Tolkien's published artwork, from two complementary catalogues. TITLES, SHELFMARKS, MEDIA AND PLACES OF REPRODUCTION ONLY -- no image data, and none served. Tolkien's and Christopher Tolkien's artwork is not republished by this archive.",
+  "catalogues": [
+   "Published Art by J.R.R. Tolkien -- Wayne G. Hammond & Christina Scull, from The J.R.R. Tolkien Companion and Guide, revised July 2018",
+   "Tolkien Art Index -- tai.tolkienists.org"
+  ],
+  "rows": 1140,
+  "with_shelfmark": 531,
+  "by_repository": {
+   "Bodleian": 457,
+   "Marquette": 74
+  },
+  "reproduction_rows": 1772,
+  "books_reproducing": 62,
+  "in_both_catalogues": 136,
+  "dataset": "site/arda_art_catalogue.json",
+  "no_image_data": true,
+  "conf": "EXT",
+  "tier": 3
+ }
 }
