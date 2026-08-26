@@ -148,13 +148,14 @@
   "ok": true
  },
  {
-  "key": "gondor",
-  "label": "Arms of the Kings of Gondor",
+  "key": "telcontar",
+  "label": "The Royal Arms of the Reunited Kingdom",
   "file": "heraldry/gondor.svg",
   "src": "https://commons.wikimedia.org/wiki/File:Escudo_Real_de_Gondor.svg",
   "license": "CC BY-SA 3.0",
   "author": "Escudo Gondor.svg: *Escudo Gondor.png: Vëon Menelion\nderivat",
-  "ok": true
+  "ok": true,
+  "why": "C171 and C179, 22 August 2026. This entry stood under key `gondor` until 26 August and was the last record in the archive still saying so. The owner ruled that Escudo_Real_de_Gondor.svg MOVES OFF `gondor` ENTIRELY and becomes the TELCONTAR device -- House of Elendil (Telcontari), House of Telcontar, and The Reunited Kingdom -- while `gondor` keeps Grond's Royal Banner plate and its six subjects. The roster and heraldry.js were moved then; this file was not, so two register rows went on declaring shown_as = heraldry/gondor.png when only one image can render, and the hall's credit line collapsed `telcontar` into `gondor` and printed this Commons attribution under the label of a plate that is Grond's. The filename `heraldry/gondor.svg` is left alone: it is what the hall serves for telcontar today, and renaming a published path is a separate act. The tree upon sable is Tolkien's; the ATTRIBUTION of this particular drawing to the Telcontari is the owner's ruling and not a reading of the corpus."
  },
  {
   "key": "feanor",

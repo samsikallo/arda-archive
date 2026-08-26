@@ -40,7 +40,8 @@
    "withdrawn": "withdrawn 2026-07-25: the recreation showed a sun and a scarlet heart, but Tolkien names three emblems — 'the moon and the sun and the scarlet heart'. The device is now drawn by the forge with all three.",
    "modified": null,
    "sha1": null,
-   "size": null
+   "size": null,
+   "shown_as": null
   },
   {
    "file": "heraldry/hammerwrath.svg",
@@ -93,7 +94,8 @@
    "withdrawn": "withdrawn 2026-07-24: no emblem is recorded; the fountain is now drawn by the forge and badged interpretive.",
    "modified": null,
    "sha1": null,
-   "size": null
+   "size": null,
+   "shown_as": null
   },
   {
    "file": null,
@@ -110,7 +112,8 @@
    "withdrawn": "withdrawn 2026-07-24: Tolkien gives the house its green raiment and no charge. The tree was an invention.",
    "modified": null,
    "sha1": null,
-   "size": null
+   "size": null,
+   "shown_as": null
   },
   {
    "file": null,
@@ -127,7 +130,8 @@
    "withdrawn": "withdrawn 2026-07-24: the artwork showed a golden rose; Tolkien says the house 'bore a rayed sun upon their shield'. Redrawn by the forge.",
    "modified": null,
    "sha1": null,
-   "size": null
+   "size": null,
+   "shown_as": null
   },
   {
    "file": "heraldry/rohan.svg",
@@ -294,8 +298,8 @@
   {
    "file": "heraldry/gondor.svg",
    "exists": true,
-   "device": "gondor",
-   "label": "Arms of the Kings of Gondor",
+   "device": "telcontar",
+   "label": "The Royal Arms of the Reunited Kingdom",
    "tier": 2,
    "basis": "a freely-licensed recreation; a device Tolkien drew himself, reproduced here from his own drawing",
    "canon": true,
@@ -307,7 +311,7 @@
    "modified": null,
    "sha1": "7e027c301b024c54",
    "size": null,
-   "shown_as": "heraldry/gondor.png"
+   "shown_as": "heraldry/gondor.svg"
   },
   {
    "file": "heraldry/feanor.svg",
@@ -345,7 +349,8 @@
    "size": [
     478,
     478
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/finwe.png"
   },
   {
    "file": "heraldry/harp.svg",
@@ -416,7 +421,8 @@
    "withdrawn": "withdrawn 2026-07-24: no device for this house is recorded anywhere. The artwork was an invention.",
    "modified": null,
    "sha1": null,
-   "size": null
+   "size": null,
+   "shown_as": null
   },
   {
    "file": null,
@@ -433,7 +439,8 @@
    "withdrawn": "withdrawn 2026-07-24: no device for this house is recorded anywhere. The artwork was an invention.",
    "modified": null,
    "sha1": null,
-   "size": null
+   "size": null,
+   "shown_as": null
   },
   {
    "file": "heraldry/illustrated/beor.png",
@@ -453,7 +460,8 @@
    "size": [
     478,
     478
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/beor.png"
   },
   {
    "file": "heraldry/illustrated/beren.png",
@@ -473,7 +481,8 @@
    "size": [
     478,
     477
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/beren.png"
   },
   {
    "file": "heraldry/illustrated/earendil.png",
@@ -493,7 +502,8 @@
    "size": [
     478,
     475
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/earendil.png"
   },
   {
    "file": "heraldry/illustrated/thingol.png",
@@ -513,7 +523,8 @@
    "size": [
     478,
     476
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/thingol.png"
   },
   {
    "file": "heraldry/illustrated/feanordev.png",
@@ -533,7 +544,8 @@
    "size": [
     478,
     476
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/feanordev.png"
   },
   {
    "file": "heraldry/illustrated/finarfin.png",
@@ -553,7 +565,8 @@
    "size": [
     478,
     478
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/finarfin.png"
   },
   {
    "file": "heraldry/illustrated/fingolfin.png",
@@ -573,7 +586,8 @@
    "size": [
     478,
     478
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/fingolfin.png"
   },
   {
    "file": "heraldry/illustrated/finrod.png",
@@ -593,7 +607,8 @@
    "size": [
     478,
     477
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/finrod.png"
   },
   {
    "file": "heraldry/illustrated/gilgalad.png",
@@ -613,7 +628,8 @@
    "size": [
     478,
     474
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/gilgalad.png"
   },
   {
    "file": "heraldry/illustrated/hador.png",
@@ -633,7 +649,8 @@
    "size": [
     477,
     478
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/hador.png"
   },
   {
    "file": "heraldry/illustrated/haleth.png",
@@ -653,7 +670,8 @@
    "size": [
     478,
     473
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/haleth.png"
   },
   {
    "file": "heraldry/illustrated/idril.png",
@@ -673,7 +691,8 @@
    "size": [
     478,
     469
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/idril.png"
   },
   {
    "file": "heraldry/illustrated/luthien.png",
@@ -693,7 +712,8 @@
    "size": [
     478,
     464
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/luthien.png"
   },
   {
    "file": "heraldry/illustrated/luthien2.png",
@@ -713,7 +733,8 @@
    "size": [
     478,
     469
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/luthien2.png"
   },
   {
    "file": "heraldry/illustrated/melian.png",
@@ -733,7 +754,8 @@
    "size": [
     478,
     462
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/melian.png"
   },
   {
    "file": "heraldry/illustrated/durin.png",
@@ -753,7 +775,8 @@
    "size": [
     395,
     478
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/durin.png"
   },
   {
    "file": "heraldry/illustrated/silmarilsdev.png",
@@ -773,7 +796,8 @@
    "size": [
     478,
     478
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/silmarilsdev.png"
   },
   {
    "file": "heraldry/illustrated/elendilbadge.png",
@@ -794,7 +818,7 @@
     436,
     478
    ],
-   "shown_as": "heraldry/elendilbadge.png"
+   "shown_as": "heraldry/illustrated/elendilbadge.png"
   },
   {
    "file": "heraldry/illustrated/flyingcorps.png",
@@ -814,7 +838,8 @@
    "size": [
     478,
     199
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/flyingcorps.png"
   },
   {
    "file": "heraldry/illustrated/finwehouse.png",
@@ -834,7 +859,8 @@
    "size": [
     478,
     478
-   ]
+   ],
+   "shown_as": "heraldry/illustrated/finwehouse.png"
   },
   {
    "file": "Emblem of the Flying Corps of Mordor.png",
@@ -905,7 +931,7 @@
    "author": "unattributed",
    "publishable": true,
    "why_not": null,
-   "shown_as": "heraldry/elendilbadge.png",
+   "shown_as": "heraldry/illustrated/elendilbadge.png",
    "sha1": "faf7373a2f7e5796",
    "size": [
     931,
@@ -2625,7 +2651,7 @@
    "tier": 4,
    "basis": "computed by this archive's forge, its arrangement and tinctures measured off the plates; drawn to a device Tolkien describes IN WORDS; he left no drawing of it",
    "canon": false,
-   "note": "unattributed",
+   "note": "Grond",
    "author": "this archive — computed by its own forge from the spec recorded beside it",
    "source": "map/gen_forge_layers.py",
    "licence": "the archive's own",
@@ -2877,7 +2903,7 @@
    "tier": 4,
    "basis": "computed by this archive's forge, its arrangement and tinctures measured off the plates; a device Tolkien drew himself, reproduced here from his own drawing",
    "canon": true,
-   "note": "Escudo Gondor.svg: *Escudo Gondor.png: Vëon Menelion\nderivat",
+   "note": "Grond",
    "author": "this archive — computed by its own forge from the spec recorded beside it",
    "source": "map/gen_forge_layers.py",
    "licence": "the archive's own",
