@@ -10,6 +10,9 @@
   "true string wrong subject": "the string verifies and means something else. Published, because a matcher answering FOUND on a homonym is this archive's oldest fault -- and a row with this verdict must give a READING for every probe that hit, or the generator refuses it",
   "attested but overgeneralised": "the term IS Tolkien's, once, and the fanon is its REACH rather than its existence. The commonest shape a fanon fact takes and the hardest to see, because every step of it can be sourced"
  },
+ "publication_layer_what": "§IV's `publication_layer` -- the SAME key C490 ruled carries §IV's claim-status vocabulary, and the same key that already marks 5,142 Neo-Quenya and Neo-Sindarin records FANON in site/arda_eldamo_lexicon.json. THE LANGUAGE HALF OF *WHAT IS FANON* WAS ANSWERABLE AND THE LORE HALF WAS NOT; putting the lore claims on the same key is what makes them one question. A reader asks it with `.claims[] | select(.publication_layer == \"FANON\")`, or across the whole published set by the value. Nineteen frozen values, guarded by map/publayer_check.py. Every stamp carries a `publication_layer_basis` naming what it was read from and saying that the classification is THIS ARCHIVE'S, not the corroborating wiki's.",
+ "publication_layer_is_not_the_verdict": "`attestation.verdict` measures what the CORPUS does with a string; `publication_layer` states what the claim IS, and on this population they part company. `hadhafang` measures *attested elsewhere* and is an ADAPTATION invention; `muar-balrog` measures *true string wrong subject* and is a ROLEPLAYING_GAME invention. A verdict-to-layer rule would file both as FANON and lose the ancestry this file exists to record.",
+ "publication_layer_absences_are_decisions": "Three claims carry NO layer and each says why on its own row, in `publication_layer_absent_because`. §IV's nineteen are frozen and a twentieth is not a variant but a second taxonomy; where no value is true the field is absent. `conf: [NEO]` is NOT this field and must never be read as it -- its uses elsewhere in the archive are route records for this archive's own compositions.",
  "sibling": "site/arda_adaptations.json holds the adaptation layer. Two files, pointing at each other, because §IX audits 4 and 5 look for rows in the wrong FILE.",
  "provenance": {
   "corroboration_from": "Tolkien Gateway and three fan venues, one capture each, held with sha256 in /home/raz/.arda-crawl-stage/layers-20260826/fetched/",
@@ -29,6 +32,15 @@
   "claims_not_attested": 1,
   "claims_with_a_disputed_source_warning": 1,
   "claims_with_established_ancestry": 8,
+  "claims_carrying_publication_layer": 8,
+  "claims_by_publication_layer": {
+   "ADAPTATION": 1,
+   "FANON": 4,
+   "ROLEPLAYING_GAME": 1,
+   "TEXTUALLY_AMBIGUOUS": 1,
+   "VIDEO_GAME": 1
+  },
+  "claims_with_a_written_reason_for_no_layer": 3,
   "venues": 4,
   "venues_with_no_stated_licence": 3,
   "probes_run": 24,
@@ -140,7 +152,9 @@
    },
    "ancestry": "Tolkien Gateway attributes the observation to TV Tropes' Tolkien's Legendarium fanon page; the usage itself is a fan-fiction convention with no single origin this archive can name.",
    "ancestry_established": false,
-   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier.",
+   "publication_layer": "FANON",
+   "publication_layer_basis": "THIS ARCHIVE'S CLASSIFICATION, not the corroborating site's: a fan-fiction convention with no origin the source can name -- `ancestry_established: false` on this row. Nobody's published work is being classified: the belief is the fandom's."
   },
   {
    "id": "elves-vegetarian",
@@ -231,7 +245,9 @@
    },
    "ancestry": "Same list as elfling and dwarfling; no origin is named by the source.",
    "ancestry_established": false,
-   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier.",
+   "publication_layer": "FANON",
+   "publication_layer_basis": "THIS ARCHIVE'S CLASSIFICATION, not the corroborating site's: the same TV Tropes list, and the same unnamed origin. `ancestry_established: false`."
   },
   {
    "id": "modern-military-ranks",
@@ -664,7 +680,9 @@
    },
    "ancestry": "Same list; the convention is imported from modern war fiction rather than from any source about Arda.",
    "ancestry_established": false,
-   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier.",
+   "publication_layer": "FANON",
+   "publication_layer_basis": "THIS ARCHIVE'S CLASSIFICATION, not the corroborating site's: the same list; the row's own ancestry says the convention is imported from modern war fiction rather than from any source about Arda."
   },
   {
    "id": "balrog-wings",
@@ -760,7 +778,9 @@
    },
    "ancestry": "NOT FANON, AND THIS FILE SAYS SO RATHER THAN FILING IT TIDILY. The argument rests on sentences Tolkien wrote, which is what makes it a reading rather than an invention -- and all three of the sentences the argument turns on verify here, two for and one against. It is amplified by adaptation: the 1978 Bakshi film gives the Balrog literal wings and limited flight, and Jackson's 2001 design gives it wings, an elongated tail and hoofed feet. See site/arda_adaptations.json, deviation bakshi-balrog-wings, which records the same passage from the other side.",
    "ancestry_established": true,
-   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier.",
+   "publication_layer": "TEXTUALLY_AMBIGUOUS",
+   "publication_layer_basis": "THIS ARCHIVE'S CLASSIFICATION, not the corroborating site's: THE ROW'S OWN ANCESTRY REFUSES `FANON` IN SO MANY WORDS: *NOT FANON, AND THIS FILE SAYS SO RATHER THAN FILING IT TIDILY*. The argument rests on sentences Tolkien wrote and all three verify here, two for and one against. `TEXTUALLY_AMBIGUOUS` is the value C489 added to §IV for exactly a genuinely undecidable reading, and until this row it sat on ZERO records."
   },
   {
    "id": "blue-wizards-name",
@@ -1022,7 +1042,8 @@
    },
    "ancestry": "Tolkien Gateway's own note records the mechanism exactly: the term is mentioned in ONE essay, which is the only source assigning them a colour, and when Tolkien returned to the two Wizards he gave them other names and backgrounds and never specified a colour again. THE FANON IS A SINGLE ATTESTATION GENERALISED TO EVERY VERSION -- which is why this row is not filed as an invention. It is the most common shape a fanon fact takes and the hardest to see, because every step of it can be sourced.",
    "ancestry_established": true,
-   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier.",
+   "publication_layer_absent_because": "NO VALUE IN §IV's FROZEN NINETEEN IS TRUE OF THIS ROW, and inventing a twentieth is the fault `map/publayer_check.py` exists to refuse. The term IS Tolkien's -- it is in the corpus, in ONE essay -- so `FANON` would assert he did not write it, which is false. The text is not ambiguous, so `TEXTUALLY_AMBIGUOUS` is false too. What is fanon here is the REACH of a single attestation to every version, and §IV has no word for an overgeneralised attestation. The gap is in the vocabulary and it is reported rather than papered over."
   },
   {
    "id": "hadhafang",
@@ -1066,7 +1087,9 @@
    },
    "ancestry": "ORIGIN IS ESTABLISHED AND IT IS AN ADAPTATION. The sword is invented for The Fellowship of the Ring (2001); Tolkien Gateway calls it a non-canonical sword. The chain adaptation -> merchandise -> fandom is the commonest way a fanon fact enters, and it is the reason this archive keeps the adaptation layer and the fan layer in two files that point at each other.",
    "ancestry_established": true,
-   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier.",
+   "publication_layer": "ADAPTATION",
+   "publication_layer_basis": "THIS ARCHIVE'S CLASSIFICATION, not the corroborating site's: ORIGIN ESTABLISHED AND IT IS NOT THE FANDOM'S: the sword is invented for The Fellowship of the Ring (2001) and reaches fandom through the film's merchandise. The row lives in the fan file because fandom holds the belief; the LAYER says who made it, which is the whole point of §I.5's ancestry."
   },
   {
    "id": "muar-balrog",
@@ -1105,7 +1128,9 @@
    },
    "ancestry": "Invented for a 1984 licensed game. Tolkien names Gothmog, Durin's Bane and Lungorthin; the game adds this one. A LICENSED invention is still an invention, and the licence changes who may print it, not whether Tolkien wrote it.",
    "ancestry_established": true,
-   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier.",
+   "publication_layer": "ROLEPLAYING_GAME",
+   "publication_layer_basis": "THIS ARCHIVE'S CLASSIFICATION, not the corroborating site's: invented for Middle-earth Role Playing, a 1984 licensed tabletop game -- the same value `map/mark_publication_layer.py` gives LOTR ROLEPLAY.pdf in `site/arda_sources.json`. A LICENSED invention is still an invention; the licence changes who may print it."
   },
   {
    "id": "thaurlach-targoroth",
@@ -1143,7 +1168,9 @@
    },
    "ancestry": "Each is invented by one game. They are recorded together because the SHAPE is the same as Muar's and repeating it across three products is not three confirmations -- §I.5's rule, applied. THE CONTRAST WITH THE Muar ROW IS THE USEFUL PART: these two really are absent, and it took the same measurement to find out, run over the same 232 files.",
    "ancestry_established": true,
-   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier.",
+   "publication_layer": "VIDEO_GAME",
+   "publication_layer_basis": "THIS ARCHIVE'S CLASSIFICATION, not the corroborating site's: each name is invented by one video game -- The Lord of the Rings Online and Middle-earth: Shadow of War -- and the corpus measurement over 232 files returns nothing for either."
   },
   {
    "id": "new-notion-club-archives",
@@ -1301,7 +1328,9 @@
    },
    "ancestry": "THE CLEAREST ANCESTRY CHAIN IN THIS FILE AND THE POINT OF RECORDING ANCESTRY AT ALL. Tolkien Gateway states that the Archives were in turn used as a source for other fan projects, naming The Lord of the Rings: Realms in Exile. A reader who meets the same invented fact in both has met ONE source twice.",
    "ancestry_established": true,
-   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier.",
+   "publication_layer": "FANON",
+   "publication_layer_basis": "THIS ARCHIVE'S CLASSIFICATION, not the corroborating site's: a fan project's own synthesis, and the row's ancestry names the chain onward from it to another fan project -- §I.5's rule, that repetition across sites is one source twice."
   },
   {
    "id": "david-day-bestiary",
@@ -1419,6 +1448,7 @@
    "ancestry": "Day's books are widely held, widely reprinted under changed titles, and widely repeated -- which is precisely why §I.5's rule matters here: a claim that appears in four Day titles has one source.",
    "ancestry_established": true,
    "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier.",
+   "publication_layer_absent_because": "LEFT ABSENT ON PURPOSE. `FANON` would assert amateur fan authorship of books that have sold over three million copies in more than 120 editions; `SCHOLARLY_INTERPRETATION` would assert a scholarly standing that this row's own `disputed_source` block records five named critics contesting. §IV has no value for a commercially published reference work whose reliability is disputed by name, and the warning block carries the fact instead.",
    "disputed_source": {
     "name": "David Day",
     "why": "Tolkien Gateway records that Day is notable for a tendency to fabricate false or inaccurate information, and that his books have been repeatedly criticised by the Tolkien community; Day rejects the charge of inaccuracy.",
@@ -1486,7 +1516,8 @@
    },
    "ancestry": "A claim about the FANDOM rather than about Arda, and it is here because the fan layer must be able to describe its own population. Its ancestry is a named bibliographer, which is as good as ancestry gets in this file.",
    "ancestry_established": true,
-   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier."
+   "not_a_claim_about_arda": "This row records that somebody believes this. It is not evidence about Middle-earth and carries no tier.",
+   "publication_layer_absent_because": "THIS ROW MAKES NO CLAIM ABOUT ARDA -- it is a bibliographic fact about the fandom, sourced to a named bibliographer, and the row says so itself. §IV classifies a claim's standing as evidence about Middle-earth; there is nothing here for it to rank. The fan layer must be able to describe its own population without pretending that description is a claim about the legendarium."
   }
  ],
  "venues_what": "Where fan material lives. A venue row is not a claim about Arda or about the fandom; it records that a place exists, who runs it, and what it states about its own rights. Nothing of their content is carried.",

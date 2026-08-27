@@ -4,6 +4,9 @@
  "why_corpus_tier_and_not_tier": "A locus carries `corpus_tier` -- the tier of the CORPUS FILE a quotation was found in, which is a property of the shelf and not a rank on this row. It is named `corpus_tier` rather than `tier` so that a reader grepping this file for a tier finds nothing that could be mistaken for one.",
  "not_the_canon": "Nothing in this file is evidence about Middle-earth. A reader who wants what Tolkien wrote wants site/arda_quotes.json or the corpus; a reader who wants what a fan believes wants site/arda_fanon.json.",
  "sibling": "site/arda_fanon.json holds the fan layer. The two are separate files for the same reason both are separate from the canon datasets.",
+ "publication_layer_what": "§IV's `publication_layer` -- the SAME key C490 ruled carries §IV's claim-status vocabulary, not a second field beside it -- on the `adaptation_side` of every deviation. THIS IS THE ONLY THING IN THE ARCHIVE THAT MAKES A CLAIM QUERYABLE AS ADAPTATION-ONLY. A reader asks it with `.deviations[] | select(.adaptation_side.publication_layer)`, or across the whole published set by the value, which is how the 5,142 FANON lexicon records are already found. Its nineteen values are frozen in research/registry/schema/source.schema.json and guarded by map/publayer_check.py; every stamp carries a `publication_layer_basis` naming what it was read from, because a classification nobody can overrule is not published.",
+ "publication_layer_not_on_works": "A `works` row records that an adaptation EXISTS; §IV's `publication_layer` classifies a CLAIM's standing (C490). It is left off deliberately and not for want of trying: five of the 76 works are fan films and two of the print rows are a parody and an unauthorised retelling, and nothing in the Wikidata harvest held here separates them from the licensed productions, so a medium-to-layer map would publish a false ADAPTATION or a false LICENSED_DERIVATIVE_WORK on seven rows. The DEVIATIONS carry the field instead, because each of those is a claim about one named work.",
+ "publication_layer_not_on_the_text_side": "The `text_side` of a deviation is Tolkien's own sentence and carries NO layer. Its honest value is TOLKIEN_PRIMARY_PUBLISHED or TOLKIEN_PRIMARY_POSTHUMOUS depending on which VOLUME each locus falls in -- C490's other axis, `first_publication`, which no row here carries. Guessing between the two would put a false stamp on Tolkien's own words to fill a column.",
  "provenance": {
   "works_from": "Wikidata, via four SPARQL queries held in /home/raz/.arda-crawl-stage/layers-20260826/meta/",
   "works_licence": "CC0 1.0 Universal, as stated by Wikidata for its structured data",
@@ -152,6 +155,13 @@
   "deviations_attested_text_side": 12,
   "deviations_absence_measured": 2,
   "deviations_refused": 0,
+  "deviation_claims_carrying_publication_layer": 14,
+  "deviation_claims_by_publication_layer": {
+   "ADAPTATION": 12,
+   "ROLEPLAYING_GAME": 1,
+   "VIDEO_GAME": 1
+  },
+  "deviation_claims_not_stamped": 0,
   "corpus_files_searched": 232,
   "hosts_refused": 2
  },
@@ -3961,7 +3971,9 @@
     "retrieved_at": "2026-08-26T21:51:30Z",
     "capture_sha256": "3dda38a26b5059f9fa36ca9d9ead4216845515eb68c821eda2531090db4bb102",
     "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
-    "conf": "EXT"
+    "conf": "EXT",
+    "publication_layer": "ADAPTATION",
+    "publication_layer_basis": "this archive's classification of the CLAIM in `shows`, from the named work and maker already on this row -- The Lord of the Rings: The Fellowship of the Ring (Peter Jackson / New Line Cinema, 2001), a film -- corroborated by the capture in `corroboration_anchor`. §IV's `ADAPTATION`. Nothing here is derived from a tier or from the `medium` bucket."
    },
    "text_side": {
     "kind": "attested",
@@ -3998,7 +4010,9 @@
     "retrieved_at": "2026-08-26T21:50:19Z",
     "capture_sha256": "5624570f6d3b9b47ca9149e1439e9653b91a70c2c2da585c64098051d21c88d3",
     "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
-    "conf": "EXT"
+    "conf": "EXT",
+    "publication_layer": "ADAPTATION",
+    "publication_layer_basis": "this archive's classification of the CLAIM in `shows`, from the named work and maker already on this row -- The Lord of the Rings: The Fellowship of the Ring (Peter Jackson / New Line Cinema, 2001), a film -- corroborated by the capture in `corroboration_anchor`. §IV's `ADAPTATION`. Nothing here is derived from a tier or from the `medium` bucket."
    },
    "text_side": {
     "kind": "attested",
@@ -4052,7 +4066,9 @@
     "retrieved_at": "2026-08-26T21:51:34Z",
     "capture_sha256": "c773794f9418852fb28b1b5aab517bf628e238b5bd482afa3a521cb4160bdec6",
     "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
-    "conf": "EXT"
+    "conf": "EXT",
+    "publication_layer": "ADAPTATION",
+    "publication_layer_basis": "this archive's classification of the CLAIM in `shows`, from the named work and maker already on this row -- The Lord of the Rings: The Two Towers (Peter Jackson / New Line Cinema, 2002), a film -- corroborated by the capture in `corroboration_anchor`. §IV's `ADAPTATION`. Nothing here is derived from a tier or from the `medium` bucket."
    },
    "text_side": {
     "kind": "attested",
@@ -4107,7 +4123,9 @@
     "retrieved_at": "2026-08-26T21:51:59Z",
     "capture_sha256": "200137043507ecd90d26ba29f24f1e7a72a947f9018fce40c6947ea22704d7cd",
     "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
-    "conf": "EXT"
+    "conf": "EXT",
+    "publication_layer": "ADAPTATION",
+    "publication_layer_basis": "this archive's classification of the CLAIM in `shows`, from the named work and maker already on this row -- The Lord of the Rings: The Two Towers (Peter Jackson / New Line Cinema, 2002), a film -- corroborated by the capture in `corroboration_anchor`. §IV's `ADAPTATION`. Nothing here is derived from a tier or from the `medium` bucket."
    },
    "text_side": {
     "kind": "attested",
@@ -4144,7 +4162,9 @@
     "retrieved_at": "2026-08-26T21:51:38Z",
     "capture_sha256": "e6173477dd56b93057d8a4cd5473d3281506e60b8205c9e7ba894f8818f11d54",
     "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
-    "conf": "EXT"
+    "conf": "EXT",
+    "publication_layer": "ADAPTATION",
+    "publication_layer_basis": "this archive's classification of the CLAIM in `shows`, from the named work and maker already on this row -- The Lord of the Rings: The Return of the King (Peter Jackson / New Line Cinema, 2003), a film -- corroborated by the capture in `corroboration_anchor`. §IV's `ADAPTATION`. Nothing here is derived from a tier or from the `medium` bucket."
    },
    "text_side": {
     "kind": "attested",
@@ -4181,7 +4201,9 @@
     "retrieved_at": "2026-08-26T21:52:07Z",
     "capture_sha256": "0c17db84d7c44fdeb79261fffc295da028b4d78f5943555a68da4ffdd4785f25",
     "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
-    "conf": "EXT"
+    "conf": "EXT",
+    "publication_layer": "ADAPTATION",
+    "publication_layer_basis": "this archive's classification of the CLAIM in `shows`, from the named work and maker already on this row -- The Lord of the Rings: The Return of the King (Peter Jackson / New Line Cinema, 2003), a film -- corroborated by the capture in `corroboration_anchor`. §IV's `ADAPTATION`. Nothing here is derived from a tier or from the `medium` bucket."
    },
    "text_side": {
     "kind": "attested",
@@ -4224,7 +4246,9 @@
     "retrieved_at": "2026-08-26T21:52:03Z",
     "capture_sha256": "18ec4d5586501bf9a9a670c9b2558a55881df17f1bb079829ba886ee5eeeee8f",
     "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
-    "conf": "EXT"
+    "conf": "EXT",
+    "publication_layer": "ADAPTATION",
+    "publication_layer_basis": "this archive's classification of the CLAIM in `shows`, from the named work and maker already on this row -- The Lord of the Rings: The Return of the King (Peter Jackson / New Line Cinema, 2003), a film -- corroborated by the capture in `corroboration_anchor`. §IV's `ADAPTATION`. Nothing here is derived from a tier or from the `medium` bucket."
    },
    "text_side": {
     "kind": "attested",
@@ -4261,7 +4285,9 @@
     "retrieved_at": "2026-08-26T21:51:42Z",
     "capture_sha256": "d24d1fcebcd1352fec337a829d984ca5653dffb4069fd4c6f48b49badad536d8",
     "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
-    "conf": "EXT"
+    "conf": "EXT",
+    "publication_layer": "ADAPTATION",
+    "publication_layer_basis": "this archive's classification of the CLAIM in `shows`, from the named work and maker already on this row -- The Hobbit (film series) (Peter Jackson / New Line Cinema and MGM, 2013), a film -- corroborated by the capture in `corroboration_anchor`. §IV's `ADAPTATION`. Nothing here is derived from a tier or from the `medium` bucket."
    },
    "text_side": {
     "kind": "not attested",
@@ -4301,7 +4327,9 @@
     "retrieved_at": "2026-08-26T21:51:46Z",
     "capture_sha256": "13d8475ccb1ebfcb069d4a3daf6c08cca0b5cc98418b18302dcbb77ec0d34a55",
     "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
-    "conf": "EXT"
+    "conf": "EXT",
+    "publication_layer": "ADAPTATION",
+    "publication_layer_basis": "this archive's classification of the CLAIM in `shows`, from the named work and maker already on this row -- The Hobbit (film series) (Peter Jackson / New Line Cinema and MGM, 2012), a film -- corroborated by the capture in `corroboration_anchor`. §IV's `ADAPTATION`. Nothing here is derived from a tier or from the `medium` bucket."
    },
    "text_side": {
     "kind": "attested",
@@ -4344,7 +4372,9 @@
     "retrieved_at": "2026-08-26T21:52:11Z",
     "capture_sha256": "11b26d5c8ef98b9ec1b7b2e40a62ce1deec49c3ec3af2280ecb43594bae55e0d",
     "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
-    "conf": "EXT"
+    "conf": "EXT",
+    "publication_layer": "ADAPTATION",
+    "publication_layer_basis": "this archive's classification of the CLAIM in `shows`, from the named work and maker already on this row -- The Lord of the Rings: The Rings of Power (Amazon MGM Studios, 2022), a television -- corroborated by the capture in `corroboration_anchor`. §IV's `ADAPTATION`. Nothing here is derived from a tier or from the `medium` bucket."
    },
    "text_side": {
     "kind": "not attested",
@@ -4373,7 +4403,9 @@
     "retrieved_at": "2026-08-26T21:51:50Z",
     "capture_sha256": "9983b43339594f52467fe3d3eba0ecdd286d874e5120120f5ee35164e04e554b",
     "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
-    "conf": "EXT"
+    "conf": "EXT",
+    "publication_layer": "ADAPTATION",
+    "publication_layer_basis": "this archive's classification of the CLAIM in `shows`, from the named work and maker already on this row -- The Lord of the Rings: The Rings of Power (Amazon MGM Studios, 2022), a television -- corroborated by the capture in `corroboration_anchor`. §IV's `ADAPTATION`. Nothing here is derived from a tier or from the `medium` bucket."
    },
    "text_side": {
     "kind": "attested",
@@ -4410,7 +4442,9 @@
     "retrieved_at": "2026-08-26T21:51:50Z",
     "capture_sha256": "9983b43339594f52467fe3d3eba0ecdd286d874e5120120f5ee35164e04e554b",
     "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
-    "conf": "EXT"
+    "conf": "EXT",
+    "publication_layer": "VIDEO_GAME",
+    "publication_layer_basis": "this archive's classification of the CLAIM in `shows`, from the named work and maker already on this row -- Middle-earth: Shadow of Mordor (Monolith Productions / Warner Bros. Interactive, 2014), a video game -- corroborated by the capture in `corroboration_anchor`. §IV's `VIDEO_GAME`. Nothing here is derived from a tier or from the `medium` bucket."
    },
    "text_side": {
     "kind": "attested",
@@ -4453,7 +4487,9 @@
     "retrieved_at": "2026-08-26T21:52:15Z",
     "capture_sha256": "4176e234b67d2430b9fb9f3eee3707f1566c104c02a01fe91c084b262c09e196",
     "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
-    "conf": "EXT"
+    "conf": "EXT",
+    "publication_layer": "ROLEPLAYING_GAME",
+    "publication_layer_basis": "this archive's classification of the CLAIM in `shows`, from the named work and maker already on this row -- Middle-earth Role Playing (Iron Crown Enterprises, 1984), a tabletop -- corroborated by the capture in `corroboration_anchor`. §IV's `ROLEPLAYING_GAME`. Nothing here is derived from a tier or from the `medium` bucket."
    },
    "text_side": {
     "kind": "attested",
@@ -4504,7 +4540,9 @@
     "retrieved_at": "2026-08-26T21:50:15Z",
     "capture_sha256": "3cd1a03a148a7f6e52e0034219bd112616c32f9211e46f919e5c323e2230c1db",
     "licence_as_stated": "Creative Commons Attribution-ShareAlike 4.0, as stated in the page footer",
-    "conf": "EXT"
+    "conf": "EXT",
+    "publication_layer": "ADAPTATION",
+    "publication_layer_basis": "this archive's classification of the CLAIM in `shows`, from the named work and maker already on this row -- The Lord of the Rings (1978 film) (Ralph Bakshi / United Artists, 1978), a film -- corroborated by the capture in `corroboration_anchor`. §IV's `ADAPTATION`. Nothing here is derived from a tier or from the `medium` bucket."
    },
    "text_side": {
     "kind": "attested",
