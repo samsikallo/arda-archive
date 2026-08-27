@@ -6432,7 +6432,7 @@
    "tna_discovery": "OGL v3.0 per TNA's footer, NOT established as reaching the 330 contributed descriptions authored by the holding repositories",
    "marquette_finding_aid": "no open licence; written permission of Raynor Library beyond fair use, credit line mandated, (c) 2026 Marquette University"
   },
-  "no_tier": "A catalogue record makes no claim about Arda, so these rows carry a hand and a licence and no tier. There is no fifth tier.",
+  "no_tier": "A catalogue record makes no claim about Arda, so these rows carry a hand and a licence and no tier. On the fifth tier see his ruling C474: tier 5 is an ORIGIN axis, 'made by this archive', not a rank; nothing here carries it.",
   "dataset": "site/arda_mss_catalogue.json",
   "why_not_here": "1,338 catalogue rows would take this register past a megabyte, and site/corpus.html fetches it over the wire under a ceiling map/budget_check.py enforces and corpus.html is already over. The register declares; the dataset holds.",
   "sibling": "site/arda_witnesses.json holds the folders the corpus CITES; 417 of the Marquette rows here are the same folders and say so on the row.",
