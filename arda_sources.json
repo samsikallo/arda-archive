@@ -6381,6 +6381,22 @@
      "ai-train": "training or fine-tuning AI models.",
      "use": "how AI systems may consume the content (immediate, reference, or full)."
     },
+    "wording_is_a_platform_default": true,
+    "wording_still_binds": true,
+    "wording_provenance": "THE WORDING IS A PLATFORM DEFAULT, NOT THIS OPERATOR'S OWN DRAFTING, AND IT STILL BINDS. tai.tolkienists.org and www.mobygames.com serve a byte-identical robots.txt (1836 bytes, sha256 842b34303164ead41bccb7c05d1707422e98d108753b397b6dcc19683eb02101), and the body names its author in its own text: the Content-Signal preamble, the Article 4 rights statement and the whole per-agent Disallow list sit between the host's lines # BEGIN Cloudflare Managed content and # END Cloudflare Managed Content. So the reservation IS a reservation -- a host that serves it under its own domain reserves its rights, whoever drafted the words -- but it is NOT evidence that this operator ever considered this archive, and the record says so rather than leaving a reader to assume the stronger reading. Recorded under C493's correction of 27 August 2026, which the owner ruled leaves C493 itself standing.",
+    "wording_identical_robots_txt_served_by": [
+     "tai.tolkienists.org",
+     "www.mobygames.com"
+    ],
+    "wording_robots_txt_sha256": "842b34303164ead41bccb7c05d1707422e98d108753b397b6dcc19683eb02101",
+    "wording_robots_txt_bytes": 1836,
+    "wording_verbatim_template_markers": [
+     "# BEGIN Cloudflare Managed content",
+     "# END Cloudflare Managed Content"
+    ],
+    "wording_verified_utc": "2026-08-27T05:51:04Z",
+    "wording_is_evidence_this_operator_considered_this_archive": false,
+    "wording_correction_ruling": "DECISIONS.md C493, correction of 27 August 2026 -- the owner ruled C493 STANDS with this recorded.",
     "the_reservation_in_the_hosts_own_words": "Content-Signal: search=yes,ai-train=no,use=reference -- and, for this agent family by name, User-agent: ClaudeBot / Disallow: /. The host declares that any restriction expressed via Content Signals is an express reservation of rights under Article 4 of the EU Directive 2019/790.",
     "when_these_rows_were_fetched": "2026-08-26",
     "fetched_before_the_robots_txt_was_read": true,
