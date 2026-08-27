@@ -96,7 +96,7 @@ const GROUPS=[
    ["errata.html","errata","what this archive used to say, and what it says now"],
    ["corpus.html","the corpus","258 volumes, concordance, queries"],
    ["canon.html","is it canon?","ask a phrase, see which volume attests it"],
-   ["theindex.html","the index","9,416 names, the editors' own glosses"],   ["compare.html","side by side","two lives or two battles"],
+   ["theindex.html","the index","9,423 names, the editors' own glosses"],   ["compare.html","side by side","two lives or two battles"],
    ["quiz.html","the trial","test your lore"],
    ["tours.html","tours","guided roads through the halls"]]],
 ];
