@@ -73,7 +73,7 @@
    exception was being granted to two graves. C78 corrected it: the survivors are
    theindex.html and sheets.html, and the rule is a property rather than a list --
    BOTH ARE INSTRUMENTS, NOT LEAVES. A map that cannot be moved around is not a
-   map; a 9,416-name index turned eight names at a time is not an index.
+   map; an index of nine thousand names turned eight at a time is not an index.
    Every other hall becomes a sequence of codex spreads, verso opening and recto
    continuing, with folio, quire signature and catchword carrying real position.
 
@@ -130,7 +130,7 @@
      disk on every build; this file reads a property of the page in front of it.
 
      AND THE REASON IS THE RULE: BOTH SURVIVORS ARE INSTRUMENTS, NOT LEAVES. A map that cannot be
-     moved around is not a map, and a 9,416-name index turned eight names at a time is not an
+     moved around is not a map, and an index of nine thousand names turned eight at a time is not an
      index. Everything else paginates. */
   var book = document.querySelector(".book");
   var slot = book && book.querySelector(".hall-slot[data-hall-slot]");
