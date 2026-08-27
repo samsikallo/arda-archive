@@ -84,7 +84,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (LAKES_FA); the name is attested 42 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (LAKES_FA); the name is attested 42 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent doriath: The Silmarillion, t1_a_the_silmarillion.txt:6278 — “In the south-west of Doriath, where Aros flowed into Sirion, lay great pools and marshes on either side of the river, which halted there in his course and strayed in many channels. That region was named Aelin-uial, the Twilight Meres” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "doriath",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within doriath, stated in the corpus — “In the south-west of Doriath, where Aros flowed into Sirion, lay great pools and marshes on either side of the river, which halted there in his course and strayed in many channels. That region was named Aelin-uial, the Twilight Meres” (The Silmarillion, t1_a_the_silmarillion.txt:6278) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -101,13 +114,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "doriath"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_LAKE"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q7468643",
     "label": "Aelin-uial",
@@ -118,7 +133,20 @@
   "aeluin": {
    "ages": [],
    "cites": [
-    "The Silmarillion, Of Beren And Lúthien"
+    "The Silmarillion, Of Beren And Lúthien",
+    "containing parent dorthonion: The War of the Jewels, t1_11_the_war_of_the_jewels.txt:2300 — “The forest of Dorthonion rose southward into mountainous moors. There lay a lake, Tarn-aeluin, in the east of those highlands” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "dorthonion",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within dorthonion, stated in the corpus — “The forest of Dorthonion rose southward into mountainous moors. There lay a lake, Tarn-aeluin, in the east of those highlands” (The War of the Jewels, t1_11_the_war_of_the_jewels.txt:2300) [C]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -128,8 +156,11 @@
     "“Now the forest of Dorthonion rose southward into mountainous moors; and in the east of those highlands there lay a lake, Tarn Aeluin, with wild heaths about it, and all that land was pathless and untamed, for even in the days of the Long Peace none had dwelt there.” — The Silmarillion, Of Beren And Lúthien",
     "indexed by Christopher Tolkien as: Tarn Aeluin, lake on Dorthonion"
    ],
-   "parents": [],
+   "parents": [
+    "dorthonion"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [
     {
      "cite": "Silm 18–19 [C]; GA 455 §145 and 460 §167 (HoME XI) [C]",
@@ -141,8 +172,7 @@
    ],
    "types": [
     "NATURAL_LAKE"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "almaren": {
    "ages": [],
@@ -260,7 +290,20 @@
   "amon darthir": {
    "ages": [],
    "cites": [
-    "Unfinished Tales, Narn I Hîn Húrin"
+    "Unfinished Tales, Narn I Hîn Húrin",
+    "containing parent ered wethrin: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13110 — “Amon Darthir A peak in the range of Ered Wethrin south of Dor-lomin” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "ered wethrin",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within ered wethrin, per Christopher Tolkien's index gloss — “Amon Darthir A peak in the range of Ered Wethrin south of Dor-lomin” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13110) [I-H]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -270,13 +313,15 @@
     "“For Húrin’s house stood in the south-east of Dor-lómin, and the mountains were near; Nen Lalaith indeed came down from a spring under the shadow of Amon Darthir, over whose shoulder there was a steep pass.” — Unfinished Tales, Narn I Hîn Húrin",
     "indexed by Christopher Tolkien as: A peak in the range of Ered Wethrin"
    ],
-   "parents": [],
+   "parents": [
+    "ered wethrin"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_PEAK"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "amon din": {
    "ages": [
@@ -442,7 +487,20 @@
   "amon gwareth": {
    "ages": [],
    "cites": [
-    "The Silmarillion, Of the Noldor in Beleriand"
+    "The Silmarillion, Of the Noldor in Beleriand",
+    "containing parent tumladen: The Silmarillion, t1_a_the_silmarillion.txt:13915 — “Amon Gwareth The hill upon which Gondolin was built, in the midst of the plain of Tumladen” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "tumladen",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within tumladen, per Christopher Tolkien's index gloss — “Amon Gwareth The hill upon which Gondolin was built, in the midst of the plain of Tumladen” (The Silmarillion, t1_a_the_silmarillion.txt:13915) [I-H]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -452,14 +510,16 @@
     "“Gondolin upon Amon Gwareth became fair indeed and fit to compare even with Elven Tirion beyond the sea. High and white were its walls, and smooth its stairs, and tall and strong was the Tower of the King.” — The Silmarillion, Of the Noldor in Beleriand",
     "indexed by Christopher Tolkien as: ‘Hill of Watch’ on which Gondolin was built"
    ],
-   "parents": [],
+   "parents": [
+    "tumladen"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_HILL",
     "MAN_MADE_TOWER"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q14192406",
     "label": "Amon Gwareth",
@@ -517,7 +577,20 @@
   "amon obel": {
    "ages": [],
    "cites": [
-    "The Silmarillion, Of Túrin Turambar"
+    "The Silmarillion, Of Túrin Turambar",
+    "containing parent brethil: The War of the Jewels, t1_11_the_war_of_the_jewels.txt:3362 — “the folk of Haleth that dwelt still in the forest of Brethil. They were dwindled now by war to a small people, and dwelt for the most part secretly within a stockade upon the Amon Obel deep in the forest” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "brethil",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within brethil, stated in the corpus — “the folk of Haleth that dwelt still in the forest of Brethil. They were dwindled now by war to a small people, and dwelt for the most part secretly within a stockade upon the Amon Obel deep in the forest” (The War of the Jewels, t1_11_the_war_of_the_jewels.txt:3362) [C]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -527,13 +600,15 @@
     "“Northward he looked, and descried the forest of Brethil climbing green about Amon Obel in its midst, and thither his eyes were drawn ever and again, he knew not why; for his heart was set rather to the north-west, where league upon league away on the skirts of the sky it seemed to him that he could glimpse the Mountains of Shadow, the walls of his home.” — The Silmarillion, Of Túrin Turambar",
     "indexed by Christopher Tolkien as: Hill in the Forest of Brethii"
    ],
-   "parents": [],
+   "parents": [
+    "brethil"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_HILL"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q97267266",
     "label": "Amon Obel",
@@ -656,7 +731,20 @@
    "ages": [],
    "cites": [
     "Unfinished Tales, A Description Of The Island Of Númenor",
-    "D Aldarion n.6, Drúedain; RC[T]"
+    "D Aldarion n.6, Drúedain; RC[T]",
+    "containing parent white mountains: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:12036 — “some of the Dru-folk lingered in the mountains of Andrast, the western outlier of the White Mountains” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "white mountains",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within white mountains, stated in the corpus — “some of the Dru-folk lingered in the mountains of Andrast, the western outlier of the White Mountains” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:12036) [C]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -667,13 +755,15 @@
     "indexed by Christopher Tolkien as: The ‘long cape’ in the west of Gondor",
     "Evidence Table G29"
    ],
-   "parents": [],
+   "parents": [
+    "white mountains"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_CAPE"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q3312373",
     "label": "Andrast",
@@ -714,7 +804,20 @@
   "androth": {
    "ages": [],
    "cites": [
-    "The Silmarillion, Of Tuor And The Fall Of Gondolin"
+    "The Silmarillion, Of Tuor And The Fall Of Gondolin",
+    "containing parent mithrim: The Silmarillion, t1_a_the_silmarillion.txt:13943 — “Androth Caves in the hills of Mithrim where Tuor was fostered by the Grey-elves” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "mithrim",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within mithrim, per Christopher Tolkien's index gloss — “Androth Caves in the hills of Mithrim where Tuor was fostered by the Grey-elves” (The Silmarillion, t1_a_the_silmarillion.txt:13943) [I-H]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -724,13 +827,15 @@
     "“Now when Tuor was sixteen years old the Elves were minded to leave the caves of Androth where they dwelt, and to make their way secretly to the Havens of Sirion in the distant south; but they were assailed by Orcs and Easterlings before they made good their escape, and Tuor was taken captive and enslaved by Lorgan, chief of the Easterlings of Hithlum.” — The Silmarillion, Of Tuor And The Fall Of Gondolin",
     "indexed by Christopher Tolkien as: In the hills of Mithrim"
    ],
-   "parents": [],
+   "parents": [
+    "mithrim"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_HILL"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q9151386",
     "label": "Androth",
@@ -1115,7 +1220,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (SETTLE_FA); the name is attested 18 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SETTLE_FA); the name is attested 18 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent dorlomin: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13165 — “Annon-in-Gelydh Entrance to a subterranean watercourse in the western hills of Dor-lomin, leading to Cirith Ninniach” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "dorlomin",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within dorlomin, per Christopher Tolkien's index gloss — “Annon-in-Gelydh Entrance to a subterranean watercourse in the western hills of Dor-lomin, leading to Cirith Ninniach” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13165) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -1132,13 +1250,15 @@
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "dorlomin"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "MAN_MADE_SETTLEMENT"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q8200321",
     "label": "Annon-in-Gelydh",
@@ -1839,7 +1959,20 @@
    "ages": [],
    "cites": [
     "LotR I.10 — Gandalf's own direction on the letter, read out by Butterbur at Bree [C]",
-    "placed at Hobbiton [I-H]: the text names the container, not a position within it"
+    "placed at Hobbiton [I-H]: the text names the container, not a position within it",
+    "containing parent hobbiton: The Return of the Shadow, t1_6_the_return_of_the_shadow.txt:3324 — “the comfortable and well-furnished hobbit-hole known as Bag-end, Underhill, on the outskirts of Hobbiton in the middle of the Shire” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "hobbiton",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within hobbiton, stated in the corpus — “the comfortable and well-furnished hobbit-hole known as Bag-end, Underhill, on the outskirts of Hobbiton in the middle of the Shire” (The Return of the Shadow, t1_6_the_return_of_the_shadow.txt:3324) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -1857,13 +1990,15 @@
     "the hole under the Hill — 'Bag-End, Under-Hill' in The Hobbit; t1 never calls it a smial; 'they lived on the Hill itself, in Number 3 Bagshot Row just below Bag End' (LotR I.1)",
     "NOT ITS OWN POINT: it shares the point of Hobbiton — the letter addresses it in Hobbiton, and this is Hobbiton's point"
    ],
-   "parents": [],
+   "parents": [
+    "hobbiton"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "MAN_MADE_DWELLING"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q1089103",
     "label": "Bag-End",
@@ -1927,7 +2062,21 @@
    "ages": [
     "FA"
    ],
-   "cites": [],
+   "cites": [
+    "containing parent amon rudh: The Silmarillion, t1_a_the_silmarillion.txt:14099 — “Bar-en-Danwedh 'House of Ransom', the name that Mim the Dwarf gave to his dwelling on Amon Rudh when he yielded it to Turin” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "amon rudh",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within amon rudh, per Christopher Tolkien's index gloss — “Bar-en-Danwedh 'House of Ransom', the name that Mim the Dwarf gave to his dwelling on Amon Rudh when he yielded it to Turin” (The Silmarillion, t1_a_the_silmarillion.txt:14099) [I-H]"
+    }
+   ],
    "coord_conf": "H",
    "coords": [
     {
@@ -1943,8 +2092,11 @@
     "spec FA: cave-house",
     "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
    ],
-   "parents": [],
+   "parents": [
+    "amon rudh"
+   ],
    "place_conf": null,
+   "placed_by": "Samu",
    "timeline": [
     {
      "cite": "HoME XI, the Tale of Years [C]; VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
@@ -1957,7 +2109,6 @@
    "types": [
     "MAN_MADE_DWELLING"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q16157857",
     "label": "Bar-en-Danwedh",
@@ -5151,7 +5302,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (REGIONS_FA); the name is attested 4 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (REGIONS_FA); the name is attested 4 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent ossiriand: The Silmarillion, t1_a_the_silmarillion.txt:9057 — “they passed beyond the River Gelion into Ossiriand, and dwelt there in Tol Galen the green isle, in the midst of Adurant, until all tidings of them ceased. The Eldar afterwards called that country Dor Firn-i-Guinar, the Land of the Dead that Live” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "ossiriand",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within ossiriand, stated in the corpus — “they passed beyond the River Gelion into Ossiriand, and dwelt there in Tol Galen the green isle, in the midst of Adurant, until all tidings of them ceased. The Eldar afterwards called that country Dor Firn-i-Guinar, the Land of the Dead that Live” (The Silmarillion, t1_a_the_silmarillion.txt:9057) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -5168,13 +5332,15 @@
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "ossiriand"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "POLITY_REGION"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q2454008",
     "label": "Dor Firn-i-Guinar",
@@ -6025,7 +6191,21 @@
    "ages": [
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "containing parent belfalas: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:8094 — “The place of the Elvish haven in Belfalas is marked with the name Edhellond” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "belfalas",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within belfalas, stated in the corpus — “The place of the Elvish haven in Belfalas is marked with the name Edhellond” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:8094) [C]"
+    }
+   ],
    "coord_conf": "H",
    "coords": [
     {
@@ -6041,8 +6221,11 @@
     "spec TA: ruined haven °",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
-   "parents": [],
+   "parents": [
+    "belfalas"
+   ],
    "place_conf": null,
+   "placed_by": "Samu",
    "timeline": [
     {
      "cite": "App A/B; UT [C]",
@@ -6056,7 +6239,6 @@
     "MAN_MADE_RUIN",
     "MAN_MADE_HAVEN"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q2526449",
     "label": "Edhellond",
@@ -6404,7 +6586,21 @@
    "ages": [
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "containing parent tower hills: The Silmarillion, t1_a_the_silmarillion.txt:13186 — “the Seeing Stone of Emyn Beraid was set in Elostirion, the tallest of the towers” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "tower hills",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within tower hills, stated in the corpus — “the Seeing Stone of Emyn Beraid was set in Elostirion, the tallest of the towers” (The Silmarillion, t1_a_the_silmarillion.txt:13186) [C]"
+    }
+   ],
    "coord_conf": "H",
    "coords": [
     {
@@ -6420,13 +6616,15 @@
     "spec TA: tower (palantir)",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
-   "parents": [],
+   "parents": [
+    "tower hills"
+   ],
    "place_conf": null,
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "MAN_MADE_TOWER"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "elvenking s halls": {
    "ages": [
@@ -6490,7 +6688,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (HILLFIELDS); the name is attested 30 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (HILLFIELDS); the name is attested 30 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent ithilien: The War of the Ring, t1_8_the_war_of_the_ring.txt:13995 — “the river went in a knee about the out-thrust of the hills of Emyn Arnen in lower Ithilien” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "ithilien",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within ithilien, stated in the corpus — “the river went in a knee about the out-thrust of the hills of Emyn Arnen in lower Ithilien” (The War of the Ring, t1_8_the_war_of_the_ring.txt:13995) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -6507,13 +6718,15 @@
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "ithilien"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_HILL"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q3175602",
     "label": "Emyn Arnen",
@@ -6756,7 +6969,21 @@
    "ages": [
     "FA"
    ],
-   "cites": [],
+   "cites": [
+    "containing parent amon obel: The War of the Jewels, t1_11_the_war_of_the_jewels.txt:3470 — “These were set in a stockade upon a high place in the forest, Ephel Brandir upon Amon Obel” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "amon obel",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within amon obel, stated in the corpus — “These were set in a stockade upon a high place in the forest, Ephel Brandir upon Amon Obel” (The War of the Jewels, t1_11_the_war_of_the_jewels.txt:3470) [C]"
+    }
+   ],
    "coord_conf": "H",
    "coords": [
     {
@@ -6772,8 +6999,11 @@
     "spec FA: stockade",
     "drawn on the vector spec's FA plate, which its Section 0 calls First Age Beleriand"
    ],
-   "parents": [],
+   "parents": [
+    "amon obel"
+   ],
    "place_conf": null,
+   "placed_by": "Samu",
    "timeline": [
     {
      "cite": "HoME XI, the Tale of Years [C]; VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
@@ -6786,7 +7016,6 @@
    "types": [
     "MAN_MADE_FORTRESS"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q4798939",
     "label": "Ephel Brandir",
@@ -7362,7 +7591,20 @@
   "eryn vorn": {
    "ages": [],
    "cites": [
-    "placed from the archive's own vector map (FORESTS_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (FORESTS_TA) [I-M]; the record existed already and had no coordinate",
+    "containing parent minhiriath: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13719 — “Eryn Vorn 'Dark Wood', the great cape on the coast of Minhiriath south of the mouth of the Baranduin” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "minhiriath",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within minhiriath, per Christopher Tolkien's index gloss — “Eryn Vorn 'Dark Wood', the great cape on the coast of Minhiriath south of the mouth of the Baranduin” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13719) [I-H] — the same volume's narrative reads the other way — 'the native folk that survived fled from Minhiriath into the dark woods of the great Cape of Eryn Vorn' (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:8360). The index gloss is the containment statement; the conflict is recorded, not resolved."
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -7380,13 +7622,15 @@
     "spec TA: Forests",
     "the middle of the shape the archive draws"
    ],
-   "parents": [],
+   "parents": [
+    "minhiriath"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_FOREST"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "esgalduin": {
    "ages": [
@@ -7670,7 +7914,20 @@
    "ages": [],
    "cites": [
     "The Silmarillion, Of The Beginning Of Days",
-    "A ch1"
+    "A ch1",
+    "containing parent valinor: The Lays of Beleriand, t1_3_the_lays_of_beleriand.txt:15188 — “to be by evergreen Ezellohar in Valinor, in Eldamar” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "valinor",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within valinor, stated in the corpus — “to be by evergreen Ezellohar in Valinor, in Eldamar” (The Lays of Beleriand, t1_3_the_lays_of_beleriand.txt:15188) [C]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -7681,13 +7938,15 @@
     "indexed by Christopher Tolkien as: The Mound of the Two Trees",
     "Evidence Table V5"
    ],
-   "parents": [],
+   "parents": [
+    "valinor"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "MAN_MADE_TOMB"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q3736336",
     "label": "Ezellohar",
@@ -8069,7 +8328,20 @@
   "firien wood": {
    "ages": [],
    "cites": [
-    "placed from the archive's own vector map (FORESTS_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (FORESTS_TA) [I-M]; the record existed already and had no coordinate",
+    "containing parent white mountains: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13790 — “Firien Wood In full Halifirien Wood; in Ered Nimrais about the Mering Stream and on the slopes of the Halifirien” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "white mountains",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within white mountains, per Christopher Tolkien's index gloss — “Firien Wood In full Halifirien Wood; in Ered Nimrais about the Mering Stream and on the slopes of the Halifirien” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13790) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -8087,13 +8359,15 @@
     "spec TA: Forests",
     "the middle of the shape the archive draws"
    ],
-   "parents": [],
+   "parents": [
+    "white mountains"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_FOREST"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "firth of drengist": {
    "ages": [],
@@ -9396,7 +9670,20 @@
   "greenholm": {
    "ages": [],
    "cites": [
-    "The Lord of the Rings, Appendix B"
+    "The Lord of the Rings, Appendix B",
+    "containing parent far downs: The Lord of the Rings, t1_c_the_lord_of_the_rings.txt:49347 — “Elanor the Fair marries Fastred of Greenholm on the Far Downs” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "far downs",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within far downs, stated in the corpus — “Elanor the Fair marries Fastred of Greenholm on the Far Downs” (The Lord of the Rings, t1_c_the_lord_of_the_rings.txt:49347) [C]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -9406,13 +9693,15 @@
     "“1451 Elanor the Fair marries Fastred of Greenholm on the Far Downs.” — The Lord of the Rings, Appendix B",
     "indexed by Christopher Tolkien as: On the Far Downs"
    ],
-   "parents": [],
+   "parents": [
+    "far downs"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_HILL"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "grey havens": {
    "ages": [
@@ -10020,7 +10309,20 @@
   "haudh en arwen": {
    "ages": [],
    "cites": [
-    "The Silmarillion, Of The Coming Of Men Into The West"
+    "The Silmarillion, Of The Coming Of Men Into The West",
+    "containing parent brethil: The Silmarillion, t1_a_the_silmarillion.txt:7371 — “And Haleth dwelt in Brethil until she died; and her people raised a green mound over her in the heights of the forest, Tur Haretha, the Lady-barrow, Haudh-en-Arwen in the Sindarin tongue” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "brethil",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within brethil, stated in the corpus — “And Haleth dwelt in Brethil until she died; and her people raised a green mound over her in the heights of the forest, Tur Haretha, the Lady-barrow, Haudh-en-Arwen in the Sindarin tongue” (The Silmarillion, t1_a_the_silmarillion.txt:7371) [C]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -10030,14 +10332,16 @@
     "“And Haleth dwelt in Brethil until she died; and her people raised a green mound over her in the heights of the forest, Tûr Haretha, the Lady-barrow, Haudh-en-Arwen in the Sindarin tongue.” — The Silmarillion, Of The Coming Of Men Into The West",
     "indexed by Christopher Tolkien as: The burial-mound of the Lady Haleth"
    ],
-   "parents": [],
+   "parents": [
+    "brethil"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "MAN_MADE_TOMB",
     "NATURAL_FOREST"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q21281323",
     "label": "Haudh-en-Arwen",
@@ -10219,7 +10523,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (LAKES_FA); the name is attested 26 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (LAKES_FA); the name is attested 26 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent thargelion: The War of the Jewels, t1_11_the_war_of_the_jewels.txt:4578 — “renewed commerce with the Elves passed for three hundred years over the mountains much further north, into the northern parts of Thargelion about Lake Helevorn” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "thargelion",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within thargelion, stated in the corpus — “renewed commerce with the Elves passed for three hundred years over the mountains much further north, into the northern parts of Thargelion about Lake Helevorn” (The War of the Jewels, t1_11_the_war_of_the_jewels.txt:4578) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -10236,13 +10553,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "thargelion"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_LAKE"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q16574304",
     "label": "Helevorn",
@@ -10926,7 +11245,20 @@
    ],
    "cites": [
     "LotR IV.7 — Faramir's parting warning as the road leaves Henneth Annûn [C]",
-    "placed at Minas Morgul [I-H]: the text names the container, not a position within it"
+    "placed at Minas Morgul [I-H]: the text names the container, not a position within it",
+    "containing parent ephel duath: The Silmarillion, t1_a_the_silmarillion.txt:16006 — “imlad a narrow valley with steep sides, in Imladris (cf. also Imlad Morgul in the Ephel Duath)” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "ephel duath",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within ephel duath, stated in the corpus — “imlad a narrow valley with steep sides, in Imladris (cf. also Imlad Morgul in the Ephel Duath)” (The Silmarillion, t1_a_the_silmarillion.txt:16006) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -10944,13 +11276,15 @@
     "the valley of the Morgulduin, in which Minas Morgul stands",
     "NOT ITS OWN POINT: it shares the point of Minas Morgul — the city stands in this valley, and this is the city's point"
    ],
-   "parents": [],
+   "parents": [
+    "ephel duath"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_VALLEY"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "ingwil": {
    "ages": [],
@@ -10976,7 +11310,20 @@
   "inlands": {
    "ages": [],
    "cites": [
-    "Unfinished Tales, Part Four"
+    "Unfinished Tales, Part Four",
+    "containing parent numenor: The Return of the Shadow, t1_6_the_return_of_the_shadow.txt:12579 — “the central region of Numenor, Unfinished Tales p. 165” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "numenor",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within numenor, stated in the corpus — “the central region of Numenor, Unfinished Tales p. 165” (The Return of the Shadow, t1_6_the_return_of_the_shadow.txt:12579) [C]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -10986,13 +11333,15 @@
     "“*Emerië Region of sheep pasturage in the Mittalmar (Inlands) of Númenor.” — Unfinished Tales, Part Four",
     "indexed by Christopher Tolkien as: The Mittalmar, central region of Númenor"
    ],
-   "parents": [],
+   "parents": [
+    "numenor"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "irensaga": {
    "ages": [],
@@ -11703,7 +12052,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (LAKES_TA); the name is attested 7 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (LAKES_TA); the name is attested 7 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent eriador: The Peoples of Middle-earth, t1_12_the_peoples_of_middle_earth.txt:10500 — “At that time there were many men in Eriador, mainly, it would seem, in origin kin of the Folk of Beor, though some were kin of the Folk of Hador. They dwelt about Lake Evendim, in the North Downs and the Weather Hills” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "eriador",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within eriador, stated in the corpus — “At that time there were many men in Eriador, mainly, it would seem, in origin kin of the Folk of Beor, though some were kin of the Folk of Hador. They dwelt about Lake Evendim, in the North Downs and the Weather Hills” (The Peoples of Middle-earth, t1_12_the_peoples_of_middle_earth.txt:10500) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -11720,13 +12082,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "eriador"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_LAKE"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "lake helevorn": {
    "ages": [
@@ -11774,7 +12138,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (LAKES_FA); the name is attested 27 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (LAKES_FA); the name is attested 27 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent hithlum: The Shaping of Middle-earth, t1_4_the_shaping_of_middle_earth.txt:1097 — “encamped about the lake Mithrim in Hisilome (Hithlum, or Dorlomin, the land of shadows in the North-west)” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "hithlum",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within hithlum, stated in the corpus — “encamped about the lake Mithrim in Hisilome (Hithlum, or Dorlomin, the land of shadows in the North-west)” (The Shaping of Middle-earth, t1_4_the_shaping_of_middle_earth.txt:1097) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -11791,13 +12168,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "hithlum"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_LAKE"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q25400395",
     "label": "Lake Mithrim",
@@ -11961,7 +12340,20 @@
   "last homely house": {
    "ages": [],
    "cites": [
-    "The Hobbit, A Short Rest"
+    "The Hobbit, A Short Rest",
+    "containing parent rivendell: The Hobbit, t1_b_the_hobbit_or_there_and_back_again.txt:1396 — “Hidden somewhere ahead of us is the fair valley of Rivendell where Elrond lives in the Last Homely House” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "rivendell",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within rivendell, stated in the corpus — “Hidden somewhere ahead of us is the fair valley of Rivendell where Elrond lives in the Last Homely House” (The Hobbit, t1_b_the_hobbit_or_there_and_back_again.txt:1396) [C]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -11971,13 +12363,15 @@
     "“Hidden somewhere ahead of us is the fair valley of Rivendell where Elrond lives in the Last Homely House.” — The Hobbit, A Short Rest",
     "indexed by Christopher Tolkien as: Elrond’s house at Rivendell"
    ],
-   "parents": [],
+   "parents": [
+    "rivendell"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "MAN_MADE_DWELLING"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "lebennin": {
    "ages": [
@@ -12136,7 +12530,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (LAKES_FA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (LAKES_FA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent nevrast: The Silmarillion, t1_a_the_silmarillion.txt:6162 — “there was a great mere in the midst of Nevrast, with no certain shores, being encircled by wide marshes. Linaewen was the name of that mere” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "nevrast",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within nevrast, stated in the corpus — “there was a great mere in the midst of Nevrast, with no certain shores, being encircled by wide marshes. Linaewen was the name of that mere” (The Silmarillion, t1_a_the_silmarillion.txt:6162) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -12153,13 +12560,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "nevrast"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_LAKE"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "lindon": {
    "ages": [
@@ -13134,7 +13543,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (SETTLE_TA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SETTLE_TA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent white mountains: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14254 — “Min-Rimmon 'Peak of the Rimmon' (a group of crags), fifth of the beacons of Gondor in Ered Nimrais” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "white mountains",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within white mountains, per Christopher Tolkien's index gloss — “Min-Rimmon 'Peak of the Rimmon' (a group of crags), fifth of the beacons of Gondor in Ered Nimrais” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14254) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -13151,13 +13573,15 @@
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "white mountains"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "MAN_MADE_SETTLEMENT"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "minas morgul": {
    "ages": [
@@ -13372,7 +13796,20 @@
    "cites": [
     "The Silmarillion, Elements In Quenya And Sindarin Names",
     "D App D; HoME 12",
-    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate",
+    "containing parent eriador: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14250 — “Minhiriath 'Between the Rivers', region of Eriador between Baranduin and Gwathlo” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "eriador",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within eriador, per Christopher Tolkien's index gloss — “Minhiriath 'Between the Rivers', region of Eriador between Baranduin and Gwathlo” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14250) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -13391,13 +13828,15 @@
     "Evidence Table E16",
     "the middle of the shape the archive draws"
    ],
-   "parents": [],
+   "parents": [
+    "eriador"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "POLITY_REGION"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q2621137",
     "label": "Minhiriath",
@@ -13553,7 +13992,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (REGIONS_FA); the name is attested 330 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (REGIONS_FA); the name is attested 330 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent hithlum: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14273 — “Mithrim Name of the great lake in the east of Hithlum, and also of the region about it” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "hithlum",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within hithlum, per Christopher Tolkien's index gloss — “Mithrim Name of the great lake in the east of Hithlum, and also of the region about it” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14273) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -13570,13 +14022,15 @@
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "hithlum"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "POLITY_REGION"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q3492975",
     "label": "Mithrim",
@@ -14504,7 +14958,20 @@
    "ages": [],
    "cites": [
     "C II.9–III.1; RC[T]",
-    "placed from the archive's own vector map (LAKES_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (LAKES_TA) [I-M]; the record existed already and had no coordinate",
+    "containing parent anduin: The Silmarillion, t1_a_the_silmarillion.txt:15962 — “hith 'mist' in Hithaeglir, Hithlum (also in Nen Hithoel, a lake in Anduin)” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "anduin",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within anduin, stated in the corpus — “hith 'mist' in Hithaeglir, Hithlum (also in Nen Hithoel, a lake in Anduin)” (The Silmarillion, t1_a_the_silmarillion.txt:15962) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -14523,13 +14990,15 @@
     "Evidence Table R19",
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
-   "parents": [],
+   "parents": [
+    "anduin"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_LAKE"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q3220053",
     "label": "Nen Hithoel",
@@ -14598,7 +15067,20 @@
    "ages": [],
    "cites": [
     "The Silmarillion, Of The Rings Of Power And The Third Age",
-    "The Silmarillion, Index of Names [C]"
+    "The Silmarillion, Index of Names [C]",
+    "containing parent eriador: The Silmarillion, t1_a_the_silmarillion.txt:15229 — “Nenuial 'Lake of Twilight', in Eriador, where the river Baranduin rose, and beside which the city of Annuminas was built” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "eriador",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within eriador, per Christopher Tolkien's index gloss — “Nenuial 'Lake of Twilight', in Eriador, where the river Baranduin rose, and beside which the city of Annuminas was built” (The Silmarillion, t1_a_the_silmarillion.txt:15229) [I-H]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -14610,13 +15092,15 @@
     "“Nenuial ‘Lake of Twilight’, in Eriador, where the river Baranduin rose, and beside which the city of Annúminas was built.” — The Silmarillion, Index of Names [C]",
     "the archive typed it from its neighbours -- NATURAL_HILL from the Hills of Evendim it lies between, MAN_MADE_CITY from Annúminas built beside it; no source calls Nenuial either"
    ],
-   "parents": [],
+   "parents": [
+    "eriador"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_LAKE"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q686048",
     "label": "Nenuial",
@@ -14733,7 +15217,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (FORESTS_FA); the name is attested 21 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (FORESTS_FA); the name is attested 21 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent doriath: The War of the Jewels, t1_11_the_war_of_the_jewels.txt:5806 — “for the Westmarch of Doriath, Nivrim, was within the Girdle of Melian” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "doriath",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within doriath, stated in the corpus — “for the Westmarch of Doriath, Nivrim, was within the Girdle of Melian” (The War of the Jewels, t1_11_the_war_of_the_jewels.txt:5806) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -14750,13 +15247,15 @@
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "doriath"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_FOREST"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "nogrod": {
    "ages": [
@@ -14889,7 +15388,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (HILLFIELDS); the name is attested 24 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (HILLFIELDS); the name is attested 24 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent eriador: The Peoples of Middle-earth, t1_12_the_peoples_of_middle_earth.txt:10500 — “At that time there were many men in Eriador, mainly, it would seem, in origin kin of the Folk of Beor, though some were kin of the Folk of Hador. They dwelt about Lake Evendim, in the North Downs and the Weather Hills” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "eriador",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within eriador, stated in the corpus — “At that time there were many men in Eriador, mainly, it would seem, in origin kin of the Folk of Beor, though some were kin of the Folk of Hador. They dwelt about Lake Evendim, in the North Downs and the Weather Hills” (The Peoples of Middle-earth, t1_12_the_peoples_of_middle_earth.txt:10500) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -14906,13 +15418,15 @@
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "eriador"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_HILL"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "nuath": {
    "ages": [],
@@ -15165,7 +15679,21 @@
    "ages": [
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "containing parent anduin: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14430 — “Old Ford Ford over Anduin on the Old Forest Road” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "anduin",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within anduin, per Christopher Tolkien's index gloss — “Old Ford Ford over Anduin on the Old Forest Road” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14430) [I-H]"
+    }
+   ],
    "coord_conf": "H",
    "coords": [
     {
@@ -15181,13 +15709,15 @@
     "spec TA: ford",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
-   "parents": [],
+   "parents": [
+    "anduin"
+   ],
    "place_conf": null,
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "MAN_MADE_CROSSING"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "orfalch echor": {
    "ages": [],
@@ -15196,7 +15726,20 @@
    ],
    "cites": [
     "The Silmarillion, Of Tuor and the Fall of Gondolin [C]",
-    "placed at Gondolin [I-H]: the text names the container, not a position within it"
+    "placed at Gondolin [I-H]: the text names the container, not a position within it",
+    "containing parent echoriath: The Book of Lost Tales, Part Two, t1_2_the_book_of_lost_tales_part_two.txt:10076 — “the tunnel of the Guard leads to the ravine of Orfalch Echor, a great rift from top to bottom of the Encircling Mountains” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "echoriath",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within echoriath, stated in the corpus — “the tunnel of the Guard leads to the ravine of Orfalch Echor, a great rift from top to bottom of the Encircling Mountains” (The Book of Lost Tales, Part Two, t1_2_the_book_of_lost_tales_part_two.txt:10076) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -15214,14 +15757,16 @@
     "the ravine of the Seven Gates, the only road into Gondolin through the Encircling Mountains",
     "NOT ITS OWN POINT: it shares the point of Gondolin — the ravine is the road into that city, and this is the city's point"
    ],
-   "parents": [],
+   "parents": [
+    "echoriath"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RAVINE",
     "MAN_MADE_GATE"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "osgiliath": {
    "ages": [
@@ -15341,7 +15886,20 @@
     "TA"
    ],
    "cites": [
-    "UT; LotR II.3"
+    "UT; LotR II.3",
+    "containing parent eregion: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7447 — “The building of the chief city of Eregion, Ost-in-Edhil, was begun in about the year 750 of the Second Age” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "eregion",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within eregion, stated in the corpus — “The building of the chief city of Eregion, Ost-in-Edhil, was begun in about the year 750 of the Second Age” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7447) [C]"
+    }
    ],
    "coord_conf": "H",
    "coords": [
@@ -15358,8 +15916,11 @@
     "spec TA: ruin",
     "Celebrimbor's city of the Ring-smiths in Eregion, which Men called Hollin; destroyed 1697, and holly still marks it."
    ],
-   "parents": [],
+   "parents": [
+    "eregion"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [
     {
      "cite": "App B; UT [C]",
@@ -15379,7 +15940,6 @@
    "types": [
     "MAN_MADE_RUIN"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q2560990",
     "label": "Ost-in-Edhil",
@@ -15612,7 +16172,20 @@
    "ages": [],
    "cites": [
     "The Silmarillion, Elements In Quenya And Sindarin Names",
-    "placed from the archive's own vector map (HILLFIELDS) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (HILLFIELDS) [I-M]; the record existed already and had no coordinate",
+    "containing parent gondor: The Silmarillion, t1_a_the_silmarillion.txt:15830 — “also in Parth Galen ('Green Sward') beside Anduin and Pinnath Gelin ('Green Ridges') in Gondor” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "gondor",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within gondor, stated in the corpus — “also in Parth Galen ('Green Sward') beside Anduin and Pinnath Gelin ('Green Ridges') in Gondor” (The Silmarillion, t1_a_the_silmarillion.txt:15830) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -15630,13 +16203,15 @@
     "indexed by Christopher Tolkien as: Hills in the west of Gondor",
     "the middle of the shape the archive draws"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_HILL"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q9304013",
     "label": "Pinnath Gelin",
@@ -15767,7 +16342,20 @@
    ],
    "cites": [
     "C II.9–III.1; RC[T]",
-    "The Lord of the Rings [C]"
+    "The Lord of the Rings [C]",
+    "containing parent anduin: The Silmarillion, t1_a_the_silmarillion.txt:15399 — “Rauros 'Roaring Spray', the great falls in the river Anduin” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "anduin",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within anduin, per Christopher Tolkien's index gloss — “Rauros 'Roaring Spray', the great falls in the river Anduin” (The Silmarillion, t1_a_the_silmarillion.txt:15399) [I-H]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -15778,13 +16366,15 @@
     "“There it casts its arms about the steep shores of the isle, and falls then with a great noise and smoke over the cataracts of Rauros down into the Nindalf, the Wetwang as it is called in your tongue.” — The Lord of the Rings [C]",
     "Christopher Tolkien letters RAUROS on the General Map, at the fall between Nen Hithoel and the Nindalf"
    ],
-   "parents": [],
+   "parents": [
+    "anduin"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_WATERFALL"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q2519058",
     "label": "Rauros",
@@ -16445,7 +17035,21 @@
    "ages": [
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "containing parent mount doom: The Silmarillion, t1_a_the_silmarillion.txt:16057 — “The Sindarin form was naur, as in Sammath Naur, the Chambers of Fire in Orodruin” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "mount doom",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within mount doom, stated in the corpus — “The Sindarin form was naur, as in Sammath Naur, the Chambers of Fire in Orodruin” (The Silmarillion, t1_a_the_silmarillion.txt:16057) [C]"
+    }
+   ],
    "coord_conf": "H",
    "coords": [
     {
@@ -16461,13 +17065,15 @@
     "spec TA: door (E face)",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
-   "parents": [],
+   "parents": [
+    "mount doom"
+   ],
    "place_conf": null,
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "MAN_MADE_GATE"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "sarn athrad": {
    "ages": [
@@ -16559,7 +17165,21 @@
    "ages": [
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "containing parent the shire: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14579 — “Sarn Ford Partial translation of Sarn Athrad 'Ford of Stones', ford over the Baranduin at the extreme southern point of the Shire” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "the shire",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within the shire, per Christopher Tolkien's index gloss — “Sarn Ford Partial translation of Sarn Athrad 'Ford of Stones', ford over the Baranduin at the extreme southern point of the Shire” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14579) [I-H]"
+    }
+   ],
    "coord_conf": "H",
    "coords": [
     {
@@ -16575,13 +17195,15 @@
     "spec TA: ford",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
-   "parents": [],
+   "parents": [
+    "the shire"
+   ],
    "place_conf": null,
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "MAN_MADE_CROSSING"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q17317946",
     "label": "Sarn Ford",
@@ -16594,7 +17216,20 @@
     "TA"
    ],
    "cites": [
-    "The Lord of the Rings [C]"
+    "The Lord of the Rings [C]",
+    "containing parent anduin: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14581 — “Sarn Gebir 'Stone-spikes', name of rapids in Anduin above the Argonath” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "anduin",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within anduin, per Christopher Tolkien's index gloss — “Sarn Gebir 'Stone-spikes', name of rapids in Anduin above the Argonath” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14581) [I-H]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -16604,13 +17239,15 @@
     "“You will come to the rapids of Sarn Gebir, and maybe at last to the great falls of Rauros where the River thunders down from Nen Hithoel; and there are other perils.” — The Lord of the Rings [C]",
     "Christopher Tolkien letters Sarn Gebir on the General Map, on Anduin above Rauros"
    ],
-   "parents": [],
+   "parents": [
+    "anduin"
+   ],
    "place_conf": null,
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RAPIDS"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "scary": {
    "ages": [],
@@ -16962,7 +17599,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (HILLFIELDS); the name is attested 6 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (HILLFIELDS); the name is attested 6 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent eriador: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14626 — “South Downs Hills in Eriador south of Bree” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "eriador",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within eriador, per Christopher Tolkien's index gloss — “South Downs Hills in Eriador south of Bree” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14626) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -16979,13 +17629,15 @@
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "eriador"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_HILL"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q90276414",
     "label": "South Downs",
@@ -17027,7 +17679,20 @@
    "ages": [],
    "cites": [
     "The Lord of the Rings, At The Sign Of The Prancing Pony",
-    "placed from the archive's own vector map (SETTLE_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (SETTLE_TA) [I-M]; the record existed already and had no coordinate",
+    "containing parent bree: The Lord of the Rings, t1_c_the_lord_of_the_rings.txt:7202 — “Bree was the chief village of the Bree-land, a small inhabited region, like an island in the empty lands round about. Besides Bree itself, there was Staddle on the other side of the hill” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "bree",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C581",
+     "span": "",
+     "to": null,
+     "why": "within bree, stated in the corpus — “Bree was the chief village of the Bree-land, a small inhabited region, like an island in the empty lands round about. Besides Bree itself, there was Staddle on the other side of the hill” (The Lord of the Rings, t1_c_the_lord_of_the_rings.txt:7202) [C] — C581: parented to `bree`, matching archet and combe, which the archive already placed there from this same sentence. The container the corpus names, Bree-land, resolves to two records (`bree`, `bree land`); that duplication is a separate defect and is NOT repaired here."
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -17045,13 +17710,15 @@
     "indexed by Christopher Tolkien as: Village of the Bree-land",
     "the middle of the shape the archive draws"
    ],
-   "parents": [],
+   "parents": [
+    "bree"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "POLITY_REGION"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q3967715",
     "label": "Staddle",
@@ -17265,7 +17932,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (REGIONS_FA); the name is attested 35 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (REGIONS_FA); the name is attested 35 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent nargothrond: The War of the Jewels, t1_11_the_war_of_the_jewels.txt:3223 — “Then he passed into the realm of Nargothrond, burning the Talath Dirnen, the Guarded Plain, between Narog and Sirion” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "nargothrond",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within nargothrond, stated in the corpus — “Then he passed into the realm of Nargothrond, burning the Talath Dirnen, the Guarded Plain, between Narog and Sirion” (The War of the Jewels, t1_11_the_war_of_the_jewels.txt:3223) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -17282,13 +17962,15 @@
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "nargothrond"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "POLITY_REGION"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "taniquetil": {
    "ages": [],
@@ -17335,7 +18017,20 @@
    ],
    "cites": [
     "The Silmarillion, Of Beleriand and its Realms [C]",
-    "placed at the point the archive's own sheet draws [I-M]: the point the archive's own First Age plate letters it at; the text sets it on a promontory but gives no measure"
+    "placed at the point the archive's own sheet draws [I-M]: the point the archive's own First Age plate letters it at; the text sets it on a promontory but gives no measure",
+    "containing parent nevrast: The Silmarillion, t1_a_the_silmarillion.txt:6166 — “many of the Grey-elves lived in Nevrast near to the coasts, and especially about Mount Taras in the southwest” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "nevrast",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within nevrast, stated in the corpus — “many of the Grey-elves lived in Nevrast near to the coasts, and especially about Mount Taras in the southwest” (The Silmarillion, t1_a_the_silmarillion.txt:6166) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -17353,13 +18048,15 @@
     "the mountain on the promontory of Nevrast, above Vinyamar where Turgon dwelt before Gondolin; Nevrast is the land whose shores lay between Drengist and Mount Taras",
     "set down by measure, not by a border: the point the archive's own First Age plate letters it at; the text sets it on a promontory but gives no measure"
    ],
-   "parents": [],
+   "parents": [
+    "nevrast"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_PEAK"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "tarlang s neck": {
    "ages": [],
@@ -17840,7 +18537,20 @@
     "Cross-roads of the Fallen King"
    ],
    "cites": [
-    "The Lord of the Rings, IV.7; V.10 [C]"
+    "The Lord of the Rings, IV.7; V.10 [C]",
+    "containing parent ithilien: Sauron Defeated, t1_9_sauron_defeated.txt:15119 — “Cross Roads In Ithilien” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "ithilien",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within ithilien, per Christopher Tolkien's index gloss — “Cross Roads In Ithilien” (Sauron Defeated, t1_9_sauron_defeated.txt:15119) [I-H]"
+    }
    ],
    "coord_conf": "H",
    "coords": [
@@ -17859,13 +18569,15 @@
     "“In the very centre four ways met.” — The Lord of the Rings, IV.7; V.10 [C]",
     "where the Morgul-road out of Ithilien meets the North-South road; V.10 calls it 'the Cross-roads of the Fallen King' for the beheaded statue that stood there [C]"
    ],
-   "parents": [],
+   "parents": [
+    "ithilien"
+   ],
    "place_conf": null,
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "MAN_MADE_LANDMARK"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "the dead marshes": {
    "ages": [
@@ -18295,7 +19007,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (PEAKS_TA); the name is attested 15 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (PEAKS_TA); the name is attested 15 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent white mountains: The Lord of the Rings, t1_c_the_lord_of_the_rings.txt:23799 — “the steep faces of the peaks of Thrihyrne: now very near they stood on the northernmost arm of the White Mountains” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "white mountains",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within white mountains, stated in the corpus — “the steep faces of the peaks of Thrihyrne: now very near they stood on the northernmost arm of the White Mountains” (The Lord of the Rings, t1_c_the_lord_of_the_rings.txt:23799) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -18312,13 +19037,15 @@
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "white mountains"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_PEAK"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "tigh eld": {
    "ages": [
@@ -18638,7 +19365,20 @@
    ],
    "cites": [
     "HoME 12 (unique statement); D Cirion",
-    "HoME XII, The Peoples of Middle-earth [C]"
+    "HoME XII, The Peoples of Middle-earth [C]",
+    "containing parent bay of belfalas: The Peoples of Middle-earth, t1_12_the_peoples_of_middle_earth.txt:15849 — “Tolfalas Island in the Bay of Belfalas” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "bay of belfalas",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within bay of belfalas, per Christopher Tolkien's index gloss — “Tolfalas Island in the Bay of Belfalas” (The Peoples of Middle-earth, t1_12_the_peoples_of_middle_earth.txt:15849) [I-H]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -18649,13 +19389,15 @@
     "“But the Isle of Tolfalas was almost destroyed, and was left at last like a barren and lonely mountain in the water not far from the issue of the River.” — HoME XII, The Peoples of Middle-earth [C]",
     "Christopher Tolkien letters TOLFALAS on the General Map, in the Bay of Belfalas"
    ],
-   "parents": [],
+   "parents": [
+    "bay of belfalas"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_ISLAND"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q13586541",
     "label": "Tolfalas",
@@ -18995,7 +19737,20 @@
     "FA"
    ],
    "cites": [
-    "The Silmarillion, Of Túrin Turambar"
+    "The Silmarillion, Of Túrin Turambar",
+    "containing parent west beleriand: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14751 — “Tumhalad Valley in West Beleriand between the rivers Ginglith and Narog where the host of Nargothrond was defeated” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "west beleriand",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within west beleriand, per Christopher Tolkien's index gloss — “Tumhalad Valley in West Beleriand between the rivers Ginglith and Narog where the host of Nargothrond was defeated” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14751) [I-H]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -19005,8 +19760,11 @@
     "“But greater far was the host of Morgoth than any scouts had told, and none but Túrin defended by his dwarf-mask could withstand the approach of Glaurung; and the Elves were driven back and pressed by the Orcs into the field of Tumhalad, between Ginglith and Narog, and there they were penned.” — The Silmarillion, Of Túrin Turambar",
     "indexed by Christopher Tolkien as: The site (see"
    ],
-   "parents": [],
+   "parents": [
+    "west beleriand"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [
     {
      "cite": "Silm 21; CoH [C]; GA 495 §275 (HoME XI) [C]",
@@ -19026,7 +19784,6 @@
    "types": [
     "POLITY_REGION"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q2718967",
     "label": "Tumhalad",
@@ -19039,7 +19796,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (REGIONS_FA); the name is attested 59 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (REGIONS_FA); the name is attested 59 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent echoriath: The Fall of Gondolin, t1_g_the_fall_of_gondolin.txt:5201 — “the wide plain Tumladen wholly encircled by the mountains, the Echoriath” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "echoriath",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within echoriath, stated in the corpus — “the wide plain Tumladen wholly encircled by the mountains, the Echoriath” (The Fall of Gondolin, t1_g_the_fall_of_gondolin.txt:5201) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -19056,13 +19826,15 @@
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "echoriath"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "POLITY_REGION"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q2641717",
     "label": "Tumladen",
@@ -19144,7 +19916,20 @@
   "tur haretha": {
    "ages": [],
    "cites": [
-    "The Silmarillion, Of The Coming Of Men Into The West"
+    "The Silmarillion, Of The Coming Of Men Into The West",
+    "containing parent brethil: The Silmarillion, t1_a_the_silmarillion.txt:7371 — “And Haleth dwelt in Brethil until she died; and her people raised a green mound over her in the heights of the forest, Tur Haretha, the Lady-barrow, Haudh-en-Arwen in the Sindarin tongue” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "brethil",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within brethil, stated in the corpus — “And Haleth dwelt in Brethil until she died; and her people raised a green mound over her in the heights of the forest, Tur Haretha, the Lady-barrow, Haudh-en-Arwen in the Sindarin tongue” (The Silmarillion, t1_a_the_silmarillion.txt:7371) [C]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -19154,14 +19939,16 @@
     "“And Haleth dwelt in Brethil until she died; and her people raised a green mound over her in the heights of the forest, Tûr Haretha, the Lady-barrow, Haudh-en-Arwen in the Sindarin tongue.” — The Silmarillion, Of The Coming Of Men Into The West",
     "indexed by Christopher Tolkien as: The burial-mound of the Lady Haleth"
    ],
-   "parents": [],
+   "parents": [
+    "brethil"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "MAN_MADE_TOMB",
     "NATURAL_FOREST"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "turin s stone": {
    "ages": [
@@ -19209,7 +19996,20 @@
     "TA"
    ],
    "cites": [
-    "The Silmarillion [C]"
+    "The Silmarillion [C]",
+    "containing parent mordor: The Silmarillion, t1_a_the_silmarillion.txt:15836 — “Carach Angren ('Iron Jaws', the rampart and dike guarding the entrance to Udun in Mordor)” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "mordor",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within mordor, stated in the corpus — “Carach Angren ('Iron Jaws', the rampart and dike guarding the entrance to Udun in Mordor)” (The Silmarillion, t1_a_the_silmarillion.txt:15836) [C]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -19219,13 +20019,15 @@
     "“Utumno, Sindarin Udûn (Gandalf in Moria named the Balrog ‘Flame of Udûn’), a name afterwards used of the deep dale in Mordor between the Morannon and the Isenmouthe.” — The Silmarillion [C]",
     "Christopher Tolkien letters UDUN on the General Map between the Morannon and the Isenmouthe; NOT Utumno, which shares the Sindarin name"
    ],
-   "parents": [],
+   "parents": [
+    "mordor"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_VALLEY"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q9091143",
     "label": "Udûn",
@@ -19367,7 +20169,21 @@
    "ages": [
     "TA"
    ],
-   "cites": [],
+   "cites": [
+    "containing parent tower hills: The Lord of the Rings, t1_c_the_lord_of_the_rings.txt:49354 — “Fastred and Elanor make their dwelling at Undertowers on the Tower Hills” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "tower hills",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within tower hills, stated in the corpus — “Fastred and Elanor make their dwelling at Undertowers on the Tower Hills” (The Lord of the Rings, t1_c_the_lord_of_the_rings.txt:49354) [C]"
+    }
+   ],
    "coord_conf": "H",
    "coords": [
     {
@@ -19383,13 +20199,15 @@
     "spec TA: smial-town",
     "drawn on the vector spec's TA plate, which its Section 0 calls Third Age Middle-earth"
    ],
-   "parents": [],
+   "parents": [
+    "tower hills"
+   ],
    "place_conf": null,
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "MAN_MADE_TOWN"
-   ],
-   "unplaced": "no containing realm has been established"
+   ]
   },
   "utumno": {
    "ages": [
@@ -19569,7 +20387,20 @@
    ],
    "cites": [
     "Silm 15; UT (Tuor)",
-    "A ch14; G LV"
+    "A ch14; G LV",
+    "containing parent nevrast: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14820 — “Vinyamar 'New Dwelling', the house of Turgon in Nevrast” [I-H]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "nevrast",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within nevrast, per Christopher Tolkien's index gloss — “Vinyamar 'New Dwelling', the house of Turgon in Nevrast” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14820) [I-H]"
+    }
    ],
    "coord_conf": "H",
    "coords": [
@@ -19588,8 +20419,11 @@
     "Turgon's first hall by the sea, where Tuor found shield and sword left by command of Ulmo.",
     "Evidence Table B11"
    ],
-   "parents": [],
+   "parents": [
+    "nevrast"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [
     {
      "cite": "HoME XI, the Tale of Years [C]; VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
@@ -19604,7 +20438,6 @@
     "MAN_MADE_HALL",
     "MAN_MADE_TOWER"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q2528885",
     "label": "Vinyamar",
@@ -19647,7 +20480,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (HILLFIELDS); the name is attested 19 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (HILLFIELDS); the name is attested 19 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent eriador: The Peoples of Middle-earth, t1_12_the_peoples_of_middle_earth.txt:10500 — “At that time there were many men in Eriador, mainly, it would seem, in origin kin of the Folk of Beor, though some were kin of the Folk of Hador. They dwelt about Lake Evendim, in the North Downs and the Weather Hills” [C]"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "eriador",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580",
+     "span": "",
+     "to": null,
+     "why": "within eriador, stated in the corpus — “At that time there were many men in Eriador, mainly, it would seem, in origin kin of the Folk of Beor, though some were kin of the Folk of Hador. They dwelt about Lake Evendim, in the North Downs and the Weather Hills” (The Peoples of Middle-earth, t1_12_the_peoples_of_middle_earth.txt:10500) [C]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -19664,13 +20510,15 @@
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "eriador"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_HILL"
    ],
-   "unplaced": "no containing realm has been established",
    "wikidata": {
     "qid": "Q8347796",
     "label": "Weather Hills",
