@@ -12,7 +12,8 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 28 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 28 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states the western bounds of Rohan. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13067 — “Adorn Tributary of the river Isen, forming with it the western bounds of Rohan.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -48,7 +49,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 42 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 42 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent ossiriand: The Silmarillion, t1_a_the_silmarillion.txt:13852 — “Adurant The sixth and most southerly of the tributaries of Gelion in Ossiriand.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "ossiriand",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within ossiriand, per the index of names in The Silmarillion — “Adurant The sixth and most southerly of the tributaries of Gelion in Ossiriand.” (The Silmarillion, t1_a_the_silmarillion.txt:13852) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -65,13 +79,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "ossiriand"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q6957256",
     "label": "Adurant",
@@ -696,7 +712,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (MTS_FA); the name is attested 24 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (MTS_FA); the name is attested 24 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent beleriand: The Silmarillion, t1_a_the_silmarillion.txt:13941 — “Andram ‘The Long Wall’, name of the dividing fall running across Beleriand.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "beleriand",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within beleriand, per the index of names in The Silmarillion — “Andram ‘The Long Wall’, name of the dividing fall running across Beleriand.” (The Silmarillion, t1_a_the_silmarillion.txt:13941) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -713,13 +742,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "beleriand"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q615219",
     "label": "Andram",
@@ -847,7 +878,8 @@
    "ages": [],
    "cites": [
     "A RoP; C II.9; D; RC[T]",
-    "placed from the archive's own vector map (RIVERS_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (RIVERS_TA) [I-M]; the record existed already and had no coordinate",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states the frontier of the west-lands of Middle-earth. The Silmarillion, t1_a_the_silmarillion.txt:3347 — “This river, it is said, was even the river which was after called Anduin the Great, and was ever the frontier of the west-lands of Middle-earth.” [C]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -1114,7 +1146,7 @@
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   "unplaced": "no containing realm has been established — searched under C582. The corpus makes it a LAND, not a river: “Land between the rivers Hoarwell and Loudwater” (HoME’s combined index of names), and it attests a second Angle, in Lothlórien. This record's own `types` field, NATURAL_RIVER, contradicts both."
   },
   "angmar": {
    "ages": [
@@ -1699,7 +1731,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 166 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 166 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent doriath: The Silmarillion, t1_a_the_silmarillion.txt:14027 — “Aros The southern river of Doriath.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "doriath",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within doriath, per the index of names in The Silmarillion — “Aros The southern river of Doriath.” (The Silmarillion, t1_a_the_silmarillion.txt:14027) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -1716,13 +1761,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "doriath"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q7899425",
     "label": "Aros",
@@ -1905,7 +1952,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 75 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 75 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent ossiriand: The Silmarillion, t1_a_the_silmarillion.txt:14042 — “Ascar The most northerly of the tributaries of Gelion in Ossiriand” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "ossiriand",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within ossiriand, per the index of names in The Silmarillion — “Ascar The most northerly of the tributaries of Gelion in Ossiriand” (The Silmarillion, t1_a_the_silmarillion.txt:14042) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -1922,13 +1982,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "ossiriand"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q3357191",
     "label": "Ascar",
@@ -1938,7 +2000,21 @@
   },
   "ash mountains": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "containing parent mordor: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13686 — “Ered Lithui ‘Ash Mountains’, forming the northern border of Mordor.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "mordor",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within mordor, per the index of names in Unfinished Tales — “Ered Lithui ‘Ash Mountains’, forming the northern border of Mordor.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13686) [I-H]"
+    }
+   ],
    "coord_conf": null,
    "coords": [],
    "n": "Ash Mountains (Ered Lithui)",
@@ -1947,13 +2023,15 @@
     "the vector spec draws it with confidence H; this record holds no coordinate of its own, so the gazetteer states no coord_conf",
     "spec TA: Mountains"
    ],
-   "parents": [],
+   "parents": [
+    "mordor"
+   ],
    "place_conf": null,
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   ]
   },
   "bag end": {
    "ages": [],
@@ -2320,7 +2398,20 @@
   "baranduin": {
    "ages": [],
    "cites": [
-    "placed from the archive's own vector map (RIVERS_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (RIVERS_TA) [I-M]; the record existed already and had no coordinate",
+    "containing parent eriador: The Silmarillion, t1_a_the_silmarillion.txt:14096 — “Baranduin ‘The Brown River’ in Eriador, flowing into the Sea south of the Blue Mountains; the Brandywine of the Shire in The Lord of the Rings.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "eriador",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within eriador, per the index of names in The Silmarillion — “Baranduin ‘The Brown River’ in Eriador, flowing into the Sea south of the Blue Mountains; the Brandywine of the Shire in The Lord of the Rings.” (The Silmarillion, t1_a_the_silmarillion.txt:14096) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -2338,13 +2429,15 @@
     "spec TA: Water",
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
-   "parents": [],
+   "parents": [
+    "eriador"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_SEA"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q1235499",
     "label": "Baranduin",
@@ -2443,7 +2536,7 @@
    "types": [
     "NATURAL_SEA"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
+   "unplaced": "no containing realm has been established — searched under C582. The corpus names it a bay of the Great Sea and states no containing land.",
    "wikidata": {
     "qid": "Q4989940",
     "label": "Bay of Balar",
@@ -2477,7 +2570,7 @@
    "types": [
     "NATURAL_SEA"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
+   "unplaced": "no containing realm has been established — searched under C582. Unfinished Tales' index carries only the cross-reference “Bay of Belfalas See Belfalas”, which is not a statement of containment.",
    "wikidata": {
     "qid": "Q2736938",
     "label": "Bay of Belfalas",
@@ -2511,12 +2604,13 @@
    "types": [
     "NATURAL_SEA"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   "unplaced": "no containing realm has been established — searched under C582. The corpus names the bay often and never says what contains it."
   },
   "belegaer": {
    "ages": [],
    "cites": [
-    "drawn on the archive's vector map (SEAS); the name is attested 25 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SEAS); the name is attested 25 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states between Middle-earth and Aman. The Silmarillion, t1_a_the_silmarillion.txt:14112 — “Belegaer ‘The Great Sea’ of the West, between Middle-earth and Aman.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -3067,7 +3161,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 20 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 20 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent ossiriand: The Silmarillion, t1_a_the_silmarillion.txt:14178 — “Brilthor ‘Glittering Torrent’, the fourth of the tributaries of Gelion in Ossiriand.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "ossiriand",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within ossiriand, per the index of names in The Silmarillion — “Brilthor ‘Glittering Torrent’, the fourth of the tributaries of Gelion in Ossiriand.” (The Silmarillion, t1_a_the_silmarillion.txt:14178) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -3084,13 +3191,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "ossiriand"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q15978807",
     "label": "Brilthor",
@@ -3224,7 +3333,7 @@
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
+   "unplaced": "no containing realm has been established — searched under C582. The corpus gives its mouth (“The river that flowed into the Great Sea at Brithombar”) and no source and no containing land.",
    "wikidata": {
     "qid": "Q1773672",
     "label": "Brithon",
@@ -3271,7 +3380,20 @@
   "bruinen": {
    "ages": [],
    "cites": [
-    "The Silmarillion, Elements In Quenya And Sindarin Names"
+    "The Silmarillion, Elements In Quenya And Sindarin Names",
+    "containing parent eriador: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13335 — “Bruinen River in Eriador, tributary (with the Mitheithel) of the Gwathló; translated Loudwater.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "eriador",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within eriador, per the index of names in Unfinished Tales — “Bruinen River in Eriador, tributary (with the Mitheithel) of the Gwathló; translated Loudwater.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13335) [I-H]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -3281,8 +3403,11 @@
     "“nen ‘water’, used of lakes, pools, and lesser rivers, in Nen Girith, Nenning, Nenuial, Nenya; Cuiviénen, Uinen; also in many names in The Lord of the Rings,as Nen Hithoel, Bruinen, Emyn Arnen, Núrnen.” — The Silmarillion, Elements In Quenya And Sindarin Names",
     "indexed by Christopher Tolkien as: The river of Rivendell (Loudwater)"
    ],
-   "parents": [],
+   "parents": [
+    "eriador"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [
     {
      "cite": "App A; LotR App B [C] — '861 Death of Eärendur, and division of Arnor', the annal that creates Rhudaur",
@@ -3295,7 +3420,6 @@
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q2457397",
     "label": "Bruinen",
@@ -3698,7 +3822,7 @@
    "types": [
     "NATURAL_COAST"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   "unplaced": "no containing realm has been established — searched under C582. It is a single cape, which cannot run through anything; the corpus states no containing land."
   },
   "caradhras": {
    "ages": [
@@ -3956,7 +4080,8 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 13 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 13 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states the Iron Hills and the River Running. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13362 — “Carnen ‘Redwater’, river flowing down from the Iron Hills to join the River Running.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -4020,7 +4145,8 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 17 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 17 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states Erebor and the Sea of Rhûn. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13364 — “Celduin River flowing from the Lonely Mountain to the Sea of Rhûn.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -4087,7 +4213,8 @@
    ],
    "cites": [
     "The Silmarillion, Of The Rings Of Power And The Third Age",
-    "placed from the archive's own vector map (RIVERS_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (RIVERS_TA) [I-M]; the record existed already and had no coordinate",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states Mirrormere, Lothlórien and Anduin. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13369 — “Celebrant River rising in Mirrormere and flowing through Lothlórien to join Anduin.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -4153,7 +4280,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 83 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 83 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent brethil: The Silmarillion, t1_a_the_silmarillion.txt:14227 — “Celebros ‘Silver Foam’ or ‘Silver Rain’, a stream in Brethil falling down to Teiglin near the Crossings.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "brethil",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within brethil, per the index of names in The Silmarillion — “Celebros ‘Silver Foam’ or ‘Silver Rain’, a stream in Brethil falling down to Teiglin near the Crossings.” (The Silmarillion, t1_a_the_silmarillion.txt:14227) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -4170,13 +4310,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "brethil"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q11963345",
     "label": "Celebros",
@@ -4189,7 +4331,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 80 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 80 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent east beleriand: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13377 — “Celon River in East Beleriand, rising in the Hill of Himring.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "east beleriand",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within east beleriand, per the index of names in Unfinished Tales — “Celon River in East Beleriand, rising in the Hill of Himring.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13377) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -4206,13 +4361,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "east beleriand"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q1896618",
     "label": "Celon",
@@ -4225,7 +4382,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 14 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 14 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent lebennin: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13378 — “Celos One of the rivers of Lebennin in Gondor; tributary of the Sirith.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "lebennin",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within lebennin, per the index of names in Unfinished Tales — “Celos One of the rivers of Lebennin in Gondor; tributary of the Sirith.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13378) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -4242,13 +4412,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "lebennin"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q17335743",
     "label": "Celos",
@@ -4577,7 +4749,7 @@
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
+   "unplaced": "no containing realm has been established — searched under C582. The corpus places it only by direction: “The mountain-peaks south of Gondolin, where were the eyries of Thorondor”.",
    "wikidata": {
     "qid": "Q3319097",
     "label": "Crissaegrim",
@@ -4588,7 +4760,20 @@
   "cristhorn": {
    "ages": [],
    "cites": [
-    "FoG, The Fall of Gondolin"
+    "FoG, The Fall of Gondolin",
+    "containing parent echoriath: The History of Middle-earth: Index, t1_13_index.txt:3802 — “Cristhorn (III) ‘Eagles’ Cleft’ in the Encircling Mountains about Gon” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "echoriath",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within echoriath, per the index of names in The History of Middle-earth: Index — “Cristhorn (III) ‘Eagles’ Cleft’ in the Encircling Mountains about Gon” (The History of Middle-earth: Index, t1_13_index.txt:3802) [I-H]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -4598,13 +4783,15 @@
     "“Cristhorn the Cleft of Eagles two leagues of upward going from the beginning of the Mountains” — FoG, The Fall of Gondolin",
     "indexed by Christopher Tolkien as: ‘Eagles’ Cleft’ in the Encircling Mountains about Gondolin"
    ],
-   "parents": [],
+   "parents": [
+    "echoriath"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   ]
   },
   "crossings of teiglin": {
    "ages": [
@@ -4980,7 +5167,20 @@
   "dol baran": {
    "ages": [],
    "cites": [
-    "The Lord of the Rings, The Palantír"
+    "The Lord of the Rings, The Palantír",
+    "containing parent misty mountains: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13464 — “Dol Baran ‘Gold-brown Hill’, a hill at the southern end of the Misty Mountains, where Peregrin Took looked into the palantír of Orthanc.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "misty mountains",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within misty mountains, per the index of names in Unfinished Tales — “Dol Baran ‘Gold-brown Hill’, a hill at the southern end of the Misty Mountains, where Peregrin Took looked into the palantír of Orthanc.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13464) [I-H]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -4990,13 +5190,15 @@
     "“It opened southward, leaning back into the slope of round Dol Baran, the last hill of the northern ranges, greenfooted, crowned with heather.” — The Lord of the Rings, The Palantír",
     "indexed by Christopher Tolkien as: Last hill of the Misty Mountains (also Dolbaran)"
    ],
-   "parents": [],
+   "parents": [
+    "misty mountains"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q14905944",
     "label": "Dol Baran",
@@ -5159,7 +5361,7 @@
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
+   "unplaced": "no containing realm has been established — searched under C582. It is ONE mountain, which cannot run through anything: “a great mountain in the Ered Luin” (The Silmarillion index). The container the corpus names does not resolve here: the archive's only Ered Luin record is the THIRD AGE remnant, and `dolmed` is First Age — the ages are disjoint.",
    "wikidata": {
     "qid": "Q2104066",
     "label": "Dolmed",
@@ -5676,7 +5878,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 25 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 25 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent ossiriand: The Silmarillion, t1_a_the_silmarillion.txt:14363 — “Duilwen The fifth of the tributaries of Gelion in Ossiriand.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "ossiriand",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within ossiriand, per the index of names in The Silmarillion — “Duilwen The fifth of the tributaries of Gelion in Ossiriand.” (The Silmarillion, t1_a_the_silmarillion.txt:14363) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -5693,13 +5908,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "ossiriand"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q11966179",
     "label": "Duilwen",
@@ -6155,8 +6372,12 @@
    "ages": [
     "FA"
    ],
+   "aka": [
+    "the Encircling Mountains"
+   ],
    "cites": [
-    "drawn on the archive's vector map (MTS_FA); the name is attested 31 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (MTS_FA); the name is attested 31 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "aka “the Encircling Mountains”: The Silmarillion, t1_a_the_silmarillion.txt:14527 — “Encircling Mountains See Echoriath.” [C] — the equation is stated outright in the Silmarillion's own Index of Names, and the phrase stands in 26 citable files against 13 for “Echoriath”. Added under C582; without it “the Encircling Mountains” resolved to NO record and `cristhorn`'s own index gloss could not be honoured."
    ],
    "coord_conf": "M",
    "coords": [
@@ -6179,7 +6400,7 @@
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
+   "unplaced": "no containing realm has been established — searched under C582. The corpus makes it a fence about ONE vale, not a range crossing several: “The mountains encircling Tumladen, the plain of Gondolin” (Unfinished Tales index). Encircling is not containment, so no parent is placed.",
    "wikidata": {
     "qid": "Q2641742",
     "label": "Echoriath",
@@ -6486,7 +6707,7 @@
     "NATURAL_FALLS",
     "NATURAL_LAKE"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
+   "unplaced": "no containing realm has been established — searched under C582. It is a WELL and runs through nothing: “‘Ivrin’s Well’, the source of the river Narog beneath Ered Wethrin” (The Silmarillion index). THIS RECORD IS A DUPLICATE of `ivrin`, whose own aka is “Eithel Ivrin” and which is already parented to hithlum; the two sit five coordinate units apart on the same First-Age plate. The duplication is a defect for the dataset's owner, not something a placement should paper over.",
    "wikidata": {
     "qid": "Q5820519",
     "label": "Eithel Ivrin",
@@ -6763,7 +6984,7 @@
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
+   "unplaced": "no containing realm has been established — searched under C582. The corpus places it only by direction and by what it is NOT part of: “barren hill-country about Nen Hithoel (‘Mist-cool Water’) above Rauros falls”, and of Gondor that “their realm did not reach up Anduin beyond the Emyn Muil”.",
    "wikidata": {
     "qid": "Q2339170",
     "label": "Emyn Muil",
@@ -6842,7 +7063,8 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 109 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 109 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states Fangorn, Rohan and the Nindalf. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13653 — “Entwash River flowing through Rohan from Fangorn Forest to the Nindalf.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -7028,7 +7250,8 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (MTS_TA); the name is attested 60 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (MTS_TA); the name is attested 60 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states between Gondor and Mordor. The Silmarillion, t1_a_the_silmarillion.txt:14540 — “Ephel Dúath ‘Fence of Shadow’, the mountain-range between Gondor and Mordor; also called the Mountains of Shadow.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -7252,7 +7475,20 @@
    "ages": [],
    "cites": [
     "The Silmarillion, Elements In Quenya And Sindarin Names",
-    "placed from the archive's own vector map (MTS_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (MTS_TA) [I-M]; the record existed already and had no coordinate",
+    "containing parent mordor: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13686 — “Ered Lithui ‘Ash Mountains’, forming the northern border of Mordor.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "mordor",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within mordor, per the index of names in Unfinished Tales — “Ered Lithui ‘Ash Mountains’, forming the northern border of Mordor.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13686) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -7270,13 +7506,15 @@
     "indexed by Christopher Tolkien as: The Ash Mountains",
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
-   "parents": [],
+   "parents": [
+    "mordor"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q2123989",
     "label": "Ered Lithui",
@@ -7289,7 +7527,8 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (MTS_FA); the name is attested 23 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (MTS_FA); the name is attested 23 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states the west-fence of Hithlum, and of Lammoth beyond it. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13687 — “Ered Lómin ‘Echoing Mountains’, forming the west-fence of Hithlum. The Echoing Mountains of Lammoth.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -7322,7 +7561,9 @@
   },
   "ered luin third age remnant": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states separating Beleriand from Eriador. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13689 — “Ered Luin The great mountain-chain (also called Ered Lindon) separating Beleriand from Eriador in the Elder Days, and after the destruction at the end of the First Age forming the north-western coastal range of Middle-earth.” [I-H]"
+   ],
    "coord_conf": null,
    "coords": [],
    "n": "Ered Luin (Blue Mountains), Third Age remnant",
@@ -7344,7 +7585,8 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (MTS_FA); the name is attested 106 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (MTS_FA); the name is attested 106 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states between Hithlum and West Beleriand. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13696 — “Ered Wethrin The great curving mountain-range bordering Anfauglith (Ard-galen) on the west and on the south forming the barrier between Hithlum and West Beleriand.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -7557,7 +7799,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 25 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 25 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent lebennin: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14128 — “Lebennin ‘Five Rivers’ (those being Erui, Sirith, Celos, Serni, and Gilrain), land between Ered Nimrais and Ethir Anduin; one of the ‘faithful fiefs’ of Gondor.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "lebennin",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within lebennin, per the index of names in Unfinished Tales — “Lebennin ‘Five Rivers’ (those being Erui, Sirith, Celos, Serni, and Gilrain), land between Ered Nimrais and Ethir Anduin; one of the ‘faithful fiefs’ of Gondor.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14128) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -7574,13 +7829,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "lebennin"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q7468501",
     "label": "Erui",
@@ -7637,7 +7894,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 135 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 135 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent doriath: The Silmarillion, t1_a_the_silmarillion.txt:14577 — “Esgalduin The river of Doriath, dividing the forests of Neldoreth and Region, and flowing into Sirion.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "doriath",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within doriath, per the index of names in The Silmarillion — “Esgalduin The river of Doriath, dividing the forests of Neldoreth and Region, and flowing into Sirion.” (The Silmarillion, t1_a_the_silmarillion.txt:14577) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -7654,13 +7924,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "doriath"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q4591817",
     "label": "Esgalduin",
@@ -7798,7 +8070,20 @@
   "ethir anduin": {
    "ages": [],
    "cites": [
-    "drawn on the archive's vector map (SEAS); the name is attested 28 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SEAS); the name is attested 28 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent bay of belfalas: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13726 — “Ethir Anduin ‘Outflow of Anduin’, the delta of the Great River in the Bay of Belfalas.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "bay of belfalas",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within bay of belfalas, per the index of names in Unfinished Tales — “Ethir Anduin ‘Outflow of Anduin’, the delta of the Great River in the Bay of Belfalas.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13726) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -7815,13 +8100,15 @@
     "the middle of the shape the archive draws",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "bay of belfalas"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_SEA"
-   ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   ]
   },
   "ettenmoors": {
    "ages": [
@@ -8372,7 +8659,8 @@
   "firth of drengist": {
    "ages": [],
    "cites": [
-    "drawn on the archive's vector map (SEAS); the name is attested 38 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SEAS); the name is attested 38 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states from the shores through Ered Lómin into Hithlum. The Silmarillion, t1_a_the_silmarillion.txt:5618 — “the host of Fëanor went up the long Firth of Drengist that pierced the Echoing Hills of Ered Lómin, and passed thus from the shores into the great land of Hithlum” [C]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -8551,7 +8839,8 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 50 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 50 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states Ered Mithrin, northern Mirkwood and the Long Lake. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13803 — “Forest River River flowing from Ered Mithrin through northern Mirkwood and into the Long Lake.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -8951,7 +9240,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 253 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 253 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent east beleriand: The Silmarillion, t1_a_the_silmarillion.txt:14677 — “Gelion The great river of East Beleriand, rising in Himring and Mount Rerir and fed by the rivers of Ossiriand flowing down from the Blue Mountains.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "east beleriand",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within east beleriand, per the index of names in The Silmarillion — “Gelion The great river of East Beleriand, rising in Himring and Mount Rerir and fed by the rivers of Ossiriand flowing down from the Blue Mountains.” (The Silmarillion, t1_a_the_silmarillion.txt:14677) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -8968,13 +9270,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "east beleriand"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q2413396",
     "label": "Gelion",
@@ -8987,7 +9291,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 43 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 43 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent lebennin: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13851 — “Gilrain River of Lebennin in Gondor flowing into the Bay of Belfalas west of Ethir Anduin.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "lebennin",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within lebennin, per the index of names in Unfinished Tales — “Gilrain River of Lebennin in Gondor flowing into the Bay of Belfalas west of Ethir Anduin.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13851) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -9004,13 +9321,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "lebennin"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q8964077",
     "label": "Gilrain",
@@ -9023,7 +9342,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 30 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 30 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent west beleriand: The Silmarillion, t1_a_the_silmarillion.txt:14699 — “Ginglith River in West Beleriand flowing into the Narog above Nargothrond.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "west beleriand",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within west beleriand, per the index of names in The Silmarillion — “Ginglith River in West Beleriand flowing into the Narog above Nargothrond.” (The Silmarillion, t1_a_the_silmarillion.txt:14699) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -9040,13 +9372,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "west beleriand"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q2493698",
     "label": "Ginglith",
@@ -9059,7 +9393,8 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 139 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 139 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states the Misty Mountains and Anduin. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13856 — “Gladden River flowing down from the Misty Mountains and joining Anduin at the Gladden Fields; translation of Sindarin Sîr Ninglor.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -9140,7 +9475,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 23 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 23 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent eriador: The Nature of Middle-earth, t2_i_the_nature_of_middle_earth.txt:14371 — “Glanduin River in Eriador.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "eriador",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within eriador, per the index of names in The Nature of Middle-earth — “Glanduin River in Eriador.” (The Nature of Middle-earth, t2_i_the_nature_of_middle_earth.txt:14371) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -9157,13 +9505,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "eriador"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q1773845",
     "label": "Glanduin",
@@ -9176,7 +9526,8 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 12 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states Ered Wethrin and Teiglin. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13870 — “Glithui River flowing down from Ered Wethrin, a tributary of Teiglin.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -9563,7 +9914,8 @@
   "great sea": {
    "ages": [],
    "cites": [
-    "drawn on the archive's vector map (SEAS); the name is attested 222 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SEAS); the name is attested 222 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states between Middle-earth and Aman. The Silmarillion, t1_a_the_silmarillion.txt:14112 — “Belegaer ‘The Great Sea’ of the West, between Middle-earth and Aman.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -9783,14 +10135,15 @@
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   "unplaced": "no containing realm has been established — searched under C582. The corpus places it only by direction: “‘Grey Mountains’, extending from east to west north of Mirkwood”."
   },
   "greyflood": {
    "ages": [
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 92 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 92 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states dividing Minhiriath from Enedwaith. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:8326 — “The wide lands divided by the Gwathló into the regions called by the Númenóreans Minhiriath (‘Between the Rivers’, Baranduin and Gwathló) and Enedwaith” [C]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -9820,7 +10173,8 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 11 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 11 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states Ered Mithrin and Anduin. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13906 — “Greylin Name given by the Éothéod to a river flowing from Ered Mithrin to join Anduin near its source.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -9877,7 +10231,7 @@
    "types": [
     "NATURAL_SEA"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   "unplaced": "no containing realm has been established — searched under C582. What the corpus does say is that Lindon lies on BOTH its shores — “Harlindon Lindon south of the Gulf of Lhûn” — so the gulf divides one realm rather than running through several."
   },
   "gundabad": {
    "ages": [
@@ -9912,7 +10266,8 @@
   "gwathlo system": {
    "ages": [],
    "cites": [
-    "D App D; RC; C II.3 (Boromir's crossing)"
+    "D App D; RC; C II.3 (Boromir's crossing)",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states dividing Minhiriath from Enedwaith. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:8326 — “The wide lands divided by the Gwathló into the regions called by the Númenóreans Minhiriath (‘Between the Rivers’, Baranduin and Gwathló) and Enedwaith” [C]"
    ],
    "coord_conf": null,
    "coords": [],
@@ -10128,7 +10483,8 @@
    "ages": [],
    "cites": [
     "Unfinished Tales, The History Of Galadriel And Celeborn",
-    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (REGIONS_TA) [I-M]; the record existed already and had no coordinate",
+    "C582 — searched, and the container the corpus names is AMBIGUOUS here: Lindon resolves to `lindon`, `ossiriand`. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13964 — “Harlindon Lindon south of the Gulf of Lhûn.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -10152,7 +10508,7 @@
    "types": [
     "NATURAL_GULF"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   "unplaced": "the corpus names a container — Lindon — but it resolves to 2 records in this archive (`lindon`, `ossiriand`), so ruling 2a and C567's second condition leave it unplaced. Searched under C582."
   },
   "harlond": {
    "ages": [
@@ -10275,7 +10631,8 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 11 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 11 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states the frontier of Gondor and Harad. The Lord of the Rings, t1_c_the_lord_of_the_rings.txt:46773 — “crossing the River Harnen his armies utterly defeated the Men of the Harad” [C]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -10487,7 +10844,8 @@
   "helcaraxe": {
    "ages": [],
    "cites": [
-    "drawn on the archive's vector map (SEAS); the name is attested 38 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SEAS); the name is attested 38 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states between Araman and Middle-earth. The Silmarillion, t1_a_the_silmarillion.txt:14836 — “Helcaraxë The strait between Araman and Middle-earth; also referred to as the Grinding Ice.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -11005,7 +11363,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 66 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 66 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent eriador: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14264 — “Mitheithel River of Eriador flowing from the Ettendales to join the Bruinen (Loudwater). Translated Hoarwell.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "eriador",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within eriador, per the index of names in Unfinished Tales — “Mitheithel River of Eriador flowing from the Ettendales to join the Bruinen (Loudwater). Translated Hoarwell.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14264) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -11022,13 +11393,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "eriador"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
-   ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   ]
   },
   "hobbiton": {
    "ages": [
@@ -11235,7 +11608,7 @@
     "NATURAL_BAY",
     "NATURAL_ICE"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   "unplaced": "no containing realm has been established — searched under C582. The corpus names the bay and the Cape of Forochel and states no containing land."
   },
   "imlad morgul": {
    "ages": [],
@@ -11465,7 +11838,8 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 255 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 255 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states the Misty Mountains, Nan Curunír and the Gap of Rohan. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14058 — “Isen River flowing from the Misty Mountains through Nan Curunír (the Wizard’s Vale) and across the Gap of Rohan” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -11498,7 +11872,9 @@
   },
   "isen adorn": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states the western bounds of Rohan. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13067 — “Adorn Tributary of the river Isen, forming with it the western bounds of Rohan.” [I-H]"
+   ],
    "coord_conf": null,
    "coords": [],
    "n": "Isen + Adorn",
@@ -12272,7 +12648,8 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 6 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 6 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states the Misty Mountains and Anduin. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14117 — “Langwell ‘Source of the Langflood’, name given by the Éothéod to the river from the northern Misty Mountains which after its junction with Greylin they called Langflood (Anduin).” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -12423,7 +12800,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 15 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 15 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent ossiriand: The Silmarillion, t1_a_the_silmarillion.txt:14979 — “Legolin The third of the tributaries of Gelion in Ossiriand.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "ossiriand",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within ossiriand, per the index of names in The Silmarillion — “Legolin The third of the tributaries of Gelion in Ossiriand.” (The Silmarillion, t1_a_the_silmarillion.txt:14979) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -12440,13 +12830,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "ossiriand"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q7505605",
     "label": "Legolin",
@@ -12457,7 +12849,20 @@
   "lhun": {
    "ages": [],
    "cites": [
-    "placed from the archive's own vector map (RIVERS_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (RIVERS_TA) [I-M]; the record existed already and had no coordinate",
+    "containing parent eriador: The Silmarillion, t1_a_the_silmarillion.txt:14986 — “Lhûn River in Eriador flowing into the sea in the Gulf of Lhûn.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "eriador",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within eriador, per the index of names in The Silmarillion — “Lhûn River in Eriador flowing into the sea in the Gulf of Lhûn.” (The Silmarillion, t1_a_the_silmarillion.txt:14986) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -12475,13 +12880,15 @@
     "spec TA: Water",
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
-   "parents": [],
+   "parents": [
+    "eriador"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_SEA"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q1773837",
     "label": "Lhûn",
@@ -12494,7 +12901,8 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 56 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 56 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states Fangorn to Anduin, and the north-bound of Rohan. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14139 — “Limlight River flowing from Fangorn Forest to Anduin and forming the extreme north-bound of Rohan.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -12939,7 +13347,20 @@
    ],
    "cites": [
     "Silm 9/13",
-    "HoME V, The Lost Road (The Later Annals of Beleriand) [C]"
+    "HoME V, The Lost Road (The Later Annals of Beleriand) [C]",
+    "containing parent firth of drengist: The Silmarillion, t1_a_the_silmarillion.txt:15017 — “Losgar The place of the burning of the ships of the Teleri by Fëanor, at the mouth of the Firth of Drengist.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "firth of drengist",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within firth of drengist, per the index of names in The Silmarillion — “Losgar The place of the burning of the ships of the Teleri by Fëanor, at the mouth of the Firth of Drengist.” (The Silmarillion, t1_a_the_silmarillion.txt:15017) [I-H]"
+    }
    ],
    "coord_conf": "H",
    "coords": [
@@ -12961,8 +13382,11 @@
     "the vector spec's word for it is 'burning-site', which names the event; the living map draws it with the haven symbol, which no text supports",
     "drawn within hithlum, and that containment is not carried: the corpus puts it at the OUTLET of the Firth of Drengist — the seaward end, on the coast — and never once inside Hithlum; the living map's Hithlum polygon merely reaches over the point"
    ],
-   "parents": [],
+   "parents": [
+    "firth of drengist"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [
     {
      "cite": "HoME XI, the Tale of Years [C]; VECTOR_MAP_SPEC §4, 'HERE LAY BELERIAND, DROWNED' [I-H]; the exception is stated in The Silmarillion's own index: 'Beleriand was broken in the turmoils at the end of the First Age, and invaded by the sea, so that only Ossiriand (Lindon) remained' [C]",
@@ -12975,7 +13399,6 @@
    "types": [
     "NATURAL_COAST"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q11762630",
     "label": "Losgar",
@@ -13107,7 +13530,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 62 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 62 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent eriador: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13335 — “Bruinen River in Eriador, tributary (with the Mitheithel) of the Gwathló; translated Loudwater.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "eriador",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within eriador, per the index of names in Unfinished Tales — “Bruinen River in Eriador, tributary (with the Mitheithel) of the Gwathló; translated Loudwater.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13335) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -13124,13 +13560,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "eriador"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
-   ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   ]
   },
   "maglor s gap": {
    "ages": [
@@ -13196,7 +13634,7 @@
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
+   "unplaced": "no containing realm has been established — searched under C582. The corpus says only “A tributary of the Teiglin” — one watercourse, no land.",
    "wikidata": {
     "qid": "Q2160901",
     "label": "Malduin",
@@ -13381,7 +13819,8 @@
    ],
    "cites": [
     "drawn on the archive's vector map (RIVERS_TA); the name is attested 24 times in the tier-1 corpus [C for the name, I-M for the placing]",
-    "Unfinished Tales, Part Three"
+    "Unfinished Tales, Part Three",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states the boundary between Rohan and Gondor. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14231 — “Mering Stream ‘Boundary Stream’, flowing down from Ered Nimrais to join the Entwash, and forming the boundary between Rohan and Gondor; in Sindarin called Glanhír.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -13724,7 +14163,8 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 48 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 48 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states between Dimbar and Neldoreth. The Silmarillion, t1_a_the_silmarillion.txt:15126 — “Mindeb A tributary of Sirion, between Dimbar and the Forest of Neldoreth.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -13927,7 +14367,8 @@
    "ages": [],
    "cites": [
     "C Prologue/App; A ch3; B ch4–6; RC[T]",
-    "placed from the archive's own vector map (MTS_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (MTS_TA) [I-M]; the record existed already and had no coordinate",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states the eastern boundary of Eriador. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14261 — “Misty Mountains Great mountain-range of Middle-earth running north and south and forming the eastern boundary of Eriador; called in Sindarin Hithaeglir.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -13963,7 +14404,20 @@
   "mitheithel": {
    "ages": [],
    "cites": [
-    "The Silmarillion, Elements In Quenya And Sindarin Names"
+    "The Silmarillion, Elements In Quenya And Sindarin Names",
+    "containing parent eriador: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14264 — “Mitheithel River of Eriador flowing from the Ettendales to join the Bruinen (Loudwater). Translated Hoarwell.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "eriador",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within eriador, per the index of names in Unfinished Tales — “Mitheithel River of Eriador flowing from the Ettendales to join the Bruinen (Loudwater). Translated Hoarwell.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14264) [I-H]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -13973,13 +14427,15 @@
     "“eithel ‘well’ in Eithel Ivrin, Eithel Sirion, Barad Eithel; also in Mitheithel, the river Hoarwell in Eriador (named from its source).” — The Silmarillion, Elements In Quenya And Sindarin Names",
     "indexed by Christopher Tolkien as: The River Hoarwell"
    ],
-   "parents": [],
+   "parents": [
+    "eriador"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q3423804",
     "label": "Mitheithel",
@@ -14153,7 +14609,20 @@
   "morgai": {
    "ages": [],
    "cites": [
-    "placed from the archive's own vector map (MTS_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (MTS_TA) [I-M]; the record existed already and had no coordinate",
+    "containing parent mordor: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14279 — “Morgai ‘Black Fence’, inner ridge much lower than the Ephel Dúath and separated from it by a deep trough; the inner ring of the fences of Mordor.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "mordor",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within mordor, per the index of names in Unfinished Tales — “Morgai ‘Black Fence’, inner ridge much lower than the Ephel Dúath and separated from it by a deep trough; the inner ring of the fences of Mordor.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14279) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -14171,19 +14640,34 @@
     "spec TA: Mountains",
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
-   "parents": [],
+   "parents": [
+    "mordor"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
-   ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   ]
   },
   "morgulduin": {
    "ages": [],
    "cites": [
     "The Lord of the Rings, Journey To The Cross-Roads",
-    "placed from the archive's own vector map (RIVERS_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (RIVERS_TA) [I-M]; the record existed already and had no coordinate",
+    "containing parent imlad morgul: The History of Middle-earth: Index, t1_13_index.txt:4633 — “Duin Morghul (VII) Stream in the Morgul Vale (in LR Morgulduin).” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "imlad morgul",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within imlad morgul, per the index of names in The History of Middle-earth: Index — “Duin Morghul (VII) Stream in the Morgul Vale (in LR Morgulduin).” (The History of Middle-earth: Index, t1_13_index.txt:4633) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -14201,13 +14685,15 @@
     "indexed by Christopher Tolkien as: Stream flowing through Imlad Morghul",
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends"
    ],
-   "parents": [],
+   "parents": [
+    "imlad morgul"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q4591809",
     "label": "Morgulduin",
@@ -14476,7 +14962,8 @@
     "TA"
    ],
    "cites": [
-    "Unfinished Tales [C]"
+    "Unfinished Tales [C]",
+    "C582 — searched, and the container the corpus names is AMBIGUOUS here: Mirkwood resolves to `mirkwood`, `greenwood`. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:8830 — “The Emyn Duir (Dark Mountains) were a group of high hills in the north-east of the Forest, so called because dense fir-woods grew upon their slopes; but they were not yet of evil name. In later days when the shadow of Sauron spread through Greenwood the Great, and changed its name from Eryn Galen to Taur-nu-Fuin (translated Mirkwood), The Emyn Duir became a haunt of many of his most evil creatures” [I-H]"
    ],
    "coord_conf": null,
    "coords": [],
@@ -14492,7 +14979,7 @@
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
+   "unplaced": "the corpus names a container — Mirkwood — but it resolves to 2 records in this archive (`mirkwood`, `greenwood`), so ruling 2a and C567's second condition leave it unplaced. Searched under C582.",
    "wikidata": {
     "qid": "Q6022274",
     "label": "Mountains of Mirkwood",
@@ -14502,7 +14989,9 @@
   },
   "mountains of shadow": {
    "ages": [],
-   "cites": [],
+   "cites": [
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states between Gondor and Mordor. The Silmarillion, t1_a_the_silmarillion.txt:14540 — “Ephel Dúath ‘Fence of Shadow’, the mountain-range between Gondor and Mordor; also called the Mountains of Shadow.” [I-H]"
+   ],
    "coord_conf": null,
    "coords": [],
    "n": "Mountains of Shadow (Ephel Duath)",
@@ -14545,7 +15034,7 @@
    "types": [
     "NATURAL_SEA"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
+   "unplaced": "no containing realm has been established — searched under C582. The corpus names the Havens and the delta constantly and never states a containing land for them.",
    "wikidata": {
     "qid": "Q9364536",
     "label": "Mouths of Sirion",
@@ -14811,7 +15300,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 425 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 425 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent west beleriand: The Silmarillion, t1_a_the_silmarillion.txt:15202 — “Narog The chief river of West Beleriand, rising at Ivrin under Ered Wethrin and flowing into Sirion in Nan-tathren.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "west beleriand",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within west beleriand, per the index of names in The Silmarillion — “Narog The chief river of West Beleriand, rising at Ivrin under Ered Wethrin and flowing into Sirion in Nan-tathren.” (The Silmarillion, t1_a_the_silmarillion.txt:15202) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -14828,13 +15330,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "west beleriand"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q3414246",
     "label": "Narog",
@@ -15009,7 +15513,20 @@
   "nen lalaith": {
    "ages": [],
    "cites": [
-    "Unfinished Tales, Narn I Hîn Húrin"
+    "Unfinished Tales, Narn I Hîn Húrin",
+    "containing parent dorlomin: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14346 — “Nen Lalaith Stream rising under Amon Darthir in Ered Wethrin and flowing past Húrin’s house in Dor-lómin.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "dorlomin",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within dorlomin, per the index of names in Unfinished Tales — “Nen Lalaith Stream rising under Amon Darthir in Ered Wethrin and flowing past Húrin’s house in Dor-lómin.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14346) [I-H]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -15019,20 +15536,35 @@
     "“None of the Eldar at that time dwelt in his father’s lands, and once only had he seen them, when King Fingon and many of his lords had ridden through Dor-lómin and passed over the bridge of Nen Lalaith, glittering in silver and white.” — Unfinished Tales, Narn I Hîn Húrin",
     "indexed by Christopher Tolkien as: Stream rising under Amon Darthir in Ered Wethrin"
    ],
-   "parents": [],
+   "parents": [
+    "dorlomin"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
-   ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   ]
   },
   "nenning": {
    "ages": [
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 34 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 34 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent west beleriand: The Silmarillion, t1_a_the_silmarillion.txt:15227 — “Nenning River in West Beleriand, reaching the sea at the Haven of Eglarest.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "west beleriand",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within west beleriand, per the index of names in The Silmarillion — “Nenning River in West Beleriand, reaching the sea at the Haven of Eglarest.” (The Silmarillion, t1_a_the_silmarillion.txt:15227) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -15049,13 +15581,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "west beleriand"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q1773257",
     "label": "Nenning",
@@ -15151,7 +15685,8 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 123 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 123 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — searched, and the container the corpus names is AMBIGUOUS here: Lórien resolves to `lothlorien`, `lorien`. The Nature of Middle-earth, t2_i_the_nature_of_middle_earth.txt:14714 — “Nimrodel River in Lórien.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -15174,7 +15709,7 @@
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   "unplaced": "the corpus names a container — Lórien — but it resolves to 2 records in this archive (`lothlorien`, `lorien`), so ruling 2a and C567's second condition leave it unplaced. Searched under C582."
   },
   "nindalf": {
    "ages": [
@@ -15628,7 +16163,7 @@
     "NATURAL_COAST",
     "NATURAL_SEA"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   "unplaced": "no containing realm has been established — searched under C582, and the name is not attested in the citable corpus at all: it is the archive's own label for a shape on its vector map. 0 occurrences across the 232-file citable corpus through map/ardatext.py."
   },
   "oiolosse": {
    "ages": [],
@@ -16224,7 +16759,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 19 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 19 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent gondor: The Nature of Middle-earth, t2_i_the_nature_of_middle_earth.txt:14789 — “Poros River of Gondor.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "gondor",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within gondor, per the index of names in The Nature of Middle-earth — “Poros River of Gondor.” (The Nature of Middle-earth, t2_i_the_nature_of_middle_earth.txt:14789) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -16241,13 +16789,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q7901669",
     "label": "Poros",
@@ -16697,7 +17247,20 @@
     "TA"
    ],
    "cites": [
-    "The Silmarillion [C]"
+    "The Silmarillion [C]",
+    "containing parent gondor: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14525 — “Ringló River in Gondor, joining the Morthond north-east of Dol Amroth.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "gondor",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within gondor, per the index of names in Unfinished Tales — “Ringló River in Gondor, joining the Morthond north-east of Dol Amroth.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14525) [I-H]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -16707,13 +17270,15 @@
     "“ring ‘cold, chill’ in Ringil, Ringwil, Himring; also in the river Ringló in Gondor, and in Ringarë, Quenya name of the last month of the year (The Lord of the Rings Appendix D).” — The Silmarillion [C]",
     "Christopher Tolkien letters R. RINGLO on the General Map, in Gondor"
    ],
-   "parents": [],
+   "parents": [
+    "gondor"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q9069358",
     "label": "Ringló",
@@ -16812,14 +17377,15 @@
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   "unplaced": "no containing realm has been established — searched under C582, and the name is not attested in the citable corpus at all: it is the archive's own label for a group of lines on its vector map. 0 occurrences across the 232-file citable corpus through map/ardatext.py."
   },
   "rivil": {
    "ages": [],
    "cites": [
     "The Silmarillion, Of The Fifth Battle: Nirnaeth Arnoediad",
     "A ch19, ch20; HoME 3, 11",
-    "placed from the archive's own vector map (RIVERS_FA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (RIVERS_FA) [I-M]; the record existed already and had no coordinate",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states Dorthonion and the Fen of Serech. The Silmarillion, t1_a_the_silmarillion.txt:15423 — “Rivil Stream falling northwards from Dorthonion and flowing into Sirion in the Fen of Serech.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -17363,7 +17929,7 @@
    "types": [
     "NATURAL_SEA"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
+   "unplaced": "no containing realm has been established — searched under C582. The corpus names it as a bound of other things and never states what contains it.",
    "wikidata": {
     "qid": "Q3101970",
     "label": "Sea of Rhûn",
@@ -17376,7 +17942,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 20 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 20 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent lebennin: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14591 — “Serni One of the rivers of Lebennin in Gondor.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "lebennin",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within lebennin, per the index of names in Unfinished Tales — “Serni One of the rivers of Lebennin in Gondor.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14591) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -17393,13 +17972,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "lebennin"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q5060146",
     "label": "Serni",
@@ -17410,7 +17991,8 @@
   "shadowy seas": {
    "ages": [],
    "cites": [
-    "drawn on the archive's vector map (SEAS); the name is attested 75 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (SEAS); the name is attested 75 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — searched, and the container the corpus names is AMBIGUOUS here: the Great Sea resolves to `great sea`, `belegaer`. The History of Middle-earth: Index, t1_13_index.txt:16038 — “Shadowy Seas (I) Region of the Great Sea west of Tol Eressëa” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -17433,14 +18015,15 @@
    "types": [
     "NATURAL_SEA"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   "unplaced": "the corpus names a container — the Great Sea — but it resolves to 2 records in this archive (`great sea`, `belegaer`), so ruling 2a and C567's second condition leave it unplaced. Searched under C582."
   },
   "silverlode": {
    "ages": [
     "TA"
    ],
    "cites": [
-    "The Lord of the Rings [C]"
+    "The Lord of the Rings [C]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states Mirrormere, Lothlórien and Anduin. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:13369 — “Celebrant River rising in Mirrormere and flowing through Lothlórien to join Anduin.” [I-H]"
    ],
    "coord_conf": null,
    "coords": [],
@@ -17461,7 +18044,20 @@
   "sirannon": {
    "ages": [],
    "cites": [
-    "The Silmarillion, Elements In Quenya And Sindarin Names"
+    "The Silmarillion, Elements In Quenya And Sindarin Names",
+    "containing parent khazaddum: The Silmarillion, t1_a_the_silmarillion.txt:15795 — “Sirannon (the ‘Gate-stream’ of Moria)” [C] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "khazaddum",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within khazaddum, stated in the corpus — “Sirannon (the ‘Gate-stream’ of Moria)” (The Silmarillion, t1_a_the_silmarillion.txt:15795) [C]"
+    }
    ],
    "coord_conf": null,
    "coords": [],
@@ -17471,14 +18067,16 @@
     "“sîr ‘river’, from root sir- ‘flow’, in Ossiriand (the first element is from the stem of the numeral ‘seven’, Quenya otso, Sindarin odo), Sirion; also in Sirannon (the ‘Gate-stream’ of Moria) and Sirith (‘a flowing’, as tirith ‘watching’ from tir), a river in Gondor.” — The Silmarillion, Elements In Quenya And Sindarin Names",
     "indexed by Christopher Tolkien as: The Gate-stream of Moria"
    ],
-   "parents": [],
+   "parents": [
+    "khazaddum"
+   ],
    "place_conf": "H",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER",
     "MAN_MADE_GATE"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q3423972",
     "label": "Sirannon",
@@ -17491,7 +18089,8 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 1441 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 1441 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states dividing West from East Beleriand. The Silmarillion, t1_a_the_silmarillion.txt:15490 — “Sirion ‘The Great River’ flowing from north to south and dividing West from East Beleriand.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -17527,7 +18126,20 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 13 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 13 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent lebennin: Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14128 — “Lebennin ‘Five Rivers’ (those being Erui, Sirith, Celos, Serni, and Gilrain), land between Ered Nimrais and Ethir Anduin; one of the ‘faithful fiefs’ of Gondor.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "lebennin",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within lebennin, per the index of names in Unfinished Tales — “Lebennin ‘Five Rivers’ (those being Erui, Sirith, Celos, Serni, and Gilrain), land between Ered Nimrais and Ethir Anduin; one of the ‘faithful fiefs’ of Gondor.” (Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14128) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -17544,13 +18156,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "lebennin"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q1773944",
     "label": "Sirith",
@@ -17563,7 +18177,8 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 30 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 30 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states the Starkhorn, Harrowdale and Edoras. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14622 — “Snowbourn River rising under the Starkhorn and flowing out down Harrowdale and past Edoras.” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -17746,7 +18361,7 @@
     "NATURAL_RIVER",
     "MAN_MADE_GATE"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   "unplaced": "no containing realm has been established — searched under C582. It is ONE fall, which cannot run through anything: “Falls in the Gate-stream below the West Gate of Moria” (HoME VI index). The container the corpus names — the Gate-stream — resolves to NO record: `sirannon` carries no such aka. One aka would place this row, exactly as one aka on `echoriath` placed `cristhorn`."
   },
   "starkhorn": {
    "ages": [],
@@ -18077,7 +18692,7 @@
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   "unplaced": "no containing realm has been established — searched under C582. It is a saddle, which cannot run through anything: “Pass between the White Mountains and an outlying spur, west of Kiril” (HoME VIII index). Passing it brings a traveller INTO Lamedon (LotR V.9), so it is the threshold and not a thing within."
   },
   "tarn aeluin": {
    "ages": [
@@ -18177,7 +18792,7 @@
    "types": [
     "NATURAL_MOUNTAIN_RANGE"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
+   "unplaced": "no containing realm has been established — searched under C582. The corpus places it only by direction: “The wooded highlands to the west of the river Narog above Nargothrond”.",
    "wikidata": {
     "qid": "Q7903756",
     "label": "Taur-en-Faroth",
@@ -18258,7 +18873,8 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 209 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 209 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states Ered Wethrin, the bound of Brethil, and Sirion. The Silmarillion, t1_a_the_silmarillion.txt:15548 — “Teiglin A tributary of Sirion, rising in Ered Wethrin and bounding the Forest of Brethil on the south” [I-H]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -18294,7 +18910,20 @@
     "FA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_FA); the name is attested 21 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_FA); the name is attested 21 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "containing parent ossiriand: The Silmarillion, t1_a_the_silmarillion.txt:15566 — “Thalos The second of the tributaries of Gelion in Ossiriand.” [I-H] — searched under C582, which put this record's own spanning note to the corpus for the first time"
+   ],
+   "containment": [
+    {
+     "bound": "the realm's own span, not the tenure: the archive does not know the year this place passed to it",
+     "frm": null,
+     "parent": "ossiriand",
+     "placed_by": "Samu",
+     "ruling": "C567; C576; C580; C582",
+     "span": "",
+     "to": null,
+     "why": "within ossiriand, per the index of names in The Silmarillion — “Thalos The second of the tributaries of Gelion in Ossiriand.” (The Silmarillion, t1_a_the_silmarillion.txt:15566) [I-H]"
+    }
    ],
    "coord_conf": "M",
    "coords": [
@@ -18311,13 +18940,15 @@
     "one point on a line: the midmost vertex of the course the archive draws, not where it begins or ends",
     "the archive draws this and had no record of it until the map and the gazetteer were compared"
    ],
-   "parents": [],
+   "parents": [
+    "ossiriand"
+   ],
    "place_conf": "M",
+   "placed_by": "Samu",
    "timeline": [],
    "types": [
     "NATURAL_RIVER"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
    "wikidata": {
     "qid": "Q1773797",
     "label": "Thalos",
@@ -19147,7 +19778,8 @@
   "tol fuin": {
    "ages": [],
    "cites": [
-    "Unfinished Tales, Introduction"
+    "Unfinished Tales, Introduction",
+    "C582 — searched, and the container the corpus names is AMBIGUOUS here: the Great Sea resolves to `great sea`, `belegaer`. The History of Middle-earth: Index, t1_13_index.txt:17766 — “Tol Fuin (IV) Island in the Great Sea” [I-H]"
    ],
    "coord_conf": null,
    "coords": [],
@@ -19163,7 +19795,7 @@
    "types": [
     "NATURAL_SEA"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false"
+   "unplaced": "the corpus names a container — the Great Sea — but it resolves to 2 records in this archive (`great sea`, `belegaer`), so ruling 2a and C567's second condition leave it unplaced. Searched under C582."
   },
   "tol galen": {
    "ages": [
@@ -19259,7 +19891,8 @@
   "tol morwen": {
    "ages": [],
    "cites": [
-    "The Silmarillion, Of The Ruin Of Doriath"
+    "The Silmarillion, Of The Ruin Of Doriath",
+    "C582 — searched, and the container the corpus names is AMBIGUOUS here: the Great Sea resolves to `great sea`, `belegaer`. The History of Middle-earth: Index, t1_13_index.txt:17772 — “Tol Morwen (IV) Island in the Great Sea” [I-H]"
    ],
    "coord_conf": null,
    "coords": [],
@@ -19275,7 +19908,7 @@
    "types": [
     "NATURAL_SEA"
    ],
-   "unplaced": "runs through more than one realm — a single parent would be false",
+   "unplaced": "the corpus names a container — the Great Sea — but it resolves to 2 records in this archive (`great sea`, `belegaer`), so ruling 2a and C567's second condition leave it unplaced. Searched under C582.",
    "wikidata": {
     "qid": "Q986604",
     "label": "Tol Morwen",
@@ -20925,7 +21558,8 @@
    "ages": [],
    "cites": [
     "C III–V; I",
-    "placed from the archive's own vector map (MTS_TA) [I-M]; the record existed already and had no coordinate"
+    "placed from the archive's own vector map (MTS_TA) [I-M]; the record existed already and had no coordinate",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states the line between Rohan's land and Gondor's. Unfinished Tales, t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:8290 — “all the land north of the White Mountains (save Anórien) as far as the Limlight had become part of the Kingdom of Rohan” [C]"
    ],
    "coord_conf": "M",
    "coords": [
@@ -21058,7 +21692,8 @@
     "TA"
    ],
    "cites": [
-    "drawn on the archive's vector map (RIVERS_TA); the name is attested 95 times in the tier-1 corpus [C for the name, I-M for the placing]"
+    "drawn on the archive's vector map (RIVERS_TA); the name is attested 95 times in the tier-1 corpus [C for the name, I-M for the placing]",
+    "C582 — the spanning note was SEARCHED and it HOLDS: the corpus states the Barrow-downs, the Old Forest and the Brandywine. The Lord of the Rings, t1_c_the_lord_of_the_rings.txt:5621 — “It comes down out of the Downs and ﬂows south-west through the midst of the Forest to join the Brandywine below Haysend.” [C]"
    ],
    "coord_conf": "M",
    "coords": [
