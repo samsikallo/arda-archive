@@ -2422,13 +2422,21 @@
    "n_anchored": 75,
    "n_labels": 211,
    "src": "map_beleriand_1.jpg",
-   "title": "Map of Beleriand and the Lands to the North"
+   "title": "Map of Beleriand and the Lands to the North",
+   "printed_in": "The Silmarillion (1977), folding plate",
+   "hand": "Christopher Tolkien",
+   "edition": null,
+   "edition_basis": "NOT RECORDED ANYWHERE IN THIS ARCHIVE, and this null is the §X.12 measurement rather than a gap in this row. map/plates.json names the BOOK each of its 21 plates was printed in and not one names a PRINTING; the source image map_beleriand_1.jpg is held in uploads/, which is gitignored, and site/arda_assets.json records whose hand drew it and on whose instruction it is published but not which impression it was scanned from. WHAT WOULD SETTLE IT: the imprint page of the copy the scan was made from."
   },
   "gm": {
    "n_anchored": 86,
    "n_labels": 188,
    "src": "map_middle_earth_2.jpeg",
-   "title": "The General Map of Middle-earth"
+   "title": "The General Map of Middle-earth",
+   "printed_in": "The Lord of the Rings, redrawn general map",
+   "hand": "Christopher Tolkien",
+   "edition": null,
+   "edition_basis": "NOT RECORDED ANYWHERE IN THIS ARCHIVE, and this null is the §X.12 measurement rather than a gap in this row. map/plates.json names the BOOK each of its 21 plates was printed in and not one names a PRINTING; the source image map_middle_earth_2.jpeg is held in uploads/, which is gitignored, and site/arda_assets.json records whose hand drew it and on whose instruction it is published but not which impression it was scanned from. WHAT WOULD SETTLE IT: the imprint page of the copy the scan was made from."
   }
  },
  "n_anchors": 161,

@@ -1,5 +1,12 @@
 {
  "what": "TEXTUAL VARIANTS: where the corpus tells the same matter two or more ways, each reading anchored to the line that says it. Tolkien wrote the legendarium repeatedly over fifty years and Christopher Tolkien published the layers; this dataset exists so that the archive can say THIS text says one thing and THAT text says another, without either being erased and without a winner being computed.",
+ "the_tradition_axis": {
+  "what": "WHICH TEXT a reading comes from, as a registered id -- not which VOLUME, and not which tier. map/traditions.py holds the register and is the only resolver.",
+  "why": "§X.4 asks for a textual-variant database and §I.3 demands that Tolkien's lifetime publications, his posthumous writings and CHRISTOPHER TOLKIEN'S EDITORIAL SELECTIONS AND ARRANGEMENTS be separately queryable. The archive's own coverage report has stood at a finding that §I.3's separation here is VOLUME-level only -- that nothing separates Christopher's commentary from his father's draft inside one HoMe file. On these readings it now does, because a hand read each line and named the text in `witness`; this key is that sentence normalised, and 8 readings of the 55 are Christopher's editorial matter distinguished from his father's text inside one volume.",
+  "not_derived_from": "the volume, the filename or the tier. C517: a t1 FILE is not t1 throughout -- 21 of 30 spans graded as Tolkien's own words were somebody else's book title printed inside a t1 volume, and t1_13_index.txt is wholly Christopher's index.",
+  "refused": "map/traditions.py REFUSES by name the strings that name a volume rather than a text -- UT, MR, HoME XI, HoME XII (PoME) -- and the bare title `Tale of Years`, which is LotR Appendix B AND the later Beleriandic annals at once. Each refusal is published there with what would settle it.",
+  "null_means": "the text takes two of §IV's nineteen values at once and neither is chosen. It never means nobody looked."
+ },
  "principle": "SAMSI §X.4, executing the protocol's second non-negotiable principle -- do not collapse Tolkien's textual variants into a single simplified canon. Conflicting claims are held as PARALLEL ASSERTIONS (§I.7): every reading carries its own locus, tier and confidence, and none is subordinated to another by this file.",
  "the_ruling": {
   "id": "C366",
@@ -41,9 +48,11 @@
   "publication_year_available": {
    "asked": true,
    "rows": 260,
-   "distinct_keys": 24,
-   "keys_naming_a_date": [],
-   "verdict": "no row in the shelf register carries a publication year, so ranking two Tolkien texts by print date is not computable from anything this archive stores"
+   "distinct_keys": 27,
+   "keys_naming_a_date": [
+    "first_publication_year"
+   ],
+   "verdict": "the register now carries a date-shaped key; the claim above needs re-reading"
   },
   "tier_is_not_canon": "The tier ranks WHO IS SPEAKING; the owner's rule ranks WHEN. Every subject here except two is tier-1 against tier-1, where tier is silent by construction (C366(4))."
  },
@@ -76,7 +85,42 @@
    "draft evolution": 7,
    "editorial choice vs manuscript": 3,
    "unreconciled / intentional ambiguity": 4
-  }
+  },
+  "variants_with_publication_layer": 18,
+  "readings_with_tradition": 55,
+  "readings_with_publication_layer": 48,
+  "readings_layer_null": 7,
+  "by_layer": {
+   "(null)": 7,
+   "CHRISTOPHER_TOLKIEN_EDITORIAL": 7,
+   "SCHOLARLY_INTERPRETATION": 1,
+   "TOLKIEN_PRIMARY_POSTHUMOUS": 35,
+   "TOLKIEN_PRIMARY_PUBLISHED": 5
+  },
+  "by_tradition": {
+   "aam": 5,
+   "ct_apparatus": 8,
+   "elessar": 6,
+   "ga": 2,
+   "galadriel_celeborn": 1,
+   "istari": 2,
+   "last_writings": 2,
+   "line_of_elros": 1,
+   "lost_tales": 2,
+   "lotr_appa": 1,
+   "lotr_narr": 4,
+   "myths_transformed": 1,
+   "nome": 2,
+   "notes_sons_feanor": 1,
+   "quenta_silmarillion": 3,
+   "rateliff_hoh": 1,
+   "return_of_shadow": 2,
+   "shibboleth": 4,
+   "silm77": 6,
+   "toy_2a": 2
+  },
+  "traditions_registered": 26,
+  "traditions_refused": 10
  },
  "variants": [
   {
@@ -92,7 +136,13 @@
      "text": "of Turgon, Ereinion Gil-galad son of Fingon was named High King of",
      "witness": "The Silmarillion (published text), ch. 23",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "silm77"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Silmarillion. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": null,
+     "publication_layer_basis": "**IT TAKES TWO OF THE NINETEEN AT ONCE AND §IV HAS NO WORD FOR BOTH.** It is `TOLKIEN_PRIMARY_POSTHUMOUS` -- his writing, first printed in 1977, four years after his death -- and it is `CHRISTOPHER_TOLKIEN_EDITORIAL`, the paradigm case of the §I.3 category *Christopher Tolkien's editorial selections and arrangements*. C488 forbids averaging a volume that cannot take one value and C517 forbids choosing the likelier one; so this is null, and what would settle it is a reader opening the chapter and declaring the sentence, per C548. NULL, NEVER AVERAGED. WHAT WOULD SETTLE IT: a reader opening the locus in `src` and declaring the sentence, on C548's mechanism."
     },
     {
      "n": "son of Fingon (the published index)",
@@ -102,7 +152,13 @@
      "text": "Ereinion ‘Scion of Kings’, the son of Fingon, known always by",
      "witness": "The Silmarillion, Index of Names",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "silm77"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Silmarillion. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": null,
+     "publication_layer_basis": "**IT TAKES TWO OF THE NINETEEN AT ONCE AND §IV HAS NO WORD FOR BOTH.** It is `TOLKIEN_PRIMARY_POSTHUMOUS` -- his writing, first printed in 1977, four years after his death -- and it is `CHRISTOPHER_TOLKIEN_EDITORIAL`, the paradigm case of the §I.3 category *Christopher Tolkien's editorial selections and arrangements*. C488 forbids averaging a volume that cannot take one value and C517 forbids choosing the likelier one; so this is null, and what would settle it is a reader opening the chapter and declaring the sentence, per C548. NULL, NEVER AVERAGED. WHAT WOULD SETTLE IT: a reader opening the locus in `src` and declaring the sentence, on C548's mechanism."
     },
     {
      "n": "son of Felagund",
@@ -112,7 +168,13 @@
      "text": "This was ruled by Gil-galad son of Felagund,8 chief of all the",
      "witness": "The Tale of Years of the Second Age (T 2), PoME",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "toy_2a"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Tale of Years of the Second Age. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Tale of Years of the Second Age (T 2), PoME is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "brother of Galadriel, emended to son of Felagund",
@@ -122,7 +184,13 @@
      "text": "the Lady Galadriel of the Noldor, sister of Gil-galad [> sister of",
      "witness": "The Tale of Years of the Second Age (T 2), PoME",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "toy_2a"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Tale of Years of the Second Age. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Tale of Years of the Second Age (T 2), PoME is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "son of Orodreth",
@@ -132,7 +200,13 @@
      "text": "great speed but nonetheless dated, August 1965, my father suggested that the best solution",
      "witness": "The Shibboleth of Feanor, PoME (note dated August 1965)",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "shibboleth"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Shibboleth of Feanor. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Shibboleth of Fëanor (PoME) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "son of Arothir, nephew of Finrod",
@@ -142,7 +216,13 @@
      "text": "galad is ‘the son of Arothir, nephew of Finrod’. The final genealogy was:",
      "witness": "The Shibboleth of Feanor, PoME (final genealogy)",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "shibboleth"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Shibboleth of Feanor. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Shibboleth of Fëanor (PoME) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 6,
@@ -172,6 +252,13 @@
     "reads": "THE FATHER IS ORODRETH, following the latest manuscript layer, with the confusion recorded everywhere relevant and the published Silmarillion NOT corrected in arda_index, which reproduces Tolkien's own index.",
     "ruling_id_note": "No C-number exists. DECISIONS.md opens on 19 August 2026 and this decision is dated 1 August 2026; the ledger names Gil-galad exactly once, in an unrelated note about duplicate index entries. The decision is his and is recorded as his; a number invented for it would not be."
    },
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "shibboleth",
+    "silm77",
+    "toy_2a"
+   ],
    "also_in": {
     "dataset": "site/arda_contradictions.json",
     "subject": "Gil-galad's father",
@@ -192,7 +279,13 @@
      "text": "this they took after bitter fighting, and Orodreth the brother of Inglor who",
      "witness": "The Grey Annals, WJ",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "ga"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Grey Annals. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Grey Annals is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "son of Angrod, of the next generation",
@@ -202,7 +295,13 @@
      "text": "Aman)’, and moved Artanáro Rhodothir to become, still in the same generation, the son of",
      "witness": "The Shibboleth of Feanor, PoME",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "shibboleth"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Shibboleth of Feanor. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Shibboleth of Fëanor (PoME) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "never carried into the published narratives",
@@ -212,7 +311,13 @@
      "text": "a reason unknown to me, my father displaced the second King of Nargothrond and made him",
      "witness": "Christopher Tolkien's note 20, UT",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "ct_apparatus"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Christopher Tolkien's note. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "CHRISTOPHER_TOLKIEN_EDITORIAL",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Christopher Tolkien's editorial apparatus -- commentary, notes and indexes is CHRISTOPHER_TOLKIEN_EDITORIAL, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 3,
@@ -233,6 +338,13 @@
    },
    "declines_to_choose": false,
    "adjudication": null,
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "ct_apparatus",
+    "ga",
+    "shibboleth"
+   ],
    "also_in": {
     "dataset": "site/arda_contradictions.json",
     "subject": "Orodreth's own place in the House of Finarfin",
@@ -254,7 +366,13 @@
      "text": "and Maglor won the day, though they alone remained thereafter of the sons",
      "witness": "The Silmarillion (published text), ch. 24",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "silm77"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Silmarillion. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": null,
+     "publication_layer_basis": "**IT TAKES TWO OF THE NINETEEN AT ONCE AND §IV HAS NO WORD FOR BOTH.** It is `TOLKIEN_PRIMARY_POSTHUMOUS` -- his writing, first printed in 1977, four years after his death -- and it is `CHRISTOPHER_TOLKIEN_EDITORIAL`, the paradigm case of the §I.3 category *Christopher Tolkien's editorial selections and arrangements*. C488 forbids averaging a volume that cannot take one value and C517 forbids choosing the likelier one; so this is null, and what would settle it is a reader opening the chapter and declaring the sentence, per C548. NULL, NEVER AVERAGED. WHAT WOULD SETTLE IT: a reader opening the locus in `src` and declaring the sentence, on C548's mechanism."
     },
     {
      "n": "burned in the ships at Losgar",
@@ -264,7 +382,13 @@
      "text": "In the morning the host was mustered, but of Fëanor’s seven sons only six were to be",
      "witness": "The Shibboleth of Feanor, PoME",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "shibboleth"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Shibboleth of Feanor. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Shibboleth of Fëanor (PoME) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "burned with the ships (the genealogical note)",
@@ -274,7 +398,13 @@
      "text": "Maedros the eldest appears to have been unwedded, also the two youngest (twins, of whom",
      "witness": "Notes on the Sons of Feanor, PoME",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "notes_sons_feanor"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Notes on the Sons of Feanor. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Notes on the Sons of Fëanor (PoME) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 3,
@@ -294,6 +424,13 @@
    },
    "declines_to_choose": false,
    "adjudication": null,
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "notes_sons_feanor",
+    "shibboleth",
+    "silm77"
+   ],
    "also_in": {
     "dataset": "site/arda_contradictions.json",
     "subject": "Amrod's death",
@@ -315,7 +452,14 @@
      "text": "thus 1 Valian Year would = 10 Sun Years",
      "witness": "Annals of Aman, MR (Christopher Tolkien's computation of the text's own device)",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "ct_apparatus",
+      "aam"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Christopher Tolkien's computation + Annals of Aman. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": null,
+     "publication_layer_basis": "THIS WITNESS NAMES 2 TEXTS AND THEY DISAGREE ON THE LAYER (CHRISTOPHER_TOLKIEN_EDITORIAL, TOLKIEN_PRIMARY_POSTHUMOUS). Not averaged and not resolved by precedence: Christopher Tolkien's editorial apparatus -- commentary, notes and indexes = CHRISTOPHER_TOLKIEN_EDITORIAL; The Annals of Aman = TOLKIEN_PRIMARY_POSTHUMOUS."
     },
     {
      "n": "47,901 of our years to 5,000 Valian Years",
@@ -325,7 +469,13 @@
      "text": "realm of Arda, which is the Earth, five thousand Valian Years ere the first",
      "witness": "Annals of Aman, MR",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "aam"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Annals of Aman. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Annals of Aman is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "144 mortal years",
@@ -335,7 +485,13 @@
      "text": "Year. But each Valian Year = 144 Mortal Years; therefore 1 Valian Day = 1",
      "witness": "Time and Ageing, Text 2, NoME",
      "tier": 2,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "nome"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- NoME. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Nature of Middle-earth is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "variously 100 or 144",
@@ -345,7 +501,13 @@
      "text": "VY        Valian Year(s) (variously = 100 or 144 löar)",
      "witness": "The Nature of Middle-earth, abbreviations",
      "tier": 2,
-     "conf": "EXT"
+     "conf": "EXT",
+     "tradition": [
+      "nome"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Nature of Middle-earth. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Nature of Middle-earth is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 4,
@@ -366,6 +528,13 @@
    },
    "declines_to_choose": true,
    "adjudication": null,
+   "publication_layer": "TEXTUALLY_AMBIGUOUS",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "aam",
+    "ct_apparatus",
+    "nome"
+   ],
    "date_conf": "I-M",
    "also_in": {
     "dataset": "site/arda_contradictions.json",
@@ -395,7 +564,13 @@
      "text": "§43 Here must be told how the Teleri came at last to Valinor. For nigh",
      "witness": "Quenta Silmarillion (QS/LQ), MR",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "quenta_silmarillion"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Quenta Silmarillion + QS/LQ. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Quenta Silmarillion / Later Quenta (QS, LQ -- MR) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "a hundred of our years, being ten Valian years",
@@ -405,7 +580,13 @@
      "text": "For well-nigh one hundred of the years of our time (though that",
      "witness": "Quenta Silmarillion, the QS typescript substitution, MR",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "quenta_silmarillion"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Quenta Silmarillion. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Quenta Silmarillion / Later Quenta (QS, LQ -- MR) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 2,
@@ -423,6 +604,11 @@
    },
    "declines_to_choose": false,
    "adjudication": null,
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "quenta_silmarillion"
+   ],
    "date_conf": "C",
    "why_no_adjudication": "No ruling names it. It is included because it is the cleanest specimen in the archive of what this dataset is for: ONE sentence, TWO authorial states, a tenfold difference, and the later state invisible in every published narrative."
   },
@@ -439,7 +625,13 @@
      "text": "there in prison, and by slow arts of cruelty were corrupted",
      "witness": "The Silmarillion (published text), ch. 3",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "silm77"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Silmarillion. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": null,
+     "publication_layer_basis": "**IT TAKES TWO OF THE NINETEEN AT ONCE AND §IV HAS NO WORD FOR BOTH.** It is `TOLKIEN_PRIMARY_POSTHUMOUS` -- his writing, first printed in 1977, four years after his death -- and it is `CHRISTOPHER_TOLKIEN_EDITORIAL`, the paradigm case of the §I.3 category *Christopher Tolkien's editorial selections and arrangements*. C488 forbids averaging a volume that cannot take one value and C517 forbids choosing the likelier one; so this is null, and what would settle it is a reader opening the chapter and declaring the sentence, per C548. NULL, NEVER AVERAGED. WHAT WOULD SETTLE IT: a reader opening the locus in `src` and declaring the sentence, on C548's mechanism."
     },
     {
      "n": "made of stone",
@@ -449,7 +641,13 @@
      "text": "in envy and mockery of the Elves, and they were made of stone,",
      "witness": "Quenta Silmarillion §62 quoted in MR",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "quenta_silmarillion"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Quenta Silmarillion. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Quenta Silmarillion / Later Quenta (QS, LQ -- MR) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "beasts of humanized shape",
@@ -459,7 +657,13 @@
      "text": "the sign of the possession of a ‘rational soul’ or fëa.7 The Orcs were beasts",
      "witness": "Myths Transformed, MR",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "myths_transformed"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Myths Transformed. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Myths Transformed (MR) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "not Elvish at all",
@@ -469,7 +673,13 @@
      "text": "‘Alter this. Orcs are not Elvish.’ See pp. 408 ff.",
      "witness": "Tolkien's marginal note on AAm §43, MR",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "aam"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- AAm. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Annals of Aman is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 4,
@@ -490,6 +700,14 @@
    },
    "declines_to_choose": true,
    "adjudication": null,
+   "publication_layer": "TEXTUALLY_AMBIGUOUS",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "aam",
+    "myths_transformed",
+    "quenta_silmarillion",
+    "silm77"
+   ],
    "also_in": {
     "dataset": "site/arda_contradictions.json",
     "subject": "The origin of the Orcs",
@@ -518,7 +736,13 @@
      "text": "seeing that all was lost (for that time), he sent forth on a sudden a host of",
      "witness": "Annals of Aman §50, the manuscript reading, MR",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "aam"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Annals of Aman. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Annals of Aman is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "three, or at most seven",
@@ -528,7 +752,13 @@
      "text": "margin my father wrote: ‘There should not be supposed more than",
      "witness": "Tolkien's marginal note on AAm §50, MR",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "aam"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- AAm. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Annals of Aman is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 2,
@@ -546,6 +776,11 @@
    },
    "declines_to_choose": false,
    "adjudication": null,
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "aam"
+   ],
    "why_no_adjudication": "No ruling names it. Both readings are Tolkien's and the later one is a marginal instruction he never carried into a finished narrative, which is precisely the state C366 says must stay visible."
   },
   {
@@ -561,7 +796,13 @@
      "text": "with Curunír, but they never returned, and whether they remained in the East, pursuing there the",
      "witness": "The Istari, UT",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "istari"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Istari. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Istari (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "Alatar and Pallando, of Orome",
@@ -571,7 +812,13 @@
      "text": "in the West of Middle-earth), here they are named, as Alatar and Pallando, and are",
      "witness": "A note printed with The Istari, UT",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "istari"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Istari. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Istari (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "Morinehtar and Romestamo, come in the Second Age",
@@ -581,7 +828,13 @@
      "text": "in the war in Eriador.27 But the other two Istari were sent for a different",
      "witness": "Last Writings, PoME",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "last_writings"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Last Writings. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Last Writings (PoME) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "arriving with Glorfindel",
@@ -591,7 +844,13 @@
      "text": "The ‘other two’ came much earlier, at the same time probably as",
      "witness": "Last Writings, PoME",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "last_writings"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Last Writings. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Last Writings (PoME) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 4,
@@ -611,6 +870,12 @@
    },
    "declines_to_choose": true,
    "adjudication": null,
+   "publication_layer": "TEXTUALLY_AMBIGUOUS",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "istari",
+    "last_writings"
+   ],
    "also_in": {
     "dataset": "site/arda_contradictions.json",
     "subject": "The Blue Wizards",
@@ -639,7 +904,13 @@
      "text": "There was in Gondolin a jewel-smith named Enerdhil, the greatest of that craft among the",
      "witness": "The Elessar, UT (the manuscript's opening)",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "elessar"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Elessar. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Elessar (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "the first stone returned by Olorin, from Yavanna",
@@ -649,7 +920,13 @@
      "text": "and wondered. And Olórin said: ‘This I bring to you from Yavanna. Use it as you may,",
      "witness": "The Elessar, UT (first of the two tales)",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "elessar"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Elessar. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Elessar (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "made anew by Celebrimbor in Eregion",
@@ -659,7 +936,13 @@
      "text": "The other tale runs so: that long ago, ere Sauron deluded the smiths of Eregion,",
      "witness": "The Elessar, UT (second of the two tales)",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "elessar"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Elessar. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Elessar (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "Celebrimbor made both, and Enerdhil never existed",
@@ -669,7 +952,13 @@
      "text": "The Elessar was made in Gondolin by Celebrimbor, and so came to Idril and so to",
      "witness": "The Elessar, UT (the note written at the end)",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "elessar"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Elessar. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Elessar (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "Christopher Tolkien on the direction of change",
@@ -679,7 +968,13 @@
      "text": "Enerdhil appears in no other writing; and the concluding words of the text show that",
      "witness": "Christopher Tolkien's commentary, UT",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "ct_apparatus"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Christopher Tolkien's commentary. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "CHRISTOPHER_TOLKIEN_EDITORIAL",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Christopher Tolkien's editorial apparatus -- commentary, notes and indexes is CHRISTOPHER_TOLKIEN_EDITORIAL, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 5,
@@ -700,6 +995,12 @@
    },
    "declines_to_choose": true,
    "adjudication": null,
+   "publication_layer": "TEXTUALLY_AMBIGUOUS",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "ct_apparatus",
+    "elessar"
+   ],
    "also_in": {
     "dataset": "site/arda_contradictions.json",
     "subject": "Who made the Elessar",
@@ -728,7 +1029,13 @@
      "text": "Galadriel and Celeborn had in their company a Noldorin craftsman named Celebrimbor. [He",
      "witness": "Concerning Galadriel and Celeborn, UT",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "galadriel_celeborn"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Concerning Galadriel and Celeborn. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Concerning Galadriel and Celeborn (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "a descendant of Feanor, son of Curufin",
@@ -738,7 +1045,13 @@
      "text": "greatest artificers; but the text is emended to the later story that made him a descendant of",
      "witness": "Christopher Tolkien's bracketed note, UT",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "ct_apparatus"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Christopher Tolkien's bracketed note. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "CHRISTOPHER_TOLKIEN_EDITORIAL",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Christopher Tolkien's editorial apparatus -- commentary, notes and indexes is CHRISTOPHER_TOLKIEN_EDITORIAL, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 2,
@@ -756,6 +1069,12 @@
    },
    "declines_to_choose": false,
    "adjudication": null,
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "ct_apparatus",
+    "galadriel_celeborn"
+   ],
    "why_no_adjudication": "No ruling names it. Both stand; the Feanorian descent is marked as the later authorial state on Christopher's word, not on a print date."
   },
   {
@@ -771,7 +1090,13 @@
      "text": "§193 Then [Finrod >] Inglor cast off his crown and made ready to go",
      "witness": "The Grey Annals, WJ",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "ga"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Grey Annals. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Grey Annals is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "Finarfin the father, Finrod Felagund the son",
@@ -781,7 +1106,13 @@
      "text": "my father changed Finrod to Finarfin, while his son Felagund, previously called Inglor",
      "witness": "Christopher Tolkien's note 20, UT",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "ct_apparatus"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Christopher Tolkien's note. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "CHRISTOPHER_TOLKIEN_EDITORIAL",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Christopher Tolkien's editorial apparatus -- commentary, notes and indexes is CHRISTOPHER_TOLKIEN_EDITORIAL, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 2,
@@ -800,6 +1131,12 @@
    },
    "declines_to_choose": false,
    "adjudication": null,
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "ct_apparatus",
+    "ga"
+   ],
    "why_no_adjudication": "No ruling names it. The later assignment is universal in the published texts; the earlier one is live in every HoME volume that predates it, and a reader following a name across the corpus meets both."
   },
   {
@@ -815,7 +1152,13 @@
      "text": "He was born in the year 2618, and he ruled for 74 years until his death in 2899. His name in",
      "witness": "The Line of Elros, UT",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "line_of_elros"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Line of Elros. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Line of Elros: Kings of Númenor (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "Christopher Tolkien, 1980: omitted in error from The Lord of the Rings",
@@ -825,7 +1168,13 @@
      "text": "clear, from the fact alone that Tar-Ardamin’s death-date is here given as 2899, that he was",
      "witness": "Christopher Tolkien's note 11, UT",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "ct_apparatus"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Christopher Tolkien's note. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "CHRISTOPHER_TOLKIEN_EDITORIAL",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Christopher Tolkien's editorial apparatus -- commentary, notes and indexes is CHRISTOPHER_TOLKIEN_EDITORIAL, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "Christopher Tolkien, hedging his own verdict",
@@ -835,7 +1184,13 @@
      "text": "the royal names should there be attributed to the first ruler after Tar-Calmacil. It may be that",
      "witness": "Christopher Tolkien's note 11, UT",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "ct_apparatus"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Christopher Tolkien's note. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "CHRISTOPHER_TOLKIEN_EDITORIAL",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Christopher Tolkien's editorial apparatus -- commentary, notes and indexes is CHRISTOPHER_TOLKIEN_EDITORIAL, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "present in Appendix A, in the copy this archive holds",
@@ -845,7 +1200,13 @@
      "text": "Tar-Ancalimon, Tar-Telemmaitë, Tar-Vanimeldë (the third Queen), Tar-",
      "witness": "The Lord of the Rings, Appendix A I(i)",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "lotr_appa"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Appendix A. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_PUBLISHED",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Lord of the Rings, Appendix A -- Annals of the Kings and Rulers is TOLKIEN_PRIMARY_PUBLISHED, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 4,
@@ -873,6 +1234,13 @@
     "reads": "Tar-Ardamin was omitted in error from Appendix A's list; the Akallabeth was editorially changed from a twentieth king to a nineteenth before this was noticed.",
     "ruling_id_note": "An adjudication BY THE AUTHOR'S EDITOR INSIDE THE CORPUS, not by the archive and not by its owner. It is recorded because R13 -- the owner's ruling -- directs the archive to use what Tolkien and his son deem canon, and this is his son deeming. The hedge in the same note is published as a reading beside it, and so is the printed list that has since caught up with him."
    },
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "ct_apparatus",
+    "line_of_elros",
+    "lotr_appa"
+   ],
    "date_conf": "C",
    "also_in": {
     "dataset": "site/arda_contradictions.json",
@@ -894,7 +1262,13 @@
      "text": "is I never heard, but he's known round here as Trotter. You can",
      "witness": "The Return of the Shadow (the first Bree chapter)",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "return_of_shadow"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Return of the Shadow. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Return of the Shadow (the LotR drafts) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "Strider, known by his stride",
@@ -904,7 +1278,13 @@
      "text": "his right name is I’ve never heard: but he’s known round here as",
      "witness": "The Lord of the Rings, Book I ch. 9",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "lotr_narr"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Lord of the Rings, Book. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_PUBLISHED",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Lord of the Rings, the narrative and Prologue is TOLKIEN_PRIMARY_PUBLISHED, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 2,
@@ -923,6 +1303,12 @@
    },
    "declines_to_choose": false,
    "adjudication": null,
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "lotr_narr",
+    "return_of_shadow"
+   ],
    "why_no_adjudication": "No ruling names it, and none is needed for the narrative: The Lord of the Rings is the finished text. The record exists because the two sentences are the same sentence, and reading them together is how a reader sees a book being made."
   },
   {
@@ -938,7 +1324,13 @@
      "text": "into the text (which therefore now begins: 'When Bingo Bolger-Baggins",
      "witness": "The Return of the Shadow (fourth version of ch. 1)",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "return_of_shadow"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Return of the Shadow. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Return of the Shadow (the LotR drafts) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "Bilbo Baggins' eleventy-first",
@@ -948,7 +1340,13 @@
      "text": "When Mr. Bilbo Baggins of Bag End announced that he would shortly",
      "witness": "The Lord of the Rings, Book I ch. 1",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "lotr_narr"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Lord of the Rings, Book. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_PUBLISHED",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Lord of the Rings, the narrative and Prologue is TOLKIEN_PRIMARY_PUBLISHED, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 2,
@@ -967,6 +1365,12 @@
    },
    "declines_to_choose": false,
    "adjudication": null,
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "lotr_narr",
+    "return_of_shadow"
+   ],
    "why_no_adjudication": "No ruling names it; the published text is finished and the drafts are drafts. Recorded so that the opening sentence of the archive's most-cited book can be read against the sentence it replaced."
   },
   {
@@ -982,7 +1386,13 @@
      "text": "but Beren answered that he was no runagate but came of a kindred of",
      "witness": "The Tale of Tinuviel, BoLT II",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "lost_tales"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Tale of Tinuviel + BoLT II. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Book of Lost Tales is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "son of Barahir, of the House of Beor",
@@ -992,7 +1402,13 @@
      "text": "told hereafter; and Beren son of Barahir alone escaping came hardly",
      "witness": "The Silmarillion (published text), ch. 18",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "silm77"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Silmarillion. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": null,
+     "publication_layer_basis": "**IT TAKES TWO OF THE NINETEEN AT ONCE AND §IV HAS NO WORD FOR BOTH.** It is `TOLKIEN_PRIMARY_POSTHUMOUS` -- his writing, first printed in 1977, four years after his death -- and it is `CHRISTOPHER_TOLKIEN_EDITORIAL`, the paradigm case of the §I.3 category *Christopher Tolkien's editorial selections and arrangements*. C488 forbids averaging a volume that cannot take one value and C517 forbids choosing the likelier one; so this is null, and what would settle it is a reader opening the chapter and declaring the sentence, per C548. NULL, NEVER AVERAGED. WHAT WOULD SETTLE IT: a reader opening the locus in `src` and declaring the sentence, on C548's mechanism."
     }
    ],
    "n_readings": 2,
@@ -1011,6 +1427,12 @@
    },
    "declines_to_choose": false,
    "adjudication": null,
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "lost_tales",
+    "silm77"
+   ],
    "why_no_adjudication": "No ruling names it. It is recorded because it is the largest single change in the legendarium's central love story, and because the archive's Beren pages rest entirely on the later reading."
   },
   {
@@ -1026,7 +1448,13 @@
      "text": "clothed sweetly in words of praise; therefore now he gave orders for",
      "witness": "The Tale of Tinuviel, BoLT II",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "lost_tales"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Tale of Tinuviel + BoLT II. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Book of Lost Tales is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "Sauron, in Tol-in-Gaurhoth",
@@ -1036,7 +1464,13 @@
      "text": "In the time when Sauron cast Beren into the pit a weight of horror",
      "witness": "The Silmarillion (published text), ch. 19",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "silm77"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Silmarillion. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": null,
+     "publication_layer_basis": "**IT TAKES TWO OF THE NINETEEN AT ONCE AND §IV HAS NO WORD FOR BOTH.** It is `TOLKIEN_PRIMARY_POSTHUMOUS` -- his writing, first printed in 1977, four years after his death -- and it is `CHRISTOPHER_TOLKIEN_EDITORIAL`, the paradigm case of the §I.3 category *Christopher Tolkien's editorial selections and arrangements*. C488 forbids averaging a volume that cannot take one value and C517 forbids choosing the likelier one; so this is null, and what would settle it is a reader opening the chapter and declaring the sentence, per C548. NULL, NEVER AVERAGED. WHAT WOULD SETTLE IT: a reader opening the locus in `src` and declaring the sentence, on C548's mechanism."
     }
    ],
    "n_readings": 2,
@@ -1055,6 +1489,12 @@
    },
    "declines_to_choose": false,
    "adjudication": null,
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "lost_tales",
+    "silm77"
+   ],
    "why_no_adjudication": "No ruling names it. Recorded because Sauron's own early history is a variant chain, not a biography, and a reader who meets Tevildo in a footnote should be able to find out what he is."
   },
   {
@@ -1070,7 +1510,13 @@
      "text": "use it to help him kill the wretched creature at a disadvantage. In the",
      "witness": "The Lord of the Rings, Prologue 4",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "lotr_narr"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Prologue. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_PUBLISHED",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Lord of the Rings, the narrative and Prologue is TOLKIEN_PRIMARY_PUBLISHED, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "Gollum promised him a present and could not find it",
@@ -1080,7 +1526,13 @@
      "text": "it to his companions. To them his account was that Gollum had",
      "witness": "The Lord of the Rings, Prologue 4",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "lotr_narr"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Prologue. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_PUBLISHED",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Lord of the Rings, the narrative and Prologue is TOLKIEN_PRIMARY_PUBLISHED, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "Gollum showed him the way out",
@@ -1090,7 +1542,13 @@
      "text": "striking examples, in this original version of the story Gollum does not try",
      "witness": "John Rateliff, The History of The Hobbit",
      "tier": 2,
-     "conf": "EXT"
+     "conf": "EXT",
+     "tradition": [
+      "rateliff_hoh"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- John Rateliff, The History of The Hobbit. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "SCHOLARLY_INTERPRETATION",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: John D. Rateliff, The History of The Hobbit is SCHOLARLY_INTERPRETATION, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 3,
@@ -1116,7 +1574,13 @@
     "where": "The Lord of the Rings, Prologue, 'Of the Finding of the Ring'",
     "reads": "The Prologue names the first account a false one told by Bilbo, and keeps it in the book as such -- the author designating a canonical reading without deleting the variant.",
     "ruling_id_note": "This is the clean case of the DESIGNATION half of the owner's rule of 16 August, ratified at C366 -- the clause about the form Tolkien or his son said to be canon. Here Tolkien said."
-   }
+   },
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "lotr_narr",
+    "rateliff_hoh"
+   ]
   },
   {
    "id": "galadriel-ban",
@@ -1131,7 +1595,13 @@
      "text": "Noldor, and she longed for news of her kin and for the blessed land of her birth, and yet",
      "witness": "The Elessar, UT (the manuscript reading)",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "elessar"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Elessar. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Elessar (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "not permitted yet to forsake Middle-earth",
@@ -1141,7 +1611,13 @@
      "text": "was unwilling to forsake Middle-earth [this sentence was changed to read: but was not",
      "witness": "The Elessar, UT (the emendation)",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "elessar"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Elessar. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Elessar (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
      "n": "Christopher Tolkien on the sequence",
@@ -1151,7 +1627,13 @@
      "text": "being unwilling to forsake Middle-earth (cf. p. 302) – though the text was later emended and the",
      "witness": "Christopher Tolkien's commentary, UT",
      "tier": 1,
-     "conf": "C"
+     "conf": "C",
+     "tradition": [
+      "ct_apparatus"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Christopher Tolkien's commentary. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "CHRISTOPHER_TOLKIEN_EDITORIAL",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Christopher Tolkien's editorial apparatus -- commentary, notes and indexes is CHRISTOPHER_TOLKIEN_EDITORIAL, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     }
    ],
    "n_readings": 3,
@@ -1170,6 +1652,12 @@
    },
    "declines_to_choose": false,
    "adjudication": null,
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "ct_apparatus",
+    "elessar"
+   ],
    "also_in": {
     "dataset": "site/arda_contradictions.json",
     "subject": "The history of Galadriel and Celeborn entire",
