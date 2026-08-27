@@ -497,7 +497,6 @@ html{background:#efe6cd}
 :root[data-theme="dark"] .ho{color:#e0c07a !important}
 :root[data-theme="dark"] .da{color:#d69a92 !important}
 :root[data-theme="dark"] .gl{color:#e0cf9a !important}
-/* CODEX-STAGE-4-END */
 /* LIGHT-CONTRAST-BEGIN */
 /* THE MUTED INK, FIXED ONCE AT THE VARIABLE. `--mut:#7a6a50` is declared on 36 of 39 halls and
    fails on every parchment ground: 4.03:1 on #ebe1c8, 4.21 on #efe6cd, 4.49 on #f5edd8. Fixing it
