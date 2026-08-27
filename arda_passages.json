@@ -4,7 +4,7 @@
  "why_null_is_most_of_it": "content_tier is settled by an INSTRUMENT or it is null. map/ardatext.py settles a verbatim span (the tier is the witness's own prefix) and the verification result settles an unattested attribution as t4. Everything else ranks by the authority of the HAND that wrote it, which is a reading C499 asks a person to make. Filling it from the container's source_tier -- which sits one table away -- is the exact bug the ruling names, so it is left null with a basis saying so.",
  "licence": "Every container names its hand, its URL, its retrieval time, its content hash and the licence AS THE PAGE STATES IT, quoted and never interpreted (C498 (1)). A page with no notice carries null, not 'all rights reserved'. The passage `text` is the source's wording and the marks in it are the source's marks; map/quoted_check.py is directed past that field BY NAME and the exemption is paid for by map/passages_check.py, which re-runs map/ardatext.py over every span this file calls verbatim.",
  "generator": "map/gen_passages.py",
- "generated": "2026-08-27T07:24:11Z",
+ "generated": "2026-08-27T07:31:09Z",
  "segmenter_version": 1,
  "floor_words": 7,
  "floor_source": "quoted_check.MINWORDS",
@@ -2155,7 +2155,7 @@
     "witness_line": 10983,
     "result": "verified",
     "reason": null,
-    "witness_context": "  Bingo himself, after the first shock of loss and change, rather\nenjoyed being his own master, and the Mr Baggins of Bag-end.\n",
+    "witness_context": "'No/ said Gandalf; 'but I can - now. The writing says:\n      One Ring to rule them all, One Ring to find them,\n      One Ring to bring them all, and in the darkness bind them.™",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -4345,7 +4345,7 @@
     "witness_line": 10983,
     "result": "verified",
     "reason": null,
-    "witness_context": "  Bingo himself, after the first shock of loss and change, rather\nenjoyed being his own master, and the Mr Baggins of Bag-end.\n",
+    "witness_context": "'No/ said Gandalf; 'but I can - now. The writing says:\n      One Ring to rule them all, One Ring to find them,\n      One Ring to bring them all, and in the darkness bind them.™",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -4429,7 +4429,7 @@
     "witness_line": 8156,
     "result": "verified",
     "reason": null,
-    "witness_context": "in this: I don’t see why you should warn us to take care, and yet ask\nus to take you on trust. Why the disguise? Who are you? What do\nyou really know about – about my business; and how do you know",
+    "witness_context": "               All that is gold does not glitter,\n                  Not all those who wander are lost;\n               The old that is strong does not wither,",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -4471,7 +4471,7 @@
     "witness_line": 8156,
     "result": "verified",
     "reason": null,
-    "witness_context": "in this: I don’t see why you should warn us to take care, and yet ask\nus to take you on trust. Why the disguise? Who are you? What do\nyou really know about – about my business; and how do you know",
+    "witness_context": "               All that is gold does not glitter,\n                  Not all those who wander are lost;\n               The old that is strong does not wither,",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -4683,7 +4683,7 @@
     "witness_line": 15965,
     "result": "verified",
     "reason": null,
-    "witness_context": "is long and sad, for it tells how sorrow came upon Lothlórien, Lórien\nof the Blossom, when the Dwarves awakened evil in the mountains.’\n    ‘But the Dwarves did not make the evil,’ said Gimli.",
+    "witness_context": "it.’\n     ‘Not even to see fair Lothlórien?’ said Haldir. ‘The world is indeed\n\f                                 ´ RIEN",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -4725,7 +4725,7 @@
     "witness_line": 15965,
     "result": "verified",
     "reason": null,
-    "witness_context": "is long and sad, for it tells how sorrow came upon Lothlórien, Lórien\nof the Blossom, when the Dwarves awakened evil in the mountains.’\n    ‘But the Dwarves did not make the evil,’ said Gimli.",
+    "witness_context": "it.’\n     ‘Not even to see fair Lothlórien?’ said Haldir. ‘The world is indeed\n\f                                 ´ RIEN",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -9167,7 +9167,7 @@
     "witness_line": 11222,
     "result": "verified",
     "reason": null,
-    "witness_context": "                  on high above the mists he came,\n                  a distant ﬂame before the Sun,\n                  a wonder ere the waking dawn",
+    "witness_context": "though I have not called you to me, strangers from distant lands.\nYou have come and are here met, in this very nick of time, by chance\nas it may seem. Yet it is not so. Believe rather that it is so ordered",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -9209,7 +9209,7 @@
     "witness_line": 11222,
     "result": "verified",
     "reason": null,
-    "witness_context": "                  on high above the mists he came,\n                  a distant ﬂame before the Sun,\n                  a wonder ere the waking dawn",
+    "witness_context": "though I have not called you to me, strangers from distant lands.\nYou have come and are here met, in this very nick of time, by chance\nas it may seem. Yet it is not so. Believe rather that it is so ordered",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -13323,7 +13323,7 @@
     "witness_line": 17273,
     "result": "verified",
     "reason": null,
-    "witness_context": "it is folly to go without force into his domain; and folly to throw\naway.’ He paused suddenly, as if he had become aware that he was\nspeaking his thoughts aloud. ‘It would be folly to throw lives away,",
+    "witness_context": "on Middle-earth.\n                 Ai! laurië lantar lassi súrinen,\n                 yéni únótimë ve rámar aldaron!",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -13405,7 +13405,7 @@
     "witness_line": 17281,
     "result": "verified",
     "reason": null,
-    "witness_context": "from his ﬁnal words. It would be folly to throw away: what? The\nRing of Power? He had said something like this at the Council, but\nthen he had accepted the correction of Elrond. Frodo looked at",
+    "witness_context": "                 Sı́ man i yulma nin enquantuva?\n                 An sı́ Tintallë Varda Oiolossëo\n                 ve fanyar máryat Elentári ortanë,",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -13609,7 +13609,7 @@
     "witness_line": 17298,
     "result": "verified",
     "reason": null,
-    "witness_context": "    ‘No more, no more!’ cried the Elves laughing. ‘You have eaten\nenough already for a long day’s march.’\n    ‘I thought it was only a kind of cram, such as the Dale-men make",
+    "witness_context": "of Varda wherein the stars tremble in the song of her voice, holy and\nqueenly. Who now shall reﬁll the cup for me? For now the Kindler,\nVarda, the Queen of the Stars, from Mount Everwhite has uplifted",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -14143,7 +14143,7 @@
     "witness_line": 54,
     "result": "verified",
     "reason": null,
-    "witness_context": "                      Source: http://at.mansbjorkman.net/sarati.htm\n\n",
+    "witness_context": "\n                                Tolkien's books in various languages\n                                Books about Tolkien's invented languages",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -14230,7 +14230,7 @@
     "witness_line": 72,
     "result": "verified",
     "reason": null,
-    "witness_context": "\n                     Sarati typewriter, by Ethan Deneault\n                     http://www.steelangel.com/Sarati/SaratiMacros_v1.zip",
+    "witness_context": "\n                      Tolkien's alphabets and languages: Cirth | Sarati | Tengwar for Quenya | Tengwar for\n                      Sindarin | Uruk Runes | Links | Books about Tolkien's languages | Tolkien's books",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -14441,7 +14441,7 @@
     "witness_line": 96,
     "result": "verified",
     "reason": null,
-    "witness_context": "\n\n                     If you like this site and find it useful, you can support it by making a donation via PayPal or",
+    "witness_context": "                     Patreon, or by contributing in other ways. Omniglot is how I make my living.\n\f                        Note: all links on this site to Amazon.com, Amazon.co.uk and Amazon.fr are affiliate links.\n                        This means I earn a commission if you click on any of them and buy something. So by",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -15996,7 +15996,7 @@
     "witness_line": 131,
     "result": "verified",
     "reason": null,
-    "witness_context": "                Links Book store Gallery Puzzles FAQs About Sitemap Search Contact Media Contribute Advertising\n\n",
+    "witness_context": "\n                               Copyright © 1998–2026 Simon Ager | Email:                              | Hosted by Kualo\n\f",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -18320,7 +18320,7 @@
     "witness_line": 399,
     "result": "verified",
     "reason": null,
-    "witness_context": "\nThanks to Jessica for the above award!",
+    "witness_context": "\nThanks to Jessica for the above award!\n",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -18615,7 +18615,7 @@
     "witness_line": 2108,
     "result": "verified",
     "reason": null,
-    "witness_context": "                                                                  ported by archaeological evidence and extant textual evi-\n                                                                  dence alike. The split between textual and physical histories\n                                                                  in that story comes at a moment in the fifteenth century",
+    "witness_context": "Guide for Authors\nThe following list describes the different types of material Mallorn usually accepts. If your submission does not meet\nthis criteria, feel free to send a letter of inquiry.",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -20070,7 +20070,7 @@
     "witness_line": 7266,
     "result": "verified",
     "reason": null,
-    "witness_context": "thirteen-minute talk on Beowulf and other Old English poetry, Anglo-\nSaxon Verse, in the BBC radio series Poetry Will Out.\n",
+    "witness_context": "fig. 48). These words are derived from a passage in Beowulf, ‘ða wæs\nhrinȝboȝan heorte ȝefysed / saecce tó séceanne’ (‘now was the heart of the\ncoiling beast stirred to come out to fight’). In May 1928, also in The Book",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -20772,7 +20772,7 @@
     "witness_line": 2829,
     "result": "verified",
     "reason": null,
-    "witness_context": "   ‘No,’ said Frodo. ‘There are none. It is quite plain, and it never\nshows a scratch or sign of wear.’\n   ‘Well then, look!’ To Frodo’s astonishment and distress the wizard",
+    "witness_context": "    ‘So do I,’ said Gandalf, ‘and so do all who live to see such times.\nBut that is not for them to decide. All we have to decide is what to\ndo with the time that is given us. And already, Frodo, our time is",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -20814,7 +20814,7 @@
     "witness_line": 2829,
     "result": "verified",
     "reason": null,
-    "witness_context": "   ‘No,’ said Frodo. ‘There are none. It is quite plain, and it never\nshows a scratch or sign of wear.’\n   ‘Well then, look!’ To Frodo’s astonishment and distress the wizard",
+    "witness_context": "    ‘So do I,’ said Gandalf, ‘and so do all who live to see such times.\nBut that is not for them to decide. All we have to decide is what to\ndo with the time that is given us. And already, Frodo, our time is",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -22276,7 +22276,7 @@
     "witness_line": 38,
     "result": "verified",
     "reason": null,
-    "witness_context": "CHAPTER I: AN UNEXPECTED PARTY\nCHAPTER II: ROAST MUTTON\nCHAPTER III: A SHORT REST",
+    "witness_context": "CHAPTER V: RIDDLES IN THE DARK\nCHAPTER VI: OUT OF THE FRYING-PAN INTO THE FIRE\nCHAPTER VII: QUEER LODGINGS",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -45438,7 +45438,7 @@
     "witness_line": 58,
     "result": "verified",
     "reason": null,
-    "witness_context": "                                Books about Tolkien's invented languages\n\n                      Links",
+    "witness_context": "                      Links\n                      Information about Sarati (includes a free font)\n                      http://at.mansbjorkman.net/sarati.htm",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -45483,7 +45483,7 @@
     "witness_line": 61,
     "result": "verified",
     "reason": null,
-    "witness_context": "                      Information about Sarati (includes a free font)\n                      http://at.mansbjorkman.net/sarati.htm\n",
+    "witness_context": "\n                      Information on how Sarati can be used to write Quenya\n                      http://www.elvish.org/gwaith/sarati.htm",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -45568,7 +45568,7 @@
     "witness_line": 66,
     "result": "verified",
     "reason": null,
-    "witness_context": "\n                      Tolkien's Middle-earth alphabets, by Dan Smith\n                      http://ring-lord.tripod.com/alpha.html",
+    "witness_context": "                      http://ring-lord.tripod.com/alpha.html\n\f                     Hebrew modes for Sarati, by Yehuda Ronen\n                     http://my.ort.org.il/tolkien/gandalf/ps/sarati.ps.gz",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -46421,7 +46421,7 @@
     "witness_line": 72,
     "result": "verified",
     "reason": null,
-    "witness_context": "\n                     Sarati typewriter, by Ethan Deneault\n                     http://www.steelangel.com/Sarati/SaratiMacros_v1.zip",
+    "witness_context": "\n                      Tolkien's alphabets and languages: Cirth | Sarati | Tengwar for Quenya | Tengwar for\n                      Sindarin | Uruk Runes | Links | Books about Tolkien's languages | Tolkien's books",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -46834,7 +46834,7 @@
     "witness_line": 96,
     "result": "verified",
     "reason": null,
-    "witness_context": "\n\n                     If you like this site and find it useful, you can support it by making a donation via PayPal or",
+    "witness_context": "                     Patreon, or by contributing in other ways. Omniglot is how I make my living.\n\f                        Note: all links on this site to Amazon.com, Amazon.co.uk and Amazon.fr are affiliate links.\n                        This means I earn a commission if you click on any of them and buy something. So by",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -48389,7 +48389,7 @@
     "witness_line": 131,
     "result": "verified",
     "reason": null,
-    "witness_context": "                Links Book store Gallery Puzzles FAQs About Sitemap Search Contact Media Contribute Advertising\n\n",
+    "witness_context": "\n                               Copyright © 1998–2026 Simon Ager | Email:                              | Hosted by Kualo\n\f",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -55734,7 +55734,7 @@
     "witness_line": 10963,
     "result": "verified",
     "reason": null,
-    "witness_context": "    On the form Maelor for Maglor see X.182, §41. The reference in the first of these notes to the\n    wife of Finrod Felagund is notable, since long before, in the Grey Annals, the story had emerged\n    that Felagund had no wife, and that ‘she whom he had loved was Amárië of the Vanyar, and she",
+    "witness_context": "57   [‘Nowhere else in the world was this peculiar (but excellent) arrangement to be found’: opening\n     of the chapter At the Sign of the Prancing Pony. This observation is here attributed to Bilbo as\n     the ultimate author of the Red Book of Westmarch.]",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -55944,7 +55944,7 @@
     "witness_line": 1937,
     "result": "verified",
     "reason": null,
-    "witness_context": "   Harry wished they had, for it might have satisfied these riders\nif he could have said yes. There was a threat in the cold voice;\nbut he dared not risk a yes that was not true. 'No sir!' he said in",
+    "witness_context": "\n            Chapter X: 'At the Sign of the Prancing Pony (ii)\n                    All that is gold does not glitter'",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -55986,7 +55986,7 @@
     "witness_line": 750,
     "result": "verified",
     "reason": null,
-    "witness_context": "Alboin Errol (V) 36-53, 56-7, 75-7, 104, 180, 203, 243\nAlboin the Lombard (V) 7, 37, 53-5; called Ælfwine 38, 55, 91\nAlboin the Lombard (IXb) 284; Album 236; Ælfwine 236, 276",
+    "witness_context": "Alkorin (V) =Ilkorin. 200, 349, 367\nA ll that is gold does not glitter (VII) 49-50, 52, 77-8, 80, 137, 146\nAllen and Unwin (V) 8, 57, 73, 78, 97, 107, 293; Stanley Unwin 8,",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -56028,7 +56028,7 @@
     "witness_line": 7817,
     "result": "verified",
     "reason": null,
-    "witness_context": "                now sawing in the middle.\n\n              The landlord keeps a little dog",
+    "witness_context": "willing.’\n   ‘Certainly!’ said Frodo; but his heart sank. He wondered how\nmany private talks he would have before he got to bed, and what",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -60096,7 +60096,7 @@
     "witness_line": 10963,
     "result": "verified",
     "reason": null,
-    "witness_context": "    On the form Maelor for Maglor see X.182, §41. The reference in the first of these notes to the\n    wife of Finrod Felagund is notable, since long before, in the Grey Annals, the story had emerged\n    that Felagund had no wife, and that ‘she whom he had loved was Amárië of the Vanyar, and she",
+    "witness_context": "57   [‘Nowhere else in the world was this peculiar (but excellent) arrangement to be found’: opening\n     of the chapter At the Sign of the Prancing Pony. This observation is here attributed to Bilbo as\n     the ultimate author of the Red Book of Westmarch.]",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -62784,7 +62784,7 @@
     "witness_line": 10963,
     "result": "verified",
     "reason": null,
-    "witness_context": "    On the form Maelor for Maglor see X.182, §41. The reference in the first of these notes to the\n    wife of Finrod Felagund is notable, since long before, in the Grey Annals, the story had emerged\n    that Felagund had no wife, and that ‘she whom he had loved was Amárië of the Vanyar, and she",
+    "witness_context": "57   [‘Nowhere else in the world was this peculiar (but excellent) arrangement to be found’: opening\n     of the chapter At the Sign of the Prancing Pony. This observation is here attributed to Bilbo as\n     the ultimate author of the Red Book of Westmarch.]",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -84410,7 +84410,7 @@
     "witness_line": 4551,
     "result": "verified",
     "reason": null,
-    "witness_context": "   Both of the brief time-schemes of which the beginnings are given on p. 100\nexpress precisely this chronology. Scheme B was written, apparently, when\nthe story had already reached the departure from Henneth Annûn, but A",
+    "witness_context": "'The Gates of the Land of Shadow' (the title my father used in his letter\nof 23 April), and then to 'Kirith Gorgor: The Black gate is Closed'. At\nsome stage, for some reason, he made a further manuscript of the chapter",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -84452,7 +84452,7 @@
     "witness_line": 4550,
     "result": "verified",
     "reason": null,
-    "witness_context": "\n   Both of the brief time-schemes of which the beginnings are given on p. 100\nexpress precisely this chronology. Scheme B was written, apparently, when",
+    "witness_context": "and here again the first title given to it was 'Kirith Ungol', changed to\n'The Gates of the Land of Shadow' (the title my father used in his letter\nof 23 April), and then to 'Kirith Gorgor: The Black gate is Closed'. At",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -85376,7 +85376,7 @@
     "witness_line": 31149,
     "result": "verified",
     "reason": null,
-    "witness_context": "the food and wine had put him at his ease, he had not lost all his\ncaution. Sam was beaming and humming to himself, but when Frodo\nspoke he was at ﬁrst content to listen, only occasionally venturing to",
+    "witness_context": "lidless eyes. Do not go that way!’\n    ‘But where else will you direct me?’ said Frodo. ‘You cannot\nyourself, you say, guide me to the mountains, nor over them. But over",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -85586,7 +85586,7 @@
     "witness_line": 31558,
     "result": "verified",
     "reason": null,
-    "witness_context": "save by a feathered shaft?’\n   ‘Let me go down quietly to him,’ said Frodo. ‘You may keep your\nbows bent, and shoot me at least, if I fail. I shall not run away.’",
+    "witness_context": "   Standing there for a moment ﬁlled with dread Frodo became aware\nthat a light was shining; he saw it glowing on Sam’s face beside him.\nTurning towards it, he saw, beyond an arch of boughs, the road to",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -85962,7 +85962,7 @@
     "witness_line": 32633,
     "result": "verified",
     "reason": null,
-    "witness_context": "again they began to climb. It was a long and weary ascent; but this\nstairway did not delve into the mountain-side. Here the huge cliff-face\nsloped backwards, and the path like a snake wound to and fro across",
+    "witness_context": "wards.\n    Not expecting even this simple trick from Sam, Gollum fell over\nwith Sam on top, and he received the weight of the sturdy hobbit in",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -92556,7 +92556,7 @@
     "witness_line": 10835,
     "result": "verified",
     "reason": null,
-    "witness_context": "     the configuration described in RK is present, with the Great Gate facing\n     east, the second gate south-east, the third north-east, and so on up to the\n     entrance to the Citadel, again facing east. On this page of the draft",
+    "witness_context": "narrative.\nThe title of the chapter as typed was: Book V Chapter XLIV: Peregrin\nenters the service of the Lord of Minas Tirith. For the most part the",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -100450,7 +100450,7 @@
     "witness_line": 35380,
     "result": "verified",
     "reason": null,
-    "witness_context": "Supposing the king’s small escort was trapped and overcome, but he\nescaped into the darkness – alone in the wild ﬁelds of Rohan with\nno idea of where he was in all the endless miles? ‘No good!’ he",
+    "witness_context": "precipices wreathed with mist. He sat for a moment half dreaming,\nlistening to the noise of water, the whisper of dark trees, the crack\nof stone, and the vast waiting silence that brooded behind all sound.",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -102424,7 +102424,7 @@
     "witness_line": 39528,
     "result": "verified",
     "reason": null,
-    "witness_context": "I am but the Captain of the Dúnedain of Arnor; and the Lord of\nDol Amroth shall rule the City until Faramir awakes. But it is my\ncounsel that Gandalf should rule us all in the days that follow and",
+    "witness_context": "\n    This then was the end of the debate of the lords: that they should\nset forth on the second morning from that day with seven thousands,",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -118212,7 +118212,7 @@
     "witness_line": 1189,
     "result": "verified",
     "reason": null,
-    "witness_context": "something of their old character and power (if already diminished) is still\nglimpsed; these are the Nauglir9 of old, in whose hearts still smouldered the\nancient fires and the embers of their grudge against the Elves; and to mark",
+    "witness_context": "and this is why I place it at the beginning of this account of the evolution of\nwhat came to be ‘Appendix F’, The Languages and Peoples of the Third\nAge. Since I shall number the texts of this Appendix from ‘F 1’, it is",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -118422,7 +118422,7 @@
     "witness_line": 1189,
     "result": "verified",
     "reason": null,
-    "witness_context": "something of their old character and power (if already diminished) is still\nglimpsed; these are the Nauglir9 of old, in whose hearts still smouldered the\nancient fires and the embers of their grudge against the Elves; and to mark",
+    "witness_context": "and this is why I place it at the beginning of this account of the evolution of\nwhat came to be ‘Appendix F’, The Languages and Peoples of the Third\nAge. Since I shall number the texts of this Appendix from ‘F 1’, it is",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -144790,7 +144790,7 @@
     "witness_line": 4286,
     "result": "verified",
     "reason": null,
-    "witness_context": "                                                                                                                         to\ngentler course of the lane he had been aiming for.                  It is     illustrations for the Houghton Mifflin Hobbit, as his\n",
+    "witness_context": "their edition; Houghton Mifflin chose to print all except             Bagshot Row, and the brightly-coloured flowers in the\nBilbo Comes to the Huts of the Raft-elves, and without                mill garden suggest a cheerful spring day far better than\n                                                                20",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -145000,7 +145000,7 @@
     "witness_line": 4286,
     "result": "verified",
     "reason": null,
-    "witness_context": "                                                                                                                         to\ngentler course of the lane he had been aiming for.                  It is     illustrations for the Houghton Mifflin Hobbit, as his\n",
+    "witness_context": "their edition; Houghton Mifflin chose to print all except             Bagshot Row, and the brightly-coloured flowers in the\nBilbo Comes to the Huts of the Raft-elves, and without                mill garden suggest a cheerful spring day far better than\n                                                                20",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -151750,7 +151750,7 @@
     "witness_line": 4286,
     "result": "verified",
     "reason": null,
-    "witness_context": "                                                                                                                         to\ngentler course of the lane he had been aiming for.                  It is     illustrations for the Houghton Mifflin Hobbit, as his\n",
+    "witness_context": "their edition; Houghton Mifflin chose to print all except             Bagshot Row, and the brightly-coloured flowers in the\nBilbo Comes to the Huts of the Raft-elves, and without                mill garden suggest a cheerful spring day far better than\n                                                                20",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -176646,7 +176646,7 @@
     "witness_line": 5333,
     "result": "verified",
     "reason": null,
-    "witness_context": "\n                   ABBREVIATIONS\n",
+    "witness_context": "  together with The Poetic and Mythologic Words of Eldarissa’, edited by\n  Christopher Gilson, Carl F. Hostetter, Patrick Wynne and Arden R.\n  Smith, Parma Eldalamberon, 12, pp. 1–112 (PE 12).",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
@@ -181892,7 +181892,7 @@
     "witness_line": 665,
     "result": "verified",
     "reason": null,
-    "witness_context": "    Houghton Mifflin, 2004)\n\nFoucault, Michel, ‘The Eye of Power: A Conversation with Jean-Pierre Barou and",
+    "witness_context": "Kelly, Steven, ‘Breaking the Dragon's Gaze: Commodity Fetishism in Tolkien's\n     Middle- Earth’, Mythlore: A Journal of J.R.R. Tolkien, C.S. Lewis, Charles\n     Williams, and Mythopoeic Literature, 34 (2016), 113–30.",
     "witness_context_is": "the witness line and one line either side, verbatim from the corpus file. It is EVIDENCE FOR A READER, not a second judgement: nothing in this generator reads it."
    },
    "use_checked": false,
