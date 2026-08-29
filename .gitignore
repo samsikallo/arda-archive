@@ -38,6 +38,14 @@ corpus/
 # written beside the real ones. They are removed on a clean run and survive a crash or
 # an interrupted suite, which is exactly when someone is most likely to stage broadly.
 _*.html
+# ONE EXCEPTION, AND IT IS A RULING -- C632, 29 August 2026.
+# C628 kept the four rejected typefaces "as the evaluation record, the specimen page
+# included". The fonts are tracked; this page was caught by the rule above and had NO
+# history in this repository at all -- so the record his ruling named was the one part of
+# it with no copy that survives a clone or a restore. The Auditor established it
+# independently (ls-files pathspec failure; check-ignore .gitignore:40; log --all empty).
+# An ignored file is not a record, so this negation exists to make the ruling true.
+!_typeface_specimen.html
 
 # ---- ordinary noise ------------------------------------------------------------------
 *.pyc
