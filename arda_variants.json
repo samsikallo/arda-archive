@@ -129,7 +129,7 @@
    "kind": "draft evolution",
    "readings": [
     {
-     "n": "son of Fingon",
+     "name": "son of Fingon",
      "says": "The published Silmarillion makes him Fingon's son, sent to the Havens by his father after the Dagor Bragollach.",
      "q": "Ereinion Gil-galad son of Fingon was named High King of the Noldor in Middle-earth",
      "src": "t1_a_the_silmarillion.txt:11467",
@@ -145,7 +145,7 @@
      "publication_layer_basis": "**IT TAKES TWO OF THE NINETEEN AT ONCE AND §IV HAS NO WORD FOR BOTH.** It is `TOLKIEN_PRIMARY_POSTHUMOUS` -- his writing, first printed in 1977, four years after his death -- and it is `CHRISTOPHER_TOLKIEN_EDITORIAL`, the paradigm case of the §I.3 category *Christopher Tolkien's editorial selections and arrangements*. C488 forbids averaging a volume that cannot take one value and C517 forbids choosing the likelier one; so this is null, and what would settle it is a reader opening the chapter and declaring the sentence, per C548. NULL, NEVER AVERAGED. WHAT WOULD SETTLE IT: a reader opening the locus in `src` and declaring the sentence, on C548's mechanism."
     },
     {
-     "n": "son of Fingon (the published index)",
+     "name": "son of Fingon (the published index)",
      "says": "Tolkien's own published index repeats the Fingon descent under Ereinion, which is why the archive does not correct it there.",
      "q": "the son of Fingon, known always by his surname Gil-galad",
      "src": "t1_a_the_silmarillion.txt:14567",
@@ -161,7 +161,7 @@
      "publication_layer_basis": "**IT TAKES TWO OF THE NINETEEN AT ONCE AND §IV HAS NO WORD FOR BOTH.** It is `TOLKIEN_PRIMARY_POSTHUMOUS` -- his writing, first printed in 1977, four years after his death -- and it is `CHRISTOPHER_TOLKIEN_EDITORIAL`, the paradigm case of the §I.3 category *Christopher Tolkien's editorial selections and arrangements*. C488 forbids averaging a volume that cannot take one value and C517 forbids choosing the likelier one; so this is null, and what would settle it is a reader opening the chapter and declaring the sentence, per C548. NULL, NEVER AVERAGED. WHAT WOULD SETTLE IT: a reader opening the locus in `src` and declaring the sentence, on C548's mechanism."
     },
     {
-     "n": "son of Felagund",
+     "name": "son of Felagund",
      "says": "A Second Age Tale of Years draft makes him the son of Felagund -- that is, of Finrod under his older name.",
      "q": "This was ruled by Gil-galad son of Felagund",
      "src": "t1_12_the_peoples_of_middle_earth.txt:5690",
@@ -177,7 +177,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Tale of Years of the Second Age (T 2), PoME is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "brother of Galadriel, emended to son of Felagund",
+     "name": "brother of Galadriel, emended to son of Felagund",
      "says": "The same draft first makes Galadriel his SISTER, then emends the phrase in the manuscript to 'sister of Felagund Gil-galad's sire'.",
      "q": "the Lady Galadriel of the Noldor, sister of Gil-galad",
      "src": "t1_12_the_peoples_of_middle_earth.txt:5711",
@@ -193,7 +193,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Tale of Years of the Second Age (T 2), PoME is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "son of Orodreth",
+     "name": "son of Orodreth",
      "says": "A note Christopher dates to August 1965 finds him in 'the son of Orodreth', Orodreth being himself moved to son of Angrod.",
      "q": "the best solution to the problem of Gil-galad's parentage was to find him in",
      "src": "t1_12_the_peoples_of_middle_earth.txt:11652",
@@ -209,7 +209,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Shibboleth of Fëanor (PoME) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "son of Arothir, nephew of Finrod",
+     "name": "son of Arothir, nephew of Finrod",
      "says": "The last state of the genealogies renames Orodreth to Arothir and states the descent in that form.",
      "q": "the son of Arothir, nephew of Finrod",
      "src": "t1_12_the_peoples_of_middle_earth.txt:11668",
@@ -272,7 +272,7 @@
    "kind": "editorial choice vs manuscript",
    "readings": [
     {
-     "n": "brother of Finrod, son of Finarfin",
+     "name": "brother of Finrod, son of Finarfin",
      "says": "The Grey Annals hold him a brother of Inglor -- Finrod under his older name -- and so a son of Finarfin.",
      "q": "Orodreth the brother of Inglor who",
      "src": "t1_11_the_war_of_the_jewels.txt:2149",
@@ -288,7 +288,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Grey Annals is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "son of Angrod, of the next generation",
+     "name": "son of Angrod, of the next generation",
      "says": "The Shibboleth moves him down a generation and makes him Angrod's son, Finrod's nephew.",
      "q": "to become, still in the same generation, the son of",
      "src": "t1_12_the_peoples_of_middle_earth.txt:11647",
@@ -304,7 +304,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Shibboleth of Fëanor (PoME) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "never carried into the published narratives",
+     "name": "never carried into the published narratives",
      "says": "Christopher records the displacement AND records that it never reached the Silmarillion narratives, which is why the published text and the late manuscripts disagree about a living relationship.",
      "q": "my father displaced the second King of Nargothrond and made him a member of the same family in the next generation",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:8110",
@@ -359,7 +359,7 @@
    "kind": "draft evolution",
    "readings": [
     {
-     "n": "slain at the Third Kinslaying",
+     "name": "slain at the Third Kinslaying",
      "says": "The published text keeps both twins alive until the sack of the Havens of Sirion, where both are slain.",
      "q": "though they alone remained thereafter of the sons of Feanor, for both Amrod and Amras were slain",
      "src": "t1_a_the_silmarillion.txt:11556",
@@ -375,7 +375,7 @@
      "publication_layer_basis": "**IT TAKES TWO OF THE NINETEEN AT ONCE AND §IV HAS NO WORD FOR BOTH.** It is `TOLKIEN_PRIMARY_POSTHUMOUS` -- his writing, first printed in 1977, four years after his death -- and it is `CHRISTOPHER_TOLKIEN_EDITORIAL`, the paradigm case of the §I.3 category *Christopher Tolkien's editorial selections and arrangements*. C488 forbids averaging a volume that cannot take one value and C517 forbids choosing the likelier one; so this is null, and what would settle it is a reader opening the chapter and declaring the sentence, per C548. NULL, NEVER AVERAGED. WHAT WOULD SETTLE IT: a reader opening the locus in `src` and declaring the sentence, on C548's mechanism."
     },
     {
-     "n": "burned in the ships at Losgar",
+     "name": "burned in the ships at Losgar",
      "says": "The Shibboleth tells the sinister story of the twins: one sleeps aboard, and Feanor burns that ship first.",
      "q": "In the morning the host was mustered, but of",
      "src": "t1_12_the_peoples_of_middle_earth.txt:11788",
@@ -391,7 +391,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Shibboleth of Fëanor (PoME) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "burned with the ships (the genealogical note)",
+     "name": "burned with the ships (the genealogical note)",
      "says": "A second, separate note in the same volume states the Losgar death as settled fact in passing.",
      "q": "also the two youngest (twins, of whom one was by evil mischance burned with the ships)",
      "src": "t1_12_the_peoples_of_middle_earth.txt:10659",
@@ -445,7 +445,7 @@
    "kind": "unreconciled / intentional ambiguity",
    "readings": [
     {
-     "n": "ten Sun Years",
+     "name": "ten Sun Years",
      "says": "The Annals' own scheme of 700 times of sunlight and moonlight yields a Valian Year of exactly ten Sun Years.",
      "q": "thus 1 Valian Year would = 10 Sun Years",
      "src": "t1_10_morgoths_ring.txt:2337",
@@ -462,7 +462,7 @@
      "publication_layer_basis": "THIS WITNESS NAMES 2 TEXTS AND THEY DISAGREE ON THE LAYER (CHRISTOPHER_TOLKIEN_EDITORIAL, TOLKIEN_PRIMARY_POSTHUMOUS). Not averaged and not resolved by precedence: Christopher Tolkien's editorial apparatus -- commentary, notes and indexes = CHRISTOPHER_TOLKIEN_EDITORIAL; The Annals of Aman = TOLKIEN_PRIMARY_POSTHUMOUS."
     },
     {
-     "n": "47,901 of our years to 5,000 Valian Years",
+     "name": "47,901 of our years to 5,000 Valian Years",
      "says": "Tolkien's own arithmetic inside the Annals does NOT use ten: 5,000 V.Y. is given as 47,901 of our years, which is a Valian Year of about 9.58 -- the ratio a true solar year of 365.25 days produces.",
      "q": "five thousand Valian Years ere the first rising of the Moon, which is as much as to say",
      "src": "t1_10_morgoths_ring.txt:1997",
@@ -478,7 +478,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Annals of Aman is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "144 mortal years",
+     "name": "144 mortal years",
      "says": "The late time-schemes make the Valian Year the Elvish yen: 144 days of 144 mortal years each.",
      "q": "But each Valian Year = 144 Mortal Years",
      "src": "t2_i_the_nature_of_middle_earth.txt:591",
@@ -494,7 +494,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Nature of Middle-earth is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "variously 100 or 144",
+     "name": "variously 100 or 144",
      "says": "The volume's own abbreviation list refuses to fix the value -- the source declining to choose, in a list of abbreviations, which is as plain a refusal as a source ever makes.",
      "q": "Valian Year(s) (variously = 100 or 144",
      "src": "t2_i_the_nature_of_middle_earth.txt:349",
@@ -557,7 +557,7 @@
    "kind": "authorial revision within one text",
    "readings": [
     {
-     "n": "a hundred Valian years, each as ten Sun years",
+     "name": "a hundred Valian years, each as ten Sun years",
      "says": "The manuscript reading: a hundred VALIAN years, which the sentence then glosses as ten Sun years each -- a thousand Sun years in Tol Eressea.",
      "q": "For nigh on one hundred of the years of Valinor, which were each as ten of the years of the Sun",
      "src": "t1_10_morgoths_ring.txt:6795",
@@ -573,7 +573,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Quenta Silmarillion / Later Quenta (QS, LQ -- MR) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "a hundred of our years, being ten Valian years",
+     "name": "a hundred of our years, being ten Valian years",
      "says": "The substituted reading INVERTS the units: a hundred of OUR years, which is only ten Valian years. The same sentence, the same hundred, and a tenfold difference in the time the Teleri were apart.",
      "q": "For well-nigh one hundred of the years of our time",
      "src": "t1_10_morgoths_ring.txt:7007",
@@ -618,7 +618,7 @@
    "kind": "unreconciled / intentional ambiguity",
    "readings": [
     {
-     "n": "corrupted Quendi",
+     "name": "corrupted Quendi",
      "says": "The published frame: Elves taken before Utumno was broken, corrupted in the pits, bred in mockery of the Elves.",
      "q": "by slow arts of cruelty were corrupted and enslaved; and thus did Melkor breed the hideous race of the Orcs",
      "src": "t1_a_the_silmarillion.txt:3167",
@@ -634,7 +634,7 @@
      "publication_layer_basis": "**IT TAKES TWO OF THE NINETEEN AT ONCE AND §IV HAS NO WORD FOR BOTH.** It is `TOLKIEN_PRIMARY_POSTHUMOUS` -- his writing, first printed in 1977, four years after his death -- and it is `CHRISTOPHER_TOLKIEN_EDITORIAL`, the paradigm case of the §I.3 category *Christopher Tolkien's editorial selections and arrangements*. C488 forbids averaging a volume that cannot take one value and C517 forbids choosing the likelier one; so this is null, and what would settle it is a reader opening the chapter and declaring the sentence, per C548. NULL, NEVER AVERAGED. WHAT WOULD SETTLE IT: a reader opening the locus in `src` and declaring the sentence, on C548's mechanism."
     },
     {
-     "n": "made of stone",
+     "name": "made of stone",
      "says": "An earlier Quenta reading has Morgoth bring them into being AFTER the destruction of the Trees, made of stone.",
      "q": "and they were made of stone, but their hearts of hatred",
      "src": "t1_10_morgoths_ring.txt:3069",
@@ -650,7 +650,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Quenta Silmarillion / Later Quenta (QS, LQ -- MR) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "beasts of humanized shape",
+     "name": "beasts of humanized shape",
      "says": "A late essay denies them a rational soul altogether: their speech is 'reeling off records set in them by Melkor'.",
      "q": "The Orcs were beasts of humanized shape (to mock Men and Elves) deliberately perverted",
      "src": "t1_10_morgoths_ring.txt:15244",
@@ -666,7 +666,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Myths Transformed (MR) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "not Elvish at all",
+     "name": "not Elvish at all",
      "says": "Four words in the margin of his own Annals, instructing himself to undo the Elvish descent. The instruction was never carried out in a completed narrative.",
      "q": "Alter this. Orcs are not Elvish.",
      "src": "t1_10_morgoths_ring.txt:3170",
@@ -729,7 +729,7 @@
    "kind": "authorial revision within one text",
    "readings": [
     {
-     "n": "a host",
+     "name": "a host",
      "says": "The Annals as written give Morgoth a HOST of Balrogs at his last stand.",
      "q": "a host of Balrogs, the last of his servants that remained",
      "src": "t1_10_morgoths_ring.txt:2959",
@@ -745,7 +745,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Annals of Aman is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "three, or at most seven",
+     "name": "three, or at most seven",
      "says": "In the margin beside that sentence he sets a ceiling on the whole race, in the same hand and the same pass in which he struck 'a host' out of the text.",
      "q": "There should not be supposed more than say 3 or at most 7 ever existed",
      "src": "t1_10_morgoths_ring.txt:3173",
@@ -789,7 +789,7 @@
    "kind": "unreconciled / intentional ambiguity",
    "readings": [
     {
-     "n": "nameless in the West; three fates, none known",
+     "name": "nameless in the West; three fates, none known",
      "says": "The essay on the Istari gives three fates as alternatives and closes the question in the same sentence.",
      "q": "whether they remained in the East, pursuing there the purposes for which they were sent; or perished; or as some hold were ensnared by Sauron and became his servants, is not now known",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:12234",
@@ -805,7 +805,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Istari (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "Alatar and Pallando, of Orome",
+     "name": "Alatar and Pallando, of Orome",
      "says": "A separate note names them and associates them with Orome, with no reason given for the association.",
      "q": "here they are named, as Alatar and Pallando",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:12370",
@@ -821,7 +821,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Istari (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "Morinehtar and Romestamo, come in the Second Age",
+     "name": "Morinehtar and Romestamo, come in the Second Age",
      "says": "A late note names them Darkness-slayer and East-helper, brings them much earlier -- with Glorfindel, in the Second Age -- and credits them with weakening and disarraying the forces of the East.",
      "q": "But the other two Istari were sent for a different purpose",
      "src": "t1_12_the_peoples_of_middle_earth.txt:12740",
@@ -837,7 +837,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Last Writings (PoME) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "arriving with Glorfindel",
+     "name": "arriving with Glorfindel",
      "says": "The same note dates their coming against Glorfindel's return rather than against the Third Age mission of the Five.",
      "q": "came much earlier, at the same time probably as Glorfindel, when matters became very dangerous in the Second Age",
      "src": "t1_12_the_peoples_of_middle_earth.txt:12737",
@@ -897,7 +897,7 @@
    "kind": "unreconciled / intentional ambiguity",
    "readings": [
     {
-     "n": "Enerdhil of Gondolin",
+     "name": "Enerdhil of Gondolin",
      "says": "The text opens by naming Enerdhil, greatest of that craft among the Noldor after Feanor's death, as its maker.",
      "q": "There was in Gondolin a jewel-smith named Enerdhil",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7875",
@@ -913,7 +913,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Elessar (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "the first stone returned by Olorin, from Yavanna",
+     "name": "the first stone returned by Olorin, from Yavanna",
      "says": "In the first of two tales the second Elessar is the FIRST one returned by the grace of the Valar, brought to Galadriel by Olorin.",
      "q": "This I bring to you from Yavanna. Use it as you may",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7916",
@@ -929,7 +929,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Elessar (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "made anew by Celebrimbor in Eregion",
+     "name": "made anew by Celebrimbor in Eregion",
      "says": "In the second, Celebrimbor makes a new green gem for Galadriel -- more subtle and clear than Enerdhil's, and of less power, because the light of the Sun was no longer young.",
      "q": "The other tale runs so: that long ago, ere Sauron deluded the smiths of Eregion",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7921",
@@ -945,7 +945,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Elessar (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "Celebrimbor made both, and Enerdhil never existed",
+     "name": "Celebrimbor made both, and Enerdhil never existed",
      "says": "A note at the end of the same four pages erases Enerdhil entirely and gives Celebrimbor BOTH stones.",
      "q": "The Elessar was made in Gondolin by Celebrimbor",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7956",
@@ -961,7 +961,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Elessar (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "Christopher Tolkien on the direction of change",
+     "name": "Christopher Tolkien on the direction of change",
      "says": "Christopher reads the end-note as an intention -- 'was to displace' -- not as an accomplished revision, and notes that Enerdhil appears in no other writing at all.",
      "q": "the concluding words of the text show that Celebrimbor was to displace him as the maker of the Elessar in Gondolin",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7967",
@@ -1022,7 +1022,7 @@
    "kind": "draft evolution",
    "readings": [
     {
-     "n": "a survivor of Gondolin, one of Turgon's artificers",
+     "name": "a survivor of Gondolin, one of Turgon's artificers",
      "says": "The earlier conception makes him a Gondolindrim smith with no Feanorian blood at all.",
      "q": "He is here said to have been one of the survivors of Gondolin, who had been among Turgon's greatest artificers",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7429",
@@ -1038,7 +1038,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Concerning Galadriel and Celeborn (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "a descendant of Feanor, son of Curufin",
+     "name": "a descendant of Feanor, son of Curufin",
      "says": "The text is emended to the descent the revised Lord of the Rings and the published Silmarillion carry: son of Curufin, left in Nargothrond when his father was driven forth.",
      "q": "but the text is emended to the later story that made him a descendant of",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7431",
@@ -1083,7 +1083,7 @@
    "kind": "editorial choice vs manuscript",
    "readings": [
     {
-     "n": "Finrod the father, Inglor Felagund the son",
+     "name": "Finrod the father, Inglor Felagund the son",
      "says": "In the older naming, Finrod is the third son of Finwe and INGLOR Felagund is his son -- the manuscript even shows the substitution being made in this sentence.",
      "q": "Then [Finrod >] Inglor cast off his crown and made ready to go forth alone with Beren",
      "src": "t1_11_the_war_of_the_jewels.txt:2543",
@@ -1099,7 +1099,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Grey Annals is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "Finarfin the father, Finrod Felagund the son",
+     "name": "Finarfin the father, Finrod Felagund the son",
      "says": "Before the 1966 revised Lord of the Rings the two names were reassigned; two passages in Appendices B and F were emended for it, and the older texts were not.",
      "q": "my father changed Finrod to Finarfin, while his son Felagund, previously called Inglor Felagund, became Finrod Felagund",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:8106",
@@ -1145,7 +1145,7 @@
    "kind": "editorial choice vs manuscript",
    "readings": [
     {
-     "n": "the nineteenth ruler, died 2899",
+     "name": "the nineteenth ruler, died 2899",
      "says": "The Line of Elros gives him his own numbered entry between Tar-Calmacil and Ar-Adunakhor, with dates.",
      "q": "He was born in the year 2618, and he ruled for 74 years until his death in 2899",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:6966",
@@ -1161,7 +1161,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Line of Elros: Kings of Númenor (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "Christopher Tolkien, 1980: omitted in error from The Lord of the Rings",
+     "name": "Christopher Tolkien, 1980: omitted in error from The Lord of the Rings",
      "says": "Christopher reaches a verdict about the text he had in front of him in 1980, and grounds it on the death-date alone rather than on a preference. He also records that he had already edited the Akallabeth down from a twentieth king to a nineteenth before he noticed the Line of Elros.",
      "q": "he was omitted in error from the list in The Lord of the Rings",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7136",
@@ -1177,7 +1177,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Christopher Tolkien's editorial apparatus -- commentary, notes and indexes is CHRISTOPHER_TOLKIEN_EDITORIAL, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "Christopher Tolkien, hedging his own verdict",
+     "name": "Christopher Tolkien, hedging his own verdict",
      "says": "The same note ends by withdrawing some of its own confidence, which is why this record keeps both halves.",
      "q": "It may be that a more complex textual situation underlies the passage than a mere error of omission",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7142",
@@ -1193,7 +1193,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: Christopher Tolkien's editorial apparatus -- commentary, notes and indexes is CHRISTOPHER_TOLKIEN_EDITORIAL, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "present in Appendix A, in the copy this archive holds",
+     "name": "present in Appendix A, in the copy this archive holds",
      "says": "THE PROBE REFUTED THIS RECORD'S FIRST DRAFT. The list of Kings and Queens in the archive's own copy ENDS with Tar-Ardamin and the next sentence begins 'After Ardamin the Kings took the sceptre in names of the Numenorean (or Adunaic) tongue'. The omission Christopher argued against in 1980 is not in the text this archive quotes -- so the two are not two readings of one edition, they are two editions.",
      "q": "Tar-Alcarin, Tar-Calmacil, Tar-Ardamin",
      "src": "t1_c_the_lord_of_the_rings.txt:46275",
@@ -1255,7 +1255,7 @@
    "kind": "draft evolution",
    "readings": [
     {
-     "n": "Trotter, known by his shoes",
+     "name": "Trotter, known by his shoes",
      "says": "In the drafts Butterbur's counterpart names him for the noise of his wooden shoes -- Trotter is a hobbit in this layer, not a Man.",
      "q": "but he's known round here as Trotter. You can hear him coming along the road in those shoes",
      "src": "t1_6_the_return_of_the_shadow.txt:5945",
@@ -1271,7 +1271,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Return of the Shadow (the LotR drafts) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "Strider, known by his stride",
+     "name": "Strider, known by his stride",
      "says": "The published sentence keeps the shape of the draft exactly and changes the man: the shoes become long shanks.",
      "q": "but he's known round here as Strider. Goes about at a great pace on his long shanks",
      "src": "t1_c_the_lord_of_the_rings.txt:7550",
@@ -1317,7 +1317,7 @@
    "kind": "draft evolution",
    "readings": [
     {
-     "n": "Bingo Bolger-Baggins' seventy-second",
+     "name": "Bingo Bolger-Baggins' seventy-second",
      "says": "Through four versions the party is BINGO'S, and Bingo moves from Bilbo's son to Bilbo's nephew and ward.",
      "q": "When Bingo Bolger-Baggins of the well-known Baggins family prepared to celebrate his seventy-",
      "src": "t1_6_the_return_of_the_shadow.txt:1635",
@@ -1333,7 +1333,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Return of the Shadow (the LotR drafts) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "Bilbo Baggins' eleventy-first",
+     "name": "Bilbo Baggins' eleventy-first",
      "says": "The published opening returns the party to Bilbo and the age to eleventy-one.",
      "q": "When Mr. Bilbo Baggins of Bag End announced that he would shortly be celebrating his eleventy-",
      "src": "t1_c_the_lord_of_the_rings.txt:1455",
@@ -1379,7 +1379,7 @@
    "kind": "draft evolution",
    "readings": [
     {
-     "n": "a Gnome of Aryador",
+     "name": "a Gnome of Aryador",
      "says": "In the Lost Tales Beren is an ELF -- a Gnome, in that layer's word -- and his kindred dwell among Men in Aryador. The whole force of the later story, that a mortal loved an immortal, is not yet there.",
      "q": "he was no runagate but came of a kindred of Gnomes that dwelt in Aryador",
      "src": "t1_2_the_book_of_lost_tales_part_two.txt:623",
@@ -1395,7 +1395,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Book of Lost Tales is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "son of Barahir, of the House of Beor",
+     "name": "son of Barahir, of the House of Beor",
      "says": "In the published text he is a Man of the First House, the last of the outlaws of Dorthonion.",
      "q": "and Beren son of Barahir alone escaping came hardly into Doriath",
      "src": "t1_a_the_silmarillion.txt:7932",
@@ -1441,7 +1441,7 @@
    "kind": "draft evolution",
    "readings": [
     {
-     "n": "Tevildo Prince of Cats",
+     "name": "Tevildo Prince of Cats",
      "says": "In the Lost Tales the captor is a giant cat, Melko's thane, whose kitchens Beren is set to work in.",
      "q": "he gave orders for Beren to be made a thrall of Tevildo Prince of Cats",
      "src": "t1_2_the_book_of_lost_tales_part_two.txt:650",
@@ -1457,7 +1457,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Book of Lost Tales is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "Sauron, in Tol-in-Gaurhoth",
+     "name": "Sauron, in Tol-in-Gaurhoth",
      "says": "In the published text the captor is Sauron, lord of werewolves, in the tower on Tol Sirion that he had taken from Orodreth.",
      "q": "In the time when Sauron cast Beren into the pit",
      "src": "t1_a_the_silmarillion.txt:8364",
@@ -1503,7 +1503,7 @@
    "kind": "designated by the author",
    "readings": [
     {
-     "n": "Bilbo leaped over Gollum and fled",
+     "name": "Bilbo leaped over Gollum and fled",
      "says": "The account the Prologue gives as true, and the one the revised Hobbit prints.",
      "q": "In the end, gathering his courage, he leaped over Gollum in the dark, and",
      "src": "t1_c_the_lord_of_the_rings.txt:1290",
@@ -1519,7 +1519,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Lord of the Rings, the narrative and Prologue is TOLKIEN_PRIMARY_PUBLISHED, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "Gollum promised him a present and could not find it",
+     "name": "Gollum promised him a present and could not find it",
      "says": "The story Bilbo first told -- which is word for word the story the FIRST EDITION of The Hobbit printed. Tolkien did not delete the earlier reading; he made it a lie told by his own character.",
      "q": "To them his account was that Gollum had promised to give him a present, if he won the game",
      "src": "t1_c_the_lord_of_the_rings.txt:1296",
@@ -1535,7 +1535,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Lord of the Rings, the narrative and Prologue is TOLKIEN_PRIMARY_PUBLISHED, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "Gollum showed him the way out",
+     "name": "Gollum showed him the way out",
      "says": "The scholarship's description of the original manuscript layer, carried in its own voice. NOT Tolkien's words and not tier 1.",
      "q": "Gollum does not try to kill Bilbo but instead faithfully shows him the way out of the goblin-tunnels",
      "src": "t2_the_history_of_the_hobbit.txt:203",
@@ -1588,7 +1588,7 @@
    "kind": "authorial revision within one text",
    "readings": [
     {
-     "n": "unwilling to forsake Middle-earth",
+     "name": "unwilling to forsake Middle-earth",
      "says": "As first written she stays by choice: the years of exile lie heavy on her and she still will not go.",
      "q": "and yet was unwilling to forsake Middle-earth",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7901",
@@ -1604,7 +1604,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Elessar (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "not permitted yet to forsake Middle-earth",
+     "name": "not permitted yet to forsake Middle-earth",
      "says": "The emendation introduces the BAN: she is not permitted. Choice becomes sentence, in one substituted clause.",
      "q": "but was not permitted yet to forsake Middle-earth",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7902",
@@ -1620,7 +1620,7 @@
      "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Elessar (UT) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
     },
     {
-     "n": "Christopher Tolkien on the sequence",
+     "name": "Christopher Tolkien on the sequence",
      "says": "Christopher states that the ban is the later conception and that it is introduced by emendation here.",
      "q": "though the text was later emended and the conception of the ban introduced",
      "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:7964",
