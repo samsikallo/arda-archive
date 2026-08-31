@@ -88,4 +88,7 @@ arda_traced.svg
 cl/bel.svg
 cl/gm.svg
 .arda_gate_pass
-arda_index_merged.json
+# TRACKED FROM 31 Aug 2026, HIS RULING C716. This file is the SOLE PARENT of the 39
+# published idx/ shards, and ignoring it meant a fresh clone could not regenerate the
+# index at all -- published output whose source existed in one place only.
+!arda_index_merged.json
