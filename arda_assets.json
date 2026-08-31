@@ -6,7 +6,7 @@
    "what": "25,805 centrelines traced from the black linework of the poster-map Pauline Baynes drew in 1969, from the copy J.R.R. Tolkien marked up for her. Her hand-lettering is NOT traced.",
    "hand": "Pauline Baynes drew the linework; the tracing is the archive's own, by map/gen_centerline.py",
    "licence": "published at the owner's explicit direction, 31 July 2026 — his words: the map lines, my request rules. This is NOT a grant from the rightsholder and is not recorded as one. The archive states whose hand it is and on whose instruction it is published, which is the true thing it can say. See CLAUDE.md, The Baynes sheet.",
-   "source": "Middle_Earth_transcribed_map.jpg, supplied by the owner 31 July 2026; the sheet itself is gitignored and not published"
+   "source": "Middle_Earth_transcribed_map.jpg, supplied by the owner 31 July 2026; the sheet IS published -- tracked in site/, 1,187,471 bytes at HEAD, 25,805 paths, and baynes.html fetches it. THIS FIELD SAID THE OPPOSITE UNTIL 31 Aug 2026 and both clauses were false: git check-ignore returns rc=1 and git ls-files returns it. map/published_check.py:33 already recorded the truth, so the archive held both statements at once"
   },
   {
    "file": "arda_map.png",
