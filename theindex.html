@@ -455,7 +455,7 @@ title.</span></div>
  function loadLetter(L){
   if(!LAZY) return Promise.resolve();
   if(LOADED[L]) return LOADED[L];
-  var f=(L==='#'||!/^[A-Z]$/i.test(L))?'_':L.toLowerCase();
+  var f=(L==='#')?'_':L.toLowerCase();
   LOADED[L]=fetch('idx/'+f+'.json').then(function(r){return r.ok?r.json():[];})
    .then(function(rows){
      var by={};rows.forEach(function(r){by[r.name]=r});
