@@ -706,7 +706,7 @@
  },
  "refuses_to_pad": "A band shorter than its edge is left short and says why in `fill`. Repeating a phrase or a glyph to reach the ends would be ornament pretending to be writing, which is exactly what C77 removed.",
  "n_routes": 712,
- "n_inscribed": 679,
+ "n_inscribed": 678,
  "n_passage": 463,
  "n_sarati": 0,
  "n_script_tension": 82,
@@ -735,7 +735,7 @@
    "max": 100.0
   },
   "name_rows": {
-   "rows_counted": 198,
+   "rows_counted": 197,
    "min": 3.3,
    "p25": 10.6,
    "median": 15.1,
@@ -756,16 +756,16 @@
  },
  "n_phrase": 18,
  "n_tengwar": 24,
- "n_cirth": 174,
- "n_refused": 33,
+ "n_cirth": 173,
+ "n_refused": 34,
  "n_name_unattested": 44,
  "n_hub": 41,
  "n_by_conf": {
   "[C]": 570,
-  "[I-H]": 78,
+  "[I-H]": 79,
   "[I-M]": 26,
   "[EXT]": 2,
-  "[NEO]": 36
+  "[NEO]": 35
  },
  "conf_rule": "[C] means the name stands in a text of TOLKIEN'S OWN. site/arda_sources.json decides which those are -- tier 1, or tier 2 marked primary_text -- and a witness outside that is [EXT]. Nothing here awards [C] on the existence of a locus alone; before 20 August 2026 all three sites that set it did.",
  "routes": {
@@ -1403,33 +1403,19 @@
    "band_px": 728.8,
    "band_measured": "headless Chromium, 1600x1200, getClientRects() on .leaf -- 20 August 2026",
    "band_basis": "the MEASURED band of a codex leaf at the reference viewport: leaf 796.8 - 68. Every person, place and realm leaf driven came back at 796.8, as did 28 of the 42 top-level halls; the 14 halls that keep a shorter leaf of their own are named in `band.by_route_px`.",
-   "relevance": "This leaf is a hub of the archive and has no subject of Tolkien's: its title is a heading THIS ARCHIVE wrote. The band spells that heading, and no book's matter is claimed for it.",
-   "script": "cirth",
-   "mode": "Angerthas Daeron",
-   "kind": "name",
-   "mode_why": "App E: the Angerthas Daeron, devised in Beleriand and used for Sindarin -- the richest and most ordered form of the Cirth, and this archive's default",
-   "text": "",
-   "cp": "U+E0AF U+E09C U+E09C U+E0B1 U+E087 U+E0B1",
-   "certh": [
-    46,
-    29,
-    29,
-    48,
-    8,
-    48
-   ],
-   "transcription": "errata",
-   "translation": "Errata",
-   "language": "not asserted. The Cirth are a script and not a tongue, and App E gives them exactly this use: 'long used only for inscribing names and brief memorials upon wood or stone.'",
-   "font": "fonts/TengwarTelcontar.woff2 for the 49 certh it carries, then fonts/ArdaCSUR.woff2 -- a 16x16 bitmap at 64 units/em -- for the rest",
-   "conf": "[NEO]",
-   "conf_why": "[NEO] -- THIS LEAF HAS NO SUBJECT OF TOLKIEN'S. Its title is a heading this archive wrote for a hub page, so the band spells the archive's own words and NO corpus witness is sought for it. Matching a page heading as ordinary English is how `Gazetteer` came to be cited to an OCR-mangled sentence of Mallorn and `Verse` to the Silmarillion's copyright notice. The letter VALUES are arda_cirth.json's, each carrying its own marker; the CODEPOINTS are arda_cirth_codepoints.json's, DERIVED by three agreeing methods and marked as such. This row asserts no certh value of its own.",
+   "relevance": "Nothing is inscribed on this leaf's edge: no generator will hang a band there, so none is claimed.",
+   "conf": "[I-H]",
+   "conf_why": "[I-H] -- nothing is inscribed. `errata.html` is stamped `ARDA:BUILT-BY gen_errata_hall`, so `map/gen_codex_route.py` -- the only writer of the edge attributes -- refuses it rather than emit a flat leaf over another generator's shape, and `gen_errata_hall` hangs no band itself. NO WRITER REACHES THIS LEAF, so the inscription is withdrawn rather than promised. It returns of itself the day a band appears on the page.",
    "fill": {
     "band_px": 728.8,
     "run_px": 91.1,
     "pct": 12.5,
     "at": "headless Chromium, 1600x1200, getClientRects() on .leaf -- 20 August 2026",
     "short_because": "this leaf is a hub of the archive and has no subject of Tolkien's, so there is no passage about its subject to carry. The band spells the archive's own heading."
+   },
+   "refused": {
+    "why": "`errata.html` is stamped `ARDA:BUILT-BY gen_errata_hall`, so `map/gen_codex_route.py` -- the only writer of the edge attributes -- refuses it rather than emit a flat leaf over another generator's shape, and `gen_errata_hall` hangs no band itself. NO WRITER REACHES THIS LEAF, so the inscription is withdrawn rather than promised. It returns of itself the day a band appears on the page.",
+    "route": "errata.html"
    }
   },
   "errata/2026-07-23.html": {
