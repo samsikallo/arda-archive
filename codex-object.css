@@ -999,7 +999,8 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
 :root[data-codex-object="on"] .book .leaf.fitted .marg .marg-t{ max-height:none; overflow:visible; }
 
 :root[data-codex-object="on"] .book .leaf.fitted .fig{ width:104px; }
-:root[data-codex-object="on"] .book .leaf.fitted .fig.marg-fig{ width:66px; bottom:30px; }
+:root[data-codex-object="on"] .book .leaf.fitted .fig.marg-fig{ width:66px; bottom:calc(50px + 6px); }
+
 :root[data-codex-object="on"] .book .leaf.fitted .fig figcaption{ font-size:9px; line-height:1.28; }
 
 @media (max-width:1000px){
