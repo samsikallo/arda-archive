@@ -75,7 +75,16 @@
     // report six console lines against a measured baseline of zero. The page says what it is;
     // this asks it rather than keeping a second list of what is retired.
     if (!meta) {
-      if (!R.hasAttribute("data-retired"))
+      // C797, 1 Sep 2026, HIS RULING: "codex.js should believe a page that declares
+      // data-codex off." A page carrying data-codex="off" reaches this line only because
+      // data-codex-object="on" carried it past C25's escape hatch above — it wants the
+      // reader tools and is NOT a codex leaf. Warning about metadata it was never meant to
+      // have made traverse_check refuse the site push on one console line. THE ALTERNATIVE
+      // WAS TO MANUFACTURE CODEX METADATA FOR A PAGE THAT IS NOT A LEAF, purely to silence
+      // a guard, which is satisfying a guard with a claim rather than with the thing itself.
+      // Same shape as the data-retired arm beside it, and for the same reason: the page is
+      // authoritative about itself, so ASK IT rather than keeping a second list.
+      if (!R.hasAttribute("data-retired") && R.getAttribute("data-codex") !== "off")
         warn("no metadata for " + route + " — neutral fallback shell");
       meta = { arch: "folio" };
     }
