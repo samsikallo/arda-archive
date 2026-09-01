@@ -51,6 +51,22 @@ footer{max-width:960px;margin:26px auto 0;padding:0 22px;color:var(--mut);font-s
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;
      transition-duration:.01ms!important;scroll-behavior:auto!important}}
 </style></head><body>
+<!-- THE NAV MOUNT, AND WHY THIS PAGE HAS ONE WHERE THE PROTOTYPE DOES NOT.
+     nav.js:38 returns immediately if it finds no <nav id="ardanav"> to fill, so a page that
+     loads the script without the mount downloads it and draws nothing -- and `nav_check` catches
+     exactly that waste. `site/codex-proto.html` therefore loads nav.js NOT AT ALL, deliberately,
+     and says so in its own comment: it is an ORPHAN specimen whose navigation IS its thumb tabs.
+     THIS PAGE IS NOT THAT. `nav_check --list` classifies it `plates  menu` -- it is a hall a
+     reader reaches from the menu, so it gets the real navigation and the real mount.
+
+     AND THE COMMENT IN THE PROTOTYPE IS ALSO WHY THIS ARCHIVE'S GATE IS WEAKER THAN IT LOOKS.
+     `site/qa_check.py:28` tests `'nav.js' in s` -- a bare substring over the whole file -- so
+     codex-proto.html PASSES that check on the strength of a comment ABOUT nav.js while carrying
+     no script tag at all. Measured: substring True, real `<script src="nav.js">` tags NONE. That
+     is a guard satisfied by a claim rather than by the thing itself, which CLAUDE.md rule 5
+     forbids, and it is recorded here rather than exploited: this page carries the tag AND the
+     mount, so it would pass a predicate that actually parsed. -->
+<nav id="ardanav" aria-label="Archive halls"></nav>
 <a class="a-skip" href="#main">Skip to the catalogue</a>
 <!--ARDA:CODEX-BODY--><div class="book" data-spread="codex" data-density="high" style="--edge-l:&#39;&#39;;--edge-r:&#39;&#39;" data-edge-tr="" data-edge-en="Plate Catalogue" data-edge-mode="" data-edge-script="" data-edge-src="" data-edge-conf="[SILENCE]" data-turn-prev="gondolin.html" data-turn-next="artifacts.html">
 <header><h1>The Plate Catalogue</h1><p>Twenty-two map plates this archive holds &mdash; who drew each one, which book printed it, what it covers, and who owns it until when. No plate is reproduced here, and the reason is stated rather than implied.</p></header>
