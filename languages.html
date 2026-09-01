@@ -258,7 +258,7 @@ return `<div class="card fam-elvish" style="text-align:center">${glyph(t.g,40)}<
 let cirthH=`<table style="max-width:900px"><tr><th>№</th><th>certh</th><th>Angerthas Daeron</th><th>Angerthas Moria</th><th>Erebor mode</th><th>notes</th></tr>`+
 S.cirth.map(c=>`<tr${c.old?' style="background:#f6f1e2"':''}><td>${c.num}${c.old?' <span class="cite">†</span>':''}</td><td>${glyph(c.g,30)}</td><td>${c.d}</td><td>${c.m}</td><td>${c.e}</td><td class="cite">${c.note}</td></tr>`).join("")+"</table>";
 let ligH=S.lig.map(l=>`<span style="margin-right:18px">${glyph(l.g,26)} <span class="cite">${l.n}</span></span>`).join("");
-p.innerHTML=`<h2>The Fëanorian Letters — the full table (App E, drawn)</h2>
+p.innerHTML=`<h2>The Fëanorian Letters — the full table (App E, drawn)</h2><!--ARDA:SCRIPTNOTE--><p class="cite" style="border-left:3px solid var(--gold,#8a6d1f);padding-left:11px">${S.note}</p><!--/ARDA:SCRIPTNOTE-->
 <p class="cite">Letterforms: traced vector glyphs (Wikimedia Commons, checked against the App E plate — see External information in LANGUAGES.md). Structure per App E verbatim: témar I &amp; III carry open bows, II &amp; IV closed; doubling the bow adds voice; raising the stem opens to a spirant; Grade 5 nasals, Grade 6 semi-vocalics. Q = classical Quenya values (incl. the Quenya-spelling note: Grade 2 = nd/mb/ng/ngw, Grade 4 = nt/mp/nc/nqu, 22 = v); GU = the General Use / Westron application (App E's own alternative table, hence 12 = ch there).</p>
 ${grid}
 <h3>Additional letters, halla &amp; the carriers</h3>${addlH}
