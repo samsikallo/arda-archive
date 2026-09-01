@@ -969,27 +969,15 @@ svg#bmap > g > text{fill:#6d5f47 !important}
 }
 /* CODEX-THUMBS-END */
 
-/* THE COLLECTED ORNAMENTS ON THE HALLS — his ruling C807, and his choice of what to build first.
-   One cleared fragment as a tailpiece under each hall's lede. They are cut-out manuscript
-   ornaments with real transparency, so they carry their own gold and vermilion and are NOT
-   masked or recoloured the way the archive's own drawn SVGs are: those are line ornaments and
-   these are pictures. Centred, small, and given air, because a tailpiece that crowds the text
-   it closes is worse than none. `alt=""` on the element -- it is decoration, and a screen
-   reader must walk past it. */
+/* The collected ornaments and the manuscript versal — C807.
+   WHY these six rules are as they are, and why the dark rule is scoped by PATH:
+   docs/ORNAMENT_PLACEMENT.md. Kept out of this file because arda.css is fetched by
+   every hall, so a comment here is a download every reader pays for. */
 .orn-leaf{ display:block; margin:18px auto 6px; height:54px; width:auto; max-width:60%;
            opacity:.92; }
-/* On the night ground the parchment fragments keep their own colour -- gold and lapis read
-   well on it -- but the whitest highlights glare, so the smallest lift is taken off them. */
-:root[data-theme="dark"] .orn-leaf{ opacity:.85; filter:saturate(1.04); }
+:root[data-theme="dark"] img[src*="ornament/collected/"]{
+  background:#efe6d0; border-radius:3px; padding:5px 8px; box-shadow:0 0 0 1px rgba(0,0,0,.35); }
 @media (prefers-reduced-motion:reduce){ .orn-leaf{ transition:none } }
-
-/* A REAL MANUSCRIPT INITIAL IN THE VERSAL SLOT — his ruling C807.
-   `.versal` is already a floated 3.4em drop capital drawn with a typeface; this puts the true
-   thing there where the archive holds one, a cut-out versal in gold, vermilion and lapis with
-   its own transparency. It keeps the `.versal` class so anything counting drop capitals still
-   finds one, and the letter itself rides in `alt` so a screen reader still reads the word.
-   The typeface remains the fallback for every letter the archive has no initial for. */
 .versal-img{ float:left; height:54px; width:auto; margin:2px 10px 0 0; shape-outside:content-box; }
-/* On the night ground these keep their own gold and lapis — they are pictures, not line
-   ornaments, so they are never recoloured the way the drawn SVGs are. */
-:root[data-theme="dark"] .versal-img{ opacity:.9; }
+:root[data-theme="dark"] img.versal-img[src*="ornament/collected/"]{
+  background:#efe6d0; border-radius:2px; padding:3px 4px; box-shadow:0 0 0 1px rgba(0,0,0,.35); }
