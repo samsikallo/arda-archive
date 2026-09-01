@@ -459,7 +459,12 @@
   "c": "Hobbit VI",
   "src": "t1_b_the_hobbit_or_there_and_back_again.txt:2912",
   "tier": 1,
-  "note": "They have a language of their own — 'He spoke to them in the dreadful language of the Wargs' — and hold councils. Whether Wargs are simply wolves or something more is never settled: Aragorn's proverb is 'where the warg howls, there also the orc prowls', and after the fight at Hollin the slain bodies were gone by morning."
+  "note": "They have a language of their own — 'He spoke to them in the dreadful language of the Wargs' — and hold councils. Whether Wargs are simply wolves or something more is never settled: Aragorn's proverb is 'where the warg howls, there also the orc prowls', and after the fight at Hollin the slain bodies were gone by morning.",
+  "plate": "THE PLATE DEPARTS FROM THE CORPUS IN ITS BUILD, NOT ITS COLOUR. The corpus gives a Warg two colours: the chief in the glade is “a great grey wolf”, and the captain at Hollin “a great dark wolf-shape”. The dark pelt drawn here follows the second and is warranted; the heavy skull, the long legs and the deep jaw are the archive’s own.",
+  "plate_src": [
+   "t1_b_the_hobbit_or_there_and_back_again.txt:2922",
+   "t1_c_the_lord_of_the_rings.txt:13762"
+  ]
  },
  {
   "id": "white_wolves",
@@ -487,7 +492,13 @@
   "c": "Silm 19",
   "src": "t1_a_the_silmarillion.txt:8482",
   "tier": 1,
-  "note": "Sauron is 'lord of werewolves'; to fight Huan he 'took upon himself the form of a werewolf, and made himself the mightiest that had yet walked the world'. Carcharoth was bred from Draugluin's whelps, fed by Morgoth's own hand on living flesh, until 'the fire and anguish of hell entered into him'. The corpus never states what stock werewolves were bred from."
+  "note": "Sauron is 'lord of werewolves'; to fight Huan he 'took upon himself the form of a werewolf, and made himself the mightiest that had yet walked the world'. Carcharoth was bred from Draugluin's whelps, fed by Morgoth's own hand on living flesh, until 'the fire and anguish of hell entered into him'. The corpus never states what stock werewolves were bred from.",
+  "plate": "THE PLATE DEPARTS FROM THE CORPUS, WHICH DESCRIBES THE WEREWOLVES THROUGH DRAUGLUIN THEIR SIRE AND DESCRIBES HIM PALE: “pale Draugluin, the old grey lord of wolves”. His flayed hame lay “as dark as shade” and “its savage fell was long and matted”. The matted coat is Tolkien’s; the dark pelt drawn here follows the hame and not its wearer, and the gaunt frame and the corded muscle are the archive’s own.",
+  "plate_src": [
+   "t1_3_the_lays_of_beleriand.txt:11074",
+   "t1_3_the_lays_of_beleriand.txt:12227",
+   "t1_3_the_lays_of_beleriand.txt:12230"
+  ]
  },
  {
   "id": "huan",
@@ -543,7 +554,13 @@
   "c": "Silm 13",
   "src": "t1_a_the_silmarillion.txt:5800",
   "tier": 1,
-  "note": "They are Manwë's: 'In the mountains the Eagles shall house, and hear the voices of those who call upon us.' Gwaihir and Landroval are 'greatest of all the Eagles of the North, mightiest of the descendants of old Thorondor'. In Númenor 'the great eagles that were held sacred to Manwë, and never afflicted, until the days of evil and the hatred of the Valar began' kept an eyrie on the King's palace for two thousand years."
+  "note": "They are Manwë's: 'In the mountains the Eagles shall house, and hear the voices of those who call upon us.' Gwaihir and Landroval are 'greatest of all the Eagles of the North, mightiest of the descendants of old Thorondor'. In Númenor 'the great eagles that were held sacred to Manwë, and never afflicted, until the days of evil and the hatred of the Valar began' kept an eyrie on the King's palace for two thousand years.",
+  "plate": "THE PLATE DEPARTS FROM THE CORPUS, WHICH GIVES THE GREAT EAGLES A SIZE AND A BEAK AND NO PLUMAGE. Thorondor was “mightiest of all birds that have ever been”, his “outstretched wings spanned thirty fathoms”, and “his beak was of gold”. The colouring drawn here is the archive’s own: a sweep for colour and feather words near “eagle” across the tier-1 books returns none.",
+  "plate_src": [
+   "t1_a_the_silmarillion.txt:5801",
+   "t1_a_the_silmarillion.txt:5802",
+   "t1_4_the_shaping_of_middle_earth.txt:4765"
+  ]
  },
  {
   "id": "ents",
@@ -669,7 +686,11 @@
   "c": "LotR IV.9",
   "src": "t1_c_the_lord_of_the_rings.txt:32501",
   "tier": 1,
-  "note": "This is the corpus's only link between Shelob and the spiders of Mirkwood, and it is a link of descent, not identity ('lesser broods'). She kills her mates and her own offspring."
+  "note": "This is the corpus's only link between Shelob and the spiders of Mirkwood, and it is a link of descent, not identity ('lesser broods'). She kills her mates and her own offspring.",
+  "plate": "THE PLATE GOES BEYOND THE CORPUS, WHICH DOES NOT DESCRIBE THIS CREATURE. Of Shelob’s brood it says one thing — that “her lesser broods, bastards of the miserable mates, her own offspring, that she slew, spread from glen to glen, from the Ephel Dúath to the eastern hills” — and never their form. The horns, the beak, the steel-spine hairs and the claw at each leg’s end drawn here are Shelob’s own, lent to her offspring by this archive.",
+  "plate_src": [
+   "t1_c_the_lord_of_the_rings.txt:32502"
+  ]
  },
  {
   "id": "mirkwood_spiders",
@@ -683,7 +704,11 @@
   "c": "Hobbit VIII",
   "src": "t1_b_the_hobbit_or_there_and_back_again.txt:4463",
   "tier": 1,
-  "note": "They speak: 'Aye, they'll make fine eating, when they've hung a bit.' Bilbo names them 'Attercop' and 'Lazy Lob' in his taunting songs. Their bodily form is nowhere set out — only their fatness, their webs, and their poison, which they use 'as small spiders do to flies'. Distinguish them from the ordinary small spiders Bilbo found in the treetops chasing butterflies."
+  "note": "They speak: 'Aye, they'll make fine eating, when they've hung a bit.' Bilbo names them 'Attercop' and 'Lazy Lob' in his taunting songs. Their body is nowhere given a colour, though their form is not unset: The Hobbit gives “hairy legs waving, nippers and spinners snapping, eyes popping”, and their fatness, their webs and their poison, which they use 'as small spiders do to flies'. Distinguish them from the ordinary small spiders Bilbo found in the treetops chasing butterflies.",
+  "plate": "THE PLATE DEPARTS FROM THE CORPUS IN COLOUR ALONE. The Hobbit gives these spiders “hairy legs waving, nippers and spinners snapping, eyes popping”, bodies fat and huge, and blood that stains a blade black. It nowhere gives the body its own colour: the black gloss, and the clustered eyes — which are Shelob’s — are the archive’s own.",
+  "plate_src": [
+   "t1_b_the_hobbit_or_there_and_back_again.txt:4565"
+  ]
  },
  {
   "id": "ungoliant",
@@ -739,7 +764,13 @@
   "c": "Silm 24",
   "src": "t1_a_the_silmarillion.txt:11739",
   "tier": 1,
-  "note": "'the coming of the dragons was with great thunder, and lightning, and a tempest of fire'. Ancalagon the Black is 'Greatest of the winged dragons of Morgoth, destroyed by Eärendil'. Whether the winged dragons are a distinct breed or a later form of the Urulóki is not stated."
+  "note": "'the coming of the dragons was with great thunder, and lightning, and a tempest of fire'. Ancalagon the Black is 'Greatest of the winged dragons of Morgoth, destroyed by Eärendil'. Whether the winged dragons are a distinct breed or a later form of the Urulóki is not stated.",
+  "plate": "THE PLATE GOES BEYOND THE CORPUS, WHICH DOES NOT DESCRIBE THESE BODIES. It gives the winged dragons their wings and no more: they “had not before been seen”, no creature of Morgoth’s cruel thought having “yet assailed the air”, and their coming was “with great thunder, and lightning, and a tempest of fire”. The leathery wing, the scaled back, the horned head and the spined tail are the archive’s own.",
+  "plate_src": [
+   "t1_a_the_silmarillion.txt:11740",
+   "t1_5_the_lost_road_and_other_writings.txt:14151",
+   "t1_a_the_silmarillion.txt:11743"
+  ]
  },
  {
   "id": "cold_drakes",
@@ -753,7 +784,11 @@
   "c": "LotR App. A III",
   "src": "t1_c_the_lord_of_the_rings.txt:48161",
   "tier": 1,
-  "note": "NAMED BUT NOT DESCRIBED. This single sentence is the only occurrence of the word 'cold-drake' in the primary corpus. Nothing is said of what makes a cold-drake cold, nor whether it is winged; the contrast with the fire-drakes (Urulóki) is implied by the name alone."
+  "note": "NAMED BUT NOT DESCRIBED. This single sentence is the only occurrence of the word 'cold-drake' in the primary corpus. Nothing is said of what makes a cold-drake cold, nor whether it is winged; the contrast with the fire-drakes (Urulóki) is implied by the name alone.",
+  "plate": "THE PLATE GOES BEYOND THE CORPUS, WHICH DOES NOT DESCRIBE THIS CREATURE. The word cold-drake occurs once in Tolkien — Dáin I “was slain at the doors of his hall by a great cold-drake” — and nothing whatever is said of its shape. The plate leaves the wings unanswered rather than deciding them; the pale slate scales are the archive’s own.",
+  "plate_src": [
+   "t1_c_the_lord_of_the_rings.txt:48162"
+  ]
  },
  {
   "id": "smaug_kind",

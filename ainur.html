@@ -1,8 +1,8 @@
-<!doctype html><html lang="en" data-hand="authentic" data-codex="off" data-codex-object="on" data-theme="light" data-scene="library"><head><!--ARDA:BUILT-BY gen_hall_spread--><meta charset="utf-8">
+<!doctype html><html lang="en" data-hand="authentic" data-codex="off" data-codex-object="on" data-theme="light" data-scene="library"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><meta name="theme-color" content="#191512">
 <title>The Ainur — the Arda Archive</title><!--ARDA:META--><meta name="description" content="The Valar and Maiar of Arda: their domains, their spouses, their dwellings, and what the texts actually say of each."><meta property="og:title" content="The Ainur — the Arda Archive"><meta property="og:description" content="The Valar and Maiar of Arda: their domains, their spouses, their dwellings, and what the texts actually say of each."><meta property="og:type" content="website"><meta property="og:url" content="https://samsikallo.github.io/arda-archive/ainur.html"><meta property="og:image" content="https://samsikallo.github.io/arda-archive/icon-512.png"><meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/ainur.html"><!--/ARDA:META-->
-
+<!-- PAGEMETA IS THE SOLE METADATA WRITER -- C673, 31 August 2026. This skeleton wrote its own <meta name="description">, and `pagemeta`'s ARDA:META block writes one too, so every hall built here carried TWO. He ruled that the CONTENT-VOICED text -- the one that was here -- is the one the archive keeps, so it has been moved INTO `map/pagemeta.py`'s DESC table, which is regenerated and guarded; this copy was frozen and read by nothing that could check it. Stripping the page without removing this line is not a repair: the next run would put it back, which is exactly what made #215 self-perpetuating. -->
 <style>
 :root{--ink:#3a3226;--mut:#7a6a50;--line:#b0a58e;--gold:#c9a227}
 body{margin:0;color:var(--ink);font:14.5px/1.55 Georgia,'Palatino Linotype',serif;
@@ -19,7 +19,8 @@ background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 
 #q{border:1px solid var(--line);border-radius:12px;padding:4px 12px;font:13px Georgia,serif;background:#fdfaf2;color:var(--ink);min-width:220px}
 .sec{font-variant:small-caps;font-size:17px;color:#5a4626;border-bottom:2px solid var(--line);padding-bottom:3px;margin:20px 0 8px;display:flex;align-items:baseline;gap:9px}
 .sec .n{font-size:11px;font-variant:normal;color:var(--mut);font-style:italic}
-/* C59 AT 390px: minmax(Npx,1fr) CANNOT SHRINK BELOW N, and a hall inside the codex object gets 291px of a 390px phone once body padding, .book margin and .book padding are taken -- so a floor of 340 made .hall-slot a flex item 360px wide inside a 332px book and the DOCUMENT scrolled sideways, which C59 forbids at every width. min(Npx,100%) is the same N wherever the container is wider than N, so no layout above a phone changes at all. Measured 21 Aug with mobile_check's own 390px iframe. */
+/* C59 AT 390px: minmax(Npx,1fr) CANNOT SHRINK BELOW N, and a hall inside the codex object gets 291px of a 390px phone once body padding, .book margin and .book padding are taken -- so a floor of 340 made .hall-slot a flex item 360px wide inside a 332px book and the DOCUMENT scrolled sideways, which C59 forbids at every width. min(Npx,100%) is the same N wherever the container is wider than N, so no layout above a phone changes at all. Measured 21 Aug with mobile_check's own 390px iframe.
+   RESTORED INTO THIS GENERATOR 2 September 2026 (C818's run). It was committed to ainur/living/oaths.html by 72a8df9d and to no generator, so `git grep` found ZERO producers and one run of this file reverted all three copies at once. */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:12px}
 .card{background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid var(--line);border-radius:10px;padding:11px 14px;box-shadow:0 2px 6px rgba(60,40,10,.12)}
 .card h3{margin:.1em 0 .15em;font-variant:small-caps;font-weight:normal;font-size:16.5px;color:#5a4626}
@@ -29,6 +30,7 @@ background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 
 .tag{display:inline-block;border-radius:8px;padding:0 6px;font-size:9.5px;border:1px solid #7aa86a;background:#e9f3e4;margin-right:4px}
 .tag.t2{border-color:#6f8cae;background:#e6eef7}
 .warn{display:block;margin-top:5px;font-size:11px;color:#8a5a12;background:#fdf3df;border:1px solid #d0a53c;border-radius:7px;padding:3px 7px}
+.warn.plate{color:#6b4a2a;background:#f6ece0;border-color:#b98a55}
 .orn{text-align:center;color:#b0a58e;margin:.6em 0;font-size:12px;letter-spacing:.3em}
 #none{color:var(--mut);font-style:italic;margin:20px 2px}
 #lb{display:none;position:fixed;inset:0;background:rgba(20,16,10,.9);z-index:99;align-items:center;justify-content:center;flex-direction:column;gap:10px;padding:20px;cursor:zoom-out}
@@ -127,4 +129,4 @@ function draw(){
 </script>
 <script src="quotes.js"></script><script src="touch.js"></script>
 <script>if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));</script>
-<script src="nav.js"></script><script src="glossary.js" defer></script><!--ARDA:THUMBS--><script src="codex-thumbs.js" defer></script><!--/ARDA:THUMBS--></body></html>
+<script src="nav.js"></script><!--ARDA:THUMBS--><script src="codex-thumbs.js" defer></script><!--/ARDA:THUMBS--><script src="glossary.js" defer></script></body></html>
