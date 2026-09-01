@@ -145,6 +145,32 @@
   -webkit-mask-position:center;  mask-position:center;
   -webkit-mask-size:contain;     mask-size:contain;
   pointer-events:none;                           /* ornament is never a target */
+
+  /* A DEFAULT MASK AND A DEFAULT SIZE, ADDED 1 September 2026, AND THIS IS A REPAIR OF A LIVE
+     VISIBLE DEFECT rather than a refinement.
+
+     Every OTHER ornament class below names its own mask-image -- .orn-rule, .orn-spray,
+     .orn-boss, .orn-corner, .fill, .tail, the four .versal variants. THE BASE `.orn` NAMED
+     NONE, while still taking `background:currentColor` from this very rule. So a bare
+     `<div class="orn">` painted a SOLID RECTANGLE of currentColor, and `arda.css:530` sets
+     `.orn{color:#635d50}` -- which is exactly the grey block that was appearing on the halls.
+
+     MEASURED: 30 bare `.orn` elements across 19 published halls, every one of them a grey box
+     on the page. Their content is the text fleuron `❦ ✦ ❦`, and NO font this site ships has
+     either glyph -- checked against six faces with fontTools -- so there was no fallback
+     either: masked, it was a block; unmasked, it would have been tofu.
+
+     FOUND BY LOOKING AT A SCREENSHOT OF A PUBLISHED HALL, not by any guard. Nothing measures
+     whether an ornament renders as an ornament. */
+  -webkit-mask-image:url("ornament/filler-knot.svg");
+          mask-image:url("ornament/filler-knot.svg");
+  /* CENTRED, AND A BLOCK, because every one of the 30 uses in the archive is a bare
+     `<div class="orn">` standing alone between paragraphs -- measured, not assumed: 30 of 30
+     are divs, none is inline and none carries a modifier class. A separator that hugs the left
+     margin reads as a stray mark; centred with air above and below it reads as the close of a
+     passage, which is what it is for. If an inline `.orn` is ever wanted, give it its own
+     modifier rather than widening this one back. */
+  display:block; margin:1.15em auto; width:3.4em; height:1.35em;
 }
 
 /* the four inks it may take. Nothing else: the palette is measured and closed. */
