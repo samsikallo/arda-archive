@@ -11,7 +11,16 @@
   "c": "LotR II.6",
   "src": "t1_c_the_lord_of_the_rings.txt:15640",
   "tier": 1,
-  "note": "Legolas speaks. The LotR index glosses 'Mallorn (Golden Tree, pl. mellyrn)'; UT's index gives 'Quenya malinornë, plural malinorni'. UT's Description of Númenor adds the fullest account: silver bark, upswept boughs, leaves pale green above and silver beneath turning gold in autumn, blossom in clusters like a cherry, fruit a nut with a silver shale. Christopher Tolkien notes 'This description of the mallorn is much like that given by Legolas'. The Lothlórien mellyrn grew from nuts Tar-Aldarion gave Gil-galad, who gave them to Galadriel."
+  "note": "Legolas speaks. The LotR index glosses 'Mallorn (Golden Tree, pl. mellyrn)'; UT's index gives 'Quenya malinornë, plural malinorni'. UT's Description of Númenor adds the fullest account: silver bark, upswept boughs, leaves pale green above and silver beneath turning gold in autumn, blossom in clusters like a cherry, fruit a nut with a silver shale. Christopher Tolkien notes 'This description of the mallorn is much like that given by Legolas'. The Lothlórien mellyrn grew from nuts Tar-Aldarion gave Gil-galad, who gave them to Galadriel.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:15677",
+   "t1_c_the_lord_of_the_rings.txt:15678",
+   "t1_c_the_lord_of_the_rings.txt:15835",
+   "t1_c_the_lord_of_the_rings.txt:16033",
+   "t1_c_the_lord_of_the_rings.txt:22044",
+   "t1_c_the_lord_of_the_rings.txt:45775"
+  ]
  },
  {
   "id": "malinorne_numenor",
@@ -25,7 +34,11 @@
   "c": "UT II.1, Description of Númenor",
   "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5247",
   "tier": 1,
-  "note": "Kept separate from the Lothlórien mallorn entry because this is the only botanically detailed passage Tolkien wrote for the tree; the Númenórean trees, 'reaching after five centuries a height scarce less than it achieved in Eressëa itself', and the Lórien groves 'did not reach the height or girth of the great groves of Númenor'."
+  "note": "Kept separate from the Lothlórien mallorn entry because this is the only botanically detailed passage Tolkien wrote for the tree; the Númenórean trees, 'reaching after five centuries a height scarce less than it achieved in Eressëa itself', and the Lórien groves 'did not reach the height or girth of the great groves of Númenor'.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5247"
+  ]
  },
  {
   "id": "elanor",
@@ -39,7 +52,14 @@
   "c": "LotR VI.9",
   "src": "t1_c_the_lord_of_the_rings.txt:45908",
   "tier": 1,
-  "note": "Haldir: 'Here ever bloom the winter flowers in the unfading grass: the yellow elanor, and the pale niphredil.' In Letter 312 Tolkien wrote that lit by that light niphredil 'would be simply a delicate kin of a snowdrop; and elanor a pimpernel (perhaps a little enlarged) growing sun-golden flowers and star-silver ones on the same plant, and sometimes the two combined' — the only botanical gloss he ever gave it. He called elanor and niphredil 'my best inventions' in a 1944 letter to Christopher."
+  "note": "Haldir: 'Here ever bloom the winter flowers in the unfading grass: the yellow elanor, and the pale niphredil.' In Letter 312 Tolkien wrote that lit by that light niphredil 'would be simply a delicate kin of a snowdrop; and elanor a pimpernel (perhaps a little enlarged) growing sun-golden flowers and star-silver ones on the same plant, and sometimes the two combined' — the only botanical gloss he ever gave it. He called elanor and niphredil 'my best inventions' in a 1944 letter to Christopher.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:16036",
+   "t1_c_the_lord_of_the_rings.txt:16045",
+   "t1_c_the_lord_of_the_rings.txt:16978",
+   "t1_the_letters_of_j_r_r_tolkien.txt:17203"
+  ]
  },
  {
   "id": "niphredil",
@@ -53,7 +73,14 @@
   "c": "Silm 10",
   "src": "t1_a_the_silmarillion.txt:4952",
   "tier": 1,
-  "note": "The Silmarillion index: 'A white flower that bloomed in Doriath in starlight when Lúthien was born.' In Letter 312 Tolkien said niphredil 'would be simply a delicate kin of a snowdrop'. With elanor it marks the grave of Arwen on Cerin Amroth: 'elanor and niphredil bloom no more east of the Sea'."
+  "note": "The Silmarillion index: 'A white flower that bloomed in Doriath in starlight when Lúthien was born.' In Letter 312 Tolkien said niphredil 'would be simply a delicate kin of a snowdrop'. With elanor it marks the grave of Arwen on Cerin Amroth: 'elanor and niphredil bloom no more east of the Sea'.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_a_the_silmarillion.txt:4954",
+   "t1_a_the_silmarillion.txt:15266",
+   "t1_c_the_lord_of_the_rings.txt:16045",
+   "t1_the_letters_of_j_r_r_tolkien.txt:17202"
+  ]
  },
  {
   "id": "lorien_pale_flowers",
@@ -67,7 +94,12 @@
   "c": "LotR II.6",
   "src": "t1_c_the_lord_of_the_rings.txt:16037",
   "tier": 1,
-  "note": "DESCRIBED BUT NOT NAMED — the inverse of the usual gap. Frodo sees them beside the elanor; they are never identified with niphredil, though Haldir names elanor and niphredil as the two flowers of Cerin Amroth in the same chapter, and readers have long assumed the identification. The corpus does not make it."
+  "note": "DESCRIBED BUT NOT NAMED — the inverse of the usual gap. Frodo sees them beside the elanor; they are never identified with niphredil, though Haldir names elanor and niphredil as the two flowers of Cerin Amroth in the same chapter, and readers have long assumed the identification. The corpus does not make it.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:16037",
+   "t1_c_the_lord_of_the_rings.txt:16045"
+  ]
  },
  {
   "id": "simbelmyne",
@@ -81,7 +113,13 @@
   "c": "LotR III.6",
   "src": "t1_c_the_lord_of_the_rings.txt:22889",
   "tier": 1,
-  "note": "Gandalf speaks. Tolkien wrote in 1944 that he liked 'A-S symbelmynë or evermind found on the Great Mound of Rohan'. On Helm's mound 'Ever after the white simbelmynë grew there most thickly, so that the mound seemed to be snow-clad.' UT identifies simbelmynë, alfirin and uilos as one flower — see the alfirin entry for the conflict this creates."
+  "note": "Gandalf speaks. Tolkien wrote in 1944 that he liked 'A-S symbelmynë or evermind found on the Great Mound of Rohan'. On Helm's mound 'Ever after the white simbelmynë grew there most thickly, so that the mound seemed to be snow-clad.' UT identifies simbelmynë, alfirin and uilos as one flower — see the alfirin entry for the conflict this creates.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:22885",
+   "t1_c_the_lord_of_the_rings.txt:22889",
+   "t1_c_the_lord_of_the_rings.txt:47896"
+  ]
  },
  {
   "id": "uilos",
@@ -95,7 +133,11 @@
   "c": "UT, Index",
   "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14771",
   "tier": 1,
-  "note": "The quotation is Christopher Tolkien's index entry, not his father's narrative; in the tale of Tuor the flower is described but the element uilos is discussed only in a note ('the word is found also in Amon Uilos, as the Quenya name Oiolossë (‘Ever-snow-white’, the Mountain of Manwë) was rendered into Sindarin'). Included because uilos is the third of the three names UT equates."
+  "note": "The quotation is Christopher Tolkien's index entry, not his father's narrative; in the tale of Tuor the flower is described but the element uilos is discussed only in a note ('the word is found also in Amon Uilos, as the Quenya name Oiolossë (‘Ever-snow-white’, the Mountain of Manwë) was rendered into Sindarin'). Included because uilos is the third of the three names UT equates.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14771"
+  ]
  },
  {
   "id": "alfirin",
@@ -109,7 +151,11 @@
   "c": "Letters 312",
   "src": "t1_the_letters_of_j_r_r_tolkien.txt:17205",
   "tier": 1,
-  "note": "CONTESTED. UT's index says 'alfirin A small white flower, also called uilos and simbelmynë (Evermind)', and Cirion sees 'the white flowers of alfirin' on Elendil's mound. But Christopher Tolkien flags the clash himself: 'Alfirin is named, but apparently of a different flower, in a verse that Legolas sang in Minas Tirith (The Return of the King V 9): ‘The golden bells are shaken of mallos and alfirin / In the green fields of Lebennin.' White grave-flower and golden bell-flower are not reconciled anywhere in the corpus."
+  "note": "CONTESTED. UT's index says 'alfirin A small white flower, also called uilos and simbelmynë (Evermind)', and Cirion sees 'the white flowers of alfirin' on Elendil's mound. But Christopher Tolkien flags the clash himself: 'Alfirin is named, but apparently of a different flower, in a verse that Legolas sang in Minas Tirith (The Return of the King V 9): ‘The golden bells are shaken of mallos and alfirin / In the green fields of Lebennin.' White grave-flower and golden bell-flower are not reconciled anywhere in the corpus.",
+  "appearance": "contradictory",
+  "appearance_src": [
+   "t1_the_letters_of_j_r_r_tolkien.txt:17205"
+  ]
  },
  {
   "id": "mallos",
@@ -123,7 +169,12 @@
   "c": "LotR V.9",
   "src": "t1_c_the_lord_of_the_rings.txt:39235",
   "tier": 1,
-  "note": "From Legolas's song of the Sea. UT's index adds only 'mallos A golden flower of Lebennin.' Tolkien listed mallos among the flowers botanists wanted described and never described it further."
+  "note": "From Legolas's song of the Sea. UT's index adds only 'mallos A golden flower of Lebennin.' Tolkien listed mallos among the flowers botanists wanted described and never described it further.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:39235",
+   "t1_the_letters_of_j_r_r_tolkien.txt:10624"
+  ]
  },
  {
   "id": "athelas",
@@ -137,7 +188,13 @@
   "c": "LotR I.12",
   "src": "t1_c_the_lord_of_the_rings.txt:9390",
   "tier": 1,
-  "note": "Aragorn speaks. The Gondorian herb-master gives all three registers: 'kingsfoil, as the rustics name it,' he said; 'or athelas in the noble tongue, or to those who know somewhat of the Valinorean...' — Aragorn cuts him off with 'asëa aranion'. Its scent is described three separate ways: 'a sweet and pungent fragrance', 'like the scent of orchards, and of heather in the sunshine full of bees', and Ioreth's 'wholesome, maybe, is nearer'."
+  "note": "Aragorn speaks. The Gondorian herb-master gives all three registers: 'kingsfoil, as the rustics name it,' he said; 'or athelas in the noble tongue, or to those who know somewhat of the Valinorean...' — Aragorn cuts him off with 'asëa aranion'. Its scent is described three separate ways: 'a sweet and pungent fragrance', 'like the scent of orchards, and of heather in the sunshine full of bees', and Ioreth's 'wholesome, maybe, is nearer'.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:9387",
+   "t1_c_the_lord_of_the_rings.txt:9389",
+   "t1_c_the_lord_of_the_rings.txt:38965"
+  ]
  },
  {
   "id": "lissuin",
@@ -151,7 +208,11 @@
   "c": "UT II.2, Aldarion and Erendis",
   "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5881",
   "tier": 1,
-  "note": "UT's index: 'lissuin A fragrant flower of Tol Eressëa.' This is the whole of what is known of it. The quotation is given from mid-sentence because a footnote marker stands inside the full clause ('were crowned with elanor 20 and sweet lissuin'); the flowers were brought by the Elves of Eressëa to the WEDDING feast of Aldarion and Erendis, at Andúnië — 'Thus the Eldar graced the wedding of Erendis... Their ship was laden with flowers for the adornment of the feast, so that all that sat there, when evening was come, were crowned with elanor and sweet lissuin.' This record said 'betrothal' until 29 July 2026; the betrothal was a separate and earlier event, at which Meneldur's gift to Erendis was land in Emerië, not flowers."
+  "note": "UT's index: 'lissuin A fragrant flower of Tol Eressëa.' This is the whole of what is known of it. The quotation is given from mid-sentence because a footnote marker stands inside the full clause ('were crowned with elanor 20 and sweet lissuin'); the flowers were brought by the Elves of Eressëa to the WEDDING feast of Aldarion and Erendis, at Andúnië — 'Thus the Eldar graced the wedding of Erendis... Their ship was laden with flowers for the adornment of the feast, so that all that sat there, when evening was come, were crowned with elanor and sweet lissuin.' This record said 'betrothal' until 29 July 2026; the betrothal was a separate and earlier event, at which Meneldur's gift to Erendis was land in Emerië, not flowers.",
+  "appearance": "absent",
+  "appearance_src": [
+   "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5881"
+  ]
  },
  {
   "id": "seregon",
@@ -165,7 +226,12 @@
   "c": "UT I.2, Narn i Hîn Húrin, note 14",
   "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:4654",
   "tier": 1,
-  "note": "The gloss is Christopher Tolkien's note; his father's narrative sentence is 'its steep grey head was bare, save for the red seregon that mantled the stone', and when the sun struck it Andróg said 'See! There is blood on the hill-top.' At the fall of Bar-en-Danwedh the omen is fulfilled: the defenders' 'blood flowed out upon the seregon that mantled the stone'."
+  "note": "The gloss is Christopher Tolkien's note; his father's narrative sentence is 'its steep grey head was bare, save for the red seregon that mantled the stone', and when the sun struck it Andróg said 'See! There is blood on the hill-top.' At the fall of Bar-en-Danwedh the omen is fulfilled: the defenders' 'blood flowed out upon the seregon that mantled the stone'.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_a_the_silmarillion.txt:9721",
+   "t1_a_the_silmarillion.txt:15452"
+  ]
  },
  {
   "id": "aeglos_plant",
@@ -179,7 +245,11 @@
   "c": "UT I.2, Narn i Hîn Húrin, note 14",
   "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:4653",
   "tier": 1,
-  "note": "The narrative gives 'aisles of long-legged aeglos: a gloom filled with a sweet scent'. The same word names the spear of Gil-galad — UT's index lists them as two entries, '*aeglos (1) ‘Snowthorn’, a plant that grew on Amon Rûdh' and 'Aeglos (2) The spear of Gil-galad (as a word-formation the same as the preceding)'."
+  "note": "The narrative gives 'aisles of long-legged aeglos: a gloom filled with a sweet scent'. The same word names the spear of Gil-galad — UT's index lists them as two entries, '*aeglos (1) ‘Snowthorn’, a plant that grew on Amon Rûdh' and 'Aeglos (2) The spear of Gil-galad (as a word-formation the same as the preceding)'.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:4653"
+  ]
  },
  {
   "id": "oiolaire",
@@ -193,7 +263,11 @@
   "c": "UT II.2, Aldarion and Erendis",
   "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5568",
   "tier": 1,
-  "note": "The bough is a portent as much as a custom: when Aldarion's ship came home from the northern cold he found the bough withered, 'for such a thing had never befallen the bough of oiolairë, so long as it was washed with the spray'. On his last voyage as King he set no bough at all, but an eagle of Círdan's making. Corollairë, the Green Mound of the Two Trees in Valinor, was also called Coron Oiolairë."
+  "note": "The bough is a portent as much as a custom: when Aldarion's ship came home from the northern cold he found the bough withered, 'for such a thing had never befallen the bough of oiolairë, so long as it was washed with the spray'. On his last voyage as King he set no bough at all, but an eagle of Círdan's making. Corollairë, the Green Mound of the Two Trees in Valinor, was also called Coron Oiolairë.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5568"
+  ]
  },
  {
   "id": "lairelosse",
@@ -207,7 +281,11 @@
   "c": "UT II.1, Description of Númenor",
   "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5242",
   "tier": 1,
-  "note": "NAMED BUT NOT DESCRIBED. It appears only in a list of the fragrant trees of the Nísimaldar; all that is said of the group is that 'Flower, leaf, and rind of those trees exuded sweet scents'."
+  "note": "NAMED BUT NOT DESCRIBED. It appears only in a list of the fragrant trees of the Nísimaldar; all that is said of the group is that 'Flower, leaf, and rind of those trees exuded sweet scents'.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5242"
+  ]
  },
  {
   "id": "nessamelda",
@@ -221,7 +299,11 @@
   "c": "UT II.1, Description of Númenor",
   "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5242",
   "tier": 1,
-  "note": "NAMED BUT NOT DESCRIBED. Listed among the fragrant trees only; the name is not glossed anywhere in the corpus."
+  "note": "NAMED BUT NOT DESCRIBED. Listed among the fragrant trees only; the name is not glossed anywhere in the corpus.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5242"
+  ]
  },
  {
   "id": "vardarianna",
@@ -235,7 +317,11 @@
   "c": "UT II.1, Description of Númenor",
   "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5242",
   "tier": 1,
-  "note": "NAMED BUT NOT DESCRIBED. Listed among the fragrant trees only."
+  "note": "NAMED BUT NOT DESCRIBED. Listed among the fragrant trees only.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5242"
+  ]
  },
  {
   "id": "taniquelasse",
@@ -249,7 +335,11 @@
   "c": "UT II.1, Description of Númenor",
   "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5242",
   "tier": 1,
-  "note": "NAMED BUT NOT DESCRIBED. Listed among the fragrant trees only; the name contains Taniquetil."
+  "note": "NAMED BUT NOT DESCRIBED. Listed among the fragrant trees only; the name contains Taniquetil.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5242"
+  ]
  },
  {
   "id": "yavannamire",
@@ -263,7 +353,11 @@
   "c": "UT II.1, Description of Númenor",
   "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5242",
   "tier": 1,
-  "note": "Alone of the Nísimaldar trees besides oiolairë and malinornë it gets a descriptive phrase, and only for its fruit. Nothing is said of its leaf, bark or flower."
+  "note": "Alone of the Nísimaldar trees besides oiolairë and malinornë it gets a descriptive phrase, and only for its fruit. Nothing is said of its leaf, bark or flower.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5242"
+  ]
  },
  {
   "id": "telperion",
@@ -277,7 +371,12 @@
   "c": "Silm 1",
   "src": "t1_a_the_silmarillion.txt:2673",
   "tier": 1,
-  "note": "The elder of the Two Trees; his first shining, 'the white glimmer of a silver dawn', was the Opening Hour from which the Valar counted their reign. Poisoned by Ungoliant at Melkor's bidding. Called 'the Eldest of Trees'. In the earliest tradition (Book of Lost Tales) his name was Silpion; Christopher Tolkien notes 'The Two Trees, Silpion (later Telperion) and Laurelin'."
+  "note": "The elder of the Two Trees; his first shining, 'the white glimmer of a silver dawn', was the Opening Hour from which the Valar counted their reign. Poisoned by Ungoliant at Melkor's bidding. Called 'the Eldest of Trees'. In the earliest tradition (Book of Lost Tales) his name was Silpion; Christopher Tolkien notes 'The Two Trees, Silpion (later Telperion) and Laurelin'.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_a_the_silmarillion.txt:2673",
+   "t1_a_the_silmarillion.txt:2664"
+  ]
  },
  {
   "id": "laurelin",
@@ -291,7 +390,13 @@
   "c": "Silm 1",
   "src": "t1_a_the_silmarillion.txt:2676",
   "tier": 1,
-  "note": "Continues: 'Flowers swung upon her branches in clusters of yellow flame, formed each to a glowing horn that spilled a golden rain upon the ground.' Varda hoarded the dews of Telperion and the rain of Laurelin 'in great vats like shining lakes'. Both Trees were drained by Ungoliant; 'their lifeless stems stand yet in Valinor, a memorial of vanished joy'."
+  "note": "Continues: 'Flowers swung upon her branches in clusters of yellow flame, formed each to a glowing horn that spilled a golden rain upon the ground.' Varda hoarded the dews of Telperion and the rain of Laurelin 'in great vats like shining lakes'. Both Trees were drained by Ungoliant; 'their lifeless stems stand yet in Valinor, a memorial of vanished joy'.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_a_the_silmarillion.txt:2676",
+   "t1_a_the_silmarillion.txt:2677",
+   "t1_10_morgoths_ring.txt:6053"
+  ]
  },
  {
   "id": "galathilion",
@@ -305,7 +410,13 @@
   "c": "Silm 5",
   "src": "t1_a_the_silmarillion.txt:3577",
   "tier": 1,
-  "note": "The first of the White Trees of the line that runs Telperion > Galathilion > Celeborn of Tol Eressëa > Nimloth of Númenor > the White Tree of Minas Ithil and of Minas Tirith."
+  "note": "The first of the White Trees of the line that runs Telperion > Galathilion > Celeborn of Tol Eressëa > Nimloth of Númenor > the White Tree of Minas Ithil and of Minas Tirith.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_a_the_silmarillion.txt:3577",
+   "t1_12_the_peoples_of_middle_earth.txt:4765",
+   "t1_10_morgoths_ring.txt:3346"
+  ]
  },
  {
   "id": "celeborn_tree",
@@ -319,7 +430,11 @@
   "c": "Silm, Akallabêth",
   "src": "t1_a_the_silmarillion.txt:12044",
   "tier": 1,
-  "note": "Not to be confused with Celeborn of Lothlórien. The tree is never described apart from its descent."
+  "note": "Not to be confused with Celeborn of Lothlórien. The tree is never described apart from its descent.",
+  "appearance": "absent",
+  "appearance_src": [
+   "t1_a_the_silmarillion.txt:12044"
+  ]
  },
  {
   "id": "nimloth_tree",
@@ -333,7 +448,12 @@
   "c": "Silm, Akallabêth",
   "src": "t1_a_the_silmarillion.txt:12048",
   "tier": 1,
-  "note": "Felled at Sauron's urging and burned as the first fire on the altar of Morgoth: 'the first fire upon the altar Sauron kindled with the hewn wood of Nimloth, and it crackled and was consumed'. Isildur stole a fruit before the felling, and from it descended the White Tree of Gondor."
+  "note": "Felled at Sauron's urging and burned as the first fire on the altar of Morgoth: 'the first fire upon the altar Sauron kindled with the hewn wood of Nimloth, and it crackled and was consumed'. Isildur stole a fruit before the felling, and from it descended the White Tree of Gondor.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_a_the_silmarillion.txt:12048",
+   "t1_10_morgoths_ring.txt:16993"
+  ]
  },
  {
   "id": "white_tree_gondor",
@@ -347,7 +467,12 @@
   "c": "LotR VI.5",
   "src": "t1_c_the_lord_of_the_rings.txt:43467",
   "tier": 1,
-  "note": "Gandalf on its descent: 'Verily this is a sapling of the line of Nimloth the fair; and that was a seedling of Galathilion, and that a fruit of Telperion of many names, Eldest of Trees.' Aragorn found it 25 June 3019; the withered tree it replaced was laid to rest in Rath Dínen unburnt. Isildur had 'planted there the last sapling of the White Tree in memory of his brother'."
+  "note": "Gandalf on its descent: 'Verily this is a sapling of the line of Nimloth the fair; and that was a seedling of Galathilion, and that a fruit of Telperion of many names, Eldest of Trees.' Aragorn found it 25 June 3019; the withered tree it replaced was laid to rest in Rath Dínen unburnt. Isildur had 'planted there the last sapling of the White Tree in memory of his brother'.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:43467",
+   "t1_c_the_lord_of_the_rings.txt:43466"
+  ]
  },
  {
   "id": "lebethron",
@@ -361,7 +486,13 @@
   "c": "LotR IV.7",
   "src": "t1_c_the_lord_of_the_rings.txt:31211",
   "tier": 1,
-  "note": "Faramir speaks, giving the hobbits staves at Henneth Annûn. The wood is elsewhere called black. The tree itself is never described — only its timber and the virtue set upon it."
+  "note": "Faramir speaks, giving the hobbits staves at Henneth Annûn. The wood is elsewhere called black. The tree itself is never described — only its timber and the virtue set upon it.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:43243",
+   "t1_c_the_lord_of_the_rings.txt:31211",
+   "t1_c_the_lord_of_the_rings.txt:31209"
+  ]
  },
  {
   "id": "culumalda",
@@ -375,7 +506,11 @@
   "c": "Silm, Appendix: Elements in Quenya and Sindarin names",
   "src": "t1_a_the_silmarillion.txt:16032",
   "tier": 1,
-  "note": "The name occurs nowhere in the narrative — only in the Silmarillion's name-elements appendix. The trees of Cormallen ARE described in LotR VI.4 as 'stately dark-leaved trees laden with scarlet blossom', but there they are not named culumalda; the identification is an inference the corpus permits but does not state."
+  "note": "The name occurs nowhere in the narrative — only in the Silmarillion's name-elements appendix. The trees of Cormallen ARE described in LotR VI.4 as 'stately dark-leaved trees laden with scarlet blossom', but there they are not named culumalda; the identification is an inference the corpus permits but does not state.",
+  "appearance": "absent",
+  "appearance_src": [
+   "t1_a_the_silmarillion.txt:16032"
+  ]
  },
  {
   "id": "pipeweed",
@@ -389,7 +524,13 @@
   "c": "LotR, Prologue 2",
   "src": "t1_c_the_lord_of_the_rings.txt:1078",
   "tier": 1,
-  "note": "Merry Brandybuck's Herblore of the Shire is the authority. Gondorian names: 'it is called westmansweed by the vulgar, and galenas by the noble, and other names in other tongues more learned'. Tobold Hornblower of Longbottom first grew it c. S.R. 1070 (T.A. 2670); 'How Old Toby came by the plant is not recorded, for to his dying day he would not tell.'"
+  "note": "Merry Brandybuck's Herblore of the Shire is the authority. Gondorian names: 'it is called westmansweed by the vulgar, and galenas by the noble, and other names in other tongues more learned'. Tobold Hornblower of Longbottom first grew it c. S.R. 1070 (T.A. 2670); 'How Old Toby came by the plant is not recorded, for to his dying day he would not tell.'",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:1079",
+   "t1_c_the_lord_of_the_rings.txt:1120",
+   "t1_c_the_lord_of_the_rings.txt:1108"
+  ]
  },
  {
   "id": "galenas",
@@ -403,7 +544,11 @@
   "c": "LotR, Prologue 2",
   "src": "t1_c_the_lord_of_the_rings.txt:1120",
   "tier": 1,
-  "note": "Same plant as pipe-weed, kept separate because the corpus keeps the registers separate (LotR index: 'Galenas see Pipe-weed'). Gandalf's parody of the herb-master supplies the third name: 'it is called westmansweed by the vulgar, and galenas by the noble'."
+  "note": "Same plant as pipe-weed, kept separate because the corpus keeps the registers separate (LotR index: 'Galenas see Pipe-weed'). Gandalf's parody of the herb-master supplies the third name: 'it is called westmansweed by the vulgar, and galenas by the noble'.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:1120"
+  ]
  },
  {
   "id": "shire_varieties",
@@ -417,7 +562,12 @@
   "c": "LotR, Prologue 2",
   "src": "t1_c_the_lord_of_the_rings.txt:1093",
   "tier": 1,
-  "note": "Only these three varieties are ever named. Merry found Hornblower-branded barrels of Longbottom Leaf in the wreck of Isengard — 'as fine a pipe-weed as you could wish for, and quite unspoilt' — which Aragorn found the most curious fact of the campaign: 'leaf from the Southfarthing in Isengard.'"
+  "note": "Only these three varieties are ever named. Merry found Hornblower-branded barrels of Longbottom Leaf in the wreck of Isengard — 'as fine a pipe-weed as you could wish for, and quite unspoilt' — which Aragorn found the most curious fact of the campaign: 'leaf from the Southfarthing in Isengard.'",
+  "appearance": "absent",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:1094",
+   "t1_c_the_lord_of_the_rings.txt:25395"
+  ]
  },
  {
   "id": "kelvar_olvar",
@@ -431,7 +581,11 @@
   "c": "Silm 2",
   "src": "t1_a_the_silmarillion.txt:2956",
   "tier": 1,
-  "note": "Yavanna's own division of living things, and the root of the whole matter: her plea for the olvar is what brings the Shepherds of the Trees into the world. Manwë answers that when the Children awake, spirits will 'go among the kelvar and the olvar, and some will dwell therein, and be held in reverence, and their just anger shall be feared'."
+  "note": "Yavanna's own division of living things, and the root of the whole matter: her plea for the olvar is what brings the Shepherds of the Trees into the world. Manwë answers that when the Children awake, spirits will 'go among the kelvar and the olvar, and some will dwell therein, and be held in reverence, and their just anger shall be feared'.",
+  "appearance": "absent",
+  "appearance_src": [
+   "t1_a_the_silmarillion.txt:2956"
+  ]
  },
  {
   "id": "mearas",
@@ -1252,7 +1406,11 @@
   "c": "",
   "src": "t1_12_the_peoples_of_middle_earth.txt:1881",
   "tier": 1,
-  "note": "NOT A PLANT. The only occurrence of 'mirian' in the primary corpus is in The Peoples of Middle-earth, where it is a Gondorian silver coin ('part of the mirian'), not a flower. Recorded here so the mistake is not repeated: no plant of this name exists in Tolkien."
+  "note": "NOT A PLANT. The only occurrence of 'mirian' in the primary corpus is in The Peoples of Middle-earth, where it is a Gondorian silver coin ('part of the mirian'), not a flower. Recorded here so the mistake is not repeated: no plant of this name exists in Tolkien.",
+  "appearance": "absent",
+  "appearance_src": [
+   "t1_12_the_peoples_of_middle_earth.txt:1879"
+  ]
  },
  {
   "id": "beasts_of_valinor",
