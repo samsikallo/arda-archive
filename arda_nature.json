@@ -445,7 +445,15 @@
   "c": "LotR App. A II",
   "src": "t1_c_the_lord_of_the_rings.txt:47806",
   "tier": 1,
-  "note": "Descended from Felaróf, the horse of Eorl, who 'understood all that men said, and was as long-lived as they'. Their origin is legend, not record: 'Men said of them that Béma (whom the Eldar call Oromë) must have brought their sire from West over Sea.' In The Treason of Isengard an earlier draft made their sires come 'out of the Lost Land over the Great Sea when the Kings of Men came out of the Deeps to Gondor' — i.e. Númenórean, not Valinorean, stock; the published text changed this."
+  "note": "Descended from Felaróf, the horse of Eorl, who 'understood all that men said, and was as long-lived as they'. Their origin is legend, not record: 'Men said of them that Béma (whom the Eldar call Oromë) must have brought their sire from West over Sea.' In The Treason of Isengard an earlier draft made their sires come 'out of the Lost Land over the Great Sea when the Kings of Men came out of the Deeps to Gondor' — i.e. Númenórean, not Valinorean, stock; the published text changed this.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:47804",
+   "t1_c_the_lord_of_the_rings.txt:12174",
+   "t1_c_the_lord_of_the_rings.txt:22765",
+   "t1_c_the_lord_of_the_rings.txt:22757",
+   "t1_c_the_lord_of_the_rings.txt:22927"
+  ]
  },
  {
   "id": "warg",
@@ -464,6 +472,16 @@
   "plate_src": [
    "t1_b_the_hobbit_or_there_and_back_again.txt:2922",
    "t1_c_the_lord_of_the_rings.txt:13762"
+  ],
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_b_the_hobbit_or_there_and_back_again.txt:2922",
+   "t1_b_the_hobbit_or_there_and_back_again.txt:2926",
+   "t1_b_the_hobbit_or_there_and_back_again.txt:2911",
+   "t1_c_the_lord_of_the_rings.txt:13760",
+   "t1_c_the_lord_of_the_rings.txt:13762",
+   "t1_c_the_lord_of_the_rings.txt:13786",
+   "t1_c_the_lord_of_the_rings.txt:13788"
   ]
  },
  {
@@ -478,7 +496,13 @@
   "c": "LotR II.3",
   "src": "t1_c_the_lord_of_the_rings.txt:13327",
   "tier": 1,
-  "note": "Named but never described beyond their colour and the fact of the invasion; the Tale of Years records only 'White Wolves invade Eriador from the North.' The Horn-call of Buckland was last sounded for them."
+  "note": "Named but never described beyond their colour and the fact of the invasion; the Tale of Years records only 'White Wolves invade Eriador from the North.' The Horn-call of Buckland was last sounded for them.",
+  "appearance": "absent",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:13328",
+   "t1_c_the_lord_of_the_rings.txt:48921",
+   "t1_c_the_lord_of_the_rings.txt:8430"
+  ]
  },
  {
   "id": "werewolves",
@@ -498,6 +522,14 @@
    "t1_3_the_lays_of_beleriand.txt:11074",
    "t1_3_the_lays_of_beleriand.txt:12227",
    "t1_3_the_lays_of_beleriand.txt:12230"
+  ],
+  "appearance": "contradictory",
+  "appearance_src": [
+   "t1_a_the_silmarillion.txt:8039",
+   "t1_3_the_lays_of_beleriand.txt:11074",
+   "t1_3_the_lays_of_beleriand.txt:9037",
+   "t1_3_the_lays_of_beleriand.txt:12227",
+   "t1_3_the_lays_of_beleriand.txt:12233"
   ]
  },
  {
@@ -512,7 +544,13 @@
   "c": "Silm, Index",
   "src": "t1_a_the_silmarillion.txt:14873",
   "tier": 1,
-  "note": "Quotation is from the Silmarillion index. Huan is a single beast rather than a kind, but he is the only member of the hounds of Valinor ever named, and Oromë 'delights in horses and in hounds'. It was decreed he should meet death only from the mightiest wolf that should ever walk the world."
+  "note": "Quotation is from the Silmarillion index. Huan is a single beast rather than a kind, but he is the only member of the hounds of Valinor ever named, and Oromë 'delights in horses and in hounds'. It was decreed he should meet death only from the mightiest wolf that should ever walk the world.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_3_the_lays_of_beleriand.txt:10387",
+   "t1_3_the_lays_of_beleriand.txt:10357",
+   "t1_3_the_lays_of_beleriand.txt:10369"
+  ]
  },
  {
   "id": "crebain",
@@ -526,7 +564,13 @@
   "c": "LotR II.3",
   "src": "t1_c_the_lord_of_the_rings.txt:13182",
   "tier": 1,
-  "note": "Aragorn speaks. Described only as 'regiments of black crows'; Christopher Tolkien's index to The Treason of Isengard glosses them simply 'Crows seen over Hollin'. No singular form and no Elvish gloss of the name occurs anywhere in the corpus — do not assume one."
+  "note": "Aragorn speaks. Described only as 'regiments of black crows'; Christopher Tolkien's index to The Treason of Isengard glosses them simply 'Crows seen over Hollin'. No singular form and no Elvish gloss of the name occurs anywhere in the corpus — do not assume one.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:13172",
+   "t1_c_the_lord_of_the_rings.txt:13176",
+   "t1_c_the_lord_of_the_rings.txt:13180"
+  ]
  },
  {
   "id": "mumak",
@@ -540,7 +584,18 @@
   "c": "LotR IV.4",
   "src": "t1_c_the_lord_of_the_rings.txt:29754",
   "tier": 1,
-  "note": "The plural mûmakil is given only in the LotR index ('Mûmak (pl. mûmakil) see Oliphaunt'). Hobbits call it oliphaunt after an old Shire rhyme — 'Grey as a mouse, / Big as a house' — which Sam recites believing it 'Nonsense maybe, and maybe not' before he sees one. All those at the siege of Gondor were destroyed."
+  "note": "The plural mûmakil is given only in the LotR index ('Mûmak (pl. mûmakil) see Oliphaunt'). Hobbits call it oliphaunt after an old Shire rhyme — 'Grey as a mouse, / Big as a house' — which Sam recites believing it 'Nonsense maybe, and maybe not' before he sees one. All those at the siege of Gondor were destroyed.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:29752",
+   "t1_c_the_lord_of_the_rings.txt:29759",
+   "t1_c_the_lord_of_the_rings.txt:29761",
+   "t1_c_the_lord_of_the_rings.txt:29770",
+   "t1_c_the_lord_of_the_rings.txt:29745",
+   "t1_c_the_lord_of_the_rings.txt:37881",
+   "t1_c_the_lord_of_the_rings.txt:29080",
+   "t1_c_the_lord_of_the_rings.txt:29095"
+  ]
  },
  {
   "id": "great_eagles",
@@ -561,6 +616,16 @@
    "t1_4_the_shaping_of_middle_earth.txt:4765",
    "t1_a_the_silmarillion.txt:5802",
    "t1_2_the_book_of_lost_tales_part_two.txt:9317"
+  ],
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_5_the_lost_road_and_other_writings.txt:10721",
+   "t1_3_the_lays_of_beleriand.txt:12571",
+   "t1_3_the_lays_of_beleriand.txt:12617",
+   "t1_b_the_hobbit_or_there_and_back_again.txt:2997",
+   "t1_b_the_hobbit_or_there_and_back_again.txt:3103",
+   "t1_b_the_hobbit_or_there_and_back_again.txt:3151",
+   "t1_2_the_book_of_lost_tales_part_two.txt:9317"
   ]
  },
  {
@@ -575,7 +640,15 @@
   "c": "LotR App. F I",
   "src": "t1_c_the_lord_of_the_rings.txt:50544",
   "tier": 1,
-  "note": "Gandalf calls them 'the shepherds of the trees'; the Silmarillion has Manwë promise Yavanna 'in the forests shall walk the Shepherds of the Trees'. Christopher Tolkien records that in constructing the published Silmarillion the Ents were introduced into the sack of Nogrod from his father's 1963 letter, and that 'This story was not lightly or easily conceived' — the Ents' place in the First Age is editorial reconstruction, not settled text. They ascribed to the Eldar not their language but the desire for speech."
+  "note": "Gandalf calls them 'the shepherds of the trees'; the Silmarillion has Manwë promise Yavanna 'in the forests shall walk the Shepherds of the Trees'. Christopher Tolkien records that in constructing the published Silmarillion the Ents were introduced into the sack of Nogrod from his father's 1963 letter, and that 'This story was not lightly or easily conceived' — the Ents' place in the First Age is editorial reconstruction, not settled text. They ascribed to the Eldar not their language but the desire for speech.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:20883",
+   "t1_c_the_lord_of_the_rings.txt:20893",
+   "t1_c_the_lord_of_the_rings.txt:20904",
+   "t1_c_the_lord_of_the_rings.txt:21658",
+   "t1_c_the_lord_of_the_rings.txt:21682"
+  ]
  },
  {
   "id": "entwives",
@@ -589,7 +662,12 @@
   "c": "LotR III.4",
   "src": "t1_c_the_lord_of_the_rings.txt:21461",
   "tier": 1,
-  "note": "Treebeard is careful about the verb: 'They did not die!' said Treebeard. 'I never said died. We lost them, I said. We lost them and we cannot find them.' Their fate is deliberately left open — 'some said that they had seen them walking away west, and some said east, and others south'. Fimbrethil (Wandlimb) is the only Entwife named. Because they are lost there have been no Entings 'for a terrible long count of years'."
+  "note": "Treebeard is careful about the verb: 'They did not die!' said Treebeard. 'I never said died. We lost them, I said. We lost them and we cannot find them.' Their fate is deliberately left open — 'some said that they had seen them walking away west, and some said east, and others south'. Fimbrethil (Wandlimb) is the only Entwife named. Because they are lost there have been no Entings 'for a terrible long count of years'.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:21487",
+   "t1_c_the_lord_of_the_rings.txt:21490"
+  ]
  },
  {
   "id": "huorns",
@@ -603,7 +681,16 @@
   "c": "LotR III.9",
   "src": "t1_c_the_lord_of_the_rings.txt:25525",
   "tier": 1,
-  "note": "CONTESTED BY DESIGN. Merry reports the word as the Ents' own 'short language' and admits 'Treebeard won't say much about them'; the whole account is a hobbit's guess. Whether a Huorn is an Ent gone tree-ish or a tree gone Ent-ish is never settled: 'They still have voices, and can speak with the Ents – that is why they are called Huorns, Treebeard says – but they have become queer and wild.' Treebeard himself says of Saruman only that 'His heart is as rotten as a black Huorn's.'"
+  "note": "CONTESTED BY DESIGN. Merry reports the word as the Ents' own 'short language' and admits 'Treebeard won't say much about them'; the whole account is a hobbit's guess. Whether a Huorn is an Ent gone tree-ish or a tree gone Ent-ish is never settled: 'They still have voices, and can speak with the Ents – that is why they are called Huorns, Treebeard says – but they have become queer and wild.' Treebeard himself says of Saruman only that 'His heart is as rotten as a black Huorn's.'",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:25525",
+   "t1_c_the_lord_of_the_rings.txt:25536",
+   "t1_c_the_lord_of_the_rings.txt:24670",
+   "t1_c_the_lord_of_the_rings.txt:24683",
+   "t1_c_the_lord_of_the_rings.txt:24972",
+   "t1_c_the_lord_of_the_rings.txt:24980"
+  ]
  },
  {
   "id": "kine_araw",
@@ -617,7 +704,12 @@
   "c": "LotR App. A I(iv), note",
   "src": "t1_c_the_lord_of_the_rings.txt:46496",
   "tier": 1,
-  "note": "Carefully hedged: 'were said in legend to be descended from'. Denethor bore Boromir's horn in his turn, 'and so did each eldest son of our house, far back into the vanished years... since Vorondil father of Mardil hunted the wild kine of Araw'."
+  "note": "Carefully hedged: 'were said in legend to be descended from'. Denethor bore Boromir's horn in his turn, 'and so did each eldest son of our house, far back into the vanished years... since Vorondil father of Mardil hunted the wild kine of Araw'.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:46496",
+   "t1_c_the_lord_of_the_rings.txt:33728"
+  ]
  },
  {
   "id": "nahar",
@@ -631,7 +723,14 @@
   "c": "Silm, Valaquenta",
   "src": "t1_a_the_silmarillion.txt:2383",
   "tier": 1,
-  "note": "His neighing at Cuiviénen is what brought the Valar to the Elves: 'Then on a sudden Nahar set up a great neighing, and stood still.' Elsewhere 'his white horse shod with gold'. A single beast, not a kind, but the fountainhead of the horse-lore of Arda."
+  "note": "His neighing at Cuiviénen is what brought the Valar to the Elves: 'Then on a sudden Nahar set up a great neighing, and stood still.' Elsewhere 'his white horse shod with gold'. A single beast, not a kind, but the fountainhead of the horse-lore of Arda.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_a_the_silmarillion.txt:2383",
+   "t1_a_the_silmarillion.txt:2781",
+   "t1_10_morgoths_ring.txt:6240",
+   "t1_11_the_war_of_the_jewels.txt:14633"
+  ]
  },
  {
   "id": "swans_teleri",
@@ -645,7 +744,13 @@
   "c": "Silm 5",
   "src": "t1_a_the_silmarillion.txt:3652",
   "tier": 1,
-  "note": "Ossë gave them as a parting gift when he taught the Teleri ship-building. Their ships 'were made in the likeness of swans, with beaks of gold and eyes of gold and jet'. Seven great swans flying south are the sign to Tuor that he has tarried too long in Nevrast."
+  "note": "Ossë gave them as a parting gift when he taught the Teleri ship-building. Their ships 'were made in the likeness of swans, with beaks of gold and eyes of gold and jet'. Seven great swans flying south are the sign to Tuor that he has tarried too long in Nevrast.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_a_the_silmarillion.txt:3651",
+   "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:830",
+   "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:835"
+  ]
  },
  {
   "id": "fell_beasts",
@@ -659,7 +764,13 @@
   "c": "LotR V.6",
   "src": "t1_c_the_lord_of_the_rings.txt:37597",
   "tier": 1,
-  "note": "They are never given a name of their own — 'fell beast', 'winged creature', 'winged steed' are all the text offers, and even the kind is left doubtful ('if bird, then...'). Their origin is stated as a guess: 'A creature of an older world maybe it was, whose kind, lingering in forgotten mountains cold beneath the Moon, outstayed their day, and in hideous eyrie bred this last untimely brood, apt to evil.' Frodo compares them to 'great carrion birds'."
+  "note": "They are never given a name of their own — 'fell beast', 'winged creature', 'winged steed' are all the text offers, and even the kind is left doubtful ('if bird, then...'). Their origin is stated as a guess: 'A creature of an older world maybe it was, whose kind, lingering in forgotten mountains cold beneath the Moon, outstayed their day, and in hideous eyrie bred this last untimely brood, apt to evil.' Frodo compares them to 'great carrion birds'.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:37596",
+   "t1_c_the_lord_of_the_rings.txt:37605",
+   "t1_c_the_lord_of_the_rings.txt:17699"
+  ]
  },
  {
   "id": "shelob",
@@ -673,7 +784,12 @@
   "c": "LotR IV.9",
   "src": "t1_c_the_lord_of_the_rings.txt:32581",
   "tier": 1,
-  "note": "'Most like a spider' — the text stops short of calling her one. 'Shelob the Great, last child of Ungoliant to trouble the unhappy world'; she 'served none but herself... for all living things were her food, and her vomit darkness'. Sauron 'his cat he calls her, but she owns him not'. She had 'no softer spot... save only her eyes'."
+  "note": "'Most like a spider' — the text stops short of calling her one. 'Shelob the Great, last child of Ungoliant to trouble the unhappy world'; she 'served none but herself... for all living things were her food, and her vomit darkness'. Sauron 'his cat he calls her, but she owns him not'. She had 'no softer spot... save only her eyes'.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:32581",
+   "t1_c_the_lord_of_the_rings.txt:32586"
+  ]
  },
  {
   "id": "shelobs_brood",
@@ -691,6 +807,10 @@
   "plate": "THE PLATE GOES BEYOND THE CORPUS, WHICH DOES NOT DESCRIBE THIS CREATURE. Of Shelob’s brood it says one thing — that “her lesser broods, bastards of the miserable mates, her own offspring, that she slew, spread from glen to glen, from the Ephel Dúath to the eastern hills” — and never their form. The horns, the beak, the steel-spine hairs and the claw at each leg’s end drawn here are Shelob’s own, lent to her offspring by this archive.",
   "plate_src": [
    "t1_c_the_lord_of_the_rings.txt:32502"
+  ],
+  "appearance": "absent",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:32501"
   ]
  },
  {
@@ -709,6 +829,13 @@
   "plate": "THE PLATE DEPARTS FROM THE CORPUS IN COLOUR ALONE. The Hobbit gives these spiders “hairy legs waving, nippers and spinners snapping, eyes popping”, bodies fat and huge, and blood that stains a blade black. It nowhere gives the body its own colour: the black gloss, and the clustered eyes — which are Shelob’s — are the archive’s own.",
   "plate_src": [
    "t1_b_the_hobbit_or_there_and_back_again.txt:4565"
+  ],
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_b_the_hobbit_or_there_and_back_again.txt:4565",
+   "t1_b_the_hobbit_or_there_and_back_again.txt:4403",
+   "t1_b_the_hobbit_or_there_and_back_again.txt:4575",
+   "t1_b_the_hobbit_or_there_and_back_again.txt:4418"
   ]
  },
  {
@@ -723,7 +850,15 @@
   "c": "Silm 8",
   "src": "t1_a_the_silmarillion.txt:4166",
   "tier": 1,
-  "note": "CONTESTED ORIGIN, and the text says so: 'The Eldar knew not whence she came; but some have said that in ages long before she descended from the darkness that lies about Arda... and that in the beginning she was one of those that he corrupted to his service.' Her end is likewise uncertain in the corpus. She drank the light of the Two Trees and 'belched forth black vapours as she drank'."
+  "note": "CONTESTED ORIGIN, and the text says so: 'The Eldar knew not whence she came; but some have said that in ages long before she descended from the darkness that lies about Arda... and that in the beginning she was one of those that he corrupted to his service.' Her end is likewise uncertain in the corpus. She drank the light of the Two Trees and 'belched forth black vapours as she drank'.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_a_the_silmarillion.txt:4173",
+   "t1_a_the_silmarillion.txt:4274",
+   "t1_a_the_silmarillion.txt:4279",
+   "t1_a_the_silmarillion.txt:4422",
+   "t1_1_the_book_of_lost_tales_part_one.txt:7799"
+  ]
  },
  {
   "id": "thuringwethil",
@@ -737,7 +872,14 @@
   "c": "Silm 19",
   "src": "t1_a_the_silmarillion.txt:8657",
   "tier": 1,
-  "note": "The only vampire named in the published Silmarillion. Whether 'vampire' names a kind or only a shape she took is not stated."
+  "note": "The only vampire named in the published Silmarillion. Whether 'vampire' names a kind or only a shape she took is not stated.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_a_the_silmarillion.txt:8658",
+   "t1_a_the_silmarillion.txt:15586",
+   "t1_a_the_silmarillion.txt:8689",
+   "t1_3_the_lays_of_beleriand.txt:13044"
+  ]
  },
  {
   "id": "uruloki",
@@ -751,7 +893,16 @@
   "c": "Silm 13",
   "src": "t1_a_the_silmarillion.txt:6063",
   "tier": 1,
-  "note": "The same passage gives the one general statement about the kind: 'He was yet young and scarce half-grown, for long and slow is the life of the dragons.' Urulóki is glossed in the Silmarillion index simply as 'Quenya word meaning fire-serpent, dragon' — so it is not certain the term is restricted to the wingless fire-drakes."
+  "note": "The same passage gives the one general statement about the kind: 'He was yet young and scarce half-grown, for long and slow is the life of the dragons.' Urulóki is glossed in the Silmarillion index simply as 'Quenya word meaning fire-serpent, dragon' — so it is not certain the term is restricted to the wingless fire-drakes.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_2_the_book_of_lost_tales_part_two.txt:4580",
+   "t1_a_the_silmarillion.txt:7520",
+   "t1_11_the_war_of_the_jewels.txt:2873",
+   "t1_f_the_children_of_hurin.txt:4311",
+   "t1_f_the_children_of_hurin.txt:4938",
+   "t1_f_the_children_of_hurin.txt:5026"
+  ]
  },
  {
   "id": "winged_dragons",
@@ -772,6 +923,13 @@
    "t1_4_the_shaping_of_middle_earth.txt:7324",
    "t1_g_the_fall_of_gondolin.txt:5576",
    "t1_a_the_silmarillion.txt:11740"
+  ],
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_5_the_lost_road_and_other_writings.txt:14150",
+   "t1_5_the_lost_road_and_other_writings.txt:14154",
+   "t1_4_the_shaping_of_middle_earth.txt:7324",
+   "t1_g_the_fall_of_gondolin.txt:5576"
   ]
  },
  {
@@ -793,6 +951,17 @@
    "t1_the_collected_poems_of_j_r_r_tolkien.txt:52560",
    "t1_the_collected_poems_of_j_r_r_tolkien.txt:52613",
    "t1_2_the_book_of_lost_tales_part_two.txt:4576"
+  ],
+  "appearance": "contradictory",
+  "appearance_src": [
+   "t1_the_collected_poems_of_j_r_r_tolkien.txt:52552",
+   "t1_the_collected_poems_of_j_r_r_tolkien.txt:52560",
+   "t1_the_collected_poems_of_j_r_r_tolkien.txt:52613",
+   "t1_2_the_book_of_lost_tales_part_two.txt:4576",
+   "t1_c_the_lord_of_the_rings.txt:48162",
+   "t1_c_appendix_tables_raw.txt:70",
+   "t1_c_the_lord_of_the_rings.txt:47776",
+   "t1_c_the_lord_of_the_rings.txt:43750"
   ]
  },
  {
@@ -807,7 +976,15 @@
   "c": "Hobbit I",
   "src": "t1_b_the_hobbit_or_there_and_back_again.txt:777",
   "tier": 1,
-  "note": "Thorin's account. Also from the same passage, on dragons as craftsmen: they 'make a thing for themselves, not even mend a little loose scale of their armour' — they hoard but cannot make. Smaug is called 'a most specially greedy, strong and wicked worm'."
+  "note": "Thorin's account. Also from the same passage, on dragons as craftsmen: they 'make a thing for themselves, not even mend a little loose scale of their armour' — they hoard but cannot make. Smaug is called 'a most specially greedy, strong and wicked worm'.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_b_the_hobbit_or_there_and_back_again.txt:775",
+   "t1_b_the_hobbit_or_there_and_back_again.txt:6006",
+   "t1_b_the_hobbit_or_there_and_back_again.txt:6012",
+   "t1_b_the_hobbit_or_there_and_back_again.txt:6327",
+   "t1_b_the_hobbit_or_there_and_back_again.txt:6339"
+  ]
  },
  {
   "id": "trolls",
@@ -821,7 +998,12 @@
   "c": "LotR App. F II",
   "src": "t1_c_the_lord_of_the_rings.txt:50613",
   "tier": 1,
-  "note": "Sauron 'made use of them, teaching them what little they could learn and increasing their wits with wickedness'. The Stone-trolls of the Westlands spoke a debased Common Speech. The older race turned to stone in the sun — Bilbo's three trolls do. What Trolls were made FROM is never stated in Appendix F; in Morgoth's Ring Tolkien reconsidered whether such creatures could be independent beings at all."
+  "note": "Sauron 'made use of them, teaching them what little they could learn and increasing their wits with wickedness'. The Stone-trolls of the Westlands spoke a debased Common Speech. The older race turned to stone in the sun — Bilbo's three trolls do. What Trolls were made FROM is never stated in Appendix F; in Morgoth's Ring Tolkien reconsidered whether such creatures could be independent beings at all.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:14869",
+   "t1_b_the_hobbit_or_there_and_back_again.txt:1085"
+  ]
  },
  {
   "id": "olog_hai",
@@ -835,7 +1017,11 @@
   "c": "LotR App. F II",
   "src": "t1_c_the_lord_of_the_rings.txt:50626",
   "tier": 1,
-  "note": "CONTESTED WITHIN THE TEXT ITSELF: 'That Sauron bred them none doubted, though from what stock was not known. Some held that they were not Trolls but giant Orcs; but the Olog-hai were in fashion of body and mind quite unlike even the largest of Orc-kind.' Unlike the older race they could endure the Sun 'so long as the will of Sauron held sway over them'. In Morgoth's Ring Christopher Tolkien notes his father later linked this passage to the question of Men-derived Orcs."
+  "note": "CONTESTED WITHIN THE TEXT ITSELF: 'That Sauron bred them none doubted, though from what stock was not known. Some held that they were not Trolls but giant Orcs; but the Olog-hai were in fashion of body and mind quite unlike even the largest of Orc-kind.' Unlike the older race they could endure the Sun 'so long as the will of Sauron held sway over them'. In Morgoth's Ring Christopher Tolkien notes his father later linked this passage to the question of Men-derived Orcs.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:50619"
+  ]
  },
  {
   "id": "orcs",
@@ -849,7 +1035,13 @@
   "c": "LotR App. F II",
   "src": "t1_c_the_lord_of_the_rings.txt:50577",
   "tier": 1,
-  "note": "THE MOST CONTESTED KIND IN THE LEGENDARIUM, and Tolkien never settled it. The published Silmarillion states the Avari theory: Melkor bred them from Quendi taken captive, 'in envy and mockery of the Elves'. But in Morgoth's Ring Christopher Tolkien tracks at least four positions: (1) Orcs 'made of stone', Morgoth's own creation; (2) 'a spawn of earth corrupted by Morgoth'; (3) the 'darker tale... told in Eressëa' of corrupted Avari; (4) a late note that 'The Orcs were beasts of humanized shape (to mock Men and Elves)', whose talking 'was really reeling off records set in them by Melkor'; and a still later view that they were Elvish in origin but that 'later some were probably derived from Men'. The single fixed point Tolkien kept returning to is Frodo's: 'The Shadow that bred them can only mock, it cannot make: not real new things of its own.'"
+  "note": "THE MOST CONTESTED KIND IN THE LEGENDARIUM, and Tolkien never settled it. The published Silmarillion states the Avari theory: Melkor bred them from Quendi taken captive, 'in envy and mockery of the Elves'. But in Morgoth's Ring Christopher Tolkien tracks at least four positions: (1) Orcs 'made of stone', Morgoth's own creation; (2) 'a spawn of earth corrupted by Morgoth'; (3) the 'darker tale... told in Eressëa' of corrupted Avari; (4) a late note that 'The Orcs were beasts of humanized shape (to mock Men and Elves)', whose talking 'was really reeling off records set in them by Melkor'; and a still later view that they were Elvish in origin but that 'later some were probably derived from Men'. The single fixed point Tolkien kept returning to is Frodo's: 'The Shadow that bred them can only mock, it cannot make: not real new things of its own.'",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:14908",
+   "t1_c_the_lord_of_the_rings.txt:20163",
+   "t1_the_letters_of_j_r_r_tolkien.txt:11739"
+  ]
  },
  {
   "id": "watcher",
@@ -863,7 +1055,11 @@
   "c": "LotR II.4",
   "src": "t1_c_the_lord_of_the_rings.txt:14190",
   "tier": 1,
-  "note": "Its kind is never stated and it is never seen whole — only 'twenty other arms' and 'many coiling arms'. Its name comes from Ori's last entry in the Book of Mazarbul: 'the pool is up to the wall at Westgate. The Watcher in the Water took Óin.' Gandalf says later only that 'Something has crept, or has been driven out of dark waters under the mountains. There are older and fouler things than Orcs in the deep places of the world.'"
+  "note": "Its kind is never stated and it is never seen whole — only 'twenty other arms' and 'many coiling arms'. Its name comes from Ori's last entry in the Book of Mazarbul: 'the pool is up to the wall at Westgate. The Watcher in the Water took Óin.' Gandalf says later only that 'Something has crept, or has been driven out of dark waters under the mountains. There are older and fouler things than Orcs in the deep places of the world.'",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:14190"
+  ]
  },
  {
   "id": "balrogs",
@@ -877,7 +1073,13 @@
   "c": "LotR II.5",
   "src": "t1_c_the_lord_of_the_rings.txt:15108",
   "tier": 1,
-  "note": "THE CORPUS DESCRIBES THEM AT LENGTH, which is unusual among the monsters. The Bridge of Khazad-dûm gives the fullest portrait: ‘Its streaming mane kindled, and blazed behind it. In its right hand was a blade like a stabbing tongue of fire; in its left it held a whip of many thongs’ (LotR II.5), and ‘Fire came from its nostrils’. THEIR ORIGIN IS GIVEN SEPARATELY: ‘These were the first made of his creatures: their hearts were of fire, but they were cloaked in darkness, and terror went before them; they had whips of flame. Balrogs they were named by the Noldor in later days’ (Morgoth’s Ring, t1_10_morgoths_ring.txt:6109-6111). THE WINGS ARE THE ONE THING THE CORPUS DOES NOT SETTLE, AND THIS ARCHIVE DOES NOT SETTLE THEM EITHER. Two sentences stand nine lines apart in the same passage: ‘the shadow about it reached out like two vast wings’ (:15144) is a simile, and its subject is the SHADOW; ‘its wings were spread from wall to wall’ (:15153) is not a simile and its subject is the Balrog. Both are Tolkien’s, in one scene, and the archive records the tension rather than choosing — a reading either way would be the archive deciding what the author left standing. No plate is drawn for that reason."
+  "note": "THE CORPUS DESCRIBES THEM AT LENGTH, which is unusual among the monsters. The Bridge of Khazad-dûm gives the fullest portrait: ‘Its streaming mane kindled, and blazed behind it. In its right hand was a blade like a stabbing tongue of fire; in its left it held a whip of many thongs’ (LotR II.5), and ‘Fire came from its nostrils’. THEIR ORIGIN IS GIVEN SEPARATELY: ‘These were the first made of his creatures: their hearts were of fire, but they were cloaked in darkness, and terror went before them; they had whips of flame. Balrogs they were named by the Noldor in later days’ (Morgoth’s Ring, t1_10_morgoths_ring.txt:6109-6111). THE WINGS ARE THE ONE THING THE CORPUS DOES NOT SETTLE, AND THIS ARCHIVE DOES NOT SETTLE THEM EITHER. Two sentences stand nine lines apart in the same passage: ‘the shadow about it reached out like two vast wings’ (:15144) is a simile, and its subject is the SHADOW; ‘its wings were spread from wall to wall’ (:15153) is not a simile and its subject is the Balrog. Both are Tolkien’s, in one scene, and the archive records the tension rather than choosing — a reading either way would be the archive deciding what the author left standing. No plate is drawn for that reason.",
+  "appearance": "contradictory",
+  "appearance_src": [
+   "t1_c_the_lord_of_the_rings.txt:15108",
+   "t1_c_the_lord_of_the_rings.txt:15145",
+   "t1_10_morgoths_ring.txt:6109"
+  ]
  },
  {
   "id": "ravens_erebor",
@@ -891,7 +1093,11 @@
   "c": "Hobbit XV",
   "src": "t1_b_the_hobbit_or_there_and_back_again.txt:7146",
   "tier": 1,
-  "note": "Thorin distinguishes them sharply from crows: 'Those were crows! And nasty suspicious-looking creatures at that, and rude as well... But the ravens are different.' Roäc son of Carc, their chief, was 153 years old and spoke the Common Speech. They took payment in bright things."
+  "note": "Thorin distinguishes them sharply from crows: 'Those were crows! And nasty suspicious-looking creatures at that, and rude as well... But the ravens are different.' Roäc son of Carc, their chief, was 153 years old and spoke the Common Speech. They took payment in bright things.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_b_the_hobbit_or_there_and_back_again.txt:7162"
+  ]
  },
  {
   "id": "thrush_erebor",
@@ -905,7 +1111,12 @@
   "c": "Hobbit XIV",
   "src": "t1_b_the_hobbit_or_there_and_back_again.txt:6942",
   "tier": 1,
-  "note": "'Marvelling he found he could understand its tongue, for he was of the race of Dale.' The thrushes of Dale are a long-lived, speaking kind but are never given a name; the old thrush is described only as 'watching from a high perch with beady eyes and head cocked on one side'."
+  "note": "'Marvelling he found he could understand its tongue, for he was of the race of Dale.' The thrushes of Dale are a long-lived, speaking kind but are never given a name; the old thrush is described only as 'watching from a high perch with beady eyes and head cocked on one side'.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_b_the_hobbit_or_there_and_back_again.txt:5875",
+   "t1_b_the_hobbit_or_there_and_back_again.txt:5891"
+  ]
  },
  {
   "id": "kirinki",
@@ -919,7 +1130,12 @@
   "c": "UT II.1, Description of Númenor",
   "src": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5290",
   "tier": 1,
-  "note": "The smallest of the birds of Númenor, set against 'the great eagles that were held sacred to Manwë' at the other end of the same sentence."
+  "note": "The smallest of the birds of Númenor, set against 'the great eagles that were held sacred to Manwë' at the other end of the same sentence.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:5290",
+   "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt:14097"
+  ]
  },
  {
   "id": "moths_mirkwood",
@@ -933,7 +1149,11 @@
   "c": "Hobbit VIII",
   "src": "t1_b_the_hobbit_or_there_and_back_again.txt:4027",
   "tier": 1,
-  "note": "Named only as a plague of the forest. The moth that warns Gandalf at Orthanc is not in Tolkien's text and has no source in this corpus."
+  "note": "Named only as a plague of the forest. The moth that warns Gandalf at Orthanc is not in Tolkien's text and has no source in this corpus.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_b_the_hobbit_or_there_and_back_again.txt:4027"
+  ]
  },
  {
   "id": "butterflies_mirkwood",
@@ -947,7 +1167,11 @@
   "c": "Hobbit VIII",
   "src": "t1_b_the_hobbit_or_there_and_back_again.txt:4216",
   "tier": 1,
-  "note": "The narrator hedges the identification ('I expect they were a kind of'). Bilbo alone of the company saw them, from the treetop. In The Fall of Gondolin it is said that 'all butterflies and their kindred were born in the valley of the Land of Willows'."
+  "note": "The narrator hedges the identification ('I expect they were a kind of'). Bilbo alone of the company saw them, from the treetop. In The Fall of Gondolin it is said that 'all butterflies and their kindred were born in the valley of the Land of Willows'.",
+  "appearance": "described",
+  "appearance_src": [
+   "t1_b_the_hobbit_or_there_and_back_again.txt:4216"
+  ]
  },
  {
   "id": "fish_forest_river",
@@ -961,7 +1185,11 @@
   "c": "Hobbit IX–X",
   "src": "t1_b_the_hobbit_or_there_and_back_again.txt:4964",
   "tier": 1,
-  "note": "NAMED BUT NOT DESCRIBED — indeed barely named. Despite the Forest River being travelled at length in Barrels Out of Bond, no fish of it is ever mentioned; the only fish in The Hobbit are Gollum's blind fish of the underground lake ('fish whose fathers swam in, goodness only knows how many years ago') and the Lake-men's proverbial 'poisoned fish' that Bard was mocked for foreboding. The absence is worth recording: Tolkien named the trees, birds, moths and butterflies of Mirkwood but never its fish."
+  "note": "NAMED BUT NOT DESCRIBED — indeed barely named. Despite the Forest River being travelled at length in Barrels Out of Bond, no fish of it is ever mentioned; the only fish in The Hobbit are Gollum's blind fish of the underground lake ('fish whose fathers swam in, goodness only knows how many years ago') and the Lake-men's proverbial 'poisoned fish' that Bard was mocked for foreboding. The absence is worth recording: Tolkien named the trees, birds, moths and butterflies of Mirkwood but never its fish.",
+  "appearance": "absent",
+  "appearance_src": [
+   "t1_b_the_hobbit_or_there_and_back_again.txt:4964"
+  ]
  },
  {
   "id": "mirian",
@@ -989,6 +1217,13 @@
   "c": "Silm 5",
   "src": "t1_a_the_silmarillion.txt:3650",
   "tier": 1,
-  "note": "Tolkien never gives a bestiary of Valinor. What the corpus offers is scattered: Oromë's horse Nahar and his hounds; the swans of Ossë; Manwë's eagles; Yavanna's kelvar generally. Oromë alone of the Valar 'came often to Middle-earth in the Elder Days', 'pursuing to the death the monsters and fell creatures of the kingdom of Melkor'. The quotation stands here for the one gift of living beasts out of Valinor that the text records in full."
+  "note": "Tolkien never gives a bestiary of Valinor. What the corpus offers is scattered: Oromë's horse Nahar and his hounds; the swans of Ossë; Manwë's eagles; Yavanna's kelvar generally. Oromë alone of the Valar 'came often to Middle-earth in the Elder Days', 'pursuing to the death the monsters and fell creatures of the kingdom of Melkor'. The quotation stands here for the one gift of living beasts out of Valinor that the text records in full.",
+  "appearance": "partly",
+  "appearance_src": [
+   "t1_a_the_silmarillion.txt:2383",
+   "t1_a_the_silmarillion.txt:2782",
+   "t1_a_the_silmarillion.txt:3327",
+   "t1_a_the_silmarillion.txt:3650"
+  ]
  }
 ]
