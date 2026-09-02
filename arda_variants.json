@@ -31,7 +31,7 @@
  "extends": {
   "dataset": "site/arda_contradictions.json",
   "entries_there": 17,
-  "anchored_here": 9,
+  "anchored_here": 10,
   "not_yet_anchored": [
    "'Noldorin' versus Sindarin",
    "Amroth's parentage",
@@ -63,17 +63,17 @@
   "resolver": "ardatext.corpus_files() -- the citable set under the owner's ruling of 31 July"
  },
  "counts": {
-  "variants": 18,
-  "readings": 55,
+  "variants": 19,
+  "readings": 59,
   "subjects_with_2_readings": 8,
   "subjects_with_3_readings": 4,
-  "subjects_with_4_or_more": 6,
+  "subjects_with_4_or_more": 7,
   "adjudicated": 3,
-  "unadjudicated": 15,
+  "unadjudicated": 16,
   "source_declines": 4,
   "later_state_unknown": 2,
-  "volumes": 10,
-  "extends_contradictions": 9,
+  "volumes": 12,
+  "extends_contradictions": 10,
   "new_subjects": 9,
   "refused": 0,
   "silences_probed": 4,
@@ -82,16 +82,16 @@
   "by_kind": {
    "authorial revision within one text": 3,
    "designated by the author": 1,
-   "draft evolution": 7,
+   "draft evolution": 8,
    "editorial choice vs manuscript": 3,
    "unreconciled / intentional ambiguity": 4
   },
-  "variants_with_publication_layer": 18,
-  "readings_with_tradition": 55,
+  "variants_with_publication_layer": 19,
+  "readings_with_tradition": 56,
   "readings_with_publication_layer": 48,
-  "readings_layer_null": 7,
+  "readings_layer_null": 11,
   "by_layer": {
-   "(null)": 7,
+   "(null)": 11,
    "CHRISTOPHER_TOLKIEN_EDITORIAL": 7,
    "SCHOLARLY_INTERPRETATION": 1,
    "TOLKIEN_PRIMARY_POSTHUMOUS": 35,
@@ -116,13 +116,107 @@
    "rateliff_hoh": 1,
    "return_of_shadow": 2,
    "shibboleth": 4,
-   "silm77": 6,
+   "silm77": 7,
    "toy_2a": 2
   },
   "traditions_registered": 26,
   "traditions_refused": 10
  },
  "variants": [
+  {
+   "id": "gelion-tributaries",
+   "subject": "How many tributaries has Gelion, in what order, and what are they called?",
+   "kind": "draft evolution",
+   "readings": [
+    {
+     "name": "six, Ascar to Adurant, with Legolin third and Duilwen fifth",
+     "says": "The published text gives six tributaries -- Ascar, Thalos, Legolin, Brilthor, Duilwen, Adurant -- and this is the form the archive's gazetteer follows.",
+     "q": "Brilthor, Duilwen, and Adurant, swift and turbulent streams",
+     "src": "t1_a_the_silmarillion.txt:6329",
+     "text": "Brilthor, Duilwen, and Adurant, swift and turbulent streams,",
+     "witness": "The Silmarillion (published text), ch. 14",
+     "tier": 1,
+     "conf": "C",
+     "tradition": [
+      "silm77"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Silmarillion. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": null,
+     "publication_layer_basis": "**IT TAKES TWO OF THE NINETEEN AT ONCE AND §IV HAS NO WORD FOR BOTH.** It is `TOLKIEN_PRIMARY_POSTHUMOUS` -- his writing, first printed in 1977, four years after his death -- and it is `CHRISTOPHER_TOLKIEN_EDITORIAL`, the paradigm case of the §I.3 category *Christopher Tolkien's editorial selections and arrangements*. C488 forbids averaging a volume that cannot take one value and C517 forbids choosing the likelier one; so this is null, and what would settle it is a reader opening the chapter and declaring the sentence, per C548. NULL, NEVER AVERAGED. WHAT WOULD SETTLE IT: a reader opening the locus in `src` and declaring the sentence, on C548's mechanism."
+    },
+    {
+     "name": "first written: six, with Loeglin and NO Duilwen",
+     "says": "The earliest state names Loeglin where the published text has Legolin, has no Duilwen at all, and calls Gelion itself Flend.",
+     "q": "The rivers were first written Flend, Ascar, Thalos, Loeglin, Brilthor, Adurant.",
+     "src": "t1_4_the_shaping_of_middle_earth.txt:6215",
+     "text": "(The rivers were first written Flend, Ascar, Thalos, Loeglin, Brilthor, Adurant.",
+     "witness": "The Shaping of Middle-earth, Christopher Tolkien's textual note",
+     "tier": 1,
+     "conf": "C",
+     "tradition": [],
+     "tradition_basis": "NO REGISTERED TEXT. map/traditions.py resolves only sigla this archive writes and refuses volume names by name; nothing in this witness sentence named a text.",
+     "publication_layer": null,
+     "publication_layer_basis": "No registered text, so nothing to inherit from."
+    },
+    {
+     "name": "Legolin replaces Loeglin, and Duilwen is moved",
+     "says": "The same note states the two changes that produce the published order: Legolin replaces Loeglin, and Duilwen -- added later, between Thalos and Loeglin -- is moved to sit between Brilthor and Adurant.",
+     "q": "Loeglin and Duilwen was moved to stand between Brilthor and Adurant.",
+     "src": "t1_4_the_shaping_of_middle_earth.txt:6217",
+     "text": "Loeglin and Duilwen was moved to stand between Brilthor and Adurant.)",
+     "witness": "The Shaping of Middle-earth, Christopher Tolkien's textual note",
+     "tier": 1,
+     "conf": "C",
+     "tradition": [],
+     "tradition_basis": "NO REGISTERED TEXT. map/traditions.py resolves only sigla this archive writes and refuses volume names by name; nothing in this witness sentence named a text.",
+     "publication_layer": null,
+     "publication_layer_basis": "No registered text, so nothing to inherit from."
+    },
+    {
+     "name": "the Lost Road list, already in the published order",
+     "says": "A later text lists the rivers in the order the published Silmarillion keeps, with Legolin and with Duilwen in its moved position.",
+     "q": "Thalos, Legolin, Brilthor, Duilwen, and Adurant, was not sub",
+     "src": "t1_5_the_lost_road_and_other_writings.txt:5451",
+     "text": "Thalos, Legolin, Brilthor, Duilwen, and Adurant, was not sub-",
+     "witness": "The Lost Road and Other Writings",
+     "tier": 1,
+     "conf": "C",
+     "tradition": [],
+     "tradition_basis": "NO REGISTERED TEXT. map/traditions.py resolves only sigla this archive writes and refuses volume names by name; nothing in this witness sentence named a text.",
+     "publication_layer": null,
+     "publication_layer_basis": "No registered text, so nothing to inherit from."
+    }
+   ],
+   "n_readings": 4,
+   "witnesses": [
+    "The Lost Road and Other Writings",
+    "The Shaping of Middle-earth, Christopher Tolkien's textual note",
+    "The Silmarillion (published text), ch. 14"
+   ],
+   "volumes": [
+    "t1_4_the_shaping_of_middle_earth.txt",
+    "t1_5_the_lost_road_and_other_writings.txt",
+    "t1_a_the_silmarillion.txt"
+   ],
+   "later_state": {
+    "known": true,
+    "conf": "C",
+    "why": "THE DIRECTION OF CHANGE IS STATED IN THE CORPUS AND NOT INFERRED FROM PRINT ORDER. Christopher Tolkien's note gives the sequence in words -- 'first written ... then added ... then Legolin replaced Loeglin ... and Duilwen was moved' -- so this is conf C on the ORDER OF COMPOSITION, which is the property the field records. It is not a judgement about which name is correct."
+   },
+   "declines_to_choose": false,
+   "adjudication": null,
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "silm77"
+   ],
+   "also_in": {
+    "dataset": "site/arda_contradictions.json",
+    "subject": "The rivers of Ossiriand",
+    "present": false,
+    "note": "the standing register describes this tension in prose; this record anchors each reading to a corpus line. The two are not duplicates: one says THAT the archive disagrees with itself, the other says WHERE."
+   }
+  },
   {
    "id": "gilgalad-father",
    "subject": "Whose son was Gil-galad?",
