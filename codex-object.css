@@ -1118,15 +1118,22 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
     background:rgba(255,250,236,.42); }
 }
 
-:root[data-codex-object="on"] .book .leaf > aside.marg-plate{
+:root[data-codex-object="on"] .book .leaf > aside.marg-plate,
+:root[data-codex-object="on"] .book .leaf > aside.marg-silence{
   max-height:none; z-index:2; }
-:root[data-codex-object="on"] .book .leaf > aside.marg-plate > b{
+:root[data-codex-object="on"] .book .leaf > aside.marg-plate > b,
+:root[data-codex-object="on"] .book .leaf > aside.marg-silence > b{
   padding-bottom:2px; margin-bottom:4px; border-bottom:1px solid var(--rule); }
+
+:root[data-codex-object="on"] .book .leaf > aside.marg-silence{ color:#5a5348; font-style:italic; }
 
 @media (max-width:1000px){
   :root[data-codex-object="on"] .book .leaf > aside.marg-plate,
   :root[data-codex-object="on"] .book .leaf.l > aside.marg-plate,
-  :root[data-codex-object="on"] .book .leaf.r > aside.marg-plate{
+  :root[data-codex-object="on"] .book .leaf.r > aside.marg-plate,
+  :root[data-codex-object="on"] .book .leaf > aside.marg-silence,
+  :root[data-codex-object="on"] .book .leaf.l > aside.marg-silence,
+  :root[data-codex-object="on"] .book .leaf.r > aside.marg-silence{
     position:static; width:auto; left:auto; right:auto; top:auto !important; transform:none;
     margin:10px 0 0; padding:8px 10px; border-left:2px solid var(--rule);
     background:rgba(255,250,236,.42); }
