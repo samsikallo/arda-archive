@@ -133,7 +133,9 @@ function card(x,named){
   +quoteBlock(x.q,x.c,x.src)
   +(x.use?'<div style="font-size:12.4px;margin-top:.35em">'+esc(x.use)+'</div>':'')
   +(x.end?'<div style="font-size:12.4px;margin-top:.35em"><b>its end:</b> '+esc(x.end)+'</div>':'')
-  +(!x.q?'<span class="warn">Named in the texts but never described — the silence is itself recorded.</span>':'')
+  +(!x.q?'<span class="warn">'+(x.note
+      ?'This archive records no quotation for it. What was searched for, and what was found, is in the note below.'
+      :'This archive records no quotation for it, and has not established why. That is a gap in the archive, not a statement about Tolkien.')+'</span>':'')
   +(x.plate?'<span class="warn plate">'+esc(x.plate)+plateCite(x)+'</span>':'')
   +(x.note?'<span class="warn">'+esc(x.note)+'</span>':'')+'</div>';
 }
