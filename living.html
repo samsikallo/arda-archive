@@ -32,6 +32,8 @@ background:radial-gradient(ellipse at 15% 5%,rgba(255,252,240,.8),rgba(0,0,0,0) 
 .warn{display:block;margin-top:5px;font-size:11px;color:#8a5a12;background:#fdf3df;border:1px solid #d0a53c;border-radius:7px;padding:3px 7px}
 .warn.plate{color:#6b4a2a;background:#f6ece0;border-color:#b98a55}
 .warn.plate .plate-cite{display:block;margin-top:4px;font-size:10.5px;color:#7a5c3a;font-style:italic}
+.portrait-line{margin-top:6px;font-size:12.2px;color:#4a3f2c;border-left:3px solid #b98a55;padding-left:8px}
+.portrait-line .plate-cite{display:block;margin-top:3px;font-size:10.5px;color:#7a5c3a;font-style:italic}
 .orn{text-align:center;color:#b0a58e;margin:.6em 0;font-size:12px;letter-spacing:.3em}
 #none{color:var(--mut);font-style:italic;margin:20px 2px}
 #lb{display:none;position:fixed;inset:0;background:rgba(20,16,10,.9);z-index:99;align-items:center;justify-content:center;flex-direction:column;gap:10px;padding:20px;cursor:zoom-out}
@@ -113,6 +115,12 @@ function locus(s){
  if(!m) return String(s);
  return (BOOKS[m[1]]||m[1])+", line "+m[2];
 }
+function srcCite(a){
+ if(!a||!a.length) return "";
+ const seen=[],out=[];
+ a.forEach(s=>{const t=locus(s); if(seen.indexOf(t)<0){seen.push(t);out.push(t);}});
+ return '<span class="cite plate-cite">'+esc(out.join(" \u00b7 "))+'</span>';
+}
 function plateCite(x){
  if(!x.plate_src||!x.plate_src.length) return "";
  const seen=[],out=[];
@@ -136,6 +144,8 @@ function card(x,named){
   +(!x.q?'<span class="warn">'+(x.note
       ?'This archive records no quotation for it. What was searched for, and what was found, is in the note below.'
       :'This archive records no quotation for it, and has not established why. That is a gap in the archive, not a statement about Tolkien.')+'</span>':'')
+  +(x.portrait?'<div class="portrait-line"><b>What the corpus says it looks like:</b> '
+      +esc(x.portrait)+srcCite(x.portrait_src)+'</div>':'')
   +(x.plate?'<span class="warn plate">'+esc(x.plate)+plateCite(x)+'</span>':'')
   +(x.note?'<span class="warn">'+esc(x.note)+'</span>':'')+'</div>';
 }
