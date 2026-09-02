@@ -31,7 +31,7 @@
  "extends": {
   "dataset": "site/arda_contradictions.json",
   "entries_there": 17,
-  "anchored_here": 10,
+  "anchored_here": 11,
   "not_yet_anchored": [
    "'Noldorin' versus Sindarin",
    "Amroth's parentage",
@@ -63,17 +63,17 @@
   "resolver": "ardatext.corpus_files() -- the citable set under the owner's ruling of 31 July"
  },
  "counts": {
-  "variants": 19,
-  "readings": 59,
-  "subjects_with_2_readings": 8,
+  "variants": 20,
+  "readings": 61,
+  "subjects_with_2_readings": 9,
   "subjects_with_3_readings": 4,
   "subjects_with_4_or_more": 7,
   "adjudicated": 3,
-  "unadjudicated": 16,
+  "unadjudicated": 17,
   "source_declines": 4,
-  "later_state_unknown": 2,
+  "later_state_unknown": 3,
   "volumes": 12,
-  "extends_contradictions": 10,
+  "extends_contradictions": 11,
   "new_subjects": 9,
   "refused": 0,
   "silences_probed": 4,
@@ -83,19 +83,19 @@
    "authorial revision within one text": 3,
    "designated by the author": 1,
    "draft evolution": 8,
-   "editorial choice vs manuscript": 3,
+   "editorial choice vs manuscript": 4,
    "unreconciled / intentional ambiguity": 4
   },
-  "variants_with_publication_layer": 19,
-  "readings_with_tradition": 56,
-  "readings_with_publication_layer": 48,
+  "variants_with_publication_layer": 20,
+  "readings_with_tradition": 58,
+  "readings_with_publication_layer": 50,
   "readings_layer_null": 11,
   "by_layer": {
    "(null)": 11,
    "CHRISTOPHER_TOLKIEN_EDITORIAL": 7,
    "SCHOLARLY_INTERPRETATION": 1,
-   "TOLKIEN_PRIMARY_POSTHUMOUS": 35,
-   "TOLKIEN_PRIMARY_PUBLISHED": 5
+   "TOLKIEN_PRIMARY_POSTHUMOUS": 36,
+   "TOLKIEN_PRIMARY_PUBLISHED": 6
   },
   "by_tradition": {
    "aam": 5,
@@ -103,11 +103,12 @@
    "elessar": 6,
    "ga": 2,
    "galadriel_celeborn": 1,
+   "heirs_of_elendil": 1,
    "istari": 2,
    "last_writings": 2,
    "line_of_elros": 1,
    "lost_tales": 2,
-   "lotr_appa": 1,
+   "lotr_appa": 2,
    "lotr_narr": 4,
    "myths_transformed": 1,
    "nome": 2,
@@ -123,6 +124,72 @@
   "traditions_refused": 10
  },
  "variants": [
+  {
+   "id": "calimmacil-father",
+   "subject": "Whose son was Calimmacil?",
+   "kind": "editorial choice vs manuscript",
+   "readings": [
+    {
+     "name": "son of Narmacil II",
+     "says": "Christopher Tolkien reports that ALL THREE of the texts he is editing make Calimmacil the son of Narmacil II directly.",
+     "q": "In all three texts Kalimmakil was the son of Narmakil II",
+     "src": "t1_12_the_peoples_of_middle_earth.txt:7130",
+     "text": "In all three texts Kalimmakil was the son of Narmakil II, but in Appendix A (RK p. 330) the son",
+     "witness": "The Heirs of Elendil, PoME -- 'all three texts'",
+     "tier": 1,
+     "conf": "C",
+     "tradition": [
+      "heirs_of_elendil"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- The Heirs of Elendil. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_POSTHUMOUS",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Heirs of Elendil, and its line-tables (PoME) is TOLKIEN_PRIMARY_POSTHUMOUS, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
+    },
+    {
+     "name": "son of Arciryas, who is Narmacil's brother",
+     "says": "The PUBLISHED Appendix A instead inserts a generation: Calimmacil is the son of Arciryas, and Arciryas is Narmacil's BROTHER. This is the reading the archive's own tree follows, and it is why Arciryas is a sibling and not a son.",
+     "q": "of Arciryas the brother of Narmakil",
+     "src": "t1_12_the_peoples_of_middle_earth.txt:7131",
+     "text": "of Arciryas the brother of Narmakil.",
+     "witness": "The Lord of the Rings, Appendix A (RK p. 330), as reported in PoME",
+     "tier": 1,
+     "conf": "C",
+     "tradition": [
+      "lotr_appa"
+     ],
+     "tradition_basis": "resolved from this reading's own `witness` by map/traditions.py, on the siglum/sigla -- Appendix A. The witness sentence is published above and the corpus locus is in `src`, so the normalisation can be checked against the line itself.",
+     "publication_layer": "TOLKIEN_PRIMARY_PUBLISHED",
+     "publication_layer_basis": "INHERITED FROM THE TEXT, not from the file: The Lord of the Rings, Appendix A -- Annals of the Kings and Rulers is TOLKIEN_PRIMARY_PUBLISHED, and this reading's own hand-written witness places the line in it. NOT synthesised from `tier` -- C488 forbids it in terms and C517 is the same fault one level down."
+    }
+   ],
+   "n_readings": 2,
+   "witnesses": [
+    "The Heirs of Elendil, PoME -- 'all three texts'",
+    "The Lord of the Rings, Appendix A (RK p. 330), as reported in PoME"
+   ],
+   "volumes": [
+    "t1_12_the_peoples_of_middle_earth.txt"
+   ],
+   "later_state": {
+    "known": false,
+    "conf": null,
+    "why": "THE CORPUS STATES THE DISAGREEMENT AND NOT ITS DIRECTION. Christopher contrasts 'all three texts' with 'Appendix A' in one sentence without saying which state is later, and Appendix A is published while the three texts are drafts -- but C366(2) holds that 'published' means the last form Tolkien brought it to, which is not established here. A direction inferred from print order would be exactly the assumption this register exists to refuse."
+   },
+   "declines_to_choose": false,
+   "adjudication": null,
+   "publication_layer": "TEXTUAL_VARIANT",
+   "publication_layer_basis": "C489's own arithmetic: 4 variants of kind 'unreconciled / intentional ambiguity' are TEXTUALLY_AMBIGUOUS and the 14 of the other four kinds are TEXTUAL_VARIANT. READ FROM `kind`, which is set by hand in this generator's seed, and never from a tier or a filename. THIS RECORD'S LAYER IS ABOUT THE VARIANT, not about any one reading: the readings carry their own, inherited from the text each is witnessed to, and the two are different statements about different records.",
+   "traditions": [
+    "heirs_of_elendil",
+    "lotr_appa"
+   ],
+   "also_in": {
+    "dataset": "site/arda_contradictions.json",
+    "subject": "The descent of Earnil II",
+    "present": false,
+    "note": "the standing register describes this tension in prose; this record anchors each reading to a corpus line. The two are not duplicates: one says THAT the archive disagrees with itself, the other says WHERE."
+   }
+  },
   {
    "id": "gelion-tributaries",
    "subject": "How many tributaries has Gelion, in what order, and what are they called?",
