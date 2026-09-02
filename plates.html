@@ -12,7 +12,17 @@
 <!--ARDA:CODEX-HEAD--><link rel="stylesheet" href="codex-object.css"><link rel="stylesheet" href="codex-backdrops.css"><script src="codex-turn.js" defer></script><script src="codex-hall.js" defer></script><!--/ARDA:CODEX-HEAD-->
 <script src="nav.js" defer></script>
 <style>
-:root{--ink:#3a3226;--mut:#7a6a50;--line:#b0a58e;--gold:#8a6d1f;--bg:#efe6cd;--card:#fdfaf2;
+/* `--line` IS `--catline` HERE, AND THE RENAME IS A TYPE COLLISION RATHER THAN A PREFERENCE.
+   C858 put a codex leaf on this page, and `codex-object.css:374` sets `--line` ON `.leaf` as the
+   RULING LINE HEIGHT: `.leaf{--line:21px}`, and `13.6px` under `[data-hand="authentic"]`. A rule
+   of this page's that says `border:1px solid var(--line)` therefore resolves to
+   `border:1px solid 13.6px` INSIDE a leaf -- an invalid value, so the WHOLE declaration is
+   dropped and the border silently vanishes. Measured in a browser at 1440x900: after
+   `site/codex-hall.js` paginates, every one of the 22 catalogue cards is inside a leaf, so every
+   `var(--line)` below was in that position. `--ink` and `--gold` are shadowed too and are LEFT
+   ALONE deliberately: both sides use them as colours, so the worst case is a shade, and 34 of 34
+   halls in this archive redeclare them. A colour shadowed by a LENGTH is a different fault. */
+:root{--ink:#3a3226;--mut:#7a6a50;--catline:#b0a58e;--gold:#8a6d1f;--bg:#efe6cd;--card:#fdfaf2;
       --no:#8d2f26;--yes:#2b4a2f}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);
@@ -25,27 +35,45 @@ h1{margin:0;font:600 29px/1.2 Cinzel,Georgia,serif;letter-spacing:.13em;color:#e
    text-wrap:balance}
 header p{margin:11px auto 0;max-width:64ch;color:#b09d6c;font-style:italic;font-size:14.5px}
 main{max-width:960px;margin:0 auto;padding:20px 22px}
-.lede{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);
+/* ── THESE THREE ARE SELECTED BY TAG **AND** CLASS, AND BOTH HALVES WERE PAID FOR -- C858. ──
+   This page's <style> is declared AFTER codex-object.css (see the ordering note above), so a bare
+   `h2` or `.lede` here reaches INTO the codex leaf the page now carries: the leaf's opening is
+   `<h2 class="rubric">` and `<p class="lede">`. `.lede{background;border;border-radius;padding}`
+   at (0,1,0) is the SAME specificity as codex-object.css:234 and LATER in the cascade, so it wins
+   outright and boxes the leaf's opening sentence in a card.
+
+   SCOPING THEM UNDER `#main` WAS THE FIRST FIX AND A BROWSER REFUTED IT. Every element these
+   rules are for IS inside `<main id="main">` in the file -- and `site/codex-hall.js` paginates
+   the hall's matter at load and LIFTS those elements OUT of `#main` into the leaves it deals.
+   Measured at 1440x900 on the built page: all five group headings came back `inMain: false`,
+   19.8px EB Garamond instead of 21px Cinzel, with the rule under the heading gone. A scope that
+   depends on an ancestor the runtime moves is not a scope.
+
+   A CLASS TRAVELS WITH THE ELEMENT, WHICH AN ANCESTOR DOES NOT. `h2.grp` and `div.lede` cannot
+   match anything in the leaf's own furniture -- the leaf's h2 carries `rubric` and its lede is a
+   `<p>` -- and they keep matching wherever the paginator puts the catalogue's own matter. */
+div.lede{background:var(--card);border:1px solid var(--catline);
+      border-left:4px solid var(--gold);
       border-radius:8px;padding:14px 18px;margin:18px 0 26px}
-.lede p{margin:0 0 8px}
-.lede p:last-child{margin:0}
-h2{margin:30px 0 2px;font:400 21px/1.3 Cinzel,Georgia,serif;letter-spacing:.05em;color:#5a4626;
-   border-bottom:1px solid var(--line);padding-bottom:5px}
-h2 .n{font:400 13px 'EB Garamond',serif;color:var(--mut);letter-spacing:0}
+div.lede p{margin:0 0 8px}
+div.lede p:last-child{margin:0}
+h2.grp{margin:30px 0 2px;font:400 21px/1.3 Cinzel,Georgia,serif;letter-spacing:.05em;
+   color:#5a4626;border-bottom:1px solid var(--catline);padding-bottom:5px}
+h2.grp .n{font:400 13px 'EB Garamond',serif;color:var(--mut);letter-spacing:0}
 .gnote{margin:6px 0 14px;color:var(--mut);font-size:14px;font-style:italic}
-article{background:var(--card);border:1px solid var(--line);border-radius:8px;
+article{background:var(--card);border:1px solid var(--catline);border-radius:8px;
         padding:13px 17px 15px;margin:11px 0}
 h3{margin:0 0 3px;font:600 17px/1.35 Georgia,serif;color:#40351f;text-wrap:balance}
 .by{margin:0 0 9px;color:var(--mut);font-size:14.5px}
 dl{display:grid;grid-template-columns:max-content 1fr;gap:3px 14px;margin:0;font-size:14.5px}
 dt{color:var(--mut);font-variant:small-caps;letter-spacing:.04em}
 dd{margin:0;min-width:0;overflow-wrap:anywhere}
-.terms{margin-top:10px;padding-top:9px;border-top:1px dashed var(--line)}
+.terms{margin-top:10px;padding-top:9px;border-top:1px dashed var(--catline)}
 .v{font-weight:600}
 .no{color:var(--no)}
 .yes{color:var(--yes)}
 .tag{display:inline-block;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;
-     border:1px solid var(--line);border-radius:99px;padding:1px 9px;color:var(--mut);
+     border:1px solid var(--catline);border-radius:99px;padding:1px 9px;color:var(--mut);
      margin-left:6px;vertical-align:2px}
 footer{max-width:960px;margin:26px auto 0;padding:0 22px;color:var(--mut);font-size:13.5px}
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;
@@ -68,11 +96,11 @@ footer{max-width:960px;margin:26px auto 0;padding:0 22px;color:var(--mut);font-s
      mount, so it would pass a predicate that actually parsed. -->
 <nav id="ardanav" aria-label="Archive halls"></nav>
 <a class="a-skip" href="#main">Skip to the catalogue</a>
-<!--ARDA:CODEX-BODY--><div class="book" data-spread="codex" data-density="high" style="--edge-l:&#39;&#39;;--edge-r:&#39;&#39;" data-edge-tr="" data-edge-en="Plate Catalogue" data-edge-mode="" data-edge-script="" data-edge-src="" data-edge-conf="[SILENCE]" data-turn-prev="gondolin.html" data-turn-next="artifacts.html">
 <header><h1>The Plate Catalogue</h1><p>Twenty-two map plates this archive holds &mdash; who drew each one, which book printed it, what it covers, and who owns it until when. No plate is reproduced here, and the reason is stated rather than implied.</p></header>
+<!--ARDA:CODEX-BODY--><div class="book" data-spread="codex" data-density="high" data-turn-prev="living.html" data-turn-next="volume-v.html"><div class="plaque">The Arda Archive <i>·</i> Volume IV <i>·</i> The Plate Catalogue</div><nav class="tabs" aria-label="Volumes"><a class="tab" href="volume-i.html">Atlas and Realms</a><a class="tab" href="volume-ii.html">Annals</a><a class="tab" href="volume-iii.html">Peoples and Houses</a><a class="tab" href="volume-iv.html" aria-current="page">Living World</a><a class="tab" href="volume-v.html">Tongues</a><a class="tab" href="volume-vi.html">Lore and First Principles</a><a class="tab" href="volume-vii.html">Index</a></nav><div class="spread"><div class="gutter" aria-hidden="true"></div><section class="leaf l ruled twocol" data-hall="plates.html"><div class="rh"><span>The Arda Archive · The Plate Catalogue</span><span class="n">i</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><h2 class="rubric">The Plate Catalogue</h2><p class="lede">Every map plate this archive holds: who drew it, which book printed it, what it covers, and who owns it until when. The catalogue reproduces no image.</p><p><img class="versal versal-img" src="ornament/collected/walters-w229-000145-initial-t.webp" width="71" height="54" alt="T" loading="lazy" decoding="async">he Plate Catalogue opens here, and continues across the gutter&mdash;</p></div><span class="quire">A&middot;i</span><span class="catch">here, with</span></section><section class="leaf r ruled twocol" data-hall="plates.html"><div class="rh"><span>The Plate Catalogue · continued</span><span class="n">ii</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><p>&mdash;there. A plates hall is a catalogue, and each drawing names its hand.</p><div class="sub">Where this opening sits</div><p>Volume IV of the Arda Archive, Living World, Relics and Devices, under The Plate Catalogue. what was made and what grows</p><p>It is opening <span class="mark">6</span> of <span class="mark">6</span> in this volume, the Living Things coming before it. It is the last opening of this volume.</p><p class="cite">Read from <i>arda_codex_manifest.json</i> at build time. <span class="mark">[C]</span></p></div><span class="quire">A&middot;ij</span><span class="catch"></span></section></div><div class="hall-slot" data-hall-slot=""></div><div class="clasp" role="presentation"></div><div class="folio">Volume IV</div></div><!--/ARDA:CODEX-BODY-->
 <main id="main">
 <div class="lede"><p><b>This page is the catalogue, not the plates.</b> Of the twenty-two, <b>one</b> is the owner&rsquo;s own work and is already published as the archive&rsquo;s base map. The other <b>twenty-one are in copyright</b>, and no licence to this archive exists anywhere in its tree &mdash; every row below names the rightsholder and the year the term runs to.</p><p>The archive&rsquo;s standing rule on these is three words: <i>measure, don&rsquo;t serve</i>. Their geometry is fact and may be measured freely; their expression is not the archive&rsquo;s to redraw as its own. So what a reader gets here is the record &mdash; what exists, who made it, and who holds it &mdash; which is the half that carries no permission problem at all.</p><p><b>Recording who made a thing and being allowed to reproduce it are different questions.</b> Attribution is not a licence, and an author who cannot be identified is not an author who is absent.</p></div>
-<h2>the owner&#x27;s own work <span class="n">&mdash; 1 plate</span></h2>
+<h2 class="grp">the owner&#x27;s own work <span class="n">&mdash; 1 plate</span></h2>
 <p class="gnote">the only plate in this set the archive may reproduce, and it is already published as the base map.</p>
 <article>
 <h3>downloaded_map.jpeg</h3>
@@ -87,7 +115,7 @@ footer{max-width:960px;margin:26px auto 0;padding:0 22px;color:var(--mut);font-s
 </dl></div>
 <p class="by"><i>Described only by the terms register; this plate carries no row in <code>map/plates.json</code>.</i></p>
 </article>
-<h2>J.R.R. Tolkien <span class="n">&mdash; 5 plates</span></h2>
+<h2 class="grp">J.R.R. Tolkien <span class="n">&mdash; 5 plates</span></h2>
 <p class="gnote">drawn by Tolkien himself, for The Hobbit and The Lord of the Rings.</p>
 <article>
 <h3>Númenórë · Elenna · Andor (working sketch)</h3>
@@ -179,7 +207,7 @@ footer{max-width:960px;margin:26px auto 0;padding:0 22px;color:var(--mut);font-s
 <dt>&nbsp;</dt><dd>In copyright. No licence to this archive exists anywhere in the tree.</dd>
 </dl></div>
 </article>
-<h2>Christopher Tolkien <span class="n">&mdash; 5 plates</span></h2>
+<h2 class="grp">Christopher Tolkien <span class="n">&mdash; 5 plates</span></h2>
 <p class="gnote">drawn or redrawn by Christopher Tolkien for the published books.</p>
 <article>
 <h3>A Part of the Shire</h3>
@@ -271,7 +299,7 @@ footer{max-width:960px;margin:26px auto 0;padding:0 22px;color:var(--mut);font-s
 <dt>&nbsp;</dt><dd>In copyright. No licence to this archive exists anywhere in the tree.</dd>
 </dl></div>
 </article>
-<h2>Karen Wynn Fonstad <span class="n">&mdash; 5 plates</span></h2>
+<h2 class="grp">Karen Wynn Fonstad <span class="n">&mdash; 5 plates</span></h2>
 <p class="gnote">plates from The Atlas of Middle-earth -- a reading of Tolkien, not a source for him.</p>
 <article>
 <h3>Arda in the Second Age (Atlas plate)</h3>
@@ -363,7 +391,7 @@ footer{max-width:960px;margin:26px auto 0;padding:0 22px;color:var(--mut);font-s
 <dt>&nbsp;</dt><dd>In copyright. No licence to this archive exists anywhere in the tree.</dd>
 </dl></div>
 </article>
-<h2>derivative and unidentified hands <span class="n">&mdash; 6 plates</span></h2>
+<h2 class="grp">derivative and unidentified hands <span class="n">&mdash; 6 plates</span></h2>
 <p class="gnote">colourings, combinations and renderings over an in-copyright base, or by an author who cannot be identified.</p>
 <article>
 <h3>Beleriand and Middle Earth (decorative poster, watermarked)</h3>
@@ -474,7 +502,6 @@ footer{max-width:960px;margin:26px auto 0;padding:0 22px;color:var(--mut);font-s
 </dl></div>
 </article>
 </main>
-</div><!--/ARDA:CODEX-BODY-->
 <script src="glossary.js" defer></script>
 <footer><p>Built by <code>map/gen_plate_catalogue.py</code> from <code>map/plates.json</code> (description) and <code>machinery/PLATE_TERMS.json</code> (terms). Neither is invented here. The terms are an adjudication, not a clearance: this archive cannot grant a permission nobody gave it.</p></footer>
 <!--ARDA:THUMBS--><script src="codex-thumbs.js" defer></script><!--/ARDA:THUMBS--></body></html>
