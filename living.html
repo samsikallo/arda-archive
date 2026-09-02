@@ -65,14 +65,6 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape"){const L=document.ge
 
 let N=[],C=[],ART={},view="flora";
 const FLORA=["tree","flower","herb","grass"],FAUNA=["beast","bird","fish","insect","monstrous"];
-/* THE FAILURE PATH REACHES A READER STATE. Auditor c9a34c4d261b, 2 September 2026, and it is
-   a fault I INTRODUCED THIS MORNING while faithfully restoring an older form.
-   `aJ(x).catch(()=>{})` RESOLVES TO `undefined`. Promise.all then succeeds, N is undefined, and
-   the first draw() calls N.filter -> "TypeError: Cannot read properties of undefined". Proved in
-   an isolated no-I/O control, both ways: the form I restored throws; the form I replaced swallowed
-   the rejection and rendered a blank page with no message. NEITHER IS ADEQUATE, and restoring a
-   committed repair without asking what it does WHEN IT FIRES is how I shipped the worse of the two.
-   Every dataset now catches to a TYPED sentinel, and a missing one is SAID to the reader. */
 Promise.all([
  aJ("arda_nature.json").catch(()=>null),
  aJ("arda_creatures.json").catch(()=>null),
@@ -112,10 +104,6 @@ function build(){
 function plateAlt(x){
  return (FLORA.includes(x.kind)?"botanical plate of ":"plate of ")+x.n;
 }
-/* THE LOCI REACH THE READER. Auditor dcb4deb4dfed: C818 stored `plate_src` and rendered only the
-   claim, so a reader met "the corpus does not describe this" with nothing to follow. Data storage
-   is not an on-page citation. The book name is derived from the corpus filename rather than typed
-   beside it, so a renamed volume cannot leave a caption citing a book that no longer exists. */
 const BOOKS={t1_a:"The Silmarillion",t1_b:"The Hobbit",t1_c:"The Lord of the Rings",
  t1_2:"The Book of Lost Tales II",t1_3:"The Lays of Beleriand",t1_4:"The Shaping of Middle-earth",
  t1_5:"The Lost Road",t1_10:"Morgoth's Ring",t1_11:"The War of the Jewels",
