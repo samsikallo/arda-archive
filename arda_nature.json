@@ -1417,7 +1417,7 @@
  {
   "id": "mirian",
   "n": "mirian",
-  "kind": "herb",
+  "kind": "coin",
   "elv": "",
   "pl": "",
   "where": "",
@@ -1426,7 +1426,7 @@
   "c": "",
   "src": "t1_12_the_peoples_of_middle_earth.txt:1881",
   "tier": 1,
-  "note": "NOT A PLANT. The only occurrence of 'mirian' in the primary corpus is in The Peoples of Middle-earth, where it is a Gondorian silver coin ('part of the mirian'), not a flower. Recorded here so the mistake is not repeated: no plant of this name exists in Tolkien.",
+  "note": "NOT A PLANT. The only occurrence of 'mirian' in the primary corpus is in The Peoples of Middle-earth, where it is a Gondorian silver coin ('part of the mirian'), not a flower. Recorded here so the mistake is not repeated: no plant of this name exists in Tolkien. KIND CORRECTED herb -> coin on 2 September 2026 under his ruling C834. That value is in neither FLORA nor FAUNA, so this row is DELIBERATELY reachable from no view of this hall -- gen_new_halls.py filters on kind, and a coin belongs in neither. The row stays in the data as the negative record it was written to be, and mirian's true entry is on reckoning.html where it has always been correct. Do not restore the kind to bring it back.",
   "appearance": "absent",
   "appearance_src": [
    "t1_12_the_peoples_of_middle_earth.txt:1879"
