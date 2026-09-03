@@ -69,7 +69,7 @@ if(!document.documentElement.hasAttribute("data-codex-object")){
 })();
 (function(){
 const GROUPS=[
-  ["Peoples & Living Beings",[["genealogy.html","family trees","839 figures, all houses"],
+  ["Peoples & Living Beings",[["genealogy.html","family trees","849 figures, all houses"],
    ["character.html","records","a page for every person"],
    ["population_dashboard.html","peoples","demography of Arda"],
    ["ainur.html","the Ainur","the Valar and the Maiar"],
