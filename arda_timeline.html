@@ -78,7 +78,7 @@ function draw(){
   const g=el('text',{x:x,y:bandY,'text-anchor':'middle','font-size':13,fill:'var(--acc)',
    opacity:evt.approx?0.55:1,cursor:'default'});
   g.textContent=glyph[evt.type];
-  g.addEventListener('mousemove',e2=>tip(e2,'<b>'+evt.label+'</b><br><span class="m">'+multiCal(evt.y)+'</span><br><span class="m">'+evt.t+' \u00b7 '+evt.type+' \u00b7 '+evt.conf+(evt.approx?' \u00b7 approximate':'')+'</span><br><span class="m">'+evt.cite+'</span>'+(evt.actors.length?'<br>with: '+evt.actors.join(', '):'')));
+  g.addEventListener('mousemove',e2=>tip(e2,'<b>'+evt.label+'</b><br><span class="m">'+multiCal(evt.y)+'</span><br><span class="m">'+evt.t+' \u00b7 '+evt.type+' \u00b7 '+evt.conf+(evt.approx?' \u00b7 approximate':'')+'</span><br><span class="m">'+evt.cite+'</span>'+((evt.actors||[]).length?'<br>with: '+evt.actors.join(', '):'')));
   g.addEventListener('mouseleave',hide);});
  let chars=DATA.chars.filter(c=>races[c.race]&&(!window._lvq||(c.label+' '+(c.people||'')).toLowerCase().includes(window._lvq)));{const RO={ainur:0,elves:1,men:2,dwarves:3,hobbits:4};const pmin={};chars.forEach(c=>{const k=c.race+'|'+(c.people||'x');if(!(k in pmin)||c.b<pmin[k])pmin[k]=c.b});chars=chars.slice().sort((x,y)=>(RO[x.race]??9)-(RO[y.race]??9)||pmin[x.race+'|'+(x.people||'x')]-pmin[y.race+'|'+(y.people||'x')]||((x.people||'')<(y.people||'')?-1:(x.people||'')>(y.people||'')?1:0)||x.b-y.b);}H=Math.max(820,92+16*chars.length)/*13.5 gave a 10.5px name 13.5px of lane, so ascenders and descenders met the bars above and below; 16 clears them*/;document.getElementById('tl').setAttribute('height',H);
  /* THE viewBox IS SET AGAIN HERE, AND ON FIRST LOAD THAT IS THE DIFFERENCE BETWEEN A TIMELINE AND
@@ -123,7 +123,7 @@ function draw(){
   const t=el('text',{x:lx,y:y-3,'font-size':10.5,fill:'var(--ink)',opacity:0.85});
   t.textContent=c.label.split(' (')[0];
   DATA.events.forEach(evt=>{
-   if(!evt.actors.includes(c.id)||!types[evt.type])return;
+   if(!(evt.actors||[]).includes(c.id)||!types[evt.type])return;
    const x=X(evt.y);if(x<-10||x>W+10)return;
    const d=el('circle',{cx:x,cy:y,r:3.4,fill:'var(--srf)',stroke:col,'stroke-width':2});
    d.addEventListener('mousemove',e2=>tip(e2,'<b>'+c.label+'</b> at:<br>'+evt.label+'<br><span class="m">'+evt.t+' \u00b7 '+evt.cite+'</span>'));
