@@ -9,7 +9,7 @@
   "living.html": "the halls put it under Peoples; the brief's Volume IV contents list puts a herbarium with relics and devices. The brief is followed."
  },
  "schemaVersion": 1,
- "n_routes": 1456,
+ "n_routes": 1589,
  "n_volumes": 7,
  "volumes": [
   {
@@ -1181,6 +1181,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/adrahil_captain_of_the_left_wing.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "adrahil captain of the left wing",
+   "canonical": "person/adrahil_captain_of_the_left_wing.html",
+   "canonicalRoute": "person/adrahil_captain_of_the_left_wing.html",
+   "entityId": "adrahil_captain_of_the_left_wing",
+   "entityType": "person",
+   "sourceRoute": "character.html#adrahil_captain_of_the_left_wing",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/aegnor.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -1447,6 +1461,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/amaranth_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "amaranth brandybuck",
+   "canonical": "person/amaranth_brandybuck.html",
+   "canonicalRoute": "person/amaranth_brandybuck.html",
+   "entityId": "amaranth_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#amaranth_brandybuck",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/amarie.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -1517,6 +1545,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/amnon.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "amnon",
+   "canonical": "person/amnon.html",
+   "canonicalRoute": "person/amnon.html",
+   "entityId": "amnon",
+   "entityType": "person",
+   "sourceRoute": "character.html#amnon",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/amras.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -1584,6 +1626,20 @@
    "entityId": "anaire",
    "entityType": "person",
    "sourceRoute": "character.html#anaire",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/anar_dwarf.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "anar dwarf",
+   "canonical": "person/anar_dwarf.html",
+   "canonicalRoute": "person/anar_dwarf.html",
+   "entityId": "anar_dwarf",
+   "entityType": "person",
+   "sourceRoute": "character.html#anar_dwarf",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -2315,6 +2371,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/asphodel_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "asphodel brandybuck",
+   "canonical": "person/asphodel_brandybuck.html",
+   "canonicalRoute": "person/asphodel_brandybuck.html",
+   "entityId": "asphodel_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#asphodel_brandybuck",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/atanatar1.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -2371,6 +2441,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/ausir_boy.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ausir boy",
+   "canonical": "person/ausir_boy.html",
+   "canonicalRoute": "person/ausir_boy.html",
+   "entityId": "ausir_boy",
+   "entityType": "person",
+   "sourceRoute": "character.html#ausir_boy",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/avranc.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -2410,6 +2494,20 @@
    "entityId": "azog",
    "entityType": "person",
    "sourceRoute": "character.html#azog",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/bain.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "bain",
+   "canonical": "person/bain.html",
+   "canonicalRoute": "person/bain.html",
+   "entityId": "bain",
+   "entityType": "person",
+   "sourceRoute": "character.html#bain",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -2466,6 +2564,20 @@
    "entityId": "balin",
    "entityType": "person",
    "sourceRoute": "character.html#balin",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/ban.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ban",
+   "canonical": "person/ban.html",
+   "canonicalRoute": "person/ban.html",
+   "entityId": "ban",
+   "entityType": "person",
+   "sourceRoute": "character.html#ban",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -2564,6 +2676,34 @@
    "entityId": "baran",
    "entityType": "person",
    "sourceRoute": "character.html#baran",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/baranor_man_of_gondor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "baranor man of gondor",
+   "canonical": "person/baranor_man_of_gondor.html",
+   "canonicalRoute": "person/baranor_man_of_gondor.html",
+   "entityId": "baranor_man_of_gondor",
+   "entityType": "person",
+   "sourceRoute": "character.html#baranor_man_of_gondor",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/baranor_son_of_baran.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "baranor son of baran",
+   "canonical": "person/baranor_son_of_baran.html",
+   "canonicalRoute": "person/baranor_son_of_baran.html",
+   "entityId": "baranor_son_of_baran",
+   "entityType": "person",
+   "sourceRoute": "character.html#baranor_son_of_baran",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -2777,6 +2917,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/belen.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "belen",
+   "canonical": "person/belen.html",
+   "canonicalRoute": "person/belen.html",
+   "entityId": "belen",
+   "entityType": "person",
+   "sourceRoute": "character.html#belen",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/beleth.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -2945,6 +3099,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/beren_son_of_belemir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "beren son of belemir",
+   "canonical": "person/beren_son_of_belemir.html",
+   "canonicalRoute": "person/beren_son_of_belemir.html",
+   "entityId": "beren_son_of_belemir",
+   "entityType": "person",
+   "sourceRoute": "character.html#beren_son_of_belemir",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/bergil.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -2970,6 +3138,20 @@
    "entityId": "beril",
    "entityType": "person",
    "sourceRoute": "character.html#beril",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/berilac_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "berilac brandybuck",
+   "canonical": "person/berilac_brandybuck.html",
+   "canonicalRoute": "person/berilac_brandybuck.html",
+   "entityId": "berilac_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#berilac_brandybuck",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -3071,6 +3253,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/bior.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "bior",
+   "canonical": "person/bior.html",
+   "canonicalRoute": "person/bior.html",
+   "entityId": "bior",
+   "entityType": "person",
+   "sourceRoute": "character.html#bior",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/blanco_b.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -3166,6 +3362,20 @@
    "entityId": "bombur",
    "entityType": "person",
    "sourceRoute": "character.html#bombur",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/bor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "bor",
+   "canonical": "person/bor.html",
+   "canonicalRoute": "person/bor.html",
+   "entityId": "bor",
+   "entityType": "person",
+   "sourceRoute": "character.html#bor",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -3306,6 +3516,20 @@
    "entityId": "bosco",
    "entityType": "person",
    "sourceRoute": "character.html#bosco",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/brand.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "brand",
+   "canonical": "person/brand.html",
+   "canonicalRoute": "person/brand.html",
+   "entityId": "brand",
+   "entityType": "person",
+   "sourceRoute": "character.html#brand",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -3617,6 +3841,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/carl_cotton.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "carl cotton",
+   "canonical": "person/carl_cotton.html",
+   "canonicalRoute": "person/carl_cotton.html",
+   "entityId": "carl_cotton",
+   "entityType": "person",
+   "sourceRoute": "character.html#carl_cotton",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/castamir.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -3628,6 +3866,20 @@
    "entityId": "castamir",
    "entityType": "person",
    "sourceRoute": "character.html#castamir",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/celandine_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "celandine brandybuck",
+   "canonical": "person/celandine_brandybuck.html",
+   "canonicalRoute": "person/celandine_brandybuck.html",
+   "entityId": "celandine_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#celandine_brandybuck",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -3726,6 +3978,20 @@
    "entityId": "cemendur",
    "entityType": "person",
    "sourceRoute": "character.html#cemendur",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/ceorl.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ceorl",
+   "canonical": "person/ceorl.html",
+   "canonicalRoute": "person/ceorl.html",
+   "entityId": "ceorl",
+   "entityType": "person",
+   "sourceRoute": "character.html#ceorl",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -3911,6 +4177,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/dagnir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dagnir",
+   "canonical": "person/dagnir.html",
+   "canonicalRoute": "person/dagnir.html",
+   "entityId": "dagnir",
+   "entityType": "person",
+   "sourceRoute": "character.html#dagnir",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/dain1.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -3967,6 +4247,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/daisy_gardner.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "daisy gardner",
+   "canonical": "person/daisy_gardner.html",
+   "canonicalRoute": "person/daisy_gardner.html",
+   "entityId": "daisy_gardner",
+   "entityType": "person",
+   "sourceRoute": "character.html#daisy_gardner",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/danuin.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -4009,6 +4303,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/delin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "delin",
+   "canonical": "person/delin.html",
+   "canonicalRoute": "person/delin.html",
+   "entityId": "delin",
+   "entityType": "person",
+   "sourceRoute": "character.html#delin",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/denethor1.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -4034,6 +4342,20 @@
    "entityId": "denethor2",
    "entityType": "person",
    "sourceRoute": "character.html#denethor2",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/denethor_king_of_the_laiquendi.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "denethor king of the laiquendi",
+   "canonical": "person/denethor_king_of_the_laiquendi.html",
+   "canonicalRoute": "person/denethor_king_of_the_laiquendi.html",
+   "entityId": "denethor_king_of_the_laiquendi",
+   "entityType": "person",
+   "sourceRoute": "character.html#denethor_king_of_the_laiquendi",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -4121,6 +4443,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/dinodas_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "dinodas brandybuck",
+   "canonical": "person/dinodas_brandybuck.html",
+   "canonicalRoute": "person/dinodas_brandybuck.html",
+   "entityId": "dinodas_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#dinodas_brandybuck",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/dior.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -4174,6 +4510,20 @@
    "entityId": "dis",
    "entityType": "person",
    "sourceRoute": "character.html#dis",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/doderic_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "doderic brandybuck",
+   "canonical": "person/doderic_brandybuck.html",
+   "canonicalRoute": "person/doderic_brandybuck.html",
+   "entityId": "doderic_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#doderic_brandybuck",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -4261,6 +4611,48 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/duilin_elf_of_gondolin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "duilin elf of gondolin",
+   "canonical": "person/duilin_elf_of_gondolin.html",
+   "canonicalRoute": "person/duilin_elf_of_gondolin.html",
+   "entityId": "duilin_elf_of_gondolin",
+   "entityType": "person",
+   "sourceRoute": "character.html#duilin_elf_of_gondolin",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/duilin_father_of_saelon.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "duilin father of saelon",
+   "canonical": "person/duilin_father_of_saelon.html",
+   "canonicalRoute": "person/duilin_father_of_saelon.html",
+   "entityId": "duilin_father_of_saelon",
+   "entityType": "person",
+   "sourceRoute": "character.html#duilin_father_of_saelon",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/duilin_son_of_duinhir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "duilin son of duinhir",
+   "canonical": "person/duilin_son_of_duinhir.html",
+   "canonicalRoute": "person/duilin_son_of_duinhir.html",
+   "entityId": "duilin_son_of_duinhir",
+   "entityType": "person",
+   "sourceRoute": "character.html#duilin_son_of_duinhir",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/duinhir.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -4345,6 +4737,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/durin_s_bane.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "durin s bane",
+   "canonical": "person/durin_s_bane.html",
+   "canonicalRoute": "person/durin_s_bane.html",
+   "entityId": "durin_s_bane",
+   "entityType": "person",
+   "sourceRoute": "character.html#durin_s_bane",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/dwalin.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -4412,6 +4818,20 @@
    "entityId": "earendur_l",
    "entityType": "person",
    "sourceRoute": "character.html#earendur_l",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/earendur_son_of_tar_amandil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "earendur son of tar amandil",
+   "canonical": "person/earendur_son_of_tar_amandil.html",
+   "canonicalRoute": "person/earendur_son_of_tar_amandil.html",
+   "entityId": "earendur_son_of_tar_amandil",
+   "entityType": "person",
+   "sourceRoute": "character.html#earendur_son_of_tar_amandil",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -4597,6 +5017,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/elanor_gardner.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elanor gardner",
+   "canonical": "person/elanor_gardner.html",
+   "canonicalRoute": "person/elanor_gardner.html",
+   "entityId": "elanor_gardner",
+   "entityType": "person",
+   "sourceRoute": "character.html#elanor_gardner",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/elatan.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -4692,6 +5126,20 @@
    "entityId": "elemmakil",
    "entityType": "person",
    "sourceRoute": "character.html#elemmakil",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/elemmire_elf.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elemmire elf",
+   "canonical": "person/elemmire_elf.html",
+   "canonicalRoute": "person/elemmire_elf.html",
+   "entityId": "elemmire_elf",
+   "entityType": "person",
+   "sourceRoute": "character.html#elemmire_elf",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -4832,6 +5280,20 @@
    "entityId": "ellu",
    "entityType": "person",
    "sourceRoute": "character.html#ellu",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/elmar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "elmar",
+   "canonical": "person/elmar.html",
+   "canonicalRoute": "person/elmar.html",
+   "entityId": "elmar",
+   "entityType": "person",
+   "sourceRoute": "character.html#elmar",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -5017,6 +5479,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/enel.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "enel",
+   "canonical": "person/enel.html",
+   "canonicalRoute": "person/enel.html",
+   "entityId": "enel",
+   "entityType": "person",
+   "sourceRoute": "character.html#enel",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/enelye.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -5042,6 +5518,34 @@
    "entityId": "enerdhil",
    "entityType": "person",
    "sourceRoute": "character.html#enerdhil",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/enthor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "enthor",
+   "canonical": "person/enthor.html",
+   "canonicalRoute": "person/enthor.html",
+   "entityId": "enthor",
+   "entityType": "person",
+   "sourceRoute": "character.html#enthor",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/eofor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eofor",
+   "canonical": "person/eofor.html",
+   "canonicalRoute": "person/eofor.html",
+   "entityId": "eofor",
+   "entityType": "person",
+   "sourceRoute": "character.html#eofor",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -5084,6 +5588,20 @@
    "entityId": "eomund",
    "entityType": "person",
    "sourceRoute": "character.html#eomund",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/eomund_captain_of_the_eotheod.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "eomund captain of the eotheod",
+   "canonical": "person/eomund_captain_of_the_eotheod.html",
+   "canonicalRoute": "person/eomund_captain_of_the_eotheod.html",
+   "entityId": "eomund_captain_of_the_eotheod",
+   "entityType": "person",
+   "sourceRoute": "character.html#eomund_captain_of_the_eotheod",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -5563,6 +6081,62 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/fengel_father_of_indor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fengel father of indor",
+   "canonical": "person/fengel_father_of_indor.html",
+   "canonicalRoute": "person/fengel_father_of_indor.html",
+   "entityId": "fengel_father_of_indor",
+   "entityType": "person",
+   "sourceRoute": "character.html#fengel_father_of_indor",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/ferdibrand_took.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ferdibrand took",
+   "canonical": "person/ferdibrand_took.html",
+   "canonicalRoute": "person/ferdibrand_took.html",
+   "entityId": "ferdibrand_took",
+   "entityType": "person",
+   "sourceRoute": "character.html#ferdibrand_took",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/ferumbras_took_ii.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ferumbras took ii",
+   "canonical": "person/ferumbras_took_ii.html",
+   "canonicalRoute": "person/ferumbras_took_ii.html",
+   "entityId": "ferumbras_took_ii",
+   "entityType": "person",
+   "sourceRoute": "character.html#ferumbras_took_ii",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/ferumbras_took_iii.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ferumbras took iii",
+   "canonical": "person/ferumbras_took_iii.html",
+   "canonicalRoute": "person/ferumbras_took_iii.html",
+   "entityId": "ferumbras_took_iii",
+   "entityType": "person",
+   "sourceRoute": "character.html#ferumbras_took_iii",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/fili.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -5588,6 +6162,20 @@
    "entityId": "filibert",
    "entityType": "person",
    "sourceRoute": "character.html#filibert",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/fimbrethil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fimbrethil",
+   "canonical": "person/fimbrethil.html",
+   "canonicalRoute": "person/fimbrethil.html",
+   "entityId": "fimbrethil",
+   "entityType": "person",
+   "sourceRoute": "character.html#fimbrethil",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -5745,6 +6333,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/firiel_the_lost_road.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "firiel the lost road",
+   "canonical": "person/firiel_the_lost_road.html",
+   "canonicalRoute": "person/firiel_the_lost_road.html",
+   "entityId": "firiel_the_lost_road",
+   "entityType": "person",
+   "sourceRoute": "character.html#firiel_the_lost_road",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/flambard_took.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -5882,6 +6484,34 @@
    "entityId": "forthwini",
    "entityType": "person",
    "sourceRoute": "character.html#forthwini",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/fortinbras_took_i.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fortinbras took i",
+   "canonical": "person/fortinbras_took_i.html",
+   "canonicalRoute": "person/fortinbras_took_i.html",
+   "entityId": "fortinbras_took_i",
+   "entityType": "person",
+   "sourceRoute": "character.html#fortinbras_took_i",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/fortinbras_took_ii.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "fortinbras took ii",
+   "canonical": "person/fortinbras_took_ii.html",
+   "canonicalRoute": "person/fortinbras_took_ii.html",
+   "entityId": "fortinbras_took_ii",
+   "entityType": "person",
+   "sourceRoute": "character.html#fortinbras_took_ii",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -6165,6 +6795,48 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/galdor_elf_of_gondolin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "galdor elf of gondolin",
+   "canonical": "person/galdor_elf_of_gondolin.html",
+   "canonicalRoute": "person/galdor_elf_of_gondolin.html",
+   "entityId": "galdor_elf_of_gondolin",
+   "entityType": "person",
+   "sourceRoute": "character.html#galdor_elf_of_gondolin",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/galdor_elf_of_the_havens.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "galdor elf of the havens",
+   "canonical": "person/galdor_elf_of_the_havens.html",
+   "canonicalRoute": "person/galdor_elf_of_the_havens.html",
+   "entityId": "galdor_elf_of_the_havens",
+   "entityType": "person",
+   "sourceRoute": "character.html#galdor_elf_of_the_havens",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/galdor_man_of_rohan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "galdor man of rohan",
+   "canonical": "person/galdor_man_of_rohan.html",
+   "canonicalRoute": "person/galdor_man_of_rohan.html",
+   "entityId": "galdor_man_of_rohan",
+   "entityType": "person",
+   "sourceRoute": "character.html#galdor_man_of_rohan",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/galhir.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -6274,6 +6946,20 @@
    "entityId": "gelmir_n",
    "entityType": "person",
    "sourceRoute": "character.html#gelmir_n",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/gelmir_son_of_golfinweg.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gelmir son of golfinweg",
+   "canonical": "person/gelmir_son_of_golfinweg.html",
+   "canonicalRoute": "person/gelmir_son_of_golfinweg.html",
+   "entityId": "gelmir_son_of_golfinweg",
+   "entityType": "person",
+   "sourceRoute": "character.html#gelmir_son_of_golfinweg",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -6389,6 +7075,34 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/gildor_outlaw.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gildor outlaw",
+   "canonical": "person/gildor_outlaw.html",
+   "canonicalRoute": "person/gildor_outlaw.html",
+   "entityId": "gildor_outlaw",
+   "entityType": "person",
+   "sourceRoute": "character.html#gildor_outlaw",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/gilfanon_elf_of_alqalunte.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gilfanon elf of alqalunte",
+   "canonical": "person/gilfanon_elf_of_alqalunte.html",
+   "canonicalRoute": "person/gilfanon_elf_of_alqalunte.html",
+   "entityId": "gilfanon_elf_of_alqalunte",
+   "entityType": "person",
+   "sourceRoute": "character.html#gilfanon_elf_of_alqalunte",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/gilgalad.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -6484,6 +7198,20 @@
    "entityId": "gimli",
    "entityType": "person",
    "sourceRoute": "character.html#gimli",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/gimli_elf.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gimli elf",
+   "canonical": "person/gimli_elf.html",
+   "canonicalRoute": "person/gimli_elf.html",
+   "entityId": "gimli_elf",
+   "entityType": "person",
+   "sourceRoute": "character.html#gimli_elf",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -6599,6 +7327,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/goldberry.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "goldberry",
+   "canonical": "person/goldberry.html",
+   "canonicalRoute": "person/goldberry.html",
+   "entityId": "goldberry",
+   "entityType": "person",
+   "sourceRoute": "character.html#goldberry",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/goldilocks.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -6666,6 +7408,20 @@
    "entityId": "gorbag",
    "entityType": "person",
    "sourceRoute": "character.html#gorbag",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/gorbulas_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "gorbulas brandybuck",
+   "canonical": "person/gorbulas_brandybuck.html",
+   "canonicalRoute": "person/gorbulas_brandybuck.html",
+   "entityId": "gorbulas_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#gorbulas_brandybuck",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -7075,6 +7831,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/haldir_son_of_orodreth.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "haldir son of orodreth",
+   "canonical": "person/haldir_son_of_orodreth.html",
+   "canonicalRoute": "person/haldir_son_of_orodreth.html",
+   "entityId": "haldir_son_of_orodreth",
+   "entityType": "person",
+   "sourceRoute": "character.html#haldir_son_of_orodreth",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/haleth.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -7310,6 +8080,20 @@
    "entityId": "harding_of_the_hill",
    "entityType": "person",
    "sourceRoute": "character.html#harding_of_the_hill",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/harding_rider_of_rohan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "harding rider of rohan",
+   "canonical": "person/harding_rider_of_rohan.html",
+   "canonicalRoute": "person/harding_rider_of_rohan.html",
+   "entityId": "harding_rider_of_rohan",
+   "entityType": "person",
+   "sourceRoute": "character.html#harding_rider_of_rohan",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -7565,6 +8349,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/hildibrand_took.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hildibrand took",
+   "canonical": "person/hildibrand_took.html",
+   "canonicalRoute": "person/hildibrand_took.html",
+   "entityId": "hildibrand_took",
+   "entityType": "person",
+   "sourceRoute": "character.html#hildibrand_took",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/hildifons_took.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -7576,6 +8374,20 @@
    "entityId": "hildifons_took",
    "entityType": "person",
    "sourceRoute": "character.html#hildifons_took",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/hildigard_took.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hildigard took",
+   "canonical": "person/hildigard_took.html",
+   "canonicalRoute": "person/hildigard_took.html",
+   "entityId": "hildigard_took",
+   "entityType": "person",
+   "sourceRoute": "character.html#hildigard_took",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -7618,6 +8430,20 @@
    "entityId": "hiril",
    "entityType": "person",
    "sourceRoute": "character.html#hiril",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/hiril_sister_of_beren_erchamion.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hiril sister of beren erchamion",
+   "canonical": "person/hiril_sister_of_beren_erchamion.html",
+   "canonicalRoute": "person/hiril_sister_of_beren_erchamion.html",
+   "entityId": "hiril_sister_of_beren_erchamion",
+   "entityType": "person",
+   "sourceRoute": "character.html#hiril_sister_of_beren_erchamion",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -7730,6 +8556,20 @@
    "entityId": "holman_the_greenhanded",
    "entityType": "person",
    "sourceRoute": "character.html#holman_the_greenhanded",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/horn_rider_of_rohan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "horn rider of rohan",
+   "canonical": "person/horn_rider_of_rohan.html",
+   "canonicalRoute": "person/horn_rider_of_rohan.html",
+   "entityId": "horn_rider_of_rohan",
+   "entityType": "person",
+   "sourceRoute": "character.html#horn_rider_of_rohan",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -7887,6 +8727,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/hurin_warden_of_the_keys.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "hurin warden of the keys",
+   "canonical": "person/hurin_warden_of_the_keys.html",
+   "canonicalRoute": "person/hurin_warden_of_the_keys.html",
+   "entityId": "hurin_warden_of_the_keys",
+   "entityType": "person",
+   "sourceRoute": "character.html#hurin_warden_of_the_keys",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/hyarmendacil1.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -7985,6 +8839,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/ilberic_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ilberic brandybuck",
+   "canonical": "person/ilberic_brandybuck.html",
+   "canonicalRoute": "person/ilberic_brandybuck.html",
+   "entityId": "ilberic_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#ilberic_brandybuck",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/ilinsor.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -8024,6 +8892,20 @@
    "entityId": "ilmare",
    "entityType": "person",
    "sourceRoute": "character.html#ilmare",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/iluvatar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "iluvatar",
+   "canonical": "person/iluvatar.html",
+   "canonicalRoute": "person/iluvatar.html",
+   "entityId": "iluvatar",
+   "entityType": "person",
+   "sourceRoute": "character.html#iluvatar",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -8108,6 +8990,34 @@
    "entityId": "indis",
    "entityType": "person",
    "sourceRoute": "character.html#indis",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/indor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "indor",
+   "canonical": "person/indor.html",
+   "canonicalRoute": "person/indor.html",
+   "entityId": "indor",
+   "entityType": "person",
+   "sourceRoute": "character.html#indor",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/indor_grandfather_of_tuor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "indor grandfather of tuor",
+   "canonical": "person/indor_grandfather_of_tuor.html",
+   "canonicalRoute": "person/indor_grandfather_of_tuor.html",
+   "entityId": "indor_grandfather_of_tuor",
+   "entityType": "person",
+   "sourceRoute": "character.html#indor_grandfather_of_tuor",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -8223,6 +9133,34 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/isembard_took.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "isembard took",
+   "canonical": "person/isembard_took.html",
+   "canonicalRoute": "person/isembard_took.html",
+   "entityId": "isembard_took",
+   "entityType": "person",
+   "sourceRoute": "character.html#isembard_took",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/isembold_took.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "isembold took",
+   "canonical": "person/isembold_took.html",
+   "canonicalRoute": "person/isembold_took.html",
+   "entityId": "isembold_took",
+   "entityType": "person",
+   "sourceRoute": "character.html#isembold_took",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/isengar_took.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -8234,6 +9172,34 @@
    "entityId": "isengar_took",
    "entityType": "person",
    "sourceRoute": "character.html#isengar_took",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/isengrim_took_ii.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "isengrim took ii",
+   "canonical": "person/isengrim_took_ii.html",
+   "canonicalRoute": "person/isengrim_took_ii.html",
+   "entityId": "isengrim_took_ii",
+   "entityType": "person",
+   "sourceRoute": "character.html#isengrim_took_ii",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/isengrim_took_iii.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "isengrim took iii",
+   "canonical": "person/isengrim_took_iii.html",
+   "canonicalRoute": "person/isengrim_took_iii.html",
+   "entityId": "isengrim_took_iii",
+   "entityType": "person",
+   "sourceRoute": "character.html#isengrim_took_iii",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -8276,6 +9242,48 @@
    "entityId": "isilmo",
    "entityType": "person",
    "sourceRoute": "character.html#isilmo",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/isumbras_took_i.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "isumbras took i",
+   "canonical": "person/isumbras_took_i.html",
+   "canonicalRoute": "person/isumbras_took_i.html",
+   "entityId": "isumbras_took_i",
+   "entityType": "person",
+   "sourceRoute": "character.html#isumbras_took_i",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/isumbras_took_iii.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "isumbras took iii",
+   "canonical": "person/isumbras_took_iii.html",
+   "canonicalRoute": "person/isumbras_took_iii.html",
+   "entityId": "isumbras_took_iii",
+   "entityType": "person",
+   "sourceRoute": "character.html#isumbras_took_iii",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/isumbras_took_iv.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "isumbras took iv",
+   "canonical": "person/isumbras_took_iv.html",
+   "canonicalRoute": "person/isumbras_took_iv.html",
+   "entityId": "isumbras_took_iv",
+   "entityType": "person",
+   "sourceRoute": "character.html#isumbras_took_iv",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -8405,6 +9413,34 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/kiryandil_son_of_siriondil.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "kiryandil son of siriondil",
+   "canonical": "person/kiryandil_son_of_siriondil.html",
+   "canonicalRoute": "person/kiryandil_son_of_siriondil.html",
+   "entityId": "kiryandil_son_of_siriondil",
+   "entityType": "person",
+   "sourceRoute": "character.html#kiryandil_son_of_siriondil",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/kuruki.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "kuruki",
+   "canonical": "person/kuruki.html",
+   "canonicalRoute": "person/kuruki.html",
+   "entityId": "kuruki",
+   "entityType": "person",
+   "sourceRoute": "character.html#kuruki",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/lagduf.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -8430,6 +9466,34 @@
    "entityId": "lalaith",
    "entityType": "person",
    "sourceRoute": "character.html#lalaith",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/lalia_clayhanger.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "lalia clayhanger",
+   "canonical": "person/lalia_clayhanger.html",
+   "canonicalRoute": "person/lalia_clayhanger.html",
+   "entityId": "lalia_clayhanger",
+   "entityType": "person",
+   "sourceRoute": "character.html#lalia_clayhanger",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/langon.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "langon",
+   "canonical": "person/langon.html",
+   "canonicalRoute": "person/langon.html",
+   "entityId": "langon",
+   "entityType": "person",
+   "sourceRoute": "character.html#langon",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -8528,6 +9592,20 @@
    "entityId": "legolas",
    "entityType": "person",
    "sourceRoute": "character.html#legolas",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/legolas_elf_of_gondolin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "legolas elf of gondolin",
+   "canonical": "person/legolas_elf_of_gondolin.html",
+   "canonicalRoute": "person/legolas_elf_of_gondolin.html",
+   "entityId": "legolas_elf_of_gondolin",
+   "entityType": "person",
+   "sourceRoute": "character.html#legolas_elf_of_gondolin",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -8699,6 +9777,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/loni.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "loni",
+   "canonical": "person/loni.html",
+   "canonicalRoute": "person/loni.html",
+   "entityId": "loni",
+   "entityType": "person",
+   "sourceRoute": "character.html#loni",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/lorgan.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -8738,6 +9830,20 @@
    "entityId": "lotho",
    "entityType": "person",
    "sourceRoute": "character.html#lotho",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/lug.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "lug",
+   "canonical": "person/lug.html",
+   "canonicalRoute": "person/lug.html",
+   "entityId": "lug",
+   "entityType": "person",
+   "sourceRoute": "character.html#lug",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -8783,6 +9889,34 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/luthien_son_of_gelmir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "luthien son of gelmir",
+   "canonical": "person/luthien_son_of_gelmir.html",
+   "canonicalRoute": "person/luthien_son_of_gelmir.html",
+   "entityId": "luthien_son_of_gelmir",
+   "entityType": "person",
+   "sourceRoute": "character.html#luthien_son_of_gelmir",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/luthien_son_of_telimektar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "luthien son of telimektar",
+   "canonical": "person/luthien_son_of_telimektar.html",
+   "canonicalRoute": "person/luthien_son_of_telimektar.html",
+   "entityId": "luthien_son_of_telimektar",
+   "entityType": "person",
+   "sourceRoute": "character.html#luthien_son_of_telimektar",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/mablon.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -8808,6 +9942,34 @@
    "entityId": "mablung",
    "entityType": "person",
    "sourceRoute": "character.html#mablung",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/mablung_ranger_of_ithilien.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "mablung ranger of ithilien",
+   "canonical": "person/mablung_ranger_of_ithilien.html",
+   "canonicalRoute": "person/mablung_ranger_of_ithilien.html",
+   "entityId": "mablung_ranger_of_ithilien",
+   "entityType": "person",
+   "sourceRoute": "character.html#mablung_ranger_of_ithilien",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/madoc_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "madoc brandybuck",
+   "canonical": "person/madoc_brandybuck.html",
+   "canonicalRoute": "person/madoc_brandybuck.html",
+   "entityId": "madoc_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#madoc_brandybuck",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -8878,6 +10040,34 @@
    "entityId": "mahtan",
    "entityType": "person",
    "sourceRoute": "character.html#mahtan",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/maidros_grandfather_of_feanor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "maidros grandfather of feanor",
+   "canonical": "person/maidros_grandfather_of_feanor.html",
+   "canonicalRoute": "person/maidros_grandfather_of_feanor.html",
+   "entityId": "maidros_grandfather_of_feanor",
+   "entityType": "person",
+   "sourceRoute": "character.html#maidros_grandfather_of_feanor",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/makar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "makar",
+   "canonical": "person/makar.html",
+   "canonicalRoute": "person/makar.html",
+   "entityId": "makar",
+   "entityType": "person",
+   "sourceRoute": "character.html#makar",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -9077,6 +10267,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/marmadas_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "marmadas brandybuck",
+   "canonical": "person/marmadas_brandybuck.html",
+   "canonicalRoute": "person/marmadas_brandybuck.html",
+   "entityId": "marmadas_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#marmadas_brandybuck",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/marmadoc.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -9088,6 +10292,20 @@
    "entityId": "marmadoc",
    "entityType": "person",
    "sourceRoute": "character.html#marmadoc",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/marroc_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "marroc brandybuck",
+   "canonical": "person/marroc_brandybuck.html",
+   "canonicalRoute": "person/marroc_brandybuck.html",
+   "entityId": "marroc_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#marroc_brandybuck",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -9130,6 +10348,34 @@
    "entityId": "measse",
    "entityType": "person",
    "sourceRoute": "character.html#measse",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/meleth.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "meleth",
+   "canonical": "person/meleth.html",
+   "canonicalRoute": "person/meleth.html",
+   "entityId": "meleth",
+   "entityType": "person",
+   "sourceRoute": "character.html#meleth",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/meleth_nurse.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "meleth nurse",
+   "canonical": "person/meleth_nurse.html",
+   "canonicalRoute": "person/meleth_nurse.html",
+   "entityId": "meleth_nurse",
+   "entityType": "person",
+   "sourceRoute": "character.html#meleth_nurse",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -9203,6 +10449,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/mentha_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "mentha brandybuck",
+   "canonical": "person/mentha_brandybuck.html",
+   "canonicalRoute": "person/mentha_brandybuck.html",
+   "entityId": "mentha_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#mentha_brandybuck",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/meril_i_turinqi.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -9217,6 +10477,48 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/meril_mother_of_gil_galad.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "meril mother of gil galad",
+   "canonical": "person/meril_mother_of_gil_galad.html",
+   "canonicalRoute": "person/meril_mother_of_gil_galad.html",
+   "entityId": "meril_mother_of_gil_galad",
+   "entityType": "person",
+   "sourceRoute": "character.html#meril_mother_of_gil_galad",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/merimac_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "merimac brandybuck",
+   "canonical": "person/merimac_brandybuck.html",
+   "canonicalRoute": "person/merimac_brandybuck.html",
+   "entityId": "merimac_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#merimac_brandybuck",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/merimas_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "merimas brandybuck",
+   "canonical": "person/merimas_brandybuck.html",
+   "canonicalRoute": "person/merimas_brandybuck.html",
+   "entityId": "merimas_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#merimas_brandybuck",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/merry.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -9228,6 +10530,20 @@
    "entityId": "merry",
    "entityType": "person",
    "sourceRoute": "character.html#merry",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/merry_gardner.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "merry gardner",
+   "canonical": "person/merry_gardner.html",
+   "canonicalRoute": "person/merry_gardner.html",
+   "entityId": "merry_gardner",
+   "entityType": "person",
+   "sourceRoute": "character.html#merry_gardner",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -9399,6 +10715,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/moro_burrows.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "moro burrows",
+   "canonical": "person/moro_burrows.html",
+   "canonicalRoute": "person/moro_burrows.html",
+   "entityId": "moro_burrows",
+   "entityType": "person",
+   "sourceRoute": "character.html#moro_burrows",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/morwen.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -9410,6 +10740,20 @@
    "entityId": "morwen",
    "entityType": "person",
    "sourceRoute": "character.html#morwen",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/morwen_daughter_of_hurin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "morwen daughter of hurin",
+   "canonical": "person/morwen_daughter_of_hurin.html",
+   "canonicalRoute": "person/morwen_daughter_of_hurin.html",
+   "entityId": "morwen_daughter_of_hurin",
+   "entityType": "person",
+   "sourceRoute": "character.html#morwen_daughter_of_hurin",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -9438,6 +10782,20 @@
    "entityId": "morwen_steelsheen",
    "entityType": "person",
    "sourceRoute": "character.html#morwen_steelsheen",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/mosco_burrows.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "mosco burrows",
+   "canonical": "person/mosco_burrows.html",
+   "canonicalRoute": "person/mosco_burrows.html",
+   "entityId": "mosco_burrows",
+   "entityType": "person",
+   "sourceRoute": "character.html#mosco_burrows",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -9508,6 +10866,20 @@
    "entityId": "muzgash",
    "entityType": "person",
    "sourceRoute": "character.html#muzgash",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/myrtle_burrows.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "myrtle burrows",
+   "canonical": "person/myrtle_burrows.html",
+   "canonicalRoute": "person/myrtle_burrows.html",
+   "entityId": "myrtle_burrows",
+   "entityType": "person",
+   "sourceRoute": "character.html#myrtle_burrows",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -9606,6 +10978,34 @@
    "entityId": "namo",
    "entityType": "person",
    "sourceRoute": "character.html#namo",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/nar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nar",
+   "canonical": "person/nar.html",
+   "canonicalRoute": "person/nar.html",
+   "entityId": "nar",
+   "entityType": "person",
+   "sourceRoute": "character.html#nar",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/nar_companion_of_bilbo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nar companion of bilbo",
+   "canonical": "person/nar_companion_of_bilbo.html",
+   "canonicalRoute": "person/nar_companion_of_bilbo.html",
+   "entityId": "nar_companion_of_bilbo",
+   "entityType": "person",
+   "sourceRoute": "character.html#nar_companion_of_bilbo",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -9889,6 +11289,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/nuin.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "nuin",
+   "canonical": "person/nuin.html",
+   "canonicalRoute": "person/nuin.html",
+   "entityId": "nuin",
+   "entityType": "person",
+   "sourceRoute": "character.html#nuin",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/numendil.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -9945,6 +11359,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/ohtar.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ohtar",
+   "canonical": "person/ohtar.html",
+   "canonicalRoute": "person/ohtar.html",
+   "entityId": "ohtar",
+   "entityType": "person",
+   "sourceRoute": "character.html#ohtar",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/oin_d.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -9970,6 +11398,20 @@
    "entityId": "oin_k",
    "entityType": "person",
    "sourceRoute": "character.html#oin_k",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/old_noakes.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "old noakes",
+   "canonical": "person/old_noakes.html",
+   "canonicalRoute": "person/old_noakes.html",
+   "entityId": "old_noakes",
+   "entityType": "person",
+   "sourceRoute": "character.html#old_noakes",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -10043,6 +11485,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/orgulas_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "orgulas brandybuck",
+   "canonical": "person/orgulas_brandybuck.html",
+   "canonicalRoute": "person/orgulas_brandybuck.html",
+   "entityId": "orgulas_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#orgulas_brandybuck",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/ori.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -10110,6 +11566,20 @@
    "entityId": "ornil",
    "entityType": "person",
    "sourceRoute": "character.html#ornil",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/orodlin_son_of_orodreth.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "orodlin son of orodreth",
+   "canonical": "person/orodlin_son_of_orodreth.html",
+   "canonicalRoute": "person/orodlin_son_of_orodreth.html",
+   "entityId": "orodlin_son_of_orodreth",
+   "entityType": "person",
+   "sourceRoute": "character.html#orodlin_son_of_orodreth",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -10309,6 +11779,34 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/pearl_took.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "pearl took",
+   "canonical": "person/pearl_took.html",
+   "canonicalRoute": "person/pearl_took.html",
+   "entityId": "pearl_took",
+   "entityType": "person",
+   "sourceRoute": "character.html#pearl_took",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/peeping_jack.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "peeping jack",
+   "canonical": "person/peeping_jack.html",
+   "canonicalRoute": "person/peeping_jack.html",
+   "entityId": "peeping_jack",
+   "entityType": "person",
+   "sourceRoute": "character.html#peeping_jack",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/peleg.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -10393,6 +11891,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/pimpernel_took.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "pimpernel took",
+   "canonical": "person/pimpernel_took.html",
+   "canonicalRoute": "person/pimpernel_took.html",
+   "entityId": "pimpernel_took",
+   "entityType": "person",
+   "sourceRoute": "character.html#pimpernel_took",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/pippin.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -10404,6 +11916,48 @@
    "entityId": "pippin",
    "entityType": "person",
    "sourceRoute": "character.html#pippin",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/poldor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "poldor",
+   "canonical": "person/poldor.html",
+   "canonicalRoute": "person/poldor.html",
+   "entityId": "poldor",
+   "entityType": "person",
+   "sourceRoute": "character.html#poldor",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/ponto_baggins_i.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ponto baggins i",
+   "canonical": "person/ponto_baggins_i.html",
+   "canonicalRoute": "person/ponto_baggins_i.html",
+   "entityId": "ponto_baggins_i",
+   "entityType": "person",
+   "sourceRoute": "character.html#ponto_baggins_i",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/ponto_baggins_ii.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ponto baggins ii",
+   "canonical": "person/ponto_baggins_ii.html",
+   "canonicalRoute": "person/ponto_baggins_ii.html",
+   "entityId": "ponto_baggins_ii",
+   "entityType": "person",
+   "sourceRoute": "character.html#ponto_baggins_ii",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -10449,6 +12003,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/pott_the_mayor.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "pott the mayor",
+   "canonical": "person/pott_the_mayor.html",
+   "canonicalRoute": "person/pott_the_mayor.html",
+   "entityId": "pott_the_mayor",
+   "entityType": "person",
+   "sourceRoute": "character.html#pott_the_mayor",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/primo_grubb.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -10474,6 +12042,20 @@
    "entityId": "primrose_b",
    "entityType": "person",
    "sourceRoute": "character.html#primrose_b",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/primrose_gardner.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "primrose gardner",
+   "canonical": "person/primrose_gardner.html",
+   "canonicalRoute": "person/primrose_gardner.html",
+   "entityId": "primrose_gardner",
+   "entityType": "person",
+   "sourceRoute": "character.html#primrose_gardner",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -10575,6 +12157,34 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/ragnir_outlaw.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ragnir outlaw",
+   "canonical": "person/ragnir_outlaw.html",
+   "canonicalRoute": "person/ragnir_outlaw.html",
+   "entityId": "ragnir_outlaw",
+   "entityType": "person",
+   "sourceRoute": "character.html#ragnir_outlaw",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/ragnir_servant.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "ragnir servant",
+   "canonical": "person/ragnir_servant.html",
+   "canonicalRoute": "person/ragnir_servant.html",
+   "entityId": "ragnir_servant",
+   "entityType": "person",
+   "sourceRoute": "character.html#ragnir_servant",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/ragnor.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -10617,6 +12227,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/rian_daughter_of_steward_barahir.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rian daughter of steward barahir",
+   "canonical": "person/rian_daughter_of_steward_barahir.html",
+   "canonicalRoute": "person/rian_daughter_of_steward_barahir.html",
+   "entityId": "rian_daughter_of_steward_barahir",
+   "entityType": "person",
+   "sourceRoute": "character.html#rian_daughter_of_steward_barahir",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/rimion.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -10642,6 +12266,20 @@
    "entityId": "robin_smallburrow",
    "entityType": "person",
    "sourceRoute": "character.html#robin_smallburrow",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/rog.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rog",
+   "canonical": "person/rog.html",
+   "canonicalRoute": "person/rog.html",
+   "entityId": "rog",
+   "entityType": "person",
+   "sourceRoute": "character.html#rog",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -10729,6 +12367,34 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/rose_daughter_of_holman.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rose daughter of holman",
+   "canonical": "person/rose_daughter_of_holman.html",
+   "canonicalRoute": "person/rose_daughter_of_holman.html",
+   "entityId": "rose_daughter_of_holman",
+   "entityType": "person",
+   "sourceRoute": "character.html#rose_daughter_of_holman",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/rose_gardner.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rose gardner",
+   "canonical": "person/rose_gardner.html",
+   "canonicalRoute": "person/rose_gardner.html",
+   "entityId": "rose_gardner",
+   "entityType": "person",
+   "sourceRoute": "character.html#rose_gardner",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/rosie.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -10740,6 +12406,20 @@
    "entityId": "rosie",
    "entityType": "person",
    "sourceRoute": "character.html#rosie",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/rowan.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rowan",
+   "canonical": "person/rowan.html",
+   "canonicalRoute": "person/rowan.html",
+   "entityId": "rowan",
+   "entityType": "person",
+   "sourceRoute": "character.html#rowan",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -10827,6 +12507,34 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/rumil_elf_of_lorien.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rumil elf of lorien",
+   "canonical": "person/rumil_elf_of_lorien.html",
+   "canonicalRoute": "person/rumil_elf_of_lorien.html",
+   "entityId": "rumil_elf_of_lorien",
+   "entityType": "person",
+   "sourceRoute": "character.html#rumil_elf_of_lorien",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/rumil_elf_of_tirion.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "rumil elf of tirion",
+   "canonical": "person/rumil_elf_of_tirion.html",
+   "canonicalRoute": "person/rumil_elf_of_tirion.html",
+   "entityId": "rumil_elf_of_tirion",
+   "entityType": "person",
+   "sourceRoute": "character.html#rumil_elf_of_tirion",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/sadoc_brandybuck.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -10852,6 +12560,20 @@
    "entityId": "sador",
    "entityType": "person",
    "sourceRoute": "character.html#sador",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/saelon_daughter_of_malach.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "saelon daughter of malach",
+   "canonical": "person/saelon_daughter_of_malach.html",
+   "canonicalRoute": "person/saelon_daughter_of_malach.html",
+   "entityId": "saelon_daughter_of_malach",
+   "entityType": "person",
+   "sourceRoute": "character.html#saelon_daughter_of_malach",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -10981,6 +12703,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/saradas_brandybuck.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "saradas brandybuck",
+   "canonical": "person/saradas_brandybuck.html",
+   "canonicalRoute": "person/saradas_brandybuck.html",
+   "entityId": "saradas_brandybuck",
+   "entityType": "person",
+   "sourceRoute": "character.html#saradas_brandybuck",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/saradoc.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -11062,6 +12798,20 @@
    "entityId": "shagrat",
    "entityType": "person",
    "sourceRoute": "character.html#shagrat",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/sigismond_took.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "sigismond took",
+   "canonical": "person/sigismond_took.html",
+   "canonicalRoute": "person/sigismond_took.html",
+   "entityId": "sigismond_took",
+   "entityType": "person",
+   "sourceRoute": "character.html#sigismond_took",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -11174,6 +12924,20 @@
    "entityId": "soronto",
    "entityType": "person",
    "sourceRoute": "character.html#soronto",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/tal_elmar_character.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tal elmar character",
+   "canonical": "person/tal_elmar_character.html",
+   "canonicalRoute": "person/tal_elmar_character.html",
+   "entityId": "tal_elmar_character",
+   "entityType": "person",
+   "sourceRoute": "character.html#tal_elmar_character",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -11524,6 +13288,20 @@
    "entityId": "tarvanimelde",
    "entityType": "person",
    "sourceRoute": "character.html#tarvanimelde",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/tata.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tata",
+   "canonical": "person/tata.html",
+   "canonicalRoute": "person/tata.html",
+   "entityId": "tata",
+   "entityType": "person",
+   "sourceRoute": "character.html#tata",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -11933,6 +13711,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/tu_king_of_the_hisildi.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "tu king of the hisildi",
+   "canonical": "person/tu_king_of_the_hisildi.html",
+   "canonicalRoute": "person/tu_king_of_the_hisildi.html",
+   "entityId": "tu_king_of_the_hisildi",
+   "entityType": "person",
+   "sourceRoute": "character.html#tu_king_of_the_hisildi",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/tulkas.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -12255,6 +14047,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/vaire_wife_of_lindo.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "vaire wife of lindo",
+   "canonical": "person/vaire_wife_of_lindo.html",
+   "canonicalRoute": "person/vaire_wife_of_lindo.html",
+   "entityId": "vaire_wife_of_lindo",
+   "entityType": "person",
+   "sourceRoute": "character.html#vaire_wife_of_lindo",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/valacar.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -12294,6 +14100,20 @@
    "entityId": "valandil_k",
    "entityType": "person",
    "sourceRoute": "character.html#valandil_k",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/valandil_the_lost_road.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "valandil the lost road",
+   "canonical": "person/valandil_the_lost_road.html",
+   "canonicalRoute": "person/valandil_the_lost_road.html",
+   "entityId": "valandil_the_lost_road",
+   "entityType": "person",
+   "sourceRoute": "character.html#valandil_the_lost_road",
    "generated": true,
    "presentation": "paired-leaf"
   },
@@ -12507,6 +14327,20 @@
    "generated": true,
    "presentation": "paired-leaf"
   },
+  "person/widow_rumble.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "widow rumble",
+   "canonical": "person/widow_rumble.html",
+   "canonicalRoute": "person/widow_rumble.html",
+   "entityId": "widow_rumble",
+   "entityType": "person",
+   "sourceRoute": "character.html#widow_rumble",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
   "person/wilibald.html": {
    "volume": "III",
    "part": "Records of Persons",
@@ -12574,6 +14408,34 @@
    "entityId": "wiseman_gamwich",
    "entityType": "person",
    "sourceRoute": "character.html#wiseman_gamwich",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/witch_king.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "witch king",
+   "canonical": "person/witch_king.html",
+   "canonicalRoute": "person/witch_king.html",
+   "entityId": "witch_king",
+   "entityType": "person",
+   "sourceRoute": "character.html#witch_king",
+   "generated": true,
+   "presentation": "paired-leaf"
+  },
+  "person/wulf.html": {
+   "volume": "III",
+   "part": "Records of Persons",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "wulf",
+   "canonical": "person/wulf.html",
+   "canonicalRoute": "person/wulf.html",
+   "entityId": "wulf",
+   "entityType": "person",
+   "sourceRoute": "character.html#wulf",
    "generated": true,
    "presentation": "paired-leaf"
   },
