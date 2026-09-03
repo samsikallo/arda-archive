@@ -145,7 +145,7 @@ g.appendChild(lg);g.appendChild(eg);g.appendChild(ng);ng.setAttribute("filter","
 DATA.labels.forEach(L=>{const t=document.createElementNS(NS,"text");t.setAttribute("x",L.x);t.setAttribute("y",L.y);
 t.setAttribute("class","seclab");t.textContent="— "+L.t+" —";lg.appendChild(t);});
 let minx=1e9,maxx=-1e9,miny=1e9,maxy=-1e9;
-Ps.forEach(p=>{minx=Math.min(minx,p.x);maxx=Math.max(maxx,p.x+W);miny=Math.min(miny,p.y);maxy=Math.max(maxy,p.y+H)});
+Ps.forEach(p=>{if(!Number.isFinite(p.x)||!Number.isFinite(p.y))return;   /* one unplaced person makes every extent NaN, and NaN spreads: the watermark, the viewBox and every fit-to-window calculation downstream. Same skip as the node loop, and it must stay in step with it. */minx=Math.min(minx,p.x);maxx=Math.max(maxx,p.x+W);miny=Math.min(miny,p.y);maxy=Math.max(maxy,p.y+H)});
 // White Tree watermark
 wg.innerHTML=`<g transform="translate(${(minx+maxx)/2-600},${(miny+maxy)/2-750}) scale(30)" opacity="0.045">
 <g stroke="#3a3226" stroke-width="1.2" fill="none" stroke-linecap="round">
@@ -165,7 +165,7 @@ el.setAttribute("d",d);el.setAttribute("class",{"p":"ep","m":"em","f":"ef","a":"
 eg.appendChild(el);edgeEls.push({el,a,b});});
 const nodeEls={};
 const tip=document.getElementById("tip");
-Ps.forEach(p=>{const n=document.createElementNS(NS,"g");
+Ps.forEach(p=>{if(!Number.isFinite(p.x)||!Number.isFinite(p.y))return;   /* 123 persons carry no col/row and so no x/y: they are IN the dataset and cannot be DRAWN. Drawing them emitted translate(undefined,undefined) and Chromium refused the whole <g>, which also poisoned the watermark extent with NaN. Skipping them is honest about what the sheet can show; it is not a claim they do not exist. */const n=document.createElementNS(NS,"g");
 n.setAttribute("class","node"+(p.r=="X"?" ell":""));n.setAttribute("transform",`translate(${p.x},${p.y})`);
 const r=document.createElementNS(NS,"rect");r.setAttribute("class","bg");r.setAttribute("width",W);r.setAttribute("height",H);r.setAttribute("rx",6);
 r.setAttribute("fill",RF[p.r]);n.appendChild(r);
