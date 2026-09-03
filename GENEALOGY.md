@@ -3,7 +3,28 @@
 *Letters of J.R.R. Tolkien*: **present in the corpus** as two tier-1 volumes; not cited by this model; checked against it, and it adds no parentage the trees lack. **External information:** the parentage checks recorded in §8 used Tolkien Gateway and fan references as pointers only, each confirmed in-corpus before it was drawn; no external source enters the data unconfirmed.
 
 ## 1. THE CANONICAL TREES REPRODUCED
-Tolkien's own drawn/tabulated trees in the corpus, all incorporated: **Silmarillion tables I–V** (House of Finwë & the Noldorin descent of Elrond and Elros; Descendants of Olwë and Elwë; House of Bëor; Houses of Hador & the People of Haleth; the Sundering of the Elves); **App A** lines (Elros' Kings of Númenor; Lords of Andúnië → Elendil; Kings of Arnor/Arthedain and Chieftains; Kings of Gondor and Stewards; the Line of Eorl; Durin's Folk); **App C** hobbit trees (Baggins, Took, Brandybuck, Gamgee/Longfather-tree); the Great-Tales volumes' identical tables.
+Tolkien's own drawn/tabulated trees, **and what is actually incorporated, measured 3 September 2026 rather than asserted** — the sentence here read *"in the corpus, all incorporated"* and **two halves of it were false**: **Silmarillion tables I–V** (House of Finwë & the Noldorin descent of Elrond and Elros; Descendants of Olwë and Elwë; House of Bëor; Houses of Hador & the People of Haleth; the Sundering of the Elves); **App A** lines (Elros' Kings of Númenor; Lords of Andúnië → Elendil; Kings of Arnor/Arthedain and Chieftains; Kings of Gondor and Stewards; the Line of Eorl; Durin's Folk); **App C** hobbit trees (Baggins, Took, Brandybuck, Gamgee/Longfather-tree); the Great-Tales volumes' identical tables.
+
+**WHAT IS INCORPORATED, AND WHAT IS NOT.**
+* **The Silmarillion plates were NEVER IN THE CORPUS AS TEXT.** `pdftotext` returns **one byte**
+  for those pages — a form feed; they are JPEGs with no text layer. Under his rulings C860 and
+  C867 all six were read by eye and now stand at
+  `corpus/t2_a_the_silmarillion_tables.txt` — **tier 2, deliberately**, because no instrument can
+  verify a name in a JPEG and no second reader has yet checked one. There are **five distinct
+  plate images carrying six named tables**; IV and V share a plate, and the Sundering is
+  unnumbered, so *"tables I–V"* undercounts it by one.
+* **The Sundering of the Elves is NOT incorporated in the data at all.** It is a diagram of
+  PEOPLES, not persons, and **0 of 972 persons and 0 of 689 edges is a people**. Across 113
+  `site/arda_*.json`, eight of which carry a relation list totalling **4,457 rows, 0** state a
+  relation between any two of these peoples. `population_dashboard.html` carries a 45-node
+  taxonomy, but each node has **one** `parent` field — and the plate is a **lattice**, since
+  Moriquendi is gathered from two branches — so it structurally cannot hold ELDAR, CALAQUENDI,
+  ÚMANYAR or MORIQUENDI, and is missing exactly those four.
+* **Four of Appendix C's six hobbit trees are absent from the corpus as text.** `t1_c` carries
+  **Bolger and Boffin only**; Baggins, Took, Brandybuck and the Longfather-tree of Master
+  Samwise are not there, and 64 TG-cited rows lean on one of the four. The trees named above are
+  drawn from prose and from HoMe XII's discussion of the manuscript tables, not from Appendix C
+  itself.
 
 ## 2. THE GREAT MERGE — one graph where canon connects [all C]
 The corpus yields **one vast connected component** spanning Ainur, Elves and Men, stitched by these canonical marriages: Finwë ↔ Indis (Noldor–Vanyar); Finarfin ↔ Eärwen (Noldor–Teleri of Alqualondë, joining Olwë's line); **Thingol ↔ Melian** (Elves–Ainur); **Beren ↔ Lúthien** (Edain–Doriath); Húrin ↔ Morwen and Huor ↔ Rían (Hador–Bëor); Galdor ↔ Hareth and Haldir ↔ Glóredhel (Hador–Haleth double bond, Silm 17 table IV/V); **Tuor ↔ Idril** (Hador–Gondolin); **Eärendil ↔ Elwing** (uniting all three Elf-Man lines with Maiar blood); Elros → the whole Númenórean royal line → (Silmariën) → Lords of Andúnië → **Elendil → Isildur/Anárion → both kingdoms → Aragorn**; Elrond ↔ Celebrían (joining Galadriel & Celeborn's line); **Aragorn ↔ Arwen** (reuniting the sundered Half-elven branches, App A I(v)); Imrahil's line ↔ Éomer (Lothíriel) and **Faramir ↔ Éowyn** (Gondor–Rohan–Dol Amroth); Thengel ↔ Morwen of Lossarnach (Rohan–Gondor).
