@@ -9,7 +9,7 @@
   "living.html": "the halls put it under Peoples; the brief's Volume IV contents list puts a herbarium with relics and devices. The brief is followed."
  },
  "schemaVersion": 1,
- "n_routes": 1455,
+ "n_routes": 1456,
  "n_volumes": 7,
  "volumes": [
   {
@@ -181,6 +181,12 @@
      "part": "The Contents",
      "entries": [
       "volume-v.html"
+     ]
+    },
+    {
+     "part": "The Hall of Recordings",
+     "entries": [
+      "glaemscrafu.html"
      ]
     },
     {
@@ -955,6 +961,18 @@
    "prev": "character.html",
    "next": "population_dashboard.html"
   },
+  "glaemscrafu.html": {
+   "volume": "V",
+   "part": "The Hall of Recordings",
+   "archetype": "folio",
+   "spread": "spread",
+   "title": "The Hall of Recordings",
+   "canonical": "glaemscrafu.html",
+   "canonicalRoute": "glaemscrafu.html",
+   "presentation": "paired-leaf",
+   "prev": "volume-v.html",
+   "next": "languages.html"
+  },
   "gondolin.html": {
    "volume": "I",
    "part": "Houses of Gondolin",
@@ -998,7 +1016,7 @@
    "canonical": "languages.html",
    "canonicalRoute": "languages.html",
    "presentation": "paired-leaf",
-   "prev": "volume-v.html",
+   "prev": "glaemscrafu.html",
    "next": "names.html"
   },
   "living.html": {
@@ -20550,7 +20568,7 @@
    "canonical": "volume-v.html",
    "canonicalRoute": "volume-v.html",
    "presentation": "paired-leaf",
-   "next": "languages.html"
+   "next": "glaemscrafu.html"
   },
   "volume-vi.html": {
    "volume": "VI",
@@ -20697,6 +20715,7 @@
   ],
   "V": [
    "volume-v.html",
+   "glaemscrafu.html",
    "languages.html",
    "names.html",
    "poems.html",
