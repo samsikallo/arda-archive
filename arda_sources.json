@@ -6248,6 +6248,13 @@
    "content_tier": 1,
    "attribution": "transcribed by this archive from The Lord of the Rings, Appendices A III, C and E",
    "note": "Those tables are printed as images and survive no text extraction. They were recovered by rendering each plate with pdftoppm and reading it. OCR was tried and rejected: tesseract read Nain I's date as 1882 where the plate says 1832. Treat every figure here as a transcription that can be checked against the plate, not as extracted text."
+  },
+  {
+   "file": "t2_a_the_silmarillion_tables.txt",
+   "tier": 5,
+   "content_tier": 2,
+   "attribution": "read by eye from the five table plates of The Silmarillion by this archive, under his rulings C860 and C867",
+   "note": "Pages 446-455 are ten JPEGs with NO TEXT LAYER: pdftotext returns one byte for the plate page, a form feed, so the corpus never had this text to lose. The plates were rendered with pdftoppm and READ BY A PERSON -- not OCR, which is why the name is not t2_ocr_. TIER 2 IS DELIBERATE AND IS HIS RULING C867: no instrument can verify a name in a JPEG, and all five readers said independently that every transcribed name should stand at [I-H] until a SECOND reader looks. A t1_ name would let a citation to this file be graded C, which contradicts what every reader of it asked for; t2_ makes the honest grade the DEFAULT rather than a warning in a header nobody re-reads. PROMOTION CONDITION, stated so it is not forgotten: a second independent reading of the plates. None exists yet. Five distinct table images carrying six named tables; the volume's own copyright page names them at corpus/t1_a_the_silmarillion.txt:26-31. A sidecar rather than an insertion because inserting 36 lines for 11 would shift 372 stored locus references and 4 declared apparatus regions, each then owed a re-prove."
   }
  ],
  "retrieval_summary": {
