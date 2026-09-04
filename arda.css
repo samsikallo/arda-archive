@@ -981,3 +981,29 @@ svg#bmap > g > text{fill:#6d5f47 !important}
 .versal-img{ float:left; height:54px; width:auto; margin:2px 10px 0 0; shape-outside:content-box; }
 :root[data-theme="dark"] img.versal-img[src*="ornament/collected/"]{
   background:#efe6d0; border-radius:2px; padding:3px 4px; box-shadow:0 0 0 1px rgba(0,0,0,.35); }
+
+/* ARDA:PERSONFEAT */
+/* The per-person feature block and its REFUSAL RECORD (task #284). Written with the tokens the
+   rest of this sheet uses, so both themes follow without a second definition -- a colour whose
+   only home is a [data-theme] block is the classic unreadable-artifact bug, and this sheet
+   already carries a dark-theme list that these classes deliberately do not need to join. */
+.personfeat{margin-top:1.1em;padding-top:.7em;border-top:1px solid var(--a-codex-rule,rgba(120,90,50,.28))}
+.personfeat .rubric-sm{font-size:.82em;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--a-ink-brown,#6b5330);margin:.7em 0 .35em;font-weight:600}
+.personfeat .featwarnlist{margin:.2em 0 .5em;padding-left:1.1em;list-style:none}
+.personfeat .featwarnlist li{font-size:.82em;line-height:1.5;margin:.3em 0}
+.personfeat .featlist{margin:0 0 .5em}
+.personfeat .featlist dt{font-size:.78em;letter-spacing:.05em;color:var(--a-ink-brown,#6b5330);
+  opacity:.85;margin-top:.45em}
+.personfeat .featlist dd{margin:.12em 0 .3em .9em;line-height:1.45}
+.personfeat .locus{display:block;font-size:.72em;opacity:.55;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  word-break:break-all}
+/* The disagreement is meant to be READ, not decorated away: it is the archive saying it measured
+   its own citation and the citation lost. Quiet, but never invisible. */
+.personfeat .featwarn{display:block;font-size:.76em;line-height:1.4;margin-top:.15em;
+  padding-left:.6em;border-left:2px solid var(--a-gold,#b8912f);opacity:.78;font-style:italic}
+.personfeat .heldlist{margin:.2em 0 .3em;padding-left:1.1em;list-style:disc}
+.personfeat .heldlist li{font-size:.8em;line-height:1.5;margin:.25em 0;opacity:.8}
+.personfeat .heldlist b{font-weight:600;font-style:normal}
+@media (max-width:640px){.personfeat .featlist dd{margin-left:.4em}}
+/* /ARDA:PERSONFEAT */
