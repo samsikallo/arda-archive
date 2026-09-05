@@ -3084,7 +3084,7 @@
   {
    "file": "corpus/t1_c_appendix_tables_raw.txt",
    "tier": 1,
-   "attribution": "J.R.R. Tolkien -- Appendices A III, C and E, transcribed from the page images by this archive",
+   "attribution": "J.R.R. Tolkien -- Appendix A (pp. 1071-1081) and Appendix B, The Tale of Years (pp. 1083-1097), with a Shire Calendar fragment, transcribed from the page images by this archive. IT CONTAINS NO APPENDIX C FAMILY TREES AND NO APPENDIX E: measured 5 September 2026, and the attribution said 'Appendices A III, C and E' until then",
    "note": "THE APPENDIX TABLES, WHICH THE SHIPPED DIGITISATION RENDERS AS PICTURES. The Line of the Kings, the Shire Reckoning and the tengwar tables are typeset as images in the source, so pdftotext returns nothing for them and the archive transcribed them from the plates. 12,795 words. IT IS NOT A SEPARATE BOOK and must never be cited as one -- it is a recovered part of The Lord of the Rings, and a citation belongs to LotR App A III, C or E. The row exists because the quote matcher reads the file and rule 1 cannot be asked of a text no register names. EXTRACTION: CORRECTLY PRESENT -- transcribed, not extracted, and marked so.",
    "primary_text": true,
    "present": true,
@@ -3092,7 +3092,7 @@
    "cited": 0,
    "first_publication": "lifetime",
    "first_publication_year": 1955,
-   "first_publication_basis": "READ BY HAND. Not a book but the archive's own transcription -- its attribution reads 'J.R.R. Tolkien -- Appendices A III, C and E, transcribed from the page images by this archive'. The TEXT is The Lord of the Rings' Appendices, and the register dates that volume '1954-55; rev. 1965, 1966' on its own row. The Return of the King, which carries the Appendices, is 1955. The transcription is 2026 and the archive's own hand; that is the tier-5 ORIGIN axis of C474, not this one.",
+   "first_publication_basis": "READ BY HAND. Not a book but the archive's own transcription -- its attribution reads 'J.R.R. Tolkien -- Appendix A (pp. 1071-1081) and Appendix B, The Tale of Years (pp. 1083-1097), with a Shire Calendar fragment, transcribed from the page images by this archive. IT CONTAINS NO APPENDIX C FAMILY TREES AND NO APPENDIX E: measured 5 September 2026, and the attribution said 'Appendices A III, C and E' until then'. The TEXT is The Lord of the Rings' Appendices, and the register dates that volume '1954-55; rev. 1965, 1966' on its own row. The Return of the King, which carries the Appendices, is 1955. The transcription is 2026 and the archive's own hand; that is the tier-5 ORIGIN axis of C474, not this one.",
    "bytes": 71580,
    "corpus_file": "t1_c_appendix_tables_raw.txt",
    "words": 12795,
