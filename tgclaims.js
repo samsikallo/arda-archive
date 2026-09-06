@@ -66,10 +66,9 @@
     var id = (location.hash || "#aragorn").slice(1);
     var old = document.getElementById("rec-tg");
     if (old) old.remove();
-    var spot = document.getElementById("bookspot");
-    if (!spot || !id) return;
+    if (!id || !document.getElementById("main")) return;
     if (CACHE[id] === false) return;
-    if (CACHE[id]) { put(spot, CACHE[id]); return; }
+    if (CACHE[id]) { put(id, CACHE[id]); return; }
     // A 404 IS AN ANSWER AND NOT A FAULT: 179 of the 960 published persons have no cleared
     // Tolkien Gateway claim at all, and the archive says nothing rather than saying nothing found.
     fetch("tg/" + encodeURIComponent(id) + ".json").then(function (r) {
@@ -77,20 +76,60 @@
       return r.json();
     }).then(function (j) {
       CACHE[id] = j;
-      if ((location.hash || "#aragorn").slice(1) === id) put(spot, j);
+      put(id, j);
     }, function () { CACHE[id] = false; });
   }
-  function put(spot, j) {
+  // ── THE ANCHOR IS RESOLVED AT INSERT TIME AND NEVER HELD ACROSS A FETCH ──────────────────
+  // THIS COST TWO FAILED RENDERS AND THE PROBE IS THE ONLY REASON IT IS KNOWN. The first two
+  // writes captured `#bookspot` before the fetch and inserted against it afterwards -- and
+  // character.html's own `addBooks` does `spot.outerHTML = html`, which REPLACES that element
+  // with an unidentified `div.card`. The node this file was holding was detached from the
+  // document by the time the shard arrived, so `parentNode` was null and the insert threw
+  // inside a promise, silently. A DOM reference held across an await is a reference to a node
+  // somebody else is allowed to destroy.
+  function anchor() {
+    var m = document.getElementById("main");
+    if (!m) return null;
+    return document.getElementById("bookspot") || m.querySelector(".orn") || null;
+  }
+  function put(id, j) {
+    if ((location.hash || "#aragorn").slice(1) !== id) return;
     if (!j || !(j.claims || []).length || document.getElementById("rec-tg")) return;
+    var m = document.getElementById("main");
+    if (!m) return;
     var d = document.createElement("div");
     d.id = "rec-tg";
     d.innerHTML = panel(j);
-    spot.parentNode.insertBefore(d, spot);
+    var a = anchor();
+    if (a && a.parentNode) a.parentNode.insertBefore(d, a);
+    else m.appendChild(d);
   }
-  addEventListener("hashchange", draw);
-  if (document.readyState === "loading") addEventListener("DOMContentLoaded", draw);
-  else draw();
-  // The record is drawn by character.html's own render(), which runs after this file loads on a
-  // cold cache; a second pass a beat later costs nothing and catches that ordering.
-  setTimeout(draw, 400);
+  // ── WAIT FOR THE ANCHOR, DO NOT GUESS WHEN IT ARRIVES ───────────────────────────────────
+  // THE FIRST WRITE OF THIS USED A 400ms TIMER AND RENDERED NOTHING, and the render probe is the
+  // only reason that is known: `#bookspot` is created by character.html's own render(), which
+  // runs inside the .then() of the genealogy fetch, so on a cold cache it does not exist when
+  // this file loads OR 400ms later. A timer is a GUESS about somebody else's fetch. This waits
+  // for the element instead, and gives up out loud rather than polling for ever.
+  // A MUTATION OBSERVER AND NOT A TIMER. Two earlier writes of this rendered NOTHING and the
+  // render probe is the only reason that is known -- a DOM dump with `rec-epi` present and
+  // `rec-tg` absent. `#bookspot` is created by character.html's own render(), inside the .then()
+  // of the genealogy fetch, so it does not exist when this file loads; and a `setTimeout` chain
+  // waiting for it never produced the panel either. Waiting for the ELEMENT rather than for a
+  // number of milliseconds is both correct and observable: it fires the instant the anchor
+  // exists, and it disconnects itself the first time it succeeds.
+  var obs = null;
+  function arm() {
+    if (document.getElementById("bookspot") || (document.getElementById("main")
+        && document.getElementById("main").querySelector(".orn"))) { draw(); return true; }
+    return false;
+  }
+  function watch() {
+    if (arm()) return;
+    if (obs) return;
+    obs = new MutationObserver(function () { if (arm()) { obs.disconnect(); obs = null; } });
+    obs.observe(document.documentElement, { childList: true, subtree: true });
+  }
+  addEventListener("hashchange", watch);
+  if (document.readyState === "loading") addEventListener("DOMContentLoaded", watch);
+  else watch();
 })();
