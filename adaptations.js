@@ -101,6 +101,23 @@
      shape as this file's first draft, which pinned the main thread outright. A refusal is a
      verdict about the DATA, and data does not change between two mutations of the DOM. */
   var REFUSED = {};
+  /* ── THE SUBJECT IS DECLARED WHERE THERE IS NO FRAGMENT TO READ ────────────────────────────
+     character.html shows one person per hash, so `location.hash` IS its subject. A person route
+     -- site/person/<slug>.html, and 236 of the 960 hold an adaptation shard -- IS the person and
+     carries no hash at all; reading the hash there would make every one of them render Aragorn,
+     which is the fallback below. So the page declares who it is about, in the spliced
+     ARDA:RECLAYER region, and this reads the declaration when there is one. Written once and
+     called from all four places that used to inline the expression, for the reason MARK above
+     is a constant: a literal repeated in four places goes stale in three of them. */
+  function subj() {
+    return window.ARDA_SUBJECT || (location.hash || "#aragorn").slice(1);
+  }
+  /* AND THE DATA PATH IS RELATIVE TO THE PAGE, NOT TO THIS SCRIPT. character.html is at the site
+     root and fetches "adapt/x.json"; person/<slug>.html is one level down and must fetch
+     "../adapt/x.json". The page declares its own depth as `window.ARDA_BASE` -- the same value
+     nav.js is handed, and for the reason gen_stubs.py records: the depth differs between GitHub
+     Pages, a local server and file://, and the PAGE is the only thing that knows it. */
+  function dbase() { return window.ARDA_BASE || ""; }
   function esc(x) {
     return String(x == null ? "" : x).replace(/[&<>"]/g, function (c) {
       return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c];
@@ -200,10 +217,14 @@
     if (!m) return null;
     // Sit BELOW the Tolkien Gateway panel when that exists, so the reader meets the archive's
     // own attestation first and the real-world layer last. Resolved here, at insert time.
-    return document.getElementById("bookspot") || m.querySelector(".orn") || null;
+    // `#recspot` IS THE PERSON ROUTE'S DECLARED SLOT and is first because it is the only one of
+    // the three that stands in the STATIC html. character.html has no #recspot, so this is inert
+    // there and that page's behaviour is byte-for-byte what map/reallayer_check.py measured.
+    return document.getElementById("recspot") || document.getElementById("bookspot")
+        || m.querySelector(".orn") || null;
   }
   function put(id, j) {
-    if ((location.hash || "#aragorn").slice(1) !== id) return;
+    if (subj() !== id) return;
     if (!j || !(j.portrayals || []).length || document.getElementById("rec-adapt")) return;
     var m = document.getElementById("main");
     if (!m) return;
@@ -223,7 +244,7 @@
     else { m.appendChild(head); m.appendChild(rows); }
   }
   function draw() {
-    var id = (location.hash || "#aragorn").slice(1);
+    var id = subj();
     // BY STAMP, NOT BY CONTAINER. Removing #rec-adapt and #rec-adapt-rows by id left the
     // PREVIOUS person's rows on the page, because the compositor had already moved them out
     // of both. wipe() takes every stamped node wherever it now lives.
@@ -231,7 +252,7 @@
     if (!id || !document.getElementById("main")) return;
     if (CACHE[id] === false || REFUSED[id]) return;
     if (CACHE[id]) { put(id, CACHE[id]); return; }
-    fetch("adapt/" + encodeURIComponent(id) + ".json").then(function (r) {
+    fetch(dbase() + "adapt/" + encodeURIComponent(id) + ".json").then(function (r) {
       if (!r.ok) throw new Error(r.status);
       return r.json();
     }).then(function (j) { CACHE[id] = j; put(id, j); },
@@ -252,7 +273,8 @@
   // only if that first attempt failed, and DISCONNECTS ITSELF the moment it succeeds.
   var obs = null;
   function arm() {
-    if (document.getElementById("bookspot") || (document.getElementById("main")
+    if (document.getElementById("recspot") || document.getElementById("bookspot")
+        || (document.getElementById("main")
         && document.getElementById("main").querySelector(".orn"))) { draw(); return true; }
     return false;
   }
@@ -285,7 +307,7 @@
     // NOT paper over the race -- map/reallayer_check.py still measures whether a reader gets the
     // marked panel, and it stays out of the gate until it is 4 of 4.
     obs = new MutationObserver(function () {
-      var id = (location.hash || "#aragorn").slice(1);
+      var id = subj();
       var e = document.getElementById("rec-adapt");
       // A STRAY IS A THIRD REASON TO REDRAW, and it terminates like the other two: draw()
       // wipes every stamped node first, so the next callback finds none belonging to anyone

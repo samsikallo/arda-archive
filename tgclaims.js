@@ -21,12 +21,28 @@
  */
 (function () {
   var CACHE = {}, LBL = null;
+  /* ── THE SUBJECT IS DECLARED WHERE THERE IS NO FRAGMENT TO READ ────────────────────────────
+     character.html shows one person per hash, so `location.hash` IS its subject. A person route
+     -- site/person/<slug>.html, 960 of them, and 781 hold a shard -- IS the person and carries no
+     hash at all. Reading the hash there would make every one of the 960 render Aragorn, which is
+     the default this file falls back to. So the page declares who it is about, in the spliced
+     ARDA:RECLAYER region, and this reads the declaration when there is one. */
+  function subj() {
+    return window.ARDA_SUBJECT || (location.hash || "#aragorn").slice(1);
+  }
+  /* AND THE DATA PATH IS RELATIVE TO THE PAGE, NOT TO THIS SCRIPT. character.html sits at the
+     site root and fetches "tg/x.json"; person/<slug>.html is one level down and must fetch
+     "../tg/x.json". The page already declares its own depth as `window.ARDA_BASE`, for exactly
+     the reason gen_stubs.py's own comment gives about nav.js: the depth differs between GitHub
+     Pages, a local server and file://, and the PAGE is the only thing that knows it. Deriving it
+     from location.pathname would be a guess with three possible answers. */
+  function dbase() { return window.ARDA_BASE || ""; }
   function esc(x) {
     return String(x == null ? "" : x).replace(/[&<>"]/g, function (c) {
       return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c];
     });
   }
-  function panel(d) {
+  function panel(d, id) {
     var by = {}, order = [];
     (d.claims || []).forEach(function (c) {
       if (!by[c.feature]) { by[c.feature] = []; order.push(c.feature); }
@@ -50,7 +66,13 @@
     order.forEach(function (f) {
       h += '<div class="sub">' + esc(LBL[f] || f.replace(/_/g, " ")) + '</div>';
       by[f].forEach(function (c) {
-        h += '<div style="background:#fdfaf2;border:1px solid #b0a58e;border-radius:8px;'
+        /* EVERY CLAIM ROW IS STAMPED, and map/personlayer_check.py counts the stamps against
+           the shard's own claim count. A panel that renders its heading and loses its rows is
+           a panel that passed getElementById and served no reader -- exactly the failure
+           map/reallayer_check.py had to add a row count to arm A to catch. `data-tg-of` carries
+           the PERSON, so a row left behind from another subject is recognisable as one. */
+        h += '<div data-tg-claim data-tg-of="' + esc(id) + '" '
+          + 'style="background:#fdfaf2;border:1px solid #b0a58e;border-radius:8px;'
           + 'padding:7px 10px;margin:0 0 7px">'
           + '<div>' + esc(c.text).replace(/\n/g, "<br>") + '</div>'
           + '<div class="cite" style="margin-top:.35em">' + esc(c.cite)
@@ -63,7 +85,7 @@
     return h;
   }
   function draw() {
-    var id = (location.hash || "#aragorn").slice(1);
+    var id = subj();
     var old = document.getElementById("rec-tg");
     if (old) old.remove();
     if (!id || !document.getElementById("main")) return;
@@ -71,7 +93,7 @@
     if (CACHE[id]) { put(id, CACHE[id]); return; }
     // A 404 IS AN ANSWER AND NOT A FAULT: 179 of the 960 published persons have no cleared
     // Tolkien Gateway claim at all, and the archive says nothing rather than saying nothing found.
-    fetch("tg/" + encodeURIComponent(id) + ".json").then(function (r) {
+    fetch(dbase() + "tg/" + encodeURIComponent(id) + ".json").then(function (r) {
       if (!r.ok) throw new Error(r.status);
       return r.json();
     }).then(function (j) {
@@ -90,16 +112,22 @@
   function anchor() {
     var m = document.getElementById("main");
     if (!m) return null;
-    return document.getElementById("bookspot") || m.querySelector(".orn") || null;
+    // `#recspot` IS THE PERSON ROUTE'S DECLARED SLOT, and it is first because it is the only one
+    // of the three that is in the STATIC html. character.html has neither, so this is inert
+    // there. It sits above the route's colophon so the panel lands inside the record card rather
+    // than after the line that closes it.
+    return document.getElementById("recspot") || document.getElementById("bookspot")
+        || m.querySelector(".orn") || null;
   }
   function put(id, j) {
-    if ((location.hash || "#aragorn").slice(1) !== id) return;
+    if (subj() !== id) return;
     if (!j || !(j.claims || []).length || document.getElementById("rec-tg")) return;
     var m = document.getElementById("main");
     if (!m) return;
     var d = document.createElement("div");
     d.id = "rec-tg";
-    d.innerHTML = panel(j);
+    d.setAttribute("data-tg-of", id);
+    d.innerHTML = panel(j, id);
     var a = anchor();
     if (a && a.parentNode) a.parentNode.insertBefore(d, a);
     else m.appendChild(d);
@@ -119,7 +147,8 @@
   // exists, and it disconnects itself the first time it succeeds.
   var obs = null;
   function arm() {
-    if (document.getElementById("bookspot") || (document.getElementById("main")
+    if (document.getElementById("recspot") || document.getElementById("bookspot")
+        || (document.getElementById("main")
         && document.getElementById("main").querySelector(".orn"))) { draw(); return true; }
     return false;
   }
