@@ -1,12 +1,13 @@
 {
  "mode": "General Use",
  "built_from": "map/gen_tengwar_mode_gu.py",
- "reads": "~/.cache/arda_at (Amanyë Tenceli, mirrored) -- FACTS ONLY, no prose republished",
+ "reads": "corpus/t1_c_the_lord_of_the_rings.txt (Appendix E, through map/ardatext.py) and site/arda_scripts.json (the 40 shapes and their plate numbers). Amanye Tenceli supplies the placement specimens and nothing else.",
  "encoding": "ConScript Unicode Registry tengwar, U+E000 onward",
- "rule": "The General Use permits the vowel-sign over EITHER the preceding or the following tengwa -- though not both in one document. 8 attested specimens put it following, 4 preceding. THIS ARCHIVE OFFERS BOTH AND DEFAULTS TO NEITHER.",
+ "hand_ruling": "C896, 6 September 2026 -- Appendix E's plate is read BY HAND for the General Use and the reading is marked [I-H]. EVERY ROW IS [I-H]. NOT ONE IS [C], including the rows Appendix E states in so many words, because what is published is a HAND joining a value in the prose to a shape on the plate, and a hand can misjoin.",
+ "rule": "The General Use permits the vowel-sign over EITHER the preceding or the following tengwa -- though not both in one document. 8 attested specimens put it following, 4 preceding. THE PARAMETER IS STILL OFFERED; the archive's own name transcriber uses FOLLOWING, on Appendix E's stated rule for languages whose words end in a consonant.",
  "placement": {
   "following": {
-   "rule": "the vowel-sign sits over the tengwa that FOLLOWS it -- the commoner practice, and the one the Writing Lab offered as though it were the only one",
+   "rule": "the vowel-sign sits over the tengwa that FOLLOWS it -- the commoner practice, and the one the RETIRED Writing Lab offered as though it were the only one -- retired 21 Aug 2026 by map/retire_writing_lab.py, because an uncited transcriber beside this cited refusal published two answers to one phrase",
    "specimens": [
     10,
     11,
@@ -29,6 +30,11 @@
    ],
    "cite": "Amanyë Tenceli, General Use: it assigns the preceding-tengwa placement to these four specimens. [EXT] -- Björkman's reading."
   }
+ },
+ "placement_used_for_names": {
+  "which": "following",
+  "conf": "[I-H]",
+  "cite": "Appendix E, The Tengwar (line 50180): \"In languages such as Quenya, in which most words ended in a vowel, the tehta was placed above the preceding consonant; in those such as Sindarin, in which most words ended in a consonant, it was placed above the following consonant.\""
  },
  "rules": [
   {
@@ -74,10 +80,442 @@
    "cite": "Amanyë Tenceli, General Use, citing DTS 58."
   }
  ],
+ "letters": {
+  "t": {
+   "cp": "U+E000",
+   "num": 1,
+   "tengwa": "tinco",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50115): \"The normal letters, Grade 1, were applied to the 'voiceless stops': t, p, k, etc. The doubling of the bow indicated the addition of 'voice': thus if 1, 2, 3, 4=t, p, ch, k (or t, p, k, kw) then 5, 6, 7, 8=d, b, j, g (or d, b, g, gw).\""
+  },
+  "p": {
+   "cp": "U+E001",
+   "num": 2,
+   "tengwa": "parma",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50115): \"The normal letters, Grade 1, were applied to the 'voiceless stops': t, p, k, etc. The doubling of the bow indicated the addition of 'voice': thus if 1, 2, 3, 4=t, p, ch, k (or t, p, k, kw) then 5, 6, 7, 8=d, b, j, g (or d, b, g, gw).\""
+  },
+  "ch": {
+   "cp": "U+E002",
+   "num": 3,
+   "tengwa": "calma",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50115, 50108, 50142): \"The normal letters, Grade 1, were applied to the 'voiceless stops': t, p, k, etc. The doubling of the bow indicated the addition of 'voice': thus if 1, 2, 3, 4=t, p, ch, k (or t, p, k, kw) then 5, 6, 7, 8=d, b, j, g (or d, b, g, gw).\"",
+   "note": "ch as in English CHURCH -- the footnote defines the symbol for this discussion"
+  },
+  "k": {
+   "cp": "U+E003",
+   "num": 4,
+   "tengwa": "quesse",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50115, 50108): \"The normal letters, Grade 1, were applied to the 'voiceless stops': t, p, k, etc. The doubling of the bow indicated the addition of 'voice': thus if 1, 2, 3, 4=t, p, ch, k (or t, p, k, kw) then 5, 6, 7, 8=d, b, j, g (or d, b, g, gw).\"",
+   "note": "Series IV is the k-series in the Westron application, which is the one App E states"
+  },
+  "d": {
+   "cp": "U+E004",
+   "num": 5,
+   "tengwa": "ando",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50115): \"The normal letters, Grade 1, were applied to the 'voiceless stops': t, p, k, etc. The doubling of the bow indicated the addition of 'voice': thus if 1, 2, 3, 4=t, p, ch, k (or t, p, k, kw) then 5, 6, 7, 8=d, b, j, g (or d, b, g, gw).\"",
+   "note": "THE LETTER C895 SEARCHED FOR AND COULD NOT FIND IN QUENYA. In Quenya 5 is `nd`; in the general use it is plain d, and App E states it."
+  },
+  "b": {
+   "cp": "U+E005",
+   "num": 6,
+   "tengwa": "umbar",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50115): \"The normal letters, Grade 1, were applied to the 'voiceless stops': t, p, k, etc. The doubling of the bow indicated the addition of 'voice': thus if 1, 2, 3, 4=t, p, ch, k (or t, p, k, kw) then 5, 6, 7, 8=d, b, j, g (or d, b, g, gw).\"",
+   "note": "Quenya `mb`; general use plain b."
+  },
+  "j": {
+   "cp": "U+E006",
+   "num": 7,
+   "tengwa": "anga",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50115, 50142): \"The normal letters, Grade 1, were applied to the 'voiceless stops': t, p, k, etc. The doubling of the bow indicated the addition of 'voice': thus if 1, 2, 3, 4=t, p, ch, k (or t, p, k, kw) then 5, 6, 7, 8=d, b, j, g (or d, b, g, gw).\"",
+   "note": "j as in English JUDGE. Quenya `ng`."
+  },
+  "g": {
+   "cp": "U+E007",
+   "num": 8,
+   "tengwa": "ungwe",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50115): \"The normal letters, Grade 1, were applied to the 'voiceless stops': t, p, k, etc. The doubling of the bow indicated the addition of 'voice': thus if 1, 2, 3, 4=t, p, ch, k (or t, p, k, kw) then 5, 6, 7, 8=d, b, j, g (or d, b, g, gw).\"",
+   "note": "Quenya `ngw`; general use plain g."
+  },
+  "th": {
+   "cp": "U+E008",
+   "num": 9,
+   "tengwa": "sule",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50118): \"The raising of the stem indicated the opening of the consonant to a 'spirant': thus assuming the above values for Grade 1, Grade 3 (9-12)=th, f, sh, ch (or th, f, kh, khw/hw), and Grade 4 (13-16)=dh, v, zh, gh (or dh, v, gh, ghw/w).\""
+  },
+  "f": {
+   "cp": "U+E009",
+   "num": 10,
+   "tengwa": "formen",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50118): \"The raising of the stem indicated the opening of the consonant to a 'spirant': thus assuming the above values for Grade 1, Grade 3 (9-12)=th, f, sh, ch (or th, f, kh, khw/hw), and Grade 4 (13-16)=dh, v, zh, gh (or dh, v, gh, ghw/w).\""
+  },
+  "sh": {
+   "cp": "U+E00A",
+   "num": 11,
+   "tengwa": "aha",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50118): \"The raising of the stem indicated the opening of the consonant to a 'spirant': thus assuming the above values for Grade 1, Grade 3 (9-12)=th, f, sh, ch (or th, f, kh, khw/hw), and Grade 4 (13-16)=dh, v, zh, gh (or dh, v, gh, ghw/w).\""
+  },
+  "kh": {
+   "cp": "U+E00B",
+   "num": 12,
+   "tengwa": "hwesta",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50118): \"The raising of the stem indicated the opening of the consonant to a 'spirant': thus assuming the above values for Grade 1, Grade 3 (9-12)=th, f, sh, ch (or th, f, kh, khw/hw), and Grade 4 (13-16)=dh, v, zh, gh (or dh, v, gh, ghw/w).\"",
+   "note": "the spirant of the k-series -- the ch of German ACH, not of English CHURCH. App E prints the digraph `ch` at BOTH 3 and 12 in one paragraph, under two different conventions; the alternative reading it gives in the same sentence, `(or th, f, kh, khw/hw)`, is what fixes 12 as the kh slot. The VALUE is read; what is refused below is the ROUTING of a latin `ch` to it, which is a fact about a name's pronunciation and not about the plate."
+  },
+  "dh": {
+   "cp": "U+E00C",
+   "num": 13,
+   "tengwa": "anto",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50118): \"The raising of the stem indicated the opening of the consonant to a 'spirant': thus assuming the above values for Grade 1, Grade 3 (9-12)=th, f, sh, ch (or th, f, kh, khw/hw), and Grade 4 (13-16)=dh, v, zh, gh (or dh, v, gh, ghw/w).\""
+  },
+  "v": {
+   "cp": "U+E00D",
+   "num": 14,
+   "tengwa": "ampa",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50118): \"The raising of the stem indicated the opening of the consonant to a 'spirant': thus assuming the above values for Grade 1, Grade 3 (9-12)=th, f, sh, ch (or th, f, kh, khw/hw), and Grade 4 (13-16)=dh, v, zh, gh (or dh, v, gh, ghw/w).\""
+  },
+  "zh": {
+   "cp": "U+E00E",
+   "num": 15,
+   "tengwa": "anca",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50118, 50142): \"The raising of the stem indicated the opening of the consonant to a 'spirant': thus assuming the above values for Grade 1, Grade 3 (9-12)=th, f, sh, ch (or th, f, kh, khw/hw), and Grade 4 (13-16)=dh, v, zh, gh (or dh, v, gh, ghw/w).\""
+  },
+  "gh": {
+   "cp": "U+E00F",
+   "num": 16,
+   "tengwa": "unque",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50118): \"The raising of the stem indicated the opening of the consonant to a 'spirant': thus assuming the above values for Grade 1, Grade 3 (9-12)=th, f, sh, ch (or th, f, kh, khw/hw), and Grade 4 (13-16)=dh, v, zh, gh (or dh, v, gh, ghw/w).\""
+  },
+  "n": {
+   "cp": "U+E010",
+   "num": 17,
+   "tengwa": "numen",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50128): \"Grade 5 (17-20) was usually applied to the nasal consonants: thus 17 and 18 were the most common signs for n and m.\""
+  },
+  "m": {
+   "cp": "U+E011",
+   "num": 18,
+   "tengwa": "malta",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50128): \"Grade 5 (17-20) was usually applied to the nasal consonants: thus 17 and 18 were the most common signs for n and m.\""
+  },
+  "r (final or before a consonant)": {
+   "cp": "U+E014",
+   "num": 21,
+   "tengwa": "ore",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50135, 50132): \"Thus 21 was often used for a weak (untrilled) r, originally occurring in Quenya and regarded in the system of that language as the weakest consonant of the tincotema; 22 was widely used for w; where Series III was used as a palatal series 23 was commonly used as consonantal y.\"",
+   "note": "the weak r. POSITIONAL: this archive writes 21 finally and before a consonant, and 25 before a vowel -- the same split App E states and the Quenya mode already publishes."
+  },
+  "w": {
+   "cp": "U+E015",
+   "num": 22,
+   "tengwa": "vala",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50135): \"Thus 21 was often used for a weak (untrilled) r, originally occurring in Quenya and regarded in the system of that language as the weakest consonant of the tincotema; 22 was widely used for w; where Series III was used as a palatal series 23 was commonly used as consonantal y.\"",
+   "note": "'22 was widely used for w'. App E ALSO assigns w to 36; this archive writes w with 22 because App E calls that use WIDE and 36's only 'when used as consonants, mostly'. 36 is recorded below as the attested alternate and is not routed to."
+  },
+  "r (before a vowel)": {
+   "cp": "U+E018",
+   "num": 25,
+   "tengwa": "romen",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50166): \"No. 27 was universally used for l. No. 25 (in origin a modification of 21) was used for 'full' trilled r. Nos. 26, 28 were modifications of these. They were frequently used for voiceless r (rh) and l (lh) respectively.\"",
+   "note": "the full trilled r; written before a vowel. See 21."
+  },
+  "rh": {
+   "cp": "U+E019",
+   "num": 26,
+   "tengwa": "arda",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50166): \"No. 27 was universally used for l. No. 25 (in origin a modification of 21) was used for 'full' trilled r. Nos. 26, 28 were modifications of these. They were frequently used for voiceless r (rh) and l (lh) respectively.\""
+  },
+  "l": {
+   "cp": "U+E01A",
+   "num": 27,
+   "tengwa": "lambe",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50166): \"No. 27 was universally used for l. No. 25 (in origin a modification of 21) was used for 'full' trilled r. Nos. 26, 28 were modifications of these. They were frequently used for voiceless r (rh) and l (lh) respectively.\""
+  },
+  "lh": {
+   "cp": "U+E01B",
+   "num": 28,
+   "tengwa": "alda",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50166): \"No. 27 was universally used for l. No. 25 (in origin a modification of 21) was used for 'full' trilled r. Nos. 26, 28 were modifications of these. They were frequently used for voiceless r (rh) and l (lh) respectively.\""
+  },
+  "s": {
+   "cp": "U+E01C",
+   "num": 29,
+   "tengwa": "silme",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50169): \"29 represented s, and 31 (with doubled curl) z in those languages that required it. The inverted forms, 30 and 32, though available for use as separate signs, were mostly used as mere variants of 29 and 31\""
+  },
+  "z": {
+   "cp": "U+E01E",
+   "num": 31,
+   "tengwa": "esse",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50169): \"29 represented s, and 31 (with doubled curl) z in those languages that required it. The inverted forms, 30 and 32, though available for use as separate signs, were mostly used as mere variants of 29 and 31\"",
+   "note": "THE OTHER LETTER C895 SEARCHED FOR. In Quenya 31 is `ss`; App E states z for it 'in those languages that required it', and the 18 names refused for z are in languages that require it."
+  },
+  "h": {
+   "cp": "U+E020",
+   "num": 33,
+   "tengwa": "hyarmen",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50174): \"No. 33 was in origin a variation representing some (weaker) variety of 11; its most frequent use in the Third Age was h. 34 was mostly used (if at all) for voiceless w (hw). 35 and 36 were, when used as consonants, mostly applied to y and w respectively.\""
+  },
+  "hw": {
+   "cp": "U+E021",
+   "num": 34,
+   "tengwa": "hwesta_sindarinwa",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50174): \"No. 33 was in origin a variation representing some (weaker) variety of 11; its most frequent use in the Third Age was h. 34 was mostly used (if at all) for voiceless w (hw). 35 and 36 were, when used as consonants, mostly applied to y and w respectively.\""
+  },
+  "y": {
+   "cp": "U+E022",
+   "num": 35,
+   "tengwa": "yanta",
+   "conf": "[I-H]",
+   "read": "a hand reading of Appendix E's tengwar plate: the plate gives the shape and the number, Appendix E's prose gives the value at that number, and a hand joined them. Marked [I-H] on his ruling C896 even where the prose is explicit, because a hand can misjoin.",
+   "cite": "Appendix E, The Tengwar (corpus/t1_c_the_lord_of_the_rings.txt lines 50174): \"No. 33 was in origin a variation representing some (weaker) variety of 11; its most frequent use in the Third Age was h. 34 was mostly used (if at all) for voiceless w (hw). 35 and 36 were, when used as consonants, mostly applied to y and w respectively.\""
+  }
+ },
+ "letters_are": "SOUND -> CSUR codepoint, for the General Use -- the Westron application of Series III and IV, which is the one Appendix E states in prose. Every row [I-H], every row citing the sentence it was read from, and the sentences re-verified through map/ardatext.py on every run of this generator.",
+ "letters_refused": {
+  "19 noldo": {
+   "why": "REFUSED. App E assigns Grade 5 to the nasals and then names ONLY 17 and 18 -- 'thus 17 and 18 were the most common signs for n and m'. It states no general-use value for 19 or 20; their Quenya values are the nasals of Series III and IV (n-with-y, ngw), which the general use's own series assignment does not carry over. WHAT WOULD SETTLE IT: a text source giving the general-use value of 19, or DTS 58 read for it.",
+   "cost": "nothing. No name in the published population needs a letter that is only 19.",
+   "on": "Appendix E, The Tengwar, line 50128"
+  },
+  "20 nwalme": {
+   "why": "REFUSED, on the same sentence and for the same reason as 19. `ng` in a name is therefore written out as 17 + 8 (n then g), which invents no letter.",
+   "cost": "28 of the 770 refused names contain `ng`; all 28 are served by writing n + g.",
+   "on": "Appendix E, The Tengwar, line 50128"
+  },
+  "23 anna": {
+   "why": "REFUSED, and the refusal is a CONDITION not an absence. App E gives 23 = consonantal y only 'where Series III was used as a palatal series'. In the general use Series III is the ch/j/sh series, not the palatal one, so the condition App E attaches to the value does not hold and the value does not follow. WHAT WOULD SETTLE IT: an attested general-use specimen writing y with 23.",
+   "cost": "nothing. y is written with 35, which App E assigns unconditionally.",
+   "on": "Appendix E, The Tengwar, line 50135"
+  },
+  "24 wilya": {
+   "why": "REFUSED. App E's prose states no value for 24 outside Quenya, where it is w>v. Grade 6 is named as a grade and 24 is never given a value in it. WHAT WOULD SETTLE IT: a text source for 24 in the general use.",
+   "cost": "nothing. w is written with 22.",
+   "on": "Appendix E, The Tengwar, line 50132"
+  },
+  "30 silme_nuquerna": {
+   "why": "NOT A SEPARATE VALUE, and this is a reading rather than a refusal. App E: the inverted forms 30 and 32 'were mostly used as mere variants of 29 and 31'. 30 is a variant of s, chosen for the convenience of carrying a tehta. Nothing is routed to it because the archive's transcriber does not choose between graphic variants.",
+   "cost": "nothing.",
+   "on": "Appendix E, The Tengwar, line 50169"
+  },
+  "32 esse_nuquerna": {
+   "why": "NOT A SEPARATE VALUE -- a graphic variant of 31, on the same sentence as 30.",
+   "cost": "nothing.",
+   "on": "Appendix E, The Tengwar, line 50169"
+  },
+  "36 ure": {
+   "why": "READ AND NOT ROUTED TO. App E assigns w to 36 and w to 22 in two different sentences. The archive writes w with 22 -- see 22 -- and records 36's value as the attested alternate rather than publishing two answers to one sound.",
+   "cost": "nothing.",
+   "on": "Appendix E, The Tengwar, line 50174"
+  }
+ },
+ "series_iii_iv": {
+  "used": "the Westron application: Series III = ch, j, sh; Series IV = the k-series",
+  "conf": "[I-H]",
+  "cite": "Appendix E (line 50108): \"such as our ch, j, sh, Series III was usually applied to these; in which case Series IV was applied to the normal k-series (calmatema).\"",
+  "and_what_it_leaves_open": "Appendix E (line 50105): \"The application of Series III and IV varied according to the requirements of different languages.\" It states the application for languages of the Westron type and for Quenya, and for no third. This archive applies the Westron one to every name outside Quenya and DECLARES that as an application rather than as Appendix E's word for Sindarin."
+ },
+ "tehtar": {
+  "a": {
+   "cp": "U+E040",
+   "conf": "[I-H]",
+   "cite": "Appendix E (line 50187): 'The three dots, most usual in formal writing for a'",
+   "sits_on": "the FOLLOWING consonant -- see placement_used_for_names"
+  },
+  "e": {
+   "cp": "U+E046",
+   "conf": "[I-H]",
+   "cite": "Appendix E (line 50189): 'The single dot and the \"acute accent\" were frequently used for i and e' -- taken in the order App E writes them, so e is the acute",
+   "sits_on": "the FOLLOWING consonant -- see placement_used_for_names"
+  },
+  "i": {
+   "cp": "U+E044",
+   "conf": "[I-H]",
+   "cite": "Appendix E (line 50189): 'The single dot and the \"acute accent\" were frequently used for i and e' -- taken in the order App E writes them, so i is the single dot",
+   "sits_on": "the FOLLOWING consonant -- see placement_used_for_names"
+  },
+  "o": {
+   "cp": "U+E048",
+   "conf": "[I-H]",
+   "cite": "Appendix E (line 50189): 'on the title-page this stands for o' -- the curl open to the RIGHT. The title-page is the one specimen App E names of a Gondorian hand writing with these values; the Ring-inscription reverses them and is Black Speech.",
+   "sits_on": "the FOLLOWING consonant -- see placement_used_for_names"
+  },
+  "u": {
+   "cp": "U+E04A",
+   "conf": "[I-H]",
+   "cite": "Appendix E (line 50189): 'and the curl open to the left for u' -- the title-page again.",
+   "sits_on": "the FOLLOWING consonant -- see placement_used_for_names"
+  }
+ },
+ "carriers": {
+  "short": {
+   "cp": "U+E025",
+   "conf": "[I-H]",
+   "cite": "Appendix E (line 50183): \"When there was no consonant present in the required position, the tehta was placed above the 'short carrier', of which a common form was like an undotted i.\""
+  },
+  "long": {
+   "cp": "U+E026",
+   "conf": "[I-H]",
+   "cite": "Appendix E (line 50205): \"Long vowels were usually represented by placing the tehta on the 'long carrier', of which a common form was like an undotted j.\""
+  }
+ },
+ "routing": {
+  "what_it_is": "SPELLING -> sound, which is a second kind of decision and is kept apart from the plate reading above on purpose. A refusal here is about a written name, never about a tengwa.",
+  "digraphs": [
+   {
+    "spelt": "hw",
+    "tengwa": 34
+   },
+   {
+    "spelt": "wh",
+    "tengwa": 34
+   },
+   {
+    "spelt": "sh",
+    "tengwa": 11
+   },
+   {
+    "spelt": "th",
+    "tengwa": 9
+   },
+   {
+    "spelt": "dh",
+    "tengwa": 13
+   },
+   {
+    "spelt": "gh",
+    "tengwa": 16
+   },
+   {
+    "spelt": "zh",
+    "tengwa": 15
+   },
+   {
+    "spelt": "ph",
+    "tengwa": 10
+   },
+   {
+    "spelt": "ck",
+    "tengwa": 4
+   },
+   {
+    "spelt": "rh",
+    "tengwa": 26
+   },
+   {
+    "spelt": "lh",
+    "tengwa": 28
+   }
+  ],
+  "singles": {
+   "t": 1,
+   "p": 2,
+   "k": 4,
+   "d": 5,
+   "b": 6,
+   "j": 7,
+   "g": 8,
+   "f": 10,
+   "v": 14,
+   "n": 17,
+   "m": 18,
+   "w": 22,
+   "l": 27,
+   "s": 29,
+   "z": 31,
+   "h": 33,
+   "y": 35,
+   "c": 4,
+   "r": 21
+  },
+  "notes": {
+   "c -> 4": "App E, Pronunciation: 'C has always the value of k, even before e and i'. STATED, and stated of the transcription of the ELVISH languages; for a name that is not Elvish and spells `c` before e, i or y the rule is not App E's and the letter is refused -- see `routing_refused`.",
+   "ck -> 4": "an English spelling of ONE k-sound. No tengwa is invented: `ck` reaches the same quesse a `k` reaches, rather than being written twice.",
+   "ph -> 10": "an English spelling of the f-sound, which is formen. Same reasoning as `ck`.",
+   "wh -> 34": "English `wh` is the voiceless w App E gives 34 for: '34 was mostly used (if at all) for voiceless w (hw)'.",
+   "qu -> 4 + 22": "k followed by w, which is what `qu` spells and what App E's own alternative reading calls the kw-series. Two letters that are each read, not a new one.",
+   "ng -> 17 + 8": "n then g, because 20 is refused above. Written out rather than abbreviated.",
+   "doubled letters": "written TWICE. App E gives an under-bar for a long or doubled consonant and this archive holds no cited codepoint for it, so the plain form is written out and nothing is invented.",
+   "r": "POSITIONAL: 25 before a vowel, 21 otherwise. App E states the split."
+  },
+  "refused": {
+   "ch in a name that is not Elvish": "REFUSED, AND NOT FOR WANT OF A LETTER -- both letters are read above. App E gives 3 = ch as in English CHURCH and 12 = the spirant of the k-series, the ch of ACH. For an ELVISH name App E settles which: 'CH is only used to represent the sound heard in bach (in German or Welsh), not that in English church' -- so an Elvish `ch` is routed to 12 and nothing is guessed. That sentence is stated of the transcription of the Eldarin languages and of no other, and outside them a written `ch` may be either: `Michel Delving` is the church one, `Barach` the bach one, and the spelling does not say. WHAT WOULD SETTLE IT: a per-name pronunciation, which is a fact about the name and not about the plate.",
+   "q (not followed by u)": "REFUSED. App E states no value for a bare q in any mode. `qu` is routed as k + w; a q standing alone is not.",
+   "x": "REFUSED. App E writes x as the combination ks with 'a downward hook attached to the bow', a tehta this archive holds no cited codepoint for. Writing it out as k + s would be a spelling this archive chose rather than one App E states. WHAT WOULD SETTLE IT: a cited codepoint for the s-hook.",
+   "c before e, i or y in a name that is not Elvish": "REFUSED. App E's 'C has always the value of k' is stated for the transcription of the Elvish languages. For an English-spelt name the same letters may be an s -- `Bunce`, `Celandine` -- and the archive does not decide that from spelling."
+  }
+ },
+ "codepoint_rule": {
+  "rule": "cp = U+E000 + num - 1, where num is the plate number arda_scripts.json carries on the shape",
+  "proved_on": "31 of 31 letter->codepoint assignments the Quenya mode publishes; 0 disagree",
+  "conf": "[I-H]"
+ },
  "unresolved": {
-  "the per-letter consonant assignments": "NOT ESTABLISHED. Amanyë Tenceli renders its General Use consonant chart as an IMAGE (teng_general_cons1.gif, empty alt text), and Appendix E's tengwar tables are image-held in the edition this archive holds -- 'general use' occurs ZERO times in the whole of The Lord of the Rings, searched through ardatext.fold(). The archive will not publish a letter-value it has not read. WHAT WOULD SETTLE IT: a reading of the Appendix E plate for the general use, or of DTS 58, recorded [I-H] as the Quenya mode's tehtar already are.",
-  "which placement a given text should use": "NOT DECIDABLE FROM THE MODE. It is a property of the document, not of the mode, and the sources give 8 specimens one way and 4 the other. A transcriber must ASK, and this dataset therefore offers it as a parameter rather than a default.",
-  "the older general use": "NAMED AND NOT DESCRIBED. Amanyë Tenceli reports a table 'Feänorian Alphabet. General or Phonetic form' in which the third series is velar and the fourth labiovelar -- a different mode of the same name, cited to R24 and to Arden R. Smith. The archive records that it exists and does not reconstruct it."
+  "which placement a given text should use": "NOT DECIDABLE FROM THE MODE, and this one is UNCHANGED by C896. It is a property of the document, not of the mode, and Amanye Tenceli's specimens give 8 one way and 4 the other. The archive's own transcriber does not have this freedom and does not need it: it writes NAMES, in languages that end in consonants, and Appendix E states the rule for exactly that case -- 'in those such as Sindarin, in which most words ended in a consonant, it was placed above the following consonant'. So `letters` below is written with the FOLLOWING placement and says so, and the parameter stays offered for a transcriber working on a document.",
+  "the older general use": "NAMED AND NOT DESCRIBED, and UNCHANGED by C896. Amanye Tenceli reports a table 'Feanorian Alphabet. General or Phonetic form' in which the third series is velar and the fourth labiovelar -- a different mode of the same name, cited to R24 and to Arden R. Smith. The archive records that it exists and does not reconstruct it.",
+  "a mode for English, as against a mode for names": "APPENDIX E REFUSES IT IN HIS OWN WORDS, and this entry is NEW because C896's own parenthesis calls the General Use 'the mode Tolkien used for English'. It is not, and the archive may not publish it as one. Appendix E: \"There was of course no 'mode' for the representation of English.\" The title-page specimen is 'an example of what a man of Gondor might have produced, hesitating between the values of the letters familiar in his \"mode\" and the traditional spelling of English.' What C896 asked for is buildable and is built -- the general application of the series and grades, which Appendix E does state in prose and which serves every name outside Quenya. What is refused is only the label."
+ },
+ "corrected_by_c896": {
+  "the per-letter consonant assignments": {
+   "was": "NOT ESTABLISHED. Amanye Tenceli renders its General Use consonant chart as an IMAGE (teng_general_cons1.gif, empty alt text), and Appendix E's tengwar tables are image-held in the edition this archive holds -- 'general use' occurs ZERO times in the whole of The Lord of the Rings, searched through ardatext.fold().",
+   "now": "READ, and published in `letters` below under his ruling C896 of 6 September 2026.",
+   "why the old refusal was wrong": "The zero-occurrence measurement was TRUE and it measured the wrong thing. Appendix E never uses the phrase 'general use' -- so counting that phrase can only ever return zero, whatever Appendix E says about the general application of the series and grades. And it says a great deal about it, in prose, in sentences this file now quotes and re-verifies on every run. The refusal was a PROXY standing in for the property, which is this archive's most expensive fault shape. What was genuinely image-held is the PLATE -- the shapes and their order -- and the shapes have been in site/arda_scripts.json all along, read by an earlier hand, with the plate number on every row.",
+   "what it cost": "770 published routes carried a refusal, and his ruling C895 sent a session to look for attestations of `d`, `g`, `b` and `z` in Parma Eldalamberon and Vinyar Tengwar -- letters classical Quenya does not have. Appendix E states all four, at 5, 8, 6 and 31, in the general application."
+  }
  },
  "shares_tehtar_with": "arda_tengwar_mode_q.json",
  "inherited_from_quenya_mode": {
@@ -90,5 +528,5 @@
    "u"
   ]
  },
- "note": "A MODE OF RULES, not of letters. What the sources settle about the General Use is how it BEHAVES -- the placement choice, the nasal bar, the following-s curl, the labial u-curl. What they do not settle here is which tengwa writes which consonant, because that table is a picture in every source this archive holds. The refusal is named in `unresolved` rather than left as an absence."
+ "note": "NO LONGER A MODE OF RULES ALONE. Under his ruling C896 this file carries the per-letter values as well, read by hand off Appendix E's plate with Appendix E's own prose supplying the value at each number. What is still refused is refused BY NAME and by number -- 19, 20, 23, 24 have no general-use value in Appendix E's prose, and the routing of a latin `ch` is a fact about a name's pronunciation rather than about the plate."
 }
