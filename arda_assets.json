@@ -5667,7 +5667,7 @@
    "what": "A passage of continuous sarati in vertical columns, the Two Trees. Its reading, supplied by the archive's owner: Valar empannen Aldaru / mi kon-alkorin / ar sealalan taro / ar silankalan ve laure ve misil — the Gods planted the Two Trees in a blessed garth, and they grow high and shine like gold like silver. The forms are attested early Qenya; their weight sits in Vinyar Tengwar 27, which this archive holds only as a machine reading, so the text is attested and uncitable at once.",
    "hand": "Quentandil, contributor to Tolkien Gateway",
    "licence": "GNU Free Documentation License 1.2 or later — no Invariant Sections, no Front-Cover Texts, no Back-Cover Texts. https://www.gnu.org/licenses/fdl-1.2.html",
-   "source": "https://tolkiengateway.net/wiki/Sarati — file page read by the archive's owner, 31 July 2026; tolkiengateway.net returns HTTP 403 to this archive"
+   "source": "https://tolkiengateway.net/wiki/Sarati — file page read by the archive's owner, 31 July 2026. That reading said 'tolkiengateway.net returns HTTP 403 to this archive', and it was true then. CORRECTED 7 September 2026 under C363, beneath the original rather than over it: the host returns 200 to the honest UA ArdaArchiveResearch/1.0 over curl -4. A recorded refusal that has expired is worse than no record -- anything reading it concludes the host is unreachable and stops trying, which is how a wall nobody re-measures becomes permanent."
   },
   {
    "file": "fonts/TirionSarati.woff2",
