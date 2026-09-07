@@ -92,6 +92,15 @@
      reader of it is this constant. A literal repeated in four places is a literal that goes
      stale in three of them. */
   var MARK = "REAL-WORLD LAYER";
+  /* A REFUSAL IS FINAL FOR THAT PERSON, AND THIS LATCH IS WHY. Found by the break-test of the
+     marking invariant below: with put() refusing, #rec-adapt never appears, the observer's
+     "!e" arm fires on every mutation, draw() runs again, put() refuses again -- a redraw loop
+     that is not infinite only because each turn does a little work. It starved site/tgclaims.js
+     badly enough that #rec-tg failed to render at all on two of three subjects, so the refusal
+     path was breaking a NEIGHBOURING panel while correctly refusing its own. That is the same
+     shape as this file's first draft, which pinned the main thread outright. A refusal is a
+     verdict about the DATA, and data does not change between two mutations of the DOM. */
+  var REFUSED = {};
   function esc(x) {
     return String(x == null ? "" : x).replace(/[&<>"]/g, function (c) {
       return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c];
@@ -206,6 +215,7 @@
         console.error("adaptations.js: REFUSED to insert an unmarked real-world panel for "
                       + id + " -- " + MARK + " absent from the head or from a row.");
       } catch (e) {}
+      REFUSED[id] = true;
       return;
     }
     var a = anchor();
@@ -219,7 +229,7 @@
     // of both. wipe() takes every stamped node wherever it now lives.
     wipe();
     if (!id || !document.getElementById("main")) return;
-    if (CACHE[id] === false) return;
+    if (CACHE[id] === false || REFUSED[id]) return;
     if (CACHE[id]) { put(id, CACHE[id]); return; }
     fetch("adapt/" + encodeURIComponent(id) + ".json").then(function (r) {
       if (!r.ok) throw new Error(r.status);
