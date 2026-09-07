@@ -86,8 +86,14 @@
   }
   function draw() {
     var id = subj();
+    // ONLY REMOVE A PANEL THIS SCRIPT ITSELF BUILT. `put()` stamps every panel it creates with
+    // `data-tg-of`; a panel WITHOUT that attribute was rendered into the HTML at generate time by
+    // map/splice_person_layer.py under his ruling C927, and removing it would undo the whole point
+    // of that ruling -- a reader whose fetch fails would end up with LESS than the served page
+    // already gave them. Added 7 September 2026, an hour after C927 landed, because C927 made
+    // this line dangerous and it had been harmless before.
     var old = document.getElementById("rec-tg");
-    if (old) old.remove();
+    if (old && old.hasAttribute("data-tg-of")) old.remove();
     if (!id || !document.getElementById("main")) return;
     if (CACHE[id] === false) return;
     if (CACHE[id]) { put(id, CACHE[id]); return; }
