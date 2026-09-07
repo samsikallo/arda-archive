@@ -322,6 +322,27 @@
       if (k.nodeType !== 1) continue;
       var cs = getComputedStyle(k);
       if (cs.display === "none" || k.hasAttribute("hidden")) continue;
+      /* A CONTAINER MAY DECLARE ITSELF INDIVISIBLE, AND THAT IS THE ONLY WAY A MARKING CAN BE
+         GUARANTEED TO TRAVEL WITH THE THING IT MARKS. Measured 7 September 2026 on
+         character.html: `#rec-adapt` -- C894's real-world adaptation panel -- was opened by
+         the rule below (depth 1, three children), its `<h3>` and its "A REAL-WORLD LAYER, AND
+         NOT THE ARCHIVE'S CANON" paragraph were placed into an id-less `[data-cx-split]`
+         shell, and the element still bearing `id="rec-adapt"` was left in the parked `.wrap`
+         holding thirty-five bytes: `<div style="margin:.55em 0"> </div>`. Nothing emitted that
+         markup; it is the husk this loop leaves behind whenever it opens a container. The
+         panel's own renderer then read its own id, found no marking, redrew, and the race
+         between that and this pass made map/reallayer_check.py fail 1 run in 5 -- a red that
+         says a reader could take a film's casting for something Tolkien wrote.
+         A husk is not this loop's fault in general: opening containers is what paginating IS,
+         and the id is deliberately left on the original so the hall's own script keeps finding
+         it. What was missing was any way for a container to say "I am one piece". This is it,
+         it is OPT-IN, and no element in this tree carried the attribute before adaptations.js
+         did -- so every other hall paginates byte-for-byte as before.
+         KEEP IT SMALL. A declared atom is never split, so an element taller than a leaf keeps
+         its leaf and overflows it (the spill pass's own "one piece, bigger than any leaf"
+         branch). Declare the marking-bearing HEAD and the individual ROW, never the whole
+         panel: measured, the widest shard is gandalf at 40 portrayals. */
+      if (k.hasAttribute("data-cx-atom")) { out.push(k); continue; }
       /* A block taller than a whole leaf cannot be an atom; descend into it and split
          its container instead. `>= 1` and not `> 1`, because names.html is
          slot > .wrap > #nm > ten sections and `.wrap` has exactly ONE child -- so a
