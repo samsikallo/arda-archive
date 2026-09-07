@@ -123,10 +123,25 @@
         && document.getElementById("main").querySelector(".orn"))) { draw(); return true; }
     return false;
   }
+  // ── AND IT MUST SURVIVE BEING WIPED, WHICH DISCONNECTING DOES NOT ───────────────────────
+  // Measured: with a disconnect-on-first-success observer, map/reallayer_check.py passed 2 of
+  // 3 identical runs on an unchanged tree. The panel is not unreliable in itself -- driven
+  // standalone it renders every time -- but character.html re-renders #main from inside its
+  // own fetch, and when that lands AFTER our insert it takes the panel with it. A one-shot
+  // observer has already disconnected by then and never puts it back.
+  //
+  // So the observer STAYS CONNECTED and the callback acts only when #rec-adapt is ABSENT and
+  // the anchor is present. That cannot loop: inserting makes #rec-adapt exist, so the very
+  // next callback does nothing. The earlier infinite loop came from redrawing unconditionally
+  // -- remove-then-insert on every mutation, each of which is itself a mutation.
+  //
+  // A flaky guard is worse than no guard: it teaches a session to discount a red.
   function watch() {
     if (arm()) return;
     if (obs) return;
-    obs = new MutationObserver(function () { if (arm()) { obs.disconnect(); obs = null; } });
+    obs = new MutationObserver(function () {
+      if (!document.getElementById("rec-adapt")) arm();
+    });
     obs.observe(document.documentElement, { childList: true, subtree: true });
   }
   addEventListener("hashchange", watch);
