@@ -4,7 +4,7 @@
  "reads": "site/sarati/ — the plates themselves; the FILENAMES carry the labelling",
  "encoding": "NONE. This maps a sound to a PICTURE, never to a codepoint — see `unresolved`.",
  "credit": {
-  "plates": "Hëernamae Pëen Ionoëryn, uploaded by JanezPavelZebovec, via Wikimedia Commons",
+  "plates": "Hîrnamae Pîn Ionoëryn, uploaded by JanezPavelZebovec, via Wikimedia Commons",
   "licence": "CC BY-SA 4.0",
   "scholarship": "Måns Björkman Berg, Amanyë Tenceli — FACTS ONLY; no prose or figure of his is republished here"
  },
@@ -21,7 +21,7 @@
   "reports/sarati_findings.json"
  ],
  "legend": {
-  "every value": "read off the plate labelling — Hëernamae Pëen Ionoëryn, via Wikimedia Commons, CC BY-SA 4.0. The shape is Tolkien's; the reading is the Commons contributor's, and taking it is ours. That is why every value is [I-H] and none is [C].",
+  "every value": "read off the plate labelling — Hîrnamae Pîn Ionoëryn, via Wikimedia Commons, CC BY-SA 4.0. The shape is Tolkien's; the reading is the Commons contributor's, and taking it is ours. That is why every value is [I-H] and none is [C].",
   "corroborated": "TWO UNRELATED THIRD PARTIES, INDEPENDENTLY — the Commons plate label and Glaemscribe's semantic charset name (`VELAR_LATERAL_APPROXIMANT`, `UVULAR_TRILL`). The plate reading is still ours, so the marker STAYS [I-H]: what a second witness removes is the possibility that one contributor's labelling is the whole evidence. Corroboration is not promotion.",
   "not_graded": "docs/sarati_values.md grades no row naming this sound, so the row carries the plate-label marker and nothing more. THAT IS A STATEMENT ABOUT THE RECORD, NOT ABOUT THE SARAT.",
   "vowel-sign": "a VOWEL SIGN, not a letter: Sarati writes vowels as marks placed relative to the consonant, and WHERE it goes is the usage rule this file records per form (R15/R17 for Quenya). Cropped by map/gen_sarati_vowels.py from the owner's chart, 16 Aug 2026.",
