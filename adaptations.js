@@ -104,17 +104,32 @@
     }).then(function (j) { CACHE[id] = j; put(id, j); },
             function () { CACHE[id] = false; });
   }
+  // ── THE OBSERVER MUST DISCONNECT, AND MY FIRST WRITE DID NOT ────────────────────────────
+  // That draft called draw() from the observer callback on every mutation. draw() REMOVES and
+  // re-inserts #rec-adapt, which mutates the very subtree being observed, which fires the
+  // callback again: an infinite loop that pinned the page's main thread. It did not merely
+  // fail to render -- it would have HUNG character.html for a reader.
+  //
+  // It was caught by map/reallayer_check.py, which hung at `pg.evaluate` with the DOM present
+  // and the page committed: evaluate cannot run while the main thread spins. A static check
+  // could never have seen it, which is the whole argument for a guard that drives the page.
+  //
+  // The shape below is tgclaims.js's, copied deliberately rather than reinvented: arm() draws
+  // ONLY when the anchor already exists and reports whether it did; the observer is installed
+  // only if that first attempt failed, and DISCONNECTS ITSELF the moment it succeeds.
   var obs = null;
   function arm() {
-    draw();
+    if (document.getElementById("bookspot") || (document.getElementById("main")
+        && document.getElementById("main").querySelector(".orn"))) { draw(); return true; }
+    return false;
+  }
+  function watch() {
+    if (arm()) return;
     if (obs) return;
-    obs = new MutationObserver(function () {
-      if (document.getElementById("main")) draw();
-    });
+    obs = new MutationObserver(function () { if (arm()) { obs.disconnect(); obs = null; } });
     obs.observe(document.documentElement, { childList: true, subtree: true });
   }
-  window.addEventListener("hashchange", function () { CACHE.__ = 0; draw(); });
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", arm);
-  } else { arm(); }
+  addEventListener("hashchange", watch);
+  if (document.readyState === "loading") addEventListener("DOMContentLoaded", watch);
+  else watch();
 })();
