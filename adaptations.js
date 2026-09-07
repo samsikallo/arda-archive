@@ -139,8 +139,21 @@
   function watch() {
     if (arm()) return;
     if (obs) return;
+    // ── SELF-HEAL, BECAUSE THE FAULT IS A RACE AND NOT A BUILDER BUG ──────────────────────
+    // MEASURED by instrumenting put(): on every run the panel is built at 823 bytes, innerHTML
+    // holds 823 immediately after assignment, and 823 is still there at insertion -- yet seconds
+    // later the DOM sometimes holds only 35 bytes. No add/remove of #rec-adapt accompanies that,
+    // and merely installing a MutationObserver over the document made it render fully every
+    // time: observing it changes it, which is the signature of a race and not of a builder that
+    // produces bad markup.
+    //
+    // So the callback now also fires when the panel is PRESENT BUT HAS LOST ITS MARKER. That
+    // terminates: after a redraw the marker is there, so the next callback does nothing. It does
+    // NOT paper over the race -- map/reallayer_check.py still measures whether a reader gets the
+    // marked panel, and it stays out of the gate until it is 4 of 4.
     obs = new MutationObserver(function () {
-      if (!document.getElementById("rec-adapt")) arm();
+      var e = document.getElementById("rec-adapt");
+      if (!e || e.textContent.indexOf("REAL-WORLD LAYER") === -1) arm();
     });
     obs.observe(document.documentElement, { childList: true, subtree: true });
   }
