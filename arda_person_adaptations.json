@@ -34,8 +34,9 @@
   "appearance_rows_refused": 15,
   "appearance_rows_with_a_year": 1362,
   "appearance_rows_with_a_named_work": 1386,
-  "appearance_rows_naming_a_portrayer": 292,
-  "distinct_portrayers": 265,
+  "appearance_rows_naming_a_portrayer": 288,
+  "distinct_portrayers": 255,
+  "sentences_refused_for_naming_another_character": 748,
   "distinct_works": 94,
   "rows_reaching_a_published_person_route": 1016,
   "distinct_published_person_routes_reached": 236,
@@ -57,7 +58,8 @@
   }
  },
  "limits": [
-  "A PORTRAYER IS TAKEN ONLY FROM A WIKILINK. Tolkien Gateway links the actors it knows; an unlinked capitalised run in prose is as often a character, a studio or a country as it is a person. 212 unlinked candidate name(s) were MEASURED and left unpublished rather than guessed at, and they are listed in `portrayer_rules_missed`.",
+  "A PORTRAYER IS TAKEN PER SENTENCE, AND A SENTENCE THAT LINKS ANOTHER TOLKIEN GATEWAY CHARACTER IS REFUSED WHOLE. 748 sentence(s) were refused that way. The fault it exists for was measured on the first build: Rose Cotton's 2003 block names the actors of her two CHILDREN in a later sentence, and a whole-block scan returned them as HER actors -- two true strings about the wrong subject. Choosing which of two linked characters an actor belongs to is a reading, not a measurement, and a wrong reading here publishes a false claim about a named living person.",
+  "A PORTRAYER IS TAKEN ONLY FROM A WIKILINK. Tolkien Gateway links the actors it knows; an unlinked capitalised run in prose is as often a character, a studio or a country as it is a person. 232 unlinked candidate name(s) were MEASURED and left unpublished rather than guessed at, and they are listed in `portrayer_rules_missed`.",
   "1016 of 1394 appearance rows reach a PUBLISHED person route; the rest are published with `route: null`. This is a layer about films, not a projection of the person register, and dropping a portrayal because the archive holds no page for the character would silently make the layer a function of the canon.",
   "THE LAYER IS DECIDED BY THE WORK'S OWN TOLKIEN GATEWAY CATEGORIES and the deciding category is on the row as `layer_basis`. Where a work has no article in the captures, or its categories match nothing in the table, the value is ADAPTATION -- the GENERAL value of the four -- so a default can never over-claim a narrower one.",
   "NO IMAGE, GALLERY OR STILL IS TAKEN. C835 ruled the Tolkien Gateway image policy and it is closed; the `<gallery>` blocks in these sections are read past.",
@@ -75,6 +77,10 @@
   {
    "name": "Friedrich W. Bauschulle.",
    "times": 3
+  },
+  {
+   "name": "Kari Väänänen",
+   "times": 2
   },
   {
    "name": "Martin Hirthe.",
@@ -157,6 +163,10 @@
    "times": 1
   },
   {
+   "name": "Ian Holm",
+   "times": 1
+  },
+  {
    "name": "Martin Freeman.",
    "times": 1
   },
@@ -189,6 +199,10 @@
    "times": 1
   },
   {
+   "name": "Conan Stevens",
+   "times": 1
+  },
+  {
    "name": "Paul Frees. Apart",
    "times": 1
   },
@@ -210,18 +224,6 @@
   },
   {
    "name": "Christian Redl.",
-   "times": 1
-  },
-  {
-   "name": "Sean Bean. Differing",
-   "times": 1
-  },
-  {
-   "name": "Mark Mitchinson. He",
-   "times": 1
-  },
-  {
-   "name": "Simon Cadell. Unusually",
    "times": 1
   }
  ],
@@ -827,9 +829,14 @@
    "work_categories": [
     "The Lord of the Rings (1978 film)"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "John Hurt",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1978: ''[[The Lord of the Rings (1978 film)]]'':'''\n:The voice of Aragorn is provided by [[John Hurt]]. Some critics have commented that he looks Native American.<ref>{{webcite|author=Conrad Brunstrom|articleurl=https://conradbrunstrom.wordpress.com/2023/12/21/tolkien-and-diverse-casting-the-1978-animated-lord-of-the-rings/|articlename=Tolkien and Diverse Casting. The 1978 animated Lord of the Rings|dated=21 December 2023|website=[https://conradbrunstrom.wordpress.com/ Conradbrunstrom.wordpress.com]|accessed=11 March 2024}}</ref>",
-   "paraphrase": "Aragorn appears in The Lord of the Rings (1978 film) (1978).",
+   "paraphrase": "In The Lord of the Rings (1978 film) (1978), Aragorn is played by John Hurt.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -999,14 +1006,9 @@
    "work_categories": [
     "Television series"
    ],
-   "portrayed_by": [
-    {
-     "name": "Kari Väänänen",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''1993: ''[[Hobitit]]'':'''\n:Aragorn is portrayed by [[Kari Väänänen]], the same actor who played [[Gollum]] in the series.",
-   "paraphrase": "In Hobitit (1993), Aragorn is played by Kari Väänänen.",
+   "paraphrase": "Aragorn appears in Hobitit (1993).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -1031,9 +1033,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Godfrey Kenton",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1955: [[The Lord of the Rings (1955 radio series)|''The Lord of the Rings'' (1955 radio series)]]:'''\n:The voice of Aragorn is provided by [[Godfrey Kenton]].",
-   "paraphrase": "Aragorn appears in The Lord of the Rings (1955 radio series) (1955).",
+   "paraphrase": "In The Lord of the Rings (1955 radio series) (1955), Aragorn is played by Godfrey Kenton.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -1058,9 +1065,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Tom Luce",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1979: [[The Lord of the Rings (1979 radio series)|''The Lord of the Rings'' (1979 radio series)]]:'''\n:The voice of Aragorn is provided by [[Tom Luce]].",
-   "paraphrase": "Aragorn appears in The Lord of the Rings (1979 radio series) (1979).",
+   "paraphrase": "In The Lord of the Rings (1979 radio series) (1979), Aragorn is played by Tom Luce.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -3381,14 +3393,9 @@
    "work_categories": [
     "The Hobbit (film series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "Luke Evans",
-     "how": "actor-verb"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2013: ''[[The Hobbit: The Desolation of Smaug]]'':'''\n:[[Luke Evans]] portrays Bard.<ref name=\"PJCasting\">{{webcite|author=[[Peter Jackson]]|articleurl=http://www.facebook.com/note.php?note_id=10150286515141558|articlename=The Hobbit Casting Update|dated=19-June-2011|website=[http://www.facebook.com/ Facebook]|accessed=23-Dec-2011}}</ref> He is first introduced coming across [[Bilbo Baggins|Bilbo]] and [[Thorin]]'s [[Thorin and Company|Company]] along the [[River Running]] when waiting to retrieve the empty wine barrels returned by the [[Woodland Realm]]. The Dwarves agree to pay him to smuggle them into [[Lake-town]] and get the weapons and supplies they need for reaching the [[Lonely Mountain]]. He takes them in to his home until they plan to leave. When he learns of Thorin's true identity, he becomes worried about the Dwarves' quest, believing the [[Smaug|Dragon]] will destroy everything in its path if awakened. In addition to his son, [[Bain]], Bard also has two daughters: [[Sigrid]] and [[Tilda]]. He is also revealed to be a widower.\n\n:Known by the [[Master of Lake-town]] (and his right hand man [[Alfrid]]) to be the descendant of [[Girion]], the last [[lord of Dale]], and fearing he may be trying to undermine their authority, Bard is under constant surveillance by various spies. He is ultimately arrested at the Master's behest on some vague charge and imprisoned at the end of the film.",
-   "paraphrase": "In The Hobbit: The Desolation of Smaug (2013), Bard is played by Luke Evans.",
+   "paraphrase": "Bard appears in The Hobbit: The Desolation of Smaug (2013).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -5159,9 +5166,14 @@
    "work_categories": [
     "The Hobbit (1977 film)"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Orson Bean",
+     "how": "is-the-voice-of-SUBJECT"
+    }
+   ],
    "source_text": "'''1977: [[The Hobbit (1977 film)|''The Hobbit'' (1977 film)]]:'''\n:[[Orson Bean]] was the voice of Bilbo.",
-   "paraphrase": "Bilbo Baggins appears in The Hobbit (1977 film) (1977).",
+   "paraphrase": "In The Hobbit (1977 film) (1977), Bilbo Baggins is played by Orson Bean.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -5186,9 +5198,14 @@
    "work_categories": [
     "The Lord of the Rings (1978 film)"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Norman Bird",
+     "how": "is-the-voice-of-SUBJECT"
+    }
+   ],
    "source_text": "'''1978: [[The Lord of the Rings (1978 film)|''The Lord of the Rings'' (1978 film)]]:'''\n:[[Norman Bird]] was the voice of Bilbo, and [[Billy Barty]] the body double. Although Bilbo returned to physical aging after giving up the ring, when we see Bilbo again in Rivendell, he has not physically aged.",
-   "paraphrase": "Bilbo Baggins appears in The Lord of the Rings (1978 film) (1978).",
+   "paraphrase": "In The Lord of the Rings (1978 film) (1978), Bilbo Baggins is played by Norman Bird.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -5267,14 +5284,9 @@
    "work_categories": [
     "The Lord of the Rings (film series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "Ian Holm",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2001-03: [[The Lord of the Rings (film series)|''The Lord of the Rings'' (film series)]]:'''\n:Bilbo is played by [[Ian Holm]], who also played [[Frodo Baggins]] in the radio series 20 years earlier. Although the book states that he didn't visibly age after finding the Ring, Holm portrays Bilbo as older than he should look. In his brief appearance in the [[Prologue: One Ring to Rule Them All...|Prologue]] showing the finding of the Ring, he is disguised to look younger.",
-   "paraphrase": "In The Lord of the Rings (film series) (2001), Bilbo Baggins is played by Ian Holm.",
+   "paraphrase": "Bilbo Baggins appears in The Lord of the Rings (film series) (2001).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -5331,9 +5343,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Felix Felton",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1955: [[The Lord of the Rings (1955 radio series)|''The Lord of the Rings'' (1955 radio series)]]:'''\n:The voice of Bilbo is provided by [[Felix Felton]].",
-   "paraphrase": "Bilbo Baggins appears in The Lord of the Rings (1955 radio series) (1955).",
+   "paraphrase": "In The Lord of the Rings (1955 radio series) (1955), Bilbo Baggins is played by Felix Felton.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -5390,9 +5407,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Ray Reinhardt",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1979: [[The Lord of the Rings (1979 radio series)|''The Lord of the Rings'' (1979 radio series)]]:'''\n:The voice of Bilbo is provided by [[Ray Reinhardt]].",
-   "paraphrase": "Bilbo Baggins appears in The Lord of the Rings (1979 radio series) (1979).",
+   "paraphrase": "In The Lord of the Rings (1979 radio series) (1979), Bilbo Baggins is played by Ray Reinhardt.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -5417,9 +5439,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Ray Reinhardt",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1979: [[The Hobbit (1979 radio series)|''The Hobbit'' (1979 radio series)]]:'''\n:The voice of Bilbo is provided by [[Ray Reinhardt]].",
-   "paraphrase": "Bilbo Baggins appears in The Hobbit (1979 radio series) (1979).",
+   "paraphrase": "In The Hobbit (1979 radio series) (1979), Bilbo Baggins is played by Ray Reinhardt.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -6635,14 +6662,9 @@
    "work_categories": [
     "The Hobbit (film series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "Conan Stevens",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2012: ''[[The Hobbit: An Unexpected Journey]]'':'''\n:Bolg was originally going to be played by [[Conan Stevens]] in this film via practical costume.<ref name=\"TORNBolg\">{{webcite|author=MrCere|articleurl=http://www.theonering.net/torwp/2012/04/22/55228-exclusive-hobbits-conan-stevens-chats-with-torn/|articlename=Exclusive: ‘Hobbit’s’ Conan Stevens chats with TORn|dated=22-April-2012|website=TORN|accessed=05-September-2012}}</ref> He makes a brief appearance during the [[Battle of Azanulbizar]], where he is seen fighting against [[Dwalin]] during the flashback to the battle outside [[Moria]], until he is incapacitated and knocked down. He is, however, never actually identified as being Bolg in the film.<ref group=note>While Bolg was redesigned for motion capture performance and recast for the two following films, Conan Stevens ''does'' reprise this character as the [[Keeper of the Dungeons|Orc dungeon keeper]] at [[Dol Guldur]] in ''[[The Hobbit: The Battle of the Five Armies]]'' who torments [[Gandalf]] as he is imprisoned there. The Orc also attempts to reclaim [[Narya]] from the [[Wizards|Wizard]] for his [[Sauron|master]] right before being vanquished by [[Galadriel]] upon her arrival, though this segment only occurs in the film's [[The Hobbit: The Battle of the Five Armies (extended edition)|Extended Edition]].</ref>",
-   "paraphrase": "In The Hobbit: An Unexpected Journey (2012), Bolg is played by Conan Stevens.",
+   "paraphrase": "Bolg appears in The Hobbit: An Unexpected Journey (2012).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -8374,14 +8396,9 @@
     "The Rings of Power (TV series)",
     "Television series"
    ],
-   "portrayed_by": [
-    {
-     "name": "Charles Edwards",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2022: ''[[The Lord of the Rings: The Rings of Power]]'':'''\n:Lord Celebrimbor is portrayed by [[Charles Edwards]] as one of the central characters of the series.<ref>{{webcite|author=[[Alice Jones]]|articleurl=https://www.vanityfair.com/hollywood/2022/02/amazon-the-rings-of-power-series-first-look|articlename=Amazon’s Lord of the Rings Series Rises: Inside The Rings of Power\n|dated=10-February-2022|website=[https://www.vanityfair.com VanityFair]|accessed=12-February-2022}}</ref> He first appears in the series' [[A Shadow of the Past|first episode]] at [[Lindon]] and is introduced to [[Elrond]] by [[Gil-galad]]. In the series, he seems to already be a master artisan.",
-   "paraphrase": "In The Lord of the Rings: The Rings of Power (2022), Celebrimbor is played by Charles Edwards.",
+   "paraphrase": "Celebrimbor appears in The Lord of the Rings: The Rings of Power (2022).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -8934,14 +8951,9 @@
    "work_categories": [
     "The Hobbit (film series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "Ryan Gage",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2012-4: [[The Hobbit (film series)|''The Hobbit'' (film series)]]:'''\n:'''Alfrid Lickspittle''' is a merged version of the Master's councillors that was invented for [[The Hobbit (film series)|''The Hobbit'' (film series)]], where he was portrayed by [[Ryan Gage]].<ref>{{webcite|author=[[Peter Jackson]]|articleurl=http://www.facebook.com/note.php?note_id=10150257180211558|articlename=Casting News for The Hobbit|dated=19-May-2011|website=FB|accessed=22-Dec-2011}}</ref>\n\n:Alfrid Lickspittle serves as the [[Master of Lake-town]]'s deputy and chief overseer, advising the Master in matters of diplomacy, trade, and the defense of [[Lake-town]]. He always alerted the Master of any potential plots against his power - much to the chagrin of some [[Lake-town]] residents. He and the Master particularly have [[Bard]] in their sights, knowing his relation to [[Girion]], last [[Lord of Dale]]. When [[Smaug]] arrives to demolish the town, he and the Master - along with a few guards - empty out the town's treasury into a boat and attempt to retreat with it. However, when the overloaded boat started spilling treasure into the lake, the Master pushes Alfrid overboard in order to lessen the weight.\n\n:When the town's refugees gather on the shore of [[Long Lake]] in the aftermath of the destruction, Bard is immediately praised for slaying the [[Dragons|Dragon]] and the citizens look to him for guidance. Alfrid immediately champions Bard despite the disapproval of several people. When the [[Battle of Five Armies]] begins, Alfrid spends most of his time showing his cowardice by attempting to hide from it - even disguising himself as a woman at one point - despite Bard ordering every able man to take up arms, and specifically telling Alfrid to join the fight. Not long after finding a treasure trove in the ruins of [[Dale]], Bard, after saving him from an attack by an [[Ogres|Ogre]], tells him to leave and not come back.\n\n:After his encounter with Bard, Alfrid hides in a catapult, which he inadvertently sets off when one of the coins that he has collected drops on the release trigger. This launches him into the mouth of a [[Trolls|Troll]] that was about to attack [[Gandalf]]. Alfrid's accidental stunt kills both the Troll and himself. When the Troll falls to the ground, Gandalf is made aware of the Troll that almost attacked him, only to see Alfrid dead in its mouth.<ref>''[[The Hobbit: The Battle of the Five Armies (extended edition)]]''</ref>",
-   "paraphrase": "In The Hobbit (film series), Councillors is played by Ryan Gage.",
+   "paraphrase": "Councillors appears in The Hobbit (film series).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -9363,9 +9375,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Robert Farquharson",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1955: [[The Lord of the Rings (1955 radio series)|''The Lord of the Rings'' (1955 radio series)]]:'''\n:The voice of Denethor is provided by [[Robert Farquharson]].",
-   "paraphrase": "Denethor appears in The Lord of the Rings (1955 radio series) (1955).",
+   "paraphrase": "In The Lord of the Rings (1955 radio series) (1955), Denethor is played by Robert Farquharson.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -9390,9 +9407,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Tom Luce",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1979: [[The Lord of the Rings (1979 radio series)|''The Lord of the Rings'' (1979 radio series)]]:'''\n:The voice of Denethor is provided by [[Tom Luce]].",
-   "paraphrase": "Denethor appears in The Lord of the Rings (1979 radio series) (1979).",
+   "paraphrase": "In The Lord of the Rings (1979 radio series) (1979), Denethor is played by Tom Luce.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -9417,9 +9439,14 @@
    "work_categories": [
     "The Return of the King (1980 film)"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "William Conrad",
+     "how": "is-the-voice-of-SUBJECT"
+    }
+   ],
    "source_text": "'''1980: [[The Return of the King (1980 film)|''The Return of the King'' (1980 film)]]:'''\n:[[William Conrad]] is the voice of Denethor. His role is essentially reduced to presaging the doom of the arrival of the Black Ships (as he has seen in the ''[[Palantíri|palantír]]'') to [[Gandalf]] and [[Peregrin Took|Pippin]], and then calling for his own execution.",
-   "paraphrase": "Denethor appears in The Return of the King (1980 film) (1980).",
+   "paraphrase": "In The Return of the King (1980 film) (1980), Denethor is played by William Conrad.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -9444,9 +9471,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Peter Vaughan",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1981: [[The Lord of the Rings (1981 radio series)|''The Lord of the Rings'' (1981 radio series)]]:'''\n:The voice of Denethor is provided by [[Peter Vaughan]].",
-   "paraphrase": "Denethor appears in The Lord of the Rings (1981 radio series) (1981).",
+   "paraphrase": "In The Lord of the Rings (1981 radio series) (1981), Denethor is played by Peter Vaughan.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -10429,14 +10461,9 @@
     "The Rings of Power (TV series)",
     "Television series"
    ],
-   "portrayed_by": [
-    {
-     "name": "Owain Arthur",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2022: ''[[The Lord of the Rings: The Rings of Power]]'':'''\n:Prince Durin IV is portrayed by [[Owain Arthur]] as one of the central characters of the series.<ref>{{webcite|author=[[Alice Jones]]|articleurl=http://www.vanityfair.com/hollywood/2022/02/amazon-the-rings-of-power-series-first-look|articlename=Amazon's ''Lord of the Rings'' Series Rises: Inside ''The Rings of Power''\n|dated=10-February-2022|website=[http://www.vanityfair.com VanityFair]|accessed=12-February-2022}}</ref> In the series, he is the prince of Khazad-dûm and son of [[Durin III]]. His wife is named [[Disa]] and his children are named [[Gerda]] and [[Gamli]]. He first appears in the [[Adrift|second episode]] of the first season in the city of [[Khazad-dûm]] where he welcomes [[Elrond]].",
-   "paraphrase": "In The Lord of the Rings: The Rings of Power (2022), Durin IV is played by Owain Arthur.",
+   "paraphrase": "Durin IV appears in The Lord of the Rings: The Rings of Power (2022).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -11351,14 +11378,9 @@
    "work_categories": [
     "The Hobbit (film series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "Billy Connolly",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2014: ''[[The Hobbit: The Battle of the Five Armies]]'':'''\n:Dáin Ironfoot is played by [[Billy Connolly]].<ref name=\"BBCCasting1\">{{webcite|articleurl=http://www.bbc.co.uk/news/entertainment-arts-16960081|articlename=Billy Connolly lands dwarf role in The Hobbit|dated=9-Feb-2012|website=BBC|accessed=9-Feb-2012}}</ref> After the [[Elves]] of Mirkwood occupy [[Dale]], [[Thorin]] secretly sends out a raven to Dáin. The next day, just as Thranduil is about to start his attack, Dáin arrives unexpectedly at [[Lonely Mountain|Erebor]] mounted on a large, armoured boar and leading an army of [[Dwarves]]. He also wields a red war hammer instead of a red axe. He tells the Elves and [[Men]] to withdraw or face his attack. After trading insults with Thranduil, the Dwarves and Elves begin attacking each other, but the [[Orcs|Orc]] Army suddenly arrives, and Dáin leads his Dwarves to attack the Orcs instead. Following their example, the Elves join the Dwarves, fighting side by side with them. When [[Thorin and Company]] charge out of the mountain, Dáin and his army rally behind them and drive back the Orcs from the mountain. Later he and Thorin embrace in the midst of the battle. His coronation as the new [[King under the Mountain]] is only shown in the [[The Hobbit: The Battle of the Five Armies (extended edition)|Extended Edition]] of the film.",
-   "paraphrase": "In The Hobbit: The Battle of the Five Armies (2014), Dáin Ironfoot is played by Billy Connolly.",
+   "paraphrase": "Dáin Ironfoot appears in The Hobbit: The Battle of the Five Armies (2014).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -12412,14 +12434,9 @@
    "work_categories": [
     "The Lord of the Rings (film series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "Hugo Weaving",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2001: ''[[The Lord of the Rings: The Fellowship of the Ring]]'':'''\n:Elrond, played by [[Hugo Weaving]], first appears in the prologue as a commander of the army of [[Gil-galad]] in the [[War of the Last Alliance]]. A later flashback scene shows him actually taking [[Isildur]] into [[Mount Doom]], trying to persuade him to destroy the Ring. [[Círdan]] is omitted.\n\n:As in the book, Elrond heals [[Frodo Baggins|Frodo]]'s wound from [[Weathertop]]. Elrond then has a conversation with [[Gandalf]], discussing the many challenges that face them. Elrond argues that the Ring cannot remain in Rivendell (in the film, Frodo appears to have thought that he would be able to leave the Ring there). He also expresses his doubts about the race of [[Men]], and gives the first hints about [[Aragorn]]'s real identity. In the Council of Elrond, Elrond himself is the one who argues that the only option is to destroy the Ring. He does not select the Fellowship, but accepts those who volunteer.\n\n:Elrond gains two additional scenes in the [[The Lord of the Rings: The Fellowship of the Ring (extended edition)|Extended Edition]] of the movie. In the first, he talks with Aragorn beside the grave of Aragorn’s mother. Elrond encourages the reluctant Aragorn to accept his fate of becoming [[Kings of Gondor|king]]. In the next scene, Elrond blesses the departing [[Fellowship of the Ring|Fellowship]].",
-   "paraphrase": "In The Lord of the Rings: The Fellowship of the Ring (2001), Elrond is played by Hugo Weaving.",
+   "paraphrase": "Elrond appears in The Lord of the Rings: The Fellowship of the Ring (2001).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -12558,14 +12575,9 @@
     "The Rings of Power (TV series)",
     "Television series"
    ],
-   "portrayed_by": [
-    {
-     "name": "Robert Aramayo",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2022: ''[[The Lord of the Rings: The Rings of Power]]'':'''\n:'''September 1: ''[[A Shadow of the Past]]'':'''\n::Elrond (portrayed by [[Robert Aramayo]])<ref>{{webcite|author=[[Alice Jones]]|articleurl=https://www.vanityfair.com/hollywood/2022/02/amazon-the-rings-of-power-series-first-look|articlename=Amazon’s Lord of the Rings Series Rises: Inside The Rings of Power\n|dated=10-February-2022|website=[https://www.vanityfair.com VanityFair]|accessed=11-February-2022}}</ref> first appears sitting in a tree at [[Lindon]], writing the exact words of the speech that [[Gil-galad]] gives later. He is alerted by an [[Elves|Elf Attendant]] of the arrival of his friend, [[Galadriel]].",
-   "paraphrase": "In The Lord of the Rings: The Rings of Power (2022), Elrond is played by Robert Aramayo.",
+   "paraphrase": "Elrond appears in The Lord of the Rings: The Rings of Power (2022).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -13064,14 +13076,9 @@
    "work_categories": [
     "The Lord of the Rings (film series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "Jonathan Harding",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2001: ''[[The Lord of the Rings: The Fellowship of the Ring]]'':'''\n:A card from ''[[The Lord of the Rings Trading Card Game]]'' expansion: ''Realms of the Elf Lords'' identifies the [[Elves|Elf]] sitting next to [[Elrond]] at [[Council of Elrond|the Counci]] as Erestor.<ref>{{LOTRTCGW|Erestor, Chief Advisor to Elrond (3C14)}}</ref> He is portrayed by [[Jonathan Harding]].",
-   "paraphrase": "In The Lord of the Rings: The Fellowship of the Ring (2001), Erestor is played by Jonathan Harding.",
+   "paraphrase": "Erestor appears in The Lord of the Rings: The Fellowship of the Ring (2001).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -15101,9 +15108,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "James Arrington",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1979: [[The Lord of the Rings (1979 radio series)|''The Lord of the Rings'' (1979 radio series)]]:'''\n:The voice of Frodo is provided by [[James Arrington]].",
-   "paraphrase": "Frodo Baggins appears in The Lord of the Rings (1979 radio series) (1979).",
+   "paraphrase": "In The Lord of the Rings (1979 radio series) (1979), Frodo Baggins is played by James Arrington.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -15187,14 +15199,9 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [
-    {
-     "name": "Nigel Planer",
-     "how": "provided-the-voice"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''1992: [[Tales from the Perilous Realm (1992 radio series)|''Tales from the Perilous Realm'' (1992 radio series)]]:'''\n:In two episodes telling of the meeting of Frodo and [[Tom Bombadil]], [[Nigel Planer]] provided the voice of Frodo.",
-   "paraphrase": "In Tales from the Perilous Realm (1992 radio series) (1992), Frodo Baggins is voiced by Nigel Planer.",
+   "paraphrase": "Frodo Baggins appears in Tales from the Perilous Realm (1992 radio series) (1992).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -16397,9 +16404,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Marian Diamond",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1981: [[The Lord of the Rings (1981 radio series)|''The Lord of the Rings'' (1981 radio series)]]:'''\n:The voice of Galadriel is provided by [[Marian Diamond]]. In addition to the Lothlórien episodes, the voice of Galadriel is heard in Shelob's Lair as a reminder to use the phial, and she appears with Elrond in the final episode in the Shire, as they journey towards the Grey Havens.",
-   "paraphrase": "Galadriel appears in The Lord of the Rings (1981 radio series) (1981).",
+   "paraphrase": "In The Lord of the Rings (1981 radio series) (1981), Galadriel is played by Marian Diamond.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -17097,9 +17109,14 @@
    "work_categories": [
     "The Hobbit (1977 film)"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "John Huston",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1977: [[The Hobbit (1977 film)|''The Hobbit'' (1977 film)]]:'''\n:The voice of Gandalf was provided by [[John Huston]].",
-   "paraphrase": "Gandalf appears in The Hobbit (1977 film) (1977).",
+   "paraphrase": "In The Hobbit (1977 film) (1977), Gandalf is played by John Huston.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -17128,14 +17145,10 @@
     {
      "name": "William Squire",
      "how": "played-by"
-    },
-    {
-     "name": "John A. Neris",
-     "how": "actor-verb"
     }
    ],
    "source_text": "'''1978: [[The Lord of the Rings (1978 film)|''The Lord of the Rings'' (1978 film)]]:'''\n:Gandalf was voiced by [[William Squire]]. [[John A. Neris]] played him in the live-action filming used for rotoscoping.<ref>Jerry Beck, ''The Animated Movie Guide'', p. 154 (at [http://books.google.com/books?id=fTI1yeZd-tkC&pg=PA154&dq=%22John+A.+Neris%22&hl=nl#PPA154,M1 GoogleBooks])</ref>",
-   "paraphrase": "In The Lord of the Rings (1978 film) (1978), Gandalf is played by William Squire, John A. Neris.",
+   "paraphrase": "In The Lord of the Rings (1978 film) (1978), Gandalf is played by William Squire.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -17355,14 +17368,9 @@
     "The Rings of Power (TV series)",
     "Television series"
    ],
-   "portrayed_by": [
-    {
-     "name": "Daniel Weyman",
-     "how": "actor-verb"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2024: [[The Lord of the Rings: The Rings of Power|The ''Lord of the Rings: The Rings of Power'']]'''\n\n:[[Daniel Weyman]] plays \"[[The Stranger]],\" who is eventually revealed to be Gandalf in a moment of foresight after being called \"Grand Elf\" by a group of departing [[Stoors]].",
-   "paraphrase": "In The Lord of the Rings: The Rings of Power (2024), Gandalf is played by Daniel Weyman.",
+   "paraphrase": "Gandalf appears in The Lord of the Rings: The Rings of Power (2024).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -17387,9 +17395,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Norman Shelley",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1955: [[The Lord of the Rings (1955 radio series)|''The Lord of the Rings'' (1955 radio series)]]:'''\n:The voice of Gandalf was provided by [[Norman Shelley]].<ref>{{L|175}}</ref>",
-   "paraphrase": "Gandalf appears in The Lord of the Rings (1955 radio series) (1955).",
+   "paraphrase": "In The Lord of the Rings (1955 radio series) (1955), Gandalf is played by Norman Shelley.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -17414,9 +17427,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Heron Carvic",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1968: [[The Hobbit (1968 radio series)|''The Hobbit'' (1968 radio series)]]:'''\n:The voice of Gandalf was provided by [[Heron Carvic]].",
-   "paraphrase": "Gandalf appears in The Hobbit (1968 radio series) (1968).",
+   "paraphrase": "In The Hobbit (1968 radio series) (1968), Gandalf is played by Heron Carvic.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -17800,9 +17818,14 @@
     "PlayStation 2 games",
     "Xbox games"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Ian McKellen",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''2002: [[The Lord of the Rings: The Two Towers (video game)|''The Lord of the Rings: The Two Towers'' (video game)]]:'''\n:The voice of Gandalf is provided by [[Ian McKellen]]. Gandalf the Grey appears at the campsite of the [[Fellowship of the Ring|fellowship]] in ''The Gates of Moria'' and during the fight of [[Balin's Tomb]] in ''Balin's Tomb''. He latter reappears in the game as Gandalf the White at the start of the mission ''The Plains of Rohan'', where he leaves Aragorn, Legolas and Gimli to search Éomer and his army. He also appears in some cutscenes.",
-   "paraphrase": "Gandalf appears in The Lord of the Rings: The Two Towers (video game) (2002), a video game.",
+   "paraphrase": "In The Lord of the Rings: The Two Towers (video game) (2002), Gandalf is played by Ian McKellen.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -18003,12 +18026,12 @@
    ],
    "portrayed_by": [
     {
-     "name": "Steven M. Kramer",
+     "name": "Steven M.",
      "how": "played-by"
     }
    ],
    "source_text": "'''2004: ''[[The Lord of the Rings: War of the Ring]]'':'''\n:Gandalf is voiced by [[Steven M. Kramer]], renowned for playing older mentor types.",
-   "paraphrase": "In The Lord of the Rings: War of the Ring (2004), Gandalf is played by Steven M. Kramer.",
+   "paraphrase": "In The Lord of the Rings: War of the Ring (2004), Gandalf is played by Steven M..",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -18429,14 +18452,9 @@
     "The Rings of Power (TV series)",
     "Television series"
    ],
-   "portrayed_by": [
-    {
-     "name": "Benjamin Walker",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2022: ''[[The Lord of the Rings: The Rings of Power]]'':'''\n:'''September 1: ''[[A Shadow of the Past]]'':'''\n::High King Gil-galad (Portrayed by [[Benjamin Walker]])<ref>{{webcite|author=Amy Ratcliffe|articleurl=https://nerdist.com/article/lord-of-the-rings-the-rings-of-power-who-is-gil-galad-benjamin-walker-interview-exclusive-images/|articlename=Meet High King Gil-galad From THE LORD OF THE RINGS: THE RINGS OF POWER|dated=30-June-2022|website=[https://www.nerdist.com Nerdist]|accessed=09-July-2022}}</ref> first appears during a ceremony in [[Lindon]], giving a speech to honor the survivors of [[Galadriel|Galadriel's]] company of [[Elves]] who were attacked by a [[Snow-trolls|Snow-troll]] in [[Dúrnost]]. He announces that they are going to go home to the [[Aman|Undying Lands]] for them to dwell for all eternity. However, later on, he revealed to [[Elrond]] that his true purpose in doing this was so that Galadriel did not become the very evil that she sought to destroy.",
-   "paraphrase": "In The Lord of the Rings: The Rings of Power (2022), Gil-galad is played by Benjamin Walker.",
+   "paraphrase": "Gil-galad appears in The Lord of the Rings: The Rings of Power (2022).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -18929,9 +18947,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Gail Chugg",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1979: [[The Lord of the Rings (1979 radio series)|''The Lord of the Rings'' (1979 radio series)]]:'''\n:The voice of Gimli is provided by [[Gail Chugg]].",
-   "paraphrase": "Gimli appears in The Lord of the Rings (1979 radio series) (1979).",
+   "paraphrase": "In The Lord of the Rings (1979 radio series) (1979), Gimli is played by Gail Chugg.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -19484,14 +19507,9 @@
    "work_categories": [
     "The Hobbit (film series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "Luke Evans",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2012-14: [[The Hobbit (film series)|''The Hobbit'' (film series)]]:'''\n:Briefly seen in flashback to the [[Sack of Erebor]] in both the [[The Hobbit: An Unexpected Journey (extended edition)|Extended Edition]] of ''[[The Hobbit: An Unexpected Journey]]'' and in ''[[The Hobbit: The Desolation of Smaug]]'', Girion is portrayed by [[Luke Evans]], who also played Girion's descendant [[Bard]].<ref name=ComingSoon>[http://www.theonering.net/torwp/2013/12/09/84485-luke-evans-played-his-ancestor-girion-of-dale/ \"Luke Evans played Bard’s ancestor, Girion of Dale\"], theonering.net, 9 December 2013 (accessed 29 January 2014)</ref>",
-   "paraphrase": "In The Hobbit (film series) (2012), Girion is played by Luke Evans.",
+   "paraphrase": "Girion appears in The Hobbit (film series) (2012).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -21108,14 +21126,9 @@
    "work_categories": [
     "Television series"
    ],
-   "portrayed_by": [
-    {
-     "name": "Kari Väänänen",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''1993: ''[[Hobitit]]'':'''\n:Gollum is depicted as an old, white creature, portrayed by [[Kari Väänänen]], the same actor who played [[Aragorn]] in the series.",
-   "paraphrase": "In Hobitit (1993), Gollum is played by Kari Väänänen.",
+   "paraphrase": "Gollum appears in Hobitit (1993).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -21140,9 +21153,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Gerik Schjelderup",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1955: [[The Lord of the Rings (1955 radio series)|''The Lord of the Rings'' (1955 radio series)]]:'''\n:The voice of Gollum is provided by [[Gerik Schjelderup]].<ref name=\"RT1723\">Radio Times, Volume 133, No. 1723, [[16 November|November 16]], [[1956]]</ref>",
-   "paraphrase": "Gollum appears in The Lord of the Rings (1955 radio series) (1955).",
+   "paraphrase": "In The Lord of the Rings (1955 radio series) (1955), Gollum is played by Gerik Schjelderup.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -21781,14 +21799,9 @@
    "work_categories": [
     "The Lord of the Rings (film series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "Stephen Ure",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2003: ''[[The Lord of the Rings: The Return of the King]]:'''''\n:Portrayed by [[Stephen Ure]], Gorbag is portrayed as a smaller, regular [[Orcs|Orc]] while [[Shagrat]] is an [[Uruk-hai|Uruk]]. Instead of coming up from Minas Morgul, he comes down with Shagrat from the Tower of Cirith Ungol and is the one that explains to the Orcs about Shelob and her choice to leave victims alive. Later, he is killed by [[Samwise Gamgee]].",
-   "paraphrase": "In The Lord of the Rings: The Return of the King (2003), Gorbag is played by Stephen Ure.",
+   "paraphrase": "Gorbag appears in The Lord of the Rings: The Return of the King (2003).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -22238,14 +22251,9 @@
    "work_categories": [
     "The Hobbit (film series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "Barry Humphries",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2012: ''[[The Hobbit: An Unexpected Journey]]'':'''\n:The Great Goblin, also referred to as the '''Goblin King''', recognizes Thorin immediately, and is greatly interested in him because of the bounty put on him by [[Azog]]. He is temporarily incapacitated by Gandalf, when he arrives. He emerges again after a chase, and is killed by Gandalf shortly before their escape from Goblin-town. The character was portrayed by [[Barry Humphries]] through voice acting and motion capture.<ref name=\"PJCasting\">{{webcite|author=[[Peter Jackson]]|articleurl=http://www.facebook.com/note.php?note_id=10150286515141558|articlename=The Hobbit Casting Update|dated=19-June-2011|website=[http://www.facebook.com/ Facebook]|accessed=23-Dec-2011}}</ref> In the behind the scenes of the film, According to members of the film crew, the Great Goblin has an offspring credited as the [[Goblin Scribe]], but does not give him any proper recognition because his mother was forgotten about by the Great Goblin.<ref>[[Daniel Falconer]], ''[[The Hobbit: An Unexpected Journey: Chronicles: Art & Design]]'', \"...And Under Hill\", p. 182</ref>",
-   "paraphrase": "In The Hobbit: An Unexpected Journey (2012), Great Goblin is played by Barry Humphries.",
+   "paraphrase": "Great Goblin appears in The Hobbit: An Unexpected Journey (2012).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -25163,14 +25171,9 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [
-    {
-     "name": "Pauline Letts",
-     "how": "actor-verb"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''1981: [[The Lord of the Rings (1981 radio series)|''The Lord of the Rings'' (1981 radio series)]]:'''\n:[[Pauline Letts]] plays Ioreth.<ref>[[The Lord of the Rings (1981 radio series)|''The Lord of the Rings'' (1981 radio series)]], \"The Battle of Pelennor Fields\"</ref> in the absence of [[Bergil]] she is the one who provides Aragorn with the leaves he uses in his ministrations.",
-   "paraphrase": "In The Lord of the Rings (1981 radio series) (1981), Ioreth is played by Pauline Letts.",
+   "paraphrase": "Ioreth appears in The Lord of the Rings (1981 radio series) (1981).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -25516,14 +25519,9 @@
     "Warner Bros. Interactive games",
     "Middle-earth: Shadow (video game series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "Nolan North",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2017: ''[[Middle-earth: Shadow of War]]'':'''\n:After Isildur's (voiced by [[Nolan North]]) death, the Orcs brought his body to the diminished and vengeful [[Sauron]], who put a [[Nine Rings|Ring of Power]] on his finger, reviving him as one of his servants and eventually turning him into a [[Nazgûl]]. As one of the Ringwraiths, Isildur was forced to serve the [[Dark Lord]] for all time, until he was defeated and freed by the game's protagonist, Talion. Later, the Ranger claimed his ring to survive after [[Celebrimbor]] abandoned him, and eventually took Isildur's place among the Nazgûl after holding back Sauron's forces for decades.",
-   "paraphrase": "In Middle-earth: Shadow of War (2017), Isildur is played by Nolan North.",
+   "paraphrase": "Isildur appears in Middle-earth: Shadow of War (2017), a video game.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -26295,9 +26293,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Frank Duncan",
+     "how": "is-the-voice-of-SUBJECT"
+    }
+   ],
    "source_text": "'''1955: [[The Lord of the Rings (1955 radio series)|''The Lord of the Rings'' (1955 radio series)]]:'''\n:[[Frank Duncan]] was the voice of Legolas.",
-   "paraphrase": "Legolas appears in The Lord of the Rings (1955 radio series) (1955).",
+   "paraphrase": "In The Lord of the Rings (1955 radio series) (1955), Legolas is played by Frank Duncan.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -26706,14 +26709,9 @@
     "Real-time strategy games",
     "The Lord of the Rings: War of the Ring"
    ],
-   "portrayed_by": [
-    {
-     "name": "Grant George",
-     "how": "provided-the-voice"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2004: ''[[The Lord of the Rings: War of the Ring]]'':'''\n:[[Grant George]] provides the voice of Legolas.<ref>http://www.dynamicduovo.com/aboutgrant.html</ref> The game depicts Legolas's hunt for [[Gollum]] in northern Mirkwood, which is interrupted by the orcs.",
-   "paraphrase": "In The Lord of the Rings: War of the Ring (2004), Legolas is voiced by Grant George.",
+   "paraphrase": "Legolas appears in The Lord of the Rings: War of the Ring (2004), a video game.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -27170,14 +27168,9 @@
    "work_categories": [
     "The Lord of the Rings (film series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "Elizabeth Moody",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2001: ''[[The Lord of the Rings: The Fellowship of the Ring]]'':'''\n:Lobelia (portrayed by [[Elizabeth Moody]]) appears briefly along with Otho in the Extended edition of the film, attempting to confront [[Bilbo Baggins|Bilbo]] during his [[Bilbo's Farewell Party|farewell party]], though Bilbo manages to elude their presence. In the theatrical release, Lobelia is only heard knocking at Bilbo's door before the farewell party. Bilbo also makes a dismissive reference to “some Bracegirdle from Hardbottle.”",
-   "paraphrase": "In The Lord of the Rings: The Fellowship of the Ring (2001), Lobelia Sackville-Baggins is played by Elizabeth Moody.",
+   "paraphrase": "Lobelia Sackville-Baggins appears in The Lord of the Rings: The Fellowship of the Ring (2001).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -30621,14 +30614,9 @@
    "work_categories": [
     "The Lord of the Rings (film series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "Noel Appleby",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2001: ''[[The Lord of the Rings: The Fellowship of the Ring]]'':'''\n:The character [[Everard Proudfoot]], played by [[Noel Appleby]], filled Odo's role.",
-   "paraphrase": "In The Lord of the Rings: The Fellowship of the Ring (2001), Odo Proudfoot is played by Noel Appleby.",
+   "paraphrase": "Odo Proudfoot appears in The Lord of the Rings: The Fellowship of the Ring (2001).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -31192,16 +31180,12 @@
    ],
    "portrayed_by": [
     {
-     "name": "Jed Brophy",
-     "how": "played-by"
-    },
-    {
      "name": "Robert Strange",
      "how": "played-by"
     }
    ],
    "source_text": "'''2022: ''[[The Lord of the Rings: The Rings of Power]]'', Season One:'''\n:'''Episode 7: ''[[The Eye]]'':'''\n::When [[Galadriel]] and [[Theo]] hide from the Orcs beneath a log, a '''Hunter Orc''', portrayed by [[Jed Brophy]], attempts to sniff them out. When another Orc, portrayed by [[Robert Strange]] and credited as \"Other Orc\", asks him what it is that he smells, the Hunter Orc answers that he smells nothing but ash.",
-   "paraphrase": "In The Lord of the Rings: The Rings of Power, Season One (2022), Orc-hunters is played by Jed Brophy, Robert Strange.",
+   "paraphrase": "In The Lord of the Rings: The Rings of Power, Season One (2022), Orc-hunters is played by Robert Strange.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -32790,14 +32774,10 @@
     {
      "name": "Kathryn Hurlbutt",
      "how": "played-by"
-    },
-    {
-     "name": "Harry Holm",
-     "how": "played-by"
     }
    ],
    "source_text": "'''1981: [[The Lord of the Rings (1981 radio series)|''The Lord of the Rings'' (1981 radio series)]]:'''\n:Rose was voiced by [[Kathryn Hurlbutt]]. At the end, she has one child, [[Elanor Gardner|Elanor]], portrayed by [[Harry Holm]].<ref>[[The Lord of the Rings (1981 radio series)|''The Lord of the Rings'' (1981 radio series)]], \"[[The Grey Havens (episode)|The Grey Havens]]\"</ref>",
-   "paraphrase": "In The Lord of the Rings (1981 radio series) (1981), Rose Cotton is played by Kathryn Hurlbutt, Harry Holm.",
+   "paraphrase": "In The Lord of the Rings (1981 radio series) (1981), Rose Cotton is played by Kathryn Hurlbutt.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -32919,18 +32899,9 @@
    "work_categories": [
     "The Lord of the Rings (film series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "Sean Astin",
-     "how": "played-by"
-    },
-    {
-     "name": "Maisy McLeod-Riviera",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2003: ''[[The Lord of the Rings: The Return of the King]]'':'''\n:Rosie was, again, played by Sarah McLeod. Still the barmaid of the ''Green Dragon'', Sam makes his move on her, and they marry.<ref>''[[The Lord of the Rings: The Return of the King]]'', \"[[Homeward Bound (scene)|Homeward Bound]]\"</ref> Despite Frodo being gone, they live at Number 3, Bagshot Row. Sam and Rosie have two children: [[Elanor Gardner|Elanor]] (played by [[Sean Astin]]'s [[Alexandra Astin|daughter Alexandra]]), and [[Frodo Gardner|Frodo]] (played by [[Maisy McLeod-Riviera]], Sarah McLeod's daughter).<ref>''[[The Lord of the Rings: The Return of the King]]'', \"[[The Grey Havens (scene)|The Grey Havens]]\"</ref>",
-   "paraphrase": "In The Lord of the Rings: The Return of the King (2003), Rose Cotton is played by Sean Astin, Maisy McLeod-Riviera.",
+   "paraphrase": "Rose Cotton appears in The Lord of the Rings: The Return of the King (2003).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -33466,10 +33437,14 @@
     {
      "name": "Billy Barty",
      "how": "actor-verb"
+    },
+    {
+     "name": "Michael Scholes",
+     "how": "is-the-voice-of-SUBJECT"
     }
    ],
    "source_text": "'''1978: [[The Lord of the Rings (1978 film)|''The Lord of the Rings'' (1978 film)]]:'''\n:[[Michael Scholes]] was the voice of Sam, and [[Billy Barty]] played him in rotoscoped footage.",
-   "paraphrase": "In The Lord of the Rings (1978 film) (1978), Samwise Gamgee is played by Billy Barty.",
+   "paraphrase": "In The Lord of the Rings (1978 film) (1978), Samwise Gamgee is played by Billy Barty, Michael Scholes.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -33494,9 +33469,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Lou Bliss",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1979: [[The Lord of the Rings (1979 radio series)|''The Lord of the Rings'' (1979 radio series)]]:'''\n:The voice of Sam is provided by [[Lou Bliss]].",
-   "paraphrase": "Samwise Gamgee appears in The Lord of the Rings (1979 radio series) (1979).",
+   "paraphrase": "In The Lord of the Rings (1979 radio series) (1979), Samwise Gamgee is played by Lou Bliss.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -34184,9 +34164,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Robert Farquharson",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1955: [[The Lord of the Rings (1955 radio series)|''The Lord of the Rings'' (1955 radio series)]]:'''\n:The voice of Saruman is provided by [[Robert Farquharson]].",
-   "paraphrase": "Saruman appears in The Lord of the Rings (1955 radio series) (1955).",
+   "paraphrase": "In The Lord of the Rings (1955 radio series) (1955), Saruman is played by Robert Farquharson.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -34211,9 +34196,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "James Arrington",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1979: [[The Lord of the Rings (1979 radio series)|''The Lord of the Rings'' (1979 radio series)]]:'''\n:The voice of Saruman is provided by [[James Arrington]].",
-   "paraphrase": "Saruman appears in The Lord of the Rings (1979 radio series) (1979).",
+   "paraphrase": "In The Lord of the Rings (1979 radio series) (1979), Saruman is played by James Arrington.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -34643,14 +34633,9 @@
     "The Rings of Power (TV series)",
     "Television series"
    ],
-   "portrayed_by": [
-    {
-     "name": "Charlie Vickers",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2022: ''[[The Lord of the Rings: The Rings of Power]]'':'''\n:'''1 September: Episode 1. ''[[A Shadow of the Past]]'':'''\n::Sauron appears overseeing an army of [[Orcs]] at [[Dúrnost]] during the prologue, narrated by [[Galadriel]]. No actor is credited for the specific role.\n\n:'''14 October: Episode 8. ''[[Alloyed]]'':'''\n::It is revealed that Sauron was disguised as [[Halbrand]] (portrayed by [[Charlie Vickers]]) the entire time. After being supposedly \"split open\" by [[Adar (The Rings of Power)|Adar]], he took on the form of a mortal [[Men|Man]] and gave to himself the name Halbrand. At some point in time, he came upon the corpse of the last King of the [[Southlands]] and took up the crest because he thought that it suited him well.",
-   "paraphrase": "In The Lord of the Rings: The Rings of Power (2022), Sauron is played by Charlie Vickers.",
+   "paraphrase": "Sauron appears in The Lord of the Rings: The Rings of Power (2022).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -34675,9 +34660,14 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Felix Felton",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1955: [[The Lord of the Rings (1955 radio series)|''The Lord of the Rings'' (1955 radio series)]]:'''\n:The voice of Sauron is provided by [[Felix Felton]].<ref name=\"RT1724\">Radio Times, Volume 133, No. 1724, [[23 November|November 23]], [[1956]]</ref>",
-   "paraphrase": "Sauron appears in The Lord of the Rings (1955 radio series) (1955).",
+   "paraphrase": "In The Lord of the Rings (1955 radio series) (1955), Sauron is played by Felix Felton.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -37359,14 +37349,9 @@
     "Comics (publications)",
     "Publications by title"
    ],
-   "portrayed_by": [
-    {
-     "name": "David T. Wenzel",
-     "how": "actor-verb"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''1989: [[The Hobbit (comic book)|''The Hobbit'' (comic)]]:'''\n:[[David T. Wenzel]] portrays the trolls' purse having holes resembling a shouting mouth.\n[[File:The Hobbit (2003) Wallet.png|thumb|250px|The \"Wallet\" - [[The Hobbit (2003 video game)|''The Hobbit'' (2003 video game)]]]]",
-   "paraphrase": "In The Hobbit (comic) (1989), Talking purse is played by David T. Wenzel.",
+   "paraphrase": "Talking purse appears in The Hobbit (comic) (1989).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -37453,14 +37438,9 @@
     "The Rings of Power (TV series)",
     "Television series"
    ],
-   "portrayed_by": [
-    {
-     "name": "Cynthia Addai-Robinson",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2022: ''[[The Lord of the Rings: The Rings of Power]]'':'''\n: Queen Regent Míriel is portrayed by [[Cynthia Addai-Robinson]] in the Amazon TV series.<ref>{{webcite|author=Devan Coggan|articleurl=https://ew.com/tv/lord-of-the-rings-the-rings-of-power-numenor-first-look/|articlename=Welcome to Númenor: Get an exclusive look at The Lord of the Rings: The Rings of Power|dated=13 July 2022|website=[https://ew.com Entertainment Weekly]|accessed=13 July 2022}}</ref> She first appears on the series in it's [[Adar (episode)|third episode]], where she meets [[Galadriel]]. In the second to last episode, she becomes physically blind, but she refuses to be patronized in the final episode, threatening to put [[Elendil]] in his place to shame should he attempt to do so.",
-   "paraphrase": "In The Lord of the Rings: The Rings of Power (2022), Tar-Míriel is played by Cynthia Addai-Robinson.",
+   "paraphrase": "Tar-Míriel appears in The Lord of the Rings: The Rings of Power (2022).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -38313,14 +38293,9 @@
    "work_categories": [
     "The Hobbit (film series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "Lee Pace",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2012: ''[[The Hobbit: An Unexpected Journey]]'':'''\n:Thranduil is played by [[Lee Pace]] in the ''Hobbit'' [[The Hobbit (film series)|film trilogy]].<ref name=\"PJCasting\">{{webcite|author=[[Peter Jackson]]|articleurl=http://www.facebook.com/note.php?note_id=10150239464391558|articlename=Casting news!|dated=30-April-2011|website=[http://www.facebook.com/ Facebook]|accessed=23-Dec-2011}}</ref> Thranduil is first seen in the prologue paying homage to King [[Thrór]] inside within the [[Lonely Mountain]], though leaves in a huff when the [[Dwarves]] refuse to give him a box of white jewels. He is next seen with an army outside of [[Lonely Mountain|Erebor]] riding an elk, seemingly ready to help during the [[Sack of Erebor]]. However, he decides not to help and turns away.",
-   "paraphrase": "In The Hobbit: An Unexpected Journey (2012), Thranduil is played by Lee Pace.",
+   "paraphrase": "Thranduil appears in The Hobbit: An Unexpected Journey (2012).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -38913,9 +38888,14 @@
    "work_categories": [
     "The Lord of the Rings (1978 film)"
    ],
-   "portrayed_by": [],
+   "portrayed_by": [
+    {
+     "name": "Philip Stone",
+     "how": "the-voice-of-SUBJECT-is"
+    }
+   ],
    "source_text": "'''1978: [[The Lord of the Rings (1978 film)|''The Lord of the Rings'' (1978 film)]]:'''\n:The voice of Théoden was provided by [[Philip Stone]].",
-   "paraphrase": "Théoden appears in The Lord of the Rings (1978 film) (1978).",
+   "paraphrase": "In The Lord of the Rings (1978 film) (1978), Théoden is played by Philip Stone.",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -40010,14 +39990,9 @@
    "work_categories": [
     "The Lord of the Rings (film series)"
    ],
-   "portrayed_by": [
-    {
-     "name": "John Rhys-Davies",
-     "how": "played-by"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''2002: ''[[The Lord of the Rings: The Two Towers]]'':'''\n:Treebeard is a combination of a large animatronic model and a CGI construct; his voice is performed by [[John Rhys-Davies]], who also plays [[Gimli]].\n\n:The Ents at the [[Entmoot]] initially decline Merry and Pippin's request for help. Treebeard is carrying the hobbits through the forest, when Pippin gets an idea. He asks Treebeard to carry them towards [[Isengard]], claiming that it is the last place [[Saruman]] would look for them because it puts them so close to danger. Treebeard is initially confused, but ultimately succumbs to Pippin's request. When Treebeard gets close to the forest's edge, he sees the devastation wrought by Saruman's orcs. The trees have all been chopped down to serve as fuel for Saruman's war machine. Treebeard then makes a momentous decision, and calls for the other Ents. They attack Isengard and manage to flood it.",
-   "paraphrase": "In The Lord of the Rings: The Two Towers (2002), Treebeard is played by John Rhys-Davies.",
+   "paraphrase": "Treebeard appears in The Lord of the Rings: The Two Towers (2002).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
@@ -42283,14 +42258,9 @@
    "work_categories": [
     "Radio adaptations"
    ],
-   "portrayed_by": [
-    {
-     "name": "Matthew Locricchio",
-     "how": "actor-verb"
-    }
-   ],
+   "portrayed_by": [],
    "source_text": "'''1979: ''[[The Lord of the Rings (1979 radio series)|The Mind's Eye's The Lord of the Rings]]'':'''\n:[[Matthew Locricchio]] plays Éomer.<ref>[[The Lord of the Rings (1979 radio series)|''The Lord of the Rings'' (1979 radio series)]], \"[[The Search for the Hobbits]]\"</ref> He is portrayed as the son of [[Théoden]], rather than the sister-son.<ref>[[The Lord of the Rings (1979 radio series)|''The Lord of the Rings'' (1979 radio series)]], \"[[The White Rider (1979 episode)|The White Rider]]\"</ref>",
-   "paraphrase": "In The Mind's Eye's The Lord of the Rings (1979), Éomer is played by Matthew Locricchio.",
+   "paraphrase": "Éomer appears in The Mind's Eye's The Lord of the Rings (1979).",
    "conf": "EXT",
    "hand": "Tolkien Gateway contributors",
    "licence_as_stated": "CC BY-SA 3.0",
