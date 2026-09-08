@@ -127,6 +127,42 @@
     if (!p.year) return "";
     return p.year_end && p.year_end !== p.year ? p.year + "–" + p.year_end : String(p.year);
   }
+  /* ── portrayed_by IS AN ARRAY OF OBJECTS, AND IT WAS PRINTED WITH String() ───────────────
+     Found by an independent audit on 8 September 2026 and then MEASURED over the whole
+     population rather than the one route it was seen on. All 236 shards, 1,016 portrayal
+     rows: `portrayed_by` is a list on 1,016 of 1,016 -- 239 of them non-empty, holding 244
+     entries, every entry an object of exactly the two keys {how, name}; 777 of them the
+     empty list.
+
+     The old line was `if (p.portrayed_by) h += 'played by <b>' + esc(p.portrayed_by)`, and
+     it failed in BOTH directions at once:
+
+       * esc() begins `String(x)`, and String() on an array of objects is the literal text
+         "[object Object]". So all 239 rows that HAVE a performer printed that, and not one
+         of the 244 names reached a reader.
+       * AN EMPTY ARRAY IS TRUTHY IN JAVASCRIPT. `if ([])` is taken, so all 777 rows with no
+         performer printed the words "played by" followed by nothing, then the separator.
+
+     0 of 1,016 rows rendered this field correctly. The names are joined here, and the phrase
+     is omitted ENTIRELY when the list is empty -- an empty list means the archive does not
+     know who played the part, and "played by" with a blank after it is a false statement
+     dressed as a missing one.
+
+     It accepts a bare string and a bare object as well as the list, because a renderer that
+     only handles the shape it was shown is how the first version came to handle none of
+     them. */
+  function performers(p) {
+    var v = p.portrayed_by, out = [], i, x;
+    if (!v) return "";
+    if (!(v instanceof Array)) v = [v];
+    for (i = 0; i < v.length; i++) {
+      x = v[i];
+      if (x && typeof x === "object") x = x.name;
+      x = String(x == null ? "" : x).replace(/^\s+|\s+$/g, "");
+      if (x) out.push(x);
+    }
+    return out.join(", ");
+  }
   /* THE HEAD IS THE MARKING AND CARRIES NOTHING ELSE. Two children, a few lines tall, and
      `data-cx-atom` so codex-hall.js may never open it. This is the node that answers to
      `#rec-adapt`, so the id and the wording can no longer be separated by anything. */
@@ -149,8 +185,12 @@
   function row(p) {
     var h = '<div class="adapt-row" data-adapt-row data-cx-atom '
       + 'style="margin:.3em 0 .3em .9em">';
-    if (p.portrayed_by) h += 'played by <b>' + esc(p.portrayed_by) + '</b>';
-    if (p.subheading) h += (p.portrayed_by ? ' \u00b7 ' : '') + esc(p.subheading);
+    var who = performers(p);
+    if (who) h += 'played by <b>' + esc(who) + '</b>';
+    // AND THE SEPARATOR FOLLOWS WHAT WAS ACTUALLY PRINTED, not what the row happens to hold.
+    // The old test was `p.portrayed_by ? ...`, true for the empty list, so 777 rows opened
+    // with a stray " \u00b7 " before the subheading.
+    if (p.subheading) h += (who ? ' \u00b7 ' : '') + esc(p.subheading);
     if (p.paraphrase) h += '<div>' + esc(p.paraphrase) + '</div>';
     h += '<div class="cite" style="font-size:10.5px"><b>' + MARK + '</b> \u00b7 '
       + esc(p.publication_layer || "") + ' \u00b7 hand: ' + esc(p.hand || "unstated")
@@ -194,7 +234,26 @@
      header. Backwards, because the list is live-ish and removing a parent removes children. */
   function wipe() {
     var n = document.querySelectorAll("[data-adapt-of]"), i;
-    for (i = n.length - 1; i >= 0; i--) if (n[i].parentNode) n[i].parentNode.removeChild(n[i]);
+    for (i = n.length - 1; i >= 0; i--) {
+      // ── THE SERVED PANEL IS NOT OURS TO REMOVE ──────────────────────────────────────────
+      // C927's second half renders this same panel into the served HTML of the 236 person
+      // routes that hold a shard (map/splice_person_layer.py). Those nodes carry the same
+      // ownership stamp -- they are about the same person -- so a sweep by stamp alone would
+      // DELETE THE READER'S ONLY COPY on every draw, and on a route where this script is not
+      // needed at all. `data-adapt-static` is the served panel saying so.
+      if (n[i].hasAttribute("data-adapt-static")) continue;
+      if (n[i].parentNode) n[i].parentNode.removeChild(n[i]);
+    }
+  }
+  /* IS THE PANEL ALREADY IN THE SERVED HTML, FOR THIS PERSON? Asked by attribute VALUE and
+     not by a selector built from a slug, which would need escaping -- the same reason stray()
+     below is written this way. Where a served panel stands, this file's whole job is to stay
+     out of the way: not to wipe it, not to insert a second one beside it, and not to spin
+     redrawing over it. That is what "enhance, do not duplicate" has to mean in code. */
+  function hasStatic(id) {
+    var n = document.querySelectorAll("[data-adapt-static]"), i;
+    for (i = 0; i < n.length; i++) if (n[i].getAttribute("data-adapt-of") === id) return true;
+    return false;
   }
   /* IS THERE ADAPTATION MATTER ON THE PAGE BELONGING TO SOMEBODY ELSE? Asked by attribute
      value rather than by a CSS selector built from a slug, which would need escaping. */
@@ -250,6 +309,12 @@
     // of both. wipe() takes every stamped node wherever it now lives.
     wipe();
     if (!id || !document.getElementById("main")) return;
+    // THE SERVED PANEL WINS, AND THERE IS NOTHING LEFT TO DO. On the 236 person routes that
+    // hold a shard the reader already has the whole layer without running a line of script;
+    // fetching the shard again to build a second copy is how a page comes to carry two
+    // logical layers of the same 40 rows. character.html has no served panel -- it shows one
+    // person per hash -- so this is inert there and that page behaves exactly as measured.
+    if (hasStatic(id)) return;
     if (CACHE[id] === false || REFUSED[id]) return;
     if (CACHE[id]) { put(id, CACHE[id]); return; }
     fetch(dbase() + "adapt/" + encodeURIComponent(id) + ".json").then(function (r) {
@@ -313,6 +378,11 @@
       // wipes every stamped node first, so the next callback finds none belonging to anyone
       // else. Without this arm, matter left behind by a compositor move that happens AFTER
       // the hashchange would sit under the wrong person until the next navigation.
+      // A SERVED PANEL IS NEVER A REASON TO REDRAW. Without this arm the observer would fire
+      // on every mutation of a person route for as long as the page lived: draw() returns
+      // immediately on hasStatic(), so the condition below would stay true forever and never
+      // be answered. Cheap work repeated without end is still a spin.
+      if (hasStatic(id)) return;
       if (stray(id) || !e || e.textContent.indexOf(MARK) === -1) arm();
     });
     obs.observe(document.documentElement, { childList: true, subtree: true });
