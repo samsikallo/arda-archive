@@ -69,7 +69,7 @@ if(!document.documentElement.hasAttribute("data-codex-object")){
 })();
 (function(){
 const GROUPS=[
-  ["Peoples & Living Beings",[["genealogy.html","family trees","972 figures, all houses"],
+  ["Peoples & Living Beings",[["genealogy.html","family trees","973 figures, all houses"],
    ["character.html","records","a page for every person"],
    ["population_dashboard.html","peoples","demography of Arda"],
    ["ainur.html","the Ainur","the Valar and the Maiar"],
@@ -96,7 +96,7 @@ const GROUPS=[
    ["silences.html","the silences","what the corpus does not say"]]],
   ["Encyclopedia / Lexicon",[["annals.html","annals of the archive","what's new on this site"],
    ["errata.html","errata","what this archive used to say, and what it says now"],
-   ["corpus.html","the corpus","258 volumes, concordance, queries"],
+   ["corpus.html","the corpus","259 volumes, concordance, queries"],
    ["canon.html","is it canon?","ask a phrase, see which volume attests it"],
    ["theindex.html","the index","9,667 names, the editors' own glosses"],   ["compare.html","side by side","two lives or two battles"],
    ["quiz.html","the trial","test your lore"],
