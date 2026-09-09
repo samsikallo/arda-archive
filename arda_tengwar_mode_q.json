@@ -31,7 +31,11 @@
    "cite": "Appendix E, The Tengwar: o is a right curl, u a left. [I-H] -- read off the plate."
   }
  },
- "unresolved": {},
+ "unresolved": {
+  "th": "ORTHOGRAPHY, NOT EVIDENCE -- the tengwa is held. Appendix E names No. 9 súle (thúle), and it is in `letters` under the spelling `þ` at U+E008. What is undecided is whether Latin-alphabet `th` folds to `þ` in this archive's orthography; `equivalent` folds the diaereses and says nothing about this one. Deciding it is a one-line ruling, not a research task.",
+  "hy": "STRUCTURAL -- `letters` maps one form to exactly ONE codepoint, and hy is not one glyph. Glaemscribe writes it hyarmen followed by the palatal sign (`hy{V_D_WN} --> HYARMEN {PALATAL}`), a two-glyph sequence this table cannot express. The value is known; the container cannot hold it.",
+  "ht": "GENUINELY UNRESOLVED -- no statement in Appendix E gives ht a tengwa, and Glaemscribe's own default does NOT join it: only its `st_pt_ht = ST_PT_HT_WITH_XTD` option renders it as an extended tengwa, and the mode ships with the separated reading. So the two careful readings available to this archive both decline to join it, and this one stays refused until a plate or a text says otherwise."
+ },
  "letters": {
   "c": "U+E002",
   "ch": "U+E00A",
