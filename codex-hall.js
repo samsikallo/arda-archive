@@ -546,7 +546,18 @@
     }
     pageAnchor = anchor; pageShown = shown;
     book.setAttribute("data-cx-spilled", String((+(book.getAttribute("data-cx-spilled")||0)) + spilled));
-    if (spilled) { stampFurniture(pageLeaves, pageTitle, pageSub, pageBase); setFolio(Math.ceil(pageLeaves.length / perOpening())); openings = collectOpenings(); showOpening(atOpening); }
+    if (spilled) { stampFurniture(pageLeaves, pageTitle, pageSub, pageBase); setFolio(Math.ceil(pageLeaves.length / perOpening())); }
+    /* C960 / #412: RESTORE THE PAGING STATE WHETHER OR NOT ANYTHING SPILLED.
+       reveal() sets `sp.style.display = ""` on each opening in turn, because a display:none leaf
+       reports scrollHeight === clientHeight === 0 and a spill pass that walks hidden openings is
+       told "not overfull" by every one of them -- the reason is in reveal()'s own comment. That
+       makes this function a MEASUREMENT PASS THAT MUTATES VISIBLE STATE, and it must put the
+       state back on EVERY path. It used to restore only `if (spilled)`, so on the common path --
+       nothing overfull, which is what data-cx-spilled="0" records on the front page -- the last
+       opening reveal() touched stayed on screen beside the current one.
+       That is what the owner saw and reported on 9 September 2026 as "the pages are on top of
+       each other": FIVE .spread and TEN .leaf rendering at once where a codex shows ONE. */
+    openings = collectOpenings(); showOpening(atOpening);
     return spilled;
 
 
