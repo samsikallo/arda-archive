@@ -542,7 +542,7 @@ body{
 .quire{ position:absolute; bottom:6px; left:26px; font:600 9px Cinzel,Georgia,serif;
   letter-spacing:.02em; color:var(--ink-soft); opacity:.7; }
 
-.leaf.twocol .tb{ margin-left:calc(26px + clamp(96px,17%,138px) + 10px); column-count:1; column-gap:19px; column-rule:none; } /* C955: the LEAF owns the columns -- see the note below on nested multicol */
+.leaf.twocol .tb{ margin-left:calc(26px + clamp(96px,17%,138px) + 10px); column-count:2; column-gap:19px; column-rule:1px solid var(--rule-soft); }
 
 .leaf.twocol .tb p{ font-size:14.2px; margin-bottom:0; }
 
@@ -989,21 +989,16 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
 :root[data-codex-object="on"] .book .leaf.fitted .tb{
 
   columns:auto; column-rule:none; flex:0 1 auto; min-height:0; overflow:visible; }
+
 :root[data-codex-object="on"] .book .leaf.fitted .tb > .tbi{
-  /* C955, his ruling of 9 September 2026: "keep the leaf's two columns".
-     THE LEAF ALREADY CARRIES column-count:2 (see .book[data-spread="codex"] .leaf above), and
-     CSS MULTICOL NESTS MULTIPLICATIVELY -- so this second declaration put every paragraph into
-     FOUR columns inside a 587px leaf. Measured on the front page, 9 Sep 2026: all 23 paragraphs
-     had TWO multicol ancestors, the median rendered text fragment was 113px, and 15 of 31
-     fragments were under 60px -- narrower than one word. A reader saw "BELON / AS TO / IS A /
-     BOOK:" and "COLOP/HON". After this change: one ancestor, median 341px, 4 under 60px.
-     `codexfit_check` was GREEN throughout, on 1,543 of 1,543 routes, because 21-pixel columns
-     FIT their box perfectly -- "it fits" is a proxy for "it reads", and the proxy passed. */
   column-count:1; column-gap:19px; column-rule:none; }
 :root[data-codex-object="on"] .book .leaf.fitted .tb > .tbi > h2,
 :root[data-codex-object="on"] .book .leaf.fitted .tb > .tbi > .lede,
 :root[data-codex-object="on"] .book .leaf.fitted .tb > .tbi > .slip{ column-span:all; }
 :root[data-codex-object="on"] .book .leaf.fitted .fn{ flex:0 0 auto; margin-bottom:16px; }
+
+:root[data-codex-object="on"] .book[data-spread="codex"] .leaf.twocol .tb{
+  column-count:1; column-gap:19px; column-rule:none; }
 
 :root[data-codex-object="on"] .book .leaf.fitted .marg .marg-t{ max-height:none; overflow:visible; }
 
