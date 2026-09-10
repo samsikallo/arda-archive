@@ -123,14 +123,30 @@ def count(path):
     dataset arrives shaped that way, this predicate will under-count it in silence.
 
     THE HONEST LIMIT, DECLARED RATHER THAN LEFT TO BE DISCOVERED. This still counts
-    only ONE kind of member per dataset. 13 datasets hold a list AND a larger unwatched
-    dict -- arda_codex_manifest is floored at 7 while holding 655 routes,
-    arda_edge_scripts at 45 while holding 624, arda_gazetteer at 64 while holding 481 --
-    and 2 more (arda_eldamo_content, arda_mirrored_sources) sit at a floor of 0, which
-    is arithmetically unshrinkable. Those are real and they are NOT repaired here,
-    because widening the predicate would move 15 floors at once and a bulk floor move is
-    how a genuine shrinkage gets absorbed. They are written down so the next reader
-    inherits the measurement rather than the surprise.
+    only ONE kind of member per dataset: a dataset can hold a list AND a larger unwatched
+    dict, and only the list is floored. arda_codex_manifest is floored at 7 while holding
+    1,606 records in a dict; arda_edge_scripts at 45 while holding 1,648; arda_apparatus at
+    6 while holding 1,756. Those are real and they are NOT repaired by widening the
+    predicate, because a bulk floor move is how a genuine shrinkage gets absorbed --
+    COUNT_KEY above is the per-dataset remedy, one declaration at a time, with a reason.
+
+    THE FIGURES THIS PARAGRAPH USED TO CARRY WERE STALE, AND A STALE FIGURE IN A NORMATIVE
+    DOCSTRING IS THE FAULT THIS FILE EXISTS TO CATCH. It said 13 datasets and 2 more at a
+    floor of 0. RE-MEASURED 2026-09-10: the residue is 18 on this paragraph's own predicate
+    (17 now that arda_person_tg_claims is declared) and the zero case is 1, not 2. The
+    population grew and the prose did not. ASK, NEVER TYPE IT -- run from site/:
+
+        python3 -c "import json,glob;print(sum(1 for f in glob.glob('arda_*.json') \
+          for d in [json.load(open(f))] if isinstance(d,dict) \
+          and [v for v in d.values() if isinstance(v,list)] \
+          and sum(len(v) for v in d.values() if isinstance(v,dict)) \
+          > sum(len(v) for v in d.values() if isinstance(v,list))))"
+
+    A BROADER PREDICATE IS BROADER STILL: counting every dataset whose floor would MOVE
+    under "lists plus wrapped dicts" gives 63 of 117, and 61 of those already carry a
+    floor -- each looking GROWN, so no refusal fires and 61 floors would rise in silence.
+    That is the measurement that rules the wide fix out, and it is why the remedy is a
+    declaration.
     """
     d=json.load(open(path))
     # ── 0. A DECLARED RECORD KEY WINS OVER EVERY HEURISTIC BELOW.
