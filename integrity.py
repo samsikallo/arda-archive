@@ -58,6 +58,22 @@ SITE=os.path.dirname(os.path.abspath(__file__))
 BASELINE=os.path.join(SITE,".integrity_baseline.json")
 
 # ---- what a dataset's "size" means, per file -------------------------------------
+# ── WHERE A DATASET'S RECORDS LIVE, WHEN THE HEURISTIC BELOW CANNOT SEE IT ────────────────
+# One entry per dataset, each with the reason. This is a DECLARATION, not a silencer: the
+# count it produces is a real record count and the floor built on it is a real floor.
+COUNT_KEY = {
+    # 3.9 MB, and count() returned 1. The file carries a 1-element `markers` list beside a
+    # `routes` dict of 781 published person routes (4,141 Tolkien Gateway claims, C831), and
+    # `if lists: return sum(lists)` fires on `markers` and never reaches `routes`. A floor of 1
+    # would let all 781 routes vanish while this guard reported health -- which its own
+    # docstring below calls strictly worse than the gap it repaired. Declared 2026-09-10 on
+    # the owner's ruling. The dataset's substantive guard is map/persontg_check.py, which
+    # re-derives all 4,141 claims and all 781 shards from tracked inputs at every gate run;
+    # this floor is the second belt, not the first.
+    "arda_person_tg_claims.json": "routes",
+}
+
+
 def count(path):
     """The number of RECORDS, never the number of top-level keys.
 
@@ -117,6 +133,21 @@ def count(path):
     inherits the measurement rather than the surprise.
     """
     d=json.load(open(path))
+    # ── 0. A DECLARED RECORD KEY WINS OVER EVERY HEURISTIC BELOW.
+    # The predicate below infers where a dataset's records live. Where that inference is
+    # WRONG the answer is to declare the truth for that one dataset, not to widen the
+    # predicate: widening moves 63 datasets, 61 of which already carry a floor, and a bulk
+    # floor move is how a genuine shrinkage gets absorbed (measured 2026-09-10).
+    key=COUNT_KEY.get(os.path.basename(path))
+    if key:
+        if not isinstance(d,dict) or key not in d:
+            # A DECLARATION THAT HAS GONE STALE MUST GO RED, NEVER FALL BACK. Falling back
+            # would restore the silent under-count this declaration exists to repair, and
+            # would do it with a reassuring number attached.
+            raise KeyError("declared record key %r is absent from %s -- the declaration in "
+                           "COUNT_KEY is stale, or the dataset was reshaped. Fix one of them; "
+                           "this guard will not guess." % (key, os.path.basename(path)))
+        return len(d[key])
     if isinstance(d,list): return len(d)
     if isinstance(d,dict):
         # the collections, wherever they are: lists first, then wrapped dicts.
