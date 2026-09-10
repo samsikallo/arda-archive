@@ -25090,6 +25090,66 @@
     "granularity": "item",
     "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_vt_vt_index_sp_pdf_6a3fa2_htm.txt)"
    }
+  },
+  {
+   "file": "tecendil_blog_def53e.htm",
+   "tier": 3,
+   "attribution": "Tecendil, tecendil.com (https://www.tecendil.com/blog)",
+   "note": "Tier-3; [EXT] for any claim resting on it. **MOST OF THIS SITE IS NOT HELD AND CANNOT BE BY CRAWLING: C327 found its substance client-side, and 71 of 79 held HTML captures are the application shell.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed. Published under his standing authorization of 16 August 2026. Extractor map/gen_tecendil.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_tecendil_blog_def53e_htm.txt",
+   "words": 3170,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "tecendil_inside_tecendil_550872.htm",
+   "tier": 3,
+   "attribution": "Tecendil, tecendil.com (https://www.tecendil.com/inside-tecendil)",
+   "note": "Tier-3; [EXT] for any claim resting on it. **MOST OF THIS SITE IS NOT HELD AND CANNOT BE BY CRAWLING: C327 found its substance client-side, and 71 of 79 held HTML captures are the application shell.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed. Published under his standing authorization of 16 August 2026. Extractor map/gen_tecendil.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_tecendil_inside_tecendil_550872_htm.txt",
+   "words": 996,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "tecendil_root_481349.htm",
+   "tier": 3,
+   "attribution": "Tecendil, tecendil.com (https://www.tecendil.com/root)",
+   "note": "EXTRACTION: CORRECTLY EMPTY at 1839 bytes -- this is the site's short index page and the extraction holds all of it. The site's SUBSTANCE is absent for a different and declared reason: it is client-side, per C327. Tier-3; [EXT] for any claim resting on it. **MOST OF THIS SITE IS NOT HELD AND CANNOT BE BY CRAWLING: C327 found its substance client-side, and 71 of 79 held HTML captures are the application shell.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed. Published under his standing authorization of 16 August 2026. Extractor map/gen_tecendil.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_tecendil_root_481349_htm.txt",
+   "words": 263,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "tecendil_tengwar_handbook_993f2f.htm",
+   "tier": 3,
+   "attribution": "Tecendil, tecendil.com (https://www.tecendil.com/tengwar-handbook)",
+   "note": "Tier-3; [EXT] for any claim resting on it. **MOST OF THIS SITE IS NOT HELD AND CANNOT BE BY CRAWLING: C327 found its substance client-side, and 71 of 79 held HTML captures are the application shell.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed. Published under his standing authorization of 16 August 2026. Extractor map/gen_tecendil.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_tecendil_tengwar_handbook_993f2f_htm.txt",
+   "words": 5799,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
   }
  ],
  "not_held": [
@@ -25214,9 +25274,9 @@
     "unrecorded": 18
    },
    "3": {
-    "total": 1380,
+    "total": 1384,
     "with_path": 460,
-    "unrecorded": 920
+    "unrecorded": 924
    },
    "4": {
     "total": 11,
@@ -25225,14 +25285,14 @@
    }
   },
   "by_kind": {
-   "unrecorded": 962,
+   "unrecorded": 966,
    "isbn": 38,
    "url": 404,
    "issn": 52
   },
-  "total": 1456,
+  "total": 1460,
   "with_path": 494,
-  "unrecorded": 962
+  "unrecorded": 966
  },
  "rule": "Where two sources disagree, the lower tier number wins. A tier-5 file is corrected by any tier above it. Tolkien's own words quoted inside a tier-2 book carry tier-1 authority; the editor's framing does not.",
  "limits": [
