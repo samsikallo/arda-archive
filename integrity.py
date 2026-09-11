@@ -71,7 +71,78 @@ COUNT_KEY = {
     # re-derives all 4,141 claims and all 781 shards from tracked inputs at every gate run;
     # this floor is the second belt, not the first.
     "arda_person_tg_claims.json": "routes",
+
+    # DECLARED 11 September 2026 (task #462), one dataset at a time, after reading each file's
+    # actual top-level shape -- not guessed from the count() predicate alone. For each: the key
+    # named is the dataset's own substantive record population, chosen because it is what the
+    # file's own metadata (an n_* field, or its "what") already calls the records, and because
+    # no other top-level member is a plausible rival population at that scale.
+    "arda_apparatus.json": "entities",
+    # 1,514 entities, matching population.published_routes=1514 exactly. `volumes` (232) is
+    # corpus-file metadata this file cites FROM, not what it publishes.
+    "arda_edge_scripts.json": "routes",
+    # 1,589 routes, matching n_routes=1589 exactly; the file's own docstring says counts are
+    # "counted off the routes dict below at build time".
+    "arda_codex_manifest.json": "routes",
+    # 1,595 routes. NOTE: n_routes reads 1589, six short of the dict's own length -- a stale
+    # metadata field, not a reason to distrust the dict. The dict is still the manifest's own
+    # record population (every published route's place in the codex) and is what a real
+    # deletion would shrink; the 1589-vs-1595 gap is a separate finding, not filed as a task
+    # here since it is six records, not a shrinkage in progress.
+    "arda_name_scripts.json": "routes",
+    # 1,514 routes, matching n_routes=1514 exactly.
+    "arda_gazetteer.json": "places",
+    # 481 places, matching the file's own top-level `n`: 481 exactly.
+    "arda_person_features.json": "entities",
+    # 255 entities, the per-person record population this file exists to publish. `held`,
+    # `held_because`, `held_crosscut` are tallies ABOUT the entities, not a second population.
+    "arda_codex_coverage.json": "halls",
+    # 66 halls, matching census.denominator=66. `grid` is also len 66 (same population, boolean
+    # feature matrix rather than the measured per-route record) -- either would floor correctly
+    # today; `halls` carries the richer per-route object and is the more natural "record".
+    "arda_tengwar_mode_gu.json": "letters",
+    # 29 letters -- the General Use sound-to-codepoint chart this file exists to publish.
+    # `tehtar` (5) and `carriers` (2) are smaller sub-tables of the same mode, not the whole.
+    "arda_cirth_codepoints.json": "mapping",
+    # 60 certh mappings, matching n_certh=60 exactly.
+    "arda_codex_shell.json": "routes",
+    # 49 routes -- the per-route index this shell file exists to serve to the reader.
+    "arda_tengwar_mode_q.json": "letters",
+    # 31 letters -- the Quenya-classical sound-to-codepoint chart.
+    "arda_issue_index.json": "issues",
+    # 34 issues, matching n_cited=34 exactly.
 }
+
+# NOT DECLARED, ON PURPOSE, AND MEASURED RATHER THAN SKIPPED -- five more datasets carried the
+# same list-shadowed-dict shape task #462 named (18 total; 17 once arda_person_tg_claims above
+# was declared). Two of the remaining five need NO declaration; three cannot be fixed by one.
+#
+#   arda_variants.json, arda_fanon.json -- the CURRENT floor (summing the top-level LISTS) is
+#   already the correct record count for both: variants=20+silences=4+refused=0=24, and
+#   claims=11+venues=4+refused=0=15. The larger "unwatched dict" the predicate flags is pure
+#   metadata in both cases (arda_variants: the_tradition_axis, the_ruling, vocabulary, extends,
+#   precedence, corpus, counts; arda_fanon: four_verdicts_not_two, provenance, counts) -- none of
+#   it is a second population of records. A COUNT_KEY here would not fix anything; it is left
+#   undeclared so a future session does not "fix" a floor that already watches the right thing.
+#
+#   arda_eldamo_content.json, arda_mirrored_sources.json -- the TRUE population (68 pages /
+#   370,862 words; 315 pages / 60 documents) is a SCALAR field (n_pages, n_words, n_documents),
+#   not stored as one top-level collection COUNT_KEY can point at. eldamo_content's `pages` is a
+#   dict of 6 SECTIONS, each holding a list of page objects -- len(pages)=6 measures sections,
+#   not pages, and would be a wrapper-count of exactly the kind this file's own docstring above
+#   warns against. Fixing this needs either a computed multi-level count (a change to count()'s
+#   own mechanism, which task #462 explicitly rules out as "a wider predicate") or a restructure
+#   of the dataset -- a decision, not a declaration, and not taken here.
+#
+#   arda_timemap_jpeg.json -- genuinely ambiguous. `realms` (39) is a real, distinct record
+#   population -- map/splice_timemap_repairs.py already treats it as one worth a live count
+#   (`nr = len(doc["realms"])`), so it is not a metadata dict like the two above. But the file's
+#   CURRENT floor already watches three OTHER lists (alive, pins, slices; sum 38), and a
+#   COUNT_KEY declaration replaces watching entirely rather than adding to it -- pointing at
+#   `realms` would stop watching alive/pins/slices, which the same splice tool also treats as
+#   live populations (`ns = len(doc["slices"])`). Declaring either one trades away coverage of
+#   the other; this needs a decision about which population the floor should protect (or
+#   whether the mechanism should watch more than one key), not a guess made to close the count.
 
 
 def count(path):
