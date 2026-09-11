@@ -2337,6 +2337,22 @@
    }
   },
   {
+   "file": "corpus/t2_a_the_silmarillion_tables.txt",
+   "tier": 2,
+   "attribution": "J.R.R. Tolkien -- The Silmarillion's five genealogical plates (pp. 446-453), read from the page images by this archive; drawn by Christopher Tolkien",
+   "note": "SIX FAMILY TREES ON FIVE PLATES: The House of Finwe; the descendants of Olwe and Elwe; the House of Beor; the House of Hador of Dor-lomin and the People of Haleth (sharing one plate); the Sundering of the Elves (a diagram of peoples dividing, not a family tree, and not forced into one). 1,466 lines, NFC, 0 ligatures, in t1_a's own 83-column measure. Placed `t2_a_` rather than `t2_ocr_` because it was read by a person, not OCR'd -- tesseract was tried and rejected on this material (C867). KNOWN, NOT SILENT: the plate disagrees with two published edges (Fingon->Gil-galad and Finarfin->Orodreth against the archive's Orodreth->Gil-galad and Angrod->Orodreth on the Shibboleth form); that conflict is citable now rather than asserted, and is his to rule on when it comes (C867).",
+   "primary_text": true,
+   "present": true,
+   "bytes": 82336,
+   "corpus_file": "t2_a_the_silmarillion_tables.txt",
+   "words": 10482,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "(B) The Hobbit, or There and Back Again.pdf",
    "tier": 1,
    "attribution": "J.R.R. Tolkien (1937; rev. 1951, 1966)",
@@ -3096,6 +3112,22 @@
    "bytes": 71580,
    "corpus_file": "t1_c_appendix_tables_raw.txt",
    "words": 12795,
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "corpus/t1_c_appendix_c_hobbit_trees.txt",
+   "tier": 1,
+   "attribution": "J.R.R. Tolkien -- The Lord of the Rings, Appendix C (the four hobbit family trees), transcribed from the page images by this archive",
+   "note": "THE FOUR HOBBIT FAMILY TREES APPENDIX C PRINTS THAT THE ARCHIVE'S OTHER APPENDIX FILE DOES NOT HOLD: Baggins of Hobbiton, Took of Great Smials, Brandybuck of Buckland, and the Longfather-Tree of Master Samwise. Transcribed by hand from PDF pages 1124, 1127-1129 (book pages 1100, 1103-1105) of the archive's own registered LotR copy, rendered at 300 dpi with pdftoppm and read plate by plate, under his ruling C885 of 5 September 2026 -- OCR was refused on the register's own evidence, tesseract having read 1832 as 1882 on this material, and a genealogy is dates. 980 words. IT IS NOT A SEPARATE BOOK; a citation belongs to LotR App C. Backed up outside git under C886, the same ruling that backs up this file's sibling.",
+   "primary_text": true,
+   "present": true,
+   "bytes": 8952,
+   "corpus_file": "t1_c_appendix_c_hobbit_trees.txt",
+   "words": 980,
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -25930,8 +25962,22 @@
    "file": "t1_c_appendix_tables_raw.txt",
    "tier": 5,
    "content_tier": 1,
-   "attribution": "transcribed by this archive from The Lord of the Rings, Appendices A III, C and E",
+   "attribution": "transcribed by this archive from The Lord of the Rings, Appendices A III and E",
    "note": "Those tables are printed as images and survive no text extraction. They were recovered by rendering each plate with pdftoppm and reading it. OCR was tried and rejected: tesseract read Nain I's date as 1882 where the plate says 1832. Treat every figure here as a transcription that can be checked against the plate, not as extracted text."
+  },
+  {
+   "file": "t1_c_appendix_c_hobbit_trees.txt",
+   "tier": 5,
+   "content_tier": 1,
+   "attribution": "transcribed by this archive from The Lord of the Rings, Appendix C (the four hobbit family trees)",
+   "note": "Those four trees are printed as a single 136-dpi image across four plates and survive no text extraction. Recovered by rendering each plate with pdftoppm and reading it, under his ruling C885. OCR was tried and rejected on the same evidence as the sibling file: tesseract misreads dates on this material, and a genealogy is dates."
+  },
+  {
+   "file": "t2_a_the_silmarillion_tables.txt",
+   "tier": 5,
+   "content_tier": 1,
+   "attribution": "read by this archive from The Silmarillion's five genealogical plates, drawn by Christopher Tolkien",
+   "note": "Five plates carrying six family trees, printed as images with no text layer -- pdftotext returns one byte, a form feed. Read by a person, not OCR'd (C867). Registered content_tier 1 because the plates are Tolkien's own published genealogy; the main entry sits at tier 2 for a separate, deliberate reason -- his ruling C872, that no instrument can verify a name transcribed from a JPEG, so every name here defaults to [I-H] until a second reading exists."
   }
  ],
  "retrieval_summary": {
@@ -25939,14 +25985,14 @@
   "granularity": "`item` reaches this exact thing. `serial` reaches the periodical it belongs to, and the row's own title names the issue.",
   "by_tier": {
    "1": {
-    "total": 36,
+    "total": 37,
     "with_path": 19,
-    "unrecorded": 17
+    "unrecorded": 18
    },
    "2": {
-    "total": 29,
+    "total": 30,
     "with_path": 11,
-    "unrecorded": 18
+    "unrecorded": 19
    },
    "3": {
     "total": 1429,
@@ -25960,14 +26006,14 @@
    }
   },
   "by_kind": {
-   "unrecorded": 1011,
+   "unrecorded": 1013,
    "isbn": 38,
    "url": 404,
    "issn": 52
   },
-  "total": 1505,
+  "total": 1507,
   "with_path": 494,
-  "unrecorded": 1011
+  "unrecorded": 1013
  },
  "rule": "Where two sources disagree, the lower tier number wins. A tier-5 file is corrected by any tier above it. Tolkien's own words quoted inside a tier-2 book carry tier-1 authority; the editor's framing does not.",
  "limits": [
