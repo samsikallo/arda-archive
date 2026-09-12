@@ -779,8 +779,19 @@ svg#bmap > g > text{fill:#6d5f47 !important}
 :root[data-theme="dark"] .book{ --a-ink:#3a3226; --a-mut:#6b5c44; --a-line:#b0a58e }
 :root[data-theme="dark"] .book :is(.cite,.hit .vol){ color:var(--a-mut) !important }
 
+/* `a:not(.cx-thumb):not(.tab)` -- C482, 12 Sep 2026. The volume/section rails
+   (`nav.cx-rail* > a.cx-thumb`, `nav#cx-volume-rail > a.tab`) carry their OWN always-dark
+   background (codex-object.css's `--tab-N`/`--cx-hue` gradients) and their own explicit
+   `color:#d9dee7`/`#fff`, unrelated to the reader's theme choice -- but this blanket rule's
+   bare `a` outranked them by `!important` alone, painting `--ink`'s dark-brown fallback over
+   an equally dark background. MEASURED: 1.00:1-1.63:1 ratio (needs 4.5:1) on exactly those
+   rails, contrast_check's worst pairs. `<a class="tab">` exists ONLY as these bookmark links
+   (verified: `git -C . grep 'class="tab"'` finds it nowhere else as an anchor -- the
+   `<span class="tab">` sub-nav on corpus.html/realms.html/etc. is a different element the
+   selector never matched). Excluding both restores their own colour without touching real
+   book-leaf prose, which is what this rule exists to keep theme-following. */
 :root[data-theme="dark"] .book :is(p,li,td,th,dd,dt,label,small,blockquote,
-  h1,h2,h3,h4,h5,h6,a,.gl,.corr,.n,.toc a,.wrap){ color:var(--ink,#3d3430) !important }
+  h1,h2,h3,h4,h5,h6,a:not(.cx-thumb):not(.tab),.gl,.corr,.n,.toc a,.wrap){ color:var(--ink,#3d3430) !important }
 
 :root[data-theme="dark"] .book :is(.rubric,.mark,.rm,.manicule,.marg b,.struck .why){
   color:var(--rubric,#bf3637) !important }

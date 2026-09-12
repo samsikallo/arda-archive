@@ -966,6 +966,37 @@ main.card{ max-width:min(1480px,85vw); margin:0 auto 48px; background:var(--vell
 :root[data-codex-object="on"] .book .card .no{
   box-shadow:none !important; border-radius:0 !important; }
 
+/* `color:var(--n-ink)` -- C482, 12 Sep 2026. main.card strips its own background here, so its
+   REMAINING content (after the hidden h1/p/cite) floats on the scene backdrop behind body
+   (codex-backdrops.css's `body{background-color:#090a0c}`, fixed regardless of `data-theme`),
+   and nav.js's injected `footer#a-legal` plus codex.js's injected `#cx-plaque` (codex.js:114)
+   are two more plain siblings of .book/main.card on the same body, sharing the same ground.
+   NONE OF THE THREE DECLARES ITS OWN INK, so all three kept inheriting whichever of arda.css's
+   `--a-ink` (follows `data-theme`) or codex-object.css's base `body{color:var(--ink)}` (fixed at
+   #3d3430, the book-PAGE ink meant for a cream ground) happened to win the cascade -- both wrong
+   for a permanently dark ground in light theme.
+
+   THE FIRST FIX ONLY SET `color` DIRECTLY AND CAUGHT LESS THAN HALF THE POPULATION. `.cite`,
+   `.mut`-styled spans and citation rows inside this content set their OWN `color:var(--a-mut)`
+   (contrast_check's actual worst offender here: 205 of ~300 remaining nodes on one route alone),
+   which overrides an ancestor's plain `color` and was untouched by it. THE GENERAL FIX, same
+   shape as `.book`'s own dark-mode exception four screens up (`--a-ink`/`--a-mut`/`--a-line`
+   re-declared locally): redeclare the CUSTOM PROPERTIES themselves here, to `:root[data-theme=
+   "dark"]`'s own values (line 419) -- so every rule anywhere that reads `var(--a-ink)` or
+   `var(--a-mut)` resolves correctly without this file having to chase each one down by selector.
+
+   A BLANKET `body{...}` REDECLARATION WAS TRIED FIRST AND MEASURED WORSE (485 -> 495 failing
+   nodes): `.book`'s own light-theme content has no explicit override either, so it inherits too,
+   and only read correctly by coincidence (codex-object.css's `--ink`, #3d3430, sits close enough
+   to arda.css's `--a-ink`, #3a3226, for cream-on-cream). Redeclaring at body flipped `.book`'s
+   ink to the value meant for the dark scene, painting it on its own parchment leaves -- so this
+   is scoped to exactly the three elements proven to sit on that scene and nowhere `.book` reaches.
+   `--rubric` (used by `.mark`/`[C]`-style badges here) and default-blue `<a>` links are BOTH
+   ALSO measured failing against this ground in BOTH themes already (`3.05:1 #bf3637 on #221c15`
+   appears in the dark-theme census too) -- pre-existing debt unrelated to the light/dark
+   asymmetry this fix targets, left for its own pass rather than folded in here. */
+:root[data-codex-object="on"] :is(main.card, footer#a-legal, #cx-plaque){
+  --a-ink:#e8dcc0; --a-mut:#b9a883; --a-line:#5a4c32; color:var(--a-ink); }
 :root[data-codex-object="on"] main.card{
   background:none; border:0; box-shadow:none; padding:0; margin:6px auto 40px;
   max-width:min(1480px,85vw); text-align:center; }
