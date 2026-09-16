@@ -773,6 +773,17 @@ body{
   background:linear-gradient(180deg,rgba(0,0,0,.18),rgba(0,0,0,.30));
   border:1px solid rgba(0,0,0,.34); border-radius:3px;
   color:var(--gold,#c9a227); font:400 26px/1 'EB Garamond',Georgia,serif;
+  /* FIRST THEORY, 16 Sep 2026, WRONG, CORRECTED THE SAME LEG: removing this `opacity:.34`
+     entirely was tried first, on the reasoning that whole-element opacity blends the glyph and
+     its background toward the same backdrop together (a real CSS compositing fact). It did NOT
+     fix the reported dark@phone 1.00:1 fault -- re-tested live and the pair was unchanged, because
+     the real cause was a THREE-RULE CASCADE COLLISION in arda.css (see the dark-theme override
+     just below and task #482 for the full account), not this opacity. Removing it ALSO
+     introduced a NEW light@phone regression (1.14:1, `#a47741` on `#928970`, measured live)
+     that had not existed before, because gold at full opacity against that theme's own backdrop
+     has less margin than gold diluted toward it. RESTORED here for light theme; the dark-theme
+     override below sets its own `opacity:1 !important` so dark theme keeps the fix without
+     light theme paying for it. */
   opacity:.34; transition:opacity .18s ease, background .18s ease; z-index:12; }
 :root[data-codex-object="on"] .book .turn:hover,
 :root[data-codex-object="on"] .book .turn:focus-visible{ opacity:1; background:linear-gradient(180deg,rgba(0,0,0,.30),rgba(0,0,0,.44)); }

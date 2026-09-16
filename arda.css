@@ -817,6 +817,33 @@ svg#bmap > g > text{fill:#6d5f47 !important}
 :root[data-theme="dark"] .book :is(.tab,.chip,.tag,.pill,.n,.k,.e,.card,.law,.panel,.box,.strip,
   .frame,.seg button,button){ background-color:transparent !important }
 
+/* `.turn` IS A REAL EXCEPTION TO THE BLANKET RULE ABOVE, NAMED HERE SO IT SURVIVES THE NEXT
+   READ OF IT. Measured live via getComputedStyle(), 16 Sep 2026, contrast_check.py's own
+   1.00:1 finding on `div.book > button.turn.turn-next > span`: THREE rules were fighting over
+   one element -- the generic `:root[data-theme="dark"] button{...color:var(--n-ink)!important}`
+   two rules above this comment's OWN neighbourhood (arda.css, the running-text-on-dark-chip
+   pair `--n-ink`/`--n-raise`) wins `color` over `.turn`'s own non-important
+   `color:var(--gold)` (codex-object.css) by `!important` alone, regardless of specificity; the
+   blanket rule immediately above wins `background-color` (higher specificity, also
+   `!important`), and the generic button rule's own `background:var(--n-raise)` SHORTHAND
+   silently zeroes `background-image` too, since nothing else claims that longhand. Net effect:
+   a light "read on a dark chip" ink (`--n-ink`, #e6dcc2) painted on a FULLY TRANSPARENT
+   background -- and `.book`'s own leaf stays PARCHMENT-toned even in the night theme (the
+   comment above `:root[data-theme="dark"] .book{ color:var(--ink...) }` two screens up
+   already established this for running text; `.turn` was simply never added to that list).
+   `--n-ink` was never wrong for a UI chip; it was applied to a button that isn't sitting on one.
+   THE FIX GIVES `.turn` ITS OWN CHIP so `--n-ink` becomes correct again, rather than fighting
+   the generic rule for a color that assumes a surface `.turn` does not have. Specificity is
+   deliberately `button.turn` (not bare `.turn`) to tie the blanket rule above on the
+   `(attr,class,type)` count and win on SOURCE ORDER, the same defence used everywhere else in
+   this file when two `!important` rules must be ordered on purpose rather than by accident. */
+:root[data-theme="dark"] .book button.turn{
+  background:var(--n-raise) !important; border-color:var(--n-line) !important;
+  color:var(--n-ink) !important; opacity:1 !important; }
+:root[data-theme="dark"] .book button.turn:hover,
+:root[data-theme="dark"] .book button.turn:focus-visible{
+  background:var(--n-card) !important; }
+
 /* CODEX-THUMBS-BEGIN */
 /* C57 · THE STEPPED THUMB-INDEX. Reasoning: map/gen_codex_thumbs.py, not here. */
 
