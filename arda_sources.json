@@ -265,9 +265,12 @@
    "corpus_file": "t3_barbara_strachey_journeys_of_frodo.txt",
    "words": 14874,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "0261102672"
+    ],
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t3_barbara_strachey_journeys_of_frodo.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -475,9 +478,12 @@
    "corpus_file": "t3_the_road_to_middle_earth_tom_shippey.txt",
    "words": 167545,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "9780007445189"
+    ],
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t3_the_road_to_middle_earth_tom_shippey.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -1670,12 +1676,12 @@
    "corpus_file": "t3_mallorn_45.txt",
    "words": 40680,
    "retrieval": {
-    "kind": "issn",
+    "kind": "isbn",
     "ids": [
-     "15473155"
+     "9781933202266"
     ],
-    "granularity": "serial",
-    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_45.txt). It reaches the periodical; this row's own title names the issue."
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t3_mallorn_45.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -1899,12 +1905,13 @@
    "corpus_file": "t3_mallorn_55.txt",
    "words": 37399,
    "retrieval": {
-    "kind": "issn",
+    "kind": "isbn",
     "ids": [
-     "03086674"
+     "019861134X",
+     "9780261102651"
     ],
-    "granularity": "serial",
-    "evidence": "the ISSN printed in this issue (corpus/t3_mallorn_55.txt). It reaches the periodical; this row's own title names the issue."
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t3_mallorn_55.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -2158,7 +2165,7 @@
    "file": "(K) The Road Goes Ever On - A Song Cycle.pdf",
    "tier": 1,
    "attribution": "J.R.R. Tolkien, music Donald Swann (1967; 2nd ed. 1978)",
-   "note": "THE MOST WANTED OF THE ABSENT, because the archive ALREADY CITES IT: The War of the Jewels refers the reader to 'The Road Goes Ever On, p. 61' for miruvórë, so the corpus depends on a book it does not hold. Published in Tolkien's lifetime and carrying his own commentary on Namárië and A Elbereth Gilthoniel -- the only place he glossed those two texts word by word. ARRIVED 2026-07-30 AND IS AN IMAGE-ONLY SCAN, 78pp with no text layer. The dependency this row was written about is therefore NOT resolved: the corpus still cites 'The Road Goes Ever On, p. 61' for miruvórë and still cannot read the page. Held, and uncitable until OCR'd and checked. EXTRACTION: SILENTLY MISSING — the words are on the page and only the text layer is absent, which is the sharpest thing that can be said about §1 today: the most wanted volume in this register arrived, and the citation that wanted it still cannot be followed.",
+   "note": "THE MOST WANTED OF THE ABSENT, because the archive ALREADY CITES IT: The War of the Jewels refers the reader to 'The Road Goes Ever On, p. 61' for miruvórë, so the corpus depends on a book it does not hold. Published in Tolkien's lifetime and carrying his own commentary on Namárië and A Elbereth Gilthoniel -- the only place he glossed those two texts word by word. ARRIVED 2026-07-30 AND IS AN IMAGE-ONLY SCAN, 78pp with no text layer. The dependency this row was written about is therefore NOT resolved: the corpus still cites 'The Road Goes Ever On, p. 61' for miruvórë. Held. EXTRACTION: OCR-DERIVED TEXT NOW EXISTS -- two independent digitisations, tesseract-read from the image-only scan and searchable (corpus/t1_ocr_k_the_road_goes_ever_on_a_song_cycle.txt, 23,035 words; a second digitisation, 12,168 words), but not checked against the plate and not a quotation until it is. A direct search for 'miruvórë' did not resolve in either OCR file, which may be an OCR/accent-normalisation gap rather than an absence -- the dependency this row was written about is not yet confirmed resolved, only no longer silently unreadable.",
    "primary_text": true,
    "present": true,
    "digitisation_of": "The Road Goes Ever On - A Song Cycle (J.R.R. Tolkien & Donald Swann, 1967)",
@@ -2175,9 +2182,12 @@
    "corpus_file": "t1_ocr_k_the_road_goes_ever_on_a_song_cycle.txt",
    "words": 23035,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "0345247337"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (scan page 5) -- SBN 345-24733-7 (the trailing '495' is the printed price, not part of the number), normalising to checksum-valid ISBN-10 0345247337 -- that page carries no text layer, so this was read directly off it by OCR, not the corpus extraction -- task #492, Auditor 76e6bd68c963"
    }
   },
   {
@@ -2223,9 +2233,13 @@
    "corpus_file": "t2_the_history_of_the_hobbit.txt",
    "words": 444467,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "9780007440825",
+     "9780007369669"
+    ],
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t2_the_history_of_the_hobbit.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -2254,7 +2268,7 @@
    "file": "The Art of The Hobbit.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien, ed. Wayne G. Hammond & Christina Scull (2011)",
-   "note": "As Pictures: the captions and commentary are the evidence, the plates are not republished. ARRIVED 2026-07-30 AND IS AN IMAGE-ONLY SCAN, 145pp. So the half of it this archive wanted -- the captions that date and place Tolkien's drawings -- is exactly the half it cannot read, while the half it may not publish is the half that came through perfectly. EXTRACTION: SILENTLY MISSING — the caption text is on the plates and has no text layer.",
+   "note": "As Pictures: the captions and commentary are the evidence, the plates are not republished. ARRIVED 2026-07-30 AND IS AN IMAGE-ONLY SCAN, 145pp. So the half of it this archive wanted -- the captions that date and place Tolkien's drawings -- is exactly the half it cannot read, while the half it may not publish is the half that came through perfectly. EXTRACTION: OCR-DERIVED TEXT NOW EXISTS -- tesseract-read from the image-only scan and searchable (corpus/t2_ocr_the_art_of_the_hobbit.txt, 26,107 words), but not checked against the plate and not a quotation until it is.",
    "primary_text": false,
    "present": true,
    "bound": 0,
@@ -2369,9 +2383,12 @@
    "corpus_file": "t1_b_the_hobbit_or_there_and_back_again.txt",
    "words": 96701,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "9780007322602"
+    ],
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t1_b_the_hobbit_or_there_and_back_again.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -2391,9 +2408,12 @@
    "corpus_file": "t1_c_the_lord_of_the_rings.txt",
    "words": 563525,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "9780061917806"
+    ],
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t1_c_the_lord_of_the_rings.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -2413,9 +2433,13 @@
    "corpus_file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
    "words": 213907,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "0261103628",
+     "9780007322572"
+    ],
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t1_d_unfinished_tales_of_numenor_and_middle_earth.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -2463,9 +2487,12 @@
    "corpus_file": "t1_f_the_children_of_hurin.txt",
    "words": 74809,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "9780547952109"
+    ],
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t1_f_the_children_of_hurin.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -2536,9 +2563,12 @@
    "corpus_file": "t1_2_the_book_of_lost_tales_part_two.txt",
    "words": 182143,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "0261102141"
+    ],
+    "granularity": "item",
+    "evidence": "printed on the copyright page of the copy this archive holds (scan page 6 of 520, 'ISBN 0 261 10214 1', and its barcode reading '9 780261 102149' on the facing page) -- that page carries no text layer, so this was read directly off it by 300dpi OCR, not the corpus extraction -- task #492, Auditor 76e6bd68c963"
    }
   },
   {
@@ -2735,9 +2765,13 @@
    "corpus_file": "t1_10_morgoths_ring.txt",
    "words": 209025,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "9780063358997",
+     "9780395680926"
+    ],
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t1_10_morgoths_ring.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -2891,9 +2925,12 @@
    "corpus_file": "t1_the_letters_of_j_r_r_tolkien.txt",
    "words": 220863,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "9780544363793"
+    ],
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t1_the_letters_of_j_r_r_tolkien.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -2964,9 +3001,13 @@
    "corpus_file": "t1_the_hobbit_illustrated.txt",
    "words": 105597,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "9780063347540",
+     "9780063347533"
+    ],
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t1_the_hobbit_illustrated.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -2985,9 +3026,13 @@
    "corpus_file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
    "words": 308243,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "9780008628765",
+     "9780008628789"
+    ],
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -3232,7 +3277,7 @@
    "file": "Alan_Lee_The_Lord_of_the_Rings_Sketchbook.pdf",
    "tier": 3,
    "attribution": "Alan Lee (2005)",
-   "note": "ALAN LEE'S OWN ACCOUNT OF ILLUSTRATING THE CENTENARY EDITION, in pictures and in words -- its jacket says so and I read that from the scan rather than assuming it -- it describes him revealing in pictures and in words how he made the watercolour paintings for the special centenary edition. NOT FILM CONCEPT ART, which is why it is tier 3 where The Art of The Lord of the Rings is tier 4: these are the authorised book illustrations, made to sit in harmony with Tolkien, which is what tier 3 says. THE PLATES ARE NOT REPUBLISHED. The artwork ruling of 29 July governs Tolkien's and Christopher's hands; a living illustrator's copyright is a stronger reason, not a weaker one. What the archive may use is his COMMENTARY -- how a scene was read before it was drawn -- with the picture named and not shown. 101 PAGE IMAGES AT UP TO 4344x2886 ARE HELD BESIDE IT in sources/t3-in-harmony/alan_lee_sketchbook_pages/, supplied by the owner because the PDF's own pages are lower resolution. They are the OCR source, not a publication set. EXTRACTION: SILENTLY MISSING -- 1 character a page; the PDF is image-only and the commentary is recoverable only from the page images.",
+   "note": "ALAN LEE'S OWN ACCOUNT OF ILLUSTRATING THE CENTENARY EDITION, in pictures and in words -- its jacket says so and I read that from the scan rather than assuming it -- it describes him revealing in pictures and in words how he made the watercolour paintings for the special centenary edition. NOT FILM CONCEPT ART, which is why it is tier 3 where The Art of The Lord of the Rings is tier 4: these are the authorised book illustrations, made to sit in harmony with Tolkien, which is what tier 3 says. THE PLATES ARE NOT REPUBLISHED. The artwork ruling of 29 July governs Tolkien's and Christopher's hands; a living illustrator's copyright is a stronger reason, not a weaker one. What the archive may use is his COMMENTARY -- how a scene was read before it was drawn -- with the picture named and not shown. 101 PAGE IMAGES AT UP TO 4344x2886 ARE HELD BESIDE IT in sources/t3-in-harmony/alan_lee_sketchbook_pages/, supplied by the owner because the PDF's own pages are lower resolution. They are the OCR source, not a publication set. EXTRACTION: OCR-DERIVED TEXT NOW EXISTS -- tesseract-read from the 101 page images and searchable (corpus/t3_ocr_alan_lee_the_lord_of_the_rings_sketchbook.txt, 104,259 words), but not checked against the plate and not a quotation until it is.",
    "primary_text": false,
    "present": true,
    "bound": 0,
@@ -3515,9 +3560,13 @@
    "corpus_file": "t3_the_complete_tolkien_companion.txt",
    "words": 242577,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "0312315457",
+     "9781466866454"
+    ],
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t3_the_complete_tolkien_companion.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -3840,9 +3889,12 @@
    "corpus_file": "t1_bilbos_last_song_jrr_tolkien.txt",
    "words": 710,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "9780385752961"
+    ],
+    "granularity": "item",
+    "evidence": "printed in the PDF's own front matter -- 'ISBN: 978-0-385-75296-1 (eBook)' -- which the custom plate-transcription in corpus/ omits entirely; read directly off the PDF's text layer with pdftotext, not the corpus extraction -- task #492, Auditor 76e6bd68c963"
    }
   },
   {
@@ -3910,9 +3962,13 @@
     "why": "the same edition, read from the epub rather than this PDF. Measured, not assumed: the two digitisations of the Revised and Expanded Letters give 308,243 words from the epub against 308,261 from the PDF, an 18-word difference across 308,000. The epub is the one extracted, so this row reports no text of its own -- and DUPLICATE_DIGITISATION in map/extract_corpus.py keeps it that way, because a register holding one edition twice is how the archive came to publish 13 contradictory attributions."
    },
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "nothing readable to read an identifier out of: this row's corpus text is absent or empty, so the held copy cannot be asked where it came from."
+    "kind": "isbn",
+    "ids": [
+     "9780008628765",
+     "9780008628789"
+    ],
+    "granularity": "item",
+    "evidence": "printed in the PDF's own front matter -- 'Source ISBN: 9780008628765' and 'Ebook Edition (c) November 2023 ISBN: 9780008628789' -- read directly off the PDF's text layer with pdftotext; this row's corpus extraction is deliberately empty (see the row's own note) because the same edition's text is already held through the EPUB -- task #492, Auditor 76e6bd68c963"
    }
   },
   {
@@ -5821,9 +5877,12 @@
    "corpus_file": "t1_k_the_road_goes_ever_on_a_song_cycle_2nd_digitisatio.txt",
    "words": 12168,
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "isbn",
+    "ids": [
+     "0345247337"
+    ],
+    "granularity": "item",
+    "evidence": "the SAME printed copyright page as the OCR digitisation above (SBN 345-24733-7), this being a second scan of the same physical edition -- read directly off it by OCR, not the corpus extraction, since this scan's own text layer is the book's musical notation, not its imprint page -- task #492, Auditor 76e6bd68c963"
    }
   },
   {
@@ -5902,7 +5961,7 @@
    "file": "Vinyar Tengwar 11.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "note": "EXTRACTION: OCR-DERIVED TEXT NOW EXISTS -- tesseract-read from the image-only scan and searchable, but not checked against the plate and not a quotation until it is. Held and OCR'd; nothing in this archive may cite it as Tolkien's own words until the OCR is verified against something.",
    "primary_text": true,
    "present": true,
    "bound": 0,
@@ -5926,7 +5985,7 @@
    "file": "Vinyar Tengwar 12.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "note": "EXTRACTION: OCR-DERIVED TEXT NOW EXISTS -- tesseract-read from the image-only scan and searchable, but not checked against the plate and not a quotation until it is. Held and OCR'd; nothing in this archive may cite it as Tolkien's own words until the OCR is verified against something.",
    "primary_text": true,
    "present": true,
    "bound": 0,
@@ -5950,7 +6009,7 @@
    "file": "Vinyar Tengwar 14.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "note": "EXTRACTION: OCR-DERIVED TEXT NOW EXISTS -- tesseract-read from the image-only scan and searchable, but not checked against the plate and not a quotation until it is. Held and OCR'd; nothing in this archive may cite it as Tolkien's own words until the OCR is verified against something.",
    "primary_text": true,
    "present": true,
    "bound": 0,
@@ -5974,7 +6033,7 @@
    "file": "Vinyar Tengwar 27.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "note": "EXTRACTION: OCR-DERIVED TEXT NOW EXISTS -- tesseract-read from the image-only scan and searchable, but not checked against the plate and not a quotation until it is. Held and OCR'd; nothing in this archive may cite it as Tolkien's own words until the OCR is verified against something.",
    "primary_text": true,
    "present": true,
    "bound": 0,
@@ -5998,7 +6057,7 @@
    "file": "Vinyar Tengwar 28.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "note": "EXTRACTION: OCR-DERIVED TEXT NOW EXISTS -- tesseract-read from the image-only scan and searchable, but not checked against the plate and not a quotation until it is. Held and OCR'd; nothing in this archive may cite it as Tolkien's own words until the OCR is verified against something.",
    "primary_text": true,
    "present": true,
    "bound": 0,
@@ -6025,7 +6084,7 @@
    "file": "Vinyar Tengwar 29.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "note": "EXTRACTION: OCR-DERIVED TEXT NOW EXISTS -- tesseract-read from the image-only scan and searchable, but not checked against the plate and not a quotation until it is. Held and OCR'd; nothing in this archive may cite it as Tolkien's own words until the OCR is verified against something.",
    "primary_text": true,
    "present": true,
    "bound": 0,
@@ -6049,7 +6108,7 @@
    "file": "Vinyar Tengwar 31.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "note": "EXTRACTION: OCR-DERIVED TEXT NOW EXISTS -- tesseract-read from the image-only scan and searchable, but not checked against the plate and not a quotation until it is. Held and OCR'd; nothing in this archive may cite it as Tolkien's own words until the OCR is verified against something.",
    "primary_text": true,
    "present": true,
    "bound": 0,
@@ -6073,7 +6132,7 @@
    "file": "Vinyar Tengwar 36.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "note": "EXTRACTION: OCR-DERIVED TEXT NOW EXISTS -- tesseract-read from the image-only scan and searchable, but not checked against the plate and not a quotation until it is. Held and OCR'd; nothing in this archive may cite it as Tolkien's own words until the OCR is verified against something.",
    "primary_text": true,
    "present": true,
    "bound": 0,
@@ -6100,7 +6159,7 @@
    "file": "Vinyar Tengwar 37.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something.",
+   "note": "EXTRACTION: OCR-DERIVED TEXT NOW EXISTS -- tesseract-read from the image-only scan and searchable, but not checked against the plate and not a quotation until it is. Held and OCR'd; nothing in this archive may cite it as Tolkien's own words until the OCR is verified against something.",
    "primary_text": true,
    "present": true,
    "bound": 0,
@@ -6127,7 +6186,7 @@
    "file": "Vinyar Tengwar 39.pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something. The issue containing Ósanwe-kenta, whose text the archive holds separately as a clean extract — so this scan can be OCR'd and CHECKED against a known-good text, which is how the cost of OCR was measured at all.",
+   "note": "EXTRACTION: OCR-DERIVED TEXT NOW EXISTS -- tesseract-read from the image-only scan and searchable, but not checked against the plate and not a quotation until it is. Held and OCR'd; nothing in this archive may cite it as Tolkien's own words until the OCR is verified against something. The issue containing Ósanwe-kenta, whose text the archive holds separately as a clean extract — so this scan was OCR'd and CHECKED against a known-good text, which is how the cost of OCR was measured at all.",
    "primary_text": true,
    "present": true,
    "bound": 0,
@@ -6154,7 +6213,7 @@
    "file": "Vinyar Tengwar 39 (2).pdf",
    "tier": 2,
    "attribution": "J.R.R. Tolkien and others, ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate",
-   "note": "EXTRACTION: SILENTLY MISSING -- an image-only scan with no text layer, so pdftotext returns nothing and the corpus file is empty. The words are ON THE PAGE; only the layer is absent, which is why this is missing rather than correctly empty. Held and not readable, so nothing in this archive may cite it until it is OCR'd and the OCR is checked against something. The owner's second, different scan of number 39, uploaded deliberately as a second chance at the same pages.",
+   "note": "EXTRACTION: OCR-DERIVED TEXT NOW EXISTS -- tesseract-read from the image-only scan and searchable, but not checked against the plate and not a quotation until it is. Held and OCR'd; nothing in this archive may cite it as Tolkien's own words until the OCR is verified against something. The owner's second, different scan of number 39, uploaded deliberately as a second chance at the same pages.",
    "primary_text": true,
    "present": true,
    "bound": 0,
@@ -21585,12 +21644,13 @@
    "text_only": true,
    "source_url": "https://www.elvish.org/elm/names.html",
    "retrieval": {
-    "kind": "url",
+    "kind": "isbn",
     "ids": [
-     "https://www.elvish.org/elm/names.html"
+     "0192812130",
+     "0198661908"
     ],
     "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_elm_names_html_2a74f4_htm.txt)"
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t3_elvishorg_elm_names_html_2a74f4_htm.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -26446,12 +26506,12 @@
    "text_only": true,
    "source_url": "https://www.elvish.org/legendarium/authors.html",
    "retrieval": {
-    "kind": "issn",
+    "kind": "isbn",
     "ids": [
-     "01936875"
+     "0313305307"
     ],
-    "granularity": "serial",
-    "evidence": "the ISSN printed in this issue (corpus/t3_elvishorg_legendarium_authors_html_d921d7_htm.txt). It reaches the periodical; this row's own title names the issue."
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t3_elvishorg_legendarium_authors_html_d921d7_htm.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -26466,12 +26526,12 @@
    "text_only": true,
    "source_url": "https://www.elvish.org/legendarium",
    "retrieval": {
-    "kind": "issn",
+    "kind": "isbn",
     "ids": [
-     "01936875"
+     "0313305307"
     ],
-    "granularity": "serial",
-    "evidence": "the ISSN printed in this issue (corpus/t3_elvishorg_legendarium_c3412b_htm.txt). It reaches the periodical; this row's own title names the issue."
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t3_elvishorg_legendarium_c3412b_htm.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -26486,12 +26546,12 @@
    "text_only": true,
    "source_url": "https://www.elvish.org/legendarium/errata.html",
    "retrieval": {
-    "kind": "issn",
+    "kind": "isbn",
     "ids": [
-     "01936875"
+     "0313305307"
     ],
-    "granularity": "serial",
-    "evidence": "the ISSN printed in this issue (corpus/t3_elvishorg_legendarium_errata_html_311275_htm.txt). It reaches the periodical; this row's own title names the issue."
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t3_elvishorg_legendarium_errata_html_311275_htm.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -26506,12 +26566,12 @@
    "text_only": true,
    "source_url": "https://www.elvish.org/legendarium/index.html",
    "retrieval": {
-    "kind": "issn",
+    "kind": "isbn",
     "ids": [
-     "01936875"
+     "0313305307"
     ],
-    "granularity": "serial",
-    "evidence": "the ISSN printed in this issue (corpus/t3_elvishorg_legendarium_index_html_e6f85b_htm.txt). It reaches the periodical; this row's own title names the issue."
+    "granularity": "item",
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t3_elvishorg_legendarium_index_html_e6f85b_htm.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -26607,13 +26667,12 @@
    "text_only": true,
    "source_url": "https://www.elvish.org/Tengwestie/articles/Bellet/noldplur.phtml",
    "retrieval": {
-    "kind": "url",
+    "kind": "isbn",
     "ids": [
-     "https://www.elvish.org/Tengwestie/articles/Bellet/noldplur.phtml",
-     "http://www.forodrim.org/daeron/md_plur.html"
+     "041528080X"
     ],
     "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_bellet_11705e_htm.txt)"
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t3_elvishorg_tengwestie_articles_bellet_11705e_htm.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -26628,14 +26687,12 @@
    "text_only": true,
    "source_url": "https://www.elvish.org/Tengwestie/articles/Bellet/noldplur.pdf",
    "retrieval": {
-    "kind": "url",
+    "kind": "isbn",
     "ids": [
-     "https://www.elvish.org/Tengwestie/articles/Bellet/noldplur.pdf",
-     "http://www.forodrim.org/daeron/md_plur.html",
-     "http://www.elvish.org/Tengwestie/articles/Bellet/noldplur.phtml"
+     "041528080X"
     ],
     "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_bellet_c48f68_htm.txt)"
+    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t3_elvishorg_tengwestie_articles_bellet_c48f68_htm.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -28351,27 +28408,11 @@
  ],
  "not_held": [
   {
-   "title": "Farmer Giles of Ham (1949)",
-   "tier": 1,
-   "attribution": "J.R.R. Tolkien, illus. Pauline Baynes",
-   "note": "A comic tale of Ham, its dragon Chrysophylax and the Little Kingdom. Not Middle-earth, and Tolkien's own fiction, so tier 1 by hand rather than by subject.",
-   "affects": "Nothing in the legendarium halls. It bears on Tolkien's use of philological joke and on the Baynes collaboration the archive already records for the marked sheet.",
-   "held": false
-  },
-  {
-   "title": "Tree and Leaf (1964)",
-   "tier": 1,
-   "attribution": "J.R.R. Tolkien",
-   "note": "The volume pairing 'On Fairy-Stories' with 'Leaf by Niggle'. THE ESSAY IS HELD -- it is in The Monsters and the Critics, verified 16 Aug -- so what is absent is 'Leaf by Niggle' and this volume's own pairing of the two, which is itself the argument.",
-   "affects": "Any statement about sub-creation as Tolkien framed it. The essay may be quoted from Monsters; the story may not be quoted at all.",
-   "held": false
-  },
-  {
    "title": "Tales from the Perilous Realm (2008 omnibus)",
    "tier": 1,
    "attribution": "J.R.R. Tolkien, ed. Christopher Tolkien",
-   "note": "The omnibus of the minor fiction: Roverandom, Farmer Giles of Ham, The Adventures of Tom Bombadil, Smith of Wootton Major and Leaf by Niggle. NOT the tier-3 study by Marjorie Burns whose filename is nearly the same and which this archive does hold.",
-   "affects": "It would close four declared absences at once, which is why it is worth naming separately.",
+   "note": "The omnibus of the minor fiction: Roverandom, Farmer Giles of Ham, The Adventures of Tom Bombadil, Smith of Wootton Major and Leaf by Niggle. NOT the tier-3 study by Marjorie Burns whose filename is nearly the same and which this archive does hold. Farmer Giles of Ham and Leaf by Niggle are independently held in full in The Tolkien Reader (corpus/t1_the_tolkien_reader.txt), so what this omnibus alone would still close is its own edition and Roverandom and Smith of Wootton Major.",
+   "affects": "It would close its remaining two declared absences (Roverandom, Smith of Wootton Major), which is why it is worth naming separately.",
    "held": false
   },
   {
@@ -28411,7 +28452,7 @@
    "tier": 2,
    "attribution": "ed. Elvish Linguistic Fellowship, by permission of the Tolkien Estate and with Christopher Tolkien's support",
    "note": "MOSTLY ANSWERED ON 2026-07-30, AND THIS ENTRY IS THE RECORD OF WHAT IT ASKED FOR. It used to name PE 11, 12, 13, 17, 18, 19 and 22 as the single largest body of primary Tolkien not held. Numbers 11, 13, 14, 15, 17 and 23 have since arrived and are registered above — so the Gnomish Lexicon, Early Noldorin and 'Words, Phrases and Passages' are on the shelf. STILL NOT HELD: the Qenya Lexicon (PE 12) and the Quenya phonology and verb structure (PE 16, 18, 19, 20, 21, 22). Giraudeau's derived lexicons at tier 3 give partial access to 12 and 21 and are not a substitute for either. The distinction this entry drew before the volumes came is still the important one: the five issues that arrived on 2026-07-24 are Volume 1, numbers 1-5, the 1971-74 fanzine of the Mythopoeic Linguistic Fellowship containing no Tolkien manuscript, and they remain at tier 3. That is a different publication under the same name. The modern series' text is Tolkien's and carries tier-1 authority; the journals are the Estate-permitted vehicle.",
-   "affects": "The languages hall above all. Its lexicon is built from the Etymologies (HoME V) and the published appendices; PE 17 and PE 22 would correct and greatly enlarge it. Until these are read, no entry in that hall should be presented as the whole of what Tolkien wrote.",
+   "affects": "The languages hall above all. Its lexicon is built from the Etymologies (HoME V) and the published appendices; PE 22 would correct and greatly enlarge it. Until it is read, no entry in that hall should be presented as the whole of what Tolkien wrote.",
    "held": false
   },
   {
@@ -28426,7 +28467,7 @@
    "title": "The Art of The Lord of the Rings (2015)",
    "tier": 2,
    "attribution": "Hammond & Scull",
-   "note": "Tolkien's own drawings, maps and designs for The Lord of the Rings, reproduced in full. ITS COMPANION, The Art of The Hobbit, ARRIVED 2026-07-30 and is registered above — as an image-only scan, so its captions are held and not yet readable either.",
+   "note": "Tolkien's own drawings, maps and designs for The Lord of the Rings, reproduced in full. ITS COMPANION, The Art of The Hobbit, ARRIVED 2026-07-30 and is registered above — OCR-derived text now exists for its captions (26,107 words, tesseract-read), though not yet checked against the plate.",
    "affects": "The gallery and the maps. His own cartography outranks any reconstruction the archive draws. Wanted for the captions and datings; under the artwork ruling the plates are not republished.",
    "held": false
   },
@@ -28476,18 +28517,18 @@
   "by_tier": {
    "1": {
     "total": 37,
-    "with_path": 19,
-    "unrecorded": 18
+    "with_path": 32,
+    "unrecorded": 5
    },
    "2": {
     "total": 30,
-    "with_path": 11,
-    "unrecorded": 19
+    "with_path": 12,
+    "unrecorded": 18
    },
    "3": {
     "total": 1429,
-    "with_path": 460,
-    "unrecorded": 969
+    "with_path": 463,
+    "unrecorded": 966
    },
    "4": {
     "total": 11,
@@ -28496,14 +28537,14 @@
    }
   },
   "by_kind": {
-   "unrecorded": 1013,
-   "isbn": 38,
-   "url": 404,
-   "issn": 52
+   "unrecorded": 996,
+   "isbn": 64,
+   "url": 401,
+   "issn": 46
   },
   "total": 1507,
-  "with_path": 494,
-  "unrecorded": 1013
+  "with_path": 511,
+  "unrecorded": 996
  },
  "rule": "Where two sources disagree, the lower tier number wins. A tier-5 file is corrected by any tier above it. Tolkien's own words quoted inside a tier-2 book carry tier-1 authority; the editor's framing does not.",
  "limits": [
