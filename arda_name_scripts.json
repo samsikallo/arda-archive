@@ -108,27 +108,27 @@
  "orthography_not_applied": [],
  "language_source": "Eldamo 0.8.13, Paul Strack, CC BY 4.0. [EXT]. It chooses a MODE and never a fact about Arda.",
  "counts_are": "measured against the denominator above on every run, never carried forward from a previous one",
- "n_routes": 1514,
- "n_named": 1513,
+ "n_routes": 1515,
+ "n_named": 1514,
  "n_no_name": 1,
- "n_tengwar_set": 1473,
+ "n_tengwar_set": 1474,
  "n_tengwar_mode_of_its_own_tongue": 210,
  "n_tengwar_applied": 0,
- "n_tengwar_general_use": 1263,
- "n_cirth_set": 1502,
+ "n_tengwar_general_use": 1264,
+ "n_cirth_set": 1503,
  "n_cirth_by_arrangement": {
-  "daeron": 1223,
+  "daeron": 1224,
   "moria": 270,
   "erebor": 9
  },
  "n_sarati_set": 0,
- "n_sarati_refused": 1513,
+ "n_sarati_refused": 1514,
  "n_in_no_script": 3,
  "n_by_language": {
   "Quenya": 212,
   "Sindarin or its predecessors": 530,
   "another tongue Eldamo names": 207,
-  "not recorded by Eldamo": 564
+  "not recorded by Eldamo": 565
  },
  "refused_letters": {
   "tengwar": {
@@ -44876,6 +44876,57 @@
     }
    },
    "says": "The archive sets the name 'sancho proudfoot' in the cirth, Angerthas Daeron mode; the sarati are refused for want of any shape-to-sound binding. Tolkien did not write this name in any of them.",
+   "conf": "[I-H]",
+   "conf_why": "computed-not-attested",
+   "src": "arda_scripts + arda_cirth + arda_cirth_codepoints"
+  },
+  "person/sandyman.html": {
+   "route": "person/sandyman.html",
+   "entityId": "sandyman",
+   "entityType": "person",
+   "title": "sandyman",
+   "name": "sandyman",
+   "hand": "the archive",
+   "transcription": "sandyman",
+   "language": null,
+   "language_cite": "not-established",
+   "people": "Hobbits",
+   "script_by_people": "cirth",
+   "script_by_people_basis": "arda_genealogy.json states the kindred of this person: r='B'",
+   "scripts": {
+    "tengwar": {
+     "set": true,
+     "text": "",
+     "cp": "U+E01C U+E010 U+E040 U+E004 U+E022 U+E011 U+E010 U+E040",
+     "mode": "General Use",
+     "rule_source": "tengwar-gu",
+     "basis": "general-use-outside-quenya",
+     "conf": "[I-H]"
+    },
+    "cirth": {
+     "set": true,
+     "text": "",
+     "cp": "U+E0A1 U+E0B1 U+E0A5 U+E0A7 U+E085 U+E0B1 U+E08B",
+     "certh": [
+      34,
+      48,
+      38,
+      39,
+      6,
+      48,
+      12
+     ],
+     "mode": "Angerthas Daeron",
+     "rule_source": "cirth",
+     "basis": "arrangement-of-its-subject",
+     "conf": "[I-H]"
+    },
+    "sarati": {
+     "set": false,
+     "why": "sarati-refused"
+    }
+   },
+   "says": "The archive sets the name 'sandyman' in the tengwar, General Use mode and in the cirth, Angerthas Daeron mode; the sarati are refused for want of any shape-to-sound binding. Tolkien did not write this name in any of them.",
    "conf": "[I-H]",
    "conf_why": "computed-not-attested",
    "src": "arda_scripts + arda_cirth + arda_cirth_codepoints"
