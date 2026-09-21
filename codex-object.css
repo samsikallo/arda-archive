@@ -76,7 +76,14 @@ body{
 .book{
 
   position:relative; flex:0 0 auto;
-  
+  /* C423, 26 August 2026: his ruled remedy for the 44px touch-target minimum on
+     BUTTON.turn.turn-next overhanging the book's own edge by 7px at narrow widths.
+     He was shown four remedies and chose this one -- it keeps the full 44px target
+     (declined shrinking it, which would break the accessibility minimum on the one
+     device class the control exists for) and clips the overhang at the book's own
+     edge, where a page edge belongs. */
+  overflow-x: clip;
+
   --book-pad: 24px;
   --fit-h: calc(100dvh - var(--a-hdr-h, 0px) - var(--book-pad));
 
