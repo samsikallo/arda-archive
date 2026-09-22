@@ -1,0 +1,102 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="icon-192.png"><title>Search — the Arda Archive</title>
+<meta name="description" content="Search every name, place, word and event the Arda Archive holds. All matches are shown and paginated into leaves; nothing is capped."><meta property="og:title" content="Search the Arda Archive">
+<meta property="og:description" content="Search every name, place, word and event the Arda Archive holds. All matches are shown and paginated into leaves; nothing is capped."><meta property="og:type" content="website">
+<meta property="og:url" content="https://samsikallo.github.io/arda-archive/search.html"><meta property="og:image" content="icon-512.png">
+<meta name="twitter:card" content="summary"><link rel="canonical" href="https://samsikallo.github.io/arda-archive/search.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SearchResultsPage", "name": "Search the Arda Archive", "description": "Search every name, place, word and event the Arda Archive holds. All matches are shown and paginated into leaves; nothing is capped.", "url": "https://samsikallo.github.io/arda-archive/search.html", "isPartOf": {"@type": "Dataset", "name": "The Arda Archive", "url": "https://samsikallo.github.io/arda-archive/"}}</script>
+<link rel="stylesheet" href="arda.css">
+<style>body{margin:0;color:#3a3226;font:15px/1.6 Georgia,serif;background:#efe6cd}
+.hd{background:linear-gradient(#221c15,#12100d);color:#e2cf96;padding:14px 22px;font-variant:small-caps;letter-spacing:.12em;font-size:19px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.hd a{color:#c9b06a;text-decoration:none;font-size:12px;letter-spacing:0;font-variant:normal}
+.card{max-width:760px;margin:26px auto;background:linear-gradient(#fdfaf2,#f7f0de);border:1px solid #b0a58e;border-radius:12px;padding:20px 26px;box-shadow:0 3px 10px rgba(60,40,10,.14)}
+h1{font-variant:small-caps;font-weight:normal;color:#5a4626;font-size:24px;margin:.1em 0}
+#sq{width:100%;box-sizing:border-box;font:16px Georgia,serif;color:#3a3226;background:#fffdf6;border:1px solid #a8853c;border-radius:10px;padding:9px 13px}
+.folio{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;border-top:1px solid rgba(176,165,142,.55);border-bottom:1px solid rgba(176,165,142,.55);margin:16px 0 4px;padding:6px 2px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#9a8a61}
+.folio .n{font-variant:small-caps;letter-spacing:.06em;text-transform:none;font-size:13px;color:#5a4626}
+.grp{padding:9px 2px 2px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#9a8a61;border-top:1px solid rgba(176,165,142,.4)}
+.hit{display:block;padding:6px 4px;text-decoration:none;color:#3a3226;border-radius:6px}
+.hit:hover,.hit:focus{background:#f3ebd6;outline:2px solid #c9a227}
+.hit b{font-variant:small-caps;font-weight:normal;font-size:16px}
+.hit span{font-size:12px;color:#7a6a50;font-style:italic}
+.turn{display:flex;gap:10px;align-items:center;justify-content:center;margin:18px 0 2px;flex-wrap:wrap}
+.turn button{font:14px Georgia,serif;background:#efe0bd;border:1px solid #a8853c;border-radius:12px;padding:6px 16px;color:#5a4626;cursor:pointer}
+.turn button[disabled]{opacity:.42;cursor:default}
+.note{color:#7a6a50;font-style:italic;padding:10px 2px}</style></head>
+<body><div class="hd" id="hdr"><a href="index.html">⌂ the Arda Archive</a> &nbsp; Search
+<span style="flex:1"></span><nav id="ardanav" aria-label="Archive halls"></nav></div>
+<a class="a-skip" href="#main">skip to content</a>
+<main class="card" id="main">
+<h1>Search the archive</h1>
+<p class="cite">Every match is listed. <b>Nothing is capped</b> — a common name would otherwise
+silently lose most of its matches, which is the reason this leaf exists rather than the
+forty-result box on the front page.</p>
+<form id="sf" role="search" onsubmit="return false"><label class="a-skip" for="sq">Search the archive</label>
+<input id="sq" type="search" autocomplete="off" spellcheck="false" placeholder="a name, a place, a word…"></form>
+<div class="folio" id="folio" hidden><span class="n" id="fcount"></span><span id="fleaf"></span></div>
+<div id="res" aria-live="polite"></div>
+<div class="turn" id="turn" hidden>
+  <button id="prev" type="button">← previous leaf</button>
+  <span id="leafn" class="cite"></span>
+  <button id="next" type="button">next leaf →</button>
+</div>
+<div class="cite" style="margin-top:16px">Part of the Arda Archive — a corpus-first index of Tolkien's legendarium; claims are cited or marked how far they are inferred, silences are declared, and the colophon prints how many claims carry neither.</div>
+</main>
+<script src="codex-search.js"></script>
+<script>
+// THE COUNT IS COUNTED, NEVER TYPED. index.html's own caption drifted three times -- 1,890 then
+// 3,285 against a file holding 4,686 -- because a literal cannot go red. Nothing here states a
+// size; every number on this leaf is read from the data at the moment it is shown.
+var TICON={person:"👤",event:"⏳",battle:"⚔",blade:"🗡",host:"🛡",place:"📍",journey:"🐎",word:"✒",element:"✳",root:"√",phrase:"❝",people:"👥"};
+var TLBL={person:"Family Trees & Records",event:"Chronology",battle:"Armies",blade:"Named Blades",host:"Hosts of the Ages",place:"Living Map",journey:"Journeys",word:"Lexicon",element:"Name-elements",root:"Etymologies",phrase:"Phrasebook",people:"Peoples"};
+var PER=24;
+var IDX=null,HITS=[],LEAF=0,LOADED=false;
+var q=document.getElementById("sq"),res=document.getElementById("res"),folio=document.getElementById("folio"),
+    fcount=document.getElementById("fcount"),fleaf=document.getElementById("fleaf"),
+    turn=document.getElementById("turn"),leafn=document.getElementById("leafn"),
+    prev=document.getElementById("prev"),next=document.getElementById("next");
+
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+
+function draw(){
+  if(!HITS.length){turn.hidden=true;folio.hidden=true;return;}
+  var leaves=Math.ceil(HITS.length/PER);
+  if(LEAF>=leaves)LEAF=leaves-1; if(LEAF<0)LEAF=0;
+  var from=LEAF*PER, page=HITS.slice(from,from+PER), html="", lastT=null;
+  for(var i=0;i<page.length;i++){
+    var e=page[i];
+    if(e[0]!==lastT){html+='<div class="grp">'+(TICON[e[0]]||"")+" "+esc(TLBL[e[0]]||e[0])+"</div>";lastT=e[0];}
+    html+='<a class="hit" href="'+esc(e[3])+'"><b>'+esc(e[1])+'</b> <span>— '+esc(e[2])+"</span></a>";
+  }
+  res.innerHTML=html;
+  // THE COUNT ON THE FOLIO, which is the half of his ruling a results list alone would miss.
+  fcount.textContent=HITS.length.toLocaleString("en-US")+(HITS.length===1?" match":" matches");
+  fleaf.textContent="leaf "+(LEAF+1)+" of "+leaves+" · showing "+(from+1)+"–"+(from+page.length);
+  folio.hidden=false;
+  leafn.textContent=(LEAF+1)+" / "+leaves;
+  prev.disabled=(LEAF===0); next.disabled=(LEAF>=leaves-1);
+  turn.hidden=(leaves<=1);
+}
+
+function run(){
+  if(!LOADED){return;}
+  if(!IDX){res.innerHTML='<div class="note">'+ArdaSearch.FAILED_TO_ASK+"</div>";folio.hidden=true;turn.hidden=true;return;}
+  if(q.value.trim().length<2){res.innerHTML="";folio.hidden=true;turn.hidden=true;return;}
+  HITS=ArdaSearch.search(IDX,q.value);   // EVERY match. No slice.
+  LEAF=0;
+  if(!HITS.length){res.innerHTML='<div class="note">'+ArdaSearch.FOUND_NOTHING+"</div>";folio.hidden=true;turn.hidden=true;return;}
+  draw();
+  try{history.replaceState(null,"","?q="+encodeURIComponent(q.value.trim()));}catch(_){}
+}
+
+fetch("arda_search.json").then(function(r){return r.json();}).then(function(d){
+  IDX=ArdaSearch.prepare(d); LOADED=true; run();
+}).catch(function(){ IDX=null; LOADED=true; run(); });
+
+q.addEventListener("input",run);
+prev.addEventListener("click",function(){LEAF--;draw();window.scrollTo(0,0);});
+next.addEventListener("click",function(){LEAF++;draw();window.scrollTo(0,0);});
+// ARRIVING WITH A QUERY ALREADY ASKED -- the front-door box links here, so the leaf must answer
+// on load rather than waiting for a keystroke that has already happened.
+(function(){var m=/[?&]q=([^&]*)/.exec(location.search); if(m){try{q.value=decodeURIComponent(m[1].replace(/\+/g," "));}catch(_){}}})();
+</script></body></html>
