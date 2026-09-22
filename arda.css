@@ -982,40 +982,22 @@ svg#bmap > g > text{fill:#6d5f47 !important}
      of the fixed-height board C68 repaired: `volume-i.html`, the one route that always survived
      a phone because `height:auto` was already scoped to it, carried the same 273px.
 
-     `flex-wrap:wrap` is what actually gave the notice its own row on 26 August 2026, taking the
-     sampled horizontal scroll to 0 at both widths -- but `.book{flex-direction:column}`
-     (codex-object.css:1050) had already been unconditional, at every width, for five days by
-     then (commit 714acf73b, 21 August), and this fix was written and measured without noticing.
-     `flex-wrap` and `flex:0 0 100%` are MAIN-AXIS reasoning -- correct for the row direction the
-     prose above describes, wrong for the column direction actually in force. Re-measured 21
-     September 2026: with `.book` column, `flex-wrap:wrap` does not give the notice "its own row"
-     -- it gives it its own COLUMN, wrapping `.spread` sideways into a second one, off the right
-     edge. Sampled 34 routes (ledger/dossier/codex/flat, stratified) at 430px: 33 of 34 scrolled
-     not 7px but 340px, `.spread` itself shifted right by exactly its own rendered width (370px)
-     -- confirmed live via computed style and the flex-wrap toggle, not inferred. `flex-wrap` is
-     now `nowrap`: in column direction the DOM's own source order (`.cx-omission` already precedes
-     `.spread`) gives the notice its own row with no wrap trick needed at all. Re-sampled the same
-     34 after: 32 of 34 back to the pre-existing 7px (C423's residue, unrelated and still open),
-     0 regressions, `codex-proto.html` (never touched, the one route that stayed clean throughout)
-     unchanged at 0. The 34th, `person/ciryandil.html`, carries a THIRD, separate fault -- an
-     off-screen `#cx-volume-rail` at negative left -- not touched here, not this fix's scope.
+     `flex-wrap:wrap` is what actually gives the notice its own row, and it takes the sampled
+     horizontal scroll to 0 at both widths with the leaves untouched -- 220 leaves measured, all
+     still 100.00% of their text inside their own leaf. It is confined to this media block and
+     to pages wearing the object, and above 1000px the declaration is `display:none`, leaving
+     `.spread` as the container's only in-flow child, where wrapping cannot change anything.
      `align-self:flex-start` is the second half: a flex line stretches its items to the line's
      cross size by default, which drew this four-line notice as a 326x1713 box. */
-  :root[data-codex-object="on"] .book{ flex-wrap:nowrap; }
+  :root[data-codex-object="on"] .book{ flex-wrap:wrap; }
 
   /* C62 REQUIRES THE OMISSION TO BE DECLARED IN THE PAGE, not merely in the record. */
   :root[data-codex-object="on"] .book > .cx-omission{
     /* THE BOOK IS A FLEX CONTAINER, so a plain block child becomes a COLUMN beside the spread.
        Measured on the 430px screenshot: the declaration rendered about 60px wide, one or two
-       words a line -- itself already a symptom of the same column/row confusion: `flex:0 0 100%`
-       is a MAIN-AXIS basis, so in the column direction actually in force it sized the notice's
-       HEIGHT to 100%, not its width, and 100% of an indefinite height doesn't collapse to auto in
-       practice here -- it inflated a 159-character, three-line notice to 1500-2700px tall on the
-       34-route sample re-measured 21 September 2026. `flex:0 0 auto` lets it size to its own
-       content on the main axis (height, in column direction) while `width:100% !important` below
-       still does the cross-axis (width) job the old comment actually wanted. Re-measured: 64.6px
-       tall on every sampled route, full 370px width, unchanged from before this edit. */
-    display:block !important; flex:0 0 auto !important; width:100% !important;
+       words a line. flex-basis 100% sizes it to the full row; the `flex-wrap` above is what
+       puts it ON a row of its own, and `align-self` stops the row stretching it. */
+    display:block !important; flex:0 0 100% !important; width:100% !important;
     align-self:flex-start;
     box-sizing:border-box; order:-1;
     margin:0 0 10px; padding:7px 10px;

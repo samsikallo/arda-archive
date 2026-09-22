@@ -140,6 +140,23 @@ body{
      the width that the available HEIGHT can afford at the same ratio. Whichever of the three
      binds, binds. `--fit-h` is the room left after the header and the page's own padding. */
   position:relative; flex:0 0 auto;
+  /* C423, 26 August 2026 -- HIS RULED REMEDY, and it is here by his named authorisation of
+     22 September 2026. BUTTON.turn.turn-next overhung the book's own edge by 7px at narrow
+     widths. He was shown four remedies and chose this one: it keeps the full 44px touch target
+     (he declined shrinking it, which would break the accessibility minimum on the one device
+     class the control exists for) and clips the overhang at the book's own edge, where a page
+     edge belongs.
+     WHY IT IS IN THE PROTO AND NOT IN codex-object.css, WHICH IS WHERE IT WAS FIRST WRITTEN:
+     `write_object_css` extracts THIS FILE'S ONE STYLE ELEMENT verbatim -- "the proto stays the
+     source of the look" -- so a rule living only in the generated file dies on the next --apply,
+     (and the element is NOT named in the ordinary way in this sentence on purpose: the generator
+     counts those tags to prove the proto carries exactly one, so prose about it would be counted
+     as a second and refuse the build -- a guard tripped by the note explaining it),
+     silently, with a success message. From 21 to 22 September the only thing standing between
+     C423 and that deletion was `_refuse_if_it_would_drop_work` refusing every rebuild, which
+     also blocked C1035. A ruling that survives because a guard is stuck is not safe; it is
+     merely not lost yet. */
+  overflow-x: clip;
   /* C276 -- HE RULED THE BOOK FILLS THE SCREEN. `--a-hdr-h` is set to 0px at :root in arda.css
      and only a page carrying a sticky header overwrites it, so the fallback in the old
      `var(--a-hdr-h, 140px)` NEVER APPLIED: this was already 100dvh - 112px. The 112 was the

@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="en" data-theme="light" data-hand="authentic" data-codex="off" data-codex-object="on" data-scene="library"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" href="icon-192.png"><title>Search — the Arda Archive</title>
 <meta name="description" content="Search every name, place, word and event the Arda Archive holds. All matches are shown and paginated into leaves; nothing is capped."><meta property="og:title" content="Search the Arda Archive">
 <meta property="og:description" content="Search every name, place, word and event the Arda Archive holds. All matches are shown and paginated into leaves; nothing is capped."><meta property="og:type" content="website">
@@ -22,10 +22,10 @@ h1{font-variant:small-caps;font-weight:normal;color:#5a4626;font-size:24px;margi
 .turn{display:flex;gap:10px;align-items:center;justify-content:center;margin:18px 0 2px;flex-wrap:wrap}
 .turn button{font:14px Georgia,serif;background:#efe0bd;border:1px solid #a8853c;border-radius:12px;padding:6px 16px;color:#5a4626;cursor:pointer}
 .turn button[disabled]{opacity:.42;cursor:default}
-.note{color:#7a6a50;font-style:italic;padding:10px 2px}</style></head>
+.note{color:#7a6a50;font-style:italic;padding:10px 2px}</style><!--ARDA:CODEX-HEAD--><link rel="stylesheet" href="codex-object.css"><link rel="stylesheet" href="codex-backdrops.css"><script src="codex-turn.js" defer></script><script src="codex-hall.js" defer></script><!--/ARDA:CODEX-HEAD--></head>
 <body><div class="hd" id="hdr"><a href="index.html">⌂ the Arda Archive</a> &nbsp; Search
 <span style="flex:1"></span><nav id="ardanav" aria-label="Archive halls"></nav></div>
-<a class="a-skip" href="#main">skip to content</a>
+<a class="a-skip" href="#main">skip to content</a><!--ARDA:CODEX-BODY--><div class="book" data-spread="flat" data-turn-prev="quiz.html" data-turn-next="theindex.html"><div class="plaque">The Arda Archive <i>·</i> Volume VII <i>·</i> Search</div><nav class="tabs" aria-label="Volumes"><a class="tab" href="volume-i.html">Atlas and Realms</a><a class="tab" href="volume-ii.html">Annals</a><a class="tab" href="volume-iii.html">Peoples and Houses</a><a class="tab" href="volume-iv.html">Living World</a><a class="tab" href="volume-v.html">Tongues</a><a class="tab" href="volume-vi.html">Lore and First Principles</a><a class="tab" href="volume-vii.html" aria-current="page">Index</a></nav><div class="spread"><section class="leaf wide" data-hall="search.html"><h2 class="rubric">Search</h2><p class="lede">the apparatus of the archive</p><img class="orn-leaf" src="ornament/collected/walters-w132-000033-filler.webp" width="76" height="54" alt="" loading="lazy" decoding="async"><div class="hall-slot" data-hall-slot=""></div></section></div><div class="clasp" role="presentation"></div><div class="folio">Volume VII</div></div><!--/ARDA:CODEX-BODY-->
 <main class="card" id="main">
 <h1>Search the archive</h1>
 <p class="cite">Every match is listed. <b>Nothing is capped</b> — a common name would otherwise
@@ -42,6 +42,7 @@ forty-result box on the front page.</p>
 </div>
 <div class="cite" style="margin-top:16px">Part of the Arda Archive — a corpus-first index of Tolkien's legendarium; claims are cited or marked how far they are inferred, silences are declared, and the colophon prints how many claims carry neither.</div>
 </main>
+<script>window.ARDA_BASE=""</script><script src="nav.js"></script>
 <script src="codex-search.js"></script>
 <script>
 // THE COUNT IS COUNTED, NEVER TYPED. index.html's own caption drifted three times -- 1,890 then
@@ -99,4 +100,4 @@ next.addEventListener("click",function(){LEAF++;draw();window.scrollTo(0,0);});
 // ARRIVING WITH A QUERY ALREADY ASKED -- the front-door box links here, so the leaf must answer
 // on load rather than waiting for a keystroke that has already happened.
 (function(){var m=/[?&]q=([^&]*)/.exec(location.search); if(m){try{q.value=decodeURIComponent(m[1].replace(/\+/g," "));}catch(_){}}})();
-</script></body></html>
+</script><!--ARDA:THUMBS--><script src="codex-thumbs.js" defer></script><!--/ARDA:THUMBS--></body></html>
