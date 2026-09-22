@@ -9,7 +9,7 @@
   "living.html": "the halls put it under Peoples; the brief's Volume IV contents list puts a herbarium with relics and devices. The brief is followed."
  },
  "schemaVersion": 1,
- "n_routes": 1598,
+ "n_routes": 1599,
  "n_volumes": 7,
  "volumes": [
   {
@@ -309,6 +309,12 @@
      "part": "The Trial",
      "entries": [
       "quiz.html"
+     ]
+    },
+    {
+     "part": "Search",
+     "entries": [
+      "search.html"
      ]
     },
     {
@@ -21593,7 +21599,7 @@
    "canonicalRoute": "quiz.html",
    "presentation": "paired-leaf",
    "prev": "errata.html",
-   "next": "theindex.html"
+   "next": "search.html"
   },
   "realm/alqualonde.html": {
    "volume": "I",
@@ -22458,6 +22464,18 @@
    "presentation": "paired-leaf",
    "prev": "armies_dashboard.html"
   },
+  "search.html": {
+   "volume": "VII",
+   "part": "Search",
+   "archetype": "index",
+   "spread": "spread",
+   "title": "Search",
+   "canonical": "search.html",
+   "canonicalRoute": "search.html",
+   "presentation": "paired-leaf",
+   "prev": "quiz.html",
+   "next": "theindex.html"
+  },
   "sheets.html": {
    "volume": "I",
    "part": "The Drawn Sheets",
@@ -22489,7 +22507,7 @@
    "canonical": "theindex.html",
    "canonicalRoute": "theindex.html",
    "presentation": "paired-leaf",
-   "prev": "quiz.html",
+   "prev": "search.html",
    "next": "tours.html"
   },
   "tours.html": {
@@ -22726,6 +22744,7 @@
    "corpus.html",
    "errata.html",
    "quiz.html",
+   "search.html",
    "theindex.html",
    "tours.html"
   ]
