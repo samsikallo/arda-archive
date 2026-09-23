@@ -32,7 +32,9 @@
    "corpus_file": "t1_10_morgoths_ring.txt",
    "chars": 1175627,
    "passages": 385,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_11_the_war_of_the_jewels.txt",
@@ -40,7 +42,9 @@
    "corpus_file": "t1_11_the_war_of_the_jewels.txt",
    "chars": 1164775,
    "passages": 445,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_12_the_peoples_of_middle_earth.txt",
@@ -48,7 +52,9 @@
    "corpus_file": "t1_12_the_peoples_of_middle_earth.txt",
    "chars": 1184477,
    "passages": 264,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_13_index.txt",
@@ -56,7 +62,9 @@
    "corpus_file": "t1_13_index.txt",
    "chars": 1023142,
    "passages": 47,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_1_the_book_of_lost_tales_part_one.txt",
@@ -64,7 +72,9 @@
    "corpus_file": "t1_1_the_book_of_lost_tales_part_one.txt",
    "chars": 783107,
    "passages": 2818,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_2_the_book_of_lost_tales_part_two.txt",
@@ -72,7 +82,9 @@
    "corpus_file": "t1_2_the_book_of_lost_tales_part_two.txt",
    "chars": 994812,
    "passages": 3369,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_3_the_lays_of_beleriand.txt",
@@ -80,7 +92,9 @@
    "corpus_file": "t1_3_the_lays_of_beleriand.txt",
    "chars": 822016,
    "passages": 604,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_4_the_shaping_of_middle_earth.txt",
@@ -88,7 +102,9 @@
    "corpus_file": "t1_4_the_shaping_of_middle_earth.txt",
    "chars": 805030,
    "passages": 2736,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_5_the_lost_road_and_other_writings.txt",
@@ -96,7 +112,9 @@
    "corpus_file": "t1_5_the_lost_road_and_other_writings.txt",
    "chars": 1161953,
    "passages": 407,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_6_the_return_of_the_shadow.txt",
@@ -104,7 +122,9 @@
    "corpus_file": "t1_6_the_return_of_the_shadow.txt",
    "chars": 1250024,
    "passages": 403,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_7_the_treason_of_isengard.txt",
@@ -112,7 +132,9 @@
    "corpus_file": "t1_7_the_treason_of_isengard.txt",
    "chars": 1239199,
    "passages": 324,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_8_the_war_of_the_ring.txt",
@@ -120,7 +142,9 @@
    "corpus_file": "t1_8_the_war_of_the_ring.txt",
    "chars": 1051161,
    "passages": 1282,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_9_sauron_defeated.txt",
@@ -128,7 +152,9 @@
    "corpus_file": "t1_9_sauron_defeated.txt",
    "chars": 1118482,
    "passages": 98,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_a_secret_vice_tolkien_on_invented_languages.txt",
@@ -136,7 +162,9 @@
    "corpus_file": "t1_a_secret_vice_tolkien_on_invented_languages.txt",
    "chars": 350559,
    "passages": 237,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_a_the_silmarillion.txt",
@@ -144,7 +172,9 @@
    "corpus_file": "t1_a_the_silmarillion.txt",
    "chars": 928676,
    "passages": 237,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_b_the_hobbit_or_there_and_back_again.txt",
@@ -152,7 +182,9 @@
    "corpus_file": "t1_b_the_hobbit_or_there_and_back_again.txt",
    "chars": 524118,
    "passages": 177,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_beowulf_the_monsters_and_the_critics.txt",
@@ -160,7 +192,9 @@
    "corpus_file": "t1_beowulf_the_monsters_and_the_critics.txt",
    "chars": 122711,
    "passages": 30,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_bilbos_last_song_jrr_tolkien.txt",
@@ -168,7 +202,9 @@
    "corpus_file": "t1_bilbos_last_song_jrr_tolkien.txt",
    "chars": 3775,
    "passages": 10,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_c_appendix_c_hobbit_trees.txt",
@@ -176,7 +212,9 @@
    "corpus_file": "t1_c_appendix_c_hobbit_trees.txt",
    "chars": 8834,
    "passages": 15,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_c_appendix_tables_raw.txt",
@@ -184,7 +222,9 @@
    "corpus_file": "t1_c_appendix_tables_raw.txt",
    "chars": 70760,
    "passages": 1,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_c_the_lord_of_the_rings.txt",
@@ -192,7 +232,9 @@
    "corpus_file": "t1_c_the_lord_of_the_rings.txt",
    "chars": 3142587,
    "passages": 2242,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
@@ -200,7 +242,9 @@
    "corpus_file": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt",
    "chars": 1187470,
    "passages": 440,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_e_beren_and_luthien.txt",
@@ -208,7 +252,9 @@
    "corpus_file": "t1_e_beren_and_luthien.txt",
    "chars": 362558,
    "passages": 453,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_f_the_children_of_hurin.txt",
@@ -216,7 +262,9 @@
    "corpus_file": "t1_f_the_children_of_hurin.txt",
    "chars": 409133,
    "passages": 116,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_g_the_fall_of_gondolin.txt",
@@ -224,7 +272,9 @@
    "corpus_file": "t1_g_the_fall_of_gondolin.txt",
    "chars": 457146,
    "passages": 228,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_j_r_r_tolkien_artist_and_illustrator.txt",
@@ -232,7 +282,9 @@
    "corpus_file": "t1_j_r_r_tolkien_artist_and_illustrator.txt",
    "chars": 669919,
    "passages": 834,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_k_the_road_goes_ever_on_a_song_cycle_2nd_digitisatio.txt",
@@ -240,7 +292,9 @@
    "corpus_file": "t1_k_the_road_goes_ever_on_a_song_cycle_2nd_digitisatio.txt",
    "chars": 149039,
    "passages": 295,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_ocr_k_the_road_goes_ever_on_a_song_cycle.txt",
@@ -248,7 +302,9 @@
    "corpus_file": "t1_ocr_k_the_road_goes_ever_on_a_song_cycle.txt",
    "chars": 84389,
    "passages": 93,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_the_adventures_of_tom_bombadil_and_other_verses_from.txt",
@@ -256,7 +312,9 @@
    "corpus_file": "t1_the_adventures_of_tom_bombadil_and_other_verses_from.txt",
    "chars": 263290,
    "passages": 390,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_the_collected_poems_of_j_r_r_tolkien.txt",
@@ -264,7 +322,9 @@
    "corpus_file": "t1_the_collected_poems_of_j_r_r_tolkien.txt",
    "chars": 3151233,
    "passages": 4339,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_the_hobbit_illustrated.txt",
@@ -272,7 +332,9 @@
    "corpus_file": "t1_the_hobbit_illustrated.txt",
    "chars": 578113,
    "passages": 259,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_the_king_s_letter_manuscript_plate_png.txt",
@@ -280,7 +342,9 @@
    "corpus_file": "t1_the_king_s_letter_manuscript_plate_png.txt",
    "chars": 0,
    "passages": 0,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_the_letters_of_j_r_r_tolkien.txt",
@@ -288,7 +352,9 @@
    "corpus_file": "t1_the_letters_of_j_r_r_tolkien.txt",
    "chars": 1254286,
    "passages": 1016,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
@@ -296,7 +362,9 @@
    "corpus_file": "t1_the_letters_of_j_r_r_tolkien_revised_and_expanded_ed.txt",
    "chars": 1706733,
    "passages": 1400,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_the_letters_of_jrr_tolkien_revised_and_expanded_edit.txt",
@@ -304,7 +372,9 @@
    "corpus_file": "t1_the_letters_of_jrr_tolkien_revised_and_expanded_edit.txt",
    "chars": 0,
    "passages": 0,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_the_monsters_and_the_critics_and_other_essays.txt",
@@ -312,7 +382,9 @@
    "corpus_file": "t1_the_monsters_and_the_critics_and_other_essays.txt",
    "chars": 624310,
    "passages": 481,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t1_the_tolkien_reader.txt",
@@ -320,7 +392,9 @@
    "corpus_file": "t1_the_tolkien_reader.txt",
    "chars": 398938,
    "passages": 73,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   }
  ],
  "passages": [

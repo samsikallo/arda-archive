@@ -32,7 +32,9 @@
    "corpus_file": "t4_heraldry_tolkien_gateway.txt",
    "chars": 131465,
    "passages": 200,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t4_letterschanges.txt",
@@ -40,7 +42,9 @@
    "corpus_file": "t4_letterschanges.txt",
    "chars": 64003,
    "passages": 207,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t4_lotr_roleplay.txt",
@@ -48,7 +52,9 @@
    "corpus_file": "t4_lotr_roleplay.txt",
    "chars": 1295062,
    "passages": 1208,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t4_reader_and_educator_guide_to_the_hobbit_and_the_lord.txt",
@@ -56,7 +62,9 @@
    "corpus_file": "t4_reader_and_educator_guide_to_the_hobbit_and_the_lord.txt",
    "chars": 298863,
    "passages": 886,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t4_sarati_alphabet.txt",
@@ -64,7 +72,9 @@
    "corpus_file": "t4_sarati_alphabet.txt",
    "chars": 5264,
    "passages": 15,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t4_sarati_wikipedia.txt",
@@ -72,7 +82,9 @@
    "corpus_file": "t4_sarati_wikipedia.txt",
    "chars": 7990,
    "passages": 21,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t4_the_art_of_the_fellowship_of_the_ring.txt",
@@ -80,7 +92,9 @@
    "corpus_file": "t4_the_art_of_the_fellowship_of_the_ring.txt",
    "chars": 3617,
    "passages": 11,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t4_the_art_of_the_lord_of_the_rings.txt",
@@ -88,7 +102,9 @@
    "corpus_file": "t4_the_art_of_the_lord_of_the_rings.txt",
    "chars": 225487,
    "passages": 888,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t4_the_fantasy_art_of_john_howe_the_fantasy_art_of_john.txt",
@@ -96,7 +112,9 @@
    "corpus_file": "t4_the_fantasy_art_of_john_howe_the_fantasy_art_of_john.txt",
    "chars": 752,
    "passages": 3,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t4_the_lord_of_the_rings_urania_finarte_14_12_2022.txt",
@@ -104,7 +122,9 @@
    "corpus_file": "t4_the_lord_of_the_rings_urania_finarte_14_12_2022.txt",
    "chars": 374008,
    "passages": 242,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   },
   {
    "container_id": "corpus:t4_the_maps_of_tolkiens_middle_earth_brian_sibley_john_.txt",
@@ -112,7 +132,9 @@
    "corpus_file": "t4_the_maps_of_tolkiens_middle_earth_brian_sibley_john_.txt",
    "chars": 149843,
    "passages": 482,
-   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages"
+   "source_tier_basis": "site/arda_sources.json, the register that names every held file; this tier describes the CONTAINER and never its passages",
+   "source_tier_from": "site/arda_sources.json",
+   "conf": "I-H"
   }
  ],
  "passages": [
