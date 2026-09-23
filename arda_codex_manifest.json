@@ -9,7 +9,7 @@
   "living.html": "the halls put it under Peoples; the brief's Volume IV contents list puts a herbarium with relics and devices. The brief is followed."
  },
  "schemaVersion": 1,
- "n_routes": 1599,
+ "n_routes": 1600,
  "n_volumes": 7,
  "volumes": [
   {
@@ -306,6 +306,12 @@
      ]
     },
     {
+     "part": "Index Sample",
+     "entries": [
+      "index-sample.html"
+     ]
+    },
+    {
      "part": "The Trial",
      "entries": [
       "quiz.html"
@@ -523,7 +529,7 @@
    "canonicalRoute": "errata.html",
    "presentation": "paired-leaf",
    "prev": "corpus.html",
-   "next": "quiz.html"
+   "next": "index-sample.html"
   },
   "errata/2026-07-23.html": {
    "volume": "VII",
@@ -1114,6 +1120,18 @@
    "presentation": "paired-leaf",
    "prev": "gallery.html",
    "next": "living.html"
+  },
+  "index-sample.html": {
+   "volume": "VII",
+   "part": "Index Sample",
+   "archetype": "index",
+   "spread": "spread",
+   "title": "Index Sample",
+   "canonical": "index-sample.html",
+   "canonicalRoute": "index-sample.html",
+   "presentation": "paired-leaf",
+   "prev": "errata.html",
+   "next": "quiz.html"
   },
   "index.html": {
    "volume": null,
@@ -21598,7 +21616,7 @@
    "canonical": "quiz.html",
    "canonicalRoute": "quiz.html",
    "presentation": "paired-leaf",
-   "prev": "errata.html",
+   "prev": "index-sample.html",
    "next": "search.html"
   },
   "realm/alqualonde.html": {
@@ -22743,6 +22761,7 @@
    "compare.html",
    "corpus.html",
    "errata.html",
+   "index-sample.html",
    "quiz.html",
    "search.html",
    "theindex.html",
