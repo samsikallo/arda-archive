@@ -43,7 +43,7 @@ main{max-width:960px;margin:0 auto;padding:20px 22px}
    outright and boxes the leaf's opening sentence in a card.
 
    SCOPING THEM UNDER `#main` WAS THE FIRST FIX AND A BROWSER REFUTED IT. Every element these
-   rules are for IS inside `<main id="main">` in the file -- and `site/codex-hall.js` paginates
+   rules are for IS inside `<main role="main" id="main">` in the file -- and `site/codex-hall.js` paginates
    the hall's matter at load and LIFTS those elements OUT of `#main` into the leaves it deals.
    Measured at 1440x900 on the built page: all five group headings came back `inMain: false`,
    19.8px EB Garamond instead of 21px Cinzel, with the rule under the heading gone. A scope that

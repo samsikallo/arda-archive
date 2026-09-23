@@ -25,8 +25,8 @@ h1{font-variant:small-caps;font-weight:normal;color:#5a4626;font-size:24px;margi
 .note{color:#7a6a50;font-style:italic;padding:10px 2px}</style><!--ARDA:CODEX-HEAD--><link rel="stylesheet" href="codex-object.css"><link rel="stylesheet" href="codex-backdrops.css"><script src="codex-turn.js" defer></script><script src="codex-hall.js" defer></script><!--/ARDA:CODEX-HEAD--></head>
 <body><div class="hd" id="hdr"><a href="index.html">⌂ the Arda Archive</a> &nbsp; Search
 <span style="flex:1"></span><nav id="ardanav" aria-label="Archive halls"></nav></div>
-<a class="a-skip" href="#main">skip to content</a><!--ARDA:CODEX-BODY--><div class="book" data-spread="flat" data-turn-prev="quiz.html" data-turn-next="theindex.html"><div class="plaque">The Arda Archive <i>·</i> Volume VII <i>·</i> Search</div><nav class="tabs" aria-label="Volumes"><a class="tab" href="volume-i.html">Atlas and Realms</a><a class="tab" href="volume-ii.html">Annals</a><a class="tab" href="volume-iii.html">Peoples and Houses</a><a class="tab" href="volume-iv.html">Living World</a><a class="tab" href="volume-v.html">Tongues</a><a class="tab" href="volume-vi.html">Lore and First Principles</a><a class="tab" href="volume-vii.html" aria-current="page">Index</a></nav><div class="spread"><section class="leaf wide" data-hall="search.html"><h2 class="rubric">Search</h2><p class="lede">the apparatus of the archive</p><img class="orn-leaf" src="ornament/collected/walters-w132-000033-filler.webp" width="76" height="54" alt="" aria-hidden="true" loading="lazy" decoding="async"><div class="hall-slot" data-hall-slot=""></div></section></div><div class="clasp" role="presentation"></div><div class="folio">Volume VII</div></div><!--/ARDA:CODEX-BODY-->
-<main class="card" id="main">
+<a class="a-skip" href="#main">skip to content</a><!--ARDA:CODEX-BODY--><div class="book" data-spread="codex" data-density="high" data-turn-prev="quiz.html" data-turn-next="theindex.html"><div class="plaque">The Arda Archive <i>·</i> Volume VII <i>·</i> Search</div><nav class="tabs" aria-label="Volumes"><a class="tab" href="volume-i.html">Atlas and Realms</a><a class="tab" href="volume-ii.html">Annals</a><a class="tab" href="volume-iii.html">Peoples and Houses</a><a class="tab" href="volume-iv.html">Living World</a><a class="tab" href="volume-v.html">Tongues</a><a class="tab" href="volume-vi.html">Lore and First Principles</a><a class="tab" href="volume-vii.html" aria-current="page">Index</a></nav><div class="spread"><div class="gutter" aria-hidden="true"></div><section class="leaf l ruled twocol" data-hall="search.html"><div class="rh"><span>The Arda Archive · Search the archive</span><span class="n">i</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><h2 class="rubric">Search the archive</h2><p class="lede">Search every name, place, word and event the Arda Archive holds. All matches are shown and paginated into leaves; nothing is capped.</p><p><img class="versal versal-img" src="ornament/collected/walters-w132-000077-initial-s.webp" width="33" height="54" alt="S" loading="lazy" decoding="async">earch the archive opens here, and continues across the gutter&mdash;</p></div><span class="quire">A&middot;i</span><span class="catch">here, with</span></section><section class="leaf r ruled twocol" data-hall="search.html"><div class="rh"><span>Search · continued</span><span class="n">ii</span></div><span class="illum" aria-hidden="true"></span><div class="tb"><p>&mdash;there. An index hall is read by looking; the filters above are the way in.</p><div class="sub">Where this opening sits</div><p>Volume VII of the Arda Archive, Index, Corpus and Reader&#x27;s Paths, under Search. the apparatus of the archive</p><p>It is opening <span class="mark">45</span> of <span class="mark">47</span> in this volume, the The Trial coming before it. The reader who turns on from here reaches The Index.</p><p class="cite">Read from <i>arda_codex_manifest.json</i> at build time. <span class="mark">[C]</span></p></div><span class="quire">A&middot;ij</span><span class="catch">The Index</span></section></div><div class="hall-slot" data-hall-slot=""></div><div class="clasp" role="presentation"></div><div class="folio">Volume VII</div></div><!--/ARDA:CODEX-BODY-->
+<main role="main" class="card" id="main">
 <h1>Search the archive</h1>
 <p class="cite">Every match is listed. <b>Nothing is capped</b> — a common name would otherwise
 silently lose most of its matches, which is the reason this leaf exists rather than the
@@ -44,6 +44,14 @@ forty-result box on the front page.</p>
 </main>
 <script>window.ARDA_BASE=""</script><script src="nav.js"></script>
 <script src="codex-search.js"></script>
+<!-- THE STATE RECORDER, VERBATIM FROM docs/codex-states.md. It must live in the hall's OWN first
+     inline script and run BEFORE any fetch: listening for `unhandledrejection` at
+     DOMContentLoaded instead caught the failure on 1 hall of 11, because the rejection had
+     already fired. It RETHROWS, so every existing path behaves exactly as before -- it only
+     observes. It catches a non-2xx as well as a network failure, because a 404 returns ok:false
+     and would otherwise die later inside r.json() with a SyntaxError about `<!doctype`. Plain
+     globals, not `self`: that distinction cost a refused push. -->
+<script>var __aF=[],__aN=0;function aJ(u){var R=document.documentElement,d=function(){if(--__aN<1)R.removeAttribute("data-loading")};__aN++;R.setAttribute("data-loading","1");return fetch(u).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.json()}).then(function(j){d();return j},function(e){d();__aF.push(u);throw e})}</script>
 <script>
 // THE COUNT IS COUNTED, NEVER TYPED. index.html's own caption drifted three times -- 1,890 then
 // 3,285 against a file holding 4,686 -- because a literal cannot go red. Nothing here states a
@@ -90,7 +98,12 @@ function run(){
   try{history.replaceState(null,"","?q="+encodeURIComponent(q.value.trim()));}catch(_){}
 }
 
-fetch("arda_search.json").then(function(r){return r.json();}).then(function(d){
+// ROUTED THROUGH aJ, NOT A RAW fetch -- C984's reader test and states_check's ratchet of 0.
+// aJ already does the `r.json()` step and throws on a non-2xx, so this takes the parsed object
+// directly. The `.catch` is KEPT and still degrades to an empty index, so a reader who loses the
+// data still gets a working page; what changes is that the failure is now RECORDED in __aF and
+// codex.js can tell the reader the data failed instead of silently returning no results.
+aJ("arda_search.json").then(function(d){
   IDX=ArdaSearch.prepare(d); LOADED=true; run();
 }).catch(function(){ IDX=null; LOADED=true; run(); });
 
@@ -100,4 +113,4 @@ next.addEventListener("click",function(){LEAF++;draw();window.scrollTo(0,0);});
 // ARRIVING WITH A QUERY ALREADY ASKED -- the front-door box links here, so the leaf must answer
 // on load rather than waiting for a keystroke that has already happened.
 (function(){var m=/[?&]q=([^&]*)/.exec(location.search); if(m){try{q.value=decodeURIComponent(m[1].replace(/\+/g," "));}catch(_){}}})();
-</script><!--ARDA:THUMBS--><script src="codex-thumbs.js" defer></script><!--/ARDA:THUMBS--></body></html>
+</script><!--ARDA:THUMBS--><script src="codex-thumbs.js" defer></script><!--/ARDA:THUMBS--><script src="glossary.js" defer></script></body></html>
