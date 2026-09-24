@@ -29410,6 +29410,27 @@
    }
   },
   {
+   "file": "p3_eprints_gla_ac_uk_379040_1b0e14.pdf",
+   "tier": 3,
+   "attribution": "Rios Maldonado, Mariana; Cossio, Andoni (https://eprints.gla.ac.uk/379040/2/379040.pdf)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: cc_by_nc_nd_4, as the source declares it. Published under C498 and his standing authorization of 16 August 2026. Extracted: OCR via tesseract -l eng at 300 dpi (research/ocr/p3b/1b0e1462f92eb73e.eng.txt). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_eprints_gla_ac_uk_379040_1b0e14.txt",
+   "words": 7420,
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "text_only": true,
+   "source_url": "https://eprints.gla.ac.uk/379040/2/379040.pdf",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_eprints_lancs_ac_uk_REVISEDFINALP_0c6260.pdf",
    "tier": 3,
    "attribution": "Informa UK Limited (https://eprints.lancs.ac.uk/id/eprint/75836/1/REVISEDFINALParatextorImagetext.pdf)",
@@ -29615,7 +29636,7 @@
    "file": "p3_ihbabel_files_wordpress_com_e_b_p_56b31d.pdf",
    "tier": 3,
    "attribution": "ihbabel.files.wordpress.com (https://ihbabel.files.wordpress.com/2016/04/e_b_poczc485tek.pdf)",
-   "note": "ONLY PAGES 105-120 of the capture are held: its judge: 'ANTHOLOGY: only part of it is about Arda; P3 should extract the Tolkien chapter rather than the whole volume.' Measured 24 Sep 2026: the volume's own table of contents puts Maciej M. Kuster, 'Mityczne poczatki fantasy', at p.105 and Anna Lagan's next chapter at p.121; the PDF's page numbers equal the book's (PDF p.105 opens 'Maciej M. Kuster'; p.121 opens 'Anna Lagan'); p.120 is blank. Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF pages 105-120 via pdftotext. Extractor map/p3_ingest.py.",
+   "note": "ONLY PAGES 105-120 of the capture are held; the measured reason is in the volume banner. Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF pages 105-120 via pdftotext. Extractor map/p3_ingest.py.",
    "primary_text": false,
    "present": false,
    "corpus_file": "t3_p3_ihbabel_files_wordpress_com_e_b_p_56b31d.txt",
@@ -29817,6 +29838,27 @@
     ],
     "granularity": "serial",
     "evidence": "the ISSN printed in this issue (corpus/t3_p3_journals_openedition_org_10168_343040.txt). It reaches the periodical; this row's own title names the issue."
+   }
+  },
+  {
+   "file": "p3_katalog_marmara_edu_tr_T0049285_5dd99b.pdf",
+   "tier": 3,
+   "attribution": "Sosyal Bilimler Enstitüsü (https://katalog.marmara.edu.tr/veriler/yordambt/cokluortam/3B/T0049285.pdf)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: OCR via tesseract -l tur+eng at 300 dpi (research/ocr/p3b/5dd99bb87f5310ec.tur+eng.txt). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_katalog_marmara_edu_tr_t0049285_5dd99b.txt",
+   "words": 58688,
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "text_only": true,
+   "source_url": "https://katalog.marmara.edu.tr/veriler/yordambt/cokluortam/3B/T0049285.pdf",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
    }
   },
   {
@@ -30364,6 +30406,27 @@
    }
   },
   {
+   "file": "p3_memoria_fahce_unlp_edu_ar_pr_1088_0a55bb.pdf",
+   "tier": 3,
+   "attribution": "www.memoria.fahce.unlp.edu.ar (https://www.memoria.fahce.unlp.edu.ar/art_revistas/pr.10887/pr.10887.pdf)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: OCR via tesseract -l spa at 300 dpi (research/ocr/p3b/0a55bb208d9c87ea.spa.txt). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_memoria_fahce_unlp_edu_ar_pr_1088_0a55bb.txt",
+   "words": 3753,
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "text_only": true,
+   "source_url": "https://www.memoria.fahce.unlp.edu.ar/art_revistas/pr.10887/pr.10887.pdf",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_memoria_fahce_unlp_edu_ar_pr_3022_05854b.pdf",
    "tier": 3,
    "attribution": "Universidad Nacional de La Plata. Facultad de Humanidades y Ciencias de la EducaciÃ³n. Centro de Estudios de Lenguas ClÃ¡sicas. Ãrea de FilologÃ­a Griega (https://www.memoria.fahce.unlp.edu.ar/art_revistas/pr.3022/pr.3022.pdf)",
@@ -30588,7 +30651,7 @@
    "file": "p3_quettar_orenyallo_ch_quettaparma_7ead93.pdf",
    "tier": 3,
    "attribution": "www.quettar-orenyallo.ch (http://www.quettar-orenyallo.ch/ressources/quettaparma%20quenya-francais.pdf)",
-   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext. Extractor map/p3_ingest.py.",
+   "note": "FAN LAYER: FANON, per the research registry -- held and separately queryable, with no authority over Tolkien's text. Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext. Extractor map/p3_ingest.py.",
    "primary_text": false,
    "present": false,
    "corpus_file": "t3_p3_quettar_orenyallo_ch_quettaparma_7ead93.txt",
@@ -30605,7 +30668,7 @@
    "file": "p3_quettar_orenyallo_ch_quettaparma_d8e6ba.pdf",
    "tier": 3,
    "attribution": "www.quettar-orenyallo.ch (http://www.quettar-orenyallo.ch/ressources/quettaparma%20francais-quenya.pdf)",
-   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext. Extractor map/p3_ingest.py.",
+   "note": "FAN LAYER: FANON, per the research registry -- held and separately queryable, with no authority over Tolkien's text. Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext. Extractor map/p3_ingest.py.",
    "primary_text": false,
    "present": false,
    "corpus_file": "t3_p3_quettar_orenyallo_ch_quettaparma_d8e6ba.txt",
@@ -30802,6 +30865,27 @@
    "words": 8348,
    "text_only": true,
    "source_url": "http://scriptorium-oxoniae.de/pdf/HS10_short_view.pdf",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_scriptorium_oxoniae_de_HS11_short_f14e67.pdf",
+   "tier": 3,
+   "attribution": "Scriptorium Oxoniae / Deutsche Tolkien Gesellschaft (http://scriptorium-oxoniae.de/pdf/HS11_short_view.pdf)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: OCR via tesseract -l deu+eng at 300 dpi (research/ocr/p3b/HS11.deu+eng.txt). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_scriptorium_oxoniae_de_hs11_short_f14e67.txt",
+   "words": 6107,
+   "ocr_text": true,
+   "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
+   "text_only": true,
+   "source_url": "http://scriptorium-oxoniae.de/pdf/HS11_short_view.pdf",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -31855,7 +31939,7 @@
    "file": "p3_www2_archivists_org_Newsletter_89a51e.pdf",
    "tier": 3,
    "attribution": "www2.archivists.org (https://www2.archivists.org/sites/all/files/MRS/Fall/2002/Newsletter.pdf)",
-   "note": "ONLY PAGES 2-3 of the capture are held: its judge: 'one of eight pages is Arda-bearing ... this one should enter as an extract of pages 2-3'. Measured 24 Sep 2026, 'Tolkien' per page 1..4: 1, 13, 9, 0 -- page 1 is the newsletter's contents line. Page 2 opens with the tail of the preceding article (Cleland), which is stated rather than trimmed by hand. Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF pages 2-3 via pdftotext. Extractor map/p3_ingest.py.",
+   "note": "ONLY PAGES 2-3 of the capture are held; the measured reason is in the volume banner. Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF pages 2-3 via pdftotext. Extractor map/p3_ingest.py.",
    "primary_text": false,
    "present": false,
    "corpus_file": "t3_p3_www2_archivists_org_newsletter_89a51e.txt",
@@ -32284,21 +32368,21 @@
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to 'My dear Ladies' (10 June 1971)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 7 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 7 [?] marks.  EXTRACTION: SHORT AND CORRECT at 3619 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg005_undated_agatha_carew_hunt.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Agatha Carew Hunt",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 4 [?] marks. Signed pp / dictated: not his autograph (C1088-3)."
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 4 [?] marks. Signed pp / dictated: not his autograph (C1088-3). EXTRACTION: SHORT AND CORRECT at 2644 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg008_20_march_1969_amy_ronald.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Amy Ronald (20 March 1969)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2320 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg010_undated_arthur_ransome.txt",
@@ -32312,70 +32396,70 @@
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to C. A. Furth (4 February 1938)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2179 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg015_undated_c_n_manlove.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to C.N. Manlove",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2148 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg016_undated_campbell.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Campbell",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 3006 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg017_undated_charles_calleja.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Charles Calleja",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 1 [illegible], 2 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 1 [illegible], 2 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2188 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg018_undated_david_hicks.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to David Hicks",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 3 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 3 [?] marks.  EXTRACTION: SHORT AND CORRECT at 1937 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg020_undated_derrick_parnum.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Derrick Parnum",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 4 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 4 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2857 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg021_undated_donald_a_wollheim.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Donald A. Wollheim",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2750 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg022_undated_donna_sadlier.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Donna Sadlier",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2793 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg023_28_january_1956_doris_elizabeth_sykes.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Doris Elizabeth Sykes (28 January 1956)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 2 [illegible], 8 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 2 [illegible], 8 [?] marks.  EXTRACTION: SHORT AND CORRECT at 4874 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg027_1_february_1913_edith_bratt.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Edith Bratt (1 February 1913)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 2 [illegible], 2 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 2 [illegible], 2 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2755 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg030_18_september_1967_elsie_honeybourne.txt",
@@ -32389,28 +32473,28 @@
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Elsie Honeybourne (21 December 1967)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 1 [illegible], 2 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 1 [illegible], 2 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2823 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg032_undated_eva_heilborn.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Eva Heilborn",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 5 [?] marks. Signed pp / dictated: not his autograph (C1088-3)."
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 5 [?] marks. Signed pp / dictated: not his autograph (C1088-3). EXTRACTION: SHORT AND CORRECT at 2427 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg033_undated_father_francis_morgan.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Father Francis Morgan",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 2 [illegible], 9 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 2 [illegible], 9 [?] marks.  EXTRACTION: SHORT AND CORRECT at 3555 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg034_16_november_1971_fay_darrington.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Fay Darrington (16 November 1971)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 1665 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg039_16_april_1956_h_cotton_minchin.txt",
@@ -32424,105 +32508,105 @@
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Hans-Jörg Modlmayr (7 December 1967)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks.  EXTRACTION: SHORT AND CORRECT at 1712 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg041_undated_harry_c_bauer.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Harry C. Bauer",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 3 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 3 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2262 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg043_undated_ingeborg_korff.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scans of Letter to Ingeborg Korff",
-   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 3 [?] marks. "
+   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 3 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2979 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg044_undated_ingrid_pridgeon.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scans of Letter to Ingrid Pridgeon",
-   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. Signed pp / dictated: not his autograph (C1088-3)."
+   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. Signed pp / dictated: not his autograph (C1088-3). EXTRACTION: SHORT AND CORRECT at 3630 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg045_undated_j_d_gilbert.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to J.D. Gilbert",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 3576 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg047_undated_james_ridolfo.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to James Ridolfo",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2311 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg048_29_december_1966_james_s_marsh.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to James S. Marsh (29 December 1966)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 1 [illegible], 1 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 1 [illegible], 1 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2381 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg049_8_december_1966_james_s_marsh.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scans of Letter to James S. Marsh (8 December 1966)",
-   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2416 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg051_28_february_1966_jenny_hall.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Jenny Hall (28 February 1966)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 4 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 4 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2293 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg055_28_october_1971_joy_hill.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Joy Hill (28 October 1971)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2514 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg057_undated_julie_cape.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Julie Cape",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2063 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg058_29_january_1968_ken_jackson.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Ken Jackson (29 January 1968)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 9 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 9 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2423 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg059_4_january_1968_ken_jackson.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scans of Letter to Ken Jackson (4 January 1968)",
-   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 4 [?] marks. "
+   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 4 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2754 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg060_undated_kenneth_i_rasmussen_jr.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Kenneth I. Rasmussen, Jr.",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2298 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg062_undated_l_m_cutts.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to L.M. Cutts",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 3 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 3 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2946 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg064_9_january_1945_leila_keane_and_patricia_kirke.txt",
@@ -32536,238 +32620,238 @@
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scans of Letter to Madam Ossendrijver (5 January 1961)",
-   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 10 [?] marks. "
+   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 10 [?] marks.  EXTRACTION: SHORT AND CORRECT at 4410 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg068_undated_martin_m_snapp.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Martin M. Snapp",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2060 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg071_10_january_1958_michael_george_tolkien.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Michael George Tolkien (10 January 1958)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2046 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg072_undated_miss_j_l_curry.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Miss J.L. Curry",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 1 [illegible], 2 [?] marks. Signed pp / dictated: not his autograph (C1088-3)."
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 1 [illegible], 2 [?] marks. Signed pp / dictated: not his autograph (C1088-3). EXTRACTION: SHORT AND CORRECT at 2267 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg075_19_december_1956_miss_stanley_smith.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Miss Stanley-Smith (19 December 1956)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2221 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg076_22_november_1956_miss_stanley_smith.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Miss Stanley-Smith (22 November 1956)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 3 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 3 [?] marks.  EXTRACTION: SHORT AND CORRECT at 3476 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg078_19_may_1955_miss_turnbull.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scans of Letter to Miss Turnbull (19 May 1955)",
-   "note": "Tolkien's own words read from 3 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 4 [?] marks. "
+   "note": "Tolkien's own words read from 3 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 4 [?] marks.  EXTRACTION: SHORT AND CORRECT at 3279 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg080_undated_mr_ashton.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scans of Letter to Mr Ashton",
-   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 6 [?] marks. "
+   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 6 [?] marks.  EXTRACTION: SHORT AND CORRECT at 3978 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg082_undated_mr_burrows.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Mr Burrows",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2320 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg083_undated_mr_capan.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Mr Capan",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 1812 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg084_undated_mr_cowan.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Mr Cowan",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 2 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 2 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 1666 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg085_undated_mr_hart.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Mr Hart",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 1748 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg087_undated_mr_lancashire.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Mr Lancashire",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 1 [illegible], 3 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 1 [illegible], 3 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2541 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg088_undated_mr_polet.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Mr Polet",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 1700 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg089_undated_mr_walker.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Mr Walker",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 3 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 3 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2398 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg091_undated_mrs_a_mountfield.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Mrs A. Mountfield",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 17 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 17 [?] marks.  EXTRACTION: SHORT AND CORRECT at 3298 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg092_undated_mrs_gill.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Mrs Gill",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2031 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg094_december_1968_mrs_parke.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Mrs Parke (December 1968)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 1660 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg095_undated_mrs_robertson.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Mrs Robertson",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2229 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg096_undated_mrs_souch.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scans of Letter to Mrs Souch",
-   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. "
+   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks.  EXTRACTION: SHORT AND CORRECT at 3262 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg097_undated_n_j_kyle.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to N.J. Kyle",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. Signed pp / dictated: not his autograph (C1088-3)."
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. Signed pp / dictated: not his autograph (C1088-3). EXTRACTION: SHORT AND CORRECT at 2566 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg099_undated_niall_hoskin.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scans of Letter to Niall Hoskin",
-   "note": "Tolkien's own words read from 3 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 6 [?] marks. "
+   "note": "Tolkien's own words read from 3 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 6 [?] marks.  EXTRACTION: SHORT AND CORRECT at 4629 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg100_undated_oscar_morland.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Oscar Morland",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2028 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg101_undated_patrick_hunt.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Patrick Hunt",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks.  EXTRACTION: SHORT AND CORRECT at 1738 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg102_undated_paul_barnetson.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Paul Barnetson",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2628 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg104_4_june_1949_pauline_baynes.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Pauline Baynes (4 June 1949)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2183 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg105_undated_peyton_moss.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Peyton Moss",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 1875 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg106_undated_philip_brown.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Philip Brown",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2741 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg109_20_26_january_1964_przemyslaw_mroczkowski.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Przemyslaw Mroczkowski (20–26 January 1964)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks.  EXTRACTION: SHORT AND CORRECT at 4184 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg114_11_june_1972_robert_burchfield.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Robert Burchfield (11 June 1972)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 4 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 4 [?] marks.  EXTRACTION: SHORT AND CORRECT at 1887 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg115_11_september_1970_robert_burchfield.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Robert Burchfield (11 September 1970)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks.  EXTRACTION: SHORT AND CORRECT at 4112 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg116_6_november_1954_robert_burchfield.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Robert Burchfield (6 November 1954)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2154 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg117_3_may_1966_roger_verhulst.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Roger Verhulst (3 May 1966)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 2 [illegible], 2 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 2 [illegible], 2 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2615 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg118_8_april_1966_roger_verhulst.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scans of Letter to Roger Verhulst (8 April 1966)",
-   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks. Signed pp / dictated: not his autograph (C1088-3)."
+   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks. Signed pp / dictated: not his autograph (C1088-3). EXTRACTION: SHORT AND CORRECT at 4135 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg121_undated_ronald_eames.txt",
@@ -32781,84 +32865,84 @@
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Rose MacNamara",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 1 [illegible], 2 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 1 [illegible], 2 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2014 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg123_undated_rosfrith_murray.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Rosfrith Murray",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 4 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 4 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2138 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg124_undated_royston_f_porthouse.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Royston F. Porthouse",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2238 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg125_21_september_1937_simonne_d_ardenne.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Simonne d'Ardenne (21 September 1937)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2063 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg127_23_may_1972_sir_patrick_browne.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Sir Patrick Browne (23 May 1972)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 3 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 3 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2841 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg128_undated_stanley_unwin.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Stanley Unwin",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 3 [illegible], 3 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 3 [illegible], 3 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2740 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg132_19_september_1956_terence_tiller.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Terence Tiller (19 September 1956)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2794 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg134_20_october_1965_timothy_j_wheeler.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to Timothy J. Wheeler (20 October 1965)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 0 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2140 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg136_undated_w_b_crouch.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to W.B. Crouch",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks. "
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 2 [?] marks.  EXTRACTION: SHORT AND CORRECT at 2313 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg137_9_june_1957_william_ready.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scans of Letter to William Ready (9 June 1957)",
-   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 1 [illegible], 7 [?] marks. Signed pp / dictated: not his autograph (C1088-3)."
+   "note": "Tolkien's own words read from 2 scans held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 1 [illegible], 7 [?] marks. Signed pp / dictated: not his autograph (C1088-3). EXTRACTION: SHORT AND CORRECT at 4449 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg139_undated_the_war_office.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to the War Office",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. Signed pp / dictated: not his autograph (C1088-3)."
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. Signed pp / dictated: not his autograph (C1088-3). EXTRACTION: SHORT AND CORRECT at 2478 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   },
   {
    "file": "t1_letter_tg140_28_may_1965_unknown_recipient.txt",
    "tier": 5,
    "content_tier": 1,
    "attribution": "transcribed by this archive from the scan of Letter to unknown recipient (28 May 1965)",
-   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. Signed pp / dictated: not his autograph (C1088-3)."
+   "note": "Tolkien's own words read from 1 scan held under research/fetched/tolkiengateway.net/ (sha256 in the file's header). 0 [illegible], 1 [?] marks. Signed pp / dictated: not his autograph (C1088-3). EXTRACTION: SHORT AND CORRECT at 3513 bytes -- a single letter, transcribed whole from its scan in phase L (#535); nothing of it is missing."
   }
  ],
  "retrieval_summary": {
@@ -32876,9 +32960,9 @@
     "unrecorded": 18
    },
    "3": {
-    "total": 1627,
+    "total": 1631,
     "with_path": 494,
-    "unrecorded": 1133
+    "unrecorded": 1137
    },
    "4": {
     "total": 29,
@@ -32887,14 +32971,14 @@
    }
   },
   "by_kind": {
-   "unrecorded": 1181,
+   "unrecorded": 1185,
    "isbn": 67,
    "url": 422,
    "issn": 53
   },
-  "total": 1723,
+  "total": 1727,
   "with_path": 542,
-  "unrecorded": 1181
+  "unrecorded": 1185
  },
  "rule": "Where two sources disagree, the lower tier number wins. A tier-5 file is corrected by any tier above it. Tolkien's own words quoted inside a tier-2 book carry tier-1 authority; the editor's framing does not.",
  "limits": [
