@@ -1,7 +1,7 @@
 {
  "note": "Quoted spans bound to their source by EVIDENCE, not by reading the prose around them. A span carrying `b` verifies in exactly one book of the corpus, or in one book at the LOWEST tier that holds it (`by`:`tier`, with `over` naming how many it outranked). A span carrying `bb` verifies in SEVERAL books at the same lowest tier: every witness is named and none is asserted as THE source. Proximity to a book name is not attribution, and pairing by proximity was measured at a 20% artifact rate before this file existed. map/attrib_check.py re-verifies every binding here on every run.",
  "minwords": 7,
- "n": 1933,
+ "n": 1946,
  "bindings": [
   {
    "d": "arda_ainur.json",
@@ -3134,21 +3134,14 @@
    "d": "arda_cirth.json",
    "r": "?",
    "f": "note_held",
-   "q": "the reversible No. 6 was given the value m",
+   "q": "the reversible No. 6 was given the value m, but No. 5 was given the value hw",
    "b": "t1_c_the_lord_of_the_rings.txt"
   },
   {
    "d": "arda_cirth.json",
    "r": "?",
    "f": "note_held",
-   "q": "No. 39 was used for either i or y",
-   "b": "t1_c_the_lord_of_the_rings.txt"
-  },
-  {
-   "d": "arda_cirth.json",
-   "r": "?",
-   "f": "note_held",
-   "q": "the consequent use of 12 for r; the invention of 53 for n",
+   "q": "The reverse was not infrequent, but had no phonetic significance",
    "b": "t1_c_the_lord_of_the_rings.txt"
   },
   {
@@ -3176,8 +3169,59 @@
    "d": "arda_cirth.json",
    "r": "?",
    "f": "note_held",
-   "q": "the consequent use of 36 as n",
+   "q": "the reversible No. 6 was given the value m",
    "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_cirth.json",
+   "r": "?",
+   "f": "note_held",
+   "q": "No. 39 was used for either i or y",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_cirth.json",
+   "r": "?",
+   "f": "note_held",
+   "q": "the consequent use of 12 for r; the invention of 53 for n",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_cirth.json",
+   "r": "?",
+   "f": "note_held",
+   "q": "Nos. 13, 15 were used for h or s, according as 35 was used for s or h",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_cirth.json",
+   "r": "?",
+   "f": "note_held",
+   "q": "Nos. 13, 15 were used for h or s, according as 35 was used for s or h",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_cirth.json",
+   "r": "?",
+   "f": "note_held",
+   "q": "the alteration in the values of 34, 35, 54 respectively to h",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_cirth.json",
+   "r": "?",
+   "f": "note_held",
+   "q": "This tendency to hesitate in the assignment of values for s and h continued in later arrangements",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_cirth.json",
+   "r": "?",
+   "f": "note_held",
+   "q": "the consequent use of 36 as ŋ",
+   "b": "t1_c_the_lord_of_the_rings.txt",
+   "by": "tier",
+   "over": 2
   },
   {
    "d": "arda_cirth.json",
@@ -3226,6 +3270,55 @@
    "r": "?",
    "f": "note_held",
    "q": "the consequent use of 12 for r; the invention of 53 for n",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_cirth.json",
+   "r": "?",
+   "f": "note_held",
+   "q": "Nos. 39, 42, 46, 50 were vowels and remained so in all later developments",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_cirth.json",
+   "r": "?",
+   "f": "note_held",
+   "q": "Nos. 39, 42, 46, 50 were vowels and remained so in all later developments",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_cirth.json",
+   "r": "?",
+   "f": "note_held",
+   "q": "Nos. 39, 42, 46, 50 were vowels and remained so in all later developments",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_cirth.json",
+   "r": "?",
+   "f": "note_held",
+   "q": "The new 55, 56 were in origin a halved form of 46, and were used for vowels like those heard in English butter",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_cirth.json",
+   "r": "?",
+   "f": "note_held",
+   "q": "The new 55, 56 were in origin a halved form of 46, and were used for vowels like those heard in English butter",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_cirth.json",
+   "r": "?",
+   "f": "note_held",
+   "q": "the invention of two new cirth, 57, 58 for ps and ts",
+   "b": "t1_c_the_lord_of_the_rings.txt"
+  },
+  {
+   "d": "arda_cirth.json",
+   "r": "?",
+   "f": "note_held",
+   "q": "the invention of two new cirth, 57, 58 for ps and ts",
    "b": "t1_c_the_lord_of_the_rings.txt"
   },
   {

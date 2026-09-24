@@ -185,7 +185,7 @@
    },
    {
     "n": 36,
-    "value": "n",
+    "value": "ŋ",
     "note": "consequent on 54 taking the value s",
     "cite": "LotR App E II, The Cirth",
     "conf": "C"
@@ -391,7 +391,7 @@
   {
    "n": 5,
    "glyph": true,
-   "note_held": "reversible №6 given m; №5 hw (App E's one stated exception)",
+   "note_held": "reversible №6 given m; №5 hw (App E's one stated exception) App E gives BOTH values in prose, not only on the plate: “the reversible No. 6 was given the value m, but No. 5 was given the value hw” (t1_c:50320-50321) [C]. The reversibility principle is App E prose too — “The reverse was not infrequent, but had no phonetic significance” (t1_c:50287-50289) — and 5 and 6 are both named among the oldest cirth (t1_c:50279-50280) [C]. The SHAPE is still the plate's.",
    "values": {
     "daeron": {
      "value": "hw",
@@ -591,7 +591,7 @@
   {
    "n": 13,
    "glyph": true,
-   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "note_held": "[C] — LotR App E states this in prose, not only on the plate: 'Nos. 13, 15 were used for h or s, according as 35 was used for s or h'. The SHAPE is still the plate's.",
    "values": {
     "daeron": {
      "value": "ch",
@@ -645,7 +645,7 @@
   {
    "n": 15,
    "glyph": true,
-   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "note_held": "[C] — LotR App E states this in prose, not only on the plate: 'Nos. 13, 15 were used for h or s, according as 35 was used for s or h'. The SHAPE is still the plate's.",
    "values": {
     "daeron": {
      "value": "sh",
@@ -699,7 +699,7 @@
   {
    "n": 17,
    "glyph": true,
-   "note_held": "Daeron nj; Moria z; Erebor ks — App E describes all three",
+   "note_held": "Daeron nj; Moria z; Erebor ks — App E describes all three App E's prose gives TWO of the three: “the use of 17 as z” for Moria (t1_c:50336) and “of 17 as ks (x)” for Erebor (t1_c:50346) [C]. It does NOT give Daeron nj, which is on the plate [I-H] — the earlier note claiming App E describes all three overstated it.",
    "values": {
     "daeron": {
      "value": "nj",
@@ -1128,7 +1128,7 @@
   {
    "n": 34,
    "glyph": true,
-   "note_held": "Daeron/Erebor s vs Moria h — App E: the s/h hesitation is ancient",
+   "note_held": "Daeron/Erebor s vs Moria h — App E: the s/h hesitation is ancient App E gives Moria h directly — “the alteration in the values of 34, 35, 54 respectively to h, ’ ... and s” (t1_c:50332-50334) — and states the s/h hesitation is ancient: “This tendency to hesitate in the assignment of values for s and h continued in later arrangements” (t1_c:50284-50285) [C]. Daeron s is from the plate [I-H].",
    "values": {
     "daeron": {
      "value": "s",
@@ -1153,7 +1153,7 @@
   {
    "n": 35,
    "glyph": true,
-   "note_held": "Moria: the Khuzdul glottal beginning (App E)",
+   "note_held": "Moria: the Khuzdul glottal beginning (App E) App E gives it directly: the alteration of 34, 35, 54 to “h, ’ (the clear or glottal beginning of a word with an initial vowel that appeared in Khuzdul), and s” (t1_c:50332-50334) [C]. Erebor is not listed as changing it, so its value here is inferred [I-H].",
    "values": {
     "daeron": {
      "value": "s",
@@ -1178,7 +1178,7 @@
   {
    "n": 36,
    "glyph": true,
-   "note_held": "theoretic z, used for ss in Elvish; Moria n (App E: 'the consequent use of 36 as n') [C]; not among Erebor's listed changes, so it keeps n [I-H]",
+   "note_held": "theoretic z, used for ss in Elvish; Moria ŋ (App E: 'the consequent use of 36 as ŋ') [C]; not among Erebor's listed changes, so it keeps ŋ [I-H]",
    "values": {
     "daeron": {
      "value": "z (ss)",
@@ -1191,13 +1191,13 @@
      }
     },
     "moria": {
-     "value": "n",
+     "value": "ŋ",
      "conf": "C",
      "cite": "LotR App E II, The Cirth",
      "how": "consequent on 54 taking the value s"
     },
     "erebor": {
-     "value": "n",
+     "value": "ŋ",
      "conf": "I-H",
      "cite": null,
      "how": "read off the Angerthas plate"
@@ -1232,7 +1232,7 @@
   {
    "n": 38,
    "glyph": true,
-   "note_held": "nd 'not clearly related in shape to the dentals' (App E)",
+   "note_held": "nd 'not clearly related in shape to the dentals' (App E) [C] — the quoted phrase is App E prose.",
    "values": {
     "daeron": {
      "value": "nd",
@@ -1332,7 +1332,7 @@
   {
    "n": 42,
    "glyph": true,
-   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "note_held": "[C] — LotR App E states this in prose, not only on the plate: 'Nos. 39, 42, 46, 50 were vowels and remained so in all later developments'. The SHAPE is still the plate's.",
    "values": {
     "daeron": {
      "value": "u",
@@ -1357,7 +1357,7 @@
   {
    "n": 43,
    "glyph": true,
-   "note_held": "App E gives 43 as z for the MODE OF EREBOR only; what Angerthas Moria made of it is on the plate and is not stated in the prose — the attached documents do not provide enough information to answer this",
+   "note_held": "App E gives 43 as z for the MODE OF EREBOR only; what Angerthas Moria made of it is on the plate and is not stated in the prose — the attached documents do not provide enough information to answer this App E gives the Erebor value directly — “the use of 43 as z” (t1_c:50346) [C]. Angerthas Moria's value for 43 is genuinely absent from the prose, which is why this row leaves it empty rather than guessing.",
    "values": {
     "daeron": {
      "value": "—",
@@ -1426,7 +1426,7 @@
   {
    "n": 46,
    "glyph": true,
-   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "note_held": "[C] — LotR App E states this in prose, not only on the plate: 'Nos. 39, 42, 46, 50 were vowels and remained so in all later developments'. The SHAPE is still the plate's.",
    "values": {
     "daeron": {
      "value": "e",
@@ -1526,7 +1526,7 @@
   {
    "n": 50,
    "glyph": true,
-   "note_held": "[I-H] — read off the Angerthas plate; Appendix E's prose does not state this value",
+   "note_held": "[C] — LotR App E states this in prose, not only on the plate: 'Nos. 39, 42, 46, 50 were vowels and remained so in all later developments'. The SHAPE is still the plate's.",
    "values": {
     "daeron": {
      "value": "o",
@@ -1651,7 +1651,7 @@
   {
    "n": 55,
    "glyph": true,
-   "note_held": "halved form of 46; schwa of Westron/Dwarvish (App E)",
+   "note_held": "halved form of 46; schwa of Westron/Dwarvish (App E) App E gives it directly: “The new 55, 56 were in origin a halved form of 46, and were used for vowels like those heard in English butter” (t1_c:50338-50340) [C].",
    "values": {
     "daeron": {
      "value": "—",
@@ -1680,7 +1680,7 @@
   {
    "n": 56,
    "glyph": true,
-   "note_held": "halved form of 46 (App E)",
+   "note_held": "halved form of 46 (App E) App E gives it directly: “The new 55, 56 were in origin a halved form of 46, and were used for vowels like those heard in English butter” (t1_c:50338-50340) [C].",
    "values": {
     "daeron": {
      "value": "—",
@@ -1709,7 +1709,7 @@
   {
    "n": 57,
    "glyph": true,
-   "note_held": "Erebor invention (App E)",
+   "note_held": "Erebor invention (App E) App E gives it directly: “the invention of two new cirth, 57, 58 for ps and ts” (t1_c:50346-50347) [C].",
    "values": {
     "daeron": {
      "value": "—",
@@ -1734,7 +1734,7 @@
   {
    "n": 58,
    "glyph": true,
-   "note_held": "Erebor invention (App E)",
+   "note_held": "Erebor invention (App E) App E gives it directly: “the invention of two new cirth, 57, 58 for ps and ts” (t1_c:50346-50347) [C].",
    "values": {
     "daeron": {
      "value": "—",
@@ -1820,6 +1820,12 @@
    "what": "a CITATION for the ~29 certh Appendix E's prose does not name",
    "why": "Appendix E's Table of Values is a FIGURE. The archive holds those values as [I-H], read off the plate and marked as such in their own notes; what they lack is a citation, not a value.",
    "what_would_answer": "a prose witness for each. The three rearrangement principles do not supply one: they say what a shape MEANS given a base certh, not which certh is the base."
+  },
+  {
+   "what": "rendering the Cirth as TEXT rather than as SVG",
+   "why": "the archive now HAS a freely-licensed Cirth font -- Arda CSUR, 128/128 of the ConScript Cirth block, OFL-1.1 and GPL+FE, published. What it does NOT have is the MAPPING: which certh number sits at which codepoint. The font's glyph names are CIDs and carry no evidence, and the ConScript registry could not be reached to check. Assuming certh N = U+E07F+N would be a guess dressed as a feature.",
+   "what_would_answer": "the ConScript Unicode Registry's Cirth chart, read directly. One page. Until then the panel draws the archive's own 60 SVG certar, which are correct and merely not selectable.",
+   "note": "The TENGWAR half needed no such wait: gen_tengwar.py's exported table already carries verified CSUR codepoints, so Arda CSUR is wired into the transcriber's picker today as a third face covering all 128 tengwar."
   },
   {
    "what": "a freely-licensed Cirth FONT",
