@@ -365,31 +365,6 @@
    }
   },
   {
-   "file": "Rúmilian Numerals.pdf",
-   "tier": 3,
-   "attribution": "Helios De Rosario Martinez, Tengwestie (elvish.org), retrieved 13 Aug 2026",
-   "note": "On Rumil's numerals. Its own technical note says Rumilian characters are not displayed as printed -- so read what it TRANSLITERATES, and do not take a rendered glyph from it as a codepoint.",
-   "primary_text": false,
-   "present": true,
-   "bound": 0,
-   "cited": 0,
-   "first_publication": "posthumous",
-   "first_publication_year": null,
-   "first_publication_basis": "THE MEDIUM SETTLES IT. This row's artefact is a page fetched from the World Wide Web -- the register records it as 'Helios De Rosario Martinez, Tengwestie (elvish.org), retrieved 13 Aug 2026'. The Web dates from 1991 and Tolkien died on 2 September 1973, so nothing retrieved from it reached print in his lifetime. A fact about the medium, not an inference about the author: no year was needed and none is claimed, which is why the year is null.",
-   "bytes": 563577,
-   "pages": 13,
-   "corpus_file": "t3_rumilian_numerals.txt",
-   "words": 5947,
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/rumiliannumerals.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_rumilian_numerals.txt)"
-   }
-  },
-  {
    "file": "Sarati Rúmilo Quenyava.pdf",
    "tier": 3,
    "attribution": "Ryszard Derdzinski, Gwaith-i-Phethdain (retrieved 13 Aug 2026)",
@@ -3390,31 +3365,6 @@
    }
   },
   {
-   "file": "eldamo_EIP_earlyilkorin.pdf",
-   "tier": 3,
-   "attribution": "Helios De Rosario Martínez, Early Ilkorin Phonology (2008)",
-   "note": "Ilkorin is one of the languages the archive has almost nothing on -- it survives mostly in the Etymologies. 8pp, from Tengwestie. FETCHED 31 July 2026 by map/eldamo_sources.py from the address Eldamo cites. EXTRACTION: CORRECTLY PRESENT.",
-   "primary_text": false,
-   "present": true,
-   "bound": 0,
-   "cited": 0,
-   "first_publication": "posthumous",
-   "first_publication_year": 2008,
-   "first_publication_basis": "THE REGISTER'S OWN RECORD OF THIS VOLUME. Its attribution reads 'Helios De Rosario Martínez, Early Ilkorin Phonology (2008)'; the first year in it, 2008, is the volume's own date and the later ones are revisions. 2008 is after 2 September 1973, the day Tolkien died.",
-   "bytes": 326263,
-   "pages": 26,
-   "corpus_file": "t3_eldamo_eip_earlyilkorin.txt",
-   "words": 12270,
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/earlyilkorin.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_eldamo_eip_earlyilkorin.txt)"
-   }
-  },
-  {
    "file": "eldamo_HPITN_1923_phon.pdf",
    "tier": 3,
    "attribution": "Roman Rausch, Historical Phonologies of Ilkorin, Telerin and Noldorin around 1923 (2008)",
@@ -4566,28 +4516,6 @@
    }
   },
   {
-   "file": "ardalambion_khuzdul.htm",
-   "tier": 3,
-   "attribution": "Helge Fauskanger, Ardalambion (https://www.ardalambion.org/khuzdul.htm)",
-   "note": "Tier-3 scholarship on Tolkien's languages; [EXT] for any claim resting on it. Recovered 18 Aug 2026 from www.ardalambion.org; extractor map/gen_ardalambion.py.",
-   "primary_text": false,
-   "present": true,
-   "first_publication": "posthumous",
-   "first_publication_year": null,
-   "first_publication_basis": "THE MEDIUM SETTLES IT. This row's artefact is a page fetched from the World Wide Web -- the register records it as 'Helge Fauskanger, Ardalambion (https://www.ardalambion.org/khuzdul.htm)'. The Web dates from 1991 and Tolkien died on 2 September 1973, so nothing retrieved from it reached print in his lifetime. A fact about the medium, not an inference about the author: no year was needed and none is claimed, which is why the year is null.",
-   "bytes": 51375,
-   "corpus_file": "t3_ardalambion_khuzdul_htm.txt",
-   "words": 6752,
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.ardalambion.org/ardalambion_khuzdul.htm"
-    ],
-    "granularity": "item",
-    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_khuzdul_htm.txt)"
-   }
-  },
-  {
    "file": "ardalambion_lh-rh.htm",
    "tier": 3,
    "attribution": "Helge Fauskanger, Ardalambion (https://www.ardalambion.org/lh-rh.htm)",
@@ -4937,50 +4865,6 @@
     ],
     "granularity": "item",
     "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_oldsind_htm.txt)"
-   }
-  },
-  {
-   "file": "ardalambion_orkish.htm",
-   "tier": 3,
-   "attribution": "Helge Fauskanger, Ardalambion (https://www.ardalambion.org/orkish.htm)",
-   "note": "Tier-3 scholarship on Tolkien's languages; [EXT] for any claim resting on it. Recovered 18 Aug 2026 from www.ardalambion.org; extractor map/gen_ardalambion.py.",
-   "primary_text": false,
-   "present": true,
-   "first_publication": "posthumous",
-   "first_publication_year": null,
-   "first_publication_basis": "THE MEDIUM SETTLES IT. This row's artefact is a page fetched from the World Wide Web -- the register records it as 'Helge Fauskanger, Ardalambion (https://www.ardalambion.org/orkish.htm)'. The Web dates from 1991 and Tolkien died on 2 September 1973, so nothing retrieved from it reached print in his lifetime. A fact about the medium, not an inference about the author: no year was needed and none is claimed, which is why the year is null.",
-   "bytes": 31058,
-   "corpus_file": "t3_ardalambion_orkish_htm.txt",
-   "words": 4557,
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.ardalambion.org/ardalambion_orkish.htm"
-    ],
-    "granularity": "item",
-    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_orkish_htm.txt)"
-   }
-  },
-  {
-   "file": "ardalambion_p2.htm",
-   "tier": 3,
-   "attribution": "Helge Fauskanger, Ardalambion (https://www.ardalambion.org/p2.htm)",
-   "note": "Tier-3 scholarship on Tolkien's languages; [EXT] for any claim resting on it. Recovered 18 Aug 2026 from www.ardalambion.org; extractor map/gen_ardalambion.py.",
-   "primary_text": false,
-   "present": true,
-   "first_publication": "posthumous",
-   "first_publication_year": null,
-   "first_publication_basis": "THE MEDIUM SETTLES IT. This row's artefact is a page fetched from the World Wide Web -- the register records it as 'Helge Fauskanger, Ardalambion (https://www.ardalambion.org/p2.htm)'. The Web dates from 1991 and Tolkien died on 2 September 1973, so nothing retrieved from it reached print in his lifetime. A fact about the medium, not an inference about the author: no year was needed and none is claimed, which is why the year is null.",
-   "bytes": 254486,
-   "corpus_file": "t3_ardalambion_p2_htm.txt",
-   "words": 28563,
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.ardalambion.org/ardalambion_p2.htm"
-    ],
-    "granularity": "item",
-    "evidence": "the address the saved page prints of itself (corpus/t3_ardalambion_p2_htm.txt)"
    }
   },
   {
@@ -22254,46 +22138,6 @@
    }
   },
   {
-   "file": "elvishorg_errata_Parma_Errata_pdf_f4051b.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/errata/Parma-Errata.pdf)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: PDF. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_errata_parma_errata_pdf_f4051b_htm.txt",
-   "words": 2749,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/errata/Parma-Errata.pdf",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/errata/Parma-Errata.pdf"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_errata_parma_errata_pdf_f4051b_htm.txt)"
-   }
-  },
-  {
-   "file": "elvishorg_errata_VT_Errata_pdf_e929ce.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/errata/VT-Errata.pdf)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: PDF. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_errata_vt_errata_pdf_e929ce_htm.txt",
-   "words": 1857,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/errata/VT-Errata.pdf",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/errata/VT-Errata.pdf"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_errata_vt_errata_pdf_e929ce_htm.txt)"
-   }
-  },
-  {
    "file": "elvishorg_FAQ_html_ea0120.htm",
    "tier": 3,
    "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/FAQ.html)",
@@ -22751,26 +22595,6 @@
     ],
     "granularity": "item",
     "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_gwaith_calendar_calendars_h_7919b4_htm.txt)"
-   }
-  },
-  {
-   "file": "elvishorg_gwaith_calendars_htm_0281d6.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/gwaith/calendars.htm)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_gwaith_calendars_htm_0281d6_htm.txt",
-   "words": 3819,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/gwaith/calendars.htm",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/gwaith/calendars.htm"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_gwaith_calendars_htm_0281d6_htm.txt)"
    }
   },
   {
@@ -24755,26 +24579,6 @@
    }
   },
   {
-   "file": "elvishorg_gwaith_ppq_ppq_htm_6ad304.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/gwaith/ppq/ppq.htm)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_gwaith_ppq_ppq_htm_6ad304_htm.txt",
-   "words": 10477,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/gwaith/ppq/ppq.htm",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/gwaith/ppq/ppq.htm"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_gwaith_ppq_ppq_htm_6ad304_htm.txt)"
-   }
-  },
-  {
    "file": "elvishorg_gwaith_ppq_ppq_intro_htm_546c33.htm",
    "tier": 3,
    "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/gwaith/ppq/ppq/intro.htm)",
@@ -26455,26 +26259,6 @@
    }
   },
   {
-   "file": "elvishorg_LambengolmorList_index_html_833bdd.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/LambengolmorList/index.html)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_lambengolmorlist_index_html_833bdd_htm.txt",
-   "words": 1115,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/LambengolmorList/index.html",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/LambengolmorList/index.html"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_lambengolmorlist_index_html_833bdd_htm.txt)"
-   }
-  },
-  {
    "file": "elvishorg_legendarium_authors_html_d921d7.htm",
    "tier": 3,
    "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/legendarium/authors.html)",
@@ -26535,26 +26319,6 @@
    }
   },
   {
-   "file": "elvishorg_legendarium_index_html_e6f85b.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/legendarium/index.html)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_legendarium_index_html_e6f85b_htm.txt",
-   "words": 2604,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/legendarium/index.html",
-   "retrieval": {
-    "kind": "isbn",
-    "ids": [
-     "0313305307"
-    ],
-    "granularity": "item",
-    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t3_elvishorg_legendarium_index_html_e6f85b_htm.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
-   }
-  },
-  {
    "file": "elvishorg_phptest_phtml_1ea5b0.htm",
    "tier": 3,
    "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/phptest.phtml)",
@@ -26595,26 +26359,6 @@
    }
   },
   {
-   "file": "elvishorg_root_481349.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/root)",
-   "note": "EXTRACTION: CORRECTLY EMPTY at 4775 bytes -- MEASURED 10 Sep 2026: this volume's body was compared against the full text of its own capture and holds 100% of it. Across all 150 short elvish.org volumes the ratio is 1.00, worst case 1.00, zero under 90%. The page is short; the extraction is complete. Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_root_481349_htm.txt",
-   "words": 754,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/root",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/root"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_root_481349_htm.txt)"
-   }
-  },
-  {
    "file": "elvishorg_Tengwestie_6a7e15.htm",
    "tier": 3,
    "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie)",
@@ -26633,26 +26377,6 @@
     ],
     "granularity": "item",
     "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_6a7e15_htm.txt)"
-   }
-  },
-  {
-   "file": "elvishorg_Tengwestie_articles_Bellet__11705e.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/Bellet/noldplur.phtml)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_tengwestie_articles_bellet_11705e_htm.txt",
-   "words": 4435,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/Tengwestie/articles/Bellet/noldplur.phtml",
-   "retrieval": {
-    "kind": "isbn",
-    "ids": [
-     "041528080X"
-    ],
-    "granularity": "item",
-    "evidence": "printed near unmistakable publication-imprint language elsewhere in the held text (corpus/t3_elvishorg_tengwestie_articles_bellet_11705e_htm.txt), not the first three pages -- task #492, Auditor c29cfca363c1"
    }
   },
   {
@@ -26676,27 +26400,6 @@
    }
   },
   {
-   "file": "elvishorg_Tengwestie_articles_DeRosar_2a8aa6.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/earlyilkorin.pdf)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: PDF. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_tengwestie_articles_derosar_2a8aa6_htm.txt",
-   "words": 12428,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/earlyilkorin.pdf",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/earlyilkorin.pdf",
-     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/earlyilkorin.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_derosar_2a8aa6_htm.txt)"
-   }
-  },
-  {
    "file": "elvishorg_Tengwestie_articles_DeRosar_3e021e.htm",
    "tier": 3,
    "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/lightandtree.pdf)",
@@ -26715,26 +26418,6 @@
     ],
     "granularity": "item",
     "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_derosar_3e021e_htm.txt)"
-   }
-  },
-  {
-   "file": "elvishorg_Tengwestie_articles_DeRosar_4e38cb.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlightcommentary.phtml)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_tengwestie_articles_derosar_4e38cb_htm.txt",
-   "words": 1526,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlightcommentary.phtml",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlightcommentary.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_derosar_4e38cb_htm.txt)"
    }
   },
   {
@@ -26841,88 +26524,6 @@
    }
   },
   {
-   "file": "elvishorg_Tengwestie_articles_DeRosar_9ce7c8.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.html)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_tengwestie_articles_derosar_9ce7c8_htm.txt",
-   "words": 10797,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.html",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.html",
-     "https://www.elvish.org/Tengwestie/articles/template.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_derosar_9ce7c8_htm.txt)"
-   }
-  },
-  {
-   "file": "elvishorg_Tengwestie_articles_DeRosar_9f8c73.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/quenyacompoundtenses.phtml)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_tengwestie_articles_derosar_9f8c73_htm.txt",
-   "words": 6417,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/quenyacompoundtenses.phtml",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/quenyacompoundtenses.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_derosar_9f8c73_htm.txt)"
-   }
-  },
-  {
-   "file": "elvishorg_Tengwestie_articles_DeRosar_a61d79.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.pdf)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: PDF. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_tengwestie_articles_derosar_a61d79_htm.txt",
-   "words": 10493,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.pdf",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.pdf",
-     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/eldarinaccent.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_derosar_a61d79_htm.txt)"
-   }
-  },
-  {
-   "file": "elvishorg_Tengwestie_articles_DeRosar_aa7e9e.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlight.phtml)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_tengwestie_articles_derosar_aa7e9e_htm.txt",
-   "words": 5600,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlight.phtml",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/limlight.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_derosar_aa7e9e_htm.txt)"
-   }
-  },
-  {
    "file": "elvishorg_Tengwestie_articles_DeRosar_b7c9ff.htm",
    "tier": 3,
    "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml)",
@@ -26940,26 +26541,6 @@
     ],
     "granularity": "item",
     "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_derosar_b7c9ff_htm.txt)"
-   }
-  },
-  {
-   "file": "elvishorg_Tengwestie_articles_DeRosar_d360bf.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/lightandtree.phtml)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_tengwestie_articles_derosar_d360bf_htm.txt",
-   "words": 8552,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/lightandtree.phtml",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/lightandtree.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_derosar_d360bf_htm.txt)"
    }
   },
   {
@@ -27001,47 +26582,6 @@
     ],
     "granularity": "item",
     "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_derosar_dd0223_htm.txt)"
-   }
-  },
-  {
-   "file": "elvishorg_Tengwestie_articles_DeRosar_e3abd0.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/rumiliannumerals.phtml)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_tengwestie_articles_derosar_e3abd0_htm.txt",
-   "words": 6350,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/rumiliannumerals.phtml",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/rumiliannumerals.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_derosar_e3abd0_htm.txt)"
-   }
-  },
-  {
-   "file": "elvishorg_Tengwestie_articles_DeRosar_ebb630.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.pdf)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: PDF. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_tengwestie_articles_derosar_ebb630_htm.txt",
-   "words": 13962,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.pdf",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.pdf",
-     "https://www.elvish.org/Tengwestie/articles/DeRosarioMartinez/natureofmiddleearthreview.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_derosar_ebb630_htm.txt)"
    }
   },
   {
@@ -27128,26 +26668,6 @@
    }
   },
   {
-   "file": "elvishorg_Tengwestie_articles_Hostett_8b3d8b.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/Hostetter/sindll.phtml)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_tengwestie_articles_hostett_8b3d8b_htm.txt",
-   "words": 2186,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/Tengwestie/articles/Hostetter/sindll.phtml",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/Hostetter/sindll.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_hostett_8b3d8b_htm.txt)"
-   }
-  },
-  {
    "file": "elvishorg_Tengwestie_articles_Hostett_e59f7d.htm",
    "tier": 3,
    "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/Hostetter/elvishreincarnationgloss.phtml)",
@@ -27165,26 +26685,6 @@
     ],
     "granularity": "item",
     "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_hostett_e59f7d_htm.txt)"
-   }
-  },
-  {
-   "file": "elvishorg_Tengwestie_articles_Rausch__700fe2.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/Rausch/causquen.phtml)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_tengwestie_articles_rausch_700fe2_htm.txt",
-   "words": 7293,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/Tengwestie/articles/Rausch/causquen.phtml",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/Rausch/causquen.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_rausch_700fe2_htm.txt)"
    }
   },
   {
@@ -27206,26 +26706,6 @@
     ],
     "granularity": "item",
     "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_rausch_ed8d27_htm.txt)"
-   }
-  },
-  {
-   "file": "elvishorg_Tengwestie_articles_Renk_no_518bfb.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/Renk/noldintenspref.phtml)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_tengwestie_articles_renk_no_518bfb_htm.txt",
-   "words": 2866,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/Tengwestie/articles/Renk/noldintenspref.phtml",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/Renk/noldintenspref.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_renk_no_518bfb_htm.txt)"
    }
   },
   {
@@ -27267,49 +26747,6 @@
     ],
     "granularity": "item",
     "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_templat_36a449_htm.txt)"
-   }
-  },
-  {
-   "file": "elvishorg_Tengwestie_articles_Wynne_g_823ea0.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/Wynne/goldpat.phtml)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_tengwestie_articles_wynne_g_823ea0_htm.txt",
-   "words": 15074,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/Tengwestie/articles/Wynne/goldpat.phtml",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/Wynne/goldpat.phtml",
-     "https://www.elvish.org/Tengwestie/articles/Hostetter/noldpat.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_wynne_g_823ea0_htm.txt)"
-   }
-  },
-  {
-   "file": "elvishorg_Tengwestie_articles_Wynne_g_9a4cc1.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/Tengwestie/articles/Wynne/goldpat.pdf)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: PDF. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_tengwestie_articles_wynne_g_9a4cc1_htm.txt",
-   "words": 13125,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/Tengwestie/articles/Wynne/goldpat.pdf",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/Tengwestie/articles/Wynne/goldpat.pdf",
-     "http://www.elvish.org/Tengwestie/articles/Hostetter/noldpat.phtml",
-     "http://www.elvish.org/Tengwestie/articles/Wynne/goldpat.phtml"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_tengwestie_articles_wynne_g_9a4cc1_htm.txt)"
    }
   },
   {
@@ -27433,26 +26870,6 @@
    }
   },
   {
-   "file": "elvishorg_VT_index_html_eca76f.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/VT/index.html)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: HTML. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_vt_index_html_eca76f_htm.txt",
-   "words": 879,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/VT/index.html",
-   "retrieval": {
-    "kind": "issn",
-    "ids": [
-     "10547606"
-    ],
-    "granularity": "serial",
-    "evidence": "the ISSN printed in this issue (corpus/t3_elvishorg_vt_index_html_eca76f_htm.txt). It reaches the periodical; this row's own title names the issue."
-   }
-  },
-  {
    "file": "elvishorg_VT_sample_html_d3ccfe.htm",
    "tier": 3,
    "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/VT/sample.html)",
@@ -27493,26 +26910,6 @@
    }
   },
   {
-   "file": "elvishorg_VT_VT43sample_pdf_9c8ddd.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/VT/VT43sample.pdf)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: PDF. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_vt_vt43sample_pdf_9c8ddd_htm.txt",
-   "words": 17016,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/VT/VT43sample.pdf",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/VT/VT43sample.pdf"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_vt_vt43sample_pdf_9c8ddd_htm.txt)"
-   }
-  },
-  {
    "file": "elvishorg_VT_VT_index_en_pdf_fafc45.htm",
    "tier": 3,
    "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/VT/VT-index-en.pdf)",
@@ -27530,26 +26927,6 @@
     ],
     "granularity": "item",
     "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_vt_vt_index_en_pdf_fafc45_htm.txt)"
-   }
-  },
-  {
-   "file": "elvishorg_VT_VT_index_sp_pdf_6a3fa2.htm",
-   "tier": 3,
-   "attribution": "Elvish Linguistic Fellowship, elvish.org (https://www.elvish.org/VT/VT-index-sp.pdf)",
-   "note": "Tier-3 scholarship ON Tolkien's languages; [EXT] for any claim resting on it. **THIS PUBLISHER IS THE ROUTE BY WHICH MUCH OF TOLKIEN'S OWN LINGUISTIC WRITING REACHED PRINT, so an article here may QUOTE him at length -- the quotation is his and the argument around it is not.** LICENCE: NOT DECLARED on the captured pages; recorded as null rather than guessed, because absence of a grant is not a grant. Published under his standing authorization of 16 August 2026, re-affirmed 10 September 2026. Source kind: PDF. Extractor map/gen_elvishorg.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_elvishorg_vt_vt_index_sp_pdf_6a3fa2_htm.txt",
-   "words": 31415,
-   "text_only": true,
-   "source_url": "https://www.elvish.org/VT/VT-index-sp.pdf",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://www.elvish.org/VT/VT-index-sp.pdf"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_elvishorg_vt_vt_index_sp_pdf_6a3fa2_htm.txt)"
    }
   },
   {
@@ -29416,12 +28793,12 @@
    "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: cc_by_nc_nd_4, as the source declares it. Published under C498 and his standing authorization of 16 August 2026. Extracted: OCR via tesseract -l eng at 300 dpi (research/ocr/p3b/1b0e1462f92eb73e.eng.txt). Extractor map/p3_ingest.py.",
    "primary_text": false,
    "present": false,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "corpus_file": "t3_p3_eprints_gla_ac_uk_379040_1b0e14.txt",
    "words": 7420,
    "ocr_text": true,
    "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "text_only": true,
    "source_url": "https://eprints.gla.ac.uk/379040/2/379040.pdf",
    "retrieval": {
@@ -29847,12 +29224,12 @@
    "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: OCR via tesseract -l tur+eng at 300 dpi (research/ocr/p3b/5dd99bb87f5310ec.tur+eng.txt). Extractor map/p3_ingest.py.",
    "primary_text": false,
    "present": false,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "corpus_file": "t3_p3_katalog_marmara_edu_tr_t0049285_5dd99b.txt",
    "words": 58688,
    "ocr_text": true,
    "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "text_only": true,
    "source_url": "https://katalog.marmara.edu.tr/veriler/yordambt/cokluortam/3B/T0049285.pdf",
    "retrieval": {
@@ -30412,12 +29789,12 @@
    "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: OCR via tesseract -l spa at 300 dpi (research/ocr/p3b/0a55bb208d9c87ea.spa.txt). Extractor map/p3_ingest.py.",
    "primary_text": false,
    "present": false,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "corpus_file": "t3_p3_memoria_fahce_unlp_edu_ar_pr_1088_0a55bb.txt",
    "words": 3753,
    "ocr_text": true,
    "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "text_only": true,
    "source_url": "https://www.memoria.fahce.unlp.edu.ar/art_revistas/pr.10887/pr.10887.pdf",
    "retrieval": {
@@ -30878,12 +30255,12 @@
    "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: OCR via tesseract -l deu+eng at 300 dpi (research/ocr/p3b/HS11.deu+eng.txt). Extractor map/p3_ingest.py.",
    "primary_text": false,
    "present": false,
+   "text_provenance": "ocr-derived",
+   "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "corpus_file": "t3_p3_scriptorium_oxoniae_de_hs11_short_f14e67.txt",
    "words": 6107,
    "ocr_text": true,
    "ocr_text_note": "First line carries map/ocr_scans.py's OCR banner. Machine-read from a scan under the owner's 'OCR yes' ruling; excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
-   "text_provenance": "ocr-derived",
-   "text_provenance_note": "Machine-read from a scan by map/ocr_scans.py under the owner's 'OCR yes' ruling; detected here from the OCR banner the tool writes into the text itself rather than from a filename. NOT a publisher's text layer, excluded from the citable set, and it may never settle an Elvish form -- tesseract destroys precisely the diacritic-bearing tokens these volumes are wanted for.",
    "text_only": true,
    "source_url": "http://scriptorium-oxoniae.de/pdf/HS11_short_view.pdf",
    "retrieval": {
@@ -32359,9 +31736,9 @@
   {
    "file": "t2_a_the_silmarillion_tables.txt",
    "tier": 5,
-   "content_tier": 1,
+   "content_tier": 2,
    "attribution": "read by this archive from The Silmarillion's five genealogical plates, drawn by Christopher Tolkien",
-   "note": "Five plates carrying six family trees, printed as images with no text layer -- pdftotext returns one byte, a form feed. Read by a person, not OCR'd (C867). Registered content_tier 1 because the plates are Tolkien's own published genealogy; the main entry sits at tier 2 for a separate, deliberate reason -- his ruling C872, that no instrument can verify a name transcribed from a JPEG, so every name here defaults to [I-H] until a second reading exists."
+   "note": "Five plates carrying six family trees, printed as images with no text layer -- pdftotext returns one byte, a form feed. Read by a person, not OCR'd (C867). content_tier 2, the same rank as its main entry, by his ruling C872: no instrument can verify a name transcribed from a JPEG, so every name here defaults to [I-H] until a second reading exists. It read content_tier 1 until 24 Sep 2026, when the one shared register reader (C1109) refused the file for being claimed at two different ranks."
   },
   {
    "file": "t1_letter_tg002_10_june_1971_my_dear_ladies.txt",
@@ -32960,8 +32337,8 @@
     "unrecorded": 18
    },
    "3": {
-    "total": 1631,
-    "with_path": 494,
+    "total": 1601,
+    "with_path": 464,
     "unrecorded": 1137
    },
    "4": {
@@ -32972,12 +32349,12 @@
   },
   "by_kind": {
    "unrecorded": 1185,
-   "isbn": 67,
-   "url": 422,
-   "issn": 53
+   "isbn": 65,
+   "url": 395,
+   "issn": 52
   },
-  "total": 1727,
-  "with_path": 542,
+  "total": 1697,
+  "with_path": 512,
   "unrecorded": 1185
  },
  "rule": "Where two sources disagree, the lower tier number wins. A tier-5 file is corrected by any tier above it. Tolkien's own words quoted inside a tier-2 book carry tier-1 authority; the editor's framing does not.",

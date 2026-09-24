@@ -1,7 +1,7 @@
 {
  "note": "Quoted spans bound to their source by EVIDENCE, not by reading the prose around them. A span carrying `b` verifies in exactly one book of the corpus, or in one book at the LOWEST tier that holds it (`by`:`tier`, with `over` naming how many it outranked). A span carrying `bb` verifies in SEVERAL books at the same lowest tier: every witness is named and none is asserted as THE source. Proximity to a book name is not attribution, and pairing by proximity was measured at a 20% artifact rate before this file existed. map/attrib_check.py re-verifies every binding here on every run.",
  "minwords": 7,
- "n": 1937,
+ "n": 1933,
  "bindings": [
   {
    "d": "arda_ainur.json",
@@ -1221,14 +1221,14 @@
    "d": "arda_apparatus.json",
    "r": "?",
    "f": "text",
-   "q": "I serve only the Lord of the Mark, Théoden King son of Thengel",
+   "q": "I serve only the Lord of the Mark, Théoden King son of Thengel",
    "b": "t1_c_the_lord_of_the_rings.txt"
   },
   {
    "d": "arda_apparatus.json",
    "r": "?",
    "f": "text",
-   "q": "I serve only the Lord of the Mark, Théoden King son of Thengel",
+   "q": "I serve only the Lord of the Mark, Théoden King son of Thengel",
    "b": "t1_c_the_lord_of_the_rings.txt"
   },
   {
@@ -1260,16 +1260,7 @@
    "q": "Uglúk to the cesspool, sha! the dungfilth; the great Saruman-fool, skai!",
    "b": "t1_12_the_peoples_of_middle_earth.txt",
    "by": "tier",
-   "over": 2
-  },
-  {
-   "d": "arda_apparatus.json",
-   "r": "?",
-   "f": "text",
-   "q": "Uglúk to the cesspool, sha! the dungfilth; the great Saruman-fool, skai!",
-   "b": "t1_12_the_peoples_of_middle_earth.txt",
-   "by": "tier",
-   "over": 2
+   "over": 1
   },
   {
    "d": "arda_apparatus.json",
@@ -1430,16 +1421,7 @@
    "q": "this tongue has been sketched in some detail of structure, if with a very small vocabulary",
    "b": "t1_12_the_peoples_of_middle_earth.txt",
    "by": "tier",
-   "over": 3
-  },
-  {
-   "d": "arda_apparatus.json",
-   "r": "?",
-   "f": "text",
-   "q": "this tongue has been sketched in some detail of structure, if with a very small vocabulary",
-   "b": "t1_12_the_peoples_of_middle_earth.txt",
-   "by": "tier",
-   "over": 3
+   "over": 2
   },
   {
    "d": "arda_apparatus.json",
@@ -1897,16 +1879,7 @@
    "q": "this tongue has been sketched in some detail of structure, if with a very small vocabulary",
    "b": "t1_12_the_peoples_of_middle_earth.txt",
    "by": "tier",
-   "over": 3
-  },
-  {
-   "d": "arda_apparatus.json",
-   "r": "?",
-   "f": "text",
-   "q": "this tongue has been sketched in some detail of structure, if with a very small vocabulary",
-   "b": "t1_12_the_peoples_of_middle_earth.txt",
-   "by": "tier",
-   "over": 3
+   "over": 2
   },
   {
    "d": "arda_apparatus.json",
@@ -2106,16 +2079,7 @@
    "q": "this tongue has been sketched in some detail of structure, if with a very small vocabulary",
    "b": "t1_12_the_peoples_of_middle_earth.txt",
    "by": "tier",
-   "over": 3
-  },
-  {
-   "d": "arda_apparatus.json",
-   "r": "?",
-   "f": "text",
-   "q": "this tongue has been sketched in some detail of structure, if with a very small vocabulary",
-   "b": "t1_12_the_peoples_of_middle_earth.txt",
-   "by": "tier",
-   "over": 3
+   "over": 2
   },
   {
    "d": "arda_apparatus.json",
@@ -2203,10 +2167,8 @@
    "d": "arda_apparatus.json",
    "r": "?",
    "f": "text",
-   "q": "this tongue has been sketched in some detail of structure, if with a very small vocabulary",
-   "b": "t1_12_the_peoples_of_middle_earth.txt",
-   "by": "tier",
-   "over": 3
+   "q": "The Lady of the Golden Wood is on our side, it seems",
+   "b": "t1_d_unfinished_tales_of_numenor_and_middle_earth.txt"
   },
   {
    "d": "arda_apparatus.json",
@@ -2215,7 +2177,7 @@
    "q": "this tongue has been sketched in some detail of structure, if with a very small vocabulary",
    "b": "t1_12_the_peoples_of_middle_earth.txt",
    "by": "tier",
-   "over": 3
+   "over": 2
   },
   {
    "d": "arda_apparatus.json",
@@ -13705,11 +13667,8 @@
    "q": "Words, Phrases & Passages in The Lord of the Rings",
    "bb": [
     "t3_academy_2019_11_07_quenya_grammar_p_0be504eb_htm.txt",
-    "t3_elvishorg_tengwestie_articles_derosar_4e38cb_htm.txt",
     "t3_elvishorg_tengwestie_articles_derosar_6ec6e1_htm.txt",
-    "t3_elvishorg_tengwestie_articles_derosar_9f8c73_htm.txt",
     "t3_elvishorg_tengwestie_articles_derosar_dd0223_htm.txt",
-    "t3_elvishorg_tengwestie_articles_rausch_700fe2_htm.txt",
     "t3_elvishorg_tengwestie_articles_rausch_ed8d27_htm.txt"
    ],
    "by": "tie"
@@ -13721,11 +13680,8 @@
    "q": "Words, Phrases & Passages in The Lord of the Rings",
    "bb": [
     "t3_academy_2019_11_07_quenya_grammar_p_0be504eb_htm.txt",
-    "t3_elvishorg_tengwestie_articles_derosar_4e38cb_htm.txt",
     "t3_elvishorg_tengwestie_articles_derosar_6ec6e1_htm.txt",
-    "t3_elvishorg_tengwestie_articles_derosar_9f8c73_htm.txt",
     "t3_elvishorg_tengwestie_articles_derosar_dd0223_htm.txt",
-    "t3_elvishorg_tengwestie_articles_rausch_700fe2_htm.txt",
     "t3_elvishorg_tengwestie_articles_rausch_ed8d27_htm.txt"
    ],
    "by": "tie"
