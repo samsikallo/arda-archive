@@ -1,9 +1,13 @@
 {
  "what": "C499 passages for the HELD corpus, tier 1. A container plus its passages, joined by container_id.",
+ "tier": 1,
+ "part": 1,
+ "parts": 1,
  "this_is_one_shard_of_several": true,
  "where_else": [
   "arda_passages_t2.json",
   "arda_passages_t3.json",
+  "arda_passages_t3_2.json",
   "arda_passages_t4.json",
   "arda_passages.json (the 204 web-capture containers)"
  ],
