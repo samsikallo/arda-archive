@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # THE TREE THIS TOOL WRITES INTO. This was an absolute "/home/raz/samsi/..."
+if __name__ == "__main__":
+    # C1140-3: an unknown flag refuses before anything runs. This file is ALSO published as site/gen_arda_map.py
+    # (regen_check holds the two identical), and site/ has no argv_guard -- so the published copy runs without it.
+    try: import argv_guard
+    except ImportError: argv_guard = None
+    if argv_guard: argv_guard.refuse_unknown(__file__)
 # path, so every clone's copy of this file wrote into the LIVE archive -- the one
 # thing the clones exist to prevent ("two sessions writing one tree is how this
 # archive loses work"). On 29 July a clone's stale generator overwrote
