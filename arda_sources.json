@@ -33649,33 +33649,16 @@
    }
   },
   {
-   "file": "p3_elendilion_pl_02_75777f.pl_2023_02",
+   "file": "p3_elendilion_pl_2_65842b.pl_page_2",
    "tier": 3,
-   "attribution": "Elendilion (Polish Tolkien news service) (http://www.elendilion.pl/2023/02/)",
+   "attribution": "Elendilion (Polish Tolkien news service) (http://www.elendilion.pl/page/2/)",
    "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 211 chrome line(s) stripped, measured over 400 page(s) of research/fetched/www.elendilion.pl. Extractor map/p3_ingest.py.",
    "primary_text": false,
    "present": false,
-   "corpus_file": "t3_p3_elendilion_pl_02_75777f_pl_2023_02.txt",
-   "words": 1475,
+   "corpus_file": "t3_p3_elendilion_pl_2_65842b_pl_page_2.txt",
+   "words": 5920,
    "text_only": true,
-   "source_url": "http://www.elendilion.pl/2023/02/",
-   "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
-   }
-  },
-  {
-   "file": "p3_elendilion_pl_06_890aef.pl_2017_06",
-   "tier": 3,
-   "attribution": "Elendilion (Polish Tolkien news service) (http://www.elendilion.pl/2017/06/)",
-   "note": "EXTRACTION: SHORT at 2705 bytes, and the text is the whole of what the capture carries (HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 211 chrome line(s) stripped, measured over 400 page(s) of research/fetched/www.elendilion.pl). Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 211 chrome line(s) stripped, measured over 400 page(s) of research/fetched/www.elendilion.pl. Extractor map/p3_ingest.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_p3_elendilion_pl_06_890aef_pl_2017_06.txt",
-   "words": 386,
-   "text_only": true,
-   "source_url": "http://www.elendilion.pl/2017/06/",
+   "source_url": "http://www.elendilion.pl/page/2/",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -33781,6 +33764,23 @@
    "words": 4487,
    "text_only": true,
    "source_url": "http://www.elendilion.pl/category/english/",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_elendilion_pl_felieton_b4f869.pl_category_felieton",
+   "tier": 3,
+   "attribution": "www.elendilion.pl (http://www.elendilion.pl/category/felieton/)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 211 chrome line(s) stripped, measured over 400 page(s) of research/fetched/www.elendilion.pl. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_elendilion_pl_felieton_b4f869_pl_category_felieto.txt",
+   "words": 8459,
+   "text_only": true,
+   "source_url": "http://www.elendilion.pl/category/felieton/",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -44472,6 +44472,23 @@
    }
   },
   {
+   "file": "p3_encyclopedia_of_arda_com_lexicon_63d30f.html",
+   "tier": 3,
+   "attribution": "Mark Fisher (The Encyclopedia of Arda), with contributors (https://www.encyclopedia-of-arda.com/lexicon-Z.html)",
+   "note": "EXTRACTION: SHORT at 4241 bytes, and the text is the whole of what the capture carries (HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 169 chrome line(s) stripped, measured over 400 page(s) of research/fetched/www.encyclopedia-of-arda.com). Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: As the source itself states, verbatim: \"Original content © copyright Mark Fisher 1997-2026. All rights reserved.\" Quoted, never interpreted., as the source declares it. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 169 chrome line(s) stripped, measured over 400 page(s) of research/fetched/www.encyclopedia-of-arda.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_encyclopedia_of_arda_com_lexicon_63d30f_html.txt",
+   "words": 673,
+   "text_only": true,
+   "source_url": "https://www.encyclopedia-of-arda.com/lexicon-Z.html",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_encyclopedia_of_arda_com_lexicon_66a5c2.html",
    "tier": 3,
    "attribution": "Mark Fisher (The Encyclopedia of Arda), with contributors (https://www.encyclopedia-of-arda.com/lexicon-H.html)",
@@ -46760,6 +46777,23 @@
    "words": 415,
    "text_only": true,
    "source_url": "https://www.encyclopedia-of-arda.com/n/narwain.html",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_encyclopedia_of_arda_com_nazgul_2cd853.html",
+   "tier": 3,
+   "attribution": "Mark Fisher (The Encyclopedia of Arda), with contributors (https://www.encyclopedia-of-arda.com/faq/nazgul.html)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: As the source itself states, verbatim: \"Original content © copyright Mark Fisher 1997-2026. All rights reserved.\" Quoted, never interpreted., as the source declares it. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 99 chrome line(s) stripped, measured over 400 page(s) of research/fetched/www.encyclopedia-of-arda.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_encyclopedia_of_arda_com_nazgul_2cd853_html.txt",
+   "words": 855,
+   "text_only": true,
+   "source_url": "https://www.encyclopedia-of-arda.com/faq/nazgul.html",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -54562,6 +54596,40 @@
    }
   },
   {
+   "file": "p3_glaemscrafu_jrrvf_com_atalante_08462c.html",
+   "tier": 3,
+   "attribution": "Benjamin Babut & Bertrand Bellet -- the pages state \"- Benjamin Babut &amp; Bertrand Bellet\" and \"Front door design &amp; graphics by Benjamin Babut, based on J. R. R. Tolkien.\" (https://glaemscrafu.jrrvf.com/english/atalante.html)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 96 chrome line(s) stripped, measured over 396 page(s) of research/fetched/glaemscrafu.jrrvf.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_glaemscrafu_jrrvf_com_atalante_08462c_html.txt",
+   "words": 882,
+   "text_only": true,
+   "source_url": "https://glaemscrafu.jrrvf.com/english/atalante.html",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_glaemscrafu_jrrvf_com_barukkhazad_0666c0.html",
+   "tier": 3,
+   "attribution": "glaemscrafu.jrrvf.com (https://glaemscrafu.jrrvf.com/french/barukkhazad.html)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 96 chrome line(s) stripped, measured over 396 page(s) of research/fetched/glaemscrafu.jrrvf.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_glaemscrafu_jrrvf_com_barukkhazad_0666c0_html.txt",
+   "words": 813,
+   "text_only": true,
+   "source_url": "https://glaemscrafu.jrrvf.com/french/barukkhazad.html",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_glaemscrafu_jrrvf_com_cantrergwae_d32ed2.html",
    "tier": 3,
    "attribution": "Benjamin Babut & Bertrand Bellet -- the pages state \"- Benjamin Babut &amp; Bertrand Bellet\" and \"Front door design &amp; graphics by Benjamin Babut, based on J. R. R. Tolkien.\" (https://glaemscrafu.jrrvf.com/german/cantrergwaelod.html)",
@@ -59600,6 +59668,23 @@
    }
   },
   {
+   "file": "p3_glyphweb_com_returnoftheking_ab6584.html",
+   "tier": 3,
+   "attribution": "Mark Fisher (Encyclopedia of Arda) (https://www.glyphweb.com/arda/returnoftheking.html)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 166 chrome line(s) stripped, measured over 400 page(s) of research/fetched/www.glyphweb.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_glyphweb_com_returnoftheking_ab6584_html.txt",
+   "words": 7484,
+   "text_only": true,
+   "source_url": "https://www.glyphweb.com/arda/returnoftheking.html",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_glyphweb_com_rider_31989c.html",
    "tier": 3,
    "attribution": "Mark Fisher (Encyclopedia of Arda) (https://www.glyphweb.com/arda/r/rider.html)",
@@ -62046,6 +62131,23 @@
    }
   },
   {
+   "file": "p3_jonathansmcintosh_wordpress_com_r_b07884.com_root",
+   "tier": 3,
+   "attribution": "jonathansmcintosh.wordpress.com (https://jonathansmcintosh.wordpress.com/)",
+   "note": "EXTRACTION: SHORT at 1817 bytes, and the text is the whole of what the capture carries (HTML via gen_ardalambion.decode_page + gen_realelvish totext (entry-content); 10 chrome line(s) stripped, measured over 24 page(s) of research/fetched/jonathansmcintosh.wordpress.com). Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (entry-content); 10 chrome line(s) stripped, measured over 24 page(s) of research/fetched/jonathansmcintosh.wordpress.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_jonathansmcintosh_wordpress_com_r_b07884_com_root.txt",
+   "words": 242,
+   "text_only": true,
+   "source_url": "https://jonathansmcintosh.wordpress.com/",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_journal_finfar_org_book_review_bi_541007.org_articles_book-review-binding-them-all",
    "tier": 3,
    "attribution": "journal.finfar.org (https://journal.finfar.org/articles/book-review-binding-them-all/)",
@@ -62128,6 +62230,23 @@
    }
   },
   {
+   "file": "p3_kulichki_com_3color_86533c.shtml",
+   "tier": 3,
+   "attribution": "Arda-na-Kulichkah / the Russian Tolkien Society (Палантир) (http://www.kulichki.com/tolkien/cabinet/about/3color.shtml)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 17 chrome line(s) stripped, measured over 347 page(s) of research/fetched/www.kulichki.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_kulichki_com_3color_86533c_shtml.txt",
+   "words": 3488,
+   "text_only": true,
+   "source_url": "http://www.kulichki.com/tolkien/cabinet/about/3color.shtml",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_kulichki_com_faq_d93203.shtml",
    "tier": 3,
    "attribution": "Arda-na-Kulichkah / the Russian Tolkien Society (Палантир) (http://www.kulichki.com/tolkien/cabinet/faq.shtml)",
@@ -62179,6 +62298,23 @@
    }
   },
   {
+   "file": "p3_kulichki_com_koshel81_17c64a.shtml",
+   "tier": 3,
+   "attribution": "Arda-na-Kulichkah / the Russian Tolkien Society (Палантир) (http://www.kulichki.com/tolkien/arhiv/manuscr/koshel81.shtml)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 17 chrome line(s) stripped, measured over 347 page(s) of research/fetched/www.kulichki.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_kulichki_com_koshel81_17c64a_shtml.txt",
+   "words": 5805,
+   "text_only": true,
+   "source_url": "http://www.kulichki.com/tolkien/arhiv/manuscr/koshel81.shtml",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_kulichki_com_shippi_e0abdb.html",
    "tier": 3,
    "attribution": "Arda-na-Kulichkah / the Russian Tolkien Society (Палантир) (http://www.kulichki.com/tolkien/cabinet/about/shippi.html)",
@@ -62196,6 +62332,40 @@
    }
   },
   {
+   "file": "p3_lalaithmesp_blogspot_com_03_c5c57d.com_2016_03",
+   "tier": 3,
+   "attribution": "Andreas Moehn (Lalaith) (https://lalaithmesp.blogspot.com/2016/03/)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 199 chrome line(s) stripped, measured over 156 page(s) of research/fetched/lalaithmesp.blogspot.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_lalaithmesp_blogspot_com_03_c5c57d_com_2016_03.txt",
+   "words": 1057,
+   "text_only": true,
+   "source_url": "https://lalaithmesp.blogspot.com/2016/03/",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_lalaithmesp_blogspot_com_05_56283c.com_2017_05",
+   "tier": 3,
+   "attribution": "Andreas Moehn (Lalaith) (https://lalaithmesp.blogspot.com/2017/05/)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: copyright issue with Ace came up, which required a revision of the \"Hobbit\", anyway. But by that time, the 1960 material had apparently been misplaced and, pity, nothing, as the source declares it. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 238 chrome line(s) stripped, measured over 156 page(s) of research/fetched/lalaithmesp.blogspot.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_lalaithmesp_blogspot_com_05_56283c_com_2017_05.txt",
+   "words": 3470,
+   "text_only": true,
+   "source_url": "https://lalaithmesp.blogspot.com/2017/05/",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_lalaithmesp_blogspot_com_05_807342.com_2016_05",
    "tier": 3,
    "attribution": "Andreas Moehn (Lalaith) (https://lalaithmesp.blogspot.com/2016/05/)",
@@ -62206,6 +62376,23 @@
    "words": 355,
    "text_only": true,
    "source_url": "https://lalaithmesp.blogspot.com/2016/05/",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_lalaithmesp_blogspot_com_06_5275c2.com_2017_06",
+   "tier": 3,
+   "attribution": "Andreas Moehn (Lalaith) (https://lalaithmesp.blogspot.com/2017/06/)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 193 chrome line(s) stripped, measured over 156 page(s) of research/fetched/lalaithmesp.blogspot.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_lalaithmesp_blogspot_com_06_5275c2_com_2017_06.txt",
+   "words": 1000,
+   "text_only": true,
+   "source_url": "https://lalaithmesp.blogspot.com/2017/06/",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -65676,6 +65863,23 @@
    }
   },
   {
+   "file": "p3_nuova_tolkieniana_net_nota_66_tra_ca92c9.php_2022_12_22_nota-66-traduzione-di-wizard-in-italiano",
+   "tier": 3,
+   "attribution": "Nuova Tolkieniana Net (https://nuova.tolkieniana.net/index.php/2022/12/22/nota-66-traduzione-di-wizard-in-italiano/)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (entry-content); 0 chrome line(s) stripped, measured over 29 page(s) of research/fetched/nuova.tolkieniana.net. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_nuova_tolkieniana_net_nota_66_tra_ca92c9_php_2022.txt",
+   "words": 1113,
+   "text_only": true,
+   "source_url": "https://nuova.tolkieniana.net/index.php/2022/12/22/nota-66-traduzione-di-wizard-in-italiano/",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_nuova_tolkieniana_net_nota_99_sul_75cae8.php_2022_12_05_nota-99-sulla-terra-di-mezzo",
    "tier": 3,
    "attribution": "Nuova Tolkieniana Net (https://nuova.tolkieniana.net/index.php/2022/12/05/nota-99-sulla-terra-di-mezzo/)",
@@ -66162,6 +66366,46 @@
     "kind": "unrecorded",
     "ids": [],
     "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_pillars_taylor_edu_Full_Issue_200_c60759.cgi_article_1136_context_inklings_forever",
+   "tier": 3,
+   "attribution": "pillars.taylor.edu (https://pillars.taylor.edu/context/inklings_forever/article/1136/viewcontent/Full_Issue_2006__Volume_V_.pdf)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_1136_context_inklings_forever, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_pillars_taylor_edu_full_issue_200_c60759_cgi_arti.txt",
+   "words": 143916,
+   "text_only": true,
+   "source_url": "https://pillars.taylor.edu/context/inklings_forever/article/1136/viewcontent/Full_Issue_2006__Volume_V_.pdf",
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://pillars.taylor.edu/context/inklings_forever/article/1136/viewcontent/Full_Issue_2006__Volume_V_.pdf"
+    ],
+    "granularity": "item",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_p3_pillars_taylor_edu_full_issue_200_c60759_cgi_arti.txt)"
+   }
+  },
+  {
+   "file": "p3_pillars_taylor_edu_Full_Text_b6fb66.cgi_article_1250_context_inklings_forever",
+   "tier": 3,
+   "attribution": "pillars.taylor.edu (https://pillars.taylor.edu/context/inklings_forever/article/1250/viewcontent/Full_Text.pdf)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_1250_context_inklings_forever, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_pillars_taylor_edu_full_text_b6fb66_cgi_article_1.txt",
+   "words": 86443,
+   "text_only": true,
+   "source_url": "https://pillars.taylor.edu/context/inklings_forever/article/1250/viewcontent/Full_Text.pdf",
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://pillars.taylor.edu/context/inklings_forever/article/1250/viewcontent/Full_Text.pdf"
+    ],
+    "granularity": "item",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_p3_pillars_taylor_edu_full_text_b6fb66_cgi_article_1.txt)"
    }
   },
   {
@@ -66913,6 +67157,28 @@
    }
   },
   {
+   "file": "p3_scholar_valpo_edu_oai_bffac3.edu_do_oai_verb_listrecords_resumptiontoken_5339248_2foai_dc_2f300_2f_2f",
+   "tier": 3,
+   "attribution": "scholar.valpo.edu (https://scholar.valpo.edu/do/oai/?verb=ListRecords&resumptionToken=5339248%2Foai_dc%2F300%2F%2F)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 0 chrome line(s) stripped, measured over 298 page(s) of research/fetched/scholar.valpo.edu. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_scholar_valpo_edu_oai_bffac3_edu_do_oai_verb_list.txt",
+   "words": 16108,
+   "text_only": true,
+   "source_url": "https://scholar.valpo.edu/do/oai/?verb=ListRecords&resumptionToken=5339248%2Foai_dc%2F300%2F%2F",
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://scholar.valpo.edu/do/oai/?verb=ListRecords&resumptionToken=5339248%2Foai_dc%2F300%2F%2F",
+     "https://scholar.valpo.edu/journaloftolkienresearch/vol24/iss2/15",
+     "https://scholar.valpo.edu/context/journaloftolkienresearch/article/1598/viewcontent/auto_convert.pdf"
+    ],
+    "granularity": "item",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_p3_scholar_valpo_edu_oai_bffac3_edu_do_oai_verb_list.txt)"
+   }
+  },
+  {
    "file": "p3_science_and_fiction_org_agental_g_bb5c06.html",
    "tier": 3,
    "attribution": "Thorsten Renk (http://www.science-and-fiction.org/elvish/agental_gender.html)",
@@ -67538,6 +67804,40 @@
    "words": 503,
    "text_only": true,
    "source_url": "https://signumuniversity.org/event/thesis-theater-emily-austin-the-road-gives-ever-on-following-the-road-motif-in-the-lord-of-the-rings/",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_silmarillionwritersguild_org_fanw_c6dd83.org_node_8552_fanwork",
+   "tier": 3,
+   "attribution": "Silmarillion Writers' Guild (https://www.silmarillionwritersguild.org/node/8552/fanwork)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (article); 2 chrome line(s) stripped, measured over 400 page(s) of research/fetched/www.silmarillionwritersguild.org. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_silmarillionwritersguild_org_fanw_c6dd83_org_node.txt",
+   "words": 5256,
+   "text_only": true,
+   "source_url": "https://www.silmarillionwritersguild.org/node/8552/fanwork",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_silmarillionwritersguild_org_fanw_ecb3ae.org_node_7903_fanwork",
+   "tier": 3,
+   "attribution": "Silmarillion Writers' Guild (https://www.silmarillionwritersguild.org/node/7903/fanwork)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (article); 2 chrome line(s) stripped, measured over 400 page(s) of research/fetched/www.silmarillionwritersguild.org. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_silmarillionwritersguild_org_fanw_ecb3ae_org_node.txt",
+   "words": 28182,
+   "text_only": true,
+   "source_url": "https://www.silmarillionwritersguild.org/node/7903/fanwork",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -71380,6 +71680,40 @@
    }
   },
   {
+   "file": "p3_tolkiendil_com_christopher_tolkie_570417.com_tolkien_christopher_tolkien_biographie",
+   "tier": 3,
+   "attribution": "www.tolkiendil.com (https://www.tolkiendil.com/tolkien/christopher_tolkien_biographie)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 602 chrome line(s) stripped, measured over 145 page(s) of research/fetched/www.tolkiendil.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_tolkiendil_com_christopher_tolkie_570417_com_tolk.txt",
+   "words": 27763,
+   "text_only": true,
+   "source_url": "https://www.tolkiendil.com/tolkien/christopher_tolkien_biographie",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_tolkiendil_com_hs4_7dbc12.com_asso_mag_hs4",
+   "tier": 3,
+   "attribution": "www.tolkiendil.com (https://www.tolkiendil.com/asso/mag/hs4)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 602 chrome line(s) stripped, measured over 145 page(s) of research/fetched/www.tolkiendil.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_tolkiendil_com_hs4_7dbc12_com_asso_mag_hs4.txt",
+   "words": 1529,
+   "text_only": true,
+   "source_url": "https://www.tolkiendil.com/asso/mag/hs4",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_tolkienestate_com_arden_smith_sys_4f371e.com_fr_savoir_arden-smith-systemes-decriture",
    "tier": 3,
    "attribution": "www.tolkienestate.com (https://www.tolkienestate.com/fr/savoir/arden-smith-systemes-decriture/)",
@@ -71961,6 +72295,23 @@
    }
   },
   {
+   "file": "p3_tolkienlibrary_com_1187_the_amate_603797.php",
+   "tier": 3,
+   "attribution": "tolkienlibrary.com (https://tolkienlibrary.com/press/1187-the-amateur-lord-of-the-rings.php)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 13 chrome line(s) stripped, measured over 113 page(s) of research/fetched/tolkienlibrary.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_tolkienlibrary_com_1187_the_amate_603797_php.txt",
+   "words": 1600,
+   "text_only": true,
+   "source_url": "https://tolkienlibrary.com/press/1187-the-amateur-lord-of-the-rings.php",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_tolkienlibrary_com_wayne_hammond_40ce7b.php",
    "tier": 3,
    "attribution": "tolkienlibrary.com (https://tolkienlibrary.com/press/wayne-hammond-christina-scull-interview.php)",
@@ -72248,6 +72599,23 @@
    }
   },
   {
+   "file": "p3_voirtolkien_hypotheses_org_12_bf24a8.org_12",
+   "tier": 3,
+   "attribution": "voirtolkien.hypotheses.org (https://voirtolkien.hypotheses.org/12)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (entry-content); 3 chrome line(s) stripped, measured over 71 page(s) of research/fetched/voirtolkien.hypotheses.org. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_voirtolkien_hypotheses_org_12_bf24a8_org_12.txt",
+   "words": 7962,
+   "text_only": true,
+   "source_url": "https://voirtolkien.hypotheses.org/12",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_voirtolkien_hypotheses_org_598_777c7f.org_598",
    "tier": 3,
    "attribution": "voirtolkien.hypotheses.org (https://voirtolkien.hypotheses.org/598)",
@@ -72279,6 +72647,26 @@
     "kind": "unrecorded",
     "ids": [],
     "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_voirtolkien_hypotheses_org_688_598a47.org_688",
+   "tier": 3,
+   "attribution": "voirtolkien.hypotheses.org (https://voirtolkien.hypotheses.org/688)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (entry-content); 3 chrome line(s) stripped, measured over 71 page(s) of research/fetched/voirtolkien.hypotheses.org. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_voirtolkien_hypotheses_org_688_598a47_org_688.txt",
+   "words": 4272,
+   "text_only": true,
+   "source_url": "https://voirtolkien.hypotheses.org/688",
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://scholar.valpo.edu/journaloftolkienresearch/vol7/iss1/1"
+    ],
+    "granularity": "item",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_p3_voirtolkien_hypotheses_org_688_598a47_org_688.txt)"
    }
   },
   {
@@ -72319,6 +72707,23 @@
    }
   },
   {
+   "file": "p3_wayneandchristina_wordpress_com_1_644584.com_page_12",
+   "tier": 3,
+   "attribution": "Wayne G. Hammond and Christina Scull (https://wayneandchristina.wordpress.com/page/12/)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 280 chrome line(s) stripped, measured over 283 page(s) of research/fetched/wayneandchristina.wordpress.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_wayneandchristina_wordpress_com_1_644584_com_page.txt",
+   "words": 14490,
+   "text_only": true,
+   "source_url": "https://wayneandchristina.wordpress.com/page/12/",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_wayneandchristina_wordpress_com_1_fc2bb0.com_page_13",
    "tier": 3,
    "attribution": "Wayne G. Hammond and Christina Scull (https://wayneandchristina.wordpress.com/page/13/)",
@@ -72329,6 +72734,23 @@
    "words": 18758,
    "text_only": true,
    "source_url": "https://wayneandchristina.wordpress.com/page/13/",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_wayneandchristina_wordpress_com_9_eea08f.com_page_9",
+   "tier": 3,
+   "attribution": "Wayne G. Hammond and Christina Scull (https://wayneandchristina.wordpress.com/page/9/)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 280 chrome line(s) stripped, measured over 283 page(s) of research/fetched/wayneandchristina.wordpress.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_wayneandchristina_wordpress_com_9_eea08f_com_page.txt",
+   "words": 13225,
+   "text_only": true,
+   "source_url": "https://wayneandchristina.wordpress.com/page/9/",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -72499,6 +72921,23 @@
    "words": 2564,
    "text_only": true,
    "source_url": "https://wayneandchristina.wordpress.com/2017/10/18/working-on-the-readers-guide/",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_web_archive_org_2_f82266.net_author_morgantolkienindex-net_page_2",
+   "tier": 3,
+   "attribution": "web.archive.org (https://web.archive.org/web/20190922164705id_/https://mythoi.tolkienindex.net/author/morgantolkienindex-net/page/2/)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 0 chrome line(s) stripped, measured over 400 page(s) of research/fetched/web.archive.org. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_web_archive_org_2_f82266_net_author_morgantolkien.txt",
+   "words": 5232,
+   "text_only": true,
+   "source_url": "https://web.archive.org/web/20190922164705id_/https://mythoi.tolkienindex.net/author/morgantolkienindex-net/page/2/",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -72747,37 +73186,23 @@
    }
   },
   {
-   "file": "p3_web_archive_org_forever_204287.cgi_article_1235_context_inklings_forever",
+   "file": "p3_web_archive_org_facpub_ff97c6.cgi_article_6956_context_facpub",
    "tier": 3,
-   "attribution": "web.archive.org (https://web.archive.org/web/20191014174157id_/https://pillars.taylor.edu/cgi/viewcontent.cgi?article=1235&context=inklings_forever)",
-   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_1235_context_inklings_forever, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
+   "attribution": "web.archive.org (https://web.archive.org/web/20230211103026id_/https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=6956&context=facpub)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_6956_context_facpub, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
    "primary_text": false,
    "present": false,
-   "corpus_file": "t3_p3_web_archive_org_forever_204287_cgi_article_1235_c.txt",
-   "words": 4245,
+   "corpus_file": "t3_p3_web_archive_org_facpub_ff97c6_cgi_article_6956_co.txt",
+   "words": 8748,
    "text_only": true,
-   "source_url": "https://web.archive.org/web/20191014174157id_/https://pillars.taylor.edu/cgi/viewcontent.cgi?article=1235&context=inklings_forever",
+   "source_url": "https://web.archive.org/web/20230211103026id_/https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=6956&context=facpub",
    "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
-   }
-  },
-  {
-   "file": "p3_web_archive_org_forever_7b4d5c.cgi_article_1116_context_inklings_forever",
-   "tier": 3,
-   "attribution": "web.archive.org (https://web.archive.org/web/20220116230316id_/https://pillars.taylor.edu/cgi/viewcontent.cgi?article=1116&context=inklings_forever)",
-   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_1116_context_inklings_forever, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_p3_web_archive_org_forever_7b4d5c_cgi_article_1116_c.txt",
-   "words": 4628,
-   "text_only": true,
-   "source_url": "https://web.archive.org/web/20220116230316id_/https://pillars.taylor.edu/cgi/viewcontent.cgi?article=1116&context=inklings_forever",
-   "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+    "kind": "issn",
+    "ids": [
+     "00277738"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t3_p3_web_archive_org_facpub_ff97c6_cgi_article_6956_co.txt). It reaches the periodical; this row's own title names the issue."
    }
   },
   {
@@ -72846,23 +73271,6 @@
    "words": 10628,
    "text_only": true,
    "source_url": "https://web.archive.org/web/20190720154359id_/https://pillars.taylor.edu/cgi/viewcontent.cgi?article=1220&context=inklings_forever",
-   "retrieval": {
-    "kind": "unrecorded",
-    "ids": [],
-    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
-   }
-  },
-  {
-   "file": "p3_web_archive_org_forever_f05c35.cgi_article_1240_context_inklings_forever",
-   "tier": 3,
-   "attribution": "web.archive.org (https://web.archive.org/web/20190720155131id_/https://pillars.taylor.edu/cgi/viewcontent.cgi?article=1240&context=inklings_forever)",
-   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_1240_context_inklings_forever, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_p3_web_archive_org_forever_f05c35_cgi_article_1240_c.txt",
-   "words": 6673,
-   "text_only": true,
-   "source_url": "https://web.archive.org/web/20190720155131id_/https://pillars.taylor.edu/cgi/viewcontent.cgi?article=1240&context=inklings_forever",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -74767,6 +75175,23 @@
    }
   },
   {
+   "file": "p3_web_archive_org_mythlore_0af47e.cgi_article_2681_context_mythlore",
+   "tier": 3,
+   "attribution": "web.archive.org (https://web.archive.org/web/20240728022250id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=2681&context=mythlore)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_2681_context_mythlore, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_web_archive_org_mythlore_0af47e_cgi_article_2681_.txt",
+   "words": 2539,
+   "text_only": true,
+   "source_url": "https://web.archive.org/web/20240728022250id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=2681&context=mythlore",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_web_archive_org_mythlore_0bac08.cgi_article_2438_context_mythlore",
    "tier": 3,
    "attribution": "web.archive.org (https://web.archive.org/web/20240724131505id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=2438&context=mythlore)",
@@ -74885,6 +75310,23 @@
    "words": 2618,
    "text_only": true,
    "source_url": "https://web.archive.org/web/20240730144157id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=2520&context=mythlore",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_web_archive_org_mythlore_171ba5.cgi_article_2630_context_mythlore",
+   "tier": 3,
+   "attribution": "web.archive.org (https://web.archive.org/web/20240731055810id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=2630&context=mythlore)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_2630_context_mythlore, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_web_archive_org_mythlore_171ba5_cgi_article_2630_.txt",
+   "words": 4815,
+   "text_only": true,
+   "source_url": "https://web.archive.org/web/20240731055810id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=2630&context=mythlore",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -76009,6 +76451,23 @@
    }
   },
   {
+   "file": "p3_web_archive_org_mythlore_a3ab0a.cgi_article_1757_context_mythlore",
+   "tier": 3,
+   "attribution": "web.archive.org (https://web.archive.org/web/20240729174100id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1757&context=mythlore)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_1757_context_mythlore, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_web_archive_org_mythlore_a3ab0a_cgi_article_1757_.txt",
+   "words": 12856,
+   "text_only": true,
+   "source_url": "https://web.archive.org/web/20240729174100id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1757&context=mythlore",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_web_archive_org_mythlore_a4b07b.cgi_article_2145_context_mythlore",
    "tier": 3,
    "attribution": "web.archive.org (https://web.archive.org/web/20240707143939id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=2145&context=mythlore)",
@@ -76087,6 +76546,23 @@
    "words": 3446,
    "text_only": true,
    "source_url": "https://web.archive.org/web/20240726100157id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=2161&context=mythlore",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_web_archive_org_mythlore_af2a7b.cgi_article_2667_context_mythlore",
+   "tier": 3,
+   "attribution": "web.archive.org (https://web.archive.org/web/20240730154305id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=2667&context=mythlore)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_2667_context_mythlore, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_web_archive_org_mythlore_af2a7b_cgi_article_2667_.txt",
+   "words": 4788,
+   "text_only": true,
+   "source_url": "https://web.archive.org/web/20240730154305id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=2667&context=mythlore",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -76189,6 +76665,23 @@
    "words": 4614,
    "text_only": true,
    "source_url": "https://web.archive.org/web/20230512044959id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1567&context=mythlore",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_web_archive_org_mythlore_ba75cf.cgi_article_2787_context_mythlore",
+   "tier": 3,
+   "attribution": "web.archive.org (https://web.archive.org/web/20240723154754id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=2787&context=mythlore)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_2787_context_mythlore, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_web_archive_org_mythlore_ba75cf_cgi_article_2787_.txt",
+   "words": 2235,
+   "text_only": true,
+   "source_url": "https://web.archive.org/web/20240723154754id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=2787&context=mythlore",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -76795,6 +77288,23 @@
    }
   },
   {
+   "file": "p3_web_archive_org_mythlore_fc45cf.cgi_article_2769_context_mythlore",
+   "tier": 3,
+   "attribution": "web.archive.org (https://web.archive.org/web/20240727130624id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=2769&context=mythlore)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_2769_context_mythlore, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_web_archive_org_mythlore_fc45cf_cgi_article_2769_.txt",
+   "words": 3357,
+   "text_only": true,
+   "source_url": "https://web.archive.org/web/20240727130624id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=2769&context=mythlore",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_web_archive_org_mythlore_feaa83.cgi_article_1501_context_mythlore",
    "tier": 3,
    "attribution": "web.archive.org (https://web.archive.org/web/20240728015430id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1501&context=mythlore)",
@@ -77096,6 +77606,23 @@
    }
   },
   {
+   "file": "p3_web_archive_org_viewcontent_0c6e34.cgi_article_1089_context_oms",
+   "tier": 3,
+   "attribution": "Church, Lindsay (https://web.archive.org/web/20240411162609id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1089&context=oms)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: http://creativecommons.org/licenses/by-nc-nd/4.0/, as the source declares it. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_1089_context_oms, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_web_archive_org_viewcontent_0c6e34_cgi_article_10.txt",
+   "words": 9336,
+   "text_only": true,
+   "source_url": "https://web.archive.org/web/20240411162609id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1089&context=oms",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_web_archive_org_viewcontent_18bca0.cgi_article_1019_context_mythprint",
    "tier": 3,
    "attribution": "Fisher, Jason (https://web.archive.org/web/20240720170257id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1019&context=mythprint)",
@@ -77240,26 +77767,6 @@
    }
   },
   {
-   "file": "p3_web_archive_org_viewcontent_3dd83b.cgi_article_1013_context_tolkien_journal",
-   "tier": 3,
-   "attribution": "Tunick, Barry (https://web.archive.org/web/20240730234117id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1013&context=tolkien_journal)",
-   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: http://creativecommons.org/licenses/by-nc-nd/4.0/, as the source declares it. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_1013_context_tolkien_journal, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
-   "primary_text": false,
-   "present": false,
-   "corpus_file": "t3_p3_web_archive_org_viewcontent_3dd83b_cgi_article_10.txt",
-   "words": 743,
-   "text_only": true,
-   "source_url": "https://web.archive.org/web/20240730234117id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1013&context=tolkien_journal",
-   "retrieval": {
-    "kind": "url",
-    "ids": [
-     "https://dc.swosu.edu/tolkien_journ"
-    ],
-    "granularity": "item",
-    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_p3_web_archive_org_viewcontent_3dd83b_cgi_article_10.txt)"
-   }
-  },
-  {
    "file": "p3_web_archive_org_viewcontent_46e11d.cgi_article_1295_context_mythprint",
    "tier": 3,
    "attribution": "Bratman, David (https://web.archive.org/web/20240925223608id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1295&context=mythprint)",
@@ -77277,6 +77784,26 @@
     ],
     "granularity": "serial",
     "evidence": "the ISSN printed in this issue (corpus/t3_p3_web_archive_org_viewcontent_46e11d_cgi_article_12.txt). It reaches the periodical; this row's own title names the issue."
+   }
+  },
+  {
+   "file": "p3_web_archive_org_viewcontent_5063b0.cgi_article_1012_context_tolkien_journal",
+   "tier": 3,
+   "attribution": "Plotz, John (https://web.archive.org/web/20240730143343id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1012&context=tolkien_journal)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: http://creativecommons.org/licenses/by-nc-nd/4.0/, as the source declares it. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_1012_context_tolkien_journal, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_web_archive_org_viewcontent_5063b0_cgi_article_10.txt",
+   "words": 1227,
+   "text_only": true,
+   "source_url": "https://web.archive.org/web/20240730143343id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1012&context=tolkien_journal",
+   "retrieval": {
+    "kind": "url",
+    "ids": [
+     "https://dc.swosu.edu/tolkien_journal/vol2/iss2/1"
+    ],
+    "granularity": "item",
+    "evidence": "the publisher's address printed in the masthead or colophon of the copy this archive holds (corpus/t3_p3_web_archive_org_viewcontent_5063b0_cgi_article_10.txt)"
    }
   },
   {
@@ -77594,6 +78121,40 @@
    }
   },
   {
+   "file": "p3_web_archive_org_viewcontent_9adeec.cgi_article_1126_context_oms",
+   "tier": 3,
+   "attribution": "Brémont, Lelie (https://web.archive.org/web/20251004133719id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1126&context=oms)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: http://creativecommons.org/licenses/by-nc-nd/4.0/, as the source declares it. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_1126_context_oms, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_web_archive_org_viewcontent_9adeec_cgi_article_11.txt",
+   "words": 9927,
+   "text_only": true,
+   "source_url": "https://web.archive.org/web/20251004133719id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1126&context=oms",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_web_archive_org_viewcontent_9b17ff.cgi_article_1110_context_oms",
+   "tier": 3,
+   "attribution": "Brown, Sara (https://web.archive.org/web/20251004114428id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1110&context=oms)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: http://creativecommons.org/licenses/by-nc-nd/4.0/, as the source declares it. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_1110_context_oms, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_web_archive_org_viewcontent_9b17ff_cgi_article_11.txt",
+   "words": 9450,
+   "text_only": true,
+   "source_url": "https://web.archive.org/web/20251004114428id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1110&context=oms",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_web_archive_org_viewcontent_a31309.cgi_article_1068_context_tolkien_journal",
    "tier": 3,
    "attribution": "West, Richard C. (https://web.archive.org/web/20240713224900id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1068&context=tolkien_journal)",
@@ -77685,6 +78246,23 @@
    "words": 9448,
    "text_only": true,
    "source_url": "https://web.archive.org/web/20240411195746id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1087&context=oms",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_web_archive_org_viewcontent_c160dd.cgi_article_1085_context_oms",
+   "tier": 3,
+   "attribution": "Shelton, Luke (https://web.archive.org/web/20240415024857id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1085&context=oms)",
+   "note": "Tier-3; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: http://creativecommons.org/licenses/by-nc-nd/4.0/, as the source declares it. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_1085_context_oms, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t3_p3_web_archive_org_viewcontent_c160dd_cgi_article_10.txt",
+   "words": 7785,
+   "text_only": true,
+   "source_url": "https://web.archive.org/web/20240415024857id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1085&context=oms",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -85768,6 +86346,40 @@
    }
   },
   {
+   "file": "p3_elendilion_pl_2_8fd120.pl_category_kalendarium-srodziemia_page_2",
+   "tier": 4,
+   "attribution": "Elendilion (Polish Tolkien news service) (http://www.elendilion.pl/category/kalendarium-srodziemia/page/2/)",
+   "note": "Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 211 chrome line(s) stripped, measured over 400 page(s) of research/fetched/www.elendilion.pl. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_elendilion_pl_2_8fd120_pl_category_kalendarium_sr.txt",
+   "words": 2783,
+   "text_only": true,
+   "source_url": "http://www.elendilion.pl/category/kalendarium-srodziemia/page/2/",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_elendilion_pl_3_3fbfd8.pl_page_3",
+   "tier": 4,
+   "attribution": "Elendilion (Polish Tolkien news service) (http://www.elendilion.pl/page/3/)",
+   "note": "Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 211 chrome line(s) stripped, measured over 400 page(s) of research/fetched/www.elendilion.pl. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_elendilion_pl_3_3fbfd8_pl_page_3.txt",
+   "words": 4839,
+   "text_only": true,
+   "source_url": "http://www.elendilion.pl/page/3/",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_elendilion_pl_calendar_of_imladri_4febfe.pl_2016_03_28_calendar-of-imladris-2016-spring-kalendarz-z-imladris-2016-wiosna",
    "tier": 4,
    "attribution": "www.elendilion.pl (http://www.elendilion.pl/2016/03/28/calendar-of-imladris-2016-spring-kalendarz-z-imladris-2016-wiosna/)",
@@ -87190,6 +87802,23 @@
    "words": 249,
    "text_only": true,
    "source_url": "https://elfdict.com/w/kal/mp",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_elfdict_com_mp_9dcb05.com_w_mis_mp",
+   "tier": 4,
+   "attribution": "Parf Edhellen contributors (https://elfdict.com/w/mis/mp)",
+   "note": "EXTRACTION: SHORT at 2936 bytes, and the text is the whole of what the capture carries (HTML via gen_ardalambion.decode_page + gen_realelvish totext (article); 11 chrome line(s) stripped, measured over 400 page(s) of research/fetched/elfdict.com). Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (article); 11 chrome line(s) stripped, measured over 400 page(s) of research/fetched/elfdict.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_elfdict_com_mp_9dcb05_com_w_mis_mp.txt",
+   "words": 430,
+   "text_only": true,
+   "source_url": "https://elfdict.com/w/mis/mp",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -90796,6 +91425,23 @@
    }
   },
   {
+   "file": "p3_glaemscrafu_jrrvf_com_goldogrin_57cd89.html",
+   "tier": 4,
+   "attribution": "Benjamin Babut & Bertrand Bellet -- the pages state \"- Benjamin Babut &amp; Bertrand Bellet\" and \"Front door design &amp; graphics by Benjamin Babut, based on J. R. R. Tolkien.\" (https://glaemscrafu.jrrvf.com/english/goldogrin.html)",
+   "note": "Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 89 chrome line(s) stripped, measured over 396 page(s) of research/fetched/glaemscrafu.jrrvf.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_glaemscrafu_jrrvf_com_goldogrin_57cd89_html.txt",
+   "words": 1194,
+   "text_only": true,
+   "source_url": "https://glaemscrafu.jrrvf.com/english/goldogrin.html",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_glaemscrafu_jrrvf_com_isameidan_f69bc7.html",
    "tier": 4,
    "attribution": "Benjamin Babut & Bertrand Bellet -- the pages state \"- Benjamin Babut &amp; Bertrand Bellet\" and \"Front door design &amp; graphics by Benjamin Babut, based on J. R. R. Tolkien.\" (https://glaemscrafu.jrrvf.com/english/isameidan.html)",
@@ -90830,6 +91476,26 @@
    }
   },
   {
+   "file": "p3_glaemscrafu_jrrvf_com_koivieneni_af41fd.html",
+   "tier": 4,
+   "attribution": "Benjamin Babut & Bertrand Bellet -- the pages state \"- Benjamin Babut &amp; Bertrand Bellet\" and \"Front door design &amp; graphics by Benjamin Babut, based on J. R. R. Tolkien.\" (https://glaemscrafu.jrrvf.com/english/koivieneni.html)",
+   "note": "Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 90 chrome line(s) stripped, measured over 396 page(s) of research/fetched/glaemscrafu.jrrvf.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_glaemscrafu_jrrvf_com_koivieneni_af41fd_html.txt",
+   "words": 711,
+   "text_only": true,
+   "source_url": "https://glaemscrafu.jrrvf.com/english/koivieneni.html",
+   "retrieval": {
+    "kind": "issn",
+    "ids": [
+     "10547606"
+    ],
+    "granularity": "serial",
+    "evidence": "the ISSN printed in this issue (corpus/t4_p3_glaemscrafu_jrrvf_com_koivieneni_af41fd_html.txt). It reaches the periodical; this row's own title names the issue."
+   }
+  },
+  {
    "file": "p3_glaemscrafu_jrrvf_com_kullervo_c91e59.html",
    "tier": 4,
    "attribution": "Benjamin Babut & Bertrand Bellet -- the pages state \"- Benjamin Babut &amp; Bertrand Bellet\" and \"Front door design &amp; graphics by Benjamin Babut, based on J. R. R. Tolkien.\" (https://glaemscrafu.jrrvf.com/english/kullervo.html)",
@@ -90857,6 +91523,23 @@
    "words": 1510,
    "text_only": true,
    "source_url": "https://glaemscrafu.jrrvf.com/german/kullervo.html",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_glaemscrafu_jrrvf_com_malletera_8e6fd0.html",
+   "tier": 4,
+   "attribution": "glaemscrafu.jrrvf.com (https://glaemscrafu.jrrvf.com/french/malletera.html)",
+   "note": "EXTRACTION: SHORT at 4972 bytes, and the text is the whole of what the capture carries (HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 92 chrome line(s) stripped, measured over 396 page(s) of research/fetched/glaemscrafu.jrrvf.com). Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 92 chrome line(s) stripped, measured over 396 page(s) of research/fetched/glaemscrafu.jrrvf.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_glaemscrafu_jrrvf_com_malletera_8e6fd0_html.txt",
+   "words": 730,
+   "text_only": true,
+   "source_url": "https://glaemscrafu.jrrvf.com/french/malletera.html",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -90915,6 +91598,23 @@
    }
   },
   {
+   "file": "p3_glaemscrafu_jrrvf_com_noldorin_955c88.html",
+   "tier": 4,
+   "attribution": "Benjamin Babut & Bertrand Bellet -- the pages state \"- Benjamin Babut &amp; Bertrand Bellet\" and \"Front door design &amp; graphics by Benjamin Babut, based on J. R. R. Tolkien.\" (https://glaemscrafu.jrrvf.com/german/noldorin.html)",
+   "note": "Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 84 chrome line(s) stripped, measured over 396 page(s) of research/fetched/glaemscrafu.jrrvf.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_glaemscrafu_jrrvf_com_noldorin_955c88_html.txt",
+   "words": 822,
+   "text_only": true,
+   "source_url": "https://glaemscrafu.jrrvf.com/german/noldorin.html",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_glaemscrafu_jrrvf_com_nomsvalarin_c43887.html",
    "tier": 4,
    "attribution": "Benjamin Babut & Bertrand Bellet -- the pages state \"- Benjamin Babut &amp; Bertrand Bellet\" and \"Front door design &amp; graphics by Benjamin Babut, based on J. R. R. Tolkien.\" (https://glaemscrafu.jrrvf.com/english/nomsvalarins.html)",
@@ -90949,6 +91649,40 @@
    }
   },
   {
+   "file": "p3_glaemscrafu_jrrvf_com_oilimamarki_95cb18.html",
+   "tier": 4,
+   "attribution": "glaemscrafu.jrrvf.com (https://glaemscrafu.jrrvf.com/french/oilimamarkiryai.html)",
+   "note": "Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 96 chrome line(s) stripped, measured over 396 page(s) of research/fetched/glaemscrafu.jrrvf.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_glaemscrafu_jrrvf_com_oilimamarki_95cb18_html.txt",
+   "words": 1022,
+   "text_only": true,
+   "source_url": "https://glaemscrafu.jrrvf.com/french/oilimamarkiryai.html",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_glaemscrafu_jrrvf_com_oilimamarki_a1eb00.html",
+   "tier": 4,
+   "attribution": "Benjamin Babut & Bertrand Bellet -- the pages state \"- Benjamin Babut &amp; Bertrand Bellet\" and \"Front door design &amp; graphics by Benjamin Babut, based on J. R. R. Tolkien.\" (https://glaemscrafu.jrrvf.com/german/oilimamarkiryaii.html)",
+   "note": "Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 94 chrome line(s) stripped, measured over 396 page(s) of research/fetched/glaemscrafu.jrrvf.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_glaemscrafu_jrrvf_com_oilimamarki_a1eb00_html.txt",
+   "words": 980,
+   "text_only": true,
+   "source_url": "https://glaemscrafu.jrrvf.com/german/oilimamarkiryaii.html",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_glaemscrafu_jrrvf_com_oldenglisht_340058.html",
    "tier": 4,
    "attribution": "glaemscrafu.jrrvf.com (https://glaemscrafu.jrrvf.com/french/oldenglishtolkien.html)",
@@ -90959,6 +91693,23 @@
    "words": 1038,
    "text_only": true,
    "source_url": "https://glaemscrafu.jrrvf.com/french/oldenglishtolkien.html",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_glaemscrafu_jrrvf_com_sindarin_877ffa.html",
+   "tier": 4,
+   "attribution": "Benjamin Babut & Bertrand Bellet -- the pages state \"- Benjamin Babut &amp; Bertrand Bellet\" and \"Front door design &amp; graphics by Benjamin Babut, based on J. R. R. Tolkien.\" (https://glaemscrafu.jrrvf.com/english/sindarin.html)",
+   "note": "Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 90 chrome line(s) stripped, measured over 396 page(s) of research/fetched/glaemscrafu.jrrvf.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_glaemscrafu_jrrvf_com_sindarin_877ffa_html.txt",
+   "words": 921,
+   "text_only": true,
+   "source_url": "https://glaemscrafu.jrrvf.com/english/sindarin.html",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -93744,6 +94495,23 @@
    }
   },
   {
+   "file": "p3_silmarillionwritersguild_org_559_e134ca.org_taxonomy_term_559",
+   "tier": 4,
+   "attribution": "Silmarillion Writers' Guild (https://www.silmarillionwritersguild.org/taxonomy/term/559)",
+   "note": "Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 153 chrome line(s) stripped, measured over 400 page(s) of research/fetched/www.silmarillionwritersguild.org. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_silmarillionwritersguild_org_559_e134ca_org_taxon.txt",
+   "words": 1478,
+   "text_only": true,
+   "source_url": "https://www.silmarillionwritersguild.org/taxonomy/term/559",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_silmarillionwritersguild_org_fanw_7c2943.org_node_3341_fanwork",
    "tier": 4,
    "attribution": "Silmarillion Writers' Guild (https://www.silmarillionwritersguild.org/node/3341/fanwork)",
@@ -95751,6 +96519,23 @@
    }
   },
   {
+   "file": "p3_tolkiendil_com_faq_e9626d.com_tolkien_faq",
+   "tier": 4,
+   "attribution": "www.tolkiendil.com (https://www.tolkiendil.com/tolkien/faq)",
+   "note": "Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 602 chrome line(s) stripped, measured over 145 page(s) of research/fetched/www.tolkiendil.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_tolkiendil_com_faq_e9626d_com_tolkien_faq.txt",
+   "words": 1680,
+   "text_only": true,
+   "source_url": "https://www.tolkiendil.com/tolkien/faq",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_tolkiendil_com_home11_ce3599.com_tolkien_biblio_home11",
    "tier": 4,
    "attribution": "www.tolkiendil.com (https://www.tolkiendil.com/tolkien/biblio/home11)",
@@ -95761,6 +96546,23 @@
    "words": 648,
    "text_only": true,
    "source_url": "https://www.tolkiendil.com/tolkien/biblio/home11",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_tolkiendil_com_home1_cf4dd0.com_tolkien_biblio_home1",
+   "tier": 4,
+   "attribution": "www.tolkiendil.com (https://www.tolkiendil.com/tolkien/biblio/home1)",
+   "note": "Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 604 chrome line(s) stripped, measured over 145 page(s) of research/fetched/www.tolkiendil.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_tolkiendil_com_home1_cf4dd0_com_tolkien_biblio_ho.txt",
+   "words": 1010,
+   "text_only": true,
+   "source_url": "https://www.tolkiendil.com/tolkien/biblio/home1",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -95812,6 +96614,23 @@
    "words": 692,
    "text_only": true,
    "source_url": "https://www.tolkiendil.com/tolkien/biblio/le_seigneur_des_anneaux_lauzon",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_tolkiendil_com_mag2_ddf60b.com_asso_mag_mag2",
+   "tier": 4,
+   "attribution": "www.tolkiendil.com (https://www.tolkiendil.com/asso/mag/mag2)",
+   "note": "Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (whole page); 603 chrome line(s) stripped, measured over 145 page(s) of research/fetched/www.tolkiendil.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_tolkiendil_com_mag2_ddf60b_com_asso_mag_mag2.txt",
+   "words": 1379,
+   "text_only": true,
+   "source_url": "https://www.tolkiendil.com/asso/mag/mag2",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -95880,6 +96699,23 @@
    "words": 397,
    "text_only": true,
    "source_url": "https://www.tolkienestate.com/es/ilustrar/",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_tolkienestate_com_letters_71ee06.com_letters",
+   "tier": 4,
+   "attribution": "www.tolkienestate.com (https://www.tolkienestate.com/letters/)",
+   "note": "Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (entry-content); 0 chrome line(s) stripped, measured over 128 page(s) of research/fetched/www.tolkienestate.com. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_tolkienestate_com_letters_71ee06_com_letters.txt",
+   "words": 1106,
+   "text_only": true,
+   "source_url": "https://www.tolkienestate.com/letters/",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -96424,6 +97260,23 @@
    "words": 888,
    "text_only": true,
    "source_url": "https://tolkienitalia.net/arazzo-aubusson-bilbo-botti-elfi-barcaioli/",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
+   "file": "p3_tolkienitalia_net_barlumi_di_cose_413c64.net_barlumi-di-cose-piu-alte-presentazione",
+   "tier": 4,
+   "attribution": "tolkienitalia.net (https://tolkienitalia.net/barlumi-di-cose-piu-alte-presentazione/)",
+   "note": "Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: NOT DECLARED by the source; recorded as null rather than guessed. Published under C498 and his standing authorization of 16 August 2026. Extracted: HTML via gen_ardalambion.decode_page + gen_realelvish totext (entry-content); 0 chrome line(s) stripped, measured over 217 page(s) of research/fetched/tolkienitalia.net. Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_tolkienitalia_net_barlumi_di_cose_413c64_net_barl.txt",
+   "words": 2280,
+   "text_only": true,
+   "source_url": "https://tolkienitalia.net/barlumi-di-cose-piu-alte-presentazione/",
    "retrieval": {
     "kind": "unrecorded",
     "ids": [],
@@ -97187,6 +98040,23 @@
    }
   },
   {
+   "file": "p3_web_archive_org_viewcontent_e6c171.cgi_article_1012_context_mythcon",
+   "tier": 4,
+   "attribution": "Moore, Eileen Marie (https://web.archive.org/web/20240707134840id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1012&context=mythcon)",
+   "note": "Tier-4; [EXT] for any claim resting on it. INTEGRATED FROM /research IN CAMPAIGN P3 (#521) on its P2 judge's verdict INTEGRATE; **THE JUDGE'S FULL BASIS, WITH EVERY WARNING THAT MUST TRAVEL WITH A QUOTATION, IS THE FIRST THING IN THE VOLUME'S OWN BANNER** and is kept in research/registry/p3_volumes.json. LICENCE: http://creativecommons.org/licenses/by-nc-nd/4.0/, as the source declares it. Published under C498 and his standing authorization of 16 August 2026. Extracted: PDF via pdftotext (NAMED .cgi_article_1012_context_mythcon, IS .pdf by its magic bytes). Extractor map/p3_ingest.py.",
+   "primary_text": false,
+   "present": false,
+   "corpus_file": "t4_p3_web_archive_org_viewcontent_e6c171_cgi_article_10.txt",
+   "words": 19270,
+   "text_only": true,
+   "source_url": "https://web.archive.org/web/20240707134840id_/https://dc.swosu.edu/cgi/viewcontent.cgi?article=1012&context=mythcon",
+   "retrieval": {
+    "kind": "unrecorded",
+    "ids": [],
+    "why": "no ISBN, ISSN, DOI or publisher address is printed in the copy this archive holds. A retrieval path may well exist in a library catalogue; nobody here has looked it up, and this register will not guess one."
+   }
+  },
+  {
    "file": "p3_wulfwaru_wordpress_com_its_offici_73b5b6.com_2008_09_06_its-official-hobbiton-is-really-birmingham",
    "tier": 4,
    "attribution": "wulfwaru.wordpress.com (https://wulfwaru.wordpress.com/2008/09/06/its-official-hobbiton-is-really-birmingham/)",
@@ -97905,25 +98775,25 @@
     "unrecorded": 17
    },
    "3": {
-    "total": 4065,
-    "with_path": 609,
-    "unrecorded": 3456
+    "total": 4098,
+    "with_path": 614,
+    "unrecorded": 3484
    },
    "4": {
-    "total": 1117,
-    "with_path": 134,
-    "unrecorded": 983
+    "total": 1134,
+    "with_path": 135,
+    "unrecorded": 999
    }
   },
   "by_kind": {
-   "unrecorded": 4461,
+   "unrecorded": 4505,
    "isbn": 90,
-   "url": 621,
-   "issn": 76
+   "url": 625,
+   "issn": 78
   },
-  "total": 5248,
-  "with_path": 787,
-  "unrecorded": 4461
+  "total": 5298,
+  "with_path": 793,
+  "unrecorded": 4505
  },
  "rule": "Where two sources disagree, the lower tier number wins. A tier-5 file is corrected by any tier above it. Tolkien's own words quoted inside a tier-2 book carry tier-1 authority; the editor's framing does not.",
  "limits": [
